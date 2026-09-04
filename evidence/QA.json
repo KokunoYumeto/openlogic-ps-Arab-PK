@@ -1,0 +1,366 @@
+{
+  "schema": "ps-openlogic-qa/1",
+  "status": "in-progress",
+  "source_hashes": "722 raw units verified",
+  "translation_coverage": {
+    "total": 722,
+    "draft_units": 10,
+    "structural_pass": 10,
+    "visually_accepted": 7,
+    "published": 0
+  },
+  "canon_sources": 4,
+  "canon_passages": 13,
+  "batch": "PS-B001-SETS",
+  "units": [
+    {
+      "unit_id": "OLP-0001",
+      "path": "content/open-logic-about.tex",
+      "source_sha256": "f1212d77679b9080a2cbf1ba03f9b71f0993db10b1b28464c423652f95b5fd33",
+      "translation_sha256": "ff2b10637813788e70da108a05de6e8ea54d281afca8c3223150d33448e29365",
+      "source_blocks": 4,
+      "target_blocks": 4,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0002",
+      "path": "content/content.tex",
+      "source_sha256": "c0399669611ed01993ceb58beba2458d7a7b48102089d3a521ccb4c6d4624baa",
+      "translation_sha256": "6a47b46cee904b7304d76a600929ed9a58a588df202a6ff8d58d5fea6658e592",
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0003",
+      "path": "content/sets-functions-relations/sets-functions-relations-complete.tex",
+      "source_sha256": "f5eb4b8801890604b79298e46a8327f34ca3bb9ed673d798ec3436d349f22926",
+      "translation_sha256": "d772fa8bed6f6492e1088c1b06f92dac23341a6786ae5450093d6d0c7c4b16c5",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0004",
+      "path": "content/sets-functions-relations/sets/sets.tex",
+      "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
+      "translation_sha256": "d84449acdd79d79bf1f780a29b6ba97596d383ac600e0a7694cb54baf2266144",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0005",
+      "path": "content/sets-functions-relations/sets/basics.tex",
+      "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
+      "translation_sha256": "9ca2b4f92fb03ed1d1f125942ec0b391665722d159dd1f92675ea497b09acc21",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {
+        "\\psOblique": 2
+      },
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0006",
+      "path": "content/sets-functions-relations/sets/subsets.tex",
+      "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "translation_sha256": "48161fdfc3ff95ee4eb9e94a4c112a3ded4b378305aefac5c4858406cea56156",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0007",
+      "path": "content/sets-functions-relations/sets/important-sets.tex",
+      "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
+      "translation_sha256": "c7ec8897784969dc856b06a18d31fa5a6d0c70824f6138ec3f02522916edd1db",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {
+        "\\psOblique": 1
+      },
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0008",
+      "path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
+      "translation_sha256": "76df06fd73db52b8f57d366d6c0926fce1aa170a6396a249e603b3d0e85bfc80",
+      "source_blocks": 30,
+      "target_blocks": 30,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {
+        "\\psOblique": 13
+      },
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0009",
+      "path": "content/sets-functions-relations/sets/pairs-and-products.tex",
+      "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
+      "translation_sha256": "147c3290de38598459ef90e7d321c323a3f18adf39ea8e242efeea626b877242",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {
+        "\\psOblique": 3
+      },
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0010",
+      "path": "content/sets-functions-relations/sets/russells-paradox.tex",
+      "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
+      "translation_sha256": "8163d7fd47338dfe0cd6a3309dadea9dced7afaf10fd975dbdaed90bbfcff150",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "status": "structural-pass"
+    }
+  ],
+  "semantic_review": [
+    {
+      "unit_id": "OLP-0005",
+      "passage": "extensionality definition and concluding exercise",
+      "reverse_paraphrase": "Two sets equal exactly when membership agrees both ways. Prove there cannot be more than one empty set.",
+      "finding": "Initial Pashto at-most wording could suggest existence or a vague upper limit; changed explicitly to impossibility of multiple empty sets. Source uniqueness versus later existence caveat preserved."
+    },
+    {
+      "unit_id": "OLP-0006",
+      "passage": "membership versus subset and bounded quantifiers",
+      "reverse_paraphrase": "The number 2 belongs to the integers, while even numbers form a subset; a set can be both member and subset. Bounded universal uses implication, bounded existential uses conjunction.",
+      "finding": "Distinction and both quantifier formulas retained. Proper subset requires inequality; powerset includes empty and full sets."
+    },
+    {
+      "unit_id": "OLP-0007",
+      "passage": "number domains and strings",
+      "reverse_paraphrase": "Natural numbers start at zero; positive integers start at one. A finite string over A has n letters and length n; empty string is included. Infinite sequences extend in one direction.",
+      "finding": "All source domains and examples retained; terms remain provisional where consultation does not establish technical usage."
+    },
+    {
+      "unit_id": "OLP-0008",
+      "passage": "operations and indexed families",
+      "reverse_paraphrase": "Union includes either or both sets; intersection requires membership in both. A family union requires membership in at least one member-set, whereas intersection requires every member-set. A minus B retains A-members excluded from B.",
+      "finding": "Direction and existential/universal force retained. Nested text and case-marked element tokens are rendered within RTL text boxes, mathematical variables remain LTR."
+    },
+    {
+      "unit_id": "OLP-0009",
+      "passage": "tuple construction and product proof",
+      "reverse_paraphrase": "Pairs agree exactly when first coordinates and second coordinates agree; recursively nested pairs implement larger tuples. For each x there are m pairs; different x give disjoint rows, hence n times m total pairs.",
+      "finding": "Stray brace detected by symbolic parity and removed. Source uses both Lambda and emptyset for empty sequences in different contexts; preserved rather than silently standardized."
+    },
+    {
+      "unit_id": "OLP-0010",
+      "passage": "uniqueness and Russell contradiction",
+      "reverse_paraphrase": "Extensionality guarantees uniqueness only if the set exists. The purported set R of all non-self-membered sets leads to R in R exactly when R not in R. Both cases contradict the definition, so no such set exists.",
+      "finding": "No existence guarantee introduced. Naive treatment and need for precise axioms retained."
+    },
+    {
+      "unit_id": "OLP-0001",
+      "passage": "about and license prose",
+      "reverse_paraphrase": "The source is a rigorous collaborative intermediate text for non-mathematical readers. Reuse, modification, rearrangement, conversion and redistribution require attribution.",
+      "finding": "Source status and license described without claiming translation completion or upstream endorsement."
+    },
+    {
+      "unit_id": "OLP-0002",
+      "passage": "editorial warning",
+      "reverse_paraphrase": "This driver includes draft material and every operator case; a course reader can select material and exercises. The inherited editorial message cautions against studying an indiscriminately built PDF.",
+      "finding": "Warning is original content, not a new human approval requirement; all 18 import directives retained."
+    },
+    {
+      "unit_id": "OLP-0003",
+      "passage": "part introduction",
+      "reverse_paraphrase": "This introduction to naive set theory also includes number-system construction and infinity from Tim Button's Open Set Theory, beyond what the logic parts require.",
+      "finding": "Attribution and scope distinction retained."
+    }
+  ],
+  "builds": [
+    {
+      "batch_id": "PS-B001-SETS",
+      "units": [
+        {
+          "unit_id": "OLP-0004",
+          "sha256": "d84449acdd79d79bf1f780a29b6ba97596d383ac600e0a7694cb54baf2266144"
+        },
+        {
+          "unit_id": "OLP-0005",
+          "sha256": "9ca2b4f92fb03ed1d1f125942ec0b391665722d159dd1f92675ea497b09acc21"
+        },
+        {
+          "unit_id": "OLP-0006",
+          "sha256": "48161fdfc3ff95ee4eb9e94a4c112a3ded4b378305aefac5c4858406cea56156"
+        },
+        {
+          "unit_id": "OLP-0007",
+          "sha256": "c7ec8897784969dc856b06a18d31fa5a6d0c70824f6138ec3f02522916edd1db"
+        },
+        {
+          "unit_id": "OLP-0008",
+          "sha256": "76df06fd73db52b8f57d366d6c0926fce1aa170a6396a249e603b3d0e85bfc80"
+        },
+        {
+          "unit_id": "OLP-0009",
+          "sha256": "147c3290de38598459ef90e7d321c323a3f18adf39ea8e242efeea626b877242"
+        },
+        {
+          "unit_id": "OLP-0010",
+          "sha256": "8163d7fd47338dfe0cd6a3309dadea9dced7afaf10fd975dbdaed90bbfcff150"
+        }
+      ],
+      "reader": {
+        "filename": "openlogic-ps-Arab-PK-sets.pdf",
+        "bytes": 127670,
+        "sha256": "32a9ee86f73cab1b1e79f76e40e4c2509c54b29dea4edab25a98ad3f8dba15ac",
+        "pages": 10
+      },
+      "glyph_specimen_sha256": "e9c7a20226c0f913432e594bb674317b906dbc62c6b30c7b5e070a4acc50dc6d",
+      "tex_receipt_sha256": "e85d6e6648165731444019816a21cce6936935acb3e2411c2d6604344602c2b6",
+      "build_inputs_sha256": "3894502a3769180c9533070b62c3ca448d188da483299254a70c6aeca18ba4f3",
+      "visual_review": {
+        "pages_1based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "glyph_page_1based": 1,
+        "result": "All final pages and glyph specimen visually inspected; no clipping, overlap, tofu or reversed mathematical runs found. Intersection outline additionally inspected at enlarged scale; its complete boundary is present.",
+        "page_image_sha256": {
+          "page-01.png": "2083573112b121ba8780bc07562f95f0be566d8f0a62bab66ba13f99e025c408",
+          "page-02.png": "10e409188084b0e4f8e507bca17328eefafdcd54b6f55e2578cecd16a534f927",
+          "page-03.png": "9955eca07f399c9f61dc79448a3c19a00b107c600c9686fe6f8b1f7154a68de0",
+          "page-04.png": "57f49354603cad1bd6d68b58f3983eb9b118297eee8fdda2d3401720a3a67830",
+          "page-05.png": "29e2bbf605d990a8c6806dffcadcd56029901165d51c9a17d977a6b9a0499a01",
+          "page-06.png": "65daf649580c9d171d9f1de0a90ae241d9487b60d8550100892f9c52c4427900",
+          "page-07.png": "9ef60d6cda6150c478418f0dcb2bc730ff0fe7320af737656ec527ad59fea326",
+          "page-08.png": "7fabc3553f7477a92ff460d4bc5fc60cb4e570e840186a66221b1d0f5e07b466",
+          "page-09.png": "4fff899c1ced2aff774fb6387a5ca408ef0b84e6eb74b6ce17d301fa161960f7",
+          "page-10.png": "cfc68a776fda3909ec706784b0cd99c17fb924372c95b14563f4783f2149f27f"
+        }
+      },
+      "reproducibility": "Four guarded passes produced identical bytes for each document. Final log findings empty.",
+      "accepted_utc": "2026-09-04T15:07:55.736621+00:00"
+    }
+  ],
+  "publication_verified": false
+}

@@ -1,0 +1,47 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: important-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{imp}
+\olsection{ځينې مهم سټونه}
+
+\begin{ex}
+مونږ به زياتره له هغو سټونو سره کار لرو چې !!{element}s ئې رياضيکي څيزونه وي۔ څلور داسې سټونه دومره مهم دي چې ځانګړي نومونه لري:
+\begin{multline*}
+    \Nat = \{0, 1, 2, 3, \ldots\} \\
+    \shoveright{\text{د طبيعي عددونو سټ}}\\
+    \shoveleft{\Int = \{\ldots, -2, -1, 0, 1, 2, \ldots\}} \\
+    \shoveright{\text{د صحيح عددونو سټ}}\\
+    \shoveleft{\Rat = \Setabs{\nicefrac{m}{n}}{m, n \in \Int\text{ او }n \neq 0}}\\
+    \shoveright{\text{د ناطقو عددونو سټ}}\\
+    \shoveleft{\Real = (-\infty, \infty)}\\
+    \text{د حقيقي عددونو سټ (پيوستار)}
+\end{multline*}
+دا ټول \emph{نامتناهي} سټونه دي، يعنې د هر يوه !!{element}s په نامتناهي شمېر دي۔
+
+چې کله د دې سټونو له يوه نه بل ته ځو، خپلې زېرمې ته \emph{نور} عددونه ورزياتوو۔ په حقيقت کښې، دا بايد څرګنده وي چې $\Nat \subseteq \Int \subseteq \Rat \subseteq \Real$: ځکه چې هر طبيعي عدد صحيح عدد دے؛ هر صحيح عدد ناطق عدد دے؛ او هر ناطق عدد حقيقي عدد دے۔ همدارنګه، دا هم بايد څرګنده وي چې $\Nat \subsetneq \Int \subsetneq \Rat$، ځکه چې $-1$ صحيح عدد دے خو طبيعي عدد نۀ دے، او $\nicefrac{1}{2}$ ناطق عدد دے خو صحيح عدد نۀ دے۔ دا لږه ناڅرګنده خبره ده چې $\Rat \subsetneq \Real$، يعنې داسې حقيقي عددونه شته چې ناطق نۀ دي\oliflabeldef{sfr:arith:real:realline}{، خو په \olref[arith][real]{realline} کښې به بيا دې خبرې ته راوګرځو}{}۔
+
+کله ناکله به د مثبتو صحيح عددونو سټ $\PosInt = \{1, 2, 3, \dots\}$ او هغه سټ هم کاروو چې يوازې لومړي دوه طبيعي عددونه لري، يعنې $\Bin = \{0, 1\}$۔
+\end{ex}
+
+\begin{tagblock}{compsci}
+\begin{ex}[توريز تسلسلونه]
+يوه بله په زړه پورې بېلګه د يوې الفبا $A$ د \emph{متناهي توريزو تسلسلونو} سټ $A^{*}$ دے: د~$A$ د عناصرو هره متناهي لړۍ د $A$ يو توريز تسلسل دے۔ د هرې الفبا~$A$ دپاره، \emph{تش توريز تسلسل $\Lambda$} هم د~$A$ په توريزو تسلسلونو کښې شاملوو۔ د بېلګې په توګه،
+\begin{multline*}
+\Bin^*
+=\{\Lambda,0,1,00,01,10,11,\\
+000,001,010,011,100,101,110,111,0000,\ldots\}.
+\end{multline*}
+که $x=x_{1}\ldots x_{n}\in A^{*}$ يو داسې توريز تسلسل وي چې د $A$ له $n$ ``تورو'' جوړ وي، نو وايو چې د دې تسلسل \emph{اوږدوالے}~$n$ دے او $\len{x}=n$ ليکو۔
+\end{ex}
+\end{tagblock}
+
+\begin{ex}[نامتناهي لړۍ]
+د هر سټ $A$ دپاره، د~$A$ د \psOblique{!!{element}s} د نامتناهي لړيو سټ~$A^\omega$ هم په پام کښې نيولے شو۔ يوه نامتناهي لړۍ $a_1a_2a_3a_4\dots$ د څيزونو له داسې لست نه جوړه وي چې په يو لوري نامتناهي غځېږي، او هر څيز ئې د~$A$ يو !!a{element} وي۔
+\end{ex}
+
+\end{document}

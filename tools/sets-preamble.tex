@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,nicefrac}
+\usepackage{xparse,graphicx,tikz,xcolor}
+\usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
+\usepackage{bidi}
+\hypersetup{pdftitle={OpenLogic Pashto Pakistan - Sets},pdfauthor={Open Logic Project; machine translation adaptation},pdfsubject={Partial edition: sets chapter; 7 of 722 source units}}
+\definecolor{oldiagcolorA}{RGB}{38,89,117}
+\definecolor{oldiagcolorB}{RGB}{189,83,41}
+\definecolor{oldiagcolorC}{RGB}{44,115,104}
+\newcommand{\Setabs}[2]{\{#1 : #2\}}
+\newcommand{\Pow}[1]{\wp(#1)}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Int}{\mathbb{Z}}
+\newcommand{\Rat}{\mathbb{Q}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\PosInt}{\mathbb{Z}^{+}}
+\newcommand{\Bin}{\mathbb{B}}
+\newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\len}[1]{\mathrm{len}(#1)}
+\newcommand{\lif}{\mathbin{\rightarrow}}
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\newcommand{\olsection}[1]{\section{#1}\label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+\NewDocumentCommand{\olref}{O{} O{} O{} m}{\begingroup
+\def\psa{#1}\def\psb{#2}\def\psc{#3}
+\ifx\psa\empty\let\psa\pspart\fi
+\ifx\psb\empty\let\psb\pschapter\fi
+\ifx\psc\empty\let\psc\pssection\fi
+\LR{\ref{\psa:\psb:\psc:#4}}\endgroup}
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\newcommand{\olasset}[1]{\centering\begin{LTR}\centering\resizebox{.46\textwidth}{!}{\input{OLP_UPSTREAM_PATH/#1}}\end{LTR}}
+\newenvironment{explain}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{tagblock}[1]{}{}
+\newtheorem{defn}{تعريف}[section]
+\newtheorem{ex}[defn]{بېلګه}
+\newtheorem{prop}[defn]{قضيه}
+\newtheorem{thm}[defn]{قضيه}
+\newtheorem{prob}[defn]{تمرين}
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\emergencystretch=2em
+\linespread{1.18}
+\begin{document}
+\setRTL
+\begin{center}
+{\Huge خلاص منطق}\par
+{\Large پښتو - پاکستان}\par\medskip
+{\LARGE SETS_CHAPTER_TITLE}\par\medskip
+\end{center}
+دا د ماشيني ژباړې د روان کار يوه برخه ده۔ په دې باب کښې شپږ برخې، بېلګې او تمرينونه شامل دي۔ بشپړه نسخه لا د جوړېدو په حال کښې ده۔ اصطلاحي پرېکړې او د کتنې حدود د سرچينو په شواهدو کښې ثبت دي۔
+\begin{LTR}\latinfont\small
+Adapted from the Open Logic Project, revision
+\texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}.
+Original and adaptation: Creative Commons Attribution 4.0 International;
+component exceptions remain in the accompanying upstream source.
+\href{https://openlogicproject.org/}{Open Logic Project}.
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.
+This is an independently prepared machine translation, without upstream endorsement.
+\end{LTR}
+\bigskip

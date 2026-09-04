@@ -1,0 +1,135 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: unions-and-intersections
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{uni}
+\olsection{اتحادونه او تقاطعې}
+
+\begin{explain}
+په \olref[sfr][set][bas]{sec} کښې مو د تجريد په وسيله د سټونو تعريفونه معرفي کړل، يعنې د $\Setabs{x}{\phi(x)}$ په بڼه تعريفونه۔ دلته يو خاصيت~$\phi$ په کار راوړو، او دا خاصيت د هغو سټونو يادونه کولے شي چې مخکې مو تعريف کړي دي۔ نو د بېلګې په توګه، که $A$ او~$B$ سټونه وي، د $\Setabs{x}{x \in A \lor x \in B}$ سټ له هغو ټولو څيزونو جوړ دے چې د $A$ يا~$B$ !!{element}s وي، يعنې دا هغه سټ دے چې د $A$ او~$B$ !!{element}s سره يوځاے کوي۔ دا لکه په \olref{fig:union} کښې انځورولے شو، چې رنګ شوې ساحه د دواړو سټونو $A$ او~$B$ !!{element}s په ګډه ښيي۔
+
+\begin{figure}
+  \olasset{assets/diagrams/union.tikz}
+  \caption{د دوو سټونو اتحاد $A \cup B$ د~$A$ د \psOblique{!!{element}s} او د~$B$ د غړو ګډ سټ دے۔}
+  \ollabel{fig:union}
+\end{figure}
+
+په سټونو دا عمل، يعنې يوځاے کول ئې، ډېر ګټور او عام دے؛ نو يو صوري نوم او نښه ورکوو۔
+\end{explain}
+
+\begin{defn}[اتحاد]
+د دوو سټونو $A$ او $B$ \emph{اتحاد}، چې $A \cup B$ ليکل کېږي، د ټولو هغو څيزونو سټ دے چې د $A$، $B$، يا د دواړو !!{element}s وي۔
+\[
+A \cup B = \Setabs{x}{x \in A \lor x \in B}
+\]
+\end{defn}
+
+\begin{ex}
+څرنګه چې د \psOblique{!!{element}s} تکرار مهم نۀ دے، د هغو دوو سټونو اتحاد چې ګډ !!a{element} ولري، هغه !!{element} يوازې يو ځل لري؛ د بېلګې په توګه، $\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$۔
+
+د يو سټ او د هغۀ د يو فرعي سټ اتحاد هم هغه لوے سټ دے: $\{a, b, c \} \cup \{a \} = \{a, b, c\}$۔
+
+له تش سټ سره د يو سټ اتحاد له هم هغه سټ سره برابر دے: $\{a, b, c \} \cup \emptyset = \{a, b, c \}$۔
+\end{ex}
+
+\begin{prob}
+ثابت کړئ چې که $A \subseteq B$ وي، نو $A \cup B = B$۔
+\end{prob}
+
+\begin{explain}
+د اتحاد يو ``دوه ګونے'' عمل هم په پام کښې نيولے شو۔ دا هغه عمل دے چې د هغو ټولو \psOblique{!!{element}s} سټ جوړوي چې د~$A$ !!{element}s وي او د~$B$ هم !!{element}s وي۔ دې عمل ته \emph{تقاطع} وئيل کېږي، او لکه په \olref{fig:intersection} کښې ښودل کېدے شي۔
+\begin{figure}
+  \olasset{assets/diagrams/intersection.tikz}
+  \caption{د دوو سټونو تقاطع $A \cap B$ د هغو د ګډو \psOblique{!!{element}s} سټ دے۔}
+  \ollabel{fig:intersection}
+\end{figure}
+\end{explain}
+
+\begin{defn}[تقاطع]
+د دوو سټونو $A$ او $B$ \emph{تقاطع}، چې $A \cap B$ ليکل کېږي، د ټولو هغو څيزونو سټ دے چې د $A$ او~$B$ دواړو !!{element}s وي۔
+\[
+A \cap B = \Setabs{x}{x \in A \land x \in B}
+\]
+دوه سټونه هله \emph{بېل} بللے شي چې تقاطع ئې تشه وي۔ مطلب دا چې هېڅ ګډ !!{element}s نۀ لري۔
+\end{defn}
+
+\begin{ex}
+که دوه سټونه هېڅ ګډ !!{element}s ونۀ لري، تقاطع ئې تشه ده: $\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$۔
+
+که دوه سټونه ګډ !!{element}s ولري، تقاطع ئې د هغو ټولو سټ دے: $\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$۔
+
+د يو سټ او د هغۀ د يو فرعي سټ تقاطع هم هغه کوچنے سټ دے: $\{a, b, c\} \cap \{a, b\} = \{a, b\}$۔
+
+له تش سټ سره د هر سټ تقاطع تشه ده: $\{a, b, c \} \cap \emptyset = \emptyset$۔
+\end{ex}
+
+\begin{prob}
+په دقيقه توګه ثابت کړئ چې که $A \subseteq B$ وي، نو $A \cap B = A$۔
+\end{prob}
+
+\begin{explain}
+له دوو څخه د زياتو سټونو اتحاد يا تقاطع هم جوړولے شو۔ په عمومي توګه د دې د بيانولو يوه ښکلې طريقه دا ده: فرض کړئ چې ټول هغه سټونه چې اتحاد (يا تقاطع) ئې جوړول غواړئ، په يو سټ کښې راټول کړئ۔ بيا د ټولو اصلي سټونو اتحاد د هغو ټولو څيزونو د سټ په توګه تعريفولے شو چې لږ تر لږه د دې سټ د يو \psOblique{!!{element}} غړي وي، او تقاطع د هغو ټولو څيزونو د سټ په توګه چې د دې سټ د هر \psOblique{!!{element}} غړي وي۔
+\end{explain}
+
+\begin{defn}
+که $A$ د سټونو يو سټ وي، نو $\bigcup A$ د~$A$ د \psOblique{!!{element}s} د \psOblique{!!{element}s} سټ دے:
+\begin{align*}
+\bigcup A & = \Setabs{x}{x \text{ د دې سټ د يو \psOblique{!!a{element}} غړے دے: } A},
+\text{ يعنې،}\\
+& = \Setabs{x}{\text{داسې يو } B \in A
+  \text{ شته چې } x \in B}
+\end{align*}
+\end{defn}
+
+\begin{defn}
+که $A$ د سټونو يو سټ وي، نو $\bigcap A$ د هغو څيزونو سټ دے چې د~$A$ ټول عناصر ئې په ګډه لري:
+\begin{align*}
+\bigcap A & = \Setabs{x}{x \text{ د دې سټ د هر \psOblique{!!{element}} غړے دے: } A},
+\text{ يعنې،}\\
+ & = \Setabs{x}{\text{د هر } B \in A, x \in B}
+\end{align*}
+\end{defn}
+
+\begin{ex}
+فرض کړئ چې $A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}$۔ بيا $\bigcup A = \{ a, b, d, e \}$ او $\bigcap A = \{ a \}$۔
+\end{ex}
+\begin{prob}
+	وښايئ چې که $A$ يو سټ وي او $A \in B$ وي، نو $A \subseteq \bigcup B$۔
+\end{prob}
+
+د سټونو د يوې لړۍ $A_1$، $A_2$، \dots دپاره هم دا کار کولے شو:
+\begin{align*}
+\bigcup_i A_i & = \Setabs{x}{x \text{ له دې سټونو څخه د يوه غړے دے: } A_i}\\
+\bigcap_i A_i & = \Setabs{x}{x \text{ د دې هر سټ غړے دے: } A_i}.
+\end{align*}
+
+چې کله د سټونو يو \emph{اندکس} ولرو، يعنې داسې يو سټ $I$ چې د هر $i \in I$ دپاره $A_i$ په پام کښې نيسو، دا لنډې بڼې هم کارولے شو:
+\begin{align*}
+	\bigcup_{i \in I} A_i & = \bigcup \Setabs{A_i }{i \in I}\\
+	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
+\end{align*}
+
+په پای کښې، کېدے شي د~$A$ د هغو ټولو \psOblique{!!{element}s} سټ په پام کښې نيول وغواړو چې په~$B$ کښې نۀ وي۔ دا لکه په \olref{difference} کښې انځورولے شو۔
+
+\begin{figure}
+  \olasset{assets/diagrams/difference.tikz}
+  \caption{د دوو سټونو تفاضل $A \setminus B$ د~$A$ د هغو \psOblique{!!{element}s} سټ دے چې د~$B$ !!{element}s نۀ وي۔}
+  \ollabel{difference}
+\end{figure}
+
+\begin{defn}[تفاضل]
+د سټونو \emph{تفاضل}~$A \setminus B$ د $A$ د هغو ټولو \psOblique{!!{element}s} سټ دے چې د~$B$ !!{element}s نۀ وي، يعنې،
+\[
+A\setminus B = \Setabs{x}{x\in A \text{ او } x \notin B}.
+\]
+\end{defn}
+
+\begin{prob}
+	ثابت کړئ چې که $A \subsetneq B$ وي، نو $B \setminus A \neq \emptyset$۔
+\end{prob}
+
+\end{document}

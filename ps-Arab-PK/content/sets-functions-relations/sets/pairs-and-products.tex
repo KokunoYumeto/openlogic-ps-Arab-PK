@@ -1,0 +1,93 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: pairs-and-products
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{pai}
+\olsection{جوړې، څوګونې او کارتيزي حاصل ضربونه}
+
+\begin{explain}
+د غړو له مخې له برابرۍ نه دا نتيجه راوځي چې د سټونو عناصر ترتيب نۀ لري۔ نو که د ترتيب استازيتوب کول غواړو، \emph{مرتبې جوړې} $\tuple{x, y}$ کاروو۔ په يوه نامرتبه جوړه $\{x, y\}$ کښې ترتيب مهم نۀ دے: $\{x, y\} = \{y, x\}$۔ په مرتبه جوړه کښې ترتيب مهم دے: که $x \neq y$ وي، نو $\tuple{x, y} \neq \tuple{y, x}$۔
+
+د سټونو په نظريه کښې مرتبې جوړې څنګه په پام کښې ونيسو؟ بنيادي خبره دا ده چې دا نظر وساتو: مرتبې جوړې هله او يوازې هله برابرې وي چې لومړے عنصر ئې هم يو وي او دويم عنصر ئې هم يو وي، يعنې:
+\[
+  \tuple{a, b}= \tuple{c, d}\text{ هله او يوازې هله چې دواړه }a = c \text{ او }b=d.
+\]
+د وينر--کوراتوسکي تعريف په کارولو سره د سټونو په نظريه کښې مرتبې جوړې تعريفولے شو۔
+\end{explain}
+
+\begin{defn}[مرتبه جوړه]\ollabel{wienerkuratowski}
+	$\tuple{a, b} = \{\{a\}, \{a, b\}\}$۔
+\end{defn}
+
+\begin{prob}
+	د \olref[sfr][set][pai]{wienerkuratowski} په کارولو سره ثابت کړئ چې $\tuple{a, b}= \tuple{c, d}$ هله او يوازې هله وي چې $a = c$ او $b=d$ دواړه وي۔
+\end{prob}
+
+\begin{explain}
+چې د مرتبې جوړې تعريف مو وټاکلو، د نورو سټونو د تعريف دپاره ئې کارولے شو۔ د بېلګې په توګه، کله کله له دوو څخه د زياتو څيزونو مرتبې لړۍ هم غواړو، لکه \emph{درې ګونې} $\tuple{x, y, z}$، \emph{څلورګونې} $\tuple{x, y, z, u}$، او داسې نورې۔ درې ګونې د ځانګړو مرتبو جوړو په توګه ګڼلے شو، چې لومړے عنصر ئې پخپله يوه مرتبه جوړه وي: $\tuple{x, y, z}$ هم $\tuple{\tuple{x, y},z}$ دے۔ د څلورګونو دپاره هم همداسې ده: $\tuple{x,y,z,u}$ هم $\tuple{\tuple{\tuple{x,y},z},u}$ دے، او داسې نور۔ په عمومي توګه، د \emph{مرتبو $n$-ګونو} $\tuple{x_1, \dots, x_n}$ خبره کوو۔
+
+د مرتبو جوړو، يا د نورو مرتبو $n$-ګونو، ځينې سټونه به ګټور وي۔
+\end{explain}
+
+\begin{defn}[کارتيزي حاصل ضرب]
+د ورکړل شوو سټونو $A$ او $B$ \emph{کارتيزي حاصل ضرب} $A \times B$ داسې تعريفېږي:
+\[
+  A \times B = \Setabs{\tuple{x, y}}{x \in A \text{ او } y \in B}.
+\]
+\end{defn}
+
+\begin{ex}
+که $A = \{0, 1\}$ او $B = \{1, a, b\}$ وي، نو حاصل ضرب ئې دا دے:
+\[
+A \times B = \{ \tuple{0, 1}, \tuple{0, a}, \tuple{0, b},
+    \tuple{1, 1}, \tuple{1, a}, \tuple{1, b} \}.
+\]
+\end{ex}
+
+\begin{ex}
+که $A$ يو سټ وي، له خپل ځان سره د $A$ حاصل ضرب، $A \times A$، د~$A^2$ په بڼه هم ليکل کېږي۔ دا د هغو \emph{ټولو} جوړو $\tuple{x, y}$ سټ دے چې $x, y \in A$ وي۔ د ټولو درې ګونو $\tuple{x, y, z}$ سټ $A^3$ دے، او داسې نور۔ يو بازګشتي تعريف ورکولے شو:
+\begin{align*}
+  A^1 & = A\\
+  A^{k+1} & = A^k \times A
+\end{align*}
+\end{ex}
+
+\begin{prob}
+د $\{1, 2, 3\}^3$ ټول !!{element}s وليکئ۔
+\end{prob}
+
+\begin{prop}\ollabel{cardnmprod}
+که $A$ د $n$ په شمېر !!{element}s او $B$ د $m$ په شمېر !!{element}s ولري، نو $A \times B$ د $n\cdot m$ په شمېر عناصر لري۔
+\end{prop}
+
+\begin{proof}
+په~$A$ کښې د هر \psOblique{!!{element}}~$x$ دپاره، د $\tuple{x, y} \in A \times B$ په بڼه د $m$ په شمېر !!{element}s شته۔ فرض کړئ چې $B_x = \Setabs{\tuple{x, y}}{y \in B}$۔ څرنګه چې هر کله $x_1 \neq x_2$ وي، $\tuple{x_1, y} \neq \tuple{x_2, y}$ وي، نو $B_{x_1} \cap B_{x_2} = \emptyset$۔ خو که $A = \{x_1, \dots, x_n\}$ وي، نو $A \times B = B_{x_1} \cup \dots \cup B_{x_n}$، او ځکه د $n\cdot m$ په شمېر !!{element}s لري۔
+
+د دې د انځورولو دپاره، د~$A \times B$ !!{element}s په يوه جالۍ کښې ترتيب کړئ:
+\[
+\begin{array}{rcccc}
+  B_{x_1} = & \{\tuple{x_1, y_1} & \tuple{x_1, y_2} & \dots & \tuple{x_1, y_m}\}\\
+  B_{x_2} = & \{\tuple{x_2, y_1} & \tuple{x_2, y_2} & \dots & \tuple{x_2, y_m}\}\\
+  \vdots & & \vdots\\
+  B_{x_n} = & \{\tuple{x_n, y_1} & \tuple{x_n, y_2} & \dots & \tuple{x_n, y_m}\}
+\end{array}
+\]
+څرنګه چې ټول $x_i$ يو له بله بېل دي، او ټول $y_j$ يو له بله بېل دي، په دې جالۍ کښې هېڅ دوه جوړې يو شان نۀ دي، او شمېر ئې $n\cdot m$ دے۔
+\end{proof}
+
+\begin{prob}
+په~$k$ د استقرا په وسيله وښايئ چې د هر $k \ge 1$ دپاره، که $A$ د $n$ په شمېر !!{element}s ولري، نو $A^k$ د $n^k$ په شمېر !!{element}s لري۔
+\end{prob}
+
+\begin{ex}
+که $A$ يو سټ وي، په~$A$ يوه \emph{کلمه} د~$A$ د \psOblique{!!{element}s} هره لړۍ ده۔ يوه لړۍ د~$A$ د \psOblique{!!{element}s} د يوې $n$-ګونې په توګه ګڼل کېدے شي۔ د بېلګې په توګه، که $A = \{a, b, c\}$ وي، نو لړۍ ``$bac$'' د درې ګونې~$\tuple{b, a, c}$ په توګه ګڼل کېدے شي۔ کلمې، يعنې د نښو لړۍ، په کمپيوټر ساينس کښې بنيادي اهميت لري۔ د منل شوي دود له مخې، د~$A$ !!{element}s د~$1$ اوږدوالي لرونکې لړۍ ګڼو، او $\emptyset$ د~$0$ اوږدوالي لرونکې لړۍ ګڼو۔ بيا په~$A$ د \emph{ټولو} کلمو سټ دا دے:
+\[
+A^* = \{\emptyset\} \cup A \cup A^2 \cup A^3 \cup \dots
+\]
+\end{ex}
+
+\end{document}
