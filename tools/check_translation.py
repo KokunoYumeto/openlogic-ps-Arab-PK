@@ -11,7 +11,7 @@ plan=json.loads((STATE/'consultation-plan.json').read_text(encoding='utf-8'))
 passages={p['passage_id']:p for p in map(json.loads,(STATE/'CANON_PASSAGES.jsonl').read_text(encoding='utf-8').splitlines())}
 def localize_text(s):
  out='';pos=0
- for m in re.finditer(r'\\text\{',s):
+ for m in re.finditer(r'\\(?:text|intertext)\{',s):
   if m.start()<pos: continue
   i=m.end(); depth=1
   while i<len(s) and depth:
@@ -19,7 +19,9 @@ def localize_text(s):
    if s[i]=='}' and s[i-1]!='\\': depth-=1
    i+=1
   assert depth==0, 'unbalanced text argument'
-  out+=s[pos:m.start()]+r'\text{LOCALIZED}';pos=i
+  content=s[m.end():i-1]
+  embedded=''.join(re.findall(r'\$[^$]*\$',content))
+  out+=s[pos:m.start()]+m.group(0)+'LOCALIZED'+embedded+'}';pos=i
  return out+s[pos:]
 def math(s):
  spans=re.findall(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}',s)
@@ -39,12 +41,16 @@ for uid,consult in plan['units'].items():
  sa=a.decode(); sb=b.decode(); aa=re.split(r'\n\s*\n',sa.strip()); bb=re.split(r'\n\s*\n',sb.strip())
  checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=ids(sa)==ids(sb),math=math(sa)==math(sb),tokens=Counter(re.findall(r'!!\^?a?\{\w+\}s?',sa))==Counter(re.findall(r'!!\^?a?\{\w+\}s?',sb)),nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
  residual=re.sub(r'(?m)^%.*$','',sb)
+ if uid in ['OLP-0017','OLP-0018']:
+  diagram=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',s)]
+  checks['unchanged_numeric_diagrams']=diagram(sa)==diagram(sb)
+  residual=re.sub(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}','',residual)
  residual=re.sub(r'\\olchapter\{[^}]+\}\{[^}]+\}',r'\\olchapter',residual)
  residual=re.sub(r'\\olpart\{[^}]+\}',r'\\olpart',residual)
  residual=re.sub(r'\\addcontentsline\{[^}]+\}\{[^}]+\}',r'\\addcontentsline',residual)
  residual=re.sub(r'https?://[^}\s]+|openlogicproject\.org','',residual)
  residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]','',residual)
- residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|oliflabeldef|begin|end|ollabel)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
+ residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|oliflabeldef|begin|end|ollabel|cite\w*)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
  residual=re.sub(r'!!\^?a?\{\w+\}s?|\\[A-Za-z]+','',residual)
  english=sorted(set(re.findall(r'[A-Za-z]{2,}',residual)))
  checks['no_ordinary_english']=not english

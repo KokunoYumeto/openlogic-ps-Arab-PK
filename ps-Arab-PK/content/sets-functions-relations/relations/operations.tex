@@ -1,0 +1,75 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: operations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{ops}
+\olsection{په اړيکو باندې عمليات}
+
+اړيکې بدلول يا سره يوځاے کول ډېر وخت ګټور وي۔ په
+\olref[sfr][rel][ord]{prop:stricttopartial} کښې مو د اړيکو
+\emph{اتحاد} په پام کښې نيولے و؛ دا يوازې د دوو اړيکو اتحاد دے
+چې د جوړو د سټونو په توګه ګڼل شوې وي۔ همدارنګه، په
+\olref[sfr][rel][ord]{prop:partialtostrict} کښې مو د اړيکو نسبي
+تفاضل په پام کښې نيولے و۔ لاندې ځينې نور عمليات دي چې په اړيکو
+باندې ئې کولے شو۔
+
+\begin{defn}\ollabel{relationoperations}
+فرض کړئ $R$ او $S$ اړيکې دي، او $A$ هر يو سټ دے۔
+
+د $R$ \emph{معکوس} دا دے:
+$R^{-1} = \Setabs{\tuple{y, x}}{\tuple{x, y} \in R}$۔
+
+د $R$ او $S$ \emph{نسبي حاصل ضرب} دا دے:
+$(R \mid S) = \{\tuple{x, z} : \exists y(Rxy \land Syz)\}$۔
+
+تر $A$ پورې د $R$ \emph{محدودونه} دا ده:
+$\funrestrictionto{R}{A}= R \cap A^2$۔
+
+په $A$ باندې د $R$ \emph{تطبيق} دا دے:
+$\funimage{R}{A} = \{y : (\exists x \in A)Rxy\}$
+\end{defn}
+
+\begin{ex}
+فرض کړئ $S \subseteq \Int^2$ په $\Int$ باندې د ځايناستي اړيکه
+ده؛ يعنې $S = \Setabs{\tuple{x, y} \in \Int^2}{x + 1 = y}$،
+نو $Sxy$ هله او يوازې هله چې $x + 1 = y$ وي۔
+
+$S^{-1}$ په $\Int$ باندې د مخکيني اړيکه ده، يعنې:
+$\Setabs{\tuple{x,y}\in\Int^2}{x -1 =y}$۔
+
+$S\mid S$ دا دے:
+$ \Setabs{\tuple{x,y}\in\Int^2}{x + 2 =y}$
+
+$\funrestrictionto{S}{\Nat}$ په $\Nat$ باندې د ځايناستي اړيکه ده۔
+
+$\funimage{S}{\{1,2,3\}}$ دا دے: $\{2, 3, 4\}$۔
+\end{ex}
+
+\begin{defn}[انتقالي بندښت]فرض کړئ $R \subseteq A^2$ يوه دوه ځاييزه اړيکه ده۔
+
+د $R$ \emph{انتقالي بندښت} دا دے:
+$R^+ = \bigcup_{0 < n \in \Nat} R^n$؛ دلته په بازګشتي ډول
+$R^1 = R$ او $R^{n+1} = R^n \mid R$ تعريفوو۔
+
+د $R$ \emph{انعکاسي انتقالي بندښت} دا دے:
+$R^* = R^+ \cup \Id{A}$۔
+\end{defn}
+
+\begin{ex}
+د ځايناستي اړيکه $S \subseteq \Int^2$ واخلئ۔ $S^2xy$ هله او
+يوازې هله چې $x + 2 = y$ وي، $S^3xy$ هله او يوازې هله چې
+$x + 3 = y$ وي، او داسې نور۔ نو $S^+xy$ هله او يوازې هله چې
+د کوم $n \geq 1$ دپاره $x + n = y$ وي۔ په نورو ټکو، $S^+xy$
+هله او يوازې هله چې $x < y$ وي، او $S^*xy$ هله او يوازې هله چې
+$x \le y$ وي۔
+\end{ex}
+
+\begin{prob}
+وښيئ چې د $R$ انتقالي بندښت په رښتيا انتقالي دے۔
+\end{prob}
+
+\end{document}

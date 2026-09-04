@@ -1,0 +1,113 @@
+{
+  "schema": "ps-laptop-reconciliation/1",
+  "checked_utc": "2026-09-04T15:53:28.873737+00:00",
+  "methodology_report": {
+    "sha256": "0f5bbdc03d45a5c6fd43f4cc46b4dee233a17e4ab35ee554baebc2e9bde6e039",
+    "consulted_sections": [
+      "Exact evidence and file locations",
+      "Why these particular adaptations existed",
+      "OpenLogic-specific finding",
+      "What QA establishes across the collection",
+      "Pakistani Punjabi assessment",
+      "reader/source synchronization assessments"
+    ],
+    "filename": "CURRICULUM_FULL_HANDOFF_20260904.md"
+  },
+  "reconciliation": [
+    {
+      "item": "Recovered Pashto originals and terminology",
+      "classification": "not supplied; no language-canon reuse claimed",
+      "evidence": "Manager targeted handoff and full report list nine locale roots and explicitly state Pashto is absent.",
+      "decision": "No Punjabi, Urdu, Persian or other neighboring-language witness is admitted as Pashto authority. Do not inspect unrelated book-owner translations or inherit their consultation records."
+    },
+    {
+      "item": "OpenLogic English source",
+      "classification": "already reused from verified shared seed",
+      "evidence_file": "SOURCE_VERIFICATION.json",
+      "sha256": "25fa020ca0fcc3f8989cd6e0ec7ba4d11359bf713a5e46c9dfc813b507c020a0",
+      "decision": "All 722 raw OpenLogic units come from the exact shared seed. Recovered textbook starts do not receive OpenLogic translation credit."
+    },
+    {
+      "item": "Recovered methodology",
+      "classification": "reused as workflow comparison; current controls already independently implemented",
+      "decision": "Keep source translation, learner additions, front matter and rendered coverage separate. Bind reader acceptance to exact current translation and canon hashes. Preserve formulas and inspect actual RTL/font outputs. No old PASS or consultation receipt is adopted."
+    },
+    {
+      "item": "Local-needs motivation",
+      "classification": "other-locale designs irrelevant as Pashto evidence",
+      "decision": "Pakistani Pashto target remains the explicit commission. Do not import Punjabi Urdu bridges, Bengali remediation ages or other language-specific interventions. Any future learner adaptation remains distinct from the full faithful OpenLogic text."
+    },
+    {
+      "item": "Current native Pashto canon",
+      "classification": "continued acquired originals; not inherited laptop consultation",
+      "sources": [
+        {
+          "source_id": "PS-PK-IQRAM-2019",
+          "sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+          "verified_pdf_pages_1based": [
+            1,
+            2
+          ],
+          "region": "Pakistan; Pashto Academy, University of Peshawar"
+        },
+        {
+          "source_id": "PS-AF-MOE-G7-1398",
+          "sha256": "1b762171ab5d157af8b9c1d31cb4cbd69627f5896dbe65b286024d8f44b274f8",
+          "verified_pdf_pages_1based": [
+            4,
+            10,
+            11,
+            12,
+            17,
+            18,
+            19,
+            20,
+            22,
+            24
+          ],
+          "region": "Afghanistan; regional comparator only"
+        },
+        {
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "verified_pdf_pages_1based": [
+            12,
+            63,
+            95,
+            108,
+            114,
+            143,
+            145,
+            183
+          ],
+          "region": "Afghanistan; regional comparator only"
+        },
+        {
+          "source_id": "PS-TEGEY-ROBSON-1996",
+          "sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+          "verified_pdf_pages_1based": [
+            1,
+            5,
+            7,
+            8,
+            52,
+            179
+          ],
+          "region": "Reference grammar; Afghan-central examples, regional comparator"
+        }
+      ],
+      "decision": "Native Pakistani scholarly prose remains primary; Afghan mathematical logic, school mathematics and grammar are labelled comparators. Exact technical attestation and provisional choices remain separate. Newly inspected relation/order pages add evidence without retrospectively rewriting old actual-consultation claims."
+    }
+  ],
+  "translation_checkpoint": {
+    "file": "RELATIONS_DRAFT_CHECKPOINT.json",
+    "sha256": "89ac43d098ab667ccc7adb3f59e9092d505b2312ed35720c7b41f539594502b0",
+    "draft_units": 19,
+    "total_units": 722
+  },
+  "publication_preserved": {
+    "github_receipt_sha256": "563edda7bac0e3c0f8c7835bce2d080ed2acf5ce711f4f2361a1fa136a8c6978",
+    "zenodo_receipt_sha256": "78b9f52b56425bcc4544d9bca849c6ceb66d3d40aa7bfbebb2dbf782f2fdf267"
+  },
+  "next_action": "Complete integrated sets-and-relations render and visual QA, then continue full source corpus. No rebuild of the already accepted first-chapter release solely because of recovery handoff."
+}

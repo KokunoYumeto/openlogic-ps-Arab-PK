@@ -2,11 +2,11 @@
 
 An independent machine translation of the Open Logic Project into Pashto in Arabic script, for a Pakistan curriculum target. Pakistani prose and orthography are primary; Afghan Pashto sources are explicitly labelled regional comparators.
 
-**Work in progress: 10 of 722 source units are translated drafts. The first reader contains the complete sets chapter: seven units, comprising one chapter driver and six substantive sections. Three additional front matter and import-driver drafts are included as editable sources. The complete edition remains under production.** This repository does not claim a complete book or human-reviewed translation. See [the translation catalogue](https://github.com/KokunoYumeto/OpenLogic-translations).
+**Work in progress: 19 of 722 source units are translated drafts. The current 23-page reader contains the complete sets and relations chapters: 16 units, comprising two chapter drivers and 14 substantive sections. Three additional front matter and import-driver drafts are included as editable sources. The complete edition remains under production.** This repository does not claim a complete book or human-reviewed translation. See [the translation catalogue](https://github.com/KokunoYumeto/OpenLogic-translations).
 
-Read the [sets chapter PDF](readers/openlogic-ps-Arab-PK-sets.pdf). Versioned PDF and editable source bundles are available from [releases](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases).
+Read the [sets and relations PDF](readers/openlogic-ps-Arab-PK-sets-relations.pdf). The [first sets-only reader](readers/openlogic-ps-Arab-PK-sets.pdf) remains available. Versioned PDF and editable source bundles are available from [GitHub releases](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases) and the [Zenodo edition lineage](https://doi.org/10.5281/zenodo.22307197).
 
-The chapter covers extensionality, subsets and power sets, important number domains and sequences, unions and intersections, ordered tuples and Cartesian products, and Russell's paradox. It includes the original examples, exercises, captions and diagrams. The editable Pashto source mirrors upstream file paths in `ps-Arab-PK/`.
+The chapters cover sets, set operations, tuples and Cartesian products, Russell's paradox, relations as sets, philosophical reflections, relation properties, equivalence classes, orders, graphs, trees and relation operations. They include the original examples, exercises, captions and diagrams. The editable Pashto source mirrors upstream file paths in `ps-Arab-PK/`. Separate edition notes explain inherited notation ambiguities without silently changing the source formulas.
 
 ## Source and evidence
 
@@ -22,19 +22,19 @@ Validation checks source hashes, paragraph alignment, environments, formula bodi
 
 English comments and identifiers remain as structural metadata. The proper name `Ruth` inside an original formula is a documented exception. Formula text is translated. The `psOblique` wrapper realizes required Pashto case inflection while retaining the original term token and key.
 
-This first chapter renderer is scoped to the seven listed units. Whole-edition coverage and treatment of the 80 units outside the ordinary reader graph remain outstanding. No complete-reader claim follows from preserving all English source files.
+The current combined renderer follows the two actual chapter drivers and includes 16 source units. Its original conditional reference to a future set-theory part selects the source's fallback wording; both translated branches, including the footnote, remain in the editable source. Whole-edition coverage and treatment of the 80 units outside the ordinary reader graph remain outstanding. No complete-reader claim follows from preserving all English source files.
 
-## Rebuild the chapter on Windows
+## Rebuild the current reader on Windows
 
-Requires Python 3, XeLaTeX with fontspec, amsmath/amsthm, bidi, TikZ, hyperref and the Amiri font. From this repository:
+Requires Python 3, XeLaTeX with fontspec, amsmath/amsthm, bidi, TikZ, natbib, hyperref and the Amiri font. From this repository:
 
 ```powershell
-python tools/build_chapter.py
-./tools/guard_tex.ps1 -Passes 2
+python tools/build_reader.py
+./tools/guard_tex.ps1 -Passes 4 -BuildDirectory ./build/reader -DocumentBases reader
 python tools/check_translation.py
 ```
 
-The output is `build/sets/sets.pdf`. The guard acquires `Global\InterlanguageTeXSlotV1` with one bounded timeout, captures descendants in a Windows job before resuming the engine, holds the slot through all passes and log checks, and releases it in `finally`. When occupied, it starts no TeX process. Fixed `SOURCE_DATE_EPOCH` supports deterministic PDF replay.
+The output is `build/reader/reader.pdf`. The guard acquires `Global\InterlanguageTeXSlotV1` with one bounded timeout, captures descendants in a Windows job before resuming the engine, holds the slot through all passes and log checks, and releases it in `finally`. When occupied, it starts no TeX process. Fixed `SOURCE_DATE_EPOCH` supports deterministic PDF replay. The earlier `build_chapter.py` script remains available for the sets-only reader.
 
 ## Attribution and license
 

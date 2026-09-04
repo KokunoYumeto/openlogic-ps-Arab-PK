@@ -1,0 +1,96 @@
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage[margin=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,nicefrac}
+\usepackage{xparse,graphicx,tikz,xcolor}
+\usepackage[authoryear]{natbib}
+\usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
+\usepackage{bidi}
+\hypersetup{pdftitle={OpenLogic Pashto Pakistan - Sets and Relations},pdfauthor={Open Logic Project; machine translation adaptation},pdfsubject={Partial edition: two complete chapters; full 722-unit edition in progress}}
+\definecolor{oldiagcolorA}{RGB}{38,89,117}
+\definecolor{oldiagcolorB}{RGB}{189,83,41}
+\definecolor{oldiagcolorC}{RGB}{44,115,104}
+\newcommand{\Setabs}[2]{\{#1 : #2\}}
+\newcommand{\Pow}[1]{\wp(#1)}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Int}{\mathbb{Z}}
+\newcommand{\Rat}{\mathbb{Q}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\PosInt}{\mathbb{Z}^{+}}
+\newcommand{\Bin}{\mathbb{B}}
+\newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\len}[1]{\mathrm{len}(#1)}
+\newcommand{\lif}{\mathbin{\rightarrow}}
+\newcommand{\liff}{\mathbin{\leftrightarrow}}
+\newcommand{\Id}[1]{\mathord{\mathrm{Id}_{#1}}}
+\newcommand{\emptyseq}{\Lambda}
+\newcommand{\equivrep}[2]{[#1]_{#2}}
+\newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
+\newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\newcommand{\olchapter}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{}\chapter{#3}\label{#1:#2::chap}}
+\newcommand{\olsection}[1]{\section{#1}\label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+% Match upstream's right-relative optional arguments, including explicit empty values.
+\NewDocumentCommand{\olref}{o o o m}{\begingroup
+\IfNoValueTF{#1}{\def\pskey{\pspart:\pschapter:\pssection:#4}}{
+  \IfNoValueTF{#2}{\def\pskey{\pspart:\pschapter:#1:#4}}{
+    \IfNoValueTF{#3}{\def\pskey{\pspart:#1:#2:#4}}{\def\pskey{#1:#2:#3:#4}}}}
+\LR{\ref{\pskey}}\endgroup}
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\newcommand{\olasset}[1]{\centering\begin{LTR}\centering\resizebox{.46\textwidth}{!}{\input{OLP_UPSTREAM_PATH/#1}}\end{LTR}}
+\newenvironment{explain}{}{}
+\newenvironment{intro}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{tagblock}[1]{}{}
+\newtheorem{defn}{تعريف}[section]
+\newtheorem{ex}[defn]{بېلګه}
+\newtheorem{prop}[defn]{قضيه}
+\newtheorem{thm}[defn]{قضيه}
+\newtheorem{prob}[defn]{تمرين}
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\chaptername}{باب}
+\renewcommand{\contentsname}{فهرست}
+\renewcommand{\bibname}{\RL{\normalfont سرچينې}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\emergencystretch=2em
+\linespread{1.18}
+\begin{document}
+\setRTL
+\begin{titlepage}
+\begin{center}
+\vspace*{25mm}
+{\Huge خلاص منطق}\par\bigskip
+{\Large پښتو — پاکستان}\par\bigskip
+{\LARGE سټونه او اړيکې}\par\bigskip
+د ماشيني ژباړې د روان کار نسخه
+\end{center}
+\bigskip
+په دې لوستيزه نسخه کښې دوه بشپړ بابونه شامل دي۔ د ټول کتاب ژباړه لا
+روانه ده۔ د سرچينو شواهد، اصطلاحي پرېکړې او د کتنې حدود له دې نسخې
+سره په ملګري موادو کښې ثبت دي۔
+\begin{LTR}\latinfont\small
+An independent machine translation of the Open Logic Project, revision\\
+\texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}.\par
+This reader contains the complete sets and relations chapters (16 source
+units). The source bundle also includes three front matter and import-driver
+drafts: 19 of 722 source units in total. The full edition remains in progress.
+Native Pakistani prose is primary; Afghan Pashto references are labelled
+regional comparators. Terminology remains provisional where exact technical
+attestation is sparse. This is not a claim of native-reader review.
+
+Original text and adaptation: Creative Commons Attribution 4.0 International,
+subject to the component notices preserved with upstream source.
+No upstream endorsement is implied.
+\href{https://openlogicproject.org/}{Open Logic Project}.\quad
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.\quad
+\href{https://doi.org/10.5281/zenodo.22307197}{Edition version lineage}.
+\end{LTR}
+\end{titlepage}
+\tableofcontents
+\clearpage

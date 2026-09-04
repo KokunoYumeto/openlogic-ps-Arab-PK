@@ -70,5 +70,123 @@
     },
     "reproducibility": "Four guarded passes produced identical bytes for each document. Final log findings empty.",
     "accepted_utc": "2026-09-04T15:07:55.736621+00:00"
+  },
+  {
+    "batch_id": "PS-B003-RELATIONS",
+    "units": [
+      {
+        "unit_id": "OLP-0004",
+        "sha256": "d84449acdd79d79bf1f780a29b6ba97596d383ac600e0a7694cb54baf2266144"
+      },
+      {
+        "unit_id": "OLP-0005",
+        "sha256": "9ca2b4f92fb03ed1d1f125942ec0b391665722d159dd1f92675ea497b09acc21"
+      },
+      {
+        "unit_id": "OLP-0006",
+        "sha256": "48161fdfc3ff95ee4eb9e94a4c112a3ded4b378305aefac5c4858406cea56156"
+      },
+      {
+        "unit_id": "OLP-0007",
+        "sha256": "c7ec8897784969dc856b06a18d31fa5a6d0c70824f6138ec3f02522916edd1db"
+      },
+      {
+        "unit_id": "OLP-0008",
+        "sha256": "76df06fd73db52b8f57d366d6c0926fce1aa170a6396a249e603b3d0e85bfc80"
+      },
+      {
+        "unit_id": "OLP-0009",
+        "sha256": "147c3290de38598459ef90e7d321c323a3f18adf39ea8e242efeea626b877242"
+      },
+      {
+        "unit_id": "OLP-0010",
+        "sha256": "8163d7fd47338dfe0cd6a3309dadea9dced7afaf10fd975dbdaed90bbfcff150"
+      },
+      {
+        "unit_id": "OLP-0011",
+        "sha256": "83b587aa9c1d6539154532e4ed5087031de313e0eae9bdb3dd54044f0258f6d3"
+      },
+      {
+        "unit_id": "OLP-0012",
+        "sha256": "e5416459b6a507fc6cdb88ec50e29d6d2ae455c207b25d946664e5daa8fec874"
+      },
+      {
+        "unit_id": "OLP-0013",
+        "sha256": "9b384f7f5cf3062d752ec1565c8eb8cd98fffa10ba0d252abccb467f8c8127cd"
+      },
+      {
+        "unit_id": "OLP-0014",
+        "sha256": "2c9bcf94a984b5b0235f948d71fe21e238db73872eb69393ee55b3d59451ee89"
+      },
+      {
+        "unit_id": "OLP-0015",
+        "sha256": "30600d8d5f35b9a46aa62f4f4b2364ef183340a5fcf1b1a25c8fcf7ecee10471"
+      },
+      {
+        "unit_id": "OLP-0016",
+        "sha256": "b3b24cc1303daacb146c01c286e9a94a59dd6634ee9393bc057553d47cfc4814"
+      },
+      {
+        "unit_id": "OLP-0017",
+        "sha256": "2cbdea0afdabfb7990eebfb58a4a9d9654114fbd7aa19b627c24f56256158054"
+      },
+      {
+        "unit_id": "OLP-0018",
+        "sha256": "44eb7c5a82ab4787d7d57da0008336d61f5cec8f63b9c121ecd73b621bb314e3"
+      },
+      {
+        "unit_id": "OLP-0019",
+        "sha256": "a4dc8bae8c8e4290dc954af29384aee9cd5f1575833c561b2d6cf0ae7be0ed8e"
+      }
+    ],
+    "reader": {
+      "filename": "openlogic-ps-Arab-PK-sets-relations.pdf",
+      "bytes": 198383,
+      "sha256": "0c52543550ced0869da55e406df971bf86ca1c3378a8493cef81ca020c66e2e9",
+      "pages": 23
+    },
+    "tex_receipt_sha256": "b6e6e95f2502e42991474c912093ddeaa18af9c41451ae2991aa77b22f41f23f",
+    "build_inputs_sha256": "edaebde57ea1e06f8117fd49d326c86486c5799a152d1dc6c532f13844f16152",
+    "visual_review": {
+      "pages_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "result": "All 23 page appearances inspected. Cover overflow fixed; only cover pixels changed between first and final renders, proved by PNG hashes. Two numeric directed graphs preserve loop, arrow direction and isolated vertex; tree preserves root/parent structure. Formula isolation, Pashto joining, diacritics, cross-chapter references and original bibliography citation checked. No clipping, overlap, missing glyph or unresolved reference found.",
+      "page_render_receipt_sha256": "7d5ba934133878440462c79e25e1b423424067859d8c506bb48e6e14cbfbdc8d"
+    },
+    "editorial_notes": {
+      "path": "ps-Arab-PK/editorial/reader-notes.tex",
+      "sha256": "a1079da6da16609436b97f332100749bd39d48eb6a117a9b103c452f318b17b9",
+      "role": "edition-authored notation clarifications; not source translation or extra source-unit credit",
+      "language_witnesses": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ]
+    },
+    "reproducibility": "Final two guarded passes produced identical bytes and empty log findings; all captured processes ended before mutex release.",
+    "accepted_utc": "2026-09-04T15:57:11.572890+00:00"
   }
 ]

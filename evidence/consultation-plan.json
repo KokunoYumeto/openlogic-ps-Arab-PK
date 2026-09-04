@@ -1,27 +1,410 @@
 {
   "batch_id": "PS-B001-SETS",
-  "status": "draft-under-QA",
+  "status": "cumulative-drafts-with-first-verified-release",
   "units": {
-    "OLP-0001": {"batch_id":"PS-B002-FRONTMATTER","passages":["PK-IQRAM-P1-PROSE","GRAMMAR-P166-SOV","AF-NIAZMAN-P7-PROPOSITION"],"terms":["TERM-METALOGIC","TERM-FORMAL","TERM-LICENSE"],"scope":"native expository prose and grammar; project description and licensing sense controlled by exact English original; draft not in sets reader"},
-    "OLP-0002": {"batch_id":"PS-B002-FRONTMATTER","passages":["PK-IQRAM-P1-PROSE","GRAMMAR-P166-SOV","AF-NIAZMAN-P7-PROPOSITION"],"terms":["TERM-FORMAL","TERM-OPERATOR"],"scope":"native explanatory style; pedagogical warning translated as inherited upstream content, not an added release hold; corpus imports preserved"},
-    "OLP-0003": {"batch_id":"PS-B002-FRONTMATTER","passages":["PK-IQRAM-P1-PROSE","GRAMMAR-P166-SOV","AF-MOE-P3-SET"],"terms":["TERM-SET","TERM-FINITE"],"scope":"part heading and editorial prose; Tim Button and book title translated as source attribution, not edition authorship"},
-    "OLP-0004": {"passages": ["PK-IQRAM-P1-PROSE", "AF-MOE-P3-SET"], "terms": ["TERM-SET"], "scope": "chapter title; imports retained, chapter closure incomplete"},
-    "OLP-0005": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P3-SET", "AF-MOE-P4-EMPTY-MEMBER", "AF-MOE-P5-MEMBERSHIP"], "terms": ["TERM-SET", "TERM-ELEMENT", "TERM-EMPTY", "TERM-EXTENSIONALITY", "TERM-IFF"], "scope": "definition/explanation/exercises and examples; extensionality label provisional; English proper name Ruth retained only inside source formula"},
-    "OLP-0006": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P11-SUBSET", "AF-MOE-P12-MUTUAL-INCLUSION", "AF-MOE-P5-MEMBERSHIP"], "terms": ["TERM-SUBSET", "TERM-PROPER-SUBSET", "TERM-POWERSET", "TERM-IFF", "TERM-ELEMENT"], "scope": "subset definition and mutual-inclusion witness; powerset label explicitly descriptive and provisional"},
-    "OLP-0007": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P3-SET", "AF-MOE-P5-MEMBERSHIP"], "terms": ["TERM-NUMBERSETS", "TERM-FINITE", "TERM-STRING", "TERM-CONTINUUM", "TERM-ELEMENT"], "scope": "native prose and set/member usage; number-domain/string/infinite terminology not falsely attested"},
-    "OLP-0008": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P13-INTERSECTION", "AF-MOE-P15-UNION", "AF-MOE-P17-DIFFERENCE", "AF-MOE-P5-MEMBERSHIP"], "terms": ["TERM-UNION", "TERM-INTERSECTION", "TERM-DIFFERENCE", "TERM-DISJOINT", "TERM-ELEMENT"], "scope": "native mathematical labels for three operations; arbitrary indexed families and formulas follow source only"},
-    "OLP-0009": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P3-SET", "AF-MOE-P5-MEMBERSHIP", "AF-MOE-P13-INTERSECTION"], "terms": ["TERM-PAIR", "TERM-PRODUCT", "TERM-RECURSIVE", "TERM-ELEMENT", "TERM-STRING"], "scope": "native prose and elementary set vocabulary; ordered-tuple/product/recursion labels provisional; no false native theorem attestation"},
-    "OLP-0010": {"passages": ["PK-IQRAM-P1-PROSE", "GRAMMAR-P166-SOV", "AF-MOE-P3-SET", "AF-MOE-P5-MEMBERSHIP"], "terms": ["TERM-EXTENSIONALITY", "TERM-IFF", "TERM-PARADOX", "TERM-AXIOM", "TERM-ELEMENT"], "scope": "native exposition and membership vocabulary; Russell argument follows original and its distinction between uniqueness and existence"}
+    "OLP-0001": {
+      "batch_id": "PS-B002-FRONTMATTER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION"
+      ],
+      "terms": [
+        "TERM-METALOGIC",
+        "TERM-FORMAL",
+        "TERM-LICENSE"
+      ],
+      "scope": "native expository prose and grammar; project description and licensing sense controlled by exact English original; draft not in sets reader"
+    },
+    "OLP-0002": {
+      "batch_id": "PS-B002-FRONTMATTER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION"
+      ],
+      "terms": [
+        "TERM-FORMAL",
+        "TERM-OPERATOR"
+      ],
+      "scope": "native explanatory style; pedagogical warning translated as inherited upstream content, not an added release hold; corpus imports preserved"
+    },
+    "OLP-0003": {
+      "batch_id": "PS-B002-FRONTMATTER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-FINITE"
+      ],
+      "scope": "part heading and editorial prose; Tim Button and book title translated as source attribution, not edition authorship"
+    },
+    "OLP-0004": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-MOE-P3-SET"
+      ],
+      "terms": [
+        "TERM-SET"
+      ],
+      "scope": "chapter title; imports retained, chapter closure incomplete"
+    },
+    "OLP-0005": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P4-EMPTY-MEMBER",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-ELEMENT",
+        "TERM-EMPTY",
+        "TERM-EXTENSIONALITY",
+        "TERM-IFF"
+      ],
+      "scope": "definition/explanation/exercises and examples; extensionality label provisional; English proper name Ruth retained only inside source formula"
+    },
+    "OLP-0006": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P11-SUBSET",
+        "AF-MOE-P12-MUTUAL-INCLUSION",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-SUBSET",
+        "TERM-PROPER-SUBSET",
+        "TERM-POWERSET",
+        "TERM-IFF",
+        "TERM-ELEMENT"
+      ],
+      "scope": "subset definition and mutual-inclusion witness; powerset label explicitly descriptive and provisional"
+    },
+    "OLP-0007": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-NUMBERSETS",
+        "TERM-FINITE",
+        "TERM-STRING",
+        "TERM-CONTINUUM",
+        "TERM-ELEMENT"
+      ],
+      "scope": "native prose and set/member usage; number-domain/string/infinite terminology not falsely attested"
+    },
+    "OLP-0008": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-UNION",
+        "TERM-INTERSECTION",
+        "TERM-DIFFERENCE",
+        "TERM-DISJOINT",
+        "TERM-ELEMENT"
+      ],
+      "scope": "native mathematical labels for three operations; arbitrary indexed families and formulas follow source only"
+    },
+    "OLP-0009": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-MOE-P13-INTERSECTION"
+      ],
+      "terms": [
+        "TERM-PAIR",
+        "TERM-PRODUCT",
+        "TERM-RECURSIVE",
+        "TERM-ELEMENT",
+        "TERM-STRING"
+      ],
+      "scope": "native prose and elementary set vocabulary; ordered-tuple/product/recursion labels provisional; no false native theorem attestation"
+    },
+    "OLP-0010": {
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-EXTENSIONALITY",
+        "TERM-IFF",
+        "TERM-PARADOX",
+        "TERM-AXIOM",
+        "TERM-ELEMENT"
+      ],
+      "scope": "native exposition and membership vocabulary; Russell argument follows original and its distinction between uniqueness and existence"
+    },
+    "OLP-0011": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-RELATION"
+      ],
+      "scope": "Chapter title and complete eight-section driver; reflections retained."
+    },
+    "OLP-0012": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-MOE-P5-MEMBERSHIP"
+      ],
+      "terms": [
+        "TERM-RELATION",
+        "TERM-IDENTITY",
+        "TERM-ORDER",
+        "TERM-REL-NEGATIONS",
+        "TERM-PAIR"
+      ],
+      "scope": "Relation-as-subset technical comparator; all explanatory prose, matrix and exercise source aligned. The original subsequently uses I without explicitly binding it to Id(Nat); preserve this inherited shorthand and record it, do not fabricate a new source definition."
+    },
+    "OLP-0013": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-RELATION",
+        "TERM-IDENTITY",
+        "TERM-PREDICATE",
+        "TERM-PHILOSOPHY",
+        "TERM-PARADOX"
+      ],
+      "scope": "Three philosophical objections, original citation and both conditional branches including reductio footnote. Native sources support prose/predicate/contradiction senses, not an attested translation of the philosophical argument."
+    },
+    "OLP-0014": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-REL-PROPERTIES",
+        "TERM-REL-NEGATIONS",
+        "TERM-CONNECTED"
+      ],
+      "scope": "Native equality axioms support reflexive/symmetric/transitive concepts. Negated property labels are provisional; distinguish antisymmetric, asymmetric and not symmetric; irreflexive and not reflexive."
+    },
+    "OLP-0015": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-MOE-P11-SUBSET",
+        "AF-MOE-P12-MUTUAL-INCLUSION"
+      ],
+      "terms": [
+        "TERM-EQUIVALENCE",
+        "TERM-MODULAR",
+        "TERM-REL-PROPERTIES",
+        "TERM-IFF"
+      ],
+      "scope": "Equivalence classes, quotient and modular arithmetic terminology provisional; both proof directions and exactly n classes governed by OpenLogic."
+    },
+    "OLP-0016": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-ORDER",
+        "TERM-ORDER-KINDS",
+        "TERM-EXTENSION",
+        "TERM-CLOSURE",
+        "TERM-REL-NEGATIONS"
+      ],
+      "scope": "All order kinds, divisibility/domain distinction, sequence prefix and closure proof; property labels exact to source conditions."
+    },
+    "OLP-0017": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-GRAPH",
+        "TERM-RELATION"
+      ],
+      "scope": "Prose, directed graph definition and exercise translated. Two numeric TikZ diagrams preserved as formal code; intertext translated with embedded formulas preserved."
+    },
+    "OLP-0018": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS"
+      ],
+      "terms": [
+        "TERM-TREE",
+        "TERM-WELLORDER",
+        "TERM-LOGIC-FORMS",
+        "TERM-LEMMA",
+        "TERM-EXTENSION"
+      ],
+      "scope": "Tree definition, predecessors, maximal branches and Konig statements translated. Native evidence only establishes adjacent order/logic concepts; tree labels explicitly provisional. Inherited X in branch formula retained and noted."
+    },
+    "OLP-0019": {
+      "batch_id": "PS-B003-RELATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-REL-OPERATIONS",
+        "TERM-CLOSURE",
+        "TERM-TREE"
+      ],
+      "scope": "All operations, examples and closure exercise; formal definitions determine orientation and ambient set."
+    }
   },
   "semantic_review": [
-    {"unit_id": "OLP-0005", "passage": "extensionality definition and concluding exercise", "reverse_paraphrase": "Two sets equal exactly when membership agrees both ways. Prove there cannot be more than one empty set.", "finding": "Initial Pashto at-most wording could suggest existence or a vague upper limit; changed explicitly to impossibility of multiple empty sets. Source uniqueness versus later existence caveat preserved."},
-    {"unit_id": "OLP-0006", "passage": "membership versus subset and bounded quantifiers", "reverse_paraphrase": "The number 2 belongs to the integers, while even numbers form a subset; a set can be both member and subset. Bounded universal uses implication, bounded existential uses conjunction.", "finding": "Distinction and both quantifier formulas retained. Proper subset requires inequality; powerset includes empty and full sets."},
-    {"unit_id": "OLP-0007", "passage": "number domains and strings", "reverse_paraphrase": "Natural numbers start at zero; positive integers start at one. A finite string over A has n letters and length n; empty string is included. Infinite sequences extend in one direction.", "finding": "All source domains and examples retained; terms remain provisional where consultation does not establish technical usage."},
-    {"unit_id":"OLP-0008","passage":"operations and indexed families","reverse_paraphrase":"Union includes either or both sets; intersection requires membership in both. A family union requires membership in at least one member-set, whereas intersection requires every member-set. A minus B retains A-members excluded from B.","finding":"Direction and existential/universal force retained. Nested text and case-marked element tokens are rendered within RTL text boxes, mathematical variables remain LTR."},
-    {"unit_id":"OLP-0009","passage":"tuple construction and product proof","reverse_paraphrase":"Pairs agree exactly when first coordinates and second coordinates agree; recursively nested pairs implement larger tuples. For each x there are m pairs; different x give disjoint rows, hence n times m total pairs.","finding":"Stray brace detected by symbolic parity and removed. Source uses both Lambda and emptyset for empty sequences in different contexts; preserved rather than silently standardized."},
-    {"unit_id":"OLP-0010","passage":"uniqueness and Russell contradiction","reverse_paraphrase":"Extensionality guarantees uniqueness only if the set exists. The purported set R of all non-self-membered sets leads to R in R exactly when R not in R. Both cases contradict the definition, so no such set exists.","finding":"No existence guarantee introduced. Naive treatment and need for precise axioms retained."},
-    {"unit_id":"OLP-0001","passage":"about and license prose","reverse_paraphrase":"The source is a rigorous collaborative intermediate text for non-mathematical readers. Reuse, modification, rearrangement, conversion and redistribution require attribution.","finding":"Source status and license described without claiming translation completion or upstream endorsement."},
-    {"unit_id":"OLP-0002","passage":"editorial warning","reverse_paraphrase":"This driver includes draft material and every operator case; a course reader can select material and exercises. The inherited editorial message cautions against studying an indiscriminately built PDF.","finding":"Warning is original content, not a new human approval requirement; all 18 import directives retained."},
-    {"unit_id":"OLP-0003","passage":"part introduction","reverse_paraphrase":"This introduction to naive set theory also includes number-system construction and infinity from Tim Button's Open Set Theory, beyond what the logic parts require.","finding":"Attribution and scope distinction retained."}
+    {
+      "unit_id": "OLP-0005",
+      "passage": "extensionality definition and concluding exercise",
+      "reverse_paraphrase": "Two sets equal exactly when membership agrees both ways. Prove there cannot be more than one empty set.",
+      "finding": "Initial Pashto at-most wording could suggest existence or a vague upper limit; changed explicitly to impossibility of multiple empty sets. Source uniqueness versus later existence caveat preserved."
+    },
+    {
+      "unit_id": "OLP-0006",
+      "passage": "membership versus subset and bounded quantifiers",
+      "reverse_paraphrase": "The number 2 belongs to the integers, while even numbers form a subset; a set can be both member and subset. Bounded universal uses implication, bounded existential uses conjunction.",
+      "finding": "Distinction and both quantifier formulas retained. Proper subset requires inequality; powerset includes empty and full sets."
+    },
+    {
+      "unit_id": "OLP-0007",
+      "passage": "number domains and strings",
+      "reverse_paraphrase": "Natural numbers start at zero; positive integers start at one. A finite string over A has n letters and length n; empty string is included. Infinite sequences extend in one direction.",
+      "finding": "All source domains and examples retained; terms remain provisional where consultation does not establish technical usage."
+    },
+    {
+      "unit_id": "OLP-0008",
+      "passage": "operations and indexed families",
+      "reverse_paraphrase": "Union includes either or both sets; intersection requires membership in both. A family union requires membership in at least one member-set, whereas intersection requires every member-set. A minus B retains A-members excluded from B.",
+      "finding": "Direction and existential/universal force retained. Nested text and case-marked element tokens are rendered within RTL text boxes, mathematical variables remain LTR."
+    },
+    {
+      "unit_id": "OLP-0009",
+      "passage": "tuple construction and product proof",
+      "reverse_paraphrase": "Pairs agree exactly when first coordinates and second coordinates agree; recursively nested pairs implement larger tuples. For each x there are m pairs; different x give disjoint rows, hence n times m total pairs.",
+      "finding": "Stray brace detected by symbolic parity and removed. Source uses both Lambda and emptyset for empty sequences in different contexts; preserved rather than silently standardized."
+    },
+    {
+      "unit_id": "OLP-0010",
+      "passage": "uniqueness and Russell contradiction",
+      "reverse_paraphrase": "Extensionality guarantees uniqueness only if the set exists. The purported set R of all non-self-membered sets leads to R in R exactly when R not in R. Both cases contradict the definition, so no such set exists.",
+      "finding": "No existence guarantee introduced. Naive treatment and need for precise axioms retained."
+    },
+    {
+      "unit_id": "OLP-0001",
+      "passage": "about and license prose",
+      "reverse_paraphrase": "The source is a rigorous collaborative intermediate text for non-mathematical readers. Reuse, modification, rearrangement, conversion and redistribution require attribution.",
+      "finding": "Source status and license described without claiming translation completion or upstream endorsement."
+    },
+    {
+      "unit_id": "OLP-0002",
+      "passage": "editorial warning",
+      "reverse_paraphrase": "This driver includes draft material and every operator case; a course reader can select material and exercises. The inherited editorial message cautions against studying an indiscriminately built PDF.",
+      "finding": "Warning is original content, not a new human approval requirement; all 18 import directives retained."
+    },
+    {
+      "unit_id": "OLP-0003",
+      "passage": "part introduction",
+      "reverse_paraphrase": "This introduction to naive set theory also includes number-system construction and infinity from Tim Button's Open Set Theory, beyond what the logic parts require.",
+      "finding": "Attribution and scope distinction retained."
+    },
+    {
+      "unit_id": "OLP-0012",
+      "passage": "relation-as-set correspondence and extreme relations",
+      "reverse_paraphrase": "A binary relation on A is any subset of A squared. A pair belongs exactly when its coordinates stand in the relation; empty and universal relations are included. Strict orders relate no object to itself.",
+      "finding": "No definability or naturalness restriction added. Matrix and order orientation retained. Original I shorthand is preserved as an inherited notation ambiguity."
+    },
+    {
+      "unit_id": "OLP-0013",
+      "passage": "three philosophical objections and conditional footnote",
+      "reverse_paraphrase": "Different equally adequate pair encodings preclude uniquely discovering a metaphysical identity. Universal set membership may not form a set. A list of three set names cannot express a proposition unless membership functions as a predicate.",
+      "finding": "All three objections retained, including citation, nonsense-name example, both branches and reductio through double union. The conclusion permits treating relations as sets in suitable contexts without metaphysical identification."
+    },
+    {
+      "unit_id": "OLP-0014",
+      "passage": "antisymmetry, asymmetry and irreflexivity",
+      "reverse_paraphrase": "Antisymmetry allows both directions only if the points coincide, but does not require self-relatedness. Asymmetry never permits both directions. Irreflexivity excludes every self-pair, while failure of reflexivity need exclude only some.",
+      "finding": "All distinctions explicit. Connectedness applies only to distinct points. The nonempty-domain proviso and exercise restriction against number/set examples retained."
+    },
+    {
+      "unit_id": "OLP-0015",
+      "passage": "class equality proof and modular example",
+      "reverse_paraphrase": "Related points have equal classes by symmetry, transitivity and mutual inclusion. Equal classes imply relatedness by reflexivity. Congruence modulo positive n gives exactly n classes of natural numbers, one per remainder.",
+      "finding": "Both proof directions and exact cardinality retained; quotient is a set of classes, not division. n remains positive and the source integer-multiple criterion is unchanged."
+    },
+    {
+      "unit_id": "OLP-0016",
+      "passage": "order hierarchy, closure and extensionality",
+      "reverse_paraphrase": "Preorders are reflexive and transitive; partial orders add antisymmetry; linear orders add comparability. Strict orders add no self-pairs and no two-way pair. Adding/removing the diagonal relates strict and non-strict orders.",
+      "finding": "Divisibility is partial only on naturals, a preorder on all integers. Connectedness preserved after diagonal addition. Strict linear-order extensionality proof retains both contradiction cases."
+    },
+    {
+      "unit_id": "OLP-0017",
+      "passage": "isolated vertices and directed graph correspondence",
+      "reverse_paraphrase": "A graph consists of an explicit vertex set and an edge relation. Two graphs with identical edges may differ because one includes an isolated vertex.",
+      "finding": "Loop at 1, all three other arrows and isolated vertex 4 retained. Directed edge orientation and both numeric diagrams compared to original."
+    },
+    {
+      "unit_id": "OLP-0018",
+      "passage": "predecessor bound and branches",
+      "reverse_paraphrase": "A rooted partial order is a tree when each initial section is well ordered. A nonroot node has at most one immediate predecessor, not necessarily one. A branch is maximal among chains. Finite branching does not imply a finite tree.",
+      "finding": "At-most wording explicitly rules out multiple predecessors without implying existence. Original X in branch definition is an inherited unbound-symbol ambiguity, preserved for traceability; intended ambient set appears to be A. Infinite binary and infinitely branching natural-sequence trees remain distinct."
+    },
+    {
+      "unit_id": "OLP-0019",
+      "passage": "operation orientation and transitive closure",
+      "reverse_paraphrase": "Inverse swaps coordinates; R relative-product S follows R then S; restriction intersects A squared; image selects second coordinates reachable from an A-member. Positive-length iteration of integer successor gives less-than, and reflexive iteration gives less-than-or-equal.",
+      "finding": "All indices, domain restrictions and existential quantifiers retained. The source reuses R plus for a different closure in the previous section; contextual notation preserved and documented."
+    }
   ]
 }
