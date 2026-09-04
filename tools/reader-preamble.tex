@@ -8,10 +8,11 @@
 \usepackage[authoryear]{natbib}
 \usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
 \usepackage{bidi}
-\hypersetup{pdftitle={OpenLogic Pashto Pakistan - Sets and Relations},pdfauthor={Open Logic Project; machine translation adaptation},pdfsubject={Partial edition: two complete chapters; full 722-unit edition in progress}}
+\hypersetup{pdftitle={OpenLogic Pashto Pakistan - Sets, Relations and Functions},pdfauthor={Open Logic Project; machine translation adaptation},pdfsubject={Partial edition: three complete chapters; full 722-unit edition in progress}}
 \definecolor{oldiagcolorA}{RGB}{38,89,117}
 \definecolor{oldiagcolorB}{RGB}{189,83,41}
 \definecolor{oldiagcolorC}{RGB}{44,115,104}
+\definecolor{oldiagcolorD}{RGB}{115,69,139}
 \newcommand{\Setabs}[2]{\{#1 : #2\}}
 \newcommand{\Pow}[1]{\wp(#1)}
 \newcommand{\Nat}{\mathbb{N}}
@@ -30,6 +31,12 @@
 \newcommand{\equivclass}[2]{#1/_{\!{#2}}}
 \newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
 \newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\comp}[2]{#2 \circ #1}
+\newcommand{\pto}{\mathrel{\ooalign{\hfil$\mapstochar\mkern 5mu$\hfil\cr$\to$}}}
+\newcommand{\fdefined}{\downarrow}
+\newcommand{\fundefined}{\uparrow}
 \newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
 \newcommand{\olchapter}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{}\chapter{#3}\label{#1:#2::chap}}
 \newcommand{\olsection}[1]{\section{#1}\label{\pspart:\pschapter:\pssection:sec}}
@@ -41,7 +48,9 @@
     \IfNoValueTF{#3}{\def\pskey{\pspart:#1:#2:#4}}{\def\pskey{#1:#2:#3:#4}}}}
 \LR{\ref{\pskey}}\endgroup}
 \NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
-\newcommand{\olasset}[1]{\centering\begin{LTR}\centering\resizebox{.46\textwidth}{!}{\input{OLP_UPSTREAM_PATH/#1}}\end{LTR}}
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.46\textwidth}
+\newcommand{\olasset}[2][\olphotowidth]{\centering\begin{LTR}\centering\resizebox{#1}{!}{\input{OLP_UPSTREAM_PATH/#2}}\end{LTR}}
 \newenvironment{explain}{}{}
 \newenvironment{intro}{}{}
 \newenvironment{digress}{\par\medskip}{\par\medskip}
@@ -67,19 +76,20 @@
 \vspace*{25mm}
 {\Huge خلاص منطق}\par\bigskip
 {\Large پښتو — پاکستان}\par\bigskip
-{\LARGE سټونه او اړيکې}\par\bigskip
+{\LARGE سټونه، اړيکې او تابعې}\par\bigskip
 د ماشيني ژباړې د روان کار نسخه
 \end{center}
 \bigskip
-په دې لوستيزه نسخه کښې دوه بشپړ بابونه شامل دي۔ د ټول کتاب ژباړه لا
+په دې لوستيزه نسخه کښې درې بشپړ بابونه شامل دي۔ د ټول کتاب ژباړه لا
 روانه ده۔ د سرچينو شواهد، اصطلاحي پرېکړې او د کتنې حدود له دې نسخې
 سره په ملګري موادو کښې ثبت دي۔
 \begin{LTR}\latinfont\small
 An independent machine translation of the Open Logic Project, revision\\
 \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}.\par
-This reader contains the complete sets and relations chapters (16 source
-units). The source bundle also includes three front matter and import-driver
-drafts: 19 of 722 source units in total. The full edition remains in progress.
+This reader contains the complete sets, relations and functions chapters (OLP_READER_UNITS source
+units). The source bundle also includes additional front matter, import drivers
+and sections under translation: OLP_DRAFT_UNITS of 722 source units in total.
+The full edition remains in progress.
 Native Pakistani prose is primary; Afghan Pashto references are labelled
 regional comparators. Terminology remains provisional where exact technical
 attestation is sparse. This is not a claim of native-reader review.

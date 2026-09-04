@@ -1,0 +1,70 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-04T22:17:46.404903+00:00",
+  "batch_id": "PS-B010-SEQUENT-RULES",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0069",
+      "source_path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+      "source_bytes": 1074,
+      "source_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
+      "translation_bytes": 1271,
+      "translation_sha256": "e93d3131b9d3d01581597ec0ef6fd546a540e1537962eea605c03a3eb196db0a"
+    },
+    {
+      "unit_id": "OLP-0070",
+      "source_path": "content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+      "source_bytes": 2810,
+      "source_sha256": "73a554964d7a3fc35a116f63e658340a8c89f9915c3f27e23f7ebd762df35859",
+      "translation_bytes": 3680,
+      "translation_sha256": "5e7e8db4ddf88fad696a627762cf3ea781bc3132f810d766dfc49bf8a9044f30"
+    },
+    {
+      "unit_id": "OLP-0071",
+      "source_path": "content/first-order-logic/sequent-calculus/propositional-rules.tex",
+      "source_bytes": 2016,
+      "source_sha256": "0bf253cf8afedca1478fb820770b04ab708dbe8cfd3344377a0d14ae91889276",
+      "translation_bytes": 2078,
+      "translation_sha256": "55edeb46b916e88b357276eefd1b9788f7494c42dec73fc9de397743ed23ef18"
+    },
+    {
+      "unit_id": "OLP-0072",
+      "source_path": "content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "source_bytes": 3852,
+      "source_sha256": "e0047087b88b91ba65c23a76f7c8f230c4161785f4d83f07d14461341b66d90e",
+      "translation_bytes": 4688,
+      "translation_sha256": "4624a79c25394001741ac0c6b6ed46c37305a9465f8f1a1dc9ace747cd7b433a"
+    },
+    {
+      "unit_id": "OLP-0073",
+      "source_path": "content/first-order-logic/sequent-calculus/structural-rules.tex",
+      "source_bytes": 2157,
+      "source_sha256": "5c13d5312a8b2287b54d67d2fadc6247ba499bd9b6a71255ea04891307689b06",
+      "translation_bytes": 2478,
+      "translation_sha256": "cd04cd7984422dde5ee2385824dda0f244fb03baad0807d0b1196fa1b7d3c007"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0072 paragraph after the universal rules",
+      "observation": "The prose uses the standard TeX universal symbol in one RightR label while the rule schemas use the OpenLogic lforall macro.",
+      "treatment": "Preserved. Both denote the universal-quantifier rule in this context; the difference does not alter the rule, formula or rendered mathematical claim.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0072 final explanation",
+      "observation": "The source first states freshness as absence from the lower sequent, then as absence outside A(a) in the upper sequent.",
+      "treatment": "Preserved. Given the displayed rule schemas, these are equivalent formulations: the constant occurs only in the designated upper occurrence A(a) and disappears from the lower sequent.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0071–0073 displayed proof trees",
+      "observation": "All left/right contexts, connective arguments, quantifier substitutions, eigenvariable positions and structural transformations were checked against their prose.",
+      "treatment": "No source defect found; mathematical content is preserved exactly.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No new source correction is warranted for OLP-0069–0073. The review records two potentially confusing but semantically coherent source formulations and preserves them."
+}

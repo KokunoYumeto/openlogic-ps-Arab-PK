@@ -1,0 +1,181 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fml}
+
+\olsection{بياني \usetoken{P}{formula}}
+
+د بياني منطق !!^{formula}s له \emph{!!{propositional
+    variable}s}\iftag{prvFalse}{\iftag{prvTrue}{،}{ او} د دروغوالي له
+  بياني ثابت~$\lfalse$}{}\iftag{prvTrue}{\iftag{prvFalse}{
+    او}{} د رښتياوالي له بياني ثابت~$\ltrue$}{} څخه د \emph{منطقي
+  نښلوونکو} په کارولو جوړېږي۔
+
+\begin{enumerate}
+\item د !!{propositional variable}s $\Obj p_0$،
+  $\Obj p_1$، \dots يو !!^a{denumerable} سټ~$\PVar$
+\tagitem{prvFalse}{د !!{falsity} بياني ثابت~$\lfalse$۔}{}
+\tagitem{prvTrue}{د !!{truth} بياني ثابت~$\ltrue$۔}{}
+\item منطقي نښلوونکي:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\item د وقف نښې: (، ) او کامه۔
+\end{enumerate}
+
+د بياني منطق دا ژبه په $\Lang L_0$ ښيو۔
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+د پورته معرفي شويو بنسټيزو نښلوونکو تر څنګ، دا لاندې
+\emph{تعريف شوې} نښې هم کاروو:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}}{}۔
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+تعريف شوې نښه په رسمي توګه د ژبې برخه نۀ وي، خو د يوې غير رسمي
+لنډې نښې په توګه معرفي کېږي: په دې سره هغه فارمولونه لنډولے شو چې
+که يوازې بنسټيزې نښې مو کارولې، ډېر اوږد به شوي وو۔ دا ئې څرګنده
+ګټه ده۔ خو لويه ګټه ئې دا ده چې ثبوتونه لنډېږي۔ که کومه نښه
+بنسټيزه وي، بايد په ثبوتونو کښې جلا وڅېړل شي۔ نو څومره چې بنسټيزې
+نښې ډېرې وي، هومره به زموږ ثبوتونه اوږده وي۔
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+کېدے شي تاسو له هغو اصطلاحاتو او نښو سره بلد يئ چې زموږ له پورته
+کارولو سره توپير لري۔ د منطق متنونه، او ښوونکي، عموماً د ``نفي''
+دپاره $\sim$، $\neg$ او~!\، او د ``عطف'' دپاره $\wedge$، $\cdot$ او
+$\&$ کاروي۔ د ``شرطي'' يا ``استلزام'' عامې نښې $\rightarrow$،
+$\Rightarrow$ او $\supset$ دي۔
+\iftag{prvIff,defIff}{د ``دوه اړخيز شرطي''، ``دوه اړخيز استلزام''
+  يا ``(مادي) هم ارزښت'' نښې $\leftrightarrow$،
+  $\Leftrightarrow$ او $\equiv$ دي۔}{}
+\iftag{prvFalse,defFalse}{د $\lfalse$ نښې ته په بېلو ځايونو کښې
+  ``دروغوالے''، ``فالسوم''، ``محال'' يا ``ښکته'' ويل کېږي۔}{}
+\iftag{prvTrue,defTrue}{د $\ltrue$ نښې ته په بېلو ځايونو کښې
+  ``رښتياوالے''، ``ويروم'' يا ``پورته'' ويل کېږي۔}{}
+\end{intro}
+
+\begin{defn}[فارمول]
+\ollabel{defn:formulas}
+د بياني منطق د \emph{!!{formula}s} سټ~$\Frm[L_0]$ په استقرايي ډول
+داسې تعريفېږي:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+\tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+\item هر !!{propositional variable}~$\Obj p_i$ يو اټومي
+  !!{formula} دے۔
+
+\tagitem{prvNot}{که $!A$ يو !!a{formula} وي، نو $\lnot !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔}{}
+
+\tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{limitClause}{بل هېڅ شے !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+د !!{formula}s تعريف يو \emph{استقرايي تعريف} دے۔ په اصل کښې موږ
+د !!{formula}s سټ په نامتناهي ډېرو پړاوونو کښې جوړوو۔ په لومړني
+پړاو کښې ټول اټومي فارمولونه فارمولونه ګڼو؛ دا د تعريف له لومړنيو
+څو حالتونو سره سمون لري، يعنې د
+\iftag{prvTrue}{$\ltrue$، }{}%
+\iftag{prvFalse}{$\lfalse$، }{}%
+$\Obj p_i$ حالتونه۔ په دې توګه ``اټومي !!{formula}'' د همدې بڼې هر
+!!{formula} ته وايي۔
+
+د تعريف نور حالتونه له هغو !!{formula}s څخه د نويو !!{formula}s د
+جوړولو قاعدې راکوي چې له مخکښې جوړ شوي وي۔ په دويم پړاو کښې له دغو
+قاعدو څخه په کار اخيستو له اټومي !!{formula}s څخه !!{formula}s
+جوړولے شو۔ په درېيم پړاو کښې له اټومي فارمولونو او په دويم پړاو کښې
+له ترلاسه شويو فارمولونو څخه نوي فارمولونه جوړوو، او همداسې مخکښې
+ځو۔ !!{formula} هر هغه شے دے چې بالاخره په داسې کوم پړاو کښې جوړ
+شي، او بل هېڅ شے نۀ دے۔
+\end{explain}
+
+کله چې د دوه ځايه نښلوونکي~$\ast$ په کارولو له $!B$ او $!C$ څخه
+جوړ شوے فارمول $(!B \ast !C)$ ليکو، ډېر ځله د قوسونو تر ټولو بهرنی
+جوړ پرېږدو او يوازې~$!B \ast !C$ ليکو۔
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{defn}
+په تعريف شويو عملګرو جوړ شوي فارمولونه بايد داسې وپوهول شي:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}
+
+\tagitem{defTrue}{$\ltrue$ د دې لنډه نښه ده:
+  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$ د کوم
+    ټاکلي اټومي !!{formula}~$!A$ دپاره}۔}{}
+
+\tagitem{defFalse}{$\lfalse$ د دې لنډه نښه ده:
+  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$ د کوم
+    ټاکلي اټومي !!{formula}~$!A$ دپاره}۔}{}
+
+\tagitem{defNot}{$\lnot !A$ د $!A \lif \lfalse$ لنډه نښه ده۔}{}
+
+\tagitem{defOr}{$!A \lor !B$ د دې لنډه نښه ده:
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$}۔}{}
+
+\tagitem{defAnd}{$!A \land !B$ د دې لنډه نښه ده:
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$}۔}{}
+
+\tagitem{defIf}{$!A \lif !B$ د دې لنډه نښه ده:
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}۔}{}
+\textbf{د ژباړې د نسخې سمون (OLPL-001):} د سرچينې د لومړي بديل
+په ښۍ خوا کښې يو تړلے قوس بې له پرانيستي قوسه راغلے دے۔ دلته هغه
+زياتي قوس لرې شوے، څو لنډه نښه هم نحوي سمه وي او هم د فصل له
+معمولي تعريف سره برابره وي۔
+
+\tagitem{defIff}{$!A \liff !B$ د $(!A \lif !B) \land (!B
+  \lif !A)$ لنډه نښه ده۔}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+\begin{defn}[نحوي يوشانوالی]
+د $\ident$ نښه د نښو د توريزو لړيو ترمنځ نحوي يوشانوالی څرګندوي؛
+يعنې $!A \ident !B$ هله او يوازې هله چې $!A$ او $!B$ د نښو د يو
+شان اوږدوالي توريزې لړۍ وي او په هر ځاے کښې يوه نښه ولري۔
+\end{defn}
+
+د $\ident$ نښې دواړو خواوو ته د يو ځاے کولو له لارې ترلاسه شوې
+توريزې لړۍ هم راتلے شي۔ مثلاً $!A \ident (!B \lor !C)$ دا معنٰی لري:
+د نښو توريزه لړۍ~$!A$ هماغه توريزه لړۍ ده چې په همدې ترتيب د پرانيستي
+قوس، د $!B$ توريزې لړۍ، د $\lor$ نښې، د~$!C$ توريزې لړۍ او د تړلي
+قوس په يو ځاے کولو ترلاسه کېږي۔ که داسې وي، نو پوهېږو چې د $!A$
+لومړۍ نښه پرانيستے قوس دے، $!A$ د $!B$ توريزه لړۍ د فرعي توريزې
+لړۍ په توګه لري چې له دويمې نښې پيلېږي، ورپسې $\lor$ راځي، او داسې نور۔
+
+\end{document}

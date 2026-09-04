@@ -1,0 +1,124 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: preliminaries
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{pre}
+
+\olsection{لومړنۍ پايلې}
+
+\begin{thm}[\emph{د !!{formula}s دپاره د استقرا اصل}]
+  \ollabel{thm:induction}  
+  که کوم خاصيت~$P$ د ټولو اټومي !!{formula}s دپاره صدق کوي او داسې
+  وي چې
+  \begin{enumerate}
+    \tagitem{prvNot}{هر کله چې د~$!A$ دپاره صدق کوي، د $\lnot !A$
+      دپاره هم صدق کوي؛}{}
+    \tagitem{prvAnd}{هر کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+      $(!A \land !B)$ دپاره هم صدق کوي؛}{}
+    \tagitem{prvOr}{هر کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+      $(!A \lor !B)$ دپاره هم صدق کوي؛}{}
+    \tagitem{prvIf}{هر کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+      $(!A \lif !B)$ دپاره هم صدق کوي؛}{}
+    \tagitem{prvIff}{هر کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+      $(!A \liff !B)$ دپاره هم صدق کوي؛}{}
+  \end{enumerate}
+  نو $P$ د ټولو !!{formula}s دپاره صدق کوي۔
+\end{thm}
+
+\begin{proof}
+  $S$ دې د هغو ټولو !!{formula}s مجموعه وي چې خاصيت~$P$ لري۔ په
+  څرګنده $S \subseteq \Frm[L_0]$۔ $S$ د
+  \olref[fml]{defn:formulas} ټول شرطونه پوره کوي: ټول اټومي
+  !!{formula}s لري او د !!{operator}s له مخې بند دے۔ $\Frm[L_0]$ د
+  دې ډول تر ټولو وړوکے ټولګے دے، نو $\Frm[L_0] \subseteq S$۔ له دې
+  امله $\Frm[L_0] = S$ او هر فارمول خاصيت~$P$ لري۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:balanced}
+   په~$\Frm[L_0]$ کښې هر !!{formula} \emph{متوازن} دے؛ يعنې د کيڼو
+   قوسونو شمېر ئې د ښيو قوسونو له شمېر سره برابر دے۔
+\end{prop}
+
+\begin{prob}
+د \olref[pl][syn][pre]{prop:balanced} ثبوت ورکړئ۔
+\end{prob}
+
+\begin{prop} \ollabel{prop:noinit}
+د !!a{formula} هېڅ خاصه پيلنۍ برخه !!a{formula} نۀ ده۔
+\end{prop}
+
+\begin{prob}
+  د \olref[pl][syn][pre]{prop:noinit} ثبوت ورکړئ۔
+\end{prob}
+
+\begin{prop}[يکتا لوستونتيا]
+په $ \Frm[L_0]$ کښې هر !!{formula}~$!A$ په لاندې بڼو کښې د يوې په
+توګه پوره يوه تجزيه لري:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$۔}{}
+
+\tagitem{prvTrue}{$\ltrue$۔}{}
+
+\item د کوم $\Obj p_n \in  \PVar$ دپاره $\Obj p_n$۔
+  
+\tagitem{prvNot}{د کوم !!{formula}~$!B$ دپاره $\lnot !B$۔}{}
+
+\tagitem{prvAnd}{د کومو !!{formula}s $!B$ او~$!C$ دپاره
+  $(!B \land !C)$۔}{}
+
+\tagitem{prvOr}{د کومو !!{formula}s $!B$ او~$!C$ دپاره
+  $(!B \lor !C)$۔}{}
+
+\tagitem{prvIf}{د کومو !!{formula}s $!B$ او~$!C$ دپاره
+  $(!B \lif !C)$۔}{}
+
+\tagitem{prvIff}{د کومو !!{formula}s $!B$ او~$!C$ دپاره
+  $(!B \liff !C)$۔}{}
+\end{enumerate}
+سربېره پر دې، دا تجزيه \emph{يکتا} ده۔
+\end{prop}
+
+\begin{proof}
+پر $!A$ استقرا کوو۔ مثلاً فرض کړئ چې $!A$ د $(!B \lif !C)$ او
+$(!B' \lif !C')$ په توګه دوه بېلې لوستنې لري۔ نو $!B$ او $!B'$
+بايد يو شان وي، ګنې يو به د بل خاصه پيلنۍ برخه وي؛ نو که د $!A$
+دواړه لوستنې بېلې وي، علت ئې خامخا دا دے چې $!C$ او $!C'$ د نښو د
+هماغې يوې لړۍ بېلې لوستنې دي، چې د استقرايي فرض له مخې ناشونې ده۔
+\end{proof}
+
+
+\begin{defn}[يو شان ځايناستي]
+که $!A$ او $!B$ !!{formula}s وي او $\Obj p_i$ يو !!{propositional
+variable} وي، نو $\Subst{!A}{!B}{\Obj p_i}$ هغه پايله ښيي چې په
+$!A$ کښې د $\Obj p_i$ هر راتګ د $!B$ په يوه راتګ بدل شي؛ همدارنګه،
+د $\Obj p_1$، \dots،~$\Obj p_n$ پر ځاے په يو وخت د !!{formula}s
+$!B_1$، \dots،~$!B_n$ ځايناستي په
+$\SSubst{!A}{\subst{!B_1}{\Obj p_1},\dots,\subst{!B_n}{\Obj p_n}}$
+ښودل کېږي۔
+\end{defn}
+
+\begin{prob} د لاندې پنځو !!{formula}s په هر يوه کښې وټاکئ چې آيا
+ !!{formula} د \( \Subst{!A}{!B}{\Obj p_i} \) د ځايناستي په توګه
+ څرګندېدے شي، چې \( !A \) په دې کښې يو وي: (الف) \( \Obj p_0 \)؛
+ (ب) \( ( \lnot \Obj p_0 \land \Obj p_1) \)؛ او (ج)
+ \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)۔ په هر
+ حالت کښې اړونده ځايناستي په ګوته کړئ۔
+  \begin{enumerate}
+    \item \( \Obj p_1 \) 
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+د $\Subst{!A}{!B}{p}$ يو له رياضي پلوه کره تعريف د استقرا له مخې
+ورکړئ۔
+\end{prob}
+
+\end{document}

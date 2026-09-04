@@ -1,0 +1,129 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: cuts
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{cuts}
+\olsection{له $\Rat$ څخه $\Real$ ته}
+
+په اصل کښې د بشپړتيا خاصيت ښيي چې د حقيقي عددونو د کرښې هر ټکی
+$\alpha$ دا کرښه په بشپړ ډول پر دوو برخو وېشي: هغه عددونه چې
+$\alpha$ ئې تر ټولو لږ پاسنی حد دے، او هغه عددونه چې $\alpha$ ئې
+تر ټولو لوے لاندينی حد دے۔ ډېډېکېنډ وړانديز وکړ چې له ناطقو عددونو
+څخه د حقيقي عددونو د \emph{جوړولو} دپاره، حقيقي عددونه يوازې د هغو
+\emph{پرېکونونو} په توګه وګڼو چې ناطق عددونه وېشي۔ يعنې $\sqrt{2}$
+له هغه \emph{پرېکون} سره يو ګڼو چې ناطق عددونه $< \sqrt{2}$ له
+ناطق عددونو $> \sqrt{2}$ څخه بېلوي۔
+
+راځئ دا خبره سمه منظمه کړو۔ که ناطق عددونه پر دوو برخو پرې کړو،
+نو يوازې د هغې \emph{لاندېنۍ} برخې په کتلو خپل وېش په يوازيني ډول
+پېژندلے شو۔ نو په دقيق ډول لاندې تعريف وړاندې کوو:
+
+\begin{defn}[پرېکون]
+يو \emph{پرېکون} $\alpha$ د ناطقو عددونو هره ناتشه خاصه پيلنۍ
+برخه ده چې تر ټولو لوے غړے نۀ لري۔ يعنې $\alpha$ هله او يوازې هله
+پرېکون دے چې:
+\begin{enumerate}
+	\item \emph{ناتش، خاص}: $\emptyset \neq \alpha \subsetneq \Rat$
+	\item \emph{پيلنۍ}: د ټولو $p,q \in \Rat$ دپاره: که $p < q \in \alpha$ وي، نو $p \in \alpha$
+	\item \emph{تر ټولو لوے غړے نۀ لري}: د هر $p \in \alpha$ دپاره داسې $q \in \alpha$ شته چې $p < q$ وي
+\end{enumerate}
+بيا $\Real$ د پرېکونونو سټ دے۔
+\end{defn}
+
+نو اوس ويلے شو چې $\sqrt{2} = \Setabs{p \in \Rat}{p^2 < 2\text{
+يا }p < 0}$۔ البته بايد وارزوو چې دا په رښتيا يو \emph{پرېکون}
+دے، خو دا کار \olref[check]{sec} ته پرېږدو۔
+
+لکه مخکښې، چې ځينې څيزونه مو تعريف کړل، بيا بايد پر هغو بنسټيزې
+تابعې او اړيکې تعريف کړو۔ په يوه اسانه تعريف پيل کوو:
+\begin{align*}
+	\alpha \leq \beta \text{ هله او يوازې هله چې }\alpha \subseteq \beta
+\end{align*}
+د مرتبې دا تعريف موږ ته اجازه راکوي چې مرکزي پايله \emph{بيان}
+کړو: د پرېکونونو سټ د بشپړتيا خاصيت لري۔ په بشپړ ډول د بيان بڼه
+داسې ده۔ که $S$ د پرېکونونو يو ناتش سټ وي چې پاسنی حد لري، نو
+$S$ تر ټولو لږ پاسنی حد لري۔ په لا تفصيل: يو پرېکون $\lambda$ شته
+چې د $S$ پاسنی حد دے، يعنې $(\forall \alpha \in S)\alpha \subseteq
+\lambda$، او $\lambda$ تر ټولو لږ داسې پرېکون دے، يعنې
+$(\forall \beta \in \Real)((\forall \alpha \in S)\alpha \subseteq \beta \lif \lambda \subseteq \beta)$۔ اوس د پايلې ثبوت دا دے:
+
+\begin{thm}\ollabel{realcompleteness}
+د پرېکونونو سټ د بشپړتيا خاصيت لري۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $S$ د پرېکونونو هر ناتش سټ دے چې پاسنی حد لري۔ وټاکئ
+$\lambda = \bigcup S$۔
+%\Setabs{p \in \Rat}{(\exists \alpha \in S)p \in \alpha}$$
+لومړے ادعا کوو چې $\lambda$ يو پرېکون دے:
+\begin{enumerate}
+\item ځکه چې $S$ ناتش دے، لږ تر لږه يو پرېکون په $S$ کښې دے، نو
+$\emptyset \neq \lambda$۔ \textbf{د ژباړې د نسخې سمون
+(OLARI-003):} انګرېزي سرچينه دا ګام په تېروتنه د پاسني حد له فرض
+سره تړي؛ اړين دليل د همدې سټ ناتش والے دے۔ ځکه چې $S$ د پرېکونونو سټ
+دے، $\lambda \subseteq \Rat$۔ ځکه چې $S$ پاسنی حد لري، کوم
+$p \in \Rat$ د هر پرېکون $\alpha \in S$ څخه بهر دے۔ نو
+$p\notin \lambda$، او له دې امله $\lambda \subsetneq \Rat$۔
+\item فرض کړئ $p < q \in \lambda$۔ نو داسې $\alpha \in S$ شته
+چې $q \in \alpha$۔ ځکه چې $\alpha$ يو پرېکون دے،
+$p \in \alpha$۔ نو $p \in \lambda$۔
+\item فرض کړئ $p \in \lambda$۔ نو داسې $\alpha \in S$ شته چې
+$p \in \alpha$۔ ځکه چې $\alpha$ يو پرېکون دے، داسې $q \in
+\alpha$ شته چې $p < q$۔ نو $q \in \lambda$۔
+\end{enumerate}
+په دې سره ادعا ثابته شوه۔ برسېره پر دې، په څرګند ډول
+$(\forall \alpha \in S)\alpha \subseteq \bigcup S = \lambda$؛
+يعنې $\lambda$ د $S$ يو پاسنی حد دے۔ اوس فرض کړئ
+$\beta \in \mathbb{R}$ هم پاسنی حد دے؛ يعنې
+$(\forall \alpha \in S)\alpha \subseteq \beta$۔ د هر
+$p \in \Rat$ دپاره، که $p \in \lambda$ وي، نو داسې
+$\alpha \in S$ شته چې $p \in \alpha$، او په دې توګه
+$p \in \beta$۔ په عمومي کولو $\lambda \subseteq \beta$۔ نو
+$\lambda$ د $S$ \emph{تر ټولو لږ} پاسنی حد دے۔
+\end{proof}
+
+نو موږ داسې ډېر څيزونه لرو چې د بشپړتيا خاصيت پوره کوي۔ د دې د
+ويلو يوه لار دا ده: زموږ په پرېکونونو کښې هېڅ «تشيال» نشته۔
+(نو د ناطقو عددونو پر ځاے د حقيقي عددونو نور «پرېکونونه» اخيستل
+به هېڅ په زړه پورې نوي څيزونه رانۀ کړي۔)
+
+بيا بايد پر حقيقي عددونو ځينې عمليې تعريف کړو۔ ناطق عددونه په
+حقيقي عددونو کښې په دې ټاکنه ورګډوو چې د هر $p \in \Rat$ دپاره
+$p_\Real = \Setabs{q \in \Rat}{q < p}$۔ بيا تعريفوو:
+\begin{align*}
+	\alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
+%	\alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
+	\alpha \times \beta &=
+	\Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0^\mathbb{R} & \text{که }\alpha, \beta \geq 0_\Real
+%	\alpha \div \beta &\defis
+%	\Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{که }\alpha \geq 0_\Real, \beta > 0_\Real
+\end{align*}
+\textbf{د ژباړې د نسخې سمون (OLARI-004):} سرچينې ناطق عددونه
+حقيقي عددونو ته په لاندې‌ليک نښه ورګډ کړي، خو په دې اتحاد کښې د
+حقيقي صفر نښه په پورته‌ليک ليکي۔ د فورمول د برابرۍ دپاره اصلي نښه
+ساتل شوې؛ دلته ئې ټاکل شوې معنا د حقيقي صفر پرېکون دے۔ د ضرب د
+نورو حالتونو د سمبالولو دپاره لومړے وټاکئ: %چې $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$، او ورزيات کړئ:
+\begin{align*}
+	-\alpha &= \Setabs{p - q}{p < 0 \land q \notin \alpha}
+\end{align*}
+او بيا وټاکئ:
+\begin{align*}
+	\alpha \times \beta &\defis
+	\begin{cases}
+		\mathord{-}\alpha \times \mathord{-}\beta &\text{که }\alpha < 0_\Real\text{ او }\beta < 0_\Real\\
+		\mathord{-}(\mathord{-}\alpha \times \beta) &\text{که }\alpha < 0_\Real \text{ او }\beta > 0_\Real\\
+		\mathord{-}(\alpha \times \mathord{-}\beta) &\text{که }\alpha > 0_\Real \text{ او }\beta < 0_\Real
+	\end{cases}
+\end{align*}
+\textbf{د ژباړې د نسخې سمون (OLARI-005):} فعاله انګرېزي سرچينه
+هغه د ضرب حالتونه نۀ تعريفوي چې يو عامل صفر او بل منفي وي؛ د صفر
+قاعده يوازې په غېر فعاله تبصره کښې پاتې ده۔ نو تر هغې قاعدې پرته
+پورته ټوټه‌ييز تعريف بشپړ ضرب نۀ تعريفوي۔ بيا بايد وارزوو چې دا هر
+تعريف تل يو پرېکون ورکوي۔ په پاے کښې بايد په يوه اسانه (خو اوږده)
+څرګندونه کښې وښيو چې په دې ډول تعريف شوي پرېکونونه کټ مټ لکه څنګه
+چې بايد، هماغسې چلېږي۔ خو دا ټول \olref[check]{sec} ته پرېږدو۔
+\end{document}

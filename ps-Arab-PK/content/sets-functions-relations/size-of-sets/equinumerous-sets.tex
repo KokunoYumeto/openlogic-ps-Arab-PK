@@ -1,0 +1,116 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: equinumerous-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{equ}
+
+\olsection{همشمېر والی}
+
+موږ د سټونو د «اندازې» يوه شهودي مفکوره لرو چې د متناهي سټونو
+دپاره سمه کار کوي۔ خو د نامتناهي سټونو څه؟ که وغواړو د \emph{هرې}
+اندازې د دوو سټونو د اندازو د پرتله کولو يوه صوري لار جوړه کړو،
+ښه به وي چې لومړے تعريف کړو سټونه کله يوه اندازه لري۔ دا ئې د
+فرېګه وينا ده:
+\begin{quote}
+  که يو خدمتګار غواړي ډاډه شي چې پر مېز ئې د پليټونو هومره چاړې
+  په دقيقه توګه اېښې دي، د دواړو له شمېرلو پرته هم دا کار کولے شي:
+  يوازې د هر پليټ ښي لوري ته يوه چاړه کېږدي، داسې چې پر مېز هره
+  چاړه د کوم پليټ ښي لوري ته پرته وي۔ په دې توګه پليټونه او چاړې
+  په ځانګړې توګه يو له بل سره، او په رښتيا هم د هماغې مکاني اړيکې
+  له لارې، تړل کېږي۔ \citep[\S70]{Frege1884}
+\end{quote}
+د دې عبارت بصيرت په يوه صوري تعريف کښې څرګندولے شو:
+
+\begin{defn}\ollabel{comparisondef}
+  $A$ له $B$ سره \emph{همشمېره} دے، چې $\cardeq{A}{B}$ ئې ليکو،
+  هله او يوازې هله چې يوه !!a{bijection} $f \colon A \to B$ وي۔
+\end{defn}
+
+\begin{prop}\ollabel{equinumerosityisequi}
+همشمېر والی يوه د معادلتوب اړيکه ده۔
+\end{prop}
+
+\begin{proof} 
+بايد وښيو چې همشمېر والی انعکاسي، متناظر او انتقالي دے۔ فرض
+کړئ $A, B$ او $C$ سټونه دي۔
+
+\emph{انعکاسيتوب۔} عيني نقشه $\Id{A} \colon A \to A$، چې د ټولو
+$x \in A$ دپاره $\Id{A} (x) = x$ وي، يوه !!a{bijection} ده۔ نو
+$\cardeq{A}{A}$۔
+
+\emph{تناظر۔} فرض کړئ $\cardeq{A}{B}$؛ يعنې يوه !!a{bijection}
+$f\colon A \to B$ شته۔ ځکه چې $f$ !!{bijective} ده، د هغې معکوس
+$f^{-1}$ شته او هغه هم !!{bijective} دے۔ له دې امله
+$f^{-1}\colon B \to A$ يوه !!a{bijection} ده، نو $\cardeq{B}{A}$۔
+
+\emph{انتقاليتوب۔} فرض کړئ چې $\cardeq{A}{B}$ او
+$\cardeq{B}{C}$؛ يعنې !!{bijection}s $f\colon A \to B$ او
+$g\colon B \to C$ شته۔ بيا ترکيب $\comp{f}{g}\colon A \to C$
+!!{bijective} دے، نو $\cardeq{A}{C}$۔
+\end{proof}
+
+\begin{prop}
+که $\cardeq{A}{B}$ وي، نو $A$ هله او يوازې هله !!{enumerable}
+دے چې $B$ داسې وي۔
+\end{prop}
+
+\begin{editorial}
+لاندې ثبوت که \olref[enm]{sec} شامل وي،
+\olref[enm]{defn:enumerable} کاروي، او که نۀ وي
+\olref[enm-alt]{defn:enumerable} کاروي۔
+\end{editorial}
+
+\begin{proof}
+فرض کړئ $\cardeq{A}{B}$، نو کومه !!{bijection} $f \colon A
+\to B$ شته، او فرض کړئ چې $A$ !!{enumerable} دے۔
+\oliflabeldef{sfr:siz:enm:defn:enumerable}{
+  بيا يا $A = \emptyset$ دے، يا يوه !!a{surjective} تابع
+  $g\colon \PosInt \to A$ شته۔ که $A = \emptyset$ وي، نو
+  $B = \emptyset$ هم دے (ګنې يو !!a{element}~$y \in B$ به وے،
+  خو هېڅ $x \in A$ به نۀ وے چې $f(x) = y$)۔
+  \textbf{د ژباړې د نسخې سمون (OLSIZ-006):} د انګرېزي ثبوت په
+  دواړو مشروطو بڼو کښې د تش حالت معادله ناسمې تابعې ته منسوبه
+  وه؛ دلته هغه دوه اړخيزې تابعې ته سمه شوې چې د سټونو همشمېر
+  والی شاهدي کوي۔ له بلې خوا، که $g\colon \PosInt \to A$
+  !!{surjective} وي، نو $\comp{g}{f} \colon \PosInt \to B$
+  !!{surjective} ده۔ د دې د ليدلو دپاره $y \in B$ ونيسئ۔ ځکه
+  چې $f$ !!{surjective} ده، يو $x \in A$ شته چې $f(x) = y$۔ ځکه
+  چې $g$ !!{surjective} ده، يو $n \in \PosInt$ شته چې $g(n) =
+  x$۔ له دې امله
+\[
+(\comp{g}{f})(n) = f(g(n)) = f(x) = y
+\]
+او نو $\comp{g}{f}$ !!{surjective} ده۔ موږ لرو چې
+$\comp{g}{f}$ د~$B$ يوه شمېرنه ده، نو $B$~!!{enumerable} دے۔}
+{
+  بيا يا $A  = \emptyset$ دے يا يوه !!a{bijection}~$g$ شته چې
+  د قيمتونو سټ ئې $A$ او د تعريف ساحه ئې يا $\Nat$ ده يا د طبيعي
+  عددونو يو پيلنی تسلسل۔ که $A = \emptyset$ وي، نو
+  $B = \emptyset$ هم دے (ګنې به کوم~$y \in B$ وے، خو هېڅ
+  $x \in A$ به نۀ وے چې $f(x) = y$)۔ نو فرض کړئ چې زموږ
+  !!{bijection}~$g$ شته۔ بيا $\comp{g}{f}$ يوه !!a{bijection}
+  ده چې د قيمتونو سټ ئې~$B$ او د تعريف ساحه ئې د~$g$ له ساحې
+  سره يوه ده (يعنې يا $\Nat$ يا د هغه يو پيلنی تسلسل)؛ نو $B$
+  !!{enumerable} دے۔}
+
+که $B$ !!{enumerable} وي، د~$f$ پر ځاے د !!{bijection}
+$f^{-1}\colon B \to A$ په کارولو د استدلال په تکرارولو مومو چې
+$A$ !!{enumerable} دے۔
+\end{proof}
+
+\begin{prob}
+وښيئ چې که $\cardeq{A}{C}$ او $\cardeq{B}{D}$ وي، او
+$A \cap B = C \cap D = \emptyset$ وي، نو
+$\cardeq{A \cup B}{C \cup D}$۔
+\end{prob}
+
+\begin{prob}
+وښيئ چې که $A$ نامتناهي او !!{enumerable} وي، نو
+$\cardeq{A}{\Nat}$۔
+\end{prob}
+
+\end{document}

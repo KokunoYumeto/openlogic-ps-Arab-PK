@@ -1,0 +1,997 @@
+{
+  "schema": "ps-openlogic-source-corrections/1",
+  "status": "adopted-in-draft; pending guarded reader rebuild and visual acceptance",
+  "adopted_utc": "2026-09-04T21:54:16.052489+00:00",
+  "audit_id": "MULTIPLE-AUDITS",
+  "audit_artifacts": [
+    {
+      "filename": "REVIEW.md",
+      "sha256": "bc183d34b6ac57cc00e2df76d00277cdd2fabee293d12beb142d2e27344f8d24"
+    },
+    {
+      "filename": "FINDINGS.json",
+      "sha256": "eee57facbea44f65a19a816fb12cbc86be0b18e21dcffeeed943f52f7e332960"
+    },
+    {
+      "filename": "FINDINGS.json",
+      "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+    },
+    {
+      "filename": "REVIEW.md",
+      "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+    }
+  ],
+  "source_authority": {
+    "declared_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "archive": {
+      "path": "new-language-lanes/source/OpenLogic-upstream-raw.zip",
+      "bytes": 1806644,
+      "sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+    },
+    "manifest": {
+      "path": "new-language-lanes/source/SOURCE_MANIFEST.jsonl",
+      "bytes": 356467,
+      "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+    },
+    "provenance_warning": "The owner upstream directory has no nested .git. git -C there resolves the parent translation repository and must not be treated as the English source revision."
+  },
+  "provenance_warning": "The owner upstream directory has no nested .git. git -C there resolves the parent translation repository and must not be treated as the English source revision.",
+  "actions": [
+    {
+      "id": "OLFUN-001",
+      "unit_id": "OLP-0024",
+      "classification": "confirmed_mathematical_defect",
+      "source_path": "content/sets-functions-relations/functions/inverses.tex",
+      "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
+      "source_locator": "functions/inverses.tex:62-84",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/functions/inverses.tex",
+      "target_line_1based": 66,
+      "target_sha256": "b3144d627a477e0fd1060a64b051d309608096c8c9feada90a6dc79f1ce5c41e",
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "corrected theorem adds a nonempty domain; adjacent target note and reader note disclose the frozen-source defect and exact general condition",
+      "stable_audit": "OLFUN-20260904",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed formula changed by this correction.",
+      "decision_timing": "contemporaneous adoption of completed source audit; not retrospective language consultation"
+    },
+    {
+      "id": "OLFUN-002",
+      "unit_id": "OLP-0021",
+      "classification": "confirmed_wording_defect",
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "source_locator": "functions/function-basics.tex:64-71; sets/important-sets.tex:17",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex",
+      "target_line_1based": 68,
+      "target_sha256": "21706282a28550c5d6f6dcdd8696d65a14b7532811e9b3f8f022dce662c625c4",
+      "mode": "corrected-body-plus-reader-note",
+      "translation_change": "positive is corrected to nonnegative (principal) for the function on Nat; the positive-integer two-root sentence remains unchanged",
+      "stable_audit": "OLFUN-20260904",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed formula changed by this correction.",
+      "decision_timing": "contemporaneous adoption of completed source audit; not retrospective language consultation"
+    },
+    {
+      "id": "OLFUN-003",
+      "unit_id": "OLP-0021",
+      "classification": "confirmed_typographical_inconsistency",
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "source_locator": "functions/function-basics.tex:103-107",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex",
+      "target_line_1based": 102,
+      "target_sha256": "21706282a28550c5d6f6dcdd8696d65a14b7532811e9b3f8f022dce662c625c4",
+      "mode": "normalized-prose-plus-reader-note",
+      "translation_change": "the unnecessary prose variable n is removed; displayed and substantive formulas are unchanged",
+      "stable_audit": "OLFUN-20260904",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed formula changed by this correction.",
+      "decision_timing": "contemporaneous adoption of completed source audit; not retrospective language consultation",
+      "qa_math_exception": {
+        "source_only": [
+          "$n$"
+        ],
+        "target_only": [],
+        "scope": "one inline prose variable token only"
+      }
+    },
+    {
+      "id": "OLFUN-004",
+      "unit_id": "OLP-0023",
+      "classification": "confirmed_terminology_imprecision",
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "source_locator": "functions/functions-relations.tex:24-30,61-64; relations/relations-as-sets.tex:55-58",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex",
+      "target_line_1based": 61,
+      "target_sha256": "186665c9263f146fe714506ed1b06c077fa38a6fc78998ac5855713bd683f46d",
+      "mode": "corrected-body-plus-reader-note",
+      "translation_change": "graph is called a relation between A and B and a subset of A times B",
+      "stable_audit": "OLFUN-20260904",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed formula changed by this correction.",
+      "decision_timing": "contemporaneous adoption of completed source audit; not retrospective language consultation"
+    },
+    {
+      "id": "OLFUN-005",
+      "unit_id": "OLP-0023",
+      "classification": "confirmed_explanatory_inconsistency_explicit_definition_correct",
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "source_locator": "functions/functions-relations.tex:78-100; relations/operations.tex:20-32",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex",
+      "target_line_1based": 97,
+      "target_sha256": "186665c9263f146fe714506ed1b06c077fa38a6fc78998ac5855713bd683f46d",
+      "mode": "corrected-body-plus-reader-note",
+      "translation_change": "explicit domain-only function restriction stays; analogy to earlier two-sided relation restriction is qualified",
+      "stable_audit": "OLFUN-20260904",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed formula changed by this correction.",
+      "decision_timing": "contemporaneous adoption of completed source audit; not retrospective language consultation"
+    },
+    {
+      "unit_id": "OLP-0031",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+      "source_sha256": "fb6cc1176e91e56cea5f5b9708723c59191813f8fe256aac8ed0457a0119a9bf",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "target_sha256": "5754efb0fc0f242a4ab913383a2097972fe3303def1a49bae5da0cd2c7b5a50f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-SIZE",
+      "formula_policy": "Frozen source formulas remain authoritative. No displayed or inline formula token was changed.",
+      "decision_timing": "contemporaneous owner semantic review against the frozen source and earlier enumeration definitions",
+      "id": "PSSIZ-001",
+      "classification": "confirmed_mathematical_defect_from_owner_semantic_review",
+      "source_locator": "size-of-sets/pairing.tex:106-109; enumerability.tex definition of enumeration",
+      "target_line_1based": 115,
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "requires a nonempty product, identifies the inverse as a bijection on the original function range, and extends it to all naturals by assigning one fixed pair outside that range",
+      "counterexample": "If A times B is a singleton and f assigns its pair code 1, the inverse is defined only on {1}, so it is not a total Nat-indexed enumeration. If the product is empty, no total map from Nat into it exists."
+    },
+    {
+      "unit_id": "OLP-0032",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "source_sha256": "c26b4e0da9e2e0b0ec839470ddd1d0d5eb1b3d3922d3b6986c9a795f34328797",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "target_sha256": "37f4e04903fda646ff78fd99e410c1cc9f0ed6ef17756774186cbf196a4c7690",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-SIZE",
+      "formula_policy": "The frozen displayed table remains authoritative; one erroneous inline coordinate is changed under the exact QA exception.",
+      "decision_timing": "contemporaneous owner semantic review against the frozen first-row table",
+      "id": "PSSIZ-002",
+      "classification": "confirmed_typographical_defect_from_owner_semantic_review",
+      "source_locator": "size-of-sets/pairing-alt.tex:19-27",
+      "target_line_1based": 24,
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "changes the prose label for the second row-zero pair from (0,2) to (0,1), as the immediately following frozen table requires",
+      "counterexample": "The displayed enumeration places (0,0), (0,1), and (0,2) in positions 1, 3, and 5; calling (0,2) the second pair contradicts that table.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\tuple{0,2}$"
+        ],
+        "target_only": [
+          "$\\tuple{0,1}$"
+        ],
+        "scope": "one erroneous inline coordinate token; the frozen table is unchanged"
+      }
+    },
+    {
+      "unit_id": "OLP-0034",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "target_sha256": "17bf6cd3dcdd3e6265cd5b641e0ddb0729407ec844f01313f0ba0a988e6d56d2",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-SIZE",
+      "formula_policy": "One literal set is moved into math mode under the exact QA exception; its content is unchanged.",
+      "decision_timing": "contemporaneous owner typesetting review against neighboring set expressions",
+      "id": "PSSIZ-003",
+      "classification": "confirmed_tex_math_mode_defect_from_owner_render_review",
+      "source_locator": "size-of-sets/reduction.tex:127-131",
+      "target_line_1based": 139,
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "places the literal two-element set inside math mode, consistent with every neighboring expression",
+      "counterexample": "The frozen source emits math-only brace commands in ordinary text mode, which is not a robust representation of the set and can trigger TeX math-mode errors.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$\\{0,1\\}$"
+        ],
+        "scope": "one set literal moved into math mode; mathematical content unchanged"
+      }
+    },
+    {
+      "unit_id": "OLP-0036",
+      "source_path": "content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "source_sha256": "075810b1cf1c8b54266518523d4665d3deae4a4937f4e19a66a09cc0e1aaebf7",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "target_sha256": "234a279050fbc52a1db6bbacc5f774b6b36119ff28f6da50bb60ed05e05da9d8",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-SIZE",
+      "formula_policy": "Frozen formulas remain authoritative; the target adds only an assumption note.",
+      "decision_timing": "contemporaneous owner semantic review against the chapter definition and set-theoretic assumptions",
+      "id": "PSSIZ-004",
+      "classification": "missing_choice_or_wellorderability_assumption_from_owner_semantic_review",
+      "source_locator": "size-of-sets/comparing-size.tex:42-54",
+      "target_line_1based": 47,
+      "mode": "preserved-body-plus-adjacent-assumption-note",
+      "translation_change": "preserves the stated characterization but records that its converse uses the principle that every infinite set contains a countably infinite subset",
+      "counterexample": "In ZF there can be infinite Dedekind-finite sets with no injection from Nat; such a set is nonenumerable under the chapter definition but Nat is not no-larger-than it."
+    },
+    {
+      "id": "OLARI-001",
+      "unit_id": "OLP-0043",
+      "classification": "confirmed_reversed_difference_from_owner_semantic_review",
+      "source_path": "content/sets-functions-relations/arithmetization/rationals.tex",
+      "source_sha256": "7140495368042fcbc55907e6ee568c5bc8b7066e44a01a50cbf4202acebe71d2",
+      "source_locator": "arithmetization/rationals.tex:53-59",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex",
+      "target_line_1based": 55,
+      "target_sha256": "ce1a7183ee3aae0b2dcfa82350b7c2dd0a8b81874c375faa8e28f5f903defc65",
+      "mode": "preserved-source-token-plus-adjacent-correction",
+      "translation_change": "preserves the source prose token r-s for exact formula accounting, but explicitly states that its order is reversed and points to the immediately following correct s-r equation",
+      "counterexample": "For r=1 and s=2, r is no larger than s and s-r=1 is nonnegative, while r-s=-1 is negative; the source sentence therefore contradicts both its preceding clause and following equation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "formula_policy": "Frozen formulas remain authoritative. The erroneous inline source token is retained for parity; the correction is prose only and the following displayed order definition is unchanged.",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0043 against its order definition and a concrete ordered-pair counterexample"
+    },
+    {
+      "id": "OLARI-002",
+      "unit_id": "OLP-0044",
+      "classification": "confirmed_stray_relation_glyph_from_owner_semantic_review",
+      "source_path": "content/sets-functions-relations/arithmetization/reals.tex",
+      "source_sha256": "3df30161417b836178ff701aa3d778b9ec7c1ba8e3a8a54f98b5584a7960f453",
+      "source_locator": "arithmetization/reals.tex:92-99",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/reals.tex",
+      "target_line_1based": 81,
+      "target_sha256": "6e6424c65f469edb7e32c74b4b333cf7e6907e097bb4280fddacd49891e7bbfc",
+      "mode": "normalized-body-plus-adjacent-note",
+      "translation_change": "removes the isolated less-than glyph immediately following the element token and discloses the repair adjacent to the affected upper-bound sentence",
+      "counterexample": "The sentence already says that all elements are smaller than 3; the isolated “<” has no left-hand expression and is neither grammatical prose nor a well-formed mathematical relation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "formula_policy": "Frozen formulas remain authoritative. The defect is outside math mode and no formula changes.",
+      "decision_timing": "contemporaneous owner semantic and typesetting review of OLP-0044 against its displayed set-builder condition and following upper-bound explanation"
+    },
+    {
+      "unit_id": "OLP-0045",
+      "source_path": "content/sets-functions-relations/arithmetization/cuts.tex",
+      "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex",
+      "target_sha256": "2d20a4b8264fce6d53b687e8d5422f86943f7cce26e6a631e60681ef1987b92e",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0045 against its cut definition, completeness proof, rational embedding, and claimed total real operations",
+      "id": "OLARI-003",
+      "classification": "confirmed_wrong_hypothesis_reference_from_owner_semantic_review",
+      "source_locator": "arithmetization/cuts.tex:61-68",
+      "target_line_1based": 66,
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "uses the stated nonemptiness of S, rather than the unrelated existence of an upper bound, to choose a cut in S and establish that the union is nonempty",
+      "counterexample": "The empty family of cuts has every cut as an upper bound but has no member cut; boundedness alone therefore cannot justify “at least one cut is in S.”",
+      "formula_policy": "Frozen formulas remain authoritative. The correction changes prose reasoning only."
+    },
+    {
+      "unit_id": "OLP-0045",
+      "source_path": "content/sets-functions-relations/arithmetization/cuts.tex",
+      "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex",
+      "target_sha256": "2d20a4b8264fce6d53b687e8d5422f86943f7cce26e6a631e60681ef1987b92e",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0045 against its cut definition, completeness proof, rational embedding, and claimed total real operations",
+      "id": "OLARI-004",
+      "classification": "inconsistent_embedded_zero_notation_from_owner_semantic_review",
+      "source_locator": "arithmetization/cuts.tex:86-96",
+      "target_line_1based": 105,
+      "mode": "preserved-formula-plus-adjacent-notation-note",
+      "translation_change": "preserves 0 superscript mathbb R for formula parity but records that the surrounding embedding convention uses a Real subscript and that the intended object must be the real-zero cut",
+      "counterexample": "The section defines embedded rational p as p subscript Real and later compares against zero subscript Real; the isolated superscript form is otherwise undefined in the section.",
+      "formula_policy": "Frozen formulas remain authoritative. No symbol is silently changed; the interpretation is disclosed."
+    },
+    {
+      "unit_id": "OLP-0045",
+      "source_path": "content/sets-functions-relations/arithmetization/cuts.tex",
+      "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex",
+      "target_sha256": "2d20a4b8264fce6d53b687e8d5422f86943f7cce26e6a631e60681ef1987b92e",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0045 against its cut definition, completeness proof, rational embedding, and claimed total real operations",
+      "id": "OLARI-005",
+      "classification": "incomplete_piecewise_definition_from_owner_semantic_review",
+      "source_locator": "arithmetization/cuts.tex:96-112",
+      "target_line_1based": 122,
+      "mode": "preserved-formulas-plus-adjacent-completeness-note",
+      "translation_change": "preserves all active cases and the inactive zero rule, but records that the active piecewise definition omits products with one zero factor and one negative factor",
+      "counterexample": "If alpha is zero and beta is negative, the nonnegative case fails because beta is not nonnegative, and all three signed cases fail because alpha is neither positive nor negative.",
+      "formula_policy": "Frozen active and commented formulas remain authoritative; the missing active cases are disclosed, not invented."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "source_path": "content/sets-functions-relations/arithmetization/checking-details.tex",
+      "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "target_sha256": "8b5cf963cc652281da0d25793b741ec50c644ee9e0d58fa4c0f46edb52d43345",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0047 against the earlier quotient constructions, the stated algebraic definitions, and the active versus commented cut operations",
+      "id": "OLARI-006",
+      "classification": "missing_well_definedness_prerequisite_from_owner_semantic_review",
+      "source_locator": "arithmetization/checking-details.tex:11-77 and earlier class-operation definitions",
+      "target_line_1based": 16,
+      "mode": "preserved-body-plus-adjacent-prerequisite-note",
+      "translation_change": "preserves the ring calculations but records that the source has not first proved that operations on integer and rational equivalence classes are independent of representative choice",
+      "counterexample": "Without representative independence, replacing one pair by an equivalent pair could change a purported sum or product class, so the later ring-law calculations would not yet define operations.",
+      "formula_policy": "Every source formula is preserved; the missing logical prerequisite is disclosed in prose."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "source_path": "content/sets-functions-relations/arithmetization/checking-details.tex",
+      "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "target_sha256": "8b5cf963cc652281da0d25793b741ec50c644ee9e0d58fa4c0f46edb52d43345",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0047 against the earlier quotient constructions, the stated algebraic definitions, and the active versus commented cut operations",
+      "id": "OLARI-007",
+      "classification": "confirmed_missing_noun_from_owner_semantic_review",
+      "source_locator": "arithmetization/checking-details.tex:154-162",
+      "target_line_1based": 156,
+      "mode": "normalized-body-plus-adjacent-note",
+      "translation_change": "supplies the missing noun “task” in the phrase describing the tedious task of checking the ordered-field laws",
+      "counterexample": "The frozen phrase “run through the (tedious) of checking” is grammatically incomplete and its intended object is fixed by the surrounding sentence.",
+      "formula_policy": "No formula changes; this is a prose-only completion."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "source_path": "content/sets-functions-relations/arithmetization/checking-details.tex",
+      "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "target_sha256": "8b5cf963cc652281da0d25793b741ec50c644ee9e0d58fa4c0f46edb52d43345",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0047 against the earlier quotient constructions, the stated algebraic definitions, and the active versus commented cut operations",
+      "id": "OLARI-008",
+      "classification": "missing_nontriviality_condition_from_owner_semantic_review",
+      "source_locator": "arithmetization/checking-details.tex:137-151",
+      "target_line_1based": 139,
+      "mode": "preserved-definition-plus-adjacent-completeness-note",
+      "translation_change": "preserves the displayed definition but records that the conventional field definition also requires zero and one to be distinct",
+      "counterexample": "In the zero ring, the quantified inverse clause is vacuously true because there are no nonzero elements, so the written definition admits the trivial ring as a field.",
+      "formula_policy": "The frozen displayed axiom is unchanged; the omitted conventional hypothesis is disclosed."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "source_path": "content/sets-functions-relations/arithmetization/checking-details.tex",
+      "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "target_sha256": "8b5cf963cc652281da0d25793b741ec50c644ee9e0d58fa4c0f46edb52d43345",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0047 against the earlier quotient constructions, the stated algebraic definitions, and the active versus commented cut operations",
+      "id": "OLARI-009",
+      "classification": "active_definition_missing_operations_from_owner_semantic_review",
+      "source_locator": "arithmetization/checking-details.tex:179-191; cuts.tex commented subtraction/division lines",
+      "target_line_1based": 184,
+      "mode": "preserved-body-plus-adjacent-definition-gap-note",
+      "translation_change": "preserves the request to check subtraction and division as cuts but records that the only formulas for those operations are inactive comments in the preceding source section",
+      "counterexample": "A reader cannot verify that an operation always yields a cut before the operation has an active definition; the later ordered-field exercise also depends on division or multiplicative inverses.",
+      "formula_policy": "Active and commented source formulas remain frozen; no missing definition is invented."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_sha256": "0d6b52943274395c1a00aa93829f15b1c5095b8995b5d1b6c98e7bfd11547d9f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0048 against its quotient definition, constant-sequence embedding, order type, ordered-field claim, and completeness proof",
+      "id": "OLARI-010",
+      "classification": "confirmed_relation_class_confusion_from_owner_semantic_review",
+      "source_locator": "arithmetization/cauchy.tex:108-125",
+      "target_line_1based": 102,
+      "mode": "corrected-body-plus-adjacent-note",
+      "translation_change": "identifies real numbers with equivalence classes, rather than with the equivalence relation itself, matching the source definition immediately below",
+      "counterexample": "Realequiv is one binary relation on the collection of Cauchy sequences, whereas each real constructed here is one of its many equivalence classes; these have different types.",
+      "formula_policy": "The defining relation and quotient formulas are unchanged; the prose type is corrected."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_sha256": "0d6b52943274395c1a00aa93829f15b1c5095b8995b5d1b6c98e7bfd11547d9f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0048 against its quotient definition, constant-sequence embedding, order type, ordered-field claim, and completeness proof",
+      "id": "OLARI-011",
+      "classification": "inconsistent_equivalence_symbol_from_owner_semantic_review",
+      "source_locator": "arithmetization/cauchy.tex:127-131",
+      "target_line_1based": 126,
+      "mode": "preserved-formula-plus-adjacent-notation-note",
+      "translation_change": "preserves the exercise symbol sim subscript Real but records that the relation defined just above is Realequiv, rendered by a different symbol",
+      "counterexample": "The section introduces no definition equating sim subscript Real with Realequiv, so the exercise notation is formally unbound even though the intended equivalence is clear.",
+      "formula_policy": "The frozen exercise formula is unchanged; the intended referent is disclosed in prose."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_sha256": "0d6b52943274395c1a00aa93829f15b1c5095b8995b5d1b6c98e7bfd11547d9f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0048 against its quotient definition, constant-sequence embedding, order type, ordered-field claim, and completeness proof",
+      "id": "OLARI-012",
+      "classification": "confirmed_zero_domain_mismatch_from_owner_semantic_review",
+      "source_locator": "arithmetization/cauchy.tex:147-153",
+      "target_line_1based": 150,
+      "mode": "corrected-inline-symbol-plus-adjacent-note",
+      "translation_change": "changes zero subscript Rat to zero subscript Real in the positivity test because the left operand is a real equivalence class and rational embeddings were defined with the Real subscript",
+      "counterexample": "The section defines q subscript Real as a constant-sequence class. Zero subscript Rat is a rational from the preceding construction and is not the same typed object as equivrep(f).",
+      "formula_policy": "Only the ill-typed subscript is corrected; the eventual-positivity quantifier is unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\equivrep{f}{}\\neq0_\\Rat$"
+        ],
+        "target_only": [
+          "$\\equivrep{f}{}\\neq0_\\Real$"
+        ]
+      }
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_sha256": "0d6b52943274395c1a00aa93829f15b1c5095b8995b5d1b6c98e7bfd11547d9f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0048 against its quotient definition, constant-sequence embedding, order type, ordered-field claim, and completeness proof",
+      "id": "OLARI-013",
+      "classification": "false_raw_sequence_structure_claim_from_owner_semantic_review",
+      "source_locator": "arithmetization/cauchy.tex:159-178",
+      "target_line_1based": 167,
+      "mode": "corrected-theorem-prose-plus-adjacent-note",
+      "translation_change": "states both the ordered-field and completeness results for Realequiv equivalence classes rather than for unquotiented Cauchy sequences",
+      "counterexample": "Distinct null sequences would be distinct additive-zero candidates before quotienting, and pointwise inversion is not defined for every raw nonzero Cauchy sequence. The quotient classes are the reals on which the preceding operations and order were defined.",
+      "formula_policy": "No displayed formula changes; theorem and exercise prose are corrected to the defined carrier."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_sha256": "0d6b52943274395c1a00aa93829f15b1c5095b8995b5d1b6c98e7bfd11547d9f",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-ARITH",
+      "decision_timing": "contemporaneous owner semantic review of OLP-0048 against its quotient definition, constant-sequence embedding, order type, ordered-field claim, and completeness proof",
+      "id": "OLARI-014",
+      "classification": "missing_rational_endpoint_justification_from_owner_semantic_review",
+      "source_locator": "arithmetization/cauchy.tex:175-188",
+      "target_line_1based": 193,
+      "mode": "preserved-proof-plus-adjacent-gap-note",
+      "translation_change": "preserves the rational bisection construction but records that choosing rational upper and lower endpoints from an arbitrary real bound and member requires an unproved Archimedean or rational-density lemma for the newly constructed reals",
+      "counterexample": "Nonemptiness and existence of some real upper bound alone do not syntactically provide p and q in Rat. Their existence follows only after proving that embedded rationals are cofinal and coinitial, or an equivalent Archimedean result.",
+      "formula_policy": "All bisection formulas are unchanged; the omitted prerequisite is disclosed in prose."
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-INFINITE",
+      "decision_timing": "contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition",
+      "id": "OLINF-001",
+      "unit_id": "OLP-0051",
+      "classification": "missing_endofunction_ambient_domain_from_owner_semantic_review",
+      "source_path": "content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "source_sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036",
+      "source_locator": "infinite/dedekind-algebra.tex:37-68",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "target_line_1based": 45,
+      "target_sha256": "a3e5f05dd47950bbd5ec4ebd1511228fbf855d9c25d9f0684a7e6720cbb2d8d8",
+      "mode": "preserved-definition-plus-adjacent-typing-note",
+      "translation_change": "preserves the displayed closure definition but records that the phrase “any function” and the range-union example require an endofunction on an ambient domain containing every considered set",
+      "counterexample": "For a function with domain {0} and value f(0)=1, the set ran(f) union {0} contains 1 although f(1) is undefined, so it is not f-closed under the displayed unrestricted wording.",
+      "formula_policy": "Every frozen formula is preserved; the missing typing hypothesis is disclosed in prose."
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-INFINITE",
+      "decision_timing": "contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition",
+      "id": "OLINF-002",
+      "unit_id": "OLP-0054",
+      "classification": "malformed_nested_cardinality_conclusion_from_owner_semantic_review",
+      "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
+      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
+      "source_locator": "infinite/card-sb.tex:55-69",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex",
+      "target_line_1based": 52,
+      "target_sha256": "de4c444f49aa8eb70839910b365d536a134f24fe921282e522156a757c8b3d92",
+      "mode": "corrected-displayed-conclusion-plus-adjacent-note",
+      "translation_change": "replaces the nested cardinal-equality macro with A equinumerous with B, the exact conclusion proved by the constructed bijection from A to B and required by the later squeeze application",
+      "counterexample": "The source feeds a cardinal-equality proposition as the first set argument of another cardinal equality, which is not a well-typed set-size statement. The proof explicitly ends with a bijection A to B.",
+      "formula_policy": "Only the malformed conclusion formula is corrected; all hypotheses and proof formulas are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\cardeq{\\cardeq{A}{B}}{C}$"
+        ],
+        "target_only": [
+          "$\\cardeq{A}{B}$"
+        ]
+      }
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROPOSITIONAL-SYNTAX",
+      "decision_timing": "contemporaneous owner review of the complete propositional syntax and semantics chapter against its inductive grammar, syntactic-identity definition, truth tables and fixed-formula theorem scopes",
+      "id": "OLPL-001",
+      "unit_id": "OLP-0058",
+      "classification": "unmatched_closing_parenthesis_in_defined_conditional_abbreviation",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "source_sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48",
+      "source_locator": "syntax-and-semantics/formulas.tex:158-159",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "target_line_1based": 156,
+      "target_sha256": "76178dd4d643bc3dda7943586ebb20164a18837ecb37cc37a8c7ff4bd3e4899b",
+      "mode": "corrected-formula-plus-adjacent-note",
+      "translation_change": "removes the unmatched closing parenthesis after the disjunction-based expansion of the conditional; the resulting formula is the standard not-A-or-B abbreviation stated by the source branch",
+      "counterexample": "The source branch contains a closing parenthesis without a matching opening parenthesis, so the displayed abbreviation is not a well-formed formula string under the chapter’s own grammar.",
+      "formula_policy": "Only the unmatched closing parenthesis is removed; the alternative conjunction-based expansion is unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lnot!A\\lor!B)$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\lor!B$"
+        ]
+      }
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROPOSITIONAL-SYNTAX",
+      "decision_timing": "contemporaneous owner review of the complete propositional syntax and semantics chapter against its inductive grammar, syntactic-identity definition, truth tables and fixed-formula theorem scopes",
+      "id": "OLPL-002",
+      "unit_id": "OLP-0060",
+      "classification": "semantic_equivalence_symbol_used_where_syntactic_identity_is_required",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5",
+      "source_locator": "syntax-and-semantics/formation-sequences.tex:140-142",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_line_1based": 142,
+      "target_sha256": "74ef79ac87433efe8bc4518f73d8dd58df0bb406fbbb5928ef40ba2e1c10d137",
+      "mode": "corrected-notation-plus-adjacent-note",
+      "translation_change": "replaces semantic equivalence with syntactic identity in the conjunction case of the converse formation-sequence proof, matching the definition and every parallel connective case",
+      "counterexample": "Semantically equivalent formulas need not be the same symbol string; for example, commuted conjunctions can agree in truth value while having distinct formation strings. The proof needs the final sequence entry to be exactly the displayed conjunction.",
+      "formula_policy": "Only the relation symbol in the malformed proof sentence is corrected; all formula components are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\equiv(!A_j\\land!A_k)$"
+        ],
+        "target_only": [
+          "$!A\\ident(!A_j\\land!A_k)$"
+        ]
+      }
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROPOSITIONAL-SYNTAX",
+      "decision_timing": "contemporaneous owner review of the complete propositional syntax and semantics chapter against its inductive grammar, syntactic-identity definition, truth tables and fixed-formula theorem scopes",
+      "id": "OLPL-003",
+      "unit_id": "OLP-0061",
+      "classification": "fixed_formula_scope_obscured_by_some_formula_wording",
+      "source_path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "source_sha256": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882",
+      "source_locator": "syntax-and-semantics/valuations-sat.tex:134-140",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "target_line_1based": 144,
+      "target_sha256": "b4ceef87314958c9db427a582bb8f16b4fb1c7e88be2f77b2b7102a7d070ca04",
+      "mode": "clarified-fixed-variable-scope-plus-adjacent-note",
+      "translation_change": "renders the second statement of the local-determination hypothesis as referring to variables occurring in the already fixed formula A, consistent with the first statement and conclusion",
+      "counterexample": "If “some formula” introduced an unrelated existential formula, agreement on a variable appearing elsewhere would not ensure agreement on every variable of the fixed formula whose value is compared.",
+      "formula_policy": "No formula or identifier is changed; only the scope-bearing prose is clarified."
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROOF-SYSTEMS",
+      "decision_timing": "contemporaneous owner review of the complete proof-systems overview against the stated sequent syntax, independent side sequences, tableau rule-label convention and displayed examples",
+      "id": "OLPF-001",
+      "unit_id": "OLP-0065",
+      "classification": "sequent_sides_incorrectly_forced_to_share_one_length_index",
+      "source_path": "content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "source_sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad",
+      "source_locator": "proof-systems/sequent-calculus.tex:17-22",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "target_line_1based": 21,
+      "target_sha256": "7de77a404fde51c40fb13a332dd6b7223ebdbbb190c12ea903915bdb5c620366",
+      "mode": "corrected-display-plus-adjacent-note",
+      "translation_change": "changes the right sequence’s terminal subscript from m to n so the left and right finite sequences may have independent lengths, as the surrounding definition and empty-side cases require",
+      "counterexample": "Using m on both sides makes the displayed schema require equal-length sequences and makes it impossible for exactly one side to be empty, contradicting the next sentence and later root sequents.",
+      "formula_policy": "Only the right terminal index is changed from m to n; all sentence variables, order, punctuation and sequent symbol are preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_m,\\]"
+        ],
+        "target_only": [
+          "\\[!A_1,\\dots,!A_m\\Sequent!B_1,\\dots,!B_n,\\]"
+        ]
+      }
+    },
+    {
+      "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROOF-SYSTEMS",
+      "decision_timing": "contemporaneous owner review of the complete proof-systems overview against the stated sequent syntax, independent side sequences, tableau rule-label convention and displayed examples",
+      "id": "OLPF-002",
+      "unit_id": "OLP-0067",
+      "classification": "tableau_rule_label_receives_formula_instead_of_connective",
+      "source_path": "content/first-order-logic/proof-systems/tableaux.tex",
+      "source_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
+      "source_locator": "proof-systems/tableaux.tex:38-42",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/tableaux.tex",
+      "target_line_1based": 42,
+      "target_sha256": "01bbb81f570553f0541bd1bbb7dcc0452242b6ee3f406517c87ff660bd956a35",
+      "mode": "corrected-rule-label-plus-adjacent-note",
+      "translation_change": "passes the conjunction connective alone as the second argument of the false signed-rule label, matching the immediately preceding true-conjunction rule and every rule label in the example tree",
+      "counterexample": "The source true rule and later false-conditional labels pass a connective, while this single call passes the full formula A-and-B; that produces an inconsistent rule name rather than the intended false-conjunction label.",
+      "formula_policy": "Only the rule-label argument is corrected; the described branch split and both signed formulas are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\TRule{\\False}{!A\\land!B}$"
+        ],
+        "target_only": [
+          "$\\TRule{\\False}{\\land}$"
+        ]
+      }
+    },
+    {
+      "id": "OLSIZ-001",
+      "unit_id": "OLP-0029",
+      "classification": "confirmed_tabular_value_omission",
+      "source_path": "content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "source_sha256": "bf6be35c0e393cb6e1d227f8e9024df4216792e663f23beb7277045487acfa67",
+      "source_locator": "lines 145-153",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "target_line_1based": 154,
+      "target_sha256": "9b2c62c858b4140bdde380d00f06b3ea7a73faf1bb8c8884a3774fb513ee7c3a",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Add -3 in the value row and an adjacent OLSIZ-001 source-correction note.",
+      "counterexample": "At f(7), the preceding formula row is -ceil(6/2), hence -3.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&\\dots\\end{array}\\]"
+        ],
+        "target_only": [
+          "\\[\\begin{array}{cccccccc}f(1)&f(2)&f(3)&f(4)&f(5)&f(6)&f(7)&\\dots\\\\\\\\-\\lceil\\tfrac{0}{2}\\rceil&\\lceil\\tfrac{1}{2}\\rceil&-\\lceil\\tfrac{2}{2}\\rceil&\\lceil\\tfrac{3}{2}\\rceil&-\\lceil\\tfrac{4}{2}\\rceil&\\lceil\\tfrac{5}{2}\\rceil&-\\lceil\\tfrac{6}{2}\\rceil&\\dots\\\\\\\\0&1&-1&2&-2&3&-3&\\dots\\end{array}\\]"
+        ],
+        "scope": "one corrected displayed construction; all unaffected display content is identical"
+      }
+    },
+    {
+      "id": "OLSIZ-002",
+      "unit_id": "OLP-0031",
+      "classification": "confirmed_grammatical_defect_clarified_by_following_formula",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+      "source_sha256": "fb6cc1176e91e56cea5f5b9708723c59191813f8fe256aac8ed0457a0119a9bf",
+      "source_locator": "lines 91-96",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "target_line_1based": 94,
+      "target_sha256": "5754efb0fc0f242a4ab913383a2097972fe3303def1a49bae5da0cd2c7b5a50f",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "State 'the complement in Nat of a finite subset of Nat' (or an exact language-equivalent) and add an adjacent OLSIZ-002 note.",
+      "counterexample": "The following equivalence says A is cofinite iff Nat\\setminus A is finite.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target"
+    },
+    {
+      "id": "OLSIZ-003",
+      "unit_id": "OLP-0032",
+      "classification": "confirmed_typographical_duplication",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "source_sha256": "c26b4e0da9e2e0b0ec839470ddd1d0d5eb1b3d3922d3b6986c9a795f34328797",
+      "source_locator": "lines 39-45",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "target_line_1based": 44,
+      "target_sha256": "37f4e04903fda646ff78fd99e410c1cc9f0ed6ef17756774186cbf196a4c7690",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Replace the second (2,m) by (3,m) and add an adjacent OLSIZ-003 note.",
+      "counterexample": "The immediately following table contains rows/families (2,m), (3,m), and onward; the second prose occurrence must be (3,m).",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\tuple{2,m}$"
+        ],
+        "target_only": [
+          "$\\tuple{3,m}$"
+        ],
+        "scope": "one duplicated inline family coordinate; the following table is unchanged"
+      }
+    },
+    {
+      "id": "OLSIZ-004",
+      "unit_id": "OLP-0034",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
+      "source_locator": "lines 47-69",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "target_line_1based": 55,
+      "target_sha256": "17bf6cd3dcdd3e6265cd5b641e0ddb0729407ec844f01313f0ba0a988e6d56d2",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Use one bound output name, such as s, consistently in the characteristic-sequence definition and add an adjacent OLSIZ-004 note.",
+      "counterexample": "The component equation uniquely defines the characteristic sequence of Z, and the surjectivity argument later denotes an arbitrary output sequence by s.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "$s_{k}$",
+          "$s_{k}(n)=1$",
+          "$s_k(n)=0$"
+        ],
+        "target_only": [
+          "$s$",
+          "$s(n)=1$",
+          "$s(n)=0$"
+        ],
+        "scope": "three occurrences of the unbound characteristic-sequence subscript"
+      }
+    },
+    {
+      "id": "OLSIZ-005",
+      "unit_id": "OLP-0034",
+      "classification": "confirmed_codomain_error_finite_string_used_as_infinite_sequence",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
+      "source_locator": "lines 85-100",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "target_line_1based": 104,
+      "target_sha256": "17bf6cd3dcdd3e6265cd5b641e0ddb0729407ec844f01313f0ba0a988e6d56d2",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Use a valid infinite binary output and add an adjacent OLSIZ-005 note.",
+      "counterexample": "Membership in Bin^omega requires an infinite binary sequence; appending an infinite tail, for example n zeros followed by ones forever, supplies the intended non-surjective example.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[h(n)=\\underbrace{000\\dots0}_{\\text{LOCALIZED$n$$0$}}\\]"
+        ],
+        "target_only": [
+          "\\[h(n)=\\underbrace{000\\dots0}_{\\text{LOCALIZED$n$$0$}}111\\dots\\]"
+        ],
+        "scope": "one corrected displayed construction; all unaffected display content is identical"
+      }
+    },
+    {
+      "id": "OLSIZ-006",
+      "unit_id": "OLP-0035",
+      "classification": "confirmed_undefined_function_in_empty_set_branch",
+      "source_path": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "source_sha256": "025a3fc368d6873825effcb07631913762edbf2d3f9a0711d57dcd9575361251",
+      "source_locator": "lines 68-94",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "target_line_1based": 75,
+      "target_sha256": "e65530aed83d1eb92695236a02239a374db6d89404cd41d9e769e3e1faf56653",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Replace both premature g(x)=y occurrences by f(x)=y and add an adjacent OLSIZ-006 note.",
+      "counterexample": "The proof has fixed f:A to B; g is introduced only later as an enumeration of A.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "$g(x)=y$",
+          "$g(x)=y$"
+        ],
+        "target_only": [
+          "$f(x)=y$",
+          "$f(x)=y$"
+        ],
+        "scope": "two premature references to g across conditional source branches"
+      }
+    },
+    {
+      "id": "OLSIZ-007",
+      "unit_id": "OLP-0036",
+      "classification": "confirmed_wrong_domain_in_arbitrary_element_conclusion",
+      "source_path": "content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "source_sha256": "075810b1cf1c8b54266518523d4665d3deae4a4937f4e19a66a09cc0e1aaebf7",
+      "source_locator": "lines 74-90",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "target_line_1based": 97,
+      "target_sha256": "234a279050fbc52a1db6bbacc5f774b6b36119ff28f6da50bb60ed05e05da9d8",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Quantify the conclusion over x in A and add an adjacent OLSIZ-007 note.",
+      "counterexample": "To prove the diagonal set is outside the range, the argument needs g(x) different from overline(A) for every x in A; both preceding cases concern arbitrary x in A.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\in\\overline{A}$"
+        ],
+        "target_only": [
+          "$x\\inA$"
+        ],
+        "scope": "one erroneous quantified-domain token"
+      }
+    },
+    {
+      "id": "OLSIZ-008",
+      "unit_id": "OLP-0039",
+      "classification": "confirmed_reversed_index_description_vs_array",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "source_locator": "lines 61-75",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "target_line_1based": 63,
+      "target_sha256": "85ad3b355f300147802a1cbc87a33bba77454b7d657a33507e2054bde305d17a",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Use the row/column-consistent description and add an adjacent OLSIZ-008 note.",
+      "counterexample": "The next sentence and array place s_n(m) in row n and column m, so it is the mth digit of the nth string.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target"
+    },
+    {
+      "id": "OLSIZ-009",
+      "unit_id": "OLP-0039",
+      "classification": "confirmed_duplicated_bit_flip_instruction",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "source_locator": "lines 77-84",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "target_line_1based": 83,
+      "target_sha256": "85ad3b355f300147802a1cbc87a33bba77454b7d657a33507e2054bde305d17a",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "State both complementary bit flips and add an adjacent OLSIZ-009 note.",
+      "counterexample": "The immediately following cases define complementary flips: diagonal 1 becomes 0 and diagonal 0 becomes 1.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target"
+    },
+    {
+      "id": "OLSIZ-010",
+      "unit_id": "OLP-0040",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "source_sha256": "f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11",
+      "source_locator": "lines 48-58",
+      "target_path": "ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "target_line_1based": 56,
+      "target_sha256": "71441ba1a47cb5b94e6e8066a551d16a02efd57d7d28c27809c883c203e275be",
+      "mode": "corrected-body-plus-adjacent-localized-note",
+      "translation_change": "Use one bound output name consistently and add an adjacent OLSIZ-010 note.",
+      "counterexample": "The component equation uniquely defines the characteristic sequence of N.",
+      "stable_audit": "OLSIZ-20260904",
+      "audit_artifacts": [
+        {
+          "filename": "FINDINGS.json",
+          "sha256": "9b6e836c8432eb75d331913983603796d6557da6ec3ad71b846b2a248374cd07"
+        },
+        {
+          "filename": "REVIEW.md",
+          "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
+        }
+      ],
+      "formula_policy": "Frozen English identity remains unchanged. Only the deterministic delta named by the shared audit is applied to the Pashto body, with an adjacent keyed disclosure.",
+      "decision_timing": "contemporaneous adoption of the manager shared source audit after independent comparison with this lane target",
+      "qa_math_exception": {
+        "source_only": [
+          "$s_{k}$",
+          "$s_{k}(n)=1$",
+          "$s_k(n)=0$"
+        ],
+        "target_only": [
+          "$s$",
+          "$s(n)=1$",
+          "$s(n)=0$"
+        ],
+        "scope": "three occurrences of the unbound characteristic-sequence subscript"
+      }
+    }
+  ],
+  "external_upstream_report_submitted": false,
+  "limits": [
+    "This is a bounded source audit, not whole-corpus source certification.",
+    "It does not independently certify any target language's complete linguistic quality."
+  ],
+  "next_action": "Re-run cumulative QA with only recorded exceptions, then rebuild under the global TeX mutex and visually inspect every changed reader page before publication.",
+  "audit_ids": [
+    "OLFUN-20260904",
+    "OLSIZ-20260904",
+    "PS-OWNER-SEMANTIC-20260904-SIZE",
+    "PS-OWNER-SEMANTIC-20260904-ARITH"
+  ],
+  "source_authorities": [
+    {
+      "declared_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "archive": {
+        "path": "new-language-lanes/source/OpenLogic-upstream-raw.zip",
+        "bytes": 1806644,
+        "sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357"
+      },
+      "manifest": {
+        "path": "new-language-lanes/source/SOURCE_MANIFEST.jsonl",
+        "bytes": 356467,
+        "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+      },
+      "provenance_warning": "The owner upstream directory has no nested .git. git -C there resolves the parent translation repository and must not be treated as the English source revision."
+    },
+    {
+      "repository": "https://github.com/OpenLogicProject/OpenLogic",
+      "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "archive": "C:\\interlanguage-task-state\\openlogic-internationalization\\new-language-lanes\\source\\OpenLogic-upstream-raw.zip",
+      "archive_bytes": 1806644,
+      "archive_sha256": "80b484b1a87076fbdb207d69f97930ca946ce1716dbd905906b29e4a74077357",
+      "manifest": "C:\\interlanguage-task-state\\openlogic-internationalization\\new-language-lanes\\source\\SOURCE_MANIFEST.jsonl",
+      "manifest_sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+% Part: sets-functions-relations
+% Chapter: infinite
+% Section: dedekind-induction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{induction}
+\olsection[رياضي استقرا]{د ډېډېکېنډ الجبرونه او رياضي استقرا}
+
+اوس مهمه خبره دا ده چې يو ډېډېکېنډ الجبر---بلکې \emph{هر}
+ډېډېکېنډ الجبر---د طبيعي عددونو د بدل په توګه کار کولے شي۔ دا د
+لاندې اسانې نتيجې له برکته ده:
+
+\begin{thm}[رياضي استقرا]\ollabel{thm:dedinfiniteinduction}
+فرض کړئ $N, s, o$ يو ډېډېکېنډ الجبر جوړوي۔ بيا د هر سټ $X$ دپاره:
+	\begin{center}
+		که $o \in X$ او $(\forall {n} \in N \cap X){s}({n}) \in X$ وي، {نو} $N \subseteq X$۔
+	\end{center}
+\end{thm}
+
+\begin{proof}
+د ډېډېکېنډ الجبر د تعريف له مخې $N = \closureofunder{s}{o}$۔ اوس
+که هم ${o} \in X$ او هم $(\forall {n} \in N)(n \in X \lif
+{s}({n}) \in X)$ وي، نو $N = \closureofunder{s}{o} \subseteq X$۔
+\end{proof}
+
+ځکه استقرا د طبيعي عددونو ځانګړنه ده، مقصد دا دے۔ هر د ډېډېکېنډ
+له مخې نامتناهي سټ راکړل شي، ترې يو ډېډېکېنډ الجبر جوړولے شو او دا
+الجبر د طبيعي عددونو د بدل په توګه کارولے شو۔
+
+دا منو چې \olref{thm:dedinfiniteinduction} استقرا په \emph{سټي}
+اصطلاحاتو کښې بيانوي۔ خو دا اصل په اسانۍ په هغو اصطلاحاتو کښې هم
+بيانولے شو چې ښايي ډېرې اشنا وي:
+
+\begin{cor}\ollabel{natinductionschema}
+فرض کړئ $N, s, o$ يو ډېډېکېنډ الجبر جوړوي۔ بيا د هر فارمول
+$\phi(x)$ دپاره، چې پاراميټرونه لرلے شي:
+\begin{center}
+	که $\phi(o)$ او $(\forall {n} \in N)(\phi(n)\lif
+	\phi({s}({n})))$ وي، {نو} $(\forall n \in N)\phi(n)$
+\end{center}
+\end{cor}
+
+\begin{proof}
+$X = \Setabs{n \in N}{\phi(n)}$ وټاکئ، او اوس
+\olref{thm:dedinfiniteinduction} وکاروئ۔
+\end{proof}
+
+په دې پايله کښې مو وويل چې يو فارمول «پاراميټرونه لري»۔ په لنډه
+معنا ئې دا ده چې د هر ډول څيزونو $c_1, \ldots, c_k$ دپاره له
+$\phi(x, c_1, \ldots, c_k)$ سره کار کولے شو۔ په لا دقيق ډول، پايله
+بې له دې چې «پاراميټرونه» ياد کړو، داسې بيانولے شو۔ د هر فارمول
+$\phi(x, v_1, \ldots, v_k)$ دپاره، چې ټول ازاد متغيرونه ئې ښودل
+شوي وي، لرو:
+	\begin{align*}
+			\forall v_1 \ldots \forall v_k((&\phi(o, v_1,\ldots, v_k) \land {}\\
+			&	(\forall x \in N)(\phi(x,v_1, \ldots, v_k) \lif \phi(s(x), v_1,\ldots, v_k))) \lif {}\\
+			&\hspace{3em} (\forall x \in N)\phi(x, v_1,\ldots, v_k))
+	\end{align*}
+په څرګند ډول، د «پاراميټرونو لرلو» خبره لوستل ډېر اسانه کولے شي۔
+(په \olref[sth][][]{part} کښې به دا طريقه ډېره وکاروو۔)
+
+بېرته د ډېډېکېنډ الجبرونو خبرې ته راځو: هر ډېډېکېنډ الجبر راکړل
+شي، د جمع، ضرب او طاقت معمول حسابي تابعې هم تعريفولے شو۔ خو دا
+اسان کار نۀ دے او د \emph{بازګشتي تعريف} طريقه کاروي۔ دا هغه طريقه
+ده چې ډېر وروسته، په ډېر عمومي چوکاټ کښې، معرفي او توجيه کوو۔
+(مينه‌وال ښايي له \olref[sth][ord-arithmetic][]{chap} وروسته دې
+موضوع ته بيا راشي، يا د \citealt[pp.~95--8]{Potter2004} په څېر
+کومه بله شننه ولولي۔) خو چې $N, s, o$ يو ډېډېکېنډ الجبر جوړوي، په
+پاے کښې به لاندې ټاکنې کولے شو:
+\begin{align*}
+	{a} + {o} &= {a} & & & {a} \times {o} &= {o} & & & {a}^{o} &= s(o)\\
+{a} + {s}({b}) &= {s}({a}+{b}) &&& {a} \times {s}({b}) &= ({a}\times {b}) + {a}  & & & {a}^{{s}({b})} &= {a}^{b} \times {a}
+\end{align*}
+او ښودلے شو چې دا تابعې لکه څنګه چې هيله کېږي، هماغسې چلند کوي۔
+
+\end{document}

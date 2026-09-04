@@ -1,0 +1,205 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} او صدق}
+
+\begin{defn}[!!^{valuation}s]
+$\{\True, \False\}$ دې د رښتياوالي د دوو قيمتونو، ``رښتيا'' او
+``دروغ''، سټ وي۔ د $\Lang{L_0}$ دپاره \emph{!!{valuation}} يوه
+تابع~$\pAssign{v}$ ده چې د ژبې !!{propositional variable}s ته يا
+$\True$ ورکوي يا $\False$؛ يعنې
+$\pAssign{v} \colon \PVar \to \{\True, \False \}$۔
+\end{defn}
+
+\begin{defn}
+  چې !!a{valuation}~$\pAssign{v}$ راکړل شوے وي، د ارزونې تابع
+  $\pValue{v} \colon \Frm[L_0] \to \{\True, \False \}$ په استقرايي
+  ډول داسې تعريف کړئ:
+  \begin{align*}
+    \iftag{prvFalse}{\pValue{v}(\lfalse) & = \False; \\}{}
+    \iftag{prvTrue}{\pValue{v}(\ltrue) & = \True; \\}{}
+    \pValue{v}(\Obj p_n) & = \pAssign{v}(\Obj p_n); \\
+    \iftag{prvNot}{\pValue{v}(\lnot !A) & = \begin{cases}
+        \True & \text{که } \pValue{v}(!A) = \False;\\
+        \False & \text{که داسې نۀ وي۔}
+      \end{cases} \\ }{}
+    \iftag{prvAnd}{\pValue{v}(!A \land !B) & = \begin{cases}
+        \True &
+        \text{که $\pValue{v}(!A) = \True$ او $\pValue{v}(!B) = \True$ وي؛}\\
+        \False &
+        \text{که $\pValue{v}(!A) = \False$ يا $\pValue{v}(!B) = \False$ وي}.
+      \end{cases}\\}{}
+    \iftag{prvOr}{\pValue{v}(!A \lor !B) & = \begin{cases}
+        \True &
+        \text{که $\pValue{v}(!A) = \True$ يا $\pValue{v}(!B) = \True$ وي؛}\\
+        \False &
+        \text{که $\pValue{v}(!A) = \False$ او $\pValue{v}(!B) = \False$ وي}.
+      \end{cases}\\}{}
+    \iftag{prvIf}{\pValue{v}(!A \lif !B) & = \begin{cases}
+        \True &
+        \text{که $\pValue{v}(!A) = \False$ يا $\pValue{v}(!B) = \True$ وي؛}\\
+        \False &
+        \text{که $\pValue{v}(!A) = \True$ او $\pValue{v}(!B) = \False$ وي}.
+      \end{cases}\\}{}
+    \iftag{prvIff}{\pValue{v}(!A \liff !B) & = \begin{cases}
+        \True &
+        \text{که $\pValue{v}(!A) = \pValue{v}(!B)$ وي؛}\\
+        \False &
+        \text{که $\pValue{v}(!A) \neq \pValue{v}(!B)$ وي}.
+      \end{cases}}{}
+\end{align*}
+\end{defn}
+
+\begin{explain}
+دا مادې د رښتياوالي له لاندې جدولونو سره سمون لري:
+\begin{center}
+\iftag{prvNot}{
+  \begin{tabular}{|c||c|} \hline
+    $!A$ & $ \lnot !A$ \\
+    \hline \hline
+    $\True$ & $\False$ \\
+    $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvAnd}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \land !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvOr}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lor !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\True$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}%
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}{\\[1em]}
+\iftag{prvIf}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lif !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvIff}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \liff !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\end{center}
+\end{explain}
+
+\begin{prob}
+فرض کړئ چې $\Lang{L_0}$ ته يو درې ځايه نښلوونکے $\diamondsuit$
+ورزياتوو چې ارزونه ئې داسې ورکول شوې ده:
+\begin{gather*}
+  \pValue{v}(\diamondsuit( !A , !B , !C ) ) = \begin{cases}
+    \pValue{v}( !B ) &
+    \text{که $\pValue{v}(!A) = \True$ وي؛}\\
+    \pValue{v}( !C ) &
+    \text{که $\pValue{v}(!A) = \False $ وي}۔
+  \end{cases}
+\end{gather*}
+د دې نښلوونکي د رښتياوالي جدول وليکئ۔
+\end{prob}
+
+\begin{thm}[ځايي ټاکنه]
+\ollabel{thm:LocalDetermination} فرض کړئ $\pAssign{v_1}$ او
+$\pAssign{v_2}$ داسې !!{valuation}s دي چې په $!A$ کښې په راتلونکو
+!!{propositional
+variable}s يو له بل سره موافق دي؛ يعنې هر کله چې
+$\Obj p_n$ په !!{formula}~$!A$ کښې راشي،
+$\pAssign{v_1}(\Obj p_n) = \pAssign{v_2}(\Obj p_n)$ وي۔ نو
+$\pValue{v_1}$ او $\pValue{v_2}$ هم پر~$!A$ موافق دي؛ يعنې
+$\pValue{v_1}(!A) = \pValue{v_2}(!A)$۔
+\end{thm}
+\textbf{د ژباړې د نسخې سمون (OLPL-003):} سرچينه د فرض په دويمه
+وينا کښې ``په کوم فارمول کښې'' ليکي، خو قضيه هماغه له مخکښې ټاکلے
+شوے فارمول ارزوي۔ ژباړه د لومړۍ وينا سره سم د هماغه فارمول متغيرونه
+اخلي؛ په دې سره د قضیې مقصود شرط څرګند پاتې کېږي۔
+
+\begin{proof}
+پر $!A$ استقرا کوو۔
+\end{proof}
+
+\begin{defn}[صدق]
+\ollabel{defn:satisfaction} د \emph{!!a{formula}~$!A$ صدق په
+  !!a{valuation}~$\pAssign{v}$ کښې}، يعنې $\pSat{v}{!A}$، په
+  استقرايي ډول داسې تعريفولے شو۔ (د ``$\pSat{v}{!A}$ نۀ دے'' د
+  څرګندولو دپاره $\pSat/{v}{!A}$ ليکو۔)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\pSat/{v}{\indfrm}$۔}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\pSat{v}{\indfrm}$۔}}{}
+
+\item \indcase{!A}{\Obj p_i}{$\pSat{v}{\indfrm}$
+  هله او يوازې هله چې $\pAssign{v}(\Obj p_i) = \True$ وي۔}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\pSat{v}{\indfrm}$ هله او يوازې هله چې
+    $\pSat/{v}{!B}$ وي۔}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\pSat{v}{\indfrm}$ هله او يوازې هله
+    چې $\pSat{v}{!B}$ او $\pSat{v}{!C}$ دواړه وي۔}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\pSat{v}{\indfrm}$ هله او يوازې هله
+    چې $\pSat{v}{!B}$ يا $\pSat{v}{!C}$، يا دواړه، وي۔}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\pSat{v}{\indfrm}$ هله او يوازې هله
+    چې $\pSat/{v}{!B}$ يا $\pSat{v}{!C}$، يا دواړه، وي۔}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\pSat{v}{\indfrm}$ هله او يوازې هله
+    چې يا $\pSat{v}{!B}$ او $\pSat{v}{!C}$ دواړه وي، يا نۀ
+    $\pSat{v}{!B}$ وي او نۀ $\pSat{v}{!C}$۔}}{}
+\end{enumerate}
+که $\Gamma$ د !!{formula}s يو سټ وي، نو $\pSat{v}{\Gamma}$ هله او
+يوازې هله چې د هر~$!A \in \Gamma$ دپاره $\pSat{v}{!A}$ وي۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-value}
+  $\pSat{v}{!A}$ هله او يوازې هله چې $\pValue{v}(!A) = \True$ وي۔
+\end{prop}
+
+\begin{proof}
+  پر~$!A$ استقرا کوو۔
+\end{proof}
+
+\begin{prob}
+  د \olref[pl][syn][val]{prop:sat-value} ثبوت ورکړئ۔
+\end{prob}
+
+\end{document}

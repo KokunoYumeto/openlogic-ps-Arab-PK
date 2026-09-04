@@ -1,0 +1,67 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{cmp}
+\olsection{د تابعو ترکيب}
+
+\begin{explain}
+\oliflabeldef{sfr:fun:inv:sec}{په \olref[inv]{sec} کښې مو وليدل چې
+د يوې \psOblique{!!a{bijection}}~$f$ معکوس~$f^{-1}$ پخپله يوه تابع ده۔ پر
+تابعو يو بل عمل ترکيب دے: موږ}{موږ} دوه تابعې، $f$ او~$g$، سره
+ترکيبولے او نوې تابع تعريفولے شو؛ يعنې لومړے~$f$ او بيا~$g$
+تطبيق کړو۔ البته، دا يوازې هغه وخت ممکنه ده چې د قيمتونو سټونه
+او د تعريف ساحې سره برابر راشي؛ يعنې د~$f$ د قيمتونو سټ بايد د~$g$
+د تعريف د ساحې فرعي سټ وي۔ \oliflabeldef{sfr:rel:ops:sec}{پر تابعو
+دا عمل، پر اړيکو د نسبي حاصل ضرب له هغه عمل سره ورته دے چې په
+\olref[rel][ops]{sec} کښې راغلے دے۔}{}
+
+انځوريز شکل د ترکيب د مفکورې په تشريح کښې مرسته کولے شي۔ په
+\olref{fig:composition} کښې دوه تابعې $f \colon A \to B$ او
+$g \colon B \to C$ او د هغو ترکيب~$(\comp{f}{g})$ ښيو۔ تابع
+$(\comp{f}{g}) \colon A \to C$ د~$A$ هر !!{element} د~$C$ له يوه
+\psOblique{!!a{element}} سره تړي۔ دا چې د $A$ يو !!a{element}
+د~$C$ له کوم \psOblique{!!{element}} سره تړل کېږي، داسې ئې ټاکو:
+د ورکړل شوي ننوت $x \in A$ دپاره، لومړے تابع $f$ پر~$x$ تطبيق
+کړئ، چې يو $f(x) = y \in B$ به ورکړي؛ بيا تابع $g$ پر~$y$ تطبيق
+کړئ، چې يو $g(f(x)) = g(y) = z \in C$ به ورکړي۔
+\begin{figure}
+  \olasset[2\olphotowidth]{assets/diagrams/composition.tikz}
+  \caption{د دوو تابعو $f$ او~$g$ ترکيب $g \circ f$۔}
+  \ollabel{fig:composition}
+\end{figure}
+\end{explain}
+
+\begin{defn}[ترکيب]
+فرض کړئ $f\colon A \to B$ او $g\colon B \to C$ تابعې دي۔
+له~$g$ سره د $f$ \emph{ترکيب} دا دے: $\comp{f}{g} \colon A \to C$،
+چې $(\comp{f}{g})(x) = g(f(x))$ وي۔
+\end{defn}
+
+\begin{ex}
+تابعې $f(x) = x + 1$ او $g(x) = 2x$ په پام کښې ونيسئ۔ ځکه چې
+$(\comp{f}{g})(x) = g(f(x))$، نو د هر ننوت~$x$ دپاره بايد لومړے
+د هغه ځايناستے واخلئ، بيا پايله په دوو ضرب کړئ۔ نو د هغو ترکيب
+په $(\comp{f}{g})(x) = 2(x+1)$ ورکړل شوے دے۔
+\end{ex}
+
+\begin{prob}
+وښيئ چې که $f \colon A \to B$ او $g \colon B \to C$ دواړه
+!!{injective} وي، نو $\comp{f}{g}\colon A \to C$ هم !!{injective} ده۔
+\end{prob}
+
+\begin{prob}
+وښيئ چې که $f \colon A \to B$ او $g \colon B \to C$ دواړه
+!!{surjective} وي، نو $\comp{f}{g}\colon A \to C$ هم !!{surjective} ده۔
+\end{prob}
+
+\begin{prob}
+فرض کړئ $f \colon A \to B$ او $g \colon B \to C$۔ وښيئ چې د
+$\comp{f}{g}$ ګراف $R_f \mid R_g$ دے۔
+\end{prob}
+
+\end{document}

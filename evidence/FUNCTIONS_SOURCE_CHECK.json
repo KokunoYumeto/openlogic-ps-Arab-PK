@@ -1,0 +1,48 @@
+{
+  "schema": "ps-functions-source-check/1",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0020",
+      "source_path": "content/sets-functions-relations/functions/functions.tex",
+      "source_sha256": "d68bba27e593df2c17e2dc93b34256d829361b04134b4a962b997d5f4a230a59"
+    },
+    {
+      "unit_id": "OLP-0021",
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3"
+    },
+    {
+      "unit_id": "OLP-0022",
+      "source_path": "content/sets-functions-relations/functions/function-kinds.tex",
+      "source_sha256": "4d30902b7c66720afabb8b079294106a685aefba0dc02ca10d9921bb554db0ac"
+    },
+    {
+      "unit_id": "OLP-0023",
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3"
+    },
+    {
+      "unit_id": "OLP-0024",
+      "source_path": "content/sets-functions-relations/functions/inverses.tex",
+      "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1"
+    },
+    {
+      "unit_id": "OLP-0025",
+      "source_path": "content/sets-functions-relations/functions/composition.tex",
+      "source_sha256": "1733e9f6b7f1009f7d36cb47b3f11ec8cccc28ef173a379e4d69c3de352fcf28"
+    },
+    {
+      "unit_id": "OLP-0026",
+      "source_path": "content/sets-functions-relations/functions/partial-functions.tex",
+      "source_sha256": "0f638e25ad1f565b9256846fb8b293c03663072b69a2adc5f2cfea1e94d00933"
+    }
+  ],
+  "consultation": "Four new native pages visually inspected; Pakistani scholarly prose page 1 and grammar page 179 consulted again. Advanced exact labels remain provisional. Originals never copied into public evidence.",
+  "inherited_source_findings": [
+    "OLP-0024 left inverse proposition omits nonempty A; proof selects a in A. Empty A and nonempty B is a counterexample; A=B=empty has the empty inverse. Preserve original and add separate edition note.",
+    "OLP-0021 successor/predecessor example names supplied n and then uses x. Preserve symbols and clarify separate note.",
+    "OLP-0023 claims function restriction matches relation restriction, but earlier R restricted to C was R intersect C squared, whereas function restriction limits only the input. Preserve definitions and explain scope distinction in edition note.",
+    "OLP-0021 calls the chosen square root positive but Nat includes zero; at zero the principal root is zero, so nonnegative is the precise intended qualifier. Preserve source and explain separately."
+  ]
+}

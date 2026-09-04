@@ -9,9 +9,13 @@ H=lambda s:hashlib.sha256(s if isinstance(s,bytes) else s.encode('utf-8')).hexdi
 manifest={x['unit_id']:x for x in map(json.loads,(STATE/'SOURCE_MANIFEST.jsonl').read_text().splitlines())}
 plan=json.loads((STATE/'consultation-plan.json').read_text(encoding='utf-8'))
 passages={p['passage_id']:p for p in map(json.loads,(STATE/'CANON_PASSAGES.jsonl').read_text(encoding='utf-8').splitlines())}
+correction_path=STATE/'SOURCE_CORRECTIONS.json'
+corrections=json.loads(correction_path.read_text(encoding='utf-8'))['actions'] if correction_path.exists() else []
+corrections_by_unit={}
+for c in corrections:corrections_by_unit.setdefault(c['unit_id'],[]).append(c)
 def localize_text(s):
  out='';pos=0
- for m in re.finditer(r'\\(?:text|intertext)\{',s):
+ for m in re.finditer(r'\\(?:text|intertext|emph)\{',s):
   if m.start()<pos: continue
   i=m.end(); depth=1
   while i<len(s) and depth:
@@ -27,7 +31,7 @@ def math(s):
  spans=re.findall(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}',s)
  return Counter(re.sub(r'\s+','',localize_text(x)) for x in spans)
 def ids(s):
- return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|olimport|olasset|cite\w*|label|ref|url|oliflabeldef)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s))
+ return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|olimport|olasset|cite\w*|label|cref|ref|url|oliflabeldef|printtoken)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s))
 def lineblocks(s):
  out=[]
  for m in re.finditer(r'(?s)(?:\A|(?<=\n)\n)(.*?)(?=\n\s*\n|\Z)',s):
@@ -39,23 +43,35 @@ for uid,consult in plan['units'].items():
  a=(REPO/'upstream'/p).read_bytes(); b=(REPO/'ps-Arab-PK'/p).read_bytes()
  assert H(a)==row['source_sha256']
  sa=a.decode(); sb=b.decode(); aa=re.split(r'\n\s*\n',sa.strip()); bb=re.split(r'\n\s*\n',sb.strip())
- checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=ids(sa)==ids(sb),math=math(sa)==math(sb),tokens=Counter(re.findall(r'!!\^?a?\{\w+\}s?',sa))==Counter(re.findall(r'!!\^?a?\{\w+\}s?',sb)),nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
+ sm,tm=math(sa),math(sb);source_only=sm-tm;target_only=tm-sm
+ expected_source=Counter();expected_target=Counter()
+ for c in corrections_by_unit.get(uid,[]):
+  e=c.get('qa_math_exception',{});expected_source.update(e.get('source_only',[]));expected_target.update(e.get('target_only',[]))
+ checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=ids(sa)==ids(sb),math=source_only==expected_source and target_only==expected_target,tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa))==Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb)),nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
+ checks['named_token_macros']=Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sa))==Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sb))
  residual=re.sub(r'(?m)^%.*$','',sb)
- if uid in ['OLP-0017','OLP-0018']:
-  diagram=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',s)]
+ residual=re.sub(r'\\usetoken\{[^{}]*\}\{[^{}]*\}','',residual)
+ diagram=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',s)]
+ if diagram(sa) or diagram(sb):
   checks['unchanged_numeric_diagrams']=diagram(sa)==diagram(sb)
   residual=re.sub(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}','',residual)
+ residual=re.sub(r'(?s)\\begin\{oltableau\}.*?\\end\{oltableau\}','',residual)
  residual=re.sub(r'\\olchapter\{[^}]+\}\{[^}]+\}',r'\\olchapter',residual)
  residual=re.sub(r'\\olpart\{[^}]+\}',r'\\olpart',residual)
  residual=re.sub(r'\\addcontentsline\{[^}]+\}\{[^}]+\}',r'\\addcontentsline',residual)
+ residual=re.sub(r'\\(?:texttt|textsc|textsf|textrm)\{[^{}]*\}','',residual)
  residual=re.sub(r'https?://[^}\s]+|openlogicproject\.org','',residual)
- residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]','',residual)
- residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|oliflabeldef|begin|end|ollabel|cite\w*)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
- residual=re.sub(r'!!\^?a?\{\w+\}s?|\\[A-Za-z]+','',residual)
+ residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF)-\d+','',residual)
+ residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}','',residual)
+ residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|oliflabeldef|begin|end|ollabel|label|cref|ref|cite\w*|printtoken)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
+ residual=re.sub(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{[^{}]*\}','',residual)
+ residual=re.sub(r'\\begin\{(?:tagblock|tagenumerate)\}\{[^{}]*\}','',residual)
+ residual=re.sub(r'!!\^?a?\{[^{}]+\}s?|\\[A-Za-z]+','',residual)
+ residual=re.sub(r'\[[0-9.]+(?:em|ex|pt|cm|mm|in)\]','',residual)
  english=sorted(set(re.findall(r'[A-Za-z]{2,}',residual)))
  checks['no_ordinary_english']=not english
- result=dict(unit_id=uid,path=p,source_sha256=H(a),translation_sha256=H(b),source_blocks=len(aa),target_blocks=len(bb),checks=checks,residual_english=english,extra_locale_macros=Counter(re.findall(r'\\ps\w+',sb)),status='structural-pass' if all(checks.values()) else 'deterministic-defects')
- if not checks['math']: result['math_diff']={'source_only':list((math(sa)-math(sb)).elements()),'target_only':list((math(sb)-math(sa)).elements())}
+ result=dict(unit_id=uid,path=p,source_sha256=H(a),translation_sha256=H(b),source_blocks=len(aa),target_blocks=len(bb),checks=checks,residual_english=english,extra_locale_macros=Counter(re.findall(r'\\ps\w+',sb)),source_correction_ids=[c['id'] for c in corrections_by_unit.get(uid,[])],status='structural-pass' if all(checks.values()) else 'deterministic-defects')
+ if source_only or target_only: result['math_diff']={'source_only':list(source_only.elements()),'target_only':list(target_only.elements()),'expected_by_source_correction':checks['math']}
  results.append(result)
  if len(aa)==len(bb):
   for k,(src,dst) in enumerate(zip(aa,bb),1):
@@ -67,6 +83,7 @@ for uid,consult in plan['units'].items():
 out=OUTPUT/'ALIGNMENT.jsonl';out.write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in alignment),encoding='utf-8')
 (OUTPUT/'SEGMENT_CANON_USE.jsonl').write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in use),encoding='utf-8')
 report=dict(schema='ps-openlogic-qa/1',status='in-progress',source_hashes='722 raw units verified',translation_coverage={'total':722,'draft_units':len(results),'structural_pass':sum(all(x['checks'].values()) for x in results),'visually_accepted':0,'published':0},canon_sources=4,canon_passages=len(passages),batch=plan['batch_id'],units=results,semantic_review=plan['semantic_review'],builds=[],publication_verified=False)
+report['canon_sources']=len((STATE/'CANON_SOURCES.jsonl').read_text(encoding='utf-8').splitlines())
 accepted_path=STATE/'ACCEPTED_BUILDS.json'
 if accepted_path.exists():
  accepted=json.loads(accepted_path.read_text(encoding='utf-8'))

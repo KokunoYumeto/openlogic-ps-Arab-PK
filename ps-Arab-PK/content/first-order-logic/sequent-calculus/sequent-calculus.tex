@@ -1,0 +1,56 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{seq}{د سېکوېنټ حساب}}
+      {\olchapter{pl}{seq}{د سېکوېنټ حساب}}
+
+\begin{editorial}
+  دا څپرکے د کلاسیک د لومړۍ درجې منطق دپاره د ګېنتڅن معياري
+  سېکوېنټ حساب \texttt{LK} وړاندې کوي۔ دې ته نور مثالونه او تمرينونه
+  هم پکار دي۔ د ثبوت د نظام په توګه د سېکوېنټ له حساب سره د اړوندو
+  موادو د شاملولو يا اېستلو دپاره د \texttt{prfLK} ټېګ وکاروئ۔
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{structural-rules}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

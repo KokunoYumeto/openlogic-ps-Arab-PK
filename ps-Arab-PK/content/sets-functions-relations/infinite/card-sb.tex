@@ -1,0 +1,111 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{card-sb}
+
+\olsection{ضميمه: د شروډر--برنشتاين ثبوت}
+
+له ساده سټ نظريې څخه د وتلو مخکښې يو وروستے ساده (خو ډېر فني!)
+ثبوت څېړو۔ دا د شروډر--برنشتاين ثبوت دے
+(\olref[sfr][siz][sb]{thm:schroder-bernstein}): که
+$\cardle{A}{B}$ او $\cardle{B}{A}$ وي، نو $\cardeq{A}{B}$؛ يعنې که
+!!{injection}s $f \colon A \to B$ او $g \colon B \to A$ راکړل
+شي، نو يوه !!a{bijection} $h \colon A \to B$ شته۔
+
+په دې څپرکي کښې مو د ډېډېکېنډ د \emph{بندښتونو} مفهوم وکاراوه۔ په
+رښتيا، ډېډېکېنډ په همدې مفهوم د شروډر--برنشتاين يو ښکلی ثبوت ورکړ،
+چې دلته ئې وړاندې کوو۔ که لږ بېله خو په اصل کښې ورته شننه غواړئ،
+دا ثبوت په نژدې ډول د \citet[pp.~157--8]{Potter2004} پيروي کوي۔
+په انټرنېټ کښې لږه پلټنه به هم درته وښيي چې دا---لکه د
+$\sqrt{2}$ غير ناطق‌والے---هغه قضيه ده چې \emph{ډېر} په زړه پورې
+او بېل ثبوتونه لري۔
+
+د \olref[sfr][infinite][dedekind]{Closure} په شان نښه وکاروئ او د
+هر سټ $B$ او تابعې~$f$ دپاره وټاکئ:
+\[
+\Closureofunder{f}{B} = \bigcap \Setabs{X}{B \subseteq X
+\text{ او $X$ د $f$ له مخې بند دے}}
+\]
+په دې ډول تعريف شوے $\Closureofunder{f}{B}$ تر ټولو کوچنے داسې د
+$f$ له مخې بند سټ دے چې~$B$ رانغاړي، يعنې:
+
+\begin{lem}\ollabel{Closureprops}
+	د هرې تابع $f$ او هر $B$ دپاره:
+	\begin{enumerate}
+		\item\ollabel{Closurehaselem} $B \subseteq \Closureofunder{f}{B}$؛ او
+		\item\ollabel{Closureclosed} $\Closureofunder{f}{B}$ د $f$ له مخې بند دے؛ او
+		\item\ollabel{Closuresmallest} که $X$ د $f$ له مخې بند وي او $B
+		\subseteq X$ وي، نو $\Closureofunder{f}{B} \subseteq X$۔
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+کټ مټ لکه په \olref[sfr][infinite][dedekind]{closureproperties} کښې۔
+\end{proof}
+
+شروډر--برنشتاين ته د رسېدو دپاره يو وروستے حقيقت پکار دے:
+
+\begin{prop}\ollabel{sbhelper}
+که $A \subseteq B \subseteq C$ او $A \approx C$ وي، نو $\cardeq{A}{B}$۔
+\end{prop}
+\textbf{د ژباړې د نسخې سمون (OLINF-002):} د سرچينې په پايله کښې
+د کارډينال برابرۍ يوه نښه په تېروتنه د بلې کارډينال برابرۍ د لومړي
+ارګومېنټ په توګه ځالې شوې ده۔ لاندې ثبوت له کوچني سټ څخه منځني سټ
+ته دوه اړخيزه يو پر يو تابع جوړوي، نو سم بيان هماغه د دغو دوو سټونو
+همشمېر والی دے چې پورته ليکل شوے۔
+
+\begin{proof}
+يوه !!a{bijection} $f \colon C \to A$ راکړل شي، وټاکئ
+$F = \Closureofunder{f}{C \setminus B}$ او له ډومېن $C$ سره تابع
+$g$ داسې تعريف کړئ:
+\[
+	g(x) =
+	\begin{cases}
+			f(x) &\text{که $x \in F$ وي}\\
+			x & \text{که نۀ}
+	\end{cases}
+\]
+ښيو چې $g$ له $C \to B$ يوه !!a{bijection} ده؛ له دې به راووځي
+چې $\comp{f^{-1}}{g} \colon A \to B$ يوه !!a{bijection} ده، او
+ثبوت بشپړېږي۔
+
+لومړے ادعا کوو چې که $x \in F$ خو $y\notin F$ وي، نو
+$g(x) \neq g(y)$۔ د نقيض دپاره فرض کړئ چې برابر دي؛ نو
+$y = g(y) = g(x) = f(x)$۔ ځکه $x \in F$ او د
+\olref{Closureprops} له مخې $F$ د $f$ له مخې بند دے،
+$y = f(x) \in F$ لرو، چې ټکر دے۔
+
+اوس فرض کړئ $g(x) = g(y)$۔ د پورته خبرې له مخې، $x \in F$ هله او
+يوازې هله چې $y \in F$ وي۔ که $x, y \in F$ وي، نو
+$f(x) = g (x) = g(y) = f(y)$؛ او ځکه $f$ يوه !!a{bijection} ده،
+$x = y$۔ که $x, y \notin F$ وي، نو $x = g(x) = g(y) = y$۔ نو
+$g$ يوه !!a{injection} ده۔
+
+دا پاتې ده چې وښيو $\ran{g} = B$۔ يو $x \in B \subseteq C$
+وټاکئ۔ که $x \notin F$ وي، نو $g(x) = x$۔ که $x \in F$ وي، نو د
+کوم $y \in F$ دپاره $x = f(y)$؛ ځکه که داسې نۀ وي، نو
+$F \setminus \{x\}$ به د $f$ له مخې بند وي او $C\setminus B$ به
+وغځوي، چې د \olref{Closureprops} له مخې ناشونې ده؛ اوس
+$g(y) = f(y) = x$۔
+\end{proof}
+
+په پاے کښې د اصلي پايلې ثبوت دا دے۔ ياد کړئ چې د تابعې $h$ او سټ
+$D$ دپاره $\funimage{h}{D} = \Setabs{h(x)}{x \in D}$ تعريفوو۔
+
+\begin{proof}[د شروډر--برنشتاين ثبوت] فرض کړئ $f \colon A \to B$
+او $g \colon B \to A$ !!{injection}s دي۔ ځکه
+$\funimage{f}{A} \subseteq B$، نو
+$\funimage{g}{\funimage{f}{A}} \subseteq g[B] \subseteq A$۔
+برسېره پر دې، $\comp{f}{g} \colon A \to
+\funimage{g}{\funimage{f}{A}}$ يوه !!{injection} ده، ځکه $g$ او
+$f$ دواړه همداسې دي؛ او په رښتيا $\comp{f}{g}$ يوه
+!!a{bijection} ده، يوازې په دې سبب چې مقابل ډومېن مو همداسې تعريف
+کړے۔ نو $\cardeq{\funimage{g}{\funimage{f}{A}}}{A}$، او په دې توګه
+د \olref{sbhelper} له مخې يوه !!a{bijection} $h \colon A \to
+\funimage{g}{B}$ شته۔ برسېره پر دې، $g^{-1}$ يوه !!a{bijection}
+$\funimage{g}{B} \to B$ ده۔ نو $\comp{h}{g^{-1}} \colon A \to B$
+يوه !!a{bijection} ده۔
+\end{proof}
+
+\end{document}

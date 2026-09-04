@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B001-SETS",
-  "status": "cumulative-drafts-with-first-verified-release",
+  "batch_id": "PS-B010-SEQUENT-RULES",
+  "status": "cumulative-sequent-rules-drafts; functions reader prepared, guarded build pending a fresh attempt",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -301,6 +301,1107 @@
         "TERM-TREE"
       ],
       "scope": "All operations, examples and closure exercise; formal definitions determine orientation and ambient set."
+    },
+    "OLP-0020": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-FUNCTION"
+      ],
+      "scope": "Chapter title and all six source imports, with the source commented isomorphic-functions import preserved as a comment."
+    },
+    "OLP-0021": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-FUNCTION",
+        "TERM-DOMAIN",
+        "TERM-CODOMAIN",
+        "TERM-RANGE",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-FUNCTION-EXTENSIONALITY"
+      ],
+      "scope": "Full definition, caption, black-box distinction, student example and case-defined function. Native domain/values/operations evidence consulted; exact codomain/range/argument labels are provisional. OLFUN-002 corrects positive to nonnegative principal square root on Nat; OLFUN-003 removes the inconsistent prose variable while preserving the formula. Both are disclosed in edition notes and SOURCE_CORRECTIONS."
+    },
+    "OLP-0022": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-FUNCTION",
+        "TERM-DOMAIN",
+        "TERM-CODOMAIN",
+        "TERM-RANGE",
+        "TERM-INJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-BIJECTIVE"
+      ],
+      "scope": "All three definitions and captions. No exact injection/surjection/bijection terminology was found in these inspected native pages; provisional descriptive labels distinguish at-most-one, at-least-one and exactly-one preimages. Upstream token keys retained."
+    },
+    "OLP-0023": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P110-OPERATION"
+      ],
+      "terms": [
+        "TERM-FUNCTION",
+        "TERM-DOMAIN",
+        "TERM-RANGE",
+        "TERM-FUNCTION-EXTENSIONALITY"
+      ],
+      "scope": "Both uniqueness/existence conditions and all philosophical conditional text, restriction and image definitions retained. Prose/grammar and function/predicate/operation witnesses actually read; existing graph/relation labels carried consistently. OLFUN-004 repairs graph terminology to relation between A and B / subset of A times B. OLFUN-005 keeps the correct domain-only function restriction and qualifies its analogy with two-sided relation restriction. Both are disclosed."
+    },
+    "OLP-0024": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-DOMAIN",
+        "TERM-CODOMAIN",
+        "TERM-RANGE",
+        "TERM-INJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-BIJECTIVE",
+        "TERM-FUNCTION-INVERSE",
+        "TERM-CHOICE"
+      ],
+      "scope": "All propositions, proofs, exercises and full Choice footnote including both conditional branches. Left and right composition directions kept. Native sources support general function/domain concepts; inverse/Choice terms provisional. OLFUN-001 adds the nonempty-domain condition to the false source theorem, gives an adjacent source-correction note, and records the exact general condition in reader notes."
+    },
+    "OLP-0025": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-COMPOSITION",
+        "TERM-DOMAIN",
+        "TERM-RANGE",
+        "TERM-INJECTIVE",
+        "TERM-SURJECTIVE"
+      ],
+      "scope": "Native substitution construction consulted for nested evaluation; no exact binary composition label attestation claimed. Both optional introductory branches, diagram/caption, example and all three exercises retained. Composition order is first f then g."
+    },
+    "OLP-0026": {
+      "batch_id": "PS-B004-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-PARTIAL-TOTAL",
+        "TERM-DOMAIN",
+        "TERM-FUNCTION",
+        "TERM-INJECTIVE"
+      ],
+      "scope": "Partial function allows no output and never more than one. Actual domain is where defined, not automatically ambient A. Every total function is partial in this inclusive sense. Serial condition and inverse exercise keep exact quantifier scopes; partial/total labels provisional."
+    },
+    "OLP-0027": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P100-REMOVE-REPETITIONS"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-SET-SIZE"
+      ],
+      "scope": "Whole chapter driver including both substantive editorial blocks and all thirteen imports. Explicit distinction between list/surjection and natural-number/initial-segment bijection definitions retained. Driver draft does not imply that its as-yet untranslated sections are covered."
+    },
+    "OLP-0028": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P10-EQUINUMEROSITY",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-SET-SIZE",
+        "TERM-FINITE",
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION"
+      ],
+      "scope": "Cantor historical introduction, actual infinity and finite-versus-infinite size intuition; author/date retained and proper name transliterated. Native witnesses support counting/listing concepts, not independent historical verification of the source narrative."
+    },
+    "OLP-0029": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P100-REMOVE-REPETITIONS",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-INJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-BIJECTIVE",
+        "TERM-FINITE",
+        "TERM-IFF",
+        "TERM-CEILING"
+      ],
+      "scope": "All editorial text, informal/formal definitions, seven list conditions, duplicate-removal proofs, Nat/PosInt shifts, examples, corollaries and exercises. Native proof of listing/injection equivalence actually consulted. Chosen ceiling noun is provisional; native floor formula is different and not imported. Shared OLSIZ-001 restores the omitted f(7) value -3 in the final table row with adjacent disclosure."
+    },
+    "OLP-0030": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P102-DIAGONALS"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-ENUMERATION-GEOMETRY",
+        "TERM-PAIRING-FUNCTION"
+      ],
+      "scope": "All three original arrays, diagonal sweep, proof, higher powers and both exercises retained. Native triangular/zig-zag diagrams actually viewed; their different coordinate orientation and enumeration are not copied. Both source conditional clauses and cref/label identifiers preserved."
+    },
+    "OLP-0031": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P100-REMOVE-REPETITIONS",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P102-DIAGONALS"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-PAIRING-FUNCTION",
+        "TERM-ENCODING",
+        "TERM-COFINITE",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-INJECTIVE",
+        "TERM-BIJECTIVE"
+      ],
+      "scope": "Cantor pairing formula, definition, encoding explanation, and every exercise retained. The native pairing and diagonal pages were actually inspected but their alternative formulas and indexing were not imported. Shared OLSIZ-002 repairs the malformed cofinite phrase. The final source exercise is mathematically incomplete for a merely injective pairing function; PSSIZ-001 supplies the necessary nonempty condition and total extension."
+    },
+    "OLP-0032": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P62-PARITY",
+        "AF-MOE-P35-POWER-EXPONENT",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-ENUMERATION",
+        "TERM-PAIRING-FUNCTION",
+        "TERM-ENCODING",
+        "TERM-PARITY",
+        "TERM-EXPONENT",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-INJECTIVE",
+        "TERM-SURJECTIVE"
+      ],
+      "scope": "Complete alternative pairing construction, all three arrays, factorization explanation, both pairing formulas and partial-inverse qualification retained. PSSIZ-002 repairs the wrong second row-zero pair; shared OLSIZ-003 repairs the duplicated later family. Native parity and exponent passages were visually inspected; they support language only and do not replace the fixed formulas."
+    },
+    "OLP-0033": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P102-DIAGONALS"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-DIAGONALIZATION",
+        "TERM-SURJECTIVE",
+        "TERM-ELEMENT",
+        "TERM-POWERSET",
+        "TERM-IFF",
+        "TERM-STRING"
+      ],
+      "scope": "Complete elementary non-enumerability section, editorial comparison, both diagonal theorems and proofs, both arrays and exercises retained. Native pages 122–123 were visually inspected and supply concept-specific diagonal/uncountability prose. Their decimal-real proof and Nat indexing are comparators only; OpenLogic binary sequences, PosInt indexing and power-set formulas remain exact."
+    },
+    "OLP-0034": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P28-INVERSES-TYPES"
+      ],
+      "terms": [
+        "TERM-REDUCTION",
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-SURJECTIVE",
+        "TERM-INJECTIVE",
+        "TERM-POWERSET",
+        "TERM-STRING",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-ELEMENT"
+      ],
+      "scope": "Complete reduction section, editorial alternatives, subset-to-binary-sequence proof, direction warning, counterexamples and all six exercises retained. The exact reduction term was not found in checked native sources; its provisional compositional rendering and direction invariant are public. Shared OLSIZ-004 binds the characteristic sequence and OLSIZ-005 supplies an actual infinite output; PSSIZ-003 records a separate math-mode repair."
+    },
+    "OLP-0035": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+        "AF-MOE-P10-EQUINUMEROSITY",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY",
+        "AF-BUKOVSKY-P26-COMPOSITION",
+        "AF-BUKOVSKY-P28-INVERSES-TYPES"
+      ],
+      "terms": [
+        "TERM-SET-SIZE",
+        "TERM-BIJECTIVE",
+        "TERM-EQUIVALENCE",
+        "TERM-REL-PROPERTIES",
+        "TERM-IDENTITY",
+        "TERM-FUNCTION-INVERSE",
+        "TERM-COMPOSITION",
+        "TERM-ENUMERABLE",
+        "TERM-SURJECTIVE",
+        "TERM-ELEMENT",
+        "TERM-IFF"
+      ],
+      "scope": "Complete equinumerosity section, translated Frege quotation and citation, formal definition, equivalence-relation proof, both alternative enumeration branches and exercises retained. Native page 88 directly proves equal cardinality reflexive, symmetric and transitive through identity, inverse and composition; its different composition notation is language evidence only. OLSIZ-006 corrects the same wrong function name in both conditional empty-set arguments."
+    },
+    "OLP-0036": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-CARDINAL-ORDER",
+        "TERM-SET-SIZE",
+        "TERM-INJECTIVE",
+        "TERM-BIJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-ELEMENT",
+        "TERM-ENUMERABLE",
+        "TERM-POWERSET",
+        "TERM-DIAGONALIZATION",
+        "TERM-EXTENSIONALITY",
+        "TERM-IFF"
+      ],
+      "scope": "Complete cardinal comparison and Cantor theorem section, both conditional proof branches, both comparison passages, source citations and final exercise retained. Native pages 89 and 144 directly attest injection-based cardinal order and Cantor’s general power-set theorem. OLSIZ-007 repairs a wrong quantifier domain; PSSIZ-004 records the choice/well-orderability dependency of the claimed nonenumerability characterization without changing its formulas."
+    },
+    "OLP-0037": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P87-CANTOR-BERNSTEIN",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE"
+      ],
+      "terms": [
+        "TERM-CARDINAL-ORDER",
+        "TERM-SET-SIZE",
+        "TERM-INJECTIVE",
+        "TERM-BIJECTIVE"
+      ],
+      "scope": "Complete Schroder-Bernstein statement and exposition, history footnote/citation, deferred-proof conditional and practical two-injection method retained. Native page 98 directly states and begins a proof of the same theorem. The witness proof is not imported because OpenLogic deliberately defers proof to a later cardinality section."
+    },
+    "OLP-0038": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P100-REMOVE-REPETITIONS",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P62-PARITY",
+        "AF-MOE-P35-POWER-EXPONENT"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-BIJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-INJECTIVE",
+        "TERM-ELEMENT",
+        "TERM-PARITY",
+        "TERM-CEILING",
+        "TERM-RECURSIVE",
+        "TERM-IFF"
+      ],
+      "scope": "Complete set-theoretic alternative enumeration section, editorial conflict notice, empty-set clause, Nat/initial-segment definition, footnote, all examples, both integer formulas and all exercises retained. Native countability/removal and parity pages support the alternative characterization and examples; the ceiling label remains provisional and its fixed formula is unchanged."
+    },
+    "OLP-0039": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P102-DIAGONALS"
+      ],
+      "terms": [
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-DIAGONALIZATION",
+        "TERM-BIJECTIVE",
+        "TERM-SURJECTIVE",
+        "TERM-ELEMENT",
+        "TERM-POWERSET",
+        "TERM-STRING",
+        "TERM-IFF"
+      ],
+      "scope": "Complete alternative non-enumerability section, editorial definition choice, omega-sequence footnote/conditional, both diagonal theorems and proofs, arrays and exercise retained. Native pages 122–123 directly support diagonal proof language. OLSIZ-008 corrects reversed row/digit index roles and OLSIZ-009 corrects the duplicated bit-flip instruction; displayed arrays and formulas remain frozen."
+    },
+    "OLP-0040": {
+      "batch_id": "PS-B005-SIZE-OF-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P28-INVERSES-TYPES"
+      ],
+      "terms": [
+        "TERM-REDUCTION",
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-SURJECTIVE",
+        "TERM-INJECTIVE",
+        "TERM-POWERSET",
+        "TERM-STRING",
+        "TERM-ELEMENT"
+      ],
+      "scope": "Complete alternative reduction section, editorial cross-references, Nat-indexed subset-to-binary-sequence proof, active exercises and translated inactive source comments retained. Native diagonal/countability pages support the proof language. OLSIZ-010 repairs the active definition’s unbound sequence subscript; every other formula remains frozen."
+    },
+    "OLP-0041": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [],
+      "scope": "Complete arithmetization chapter driver, source attribution, and all seven imports retained. The chapter title is rendered descriptively as set-theoretic construction of number systems; no claim of an attested standalone Pakistani technical equivalent is made."
+    },
+    "OLP-0042": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY"
+      ],
+      "terms": [
+        "TERM-NUMBERSETS",
+        "TERM-PAIR",
+        "TERM-EQUIVALENCE",
+        "TERM-REL-PROPERTIES",
+        "TERM-RELATION",
+        "TERM-ELEMENT",
+        "TERM-FUNCTION",
+        "TERM-PHILOSOPHY"
+      ],
+      "scope": "Complete construction of integers from ordered pairs of naturals: motivating subtraction representations, equivalence relation and three-property proof, quotient definition, arithmetic and order operations, natural-number embedding, preservation calculation, inactive source comments, and final exercise retained. Existing relation and number-system terminology is reused; native witnesses support concepts but OpenLogic formulas control the construction."
+    },
+    "OLP-0043": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-NUMBERSETS",
+        "TERM-PAIR",
+        "TERM-EQUIVALENCE",
+        "TERM-REL-PROPERTIES",
+        "TERM-RELATION",
+        "TERM-ELEMENT",
+        "TERM-ORDER"
+      ],
+      "scope": "Complete construction of rationals from nonzero-second-coordinate integer pairs: motivating fraction representations, equivalence relation and exercise, quotient definition, addition, multiplication and order, integer embedding, deferred checks and final exercise retained. OLARI-001 discloses the source’s reversed difference in the prose explanation while preserving the source math token and the correct following equation."
+    },
+    "OLP-0044": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+        "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+        "AF-BUKOVSKY-P62-PARITY",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER"
+      ],
+      "terms": [
+        "TERM-NUMBERSETS",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-CONTINUUM",
+        "TERM-PARITY",
+        "TERM-CARDINAL-ORDER",
+        "TERM-FORMAL",
+        "TERM-ELEMENT"
+      ],
+      "scope": "Complete real-line motivation, ordered-field and cardinal comparison, square-root-of-two irrationality theorem with geometric and formal proofs, unchanged TikZ diagram, historical remarks, least-upper-bound completeness discussion, rational counterexample, inactive source footnote and OLARI-002 typo disclosure retained. Native pages 21–22 directly support irrationality, real/rational, bound and supremum language."
+    },
+    "OLP-0045": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+        "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+        "AF-MOE-P11-SUBSET",
+        "AF-MOE-P15-UNION",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-DEDEKIND-CUT",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-NUMBERSETS",
+        "TERM-SUBSET",
+        "TERM-PROPER-SUBSET",
+        "TERM-UNION",
+        "TERM-ORDER",
+        "TERM-ELEMENT"
+      ],
+      "scope": "Complete Dedekind-cut construction, three-clause cut definition, square-root-of-two example, subset order, fully quantified completeness statement and union proof, no-gap interpretation, rational embedding, addition, negation and multiplication formulas including inactive source lines retained. OLARI-003 corrects the nonempty-set proof premise; OLARI-004 and OLARI-005 disclose inconsistent embedded-zero notation and omitted zero-times-negative cases without silently expanding the frozen source formulas."
+    },
+    "OLP-0046": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+        "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-PHILOSOPHY",
+        "TERM-DEDEKIND-CUT",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-NUMBERSETS",
+        "TERM-PAIR",
+        "TERM-EQUIVALENCE",
+        "TERM-CONTINUUM"
+      ],
+      "scope": "Complete philosophical reflections on rigor, completeness, Dedekind and Cauchy constructions, discarding encodings during ordinary proof, rival ordered-pair implementations, Benacerraf’s argument, failure of literal cross-domain identity, and theory embedding retained. All inactive source notes and schematic representations are translated while remaining inactive."
+    },
+    "OLP-0047": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P127-ALGEBRA-LAWS",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+        "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-ALGEBRAIC-STRUCTURES",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-DEDEKIND-CUT",
+        "TERM-NUMBERSETS",
+        "TERM-EQUIVALENCE",
+        "TERM-ORDER-KINDS",
+        "TERM-REL-PROPERTIES",
+        "TERM-CONNECTED"
+      ],
+      "scope": "Complete technical appendix: eight commutative-ring laws, full associativity calculation, additive-inverse and distributivity proofs, ordered-ring compatibility, total-order/trichotomy footnote, ordered-field inverse law, integer/rational/real exercises, proof that cut addition produces a cut, deferred operations, and square-root cut inequalities retained. All inactive source calculations remain inactive. OLARI-006–009 expose representative-independence and definition-completeness gaps plus one grammatical omission."
+    },
+    "OLP-0048": {
+      "batch_id": "PS-B006-ARITHMETIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P15-CAUCHY-HISTORY",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+        "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+        "AF-BUKOVSKY-P127-ALGEBRA-LAWS"
+      ],
+      "terms": [
+        "TERM-CAUCHY-SEQUENCE",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-ALGEBRAIC-STRUCTURES",
+        "TERM-NUMBERSETS",
+        "TERM-EQUIVALENCE",
+        "TERM-FUNCTION",
+        "TERM-ORDER",
+        "TERM-PARITY",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "Complete alternative construction of the reals from rational-valued Cauchy sequences: decimal motivation, Cauchy and null-sequence definitions, quotient relation, operations, positivity and order, ordered-field theorem and bisection proof of least-upper-bound completeness retained. Native pages 15 and 66 support the historical, sequence, limit and convergence concepts while OpenLogic controls every domain and quantifier. OLARI-010–014 disclose class/relation confusion, notation and type mismatches, false raw-sequence theorem wording, and an omitted rational-endpoint justification."
+    },
+    "OLP-0049": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FINITE",
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-RECURSIVE",
+        "TERM-ISOMORPHISM"
+      ],
+      "scope": "Complete chapter driver, source attribution, and all five imports retained. The title uses the established finite/infinite vocabulary; substantive concepts are reviewed in imported units."
+    },
+    "OLP-0050": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P192-DEDEKIND-FINITE",
+        "AF-BUKOVSKY-P87-CANTOR-BERNSTEIN"
+      ],
+      "terms": [
+        "TERM-FINITE",
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-INJECTIVE",
+        "TERM-PROPER-SUBSET",
+        "TERM-RANGE",
+        "TERM-ELEMENT"
+      ],
+      "scope": "Complete Hilbert-hotel motivation, finite and infinite room reallocations, historical quotation, unchanged numeric TikZ diagram, and Dedekind-infinite definition retained. Native evidence supports proper-subset equinumerosity and injections; the hotel presentation remains source-specific."
+    },
+    "OLP-0051": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P192-DEDEKIND-FINITE"
+      ],
+      "terms": [
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION",
+        "TERM-INJECTIVE",
+        "TERM-RANGE",
+        "TERM-INTERSECTION",
+        "TERM-SUBSET",
+        "TERM-ELEMENT",
+        "TERM-LEMMA"
+      ],
+      "scope": "Complete successor characterization, repeated-application reformulation, function-closure definition, three closure properties and proof, Dedekind-algebra definition, and construction from a Dedekind-infinite set retained. OLINF-001 discloses the missing ambient-endofunction assumption needed to make the generic closure definition and range example well-typed."
+    },
+    "OLP-0052": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION",
+        "TERM-NUMBERSETS",
+        "TERM-EXPONENT",
+        "TERM-FORMAL"
+      ],
+      "scope": "Complete set-theoretic induction theorem and proof, formula induction schema with parameters, fully quantified parameter expansion, and recursive equations for addition, multiplication and exponentiation retained. Native pages directly support base/successor induction and least successor-closed natural sets; the generalized Dedekind signature remains source-controlled."
+    },
+    "OLP-0053": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P192-DEDEKIND-FINITE",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P65-ISOMORPHISM",
+        "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS"
+      ],
+      "terms": [
+        "TERM-PHILOSOPHY",
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-ISOMORPHISM",
+        "TERM-DEDEKIND-CUT",
+        "TERM-NUMBERSETS",
+        "TERM-SET",
+        "TERM-ELEMENT",
+        "TERM-PARADOX"
+      ],
+      "scope": "Complete philosophical comparison with arithmetization, conditional natural-number surrogate, isomorphism/structuralism discussion, both historical quotations, psychological-object objection, set-versus-plurality gap, and transition from naive set theory retained. Native sources support the mathematical concepts only; the philosophical argument remains the attributed source position."
+    },
+    "OLP-0054": {
+      "batch_id": "PS-B007-INFINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P87-CANTOR-BERNSTEIN",
+        "AF-BUKOVSKY-P65-ISOMORPHISM",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE"
+      ],
+      "terms": [
+        "TERM-CARDINAL-ORDER",
+        "TERM-SET-SIZE",
+        "TERM-INJECTIVE",
+        "TERM-BIJECTIVE",
+        "TERM-CLOSURE",
+        "TERM-COMPOSITION",
+        "TERM-FUNCTION-INVERSE",
+        "TERM-SUBSET",
+        "TERM-DIFFERENCE",
+        "TERM-RANGE"
+      ],
+      "scope": "Complete closure proof of Schroeder-Bernstein: generalized closure lemma, squeeze helper, piecewise bijection and injectivity/surjectivity proof, image notation, and final composition argument retained. OLINF-002 corrects the malformed nested cardinal-equality conclusion to the small/middle equinumerosity actually established and used by the proof."
+    },
+    "OLP-0055": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-LOGIC-FORMS",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-SEMANTICS",
+        "TERM-TRUTH-FUNCTION"
+      ],
+      "scope": "Complete propositional-logic part driver retained, including its editorial status, the false FOL tag around imported first-order proof systems, every conditional import, and the planned truth-functional-completeness expansion. Native logic pages support subject vocabulary only; the import behavior and editorial roadmap remain source-controlled."
+    },
+    "OLP-0056": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-LOGIC-FORMS",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "Complete syntax-and-semantics chapter driver, editorial warning, and all six imports retained in source order. The native formation and valuation witnesses support the chapter vocabulary; the chapter organization remains exactly OpenLogic’s."
+    },
+    "OLP-0057": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROPOSITION",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-SEMANTICS",
+        "TERM-LOGIC-FORMS",
+        "TERM-RECURSIVE",
+        "TERM-METALOGIC"
+      ],
+      "scope": "Complete conceptual introduction retained: two-valued truth-functional scope, exclusions of modal, epistemic and temporal determinations, the material-conditional qualification, inductive syntax and unique readability, valuations and evaluation, satisfaction, tautology, entailment and satisfiability. Native witnesses directly support truth tables, formula formation, semantic consequence and satisfiability, while the modal boundary remains source-specific."
+    },
+    "OLP-0058": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-PROPOSITION",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-STRING",
+        "TERM-RECURSIVE",
+        "TERM-ENUMERABLE"
+      ],
+      "scope": "Complete language inventory, all tag-conditioned primitive and defined symbols, alternate notations, inductive formula clauses, stage explanation, outer-parenthesis convention, every abbreviation, and syntactic-identity definition retained. OLPL-001 removes one unmatched closing parenthesis from the source disjunction-based conditional abbreviation."
+    },
+    "OLP-0059": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-RECURSIVE",
+        "TERM-SUBSTITUTION",
+        "TERM-STRING",
+        "TERM-OPERATOR"
+      ],
+      "scope": "Complete formula-induction theorem and proof, balanced-parentheses and no-proper-prefix propositions, unique readability proof, uniform and simultaneous substitution definitions, and both substitution exercises retained. Native evidence supports induction and formation concepts; the exact parsing and substitution claims remain source-controlled."
+    },
+    "OLP-0060": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-RECURSIVE",
+        "TERM-STRING"
+      ],
+      "scope": "Complete formation-sequence definition, both examples including irrelevant entries, existence proof by formula induction, initial-subsequence lemma, and converse proof by strong induction retained. OLPL-002 restores syntactic identity in the conjunction case where the source alone uses semantic equivalence inconsistently with its definition and every parallel case."
+    },
+    "OLP-0061": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROP-SYNTAX",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-SEMANTICS",
+        "TERM-FUNCTION",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "Complete valuation and evaluation definitions, every tag-conditioned truth clause and truth table, ternary-connective exercise, local-determination theorem, inductive satisfaction clauses, set satisfaction, and satisfaction/evaluation equivalence retained. OLPL-003 resolves the source phrase “some formula A” to the already fixed formula A required by the theorem statement."
+    },
+    "OLP-0062": {
+      "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-SEMANTICS",
+        "TERM-LOGIC-FORMS",
+        "TERM-SUBSET",
+        "TERM-FINITE"
+      ],
+      "scope": "Complete definitions of formula and set satisfiability, unsatisfiability, tautology, contingency and semantic entailment retained, together with all four classification exercises, five semantic facts, entailment/unsatisfiability equivalence, semantic deduction theorem, and proof exercises. Native witnesses support the core notions; every quantified condition follows OpenLogic."
+    },
+    "OLP-0063": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Complete proof-systems chapter driver retained, including the FOL-dependent chapter identity, editorial reuse instruction and all five survey imports in source order."
+    },
+    "OLP-0064": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PARADOX"
+      ],
+      "scope": "Complete overview retained: the syntax/semantics division, mechanical checkability, axiomatic systems, natural deduction, tableaux, sequent calculus and resolution, theorem and derivability notation, both soundness/completeness equivalences, historical completeness attribution, and consistency as the syntactic counterpart of satisfiability."
+    },
+    "OLP-0065": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Complete sequent-calculus survey retained: two-sided sequents, initial sequents, structural and logical rules, derivability and theorem conditions, unchanged proof tree, empty-right inconsistency and weakening, and historical assessment. OLPF-001 separates the independent left and right sequence lengths in the defining display."
+    },
+    "OLP-0066": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROP-SYNTAX",
+        "TERM-PARADOX",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Complete natural-deduction survey retained: cases, indirect and conditional proof, introduction and elimination rules, the tree/root/leaf orientation, temporary assumptions and discharge, derivability and theorem conditions, unchanged proof tree, falsity inconsistency, historical attribution and proof-theoretic semantics."
+    },
+    "OLP-0067": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROP-SEMANTICS",
+        "TERM-LOGIC-FORMS",
+        "TERM-PARADOX"
+      ],
+      "scope": "Complete tableau survey retained: signed formulas, downward branching, paired truth/falsity rules, closure, the finite-premise derivability condition, unchanged example tree, inconsistency, systematic model extraction and the relation to upside-down sequent derivations. OLPF-002 restores the false-conjunction rule label to the connective argument used by parallel rules."
+    },
+    "OLP-0068": {
+      "batch_id": "PS-B009-PROOF-SYSTEMS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-AXIOM",
+        "TERM-PROP-SYNTAX",
+        "TERM-PARADOX"
+      ],
+      "scope": "Complete axiomatic-derivation survey retained: three justification cases, axiom schemas and primitive-connective dependence, modus ponens, derivability and theorem conditions, the exact three-line example and its role substitutions, explosion from falsity, historical development and practical tradeoffs."
+    },
+    "OLP-0069": {
+      "batch_id": "PS-B010-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Complete sequent-calculus chapter driver retained: conditional first-order/propositional identity, Gentzen LK description, need for more examples and exercises, exact prfLK tag, every conditional branch, all fourteen imports and the chapter hook in source order."
+    },
+    "OLP-0070": {
+      "batch_id": "PS-B010-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-FINITE",
+        "TERM-STRING"
+      ],
+      "scope": "Complete definitions and explanations retained: finite antecedent/succedent sequences, intuitive truth condition, both empty-side cases, validity, left/right append and concatenation, all tag-conditioned initial sequents, derivation-tree condition and the logical/structural rule split."
+    },
+    "OLP-0071": {
+      "batch_id": "PS-B010-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-PROP-SYNTAX"
+      ],
+      "scope": "All propositional sequent-rule headings and every left/right proof tree for negation, conjunction, disjunction and conditional retained byte-for-byte in mathematical content, including branch arities, contexts, order and rule labels."
+    },
+    "OLP-0072": {
+      "batch_id": "PS-B010-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All four quantifier rules retained with closed-term and eigenvariable conditions, the historical-name footnote, substitution expansion, partial-occurrence replacement example, forbidden universal inference and both invalid proof trees showing why freshness is necessary for soundness."
+    },
+    "OLP-0073": {
+      "batch_id": "PS-B010-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES"
+      ],
+      "scope": "Complete structural-rule motivation and exact left/right weakening, contraction and exchange trees retained, together with the double-line convention and the cut rule with its reuse-and-combination role."
     }
   },
   "semantic_review": [
@@ -405,6 +1506,540 @@
       "passage": "operation orientation and transitive closure",
       "reverse_paraphrase": "Inverse swaps coordinates; R relative-product S follows R then S; restriction intersects A squared; image selects second coordinates reachable from an A-member. Positive-length iteration of integer successor gives less-than, and reflexive iteration gives less-than-or-equal.",
       "finding": "All indices, domain restrictions and existential quantifiers retained. The source reuses R plus for a different closure in the previous section; contextual notation preserved and documented."
+    },
+    {
+      "unit_id": "OLP-0020",
+      "passage": "driver coverage",
+      "reverse_paraphrase": "Functions driver contains six active sections, preserves original order and commented optional import.",
+      "finding": "No missing or newly activated section."
+    },
+    {
+      "unit_id": "OLP-0021",
+      "passage": "domain, codomain, range and extensionality",
+      "reverse_paraphrase": "A function assigns exactly one value in B to each input in A. Its attained values may be a proper subset of B. Different recipes produce the same function when all outputs agree and domain/codomain coincide. Cases must be exhaustive and exclusive.",
+      "finding": "Successor misses zero; multiplication attains all Nat. At-most/at-least distinctions not substituted. OLFUN-002 uses nonnegative principal root on Nat; OLFUN-003 removes the inconsistent prose variable. Both corrections and the unchanged formulas are explicitly recorded."
+    },
+    {
+      "unit_id": "OLP-0022",
+      "passage": "three types and four examples",
+      "reverse_paraphrase": "Surjectivity requires every target value at least once. Injectivity forbids different inputs sharing a value and need not cover B. Bijection is both. Constant 1 is neither, identity both, successor injective only, parity-halving map surjective only.",
+      "finding": "Definitions and examples agree with source Nat including zero; exact upstream terminology tokens preserved in captions and prose."
+    },
+    {
+      "unit_id": "OLP-0023",
+      "passage": "graphs and restriction",
+      "reverse_paraphrase": "Single-valuedness plus an output for each input makes a relation between A and B the graph of a total function. Restricting f to C keeps all its outputs on C and leaves B as codomain. The image of C contains attained values, and image of the domain is the range.",
+      "finding": "Both conditions, both conditional philosophical branches and restriction formula retained. OLFUN-004 repairs the graph phrase. OLFUN-005 qualifies the relation-restriction analogy and provides the counterexample in the reader note."
+    },
+    {
+      "unit_id": "OLP-0024",
+      "passage": "left/right inverses and choice",
+      "reverse_paraphrase": "Left inverse undoes f on A, right inverse is undone by f on B. For a nonempty domain, injection gives unique preimages on the range and an arbitrary domain value handles other target points. Surjection gives nonempty fibers, and simultaneously selecting representatives generally uses Choice. Bijections have unique preimages and a unique two-sided inverse.",
+      "finding": "OLFUN-001 repairs the theorem with a nonempty-domain condition and adjacent note; the reader note records the exact condition A nonempty or B empty and the empty-domain counterexample. All Choice footnote exceptions and branches remain. Last proposition asserts at most one inverse, not existence for every function."
+    },
+    {
+      "unit_id": "OLP-0025",
+      "passage": "order and composability",
+      "reverse_paraphrase": "For g composed with f, evaluate f first, then g; f range must lie in g domain. With f(x)=x+1 and g(x)=2x, composition is 2(x+1). Graph composition uses Rf relative product Rg.",
+      "finding": "Macro arguments and noncommuting example retained; all three exercises and active/absent-label branches translated."
+    },
+    {
+      "unit_id": "OLP-0026",
+      "passage": "partial existence and actual domain",
+      "reverse_paraphrase": "Each ambient input has zero or one output. The domain comprises just the inputs where defined. A partial graph needs uniqueness, and seriality supplies existence everywhere. The reciprocal example is undefined only at zero. The inverse exercise claims identities only on actual domain and range.",
+      "finding": "No totality smuggled into partial definition; serial condition and all defined/undefined notation retained."
+    },
+    {
+      "unit_id": "OLP-0027",
+      "passage": "editorial and alternative definitions",
+      "reverse_paraphrase": "The full chapter contains elementary listing/surjection treatments and more abstract bijections with Nat or an initial segment. The alternative sections are attributed to Tim Button and all source imports remain.",
+      "finding": "No editorial prose discarded. Future renderer must include driver body and label alternatives coherently; current three-chapter reader does not include this unfinished chapter."
+    },
+    {
+      "unit_id": "OLP-0028",
+      "passage": "size and infinite lists",
+      "reverse_paraphrase": "Cantor studies actual infinite collections and their sizes. Three distinct elements give a larger finite set than two, but infinite sets also need not all have the same size. Some can be listed with an infinite list and some cannot.",
+      "finding": "Historical scope/date and the surprising uncountability conclusion retained. Enumerable not conflated with finite."
+    },
+    {
+      "unit_id": "OLP-0029",
+      "passage": "finite positions and empty set",
+      "reverse_paraphrase": "An enumeration lists each element at a finite position; it begins, may repeat, and does not place evens after an infinite block of odds. A nonempty finite list induces a PosInt surjection by repeating its last entry. Empty set is enumerable separately.",
+      "finding": "All seven list points and explicit empty cases retained. No invented transfinite list position accepted as an enumeration."
+    },
+    {
+      "unit_id": "OLP-0029",
+      "passage": "shift and duplicate-removal proof",
+      "reverse_paraphrase": "Shift input by one to transfer surjections between PosInt and Nat. Retain each first new value to obtain a bijection from an infinite index set or a finite initial segment. Empty set is again handled separately. Conversely an injection into PosInt characterizes the same enumerable sets.",
+      "finding": "Both implications, bounded intervals and positivity/zero conventions preserved. Choosing least first occurrences need not be computable. Native proof supports concept but its different formula/indexing is not substituted."
+    },
+    {
+      "unit_id": "OLP-0029",
+      "passage": "integer enumeration display",
+      "reverse_paraphrase": "The given ceiling formula yields 0,1,-1,2,-2,3,-3,...; its case definition agrees. The source table header has f(7) but the final row skips its -3 value before the ellipsis.",
+      "finding": "Shared OLSIZ-001 restores -3 in the value row and discloses the repair adjacent to the table. All other table cells and the case definition remain source-exact."
+    },
+    {
+      "unit_id": "OLP-0030",
+      "passage": "diagonal enumeration and finite powers",
+      "reverse_paraphrase": "Each pair appears once in the zero-indexed array. The fixed diagonal ordering lists every pair at a finite index. Replacing one axis by an enumeration of pairs enumerates triples, and repeating the argument handles every finite power. Exercises retain powers and all finite strings over PosInt.",
+      "finding": "All matrix entries and listed pair order match OpenLogic, not the native comparator orientation. Both conditional introduction branches and all exercise references preserved."
+    },
+    {
+      "unit_id": "OLP-0031",
+      "passage": "pairing formula and coding direction",
+      "reverse_paraphrase": "The triangular-number formula sends each ordered pair of naturals to exactly one natural and is the inverse of the preceding zig-zag enumeration. A pairing function is injective from a product into Nat; its output is a code for the ordered pair.",
+      "finding": "The exact source formula, sample values, arity, injectivity requirement and encode/decode direction are retained. Native witness formulas are supporting concepts only."
+    },
+    {
+      "unit_id": "OLP-0031",
+      "passage": "finite-complement and truth-function exercises",
+      "reverse_paraphrase": "Cofinite is rendered through its defining property: complement in Nat is finite. Truth functions retain their source type from a finite binary power to binary truth values. The union-of-enumerable-sets exercise and difficulty note are retained.",
+      "finding": "No conventional cofinite or truth-function compound was found in the checked native pages, so both exact surfaces remain provisional and are exposed in the expert-review log."
+    },
+    {
+      "unit_id": "OLP-0031",
+      "passage": "inverse of an arbitrary pairing function",
+      "reverse_paraphrase": "For an injective f from a nonempty product to Nat, the inverse is a bijection from ran(f) onto the product. Choosing one fixed pair supplies values at naturals outside ran(f), producing a total Nat-indexed enumeration. If the product is empty, no such total function exists.",
+      "finding": "PSSIZ-001 corrects the source exercise in the body and discloses the repair adjacent to it. Counterexample to the uncorrected wording: a singleton product encoded as 1 has inverse domain {1}, not all Nat."
+    },
+    {
+      "unit_id": "OLP-0032",
+      "passage": "successive empty-place construction",
+      "reverse_paraphrase": "Place row zero in alternating empty positions, row one in alternating remaining positions, then continue with successive rows. The completed list and two-dimensional table agree: row n occupies positions 2 to the n times an odd number.",
+      "finding": "The prose now identifies the second row-zero pair as (0,1), matching the frozen table, and says rows 2,3,... rather than repeating row 2. Both repairs are adjacent and carry stable IDs."
+    },
+    {
+      "unit_id": "OLP-0032",
+      "passage": "alternative pairing formulas",
+      "reverse_paraphrase": "The one-based position of (n,m) is 2^n(2m+1); subtracting one yields the displayed total pairing h into Nat. The examples evaluate to 0, 9 and 51. The prime-power formula j is injective but not surjective and therefore has only a partial inverse.",
+      "finding": "Every source formula and numerical table cell is preserved except the two explicitly logged prose-coordinate defects. Exponent, power, odd number, injection, surjection and partial inverse remain distinct."
+    },
+    {
+      "unit_id": "OLP-0033",
+      "passage": "binary-sequence diagonal argument",
+      "reverse_paraphrase": "Assume every infinite binary sequence is listed as s_1,s_2,... . Define the n-th value of a new sequence by flipping s_n(n). The new sequence is binary but differs from row k at coordinate k for every k, contradicting completeness of the list.",
+      "finding": "The case definition, equivalent 1-s_n(n) formula, array, contradiction step and distinction between an arbitrary infinite list and a list of all sequences are all retained."
+    },
+    {
+      "unit_id": "OLP-0033",
+      "passage": "power-set diagonal argument",
+      "reverse_paraphrase": "For any list Z_1,Z_2,... of subsets of PosInt, define Z-bar to contain n exactly when n is absent from Z_n. Then Z-bar differs from Z_k on member k for every k and cannot be listed.",
+      "finding": "Membership and nonmembership directions, extensional inequality, the illustrative gap array and the two follow-up diagonal exercises are retained. The proof does not claim that every diagonal argument requires a literal array."
+    },
+    {
+      "unit_id": "OLP-0034",
+      "passage": "direction of enumeration reduction",
+      "reverse_paraphrase": "To reduce enumeration of B to enumeration of A, construct a surjection from A to B: applying it termwise to any enumeration of A yields one of B. Thus non-enumerability of B implies non-enumerability of A. A surjection in the reverse direction proves no such claim.",
+      "finding": "The direction is stated three ways, including the finite-B counterexample. The injection exercise is retained as the equivalent contrapositive construction."
+    },
+    {
+      "unit_id": "OLP-0034",
+      "passage": "subsets as binary sequences",
+      "reverse_paraphrase": "Map each subset Z of PosInt to the binary sequence whose n-th bit is one exactly when n belongs to Z. Every binary sequence determines such a subset, so this map is surjective and an enumeration of the power set would enumerate all binary sequences.",
+      "finding": "Shared OLSIZ-004 replaces the unbound source subscript by one locally bound output name throughout; empty, even-number and full-set examples retain their exact binary strings."
+    },
+    {
+      "unit_id": "OLP-0034",
+      "passage": "invalid finite-string counterexample",
+      "reverse_paraphrase": "The source intends a non-surjective map from PosInt into infinite binary sequences, but its displayed value has only n zeros and is finite. Appending an infinite tail of ones gives a valid family and preserves the direction lesson.",
+      "finding": "Shared OLSIZ-005 repairs the displayed body to contain n initial zeros followed by infinitely many ones and discloses the correction adjacent to it."
+    },
+    {
+      "unit_id": "OLP-0035",
+      "passage": "equinumerosity as equivalence",
+      "reverse_paraphrase": "A and B are equinumerous exactly when a bijection A to B exists. Identity proves reflexivity, the inverse of a bijection proves symmetry, and composition of bijections proves transitivity.",
+      "finding": "All three laws, maps, directions and cardinal-equality formulas are retained. The direct native theorem was visually inspected, but OpenLogic controls its composition convention."
+    },
+    {
+      "unit_id": "OLP-0035",
+      "passage": "enumerability invariant under bijection",
+      "reverse_paraphrase": "Given a bijection f:A to B, compose an enumeration of A with f to enumerate B; use f inverse for the converse. Both the surjective PosInt definition and the alternative Nat/initial-segment bijection definition explicitly handle the empty set.",
+      "finding": "The empty case requires surjectivity of f, not the later enumeration map g. Both erroneous source occurrences are corrected to f under one stable OLSIZ-006 action."
+    },
+    {
+      "unit_id": "OLP-0036",
+      "passage": "cardinal comparison direction",
+      "reverse_paraphrase": "A is no larger than B exactly when an injection goes from A into B. A is strictly smaller when such an injection exists but no bijection does. Reflexivity/transitivity and the contrast with symmetry/irreflexivity remain explicit.",
+      "finding": "Native page 89 directly supports the direction. Cardinal comparison is not treated as subset inclusion, and all cardle/cardless/cardneq formulas are preserved."
+    },
+    {
+      "unit_id": "OLP-0036",
+      "passage": "Cantor theorem",
+      "reverse_paraphrase": "Singletons inject A into its power set. For any g:A to Pow(A), the diagonal subset contains exactly the x absent from g(x), so it differs from every g(x); therefore no surjection or bijection exists and A is strictly smaller.",
+      "finding": "Both slow and reductio proof branches, the comparison with earlier diagonal proofs and the Russell-paradox cross-reference are retained. Native page 144 independently matches the theorem and diagonal construction."
+    },
+    {
+      "unit_id": "OLP-0036",
+      "passage": "quantifier domain and choice dependency",
+      "reverse_paraphrase": "The slow proof must establish the diagonal disagreement for every x in A, not merely every x already in the diagonal subset. Separately, nonenumerable implies Nat is strictly smaller only when every infinite set contains a countably infinite subset, a choice/well-orderability assumption.",
+      "finding": "OLSIZ-007 corrects the quantifier domain in the body. PSSIZ-004 leaves the source characterization intact but makes its set-theoretic dependency explicit; neither note changes Cantor’s theorem."
+    },
+    {
+      "unit_id": "OLP-0037",
+      "passage": "Schroder-Bernstein statement and deferred proof",
+      "reverse_paraphrase": "If A injects into B and B injects into A, then A and B are equinumerous. This justifies cardinal comparison and often replaces construction of one difficult bijection by two easier injections.",
+      "finding": "The theorem is stated without pretending the current source section proves it. The conditional later-proof reference, trust instruction, history citation and attribution distinction between Cantor’s statement and later proofs are all retained."
+    },
+    {
+      "unit_id": "OLP-0038",
+      "passage": "set-theoretic enumeration alternative",
+      "reverse_paraphrase": "An enumeration is a bijection with range A and domain either Nat or a finite initial segment. Empty is declared enumerable separately. This alternative is intentionally stricter in form than the earlier repeating PosInt-surjection definition but extension/restriction arguments make their classes coincide.",
+      "finding": "The editorial conflict warning, zero-based convention footnote, formal empty clause, bijection/surjection/injection exercises and every repeated example are retained."
+    },
+    {
+      "unit_id": "OLP-0038",
+      "passage": "integer and parity enumerations",
+      "reverse_paraphrase": "Identity enumerates Nat, successor enumerates positive naturals, 2n and 2n+1 enumerate evens and odds as their ranges, and the ceiling formula alternates 0,-1,1,-2,2,-3,3,... . The case formula agrees with the table.",
+      "finding": "All table entries, function domains, union exercises and induction quantifier n are preserved. This alternative intentionally orders negative before positive after zero, unlike the earlier section’s other valid enumeration."
+    },
+    {
+      "unit_id": "OLP-0039",
+      "passage": "zero-indexed binary diagonal",
+      "reverse_paraphrase": "For any enumeration s_0,s_1,... of binary strings, s_n(m) is the m-th digit of row/string n. Flip diagonal digit s_n(n) to define d. Then d differs from row n at coordinate n and is omitted, so no enumeration covers all binary strings.",
+      "finding": "OLSIZ-008 repairs the source’s reversed verbal index roles and OLSIZ-009 repairs its repeated 1-to-0 instruction. The zero-indexed array and case definition independently fix both intended readings."
+    },
+    {
+      "unit_id": "OLP-0039",
+      "passage": "Nat power-set alternative",
+      "reverse_paraphrase": "For every list N_0,N_1,... of subsets of Nat, let D contain n exactly when N_n omits n. D differs from every N_n at n. The following array depicts membership gaps but the proof does not depend on an actual table.",
+      "finding": "All membership biconditionals, zero-based indices, illustrative set rows, omega-sequence qualification and final function-diagonal exercise are retained."
+    },
+    {
+      "unit_id": "OLP-0040",
+      "passage": "alternative reduction direction",
+      "reverse_paraphrase": "To reduce enumeration of B to enumeration of A, map A surjectively onto B, so the image of any A-enumeration covers B. Therefore, if B is nonenumerable, A is nonenumerable as well; an injection B to A yields the same implication.",
+      "finding": "The direction, contrapositive problem, editorial cross-references and every active exercise are retained. The translated inactive source comments remain inactive."
+    },
+    {
+      "unit_id": "OLP-0040",
+      "passage": "Nat subsets as zero-based binary sequences",
+      "reverse_paraphrase": "Map each subset N of Nat to the binary sequence whose n-th bit is one exactly when n belongs to N. Every binary sequence determines such a subset, so an enumeration of the power set would enumerate all binary sequences.",
+      "finding": "Shared OLSIZ-010 replaces the source’s unbound s_k by one locally bound output name in all three occurrences. The zero-based even-number example begins with one, and all remaining formulas and list entries are unchanged."
+    },
+    {
+      "unit_id": "OLP-0041",
+      "passage": "chapter scope and descriptive title",
+      "reverse_paraphrase": "The chapter constructs number systems inside naive set theory and attributes the material to the named Open Set Theory source. The driver imports integers, rationals, reals, cuts, reflections, detail checking, and the Cauchy construction.",
+      "finding": "Every import and the attribution are retained. The descriptive title avoids pretending that a standalone equivalent of “arithmetization” was found in the checked native sources; the choice is exposed for asynchronous expert review."
+    },
+    {
+      "unit_id": "OLP-0042",
+      "passage": "integers as equivalence classes of natural pairs",
+      "reverse_paraphrase": "Represent a formal difference n minus m by the ordered pair (n,m). Declare (a,b) equivalent to (c,d) exactly when a+d=c+b, prove reflexivity, symmetry, and transitivity, and define the integers as the resulting equivalence classes.",
+      "finding": "Both motivating observations, the failure of literal pair equality, every equality in the equivalence proof, and the quotient formula are retained. The native sources support ordered pairs and equivalence properties, while the exact construction remains source-controlled."
+    },
+    {
+      "unit_id": "OLP-0042",
+      "passage": "well-defined arithmetic, order, and natural embedding",
+      "reverse_paraphrase": "Define addition, multiplication, and order on pair classes by the displayed representative formulas. Embed a natural n as the class of (n,0), then verify that addition, multiplication, and order are preserved; the text demonstrates multiplication and assigns the other two.",
+      "finding": "All class representatives, footnote notation, operation formulas, cross-references, the full multiplication calculation, inactive source comments, and the exercise remain unchanged in mathematical content. The later detail-checking section is not pre-emptively claimed as proved here."
+    },
+    {
+      "unit_id": "OLP-0043",
+      "passage": "rationals as equivalence classes of integer pairs",
+      "reverse_paraphrase": "Represent a fraction i over j by an ordered integer pair with nonzero second coordinate. Identify (a,b) and (c,d) exactly when ad=bc, ask the reader to prove equivalence, and define the rationals as the resulting classes.",
+      "finding": "The nonzero-denominator restriction, motivating unequal pairs, cross-multiplication formulas, exercise, and quotient domain are all retained. No denominator-zero representative is admitted."
+    },
+    {
+      "unit_id": "OLP-0043",
+      "passage": "rational operations, order, and integer embedding",
+      "reverse_paraphrase": "Define addition and multiplication by the displayed pair-class formulas. Define r no larger than s when s minus r has a representative with nonnegative numerator and positive denominator, then embed each integer i as the class of (i,1).",
+      "finding": "OLARI-001 flags that the source prose accidentally names r minus s after correctly stating s minus r; the target keeps that source token for formula parity and identifies the correct order from the immediately following equation. All operation and preservation exercises remain."
+    },
+    {
+      "unit_id": "OLP-0044",
+      "passage": "irrationality of square root of two",
+      "reverse_paraphrase": "Reals and rationals are ordered fields, but there are strictly more reals. Assuming square root of two is an irreducible natural-number fraction leads both geometrically to a smaller such fraction and formally to an even numerator and denominator, in either case a contradiction.",
+      "finding": "The theorem, cardinal comparison, attribution, exact colored-square TikZ diagram, descent inequalities, parity derivation, inactive footnote and every formula are retained. Native page 21 independently presents irrationality and parity but its proof is not substituted."
+    },
+    {
+      "unit_id": "OLP-0044",
+      "passage": "least-upper-bound completeness and the rational gap",
+      "reverse_paraphrase": "Every nonempty bounded-above real set should have a least upper bound. Rationals fail: the rationals below square root of two are bounded above but have no least rational upper bound, because square root of two is irrational and rationals are dense around it.",
+      "finding": "The defining property, exact set-builder condition, upper-bound example and continuum motivation are retained. OLARI-002 removes only a stray less-than glyph after the source element token and discloses that repair adjacent to the affected sentence."
+    },
+    {
+      "unit_id": "OLP-0045",
+      "passage": "Dedekind cuts and real order",
+      "reverse_paraphrase": "A real is represented by a nonempty proper lower initial segment of the rationals with no greatest member. Square root of two is represented by its rational lower cut, and cut order is set inclusion.",
+      "finding": "The least-upper/greatest-lower motivation, Dedekind attribution, all three definition clauses, exact square-root cut and inclusion order are retained. The cut label is provisional and explicitly distinguished from a finite enumeration-domain initial segment."
+    },
+    {
+      "unit_id": "OLP-0045",
+      "passage": "completeness of cuts by union",
+      "reverse_paraphrase": "For any nonempty bounded-above set S of cuts, its union is itself a cut, bounds every member of S, and is included in every other upper bound. Therefore the union is the least upper bound.",
+      "finding": "All three cut checks and both least-upper-bound directions are retained. OLARI-003 correctly uses nonemptiness of S, rather than existence of an upper bound, to choose a member cut; the adjacent disclosure records the frozen-source defect."
+    },
+    {
+      "unit_id": "OLP-0045",
+      "passage": "real operations on cuts",
+      "reverse_paraphrase": "Embed rational p as its lower cut, add cuts pointwise, define nonnegative products, define negation from rationals outside a cut, and obtain signed products by cases. Later checks must show that results are cuts and satisfy the desired laws.",
+      "finding": "Every active and inactive formula remains frozen. OLARI-004 identifies the source’s isolated superscript zero notation, and OLARI-005 records that the active cases omit multiplication of zero by a negative cut because the required zero rule survives only as a comment."
+    },
+    {
+      "unit_id": "OLP-0046",
+      "passage": "mathematical achievement versus representational rigor",
+      "reverse_paraphrase": "Completeness isolates the crucial difference between rationals and reals, and Dedekind cuts show that a complete ordered field is coherent. Yet encoding reals as particular sets may add less rigor than recognizing completeness itself, and ordinary proofs immediately abstract away from the nested set encodings.",
+      "finding": "The positive mathematical assessment, early decimal comparison, Cauchy cross-reference, qualification about rigor, nested-set example and every inactive explanatory line are retained. The translation does not turn the author’s reservations into settled doctrine."
+    },
+    {
+      "unit_id": "OLP-0046",
+      "passage": "rival constructions and metaphysical identity",
+      "reverse_paraphrase": "Different but equally successful ordered-pair definitions yield different set objects, so the construction alone cannot nonarbitrarily establish that numbers metaphysically are one chosen family of sets. It also makes natural zero distinct from integer zero and renders literal cross-domain subset claims false.",
+      "finding": "The alternative-pair cross-reference, Benacerraf citation, exact zero-class inequality, Nat-to-Rat subset example, and distinction between treating number theories inside set theory and proving metaphysical identity are all retained."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "passage": "commutative and ordered ring checks",
+      "reverse_paraphrase": "A commutative ring has associative and commutative addition and multiplication, additive and multiplicative identities, additive inverses, and distributivity. Integer class operations satisfy sample associativity, inverse and distributivity calculations; an ordered ring also has a total order compatible with translation and multiplication by nonnegative elements.",
+      "finding": "All eight laws, universal-domain qualification, representative calculations, order footnote, compatibility formulas and exercises are retained. Native page 127 directly supports the three operation-law labels. OLARI-006 records that the source assumes, without first showing, that class operations are independent of representative choice."
+    },
+    {
+      "unit_id": "OLP-0047",
+      "passage": "ordered fields and real-cut operation checks",
+      "reverse_paraphrase": "An ordered field adds a multiplicative inverse for every nonzero element. The text asks for the rationals and reals to form ordered fields, proves that cut addition returns a cut, and proves the proposed square-root-of-two lower set has no maximum via a larger rational q.",
+      "finding": "The inverse axiom, completeness cross-reference, addition-cut proof, deferred operation list, zero-cut exclusion and every inequality are retained. OLARI-007 repairs one missing prose noun; OLARI-008 records the omitted nontriviality condition; OLARI-009 records that subtraction and division are only commented out in the source that later asks readers to use them."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "passage": "Cauchy sequences and equivalence classes",
+      "reverse_paraphrase": "Approximate each real by a rational sequence. A sequence is Cauchy when sufficiently late values are arbitrarily close to one another, and two Cauchy sequences represent the same real when their pointwise difference tends to zero. Reals are the resulting equivalence classes.",
+      "finding": "The decimal examples, oscillating counterexample, quantifier domains, epsilon inequalities, null-difference relation and quotient construction are retained. Native pages 15 and 66 support the historical and limit vocabulary without licensing use of a real limit in the rational-only construction. OLARI-010 corrects “relations” to “classes,” and OLARI-011 exposes the exercise’s unexplained switch from Realequiv to a differently shaped symbol."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "passage": "real operations, order, and ordered-field interpretation",
+      "reverse_paraphrase": "Embed each rational as a constant-sequence class, define addition and multiplication pointwise, call a nonzero class positive when its terms are eventually positive, and order classes by the positivity of their difference. These quotient classes, rather than raw sequences, form an ordered field.",
+      "finding": "Every active and inactive formula is retained except that OLARI-012 corrects the positivity comparison from rational zero to real zero. OLARI-013 corrects the theorem and exercise prose to equivalence classes because unquotiented Cauchy sequences do not form the claimed field."
+    },
+    {
+      "unit_id": "OLP-0048",
+      "passage": "least-upper-bound construction by rational bisection",
+      "reverse_paraphrase": "Choose rational lower and upper endpoints, repeatedly bisect them according to whether the midpoint is an upper bound, and obtain decreasing and increasing Cauchy sequences whose difference tends to zero. Their common class is an upper bound and no smaller class can be one.",
+      "finding": "The recursive cases, halving argument, reductio for upper-boundedness and minimality argument are retained. OLARI-014 records that the source moves from an arbitrary real bound and member to rational endpoints without proving the Archimedean/density fact needed for that step."
+    },
+    {
+      "unit_id": "OLP-0049",
+      "passage": "chapter boundary and import order",
+      "reverse_paraphrase": "The chapter treats infinite sets through Hilbert’s hotel, Dedekind algebras, induction, Dedekind’s existence argument, and a closure proof of Schroeder-Bernstein.",
+      "finding": "All five imports and the source attribution are retained in their original order."
+    },
+    {
+      "unit_id": "OLP-0050",
+      "passage": "Hilbert hotel reallocation and Dedekind infinitude",
+      "reverse_paraphrase": "A finite full hotel cannot free a room by an injective reassignment, while a countably infinite full hotel can move room n to n+1 and free room one. Abstractly, A is Dedekind infinite when it injects into a proper subset of itself.",
+      "finding": "The finite contrast, every numbered room and arrow in the unchanged diagram, the translated historical quotation, missing-range point o, and injection formula are retained. The native Dedekind-finiteness witness supports the proper-subset cardinal idea without replacing the definition."
+    },
+    {
+      "unit_id": "OLP-0051",
+      "passage": "least closed set and closure lemma",
+      "reverse_paraphrase": "The closure of o under f is the intersection of all f-closed sets containing o. It contains o, is f-closed, and is included in every f-closed set containing o.",
+      "finding": "The defining intersection and all three proof directions are retained. OLINF-001 records that the generic wording needs f to act as an endofunction on an ambient domain; every later use does satisfy that intended situation."
+    },
+    {
+      "unit_id": "OLP-0051",
+      "passage": "Dedekind algebra from a Dedekind-infinite set",
+      "reverse_paraphrase": "A Dedekind algebra has an initial point outside the range of an injective endofunction and is the closure of that point. Restricting an injection witnessing infinitude to this closure produces such an algebra.",
+      "finding": "The range exclusion, injection, closure equality, restriction, both inclusions and dependence on the three closure properties are preserved with all formulas unchanged."
+    },
+    {
+      "unit_id": "OLP-0052",
+      "passage": "set and formula forms of induction",
+      "reverse_paraphrase": "If a set contains the initial element and is preserved by successor on members of N, it contains N. Taking the set defined by a formula yields the usual induction schema, including arbitrary displayed parameters.",
+      "finding": "Base, successor step, N-intersection restriction, closure proof, defining set, parameter explanation, fully quantified schema and cross-references are all retained. Native page 17 independently supports the same base/step pattern."
+    },
+    {
+      "unit_id": "OLP-0052",
+      "passage": "recursive arithmetic on a Dedekind algebra",
+      "reverse_paraphrase": "After recursive definition is justified, addition, multiplication and exponentiation can be fixed by their zero and successor equations on any Dedekind algebra.",
+      "finding": "The warning that this is nontrivial, later justification references, and all six recursion equations are retained. Recursive definition remains distinct from proof by induction."
+    },
+    {
+      "unit_id": "OLP-0053",
+      "passage": "structural surrogate versus metaphysical identity",
+      "reverse_paraphrase": "The chapter constructs no uniquely identified natural-number objects. Any Dedekind algebra has the required structure, and all such algebras are isomorphic, so the achievement is structural and conditional rather than a metaphysical discovery.",
+      "finding": "The comparison with cuts, isomorphism attribution, structuralist remark, embedding claim and qualification that naive set theory remains informal are retained without endorsing the position."
+    },
+    {
+      "unit_id": "OLP-0053",
+      "passage": "Dedekind existence argument and its two objections",
+      "reverse_paraphrase": "Dedekind maps each possible object of thought to the further thought that it can be thought, but the argument uses merely possible psychological objects and does not show that their plurality forms one set. Naive set construction therefore needs explicit existence principles.",
+      "finding": "Both translated quotations, the conditional dependency on a Dedekind-infinite set, the psychological and plurality objections, totality/set distinction, Russell warning and final transition are retained. The criticism is presented as source argument, not native-canon fact."
+    },
+    {
+      "unit_id": "OLP-0054",
+      "passage": "closure squeeze helper",
+      "reverse_paraphrase": "When A is included in B, B in C, and A is equinumerous with C, close C minus B under a bijection from C to A; use the bijection on the closure and identity elsewhere to biject C with B.",
+      "finding": "The piecewise function, mixed-case separation, two injectivity cases and range proof are retained. OLINF-002 replaces the malformed nested conclusion with A equinumerous with B, which the constructed composition explicitly proves."
+    },
+    {
+      "unit_id": "OLP-0054",
+      "passage": "Schroeder-Bernstein application",
+      "reverse_paraphrase": "The double image g[f[A]] lies inside g[B], which lies inside A, while g after f bijects A with that double image. The helper gives a bijection from A to g[B], and composing with the inverse of g gives a bijection from A to B.",
+      "finding": "All image inclusions, source composition convention, codomain-induced surjectivity, inverse domain and final bijection are retained. The native Cantor-Bernstein page is a comparator proof witness and is not substituted for this closure argument."
+    },
+    {
+      "unit_id": "OLP-0055",
+      "passage": "proof-system reuse under the FOL tag",
+      "reverse_paraphrase": "The propositional part reuses first-order proof-system and completeness material while disabling the FOL-specific predicates, terms and quantifiers and replacing structures with valuations.",
+      "finding": "The false and restored FOL tags, all conditional proof-system imports, tokens and import order are preserved."
+    },
+    {
+      "unit_id": "OLP-0057",
+      "passage": "two-valued truth-functional boundary",
+      "reverse_paraphrase": "The truth value of a compound is fixed entirely by the truth values of its parts. The chapter therefore omits necessity, knowledge, time, truth-value gaps and degrees, and treats only the truth-functional material conditional.",
+      "finding": "All exclusions and the warning that English conditionals are contentious are retained. The regional truth-table witness supports the two values but does not decide the philosophical boundary."
+    },
+    {
+      "unit_id": "OLP-0057",
+      "passage": "inductive syntax to valuation semantics",
+      "reverse_paraphrase": "Formation rules generate uniquely readable formulas; valuations assign values to variables, evaluation extends them to formulas, and satisfaction then supports tautology, entailment and common satisfiability definitions.",
+      "finding": "The dependency chain, displayed notation and universal/existential scopes are all retained."
+    },
+    {
+      "unit_id": "OLP-0058",
+      "passage": "primitive versus defined symbols",
+      "reverse_paraphrase": "Primitive symbols belong to the official language and need separate proof cases. Defined symbols are abbreviations that shorten formulas and proofs, with expansions determined by available tags.",
+      "finding": "Every tag branch and expansion is retained. OLPL-001 removes only the unmatched source parenthesis in the disjunction expansion of the conditional."
+    },
+    {
+      "unit_id": "OLP-0058",
+      "passage": "inductive formula grammar and syntactic identity",
+      "reverse_paraphrase": "Atomic expressions start the construction; connective clauses add formulas and the limit clause excludes everything else. Syntactic identity compares equal-length symbol strings position by position.",
+      "finding": "All formation clauses, the limit clause, stage construction and concatenation example are retained."
+    },
+    {
+      "unit_id": "OLP-0059",
+      "passage": "formula induction and unique readability",
+      "reverse_paraphrase": "A property containing the atomic formulas and preserved by every connective holds for all formulas. Balanced parentheses and the absence of formula proper prefixes then support unique parsing.",
+      "finding": "The least-class proof, every connective case, prefix dependency and inductive contradiction are retained."
+    },
+    {
+      "unit_id": "OLP-0059",
+      "passage": "uniform and simultaneous substitution",
+      "reverse_paraphrase": "Uniform substitution replaces every occurrence of one propositional variable by one formula; simultaneous substitution replaces a listed family at once.",
+      "finding": "The argument order, occurrence requirement, simultaneous notation, five examples and rigorous-definition exercise are retained."
+    },
+    {
+      "unit_id": "OLP-0060",
+      "passage": "equivalence of formula formation methods",
+      "reverse_paraphrase": "Every inductively generated formula has a finite formation sequence. Conversely, strong induction on sequence length and the initial-subsequence lemma show that every final string of such a sequence is a formula.",
+      "finding": "Both directions, irrelevant-entry examples, indices and strict inequalities are retained. OLPL-002 replaces the lone semantic-equivalence symbol with syntactic identity in the converse proof."
+    },
+    {
+      "unit_id": "OLP-0061",
+      "passage": "valuation, evaluation and local determination",
+      "reverse_paraphrase": "A valuation assigns truth values only to propositional variables. Recursive evaluation extends it to every formula, and a formula’s value depends only on variables that occur in that formula.",
+      "finding": "All truth conditions and the complete displayed tables are retained. OLPL-003 makes the local determination antecedent refer consistently to the fixed formula in the theorem."
+    },
+    {
+      "unit_id": "OLP-0061",
+      "passage": "inductive satisfaction and evaluation equivalence",
+      "reverse_paraphrase": "Satisfaction follows the same truth conditions recursively, extends pointwise to sets, and holds for a formula exactly when its evaluated truth value is true.",
+      "finding": "Every positive and negative satisfaction clause, both-inclusive disjunctions and the final equivalence are retained."
+    },
+    {
+      "unit_id": "OLP-0062",
+      "passage": "semantic notions and their consequences",
+      "reverse_paraphrase": "Existence of a satisfying valuation gives satisfiability, universality gives tautology, and truth preservation from all jointly satisfied premises gives entailment. These definitions yield modus ponens, monotonicity, cut, the unsatisfiability test and the semantic deduction theorem.",
+      "finding": "All quantifiers, premise-set operations, four test formulas, five listed facts and later equivalences are retained."
+    },
+    {
+      "unit_id": "OLP-0063",
+      "passage": "conditional chapter identity and survey imports",
+      "reverse_paraphrase": "The same survey chapter can serve first-order or propositional logic, with its identifier selected by the FOL tag and each proof-system survey imported independently.",
+      "finding": "Both conditional identifiers, the editorial reuse instruction and all five imports are retained."
+    },
+    {
+      "unit_id": "OLP-0064",
+      "passage": "syntactic derivations versus semantic consequence",
+      "reverse_paraphrase": "A derivation is a finite syntactic object whose correctness is mechanically checkable. Soundness requires derivability to imply entailment; completeness requires entailment to imply derivability.",
+      "finding": "The two displayed theorem/entailment biconditionals and both named directions are retained without reversal."
+    },
+    {
+      "unit_id": "OLP-0064",
+      "passage": "consistency and satisfiability correspondence",
+      "reverse_paraphrase": "A set is inconsistent when everything is derivable from it. Desired proof systems make syntactic consistency coincide with semantic satisfiability; the two directions correspond to completeness and soundness.",
+      "finding": "Explosion, the minimal-usefulness qualification, both directions and the classical-equivalence claim are retained."
+    },
+    {
+      "unit_id": "OLP-0065",
+      "passage": "two-sided sequent syntax and derivability",
+      "reverse_paraphrase": "A sequent pairs independently finite left and right sentence sequences. A derivation is a tree from initial sequents through rules, and Gamma proves A when a finite premise sequence from Gamma appears on the left of a root sequent with A on the right.",
+      "finding": "OLPF-001 changes only the right terminal index from m to n so the displayed syntax matches the immediately stated independence of the two sequences; every rule and root condition is preserved."
+    },
+    {
+      "unit_id": "OLP-0066",
+      "passage": "assumption discharge in natural deduction",
+      "reverse_paraphrase": "Leaf formulas are assumptions. Some rules discharge temporary assumptions, so only the undischarged leaves remain as premises entailing the root conclusion; a theorem discharges them all.",
+      "finding": "Tree orientation, temporary-hypothesis examples, numbered discharge, derivability and theorem conditions are retained."
+    },
+    {
+      "unit_id": "OLP-0067",
+      "passage": "signed-formula branching and closure",
+      "reverse_paraphrase": "A tableau branches downward from signed assumptions. Rules decompose complex signed formulas; a tableau closes when every branch contains matching true and false instances of one formula.",
+      "finding": "All paired-sign conditions and closure quantifiers are retained. OLPF-002 corrects only the false-conjunction rule-label argument, matching the true rule and the example convention."
+    },
+    {
+      "unit_id": "OLP-0067",
+      "passage": "tableau derivability and model extraction",
+      "reverse_paraphrase": "Gamma proves A when some finite subset of Gamma, signed true, together with false A has a closed tableau. If a satisfiable set has an exhaustively expanded open branch, a satisfying structure can be read from it.",
+      "finding": "Finite subset, sign polarity, closure, open-branch qualification and upside-down sequent relation are retained."
+    },
+    {
+      "unit_id": "OLP-0068",
+      "passage": "axiomatic justification and modus ponens",
+      "reverse_paraphrase": "Each derivation line is an axiom instance, a supplied premise, or justified by an inference rule. Modus ponens licenses B only after both A and A implies B occur earlier.",
+      "finding": "All three cases, axiom-schema role, earlier-line condition and displayed connective schemas are retained."
+    },
+    {
+      "unit_id": "OLP-0068",
+      "passage": "three-line axiomatic example and inconsistency",
+      "reverse_paraphrase": "Two axiom instances, with explicit metavariable role changes, justify the first lines and modus ponens yields the third. Inconsistency is derivability of falsity, from which a complete system derives any formula.",
+      "finding": "Every formula, line number, role substitution and dependence on the falsity axiom theorem is retained."
+    },
+    {
+      "unit_id": "OLP-0069",
+      "passage": "conditional chapter identity, editorial scope and import topology",
+      "reverse_paraphrase": "The chapter presents Gentzen LK for classical first-order logic, needs more examples and exercises, is selected as a proof system with the prfLK tag, and conditionally includes first-order-only material while retaining the shared propositional material.",
+      "finding": "Both chapter identifiers, the exact tag, all fourteen imports, all five FOL conditionals and the chapter hook are retained in source order."
+    },
+    {
+      "unit_id": "OLP-0070",
+      "passage": "sequent meaning and empty-side cases",
+      "reverse_paraphrase": "A sequent has finite sentence sequences on both sides and says that truth of every antecedent member yields truth of at least one succedent member. With an empty left side it reduces to the succedent disjunction; with an empty right side it denies the antecedent conjunction.",
+      "finding": "The conjunction-to-disjunction formula, independent terminal indices, both zero-length cases and validity equivalence are retained without reversing either side."
+    },
+    {
+      "unit_id": "OLP-0070",
+      "passage": "initial sequents and derivation-rule taxonomy",
+      "reverse_paraphrase": "Initial sequents have A on both sides, with optional truth and falsity forms. Derivation trees start there and proceed by inference rules divided into logical rules named for the lower formula's main operator and structural rules.",
+      "finding": "Every tag branch, initial form, tree direction, one-or-two-premise condition and left/right logical-rule distinction is retained."
+    },
+    {
+      "unit_id": "OLP-0071",
+      "passage": "propositional left and right rules",
+      "reverse_paraphrase": "Negation moves a formula across the sequent bar with polarity change. Conjunction requires either conjunct on the left and both on the right; disjunction requires both branches on the left and either disjunct on the right; implication splits on the left and places its antecedent on the left and consequent on the right of its single right-rule premise.",
+      "finding": "All ten displayed rule instances preserve source contexts, order, arity, labels and conclusions exactly."
+    },
+    {
+      "unit_id": "OLP-0072",
+      "passage": "quantifier instantiation and eigenvariable conditions",
+      "reverse_paraphrase": "Universal-left and existential-right use any closed term. Universal-right and existential-left use a fresh constant, historically called an eigenvariable, that cannot occur in the lower sequent.",
+      "finding": "The four rule trees, closed-term clauses, two freshness clauses, exact historical-name caveat and lower-sequent scope are retained."
+    },
+    {
+      "unit_id": "OLP-0072",
+      "passage": "substitution examples and soundness counterexample",
+      "reverse_paraphrase": "A(t) abbreviates substitution for free x and the existential-right step may replace some rather than all matching occurrences. Freshness rules out an analogous universal step, and omitting it would derive an invalid existential-to-universal sequent in either rule order.",
+      "finding": "The substitution display, P(t,x) example, forbidden P(a,x) conclusion, upper-sequent reformulation, both starred invalid trees and the final invalidity claim are retained."
+    },
+    {
+      "unit_id": "OLP-0073",
+      "passage": "structural transformations and cut",
+      "reverse_paraphrase": "Weakening adds a formula on either side, contraction merges duplicate formulas, exchange swaps neighboring formulas, and cut combines two derivations by removing a formula occurring on opposite sides.",
+      "finding": "Every left/right rule tree, sequence context, double-line convention and binary cut tree is retained exactly."
     }
   ]
 }

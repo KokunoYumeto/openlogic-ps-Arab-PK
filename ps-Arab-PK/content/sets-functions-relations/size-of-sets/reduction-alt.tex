@@ -1,0 +1,145 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: reduction-alt
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{red-alt}
+
+\olsection{راکمونه}
+
+\begin{editorial}
+  دا برخه په راکمونه د شمېر نۀ وړ والے ثابتوي، او پايلې ئې د
+  \olref[nen-alt]{sec} له پايلو سره سمون خوري۔ يوه بله، لږه
+  تفصيلي بڼه چې د \olref[nen]{sec} له پايلو سره سمون خوري، په
+  \olref[red]{sec} کښې ورکړل شوې ده۔
+\end{editorial}
+
+موږ په يوه قطري استدلال وښودل چې $\Bin^\omega$ !!{nonenumerable}
+دے۔ په ورته قطري استدلال مو وښودل چې $\Pow{\Nat}$
+!!{nonenumerable} دے۔ خو د $\Pow{\Nat}$ د !!{nonenumerable}
+کېدو يوه بله لار دا ده: وښيئ چې \emph{که $\Pow{\Nat}$
+!!{enumerable} وي، نو $\Bin^\omega$ هم !!{enumerable} دے}۔ ځکه
+چې پوهېږو $\Bin^\omega$ !!{nonenumerable} دے، دا به وښيي چې
+$\Pow{\Nat}$ هم همداسې دے۔
+
+دې ته د يوې مسئلې بلې ته \emph{راکمونه} ويل کېږي۔ په دې حالت
+کښې د $\Bin^\omega$ د شمېرلو مسئله د $\Pow{\Nat}$ د شمېرلو
+مسئلې ته راکموو۔ د وروستۍ مسئلې يو حل، يعنې د $\Pow{\Nat}$ يوه
+شمېرنه، به د لومړۍ مسئلې حل، يعنې د $\Bin^\omega$ يوه شمېرنه،
+راکړي۔
+
+د يوه سټ~$B$ د شمېرلو مسئله د يوه سټ~$A$ د شمېرلو مسئلې ته د
+راکمولو دپاره، د~$A$ د يوې شمېرنې د~$B$ په شمېرنه د اړولو يوه
+لار ورکوو۔ د دې تر ټولو اسانه لار د يوې !!a{surjection} تابع
+$f\colon A \to B$ تعريفول دي۔ که $x_1$، $x_2$، \dots{} د~$A$
+شمېرنه وي، نو $f(x_1)$، $f(x_2)$، \dots{} به د~$B$ شمېرنه وي۔
+زموږ په حالت کښې د يوې !!a{surjection} تابع
+$f\colon \Pow{\Nat} \to \Bin^\omega$ په لټه کښې يو۔
+
+\begin{prob}
+وښيئ چې که يوه !!{injective} تابع $g\colon B \to A$ وي او
+$B$~!!{nonenumerable} وي، نو $A$ هم همداسې دے۔ دا په ښودلو
+وکړئ چې څنګه د~$g$ په کارولو د~$A$ يوه شمېرنه د~$B$ په شمېرنه
+اړولے شئ۔
+\end{prob}
+
+\begin{proof}[په راکمونه د {\olref[nen-alt]{thm:nonenum-pownat}} ثبوت]
+فرض کړئ چې $\Pow{\Nat}$ !!{enumerable} وے، او له دې امله د هغه
+يوه شمېرنه $N_{1}$، $N_{2}$، $N_{3}$، \dots وے۔
+
+تابع $f \colon \Pow{\Nat} \to \Bin^\omega$ داسې تعريف کړئ چې
+$f(N)$ هغه تسلسل $s$ وي چې $s(n) = 1$ هله او يوازې هله چې
+$n \in N$ وي، او په بل حالت کښې $s(n) = 0$ وي۔
+\textbf{د ژباړې د نسخې سمون (OLSIZ-010):} په انګرېزي نثر کښې
+د تسلسل بې تړاوه شاخص د خپل سري ورودي سټ له نښې سره بدل شو، څو
+د تابع تعريف روښانه وي۔
+
+دا په څرګند ډول تابع تعريفوي، ځکه کله چې $N \subseteq \Nat$ وي،
+هر $n \in \Nat$ يا د~$N$ يو !!a{element} وي يا نۀ وي۔ د بېلګې
+په ډول، د طبيعي جفتو عددونو سټ
+$2\Nat = \Setabs{2n}{n \in \Nat} = \{0,2, 4, 6, \dots\}$
+تسلسل $1010101\dots$ ته نقشېږي، $\emptyset$ سټ $0000\dots$ ته او پخپله
+سټ $\Nat$، $1111\dots$ ته نقشېږي۔
+
+دا !!{surjective} هم ده: د $0$ګانو او $1$ګانو هر تسلسل د طبيعي
+عددونو له يوه سټ سره سمون خوري، يعنې له هغه سټ سره چې غړي ئې
+هغه طبيعي عددونه دي کوم چې د تسلسل د~$1$ لرونکو مقامونو سره
+سمون خوري۔ په لا دقيقه توګه، که $s \in \Bin^\omega$ وي، نو
+$N \subseteq \Nat$ داسې تعريف کړئ:
+\[
+N = \Setabs{n \in \Nat}{s(n) = 1}
+\]
+بيا $f(N) = s$، لکه چې د~$f$ تعريف ته په کتلو تاييدولے شو۔
+
+اوس دا لړ په پام کښې ونيسئ:
+\[
+f(N_1), f(N_2), f(N_3), \dots
+\]
+ځکه چې $f$ !!{surjective} ده، د $\Bin^\omega$ هر غړے بايد د کوم
+ورودي دپاره د~$f$ د قيمت په توګه راشي، او نو بايد په لړ کښې راشي۔
+له دې امله دا لړ بايد ټول~$\Bin^\omega$ وشمېري۔
+
+نو که $\Pow{\Nat}$ !!{enumerable} وے، $\Bin^\omega$ به
+!!{enumerable} وے۔ خو $\Bin^\omega$ !!{nonenumerable} دے
+(\olref[nen-alt]{thm:nonenum-bin-omega})۔ له دې امله
+$\Pow{\Nat}$ !!{nonenumerable} دے۔
+\end{proof}
+
+%\begin{explain}
+%د راکمونې په لوري کښې ګډوډېدل اسانه دي۔ د بېلګې په ډول، يوه
+%!!a{surjective} تابع $g \colon \Bin^\omega \to X$ دا \emph{نۀ}
+%ثابتوي چې $X$ !!{nonenumerable} دے۔ (تابع $g
+%\colon \Bin^\omega \to \Bin$ په پام کښې ونيسئ چې په
+%$g(s) = s(1)$ تعريف شوې؛ دا تابع د $0$ګانو او $1$ګانو يو تسلسل
+%د هغه لومړي !!{element} ته نقشوي۔ دا پر هدف سټ بشپړه ده، ځکه ځينې
+%تسلسلونه په $0$ او ځينې په $1$ پيلېږي۔ خو $\Bin$ متناهي دے۔)
+%دا هم په ياد ولرئ چې تابع~$f$ بايد پر هدف سټ بشپړه وي، ګنې
+%استدلال مخکښې نۀ ځي: بيا به دا ډاډ نۀ وي چې $f(x_1)$، $f(x_2)$،
+%\dots{} د~$Y$ ټول !!{element}s لري۔ د بېلګې په ډول، تابع
+%$h\colon \Nat \to
+%\Bin^\omega$ په لاندې ډول تعريف کړئ:
+%\[
+%h(n) = \underbrace{000\dots0}_{\text{$n$ $0$ګانې}}
+%\]
+%دا يوه تابع ده، خو $\Nat$ !!{enumerable} دے۔
+%\end{explain}
+
+\begin{prob}\label{sfr:siz:red:prob:nat-nat}
+  په راکمونې استدلال وښيئ چې د ټولو تابعو $f\colon \Nat \to \Nat$
+  سټ~$X$ !!{nonenumerable} دے۔ (لارښوونه: له $X$ څخه
+  ~$\Bin^\omega$ ته يوه پر هدف سټ بشپړه تابع ورکړئ۔)
+\end{prob}
+
+\begin{prob}
+په راکمونې استدلال وښيئ چې د طبيعي عددونو د جوړو د
+\emph{سټونو} سټ، يعنې $\Pow{\Nat \times \Nat}$،
+!!{nonenumerable} دے۔
+\end{prob}
+
+\begin{prob}
+په راکمونې استدلال وښيئ چې $\Nat^\omega$، يعنې د طبيعي عددونو
+د نامتناهي تسلسلونو سټ، !!{nonenumerable} دے۔
+\end{prob}
+
+%\begin{prob}
+%فرض کړئ $P$ له $\Nat$ څخه سټ~$\{0\}$ ته د تابعو سټ دے، او $Q$
+%له مثبتو صحيح عددونو څخه سټ~$\{0\}$ ته د \emph{جزوي} تابعو سټ
+%دے۔ وښيئ چې $P$~!!{enumerable} دے او $Q$ نۀ دے۔ (لارښوونه: د
+%$\Bin^\omega$ د شمېرلو مسئله د~$Q$ شمېرلو ته راکمه کړئ۔)
+%\end{prob}
+
+\begin{prob}
+فرض کړئ $S$ له $\Nat$ څخه سټ~$\{0,1\}$ ته د ټولو
+!!{surjection}s سټ دے؛ يعنې $S$ له ټولو !!{surjection}s
+~$f \colon \Nat \to \Bin$ څخه جوړ دے۔ وښيئ چې $S$
+!!{nonenumerable} دے۔
+\end{prob}
+
+\begin{prob}
+وښيئ چې د ټولو حقيقي عددونو سټ~$\Real$ !!{nonenumerable} دے۔
+\end{prob}
+
+\end{document}

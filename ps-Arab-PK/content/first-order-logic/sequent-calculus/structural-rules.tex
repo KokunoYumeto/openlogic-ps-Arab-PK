@@ -1,0 +1,80 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: structural-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{srl}}
+      {\olfileid{pl}{seq}{srl}}
+
+\olsection{جوړښتي قاعدې}
+
+موږ څو داسې قاعدو ته هم اړتيا لرو چې د يوه سېکوېنټ په کيڼ او ښي
+لوري کښې د !!{sentence}s د بيا ترتيبولو اجازه راکړي۔ ځکه چې منطقي
+قاعدې غواړي هغه !!{sentence}s چې قاعده پرې کار کوي، يا په بشپړ کيڼ
+او يا په بشپړ ښي پاے کښې وي، نو د “تبادلې” داسې قاعدې ته اړتيا
+لرو چې !!{sentence}s سم ځاے ته يوسي۔ کله کله دا هم مهمه وي چې دوه
+يو شان !!{sentence}s سره يو کړو او هر لوري ته !!a{sentence}
+ورزياته کړو۔
+
+\subsection{کمزوري کول}
+
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{انقباض}
+
+\begin{defish}
+\Axiom$ !A, !A, \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{تبادله}
+
+\begin{defish}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !B, \Lambda$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \Gamma \fCenter \Delta, !B, !A, \Lambda$
+\DisplayProof
+\end{defish}
+
+د کمزوري کولو، انقباض او تبادلې د استنتاجونو يوه لړۍ به زياتره د
+استنتاج په دوو کرښو ښوول کېږي۔
+
+لاندې قاعده چې “پرېکون” بلل کېږي، په کره توګه اړينه نۀ ده، خو د
+!!{derivation}s بيا کارول او يو ځاے کول ډېر اسانوي۔
+\begin{defish}
+\[
+\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !A, \Pi \fCenter \Lambda $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\end{defish}
+
+\end{document}

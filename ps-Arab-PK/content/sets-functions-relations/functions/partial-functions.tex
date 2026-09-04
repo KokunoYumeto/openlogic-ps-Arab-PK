@@ -1,0 +1,77 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: partial-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{fun}{par}
+
+\olsection{جزوي تابعې}
+
+\begin{explain}
+کله کله ګټوره وي چې د تابعې په تعريف کښې نرمي راولو، څو د ټولو
+ممکنو ننوتونو دپاره د تابعې د وت تعريف کېدل لازم نۀ وي۔ داسې
+نگاشتونه \emph{جزوي تابعې} بلل کېږي۔
+\end{explain}
+
+\begin{defn}
+\emph{جزوي تابع} $f \colon A \pto B$ داسې نگاشت دے چې د~$A$ له
+هر \psOblique{!!{element}} سره د~$B$ تر يوه زيات !!{element} نۀ
+تړي۔ که $f$ له $x \in A$ سره د~$B$ يو غړے وتړي، وايو چې $f(x)$
+\emph{تعريف شوے} دے، او که داسې نۀ وي، \emph{تعريف نۀ شوے} دے۔
+که $f(x)$ تعريف شوے وي، $f(x) \fdefined$ ليکو؛ کنه،
+$f(x) \fundefined$ ليکو۔ د جزوي تابعې~$f$ \emph{د تعريف ساحه}
+د~$A$ هغه فرعي سټ دے چې تابع پرې تعريف شوې ده؛ يعنې
+$\dom{f} = \Setabs{x \in A}{f(x) \fdefined}$۔
+\end{defn}
+
+\begin{ex}
+هره تابع $f\colon A \to B$ يوه جزوي تابع هم ده۔ هغه جزوي تابعې
+چې پر~$A$ هرځاے تعريف شوې وي---يعنې هغه څه چې تر دې دمه مو
+يوازې تابع بلل---\emph{هرځاے تعريف شوې} تابعې هم بلل کېږي۔
+\end{ex}
+
+\begin{ex}
+جزوي تابع $f \colon \Real \pto \Real$ چې په $f(x) = 1/x$ ورکړل
+شوې، د $x = 0$ دپاره تعريف شوې نۀ ده، او په نورو ټولو ځايونو
+کښې تعريف شوې ده۔
+\end{ex}
+
+\begin{prob}
+د ورکړل شوې $f\colon A \pto B$ دپاره، جزوي تابع $g\colon B \pto
+A$ داسې تعريف کړئ: د هر $y \in B$ دپاره، که يو يوازينے
+$x \in A$ وي چې $f(x) = y$ وي، نو $g(y) = x$؛ کنه،
+$g(y) \fundefined$۔ وښيئ چې که $f$ يو پر يو وي، نو د ټولو
+$x \in \dom{f}$ دپاره $g(f(x)) = x$، او د ټولو $y \in \ran{f}$
+دپاره $f(g(y)) = y$ وي۔
+\end{prob}
+
+\begin{defn}[د جزوي تابعې ګراف]
+فرض کړئ $f\colon A \pto B$ يوه جزوي تابع ده۔ د~$f$ \emph{ګراف}
+هغه اړيکه $R_f \subseteq A \times B$ ده چې داسې تعريف شوې ده:
+\[
+R_f = \Setabs{\tuple{x,y}}{f(x) = y}.
+\]
+\end{defn}
+
+\begin{prop}
+فرض کړئ $R \subseteq A \times B$ دا خاصيت لري چې هرکله $Rxy$
+او $Rxy'$ وي، نو $y = y'$ وي۔ بيا $R$ د هغې جزوي تابعې
+$f\colon A \pto B$ ګراف ده چې داسې تعريف شوې ده: که داسې $y$
+وي چې $Rxy$ وي، نو $f(x) = y$؛ کنه، $f(x) \fundefined$۔ که $R$
+\emph{مسلسله} هم وي، يعنې د هر $x \in A$ دپاره داسې $y \in B$
+وي چې $Rxy$ وي، نو $f$ هرځاے تعريف شوې ده۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ داسې $y$ شته چې $Rxy$ وي۔ که يو بل $y' \neq y$ هم واے
+چې $Rxy'$ واے، پر $R$ لګېدلے شرط به مات شوے و۔ نو که داسې $y$
+شته چې $Rxy$ وي، هغه $y$ يوازينے دے؛ له دې کبله $f$ په سمه
+توګه تعريف شوې ده۔ په ښکاره، $R_f = R$، او که~$R$ مسلسله وي،
+نو $f$ هرځاے تعريف شوې ده۔
+\end{proof}
+
+\end{document}

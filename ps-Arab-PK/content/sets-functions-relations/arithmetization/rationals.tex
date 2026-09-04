@@ -1,0 +1,75 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: rationals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{rat}
+\olsection{له $\Int$ څخه $\Rat$ ته}
+
+همدا اوس مو وليدل چې په ساده سټ نظريه څنګه له طبيعي عددونو څخه
+صحيح عددونه جوړېږي۔ اوس به په ډېرې ورته لارې له صحيح عددونو څخه
+ناطق عددونه جوړول وګورو۔ زموږ لومړنۍ خبرې دا دي:
+\begin{enumerate}
+	\item هر ناطق عدد د $\nicefrac{i}{j}$ په بڼه ليکل کېدے شي،
+	چې $i$ او $j$ دواړه صحيح عددونه وي خو $j$ صفر نۀ وي۔
+	\item په عبارت $\nicefrac{i}{j}$ کښې زېرمه شوي معلومات په هماغه
+	ډول په مرتبه جوړه $\tuple{ i, j}$ کښې زېرمه کېدے شي۔
+\end{enumerate}
+ښکاره لار به دا وي چې ناطق عددونه د $\Int \times
+(\Int \setminus \{0_\Int\})$ څخه د اخيستل شوو مرتبو جوړو \emph{په
+توګه} وګڼو۔ خو لکه مخکښې، دا به لږ ډېر ساده وي، ځکه موږ غواړو
+$\nicefrac{3}{2} = \nicefrac{6}{4}$ وي، خو $\tuple{ 3, 2}\neq
+\tuple{ 6, 4}$۔ په عمومي ډول لاندې خاصيت غواړو:
+\[
+	\nicefrac{a}{b} = \nicefrac{c}{d} \text{ هله او يوازې هله چې } a \times d = b \times c
+\]
+د دې د ترلاسه کولو دپاره پر $\Int \times (\Int \setminus
+\{0_\Int\})$ د هم ارزښتۍ يوه اړيکه داسې تعريفوو:
+\[
+	\tuple{ a, b }\Ratequiv \tuple{ c, d} \text{ هله او يوازې هله چې }a \times d = b \times c
+\]
+بايد وارزوو چې دا د هم ارزښتۍ اړيکه ده۔ دا د $\Intequiv$ حالت ته
+ډېر ورته دے، او موږ ئې د تمرين په توګه پرېږدو۔
+\begin{prob}
+وښيئ چې $\Ratequiv$ د هم ارزښتۍ اړيکه ده۔
+\end{prob}
+خو دا موږ ته د لاندې خبرې اجازه راکوي:
+\begin{defn}
+ناطق عددونه د $\Ratequiv$ له مخې د صحيح عددونو د جوړو د هم ارزښتۍ
+ټولګي دي (چې دويم غړے ئې صفر نۀ وي)۔ يعنې $\Rat =
+\equivclass{(\Int \times (\Int\setminus \{0_\Int\}))}{\Ratequiv}$۔
+\end{defn}
+
+لکه د صحيح عددونو په شان، ځينې بنسټيزې عمليې هم تعريفول غواړو۔
+چې $\equivrep{i,j}{\Ratequiv}$ د $\Ratequiv$ له مخې هغه د هم
+ارزښتۍ ټولګے وي چې $\tuple{i, j}$ ئې يو !!a{element} دے، وايو:
+\begin{align*}
+	\equivrep{a, b}{\Ratequiv} + \equivrep{c, d}{\Ratequiv} &= \equivrep{ad + bc,  bd}{\Ratequiv}\\
+	\equivrep{a, b}{\Ratequiv} \times \equivrep{c, d}{\Ratequiv} &= \equivrep{a  c, b d}{\Ratequiv}.
+\intertext{پر دې ناطقو عددونو د $r \leq s$ د تعريفولو دپاره دا حقيقت کاروو چې
+$r \le s$ هله او يوازې هله چې $s - r$ منفي نۀ وي؛ يعنې $r - s$ د
+$\nicefrac{i}{j}$ په بڼه ليکل کېدے شي چې $i$ نامنفي او $j$~مثبت وي۔
+\textbf{د ژباړې د نسخې سمون (OLARI-001):} په انګرېزي نثر کښې د وروستي توپير ترتيب سرچپه ليکل شوے؛ لاندې معادله د نامنفي توپير سم ترتيب ښيي:}
+	\equivrep{a, b}{\Ratequiv} \leq \equivrep{c, d}{\Ratequiv} &\text{ هله او يوازې هله چې }
+	\equivrep{c, d}{\Ratequiv} - \equivrep{a, b}{\Ratequiv} =
+	\equivrep{i_\Int, j_\Int}{\Ratequiv}
+\end{align*}
+د ځينو $i \in \Nat$ او $0 \neq j \in \Nat$ دپاره۔
+
+بيا بايد وارزوو چې دا تعريفونه لکه څنګه چې \emph{بايد}، هماغسې
+چلېږي؛ او دا کار \olref[check]{sec} ته پرېږدو۔ خو رښتيا هم سم
+چلېږي!{} په پاے کښې صحيح عددونه د ناطقو عددونو \emph{په توګه}
+د کارولو يوه لار غواړو؛ نو د هر $i \in \Int$ دپاره ټاکو چې
+$i_\Rat = \equivrep{i, 1_\Int}{\Ratequiv}$۔ يو ځل بيا په
+\olref[check]{sec} کښې ارزوو چې دا ټول سم چلند کوي۔
+
+\begin{prob}
+وښيئ چې د هر $i, j \in \Int$ دپاره $(i + j)_\Rat = i_\Rat+ j_\Rat$
+او $(i \times j)_\Rat = i_\Rat \times j_\Rat$ او
+$i \leq j \liff i_\Rat \leq j_\Rat$۔
+\end{prob}
+
+\end{document}

@@ -1,0 +1,148 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fseq}
+
+\olsection{جوړښتي لړۍ}
+
+په استقرايي تعريف سره د !!{formula}s تعريفول، او د استقرا له لارې
+د !!{formula}s د خاصيتونو د ثابتولو بشپړوونکې طريقه، ښکلې او اغېزمنه
+لار ده۔ خو کله کله دا هم ګټوره وي چې د !!{formula}s جوړول له بېخه
+پورته، ګام په ګام وڅېړو۔ دلته د \emph{جوړښتي لړۍ} په مفهوم همدا کار
+کوو۔
+
+\begin{defn}[د فارمولونو جوړښتي لړۍ]
+\ollabel{defn:fseq-frm}
+د ژبې~$\Lang L_0$ د نښو د توريزو لړيو يوه متناهي لړۍ
+$\tuple{!A_0,\dotsc,!A_n}$ د $!A$ دپاره \emph{جوړښتي لړۍ} ده که
+$!A \ident !A_n$ وي او د هر $i \leq n$ دپاره يا $!A_i$ اټومي
+فارمول وي، يا داسې $j,k < i$ موجود وي چې له لاندې حالتونو څخه يو
+صدق وکړي:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$۔}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$۔}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$۔}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$۔}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$۔}{}%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+د $\lnot (\Obj p_1 \land \Obj p_0)$ يوه جوړښتي لړۍ ده، او دا هم ده:
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+%
+لکه چې له دويمې بېلګې ښکاري، په جوړښتي لړيو کښې ``بې‌ګټې توکي''
+هم راتلے شي: داسې فارمولونه چې زياتي وي يا په جوړونه کښې ونډه نۀ
+لري۔
+\end{ex}
+
+\begin{prop}
+\ollabel{prop:formed}
+په~$\Frm[L_0]$ کښې هر !!{formula}~$!A$ يوه جوړښتي لړۍ لري۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $!A$ اټومي دے۔ نو لړۍ~$\tuple{!A}$ د~$!A$ جوړښتي لړۍ ده۔
+%
+اوس فرض کړئ چې $!B$ او~$!C$ په ترتيب سره جوړښتي لړۍ
+$\tuple{!B_0,\dotsc,!B_n}$ او $\tuple{!C_0,\dotsc,!C_m}$ لري۔
+%
+\begin{enumerate}
+  \tagitem{prvNot}{که $!A \ident \lnot !B$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvAnd}{که $!A \ident (!B \land !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvOr}{که $!A \ident (!B \lor !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvIf}{که $!A \ident (!B \lif !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvIff}{که $!A \ident (!B \liff !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+\end{enumerate}
+د !!{formula}s دپاره د استقرا د اصل له مخې، هر !!{formula} يوه
+جوړښتي لړۍ لري۔
+\end{proof}
+
+د دې عکس هم ثابتولے شو۔ دا ځکه مهم دے چې ښيي د فارمولونو د تعريف
+زموږ دواړه لارې همارزښته دي: دواړه يو شان پايلې ورکوي۔ دا هم ترې
+معلومېږي چې د جوړښتي لړيو پر اوږدوالي عادي استقرا کارولے شو او د
+فارمولونو په اړه قضيې ثابتولے شو۔
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+فرض کړئ $\tuple{!A_0,\dotsc,!A_n}$ د~$!A_n$ جوړښتي لړۍ ده او
+$k \leq n$ دے۔ نو $\tuple{!A_0,\dotsc,!A_k}$ د~$!A_k$ جوړښتي لړۍ
+ده۔
+\end{lem}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L_0]$ د ژبې~$\Lang L_0$ د نښو د ټولو هغو توريزو لړيو سټ دے
+چې يوه جوړښتي لړۍ لري۔
+\end{thm}
+
+\begin{proof}
+$F$ دې د ژبې~$\Lang L_0$ د نښو د هغو ټولو توريزو لړيو سټ وي چې
+جوړښتي لړۍ لري۔ په \olref[pl][syn][fseq]{prop:formed} کښې مو وليدل
+چې $\Frm[L_0] \subseteq F$؛ اوس ئې عکس ثابتوو۔
+
+فرض کړئ $!A$ يوه جوړښتي لړۍ $\tuple{!A_0,\dotsc,!A_n}$ لري۔ پر~$n$
+د قوي استقرا له لارې ثابتوو چې $!A \in \Frm[L_0]$۔ زموږ استقرايي
+فرض دا دے چې د نښو هره هغه توريزه لړۍ چې د $m < n$ اوږدوالي
+جوړښتي لړۍ لري، په~$\Frm[L_0]$ کښې ده۔ د جوړښتي لړۍ د تعريف له مخې،
+يا $!A_n$ اټومي دے، يا بايد داسې $j,k < n$ موجود وي چې له لاندې
+حالتونو څخه يو صدق وکړي:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_n \ident \lnot !A_j$۔}{}%
+    \tagitem{prvAnd}{$!A_n \ident (!A_j \land !A_k)$۔}{}%
+    \tagitem{prvOr}{$!A_n \ident (!A_j \lor !A_k)$۔}{}%
+    \tagitem{prvIf}{$!A_n \ident (!A_j \lif !A_k)$۔}{}%
+    \tagitem{prvIff}{$!A_n \ident (!A_j \liff !A_k)$۔}{}%
+\end{enumerate}
+اوس حالت په حالت استدلال کوو۔ که $!A_n$ اټومي وي، نو
+$!A_n \in \Frm[L_0]$۔ بل حالت کښې فرض کړئ چې $!A \ident
+(!A_j \land !A_k)$۔ د \olref[pl][syn][fseq]{lem:fseq-init} له مخې،
+$\tuple{!A_0,\dotsc,!A_j}$ او $\tuple{!A_0,\dotsc,!A_k}$ په ترتيب
+سره د $!A_j$ او~$!A_k$ جوړښتي لړۍ دي۔ ځکه چې دا د~$!A$ د جوړښتي
+لړۍ خاصې پيلنۍ فرعي لړۍ دي، د دواړو اوږدوالے له~$n$ څخه لږ دے۔ نو
+د استقرايي فرض له مخې $!A_j$ او~$!A_k$ په~$\Frm[L_0]$ کښې دي؛ او
+بيا د !!a{formula} د تعريف له مخې $(!A_j \land !A_k)$ هم پکې دے۔
+نور حالتونه په ورته استدلال ثابتېږي۔
+\textbf{د ژباړې د نسخې سمون (OLPL-002):} سرچينه په دې يوه کرښه کښې
+د نحوي يوشانوالي د نښې پر ځاے د معنايي هم ارزښت نښه کاروي، حال دا
+چې تعريف، ټول نور حالتونه او ثبوت د توريزو لړيو يوشانوالی غواړي۔
+دلته د هماغه تعريف نښه بېرته کارول شوې ده۔
+\end{proof}
+
+\end{document}

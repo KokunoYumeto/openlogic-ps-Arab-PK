@@ -1,0 +1,163 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: comparing-sizes
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{car}
+
+\olsection{د بېلو اندازو سټونه او د کانتور قضيه}
+
+\begin{explain}
+موږ دا مفکوره په دقيقه وينا کښې وړاندې کړې چې دوه سټونه يوه
+اندازه لري۔ دا مفکوره هم په دقيقه وينا کښې وړاندې کولے شو چې يو
+سټ له بل څخه کوچنے دے۔ زموږ د «له ... څخه کوچنے (يا همشمېره)
+دے» تعريف به د سټونو تر منځ د !!a{bijection} پر ځاے، له لومړي
+سټ څخه دويم ته يوه !!a{injection} وغواړي۔ که داسې تابع وي، د
+لومړي سټ اندازه د دويم سټ له اندازې څخه کوچنۍ يا ورسره مساوي ده۔
+په شهودي ډول، له يوه سټ څخه بل ته !!a{injection} دا ډاډ راکوي
+چې د تابعې د قيمتونو سټ لږ تر لږه د تعريف د ساحې هومره
+!!{element}s لري، ځکه د تعريف د ساحې هېڅ دوه !!{element}s د
+قيمتونو د سټ يوه !!{element} ته نۀ نقشېږي۔
+\end{explain}
+
+\begin{defn}
+$A$ له~$B$ څخه \emph{لوے نۀ دے}، چې $\cardle{A}{B}$ ئې ليکو،
+هله او يوازې هله چې يوه !!a{injection} $f \colon A \to B$ وي۔
+\end{defn}
+
+څرګنده ده چې دا يوه انعکاسي او انتقالي اړيکه ده، خو متناظره نۀ
+ده (دا د تمرين په توګه پرېښوول شوې ده)۔ يوه داسې مفکوره هم
+معرفي کولے شو چې وايي يو سټ له بل څخه (په ټينګه) کوچنے دے۔
+
+\begin{defn}
+$A$ له~$B$ څخه \emph{کوچنے دے}، چې $\cardless{A}{B}$ ئې ليکو،
+هله او يوازې هله چې يوه !!a{injection}~$f\colon A \to B$ وي،
+خو هېڅ !!{bijection}~$g\colon A \to B$ نۀ وي؛ يعنې
+$\cardle{A}{B}$ او $\cardneq{A}{B}$ وي۔
+\end{defn}
+
+څرګنده ده چې دا اړيکه ناانعکاسي او انتقالي ده۔ (دا د تمرين په
+توګه پرېښوول شوې ده۔) په دې نښه ويلے شو چې يو سټ $A$ هله او
+يوازې هله !!{enumerable} دے چې $\cardle{A}{\Nat}$ وي، او $A$
+هله او يوازې هله !!{nonenumerable} دے چې
+$\cardless{\Nat}{A}$ وي۔
+\textbf{د ژباړې د نسخې سرچينيز شرط (PSSIZ-004):} وروستے
+هم‌ارز بيان دا فرض کاروي چې هر نامتناهي سټ د طبيعي عددونو يوه
+يو پر يو کاپي لري؛ دا د انتخاب له اصل پرته په عمومي سټ‌تيورۍ
+کښې نۀ ثابتېږي۔ په دې سره دا بيا ويلے شو:
+\oliflabeldef{sfr:siz:nen-alt:thm:nonenum-pownat}{%
+\olref[sfr][siz][nen-alt]{thm:nonenum-pownat}
+د دې مشاهدې په توګه چې
+$\cardless{\Nat}{\Pow{\Nat}}$}{%
+\olref[sfr][siz][nen]{thm:nonenum-pownat}
+د دې مشاهدې په توګه چې $\cardless{\PosInt}{\Pow{\PosInt}}$}۔ په
+حقيقت کښې، \citet{Cantor1892} ثابته کړه چې دا وروستۍ خبره
+\emph{بشپړه عمومي} ده:
+
+\begin{thm}[کانتور]\ollabel{thm:cantor}
+د هر سټ $A$ دپاره $\cardless{A}{\Pow{A}}$۔
+\end{thm}
+
+\begin{proof}
+نقشه $f(x) = \{x\}$ يوه !!a{injection}
+$f \colon A \to \Pow{A}$ ده، ځکه که $x \neq y$ وي، نو د غړو له
+مخې د برابرۍ په سبب $\{x\} \neq \{y\}$ هم وي، او نو
+$f(x) \neq f(y)$۔ له دې امله $\cardle{A}{\Pow{A}}$ لرو۔
+
+\begin{editorial}
+که \olref[nen]{sec} موجوده وي، تفصيلي ثبوت وړاندې کوو؛ ګنې يو
+چټک ثبوت وړاندې کوو چې د \olref[nen-alt]{sec} سره سمون خوري۔
+\end{editorial}
+
+\oliflabeldef{sfr:siz:nen:sec}{% 
+  اوس به وښيو چې هېڅ !!a{surjective} تابع~$g\colon A \to
+  \Pow{A}$ نۀ شي کېدے، نو يوه !!a{bijective} تابع خو لا پرېږده؛
+  او له دې امله $\cardneq{A}{\Pow{A}}$۔ ځکه فرض کړئ چې
+  $g\colon A \to \Pow{A}$۔ دا چې $g$ بشپړه ده، هر $x \in A$ د
+  يوه فرعي سټ $g(x) \subseteq A$ سره نقشېږي۔ موږ ښودلے شو چې
+  $g$ پر هدف سټ بشپړه نۀ شي کېدے۔ د دې دپاره يو فرعي سټ
+  ~$\overline{A} \subseteq A$ تعريفوو چې د تعريف له مخې د~$g$
+  په قيمتونو سټ کښې نۀ شي راتلے۔ کېږدئ:
+  \[
+  \overline{A} = \Setabs{x \in A}{x \notin g(x)}.
+  \]
+  ځکه چې $g(x)$ د هر $x \in A$ دپاره تعريف شوے، $\overline{A}$
+  په څرګند ډول د~$A$ يو سم تعريف شوے فرعي سټ دے۔ خو دا د~$g$
+  د قيمتونو په سټ کښې نۀ شي راتلے۔ يو خپل سری $x \in A$ ونيسئ؛
+  موږ به وښيو چې $\overline{A} \neq g(x)$۔ که $x \in g(x)$ وي،
+  نو $x \notin g(x)$ نۀ پوره کوي، او د~$\overline{A}$ د تعريف له
+  مخې $x \notin \overline{A}$ لرو۔ که $x \in \overline{A}$ وي،
+  د~$\overline{A}$ تعريفي خاصيت بايد پوره کړي؛ يعنې $x \in A$
+  او $x \notin g(x)$ وي۔ دا چې $x$ خپل سری و، دا ښيي چې د هر
+  $x \in A$ دپاره، $x \in g(x)$ هله او يوازې هله چې
+  $x \notin \overline{A}$، او نو $g(x) \neq \overline{A}$۔
+  \textbf{د ژباړې د نسخې سمون (OLSIZ-007):} انګرېزي ثبوت په
+  دې عمومي پايله کښې ورودي د ټول سټ پر ځاے يوازې قطري فرعي سټ
+  ته محدود کړے و؛ دلته ئې د مخکښې ټاکل شوي خپل سري ورودي ساحه
+  راوګرځول شوه۔ په بله وينا، $\overline{A}$ د~$g$ په قيمتونو
+  سټ کښې نۀ شي راتلے، او دا له دې فرض سره تناقض لري چې~$g$ پر
+  هدف سټ بشپړه ده۔}{اوس يوازې دا ښودل پاتې دي چې
+  $\cardneq{A}{\Pow{A}}$۔ د خلف دپاره فرض کړئ
+  $\cardeq{A}{\Pow{A}}$؛ يعنې کومه !!{bijection}
+  $g \colon A \to \Pow{A}$ شته۔ اوس دا په پام کښې ونيسئ:
+  \[
+    D = \Setabs{x \in A}{x \notin g(x)}
+  \]
+  په ياد ولرئ چې $D \subseteq A$، نو $D \in \Pow{A}$۔ ځکه چې
+  $g$ يوه !!a{bijection} ده، کوم $y \in A$ شته چې $g(y) = D$۔
+  خو اوس لرو:
+  \[
+    y \in g(y) \text{ هله او يوازې هله چې } y \in D \text{ هله او يوازې هله چې } y \notin g(y).
+  \]
+  دا يو تناقض دے؛ نو $\cardneq{A}{\Pow{A}}$۔}{}
+\end{proof}
+
+\begin{explain}
+\oliflabeldef{sfr:siz:nen:thm:nonenum-pownat}{د
+  \olref{thm:cantor} ثبوت د
+  \olref[nen]{thm:nonenum-pownat} له ثبوت سره پرتله کول ګټور دي۔
+  هلته مو وښودل چې د~$\PosInt$ د فرعي سټونو د هر لړ $Z_1$،
+  $Z_2$، \dots دپاره د عددونو يو سټ~$\overline{Z}$ جوړولے شو
+  چې په ډاډه توګه په لړ کښې نۀ وي۔ په لړ کښې نۀ و، ځکه چې د هر
+  $n \in \PosInt$ دپاره، $n \in Z_n$ هله او يوازې هله چې
+  $n \notin \overline{Z}$۔ په دې توګه تل کوم عدد د $Z_n$ او
+  $\overline{Z}$ له يوه څخه !!a{element} وي خو د بل نۀ وي۔ دلته
+  هماغه مفکوره تعقيبوو، خو شاخصونه~$n$ اوس د~$\PosInt$ پر ځاے
+  د~$A$ !!{element}s دي۔ سټ $\overline{A}$ داسې تعريف شوے چې د
+  هر $x \in A$ دپاره له~$g(x)$ څخه بېل وي، ځکه $x \in g(x)$
+  هله او يوازې هله چې $x \notin \overline{A}$۔ بيا هم تل د~$A$
+  يو !!a{element} شته چې له $g(x)$ او $\overline{A}$ څخه د يوه
+  !!a{element} وي خو د بل نۀ وي۔ او لکه څنګه چې له دې امله
+  $\overline{Z}$ په لړ $Z_1$، $Z_2$، \dots کښې نۀ شي راتلے،
+  $\overline{A}$ د~$g$ په قيمتونو سټ کښې نۀ شي راتلے۔}{}
+
+\oliflabeldef{sfr:siz:nen-alt:thm:nonenum-pownat}{د
+  \olref{thm:cantor} ثبوت د
+  \olref[nen-alt]{thm:nonenum-pownat} له ثبوت سره پرتله کول ګټور
+  دي۔ هلته مو وښودل چې د~$\Nat$ د فرعي سټونو د هر لړ $N_0$،
+  $N_1$، $N_2$، \dots دپاره د عددونو يو سټ~$D$ جوړولے شو چې په
+  ډاډه توګه په لړ کښې نۀ وي۔ په لړ کښې نۀ و، ځکه چې د هر
+  $n \in \Nat$ دپاره $n \in N_n$ هله او يوازې هله چې
+  $n \notin D$۔ دلته هماغه مفکوره تعقيبوو، خو شاخصونه~$n$ اوس
+  د~$\Nat$ پر ځاے د~$A$ !!{element}s دي۔ سټ $D$ داسې تعريف
+  شوے چې د هر $x \in A$ دپاره له~$g(x)$ څخه بېل وي، ځکه
+  $x \in g(x)$ هله او يوازې هله چې $x \notin D$۔}{}
+
+دا ثبوت د رسل د پاراډوکس له ثبوت،
+\olref[sfr][set][rus]{thm:russells-paradox}، سره هم د پرتله کولو
+وړ دے۔ په حقيقت کښې، د کانتور قضيه د رسل د خپل پاراډوکس الهام و۔
+\end{explain}
+
+\begin{prob}
+  وښيئ چې د هر سټ~$A$ دپاره هېڅ !!a{injection}
+  $g\colon \Pow{A} \to A$ نۀ شي کېدے۔ لارښوونه: فرض کړئ
+  $g\colon \Pow{A} \to A$ !!{injective} ده۔
+  $D = \Setabs{g(B)}{B \subseteq A \text{ او } g(B) \notin B}$
+  په پام کښې ونيسئ۔ کېږدئ $x = g(D)$۔ د تناقض د راايستلو دپاره
+  دا حقيقت وکاروئ چې $g$ !!{injective} ده۔
+\end{prob}
+
+\end{document}

@@ -1,0 +1,98 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{sem}
+
+\olsection{معنايي مفهومونه}
+
+لاندې معنايي مفهومونه تعريفوو:
+
+\begin{defn} 
+\begin{enumerate}
+\item !!^a{formula}~$!A$ هله \emph{د صدق وړ} دے چې د کوم
+  $\pAssign{v}$ دپاره $\pSat{v}{!A}$ وي؛ او هله \emph{د صدق نۀ وړ}
+  دے چې د هېڅ $\pAssign{v}$ دپاره $\pSat{v}{!A}$ نۀ وي؛
+\item !!^a{formula}~$!A$ هله \emph{تاوتولوژي} ده چې د ټولو
+  !!{valuation}s~$\pAssign{v}$ دپاره $\pSat{v}{!A}$ وي؛
+\item !!^a{formula}~$!A$ هله \emph{اتفاقي} دے چې د صدق وړ وي خو
+  تاوتولوژي نۀ وي؛
+\item که $\Gamma$ د !!{formula}s يو سټ وي، نو $\Gamma \Entails !A$
+  (``$\Gamma$، $!A$ ته استلزام ورکوي'') هله او يوازې هله چې د هر
+  هغه !!{valuation}~$\pAssign{v}$ دپاره $\pSat{v}{!A}$ وي چې
+  $\pSat{v}{\Gamma}$ وي۔
+\item که $\Gamma$ د !!{formula}s يو سټ وي، نو $\Gamma$ هله
+  \emph{د صدق وړ} دے چې داسې !!a{valuation}~$\pAssign{v}$ موجود وي
+  چې $\pSat{v}{\Gamma}$ وي؛ او که داسې نۀ وي، $\Gamma$
+  \emph{د صدق نۀ وړ} دے۔
+\end{enumerate} 
+\end{defn}
+
+\begin{prob} 
+ د لاندې څلورو !!{formula}s په هر يوه کښې وټاکئ چې آيا هغه
+ (الف)~د صدق وړ، (ب)~تاوتولوژي او (ج)~اتفاقي دے۔
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:semanticalfacts} 
+\begin{enumerate} 
+\item $!A$ هله او يوازې هله تاوتولوژي ده چې
+  $\emptyset \Entails !A$ وي؛ 
+\item که $\Gamma \Entails !A$ او $\Gamma \Entails !A \lif !B$ وي،
+  نو $\Gamma \Entails !B$؛
+\item که $\Gamma$ د صدق وړ وي، نو د $\Gamma$ هر متناهي فرعي سټ هم
+  د صدق وړ دے؛ 
+\item \ollabel{def:monotonicity} يو اړخيز زياتوالے: که
+  $\Gamma \subseteq \Delta$ او $\Gamma \Entails !A$ وي، نو
+  $\Delta \Entails !A$ هم؛
+\item \ollabel{def:Cut} تعدي: که $\Gamma \Entails !A$ او
+  $\Delta \cup \{ !A\} \Entails !B$ وي، نو
+  $\Gamma \cup \Delta \Entails !B$۔
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+د \olref[pl][syn][sem]{prop:semanticalfacts} ثبوت ورکړئ۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:entails-unsat}
+  $\Gamma \Entails !A$ هله او يوازې هله چې
+  $\Gamma \cup \{\lnot !A\}$ د صدق نۀ وړ وي۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+د \olref[pl][syn][sem]{prop:entails-unsat} ثبوت ورکړئ۔
+\end{prob}
+
+\begin{thm}[د معنايي استنتاج قضيه]
+  \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$ هله او
+  يوازې هله چې $\Gamma \cup \{!A\} \Entails !B$ وي۔
+\end{thm}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+د \olref[pl][syn][sem]{thm:sem-deduction} ثبوت ورکړئ۔
+\end{prob}
+
+\end{document}

@@ -1,0 +1,112 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: kinds
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{kin}
+\olsection{د تابعو ډولونه}
+
+\begin{explain}
+د تابعو د هغو ځينو ډولونو دپاره چې ډېر ورسره مخ کېږو، د يو ډول
+ډلبندۍ پېژندل به ګټور وي۔
+
+په پيل کښې داسې تابعې په پام کښې نيول غواړو چې د هدف سټ هر
+غړے د تابعې يو قيمت وي۔ دې تابعو ته !!{surjective} ويل کېږي،
+او د \olref{fig:surjective} په شان ئې ښودلے شو۔
+
+\begin{figure}
+  \olasset{assets/diagrams/surjective.tikz}
+  \caption{!!^a{surjective} تابع د هدف سټ هر !!{element} د قيمت په توګه لري۔}
+  \ollabel{fig:surjective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{surjective} تابع]
+تابع $f \colon A \rightarrow B$ هله او يوازې هله \emph{!!{surjective}}
+ده چې $B$ د~$f$ د قيمتونو سټ هم وي؛ يعنې د هر $y \in B$
+دپاره لږ تر لږه يو $x \in A$ وي چې~$f(x) = y$ وي، يا په نښو:
+\[
+  (\forall y \in B)(\exists x \in A)f(x) = y.
+\]
+داسې تابع له $A$ څخه $B$ ته !!a{surjection} بولو۔
+\end{defn}
+
+\begin{explain}
+که ښودل غواړئ چې $f$ يوه !!a{surjection} ده، نو بايد وښيئ چې د~$f$
+د هدف سټ هر څيز د کوم ننوت $x$ دپاره د $f(x)$ قيمت دے۔
+
+پام وکړئ چې هره تابع يوه !!a{surjection} \emph{رامنځته کوي}۔ ځکه،
+د ورکړل شوې تابعې $f \colon A \to B$ دپاره، فرض کړئ
+$f' \colon A \to \ran{f}$ په $f'(x) = f(x)$ تعريف شوې ده۔ ځکه
+چې $\ran{f}$ د $\Setabs{f(x) \in B}{x \in A}$ په توګه \emph{تعريف}
+شوے دے، دا تضمين شوے دے چې تابع $f'$ به !!a{surjection} وي۔
+\end{explain}
+
+\begin{explain}
+اوس، هره تابع هر ممکن ننوت له يوه يوازيني وت سره تړي۔ خو داسې
+تابعې هم شته چې بېل ننوتونه هېڅکله له يو شان وت سره نۀ تړي۔ دې
+تابعو ته !!{injective} ويل کېږي، او د \olref{fig:injective} په شان
+ئې ښودلے شو۔
+\begin{figure}
+  \olasset{assets/diagrams/injective.tikz}
+  \caption{!!^a{injective} تابع هېڅکله دوه بېل ارګومېنټونه له يوه قيمت سره نۀ تړي۔}
+  \ollabel{fig:injective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{injective} تابع]
+تابع $f \colon A \rightarrow B$ هله او يوازې هله \emph{!!{injective}}
+ده چې د هر $y \in B$ دپاره تر يوه زيات داسې $x \in A$ نۀ وي
+چې~$f(x) = y$ وي۔ داسې تابع له $A$ څخه~$B$ ته !!a{injection} بولو۔
+\end{defn}
+
+\begin{explain}
+که ښودل غواړئ چې $f$ يوه !!a{injection} ده، بايد وښيئ چې د~$f$
+د تعريف د ساحې د هر دوو \psOblique{!!{element}s} $x$ او $y$ دپاره،
+که $f(x)=f(y)$ وي، نو $x=y$ وي۔
+\end{explain}
+
+\begin{ex}
+ثابته تابع $f\colon \Nat \to \Nat$ چې په $f(x) = 1$ ورکړل شوې،
+نۀ !!{injective} ده او نۀ !!{surjective}۔
+
+د عينيت تابع $f\colon \Nat \to \Nat$ چې په $f(x) = x$ ورکړل شوې،
+هم !!{injective} ده او هم !!{surjective}۔
+
+د ځايناستي تابع $f \colon \Nat \to \Nat$ چې په $f(x) = x+1$ ورکړل
+شوې، !!{injective} ده خو !!{surjective} نۀ ده۔
+  
+تابع $f \colon \Nat \to \Nat$ چې داسې تعريف شوې ده:
+\[
+  f(x) =
+  \begin{cases}
+    \frac{x}{2} & \text{که $x$ جفت وي} \\
+    \frac{x+1}{2} & \text{که $x$ طاق وي۔}
+  \end{cases}
+\]
+!!{surjective} ده، خو !!{injective} نۀ ده۔
+\end{ex}
+
+\begin{explain}
+ډېر وخت داسې تابعې په پام کښې نيول غواړو چې هم !!{injective} وي
+او هم !!{surjective}۔ دا تابعې !!{bijective} بولو۔ دوې په
+\olref{fig:bijective} کښې ښودل شوې تابعې ته ورته دي۔ !!^{bijection}s
+کله کله \emph{يو پر يو مطابقتونه} هم بلل کېږي، ځکه چې د هدف سټ
+غړي د تعريف د ساحې له غړو سره په يوازيني ډول جوړوي۔
+\begin{figure}
+  \olasset{assets/diagrams/bijective.tikz}
+  \caption{!!^a{bijective} تابع د هدف سټ غړي د تعريف د ساحې له غړو سره په يوازيني ډول جوړوي۔}
+  \ollabel{fig:bijective}
+\end{figure}
+\end{explain}
+
+\begin{defn}[!!^{bijection}]
+تابع $f \colon A \to B$ هله او يوازې هله \emph{!!{bijective}} ده چې
+هم !!{surjective} وي او هم !!{injective}۔ داسې تابع له $A$ څخه~$B$
+ته (يا د $A$ او~$B$ ترمنځ) !!a{bijection} بولو۔
+\end{defn}
+
+\end{document}

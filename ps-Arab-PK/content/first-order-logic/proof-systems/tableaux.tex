@@ -1,0 +1,93 @@
+% Part: first-order-logic
+% Chapter: proof-systems
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{prf}{tab}}
+      {\olfileid{pl}{prf}{tab}}
+
+\olsection{\usetoken{P}{tableau}}
+
+د !!{derivation} ډېر نظامونه د !!{sentence}s له ترتيبونو سره کار
+کوي، خو !!{tableau}s له !!{signed formula}s سره کار کوي۔
+!!^a{signed formula} يوه جوړه ده چې د رښتياوالي له يوې نښې
+($\True$ يا $\False$) او !!a{sentence} څخه جوړه ده:
+\[
+\sFmla{\True}{!A} \text{ يا } \sFmla{\False}{!A}.
+\]
+!!^a{tableau} له هغو !!{signed formula}s څخه جوړ وي چې د لاندې خوا
+ته څانګېدونکې ونه کښې ترتيب شوي وي۔ دا له يو شمېر \emph{فرضونو}
+پيلېږي او په هغو !!{signed formula}s دوام کوي چې د استنتاج د کومې
+قاعدې په پلي کولو تر ځان له پاسه له يوه !!{signed formula}s څخه
+راوتلي وي۔ هره قاعده اجازه راکوي چې د يوې څانګې په پاے کښې يو يا
+څو !!{signed formula}s ورزيات کړو، يا دوه !!{signed formula}s يو د
+بل تر څنګ ورزيات کړو؛ په وروستي حالت کښې څانګه په دوو وېشل کېږي او
+دوه ورزيات شوي !!{signed
+  formula}s د دواړو څانګو سرونه جوړوي۔
+
+پر يوه مرکب !!{signed formula} د قاعدې له پلي کولو څخه داسې
+!!{signed formula}s ورزياتېږي چې سمدستي فرعي-!!{formula}s وي۔ د هرې
+قاعدې يوه جوړه راځي، د دواړو نښو هرې يوې دپاره يوه قاعده۔ مثلاً د
+$\TRule{\True}{\land}$ قاعده پر $\sFmla{\True}{!A \land !B}$ پلې
+کېږي او اجازه راکوي چې د هرې هغې څانګې په پاے کښې دواړه
+!!{signed formula}s $\sFmla{\True}{!A}$ او~$\sFmla{\True}{!B}$
+ورزيات کړو چې $\sFmla{\True}{!A \land !B}$ لري؛ او د
+$\TRule{\False}{\land}$ قاعده اجازه راکوي چې يوه څانګه د
+$\sFmla{\False}{!A}$ او $\sFmla{\False}{!B}$ يو د بل تر څنګ په
+ورزياتولو ووېشو۔
+\textbf{د ژباړې د نسخې سمون (OLPF-002):} په سرچينه کښې د دروغې
+عطف قاعدې دويم ارګومېنټ ټول مرکب فارمول دے، خو د رښتوني عطف موازي
+قاعده او د لاندې بېلګې ټولې قاعدې هلته يوازې نښلوونکے اخلي۔ دلته
+هماغه د عطف نښلوونکے کارول شوے، څو د قاعدې نښه په يو شان بڼه جوړه
+شي۔
+!!^a{tableau} هله تړلے دے چې د هغه هره څانګه د !!{signed formula}s
+سره برابره جوړه $\sFmla{\True}{!A}$ او $\sFmla{\False}{!A}$ ولري۔
+
+پر !!{tableau}s ولاړه $\Proves$ اړيکه داسې تعريفېږي:
+$\Gamma \Proves !A$ هله او يوازې هله چې داسې کوم متناهي سټ
+~$\Gamma_0 = \{!B_1, \dots, !B_n\} \subseteq \Gamma$ موجود وي چې د
+لاندې فرضونو دپاره يو تړلے !!{tableau} موجود وي:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} 
+\]
+مثلاً دا تړلے !!{tableau} ښيي چې $\Proves (!A \land !B) \lif !A$:
+\begin{oltableau}
+  [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A} \land \formula{B}}, just = {\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\formula{A}}, just = {\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}}, just = {\TRule{\True}{\lif}[2]}
+          [\sFmla{\True}{\formula{B}}, just = {\TRule{\True}{\lif}[2]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+يو سټ $\Gamma$ د !!{tableau} په حساب کښې هله ناسازګار دے چې د
+لاندې فرضونو دپاره يو تړلے !!{tableau} موجود وي:
+\[
+\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} 
+\]
+د کوم $!B_i \in \Gamma$ دپاره۔
+
+!!^{tableau}s په ۱۹۵۰مو کلونو کښې اېورټ بېت او ياکو هېنتيکا هر يوه
+په خپلواکه توګه جوړ کړل، او رېمونډ سموليان ساده او عام کړل۔ دا کارول
+ډېر اسانه دي، ځکه چې د !!a{tableau} جوړول ډېره منظمه طريقه ده۔ د
+!!{tableau}s د منظم طبيعت له امله په کمپيوټر کښې هم په اسانۍ پلي
+کېږي۔ خو !!a{tableau} زياتره په سختۍ لوستل کېږي او له ثبوتونو سره ئې
+تړاو کله کله په اسانۍ نۀ ښکاري۔ دا تګلاره هم ډېره عامه ده، او ډېر
+بېل منطقونه د !!{tableau} نظامونه لري۔ !!^{tableau}s له موږ سره د
+هغو !!{structure}s په موندلو کښې هم مرسته کوي چې ورکړل شوي
+!!{sentence}s، يا د هغو سټونه، صادقوي: که سټ د صدق وړ وي، تړلے
+!!{tableau} به و نۀ لري؛ يعنې هر !!{tableau} به يوه پرانيستې څانګه
+ولري۔ په دې شرط چې پر هغې څانګه هره ممکنه قاعده پلې شوې وي،
+صادقوونکے !!{structure} له يوې پرانيستې څانګې څخه ``لوستل کېدے''
+شي۔ له سېکوېنټ حساب سره هم ډېر نږدې تړاو شته: په اصل کښې يو تړلے
+!!{tableau} د سېکوېنټ په حساب کښې يو لنډ شوے !!{derivation} دے چې
+سرچپه ليکل شوے وي۔
+
+\end{document}

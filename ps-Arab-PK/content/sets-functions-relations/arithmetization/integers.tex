@@ -1,0 +1,87 @@
+% Part: sets-functions-relations
+% Chapter: arithmetization
+% Section: From N to Z
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{arith}{int}
+\olsection{له $\Nat$ څخه $\Int$ ته}
+
+دا دوه بنسټيزې خبرې په پام کښې ونيسئ:
+	\begin{enumerate}
+		\item هر صحيح عدد د $n - m$ په بڼه ليکل کېدے شي، چې $n, m \in\Nat$ وي۔
+		\item په عبارت $n - m$ کښې زېرمه شوي معلومات په هماغه ډول په مرتبه جوړه $\tuple{n, m}$ کښې زېرمه کېدے شي۔
+	\end{enumerate}
+موږ لا پوهېږو چې د طبيعي عددونو مرتبې جوړې د $\Nat^2$ !!{element}s دي۔ او دا فرضوو چې په $\Nat$ پوهېږو۔ نو پر دغو دوو خبرو ولاړ يو ساده وړانديز دا دے: \emph{صحيح عددونه دې د طبيعي عددونو د مرتبو جوړو په توګه وګڼو}۔
+
+په حقيقت کښې دا وړانديز ډېر ساده دے۔ ښکاره ده چې غواړو $0- 2 = 4 - 6$ وي۔ خو په څرګند ډول $\tuple{0, 2 }\neq \tuple{4, 6}$ دے۔ نو په ساده ډول نۀ شو ويلے چې $\Nat^2$ د صحيح عددونو سټ دے۔
+
+د مخکښې ستونزې په عمومي کولو، موږ لاندې خاصيت غواړو:
+	$$a - b = c - d \text{ هله او يوازې هله چې }a + d = c + b$$
+(دا بايد څرګنده وي چې صحيح عددونه په همدې ډول \emph{چلېدل} غواړي: يوازې دواړو خواوو ته $b$ او $d$ ورزيات کړئ۔) د دې چلند د يقيني کولو اسانه لار دا ده چې د مرتبو جوړو تر منځ د هم ارزښتۍ يوه اړيکه $\Intequiv$ داسې تعريف کړو:
+$$\tuple{ a, b } \Intequiv \tuple{c, d}\text{ هله او يوازې هله چې }a + d = c + b$$
+اوس بايد وښيو چې دا د هم ارزښتۍ اړيکه ده۔
+\begin{prop} $\Intequiv$ د هم ارزښتۍ اړيکه ده۔
+\end{prop}
+	\begin{proof}
+	بايد وښيو چې $\Intequiv$ انعکاسي، تناظري او انتقالي ده۔
+	
+	\emph{انعکاسيت:} په څرګند ډول $\tuple{a, b} \Intequiv \tuple{a, b}$، ځکه چې $a + b = b + a$۔
+	
+	\emph{تناظر:} فرض کړئ $\tuple{a, b} \Intequiv \tuple{c, d}$، نو $a + d = c + b$۔ بيا $c + b = a + d$، نو $\tuple{c, d} \Intequiv \tuple{a, b}$۔
+	
+	\emph{انتقاليت:} فرض کړئ $\tuple{a, b} \Intequiv \tuple{c, d}\Intequiv \tuple{m, n}$۔ نو $a + d = c + b$ او $c + n = m + d$۔ له دې امله $a + d + c + n = c + b + m + d$، او نو $a + n = m + b$۔ په پايله کښې $\tuple{a, b } \Intequiv \tuple{m, n}$۔		
+\end{proof}
+
+اوس په دې د هم ارزښتۍ اړيکه د هم ارزښتۍ ټولګي اخيستلے شو:
+
+\begin{defn}
+		صحيح عددونه د $\Intequiv$ له مخې د طبيعي عددونو د مرتبو جوړو د هم ارزښتۍ ټولګي دي؛ يعنې $\Int = \equivclass{\Nat^2}{\Intequiv}$۔
+\end{defn}
+
+د دې ټاکلي تعريف په اړه ښايي بېلابېل \emph{فلسفي} غبرګونونه وي۔ خو د هغو غبرګونونو تر څېړلو مخکښې، ښه ده چې ځينې فني جزئيات پر مخ يوسو۔
+
+چې صحيح عددونه مو تعريف کړل، پر هغو به بنسټيزې تابعې او اړيکې هم تعريفول غواړو۔ $\equivrep{m, n}{\Intequiv}$ دې د $\Intequiv$ له مخې هغه د هم ارزښتۍ ټولګے وي چې $\tuple{m, n}$ ئې يو !!a{element} دے۔\footnote{يادونه: په \olref[sfr][rel][eqv]{def:equivalenceclass} کښې د معرفي شوې نښې په کارولو به مو د همدې څيز دپاره $\equivrep{\tuple{m,n}}{\Intequiv}$ ليکل۔ خو هغه لوستل لږ ګران دي۔} يعنې:
+	$$\equivrep{m, n}{\Intequiv} = \Setabs{\tuple{a, b} \in \Nat^2}{\tuple{a, b}\Intequiv \tuple{m, n}}$$
+نو اوس لاندې تعريفونه وړاندې کوو:
+	\begin{align*}
+		\equivrep{a, b}{\Intequiv} + \equivrep{c, d}{\Intequiv} &= \equivrep{a + c, b + d}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \times \equivrep{c, d}{\Intequiv} &= \equivrep{a c + b  d, a  d + b c}{\Intequiv}\\
+		\equivrep{a, b}{\Intequiv} \leq \equivrep{c, d}{\Intequiv} &\text{ هله او يوازې هله چې }a + d \leq b + c
+	\end{align*}	
+(لکه چې دود دے، د اصولو د اسانه لوستلو دپاره `$ab$' د `$(a \times b)$' پر ځاے کاروم۔) اوس بايد ډاډمن شو چې دا تعريفونه لکه څنګه چې \emph{بايد}، هماغسې چلېږي۔ د دې مطلب په تفصيل بيانول او بيا ئې ارزول ډېر اوږد کار دے؛ جزئيات \olref[check]{sec} ته پرېږدو۔ خو لنډه خبره دا ده: هر څه سم کار کوي!
+
+يو وروستے کار پاتې دے۔ موږ صحيح عددونه د طبيعي عددونو په
+کارولو جوړ کړي دي۔ خو د دې معنا به دا وي چې طبيعي عددونه \emph{پخپله
+صحيح عددونه نۀ دي}۔ د دې فلسفي ارزښت ته به په \olref[ref]{sec}
+کښې ورستانۀ شو۔ خو په سوچه فني کچه به يوې داسې لارې ته اړتيا لرو
+چې طبيعي عددونه د صحيح عددونو \emph{په توګه} وکارولے شو۔ مفکوره
+ډېره اسانه ده: د هر $n \in \Nat$ دپاره ټاکو چې
+$n_\Int = \equivrep{n, 0}{\Intequiv}$۔ بايد تاييد کړو چې دا تعريف
+سم چلند کوي؛ يعنې د هر $m, n \in \Nat$ دپاره
+\begin{align*}
+	(m + n)_\Int &= m_\Int + n_\Int\\
+	(m \times n)_\Int &= m_\Int \times n_\Int\\
+	m \leq n &\liff m_\Int \leq n_\Int
+\end{align*}
+خو دا ټول پوره ساده دي۔ د بېلګې په ډول، د دې د ښودلو دپاره چې
+دويم خاصيت سم دے، د طبيعي عددونو له چلنده په ساده ډول کار اخلو او
+لاندې استدلال کوو:
+%\begin{proof}
+%	د طبيعي عددونو له چلنده په کار اخيستلو، په څرګند ډول:
+	\begin{align*}
+%		(m + n)_\Int  = \equivrep{m + n, 0}{\Intequiv} = \equivrep{m + n, 0 + 0}{\Intequiv} = \equivrep{m, 0}{\Intequiv} + \equivrep{n, 0}{\Intequiv} = m_\Int + n_\Int\\
+		(m \times n)_\Int  &= \equivrep{m \times n, 0}{\Intequiv} \\
+		&= \equivrep{m \times n + 0 \times 0, m \times 0 + 0 \times n}{\Intequiv} \\
+		&= \equivrep{m, 0}{\Intequiv} \times \equivrep{n, 0}{\Intequiv} \\
+		&= m_\Int \times n_\Int
+	\end{align*}
+%\end{proof}
+د نورو دوو شرطونو تاييد د تمرين په توګه پرېږدو۔
+\begin{prob}
+	وښيئ چې د هر $m, n \in \Nat$ دپاره $(m + n)_\Int = m_\Int + n_\Int$ او $m \leq n \liff m_\Int \leq n_\Int$۔
+\end{prob}
+\end{document}

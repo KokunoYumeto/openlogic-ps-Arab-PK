@@ -1,0 +1,132 @@
+% Part: sets-functions-relations
+% Chapter: infinite
+% Section: dedekind
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{dedekind}
+\olsection{د ډېډېکېنډ الجبرونه}
+
+موږ يوازې دا نۀ غواړو چې طبيعي عددونه نامتناهي وي؛ غواړو چې ځينې
+(الجبري) خاصيتونه هم ولري: بايد د جمع، ضرب او نورو عملياتو له مخې
+سم چلند وکړي۔
+
+د ډېډېکېنډ نظر دا و چې د \emph{تالي تابعې} مفهوم بنسټيز وګڼي، او
+بيا عددونه د هغو څيزونو په توګه وپېژني چې لاندې خاصيتونه لري:
+\begin{enumerate}
+	\item يو عدد، $0$، شته چې د هېڅ عدد تالي نۀ دے
+	\\يعنې $0 \notin \ran{s}$
+	\\يعنې $\forall x\ s(x) \neq 0$
+	\item بېل عددونه بېل تالي لري
+	\\يعنې $s$ يوه !!a{injection} ده
+	\\يعنې $\forall x \forall y (s(x) = s(y) \lif x = y)$
+	\item\ollabel{repeatedapplication} هر عدد پر $0$ د تالي تابعې له
+	بيا بيا تطبيق څخه ترلاسه کېږي۔
+\end{enumerate}
+لومړي دوه شرطونه د لومړۍ مرتبې د منطق په کارولو په اسانۍ سمبالېږي
+(پورته وګورئ)۔ خو يوازې د لومړۍ مرتبې په منطق سره
+\olref{repeatedapplication} نشو سمبالولے۔ د ډېډېکېنډ ستره بريا دا وه
+چې شرط \olref{repeatedapplication} ئې په سټي بڼه داسې بيا بيان کړ:
+\begin{enumerate}
+	\item[3$'$.] طبيعي عددونه تر ټولو کوچنے سټ دے چې \emph{د تالي
+	تابعې له مخې بند} دے: يعنې که $s$ د سټ پر هر !!{element} تطبيق
+	کړو، د سټ يو بل !!{element} ترلاسه کوو۔
+\end{enumerate}
+خو دا خبره بايد ورو ورو په تفصيل وليکو۔
+
+\begin{defn}\ollabel{Closure}
+	د هرې تابع $f$ دپاره، سټ $X$ د $f$ له مخې \emph{بند} {هله او يوازې هله چې}
+	$(\forall x \in X)f(x) \in X$ وي۔ اوس د هر $o$ دپاره تعريف کړئ:
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X}{o \in X\text{ او }X
+\text{ د $f$ له مخې بند دے}}$$
+\end{defn}
+\textbf{د ژباړې د نسخې سمون (OLINF-001):} د «هرې تابع» دا بيان
+په پټه دا فرضوي چې تابع د يوه چاپېريال سټ له ځان څخه ځان ته ده او
+ټول څېړل شوي سټونه ئې د ډومېن دننه دي۔ که دا شرط ونۀ منل شي، د
+ډومېن څخه بهر د غړي د تابعې قيمت تعريف نۀ لري او د رېنج او ټاکلي
+غړي اتحاد هم لازماً د تابعې له مخې بند نۀ وي۔ لاندې کارونې همدا
+ځان-ته-تابع حالت لري۔
+
+نو $\closureofunder{f}{o}$ د ټولو هغو سټونو اشتراک دے چې د $f$ له
+مخې بند دي او $o$ ئې يو !!a{element} دے۔ په وجداني ډول، نو
+$\closureofunder{f}{o}$ تر ټولو \emph{کوچنے} داسې د $f$ له مخې بند
+سټ دے چې $o$ ئې يو !!a{element} دے۔ راتلونکې پايله دا وجداني خبره
+دقيقه کوي؛
+\begin{lem}\ollabel{closureproperties}
+	د هرې تابع $f$ او هر $o \in A$ دپاره:
+	\begin{enumerate}
+		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$؛ او
+		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ د $f$ له مخې بند دے؛ او
+		\item\ollabel{closuresmallest} که $X$ د $f$ له مخې بند وي او $o \in
+		X$ وي، نو $\closureofunder{f}{o} \subseteq X$
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+پام وکړئ چې لږ تر لږه يو داسې سټ شته چې د $f$ له مخې بند دے او $o$
+ئې يو !!a{element} دے، يعنې $\ran{f}\cup \{o\}$۔ نو
+$\closureofunder{f}{o}$، چې د دې \emph{ټولو} سټونو اشتراک دے، شتون
+لري۔ اوس بايد \olref{closurehaselem}--\olref{closuresmallest} وارزوو۔
+
+د \olref{closurehaselem} په اړه: $o \in \closureofunder{f}{o}$،
+ځکه دا د هغو سټونو اشتراک دے چې په ټولو کښې $o$ يو !!a{element} دے۔
+
+د \olref{closureclosed} په اړه: فرض کړئ $x \in
+\closureofunder{f}{o}$۔ نو که $o \in X$ او $X$ د $f$ له مخې بند
+وي، $x \in X$؛ او ځکه $X$ د $f$ له مخې بند دے، اوس $f(x) \in X$۔
+نو $f(x) \in \closureofunder{f}{o}$۔
+
+د \olref{closuresmallest} په اړه: په بشپړ عموميت کښې، که $X
+\in C$ وي، نو $\bigcap C \subseteq X$۔
+\end{proof}
+
+د دې په کارولو ويلے شو:
+
+\begin{defn}
+د \emph{ډېډېکېنډ الجبر} يو سټ $A$، يوه تابع $f \colon A \to A$ او
+يو $o \in A$ دي چې لاندې شرطونه پوره کوي:
+	\begin{enumerate}
+		\item \ollabel{ded:proper} $o \notin \ran{f}$
+		\item \ollabel{ded:injection} $f$ يوه !!a{injection} ده
+		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
+	\end{enumerate}
+\end{defn}
+
+ځکه $A = \closureofunder{f}{o}$ دے، زموږ پخوانۍ پايله وايي چې $A$
+تر ټولو کوچنے داسې د $f$ له مخې بند سټ دے چې $o$ ئې يو !!a{element}
+دے۔ په څرګند ډول هر ډېډېکېنډ الجبر د ډېډېکېنډ له مخې نامتناهي دے؛
+يوازې د تعريف \olref{ded:proper} او \olref{ded:injection} مادې
+وګورئ۔ خو تر دې په زړه پورې حقيقت دا دے چې هر د ډېډېکېنډ له مخې
+نامتناهي سټ په ډېډېکېنډ الجبر بدلېدے شي۔
+
+\begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
+که کوم د ډېډېکېنډ له مخې نامتناهي سټ وي، نو يو ډېډېکېنډ الجبر شته۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $D$ د ډېډېکېنډ له مخې نامتناهي دے۔ نو يوه يو پر يو تابع
+$g \colon D \to D$ او يو غړے $o \in D \setminus \ran{g}$ شته۔
+اوس $A = \closureofunder{g}{o}$ وټاکئ؛ د
+\olref{closureproperties} له مخې $A$ شته او $o \in A$۔
+$f = \funrestrictionto{g}{A}$ وټاکئ۔ ښيو چې $A, f, o$ يو
+ډېډېکېنډ الجبر جوړوي۔
+
+د \olref{ded:proper} په اړه: $o \notin \ran{g}$ او $\ran{f}
+\subseteq \ran{g}$، نو $o\notin \ran{f}$۔
+
+د \olref{ded:injection} په اړه: $g$ پر $D$ يوه يو پر يو تابع ده؛
+نو $f \subseteq g$ هم بايد يوه يو پر يو تابع وي۔
+
+د \olref{ded:closure} په اړه: د \olref{closureproperties} له مخې
+$A$ د $g$ له مخې بند دے؛ نو په لا قوي ډول $A$ د $f$ له مخې بند
+دے۔ په دې توګه د \olref{closureproperties} له مخې
+$\closureofunder{f}{o} \subseteq A$۔ ځکه $\closureofunder{f}{o}$
+هم د $f$ له مخې بند دے او $f = \funrestrictionto{g}{A}$، نو
+$\closureofunder{f}{o}$ د $g$ له مخې بند دے۔ بيا د
+\olref{closureproperties} له مخې
+$A \subseteq \closureofunder{f}{o}$۔
+\end{proof}
+
+\end{document}

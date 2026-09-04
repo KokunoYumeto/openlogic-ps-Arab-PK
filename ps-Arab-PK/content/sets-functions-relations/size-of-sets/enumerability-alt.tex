@@ -1,0 +1,131 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: enumerations-alt
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{enm-alt}
+
+\olsection{شمېرنې او \usetoken{S}{enumerable} سټونه}
+
+\begin{editorial}
+  دا برخه شمېرنې له $\Nat$ (پيلنيو ټوټو) سره د دوه اړخيزو يو
+  پر يو تابعو په توګه تعريفوي، لکه په سټ‌تيورۍ کښې چې کېږي۔ نو
+  د \olref[enm]{sec} له تعريفونو سره لږ ټکر لري، او هلته ټولې
+  بېلګې تکراروي۔ دا د هغې برخې په پرتله لږه لنډه هم ده۔
+\end{editorial}
+
+يو متناهي سټ يوازې د هغه د !!{element}s په شمېرلو ټاکلے شو۔ دا
+هغه وخت کوو چې يو سټ داسې تعريفوو:
+\[
+  A = \{a_1, a_2, \ldots, a_n\}.
+\]
+که فرض کړو چې !!{element}s $a_1$، \dots، $a_n$ ټول سره بېل دي،
+دا د $A$ او لومړنيو $n$ طبيعي عددونو $0$، \dots، $n-1$ تر منځ
+يوه !!a{bijection} راکوي۔ برعکس، ځکه هر متناهي سټ يوازې متناهي
+شمېر !!{element}s لري، هر متناهي سټ په داسې سمون کښې اېښودلے
+شو۔ په بله وينا، که $A$ متناهي وي، د $A$ او
+$\{0, \dots, n-1\}$ تر منځ يوه !!a{bijection} شته، چې $n$ د~$A$
+د !!{element}s شمېر دے۔
+
+که د نامتناهي سټونو ځينې ډولونه ومنو، نو ځينې نامتناهي سټونه به
+هم شمېرل کېدے شي۔ دا په دې وينا دقيقولے شو چې يو نامتناهي سټ د
+هغه او ټول~$\Nat$ تر منځ د !!a{bijection} په وسيله شمېرل کېږي۔
+
+\begin{defn}[شمېرنه، سټ‌تيوريکي]
+د يوه سټ $A$ \emph{شمېرنه} يوه !!a{bijection} ده چې د قيمتونو
+سټ ئې $A$ او د تعريف ساحه ئې يا د طبيعي عددونو يو پيلنی سټ
+$\{0, 1, \ldots, n\}$ {يا} د طبيعي عددونو ټول سټ~$\Nat$ وي۔
+\end{defn}
+
+\begin{explain}
+د \emph{شمېرنې} د ويي د دې کارونې تر شا يو شهودي بنسټ شته۔ دا
+ويل چې موږ يو سټ $A$ شمېرلے دے، په دې معنا دي چې يوه
+!!a{bijection} $f$ شته چې پرې د سټ $A$ غړي شمېرلے شو۔ $0$م غړے
+$f(0)$ دے، لومړے $f(1)$، \ldots، $n$م $f(n)$،
+\ldots۔\footnote{هو، موږ له $0$ څخه شمېرو۔ البته له~$1$ څخه هم
+پيلولے شو۔ په دې سره به لوے توپير رانۀ شي۔ يوازې به مو~$\Nat$
+په~$\PosInt$ بدلولے۔} د دې دليل د لاندې خبرې په ورزياتولو لا
+روښانه کېدے شي:
+\end{explain}
+
+\begin{defn}
+  \ollabel{defn:enumerable}
+  يو سټ~$A$ هله او يوازې هله !!{enumerable} دے چې يا
+  $A = \emptyset$ وي يا د~$A$ يوه شمېرنه وي۔ وايو چې $A$ هله
+  او يوازې هله !!{nonenumerable} دے چې $A$ !!{enumerable} نۀ وي۔
+\end{defn}
+
+\begin{explain}
+نو يو سټ هله او يوازې هله !!{enumerable} دے چې تش وي يا ئې
+!!{element}s په يوه شمېرنه شمېرلے شئ۔
+\end{explain}
+
+\begin{ex}
+هغه تابع چې طبيعي عددونه شمېري يوازې عيني تابع
+$\Id{\Nat} \colon \Nat \to \Nat$ ده چې په
+$\Id{\Nat}(n) = n$ ورکړل شوې۔ هغه تابع چې \emph{مثبت} طبيعي
+عددونه شمېري، $\Nat^+ = \Nat \setminus \{0\}$، تابع
+$g(n) = n + 1$ ده؛ يعنې راتلونکې تابع۔
+\end{ex}
+
+\begin{prob}
+وښيئ چې يو سټ $A$ هله او يوازې هله !!{enumerable} دے چې يا
+$A = \emptyset$ وي يا يوه !!a{surjection} $f\colon \Nat \to A$
+وي۔ وښيئ چې $A$ هله او يوازې هله !!{enumerable} دے چې يوه
+!!a{injection} $g\colon A \to \Nat$ وي۔
+\end{prob}
+
+\begin{ex}
+تابعې $f\colon \Nat \to \Nat$ او $g \colon \Nat \to \Nat$ چې
+په ترتيب سره په لاندې ډول ورکړل شوې دي:
+\begin{align*}
+  f(n) & = 2n \text{ او}\\
+  g(n) & = 2n+1
+\end{align*}
+جفت طبيعي عددونه او طاق طبيعي عددونه شمېري۔ خو له دواړو يوه هم
+!!{surjective} نۀ ده، نو يوه هم د $\Nat$ شمېرنه نۀ ده۔
+\end{ex}
+
+\begin{prob}
+د مربع عددونو $1$، $4$، $9$، $16$، \dots يوه شمېرنه تعريف کړئ۔
+\end{prob}
+
+\begin{ex}
+فرض کړئ $\lceil x \rceil$ د \emph{پاسني صحيح عدد} تابع ده، چې
+$x$ تر ټولو نږدې صحيح عدد ته پورته ګردوي۔ بيا تابع
+$f \colon \Nat \to \Int$ چې په لاندې ډول ورکړل شوې ده:
+\[
+  f(n) = (-1)^{n} \left\lceil\tfrac{n}{2}\right\rceil
+\]
+د صحيح عددونو سټ~$\Int$ په لاندې ډول شمېري:
+\[
+\begin{array}{c c c c c c c c}
+f(0) & f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & \dots \\ \\
+\big\lceil \tfrac{0}{2} \big\rceil & -\big\lceil \tfrac{1}{2}\big\rceil &  \big\lceil \tfrac{2}{2} \big\rceil & -\big\lceil \tfrac{3}{2} \big\rceil & \big\lceil \tfrac{4}{2} \big\rceil  & -\big\lceil \tfrac{5}{2}\big\rceil & \big\lceil \tfrac{6}{2} \big\rceil & \dots \\ \\
+0 & -1 & 1 & -2 & 2 & -3 & 3& \dots
+\end{array}
+\]
+پام وکړئ چې $f$ څنګه د مثبتو او منفي صحيح عددونو تر منځ په
+«ټوپونو» د~$\Int$ قيمتونه پيدا کوي۔ $f$ په حالتونو هم داسې
+تعريفولے شئ:
+\[
+f(n) = \begin{cases}
+  \frac{n}{2} & \text{که $n$ جفت وي}\\
+  -\frac{n+1}{2} & \text{که $n$ طاق وي}
+  \end{cases}
+\]
+\end{ex}
+
+\begin{prob}
+وښيئ چې که $A$ او $B$ !!{enumerable} وي، نو $A \cup B$ هم دے۔
+\end{prob}
+
+\begin{prob}
+پر $n$ په استقرا وښيئ چې که $A_1$، $A_2$، \dots، $A_n$ ټول
+!!{enumerable} وي، نو $A_1 \cup \dots \cup A_n$ هم دے۔
+\end{prob}
+
+\end{document}

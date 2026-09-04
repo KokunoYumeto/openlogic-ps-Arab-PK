@@ -1,0 +1,76 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{rul}}
+      {\olfileid{pl}{seq}{rul}}
+
+\olsection{قاعدې او \usetoken{P}{derivation}}
+
+د راتلونکو خبرو دپاره، پرېږدئ چې $\Gamma, \Delta, \Pi, \Lambda$ د
+!!{sentence}s متناهي لړۍ وښيي۔
+
+\begin{defn}[سېکوېنټ]
+\emph{سېکوېنټ} د لاندې بڼې څرګندنه ده:
+\[
+\Gamma \Sequent \Delta
+\]
+دلته $\Gamma$ او $\Delta$ د ژبې $\Lang L$ د !!{sentence}s متناهي
+(او کېدے شي تشې) لړۍ دي۔ $\Gamma$ ته \emph{مقدم} او $\Delta$ ته
+\emph{تالي} ويل کېږي۔
+\end{defn}
+
+\begin{explain}
+د يوه سېکوېنټ تر شا شهودي مفکوره دا ده: که د مقدم ټولې !!{sentence}s
+صدق کوي، نو د تالي لږ تر لږه يوه !!{sentence}s صدق کوي۔ يعنې که
+$\Gamma = \tuple{!A_1, \dots, !A_m}$ او
+$\Delta = \tuple{!B_1, \dots, !B_n}$ وي، نو $\Gamma \Sequent \Delta$
+هله صدق کوي چې
+\[
+(!A_1 \land \cdots \land !A_m) \lif (!B_1 \lor \cdots \lor
+!B_n)
+\]
+صدق کوي۔ دوه خاص حالتونه شته: يو هغه چې $\Gamma$ تش وي، او بل هغه
+چې $\Delta$~تش وي۔ کله چې $\Gamma$ تش وي، يعنې $m = 0$، نو $\quad
+\Sequent \Delta$ هله صدق کوي چې $!B_1 \lor \dots \lor !B_n$ صدق
+کوي۔ کله چې $\Delta$ تش وي، يعنې $n = 0$، نو $\Gamma \Sequent \quad$
+هله صدق کوي چې $\lnot(!A_1 \land \dots \land !A_m)$ صدق کوي۔
+موږ يو سېکوېنټ هله معتبر بولو چې ورسره سمون لرونکې !!{sentence}
+معتبره وي۔
+\end{explain}
+
+که $\Gamma$ د !!{sentence}s يوه لړۍ وي، نو $\Gamma, !A$ د هغې
+پايلې دپاره ليکو چې~$!A$ د~$\Gamma$ ښي پاے ته ورزيات شي (او $!A,
+\Gamma$ د هغې پايلې دپاره چې~$!A$ د~$\Gamma$ کيڼ پاے ته ورزيات
+شي)۔ که $\Delta$ هم د !!{sentence}s يوه لړۍ وي، نو $\Gamma,
+\Delta$ د دواړو لړيو نښلول دي۔
+
+\begin{defn}[لومړنے سېکوېنټ]
+\emph{لومړنے سېکوېنټ} داسې سېکوېنټ دے
+\iftag{prvFalse,prvTrue}{چې له لاندې بڼو څخه يوه لري:
+  \begin{enumerate}
+    \item $!A \Sequent !A$
+    \tagitem{prvTrue}{$\quad \Sequent \ltrue$}{}
+    \tagitem{prvFalse}{$\lfalse \Sequent \quad$}{}
+  \end{enumerate}}
+{چې بڼه ئې $!A \Sequent !A$ ده}، او $!A$ د ژبې هره !!{sentence}
+کېدے شي۔
+\end{defn}
+
+په سېکوېنټ حساب کښې !!^{derivation}s د سېکوېنټونو داسې ټاکلې ونې
+دي چې تر ټولو بره سېکوېنټونه ئې لومړني سېکوېنټونه وي؛ او که يو
+سېکوېنټ د يوه يا دوو نورو سېکوېنټونو لاندې راشي، بايد د استنتاج د
+يوې قاعدې له مخې ترې په سمه توګه راووځي۔ د~$\Log{LK}$ قاعدې پر دوو
+اصلي ډولونو وېشل کېږي: \emph{منطقي} قاعدې او \emph{جوړښتي} قاعدې۔
+منطقي قاعدې د لاندې سېکوېنټ د هغې !!{sentence} د !!{main
+  operator} په نوم نومول کېږي چې $!A$ او/يا $!B$ لري۔ هره قاعده
+دوه بڼې لري: يوه د داسې سېکوېنټ د استنتاج دپاره چې د
+!!{operator} لرونکې !!{sentence} ئې کيڼ لوري ته وي، او بله د هغه
+سېکوېنټ دپاره چې دا !!{sentence} ئې ښي لوري ته وي۔
+
+\end{document}

@@ -1,0 +1,130 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: zig-zag
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{zigzag}
+
+\olsection{د کانتور د زيګزاګ طريقه}
+
+\begin{explain}
+مخکښې مو ځينې «اسانې» شمېرنې په پام کښې نيولې دي۔ اوس به
+يو لږ ګران کار په پام کښې ونيسو۔ د طبيعي عددونو د جوړو سټ
+په پام کښې ونيسئ\oliflabeldef{sfr:set:pai:sec}{، چې په
+\olref[set][pai]{sec} کښې مو داسې تعريف کړے و:}{چې داسې تعريف شوے دے:}
+\[
+\Nat \times \Nat = \Setabs{\tuple{n,m}}{n,m \in \Nat}
+\]
+دا مرتبې جوړې په يوه \emph{جدولي ترتيب} کښې داسې برابرولے شو:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf 0 & \tuple{0,0} & \tuple{0,1} & \tuple{0,2} & \tuple{0,3} & \dots \\
+\hline
+\mathbf 1 & \tuple{1,0} & \tuple{1,1} & \tuple{1,2} & \tuple{1,3} & \dots \\
+\hline
+\mathbf 2 & \tuple{2,0} & \tuple{2,1} & \tuple{2,2} & \tuple{2,3} & \dots \\
+\hline
+\mathbf 3 & \tuple{3,0} & \tuple{3,1} & \tuple{3,2} & \tuple{3,3} & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+په ښکاره، په $\Nat \times \Nat$ کښې هره مرتبه جوړه به په
+دې جدول کښې په دقيقه توګه يو ځل راشي۔ په ځانګړي ډول،
+$\tuple{n,m}$ به په $n$م قطار او $m$م ستون کښې راشي۔ خو د
+داسې جدول غړي په يوه «يو بُعدي» لړ کښې څنګه برابر کړو؟ په
+لاندې جدول کښې نمونه د دې کار يوه لار ښيي، که څه هم البته
+ډېرې نورې لارې هم شته:
+\[
+\begin{array}{ c | c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 &\dots \\
+\hline
+\mathbf 0 & 0  & 1& 3 & 6& 10 &\ldots \\
+\hline
+\mathbf 1 &2 & 4& 7 & 11 & \dots &\ldots \\
+\hline
+\mathbf 2 & 5 & 8 & 12 & \ldots & \dots&\ldots \\
+\hline
+\mathbf 3 & 9 & 13 & \ldots & \ldots & \dots & \ldots \\
+\hline
+\mathbf 4 & 14 & \ldots & \ldots & \ldots & \dots & \ldots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots&\ldots & \ddots\\
+\end{array}
+\]\noindent
+دا نمونه \emph{د کانتور د زيګزاګ طريقه} بلل کېږي۔ دا د
+$\Nat \times \Nat$ شمېرنه داسې کوي:
+\[
+\tuple{0,0}, \tuple{0,1}, \tuple{1,0}, \tuple{0,2}, \tuple{1,1},
+\tuple{2,0}, \tuple{0,3}, \tuple{1,2}, \tuple{2,1}, \tuple{3,0}, \dots
+\]
+او له دې لاندې خبره ثابتېږي:
+\end{explain}
+
+\begin{prop}\ollabel{natsquaredenumerable}
+$\Nat \times \Nat$ يو !!{enumerable} سټ دے۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $f \colon \Nat \to \Nat\times\Nat$ هر $k \in \Nat$
+له هغې مرتبې څوګونې $\tuple{n,m} \in \Nat \times \Nat$ سره
+تړي چې $k$ د کانتور د زيګزاګ په جدول کښې د $n$م قطار او
+$m$م ستون قيمت وي۔
+\end{proof}
+
+\begin{explain}
+دا تخنيک په ښه ډول عمومي کېدے هم شي۔ د بېلګې په توګه، د
+طبيعي عددونو د مرتبو درې ګونو د سټ د شمېرنې دپاره ئې
+کارولے شو؛ يعنې:
+\[
+\Nat \times \Nat \times \Nat = \Setabs{\tuple{n,m,k}}{n,m,k \in \Nat}
+\]
+$\Nat \times \Nat \times \Nat$ له $\Nat$ سره د $\Nat \times \Nat$
+د کارتيزي حاصل ضرب په توګه ګڼو؛ يعنې:
+\[
+\Nat^3 = (\Nat \times \Nat) \times \Nat =
+\Setabs{\tuple{\tuple{n,m},k}}{n, m, k
+  \in \Nat }
+\]
+نو د يوه محور د $\Nat$ په شمېرنې او د بل محور د $\Nat^2$
+په شمېرنې په نښه کولو سره، د يوه جدول په وسيله د $\Nat^3$
+شمېرنه کولے شو:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf{\tuple{0,0}} & \tuple{0,0,0} & \tuple{0,0,1} & \tuple{0,0,2} & \tuple{0,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,1}} & \tuple{0,1,0} & \tuple{0,1,1} & \tuple{0,1,2} & \tuple{0,1,3} & \dots \\
+\hline
+\mathbf{\tuple{1,0}} & \tuple{1,0,0} & \tuple{1,0,1} & \tuple{1,0,2} & \tuple{1,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,2}} & \tuple{0,2,0} & \tuple{0,2,1} & \tuple{0,2,2} & \tuple{0,2,3} & \dots\\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{array}
+\]
+نو د کانتور د زيګزاګ طريقې ته ورته طريقې په کارولو سره د~$\Nat^3$
+شمېرنه هم ترلاسه کولے شو۔ او همداسې مخ په وړاندې تللے شو،
+چې د هر طبيعي عدد $n$ دپاره د $\Nat^n$ شمېرنې ترلاسه کړو۔ نو لرو:
+\end{explain}
+
+\begin{prop}
+د هر $n \in \Nat$ دپاره، $\Nat^n$ يو !!{enumerable} سټ دے۔
+\end{prop}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-n}
+وښيئ چې د هر $n \in \Nat$ دپاره، $(\PosInt)^n$ يو !!{enumerable} سټ دے۔
+\end{prob}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-star}
+  وښيئ چې $(\PosInt)^*$ يو !!{enumerable} سټ دے۔
+  \cref{sfr:siz:zigzag:prob:posint-n} فرضولے شئ۔
+\end{prob}
+
+\end{document}
