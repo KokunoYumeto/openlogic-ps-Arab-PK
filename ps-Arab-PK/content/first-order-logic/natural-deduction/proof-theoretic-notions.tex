@@ -1,0 +1,161 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{ptn}}
+      {\olfileid{pl}{ntd}{ptn}}
+
+\olsection{ثبوت-تيوريکي مفاهيم}
+
+\begin{editorial}
+دا برخه د فطري استنتاج د اثبات‌پذيرۍ اړيکې او سازګارۍ تعريفونه
+راټولوي۔
+\end{editorial}
+
+\begin{explain}
+لکه څنګه چې مو يو شمېر مهم معنايي مفاهيم (اعتبار، معنايي استلزام،
+د صدق وړتيا) تعريف کړل، اوس ورسره سم \emph{ثبوت-تيوريکي مفاهيم}
+تعريفوو۔ دا مفاهيم په !!{structure}s کښې د !!{sentence}s د پوره
+کېدو له لارې نۀ، بلکې له نورو څخه د ځينو !!{sentence}s د
+!!{derivability} يا !!{nonderivability} له لارې تعريفېږي۔ دا مهمه
+موندنه وه چې دغه مفاهيم سره سمون خوري۔ د دې سمون منځپانګه د
+\emph{سموالي} او \emph{بشپړتيا قضيې} دي۔
+\end{explain}
+
+
+\begin{defn}[قضيې]
+يوه !!{sentence}~$!A$ هله \emph{قضيه} ده چې په فطري استنتاج کښې
+د~$!A$ داسې !!a{derivation} وي چې ټولې فرضيې پکې !!{discharged}
+شوې وي۔ که $!A$ قضيه وي، $\Proves !A$ ليکو، او که نۀ وي
+$\Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ د !!{sentence}s له سټ~$\Gamma$ څخه،
+$\Gamma \Proves !A$، هله \emph{!!{derivable}} ده چې داسې
+!!{derivation} وي چې پايله ئې~$!A$ وي او هره فرضيه پکې يا
+!!{discharged} شوې وي يا په~$\Gamma$ کښې وي۔ که $!A$ له~$\Gamma$
+څخه !!{derivable} نۀ وي، $\Gamma \Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[سازګاري]
+د !!{sentence}s يو سټ~$\Gamma$ هله او يوازې هله \emph{ناسازګار}
+دے چې $\Gamma \Proves \lfalse$ وي۔ که $\Gamma$ ناسازګار نۀ وي،
+يعنې $\Gamma \Proves/ \lfalse$ وي، نو \emph{سازګار} ئې بولو۔
+\end{defn}
+
+\begin{prop}[انعکاسيت]
+\ollabel{prop:reflexivity}
+که $!A \in \Gamma$ وي، نو $\Gamma \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+فرضيه~$!A$ په يوازې ځان د~$!A$ داسې !!a{derivation} دے چې هره
+!!{undischarged} فرضيه ئې (يعنې $!A$) په~$\Gamma$ کښې ده۔
+\end{proof}
+  
+
+\begin{prop}[يکنواختي]
+\ollabel{prop:monotonicity}
+که $\Gamma \subseteq \Delta$ او $\Gamma \Proves !A$ وي، نو
+$\Delta \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+له~$\Gamma$ څخه د~$!A$ هر !!{derivation} له~$\Delta$ څخه هم د~$!A$
+!!a{derivation} دے۔
+\end{proof}
+
+\begin{prop}[انتقاليت]
+\ollabel{prop:transitivity}
+که $\Gamma \Proves !A$ او $\{!A\} \cup \Delta \Proves !B$ وي، نو
+$\Gamma \cup \Delta \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+که $\Gamma \Proves !A$ وي، د~$!A$ داسې !!a{derivation}~$\delta_0$
+شته چې ټولې !!{undischarged} فرضيې ئې په~$\Gamma$ کښې دي۔ که
+$\{!A\} \cup \Delta \Proves !B$ وي، د~$!B$ داسې
+!!a{derivation}~$\delta_1$ شته چې ټولې !!{undischarged} فرضيې ئې
+په~$\{!A\} \cup \Delta$ کښې دي۔ اوس لاندې وګورئ:
+\begin{prooftree}
+  \AxiomC{$\Delta, \Discharge{!A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lif}}
+  \BinaryInfC{$!B$}
+\end{prooftree}
+اوس ټولې !!{undischarged} فرضيې په~$\Gamma \cup \Delta$ کښې دي؛
+نو دا $\Gamma \cup \Delta \Proves !B$ ښيي۔
+\end{proof}
+
+کله چې $\Gamma = \{!A_1, !A_2, \ldots, !A_k\}$ يو متناهي سټ وي،
+د~$\Gamma \Proves !B$ دپاره لنډه نښه
+$!A_1,!A_2,\ldots,!A_k \Proves !B$ کارولے شو؛ په ځانګړي ډول
+$!A \Proves !B$ دا معنٰی لري چې $\{!A\} \Proves !B$۔
+
+پام وکړئ که $\Gamma \Proves !A$ او $!A \Proves !B$ وي، نو
+$\Gamma \Proves !B$۔ همدارنګه، که
+$!A_1, \dots, !A_n \Proves !B$ او د هر~$i$ دپاره
+$\Gamma \Proves !A_i$ وي، نو $\Gamma \Proves !B$۔
+
+\begin{prop}
+\ollabel{prop:incons}
+لاندې شرطونه معادل دي۔
+    \begin{enumerate}
+      \item \( \Gamma \) ناسازګار دے۔
+      \item د هرې !!{sentence}~\( {!A} \) دپاره \( \Gamma \Proves {!A} \)۔
+      \item د کومې !!{sentence}~\( {!A} \) دپاره \( \Gamma \Proves {!A} \) او \( \Gamma \Proves \lnot {!A} \)۔
+    \end{enumerate}
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][ntd][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][ntd][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}[تراکم]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item که $\Gamma \Proves !A$ وي، نو داسې متناهي فرعي سټ
+    $\Gamma_0 \subseteq \Gamma$ شته چې $\Gamma_0 \Proves !A$ وي۔
+  \item که د~$\Gamma$ هر متناهي فرعي سټ سازګار وي، نو $\Gamma$
+    سازګار دے۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item که $\Gamma \Proves !A$ وي، نو له~$\Gamma$ څخه د~$!A$
+      کوم !!a{derivation}~$\delta$ شته۔ $\Gamma_0$ د~$\delta$ د
+      !!{undischarged} فرضيو سټ ونيسئ۔ ځکه هر !!{derivation} متناهي
+      دے، $\Gamma_0$ يوازې متناهي ډېرې !!{sentence}s لرلے شي۔ نو
+      $\delta$ له متناهي~$\Gamma_0 \subseteq \Gamma$ څخه د~$!A$
+      !!a{derivation} دے۔
+    \item دا د~(۱) د هغه ځانګړي حالت نقيض عکس دے چې
+      $!A \ident \lfalse$ وي۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

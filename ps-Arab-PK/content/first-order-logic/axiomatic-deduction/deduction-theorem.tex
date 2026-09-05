@@ -1,0 +1,138 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: deduction-theorem
+
+% verification of properties of provability needed for maximally 
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ded}}
+      {\olfileid{pl}{axd}{ded}}
+
+\olsection{د استنتاج قضيه}
+
+لکه چې مو وليدل، په بديهي نظام کښې !!{derivation}s ورکول ستونزمن
+دي، او !!{derivation}s موندل هم ګرانېږي۔ د !!{formula}s اوږدې لړۍ
+په رښتيا ليکلو پر ځاے، زياتره دا استدلال اسانه وي چې داسې
+!!{derivation}s شته؛ د دې دپاره څو ساده پايلې کاروو۔ درې داسې پايلې
+مو لا ثابتې کړې دي: \olref[ptn]{prop:reflexivity} وايي کله چې
+$!A \in \Gamma$ پوهېږو، تل $\Gamma \Proves !A$ ويلے شو۔
+\olref[ptn]{prop:monotonicity} وايي که $\Gamma \Proves !A$ وي، نو
+$\Gamma \cup \{!B\} \Proves !A$ هم دے۔ او
+\olref[ptn]{prop:transitivity} ښيي که $\Gamma \Proves !A$ او
+$!A \Proves !B$ وي، نو $\Gamma \Proves !B$۔ دا د مودوس پوننس يوه
+بله ساده، ``ميتا'' بڼه ده:
+
+\begin{prop}
+  \ollabel{prop:mp} که $\Gamma \Proves !A$ او
+  $\Gamma \Proves !A \lif !B$ وي، نو $\Gamma \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+  موږ $\{!A, !A \lif !B\} \Proves !B$ لرو:
+  \begin{derivation}
+    1. & $!A$ & فرض\\
+    2. & $!A \lif !B$ & فرض\\
+    3. & $!B$ & 1, 2, مودوس پوننس
+  \end{derivation}
+  د \olref[ptn]{prop:transitivity} له مخې $\Gamma \Proves !B$۔
+\end{proof}
+
+په دې برخه کښې تر ټولو مهمه پايله چې کاروو ئې د استنتاج قضيه ده:
+
+\begin{thm}[د استنتاج قضيه]
+\ollabel{thm:deduction-thm} $\Gamma \cup \{!A\} \Proves !B$ هله
+او يوازې هله چې $\Gamma \Proves !A \lif !B$۔
+\end{thm}
+
+\begin{proof}
+د ``که'' لوری سمدستي دے۔ که $\Gamma \Proves !A \lif !B$ وي، د
+\olref[ptn]{prop:monotonicity} له مخې
+$\Gamma \cup \{!A\} \Proves !A \lif !B$ هم دے۔ همدارنګه د
+\olref[ptn]{prop:reflexivity} له مخې
+$\Gamma \cup \{!A\} \Proves !A$۔ نو د \olref{prop:mp} له مخې
+$\Gamma \cup \{!A\} \Proves !B$۔
+
+د ``يوازې که'' لوري دپاره له~$\Gamma \cup \{!A\}$ څخه د~$!B$ د
+!!{derivation} پر اوږدوالي استقرا کوو۔
+
+د استقرا د بنسټ دپاره دعوه د اوږدوالي~$1$ د هر !!{derivation}
+دپاره ثابتوو۔ له~$\Gamma \cup \{!A\}$ څخه د~$!B$ د اوږدوالي~$1$
+!!^a{derivation} يوازې له~$!B$ څخه جوړ وي؛ او که سم وي، يا
+$!B \in \Gamma \cup \{!A\}$ وي يا $!B$ بديهي اصل وي۔
+\textbf{د ژباړې د نسخې سمون (OLAX-003):} سرچينې په دې غړيتوب کښې
+له اې-متا فارمول څخه مخکښې يوازې د غړيتوب نښه ليکلې وه؛ د جملې
+فاعل دلته د بشپړ فارمول په دننه کښې راوستل شو۔
+که $!B \in \Gamma$ وي يا بديهي اصل وي، نو $\Gamma \Proves !B$۔
+همدارنګه د \olref[prp]{ax:lif1} له مخې
+$\Gamma \Proves !B \lif (!A \lif !B)$، او \olref{prop:mp} موږ ته
+$\Gamma \Proves !A \lif !B$ راکوي۔ که $!B \in \{ !A\}$ وي، نو
+$\Gamma \Proves !A \lif !B$؛ ځکه وروستۍ !!{sentence}
+$!A \lif !B$ د~$!A \lif !A$ هماغه جمله ده، او په
+\olref[pro]{ex:identity} کښې مو هغه !!{derive} کړې ده۔
+
+د استقرا په پړاو کښې فرض کړئ له~$\Gamma \cup \{!A\}$ څخه د~$!B$
+يو !!a{derivation} په داسې ګام~$!B$ پاے ته رسېږي چې په مودوس پوننس
+توجيه شوے دے۔ (که په مودوس پوننس توجيه شوے نۀ وي، نو
+$!B \in \Gamma$، $!B \ident !A$، يا $!B$ بديهي اصل دے، او د استقرا
+د بنسټ هماغه استدلال پرې پلي کېږي۔) بيا د کوم !!{formula}~$!C$
+دپاره په !!{derivation} کښې ځينې مخکښې ګامونه $!C \lif !B$ او
+$!C$ دي؛ يعنې $\Gamma \cup \{!A\} \Proves !C \lif !B$ او
+$\Gamma \cup \{!A\} \Proves !C$، او اړوند !!{derivation}s لنډ دي،
+نو د استقرا فرضيه پرې پلي کېږي۔ ځکه دواړه دا لرو:
+\begin{align*}
+  & \Gamma \Proves !A \lif (!C \lif !B); \\
+  & \Gamma \Proves !A \lif !C.
+\end{align*}
+خو د \olref[prp]{ax:lif2} له مخې دا هم لرو:
+\[
+\Gamma \Proves (!A \lif (!C \lif !B)) \lif
+((!A\lif !C)  \lif (!A \lif !B)),
+\]
+او د \olref{prop:mp} دوه تطبيقونه، لکه چې پکار ده،
+$\Gamma \Proves !A \lif !B$ راکوي۔
+\end{proof}
+
+پام وکړئ چې \olref[prp]{ax:lif1} او \olref[prp]{ax:lif2} په عين
+دې موخه ټاکل شوي وو چې د استنتاج قضيه سمه وي۔
+
+لاندې د~!!{derivability} په اړه ځينې ګټور حقيقتونه دي چې د تمرينونو
+په توګه ئې پرېږدو۔
+
+\begin{prop}
+  \ollabel{prop:derivfacts}
+\begin{enumerate}
+\item $\Proves (!A \lif !B) \lif ((!B \lif !C)
+  \lif (!A \lif !C))$؛ \ollabel{derivfacts:a}
+\textbf{د ژباړې د نسخې سمون (OLAX-004):} سرچينې د لومړۍ دعوې د
+بهرني وروستي قوس د تړلو نښه پرېښې وه؛ دلته د پرانيستو قوسونو سره
+سمه يوه تړونکې نښه بېرته راوستل شوې ده۔
+\item که $\Gamma \cup \{ \lnot !A\}
+  \Proves \lnot !B$ وي، نو $\Gamma \cup \{ !B\} \Proves
+  !A$ (مقابل عکس)؛ \ollabel{derivfacts:b}
+\item $\{ !A, \lnot!A\} \Proves
+    !B$ (له کاذبۍ هر څه، انفجار)؛ \ollabel{derivfacts:c}
+\item $\{ \lnot\lnot!A\} \Proves
+  !A$ (دوه ګونې نفي حذف)؛\ollabel{derivfacts:d}
+\item که $\Gamma \Proves \lnot\lnot!A$ وي، نو $\Gamma \Proves
+  !A$؛\ollabel{derivfacts:e}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][ded]{prop:derivfacts} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][ded]{prop:derivfacts} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\end{document}

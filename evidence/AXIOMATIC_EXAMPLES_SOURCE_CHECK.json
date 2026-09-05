@@ -1,0 +1,58 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T03:24:55.711600+00:00",
+  "batch_id": "PS-B023-AXIOMATIC-EXAMPLES",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0116",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proving-things.tex",
+      "source_bytes": 5471,
+      "source_sha256": "23ad39fb3af69f934bb4410a53b692e1e589e5a12ecb757a219ee3e5dc4c6a56",
+      "translation_bytes": 6433,
+      "translation_sha256": "e6d98b314b0f04c59f47aed0b4fc74931500835d4452f3cfe4d65690fec285c6"
+    },
+    {
+      "unit_id": "OLP-0117",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proving-things-quant.tex",
+      "source_bytes": 1491,
+      "source_sha256": "f0e9a893cec5f94f8d48ae6e7ca2c46ad04726c98a03fa33487c9a5c263d0c10",
+      "translation_bytes": 1707,
+      "translation_sha256": "c6f6dad50dea93e85839448e3bdb4a08dd6d22720ea219425d441524e024a3eb"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0116 first worked derivation",
+      "observation": "The target, disjunction-axiom instance, two antecedent axiom instances and both MP steps were checked for metavariable placement and association.",
+      "treatment": "No source defect found; all five formulas and justifications are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0116 identity derivation",
+      "observation": "The rejected direct strategy and the implication-distribution strategy were checked by substituting D and D-implies-D through both axiom schemas.",
+      "treatment": "No source defect found; the complete search explanation and five-line derivation are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0116 chain derivation and proposition",
+      "observation": "Both hypotheses, axiom instances, MP references, concatenation order and shifted component endpoints were checked.",
+      "treatment": "No source defect found; all seven lines and the generic proof remain exact.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0116 exercise set",
+      "observation": "All connectives, negations and implication scopes in the three requested derivations were checked.",
+      "treatment": "No source defect found; every exercise formula is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0117 complete align proof",
+      "observation": "Each universal projection, instance, chain invocation, conjunction construction and QR side condition was traced through the final formula.",
+      "treatment": "No source defect found; all formulas, labels and intertext references are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source defect was found in OLP-0116–0117. All worked derivations, rejected and successful search strategies, formulas, line references, axiom labels, quantifier conditions and exercises are preserved."
+}

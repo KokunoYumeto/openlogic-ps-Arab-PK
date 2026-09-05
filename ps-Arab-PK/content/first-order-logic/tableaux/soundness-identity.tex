@@ -1,0 +1,52 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{sid}
+
+\olsection{له \usetoken{S}{identity} سره سموالے}
+
+\begin{prop}
+د عينيت له قاعدو سره !!^{tableau}s سم دي: هېڅ تړلے !!{tableau}
+د صدق وړ نۀ دے۔
+\end{prop}
+
+\begin{proof}
+يوازې بايد د پخوا په شان وښيو چې که يو !!a{tableau} د صدق وړ
+څانګه ولري، نو د~$\eq$ له قاعدو څخه د يوې په پلي کولو ترلاسه شوې
+څانګه هم د صدق وړ ده۔ $\Gamma$ پر څانګه د نښه لرونکو !!{formula}s
+سټ وبولئ، او $\Struct{M}$ داسې !!a{structure} وبولئ چې $\Gamma$
+پوره کوي۔
+
+فرض کړئ څانګه د~$\eq$ په کارولو، يعنې د نښه لرونکي
+!!{formula}~$\sFmla{\True}{\eq[t][t]}$ په زياتولو پراخېږي۔ په
+څرګند ډول $\Sat{M}{\eq[t][t]}$؛ نو $\Struct{M}$،
+$\Gamma \cup \{\sFmla{\True}{\eq[t][t]}\}$ هم پوره کوي۔
+
+که څانګه د~$\TRule{\True}{\eq}$ په کارولو پراخېږي، موږ يو نښه
+لرونکے !!{formula}~$\sFmla{\True}{!A(t_2)}$ ورزياتوو، خو $\Gamma$
+دواړه~$\sFmla{\True}{\eq[t_1][t_2]}$ او
+$\sFmla{\True}{!A(t_1)}$ لري۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-012):} سرچينې د رښتوني-عينيت
+قاعدې پايلې ته عمومي S نښه ورکړې وه؛ د قاعدې، دواړو مقدمو او
+لاندې معنايي ثبوت له مخې دا رښتونې نښه ده۔
+نو $\Sat{M}{\eq[t_1][t_2]}$ او $\Sat{M}{!A(t_1)}$ لرو۔ داسې
+متغير-ټاکنه~$s$ واخلئ چې $s(x) = \Value{t_1}{M}$۔ د
+\olref[syn][ass]{prop:sentence-sat-true} له مخې
+$\Sat{M}{!A(t_1)}[s]$۔ ځکه $\varAssign{s}{s}{x}$، د
+\olref[syn][ext]{prop:ext-formulas} له مخې $\Sat{M}{!A(x)}[s]$۔
+ځکه $\Sat{M}{\eq[t_1][t_2]}$، نو
+$\Value{t_1}{M} = \Value{t_2}{M}$، او ځکه
+$s(x) = \Value{t_2}{M}$۔ د
+\olref[syn][ext]{prop:ext-formulas} په بيا پلي کولو
+$\Sat{M}{!A(t_2)}[s]$ هم لرو۔ د
+\olref[syn][ass]{prop:sentence-sat-true} له مخې
+$\Sat{M}{!A(t_2)}$۔ د~$\TRule{\False}{\eq}$ حالت هم په همدې ډول
+حل کېږي۔
+\end{proof}
+
+\end{document}

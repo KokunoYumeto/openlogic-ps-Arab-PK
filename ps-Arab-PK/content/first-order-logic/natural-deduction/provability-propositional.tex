@@ -1,0 +1,136 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-propositional
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{ppr}}
+      {\olfileid{pl}{ntd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} او قضيې رابطونه}
+
+\begin{explain}
+  موږ ثابتوو چې د فطري استنتاج د !!{derivability} اړيکه~$\Proves$
+  دومره پياوړې ده چې د قضيې رابطونو په اړه ځينې بنسټيز حقيقتونه،
+  لکه $!A \land !B \Proves !A$ او
+  $!A, !A \lif !B \Proves !B$ (قياسي استنتاج)، ثابت کړي۔ دا
+  حقيقتونه د بشپړتيا قضيې د ثبوت دپاره پکار دي۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} دواړه
+    $!A \land !B \Proves !A$ او $!A \land !B \Proves !B$۔
+  \item \ollabel{prop:provability-land-right}
+    $!A, !B \Proves !A \land !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item دواړه داسې !!{derive} کولے شو:
+    \begin{prooftree}
+      \AxiomC{$!A \land !B$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$!A$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!A \land !B$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$!B$}
+    \end{prooftree}
+  \item داسې ئې !!{derive} کولے شو:
+    \begin{prooftree}
+      \AxiomC{$!A$}
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\land}}
+      \BinaryInfC{$!A \land !B$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ ناسازګار دے۔
+  \item دواړه $!A \Proves !A \lor !B$ او $!B \Proves !A \lor !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item لاندې !!{derivation} وګورئ:
+    \begin{prooftree}
+      \AxiomC{$!A \lor !B$}
+      \AxiomC{$\lnot !A$}
+      \AxiomC{$\Discharge{!A}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \AxiomC{$\lnot !B$}
+      \AxiomC{$\Discharge{!B}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \DischargeRule{\Elim{\lor}}{1}
+      \TrinaryInfC{$\lfalse$}
+    \end{prooftree}
+    دا له !!{undischarged} فرضيو~$!A \lor !B$، $\lnot !A$ او
+    $\lnot !B$ څخه د~$\lfalse$ يو !!a{derivation} دے۔
+  \item دواړه داسې !!{derive} کولے شو:
+    \begin{prooftree}
+      \AxiomC{$!A$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$!A \lor !B$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$!A \lor !B$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left}
+    $!A, !A \lif !B \Proves !B$۔
+  \item \ollabel{prop:provability-lif-right}
+    دواړه $\lnot !A \Proves !A \lif !B$ او
+    $!B \Proves !A \lif !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item داسې ئې !!{derive} کولے شو:
+    \begin{prooftree}
+      \AxiomC{$!A \lif !B$}
+      \AxiomC{$!A$}
+      \RightLabel{\Elim{\lif}}
+      \BinaryInfC{$!B$}
+    \end{prooftree}
+    
+  \item دا د لاندې دوو !!{derivation}s په وسيله ښودل کېږي:
+    \begin{prooftree}
+      \AxiomC{$\lnot !A$}
+      \AxiomC{$\Discharge{!A}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \RightLabel{\FalseInt}
+      \UnaryInfC{$!B$}
+      \DischargeRule{\Intro{\lif}}{1}
+      \UnaryInfC{$!A \lif !B$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\lif}}
+      \UnaryInfC{$!A \lif !B$}
+    \end{prooftree}
+    پام وکړئ چې $\Intro{\lif}$ د فرضيې~$!A$~!!{discharge} کولے
+    شي، خو لازمه نۀ ده چې و ئې باسي۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

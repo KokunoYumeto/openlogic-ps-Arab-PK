@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: propositional-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prl}}
+      {\olfileid{pl}{ntd}{prl}}
+
+\olsection{قضيې قاعدې}
+
+
+\subsection{د $\land$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+
+\subsection{د $\lor$ دپاره قاعدې}
+
+\begin{defish}
+\begin{tabular}{r}
+\AxiomC{$!A$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!B$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\end{tabular}
+\hfill
+\AxiomC{$!A \lor !B$}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!C$}
+\AxiomC{$\Discharge{!B}{n}$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lor}}{n}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\end{defish}
+
+\subsection{د $\lif$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{n}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\hfill
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\end{defish}
+
+\subsection{د $\lnot$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\noLine
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{n}
+\UnaryInfC{$\lnot !A$}
+\DisplayProof
+\hfill
+\AxiomC{$\lnot !A$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\end{defish}
+
+\subsection{د $\lfalse$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!A$}
+\DisplayProof
+\hfill
+\AxiomC{$\Discharge{\lnot !A}{n}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\FalseCl}{n}
+\UnaryInfC{$!A$}
+\DisplayProof
+\end{defish}
+
+پام وکړئ چې $\Intro{\lnot}$ او~$\FalseCl$ ډېر سره ورته دي: توپير
+دا دے چې $\Intro{\lnot}$ يوه نفي شوې !!{sentence}~$\lnot !A$ راوباسي،
+خو $\FalseCl$ يوه مثبته !!{sentence}~$!A$ راوباسي۔
+
+کله چې يوه قاعده ښيي چې کومه فرضيه ايستل کېدے شي، موږ دا اجازه
+بولو، شرط ئې نۀ بولو۔ مثلاً د~$\Intro{\lif}$ په قاعده کښې د
+مقدمې~$!B$ په !!{derivation} کښې د~$!A$ په بڼه هر شمېر فرضيې
+ايستلے شو، چې صفر هم پکې شامل دے۔
+
+\end{document}

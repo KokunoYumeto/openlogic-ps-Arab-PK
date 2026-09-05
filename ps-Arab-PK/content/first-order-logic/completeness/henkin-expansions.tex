@@ -1,0 +1,217 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: henkin-expansion
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{hen}
+
+\olsection{د هنکين غځونه}
+
+\begin{explain}
+د بشپړتيا د قضيې د ثابتولو د ستونزې يوه برخه دا ده چې هغه مدل چې
+له بشپړ سازګار سټ~$\Gamma$ څخه ئې جوړوو بايد په~$\Gamma$ کښې ټول
+کميت ټاکونکي لرونکي !!{formula}s رښتوني کړي۔ د دې د تضمين دپاره د
+ليون هنکين يو چل کاروو۔ په اصل کښې دا چل د ژبې په لامتناهي ډېرو
+!!{constant}s غځول او د هر داسې !!{formula}~$!A(x)$ دپاره چې يو
+ازاد !!{variable} لري، د لاندې بڼې يو فارمول ورزياتول دي:
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c)$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}،
+چې~$c$ يو له نوو !!{constant}s څخه دے۔ کله چې هغه !!{structure}
+جوړوو چې~$\Gamma$ پوره کوي، دا به تضمين کړي چې د نوو ثابت سمبولونو
+په منځ کښې هره
+\iftag{prvEx}
+{رښتونې وجودي جمله يو شاهد ولري}
+{دروغژنه عمومي جمله يوه نقضي بېلګه ولري}۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:lang-exp}
+که~$\Gamma$ په~$\Lang L$ کښې سازګار وي او~$\Lang L'$ له~$\Lang L$
+څخه د نوو !!{constant}s د~!!a{denumerable} سټ~$\Obj d_0$،
+$\Obj d_1$، \dots په ورزياتولو ترلاسه شي، نو~$\Gamma$ په~$\Lang L'$
+کښې سازګار دے۔
+\end{prop}
+
+\begin{defn}[مشبوع سټ]
+د ژبې~$\Lang {L}$ د !!{formula}s يو سټ~$\Gamma$ هله او يوازې هله
+\emph{مشبوع} دے چې د هر داسې !!{formula}~$!A(x) \in \Frm[L]$
+دپاره چې يو ازاد !!{variable}~$x$ لري، داسې !!a{constant}
+$c \in \Lang{L}$ موجود وي چې
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c) \in \Gamma$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c) \in \Gamma$}۔
+\end{defn}
+
+لاندې تعريف به د ورپسې قضيې په ثبوت کښې وکارول شي۔
+
+\begin{defn}
+\ollabel{defn:henkin-exp}
+فرض کړئ~$\Lang L'$ هماغسې وي لکه په~\olref{prop:lang-exp} کښې۔
+د~$\Lang L'$ د ټولو هغو !!{formula}s~$!A_i(x_i)$ يوه شمېرنه
+$!A_0(x_0)$، $!A_1(x_1)$، \dots وټاکئ چې يو متغير~($x_i$) پکښې
+ازاد راځي۔ !!{sentence}s~$!D_n$ پر~$n$ د استقرا له لارې تعريفوو۔
+
+$c_0$ دې د هغو~$\Obj d_i$ په منځ کښې لومړنے !!{constant} وي چې
+مونږ~$\Lang{L}$ ته ورزيات کړي دي او په~$!A_0(x_0)$ کښې نۀ راځي۔
+په دې فرض چې~$!D_0$، \dots،~$!D_{n-1}$ له مخکښې تعريف شوي دي،
+$c_n$ دې د نوو !!{constant}s~$\Obj d_i$ په منځ کښې لومړنے هغه وي
+چې نۀ په~$!D_0$، \dots،~$!D_{n-1}$ کښې راځي او نۀ په~$!A_n(x_n)$
+کښې۔
+
+اوس~$!D_{n}$ دا !!{formula} وټاکئ: \iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_{n})] \lif
+  !A_{n}(c_{n})$}{$\lnot\lforall[x_{n}][!A_{n}(x_{n})] \lif \lnot
+  !A_{n}(c_{n})$}۔
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:henkin}
+هر سازګار سټ~$\Gamma$ يوه مشبوع سازګار سټ~$\Gamma'$ ته غځېدے
+شي۔
+\end{lem}
+
+\begin{proof}
+د ژبې~$\Lang{L}$ د جملو يو سازګار سټ~$\Gamma$ راکړل
+شوے دے؛ ژبه د نوو !!{constant}s د~!!a{denumerable} سټ په
+ورزياتولو وغځوئ، څو~$\Lang{L'}$ جوړ شي۔ د~\olref{prop:lang-exp}
+له مخې~$\Gamma$ لا هم په بډايه ژبه کښې سازګار دے۔ همدارنګه،
+$!D_i$ دې هماغسې وي لکه په~\olref{defn:henkin-exp} کښې۔ وټاکئ:
+\begin{align*}
+\Gamma_0 & = \Gamma \\
+\Gamma_{n+1} & = \Gamma_n \cup \{!D_n \}
+\end{align*}
+يعنې~$\Gamma_{n+1} = \Gamma \cup \{ !D_0, \dots, !D_n \}$، او
+$\Gamma' = \bigcup_{n} \Gamma_n$ وټاکئ۔ $\Gamma'$ په څرګند ډول
+مشبوع دے۔
+
+که~$\Gamma'$ ناسازګار وے، نو د کوم~$n$ دپاره به~$\Gamma_n$
+ناسازګار وے (تمرين: څرګنده کړئ چې ولې)۔ نو د~$\Gamma'$ د سازګارۍ
+د ښودلو دپاره دا بسنه کوي چې پر~$n$ د استقرا له لارې وښيو چې هر
+سټ~$\Gamma_n$ سازګار دے۔
+
+د استقرا بنسټ يوازې دا ادعا ده چې~$\Gamma_0 = \Gamma$ سازګار دے،
+او دا د قضيې فرضيه ده۔ د استقرا د ګام دپاره، فرض کړئ چې
+$\Gamma_{n}$ سازګار دے، خو~$\Gamma_{n+1} =
+\Gamma_n \cup \{!D_n\}$ ناسازګار دے۔ در په ياد کړئ چې~$!D_n$ دا
+دے:
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_n)] \lif !A_{n}(c_{n})$}
+{$\lnot\lforall[x_{n}][!A_{n}(x_n)] \lif \lnot !A_{n}(c_{n})$}،
+چې~$!A_n(x_n)$ د~$\Lang{L'}$ داسې !!a{formula} دے چې يوازې متغير
+$x_n$ ئې ازاد دے۔ د~$c_n$ د غوره کولو د طريقې له مخې (وګورئ
+\olref{defn:henkin-exp})، $c_n$ نۀ په~$!A_n(x_n)$ کښې راځي او نۀ
+په~$\Gamma_n$ کښې۔
+
+که~$\Gamma_n \cup \{!D_n\}$ ناسازګار وي، نو
+$\Gamma_n \Proves \lnot !D_n$، او ځکه لاندې دواړه سم دي:
+\iftag{prvEx}{
+\[
+\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves \lnot !A_n(c_n)
+\]}{
+\[
+\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves !A_n(c_n)
+\]}
+ځکه چې~$c_n$ نۀ په~$\Gamma_n$ کښې راځي او نۀ په~$!A_n(x_n)$
+کښې، د قوي تعميم قضيه
+\tagrefs{prfAX/{fol:axd:qpr:thm:strong-generalization},prfSC/{fol:seq:qpr:thm:strong-generalization},prfND/{fol:ntd:qpr:thm:strong-generalization},prfTab/{fol:tab:qpr:thm:strong-generalization}}
+پلې کېږي۔ له \iftag{prvEx}
+{$\Gamma_n \Proves \lnot !A_n(c_n)$}
+{$\Gamma_n \Proves !A_n(c_n)$}
+څخه دا ترلاسه کوو:
+\iftag{prvEx}
+{$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}۔
+نو دواړه دا لرو:
+\iftag{prvEx}
+{$\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]$ او
+$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]$ او
+$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}؛
+نو~$\Gamma_n$ پخپله ناسازګار دے۔
+\iftag{prvEx}
+{(پام وکړئ چې
+\iftag{prvAll}
+{$\lforall[x_n][\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}
+{$\lforall[x_n][\lnot !A_n]$ د
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)]$ په توګه تعريف شوے او
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}۔)}{}
+تناقض: فرض دا و چې~$\Gamma_n$ سازګار دے۔ نو
+$\Gamma_n \cup \{ !D_n\}$ سازګار دے۔
+\end{proof}
+
+\begin{explain}
+اوس به وښيو چې مشبوع، سازګار او \emph{بشپړ} سټونه دا
+خاصيت لري چې \iftag{prvAll}{يوه عمومي کميت ټاکونکې !!{sentence}
+  هله او يوازې هله لري چې د هغې ټولې بېلګې ولري}{}\iftag{defAll,defEx}{}{
+  او }\iftag{prvAll}{يوه وجودي کميت ټاکونکې !!{sentence} هله او
+  يوازې هله لري چې لږ تر لږه د هغې يوه بېلګه ولري}{}۔ له دې څخه به
+د دې ښودلو دپاره کار واخلو چې هغه !!{structure} چې له مشبوع،
+سازګار او بشپړ سټ څخه ئې جوړوو، د هغه ټولې کميت ټاکونکې جملې
+رښتونې کوي۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:saturated-instances}
+فرض کړئ~$\Gamma$ بشپړ، سازګار او مشبوع دے۔
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ هله او يوازې هله
+  چې لږ تر لږه د يوه تړلي ترم~$t$ دپاره~$!A(t) \in \Gamma$ وي۔}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ هله او يوازې هله
+  چې د ټولو تړلو ترمونو~$t$ دپاره~$!A(t) \in \Gamma$ وي۔}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+  \tagitem{prvEx}{%
+    \iftag{probEx}{تمرين۔}{لومړے فرض کړئ چې
+      $\lexists[x][!A(x)] \in \Gamma$۔ ځکه~$\Gamma$ مشبوع دے، نو
+      د کوم !!{constant}~$c$ دپاره
+      $(\lexists[x][!A(x)] \lif !A(c)) \in \Gamma$۔ د
+      \tagrefs{prfAX/{fol:axd:ppr:prop:provability-lif},prfSC/{fol:seq:ppr:prop:provability-lif},prfND/{fol:ntd:ppr:prop:provability-lif},prfTab/{fol:tab:ppr:prop:provability-lif}}، د توکي~(۱)،
+      او \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} له مخې
+      $!A(c) \in \Gamma$۔
+
+    د بل لوري دپاره مشبوع والی لازم نۀ دے: فرض کړئ
+    $!A(t) \in \Gamma$۔ بيا د
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}، د توکي~(۱) له مخې
+    $\Gamma \Proves \lexists[x][!A(x)]$۔ د
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} له مخې
+    $\lexists[x][!A(x)] \in \Gamma$۔}}{}
+  \tagitem{prvAll}{%
+    \iftag{probAll}{تمرين۔}{فرض کړئ چې د ټولو تړلو ترمونو~$t$
+      دپاره~$!A(t) \in \Gamma$۔ د نقيض په توګه فرض کړئ چې
+      $\lforall[x][!A(x)] \notin \Gamma$۔ ځکه~$\Gamma$ بشپړ دے،
+      نو~$\lnot\lforall[x][!A(x)] \in \Gamma$۔ د مشبوع والي له مخې،
+      د کوم !!{constant}~$c$ دپاره
+      \iftag{prvEx}{$(\lexists[x][\lnot !A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}{$(\lnot\lforall[x][!A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}۔ د فرض له مخې، ځکه چې~$c$ يو تړلے ترم دے، نو
+      $!A(c) \in \Gamma$۔ خو له دې څخه به~$\Gamma$ ناسازګار شي۔
+      (تمرين: هغه !!{derivation} ورکړئ چې ښيي
+      \[
+      \lnot \lforall[x][!A(x)],
+      \iftag{prvEx}{\lexists[x][\lnot !A(x)] \lif \lnot
+        !A(c)}{\lnot\lforall[x][!A(x)] \lif \lnot
+        !A(c)}, !A(c)
+      \]
+      ناسازګار دے۔)
+
+      د عکس لوري دپاره مشبوع والی لازم نۀ دے: فرض کړئ
+      $\lforall[x][!A(x)] \in \Gamma$۔ بيا د
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}،
+      د توکي~(۲) له مخې~$\Gamma \Proves !A(t)$۔ د
+      \olref[ccs]{prop:ccs} له مخې~$!A(t) \in \Gamma$۔}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\end{document}

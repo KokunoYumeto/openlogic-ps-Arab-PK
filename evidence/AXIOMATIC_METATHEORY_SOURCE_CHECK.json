@@ -1,0 +1,193 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T03:35:47.961008+00:00",
+  "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0118",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "source_bytes": 4266,
+      "source_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+      "translation_bytes": 5604,
+      "translation_sha256": "94c708fc39973edb3ed060ebe586679e944eb1383c0e3b59e8078e119d8e8d04"
+    },
+    {
+      "unit_id": "OLP-0119",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "source_bytes": 4727,
+      "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+      "translation_bytes": 6275,
+      "translation_sha256": "2428b240194c8123f3209909d393ffd7287b62d2375d7e9463299fb63ae81247"
+    },
+    {
+      "unit_id": "OLP-0120",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "source_bytes": 2176,
+      "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+      "translation_bytes": 3248,
+      "translation_sha256": "3b88761d7db06e9926d831828156b7fddfd10f74e448b089bfe940a6bc51392f"
+    },
+    {
+      "unit_id": "OLP-0121",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "source_bytes": 2886,
+      "source_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+      "translation_bytes": 3384,
+      "translation_sha256": "991e190c12987d174fedb8398b0a7b99faafb1dac3f2a0c510c9b31de54e3fde"
+    },
+    {
+      "unit_id": "OLP-0122",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "source_bytes": 2632,
+      "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+      "translation_bytes": 3495,
+      "translation_sha256": "e37242f81c884598c99714efd690d8eab59e01fd553ccb78c79159bc8f34e2cf"
+    },
+    {
+      "unit_id": "OLP-0123",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "source_bytes": 1449,
+      "source_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6",
+      "translation_bytes": 2054,
+      "translation_sha256": "cbc2096c34ddd572e6805fdc22faf2f609231e404f48b34adceffb8b93a69c7a"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0118 source transitivity closing sentence",
+      "observation": "One B_i equality omits the formula marker used throughout the derivation sequence.",
+      "treatment": "Restored the marker and disclosed the repair.",
+      "correction_id": "OLAX-002"
+    },
+    {
+      "locator": "OLP-0118 complete section",
+      "observation": "Definitions, concatenation proof, inconsistency and both compactness clauses were checked for direction and finite scope.",
+      "treatment": "No other source defect found; all formulas and dependencies are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0119 induction basis",
+      "observation": "The membership relation in the length-one case has no left operand.",
+      "treatment": "Supplied B as the operand and disclosed the repair.",
+      "correction_id": "OLAX-003"
+    },
+    {
+      "locator": "OLP-0119 first derived-fact formula",
+      "observation": "The outer consequent has no closing parenthesis.",
+      "treatment": "Added one closing parenthesis and disclosed the repair.",
+      "correction_id": "OLAX-004"
+    },
+    {
+      "locator": "OLP-0119 complete deduction-theorem proof",
+      "observation": "Both directions, all basis cases, shorter derivations, implication distribution and two meta-MP steps were checked.",
+      "treatment": "No other source defect found; every proof dependency is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0120 quantified currying schema",
+      "observation": "The final axiom instance omits the outer closing parenthesis.",
+      "treatment": "Added the single missing parenthesis and disclosed the repair.",
+      "correction_id": "OLAX-005"
+    },
+    {
+      "locator": "OLP-0120 proof endpoint",
+      "observation": "The closing gloss says Gamma derives B although the theorem and preceding line establish Gamma derives A-implies-B.",
+      "treatment": "Restored the full theorem conclusion and disclosed the repair.",
+      "correction_id": "OLAX-006"
+    },
+    {
+      "locator": "OLP-0120 remaining induction",
+      "observation": "MP and universal QR cases were checked for eigenvariable scope and every intermediate formula; the existential QR case remains the requested exercise.",
+      "treatment": "No other source defect found.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0121 complete section",
+      "observation": "All four inconsistency claims and both directions of the principal equivalence were traced through reflexivity, monotonicity, deduction and MP.",
+      "treatment": "No source defect found; formulas and references are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0122 conjunction proof",
+      "observation": "The source cites ax:land1 for both projections.",
+      "treatment": "Changed the second reference to ax:land2 and disclosed the repair.",
+      "correction_id": "OLAX-007"
+    },
+    {
+      "locator": "OLP-0122 disjunction proof",
+      "observation": "The source cites ax:lnot1 for formulas instantiating ax:lnot2.",
+      "treatment": "Changed the reference to ax:lnot2 and disclosed the repair.",
+      "correction_id": "OLAX-008"
+    },
+    {
+      "locator": "OLP-0122 implication proof",
+      "observation": "The explicit MP tree and both derived implication routes were checked for premise and conclusion direction.",
+      "treatment": "No other source defect found.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0123 strong generalization",
+      "observation": "The final step is attributed to a second deduction-theorem use, which leaves truth as an added premise instead of discharging it.",
+      "treatment": "Used truth theoremhood plus meta-MP and disclosed the correction.",
+      "correction_id": "OLAX-009"
+    },
+    {
+      "locator": "OLP-0123 tagged quantifier facts",
+      "observation": "Both instance directions, axiom references and tag branches were checked.",
+      "treatment": "No other source defect found; all formulas are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLAX-002",
+      "classification": "transitivity_proof_omits_formula_marker_on_B_i",
+      "source_locator": "axiomatic-deduction/proof-theoretic-notions.tex:88-94",
+      "target_line_1based": 86
+    },
+    {
+      "correction_id": "OLAX-003",
+      "classification": "deduction_basis_membership_formula_has_no_left_operand",
+      "source_locator": "axiomatic-deduction/deduction-theorem.tex:55-60",
+      "target_line_1based": 67
+    },
+    {
+      "correction_id": "OLAX-004",
+      "classification": "derived_implication_schema_missing_outer_closing_parenthesis",
+      "source_locator": "axiomatic-deduction/deduction-theorem.tex:108-110",
+      "target_line_1based": 111
+    },
+    {
+      "correction_id": "OLAX-005",
+      "classification": "quantified_currying_schema_missing_outer_closing_parenthesis",
+      "source_locator": "axiomatic-deduction/deduction-theorem-quantifiers.tex:39-46",
+      "target_line_1based": 48
+    },
+    {
+      "correction_id": "OLAX-006",
+      "classification": "quantified_deduction_proof_states_B_instead_of_A_implies_B",
+      "source_locator": "axiomatic-deduction/deduction-theorem-quantifiers.tex:47-49",
+      "target_line_1based": 52
+    },
+    {
+      "correction_id": "OLAX-007",
+      "classification": "conjunction_projection_proof_repeats_first_axiom_reference",
+      "source_locator": "axiomatic-deduction/provability-propositional.tex:34-38",
+      "target_line_1based": 36
+    },
+    {
+      "correction_id": "OLAX-008",
+      "classification": "disjunction_inconsistency_proof_names_wrong_negation_axiom",
+      "source_locator": "axiomatic-deduction/provability-propositional.tex:52-61",
+      "target_line_1based": 63
+    },
+    {
+      "correction_id": "OLAX-009",
+      "classification": "strong_generalization_final_step_cites_deduction_theorem_instead_of_truth_and_mp",
+      "source_locator": "axiomatic-deduction/provability-quantifiers.tex:25-30",
+      "target_line_1based": 33
+    }
+  ],
+  "conclusion": "Eight localized notation, parenthesis, conclusion, axiom-reference and proof-justification defects are repaired and disclosed. All remaining OLP-0118–0123 definitions, derivations, formulas, conditions and labels are preserved."
+}

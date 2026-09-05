@@ -1,0 +1,81 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-04T22:58:18.809212+00:00",
+  "batch_id": "PS-B012-SEQUENT-METATHEORY",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0077",
+      "source_path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_bytes": 5914,
+      "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
+      "translation_bytes": 7554,
+      "translation_sha256": "937516ea63c2764860cbb7a4cfc84a4ce7958cb831cc7d027d09ecdf72413b26"
+    },
+    {
+      "unit_id": "OLP-0078",
+      "source_path": "content/first-order-logic/sequent-calculus/provability-consistency.tex",
+      "source_bytes": 4002,
+      "source_sha256": "a44d3cb4dadd224e943e0ea4d3d81529c6e108e7eecbcf9b1cb7d3632e4a150a",
+      "translation_bytes": 4581,
+      "translation_sha256": "a0e92643bed65a2a6c8813768524a2667d38aa73200294a662fe872f83875d80"
+    },
+    {
+      "unit_id": "OLP-0079",
+      "source_path": "content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "source_bytes": 4511,
+      "source_sha256": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c",
+      "translation_bytes": 5218,
+      "translation_sha256": "a98160932051a675480f3625fd8389f8846c81c1c02db9ef1b2c50f0da971751"
+    },
+    {
+      "unit_id": "OLP-0080",
+      "source_path": "content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+      "source_bytes": 1782,
+      "source_sha256": "30d343a6b09d234683fff540afec999650f2cf4afd9ce751138b8f3b93f2fe6a",
+      "translation_bytes": 1958,
+      "translation_sha256": "3b76135a3ddd38afb4be32b9d94f5500169e38b70bdd138366705c2120e44fe0"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0077 source lines 9-12",
+      "observation": "The editorial description says natural deduction although the enclosing chapter and every definition in the section use sequent calculus and LK.",
+      "treatment": "Corrected the system name and disclosed the repair in the editorial block.",
+      "correction_id": "OLSQ-003"
+    },
+    {
+      "locator": "OLP-0079 source lines 48-54",
+      "observation": "The displayed conjunction-right inference has antecedent A in one premise and B in the other although the rule requires shared contexts.",
+      "treatment": "Added two double-line structural intermediates with common antecedent A,B and disclosed the repair.",
+      "correction_id": "OLSQ-004"
+    },
+    {
+      "locator": "OLP-0078 all four cut arguments",
+      "observation": "Finite witnesses, negation sides, cut formulas and empty succedents were checked against the sequent rules.",
+      "treatment": "No additional source defect found; all rule instances are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0080 quantifier proposition",
+      "observation": "The proposition does not restate that t is closed.",
+      "treatment": "Preserved. The preceding quantifier-rule section explicitly scopes these instantiation schemas to closed terms, and A(t) is used here as a sentence.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLSQ-003",
+      "classification": "editorial_section_misidentified_as_natural_deduction",
+      "source_locator": "sequent-calculus/proof-theoretic-notions.tex:9-12",
+      "target_line_1based": 12
+    },
+    {
+      "correction_id": "OLSQ-004",
+      "classification": "conjunction_right_tree_uses_mismatched_antecedent_contexts",
+      "source_locator": "sequent-calculus/provability-propositional.tex:48-54",
+      "target_line_1based": 51
+    }
+  ],
+  "conclusion": "Two deterministic source defects are corrected and disclosed. No additional mathematical correction is warranted for OLP-0077–0080."
+}

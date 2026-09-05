@@ -1,0 +1,77 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T01:16:18.098697+00:00",
+  "batch_id": "PS-B019-TABLEAUX-EXAMPLES",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0103",
+      "source_path": "content/first-order-logic/tableaux/proving-things.tex",
+      "source_bytes": 18225,
+      "source_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+      "translation_bytes": 19973,
+      "translation_sha256": "5e01a566fa1cdd768c05492fa42d8d7900914909f5c844a4a500808fb3db6054"
+    },
+    {
+      "unit_id": "OLP-0104",
+      "source_path": "content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_bytes": 13231,
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "translation_bytes": 14744,
+      "translation_sha256": "b5fe1b51e2605e8ffa5fca4c51515371abffc3369f243a7f61e85cddef99f4ed"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0103 source line 439",
+      "observation": "One exercise places A-or-B and not-B, separated by a comma, inside a single true signed-formula argument.",
+      "treatment": "Closed the first signed formula and wrapped not-B as a second true assumption, then disclosed the repair.",
+      "correction_id": "OLTAB-002"
+    },
+    {
+      "locator": "OLP-0104 source lines 280-282",
+      "observation": "The prose names the true-universal and false-existential rules but points to lines 1 and 3; line 3 is the already-expanded true negation, while false exists is line 4.",
+      "treatment": "Changed only the second line reference to 4 and disclosed the repair.",
+      "correction_id": "OLTAB-003"
+    },
+    {
+      "locator": "OLP-0103 all worked trees",
+      "observation": "Fourteen tableau environments were checked for sign, formula, justification index, checked state, branch topology, moved nodes and closure.",
+      "treatment": "No other source defect found; all trees are retained byte-for-byte after whitespace normalization.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0103 all remaining exercises",
+      "observation": "The three exercise groups were checked against their corresponding proof-system judgments for premise separation and target sign.",
+      "treatment": "No additional source defect found; every remaining signed formula is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0104 all worked trees",
+      "observation": "Fifteen tableau environments were checked for freshness order, reusable instantiation, branch timing, term selection, justification index and closure.",
+      "treatment": "No other source defect found; all trees are retained byte-for-byte after whitespace normalization.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0104 all exercises",
+      "observation": "All quantifier binders, negations, predicate arguments and true/false signs were checked across both problem sets.",
+      "treatment": "No source defect found; all exercise formulas are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLTAB-002",
+      "classification": "two_true_assumptions_malformed_as_one_signed_formula",
+      "source_locator": "tableaux/proving-things.tex:439",
+      "target_line_1based": 440
+    },
+    {
+      "correction_id": "OLTAB-003",
+      "classification": "prose_line_reference_points_to_negation_instead_of_false_existential",
+      "source_locator": "tableaux/proving-things-quant.tex:280-282",
+      "target_line_1based": 286
+    }
+  ],
+  "conclusion": "One malformed signed-formula exercise and one wrong prose line reference are repaired and disclosed. Every worked tableau tree and all remaining OLP-0103–0104 formulas are preserved."
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T00:43:28.927292+00:00",
+  "batch_id": "PS-B016-ND-METATHEORY",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0091",
+      "source_path": "content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_bytes": 5039,
+      "source_sha256": "12ae1ea4a864b9a42e5fb6addcfc552bb4b74c1ba2cadced427593e4ca52f8e3",
+      "translation_bytes": 5977,
+      "translation_sha256": "220790d6f8f8e16333fb144ffae612769bcd5eea4bc62481398908e878622248"
+    },
+    {
+      "unit_id": "OLP-0092",
+      "source_path": "content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_bytes": 3906,
+      "source_sha256": "90f40aecedac9a8f2760b9976de0c6eac71c1b1e90911c4a30ce029a2d9e13c6",
+      "translation_bytes": 4699,
+      "translation_sha256": "98dbbf165b620e5507c4ccaf4e6858e1f9e625862bf8150857a3bc9988b81f08"
+    },
+    {
+      "unit_id": "OLP-0093",
+      "source_path": "content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_bytes": 3817,
+      "source_sha256": "afb2c635bfea260b7ab2bc413c04f13ac8be807849baf90716dd54f89b29558a",
+      "translation_bytes": 4122,
+      "translation_sha256": "614b7ce065ebb9cbc92859e0c8300f87bdd7e3f2fb08f81d2a77dc540a5482b5"
+    },
+    {
+      "unit_id": "OLP-0094",
+      "source_path": "content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_bytes": 1733,
+      "source_sha256": "589113c86043ad1152eb1f67bef6340f846cb51929e2d3f26294450516da247c",
+      "translation_bytes": 1912,
+      "translation_sha256": "d773465a7ea0a7070b34ab4ce3f17137cacc57e13feba15dd737fca895339d74"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0092 source lines 71-72",
+      "observation": "The classical-contradiction inference receives a standalone right label and then an indexed discharge-rule label for the same rule.",
+      "treatment": "Removed the redundant standalone label, retained the indexed discharge label and disclosed the repair after the tree.",
+      "correction_id": "OLND-005"
+    },
+    {
+      "locator": "OLP-0091 editorial opening",
+      "observation": "The English editorial sentence omits a small grammatical connector before 'the provability relation'.",
+      "treatment": "Translated the intended grammatical sentence normally; this is not a mathematical or structural correction.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0091 all definitions and compactness proof",
+      "observation": "Open versus discharged assumptions, consequence notation, the transitivity substitution tree and finite witness argument were checked together.",
+      "treatment": "No mathematical source defect found; all definitions, propositions and problem references are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0092 remaining proof trees",
+      "observation": "Both negation directions, explicit inconsistency and the two inconsistent-extension derivations were checked against OLP-0086.",
+      "treatment": "No additional source defect found; every rule and discharge is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0093 all connective propositions",
+      "observation": "Each conjunction, disjunction and implication proof was checked for premise order, rule arity, discharge scope and final judgment.",
+      "treatment": "No source defect found; all proof trees and zero-discharge explanation are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0094 complete section",
+      "observation": "Strong-generalization freshness and both tagged one-step derivations were checked against the natural-deduction quantifier rules.",
+      "treatment": "No source defect found; all formulas and tag topology are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLND-005",
+      "classification": "classical_contradiction_step_has_duplicate_rule_labels",
+      "source_locator": "natural-deduction/provability-consistency.tex:71-72",
+      "target_line_1based": 75
+    }
+  ],
+  "conclusion": "One redundant proof-tree label is removed and disclosed. All remaining OLP-0091–0094 definitions, proofs and formulas are preserved."
+}

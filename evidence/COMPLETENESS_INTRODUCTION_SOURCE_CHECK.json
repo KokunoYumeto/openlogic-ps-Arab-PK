@@ -1,0 +1,52 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T16:03:54.373897+00:00",
+  "batch_id": "PS-B026-COMPLETENESS-INTRODUCTION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0126",
+      "source_path": "content/first-order-logic/completeness/completeness.tex",
+      "source_bytes": 653,
+      "source_sha256": "4d9dd7fc873888fde7d70bf45fa122465858092c4f7a979741067b3bda88eb18",
+      "translation_bytes": 657,
+      "translation_sha256": "900f12b7c736aa920339f76592fd7359401a689ddd14c9dc9e4c375dd9828589"
+    },
+    {
+      "unit_id": "OLP-0127",
+      "source_path": "content/first-order-logic/completeness/introduction.tex",
+      "source_bytes": 3699,
+      "source_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
+      "translation_bytes": 5100,
+      "translation_sha256": "db2605630be64db8fab48321f18d2c616ffbf715be263cd258a084e8c46bf7d5"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0126 complete driver",
+      "observation": "Both logical profiles, the eleven-unit chapter graph and every conditional import were checked against the manifest and source.",
+      "treatment": "No source defect found; all structure is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0127 completeness formulations",
+      "observation": "Semantic consequence to derivability and consistency to satisfiability were checked as equivalent formulations with their exact directions.",
+      "treatment": "No source defect found; the proof-theoretic and semantic notions remain distinct.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0127 Hilbert quotation and qualification",
+      "observation": "The quotation, Frege's opposition and the qualified model-existence conclusion were checked together.",
+      "treatment": "No source defect found; the historical claim is translated without strengthening it.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0127 compactness and model construction",
+      "observation": "The finite-premise inference, equivalent finite-subset consistency form, direct finitely-satisfiable construction and FOL-only small-model consequence were checked.",
+      "treatment": "No source defect found; each implication and FOL gate is retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source defect was found in OLP-0126–0127. Both completeness formulations, the historical qualification, compactness consequences, model construction and structural branches are preserved."
+}

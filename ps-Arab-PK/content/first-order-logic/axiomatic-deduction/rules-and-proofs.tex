@@ -1,0 +1,98 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{rul}}
+      {\olfileid{pl}{axd}{rul}}
+
+\olsection{قاعدې او \usetoken{P}{derivation}}
+
+\begin{explain}
+  بديهي !!{derivation}s ښايي د منطق د !!{derivation} تر ټولو ساده
+  نظام وي۔ !!^a{derivation} يوازې د !!{formula}s يوه لړۍ ده۔ د
+  !!a{derivation} ګڼل کېدو دپاره، په لړۍ کښې هر !!{formula} بايد
+  يا د کوم بديهي اصل يوه بېلګه وي، يا د استنتاج د کومې قاعدې له مخې
+  له يوه يا زياتو هغو !!{formula}s څخه راشي چې په لړۍ کښې ترې وړاندې
+  دي۔ !!^a{derivation} خپل وروستے !!{formula}، !!{derive}s کوي۔
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+که $\Gamma$ د~$\Lang L$ د !!{formula}s يو سټ وي، نو له~$\Gamma$
+څخه يو \emph{!!{derivation}} د !!{formula}s يوه متناهي لړۍ
+$!A_1$، \dots،~$!A_n$ ده، چې د هر $i \le n$ دپاره له لاندې څخه
+يو شرط پوره کېږي:
+\begin{enumerate}
+\item $!A_i \in \Gamma$؛ يا
+\item $!A_i$ يو بديهي اصل دے؛ يا
+\item $!A_i$ د استنتاج د کومې قاعدې له مخې له کوم $!A_j$ (او
+  $!A_k$) څخه راځي، چې $j < i$ (او $k < i$)۔
+\end{enumerate}
+\end{defn}
+
+دا چې سم !!{derivation} څه ګڼل کېږي، په دې پورې اړه لري چې موږ
+کومې استنتاجي قاعدې منو (او البته کوم څيزونه بديهي اصول ګڼو)۔
+استنتاجي قاعده يوه که-نو وينا ده چې راته وايي د ځينو شرطونو لاندې
+په !!a{derivation} کښې يو ګام~$!A_i$ سم استنتاجي ګام دے۔
+\textbf{د ژباړې د نسخې سمون (OLAX-001):} سرچينې په دې يو ځای کښې
+د اې-آی د ميتا-فارمول نښه پرېښې وه؛ تعريف او د همدې پاراګراف نورې
+ټولې کارونې هغه د فارمول په توګه ليکي، نو نښه دلته بېرته راوستل شوه۔
+
+\begin{defn}[د استنتاج قاعده]
+د \emph{استنتاج قاعده} يو بس شرط ورکوي چې له~$\Gamma$ څخه په
+!!a{derivation} کښې څه شی سم استنتاجي ګام ګڼل کېږي۔
+\end{defn}
+
+د بېلګې په توګه، ځکه چې هره يو-غړيزه لړۍ~$!A$ چې
+$!A \in \Gamma$ وي، په څرګند ډول !!a{derivation} ګڼل کېږي، لاندې
+ډېره ساده استنتاجي قاعده کېدے شي:
+\begin{quote}
+  که $!A \in \Gamma$ وي، نو $!A$ له~$\Gamma$ څخه په هر
+  !!{derivation} کښې تل سم استنتاجي ګام دے۔
+\end{quote}
+همدارنګه که $!A$ له بديهي اصولو څخه يو وي، نو يوازې $!A$ هم
+!!a{derivation} دے؛ ځکه دا هم يوه استنتاجي قاعده ده:
+\begin{quote}
+  که $!A$ بديهي اصل وي، نو $!A$ سم استنتاجي ګام دے۔
+\end{quote}
+خبره هغه وخت لا په زړه پورې شي چې استنتاجي قاعده هغو !!{formula}s
+ته رجوع کوي چې تر څېړل شوي ګام وړاندې راغلي وي۔ لاندې قاعده
+\emph{مودوس پوننس} بلل کېږي:
+\begin{quote}
+  که $!B \lif !A$ او $!B$ په !!{derivation} کښې وړاندې راغلي وي،
+  نو~$!A$ سم استنتاجي ګام دے۔
+\end{quote}
+که همدا يوازينۍ استنتاجي قاعده وي، نو د !!{derivation} پورته تعريف
+مو داسې کېږي: $!A_1$، \dots،~$!A_n$ هله او يوازې هله
+!!a{derivation} دے چې د هر $i \le n$ دپاره له لاندې څخه يو شرط
+پوره کېږي:
+\begin{enumerate}
+\item $!A_i \in \Gamma$؛ يا
+\item $!A_i$ يو بديهي اصل دے؛ يا
+\item د کوم $j < i$ دپاره $!A_j$، $!B \lif !A_i$ وي، او د کوم
+  $k < i$ دپاره $!A_k$،~$!B$ وي۔
+\end{enumerate}
+وروستے بند وايي چې $!A_i$ له~$!A_j$ ($!B \lif !A_i$) او
+$!A_k$ ($!B$) څخه د مودوس پوننس په وسيله راځي۔ که له~$1$ څخه
+تر~$n$ پورې تېرېدے شو، او هر ځل داسې !!a{formula}~$!A_i$ ومومو
+چې يا په~$\Gamma$ کښې وي، يا بديهي اصل وي، يا استنتاجي قاعده راته
+وايي چې سم استنتاجي ګام دے، نو ټوله لړۍ سم !!{derivation} ګڼل کېږي۔
+
+\begin{defn}[!!^{derivability}]
+يو !!{formula}~$!A$ هله له~$\Gamma$ څخه \emph{!!{derivable}} دے،
+چې $\Gamma \Proves !A$ ليکو، چې له~$\Gamma$ څخه داسې
+!!a{derivation} وي چې په~$!A$ پاے ته رسېږي۔
+\end{defn}
+
+\begin{defn}[قضيې]
+!!^a{formula}~$!A$ هله \emph{قضيه} ده چې له تش سټ څخه د~$!A$ يو
+!!a{derivation} وي۔ که $!A$ قضيه وي $\Proves !A$، او که نۀ وي
+$\Proves/ !A$ ليکو۔
+\end{defn}
+
+
+\end{document}

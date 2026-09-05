@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 73 of 722 source units are translated drafts. This log contains 88 terminology entries and 46 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 131 of 722 source units are translated drafts. This log contains 95 terminology entries and 84 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -796,6 +796,69 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Review question: In Pakistani Pashto mathematical prose, is «ځانګړے متغير / د ځانګړي متغير شرط / کمزوري کول / انقباض / تبادله / پرېکون» the clearest conventional rendering of “eigenvariable / eigenvariable condition / weakening / contraction / exchange / cut” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
+## TERM-DERIVATION-SEARCH
+
+- Type: terminology
+- Choice: وروستنے سېکوېنټ / تر ټولو بره سېکوېنټ / تر ټولو لاندې سېکوېنټ / مقدمه / پايله / له پايلې څخه شاته د ثبوت لټون / د قاعدې کارونه
+- Uncertainty: proof and conclusion language regionally supported; exact sequent-tree labels and backward-search compound provisional
+- Alternatives: وروستۍ نتيجه او مخکينۍ مقدمې; له لاندې څخه پورته قاعدوي تجزيه
+- Review question: In Pakistani Pashto mathematical prose, is «وروستنے سېکوېنټ / تر ټولو بره سېکوېنټ / تر ټولو لاندې سېکوېنټ / مقدمه / پايله / له پايلې څخه شاته د ثبوت لټون / د قاعدې کارونه» the clearest conventional rendering of “end-sequent / topmost sequent / bottommost sequent / premise / conclusion / backward proof search / rule instance” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-DERIVABILITY-PROPERTIES
+
+- Type: terminology
+- Choice: ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت
+- Uncertainty: proof, consistency and relational-property concepts regionally supported; exact proof-theoretic and compactness compounds provisional
+- Alternatives: د ثبوت اړوند مفاهيم; انعکاس، زياتېدنه، انتقال او تراکم
+- Review question: In Pakistani Pashto mathematical prose, is «ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت» the clearest conventional rendering of “proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness)” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-SEQUENT-SOUNDNESS
+
+- Type: terminology
+- Choice: د سېکوېنټ اعتبار / سم اشتقاقي نظام / پر اشتقاق استقرا / تر ټولو لاندې استنتاج / د معنايي اعتبار ساتنه
+- Uncertainty: semantic and proof roles regionally supported; exact multiword sequent-soundness compounds provisional
+- Alternatives: د سېکوېنټ صحت; د معنا ساتونکے استنتاج; پر ثبوت استقرا
+- Review question: In Pakistani Pashto mathematical prose, is «د سېکوېنټ اعتبار / سم اشتقاقي نظام / پر اشتقاق استقرا / تر ټولو لاندې استنتاج / د معنايي اعتبار ساتنه» the clearest conventional rendering of “sequent validity / sound derivation system / induction on derivation / lowest inference / semantic preservation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-NATURAL-DEDUCTION
+
+- Type: terminology
+- Choice: فطري استنتاج / فرضيه / فرضيه ايستل / د داخلولو قاعده / د ايستلو قاعده / مقدمه / پايله
+- Uncertainty: proof-system and premise/conclusion roles regionally supported; exact natural-deduction and discharge compounds provisional
+- Alternatives: طبعي استنتاج; فرضيه ساقطول; د معرفۍ او حذف قاعدې
+- Review question: In Pakistani Pashto mathematical prose, is «فطري استنتاج / فرضيه / فرضيه ايستل / د داخلولو قاعده / د ايستلو قاعده / مقدمه / پايله» the clearest conventional rendering of “natural deduction / assumption / discharge / introduction rule / elimination rule / premise / conclusion” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-TABLEAUX
+
+- Type: terminology
+- Choice: تابلو / نښه لرونکے فارمول / د رښتياوالي نښه / څانګه / ريښه / تړلې او پرانيستې څانګه / پرېکون / د ځانګړي متغير شرط
+- Uncertainty: proof, truth, semantic and predicate roles regionally supported; exact tableau, signed-formula and branch compounds provisional
+- Alternatives: رښتيا ونه; لاسليک لرونکے فارمول; خلاصه او بنده څانګه; د قضيو وېش
+- Review question: In Pakistani Pashto mathematical prose, is «تابلو / نښه لرونکے فارمول / د رښتياوالي نښه / څانګه / ريښه / تړلې او پرانيستې څانګه / پرېکون / د ځانګړي متغير شرط» the clearest conventional rendering of “tableau / signed formula / truth sign / branch / root / closed and open branch / cut / eigenvariable condition” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-COMPLETENESS-CONSTRUCTION
+
+- Type: terminology
+- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل
+- Uncertainty: general semantic, consistency and proof concepts attested; exact construction labels unattested and provisional
+- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل
+- Review question: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-DECIDABILITY
+
+- Type: terminology
+- Choice: د بديهي اصولو له لارې څرګندېدونکې / د پرېکړې وړ
+- Uncertainty: supporting axiom and proof concepts attested; exact metatheoretic labels unattested and provisional
+- Alternatives: اکسيوماتيک کېدونکې; فيصله کېدونکې; الګوريتمي پرېکړه لرونکې
+- Review question: In Pakistani Pashto mathematical prose, is «د بديهي اصولو له لارې څرګندېدونکې / د پرېکړې وړ» the clearest conventional rendering of “axiomatizable / decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
 ## DEC-OLFUN-001
 
 - Type: source-correction
@@ -1155,6 +1218,348 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLSIZ-010 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous adoption of the manager shared source audit after independent comparison with this lane target
+
+## DEC-OLSQ-001
+
+- Type: source-correction
+- Choice: changes exactly four exchange-rule labels from right exchange to left exchange where the displayed step swaps adjacent formulas in the antecedent; the two genuine succedent exchanges remain unchanged
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner review of every worked proof tree and its explanatory prose against the immediately preceding sequent-rule schemas
+
+## DEC-OLSQ-002
+
+- Type: source-correction
+- Choice: restores negation to the second disjunct in both candidate upper sequents, matching the requested end-sequent and every subsequent proof tree
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner review of every worked proof tree and its explanatory prose against the immediately preceding sequent-rule schemas
+
+## DEC-OLSQ-003
+
+- Type: source-correction
+- Choice: replaces natural deduction with sequent calculus in the editorial description, matching the enclosing chapter and every following LK definition
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the editorial description with the enclosing chapter identity and complete section body
+
+## DEC-OLSQ-004
+
+- Type: source-correction
+- Choice: adds double-line structural steps from the two identity sequents to premises with the common antecedent A,B required by conjunction-right
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner rule-instance check against the frozen conjunction-right schema in OLP-0071
+
+## DEC-OLSQ-005
+
+- Type: source-correction
+- Choice: replaces the bare premise sequent Gamma entails Delta with the proved conclusion A-and-B,Gamma entails Delta
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the last sentence with the displayed left-conjunction rule and the paragraph's immediately preceding semantic conclusion
+
+## DEC-OLSQ-006
+
+- Type: source-correction
+- Choice: replaces Pi set-minus Lambda with the right cut-premise sequent Pi entails Lambda
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSQ-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the prose with the immediately preceding displayed cut rule and the definition of sequent validity
+
+## DEC-OLND-001
+
+- Type: source-correction
+- Choice: renders the one, two or three nodes above a sentence as other sentences rather than sequents
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the paragraph's first clause and all displayed rule schemas in the immediately following units
+
+## DEC-OLND-002
+
+- Type: source-correction
+- Choice: states the exact conclusion, open-assumption and existential-major-premise restrictions instead of saying that the eigenvariable occurs in no premise
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the summary with both displayed rule schemas and the two immediately preceding side-condition paragraphs
+
+## DEC-OLND-003
+
+- Type: source-correction
+- Choice: labels the inference from not-A and A to falsehood as negation elimination rather than falsehood introduction
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the completed tree with the immediately preceding partial tree and the frozen propositional rule schema in OLP-0086
+
+## DEC-OLND-004
+
+- Type: source-correction
+- Choice: calls the sentence at the bottom of the natural-deduction tree the final conclusion rather than a sentence in an end-sequent
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the natural-deduction definition in OLP-0088 and the displayed one-formula tree
+
+## DEC-OLND-005
+
+- Type: source-correction
+- Choice: removes a standalone classical-contradiction right label immediately duplicated by the indexed discharge-rule label, retaining the latter
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the defined indexed classical-contradiction schema and all other discharge-rule applications in OLP-0086–0093
+
+## DEC-OLND-006
+
+- Type: source-correction
+- Choice: adds negation elimination to the prose list of multi-premise inferences, matching its two-premise schema and the exercise that immediately follows
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLND-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the prose list with the defined natural-deduction rule arities and the immediately following enumerated cases
+
+## DEC-OLTAB-001
+
+- Type: source-correction
+- Choice: replaces natural deduction with tableaux in the prfTab editorial inclusion instruction
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the driver sentence with its chapter identity, tag name and complete import graph
+
+## DEC-OLTAB-002
+
+- Type: source-correction
+- Choice: closes the true sign after A-or-B and gives not-B its own true signed-formula wrapper before the false-A conclusion
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the matching natural-deduction exercise and the signed-formula pair definition
+
+## DEC-OLTAB-003
+
+- Type: source-correction
+- Choice: changes the reusable false-existential signed-formula reference from line 3 to line 4
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing of the prose instruction against the immediately preceding and final numbered branch trees
+
+## DEC-OLTAB-004
+
+- Type: source-correction
+- Choice: changes D_m subseteq Gamma to D_m in Gamma in the list of individual formulas selected from Gamma
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the transitivity prose with its two finite-premise tableau displays
+
+## DEC-OLTAB-005
+
+- Type: source-correction
+- Choice: changes the defining endpoint of Gamma_1 from C_n to C_m
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing of both finite subsets through the displayed tableaux and the closing union argument
+
+## DEC-OLTAB-006
+
+- Type: source-correction
+- Choice: omits the isolated source backslash between the finite-list sentence and its display
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner source inspection at the display boundary
+
+## DEC-OLTAB-007
+
+- Type: source-correction
+- Choice: states that the true-negation rule is applied to true not-A and yields false A
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner rule tracing against the immediately preceding replacement instruction and the tableaux rule schema
+
+## DEC-OLTAB-008
+
+- Type: source-correction
+- Choice: closes each truth-sign argument before opening the formula argument in eight signed-formula calls
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the eight malformed calls with the surrounding well-formed signed-formula calls and intended closed branches
+
+## DEC-OLTAB-009
+
+- Type: source-correction
+- Choice: replaces five copied B occurrences with A so each universal premise matches its A-instance conclusion and semantic derivation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing of each universal-rule premise through its instance and semantic preservation argument
+
+## DEC-OLTAB-010
+
+- Type: source-correction
+- Choice: changes the description of line 3 from true A(s2) to true A(s1)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner matching of each prose prerequisite against the numbered symmetry tree and the stated A(x)
+
+## DEC-OLTAB-011
+
+- Type: source-correction
+- Choice: replaces generic t1=t2 with the actual s1=s2 obtained from A(s2) in this instantiation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner substitution of s2 into the paragraph's explicit definition A(x)=s1=x
+
+## DEC-OLTAB-012
+
+- Type: source-correction
+- Choice: changes the result of the true-identity rule from S:A(t2) to true A(t2)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLTAB-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the named rule and its premises with the immediately preceding identity-rule schemas
+
+## DEC-OLAX-001
+
+- Type: source-correction
+- Choice: changes the lone generic step A_i to the marked formula metavariable !A_i
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the immediately preceding finite-sequence definition and later exhaustive modus-ponens formalization
+
+## DEC-OLAX-002
+
+- Type: source-correction
+- Choice: changes B_i=A to !B_i=!A in the final concatenation justification
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-003
+
+- Type: source-correction
+- Choice: changes the isolated relation in Gamma-union-{A} to B in Gamma-union-{A}
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-004
+
+- Type: source-correction
+- Choice: adds the omitted closing parenthesis to the first derived-fact formula
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-005
+
+- Type: source-correction
+- Choice: adds the omitted outer closing parenthesis to the quantified currying theorem
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-006
+
+- Type: source-correction
+- Choice: changes the closing gloss from Gamma derives B to Gamma derives A-implies-B
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-007
+
+- Type: source-correction
+- Choice: changes the second conjunction projection reference from ax:land1 to ax:land2
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-008
+
+- Type: source-correction
+- Choice: changes ax:lnot1 to ax:lnot2 for the two displayed explosion conditionals
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-009
+
+- Type: source-correction
+- Choice: attributes the final step to the truth axiom and meta-modus ponens
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema
+
+## DEC-OLAX-010
+
+- Type: source-correction
+- Choice: changes satisfaction of B(c) to satisfaction of the marked formula !B(c)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas
+
+## DEC-OLAX-011
+
+- Type: source-correction
+- Choice: restricts the derived reflexive identity proposition from any term to any closed term
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas
+
+## DEC-OLAX-012
+
+- Type: source-correction
+- Choice: adds that the two displayed terms in the derived substitutability proposition are closed
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLAX-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas
+
+## DEC-OLCOM-001
+
+- Type: source-correction
+- Choice: condition (b) now requires deciding every sentence A, rather than only every atomic sentence
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison with the same paragraph's definition claim and the immediately following formal definition
+
+## DEC-OLCOM-002
+
+- Type: source-correction
+- Choice: the union-consistency proof now handles the empty finite subset before selecting the greatest stage index for a nonempty finite subset
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner proof trace of the finite-subset argument before selecting a maximum witness index
 
 ## DEC-REL-I
 

@@ -1,0 +1,101 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T01:03:46.536935+00:00",
+  "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0098",
+      "source_path": "content/first-order-logic/tableaux/tableaux.tex",
+      "source_bytes": 926,
+      "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+      "translation_bytes": 1344,
+      "translation_sha256": "d8e7f1e5c99e74f9e3bc7f60a1021303faae7e8926b2832e3df986fcc697d6d6"
+    },
+    {
+      "unit_id": "OLP-0099",
+      "source_path": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_bytes": 2466,
+      "source_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+      "translation_bytes": 3256,
+      "translation_sha256": "35d943dd4e3075ad0466eee777b08201efeee829228fb6a4506b5360d9fdaca1"
+    },
+    {
+      "unit_id": "OLP-0100",
+      "source_path": "content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_bytes": 2246,
+      "source_sha256": "dcf0dc5fbdbfd79a7cf8c4b07a3d3d51aedc9ac424416d205ee5a8fd0877a8f4",
+      "translation_bytes": 2406,
+      "translation_sha256": "f2424a5bfa7742767930704539c12bc7d2d235227cc6f09521a9b395ea4e2211"
+    },
+    {
+      "unit_id": "OLP-0101",
+      "source_path": "content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_bytes": 3850,
+      "source_sha256": "682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0",
+      "translation_bytes": 4506,
+      "translation_sha256": "bafca9cb38662d8346f3ebba1b41cb3daf8a37197eb7fe2fa1f270614e8ed647"
+    },
+    {
+      "unit_id": "OLP-0102",
+      "source_path": "content/first-order-logic/tableaux/derivations.tex",
+      "source_bytes": 3787,
+      "source_sha256": "2cb9a2b6c144eb8b53c4a4d9c52daab60bcd3491dbc909cdd5ccf42300fe5452",
+      "translation_bytes": 4669,
+      "translation_sha256": "e095de247b7fbc7452be9b86d37442e6bb78712e9ae0fdb3d3d930422120f6cd"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0098 source lines 15-16",
+      "observation": "The tableaux driver says the prfTab tag controls material relevant to natural deduction, naming a different proof system.",
+      "treatment": "Changed the prose name to tableaux, retained the tag and every import, and disclosed the repair.",
+      "correction_id": "OLTAB-001"
+    },
+    {
+      "locator": "OLP-0099 complete section",
+      "observation": "Signed-formula definition, branch ancestry, closure and false-root validity intuition were checked together.",
+      "treatment": "No source defect found; every truth sign and closure direction is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0100 all rule schemas",
+      "observation": "Each connective rule was checked for true/false sign, branch versus sequence topology and formula order; cut was checked for its zero-premise split and admissibility claim.",
+      "treatment": "No source defect found; all rule schemas and the cut statement are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0101 first universal rule label",
+      "observation": "The displayed true-universal label uses the standard universal symbol while later labels use the OpenLogic lforall form.",
+      "treatment": "Preserved as an equivalent notation choice, consistent with earlier prose-label decisions.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0101 term-instantiation explanation",
+      "observation": "The later phrase 'no restrictions' is read in the scope established immediately above: any closed term is allowed, with no additional eigenvariable restriction.",
+      "treatment": "Rendered explicitly as no further restriction beyond closedness; formulas and rule conditions remain unchanged.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0101 unsoundness example",
+      "observation": "The complete tree was checked for repeated use of false implication, the fresh-constant violation and closure of the invalid existential-to-universal implication.",
+      "treatment": "No source defect found; every sign, rule reference and close marker is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0102 complete definition and example",
+      "observation": "The finite-tree conditions and all three stages of the worked contradiction tableau were checked for assumption order, ancestor references and closure.",
+      "treatment": "No source defect found; unusual harmless empty groups after two tableau environments are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLTAB-001",
+      "classification": "tableaux_driver_editorial_instruction_names_wrong_proof_system",
+      "source_locator": "tableaux/tableaux.tex:15-16",
+      "target_line_1based": 17
+    }
+  ],
+  "conclusion": "One copied proof-system name is repaired and disclosed. All OLP-0098–0102 imports, rules, formulas, tableau trees and quantified side conditions are preserved."
+}

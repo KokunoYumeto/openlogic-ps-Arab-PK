@@ -1,0 +1,95 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T00:25:18.113275+00:00",
+  "batch_id": "PS-B014-ND-FOUNDATION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0084",
+      "source_path": "content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "source_bytes": 977,
+      "source_sha256": "c53bed3aa593285a104c9e4c1c40a08efadb3b58094119043baa7a27b8a652e7",
+      "translation_bytes": 1114,
+      "translation_sha256": "53002be3f5efc6749c76c3d468a050da159108db28a5dbc88854ad00fb2d59d9"
+    },
+    {
+      "unit_id": "OLP-0085",
+      "source_path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_bytes": 2061,
+      "source_sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
+      "translation_bytes": 3103,
+      "translation_sha256": "6fe92c1184af0036be4dff079b3c03a7f1da3f28fc142a4a647ec5538306a6f5"
+    },
+    {
+      "unit_id": "OLP-0086",
+      "source_path": "content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_bytes": 2386,
+      "source_sha256": "5a85acea130c096719ef92c9513ab18a27380a22972eb859d55db92600932846",
+      "translation_bytes": 2610,
+      "translation_sha256": "5928723a31afd26f60b14c29e6f7185211adadd1132e461bb31fc9e9817647a5"
+    },
+    {
+      "unit_id": "OLP-0087",
+      "source_path": "content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_bytes": 4001,
+      "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
+      "translation_bytes": 5570,
+      "translation_sha256": "f73faf74fe627dcfd64d145808fa17b80861acc774cee1c98f72d0ed9fdcdcc1"
+    },
+    {
+      "unit_id": "OLP-0088",
+      "source_path": "content/first-order-logic/natural-deduction/derivations.tex",
+      "source_bytes": 3715,
+      "source_sha256": "f238e4c13bb97940ff82f8016aed565b9388d475721f9b6ff132166bf628aa5e",
+      "translation_bytes": 4383,
+      "translation_sha256": "84be9e0652a01977020801b49b7c8bada2a886a869717671c2a54a171221c4d1"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0085 source line 33",
+      "observation": "A natural-deduction tree of sentences describes a lower sentence as standing below one, two or three other sequents.",
+      "treatment": "Rendered the upper nodes as sentences and disclosed the repair in the same paragraph.",
+      "correction_id": "OLND-001"
+    },
+    {
+      "locator": "OLP-0087 source lines 58-61",
+      "observation": "The generalized eigenvariable sentence forbids the eigenvariable in premises, contradicting the displayed A(a) premise or auxiliary assumption in both affected rules.",
+      "treatment": "Restated the exact conclusion, open-assumption and existential-major-premise scopes already specified by the source, with an adjacent disclosure.",
+      "correction_id": "OLND-002"
+    },
+    {
+      "locator": "OLP-0086 all propositional rule trees",
+      "observation": "Rule arities, discharge labels, falsehood rules and the permission to discharge zero matching occurrences were checked together.",
+      "treatment": "No additional source defect found; every displayed tree and scope statement is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0087 source lines 80-84 and 110-113",
+      "observation": "The phrase that t can be anything occurs after t was explicitly restricted to closed terms, and the final sentence again relies on closed-term substitution.",
+      "treatment": "Rendered this contextually as any closed term, preserving the declared domain rather than introducing open terms; no formula or rule correction is needed.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0088 complete definition and examples",
+      "observation": "Finite-tree direction, discharged/open assumption roles, derivability notation and all example conclusions were checked against the displayed rules.",
+      "treatment": "No source defect found; all examples and the zero-occurrence discharge case are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLND-001",
+      "classification": "natural_deduction_tree_nodes_mislabeled_as_sequents",
+      "source_locator": "natural-deduction/rules-and-proofs.tex:33",
+      "target_line_1based": 43
+    },
+    {
+      "correction_id": "OLND-002",
+      "classification": "eigenvariable_summary_incompatibly_forbids_occurrence_in_premises",
+      "source_locator": "natural-deduction/quantifier-rules.tex:58-61",
+      "target_line_1based": 62
+    }
+  ],
+  "conclusion": "Two deterministic prose defects are corrected and disclosed. The chapter driver, complete foundation rule set and derivation definition otherwise preserve source structure and mathematics."
+}

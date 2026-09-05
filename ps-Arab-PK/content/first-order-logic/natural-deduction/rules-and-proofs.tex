@@ -1,0 +1,56 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{rul}}
+      {\olfileid{pl}{ntd}{rul}}
+
+\olsection{قاعدې او \usetoken{P}{derivation}}
+
+\begin{explain}
+د فطري استنتاج له نظامونو څخه موخه دا ده چې په رياضيکي ثبوت کښې له
+کارېدونکي غيررسمي استدلال سره نژدې موازي وي (همدا وجه ده چې تر يوه
+حده “فطري” دے)۔ د فطري استنتاج ثبوتونه له فرضيو پيلېږي۔ بيا د
+استنتاج قاعدې ورباندې کارول کېږي۔ فرضيې د~\Intro{\lnot}،
+\Intro{\lif}، \iftag{FOL}{\Elim{\lor} او \Elim{\lexists}}{ او
+  \Elim{\lor}} د استنتاج د قاعدو په وسيله “!!{discharged}” کېږي،
+او د روښانتيا دپاره د !!{discharged} شوې فرضيې نښان د استنتاج تر
+څنګ ليکل کېږي۔
+\end{explain}
+
+\begin{defn}[فرضيه]
+يوه \emph{فرضيه} هره هغه !!{sentence} ده چې د هرې څانګې په تر ټولو
+پورتني ځاے کښې وي۔
+\end{defn}
+
+په فطري استنتاج کښې !!^{derivation}s د !!{sentence}s ځانګړې ونې دي؛
+تر ټولو پورتنۍ !!{sentence}s فرضيې وي، او که يوه !!a{sentence} تر
+يوې، دوو يا دريو نورو جملو لاندې وي، بايد په سمه توګه د استنتاج له
+يوې قاعدې څخه پايله شي۔ د استنتاج په سر کښې !!{sentence}s د هغې
+\emph{مقدمې} او لاندې !!{sentence} د استنتاج \emph{پايله} بلل کېږي۔
+قاعدې په جوړو کښې راځي: د هر !!{operator} دپاره يوه د داخلولو او
+يوه د ايستلو قاعده۔ دوئ په پايله کښې !!a{operator} داخلوي يا
+!!a{operator} د قاعدې له يوې مقدمې څخه باسي۔ ځينې قاعدې اجازه
+ورکوي چې د يوه ټاکلي
+ډول فرضيه \emph{!!{discharged}} شي۔ د دې د ښودلو دپاره چې کومه
+فرضيه د کوم استنتاج په وسيله !!{discharged} کېږي، فرضيې او استنتاج
+دواړو ته نښانونه ورکوو۔ دا د فرضيې په “$\Discharge{!A}{n}$” ليکلو
+ښودل کېږي۔ \textbf{د ژباړې د نسخې سمون (OLND-001):} سرچينه په دې
+ونه کښې لاندې ولاړ توکي “سېکوېنټونه” بولي؛ دلته “جملې” راوړل شوې،
+ځکه خپله سرچينه ونه د جملو ونه تعريفوي او قاعدې پر جملو لګېږي۔
+
+% Only include this sentence is on of \land, lor, lif or lnot is defined.
+
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}%
+	{دا دود دے چې د ټولو !!{operator}s~$\land$، $\lor$، $\lif$،
+    $\lnot$ او~$\lfalse$ دپاره قاعدې په پام کښې ونيول شي، که څه هم
+    ځينې ئې تعريف شوي وي۔}
+
+
+
+\end{document}

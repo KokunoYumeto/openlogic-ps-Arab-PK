@@ -1,0 +1,79 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-04T22:42:01.352759+00:00",
+  "batch_id": "PS-B011-SEQUENT-EXAMPLES",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0074",
+      "source_path": "content/first-order-logic/sequent-calculus/derivations.tex",
+      "source_bytes": 4239,
+      "source_sha256": "25897d850b211443621f31a1166f443c1e00c6bcbf13002bc1b9281ca4300371",
+      "translation_bytes": 5081,
+      "translation_sha256": "d81319d9d1624b84470fc26764918e80256f94b0255714463d00d8b9b94dfa1a"
+    },
+    {
+      "unit_id": "OLP-0075",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_bytes": 12407,
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "translation_bytes": 14574,
+      "translation_sha256": "5032089c0446ed8a615837f92037ea8ec9da81cdf5b601139cefba5aa5430ea4"
+    },
+    {
+      "unit_id": "OLP-0076",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+      "source_bytes": 4502,
+      "source_sha256": "d2e7eba11801753dfd9c57c6be6d45df5c11de57843c3f689dbee7636419aa99",
+      "translation_bytes": 5261,
+      "translation_sha256": "2f8b3f3ee4b58b5735ac53d23baa8c87819014106864665a6b3e2b0d9032e14e"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0075 source lines 86, 104, 125 and 147",
+      "observation": "Each displayed step swaps adjacent antecedent formulas but carries the succedent-exchange label.",
+      "treatment": "Corrected all four labels to left exchange and disclosed the repair adjacent to the first affected tree. The source's two genuine succedent exchanges are preserved.",
+      "correction_id": "OLSQ-001"
+    },
+    {
+      "locator": "OLP-0075 source lines 177-180",
+      "observation": "Both prose candidate sequents omit negation from the second disjunct, contradicting the requested sequent and every following proof tree.",
+      "treatment": "Restored the two omitted negations and disclosed the repair adjacent to the affected prose.",
+      "correction_id": "OLSQ-002"
+    },
+    {
+      "locator": "OLP-0076 prose and proof-tree existential labels",
+      "observation": "The prose uses the standard TeX existential symbol in a LeftR label while proof trees use the OpenLogic lexists macro.",
+      "treatment": "Preserved. Both denote the existential-left rule here and no formula or rule-side claim changes.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0076 intermediate proof trees",
+      "observation": "Some quantifier macros use bracketed arguments and others use unbracketed forms.",
+      "treatment": "Preserved. The forms have the same rendered binding in context, and changing them is unnecessary for the mathematical claim.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0074–0076 all proof trees and exercise lists",
+      "observation": "Tree arities, rule sides, contexts, formulas, quantifier binders and exercise order were checked against the frozen source and nearby rule schemas.",
+      "treatment": "No additional source defect found; all content outside OLSQ-001 and OLSQ-002 is preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLSQ-001",
+      "classification": "antecedent_exchange_mislabeled_as_succedent_exchange",
+      "source_locator": "sequent-calculus/proving-things.tex:86,104,125,147",
+      "target_line_1based": 78
+    },
+    {
+      "correction_id": "OLSQ-002",
+      "classification": "candidate_sequents_drop_negation_from_second_disjunct",
+      "source_locator": "sequent-calculus/proving-things.tex:177-180",
+      "target_line_1based": 183
+    }
+  ],
+  "conclusion": "Two deterministic source defects are corrected and disclosed in OLP-0075. OLP-0074 and OLP-0076 require no source correction."
+}

@@ -1,0 +1,151 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{sou}}
+      {\olfileid{pl}{axd}{sou}}
+      
+\olsection{سموالے}
+
+\begin{explain}
+د بديهي استنتاج په شان !!^a{derivation} نظام هله \emph{سم} دے چې
+هغه څيزونه !!{derive} نۀ کړي چې په حقيقت کښې نۀ صدق کېږي۔ نو
+سموالے د !!{derivation} نظامونو د تضمين شوې خونديتوب يو ډول خاصيت
+دے۔ د دې له مخې چې کوم ثبوت-تيوريکي خاصيت تر بحث لاندې وي، مثلاً
+غواړو پوه شو چې:
+\begin{enumerate}
+\item هر !!{derivable}~$!A$ معتبر دے؛
+\item که $!A$ له ځينو نورو~$\Gamma$ څخه !!{derivable} وي، د هغو
+  معنايي پايله هم ده؛
+\item که د !!{formula}s يو سټ~$\Gamma$ ناسازګار وي، د صدق وړ نۀ
+  دے۔
+\end{enumerate}
+دا د !!a{derivation} نظام مهم خاصيتونه دي۔ که له دغو څخه کوم يو
+سم نۀ وي، !!{derivation} نظام نيمګړے دے---له حده زيات څيزونه به
+!!{derive} کوي۔ له دې امله د !!a{derivation} نظام سموالے ثابتول
+تر ټولو زيات اهميت لري۔
+\end{explain}
+
+\begin{prop}
+  که $!A$ يو بديهي اصل وي، نو
+  \iftag{FOL}
+    {د هر !!{structure}~$\Struct{M}$ او متغير-ګومارنې~$s$ دپاره $\Sat{M}{!A}[s]$۔}
+    {د هرې !!{valuation}~$\pAssign{v}$ دپاره $\pSat{v}{!A}$۔}
+\end{prop}
+
+\begin{proof}
+\iftag{FOL}{بايد تصديق کړو چې ټول بديهي اصول معتبر دي۔ د بېلګې
+  په توګه د~\olref[qua]{ax:q1} حالت دا دے: فرض کړئ $t$ په~$!A$
+  کښې د~$x$ دپاره !!{free for} وي، او
+  $\Sat{M}{\lforall[x][!A]}[s]$ ومنئ۔ بيا د پوره کېدو د تعريف له
+  مخې، د هرې $\varAssign{s'}{s}{x}$ دپاره $\Sat{M}{!A}[s']$ هم
+  دے، او په ځانګړي ډول دا هله سم دے چې
+  $s'(x) = \Value{t}{M}[s]$ وي۔ د
+  \olref[syn][ext]{prop:ext-formulas} له مخې
+  $\Sat{M}{\Subst{!A}{t}{x}}[s]$۔ دا ښيي چې
+  $\Sat{M}{(\lforall[x][!A] \lif \Subst{!A}{t}{x})}[s]$۔}{د هر
+  بديهي اصل دپاره صدق جدولونه جوړ کړئ، څو تصديق شي چې صدق‌تابع
+  قضيې دي۔}
+\end{proof}
+
+\begin{thm}[سموالے]
+\ollabel{thm:soundness}
+که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$۔
+\end{thm}
+
+\begin{proof}
+له~$\Gamma$ څخه د~$!A$ د !!{derivation} پر اوږدوالي استقرا کوو۔
+که داسې هېڅ ګام نۀ وي چې په استنتاج توجيه شوے وي، نو په
+!!{derivation} کښې ټول !!{formula}s يا د بديهي اصولو بېلګې دي يا
+په~$\Gamma$ کښې دي۔ د مخکښې قضیې له مخې ټول بديهي اصول
+\iftag{FOL}{معتبر}{صدق‌تابع قضيې} دي؛ نو که $!A$ بديهي اصل وي،
+$\Gamma \Entails !A$۔ که $!A \in \Gamma$ وي، نو په څرګنده
+$\Gamma \Entails !A$۔
+
+که د~$!A$ د !!{derivation} وروستنے ګام په مودوس پوننس توجيه شوے
+وي، نو په !!{derivation} کښې !!{formula}s~$!B$ او~$!B \lif !A$
+شته، او د استقرا فرضيه د !!{derivation} پر هغو برخو پلي کېږي چې په
+دغو !!{formula}s پاے ته رسېږي (ځکه په هره برخه کښې لږ تر لږه يو
+په استنتاج توجيه شوے ګام کم دے)۔ نو د استقرا د فرضيې له مخې
+$\Gamma \Entails !B$ او $\Gamma \Entails !B \lif !A$۔ بيا د
+\iftag{FOL}
+      {\olref[syn][sem]{thm:sem-deduction}}
+      {\olref[pl][syn][sem]{thm:sem-deduction}}
+له مخې $\Gamma \Entails !A$۔
+
+\iftag{FOL}{اوس فرض کړئ وروستنے ګام په~\QR توجيه شوے دے۔ بيا هغه
+ګام د~$!C \lif \lforall[x][B(x)]$ بڼه لري، او ترې مخکښې ګام
+$!C \lif !B(c)$ دے، چې $c$ په~$\Gamma$، $!C$ يا
+$\lforall[x][B(x)]$ کښې نۀ راځي۔ د استقرا د فرضيې له مخې
+$\Gamma \Entails !C \lif !B(c)$۔ د
+\olref[syn][sem]{thm:sem-deduction} له مخې
+$\Gamma \cup \{!C\} \Entails !B(c)$۔
+
+داسې يو جوړښت~$\Struct{M}$ په پام کښې ونيسئ چې
+$\Sat{M}{\Gamma \cup \{!C\}}$ وي۔ بايد وښيو چې
+$\Sat{M}{\lforall[x][!B(x)]}$۔ ځکه
+$\lforall[x][!B(x)]$ يوه !!a{sentence} ده، د دې معنٰی دا ده چې د
+هرې متغير-ګومارنې~$s$ دپاره بايد $\Sat{M}{!B(x)}[s]$ وښيو
+(\olref[syn][ass]{prop:sat-quant})۔ ځکه $\Gamma \cup \{!C\}$ ټول
+له جملو جوړ دے، د هر~$!D \in \Gamma$ دپاره
+$\Sat{M}{!D}[s]$ د~\olref[syn][sat]{defn:satisfaction} له مخې دے۔
+$\Struct{M'}$ داسې جوړښت ونيسئ چې د~$\Struct{M}$ په شان وي، خو
+$\Assign{c}{M'} = s(x)$ وي۔ ځکه $c$ په~$\Gamma$ يا~$!C$ کښې نۀ
+راځي، د~\olref[syn][ext]{cor:extensionality-sent} له مخې
+$\Sat{M'}{\Gamma \cup \{!C\}}$۔ ځکه
+$\Gamma \cup \{!C\} \Entails !B(c)$، نو $\Sat{M'}{!B(c)}$۔
+\textbf{د ژباړې د نسخې سمون (OLAX-010):} سرچينې په دې پوره کېدو
+ادعا کښې د بي-سي د ميتا-فارمول نښه پرېښې وه؛ په مخکښې لازميت او
+ورپسې ټولو استعمالونو کښې همدا نښه موجوده ده، نو دلته بېرته
+راوستل شوه۔ ځکه $!B(c)$ يوه !!a{sentence} ده، د
+\olref[syn][ass]{prop:sentence-sat-true} له مخې
+$\Sat{M'}{!B(c)}[s]$۔ د~\olref[syn][ext]{prop:ext-formulas} له مخې
+$\Sat{M'}{!B(x)}[s]$ هله او يوازې هله چې
+$\Sat{M'}{!B(c)}[s]$ (ياد ولرئ چې $!B(c)$ هماغه
+$\Subst{!B(x)}{c}{x}$ دے)۔ نو $\Sat{M'}{!B(x)}[s]$۔ ځکه $c$ په
+$!B(x)$ کښې نۀ راځي، د~\olref[syn][ext]{prop:extensionality} له
+مخې $\Sat{M}{!B(x)}[s]$۔ خو $s$ اختياري متغير-ګومارنه وه؛ نو
+$\Sat{M}{\lforall[x][!B(x)]}$۔ له دې امله
+$\Gamma \cup \{!C\} \Entails \lforall[x][!B(x)]$۔ د
+\olref[syn][sem]{thm:sem-deduction} له مخې
+$\Gamma \Entails !C \lif \lforall[x][!B(x)]$۔
+
+هغه حالت د تمرين په توګه پرېږدو چې $!A$ په~\QR{} توجيه کېږي، خو
+د~$\lexists[x][!B(x)] \lif !C$ بڼه لري۔}{}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  د~\olref[fol][axd][sou]{thm:soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+که $\Proves !A$ وي، نو $!A$ \iftag{FOL}{معتبر}{صدق‌تابع قضيه} دے۔
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+که $\Gamma$ د صدق وړ وي، نو سازګار دے۔
+\end{cor}
+
+\begin{proof}
+نقيض عکس ثابتوو۔ فرض کړئ $\Gamma$ سازګار نۀ دے۔ بيا
+$\Gamma \Proves \lfalse$؛ يعنې له~$\Gamma$ څخه د~$\lfalse$ يو
+!!a{derivation} شته۔ د~\olref{thm:soundness} له مخې هر
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+چې $\Gamma$ پوره کوي، بايد $\lfalse$ هم پوره کړي۔ ځکه د هر
+\iftag{FOL}{!!{structure}~$\Struct{M}$ دپاره $\Sat/{M}{\lfalse}$}
+{$\pAssign{v}$ !!{valuation} دپاره $\pSat/{v}{\lfalse}$}، نو هېڅ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}، $\Gamma$ نۀ شي پوره
+کولے؛ يعنې $\Gamma$ د صدق وړ نۀ دے۔
+\end{proof}
+
+
+\end{document}

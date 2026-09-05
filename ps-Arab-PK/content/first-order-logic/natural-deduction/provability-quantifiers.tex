@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qpr}
+
+\olsection{\usetoken{S}{derivability} او سورونه}
+
+\begin{explain}
+  د بشپړتيا قضيه دا هم غواړي چې د فطري استنتاج قاعدې د~$\Proves$
+  په اړه هغه حقيقتونه ورکړي چې په دې برخه کښې ثابتېږي۔
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} که $c$ داسې ثابت وي چې په
+$\Gamma$ يا~$!A(x)$ کښې نۀ راځي، او $\Gamma \Proves !A(c)$ وي، نو
+$\Gamma \Proves \lforall[x][!A(x)]$۔
+\end{thm}
+
+\begin{proof}
+$\delta$ له~$\Gamma$ څخه د~$!A(c)$ يو !!a{derivation} ونيسئ۔ د
+\Intro{\lforall} استنتاج په زياتولو د~$\lforall[x][!A(x)]$ يو
+!!a{derivation} اخلو۔ ځکه $c$ په~$\Gamma$ يا~$!A(x)$ کښې نۀ راځي،
+د ځانګړي متغير شرط پوره کېږي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{لاندې له~$!A(t)$ څخه د~$\lexists[x][!A(x)]$ يو
+!!a{derivation} دے:
+\begin{prooftree}
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\end{prooftree}}{}
+
+\tagitem{prvAll}{لاندې له~$\lforall[x][!A(x)]$ څخه د~$!A(t)$ يو
+!!a{derivation} دے:
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

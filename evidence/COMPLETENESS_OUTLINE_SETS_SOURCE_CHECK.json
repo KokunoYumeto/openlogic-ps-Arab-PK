@@ -1,0 +1,71 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T16:15:58.476062+00:00",
+  "batch_id": "PS-B027-COMPLETENESS-OUTLINE-SETS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0128",
+      "source_path": "content/first-order-logic/completeness/outline.tex",
+      "source_bytes": 9362,
+      "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+      "translation_bytes": 12534,
+      "translation_sha256": "e5436c4e7589fc74444cc9ea0440ac89e46521faece6ddf153495c06766086b4"
+    },
+    {
+      "unit_id": "OLP-0129",
+      "source_path": "content/first-order-logic/completeness/complete-consistent-sets.tex",
+      "source_bytes": 8902,
+      "source_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
+      "translation_bytes": 10415,
+      "translation_sha256": "8fcf2ee4c33b1cc29ddd0981f4f4bc17df25c2ea08497ff2d063639c47aeafff"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0128 lines 15-64",
+      "observation": "The perspective shift, positive-atomic base interpretation, negated atom case and two connective examples were traced through both logical profiles.",
+      "treatment": "No source defect found; all signs, assignments and logical directions are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0128 lines 66-80",
+      "observation": "Condition (b) says every atomic sentence is decided, but the same paragraph calls this completeness and the next unit defines completeness over every sentence.",
+      "treatment": "Removed the erroneous atomic restriction and disclosed the exact repair.",
+      "correction_id": "OLCOM-001"
+    },
+    {
+      "locator": "OLP-0128 lines 82-133",
+      "observation": "Existential witnesses, constant-free languages, syntactic function interpretation and the equality quotient motivation were checked formula by formula.",
+      "treatment": "No further source defect found; arities, term values and equalities remain exact.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0128 lines 135-168",
+      "observation": "Every proof-stage dependency, tag-conditioned quantified equivalence and stable reference was checked against the chapter graph.",
+      "treatment": "No source defect found; the roadmap is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0129 lines 17-58",
+      "observation": "The complete-set definition, consistency consequence and model-construction motivation were checked against OLP-0128.",
+      "treatment": "No source defect found; every-sentence scope and both profile branches are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0129 lines 60-220",
+      "observation": "All four closure claims and both directions of the conjunction, disjunction and conditional arguments were traced to their proof-system-specific references.",
+      "treatment": "No source defect found; each premise, contradiction and conclusion is retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-001",
+      "classification": "complete_set_outline_restricts_exhaustiveness_to_atomic_sentences",
+      "source_locator": "completeness/outline.tex:66-80",
+      "target_line_1based": 73
+    }
+  ],
+  "conclusion": "One atomic-only qualifier that contradicts the formal completeness definition is repaired and disclosed. All remaining OLP-0128–0129 constructions, formulas, profile branches, closure claims and references are preserved."
+}

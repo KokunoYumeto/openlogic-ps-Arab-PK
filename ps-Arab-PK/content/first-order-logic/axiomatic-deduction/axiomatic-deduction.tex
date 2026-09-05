@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{axd}{بديهي \usetoken{P}{derivation}}}
+      {\olchapter{pl}{axd}{بديهي \usetoken{P}{derivation}}}
+
+\begin{editorial}
+  لا تر اوسه دا هڅه نۀ ده شوې چې ډاډ ترلاسه شي چې د دې څپرکي مواد
+  د هغو بېلابېلو ټاګونو درناوے کوي چې ښيي کوم نښلوونکي او کميت
+  ټاکونکي بنسټيز يا تعريف شوي دي: له~$\liff$ پرته، چې تعريف شوے
+  ګڼل کېږي، ټول بنسټيز ګڼل شوي دي۔ که د لومړۍ درجې منطق ټاګ رښتونے
+  وي، له کميت ټاکونکو سره بڼه جوړوو؛ که نۀ وي، بې له هغو بڼه جوړوو۔
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{axioms-rules-propositional}
+
+\iftag{FOL}{%
+  \olimport{axioms-rules-quantifiers}
+}{}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{deduction-theorem}
+
+\iftag{FOL}{%
+  \olimport{deduction-theorem-quantifiers}
+}{}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{
+  \olimport{identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

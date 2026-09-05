@@ -1,0 +1,161 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{prv}}
+      {\olfileid{pl}{tab}{prv}}
+
+\olsection{\usetoken{S}{derivability} او سازګاري}
+
+اوس د~!!{derivability} اړيکې يو شمېر خاصيتونه ثابتوو۔ دوئ په
+خپلواک ډول هم په زړه پورې دي، خو هر يو به د بشپړتيا قضیې په ثبوت
+کښې ونډه ولري۔
+
+\begin{prop}\ollabel{prop:provability-contr}
+  که $\Gamma \Proves !A$ او $\Gamma \cup \{!A\}$ ناسازګار وي،
+  نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+داسې متناهي
+$\Gamma_0 = \{!B_1, \dots, !B_n\}$ او
+$\Gamma_1 =\{!C_1, \dots, !C_m\} \subseteq \Gamma$ شته چې
+  \begin{align*}
+    \{\sFmla{\False}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \\
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  تړلي !!{tableau}s لري۔ پر~$!A$ د~\Cut{} قاعدې په کارولو دا په
+  يوه تړلي !!{tableau} کښې يو ځاے کولے شو چې د
+  $\Gamma_0 \cup \Gamma_1$ ناسازګاري ښيي۔ ځکه
+  $\Gamma_0 \subseteq \Gamma$ او~$\Gamma_1 \subseteq \Gamma$،
+  نو $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$؛ له دې امله
+  $\Gamma$ ناسازګار دے۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-005):} سرچينه د دويم متناهي
+سټ په تعريف کښې لړ په اېن شاخص پاے ته رسوي، خو په تابلو کښې ئې
+وروستے غړے د اېم شاخص لري؛ دلته د لړ وروستے شاخص يو شان شوے دے۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ هله او يوازې هله چې
+$\Gamma \cup \{\lnot !A\}$ ناسازګار وي۔
+\end{prop}
+
+\begin{proof}
+لومړے فرض کړئ $\Gamma \Proves !A$، يعنې د لاندې دپاره تړلے
+!!{tableau} شته:
+\[
+\{\sFmla{\False}{!A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+\]
+د~$\TRule{\True}{\lnot}$ قاعدې په کارولو دا د لاندې دپاره په تړلي
+!!{tableau} اړولے شو:
+\[
+\{\sFmla{\True}{\lnot !A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+بل لوري ته، که د وروستي سټ دپاره تړلے !!{tableau} وي، د لومړي سټ
+په تړلي !!{tableau} ئې اړولے شو: هغه هر فارمول ړنګوو چې پر لومړي
+فرض~$\sFmla{\True}{\lnot !A}$ د~\TRule{\True}{\lnot} له کارونې
+راوتلے وي، خپله دغه فرض هم ړنګوو، او فرض
+$\sFmla{\False}{!A}$ ورزياتوو۔ ځکه که کومه څانګه مخکښې د
+\TRule{\True}{\lnot} د هغې پايلې له امله تړلې وه چې پر
+$\sFmla{\True}{\lnot !A}$ پلې شوې، يعنې
+$\sFmla{\False}{!A}$، نو په نوي !!{tableau} کښې اړونده څانګه هم
+تړلې ده۔ که په زوړ تابلو کښې کومه څانګه د فرض
+$\sFmla{\True}{\lnot !A}$ او~$\sFmla{\False}{\lnot !A}$ دواړو له
+امله تړلې وه، پر~$\sFmla{\False}{\lnot !A}$ د
+$\TRule{\False}{\lnot}$ په پلي کولو او د
+$\sFmla{\True}{!A}$ په اخستلو ئې په تړلې څانګه اړولے شو۔ دا څانګه
+ځکه تړل کېږي چې $\sFmla{\False}{!A}$ مو د فرض په توګه ورزيات کړے
+دے۔
+\end{proof}
+
+\begin{prob}
+ثابت کړئ چې $\Gamma \Proves \lnot !A$ هله او يوازې هله چې
+$\Gamma \cup \{!A\}$ ناسازګار وي۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  که $\Gamma \Proves !A$ او~$\lnot !A \in \Gamma$ وي، نو
+  $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\Gamma \Proves !A$ او~$\lnot !A \in \Gamma$۔ بيا داسې
+  $!B_1$، \dots، $!B_n \in \Gamma$ شته چې
+  \[
+  \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+  \]
+  تړلے تابلو لري۔ فرض~\sFmla{\False}{!A} په
+  \sFmla{\True}{\lnot !A} بدل کړئ، او د فرضونو وروسته هغه
+  \sFmla{\False}{!A} پايله ورننباسئ چې پر
+  \sFmla{\True}{\lnot !A} د~\TRule{\True}{\lnot} له کارونې
+  راځي۔ په زوړ !!{tableau} کښې هره !!{sentence} چې د~$1$ کرښې په
+  حواله توجيه شوې وه، اوس د~$n+1$ کرښې په حواله توجيه کېږي۔ نو که
+  زوړ !!{tableau} تړلے و، نوے !!{tableau} هم تړلے دے۔ دا د~$\Gamma$ ناسازګاري
+  ښيي؛ ځکه ټول فرضونه په~$\Gamma$ کښې دي۔
+  \textbf{د ژباړې د نسخې سمون (OLTAB-006):} سرچينه د «داسې چې»
+  وروسته يو بې دليله تېک شاتګی ږدي؛ دلته لرې شوے دے۔
+  \textbf{د ژباړې د نسخې سمون (OLTAB-007):} سرچينه وايي د رښتونې
+  نفي قاعده پر دروغې جملې پلې کېږي؛ قاعده په حقيقت کښې پر رښتونې
+  نفي شوې جملې پلې کېږي او دروغ مثبت فارمول راوباسي، لکه د همدې
+  ثبوت په راتلونکې جمله کښې۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  که $\Gamma \cup \{!A\}$ او~$\Gamma \cup \{\lnot !A\}$ دواړه
+  ناسازګار وي، نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  که داسې $!B_1$، \dots، $!B_n \in \Gamma$ او
+  $!C_1$، \dots، $!C_m \in \Gamma$ وي چې
+  \begin{align*}
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \text{ او}\\
+    \{\sFmla{\True}{\lnot !A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  دواړه تړلي !!{tableau}s ولري، يو داسې ګډ !!{tableau} جوړولے شو
+  چې د~$\Gamma$ ناسازګاري ښيي۔ د فرضونو په توګه
+  $\sFmla{\True}{!B_1}$، \dots، $\sFmla{\True}{!B_n}$ له
+  $\sFmla{\True}{!C_1}$، \dots، $\sFmla{\True}{!C_m}$ سره يو
+  ځاے کاروو، او بيا د~\Cut{} قاعده پلې کوو۔ دا دوه څانګې ورکوي:
+  يوه په~$\sFmla{\True}{!A}$ او بله په~$\sFmla{\False}{!A}$ پيلېږي۔
+  
+  په کيڼ لوري کښې د لومړي !!{tableau} د فرضونو لاندې برخه ورزياته
+  کړئ۔ دلته د قاعدې هره کارونه لا هم سمه ده؛ ځکه د لومړي
+  !!{tableau} هر فرض، د~$\sFmla{\True}{!A}$ په شمول، موجود دے۔
+  نو د~$\sFmla{\True}{!A}$ لاندې هره څانګه تړل کېږي۔
+  
+  په ښي لوري کښې د دويم !!{tableau} د فرض لاندې برخه ورزياته کړئ،
+  خو د~$\sFmla{\True}{\lnot !A}$ پر فرض د
+  $\TRule{\True}{\lnot}$ د هرې کارونې پايلې ترې لرې کړئ۔ پر
+  $\sFmla{\True}{\lnot !A}$ د~$\TRule{\True}{\lnot}$ پايله
+  $\sFmla{\False}{!A}$ ده، چې بيا هم موجوده ده؛ ځکه د ګډ
+  !!{tableau} په ښي لوري کښې د~\Cut{} قاعدې پايله ده۔
+
+  که په دويم تابلو کښې کومه څانګه د فرض
+  $\sFmla{\True}{\lnot !A}$ (چې په ګډ !!{tableau} کښې نور فرض نۀ
+  دے) او~$\sFmla{\False}{\lnot !A}$ دواړو له امله تړلې وه، پر
+  $\sFmla{\False}{\lnot !A}$ د~$\TRule{\False}{\lnot}$ په پلي کولو
+  $\sFmla{\True}{!A}$ اخستلے شو۔ اوس په ګډ !!{tableau} کښې اړونده
+  څانګه هم تړل کېږي؛ ځکه د~\Cut{} قاعدې ښۍ پايله،
+  $\sFmla{\False}{!A}$، پکې ده۔ که په دويم !!{tableau} کښې يوه
+  څانګه د بل کوم لامل له امله تړلې وه، په ګډ !!{tableau} کښې
+  اړونده څانګه هم تړلې ده؛ ځکه په زوړ، دويم !!{tableau} کښې پر
+  څانګه له~$\sFmla{\True}{\lnot !A}$ پرته هر بل !!{signed formula}s
+  د ګډ !!{tableau} پر اړوندې څانګې هم راځي۔
+  \end{proof}
+
+\end{document}
+

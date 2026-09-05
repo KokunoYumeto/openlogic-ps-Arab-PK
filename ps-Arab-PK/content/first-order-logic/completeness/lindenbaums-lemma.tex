@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{lin}}
+      {\olfileid{pl}{com}{lin}}
+
+\olsection{د لينډنباوم لمه}
+
+\begin{explain}
+اوس يوه مرستندويه قضيه ثابتوو چې ښيي د !!{sentence}s هر سازګار
+سټ د جملو په داسې سټ کښې شامل دے چې يوازې سازګار نۀ، بلکې
+!!{complete} هم وي۔ ثبوت په هر ځل د يوې !!{sentence} په زياتولو
+کار کوي، او په هر پړاو کښې تضمينوي چې سټ سازګار پاتې شي۔ دا ځکه
+کوو چې د هر~$!A$ دپاره يا~$!A$ يا~$\lnot !A$ په کوم پړاو کښې
+ورزيات شي۔ بيا د دې جوړونې د ټولو پړاوونو اتحاد يا~$!A$ لري يا
+ئې نفي~$\lnot !A$، او په دې توګه بشپړ دے۔ دا سازګار هم دے، ځکه
+په هر پړاو کښې پام کوو چې ناسازګاري رامنځته نۀ کړو۔
+\end{explain}
+
+\begin{lem}[د لينډنباوم لمه]
+\ollabel{lem:lindenbaum} په ژبه~$\Lang{L}$ کښې هر سازګار
+سټ~$\Gamma$ داسې غځېدے شي چې يو !!a{complete} او سازګار
+سټ~$\Gamma^*$ شي۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ~$\Gamma$ سازګار دے۔ د~$\Lang L$ د ټولو !!{sentence}s يوه
+شمېرنه~$!A_0$، $!A_1$، \dots{} وي۔ $\Gamma_0 = \Gamma$ تعريف
+کړئ، او
+\[
+\Gamma_{n+1} =
+\begin{cases}
+\Gamma_n \cup \{ !A_n \} & \textrm{که $\Gamma_n \cup \{!A_n\}$
+  سازګار وي؛} \\
+\Gamma_n \cup \{ \lnot !A_n \} & \textrm{په بل صورت کښې۔}
+\end{cases}
+\]
+$\Gamma^* = \bigcup_{n \geq 0} \Gamma_n$ وټاکئ۔
+
+هر~$\Gamma_n$ سازګار دے: $\Gamma_0$ د تعريف او فرض له مخې سازګار
+دے۔ که~$\Gamma_{n+1} = \Gamma_n \cup \{!A_n\}$ وي، لامل ئې دا
+دے چې وروستنے سټ سازګار دے۔ که دا سازګار نۀ وي، نو
+$\Gamma_{n+1} = \Gamma_n \cup \{\lnot !A_n\}$۔ بايد تصديق کړو
+چې~$\Gamma_n \cup \{\lnot !A_n\}$ سازګار دے۔ فرض کړئ چې سازګار
+نۀ دے۔ بيا \emph{دواړه} $\Gamma_n \cup \{!A_n\}$ او
+$\Gamma_n \cup \{\lnot !A_n\}$ ناسازګار دي۔ دا په دې معنا ده چې
+$\Gamma_n$ به د
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:provability-exhaustive},
+    prfSC/{fol:seq:prv:prop:provability-exhaustive},
+    prfND/{fol:ntd:prv:prop:provability-exhaustive},
+    prfTab/{fol:tab:prv:prop:provability-exhaustive}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:provability-exhaustive},
+    prfSC/{pl:seq:prv:prop:provability-exhaustive},
+    prfND/{pl:ntd:prv:prop:provability-exhaustive},
+    prfTab/{pl:tab:prv:prop:provability-exhaustive}}}
+له مخې ناسازګار وے، چې دا د استقرا له فرضيې سره تناقض دے۔
+
+د هر~$n$ او هر~$i < n$ دپاره، $\Gamma_i \subseteq \Gamma_n$۔
+دا پر~$n$ د ساده استقرا له لارې ترلاسه کېږي۔ د~$n=0$ دپاره هېڅ
+$i < 0$ نشته، نو ادعا په خپله سمه ده۔ د استقرا د ګام دپاره فرض
+کړئ چې ادعا د~$n$ دپاره سمه ده۔ ښيو چې که~$i < n+1$ وي، نو
+$\Gamma_i \subseteq \Gamma_{n+1}$۔ د جوړونې له مخې يا
+$\Gamma_{n+1} = \Gamma_n \cup \{!A_n\}$ ده يا
+$= \Gamma_n \cup \{\lnot !A_n\}$۔ نو
+$\Gamma_n \subseteq \Gamma_{n+1}$۔ که~$i < n+1$ وي، نو د
+استقرا د فرضيې له مخې~$\Gamma_i \subseteq \Gamma_n$ (که~$i < n$
+وي)، يا دا ساده حقيقت لرو چې~$\Gamma_n \subseteq \Gamma_n$
+(که~$i = n$ وي)۔ د~$\subseteq$ د انتقاليت له مخې
+$\Gamma_i \subseteq \Gamma_{n+1}$ ترلاسه کوو۔
+
+له دې څخه څرګندېږي چې~$\Gamma^*$ سازګار دے۔ لامل دا دے: فرض کړئ
+$\Gamma' \subseteq \Gamma^*$ متناهي دے۔
+\textbf{د ژباړې د نسخې سمون (OLCOM-002):} سرچينې د تش متناهي
+فرعي سټ حالت نۀ و بېل کړے، حال دا چې «تر ټولو لوے» پړاو يوازې د
+نا تش سټ دپاره ټاکل کېدے شي؛ د تش حالت څرګنده سازګاري ورزياته
+شوه۔ نو فرض کړئ چې دا فرعي سټ نا تش دے۔ هر~$!B \in \Gamma'$ د
+کوم~$i$ دپاره په~$\Gamma_i$ کښې هم دے۔ $n$ دې د دغو شاخصونو تر
+ټولو لوے وي۔ ځکه که~$i \le n$ وي نو
+$\Gamma_i \subseteq \Gamma_n$، هر~$!B \in \Gamma'$ هم
+$\in \Gamma_n$ دے؛ يعنې~$\Gamma' \subseteq \Gamma_n$، او
+$\Gamma_n$ سازګار دے۔ نو هر متناهي فرعي سټ
+$\Gamma' \subseteq \Gamma^*$ سازګار دے۔ د
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}} له مخې، $\Gamma^*$
+سازګار دے۔
+
+د~$\Frm[L]$ هره !!{sentence} په هغه لړ کښې راځي چې د~$\Gamma^*$
+د تعريف دپاره کارول شوے دے۔ که~$!A_n \notin \Gamma^*$ وي، لامل
+ئې دا دے چې~$\Gamma_n \cup \{!A_n\}$ ناسازګار و۔ خو بيا
+$\lnot !A_n \in \Gamma^*$، نو~$\Gamma^*$ !!{complete} دے۔
+\end{proof}
+
+\end{document}

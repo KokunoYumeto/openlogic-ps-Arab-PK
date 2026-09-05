@@ -1,0 +1,108 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{prq}
+
+\olsection{له سورونو سره \usetoken{P}{derivation}}
+
+\begin{ex}
+د سېکوېنټ $\lexists[x][\lnot !A(x)]
+\Sequent \lnot \lforall[x][!A(x)]$ يو
+$\Log{LK}$-!!{derivation} ورکړئ۔
+
+کله چې له سورونو سره کار کوو، بايد ډاډمن شو چې د ځانګړي متغير شرط
+نۀ ماتوو، او کله کله د دې دپاره اړ يو چې د ځينو استنتاجونو د پلي
+کولو ترتيب بدل کړو۔ په عمومي توګه دا ګټوره ده چې لومړے هغه قاعدې
+وڅېړو چې د ځانګړي متغير د شرط تابع دي (په بشپړ شوي ثبوت کښې به
+لاندې وي)۔ همدارنګه، غوره ده لږ وړاندې وګورو او اټکل وکړو چې
+لومړنے سېکوېنټ به څنګه وي۔ زموږ په حالت کښې بايد د
+$!A(a) \Sequent !A(a)$ په شان وي۔ يعنې کله چې د سورونو قاعدې
+“سرچپه” کوو، بايد د $\lforall$ او $\lexists$ دواړو قاعدو دپاره
+هماغه اصطلاح---چې $a$ به ئې وبولو---غوره کړو۔ که د هرې قاعدې
+دپاره بېله اصطلاح غوره کړو، د $!A(a) \Sequent !A(b)$ په شان څه
+ته رسېږو، چې البته د اشتقاق وړ نۀ دے۔
+
+د معمول په شان په دې ليکلو پيل کوو:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+يا د \LeftR{\exists} قاعده پلې کولے شو او يا د
+\RightR{\lnot} قاعده۔ ځکه چې \LeftR{\exists} د ځانګړي متغير د
+شرط تابع ده، ښه ده چې دا ژر تر ژره وڅېړو؛ نو لومړے همدا پلې کوو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+د \LeftR{\lnot} او \RightR{\lnot} قاعدو په سرچپه پلي کولو ترلاسه
+کوو:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x] !A(x)$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x] \lnot !A(x) \fCenter \lnot \lforall[x] !A(x)$
+\end{prooftree}
+په دې ځاے کښې يوازينے امکان د \LeftR{\forall} قاعدې پلي کول دي۔
+ځکه چې دا قاعده د ځانګړي متغير د بنديز تابع نۀ ده، نو کومه ستونزه
+نشته۔ راياد کړئ چې غواړو يو لومړنے سېکوېنټ، يعنې د
+$!A(a) \Sequent !A(a)$ په بڼه، ترلاسه کړو؛ نو د قاعدې د کارولو پر
+مهال بايد $a$ د~$!A$ د ارګومېنټ په توګه غوره کړو۔
+\begin{prooftree}
+\Axiom$!A(a) \fCenter !A(a)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][ \lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+په تېره بيا له سورونو سره د کار پر مهال مهمه ده چې په دې ځاے کښې
+بيا وګورو چې د ځانګړي متغير شرط خو نۀ دے مات شوے۔ ځکه چې زموږ له
+کارول شوو قاعدو څخه يوازې \LeftR{\exists} د ځانګړي متغير د شرط
+تابع وه، او ځانګړے متغير~$a$ د هغې په لاندې سېکوېنټ (وروستي
+سېکوېنټ) کښې نۀ راځي، نو دا سم !!{derivation} دے۔
+\end{ex}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $\Sequent (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Sequent (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Sequent \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Sequent \lnot\lexists[x][!A(x)]$.
+\item $\Sequent \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Sequent \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $\Sequent \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Sequent \lexists[y][(!A(y) \lif !B)]$.
+\item $\Sequent \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(دا ټول د~$\RightR{\Contraction}$ قاعدې ته اړتيا لري۔)
+\end{prob}
+
+\end{document}

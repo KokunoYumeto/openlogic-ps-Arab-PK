@@ -1,0 +1,81 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T03:19:17.333444+00:00",
+  "batch_id": "PS-B022-AXIOMATIC-FOUNDATION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0112",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
+      "source_bytes": 1214,
+      "source_sha256": "82b05cdab523aa9e7581b305adc4b065f01cb042bced407a85e776e0f3895382",
+      "translation_bytes": 1445,
+      "translation_sha256": "4f0fe7fa5bebba7a5476023ad44110801f0e29a6e2f7b601514a0d2853e14055"
+    },
+    {
+      "unit_id": "OLP-0113",
+      "source_path": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "source_bytes": 3572,
+      "source_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+      "translation_bytes": 5091,
+      "translation_sha256": "e29e25f212bf11dacc2fac616cab4d172adcb6e790ee92d6349305fc81062ac6"
+    },
+    {
+      "unit_id": "OLP-0114",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "source_bytes": 1469,
+      "source_sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810",
+      "translation_bytes": 1569,
+      "translation_sha256": "18d61caf9fdd8910cf8880da196c5d731f4cad6c5fa730ee319d698e3aa7f030"
+    },
+    {
+      "unit_id": "OLP-0115",
+      "source_path": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "source_bytes": 973,
+      "source_sha256": "fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8",
+      "translation_bytes": 1221,
+      "translation_sha256": "8ae7140c8b6c02b2915651995af47b7d9a608fa8af49d1ea475525b7b6bc8edc"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0112 complete driver",
+      "observation": "The editorial primitive-language warning, all FOL gates, imports and final hook were checked against the chapter graph.",
+      "treatment": "No source defect found; every structural branch is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0113 source lines 38-42",
+      "observation": "One generic derivation-step occurrence drops the formula metavariable marker used by every A_i entry around it.",
+      "treatment": "Restored the marker and disclosed the exact repair.",
+      "correction_id": "OLAX-001"
+    },
+    {
+      "locator": "OLP-0113 all definitions and modus-ponens formalization",
+      "observation": "Finite sequence scope, three justification cases, earlier-line inequalities, both modus-ponens premises, derivability endpoint and empty-set theoremhood were checked together.",
+      "treatment": "No other source defect found; all formulas and indices are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0114 all fourteen axiom schemas",
+      "observation": "Every connective, metavariable position, implication association and stable label was checked against the surrounding prose roles.",
+      "treatment": "No source defect found; the align environment is preserved exactly.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0115 all quantified schemas and rules",
+      "observation": "Both axiom directions, closed-term condition, parameter side condition, implication antecedents and quantified conclusions were checked.",
+      "treatment": "No source defect found; the two source item macros inside the definition wrapper are preserved for later guarded build verification.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLAX-001",
+      "classification": "generic_derivation_step_omits_formula_metavariable_marker",
+      "source_locator": "axiomatic-deduction/rules-and-proofs.tex:38-42",
+      "target_line_1based": 41
+    }
+  ],
+  "conclusion": "One omitted formula metavariable marker is repaired and disclosed. All remaining OLP-0112–0115 imports, definitions, axiom schemas, inference rules, side conditions and labels are preserved."
+}

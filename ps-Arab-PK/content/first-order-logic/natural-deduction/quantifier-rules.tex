@@ -1,0 +1,116 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qrl}
+
+\olsection{د سورونو قاعدې}
+
+\subsection{د $\lforall$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$!A(a)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\Atom{!A}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lforall[x][\Atom{!A}{x}]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\DisplayProof
+\end{defish}
+
+د~$\lforall$ په قاعدو کښې $t$ يوه تړلې اصطلاح ده (يعنې داسې اصطلاح
+چې هېڅ متغير نۀ لري)، او $a$~داسې !!a{constant} دے چې په
+پايله~$\lforall[x][!A(x)]$ يا په هرې هغې فرضيې کښې نۀ راځي چې د
+مقدمې~$!A(a)$ په پای ته رسېدونکي !!{derivation} کښې
+!!{undischarged} پاتې وي۔ موږ $a$ د~\Intro{\lforall} استنتاج
+\emph{ځانګړے متغير} بولو۔\footnote{موږ د “ځانګړي متغير” اصطلاح
+کاروو، که څه هم په پورتنۍ قاعده کښې $a$ يو ثابت دے۔ دا نوم تاريخي
+لاملونه لري۔}
+
+\subsection{د $\lexists$ دپاره قاعدې}
+
+\begin{defish}
+\AxiomC{$\Atom{!A}{t}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\Atom{!A}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lexists[x][\Atom{!A}{x}]$}
+\AxiomC{[$\Atom{!A}{a}$]$^n$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{n}
+\BinaryInfC{$!C$}
+\DisplayProof
+\end{defish}
+
+بيا هم، $t$ يوه تړلې اصطلاح ده، او $a$ داسې !!a{constant} دے چې
+په مقدمه~$\lexists[x][!A(x)]$، پايله~$!C$، يا په هرې هغې فرضيې
+کښې نۀ راځي چې د دواړو مقدمو په پای ته رسېدونکو !!{derivation}s کښې
+!!{undischarged} پاتې وي (د~$!A(a)$ فرضيو پرته)۔ موږ $a$ د
+\Elim{\lexists} استنتاج \emph{ځانګړے متغير} بولو۔
+
+هغه شرط چې په~\Intro{\lforall} يا~\Elim{\lexists} استنتاج کښې
+ځانګړے متغير په پايله يا په هرې هغې فرضيې کښې نۀ راځي چې مقدمو ته
+په رسېدونکو !!{derivation}s کښې !!{undischarged} وي، او د
+په وجودي مقدمه کښې هم نۀ راځي، \emph{د ځانګړي
+متغير شرط} بلل کېږي۔ \textbf{د ژباړې د نسخې سمون (OLND-002):}
+سرچينه په دې عمومي جمله کښې وايي چې ځانګړے متغير په “مقدمو” کښې
+نۀ راځي، خو د دواړو قاعدو مرستندويه مقدمه همدا ځانګړے ثابت لري؛
+دلته د سرچينې له مخکښې کره شرطونو سره سم پايله، نۀ ايستل شوې فرضيې
+او د وجود ايستلو وجودي مقدمه ټاکل شوې دي۔
+
+\begin{explain}
+هغه دود راياد کړئ چې کله $!A$ داسې !!a{formula} وي چې
+!!{variable}~$x$ پکې ازاد وي، نو دا په~$!A(x)$ ليکلو ښيو۔ په همدې
+چوکاټ کښې بيا $!A(t)$ د~$\Subst{!A}{t}{x}$ لنډون دے۔ نو د
+$\Intro\lexists$ قاعده داسې هم ليکلے شو:
+\begin{prooftree}
+\AxiomC{$\Subst{!A}{t}{x}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A]$}
+\end{prooftree}
+پام وکړئ چې $t$ کېدے شي له مخکښې په~$!A$ کښې راغلے وي؛ مثلاً
+$!A$~کېدے شي~$\Atom{\Obj P}{t,x}$ وي۔ له دې امله، له
+~$\Atom{\Obj P}{t,t}$ څخه $\lexists[x][\Atom{\Obj P}{t,x}]$
+استنتاجول د~$\Intro\lexists$ سمه کارونه ده---تاسو د مقدمې د~$t$
+يوه يا زياتې پېښې په تړلي !!{variable}~$x$ “بدلولے” شئ، او اړينه
+نۀ ده چې ټولې پېښې ئې بدلې کړئ۔ خو د~$\Intro\lforall$ او
+~$\Elim\lexists$ د ځانګړي متغير شرطونه غواړي چې !!{constant}~$a$
+په~$!A$ کښې نۀ راځي۔ نو د~$\Intro\lforall$ په کارولو سره له
+$\Atom{\Obj P}{a,a}$ څخه $\lforall[x][\Atom{\Obj P}{a,x}]$ په سمه
+توګه نۀ شئ استنتاجولے۔
+\end{explain}
+
+\begin{explain}
+په~\Intro{\lexists} او~\Elim{\lforall} کښې له تړلتيا پرته بل
+بنديز نشته، او اصطلاح~$t$ هره تړلې اصطلاح کېدے شي؛ نو د بل شرط
+اندېښنه نۀ شته۔ بل لوري ته، د~\Elim{\lexists} او
+\Intro{\lforall} په قاعدو کښې د ځانګړي متغير شرط غواړي چې
+!!{constant}~$a$ په پايله يا کومې !!{undischarged} فرضيې کښې هېڅ
+ځاے نۀ راځي۔ دا شرط د نظام د سموالي د يقيني کولو دپاره اړين دے؛
+يعنې نظام له هغو !!{undischarged} فرضيو څخه يوازې هغه !!{sentence}s
+!!{derive}s کړي چې ترې معنايي پايله کېږي۔ له دې شرط پرته لاندې به
+روا و:
+\begin{prooftree}
+  \AxiomC{$\lexists[x][!A(x)]$}
+  \AxiomC{$\Discharge{!A(a)}{1}$}
+  \RightLabel{*\Intro{\lforall}}
+  \UnaryInfC{$\lforall[x][!A(x)]$}
+  \RightLabel{\Elim{\lexists}}
+  \BinaryInfC{$\lforall[x][!A(x)]$}
+\end{prooftree}
+خو $\lexists[x][!A(x)] \Entails/ \lforall[x][!A(x)]$۔
+
+ځکه چې د سورونو د ايستلو قاعدې د !!{variable}s پر ځاے يوازې د تړلو
+اصطلاحاتو ايښوولو اجازه ورکوي، نو هره هغه !!{formula} چې د
+!!{sentence}s له يوه سټ څخه وايستل شي، پخپله !!a{sentence} ده۔
+\end{explain}
+
+
+\end{document}

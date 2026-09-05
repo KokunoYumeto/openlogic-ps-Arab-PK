@@ -1,0 +1,64 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: deduction-theorem-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ddq}
+
+\olsection{له کميت ټاکونکو سره د استنتاج قضيه}
+
+\begin{thm}[د استنتاج قضيه]
+\ollabel{thm:deduction-thm-q} که
+$\Gamma \cup \{!A\} \Proves !B$ وي، نو
+$\Gamma \Proves !A \lif !B$۔
+\end{thm}
+
+\begin{proof}
+يو ځل بيا له~$\Gamma \cup \{!A\}$ څخه د~$!B$ د !!{derivation}
+پر اوږدوالي استقرا کوو۔
+
+د استقرا د بنسټ ثبوت د
+\olref[ded]{thm:deduction-thm} په ثبوت کښې له بنسټ سره يو شان دے۔
+
+د استقرا په پړاو کښې بيا فرض کړئ له~$\Gamma \cup \{!A\}$ څخه د
+$!B$ !!{derivation} په داسې ګام~$!B$ پاے ته رسېږي چې په استنتاجي
+قاعده توجيه شوے دے۔ که استنتاجي قاعده مودوس پوننس وي، د
+\olref[ded]{thm:deduction-thm} د ثبوت په شان مخکښې ځو۔ که قاعده
+\QR{} وي، پوهېږو چې $!B \ident !C \lif \lforall[x][!D(x)]$ او د
+$!C \lif !D(a)$ بڼې !!a{formula} په !!{derivation} کښې له مخکښې
+راغلے دے، چې $a$ په~$!C$، $!A$ يا~$\Gamma$ کښې نۀ راځي۔ نو دا لرو:
+\begin{align*}
+  \Gamma \cup \{!A\} & \Proves !C \lif !D(a),\\
+  \intertext{او د استقرا فرضيه پلي کېږي؛ يعنې دا لرو:}
+    \Gamma & \Proves !A \lif (!C \lif !D(a)).\\
+  \intertext{له دې څخه}
+  & \Proves (!A \lif (!C \lif !D(a))) \lif ((!A \land !C) \lif !D(a))\\
+  \intertext{او مودوس پوننس سره ترلاسه کوو:}
+  \Gamma & \Proves (!A \land !C) \lif !D(a).\\
+  \intertext{ځکه د ځانګړي متغير شرط لا هم پلي کېږي، دې !!{derivation} ته په \QR{} توجيه شوے ګام ورزياتولے شو، او ترلاسه کوو:}
+    \Gamma & \Proves (!A \land !C) \lif \lforall[x][!D(x)].\\
+    \intertext{دا هم لرو:}
+    & \Proves ((!A \land !C) \lif \lforall[x][!D(x)]) \lif (!A \lif (!C \lif \lforall[x][!D(x)])),\\
+    \intertext{نو د مودوس پوننس له مخې،}
+    \Gamma & \Proves !A \lif (!C \lif \lforall[x][!D(x)]),
+\end{align*}
+\textbf{د ژباړې د نسخې سمون (OLAX-005):} سرچينې د پورته ماقبل
+وروستۍ بديهي بېلګه کښې د بهرني شرطي يو تړونکے قوس پرېښے و؛ هغه
+قوس دلته د بشپړې شېما دپاره بېرته راوستل شو۔
+يعنې $\Gamma \Proves !A \lif !B$۔
+\textbf{د ژباړې د نسخې سمون (OLAX-006):} سرچينې وروستۍ پايله يوازې
+د بي د ثبوت په توګه ليکلې وه؛ خو د قضیې موخه او سمدستي مخکښې کرښه
+د اې-که-بي ثبوت ورکوي، نو هماغه بشپړه پايله راوستل شوې ده۔
+
+هغه حالت د تمرين په توګه پرېږدو چې $!B$ د~\QR{} قاعدې په وسيله
+توجيه کېږي، خو د~$\lexists[x][!D(x)] \lif !C$ بڼه لري۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[fol][axd][ddq]{thm:deduction-thm-q} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

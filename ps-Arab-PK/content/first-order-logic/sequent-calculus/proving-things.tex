@@ -1,0 +1,347 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{pro}}
+      {\olfileid{pl}{seq}{pro}}
+
+\olsection{د \usetoken{P}{derivation} بېلګې}
+
+\begin{ex}
+د سېکوېنټ $!A \land !B \Sequent !A$ يو
+$\Log{LK}$-!!{derivation} ورکړئ۔
+
+د !!{derivation} په لاندې برخه کښې د غوښتل شوي وروستي سېکوېنټ په
+ليکلو پيل کوو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+بيا بايد معلومه کړو چې د کوم ډول استنتاج لاندې سېکوېنټ دا بڼه
+لرلے شي۔ دا يوه جوړښتي قاعده کېدے شي، خو غوره ده چې لومړے کومه
+منطقي قاعده ولټوؤ۔ په لاندې سېکوېنټ کښې يوازينے منطقي نښلوونکے
+$\land$ دے؛ نو د $\land$ قاعده لټوؤ، او ځکه چې د $\land$ نښه په
+مقدم کښې راځي، د \LeftR{\land} قاعده ګورو۔
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+د \LeftR{\land} استنتاج د پورتني سېکوېنټ دپاره دوه امکانونه شته:
+يا $!A \Sequent !A$ او يا $!B \Sequent !A$۔ څرګنده ده چې
+$!A \Sequent !A$ يو لومړنے سېکوېنټ دے، او دا ښه خبره ده؛ خو
+$!B \Sequent !A$ په عمومي توګه د اشتقاق وړ نۀ دے۔ پورتنے سېکوېنټ
+ورډکوو:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+اوس د سېکوېنټ $!A \land !B \Sequent !A$ سم
+$\Log{LK}$-!!{derivation} لرو۔
+\end{ex}
+
+\begin{ex}
+د سېکوېنټ $\lnot !A \lor !B \Sequent !A \lif !B$ يو
+$\Log{LK}$-!!{derivation} ورکړئ۔
+
+د !!{derivation} په لاندې برخه کښې د غوښتل شوي وروستي سېکوېنټ په
+ليکلو پيل وکړئ۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A \lor !B \fCenter !A \lif !B$
+\end{prooftree}
+د داسې منطقي قاعدې د موندلو دپاره چې دا وروستنے سېکوېنټ راکړي، د
+وروستي سېکوېنټ منطقي نښلوونکي ګورو: $\lnot$، $\lor$ او $\lif$۔
+اوس مهال يوازې $\lor$ او $\lif$ مهم دي، ځکه چې د وروستي سېکوېنټ د
+!!{sentence}s !!{main operator}s دي؛ خو $\lnot$ د بل نښلوونکي د
+چاپېريال دننه دے، نو وروسته به ئې وڅېړو۔ له دې امله د وروستي
+استنتاج د منطقي قاعدې امکانونه \LeftR{\lor} او \RightR{\lif} دي۔
+په رښتيا هره يوه غوره کولے شو، خو \RightR{\lif} غوره کوو، يوازې
+د دې دپاره چې په دوو څانګو وېشل لږ وروسته کړو۔ د هغو
+\RightR{\lif} استنتاجونو د بڼې له مخې چې دا لاندې سېکوېنټ ورکولے
+شي، بڼه بايد داسې وي:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}} \UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+که $\lnot !A \lor !B$ د مقدم بهرني پاے ته يوسو، د
+\LeftR{\lor} قاعده کارولے شو۔ د شېما له مخې دا بايد په لاندې ډول
+پر دوو پورتنيو سېکوېنټونو ووېشل شي۔
+\textbf{د ژباړې د نسخې سمون (OLSQ-001):} د سرچينې په هغو څلورو
+قاعدوي ونو کښې چې د مقدم دوه فارمولونه سره بدلوي، د ښي لوري د
+تبادلې نښه راغلې ده؛ دلته د قاعدې له واقعي لوري سره سمه د کيڼ
+لوري د تبادلې نښه کارول کېږي۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\AxiomC{}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$ \lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+راياد کړئ چې موږ هڅه کوو تر لومړنيو سېکوېنټونو پورې په پورته لوري
+لار پيدا کړو؛ داسې ښکاري چې ډېر ورنژدې يو!{} ښۍ څانګه له لومړني
+سېکوېنټ څخه يوازې يو کمزوري کول او يوه تبادله لرې ده، او بيا
+بشپړېږي:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+اوس کيڼه څانګه ګورو۔ په هره !!{sentence} کښې يوازينے منطقي
+نښلوونکے د مقدم د !!{sentence}s د $\lnot$ نښه ده، نو د
+\LeftR{\lnot} قاعدې يوه کارونه ګورو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+لکه ښۍ څانګه چې مو بشپړه کړه، له دې کيڼې څانګې څخه هم يوازې يو
+کمزوري کول او يوه تبادله لرې يو۔
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ !A \fCenter !A, !B$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+\end{ex}
+
+\begin{ex}
+د سېکوېنټ $\lnot !A \lor \lnot !B
+\Sequent \lnot (!A \land !B)$ يو $\Log{LK}$-!!{derivation} ورکړئ۔
+
+د پورته طريقو په کارولو، غوښتل شوے وروستنے سېکوېنټ په لاندې برخه
+کښې ليکو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B) $
+\end{prooftree}
+په وروستي سېکوېنټ کښې د !!{sentence}s شته اصلي نښلوونکي د $\lor$
+او $\lnot$ نښې دي۔ دلته هم \LeftR{\lor} او هم \RightR{\lnot}
+کار ورکوي، خو په \RightR{\lnot} پيل کوو، ځکه چې د يوې شېبې دپاره
+پر دوو څانګو وېشل ځنډوي:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+اوس د \LeftR{\land} او \LeftR{\lor} تر منځ ټاکنه لرو۔ ګورو چې د
+\LeftR{\land} قاعدې په کارولو څه کېږي: يا په سېکوېنټ $!A,
+\lnot !A \lor \lnot !B \Sequent \quad$ او يا په سېکوېنټ $!B, \lnot !A
+\lor \lnot !B \Sequent \quad$ پيل کولے شو۔ ځکه چې !!{derivation} د
+$!A$ او $!B$ له پلوه متناظر دے، لومړنے غوره کوو۔
+\textbf{د ژباړې د نسخې سمون (OLSQ-002):} د سرچينې په دغو دوو
+امکاني پورتنيو سېکوېنټونو کښې له دويمې جملې څخه نفي پاتې شوې وه؛
+دلته د وروستي سېکوېنټ او ورپسې قاعدوي ونې له مخې په دواړو جملو
+کښې نفي ساتل کېږي۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+د !!{derivation} د ډکولو په دوام وينو چې له يوې ستونزې سره مخ کېږو:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !A, !A \fCenter$
+\AxiomC{}
+\RightLabel{?}
+\UnaryInf$!A \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !B, !A \fCenter$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+د ښۍ څانګې پورته برخه نوره نۀ شي راکمېدلے او د جوړښتي استنتاجونو
+له لارې لومړني سېکوېنټ ته نۀ شي رسول کېدے؛ نو دا سمه لار نۀ ده۔
+له دې امله پورته د \LeftR{\land} قاعدې کارول تېروتنه وه۔ بېرته
+مخکيني حالت ته ځو او پر ځاے ئې \LeftR{\lor} قاعده پلې کوو، نو
+ترلاسه کوو:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\AxiomC{}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+هره څانګه د مخکښې په شان بشپړه کړو، نو ترلاسه کوو:
+\begin{prooftree}
+\Axiom$ !A \fCenter!A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\Axiom$ !B \fCenter !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+(په دغو ګامونو کښې د $\land$ قاعدې د $\lnot$ له قاعدو څخه لاندې
+هم پلې کېدے شوې او بيا به هم سم !!{derivation} ترلاسه شوے و۔)
+\end{ex}
+
+\begin{ex}
+تر اوسه مو د انقباض قاعده نۀ ده کارولې، خو کله کله اړينه وي۔ دا
+ئې يوه بېلګه ده۔ فرض کړئ غواړو $\quad \Sequent !A \lor \lnot !A$
+ثابت کړو۔ د $\RightR{\lor}$ سرچپه پلي کول به له دغو دوو
+!!{derivation}s څخه يو راکړي:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\DisplayProof\qquad\bottomAlignProof
+\AxiomC{}
+\UnaryInf$!A \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \fCenter \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+البته له دغو څخه هېڅ يو په لومړني سېکوېنټ نۀ پاے ته رسېږي۔ چل دا
+دے چې پوه شو د انقباض قاعده د !!a{sentence} دوه نقلونه سره يو
+کولے شي---او کله چې د ثبوت لټون کوو، يعنې له لاندې څخه پورته ځو،
+د $!A \lor \lnot !A$ يوه کاپي په مقدمه کښې ساتلے شو، مثلاً:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+اوس $\RightR{\lor}$ دويم ځل کارولے شو او~$\lnot !A$ هم ترلاسه کوو،
+چې بشپړ !!{derivation} ته رسېږي۔
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !A, \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\fCenter !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $!A \land (!B \land !C) \Sequent (!A \land !B) \land !C$.
+\item $!A \lor (!B \lor !C) \Sequent (!A \lor !B) \lor !C$.
+\item $!A \lif (!B \lif !C) \Sequent !B \lif (!A \lif !C)$.
+\item $!A \Sequent \lnot\lnot !A$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $(!A \lor !B) \lif !C \Sequent !A \lif !C$.
+\item $(!A \lif !C) \land (!B \lif !C) \Sequent (!A \lor !B) \lif !C$.
+\item $\Sequent \lnot(!A \land \lnot !A)$.
+\item $!B \lif !A \Sequent \lnot !A \lif \lnot !B$.
+\item $\Sequent (!A \lif \lnot !A) \lif \lnot !A$.
+\item $\Sequent \lnot(!A \lif !B) \lif \lnot !B$.
+\item $!A \lif !C \Sequent \lnot (!A \land \lnot !C)$.
+\item $!A \land \lnot !C \Sequent \lnot (!A \lif !C)$.
+\item $!A \lor !B, \lnot !B \Sequent !A$.
+\item $\lnot !A \lor \lnot !B \Sequent \lnot(!A \land !B)$.
+\item $\Sequent (\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)$.
+\item $\Sequent \lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $\lnot(!A \lif !B) \Sequent !A$.
+\item $\lnot(!A \land !B) \Sequent \lnot !A \lor \lnot !B$.
+\item $!A \lif !B \Sequent \lnot !A \lor !B$.
+\item $\Sequent \lnot \lnot !A \lif !A$.
+\item $!A \lif !B, \lnot !A \lif !B \Sequent !B$.
+\item $(!A \land !B) \lif !C \Sequent (!A \lif !C) \lor (!B \lif !C)$.
+\item $(!A \lif !B) \lif !A \Sequent !A$.
+\item $\Sequent (!A \lif !B) \lor (!B \lif !C)$.
+\end{enumerate}
+(دا ټول د~$\RightR{\Contraction}$ قاعدې ته اړتيا لري۔)
+\end{prob}
+\end{document}

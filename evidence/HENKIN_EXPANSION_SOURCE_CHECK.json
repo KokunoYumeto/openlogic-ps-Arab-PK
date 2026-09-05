@@ -1,0 +1,44 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T16:50:17.233667+00:00",
+  "batch_id": "PS-B028-HENKIN-EXPANSION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0130",
+      "source_path": "content/first-order-logic/completeness/henkin-expansions.tex",
+      "source_bytes": 8756,
+      "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+      "translation_bytes": 10783,
+      "translation_sha256": "b426ae0520c58ca3b6d9c22f4a80263e68318f421d1229ef96ca071a7afc0459"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0130 lines 12-48",
+      "observation": "The witness motivation, language-extension proposition and saturation definition were checked under both quantifier profiles.",
+      "treatment": "No source defect found; implication directions, memberships and language scopes are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0130 lines 50-72",
+      "observation": "The formula enumeration, fresh-constant recursion and both definitions of D_n were checked index by index.",
+      "treatment": "No source defect found; every freshness exclusion and subscript remains exact.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0130 lines 74-149",
+      "observation": "The union construction, finite-stage consistency induction, negated-implication consequences and strong-generalization step were traced through all tagged systems.",
+      "treatment": "No source defect found; all proof dependencies and contradictory pairs are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0130 lines 151-218",
+      "observation": "Both quantified-instance equivalences and each proof direction were checked, including where saturation is explicitly unnecessary.",
+      "treatment": "No source defect found; closed-term quantifiers, witness constant and contradiction exercise are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source defect was found. The full Henkin expansion and saturation argument, all formulas, tag branches, memberships, indices and proof-system references are preserved."
+}

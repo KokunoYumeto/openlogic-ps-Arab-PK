@@ -1,0 +1,195 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{ptn}}
+      {\olfileid{pl}{tab}{ptn}}
+      
+\olsection{ثبوت-تيوريکي مفاهيم}
+
+\begin{editorial}
+دا برخه د تابلوګانو د اثبات‌پذيرۍ اړيکې او سازګارۍ تعريفونه
+راټولوي۔
+\end{editorial}
+
+\begin{explain}
+لکه څنګه چې مو يو شمېر مهم معنايي مفاهيم (اعتبار، استلزام او د
+صدق وړتيا) تعريف کړل، اوس ورته \emph{ثبوت-تيوريکي مفاهيم}
+تعريفوو۔ دا مفاهيم په !!{structure}s کښې د !!{sentence}s د پوره
+کېدو له مخې نۀ، بلکې د ځينو تړلو !!{tableau}x د موجوديت له مخې
+تعريفېږي۔ دا مهمه موندنه وه چې دغه مفاهيم سره سمون خوري۔ د دې
+سمون منځپانګه د \emph{سموالي} او \emph{بشپړتيا قضيې} دي۔
+\end{explain}
+
+
+\begin{defn}[قضيې]
+يوه !!{sentence}~$!A$ هله \emph{قضيه} ده چې د
+$\sFmla{\False}{!A}$ دپاره تړلے !!{tableau} موجود وي۔ که $!A$
+قضيه وي، $\Proves !A$ ليکو، او که نۀ وي $\Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ د !!{sentence}s له سټ~$\Gamma$ څخه،
+$\Gamma \Proves !A$، هله \emph{!!{derivable}} ده چې داسې متناهي
+سټ~$\{!B_1, \dots, !B_n\} \subseteq \Gamma$ او د لاندې سټ دپاره
+تړلے !!{tableau} موجود وي:
+\[
+\{
+  \sFmla{\False}{!A},
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+که $!A$ له~$\Gamma$ څخه !!{derivable} نۀ وي،
+$\Gamma \Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[سازګاري]
+د !!{sentence}s يو سټ~$\Gamma$ هله او يوازې هله \emph{ناسازګار}
+دے چې داسې متناهي سټ~$\{!B_1, \dots, !B_n\} \subseteq \Gamma$
+او د لاندې سټ دپاره تړلے !!{tableau} موجود وي:
+\[
+\{
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}  
+  \}.
+\]
+که $\Gamma$ ناسازګار نۀ وي، \emph{سازګار} ئې بولو۔
+\end{defn}
+
+\begin{prop}[انعکاسيت]
+\ollabel{prop:reflexivity}
+که $!A \in \Gamma$ وي، نو $\Gamma \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+که $!A \in \Gamma$ وي، نو $\{!A\}$ د~$\Gamma$ يو متناهي فرعي سټ
+دے، او لاندې !!{tableau} تړلے دے:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A}}, just = \TAss,close]
+  ]
+\end{oltableau}
+\end{proof}
+  
+
+\begin{prop}[يکنواختي]
+\ollabel{prop:monotonicity}
+که $\Gamma \subseteq \Delta$ او $\Gamma \Proves !A$ وي، نو
+$\Delta \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+د~$\Gamma$ هر متناهي فرعي سټ د~$\Delta$ هم متناهي فرعي سټ دے۔
+\end{proof}
+
+\begin{prop}[انتقاليت]
+\ollabel{prop:transitivity}
+که $\Gamma \Proves !A$ او
+$\{!A\} \cup \Delta \Proves !B$ وي، نو
+$\Gamma \cup \Delta \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+که $\{!A\} \cup \Delta \Proves !B$ وي، نو داسې متناهي فرعي سټ
+$\Delta_0 = \{!C_1, \dots, !C_n\} \subseteq \Delta$ شته چې
+\begin{align*}
+\{\sFmla{\False}{!B}, & \sFmla{\True}{!A}, \sFmla{\True}{!C_1},
+\dots, \sFmla{\True}{!C_n}\}
+\intertext{تړلے !!{tableau} لري۔ که $\Gamma \Proves !A$ وي، نو
+  داسې $!D_1$, \dots, $!D_m \in \Gamma$ شته چې}
+\{\sFmla{\False}{!A}, & \sFmla{\True}{!D_1},
+\dots, \sFmla{\True}{!D_m}\}
+\end{align*}
+تړلے !!{tableau} لري۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-004):} سرچينه په منځنۍ جمله
+کښې د ډي-لړ يوازې وروستۍ جمله د ګاما فرعي سټ بولي؛ دلته د لړ
+ټولې جملې د ګاما غړي ښودل شوې، لکه د انتقاليت تعريف چې غواړي۔
+
+اوس د لاندې فرضونو !!{tableau} ونيسئ:
+\[
+\sFmla{\False}{!B},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n},
+\sFmla{\True}{!D_1}, \dots, \sFmla{\True}{!D_m}.
+\]
+پر~$!A$ د~\Cut{} قاعده پلې کړئ۔ دا دوه څانګې جوړوي: يوه پکې
+$\sFmla{\True}{!A}$، او بله پکې $\sFmla{\False}{!A}$ لري۔ نو په
+يوه څانګه کښې دا ټول موجود دي:
+\[
+\{\sFmla{\False}{!B}, \sFmla{\True}{!A},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n}\}
+\]
+ځکه د دغو فرضونو دپاره تړلے !!{tableau} شته، هغه له دې څانګې سره
+نښلولے شو؛ هره هغه څانګه تړل کېږي چې له
+$\sFmla{\True}{!A}$ څخه تېرېږي۔ په بله څانګه کښې دا ټول موجود دي:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!D_1}, \dots,
+\sFmla{\True}{!D_m}\}
+\]
+نو بل لورے هم بشپړولے او تړلے !!{tableau} اخستلے شو۔ دا
+$\Gamma \cup \Delta \Proves !B$ ښيي۔
+\end{proof}
+
+پام وکړئ د دې يوه ځانګړې پايله دا ده: که $\Gamma \Proves !A$ او
+$!A \Proves !B$ وي، نو $\Gamma \Proves !B$۔ له دې څخه دا هم
+لازمېږي چې که $!A_1,\dots,!A_n \Proves !B$ او د هر~$i$ دپاره
+$\Gamma \Proves !A_i$ وي، نو $\Gamma \Proves !B$۔
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ هله او يوازې هله ناسازګار دے چې د هرې
+!!{sentence}~$!A$ دپاره $\Gamma \Proves !A$ وي۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}[تراکم]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item که $\Gamma \Proves !A$ وي، نو داسې متناهي فرعي سټ
+    $\Gamma_0 \subseteq \Gamma$ شته چې $\Gamma_0 \Proves !A$ وي۔
+  \item که د~$\Gamma$ هر متناهي فرعي سټ سازګار وي، نو $\Gamma$
+    سازګار دے۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item که $\Gamma \Proves !A$ وي، نو داسې متناهي فرعي سټ
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ او د لاندې دپاره تړلے
+      !!{tableau} شته:
+      \[
+      \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      همدا !!{tableau}، $\Gamma_0 \Proves !A$ هم ښيي۔
+    \item که $\Gamma$ ناسازګار وي، نو د کوم متناهي فرعي سټ
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ دپاره د لاندې يو تړلے
+      !!{tableau} شته:
+      \[
+      \{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      دا تړلے !!{tableau} ښيي چې $\Gamma_0$ ناسازګار دے۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}
+

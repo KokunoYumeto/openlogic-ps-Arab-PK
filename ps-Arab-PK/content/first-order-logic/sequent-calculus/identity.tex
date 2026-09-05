@@ -1,0 +1,78 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: equality
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{ide}
+
+\olsection{له \usetoken{S}{identity} سره \usetoken{P}{derivation}}
+
+له !!{identity} سره !!^{derivation}s اضافي لومړنيو سېکوېنټونو او
+استنتاجي قاعدو ته اړتيا لري۔
+
+\begin{defn}[د~$\eq$ دپاره لومړني سېکوېنټونه]
+که $t$ تړلې اصطلاح وي، نو ${} \Sequent \eq[t][t]$ يو لومړنے
+سېکوېنټ دے۔
+\end{defn}
+
+د $\eq$ قاعدې دا دي ($t_1$ او $t_2$ تړلې اصطلاحګانې دي):
+
+\begin{defish}
+\Axiom$ \eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_1) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_2)$
+\DisplayProof
+\hfill
+\Axiom$\eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_2) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma  \fCenter \Delta, !A(t_1)$
+\DisplayProof
+\end{defish}
+
+\begin{ex}
+که $s$ او $t$ تړلې اصطلاحګانې وي، نو
+$\eq[s][t], !A(s) \Proves !A(t)$:
+\begin{prooftree}
+\Axiom$ !A(s) \fCenter !A(s)$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[s][t], !A(s)  \fCenter !A(s)$
+\RightLabel{$\eq$}
+\UnaryInf$\eq[s][t], !A(s)  \fCenter !A(t)$
+\end{prooftree}
+دا به د يو شان څيزونو د تعويض د اصل يا د لايبنېڅ د قانون په نامه
+اشنا وي۔
+
+$\Log{LK}$ ثابتوي چې $\eq$ متناظره او انتقالي ده:
+\begin{prooftree}
+\Axiom$ \fCenter \eq[t_1][t_1] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_1][t_1] $
+\RightLabel{$\eq$}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_2][t_1]$
+\DisplayProof\qquad\bottomAlignProof
+\Axiom$ \eq[t_1][t_2] \fCenter \eq[t_1][t_2] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_2] $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_3]$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\eq[t_1][t_2], \eq[t_2][t_3]  \fCenter \eq[t_1][t_3]$
+\end{prooftree}
+په کيڼ !!{derivation} کښې !!{formula}~$\eq[x][t_1]$ زموږ
+$!A(x)$ دے۔ په ښي اړخ کښې $!A(x)$ د~$\eq[t_1][x]$ په توګه اخلو۔
+\end{ex}
+
+\begin{prob}
+د لاندې سېکوېنټونو !!{derivation}s ورکړئ:
+\begin{enumerate}
+\item $\Sequent \lforall[x][\lforall[y][((x = y \land !A(x)) \lif !A(y))]]$
+\item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land
+    !A(z)) \lif y = z)]] \Sequent 
+\lexists[x][(!A(x) \land \lforall[y][(!A(y) \lif y = x)])]$
+\end{enumerate}
+\end{prob}
+
+\end{document}

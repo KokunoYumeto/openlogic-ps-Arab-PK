@@ -1,0 +1,57 @@
+% Part: first-order-logic
+% Chapter: tableaux
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{tab}{تابلوګانې}}
+      {\olchapter{pl}{tab}{تابلوګانې}}
+
+\begin{editorial}
+دا څپرکے يو نښه لرونکے تحليلي تابلو نظام وړاندې کوي۔
+  
+د ثبوت د يوه نظام په توګه له تابلو سره اړوند مواد د شاملولو يا
+ايستلو دپاره د~\texttt{prfTab} ټګ وکاروئ۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-001):} سرچينه دلته په تېروتنه
+فطري استنتاج يادوي؛ د څپرکي، ټګ او ټول وارد شوي موادو له مخې مطلب
+تابلو نظام دے، نو نوم ئې دلته سم شوے دے۔
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

@@ -1,0 +1,66 @@
+% Part: first-order-logic
+% Chapter: axiomatic-proofs
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ide}
+
+\olsection{له \usetoken{S}{identity} سره \usetoken{P}{derivation}}
+
+په !!{derivation}s کښې د~$\eq$ د شاملولو دپاره يوازې نوې بديهي
+شېماوې ورزياتوو۔ د~!!{derivation} او~$\Proves$ تعريف هماغسې پاتې
+کېږي؛ يوازې نوي بديهي اصول هم منو۔
+
+\begin{defn}[د !!{identity} بديهي اصول]
+\begin{align}
+\ollabel{ax:id1} & \eq[t][t], \\
+\ollabel{ax:id2} & \eq[t_1][t_2] \lif (!B(t_1) \lif
+  !B(t_2)),
+\end{align}
+د هر تړلي ترم~$t$، $t_1$ او~$t_2$ دپاره۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:sound}
+  بديهي اصول~\olref{ax:id1} او~\olref{ax:id2} معتبر دي۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][axd][ide]{prop:sound} ثابت کړئ۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:iden1}
+ د هر تړلي ترم~$t$ او سټ~$\Gamma$ دپاره
+ $\Gamma \Proves \eq[t][t]$۔
+ \textbf{د ژباړې د نسخې سمون (OLAX-011):} سرچينې دلته «هر ترم»
+ ويلي وو، خو د يووالي لومړے بديهي اصل يوازې پر تړلو ترمونو شېما
+ ده؛ هماغه
+ لازم قيد بېرته څرګند شو۔
+\end{prop}
+
+\begin{prop}\ollabel{prop:iden2}
+  که $\Gamma \Proves !A(t_1)$ او $\Gamma \Proves
+  \eq[t_1][t_2]$ وي، نو $\Gamma \Proves !A(t_2)$، په دې شرط چې
+  دواړه ښودل شوي ترمونه تړلي وي۔
+  \textbf{د ژباړې د نسخې سمون (OLAX-012):} سرچينې په دې قضيه کښې
+  د تړلو ترمونو شرط نۀ و بيان کړے، سره له دې چې ثبوت ئې نېغ په
+  نېغه د يووالي دويم بديهي اصل کاروي او هغه شېما يوازې تړلي
+  ترمونه مني۔
+\end{prop}
+
+\begin{proof}
+دا !!{formula}
+\[
+(\eq[t_1][t_2] \lif (!A(t_1) \lif !A(t_2)))
+\]
+د~\olref{ax:id2} يوه بېلګه ده۔ پايله د~\MP په دوه پلي کولو سره
+ترلاسه کېږي۔
+\end{proof}
+
+\end{document}

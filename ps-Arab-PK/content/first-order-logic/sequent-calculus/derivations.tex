@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{der}}
+      {\olfileid{pl}{seq}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+موږ وويل چې لومړنے سېکوېنټ څنګه وي او د استنتاج قاعدې مو ورکړې۔
+په سېکوېنټ حساب کښې !!^{derivation}s له دغو څخه په استقرايي توګه
+جوړېږي: هر !!{derivation} يا په يوازې ځان يو لومړنے سېکوېنټ وي،
+او يا له يوه يا دوو !!{derivation}s او ورپسې يوه استنتاج څخه جوړ وي۔
+\end{explain}
+
+\begin{defn}[$\Log{LK}$ !!{derivation}]
+د يوه سېکوېنټ~$S$ \emph{$\Log{LK}$-!!{derivation}} د سېکوېنټونو
+داسې متناهي ونه ده چې لاندې شرطونه پوره کوي:
+\begin{enumerate}
+\item د ونې تر ټولو بره سېکوېنټونه لومړني سېکوېنټونه دي۔
+\item د ونې تر ټولو لاندې سېکوېنټ~$S$ دے۔
+\item له~$S$ پرته د ونې هر سېکوېنټ د استنتاج د يوې قاعدې د سمې
+  کارونې مقدمه ده، او د هغې کارونې پايله په ونه کښې د هماغه
+  سېکوېنټ مخامخ لاندې ولاړه وي۔
+\end{enumerate}
+بيا وايو چې $S$ د !!{derivation} \emph{وروستنے سېکوېنټ} دے او
+$S$ \emph{په $\Log{LK}$ کښې !!{derivable}} دے (يا
+$\Log{LK}$-!!{derivable} دے)۔
+\end{defn}
+
+\begin{ex}
+هر لومړنے سېکوېنټ، مثلاً $!C \Sequent !C$، !!a{derivation} دے۔
+له دې څخه د يوې بلې قاعدې، مثلاً د $\LeftR{\Weakening}$ قاعدې، په
+کارولو نوے !!{derivation} ترلاسه کولے شو:
+\begin{prooftree}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\end{prooftree}
+خو قاعده عمومي مراد لري: په قاعده کښې $!A$ د هرې !!{sentence}،
+مثلاً د~$!D$، په ځاے راوستلے شو۔ که مقدمه زموږ له لومړني سېکوېنټ
+$!C \Sequent !C$ سره سمون خوري، نو $\Gamma$ او $\Delta$ دواړه
+يوازې~$!C$ دي، او پايله به بيا $!D, !C \Sequent !C$ وي۔ نو لاندې
+!!a{derivation} دے:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\end{prooftree}
+اوس يوه بله قاعده، مثلاً $\LeftR{\Exchange}$، کارولے شو چې په کيڼ
+لوري کښې د دوو !!{sentence}s د ځاے بدلولو اجازه راکوي۔ نو لاندې هم
+سم !!{derivation} دے:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\end{prooftree}
+د دې قاعدې په دې کارونه کښې، چې داسې ورکړل شوې وه:
+\begin{prooftree}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta,$
+\end{prooftree}
+$\Gamma$ او $\Pi$ دواړه تش وو، $\Delta$ هم $!C$ دے، او د $!A$ او
+$!B$ ونډې په همدې ترتيب $!D$ او~$!C$ لوبوي۔ نژدې په همدې طريقه
+وينو چې
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\end{prooftree}
+هم !!a{derivation} دے۔ اوس دا دواړه !!{derivation}s اخلو او د
+$\RightR{\land}$ په کارولو ئې يو ځاے کوو۔ هغه قاعده داسې وه:
+\begin{prooftree}
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\end{prooftree}
+زموږ په حالت کښې مقدمې بايد د هغو !!{derivation}s له وروستيو
+سېکوېنټونو سره سمون وخوري چې په مقدمو پاے ته رسېږي۔ يعنې $\Gamma$
+د $!C, !D$، $\Delta$ تشه، $!A$ د $!C$ او $!B$ د $!D$ سره برابره
+ده۔ نو که استنتاج سم وي، پايله $!C, !D \Sequent !C
+\land !D$ ده۔
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !C \land !D $
+\end{prooftree}
+البته مقدمې سرچپه کولے هم شو؛ بيا $!A$ به $!D$ او $!B$ به~$!C$ وي۔
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !D \land !C $
+\end{prooftree}
+\end{ex}
+
+\end{document}

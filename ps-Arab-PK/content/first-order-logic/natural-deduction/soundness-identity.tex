@@ -1,0 +1,51 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{sid}
+
+\olsection{له \usetoken{S}{identity} سره سموالے}
+
+\begin{prop}
+د~$\eq$ له قاعدو سره فطري استنتاج سم دے۔
+\end{prop}
+
+\begin{proof}
+د~$\eq[t][t]$ په بڼه هره !!{formula} معتبره ده؛ ځکه د هر
+!!{structure}~$\Struct M$ دپاره $\Sat{M}{\eq[t][t]}$۔ (پام وکړئ
+چې اصطلاح~$t$ تړلې فرضوو، يعنې هېڅ متغير نۀ لري؛ نو
+متغير-ګومارنې اغېز نۀ لري۔)
+
+فرض کړئ په کوم !!a{derivation} کښې وروستنے استنتاج \Elim{\eq} دے،
+يعنې !!{derivation} لاندې بڼه لري:
+\begin{prooftree}
+  \AxiomC{$\Gamma_1$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\eq[t_1][t_2]$}
+  \AxiomC{$\Gamma_2$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A(t_1)$}
+  \RightLabel{\Elim{\eq}}
+  \BinaryInfC{$!A(t_2)$}
+\end{prooftree}
+مقدمې~$\eq[t_1][t_2]$ او~$!A(t_1)$ په خپل وار له
+!!{undischarged} فرضيو~$\Gamma_1$ او~$\Gamma_2$ څخه
+!!{derive} شوې دي۔ غواړو وښيو چې $!A(t_2)$ له
+$\Gamma_1 \cup \Gamma_2$ څخه لازمېږي۔ داسې
+!!a{structure}~$\Struct{M}$ ونيسئ چې
+$\Sat{M}{\Gamma_1 \cup \Gamma_2}$ وي۔ د استقرا د فرضيې له مخې
+$\Sat{M}{!A(t_1)}$ او~$\Sat{M}{\eq[t_1][t_2]}$۔ نو
+$\Value{t_1}{M} = \Value{t_2}{M}$۔ $s$ هره متغير-ګومارنه ونيسئ،
+او $m = \Value{t_1}{M} = \Value{t_2}{M}$۔ د
+\olref[fol][syn][ext]{prop:ext-formulas} له مخې
+$\Sat{M}{!A(t_1)}[s]$ هله او يوازې هله چې
+$\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$، او دا هله او يوازې هله چې
+$\Sat{M}{!A(t_2)}[s]$۔ ځکه $\Sat{M}{!A(t_1)}$، نو
+$\Sat{M}{!A(t_2)}$۔
+\end{proof}
+
+\end{document}

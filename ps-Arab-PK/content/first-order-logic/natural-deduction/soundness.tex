@@ -1,0 +1,329 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{sou}}
+      {\olfileid{pl}{ntd}{sou}}
+      
+\olsection{سموالے}
+
+\begin{explain}
+د فطري استنتاج په شان !!^a{derivation} نظام هله \emph{سم} دے چې
+هغه څيزونه !!{derive} نۀ کړي چې په حقيقت کښې ترې نۀ لازمېږي۔
+نو سموالے د !!{derivation} نظامونو د تضمين شوې خونديتوب يو ډول
+خاصيت دے۔ د دې له مخې چې کوم ثبوت-تيوريکي خاصيت تر بحث لاندې وي،
+مثلاً غواړو پوه شو چې:
+\begin{enumerate}
+\item هره !!{derivable}~!!{sentence} \iftag{FOL}{معتبره}{صدق‌تابع قضيه} ده؛
+\item که !!a{sentence} له ځينو نورو څخه !!{derivable} وي، د هغو
+  معنايي پايله هم ده؛
+\item که د !!{sentence}s يو سټ ناسازګار وي، د صدق وړ نۀ دے۔
+\end{enumerate}
+دا د !!a{derivation} نظام مهم خاصيتونه دي۔ که له دغو څخه کوم يو
+سم نۀ وي، !!{derivation} نظام نيمګړے دے---له حده زيات څيزونه به
+!!{derive} کوي۔ له دې امله د !!{derivation} نظام سموالے ثابتول
+تر ټولو زيات اهميت لري۔
+\end{explain}
+
+\begin{thm}[سموالے]
+\ollabel{thm:soundness}
+که $!A$ له !!{undischarged} فرضيو~$\Gamma$ څخه !!{derivable} وي،
+نو $\Gamma \Entails !A$۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $\delta$ د~$!A$ يو !!a{derivation} دے۔ موږ په~$\delta$
+کښې د استنتاجونو پر شمېر استقرا کوو۔
+
+د استقرا د بنسټ دپاره هغه حالت ثابتوو چې د استنتاجونو شمېر~$0$
+وي۔ په دې حالت کښې $\delta$ يوازې له يوې !!{sentence}~$!A$ څخه
+جوړ دے، يعنې يوه فرضيه ده۔ دغه فرضيه !!{undischarged} ده؛ ځکه
+فرضیې يوازې د استنتاجونو په وسيله !!{discharged} کېدے شي، او دلته
+هېڅ استنتاج نشته۔ نو هر
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+چې د ثبوت ټولې !!{undischarged} فرضيې پوره کوي، $!A$ هم پوره کوي۔
+
+اوس د استقرا پړاو اخلو۔ فرض کړئ $\delta$، $n$ استنتاجونه لري۔
+د تر ټولو لاندې استنتاج مقدمه يا مقدمې د فرعي-!!{derivation}s په
+وسيله !!{derive} شوې دي، او په هر يوه کښې تر~$n$ کم استنتاجونه
+دي۔ د استقرا فرضيه منو: د تر ټولو لاندې استنتاج مقدمې د هغو
+فرعي-!!{derivation}s له !!{undischarged} فرضيو څخه لازمېږي چې په
+دغو مقدمو پاے ته رسېږي۔ بايد وښيو چې پايله~$!A$ د ټول ثبوت له
+!!{undischarged} فرضيو څخه لازمېږي۔
+
+د تر ټولو لاندې استنتاج د ډول له مخې حالتونه بېلوو۔ لومړے هغه
+ممکن استنتاجونه څېړو چې يوازې يوه مقدمه لري۔
+
+\begin{enumerate}
+\item فرض کړئ وروستنے استنتاج \Intro{\lnot} دے: !!{derivation}
+  دا بڼه لري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \DischargeRule{\Intro{\lnot}}{n}
+    \UnaryInfC{$\lnot !A$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $\lfalse$ د~$\delta_1$ له
+  !!{undischarged} فرضيو~$\Gamma \cup \{!A\}$ څخه لازمېږي۔ يو
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  ونيسئ۔ بايد وښيو چې که
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ وي، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$ دے۔ د خلف په توګه
+  فرض کړئ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$، خو
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$، يعنې
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$۔ له دې به
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma \cup \{!A\}}$ لازم شي۔
+  دا زموږ د استقرا د فرضيې خلاف دے۔ نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$۔
+
+\item وروستنے استنتاج \Elim{\land} دے: دوه بڼې لري؛ له مقدمې
+  $!A \land !B$ څخه يا~$!A$ يا~$!B$ راايستل کېدے شي۔ لومړے حالت
+  ونيسئ۔ !!{derivation}~$\delta$ داسې ښکاري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \land !B$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $!A \land !B$ د~$\delta_1$ له
+  !!{undischarged} فرضيو~$\Gamma$ څخه لازمېږي۔
+  يو !!a{structure}~\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ونيسئ۔
+  بايد وښيو چې که
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ وي، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ دے۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$۔ زموږ د استقرا د
+  فرضيې ($\Gamma \Entails !A \land !B$) له مخې پوهېږو چې
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$۔ د تعريف له مخې
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$ هله او يوازې هله
+  چې $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ او
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ دواړه وي۔ (هغه حالت چې له
+  $!A \land !B$ څخه~$!B$ راايستل کېږي، په ورته ډول څېړل کېږي۔)
+  
+\item وروستنے استنتاج \Intro{\lor} دے: دوه بڼې لري؛
+  $!A \lor !B$ يا له مقدمې~$!A$ يا له مقدمې~$!B$ څخه راايستل
+  کېدے شي۔ لومړے حالت ونيسئ۔ !!{derivation} دا بڼه لري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \RightLabel{\Intro{\lor}}
+    \UnaryInfC{$!A \lor !B$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $!A$ د~$\delta_1$ له
+  !!{undischarged} فرضيو~$\Gamma$ څخه لازمېږي۔ يو
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  ونيسئ۔ بايد وښيو چې که
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ وي، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ دے۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$؛ بيا
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$، ځکه
+  $\Gamma \Entails !A$ (د استقرا فرضيه)۔ نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ هم بايد وي۔
+  (هغه حالت چې $!A \lor !B$ له~$!B$ څخه راايستل کېږي، په ورته ډول
+  څېړل کېږي۔)
+  
+\item وروستنے استنتاج \Intro{\lif} دے: $!A \lif !B$ له داسې فرعي
+  ثبوت څخه راايستل کېږي چې فرضيه ئې~$!A$ او پايله ئې~$!B$ ده،
+  يعنې:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!B$}
+    \DischargeRule{\Intro{\lif}}{n}
+    \UnaryInfC{$!A \lif !B$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $!B$ د~$\delta_1$ له
+  !!{undischarged} فرضيو څخه لازمېږي، يعنې
+  $\Gamma \cup \{!A\} \Entails !B$۔ يو
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  ونيسئ۔ د~$\delta$~!!{undischarged} فرضيې يوازې~$\Gamma$ دي؛ ځکه
+  $!A$ په وروستي استنتاج کښې ايستل شوې ده۔ نو بايد وښيو
+  چې $\Gamma \Entails !A \lif !B$۔ د خلف په توګه فرض کړئ چې د کوم
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+  دپاره $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$، خو
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ وي۔ نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ او
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$۔ خو د فرضيې له مخې
+  $!B$ د~$\Gamma \cup \{!A\}$ معنايي پايله ده، يعنې
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$، او دا تناقض دے۔ نو
+  $\Gamma \Entails !A \lif !B$۔
+
+\item وروستنے استنتاج \FalseInt دے: دلته $\delta$ داسې پاے ته رسېږي:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \RightLabel{\FalseInt}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $\Gamma \Entails \lfalse$۔ بايد وښيو چې
+  $\Gamma \Entails !A$۔ فرض کړئ داسې نۀ وي؛ بيا د کوم
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ دپاره
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ او
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ دي۔ خو
+  کاذبي هېڅ جوړښت يا ارزونه نۀ پوره کوي؛ يعنې تل
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ وي؛ نو له دې به
+  $\Gamma \Entails/ \lfalse$ لازم شي، چې د استقرا د فرضيې خلاف دے۔
+
+\item وروستنے استنتاج \FalseCl دے: تمرين۔
+
+\iftag{FOL}{
+\item وروستنے استنتاج \Intro{\lforall} دے: بيا $\delta$ دا بڼه لري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې مقدمه~$!A(a)$ د~!!{undischarged}
+  فرضيو~$\Gamma$ معنايي پايله ده۔ داسې جوړښت~$\Struct{M}$ ونيسئ
+  چې $\Sat{M}{\Gamma}$ وي۔ بايد وښيو چې
+  $\Sat{M}{\lforall[x][!A(x)]}$۔ ځکه
+  $\lforall[x][!A(x)]$ يوه !!a{sentence} ده، د دې معنٰی دا ده چې
+  د هرې متغير-ګومارنې~$s$ دپاره بايد
+  $\Sat{M}{!A(x)}[s]$ وښيو
+  (\olref[syn][ass]{prop:sat-quant})۔ ځکه $\Gamma$ ټول له جملو جوړ
+  دے، د هر~$!B \in \Gamma$ دپاره
+  $\Sat{M}{!B}[s]$ د~\olref[syn][sat]{defn:satisfaction} له مخې
+  دے۔ $\Struct{M'}$ داسې جوړښت ونيسئ چې د~$\Struct{M}$ په شان وي،
+  خو $\Assign{a}{M'} = s(x)$ وي۔ ځکه $a$ په~$\Gamma$ کښې نۀ راځي،
+  د~\olref[syn][ext]{cor:extensionality-sent} له مخې
+  $\Sat{M'}{\Gamma}$۔ ځکه $\Gamma \Entails !A(a)$،
+  $\Sat{M'}{!A(a)}$۔ ځکه $!A(a)$ يوه !!a{sentence} ده، د
+  \olref[syn][ass]{prop:sentence-sat-true} له مخې
+  $\Sat{M'}{!A(a)}[s]$۔ د
+  \olref[syn][ext]{prop:ext-formulas} له مخې
+  $\Sat{M'}{!A(x)}[s]$ هله او يوازې هله چې
+  $\Sat{M'}{!A(a)}$ (ياد ولرئ $!A(a)$ هماغه
+  $\Subst{!A(x)}{a}{x}$ دے)۔ نو $\Sat{M'}{!A(x)}[s]$۔ ځکه $a$
+  په~$!A(x)$ کښې نۀ راځي، د
+  \olref[syn][ext]{prop:extensionality} له مخې
+  $\Sat{M}{!A(x)}[s]$۔ خو $s$ خپل‌سری متغير-ګومارنه وه؛ نو
+  $\Sat{M}{\lforall[x][!A(x)]}$۔
+  
+\item وروستنے استنتاج \Intro{\lexists} دے: تمرين۔
+
+\item وروستنے استنتاج \Elim{\forall} دے: تمرين۔
+}{}
+\end{enumerate}
+
+اوس هغه ممکن استنتاجونه څېړو چې څو مقدمې لري:
+\Elim{\lor}، \Intro{\land}، \Elim{\lnot}،
+\iftag{FOL}{\Elim{\lif} او~\Elim{\lexists}}{او~\Elim{\lif}}۔
+\textbf{د ژباړې د نسخې سمون (OLND-006):} سرچينې د څو-مقدمې
+قاعدو له دې بشپړ لړ څخه د نفي ايستلو قاعده غورځولې ده، سره له دې
+چې لاندې تمرين ئې هم راوړي؛ دلته بېرته شامله شوه۔
+\begin{enumerate}
+
+\item وروستنے استنتاج \Intro{\land} دے۔ $!A \land !B$ له
+  مقدمو~$!A$ او~$!B$ څخه راايستل کېږي او $\delta$ دا بڼه لري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+    \RightLabel{\Intro{\land}}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $!A$ د~$\delta_1$ له
+  !!{undischarged} فرضيو~$\Gamma_1$ څخه، او~$!B$ د~$\delta_2$ له
+  !!{undischarged} فرضيو~$\Gamma_2$ څخه لازمېږي۔ د~$\delta$
+  !!{undischarged} فرضيې $\Gamma_1 \cup \Gamma_2$ دي؛ نو بايد
+  $\Gamma_1 \cup \Gamma_2 \Entails !A \land !B$ وښيو۔ داسې
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  ونيسئ چې
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ وي۔
+  ځکه $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1}$، او
+  $\Gamma_1 \Entails !A$، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$۔ همدارنګه، ځکه
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_2}$ او
+  $\Gamma_2 \Entails !B$، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$۔ دواړه يو ځاے
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$ راکوي۔
+  
+\item وروستنے استنتاج \Elim{\lor} دے: تمرين۔
+
+\item وروستنے استنتاج \Elim{\lif} دے۔ $!B$ له مقدمو
+  $!A \lif !B$ او~$!A$ څخه راايستل کېږي۔ !!{derivation}~$\delta$
+  داسې ښکاري:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \lif !B$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lif}}
+    \BinaryInfC{$!B$}
+  \end{prooftree}
+  د استقرا د فرضيې له مخې $!A \lif !B$ د~$\delta_1$ له
+  !!{undischarged} فرضيو~$\Gamma_1$ څخه، او~$!A$ د~$\delta_2$ له
+  !!{undischarged} فرضيو~$\Gamma_2$ څخه لازمېږي۔ يو
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  ونيسئ۔ بايد وښيو چې که
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ وي، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ دے۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$۔
+  ځکه $\Gamma_1 \Entails !A \lif !B$، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$۔ ځکه
+  $\Gamma_2 \Entails !A$، نو
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$۔ له دې څخه
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ لازمېږي (ځکه که
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ وے، نو له
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ سره به
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ وے، چې د
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$ خلاف دے)۔
+
+\item وروستنے استنتاج \Elim{\lnot} دے: تمرين۔
+  
+\tagitem{FOL}{وروستنے استنتاج \Elim{\lexists} دے: تمرين۔}{}
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+د~\olref[fol][ntd][sou]{thm:soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+د~\olref[pl][ntd][sou]{thm:soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+که $\Proves !A$ وي، نو $!A$ \iftag{FOL}{معتبره}{صدق‌تابع قضيه} ده۔
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+که $\Gamma$ د صدق وړ وي، نو سازګار دے۔
+\end{cor}
+
+\begin{proof}
+نقيض عکس ثابتوو۔ فرض کړئ $\Gamma$ سازګار نۀ دے۔ بيا
+$\Gamma \Proves \lfalse$، يعنې له~$\Gamma$ څخه د
+!!{undischarged} فرضيو پر بنسټ د~$\lfalse$ يو !!a{derivation} شته۔
+د~\olref{thm:soundness} له مخې هر
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+چې $\Gamma$ پوره کوي، بايد $\lfalse$ هم پوره کړي۔ ځکه د هر
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+دپاره $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$، نو هېڅ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}، $\Gamma$ نۀ شي پوره
+کولے؛ يعنې $\Gamma$ د صدق وړ نۀ دے۔
+\end{proof}
+
+\end{document}
+

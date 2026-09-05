@@ -1,0 +1,49 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{sid}
+
+\olsection{له \usetoken{S}{identity} سره سموالے}
+
+\begin{prop}
+$\Log{LK}$ د عينيت له لومړنيو سېکوېنټونو او قاعدو سره سم دے۔
+\end{prop}
+
+\begin{proof}
+د ${} \Sequent \eq[t][t]$ په بڼه لومړني سېکوېنټونه معتبر دي؛
+ځکه د هر !!{structure}~$\Struct M$ دپاره
+$\Sat{M}{\eq[t][t]}$۔ (پام وکړئ، فرض کوو چې اصطلاح~$t$ تړلې ده،
+يعنې هېڅ متغير نۀ لري؛ نو متغير-ټاکنې اهميت نۀ لري۔)
+
+فرض کړئ په !!a{derivation} کښې وروستنے استنتاج $=$ دے۔ بيا مقدمه
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_1)$ او پايله
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_2)$ ده۔ يو
+!!a{structure}~$\Struct M$ په پام کښې ونيسئ۔ بايد وښيو چې پايله
+معتبره ده؛ يعنې که $\Sat{M}{\eq[t_1][t_2]}$ او
+$\Sat{M}{\Gamma}$ وي، نو يا د کوم $!C \in \Delta$ دپاره
+$\Sat{M}{!C}$، يا $\Sat{M}{!A(t_2)}$ دے۔
+
+د استقرا د فرضيې له مخې مقدمه معتبره ده۔ د دې معنٰی دا ده چې که
+$\Sat{M}{\eq[t_1][t_2]}$ او $\Sat{M}{\Gamma}$ وي، نو يا
+(الف) د کوم $!C \in \Delta$ دپاره $\Sat{M}{!C}$، يا
+(ب) $\Sat{M}{!A(t_1)}$ دے۔ په (الف) حالت کښې کار بشپړ دے۔ (ب)
+حالت وګورئ۔ داسې متغير-ټاکنه~$s$ ونيسئ چې
+$s(x) = \Value{t_1}{M}$۔ د
+\olref[syn][ass]{prop:sentence-sat-true} له مخې
+$\Sat{M}{!A(t_1)}[s]$۔ ځکه $\varAssign{s}{s}{x}$، د
+\olref[syn][ext]{prop:ext-formulas} له مخې
+$\Sat{M}{!A(x)}[s]$۔ ځکه $\Sat{M}{\eq[t_1][t_2]}$، نو
+$\Value{t_1}{M} = \Value{t_2}{M}$، او له دې امله
+$s(x) = \Value{t_2}{M}$۔ د
+\olref[syn][ext]{prop:ext-formulas} په بيا پلي کولو
+$\Sat{M}{!A(t_2)}[s]$ هم لرو۔ د
+\olref[syn][ass]{prop:sentence-sat-true} له مخې
+$\Sat{M}{!A(t_2)}$۔
+\end{proof}
+
+\end{document}

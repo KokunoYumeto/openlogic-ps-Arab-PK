@@ -1,0 +1,153 @@
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathrsfs,nicefrac,stmaryrd}
+\usepackage{xparse,etoolbox,xpunctuate,mfirstuc}
+\usepackage{graphicx,tikz,xcolor,framed,comment,longtable,multirow,array}
+\usepackage{bussproofs}
+\input{OLP_UPSTREAM_PATH/sty/bussproofs-extra.sty}
+\usepackage[tableaux]{prooftrees}
+\usepackage[unicode,colorlinks,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{bidi}
+
+\hypersetup{
+  pdftitle={OpenLogic Pashto Pakistan - Propositional Syntax, Semantics, and Proof Systems},
+  pdfauthor={Open Logic Project; independent Pashto (Pakistan) translation},
+  pdfsubject={Partial edition: 70 source units; full 722-unit edition in progress}
+}
+
+% Load the upstream notation profile without its English token layer.  The
+% builder expands every source token to the reviewed Pashto form before TeX.
+\newcommand*{\DeclareDocumentMacro}[2]{\def#1{#2}}
+\NewDocumentCommand{\settexttoken}{m s m m o o}{}
+\makeatletter
+\input{OLP_UPSTREAM_PATH/sty/open-logic-formulas.sty}
+\input{OLP_UPSTREAM_PATH/sty/open-logic-selective.sty}
+\input{OLP_UPSTREAM_PATH/open-logic-config.sty}
+\makeatother
+\renewcommand{\MP}{\LR{\latinfont MP}}
+\renewcommand{\QR}{\LR{\latinfont QR}}
+\renewcommand{\Hyp}{\LR{\latinfont Hyp}}
+
+% Source-relative file IDs and references are retained in the flattened
+% reader.  A reference outside this partial volume prints its exact OpenLogic
+% identifier instead of an unresolved question mark.
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\NewDocumentCommand{\olchapter}{o m m m}{%
+  \gdef\pspart{#2}\gdef\pschapter{#3}\gdef\pssection{}%
+  \IfNoValueTF{#1}{\chapter{#4}}{\chapter[#1]{#4}}%
+  \label{#2:#3::chap}}
+\NewDocumentCommand{\olsection}{o m}{%
+  \IfNoValueTF{#1}{\section{#2}}{\section[#1]{#2}}%
+  \label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+\NewDocumentCommand{\olref}{o o o m}{\begingroup
+  \IfNoValueTF{#1}{\edef\pskey{\pspart:\pschapter:\pssection:#4}}{%
+    \IfNoValueTF{#2}{\edef\pskey{\pspart:\pschapter:#1:#4}}{%
+      \IfNoValueTF{#3}{\edef\pskey{\pspart:#1:#2:#4}}{\edef\pskey{#1:#2:#3:#4}}}}%
+  \ifcsname r@\pskey\endcsname
+    \LR{\ref{\pskey}}%
+  \else
+    \mbox{\LR{\latinfont\scriptsize OpenLogic \texttt{\pskey}}}%
+  \fi
+  \endgroup}
+\let\Olref\olref
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\providecommand{\OLEndChapterHook}{}
+
+% Proof layouts are geometrically left-to-right even though the surrounding
+% explanatory prose is right-to-left.
+\renewenvironment{prooftree}
+  {\begin{center}\begin{LTR}\bottomAlignProof}
+  {\DisplayProof\end{LTR}\end{center}}
+\newenvironment{oltableau}
+  {\center\LTR\tableau{}}
+  {\endtableau\endLTR\endcenter}
+
+% The source environments remain visible in this review reader, including
+% editorial notices that disclose source limitations and recorded repairs.
+\newtheorem{thm}{قضيه}[chapter]
+\newtheorem{lem}[thm]{لم}
+\newtheorem{prop}[thm]{قضيه}
+\newtheorem{cor}[thm]{نتيجه}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{تعريف}
+\newtheorem{ex}[thm]{بېلګه}
+\newtheorem{prob}[thm]{تمرين}
+\newenvironment{defish}{\begin{framed}}{\end{framed}}
+\newenvironment{editorial}{\begin{framed}\textbf{ادارتي يادونه۔}\enspace}{\end{framed}}
+\newenvironment{explain}{}{}
+\newenvironment{intro}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{derivation}{%
+  \par\smallskip\begin{LTR}\begin{tabular}{@{}rll@{}}}
+  {\end{tabular}\end{LTR}\par\smallskip}
+
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\chaptername}{باب}
+\renewcommand{\contentsname}{فهرست}
+\renewcommand{\bibname}{\RL{\normalfont سرچينې}}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{4em}
+\makeatother
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt}
+\setlength{\emergencystretch}{6em}
+% \sFmla intentionally lets a truth-sign subscript overhang a narrower
+% formula nucleus by at most 3.3pt in three inline metavariable examples.
+\hfuzz=4pt
+\linespread{1.15}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\small خلاص منطق — پښتو (پاکستان)}
+\fancyhead[LE,RO]{\small بياني نحو، معناپوهنه او د ثبوت نظامونه}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\tracinglostchars=3
+\setRTL
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{24mm}
+{\Huge خلاص منطق}\par\bigskip
+{\Large پښتو — پاکستان}\par\bigskip
+{\LARGE بياني نحو، معناپوهنه او د ثبوت نظامونه}\par\bigskip
+د ماشيني ژباړې د روان کار څلورمه لوستيزه نسخه
+\end{center}
+\bigskip
+په دې لوستيزه نسخه کښې د بياني منطق د نحو او معناپوهنې بشپړ باب،
+د ثبوتي نظامونو ټولکتنه، او د لومړۍ درجې منطق د سېکوېنټ حساب، فطري
+استنتاج، تابلو او بديهي اشتقاق بشپړ بابونه شامل دي۔ دا ټول
+OLP_READER_UNITS سرچينيز واحدونه دي؛ د ۷۲۲ واحدونو بشپړه ژباړه لا
+روانه ده او تر اوسه OLP_DRAFT_UNITS واحدونه په ژباړل شوي بنډل کښې
+شته۔
+
+په متن کښې چې کوم بهرني OpenLogic پېژندونه ښکاري، هغه د لومړۍ درجې
+منطق هغو مخکينيو نحوي يا معنايي برخو ته کره اشارې دي چې لا په دې
+جزوي لوستيزه نسخه کښې نۀ دي راغلي۔ دا پېژندونه ماتې حوالې نۀ دي او
+په بشپړه نسخه کښې به شمېرل شويو حوالو ته واوړي۔
+
+\begin{LTR}\latinfont\small
+Independent Pashto (Pakistan) translation of Open Logic Project revision
+\texttt{9620cc73\allowbreak f9c8e0ad\allowbreak 003c514a\allowbreak
+5d3748f2\allowbreak 9611c4c0}. This reader contains
+OLP_READER_UNITS source units (OLP-0056 through OLP-0125). Pakistani usage is
+primary; Afghan Pashto sources are labelled regional comparators. Specialist
+terminology remains openly reviewable where exact native technical attestation
+is sparse. No native-reader review or upstream endorsement is claimed.
+
+Original text and adaptation: Creative Commons Attribution 4.0 International,
+subject to the component notices preserved with the source snapshot.
+\href{https://openlogicproject.org/}{Open Logic Project}.\quad
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.\quad
+\href{https://doi.org/10.5281/zenodo.22307197}{Edition lineage}.
+\end{LTR}
+\end{titlepage}
+\tableofcontents
+\clearpage

@@ -1,0 +1,129 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{pro}}
+      {\olfileid{pl}{axd}{pro}}
+
+\olsection{د \usetoken{P}{derivation} بېلګې}
+
+
+\begin{ex}
+فرض کړئ غواړو $(\lnot !D \lor !E) \lif (!D \lif !E)$ ثابت کړو۔
+دا په څرګند ډول زموږ د هېڅ بديهي اصل بېلګه نۀ ده، نو د هغې د
+!!{derive} کولو دپاره د~\MP{} قاعده کارول پکار دي۔ زموږ يوازينۍ
+قاعده مودوس پوننس ده، چې $!A$ او $!A \lif !B$ راکړل شي، د~$!B$
+توجيه راکوي۔ يوه تګلاره دا ده چې \olref[prp]{ax:lor3} داسې وکاروو
+چې $!A$، $\lnot !D$؛ $!B$، $!E$؛ او $!C$، $!D \lif !E$ وي؛ يعنې
+دا بېلګه:
+\[
+(\lnot !D \lif (!D \lif !E)) \lif ((!E \lif (!D \lif !E)) \lif ((\lnot
+!D \lor !E) \lif (!D \lif !E))).
+\]
+ولې؟ د مودوس پوننس دوه تطبيقونه وروستۍ برخه راکوي، او همدا مو
+غوښتې ده۔ په اسانۍ وينو چې $\lnot !D \lif (!D \lif !E)$ د
+\olref[prp]{ax:lnot2}، او $!E \lif (!D \lif !E)$ د
+\olref[prp]{ax:lif1} بېلګه ده۔ نو زموږ !!{derivation} دا دے:
+\begin{derivation}
+  1. &  $\lnot !D \lif (!D \lif !E)$ & \olref[prp]{ax:lnot2} \\
+  2. & $(\lnot !D \lif (!D \lif !E)) \lif {}$\\
+  &\qquad $((!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E)))$ & \olref[prp]{ax:lor3}\\
+  3. & $(!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E))$ & 1, 2, \MP\\
+  4. & $!E \lif (!D \lif !E)$ & \olref[prp]{ax:lif1}\\
+  5. & $(\lnot !D \lor !E) \lif (!D \lif !E)$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:identity}
+راځئ د~$!D \lif !D$ يو !!a{derivation} ولټوو۔ دا د بديهي اصل بېلګه
+نۀ ده، نو په~\MP{} ئې !!{derive} کول پکار دي۔
+\olref[prp]{ax:lif1} د~$!A \lif !B$ په بڼه يو بديهي اصل دے چې
+\MP{} پرې پلي کېدے شي۔ د ګټې دپاره، البته، هغه~$!B$ چې \MP{} ئې په
+دې حالت کښې د سم ګام په توګه توجيه کوي بايد~$!D \lif !D$ وي؛ ځکه
+همدا مو غوښتل چې !!{derive} ئې کړو۔ په دې سره $!A$ هم بايد $!D$ وي؛
+يعنې د \olref[prp]{ax:lif1} دې بېلګې ته کتلے شو:
+\[
+!D \lif (!D \lif !D)
+\]
+د~\MP{} د پلي کولو دپاره به د دويمې اړوندې مقدمې، يعنې~$!A$،
+توجيه هم پکار وي۔ خو زموږ په حالت کښې هغه~$!D$ دے، او $!D$ په
+يوازې ځان !!{derive} کولے نۀ شو۔ نو بله تګلاره پکار ده۔
+
+بل بديهي اصل چې يوازې~$\lif$ لري \olref[prp]{ax:lif2} دے، يعنې
+\[
+(!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C))
+\]
+د~\MP{} په دوه ځله پلي کولو وروستي دننني شرطي ته رسېدے شو۔ بيا دا
+معنٰی لري چې د \olref[prp]{ax:lif2} داسې بېلګه غواړو چې
+$!A \lif !C$ پکې $!D \lif !D$، يعنې زموږ موخه !!{formula} وي۔
+نو $!A$ او $!C$ دواړه~$!D$ دي۔ $!B$ څنګه وټاکو چې دواړه
+$!A \lif (!B \lif !C)$ او $!A \lif !B$، يعنې زموږ په حالت کښې
+$!D \lif (!B \lif !D)$ او $!D \lif !B$، هم !!{derivable} وي؟
+له دغو لومړنے، هر~$!B$ چې وټاکو، لا د \olref[prp]{ax:lif1} بېلګه
+ده۔ او که $!B$، $(!D \lif !D)$ وي، نو $!D \lif !B$ به هم د
+\olref[prp]{ax:lif1} بله بېلګه وي۔ نو زموږ !!{derivation} دا دے:
+\begin{derivation}
+  1. & $!D \lif ((!D \lif !D) \lif !D)$ & \olref[prp]{ax:lif1}\\
+  2. & $(!D \lif ((!D \lif !D) \lif !D)) \lif {}$\\
+  & \qquad $((!D \lif (!D \lif !D)) \lif (!D \lif !D))$ & \olref[prp]{ax:lif2}\\
+  3. & $(!D \lif (!D \lif !D)) \lif (!D \lif !D)$ & 1, 2, \MP\\
+  4. & $!D \lif (!D \lif !D)$ & \olref[prp]{ax:lif1}\\
+  5. & $!D \lif !D$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:chain}
+کله کله غواړو وښيو چې له ځينو نورو !!{formula}s~$\Gamma$ څخه د کوم
+!!{formula} يو !!a{derivation} شته۔ مثلاً راځئ وښيو چې له
+$\Gamma = \{!A \lif !B, !B \lif !C\}$ څخه
+$!A \lif !C$، !!{derive} کولے شو۔
+\begin{derivation}
+  1. & $!A \lif !B$ & \Hyp\\
+  2. & $!B \lif !C$ & \Hyp\\
+  3. & $(!B \lif !C) \lif (!A \lif (!B \lif !C))$ & \olref[prp]{ax:lif1} \\
+  4. & $!A \lif (!B \lif !C)$ & 2, 3, \MP\\
+  5. & $(!A \lif (!B \lif !C)) \lif {}$\\
+  & \qquad $((!A \lif !B) \lif (!A \lif !C))$ & \olref[prp]{ax:lif2}\\
+  6. & $((!A \lif !B) \lif (!A \lif !C))$ & 4, 5, \MP\\
+  7. & $!A \lif !C$ & 1, 6, \MP
+\end{derivation}
+هغه کرښې چې ``\Hyp'' (د ``فرضیې'' دپاره) پرې ليکل شوي دي، ښيي چې
+په هغې کرښه !!{formula} د~$\Gamma$ يو !!a{element} دے۔
+\end{ex}
+
+\begin{prop}
+  \ollabel{prop:chain} که $\Gamma \Proves !A \lif !B$ او $\Gamma
+  \Proves !B \lif !C$ وي، نو $\Gamma \Proves !A \lif !C$
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\Gamma \Proves !A \lif !B$ او $\Gamma \Proves !B \lif
+  !C$۔ بيا له~$\Gamma$ څخه د~$!A \lif !B$ يو !!a{derivation} شته؛
+  او له~$\Gamma$ څخه د~$!B \lif !C$ يو !!a{derivation} هم شته۔ د
+  هغو په يو بل پسې نښلولو ئې په يو !!{derivation} کښې يو ځاے کړئ۔
+  اوس د مخکښې بېلګې د~!!{derivation} ۳--۷ کرښې ورزياتې کړئ۔ دا له~$\Gamma$ څخه د
+  $!A \lif !C$ يو !!a{derivation} دے---او همدا د نوي
+  !!{derivation} وروستۍ کرښه ده۔ پام وکړئ چې د ۴مې او ۷مې کرښې
+  توجيه لا هم سمه پاتې کېږي که د ۱مې کرښې حواله د~$!A \lif !B$
+  د~!!{derivation} د وروستۍ کرښې په حواله، او د ۲مې کرښې حواله د
+  $!B \lif !C$ د~!!{derivation} د وروستۍ کرښې په حواله بدله شي۔
+\end{proof}
+
+\begin{prob} 
+له بديهي اصولو څخه د !!{derivation}s په وړاندې کولو وښيئ چې لاندې
+خبرې سمې دي:
+\begin{enumerate} 
+\item $(!A \land !B) \lif (!B \land !A)$
+\item $((!A \land !B) \lif !C) \lif (!A \lif (!B \lif !C))$
+\item $\lnot(!A \lor !B) \lif \lnot !A$
+\end{enumerate} 
+\end{prob}
+
+
+
+\end{document}

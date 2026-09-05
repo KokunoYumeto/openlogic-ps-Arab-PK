@@ -1,0 +1,69 @@
+{
+  "schema": "ps-translation-review-workflow/1",
+  "utc": "2026-09-05T17:34:53.646989+00:00",
+  "status": "implemented through OLP-0131; maintained during subsequent drafting",
+  "coordination": {
+    "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
+    "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
+    "canonical_schema_source": "https://github.com/KokunoYumeto/OpenLogic-translations/blob/811091d54be4989918864732073279a588340e6f/catalogue/translation-decisions/translation-decision.schema.json",
+    "canonical_schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "required_release_surfaces": [
+      "START_HERE.md",
+      "TRANSLATION_DECISIONS_FULL.md",
+      "PRIORITY_REVIEW.md",
+      "DECISION_OCCURRENCES.csv",
+      "DECISIONS.json",
+      "translation-decision.schema.json",
+      "TRANSLATION_DECISION_QA.json"
+    ]
+  },
+  "entry_contract": [
+    "source term or sense",
+    "exact unit, section, source/target file and line evidence",
+    "chosen rendering or treatment",
+    "locale and script",
+    "rationale and actually checked sources",
+    "useful alternatives",
+    "confidence and provisional status",
+    "plain please-double-check question",
+    "exact printed and PDF page after stable verified pagination"
+  ],
+  "decision_policy": {
+    "dictionary_absence": "Make a reversible best-evidence translation, record the absence honestly and request review; do not leave a needed term untranslated solely for lack of an official entry.",
+    "locale": "ps-Arab-PK; Pakistani Pashto usage and orthography are primary.",
+    "script": "Arab",
+    "variants": "Afghan Pashto remains a labelled regional comparator. A separate regional edition would require separate canon, terminology/register, semantic QA, rendering QA and publication receipts.",
+    "human_review_gate": false
+  },
+  "coverage": {
+    "draft_units": 131,
+    "total_units": 722,
+    "terminology_entries": 95,
+    "difficult_entries": 84,
+    "decision_entries": 179,
+    "priority_entries": 89,
+    "paired_occurrence_rows": 9084,
+    "legacy_side_rows": 5664
+  },
+  "pagination": {
+    "rule": "Never guess page numbers. Populate exact printed/PDF occurrence pages only from an accepted stable reader and verified line-to-page mapping.",
+    "current": "All 9084 canonical paired occurrences explicitly say pending. Accepted v0.3 unit ranges are navigation aids only and are not occurrence-page claims.",
+    "next": "Build the completed OLP-0056–0125 proof-systems reader under the global TeX guard, stabilize pagination, derive pages from the embedded segment labels, then regenerate and validate every canonical projection before packaging the next release."
+  },
+  "release_disposition": "Include all review surfaces in the next worthwhile GitHub and Zenodo release; do not mutate the frozen v0.3 artifacts.",
+  "hashes": {
+    "EXPERT_REVIEW_LOG.jsonl": "134cd4492506c4ad11c6b1ac142d6ffd3fbe60b05406bcc52956c1079f9e2ecf",
+    "EXPERT_REVIEW_LOG_SUMMARY.json": "d94ea3865efd120ce970100bfce34a7a49c12e8b40d15e31c5526d9579553ed3",
+    "TRANSLATION_DECISIONS.json": "a79effacb8b8876769683214e0db59640caab79ab5587309c7fd2f8f80a3c36a",
+    "TRANSLATION_DECISIONS.md": "3dffc46a30ba12d4fa0a88e4019408fbdde4c5407d948fbd1d8e371ce0ab4409",
+    "TRANSLATION_DECISIONS_PRIORITY.md": "d7df0e7763179e9ebdc5b2fb380f4ec2d3314bc737afc102652228a7d9b9cbbd",
+    "TRANSLATION_DECISION_OCCURRENCES.csv": "5ca41de996dfd192f81ea16b15fc2403ee740cbd473f559c78f6ed4ffa3db258",
+    "START_HERE.md": "549578504bf9f4b10d8088cd0eedafae05ff07754b719504fdb817118ad7a640",
+    "TRANSLATION_DECISIONS_FULL.md": "009383668452a60c47cdb693b1da02a6d7a7d2e81dcb06d80d494331adc70f77",
+    "PRIORITY_REVIEW.md": "5cbd39df9837f00b73b525c5abd8e9be0fcbfcba8433c2861d8153da439f1919",
+    "DECISION_OCCURRENCES.csv": "2f4b5b07020ee0df99d03dafcd730fc3162e9304180a8cddec1fc34ba28c9dd3",
+    "DECISIONS.json": "e8c25754cdce917183760871dde1f2078c4a16654ccd5ca75093865fb381e3e8",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "TRANSLATION_DECISION_QA.json": "b524bff90d068fcbb1b0f26053588c1c3ee70ff8bb86922ff8e2fe334ceb73e0"
+  }
+}

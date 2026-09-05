@@ -1,0 +1,79 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-04T23:13:36.120906+00:00",
+  "batch_id": "PS-B013-SEQUENT-SOUNDNESS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0081",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_bytes": 17663,
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "translation_bytes": 22352,
+      "translation_sha256": "5b7da223a565ac42d459ce47964b8e20ac838b2d1a111c795ed94b2eef146c76"
+    },
+    {
+      "unit_id": "OLP-0082",
+      "source_path": "content/first-order-logic/sequent-calculus/identity.tex",
+      "source_bytes": 2380,
+      "source_sha256": "0f9d6d0731f2a74f568d49545bfeeff9373aea71d188973549054823f240f23d",
+      "translation_bytes": 2644,
+      "translation_sha256": "74701e631ddc5de6e8be6e1562abd201b70cf863eeecfc1904f2783cda492d3b"
+    },
+    {
+      "unit_id": "OLP-0083",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness-identity.tex",
+      "source_bytes": 1763,
+      "source_sha256": "0cc6d3e92d57d3070076ce2daa13aa85c6da6ac3cfb2b5d56df87bb7fef4fac3",
+      "translation_bytes": 2178,
+      "translation_sha256": "6aee48eaefd2a94a095e86071462dbfd95be308bcc4d22046efae872f211356c"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0081 source line 157",
+      "observation": "The left-conjunction case proves validity of A-and-B,Gamma entails Delta but its final sentence instead asserts validity of the bare premise sequent Gamma entails Delta.",
+      "treatment": "Restored the rule conclusion and disclosed the repair immediately after it.",
+      "correction_id": "OLSQ-005"
+    },
+    {
+      "locator": "OLP-0081 source line 288",
+      "observation": "The cut case describes satisfaction of the right premise with set-difference notation Pi set-minus Lambda rather than the sequent Pi entails Lambda.",
+      "treatment": "Restored the right-premise sequent and disclosed the repair immediately after it.",
+      "correction_id": "OLSQ-006"
+    },
+    {
+      "locator": "OLP-0081 source lines 61-65 and all rule cases",
+      "observation": "The base case names only A entails A, while the proof then checks every displayed unary and binary rule, including eigenvariable model variants.",
+      "treatment": "Preserved the source's stated initial-sequent scope and all rule cases; no extra initial cases or unstated metatheory were inserted.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0082 source lines 16-74",
+      "observation": "Both equality-rule orientations, substitutability, symmetry, transitivity and the exercises were checked against their proof trees and closed-term restrictions.",
+      "treatment": "No source defect found; all formulas, contexts and exercise statements are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0083 source lines 23-41",
+      "observation": "The proof explicitly treats the first equality-rule orientation and does not separately state the symmetric orientation.",
+      "treatment": "Preserved the source scope. The second case follows by the analogous exchange of t1 and t2, but the translation does not add an unrequested proof.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLSQ-005",
+      "classification": "left_conjunction_soundness_case_concludes_wrong_sequent",
+      "source_locator": "sequent-calculus/soundness.tex:157",
+      "target_line_1based": 180
+    },
+    {
+      "correction_id": "OLSQ-006",
+      "classification": "cut_soundness_case_uses_set_difference_instead_of_sequent",
+      "source_locator": "sequent-calculus/soundness.tex:288",
+      "target_line_1based": 338
+    }
+  ],
+  "conclusion": "Two deterministic source defects are corrected and disclosed. The remaining soundness and identity arguments are preserved without expanding source scope."
+}

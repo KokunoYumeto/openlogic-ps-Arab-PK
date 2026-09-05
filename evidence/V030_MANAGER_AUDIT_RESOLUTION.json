@@ -1,0 +1,45 @@
+{
+  "schema": "ps-v030-manager-audit-resolution/1",
+  "recorded_utc": "2026-09-04T22:59:02.289718+00:00",
+  "status": "RESOLVED_IN_NEXT_SOURCE_CHECKPOINT",
+  "release": {
+    "tag": "v0.3.0-sets-relations-functions",
+    "commit": "b4de3dce59c12f6b1d309368f4446c643eec6d1a",
+    "github_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.3.0-sets-relations-functions",
+    "zenodo_record": 22312916,
+    "reader_sha256": "982aad42f4a897bf572164f3c011fab839642a6998d97d56d5b1844dce15609a"
+  },
+  "manager_audit": {
+    "filename": "PASHTO_V030_RELEASE_AUDIT_20260905.json",
+    "bytes": 2439,
+    "sha256": "71c44a3e53c5f9e35aad4eab77d981ff1406b75ad3174a01c3af12afa8c37168",
+    "result": "PASS_WITH_PUBLICATION_METADATA_REPAIR_REQUIRED",
+    "blocking_failures": []
+  },
+  "manager_visual_qa": {
+    "filename": "PASHTO_V030_VISUAL_QA_20260905.json",
+    "bytes": 2759,
+    "sha256": "33d6b5531663600bd67f0f4e35ceeaf816b9178637661d1bf2413928993beb1f",
+    "status": "PASS",
+    "pages": 33,
+    "all_pages_rendered": true,
+    "all_pages_inspected": true
+  },
+  "metadata_resolutions": [
+    {
+      "code": "stale-readme-unreleased-claim",
+      "resolution": "The working README identifies the sets-relations-functions PDF as the current published reader and removes the contradictory unreleased claim.",
+      "working_readme_sha256": "0a0cc1a37e0ea6d1718f29d28e75be6bd232df60b3067b45f2548eebdfa46bbe"
+    },
+    {
+      "code": "stale-qa-published-count",
+      "resolution": "QA now defines published as units in an accepted public reader: 23. It separately records all 73 structurally verified source units in the public v0.3 source snapshot.",
+      "qa_sha256": "c40c9976229d1288f353423a7432d5641b611c58053c907ca9ef95551cb5e9cc",
+      "published_reader_units": 23,
+      "published_source_snapshot_units": 73,
+      "qa_builder_sha256": "16daa93c1d42c7c45c949da3c4b4311095ca53dfd3a5566cd4eb809478a80f54"
+    }
+  ],
+  "release_mutation": "none; v0.3.0 public access, tag, assets and history remain unchanged",
+  "next_action": "Continue OLP-0081–0083 and include these metadata resolutions in the next normal source checkpoint."
+}

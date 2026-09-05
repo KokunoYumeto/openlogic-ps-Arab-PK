@@ -1,0 +1,109 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qrl}
+
+\olsection{د سورونو قاعدې}
+
+\subsection{د~$\lforall$ قاعدې}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\forall}}
+\UnaryInfC{\sFmla{\True}{!A(t)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lforall}}
+\UnaryInfC{\sFmla{\False}{!A(a)}}
+\DisplayProof
+\end{defish}
+
+په~\TRule{\True}{\lforall} کښې $t$ تړلې اصطلاح ده (يعنې متغيرونه
+نۀ لري)۔ په~\TRule{\False}{\lforall} کښې $a$ داسې !!a{constant}
+دے چې بايد د~\TRule{\False}{\lforall} تر قاعدې پاس په څانګه کښې
+هېڅ ځاے نۀ وي راغلے۔ $a$ د~\TRule{\False}{\forall} استنتاج
+\emph{ځانګړے متغير} بولو۔\footnote{د «ځانګړي متغير» اصطلاح کاروو،
+سره له دې چې په پورته قاعده کښې $a$ يو !!a{constant} دے۔ دا
+تاريخي لاملونه لري۔}
+
+\subsection{د~$\lexists$ قاعدې}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\lexists}}
+\UnaryInfC{\sFmla{\True}{!A(a)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lexists}}
+\UnaryInfC{\sFmla{\False}{!A(t)}}
+\DisplayProof
+\end{defish}
+
+بيا هم $t$ تړلې اصطلاح ده، او~$a$ داسې !!a{constant} دے چې د
+\TRule{\True}{\lexists} تر قاعدې پاس په څانګه کښې نۀ راځي۔
+$a$ د~\TRule{\True}{\lexists} استنتاج \emph{ځانګړے متغير} بولو۔
+
+هغه شرط چې ځانګړے متغير د~\TRule{\False}{\lforall} يا
+\TRule{\True}{\lexists} استنتاج تر پاسه په څانګه کښې نۀ راځي،
+\emph{د ځانګړي متغير شرط} بلل کېږي۔
+
+\begin{explain}
+هغه قرارداد را ياد کړئ چې کله $!A$ داسې !!a{formula} وي چې
+!!{variable}~$x$ پکې ازاد وي، دا د~$!A(x)$ په ليکلو ښيو۔ په همدې
+سياق کښې $!A(t)$ د~$\Subst{!A}{t}{x}$ لنډه بڼه ده۔ نو د
+\TRule{\False}{\lexists} قاعده داسې هم ليکلے شو:
+\begin{prooftree}
+  \AxiomC{\sFmla{\False}{\lexists[x][!A]}}
+  \RightLabel{\TRule{\False}{\lexists}}
+  \UnaryInfC{\sFmla{\False}{\Subst{!A}{t}{x}}}
+\end{prooftree}
+پام وکړئ چې $t$ له مخکښې په~$!A$ کښې راتلے شي؛ مثلاً $!A$ کېدے
+شي $\Atom{\Obj P}{t,x}$ وي۔ نو له
+$ \sFmla{\False}{\lexists[x][\Atom{\Obj P}{t,x}]}$ څخه
+$\sFmla{\False}{\Atom{\Obj P}{t,t}}$ استنتاجول د
+\TRule{\False}{\lexists} سمه کارونه ده۔ خو په
+\TRule{\False}{\lforall} او~\TRule{\True}{\lexists} کښې د ځانګړي
+متغير شرطونه غواړي چې !!{constant}~$a$ په~$!A$ کښې نۀ راځي۔ نو له
+$\sFmla{\False}{\lforall[x][\Atom{\Obj P}{a,x}]}$
+څخه د~$\TRule{\False}{\lforall}$ په کارولو
+$\sFmla{\False}{\Atom{\Obj P}{a,a}}$ په سمه توګه نۀ شئ استنتاجولے۔
+\end{explain}
+
+\begin{explain}
+په~\TRule{\True}{\lforall} او~\TRule{\False}{\lexists} کښې د
+تړلې اصطلاح~$t$ پر انتخاب نور بنديز نشته۔ بل لوري ته، د
+\TRule{\True}{\lexists} او~\TRule{\False}{\lforall} په قاعدو کښې
+د ځانګړي متغير شرط غواړي چې !!{constant}~$a$ د اړوند استنتاج تر
+پاسه په څانګو کښې هېڅ ځاے نۀ راځي۔ دا شرط د نظام د سموالي د
+يقيني کولو دپاره اړين دے۔ له دې شرط پرته لاندې به د
+$\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]$
+دپاره يو تړلے !!{tableau} و:
+\begin{center}
+\begin{tableau}{}
+  [\sFmla{\False}{\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\lforall[x][\formula{A}(x)]},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}(a)},
+          just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{A}(a)},
+            just={\TRule{\False}{\lforall}[3]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{tableau}
+\end{center}
+خو $\lexists[x][\formula{A}(x)] \lif
+\lforall[x][\formula{A}(x)]$ معتبر نۀ دے۔
+\end{explain}
+
+\end{document}

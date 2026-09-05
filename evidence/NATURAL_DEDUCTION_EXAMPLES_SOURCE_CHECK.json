@@ -1,0 +1,77 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T00:36:48.243236+00:00",
+  "batch_id": "PS-B015-ND-EXAMPLES",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0089",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_bytes": 11062,
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "translation_bytes": 12998,
+      "translation_sha256": "ebcb56e6ce50745e17faa8e0286edc11d2fcc8f320f771c79ff97c3912b16868"
+    },
+    {
+      "unit_id": "OLP-0090",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_bytes": 9548,
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "translation_bytes": 10653,
+      "translation_sha256": "26a891bbd422e365c1599eef5f483ba0caa3b1b19889774664b9ffeedd005a58"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0089 source line 133",
+      "observation": "The completed branch changes the earlier correct negation-elimination label to falsehood introduction for the same inference from not-A and A to falsehood.",
+      "treatment": "Restored negation elimination and disclosed the repair immediately after the completed tree.",
+      "correction_id": "OLND-003"
+    },
+    {
+      "locator": "OLP-0089 source line 67",
+      "observation": "The final formula in a natural-deduction tree is described as a sentence in an end-sequent, terminology copied from a different proof calculus.",
+      "treatment": "Rendered it as the final conclusion and disclosed the repair before the affected tree.",
+      "correction_id": "OLND-004"
+    },
+    {
+      "locator": "OLP-0089 complete proof trees and exercises",
+      "observation": "Every rule arity, formula, assumption label, discharge scope, classical step and exercise judgment was checked against OLP-0086 and the final trees.",
+      "treatment": "No additional source defect found; branch-direction prose is interpreted by its formulas rather than changed.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0090 source line 115",
+      "observation": "One prose occurrence uses the standard existential symbol inside the elimination-rule label while the displayed trees use the OpenLogic lexists macro.",
+      "treatment": "Preserved, consistent with the analogous OLP-0076 decision. Both render the existential-elimination rule and no semantic or rule-side claim changes.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0090 source lines 69-72",
+      "observation": "Universal elimination says any term may replace x after OLP-0087 restricts quantified instantiations to closed terms.",
+      "treatment": "Rendered contextually as any closed term, preserving the established rule domain without changing its example or formula.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0090 all three worked derivations and exercises",
+      "observation": "Eigenvariable scope, open assumptions, instantiated constants, discharge labels, tree arities and quantified exercise formulas were checked against the frozen rules.",
+      "treatment": "No mathematical source defect found; all derivations and exercises are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLND-003",
+      "classification": "negation_elimination_step_mislabeled_falsehood_introduction",
+      "source_locator": "natural-deduction/proving-things.tex:133",
+      "target_line_1based": 144
+    },
+    {
+      "correction_id": "OLND-004",
+      "classification": "natural_deduction_final_formula_mislabeled_end_sequent",
+      "source_locator": "natural-deduction/proving-things.tex:67",
+      "target_line_1based": 66
+    }
+  ],
+  "conclusion": "Two deterministic OLP-0089 defects are corrected and disclosed. OLP-0090 preserves all mathematics and its equivalent existential-label notation."
+}

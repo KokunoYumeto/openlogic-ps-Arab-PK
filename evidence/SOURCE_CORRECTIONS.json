@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted-in-draft; pending guarded reader rebuild and visual acceptance",
-  "adopted_utc": "2026-09-04T21:54:16.052489+00:00",
+  "status": "adopted-in-draft; OLP-0056–0125 accepted in the proof-systems reader; OLP-0126–0131 pending later reader integration",
+  "adopted_utc": "2026-09-05T17:03:49.828729+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -955,6 +955,904 @@
         ],
         "scope": "three occurrences of the unbound characteristic-sequence subscript"
       }
+    },
+    {
+      "unit_id": "OLP-0075",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "target_sha256": "5032089c0446ed8a615837f92037ea8ec9da81cdf5b601139cefba5aa5430ea4",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-EXAMPLES",
+      "decision_timing": "contemporaneous owner review of every worked proof tree and its explanatory prose against the immediately preceding sequent-rule schemas",
+      "id": "OLSQ-001",
+      "classification": "antecedent_exchange_mislabeled_as_succedent_exchange",
+      "source_locator": "sequent-calculus/proving-things.tex:86,104,125,147",
+      "target_line_1based": 78,
+      "mode": "corrected-four-rule-labels-plus-adjacent-note",
+      "translation_change": "changes exactly four exchange-rule labels from right exchange to left exchange where the displayed step swaps adjacent formulas in the antecedent; the two genuine succedent exchanges remain unchanged",
+      "counterexample": "At each named source line, the sequent below differs from the premise only by swapping two formulas left of the sequent bar, so the right-exchange label contradicts the displayed transformation.",
+      "formula_policy": "Only the four side-designating rule labels are corrected. Every premise, conclusion, formula, context, branch and the two genuine right-exchange labels are preserved.",
+      "qa_macro_exception": {
+        "source_only": [
+          "RightR",
+          "RightR",
+          "RightR",
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR",
+          "LeftR",
+          "LeftR",
+          "LeftR"
+        ],
+        "scope": "four corrected antecedent exchange rule labels"
+      }
+    },
+    {
+      "unit_id": "OLP-0075",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "target_sha256": "5032089c0446ed8a615837f92037ea8ec9da81cdf5b601139cefba5aa5430ea4",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-EXAMPLES",
+      "decision_timing": "contemporaneous owner review of every worked proof tree and its explanatory prose against the immediately preceding sequent-rule schemas",
+      "id": "OLSQ-002",
+      "classification": "candidate_sequents_drop_negation_from_second_disjunct",
+      "source_locator": "sequent-calculus/proving-things.tex:177-180",
+      "target_line_1based": 183,
+      "mode": "corrected-two-inline-formulas-plus-adjacent-note",
+      "translation_change": "restores negation to the second disjunct in both candidate upper sequents, matching the requested end-sequent and every subsequent proof tree",
+      "counterexample": "The theorem begins with not-A or not-B and all displayed derivation trees retain not-B; the two prose candidates alone change the disjunct to positive B.",
+      "formula_policy": "Only the two omitted negation signs are restored. The selected A and B antecedents, empty succedents and all later proof-tree formulas remain unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A,\\lnot!A\\lor!B\\Sequent\\quad$",
+          "$!B,\\lnot!A\\lor!B\\Sequent\\quad$"
+        ],
+        "target_only": [
+          "$!A,\\lnot!A\\lor\\lnot!B\\Sequent\\quad$",
+          "$!B,\\lnot!A\\lor\\lnot!B\\Sequent\\quad$"
+        ],
+        "scope": "two prose candidate sequents only"
+      }
+    },
+    {
+      "id": "OLSQ-003",
+      "unit_id": "OLP-0077",
+      "classification": "editorial_section_misidentified_as_natural_deduction",
+      "source_path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
+      "source_locator": "sequent-calculus/proof-theoretic-notions.tex:9-12",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "target_line_1based": 12,
+      "target_sha256": "937516ea63c2764860cbb7a4cfc84a4ce7958cb831cc7d027d09ecdf72413b26",
+      "mode": "corrected-editorial-system-name-plus-adjacent-note",
+      "translation_change": "replaces natural deduction with sequent calculus in the editorial description, matching the enclosing chapter and every following LK definition",
+      "counterexample": "The section defines theoremhood and consistency entirely through LK sequents and sits inside the sequent-calculus chapter; no natural-deduction rule or notation occurs.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-METATHEORY",
+      "formula_policy": "Only the copied prose system name is corrected; all identifiers, formulas and formal definitions are unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the editorial description with the enclosing chapter identity and complete section body"
+    },
+    {
+      "id": "OLSQ-004",
+      "unit_id": "OLP-0079",
+      "classification": "conjunction_right_tree_uses_mismatched_antecedent_contexts",
+      "source_path": "content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "source_sha256": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c",
+      "source_locator": "sequent-calculus/provability-propositional.tex:48-54",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "target_line_1based": 51,
+      "target_sha256": "a98160932051a675480f3625fd8389f8846c81c1c02db9ef1b2c50f0da971751",
+      "mode": "added-two-structural-premises-plus-adjacent-note",
+      "translation_change": "adds double-line structural steps from the two identity sequents to premises with the common antecedent A,B required by conjunction-right",
+      "counterexample": "Conjunction-right requires identical antecedent and succedent contexts in both premises, but the source tree applies it directly to A entails A and B entails B before concluding A,B entails A-and-B.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-METATHEORY",
+      "formula_policy": "The source identity leaves and final conclusion remain unchanged. Two intermediate sequents make the implicit weakening and exchange steps explicit using the source's established double-line convention.",
+      "decision_timing": "contemporaneous owner rule-instance check against the frozen conjunction-right schema in OLP-0071",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$!A,!B\\fCenter!A$",
+          "$!A,!B\\fCenter!B$"
+        ],
+        "scope": "two added structural intermediate sequents"
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": [
+          "UnaryInf",
+          "UnaryInf",
+          "doubleLine",
+          "doubleLine"
+        ],
+        "scope": "two disclosed structural intermediate proof-tree steps"
+      }
+    },
+    {
+      "id": "OLSQ-005",
+      "unit_id": "OLP-0081",
+      "classification": "left_conjunction_soundness_case_concludes_wrong_sequent",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "source_locator": "sequent-calculus/soundness.tex:157",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_line_1based": 180,
+      "target_sha256": "5b7da223a565ac42d459ce47964b8e20ac838b2d1a111c795ed94b2eef146c76",
+      "mode": "corrected-conclusion-formula-plus-adjacent-note",
+      "translation_change": "replaces the bare premise sequent Gamma entails Delta with the proved conclusion A-and-B,Gamma entails Delta",
+      "counterexample": "The paragraph has just shown that every arbitrary interpretation satisfies A-and-B,Gamma entails Delta, which is Theta entails Xi; validity of the stronger bare Gamma entails Delta neither follows nor is the rule conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-SOUNDNESS",
+      "formula_policy": "Only the final repeated sequent is repaired. The source premise, displayed inference, semantic cases and all other formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the last sentence with the displayed left-conjunction rule and the paragraph's immediately preceding semantic conclusion",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$!A\\land!B,\\Gamma\\Sequent\\Delta$"
+        ],
+        "scope": "one corrected final sequent in the left-conjunction soundness case"
+      }
+    },
+    {
+      "id": "OLSQ-006",
+      "unit_id": "OLP-0081",
+      "classification": "cut_soundness_case_uses_set_difference_instead_of_sequent",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "source_locator": "sequent-calculus/soundness.tex:288",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_line_1based": 338,
+      "target_sha256": "5b7da223a565ac42d459ce47964b8e20ac838b2d1a111c795ed94b2eef146c76",
+      "mode": "corrected-cut-premise-notation-plus-adjacent-note",
+      "translation_change": "replaces Pi set-minus Lambda with the right cut-premise sequent Pi entails Lambda",
+      "counterexample": "The displayed cut inference has right premise A,Pi entails Lambda. When A is false, satisfying that premise requires satisfaction of Pi entails Lambda; set difference is not a sequent or satisfaction claim.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-SEQUENT-SOUNDNESS",
+      "formula_policy": "Only the malformed operator between Pi and Lambda is repaired; the cut inference and all surrounding semantic cases remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the prose with the immediately preceding displayed cut rule and the definition of sequent validity",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Pi\\setminus\\Lambda$"
+        ],
+        "target_only": [
+          "$\\Pi\\Sequent\\Lambda$"
+        ],
+        "scope": "one corrected right-premise reference in the cut soundness case"
+      }
+    },
+    {
+      "id": "OLND-001",
+      "unit_id": "OLP-0085",
+      "classification": "natural_deduction_tree_nodes_mislabeled_as_sequents",
+      "source_path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
+      "source_locator": "natural-deduction/rules-and-proofs.tex:33",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_line_1based": 43,
+      "target_sha256": "6fe92c1184af0036be4dff079b3c03a7f1da3f28fc142a4a647ec5538306a6f5",
+      "mode": "corrected-node-type-noun-plus-adjacent-note",
+      "translation_change": "renders the one, two or three nodes above a sentence as other sentences rather than sequents",
+      "counterexample": "The same paragraph defines natural-deduction derivations as trees of sentences, and every displayed natural-deduction inference has formulas or sentences as premises rather than sequents.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-FOUNDATION",
+      "formula_policy": "Only the inconsistent prose noun is repaired; all rule arities, token macros and formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison with the paragraph's first clause and all displayed rule schemas in the immediately following units"
+    },
+    {
+      "id": "OLND-002",
+      "unit_id": "OLP-0087",
+      "classification": "eigenvariable_summary_incompatibly_forbids_occurrence_in_premises",
+      "source_path": "content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
+      "source_locator": "natural-deduction/quantifier-rules.tex:58-61",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_line_1based": 62,
+      "target_sha256": "f73faf74fe627dcfd64d145808fa17b80861acc774cee1c98f72d0ed9fdcdcc1",
+      "mode": "corrected-eigenvariable-scope-summary-plus-adjacent-note",
+      "translation_change": "states the exact conclusion, open-assumption and existential-major-premise restrictions instead of saying that the eigenvariable occurs in no premise",
+      "counterexample": "The displayed universal-introduction premise A(a) and the existential-elimination auxiliary assumption A(a) necessarily contain the eigenvariable, so the blanket premise prohibition contradicts both rule schemas and the source's preceding precise conditions.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-FOUNDATION",
+      "formula_policy": "All four quantified rule schemas, formulas and precise preceding side conditions remain unchanged; only their overbroad prose summary is repaired.",
+      "decision_timing": "contemporaneous owner comparison of the summary with both displayed rule schemas and the two immediately preceding side-condition paragraphs"
+    },
+    {
+      "id": "OLND-003",
+      "unit_id": "OLP-0089",
+      "classification": "negation_elimination_step_mislabeled_falsehood_introduction",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "source_locator": "natural-deduction/proving-things.tex:133",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_line_1based": 144,
+      "target_sha256": "ebcb56e6ce50745e17faa8e0286edc11d2fcc8f320f771c79ff97c3912b16868",
+      "mode": "corrected-rule-label-plus-adjacent-note",
+      "translation_change": "labels the inference from not-A and A to falsehood as negation elimination rather than falsehood introduction",
+      "counterexample": "The preceding partial tree labels the identical inference negation elimination, and the chapter's rule schema derives falsehood from not-A and A only by negation elimination; falsehood introduction is not the defined rule label.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-EXAMPLES",
+      "formula_policy": "All premises, conclusions, discharge labels and formulas are unchanged. Only the rule label is repaired.",
+      "decision_timing": "contemporaneous owner comparison of the completed tree with the immediately preceding partial tree and the frozen propositional rule schema in OLP-0086",
+      "qa_macro_exception": {
+        "source_only": [
+          "Intro"
+        ],
+        "target_only": [
+          "Elim"
+        ],
+        "scope": "one corrected proof-tree rule label"
+      }
+    },
+    {
+      "id": "OLND-004",
+      "unit_id": "OLP-0089",
+      "classification": "natural_deduction_final_formula_mislabeled_end_sequent",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "source_locator": "natural-deduction/proving-things.tex:67",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_line_1based": 66,
+      "target_sha256": "ebcb56e6ce50745e17faa8e0286edc11d2fcc8f320f771c79ff97c3912b16868",
+      "mode": "corrected-proof-system-noun-plus-adjacent-note",
+      "translation_change": "calls the sentence at the bottom of the natural-deduction tree the final conclusion rather than a sentence in an end-sequent",
+      "counterexample": "Natural deduction in this chapter is defined as a tree of sentences with one bottom conclusion and contains no sequent bar or end-sequent object.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-EXAMPLES",
+      "formula_policy": "Only the copied prose noun is repaired; the main-operator analysis and all formulas and proof-tree commands remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison with the natural-deduction definition in OLP-0088 and the displayed one-formula tree"
+    },
+    {
+      "id": "OLND-005",
+      "unit_id": "OLP-0092",
+      "classification": "classical_contradiction_step_has_duplicate_rule_labels",
+      "source_path": "content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_sha256": "90f40aecedac9a8f2760b9976de0c6eac71c1b1e90911c4a30ce029a2d9e13c6",
+      "source_locator": "natural-deduction/provability-consistency.tex:71-72",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_line_1based": 75,
+      "target_sha256": "98dbbf165b620e5507c4ccaf4e6858e1f9e625862bf8150857a3bc9988b81f08",
+      "mode": "removed-duplicate-rule-label-plus-adjacent-note",
+      "translation_change": "removes a standalone classical-contradiction right label immediately duplicated by the indexed discharge-rule label, retaining the latter",
+      "counterexample": "The discharge macro already labels the same inference with classical contradiction and index 1; the extra preceding right label repeats the rule name on one inference and is absent from every corresponding indexed use in the chapter.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-METATHEORY",
+      "formula_policy": "Every assumption, derivation name, falsehood premise, conclusion and discharge index remains unchanged. Only the redundant label command is removed.",
+      "decision_timing": "contemporaneous owner comparison with the defined indexed classical-contradiction schema and all other discharge-rule applications in OLP-0086–0093",
+      "qa_macro_exception": {
+        "source_only": [
+          "RightLabel",
+          "FalseCl"
+        ],
+        "target_only": [],
+        "scope": "one redundant standalone rule label"
+      }
+    },
+    {
+      "id": "OLND-006",
+      "unit_id": "OLP-0095",
+      "classification": "multi_premise_rule_list_omits_negation_elimination",
+      "source_path": "content/first-order-logic/natural-deduction/soundness.tex",
+      "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+      "source_locator": "natural-deduction/soundness.tex:211-213",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_line_1based": 221,
+      "target_sha256": "44333900a5c26fd626a8ee6debcd5aa07a56f5d02d9c7be99c38e5138049e721",
+      "mode": "restored-omitted-rule-in-list-plus-adjacent-note",
+      "translation_change": "adds negation elimination to the prose list of multi-premise inferences, matching its two-premise schema and the exercise that immediately follows",
+      "counterexample": "Negation elimination takes A and not-A as two premises, and the same source enumeration later includes it as a multi-premise exercise; omitting it from the purported list makes the introductory sentence incomplete.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-ND-SOUNDNESS",
+      "formula_policy": "No mathematical formula, proof-tree node, inference label in a tree, tag or cross-reference changes. One rule macro is added only to complete the prose enumeration.",
+      "decision_timing": "contemporaneous owner comparison of the prose list with the defined natural-deduction rule arities and the immediately following enumerated cases",
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": [
+          "Elim"
+        ],
+        "scope": "one rule name restored to the prose enumeration"
+      }
+    },
+    {
+      "id": "OLTAB-001",
+      "unit_id": "OLP-0098",
+      "classification": "tableaux_driver_editorial_instruction_names_wrong_proof_system",
+      "source_path": "content/first-order-logic/tableaux/tableaux.tex",
+      "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+      "source_locator": "tableaux/tableaux.tex:15-16",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/tableaux.tex",
+      "target_line_1based": 17,
+      "target_sha256": "d8e7f1e5c99e74f9e3bc7f60a1021303faae7e8926b2832e3df986fcc697d6d6",
+      "mode": "corrected-proof-system-name-plus-adjacent-note",
+      "translation_change": "replaces natural deduction with tableaux in the prfTab editorial inclusion instruction",
+      "counterexample": "The file is the tableaux chapter driver, the tag is prfTab, and every imported unit belongs to tableaux; natural deduction is the copied name of a different proof-system chapter.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-FOUNDATION",
+      "formula_policy": "All chapter IDs, tag logic, imports, source ordering and the end hook remain unchanged. Only the erroneous prose name of the proof system is corrected.",
+      "decision_timing": "contemporaneous owner comparison of the driver sentence with its chapter identity, tag name and complete import graph"
+    },
+    {
+      "id": "OLTAB-002",
+      "unit_id": "OLP-0103",
+      "classification": "two_true_assumptions_malformed_as_one_signed_formula",
+      "source_path": "content/first-order-logic/tableaux/proving-things.tex",
+      "source_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+      "source_locator": "tableaux/proving-things.tex:439",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proving-things.tex",
+      "target_line_1based": 440,
+      "target_sha256": "5e01a566fa1cdd768c05492fa42d8d7900914909f5c844a4a500808fb3db6054",
+      "mode": "split-malformed-signed-formula-plus-adjacent-note",
+      "translation_change": "closes the true sign after A-or-B and gives not-B its own true signed-formula wrapper before the false-A conclusion",
+      "counterexample": "The source writes a comma and not-B inside the formula argument of one true signed formula. The corresponding judgment requires two premises, true A-or-B and true not-B, before false A.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-EXAMPLES",
+      "formula_policy": "Only the malformed exercise item is repaired. It retains exactly the source component formulas and signs while separating the two assumptions into well-formed signed formulas.",
+      "decision_timing": "contemporaneous owner comparison with the matching natural-deduction exercise and the signed-formula pair definition",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{!A\\lor!B,\\lnot!B},\\sFmla{\\False}{!A}$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!A\\lor!B},\\sFmla{\\True}{\\lnot!B},\\sFmla{\\False}{!A}$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-003",
+      "unit_id": "OLP-0104",
+      "classification": "prose_line_reference_points_to_negation_instead_of_false_existential",
+      "source_path": "content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "source_locator": "tableaux/proving-things-quant.tex:280-282",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_line_1based": 286,
+      "target_sha256": "b5fe1b51e2605e8ffa5fca4c51515371abffc3369f243a7f61e85cddef99f4ed",
+      "mode": "corrected-line-reference-plus-adjacent-note",
+      "translation_change": "changes the reusable false-existential signed-formula reference from line 3 to line 4",
+      "counterexample": "Line 3 is true not-exists and its negation rule is already checked; line 4 is false exists, exactly the formula to which the named false-existential rule is applied in the final tree.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-EXAMPLES",
+      "formula_policy": "Only the prose line number changes from 3 to 4. The tableau tree, rule label, chosen term c and all formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing of the prose instruction against the immediately preceding and final numbered branch trees",
+      "qa_math_exception": {
+        "source_only": [
+          "$3$"
+        ],
+        "target_only": [
+          "$4$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-004",
+      "unit_id": "OLP-0105",
+      "classification": "finite_members_malformed_as_subset_of_gamma",
+      "source_path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+      "source_locator": "tableaux/proof-theoretic-notions.tex:104-105",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_line_1based": 110,
+      "target_sha256": "8ab23d01f2d1da50e6ec403267d7462c66899edfc70465f8420c464504205fbc",
+      "mode": "replace-malformed-subset-relation-with-membership-plus-adjacent-note",
+      "translation_change": "changes D_m subseteq Gamma to D_m in Gamma in the list of individual formulas selected from Gamma",
+      "counterexample": "D_1 through D_m are formulas, not sets. The immediately following display uses them as the true signed premises of a finite tableau, so each D_i belongs to Gamma.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+      "formula_policy": "Only the malformed relation between the final listed formula and Gamma changes from subset to membership. The indices, surrounding derivability statements, tableau assumptions and cut construction remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the transitivity prose with its two finite-premise tableau displays",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\{\\sFmla{\\False}{!B},&\\sFmla{\\True}{!A},\\sFmla{\\True}{!C_1},\\dots,\\sFmla{\\True}{!C_n}\\}\\intertext{LOCALIZED$\\Gamma\\Proves!A$$!D_1$$!D_m\\subseteq\\Gamma$}\\{\\sFmla{\\False}{!A},&\\sFmla{\\True}{!D_1},\\dots,\\sFmla{\\True}{!D_m}\\}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\{\\sFmla{\\False}{!B},&\\sFmla{\\True}{!A},\\sFmla{\\True}{!C_1},\\dots,\\sFmla{\\True}{!C_n}\\}\\intertext{LOCALIZED$\\Gamma\\Proves!A$$!D_1$$!D_m\\in\\Gamma$}\\{\\sFmla{\\False}{!A},&\\sFmla{\\True}{!D_1},\\dots,\\sFmla{\\True}{!D_m}\\}\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-005",
+      "unit_id": "OLP-0106",
+      "classification": "finite_subset_endpoint_index_mismatch",
+      "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "source_locator": "tableaux/provability-consistency.tex:25-31",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_line_1based": 40,
+      "target_sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892",
+      "mode": "align-finite-list-endpoint-index-plus-adjacent-note",
+      "translation_change": "changes the defining endpoint of Gamma_1 from C_n to C_m",
+      "counterexample": "The second closed tableau, every later reference to the C-list and the union argument all end at C_m; only the defining display ends at C_n.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+      "formula_policy": "Only the inconsistent endpoint index in the definition of Gamma_1 changes. Both finite subsets, every signed formula and the cut proof remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing of both finite subsets through the displayed tableaux and the closing union argument",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma_1=\\{!C_1,\\dots,!C_n\\}\\subseteq\\Gamma$"
+        ],
+        "target_only": [
+          "$\\Gamma_1=\\{!C_1,\\dots,!C_m\\}\\subseteq\\Gamma$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-006",
+      "unit_id": "OLP-0106",
+      "classification": "stray_standalone_backslash_after_such_that",
+      "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "source_locator": "tableaux/provability-consistency.tex:85-87",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_line_1based": 106,
+      "target_sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892",
+      "mode": "remove-stray-control-character-plus-adjacent-note",
+      "translation_change": "omits the isolated source backslash between the finite-list sentence and its display",
+      "counterexample": "The backslash has no command name or mathematical role and occurs immediately before a display delimiter; retaining it would introduce an unintended TeX control space.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+      "formula_policy": "No formula, identifier, display delimiter or proof claim changes. Only the isolated nonsemantic backslash is removed.",
+      "decision_timing": "contemporaneous owner source inspection at the display boundary"
+    },
+    {
+      "id": "OLTAB-007",
+      "unit_id": "OLP-0106",
+      "classification": "negation_rule_applied_to_wrong_signed_formula_in_prose",
+      "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "source_locator": "tableaux/provability-consistency.tex:90-93",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_line_1based": 108,
+      "target_sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892",
+      "mode": "correct-rule-operand-in-prose-plus-adjacent-note",
+      "translation_change": "states that the true-negation rule is applied to true not-A and yields false A",
+      "counterexample": "The true-negation rule cannot be applied to false A. The proof has just replaced false A by true not-A, and the next line must derive false A from that new assumption.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+      "formula_policy": "Only the prose name of the rule operand changes from false A to true not-A. The true-negation label, false-A conclusion and subsequent line-renumbering argument remain unchanged.",
+      "decision_timing": "contemporaneous owner rule tracing against the immediately preceding replacement instruction and the tableaux rule schema"
+    },
+    {
+      "id": "OLTAB-008",
+      "unit_id": "OLP-0107",
+      "classification": "signed_formula_calls_missing_sign_formula_argument_boundary",
+      "source_path": "content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+      "source_locator": "tableaux/provability-propositional.tex:43-54,106-117",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_line_1based": 74,
+      "target_sha256": "9dc6b6726795f33bbd447de806435686b7a7519de1f07cad31fc2eb19b7bd549",
+      "mode": "restore-missing-macro-argument-boundaries-plus-adjacent-note",
+      "translation_change": "closes each truth-sign argument before opening the formula argument in eight signed-formula calls",
+      "counterexample": "The source nests the formula inside the truth-sign argument, leaving the signed-formula macro with only one argument. The surrounding correct calls and the macro contract require separate sign and formula arguments.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+      "formula_policy": "Only eight missing brace boundaries are restored. The four source signs, four formulas, their two occurrences each, all justifications and every branch position remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the eight malformed calls with the surrounding well-formed signed-formula calls and intended closed branches",
+      "qa_tableau_replacements": [
+        {
+          "source": "\\sFmla{\\True{\\formula{A}}}",
+          "target": "\\sFmla{\\True}{\\formula{A}}",
+          "count": 2
+        },
+        {
+          "source": "\\sFmla{\\True{\\formula{B}}}",
+          "target": "\\sFmla{\\True}{\\formula{B}}",
+          "count": 2
+        },
+        {
+          "source": "\\sFmla{\\False{\\formula{A}}}",
+          "target": "\\sFmla{\\False}{\\formula{A}}",
+          "count": 2
+        },
+        {
+          "source": "\\sFmla{\\False{\\formula{B}}}",
+          "target": "\\sFmla{\\False}{\\formula{B}}",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "OLTAB-009",
+      "unit_id": "OLP-0109",
+      "classification": "universal_soundness_cases_switch_metavariable_mid_argument",
+      "source_path": "content/first-order-logic/tableaux/soundness.tex",
+      "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+      "source_locator": "tableaux/soundness.tex:125-176",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/soundness.tex",
+      "target_line_1based": 125,
+      "target_sha256": "11e05a2a9f0359d79eb21cdb837625ae1922b2bc56450912e3b10e116423f0cb",
+      "mode": "use-one-metavariable-through-both-universal-cases-plus-adjacent-note",
+      "translation_change": "replaces five copied B occurrences with A so each universal premise matches its A-instance conclusion and semantic derivation",
+      "counterexample": "The true-universal case starts with universal B but immediately concludes and assumes universal A. The false-universal case likewise starts with B and switches to A at extensionality. One rule instance cannot change its metavariable halfway through.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS",
+      "formula_policy": "Only the five mismatched B occurrences change to A. Truth signs, quantifiers, terms, assignments, references and every later A occurrence remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing of each universal-rule premise through its instance and semantic preservation argument",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{\\lforall[x][!B(x)]}\\in\\Gamma$",
+          "$\\sFmla{\\False}{\\lforall[x][!B(x)]}\\in\\Gamma$",
+          "$\\Sat/{M}{\\lforall[x][!B(x)]}$",
+          "$\\Sat/{M}{\\lforall[x][!B(x)]}$",
+          "$\\Sat/{M}{!B(x)}[s]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{\\lforall[x][!A(x)]}\\in\\Gamma$",
+          "$\\sFmla{\\False}{\\lforall[x][!A(x)]}\\in\\Gamma$",
+          "$\\Sat/{M}{\\lforall[x][!A(x)]}$",
+          "$\\Sat/{M}{\\lforall[x][!A(x)]}$",
+          "$\\Sat/{M}{!A(x)}[s]$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-010",
+      "unit_id": "OLP-0110",
+      "classification": "symmetry_second_prerequisite_uses_wrong_term_in_prose",
+      "source_path": "content/first-order-logic/tableaux/identity.tex",
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "source_locator": "tableaux/identity.tex:64-68",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/identity.tex",
+      "target_line_1based": 72,
+      "target_sha256": "b0a660d1b919b780211bde2c3853b8902b0923749ae9a670378adf81a7f5f23b",
+      "mode": "correct-second-prerequisite-term-plus-adjacent-note",
+      "translation_change": "changes the description of line 3 from true A(s2) to true A(s1)",
+      "counterexample": "With A(x) defined as x=s1, line 3 is s1=s1 and therefore A(s1); A(s2) is the derived conclusion s2=s1 on line 4.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS",
+      "formula_policy": "Only the term in the prose label of the second prerequisite changes. The complete symmetry tableau and its subsequent correct instantiation explanation remain unchanged.",
+      "decision_timing": "contemporaneous owner matching of each prose prerequisite against the numbered symmetry tree and the stated A(x)",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{!A(s_2)}$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!A(s_1)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-011",
+      "unit_id": "OLP-0110",
+      "classification": "transitivity_instance_replaced_by_unrelated_generic_equality",
+      "source_path": "content/first-order-logic/tableaux/identity.tex",
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "source_locator": "tableaux/identity.tex:89-93",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/identity.tex",
+      "target_line_1based": 94,
+      "target_sha256": "b0a660d1b919b780211bde2c3853b8902b0923749ae9a670378adf81a7f5f23b",
+      "mode": "restore-actual-line-two-equality-instance-plus-adjacent-note",
+      "translation_change": "replaces generic t1=t2 with the actual s1=s2 obtained from A(s2) in this instantiation",
+      "counterexample": "The paragraph defines A(x) as s1=x, so A(s2) is s1=s2, exactly line 2. Generic t1=t2 denotes the distinct equality premise s2=s3 on line 3.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS",
+      "formula_policy": "Only the incorrect expanded formula in prose changes. The generic rule roles, numbered premises, conclusion and full tableau remain unchanged.",
+      "decision_timing": "contemporaneous owner substitution of s2 into the paragraph's explicit definition A(x)=s1=x",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\eq[t_1][t_2]$"
+        ],
+        "target_only": [
+          "$\\eq[s_1][s_2]$"
+        ]
+      }
+    },
+    {
+      "id": "OLTAB-012",
+      "unit_id": "OLP-0111",
+      "classification": "true_identity_soundness_case_gives_result_arbitrary_sign",
+      "source_path": "content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b",
+      "source_locator": "tableaux/soundness-identity.tex:27-31",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_line_1based": 34,
+      "target_sha256": "7376bf0becd272ecce8ac123c9615f04442303d707e8f7f97b45671b17275ee7",
+      "mode": "specialize-result-sign-to-true-plus-adjacent-note",
+      "translation_change": "changes the result of the true-identity rule from S:A(t2) to true A(t2)",
+      "counterexample": "The paragraph explicitly treats the true-identity substitution rule, assumes true A(t1), and proves satisfaction of A(t2). The arbitrary sign S would also include the separate false rule left for the final analogous case.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS",
+      "formula_policy": "Only S changes to True in the signed result formula of the true-rule case. Both premises and the complete semantic argument remain unchanged; the false case remains explicitly analogous.",
+      "decision_timing": "contemporaneous owner comparison of the named rule and its premises with the immediately preceding identity-rule schemas",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{S}{!A(t_2)}$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!A(t_2)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-001",
+      "unit_id": "OLP-0113",
+      "classification": "generic_derivation_step_omits_formula_metavariable_marker",
+      "source_path": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "source_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+      "source_locator": "axiomatic-deduction/rules-and-proofs.tex:38-42",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "target_line_1based": 41,
+      "target_sha256": "e29e25f212bf11dacc2fac616cab4d172adcb6e790ee92d6349305fc81062ac6",
+      "mode": "restore-formula-metavariable-marker-plus-adjacent-note",
+      "translation_change": "changes the lone generic step A_i to the marked formula metavariable !A_i",
+      "counterexample": "The section defines every sequence entry as !A_i, and every other occurrence in the same formalization carries the formula marker. This isolated unmarked A_i denotes the same derivation entry.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-FOUNDATION",
+      "formula_policy": "Only the omitted formula marker is restored. The index, sentence, rule definition and every later occurrence remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison with the immediately preceding finite-sequence definition and later exhaustive modus-ponens formalization",
+      "qa_math_exception": {
+        "source_only": [
+          "$A_i$"
+        ],
+        "target_only": [
+          "$!A_i$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-002",
+      "unit_id": "OLP-0118",
+      "classification": "transitivity_proof_omits_formula_marker_on_B_i",
+      "source_path": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "source_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+      "source_locator": "axiomatic-deduction/proof-theoretic-notions.tex:88-94",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "target_line_1based": 86,
+      "target_sha256": "94c708fc39973edb3ed060ebe586679e944eb1383c0e3b59e8078e119d8e8d04",
+      "mode": "restore-formula-marker-plus-adjacent-note",
+      "translation_change": "changes B_i=A to !B_i=!A in the final concatenation justification",
+      "counterexample": "Every B_i in the derivation sequence is a marked formula metavariable, including the same equality earlier in the paragraph.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only the missing marker is restored; indices, equality and proof structure remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_math_exception": {
+        "source_only": [
+          "$B_i=!A$"
+        ],
+        "target_only": [
+          "$!B_i=!A$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-003",
+      "unit_id": "OLP-0119",
+      "classification": "deduction_basis_membership_formula_has_no_left_operand",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+      "source_locator": "axiomatic-deduction/deduction-theorem.tex:55-60",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "target_line_1based": 67,
+      "target_sha256": "2428b240194c8123f3209909d393ffd7287b62d2375d7e9463299fb63ae81247",
+      "mode": "restore-membership-left-operand-plus-adjacent-note",
+      "translation_change": "changes the isolated relation in Gamma-union-{A} to B in Gamma-union-{A}",
+      "counterexample": "The sentence classifies the sole formula B in a length-one derivation; the displayed membership symbol has no left operand.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only B is supplied as the missing left operand. The set, union, singleton and subsequent cases remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\in\\Gamma\\cup\\{!A\\}$"
+        ],
+        "target_only": [
+          "$!B\\in\\Gamma\\cup\\{!A\\}$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-004",
+      "unit_id": "OLP-0119",
+      "classification": "derived_implication_schema_missing_outer_closing_parenthesis",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+      "source_locator": "axiomatic-deduction/deduction-theorem.tex:108-110",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "target_line_1based": 111,
+      "target_sha256": "2428b240194c8123f3209909d393ffd7287b62d2375d7e9463299fb63ae81247",
+      "mode": "restore-closing-parenthesis-plus-adjacent-note",
+      "translation_change": "adds the omitted closing parenthesis to the first derived-fact formula",
+      "counterexample": "The source opens the outer consequent before B-implies-C and never closes it after A-implies-C.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only one closing parenthesis is added; all connectives, metavariables and the stable label remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C)$"
+        ],
+        "target_only": [
+          "$\\Proves(!A\\lif!B)\\lif((!B\\lif!C)\\lif(!A\\lif!C))$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-005",
+      "unit_id": "OLP-0120",
+      "classification": "quantified_currying_schema_missing_outer_closing_parenthesis",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+      "source_locator": "axiomatic-deduction/deduction-theorem-quantifiers.tex:39-46",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "target_line_1based": 48,
+      "target_sha256": "3b88761d7db06e9926d831828156b7fddfd10f74e448b089bfe940a6bc51392f",
+      "mode": "restore-closing-parenthesis-plus-adjacent-note",
+      "translation_change": "adds the omitted outer closing parenthesis to the quantified currying theorem",
+      "counterexample": "The final theorem instance opens A-implies-(C-implies-universal-D) but closes only the inner implication.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only one closing parenthesis is added inside the align environment; all formulas and derivation claims remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\\\intertext{LOCALIZED}&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\\\intertext{LOCALIZED}&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\Gamma\\cup\\{!A\\}&\\Proves!C\\lif!D(a),\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves!A\\lif(!C\\lif!D(a)).\\\\\\intertext{LOCALIZED}&\\Proves(!A\\lif(!C\\lif!D(a)))\\lif((!A\\land!C)\\lif!D(a))\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves(!A\\land!C)\\lif!D(a).\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves(!A\\land!C)\\lif\\lforall[x][!D(x)].\\\\\\intertext{LOCALIZED}&\\Proves((!A\\land!C)\\lif\\lforall[x][!D(x)])\\lif(!A\\lif(!C\\lif\\lforall[x][!D(x)])),\\\\\\intertext{LOCALIZED}\\Gamma&\\Proves!A\\lif(!C\\lif\\lforall[x][!D(x)]),\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-006",
+      "unit_id": "OLP-0120",
+      "classification": "quantified_deduction_proof_states_B_instead_of_A_implies_B",
+      "source_path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+      "source_locator": "axiomatic-deduction/deduction-theorem-quantifiers.tex:47-49",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "target_line_1based": 52,
+      "target_sha256": "3b88761d7db06e9926d831828156b7fddfd10f74e448b089bfe940a6bc51392f",
+      "mode": "restore-theorem-conclusion-plus-adjacent-note",
+      "translation_change": "changes the closing gloss from Gamma derives B to Gamma derives A-implies-B",
+      "counterexample": "The theorem's goal and the immediately preceding align line are Gamma derives A-implies-(C-implies-universal-D), with B defined as C-implies-universal-D.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only the omitted A-implies prefix is restored in the closing gloss. The preceding derivation and definition of B remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\Proves!B$"
+        ],
+        "target_only": [
+          "$\\Gamma\\Proves!A\\lif!B$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-007",
+      "unit_id": "OLP-0122",
+      "classification": "conjunction_projection_proof_repeats_first_axiom_reference",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+      "source_locator": "axiomatic-deduction/provability-propositional.tex:34-38",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "target_line_1based": 36,
+      "target_sha256": "e37242f81c884598c99714efd690d8eab59e01fd553ccb78c79159bc8f34e2cf",
+      "mode": "replace-second-axiom-reference-plus-adjacent-note",
+      "translation_change": "changes the second conjunction projection reference from ax:land1 to ax:land2",
+      "counterexample": "The two claims project A and B respectively; ax:land1 proves the first and ax:land2 proves the second.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only the second stable axiom reference changes. Both formulas and proof text remain otherwise unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref[prp]{ax:land1}"
+        ],
+        "target_only": [
+          "\\olref[prp]{ax:land2}"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-008",
+      "unit_id": "OLP-0122",
+      "classification": "disjunction_inconsistency_proof_names_wrong_negation_axiom",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+      "source_locator": "axiomatic-deduction/provability-propositional.tex:52-61",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "target_line_1based": 63,
+      "target_sha256": "e37242f81c884598c99714efd690d8eab59e01fd553ccb78c79159bc8f34e2cf",
+      "mode": "replace-negation-axiom-reference-plus-adjacent-note",
+      "translation_change": "changes ax:lnot1 to ax:lnot2 for the two displayed explosion conditionals",
+      "counterexample": "The displayed formulas instantiate not-A implies (A implies B), which is ax:lnot2; ax:lnot1 is the distinct contraposition schema.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "Only the stable axiom reference changes. Both displayed conditionals and every later deduction-theorem step remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema",
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref[prp]{ax:lnot1}"
+        ],
+        "target_only": [
+          "\\olref[prp]{ax:lnot2}"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-009",
+      "unit_id": "OLP-0123",
+      "classification": "strong_generalization_final_step_cites_deduction_theorem_instead_of_truth_and_mp",
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "source_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6",
+      "source_locator": "axiomatic-deduction/provability-quantifiers.tex:25-30",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "target_line_1based": 33,
+      "target_sha256": "cbc2096c34ddd572e6805fdc22faf2f609231e404f48b34adceffb8b93a69c7a",
+      "mode": "correct-proof-justification-plus-adjacent-note",
+      "translation_change": "attributes the final step to the truth axiom and meta-modus ponens",
+      "counterexample": "A second deduction-theorem use yields a derivation with truth added as a premise, not directly from Gamma. Since truth is an axiom, meta-MP supplies the stated conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+      "formula_policy": "No formula, reference macro or theorem statement changes. Only the prose justification for the already displayed final claim is corrected.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding definition, displayed derivation or named axiom schema"
+    },
+    {
+      "id": "OLAX-010",
+      "unit_id": "OLP-0124",
+      "classification": "quantified_soundness_satisfaction_omits_formula_marker",
+      "source_path": "content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "source_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb",
+      "source_locator": "axiomatic-deduction/soundness.tex:94-100",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "target_line_1based": 102,
+      "target_sha256": "9891ecc1d0082024e0f935a4f7f06a94209f2759e6c248eb7daa5da69862df52",
+      "mode": "restore-formula-marker-plus-adjacent-note",
+      "translation_change": "changes satisfaction of B(c) to satisfaction of the marked formula !B(c)",
+      "counterexample": "The immediately preceding entailment and every following sentence and satisfaction claim use !B(c); the isolated unmarked occurrence breaks the source's formula-metavariable convention.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
+      "formula_policy": "Only the missing formula marker is restored; model, term, assignment and proof structure remain unchanged.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat{M'}{B(c)}$"
+        ],
+        "target_only": [
+          "$\\Sat{M'}{!B(c)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLAX-011",
+      "unit_id": "OLP-0125",
+      "classification": "identity_reflexivity_proposition_omits_closed_term_scope",
+      "source_path": "content/first-order-logic/axiomatic-deduction/identity.tex",
+      "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+      "source_locator": "axiomatic-deduction/identity.tex:38-40",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex",
+      "target_line_1based": 41,
+      "target_sha256": "3ef14591dceef107c2eb00c2e3d036de6b615c27eafa4182e6ba22f8e5609d58",
+      "mode": "restore-closed-term-restriction-plus-adjacent-note",
+      "translation_change": "restricts the derived reflexive identity proposition from any term to any closed term",
+      "counterexample": "The proposition is immediate only from ax:id1, whose definition explicitly permits instances for closed terms; the surrounding axiomatic derivations operate on formulas licensed by those schemas.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
+      "formula_policy": "No formula or identifier changes. The prose scope is aligned with the declared axiom schema.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas"
+    },
+    {
+      "id": "OLAX-012",
+      "unit_id": "OLP-0125",
+      "classification": "identity_substitution_proposition_omits_closed_term_scope",
+      "source_path": "content/first-order-logic/axiomatic-deduction/identity.tex",
+      "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+      "source_locator": "axiomatic-deduction/identity.tex:42-46",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex",
+      "target_line_1based": 51,
+      "target_sha256": "3ef14591dceef107c2eb00c2e3d036de6b615c27eafa4182e6ba22f8e5609d58",
+      "mode": "restore-closed-term-restriction-plus-adjacent-note",
+      "translation_change": "adds that the two displayed terms in the derived substitutability proposition are closed",
+      "counterexample": "Its proof says the displayed conditional is an instance of ax:id2, but that schema was defined only for closed t1 and t2.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
+      "formula_policy": "No formula or identifier changes. The prose restriction makes the claimed axiom instance licensed by the definition.",
+      "decision_timing": "contemporaneous owner tracing against the surrounding semantic argument and stated identity axiom schemas"
+    },
+    {
+      "id": "OLCOM-001",
+      "unit_id": "OLP-0128",
+      "classification": "complete_set_outline_restricts_exhaustiveness_to_atomic_sentences",
+      "source_path": "content/first-order-logic/completeness/outline.tex",
+      "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+      "source_locator": "completeness/outline.tex:66-80",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/outline.tex",
+      "target_line_1based": 73,
+      "target_sha256": "e5436c4e7589fc74444cc9ea0440ac89e46521faece6ddf153495c06766086b4",
+      "mode": "remove-spurious-atomic-qualifier-plus-adjacent-note",
+      "translation_change": "condition (b) now requires deciding every sentence A, rather than only every atomic sentence",
+      "counterexample": "The same paragraph calls condition (b) completeness, while OLP-0129 def:complete-set quantifies over every sentence. An atomic-only set need not decide a compound sentence and therefore is not complete.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS",
+      "formula_policy": "No formula, condition label, subset relation or later closure requirement changes; only the contradictory prose qualifier is removed.",
+      "decision_timing": "contemporaneous owner comparison with the same paragraph's definition claim and the immediately following formal definition"
+    },
+    {
+      "id": "OLCOM-002",
+      "unit_id": "OLP-0131",
+      "classification": "finite_subset_consistency_argument_omits_empty_case",
+      "source_path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+      "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+      "source_locator": "completeness/lindenbaums-lemma.tex:76-87",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex",
+      "target_line_1based": 80,
+      "target_sha256": "dfa8ecccd10c63b6bcb9b024214faf4a14112cfbc43e0da2d482e709646af06d",
+      "mode": "add-empty-finite-subset-case-plus-adjacent-note",
+      "translation_change": "the union-consistency proof now handles the empty finite subset before selecting the greatest stage index for a nonempty finite subset",
+      "counterexample": "When Gamma-prime is empty, there are no witnessing stage indices and therefore no largest one; the empty set is nevertheless consistent immediately.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260905-LINDENBAUM",
+      "formula_policy": "No source formula, membership, subset relation or compactness reference changes; only the omitted empty case and an adjacent disclosure are added in prose.",
+      "decision_timing": "contemporaneous owner proof trace of the finite-subset argument before selecting a maximum witness index"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -962,12 +1860,28 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Re-run cumulative QA with only recorded exceptions, then rebuild under the global TeX mutex and visually inspect every changed reader page before publication.",
+  "next_action": "Publish the accepted v0.4.0 proof-systems release and translate term models OLP-0132.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
     "PS-OWNER-SEMANTIC-20260904-SIZE",
-    "PS-OWNER-SEMANTIC-20260904-ARITH"
+    "PS-OWNER-SEMANTIC-20260904-ARITH",
+    "PS-OWNER-SEMANTIC-20260905-SEQUENT-EXAMPLES",
+    "PS-OWNER-SEMANTIC-20260905-SEQUENT-METATHEORY",
+    "PS-OWNER-SEMANTIC-20260905-SEQUENT-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260905-ND-FOUNDATION",
+    "PS-OWNER-SEMANTIC-20260905-ND-EXAMPLES",
+    "PS-OWNER-SEMANTIC-20260905-ND-METATHEORY",
+    "PS-OWNER-SEMANTIC-20260905-ND-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260905-TABLEAUX-FOUNDATION",
+    "PS-OWNER-SEMANTIC-20260905-TABLEAUX-EXAMPLES",
+    "PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY",
+    "PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-FOUNDATION",
+    "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
+    "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS",
+    "PS-OWNER-SEMANTIC-20260905-LINDENBAUM"
   ],
   "source_authorities": [
     {

@@ -1,0 +1,135 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prv}}
+      {\olfileid{pl}{ntd}{prv}}
+      
+\olsection{\usetoken{S}{derivability} او سازګاري}
+
+اوس به د !!{derivability} اړيکې يو شمېر خاصيتونه ثابت کړو۔ دوئ په
+خپلواکه توګه په زړه پورې دي، خو هر يو به د بشپړتيا قضيې په ثبوت
+کښې ونډه ولري۔
+
+\begin{prop}\ollabel{prop:provability-contr}
+  که $\Gamma \Proves !A$ وي او $\Gamma \cup \{!A\}$ ناسازګار وي،
+  نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+له~$\Gamma$ څخه د~$!A$ !!{derivation}~$\delta_1$ او له
+$\Gamma \cup \{!A\}$ څخه د~$\lfalse$ !!{derivation}~$\delta_2$
+ونوموئ۔ بيا داسې !!{derive} کولے شو:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\AxiomC{$\Gamma$}
+\RightLabel{$\delta_1$}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+په نوي !!{derivation} کښې فرضيه~$!A$~!!{discharged} شوې ده، نو دا
+له~$\Gamma$ څخه !!a{derivation} دے۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ هله او يوازې هله چې
+$\Gamma \cup \{\lnot !A\}$ ناسازګار وي۔
+\end{prop}
+
+\begin{proof}
+لومړے فرض کړئ $\Gamma \Proves !A$؛ يعنې د~$!A$ داسې
+!!a{derivation}~$\delta_0$ شته چې !!{undischarged} فرضيې ئې
+$\Gamma$ دي۔ له~$\Gamma \cup \{\lnot !A\}$ څخه د~$\lfalse$ يو
+!!a{derivation} داسې اخلو:
+\begin{prooftree}
+  \AxiomC{$\lnot !A$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+\end{prooftree}
+
+اوس فرض کړئ $\Gamma \cup \{\lnot !A\}$ ناسازګار دے، او
+$\delta_1$ له~$\Gamma \cup \{\lnot !A\}$ کښې له !!{undischarged}
+فرضيو څخه د~$\lfalse$ اړوند !!{derivation} دے۔ يوازې له~$\Gamma$
+څخه د~$!A$ يو !!a{derivation} د~$\FalseCl$ په کارولو اخلو:
+\begin{prooftree}
+  \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A$}
+\end{prooftree}
+\textbf{د ژباړې د نسخې سمون (OLND-005):} سرچينه په دې ونه کښې
+له ايستلو نښان سره د همدې قاعدې يو دويم ښي نښان هم ږدي؛ زيات نښان
+لرې شوے او د فرضيې ايستل او د قاعدې نوم په ټاکلي ګډ نښان کښې ساتل
+شوي دي۔
+\end{proof}
+
+\begin{prob}
+ثابت کړئ چې $\Gamma \Proves \lnot !A$ هله او يوازې هله چې
+$\Gamma \cup \{!A\}$ ناسازګار وي۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  که $\Gamma \Proves !A$ او $\lnot !A \in \Gamma$ وي، نو $\Gamma$
+  ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\Gamma \Proves !A$ او $\lnot !A \in \Gamma$۔ بيا
+  له~$\Gamma$ څخه د~$!A$ کوم !!a{derivation}~$\delta$ شته۔ د
+  $\Elim{\lnot}$ قاعدې دا ساده کارونه وګورئ:
+  \begin{prooftree}
+    \AxiomC{$\lnot !A$}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lnot}}
+    \BinaryInfC{$\lfalse$}
+  \end{prooftree}
+  ځکه $\lnot !A \in \Gamma$ او ټولې !!{undischarged} فرضيې
+  په~$\Gamma$ کښې دي، دا $\Gamma \Proves \lfalse$ ښيي۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  که $\Gamma \cup \{!A\}$ او $\Gamma \cup \{\lnot !A\}$ دواړه
+  ناسازګار وي، نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+په ترتيب سره له~$\Gamma \cup \{ !A \}$ څخه د~$\lfalse$ او له
+$\Gamma \cup \{ \lnot !A \}$ څخه د~$\lfalse$~!!{derivation}s
+$\delta_1$ او~$\delta_2$ شته۔ بيا داسې !!{derive} کولے شو:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\lnot !A}{2}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{2}
+\UnaryInfC{$\lnot \lnot !A$}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+ځکه فرضيې~$!A$ او~$\lnot !A$~!!{discharged} شوې دي، دا يوازې
+له~$\Gamma$ څخه د~$\lfalse$ يو !!a{derivation} دے۔ نو $\Gamma$
+ناسازګار دے۔
+\end{proof}
+
+\end{document}

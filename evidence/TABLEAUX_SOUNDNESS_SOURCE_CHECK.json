@@ -1,0 +1,103 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T03:11:57.504960+00:00",
+  "batch_id": "PS-B021-TABLEAUX-SOUNDNESS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0109",
+      "source_path": "content/first-order-logic/tableaux/soundness.tex",
+      "source_bytes": 10826,
+      "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+      "translation_bytes": 13696,
+      "translation_sha256": "11e05a2a9f0359d79eb21cdb837625ae1922b2bc56450912e3b10e116423f0cb"
+    },
+    {
+      "unit_id": "OLP-0110",
+      "source_path": "content/first-order-logic/tableaux/identity.tex",
+      "source_bytes": 3396,
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "translation_bytes": 4394,
+      "translation_sha256": "b0a660d1b919b780211bde2c3853b8902b0923749ae9a670378adf81a7f5f23b"
+    },
+    {
+      "unit_id": "OLP-0111",
+      "source_path": "content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_bytes": 1700,
+      "source_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b",
+      "translation_bytes": 2366,
+      "translation_sha256": "7376bf0becd272ecce8ac123c9615f04442303d707e8f7f97b45671b17275ee7"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0109 source lines 125-176",
+      "observation": "Both universal-rule soundness cases begin with B formulas but their conclusions and later semantic arguments use A, switching the rule metavariable midway through five formulas.",
+      "treatment": "Used A throughout both cases and disclosed the five exact replacements.",
+      "correction_id": "OLTAB-009"
+    },
+    {
+      "locator": "OLP-0109 complete proof",
+      "observation": "Every nonbranching and branching rule case was checked for premise sign, result sign, connective or quantifier semantics, freshness, model modification and preserved branch.",
+      "treatment": "No other source defect found; all formulas, references and rule obligations are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0110 source lines 64-68",
+      "observation": "The symmetry prose calls line 3 A(s2), although line 3 is s1=s1 and the next sentence correctly identifies it as A(s1).",
+      "treatment": "Changed only the prose prerequisite to A(s1) and disclosed the repair.",
+      "correction_id": "OLTAB-010"
+    },
+    {
+      "locator": "OLP-0110 source lines 89-93",
+      "observation": "The transitivity prose expands A(s2) as generic t1=t2, although its own A(x)=s1=x definition makes the result s1=s2 on line 2.",
+      "treatment": "Restored the actual instantiated equality and disclosed the repair.",
+      "correction_id": "OLTAB-011"
+    },
+    {
+      "locator": "OLP-0110 all three tableaux and exercises",
+      "observation": "The substitutability, symmetry and transitivity trees and both quantified exercises were checked for terms, signs, premise indices, substitutions and closure.",
+      "treatment": "No other source defect found; every tableau environment is retained byte-for-byte after whitespace normalization.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0111 source lines 27-31",
+      "observation": "The true-identity soundness case gives the added conclusion arbitrary sign S despite assuming true A(t1) and proving A(t2).",
+      "treatment": "Specialized the result sign to True and disclosed the repair.",
+      "correction_id": "OLTAB-012"
+    },
+    {
+      "locator": "OLP-0111 complete proof",
+      "observation": "Reflexivity and substitution were checked through term values, assignment modification, both extensionality uses and sentence satisfaction; the false case remains explicitly parallel.",
+      "treatment": "No other source defect found; every semantic dependency and reference is retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLTAB-009",
+      "classification": "universal_soundness_cases_switch_metavariable_mid_argument",
+      "source_locator": "tableaux/soundness.tex:125-176",
+      "target_line_1based": 125
+    },
+    {
+      "correction_id": "OLTAB-010",
+      "classification": "symmetry_second_prerequisite_uses_wrong_term_in_prose",
+      "source_locator": "tableaux/identity.tex:64-68",
+      "target_line_1based": 72
+    },
+    {
+      "correction_id": "OLTAB-011",
+      "classification": "transitivity_instance_replaced_by_unrelated_generic_equality",
+      "source_locator": "tableaux/identity.tex:89-93",
+      "target_line_1based": 94
+    },
+    {
+      "correction_id": "OLTAB-012",
+      "classification": "true_identity_soundness_case_gives_result_arbitrary_sign",
+      "source_locator": "tableaux/soundness-identity.tex:27-31",
+      "target_line_1based": 34
+    }
+  ],
+  "conclusion": "Four local metavariable, instantiation and sign defects are repaired and disclosed. All remaining OLP-0109–0111 formulas, tableau trees, semantic rule cases, equality arguments and corollaries are preserved."
+}

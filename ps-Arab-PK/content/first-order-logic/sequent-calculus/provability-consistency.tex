@@ -1,0 +1,136 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{prv}}
+      {\olfileid{pl}{seq}{prv}}
+
+\olsection{\usetoken{S}{derivability} او سازګاري}
+
+اوس به د !!{derivability} اړيکې يو شمېر خاصيتونه ثابت کړو۔ دا
+خاصيتونه په خپلواک ډول هم په زړه پورې دي، خو هر يو به د بشپړتيا د
+قضيې په ثبوت کښې ونډه ولري۔
+
+\begin{prop}\ollabel{prop:provability-contr}
+  که $\Gamma \Proves !A$ وي او $\Gamma \cup \{!A\}$ ناسازګار وي،
+  نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+داسې متناهي $\Gamma_0$ او $\Gamma_1 \subseteq \Gamma$ شته چې
+$\Log{LK}$ د $\Gamma_0 \Sequent !A$ او
+$!A, \Gamma_1 \Sequent \quad$ سېکوېنټونه !!{derive}s کړي۔
+د $\Gamma_0 \Sequent !A$ د $\Log{LK}$-!!{derivation} نوم~$\pi_0$
+او د $\Gamma_1, !A \Sequent \quad$ د
+$\Log{LK}$-!!{derivation} نوم~$\pi_1$ کېږدو۔ بيا لاندې
+!!{derive} کولے شو:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \Gamma_0 \fCenter !A $
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A, \Gamma_1 \fCenter $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0,\Gamma_1 \fCenter $
+\end{prooftree}
+
+ځکه چې $\Gamma_0 \subseteq \Gamma$ او
+$\Gamma_1 \subseteq \Gamma$، نو
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$؛ له دې امله $\Gamma$
+ناسازګار دے۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ هله او يوازې هله چې
+$\Gamma \cup \{\lnot !A\}$ ناسازګار وي۔
+\end{prop}
+
+\begin{proof}
+لومړے فرض کړئ $\Gamma \Proves !A$، يعنې د
+$\Gamma \Sequent !A$ !!a{derivation}~$\pi_0$ شته۔ د
+$\LeftR{\lnot}$ قاعدې په ورزياتولو د
+$\lnot !A, \Gamma \Sequent \quad$ !!a{derivation} ترلاسه کوو؛
+يعنې $\Gamma \cup \{\lnot !A\}$ ناسازګار دے۔
+
+که $\Gamma \cup \{\lnot !A\}$ ناسازګار وي، نو د
+$\lnot !A, \Gamma \Sequent \quad$ !!a{derivation}~$\pi_1$ شته۔
+لاندې د $\Gamma \Sequent !A$ !!a{derivation} دے:
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma \fCenter$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma \fCenter !A$
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+ثابت کړئ چې $\Gamma \Proves \lnot !A$ هله او يوازې هله چې
+$\Gamma \cup \{!A\}$ ناسازګار وي۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  که $\Gamma \Proves !A$ او $\lnot !A \in \Gamma$ وي، نو $\Gamma$
+  ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\Gamma \Proves !A$ او $\lnot !A \in \Gamma$۔ بيا د کوم
+  سېکوېنټ $\Gamma_0 \Sequent !A$ !!a{derivation}~$\pi$ شته۔
+  سېکوېنټ $\lnot !A, \Gamma_0 \Sequent \quad$ هم !!{derivable} دے:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi$}
+    \Deduce$\Gamma_0 \fCenter !A$
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$!A, \lnot !A \fCenter$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_0, \lnot !A \fCenter$
+  \end{prooftree}
+  ځکه چې $\lnot !A \in \Gamma$ او $\Gamma_0 \subseteq \Gamma$،
+  نو دا ښيي چې $\Gamma$ ناسازګار دے۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  که $\Gamma \cup \{!A\}$ او $\Gamma \cup \{\lnot !A\}$ دواړه
+  ناسازګار وي، نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+داسې متناهي سټونه $\Gamma_0 \subseteq \Gamma$ او
+$\Gamma_1 \subseteq \Gamma$ او داسې
+$\Log{LK}$-!!{derivation}s $\pi_0$ او $\pi_1$ شته چې په همدې ترتيب
+د $!A, \Gamma_0 \Sequent \quad$ او
+$\lnot !A, \Gamma_1 \Sequent \quad$ اشتقاقونه دي۔ بيا لاندې
+!!{derive} کولے شو:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ !A, \Gamma_0 \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma_0 \fCenter \lnot !A$
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lnot !A, \Gamma_1 \fCenter  $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0, \Gamma_1 \fCenter $
+\end{prooftree}
+ځکه چې $\Gamma_0 \subseteq \Gamma$ او $\Gamma_1 \subseteq \Gamma$،
+نو $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$۔ له دې امله $\Gamma$
+ناسازګار دے۔
+\end{proof}
+
+\end{document}

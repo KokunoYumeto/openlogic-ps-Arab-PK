@@ -1,0 +1,104 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{der}}
+      {\olfileid{pl}{ntd}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+موږ وويل چې فرضيه څه ده او د استنتاج قاعدې مو ورکړې۔ په فطري
+استنتاج کښې !!^{derivation}s له دغو څخه په استقرايي ډول جوړېږي: هر
+!!{derivation} يا يوازې يوه فرضيه وي، يا له يو، دوو يا دريو
+!!{derivation}s او ورپسې له يوه سم استنتاج څخه جوړ وي۔
+\end{explain}
+
+\begin{defn}[!!^{derivation}]
+\Article{derivation} له فرضيو~$\Gamma$ څخه د !!a{sentence}~$!A$ يو \emph{!!{derivation}}
+د !!{sentence}s يوه متناهي ونه ده چې لاندې شرطونه پوره کوي:
+\begin{enumerate}
+\item د ونې تر ټولو پورتنۍ !!{sentence}s يا په~$\Gamma$ کښې وي يا
+  په ونه کښې د يوه استنتاج په وسيله !!{discharged} شوې وي۔
+\item د ونې تر ټولو لاندې !!{sentence}~$!A$ ده۔
+\item په ونه کښې هره !!{sentence}، پرته له لاندېنۍ جملې~$!A$
+  څخه، د استنتاج د يوې قاعدې د سمې کارونې مقدمه وي چې پايله ئې په
+  ونه کښې نېغ د هغې !!{sentence} لاندې ولاړه وي۔
+\end{enumerate}
+بيا وايو چې $!A$ د !!{derivation} \emph{پايله} او~$\Gamma$ ئې
+!!{undischarged} فرضيې دي۔
+
+که له~$\Gamma$ څخه د~$!A$ کوم !!a{derivation} وي، وايو چې $!A$
+له~$\Gamma$ څخه \emph{!!{derivable}} دے، يا په نښو کښې:
+$\Gamma \Proves !A$۔ که د~$!A$ داسې !!a{derivation} وي چې هره
+فرضيه پکې !!{discharged} شوې وي، نو~$\Proves !A$ ليکو۔
+\end{defn}
+
+\begin{ex}
+هره فرضيه په يوازې ځان !!a{derivation} ده۔ نو مثلاً $!A$ په يوازې
+ځان !!a{derivation} دے او $!B$ هم په يوازې ځان همداسې دے۔
+له دغو څخه د، مثلاً، $\Intro{\land}$ قاعدې په کارولو يو نوے
+!!{derivation} اخستلے شو:
+\begin{prooftree}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\end{prooftree}
+دا قاعدې عامې دي: پکې $!A$ او~$!B$ په هر ډول !!{sentence}s، مثلاً
+په~$!C$ او~$!D$، بدلولے شو۔ بيا به پايله $!C \land !D$ وي؛ نو
+\begin{prooftree}
+\AxiomC{$!C$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\end{prooftree}
+يو سم !!{derivation} دے۔ البته فرضيې سره اړولے هم شو، څو $!D$ د~$!A$
+او $!C$ د~$!B$ ونډه واخلي۔ له دې امله
+\begin{prooftree}
+\AxiomC{$!D$}
+\AxiomC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!D \land !C$}
+\end{prooftree}
+هم يو سم !!{derivation} دے۔
+
+اوس بله قاعده، مثلاً $\Intro{\lif}$، کارولے شو۔ دا اجازه راکوي چې
+يو شرطي قضيه پايله کړو او هره هغه فرضيه !!{discharge} کړو چې له
+دغه شرطي قضيې له مقدم سره يو شان وي۔ نو لاندې دواړه سم
+!!{derivation}s دي:
+\begin{prooftree}
+\AxiomC{$\Discharge{!C}{1}$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!C \lif (!C \land !D)$}
+\DisplayProof\bottomAlignProof
+\AxiomC{$!C$}
+\AxiomC{$\Discharge{!D}{1}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!D \lif (!C \land !D)$}
+\end{prooftree}
+دوئ په ترتيب سره ښيي چې $!D \Proves !C \lif (!C \land !D)$ او
+$!C \Proves !D \lif (!C \land !D)$۔
+
+راياد کړئ چې د فرضيو ايستل اجازه ده، شرط نۀ دے: لازم نۀ ده چې
+فرضیې وباسو۔ په ځانګړي ډول، يوه قاعده هله هم کارولے شو چې فرضيې په
+!!{derivation} کښې موجودې نۀ وي۔ مثلاً لاندې اشتقاق روا دے، که څه
+هم د !!{discharged} کېدو دپاره هېڅ فرضيه~$!A$ نۀ شته:
+\begin{prooftree}
+  \AxiomC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+\end{prooftree}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,95 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-propositional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ppr}}
+      {\olfileid{pl}{axd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} او د قضیې نښلوونکي}
+
+\begin{explain}
+  ثابتوو چې د بديهي استنتاج د~$\Proves$ !!{derivability} اړيکه
+  دومره پياوړې ده چې د قضيې د نښلوونکو ځينې بنسټيز حقيقتونه ثابت
+  کړي؛ لکه $!A \land !B \Proves !A$ او
+  $!A, !A \lif !B \Proves !B$ (مودوس پوننس)۔ دغه حقيقتونه د
+  بشپړوالي د قضیې د ثبوت دپاره پکار دي۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} دواړه
+    $!A \land !B \Proves !A$ او $!A \land !B \Proves !B$
+  \item \ollabel{prop:provability-land-right}
+    $!A, !B \Proves !A \land !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item د \olref[prp]{ax:land1} او \olref[prp]{ax:land2} څخه په
+      مودوس پوننس۔
+      \textbf{د ژباړې د نسخې سمون (OLAX-007):} سرچينې د دواړو
+      جلا عطف-ايستنو دپاره لومړني بديهي اصل ته دوه ځله حواله کړې وه؛
+      دويمه دعوه د دويم عطف-ايستنې بديهي اصل کاروي۔
+  \item د \olref[prp]{ax:land3} څخه د مودوس پوننس په دوه تطبيقونو۔
+  \end{enumerate}
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ ناسازګار دے۔
+  \item دواړه $!A \Proves !A \lor !B$ او
+    $!B \Proves !A \lor !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item له \olref[prp]{ax:lnot2} څخه
+    $\Proves \lnot !A \lif (!A \lif \lfalse)$ او
+    $\Proves \lnot !B \lif (!B \lif \lfalse)$ ترلاسه کوو۔ نو د
+    استنتاج د قضیې له مخې $\{\lnot !A\} \Proves !A \lif \lfalse$
+    او $\{\lnot !B\} \Proves !B \lif \lfalse$ لرو۔ له
+    \olref[prp]{ax:lor3} څخه
+    $\{\lnot !A, \lnot !B\} \Proves (!A \lor !B) \lif \lfalse$
+    ترلاسه کوو۔ د استنتاج د قضیې له مخې
+    $\{!A \lor !B, \lnot !A, \lnot !B\} \Proves \lfalse$۔
+    \textbf{د ژباړې د نسخې سمون (OLAX-008):} سرچينې دلته د نفي
+    لومړني بديهي اصل ته حواله کړې وه؛ ښودل شوې انفجاري شېماوې د نفي
+    دويم بديهي اصل بېلګې دي۔
+  \item له \olref[prp]{ax:lor1} او \olref[prp]{ax:lor2} څخه په
+    مودوس پوننس۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left}
+    $!A, !A \lif !B \Proves !B$۔
+  \item \ollabel{prop:provability-lif-right}
+    دواړه $\lnot !A \Proves !A \lif !B$ او
+    $!B \Proves !A \lif !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item دا !!{derive} کولے شو:
+    \begin{derivation}
+      1. & $!A$ & \Hyp\\
+      2. & $!A \lif !B$ & \Hyp\\
+      3. & $!B$ & 1, 2, \MP
+    \end{derivation}
+    
+  \item په ترتيب د \olref[prp]{ax:lnot2} او
+    \olref[prp]{ax:lif1}، او د استنتاج د قضیې له مخې۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

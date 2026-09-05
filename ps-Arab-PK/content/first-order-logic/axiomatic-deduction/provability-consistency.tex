@@ -1,0 +1,102 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} او سازګاري}
+
+اوس به د~!!{derivability} اړيکې يو شمېر خاصيتونه ثابت کړو۔ دا په
+خپلواکه توګه په زړه پورې دي، خو هر يو به د بشپړوالي د قضیې په
+ثبوت کښې ونډه ولري۔
+
+\begin{prop}\ollabel{prop:provability-contr}
+  که $\Gamma \Proves !A$ او $\Gamma \cup \{!A\}$ ناسازګار وي، نو
+  $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  که $\Gamma \cup \{!A\}$ ناسازګار وي، نو
+  $\Gamma \cup \{!A\} \Proves \lfalse$۔ د
+  \olref[ptn]{prop:reflexivity} له مخې د هر $!B \in \Gamma$ دپاره
+  $\Gamma \Proves !B$۔ د فرض له مخې $\Gamma \Proves !A$ هم دے،
+  نو د هر $!B \in \Gamma \cup \{!A\}$ دپاره
+  $\Gamma \Proves !B$۔ د \olref[ptn]{prop:transitivity} له مخې
+  $\Gamma \Proves \lfalse$؛ يعنې $\Gamma$ ناسازګار دے۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ هله او يوازې هله چې
+$\Gamma \cup \{\lnot !A\}$ ناسازګار وي۔
+\end{prop}
+
+\begin{proof}
+لومړے فرض کړئ $\Gamma \Proves !A$۔ د
+\olref[ptn]{prop:monotonicity} له مخې
+$\Gamma \cup \{\lnot !A\} \Proves !A$۔ د
+\olref[ptn]{prop:reflexivity} له مخې
+$\Gamma \cup \{\lnot !A\} \Proves \lnot !A$۔ د
+\olref[prp]{ax:lnot2} له مخې
+$\Proves \lnot !A \lif (!A \lif \lfalse)$ هم لرو۔ نو د
+\olref[ded]{prop:mp} په دوه ځله پلي کولو
+$\Gamma \cup \{\lnot !A\} \Proves \lfalse$ لرو۔
+
+اوس فرض کړئ $\Gamma \cup \{\lnot !A\}$ ناسازګار دے؛ يعنې
+$\Gamma \cup \{\lnot !A\} \Proves \lfalse$۔ د استنتاج د قضیې له
+مخې $\Gamma \Proves \lnot !A \lif \lfalse$۔ د
+\olref[prp]{ax:lfalse2} له مخې
+$\Gamma \Proves (\lnot !A \lif \lfalse) \lif \lnot\lnot !A$، نو
+د \olref[ded]{prop:mp} له مخې $\Gamma \Proves \lnot\lnot !A$۔
+ځکه $\Gamma \Proves \lnot\lnot !A \lif !A$
+(\olref[prp]{ax:dne})، د \olref[ded]{prop:mp} په بيا پلي کولو
+$\Gamma \Proves !A$ لرو۔
+\end{proof}
+
+\begin{prob}
+ثابته کړئ چې $\Gamma \Proves \lnot !A$ هله او يوازې هله چې
+$\Gamma \cup \{!A\}$ ناسازګار وي۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  که $\Gamma \Proves !A$ او $\lnot !A \in \Gamma$ وي، نو
+  $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+  د \olref[prp]{ax:lnot2} له مخې
+  $\Gamma \Proves \lnot !A \lif (!A \lif \lfalse)$۔ د
+  \olref[ded]{prop:mp} په دوه ځله پلي کولو
+  $\Gamma \Proves \lfalse$۔
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  که $\Gamma \cup \{!A\}$ او $\Gamma \cup \{\lnot !A\}$ دواړه
+  ناسازګار وي، نو $\Gamma$ ناسازګار دے۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][prv]{prop:provability-exhaustive} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][prv]{prop:provability-exhaustive} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+
+\end{document}

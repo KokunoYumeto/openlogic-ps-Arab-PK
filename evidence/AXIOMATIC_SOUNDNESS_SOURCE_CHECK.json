@@ -1,0 +1,89 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T11:42:21.014810+00:00",
+  "batch_id": "PS-B025-AXIOMATIC-SOUNDNESS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0124",
+      "source_path": "content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "source_bytes": 5707,
+      "source_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb",
+      "translation_bytes": 7569,
+      "translation_sha256": "9891ecc1d0082024e0f935a4f7f06a94209f2759e6c248eb7daa5da69862df52"
+    },
+    {
+      "unit_id": "OLP-0125",
+      "source_path": "content/first-order-logic/axiomatic-deduction/identity.tex",
+      "source_bytes": 1299,
+      "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+      "translation_bytes": 2202,
+      "translation_sha256": "3ef14591dceef107c2eb00c2e3d036de6b615c27eafa4182e6ba22f8e5609d58"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0124 axiom-validity proposition and example",
+      "observation": "All propositional axiom schemas and the displayed universal-instantiation case were checked for semantic direction, assignment scope, free-for restriction and substitution.",
+      "treatment": "No source defect found; every condition and reference is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0124 derivation induction",
+      "observation": "The basis, modus-ponens branch, induction measure and semantic-consequence step were checked.",
+      "treatment": "No source defect found; all shorter-prefix dependencies are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0124 universal quantified-rule model argument",
+      "observation": "One satisfaction claim drops the formula marker from B(c), between otherwise identical marked occurrences.",
+      "treatment": "Restored the marker and disclosed the repair; all freshness and extensionality steps are preserved.",
+      "correction_id": "OLAX-010"
+    },
+    {
+      "locator": "OLP-0124 existential quantified-rule and corollaries",
+      "observation": "The dual quantified case remains the requested exercise; weak soundness and satisfiability-to-consistency were checked for direction.",
+      "treatment": "No other source defect found.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0125 reflexive identity proposition",
+      "observation": "The claim quantifies over any term although the axiom schema used to justify it is restricted to closed terms.",
+      "treatment": "Restored the closed-term restriction and disclosed the repair.",
+      "correction_id": "OLAX-011"
+    },
+    {
+      "locator": "OLP-0125 substitutability proposition",
+      "observation": "The claim omits the closed-term restriction although its proof directly invokes the identity axiom schema, which includes that restriction.",
+      "treatment": "Restored the restriction and disclosed the repair.",
+      "correction_id": "OLAX-012"
+    },
+    {
+      "locator": "OLP-0125 identity axioms and proof",
+      "observation": "Both identity schemas, their validity exercise, both premises and the two modus-ponens applications were checked.",
+      "treatment": "No other source defect found; formulas and stable references are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLAX-010",
+      "classification": "quantified_soundness_satisfaction_omits_formula_marker",
+      "source_locator": "axiomatic-deduction/soundness.tex:94-100",
+      "target_line_1based": 102
+    },
+    {
+      "correction_id": "OLAX-011",
+      "classification": "identity_reflexivity_proposition_omits_closed_term_scope",
+      "source_locator": "axiomatic-deduction/identity.tex:38-40",
+      "target_line_1based": 41
+    },
+    {
+      "correction_id": "OLAX-012",
+      "classification": "identity_substitution_proposition_omits_closed_term_scope",
+      "source_locator": "axiomatic-deduction/identity.tex:42-46",
+      "target_line_1based": 51
+    }
+  ],
+  "conclusion": "One missing formula marker and two omitted closed-term restrictions are repaired and disclosed. All remaining OLP-0124–0125 semantic arguments, identity schemas, formulas, conditions and labels are preserved."
+}

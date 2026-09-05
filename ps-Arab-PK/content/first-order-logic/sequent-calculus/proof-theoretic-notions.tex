@@ -1,0 +1,180 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{editorial}
+  دا برخه د سېکوېنټ حساب د اشتقاق وړتيا د اړيکې او سازګارۍ
+  تعريفونه راغونډوي۔
+  \textbf{د ژباړې د نسخې سمون (OLSQ-003):} په سرچينه کښې د طبيعي
+  استنتاج نوم راغلے و؛ دلته د څپرکي او ورپسې تعريفونو له مخې د
+  سېکوېنټ حساب نوم کارول کېږي۔
+\end{editorial}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{ptn}}
+      {\olfileid{pl}{seq}{ptn}}
+
+\olsection{د ثبوت-تيوريکي مفاهيم}
+
+\begin{explain}
+لکه څنګه چې مو يو شمېر مهم معنايي مفاهيم (اعتبار، معنايي استلزام
+او د صدق وړتيا) تعريف کړي دي، اوس ورسره سم \emph{ثبوت-تيوريکي
+مفاهيم} تعريفوو۔ دا مفاهيم په !!{structure}s کښې د !!{sentence}s
+د صدق پر بنسټ نۀ، بلکې د ځينو سېکوېنټونو د !!{derivability} يا
+!!{nonderivability} پر بنسټ تعريفېږي۔ دا يوه مهمه موندنه وه چې دغه
+مفاهيم سره سمون خوري۔ د دې سمون منځپانګه د \emph{سموالي} او
+\emph{بشپړتيا قضيه} ده۔
+\end{explain}
+
+\begin{defn}[قضيې]
+!!^a{sentence}~$!A$ هله \emph{قضيه} ده چې په~$\Log{LK}$ کښې د
+سېکوېنټ $\quad \Sequent !A$ !!a{derivation} موجود وي۔ که $!A$
+قضيه وي، $\Proves !A$ ليکو؛ او که نۀ وي، $\Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ د !!{sentence}s له سټ~$\Gamma$ څخه
+\emph{!!{derivable}} ده، يعنې $\Gamma \Proves !A$، هله او يوازې
+هله چې يو متناهي فرعي سټ~$\Gamma_0 \subseteq \Gamma$ او په
+$\Gamma_0$ کښې د !!{sentence}s يو لړ~$\Gamma_0'$ موجود وي، داسې
+چې $\Log{LK}$ د $\Gamma_0' \Sequent !A$ سېکوېنټ !!{derive}s کړي۔
+که $!A$ له $\Gamma$ څخه !!{derivable} نۀ وي، $\Gamma \Proves/ !A$
+ليکو۔
+\end{defn}
+
+د انقباض، کمزوري کولو او تبادلې د قاعدو له امله، په~$\Gamma_0'$
+کښې د !!{sentence}s ترتيب او شمېر اهميت نۀ لري: که سېکوېنټ
+$\Gamma_0' \Sequent !A$ !!{derivable} وي، نو د هر داسې
+$\Gamma_0''$ دپاره $\Gamma_0'' \Sequent !A$ هم د اشتقاق وړ دے
+چې د~$\Gamma_0'$ هماغه !!{sentence}s لري۔ مثلاً که
+$\Gamma_0 = \{!B, !C\}$ وي، نو هم
+$\Gamma_0' = \tuple{!B, !B, !C}$ او هم
+$\Gamma_0'' = \tuple{!C, !C, !B}$ داسې لړونه دي چې يوازې د
+$\Gamma_0$ !!{sentence}s لري۔ که د يوه لړ لرونکے سېکوېنټ
+!!{derivable} وي، د بل لړ لرونکے هم دے، مثلاً:
+\begin{prooftree}
+  \AxiomC{}
+  \Deduce$!B, !B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Exchange}}
+  \UnaryInf$!C, !B \fCenter !A$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!C, !C, !B \fCenter !A$
+\end{prooftree}
+له دې وروسته به وايو چې که $\Gamma_0$ د !!{sentence}s يو متناهي
+سټ وي، نو $\Gamma_0 \Sequent !A$ هر هغه سېکوېنټ دے چې مقدم ئې
+په~$\Gamma_0$ کښې د !!{sentence}s يو لړ وي؛ او د اړتيا په وخت کښې
+انقباضونه، تبادلې او کمزوري کول په ناويلې توګه ورګډوو۔
+
+\begin{defn}[سازګاري]
+د جملو سټ~$\Gamma$ هله او يوازې هله \emph{ناسازګار} دے چې يو
+متناهي فرعي سټ~$\Gamma_0 \subseteq \Gamma$ موجود وي، داسې چې
+$\Log{LK}$ د $\Gamma_0 \Sequent \quad$ سېکوېنټ !!{derive}s کړي۔
+که $\Gamma$ ناسازګار نۀ وي، يعنې که د هر متناهي
+$\Gamma_0 \subseteq \Gamma$ دپاره $\Log{LK}$ د
+$\Gamma_0 \Sequent \quad$ سېکوېنټ !!{derive} نۀ کړي، نو هغه
+\emph{سازګار} بولو۔
+\end{defn}
+
+\begin{prop}[انعکاسيت]
+\ollabel{prop:reflexivity}
+که $!A \in \Gamma$ وي، نو $\Gamma \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+لومړنے سېکوېنټ $!A \Sequent !A$ !!{derivable} دے، او
+$\{!A\} \subseteq \Gamma$۔
+\end{proof}
+  
+\begin{prop}[يکنواختي]
+\ollabel{prop:monotonicity}
+که $\Gamma \subseteq \Delta$ او $\Gamma \Proves !A$ وي، نو
+$\Delta \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $\Gamma \Proves !A$، يعنې يو متناهي
+$\Gamma_0 \subseteq \Gamma$ شته چې
+$\Gamma_0 \Sequent !A$ !!{derivable} دے۔ ځکه چې
+$\Gamma \subseteq \Delta$، نو $\Gamma_0$ د~$\Delta$ هم يو متناهي
+فرعي سټ دے۔ له دې امله د $\Gamma_0 \Sequent !A$ !!{derivation}
+هم $\Delta \Proves !A$ ښيي۔
+\end{proof}
+
+\begin{prop}[انتقاليت]
+\ollabel{prop:transitivity}
+که $\Gamma \Proves !A$ او $\{!A\} \cup \Delta \Proves !B$ وي، نو
+$\Gamma \cup \Delta \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+که $\Gamma \Proves !A$ وي، يو متناهي
+$\Gamma_0 \subseteq \Gamma$ او د
+$\Gamma_0 \Sequent !A$ !!a{derivation}~$\pi_0$ شته۔ که
+$\{!A\} \cup \Delta \Proves !B$ وي، نو د کوم متناهي فرعي سټ
+$\Delta_0 \subseteq \Delta$ دپاره د
+$!A, \Delta_0 \Sequent !B$ !!a{derivation}~$\pi_1$ شته۔ لاندې
+!!{derivation} وګورئ:
+\begin{prooftree}
+  \AxiomC{}
+  \RightLabel{$\pi_0$}
+  \Deduce$\Gamma_0 \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!A, \Delta_0 \fCenter !B$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_0, \Delta_0 \fCenter !B$
+\end{prooftree}
+ځکه چې $\Gamma_0 \cup \Delta_0 \subseteq \Gamma \cup \Delta$، نو
+دا $\Gamma \cup \Delta \Proves !B$ ښيي۔
+\end{proof}
+
+پام وکړئ، په ځانګړې توګه د دې معنٰی دا ده چې که
+$\Gamma \Proves !A$ او $!A \Proves !B$ وي، نو
+$\Gamma \Proves !B$۔ همدارنګه ترې دا هم راځي چې که
+$!A_1, \dots, !A_n \Proves !B$ وي او د هر~$i$ دپاره
+$\Gamma \Proves !A_i$ وي، نو $\Gamma \Proves !B$۔
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ هله او يوازې هله ناسازګار دے چې د هرې جملې~$!A$ دپاره
+$\Gamma \Proves {!A}$ وي۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][seq][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+
+\begin{prop}[متناهي شاهد]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item که $\Gamma \Proves !A$ وي، نو يو متناهي فرعي سټ
+    $\Gamma_0 \subseteq \Gamma$ شته چې $\Gamma_0 \Proves !A$۔
+  \item که د~$\Gamma$ هر متناهي فرعي سټ سازګار وي، نو $\Gamma$
+    سازګار دے۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item که $\Gamma \Proves !A$ وي، نو يو متناهي فرعي سټ
+      $\Gamma_0 \subseteq \Gamma$ شته، داسې چې د
+      $\Gamma_0 \Sequent !A$ سېکوېنټ !!a{derivation} لري۔ له دې امله
+      $\Gamma_0 \Proves !A$۔
+    \item که $\Gamma$ ناسازګار وي، نو يو متناهي فرعي سټ
+      $\Gamma_0 \subseteq \Gamma$ شته، داسې چې $\Log{LK}$ د
+      $\Gamma_0 \Sequent \quad$ سېکوېنټ !!{derive}s کړي۔ خو بيا
+      $\Gamma_0$ د~$\Gamma$ يو ناسازګار متناهي فرعي سټ دے۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

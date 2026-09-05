@@ -1,0 +1,152 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-propositional
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{ppr}}
+      {\olfileid{pl}{seq}{ppr}}
+
+\olsection{\usetoken{S}{derivability} او قضييز نښلوونکي}
+
+\begin{explain}
+  موږ ثابتوو چې د سېکوېنټ حساب د !!{derivability} اړيکه~$\Proves$
+  دومره پياوړې ده چې د قضييزو نښلوونکو په اړه ځينې بنسټيز حقيقتونه
+  ثابت کړي، لکه $!A \land !B \Proves !A$ او
+  $!A, !A \lif !B \Proves !B$ (مودوس پونېنس)۔ دغه حقيقتونه د
+  بشپړتيا د قضيې د ثبوت دپاره اړين دي۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} هم
+    $!A \land !B \Proves !A$ او هم
+    $!A \land !B \Proves !B$۔
+  \item \ollabel{prop:provability-land-right}
+    $!A, !B \Proves !A \land !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item دواړه سېکوېنټونه $!A \land !B \Sequent !A$ او
+    $!A \land !B \Sequent !B$ !!{derivable} دي:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$!A \land !B \fCenter !A$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$!A \land !B \fCenter !B$
+    \end{prooftree}
+    \item دا د سېکوېنټ $!A, !B \Sequent !A \land !B$ يو
+    !!a{derivation} دے۔
+    \textbf{د ژباړې د نسخې سمون (OLSQ-004):} د سرچينې په ونه کښې
+    د عطف-ښۍ قاعدې دواړو مقدمو يو شان مقدم نۀ درلود؛ دلته د
+    جوړښتي استنتاجونو دوه ګونې کرښې دواړه مقدمې له پايلې سره سموي۔
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \doubleLine
+      \UnaryInf$!A, !B \fCenter !A$
+      \Axiom$!B \fCenter !B$
+      \doubleLine
+      \UnaryInf$!A, !B \fCenter !B$
+      \RightLabel{\RightR{\land}}
+      \BinaryInf$!A, !B \fCenter !A \land !B$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ ناسازګار دے۔
+  \item هم $!A \Proves !A \lor !B$ او هم
+    $!B \Proves !A \lor !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item موږ د سېکوېنټ
+    $!A \lor !B, \lnot !A, \lnot !B \Sequent$ يو
+    !!a{derivation} ورکوو:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !A, !A \fCenter$
+      \doubleLine
+      \UnaryInf$!A, \lnot !A, \lnot !B \fCenter$
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !B, !B \fCenter$
+      \doubleLine
+      \UnaryInf$!B, \lnot !A, \lnot !B \fCenter$
+      \RightLabel{\LeftR{\lor}}
+      \BinaryInf$ !A \lor !B, \lnot !A, \lnot !B \fCenter $
+    \end{prooftree}
+    (راياد کړئ چې د استنتاج دوه ګونې کرښې څو کمزوري کول، انقباضونه
+    او تبادلې ښيي۔)
+  \item دواړه سېکوېنټونه $!A \Sequent !A \lor !B$ او
+    $!B \Sequent !A \lor !B$ !!{derivation}s لري:
+    \begin{prooftree}
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$!A \fCenter !A \lor !B$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$!B \fCenter !B$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$!B \fCenter !A \lor !B$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left}
+    $!A, !A \lif !B \Proves !B$۔
+  \item \ollabel{prop:provability-lif-right}
+    هم $\lnot !A \Proves !A \lif !B$ او هم
+    $!B \Proves !A \lif !B$۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item سېکوېنټ $!A \lif !B, !A \Sequent !B$ !!{derivable} دے:
+      \begin{prooftree}
+        \Axiom$!A \fCenter !A$
+        \Axiom$!B \fCenter !B$
+        \RightLabel{\LeftR{\lif}}
+        \BinaryInf$!A \lif !B, !A  \fCenter !B$
+      \end{prooftree}
+    \item دواړه سېکوېنټونه
+      $\lnot !A \Sequent !A \lif !B$ او
+      $!B \Sequent !A \lif !B$ !!{derivable} دي:
+      \begin{prooftree}
+        \Axiom$!A \fCenter !A$
+        \RightLabel{\LeftR{\lnot}}
+        \UnaryInf$\lnot !A, !A \fCenter$
+        \RightLabel{\LeftR{\Exchange}}
+        \UnaryInf$!A, \lnot !A \fCenter$
+        \RightLabel{\RightR{\Weakening}}
+        \UnaryInf$!A, \lnot !A \fCenter !B$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$\lnot !A \fCenter !A \lif !B$
+        \DisplayProof\qquad\bottomAlignProof
+        \Axiom$!B \fCenter !B$
+        \RightLabel{\LeftR{\Weakening}}
+        \UnaryInf$!A, !B \fCenter !B$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$!B \fCenter !A \lif !B$
+      \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\end{document}

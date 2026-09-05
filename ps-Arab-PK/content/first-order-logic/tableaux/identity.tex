@@ -1,0 +1,112 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{ide}
+
+\olsection{له \usetoken{S}{identity} سره \usetoken{P}{tableau}}
+
+له !!{identity} سره !!^{tableau}s د استنتاج اضافي قاعدې غواړي۔
+د~$\eq$ قاعدې دا دي ($t$، $t_1$ او $t_2$ تړلي ترمونه دي):
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{$\eq$}
+\UnaryInfC{\sFmla{\True}{\eq[t][t]}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\True}{!A(t_1)}}
+\RightLabel{$\TRule{\True}{\eq}$}
+\UnaryInfC{\sFmla{\True}{!A(t_2)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\False}{!A(t_1)}}
+\RightLabel{$\TRule{\False}{\eq}$}
+\UnaryInfC{\sFmla{\False}{!A(t_2)}}
+\DisplayProof
+\end{defish}
+پام وکړئ چې له نورو ټولو قاعدو سره په توپير کښې،
+$\TRule{\True}{\eq}$ او $\TRule{\False}{\eq}$ غواړي چې \emph{دوه}
+نښه لرونکي !!{formula}s له وړاندې پر څانګه وي؛ يعنې دواړه
+$\sFmla{\True}{\eq[t_1][t_2]}$ او $\sFmla{S}{!A(t_1)}$۔
+
+\begin{ex}
+که $s$ او $t$ تړلي ترمونه وي، نو
+$\eq[s][t], !A(s) \Proves !A(t)$:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+    [\sFmla{\True}{\eq[s][t]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(s)}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just={\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+کېدے شي دا د يو شان څيزونو د تعويض د اصل يا د لايبنېڅ د قانون په
+نوم درته اشنا وي۔
+
+!!^{tableau}s ثابتوي چې $\eq$ متناظره ده، يعنې
+$\eq[s_1][s_2] \Proves \eq[s_2][s_1]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_2][s_1]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_1][s_1]}, just = {$\eq$}
+        [\sFmla{\True}{\eq[s_2][s_1]}, just = {\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+دلته کرښه~$2$ د~$\TRule{\True}{\eq}$ لومړنے اړين
+!!{formula}~$\sFmla{\True}{\eq[s_1][s_2]}$ دے۔ کرښه~$3$ دويم
+اړين فارمول دے، چې د~$\sFmla{\True}{!A(s_1)}$ بڼه لري---$!A(x)$
+د~$\eq[x][s_1]$ په توګه وګڼئ؛ بيا $!A(s_1)$،
+$\eq[s_1][s_1]$ او $!A(s_2)$، $\eq[s_2][s_1]$ کېږي۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-010):} سرچينې کرښه درې د اې
+د دويم ترم بڼه بللې وه، خو د قاعدې په دې تطبيق کښې هغه د اې د
+لومړي ترم بڼه ده، لکه ورپسې تشريح چې هم ښيي۔
+
+تابلوګان دا هم ثابتوي چې $\eq$ انتقالي ده، يعنې
+$\eq[s_1][s_2], \eq[s_2][s_3] \Proves \eq[s_1][s_3]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_1][s_3]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_2][s_3]}, just = \TAss
+        [\sFmla{\True}{\eq[s_1][s_3]}, just = {\TRule{\True}{\eq}[3, 2]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+په دې !!{tableau} کښې د~$\TRule{\True}{\eq}$ لومړنے اړين
+!!{formula} کرښه~$3$، $\sFmla{\True}{\eq[s_2][s_3]}$ ده
+($s_2$ د~$t_1$ او $s_3$ د~$t_2$ ونډه لري)۔ دويم اړين فارمول چې
+د~$\sFmla{\True}{!A(s_2)}$ بڼه لري، کرښه~$2$ ده۔ دلته $!A(x)$
+د~$\eq[s_1][x]$ په توګه وګڼئ؛ په دې سره $!A(s_2)$،
+$\eq[s_1][s_2]$ (يعنې کرښه~$2$) او $!A(s_3)$ په پايله کښې
+!!{formula}~$\eq[s_1][s_3]$ کېږي۔
+\textbf{د ژباړې د نسخې سمون (OLTAB-011):} سرچينې د اې د دويم
+ترم د بڼې د پراخولو پر ځاے د قاعدې عمومي برابري ليکلې وه؛ خو
+د همدلته ټاکل شوي اې له مخې اړوند فارمول د لومړي او دويم ترم
+برابري ده۔
+\end{ex}
+
+\begin{prob}
+د لاندې دپاره تړلي !!{tableau}s ورکړئ:
+\begin{enumerate}
+\item $\sFmla{\False}{\lforall[x][\lforall[y][((x = y \land !A(x))
+      \lif !A(y))]]}$
+\item $\sFmla{\False}{\lexists[x][(!A(x) \land
+    \lforall[y][(!A(y) \lif y = x)])]}$,\\
+  $\sFmla{\True}{\lexists[x][!A(x)] \land
+    \lforall[y][\lforall[z][((!A(y) \land !A(z)) \lif y = z)]]}$
+\end{enumerate}
+\end{prob}
+
+\end{document}

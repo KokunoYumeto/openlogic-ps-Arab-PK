@@ -1,0 +1,37 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{prq}
+
+\olsection{له کميت ټاکونکو سره \usetoken{P}{derivation}}
+
+\begin{ex}
+راځئ د~$(\lforall[x][!A(x)] \land
+\lforall[y][!B(y)]) \lif \lforall[x][(!A(x) \land !B(x))]$ يو
+!!a{derivation} ورکړو۔
+
+لومړے پام وکړئ چې
+\begin{align*}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][!A(x)]\\
+  \intertext{د \olref[prp]{ax:land1} يوه بېلګه ده، او}
+  \lforall[x][!A(x)] & \lif !A(a) \\
+  \intertext{د \olref[qua]{ax:q1} بېلګه ده۔ نو د \olref[pro]{prop:chain} له مخې پوهېږو چې}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !A(a) \\
+  \intertext{!!{derivable} دے۔ همدارنګه، ځکه}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[y][!B(y)] \qquad\text{او}\\
+    \lforall[y][!B(y)] & \lif !B(a)\\
+    \intertext{په ترتيب د \olref[prp]{ax:land2} او \olref[qua]{ax:q1} بېلګې دي،}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !B(a)\\
+    \intertext{د \olref[pro]{prop:chain} په وسيله د ثبوت وړ دے۔ د \olref[prp]{ax:land3} د يوې مناسبې بېلګې او د~\MP{} د دوو تطبيقونو په کارولو وينو چې}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif (!A(a) \land !B(a))\\
+    \intertext{د ثبوت وړ دے۔ اوس \QR{} پلي کولے شو او دا ترلاسه کوو:}
+(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][(!A(x) \land !B(x))].
+\end{align*}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,248 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{sou}}
+      {\olfileid{pl}{tab}{sou}}
+      
+\olsection{سموالے}
+
+\begin{explain}
+د تابلوګانو په شان !!^a{derivation} نظام هله \emph{سم} دے چې
+هغه څيزونه !!{derive} نۀ کړي چې په حقيقت کښې نۀ وي۔ نو سموالے د
+!!{derivation} نظامونو د تضمين شوې خونديتوب يو ډول خاصيت دے۔
+د دې له مخې چې کوم ثبوت-تيوريکي خاصيت تر بحث لاندې وي، مثلاً غواړو
+پوه شو چې:
+\begin{enumerate}
+\item هر !!{derivable}~$!A$ \iftag{FOL}{معتبر}{صدق‌تابع قضيه} دے؛
+\item که !!a{sentence} له ځينو نورو څخه !!{derivable} وي، د هغو
+  معنايي پايله هم ده؛
+\item که د !!{sentence}s يو سټ ناسازګار وي، د صدق وړ نۀ دے۔
+\end{enumerate}
+دا د !!a{derivation} نظام مهم خاصيتونه دي۔ که له دغو څخه کوم يو
+سم نۀ وي، !!{derivation} نظام نيمګړے دے---له حده زيات څيزونه به
+!!{derive} کوي۔ له دې امله د !!a{derivation} نظام سموالے ثابتول
+تر ټولو زيات اهميت لري۔
+
+ځکه دغه ټول ثبوت-تيوريکي خاصيتونه د يو يا بل ډول د تړلو
+!!{tableau}s له لارې تعريف شوي دي، د پورته (۱)--(۳) ثابتول غواړي
+چې د تړلو !!{tableau}s د معنايي خاصيتونو په اړه يو څه ثابت کړو۔
+لومړے به تعريف کړو چې د يو !!a{signed
+  formula} پوره کېدل په يو
+جوړښت کښې څه معنٰی لري؛ بيا به وښيو چې که يو !!{tableau} تړلے وي،
+هېڅ جوړښت ئې ټول فرضونه نۀ پوره کوي۔ وروسته (۱)--(۳) د دې پايلې
+د لازمو نتيجو په توګه راځي۔
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{!!^a{structure}}{!!^a{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+يو !!a{signed formula}~$\sFmla{\True}{!A}$ هله او يوازې هله
+\emph{پوره کوي} چې $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$، او
+$\sFmla{\False}{!A}$ هله او يوازې هله پوره کوي چې
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$۔
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ د !!{signed formula}s يو
+سټ~$\Gamma$ هله او يوازې هله پوره کوي چې هر
+$\sFmla{S}{!A} \in \Gamma$ پوره کړي۔ $\Gamma$ هله \emph{د صدق وړ}
+دے چې کوم \iftag{FOL}{!!a{structure}}{!!a{valuation}} ئې پوره کړي،
+او که داسې نۀ وي \emph{د صدق وړ نۀ} دے۔
+\end{defn}
+
+\begin{thm}[سموالے]
+  \ollabel{thm:tableau-soundness}
+  که $\Gamma$ يو تړلے !!{tableau} ولري، نو $\Gamma$ د صدق وړ نۀ دے۔
+\end{thm}
+
+\begin{proof}
+د يو !!a{tableau} څانګه هله او يوازې هله د صدق وړ بولو چې پر هغې
+د !!{signed formula}s سټ د صدق وړ وي؛ او !!a{tableau} هله د صدق وړ
+بولو چې لږ تر لږه يوه د صدق وړ څانګه ولري۔
+
+دا خبره ښيو: د استنتاج د کومې قاعدې په وسيله د يو د صدق وړ
+!!{tableau} پراخول تل يو د صدق وړ !!{tableau} ورکوي۔ دا به قضيه
+ثابته کړي: هر تړلے !!{tableau} د~$\Gamma$ يوازې له فرضونو څخه جوړ
+!!{tableau} ته د استنتاج د قاعدو په پلي کولو تر لاسه کېږي۔ نو که
+$\Gamma$ د صدق وړ واے، د هغې هر !!{tableau} به د صدق وړ و۔ خو تړلے
+!!{tableau} په څرګند ډول د صدق وړ نۀ دے: هره څانګه دواړه
+$\sFmla{\True}{!A}$ او $\sFmla{\False}{!A}$ لري، او هېڅ جوړښت
+نۀ شي کولے چې $!A$ هم پوره او هم نۀ پوره کړي۔
+
+فرض کړئ يو د صدق وړ !!{tableau} لرو، يعنې داسې !!a{tableau} چې لږ
+تر لږه يوه د صدق وړ څانګه لري۔ د استنتاج قاعده يا يوې څانګې ته
+!!{signed formula}s ورزياتوي يا يوه څانګه په دوو وېشي۔ که په
+!!{tableau} کښې کومه د صدق وړ څانګه وي چې اړوند قاعدوي تطبيق ئې نۀ
+پراخوي، هغه په پراخ شوي !!{tableau} کښې هم د صدق وړ پاتې کېږي؛ نو
+پراخ شوے تابلو د صدق وړ دے۔ ځکه يوازې هغه حالت څېړل پکار دي چې
+قاعده پر يوې د صدق وړ څانګې پلي کېږي۔
+
+$\Gamma$ پر هغې څانګې د !!{signed formula}s سټ وبولئ، او
+$\sFmla{S}{!A} \in \Gamma$ هغه !!{signed formula} وبولئ چې قاعده
+پرې پلي کېږي۔ که قاعده څانګه نۀ وېشي، بايد وښيو چې پراخه شوې څانګه،
+يعنې $\Gamma$ له قاعدوي پايلو سره، لا هم د صدق وړ ده۔ که قاعده
+څانګه وېشي، بايد وښيو چې له دوو ترلاسه شوو څانګو لږ تر لږه يوه د
+صدق وړ ده۔
+  
+لومړے هغه ممکن استنتاجونه څېړو چې څانګه نۀ وېشي۔
+\begin{enumerate}
+\item څانګه پر $\sFmla{\True}{\lnot !B} \in \Gamma$ د
+  $\TRule{\True}{\lnot}$ په پلي کولو پراخېږي۔ بيا پراخه شوې څانګه
+  د $\Gamma \cup \{\sFmla{\False}{!B}\}$ !!{signed formula}s لري۔
+  فرض کړئ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$۔ په ځانګړي ډول
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !B}$۔ نو
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$، يعنې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$،
+  $\sFmla{\False}{!B}$ پوره کوي۔
+\item څانګه پر $\sFmla{\False}{\lnot !B} \in \Gamma$ د
+  $\TRule{\False}{\lnot}$ په پلي کولو پراخېږي: تمرين۔
+\item څانګه پر $\sFmla{\True}{!B \land !C} \in \Gamma$ د
+  $\TRule{\True}{\land}$ په پلي کولو پراخېږي؛ له دې څخه پر څانګه
+  دوه نوي !!{signed formula}s ترلاسه کېږي: $\sFmla{\True}{!B}$ او
+  $\sFmla{\True}{!C}$۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$، او په ځانګړي ډول
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B \land !C}$۔ بيا
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ او
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$۔ يعنې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ دواړه
+  $\sFmla{\True}{!B}$ او $\sFmla{\True}{!C}$ پوره کوي۔
+\item څانګه پر $\sFmla{\False}{!B \lor !C} \in \Gamma$ د
+  $\TRule{\False}{\lor}$ په پلي کولو پراخېږي: تمرين۔
+\item څانګه پر $\sFmla{\False}{!B \lif !C} \in \Gamma$ د
+  $\TRule{\False}{\lif}$ په پلي کولو پراخېږي۔ له دې څخه پر څانګه
+  دوه نوي !!{signed formula}s ترلاسه کېږي: $\sFmla{\True}{!B}$ او
+  $\sFmla{\False}{!C}$۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$، او په ځانګړي ډول
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \lif !C}$۔ بيا
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ او
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$۔ يعنې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ دواړه
+  $\sFmla{\True}{!B}$ او $\sFmla{\False}{!C}$ پوره کوي۔
+
+\iftag{FOL}{%
+\textbf{د ژباړې د نسخې سمون (OLTAB-009):} سرچينې په دواړو
+کلي-کميت ټاکونکو قاعدوي حالتونو کښې د قاعدې په مقدمه کښې د بي ميتا-فارمول
+ليکلے و، خو پايله او ټول ورپسې معنايي استدلال د اې ميتا-فارمول
+کاروي۔ دلته اې په هر حالت کښې يو شان ساتل کېږي۔
+\item څانګه پر $\sFmla{\True}{\lforall[x][!A(x)]} \in \Gamma$ د
+  $\TRule{\True}{\lforall}$ په پلي کولو پراخېږي۔ له دې څخه پر څانګه
+  يو نوے !!{signed formula}~$\sFmla{\True}{!A(t)}$ ترلاسه کېږي۔
+  فرض کړئ $\Sat{M}{\Gamma}$، او په ځانګړي ډول
+  $\Sat{M}{\lforall[x][!A(x)]}$۔ د
+  \olref[syn][sem]{prop:quant-terms} له مخې $\Sat{M}{!A(t)}$۔ نو
+  $\Struct{M}$، $\sFmla{\True}{!A(t)}$ پوره کوي۔
+
+\item څانګه پر $\sFmla{\False}{\lforall[x][!A(x)]} \in \Gamma$ د
+  $\TRule{\False}{\lforall}$ په پلي کولو پراخېږي۔ له دې څخه پر
+  څانګه يو نوے !!{signed formula}~$\sFmla{\False}{!A(a)}$ ترلاسه
+  کېږي، چې $a$ داسې !!a{constant} دے چې په~$\Gamma$ کښې نۀ راځي۔
+  ځکه $\Gamma$ د صدق وړ دے، داسې $\Struct{M}$ شته چې
+  $\Sat{M}{\Gamma}$، او په ځانګړي ډول
+  $\Sat/{M}{\lforall[x][!A(x)]}$۔ بايد وښيو چې
+  $\Gamma \cup \{\sFmla{\False}{!A(a)}\}$ د صدق وړ دے۔ د دې دپاره
+  مناسب~$\Struct{M'}$ داسې تعريفوو۔
+
+  د \olref[syn][ass]{prop:sat-quant} له مخې
+  $\Sat/{M}{\lforall[x][!A(x)]}$ هله او يوازې هله چې د کوم~$s$
+  دپاره $\Sat/{M}{!A(x)}[s]$۔ اوس $\Struct{M'}$ د~$\Struct{M}$ په
+  شان وبولئ، خو $\Assign{a}{M'} = s(x)$۔ د
+  \olref[syn][ext]{cor:extensionality-sent} له مخې، د هر
+  $\sFmla{\True}{!C} \in \Gamma$ دپاره $\Sat{M'}{!C}$، او د هر
+  $\sFmla{\False}{!C} \in \Gamma$ دپاره $\Sat/{M'}{!C}$؛ ځکه
+  $a$ په~$\Gamma$ کښې نۀ راځي۔
+
+  د \olref[syn][ext]{prop:extensionality} له مخې
+  $\Sat/{M'}{!A(x)}[s]$۔ د \olref[syn][ext]{prop:ext-formulas} له مخې
+  $\Sat/{M'}{!A(a)}[s]$۔ ځکه $!A(a)$ يوه !!a{sentence} ده، د
+  \olref[syn][ass]{prop:sentence-sat-true} له مخې
+  $\Sat/{M'}{!A(a)}$؛ يعنې $\Struct{M'}$،
+  $\sFmla{\False}{!A(a)}$ پوره کوي۔
+\item څانګه پر $\sFmla{\True}{\lexists[x][!B(x)]} \in \Gamma$ د
+  $\TRule{\True}{\lexists}$ په پلي کولو پراخېږي: تمرين۔
+\item څانګه پر $\sFmla{\False}{\lexists[x][!B(x)]} \in \Gamma$ د
+  $\TRule{\False}{\lexists}$ په پلي کولو پراخېږي: تمرين۔}{}
+\end{enumerate}
+اوس هغه ممکن استنتاجونه څېړو چې څانګه وېشي۔
+\begin{enumerate}
+\item څانګه پر $\sFmla{\False}{!B \land !C} \in \Gamma$ د
+  $\TRule{\False}{\land}$ په پلي کولو پراخېږي؛ له دې څخه دوه څانګې
+  ترلاسه کېږي: کيڼه څانګه د~$\sFmla{\False}{!B}$ له لارې او ښۍ
+  څانګه د~$\sFmla{\False}{!C}$ له لارې دوام کوي۔ فرض کړئ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$، او په ځانګړي ډول
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \land !C}$۔ بيا يا
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ يا
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$۔ په لومړي حالت کښې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$،
+  $\sFmla{\False}{!B}$ پوره کوي؛ يعنې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ د کيڼې څانګې فارمولونه
+  پوره کوي۔ په دويم حالت کښې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$،
+  $\sFmla{\False}{!C}$ پوره کوي؛ يعنې
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ د ښۍ څانګې فارمولونه
+  پوره کوي۔
+\item څانګه پر $\sFmla{\True}{!B \lor !C} \in \Gamma$ د
+  $\TRule{\True}{\lor}$ په پلي کولو پراخېږي: تمرين۔
+\item څانګه پر $\sFmla{\True}{!B \lif !C} \in \Gamma$ د
+  $\TRule{\True}{\lif}$ په پلي کولو پراخېږي: تمرين۔
+\item څانګه د~\Cut{} په وسيله پراخېږي۔ له دې څخه دوه څانګې ترلاسه
+  کېږي: يوه $\sFmla{\True}{!B}$ او بله $\sFmla{\False}{!B}$ لري۔
+  ځکه $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ او يا
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ يا
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$،
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ يا کيڼه يا ښۍ څانګه پوره
+  کوي۔
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+د~\olref[fol][tab][sou]{thm:tableau-soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+د~\olref[pl][tab][sou]{thm:tableau-soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+که $\Proves !A$ وي، نو $!A$ \iftag{FOL}{معتبر}{صدق‌تابع قضيه} دے۔
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$۔
+\end{cor}
+
+\begin{proof}
+  که $\Gamma \Proves !A$ وي، نو د ځينو
+  $!B_1$، \dots، $!B_n \in \Gamma$ دپاره
+  $\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}\}$ يو تړلے !!{tableau} لري۔ د
+  \olref{thm:tableau-soundness} له مخې، هر
+  \iftag{FOL}{!!{structure}}{!!{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+  يا کوم $!B_i$ ناسموي يا $!A$ رښتيا کوي۔ نو که
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ وي، بيا
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ هم دے۔
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+که $\Gamma$ د صدق وړ وي، نو سازګار دے۔
+\end{cor}
+
+\begin{proof}
+مقابل عکس ثابتوو۔ فرض کړئ $\Gamma$ سازګار نۀ دے۔ بيا
+$!B_1$، \dots، $!B_n \in \Gamma$ شته او د
+$\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}$ دپاره يو
+تړلے !!{tableau} شته۔ د \olref{thm:tableau-soundness} له مخې، داسې
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ نشته چې د ټولو
+$i=1$، \dots،~$n$ دپاره $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B_i}$ وي۔
+خو بيا $\Gamma$ د صدق وړ نۀ دے۔
+\end{proof}
+
+\end{document}

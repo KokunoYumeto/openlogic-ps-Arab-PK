@@ -362,3 +362,336 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: Use one bound output name consistently and add an adjacent OLSIZ-010 note..
 - Disclosure: `corrected-body-plus-adjacent-localized-note`.
 
+## OLSQ-001
+
+- Unit: `OLP-0075`
+- Frozen source: `content/first-order-logic/sequent-calculus/proving-things.tex` (8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303) at `sequent-calculus/proving-things.tex:86,104,125,147`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:78`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-EXAMPLES`
+- Treatment: changes exactly four exchange-rule labels from right exchange to left exchange where the displayed step swaps adjacent formulas in the antecedent; the two genuine succedent exchanges remain unchanged.
+- Disclosure: `corrected-four-rule-labels-plus-adjacent-note`.
+
+## OLSQ-002
+
+- Unit: `OLP-0075`
+- Frozen source: `content/first-order-logic/sequent-calculus/proving-things.tex` (8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303) at `sequent-calculus/proving-things.tex:177-180`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:183`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-EXAMPLES`
+- Treatment: restores negation to the second disjunct in both candidate upper sequents, matching the requested end-sequent and every subsequent proof tree.
+- Disclosure: `corrected-two-inline-formulas-plus-adjacent-note`.
+
+## OLSQ-003
+
+- Unit: `OLP-0077`
+- Frozen source: `content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex` (91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53) at `sequent-calculus/proof-theoretic-notions.tex:9-12`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:12`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-METATHEORY`
+- Treatment: replaces natural deduction with sequent calculus in the editorial description, matching the enclosing chapter and every following LK definition.
+- Disclosure: `corrected-editorial-system-name-plus-adjacent-note`.
+
+## OLSQ-004
+
+- Unit: `OLP-0079`
+- Frozen source: `content/first-order-logic/sequent-calculus/provability-propositional.tex` (b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c) at `sequent-calculus/provability-propositional.tex:48-54`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-propositional.tex:51`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-METATHEORY`
+- Treatment: adds double-line structural steps from the two identity sequents to premises with the common antecedent A,B required by conjunction-right.
+- Disclosure: `added-two-structural-premises-plus-adjacent-note`.
+
+## OLSQ-005
+
+- Unit: `OLP-0081`
+- Frozen source: `content/first-order-logic/sequent-calculus/soundness.tex` (4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151) at `sequent-calculus/soundness.tex:157`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:180`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-SOUNDNESS`
+- Treatment: replaces the bare premise sequent Gamma entails Delta with the proved conclusion A-and-B,Gamma entails Delta.
+- Disclosure: `corrected-conclusion-formula-plus-adjacent-note`.
+
+## OLSQ-006
+
+- Unit: `OLP-0081`
+- Frozen source: `content/first-order-logic/sequent-calculus/soundness.tex` (4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151) at `sequent-calculus/soundness.tex:288`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:338`
+- Audit: `PS-OWNER-SEMANTIC-20260905-SEQUENT-SOUNDNESS`
+- Treatment: replaces Pi set-minus Lambda with the right cut-premise sequent Pi entails Lambda.
+- Disclosure: `corrected-cut-premise-notation-plus-adjacent-note`.
+
+## OLND-001
+
+- Unit: `OLP-0085`
+- Frozen source: `content/first-order-logic/natural-deduction/rules-and-proofs.tex` (e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506) at `natural-deduction/rules-and-proofs.tex:33`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/rules-and-proofs.tex:43`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-FOUNDATION`
+- Treatment: renders the one, two or three nodes above a sentence as other sentences rather than sequents.
+- Disclosure: `corrected-node-type-noun-plus-adjacent-note`.
+
+## OLND-002
+
+- Unit: `OLP-0087`
+- Frozen source: `content/first-order-logic/natural-deduction/quantifier-rules.tex` (eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313) at `natural-deduction/quantifier-rules.tex:58-61`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/quantifier-rules.tex:62`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-FOUNDATION`
+- Treatment: states the exact conclusion, open-assumption and existential-major-premise restrictions instead of saying that the eigenvariable occurs in no premise.
+- Disclosure: `corrected-eigenvariable-scope-summary-plus-adjacent-note`.
+
+## OLND-003
+
+- Unit: `OLP-0089`
+- Frozen source: `content/first-order-logic/natural-deduction/proving-things.tex` (d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc) at `natural-deduction/proving-things.tex:133`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:144`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-EXAMPLES`
+- Treatment: labels the inference from not-A and A to falsehood as negation elimination rather than falsehood introduction.
+- Disclosure: `corrected-rule-label-plus-adjacent-note`.
+
+## OLND-004
+
+- Unit: `OLP-0089`
+- Frozen source: `content/first-order-logic/natural-deduction/proving-things.tex` (d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc) at `natural-deduction/proving-things.tex:67`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:66`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-EXAMPLES`
+- Treatment: calls the sentence at the bottom of the natural-deduction tree the final conclusion rather than a sentence in an end-sequent.
+- Disclosure: `corrected-proof-system-noun-plus-adjacent-note`.
+
+## OLND-005
+
+- Unit: `OLP-0092`
+- Frozen source: `content/first-order-logic/natural-deduction/provability-consistency.tex` (90f40aecedac9a8f2760b9976de0c6eac71c1b1e90911c4a30ce029a2d9e13c6) at `natural-deduction/provability-consistency.tex:71-72`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/provability-consistency.tex:75`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-METATHEORY`
+- Treatment: removes a standalone classical-contradiction right label immediately duplicated by the indexed discharge-rule label, retaining the latter.
+- Disclosure: `removed-duplicate-rule-label-plus-adjacent-note`.
+
+## OLND-006
+
+- Unit: `OLP-0095`
+- Frozen source: `content/first-order-logic/natural-deduction/soundness.tex` (8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9) at `natural-deduction/soundness.tex:211-213`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/natural-deduction/soundness.tex:221`
+- Audit: `PS-OWNER-SEMANTIC-20260905-ND-SOUNDNESS`
+- Treatment: adds negation elimination to the prose list of multi-premise inferences, matching its two-premise schema and the exercise that immediately follows.
+- Disclosure: `restored-omitted-rule-in-list-plus-adjacent-note`.
+
+## OLTAB-001
+
+- Unit: `OLP-0098`
+- Frozen source: `content/first-order-logic/tableaux/tableaux.tex` (1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6) at `tableaux/tableaux.tex:15-16`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/tableaux.tex:17`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-FOUNDATION`
+- Treatment: replaces natural deduction with tableaux in the prfTab editorial inclusion instruction.
+- Disclosure: `corrected-proof-system-name-plus-adjacent-note`.
+
+## OLTAB-002
+
+- Unit: `OLP-0103`
+- Frozen source: `content/first-order-logic/tableaux/proving-things.tex` (6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90) at `tableaux/proving-things.tex:439`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/proving-things.tex:440`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-EXAMPLES`
+- Treatment: closes the true sign after A-or-B and gives not-B its own true signed-formula wrapper before the false-A conclusion.
+- Disclosure: `split-malformed-signed-formula-plus-adjacent-note`.
+
+## OLTAB-003
+
+- Unit: `OLP-0104`
+- Frozen source: `content/first-order-logic/tableaux/proving-things-quant.tex` (253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234) at `tableaux/proving-things-quant.tex:280-282`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex:286`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-EXAMPLES`
+- Treatment: changes the reusable false-existential signed-formula reference from line 3 to line 4.
+- Disclosure: `corrected-line-reference-plus-adjacent-note`.
+
+## OLTAB-004
+
+- Unit: `OLP-0105`
+- Frozen source: `content/first-order-logic/tableaux/proof-theoretic-notions.tex` (38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71) at `tableaux/proof-theoretic-notions.tex:104-105`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex:110`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY`
+- Treatment: changes D_m subseteq Gamma to D_m in Gamma in the list of individual formulas selected from Gamma.
+- Disclosure: `replace-malformed-subset-relation-with-membership-plus-adjacent-note`.
+
+## OLTAB-005
+
+- Unit: `OLP-0106`
+- Frozen source: `content/first-order-logic/tableaux/provability-consistency.tex` (1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348) at `tableaux/provability-consistency.tex:25-31`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:40`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY`
+- Treatment: changes the defining endpoint of Gamma_1 from C_n to C_m.
+- Disclosure: `align-finite-list-endpoint-index-plus-adjacent-note`.
+
+## OLTAB-006
+
+- Unit: `OLP-0106`
+- Frozen source: `content/first-order-logic/tableaux/provability-consistency.tex` (1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348) at `tableaux/provability-consistency.tex:85-87`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:106`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY`
+- Treatment: omits the isolated source backslash between the finite-list sentence and its display.
+- Disclosure: `remove-stray-control-character-plus-adjacent-note`.
+
+## OLTAB-007
+
+- Unit: `OLP-0106`
+- Frozen source: `content/first-order-logic/tableaux/provability-consistency.tex` (1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348) at `tableaux/provability-consistency.tex:90-93`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:108`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY`
+- Treatment: states that the true-negation rule is applied to true not-A and yields false A.
+- Disclosure: `correct-rule-operand-in-prose-plus-adjacent-note`.
+
+## OLTAB-008
+
+- Unit: `OLP-0107`
+- Frozen source: `content/first-order-logic/tableaux/provability-propositional.tex` (342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13) at `tableaux/provability-propositional.tex:43-54,106-117`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/provability-propositional.tex:74`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-METATHEORY`
+- Treatment: closes each truth-sign argument before opening the formula argument in eight signed-formula calls.
+- Disclosure: `restore-missing-macro-argument-boundaries-plus-adjacent-note`.
+
+## OLTAB-009
+
+- Unit: `OLP-0109`
+- Frozen source: `content/first-order-logic/tableaux/soundness.tex` (d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80) at `tableaux/soundness.tex:125-176`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/soundness.tex:125`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS`
+- Treatment: replaces five copied B occurrences with A so each universal premise matches its A-instance conclusion and semantic derivation.
+- Disclosure: `use-one-metavariable-through-both-universal-cases-plus-adjacent-note`.
+
+## OLTAB-010
+
+- Unit: `OLP-0110`
+- Frozen source: `content/first-order-logic/tableaux/identity.tex` (3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d) at `tableaux/identity.tex:64-68`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:72`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS`
+- Treatment: changes the description of line 3 from true A(s2) to true A(s1).
+- Disclosure: `correct-second-prerequisite-term-plus-adjacent-note`.
+
+## OLTAB-011
+
+- Unit: `OLP-0110`
+- Frozen source: `content/first-order-logic/tableaux/identity.tex` (3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d) at `tableaux/identity.tex:89-93`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:94`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS`
+- Treatment: replaces generic t1=t2 with the actual s1=s2 obtained from A(s2) in this instantiation.
+- Disclosure: `restore-actual-line-two-equality-instance-plus-adjacent-note`.
+
+## OLTAB-012
+
+- Unit: `OLP-0111`
+- Frozen source: `content/first-order-logic/tableaux/soundness-identity.tex` (d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b) at `tableaux/soundness-identity.tex:27-31`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex:34`
+- Audit: `PS-OWNER-SEMANTIC-20260905-TABLEAUX-SOUNDNESS`
+- Treatment: changes the result of the true-identity rule from S:A(t2) to true A(t2).
+- Disclosure: `specialize-result-sign-to-true-plus-adjacent-note`.
+
+## OLAX-001
+
+- Unit: `OLP-0113`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex` (8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257) at `axiomatic-deduction/rules-and-proofs.tex:38-42`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:41`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-FOUNDATION`
+- Treatment: changes the lone generic step A_i to the marked formula metavariable !A_i.
+- Disclosure: `restore-formula-metavariable-marker-plus-adjacent-note`.
+
+## OLAX-002
+
+- Unit: `OLP-0118`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex` (0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b) at `axiomatic-deduction/proof-theoretic-notions.tex:88-94`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:86`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: changes B_i=A to !B_i=!A in the final concatenation justification.
+- Disclosure: `restore-formula-marker-plus-adjacent-note`.
+
+## OLAX-003
+
+- Unit: `OLP-0119`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` (ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780) at `axiomatic-deduction/deduction-theorem.tex:55-60`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:67`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: changes the isolated relation in Gamma-union-{A} to B in Gamma-union-{A}.
+- Disclosure: `restore-membership-left-operand-plus-adjacent-note`.
+
+## OLAX-004
+
+- Unit: `OLP-0119`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` (ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780) at `axiomatic-deduction/deduction-theorem.tex:108-110`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:111`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: adds the omitted closing parenthesis to the first derived-fact formula.
+- Disclosure: `restore-closing-parenthesis-plus-adjacent-note`.
+
+## OLAX-005
+
+- Unit: `OLP-0120`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` (79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888) at `axiomatic-deduction/deduction-theorem-quantifiers.tex:39-46`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:48`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: adds the omitted outer closing parenthesis to the quantified currying theorem.
+- Disclosure: `restore-closing-parenthesis-plus-adjacent-note`.
+
+## OLAX-006
+
+- Unit: `OLP-0120`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` (79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888) at `axiomatic-deduction/deduction-theorem-quantifiers.tex:47-49`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:52`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: changes the closing gloss from Gamma derives B to Gamma derives A-implies-B.
+- Disclosure: `restore-theorem-conclusion-plus-adjacent-note`.
+
+## OLAX-007
+
+- Unit: `OLP-0122`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/provability-propositional.tex` (25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007) at `axiomatic-deduction/provability-propositional.tex:34-38`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:36`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: changes the second conjunction projection reference from ax:land1 to ax:land2.
+- Disclosure: `replace-second-axiom-reference-plus-adjacent-note`.
+
+## OLAX-008
+
+- Unit: `OLP-0122`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/provability-propositional.tex` (25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007) at `axiomatic-deduction/provability-propositional.tex:52-61`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:63`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: changes ax:lnot1 to ax:lnot2 for the two displayed explosion conditionals.
+- Disclosure: `replace-negation-axiom-reference-plus-adjacent-note`.
+
+## OLAX-009
+
+- Unit: `OLP-0123`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` (07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6) at `axiomatic-deduction/provability-quantifiers.tex:25-30`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:33`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY`
+- Treatment: attributes the final step to the truth axiom and meta-modus ponens.
+- Disclosure: `correct-proof-justification-plus-adjacent-note`.
+
+## OLAX-010
+
+- Unit: `OLP-0124`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/soundness.tex` (b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb) at `axiomatic-deduction/soundness.tex:94-100`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex:102`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS`
+- Treatment: changes satisfaction of B(c) to satisfaction of the marked formula !B(c).
+- Disclosure: `restore-formula-marker-plus-adjacent-note`.
+
+## OLAX-011
+
+- Unit: `OLP-0125`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/identity.tex` (9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4) at `axiomatic-deduction/identity.tex:38-40`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:41`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS`
+- Treatment: restricts the derived reflexive identity proposition from any term to any closed term.
+- Disclosure: `restore-closed-term-restriction-plus-adjacent-note`.
+
+## OLAX-012
+
+- Unit: `OLP-0125`
+- Frozen source: `content/first-order-logic/axiomatic-deduction/identity.tex` (9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4) at `axiomatic-deduction/identity.tex:42-46`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:51`
+- Audit: `PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS`
+- Treatment: adds that the two displayed terms in the derived substitutability proposition are closed.
+- Disclosure: `restore-closed-term-restriction-plus-adjacent-note`.
+
+## OLCOM-001
+
+- Unit: `OLP-0128`
+- Frozen source: `content/first-order-logic/completeness/outline.tex` (b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1) at `completeness/outline.tex:66-80`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/outline.tex:73`
+- Audit: `PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS`
+- Treatment: condition (b) now requires deciding every sentence, rather than only every atomic sentence, in agreement with the same paragraph and the formal complete-set definition.
+- Disclosure: `remove-spurious-atomic-qualifier-plus-adjacent-note`.
+

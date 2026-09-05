@@ -1,0 +1,143 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ptn}}
+      {\olfileid{pl}{axd}{ptn}}
+
+\olsection{ثبوت-تيوريکي مفاهيم}
+
+\begin{explain}
+لکه څنګه چې مو يو شمېر مهم معنايي مفاهيم
+(\iftag{FOL}{اعتبار}{صدق‌تابع قضيه}، معنايي لازميت او د صدق وړتيا)
+تعريف کړي دي، اوس ورسره سم \emph{ثبوت-تيوريکي مفاهيم} تعريفوو۔
+دا د !!{structure}s په دننه کښې د !!{sentence}s پوره کېدو ته په
+رجوع نۀ، بلکې د ځينو فارمولونو !!{derivability} يا
+!!{nonderivability} ته په رجوع تعريفېږي۔ دا يوه مهمه موندنه وه چې
+دغه مفاهيم يو شان راځي۔ د هغو يو شان راتلل د \emph{سموالي} او
+\emph{بشپړوالي د قضيو} منځپانګه ده۔
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+!!^a{formula}~$!A$ هله له~$\Gamma$ څخه \emph{!!{derivable}} دے،
+چې $\Gamma \Proves !A$ ليکو، چې له~$\Gamma$ څخه داسې
+!!a{derivation} وي چې په~$!A$ پاے ته رسېږي۔
+\end{defn}
+
+\begin{defn}[قضيې]
+!!^a{formula}~$!A$ هله \emph{قضيه} ده چې له تش سټ څخه د~$!A$ يو
+!!a{derivation} وي۔ که $!A$ قضيه وي $\Proves !A$، او که نۀ وي
+$\Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{defn}[سازګاري]
+د !!{formula}s يو سټ~$\Gamma$ هله او يوازې هله \emph{سازګار} دے
+چې $\Gamma\Proves/ \lfalse$؛ که داسې نۀ وي \emph{ناسازګار} دے۔
+\end{defn}
+
+\begin{prop}[انعکاس]
+\ollabel{prop:reflexivity}
+که $!A \in \Gamma$ وي، نو $\Gamma \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+  يوازې !!{formula}~$!A$ له~$\Gamma$ څخه د~$!A$ يو
+  !!a{derivation} دے۔
+\end{proof}
+
+\begin{prop}[زياتېدنه]
+\ollabel{prop:monotonicity}
+که $\Gamma \subseteq \Delta$ او $\Gamma \Proves !A$ وي، نو
+$\Delta \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+له~$\Gamma$ څخه د~$!A$ هر !!{derivation} له~$\Delta$ څخه هم د~$!A$
+يو !!a{derivation} دے۔
+\end{proof}
+
+\begin{prop}[انتقال]
+\ollabel{prop:transitivity}
+که $\Gamma \Proves !A$ او $\{!A\} \cup \Delta \Proves !B$ وي،
+نو $\Gamma \cup \Delta \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\{!A\} \cup \Delta \Proves !B$۔ بيا له
+  $\{!A\} \cup \Delta$ څخه يو !!a{derivation}
+  $!B_1$، \dots، $!B_l = !B$ شته۔ په دې !!{derivation} کښې ځينې
+  ګامونه به د هغې قاعدې له مخې سم وي چې کومې مخکښې کرښې
+  $!B_i = !A$ ته رجوع کوي۔ د فرض له مخې له~$\Gamma$ څخه د~$!A$
+  يو !!a{derivation} شته؛ يعنې داسې !!a{derivation}
+  $!A_1$، \dots، $!A_k = !A$ چې هر $!A_i$ يا بديهي اصل وي، يا
+  د~$\Gamma$ يو !!a{element} وي، يا د استنتاج د قاعدې له مخې سم
+  وي۔ اوس دا لړۍ په پام کښې ونيسئ:
+  \[
+  !A_1, \dots, !A_k = !A, !B_1, \dots, !B_l = !B.
+  \]
+  دا له~$\Gamma \cup \Delta$ څخه د~$!B$ سم !!{derivation} دے؛ ځکه
+  هر $!B_i = !A$ اوس د هماغې قاعدې له مخې توجيه کېږي چې
+  $!A_k = !A$ توجيه کوي۔
+  \textbf{د ژباړې د نسخې سمون (OLAX-002):} سرچينې په وروستۍ جمله
+  کښې يوازې له بي-آی څخه د ميتا-فارمول نښه پرېښې وه؛ هماغه کرښه
+  پورته او په نښلول شوې لړۍ کښې په نښه لرلې بڼه تعريف شوې ده۔
+\end{proof}
+
+پام وکړئ چې په ځانګړي ډول دا معنٰی لري: که
+$\Gamma \Proves !A$ او $!A \Proves !B$ وي، نو
+$\Gamma \Proves !B$۔ له دې څخه دا هم راځي چې که
+$!A_1, \dots, !A_n \Proves !B$ او د هر~$i$ دپاره
+$\Gamma \Proves !A_i$ وي، نو $\Gamma \Proves !B$۔
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ هله او يوازې هله ناسازګار دے چې د هر~$!A$ دپاره
+$\Gamma \Proves !A$ وي۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][axd][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][axd][ptn]{prop:incons} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}[تراکم]
+\ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item که $\Gamma \Proves !A$ وي، نو داسې متناهي فرعي سټ
+    $\Gamma_0 \subseteq \Gamma$ شته چې $\Gamma_0 \Proves !A$۔
+  \item که د~$\Gamma$ هر متناهي فرعي سټ سازګار وي، نو $\Gamma$
+    سازګار دے۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item که $\Gamma \Proves !A$ وي، نو د !!{formula}s داسې متناهي
+      لړۍ $!A_1$، \dots،~$!A_n$ شته چې $!A \ident !A_n$؛ او هر
+      $!A_i$ يا منطقي بديهي اصل وي، يا د~$\Gamma$ يو !!a{element}
+      وي، يا د مودوس پوننس له مخې له مخکښو !!{formula}s څخه راځي۔
+      $\Gamma_0$ د هغو $!A_i$ سټ ونيسئ چې په~$\Gamma$ کښې دي۔ بيا
+      همدا !!{derivation} له~$\Gamma_0$ څخه هم يو !!a{derivation}
+      دے، نو $\Gamma_0 \Proves !A$۔
+    \item دا د ځانګړي حالت~$!A \ident \lfalse$ دپاره د~(۱) مقابل
+      عکس دے۔
+\end{enumerate}
+\end{proof}
+
+\end{document}

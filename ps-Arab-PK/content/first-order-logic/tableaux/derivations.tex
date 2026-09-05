@@ -1,0 +1,96 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{der}}
+      {\olfileid{pl}{tab}{der}}
+
+\olsection{\usetoken{P}{tableau}}
+
+\begin{explain}
+و مو ويل چې فرض څه دے، او د استنتاج قاعدې مو ورکړې۔ له دغو څخه
+!!^{tableau}s په استقرايي ډول جوړېږي: هر !!{tableau} يا يوه يوازېنۍ
+څانګه ده چې له يوه يا زياتو فرضونو جوړه وي، يا پر يوه څانګه د
+استنتاج د کومې قاعدې په پلي کولو له بل !!a{tableau} څخه اخستل کېږي۔
+\end{explain}
+
+\begin{defn}[!!^{tableau}]
+د فرضونو~$\sFmla{S_1}{!A_1}$، \dots،
+$\sFmla{S_n}{!A_n}$ دپاره (چې هر~$S_i$ يا~$\True$ وي
+يا~$\False$) !!^a{tableau} د~!!{signed formula}s يوه متناهي ونه
+ده چې لاندې شرطونه پوره کوي:
+\begin{enumerate}
+\item د ونې تر ټولو پاسني $n$~!!{signed formula}s
+  $\sFmla{S_i}{!A_i}$ دي، يو تر بل لاندې۔
+\item په ونه کښې هر !!{signed formula} چې له فرضونو څخه نۀ وي، تر
+  ځان پاس په څانګه کښې پر !!a{signed formula} د يوې استنتاجي قاعدې
+  له سمې کارونې څخه راوتلے وي۔
+\end{enumerate}
+د~!!a{tableau} يوه څانګه هله او يوازې هله \emph{تړلې} ده چې
+$\sFmla{\True}{!A}$ او~$\sFmla{\False}{!A}$ دواړه ولري؛ که نۀ وي
+\emph{پرانيستې} ده۔ هغه !!^a{tableau} چې هره څانګه ئې تړلې وي، د
+خپلو فرضونو د سټ \emph{تړلے !!{tableau}} دے۔ که !!a{tableau} تړلے
+نۀ وي، يعنې لږ تر لږه يوه پرانيستې څانګه ولري، نو \emph{پرانيستے}
+دے۔
+\end{defn}
+
+\begin{ex}
+  د فرضونو هر سټ په يوازې ځان !!a{tableau} دے، خو په عام ډول به
+  تړلے نۀ وي۔ (په څرګند ډول يوازې هله تړلے دے چې فرضونه له مخکښې
+  د~!!{signed formula}s يوه جوړه
+  $\sFmla{\True}{!A}$ او~$\sFmla{\False}{!A}$ ولري۔)
+
+  له يوه !!a{tableau} (پرانيستي يا تړلي) څخه د کومې استنتاجي قاعدې
+  په پلي کولو يو نوے، لوے !!{tableau} اخستلے شو۔ قاعده په هغه کښې پر
+  !!a{signed formula}~$!A$ پلې کوو۔ دا قاعده به د هرې هغې څانګې په
+  پاے کښې يو يا زيات !!{signed formula}s ورزيات کړي چې د~$!A$ هغه
+  پېښه لري چې قاعده مو پرې پلې کړې ده۔
+
+  مثلاً فرض~$\sFmla{\True}{!A \land \lnot !A}$ ونيسئ۔ لاندې هغه
+  (پرانيستے) !!{tableau} دے چې يوازې له همدې فرض څخه جوړ دے:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss]
+    \end{tableau}{}
+  \end{center}
+  د~$\TRule{\True}{\land}$ قاعده پر فرض پلې کوو او ترې نوے
+  !!{tableau} اخلو۔ دا قاعده راکوي چې تابلو ته دوه نوې کرښې،
+  $\sFmla{\True}{!A}$ او~$\sFmla{\True}{\lnot !A}$، ورزياتې کړو:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]},
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+  کله چې !!{tableau}s ليکو، پلې شوې قاعدې په ښي لوري کښې ثبتوو
+  (مثلاً $\TRule{\True}{\land} 1$ دا معنٰی لري چې پر دې کرښه
+  !!{signed formula} د~$\TRule{\True}{\land}$ قاعدې د هغې کارونې
+  پايله ده چې د~$1$ پر کرښه !!{signed formula} ته شوې ده)۔ دا نوے
+  !!{tableau} اوس نور !!{signed formula}s لري، خو يوازې پر يوه
+  ($\sFmla{\True}{\lnot !A}$) قاعده پلې کولے شو (په دې حالت کښې
+  $\TRule{\True}{\lnot}$ قاعده)۔ له دې څخه لاندې تړلے
+  !!{tableau} راځي:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\formula{A} \land \lnot \formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\land}[1]}
+          [\sFmla{\True}{\lnot \formula{A}}, just={\TRule{\True}{\land}[1]}
+            [\sFmla{\False}{\formula{A}}, just={\TRule{\True}{\lnot}[3]}, close]
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+\end{ex}
+
+\end{document}
+

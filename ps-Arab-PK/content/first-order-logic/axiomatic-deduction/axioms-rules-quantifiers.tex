@@ -1,0 +1,33 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: axioms-rules-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qua}
+
+\olsection{د کميت ټاکونکو دپاره بديهي اصول او قاعدې}
+
+\begin{defn}[د کميت ټاکونکو بديهي اصول]
+پر کميت ټاکونکو واکمن \emph{بديهي اصول} د لاندې ټولو بڼو بېلګې دي:
+\begin{align}
+\ollabel{ax:q1} & \lforall[x][!B] \lif !B(t), \\
+\ollabel{ax:q2} & !B(t) \lif \lexists[x][!B].
+\end{align}
+د هر تړلي ترم~$t$ دپاره۔
+\end{defn}
+
+\begin{defn}[د کميت ټاکونکو قاعدې]
+\item که $!B \lif !A(a)$ له وړاندې په !!{derivation} کښې راغلے وي
+  او $a$ په~$\Gamma$ يا~$!B$ کښې نۀ راځي، نو
+  $!B \lif \lforall[x][!A(x)]$ سم استنتاجي ګام دے۔
+\item که $!A(a) \lif !B$ له وړاندې په !!{derivation} کښې راغلے وي
+  او $a$ په~$\Gamma$ يا~$!B$ کښې نۀ راځي، نو
+  $\lexists[x][!A(x)] \lif !B$ سم استنتاجي ګام دے۔
+\end{defn}
+
+له دغو دواړو هره يوه به په ``\QR'' لنډوو۔
+
+\end{document}

@@ -1,0 +1,51 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T17:03:49.830794+00:00",
+  "batch_id": "PS-B029-LINDENBAUM",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0131",
+      "source_path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+      "source_bytes": 4187,
+      "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+      "translation_bytes": 5596,
+      "translation_sha256": "dfa8ecccd10c63b6bcb9b024214faf4a14112cfbc43e0da2d482e709646af06d"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0131 lines 13-44",
+      "observation": "The completeness motivation, sentence enumeration and two-way stage definition were checked formula by formula.",
+      "treatment": "No source defect found; all indices, negations and consistency alternatives are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0131 lines 46-74",
+      "observation": "The stage-consistency contradiction and nested-stage induction were traced through every tag-conditioned proof-system reference and subset direction.",
+      "treatment": "No source defect found; all dependencies and induction cases are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0131 lines 76-87",
+      "observation": "The proof chooses the largest witnessing stage for an arbitrary finite subset, but an empty finite subset supplies no stage index and therefore has no largest one.",
+      "treatment": "Handled the empty subset immediately, then applied the source's maximum-index argument to the nonempty case, with an adjacent disclosure.",
+      "correction_id": "OLCOM-002"
+    },
+    {
+      "locator": "OLP-0131 lines 89-102",
+      "observation": "The finite-witness compactness conclusion and the final sentence-or-negation argument were checked.",
+      "treatment": "No further source defect found; all memberships and completeness scope are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-002",
+      "classification": "finite_subset_consistency_argument_omits_empty_case",
+      "source_locator": "completeness/lindenbaums-lemma.tex:76-87",
+      "target_line_1based": 80
+    }
+  ],
+  "conclusion": "One omitted empty-subset case is supplied and disclosed. Every remaining formula, index, stage inclusion, proof-system reference and completeness alternative is preserved."
+}

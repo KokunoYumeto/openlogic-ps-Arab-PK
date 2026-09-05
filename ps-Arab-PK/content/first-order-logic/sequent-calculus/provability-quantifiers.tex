@@ -1,0 +1,59 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qpr}
+\olsection{\usetoken{S}{derivability} او سورونه}
+
+\begin{explain}
+  د بشپړتيا قضيه دا هم غواړي چې د سېکوېنټ حساب قاعدې په دې برخه
+  کښې د~$\Proves$ په اړه ثابت شوي حقيقتونه راکړي۔
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} که $c$ داسې ثابت وي چې په
+$\Gamma$ يا $!A(x)$ کښې نۀ راځي، او $\Gamma \Proves !A(c)$ وي، نو
+$\Gamma \Proves \lforall[x][!A(x)]$۔
+\end{thm}
+
+\begin{proof}
+د کوم متناهي $\Gamma_0 \subseteq \Gamma$ دپاره
+$\Gamma_0 \Sequent !A(c)$ د $\Log{LK}$-!!{derivation} نوم~$\pi_0$
+کېږدئ۔ د $\RightR{\lforall}$ استنتاج په ورزياتولو د
+$\Gamma_0 \Sequent \lforall[x][!A(x)]$ !!a{derivation} ترلاسه کوو؛
+ځکه $c$ په $\Gamma$ يا $!A(x)$ کښې نۀ راځي، نو د ځانګړي متغير شرط
+پوره کېږي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{سېکوېنټ
+  $!A(t) \Sequent \lexists[x][!A(x)]$ !!{derivable} دے:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$!A(t) \fCenter \lexists[x][!A(x)]$
+    \end{prooftree}}{}
+\tagitem{prvAll}{سېکوېنټ
+  $\lforall[x][!A(x)] \Sequent !A(t)$ !!{derivable} دے:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)] \fCenter !A(t)$
+    \end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

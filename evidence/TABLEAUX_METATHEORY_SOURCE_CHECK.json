@@ -1,0 +1,129 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T02:58:12.214836+00:00",
+  "batch_id": "PS-B020-TABLEAUX-METATHEORY",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0105",
+      "source_path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_bytes": 5521,
+      "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+      "translation_bytes": 6913,
+      "translation_sha256": "8ab23d01f2d1da50e6ec403267d7462c66899edfc70465f8420c464504205fbc"
+    },
+    {
+      "unit_id": "OLP-0106",
+      "source_path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_bytes": 6120,
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "translation_bytes": 8075,
+      "translation_sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892"
+    },
+    {
+      "unit_id": "OLP-0107",
+      "source_path": "content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_bytes": 6298,
+      "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+      "translation_bytes": 6950,
+      "translation_sha256": "9dc6b6726795f33bbd447de806435686b7a7519de1f07cad31fc2eb19b7bd549"
+    },
+    {
+      "unit_id": "OLP-0108",
+      "source_path": "content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_bytes": 3060,
+      "source_sha256": "0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f",
+      "translation_bytes": 3416,
+      "translation_sha256": "ce2b700cf2df5dee6a6f841638d64c58af141021c3b10bbad56ab54a3ede1a5a"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0105 source lines 104-105",
+      "observation": "The individual formulas D_1 through D_m are said to end with D_m subseteq Gamma, even though the display uses each D_i as a premise selected from Gamma.",
+      "treatment": "Changed only the final relation to membership and disclosed the repair.",
+      "correction_id": "OLTAB-004"
+    },
+    {
+      "locator": "OLP-0105 complete section",
+      "observation": "Definitions and every proof were checked for finite-premise scope, sign direction, subset direction, cut branches, attachment direction and closure.",
+      "treatment": "No other source defect found; all formulas and the complete tableau are retained after whitespace normalization.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0106 source lines 25-31",
+      "observation": "Gamma_1 is defined with endpoint C_n, while its displayed closed tableau and every later reference end at C_m.",
+      "treatment": "Changed only the defining endpoint to m and disclosed the repair.",
+      "correction_id": "OLTAB-005"
+    },
+    {
+      "locator": "OLP-0106 source lines 85-87",
+      "observation": "A standalone backslash appears after 'such that' immediately before a displayed formula.",
+      "treatment": "Removed the nonsemantic control character and disclosed the repair.",
+      "correction_id": "OLTAB-006"
+    },
+    {
+      "locator": "OLP-0106 source lines 90-93",
+      "observation": "The prose says true-negation is applied to false A, although the proof has just inserted true not-A and needs false A as the rule conclusion.",
+      "treatment": "Named true not-A as the operand and disclosed the repair.",
+      "correction_id": "OLTAB-007"
+    },
+    {
+      "locator": "OLP-0106 all remaining proof transformations",
+      "observation": "Both directions of the negation/inconsistency equivalence and both cut combinations were checked for rule operand, result sign, branch side, dependency removal and reconstructed closure.",
+      "treatment": "No other source defect found; every formula and proof dependency is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0107 source lines 43-54 and 106-117",
+      "observation": "Eight signed-formula calls nest formula A or B inside the True or False macro and omit the boundary before the formula argument.",
+      "treatment": "Restored only the missing brace boundary in each occurrence and disclosed the repair.",
+      "correction_id": "OLTAB-008"
+    },
+    {
+      "locator": "OLP-0107 all eight closed tableaux",
+      "observation": "Every tree was checked for sign, formula, rule label, justification index, branch topology and closure after applying the eight recorded macro repairs.",
+      "treatment": "No other source defect found; all tree content is retained after whitespace normalization.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0108 complete section",
+      "observation": "The strong-generalization construction and both quantified derivability tableaux were checked for variable freshness, uniform substitution, closed-term scope, sign direction, rule label and closure.",
+      "treatment": "No source defect found; all formulas, binders and tableaux are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLTAB-004",
+      "classification": "finite_members_malformed_as_subset_of_gamma",
+      "source_locator": "tableaux/proof-theoretic-notions.tex:104-105",
+      "target_line_1based": 110
+    },
+    {
+      "correction_id": "OLTAB-005",
+      "classification": "finite_subset_endpoint_index_mismatch",
+      "source_locator": "tableaux/provability-consistency.tex:25-31",
+      "target_line_1based": 40
+    },
+    {
+      "correction_id": "OLTAB-006",
+      "classification": "stray_standalone_backslash_after_such_that",
+      "source_locator": "tableaux/provability-consistency.tex:85-87",
+      "target_line_1based": 106
+    },
+    {
+      "correction_id": "OLTAB-007",
+      "classification": "negation_rule_applied_to_wrong_signed_formula_in_prose",
+      "source_locator": "tableaux/provability-consistency.tex:90-93",
+      "target_line_1based": 108
+    },
+    {
+      "correction_id": "OLTAB-008",
+      "classification": "signed_formula_calls_missing_sign_formula_argument_boundary",
+      "source_locator": "tableaux/provability-propositional.tex:43-54,106-117",
+      "target_line_1based": 74
+    }
+  ],
+  "conclusion": "Five localized source defects are repaired and disclosed. All remaining OLP-0105–0108 formulas, proof dependencies, finite-premise conditions, quantified side conditions and tableau trees are preserved."
+}

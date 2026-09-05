@@ -1,0 +1,79 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-05T00:54:55.397743+00:00",
+  "batch_id": "PS-B017-ND-SOUNDNESS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0095",
+      "source_path": "content/first-order-logic/natural-deduction/soundness.tex",
+      "source_bytes": 13016,
+      "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+      "translation_bytes": 15848,
+      "translation_sha256": "44333900a5c26fd626a8ee6debcd5aa07a56f5d02d9c7be99c38e5138049e721"
+    },
+    {
+      "unit_id": "OLP-0096",
+      "source_path": "content/first-order-logic/natural-deduction/identity.tex",
+      "source_bytes": 3829,
+      "source_sha256": "2f301d8fc8aa78831e17b9d14042c97218795d400a350b0726be3776eed17575",
+      "translation_bytes": 4209,
+      "translation_sha256": "f02d9f565e5b5eb1ad30fd8e2e42cf86e94b18d96dbd21a2583a08e09f5b7d6b"
+    },
+    {
+      "unit_id": "OLP-0097",
+      "source_path": "content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_bytes": 1606,
+      "source_sha256": "426ee50b639d92c730c70912bfda4fdf34c99e0e33097dc253cb196a01af7e7d",
+      "translation_bytes": 1903,
+      "translation_sha256": "f9415a4e8b46f2572d86041f280dfd4e0efb372dd3b87c57bdf761b4591ef3a4"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0095 source lines 211-213",
+      "observation": "The introductory list of all multi-premise rules omits negation elimination, although that rule has two premises and appears in the following enumeration as an exercise.",
+      "treatment": "Restored negation elimination to the list and disclosed the repair immediately below it.",
+      "correction_id": "OLND-006"
+    },
+    {
+      "locator": "OLP-0095 complete induction proof",
+      "observation": "The assumption base, each displayed unary case, the FOL structure-variation argument, each displayed multi-premise case, delegated exercises and both corollaries were checked together.",
+      "treatment": "No other mathematical source defect found; every tree, formula, tag and cross-reference is preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0095 universal-elimination exercise",
+      "observation": "The source uses the standard universal symbol in one prose rule label rather than the OpenLogic lforall macro used elsewhere.",
+      "treatment": "Preserved as an equivalent notation choice, consistent with earlier existential and universal prose-label decisions.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0096 quantified uniqueness example",
+      "observation": "The source states that two auxiliary derivations are required, prints only the a=c branch, and then cites both a=c and b=c for equality elimination.",
+      "treatment": "Preserved the deliberate compression; the analogous b=c branch and final assembly were not invented.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0096 equality-elimination conclusion",
+      "observation": "From a=c and b=c, the bidirectional equality-elimination rules do support a=b by substituting b for c in a=c.",
+      "treatment": "No source defect found; the stated conclusion is semantically and proof-theoretically valid.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0097 complete proposition",
+      "observation": "Reflexivity validity and the equality-elimination soundness case were checked for closed terms, denotations, assignment scope and extensional substitution.",
+      "treatment": "No source defect found; the proposition and full proof are preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLND-006",
+      "classification": "multi_premise_rule_list_omits_negation_elimination",
+      "source_locator": "natural-deduction/soundness.tex:211-213",
+      "target_line_1based": 221
+    }
+  ],
+  "conclusion": "One incomplete prose list is repaired and disclosed. All remaining OLP-0095–0097 proofs, formulas, rule trees and intentional source compression are preserved."
+}

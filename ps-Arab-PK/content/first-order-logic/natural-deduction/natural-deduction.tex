@@ -1,0 +1,55 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{ntd}{فطري استنتاج}}
+      {\olchapter{pl}{ntd}{فطري استنتاج}}
+
+\begin{editorial}
+دا څپرکے د ګېنتڅن/پراويڅ په طريقه د فطري استنتاج يو نظام وړاندې
+کوي۔
+  
+د ثبوت د يوه نظام په توګه له فطري استنتاج سره اړوند مواد د شاملولو
+يا ايستلو دپاره د~\texttt{prfND} ټګ وکاروئ۔
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

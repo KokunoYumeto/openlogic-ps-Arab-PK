@@ -1,0 +1,105 @@
+{
+  "schema": "openlogic-translation-decision-qa/1.0.0",
+  "status": "PASS",
+  "normative_schema": {
+    "path_or_uri": "evidence/translation-decision.schema.json",
+    "bytes": 10787,
+    "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  "canonical_register": {
+    "path_or_uri": "evidence/DECISIONS.json",
+    "bytes": 38216212,
+    "sha256": "e8c25754cdce917183760871dde1f2078c4a16654ccd5ca75093865fb381e3e8"
+  },
+  "counts": {
+    "decisions": 179,
+    "occurrences": 9084,
+    "terminology_decisions": 95,
+    "source_correction_decisions": 79,
+    "priority_decisions": 89,
+    "reader_pages_available": 3783,
+    "reader_pages_pending": 5301
+  },
+  "validation": {
+    "json_schema_draft_2020_12": "PASS",
+    "unique_decision_ids": "PASS",
+    "unique_occurrence_ids": "PASS",
+    "one_paired_occurrence_per_decision_semantic_unit": "PASS",
+    "canon_use_term_segment_coverage": "PASS",
+    "source_target_file_hashes": "PASS",
+    "source_target_line_and_byte_spans": "PASS",
+    "alignment_segment_bytes": "PASS",
+    "evidence_reference_hashes": "PASS",
+    "markdown_csv_json_agreement": "PASS",
+    "pending_pages_are_explicit_and_never_guessed": "PASS"
+  },
+  "projection_artifacts": {
+    "START_HERE.md": {
+      "path_or_uri": "evidence/START_HERE.md",
+      "bytes": 1403,
+      "sha256": "549578504bf9f4b10d8088cd0eedafae05ff07754b719504fdb817118ad7a640"
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "path_or_uri": "evidence/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 3223798,
+      "sha256": "009383668452a60c47cdb693b1da02a6d7a7d2e81dcb06d80d494331adc70f77"
+    },
+    "PRIORITY_REVIEW.md": {
+      "path_or_uri": "evidence/PRIORITY_REVIEW.md",
+      "bytes": 2605343,
+      "sha256": "5cbd39df9837f00b73b525c5abd8e9be0fcbfcba8433c2861d8153da439f1919"
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "path_or_uri": "evidence/DECISION_OCCURRENCES.csv",
+      "bytes": 18292890,
+      "sha256": "2f4b5b07020ee0df99d03dafcd730fc3162e9304180a8cddec1fc34ba28c9dd3"
+    }
+  },
+  "input_artifacts": {
+    "review": {
+      "path_or_uri": "evidence/EXPERT_REVIEW_LOG.jsonl",
+      "bytes": 1257812,
+      "sha256": "134cd4492506c4ad11c6b1ac142d6ffd3fbe60b05406bcc52956c1079f9e2ecf"
+    },
+    "alignment": {
+      "path_or_uri": "evidence/ALIGNMENT.jsonl",
+      "bytes": 2594714,
+      "sha256": "d00292a923cb73abdf91eb789ec42a96db4c5a0c32227bea1565e48c0baa5628"
+    },
+    "canon_use": {
+      "path_or_uri": "evidence/SEGMENT_CANON_USE.jsonl",
+      "bytes": 3365967,
+      "sha256": "8b255fbd4cc87bf05c1d8d6412b77321c3f51fdeee8207bb91d66ceadea5b3df"
+    },
+    "manifest": {
+      "path_or_uri": "evidence/SOURCE_MANIFEST.jsonl",
+      "bytes": 356467,
+      "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+    },
+    "canon_sources": {
+      "path_or_uri": "evidence/CANON_SOURCES.jsonl",
+      "bytes": 4381,
+      "sha256": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931"
+    },
+    "canon_passages": {
+      "path_or_uri": "evidence/CANON_PASSAGES.jsonl",
+      "bytes": 48711,
+      "sha256": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f"
+    },
+    "corrections": {
+      "path_or_uri": "evidence/SOURCE_CORRECTIONS.json",
+      "bytes": 130207,
+      "sha256": "afd1ce35dc61eec352c25a3407ad70ef8076104e486dd3569aff1bc7c0cd0b84"
+    },
+    "terms": {
+      "path_or_uri": "evidence/TERM_DECISIONS.jsonl",
+      "bytes": 55588,
+      "sha256": "4f49ab00e94a45a95ce9d8acaf1af321fc3630d04626dbef39169099b844ca51"
+    },
+    "qa": {
+      "path_or_uri": "evidence/QA.json",
+      "bytes": 289851,
+      "sha256": "13760f9e75ddc5fe834c335e59251d2243dbcc10dec40cff727ed237ed8816a9"
+    }
+  }
+}

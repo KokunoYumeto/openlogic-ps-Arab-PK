@@ -1,0 +1,310 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{pro}}
+      {\olfileid{pl}{ntd}{pro}}
+
+\olsection{د \usetoken{P}{derivation} بېلګې}
+
+\begin{ex}
+راځئ چې د !!{sentence}~$(!A \land !B) \lif !A$ يو !!a{derivation}
+ورکړو۔
+
+په پيل کښې مطلوبه پايله د !!{derivation} په لاندې برخه کښې ليکو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+
+اوس بايد معلومه کړو چې د کوم ډول استنتاج پايله د دې بڼې
+!!a{sentence} کېدے شي۔ د پايلې !!{main operator}~$\lif$ دے، نو هڅه
+کوو چې د~\Intro{\lif} قاعدې په کارولو پايلې ته ورسېږو۔ غوره ده چې
+اړوندې فرضيې وليکو او د پرمختګ پر مهال د استنتاج قاعدو ته نښانونه
+ورکړو، څو د ثبوت په پای کښې په اسانۍ ووينو چې ټولې فرضيې
+!!{discharged} شوې دي که نۀ۔
+\begin{prooftree}
+\AxiomC{$\Discharge{!A \land !B}{1}$}
+\DeduceC{$!A$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+
+اوس بايد له فرضيې~$!A \land !B$ څخه تر~$!A$ پورې پړاوونه ډک کړو۔
+ځکه چې يوازې له يوه رابط~$\land$ سره کار لرو، بايد د~$\land$ د
+ايستلو قاعده وکاروو۔ له دې څخه لاندې ثبوت لاس ته راځي:
+\begin{prooftree}
+\AxiomC{$\Discharge{!A \land !B}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(!A\land !B) \lif !A$}
+\end{prooftree}
+اوس د~$(!A \land !B) \lif !A$ يو سم !!{derivation} لرو۔
+\end{ex}
+
+\begin{ex}
+اوس راځئ چې د~$(\lnot !A \lor !B) \lif (!A \lif !B)$ يو
+!!a{derivation} ورکړو۔
+
+په پيل کښې مطلوبه پايله د !!{derivation} په لاندې برخه کښې ليکو۔
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+د هغې منطقي قاعدې د موندلو دپاره چې دا پايله راکولے شي، په پايله
+کښې منطقي رابطونو~$\lnot$، $\lor$ او~$\lif$ ته ګورو۔ اوس يوازې د
+$\lif$ لومړۍ پېښه راته مهمه ده، ځکه همدا د وروستۍ پايلې د
+!!{sentence}~!!{main operator} دے؛ $\lnot$، $\lor$ او د~$\lif$
+دويمه پېښه د بل رابط په ساحه کښې دي، نو وروسته به ئې وڅېړو۔ له دې
+امله د~\Intro{\lif} له قاعدې پيل کوو۔ سمه کارونه ئې بايد داسې وي:
+\textbf{د ژباړې د نسخې سمون (OLND-004):} سرچينه دلته د فطري
+استنتاج وروستۍ جمله “په وروستي سېکوېنټ کښې” بولي؛ دلته “وروستۍ
+پايله” راوړل شوې، ځکه دا ونه د جملو ثبوت دے او سېکوېنټ نۀ لري۔
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\DeduceC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+له دې وروسته د دوام دوه لارې لرو۔ يا له لاندې څخه پورته کار روان
+ساتلے او د~\Intro{\lif} بله کارونه لټولے شو، يا له پاسه لاندې کار
+کولے او د~\Elim{\lor} قاعده کارولے شو۔ دويمه لار اخلو۔ فرضيه
+$\lnot !A \lor !B$ د~\Elim{\lor} د تر ټولو کيڼې مقدمې په توګه
+کاروو۔ د~\Elim{\lor} د سمې کارونې دپاره نورې دوه مقدمې بايد له
+پايلې~$!A \lif !B$ سره يو شان وي، خو هره يوه په خپل وار له بلې
+فرضیې، يعنې د~$\lnot !A \lor !B$ له دوو بېلندونو څخه له يوه،
+رايستل کېدے شي۔ نو !!{derivation} به داسې وي:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\DeduceC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}$}
+\DeduceC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+
+په ښي لوري دواړو څانګو کښې غواړو $!A \lif !B$~!!{derive} کړو؛
+غوره لار ئې د~\Intro{\lif} کارول دي۔
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}, \Discharge{!A}{3}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}, \Discharge{!A}{4}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+
+د !!{derivation} په دوو تشو برخو کښې له~$\lnot !A$ او~$!A$ څخه،
+او له~$!A$ او~$!B$ څخه، د~$!B$ !!{derivation}s غواړو۔ لومړۍ برخه
+اخلو۔ $\lnot !A$ او~$!A$ د~\Elim{\lnot} دوه مقدمې دي:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DeduceC{$!B$}
+\end{prooftree}
+د~\FalseInt په کارولو $!B$ د پايلې په توګه اخستلے او څانګه بشپړولے
+شو۔
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}, \Discharge{!A}{4}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+\textbf{د ژباړې د نسخې سمون (OLND-003):} سرچينه په دې بشپړه ونه
+کښې له نفي شوې مقدمې او مثبتې مقدمې څخه کاذبۍ ته استنتاج د کاذبۍ
+د داخلولو په نښان ښيي؛ د مخکښې جزوي ونې او ټاکلې قاعدې سره سم دلته
+د نفي ايستلو نښان راوړل شوے دے۔
+
+اوس تر ټولو ښۍ څانګې ته ګورو۔ دلته بايد پوه شو چې د !!{derivation}
+تعريف \emph{د فرضيو ايستل روا بولي} خو \emph{لازمي ئې نۀ بولي}۔ په
+بله وينا، که له فرضيو~$!A$ او~$!B$ څخه د يوې په کارولو $!B$ راوباسو
+او بله و نۀ کاروو، دا روا ده۔ له~$!B$ څخه د~$!B$~!!{derive} کول
+څرګند دي: $!B$ په يوازې ځان داسې !!a{derivation} دے او هېڅ استنتاج
+نۀ غواړي۔ نو فرضيه~$!A$ ساده ړنګولے شو۔
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
+\AxiomC{$\Discharge{\lnot !A}{2}$}
+\AxiomC{$\Discharge{!A}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!B}{2}$}
+\RightLabel{\Intro{\lif}}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Intro{\lif}}{1} 
+\UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
+\end{prooftree}
+پام وکړئ چې په بشپړ !!{derivation} کښې د تر ټولو ښي اړخ
+\Intro{\lif} استنتاج په حقيقت کښې هېڅ فرضيه نۀ باسي۔
+\end{ex}
+
+\begin{ex}
+تر اوسه مو د~\FalseCl{} قاعدې ته اړتيا نۀ ده پېښه شوې۔ دا ځکه
+ځانګړې ده چې داسې فرضيه ايستل راکوي چې د قاعدې د پايلې فرعي
+!!{formula} نۀ وي۔ دا له~\FalseInt{} قاعدې سره نژدې تړلې ده۔ په
+حقيقت کښې \FalseInt{} د~\FalseCl{} قاعدې ځانګړے حالت دے---د
+“شهودي منطق” په نامه يو منطق شته چې يوازې \FalseInt{} پکې روا دے۔
+کله چې بله هېڅ لار کار نۀ کوي، \FalseCl{} وروستۍ وسيله ده۔ مثلاً
+فرض کړئ غواړو $!A \lor \lnot !A$~!!{derive} کړو۔ زموږ عادي تګلاره
+به دا وي چې د~$!A \lor \lnot !A$ د~$\Intro{\lor}$ په کارولو
+!!{derive} کړو۔ خو دا
+غواړي چې له هېڅ فرضیې پرته يا~$!A$ يا~$\lnot !A$~!!{derive} کړو،
+او دا نۀ کېږي۔ \FalseCl{} مو ژغوري!
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+اوس له~$\lnot(!A \lor \lnot !A)$ څخه د~$\lfalse$ يو
+!!a{derivation} لټوو۔ ځکه $\lfalse$ د~$\Elim{\lnot}$ پايله ده، نو
+کېدے شي دا هڅه وکړو:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+د~$\lnot !A$ د !!a{derivation} موندلو تګلاره د~$\Intro{\lnot}$
+کارونه غواړي:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}, \Discharge{!A}{2}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+دلته $\lfalse$ په اسانۍ اخستلے شو: $\Elim{\lnot}$ پر
+$\lnot(!A \lor \lnot !A)$ او~$!A \lor \lnot !A$ کاروو؛ دويمه
+جمله زموږ له نوې فرضيې~$!A$ څخه د~$\Intro{\lor}$ په وسيله راځي:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{!A}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+په ښي لوري کښې همدا تګلاره کاروو، خو $!A$ د~\FalseCl په وسيله
+اخلو:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{!A}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot !A$}
+  \AxiomC{$\Discharge{\lnot(!A \lor \lnot !A)}{1}$}
+  \AxiomC{$\Discharge{\lnot !A}{3}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$!A \lor \lnot !A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{3}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A \lor \lnot !A$}
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+داسې !!{derivation}s ورکړئ چې لاندې وښيي:
+\begin{enumerate}
+\item $!A \land (!B \land !C) \Proves (!A \land !B) \land !C$.
+\item $!A \lor (!B \lor !C) \Proves (!A \lor !B) \lor !C$.
+\item $!A \lif (!B \lif !C) \Proves !B \lif (!A \lif !C)$.
+\item $!A \Proves \lnot\lnot !A$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+داسې !!{derivation}s ورکړئ چې لاندې وښيي:
+\begin{enumerate}
+\item $(!A \lor !B) \lif !C \Proves !A \lif !C$.
+\item $(!A \lif !C) \land (!B \lif !C) \Proves (!A \lor !B) \lif !C$.
+\item $\Proves \lnot(!A \land \lnot !A)$.
+\item $!B \lif !A \Proves \lnot !A \lif \lnot !B$.
+\item $\Proves (!A \lif \lnot !A) \lif \lnot !A$.
+\item $\Proves \lnot(!A \lif !B) \lif \lnot !B$.
+\item $!A \lif !C \Proves \lnot (!A \land \lnot !C)$.
+\item $!A \land \lnot !C \Proves \lnot (!A \lif !C)$.
+\item $!A \lor !B, \lnot !B \Proves !A$.
+\item $\lnot !A \lor \lnot !B \Proves \lnot(!A \land !B)$.
+\item $\Proves (\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)$.
+\item $\Proves \lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+داسې !!{derivation}s ورکړئ چې لاندې وښيي:
+\begin{enumerate}
+\item $\lnot(!A \lif !B) \Proves !A$.
+\item $\lnot(!A \land !B) \Proves \lnot !A \lor \lnot !B$.
+\item $!A \lif !B \Proves \lnot !A \lor !B$.
+\item $\Proves \lnot \lnot !A \lif !A$.
+\item $!A \lif !B, \lnot !A \lif !B \Proves !B$.
+\item $(!A \land !B) \lif !C \Proves (!A \lif !C) \lor (!B \lif !C)$.
+\item $(!A \lif !B) \lif !A \Proves !A$.
+\item $\Proves (!A \lif !B) \lor (!B \lif !C)$.
+\end{enumerate}
+(دا ټول د~$\FalseCl$ قاعده غواړي۔)
+\end{prob}
+
+\end{document}

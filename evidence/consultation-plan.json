@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B010-SEQUENT-RULES",
-  "status": "cumulative-sequent-rules-drafts; functions reader prepared, guarded build pending a fresh attempt",
+  "batch_id": "PS-B029-LINDENBAUM",
+  "status": "cumulative-Lindenbaum-draft; proof-systems reader accepted after guarded deterministic replay and 108-page visual review; v0.4.0 publication preparation in progress",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -1402,6 +1402,1314 @@
         "TERM-SEQUENT-RULES"
       ],
       "scope": "Complete structural-rule motivation and exact left/right weakening, contraction and exchange trees retained, together with the double-line convention and the cut rule with its reuse-and-combination role."
+    },
+    "OLP-0074": {
+      "batch_id": "PS-B011-SEQUENT-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-TREE"
+      ],
+      "scope": "Complete inductive explanation and formal LK-derivation definition retained, including finite-tree orientation, initial and end sequents, rule-instance premises and conclusions, and both worked constructions through weakening, exchange and conjunction-right."
+    },
+    "OLP-0075": {
+      "batch_id": "PS-B011-SEQUENT-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-TREE",
+        "TERM-PROP-SYNTAX"
+      ],
+      "scope": "All four propositional worked examples and all three exercise sets retained: backward rule matching, branch completion, failed-path diagnosis, contraction in excluded middle, every proof tree and every exercise sequent. OLSQ-001 and OLSQ-002 disclose two deterministic source repairs."
+    },
+    "OLP-0076": {
+      "batch_id": "PS-B011-SEQUENT-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-TREE",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Complete quantified worked example and both exercise sets retained, including eigenvariable-sensitive rule ordering, shared witness choice, every intermediate and final proof tree, the final freshness check and all quantified exercise sequents."
+    },
+    "OLP-0077": {
+      "batch_id": "PS-B012-SEQUENT-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-FINITE"
+      ],
+      "scope": "Complete proof-theoretic definitions retained: theoremhood, derivability from a finite subset and sequence, structural-rule invariance, consistency, reflexivity, monotonicity, cut-based transitivity, explosion exercise and both compactness clauses. OLSQ-003 repairs the copied editorial system name."
+    },
+    "OLP-0078": {
+      "batch_id": "PS-B012-SEQUENT-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEQUENT-RULES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All four derivability-and-consistency propositions, their finite witnesses, cut derivations, negation equivalence, explicit contradiction result, exhaustive case result and the exercise are retained."
+    },
+    "OLP-0079": {
+      "batch_id": "PS-B012-SEQUENT-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROP-SYNTAX",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH"
+      ],
+      "scope": "All conjunction, disjunction and conditional derivability propositions and proof trees are retained, including inconsistency, modus ponens and the double-line structural convention. OLSQ-004 supplies the missing common antecedent context in conjunction-right."
+    },
+    "OLP-0080": {
+      "batch_id": "PS-B012-SEQUENT-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SEQUENT-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Strong generalization with its freshness condition and both existential-introduction and universal-instantiation derivability facts are retained, including tags and exact proof trees."
+    },
+    "OLP-0081": {
+      "batch_id": "PS-B013-SEQUENT-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-SEMANTICS",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "The definition of valid sequent and the complete induction-on-inferences proof are retained, including every unary rule, eigenvariable model variation, cut and all binary connective rules. OLSQ-005 repairs the final sequent in the left-conjunction case; OLSQ-006 repairs the right cut premise notation."
+    },
+    "OLP-0082": {
+      "batch_id": "PS-B013-SEQUENT-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION",
+        "TERM-SEQUENT-RULES",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "The equality initial sequent, both equality-rule orientations, substitutability derivation, symmetry, transitivity and both exercises are retained with exact proof trees and closed-term restrictions."
+    },
+    "OLP-0083": {
+      "batch_id": "PS-B013-SEQUENT-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION",
+        "TERM-SEQUENT-RULES",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "The validity of equality initial sequents and the semantic-preservation argument for the displayed equality-rule orientation are retained, including closed-term and assignment-independence conditions. The source leaves the symmetric orientation implicit; the translation preserves that scope."
+    },
+    "OLP-0084": {
+      "batch_id": "PS-B014-ND-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-NATURAL-DEDUCTION"
+      ],
+      "scope": "The complete chapter driver, FOL/PL branch topology, proof-system tag instruction, all fourteen imports and end hook are retained. The Gentzen/Prawitz style statement is translated without adding a historical claim."
+    },
+    "OLP-0085": {
+      "batch_id": "PS-B014-ND-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Assumptions, premises, conclusions, paired introduction/elimination rules, labeled discharge and the all-connective convention are retained. OLND-001 repairs the one inconsistent reference to sentence-tree nodes as sequents."
+    },
+    "OLP-0086": {
+      "batch_id": "PS-B014-ND-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "Every propositional introduction and elimination tree is retained, including both conjunction and disjunction variants, three-premise disjunction elimination, negation, falsehood, classical contradiction and optional zero-occurrence discharge."
+    },
+    "OLP-0087": {
+      "batch_id": "PS-B014-ND-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "All four quantifier rules, closed-term restrictions, exact eigenvariable scopes, substitution explanation, counterexample derivation and sentence-closure consequence are retained. OLND-002 repairs the overbroad prose summary that contradicts the displayed auxiliary premises."
+    },
+    "OLP-0088": {
+      "batch_id": "PS-B014-ND-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "The inductive and finite-tree accounts of derivation, all three defining conditions, open versus discharged assumptions, derivability notation, rule-schema substitutions, reordered conjunctions and optional discharge examples are retained."
+    },
+    "OLP-0089": {
+      "batch_id": "PS-B015-ND-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All three worked propositional derivations and all three exercise sets are retained: backward main-operator selection, disjunction elimination branches, optional zero discharge, explosion, classical contradiction and the completed excluded-middle tree. OLND-003 repairs one wrong rule label and OLND-004 repairs copied sequent terminology."
+    },
+    "OLP-0090": {
+      "batch_id": "PS-B015-ND-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "All three quantified worked derivations and both exercise sets are retained, including eigenvariable-first ordering, the existential-elimination auxiliary branch, closed-term universal instantiation, open assumptions and every final freshness check. The source's equivalent standard existential symbol in one prose rule label is preserved."
+    },
+    "OLP-0091": {
+      "batch_id": "PS-B016-ND-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEMANTICS",
+        "TERM-FINITE"
+      ],
+      "scope": "Theoremhood, derivability by open assumptions, consistency, reflexivity, monotonicity, substitution-based transitivity, finite-set notation, explosion equivalences and both compactness clauses are retained with their exact proof trees and conditional problem references."
+    },
+    "OLP-0092": {
+      "batch_id": "PS-B016-ND-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All four derivability-and-consistency propositions, both directions of the negation characterization, the exercise, explicit inconsistency and exhaustive inconsistent extensions are retained. OLND-005 removes one duplicated rule label without changing the discharge step."
+    },
+    "OLP-0093": {
+      "batch_id": "PS-B016-ND-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Every conjunction, disjunction and conditional derivability fact is retained with all proof trees, contradiction branches, explosion, modus ponens and the zero-discharge conditional-introduction case."
+    },
+    "OLP-0094": {
+      "batch_id": "PS-B016-ND-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Strong generalization with freshness outside Gamma and A(x), existential introduction and universal elimination are retained, including tag topology and exact one-step rule trees."
+    },
+    "OLP-0095": {
+      "batch_id": "PS-B017-ND-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEMANTICS",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "The full induction on derivation length is retained: the assumption base, every displayed unary and multi-premise rule case, FOL structure variation for universal introduction, all delegated exercise cases, weak soundness and the satisfiable-to-consistent contrapositive. OLND-006 restores negation elimination to the prose list of multi-premise rules because the following enumeration itself includes that binary rule."
+    },
+    "OLP-0096": {
+      "batch_id": "PS-B017-ND-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "Both equality rules, closed-term restriction, Leibniz substitution, symmetry and transitivity exercise, the complete quantified backward setup, existential-elimination branch and all final exercises are retained. The source explicitly develops only the a=c branch and describes the analogous b=c branch; that deliberate compression remains unexpanded."
+    },
+    "OLP-0097": {
+      "batch_id": "PS-B017-ND-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Soundness of equality introduction and elimination is retained with the closed-term restriction, two induction-hypothesis premises, denotation equality, arbitrary assignment and extensional substitution equivalences."
+    },
+    "OLP-0098": {
+      "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "The signed analytic tableaux driver retains every import, tag branch and end hook. OLTAB-001 repairs only the copied proof-system name in the editorial tag instruction."
+    },
+    "OLP-0099": {
+      "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Signed formulas, truth signs, downward tree orientation, assumptions, main-operator rule pairs, branching, arbitrary earlier branch application, closure and the root condition for a tableau of A are retained."
+    },
+    "OLP-0100": {
+      "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROP-SYNTAX",
+        "TERM-SEQUENT-RULES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All eight signed connective rules and the cut rule are retained with exact signs, order, branch separators and nonbranching line continuations. Cut admissibility is stated without strengthening it."
+    },
+    "OLP-0101": {
+      "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-SEMANTICS",
+        "TERM-PREDICATE"
+      ],
+      "scope": "All four quantified signed rules, closed-term restrictions, both eigenvariable conditions, substitution convention, allowed repeated-term example, forbidden fresh-constant example and unsound closed tableau are retained exactly."
+    },
+    "OLP-0102": {
+      "batch_id": "PS-B018-TABLEAUX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "The inductive finite-tree definition, ordered assumptions, open and closed branches, rule-extension operation, line-number justification convention and complete contradiction example are retained with exact tree syntax."
+    },
+    "OLP-0103": {
+      "batch_id": "PS-B019-TABLEAUX-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "All three propositional worked searches, fourteen successive tree states, global checkmark discipline, repeated rule use across branches, the alternative rule order and all twenty-four exercises are retained. OLTAB-002 separates a malformed combined signed-formula argument into the two intended true assumptions."
+    },
+    "OLP-0104": {
+      "batch_id": "PS-B019-TABLEAUX-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-SEMANTICS",
+        "TERM-PREDICATE"
+      ],
+      "scope": "All three quantified worked searches, fifteen successive tree states, eigenvariable-first ordering, repeatable closed-term instantiation, deferred branching and both exercise sets are retained. OLTAB-003 corrects the one prose line reference to the false-existential node used by its named rule and final tree."
+    },
+    "OLP-0105": {
+      "batch_id": "PS-B020-TABLEAUX-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEMANTICS",
+        "TERM-FINITE",
+        "TERM-SEQUENT-RULES"
+      ],
+      "scope": "Tableau derivability and consistency, finite-premise closure, reflexivity, monotonicity, transitivity by cut, inconsistency and compactness are retained. OLTAB-004 repairs the malformed membership statement for the finite D-list."
+    },
+    "OLP-0106": {
+      "batch_id": "PS-B020-TABLEAUX-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEQUENT-RULES"
+      ],
+      "scope": "The cut combination, derivability/inconsistency equivalence, explicit inconsistency result and exhaustive inconsistency construction are retained. OLTAB-005 fixes the endpoint index; OLTAB-006 removes a stray source backslash; OLTAB-007 names the signed formula to which true-negation is actually applied."
+    },
+    "OLP-0107": {
+      "batch_id": "PS-B020-TABLEAUX-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "All conjunction, disjunction and implication derivability claims and their eight closed trees are retained. OLTAB-008 supplies the missing sign/formula argument boundary in eight malformed signed-formula calls without changing a sign, formula or branch."
+    },
+    "OLP-0108": {
+      "batch_id": "PS-B020-TABLEAUX-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Strong generalization with its freshness condition and the one-step universal and existential derivability tableaux are retained with exact binders, terms, signs, rule labels and branch structure."
+    },
+    "OLP-0109": {
+      "batch_id": "PS-B021-TABLEAUX-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-SEMANTICS",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "The signed-formula satisfaction definition, branch-preservation soundness proof for every nonbranching and branching rule, quantified model modification, cut and all three corollaries are retained. OLTAB-009 keeps one metavariable consistent throughout both universal-rule cases."
+    },
+    "OLP-0110": {
+      "batch_id": "PS-B021-TABLEAUX-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All three identity rules, their two-premise condition, substitutability, symmetry, transitivity and both quantified exercises are retained with exact closed terms and trees. OLTAB-010 and OLTAB-011 repair two local prose instantiation mismatches."
+    },
+    "OLP-0111": {
+      "batch_id": "PS-B021-TABLEAUX-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-IDENTITY",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-SUBSTITUTION",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Soundness of reflexive identity and both substitution rules is retained through the variable-assignment and extensionality argument. OLTAB-012 fixes the result sign in the true-identity case."
+    },
+    "OLP-0112": {
+      "batch_id": "PS-B022-AXIOMATIC-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI"
+      ],
+      "scope": "The complete axiomatic-deduction driver retains its primitive-connective editorial limitation, FOL/propositional branches, all fourteen imports and chapter hook."
+    },
+    "OLP-0113": {
+      "batch_id": "PS-B022-AXIOMATIC-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Finite derivation sequences, premise/axiom/rule justification, modus ponens, derivability and theoremhood are retained. OLAX-001 restores the source's omitted metavariable formula marker on one inference-step occurrence."
+    },
+    "OLP-0114": {
+      "batch_id": "PS-B022-AXIOMATIC-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "All fourteen propositional axiom schemas and modus ponens are retained with exact formula order, labels, connectives and rule prerequisites."
+    },
+    "OLP-0115": {
+      "batch_id": "PS-B022-AXIOMATIC-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "Both closed-term quantifier axiom schemas and both parameter-sensitive quantifier rules are retained with exact side conditions and conclusion directions."
+    },
+    "OLP-0116": {
+      "batch_id": "PS-B023-AXIOMATIC-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "All three propositional worked derivations, axiom-instance choices, every MP reference, the concatenation proof and all exercises are retained with exact formulas and line justifications."
+    },
+    "OLP-0117": {
+      "batch_id": "PS-B023-AXIOMATIC-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "The quantified worked derivation retains both universal projections, closed-term instances, chain uses, conjunction construction, parameter freshness and final QR generalization."
+    },
+    "OLP-0118": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-FINITE"
+      ],
+      "scope": "Derivability, theoremhood, consistency, reflexivity, monotonicity, concatenation transitivity, inconsistency and compactness are retained. OLAX-002 restores one omitted formula marker."
+    },
+    "OLP-0119": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-IFF"
+      ],
+      "scope": "Meta-modus ponens, both directions and the full induction of the deduction theorem, plus all five derived facts, are retained. OLAX-003 and OLAX-004 repair one incomplete membership formula and one missing closing parenthesis."
+    },
+    "OLP-0120": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "The quantified deduction-theorem induction preserves MP and QR cases, eigenvariable scope and every intermediate derivability claim. OLAX-005 closes a schema and OLAX-006 restores the theorem's actual A-implies-B conclusion."
+    },
+    "OLP-0121": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "All four consistency results, both directions of the negation inconsistency equivalence, explicit contradiction and exhaustive extensions are retained with exact dependencies."
+    },
+    "OLP-0122": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROP-SYNTAX"
+      ],
+      "scope": "Conjunction, disjunction and implication derivability properties and the explicit MP derivation are retained. OLAX-007 and OLAX-008 correct two axiom-reference identities."
+    },
+    "OLP-0123": {
+      "batch_id": "PS-B024-AXIOMATIC-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Strong generalization and both quantified derivability properties are retained. OLAX-009 corrects the final strong-generalization justification from a second deduction-theorem use to truth plus meta-MP."
+    },
+    "OLP-0124": {
+      "batch_id": "PS-B025-AXIOMATIC-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEMANTICS",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Axiom validity, induction on axiomatic derivation length, modus ponens, both quantified-rule shapes, weak soundness and satisfiability-to-consistency are retained. OLAX-010 restores one omitted formula metavariable marker in the semantic QR case."
+    },
+    "OLP-0125": {
+      "batch_id": "PS-B025-AXIOMATIC-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS",
+        "TERM-IDENTITY",
+        "TERM-SUBSTITUTION"
+      ],
+      "scope": "Both identity axiom schemas, their validity exercise, reflexivity, substitutability and the two-MP proof are retained. OLAX-011 and OLAX-012 restore the closed-term scope required by the two axiom schemas."
+    },
+    "OLP-0126": {
+      "batch_id": "PS-B026-COMPLETENESS-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "The completeness chapter driver retains both propositional and FOL identifiers, all eleven imports, every FOL gate and the chapter hook."
+    },
+    "OLP-0127": {
+      "batch_id": "PS-B026-COMPLETENESS-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-FINITE",
+        "TERM-AXIOM"
+      ],
+      "scope": "Both equivalent completeness formulations, Hilbert's quoted criterion, the finite-witness consequence, direct model construction and the FOL Löwenheim–Skolem consequence are retained with their exact logical directions."
+    },
+    "OLP-0128": {
+      "batch_id": "PS-B027-COMPLETENESS-OUTLINE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROP-SYNTAX",
+        "TERM-FUNCTION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-DOMAIN",
+        "TERM-PREDICATE",
+        "TERM-IDENTITY",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "The proof roadmap retains the semantic-to-syntactic perspective shift, atomic model construction, complete extension, FOL witness constants, term functions, equality quotient and every later proof dependency. OLCOM-001 removes an erroneous atomic-only restriction from condition (b)."
+    },
+    "OLP-0129": {
+      "batch_id": "PS-B027-COMPLETENESS-OUTLINE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-DECIDABILITY",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "The exact definition of complete sentence sets, model-construction motivation, four closure properties and all system-conditioned proof references are retained."
+    },
+    "OLP-0130": {
+      "batch_id": "PS-B028-HENKIN-EXPANSION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-RECURSIVE",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-SEMANTICS",
+        "TERM-FINITE",
+        "TERM-IFF"
+      ],
+      "scope": "The Henkin language expansion, saturation definition, fresh-constant enumeration, consistency induction, strong-generalization step, and both existential and universal instance equivalences are retained under every primitive/defined and proof-system tag."
+    },
+    "OLP-0131": {
+      "batch_id": "PS-B029-LINDENBAUM",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-ENUMERATION",
+        "TERM-RECURSIVE",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-LOGIC-FORMS",
+        "TERM-FINITE",
+        "TERM-UNION",
+        "TERM-SUBSET"
+      ],
+      "scope": "The sentence enumeration, consistency-preserving stage construction, nested-stage induction, finite-witness argument and final completeness alternative are retained under both FOL and propositional proof-system reference profiles. OLCOM-002 supplies the omitted empty finite-subset case."
     }
   },
   "semantic_review": [
@@ -2040,6 +3348,810 @@
       "passage": "structural transformations and cut",
       "reverse_paraphrase": "Weakening adds a formula on either side, contraction merges duplicate formulas, exchange swaps neighboring formulas, and cut combines two derivations by removing a formula occurring on opposite sides.",
       "finding": "Every left/right rule tree, sequence context, double-line convention and binary cut tree is retained exactly."
+    },
+    {
+      "unit_id": "OLP-0074",
+      "passage": "inductive derivation definition and tree orientation",
+      "reverse_paraphrase": "An LK derivation is a finite tree whose topmost sequents are initial, whose bottommost sequent is the end-sequent, and whose every other node is a premise of a correct rule instance whose conclusion occurs immediately below it.",
+      "finding": "All three formal clauses, the derivable terminology and the direction from premises above to conclusions below are retained without reversing tree orientation."
+    },
+    {
+      "unit_id": "OLP-0074",
+      "passage": "worked rule-schema matching and derivation combination",
+      "reverse_paraphrase": "Weakening is instantiated by matching its contexts to an initial sequent, exchange changes antecedent order, and two finished derivations with the same antecedent are combined by conjunction-right.",
+      "finding": "Every schema, context assignment, premise order and resulting end-sequent is retained exactly in the prose and proof trees."
+    },
+    {
+      "unit_id": "OLP-0075",
+      "passage": "backward propositional proof search and branching",
+      "reverse_paraphrase": "Proof search begins at the desired end-sequent, selects a rule whose conclusion matches it, works upward through its premises, and may need to backtrack when a branch cannot reach an initial sequent.",
+      "finding": "The main-operator choices, branch delays, structural completions, failed conjunction-left path and successful disjunction-left alternative are retained. Four antecedent exchanges are correctly labeled left exchange under OLSQ-001."
+    },
+    {
+      "unit_id": "OLP-0075",
+      "passage": "candidate sequents, contraction example and exercises",
+      "reverse_paraphrase": "The symmetric candidate sequents both retain the negated second disjunct; excluded middle requires keeping a duplicate disjunction while searching upward and then contracting it. The exercise groups preserve their stated contraction note.",
+      "finding": "OLSQ-002 restores the two omitted negations to agree with the theorem and every subsequent tree. Both contraction steps and all twenty-four exercise sequents are retained."
+    },
+    {
+      "unit_id": "OLP-0076",
+      "passage": "eigenvariable-priority quantified proof search",
+      "reverse_paraphrase": "Rules constrained by the eigenvariable condition should be considered first, and the universal and existential reversals must use the same term so that proof search reaches an identity sequent rather than mismatched instances.",
+      "finding": "The rule order, common constant a, complete derivation and final lower-sequent freshness check are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0076",
+      "passage": "quantified exercise sets",
+      "reverse_paraphrase": "The first six and second three sequents are exercises in quantifier and propositional rule interaction; the final three are explicitly identified as requiring right contraction.",
+      "finding": "Every quantifier binder, matrix, connective, sequent side and contraction note is retained."
+    },
+    {
+      "unit_id": "OLP-0077",
+      "passage": "theoremhood, derivability and structural invariance",
+      "reverse_paraphrase": "A theorem has an LK derivation from an empty antecedent. Derivability from Gamma is witnessed by a finite subset and a sequence of its sentences; contraction, exchange and weakening make order and multiplicity immaterial.",
+      "finding": "Empty-antecedent theoremhood, finite witnessing, sequence/set distinction and all three structural operations are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0077",
+      "passage": "consistency and proof-relation properties",
+      "reverse_paraphrase": "Inconsistency is witnessed by a finite subset deriving an empty succedent. Reflexivity, monotonicity and cut yield the stated consequence properties, while compactness follows from finite derivations.",
+      "finding": "Every direction, subset relation, cut premise and both compactness clauses are retained; OLSQ-003 changes only the erroneous editorial system name."
+    },
+    {
+      "unit_id": "OLP-0078",
+      "passage": "derivability, negation and inconsistency",
+      "reverse_paraphrase": "A derivable A whose addition creates inconsistency makes Gamma inconsistent by cut. Deriving A is equivalent to inconsistency after adding not-A, and an explicit not-A already in Gamma yields inconsistency.",
+      "finding": "All finite subsets, proof-tree sides, negation steps and cut formulas are retained."
+    },
+    {
+      "unit_id": "OLP-0078",
+      "passage": "exhaustive inconsistent extensions",
+      "reverse_paraphrase": "If both extensions by A and not-A are inconsistent, right-negation converts the first witness to not-A on the succedent and cut with the second yields an empty succedent from Gamma.",
+      "finding": "The two witnesses, their order, right-negation step, cut and subset conclusion are retained."
+    },
+    {
+      "unit_id": "OLP-0079",
+      "passage": "propositional derivability properties",
+      "reverse_paraphrase": "Conjunction supports both projections and pairing, disjunction supports both injections and inconsistency with both negated disjuncts, and implication supports modus ponens plus introduction from not-A or B.",
+      "finding": "Every proposition direction and proof tree is retained. OLSQ-004 inserts only the structural premises required to give conjunction-right the same antecedent context."
+    },
+    {
+      "unit_id": "OLP-0080",
+      "passage": "strong generalization and quantifier derivability",
+      "reverse_paraphrase": "A fresh constant can be generalized on the right, existential introduction follows from an instance, and universal instantiation yields an instance.",
+      "finding": "The freshness scope, finite subset, eigenvariable condition, tag topology and both one-step proof trees are retained."
+    },
+    {
+      "unit_id": "OLP-0081",
+      "passage": "valid sequents and induction architecture",
+      "reverse_paraphrase": "A sequent is valid when every structure or valuation either falsifies an antecedent formula or makes a succedent formula true. Soundness is proved by induction on the number of inferences and a case split on the lowest rule.",
+      "finding": "The satisfaction alternatives, base case, induction measure and premise-validity hypothesis are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0081",
+      "passage": "unary rules and quantified eigenvariables",
+      "reverse_paraphrase": "Weakening, contraction, exchange, negation and the one-premise connective rules preserve validity directly. The quantified rules use a model variant for the eigenvariable and substitution lemmas to transfer truth between an instance and the quantified formula.",
+      "finding": "Every rule orientation, side condition, model variation and semantic alternative is retained; no converse direction was introduced."
+    },
+    {
+      "unit_id": "OLP-0081",
+      "passage": "binary rules and soundness consequences",
+      "reverse_paraphrase": "Cut splits on the truth of the cut formula, and conjunction-right, disjunction-left and implication-left combine the semantic alternatives from two valid premises. The resulting theorem yields semantic consequence and consistency corollaries.",
+      "finding": "All two-premise cases and corollaries are retained. OLSQ-005 and OLSQ-006 change only the two malformed source conclusions disclosed beside the repaired text."
+    },
+    {
+      "unit_id": "OLP-0082",
+      "passage": "identity rules and derived properties",
+      "reverse_paraphrase": "Closed terms have reflexive equality initial sequents. Either occurrence of a substitutable formula may be transported across equality, yielding Leibniz substitutability, symmetry and transitivity.",
+      "finding": "Both primitive orientations, all proof-tree contexts and the formulas chosen for symmetry and transitivity are retained."
+    },
+    {
+      "unit_id": "OLP-0083",
+      "passage": "soundness with identity",
+      "reverse_paraphrase": "Reflexive equality sequents are valid for closed terms. For the displayed equality rule, truth of t1=t2 lets the assignment argument transfer satisfaction from A(t1) through A(x) to A(t2).",
+      "finding": "The assignment construction, two cited substitution/extensionality steps and sentence-satisfaction endpoints are retained. The second rule orientation remains an implicit analogous case, as in the source."
+    },
+    {
+      "unit_id": "OLP-0084",
+      "passage": "natural-deduction chapter topology",
+      "reverse_paraphrase": "The chapter presents a Gentzen/Prawitz-style natural-deduction proof system and conditionally includes the quantified and identity sections only for first-order logic.",
+      "finding": "Every import, condition branch and ordering relation is retained; the literal proof-system tag is protected as code rather than translated."
+    },
+    {
+      "unit_id": "OLP-0085",
+      "passage": "assumptions, rule pairs and discharge",
+      "reverse_paraphrase": "Natural-deduction proofs begin from topmost assumptions. Sentences immediately above an inference are its premises and the sentence below is its conclusion; introduction and elimination rules may discharge labeled assumptions.",
+      "finding": "The tree direction, rule arities, label role and permissive discharge concept are retained. OLND-001 changes only the erroneous node-type noun."
+    },
+    {
+      "unit_id": "OLP-0086",
+      "passage": "propositional natural-deduction rules",
+      "reverse_paraphrase": "Each connective has the displayed introduction and elimination rules; disjunction elimination and conditional or negation introduction discharge the labeled auxiliary assumptions, while falsehood supports explosion and classical contradiction.",
+      "finding": "All premise and conclusion formulas, labels, arities and the distinction between negation introduction and classical contradiction are retained."
+    },
+    {
+      "unit_id": "OLP-0086",
+      "passage": "permission to discharge",
+      "reverse_paraphrase": "A discharge annotation permits any number of matching assumption occurrences to be discharged, including zero; it does not require that a matching assumption occur.",
+      "finding": "The permission/requirement contrast and zero-occurrence boundary are explicit and unchanged."
+    },
+    {
+      "unit_id": "OLP-0087",
+      "passage": "quantifier rules and eigenvariable scope",
+      "reverse_paraphrase": "Universal elimination and existential introduction use any closed term. Universal introduction requires a fresh constant outside the conclusion and open assumptions; existential elimination additionally keeps it outside the existential major premise and conclusion, apart from its discharged auxiliary assumption.",
+      "finding": "The four rule directions and all side-condition scopes are retained. OLND-002 aligns the generalized summary with the two precise conditions already stated by the source."
+    },
+    {
+      "unit_id": "OLP-0087",
+      "passage": "substitution convention and unsound counterexample",
+      "reverse_paraphrase": "A(t) abbreviates substitution for free x and may replace selected rather than all occurrences of t. Without freshness, an existential claim could incorrectly yield the corresponding universal claim.",
+      "finding": "The selected-occurrence example, invalid universal-introduction example, starred counterexample tree and non-entailment formula are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0088",
+      "passage": "inductive derivation definition and examples",
+      "reverse_paraphrase": "A derivation is a finite tree generated from assumptions by correct one-, two- or three-premise inferences. Its leaves are open or discharged assumptions, its root is the conclusion, and derivability records the remaining open assumptions.",
+      "finding": "All three definition clauses, open-assumption notation, rule-schema replacements, premise order and optional discharge examples are retained."
+    },
+    {
+      "unit_id": "OLP-0089",
+      "passage": "conditional projection and nested disjunction proof search",
+      "reverse_paraphrase": "Backward search for (A and B) implies A uses conditional introduction then conjunction elimination. The larger conditional first introduces the outer implication, eliminates the disjunction, introduces each inner implication, and closes the negated branch by contradiction and explosion.",
+      "finding": "Every assumption label, branch conclusion and discharge scope is retained. OLND-004 replaces only the copied end-sequent noun with final conclusion."
+    },
+    {
+      "unit_id": "OLP-0089",
+      "passage": "optional discharge and corrected contradiction rule",
+      "reverse_paraphrase": "The B branch proves A implies B without using A, so conditional introduction discharges zero A assumptions. The other branch derives falsehood from not-A and A by negation elimination, then obtains B by falsehood elimination.",
+      "finding": "The zero-discharge boundary is explicit. OLND-003 changes the one completed-tree label from falsehood introduction to the negation-elimination rule already selected in the preceding partial tree."
+    },
+    {
+      "unit_id": "OLP-0089",
+      "passage": "classical excluded-middle derivation and exercises",
+      "reverse_paraphrase": "Classical contradiction is used as a last resort: assume the negation of excluded middle, derive both not-A and A through nested contradictions, reach falsehood, and discharge the outer assumption. The exercise groups separate ordinary and classical-rule-dependent derivations.",
+      "finding": "All nested labels, duplicated outer assumption occurrences, proof-tree formulas and thirty-two exercise judgments are retained."
+    },
+    {
+      "unit_id": "OLP-0090",
+      "passage": "existential counterexample to a universal claim",
+      "reverse_paraphrase": "To show that an existential counterexample implies the negation of a universal claim, eliminate the existential with fresh a, assume the universal claim, instantiate it at a, and derive contradiction with not-A(a).",
+      "finding": "The order imposed by eigenvariable elimination, all three discharge labels and the final freshness check are retained. The source's standard existential symbol in the prose rule name is preserved as an equivalent notation choice."
+    },
+    {
+      "unit_id": "OLP-0090",
+      "passage": "mixed quantified assumptions and open-assumption proof",
+      "reverse_paraphrase": "Eliminate the existential A-and-B assumption at fresh a, project B(a), instantiate the universal B-implies-C assumption at a, obtain C(a), and introduce the desired existential C conclusion before closing existential elimination.",
+      "finding": "The open assumptions, major and auxiliary premises, shared constant, tree spacer macro and rule order are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0090",
+      "passage": "negated universal consequence and quantified exercises",
+      "reverse_paraphrase": "Assuming the universal A claim lets the conditional premise yield an existential B claim, which contradicts the second premise and licenses negation introduction. The exercises retain their eigenvariable and classical-contradiction demands.",
+      "finding": "Both undischarged assumptions, the single discharged universal assumption, all quantified formulas and the classical-rule note are retained."
+    },
+    {
+      "unit_id": "OLP-0091",
+      "passage": "natural-deduction theoremhood, derivability and consequence properties",
+      "reverse_paraphrase": "A theorem discharges every assumption, while derivability from Gamma permits only open assumptions drawn from Gamma. Reflexivity uses an assumption leaf, monotonicity reuses a derivation under a larger set, and transitivity replaces an open A dependency by a derivation of A.",
+      "finding": "The open/discharged distinction, both slash notations, set inclusions and the complete transitivity tree are retained."
+    },
+    {
+      "unit_id": "OLP-0091",
+      "passage": "inconsistency equivalences and compactness",
+      "reverse_paraphrase": "Inconsistency means deriving falsehood and is equivalent to deriving everything or deriving both a sentence and its negation. A finite derivation has only finitely many open assumptions, yielding compactness and its consistency contrapositive.",
+      "finding": "All three equivalence clauses, FOL/PL problem references, finite witness construction and special falsehood case are retained."
+    },
+    {
+      "unit_id": "OLP-0092",
+      "passage": "derivability versus inconsistent extensions",
+      "reverse_paraphrase": "If Gamma derives A and adding A derives falsehood, discharge A to derive not-A and contradict A. Gamma derives A exactly when adding not-A is inconsistent, with the converse using classical contradiction.",
+      "finding": "Both substitution arguments, discharge indices and the classical converse are retained. OLND-005 removes only a redundant second label on the same classical step."
+    },
+    {
+      "unit_id": "OLP-0092",
+      "passage": "explicit and exhaustive inconsistency",
+      "reverse_paraphrase": "A derivable A contradicts an open not-A already in Gamma. If both extensions by A and not-A are inconsistent, discharge each auxiliary assumption to derive not-not-A and not-A, then contradict them.",
+      "finding": "The two derivations, their assignments to delta1 and delta2, nested negations and final open-assumption set are retained."
+    },
+    {
+      "unit_id": "OLP-0093",
+      "passage": "propositional derivability properties",
+      "reverse_paraphrase": "Conjunction supports projections and pairing; disjunction supports both injections and a two-branch contradiction; implication supports modus ponens and introduction from either not-A or B.",
+      "finding": "All rule arities, discharge labels, premise formulas and conclusions are retained, including the branch deriving B by explosion."
+    },
+    {
+      "unit_id": "OLP-0093",
+      "passage": "zero-discharge implication introduction",
+      "reverse_paraphrase": "From B alone, A implies B follows by conditional introduction without discharging an A occurrence; discharge is permitted but not required.",
+      "finding": "The unlabeled rule application and explicit permission statement are retained."
+    },
+    {
+      "unit_id": "OLP-0094",
+      "passage": "strong generalization and quantifier derivability",
+      "reverse_paraphrase": "A derivation of A(c) generalizes to all x A(x) when c occurs in neither Gamma nor A(x). An instance introduces an existential claim, and a universal claim eliminates to an instance.",
+      "finding": "Freshness scope, tag branches, formulas and both proof trees are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0095",
+      "passage": "soundness statement, induction base and induction setup",
+      "reverse_paraphrase": "A derivation system is sound when derivability preserves semantic consequence. The zero-inference derivation is its sole open assumption, and the induction hypothesis applies to each immediate subderivation of the final inference.",
+      "finding": "The three advertised consequences, open-assumption statement, inference count and induction dependency are retained."
+    },
+    {
+      "unit_id": "OLP-0095",
+      "passage": "unary natural-deduction rule cases",
+      "reverse_paraphrase": "Negation introduction uses impossibility of satisfying Gamma together with A; conjunction elimination projects a true conjunct; disjunction introduction preserves truth; implication introduction discharges A; and explosion follows because falsehood has no satisfying interpretation.",
+      "finding": "Every displayed tree, semantic branch, discharged assumption and delegated classical case is retained."
+    },
+    {
+      "unit_id": "OLP-0095",
+      "passage": "universal-introduction structure variation",
+      "reverse_paraphrase": "For arbitrary assignment s, reinterpret the fresh constant a as s(x), preserve Gamma because a is absent there, transfer A(a) to A(x) under s, and return to the original structure because a is absent from A(x).",
+      "finding": "Freshness, sentence status, all four cross-references and the structure-change direction are retained exactly. The source's equivalent standard universal symbol in one exercise rule label is preserved."
+    },
+    {
+      "unit_id": "OLP-0095",
+      "passage": "multi-premise cases and soundness corollaries",
+      "reverse_paraphrase": "Conjunction introduction combines models of two open-assumption sets, and implication elimination applies semantic modus ponens. The remaining binary and branching cases are exercises. Soundness yields validity of theorems and, contrapositively, consistency of every satisfiable set.",
+      "finding": "OLND-006 restores negation elimination to the introductory multi-premise list because it has two premises and immediately appears as an exercise; no rule tree or formula changes."
+    },
+    {
+      "unit_id": "OLP-0096",
+      "passage": "identity rules and substitutability",
+      "reverse_paraphrase": "Every closed term is identical with itself, and an identity premise permits replacement of either closed term by the other inside a formula. This gives the substitutability of identicals.",
+      "finding": "Both directions of equality elimination, all closed-term restrictions and the Leibniz-law example are retained."
+    },
+    {
+      "unit_id": "OLP-0096",
+      "passage": "quantified uniqueness derivation",
+      "reverse_paraphrase": "Choose a witness c for the assumed unique-A property. From A(a) and A(b), instantiate the universal witness claim to obtain a=c and b=c, then use equality elimination to get a=b before discharging and universally generalizing.",
+      "finding": "All eigenvariables, discharge indices and quantifier order are retained. The source only prints the a=c auxiliary tree and describes the separate b=c analogue; the translation preserves this scope without inventing a tree."
+    },
+    {
+      "unit_id": "OLP-0097",
+      "passage": "soundness with identity",
+      "reverse_paraphrase": "Reflexive equality is valid for a closed term. If t1 and t2 denote the same object and A(t1) is true, extensional substitution through an arbitrary assignment makes A(t2) true as well.",
+      "finding": "The equality-elimination tree, union of open assumptions, common denotation m and both extensional equivalences are retained."
+    },
+    {
+      "unit_id": "OLP-0098",
+      "passage": "tableaux chapter driver and editorial tag",
+      "reverse_paraphrase": "The driver assembles the signed analytic tableaux chapter and conditionally includes first-order quantifier, identity and soundness material under the existing tag graph.",
+      "finding": "All imports, conditionals and the chapter hook are retained. OLTAB-001 replaces a copied reference to natural deduction with tableaux in the prfTab instruction."
+    },
+    {
+      "unit_id": "OLP-0099",
+      "passage": "signed formulas and branch closure",
+      "reverse_paraphrase": "A signed formula pairs a sentence with true or false. Rules inspect an earlier signed formula on the current root-to-node branch. A branch closes only by containing both signs for the same formula, thereby ruling out that joint possibility.",
+      "finding": "The pair definition, two signs, nonlocal branch application, closure condition and all-branches closure criterion are retained."
+    },
+    {
+      "unit_id": "OLP-0099",
+      "passage": "closed tableau for a sentence",
+      "reverse_paraphrase": "A closed tableau for A starts at false-A. If every resulting possibility closes, no interpretation can make A false, so A is true in every structure.",
+      "finding": "The root sign and direction from closure to validity are retained without reversing them."
+    },
+    {
+      "unit_id": "OLP-0100",
+      "passage": "propositional signed rules",
+      "reverse_paraphrase": "True conjunction and false disjunction extend a branch with both components; false conjunction and true disjunction split alternatives. True implication branches into false antecedent or true consequent, while false implication requires both true antecedent and false consequent.",
+      "finding": "Every sign, connective, branch separator, rule label and line continuation is unchanged."
+    },
+    {
+      "unit_id": "OLP-0100",
+      "passage": "cut rule",
+      "reverse_paraphrase": "Cut splits every branch into true-A and false-A alternatives for an arbitrary formula. It is dispensable for closure but convenient for combining tableaux.",
+      "finding": "The zero-premise schema, global branch scope and cut-free existence claim are retained."
+    },
+    {
+      "unit_id": "OLP-0101",
+      "passage": "quantifier rule restrictions",
+      "reverse_paraphrase": "True universal and false existential instantiate with any closed term. False universal and true existential introduce a constant absent everywhere earlier on that branch; this historically named eigenvariable may syntactically be a constant.",
+      "finding": "The two rule classes, closedness requirement, branch-wide freshness and historical footnote are retained."
+    },
+    {
+      "unit_id": "OLP-0101",
+      "passage": "substitution scope and freshness counterexample",
+      "reverse_paraphrase": "A closed instantiating term may already occur in A, so replacing free x can repeat it. A fresh eigenconstant may not occur in A because A is already earlier on the branch. Dropping freshness would falsely close an invalid existential-to-universal implication.",
+      "finding": "Both allowed and forbidden atomic examples, the complete countertableau and the final invalidity judgment are retained."
+    },
+    {
+      "unit_id": "OLP-0102",
+      "passage": "formal tableau definition and worked closure",
+      "reverse_paraphrase": "A tableau begins with an ordered finite list of signed assumptions. Every later node is justified by a rule applied above on its branch. The worked true A-and-not-A example expands conjunction, then negation, producing opposite signs for A and closing its sole branch.",
+      "finding": "Finite-tree scope, node ancestry, line references, signs, formulas and closure marker are retained."
+    },
+    {
+      "unit_id": "OLP-0103",
+      "passage": "single-branch conditional projection",
+      "reverse_paraphrase": "Start by denying the conditional, force true A-and-B and false A, then expand the true conjunction to true A and true B; true A closes against false A.",
+      "finding": "All four line references, signs, checkmarks and the unique closure are retained."
+    },
+    {
+      "unit_id": "OLP-0103",
+      "passage": "branching nested conditional example",
+      "reverse_paraphrase": "Denying the outer implication produces a true disjunction and a false inner implication. Split the disjunction, expand the false implication on both branches, close the B branch immediately, and close the not-A branch by deriving false A.",
+      "finding": "Every repeated rule application, branch-local line reference and close marker is byte-preserved by the tableau-tree check."
+    },
+    {
+      "unit_id": "OLP-0103",
+      "passage": "multi-assumption multi-branch example",
+      "reverse_paraphrase": "True A-or-(B-and-C) first splits. False (A-or-B)-and-(A-or-C) then splits each branch again. Expanding each false disjunction closes the A branches, while expanding true B-and-C closes the two remaining branches. A second tableau demonstrates another legal rule order.",
+      "finding": "All eight displayed stages, moved duplicate results, checkmarks, alternative order and closure dependencies are retained."
+    },
+    {
+      "unit_id": "OLP-0103",
+      "passage": "propositional exercise sets",
+      "reverse_paraphrase": "Each task asks for closure of signed premises corresponding to the natural-deduction examples, including associativity, double negation, contraposition, excluded middle and classical implication principles.",
+      "finding": "OLTAB-002 restores the ninth second-set task to two true assumptions, A-or-B and not-B, plus false A; the source had put both assumptions inside one signed-formula argument."
+    },
+    {
+      "unit_id": "OLP-0104",
+      "passage": "existential counterexample to universal claim",
+      "reverse_paraphrase": "Deny the implication, witness the true existential at fresh a, remove the false negation to obtain a true universal, negate the witnessed not-A(a), and instantiate the universal at a to close.",
+      "finding": "Eigenvariable ordering, constant choice, all signs and the seven-line closure are retained."
+    },
+    {
+      "unit_id": "OLP-0104",
+      "passage": "mixed quantified assumptions",
+      "reverse_paraphrase": "Witness true existential A-and-B at fresh a, instantiate false existential C and true universal B-implies-C at a without checking them off, project B(a), then split the true implication into false B(a) or true C(a), closing both branches.",
+      "finding": "The distinction between one-use eigenvariable rules and reusable closed-term rules, all checkmarks and both closes are retained."
+    },
+    {
+      "unit_id": "OLP-0104",
+      "passage": "deferred instantiation after branching",
+      "reverse_paraphrase": "First remove true negation, then branch on the true implication. Apply false-universal and true-existential eigenvariable rules before reusing true universal at b and false existential at c to close the respective branches.",
+      "finding": "OLTAB-003 changes only the prose reference from line 3 to line 4, which is the false-existential node named by the rule and used as line 4 in the final tree."
+    },
+    {
+      "unit_id": "OLP-0104",
+      "passage": "quantified exercise sets",
+      "reverse_paraphrase": "The exercises cover quantifier distribution, negated quantifiers, a diagonal predicate construction, classical quantifier duality and existential instances of implications.",
+      "finding": "All nine signed formulas, variable bindings and quantifier scopes are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0105",
+      "passage": "tableau derivability and consistency",
+      "reverse_paraphrase": "Gamma derives A when some finite list of formulas from Gamma, together with false A, has a closed tableau. Gamma is inconsistent when some finite list from it, all signed true, has a closed tableau.",
+      "finding": "Finite-premise scope, signs, closure condition and the distinction between derivability and inconsistency are retained."
+    },
+    {
+      "unit_id": "OLP-0105",
+      "passage": "reflexivity and monotonicity",
+      "reverse_paraphrase": "If A belongs to Gamma, the two-node false-A/true-A tableau establishes reflexivity. Any finite subset of Gamma remains a finite subset of a larger Delta, establishing monotonicity.",
+      "finding": "Membership, subset direction, both signs and the closed two-node tree are retained."
+    },
+    {
+      "unit_id": "OLP-0105",
+      "passage": "transitivity by cut",
+      "reverse_paraphrase": "A closed tableau for false B, true A and the C premises is combined by cut on A with a closed tableau for false A and the D premises. The two resulting branches receive the respective old tableaux and both close.",
+      "finding": "OLTAB-004 changes only D_m subset-of Gamma to D_m in Gamma; all finite premise lists, signs, cut branches and attachment directions are retained."
+    },
+    {
+      "unit_id": "OLP-0105",
+      "passage": "inconsistency and compactness consequences",
+      "reverse_paraphrase": "An inconsistent premise set derives every formula by putting its closed true-premise tableau below the false conclusion assumption. Both derivability and inconsistency are compact because their definitions already select finite premise lists.",
+      "finding": "The explosive consequence and both finite-subset conclusions are rendered without strengthening their scope."
+    },
+    {
+      "unit_id": "OLP-0106",
+      "passage": "cut combination for inconsistency",
+      "reverse_paraphrase": "One finite subset derives A and another finite subset becomes inconsistent when A is added. Cutting on A combines their two closed tableaux into a closed tableau for the union of the finite subsets.",
+      "finding": "OLTAB-005 makes the C-list endpoint m agree with every later occurrence; all signs, sets and subset relations remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0106",
+      "passage": "provability iff inconsistency with the negation",
+      "reverse_paraphrase": "A tableau beginning with false A can be replaced by one beginning with true not-A using the true-negation rule. In reverse, remove results depending on that assumption, add false A, and reconstruct any branch that had closed against false not-A.",
+      "finding": "Both transformation directions, dependency removal, rule signs and closure cases are retained."
+    },
+    {
+      "unit_id": "OLP-0106",
+      "passage": "explicit inconsistency",
+      "reverse_paraphrase": "When Gamma derives A and already contains not-A, replace the false-A assumption by true not-A and derive false A from that true negation. Renumber references to the inserted result; the resulting tableau witnesses inconsistency.",
+      "finding": "OLTAB-006 removes a stray standalone backslash. OLTAB-007 changes the prose operand from false A to true not-A, matching the named rule and its stated conclusion."
+    },
+    {
+      "unit_id": "OLP-0106",
+      "passage": "exhaustive inconsistent extensions",
+      "reverse_paraphrase": "If both Gamma with A and Gamma with not-A are inconsistent, cut on A after the shared finite premises. Attach the first tableau on the true-A branch and transform the second below the false-A branch, recovering closures that depended on true not-A when necessary.",
+      "finding": "Every branch side, sign, dependency case and final contradiction is retained."
+    },
+    {
+      "unit_id": "OLP-0107",
+      "passage": "conjunction derivability properties",
+      "reverse_paraphrase": "A true conjunction derives each conjunct by expansion, and two true conjunct assumptions derive their conjunction because false conjunction branches into a false copy of one conjunct on each branch.",
+      "finding": "OLTAB-008 repairs only four malformed signed-formula calls across these trees; all signs, formulas, justifications and closes are unchanged."
+    },
+    {
+      "unit_id": "OLP-0107",
+      "passage": "disjunction derivability properties",
+      "reverse_paraphrase": "True A-or-B together with true not-A and true not-B is inconsistent. Either A or B alone derives their disjunction because expanding a false disjunction supplies both false disjuncts.",
+      "finding": "OLTAB-008 repairs the remaining four malformed signed-formula calls; both branch alternatives and their closure dependencies are retained."
+    },
+    {
+      "unit_id": "OLP-0107",
+      "passage": "implication derivability properties",
+      "reverse_paraphrase": "True A and true A-implies-B derive B. True not-A alone and true B alone each derive A-implies-B by expanding false implication and then closing against the relevant assumption.",
+      "finding": "All implication signs, rule applications, branch structure and close markers are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0108",
+      "passage": "strong generalization",
+      "reverse_paraphrase": "If Gamma derives A of x and x is absent from every formula in Gamma, replace free x by a fresh constant in the old closed tableau. Add false universal-x A as the root and use the false-universal rule to obtain false A with that constant before attaching the renamed tableau.",
+      "finding": "The freshness premise, uniform substitution, false-universal step and attachment construction are retained."
+    },
+    {
+      "unit_id": "OLP-0108",
+      "passage": "quantified one-step derivability tableaux",
+      "reverse_paraphrase": "A universal premise derives each closed-term instance by true-universal expansion, and any closed-term instance derives the corresponding existential because false-existential expansion yields the opposite signed instance.",
+      "finding": "Both closed-term conditions, signs, binders, substitution terms and one-branch closures are retained."
+    },
+    {
+      "unit_id": "OLP-0109",
+      "passage": "signed-formula satisfaction",
+      "reverse_paraphrase": "A structure or valuation satisfies true A exactly when it satisfies A, and satisfies false A exactly when it does not satisfy A. A set of signed formulas is satisfiable when one structure or valuation satisfies every member.",
+      "finding": "Both truth signs, the pointwise set condition and existential satisfiability condition are retained."
+    },
+    {
+      "unit_id": "OLP-0109",
+      "passage": "branch-preservation soundness strategy",
+      "reverse_paraphrase": "A tableau is satisfiable when at least one branch is satisfiable. Every rule extension preserves some satisfiable branch, while a closed branch contains opposite signs for one formula and therefore cannot be satisfiable.",
+      "finding": "The induction direction, unchanged-branch case, nonbranching extension obligation and branching alternative obligation are retained."
+    },
+    {
+      "unit_id": "OLP-0109",
+      "passage": "nonbranching propositional cases",
+      "reverse_paraphrase": "True negation supplies false B, true conjunction supplies both true conjuncts, and false implication supplies true antecedent plus false consequent. The paired negation and disjunction cases remain exercises.",
+      "finding": "Every sign, connective and semantic implication is retained."
+    },
+    {
+      "unit_id": "OLP-0109",
+      "passage": "universal-rule soundness cases",
+      "reverse_paraphrase": "True universal preserves satisfaction at any closed term. For false universal, choose a falsifying assignment, reinterpret a fresh constant as its x-value, preserve all earlier branch sentences and obtain a false signed instance.",
+      "finding": "OLTAB-009 replaces the copied B metavariable by A in five formulas so each premise, conclusion and semantic chain concerns one formula; all freshness and extensionality steps remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0109",
+      "passage": "branching cases and corollaries",
+      "reverse_paraphrase": "False conjunction preserves at least one branch, true disjunction and implication are analogous exercises, and cut preserves whichever sign of B is satisfied. Closed-tableau soundness then yields validity, entailment and satisfiability-implies-consistency.",
+      "finding": "Both branch alternatives, cut dichotomy and all three consequence directions are retained."
+    },
+    {
+      "unit_id": "OLP-0110",
+      "passage": "identity rules and substitutability",
+      "reverse_paraphrase": "Every closed term is identical to itself. True equality transports either a true or false signed instance from t1 to t2, requiring both the equality and the signed instance on the branch. The first worked tree closes by transporting true A(s) to true A(t).",
+      "finding": "All closed-term restrictions, signs, two-premise references and the first complete tree are retained."
+    },
+    {
+      "unit_id": "OLP-0110",
+      "passage": "symmetry tableau",
+      "reverse_paraphrase": "From true s1=s2 and reflexive true s1=s1, use A(x) as x=s1 to derive true s2=s1 and close against its false assumption.",
+      "finding": "OLTAB-010 changes the prose description of line 3 from A(s2) to A(s1), matching the tree and the immediately following expansion."
+    },
+    {
+      "unit_id": "OLP-0110",
+      "passage": "transitivity tableau and exercises",
+      "reverse_paraphrase": "Use true s2=s3 as the equality premise and true s1=s2 as A(s2), with A(x) equal to s1=x, to obtain s1=s3. The exercises ask for quantified substitutability and unique-existence tableaux.",
+      "finding": "OLTAB-011 replaces the generic equality shown as the expansion of A(s2) by the actual s1=s2 on line 2; every tree node and exercise formula remains unchanged."
+    },
+    {
+      "unit_id": "OLP-0111",
+      "passage": "soundness of identity rules",
+      "reverse_paraphrase": "Reflexive identity is true in every structure. For true identity substitution, equality makes t1 and t2 denote the same object, so extensionality transports satisfaction of A(t1) to A(t2); the false case is parallel.",
+      "finding": "OLTAB-012 specializes the added signed formula from arbitrary S to True in the case explicitly proving the true-identity rule. The equality, assignment and extensionality chain are retained."
+    },
+    {
+      "unit_id": "OLP-0112",
+      "passage": "chapter driver and primitive-language limitation",
+      "reverse_paraphrase": "The driver currently treats every connective and quantifier as primitive except the biconditional, and includes quantified units only under the FOL tag before importing metatheory, soundness and identity.",
+      "finding": "Every tag branch, import order, editorial limitation and the chapter hook are retained."
+    },
+    {
+      "unit_id": "OLP-0113",
+      "passage": "finite derivation definition",
+      "reverse_paraphrase": "A derivation from Gamma is a finite formula sequence in which each entry belongs to Gamma, is an axiom, or follows by an inference rule from one or two earlier entries.",
+      "finding": "All three justification cases and both strict index inequalities are retained."
+    },
+    {
+      "unit_id": "OLP-0113",
+      "passage": "inference rules and modus ponens",
+      "reverse_paraphrase": "An inference rule gives a sufficient condition for a correct step. Premises and axioms yield immediate steps; modus ponens yields A when B-implies-A and B already occur earlier.",
+      "finding": "OLAX-001 restores the formula marker in the generic step A_i; the complete later formalization and all premise orders remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0113",
+      "passage": "derivability and theoremhood",
+      "reverse_paraphrase": "Gamma derives A exactly when a derivation from Gamma ends in A. A is a theorem exactly when such a derivation starts from the empty premise set; the slash notation records non-theoremhood.",
+      "finding": "Both definitions, the endpoint condition and positive/negative theorem notation are retained."
+    },
+    {
+      "unit_id": "OLP-0114",
+      "passage": "propositional axiom schemas",
+      "reverse_paraphrase": "The axiom set contains projection and pairing for conjunction, both disjunction injections and its eliminative schema, implication distribution and weakening, contraposition, explosion, truth, falsehood and double-negation elimination.",
+      "finding": "All fourteen schemas, labels and metavariable positions are preserved exactly."
+    },
+    {
+      "unit_id": "OLP-0114",
+      "passage": "modus ponens rule",
+      "reverse_paraphrase": "If B and B-implies-A already occur in a derivation, A is a correct next inference step; MP abbreviates this rule.",
+      "finding": "Both premises, their shared B and the A conclusion are retained without reversal."
+    },
+    {
+      "unit_id": "OLP-0115",
+      "passage": "quantifier axiom schemas",
+      "reverse_paraphrase": "For any closed term t, a universal formula implies its t-instance, and the t-instance implies the corresponding existential formula.",
+      "finding": "Closed-term scope, binder, substitution location and both implication directions are retained."
+    },
+    {
+      "unit_id": "OLP-0115",
+      "passage": "quantifier inference rules",
+      "reverse_paraphrase": "From B-implies-A(a), infer B-implies-forall-x-A(x); from A(a)-implies-B, infer exists-x-A(x)-implies-B, provided a occurs in neither Gamma nor B.",
+      "finding": "The parameter condition, common context restriction and universal/existential directions are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0116",
+      "passage": "disjunction-to-conditional derivation",
+      "reverse_paraphrase": "Instantiate the disjunction axiom with not-D, E and D-implies-E. Supply its two antecedents from the negation-explosion and implication-weakening axioms, then apply modus ponens twice to reach the target.",
+      "finding": "All five lines, three axiom labels, two MP references and the complete nested formula are retained."
+    },
+    {
+      "unit_id": "OLP-0116",
+      "passage": "identity conditional search",
+      "reverse_paraphrase": "A direct use of implication weakening would require deriving D alone, so instead instantiate implication distribution with A and C both D and B equal to D-implies-D. Two weakening instances and two MP steps yield D-implies-D.",
+      "finding": "The rejected strategy, metavariable choices and every line of the successful five-line derivation are retained."
+    },
+    {
+      "unit_id": "OLP-0116",
+      "passage": "conditional chain from hypotheses",
+      "reverse_paraphrase": "From A-implies-B and B-implies-C, weaken the second hypothesis under A, instantiate implication distribution, and apply MP twice to derive A-implies-C.",
+      "finding": "Both hypothesis markers, all seven formulas and all line references are retained."
+    },
+    {
+      "unit_id": "OLP-0116",
+      "passage": "concatenation proposition and exercises",
+      "reverse_paraphrase": "Concatenate arbitrary Gamma-derivations of the two links, append the reusable schematic chain lines and retarget their references to the last lines of the two component derivations. Exercises request conjunction commutation, currying and a negated-disjunction consequence.",
+      "finding": "The proof transformation, reference update and all three exercise formulas are retained."
+    },
+    {
+      "unit_id": "OLP-0117",
+      "passage": "quantified conjunction derivation",
+      "reverse_paraphrase": "Project each universal conjunct, instantiate both at the same fresh a, use conditional chaining twice, combine the instances through the conjunction axiom and MP, then apply the quantifier rule to generalize the consequent over x.",
+      "finding": "Every binder, chosen constant, axiom reference, chain application, conjunction and final generalization is retained exactly."
+    },
+    {
+      "unit_id": "OLP-0118",
+      "passage": "proof-theoretic definitions and structural properties",
+      "reverse_paraphrase": "Derivability ends a finite premise-relative sequence; theoremhood uses no premises; consistency is failure to derive falsehood. Reflexivity uses a one-line premise, monotonicity preserves a derivation under larger premises, and transitivity concatenates derivations.",
+      "finding": "OLAX-002 restores the marker on one B_i formula; every index, set direction and concatenation dependency remains unchanged."
+    },
+    {
+      "unit_id": "OLP-0118",
+      "passage": "inconsistency and compactness",
+      "reverse_paraphrase": "An inconsistent premise set derives every formula, and any derivation uses only finitely many premises from Gamma. Consistency compactness is the contrapositive at falsehood.",
+      "finding": "Both directions, the finite witness selection and the falsehood specialization are retained."
+    },
+    {
+      "unit_id": "OLP-0119",
+      "passage": "meta-modus ponens and deduction theorem forward direction",
+      "reverse_paraphrase": "Meta-MP follows from the three-line derivation plus transitivity. If Gamma derives A-implies-B, monotonicity and reflexivity provide both premises over Gamma with A, so meta-MP yields B.",
+      "finding": "All hypotheses, references and the forward implication are retained."
+    },
+    {
+      "unit_id": "OLP-0119",
+      "passage": "deduction theorem induction",
+      "reverse_paraphrase": "For a one-line derivation, B is a Gamma premise, the added A, or an axiom. For an MP final step, apply the induction hypothesis to C-implies-B and C, use implication distribution, and apply meta-MP twice.",
+      "finding": "OLAX-003 supplies B to the incomplete membership formula; every base case and induction formula remains intact."
+    },
+    {
+      "unit_id": "OLP-0119",
+      "passage": "derived-facts exercises",
+      "reverse_paraphrase": "The exercises cover implication chaining, contraposition, explosion and double-negation elimination both from a premise and under arbitrary Gamma.",
+      "finding": "OLAX-004 supplies the one missing outer closing parenthesis; all five labels and logical claims are retained."
+    },
+    {
+      "unit_id": "OLP-0120",
+      "passage": "quantified deduction-theorem QR case",
+      "reverse_paraphrase": "When the final QR step derives C-implies-forall D, induction internalizes A into the earlier C-implies-D(a). A propositional theorem converts this to A-and-C-implies-D(a); QR generalizes D, and currying returns A-implies-(C-implies-forall D).",
+      "finding": "The eigenvariable condition and all intermediate sequents are retained; OLAX-005 closes the currying schema and OLAX-006 states the required A-implies-B endpoint."
+    },
+    {
+      "unit_id": "OLP-0121",
+      "passage": "derivability and inconsistency equivalences",
+      "reverse_paraphrase": "A derived A collapses any inconsistent extension by A. Gamma derives A exactly when Gamma with not-A derives falsehood, using weakening and explosion forward and deduction, double negation and DNE backward.",
+      "finding": "Every implication direction, axiom reference and MP use is retained."
+    },
+    {
+      "unit_id": "OLP-0121",
+      "passage": "explicit and exhaustive inconsistency",
+      "reverse_paraphrase": "If Gamma derives A and contains not-A, explosion yields falsehood. If both A and not-A extensions are inconsistent, Gamma itself is inconsistent; its proof remains an exercise.",
+      "finding": "Hypothesis roles and requested proof scope are retained."
+    },
+    {
+      "unit_id": "OLP-0122",
+      "passage": "conjunction and disjunction properties",
+      "reverse_paraphrase": "Projection uses the two distinct conjunction axioms; pairing uses the third. A disjunction plus both negations is inconsistent via two explosion conditionals and the disjunction axiom; either disjunct derives the disjunction by its injection axiom.",
+      "finding": "OLAX-007 changes the duplicate projection reference to ax:land2 and OLAX-008 changes the explosion reference to ax:lnot2; all formulas remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0122",
+      "passage": "implication properties",
+      "reverse_paraphrase": "A and A-implies-B derive B by the explicit three-line MP sequence. Not-A derives A-implies-B by the negation axiom, and B derives it by implication weakening, together with the deduction theorem.",
+      "finding": "Both proof routes, derivation lines and labels are retained."
+    },
+    {
+      "unit_id": "OLP-0123",
+      "passage": "strong generalization",
+      "reverse_paraphrase": "Internalize A(c) behind truth, apply QR because c is absent from Gamma and truth, then combine the resulting truth-implies-universal formula with the truth axiom by meta-MP.",
+      "finding": "OLAX-009 corrects only the final justification; freshness, formulas and conclusion remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0123",
+      "passage": "quantifier instance properties",
+      "reverse_paraphrase": "A closed-term instance derives its existential generalization, and a universal formula derives each closed-term instance, by the corresponding quantifier axiom and the deduction theorem.",
+      "finding": "Both tag branches, directions, terms and references are retained."
+    },
+    {
+      "unit_id": "OLP-0124",
+      "passage": "validity of axioms",
+      "reverse_paraphrase": "Every axiom instance is semantically valid. In the displayed universal-instantiation case, satisfaction under all x-variants includes the variant assigning x the value of the closed term, and the substitution lemma yields the consequent; propositional instances can be checked by truth tables.",
+      "finding": "The free-for condition, assignment update, term value, substitution and conditional direction are all retained."
+    },
+    {
+      "unit_id": "OLP-0124",
+      "passage": "soundness induction basis and modus ponens",
+      "reverse_paraphrase": "A derivation with no inference-justified steps ends in either an axiom or a premise, each entailed by Gamma. If the last step is modus ponens, the shorter prefixes semantically yield B and B-implies-A, hence A.",
+      "finding": "Induction measure, both basis cases and both shorter derivation dependencies are preserved."
+    },
+    {
+      "unit_id": "OLP-0124",
+      "passage": "universal quantified-rule soundness case",
+      "reverse_paraphrase": "From Gamma entailing C-implies-B(c), semantic deduction gives Gamma with C entailing B(c). For a model of those sentence premises and any assignment s, reinterpret the fresh constant c as s(x); the premises are unchanged, B(c) holds, substitution transfers this to B(x), and freshness transfers it back to the original model. Thus every assignment satisfies B(x), so the universal conclusion follows.",
+      "finding": "OLAX-010 restores the omitted formula marker on B(c). Freshness against Gamma, C and the universal formula, both extensionality uses and the arbitrary-assignment conclusion remain intact."
+    },
+    {
+      "unit_id": "OLP-0124",
+      "passage": "soundness corollaries",
+      "reverse_paraphrase": "Theoremhood implies validity. If Gamma were inconsistent, it would derive falsehood; soundness would force every model of Gamma to satisfy falsehood, which no model or valuation can do, so satisfiability implies consistency.",
+      "finding": "Both corollary directions and the contrapositive argument are retained."
+    },
+    {
+      "unit_id": "OLP-0125",
+      "passage": "identity axioms and derived substitutability",
+      "reverse_paraphrase": "For closed terms, reflexive identity and substitution of identicals are axiom schemas. Reflexive identity is therefore derivable over any premise set, and A(t2) follows from equality t1=t2 and A(t1) by applying the substitution axiom and modus ponens twice.",
+      "finding": "OLAX-011 and OLAX-012 restore closed-term restrictions required by the stated axiom schemas; both schemas, references and the two-MP proof are otherwise unchanged."
+    },
+    {
+      "unit_id": "OLP-0126",
+      "passage": "complete chapter driver",
+      "reverse_paraphrase": "The same chapter driver supports propositional and first-order completeness, with the first-order build additionally importing Henkin expansions, identity and downward Löwenheim–Skolem.",
+      "finding": "Both chapter identifiers, all eleven imports, all three FOL gates and the final hook are preserved."
+    },
+    {
+      "unit_id": "OLP-0127",
+      "passage": "two formulations of completeness",
+      "reverse_paraphrase": "Semantic consequence implies formal derivability; equivalently, every syntactically consistent sentence set has a satisfying structure or valuation.",
+      "finding": "The semantic-to-syntactic direction, model-existence equivalence and distinction between consistency and satisfiability are retained."
+    },
+    {
+      "unit_id": "OLP-0127",
+      "passage": "Hilbert and Frege motivation",
+      "reverse_paraphrase": "Hilbert proposed that axioms which do not contradict one another together with their consequences can be treated as true and as defining existing objects; Frege rejected that view, while completeness vindicates only the stated model-existence sense.",
+      "finding": "The historical disagreement, quotation scope and qualified 'at least in the sense' conclusion are preserved."
+    },
+    {
+      "unit_id": "OLP-0127",
+      "passage": "finite-witness consequence",
+      "reverse_paraphrase": "A finite derivation can use only finitely many premises, so any semantic consequence of Gamma is already a consequence of a finite subset; equivalently, consistency of every finite subset entails consistency of Gamma.",
+      "finding": "Finiteness, subset direction and equivalent consistency statement are preserved without turning compactness into set-theoretic compactness."
+    },
+    {
+      "unit_id": "OLP-0127",
+      "passage": "direct construction and FOL consequence",
+      "reverse_paraphrase": "The construction used for completeness can start with a finitely satisfiable sentence set to prove compactness directly; in first-order logic it also gives a finite or denumerable model for every satisfiable sentence set.",
+      "finding": "The changed starting property, model-construction role, FOL-only gate and Löwenheim–Skolem cardinality conclusion are retained."
+    },
+    {
+      "unit_id": "OLP-0128",
+      "passage": "perspective shift and atomic base model",
+      "reverse_paraphrase": "Instead of constructing a derivation directly from semantic consequence, completeness is approached by constructing a satisfying structure or valuation from any consistent Gamma. Positive atomic sentences determine the predicate interpretation or propositional valuation.",
+      "finding": "The semantic-to-syntactic direction, both FOL/propositional branches, natural-number domain, constant indices and truth assignment are preserved."
+    },
+    {
+      "unit_id": "OLP-0128",
+      "passage": "negated and complex formulas",
+      "reverse_paraphrase": "Consistency prevents both an atom and its negation from belonging to Gamma. Conjunction membership requires treating both conjuncts as present, while disjunction membership requires at least one disjunct.",
+      "finding": "All negated satisfaction signs and both connective conditions are retained."
+    },
+    {
+      "unit_id": "OLP-0128",
+      "passage": "complete-extension conditions",
+      "reverse_paraphrase": "Extend Gamma while preserving consistency and deciding every sentence, then exploit connective closure to prove the constructed interpretation satisfies the extension and hence Gamma.",
+      "finding": "OLCOM-001 removes 'atomic' from condition (b), because the same paragraph and OLP-0129 define completeness as deciding every sentence. All other conditions and subset directions are retained."
+    },
+    {
+      "unit_id": "OLP-0128",
+      "passage": "FOL witnesses, functions and equality",
+      "reverse_paraphrase": "Add infinitely many witness constants without introducing inconsistency; interpret function symbols syntactically on closed terms; then quotient terms by the equalities required by Gamma so distinct syntactic terms may have the same value.",
+      "finding": "Existential witness obstruction, constant-free languages, function arity, term construction, fixed identity semantics and arithmetic example are all retained."
+    },
+    {
+      "unit_id": "OLP-0128",
+      "passage": "chapter roadmap",
+      "reverse_paraphrase": "Prove closure properties of complete consistent sets, add Henkin witnesses, apply Lindenbaum completion, construct the term model or valuation, establish the truth lemma, and factor by identity when equality is present.",
+      "finding": "All tag-conditioned existential/universal claims and every stable cross-reference are retained."
+    },
+    {
+      "unit_id": "OLP-0129",
+      "passage": "complete-set definition and motivation",
+      "reverse_paraphrase": "A sentence set is complete exactly when it contains each sentence or its negation. If also consistent, it contains exactly one of the pair and can determine the atomic part of the eventual structure or valuation.",
+      "finding": "Every-sentence scope, exclusive consistency consequence and both interpretation branches are preserved."
+    },
+    {
+      "unit_id": "OLP-0129",
+      "passage": "closure proposition and proof",
+      "reverse_paraphrase": "Derivability from a complete consistent Gamma implies membership. Membership of conjunctions, disjunctions and conditionals is then characterized using the appropriate previously proved derivability properties, completeness and contradiction arguments.",
+      "finding": "All four statements, both directions of each connective case, item references and proof-system-specific links are preserved."
+    },
+    {
+      "unit_id": "OLP-0130",
+      "passage": "Henkin witness motivation",
+      "reverse_paraphrase": "Expand the language with countably many fresh constants and add an implication for each one-free-variable formula, so a true existential has a named witness or a false universal has a named counterexample.",
+      "finding": "Both primitive-existential and defined-existential branches, the direction of implication, and the role of the fresh constant are preserved."
+    },
+    {
+      "unit_id": "OLP-0130",
+      "passage": "language extension and saturation",
+      "reverse_paraphrase": "Adding countably many new constants preserves consistency. A set is saturated when every one-free-variable formula has a constant whose Henkin implication belongs to the set.",
+      "finding": "The source and expanded languages, countability, membership conditions, free-variable scope, and both quantifier profiles are retained."
+    },
+    {
+      "unit_id": "OLP-0130",
+      "passage": "fresh-constant enumeration",
+      "reverse_paraphrase": "Enumerate the relevant formulas and choose each c_n as the first added constant absent from the current formula and all earlier D_i, then form D_n with that constant.",
+      "finding": "Every index, freshness exclusion, induction dependency and D_n formula is preserved exactly."
+    },
+    {
+      "unit_id": "OLP-0130",
+      "passage": "saturated consistent extension",
+      "reverse_paraphrase": "Adjoin D_n one at a time and take the union. If a stage became inconsistent, negating D_n would yield two opposed consequences; strong generalization turns the constant instance into a universal claim, contradicting consistency of the previous stage.",
+      "finding": "The finite-stage argument, induction base and step, absence condition, four proof-system references and both quantifier branches are retained."
+    },
+    {
+      "unit_id": "OLP-0130",
+      "passage": "quantified sentence instances",
+      "reverse_paraphrase": "In a complete consistent saturated set, an existential belongs exactly when some closed-term instance belongs, and a universal belongs exactly when every closed-term instance belongs.",
+      "finding": "Both directions of both equivalences, where saturation is and is not needed, the contradiction argument and all tagged derivability references are retained."
+    },
+    {
+      "unit_id": "OLP-0131",
+      "passage": "enumeration and stage construction",
+      "reverse_paraphrase": "Enumerate every sentence and at stage n adjoin A_n when doing so is consistent; otherwise adjoin its negation, then take the union of all stages.",
+      "finding": "Every index, negation, union, consistency condition and case distinction is preserved."
+    },
+    {
+      "unit_id": "OLP-0131",
+      "passage": "consistency of each stage",
+      "reverse_paraphrase": "If adjoining A_n is inconsistent, adjoining its negation must be consistent; otherwise the previous stage would itself be inconsistent by propositional exhaustiveness.",
+      "finding": "The contradiction direction, induction hypothesis and all eight tag-conditioned proof-system references are retained."
+    },
+    {
+      "unit_id": "OLP-0131",
+      "passage": "nested stages",
+      "reverse_paraphrase": "A separate induction shows every earlier stage is a subset of every later stage, using the base case, the immediate stage inclusion and transitivity of inclusion.",
+      "finding": "The strict and non-strict index comparisons, both induction cases and all subset directions are preserved."
+    },
+    {
+      "unit_id": "OLP-0131",
+      "passage": "consistency of the union",
+      "reverse_paraphrase": "Every nonempty finite subset of the union lies inside one largest witnessing stage and is therefore consistent; the empty subset is consistent immediately, so compactness yields consistency of the union.",
+      "finding": "OLCOM-002 makes the source's omitted empty case explicit before choosing a maximum index. All remaining memberships, subset relations and compactness references are unchanged."
+    },
+    {
+      "unit_id": "OLP-0131",
+      "passage": "completeness of the union",
+      "reverse_paraphrase": "Each sentence occurs at some index; if that sentence was not admitted, its negation was, so the final consistent union decides every sentence.",
+      "finding": "The enumerated-sentence scope and the final negated alternative are preserved."
     }
   ]
 }
