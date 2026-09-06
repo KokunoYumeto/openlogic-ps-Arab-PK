@@ -33,8 +33,9 @@
 \renewcommand{\Hyp}{\LR{\latinfont Hyp}}
 
 % Source-relative file IDs and references are retained in the flattened
-% reader.  A reference outside this partial volume prints its exact OpenLogic
-% identifier instead of an unresolved question mark.
+% reader. The builder turns every selected reference outside this partial
+% volume into a named link to the frozen upstream result. This fallback is
+% deliberately generic and is forbidden in the accepted PDF.
 \newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
 \NewDocumentCommand{\olchapter}{o m m m}{%
   \gdef\pspart{#2}\gdef\pschapter{#3}\gdef\pssection{}%
@@ -51,7 +52,7 @@
   \ifcsname r@\pskey\endcsname
     \LR{\ref{\pskey}}%
   \else
-    \mbox{\LR{\latinfont\scriptsize OpenLogic \texttt{\pskey}}}%
+    \emph{ناحل شوې بهرنۍ حواله}%
   \fi
   \endgroup}
 \let\Olref\olref
@@ -128,10 +129,10 @@ OLP_READER_UNITS سرچينيز واحدونه دي؛ د ۷۲۲ واحدونو �
 روانه ده او تر اوسه OLP_DRAFT_UNITS واحدونه په ژباړل شوي بنډل کښې
 شته۔
 
-په متن کښې چې کوم بهرني OpenLogic پېژندونه ښکاري، هغه د لومړۍ درجې
-منطق هغو مخکينيو نحوي يا معنايي برخو ته کره اشارې دي چې لا په دې
-جزوي لوستيزه نسخه کښې نۀ دي راغلي۔ دا پېژندونه ماتې حوالې نۀ دي او
-په بشپړه نسخه کښې به شمېرل شويو حوالو ته واوړي۔
+په متن کښې کږلي عنوانونه او ورپسې آبي \LR{\latinfont [OLP]} نښه د
+بشپړ OpenLogic هغو لومړۍ درجې منطق نحوي او معنايي برخو ته تړنې دي چې
+په دې جزوي لوستيزه نسخه کښې نۀ دي شاملې۔ هره نښه اړوند تعريف، قضيه
+يا نتيجه په ثابته سرچينه کښې پرانيزي۔
 
 \begin{LTR}\latinfont\small
 Independent Pashto (Pakistan) translation of Open Logic Project revision

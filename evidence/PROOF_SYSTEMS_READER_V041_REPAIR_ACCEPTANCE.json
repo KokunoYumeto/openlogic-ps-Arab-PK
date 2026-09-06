@@ -1,0 +1,176 @@
+{
+  "schema": "ps-proof-systems-reader-v041-repair-acceptance/1",
+  "status": "accepted",
+  "accepted_utc": "2026-09-06T02:13:51.289631+00:00",
+  "release": {
+    "tag": "v0.4.1-proof-systems-reference-repair",
+    "purpose": "bounded reader and embedded-evidence repair; no new translation-unit credit"
+  },
+  "artifact": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems.pdf",
+    "bytes": 506791,
+    "sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+    "pages": 108
+  },
+  "predecessor": {
+    "tag": "v0.4.0-proof-systems",
+    "bytes": 508491,
+    "sha256": "d894c835b32137a81bc3e3f762b1fc3270466480754c7678991066b5ca2e8cb5",
+    "pages": 108
+  },
+  "coverage": {
+    "reader_units": 70,
+    "reader_unit_range": {
+      "first": "OLP-0056",
+      "last": "OLP-0125"
+    },
+    "source_snapshot_units": 131,
+    "total_source_units": 722
+  },
+  "reference_repair": {
+    "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "raw_fallback_occurrences_before": 37,
+    "raw_fallback_occurrences_after_pdf_text_scan": 0,
+    "selected_external_occurrences": 37,
+    "live_uri_annotations": 37,
+    "unique_source_targets": 8,
+    "pages_1based": [
+      41,
+      42,
+      44,
+      64,
+      65,
+      68,
+      91,
+      94,
+      107
+    ],
+    "references": [
+      {
+        "key": "fol:syn:ass:prop:sat-quant",
+        "title": "کميت ټاکونکو د صدق قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L259",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 4,
+        "pdf_annotation_pages_1based": [
+          42,
+          64,
+          91,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:ass:prop:sentence-sat-true",
+        "title": "جملې د صدق او متغير-ګومارنې قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L246",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 8,
+        "pdf_annotation_pages_1based": [
+          42,
+          44,
+          44,
+          65,
+          91,
+          94,
+          94,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:ext:cor:extensionality-sent",
+        "title": "جملو د امتدادي والي نتيجه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L52",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4,
+        "pdf_annotation_pages_1based": [
+          42,
+          65,
+          91,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:ext:prop:ext-formulas",
+        "title": "فورمول د بدلولو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L105",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 10,
+        "pdf_annotation_pages_1based": [
+          42,
+          44,
+          44,
+          65,
+          68,
+          91,
+          94,
+          94,
+          107,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:ext:prop:extensionality",
+        "title": "امتدادي والي قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L29",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4,
+        "pdf_annotation_pages_1based": [
+          42,
+          65,
+          91,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:sat:defn:satisfaction",
+        "title": "صدق تعريف",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex#L102",
+        "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "occurrences": 2,
+        "pdf_annotation_pages_1based": [
+          64,
+          107
+        ]
+      },
+      {
+        "key": "fol:syn:sem:prop:quant-terms",
+        "title": "کميت ټاکونکو او تړلو ترمونو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 2,
+        "pdf_annotation_pages_1based": [
+          41,
+          91
+        ]
+      },
+      {
+        "key": "fol:syn:sem:thm:sem-deduction",
+        "title": "معنايي استنتاج قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L106",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 3,
+        "pdf_annotation_pages_1based": [
+          107,
+          107,
+          107
+        ]
+      }
+    ],
+    "scope_statement": "Every out-of-volume result is named in Pashto and linked to its exact definition in the frozen upstream revision. The reader disclosure states that those syntax-and-semantics results are not included in this partial reader."
+  },
+  "build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "tex_receipt_sha256": "63f545ef317fe7fe7edb6cc71acbef3017df707d72baffcd6e19a1f5105d6253",
+    "passes": 3,
+    "byte_identical_pdf_passes": true,
+    "final_two_passes_log_findings": 0,
+    "reader_tex_sha256": "d0dd494277b80f0ab45557a84280c2824052c2b5c73631726e7d3662cb938c19",
+    "build_inputs_sha256": "ebe6b98b979f1bf680483172f8145880f69a5968bd5195426fa00ed938faaa5d",
+    "aux_sha256": "a710389bfb41a5998e8a400fc11262d020b8a3bf7eedd4bcf6c15ba551ccb442",
+    "out_sha256": "883852d9b0f623cc232ff0a980822af92b43a76043a460984a86d08da1011a92",
+    "toc_sha256": "7a58a1a68f49a89e74a38a4061fc0ad509c24014990069d26a107ae028618be1"
+  },
+  "visual_acceptance_sha256": "bd3103e524ff0dca61dc42ced5b89e31773da51d65b8deb2437890c47b255162",
+  "page_render_receipt_sha256": "c7c20e5d741a9d6c3f7f3330d8ebb22e082e292a5a416ebf7a7427bda7a17e3b",
+  "reader_occurrence_pages_sha256": "8290b6cec7d1604b9538a33dc31d947eb060a7c67b7585781209c453c8268ebd"
+}

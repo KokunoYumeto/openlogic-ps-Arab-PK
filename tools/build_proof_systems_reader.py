@@ -76,6 +76,58 @@ INACTIVE_TAGS = frozenset(
 )
 
 
+EXTERNAL_REFERENCES = {
+    "fol:syn:ass:prop:sat-quant": {
+        "title": "کميت ټاکونکو د صدق قضيه",
+        "source": "assignments.tex",
+        "line": 259,
+        "occurrences": 4,
+    },
+    "fol:syn:ass:prop:sentence-sat-true": {
+        "title": "جملې د صدق او متغير-ګومارنې قضيه",
+        "source": "assignments.tex",
+        "line": 246,
+        "occurrences": 8,
+    },
+    "fol:syn:ext:cor:extensionality-sent": {
+        "title": "جملو د امتدادي والي نتيجه",
+        "source": "extensionality.tex",
+        "line": 52,
+        "occurrences": 4,
+    },
+    "fol:syn:ext:prop:ext-formulas": {
+        "title": "فورمول د بدلولو قضيه",
+        "source": "extensionality.tex",
+        "line": 105,
+        "occurrences": 10,
+    },
+    "fol:syn:ext:prop:extensionality": {
+        "title": "امتدادي والي قضيه",
+        "source": "extensionality.tex",
+        "line": 29,
+        "occurrences": 4,
+    },
+    "fol:syn:sat:defn:satisfaction": {
+        "title": "صدق تعريف",
+        "source": "satisfaction.tex",
+        "line": 102,
+        "occurrences": 2,
+    },
+    "fol:syn:sem:prop:quant-terms": {
+        "title": "کميت ټاکونکو او تړلو ترمونو قضيه",
+        "source": "semantic-notions.tex",
+        "line": 124,
+        "occurrences": 2,
+    },
+    "fol:syn:sem:thm:sem-deduction": {
+        "title": "معنايي استنتاج قضيه",
+        "source": "semantic-notions.tex",
+        "line": 106,
+        "occurrences": 3,
+    },
+}
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -327,6 +379,97 @@ def resolve_profile_conditionals(text: str) -> tuple[str, Counter]:
     return text, stats
 
 
+def reference_key(part: str, chapter: str, section: str, options: list[str], label: str) -> str:
+    if not options:
+        return f"{part}:{chapter}:{section}:{label}"
+    if len(options) == 1:
+        return f"{part}:{chapter}:{options[0]}:{label}"
+    if len(options) == 2:
+        return f"{part}:{options[0]}:{options[1]}:{label}"
+    return f"{options[0]}:{options[1]}:{options[2]}:{label}"
+
+
+def external_reference_url(reference: dict) -> str:
+    return (
+        "https://github.com/OpenLogicProject/OpenLogic/blob/"
+        f"{UPSTREAM_REVISION}/content/first-order-logic/syntax-and-semantics/"
+        f"{reference['source']}#L{reference['line']}"
+    )
+
+
+def external_reference_source_path(reference: dict) -> Path:
+    return (
+        ROOT
+        / "upstream"
+        / "content"
+        / "first-order-logic"
+        / "syntax-and-semantics"
+        / reference["source"]
+    )
+
+
+def validate_external_reference_sources() -> None:
+    for key, reference in EXTERNAL_REFERENCES.items():
+        source_path = external_reference_source_path(reference)
+        lines = source_path.read_text(encoding="utf-8").splitlines()
+        line_number = reference["line"]
+        if not 1 <= line_number <= len(lines):
+            raise ValueError(f"external reference {key} points outside {reference['source']}")
+        local_label = ":".join(key.split(":")[3:])
+        if rf"\ollabel{{{local_label}}}" not in lines[line_number - 1]:
+            raise ValueError(
+                f"external reference {key} is not defined at "
+                f"{reference['source']}:{line_number}"
+            )
+
+
+def external_reference_tex(key: str) -> str:
+    reference = EXTERNAL_REFERENCES[key]
+    # TeX must escape the fragment marker; hyperref writes it as a literal '#'
+    # in the PDF URI action.
+    url = external_reference_url(reference).replace("#", r"\#")
+    # Keep the Pashto title outside hyperref's color/action scope. A short LTR
+    # marker gives xdvipdfmx one stable rectangle even when bidi reorders the
+    # surrounding line.
+    return (
+        rf"\emph{{{reference['title']}}}\nobreakspace"
+        rf"\LR{{\href{{{url}}}{{\latinfont\scriptsize [OLP]}}}}"
+    )
+
+
+def render_external_references(text: str) -> tuple[str, Counter]:
+    """Replace selected out-of-volume references with named, frozen links."""
+    ids = re.findall(
+        r"\\olfileid(?:\[[^\]]*\])?\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}",
+        text,
+    )
+    chapter = re.search(
+        r"\\olchapter(?:\[[^\]]*\])?\{([^}]+)\}\{([^}]+)\}\{",
+        text,
+    )
+    if ids:
+        part, chapter_id, section = ids[0]
+    elif chapter:
+        part, chapter_id, section = chapter.group(1), chapter.group(2), ""
+    else:
+        if r"\olref" in text:
+            raise ValueError("selected unit has references but no OpenLogic file context")
+        return text, Counter()
+
+    counts: Counter = Counter()
+    pattern = re.compile(r"\\olref((?:\[[^\]]*\]){0,3})\{([^}]+)\}")
+
+    def replace_reference(match: re.Match[str]) -> str:
+        options = re.findall(r"\[([^\]]*)\]", match.group(1))
+        key = reference_key(part, chapter_id, section, options, match.group(2))
+        if key not in EXTERNAL_REFERENCES:
+            return match.group(0)
+        counts[key] += 1
+        return external_reference_tex(key)
+
+    return pattern.sub(replace_reference, text), counts
+
+
 def strip_subfile(text: str) -> str:
     if "\\begin{document}" not in text or "\\end{document}" not in text:
         raise ValueError("translated unit lacks a document wrapper")
@@ -426,14 +569,15 @@ def wrap_rtl_math_text(text: str) -> str:
 
 
 def apply_layout_overrides(text: str) -> tuple[str, dict[str, int]]:
-    """Insert one deterministic break where a long external ID crowds math."""
+    """Retain one deterministic break beside a linked external theorem name."""
+    external = external_reference_tex("fol:syn:ext:prop:extensionality")
     old = (
-        r"د \olref[syn][ext]{prop:extensionality} له مخې"
+        f"د {external} له مخې"
         "\n  "
         r"\LR{$\Sat/{M'}{!A(x)}[s]$}۔"
     )
     new = (
-        r"د \olref[syn][ext]{prop:extensionality} له مخې\linebreak"
+        f"د {external} له مخې\\newline"
         "\n  "
         r"\LR{$\Sat/{M'}{!A(x)}[s]$}۔"
     )
@@ -443,7 +587,9 @@ def apply_layout_overrides(text: str) -> tuple[str, dict[str, int]]:
     return text.replace(old, new), {"OLP-0109-B018-forced-break": count}
 
 
-def prepare_unit(text: str, *, driver: bool, alignment_rows: list[dict]) -> tuple[str, Counter]:
+def prepare_unit(
+    text: str, *, driver: bool, alignment_rows: list[dict]
+) -> tuple[str, Counter, Counter]:
     source_blocks = re.split(r"\n\s*\n", strip_subfile(text).strip())
 
     def alignment_body(row: dict) -> str:
@@ -495,11 +641,12 @@ def prepare_unit(text: str, *, driver: bool, alignment_rows: list[dict]) -> tupl
             )
     body = "\n\n".join(prepared_blocks)
     body, profile_stats = resolve_profile_conditionals(body)
+    body, external_reference_counts = render_external_references(body)
     if re.search(r"!!|\\usetoken|\\Article|\\article|\\olimport", body):
         raise ValueError("reader preparation left a source-only token or import")
     if "\\psOblique" in body:
         raise ValueError("unexpected psOblique call in proof-systems tranche")
-    return body.strip(), profile_stats
+    return body.strip(), profile_stats, external_reference_counts
 
 
 def reference_inventory(texts: list[tuple[dict, str]]) -> dict:
@@ -527,14 +674,7 @@ def reference_inventory(texts: list[tuple[dict, str]]) -> dict:
         for match in re.finditer(r"\\olref((?:\[[^\]]*\]){0,3})\{([^}]+)\}", source_text):
             options = re.findall(r"\[([^\]]*)\]", match.group(1))
             label = match.group(2)
-            if not options:
-                key = f"{part}:{chapter_id}:{section}:{label}"
-            elif len(options) == 1:
-                key = f"{part}:{chapter_id}:{options[0]}:{label}"
-            elif len(options) == 2:
-                key = f"{part}:{options[0]}:{options[1]}:{label}"
-            else:
-                key = f"{options[0]}:{options[1]}:{options[2]}:{label}"
+            key = reference_key(part, chapter_id, section, options, label)
             reference_keys.append(key)
     counts = Counter(reference_keys)
     return {
@@ -550,7 +690,7 @@ def reference_inventory(texts: list[tuple[dict, str]]) -> dict:
         ],
         "note": (
             "Candidate counts include references in inactive notFOL branches. The TeX profile selects FOL; "
-            "the reader macro prints exact OpenLogic IDs only for selected references outside this volume."
+            "the eight selected out-of-volume references are rendered as named links to the frozen source."
         ),
     }
 
@@ -561,6 +701,7 @@ def main() -> None:
     args = parser.parse_args()
     build_dir = args.build_dir.resolve()
     build_dir.mkdir(parents=True, exist_ok=True)
+    validate_external_reference_sources()
 
     rows = [json.loads(line) for line in MANIFEST.read_text(encoding="utf-8").splitlines() if line.strip()]
     alignment_rows = [
@@ -579,6 +720,7 @@ def main() -> None:
 
     prepared: list[str] = []
     profile_stats: Counter = Counter()
+    external_reference_counts: Counter = Counter()
     inventory_texts: list[tuple[dict, str]] = []
     input_files: list[dict] = []
     for row in selected:
@@ -591,13 +733,14 @@ def main() -> None:
         target_text = target.read_text(encoding="utf-8")
         if unicodedata.normalize("NFC", target_text) != target_text:
             raise ValueError(f"target is not NFC: {row['unit_id']}")
-        prepared_unit, unit_profile_stats = prepare_unit(
+        prepared_unit, unit_profile_stats, unit_external_reference_counts = prepare_unit(
             target_text,
             driver=row["unit_id"] in DRIVER_IDS,
             alignment_rows=alignment_by_unit.get(row["unit_id"], []),
         )
         prepared.append(prepared_unit)
         profile_stats.update(unit_profile_stats)
+        external_reference_counts.update(unit_external_reference_counts)
         inventory_texts.append((row, target_text))
         input_files.append(
             {
@@ -608,6 +751,16 @@ def main() -> None:
                 "target_sha256": sha256(target),
                 "role": "chapter_driver" if row["unit_id"] in DRIVER_IDS else "reader_unit",
             }
+        )
+
+    expected_external_reference_counts = Counter(
+        {key: reference["occurrences"] for key, reference in EXTERNAL_REFERENCES.items()}
+    )
+    if external_reference_counts != expected_external_reference_counts:
+        raise ValueError(
+            "selected external-reference counts differ from the audited 37 occurrences: "
+            f"expected {dict(expected_external_reference_counts)}, "
+            f"found {dict(external_reference_counts)}"
         )
 
     translated_bundle_units = sum(
@@ -650,6 +803,24 @@ def main() -> None:
             for key, value in sorted(TOKENS.items())
         },
         "reference_inventory": reference_inventory(inventory_texts),
+        "external_reference_rendering": {
+            "policy": (
+                "Every selected reference to an omitted syntax-and-semantics result is a human-readable "
+                "Pashto title with an adjacent OLP link to the exact result in the frozen upstream revision; "
+                "no omitted chapter is presented as part of this partial reader."
+            ),
+            "occurrences": sum(external_reference_counts.values()),
+            "references": [
+                {
+                    "key": key,
+                    "title": reference["title"],
+                    "source_url": external_reference_url(reference),
+                    "source_sha256": sha256(external_reference_source_path(reference)),
+                    "occurrences": external_reference_counts[key],
+                }
+                for key, reference in sorted(EXTERNAL_REFERENCES.items())
+            ],
+        },
         "preamble": {"path": preamble.relative_to(ROOT).as_posix(), "sha256": sha256(preamble)},
         "builder": {"path": Path(__file__).relative_to(ROOT).as_posix(), "sha256": sha256(Path(__file__))},
         "manifest": {"path": MANIFEST.relative_to(ROOT).as_posix(), "sha256": sha256(MANIFEST)},
@@ -672,6 +843,7 @@ def main() -> None:
                 "translated_bundle_units": translated_bundle_units,
                 "reader_tex_bytes": reader_tex.stat().st_size,
                 "reader_tex_sha256": sha256(reader_tex),
+                "external_reference_occurrences": sum(external_reference_counts.values()),
             }
         )
     )

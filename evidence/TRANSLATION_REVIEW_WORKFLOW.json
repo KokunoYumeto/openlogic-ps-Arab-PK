@@ -1,6 +1,6 @@
 {
   "schema": "ps-translation-review-workflow/1",
-  "utc": "2026-09-05T23:42:10.387828+00:00",
+  "utc": "2026-09-06T02:21:06.070462+00:00",
   "status": "implemented through OLP-0131; maintained during subsequent drafting",
   "coordination": {
     "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
@@ -47,10 +47,10 @@
   },
   "pagination": {
     "rule": "Never guess page numbers. Populate exact printed/PDF occurrence pages only from an accepted stable reader and verified line-to-page mapping.",
-    "current": "3783 of 9084 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels in v0.4.0-proof-systems; the remaining 5301 occurrences explicitly say pending.",
+    "current": "3783 of 9084 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.4.1-proof-systems-reference-repair; the remaining 5301 occurrences explicitly say pending.",
     "next": "After each later reader reaches stable verified pagination, derive pages from embedded semantic-segment labels and regenerate and validate every canonical projection before packaging the next release."
   },
-  "release_disposition": "The canonical review surfaces are published in v0.4.0-proof-systems and remain maintained on the main branch; later worthwhile releases must carry the refreshed surfaces without mutating frozen earlier assets.",
+  "release_disposition": "The refreshed canonical review surfaces are prepared for v0.4.1-proof-systems-reference-repair; the latest anonymously verified public release is v0.4.0-proof-systems. Frozen earlier assets remain unchanged.",
   "hashes": {
     "EXPERT_REVIEW_LOG.jsonl": "134cd4492506c4ad11c6b1ac142d6ffd3fbe60b05406bcc52956c1079f9e2ecf",
     "EXPERT_REVIEW_LOG_SUMMARY.json": "7f9db2559927ccdb716dd7939e67d502f1882d44b6949d75f6d7240e51148828",
@@ -59,12 +59,12 @@
     "TRANSLATION_DECISIONS_PRIORITY.md": "d7df0e7763179e9ebdc5b2fb380f4ec2d3314bc737afc102652228a7d9b9cbbd",
     "TRANSLATION_DECISION_OCCURRENCES.csv": "5ca41de996dfd192f81ea16b15fc2403ee740cbd473f559c78f6ed4ffa3db258",
     "START_HERE.md": "549578504bf9f4b10d8088cd0eedafae05ff07754b719504fdb817118ad7a640",
-    "TRANSLATION_DECISIONS_FULL.md": "009383668452a60c47cdb693b1da02a6d7a7d2e81dcb06d80d494331adc70f77",
-    "PRIORITY_REVIEW.md": "5cbd39df9837f00b73b525c5abd8e9be0fcbfcba8433c2861d8153da439f1919",
-    "DECISION_OCCURRENCES.csv": "4f0e6f4be4c82fdeeaed57231d6fbfd7447d628903d86ec03c72637369f2f8fa",
-    "DECISIONS.json": "13a8d3571a1cf78906a189d6f18a651448b6dd854014eb303561b619e0576e61",
+    "TRANSLATION_DECISIONS_FULL.md": "eea3856354c9a069a0a25e5d7cb789edea7e749990b3e11504d9c78801e32b2b",
+    "PRIORITY_REVIEW.md": "64313e9652257a2dfe3880b19720dc25b787663ccbb07379ecb1540202241d15",
+    "DECISION_OCCURRENCES.csv": "532644a29a86efd9af3f46d7b1b460243a444b4c7a2482a7d616043b94034a08",
+    "DECISIONS.json": "46185296725fa62f4f42202a908a15bc0ca9a57b2f49a186b8502f6cbac02c66",
     "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "TRANSLATION_DECISION_QA.json": "c6db39cf021e0349713443768dd1186f2a46114f79ff89bb0de723d5c260e24b"
+    "TRANSLATION_DECISION_QA.json": "a3a62a70a445fa56fea029d2c37c3f4de052ce572302296f6626ca787caa1c5e"
   },
   "publication": {
     "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.4.0-proof-systems",

@@ -864,15 +864,77 @@
         "occurrences": 1
       }
     ],
-    "note": "Candidate counts include references in inactive notFOL branches. The TeX profile selects FOL; the reader macro prints exact OpenLogic IDs only for selected references outside this volume."
+    "note": "Candidate counts include references in inactive notFOL branches. The TeX profile selects FOL; the eight selected out-of-volume references are rendered as named links to the frozen source."
+  },
+  "external_reference_rendering": {
+    "policy": "Every selected reference to an omitted syntax-and-semantics result is a human-readable Pashto title with an adjacent OLP link to the exact result in the frozen upstream revision; no omitted chapter is presented as part of this partial reader.",
+    "occurrences": 37,
+    "references": [
+      {
+        "key": "fol:syn:ass:prop:sat-quant",
+        "title": "کميت ټاکونکو د صدق قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L259",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ass:prop:sentence-sat-true",
+        "title": "جملې د صدق او متغير-ګومارنې قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L246",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 8
+      },
+      {
+        "key": "fol:syn:ext:cor:extensionality-sent",
+        "title": "جملو د امتدادي والي نتيجه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L52",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ext:prop:ext-formulas",
+        "title": "فورمول د بدلولو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L105",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 10
+      },
+      {
+        "key": "fol:syn:ext:prop:extensionality",
+        "title": "امتدادي والي قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L29",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:sat:defn:satisfaction",
+        "title": "صدق تعريف",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex#L102",
+        "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:prop:quant-terms",
+        "title": "کميت ټاکونکو او تړلو ترمونو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:thm:sem-deduction",
+        "title": "معنايي استنتاج قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L106",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 3
+      }
+    ]
   },
   "preamble": {
     "path": "tools/proof-systems-reader-preamble.tex",
-    "sha256": "f4ebde39d42753f38013723540b819ab61ccd84a980f041d32053b6360a13390"
+    "sha256": "3492812c1845275d326cdbbf5a52bc05946018dd8b56ebf673a901ef4c394df2"
   },
   "builder": {
     "path": "tools/build_proof_systems_reader.py",
-    "sha256": "c0934b9018f77a22df46cc6c58dbc7e75c49ea1f6f149389b5d843661ea26ca7"
+    "sha256": "e67bad7abea2dba684c8137d75eb1a4929bd8a0bdfa713934d98b3d01c957d2e"
   },
   "manifest": {
     "path": "evidence/SOURCE_MANIFEST.jsonl",
@@ -888,8 +950,8 @@
   },
   "generated_tex": {
     "path": "reader.tex",
-    "bytes": 440072,
-    "sha256": "022ebabe8b01f097489d62a0a0177fc23f46c4ae01fca9c6d39c4d5bbb42200e"
+    "bytes": 448571,
+    "sha256": "d0dd494277b80f0ab45557a84280c2824052c2b5c73631726e7d3662cb938c19"
   },
   "tex_execution_policy": "Run only through tools/guard_tex.ps1 with Global\\InterlanguageTeXSlotV1."
 }
