@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B029-LINDENBAUM",
-  "status": "cumulative-Lindenbaum-draft; proof-systems reader published as v0.4.0 and anonymously verified on GitHub and Zenodo; OLP-0132 term-model translation is next",
+  "batch_id": "PS-B030-CONSTRUCTION-MODEL",
+  "status": "cumulative-construction-model-draft; proof-systems reader published as v0.4.1 and anonymously verified on GitHub and Zenodo; OLP-0133 identity term-model translation is next",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -2710,6 +2710,35 @@
         "TERM-SUBSET"
       ],
       "scope": "The sentence enumeration, consistency-preserving stage construction, nested-stage induction, finite-witness argument and final completeness alternative are retained under both FOL and propositional proof-system reference profiles. OLCOM-002 supplies the omitted empty finite-subset case."
+    },
+    "OLP-0132": {
+      "batch_id": "PS-B030-CONSTRUCTION-MODEL",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PREDICATE",
+        "TERM-FUNCTION",
+        "TERM-DOMAIN",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-RECURSIVE",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "The FOL term-model construction and the propositional valuation construction remain distinct. The value lemma, covered-model quantifier equivalences and simultaneous-induction Truth Lemma preserve their assumptions and both directions. OLCOM-003 corrects the formula letter in the last equivalence of the universal induction case."
     }
   },
   "semantic_review": [
@@ -4152,6 +4181,42 @@
       "passage": "completeness of the union",
       "reverse_paraphrase": "Each sentence occurs at some index; if that sentence was not admitted, its negation was, so the final consistent union decides every sentence.",
       "finding": "The enumerated-sentence scope and the final negated alternative are preserved."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "FOL model and propositional valuation construction",
+      "reverse_paraphrase": "For FOL, extend Gamma to a complete consistent saturated Gamma-star and construct a term model; for propositional logic, use a complete consistent Gamma-star to assign truth values to propositional variables by membership.",
+      "finding": "The tag-conditioned split, equality exclusion, extension relation, completeness, consistency and saturation assumptions are all preserved."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "four clauses of the term model",
+      "reverse_paraphrase": "Use all closed terms as the domain, interpret each constant as itself, interpret a function by term formation, and put a tuple in a predicate extension exactly when the corresponding atomic sentence belongs to Gamma-star.",
+      "finding": "All four clauses retain their arities, argument order, closed-term scope and biconditional."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "value lemma",
+      "reverse_paraphrase": "Structural induction on a closed term shows its value in the term model is that same term: constants supply the base and the function clause supplies the induction step.",
+      "finding": "The base case, induction hypotheses, function arity and all three displayed equalities are preserved."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "covered-model quantifier proposition",
+      "reverse_paraphrase": "Because every domain element of the term model is a closed term, an existential sentence holds exactly when one closed instance holds, and a universal sentence holds exactly when every closed instance holds; the assignment proof converts between A(x) and A(t).",
+      "finding": "Both quantifier directions, variable-assignment scopes, extension reference and sentence independence reference are preserved."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "Truth Lemma base, atomic and Boolean cases",
+      "reverse_paraphrase": "Simultaneous induction proves satisfaction iff membership: falsity and truth use consistency and completeness, the atomic case uses the construction, and negation, conjunction, disjunction and implication use the induction hypothesis and complete-set laws.",
+      "finding": "Every satisfaction polarity, membership polarity, Boolean alternative and tagged exercise branch is retained."
+    },
+    {
+      "unit_id": "OLP-0132",
+      "passage": "Truth Lemma quantified cases",
+      "reverse_paraphrase": "The universal case passes from satisfaction of forall x B(x), through every closed instance B(t), to membership of forall x B(x); the existential case uses at least one closed instance throughout.",
+      "finding": "The source switches from B to A only in the universal case's final formula. OLCOM-003 restores B, matching the current induction formula and all preceding equivalences; the repair is disclosed beside the formula."
     }
   ]
 }

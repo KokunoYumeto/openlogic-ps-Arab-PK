@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 89 high-priority entries from the complete 179-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 89 high-priority entries from the complete 180-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -381,6 +381,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0101; Quantifier Rules; `content/first-order-logic/tableaux/quantifier-rules.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/tableaux/quantifier-rules.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0104; \usetoken{P}{tableau} with Quantifiers; `content/first-order-logic/tableaux/proving-things-quant.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 115,157; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 24,54; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -524,6 +525,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0052; dedekind-induction; `content/sets-functions-relations/infinite/dedekind-induction.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-induction.tex` target line(s) 66,77; page: pending stable pagination in a reader containing this unit
   - OLP-0061; \usetoken{P}{valuation} and Satisfaction; `content/propositional-logic/syntax-and-semantics/valuations-sat.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex` target line(s) 16,22; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 110; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 106,112,113,114; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 48; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -536,6 +538,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
 - Locations:
   - OLP-0021; Basics; `content/sets-functions-relations/functions/function-basics.tex` source line(s) 24,35,39,47,52,53,84,86,87,88,96,133,135; `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex` target line(s) 18,19,24,25,33,34,35,37,38,45,46,52,57,58,59,64,65,81,82,83,85,94,95,111,128,130,131; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 109,112,116,117,130; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 13,15,16,17,22,101,113,115,116,135; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 23,49,76,80,86,89,91,108; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 49,50,84,109,162,278,286; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -865,6 +868,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0061; \usetoken{P}{valuation} and Satisfaction; `content/propositional-logic/syntax-and-semantics/valuations-sat.tex` source line(s) 143,191; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex` target line(s) 23,150,156,198; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 56,91,94,95; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 56,93,96,97; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 63,66; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 63,66,67,73; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 83,85,95,169,196,211,223,234,244,254; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 84,86,96,172,199,214,227,239,250,256,265; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1008,6 +1012,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 69; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) 26,64,67; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 158; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 24,162; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 44; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 110; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 18,110,166,176,181,187,191,199,213,226,238; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SUBSTITUTION
 
@@ -1124,6 +1129,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 2,6,29,34; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 28,34; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 2,14,20; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 14,19; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 2; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 2; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -1240,6 +1246,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 6,29,34; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 28,34; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 14; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 23,82; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1326,6 +1333,7 @@ This view contains 89 high-priority entries from the complete 179-entry decision
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 50; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1476,17 +1484,18 @@ This view contains 89 high-priority entries from the complete 179-entry decision
 
 ## TERM-COMPLETENESS-CONSTRUCTION
 
-- Source term or sense: complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model
-- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل
-- Why provisional: general semantic, consistency and proof concepts attested; exact construction labels unattested and provisional
-- Rationale: A complete consistent set decides every sentence while remaining syntactically consistent. Saturation supplies quantified witnesses; Lindenbaum extension completes the set; the term model uses closed terms or their identity classes. The compact Pashto labels are edition choices, and the cited Afghan logic is only a regional comparator.
-- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل
-- Please double-check: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Source term or sense: complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma
+- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه
+- Why provisional: general semantic, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
+- Rationale: A complete consistent set decides every sentence while remaining syntactically consistent. Saturation supplies quantified witnesses; Lindenbaum extension completes the set; the term model uses closed terms as its domain. The Truth Lemma equates satisfaction in that constructed model (or in the propositional valuation) with membership in the complete set. The compact Pashto labels are edition choices, and the cited Afghan logic is only a regional comparator.
+- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه
+- Please double-check: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 140,156,165; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 144,147,158,160,171; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 17; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 156; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 11,15,39; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 13,26; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 40,65,118,163; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 30,37,40,41,65,80,85,111,118,166; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DECIDABILITY
 

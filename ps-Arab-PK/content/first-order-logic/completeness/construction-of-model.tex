@@ -1,0 +1,291 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: construction-of-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{mod}}
+      {\olfileid{pl}{com}{mod}}
+
+\olsection{د يو مدل جوړونه}
+
+\begin{explain}
+\iftag{FOL}{اوس مهال مو له~$\eq$ سره کار نشته؛ يعنې يوازې دا ښودل
+  غواړو چې د~!!{sentence}s يو سازګار سټ~$\Gamma$ چې~$\eq$ نۀ لري،
+  د صدق وړ دے۔ لومړے~$\Gamma$ يوه سازګار، !!{complete} او مشبوع
+  سټ~$\Gamma^*$ ته غځوو۔ په دې حالت کښې د مدل
+  $\Struct{M(\Gamma^*)}$ تعريف ساده دے: د~$\Lang{L'}$ د تړلو
+  ترمونو سټ د تعريف ساحه ګرځوو۔ هر !!{constant} پخپله ځان ته
+  ورګومارو، او په عمومي ډول دا باوري کوو چې د هر تړلي ترم~$t$
+  دپاره~$\Value{t}{M(\Gamma^*)} = t$۔ !!{predicate}s داسې تفسيروو
+  چې يوه اتومي !!{sentence} په~$\Struct{M(\Gamma^*)}$ کښې هله او
+  يوازې هله رښتونې وي چې په~$\Gamma^*$ کښې وي۔ دا به څرګنده توګه
+  په~$\Gamma^*$ کښې ټولې اتومي !!{sentence}s
+  په~$\Struct{M(\Gamma^*)}$ کښې رښتونې کړي۔ نورې جملې هم رښتونې
+  دي، په دې شرط چې هغه~$\Gamma^*$ چې ترې پيل کوو، سازګار، بشپړ او
+  مشبوع وي۔}{اوس چمتو يو چې داسې !!a{valuation} تعريف کړو چې ټول
+  $!A \in \Gamma$ رښتوني کړي۔ د دې دپاره لومړے د لينډنباوم لمه
+  پلي کوو: يو بشپړ سازګار~$\Gamma^* \supseteq \Gamma$ ترلاسه کوو۔
+  په~$\Gamma^*$ کښې !!{propositional variable}s دې
+  $\pAssign v(\Gamma^*)$ وټاکي۔}
+\end{explain}
+
+\iftag{FOL}{%
+\begin{defn}[ترمي مدل]
+\ollabel{defn:termmodel}
+فرض کړئ~$\Gamma^*$ په ژبه~$\Lang L$ کښې د~!!{sentence}s يو
+!!a{complete}، سازګار او مشبوع سټ دے۔ د~$\Gamma^*$
+\emph{ترمي مدل}~$\Struct M(\Gamma^*)$ هغه !!{structure} ده چې په
+لاندې ډول تعريفېږي:
+\begin{enumerate}
+\item د !!{domain}~$\Domain{M(\Gamma^*)}$ د~$\Lang L$ د ټولو
+  تړلو ترمونو سټ دے۔
+\item د !!a{constant}~$c$ تفسير پخپله~$c$ دے:
+  $\Assign{c}{M(\Gamma^*)} = c$۔
+\item !!{function}~$f$ ته هغه تابع ګومارل کېږي چې تړلي ترمونه
+  $t_1$، \dots،~$t_n$ د ارګومېنټونو په توګه واخلي او تړلے
+  ترم~$f(t_1, \dots, t_n)$ د قيمت په توګه ولري:
+\[
+\Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
+\]
+\item که~$R$ يو $n$-مقامي !!{predicate} وي، نو
+  \[
+  \tuple{t_1, \dots,
+  t_n} \in \Assign{R}{M(\Gamma^*)} \text{ هله او يوازې هله چې } \Atom{R}{t_1, \dots,
+    t_n} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{defn}
+}{%
+\begin{defn}
+\ollabel{defn:termmodel}
+فرض کړئ~$\Gamma^*$ د~!!{formula}s يو بشپړ سازګار سټ دے۔ بيا ټاکو چې
+\[
+\pAssign v(\Gamma^*)(p) = \begin{cases}
+  \True & \text{که $p \in \Gamma^*$ وي؛}\\
+  \False & \text{که $p \notin \Gamma^*$ وي۔}
+  \end{cases}
+\]
+\end{defn}
+}
+
+\iftag{FOL}{%
+اوس به وګورو چې په رښتيا~$\Value{t}{M(\Gamma^*)} = t$ لرو۔
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel} فرض کړئ~$\Struct M(\Gamma^*)$ د
+\olref{defn:termmodel} ترمي مدل دے؛ بيا د هر تړلي ترم دپاره
+$\Value{t}{M(\Gamma^*)} = t$۔
+\end{lem}
+\begin{proof}
+ ثبوت پر~$t$ د استقرا له لارې دے۔ د بنسټ حالت، چې~$t$
+ يو !!a{constant} وي، نېغ په نېغه د ترمي مدل له تعريف څخه ترلاسه
+ کېږي۔ د استقرا د ګام دپاره فرض کړئ~$t_1, \ldots, t_n$ داسې تړلي
+ ترمونه دي چې~$\Value{t_i}{M(\Gamma^*)} = t_i$، او~$f$ يوه
+ $n$-مقامي !!{function} ده۔ بيا
+\begin{align*}
+\Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
+ {M(\Gamma^*)},
+\ldots, \Value{t_n}{M(\Gamma^*)}) \\
+&= \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) \\
+&= f(t_1,\dots, t_n),
+\end{align*}
+او نو د استقرا له مخې دا د هر تړلي ترم~$t$ دپاره سم دي۔
+\end{proof}
+}
+
+\iftag{FOL}{%
+\begin{explain}
+  \iftag{prvEx}{!!^a{structure}~$\Struct{M}$ ښائي يوه په وجودي ډول
+    کميت ټاکونکې !!{sentence}~$\lexists[x][!A(x)]$ رښتونې کړي،
+    بې له دې چې کومه بېلګه~$!A(t)$ ئې رښتونې کړې وي۔}{}
+  \iftag{prvAll}{!!^a{structure}~$\Struct{M}$ ښائي د يوې په عمومي
+    ډول کميت ټاکونکې !!{sentence}~$\lforall[x][!A(x)]$ ټولې
+    بېلګې~$!A(t)$ رښتونې کړي، خو پخپله~$\lforall[x][!A(x)]$
+    رښتونې نۀ کړي۔}{} لامل دا دے چې په عمومي ډول د~$\Domain{M}$
+  هر !!{element} د کوم تړلي ترم قيمت نۀ وي
+  ($\Struct{M}$ ښائي پوښلے نۀ وي)۔ همدا لامل دے چې د صدق اړيکه د
+  متغير-ګومارنو له لارې تعريفېږي۔ خو زموږ د ترمي مدل
+  $\Struct{M(\Gamma^*)}$ دپاره دا اړينه نۀ ده، ځکه هغه پوښلے دے۔
+  راتلونکې نتيجه همدا وايي۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:quant-termmodel}
+فرض کړئ~$\Struct M(\Gamma^*)$ د~\olref{defn:termmodel} ترمي مدل دے۔
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ هله او يوازې هله چې
+  لږ تر لږه د يوه تړلي ترم~$t$ دپاره~$\Sat{M(\Gamma^*)}{!A(t)}$ وي۔}{}
+\tagitem{prvAll}{$\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ هله او يوازې هله چې
+  د ټولو تړلو ترمونو~$t$ دپاره~$\Sat{M(\Gamma^*)}{!A(t)}$ وي۔}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{%
+  \iftag{probEx}{تمرين۔}{د~\olref[syn][ass]{prop:sat-quant} له مخې،
+    $\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ هله او يوازې هله چې لږ
+    تر لږه د يوې متغير-ګومارنې~$s$ دپاره
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ وي۔ ځکه
+    $\Domain{M(\Gamma^*)}$ د~$\Lang{L}$ له تړلو ترمونو جوړ دے، دا
+    هله او يوازې هله کېږي چې لږ تر لږه يو تړلے ترم~$t$ وي، داسې چې
+    $s(x) = t$ او~$\Sat{M(\Gamma^*)}{!A(x)}[s]$۔ د
+    \olref[fol][syn][ext]{prop:ext-formulas} له مخې، چې~$s(x) = t$
+    وي، $\Sat{M(\Gamma^*)}{!A(x)}[s]$ هله او يوازې هله چې
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ وي۔ د
+    \olref[fol][syn][ass]{prop:sentence-sat-true} له مخې،
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ هله او يوازې هله چې
+    $\Sat{M(\Gamma^*)}{!A(t)}$ وي، ځکه~$!A(t)$ يوه جمله ده۔}}{}
+\tagitem{prvAll}{%
+  \iftag{probAll}{تمرين۔}{د~\olref[syn][ass]{prop:sat-quant} له مخې،
+    $\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ هله او يوازې هله چې د
+    هرې متغير-ګومارنې~$s$ دپاره~$\Sat{M(\Gamma^*)}{!A(x)}[s]$ وي۔
+    راياد کړئ چې~$\Domain{M(\Gamma^*)}$ د~$\Lang{L}$ له تړلو
+    ترمونو جوړ دے؛ نو د هر تړلي ترم~$t$ دپاره~$s(x) = t$ داسې يوه
+    متغير-ګومارنه ده، او د هرې متغير-ګومارنې دپاره~$s(x)$ کوم تړلے
+    ترم~$t$ دے۔ د~\olref[fol][syn][ext]{prop:ext-formulas} له مخې،
+    چې~$s(x) = t$ وي، $\Sat{M(\Gamma^*)}{!A(x)}[s]$ هله او يوازې
+    هله چې~$\Sat{M(\Gamma^*)}{!A(t)}[s]$ وي۔ د
+    \olref[fol][syn][ass]{prop:sentence-sat-true} له مخې،
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ هله او يوازې هله چې
+    $\Sat{M(\Gamma^*)}{!A(t)}$ وي، ځکه~$!A(t)$ يوه جمله ده۔}}{}
+\end{tagenumerate}
+\end{proof}
+}{}
+
+\tagprob[FOL]{probEx,probAll}
+\begin{prob}
+د~\olref[fol][com][mod]{prop:quant-termmodel} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{lem}[د صدق لمه]
+\ollabel{lem:truth} \iftag{FOL}{فرض کړئ~$!A$،~$\eq$ نۀ لري۔ بيا}{}
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ هله او يوازې هله چې $!A \in \Gamma^*$ وي۔
+\end{lem}
+
+\begin{proof}
+دواړه لوري په يو وخت، او پر~$!A$ د استقرا له لارې ثابتوو۔
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}
+  {$\iftag{FOL}{\Sat/{M(\Gamma^*)}{\lfalse}}{\pSat/{v(\Gamma^*)}{\lfalse}}$
+    د صدق د تعريف له مخې۔ له بلې خوا، ځکه~$\Gamma^*$ سازګار دے،
+    نو~$\lfalse \notin \Gamma^*$۔}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}
+  {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\ltrue}$
+    د صدق د تعريف له مخې۔ له بلې خوا، ځکه~$\Gamma^*$ سازګار او
+    !!{complete} دے، او~$\Gamma^* \Proves \ltrue$، نو
+    $\ltrue \in \Gamma^*$۔}}{}
+
+\tagitem{FOL}{\indcase{!A}{R(t_1, \dots, t_n)}
+  {$\Sat{M(\Gamma^*)}{\Atom{R}{t_1, \dots, t_n}}$ هله او يوازې هله چې $\tuple{t_1,
+      \dots, t_n} \in \Assign{R}{M(\Gamma^*)}$ وي (د صدق د تعريف
+    له مخې)، او دا هله او يوازې هله چې
+    $R(t_1, \dots, t_n) \in \Gamma^*$ وي (د~$\Struct
+    M(\Gamma^*)$ د جوړونې له مخې)۔}}{\indcase{!A}{p}{$\pSat{v(\Gamma^*)}{p}$ هله او يوازې هله چې
+    $\pAssign v(\Gamma^*)(p) = \True$ وي (د صدق د تعريف له مخې)،
+    او دا هله او يوازې هله چې~$p \in \Gamma^*$ وي (د
+    $\pAssign v(\Gamma^*)$ د جوړونې له مخې)۔}}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ هله او يوازې هله چې
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    وي (د صدق د تعريف له مخې)۔ د استقرا د فرضيې له مخې،
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    هله او يوازې هله چې~$!B \notin \Gamma^*$ وي۔ ځکه~$\Gamma^*$
+    سازګار او !!{complete} دے، $!B \notin \Gamma^*$ هله او يوازې
+    هله چې~$\lnot !B \in \Gamma^*$ وي۔}}{}
+
+\tagitem{prvAnd}{%
+\iftag{probAnd}{%
+  \indcase!{!A}{!B \land !C}{}}{%
+  \indcase{!A}{!B \land
+    !C}{$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    هله او يوازې هله چې دواړه
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ او
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ ولرو
+    (د صدق د تعريف له مخې)، او دا هله او يوازې هله چې دواړه
+    $!B \in \Gamma^*$ او~$!C \in \Gamma^*$ وي (د استقرا د فرضيې
+    له مخې)۔ د~\olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-and} له
+    مخې، دا هله او يوازې هله کېږي چې~$(!B \land !C) \in \Gamma^*$۔}}}{}
+
+\tagitem{prvOr}{%
+\iftag{probOr}{%
+  \indcase!{!A}{!B \lor !C}{}}{%
+  \indcase{!A}{!B \lor !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    هله او يوازې هله چې
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ يا
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ وي
+    (د صدق د تعريف له مخې)، او دا هله او يوازې هله چې
+    $!B \in \Gamma^*$ يا~$!C \in \Gamma^*$ وي (د استقرا د فرضيې
+    له مخې)۔ دا هله او يوازې هله کېږي چې
+    $(!B \lor !C) \in \Gamma^*$ وي (د
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-or} له مخې)۔}}}{}
+
+\tagitem{prvIf}{%
+\iftag{probIf}{%
+  \indcase!{!A}{!B \lif !C}{}}{%
+  \indcase{!A}{!B \lif !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$
+    هله او يوازې هله چې~$\iftag{FOL}{\Sat/{M(\Gamma^*)}}{\pSat/{v(\Gamma^*)}}{!B}$ يا~$\iftag{FOL}{\Sat{M (\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ وي (د
+    صدق د تعريف له مخې)، او دا هله او يوازې هله چې
+    $!B \notin \Gamma^*$ يا~$!C \in \Gamma^*$ وي (د استقرا د فرضيې
+    له مخې)۔ دا هله او يوازې هله کېږي چې
+    $(!B \lif !C) \in \Gamma^*$ وي (د
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-if} له مخې)۔}}}{}
+
+\iftag{FOL}{%
+\tagitem{prvAll}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B(x)]}{}}{%
+    \indcase{!A}{\lforall[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ هله او يوازې هله چې
+      د ټولو تړلو ترمونو~$t$ دپاره~$\Sat{M(\Gamma^*)}{!B(t)}$ وي
+      (\olref{prop:quant-termmodel})۔ د استقرا د فرضيې له مخې، دا
+      هله او يوازې هله چې د ټولو تړلو ترمونو~$t$ دپاره
+      $!B(t) \in \Gamma^*$ وي؛ د
+      \olref[hen]{prop:saturated-instances} له مخې بيا دا هله او
+      يوازې هله چې~$\lforall[x][!B(x)] \in \Gamma^*$ وي۔
+      \textbf{د ژباړې د نسخې سمون (OLCOM-003):} د سرچينې په
+      وروستۍ فورمول کښې د استقرا له اوسني حالت سره ناسمه
+      فورمول-نښه راغلې؛ دلته د همدې حالت نښه کارول شوې۔}}}{}
+
+\tagitem{prvEx}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B(x)]}{}}{%
+    \indcase{!A}{\lexists[x][!B(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ هله او يوازې هله چې
+      لږ تر لږه د يوه تړلي ترم~$t$ دپاره
+      $\Sat{M(\Gamma^*)}{!B(t)}$ وي
+      (\olref{prop:quant-termmodel})۔ د استقرا د فرضيې له مخې، دا
+      هله او يوازې هله چې لږ تر لږه د يوه تړلي ترم~$t$ دپاره
+      $!B(t) \in \Gamma^*$ وي۔ د
+      \olref[hen]{prop:saturated-instances} له مخې بيا دا هله او
+      يوازې هله چې~$\lexists[x][!B(x)] \in \Gamma^*$ وي۔}}}{}
+}{}
+\end{enumerate}
+\end{proof}
+
+
+\tagprob[FOL]{probOr,probAnd,probIf,probEx,probAll}
+
+\begin{prob}
+د~\olref[fol][com][mod]{lem:truth} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\tagendprob
+
+\tagprob[notFOL]{probOr,probAnd,probIf}
+
+\begin{prob}
+د~\olref[pl][com][mod]{lem:truth} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\tagendprob
+
+\end{document}

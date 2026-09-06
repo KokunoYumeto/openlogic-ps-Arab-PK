@@ -692,6 +692,24 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Frozen source: `content/first-order-logic/completeness/outline.tex` (b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1) at `completeness/outline.tex:66-80`
 - Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/outline.tex:73`
 - Audit: `PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS`
-- Treatment: condition (b) now requires deciding every sentence, rather than only every atomic sentence, in agreement with the same paragraph and the formal complete-set definition.
+- Treatment: condition (b) now requires deciding every sentence A, rather than only every atomic sentence.
 - Disclosure: `remove-spurious-atomic-qualifier-plus-adjacent-note`.
+
+## OLCOM-002
+
+- Unit: `OLP-0131`
+- Frozen source: `content/first-order-logic/completeness/lindenbaums-lemma.tex` (096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47) at `completeness/lindenbaums-lemma.tex:76-87`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex:80`
+- Audit: `PS-OWNER-SEMANTIC-20260905-LINDENBAUM`
+- Treatment: the union-consistency proof now handles the empty finite subset before selecting the greatest stage index for a nonempty finite subset.
+- Disclosure: `add-empty-finite-subset-case-plus-adjacent-note`.
+
+## OLCOM-003
+
+- Unit: `OLP-0132`
+- Frozen source: `content/first-order-logic/completeness/construction-of-model.tex` (4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702) at `completeness/construction-of-model.tex:238-247`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:255`
+- Audit: `PS-OWNER-SEMANTIC-20260906-CONSTRUCTION-MODEL`
+- Treatment: the universal Truth Lemma case concludes with membership of forall x B(x), matching its induction formula and every preceding B(t) equivalence, instead of the source's forall x A(x).
+- Disclosure: `correct-current-induction-formula-symbol-plus-adjacent-note`.
 

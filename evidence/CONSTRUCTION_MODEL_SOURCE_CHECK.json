@@ -1,0 +1,65 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T02:50:19.782307+00:00",
+  "batch_id": "PS-B030-CONSTRUCTION-MODEL",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0132",
+      "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+      "source_bytes": 11011,
+      "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+      "translation_bytes": 14370,
+      "translation_sha256": "fa306867d456f51339ab525b93cae52b7723dfdbb0ec703db610d46a27c27cc8"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0132 lines 13-73",
+      "observation": "The FOL term-model motivation, four definition clauses and distinct propositional valuation branch were checked formula by formula.",
+      "treatment": "No source defect found; all assumptions, tag branches, arities and membership conditions are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0132 lines 75-98",
+      "observation": "The value lemma was traced through its constant base and function-term induction step.",
+      "treatment": "No source defect found; the closed-term scope and equality chain are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0132 lines 99-160",
+      "observation": "The covered-model explanation, existential and universal instance claims, and the variable-assignment proof were checked in both directions.",
+      "treatment": "No source defect found; 'terms' is rendered as closed terms where the cited proposition and the term-model domain make that restriction explicit.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0132 lines 163-236",
+      "observation": "The Truth Lemma statement and its falsity, truth, atomic, negation and Boolean cases were checked for satisfaction and membership polarity.",
+      "treatment": "No source defect found in these cases; all tagged proof alternatives remain intact.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0132 lines 238-257",
+      "observation": "The universal induction case begins with forall x B(x) and uses B(t) throughout, but the source's final formula unexpectedly switches to forall x A(x).",
+      "treatment": "The final formula is corrected to forall x B(x), with an adjacent Pashto disclosure; the existential case needs no change.",
+      "correction_id": "OLCOM-003"
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-003",
+      "classification": "truth_lemma_universal_case_uses_wrong_formula_letter",
+      "source_locator": "completeness/construction-of-model.tex:238-247",
+      "target_line_1based": 255,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[x][!A(x)]\\in\\Gamma^*$"
+        ],
+        "target_only": [
+          "$\\lforall[x][!B(x)]\\in\\Gamma^*$"
+        ]
+      }
+    }
+  ],
+  "conclusion": "One formula-letter defect is corrected and disclosed. Every remaining model clause, valuation case, satisfaction polarity, quantifier scope, induction dependency and reference is preserved."
+}

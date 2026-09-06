@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted-in-draft; OLP-0056–0125 published and anonymously verified in the v0.4.0 proof-systems reader; OLP-0126–0131 pending later reader integration",
-  "adopted_utc": "2026-09-05T17:03:49.828729+00:00",
+  "status": "adopted-in-draft; OLP-0056–0125 published and anonymously verified in the v0.4.1 proof-systems reader; OLP-0126–0132 pending later reader integration",
+  "adopted_utc": "2026-09-06T02:50:19.780714+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -1853,6 +1853,31 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260905-LINDENBAUM",
       "formula_policy": "No source formula, membership, subset relation or compactness reference changes; only the omitted empty case and an adjacent disclosure are added in prose.",
       "decision_timing": "contemporaneous owner proof trace of the finite-subset argument before selecting a maximum witness index"
+    },
+    {
+      "id": "OLCOM-003",
+      "unit_id": "OLP-0132",
+      "classification": "truth_lemma_universal_case_uses_wrong_formula_letter",
+      "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+      "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+      "source_locator": "completeness/construction-of-model.tex:238-247",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex",
+      "target_line_1based": 255,
+      "target_sha256": "fa306867d456f51339ab525b93cae52b7723dfdbb0ec703db610d46a27c27cc8",
+      "mode": "correct-current-induction-formula-symbol-plus-adjacent-note",
+      "translation_change": "the universal Truth Lemma case concludes with membership of forall x B(x), matching its induction formula and every preceding B(t) equivalence, instead of the source's forall x A(x)",
+      "counterexample": "The induction case fixes the current formula as forall x B(x). Its satisfaction is reduced to membership of every B(t); that chain cannot conclude membership of the unrelated formula forall x A(x).",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260906-CONSTRUCTION-MODEL",
+      "formula_policy": "Exactly one source math span changes from forall x A(x) to forall x B(x); all other formulas, memberships, quantifier scopes, tag branches and references remain unchanged.",
+      "decision_timing": "contemporaneous owner proof trace of the universal Truth Lemma induction case against its declared current formula and preceding instance equivalences",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[x][!A(x)]\\in\\Gamma^*$"
+        ],
+        "target_only": [
+          "$\\lforall[x][!B(x)]\\in\\Gamma^*$"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -1860,7 +1885,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate and verify term models OLP-0132, then continue the completeness chapter while preserving the verified v0.4.0 artifacts.",
+  "next_action": "Translate and verify the identity term model OLP-0133.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -1881,7 +1906,8 @@
     "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-METATHEORY",
     "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
     "PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS",
-    "PS-OWNER-SEMANTIC-20260905-LINDENBAUM"
+    "PS-OWNER-SEMANTIC-20260905-LINDENBAUM",
+    "PS-OWNER-SEMANTIC-20260906-CONSTRUCTION-MODEL"
   ],
   "source_authorities": [
     {

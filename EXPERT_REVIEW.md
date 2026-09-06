@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 131 of 722 source units are translated drafts. This log contains 95 terminology entries and 84 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 132 of 722 source units are translated drafts. This log contains 95 terminology entries and 85 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -844,10 +844,10 @@ Every terminology entry below was backfilled from the existing decision ledger a
 ## TERM-COMPLETENESS-CONSTRUCTION
 
 - Type: terminology
-- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل
-- Uncertainty: general semantic, consistency and proof concepts attested; exact construction labels unattested and provisional
-- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل
-- Review question: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه
+- Uncertainty: general semantic, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
+- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه
+- Review question: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## TERM-DECIDABILITY
@@ -1560,6 +1560,15 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCOM-002 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner proof trace of the finite-subset argument before selecting a maximum witness index
+
+## DEC-OLCOM-003
+
+- Type: source-correction
+- Choice: the universal Truth Lemma case concludes with membership of forall x B(x), matching its induction formula and every preceding B(t) equivalence, instead of the source's forall x A(x)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner proof trace of the universal Truth Lemma induction case against its declared current formula and preceding instance equivalences
 
 ## DEC-REL-I
 
