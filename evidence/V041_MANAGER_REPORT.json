@@ -1,0 +1,67 @@
+{
+  "schema": "ps-openlogic-manager-report/1",
+  "status": "sent",
+  "sent_utc": "2026-09-06T02:32:26.135805+00:00",
+  "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
+  "release": {
+    "tag": "v0.4.1-proof-systems-reference-repair",
+    "tagged_commit": "f4b86a4e50cc204f42f5689c593c49b4127d7a97",
+    "purpose": "bounded reader and embedded-evidence repair; no new translation-unit credit"
+  },
+  "repair": {
+    "raw_reference_fallbacks_before": 37,
+    "raw_reference_fallbacks_after": 0,
+    "source_link_annotations": 37,
+    "unique_source_targets": 8,
+    "affected_pages_1based": [
+      41,
+      42,
+      44,
+      64,
+      65,
+      68,
+      91,
+      94,
+      107
+    ],
+    "reader_pages": 108,
+    "reader_sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+    "byte_identical_guarded_passes": 3,
+    "unchanged_pages_pixel_identical_to_v040": 96
+  },
+  "coverage": {
+    "reader_units": 70,
+    "source_snapshot_units": 131,
+    "total_units": 722,
+    "new_translation_units": 0
+  },
+  "canonical_review": {
+    "decisions": 179,
+    "paired_occurrences": 9084,
+    "reader_pages_available": 3783,
+    "reader_pages_pending": 5301,
+    "qa_sha256": "a3a62a70a445fa56fea029d2c37c3f4de052ce572302296f6626ca787caa1c5e"
+  },
+  "publication": {
+    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.4.1-proof-systems-reference-repair",
+    "github_assets_verified": 3,
+    "github_tag_files_verified": 1026,
+    "zenodo_record": "https://zenodo.org/records/22442605",
+    "zenodo_doi": "10.5281/zenodo.22442605",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197",
+    "zenodo_assets_verified": 15,
+    "anonymous_readback_verified": true
+  },
+  "preservation": {
+    "predecessor_tag": "v0.4.0-proof-systems",
+    "predecessor_reader_sha256": "d894c835b32137a81bc3e3f762b1fc3270466480754c7678991066b5ca2e8cb5",
+    "previous_records_still_open": [
+      22381723,
+      22312916,
+      22307753,
+      22307198
+    ],
+    "finding": "The v0.4.0 files remain byte-identical and publicly downloadable."
+  },
+  "next_action": "Resume the full-corpus translation at OLP-0132 without changing the frozen v0.4.0 or v0.4.1 artifacts."
+}
