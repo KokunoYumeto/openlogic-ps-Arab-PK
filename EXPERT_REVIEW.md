@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 132 of 722 source units are translated drafts. This log contains 95 terminology entries and 85 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 137 of 722 source units are translated drafts. This log contains 96 terminology entries and 91 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -808,10 +808,10 @@ Every terminology entry below was backfilled from the existing decision ledger a
 ## TERM-DERIVABILITY-PROPERTIES
 
 - Type: terminology
-- Choice: ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت
-- Uncertainty: proof, consistency and relational-property concepts regionally supported; exact proof-theoretic and compactness compounds provisional
-- Alternatives: د ثبوت اړوند مفاهيم; انعکاس، زياتېدنه، انتقال او تراکم
-- Review question: In Pakistani Pashto mathematical prose, is «ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت» the clearest conventional rendering of “proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness)” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Choice: ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت / په متناهي ډول د صدق وړ / د متناهي شاهد قضيه
+- Uncertainty: proof, consistency, satisfiability and relational concepts regionally supported; exact proof-theoretic and compactness compounds provisional
+- Alternatives: د ثبوت اړوند مفاهيم; انعکاس، زياتېدنه، انتقال او تراکم; د تراکم قضيه; په متناهي ډول پوره کېدونکی
+- Review question: In Pakistani Pashto mathematical prose, is «ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت / په متناهي ډول د صدق وړ / د متناهي شاهد قضيه» the clearest conventional rendering of “proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness) / finitely satisfiable / Compactness Theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## TERM-SEQUENT-SOUNDNESS
@@ -844,10 +844,10 @@ Every terminology entry below was backfilled from the existing decision ledger a
 ## TERM-COMPLETENESS-CONSTRUCTION
 
 - Type: terminology
-- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه
-- Uncertainty: general semantic, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
-- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه
-- Review question: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه / خارج قسمت شوے ترمي مدل
+- Uncertainty: general semantic, equality, relation, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
+- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه; د هم ارزښتۍ پر ټولګيو جوړ مدل
+- Review question: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه / خارج قسمت شوے ترمي مدل» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma / factored term model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## TERM-DECIDABILITY
@@ -857,6 +857,15 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Uncertainty: supporting axiom and proof concepts attested; exact metatheoretic labels unattested and provisional
 - Alternatives: اکسيوماتيک کېدونکې; فيصله کېدونکې; الګوريتمي پرېکړه لرونکې
 - Review question: In Pakistani Pashto mathematical prose, is «د بديهي اصولو له لارې څرګندېدونکې / د پرېکړې وړ» the clearest conventional rendering of “axiomatizable / decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-LOWENHEIM-SKOLEM
+
+- Type: terminology
+- Choice: د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل
+- Uncertainty: countability concepts regionally attested; theorem names and exact compounds provisional
+- Alternatives: د لووينهايم--سکولم قضيه; د سکولم معما; تر زياته حده د شمېر وړ مدل
+- Review question: In Pakistani Pashto mathematical prose, is «د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل» the clearest conventional rendering of “Löwenheim–Skolem Theorem / Skolem's Paradox / at most denumerable model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## DEC-OLFUN-001
@@ -1569,6 +1578,60 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCOM-003 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner proof trace of the universal Truth Lemma induction case against its declared current formula and preceding instance equivalences
+
+## DEC-OLCOM-004
+
+- Type: source-correction
+- Choice: removes the duplicated comma between the (i+1)-st argument and the ellipsis in the first function term of the congruence proof obligation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the two sides of the displayed function congruence obligation
+
+## DEC-OLCOM-005
+
+- Type: source-correction
+- Choice: changes the negated predicate instance from R(t) to R(t-prime), the alternative representative introduced by the sentence and used in the resulting nonmembership claim
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner trace of the representative-independence counterexample from its alternative-term premise to its alternative-class conclusion
+
+## DEC-OLCOM-006
+
+- Type: source-correction
+- Choice: handles an empty Delta-prime by choosing the first positive size index before applying the source's largest-index argument to a nonempty finite subset
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner proof trace of the arbitrary finite-subset argument before selecting a maximum size index
+
+## DEC-OLCOM-007
+
+- Type: source-correction
+- Choice: uses the ordinary term model only when identity is absent and adds the factored term-model branch, with equivalence and congruence laws obtained directly from finite satisfiability, when identity is present
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner comparison of the direct proof with the immediately preceding identity-aware completeness proof and the stated scope of the term-model Truth Lemma
+
+## DEC-OLCOM-008
+
+- Type: source-correction
+- Choice: adds the required third argument {} to the FOL-only iftag around the value lemma; the selected FOL text is unchanged and the repair is disclosed immediately after the proof
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous reader-integration parse against the frozen three-argument iftag definition
+
+## DEC-OLCOM-009
+
+- Type: source-correction
+- Choice: adds the required third argument {} to the FOL-only iftag around the replacement-reference clause and discloses the repair immediately after that clause
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCOM-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous reader-integration parse against the frozen three-argument iftag definition
 
 ## DEC-REL-I
 

@@ -713,3 +713,57 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: the universal Truth Lemma case concludes with membership of forall x B(x), matching its induction formula and every preceding B(t) equivalence, instead of the source's forall x A(x).
 - Disclosure: `correct-current-induction-formula-symbol-plus-adjacent-note`.
 
+## OLCOM-004
+
+- Unit: `OLP-0133`
+- Frozen source: `content/first-order-logic/completeness/identity.tex` (bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71) at `completeness/identity.tex:66-72`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:72`
+- Audit: `PS-OWNER-SEMANTIC-20260906-IDENTITY-TERM-MODEL`
+- Treatment: removes the duplicated comma between the (i+1)-st argument and the ellipsis in the first function term of the congruence proof obligation.
+- Disclosure: `remove-duplicate-comma-plus-adjacent-note`.
+
+## OLCOM-005
+
+- Unit: `OLP-0133`
+- Frozen source: `content/first-order-logic/completeness/identity.tex` (bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71) at `completeness/identity.tex:113-132`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:131`
+- Audit: `PS-OWNER-SEMANTIC-20260906-IDENTITY-TERM-MODEL`
+- Treatment: changes the negated predicate instance from R(t) to R(t-prime), the alternative representative introduced by the sentence and used in the resulting nonmembership claim.
+- Disclosure: `restore-alternative-representative-plus-adjacent-note`.
+
+## OLCOM-006
+
+- Unit: `OLP-0135`
+- Frozen source: `content/first-order-logic/completeness/compactness.tex` (427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407) at `completeness/compactness.tex:184-195`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex:200`
+- Audit: `PS-OWNER-SEMANTIC-20260906-COMPACTNESS`
+- Treatment: handles an empty Delta-prime by choosing the first positive size index before applying the source's largest-index argument to a nonempty finite subset.
+- Disclosure: `add-empty-finite-subset-case-plus-adjacent-note`.
+
+## OLCOM-007
+
+- Unit: `OLP-0136`
+- Frozen source: `content/first-order-logic/completeness/compactness-direct.tex` (7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122) at `completeness/compactness-direct.tex:128-142`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:152`
+- Audit: `PS-OWNER-SEMANTIC-20260906-COMPACTNESS-DIRECT`
+- Treatment: uses the ordinary term model only when identity is absent and adds the factored term-model branch, with equivalence and congruence laws obtained directly from finite satisfiability, when identity is present.
+- Disclosure: `add-identity-aware-quotient-branch-plus-adjacent-note`.
+
+## OLCOM-008
+
+- Unit: `OLP-0132`
+- Frozen source: `content/first-order-logic/completeness/construction-of-model.tex` (4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702) at `completeness/construction-of-model.tex:75-98`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:98`
+- Audit: `PS-OWNER-READER-INTEGRATION-20260906-CONSTRUCTION-IFTAG`
+- Treatment: adds the required third argument {} to the FOL-only iftag around the value lemma; the selected FOL text is unchanged and the repair is disclosed immediately after the proof.
+- Disclosure: `supply-explicit-empty-inactive-branch-plus-adjacent-note`.
+
+## OLCOM-009
+
+- Unit: `OLP-0136`
+- Frozen source: `content/first-order-logic/completeness/compactness-direct.tex` (7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122) at `completeness/compactness-direct.tex:140-142`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:151`
+- Audit: `PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG`
+- Treatment: adds the required third argument {} to the FOL-only iftag around the replacement-reference clause and discloses the repair immediately after that clause.
+- Disclosure: `supply-explicit-empty-inactive-branch-plus-adjacent-note`.
+

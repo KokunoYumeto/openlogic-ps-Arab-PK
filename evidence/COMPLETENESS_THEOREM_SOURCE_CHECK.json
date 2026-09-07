@@ -1,0 +1,38 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T03:01:33.908320+00:00",
+  "batch_id": "PS-B032-COMPLETENESS-THEOREM",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0134",
+      "source_path": "content/first-order-logic/completeness/completeness-thm.tex",
+      "source_bytes": 4643,
+      "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
+      "translation_bytes": 5913,
+      "translation_sha256": "0af629f15fe7b70af36f3ee5433731352226cb8da6de6c3c4d256f9616a1b492"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0134 lines 13-49",
+      "observation": "The main theorem was traced through Henkin expansion, Lindenbaum extension, inherited saturation and all three semantic constructions.",
+      "treatment": "No source defect found; every tag branch and set inclusion is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0134 lines 51-81",
+      "observation": "The semantic-entailment corollary was checked through variable renaming, contraposition, unsatisfiability and proof-system inconsistency.",
+      "treatment": "No source defect found; all implication directions and references are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0134 lines 83-123",
+      "observation": "The equivalence and rule-dependency exercises were checked independently in the FOL and propositional tag profiles.",
+      "treatment": "No source defect found; the requested proof directions and audit scope are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source correction is required. Every construction dependency, semantic condition, proof-system reference, contraposition step and exercise instruction is preserved."
+}

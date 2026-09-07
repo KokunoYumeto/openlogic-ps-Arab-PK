@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B030-CONSTRUCTION-MODEL",
-  "status": "cumulative-construction-model-draft; proof-systems reader published as v0.4.1 and anonymously verified on GitHub and Zenodo; OLP-0133 identity term-model translation is next",
+  "batch_id": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
+  "status": "complete-completeness-chapter-draft; all OLP-0126–0137 units structurally translated; v0.4.1 proof-systems reader remains published and verified; OLP-0138 first-order-logic driver is next",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -2738,7 +2738,162 @@
         "TERM-PROOF-PROPERTIES",
         "TERM-LOGIC-FORMS"
       ],
-      "scope": "The FOL term-model construction and the propositional valuation construction remain distinct. The value lemma, covered-model quantifier equivalences and simultaneous-induction Truth Lemma preserve their assumptions and both directions. OLCOM-003 corrects the formula letter in the last equivalence of the universal induction case."
+      "scope": "The FOL term-model construction and the propositional valuation construction remain distinct. The value lemma, covered-model quantifier equivalences and simultaneous-induction Truth Lemma preserve their assumptions and both directions. OLCOM-003 corrects the formula letter in the last equivalence of the universal induction case. OLCOM-008 supplies and discloses the missing empty false branch on the FOL-only value-lemma selection macro."
+    },
+    "OLP-0133": {
+      "batch_id": "PS-B031-IDENTITY-TERM-MODEL",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-IDENTITY",
+        "TERM-EQUIVALENCE",
+        "TERM-REL-PROPERTIES",
+        "TERM-FUNCTION",
+        "TERM-PREDICATE",
+        "TERM-DOMAIN",
+        "TERM-ELEMENT",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-RECURSIVE",
+        "TERM-ENUMERABLE",
+        "TERM-FINITE",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "The failure of the raw term model with identity, the equality-induced equivalence relation, congruence conditions, quotient structure, representative independence, value lemma, identity case of the Truth Lemma and possible finiteness of the quotient are retained. OLCOM-004 removes one duplicate comma; OLCOM-005 restores the alternative representative in a negated satisfaction claim."
+    },
+    "OLP-0134": {
+      "batch_id": "PS-B032-COMPLETENESS-THEOREM",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-PROOF-PROPERTIES",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-LOGIC-FORMS",
+        "TERM-IDENTITY",
+        "TERM-EQUIVALENCE"
+      ],
+      "scope": "The Henkin and Lindenbaum extensions, inherited saturation, identity-free and identity-bearing model branches, Truth Lemma applications, contraposed second formulation and all proof-system reference profiles are retained without a source correction."
+    },
+    "OLP-0135": {
+      "batch_id": "PS-B033-COMPACTNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROP-SEMANTICS",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-FINITE",
+        "TERM-ENUMERABLE",
+        "TERM-DOMAIN",
+        "TERM-IDENTITY",
+        "TERM-FUNCTION",
+        "TERM-PREDICATE",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "Both Compactness Theorem formulations, the soundness/finite-proof/completeness proof, uncovered models, infinitesimals, nonstandard arithmetic and infinitude-versus-finitude applications are retained. OLCOM-006 supplies the empty finite-subset case before choosing a largest index."
+    },
+    "OLP-0136": {
+      "batch_id": "PS-B034-COMPACTNESS-DIRECT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROP-SEMANTICS",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-FINITE",
+        "TERM-IDENTITY",
+        "TERM-EQUIVALENCE",
+        "TERM-DOMAIN",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-RECURSIVE",
+        "TERM-LOGIC-FORMS"
+      ],
+      "scope": "The direct finite-satisfiability analogues of complete-set closure, Henkin saturation, quantified instances, Lindenbaum extension and the Truth Lemma are retained under both logic profiles. OLCOM-007 supplies the omitted identity-aware quotient branch in the direct FOL proof. OLCOM-009 supplies and discloses the missing empty false branch in the replacement-reference selection clause."
+    },
+    "OLP-0137": {
+      "batch_id": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P62-DOMAIN"
+      ],
+      "terms": [
+        "TERM-LOWENHEIM-SKOLEM",
+        "TERM-ENUMERABLE",
+        "TERM-SET-SIZE",
+        "TERM-CARDINAL-ORDER",
+        "TERM-POWERSET",
+        "TERM-FINITE",
+        "TERM-DOMAIN",
+        "TERM-ELEMENT",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PARADOX",
+        "TERM-LOGIC-FORMS",
+        "TERM-IDENTITY"
+      ],
+      "scope": "The at-most-denumerable model theorem, stronger identity-free denumerable-model theorem and internal/external countability distinction in Skolem's Paradox are retained without a source correction."
     }
   },
   "semantic_review": [
@@ -4198,7 +4353,7 @@
       "unit_id": "OLP-0132",
       "passage": "value lemma",
       "reverse_paraphrase": "Structural induction on a closed term shows its value in the term model is that same term: constants supply the base and the function clause supplies the induction step.",
-      "finding": "The base case, induction hypotheses, function arity and all three displayed equalities are preserved."
+      "finding": "The base case, induction hypotheses, function arity and all three displayed equalities are preserved. OLCOM-008 adds the source's missing empty false branch to the surrounding iftag."
     },
     {
       "unit_id": "OLP-0132",
@@ -4217,6 +4372,174 @@
       "passage": "Truth Lemma quantified cases",
       "reverse_paraphrase": "The universal case passes from satisfaction of forall x B(x), through every closed instance B(t), to membership of forall x B(x); the existential case uses at least one closed instance throughout.",
       "finding": "The source switches from B to A only in the universal case's final formula. OLCOM-003 restores B, matching the current induction formula and all preceding equivalences; the repair is disclosed beside the formula."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "why identity requires factoring",
+      "reverse_paraphrase": "The ordinary term model makes distinct syntactic terms denote themselves, so it can falsify an equality sentence that belongs to Gamma-star; quotienting identifies exactly the terms that Gamma-star proves equal.",
+      "finding": "The equality-free scope, membership assumption, term-value argument and direction of the failure are preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "equivalence and congruence properties",
+      "reverse_paraphrase": "Define t approximately t-prime iff their equality belongs to Gamma-star. The relation is reflexive, symmetric and transitive, and replacing equivalent terms preserves function-term equivalence and predicate membership.",
+      "finding": "All five properties retain their coordinate, arity and membership directions. OLCOM-004 removes only the source's duplicate comma inside the first function term."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "proof reduction to derivability",
+      "reverse_paraphrase": "Completeness and consistency of Gamma-star turn equality membership into derivability, so the five relation and congruence claims reduce to five corresponding proof obligations.",
+      "finding": "Every premise and conclusion, including both equality premises in transitivity and the predicate-substitution direction, is preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "quotient classes and structure",
+      "reverse_paraphrase": "Form equivalence classes of closed terms; use them as the domain, interpret a constant by its class, a function by the class of the formed term, and a predicate tuple by satisfaction in the original term model, equivalently by membership in Gamma-star.",
+      "finding": "Both set abstractions and all four quotient-structure clauses retain their representatives, argument order and biconditionals."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "independence from representatives",
+      "reverse_paraphrase": "A definition on equivalence classes must give the same result for every representative. If R holds of t but not of an equivalent alternative t-prime, the same class would be both in and outside the predicate extension, which congruence excludes.",
+      "finding": "The source negates R(t) again where its prose introduces the alternative t-prime. OLCOM-005 uses R(t-prime), matching the following class and the contradiction; the repair is adjacent."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "well-definedness and value lemma",
+      "reverse_paraphrase": "Coordinatewise equivalent representatives yield equivalent function terms and matching predicate truth; induction on arity proves well-definedness, and term induction gives each term the value of its equivalence class.",
+      "finding": "The coordinatewise scope, two conclusions, induction parameter and factored value formula are preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "Truth Lemma and finite quotient",
+      "reverse_paraphrase": "The earlier Truth Lemma induction carries over, with equality handled by equality of classes, equivalence of representatives and membership of the equality sentence. Although the raw term model is countably infinite, its quotient may be finite, including a one-element model.",
+      "finding": "All three identity biconditionals and the finite-model example retain their exact direction, cardinality and universal quantifier nesting."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "first completeness formulation and extensions",
+      "reverse_paraphrase": "Starting from a consistent Gamma, the FOL branch first takes a saturated consistent Henkin extension; both FOL and propositional branches then take a complete consistent Lindenbaum extension.",
+      "finding": "Both superset relations, the tag-conditioned intermediate set, and every consistency, completeness and saturation property are preserved."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "saturation inherited by Gamma-star",
+      "reverse_paraphrase": "Because Gamma-prime is contained in Gamma-star, Gamma-star contains the required existential or negated-universal witness sentence for every formula and is therefore saturated.",
+      "finding": "The two proof profiles retain their exact witness schemas, constant, subset direction and formula scope."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "model branches and satisfiability",
+      "reverse_paraphrase": "Without identity, the ordinary term-model Truth Lemma makes every member of Gamma true; with identity, the factored-model Truth Lemma does so. The propositional branch uses the valuation.",
+      "finding": "The equality case split, all three satisfaction macros, membership biconditionals and restriction from Gamma-star to Gamma are preserved."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "semantic-entailment formulation",
+      "reverse_paraphrase": "Restate the universally quantified first formulation with Delta, contrapose it, apply it to Gamma union not-A after semantic entailment makes that set unsatisfiable, and use the relevant proof-system inconsistency result to derive A.",
+      "finding": "The variable renaming, contraposition, union, negation, entailment direction and all eight tag-conditioned proof references are retained."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "equivalence and rule-dependency exercises",
+      "reverse_paraphrase": "Derive the first formulation from the second in each logic, then audit which derivation rules, including tacit uses, are needed along the completeness proof chain.",
+      "finding": "Both FOL and propositional references, the requested implication direction and the distinction between necessary, unused and tacit rule use are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "compactness statement and finite satisfiability",
+      "reverse_paraphrase": "A set is finitely satisfiable when every finite subset is satisfiable. Compactness says both that entailment has a finite premise witness and that finite satisfiability is equivalent to satisfiability.",
+      "finding": "Both biconditionals, subset direction, existential finite witness and allowance for an infinite whole set are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "proof of finite satisfiability equivalence",
+      "reverse_paraphrase": "One model or valuation for Gamma satisfies each finite subset. Conversely, soundness makes each satisfiable finite subset consistent, proof-theoretic compactness makes Gamma consistent, and completeness makes Gamma satisfiable.",
+      "finding": "The semantic-to-syntactic-to-semantic direction and all sixteen tag-conditioned proof references are retained."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "models not covered by terms",
+      "reverse_paraphrase": "Add a new constant c and all sentences saying c differs from every old-language closed term. Each finite subset is modeled by assigning c an element outside its finitely many term values; compactness then gives a model of the original theory that is not covered.",
+      "finding": "Freshness of c, infinitude of the starting model, the expansion argument, every satisfaction claim and the final noncoverage condition are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "infinitesimal model",
+      "reverse_paraphrase": "Add a positive constant c smaller than the reciprocal of every positive integer, expressed without division. Any finite subset has an upper index K and is satisfied in the rationals by c equal to 1 over K; compactness supplies a model containing an infinitesimal.",
+      "finding": "The language signature, positivity clause, multiplication encoding, finite bound, expansion value and final witness are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "nonstandard arithmetic exercise",
+      "reverse_paraphrase": "Although no standard natural exceeds every standard numeral, compactness yields a structure satisfying every standard-arithmetic sentence and containing an element above every numeral.",
+      "finding": "The standard-model premise, numeral notation, universal family of formulas and requested nonstandard witness are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "infinitude expressible but finitude inexpressible",
+      "reverse_paraphrase": "Sentences requiring at least n objects jointly force infinitude. If Lambda characterized exactly the finite structures, every finite subset of Delta union Lambda would have a sufficiently large finite model, so compactness would give the impossible infinite model of Lambda.",
+      "finding": "OLCOM-006 handles an empty Delta-prime before choosing a maximum required size. Every remaining model class, union, lower bound and contradiction is preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "direct-proof strategy",
+      "reverse_paraphrase": "Repeat the completeness construction with finite satisfiability in place of syntactic consistency: extend the starting set until the same model-construction Truth Lemma applies.",
+      "finding": "The contrast with the earlier completeness proof, the FOL saturation branch and the propositional valuation branch are preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "Boolean closure without derivability",
+      "reverse_paraphrase": "A complete finitely satisfiable set contains a conjunction exactly with both conjuncts, a disjunction exactly with at least one disjunct, and an implication exactly when the antecedent is absent or the consequent present; the exercises require semantic proofs without Proves.",
+      "finding": "All membership polarities, Boolean alternatives and the prohibition on derivability are retained."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "finite-satisfiability Henkin and instance steps",
+      "reverse_paraphrase": "Every finitely satisfiable set has a saturated finitely satisfiable extension; a complete, finitely satisfiable, saturated set contains an existential exactly with some closed instance and a universal exactly with every closed instance.",
+      "finding": "The stage extension, witness sentence, closed-term scope and existential/universal quantifier directions are preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "finite-satisfiability Lindenbaum step",
+      "reverse_paraphrase": "Extend any finitely satisfiable set to a complete finitely satisfiable set, choosing at each stage at least one of a sentence and its negation while preserving finite satisfiability.",
+      "finding": "Both tagged exercises retain the stage index, two alternatives and preservation property."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "direct compactness proof",
+      "reverse_paraphrase": "The easy direction restricts one model to finite subsets. For the converse, form saturated and complete finitely satisfiable extensions, construct the valuation or the appropriate term-based model, and rerun the Truth Lemma with finite-satisfiability closure and instance results.",
+      "finding": "Every extension, coverage dependency and replacement reference is preserved. OLCOM-007 adds the factored model and direct finite semantic congruence argument when identity occurs; OLCOM-009 supplies the source's missing empty false branch on the reference-selection clause."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "expanded Truth Lemma exercises",
+      "reverse_paraphrase": "Write the full FOL and propositional Truth Lemma proofs in the finite-satisfiability form required by the direct compactness theorem.",
+      "finding": "Both profile-specific targets and theorem references are retained."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "downward theorem motivation",
+      "reverse_paraphrase": "Any theory with an infinite model also has an at-most-denumerable model, so no first-order theory can require every model to have a nonenumerable domain.",
+      "finding": "The existence direction, at-most bound and contrast between nonenumerable and enumerable structures are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "enumerable-model theorem",
+      "reverse_paraphrase": "A consistent set has a model whose domain is finite or denumerable because the completeness construction gives a domain no larger than the set of language terms.",
+      "finding": "Consistency, model existence, the finite-or-denumerable disjunction and cardinal comparison with the term set are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "identity-free denumerable model",
+      "reverse_paraphrase": "Without identity, the completeness construction uses the full term set itself as the domain, so the resulting model is denumerable rather than merely at most denumerable.",
+      "finding": "The identity-free restriction, exact-domain equality, expanded-language prime and infinitude claim are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "Skolem's Paradox",
+      "reverse_paraphrase": "If ZFC is consistent, it proves internally that objects such as the real set and a power set are nonenumerable, yet the downward theorem supplies an externally enumerable model containing those internally nonenumerable sets.",
+      "finding": "The conditional consistency premise, power-set example and quotation-marked internal nonenumerability distinction are preserved."
     }
   ]
 }

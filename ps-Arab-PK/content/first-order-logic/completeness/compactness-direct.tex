@@ -1,0 +1,177 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness-direct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cpd}}
+      {\olfileid{pl}{com}{cpd}}
+
+\olsection{د متناهي شاهد قضيې نېغ ثبوت}
+
+د بشپړتيا قضيې له کارولو پرته، د بشپړتيا قضيې د ثبوت د هماغو
+نظرونو په کارولو، د متناهي شاهد قضيه نېغ په نېغه ثابتولے شو۔ د
+بشپړتيا قضيې په ثبوت کښې مو د~!!{sentence}s له يوه سازګار
+سټ~$\Gamma$ څخه پيل وکړ، هغه مو د~!!{sentence}s يوه
+سازګار\iftag{FOL}{، مشبوع}{} او !!{complete} سټ~$\Gamma^*$ ته
+پراخ کړ، او بيا مو وښودله چې له~$\Gamma^*$ څخه په جوړ شوي
+\iftag{FOL}{ترمي
+  مدل~$\Struct{M(\Gamma^*)}$}{!!{valuation}~$\pAssign{v(\Gamma^*)}$}
+کښې د~$\Gamma$ ټولې !!{sentence}s رښتونې دي؛ نو~$\Gamma$ د صدق وړ دے۔
+
+همدا طريقه د دې ښودلو دپاره کارولے شو چې د جملو يو په متناهي ډول
+د صدق وړ سټ، د صدق وړ دے۔ يوازې د هغو پايلو اړوندې بڼې ثابتول
+پکار دي چې د صدق لمې ته رسېږي، او پکښې «سازګار» په «په متناهي
+ډول د صدق وړ» بدلوو۔
+
+\begin{prop}
+\ollabel{prop:fsat-ccs}
+فرض کړئ~$\Gamma$،~!!{complete} او په متناهي ډول د صدق وړ دے۔ بيا:
+\begin{enumerate}
+\tagitem{prvAnd}{$(!A \land !B) \in \Gamma$
+  هله او يوازې هله چې دواړه $!A \in \Gamma$ او $!B \in \Gamma$ وي۔}{}
+
+\tagitem{prvOr}{$(!A \lor !B) \in \Gamma$ هله او يوازې هله چې
+  يا~$!A \in \Gamma$ يا~$!B \in \Gamma$ وي۔}{}
+
+\tagitem{prvIf}{$(!A \lif !B) \in \Gamma$ هله او يوازې هله چې
+  يا~$!A \notin \Gamma$ يا~$!B \in \Gamma$ وي۔}{}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-ccs} ثابت کړئ۔~$\Proves$ مۀ کاروئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{prop:fsat-ccs} ثابت کړئ۔~$\Proves$ مۀ کاروئ۔
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{lem}
+\ollabel{lem:fsat-henkin} هر په متناهي ډول د صدق وړ سټ~$\Gamma$
+يو مشبوع، په متناهي ډول د صدق وړ سټ~$\Gamma'$ ته غځېدلے شي۔
+\end{lem}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-henkin} ثابت کړئ۔ (اشاره: مهم ګام
+دا ښودل دي چې که~$\Gamma_n$ په متناهي ډول د صدق وړ وي، نو
+$\Gamma_n \cup \{!D_n\}$ هم همداسې دے؛ بې له دې چې
+!!{derivation}s يا سازګارۍ ته مراجعه وشي۔)
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{
+\begin{prop}\ollabel{prop:fsat-instances}
+فرض کړئ~$\Gamma$ بشپړ، په متناهي ډول د صدق وړ، او مشبوع دے۔
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ هله او يوازې هله چې
+لږ تر لږه د يوه تړلي ترم~$t$ دپاره~$!A(t) \in \Gamma$ وي۔}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ هله او يوازې هله چې
+د ټولو تړلو ترمونو~$t$ دپاره~$!A(t) \in \Gamma$ وي۔}{}
+\end{tagenumerate}
+\end{prop}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-instances} ثابت کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{lem}
+\ollabel{lem:fsat-lindenbaum} هر په متناهي ډول د صدق وړ سټ~$\Gamma$
+يو !!a{complete} او په متناهي ډول د صدق وړ سټ~$\Gamma^*$ ته
+غځېدلے شي۔
+\end{lem}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-lindenbaum} ثابت کړئ۔ (اشاره: مهم
+ګام دا ښودل دي چې که~$\Gamma_n$ په متناهي ډول د صدق وړ وي، نو يا
+$\Gamma_n \cup \{!A_n\}$ يا~$\Gamma_n \cup \{\lnot !A_n\}$ په
+متناهي ډول د صدق وړ دے۔)
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{lem:fsat-lindenbaum} ثابت کړئ۔ (اشاره: مهم
+ګام دا ښودل دي چې که~$\Gamma_n$ په متناهي ډول د صدق وړ وي، نو يا
+$\Gamma_n \cup \{!A_n\}$ يا~$\Gamma_n \cup \{\lnot !A_n\}$ په
+متناهي ډول د صدق وړ دے۔)
+\end{prob}
+\tagendprob
+
+\begin{thm}[د متناهي شاهد خاصيت]
+\ollabel{thm:compactness-direct} $\Gamma$ هله او يوازې هله د صدق
+وړ دے چې په متناهي ډول د صدق وړ وي۔
+\end{thm}
+
+\begin{proof}
+که~$\Gamma$ د صدق وړ وي، نو داسې
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+شته چې د ټولو~$!A \in \Gamma$ دپاره
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ وي۔ څرګنده ده چې همدا
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} د~$\Gamma$ هر متناهي
+فرعي سټ هم پوره کوي؛ نو~$\Gamma$ په متناهي ډول د صدق وړ دے۔
+
+اوس فرض کړئ~$\Gamma$ په متناهي ډول د صدق وړ دے۔\iftag{FOL}{ د
+  \olref{lem:fsat-henkin} له مخې، داسې په متناهي ډول د صدق وړ
+  مشبوع سټ~$\Gamma' \supseteq \Gamma$ شته۔}{} د
+\olref{lem:fsat-lindenbaum} له مخې،
+$\iftag{FOL}{\Gamma'}{\Gamma}$ يو !!a{complete} او په متناهي ډول د
+صدق وړ سټ~$\Gamma^*$ ته غځېدلے شي\iftag{FOL}{، او~$\Gamma^*$ لا
+هم مشبوع دے}{}۔ \iftag{FOL}{که عينيت موجود نۀ وي، د
+ترمي مدل~$\Struct{M(\Gamma^*)}$؛ او که عينيت موجود وي، د مخکښې
+برخې خارج قسمت شوے ترمي مدل}{د
+!!{valuation}~$\pAssign{v(\Gamma^*)}$} د
+\olref[mod]{defn:termmodel} د جوړونې پر بنسټ جوړ کړئ۔\iftag{FOL}{
+پام وکړئ چې~\olref[mod]{prop:quant-termmodel} د~$\Gamma^*$ پر
+سازګارۍ (يا، په دې حساب، پر !!{complete} والي يا مشبوع والي) تکيه
+نۀ کوله؛ يوازې پر دې ئې تکيه کوله چې~$\Struct{M(\Gamma^*)}$ پوښلے
+دے۔ د عينيت
+په حالت کښې د هم ارزښتۍ او سازګارتيا شرطونه هم نېغ له متناهي صدق
+وړتيا څخه ترلاسه کېږي: د هر شرط ناکامي به يو د صدق وړ نۀ متناهي
+فرعي سټ ورکړي۔}{} د صدق لمې ثبوت
+(\olref[mod]{lem:truth}) هغه وخت هم سم پر مخ ځي چې
+\olref[ccs]{prop:ccs}\iftag{FOL}{ او
+\olref[hen]{prop:saturated-instances} ته مراجعې په ترتيب سره
+\olref{prop:fsat-ccs} او~\olref{prop:fsat-instances} ته په مراجعو
+بدلې کړو}{}۔
+\textbf{د ژباړې د نسخې سمون (OLCOM-009):} په سرچينه کښې د دې
+ټاکنيز شرط درېيم تش ارګومېنټ پاتې شوے و؛ دلته په څرګنده توګه
+ورزيات شو، څو ورپسې متن د هغه پر ځاے وانۀ خيستل شي۔ د عينيت په حالت کښې د برابرۍ استقرايي حالت د خارج قسمت
+له تعريف څخه نېغ ترلاسه کېږي۔
+\textbf{د ژباړې د نسخې سمون (OLCOM-007):} د سرچينې د اول مرتبې
+نېغ ثبوت يوازې عادي ترمي مدل يادوي، چې د عينيت لرونکې جملې نۀ
+پوښي؛ دلته د عينيت دپاره اړينه خارج قسمت جوړونه او د هغې متناهي
+صدق-وړتيايي دليل څرګند شو۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+د صدق لمې~(\olref[fol][com][mod]{lem:truth}) بشپړ ثبوت په هغه بڼه
+وليکئ چې د~\olref[fol][com][cpd]{thm:compactness-direct} د ثبوت
+دپاره اړينه ده۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+د صدق لمې~(\olref[pl][com][mod]{lem:truth}) بشپړ ثبوت په هغه بڼه
+وليکئ چې د~\olref[pl][com][cpd]{thm:compactness-direct} د ثبوت
+دپاره اړينه ده۔
+\end{prob}
+\tagendprob
+
+\end{document}

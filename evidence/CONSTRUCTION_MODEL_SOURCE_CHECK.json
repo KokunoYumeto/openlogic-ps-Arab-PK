@@ -1,6 +1,6 @@
 {
   "schema": "ps-openlogic-source-check/1",
-  "utc": "2026-09-06T02:50:19.782307+00:00",
+  "utc": "2026-09-06T03:23:45.661913+00:00",
   "batch_id": "PS-B030-CONSTRUCTION-MODEL",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "units": [
@@ -9,8 +9,8 @@
       "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
       "source_bytes": 11011,
       "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
-      "translation_bytes": 14370,
-      "translation_sha256": "fa306867d456f51339ab525b93cae52b7723dfdbb0ec703db610d46a27c27cc8"
+      "translation_bytes": 14730,
+      "translation_sha256": "ca342ae6d124c7e3dfb6421bb7ca6e55e80c3be141297e29303d9d8d86588727"
     }
   ],
   "reviews": [
@@ -22,9 +22,9 @@
     },
     {
       "locator": "OLP-0132 lines 75-98",
-      "observation": "The value lemma was traced through its constant base and function-term induction step.",
-      "treatment": "No source defect found; the closed-term scope and equality chain are retained.",
-      "correction_id": null
+      "observation": "The value lemma was traced through its constant base and function-term induction step. Its surrounding FOL-only iftag has no required third argument in the source.",
+      "treatment": "The closed-term scope and equality chain are retained. An explicit empty inactive branch is supplied and disclosed so the next selection construct cannot be consumed as that branch.",
+      "correction_id": "OLCOM-008"
     },
     {
       "locator": "OLP-0132 lines 99-160",
@@ -59,7 +59,17 @@
           "$\\lforall[x][!B(x)]\\in\\Gamma^*$"
         ]
       }
+    },
+    {
+      "correction_id": "OLCOM-008",
+      "classification": "selective_macro_missing_required_false_branch",
+      "source_locator": "completeness/construction-of-model.tex:75-98",
+      "target_line_1based": 98,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
-  "conclusion": "One formula-letter defect is corrected and disclosed. Every remaining model clause, valuation case, satisfaction polarity, quantifier scope, induction dependency and reference is preserved."
+  "conclusion": "One formula-letter defect and one malformed selective macro are corrected and disclosed. Every remaining model clause, valuation case, satisfaction polarity, quantifier scope, induction dependency and reference is preserved."
 }

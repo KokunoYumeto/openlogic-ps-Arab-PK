@@ -1,0 +1,957 @@
+{
+  "schema": "openlogic-ps-Arab-PK-proof-systems-reader-inputs/1",
+  "status": "prepared",
+  "profile": "FOL; all primitive connectives and quantifiers; all four proof systems",
+  "profile_resolution": {
+    "active_tags": [
+      "FOL",
+      "limitClause",
+      "prfAX",
+      "prfND",
+      "prfSC",
+      "prfTab",
+      "prvAll",
+      "prvAnd",
+      "prvEx",
+      "prvFalse",
+      "prvIf",
+      "prvIff",
+      "prvNot",
+      "prvOr",
+      "prvTrue",
+      "tagTrue"
+    ],
+    "inactive_tags": [
+      "defAll",
+      "defAnd",
+      "defEx",
+      "defFalse",
+      "defIf",
+      "defIff",
+      "defNot",
+      "defOr",
+      "defTrue",
+      "probAll",
+      "probAnd",
+      "probEx",
+      "probIf",
+      "probIff",
+      "probNot",
+      "probOr"
+    ],
+    "resolved_construct_counts": {
+      "empty_segment_anchor_pairs_pruned": 10,
+      "iftag_rejected": 3,
+      "iftag_selected": 286,
+      "tagblock_rejected": 2,
+      "tagenumerate_selected": 8,
+      "tagitem_selected": 63,
+      "tagprob_rejected": 8,
+      "tagprob_selected": 9,
+      "unpaired_segment_anchors_pruned": 2
+    }
+  },
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_range": {
+    "first": "OLP-0056",
+    "last": "OLP-0125",
+    "count": 70
+  },
+  "chapter_driver_ids": [
+    "OLP-0056",
+    "OLP-0063",
+    "OLP-0069",
+    "OLP-0084",
+    "OLP-0098",
+    "OLP-0112"
+  ],
+  "translated_bundle_units": 131,
+  "input_files": [
+    {
+      "unit_id": "OLP-0056",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "d99022091f0fa2b689b3a3e845c3908dd45c8a9c36c74f3d9c589d17d629f805",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "target_sha256": "a68614233a9a19f36ad093d1deb6e1876d616c687ddb2ffea4f016f887fd9a43",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0057",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "3040499782b5cc91adab39a5ba93031d4daf6d05ad084e97937d6f84ebed432c",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/introduction.tex",
+      "target_sha256": "dfd4c57e44a039d7987788894943ba5aebbfb30a7b3b2ed9cd5a4f763fb6c356",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0058",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "source_sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "target_sha256": "34e44bdb0c46e36eed0bdf53d5e888a4e5f83fa6f23f1a3631ef2bba57449226",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0059",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "source_sha256": "32b55f3fdc69170d1c4856c5abd86e8845d1d4993b8e649a0501475ad0c5a9dc",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "target_sha256": "d8d8836bd5d741e02d31d0d3bdb236cfaddebb7e39187e10f612d9594c24472e",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0060",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_sha256": "74ef79ac87433efe8bc4518f73d8dd58df0bb406fbbb5928ef40ba2e1c10d137",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0061",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "source_sha256": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "target_sha256": "b4ceef87314958c9db427a582bb8f16b4fb1c7e88be2f77b2b7102a7d070ca04",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0062",
+      "source_path": "upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_sha256": "992456e01aa355799eabea11dc7d2a49a5f1a0f0ebeef05d36f86603c0f06d39",
+      "target_path": "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "target_sha256": "e8650fb8a1eb2baa20791d6795c56d5fcc2088a9da8154267d260a07a886652b",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0063",
+      "source_path": "upstream/content/first-order-logic/proof-systems/proof-systems.tex",
+      "source_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/proof-systems.tex",
+      "target_sha256": "91c73c5f64af853daca42920318a81f4392ff54e89d55ac02ca6d846a6414b4b",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0064",
+      "source_path": "upstream/content/first-order-logic/proof-systems/introduction.tex",
+      "source_sha256": "148266281cc87fcd3e454249b9f6c42a117a9aed0733cc5a5f2e954ffd60bb58",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/introduction.tex",
+      "target_sha256": "d2d7c008767ab260d7cecc0e4273356dc26ac52d458fdc6d6cdc5e2eaf60440e",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0065",
+      "source_path": "upstream/content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "source_sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "target_sha256": "7de77a404fde51c40fb13a332dd6b7223ebdbbb190c12ea903915bdb5c620366",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0066",
+      "source_path": "upstream/content/first-order-logic/proof-systems/natural-deduction.tex",
+      "source_sha256": "77b5d31c7b63f657e0d5492d83810bfdc21af0169a9b38ccd5302e0e4cdefdfe",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/natural-deduction.tex",
+      "target_sha256": "a992470dff12e70ce55924d744edc74fc23fda7805c1a23651681b5dd2765a2e",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0067",
+      "source_path": "upstream/content/first-order-logic/proof-systems/tableaux.tex",
+      "source_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/tableaux.tex",
+      "target_sha256": "01bbb81f570553f0541bd1bbb7dcc0452242b6ee3f406517c87ff660bd956a35",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0068",
+      "source_path": "upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+      "source_sha256": "b9637a6a1cee29ebba2f8d2cdf238d4567d8ec4b7995607abcb0ee1aef0570b9",
+      "target_path": "ps-Arab-PK/content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+      "target_sha256": "adee37668cf702e781819d569856d90702dd8eee9cba86d93a135b1f4ecabba7",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0069",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+      "source_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+      "target_sha256": "e93d3131b9d3d01581597ec0ef6fd546a540e1537962eea605c03a3eb196db0a",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0070",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+      "source_sha256": "73a554964d7a3fc35a116f63e658340a8c89f9915c3f27e23f7ebd762df35859",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+      "target_sha256": "5e7e8db4ddf88fad696a627762cf3ea781bc3132f810d766dfc49bf8a9044f30",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0071",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/propositional-rules.tex",
+      "source_sha256": "0bf253cf8afedca1478fb820770b04ab708dbe8cfd3344377a0d14ae91889276",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/propositional-rules.tex",
+      "target_sha256": "55edeb46b916e88b357276eefd1b9788f7494c42dec73fc9de397743ed23ef18",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0072",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "source_sha256": "e0047087b88b91ba65c23a76f7c8f230c4161785f4d83f07d14461341b66d90e",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "target_sha256": "4624a79c25394001741ac0c6b6ed46c37305a9465f8f1a1dc9ace747cd7b433a",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0073",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/structural-rules.tex",
+      "source_sha256": "5c13d5312a8b2287b54d67d2fadc6247ba499bd9b6a71255ea04891307689b06",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/structural-rules.tex",
+      "target_sha256": "cd04cd7984422dde5ee2385824dda0f244fb03baad0807d0b1196fa1b7d3c007",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0074",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/derivations.tex",
+      "source_sha256": "25897d850b211443621f31a1166f443c1e00c6bcbf13002bc1b9281ca4300371",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/derivations.tex",
+      "target_sha256": "d81319d9d1624b84470fc26764918e80256f94b0255714463d00d8b9b94dfa1a",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0075",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "target_sha256": "5032089c0446ed8a615837f92037ea8ec9da81cdf5b601139cefba5aa5430ea4",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0076",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+      "source_sha256": "d2e7eba11801753dfd9c57c6be6d45df5c11de57843c3f689dbee7636419aa99",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+      "target_sha256": "2f8b3f3ee4b58b5735ac53d23baa8c87819014106864665a6b3e2b0d9032e14e",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0077",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "target_sha256": "937516ea63c2764860cbb7a4cfc84a4ce7958cb831cc7d027d09ecdf72413b26",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0078",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/provability-consistency.tex",
+      "source_sha256": "a44d3cb4dadd224e943e0ea4d3d81529c6e108e7eecbcf9b1cb7d3632e4a150a",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-consistency.tex",
+      "target_sha256": "a0e92643bed65a2a6c8813768524a2667d38aa73200294a662fe872f83875d80",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0079",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "source_sha256": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "target_sha256": "a98160932051a675480f3625fd8389f8846c81c1c02db9ef1b2c50f0da971751",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0080",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+      "source_sha256": "30d343a6b09d234683fff540afec999650f2cf4afd9ce751138b8f3b93f2fe6a",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+      "target_sha256": "3b76135a3ddd38afb4be32b9d94f5500169e38b70bdd138366705c2120e44fe0",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0081",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_sha256": "5b7da223a565ac42d459ce47964b8e20ac838b2d1a111c795ed94b2eef146c76",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0082",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/identity.tex",
+      "source_sha256": "0f9d6d0731f2a74f568d49545bfeeff9373aea71d188973549054823f240f23d",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/identity.tex",
+      "target_sha256": "74701e631ddc5de6e8be6e1562abd201b70cf863eeecfc1904f2783cda492d3b",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0083",
+      "source_path": "upstream/content/first-order-logic/sequent-calculus/soundness-identity.tex",
+      "source_sha256": "0cc6d3e92d57d3070076ce2daa13aa85c6da6ac3cfb2b5d56df87bb7fef4fac3",
+      "target_path": "ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness-identity.tex",
+      "target_sha256": "6aee48eaefd2a94a095e86071462dbfd95be308bcc4d22046efae872f211356c",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0084",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "source_sha256": "c53bed3aa593285a104c9e4c1c40a08efadb3b58094119043baa7a27b8a652e7",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "target_sha256": "53002be3f5efc6749c76c3d468a050da159108db28a5dbc88854ad00fb2d59d9",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_sha256": "6fe92c1184af0036be4dff079b3c03a7f1da3f28fc142a4a647ec5538306a6f5",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_sha256": "5a85acea130c096719ef92c9513ab18a27380a22972eb859d55db92600932846",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_sha256": "5928723a31afd26f60b14c29e6f7185211adadd1132e461bb31fc9e9817647a5",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_sha256": "f73faf74fe627dcfd64d145808fa17b80861acc774cee1c98f72d0ed9fdcdcc1",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_sha256": "f238e4c13bb97940ff82f8016aed565b9388d475721f9b6ff132166bf628aa5e",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_sha256": "84be9e0652a01977020801b49b7c8bada2a886a869717671c2a54a171221c4d1",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_sha256": "ebcb56e6ce50745e17faa8e0286edc11d2fcc8f320f771c79ff97c3912b16868",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_sha256": "26a891bbd422e365c1599eef5f483ba0caa3b1b19889774664b9ffeedd005a58",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_sha256": "12ae1ea4a864b9a42e5fb6addcfc552bb4b74c1ba2cadced427593e4ca52f8e3",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_sha256": "220790d6f8f8e16333fb144ffae612769bcd5eea4bc62481398908e878622248",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_sha256": "90f40aecedac9a8f2760b9976de0c6eac71c1b1e90911c4a30ce029a2d9e13c6",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_sha256": "98dbbf165b620e5507c4ccaf4e6858e1f9e625862bf8150857a3bc9988b81f08",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_sha256": "afb2c635bfea260b7ab2bc413c04f13ac8be807849baf90716dd54f89b29558a",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_sha256": "614b7ce065ebb9cbc92859e0c8300f87bdd7e3f2fb08f81d2a77dc540a5482b5",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_sha256": "589113c86043ad1152eb1f67bef6340f846cb51929e2d3f26294450516da247c",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_sha256": "d773465a7ea0a7070b34ab4ce3f17137cacc57e13feba15dd737fca895339d74",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_sha256": "44333900a5c26fd626a8ee6debcd5aa07a56f5d02d9c7be99c38e5138049e721",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "source_sha256": "2f301d8fc8aa78831e17b9d14042c97218795d400a350b0726be3776eed17575",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/identity.tex",
+      "target_sha256": "f02d9f565e5b5eb1ad30fd8e2e42cf86e94b18d96dbd21a2583a08e09f5b7d6b",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0097",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_sha256": "426ee50b639d92c730c70912bfda4fdf34c99e0e33097dc253cb196a01af7e7d",
+      "target_path": "ps-Arab-PK/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "target_sha256": "f9415a4e8b46f2572d86041f280dfd4e0efb372dd3b87c57bdf761b4591ef3a4",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0098",
+      "source_path": "upstream/content/first-order-logic/tableaux/tableaux.tex",
+      "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/tableaux.tex",
+      "target_sha256": "d8e7f1e5c99e74f9e3bc7f60a1021303faae7e8926b2832e3df986fcc697d6d6",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_sha256": "35d943dd4e3075ad0466eee777b08201efeee829228fb6a4506b5360d9fdaca1",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_sha256": "dcf0dc5fbdbfd79a7cf8c4b07a3d3d51aedc9ac424416d205ee5a8fd0877a8f4",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_sha256": "f2424a5bfa7742767930704539c12bc7d2d235227cc6f09521a9b395ea4e2211",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_sha256": "682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_sha256": "bafca9cb38662d8346f3ebba1b41cb3daf8a37197eb7fe2fa1f270614e8ed647",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "source_sha256": "2cb9a2b6c144eb8b53c4a4d9c52daab60bcd3491dbc909cdd5ccf42300fe5452",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/derivations.tex",
+      "target_sha256": "e095de247b7fbc7452be9b86d37442e6bb78712e9ae0fdb3d3d930422120f6cd",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "source_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proving-things.tex",
+      "target_sha256": "5e01a566fa1cdd768c05492fa42d8d7900914909f5c844a4a500808fb3db6054",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_sha256": "b5fe1b51e2605e8ffa5fca4c51515371abffc3369f243a7f61e85cddef99f4ed",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_sha256": "8ab23d01f2d1da50e6ec403267d7462c66899edfc70465f8420c464504205fbc",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_sha256": "9dc6b6726795f33bbd447de806435686b7a7519de1f07cad31fc2eb19b7bd549",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_sha256": "0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_sha256": "ce2b700cf2df5dee6a6f841638d64c58af141021c3b10bbad56ab54a3ede1a5a",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/soundness.tex",
+      "target_sha256": "11e05a2a9f0359d79eb21cdb837625ae1922b2bc56450912e3b10e116423f0cb",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/identity.tex",
+      "target_sha256": "b0a660d1b919b780211bde2c3853b8902b0923749ae9a670378adf81a7f5f23b",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b",
+      "target_path": "ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_sha256": "7376bf0becd272ecce8ac123c9615f04442303d707e8f7f97b45671b17275ee7",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0112",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
+      "source_sha256": "82b05cdab523aa9e7581b305adc4b065f01cb042bced407a85e776e0f3895382",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
+      "target_sha256": "4f0fe7fa5bebba7a5476023ad44110801f0e29a6e2f7b601514a0d2853e14055",
+      "role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0113",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "source_sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "target_sha256": "e29e25f212bf11dacc2fac616cab4d172adcb6e790ee92d6349305fc81062ac6",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0114",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "source_sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "target_sha256": "18d61caf9fdd8910cf8880da196c5d731f4cad6c5fa730ee319d698e3aa7f030",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0115",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "source_sha256": "fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "target_sha256": "8ae7140c8b6c02b2915651995af47b7d9a608fa8af49d1ea475525b7b6bc8edc",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0116",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/proving-things.tex",
+      "source_sha256": "23ad39fb3af69f934bb4410a53b692e1e589e5a12ecb757a219ee3e5dc4c6a56",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proving-things.tex",
+      "target_sha256": "e6d98b314b0f04c59f47aed0b4fc74931500835d4452f3cfe4d65690fec285c6",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0117",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex",
+      "source_sha256": "f0e9a893cec5f94f8d48ae6e7ca2c46ad04726c98a03fa33487c9a5c263d0c10",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex",
+      "target_sha256": "c6f6dad50dea93e85839448e3bdb4a08dd6d22720ea219425d441524e024a3eb",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0118",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "source_sha256": "0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "target_sha256": "94c708fc39973edb3ed060ebe586679e944eb1383c0e3b59e8078e119d8e8d04",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0119",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "source_sha256": "ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "target_sha256": "2428b240194c8123f3209909d393ffd7287b62d2375d7e9463299fb63ae81247",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0120",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "source_sha256": "79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "target_sha256": "3b88761d7db06e9926d831828156b7fddfd10f74e448b089bfe940a6bc51392f",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0121",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "source_sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "target_sha256": "991e190c12987d174fedb8398b0a7b99faafb1dac3f2a0c510c9b31de54e3fde",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0122",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "source_sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "target_sha256": "e37242f81c884598c99714efd690d8eab59e01fd553ccb78c79159bc8f34e2cf",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0123",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "source_sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "target_sha256": "cbc2096c34ddd572e6805fdc22faf2f609231e404f48b34adceffb8b93a69c7a",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0124",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "source_sha256": "b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "target_sha256": "9891ecc1d0082024e0f935a4f7f06a94209f2759e6c248eb7daa5da69862df52",
+      "role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0125",
+      "source_path": "upstream/content/first-order-logic/axiomatic-deduction/identity.tex",
+      "source_sha256": "9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4",
+      "target_path": "ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex",
+      "target_sha256": "3ef14591dceef107c2eb00c2e3d036de6b615c27eafa4182e6ba22f8e5609d58",
+      "role": "reader_unit"
+    }
+  ],
+  "token_renderings": {
+    "biconditional": {
+      "singular": "دوه اړخيز شرطي",
+      "plural": "دوه اړخيز شرطي",
+      "oblique_singular": "دوه اړخيز شرطي",
+      "oblique_plural": "دوه اړخيز شرطي"
+    },
+    "conditional": {
+      "singular": "شرطي",
+      "plural": "شرطي",
+      "oblique_singular": "شرطي",
+      "oblique_plural": "شرطي"
+    },
+    "constant": {
+      "singular": "ثابت سمبول",
+      "plural": "ثابت سمبولونه",
+      "oblique_singular": "ثابت سمبول",
+      "oblique_plural": "ثابت سمبولونو"
+    },
+    "denumerable": {
+      "singular": "شمېرېدونکے لامتناهي",
+      "plural": "شمېرېدونکے لامتناهي",
+      "oblique_singular": "شمېرېدونکے لامتناهي",
+      "oblique_plural": "شمېرېدونکے لامتناهي"
+    },
+    "derivability": {
+      "singular": "د اشتقاق وړتيا",
+      "plural": "د اشتقاق وړتيا",
+      "oblique_singular": "د اشتقاق وړتيا",
+      "oblique_plural": "د اشتقاق وړتيا"
+    },
+    "derivable": {
+      "singular": "د اشتقاق وړ",
+      "plural": "د اشتقاق وړ",
+      "oblique_singular": "د اشتقاق وړ",
+      "oblique_plural": "د اشتقاق وړ"
+    },
+    "derivation": {
+      "singular": "اشتقاق",
+      "plural": "اشتقاقونه",
+      "oblique_singular": "اشتقاق",
+      "oblique_plural": "اشتقاقونو"
+    },
+    "derive": {
+      "singular": "اشتقاق",
+      "plural": "اشتقاق",
+      "oblique_singular": "اشتقاق",
+      "oblique_plural": "اشتقاق"
+    },
+    "discharge": {
+      "singular": "ايستل",
+      "plural": "ايستل",
+      "oblique_singular": "ايستل",
+      "oblique_plural": "ايستل"
+    },
+    "discharged": {
+      "singular": "ايستل",
+      "plural": "ايستل",
+      "oblique_singular": "ايستل",
+      "oblique_plural": "ايستل"
+    },
+    "element": {
+      "singular": "غړے",
+      "plural": "غړي",
+      "oblique_singular": "غړي",
+      "oblique_plural": "غړو"
+    },
+    "falsity": {
+      "singular": "دروغوالی",
+      "plural": "دروغوالی",
+      "oblique_singular": "دروغوالی",
+      "oblique_plural": "دروغوالی"
+    },
+    "formula": {
+      "singular": "فارمول",
+      "plural": "فارمولونه",
+      "oblique_singular": "فارمول",
+      "oblique_plural": "فارمولونو"
+    },
+    "free for": {
+      "singular": "ازاد",
+      "plural": "ازاد",
+      "oblique_singular": "ازاد",
+      "oblique_plural": "ازاد"
+    },
+    "identity": {
+      "singular": "عينيت",
+      "plural": "عينيت",
+      "oblique_singular": "عينيت",
+      "oblique_plural": "عينيت"
+    },
+    "main operator": {
+      "singular": "اصلي عملګر",
+      "plural": "اصلي عملګرونه",
+      "oblique_singular": "اصلي عملګر",
+      "oblique_plural": "اصلي عملګرونو"
+    },
+    "nonderivability": {
+      "singular": "د اشتقاق نۀ وړتيا",
+      "plural": "د اشتقاق نۀ وړتيا",
+      "oblique_singular": "د اشتقاق نۀ وړتيا",
+      "oblique_plural": "د اشتقاق نۀ وړتيا"
+    },
+    "operator": {
+      "singular": "منطقي عملګر",
+      "plural": "منطقي عملګرونه",
+      "oblique_singular": "منطقي عملګر",
+      "oblique_plural": "منطقي عملګرونو"
+    },
+    "propositional variable": {
+      "singular": "بياني متغير",
+      "plural": "بياني متغيرونه",
+      "oblique_singular": "بياني متغير",
+      "oblique_plural": "بياني متغيرونو"
+    },
+    "sentence": {
+      "singular": "تړلے فارمول",
+      "plural": "تړلي فارمولونه",
+      "oblique_singular": "تړلي فارمول",
+      "oblique_plural": "تړلو فارمولونو"
+    },
+    "signed formula": {
+      "singular": "نښه لرونکے فارمول",
+      "plural": "نښه لرونکي فارمولونه",
+      "oblique_singular": "نښه لرونکي فارمول",
+      "oblique_plural": "نښه لرونکو فارمولونو"
+    },
+    "structure": {
+      "singular": "جوړښت",
+      "plural": "جوړښتونه",
+      "oblique_singular": "جوړښت",
+      "oblique_plural": "جوړښتونو"
+    },
+    "tableau": {
+      "singular": "تابلو",
+      "plural": "تابلوګانې",
+      "oblique_singular": "تابلو",
+      "oblique_plural": "تابلوګانو"
+    },
+    "truth": {
+      "singular": "رښتياوالی",
+      "plural": "رښتياوالی",
+      "oblique_singular": "رښتياوالی",
+      "oblique_plural": "رښتياوالی"
+    },
+    "undischarged": {
+      "singular": "نۀ ايستل شوې",
+      "plural": "نۀ ايستل شوې",
+      "oblique_singular": "نۀ ايستل شوې",
+      "oblique_plural": "نۀ ايستل شوې"
+    },
+    "valuation": {
+      "singular": "ارزښت ټاکنه",
+      "plural": "ارزښت ټاکنې",
+      "oblique_singular": "ارزښت ټاکنې",
+      "oblique_plural": "ارزښت ټاکنو"
+    },
+    "variable": {
+      "singular": "متغير",
+      "plural": "متغيرونه",
+      "oblique_singular": "متغير",
+      "oblique_plural": "متغيرونو"
+    }
+  },
+  "reference_inventory": {
+    "defined_label_count": 141,
+    "reference_occurrences": 140,
+    "unique_reference_count": 59,
+    "internal_candidate_occurrences": 95,
+    "external_candidate_occurrences": 45,
+    "external_candidate_ids": [
+      {
+        "key": "fol:syn:ass:prop:sat-quant",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ass:prop:sentence-sat-true",
+        "occurrences": 8
+      },
+      {
+        "key": "fol:syn:ext:cor:extensionality-sent",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ext:prop:ext-formulas",
+        "occurrences": 10
+      },
+      {
+        "key": "fol:syn:ext:prop:extensionality",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:sat:defn:satisfaction",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:prop:quant-terms",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:thm:sem-deduction",
+        "occurrences": 3
+      },
+      {
+        "key": "pl:axd:ded:prop:derivfacts",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:axd:prv:prop:provability-exhaustive",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:axd:ptn:prop:incons",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:ntd:ptn:prop:incons",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:ntd:sou:thm:soundness",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:seq:sou:thm:sequent-soundness",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:tab:ptn:prop:incons",
+        "occurrences": 1
+      },
+      {
+        "key": "pl:tab:sou:thm:tableau-soundness",
+        "occurrences": 1
+      }
+    ],
+    "note": "Candidate counts include references in inactive notFOL branches. The TeX profile selects FOL; the eight selected out-of-volume references are rendered as named links to the frozen source."
+  },
+  "external_reference_rendering": {
+    "policy": "Every selected reference to an omitted syntax-and-semantics result is a human-readable Pashto title with an adjacent OLP link to the exact result in the frozen upstream revision; no omitted chapter is presented as part of this partial reader.",
+    "occurrences": 37,
+    "references": [
+      {
+        "key": "fol:syn:ass:prop:sat-quant",
+        "title": "کميت ټاکونکو د صدق قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L259",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ass:prop:sentence-sat-true",
+        "title": "جملې د صدق او متغير-ګومارنې قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex#L246",
+        "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+        "occurrences": 8
+      },
+      {
+        "key": "fol:syn:ext:cor:extensionality-sent",
+        "title": "جملو د امتدادي والي نتيجه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L52",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:ext:prop:ext-formulas",
+        "title": "فورمول د بدلولو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L105",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 10
+      },
+      {
+        "key": "fol:syn:ext:prop:extensionality",
+        "title": "امتدادي والي قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex#L29",
+        "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+        "occurrences": 4
+      },
+      {
+        "key": "fol:syn:sat:defn:satisfaction",
+        "title": "صدق تعريف",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex#L102",
+        "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:prop:quant-terms",
+        "title": "کميت ټاکونکو او تړلو ترمونو قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L124",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 2
+      },
+      {
+        "key": "fol:syn:sem:thm:sem-deduction",
+        "title": "معنايي استنتاج قضيه",
+        "source_url": "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex#L106",
+        "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+        "occurrences": 3
+      }
+    ]
+  },
+  "preamble": {
+    "path": "tools/proof-systems-reader-preamble.tex",
+    "sha256": "3492812c1845275d326cdbbf5a52bc05946018dd8b56ebf673a901ef4c394df2"
+  },
+  "builder": {
+    "path": "tools/build_proof_systems_reader.py",
+    "sha256": "e67bad7abea2dba684c8137d75eb1a4929bd8a0bdfa713934d98b3d01c957d2e"
+  },
+  "manifest": {
+    "path": "evidence/SOURCE_MANIFEST.jsonl",
+    "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+  },
+  "alignment": {
+    "path": "evidence/ALIGNMENT.jsonl",
+    "sha256": "d00292a923cb73abdf91eb789ec42a96db4c5a0c32227bea1565e48c0baa5628"
+  },
+  "page_anchor_policy": "Zero-width start/end labels surround each retained aligned semantic block. The accepted auxiliary file supplies verified page ranges after pagination stabilizes.",
+  "layout_overrides": {
+    "OLP-0109-B018-forced-break": 1
+  },
+  "generated_tex": {
+    "path": "reader.tex",
+    "bytes": 448571,
+    "sha256": "d0dd494277b80f0ab45557a84280c2824052c2b5c73631726e7d3662cb938c19"
+  },
+  "tex_execution_policy": "Run only through tools/guard_tex.ps1 with Global\\InterlanguageTeXSlotV1."
+}

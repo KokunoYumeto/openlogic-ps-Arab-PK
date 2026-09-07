@@ -1,0 +1,212 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{com}}
+      {\olfileid{pl}{com}{com}}
+
+\olsection{د متناهي شاهد قضيه}
+
+د بشپړتيا قضيې يوه مهمه پايله د متناهي شاهد قضيه ده۔ د متناهي
+شاهد قضيه وايي چې که د~!!{sentence}s د يوه سټ هر
+\emph{متناهي} فرعي سټ د صدق وړ وي، نو ټول سټ د صدق وړ دے، حتٰی
+که سټ پخپله نامتناهي وي۔ دا هېڅ څرګنده خبره نۀ ده۔ لږ تر لږه په
+لومړي نظر داسې هېڅ څۀ نۀ ښکاري چې د~!!{sentence}s د داسې نامتناهي
+سټونو امکان رد کړي چې متناقض وي، خو تناقض ئې، په اصطلاح، يوازې له
+نامتناهي شمېر څخه راولاړېږي۔ د متناهي شاهد قضيه وايي چې داسې حالت
+ردېدلے شي: د~!!{sentence}s داسې د صدق وړ نۀ نامتناهي سټونه نشته
+چې هر متناهي فرعي سټ ئې د صدق وړ وي۔ د بشپړتيا قضيې په څېر، د دې
+يوه بڼه هم له استلزام سره تړاو لري: که د~!!{sentence}s يو نامتناهي
+سټ کوم څۀ لازموي، نو لا له وړاندې ئې يو متناهي فرعي سټ لازموي۔
+
+\begin{defn}
+  د~!!{formula}s يو سټ~$\Gamma$ هله او يوازې هله
+  \emph{په متناهي ډول د صدق وړ} دے چې هر متناهي
+  $\Gamma_0 \subseteq \Gamma$ د صدق وړ وي۔
+\end{defn}
+
+\begin{thm}[د متناهي شاهد قضيه]
+\ollabel{thm:compactness}
+د هرې د جملو ټولګې~$\Gamma$ او هرې جملې~$!A$ دپاره لاندې خبرې سمې دي:
+\begin{enumerate}
+  \item $\Gamma \Entails !A$ هله او يوازې هله چې يو متناهي
+    $\Gamma_0 \subseteq \Gamma$ وي، داسې چې
+    $\Gamma_0 \Entails !A$۔
+  \item $\Gamma$ هله او يوازې هله د صدق وړ دے چې په متناهي ډول
+    د صدق وړ وي۔
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+موږ (2) ثابتوو۔ که~$\Gamma$ د صدق وړ وي، نو داسې
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+شته چې د ټولو~$!A \in \Gamma$ دپاره
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$۔ څرګنده ده چې همدا
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ د~$\Gamma$ هر متناهي فرعي
+سټ هم پوره کوي؛ نو~$\Gamma$ په متناهي ډول د صدق وړ دے۔
+
+اوس فرض کړئ~$\Gamma$ په متناهي ډول د صدق وړ دے۔ بيا هر متناهي
+فرعي سټ~$\Gamma_0 \subseteq \Gamma$ د صدق وړ دے۔ د سموالي له مخې
+(\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+    prfSC/{fol:seq:sou:cor:consistency-soundness},
+    prfND/{fol:ntd:sou:cor:consistency-soundness},
+    prfTab/{fol:tab:sou:cor:consistency-soundness}}}{%
+  \tagrefs{prfAX/{pl:axd:sou:cor:consistency-soundness},
+    prfSC/{pl:seq:sou:cor:consistency-soundness},
+    prfND/{pl:ntd:sou:cor:consistency-soundness},
+    prfTab/{pl:tab:sou:cor:consistency-soundness}}})،
+هر متناهي فرعي سټ سازګار دے۔ بيا د لاندې پايلې له مخې~$\Gamma$
+پخپله هم بايد سازګار وي:
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}}.
+د بشپړتيا له مخې (\olref[cth]{thm:completeness})، ځکه~$\Gamma$
+سازګار دے، نو د صدق وړ دے۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+د~\olref[fol][com][com]{thm:compactness} برخه (1) ثابته کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+د~\olref[pl][com][com]{thm:compactness} برخه (1) ثابته کړئ۔
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{ex}
+د يوې تيورۍ~$\Gamma$ په هر مدل~$\Struct{M}$ کښې، هر ترم~$t$ خامخا
+د~$\Domain{M}$ يو !!a{element} ټاکي۔ آيا دا هم تضمينولے شو چې د
+$\Domain{M}$ هر !!{element} کوم ترم ټاکلے وي؟ په بله وينا، آيا داسې
+تيورۍ~$\Gamma$ شته چې ټول مدلونه ئې پوښلي وي؟ د متناهي شاهد قضيه
+ښيي چې که~$\Gamma$ نامتناهي مدلونه ولري، داسې نۀ ده۔ دا داسې
+ليدلے شو: فرض کړئ~$\Struct{M}$ د~$\Gamma$ يو نامتناهي مدل دے، او
+$c$ داسې يو !!a{constant} دے چې د~$\Gamma$ په ژبه کښې نشته۔ فرض
+کړئ~$\Delta$ د ټولو هغو جملو~$\eq/[c][t]$ سټ دے چې~$t$ د~$\Gamma$
+په ژبه~$\Lang{L}$ کښې يو تړلے ترم وي؛ يعنې
+  \[
+  \Delta = \Setabs{\eq/[c][t]}{t \in \Trm[L]}.
+  \]
+د~$\Gamma \cup \Delta$ يو متناهي فرعي سټ د
+$\Gamma' \cup \Delta'$ په بڼه ليکل کېدے شي، چې
+$\Gamma' \subseteq \Gamma$ او~$\Delta' \subseteq \Delta$ وي۔ ځکه
+$\Delta'$ متناهي دے، يوازې متناهي ډېر ترمونه لرلے شي۔ داسې
+$a \in \Domain{M}$ واخلئ چې د~$\Domain{M}$ يو !!a{element} وي او له
+هغوى څخه ئې هېڅ يو نۀ ټاکي؛ او~$\Struct{M'}$ داسې !!{structure}
+واخلئ چې کټ مټ د~$\Struct{M}$ په څېر وي، خو
+$\Assign{c}{M'} = a$ هم ولري۔ ځکه په~$\Delta'$ کښې د راغلو ټولو
+$t$ دپاره~$a \neq \Value{t}{M}$، نو~$\Sat{M'}{\Delta'}$۔ ځکه
+$\Sat{M}{\Gamma}$،~$\Gamma' \subseteq \Gamma$، او~$c$ په~$\Gamma$
+کښې نۀ راځي، نو~$\Sat{M'}{\Gamma'}$ هم۔ دواړه سره يوځاے راکوي چې
+د~$\Gamma \cup \Delta$ د هر متناهي فرعي سټ
+$\Gamma' \cup \Delta'$ دپاره~$\Sat{M'}{\Gamma' \cup \Delta'}$۔
+نو د~$\Gamma \cup \Delta$ هر متناهي فرعي سټ د صدق وړ دے۔ د
+متناهي شاهد قضيې له مخې،~$\Gamma \cup \Delta$ پخپله د صدق وړ دے۔
+نو داسې مدلونه شته چې~$\Sat{M}{\Gamma \cup \Delta}$۔ هر داسې
+$\Struct{M}$ د~$\Gamma$ مدل دے، خو پوښلے نۀ دے، ځکه د~$\Lang{L}$
+د ټولو ترمونو~$t$ دپاره
+$\Value{c}{M} \neq \Value{t}{M}$۔
+\end{ex}
+
+\begin{ex}
+داسې يوه !!a{language}~$\Lang{L}$ په پام کښې ونيسئ چې
+!!{predicate}~$<$، !!{constant}s~$\Obj{0}$ او~$\Obj{1}$، او
+!!{function}s~$+$،~$\times$ او~$-$ ولري۔ فرض کړئ~$\Gamma$ په دې
+!!{language} کښې د ټولو هغو !!{sentence}s سټ دے چې په
+!!{structure}~$\Struct{Q}$ کښې رښتونې دي، چې د تعريف ساحه ئې
+$\Rat$ او تفسيرونه ئې څرګند دي۔~$\Gamma$ د~$\Lang{L}$ د ټولو هغو
+!!{sentence}s سټ دے چې د ناطقو عددونو په اړه رښتونې دي۔ څرګنده ده
+چې په~$\Rat$ (او حتٰی په~$\Real$) کښې داسې عددونه~$r$ نشته چې
+له~$0$ څخه لوی، خو د ټولو~$k \in \PosInt$ دپاره له~$1/k$ څخه
+کوچني وي۔ که داسې عدد موجود واے، يو \emph{بې حده کوچنے عدد} به
+و: له صفره بېل، خو بې حده کوچنے۔ د متناهي شاهد قضيه د دې ښودلو
+دپاره کارېدلے شي چې د~$\Gamma$ داسې مدلونه شته چې بې حده کوچني
+عددونه پکښې موجود دي۔ زموږ په ژبه کښې د تقسيم !!a{function} نشته
+(پر صفر تقسيم ناتعريف دے، او !!{function}s بايد په بشپړو تابعو
+تفسير شي)۔ خو بيا هم څرګندولے شو چې~$r < 1/k$، ځکه دا هله او يوازې
+هله سم دي چې~$r \cdot k < 1$۔ اوس~$c$ يو نوے !!{constant} ونيسئ او
+$\Delta$ داسې وټاکئ:
+\[
+\{\Obj{0} < c\}
+\cup \Setabs{ c \times \num k < \Obj{1} }{k \in \PosInt}
+\]
+(چې~$\num{k} = (\Obj{1} + (\Obj{1} + \dots + (\Obj{1} +
+\Obj{1})\dots))$ کښې $k$ ځله~$\Obj{1}$ راغلے)۔ د~$\Delta$ د هر
+متناهي فرعي سټ~$\Delta_0$ دپاره داسې~$K$ شته چې په~$\Delta_0$
+کښې د ټولو !!{sentence}s~$c \times \num{k} < \Obj{1}$ دپاره
+$k < K$ وي۔ که~$\Struct{Q}$ داسې~$\Struct{Q'}$ ته پراخه کړو چې
+$\Assign{c}{Q'} = 1/K$ ولري، نو د هر متناهي
+$\Gamma_0 \subseteq \Gamma$ دپاره
+$\Sat{Q'}{\Gamma_0 \cup \Delta_0}$ لرو؛ نو
+$\Gamma \cup \Delta$ په متناهي ډول د صدق وړ دے (تمرين: دا په
+تفصيل ثابت کړئ)۔ د متناهي شاهد قضيې له مخې،
+$\Gamma \cup \Delta$ د صدق وړ دے۔ د~$\Gamma \cup \Delta$ هر
+مدل~$\Struct{S}$ يو بې حده کوچنے عدد لري؛ يعنې~$\Assign{c}{S}$۔
+\end{ex}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+د حساب په معياري مدل~$\Struct{N}$ کښې داسې هېڅ
+!!{element}~$k \in \Domain{N}$ نشته چې هره صيغه~$\num{n} < x$
+پوره کړي (چې~$\num{n}$ هغه~$\Obj{0}^{\prime\dots\prime}$ دے چې
+$n$ دانې~$\prime$ لري)۔ د متناهي شاهد قضيه وکاروئ او وښيئ چې د
+حساب په ژبه کښې هغه~!!{sentence}s چې د حساب په معياري
+مدل~$\Struct{N}$ کښې رښتونې دي، په داسې !!a{structure}~$\Struct{N'}$
+کښې هم رښتونې دي چې يو داسې !!a{element} لري چې په رښتيا هره
+صيغه~$\num{n} < x$ پوره کوي۔
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{
+\begin{ex}
+پوهېږو چې له~!!{identity} سره د اول مرتبې منطق دا څرګندولے شي چې
+د~!!{domain} کچه بايد لږ تر لږه ټاکلې اندازه ولري: جمله
+$!A_{\ge n}$ (چې وايي «لږ تر لږه~$n$ بېل څيزونه شته») يوازې په
+هغو جوړښتونو کښې رښتونې ده چې~$\Domain{M}$ لږ تر لږه~$n$ څيزونه
+ولري۔ نو که داسې وټاکو:
+  \[
+  \Delta = \Setabs{!A_{\ge n}}{n \ge 1}
+  \]
+بيا د~$\Delta$ هر مدل بايد نامتناهي وي۔ په دې توګه يوې تيورۍ ته
+د~$\Delta$ په ورزياتولو تضمينولے شو چې يوازې نامتناهي مدلونه
+ولري: د~$\Gamma \cup \Delta$ مدلونه کټ مټ د~$\Gamma$ نامتناهي
+مدلونه دي۔
+
+نو د اول مرتبې منطق نامتناهي‌والے څرګندولے شي۔ خو د متناهي شاهد
+قضيه ښيي چې متناهي‌والے نۀ شي څرګندولے۔ ځکه فرض کړئ د جملو کوم
+سټ~$\Lambda$ په ټولو او يوازې متناهي !!{structure}s کښې رښتونے
+وي۔ بيا~$\Delta \cup \Lambda$ په متناهي ډول د صدق وړ دے۔ ولې؟
+فرض کړئ
+$\Delta' \cup \Lambda' \subseteq \Delta \cup \Lambda$ متناهي دے،
+چې~$\Delta' \subseteq \Delta$ او~$\Lambda' \subseteq \Lambda$ وي۔
+که لومړے فرعي سټ خالي وي، د اندېکس ارزښت يو ټاکو؛ او که خالي نۀ وي،
+$n$ دې تر ټولو لوی هغه عدد وي چې~$!A_{\ge n} \in \Delta'$۔
+\textbf{د ژباړې د نسخې سمون (OLCOM-006):} سرچينه سمدستي تر ټولو
+لوی اندېکس ټاکي، خو خالي متناهي فرعي سټ داسې اندېکس نۀ لري؛ دلته
+خالي حالت جلا ونيول شو۔ ځکه~$\Lambda$ په ټولو متناهي جوړښتونو کښې
+رښتونے دے، داسې مدل~$\Struct{M}$ لري چې متناهي ډېر، خو
+$\ge n$،~!!{element}s ولري۔ خو بيا
+$\Sat{M}{\Delta' \cup \Lambda'}$۔ د متناهي شاهد قضيې له مخې،
+$\Delta \cup \Lambda$ يو نامتناهي مدل لري، او دا له هغې فرضيې سره
+تناقض لري چې~$\Lambda$ يوازې په متناهي !!{structure}s کښې رښتونے
+دے۔
+\end{ex}
+}{}
+
+\end{document}

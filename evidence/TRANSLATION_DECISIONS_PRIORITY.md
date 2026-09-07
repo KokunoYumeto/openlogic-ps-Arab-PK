@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 89 high-priority entries from the complete 180-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 90 high-priority entries from the complete 187-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -84,6 +84,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0036; Sets of Different Sizes, and Cantor's Theorem; `content/sets-functions-relations/size-of-sets/comparing-size.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 53,57; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-STRING
 
@@ -208,6 +209,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0066; Natural Deduction; `content/first-order-logic/proof-systems/natural-deduction.tex` source line(s) 22; `ps-Arab-PK/content/first-order-logic/proof-systems/natural-deduction.tex` target line(s) 20; page: pending stable pagination in a reader containing this unit
   - OLP-0067; \usetoken{P}{tableau}; `content/first-order-logic/proof-systems/tableaux.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/proof-systems/tableaux.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0068; Axiomatic \usetoken{P}{derivation}; `content/first-order-logic/proof-systems/axiomatic-deduction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/proof-systems/axiomatic-deduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 47; page: pending stable pagination in a reader containing this unit
 
 ## TERM-METALOGIC
 
@@ -294,6 +296,11 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0111; Soundness with \usetoken{S}{identity}; `content/first-order-logic/tableaux/soundness-identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0125; \usetoken{P}{derivation} with \usetoken{S}{identity}; `content/first-order-logic/axiomatic-deduction/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ORDER
 
@@ -325,6 +332,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0042; From $\Nat$ to $\Int$; `content/sets-functions-relations/arithmetization/integers.tex` source line(s) 30; `ps-Arab-PK/content/sets-functions-relations/arithmetization/integers.tex` target line(s) 30,32,36; page: pending stable pagination in a reader containing this unit
   - OLP-0043; From $\Int$ to $\Rat$; `content/sets-functions-relations/arithmetization/rationals.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0047; Ordered Rings and Fields; `content/sets-functions-relations/arithmetization/checking-details.tex` source line(s) 106; `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex` target line(s) 109; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 41; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 38,39,40; page: pending stable pagination in a reader containing this unit
 
 ## TERM-REL-NEGATIONS
 
@@ -367,6 +375,9 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0046; Some Philosophical Reflections; `content/sets-functions-relations/arithmetization/reflections.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/reflections.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0047; Ordered Rings and Fields; `content/sets-functions-relations/arithmetization/checking-details.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0048; Appendix: the Reals as Cauchy Sequences; `content/sets-functions-relations/arithmetization/cauchy.tex` source line(s) 109,134; `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex` target line(s) 32,117; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 136,153,157; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PREDICATE
 
@@ -382,6 +393,8 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0104; \usetoken{P}{tableau} with Quantifiers; `content/first-order-logic/tableaux/proving-things-quant.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 115,157; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 24,54; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 48,77,123; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 124; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -526,6 +539,8 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0061; \usetoken{P}{valuation} and Satisfaction; `content/propositional-logic/syntax-and-semantics/valuations-sat.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex` target line(s) 16,22; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 110; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 106,112,113,114; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 48; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 73; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 140; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -538,7 +553,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
 - Locations:
   - OLP-0021; Basics; `content/sets-functions-relations/functions/function-basics.tex` source line(s) 24,35,39,47,52,53,84,86,87,88,96,133,135; `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex` target line(s) 18,19,24,25,33,34,35,37,38,45,46,52,57,58,59,64,65,81,82,83,85,94,95,111,128,130,131; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 109,112,116,117,130; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 13,15,16,17,22,101,113,115,116,135; page: pending stable pagination in a reader containing this unit
-  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 23,49,76,80,86,89,91,108; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 49,50,84,109,162,278,286; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 23,49,76,80,86,89,91,108; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 49,50,84,99,113,166,282,290; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -587,6 +602,9 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 24,25,49,82,83,103,126; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 14,24,50,85,86,107,130; page: pending stable pagination in a reader containing this unit
   - OLP-0058; Propositional \usetoken{P}{formula}; `content/propositional-logic/syntax-and-semantics/formulas.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 194; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 199; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 18,22,37,59,60; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 17,21,36,57,59; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -626,6 +644,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0036; Sets of Different Sizes, and Cantor's Theorem; `content/sets-functions-relations/size-of-sets/comparing-size.tex` source line(s) 17,19,20; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex` target line(s) 15,16,19; page: pending stable pagination in a reader containing this unit
   - OLP-0037; The Notion of Size, and Schr\"oder-Bernstein; `content/sets-functions-relations/size-of-sets/schroder-bernstein.tex` source line(s) 15,48; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex` target line(s) 15,45; page: pending stable pagination in a reader containing this unit
   - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 15; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FINITE
 
@@ -651,6 +670,10 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 52,53,55,56,66,69; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) 50,51,53,54,55,57,63,64,67; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 18; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 17; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 77,81; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 79,80,88; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 195,196,199; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 200,201,203; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 17,18,20,22,24,26,27,30,37,39,49,52,63,97,98,105,107,115,116,132,134,144,148,149,152,179,180,181,186,187,189,191,192,194,195; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 13,15,17,18,19,21,22,23,24,25,29,33,37,40,50,51,53,64,96,97,98,105,108,116,118,119,137,150,153,156,157,168,186,187,188,191,192,193,194,196; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,29,33,60,61,68,75,92,93,100,102,109,111,117,125,128,129,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 13,16,25,27,32,59,60,67,75,92,93,100,102,109,111,115,117,125,126,128,129,132,143,144,157; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 12,23,37,55; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 12,22,36,53; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IFF
 
@@ -868,7 +891,9 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0061; \usetoken{P}{valuation} and Satisfaction; `content/propositional-logic/syntax-and-semantics/valuations-sat.tex` source line(s) 143,191; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex` target line(s) 23,150,156,198; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 56,91,94,95; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 56,93,96,97; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 63,66; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 63,66,67,73; page: pending stable pagination in a reader containing this unit
-  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 83,85,95,169,196,211,223,234,244,254; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 84,86,96,172,199,214,227,239,250,256,265; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 83,85,95,169,196,211,223,234,244,254; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 84,86,96,176,203,218,231,243,254,260,269; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 156,182; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 162,188; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 153; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1012,7 +1037,10 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 69; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) 26,64,67; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 158; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 24,162; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 44; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
-  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 110; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 18,110,166,176,181,187,191,199,213,226,238; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 110; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 18,114,170,180,185,191,195,203,217,230,242; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 67,102,115; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 22,44,49,63,64,69,104,117; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 24,39,150; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 17,22,23,29,30,40,41,46,51,53,54,76,118,119,156,158,194; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,60,61,92,116,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 23,26,27,28,32,59,60,67,75,92,93,100,102,109,111,116,117,121,126,128,129,133,143,144,145,158,163,171; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SUBSTITUTION
 
@@ -1129,7 +1157,12 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 2,6,29,34; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 28,34; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 2,14,20; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 14,19; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 2; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
-  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 2; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 2; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 99; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 2,14; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 2,3,13,16,19,20,51,52,58,59,60,69,85,86,87,93,94,95,103,107,116,120; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 13,16,19,52,89,97,104,117; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 2,15,25,74,165,171,184; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 15,23,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 2,16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 2,14,28,35,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -1196,6 +1229,7 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 7,28,34,49,78,209,213,219; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 28,34,49,221,227; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 14,49,76,147,170,211; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 49,123; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 18,33,97; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 16,18; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 25,49,57,81,87,95,104,106,108,117,119,121; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 13,19,52,65,104,106,109,117,119,122; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1247,6 +1281,11 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 14; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 23,82; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 14; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 13,16,19,51,87,95; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 13,16,19,52,89,97,104,117; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 15,25,74; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 15,23,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 28,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1334,6 +1373,9 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 50; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1384,12 +1426,12 @@ This view contains 89 high-priority entries from the complete 180-entry decision
 
 ## TERM-DERIVABILITY-PROPERTIES
 
-- Source term or sense: proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness)
-- Choice: ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت
-- Why provisional: proof, consistency and relational-property concepts regionally supported; exact proof-theoretic and compactness compounds provisional
-- Rationale: These are syntactic properties of derivability. Reflexivity uses membership, monotonicity enlarges assumptions, transitivity composes derivations by cut, and compactness here means that a derivation or inconsistency already has a finite witness.
-- Alternatives: د ثبوت اړوند مفاهيم; انعکاس، زياتېدنه، انتقال او تراکم
-- Please double-check: In Pakistani Pashto mathematical prose, is «ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت» the clearest conventional rendering of “proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness)” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Source term or sense: proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness) / finitely satisfiable / Compactness Theorem
+- Choice: ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت / په متناهي ډول د صدق وړ / د متناهي شاهد قضيه
+- Why provisional: proof, consistency, satisfiability and relational concepts regionally supported; exact proof-theoretic and compactness compounds provisional
+- Rationale: The proof-theoretic compactness property says a derivation or inconsistency already has a finite witness. The semantic Compactness Theorem says a set is satisfiable when every finite subset is satisfiable, equivalently that semantic entailment already has a finite premise set. The edition uses one finite-witness word family while keeping syntactic consistency distinct from semantic satisfiability.
+- Alternatives: د ثبوت اړوند مفاهيم; انعکاس، زياتېدنه، انتقال او تراکم; د تراکم قضيه; په متناهي ډول پوره کېدونکی
+- Please double-check: In Pakistani Pashto mathematical prose, is «ثبوت-تيوريکي / انعکاسيت / يکنواختي / انتقاليت / د متناهي شاهد خاصيت / په متناهي ډول د صدق وړ / د متناهي شاهد قضيه» the clearest conventional rendering of “proof-theoretic / reflexivity / monotonicity / transitivity / compactness (finite witness) / finitely satisfiable / Compactness Theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0077; Proof-Theoretic Notions; `content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex` source line(s) 18,23; `ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex` target line(s) 21,25,84,94,109; page: pending stable pagination in a reader containing this unit
   - OLP-0078; \usetoken{S}{derivability} and Consistency; `content/first-order-logic/sequent-calculus/provability-consistency.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-consistency.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
@@ -1415,10 +1457,13 @@ This view contains 89 high-priority entries from the complete 180-entry decision
   - OLP-0121; \usetoken{S}{derivability} and Consistency; `content/first-order-logic/axiomatic-deduction/provability-consistency.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-consistency.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0122; \usetoken{S}{derivability} and the Propositional Connectives; `content/first-order-logic/axiomatic-deduction/provability-propositional.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0123; \usetoken{S}{derivability} and the Quantifiers; `content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
-  - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 26,59; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) 26,54; page: pending stable pagination in a reader containing this unit
+  - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 26,59; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) 26,54,57,64; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 55; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 56,57; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 74; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 75; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 13,16,33,96,133,161,184; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 13,15,21,29,33,51,53,96,137,156,168,194; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 13,15,26,60,61,92,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 16,32,59,60,67,75,92,93,100,109,115,117,126,128,129; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -1484,18 +1529,23 @@ This view contains 89 high-priority entries from the complete 180-entry decision
 
 ## TERM-COMPLETENESS-CONSTRUCTION
 
-- Source term or sense: complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma
-- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه
-- Why provisional: general semantic, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
-- Rationale: A complete consistent set decides every sentence while remaining syntactically consistent. Saturation supplies quantified witnesses; Lindenbaum extension completes the set; the term model uses closed terms as its domain. The Truth Lemma equates satisfaction in that constructed model (or in the propositional valuation) with membership in the complete set. The compact Pashto labels are edition choices, and the cited Afghan logic is only a regional comparator.
-- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه
-- Please double-check: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Source term or sense: complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma / factored term model
+- Choice: بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه / خارج قسمت شوے ترمي مدل
+- Why provisional: general semantic, equality, relation, consistency, induction and proof concepts attested; exact construction and lemma labels unattested and provisional
+- Rationale: A complete consistent set decides every sentence while remaining syntactically consistent. Saturation supplies quantified witnesses; Lindenbaum extension completes the set; the term model uses closed terms as its domain. The Truth Lemma equates satisfaction with membership. When identity is present, the factored term model identifies terms whose equality belongs to the complete set and interprets symbols on the resulting equivalence classes. The compact Pashto construction labels are edition choices; cited Afghan works are regional comparators.
+- Alternatives: تام سازګار سټ; اشباع شوے سټ; د هنکين توسعه; د لينډنباوم فرعي قضيه; د اصطلاحاتو مدل; د رښتياوالي لمه; د هم ارزښتۍ پر ټولګيو جوړ مدل
+- Please double-check: In Pakistani Pashto mathematical prose, is «بشپړ سازګار سټ / مشبوع سټ / د هنکين غځونه / د لينډنباوم لمه / ترمي مدل / د صدق لمه / خارج قسمت شوے ترمي مدل» the clearest conventional rendering of “complete consistent set / saturated set / Henkin expansion / Lindenbaum lemma / term model / Truth Lemma / factored term model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 140,156,165; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 144,147,158,160,171; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 17; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 156; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 11,15,39; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 13,26; page: pending stable pagination in a reader containing this unit
-  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 40,65,118,163; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 30,37,40,41,65,80,85,111,118,166; page: pending stable pagination in a reader containing this unit
+  - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 40,65,118; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 30,37,40,41,65,80,85,115,122,170; page: pending stable pagination in a reader containing this unit
+  - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 13,15,19,159; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 13,15,18,20,165; page: pending stable pagination in a reader containing this unit
+  - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 28,139; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 130,135,136,156; page: pending stable pagination in a reader containing this unit
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DECIDABILITY
 
@@ -1507,6 +1557,17 @@ This view contains 89 high-priority entries from the complete 180-entry decision
 - Please double-check: In Pakistani Pashto mathematical prose, is «د بديهي اصولو له لارې څرګندېدونکې / د پرېکړې وړ» the clearest conventional rendering of “axiomatizable / decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 30; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
+
+## TERM-LOWENHEIM-SKOLEM
+
+- Source term or sense: Löwenheim–Skolem Theorem / Skolem's Paradox / at most denumerable model
+- Choice: د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل
+- Why provisional: countability concepts regionally attested; theorem names and exact compounds provisional
+- Rationale: The downward theorem gives a finite or denumerable model to a consistent theory in the chapter's countable-language setting. The paradox distinguishes an externally enumerable model from sets that the model internally classifies as nonenumerable. The names are transliterated edition choices.
+- Alternatives: د لووينهايم--سکولم قضيه; د سکولم معما; تر زياته حده د شمېر وړ مدل
+- Please double-check: In Pakistani Pashto mathematical prose, is «د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل» the clearest conventional rendering of “Löwenheim–Skolem Theorem / Skolem's Paradox / at most denumerable model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 10,12,48,58; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 10,12,47; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

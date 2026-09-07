@@ -1,0 +1,63 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T03:27:16.223523+00:00",
+  "batch_id": "PS-B034-COMPACTNESS-DIRECT",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0136",
+      "source_path": "content/first-order-logic/completeness/compactness-direct.tex",
+      "source_bytes": 5397,
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "translation_bytes": 8094,
+      "translation_sha256": "62484ab73c4dfe03b8612ab0164e2aeb298ae9434a7f25bc548e488c872e2cea"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0136 lines 13-56",
+      "observation": "The direct-proof strategy and Boolean closure proposition were checked without importing syntactic derivability into the requested semantic exercises.",
+      "treatment": "No source defect found; all closure directions and profile tags are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0136 lines 58-113",
+      "observation": "The finite-satisfiability Henkin, quantified-instance and Lindenbaum statements were traced through their stage and closed-term conditions.",
+      "treatment": "No source defect found; every preservation alternative and quantifier direction is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0136 lines 115-143",
+      "observation": "The converse direct proof invokes only the ordinary term model in the FOL branch, although that model's Truth Lemma explicitly excludes identity and the theorem has no such restriction.",
+      "treatment": "The identity-free branch keeps the ordinary term model; the identity branch uses its quotient. Failed equivalence or congruence laws would supply finite unsatisfiable subsets, so the argument remains direct. The repair is disclosed adjacent to the proof.",
+      "correction_id": "OLCOM-007"
+    },
+    {
+      "locator": "OLP-0136 lines 140-142",
+      "observation": "The FOL-only replacement-reference clause has no required third iftag argument in the source.",
+      "treatment": "An explicit empty inactive branch is supplied and disclosed so following proof text cannot be consumed as the missing argument.",
+      "correction_id": "OLCOM-009"
+    },
+    {
+      "locator": "OLP-0136 lines 145-159",
+      "observation": "The two full-Truth-Lemma exercises were checked against their logic profiles.",
+      "treatment": "No source defect found; both requested proof targets are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-007",
+      "classification": "direct_compactness_fol_proof_omits_identity_case",
+      "source_locator": "completeness/compactness-direct.tex:128-142",
+      "target_line_1based": 152
+    },
+    {
+      "correction_id": "OLCOM-009",
+      "classification": "selective_macro_missing_required_false_branch",
+      "source_locator": "completeness/compactness-direct.tex:140-142",
+      "target_line_1based": 151
+    }
+  ],
+  "conclusion": "The omitted identity branch and the malformed selective macro are supplied and disclosed. Every remaining finite-satisfiability extension, closure law, quantifier condition, Truth Lemma dependency and exercise is preserved."
+}

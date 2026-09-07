@@ -1,0 +1,99 @@
+{
+  "schema": "ps-proof-systems-reader-visual-acceptance/2",
+  "status": "accepted",
+  "release": "v0.4.1-proof-systems-reference-repair",
+  "reviewed_utc": "2026-09-06T02:13:51.289631+00:00",
+  "artifact": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems.pdf",
+    "bytes": 506791,
+    "sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+    "pages": 108
+  },
+  "reviewed_pages_1based": [
+    1,
+    5,
+    20,
+    41,
+    42,
+    43,
+    44,
+    64,
+    65,
+    66,
+    68,
+    77,
+    91,
+    94,
+    98,
+    107,
+    108
+  ],
+  "required_reference_pages_1based": [
+    41,
+    42,
+    44,
+    64,
+    65,
+    68,
+    91,
+    94,
+    107
+  ],
+  "adjacent_reflow_pages_1based": [
+    43,
+    66
+  ],
+  "representative_control_pages_1based": [
+    1,
+    5,
+    20,
+    77,
+    98,
+    108
+  ],
+  "comparison": {
+    "changed_pages_1based": [
+      1,
+      41,
+      42,
+      43,
+      44,
+      64,
+      65,
+      66,
+      68,
+      91,
+      94,
+      107
+    ],
+    "pixel_identical_pages": 96,
+    "reported_reference_pages_1based": [
+      41,
+      42,
+      44,
+      64,
+      65,
+      68,
+      91,
+      94,
+      107
+    ],
+    "adjacent_reflow_pages_1based": [
+      43,
+      66
+    ],
+    "title_disclosure_page_1based": 1
+  },
+  "automated_margin_result": {
+    "edge_touch_pages": [],
+    "blank_pages": [],
+    "minimum_margins_pixels": {
+      "left": 101,
+      "top": 40,
+      "right": 104,
+      "bottom": 54
+    }
+  },
+  "page_render_receipt_sha256": "c7c20e5d741a9d6c3f7f3330d8ebb22e082e292a5a416ebf7a7427bda7a17e3b",
+  "result": "The title page, all nine pages named by the independent v0.4 audit, both adjacent pages changed by paragraph reflow, and five representative unchanged control pages were inspected on the exact accepted bytes. Human-readable Pashto result names and adjacent blue [OLP] source links are legible; mathematics remains black and LTR. No raw internal label, clipping, overlap, tofu, missing glyph, reversed mathematical run, unresolved-reference fallback, or damaged proof geometry was found. A 120-DPI full-document comparison found the other 96 pages pixel-identical to v0.4.0."
+}

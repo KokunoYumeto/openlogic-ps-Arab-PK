@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted-in-draft; OLP-0056–0125 published and anonymously verified in the v0.4.1 proof-systems reader; OLP-0126–0132 pending later reader integration",
-  "adopted_utc": "2026-09-06T02:50:19.780714+00:00",
+  "status": "adopted-in-draft; OLP-0056–0125 published and anonymously verified in v0.4.1; OLP-0126–0137 are being integrated into the proof-systems/completeness reader",
+  "adopted_utc": "2026-09-06T03:27:16.222187+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -1878,6 +1878,132 @@
           "$\\lforall[x][!B(x)]\\in\\Gamma^*$"
         ]
       }
+    },
+    {
+      "id": "OLCOM-004",
+      "unit_id": "OLP-0133",
+      "classification": "function_congruence_formula_contains_duplicate_comma",
+      "source_path": "content/first-order-logic/completeness/identity.tex",
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "source_locator": "completeness/identity.tex:66-72",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/identity.tex",
+      "target_line_1based": 72,
+      "target_sha256": "094f6df09f9068272a3a1af5d978b8e860201490f230b1ec929fe5a0d15623f8",
+      "mode": "remove-duplicate-comma-plus-adjacent-note",
+      "translation_change": "removes the duplicated comma between the (i+1)-st argument and the ellipsis in the first function term of the congruence proof obligation",
+      "counterexample": "The source token sequence t_(i+1),,dots is not a well-formed argument list and disagrees with the immediately paired function term, which contains a single separator.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260906-IDENTITY-TERM-MODEL",
+      "formula_policy": "Exactly one redundant punctuation character is removed from one displayed function term; all term symbols, indices, argument order, equality scope and the paired term remain unchanged.",
+      "decision_timing": "contemporaneous owner comparison of the two sides of the displayed function congruence obligation",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},,\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]"
+        ],
+        "target_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLCOM-005",
+      "unit_id": "OLP-0133",
+      "classification": "representative_independence_example_negates_wrong_representative",
+      "source_path": "content/first-order-logic/completeness/identity.tex",
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "source_locator": "completeness/identity.tex:113-132",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/identity.tex",
+      "target_line_1based": 131,
+      "target_sha256": "094f6df09f9068272a3a1af5d978b8e860201490f230b1ec929fe5a0d15623f8",
+      "mode": "restore-alternative-representative-plus-adjacent-note",
+      "translation_change": "changes the negated predicate instance from R(t) to R(t-prime), the alternative representative introduced by the sentence and used in the resulting nonmembership claim",
+      "counterexample": "If the negated instance remains R(t), it directly contradicts the preceding assumption that R(t) holds and never tests whether the definition depends on choosing the equivalent t-prime.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260906-IDENTITY-TERM-MODEL",
+      "formula_policy": "Exactly one term symbol inside the negated satisfaction formula changes from t to t-prime; the equivalence hypothesis, class equality, membership contradiction and all other formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner trace of the representative-independence counterexample from its alternative-term premise to its alternative-class conclusion",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat/{M}{\\Atom{R}{t}}$"
+        ],
+        "target_only": [
+          "$\\Sat/{M}{\\Atom{R}{t'}}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCOM-006",
+      "unit_id": "OLP-0135",
+      "classification": "finite_subset_argument_chooses_maximum_from_possibly_empty_delta",
+      "source_path": "content/first-order-logic/completeness/compactness.tex",
+      "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+      "source_locator": "completeness/compactness.tex:184-195",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/compactness.tex",
+      "target_line_1based": 200,
+      "target_sha256": "32b16bb456e5db17ef79312c27943584accd3420fc687f1e5620c6603ad88a9e",
+      "mode": "add-empty-finite-subset-case-plus-adjacent-note",
+      "translation_change": "handles an empty Delta-prime by choosing the first positive size index before applying the source's largest-index argument to a nonempty finite subset",
+      "counterexample": "The empty finite subset of Delta contains no sentence A-at-least-n, so the source's requested largest such n does not exist even though the finite-satisfiability conclusion remains immediate.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260906-COMPACTNESS",
+      "formula_policy": "No formula, set inclusion, model size bound or compactness conclusion changes; only the omitted empty case and an adjacent disclosure are added in prose.",
+      "decision_timing": "contemporaneous owner proof trace of the arbitrary finite-subset argument before selecting a maximum size index"
+    },
+    {
+      "id": "OLCOM-007",
+      "unit_id": "OLP-0136",
+      "classification": "direct_compactness_fol_proof_omits_identity_case",
+      "source_path": "content/first-order-logic/completeness/compactness-direct.tex",
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "source_locator": "completeness/compactness-direct.tex:128-142",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex",
+      "target_line_1based": 152,
+      "target_sha256": "27f8712fd6802fa49a9656f880774b6fc690b65f4625a3c42e2ba4490fc4b211",
+      "mode": "add-identity-aware-quotient-branch-plus-adjacent-note",
+      "translation_change": "uses the ordinary term model only when identity is absent and adds the factored term-model branch, with equivalence and congruence laws obtained directly from finite satisfiability, when identity is present",
+      "counterexample": "A finitely satisfiable set containing an equality between two syntactically distinct closed terms is not satisfied by the ordinary term model, because that model interprets each term as itself.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260906-COMPACTNESS-DIRECT",
+      "formula_policy": "No source formula, extension, truth-lemma reference or finite-satisfiability condition changes; the omitted identity case and its direct semantic justification are added in prose.",
+      "decision_timing": "contemporaneous owner comparison of the direct proof with the immediately preceding identity-aware completeness proof and the stated scope of the term-model Truth Lemma"
+    },
+    {
+      "id": "OLCOM-008",
+      "unit_id": "OLP-0132",
+      "classification": "selective_macro_missing_required_false_branch",
+      "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
+      "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+      "source_locator": "completeness/construction-of-model.tex:75-98",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex",
+      "target_line_1based": 98,
+      "target_sha256": "ca342ae6d124c7e3dfb6421bb7ca6e55e80c3be141297e29303d9d8d86588727",
+      "mode": "supply-explicit-empty-inactive-branch-plus-adjacent-note",
+      "translation_change": "adds the required third argument {} to the FOL-only iftag around the value lemma; the selected FOL text is unchanged and the repair is disclosed immediately after the proof",
+      "counterexample": "The upstream iftag macro takes three arguments. With the false branch omitted, TeX can consume the following iftag construct as argument three, coupling two independent selections and preventing deterministic profile resolution.",
+      "stable_audit": "PS-OWNER-READER-INTEGRATION-20260906-CONSTRUCTION-IFTAG",
+      "formula_policy": "No mathematical formula changes. The repair supplies only the structurally required empty false branch and a Pashto disclosure.",
+      "decision_timing": "contemporaneous reader-integration parse against the frozen three-argument iftag definition",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCOM-009",
+      "unit_id": "OLP-0136",
+      "classification": "selective_macro_missing_required_false_branch",
+      "source_path": "content/first-order-logic/completeness/compactness-direct.tex",
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "source_locator": "completeness/compactness-direct.tex:140-142",
+      "target_path": "ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex",
+      "target_line_1based": 151,
+      "target_sha256": "62484ab73c4dfe03b8612ab0164e2aeb298ae9434a7f25bc548e488c872e2cea",
+      "mode": "supply-explicit-empty-inactive-branch-plus-adjacent-note",
+      "translation_change": "adds the required third argument {} to the FOL-only iftag around the replacement-reference clause and discloses the repair immediately after that clause",
+      "counterexample": "The upstream iftag macro takes three arguments. Without the empty false branch, TeX consumes following prose as argument three, so selection changes the parse of the proof.",
+      "stable_audit": "PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG",
+      "formula_policy": "No mathematical formula or reference changes. The repair supplies only the structurally required empty false branch and a Pashto disclosure.",
+      "decision_timing": "contemporaneous reader-integration parse against the frozen three-argument iftag definition",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -1885,7 +2011,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate and verify the identity term model OLP-0133.",
+  "next_action": "Build, reproduce and visually verify the 82-unit proof-systems/completeness reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -1907,7 +2033,14 @@
     "PS-OWNER-SEMANTIC-20260905-AXIOMATIC-SOUNDNESS",
     "PS-OWNER-SEMANTIC-20260905-COMPLETENESS-OUTLINE-SETS",
     "PS-OWNER-SEMANTIC-20260905-LINDENBAUM",
-    "PS-OWNER-SEMANTIC-20260906-CONSTRUCTION-MODEL"
+    "PS-OWNER-SEMANTIC-20260906-CONSTRUCTION-MODEL",
+    "PS-OWNER-SEMANTIC-20260906-IDENTITY-TERM-MODEL",
+    "PS-OWNER-SEMANTIC-20260906-COMPLETENESS-THEOREM",
+    "PS-OWNER-SEMANTIC-20260906-COMPACTNESS",
+    "PS-OWNER-SEMANTIC-20260906-COMPACTNESS-DIRECT",
+    "PS-OWNER-SEMANTIC-20260906-DOWNWARD-LOWENHEIM-SKOLEM",
+    "PS-OWNER-READER-INTEGRATION-20260906-CONSTRUCTION-IFTAG",
+    "PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG"
   ],
   "source_authorities": [
     {

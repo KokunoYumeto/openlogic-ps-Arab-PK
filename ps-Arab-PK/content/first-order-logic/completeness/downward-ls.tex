@@ -1,0 +1,62 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: downward-ls
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{dls}
+\olsection{د لوېنهايم--سکولم قضيه}
+
+د لوېنهايم--سکولم قضيه وايي چې که يوه تيوري نامتناهي مدل ولري،
+نو داسې يو مدل هم لري چې تر ډېره !!{denumerable} وي۔ د دې خبرې يوه
+سملاسي پايله دا ده چې د اول مرتبې منطق دا نۀ شي څرګندولے چې د
+!!a{structure} کچه !!{nonenumerable} ده: هره !!{sentence} يا د
+!!{sentence}s هر سټ چې په ټولو !!{nonenumerable} !!{structure}s
+کښې رښتونے وي، په کوم !!{enumerable} جوړښت کښې هم رښتونے دے۔
+
+\begin{thm}
+\ollabel{thm:downward-ls} که~$\Gamma$ سازګار وي، نو يو
+!!a{enumerable} مدل لري؛ يعنې په داسې !!a{structure} کښې د صدق وړ
+دے چې د تعريف ساحه ئې يا متناهي يا !!{denumerable} وي۔
+\end{thm}
+
+\begin{proof}
+که~$\Gamma$ سازګار وي، د بشپړتيا قضيې ثبوت چې کوم
+!!{structure}~$\Struct M$ ورکوي، د هغه د تعريف ساحه~$\Domain{M}$
+د ژبې~$\Lang L$ د ترمونو له سټ څخه لويه نۀ ده۔ نو~$\Struct M$ تر
+ډېره !!{denumerable} دے۔
+\end{proof}
+
+\begin{thm}
+\ollabel{noidentity-ls} که~$\Gamma$ د عينيت پرته د اول مرتبې د
+منطق په ژبه کښې د~!!{sentence}s يو سازګار سټ وي، نو يو
+!!a{denumerable} مدل لري؛ يعنې په داسې !!a{structure} کښې د صدق وړ
+دے چې د تعريف ساحه ئې نامتناهي او !!{enumerable} وي۔
+\end{thm}
+
+\begin{proof}
+که~$\Gamma$ سازګار وي او داسې هېڅ جمله نۀ لري چې عينيت پکښې
+راغلے وي، نو د بشپړتيا قضيې ثبوت چې کوم
+!!{structure}~$\Struct M$ ورکوي، د هغه د تعريف ساحه~$\Domain{M}$
+کټ مټ د ژبې~$\Lang L'$ د ترمونو سټ دے۔ نو~$\Struct{M}$
+!!{denumerable} دے، ځکه~$\Trm[L']$ هم داسې دے۔
+\end{proof}
+
+\begin{ex}[د سکولم پاراډوکس]
+د زرملو--فرېنکل سټ تيوري~$\Log{ZFC}$ يو ډېر پياوړے چوکاټ دے چې
+کابو ټولې رياضيکي خبرې پکښې څرګندېدلے شي، د سټونو د کچو په اړه
+حقيقتونه هم۔ نو د بېلګې په توګه،~$\Log{ZFC}$ ثابتولے شي چې د
+حقيقي عددونو سټ~$\Real$،~!!{nonenumerable} دے؛ د کانټور قضيه
+ثابتولے شي چې د هر سټ تواني سټ پخپله له هغه سټ څخه لوی دے، او داسې
+نور۔ که~$\Log{ZFC}$ سازګاره وي، ټول مدلونه ئې نامتناهي دي؛ او
+سربېره پر دې، ټول داسې !!{element}s لري چې تيوري ئې په اړه وايي
+چې~!!{nonenumerable} دي، لکه هغه عنصر چې د~$\Log{ZFC}$ دا قضيه
+رښتونې کوي چې د طبيعي عددونو تواني سټ موجود دے۔ د
+لوېنهايم--سکولم قضيې له مخې،~$\Log{ZFC}$،~!!{enumerable} مدلونه هم
+لري: داسې مدلونه چې «!!{nonenumerable}» سټونه لري، خو پخپله
+!!{enumerable} دي۔
+\end{ex}
+
+\end{document}

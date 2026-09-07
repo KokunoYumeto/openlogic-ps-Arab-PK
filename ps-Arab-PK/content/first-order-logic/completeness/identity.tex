@@ -1,0 +1,209 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{ide}
+\olsection{عينيت}
+
+\begin{explain}
+په مخکښې برخه کښې د ترمي مدل ورکړل شوې جوړونه د هغو سټونو
+$\Gamma$ دپاره د اول مرتبې د منطق د بشپړوالي ثابتولو ته بس ده
+چې~$\eq$ نۀ لري۔ ترمي مدل هر داسې~$!A \in \Gamma^*$ رښتونے کوي
+چې~$\eq$ نۀ لري (او په دې توګه ټول~$!A \in \Gamma$ هم)۔ خو که
+$\eq$ موجود وي، دا کار نۀ کوي۔ لامل دا دے چې بيا ښائي~$\Gamma^*$
+داسې يوه !!a{sentence}~$\eq[t][t']$ ولري، خو په ترمي مدل کښې د هر
+ترم قيمت پخپله هماغه ترم دے۔ نو که~$t$ او~$t'$ بېل ترمونه وي، په
+ترمي مدل کښې ئې قيمتونه، يعنې په ترتيب سره~$t$ او~$t'$، هم بېل دي؛
+ځکه~$\eq[t][t']$ ناسم دے۔ خو دا ستونزه د هغې جوړونې په کارولو
+هوارولے شو چې «خارج قسمت جوړونه» بللے شي۔
+\end{explain}
+
+\begin{defn}
+  فرض کړئ~$\Gamma^*$ په~$\Lang L$ کښې د جملو يو سازګار او
+  !!{complete} سټ دے۔ د~$\Lang L$ د تړلو ترمونو پر سټ اړيکه
+  $\approx$ داسې تعريفوو:
+  \[
+  t \approx t' \text{\quad هله او يوازې هله چې \quad} \eq[t][t'] \in \Gamma^*
+  \]
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:approx-equiv}
+اړيکه~$\approx$ لاندې خاصيتونه لري:
+\begin{enumerate}
+\item $\approx$ انعکاسي ده۔
+\item $\approx$ متناظره ده۔
+\item $\approx$ انتقالي ده۔
+\item که~$t \approx t'$ وي،~$f$ يوه !!a{function} وي، او
+  $t_1$، \dots،~$t_{i-1}$، $t_{i+1}$، \dots،~$t_n$ تړلي ترمونه وي، نو
+\[
+\Atom{f}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \approx
+\Atom{f}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n}.
+\]
+\item که~$t \approx t'$ وي،~$R$ يو !!a{predicate} وي، او
+  $t_1$، \dots،~$t_{i-1}$، $t_{i+1}$، \dots،~$t_n$ تړلي ترمونه وي، نو
+\begin{multline*}
+\Atom{R}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \in \Gamma^* \text{ هله او يوازې هله چې } \\
+\Atom{R}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n} \in \Gamma^*.
+\end{multline*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+ځکه~$\Gamma^*$ سازګار او !!{complete} دے، نو
+$\eq[t][t'] \in \Gamma^*$ هله او يوازې هله چې
+$\Gamma^* \Proves \eq[t][t']$ وي۔ نو د لاندې خبرو ښودل کافي دي:
+\begin{enumerate}
+\item د هر تړلي ترم~$t$ دپاره~$\Gamma^* \Proves \eq[t][t]$۔
+\item که~$\Gamma^* \Proves \eq[t][t']$ وي، نو
+  $\Gamma^* \Proves \eq[t'][t]$۔
+\item که~$\Gamma^* \Proves \eq[t][t']$ او
+  $\Gamma^* \Proves \eq[t'][t'']$ وي، نو
+  $\Gamma^* \Proves \eq[t][t'']$۔
+\item که~$\Gamma^* \Proves \eq[t][t']$ وي، نو
+\[
+\Gamma^* \Proves
+\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\]
+\textbf{د ژباړې د نسخې سمون (OLCOM-004):} د سرچينې په لومړي
+تابعي ترم کښې يوه تکراري کامه وه؛ دلته لرې شوې ده۔ دا د هرې
+$n$-مقامي !!{function}~$f$ او تړلو ترمونو $t_1$، \dots،
+$t_{i-1}$، $t_{i+1}$، \dots،~$t_n$ دپاره سم دي۔
+\item که~$\Gamma^* \Proves \eq[t][t']$ او
+$\Gamma^* \Proves
+\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$ وي، نو
+$\Gamma^* \Proves \Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$
+د هر $n$-مقامي !!{predicate}~$R$ او تړلو ترمونو $t_1$، \dots،
+$t_{i-1}$، $t_{i+1}$، \dots،~$t_n$ دپاره۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+د~\olref[fol][com][ide]{prop:approx-equiv} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{defn}
+فرض کړئ~$\Gamma^*$ په يوه ژبه~$\Lang L$ کښې يو سازګار او
+!!{complete} سټ دے،~$t$ يو تړلے ترم دے، او~$\approx$ د مخکښې
+تعريف اړيکه ده۔ بيا:
+\[
+\equivrep{t}{\approx} = \Setabs{t'}{t'\in \Trm[L], t \approx t'}
+\]
+او~$\equivclass{\Trm[L]}{\approx} = \Setabs{\equivrep{t}{\approx}}{t \in \Trm[L]}$۔
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:term-model-factor}
+فرض کړئ~$\Struct M = \Struct M(\Gamma^*)$ د~$\Gamma^*$ هغه ترمي
+مدل دے چې په~\olref[mod]{defn:termmodel} کښې راغلے۔ بيا
+$\Struct{\equivclass{M}{\approx}}$ لاندې !!{structure} ده:
+\begin{enumerate}
+\item $\Domain{\equivclass{M}{\approx}} = \equivclass{\Trm[L]}{\approx}$۔
+\item $\Assign{c}{\equivclass{M}{\approx}} = \equivrep{c}{\approx}$۔
+\item $\Assign{f}{\equivclass{M}{\approx}}(\equivrep{t_1}{\approx}, \dots,
+  \equivrep{t_n}{\approx}) = \equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx}$۔
+\item $\tuple{\equivrep{t_1}{\approx}, \dots, \equivrep{t_n}{\approx}} \in
+  \Assign{R}{\equivclass{M}{\approx}}$ هله او يوازې هله چې
+  $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$ وي؛ يعنې هله او يوازې هله چې
+  $\Atom{R}{t_1,\dots, t_n} \in \Gamma^*$ وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+پام وکړئ چې~$\Assign{f}{\equivclass{M}{\approx}}$ او
+$\Assign{R}{\equivclass{M}{\approx}}$ مو د
+$\equivclass{\Trm[L]}{\approx}$ پر عناصرو داسې تعريف کړي چې هغوی
+مو د~$\equivrep{t}{\approx}$ په بڼه ياد کړي؛ يعنې د
+\emph{استازو}~$t \in \equivrep{t}{\approx}$ له لارې۔ بايد باوري
+کړو چې دا تعريفونه د دې استازو پر انتخاب پورې تړلي نۀ دي؛ يعنې د
+نورو داسې انتخابونو~$t'$ دپاره چې هماغه د هم ارزښتۍ ټولګي ټاکي
+($\equivrep{t}{\approx} = \equivrep{t'}{\approx}$)، تعريفونه هماغه
+پايله ورکړي۔ د بېلګې په توګه، که~$R$ يو يو-مقامي !!{predicate}
+وي، د تعريف وروستۍ فقره وايي چې
+$\equivrep{t}{\approx} \in \Assign{R}{\equivclass{M}{\approx}}$ هله
+او يوازې هله چې~$\Sat{M}{\Atom{R}{t}}$ وي۔ که د کوم بل ترم~$t'$ دپاره
+چې~$t \approx t'$ وي،~$\Sat/{M}{\Atom{R}{t'}}$، نو تعريف به وغواړي
+چې~$\equivrep{t'}{\approx} \notin \Assign{R}{\equivclass{M}{\approx}}$۔
+\textbf{د ژباړې د نسخې سمون (OLCOM-005):} د سرچينې په منفي صدق
+فورمول کښې د لومړي استازي نښه راغلې وه؛ د جملې د «بل ترم» او
+ورپسې ټولګي له مخې دلته د بل استازي نښه کارول شوې ده۔ که
+$t \approx t'$ وي، نو~$\equivrep{t}{\approx} =
+\equivrep{t'}{\approx}$؛ خو نۀ شو کولے چې هم
+$\equivrep{t}{\approx} \in \Assign{R}{\equivclass{M}{\approx}}$ او هم
+$\equivrep{t}{\approx} \notin \Assign{R}{\equivclass{M}{\approx}}$
+ولرو۔ خو~\olref{prop:approx-equiv} تضمينوي چې دا نۀ شي پېښېدلے۔
+\end{explain}
+
+\begin{prop}
+$\Struct{\equivclass{M}{\approx}}$ په ښه ډول تعريف شوے دے؛ يعنې که
+$t_1$، \dots،~$t_n$، $t_1'$، \dots،~$t_n'$ تړلي ترمونه وي، او د هرې
+اړوندې جوړې دپاره~$t_i \approx t_i'$ وي، نو
+\begin{enumerate}
+\item $\equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx} =
+    \equivrep{\Atom{f}{t_1',\dots, t_n'}}{\approx}$؛ يعنې
+  \[
+  \Atom{f}{t_1,\dots, t_n} \approx \Atom{f}{t_1',\dots, t_n'}
+  \]
+  او
+\item $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$ هله او يوازې هله چې
+  $\Sat{M}{\Atom{R}{t_1',\dots, t_n'}}$ وي؛ يعنې
+  \[
+    \Atom{R}{t_1,\dots, t_n} \in \Gamma^* \text{ هله او يوازې هله چې }
+    \Atom{R}{t_1',\dots, t_n'} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+له~\olref{prop:approx-equiv} څخه پر~$n$ د استقرا له لارې ترلاسه کېږي۔
+\end{proof}
+
+د ترمي مدل د حالت په څېر، د صدق لمې تر ثبوت مخکښې لاندې لمې ته
+اړتيا لرو۔
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel-factored} فرض کړئ~$\Struct M = \Struct M
+ (\Gamma^*)$؛ بيا~$\Value{t}{\equivclass{M}{\approx}} = \equivrep{t}
+ {\approx}$۔
+\end{lem}
+\begin{proof}
+ثبوت د~\olref[mod]{lem:val-in-termmodel} له ثبوت سره ورته دے۔
+\end{proof}
+
+\begin{prob}
+د~\olref[fol][com][ide]{lem:val-in-termmodel-factored} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:truth}
+د ټولو جملو~$!A$ دپاره~$\Sat{\equivclass{M}{\approx}}{!A}$ هله او
+يوازې هله چې~$!A \in \Gamma^*$ وي۔
+\end{lem}
+
+\begin{proof}
+پر~$!A$ د استقرا له لارې، کټ مټ د~\olref[mod]{lem:truth} د ثبوت
+په څېر۔ يوازې هغه حالت زيات پام غواړي چې~$!A \ident \eq[t][t']$ وي۔
+\begin{align*}
+\Sat{\equivclass{M}{\approx}}{\eq[t][t']} & \text{ هله او يوازې هله چې } \equivrep{t}{\approx} = \equivrep{t'}{\approx}
+\text{ وي (د $\Struct{\equivclass{M}{\approx}}$ د تعريف له مخې)}\\
+& \text{ هله او يوازې هله چې } t \approx t' \text{ وي (د $\equivrep{t}{\approx}$ د تعريف له مخې)}\\
+& \text{ هله او يوازې هله چې } \eq[t][t'] \in \Gamma^* \text{ وي (د $\approx$ د تعريف له مخې)۔}
+\end{align*}
+\end{proof}
+
+\begin{digress}
+پام وکړئ: سره له دې چې~$\Struct{M(\Gamma^*)}$ تل !!{enumerable} او
+نامتناهي دے،~$\Struct{\equivclass{M}{\approx}}$ ښائي متناهي وي، ځکه
+کېدلے شي چې د~$\equivrep{t}{\approx}$ ټولګي يوازې متناهي شمېر وي۔
+دا تمه کېدونکې ده، ځکه ښائي~$\Gamma$ داسې !!{sentence}s ولري چې هره
+هغه !!{structure} چې دوى پکښې رښتونې وي، بايد متناهي وي۔ د بېلګې
+په توګه،~$\lforall[x][\lforall[y][x = y]]$ يوه سازګاره !!{sentence}
+ده، خو يوازې په هغو !!{structure}s کښې رښتونې کېږي چې !!a{domain}
+ئې کټ مټ يو !!{element} لري۔
+\end{digress}
+
+\end{document}

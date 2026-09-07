@@ -1,0 +1,57 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T03:06:17.271878+00:00",
+  "batch_id": "PS-B033-COMPACTNESS",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0135",
+      "source_path": "content/first-order-logic/completeness/compactness.tex",
+      "source_bytes": 8852,
+      "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+      "translation_bytes": 12146,
+      "translation_sha256": "32b16bb456e5db17ef79312c27943584accd3420fc687f1e5620c6603ad88a9e"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0135 lines 13-88",
+      "observation": "Both compactness formulations and the proof of finite satisfiability equivalence were checked through all FOL/propositional proof profiles.",
+      "treatment": "No source defect found; all semantic and syntactic directions are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0135 lines 90-121",
+      "observation": "The noncovered-model construction was traced from the fresh constant and finite avoidance step through compactness to the final term-value inequality.",
+      "treatment": "No source defect found; the construction and all satisfaction claims are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0135 lines 123-153",
+      "observation": "The infinitesimal construction was checked against the language without division, the finite upper-index choice and the rational expansion.",
+      "treatment": "No source defect found; every inequality and model expansion is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0135 lines 156-167",
+      "observation": "The nonstandard-arithmetic exercise was checked against all standard numerals.",
+      "treatment": "No source defect found; the requested nonstandard element retains its universal scope.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0135 lines 169-195",
+      "observation": "The finitude-inexpressibility proof selects the largest index represented in an arbitrary finite Delta-prime, but Delta-prime may be empty.",
+      "treatment": "The empty case chooses the first positive size index; the nonempty case keeps the source's maximum argument. The addition is disclosed adjacent to the choice.",
+      "correction_id": "OLCOM-006"
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-006",
+      "classification": "finite_subset_argument_chooses_maximum_from_possibly_empty_delta",
+      "source_locator": "completeness/compactness.tex:184-195",
+      "target_line_1based": 200
+    }
+  ],
+  "conclusion": "One omitted empty-subset case is supplied and disclosed. Every remaining compactness equivalence, model construction, inequality, cardinality condition and proof-system reference is preserved."
+}

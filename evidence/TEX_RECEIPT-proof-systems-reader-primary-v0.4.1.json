@@ -1,0 +1,51 @@
+{
+  "schema": "ps-guarded-tex/1",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovered": false,
+  "passes": [
+    {
+      "pass": 1,
+      "exit_code": 0,
+      "pdf_sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+      "captured_job_active_processes_after": 0,
+      "document": "reader"
+    },
+    {
+      "pass": 2,
+      "exit_code": 0,
+      "pdf_sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+      "captured_job_active_processes_after": 0,
+      "document": "reader"
+    },
+    {
+      "pass": 3,
+      "exit_code": 0,
+      "pdf_sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+      "captured_job_active_processes_after": 0,
+      "document": "reader"
+    }
+  ],
+  "log_checks": [
+    {
+      "pass": 1,
+      "findings": [
+        "LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right."
+      ],
+      "document": "reader"
+    },
+    {
+      "pass": 2,
+      "findings": [],
+      "document": "reader"
+    },
+    {
+      "pass": 3,
+      "findings": [],
+      "document": "reader"
+    }
+  ],
+  "status": "processes-completed",
+  "completed_utc": "2026-09-06T01:56:38.1082907Z"
+}

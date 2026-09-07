@@ -1,0 +1,77 @@
+{
+  "schema": "ps-proof-systems-completeness-reader-acceptance/1",
+  "status": "accepted",
+  "release": "v0.5.0-proof-systems-completeness",
+  "accepted_utc": "2026-09-07T14:16:58.275891+00:00",
+  "reader": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
+    "bytes": 606333,
+    "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+    "pages": 126,
+    "profile": "FOL; all primitive connectives and quantifiers; all four proof systems"
+  },
+  "unit_range": {
+    "first": "OLP-0056",
+    "last": "OLP-0137",
+    "count": 82
+  },
+  "source_snapshot_units": 137,
+  "page_mapping": {
+    "label_occurrences": 1814,
+    "paired_segments": 907,
+    "spanning_segments": 118,
+    "sha256": "262754a56fe1fb8241c9d788aea5ca93440c67b8fa97a7b936f24cf7d3fa3e86"
+  },
+  "external_references": {
+    "linked_occurrences": 44,
+    "unique_targets": 9,
+    "pages_1based": [
+      41,
+      42,
+      44,
+      64,
+      65,
+      68,
+      91,
+      94,
+      107,
+      117,
+      122
+    ]
+  },
+  "reproducibility": {
+    "compared_artifacts": {
+      "reader.tex": {
+        "bytes": 554530,
+        "sha256": "a7e9bc7f9db1720c5b9099ffad406208a4a0aef3c458061353a3f298ccc0a623"
+      },
+      "build-inputs.json": {
+        "bytes": 54312,
+        "sha256": "6785ff96da8ceb659c5a292526ae50e6e89f2819a78a2373ce81d70f375f5f98"
+      },
+      "reader.pdf": {
+        "bytes": 606333,
+        "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09"
+      },
+      "reader.aux": {
+        "bytes": 381099,
+        "sha256": "8e213f9bd242afea48c0e406961e1a454549117b5d776a6fb726fb68b98869e9"
+      },
+      "reader.out": {
+        "bytes": 19727,
+        "sha256": "b0f4959c3dc70089f952a6a98282e20a13a6e8d03a14c304d2c64bc9d7fbd3d7"
+      },
+      "reader.toc": {
+        "bytes": 10247,
+        "sha256": "19504fff3ec476d71b29bca0c4cabf3de0d007121dad3bef43c58ad30bc3daa6"
+      }
+    },
+    "primary_tex_receipt_sha256": "e64b3d4f0caa18109a54a1bf6c07ec5d97f52385db02ee21c036d0737111b64c",
+    "replay_tex_receipt_sha256": "220a302fe744927a1192bf1f1809ff4150c8796fa1f1eb575ca21608cb9b8837",
+    "all_compared_artifacts_byte_identical": true,
+    "all_six_passes_pdf_byte_identical": true,
+    "all_six_log_checks_empty": true
+  },
+  "visual_acceptance_sha256": "bbf3c97aad9c81d7c296e99aba7ac7753194ccb2f66d9b1ec089fde6144b4c4f",
+  "page_render_receipt_sha256": "a14afee0c47e8b3b2a4c2a1a382f1c4d20758fdf695e7bacc3fc4715cb067b39"
+}

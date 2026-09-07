@@ -1,0 +1,127 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: completeness-theorem
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cth}}
+      {\olfileid{pl}{com}{cth}}
+
+\olsection{د بشپړتيا قضيه}
+
+\begin{explain}
+راځئ خپلې پايلې سره يوځاے کړو: د بشپړتيا قضيې ته رسېږو۔
+\end{explain}
+
+\begin{thm}[د بشپړتيا قضيه]
+\ollabel{thm:completeness}
+فرض کړئ~$\Gamma$ د~!!{sentence}s يو سټ دے۔ که~$\Gamma$ سازګار وي،
+نو د صدق وړ دے۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ~$\Gamma$ سازګار دے۔\iftag{FOL}{ د
+  \olref[hen]{lem:henkin} له مخې، يو مشبوع سازګار سټ
+  $\Gamma' \supseteq \Gamma$ شته۔}{} د~\olref[lin]{lem:lindenbaum} له
+مخې، داسې~$\Gamma^* \supseteq \iftag{FOL}{\Gamma'}{\Gamma}$ شته چې
+سازګار او !!{complete} دے۔
+\iftag{FOL}{
+  ځکه~$\Gamma' \subseteq \Gamma^*$، نو د هرې
+  !!{formula}~$!A(x)$ دپاره~$\Gamma^*$ په لاندې بڼه يوه !!a{sentence}
+  لري:
+  \iftag{prvEx}
+        {$\lexists[x][!A(x)] \lif !A(c)$}
+        {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}
+  او په دې توګه~$\Gamma^*$ مشبوع دے۔ که~$\Gamma$،~$\eq$ نۀ لري،
+  نو}{نو} د~\olref[mod]{lem:truth} له مخې،
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ هله او
+يوازې هله چې~$!A \in \Gamma^*$ وي۔ له دې څخه په تېره بيا دا ترلاسه
+کېږي چې د ټولو~$!A \in \Gamma$ دپاره
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$؛ نو
+$\Gamma$ د صدق وړ دے۔\iftag{FOL}{
+  که~$\Gamma$،~$\eq$ ولري، نو د~\olref[ide]{lem:truth} له مخې د ټولو
+  !!{sentence}s~$!A$ دپاره
+  $\Sat{\equivclass{M}{\approx}}{!A}$ هله او يوازې هله چې
+  $!A \in \Gamma^*$ وي۔ په تېره بيا، د ټولو~$!A \in \Gamma$ دپاره
+  $\Sat{\equivclass{M}{\approx}}{!A}$؛ نو~$\Gamma$ د صدق وړ دے۔}{}
+\end{proof}
+
+\begin{cor}[د بشپړتيا قضيه، دويمه بڼه]
+\ollabel{cor:completeness}
+د ټولو~$\Gamma$ او !!{sentence}s~$!A$ دپاره: که
+$\Gamma \Entails !A$ وي، نو~$\Gamma \Proves !A$۔
+\end{cor}
+
+\begin{proof}
+پام وکړئ چې په~\olref{cor:completeness} او
+\olref{thm:completeness} کښې~$\Gamma$ ګانې په کلي ډول کميت ټاکل شوې
+دي۔ د دې دپاره چې ځان ګډوډ نۀ کړو،~\olref{thm:completeness} د يوه
+بېل متغير په کارولو بيا بيانوو: د~!!{sentence}s د هر سټ~$\Delta$
+دپاره، که~$\Delta$ سازګار وي، نو د صدق وړ دے۔ د نقيض عکس له مخې،
+که~$\Delta$ د صدق وړ نۀ وي، نو~$\Delta$ ناسازګار دے۔ دا به د لازمې
+نتيجې په ثبوت کښې وکاروو۔
+
+فرض کړئ~$\Gamma \Entails !A$۔ بيا د
+\olref[syn][sem]{prop:entails-unsat} له مخې
+$\Gamma \cup \{\lnot !A\}$ د صدق وړ نۀ دے۔ که
+$\Gamma \cup \{\lnot !A\}$ خپل~$\Delta$ ونيسو، د
+\olref{thm:completeness} مخکښې بڼه راکوي چې
+$\Gamma \cup \{\lnot !A\}$ ناسازګار دے۔ د
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:prov-incons},
+    prfSC/{fol:seq:prv:prop:prov-incons},
+    prfND/{fol:ntd:prv:prop:prov-incons},
+    prfTab/{fol:tab:prv:prop:prov-incons}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:prov-incons},
+    prfSC/{pl:seq:prv:prop:prov-incons},
+    prfND/{pl:ntd:prv:prop:prov-incons},
+    prfTab/{pl:tab:prv:prop:prov-incons}}},
+له مخې~$\Gamma \Proves !A$۔
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cth]{cor:completeness} وکاروئ چې
+\olref[fol][com][cth]{thm:completeness} ثابت کړئ، او په دې توګه
+وښيئ چې د بشپړتيا قضيې دواړه بيانونه هم ارزښته دي۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cth]{cor:completeness} وکاروئ چې
+\olref[pl][com][cth]{thm:completeness} ثابت کړئ، او په دې توګه
+وښيئ چې د بشپړتيا قضيې دواړه بيانونه هم ارزښته دي۔
+\end{prob}
+\tagendprob
+
+\tagprob{FOL}
+\begin{prob}
+د دې دپاره چې د~!!a{derivation} نظام بشپړ وي، قاعدې ئې بايد دومره
+پياوړې وي چې هر د صدق وړ نۀ سټ ناسازګار ثابت کړي۔ د بشپړتيا د ثبوت
+دپاره د~!!{derivation} کومې قاعدې اړينې وې؟ آيا له دې قاعدو څخه
+کومه يوه د ثبوت په هېڅ ځاے کښې نۀ ده کارول شوې؟ د دې پوښتنو د ځواب
+دپاره داسې يو لړ يا شکل جوړ کړئ چې وښيي د~!!{derivation} کومې
+قاعدې په هغو کومو پايلو کښې کارول شوې چې د
+\olref[fol][com][cth]{thm:completeness} ثبوت ته رسېږي۔ په دې ثبوتونو
+کښې د قاعدو هر ضمني استعمال هم خامخا ياد کړئ۔
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+د دې دپاره چې د~!!a{derivation} نظام بشپړ وي، قاعدې ئې بايد دومره
+پياوړې وي چې هر د صدق وړ نۀ سټ ناسازګار ثابت کړي۔ د بشپړتيا د ثبوت
+دپاره د~!!{derivation} کومې قاعدې اړينې وې؟ آيا له دې قاعدو څخه
+کومه يوه د ثبوت په هېڅ ځاے کښې نۀ ده کارول شوې؟ د دې پوښتنو د ځواب
+دپاره داسې يو لړ يا شکل جوړ کړئ چې وښيي د~!!{derivation} کومې
+قاعدې په هغو کومو پايلو کښې کارول شوې چې د
+\olref[pl][com][cth]{thm:completeness} ثبوت ته رسېږي۔ په دې ثبوتونو
+کښې د قاعدو هر ضمني استعمال هم خامخا ياد کړئ۔
+\end{prob}
+\tagendprob
+
+\end{document}

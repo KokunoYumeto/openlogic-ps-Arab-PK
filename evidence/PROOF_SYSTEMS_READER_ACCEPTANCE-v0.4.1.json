@@ -1,0 +1,32 @@
+{
+  "schema": "ps-proof-systems-reader-acceptance/2",
+  "status": "accepted",
+  "accepted_utc": "2026-09-06T02:13:51.289631+00:00",
+  "release": "v0.4.1-proof-systems-reference-repair",
+  "reader": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems.pdf",
+    "bytes": 506791,
+    "sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+    "pages": 108,
+    "profile": "FOL; all primitive connectives and quantifiers; all four proof systems"
+  },
+  "unit_range": {
+    "first": "OLP-0056",
+    "last": "OLP-0125",
+    "count": 70
+  },
+  "source_snapshot_units": 131,
+  "reproducibility": {
+    "reader_tex_sha256": "d0dd494277b80f0ab45557a84280c2824052c2b5c73631726e7d3662cb938c19",
+    "build_inputs_sha256": "ebe6b98b979f1bf680483172f8145880f69a5968bd5195426fa00ed938faaa5d",
+    "pdf_sha256": "8053c372ed68496adc4ec2317decbb9e5ab2c8858573d218d6d9fe03ba98fde5",
+    "aux_sha256": "a710389bfb41a5998e8a400fc11262d020b8a3bf7eedd4bcf6c15ba551ccb442",
+    "out_sha256": "883852d9b0f623cc232ff0a980822af92b43a76043a460984a86d08da1011a92",
+    "toc_sha256": "7a58a1a68f49a89e74a38a4061fc0ad509c24014990069d26a107ae028618be1",
+    "tex_receipt_sha256": "63f545ef317fe7fe7edb6cc71acbef3017df707d72baffcd6e19a1f5105d6253",
+    "three_pdf_passes_byte_identical": true
+  },
+  "visual_acceptance_sha256": "bd3103e524ff0dca61dc42ced5b89e31773da51d65b8deb2437890c47b255162",
+  "reader_occurrence_pages_sha256": "8290b6cec7d1604b9538a33dc31d947eb060a7c67b7585781209c453c8268ebd",
+  "repair_acceptance_sha256": "0eb892f4e775b2d02bba33407b2a8ba5123c5b934a3661c14ac10a4f35f95686"
+}

@@ -1,0 +1,55 @@
+﻿{
+    "schema":  "ps-guarded-tex/1",
+    "mutex":  "Global\\InterlanguageTeXSlotV1",
+    "timeout_ms":  60000,
+    "acquired":  true,
+    "abandoned_recovered":  false,
+    "passes":  [
+                   {
+                       "captured_job_active_processes_after":  0,
+                       "document":  "reader",
+                       "pdf_sha256":  "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+                       "pass":  1,
+                       "exit_code":  0
+                   },
+                   {
+                       "captured_job_active_processes_after":  0,
+                       "document":  "reader",
+                       "pdf_sha256":  "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+                       "pass":  2,
+                       "exit_code":  0
+                   },
+                   {
+                       "captured_job_active_processes_after":  0,
+                       "document":  "reader",
+                       "pdf_sha256":  "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+                       "pass":  3,
+                       "exit_code":  0
+                   }
+               ],
+    "log_checks":  [
+                       {
+                           "document":  "reader",
+                           "pass":  1,
+                           "findings":  [
+
+                                        ]
+                       },
+                       {
+                           "document":  "reader",
+                           "pass":  2,
+                           "findings":  [
+
+                                        ]
+                       },
+                       {
+                           "document":  "reader",
+                           "pass":  3,
+                           "findings":  [
+
+                                        ]
+                       }
+                   ],
+    "status":  "processes-completed",
+    "completed_utc":  "2026-09-06T03:38:51.5614314Z"
+}

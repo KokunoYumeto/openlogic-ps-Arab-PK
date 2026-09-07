@@ -4,9 +4,9 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 132,
-    "structural_pass": 132,
-    "visually_accepted": 93,
+    "draft_units": 137,
+    "structural_pass": 137,
+    "visually_accepted": 105,
     "published": 70
   },
   "publication_coverage": {
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B030-CONSTRUCTION-MODEL",
+  "batch": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -3674,7 +3674,7 @@
       "unit_id": "OLP-0132",
       "path": "content/first-order-logic/completeness/construction-of-model.tex",
       "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
-      "translation_sha256": "fa306867d456f51339ab525b93cae52b7723dfdbb0ec703db610d46a27c27cc8",
+      "translation_sha256": "ca342ae6d124c7e3dfb6421bb7ca6e55e80c3be141297e29303d9d8d86588727",
       "source_blocks": 30,
       "target_blocks": 30,
       "checks": {
@@ -3692,7 +3692,8 @@
       "residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLCOM-003"
+        "OLCOM-003",
+        "OLCOM-008"
       ],
       "status": "structural-pass",
       "math_diff": {
@@ -3704,6 +3705,145 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0133",
+      "path": "content/first-order-logic/completeness/identity.tex",
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "translation_sha256": "094f6df09f9068272a3a1af5d978b8e860201490f230b1ec929fe5a0d15623f8",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCOM-004",
+        "OLCOM-005"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},,\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]",
+          "$\\Sat/{M}{\\Atom{R}{t}}$"
+        ],
+        "target_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]",
+          "$\\Sat/{M}{\\Atom{R}{t'}}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0134",
+      "path": "content/first-order-logic/completeness/completeness-thm.tex",
+      "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
+      "translation_sha256": "0af629f15fe7b70af36f3ee5433731352226cb8da6de6c3c4d256f9616a1b492",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0135",
+      "path": "content/first-order-logic/completeness/compactness.tex",
+      "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+      "translation_sha256": "32b16bb456e5db17ef79312c27943584accd3420fc687f1e5620c6603ad88a9e",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCOM-006"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0136",
+      "path": "content/first-order-logic/completeness/compactness-direct.tex",
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "translation_sha256": "62484ab73c4dfe03b8612ab0164e2aeb298ae9434a7f25bc548e488c872e2cea",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCOM-007",
+        "OLCOM-009"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0137",
+      "path": "content/first-order-logic/completeness/downward-ls.tex",
+      "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+      "translation_sha256": "3e19ad39d00d3d6b9742448e2cc2d640369332115c26db6efadb24c36974e80a",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -5163,7 +5303,7 @@
       "unit_id": "OLP-0132",
       "passage": "value lemma",
       "reverse_paraphrase": "Structural induction on a closed term shows its value in the term model is that same term: constants supply the base and the function clause supplies the induction step.",
-      "finding": "The base case, induction hypotheses, function arity and all three displayed equalities are preserved."
+      "finding": "The base case, induction hypotheses, function arity and all three displayed equalities are preserved. OLCOM-008 adds the source's missing empty false branch to the surrounding iftag."
     },
     {
       "unit_id": "OLP-0132",
@@ -5182,6 +5322,174 @@
       "passage": "Truth Lemma quantified cases",
       "reverse_paraphrase": "The universal case passes from satisfaction of forall x B(x), through every closed instance B(t), to membership of forall x B(x); the existential case uses at least one closed instance throughout.",
       "finding": "The source switches from B to A only in the universal case's final formula. OLCOM-003 restores B, matching the current induction formula and all preceding equivalences; the repair is disclosed beside the formula."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "why identity requires factoring",
+      "reverse_paraphrase": "The ordinary term model makes distinct syntactic terms denote themselves, so it can falsify an equality sentence that belongs to Gamma-star; quotienting identifies exactly the terms that Gamma-star proves equal.",
+      "finding": "The equality-free scope, membership assumption, term-value argument and direction of the failure are preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "equivalence and congruence properties",
+      "reverse_paraphrase": "Define t approximately t-prime iff their equality belongs to Gamma-star. The relation is reflexive, symmetric and transitive, and replacing equivalent terms preserves function-term equivalence and predicate membership.",
+      "finding": "All five properties retain their coordinate, arity and membership directions. OLCOM-004 removes only the source's duplicate comma inside the first function term."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "proof reduction to derivability",
+      "reverse_paraphrase": "Completeness and consistency of Gamma-star turn equality membership into derivability, so the five relation and congruence claims reduce to five corresponding proof obligations.",
+      "finding": "Every premise and conclusion, including both equality premises in transitivity and the predicate-substitution direction, is preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "quotient classes and structure",
+      "reverse_paraphrase": "Form equivalence classes of closed terms; use them as the domain, interpret a constant by its class, a function by the class of the formed term, and a predicate tuple by satisfaction in the original term model, equivalently by membership in Gamma-star.",
+      "finding": "Both set abstractions and all four quotient-structure clauses retain their representatives, argument order and biconditionals."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "independence from representatives",
+      "reverse_paraphrase": "A definition on equivalence classes must give the same result for every representative. If R holds of t but not of an equivalent alternative t-prime, the same class would be both in and outside the predicate extension, which congruence excludes.",
+      "finding": "The source negates R(t) again where its prose introduces the alternative t-prime. OLCOM-005 uses R(t-prime), matching the following class and the contradiction; the repair is adjacent."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "well-definedness and value lemma",
+      "reverse_paraphrase": "Coordinatewise equivalent representatives yield equivalent function terms and matching predicate truth; induction on arity proves well-definedness, and term induction gives each term the value of its equivalence class.",
+      "finding": "The coordinatewise scope, two conclusions, induction parameter and factored value formula are preserved."
+    },
+    {
+      "unit_id": "OLP-0133",
+      "passage": "Truth Lemma and finite quotient",
+      "reverse_paraphrase": "The earlier Truth Lemma induction carries over, with equality handled by equality of classes, equivalence of representatives and membership of the equality sentence. Although the raw term model is countably infinite, its quotient may be finite, including a one-element model.",
+      "finding": "All three identity biconditionals and the finite-model example retain their exact direction, cardinality and universal quantifier nesting."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "first completeness formulation and extensions",
+      "reverse_paraphrase": "Starting from a consistent Gamma, the FOL branch first takes a saturated consistent Henkin extension; both FOL and propositional branches then take a complete consistent Lindenbaum extension.",
+      "finding": "Both superset relations, the tag-conditioned intermediate set, and every consistency, completeness and saturation property are preserved."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "saturation inherited by Gamma-star",
+      "reverse_paraphrase": "Because Gamma-prime is contained in Gamma-star, Gamma-star contains the required existential or negated-universal witness sentence for every formula and is therefore saturated.",
+      "finding": "The two proof profiles retain their exact witness schemas, constant, subset direction and formula scope."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "model branches and satisfiability",
+      "reverse_paraphrase": "Without identity, the ordinary term-model Truth Lemma makes every member of Gamma true; with identity, the factored-model Truth Lemma does so. The propositional branch uses the valuation.",
+      "finding": "The equality case split, all three satisfaction macros, membership biconditionals and restriction from Gamma-star to Gamma are preserved."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "semantic-entailment formulation",
+      "reverse_paraphrase": "Restate the universally quantified first formulation with Delta, contrapose it, apply it to Gamma union not-A after semantic entailment makes that set unsatisfiable, and use the relevant proof-system inconsistency result to derive A.",
+      "finding": "The variable renaming, contraposition, union, negation, entailment direction and all eight tag-conditioned proof references are retained."
+    },
+    {
+      "unit_id": "OLP-0134",
+      "passage": "equivalence and rule-dependency exercises",
+      "reverse_paraphrase": "Derive the first formulation from the second in each logic, then audit which derivation rules, including tacit uses, are needed along the completeness proof chain.",
+      "finding": "Both FOL and propositional references, the requested implication direction and the distinction between necessary, unused and tacit rule use are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "compactness statement and finite satisfiability",
+      "reverse_paraphrase": "A set is finitely satisfiable when every finite subset is satisfiable. Compactness says both that entailment has a finite premise witness and that finite satisfiability is equivalent to satisfiability.",
+      "finding": "Both biconditionals, subset direction, existential finite witness and allowance for an infinite whole set are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "proof of finite satisfiability equivalence",
+      "reverse_paraphrase": "One model or valuation for Gamma satisfies each finite subset. Conversely, soundness makes each satisfiable finite subset consistent, proof-theoretic compactness makes Gamma consistent, and completeness makes Gamma satisfiable.",
+      "finding": "The semantic-to-syntactic-to-semantic direction and all sixteen tag-conditioned proof references are retained."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "models not covered by terms",
+      "reverse_paraphrase": "Add a new constant c and all sentences saying c differs from every old-language closed term. Each finite subset is modeled by assigning c an element outside its finitely many term values; compactness then gives a model of the original theory that is not covered.",
+      "finding": "Freshness of c, infinitude of the starting model, the expansion argument, every satisfaction claim and the final noncoverage condition are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "infinitesimal model",
+      "reverse_paraphrase": "Add a positive constant c smaller than the reciprocal of every positive integer, expressed without division. Any finite subset has an upper index K and is satisfied in the rationals by c equal to 1 over K; compactness supplies a model containing an infinitesimal.",
+      "finding": "The language signature, positivity clause, multiplication encoding, finite bound, expansion value and final witness are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "nonstandard arithmetic exercise",
+      "reverse_paraphrase": "Although no standard natural exceeds every standard numeral, compactness yields a structure satisfying every standard-arithmetic sentence and containing an element above every numeral.",
+      "finding": "The standard-model premise, numeral notation, universal family of formulas and requested nonstandard witness are preserved."
+    },
+    {
+      "unit_id": "OLP-0135",
+      "passage": "infinitude expressible but finitude inexpressible",
+      "reverse_paraphrase": "Sentences requiring at least n objects jointly force infinitude. If Lambda characterized exactly the finite structures, every finite subset of Delta union Lambda would have a sufficiently large finite model, so compactness would give the impossible infinite model of Lambda.",
+      "finding": "OLCOM-006 handles an empty Delta-prime before choosing a maximum required size. Every remaining model class, union, lower bound and contradiction is preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "direct-proof strategy",
+      "reverse_paraphrase": "Repeat the completeness construction with finite satisfiability in place of syntactic consistency: extend the starting set until the same model-construction Truth Lemma applies.",
+      "finding": "The contrast with the earlier completeness proof, the FOL saturation branch and the propositional valuation branch are preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "Boolean closure without derivability",
+      "reverse_paraphrase": "A complete finitely satisfiable set contains a conjunction exactly with both conjuncts, a disjunction exactly with at least one disjunct, and an implication exactly when the antecedent is absent or the consequent present; the exercises require semantic proofs without Proves.",
+      "finding": "All membership polarities, Boolean alternatives and the prohibition on derivability are retained."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "finite-satisfiability Henkin and instance steps",
+      "reverse_paraphrase": "Every finitely satisfiable set has a saturated finitely satisfiable extension; a complete, finitely satisfiable, saturated set contains an existential exactly with some closed instance and a universal exactly with every closed instance.",
+      "finding": "The stage extension, witness sentence, closed-term scope and existential/universal quantifier directions are preserved."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "finite-satisfiability Lindenbaum step",
+      "reverse_paraphrase": "Extend any finitely satisfiable set to a complete finitely satisfiable set, choosing at each stage at least one of a sentence and its negation while preserving finite satisfiability.",
+      "finding": "Both tagged exercises retain the stage index, two alternatives and preservation property."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "direct compactness proof",
+      "reverse_paraphrase": "The easy direction restricts one model to finite subsets. For the converse, form saturated and complete finitely satisfiable extensions, construct the valuation or the appropriate term-based model, and rerun the Truth Lemma with finite-satisfiability closure and instance results.",
+      "finding": "Every extension, coverage dependency and replacement reference is preserved. OLCOM-007 adds the factored model and direct finite semantic congruence argument when identity occurs; OLCOM-009 supplies the source's missing empty false branch on the reference-selection clause."
+    },
+    {
+      "unit_id": "OLP-0136",
+      "passage": "expanded Truth Lemma exercises",
+      "reverse_paraphrase": "Write the full FOL and propositional Truth Lemma proofs in the finite-satisfiability form required by the direct compactness theorem.",
+      "finding": "Both profile-specific targets and theorem references are retained."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "downward theorem motivation",
+      "reverse_paraphrase": "Any theory with an infinite model also has an at-most-denumerable model, so no first-order theory can require every model to have a nonenumerable domain.",
+      "finding": "The existence direction, at-most bound and contrast between nonenumerable and enumerable structures are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "enumerable-model theorem",
+      "reverse_paraphrase": "A consistent set has a model whose domain is finite or denumerable because the completeness construction gives a domain no larger than the set of language terms.",
+      "finding": "Consistency, model existence, the finite-or-denumerable disjunction and cardinal comparison with the term set are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "identity-free denumerable model",
+      "reverse_paraphrase": "Without identity, the completeness construction uses the full term set itself as the domain, so the resulting model is denumerable rather than merely at most denumerable.",
+      "finding": "The identity-free restriction, exact-domain equality, expanded-language prime and infinitude claim are preserved."
+    },
+    {
+      "unit_id": "OLP-0137",
+      "passage": "Skolem's Paradox",
+      "reverse_paraphrase": "If ZFC is consistent, it proves internally that objects such as the real set and a power set are nonenumerable, yet the downward theorem supplies an externally enumerable model containing those internally nonenumerable sets.",
+      "finding": "The conditional consistency premise, power-set example and quotation-marked internal nonenumerability distinction are preserved."
     }
   ],
   "builds": [
@@ -5989,6 +6297,586 @@
       "accepted_utc": "2026-09-06T02:13:51.289631+00:00",
       "repair_acceptance_sha256": "0eb892f4e775b2d02bba33407b2a8ba5123c5b934a3661c14ac10a4f35f95686",
       "predecessor_reader_sha256": "d894c835b32137a81bc3e3f762b1fc3270466480754c7678991066b5ca2e8cb5"
+    },
+    {
+      "batch_id": "PS-R005-PROOF-SYSTEMS-COMPLETENESS",
+      "units": [
+        {
+          "unit_id": "OLP-0056",
+          "sha256": "a68614233a9a19f36ad093d1deb6e1876d616c687ddb2ffea4f016f887fd9a43",
+          "path": "content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex"
+        },
+        {
+          "unit_id": "OLP-0057",
+          "sha256": "dfd4c57e44a039d7987788894943ba5aebbfb30a7b3b2ed9cd5a4f763fb6c356",
+          "path": "content/propositional-logic/syntax-and-semantics/introduction.tex"
+        },
+        {
+          "unit_id": "OLP-0058",
+          "sha256": "34e44bdb0c46e36eed0bdf53d5e888a4e5f83fa6f23f1a3631ef2bba57449226",
+          "path": "content/propositional-logic/syntax-and-semantics/formulas.tex"
+        },
+        {
+          "unit_id": "OLP-0059",
+          "sha256": "d8d8836bd5d741e02d31d0d3bdb236cfaddebb7e39187e10f612d9594c24472e",
+          "path": "content/propositional-logic/syntax-and-semantics/preliminaries.tex"
+        },
+        {
+          "unit_id": "OLP-0060",
+          "sha256": "74ef79ac87433efe8bc4518f73d8dd58df0bb406fbbb5928ef40ba2e1c10d137",
+          "path": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex"
+        },
+        {
+          "unit_id": "OLP-0061",
+          "sha256": "b4ceef87314958c9db427a582bb8f16b4fb1c7e88be2f77b2b7102a7d070ca04",
+          "path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex"
+        },
+        {
+          "unit_id": "OLP-0062",
+          "sha256": "e8650fb8a1eb2baa20791d6795c56d5fcc2088a9da8154267d260a07a886652b",
+          "path": "content/propositional-logic/syntax-and-semantics/semantic-notions.tex"
+        },
+        {
+          "unit_id": "OLP-0063",
+          "sha256": "91c73c5f64af853daca42920318a81f4392ff54e89d55ac02ca6d846a6414b4b",
+          "path": "content/first-order-logic/proof-systems/proof-systems.tex"
+        },
+        {
+          "unit_id": "OLP-0064",
+          "sha256": "d2d7c008767ab260d7cecc0e4273356dc26ac52d458fdc6d6cdc5e2eaf60440e",
+          "path": "content/first-order-logic/proof-systems/introduction.tex"
+        },
+        {
+          "unit_id": "OLP-0065",
+          "sha256": "7de77a404fde51c40fb13a332dd6b7223ebdbbb190c12ea903915bdb5c620366",
+          "path": "content/first-order-logic/proof-systems/sequent-calculus.tex"
+        },
+        {
+          "unit_id": "OLP-0066",
+          "sha256": "a992470dff12e70ce55924d744edc74fc23fda7805c1a23651681b5dd2765a2e",
+          "path": "content/first-order-logic/proof-systems/natural-deduction.tex"
+        },
+        {
+          "unit_id": "OLP-0067",
+          "sha256": "01bbb81f570553f0541bd1bbb7dcc0452242b6ee3f406517c87ff660bd956a35",
+          "path": "content/first-order-logic/proof-systems/tableaux.tex"
+        },
+        {
+          "unit_id": "OLP-0068",
+          "sha256": "adee37668cf702e781819d569856d90702dd8eee9cba86d93a135b1f4ecabba7",
+          "path": "content/first-order-logic/proof-systems/axiomatic-deduction.tex"
+        },
+        {
+          "unit_id": "OLP-0069",
+          "sha256": "e93d3131b9d3d01581597ec0ef6fd546a540e1537962eea605c03a3eb196db0a",
+          "path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex"
+        },
+        {
+          "unit_id": "OLP-0070",
+          "sha256": "5e7e8db4ddf88fad696a627762cf3ea781bc3132f810d766dfc49bf8a9044f30",
+          "path": "content/first-order-logic/sequent-calculus/rules-and-proofs.tex"
+        },
+        {
+          "unit_id": "OLP-0071",
+          "sha256": "55edeb46b916e88b357276eefd1b9788f7494c42dec73fc9de397743ed23ef18",
+          "path": "content/first-order-logic/sequent-calculus/propositional-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0072",
+          "sha256": "4624a79c25394001741ac0c6b6ed46c37305a9465f8f1a1dc9ace747cd7b433a",
+          "path": "content/first-order-logic/sequent-calculus/quantifier-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0073",
+          "sha256": "cd04cd7984422dde5ee2385824dda0f244fb03baad0807d0b1196fa1b7d3c007",
+          "path": "content/first-order-logic/sequent-calculus/structural-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0074",
+          "sha256": "d81319d9d1624b84470fc26764918e80256f94b0255714463d00d8b9b94dfa1a",
+          "path": "content/first-order-logic/sequent-calculus/derivations.tex"
+        },
+        {
+          "unit_id": "OLP-0075",
+          "sha256": "5032089c0446ed8a615837f92037ea8ec9da81cdf5b601139cefba5aa5430ea4",
+          "path": "content/first-order-logic/sequent-calculus/proving-things.tex"
+        },
+        {
+          "unit_id": "OLP-0076",
+          "sha256": "2f8b3f3ee4b58b5735ac53d23baa8c87819014106864665a6b3e2b0d9032e14e",
+          "path": "content/first-order-logic/sequent-calculus/proving-things-quant.tex"
+        },
+        {
+          "unit_id": "OLP-0077",
+          "sha256": "937516ea63c2764860cbb7a4cfc84a4ce7958cb831cc7d027d09ecdf72413b26",
+          "path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex"
+        },
+        {
+          "unit_id": "OLP-0078",
+          "sha256": "a0e92643bed65a2a6c8813768524a2667d38aa73200294a662fe872f83875d80",
+          "path": "content/first-order-logic/sequent-calculus/provability-consistency.tex"
+        },
+        {
+          "unit_id": "OLP-0079",
+          "sha256": "a98160932051a675480f3625fd8389f8846c81c1c02db9ef1b2c50f0da971751",
+          "path": "content/first-order-logic/sequent-calculus/provability-propositional.tex"
+        },
+        {
+          "unit_id": "OLP-0080",
+          "sha256": "3b76135a3ddd38afb4be32b9d94f5500169e38b70bdd138366705c2120e44fe0",
+          "path": "content/first-order-logic/sequent-calculus/provability-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0081",
+          "sha256": "5b7da223a565ac42d459ce47964b8e20ac838b2d1a111c795ed94b2eef146c76",
+          "path": "content/first-order-logic/sequent-calculus/soundness.tex"
+        },
+        {
+          "unit_id": "OLP-0082",
+          "sha256": "74701e631ddc5de6e8be6e1562abd201b70cf863eeecfc1904f2783cda492d3b",
+          "path": "content/first-order-logic/sequent-calculus/identity.tex"
+        },
+        {
+          "unit_id": "OLP-0083",
+          "sha256": "6aee48eaefd2a94a095e86071462dbfd95be308bcc4d22046efae872f211356c",
+          "path": "content/first-order-logic/sequent-calculus/soundness-identity.tex"
+        },
+        {
+          "unit_id": "OLP-0084",
+          "sha256": "53002be3f5efc6749c76c3d468a050da159108db28a5dbc88854ad00fb2d59d9",
+          "path": "content/first-order-logic/natural-deduction/natural-deduction.tex"
+        },
+        {
+          "unit_id": "OLP-0085",
+          "sha256": "6fe92c1184af0036be4dff079b3c03a7f1da3f28fc142a4a647ec5538306a6f5",
+          "path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex"
+        },
+        {
+          "unit_id": "OLP-0086",
+          "sha256": "5928723a31afd26f60b14c29e6f7185211adadd1132e461bb31fc9e9817647a5",
+          "path": "content/first-order-logic/natural-deduction/propositional-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0087",
+          "sha256": "f73faf74fe627dcfd64d145808fa17b80861acc774cee1c98f72d0ed9fdcdcc1",
+          "path": "content/first-order-logic/natural-deduction/quantifier-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0088",
+          "sha256": "84be9e0652a01977020801b49b7c8bada2a886a869717671c2a54a171221c4d1",
+          "path": "content/first-order-logic/natural-deduction/derivations.tex"
+        },
+        {
+          "unit_id": "OLP-0089",
+          "sha256": "ebcb56e6ce50745e17faa8e0286edc11d2fcc8f320f771c79ff97c3912b16868",
+          "path": "content/first-order-logic/natural-deduction/proving-things.tex"
+        },
+        {
+          "unit_id": "OLP-0090",
+          "sha256": "26a891bbd422e365c1599eef5f483ba0caa3b1b19889774664b9ffeedd005a58",
+          "path": "content/first-order-logic/natural-deduction/proving-things-quant.tex"
+        },
+        {
+          "unit_id": "OLP-0091",
+          "sha256": "220790d6f8f8e16333fb144ffae612769bcd5eea4bc62481398908e878622248",
+          "path": "content/first-order-logic/natural-deduction/proof-theoretic-notions.tex"
+        },
+        {
+          "unit_id": "OLP-0092",
+          "sha256": "98dbbf165b620e5507c4ccaf4e6858e1f9e625862bf8150857a3bc9988b81f08",
+          "path": "content/first-order-logic/natural-deduction/provability-consistency.tex"
+        },
+        {
+          "unit_id": "OLP-0093",
+          "sha256": "614b7ce065ebb9cbc92859e0c8300f87bdd7e3f2fb08f81d2a77dc540a5482b5",
+          "path": "content/first-order-logic/natural-deduction/provability-propositional.tex"
+        },
+        {
+          "unit_id": "OLP-0094",
+          "sha256": "d773465a7ea0a7070b34ab4ce3f17137cacc57e13feba15dd737fca895339d74",
+          "path": "content/first-order-logic/natural-deduction/provability-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0095",
+          "sha256": "44333900a5c26fd626a8ee6debcd5aa07a56f5d02d9c7be99c38e5138049e721",
+          "path": "content/first-order-logic/natural-deduction/soundness.tex"
+        },
+        {
+          "unit_id": "OLP-0096",
+          "sha256": "f02d9f565e5b5eb1ad30fd8e2e42cf86e94b18d96dbd21a2583a08e09f5b7d6b",
+          "path": "content/first-order-logic/natural-deduction/identity.tex"
+        },
+        {
+          "unit_id": "OLP-0097",
+          "sha256": "f9415a4e8b46f2572d86041f280dfd4e0efb372dd3b87c57bdf761b4591ef3a4",
+          "path": "content/first-order-logic/natural-deduction/soundness-identity.tex"
+        },
+        {
+          "unit_id": "OLP-0098",
+          "sha256": "d8e7f1e5c99e74f9e3bc7f60a1021303faae7e8926b2832e3df986fcc697d6d6",
+          "path": "content/first-order-logic/tableaux/tableaux.tex"
+        },
+        {
+          "unit_id": "OLP-0099",
+          "sha256": "35d943dd4e3075ad0466eee777b08201efeee829228fb6a4506b5360d9fdaca1",
+          "path": "content/first-order-logic/tableaux/rules-and-proofs.tex"
+        },
+        {
+          "unit_id": "OLP-0100",
+          "sha256": "f2424a5bfa7742767930704539c12bc7d2d235227cc6f09521a9b395ea4e2211",
+          "path": "content/first-order-logic/tableaux/propositional-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0101",
+          "sha256": "bafca9cb38662d8346f3ebba1b41cb3daf8a37197eb7fe2fa1f270614e8ed647",
+          "path": "content/first-order-logic/tableaux/quantifier-rules.tex"
+        },
+        {
+          "unit_id": "OLP-0102",
+          "sha256": "e095de247b7fbc7452be9b86d37442e6bb78712e9ae0fdb3d3d930422120f6cd",
+          "path": "content/first-order-logic/tableaux/derivations.tex"
+        },
+        {
+          "unit_id": "OLP-0103",
+          "sha256": "5e01a566fa1cdd768c05492fa42d8d7900914909f5c844a4a500808fb3db6054",
+          "path": "content/first-order-logic/tableaux/proving-things.tex"
+        },
+        {
+          "unit_id": "OLP-0104",
+          "sha256": "b5fe1b51e2605e8ffa5fca4c51515371abffc3369f243a7f61e85cddef99f4ed",
+          "path": "content/first-order-logic/tableaux/proving-things-quant.tex"
+        },
+        {
+          "unit_id": "OLP-0105",
+          "sha256": "8ab23d01f2d1da50e6ec403267d7462c66899edfc70465f8420c464504205fbc",
+          "path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex"
+        },
+        {
+          "unit_id": "OLP-0106",
+          "sha256": "29700dc3a73b6a0fc96a86c90da6d1a692d8dacbd1cc4efaddda615eabc3c892",
+          "path": "content/first-order-logic/tableaux/provability-consistency.tex"
+        },
+        {
+          "unit_id": "OLP-0107",
+          "sha256": "9dc6b6726795f33bbd447de806435686b7a7519de1f07cad31fc2eb19b7bd549",
+          "path": "content/first-order-logic/tableaux/provability-propositional.tex"
+        },
+        {
+          "unit_id": "OLP-0108",
+          "sha256": "ce2b700cf2df5dee6a6f841638d64c58af141021c3b10bbad56ab54a3ede1a5a",
+          "path": "content/first-order-logic/tableaux/provability-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0109",
+          "sha256": "11e05a2a9f0359d79eb21cdb837625ae1922b2bc56450912e3b10e116423f0cb",
+          "path": "content/first-order-logic/tableaux/soundness.tex"
+        },
+        {
+          "unit_id": "OLP-0110",
+          "sha256": "b0a660d1b919b780211bde2c3853b8902b0923749ae9a670378adf81a7f5f23b",
+          "path": "content/first-order-logic/tableaux/identity.tex"
+        },
+        {
+          "unit_id": "OLP-0111",
+          "sha256": "7376bf0becd272ecce8ac123c9615f04442303d707e8f7f97b45671b17275ee7",
+          "path": "content/first-order-logic/tableaux/soundness-identity.tex"
+        },
+        {
+          "unit_id": "OLP-0112",
+          "sha256": "4f0fe7fa5bebba7a5476023ad44110801f0e29a6e2f7b601514a0d2853e14055",
+          "path": "content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex"
+        },
+        {
+          "unit_id": "OLP-0113",
+          "sha256": "e29e25f212bf11dacc2fac616cab4d172adcb6e790ee92d6349305fc81062ac6",
+          "path": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex"
+        },
+        {
+          "unit_id": "OLP-0114",
+          "sha256": "18d61caf9fdd8910cf8880da196c5d731f4cad6c5fa730ee319d698e3aa7f030",
+          "path": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex"
+        },
+        {
+          "unit_id": "OLP-0115",
+          "sha256": "8ae7140c8b6c02b2915651995af47b7d9a608fa8af49d1ea475525b7b6bc8edc",
+          "path": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0116",
+          "sha256": "e6d98b314b0f04c59f47aed0b4fc74931500835d4452f3cfe4d65690fec285c6",
+          "path": "content/first-order-logic/axiomatic-deduction/proving-things.tex"
+        },
+        {
+          "unit_id": "OLP-0117",
+          "sha256": "c6f6dad50dea93e85839448e3bdb4a08dd6d22720ea219425d441524e024a3eb",
+          "path": "content/first-order-logic/axiomatic-deduction/proving-things-quant.tex"
+        },
+        {
+          "unit_id": "OLP-0118",
+          "sha256": "94c708fc39973edb3ed060ebe586679e944eb1383c0e3b59e8078e119d8e8d04",
+          "path": "content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex"
+        },
+        {
+          "unit_id": "OLP-0119",
+          "sha256": "2428b240194c8123f3209909d393ffd7287b62d2375d7e9463299fb63ae81247",
+          "path": "content/first-order-logic/axiomatic-deduction/deduction-theorem.tex"
+        },
+        {
+          "unit_id": "OLP-0120",
+          "sha256": "3b88761d7db06e9926d831828156b7fddfd10f74e448b089bfe940a6bc51392f",
+          "path": "content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0121",
+          "sha256": "991e190c12987d174fedb8398b0a7b99faafb1dac3f2a0c510c9b31de54e3fde",
+          "path": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex"
+        },
+        {
+          "unit_id": "OLP-0122",
+          "sha256": "e37242f81c884598c99714efd690d8eab59e01fd553ccb78c79159bc8f34e2cf",
+          "path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex"
+        },
+        {
+          "unit_id": "OLP-0123",
+          "sha256": "cbc2096c34ddd572e6805fdc22faf2f609231e404f48b34adceffb8b93a69c7a",
+          "path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex"
+        },
+        {
+          "unit_id": "OLP-0124",
+          "sha256": "9891ecc1d0082024e0f935a4f7f06a94209f2759e6c248eb7daa5da69862df52",
+          "path": "content/first-order-logic/axiomatic-deduction/soundness.tex"
+        },
+        {
+          "unit_id": "OLP-0125",
+          "sha256": "3ef14591dceef107c2eb00c2e3d036de6b615c27eafa4182e6ba22f8e5609d58",
+          "path": "content/first-order-logic/axiomatic-deduction/identity.tex"
+        },
+        {
+          "unit_id": "OLP-0126",
+          "sha256": "900f12b7c736aa920339f76592fd7359401a689ddd14c9dc9e4c375dd9828589",
+          "path": "content/first-order-logic/completeness/completeness.tex"
+        },
+        {
+          "unit_id": "OLP-0127",
+          "sha256": "db2605630be64db8fab48321f18d2c616ffbf715be263cd258a084e8c46bf7d5",
+          "path": "content/first-order-logic/completeness/introduction.tex"
+        },
+        {
+          "unit_id": "OLP-0128",
+          "sha256": "e5436c4e7589fc74444cc9ea0440ac89e46521faece6ddf153495c06766086b4",
+          "path": "content/first-order-logic/completeness/outline.tex"
+        },
+        {
+          "unit_id": "OLP-0129",
+          "sha256": "8fcf2ee4c33b1cc29ddd0981f4f4bc17df25c2ea08497ff2d063639c47aeafff",
+          "path": "content/first-order-logic/completeness/complete-consistent-sets.tex"
+        },
+        {
+          "unit_id": "OLP-0130",
+          "sha256": "b426ae0520c58ca3b6d9c22f4a80263e68318f421d1229ef96ca071a7afc0459",
+          "path": "content/first-order-logic/completeness/henkin-expansions.tex"
+        },
+        {
+          "unit_id": "OLP-0131",
+          "sha256": "dfa8ecccd10c63b6bcb9b024214faf4a14112cfbc43e0da2d482e709646af06d",
+          "path": "content/first-order-logic/completeness/lindenbaums-lemma.tex"
+        },
+        {
+          "unit_id": "OLP-0132",
+          "sha256": "ca342ae6d124c7e3dfb6421bb7ca6e55e80c3be141297e29303d9d8d86588727",
+          "path": "content/first-order-logic/completeness/construction-of-model.tex"
+        },
+        {
+          "unit_id": "OLP-0133",
+          "sha256": "094f6df09f9068272a3a1af5d978b8e860201490f230b1ec929fe5a0d15623f8",
+          "path": "content/first-order-logic/completeness/identity.tex"
+        },
+        {
+          "unit_id": "OLP-0134",
+          "sha256": "0af629f15fe7b70af36f3ee5433731352226cb8da6de6c3c4d256f9616a1b492",
+          "path": "content/first-order-logic/completeness/completeness-thm.tex"
+        },
+        {
+          "unit_id": "OLP-0135",
+          "sha256": "32b16bb456e5db17ef79312c27943584accd3420fc687f1e5620c6603ad88a9e",
+          "path": "content/first-order-logic/completeness/compactness.tex"
+        },
+        {
+          "unit_id": "OLP-0136",
+          "sha256": "62484ab73c4dfe03b8612ab0164e2aeb298ae9434a7f25bc548e488c872e2cea",
+          "path": "content/first-order-logic/completeness/compactness-direct.tex"
+        },
+        {
+          "unit_id": "OLP-0137",
+          "sha256": "3e19ad39d00d3d6b9742448e2cc2d640369332115c26db6efadb24c36974e80a",
+          "path": "content/first-order-logic/completeness/downward-ls.tex"
+        }
+      ],
+      "reader": {
+        "filename": "openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
+        "bytes": 606333,
+        "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+        "pages": 126,
+        "profile": "FOL; all primitive connectives and quantifiers; all four proof systems"
+      },
+      "build_inputs_sha256": "6785ff96da8ceb659c5a292526ae50e6e89f2819a78a2373ce81d70f375f5f98",
+      "primary_tex_receipt_sha256": "e64b3d4f0caa18109a54a1bf6c07ec5d97f52385db02ee21c036d0737111b64c",
+      "replay_tex_receipt_sha256": "220a302fe744927a1192bf1f1809ff4150c8796fa1f1eb575ca21608cb9b8837",
+      "primary_aux_sha256": "8e213f9bd242afea48c0e406961e1a454549117b5d776a6fb726fb68b98869e9",
+      "replay_aux_sha256": "8e213f9bd242afea48c0e406961e1a454549117b5d776a6fb726fb68b98869e9",
+      "reader_occurrence_pages_sha256": "262754a56fe1fb8241c9d788aea5ca93440c67b8fa97a7b936f24cf7d3fa3e86",
+      "visual_review": {
+        "pages_1based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126
+        ],
+        "result": "All 126 page appearances were inspected in fourteen contact sheets. Full-resolution checks covered the title and contents, external links, proof trees and tableaux, all completeness-chapter pages, the repaired OLCOM-008 and OLCOM-009 conditionals, compactness examples, the downward Loewenheim-Skolem theorem and the final page. Pashto joining and RTL flow are intact, formulas and proof geometry remain legible and correctly isolated, and human-readable cross-reference lists use the localized Pashto conjunction. No clipping, overlap, tofu, missing glyph, reversed mathematical run, unresolved reference marker, damaged proof geometry, blank page or edge contact was found.",
+        "reviewed_utc": "2026-09-07T14:16:58.275891+00:00",
+        "visual_acceptance_sha256": "bbf3c97aad9c81d7c296e99aba7ac7753194ccb2f66d9b1ec089fde6144b4c4f"
+      },
+      "external_references": {
+        "linked_occurrences": 44,
+        "unique_targets": 9,
+        "pages_1based": [
+          41,
+          42,
+          44,
+          64,
+          65,
+          68,
+          91,
+          94,
+          107,
+          117,
+          122
+        ]
+      },
+      "reproducibility": "Three consecutive primary passes and three independent replay passes produced byte-identical PDF files and empty selected log findings. The primary and replay reader.tex, build inputs, PDF, AUX, OUT and TOC files are byte-identical. Every TeX process ran under Global\\InterlanguageTeXSlotV1 and its captured process tree ended before mutex release.",
+      "accepted_utc": "2026-09-07T14:16:58.275891+00:00"
     }
   ],
   "publication_verified": true

@@ -1,0 +1,85 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T02:58:26.210202+00:00",
+  "batch_id": "PS-B031-IDENTITY-TERM-MODEL",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0133",
+      "source_path": "content/first-order-logic/completeness/identity.tex",
+      "source_bytes": 7831,
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "translation_bytes": 10171,
+      "translation_sha256": "094f6df09f9068272a3a1af5d978b8e860201490f230b1ec929fe5a0d15623f8"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0133 lines 10-33",
+      "observation": "The failure of the identity-free term model and the equality-induced relation were checked against term values and membership in Gamma-star.",
+      "treatment": "No source defect found; the direction of the failure and relation biconditional are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0133 lines 35-80",
+      "observation": "All five equivalence/congruence properties and their reduction to derivability were traced coordinate by coordinate.",
+      "treatment": "The duplicate comma in the first displayed function term is removed and disclosed; all mathematical symbols and proof obligations otherwise remain intact.",
+      "correction_id": "OLCOM-004"
+    },
+    {
+      "locator": "OLP-0133 lines 86-111",
+      "observation": "The equivalence-class abstractions and four quotient-structure clauses were checked for domain, constants, functions and predicates.",
+      "treatment": "No source defect found; all representatives and biconditionals are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0133 lines 113-132",
+      "observation": "The representative-independence example introduces an alternative t-prime, but the source's negated satisfaction formula repeats t while its conclusion uses the class of t-prime.",
+      "treatment": "The negated instance is corrected to R(t-prime), completing the intended comparison, with an adjacent disclosure.",
+      "correction_id": "OLCOM-005"
+    },
+    {
+      "locator": "OLP-0133 lines 135-190",
+      "observation": "Well-definedness, the factored value lemma and the equality case of the Truth Lemma were checked through both equivalence-class and membership steps.",
+      "treatment": "No further source defect found; all coordinate and induction scopes are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0133 lines 193-203",
+      "observation": "The finite-quotient digression was checked against the displayed one-element sentence.",
+      "treatment": "No source defect found; countability, possible finiteness and exact cardinality are retained.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLCOM-004",
+      "classification": "function_congruence_formula_contains_duplicate_comma",
+      "source_locator": "completeness/identity.tex:66-72",
+      "target_line_1based": 72,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},,\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]"
+        ],
+        "target_only": [
+          "\\[\\Gamma^*\\Proves\\eq[\\Atom{f}{t_1,\\dots,t_{i-1},t,t_{i+1},\\dots,t_n}][\\Atom{f}{t_1,\\dots,t_{i-1},t',t_{i+1},\\dots,t_n}]\\]"
+        ]
+      }
+    },
+    {
+      "correction_id": "OLCOM-005",
+      "classification": "representative_independence_example_negates_wrong_representative",
+      "source_locator": "completeness/identity.tex:113-132",
+      "target_line_1based": 131,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat/{M}{\\Atom{R}{t}}$"
+        ],
+        "target_only": [
+          "$\\Sat/{M}{\\Atom{R}{t'}}$"
+        ]
+      }
+    }
+  ],
+  "conclusion": "Two local source defects are corrected and disclosed. Every remaining equality, equivalence-class, congruence, quotient-model, satisfaction, induction and cardinality claim is preserved."
+}

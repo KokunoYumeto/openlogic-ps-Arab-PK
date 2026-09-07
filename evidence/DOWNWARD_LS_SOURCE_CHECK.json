@@ -1,0 +1,38 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-06T03:12:51.109244+00:00",
+  "batch_id": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0137",
+      "source_path": "content/first-order-logic/completeness/downward-ls.tex",
+      "source_bytes": 2595,
+      "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+      "translation_bytes": 3371,
+      "translation_sha256": "3e19ad39d00d3d6b9742448e2cc2d640369332115c26db6efadb24c36974e80a"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0137 lines 10-18",
+      "observation": "The theorem motivation was checked for the existence direction and the limit on expressing nonenumerable model size.",
+      "treatment": "No source defect found; the at-most-denumerable conclusion is retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0137 lines 20-46",
+      "observation": "Both model-existence theorems were checked against the ordinary and factored term-model domains from the completeness construction.",
+      "treatment": "No source defect found; the finite/denumerable distinction and identity restriction are retained.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0137 lines 48-61",
+      "observation": "Skolem's Paradox was checked for its internal and external uses of enumerability and its conditional dependence on consistency.",
+      "treatment": "No source defect found; quotation marks preserve the internal classification distinction.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source correction is required. Every consistency premise, model-size bound, term-domain comparison, identity restriction and internal/external countability distinction is preserved."
+}
