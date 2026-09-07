@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B036-FIRST-ORDER-LOGIC-DRIVER",
-  "status": "v0.5.0 completeness reader published and verified; OLP-0138 first-order-logic part driver structurally translated; OLP-0139 introduction driver is next",
+  "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+  "status": "v0.5.0 remains frozen and verified; OLP-0139–0148 first-order-logic introduction chapter translated and source-reviewed; OLP-0149 is next",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -2914,6 +2914,196 @@
         "TERM-PROOF-PROPERTIES"
       ],
       "scope": "The part-level scope through completeness, deliberate independence from the separate propositional treatment, FOL-tag transformation of quantifier material and structure/valuation notation, reuse relationship, current duplication and future deduplication plan are all retained."
+    },
+    "OLP-0139": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-FOL-SEMANTICS",
+        "TERM-MODEL-THEORY",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "The chapter title and all nine imports are retained in source order, covering the full introductory progression from language through metatheory."
+    },
+    "OLP-0140": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-FOL-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-METALOGIC"
+      ],
+      "scope": "The formal-language motivation, truth-in-a-case semantics, structure and satisfaction bridge, ant entailment example, derivation-system motivation and meta-logical biconditional are preserved; three malformed repetitions of one formula schema are corrected transparently."
+    },
+    "OLP-0141": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-SUBSTITUTION",
+        "TERM-PREDICATE"
+      ],
+      "scope": "The two vocabulary classes, object-picking constants, predication, connective and quantifier examples, exact sentence-formation problem and all three problematic binding/substitution examples are retained."
+    },
+    "OLP-0142": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-RECURSIVE",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "The simplified signature, infinite variable supply, five inductive clauses, worked construction, exclusion by the limiting clause and structural-induction explanation are preserved exactly."
+    },
+    "OLP-0143": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-PREDICATE",
+        "TERM-DOMAIN",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The three-component example structure, all Boolean satisfaction clauses, domain example, total variable assignment, modified assignment and existential clause are preserved; the source's symbol-kind and domain-member slips are corrected transparently."
+    },
+    "OLP-0144": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-VARIABLE-ASSIGNMENT"
+      ],
+      "scope": "The scope, binding, free-occurrence and sentence concepts retain their occurrence-level distinctions, and every inductive clause keeps both same-variable and different-variable cases."
+    },
+    "OLP-0145": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "Dependence only on free-variable values, assignment independence for sentences, the all/at-least-one assignment equivalence, and the exact quantification in validity, entailment and joint satisfiability are retained."
+    },
+    "OLP-0146": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-SUBSTITUTION",
+        "TERM-FOL-SYNTAX",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "Universal instantiation, the need for capture-aware substitution, the distinction between formula substitution and assignment modification, and the semantic substitution equivalence are retained; the malformed opening atom is corrected transparently."
+    },
+    "OLP-0147": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-MODEL-THEORY",
+        "TERM-RELATION",
+        "TERM-ORDER-KINDS",
+        "TERM-REL-PROPERTIES",
+        "TERM-DOMAIN",
+        "TERM-ENUMERABLE",
+        "TERM-LOWENHEIM-SKOLEM"
+      ],
+      "scope": "Both directions between theories and their models, the exact two-sentence preorder axiomatization, expressibility claims and all finite/infinite/nonenumerable domain distinctions are retained."
+    },
+    "OLP-0148": {
+      "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-NIAZMAN-P58-CONTRADICTION",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-MODEL-THEORY",
+        "TERM-LOWENHEIM-SKOLEM"
+      ],
+      "scope": "The derivability relation, finite derivation condition, soundness and completeness directions, consistent-model formulation, compactness and Löwenheim--Skolem consequences and historical motivation are preserved."
     }
   },
   "semantic_review": [
@@ -4572,6 +4762,126 @@
       "passage": "tag transformation, reuse and planned deduplication",
       "reverse_paraphrase": "Turning off the FOL tag removes quantifier material and substitutes valuation notation for structure notation; the propositional part largely reuses that result, which currently repeats material, while a future plan would omit prior material and shorten proofs by cross-reference.",
       "finding": "Both exclusions, both explicit notation replacements, the direction of reuse, the current duplication and both parts of the future plan are retained."
+    },
+    {
+      "unit_id": "OLP-0139",
+      "passage": "chapter import topology",
+      "reverse_paraphrase": "The chapter moves through first-order motivation, syntax, formulas, satisfaction, sentences, semantic notions, substitution, models and theories, then soundness and completeness.",
+      "finding": "The title and all nine imports retain their exact order and stable identifiers."
+    },
+    {
+      "unit_id": "OLP-0140",
+      "passage": "formal language and logician's questions",
+      "reverse_paraphrase": "First-order logic is a restricted formal language of terms, formulas and sentences, used to ask consequence, logical truth or falsity, contingency and equivalence questions.",
+      "finding": "Expression kinds, all three questions and the distinction between formal strings and permitted strings are preserved."
+    },
+    {
+      "unit_id": "OLP-0140",
+      "passage": "truth-in-a-case semantics",
+      "reverse_paraphrase": "A structure makes cases precise and satisfaction makes truth in a structure precise; validity and consequence then become mathematical relations.",
+      "finding": "The truth and falsity polarities, universal case quantification, structure role and satisfaction notation are preserved."
+    },
+    {
+      "unit_id": "OLP-0140",
+      "passage": "derivations and meta-logical bridge",
+      "reverse_paraphrase": "A derivation is a rule-governed syntactic witness, while a separate mathematical theorem must prove that derivability from the two premises is equivalent to their semantic entailment of the conclusion.",
+      "finding": "The two premises, existential conclusion and biconditional direction are preserved. OLFOL-001 repairs only malformed brackets in their three occurrences."
+    },
+    {
+      "unit_id": "OLP-0141",
+      "passage": "two vocabulary classes",
+      "reverse_paraphrase": "Constants pick out objects and predicates say things about them; connectives and quantifiers then build complex expressions from simple sentences.",
+      "finding": "The symbol roles, P(a), conjunction and existential examples remain distinct and unchanged."
+    },
+    {
+      "unit_id": "OLP-0141",
+      "passage": "formation and replacement problems",
+      "reverse_paraphrase": "A rigorous definition must select exactly the intended sentences, support proofs about every sentence, and define variable replacement despite vacuous and repeated binders.",
+      "finding": "All three requirements and the three final test expressions are preserved without answering them prematurely."
+    },
+    {
+      "unit_id": "OLP-0142",
+      "passage": "formula-before-sentence strategy",
+      "reverse_paraphrase": "Define formulas first, analyze free and bound variables, and then define sentences as formulas without free variables because assignments will matter to satisfaction.",
+      "finding": "The dependency order and both motivations for introducing formulas are preserved."
+    },
+    {
+      "unit_id": "OLP-0142",
+      "passage": "inductive definition and proof",
+      "reverse_paraphrase": "Atomic formulas form the base; negation, conjunction and existential quantification generate more; nothing else is admitted; structural induction follows those same cases.",
+      "finding": "All five clauses, tag conditions, worked formula, excluded parenthesized nonformula and proof-case order are preserved."
+    },
+    {
+      "unit_id": "OLP-0143",
+      "passage": "example structure and Boolean satisfaction",
+      "reverse_paraphrase": "The domain is nonempty, a denotes one member, P denotes a subset, and atomic, negation and conjunction satisfaction follow the displayed membership and truth conditions.",
+      "finding": "Every set inclusion, membership, truth polarity and example value is preserved; OLFOL-002 corrects the source's wrong multi-place symbol class."
+    },
+    {
+      "unit_id": "OLP-0143",
+      "passage": "assignments and existential satisfaction",
+      "reverse_paraphrase": "An assignment maps every variable to a domain element; an x-modification changes only x, and an existential formula is satisfied when some domain value makes its body satisfied under that modification.",
+      "finding": "The all-variable domain, single-coordinate update, existential witness and example choices one or two are preserved. OLFOL-003 aligns the enumerated domain members with the displayed domain."
+    },
+    {
+      "unit_id": "OLP-0144",
+      "passage": "binding and sentence definition",
+      "reverse_paraphrase": "A quantifier binds occurrences of its variable in its scope; unmatched occurrences remain free, and a sentence is precisely a formula with none free.",
+      "finding": "Scope, occurrence-level binding and the free-variable criterion are kept distinct."
+    },
+    {
+      "unit_id": "OLP-0144",
+      "passage": "four inductive occurrence clauses",
+      "reverse_paraphrase": "Atomic occurrences are free, negation preserves status, conjunction takes occurrences from either side, and existential quantification binds its own variable while preserving freedom of different variables.",
+      "finding": "Both branches of the quantifier clause and every biconditional are preserved."
+    },
+    {
+      "unit_id": "OLP-0145",
+      "passage": "assignment independence",
+      "reverse_paraphrase": "Only free-variable values affect formula satisfaction, so for a sentence satisfaction under every assignment is equivalent to satisfaction under at least one assignment.",
+      "finding": "The dependence restriction, universal and existential assignment quantifiers and sentence conclusion are preserved."
+    },
+    {
+      "unit_id": "OLP-0145",
+      "passage": "validity, entailment and satisfiability",
+      "reverse_paraphrase": "Validity uses every structure, entailment uses every structure jointly satisfying Gamma, and satisfiability uses one structure satisfying all members simultaneously.",
+      "finding": "All model quantifiers, premise-set scope and conclusion direction are preserved."
+    },
+    {
+      "unit_id": "OLP-0146",
+      "passage": "universal instantiation and substitution",
+      "reverse_paraphrase": "The general inference replaces the bound variable in A by a term, but substitution must respect binding and is not unrestricted textual replacement.",
+      "finding": "Formula, term and variable generality are preserved. OLFOL-004 restores the opening P(v0) as the universal quantifier body."
+    },
+    {
+      "unit_id": "OLP-0146",
+      "passage": "semantic substitution relation",
+      "reverse_paraphrase": "Satisfaction of A(t) under s depends on the value m of t and matches satisfaction of A(x) under the assignment that changes x to m, even when t contains variables.",
+      "finding": "Both sides of the biconditional, the term-value dependency and the final variable-containing caveat are preserved."
+    },
+    {
+      "unit_id": "OLP-0147",
+      "passage": "models, theories and preorders",
+      "reverse_paraphrase": "A model satisfies every axiom; the two displayed universal sentences characterize exactly structures whose interpreted binary relation is reflexive and transitive.",
+      "finding": "Both directions of characterization, all three quantified variables and the relation/domain interpretation clauses are preserved."
+    },
+    {
+      "unit_id": "OLP-0147",
+      "passage": "domain-size expressibility limits",
+      "reverse_paraphrase": "Exact positive finite sizes and infinitude by an infinite theory are expressible, but finitude and nonenumerability are not first-order characterizable.",
+      "finding": "Exact-n, infinite-set-of-sentences, finite and nonenumerable claims retain their distinct quantification and polarity."
+    },
+    {
+      "unit_id": "OLP-0148",
+      "passage": "soundness and completeness directions",
+      "reverse_paraphrase": "Soundness sends derivability to entailment and prevents proving too much; completeness sends entailment to derivability and prevents proving too little.",
+      "finding": "Both implications, their diagnostic failures and the full biconditional are preserved."
+    },
+    {
+      "unit_id": "OLP-0148",
+      "passage": "consistency and model existence",
+      "reverse_paraphrase": "A set deriving a contradiction is inconsistent and has no model; completeness yields the converse that every consistent set has a model.",
+      "finding": "The syntactic/semantic distinction, contradiction formula and equivalent completeness formulation are preserved."
     }
   ]
 }

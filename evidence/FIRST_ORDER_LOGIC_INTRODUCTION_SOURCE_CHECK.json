@@ -1,0 +1,183 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-07T15:46:07.553251+00:00",
+  "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0139",
+      "source_path": "content/first-order-logic/introduction/introduction.tex",
+      "source_bytes": 457,
+      "source_sha256": "05b3d4c1cfef57b0df901d96638381e3ac936560b37dfcbc10404f152a19d7d5",
+      "translation_bytes": 470,
+      "translation_sha256": "e138c6666c9bf77eb3b2d084463a3244a1251df2bba4ff619c0aa7af53d648a9"
+    },
+    {
+      "unit_id": "OLP-0140",
+      "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_bytes": 4685,
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "translation_bytes": 7034,
+      "translation_sha256": "f455efc9f5d434774b26dbb1913031896dcbe10df7ae1b5f93df73925518e4b9"
+    },
+    {
+      "unit_id": "OLP-0141",
+      "source_path": "content/first-order-logic/introduction/syntax.tex",
+      "source_bytes": 2840,
+      "source_sha256": "13404c0d5539db8f9ec7ac2205560b802e61e18623610a74d945c21f64e71884",
+      "translation_bytes": 3825,
+      "translation_sha256": "af271fb5f05ab1b7f5b6e09ea55930c17bba74ef9c55d4afb2bc74ed1eb63242"
+    },
+    {
+      "unit_id": "OLP-0142",
+      "source_path": "content/first-order-logic/introduction/formulas.tex",
+      "source_bytes": 4276,
+      "source_sha256": "359d5608df5b55db1a6ec96c390c2baeecc87cd9fa20d026a827afbfe3cb1ff4",
+      "translation_bytes": 5381,
+      "translation_sha256": "534951cfa68553855827347717ef931017f6da6e88db7334c75be3826383ffda"
+    },
+    {
+      "unit_id": "OLP-0143",
+      "source_path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_bytes": 5894,
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "translation_bytes": 8284,
+      "translation_sha256": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f"
+    },
+    {
+      "unit_id": "OLP-0144",
+      "source_path": "content/first-order-logic/introduction/sentences.tex",
+      "source_bytes": 2732,
+      "source_sha256": "748e7d15fb2dbed01613a86005d52fdb1f3fe78bb8e3749b61e48cbd2a04a8d0",
+      "translation_bytes": 3571,
+      "translation_sha256": "39e0441e31112b5f74a980de8ae8969d89f0142c6096ad14e12651e65bc8f81a"
+    },
+    {
+      "unit_id": "OLP-0145",
+      "source_path": "content/first-order-logic/introduction/semantic-notions.tex",
+      "source_bytes": 2354,
+      "source_sha256": "9d04bf200004bd09dead1b4fcd8a97eca4c9e2d7886c07cb99122d0426d60aae",
+      "translation_bytes": 3230,
+      "translation_sha256": "9682c0c1b34e9e8703b9ed0580163aec24650656d59522e7942000d5d188ec13"
+    },
+    {
+      "unit_id": "OLP-0146",
+      "source_path": "content/first-order-logic/introduction/substitution.tex",
+      "source_bytes": 2288,
+      "source_sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
+      "translation_bytes": 3486,
+      "translation_sha256": "77dd9aed3934e342ee6efe6e6fcbc753b9fc2dad2f5e3b15ab557614e9799473"
+    },
+    {
+      "unit_id": "OLP-0147",
+      "source_path": "content/first-order-logic/introduction/models-theories.tex",
+      "source_bytes": 3760,
+      "source_sha256": "36ee284caf12899709c6527a5e97cc191bb07fa6701d9b457a7191a1e803c59f",
+      "translation_bytes": 5021,
+      "translation_sha256": "3ddb3db271ab1944942d372a8e1521bca60f686558d0f9690be0360d2baa2bbc"
+    },
+    {
+      "unit_id": "OLP-0148",
+      "source_path": "content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_bytes": 3476,
+      "source_sha256": "05f6726f7479e800c0bba936fc241ba48814425b161a53c67b4cc5bf43aed773",
+      "translation_bytes": 4750,
+      "translation_sha256": "36c96bc852e461f4ee9338407832e5ecbf8c6c5821ddac853a2c1c2ca8c798f1"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0139 complete chapter driver",
+      "observation": "All nine imports were checked against the manifest and chapter progression.",
+      "treatment": "No source defect found; title and import topology are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0140 quantified consequence examples, lines 50-84",
+      "observation": "Three repetitions were parsed against the prose that identifies two premises and one existential conclusion.",
+      "treatment": "Universal scope and surplus closing brackets are repaired and disclosed.",
+      "correction_id": "OLFOL-001"
+    },
+    {
+      "locator": "OLP-0141 vocabulary roles and final substitution questions",
+      "observation": "Constant, predicate, connective, quantifier and variable roles were traced through every example.",
+      "treatment": "No source defect found; deliberately open questions remain unanswered.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0142 full inductive formula definition",
+      "observation": "All atomic, constructor and limiting clauses were checked against the worked derivation and structural-induction explanation.",
+      "treatment": "No source defect found; all clauses and tag branches are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0143 general signature, lines 13-25",
+      "observation": "The stated arity bearer was compared with the atomic examples and later binary-relation model.",
+      "treatment": "The wrong symbol class is corrected from constants to predicates and disclosed.",
+      "correction_id": "OLFOL-002"
+    },
+    {
+      "locator": "OLP-0143 assignment codomain example, lines 43-67",
+      "observation": "The listed possible values were compared with the displayed domain {0,1,2}.",
+      "treatment": "The out-of-domain 3 is replaced by the omitted in-domain 0 and disclosed.",
+      "correction_id": "OLFOL-003"
+    },
+    {
+      "locator": "OLP-0144 free and bound occurrence clauses",
+      "observation": "Every same-variable and different-variable quantifier case was checked for occurrence scope.",
+      "treatment": "No source defect found; all biconditionals and cases are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0145 semantic quantifier clauses",
+      "observation": "Universal structure quantification, joint premise satisfaction and existential model choice were compared.",
+      "treatment": "No source defect found; validity, entailment and satisfiability remain distinct.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0146 opening universal-instantiation formula, lines 13-28",
+      "observation": "The first formula was parsed against its P(a) conclusion and the immediately following generic forall-x A(x) schema.",
+      "treatment": "The atomic body braces are repaired and disclosed.",
+      "correction_id": "OLFOL-004"
+    },
+    {
+      "locator": "OLP-0147 preorder axiomatization and size claims",
+      "observation": "Both universal sentences and all finite, infinite and nonenumerable expressibility claims were traced.",
+      "treatment": "No source defect found; the relation interpretation and theorem dependencies are preserved.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0148 soundness and completeness directions",
+      "observation": "Both implications, inconsistency/model claims and consequence theorems were checked independently.",
+      "treatment": "No source defect found; semantic and syntactic notions remain distinct.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [
+    {
+      "correction_id": "OLFOL-001",
+      "classification": "quantified_entailment_schema_has_misnested_and_extra_brackets",
+      "source_locator": "introduction/first-order-logic.tex:50-84",
+      "target_line_1based": 51
+    },
+    {
+      "correction_id": "OLFOL-002",
+      "classification": "multi_place_semantics_attributes_arity_to_constants_instead_of_predicates",
+      "source_locator": "introduction/satisfaction.tex:13-25",
+      "target_line_1based": 26
+    },
+    {
+      "correction_id": "OLFOL-003",
+      "classification": "variable_assignment_example_lists_value_outside_displayed_domain",
+      "source_locator": "introduction/satisfaction.tex:43-67",
+      "target_line_1based": 66
+    },
+    {
+      "correction_id": "OLFOL-004",
+      "classification": "universal_instantiation_example_places_atom_outside_quantifier_body",
+      "source_locator": "introduction/substitution.tex:13-28",
+      "target_line_1based": 18
+    }
+  ],
+  "conclusion": "The full ten-unit introduction chapter is translated. Four localized source repairs correct three repetitions of one bracketed consequence schema, a symbol-kind error, a domain-member error and a malformed quantified atom; all are adjacent and exact-QA-accounted. Every other formula, identifier, import, tag, citation, semantic direction and definition is preserved."
+}

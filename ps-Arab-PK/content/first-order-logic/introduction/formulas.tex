@@ -1,0 +1,87 @@
+% Part: first-order-logic
+% Chapter: introduction
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{int}{fml}
+
+\section{\usetoken{P}{formula}}
+
+د لومړۍ درجې منطق د !!{sentence}s د سخت تعريف او د !!{variable}s
+له کارولو څخه راولاړو شوو مسئلو د هوارولو دپاره به لاندې لاره
+کاروو۔ لومړے د عبارتونو يو \emph{بل} سټ تعريفوو: !!{formula}s۔ له
+دې وروسته پکښې د !!{variable}s ونډه څېړلے شو---او د ځينو نورو
+مفکورو، يعنې ``ازادو'' او ``تړلو'' !!{variable}s، پر بنسټ تعريفولے
+شو چې !!a{sentence} څه ده (يعنې داسې !!a{formula} چې ازاد
+!!{variable}s نۀ لري)۔ دا کار يوازې د ``!!{sentence}'' د تعريف د
+اسانه کولو دپاره نۀ کوو؛ بلکې د صدق د معنايي مفهوم د تعريف په
+طريقه کښې به هم ډېر اړين وي۔
+
+راځئ ``!!{formula}'' د لومړۍ درجې د يوې ساده ژبې دپاره تعريف کړو:
+داسې ژبه چې يوازې يو !!{predicate}~$\Obj P$، يو
+!!{constant}~$\Obj a$، او يوازې منطقي سمبولونه $\lnot$، $\land$
+او~$\lexists$ لري۔ زموږ بشپړ تعريفونه به ډېر عام وي: نامتناهي ډېر
+!!{predicate}s او !!{constant}s به جايز کړو۔ په حقيقت کښې هغه
+!!{function}s به هم څېړو چې له !!{constant}s او !!{variable}s سره
+يوځاے ``ترمونه'' جوړوي۔ اوس دپاره~$\Obj a$ او متغيرونه زموږ يوازيني
+ترمونه دي۔ البته نامتناهي ډېرو !!{variable}s ته اړتيا لرو۔ په رسمي
+ډول به $\Obj v_0$، $\Obj v_1$، \dots، د متغيرونو په توګه کاروو۔
+
+\begin{defn}
+د \emph{!!{formula}s} سټ~$\Frm$ داسې تعريفېږي:
+\begin{enumerate}
+\item\ollabel{fmls-atom} $\Atom{\Obj P}{\Obj a}$ او $\Atom{\Obj
+  P}{\Obj v_i}$ !!{formula}s دي ($i \in \Nat$)۔
+
+\tagitem{prvNot}{\ollabel{fmls-not}که $!A$ !!a{formula} وي، نو $\lnot !A$
+  !!{formula} ده۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ !!a{formula} ده۔}{}
+
+\tagitem{prvEx}{\ollabel{fmls-ex}که $!A$ !!a{formula} او $x$
+  !!a{variable} وي، نو $\lexists[x][!A]$ !!a{formula} ده۔}{}
+
+\tagitem{limitClause}{\ollabel{fmls-limit}بل هېڅ څيز !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+\olref{fmls-atom} راته وايي چې د هر $i \in \Nat$ دپاره
+$\Atom{\Obj P}{\Obj a}$ او $\Atom{\Obj P}{\Obj v_i}$
+!!{formula}s دي۔ دا تش په نامه \emph{اټومي} !!{formula}s دي۔ هغوئ
+د پيل دپاره څه راکوي۔ نور شرطونه له هغو څخه چې لا مو
+جوړ کړي، د نويو !!{formula}s د جوړولو لارې راکوي۔ نو مثلاً د
+\olref{fmls-not} له مخې $\lnot \Atom{\Obj P}{\Obj v_2}$
+!!a{formula} ده، ځکه $\Atom{\Obj P}{\Obj v_2}$ د
+\olref{fmls-atom} له مخې لا !!a{formula} ده۔ بيا د
+\olref{fmls-ex} له مخې $\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$
+بله !!{formula} ده، او همداسې مخکښې۔ \olref{fmls-limit} راته وايي
+چې \emph{يوازې} هغه تارونه !!{formula}s ګڼل کېږي چې په همدې طريقه
+ئې جوړولے شو۔ په ځانګړي ډول
+$\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]$ او
+$\lexists[\Obj v_0][\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]]$
+په رښتيا !!{formula}s ګڼل کېږي، خو $(\lnot \Atom{\Obj P}{\Obj a})$
+نۀ ګڼل کېږي، ځکه دباندې قوسونه ئې زيات دي۔
+
+د !!{formula}s د تعريف دا طريقه \emph{استقرايي تعريف} بلل کېږي،
+او اجازه راکوي چې د استقرايي ثبوت په هغه بڼه د !!{formula}s په باب
+څه ثابت کړو چې \emph{جوړښتي استقرا} بلل کېږي۔ دا دواړه په عمومي
+ډول په \olref[mth][ind][idf]{sec} او \olref[mth][ind][sti]{sec}
+کښې څېړل شوي دي؛ وروسته ثبوتونو ته له ننوتلو مخکښې ئې بيا وګورئ۔
+بنسټيزه مفکوره دا ده: که غواړئ ثابته کړئ چې يو څۀ د ټولو
+!!{formula}s دپاره رښتيا دي، لومړے ښيئ چې د اټومي !!{formula}s
+دپاره رښتيا دي؛ بيا ښيئ چې \emph{که} د هر !!{formula}~$!A$
+(او~$!B$) دپاره رښتيا وي، د $\lnot !A$، $(!A \land !B)$ او
+$\lexists[x][!A]$ دپاره \emph{هم} رښتيا دي۔ مثلاً په دې سره ثابتېږي
+چې دا د $\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ دپاره
+رښتيا دي: له لومړۍ برخې پوهېږئ چې د اټومي
+!!{formula}~$\Atom{\Obj P}{\Obj v_2}$ دپاره رښتيا دي۔ بيا له دويمې
+برخې ترلاسه کوئ چې د $\lnot \Atom{\Obj P}{\Obj v_2}$ دپاره رښتيا
+دي، او ورپسې بيا د $\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$
+په خپله دپاره رښتيا دي۔ ځکه چې ټول !!{formula}s په استقرايي ډول له
+اټومي !!{formula}s څخه جوړېږي، دا طريقه د هر فارمول دپاره کار کوي۔
+
+\end{document}

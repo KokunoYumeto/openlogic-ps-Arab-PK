@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 138 of 722 source units are translated drafts. This log contains 96 terminology entries and 91 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 148 of 722 source units are translated drafts. This log contains 101 terminology entries and 95 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -868,6 +868,51 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Review question: In Pakistani Pashto mathematical prose, is «د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل» the clearest conventional rendering of “Löwenheim–Skolem Theorem / Skolem's Paradox / at most denumerable model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
+## TERM-FOL-SYNTAX
+
+- Type: terminology
+- Choice: د لومړۍ درجې ژبه / ثابت / متغير / ترم / فارمول / جمله / کميت ټاکونکے / ساحه / اټومي فارمول
+- Uncertainty: predicate, variable and formula contexts regionally attested; the grouped Pakistani terminology remains provisional
+- Alternatives: د محمولاتو منطق ژبه; فردي ثابت او فردي متغير; صيغه د فارمول پر ځاے; د کميت ټاکونکي د عمل ساحه
+- Review question: In Pakistani Pashto mathematical prose, is «د لومړۍ درجې ژبه / ثابت / متغير / ترم / فارمول / جمله / کميت ټاکونکے / ساحه / اټومي فارمول» the clearest conventional rendering of “first-order language / constant / variable / term / formula / sentence / quantifier / scope / atomic formula” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-FOL-SEMANTICS
+
+- Type: terminology
+- Choice: جوړښت / تفسير / د تعريف ساحه / صدق / اعتبار / معنايي استلزام / د صدق وړتيا
+- Uncertainty: semantics, entailment, satisfaction, domain and interpretation roles supported; exact first-order compounds are editorial choices
+- Alternatives: تعبير د جوړښت پر ځاے; مدلوليت د صدق پر ځاے; معنايي لازمېدل; د پوره کېدو وړتيا
+- Review question: In Pakistani Pashto mathematical prose, is «جوړښت / تفسير / د تعريف ساحه / صدق / اعتبار / معنايي استلزام / د صدق وړتيا» the clearest conventional rendering of “structure / interpretation / domain / satisfaction / validity / semantic entailment / satisfiability” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-VARIABLE-ASSIGNMENT
+
+- Type: terminology
+- Choice: د متغير ګومارنه / بدله ګومارنه / د ترم قيمت / له ګومارنې خپلواکي
+- Uncertainty: mapping, value and satisfaction concepts supported; exact variable-assignment compounds are provisional
+- Alternatives: د متغير ارزښت ټاکنه; بدله ارزښت ټاکنه; له ارزښت ټاکنې خپلواکي
+- Review question: In Pakistani Pashto mathematical prose, is «د متغير ګومارنه / بدله ګومارنه / د ترم قيمت / له ګومارنې خپلواکي» the clearest conventional rendering of “variable assignment / modified assignment / value of a term / assignment independence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-STRUCTURAL-INDUCTION
+
+- Type: terminology
+- Choice: استقرايي تعريف / جوړښتي استقرا / اټومي بنسټ / جوړوونکے شرط / محدودوونکے شرط
+- Uncertainty: induction and formula-generation concepts regionally supported; exact structural compounds are provisional
+- Alternatives: ساختماني استقرا; د فارمول پر جوړښت استقرا; توليدي او د بندولو شرطونه
+- Review question: In Pakistani Pashto mathematical prose, is «استقرايي تعريف / جوړښتي استقرا / اټومي بنسټ / جوړوونکے شرط / محدودوونکے شرط» the clearest conventional rendering of “inductive definition / structural induction / atomic base / generation clause / limiting clause” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-MODEL-THEORY
+
+- Type: terminology
+- Choice: مدل / تيوري / مدل تيوري / بديهي طريقه / ځانګړې کول / مخکښ‌مرتبه
+- Uncertainty: theory, relation, order, entailment and countability concepts supported; model-theoretic compounds are provisional
+- Alternatives: د مدلونو تيوري; اکسيوماتيکي طريقه; مقدماتي ترتيب د مخکښ‌مرتبې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «مدل / تيوري / مدل تيوري / بديهي طريقه / ځانګړې کول / مخکښ‌مرتبه» the clearest conventional rendering of “model / theory / model theory / axiomatic method / characterize / preorder” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
 ## DEC-OLFUN-001
 
 - Type: source-correction
@@ -1632,6 +1677,42 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCOM-009 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous reader-integration parse against the frozen three-argument iftag definition
+
+## DEC-OLFOL-001
+
+- Type: source-correction
+- Choice: closes the universal formula immediately after its conditional body and removes the duplicated closing bracket from the existential conclusion in all three repetitions
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
+
+## DEC-OLFOL-002
+
+- Type: source-correction
+- Choice: states that predicates, rather than constants, may have more than one place
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
+
+## DEC-OLFOL-003
+
+- Type: source-correction
+- Choice: lists zero, one and two as the possible assignment values in the displayed domain instead of one, two and three
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
+
+## DEC-OLFOL-004
+
+- Type: source-correction
+- Choice: places the complete atomic formula P(v0) inside the universal quantifier body
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
 
 ## DEC-REL-I
 

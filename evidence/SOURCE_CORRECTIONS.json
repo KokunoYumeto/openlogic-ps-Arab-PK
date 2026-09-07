@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0138; OLP-0056–0137 published and anonymously verified in the v0.5.0 proof-systems and completeness reader; later drafts pending a future integrated reader",
-  "adopted_utc": "2026-09-07T15:09:20.110706+00:00",
+  "status": "adopted through OLP-0148; the complete first-order-logic introduction chapter is structurally drafted; v0.5.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-07T15:46:07.553251+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -2004,6 +2004,106 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLFOL-001",
+      "unit_id": "OLP-0140",
+      "classification": "quantified_entailment_schema_has_misnested_and_extra_brackets",
+      "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "source_locator": "introduction/first-order-logic.tex:50-84",
+      "target_path": "ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_line_1based": 51,
+      "target_sha256": "f455efc9f5d434774b26dbb1913031896dcbe10df7ae1b5f93df73925518e4b9",
+      "mode": "repair-three-bracketed-formulas-plus-adjacent-notes",
+      "translation_change": "closes the universal formula immediately after its conditional body and removes the duplicated closing bracket from the existential conclusion in all three repetitions",
+      "counterexample": "As printed, the first display scopes the universal quantifier over the comma, second premise, entailment sign and conclusion; the two later repetitions leave the universal formula unclosed and append an extra bracket to the existential conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
+      "formula_policy": "Only bracket placement in three repetitions of the same formula schema changes. Formula letters, connectives, quantifiers, premises, entailment sign and conclusion remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[x][(!A(x)\\lif!B(x)),\\lexists[x][!A(x)]\\Entails\\lexists[x][!B(x)]]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))$",
+          "$\\lexists[x][!B(x)]]$",
+          "$\\lexists[x][!B(x)]]$"
+        ],
+        "target_only": [
+          "$\\lforall[x][(!A(x)\\lif!B(x))],\\lexists[x][!A(x)]\\Entails\\lexists[x][!B(x)]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))]$",
+          "$\\lexists[x][!B(x)]$",
+          "$\\lexists[x][!B(x)]$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-002",
+      "unit_id": "OLP-0143",
+      "classification": "multi_place_semantics_attributes_arity_to_constants_instead_of_predicates",
+      "source_path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "source_locator": "introduction/satisfaction.tex:13-25",
+      "target_path": "ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex",
+      "target_line_1based": 26,
+      "target_sha256": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f",
+      "mode": "replace-wrong-symbol-class-plus-adjacent-note",
+      "translation_change": "states that predicates, rather than constants, may have more than one place",
+      "counterexample": "A constant denotes one domain element and has no argument places; the later preorder example and general syntax use multi-place predicates or relation symbols.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
+      "formula_policy": "No formula or interpretation clause changes. The prose subject alone changes from constants to predicates, while the source wording is retained in the adjacent disclosure.",
+      "decision_timing": "contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes"
+    },
+    {
+      "id": "OLFOL-003",
+      "unit_id": "OLP-0143",
+      "classification": "variable_assignment_example_lists_value_outside_displayed_domain",
+      "source_path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "source_locator": "introduction/satisfaction.tex:43-67",
+      "target_path": "ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex",
+      "target_line_1based": 66,
+      "target_sha256": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f",
+      "mode": "replace-three-with-zero-plus-adjacent-note",
+      "translation_change": "lists zero, one and two as the possible assignment values in the displayed domain instead of one, two and three",
+      "counterexample": "The structure fixes its domain as {0,1,2}; 3 is not a member and 0 is, so the printed list both includes an impossible value and omits a possible value.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
+      "formula_policy": "Exactly one inline numeral changes from 3 to 0. The domain, assignments and all later witness values remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$3$"
+        ],
+        "target_only": [
+          "$0$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-004",
+      "unit_id": "OLP-0146",
+      "classification": "universal_instantiation_example_places_atom_outside_quantifier_body",
+      "source_path": "content/first-order-logic/introduction/substitution.tex",
+      "source_sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
+      "source_locator": "introduction/substitution.tex:13-28",
+      "target_path": "ps-Arab-PK/content/first-order-logic/introduction/substitution.tex",
+      "target_line_1based": 18,
+      "target_sha256": "77dd9aed3934e342ee6efe6e6fcbc753b9fc2dad2f5e3b15ab557614e9799473",
+      "mode": "repair-quantifier-atom-bracing-plus-adjacent-note",
+      "translation_change": "places the complete atomic formula P(v0) inside the universal quantifier body",
+      "counterexample": "The malformed source expression gives the quantifier a body containing only the predicate symbol and leaves v0 as a separate brace group; the following generic schema explicitly requires forall x A(x).",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
+      "formula_policy": "Only the braces around the opening example atom change. Predicate, variable, quantifier and the derived P(a) conclusion remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[\\Objv_0][\\Atom{\\ObjP}]{\\Objv_0}$"
+        ],
+        "target_only": [
+          "$\\lforall[\\Objv_0][\\Atom{\\ObjP}{\\Objv_0}]$"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -2011,7 +2111,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate and source-check the OLP-0139 introduction driver and continue its imported first-order introduction units without changing the frozen v0.5.0 release.",
+  "next_action": "Run cumulative QA and canonical decision validation for OLP-0139–0148, then translate OLP-0149 onward without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -2041,7 +2141,8 @@
     "PS-OWNER-SEMANTIC-20260906-DOWNWARD-LOWENHEIM-SKOLEM",
     "PS-OWNER-READER-INTEGRATION-20260906-CONSTRUCTION-IFTAG",
     "PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG",
-    "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-LOGIC-DRIVER"
+    "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-LOGIC-DRIVER",
+    "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION"
   ],
   "source_authorities": [
     {

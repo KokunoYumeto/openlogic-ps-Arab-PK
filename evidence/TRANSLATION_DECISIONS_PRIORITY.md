@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 90 high-priority entries from the complete 187-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 94 high-priority entries from the complete 196-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -223,6 +223,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0001; open-logic-about; `content/open-logic-about.tex` source line(s) 6; `ps-Arab-PK/content/open-logic-about.tex` target line(s) 5; page: pending stable pagination in a reader containing this unit
   - OLP-0057; Introduction; `content/propositional-logic/syntax-and-semantics/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/introduction.tex` target line(s) 35; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
+  - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) 79; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FORMAL
 
@@ -276,6 +277,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0017; Graphs; `content/sets-functions-relations/relations/graphs.tex` source line(s) 31,34,39; `ps-Arab-PK/content/sets-functions-relations/relations/graphs.tex` target line(s) 30,35,72; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0042; From $\Nat$ to $\Int$; `content/sets-functions-relations/arithmetization/integers.tex` source line(s) 24,39; `ps-Arab-PK/content/sets-functions-relations/arithmetization/integers.tex` target line(s) 24,26,27,39; page: pending stable pagination in a reader containing this unit
   - OLP-0043; From $\Int$ to $\Rat$; `content/sets-functions-relations/arithmetization/rationals.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex` target line(s) 30,34,37; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 34,36; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 33,34; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -334,6 +336,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0043; From $\Int$ to $\Rat$; `content/sets-functions-relations/arithmetization/rationals.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0047; Ordered Rings and Fields; `content/sets-functions-relations/arithmetization/checking-details.tex` source line(s) 106; `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex` target line(s) 109; page: pending stable pagination in a reader containing this unit
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 41; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 38,39,40; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 33,38,46; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 33,37,38,44,46,51; page: pending stable pagination in a reader containing this unit
 
 ## TERM-REL-NEGATIONS
 
@@ -396,6 +399,8 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 24,54; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 48,77,123; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 124; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) 19,36; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 23; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 25,28; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -433,6 +438,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
 - Locations:
   - OLP-0016; Orders; `content/sets-functions-relations/relations/orders.tex` source line(s) 27,28,29,32,33,34,38,42,48,49,54,55,63,65,66,68,78,87,89,93,94,98,101,106,107,139,140,141,152,156; `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex` target line(s) 21,22,26,27,30,31,36,38,40,46,47,53,54,61,64,65,66,77,86,87,88,92,93,98,99,105,106,141,143,154,158; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0047; Ordered Rings and Fields; `content/sets-functions-relations/arithmetization/checking-details.tex` source line(s) 105,113; `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex` target line(s) 115; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 32,48; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-EXTENSION
 
@@ -542,6 +548,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 48; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 73; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 140; page: pending stable pagination in a reader containing this unit
+  - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 64; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -606,6 +613,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 194; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 199; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 18,22,37,59,60; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 17,21,36,57,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -895,6 +903,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 83,85,95,169,196,211,223,234,244,254; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 84,86,96,176,203,218,231,243,254,260,269; page: pending stable pagination in a reader containing this unit
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 156,182; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 162,188; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 153; page: pending stable pagination in a reader containing this unit
+  - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 72; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 69,70,71,84; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1043,6 +1052,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 24,39,150; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 17,22,23,29,30,40,41,46,51,53,54,76,118,119,156,158,194; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,60,61,92,116,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 23,26,27,28,32,59,60,67,75,92,93,100,102,109,111,116,117,121,126,128,129,133,143,144,145,158,163,171; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 24,35,38; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 13,19,23,24,30,35,38; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SUBSTITUTION
 
@@ -1077,6 +1087,8 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0123; \usetoken{S}{derivability} and the Quantifiers; `content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0124; Soundness; `content/first-order-logic/axiomatic-deduction/soundness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0125; \usetoken{P}{derivation} with \usetoken{S}{identity}; `content/first-order-logic/axiomatic-deduction/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-AXIOM
 
@@ -1233,6 +1245,11 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) 14,49,76,147,170,211; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 49,123; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 18,33,97; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 16,18; page: pending stable pagination in a reader containing this unit
   - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 25,49,57,81,87,95,104,106,108,117,119,121; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 13,19,52,65,104,106,109,117,119,122; page: pending stable pagination in a reader containing this unit
+  - OLP-0139; fol; `content/first-order-logic/introduction/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) 80; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 39; page: pending stable pagination in a reader containing this unit
+  - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 34,36; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 40; page: pending stable pagination in a reader containing this unit
+  - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49,50,51; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1290,6 +1307,8 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 28,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
+  - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 11,32,34,36,40,43,46,50; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 11,28,32,34,36,39,41,42,45,49,57; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1381,6 +1400,10 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1469,6 +1492,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 13,16,33,96,133,161,184; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 13,15,21,29,33,51,53,96,137,156,168,194; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 13,15,26,60,61,92,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 16,32,59,60,67,75,92,93,100,109,115,117,126,128,129; page: pending stable pagination in a reader containing this unit
+  - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -1573,6 +1597,62 @@ This view contains 90 high-priority entries from the complete 187-entry decision
 - Please double-check: In Pakistani Pashto mathematical prose, is «د لوېنهايم--سکولم قضيه / د سکولم پاراډوکس / تر ډېره شمېرېدونکی مدل» the clearest conventional rendering of “Löwenheim–Skolem Theorem / Skolem's Paradox / at most denumerable model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 10,12,48,58; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 10,12,47; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 67; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
+
+## TERM-FOL-SYNTAX
+
+- Source term or sense: first-order language / constant / variable / term / formula / sentence / quantifier / scope / atomic formula
+- Choice: د لومړۍ درجې ژبه / ثابت / متغير / ترم / فارمول / جمله / کميت ټاکونکے / ساحه / اټومي فارمول
+- Why provisional: predicate, variable and formula contexts regionally attested; the grouped Pakistani terminology remains provisional
+- Rationale: Constants name individual objects, variables receive assignment values, and terms denote objects. Predicates applied to terms form atomic formulas; connectives and quantifiers form further formulas. A sentence is exactly a formula with no free variable occurrence, and quantifier scope and binding must remain distinct from mere symbol occurrence.
+- Alternatives: د محمولاتو منطق ژبه; فردي ثابت او فردي متغير; صيغه د فارمول پر ځاے; د کميت ټاکونکي د عمل ساحه
+- Please double-check: In Pakistani Pashto mathematical prose, is «د لومړۍ درجې ژبه / ثابت / متغير / ترم / فارمول / جمله / کميت ټاکونکے / ساحه / اټومي فارمول» the clearest conventional rendering of “first-order language / constant / variable / term / formula / sentence / quantifier / scope / atomic formula” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0139; fol; `content/first-order-logic/introduction/introduction.tex` source line(s) 1,8,10,14,18; `ps-Arab-PK/content/first-order-logic/introduction/introduction.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) 1,3,11,13,17,21,22,23,34,40,42,47,54; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) 11,13,17,20,21,31,37,53,54,55,80,81; page: pending stable pagination in a reader containing this unit
+  - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) 1,14,16,18,20,21,23,25,27,34,35,36,38,39,40,42,44,45,47,49; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) 15,25,33,39,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 1,3,11,13,14,15,16,17,18,19,20,21,24,26,28,30,31,32,33,36,39,41,42,44,45,47,48,50,55,56,58,60,63,64,67,70,71,76,77,78; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 13,23,29,30,31,54,71,74,75,78,80,85; page: pending stable pagination in a reader containing this unit
+  - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 1,3,11,14,15,16,17,20,21,22,23,24,25,26,27,29,30,34,35,38,42,49,55,56; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 20,21,22,24,29,36,40,52; page: pending stable pagination in a reader containing this unit
+  - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 1,20,21,22,44; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 19,20,21,24,25,26,40,43; page: pending stable pagination in a reader containing this unit
+
+## TERM-VARIABLE-ASSIGNMENT
+
+- Source term or sense: variable assignment / modified assignment / value of a term / assignment independence
+- Choice: د متغير ګومارنه / بدله ګومارنه / د ترم قيمت / له ګومارنې خپلواکي
+- Why provisional: mapping, value and satisfaction concepts supported; exact variable-assignment compounds are provisional
+- Rationale: A variable assignment maps every variable into the structure domain. Its x-modification changes only x. Satisfaction of a formula depends only on its free variables, so satisfaction of a sentence is independent of the assignment. Keep this semantic assignment distinct from object-language substitution.
+- Alternatives: د متغير ارزښت ټاکنه; بدله ارزښت ټاکنه; له ارزښت ټاکنې خپلواکي
+- Please double-check: In Pakistani Pashto mathematical prose, is «د متغير ګومارنه / بدله ګومارنه / د ترم قيمت / له ګومارنې خپلواکي» the clearest conventional rendering of “variable assignment / modified assignment / value of a term / assignment independence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 60,61,65,66,71,92,94; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 60,63,64,70,72,73,77,91,95,97,99,101,113; page: pending stable pagination in a reader containing this unit
+  - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 15,16; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 15; page: pending stable pagination in a reader containing this unit
+  - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 15,23,25; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 14,15,16,17,24,25; page: pending stable pagination in a reader containing this unit
+  - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 41; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
+
+## TERM-STRUCTURAL-INDUCTION
+
+- Source term or sense: inductive definition / structural induction / atomic base / generation clause / limiting clause
+- Choice: استقرايي تعريف / جوړښتي استقرا / اټومي بنسټ / جوړوونکے شرط / محدودوونکے شرط
+- Why provisional: induction and formula-generation concepts regionally supported; exact structural compounds are provisional
+- Rationale: The atomic clauses supply the base objects, formation clauses close the class under specified constructors, and the limiting clause excludes every other string. Structural induction proves a property by the matching base and constructor cases; it is not induction on a numerical index unless a separate coding is supplied.
+- Alternatives: ساختماني استقرا; د فارمول پر جوړښت استقرا; توليدي او د بندولو شرطونه
+- Please double-check: In Pakistani Pashto mathematical prose, is «استقرايي تعريف / جوړښتي استقرا / اټومي بنسټ / جوړوونکے شرط / محدودوونکے شرط» the clearest conventional rendering of “inductive definition / structural induction / atomic base / generation clause / limiting clause” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 50,56,57,70,72,77,82,86; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 54,55,69,70,71,75,80,84,85; page: pending stable pagination in a reader containing this unit
+
+## TERM-MODEL-THEORY
+
+- Source term or sense: model / theory / model theory / axiomatic method / characterize / preorder
+- Choice: مدل / تيوري / مدل تيوري / بديهي طريقه / ځانګړې کول / مخکښ‌مرتبه
+- Why provisional: theory, relation, order, entailment and countability concepts supported; model-theoretic compounds are provisional
+- Rationale: A model of Gamma is a structure satisfying every sentence in Gamma. A theory axiomatizes a class when its models are exactly that class. The preorder example requires reflexivity and transitivity together. Compactness and Löwenheim--Skolem limit which domain-size classes first-order theories can characterize.
+- Alternatives: د مدلونو تيوري; اکسيوماتيکي طريقه; مقدماتي ترتيب د مخکښ‌مرتبې پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «مدل / تيوري / مدل تيوري / بديهي طريقه / ځانګړې کول / مخکښ‌مرتبه» the clearest conventional rendering of “model / theory / model theory / axiomatic method / characterize / preorder” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0139; fol; `content/first-order-logic/introduction/introduction.tex` source line(s) 24; `ps-Arab-PK/content/first-order-logic/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 3,11,19,20,24,26,28,30,32,38,47,48,49,50,53,54,56,57,60; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 11,19,24,25,27,29,32,37,47,48,49,53,56,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 39,41,47,52; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 38,40,46,50; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

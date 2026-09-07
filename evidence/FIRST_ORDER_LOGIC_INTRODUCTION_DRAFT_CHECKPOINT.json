@@ -1,0 +1,539 @@
+{
+  "schema": "ps-first-order-logic-introduction-draft/1",
+  "utc": "2026-09-07T15:56:09.840605+00:00",
+  "status": "OLP-0001–0148 structurally verified; the ten-unit first-order-logic introduction chapter is complete as editable source; OLP-0139–0148 are not yet in a public source snapshot; v0.5.0 remains frozen",
+  "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+  "units": [
+    {
+      "unit_id": "OLP-0139",
+      "path": "content/first-order-logic/introduction/introduction.tex",
+      "source_sha256": "05b3d4c1cfef57b0df901d96638381e3ac936560b37dfcbc10404f152a19d7d5",
+      "translation_sha256": "e138c6666c9bf77eb3b2d084463a3244a1251df2bba4ff619c0aa7af53d648a9",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0140",
+      "path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "translation_sha256": "f455efc9f5d434774b26dbb1913031896dcbe10df7ae1b5f93df73925518e4b9",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-001"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lforall[x][(!A(x)\\lif!B(x)),\\lexists[x][!A(x)]\\Entails\\lexists[x][!B(x)]]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))$",
+          "$\\lexists[x][!B(x)]]$",
+          "$\\lexists[x][!B(x)]]$"
+        ],
+        "target_only": [
+          "$\\lforall[x][(!A(x)\\lif!B(x))],\\lexists[x][!A(x)]\\Entails\\lexists[x][!B(x)]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))]$",
+          "$\\lforall[x][(!A(x)\\lif!B(x))]$",
+          "$\\lexists[x][!B(x)]$",
+          "$\\lexists[x][!B(x)]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0141",
+      "path": "content/first-order-logic/introduction/syntax.tex",
+      "source_sha256": "13404c0d5539db8f9ec7ac2205560b802e61e18623610a74d945c21f64e71884",
+      "translation_sha256": "af271fb5f05ab1b7f5b6e09ea55930c17bba74ef9c55d4afb2bc74ed1eb63242",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0142",
+      "path": "content/first-order-logic/introduction/formulas.tex",
+      "source_sha256": "359d5608df5b55db1a6ec96c390c2baeecc87cd9fa20d026a827afbfe3cb1ff4",
+      "translation_sha256": "534951cfa68553855827347717ef931017f6da6e88db7334c75be3826383ffda",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0143",
+      "path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "translation_sha256": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-002",
+        "OLFOL-003"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$3$"
+        ],
+        "target_only": [
+          "$0$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0144",
+      "path": "content/first-order-logic/introduction/sentences.tex",
+      "source_sha256": "748e7d15fb2dbed01613a86005d52fdb1f3fe78bb8e3749b61e48cbd2a04a8d0",
+      "translation_sha256": "39e0441e31112b5f74a980de8ae8969d89f0142c6096ad14e12651e65bc8f81a",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0145",
+      "path": "content/first-order-logic/introduction/semantic-notions.tex",
+      "source_sha256": "9d04bf200004bd09dead1b4fcd8a97eca4c9e2d7886c07cb99122d0426d60aae",
+      "translation_sha256": "9682c0c1b34e9e8703b9ed0580163aec24650656d59522e7942000d5d188ec13",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0146",
+      "path": "content/first-order-logic/introduction/substitution.tex",
+      "source_sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
+      "translation_sha256": "77dd9aed3934e342ee6efe6e6fcbc753b9fc2dad2f5e3b15ab557614e9799473",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-004"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lforall[\\Objv_0][\\Atom{\\ObjP}]{\\Objv_0}$"
+        ],
+        "target_only": [
+          "$\\lforall[\\Objv_0][\\Atom{\\ObjP}{\\Objv_0}]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0147",
+      "path": "content/first-order-logic/introduction/models-theories.tex",
+      "source_sha256": "36ee284caf12899709c6527a5e97cc191bb07fa6701d9b457a7191a1e803c59f",
+      "translation_sha256": "3ddb3db271ab1944942d372a8e1521bca60f686558d0f9690be0360d2baa2bbc",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0148",
+      "path": "content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_sha256": "05f6726f7479e800c0bba936fc241ba48814425b161a53c67b4cc5bf43aed773",
+      "translation_sha256": "36c96bc852e461f4ee9338407832e5ecbf8c6c5821ddac853a2c1c2ca8c798f1",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "draft_units": 148,
+    "structural_pass": 148,
+    "visually_accepted_units": 105,
+    "published_reader_units": 82,
+    "published_source_snapshot_units": 137,
+    "remaining_units": 574
+  },
+  "aligned_blocks": 2385,
+  "consultation_records": 1519,
+  "canon_counts": {
+    "sources": 5,
+    "passages": 60,
+    "terms": 101
+  },
+  "state_hashes": {
+    "GOAL.md": "ea8bad5e6c7d11c3fa6e52a23fe9ffe84c9a678e92e9f05e5a687de205b5eb4e",
+    "CANON_SOURCES.jsonl": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931",
+    "CANON_PASSAGES.jsonl": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f",
+    "TERM_DECISIONS.jsonl": "7c0754a76b5f2ac1ec198870e4f4e5b284b031cba0a0b78b0daa92e226fe1c62",
+    "ALIGNMENT.jsonl": "f38d9bc78f08e17d2d601abcd946c5c36c4c374b809cb1069b7a66afd3fa1705",
+    "SEGMENT_CANON_USE.jsonl": "31a2d5bef4ee4f3e81594f9806f864af8c8dab082acb15e3634118e00f79c9b8",
+    "QA.json": "5721b3a91375ad47dc57d4e0f7f659453ab3c2e36d2d3aa33be6d47889ca42c5",
+    "SOURCE_CORRECTIONS.json": "01e8b3def518cbfef49bcdcdb03864404604342dcc0151bc19fafffc055efc2f",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "94708a3f176e8310f97e03169d840d03c7f9fbbc1fea4d3e915db0f8cba4af38",
+    "EXPERT_REVIEW_LOG.jsonl": "5d6a75841b6dd599364b1bad7383e5da6cd7c97b00bf9e638028e328929cb084",
+    "EXPERT_REVIEW_LOG_SUMMARY.json": "32b3aae44f9fafb06ae94797897c425d8623a3c8e9b81b4b67333d9507d27fc2",
+    "FIRST_ORDER_LOGIC_INTRODUCTION_SOURCE_CHECK.json": "787c3fd36cd14c0672dc6a330e40a026f8d16e01c3e9d31593e1b37260bc648d",
+    "TRANSLATION_REVIEW_WORKFLOW.json": "a3e374bc72a879c82415708b4cd293c62bcb78b8a9e6152cdd48efdf68c7c658",
+    "START_HERE.md": "d0675eac626d8cc8cfd172fa9a655dc4cf7b5d88f13bd7a80dbbcec9fe76a42c",
+    "TRANSLATION_DECISIONS_FULL.md": "36860fa2fea354927b8dde3bb14088157b897677a48eb5673da494f8e0ff4791",
+    "PRIORITY_REVIEW.md": "6d36f68ff3a042f7a30ef1c89d93c203341041f137bf9352e0ae4cb418aaf67d",
+    "DECISION_OCCURRENCES.csv": "b520a04330443e51f0e4245388ad63c2a804d3430a91a9ebbd20dadd7e858f74",
+    "DECISIONS.json": "0c1989d5271b17ed6c8d6e16fc67b64f2ba0dbfc2dbe463783b553adf172552e",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "TRANSLATION_DECISION_QA.json": "28ac11bd5a8c272d34fb7ebd90a98fe236b8fe062400dccc02bf3ff39972cc9d",
+    "COMPLETENESS_READER_ACCEPTANCE.json": "44a750e3dbe086fc3bbbf062852655d993f16c6713da32cdf96eb2bf3838a9d0",
+    "PUBLICATION_VERIFIED.json": "915ec76389f15ef1d977fd44c252d49a5eb77d0812057fd5b9ccf5eb92e1de1a",
+    "ZENODO_VERIFIED.json": "d522afb5e8cf9aec99e89317b41f2a35c3af05ca964943dc91412920693b9a45",
+    "V050_MANAGER_REPORT.json": "161ae1ec83391f811c7200bcdcf6623c993db3546b4a7d8d1785a6315dc677a9"
+  },
+  "public_hashes": {
+    "README.md": "aed58ec672280cfa69812df184b4f019801fe2ffe601237f2ca12672af9c9bd3",
+    "SOURCE_CORRECTIONS.md": "e464ca68872760ccc94732d1dadf3c2e0eee867a7033184f82d0160aa7d433d5",
+    "EXPERT_REVIEW.md": "b0ce70c59f16a34148edd8266d2b199a08c5d6c85553c8e2f5aa40c2de1eb143",
+    "ps-Arab-PK/content/first-order-logic/introduction/introduction.tex": "e138c6666c9bf77eb3b2d084463a3244a1251df2bba4ff619c0aa7af53d648a9",
+    "ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex": "f455efc9f5d434774b26dbb1913031896dcbe10df7ae1b5f93df73925518e4b9",
+    "ps-Arab-PK/content/first-order-logic/introduction/syntax.tex": "af271fb5f05ab1b7f5b6e09ea55930c17bba74ef9c55d4afb2bc74ed1eb63242",
+    "ps-Arab-PK/content/first-order-logic/introduction/formulas.tex": "534951cfa68553855827347717ef931017f6da6e88db7334c75be3826383ffda",
+    "ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f",
+    "ps-Arab-PK/content/first-order-logic/introduction/sentences.tex": "39e0441e31112b5f74a980de8ae8969d89f0142c6096ad14e12651e65bc8f81a",
+    "ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex": "9682c0c1b34e9e8703b9ed0580163aec24650656d59522e7942000d5d188ec13",
+    "ps-Arab-PK/content/first-order-logic/introduction/substitution.tex": "77dd9aed3934e342ee6efe6e6fcbc753b9fc2dad2f5e3b15ab557614e9799473",
+    "ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex": "3ddb3db271ab1944942d372a8e1521bca60f686558d0f9690be0360d2baa2bbc",
+    "ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex": "36c96bc852e461f4ee9338407832e5ecbf8c6c5821ddac853a2c1c2ca8c798f1",
+    "evidence/TERM_DECISIONS.jsonl": "7c0754a76b5f2ac1ec198870e4f4e5b284b031cba0a0b78b0daa92e226fe1c62",
+    "evidence/ALIGNMENT.jsonl": "f38d9bc78f08e17d2d601abcd946c5c36c4c374b809cb1069b7a66afd3fa1705",
+    "evidence/SEGMENT_CANON_USE.jsonl": "31a2d5bef4ee4f3e81594f9806f864af8c8dab082acb15e3634118e00f79c9b8",
+    "evidence/QA.json": "5721b3a91375ad47dc57d4e0f7f659453ab3c2e36d2d3aa33be6d47889ca42c5",
+    "evidence/SOURCE_CORRECTIONS.json": "01e8b3def518cbfef49bcdcdb03864404604342dcc0151bc19fafffc055efc2f",
+    "evidence/FIRST_ORDER_LOGIC_INTRODUCTION_SOURCE_CHECK.json": "787c3fd36cd14c0672dc6a330e40a026f8d16e01c3e9d31593e1b37260bc648d",
+    "evidence/TRANSLATION_REVIEW_WORKFLOW.json": "a3e374bc72a879c82415708b4cd293c62bcb78b8a9e6152cdd48efdf68c7c658",
+    "evidence/TRANSLATION_DECISION_QA.json": "28ac11bd5a8c272d34fb7ebd90a98fe236b8fe062400dccc02bf3ff39972cc9d",
+    "evidence/consultation-plan.json": "de4eca611a4b4cfecf29dd8e34ceb33721b778ab71b25f657cc92fb6df873919",
+    "tools/check_translation.py": "dd2ce601a46f7df259233b3d304d045014e0e8c14fea0edbf2339cdd110800cd"
+  },
+  "source_correction_counts": {
+    "OLARI": 14,
+    "OLAX": 12,
+    "OLCOM": 9,
+    "OLFOL": 4,
+    "OLFUN": 5,
+    "OLINF": 2,
+    "OLND": 6,
+    "OLPF": 2,
+    "OLPL": 3,
+    "OLSIZ": 10,
+    "OLSQ": 6,
+    "OLTAB": 12,
+    "PSSIZ": 4
+  },
+  "batch_source_corrections": [
+    "OLFOL-001",
+    "OLFOL-002",
+    "OLFOL-003",
+    "OLFOL-004"
+  ],
+  "source_check": {
+    "path": "FIRST_ORDER_LOGIC_INTRODUCTION_SOURCE_CHECK.json",
+    "sha256": "787c3fd36cd14c0672dc6a330e40a026f8d16e01c3e9d31593e1b37260bc648d",
+    "conclusion": "The full ten-unit introduction chapter is translated. Four localized source repairs correct three repetitions of one bracketed consequence schema, a symbol-kind error, a domain-member error and a malformed quantified atom; all are adjacent and exact-QA-accounted. Every other formula, identifier, import, tag, citation, semantic direction and definition is preserved."
+  },
+  "consultation_plan": {
+    "path": "work/batch01_consultation.json",
+    "sha256": "de4eca611a4b4cfecf29dd8e34ceb33721b778ab71b25f657cc92fb6df873919",
+    "records": 1519
+  },
+  "expert_review": {
+    "schema": "ps-expert-review-log-summary/2",
+    "generated_utc": "2026-09-07T15:47:35.899837+00:00",
+    "draft_units": 148,
+    "total_units": 722,
+    "terminology_entries": 101,
+    "difficult_entries": 95,
+    "log_sha256": "5d6a75841b6dd599364b1bad7383e5da6cd7c97b00bf9e638028e328929cb084",
+    "public_markdown_sha256": "b0ce70c59f16a34148edd8266d2b199a08c5d6c85553c8e2f5aa40c2de1eb143",
+    "status": "partial and maintained; asynchronous expert correction invited, no human-dependent hold",
+    "decision_entries": 196,
+    "priority_entries": 94,
+    "occurrence_rows": 6631,
+    "machine_json_sha256": "4749e37a4a7099b07fe2b3e75a1f35944f0e35d3f5fe0710e5409d74cee832c7",
+    "full_markdown_sha256": "28c06ad70fa467cf04331438a6e3488a568e260ed0987eb1d44d6e854a554044",
+    "priority_markdown_sha256": "63a4ba986b0a7675d79e6aeef333c913736b51b5e516458061e1535d1e46e398",
+    "occurrence_csv_sha256": "29b8eba8714f426fb2260d64add9bf542f1728a7a6b0714439f3bba7115b1c8e",
+    "pagination_status": "exact occurrence pages pending verified line-to-page mapping; no page guessed"
+  },
+  "review_workflow": {
+    "path": "TRANSLATION_REVIEW_WORKFLOW.json",
+    "sha256": "a3e374bc72a879c82415708b4cd293c62bcb78b8a9e6152cdd48efdf68c7c658",
+    "coverage": {
+      "draft_units": 148,
+      "total_units": 722,
+      "terminology_entries": 101,
+      "difficult_entries": 95,
+      "decision_entries": 196,
+      "priority_entries": 94,
+      "paired_occurrence_rows": 10315,
+      "legacy_side_rows": 6631
+    }
+  },
+  "canonical_decision_package": {
+    "schema": "openlogic-translation-decision-qa/1.0.0",
+    "status": "PASS",
+    "normative_schema": {
+      "path_or_uri": "evidence/translation-decision.schema.json",
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    },
+    "canonical_register": {
+      "path_or_uri": "evidence/DECISIONS.json",
+      "bytes": 44263413,
+      "sha256": "0c1989d5271b17ed6c8d6e16fc67b64f2ba0dbfc2dbe463783b553adf172552e"
+    },
+    "counts": {
+      "decisions": 196,
+      "occurrences": 10315,
+      "terminology_decisions": 101,
+      "source_correction_decisions": 90,
+      "priority_decisions": 94,
+      "reader_pages_available": 5359,
+      "reader_pages_pending": 4956
+    },
+    "validation": {
+      "json_schema_draft_2020_12": "PASS",
+      "unique_decision_ids": "PASS",
+      "unique_occurrence_ids": "PASS",
+      "one_paired_occurrence_per_decision_semantic_unit": "PASS",
+      "canon_use_term_segment_coverage": "PASS",
+      "source_target_file_hashes": "PASS",
+      "source_target_line_and_byte_spans": "PASS",
+      "alignment_segment_bytes": "PASS",
+      "evidence_reference_hashes": "PASS",
+      "markdown_csv_json_agreement": "PASS",
+      "pending_pages_are_explicit_and_never_guessed": "PASS"
+    },
+    "projection_artifacts": {
+      "START_HERE.md": {
+        "path_or_uri": "evidence/START_HERE.md",
+        "bytes": 1404,
+        "sha256": "d0675eac626d8cc8cfd172fa9a655dc4cf7b5d88f13bd7a80dbbcec9fe76a42c"
+      },
+      "TRANSLATION_DECISIONS_FULL.md": {
+        "path_or_uri": "evidence/TRANSLATION_DECISIONS_FULL.md",
+        "bytes": 3734656,
+        "sha256": "36860fa2fea354927b8dde3bb14088157b897677a48eb5673da494f8e0ff4791"
+      },
+      "PRIORITY_REVIEW.md": {
+        "path_or_uri": "evidence/PRIORITY_REVIEW.md",
+        "bytes": 3041958,
+        "sha256": "6d36f68ff3a042f7a30ef1c89d93c203341041f137bf9352e0ae4cb418aaf67d"
+      },
+      "DECISION_OCCURRENCES.csv": {
+        "path_or_uri": "evidence/DECISION_OCCURRENCES.csv",
+        "bytes": 21398738,
+        "sha256": "b520a04330443e51f0e4245388ad63c2a804d3430a91a9ebbd20dadd7e858f74"
+      }
+    },
+    "input_artifacts": {
+      "review": {
+        "path_or_uri": "evidence/EXPERT_REVIEW_LOG.jsonl",
+        "bytes": 1429086,
+        "sha256": "5d6a75841b6dd599364b1bad7383e5da6cd7c97b00bf9e638028e328929cb084"
+      },
+      "alignment": {
+        "path_or_uri": "evidence/ALIGNMENT.jsonl",
+        "bytes": 2916874,
+        "sha256": "f38d9bc78f08e17d2d601abcd946c5c36c4c374b809cb1069b7a66afd3fa1705"
+      },
+      "canon_use": {
+        "path_or_uri": "evidence/SEGMENT_CANON_USE.jsonl",
+        "bytes": 3806002,
+        "sha256": "31a2d5bef4ee4f3e81594f9806f864af8c8dab082acb15e3634118e00f79c9b8"
+      },
+      "manifest": {
+        "path_or_uri": "evidence/SOURCE_MANIFEST.jsonl",
+        "bytes": 356467,
+        "sha256": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155"
+      },
+      "canon_sources": {
+        "path_or_uri": "evidence/CANON_SOURCES.jsonl",
+        "bytes": 4381,
+        "sha256": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931"
+      },
+      "canon_passages": {
+        "path_or_uri": "evidence/CANON_PASSAGES.jsonl",
+        "bytes": 48711,
+        "sha256": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f"
+      },
+      "corrections": {
+        "path_or_uri": "evidence/SOURCE_CORRECTIONS.json",
+        "bytes": 149374,
+        "sha256": "01e8b3def518cbfef49bcdcdb03864404604342dcc0151bc19fafffc055efc2f"
+      },
+      "terms": {
+        "path_or_uri": "evidence/TERM_DECISIONS.jsonl",
+        "bytes": 62237,
+        "sha256": "7c0754a76b5f2ac1ec198870e4f4e5b284b031cba0a0b78b0daa92e226fe1c62"
+      },
+      "qa": {
+        "path_or_uri": "evidence/QA.json",
+        "bytes": 355158,
+        "sha256": "5721b3a91375ad47dc57d4e0f7f659453ab3c2e36d2d3aa33be6d47889ca42c5"
+      }
+    }
+  },
+  "accepted_reader": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
+    "bytes": 606333,
+    "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+    "pages": 126,
+    "reader_units": 82,
+    "tag": "v0.5.0-proof-systems-completeness",
+    "github_release_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.0-proof-systems-completeness",
+    "zenodo_record_id": 22646118,
+    "zenodo_doi": "10.5281/zenodo.22646118",
+    "preservation_note": "No TeX process was launched for this draft checkpoint. The accepted v0.5.0 PDF and all earlier release bytes remain unchanged."
+  },
+  "next_action": "Translate OLP-0149, register exact canon use and semantic review, run cumulative QA, and continue the remaining 574-unit corpus while preserving all verified releases."
+}

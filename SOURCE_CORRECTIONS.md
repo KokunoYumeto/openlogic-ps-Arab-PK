@@ -767,3 +767,39 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: adds the required third argument {} to the FOL-only iftag around the replacement-reference clause and discloses the repair immediately after that clause.
 - Disclosure: `supply-explicit-empty-inactive-branch-plus-adjacent-note`.
 
+## OLFOL-001
+
+- Unit: `OLP-0140`
+- Frozen source: `content/first-order-logic/introduction/first-order-logic.tex` (04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2) at `introduction/first-order-logic.tex:50-84`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex:51`
+- Audit: `PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION`
+- Treatment: closes the universal formula immediately after its conditional body and removes the duplicated closing bracket from the existential conclusion in all three repetitions.
+- Disclosure: `repair-three-bracketed-formulas-plus-adjacent-notes`.
+
+## OLFOL-002
+
+- Unit: `OLP-0143`
+- Frozen source: `content/first-order-logic/introduction/satisfaction.tex` (01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18) at `introduction/satisfaction.tex:13-25`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:26`
+- Audit: `PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION`
+- Treatment: states that predicates, rather than constants, may have more than one place.
+- Disclosure: `replace-wrong-symbol-class-plus-adjacent-note`.
+
+## OLFOL-003
+
+- Unit: `OLP-0143`
+- Frozen source: `content/first-order-logic/introduction/satisfaction.tex` (01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18) at `introduction/satisfaction.tex:43-67`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:66`
+- Audit: `PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION`
+- Treatment: lists zero, one and two as the possible assignment values in the displayed domain instead of one, two and three.
+- Disclosure: `replace-three-with-zero-plus-adjacent-note`.
+
+## OLFOL-004
+
+- Unit: `OLP-0146`
+- Frozen source: `content/first-order-logic/introduction/substitution.tex` (a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1) at `introduction/substitution.tex:13-28`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex:18`
+- Audit: `PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION`
+- Treatment: places the complete atomic formula P(v0) inside the universal quantifier body.
+- Disclosure: `repair-quantifier-atom-bracing-plus-adjacent-note`.
+
