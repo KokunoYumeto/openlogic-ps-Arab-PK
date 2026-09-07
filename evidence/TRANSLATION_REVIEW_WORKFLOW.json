@@ -1,6 +1,6 @@
 {
   "schema": "ps-translation-review-workflow/1",
-  "utc": "2026-09-07T14:36:22.137160+00:00",
+  "utc": "2026-09-07T14:58:30.840553+00:00",
   "status": "implemented through OLP-0137; maintained during subsequent drafting",
   "coordination": {
     "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
@@ -50,7 +50,7 @@
     "current": "5359 of 10088 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.5.0-proof-systems-completeness; the remaining 4729 occurrences explicitly say pending.",
     "next": "After each later reader reaches stable verified pagination, derive pages from embedded semantic-segment labels and regenerate and validate every canonical projection before packaging the next release."
   },
-  "release_disposition": "The refreshed canonical review surfaces are prepared for v0.5.0-proof-systems-completeness; the latest anonymously verified public release is v0.4.1-proof-systems-reference-repair. Frozen earlier assets remain unchanged.",
+  "release_disposition": "The refreshed canonical review surfaces are published in v0.5.0-proof-systems-completeness and remain maintained on the main branch; later worthwhile releases must carry refreshed surfaces without mutating frozen earlier assets.",
   "hashes": {
     "EXPERT_REVIEW_LOG.jsonl": "be6567c293884acc4bb9006cf23c9dfff9ef68ec0faa666188c8d71e79da6bf9",
     "EXPERT_REVIEW_LOG_SUMMARY.json": "b80c8f1e58190aaff46de12d0ec66518ea343a9edf8ce54b58f4804315fa7111",
@@ -64,14 +64,14 @@
     "DECISION_OCCURRENCES.csv": "6fcada69dcdbcbec3e96b0cfff4904eae96f86d2265bb65af954b01c53fa6fe3",
     "DECISIONS.json": "63c4b8675ea0f35eed5f402804e2640d2b8ac9518185c6cab594654167d7965c",
     "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "TRANSLATION_DECISION_QA.json": "26c4fd4e50019519e90672c4ed18cd0ed385c29acf8441752d51504ea5c90287"
+    "TRANSLATION_DECISION_QA.json": "dec1a80f604bbfb511d27e303768cc7b76ef620fdfc5c270080634ba8c90be76"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.4.1-proof-systems-reference-repair",
-    "tag": "v0.4.1-proof-systems-reference-repair",
+    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.0-proof-systems-completeness",
+    "tag": "v0.5.0-proof-systems-completeness",
     "anonymous_readback_verified": true,
-    "zenodo_record": "https://zenodo.org/records/22442605",
-    "zenodo_version_doi": "10.5281/zenodo.22442605",
+    "zenodo_record": "https://zenodo.org/records/22646118",
+    "zenodo_version_doi": "10.5281/zenodo.22646118",
     "zenodo_concept_doi": "10.5281/zenodo.22307197"
   }
 }

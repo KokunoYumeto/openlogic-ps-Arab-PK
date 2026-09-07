@@ -1,0 +1,107 @@
+{
+  "schema": "ps-openlogic-manager-report/1",
+  "status": "sent",
+  "sent_utc": "2026-09-07T15:01:58.011971+00:00",
+  "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
+  "release": {
+    "tag": "v0.5.0-proof-systems-completeness",
+    "tagged_commit": "89f9e29a4dff83a5a2d90cae07fe28d53d1a0de6",
+    "purpose": "complete first-order completeness chapter added to the integrated proof-systems reader"
+  },
+  "adoption": {
+    "github_lineage": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197",
+    "finding": "The release is the current version in both existing public lineages; no duplicate repository or DOI concept was created."
+  },
+  "coverage": {
+    "reader_units": 82,
+    "source_snapshot_units": 137,
+    "total_units": 722,
+    "new_reader_units": 12,
+    "new_source_snapshot_units": 6,
+    "remaining_untranslated_units": 585
+  },
+  "reader": {
+    "filename": "openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
+    "bytes": 606333,
+    "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+    "pages": 126,
+    "guarded_primary_passes": 3,
+    "guarded_replay_passes": 3,
+    "all_compared_artifacts_byte_identical": true,
+    "all_pages_visually_inspected": true,
+    "mapped_segments": 907,
+    "linked_external_references": 44
+  },
+  "qa": {
+    "structural_pass_units": 137,
+    "aligned_blocks": 2260,
+    "canon_use_records": 1471,
+    "visually_accepted_units": 105,
+    "qa_sha256": "56fcbd2aafb866b0034826b701e64c173f18f4fd52f0267dc7f76559462e31be"
+  },
+  "defects": {
+    "new_reader_integration_repairs": [
+      "OLCOM-008",
+      "OLCOM-009"
+    ],
+    "description": "Both frozen-source iftag calls omitted the required empty false branch; the Pashto edition supplies it and discloses the repair adjacent to the affected text.",
+    "adopted_correction_actions": 85,
+    "retracted_false_alert": "OLSIZ-011"
+  },
+  "canonical_review": {
+    "decisions": 187,
+    "paired_occurrences": 10088,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 4729,
+    "qa_sha256": "dec1a80f604bbfb511d27e303768cc7b76ef620fdfc5c270080634ba8c90be76"
+  },
+  "publication": {
+    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.0-proof-systems-completeness",
+    "github_assets_verified": 3,
+    "github_tag_files_verified": 1056,
+    "github_tag_archive_sha256": "18499502f9afe43e3a9a32c8d164f280f6b4e0822ca8eaf151be9c9b389c2e12",
+    "zenodo_record": "https://zenodo.org/records/22646118",
+    "zenodo_doi": "10.5281/zenodo.22646118",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197",
+    "zenodo_assets_verified": 18,
+    "anonymous_readback_verified": true,
+    "new_assets": [
+      {
+        "path": "releases/openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
+        "filename": "openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
+        "bytes": 606333,
+        "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+        "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
+        "anonymous": true
+      },
+      {
+        "path": "releases/openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
+        "filename": "openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
+        "bytes": 11962469,
+        "sha256": "79c60af2fdd3ffe45f4ba50ba8d7c8c3d2ef1763ee4a3d1f391402b25499e0a6",
+        "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
+        "anonymous": true
+      },
+      {
+        "path": "releases/SHA256SUMS-v0.5.0.txt",
+        "filename": "SHA256SUMS-v0.5.0.txt",
+        "bytes": 258,
+        "sha256": "ea901433fa40aeabd38abbc1112d2b30dcbc4f65d55341e414a05e8940f025f1",
+        "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/SHA256SUMS-v0.5.0.txt",
+        "anonymous": true
+      }
+    ]
+  },
+  "preservation": {
+    "previous_records_still_open": [
+      22442605,
+      22381723,
+      22312916,
+      22307753,
+      22307198
+    ],
+    "finding": "All earlier GitHub release assets and Zenodo versions remain publicly available and unchanged."
+  },
+  "next_action": "Translate and verify OLP-0138, register exact canon use and semantic review, run cumulative QA, and continue the remaining 585-unit corpus."
+}
