@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 137 of 722 source units are translated drafts. This log contains 96 terminology entries and 91 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 138 of 722 source units are translated drafts. This log contains 96 terminology entries and 91 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 

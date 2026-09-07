@@ -222,6 +222,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
 - Locations:
   - OLP-0001; open-logic-about; `content/open-logic-about.tex` source line(s) 6; `ps-Arab-PK/content/open-logic-about.tex` target line(s) 5; page: pending stable pagination in a reader containing this unit
   - OLP-0057; Introduction; `content/propositional-logic/syntax-and-semantics/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/introduction.tex` target line(s) 35; page: pending stable pagination in a reader containing this unit
+  - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FORMAL
 
@@ -1041,6 +1042,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) 67,102,115; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) 22,44,49,63,64,69,104,117; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 24,39,150; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 17,22,23,29,30,40,41,46,51,53,54,76,118,119,156,158,194; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,60,61,92,116,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 23,26,27,28,32,59,60,67,75,92,93,100,102,109,111,116,117,121,126,128,129,133,143,144,145,158,163,171; page: pending stable pagination in a reader containing this unit
+  - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SUBSTITUTION
 
@@ -1163,6 +1165,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 2,15,25,74,165,171,184; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 15,23,75; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 2,16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 2,14,28,35,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) 10,11,16,19,53; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 7,10,11,15,16,19,20; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -1286,6 +1289,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 15,25,74; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 15,23,75; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 28,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1376,6 +1380,7 @@ This view contains 90 high-priority entries from the complete 187-entry decision
   - OLP-0134; The Completeness Theorem; `content/first-order-logic/completeness/completeness-thm.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/completeness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 

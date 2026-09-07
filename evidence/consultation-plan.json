@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
-  "status": "complete-completeness-chapter-draft; all OLP-0126–0137 units structurally translated; v0.4.1 proof-systems reader remains published and verified; OLP-0138 first-order-logic driver is next",
+  "batch_id": "PS-B036-FIRST-ORDER-LOGIC-DRIVER",
+  "status": "v0.5.0 completeness reader published and verified; OLP-0138 first-order-logic part driver structurally translated; OLP-0139 introduction driver is next",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -2894,6 +2894,26 @@
         "TERM-IDENTITY"
       ],
       "scope": "The at-most-denumerable model theorem, stronger identity-free denumerable-model theorem and internal/external countability distinction in Skolem's Paradox are retained without a source correction."
+    },
+    "OLP-0138": {
+      "batch_id": "PS-B036-FIRST-ORDER-LOGIC-DRIVER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-METALOGIC",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-QUANTIFIER-RULES",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "The part-level scope through completeness, deliberate independence from the separate propositional treatment, FOL-tag transformation of quantifier material and structure/valuation notation, reuse relationship, current duplication and future deduplication plan are all retained."
     }
   },
   "semantic_review": [
@@ -4540,6 +4560,18 @@
       "passage": "Skolem's Paradox",
       "reverse_paraphrase": "If ZFC is consistent, it proves internally that objects such as the real set and a power set are nonenumerable, yet the downward theorem supplies an externally enumerable model containing those internally nonenumerable sets.",
       "finding": "The conditional consistency premise, power-set example and quotation-marked internal nonenumerability distinction are preserved."
+    },
+    {
+      "unit_id": "OLP-0138",
+      "passage": "part scope and self-contained treatment",
+      "reverse_paraphrase": "The part develops first-order metalogic through completeness and currently proves everything without depending on a separate presentation of propositional logic.",
+      "finding": "The upper scope boundary, present-tense editorial status, independence relation and universal claim about proofs are preserved."
+    },
+    {
+      "unit_id": "OLP-0138",
+      "passage": "tag transformation, reuse and planned deduplication",
+      "reverse_paraphrase": "Turning off the FOL tag removes quantifier material and substitutes valuation notation for structure notation; the propositional part largely reuses that result, which currently repeats material, while a future plan would omit prior material and shorten proofs by cross-reference.",
+      "finding": "Both exclusions, both explicit notation replacements, the direction of reuse, the current duplication and both parts of the future plan are retained."
     }
   ]
 }

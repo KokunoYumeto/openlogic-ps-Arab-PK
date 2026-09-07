@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 137,
-    "structural_pass": 137,
+    "draft_units": 138,
+    "structural_pass": 138,
     "visually_accepted": 105,
     "published": 82
   },
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B035-DOWNWARD-LOWENHEIM-SKOLEM",
+  "batch": "PS-B036-FIRST-ORDER-LOGIC-DRIVER",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -3844,6 +3844,30 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0138",
+      "path": "content/first-order-logic/first-order-logic.tex",
+      "source_sha256": "d3db70ccef0969cf026f4f67149b0cb6cde3a398935b6582f01e056b1904a41f",
+      "translation_sha256": "1fd3b1f096dcc58fa1ec0c001d399000cac4598003044dc8780858060f718e44",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -5490,6 +5514,18 @@
       "passage": "Skolem's Paradox",
       "reverse_paraphrase": "If ZFC is consistent, it proves internally that objects such as the real set and a power set are nonenumerable, yet the downward theorem supplies an externally enumerable model containing those internally nonenumerable sets.",
       "finding": "The conditional consistency premise, power-set example and quotation-marked internal nonenumerability distinction are preserved."
+    },
+    {
+      "unit_id": "OLP-0138",
+      "passage": "part scope and self-contained treatment",
+      "reverse_paraphrase": "The part develops first-order metalogic through completeness and currently proves everything without depending on a separate presentation of propositional logic.",
+      "finding": "The upper scope boundary, present-tense editorial status, independence relation and universal claim about proofs are preserved."
+    },
+    {
+      "unit_id": "OLP-0138",
+      "passage": "tag transformation, reuse and planned deduplication",
+      "reverse_paraphrase": "Turning off the FOL tag removes quantifier material and substitutes valuation notation for structure notation; the propositional part largely reuses that result, which currently repeats material, while a future plan would omit prior material and shorten proofs by cross-reference.",
+      "finding": "Both exclusions, both explicit notation replacements, the direction of reuse, the current duplication and both parts of the future plan are retained."
     }
   ],
   "builds": [

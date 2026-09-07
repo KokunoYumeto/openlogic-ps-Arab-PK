@@ -1,0 +1,57 @@
+% Part: first-order logic
+
+\documentclass[../../include/open-logic-part]{subfiles}
+
+\begin{document}
+
+\olpart{fol}{د لومړۍ درجې منطق}
+
+\begin{editorial}
+  په دې برخه کښې د لومړۍ درجې منطق مابعدمنطق تر بشپړتيا پورې
+  څېړل کېږي۔ اوس مهال دا برخه د بياني منطق پر جلا بيان تکيه نۀ
+  کوي؛ هر څۀ پکښې ثابتېږي۔ که د \texttt{FOL} ټېګ ناسم وي، د سرچينې
+  فايلونه به د کميت ټاکونکو اړوند مواد وباسي (او
+  ``!!{structure}'' به په ``!!{valuation}''، $\Struct{M}$ به په
+  $\pAssign{v}$، او داسې نورو بدل کړي)۔ په حقيقت کښې، د بياني منطق
+  د برخې زياتره مواد همدا د لومړۍ درجې منطق مواد دي چې د \texttt{FOL}
+  ټېګ پکښې بند کړے شوے دے۔
+
+  که د بياني منطق برخه هم شامله وي، نو ډېر تکرار ترې جوړېږي۔ خو
+  پلان دا دے چې دا برخه د بياني منطق مواد په پام کښې نيولے شي (او
+  مخکښې څېړل شوي مواد وباسي، او همدارنګه ثبوتونه د بياني برخې
+  اړوندو ځايونو ته په حوالو لنډ کړي)۔
+\end{editorial}
+
+\olimport[introduction]{introduction}
+
+\olimport[syntax-and-semantics]{syntax}
+
+\olimport[syntax-and-semantics]{semantics}
+
+\olimport[models-theories]{models-theories}
+
+\olimport[proof-systems]{proof-systems}
+
+\iftag{prfSC}{%
+  \olimport[sequent-calculus]{sequent-calculus}
+}{}
+
+\iftag{prfND}{%
+  \olimport[natural-deduction]{natural-deduction}
+}{}
+
+\iftag{prfTab}{%
+  \olimport[tableaux]{tableaux}
+}{}
+
+\iftag{prfAX}{%
+  \olimport[axiomatic-deduction]{axiomatic-deduction}
+}{}
+
+\olimport[completeness]{completeness}
+
+\olimport[beyond]{beyond}
+
+\OLEndPartHook
+
+\end{document}

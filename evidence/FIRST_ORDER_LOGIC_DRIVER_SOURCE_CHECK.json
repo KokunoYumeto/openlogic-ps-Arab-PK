@@ -1,0 +1,38 @@
+{
+  "schema": "ps-openlogic-source-check/1",
+  "utc": "2026-09-07T15:09:20.110706+00:00",
+  "batch_id": "PS-B036-FIRST-ORDER-LOGIC-DRIVER",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0138",
+      "source_path": "content/first-order-logic/first-order-logic.tex",
+      "source_bytes": 1601,
+      "source_sha256": "d3db70ccef0969cf026f4f67149b0cb6cde3a398935b6582f01e056b1904a41f",
+      "translation_bytes": 1911,
+      "translation_sha256": "1fd3b1f096dcc58fa1ec0c001d399000cac4598003044dc8780858060f718e44"
+    }
+  ],
+  "reviews": [
+    {
+      "locator": "OLP-0138 editorial paragraph 1",
+      "observation": "The declared scope, independence from a separate propositional treatment and exact FOL-tag effects were checked against all following imports.",
+      "treatment": "No source defect found; the tag is visibly typeset as code and both notation replacements retain their original mathematical expressions.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0138 editorial paragraph 2",
+      "observation": "The present duplication and proposed future relationship to the propositional part were checked for temporal status and direction.",
+      "treatment": "No source defect found; the translation keeps the statement as a plan and preserves both omission of already-covered material and proof shortening by references.",
+      "correction_id": null
+    },
+    {
+      "locator": "OLP-0138 complete import list",
+      "observation": "All unconditional and tag-conditioned imports were compared in order with the frozen source.",
+      "treatment": "No source defect found; every import, branch and empty false arm is byte-preserved.",
+      "correction_id": null
+    }
+  ],
+  "adopted_corrections": [],
+  "conclusion": "No source correction is required. The part title and all editorial prose are translated; the import topology, tag identifier, token macros and mathematical notation remain structurally faithful."
+}
