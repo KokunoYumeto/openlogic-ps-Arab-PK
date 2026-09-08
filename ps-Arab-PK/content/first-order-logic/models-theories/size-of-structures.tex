@@ -1,0 +1,79 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: size-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{siz}
+
+\olsection{د \printtoken{P}{structure} د کچې بيانول}
+
+\begin{explain}
+د جوړښتونو ځينې خاصيتونه د ژبې د غيرمنطقي سمبولونو له کارولو پرته
+هم بيانولے شو۔ مثلاً داسې !!{sentence}s شته چې په !!a{structure}
+کښې هله او يوازې هله رښتونې وي چې !!{domain}، يعنې د !!{structure}
+ساحه، لږ تر لږه، زيات نه زيات، يا کټ مټ يو ټاکلے شمېر~$n$
+!!{element}s ولري۔
+\end{explain}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+  !A_{\ge n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}\\
+  \begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n])
+\end{aligned}]]]
+\end{multline*}
+په !!a{structure}~$\Struct M$ کښې هله او يوازې هله رښتونې ده چې
+$\Domain M$ لږ تر لږه~$n$ !!{element}s ولري۔ په پايله کښې،
+$\Sat{M}{\lnot !A_{\ge n+1}}$ هله او يوازې هله چې~$\Domain M$
+زيات نه زيات~$n$ !!{element}s ولري۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-028):} سرچينې د وجودي سورو
+ټول ساحوي قوسونه د بېلوالي له شرطونو وړاندې تړلي وو او شرطونه ئې د
+سورو له ساحې بهر پرېښي وو؛ دلته قوسونه د بشپړ شرط وروسته تړل شوي دي۔
+
+\end{prop}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+!A_{= n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{} \\
+\begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n] \land {} \\
+\lforall[y][(\eq[y][x_1] \lor \dots \lor \eq[y][x_n])])
+\end{aligned}]]]
+\end{multline*}
+په !!a{structure}~$\Struct M$ کښې هله او يوازې هله رښتونې ده چې
+$\Domain M$ کټ مټ~$n$ !!{element}s ولري۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-029):} سرچينې دلته هم وجودي
+سوري له خپل شرط وړاندې تړلي وو؛ د وروستي کلي سور تړونکي قوسونه هم
+په سرچينه کښې په ناسم ترتيب او يو زيات تړونکي قوس سره راغلي وو۔
+دلته ټول شرط د وجودي سورو په ساحه کښې او د کلي سور قوسونه جوړې دي۔
+\end{prop}
+
+\begin{prop}
+يو !!{structure} هله او يوازې هله نامتناهي دے چې د لاندې سټ مدل وي:
+\[
+\{!A_{\ge 1}, !A_{\ge 2}, !A_{\ge 3}, \dots \}.
+\]
+\end{prop}
+
+هېڅ يوه خالصه منطقي جمله نشته چې په~$\Struct M$ کښې هله او يوازې
+هله رښتونې وي چې~$\Domain M$ نامتناهي وي۔ خو له غيرمنطقي
+!!{predicate}s سره داسې !!{sentence}s ورکولے شو چې يوازې نامتناهي
+مدلونه لري (که څه هم هر نامتناهي !!{structure} ئې مدل نۀ دے)۔ د
+متناهي جوړښت خاصيت او د !!{nonenumerable} جوړښت خاصيت حتا د
+!!{sentence}s په نامتناهي سټ هم نۀ شي بيانېدے۔ دا حقيقتونه د
+متناهي شاهد او لوېنهايم--سکولم له قضيو څخه راځي۔
+
+\end{document}

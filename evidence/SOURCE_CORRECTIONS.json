@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0166; the complete first-order syntax and semantics chapter is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-07T23:55:11.176975+00:00",
+  "status": "adopted through OLP-0173; the complete models-and-theories chapter is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-08T02:22:11.012621+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -2598,6 +2598,131 @@
           "\\begin{multline*}\\Value{\\Subst{t}{t'}{x}}{M}[s]\\\\\\begin{aligned}[b]&=\\Value{\\Atom{f}{\\Subst{t_1}{t'}{x},\\dots,\\Subst{t_n}{t'}{x}}}{M}[s]\\\\&\\qquad\\text{LOCALIZED$\\Subst{t}{t'}{x}$}\\\\&=\\Assign{f}{M}(\\Value{\\Subst{t_1}{t'}{x}}{M}[s],\\dots,\\Value{\\Subst{t_n}{t'}{x}}{M}[s])\\\\&\\qquad\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[s]$}\\\\&=\\Assign{f}{M}(\\Value{t_1}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}],\\dots,\\Value{t_n}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}])\\\\&\\qquad\\text{LOCALIZED}\\\\&=\\Value{t}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]$}\\end{aligned}\\end{multline*}"
         ]
       }
+    },
+    {
+      "id": "OLFOL-025",
+      "unit_id": "OLP-0171",
+      "classification": "object_language_style_macro_omitted_from_final_variable",
+      "source_path": "content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+      "source_locator": "content/first-order-logic/models-theories/expressing-relations.tex:62-65",
+      "target_path": "ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_line_1based": 67,
+      "target_sha256": "a7093a6f0e2560cc888fa16151f349e0747d8822b9a6fa6e4afb790cfb99065e",
+      "mode": "restore-object-language-style-plus-adjacent-note",
+      "translation_change": "restores the object-language styling macro on v_2 in the second formula defining the arithmetic less-than relation",
+      "counterexample": "Every variable in both defining formulas is displayed as an object-language symbol except the final v_2, so the unstyled occurrence breaks the notation established by the section without changing its intended denotation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+      "formula_policy": "Only the object-language typography macro is restored; the variable index, equality, existential quantifier and arithmetic term remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][v_2]]$"
+        ],
+        "target_only": [
+          "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][\\Objv_2]]$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-026",
+      "unit_id": "OLP-0172",
+      "classification": "universal_quantifier_scopes_close_before_both_conditionals",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "source_locator": "content/first-order-logic/models-theories/set-theory.tex:120-127",
+      "target_path": "ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex",
+      "target_line_1based": 126,
+      "target_sha256": "141a8e3a3ffefadf5122425e914f4c873abfd1bb7365a9707e2f89290e341455",
+      "mode": "move-scope-delimiters-plus-adjacent-note",
+      "translation_change": "moves the closing scope delimiters for the universal conditions defining a function so that each conditional consequent lies within its quantifier",
+      "counterexample": "In the source, the first universal scope ends before the existence of a graph pair and the second ends before totality and uniqueness; the displayed string therefore does not quantify the variables used by the defining conditions.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+      "formula_policy": "Only four existing square-bracket delimiters are repositioned around the existing consequents; all variables, connectives, graph clauses and line breaks remain otherwise unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\lforall[u][(u\\inf\\lif{}]&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])\\land{}\\\\\\lforall[x][(x\\inX\\lif{}]&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]]))\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\lforall[u][(u\\inf\\lif{}&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])]\\land{}\\\\\\lforall[x][(x\\inX\\lif{}&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]])))]\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-027",
+      "unit_id": "OLP-0172",
+      "classification": "universal_quantifier_scopes_close_inside_injection_antecedent",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "source_locator": "content/first-order-logic/models-theories/set-theory.tex:133-138",
+      "target_path": "ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex",
+      "target_line_1based": 147,
+      "target_sha256": "141a8e3a3ffefadf5122425e914f4c873abfd1bb7365a9707e2f89290e341455",
+      "mode": "move-scope-delimiters-plus-adjacent-note",
+      "translation_change": "moves both universal scope delimiters to the end of the complete injectivity conditional",
+      "counterexample": "The source closes the quantifiers over x and x-prime immediately after their domain-membership clauses, leaving the common-value condition and equality conclusion outside their scopes.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+      "formula_policy": "Only the two existing quantifier-scope delimiters are moved; the domain clauses, existential common-value clause and equality conclusion are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}]]\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')]]\\end{multline*}"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-028",
+      "unit_id": "OLP-0173",
+      "classification": "existential_quantifier_scopes_close_before_at_least_n_matrix",
+      "source_path": "content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
+      "source_locator": "content/first-order-logic/models-theories/size-of-structures.tex:23-32",
+      "target_path": "ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_line_1based": 37,
+      "target_sha256": "e6cd634ac9cfa8bcec8e6f7b68a7c1b43d3d9c0c0c03e5ceaf79c772166ffc3c",
+      "mode": "move-scope-delimiters-plus-adjacent-note",
+      "translation_change": "moves the existential scope delimiters for x_1 through x_n after the pairwise-distinctness matrix",
+      "counterexample": "The source closes every existential scope before the aligned inequalities, leaving an empty quantified body and free variables in the condition that is meant to state the domain has at least n elements.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+      "formula_policy": "Only the existing existential scope delimiters are moved around the unchanged pairwise-distinctness matrix.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}]]]\\end{multline*}"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-029",
+      "unit_id": "OLP-0173",
+      "classification": "quantifier_scopes_and_parentheses_malformed_in_exactly_n_formula",
+      "source_path": "content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
+      "source_locator": "content/first-order-logic/models-theories/size-of-structures.tex:41-51",
+      "target_path": "ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_line_1based": 58,
+      "target_sha256": "e6cd634ac9cfa8bcec8e6f7b68a7c1b43d3d9c0c0c03e5ceaf79c772166ffc3c",
+      "mode": "repair-scope-delimiters-and-parentheses-plus-adjacent-note",
+      "translation_change": "places the distinctness and exhaustion matrix inside the existential scopes and restores the closing order of the final universal matrix",
+      "counterexample": "The source closes the existential scopes before their matrix and writes the final equality atom's bracket where the universal matrix parenthesis must close, followed by a surplus parenthesis; the result does not express exactly n domain elements.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+      "formula_policy": "The formula letters, variables, inequalities, disjunction and quantifiers are unchanged; only scope delimiters and the malformed closing order are repaired.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n]]))\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n])])\\end{aligned}]]]\\end{multline*}"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -2605,7 +2730,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0166, then translate the models-and-theories chapter beginning at OLP-0167 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0173, then translate the beyond-first-order chapter beginning at OLP-0174 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -2637,7 +2762,8 @@
     "PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG",
     "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-LOGIC-DRIVER",
     "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
-    "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS"
+    "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+    "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES"
   ],
   "source_authorities": [
     {

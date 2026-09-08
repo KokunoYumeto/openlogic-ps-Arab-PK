@@ -719,7 +719,11 @@ def main() -> None:
         raise ValueError(f"canonical schema validation failed at {list(first.path)}: {first.message}")
 
     decisions_path = output_dir / "DECISIONS.json"
-    decisions_path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    decisions_path.write_text(
+        json.dumps(document, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\r\n",
+    )
 
     csv_fields = [
         "decision_id",
@@ -826,6 +830,7 @@ def main() -> None:
             ),
         ),
         encoding="utf-8",
+        newline="\r\n",
     )
     priority_decisions = [decision for decision in decisions if decision["review_priority"] in {"urgent", "high"}]
     priority_path = output_dir / "PRIORITY_REVIEW.md"
@@ -839,6 +844,7 @@ def main() -> None:
             ),
         ),
         encoding="utf-8",
+        newline="\r\n",
     )
 
     decision_ids = [decision["decision_id"] for decision in decisions]
@@ -947,10 +953,14 @@ Pakistani Pashto usage and orthography are primary. Afghan Pashto sources are la
 
 Missing dictionary attestation never leaves a needed term blank. The register records the best evidence-based provisional rendering, alternatives, confidence, and a concrete expert question. Reader pages remain `pending` until a stable artifact and verified segment-to-page map exist; no page is inferred from a unit range.
 """
-    start_here_path.write_text(start_here, encoding="utf-8")
+    start_here_path.write_text(start_here, encoding="utf-8", newline="\r\n")
     qa["projection_artifacts"]["START_HERE.md"] = artifact(start_here_path, "evidence/START_HERE.md")
     qa_path = output_dir / "TRANSLATION_DECISION_QA.json"
-    qa_path.write_text(json.dumps(qa, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    qa_path.write_text(
+        json.dumps(qa, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\r\n",
+    )
 
     print(
         json.dumps(

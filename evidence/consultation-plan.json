@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
-  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0149 through OLP-0166 form a complete manually translated and source-reviewed chapter",
+  "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0167 through OLP-0173 form a complete manually translated and source-reviewed models-and-theories chapter",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -3403,6 +3403,160 @@
         "TERM-PROOF-PROPERTIES"
       ],
       "scope": "Truth in a structure, validity, semantic consequence, satisfiability, equivalence and model terminology retain their model and assignment quantifiers and polarity."
+    },
+    "OLP-0167": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "The chapter driver preserves all six imports in source order and retains the governing distinction between theories and their models."
+    },
+    "OLP-0168": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-MODEL-THEORY",
+        "TERM-AXIOM",
+        "TERM-CLOSURE",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The axiomatic-method overview retains closure under semantic consequence, axiomatization by a sentence set, intended-model characterization, model existence, axiom independence and definability."
+    },
+    "OLP-0169": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-MODEL-THEORY",
+        "TERM-ORDER-KINDS",
+        "TERM-PREDICATE",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The definition of a model of Gamma remains memberwise satisfaction, and the three displayed conditions characterize reflexive, antisymmetric and transitive partial orders."
+    },
+    "OLP-0170": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P4-EMPTY-MEMBER",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-MOE-P11-SUBSET",
+        "AF-MOE-P12-MUTUAL-INCLUSION",
+        "AF-MOE-P15-UNION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-MODEL-THEORY",
+        "TERM-AXIOM",
+        "TERM-ORDER-KINDS",
+        "TERM-SET",
+        "TERM-EXTENSIONALITY",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "The strict-order, group, Peano-arithmetic, pure-set and mereological axiom examples preserve every formula and the surrounding claims about induction, naive comprehension and parthood."
+    },
+    "OLP-0171": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P23-FUNCTION-DOMAIN",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY",
+        "AF-BUKOVSKY-P28-INVERSES-TYPES",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+      ],
+      "terms": [
+        "TERM-RELATION",
+        "TERM-PREDICATE",
+        "TERM-FUNCTION",
+        "TERM-INJECTIVE",
+        "TERM-COFINITE",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "Formula-based relation definability retains assignment dependence, arithmetic examples and all exercises, including the open transitive-closure question and the finite-complement definition."
+    },
+    "OLP-0172": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P4-EMPTY-MEMBER",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-MOE-P11-SUBSET",
+        "AF-MOE-P12-MUTUAL-INCLUSION",
+        "AF-MOE-P15-UNION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P23-FUNCTION-DOMAIN",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY",
+        "AF-BUKOVSKY-P28-INVERSES-TYPES",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-SUBSET",
+        "TERM-POWERSET",
+        "TERM-PAIR",
+        "TERM-RELATION",
+        "TERM-FUNCTION",
+        "TERM-INJECTIVE",
+        "TERM-EXTENSIONALITY"
+      ],
+      "scope": "The set-theory development retains membership-only definitions of subset, empty set, union, power set, ordered pairs, function graphs, injection, Cantor's theorem, unrestricted comprehension, Russell's paradox and separation."
+    },
+    "OLP-0173": {
+      "batch_id": "PS-B039-FOL-MODELS-THEORIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-FINITE",
+        "TERM-DOMAIN",
+        "TERM-MODEL-THEORY",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The at-least-n and exactly-n sentences retain pairwise distinctness and exhaustion, and the final claims distinguish infinite-model theories from properties that no first-order sentence set can characterize."
     }
   },
   "semantic_review": [
@@ -5289,6 +5443,48 @@
       "passage": "semantic notions",
       "reverse_paraphrase": "A sentence is true in a structure when it is satisfied; validity quantifies over all structures, consequence over all models of the premises, satisfiability over at least one structure, and equivalence requires matching satisfaction.",
       "finding": "Universal and existential model quantifiers, premise-set scope, truth/falsity polarity and model terminology all remain distinct."
+    },
+    {
+      "unit_id": "OLP-0167",
+      "passage": "models-and-theories chapter driver",
+      "reverse_paraphrase": "The chapter proceeds from the axiomatic method and model classes through example theories and relation definability to set theory and expressible structure sizes.",
+      "finding": "All six source imports occur exactly once and in source order."
+    },
+    {
+      "unit_id": "OLP-0168",
+      "passage": "axiomatic method, closure and definability",
+      "reverse_paraphrase": "A closed sentence set contains all its semantic consequences, while axioms generate their closure. A successful axiom system has exactly the intended models; models witness consistency, countermodels witness independence, and definability can eliminate redundant primitives.",
+      "finding": "All six numbered uses of the formal approach retain their conditions and directions, including both semantic tests for a redundant axiom."
+    },
+    {
+      "unit_id": "OLP-0169",
+      "passage": "model classes and partial orders",
+      "reverse_paraphrase": "A structure is a model of Gamma exactly when it satisfies every sentence in Gamma. Reflexivity, antisymmetry and transitivity are separately expressed, and their conjunction characterizes partial-order structures.",
+      "finding": "The memberwise model definition and all three order conditions preserve their quantifier scopes and iff directions."
+    },
+    {
+      "unit_id": "OLP-0170",
+      "passage": "examples of first-order theories",
+      "reverse_paraphrase": "Displayed axioms specify strict linear orders, groups and Peano arithmetic; the induction schema contributes infinitely many axioms. Pure-set comprehension yields Russell's contradiction, while the mereological axioms make parthood a partial order with binary sums.",
+      "finding": "Every displayed formula is unchanged from the source, and the prose keeps the distinction between an infinite schema, inconsistency of naive comprehension and the merely illustrative parthood principles."
+    },
+    {
+      "unit_id": "OLP-0171",
+      "passage": "relations expressed in structures",
+      "reverse_paraphrase": "A formula with specified free variables expresses a relation when satisfaction under every matching assignment agrees with membership in that relation. Complex formulas can define relations absent from the primitive signature, subject to the limits tested by the exercises.",
+      "finding": "Assignment dependence, arity, arithmetic examples and all definability exercises are retained. OLFOL-025 restores only the missing object-language styling on v_2."
+    },
+    {
+      "unit_id": "OLP-0172",
+      "passage": "set theory in a membership-only language",
+      "reverse_paraphrase": "Subset, empty set, union, power set, ordered pairs and function graphs can be expressed without adding constants or function symbols. The text then states injectivity and Cantor's theorem before showing unrestricted comprehension inconsistent and separation restricted.",
+      "finding": "Every existence caveat and definition remains explicit. OLFOL-026 and OLFOL-027 move only premature quantifier closings so the function and injection conditions bind all their variables."
+    },
+    {
+      "unit_id": "OLP-0173",
+      "passage": "expressing finite and infinite domain sizes",
+      "reverse_paraphrase": "Pairwise distinct witnesses express at least n elements; adding universal exhaustion expresses exactly n. Infinitude is captured by the infinite set of all lower-bound sentences, while finiteness and uncountability are not captured even by arbitrary sentence sets.",
+      "finding": "The at-least, at-most, exact and infinite claims retain their polarity. OLFOL-028 and OLFOL-029 place the unchanged matrices within their intended quantifier scopes."
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 166 of 722 source units are translated drafts. This log contains 101 terminology entries and 115 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 173 of 722 source units are translated drafts. This log contains 101 terminology entries and 120 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1893,6 +1893,51 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLFOL-024 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-025
+
+- Type: source-correction
+- Choice: restores the object-language styling macro on v_2 in the second formula defining the arithmetic less-than relation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-025 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
+
+## DEC-OLFOL-026
+
+- Type: source-correction
+- Choice: moves the closing scope delimiters for the universal conditions defining a function so that each conditional consequent lies within its quantifier
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-026 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
+
+## DEC-OLFOL-027
+
+- Type: source-correction
+- Choice: moves both universal scope delimiters to the end of the complete injectivity conditional
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-027 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
+
+## DEC-OLFOL-028
+
+- Type: source-correction
+- Choice: moves the existential scope delimiters for x_1 through x_n after the pairwise-distinctness matrix
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-028 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
+
+## DEC-OLFOL-029
+
+- Type: source-correction
+- Choice: places the distinctness and exhaustion matrix inside the existential scopes and restores the closing order of the final universal matrix
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-029 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
 
 ## DEC-REL-I
 

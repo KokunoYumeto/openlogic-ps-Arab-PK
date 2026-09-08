@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 166,
-    "structural_pass": 166,
+    "draft_units": 173,
+    "structural_pass": 173,
     "visually_accepted": 105,
     "published": 82
   },
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B038-FOL-SYNTAX-SEMANTICS",
+  "batch": "PS-B039-FOL-MODELS-THEORIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -4702,6 +4702,213 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0167",
+      "path": "content/first-order-logic/models-theories/models-theories.tex",
+      "source_sha256": "be635957198b3c2fcfee43dff67ce462f827c6cb051af468fd45feb3858ea9a7",
+      "translation_sha256": "b20dfc901c9a7d758ae3b4e091dd54164ce1227442ceaa0d8cc34ce174a0207a",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0168",
+      "path": "content/first-order-logic/models-theories/introduction.tex",
+      "source_sha256": "af9e91c4a4e19debfa137b696a280723e3de5779d7b65cc32ff0d0bcbac377a1",
+      "translation_sha256": "980690462ab9ecdd1baae73c04f834a09cebc7801f4709a9343cbaf70c2e5ef0",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0169",
+      "path": "content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_sha256": "feb12b7951795d4ad220ee97941e52fef3469bcfe363ec6a3660992225154f9e",
+      "translation_sha256": "5d85f7bb80efb47015694f63e3de6802dadb19d4ae3f58134199423bd8551a6b",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0170",
+      "path": "content/first-order-logic/models-theories/theories.tex",
+      "source_sha256": "5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5",
+      "translation_sha256": "8456da1f6b9d99799520b6a980c12dbeff9c0009ec87a411e06f2160acbcff81",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0171",
+      "path": "content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+      "translation_sha256": "a7093a6f0e2560cc888fa16151f349e0747d8822b9a6fa6e4afb790cfb99065e",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-025"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][v_2]]$"
+        ],
+        "target_only": [
+          "$\\lexists[\\Objv_3][\\eq[(\\Objv_1+{\\Objv_3}')][\\Objv_2]]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0172",
+      "path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "translation_sha256": "141a8e3a3ffefadf5122425e914f4c873abfd1bb7365a9707e2f89290e341455",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-026",
+        "OLFOL-027"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\lforall[u][(u\\inf\\lif{}]&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])\\land{}\\\\\\lforall[x][(x\\inX\\lif{}]&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]]))\\end{align*}",
+          "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}]]\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\lforall[u][(u\\inf\\lif{}&\\lexists[x][\\lexists[y][(x\\inX\\landy\\inY\\land\\tuple{x,y}=u)]])]\\land{}\\\\\\lforall[x][(x\\inX\\lif{}&(\\lexists[y][(y\\inY\\land\\mathrm{maps}(f,x,y))]\\land{}\\\\&(\\lforall[y][\\lforall[y'][((\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x,y'))\\lify=y')]])))]\\end{align*}",
+          "\\begin{multline*}f\\colonX\\toY\\land\\lforall[x][\\lforall[x'][((x\\inX\\landx'\\inX\\land{}\\\\\\lexists[y][(\\mathrm{maps}(f,x,y)\\land\\mathrm{maps}(f,x',y))])\\lifx=x')]]\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0173",
+      "path": "content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
+      "translation_sha256": "e6cd634ac9cfa8bcec8e6f7b68a7c1b43d3d9c0c0c03e5ceaf79c772166ffc3c",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-028",
+        "OLFOL-029"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}\\end{multline*}",
+          "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}]]]\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n]]))\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}!A_{\\gen}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n])\\end{aligned}]]]\\end{multline*}",
+          "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n])])\\end{aligned}]]]\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -6588,6 +6795,48 @@
       "passage": "semantic notions",
       "reverse_paraphrase": "A sentence is true in a structure when it is satisfied; validity quantifies over all structures, consequence over all models of the premises, satisfiability over at least one structure, and equivalence requires matching satisfaction.",
       "finding": "Universal and existential model quantifiers, premise-set scope, truth/falsity polarity and model terminology all remain distinct."
+    },
+    {
+      "unit_id": "OLP-0167",
+      "passage": "models-and-theories chapter driver",
+      "reverse_paraphrase": "The chapter proceeds from the axiomatic method and model classes through example theories and relation definability to set theory and expressible structure sizes.",
+      "finding": "All six source imports occur exactly once and in source order."
+    },
+    {
+      "unit_id": "OLP-0168",
+      "passage": "axiomatic method, closure and definability",
+      "reverse_paraphrase": "A closed sentence set contains all its semantic consequences, while axioms generate their closure. A successful axiom system has exactly the intended models; models witness consistency, countermodels witness independence, and definability can eliminate redundant primitives.",
+      "finding": "All six numbered uses of the formal approach retain their conditions and directions, including both semantic tests for a redundant axiom."
+    },
+    {
+      "unit_id": "OLP-0169",
+      "passage": "model classes and partial orders",
+      "reverse_paraphrase": "A structure is a model of Gamma exactly when it satisfies every sentence in Gamma. Reflexivity, antisymmetry and transitivity are separately expressed, and their conjunction characterizes partial-order structures.",
+      "finding": "The memberwise model definition and all three order conditions preserve their quantifier scopes and iff directions."
+    },
+    {
+      "unit_id": "OLP-0170",
+      "passage": "examples of first-order theories",
+      "reverse_paraphrase": "Displayed axioms specify strict linear orders, groups and Peano arithmetic; the induction schema contributes infinitely many axioms. Pure-set comprehension yields Russell's contradiction, while the mereological axioms make parthood a partial order with binary sums.",
+      "finding": "Every displayed formula is unchanged from the source, and the prose keeps the distinction between an infinite schema, inconsistency of naive comprehension and the merely illustrative parthood principles."
+    },
+    {
+      "unit_id": "OLP-0171",
+      "passage": "relations expressed in structures",
+      "reverse_paraphrase": "A formula with specified free variables expresses a relation when satisfaction under every matching assignment agrees with membership in that relation. Complex formulas can define relations absent from the primitive signature, subject to the limits tested by the exercises.",
+      "finding": "Assignment dependence, arity, arithmetic examples and all definability exercises are retained. OLFOL-025 restores only the missing object-language styling on v_2."
+    },
+    {
+      "unit_id": "OLP-0172",
+      "passage": "set theory in a membership-only language",
+      "reverse_paraphrase": "Subset, empty set, union, power set, ordered pairs and function graphs can be expressed without adding constants or function symbols. The text then states injectivity and Cantor's theorem before showing unrestricted comprehension inconsistent and separation restricted.",
+      "finding": "Every existence caveat and definition remains explicit. OLFOL-026 and OLFOL-027 move only premature quantifier closings so the function and injection conditions bind all their variables."
+    },
+    {
+      "unit_id": "OLP-0173",
+      "passage": "expressing finite and infinite domain sizes",
+      "reverse_paraphrase": "Pairwise distinct witnesses express at least n elements; adding universal exhaustion expresses exactly n. Infinitude is captured by the infinite set of all lower-bound sentences, while finiteness and uncountability are not captured even by arbitrary sentence sets.",
+      "finding": "The at-least, at-most, exact and infinite claims retain their polarity. OLFOL-028 and OLFOL-029 place the unchanged matrices within their intended quantifier scopes."
     }
   ],
   "builds": [

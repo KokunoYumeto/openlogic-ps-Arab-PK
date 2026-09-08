@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: expressing-props-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{exs}
+
+\olsection{د \printtoken{P}{structure} د خاصيتونو بيانول}
+
+\begin{explain}
+د تابعو او اړيکو شرطونه، يا په لا عمومي ډول دا خبره بيانول چې په
+يوه جوړښت کښې تابعې او اړيکې دغه شرطونه پوره کوي، ډېر ځله ګټور او
+مهم وي۔ د بېلګې په توګه، غواړو د يوې ژبې هغه !!{structure}s چې
+!!{predicate}s پکښې زموږ مطلوبه ``معنٰی'' لري، له هغو جوړښتونو څخه
+بېل کړو چې داسې نۀ دي۔ البته بشپړه ازادي لرو چې خپل ``مطلوب''
+!!{structure}s وټاکو؛ مثلاً ويلے شو چې د !!{predicate}~$\le$ تفسير بايد يو
+ترتيب وي، يا يوازې د~$\Lang L$ له هغو تفسيرونو سره دلچسپي لرو چې
+ساحه ئې له سټونو جوړه وي او~$\Obj \in$ د ``د !!a{element} په توګه
+شتون'' په اړيکه تفسير شي۔ خو ايا دا د ژبې په !!{sentence}s کولے شو؟
+په بل عبارت، پر !!a{structure}~$\Struct M$ کوم شرطونه د~$\Struct M$
+د ژبې په يوه !!a{sentence} (يا ښايي د !!{sentence}s په يوه سټ)
+بيانولے شو؟ ځينې شرطونه نۀ شو بيانولے۔ مثلاً د~$\Lang L_A$ داسې
+هېڅ جمله نشته چې يوازې په هغه !!{structure}~$\Struct M$ کښې رښتونې
+وي چې~$\Domain M = \Nat$ وي۔ ``ساحه يوازې طبيعي عددونه لري'' نۀ شو
+بيانولے۔ خو ښايي د !!{structure}s ځينې ``جوړښتي خاصيتونه'' بيانولے
+شو۔ د !!{structure}s کوم خاصيتونه په !!{sentence}s بيانولے شو؟ يا
+په بله وينا، د !!{structure}s کومې ټولګې د هغو جوړښتونو په توګه
+بيانولے شو چې يوه !!a{sentence} (يا د !!{sentence}s يو سټ) رښتونې
+کوي؟
+\end{explain}
+
+\begin{defn}[د يوه سټ مدل]
+فرض کړئ~$\Gamma$ په ژبه~$\Lang L$ کښې د !!{sentence}s يو سټ دے۔
+وايو چې !!a{structure}~$\Struct M$ د~$\Gamma$ \emph{مدل دے}، که د
+هر~$!A \in \Gamma$ دپاره $\Sat{M}{!A}$ وي۔
+\end{defn}
+
+\begin{ex}
+جمله~$\lforall[x][x \le x]$ په~$\Struct M$ کښې هله او يوازې هله
+رښتونې ده چې~$\Assign{\le}{M}$ انعکاسي اړيکه وي۔ جمله
+$\lforall[x][\lforall[y][((x \le y \land y \le x) \lif x = y)]]$
+په~$\Struct M$ کښې هله او يوازې هله رښتونې ده چې
+$\Assign{\le}{M}$ ضد متناظره وي۔ جمله
+$\lforall[x][\lforall[y][\lforall[z][((x \le y \land y \le z)
+      \lif x \le z)]]]$ په~$\Struct M$ کښې هله او يوازې هله رښتونې
+ده چې~$\Assign{\le}{M}$ انتقالي وي۔ نو د لاندې سټ مدلونه
+\begin{align*}
+\{\quad &\lforall[x][x \le x], \\
+   & \lforall[x][\lforall[y][((x \le y \land y \le
+    x) \lif x = y)]], \\
+   &\lforall[x][\lforall[y][\lforall[z][((x \le y
+      \land y \le z) \lif x \le z)]]] \quad \}
+\end{align*}
+کټ مټ هغه جوړښتونه دي چې~$\Assign{\le}{M}$ پکښې انعکاسي، ضد
+متناظره او انتقالي، يعنې جزوي ترتيب وي۔ له همدې امله، دا د
+\emph{جزوي ترتيبونو د لومړۍ درجې تيورۍ} د بديهي اصولو په توګه
+اخستلے شو۔
+\end{ex}
+
+\end{document}

@@ -983,3 +983,48 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: removes the dangling first equals sign so the term-value calculation has one equality at each step.
 - Disclosure: `remove-duplicated-equals-plus-adjacent-note`.
 
+## OLFOL-025
+
+- Unit: `OLP-0171`
+- Frozen source: `content/first-order-logic/models-theories/expressing-relations.tex` (37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b) at `content/first-order-logic/models-theories/expressing-relations.tex:62-65`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex:67`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES`
+- Treatment: restores the object-language styling macro on v_2 in the second formula defining the arithmetic less-than relation.
+- Disclosure: `restore-object-language-style-plus-adjacent-note`.
+
+## OLFOL-026
+
+- Unit: `OLP-0172`
+- Frozen source: `content/first-order-logic/models-theories/set-theory.tex` (e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf) at `content/first-order-logic/models-theories/set-theory.tex:120-127`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:126`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES`
+- Treatment: moves the closing scope delimiters for the universal conditions defining a function so that each conditional consequent lies within its quantifier.
+- Disclosure: `move-scope-delimiters-plus-adjacent-note`.
+
+## OLFOL-027
+
+- Unit: `OLP-0172`
+- Frozen source: `content/first-order-logic/models-theories/set-theory.tex` (e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf) at `content/first-order-logic/models-theories/set-theory.tex:133-138`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:147`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES`
+- Treatment: moves both universal scope delimiters to the end of the complete injectivity conditional.
+- Disclosure: `move-scope-delimiters-plus-adjacent-note`.
+
+## OLFOL-028
+
+- Unit: `OLP-0173`
+- Frozen source: `content/first-order-logic/models-theories/size-of-structures.tex` (8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934) at `content/first-order-logic/models-theories/size-of-structures.tex:23-32`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:37`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES`
+- Treatment: moves the existential scope delimiters for x_1 through x_n after the pairwise-distinctness matrix.
+- Disclosure: `move-scope-delimiters-plus-adjacent-note`.
+
+## OLFOL-029
+
+- Unit: `OLP-0173`
+- Frozen source: `content/first-order-logic/models-theories/size-of-structures.tex` (8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934) at `content/first-order-logic/models-theories/size-of-structures.tex:41-51`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:58`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES`
+- Treatment: places the distinctness and exhaustion matrix inside the existential scopes and restores the closing order of the final universal matrix.
+- Disclosure: `repair-scope-delimiters-and-parentheses-plus-adjacent-note`.
+

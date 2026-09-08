@@ -108,8 +108,8 @@ for uid,consult in plan['units'].items():
    alignment.append(rec)
    if changed:
     use.append(dict(segment_id=sid,source_sha256=H(src),target_sha256=H(dst),batch_id=consult.get('batch_id',plan['batch_id']),consulted_passages=[{'passage_id':pid,'source_sha256':passages[pid]['source_sha256'],'page_image_sha256':passages[pid]['page_image_sha256']} for pid in consult['passages']],consultation_scope=consult['scope'],terms=consult['terms'],limitation='Prose/grammar evidence applies across the paragraph; technical attestation is limited to the cited witness roles. Canon never overrides source mathematics.'))
-out=OUTPUT/'ALIGNMENT.jsonl';out.write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in alignment),encoding='utf-8')
-(OUTPUT/'SEGMENT_CANON_USE.jsonl').write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in use),encoding='utf-8')
+out=OUTPUT/'ALIGNMENT.jsonl';out.write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in alignment),encoding='utf-8',newline='\r\n')
+(OUTPUT/'SEGMENT_CANON_USE.jsonl').write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in use),encoding='utf-8',newline='\r\n')
 report=dict(schema='ps-openlogic-qa/1',status='in-progress',source_hashes='722 raw units verified',translation_coverage={'total':722,'draft_units':len(results),'structural_pass':sum(all(x['checks'].values()) for x in results),'visually_accepted':0,'published':0},publication_coverage={'reader_units':0,'source_snapshot_units':0,'published_definition':'published counts units in an accepted public reader; source_snapshot_units separately counts structurally verified drafts included in the public source archive'},canon_sources=4,canon_passages=len(passages),batch=plan['batch_id'],units=results,semantic_review=plan['semantic_review'],builds=[],publication_verified=False)
 report['canon_sources']=len((STATE/'CANON_SOURCES.jsonl').read_text(encoding='utf-8').splitlines())
 accepted_path=STATE/'ACCEPTED_BUILDS.json'
@@ -130,5 +130,5 @@ if pubpath.exists():
  report['publication_coverage']['reader_units']=report['translation_coverage']['published']
  report['publication_coverage']['source_snapshot_units']=len(public_source_ids)
  report['publication_verified']=pub.get('verified',False)
-(OUTPUT/'QA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(OUTPUT/'QA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\r\n')
 print(json.dumps({'units':len(results),'failures':[r for r in results if not all(r['checks'].values())],'aligned_blocks':len(alignment),'consultation_records':len(use)},ensure_ascii=False,indent=2))

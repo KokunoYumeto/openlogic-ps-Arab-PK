@@ -1,0 +1,124 @@
+% Part: first-order-logic
+% Chapter: models-theories
+% Section: expressing-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{exr}
+
+\olsection{په \article{structure} \printtoken{S}{structure} کښې د
+  اړيکو بيانول}
+
+\begin{explain}
+د !!{formula}s يوه اصلي ګټه دا ده چې په !!a{structure}~$\Struct M$
+کښې د~$\Struct M$ د ژبې~$\Lang L$ د بنسټيزو سمبولونو له مخې
+خاصيتونه او اړيکې بيانوي۔ مطلب مو دا دے: د~$\Struct M$ !!{domain}
+د څيزونو يو سټ دے۔ !!{constant}s، !!{function}s او !!{predicate}s
+په~$\Struct M$ کښې په ترتيب سره د~$\Domain M$ په ځينو څيزونو،
+پر~$\Domain M$ تابعو او پر~$\Domain M$ اړيکو تفسيرېږي۔ مثلاً که
+$\Obj A^2_0$ په~$\Lang L$ کښې وي، نو~$\Struct M$ ورته
+اړيکه~$R = \Assign{{\Obj A^2_0}}{M}$ ګوماري۔ بيا فارمول
+$\Atom{\Obj A^2_0}{\Obj v_1, \Obj v_2}$ همدغه اړيکه په لاندې معنٰی
+\emph{بيانوي}: که يوه متغير-ګومارنه~$s$، $\Obj v_1$ له
+$a \in \Domain{M}$ او~$\Obj v_2$ له~$b \in \Domain M$ سره وتړي، نو
+\[
+Rab \text{\quad هله او يوازې هله چې\quad} \Sat{M}{\Atom{\Obj A^2_0}{\Obj v_1, \Obj v_2}}[s].
+\]
+پام وکړئ چې دلته بايد متغير-ګومارنې شاملې کړو: يوازې دا نۀ شو ويلے
+چې ``$Rab$ هله او يوازې هله چې
+$\Sat{M}{\Atom{\Obj A^2_0}{a, b}}$''، ځکه~$a$ او~$b$ زموږ د ژبې
+سمبولونه نۀ، بلکې د~$\Domain{M}$ !!{element}s دي۔
+
+موږ يوازې اټومي !!{formula}s نۀ لرو، بلکې په منطقي نښلوونکو او
+سورونو ئې يوځاے کولے شو؛ نو لا پېچلي !!{formula}s نورې هغه اړيکې
+تعريفولے شي چې نېغ په نېغه په~$\Struct M$ کښې نۀ دي شاملې۔ موږ دې
+ته ګورو چې دا څنګه کېږي، او په ځانګړي ډول په !!a{structure} کښې کومې
+اړيکې تعريفولے شو۔
+\end{explain}
+
+\begin{defn}
+فرض کړئ~$!A(\Obj v_1,\dots, \Obj v_n)$ د~$\Lang L$ داسې
+!!a{formula} دے چې يوازې~$\Obj v_1$،\dots،~$\Obj v_n$ پکښې ازاد
+راځي، او~$\Struct M$ د~$\Lang L$ يو !!a{structure} دے۔
+$!A(\Obj v_1,\dots, \Obj v_n)$ هله او يوازې هله
+\emph{اړيکه}~$R \subseteq \Domain M^n$ \emph{بيانوي} چې
+\[
+Ra_1\dots a_n \text{\quad هله او يوازې هله چې\quad} \Sat{M}{\Atom{!A}{\Obj
+    v_1,\dots, \Obj v_n}}[s]
+\]
+د هرې داسې متغير-ګومارنې~$s$ دپاره چې
+$s(\Obj v_i) = a_i$ ($i = 1, \dots, n$) وي۔
+\end{defn}
+
+\begin{ex}
+د حساب په معياري مدل~$\Struct N$ کښې !!{formula}
+$\Obj v_1 < \Obj v_2 \lor \eq[\Obj v_1][\Obj v_2]$ پر~$\Nat$ د
+$\le$ اړيکه بيانوي۔ !!{formula}~$\eq[\Obj v_2][\Obj v_1']$ د ناستي
+اړيکه بيانوي؛ يعنې هغه~$R \subseteq \Nat^2$ چې~$Rnm$ هله وي چې~$m$
+د~$n$ ناستے وي۔ فارمول~$\eq[\Obj v_1][\Obj v_2']$ د مخکښ اړيکه
+بيانوي۔ دواړه !!{formula}s
+$\lexists[\Obj v_3][(\eq/[\Obj v_3][\Obj 0] \land
+  \eq[\Obj v_2][(\Obj v_1 + \Obj v_3)])]$ او~$\lexists[\Obj
+  v_3][\eq[(\Obj v_1 + {\Obj v_3}')][\Obj v_2]]$ د~$\Obj <$ اړيکه
+بيانوي۔ د دې معنٰی دا ده چې اړوند سمبول~$<$ په رښتيا د حساب په ژبه
+کښې زائد دے؛ تعريفېدے شي۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-025):} سرچينې د دويم تعريفوونکي
+فارمول له وروستي متغير څخه د څيز-ژبې بڼه غورځولې وه؛ دلته هغه بڼه د
+همدې فارمول له نورو متغيرونو سره يو شان بېرته راوستل شوې ده۔
+\end{ex}
+
+\begin{explain}
+دا مفکوره يوازې په ځانګړو !!{structure}s کښې په زړه پورې نۀ ده،
+بلکې هر کله مهمه ده چې يوه ژبه د يوه يا څو مطلوبو مدلونو د بيانولو
+دپاره کاروو، يعنې تيورۍ څېړو۔ دغه تيورۍ زياتره يوازې څو
+!!{predicate}s د بنسټيزو سمبولونو په توګه لري، خو په هغه ساحه کښې
+چې بيانوي ئې، ډېرې نورې اړيکې مهمې ونډې لري۔ که دغه نورې اړيکې د ژبې
+د بنسټيزو !!{predicate}s د تفسيروونکو اړيکو له مخې په منظمه توګه
+بيانېدے شي، وايو چې هغوئ په ژبه کښې \emph{تعريفولے} شو۔
+\end{explain}
+
+\begin{prob}
+په~$\Lang L_A$ کښې داسې !!{formula}s ومومئ چې لاندې اړيکې تعريف کړي:
+\begin{enumerate}
+\item $n$ د~$i$ او~$j$ تر منځ دے؛
+\item $n$، $m$ په پوره ډول وېشي (يعنې~$m$ د~$n$ مضرب دے)؛
+\item $n$ اول عدد دے (يعنې له~$1$ او~$n$ پرته بل هېڅ عدد~$n$ په پوره
+  ډول نۀ وېشي)۔
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+فرض کړئ فارمول~$!A(\Obj v_1, \Obj v_2)$ په
+!!a{structure}~$\Struct M$ کښې اړيکه~$R \subseteq \Domain M^2$
+بيانوي۔ داسې فارمولونه ومومئ چې لاندې اړيکې بيان کړي:
+\begin{enumerate}
+\item د~$R$ معکوسه اړيکه~$R^{-1}$؛
+\item نسبي حاصل‌ضرب~$R \mid R$؛
+\end{enumerate}
+ايا د~$R$ د انتقالي بندښت~$R^+$ د بيانولو کومه طريقه موندلے شئ؟
+\end{prob}
+
+\begin{prob}
+فرض کړئ~$\Lang{L}$ هغه ژبه ده چې يوازې دوه‌ځاييز اړوند سمبول~$<$
+لري (بل هېڅ !!{constant}s، !!{function}s يا !!{predicate}s نۀ لري---
+البته له~$\eq$ پرته)۔ فرض کړئ~$\Struct{N}$ داسې جوړښت دے چې
+$\Domain{N} = \Nat$، او
+$\Assign{<}{N} = \Setabs{\tuple{n,m}}{n < m}$۔ لاندې ثابت کړئ:
+\begin{enumerate}
+\item $\{ 0 \}$ په~$\Struct{N}$ کښې تعريفېدے شي؛
+\item $\{ 1 \}$ په~$\Struct{N}$ کښې تعريفېدے شي؛
+\item $\{ 2 \}$ په~$\Struct{N}$ کښې تعريفېدے شي؛
+\item د هر~$n \in \Nat$ دپاره سټ~$\{ n \}$ په~$\Struct{N}$ کښې
+  تعريفېدے شي؛
+\item د~$\Domain{N}$ هر متناهي فرعي سټ په~$\Struct{N}$ کښې
+  تعريفېدے شي؛
+\item د~$\Domain{N}$ هر د متناهي متمم لرونکے فرعي سټ په~$\Struct{N}$ کښې
+  تعريفېدے شي (چېرته چې~$X \subseteq \Nat$ هله او يوازې هله
+  د متناهي متمم لرونکے دے چې~$\Nat \setminus X$ متناهي وي)۔
+\end{enumerate}
+\end{prob}
+
+
+\end{document}

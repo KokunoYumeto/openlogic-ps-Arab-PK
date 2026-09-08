@@ -1,7 +1,7 @@
 {
   "schema": "ps-translation-review-workflow/1",
-  "utc": "2026-09-07T15:48:40.145853+00:00",
-  "status": "implemented through OLP-0148; maintained during subsequent drafting",
+  "utc": "2026-09-08T02:23:39.674025+00:00",
+  "status": "implemented through OLP-0173; maintained during subsequent drafting",
   "coordination": {
     "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
     "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
@@ -36,35 +36,35 @@
     "human_review_gate": false
   },
   "coverage": {
-    "draft_units": 148,
+    "draft_units": 173,
     "total_units": 722,
     "terminology_entries": 101,
-    "difficult_entries": 95,
-    "decision_entries": 196,
+    "difficult_entries": 120,
+    "decision_entries": 221,
     "priority_entries": 94,
-    "paired_occurrence_rows": 10315,
-    "legacy_side_rows": 6631
+    "paired_occurrence_rows": 11674,
+    "legacy_side_rows": 8096
   },
   "pagination": {
     "rule": "Never guess page numbers. Populate exact printed/PDF occurrence pages only from an accepted stable reader and verified line-to-page mapping.",
-    "current": "5359 of 10315 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.5.0-proof-systems-completeness; the remaining 4956 occurrences explicitly say pending.",
+    "current": "5359 of 11674 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.5.0-proof-systems-completeness; the remaining 6315 occurrences explicitly say pending.",
     "next": "After each later reader reaches stable verified pagination, derive pages from embedded semantic-segment labels and regenerate and validate every canonical projection before packaging the next release."
   },
   "release_disposition": "The refreshed canonical review surfaces are published in v0.5.0-proof-systems-completeness and remain maintained on the main branch; later worthwhile releases must carry refreshed surfaces without mutating frozen earlier assets.",
   "hashes": {
-    "EXPERT_REVIEW_LOG.jsonl": "5d6a75841b6dd599364b1bad7383e5da6cd7c97b00bf9e638028e328929cb084",
-    "EXPERT_REVIEW_LOG_SUMMARY.json": "32b3aae44f9fafb06ae94797897c425d8623a3c8e9b81b4b67333d9507d27fc2",
-    "TRANSLATION_DECISIONS.json": "4749e37a4a7099b07fe2b3e75a1f35944f0e35d3f5fe0710e5409d74cee832c7",
-    "TRANSLATION_DECISIONS.md": "28c06ad70fa467cf04331438a6e3488a568e260ed0987eb1d44d6e854a554044",
-    "TRANSLATION_DECISIONS_PRIORITY.md": "63a4ba986b0a7675d79e6aeef333c913736b51b5e516458061e1535d1e46e398",
-    "TRANSLATION_DECISION_OCCURRENCES.csv": "29b8eba8714f426fb2260d64add9bf542f1728a7a6b0714439f3bba7115b1c8e",
-    "START_HERE.md": "d0675eac626d8cc8cfd172fa9a655dc4cf7b5d88f13bd7a80dbbcec9fe76a42c",
-    "TRANSLATION_DECISIONS_FULL.md": "36860fa2fea354927b8dde3bb14088157b897677a48eb5673da494f8e0ff4791",
-    "PRIORITY_REVIEW.md": "6d36f68ff3a042f7a30ef1c89d93c203341041f137bf9352e0ae4cb418aaf67d",
-    "DECISION_OCCURRENCES.csv": "b520a04330443e51f0e4245388ad63c2a804d3430a91a9ebbd20dadd7e858f74",
-    "DECISIONS.json": "0c1989d5271b17ed6c8d6e16fc67b64f2ba0dbfc2dbe463783b553adf172552e",
+    "EXPERT_REVIEW_LOG.jsonl": "7e697bd74295ac381c724a183c22c002c770652f1882b720e493b09832caaa5d",
+    "EXPERT_REVIEW_LOG_SUMMARY.json": "59be60e5bf5e48cfb2f440dc08a32222d897018381ab3804b0b3710c0b1ea4f5",
+    "TRANSLATION_DECISIONS.json": "318a0d61046871c930c97dec356c3ef316a415841b4c253dcb3c955f3f0407c2",
+    "TRANSLATION_DECISIONS.md": "970a4b99b6cc8f86d03657c3515cf89a45a5a721a1cb9332c17594ae4b2050fb",
+    "TRANSLATION_DECISIONS_PRIORITY.md": "6bc3c22a16d7bd5e47b50ebbcf50caa0a68ac4b629f90c306674783d008ef66a",
+    "TRANSLATION_DECISION_OCCURRENCES.csv": "41a70c1c1c9a75fe7a6ffb7cc190ec7f8a9d28bfda0ad90acbbd7034ada60338",
+    "START_HERE.md": "fd702b189b70abf4306da8db64ae2b6300ff47264ea86890fbabfa2f8649fd51",
+    "TRANSLATION_DECISIONS_FULL.md": "5dafdc315ec7e8efed769083071ee9ff1a54828ace48890c417f110e9b6762c5",
+    "PRIORITY_REVIEW.md": "6c1e5b6e48986f1b5fffc6998115bfa886f807c2b776e447c2ad377a2c3d2e78",
+    "DECISION_OCCURRENCES.csv": "51e3f2a15662a73b58b9b6705f549dd1c50384183b9fa2a24982d69d817f3c66",
+    "DECISIONS.json": "50d9e75751bc0d8468d9235c5cc35fd61d3c05d8dd99312797162eec38ecb294",
     "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "TRANSLATION_DECISION_QA.json": "28ac11bd5a8c272d34fb7ebd90a98fe236b8fe062400dccc02bf3ff39972cc9d"
+    "TRANSLATION_DECISION_QA.json": "01ac118f9fc41ed34469705a220a830307a66bc570d208b65dc3fe55f5571337"
   },
   "publication": {
     "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.0-proof-systems-completeness",
