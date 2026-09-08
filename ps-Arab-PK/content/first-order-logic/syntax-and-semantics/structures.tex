@@ -1,0 +1,106 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{str}
+
+\olsection{د لومړۍ درجې ژبو \printtoken{P}{structure}}
+
+\begin{explain}
+د لومړۍ درجې ژبې پخپله \emph{بې‌تفسيره} دي: له !!{constant}s،
+!!{function}s او !!{predicate}s سره کومه ځانګړې معنا نۀ وي تړلې۔
+معنا د \article{structure} \emph{!!{structure}} په ټاکلو ورکول کېږي۔
+هغه \emph{د تعريف ساحه} ټاکي؛ يعنې هغه څيزونه چې !!{constant}s ئې
+ټاکي، !!{function}s پرې عمل کوي، او سورونه پرې ګرځي۔ سربېره پر دې،
+دا هم ټاکي چې کوم !!{constant}s کوم څيزونه ټاکي، !!a{function}
+څيزونه څنګه نورو څيزونو ته لېږي، او !!{predicate}s پر کومو څيزونو
+صدق کوي۔ !!^{structure}s په منطق کښې د \emph{معنايي} مفهومونو بنسټ
+دي، لکه لازميت، اعتبار، او د صدق وړتيا۔ په ليکنو کښې ورته په بېلابېل
+ډول «جوړښتونه»، «تفسيرونه» يا «مدلونه» ويل کېږي۔
+\end{explain}
+
+\begin{defn}[!!^{structure}s]
+د لومړۍ درجې منطق د يوې ژبې $\Lang{L}$ دپاره \Article{structure}
+\emph{!!{structure}}~$\Struct M$ له لاندې اجزاوو جوړ دے:
+\begin{enumerate}
+\item \emph{د تعريف ساحه:} يو ناتش سټ، $\Domain M$
+\item \emph{د !!{constant}s تفسير:} د $\Lang{L}$ د هر
+  !!{constant}~$c$ دپاره يو !!a{element} $\Assign{c}{M} \in \Domain M$
+\item \emph{د !!{predicate}s تفسير:} د $\Lang{L}$ د هر $n$-ځايه
+  !!{predicate}~$R$ دپاره (له $\eq$ پرته) يوه $n$-ځايه اړيکه
+  $\Assign{R}{M} \subseteq \Domain{M}^n$
+\item \emph{د !!{function}s تفسير:} د $\Lang{L}$ د هر $n$-ځايه
+  !!{function}~$f$ دپاره يوه $n$-ځايه تابع $\Assign{f}{M}
+  \colon \Domain{M}^n \to \Domain{M}$
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+د حساب د ژبې دپاره !!^a{structure}~$\Struct M$ له يوه سټ؛ د
+$\Domain M$ له يوه غړي $\Assign{\Obj 0}{M}$، چې د
+!!{constant}~$\Obj 0$ تفسير دے؛ له يوې يو ځايه تابع
+$\Assign{\Obj \prime}{M} \colon \Domain{M} \to \Domain M$؛ له دوو
+دوه ځايه تابعو $\Assign{\Obj +}{M}$ او $\Assign{\Obj
+  \times}{M}$، چې دواړه $\Domain M^2 \to \Domain M$ دي؛ او له يوې
+دوه ځايه اړيکې $\Assign{\Obj <}{M} \subseteq \Domain{M}^2$ جوړ دے۔
+
+د داسې جوړښت يوه څرګنده بېلګه دا ده:
+\begin{enumerate}
+\item $\Domain N = \Nat$
+\item $\Assign{\Obj 0}{N} = 0$
+\item د هر $n \in \Nat$ دپاره $\Assign{\Obj \prime}{N}(n) = n + 1$
+\item د هر $n, m \in \Nat$ دپاره $\Assign{\Obj +}{N}(n, m) = n + m$
+\item د هر $n, m \in \Nat$ دپاره $\Assign{\Obj \times}{N}(n, m) = n\cdot m$
+\item $\Assign{\Obj <}{N} = \Setabs{\tuple{n, m}}{n \in \Nat, m \in
+  \Nat, n < m}$
+\end{enumerate}
+د $\Lang L_A$ دپاره په دې ډول تعريف شوے جوړښت~$\Struct N$ د
+\emph{حساب معياري مدل} بلل کېږي، ځکه د~$\Lang L_A$ غير منطقي ثابتونه
+کټ مټ هغسې تفسيروي چې تمه ئې کوئ۔
+
+خو د~$\Lang L_A$ دپاره ډېر نور ممکن !!{structure}s هم شته۔ مثلاً د
+ساحې په توګه د~$\Nat$ پر ځاے د صحيح عددونو سټ~$\Int$ اخيستلے، او د
+$\Obj 0$، $\Obj \prime$، $\Obj +$، $\Obj \times$ او $\Obj <$ تفسيرونه
+ورسره سم تعريفولے شو۔ خو د~$\Lang L_A$ داسې جوړښتونه هم تعريفولے شو
+چې له عددونو سره هېڅ لرې اړيکه هم نۀ لري۔
+\end{ex}
+
+\begin{ex}
+د سټ تيورۍ د ژبې~$\Lang L_Z$ يو جوړښت~$\Struct M$ يوازې يوه ساحه
+او يوه دوه ځايه اړيکه غواړي۔ نو په فني لحاظ مثلاً د خلکو سټ او اړيکه
+«$x$ له $y$ څخه مشر دے» هم د $\Lang L_Z$ دپاره !!a{structure}
+کېدے شي، او هم~$\Nat$ له $n \ge m$ سره د $n, m \in \Nat$ دپاره۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-012):} سرچينه د اړيکې د ځاييز
+والي په عبارت کښې ناسمه نښلوونکې کرښه ږدي؛ دلته مطلب «يوه دوه ځايه
+اړيکه» لوستل شوے دے۔
+
+د $\Lang L_Z$ يو په ځانګړي ډول په زړه پورې !!{structure}، چې د ساحې
+!!{element}s ئې په رښتيا سټونه او د $\Obj \in$ تفسير ئې په رښتيا
+اړيکه «$x$ د~$y$ !!a{element} دے» وي، د \emph{موروثي متناهي
+سټونو} !!{structure}~$\Struct{{HF}}$ دے:
+\begin{enumerate}
+\item $\Domain{{{HF}}} = \emptyset \cup \Pow{\emptyset} \cup
+  \Pow{\Pow{\emptyset}} \cup \Pow{\Pow{\Pow{\emptyset}}} \cup \dots$؛
+\item $\Assign{\Obj \in}{{{HF}}} = \Setabs{\tuple{x, y}}{x, y \in
+  \Domain{{{HF}}}, x \in y}$۔
+\end{enumerate}
+\end{ex}
+
+\begin{digress}
+دا چې د څه شي د !!a{structure} ګڼلو دپاره کوم شرطونه ږدو، زموږ پر
+منطق اغېز کوي۔ مثلاً د تشو ساحو نۀ منل، د سورو لرونکو جملو د صدق د
+معمول حساب له مخې، دا تضمينوي چې
+$\lexists[x][(!A(x) \lor \lnot !A(x))]$ معتبر دے---يعنې يو منطقي صدق
+دے۔ او دا شرط چې ټول !!{constant}s بايد د ساحې کوم څيز ته اشاره وکړي،
+تضمينوي چې وجودي تعميم د استنتاج يوه سمه بڼه ده:
+$!A(a)$، نو $\lexists[x][!A(x)]$۔ که مو نومونو ته د ساحې بهر يا هېڅ
+څيز ته اشاره کول روا ګڼلي واے، د \emph{ازاد منطق} پر لور به تللي وو؛
+په هغه کښې وجودي تعميم يوه اضافي مقدمې ته اړتيا لري:
+$!A(a)$ او $\lexists[x][\eq[x][a]]$، نو $\lexists[x][!A(x)]$۔
+\end{digress}
+
+\end{document}

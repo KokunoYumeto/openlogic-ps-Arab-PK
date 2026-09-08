@@ -1,0 +1,103 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: main-operator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{mai}
+
+\olsection{د فارمول \printtoken{S}{main operator}}
+
+\begin{explain}
+ډېر ځله د هغه وروستي عملګر په باب خبرې کول ګټور وي چې د
+!!a{formula}~$!A$ په جوړولو کښې کارول شوے وي۔ دا عملګر د~$!A$
+\emph{اصلي عملګر} بلل کېږي۔ په شهودي ډول دا د~$!A$ ``تر ټولو دباندې''
+عملګر دے۔ مثلاً د $\lnot !A$ اصلي عملګر $\lnot$ دے، د $(!A \lor
+!B)$ اصلي عملګر $\lor$ دے، او همداسې نور۔
+\end{explain}
+
+
+\begin{defn}[!!^{main operator}]
+\ollabel{def:main-op}
+د !!a{formula}~$!A$ \emph{!!{main operator}} په لاندې ډول تعريفېږي:
+\begin{enumerate}
+\item \indcase*{!A}{!A}{$\indfrm$ هېڅ !!{main operator} نۀ لري۔}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{د $\indfrm$ !!{main operator}
+  سمبول~$\lnot$ دے۔}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{د $\indfrm$
+  !!{main operator} سمبول~$\land$ دے۔}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{د $\indfrm$
+  !!{main operator} سمبول~$\lor$ دے۔}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{د $\indfrm$
+  !!{main operator} سمبول~$\lif$ دے۔}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{د $\indfrm$
+  !!{main operator} سمبول~$\liff$ دے۔}}{}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{د $\indfrm$
+  !!{main operator} سمبول~$\lforall$ دے۔}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{د $\indfrm$
+  !!{main operator} سمبول~$\lexists$ دے۔}}{}
+\end{enumerate}
+\end{defn}
+
+په هر حالت کښې زموږ موخه په فارمول کښې د !!{main operator} همدا ښودل
+شوے ځانګړے \emph{مورد} دے۔ مثلاً فارمول $((!D \lif !E) \lif (!E
+\lif !D))$ د $(!B \lif !C)$ بڼه لري، چې $!B$ پکښې $(!D \lif !E)$
+او $!C$ پکښې $(!E \lif !D)$ دے؛ نو د $\lif$ دويم مورد ئې
+!!{main operator} دے۔
+
+\begin{explain}
+دا د هغې تابع يو \emph{بازګشتي} تعريف دے چې غير اټومي
+!!{formula}s د هغو د !!{main operator} موردونو ته لېږي۔ څرنګه چې
+!!{formula}s په استقرايي ډول تعريف شوي دي، هر !!{formula}~$!A$ په
+\olref{def:main-op} کښې له ورکړل شوو حالتونو څخه يو پوره کوي۔ دا
+تضمينوي چې د هر غير اټومي !!{formula}~$!A$ دپاره !!a{main
+  operator} موجود دے۔ څرنګه چې هر !!{formula} له دغو شرطونو څخه
+يوازې يو پوره کوي، او په هر حالت کښې هغه کوچني !!{formula}s په
+يوازيني ډول ټاکل شوي دي چې $!A$ ترې جوړ شوے، د~$!A$ د !!{main
+  operator} مورد هم يوازينے دے؛ نو په رښتيا مو يوه تابع تعريف کړې ده۔
+\end{explain}
+
+موږ !!{formula}s په
+\olref{tab:main-op} کښې د هغو د !!{main operator} د سمبول له مخې په
+ورکړل شوو نومونو يادوو۔
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+{ خو په ياد ولرئ چې تعريف شوي عملګرونه په رسمي ډول په !!{formula}s
+کښې نۀ راځي۔ هغوئ يوازې لنډونونه دي، نو په رسمي ډول د يوه فارمول
+اصلي عملګر نۀ شي کېدے۔ ځکه د ټولو !!{formula}s په باب ثبوتونو کښې
+جلا چلند ورسره پکار نۀ دے۔}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c | c | c}
+!!^{main operator} & د !!{formula} ډول & بېلګه\\
+\hline
+هېڅ & اټومي (!!{formula}) &
+\iftag{prvFalse}{$\lfalse$,}{}
+\iftag{prvTrue}{$\ltrue$,}{}
+$\Atom{R}{t_1, \dots, t_n}$,
+$\eq[t_1][t_2]$\\
+$\lnot$ & نفي & $\lnot !A$ \\
+$\land$ & عطف & $(!A \land !B)$ \\
+$\lor$ & فصل & $(!A \lor !B)$ \\
+$\lif$ & !!{conditional} & $(!A \lif !B$) \\
+$\liff$ & !!{biconditional} & $(!A \liff !B)$ \\
+$\lforall[][]$ & عمومي (!!{formula})& $\lforall[x][!A]$ \\
+$\lexists[][]$ & وجودي (!!{formula})& $\lexists[x][!A]$
+\end{tabular}
+\caption{اصلي عملګر او د !!{formula}s نومونه}
+\ollabel{tab:main-op}
+\end{table}
+\textbf{د ژباړې د نسخې سمون (OLFOL-007):} سرچينه د عطف او فصل د
+بېلګو تړونکي قوسونه د رياضي له چاپېريال څخه بهر ږدي؛ دلته دواړه قوسونه
+له خپلو فارمولونو سره يو ځاے شوي دي۔
+
+\end{document}

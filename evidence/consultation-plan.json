@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
-  "status": "v0.5.0 remains frozen and verified; OLP-0139–0148 first-order-logic introduction chapter translated and source-reviewed; OLP-0149 is next",
+  "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0149 through OLP-0166 form a complete manually translated and source-reviewed chapter",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -3104,6 +3104,305 @@
         "TERM-LOWENHEIM-SKOLEM"
       ],
       "scope": "The derivability relation, finite derivation condition, soundness and completeness directions, consistent-model formulation, compactness and Löwenheim--Skolem consequences and historical motivation are preserved."
+    },
+    "OLP-0149": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The two chapter drivers retain their division between syntax and semantics and preserve all nine syntax and seven semantics imports in source order."
+    },
+    "OLP-0150": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-STRUCTURAL-INDUCTION"
+      ],
+      "scope": "The object-language/metalinguistic distinction, finite-symbol construction, inductive grammar and unique readability motivation are preserved."
+    },
+    "OLP-0151": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-PREDICATE",
+        "TERM-FUNCTION",
+        "TERM-DOMAIN"
+      ],
+      "scope": "First-order signatures retain variables, constants, function and predicate symbols, exact arities, identity options and the distinction among languages."
+    },
+    "OLP-0152": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-PREDICATE",
+        "TERM-FUNCTION",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "The recursive term and formula clauses retain every arity, atomic case, connective and quantifier; two locally disclosed source defects are repaired without changing the grammar."
+    },
+    "OLP-0153": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-STRUCTURAL-INDUCTION"
+      ],
+      "scope": "Unique readability retains symbol-string parsing, uniqueness of term and formula formation, the role of punctuation and the induction-based proof strategy."
+    },
+    "OLP-0154": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-OPERATOR"
+      ],
+      "scope": "The main operator is identified as the unique outermost connective or quantifier, with atomic formulas treated separately and all example groupings preserved."
+    },
+    "OLP-0155": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "The recursive subformula definition retains reflexive inclusion of the formula itself and the exact immediate-component clauses for every operator."
+    },
+    "OLP-0156": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-RECURSIVE"
+      ],
+      "scope": "Term and formula formation sequences, their converse characterizations and strong-induction proof retain syntactic identity and the correct first-order language scope."
+    },
+    "OLP-0157": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "Free and bound occurrences, scope, open formulas and sentences retain their occurrence-sensitive definitions and all quantified examples."
+    },
+    "OLP-0158": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-SUBSTITUTION",
+        "TERM-FOL-SYNTAX",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "Capture-avoiding substitution retains the recursive clauses for terms and formulas, substitutability conditions, bound-variable blocking and variable-renaming cases."
+    },
+    "OLP-0159": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "The semantics driver preserves all seven imports and their order from structures through semantic notions."
+    },
+    "OLP-0160": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-DOMAIN"
+      ],
+      "scope": "The overview retains the roles of structures, domains, symbol interpretations, variable assignments and recursive satisfaction."
+    },
+    "OLP-0161": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-DOMAIN",
+        "TERM-PREDICATE",
+        "TERM-FUNCTION"
+      ],
+      "scope": "Structures retain a nonempty domain and arity-respecting interpretations of constants, functions and predicates; worked examples preserve every assigned object, function and relation."
+    },
+    "OLP-0162": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-FUNCTION",
+        "TERM-DOMAIN",
+        "TERM-FUNCTION-EXTENSIONALITY"
+      ],
+      "scope": "Covered structures and recursive term values retain constants, variables and k-ary function application; the example calculation removes only one duplicated equality sign."
+    },
+    "OLP-0163": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P91-PROP-FUNCTION",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-PREDICATE",
+        "TERM-QUANTIFIER-RULES"
+      ],
+      "scope": "Recursive satisfaction retains atomic equality and relation clauses, Boolean cases, assignment modification for quantifiers and both directions of the worked existential and universal examples."
+    },
+    "OLP-0164": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-FOL-SEMANTICS",
+        "TERM-SUBSTITUTION",
+        "TERM-STRUCTURAL-INDUCTION"
+      ],
+      "scope": "Agreement of assignments on variables, dependence of term values and satisfaction on free variables, sentence invariance and satisfaction of sets are preserved through structural induction."
+    },
+    "OLP-0165": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FUNCTION-EXTENSIONALITY",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-VARIABLE-ASSIGNMENT"
+      ],
+      "scope": "Term-value and satisfaction extensionality retain agreement hypotheses, recursive induction cases and the quantified assignment argument; only the duplicated equality is removed."
+    },
+    "OLP-0166": {
+      "batch_id": "PS-B038-FOL-SYNTAX-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-FOL-SEMANTICS",
+        "TERM-MODEL-THEORY",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "Truth in a structure, validity, semantic consequence, satisfiability, equivalence and model terminology retain their model and assignment quantifiers and polarity."
     }
   },
   "semantic_review": [
@@ -4882,6 +5181,114 @@
       "passage": "consistency and model existence",
       "reverse_paraphrase": "A set deriving a contradiction is inconsistent and has no model; completeness yields the converse that every consistent set has a model.",
       "finding": "The syntactic/semantic distinction, contradiction formula and equivalent completeness formulation are preserved."
+    },
+    {
+      "unit_id": "OLP-0149",
+      "passage": "syntax and semantics chapter drivers",
+      "reverse_paraphrase": "The syntax driver imports language, grammar, readability, operator, subformula, formation-sequence, free-variable and substitution sections; the semantics driver imports structures, term values, satisfaction, assignments, extensionality and semantic notions.",
+      "finding": "Both drivers preserve every import exactly once and in source order."
+    },
+    {
+      "unit_id": "OLP-0150",
+      "passage": "formal-language syntax",
+      "reverse_paraphrase": "First-order expressions are finite symbol strings governed by inductive formation rules; their semantics is supplied only after the language and formulas are fixed.",
+      "finding": "The object-language and metalanguage distinction and the reason for unique readability remain explicit."
+    },
+    {
+      "unit_id": "OLP-0151",
+      "passage": "first-order languages",
+      "reverse_paraphrase": "A language supplies variables plus zero-or-more constants and positive-arity function and predicate symbols; identity may be logical, nonlogical or absent according to the stated convention.",
+      "finding": "Symbol classes, arities and all sample signatures remain distinct; no semantic interpretation is smuggled into the syntax."
+    },
+    {
+      "unit_id": "OLP-0152",
+      "passage": "terms and formulas",
+      "reverse_paraphrase": "Terms begin with variables and constants and close under k-place functions; atomic formulas apply predicates to matching terms or use identity, and compound formulas close under the listed connectives and quantifiers.",
+      "finding": "Every recursive case and abbreviation is retained. OLFOL-005 and OLFOL-006 repair only the unmatched parenthesis and missing object-language styling."
+    },
+    {
+      "unit_id": "OLP-0153",
+      "passage": "unique readability",
+      "reverse_paraphrase": "Every term and formula has a unique construction tree, so its outer formation case and immediate components can be recovered unambiguously from its symbol string.",
+      "finding": "The symbol-shape and parenthesis arguments remain intact; OLFOL-014 discloses the source spelling typo without changing the theorem."
+    },
+    {
+      "unit_id": "OLP-0154",
+      "passage": "main operator",
+      "reverse_paraphrase": "A nonatomic formula has one outermost connective or quantifier; removing that operator exposes its immediate component formula or formulas.",
+      "finding": "Every connective and quantifier example retains its grouping. OLFOL-007 moves two closing parentheses inside math mode only."
+    },
+    {
+      "unit_id": "OLP-0155",
+      "passage": "subformulas",
+      "reverse_paraphrase": "A formula is its own subformula, and the subformulas of a compound formula are obtained recursively from its immediate components.",
+      "finding": "Reflexivity, recursive closure and proper-subformula usage retain their exact direction."
+    },
+    {
+      "unit_id": "OLP-0156",
+      "passage": "formation sequences and induction",
+      "reverse_paraphrase": "A term or formula is well formed exactly when it is the final entry of a finite sequence whose earlier entries license each construction step; proofs may proceed by strong induction on that final index.",
+      "finding": "The converse proof keeps syntactic identity and language L. OLFOL-008 through OLFOL-011 disclose the arity, identity, copied-subscript and off-by-one repairs."
+    },
+    {
+      "unit_id": "OLP-0157",
+      "passage": "free variables and sentences",
+      "reverse_paraphrase": "An occurrence is bound only within the scope of a matching quantifier; free-variable sets are computed recursively, and formulas with no free variables are sentences.",
+      "finding": "Occurrence-level binding, scope and all open/closed examples retain their source polarity."
+    },
+    {
+      "unit_id": "OLP-0158",
+      "passage": "capture-avoiding substitution",
+      "reverse_paraphrase": "Substitution recursively replaces free occurrences while stopping under a matching binder and requiring that inserted terms not become captured by another quantifier.",
+      "finding": "All term and formula clauses, substitutability restrictions and renaming examples preserve binder scope."
+    },
+    {
+      "unit_id": "OLP-0159",
+      "passage": "semantics driver coverage",
+      "reverse_paraphrase": "The semantics half proceeds from structures and covered structures to satisfaction, assignment invariance, extensionality and global semantic notions.",
+      "finding": "All seven source imports are present exactly once and in order."
+    },
+    {
+      "unit_id": "OLP-0160",
+      "passage": "semantic interpretation overview",
+      "reverse_paraphrase": "A structure fixes a nonempty domain and interpretations for nonvariable symbols, while an assignment supplies values for variables; recursive satisfaction then evaluates formulas.",
+      "finding": "The distinct jobs of structure and assignment are explicit and no proof-system notion is substituted for satisfaction."
+    },
+    {
+      "unit_id": "OLP-0161",
+      "passage": "structures",
+      "reverse_paraphrase": "Constants denote domain elements, k-place functions map k-tuples to the domain, and k-place predicates denote k-ary relations over the domain.",
+      "finding": "All arity and domain/codomain restrictions and worked interpretations are retained. OLFOL-012 repairs only malformed English hyphenation."
+    },
+    {
+      "unit_id": "OLP-0162",
+      "passage": "covered structures and term values",
+      "reverse_paraphrase": "A structure together with an assignment gives every term a value recursively: variables use the assignment, constants use the structure and compound terms apply interpreted functions.",
+      "finding": "The recursion and example values remain exact; OLFOL-013 removes one dangling equals sign from the calculation."
+    },
+    {
+      "unit_id": "OLP-0163",
+      "passage": "recursive satisfaction",
+      "reverse_paraphrase": "Atomic formulas are satisfied by equality of term values or tuple membership in an interpreted relation; connectives follow their truth conditions, and quantifiers range over assignment modifications by domain elements.",
+      "finding": "Both directions and all worked witnesses are retained. OLFOL-015 through OLFOL-020 repair six independently traced omissions or malformed expressions and disclose them together beside the examples."
+    },
+    {
+      "unit_id": "OLP-0164",
+      "passage": "assignment dependence",
+      "reverse_paraphrase": "Term values depend only on variables occurring in the term, formula satisfaction depends only on free variables, and sentence truth is independent of assignments; a structure satisfies a sentence set memberwise.",
+      "finding": "Both induction arguments and quantifier cases retain their hypotheses. OLFOL-021 through OLFOL-023 repair the tuple index, modified-assignment bases and duplicated Gamma."
+    },
+    {
+      "unit_id": "OLP-0165",
+      "passage": "extensionality of evaluation and satisfaction",
+      "reverse_paraphrase": "Structures agreeing on the symbols used by a term or formula give the same term value and satisfaction result under the same assignment, proved recursively.",
+      "finding": "Every agreement hypothesis and recursive case is preserved; OLFOL-024 removes only a duplicated equals sign."
+    },
+    {
+      "unit_id": "OLP-0166",
+      "passage": "semantic notions",
+      "reverse_paraphrase": "A sentence is true in a structure when it is satisfied; validity quantifies over all structures, consequence over all models of the premises, satisfiability over at least one structure, and equivalence requires matching satisfaction.",
+      "finding": "Universal and existential model quantifiers, premise-set scope, truth/falsity polarity and model terminology all remain distinct."
     }
   ]
 }

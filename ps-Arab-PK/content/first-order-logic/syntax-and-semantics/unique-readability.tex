@@ -1,0 +1,202 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: unique-readability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{unq}
+
+\olsection{يوازينے لوست}
+
+\begin{explain}
+موږ چې !!{formula}s په کومه طريقه تعريف کړي دي، هغه دا تضمينوي چې هر
+!!{formula} يو \emph{يوازينے لوست} لري؛ يعنې د !!{formula}s د جوړولو
+زموږ د قاعدو له مخې ئې د جوړولو په اصل کښې يوازې يوه طريقه شته، او د
+``تفسيرولو'' ئې هم يوازې يوه طريقه شته۔ که داسې نۀ واے، مبهم
+!!{formula}s به مو لرل؛ يعنې داسې !!{formula}s چې له يوه څخه زيات
+لوستونه يا تفسيرونه لري---او څرګنده ده چې موږ ترې ډډه کول غواړو۔ خو
+تر دې مهمه دا ده چې له دې خاصيت پرته به زموږ ډېری راتلونکي تعريفونه
+او ثبوتونه کار ورنۀ کړي۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-014):} سرچينه په همدې جمله کښې
+د «تفسير» د انګريزي کلمې املا ناسمه ليکي؛ ژباړه ئې سمه معنا راوړي۔
+
+د دې خبرې د روښانولو ښايي غوره لار دا وي چې وګورو، که د !!{formula}s
+د جوړولو داسې ناسمې قاعدې مو ورکړې واے چې يوازينے لوست نۀ تضمينوي،
+څه به پېښ شوي وو۔ مثلاً کېدے شي د نښلوونکو د جوړولو په قاعدو کښې مو
+قوسونه هېر کړي او دا مو روا ګڼلي واے:
+\begin{quote}
+که $!A$ او $!B$ !!{formula}s وي، نو $!A \lif !B$ هم فارمول دے۔
+\end{quote}
+له يوه اټومي فارمول $!D$ څخه په پيلولو به دې قاعدې د $!D \lif !D$
+جوړول را ته روا کړي وو۔ له دې او $!D$ څخه به مو $!D \lif !D \lif
+!D$ ترلاسه کړے و۔ خو دا په دوو طريقو جوړېدے شي:
+\begin{enumerate}
+\item $!D$ د $!A$ په توګه، او $!D \lif !D$ د $!B$ په توګه اخلو۔
+\item $!A$ د $!D \lif !D$ په توګه اخلو، او $!B$ پخپله~$!D$ دے۔
+\end{enumerate}
+په همدې ډول د !!{formula}~$!D \lif !D \lif !D$ د ``لوستلو'' دوه
+طريقې شته۔ دا د $!B \lif !C$ بڼه لري چې $!B$ پکښې $!D$ او $!C$
+پکښې $!D \lif !D$ دے، خو \emph{همدارنګه} د $!B \lif !C$ بڼه لري
+چې $!B$ پکښې $!D \lif !D$ او $!C$ پکښې~$!D$ دے۔
+
+که داسې وشي، زموږ تعريفونه به تل کار نۀ کوي۔ مثلاً کله چې د يوه فارمول
+!!{main operator} تعريفوو، وايو: د $!B \lif !C$ بڼه لرونکي فارمول
+!!{main operator} د~$\lif$ همدا ښودل شوے مورد دے۔ خو که فارمول $!D
+\lif !D \lif !D$ له $!B \lif !C$ سره په پورته يادو شوو دوو بېلو
+طريقو برابرولے شو، نو په يوه حالت کښې د $\lif$ لومړے مورد او په بل
+حالت کښې ئې دويم مورد د !!{main operator} په توګه ترلاسه کوو۔ خو موږ
+غواړو چې !!{main operator} د !!{formula} يوه \emph{تابع} وي؛ يعنې هر
+!!{formula} بايد کټ مټ د !!{main
+  operator} يو مورد ولري۔
+\end{explain}
+
+\begin{lem}
+په !!a{formula}~$!A$ کښې د کيڼو او ښيو قوسونو شمېر سره برابر دے۔
+\end{lem}
+
+\begin{proof}
+دا د $!A$ د جوړېدو پر طريقه په استقرا ثابتوو۔ دې ته دوه څيزونه پکار
+دي: (الف) لومړے بايد ثابته کړو چې ټول اټومي فارمولونه ياد خاصيت لري
+(د استقرا بنسټ)۔ (ب) بيا بايد ثابته کړو چې کله له راکړل شوو فارمولونو
+څخه نوي فارمولونه جوړوو، که زاړه فارمولونه ياد خاصيت ولري، نو نوي ئې
+هم لري۔
+
+$l(!A)$ دې په~$!A$ کښې د کيڼو قوسونو شمېر وي او $r(!A)$ دې د ښيو
+قوسونو شمېر وي؛ $l(t)$ او $r(t)$ دې په همدې ډول په يوه ترم~$t$ کښې
+د کيڼو او ښيو قوسونو شمېرونه وي۔
+
+\begin{prob}
+    ثابته کړئ چې د هر ترم~$t$ دپاره $l(t) = r(t)$۔
+\end{prob}
+
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\indfrm$ $0$ کيڼ او $0$
+    ښي قوسونه لري۔}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\indfrm$ $0$ کيڼ او $0$
+    ښي قوسونه لري۔}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1,\dots,t_n}}{$l(\indfrm) = 1 + l(t_1) +
+  \dots + l(t_n) = 1 + r(t_1) + \dots + r(t_n) = r(\indfrm)$۔ دلته
+  هغه حقيقت کاروو چې د تمرين په توګه پرېښودل شوے دے: د هر ترم~$t$
+  دپاره $l(t) = r(t)$۔}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$l(\indfrm) = l(t_1) + l(t_2) =
+  r(t_1) + r(t_2) = r(\indfrm)$۔}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{د استقرايي فرض له مخې
+    $l(!B) = r(!B)$۔ نو $l(\indfrm) = l(!B) = r(!B) =
+    r(\indfrm)$۔}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{د استقرايي فرض له مخې $l(!B) =
+  r(!B)$ او $l(!C) = r(!C)$۔ نو $l(\indfrm) = 1 + l(!B) + l(!C) =
+  1 + r(!B) + r(!C) = r(\indfrm)$۔}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{د استقرايي فرض له مخې
+    $l(!B) = r(!B)$۔ نو $l(\indfrm) = l(!B) = r(!B) =
+    r(\indfrm)$۔}}{}
+
+% Print case for \lexists if prvEx and not prvAll
+\tagitem{prvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{د استقرايي
+    فرض له مخې $l(!B) = r(!B)$۔ نو $l(\indfrm) = l(!B) = r(!B) =
+    r(\indfrm)$۔}}
+
+% Just say similarly if prvEx and prvAll
+\tagitem{notprvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{په همدې ډول۔}}
+\end{enumerate}
+\end{proof}
+
+\begin{defn}[حقيقي مخکښ]
+د سمبولونو تار $!B$ د سمبولونو د تار~$!A$ \emph{حقيقي مخکښ} دے، که
+له $!B$ سره د سمبولونو د يوه ناتش تار نښلول~$!A$ ترلاسه کړي۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:no-prefix}
+که $!A$ !!a{formula} وي او $!B$ د $!A$ حقيقي مخکښ وي، نو $!B$
+!!a{formula} نۀ دے۔
+\end{lem}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{lem:no-prefix} ثابته کړئ۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:unique-atomic}
+که $!A$ يو اټومي !!{formula} وي، نو له لاندې شرطونو څخه يو، او يوازې
+يو، پوره کوي۔
+\begin{enumerate}
+\tagitem{prvFalse}{$!A \ident \lfalse$۔}{}
+\tagitem{prvTrue}{$!A \ident \ltrue$۔}{}
+\item $!A \ident \Atom{R}{t_1,\dots,t_n}$، چې $R$ يو $n$-ځايه
+  !!{predicate}، $t_1$، \dots، $t_n$ ترمونه، او هر يو $R$،
+  $t_1$، \dots، $t_n$ په يوازيني ډول ټاکل شوي دي۔
+\item $!A \ident \eq[t_1][t_2]$، چې $t_1$ او $t_2$ په يوازيني ډول
+  ټاکل شوي ترمونه دي۔
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{prop:unique-atomic} ثابته کړئ۔ (لارښوونه: د
+ترمونو دپاره د \olref[fol][syn][unq]{lem:no-prefix} يوه بڼه بيان او
+ثابته کړئ۔)
+\end{prob}
+
+\begin{prop}[يوازينے لوست]
+هر !!{formula} له لاندې شرطونو څخه يو، او يوازې يو، پوره کوي۔
+\begin{enumerate}
+\item $!A$ اټومي دے۔
+
+\tagitem{prvNot}{$!A$ د $\lnot !B$ بڼه لري۔}{}
+
+\tagitem{prvAnd}{$!A$ د $(!B \land !C)$ بڼه لري۔}{}
+
+\tagitem{prvOr}{$!A$ د $(!B \lor !C)$ بڼه لري۔}{}
+
+\tagitem{prvIf}{$!A$ د $(!B \lif !C)$ بڼه لري۔}{}
+
+\tagitem{prvIff}{$!A$ د $(!B \liff !C)$ بڼه لري۔}{}
+
+\tagitem{prvAll}{$!A$ د $\lforall[x][!B]$ بڼه لري۔}{}
+
+\tagitem{prvEx}{$!A$ د $\lexists[x][!B]$ بڼه لري۔}{}
+\end{enumerate}
+سربېره پر دې، په هر حالت کښې $!B$، يا $!B$ او $!C$، په يوازيني ډول
+ټاکل شوي دي۔ يعنې مثلاً د $!B$، $!C$ او $!B'$، $!C'$ داسې بېلې جوړې
+نشته چې $!A$ په يو وخت د دواړو بڼه ولري:
+\iftag{prvIf}{$(!B \lif !C)$ او $(!B' \lif !C')$۔}{
+    \iftag{prvOr}{$(!B \lor !C)$ او $(!B' \lor !C')$۔}{
+      \iftag{prvAnd}{$(!B \land !C)$ او $(!B' \land !C')$۔}{}}}
+\end{prop}
+
+\begin{proof}
+د جوړولو قاعدې غواړي چې که !!a{formula} اټومي نۀ وي، بايد په
+پرانيستي قوس~(، \iftag{prvNot}{$\lnot$،}{} يا په يوه سور پيل شي۔ بل
+خوا، هر !!{formula} چې له لاندې سمبولونو څخه په يوه پيلېږي، بايد
+اټومي وي: !!a{predicate}، !!a{function}، !!a{constant}
+\iftag{prvFalse}{، $\lfalse$}{}\iftag{prvTrue}{، $\ltrue$}{}۔
+
+نو په اصل کښې يوازې دا ښودل پکار دي چې که $!A$ د $(!B \ast !C)$
+او هم د $(!B' \mathbin{\ast'} !C')$ بڼه لري، نو $!B \ident !B'$،
+$!C \ident !C'$، او $\ast = {\ast'}$۔
+
+نو فرض کړئ چې هم $!A \ident (!B \ast !C)$ او هم $!A \ident (!B'
+\mathbin{\ast'} !C')$۔ اوس يا $!B \ident !B'$ دے، يا نۀ دے۔ که وي،
+نو څرګنده ده چې $\ast = {\ast'}$ او $!C \ident !C'$، ځکه بيا دا د
+$!A$ هغه فرعي تارونه دي چې له يوه ځايه پيلېږي او يو شان اوږدوالے لري۔
+بل حالت $!B \not\ident !B'$ دے۔ څرنګه چې $!B$ او $!B'$ دواړه د
+$!A$ هغه فرعي تارونه دي چې له يوه ځايه پيلېږي، يو بايد د بل حقيقي
+مخکښ وي۔ خو دا د \olref{lem:no-prefix} له مخې ناشونې ده۔
+\end{proof}
+
+
+\end{document}

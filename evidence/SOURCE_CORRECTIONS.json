@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0148; the complete first-order-logic introduction chapter is structurally drafted; v0.5.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-07T15:46:07.553251+00:00",
+  "status": "adopted through OLP-0166; the complete first-order syntax and semantics chapter is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-07T23:55:11.176975+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -2104,6 +2104,500 @@
           "$\\lforall[\\Objv_0][\\Atom{\\ObjP}{\\Objv_0}]$"
         ]
       }
+    },
+    {
+      "id": "OLFOL-005",
+      "unit_id": "OLP-0152",
+      "classification": "unmatched_closing_parenthesis_in_conditional_abbreviation",
+      "source_path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex:148",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "target_line_1based": 144,
+      "target_sha256": "f09939618e8ef78d1d58abcdcf310813268335faa77975b4093230ace13998f4",
+      "mode": "remove-unmatched-parenthesis-plus-adjacent-note",
+      "translation_change": "removes the unmatched closing parenthesis from the disjunction-based abbreviation of the conditional",
+      "counterexample": "The printed abbreviation has no matching opening parenthesis, so its punctuation is not a well-formed rendering of the stated not-A-or-B formula.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the unmatched closing parenthesis is removed; formula letters, negation and disjunction remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lnot!A\\lor!B)$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\lor!B$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-006",
+      "unit_id": "OLP-0152",
+      "classification": "missing_object_language_style_macro_on_successor_symbol",
+      "source_path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex:167",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "target_line_1based": 168,
+      "target_sha256": "f09939618e8ef78d1d58abcdcf310813268335faa77975b4093230ace13998f4",
+      "mode": "restore-object-language-style-plus-adjacent-note",
+      "translation_change": "restores the object-language styling macro on the successor function symbol",
+      "counterexample": "The example introduces the successor symbol as an object-language function, but the application drops the styling used by every parallel object-language symbol.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the object-language typography macro is restored; arity, subscript and argument are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$f^1_0(t)$"
+        ],
+        "target_only": [
+          "$\\Objf^1_0(t)$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-007",
+      "unit_id": "OLP-0154",
+      "classification": "closing_parentheses_outside_math_in_two_table_rows",
+      "source_path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/main-operator.tex:90-91",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "target_line_1based": 99,
+      "target_sha256": "96e3936c514e51d4e06751376a15f051733170c4da4ac457881b7a06b6f4c3d8",
+      "mode": "move-parentheses-inside-math-plus-adjacent-note",
+      "translation_change": "moves the closing parentheses inside the math spans for the conjunction and disjunction examples",
+      "counterexample": "The source leaves each closing parenthesis outside math mode, splitting a single displayed formula across text and mathematics.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only math-span boundaries around two existing closing parentheses change; operators and operands remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$(!A\\land!B$",
+          "$(!A\\lor!B$"
+        ],
+        "target_only": [
+          "$(!A\\land!B)$",
+          "$(!A\\lor!B)$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-008",
+      "unit_id": "OLP-0156",
+      "classification": "k_ary_term_clause_lists_k_plus_one_arguments",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex:45-46",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_line_1based": 45,
+      "target_sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00",
+      "mode": "repair-argument-indices-plus-adjacent-note",
+      "translation_change": "changes the argument indices from zero-through-k to one-through-k in the k-ary term clause",
+      "counterexample": "Indices 0 through k provide k+1 arguments to a symbol declared k-place; the chapter's recursive term clause uses exactly k arguments.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the lower argument index changes from 0 to 1 in the bound and constructed term.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$m_0,\\dotsc,m_k<i$",
+          "$t_i\\identf(t_{m_0},\\dotsc,t_{m_k})$"
+        ],
+        "target_only": [
+          "$m_1,\\dotsc,m_k<i$",
+          "$t_i\\identf(t_{m_1},\\dotsc,t_{m_k})$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-009",
+      "unit_id": "OLP-0156",
+      "classification": "semantic_equivalence_used_where_syntactic_identity_is_required",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex:200",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_line_1based": 201,
+      "target_sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00",
+      "mode": "replace-relation-symbol-plus-combined-adjacent-note",
+      "translation_change": "replaces semantic equivalence with the chapter's syntactic-identity relation in the conjunction case",
+      "counterexample": "A formation-sequence proof identifies the formula's literal construction and cannot infer only semantic equivalence; all parallel cases use syntactic identity.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the relation symbol changes; the formula letters and conjunction stay fixed.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\equiv(!A_j\\land!A_k)$"
+        ],
+        "target_only": [
+          "$!A\\ident(!A_j\\land!A_k)$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-010",
+      "unit_id": "OLP-0156",
+      "classification": "propositional_language_subscript_copied_into_first_order_proof",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199,206",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_line_1based": 201,
+      "target_sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00",
+      "mode": "restore-language-subscript-plus-combined-adjacent-note",
+      "translation_change": "restores both copied L_0 formula-set subscripts to the first-order language L used by the theorem",
+      "counterexample": "The theorem fixes an arbitrary first-order language L; L_0 belongs to the propositional chapter and is not introduced in this proof.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the two formula-set language subscripts change; membership claims and formula indices remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A_n\\in\\Frm[L_0]$",
+          "$\\Frm[L_0]$"
+        ],
+        "target_only": [
+          "$!A_n\\in\\Frm[L]$",
+          "$\\Frm[L]$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-011",
+      "unit_id": "OLP-0156",
+      "classification": "formation_sequence_length_confused_with_last_index_in_strong_induction",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex:184-185,204-205",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_line_1based": 201,
+      "target_sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00",
+      "mode": "clarify-final-index-plus-combined-adjacent-note",
+      "translation_change": "states that m and n are final indices rather than incorrectly calling them the lengths of zero-indexed formation sequences",
+      "counterexample": "A sequence displayed from A_0 through A_n has n+1 entries, so calling n its length creates an off-by-one premise in the induction step.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "No formula changes; only the prose distinction between final index and sequence length is corrected.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLFOL-012",
+      "unit_id": "OLP-0161",
+      "classification": "hyphen_typo_single_two_place_relation",
+      "source_path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+      "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/structures.tex:77",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex",
+      "target_line_1based": 77,
+      "target_sha256": "4c2fe5af81f94ee5fd1f9f163d0aefe72b75f1790034632ae6c8211dbeadb312",
+      "mode": "read-hyphenation-as-two-place-plus-adjacent-note",
+      "translation_change": "reads the malformed phrase single-two place as single two-place relation",
+      "counterexample": "The worked structure interprets one binary relation symbol; a category called single-two place is not defined.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "No mathematical expression changes; the prose hyphenation is repaired transparently.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLFOL-013",
+      "unit_id": "OLP-0162",
+      "classification": "duplicated_equals_at_display_line_break",
+      "source_path": "content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+      "source_sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/covered-structures.tex:54-56",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+      "target_line_1based": 68,
+      "target_sha256": "86b99795f442fa46df762e8ece995b55bd112738b8b9059ad496be4a4deee7ff",
+      "mode": "remove-duplicated-equals-plus-adjacent-note",
+      "translation_change": "removes the dangling first equals sign so the calculation has one equality at each step",
+      "counterexample": "The line break already begins the next step with an equals sign, so the preceding equals has no right-hand side and duplicates the equality relation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the surplus equals sign is removed from the displayed calculation.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}=\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-014",
+      "unit_id": "OLP-0153",
+      "classification": "spelling_typo_intepretation",
+      "source_path": "content/first-order-logic/syntax-and-semantics/unique-readability.tex",
+      "source_sha256": "6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/unique-readability.tex:19",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex",
+      "target_line_1based": 22,
+      "target_sha256": "cf329742e79fd52aa28b8d4ee59126a0f268b55d6185b05dcfcaa83a426a7a13",
+      "mode": "read-spelling-as-interpretation-plus-adjacent-note",
+      "translation_change": "reads the source misspelling intepretation as interpretation",
+      "counterexample": "The surrounding sentence discusses the intended reading of symbol strings, and no distinct technical term is introduced by the misspelling.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "No formula or technical claim changes; only an English source spelling error is normalized in translation.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLFOL-015",
+      "unit_id": "OLP-0163",
+      "classification": "existential_satisfaction_explanation_omits_matrix_instance",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-176",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "restore-matrix-instance-plus-combined-adjacent-note",
+      "translation_change": "states explicitly that the existential witness m must make B(m) satisfied",
+      "counterexample": "Merely selecting an arbitrary domain element does not establish an existential formula; the recursive satisfaction clause requires a witness satisfying its matrix.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Adds only the missing satisfaction condition for the matrix instance B(m), matching the displayed recursive clause.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$\\Sat{M}{!B(m)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-016",
+      "unit_id": "OLP-0163",
+      "classification": "assignment_parameter_spuriously_applied_to_relation_interpretation",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "remove-spurious-assignment-argument-plus-combined-adjacent-note",
+      "translation_change": "removes the assignment argument from the interpretation of the relation symbol R",
+      "counterexample": "A structure fixes the interpretation of R independently of variable assignments; attaching [s] incorrectly makes that relation interpretation assignment-dependent.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the spurious [s] suffix is removed; the tuple and relation interpretation remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\tuple{1,3}\\notin\\Assign{R}{M}[s]$"
+        ],
+        "target_only": [
+          "$\\tuple{1,3}\\notin\\Assign{R}{M}$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-017",
+      "unit_id": "OLP-0163",
+      "classification": "stray_comma_inside_existential_satisfaction_formula",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-293",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "remove-stray-formula-comma-plus-combined-adjacent-note",
+      "translation_change": "removes a comma accidentally placed inside the existential formula argument",
+      "counterexample": "The comma becomes part of the formula passed to the satisfaction macro even though it is sentence punctuation and has no syntactic role in the object language.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the stray comma is removed from the formula argument; the satisfaction failure, witness formula and assignment stay fixed.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Sat/{M}{\\lexists[x][(R(b,x)\\landR(x,b))],}[s].\\]"
+        ],
+        "target_only": [
+          "\\[\\Sat/{M}{\\lexists[x][(R(b,x)\\landR(x,b))]}[s].\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-018",
+      "unit_id": "OLP-0163",
+      "classification": "assignment_example_omits_variable_name_before_equals",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "restore-variable-before-value-plus-combined-adjacent-note",
+      "translation_change": "restores m before =2 in the witness assignment statement",
+      "counterexample": "An equation beginning with =2 has no left-hand expression and cannot identify the witness value used in the following satisfaction step.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the omitted metalinguistic variable m is restored before the existing equality and numeral.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$=2$"
+        ],
+        "target_only": [
+          "$m=2$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-019",
+      "unit_id": "OLP-0163",
+      "classification": "universal_satisfaction_conclusion_switches_witness_variable",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-351",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "restore-bound-metavariable-plus-combined-adjacent-note",
+      "translation_change": "uses m, the arbitrary domain element fixed in the argument, in the universal conclusion",
+      "counterexample": "The proof fixes m but concludes with an unintroduced n, so the stated instance no longer follows from the preceding arbitrary-element argument.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the mismatched metavariable changes from n to m; domain membership and universal scope remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$n\\in\\DomainM$"
+        ],
+        "target_only": [
+          "$m\\in\\DomainM$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-020",
+      "unit_id": "OLP-0163",
+      "classification": "surplus_parentheses_in_defined_existential_satisfaction_formulas",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-320",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_line_1based": 375,
+      "target_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "mode": "remove-two-surplus-parentheses-plus-combined-adjacent-note",
+      "translation_change": "removes one surplus parenthesis from each of the two formulas used to derive the existential clause via defined quantification",
+      "counterexample": "Each formula has two closing parentheses after a disjunction that was opened only once, so its grouping does not match the displayed existential definition.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the two surplus closing parentheses are removed; negation, universal quantification, disjunction and assignment remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat/{M}{\\lforall[x][\\lnot((R(b,x)\\lorR(x,b))]}[s]$",
+          "$\\Sat{M}{\\lnot\\lforall[x][\\lnot((R(b,x)\\lorR(x,b))]}[s]$"
+        ],
+        "target_only": [
+          "$\\Sat/{M}{\\lforall[x][\\lnot(R(b,x)\\lorR(x,b))]}[s]$",
+          "$\\Sat{M}{\\lnot\\lforall[x][\\lnot(R(b,x)\\lorR(x,b))]}[s]$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-021",
+      "unit_id": "OLP-0164",
+      "classification": "atomic_agreement_conclusion_starts_tuple_at_t_i",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/assignments.tex:82-92",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_line_1based": 107,
+      "target_sha256": "5c851ffe1b46680d6c10f3e9d4a856b85d4694b9a7db0e06836f4e45f62a53fc",
+      "mode": "restore-first-tuple-index-plus-adjacent-note",
+      "translation_change": "starts the concluding k-tuple with t_1 rather than the unrelated t_i",
+      "counterexample": "The atomic formula contains t_1 through t_k and the proof has established agreement for every listed term; starting at t_i drops the first coordinates without binding i.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the first tuple subscript changes from i to 1; all term values, structure and relation membership remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\langle\\Value{t_i}{M}[s_2],\\ldots,\\Value{t_k}{M}[s_2]\\rangle\\in\\Assign{R}{M}$"
+        ],
+        "target_only": [
+          "$\\langle\\Value{t_1}{M}[s_2],\\ldots,\\Value{t_k}{M}[s_2]\\rangle\\in\\Assign{R}{M}$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-022",
+      "unit_id": "OLP-0164",
+      "classification": "modified_assignments_both_use_unindexed_base_assignment",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/assignments.tex:174-182",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_line_1based": 204,
+      "target_sha256": "5c851ffe1b46680d6c10f3e9d4a856b85d4694b9a7db0e06836f4e45f62a53fc",
+      "mode": "restore-distinct-base-assignments-plus-adjacent-note",
+      "translation_change": "defines s_1' from s_1 and s_2' from s_2 rather than defining both from an unindexed s",
+      "counterexample": "The induction compares two assignments s_1 and s_2; an unintroduced common s neither preserves their distinct values nor supports the following agreement claim.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the two base-assignment subscripts are restored; the modified variable and domain element are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$s_1'=\\Subst{s}{m}{x}$",
+          "$s_2'=\\Subst{s}{m}{x}$"
+        ],
+        "target_only": [
+          "$s_1'=\\Subst{s_1}{m}{x}$",
+          "$s_2'=\\Subst{s_2}{m}{x}$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-023",
+      "unit_id": "OLP-0164",
+      "classification": "set_of_sentences_definition_repeats_gamma_as_extra_math_fragment",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/assignments.tex:239-243",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_line_1based": 259,
+      "target_sha256": "5c851ffe1b46680d6c10f3e9d4a856b85d4694b9a7db0e06836f4e45f62a53fc",
+      "mode": "remove-duplicated-gamma-plus-adjacent-note",
+      "translation_change": "removes the second stray occurrence of Gamma from the prose defining satisfaction of a set of sentences",
+      "counterexample": "The sentence already names Gamma as the set under discussion; the repeated standalone symbol interrupts the definition and has no grammatical or mathematical role.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the duplicated inline Gamma fragment is removed; the definition and memberwise satisfaction condition remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma$"
+        ],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLFOL-024",
+      "unit_id": "OLP-0165",
+      "classification": "duplicated_equals_at_display_line_break",
+      "source_path": "content/first-order-logic/syntax-and-semantics/extensionality.tex",
+      "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+      "source_locator": "content/first-order-logic/syntax-and-semantics/extensionality.tex:86-100",
+      "target_path": "ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex",
+      "target_line_1based": 105,
+      "target_sha256": "74d757ce22e362481b0a22bc54b3006c69c56c285fee68734b9b7789ae1ac70a",
+      "mode": "remove-duplicated-equals-plus-adjacent-note",
+      "translation_change": "removes the dangling first equals sign so the term-value calculation has one equality at each step",
+      "counterexample": "The next line already begins with an equals sign; the preceding equals has no right-hand side and duplicates the equality relation in the calculation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
+      "formula_policy": "Only the surplus equals sign is removed from the displayed calculation.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\Value{\\Subst{t}{t'}{x}}{M}[s]=\\\\\\begin{aligned}[b]&=\\Value{\\Atom{f}{\\Subst{t_1}{t'}{x},\\dots,\\Subst{t_n}{t'}{x}}}{M}[s]\\\\&\\qquad\\text{LOCALIZED$\\Subst{t}{t'}{x}$}\\\\&=\\Assign{f}{M}(\\Value{\\Subst{t_1}{t'}{x}}{M}[s],\\dots,\\Value{\\Subst{t_n}{t'}{x}}{M}[s])\\\\&\\qquad\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[s]$}\\\\&=\\Assign{f}{M}(\\Value{t_1}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}],\\dots,\\Value{t_n}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}])\\\\&\\qquad\\text{LOCALIZED}\\\\&=\\Value{t}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]$}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\Value{\\Subst{t}{t'}{x}}{M}[s]\\\\\\begin{aligned}[b]&=\\Value{\\Atom{f}{\\Subst{t_1}{t'}{x},\\dots,\\Subst{t_n}{t'}{x}}}{M}[s]\\\\&\\qquad\\text{LOCALIZED$\\Subst{t}{t'}{x}$}\\\\&=\\Assign{f}{M}(\\Value{\\Subst{t_1}{t'}{x}}{M}[s],\\dots,\\Value{\\Subst{t_n}{t'}{x}}{M}[s])\\\\&\\qquad\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[s]$}\\\\&=\\Assign{f}{M}(\\Value{t_1}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}],\\dots,\\Value{t_n}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}])\\\\&\\qquad\\text{LOCALIZED}\\\\&=\\Value{t}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]$}\\end{aligned}\\end{multline*}"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -2111,7 +2605,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation for OLP-0139–0148, then translate OLP-0149 onward without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0166, then translate the models-and-theories chapter beginning at OLP-0167 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -2142,7 +2636,8 @@
     "PS-OWNER-READER-INTEGRATION-20260906-CONSTRUCTION-IFTAG",
     "PS-OWNER-READER-INTEGRATION-20260906-COMPACTNESS-IFTAG",
     "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-LOGIC-DRIVER",
-    "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION"
+    "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
+    "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS"
   ],
   "source_authorities": [
     {

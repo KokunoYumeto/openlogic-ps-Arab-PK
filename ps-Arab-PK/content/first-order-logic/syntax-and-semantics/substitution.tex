@@ -1,0 +1,130 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sub}
+
+\olsection{ځايناستي}
+
+\begin{defn}[په ترم کښې ځايناستي]
+$\Subst{s}{t}{x}$، يعنې په $s$ کښې د~$x$ د هر مورد پر ځاے د $t$
+د \emph{ځايناستي} پايله، په بازګشتي ډول داسې تعريفوو:
+\begin{enumerate}
+\item \indcase{s}{c}{$\Subst{\indfrm}{t}{x}$ پخپله $s$ دے۔}
+
+\item \indcase{s}{y}{که $y$ يو متغير او $y \not\ident x$ وي، نو
+  $\Subst{\indfrm}{t}{x}$ هم پخپله~$s$ دے۔}
+
+\item \indcase{s}{x}{$\Subst{\indfrm}{t}{x}$ همدا~$t$ دے۔}
+
+\item\indcase{s}{\Atom{f}{t_1, \dots, t_n}}{$\Subst{\indfrmp}{t}{x}$
+  همدا $\Atom{f}{\Subst{t_1}{t}{x}, \dots, \Subst{t_n}{t}{x}}$ دے۔}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+يو ترم~$t$ په $!A$ کښې د $x$ دپاره هله \emph{!!{free for}} دے چې
+په $!A$ کښې د~$x$ هېڅ ازاد مورد د داسې سور په ساحه کښې نۀ راځي چې
+په~$t$ کښې کوم متغير تړي۔
+\end{defn}
+
+\begin{ex} ~
+\begin{enumerate}
+\item $\Obj v_8$ په $\lexists[\Obj
+  v_3]\Atom{\Obj A^2_4}{\Obj v_3,\Obj v_1}$ کښې د $\Obj v_1$ دپاره
+  ازاد دے۔
+
+\item $\Obj f^2_1(\Obj v_1, \Obj v_2)$ په
+  $\lforall[\Obj v_2]\Atom{\Obj A^2_4}{\Obj v_0,\Obj v_2}$ کښې د
+  $\Obj v_0$ دپاره \emph{ازاد نۀ} دے۔
+\end{enumerate}
+\end{ex}
+
+\begin{defn}[په !!a{formula} کښې ځايناستي]
+که $!A$ !!a{formula}، $x$~!!a{variable}، او $t$~داسې ترم وي چې
+په~$!A$ کښې د~$x$ دپاره !!{free for} وي، نو
+$\Subst{!A}{t}{x}$ په~$!A$ کښې د~$x$ د ټولو ازادو موردونو پر ځاے
+د~$t$ د ځايناستي پايله ده۔
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\Subst{\indfrm}{t}{x}$
+    همدا $\lfalse$ دے۔}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\Subst{\indfrm}{t}{x}$
+    همدا $\ltrue$ دے۔}}{}
+
+\item \indcase{!A}{\Atom{P}{t_1,\dots,
+    t_n}}{$\Subst{\indfrm}{t}{x}$ همدا
+    $\Atom{P}{\Subst{t_1}{t}{x},
+    \dots, \Subst{t_n}{t}{x}}$ دے۔}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Subst{\indfrmp}{t}{x}$ همدا
+  $\Subst{t_1}{t}{x} = \Subst{t_2}{t}{x}$ دے۔}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\Subst{\indfrmp}{t}{x}$
+    همدا $\lnot \Subst{!B}{t}{x}$ دے۔}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land
+    !C)}{$\Subst{\indfrmp}{t}{x}$ همدا $(\Subst{!B}{t}{x} \land
+    \Subst{!C}{t}{x})$ دے۔}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor
+    !C)}{$\Subst{\indfrmp}{t}{x}$ همدا $(\Subst{!B}{t}{x} \lor
+    \Subst{!C}{t}{x})$ دے۔}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif
+    !C)}{$\Subst{\indfrmp}{t}{x}$ همدا $(\Subst{!B}{t}{x} \lif
+    \Subst{!C}{t}{x})$ دے۔}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff
+    !C)}{$\Subst{\indfrmp}{t}{x}$ همدا $(\Subst{!B}{t}{x} \liff
+    \Subst{!C}{t}{x})$ دے۔}}{}
+
+\tagitem{prvAll}{
+\indcase{!A}{\lforall[y][!B]}{که $y$ له $x$ څخه بېل متغير وي، نو
+    $\Subst{\indfrmp}{t}{x}$ همدا
+    $\lforall[y][\Subst{!B}{t}{x}]$ دے؛ که نۀ وي، نو
+    $\Subst{\indfrmp}{t}{x}$ پخپله $\indfrm$ دے۔}}{}
+
+\tagitem{prvEx}{
+\indcase{!A}{\lexists[y][!B]}{که $y$ له $x$ څخه بېل متغير وي، نو
+    $\Subst{\indfrmp}{t}{x}$ همدا
+    $\lexists[y][\Subst{!B}{t}{x}]$ دے؛ که نۀ وي، نو
+    $\Subst{\indfrmp}{t}{x}$ پخپله $\indfrm$ دے۔}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+پام وکړئ چې ځايناستي کېدے شي بې‌اغېزې وي: که $x$ په $!A$ کښې هېڅ
+نۀ وي راغلے، نو $\Subst{!A}{t}{x}$ پخپله~$!A$ دے۔
+
+دا محدوديت چې $t$ بايد په~$!A$ کښې د~$x$ دپاره !!{free for} وي، د
+لاندې حالتونو د مخنيوي دپاره اړين دے۔ که $!A \ident
+\lexists[y][x < y]$ او $t \ident y$ وي، نو $\Subst{!A}{t}{x}$ به
+$\lexists[y][y < y]$ شي۔ په دې حالت کښې ازاد متغير $y$ د ځايناستي
+پر مهال د سور $\lexists[y]$ له خوا «راګېرېږي»، او دا ناغوښتې پايله
+ده۔ مثلاً غواړو چې هر کله $\lforall[x][!B]$ صدق کوي،
+$\Subst{!B}{t}{x}$ هم صدق وکړي۔ خو
+$\lforall[x][\lexists[y][x < y]]$ په پام کښې ونيسئ (دلته $!B$ همدا
+$\lexists[y][x < y]$ دے)۔ دا د بېلګې په توګه د طبيعي عددونو په باب
+رښتونې جمله ده: د هر عدد~$x$ دپاره تر هغه لوے يو عدد~$y$ شته۔ که
+مو~$y$ د~$x$ د ممکنې ځايناستۍ په توګه روا ګڼلے واے، پايله به مو
+$\Subst{!B}{y}{x} \ident \lexists[y][y < y]$ وه، چې دروغ ده۔ د دې
+مخنيوے په دې کوو چې په~$t$ کښې هېڅ ازاد متغير بايد په~$!A$ کښې د
+کوم سور له خوا تړلے نۀ شي۔
+\end{explain}
+
+د پېچلې نښې د مخنيوي دپاره ډېر ځله لاندې دود کاروو: که $!A$ داسې
+!!a{formula} وي چې !!{variable}~$x$ پکښې ازاد راتلے شي، د دې د
+ښودلو دپاره~$!A(x)$ هم ليکو۔ چې موخه مو کوم $!A$ او~$x$ دي څرګنده
+وي، او $t$ يو ترم وي (چې فرض کېږي په $!A(x)$ کښې د $x$ دپاره ازاد
+دے)، نو $!A(t)$ د $\Subst{!A}{t}{x}$ لنډون ليکو۔ مثلاً ويلے شو:
+«$!A(t)$ د~$\lforall[x][!A(x)]$ يو مورد بولو۔» له دې څخه موخه دا
+ده چې که $!A$ هر !!{formula}، $x$~!!a{variable}، او $t$~داسې ترم وي
+چې په~$!A$ کښې د~$x$ دپاره ازاد وي، نو $\Subst{!A}{t}{x}$ د
+$\lforall[x][!A]$ يو مورد دے۔
+
+\end{document}

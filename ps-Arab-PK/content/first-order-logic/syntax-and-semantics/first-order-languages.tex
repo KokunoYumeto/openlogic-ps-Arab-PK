@@ -1,0 +1,153 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: first-order-languages
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fol}
+
+\olsection{د لومړۍ درجې ژبې}
+
+
+د لومړۍ درجې د منطق عبارتونه له يوه بنسټيز لغت څخه جوړېږي چې
+\emph{!!{variable}s}، \emph{!!{constant}s}، \emph{!!{predicate}s}
+او کله ناکله \emph{!!{function}s} لري۔ له دغو سمبولونو سره، د منطقي
+نښلوونکو، سورو او د وقف د نښو لکه قوسونو او کامو په کارولو،
+\emph{ترمونه} او \emph{!!{formula}s} جوړېږي۔
+
+\begin{explain}
+په غير رسمي ډول، !!{predicate}s د ځانګړنو او اړيکو نومونه دي،
+!!{constant}s د انفرادي څيزونو نومونه دي، او !!{function}s د نقشو
+نومونه دي۔ دا ټول، له !!{identity}~$\eq$ پرته، \emph{غير منطقي
+سمبولونه} دي او په ګډه يوه ژبه جوړوي۔ هره د لومړۍ درجې ژبه~$\Lang L$
+د خپلو غير منطقي سمبولونو له مخې ټاکل کېږي۔ په تر ټولو عام حالت کښې،
+$\Lang L$ د هر ډول سمبولونه په بې نهايته شمېر لري۔
+\end{explain}
+
+په عام حالت کښې موږ په لومړۍ درجې منطق کښې لاندې سمبولونه کاروو:
+
+\begin{enumerate}
+\item منطقي سمبولونه
+\begin{enumerate}
+\item منطقي نښلوونکي:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{prvAll}{\ycomma $\lforall$ (عمومي سور)}{}%
+  \iftag{prvEx}{\ycomma $\lexists$ (وجودي سور)}{}.
+\tagitem{prvFalse}{د !!{falsity}~$\lfalse$ لپاره بياني ثابت۔}{}
+\tagitem{prvTrue}{د !!{truth}~$\ltrue$ لپاره بياني ثابت۔}{}
+\item دوه ځايه !!{identity}~$\eq$۔
+\item د !!{variable}s يو !!{denumerable}s سټ: $\Obj v_0$، $\Obj v_1$، $\Obj
+  v_2$، \dots
+\end{enumerate}
+\item غير منطقي سمبولونه، چې د لومړۍ درجې منطق \emph{معياري
+  ژبه} جوړوي
+\begin{enumerate}
+\item د هر $n>0$ لپاره د $n$-ځايه !!{predicate}s يو !!{denumerable}s سټ: $\Obj
+  A^n_0$، $\Obj A^n_1$، $\Obj A^n_2$، \dots
+\item د !!{constant}s يو !!{denumerable}s سټ: $\Obj c_0$، $\Obj c_1$، $\Obj
+  c_2$، \dots۔
+\item د هر $n>0$ لپاره د $n$-ځايه !!{function}s يو !!{denumerable}s سټ:
+  $\Obj f^n_0$، $\Obj f^n_1$، $\Obj f^n_2$، \dots
+\end{enumerate}
+\item د وقف نښې: پرانيستے قوس (، تړلے قوس )، او کامه۔
+\end{enumerate}
+
+زموږ ډېری تعريفونه او پايلې به د لومړۍ درجې منطق د بشپړې معياري ژبې
+لپاره بيانېږي۔ خو د کارونې له ډول سره سم ژبه يوازې څو !!{predicate}s،
+!!{constant}s او !!{function}s ته هم محدودولے شو۔
+
+\begin{ex}
+د حساب ژبه~$\Lang L_A$ يو دوه ځايه !!{predicate}~$<$، يو
+!!{constant}~$\Obj 0$، يو يو ځايه !!{function}~$\prime$، او دوه دوه
+ځايه !!{function}s~$+$ او~$\times$ لري۔
+\end{ex}
+
+\begin{ex}
+د سټ تيورۍ ژبه~$\Lang L_Z$ يوازې يو دوه ځايه !!{predicate}~$\in$
+لري۔
+\end{ex}
+
+\begin{ex}
+د ترتيبونو ژبه~$\Lang L_\le$ يوازې يو دوه ځايه !!{predicate}~$\le$
+لري۔
+\end{ex}
+
+دا بيا هم يوازې دودونه دي: په رسمي ډول دا سمبولونه مستعار نومونه دي؛
+د بېلګې په توګه، $<$، $\in$ او $\le$ د $\Obj A^2_0$، $\Obj 0$ د
+$\Obj c_0$، $\prime$ د $\Obj f^1_0$، $+$ د $\Obj f^2_0$، او $\times$ د
+$\Obj f^2_1$ مستعار نومونه دي۔
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+پر هغو بنسټيزو نښلوونکو او
+\iftag{notprvEx,notprvAll}{سور}{سورو} سربېره چې پورته معرفي شول، موږ
+لاندې \emph{تعريف شوي} سمبولونه هم کاروو:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defAll}{\ycomma $\lforall$ (عمومي سور)}{}%
+  \iftag{defEx}{\ycomma $\lexists$ (وجودي سور)}{}%
+  \iftag{defFalse}{\ycomma !!{falsity}~$\lfalse$}{}%
+  \iftag{defTrue}{\ycomma !!{truth}~$\ltrue$}}{}.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+تعريف شوے سمبول په رسمي ډول د ژبې برخه نۀ وي، بلکې د يوې غير رسمي
+لنډونې په توګه ور پېژندل کېږي: د دې په مرسته هغه فارمولونه لنډولے شو
+چې يوازې د بنسټيزو سمبولونو په کارولو ډېر اوږدېدل۔ دا يوه څرګنده ګټه
+ده۔ تر دې لويه ګټه دا ده چې ثبوتونه لنډېږي۔ که يو سمبول بنسټيز وي، په
+ثبوتونو کښې بايد جلا چلند ورسره وشي۔ نو څومره چې بنسټيز سمبولونه ډېر
+وي، هومره زموږ ثبوتونه اوږدېږي۔
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+کېدے شي تاسو له هغو اصطلاحاتو او سمبولونو سره بلد يئ چې زموږ له پورته
+کارولو سره توپير لري۔ د منطق متنونه، او ښوونکي، عموماً د ``نفي''
+دپاره $\sim$، $\neg$ او~!\، او د ``عطف'' دپاره $\wedge$، $\cdot$ او
+$\&$ کاروي۔ د ``شرطي'' يا ``استلزام'' عام سمبولونه $\rightarrow$،
+$\Rightarrow$ او $\supset$ دي۔
+\iftag{prvIff,defIff}{د ``دوه اړخيز شرطي''، ``دوه اړخيز استلزام'' يا
+  ``(مادي) هم ارزښت'' سمبولونه $\leftrightarrow$،
+  $\Leftrightarrow$ او $\equiv$ دي۔}{}
+\iftag{prvFalse,defFalse}{د $\lfalse$ سمبول ته په بېلو ځايونو کښې
+  ``دروغوالے''، ``فالسوم''، ``محال'' يا ``ښکته'' ويل کېږي۔}{}
+\iftag{prvTrue,defTrue}{د $\ltrue$ سمبول ته په بېلو ځايونو کښې
+  ``رښتياوالے''، ``ويروم'' يا ``پورته'' ويل کېږي۔}{}
+
+دود دا دے چې د لاتيني الفبا د پيل واړه توري (لکه $a$، $b$، $c$) د
+!!{constant}s لپاره (چې کله ناکله نومونه بلل کېږي)، او د الفبا د پای
+واړه توري (لکه $x$، $y$، $z$) د !!{variable}s لپاره وکارول شي۔ سورونه
+له !!{variable}s سره يوځای راځي، لکه $x$؛ د ليکدود په بديلونو کښې د
+عمومي سور لپاره $\forall x$، $(\forall x)$، $(x)$، $\Pi x$،
+$\bigwedge_x$، او د وجودي سور لپاره $\exists x$، $(\exists
+x)$، $(Ex)$، $\Sigma x$، $\bigvee_x$ شامل دي۔
+\end{intro}
+
+\begin{explain}
+موږ ټول بياني عملګرونه او دواړه سورونه د ژبې بنسټيز سمبولونه ګڼلے شو۔
+يا د بنسټيزو سمبولونو يوه کوچنۍ ټولګه غوره کولے او نور !!{operator}s
+تعريف شوي ګڼلے شو۔ د بوليني عملګرونو په هغو ټولګو کښې چې ``د رښتياوالي
+د تابع له مخې بشپړې'' دي، $\{ \lnot, \lor \}$، $\{ \lnot, \land \}$
+او $\{ \lnot, \lif\}$ شامل دي---په بياني ځواک کښې د بشپړې لومړۍ
+درجې ژبې دپاره له دې هره ټولګه له هر يوه سور سره يوځای کېدے شي۔
+
+کېدے شي تاسو له دوو نورو !!{operator}s سره هم اشنا يئ: د شېفر
+کرښه~$|$ (چې د هنري شېفر په نوم نومول شوې ده)، او د پيرس
+غشی~$\downarrow$، چې د کواین خنجر هم بلل کېږي۔ کله چې دې عملګرونو ته په
+ترتيب سره د ``نېنډ'' او ``نور'' معمولې لوستنې ورکړل شي، هر يو ئې په
+يوازې ځان د رښتياوالي د تابع له مخې بشپړ وي۔
+\end{explain}
+
+\end{document}

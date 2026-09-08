@@ -1,0 +1,268 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fseq}
+
+\olsection{جوړښتي لړۍ}
+
+په استقرايي تعريف سره د !!{formula}s تعريفول، او د استقرا له لارې د
+!!{formula}s د خاصيتونو د ثابتولو بشپړوونکې طريقه، ښکلې او اغېزمنه لار
+ده۔ خو کله کله دا هم ګټوره وي چې د !!{formula}s جوړول له بېخه پورته،
+ګام په ګام وڅېړو۔ دلته د \emph{جوړښتي لړۍ} په مفهوم همدا کار کوو۔
+%
+د دې د ښودلو دپاره چې ترمونه او !!{formula}s څنګه له خپلو استقرايي
+تعريفونو پرته په دې طريقه معرفي کېدے شي، لومړے د يوې ژبې~$\Lang L$
+له سمبولونو څخه د جوړ شوي خپل سري تار مفهوم معرفي کوو۔
+
+\begin{defn}[تارونه]
+\ollabel{defn:string}
+فرض کړئ $\Lang L$ د لومړۍ درجې يوه ژبه ده۔ \emph{د~$\Lang L$ تار}
+د~$\Lang L$ د سمبولونو يوه متناهي لړۍ ده۔ چې ژبه~$\Lang L$ له
+چاپېريال څخه په څرګند ډول ټاکلې وي، د~$\Lang L$ تار ته به ډېر ځله
+يوازې \emph{تار} وايو۔
+\end{defn}
+
+\begin{ex}
+د لومړۍ درجې د هرې ژبې $\Lang L$ دپاره ټول
+$\Lang L$-!!{formula}s د~$\Lang L$ تارونه دي، خو عکس ئې سم نۀ دے۔
+مثلاً \[)(\Obj v_0\lif\lexists\] د~$\Lang L$ يو تار دے، خو د~$\Lang L$
+!!{formula} نۀ دے۔
+\end{ex}
+
+\begin{defn}[د ترمونو جوړښتي لړۍ]
+\ollabel{defn:fseq-trm}
+د~$\Lang L$ د تارونو متناهي لړۍ $\tuple{t_0,\dotsc,t_n}$ د يوه
+ترم $t$ \emph{جوړښتي لړۍ} ده، که $t \ident t_n$ وي او د هر $i \leq
+n$ دپاره يا $t_i$ !!a{variable} يا !!a{constant} وي، او يا~$\Lang L$
+يو $k$-ځايه !!{function}~$f$ ولري او داسې $m_1,\dotsc,m_k < i$
+موجود وي چې $t_i \ident f(t_{m_1},\dotsc,t_{m_k})$۔ چې توپير ئې اړين
+وي، د ترمونو جوړښتي لړۍ به \emph{د ترم جوړښتي لړۍ} بولو۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-008):} سرچينه د ټاکلي ځاييز والي
+په پرتله په تېروتنه يو زيات شاخص او يو زيات مدخل شمېري؛ دلته دواړه
+لړونه د تابع له ټاکلي ځاييز والي سره برابر شوي دي۔
+\end{defn}
+
+\begin{ex}
+لړۍ
+\[
+    \tuple{\Obj c_0, \Obj v_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}
+\]
+د ترم $\Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}$
+يوه جوړښتي لړۍ ده، او دا هم ده:
+\[
+    \tuple{\Obj v_0, \Obj c_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}.
+\]
+\end{ex}
+
+\begin{defn}[د فارمولونو جوړښتي لړۍ]
+\ollabel{defn:fseq-frm}
+د~$\Lang L$ د تارونو متناهي لړۍ $\tuple{!A_0,\dotsc,!A_n}$ د~$!A$
+\emph{جوړښتي لړۍ} ده، که $!A \ident !A_n$ وي او د هر $i \leq n$
+دپاره يا $!A_i$ يو اټومي !!{formula} وي، يا داسې $j,k < i$ او
+!!a{variable}~$x$ موجود وي چې له لاندې حالتونو څخه يو صدق وکړي:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$۔}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$۔}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$۔}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$۔}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$۔}{}%
+    \tagitem{prvAll}{$!A_i \ident \lforall[x][!A_j]$۔}{}%
+    \tagitem{prvEx}{$!A_i \ident \lexists[x][!A_j]$۔}{}%
+\end{enumerate}
+چې توپير ئې اړين وي، د فارمولونو جوړښتي لړۍ به \emph{د فارمول
+جوړښتي لړۍ} بولو۔
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}
+\]
+د $\lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj
+A^1_0}{\Obj v_0})]$ يوه جوړښتي لړۍ ده، او دا هم ده:
+\begin{multline*}
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \Atom{\Obj A^1_1}{\Obj c_1},\\
+    \lforall[\Obj v_1][\Atom{\Obj A^1_0}{\Obj v_0}],
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}.
+\end{multline*}
+%
+لکه چې له دويمې بېلګې ښکاري، په جوړښتي لړيو کښې ``بې‌ګټې توکي''
+هم راتلے شي: داسې !!{formula}s چې زياتي وي يا په جوړونه کښې ونډه نۀ
+لري۔
+\end{ex}
+
+\begin{prop}\ollabel{prop:formed}
+په~$\Frm[L]$ کښې هر !!{formula}~$!A$ يوه جوړښتي لړۍ لري۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $!A$ اټومي دے۔ نو لړۍ~$\tuple{!A}$ د~$!A$ جوړښتي لړۍ ده۔
+%
+اوس فرض کړئ چې $!B$ او~$!C$ په ترتيب سره جوړښتي لړۍ
+$\tuple{!B_0,\dotsc,!B_n}$ او $\tuple{!C_0,\dotsc,!C_m}$ لري۔
+%
+\begin{enumerate}
+  \tagitem{prvNot}{که $!A \ident \lnot !B$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvAnd}{که $!A \ident (!B \land !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvOr}{که $!A \ident (!B \lor !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvIf}{که $!A \ident (!B \lif !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvIff}{که $!A \ident (!B \liff !C)$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvAll}{که $!A \ident \lforall[x][!B]$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,\lforall[x][!B_n]}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+  \tagitem{prvEx}{که $!A \ident \lexists[x][!B]$ وي، نو
+      $\tuple{!B_0,\dotsc,!B_n,\lexists[x][!B_n]}$
+      د~$!A$ جوړښتي لړۍ ده۔}{}
+\end{enumerate}
+پر !!{formula}s د استقرا د اصل له مخې، هر !!{formula} يوه جوړښتي لړۍ
+لري۔
+\end{proof}
+
+د دې عکس هم ثابتولے شو۔ دا ځکه مهم دے چې ښيي د فارمولونو د تعريف
+زموږ دواړه لارې هم ارزښته دي: دواړه يو شان پايلې ورکوي۔ دا هم ترې
+معلومېږي چې د جوړښتي لړيو پر اوږدوالي عادي استقرا کارولے او د
+فارمولونو په باب قضيې ثابتولے شو۔
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+فرض کړئ $\tuple{!A_0,\dotsc,!A_n}$ د~$!A_n$ جوړښتي لړۍ ده او $k
+\leq n$ دے۔ نو $\tuple{!A_0,\dotsc,!A_k}$ د~$!A_k$ جوړښتي لړۍ ده۔
+\end{lem}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{lem:fseq-init} ثابته کړئ۔
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L]$ د~$\Lang L$ د ټولو هغو تارونو~$!A$ سټ دے چې د~$!A$ دپاره
+د فارمول جوړښتي لړۍ موجوده وي۔
+\end{thm}
+
+\begin{proof}
+$F$ دې د ژبې~$\Lang L$ د سمبولونو د ټولو هغو تارونو سټ وي چې جوړښتي
+لړۍ لري۔ په
+\olref[fol][syn][fseq]{prop:formed} کښې مو وليدل چې $\Frm[L] \subseteq
+F$؛ نو اوس ئې عکس ثابتوو۔
+
+فرض کړئ $!A$ يوه جوړښتي لړۍ $\tuple{!A_0,\dotsc,!A_n}$ لري۔ پر~$n$
+د قوي استقرا له لارې ثابتوو چې $!A \in \Frm[L]$۔ زموږ استقرايي فرض
+دا دے چې د سمبولونو هر هغه تار چې د وروستي شاخص $m < n$ لرونکې
+جوړښتي لړۍ لري، په~$\Frm[L]$ کښې دے۔ د جوړښتي لړۍ د تعريف له مخې، يا
+$!A \ident !A_n$ وي او وروستے تار اټومي وي، يا بايد داسې $j,k < n$
+موجود وي چې له لاندې حالتونو څخه يو صدق وکړي:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A \ident \lnot !A_j$۔}{}%
+    \tagitem{prvAnd}{$!A \ident (!A_j \land !A_k)$۔}{}%
+    \tagitem{prvOr}{$!A \ident (!A_j \lor !A_k)$۔}{}%
+    \tagitem{prvIf}{$!A \ident (!A_j \lif !A_k)$۔}{}%
+    \tagitem{prvIff}{$!A \ident (!A_j \liff !A_k)$۔}{}%
+    \tagitem{prvAll}{$!A \ident \lforall[x][!A_j]$۔}{}%
+    \tagitem{prvEx}{$!A \ident \lexists[x][!A_j]$۔}{}%
+\end{enumerate}
+اوس حالت په حالت استدلال کوو۔ که $!A$ اټومي وي، نو
+$!A_n \in \Frm[L]$۔ بل حالت کښې فرض کړئ چې
+$!A \ident (!A_j \land !A_k)$۔ د
+\olref[fol][syn][fseq]{lem:fseq-init} له مخې،
+$\tuple{!A_0,\dotsc,!A_j}$ او $\tuple{!A_0,\dotsc,!A_k}$ په ترتيب
+سره د $!A_j$ او~$!A_k$ جوړښتي لړۍ دي۔ څرنګه چې دا د~$!A$ د جوړښتي
+لړۍ حقيقي پيلنۍ فرعي لړۍ دي، د دواړو وروستے شاخص له~$n$ څخه کم دے۔
+نو د استقرايي فرض له مخې $!A_j$ او~$!A_k$ په~$\Frm[L]$ کښې دي؛ او
+بيا د !!a{formula} د تعريف له مخې $(!A_j \land !A_k)$ هم پکې دے۔ نور
+حالتونه په ورته استدلال ثابتېږي۔
+\textbf{د ژباړې د نسخې سمونونه (OLFOL-009--011):} سرچينه دلته د
+نحوي يوشانوالي پر ځاے د معنايي هم ارزښت نښه، د روانې ژبې پر ځاے د
+بياني ژبې شاخص، او د وروستي شاخص پر ځاے د لړۍ اوږدوالے يادوي۔ دلته
+ثبوت د همدې برخې له تعريف او د قوي استقرا له متغير سره برابر شوے دے۔
+\end{proof}
+
+د ترمونو جوړښتي لړۍ د !!{formula}s د جوړښتي لړيو په شان خاصيتونه لري۔
+
+\begin{prop}
+\ollabel{prop:fseq-trm-equiv}
+$\Trm[L]$ د~$\Lang L$ د ټولو هغو تارونو $t$ سټ دے چې د~$t$ دپاره
+د ترم جوړښتي لړۍ موجوده وي۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:fseq-trm-equiv} ثابته کړئ۔
+لارښوونه: د
+\olref[fol][syn][fseq]{thm:fseq-frm-equiv} په ثبوت کښې کارول شوې
+طريقې ته ورته تګلاره وکاروئ۔
+\end{prob}
+
+په جوړښتي لړيو کښې دوه ډوله ``بې‌ګټې توکي'' راتلے شي: تکراري غړي، او
+هغه غړي چې د فارمول يا ترم په جوړولو کښې ونډه نۀ لري۔ دواړه د تر ټولو
+لنډو جوړښتي لړيو په کتلو لرې کولے شو۔
+
+\begin{defn}[تر ټولو لنډې جوړښتي لړۍ]
+\ollabel{defn:minimal-fseq}
+د فارمول~$!A$ جوړښتي لړۍ $\tuple{!A_0, \ldots, !A_n}$ د~$!A$
+\emph{تر ټولو لنډه جوړښتي لړۍ} ده، که د~$!A$ هره بله جوړښتي
+لړۍ~$s$ داسې وي چې د~$s$ اوږدوالے له~$n+1$ سره برابر يا ترې زيات وي۔
+
+په همدې ډول، د ترم~$t$ جوړښتي لړۍ $\tuple{t_0, \ldots, t_n}$ د~$t$
+\emph{تر ټولو لنډه جوړښتي لړۍ} ده، که د~$t$ هره بله جوړښتي
+لړۍ~$s$ داسې وي چې د~$s$ اوږدوالے له~$n+1$ سره برابر يا ترې زيات وي۔
+\end{defn}
+
+پام وکړئ چې يو فارمول يا ترم له يوې څخه زياتې تر ټولو لنډې جوړښتي لړۍ
+لرلے شي، خو په ټولو کښې به کټ مټ يو شان تارونه وي۔
+
+\begin{prop}
+\ollabel{prop:subformula-equivs}
+لاندې شرطونه هم ارزښته دي:
+\begin{enumerate}
+    \item $!B$ د~$!A$ يو فرعي-!!{formula} دے۔
+    \item $!B$ د~$!A$ په هره جوړښتي لړۍ کښې راځي۔
+    \item $!B$ د~$!A$ په کومه تر ټولو لنډه جوړښتي لړۍ کښې راځي۔
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:subformula-equivs} ثابته کړئ۔
+\end{prob}
+
+\begin{history}
+جوړښتي لړۍ ريمونډ سمولين په خپل درسي کتاب
+\emph{First-Order Logic} \citep{Smullyan1968} کښې معرفي کړې۔
+د جوړښتي لړيو نور خاصيتونه \citet{Zuckerman1973} ثابت کړل۔
+\end{history}
+
+\end{document}

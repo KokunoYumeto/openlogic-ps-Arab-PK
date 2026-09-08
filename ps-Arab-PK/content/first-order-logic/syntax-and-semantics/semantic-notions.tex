@@ -1,0 +1,165 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Semantic Notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sem}
+\olsection{معنايي مفهومونه}
+
+\begin{explain}
+د لومړۍ درجې ژبو د !!{structure}s د تعريف په لرلو سره، د جملو ځينې
+بنسټيز معنايي خاصيتونه او د هغو تر منځ اړيکې تعريفولے شو۔ تر ټولو
+ساده ئې د جملې د \emph{اعتبار} مفهوم دے۔ يوه جمله هله معتبره ده چې
+په هر !!{structure} کښې صدق وکړي۔ معتبرې جملې هغه دي چې د هغو د
+نامنطقي سمبولونو د تفسير له څرنګوالي پرته صدق کوي۔ ځکه معتبرې جملې
+\emph{منطقي حقيقتونه} هم بلل کېږي---هغوی په هر !!{structure} کښې
+رښتيا دي، يعنې صدق کوي؛ نو رښتينولي ئې يوازې په هغو کښې پر راغلو
+منطقي سمبولونو او د هغو پر نحوي !!{structure} پورې تړلې ده، پر
+نامنطقي سمبولونو يا د هغو پر تفسير نۀ۔
+\end{explain}
+
+\begin{defn}[اعتبار]
+جمله~$!A$ هله \emph{معتبره} ده، $\Entails !A$، چې د هر
+!!{structure}~$\Struct M$ دپاره $\Sat{M}{!A}$۔
+\end{defn}
+
+\begin{defn}[استلزام]
+د جملو سټ~$\Gamma$ هله جمله~$!A$ \emph{لازموي}،
+$\Gamma \Entails !A$، چې د هر هغه !!{structure}~$\Struct M$ دپاره
+چې $\Sat{M}{\Gamma}$ وي، $\Sat{M}{!A}$ هم وي۔
+\end{defn}
+
+
+\begin{defn}[د صدق وړتيا]
+د جملو سټ~$\Gamma$ هله \emph{د صدق وړ} دے چې د کوم
+!!{structure}~$\Struct M$ دپاره $\Sat{M}{\Gamma}$ وي۔ که~$\Gamma$ د
+صدق وړ نۀ وي، \emph{د صدق نۀ وړ} بلل کېږي۔
+\end{defn}
+
+\begin{prop}
+جمله~$!A$ هله او يوازې هله معتبره ده چې د جملو د هر سټ~$\Gamma$
+دپاره $\Gamma \Entails !A$۔
+\end{prop}
+
+\begin{proof}
+د مخامخ لور دپاره، فرض کړئ~$!A$ معتبره ده، او~$\Gamma$ د جملو يو
+سټ دے۔ $\Struct M$ داسې !!a{structure} ونيسئ چې
+$\Sat{M}{\Gamma}$۔ څرنګه چې~$!A$ معتبره ده، $\Sat{M}{!A}$؛ نو
+$\Gamma \Entails !A$۔
+
+د شاتني لور د عکس نقيض دپاره، فرض کړئ~$!A$ نامعتبره ده؛ نو داسې
+!!a{structure}~$\Struct M$ شته چې $\Sat/{M}{!A}$۔ کله چې
+$\Gamma = \{ \ltrue \}$ وي، د~$\ltrue$ د اعتبار له کبله
+$\Sat{M}{\Gamma}$۔ ځکه داسې !!a{structure}~$\Struct M$ شته چې
+$\Sat{M}{\Gamma}$ خو $\Sat/{M}{!A}$؛ نو~$\Gamma$، $!A$ نۀ لازموي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:entails-unsat}
+$\Gamma \Entails !A$ هله او يوازې هله چې
+$\Gamma \cup \{\lnot !A\}$ د صدق نۀ وړ وي۔
+\end{prop}
+
+\begin{proof}
+د مخامخ لور دپاره، فرض کړئ $\Gamma \Entails !A$، او د عکس فرض وکړئ
+چې داسې !!a{structure}~$\Struct M$ شته چې
+$\Sat{M}{\Gamma \cup \{ \lnot !A \}}$۔ څرنګه چې
+$\Sat{M}{\Gamma}$ او $\Gamma \Entails !A$، نو $\Sat{M}{!A}$۔
+له بلې خوا، له $\Sat{M}{\Gamma\cup \{ \lnot !A \}}$ څخه
+$\Sat{M}{\lnot !A}$؛ نو هم $\Sat{M}{!A}$ او هم $\Sat/{M}{!A}$ لرو،
+چې تناقض دے۔ ځکه داسې !!{structure}~$\Struct M$ نۀ شي موجودېدے؛ نو
+$\Gamma \cup \{ \lnot !A \}$ د صدق نۀ وړ دے۔
+
+د شاتني لور دپاره، فرض کړئ $\Gamma \cup \{ \lnot !A \}$ د صدق نۀ وړ
+دے۔ نو د هر !!{structure}~$\Struct M$ دپاره يا
+$\Sat/{M}{\Gamma}$، يا $\Sat{M}{!A}$۔ ځکه د هر هغه
+!!{structure}~$\Struct M$ دپاره چې $\Sat{M}{\Gamma}$ وي،
+$\Sat{M}{!A}$؛ نو $\Gamma \Entails !A$۔
+\end{proof}
+
+\begin{prob}
+\begin{enumerate}
+\item وښيئ چې $\Gamma \Entails \bot$ هله او يوازې هله چې~$\Gamma$ د
+صدق نۀ وړ وي۔
+\item وښيئ چې $\Gamma \cup \{!A\} \Entails \bot$ هله او يوازې هله چې
+$\Gamma \Entails \lnot !A$۔
+\item فرض کړئ~$c$ په~$!A$ يا~$\Gamma$ کښې نۀ راځي۔ وښيئ چې
+  $\Gamma \Entails \lforall[x][!A]$ هله او يوازې هله چې
+  $\Gamma \Entails \Subst{!A}{c}{x}$۔
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+که $\Gamma \subseteq \Gamma'$ او $\Gamma \Entails !A$ وي، نو
+$\Gamma' \Entails !A$۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $\Gamma \subseteq \Gamma'$ او $\Gamma \Entails !A$۔
+$\Struct M$ داسې جوړښت ونيسئ چې $\Sat{M}{\Gamma'}$؛ نو
+$\Sat{M}{\Gamma}$، او له $\Gamma \Entails !A$ څخه
+$\Sat{M}{!A}$ اخلو۔ ځکه هر کله چې $\Sat{M}{\Gamma'}$ وي،
+$\Sat{M}{!A}$؛ نو $\Gamma' \Entails !A$۔
+\end{proof}
+
+
+\begin{thm}[د معنايي استنتاج قضيه]
+\ollabel{thm:sem-deduction}
+$\Gamma \cup \{!A\} \Entails !B$ هله او يوازې هله چې
+$\Gamma \Entails !A \lif !B$۔
+\end{thm}
+
+\begin{proof}
+د مخامخ لور دپاره، فرض کړئ
+$\Gamma \cup \{ !A \} \Entails !B$، او~$\Struct M$ داسې
+!!a{structure} ونيسئ چې $\Sat{M}{\Gamma}$۔ که $\Sat{M}{!A}$ وي، نو
+$\Sat{M}{\Gamma \cup \{ !A \} }$؛ او څرنګه چې
+$\Gamma \cup \{ !A \}$، $!B$ لازموي، $\Sat{M}{!B}$ اخلو۔ ځکه
+$\Sat{M}{!A \lif !B}$، نو $\Gamma \Entails !A \lif !B$۔
+
+د شاتني لور دپاره، فرض کړئ $\Gamma \Entails !A \lif !B$، او
+$\Struct M$ داسې !!a{structure} ونيسئ چې
+$\Sat{M}{\Gamma \cup \{ !A \}}$۔ بيا $\Sat{M}{\Gamma}$؛ نو
+$\Sat{M}{!A \lif !B}$، او له $\Sat{M}{!A}$ څخه $\Sat{M}{!B}$۔
+ځکه هر کله چې $\Sat{M}{\Gamma \cup \{ !A \} }$ وي،
+$\Sat{M}{!B}$؛ نو $\Gamma \cup \{ !A \} \Entails !B$۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:quant-terms}
+  فرض کړئ~$\Struct{M}$ !!a{structure}، $!A(x)$ داسې !!a{formula} دے
+  چې يو ازاد متغير~$x$ لري، او~$t$ يو تړلے ترم دے۔ نو:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$!A(t) \Entails \lexists[x][!A(x)]$}{}
+    \tagitem{prvAll}{$\lforall[x][!A(x)] \Entails !A(t)$}{}
+  \end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{%
+      \iftag{probEx}{تمرین۔}{فرض کړئ $\Sat{M}{!A(t)}$۔ $s$ داسې
+        متغير ګومارنه ونيسئ چې $s(x) = \Value{t}{M}$۔ څرنګه چې
+        $!A(t)$ !!a{sentence} ده، $\Sat{M}{!A(t)}[s]$۔ د
+        \olref[ext]{prop:ext-formulas} له مخې
+        $\Sat{M}{!A(x)}[s]$۔ د \olref[ass]{prop:sat-quant} له مخې
+        $\Sat{M}{\lexists[x][!A(x)]}$۔}}{}
+    \tagitem{prvAll}{%
+      \iftag{probAll}{تمرین۔}{فرض کړئ
+        $\Sat{M}{\lforall[x][!A(x)]}$۔ $s$ داسې متغير ګومارنه ونيسئ
+        چې $s(x) = \Value{t}{M}$۔ د
+        \olref[ass]{prop:sat-quant} له مخې
+        $\Sat{M}{!A(x)}[s]$۔ د \olref[ext]{prop:ext-formulas} له مخې
+        $\Sat{M}{!A(t)}[s]$۔ څرنګه چې $!A(t)$ !!a{sentence} ده، د
+        \olref[ass]{prop:sentence-sat-true} له مخې
+        $\Sat{M}{!A(t)}$۔}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\begin{probtag}{probEx,probAll}
+  د \olref[fol][syn][sem]{prop:quant-terms} ثبوت بشپړ کړئ۔
+\end{probtag}
+
+\end{document}

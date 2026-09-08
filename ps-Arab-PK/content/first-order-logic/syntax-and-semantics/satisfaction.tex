@@ -1,0 +1,438 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sat}
+
+\olsection{په \article{structure} \printtoken{S}{structure} کښې د
+  \article{formula} \printtoken{S}{formula} صدق}
+
+\begin{explain}
+هغه بنسټيز مفهومونه چې يوې خوا ته عبارتونه لکه ترمونه او
+!!{formula}s، او بلې خوا ته !!{structure}s سره تړي، د يوه ترم
+\emph{!!{value}} او د !!a{formula} \emph{صدق} دي۔ په غير رسمي ډول،
+د يوه ترم !!{value} د !!a{structure} يو !!{element} دے---که ترم
+يوازې يو ثابت وي، !!{value} ئې هغه څيز دے چې !!{structure} له هغه
+ثابت سره ګومارلے وي؛ او که د !!{function}s په کارولو جوړ شوے وي، د
+هغه !!{value} د ثابتونو له !!{value}s او هغو تابعو څخه حسابېږي چې
+جوړښت په ترم کښې تابعو ته ګومارلې وي۔ !!^a{formula} په يوه
+!!a{structure} کښې هله \emph{صدق کوي} چې اړوندو ته ورکړل شوے تفسير
+!!{formula} د !!{structure} په ساحه کښې رښتونے کړي۔ د صدق دا مفهوم په
+استقرا ټاکل کېږي: د !!{structure} مشخصات نېغ په نېغه وايي چې اټومي
+!!{formula}s کله صدق کوي، او دا چې يو پېچلے !!{formula} کله صدق کوي،
+د هغه له اصلي نښلوونکي يا سور او د هغه د سمدستي !!{subformula}s له
+صدق يا نه صدق سره سم تعريفوو۔
+
+دلته د سورو حالت لږ نازک دے، ځکه د سور لرونکي !!{formula} سمدستي
+!!{subformula} يو ازاد !!{variable} لري، او !!{structure}s د
+!!{variable}s !!{value}s نۀ ټاکي۔ د دې ستونزې د حل دپاره د
+\emph{متغير ګومارنې} هم معرفي کوو، او صدق يوازې د
+!!a{structure} په نسبت نۀ، بلکې د !!a{structure} او !!a{variable}
+ګومارنې په نسبت تعريفوو۔
+\end{explain}
+
+\begin{defn}[د متغير ګومارنه]
+د !!a{structure}~$\Struct{M}$ دپاره \emph{د متغير ګومارنه}~$s$ هغه
+تابع ده چې هر !!{variable} د~$\Domain M$ کوم !!a{element} ته لېږي؛
+يعنې $s\colon \Var \to \Domain M$۔
+\end{defn}
+
+\begin{explain}
+!!^a{structure} هر !!{constant} ته !!a{value}، او د متغير ګومارنه
+هر متغير ته يو قيمت ورکوي۔ خو غواړو چې له دغو څخه جوړ شوي ترمونه هم
+د !!{domain} !!{element}s ونوموي۔ د دې دپاره د ترمونو !!{value} په
+استقرا تعريفوو۔ د !!{constant}s او متغيرونو قيمت هماغه دے چې
+!!{structure} يا د متغير ګومارنه ئې ټاکي؛ د زيات پېچلو ترمونو قيمت
+د هغو تابعو په بازګشتي کارولو حسابېږي چې !!{structure} له
+!!{function}s سره ګومارلې وي۔
+\end{explain}
+
+\begin{defn}[د ترمونو !!^{value}]
+که $t$ د ژبې~$\Lang L$ يو ترم، $\Struct M$ د~$\Lang L$ يو
+!!{structure}، او $s$ د~$\Struct M$ دپاره !!a{variable} ګومارنه وي،
+\emph{!!{value}}~$\Value{t}{M}[s]$ ئې په لاندې ډول تعريفېږي:
+\begin{enumerate}
+\item \indcase{t}{c}{$\Value{\indfrm}{M}[s] = \Assign{\indcomplex}{M}$۔}
+\item \indcase{t}{x}{$\Value{\indfrm}{M}[s] = s(\indcomplex)$۔}
+\item \indcase{t}{\Atom{f}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = \Assign{f}{M}(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[د~$x$ بديله ګومارنه]
+که $s$ د !!a{structure}~$\Struct M$ دپاره !!a{variable} ګومارنه وي،
+د~$\Struct M$ هره هغه !!{variable} ګومارنه~$s'$ چې له~$s$ سره تر
+ډېره يوازې د~$x$ په ګومارل شوي څيز کښې توپير لري، د~$s$
+\emph{د~$x$ بديله ګومارنه} بلل کېږي۔ که $s'$ د~$s$ د~$x$ بديله
+ګومارنه وي، $\varAssign{s'}{s}{x}$ ليکو۔
+\end{defn}
+
+\begin{explain}
+پام وکړئ چې د يوې ګومارنې~$s$ د~$x$ بديله ګومارنه اړ نۀ ده چې
+په رښتيا~$x$ ته بېل څيز وګوماري۔ په حقيقت کښې هره ګومارنه د خپل ځان
+د~$x$ بديله ګومارنه هم ګڼل کېږي۔
+\end{explain}
+
+\begin{defn}
+  که $s$ د !!a{structure}~$\Struct M$ دپاره !!a{variable} ګومارنه
+  او $m \in \Domain{M}$ وي، نو ګومارنه~$\Subst{s}{m}{x}$ هغه د
+  متغير ګومارنه ده چې داسې تعريفېږي:
+  \[\Subst{s}{m}{x}(y) = \begin{cases}
+    m & \text{که } y \ident x\\
+    s(y) & \text{که نۀ وي}.
+  \end{cases}\]
+\end{defn}
+
+په بله وينا، $\Subst{s}{m}{x}$ د~$s$ د~$x$ هغه ځانګړې بديله ګومارنه
+ده چې د ساحې !!{element}~$m$ له~$x$ سره ګوماري، او له~$x$ پرته
+!!{variable}s ته هماغه څيزونه ګوماري چې $s$ ئې ګوماري۔
+
+\begin{defn}[صدق]
+\ollabel{defn:satisfaction}
+په !!a{structure}~$\Struct M$ کښې د !!a{formula}~$!A$ صدق د
+!!a{variable} ګومارنې~$s$ په نسبت، چې په سمبولونو کښې
+$\Sat{M}{!A}[s]$ دے، په بازګشتي ډول داسې تعريفېږي۔ (موږ
+$\Sat/{M}{!A}[s]$ د «$\Sat{M}{!A}[s]$ نۀ دے» په معنا ليکو۔)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{\indfrm}[s]$۔}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s]$۔}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  هله او يوازې هله چې $\langle \Value{t_1}{M}[s], \dots,
+  \Value{t_n}{M}[s] \rangle \in \Assign{R}{M}$۔}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s]$ هله او
+  يوازې هله چې $\Value{t_1}{M}[s] = \Value{t_2}{M}[s]$۔}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Sat{M}{\indfrm}[s]$ هله او يوازې هله چې
+    $\Sat/{M}{!B}[s]$۔}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+    هله چې $\Sat{M}{!B}[s]$ او $\Sat{M}{!C}[s]$۔}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+    هله چې $\Sat{M}{!B}[s]$ يا $\Sat{M}{!C}[s]$ (يا دواړه)۔}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+    هله چې $\Sat/{M}{!B}[s]$ يا $\Sat{M}{!C}[s]$ (يا دواړه)۔}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+    هله چې يا دواړه $\Sat{M}{!B}[s]$ او $\Sat{M}{!C}[s]$ وي، يا
+    نۀ $\Sat{M}{!B}[s]$ وي او نۀ $\Sat{M}{!C}[s]$۔}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+    هله چې د هر !!{element}~$m \in \Domain M$ دپاره
+    $\Sat{M}{!B}[\Subst{s}{m}{x}]$۔}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+  هله چې لږ تر لږه د يوه !!{element}~$m \in \Domain M$ دپاره
+  $\Sat{M}{!B}[\Subst{s}{m}{x}]$۔}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+د متغير ګومارنې په وروستي
+\iftag{notprvEx,notprvAll}{شرط}{دوو شرطونو} کښې مهمې
+دي۔\iftag{prvAll}{ د $\lforall[x][!B(x)]$ صدق داسې نۀ شو تعريفولے:
+«د ټولو $m \in \Domain{M}$ دپاره $\Sat{M}{!B(m)}$۔»}{}\iftag{prvEx}{
+د $\lexists[x][!B(x)]$ صدق داسې نۀ شو تعريفولے: «لږ تر لږه د يوه
+$m \in \Domain{M}$ دپاره $\Sat{M}{!B(m)}$۔»}{} لامل دا دے چې که
+$m \in \Domain M$ وي، هغه د ژبې سمبول نۀ دے؛ نو $!B(m)$
+!!a{formula} نۀ دے (يعنې $\Subst{!B}{m}{x}$ ناتعريف دے)۔ دا هم نۀ
+شو فرضولے چې داسې !!{constant}s يا ترمونه لرو چې د~$\Struct{M}$ هر
+!!{element} ونوموي، ځکه د !!{structure}s په تعريف کښې هېڅ شرط دا
+نۀ غواړي۔ په معياري ژبه کښې د !!{constant}s سټ !!{denumerable} دے؛
+نو که $\Domain{M}$ !!{enumerable} نۀ وي، د هر څيز د نومولو دپاره
+کافي !!{constant}s هم نشته۔
+
+دا ستونزه د !!{variable} ګومارنو په معرفي کولو حلوو؛ په هغو سره
+متغيرونه نېغ په نېغه د ساحې له !!{element}s سره تړلے شو۔ بيا د دې
+پر ځاے چې مثلاً ووايو
+\iftag{prvEx}{$\lexists[x][!B(x)]$}{$\lforall[x][!B(x)]$} په
+$\Struct M$ کښې هله او يوازې هله صدق کوي چې
+\iftag{prvEx}{لږ تر لږه د يوه $m \in \Domain{M}$ دپاره
+$\Sat{M}{!B(m)}$ وي}{د ټولو $m \in \Domain{M}$ دپاره
+$\Sat{M}{!B(m)}$ وي}، وايو چې دا په~$\Struct M$ کښې د~$s$
+\emph{په نسبت} هله او يوازې هله صدق کوي چې $!B(x)$ د
+$\Subst{s}{m}{x}$ په نسبت \iftag{prvEx}{لږ تر لږه د يوه}{د هر}
+$m \in \Domain M$ دپاره صدق وکړي۔
+\end{explain}
+
+\begin{ex}
+فرض کړئ $\Lang{L} = \{a, b, f, R\}$، چې $a$ او $b$
+!!{constant}s، $f$~دوه ځايه !!{function}، او $R$~دوه ځايه
+!!{predicate} دي۔ لاندې تعريف شوے !!{structure}~$\Struct{M}$ په پام
+کښې ونيسئ:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3, 4\}$
+\item $\Assign{a}{M} = 1$
+\item $\Assign{b}{M} = 2$
+\item که $x+y \le 3$ وي، $\Assign{f}{M}(x, y) = x+y$، او که نۀ وي
+  $= 3$۔
+\item $\Assign{R}{M} = \{\tuple{1, 1}, \tuple{1, 2}, \tuple{2, 3}, \tuple{2, 4}\}$
+\end{enumerate}
+تابع $s(x) = 1$، چې هر !!{variable} ته $1 \in \Domain{M}$ ګوماري،
+د~$\Struct{M}$ دپاره د متغير ګومارنه ده۔
+
+بيا
+\begin{align*}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(\Value{a}{M}[s], \Value{b}{M}[s]).
+\intertext{څرنګه چې $a$ او $b$ !!{constant}s دي،
+  $\Value{a}{M}[s] = \Assign{a}{M} = 1$ او
+  $\Value{b}{M}[s] = \Assign{b}{M} = 2$۔ نو}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(1, 2) = 1+2 = 3.
+\intertext{د $f(f(a,b),a)$ د قيمت د حسابولو دپاره بايد دا وګورو:}
+\Value{f(f(a,b),a)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{a}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\intertext{ځکه $3+1 > 3$۔ څرنګه چې $s(x) = 1$ او
+  $\Value{x}{M}[s] = s(x)$، دا هم لرو:}
+\Value{f(f(a,b),x)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{x}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\end{align*}
+
+يو اټومي !!{formula}~$R(t_1, t_2)$ هله صدق کوي چې د مدخلو د قيمتونو
+جوړه، يعنې $\tuple{\Value{t_1}{M}[s],
+  \Value{t_2}{M}[s]}$، د~$\Assign{R}{M}$ !!a{element} وي۔ نو مثلاً
+$\Sat{M}{R(b,f(a,b))}[s]$ لرو، ځکه
+$\tuple{\Value{b}{M}, \Value{f(a,b)}{M}} = \tuple{2, 3} \in
+\Assign{R}{M}$؛ خو $\Sat/{M}{R(x, f(a,b))}[s]$، ځکه
+$\tuple{1, 3} \notin \Assign{R}{M}$۔
+
+د دې د معلومولو دپاره چې يو غير اټومي فارمول~$!A$ صدق کوي که نۀ، د
+استقرايي تعريف هغه شرط کاروئ چې پر اصلي نښلوونکي عملي کېږي۔ مثلاً د
+$R(a, a) \lif (R(b, x) \lor R(x, b))$ اصلي نښلوونکے~$\lif$ دے، او
+\begin{align*}
+  & \Sat{M}{R(a, a) \lif (R(b, x) \lor R(x, b))}[s] \text{ هله او يوازې هله چې }\\
+  & \qquad
+  \Sat/{M}{R(a,a)}[s] \text{ يا } \Sat{M}{R(b, x) \lor R(x, b)}[s]
+  \intertext{څرنګه چې $\Sat{M}{R(a,a)}[s]$ (ځکه
+    $\tuple{1,1} \in \Assign{R}{M}$)، ځواب لا نۀ شو ټاکلے او لومړے
+    بايد معلومه کړو چې $\Sat{M}{R(b, x) \lor R(x, b)}[s]$ دے که نۀ:}
+  & \Sat{M}{R(b, x) \lor R(x, b)}[s] \text{ هله او يوازې هله چې }\\
+  & \qquad \Sat{M}{R(b,x)}[s] \text{ يا } \Sat{M}{R(x, b)}[s]
+  \intertext{او دا حالت سم دے، ځکه $\Sat{M}{R(x, b)}[s]$
+    (ځکه $\tuple{1,2} \in \Assign{R}{M}$)۔}
+\end{align*}
+
+په ياد ولرئ چې د~$s$ د~$x$ بديله ګومارنه هغه د متغير ګومارنه ده چې
+له~$s$ سره تر ډېره يوازې د~$x$ په ګومارنه کښې توپير لري۔ د
+$\Domain{M}$ د هر !!{element} دپاره د~$s$ يوه د~$x$ بديله ګومارنه
+شته:
+\begin{align*}
+  s_1 & = \Subst{s}{1}{x}, &
+  s_2 & = \Subst{s}{2}{x},\\
+  s_3 & = \Subst{s}{3}{x}, &
+  s_4 & = \Subst{s}{4}{x}.
+\end{align*}
+نو مثلاً $s_2(x) = 2$، او له~$x$ پرته د هر متغير~$y$ دپاره
+$s_2(y) = s(y) = 1$۔ د جوړښت~$\Struct{M}$ دپاره دا د~$s$ د~$x$
+ټولې بديلې ګومارنې دي، ځکه $\Domain{M} = \{1, 2, 3, 4\}$۔ په ځانګړي
+ډول پام وکړئ چې $s_1 = s$ (هره~$s$ تل د خپل ځان د~$x$ بديله ګومارنه
+هم وي)۔
+
+\iftag{prvEx}{د دې د معلومولو دپاره چې د وجودي سور لرونکے
+  !!{formula}~$\lexists[x][!A(x)]$ صدق کوي که نۀ، بايد معلومه کړو چې
+  لږ تر لږه د يوه $m \in \Domain M$ دپاره
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ دے که نۀ۔ نو
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s],
+  \]
+  ځکه $\Sat{M}{R(b,x) \lor R(x, b)}[\Subst{s}{1}{x}]$
+  ($\Subst{s}{3}{x}$ هم شرط پوره کوي)۔ خو
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))]}[s]
+  \]
+  ځکه هر $m \in \Domain{M}$ چې واخلو،
+  $\Sat/{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$۔}{}
+
+\iftag{prvAll}{د دې د معلومولو دپاره چې د عمومي سور لرونکے
+  !!{formula}~$\lforall[x][!A(x)]$ صدق کوي که نۀ، بايد معلومه کړو چې
+  د ټولو $m \in \Domain M$ دپاره
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ دے که نۀ۔ نو
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  ځکه د ټولو $m \in \Domain M$ دپاره
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$۔ د $m = 1$ دپاره
+  $\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$ لرو، نو تالي رښتونے دے؛ او د
+  $m = 2$، $3$ او~$4$ دپاره
+  $\Sat/{M}{R(x,a)}[\Subst{s}{m}{x}]$، نو مقدم دروغ دے۔ خو
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s]
+  \]
+  ځکه $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$
+  (ځکه $\Sat{M}{R(a, x)}[\Subst{s}{2}{x}]$ او
+  $\Sat/{M}{R(x, a)}[\Subst{s}{2}{x}]$)۔}{}
+
+\iftag{defEx}{د دې د معلومولو دپاره چې د وجودي سور لرونکے
+  !!{formula}~$\lexists[x][!A(x)]$ صدق کوي که نۀ، بايد معلومه کړو چې
+  $\Sat{M}{\lnot \lforall[x][\lnot !A(x)]}[s]$ دے که نۀ۔ مثلاً دا
+  لرو:
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s].
+  \]
+  لومړے، $\Sat{M}{R(b,x) \lor R(x, b)}[\Subst{s}{1}{x}]$
+  ($\Subst{s}{3}{x}$ هم شرط پوره کوي)۔ نو
+  $\Sat/{M}{\lnot(R(b,x) \lor R(x,b))}[\Subst{s}{1}{x}]$؛ له دې امله
+  $\Sat/{M}{\lforall[x][\lnot(R(b,x) \lor R(x,b))]}[s]$، او په پايله
+  کښې $\Sat{M}{\lnot\lforall[x][\lnot(R(b,x) \lor R(x,b))]}[s]$۔ بل
+  خوا،
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))]}[s].
+  \]
+  دا ځکه چې $\Sat{M}{\lforall[x][\lnot(R(b,x) \land
+  R(x,b))]}[s]$؛ ځکه هېڅ $m \in \Domain M$ داسې نشته چې
+  $\Sat{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$۔ لکه چې له دغو
+  بېلګو اټکلولے شئ، $\Sat{M}{\lexists[x][!A(x)]}[s]$ هله او يوازې
+  هله چې لږ تر لږه د يوه $m \in \Domain M$ دپاره
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$۔}{}
+
+\iftag{defAll}{د دې د معلومولو دپاره چې د عمومي سور لرونکے
+  !!{formula}~$\lforall[x][!A(x)]$ صدق کوي که نۀ، بايد معلومه کړو چې
+  $\Sat{M}{\lnot\lexists[x][\lnot !A(x)]}[s]$ دے که نۀ۔ مثلاً
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  لومړے، د ټولو $m \in \Domain M$ دپاره
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$
+  ($\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$، او د $m = 2$، $3$ يا~$4$
+  دپاره $\Sat/{M}{R(a,x)}[\Subst{s}{m}{x}]$)۔ نو داسې
+  $m \in \Domain M$ نشته چې
+  $\Sat{M}{\lnot(R(x,a) \lif R(a,x))}[\Subst{s}{m}{x}]$؛ له دې امله
+  $\Sat/{M}{\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$۔ نو
+  $\Sat{M}{\lnot\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$۔ بل خوا،
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s],
+  \]
+  ځکه $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$، او نو
+  $\Sat{M}{\lexists[x][\lnot(R(a,x) \lif R(x,a))]}[s]$۔ لکه چې له
+  دغو بېلګو اټکلولے شئ، $\Sat{M}{\lforall[x][!A(x)]}[s]$ هله او
+  يوازې هله چې د هر $m \in \Domain M$ دپاره
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$۔}{}
+
+د يو زيات پېچلي حالت دپاره دا فارمول په پام کښې ونيسئ:
+\[
+\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])].
+\]
+څرنګه چې $\Sat/{M}{R(a,x)}[\Subst{s}{3}{x}]$ او
+$\Sat/{M}{R(a,x)}[\Subst{s}{4}{x}]$، هغه په زړه پورې حالتونه چې د
+شرطي د تالي په باب فکر پکښې پکار دے يوازې $m = 1$ او $m = 2$ دي۔
+ايا $\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{1}{x}]$؟ دا هله صدق کوي
+چې لږ تر لږه يو $n \in \Domain M$ داسې وي چې
+$\Sat{M}{R(x,y)}[\Subst{\Subst{s}{1}{x}}{n}{y}]$۔ په حقيقت کښې که
+$n = 1$ واخلو، نو
+$\Subst{\Subst{s}{1}{x}}{n}{y} = \Subst{s}{1}{y} = s$۔ څرنګه چې
+$s(x) = 1$، $s(y) = 1$، او $\tuple{1,1} \in \Assign{R}{M}$، ځواب هو
+دے۔
+
+د دې د معلومولو دپاره چې
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{2}{x}]$، بايد د
+!!{variable} ګومارنې $\Subst{\Subst{s}{2}{x}}{n}{y}$ وګورو۔ دلته
+د $n = 1$ دپاره دا ګومارنه~$s_2 = \Subst{s}{2}{x}$ ده؛ او
+$R(x,y)$ پکښې صدق نۀ کوي ($s_2(x) = 2$، $s_2(y) = 1$، او
+$\tuple{2,1}\notin \Assign{R}{M}$)۔ خو
+$\Subst{\Subst{s}{2}{x}}{3}{y} = \Subst{s_2}{3}{y}$ په پام کښې
+ونيسئ۔ $\Sat{M}{R(x,y)}[\Subst{s_2}{3}{y}]$، ځکه
+$\tuple{2,3} \in \Assign{R}{M}$؛ نو
+$\Sat{M}{\lexists[y][R(x,y)]}[s_2]$۔
+
+نو د ټولو $m \in \Domain M$ دپاره يا
+$\Sat/{M}{R(a,x)}[\Subst{s}{m}{x}]$ (که $m = 3$ يا $4$ وي)، يا
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{m}{x}]$ (که $m = 1$ يا $2$
+وي)؛ نو
+\[
+\Sat{M}{\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])]}[s].
+\]
+بل خوا،
+\[
+\Sat/{M}{\lexists[x][(R(a,x) \land \lforall[y][R(x,y)])]}[s].
+\]
+$\Sat{M}{R(a,x)}[\Subst{s}{m}{x}]$ يوازې د $m = 1$ او $m = 2$
+دپاره لرو۔ خو د~$m$ د دواړو دغو قيمتونو دپاره داسې
+$n \in \Domain M$ شته، يعنې $n = 4$، چې
+$\Sat/{M}{R(x,y)}[\Subst{\Subst{s}{m}{x}}{n}{y}]$؛ نو د $m = 1$ او
+$m = 2$ دپاره
+$\Sat/{M}{\lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$۔ په ټوله کښې داسې
+$m \in \Domain M$ نشته چې
+$\Sat{M}{R(a,x) \land \lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$۔
+\textbf{د ژباړې د نسخې سمونونه (OLFOL-015--020):} سرچينه په بېلو
+ځايونو کښې د وجودي شرط د صدق څرګندونه پرېږدي، د اړوند له تفسير سره
+د متغير ګومارنه نښلوي، په فارمول کښې زياته کامه او زيات قوسونه ږدي،
+له يوه عددي مساوات څخه متغير غورځوي، او د وروستي عمومي حالت متغير
+بدلوي۔ دلته هر مورد د همدې تعريف او ټاکلي جوړښت له مخې سم شوے دے۔
+\end{ex}
+
+\iftag{defEx}{%
+\begin{prop}\ollabel{prop:sat-ex}
+$\Sat{M}{\lexists[x][!B(x)]}[s]$ هله او يوازې هله چې د~$s$ د~$x$
+داسې بديله ګومارنه $s'$ وي چې $\Sat{M}{!B(x)}[s']$۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+}{}
+
+\tagprob{defEx}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-ex} ثابته کړئ۔
+\end{prob}
+\tagendprob
+
+\iftag{defAll}{%
+\begin{prop}\ollabel{prop:sat-all}
+$\Sat{M}{\lforall[x][!B(x)]}[s]$ هله او يوازې هله چې د~$s$ د~$x$
+د هرې بديلې ګومارنې~$s'$ دپاره $\Sat{M}{!B(x)}[s']$۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+}{}
+
+\tagprob{defAll}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-all} ثابته کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prob}
+فرض کړئ $\Lang L = \{c, f, A\}$، چې يو !!{constant}، يوه يو ځايه
+!!{function} او يو دوه ځايه !!{predicate} لري، او
+!!{structure}~$\Struct{M}$ داسې ورکړل شوے دے:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3\}$
+\item $\Assign{c}{M} = 3$
+\item $\Assign{f}{M}(1) = 2, \Assign{f}{M}(2) = 3, \Assign{f}{M}(3) = 2$
+\item $\Assign{A}{M} = \{\tuple{1, 2}, \tuple{2, 3}, \tuple{3, 3}\}$
+\end{enumerate}
+(الف) د ټولو !!{variable}s~$v$ دپاره $s(v) = 1$ وټاکئ۔ معلومه کړئ
+چې آيا
+\[
+\Sat{M}{\lexists[x][(A(f(z), c) \lif \lforall[y][(A(y, x) \lor A(f(y),
+      x))])]}[s]
+\]
+صدق کوي که نۀ، او لامل ئې څرګند کړئ۔
+
+(ب) يو بېل جوړښت او !!{variable} ګومارنه ورکړئ چې !!{formula} پکښې
+صدق ونۀ کړي۔
+\end{prob}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 148 of 722 source units are translated drafts. This log contains 101 terminology entries and 95 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 166 of 722 source units are translated drafts. This log contains 101 terminology entries and 115 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1713,6 +1713,186 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLFOL-004 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
+
+## DEC-OLFOL-005
+
+- Type: source-correction
+- Choice: removes the unmatched closing parenthesis from the disjunction-based abbreviation of the conditional
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-006
+
+- Type: source-correction
+- Choice: restores the object-language styling macro on the successor function symbol
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-007
+
+- Type: source-correction
+- Choice: moves the closing parentheses inside the math spans for the conjunction and disjunction examples
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-008
+
+- Type: source-correction
+- Choice: changes the argument indices from zero-through-k to one-through-k in the k-ary term clause
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-009
+
+- Type: source-correction
+- Choice: replaces semantic equivalence with the chapter's syntactic-identity relation in the conjunction case
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-010
+
+- Type: source-correction
+- Choice: restores both copied L_0 formula-set subscripts to the first-order language L used by the theorem
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-011
+
+- Type: source-correction
+- Choice: states that m and n are final indices rather than incorrectly calling them the lengths of zero-indexed formation sequences
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-012
+
+- Type: source-correction
+- Choice: reads the malformed phrase single-two place as single two-place relation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-013
+
+- Type: source-correction
+- Choice: removes the dangling first equals sign so the calculation has one equality at each step
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-014
+
+- Type: source-correction
+- Choice: reads the source misspelling intepretation as interpretation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-015
+
+- Type: source-correction
+- Choice: states explicitly that the existential witness m must make B(m) satisfied
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-016
+
+- Type: source-correction
+- Choice: removes the assignment argument from the interpretation of the relation symbol R
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-017
+
+- Type: source-correction
+- Choice: removes a comma accidentally placed inside the existential formula argument
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-017 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-018
+
+- Type: source-correction
+- Choice: restores m before =2 in the witness assignment statement
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-018 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-019
+
+- Type: source-correction
+- Choice: uses m, the arbitrary domain element fixed in the argument, in the universal conclusion
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-019 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-020
+
+- Type: source-correction
+- Choice: removes one surplus parenthesis from each of the two formulas used to derive the existential clause via defined quantification
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-020 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-021
+
+- Type: source-correction
+- Choice: starts the concluding k-tuple with t_1 rather than the unrelated t_i
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-021 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-022
+
+- Type: source-correction
+- Choice: defines s_1' from s_1 and s_2' from s_2 rather than defining both from an unindexed s
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-022 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-023
+
+- Type: source-correction
+- Choice: removes the second stray occurrence of Gamma from the prose defining satisfaction of a set of sentences
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-023 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+
+## DEC-OLFOL-024
+
+- Type: source-correction
+- Choice: removes the dangling first equals sign so the term-value calculation has one equality at each step
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-024 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
 
 ## DEC-REL-I
 

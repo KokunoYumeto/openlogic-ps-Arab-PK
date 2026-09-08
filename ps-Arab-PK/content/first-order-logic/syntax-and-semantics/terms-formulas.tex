@@ -1,0 +1,239 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: terms-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{frm}
+
+\olsection{ترمونه او \printtoken{P}{formula}}
+
+يوه د لومړۍ درجې ژبه~$\Lang L$ چې راکړل شي، د~$\Lang L$ له بنسټيز
+لغت څخه جوړ شوي عبارتونه تعريفولے شو۔ په دغو کښې په ځانګړي ډول
+\emph{ترمونه} او \emph{!!{formula}s} شامل دي۔
+
+\begin{defn}[ترمونه]
+\ollabel{defn:terms}
+د~$\Lang L$ د \emph{ترمونو} سټ~$\Trm[L]$ په استقرايي ډول داسې
+تعريفېږي:
+\begin{enumerate}
+\item هر !!{variable} يو ترم دے۔
+\item د~$\Lang L$ هر !!{constant} يو ترم دے۔
+\item که $f$ يو $n$-ځايه !!{function} وي او $t_1$، \dots، $t_n$
+  ترمونه وي، نو $\Atom{f}{t_1, \ldots, t_n}$ يو ترم دے۔
+\tagitem{limitClause}{
+  بل هېڅ څيز ترم نۀ دے۔}{}
+\end{enumerate}
+هغه ترم چې هېڅ !!{variable}s نۀ لري، \emph{تړلے ترم} بلل کېږي۔
+\end{defn}
+
+\begin{explain}
+!!{constant}s زموږ د ژبې په مشخصاتو او د ترمونو په تعريف کښې د
+سمبولونو د يوې جلا ډلې په توګه راځي، خو د صفر ځايه !!{function}s په
+توګه هم ور شاملېدے شول۔ بيا د ترمونو د تعريف دويم شرط ته اړتيا نۀ
+وه۔ يوازې دا بايد ومنو چې که $n = 0$ وي، نو
+$\Atom{f}{t_1, \ldots, t_n}$ پخپله يوازې $f$ معنا لري۔
+\end{explain}
+
+\begin{defn}[فارمولونه]
+\ollabel{defn:formulas}
+د ژبې~$\Lang L$ د \emph{!!{formula}s} سټ~$\Frm[L]$ په استقرايي
+ډول داسې تعريفېږي:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+\tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+\item که $R$ د~$\Lang L$ يو $n$-ځايه !!{predicate} وي او $t_1$، \dots،
+  $t_n$ د~$\Lang L$ ترمونه وي، نو $\Atom{R}{t_1,\ldots, t_n}$ يو
+  اټومي !!{formula} دے۔
+
+\item که $t_1$ او $t_2$ د~$\Lang L$ ترمونه وي، نو
+  $\Atom{\eq}{t_1, t_2}$ يو اټومي !!{formula} دے۔
+
+\tagitem{prvNot}{که $!A$ !!a{formula} وي، نو $\lnot !A$ هم
+  !!a{formula} دے۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ !!a{formula} دے۔}{}
+
+\tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  !!a{formula} دے۔}{}
+
+\tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  !!a{formula} دے۔}{}
+
+\tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  !!a{formula} دے۔}{}
+
+\tagitem{prvAll}{که $!A$ !!a{formula} او $x$ !!a{variable} وي، نو
+  $\lforall[x][!A]$ !!a{formula} دے۔}{}
+
+\tagitem{prvEx}{که $!A$ !!a{formula} او $x$ !!a{variable} وي، نو
+  $\lexists[x][!A]$ !!a{formula} دے۔}{}
+
+\tagitem{limitClause}{بل هېڅ څيز !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+د ترمونو د سټ او د !!{formula}s د سټ تعريفونه \emph{استقرايي
+تعريفونه} دي۔ په اصل کښې موږ د !!{formula}s سټ په نامتناهي ډېرو
+پړاوونو کښې جوړوو۔ په لومړني پړاو کښې ټول اټومي فارمولونه فارمولونه
+ګڼو؛ دا د تعريف له لومړنيو څو حالتونو سره سمون لري، يعنې د
+\iftag{prvTrue}{$\ltrue$، }{}%
+\iftag{prvFalse}{$\lfalse$، }{}%
+$\Atom{R}{t_1,\dots,t_n}$ او $\Atom{\eq}{t_1,t_2}$ حالتونه۔ نو
+``اټومي !!{formula}'' د همدې بڼو هر !!{formula} ته وايي۔
+
+د تعريف نور حالتونه له هغو !!{formula}s څخه چې لا جوړ شوي وي، د نويو
+!!{formula}s د جوړولو قاعدې راکوي۔ په دويم پړاو کښې د دغو قاعدو په
+کارولو له اټومي !!{formula}s څخه !!{formula}s جوړولے شو۔ په درېيم
+پړاو کښې له اټومي فارمولونو او په دويم پړاو کښې له ترلاسه شوو فارمولونو
+څخه نوي فارمولونه جوړوو، او همداسې مخکښې۔ !!{formula} هر هغه څيز
+دے چې بالاخره په داسې يوه پړاو کښې جوړ شي، او بل هېڅ څيز نۀ دے۔
+\end{explain}
+
+د دود له مخې، $\eq$ د خپلو مدخلو تر منځ ليکو او قوسونه پرېږدو:
+$\eq[t_1][t_2]$ د $\Atom{\eq}{t_1,t_2}$ لنډون دے۔ همدارنګه
+$\lnot \Atom{\eq}{t_1,t_2}$ د $\eq/[t_1][t_2]$ په بڼه لنډوو۔ کله
+چې د دوه ځايه نښلوونکي~$\ast$ په کارولو له $!B$ او $!C$ څخه جوړ
+شوے فارمول $(!B \ast !C)$ ليکو، ډېر ځله تر ټولو دباندې جوړه قوسونه
+پرېږدو او يوازې~$!B \ast !C$ ليکو۔
+
+\begin{intro}
+د منطق ځينې متنونه د دې دپاره چې
+\iftag{prvEx}{$\lexists[x][!A]$ }{}%
+\iftag{notprvEx,notprvAll}{}{او }%
+\iftag{prvAll}{$\lforall[x][!A]$ }{}%
+\iftag{notprvEx,notprvAll}{!!a{formula}}{!!{formula}s}
+وګڼل شي، دا شرط لګوي چې !!{variable}~$x$ بايد په~$!A$ کښې راشي۔
+که دا شرط ونۀ لګوئ، کومه ستونزه نۀ پيدا کېږي او کار اسانه کېږي۔
+\end{intro}
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{defn}
+هغه فارمولونه چې په تعريف شوو عملګرونو جوړېږي، بايد په لاندې ډول
+وپېژندل شي:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}
+
+\tagitem{defTrue}{$\ltrue$ د
+  \iftag{prvFalse}{$\lnot\lfalse$}{د کوم ثابت اټومي
+    !!{formula}~$!A$ دپاره د $(!A \lor \lnot !A)$} لنډون دے۔}{}
+
+\tagitem{defFalse}{$\lfalse$ د
+  \iftag{prvTrue}{$\lnot\ltrue$}{د کوم ثابت اټومي
+    !!{formula}~$!A$ دپاره د $(!A \land \lnot !A)$} لنډون دے۔}{}
+
+\tagitem{defNot}{$\lnot !A$ د $!A \lif \lfalse$ لنډون دے۔}{}
+
+\tagitem{defOr}{$!A \lor !B$ د
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$} لنډون دے۔}{}
+
+\tagitem{defAnd}{$!A \land !B$ د
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$} لنډون دے۔}{}
+
+\tagitem{defIf}{$!A \lif !B$ د
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}
+  لنډون دے۔}{}
+\textbf{د ژباړې د نسخې سمون (OLFOL-005):} سرچينه د لومړي لنډون
+تر تړونکې رياضي نښې وروسته يو بې‌جوړه قوس راوړي؛ دلته زيات قوس لرې
+شوے دے۔
+
+\tagitem{defIff}{$!A \liff !B$ د $(!A \lif !B) \land (!B
+  \lif !A)$ لنډون دے۔}{}
+
+\tagitem{defAll}{$\lforall[x][!A]$ د $\lnot\lexists[x][\lnot !A]$
+  لنډون دے۔}{}
+
+\tagitem{defEx}{$\lexists[x][!A]$ د $\lnot\lforall[x][\lnot !A]$
+  لنډون دے۔}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+کله چې د يوې ځانګړې کارونې په ژبه کښې کار کوو، ډېر ځله دوه ځايه
+!!{predicate}s او !!{function}s د اړوندو ترمونو تر منځ ليکو؛ مثلاً د
+حساب په ژبه کښې $t_1 < t_2$ او $(t_1 + t_2)$، او د سټ تيورۍ په ژبه
+کښې $t_1 \in t_2$ ليکو۔ د حساب په ژبه کښې د ناستي تابع د دود له مخې
+آن د خپل مدخل \emph{وروسته} ليکل کېږي:~$t'$۔ خو په رسمي ډول دا په
+ترتيب سره يوازې د $\Atom{\Obj A^2_0}{t_1, t_2}$،
+$\Obj f^2_0(t_1, t_2)$، $\Atom{\Obj A^2_0}{t_1, t_2}$ او
+$\Obj f^1_0(t)$ دوديز لنډونونه دي۔
+\textbf{د ژباړې د نسخې سمون (OLFOL-006):} سرچينه د ناستي تابع په
+رسمي سمبول کښې د څيز نښه پرېږدي؛ دلته هغه د همدې فهرست له سمبوليزم
+سره سمه ور زياته شوې ده۔
+
+\begin{defn}[نحوي يوشانوالے]
+سمبول $\ident$ د سمبولونو د تارونو تر منځ نحوي يوشانوالے څرګندوي؛
+يعنې $!A \ident !B$ هله او يوازې هله چې $!A$ او $!B$ د يو شان
+اوږدوالي لرونکي د سمبولونو تارونه وي او په هر ځاے کښې يو شان سمبول
+ولري۔
+\end{defn}
+
+د $\ident$ سمبول دواړو خواوو ته هغه تارونه هم ليکل کېدے شي چې په نښلولو
+ترلاسه شوي وي؛ مثلاً $!A \ident (!B \lor !C)$ دا معنا لري: د
+سمبولونو تار~$!A$ له هغه تار سره يو شان دے چې په همدې ترتيب د پرانيستي
+قوس، تار $!B$، سمبول $\lor$، تار~$!C$ او تړلي قوس له نښلولو ترلاسه
+کېږي۔ که دا حالت وي، نو پوهېږو چې د~$!A$ لومړے سمبول پرانيستے قوس
+دے، $!A$ د دويم سمبول له ځايه $!B$ د يوه فرعي تار په توګه لري، له
+هغه فرعي تار وروسته~$\lor$ راځي، او همداسې نور۔
+
+څرنګه چې ترمونه او !!{formula}s د استقرايي تعريفونو له لارې له بنسټيزو
+اجزاوو څخه جوړېږي، د هغو په باب د څه ثابتولو دپاره لاندې استقرايي
+اصول کارولے شو۔
+
+\begin{lem}[\emph{پر ترمونو د استقرا اصل}]
+    \ollabel{lem:trmind}
+    فرض کړئ $\Lang L$ د لومړۍ درجې يوه ژبه ده۔
+    که يو خاصيت~$P$ داسې وي چې
+    %
+    \begin{enumerate}
+        \item د هر !!{variable}~$v$ دپاره صدق کوي؛
+        %
+        \item د~$\Lang L$ د هر !!{constant}~$a$ دپاره صدق کوي؛ او
+        %
+        \item کله چې د $t_1$،~\dots، $t_n$ دپاره صدق کوي او $f$
+        د~$\Lang L$ يو $n$-ځايه !!{function} وي، د
+        $f(t_1,\dotsc,t_n)$ دپاره هم صدق کوي،
+    \end{enumerate}
+    (په دې فرض چې $t_1$،~\dots، $t_n$ د~$\Lang{L}$ ترمونه دي)،
+    نو $P$ د~$\Trm[L]$ د هر ترم دپاره صدق کوي۔
+\end{lem}
+
+\begin{prob}
+    \olref[fol][syn][frm]{lem:trmind} ثابته کړئ۔
+\end{prob}
+
+\begin{lem}[\emph{پر !!{formula}s د استقرا اصل}]
+    \ollabel{thm:frmind}
+    فرض کړئ $\Lang L$ د لومړۍ درجې يوه ژبه ده۔
+    که يو خاصيت~$P$ د ټولو اټومي !!{formula}s دپاره صدق کوي او داسې
+    وي چې
+    %
+    \begin{enumerate}
+        \tagitem{prvNot}{کله چې د~$!A$ دپاره صدق کوي، د
+            $\lnot !A$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvAnd}{کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+            $(!A \land !B)$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvOr}{کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+            $(!A \lor !B)$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvIf}{کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+            $(!A \lif !B)$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvIff}{کله چې د $!A$ او~$!B$ دپاره صدق کوي، د
+            $(!A \liff !B)$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvEx}{کله چې د~$!A$ دپاره صدق کوي، د
+            $\lexists[x][!A]$ دپاره هم صدق کوي؛}{}
+        \tagitem{prvAll}{کله چې د~$!A$ دپاره صدق کوي، د
+            $\lforall[x][!A]$ دپاره هم صدق کوي؛}{}
+  \end{enumerate}
+  (په دې فرض چې $!A$ او $!B$ د~$\Lang{L}$ !!{formula}s دي)،
+  نو $P$ د~$\Frm[L]$ د ټولو فارمولونو دپاره صدق کوي۔
+\end{lem}
+
+\end{document}

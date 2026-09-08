@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 148,
-    "structural_pass": 148,
+    "draft_units": 166,
+    "structural_pass": 166,
     "visually_accepted": 105,
     "published": 82
   },
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B037-FIRST-ORDER-LOGIC-INTRODUCTION",
+  "batch": "PS-B038-FOL-SYNTAX-SEMANTICS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -4150,6 +4150,558 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0149",
+      "path": "content/first-order-logic/syntax-and-semantics/syntax.tex",
+      "source_sha256": "473e66c94338b8f5f597ded8a099bc240a6a5e7e2c47ff05faf7235b0055cbdb",
+      "translation_sha256": "40c43088997109ea152c9a2ddba0fa11477877b7d63986ba7ca0641a83a2dfcf",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0150",
+      "path": "content/first-order-logic/syntax-and-semantics/intro-syntax.tex",
+      "source_sha256": "471a1c986e2c701856bc6bec91cfe741242434d9a933420e279002792e2da1ec",
+      "translation_sha256": "f68258711860f294fede2fa4a110417fbb7302c5fb2e0c1be54244c5ab8befda",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0151",
+      "path": "content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
+      "source_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d",
+      "translation_sha256": "dfea9d31397ac377019b4df35cb905e4ec77e48677e79919866ba02dca72294e",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0152",
+      "path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
+      "translation_sha256": "f09939618e8ef78d1d58abcdcf310813268335faa77975b4093230ace13998f4",
+      "source_blocks": 43,
+      "target_blocks": 43,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-005",
+        "OLFOL-006"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lnot!A\\lor!B)$",
+          "$f^1_0(t)$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\lor!B$",
+          "$\\Objf^1_0(t)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0153",
+      "path": "content/first-order-logic/syntax-and-semantics/unique-readability.tex",
+      "source_sha256": "6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833",
+      "translation_sha256": "cf329742e79fd52aa28b8d4ee59126a0f268b55d6185b05dcfcaa83a426a7a13",
+      "source_blocks": 40,
+      "target_blocks": 40,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-014"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0154",
+      "path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
+      "translation_sha256": "96e3936c514e51d4e06751376a15f051733170c4da4ac457881b7a06b6f4c3d8",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-007"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$(!A\\land!B$",
+          "$(!A\\lor!B$"
+        ],
+        "target_only": [
+          "$(!A\\lor!B)$",
+          "$(!A\\land!B)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0155",
+      "path": "content/first-order-logic/syntax-and-semantics/subformulas.tex",
+      "source_sha256": "6e287a941dee45c936517925a0db269918b5020ac24892a03342dc7678f6c938",
+      "translation_sha256": "9fa9b5bbe1f98574b4e0d3cf6db7ebb931543148f38f55a20ba7f9f75babf3c0",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0156",
+      "path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "translation_sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00",
+      "source_blocks": 34,
+      "target_blocks": 34,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-008",
+        "OLFOL-009",
+        "OLFOL-010",
+        "OLFOL-011"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$m_0,\\dotsc,m_k<i$",
+          "$t_i\\identf(t_{m_0},\\dotsc,t_{m_k})$",
+          "$!A_n\\in\\Frm[L_0]$",
+          "$!A\\equiv(!A_j\\land!A_k)$",
+          "$\\Frm[L_0]$"
+        ],
+        "target_only": [
+          "$m_1,\\dotsc,m_k<i$",
+          "$t_i\\identf(t_{m_1},\\dotsc,t_{m_k})$",
+          "$\\Frm[L]$",
+          "$!A\\ident(!A_j\\land!A_k)$",
+          "$!A_n\\in\\Frm[L]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0157",
+      "path": "content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
+      "source_sha256": "b04a358a03907e8e42caa4b1cee49c217db77e1ca2c742da21c6eb6d7051edde",
+      "translation_sha256": "aea0b0878640f4b65c1991fd1be803cb7ad364823c7b685a62d71cc483c94146",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0158",
+      "path": "content/first-order-logic/syntax-and-semantics/substitution.tex",
+      "source_sha256": "3db5cd0e374edb0ba4cff9f6f849272190d5fc5420e5132e1237adcd64619fae",
+      "translation_sha256": "779d184a1948368fefbc91756c823f48ce82f76c305f915c02ad95203aaafb6b",
+      "source_blocks": 27,
+      "target_blocks": 27,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0159",
+      "path": "content/first-order-logic/syntax-and-semantics/semantics.tex",
+      "source_sha256": "9ece0259134346fe5dad884d12bfe4aaa88dab579e7d821a156115ee904e8f3b",
+      "translation_sha256": "4c236a97368b4baace58c5354c44148069adcec4ff51ba3ec2bf51f5b6b77274",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0160",
+      "path": "content/first-order-logic/syntax-and-semantics/intro-semantics.tex",
+      "source_sha256": "0c17fd8bd7b0a2218229c8f217581bf09cde11ec08a602019f46b20f174a4722",
+      "translation_sha256": "7d9b45d0efe9de2da096a8348295aef2a310129ea0bba248800ef8c7d96da783",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0161",
+      "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+      "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+      "translation_sha256": "4c2fe5af81f94ee5fd1f9f163d0aefe72b75f1790034632ae6c8211dbeadb312",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-012"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0162",
+      "path": "content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+      "source_sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530",
+      "translation_sha256": "86b99795f442fa46df762e8ece995b55bd112738b8b9059ad496be4a4deee7ff",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-013"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}=\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\Value{\\times(\\Obj{two},+(\\Obj{three},\\Obj{zero}))}{M}\\\\\\begin{aligned}&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Value{+(\\Obj{three},\\Obj{zero})}{M})\\\\&=\\Assign{\\times}{M}(\\Value{\\Obj{two}}{M},\\Assign{+}{M}(\\Value{\\Obj{three}}{M},\\Value{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(\\Assign{\\Obj{two}}{M},\\Assign{+}{M}(\\Assign{\\Obj{three}}{M},\\Assign{\\Obj{zero}}{M}))\\\\&=\\Assign{\\times}{M}(2,\\Assign{+}{M}(3,0))\\\\&=\\Assign{\\times}{M}(2,3)\\\\&=6\\end{aligned}\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0163",
+      "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "translation_sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a",
+      "source_blocks": 48,
+      "target_blocks": 48,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-015",
+        "OLFOL-016",
+        "OLFOL-017",
+        "OLFOL-018",
+        "OLFOL-019",
+        "OLFOL-020"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\tuple{1,3}\\notin\\Assign{R}{M}[s]$",
+          "$\\Sat/{M}{\\lforall[x][\\lnot((R(b,x)\\lorR(x,b))]}[s]$",
+          "$\\Sat{M}{\\lnot\\lforall[x][\\lnot((R(b,x)\\lorR(x,b))]}[s]$",
+          "\\[\\Sat/{M}{\\lexists[x][(R(b,x)\\landR(x,b))],}[s].\\]",
+          "$=2$",
+          "$n\\in\\DomainM$"
+        ],
+        "target_only": [
+          "$m\\in\\DomainM$",
+          "$\\Sat{M}{!B(m)}$",
+          "$\\tuple{1,3}\\notin\\Assign{R}{M}$",
+          "$m=2$",
+          "$\\Sat/{M}{\\lforall[x][\\lnot(R(b,x)\\lorR(x,b))]}[s]$",
+          "$\\Sat{M}{\\lnot\\lforall[x][\\lnot(R(b,x)\\lorR(x,b))]}[s]$",
+          "\\[\\Sat/{M}{\\lexists[x][(R(b,x)\\landR(x,b))]}[s].\\]"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0164",
+      "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "translation_sha256": "5c851ffe1b46680d6c10f3e9d4a856b85d4694b9a7db0e06836f4e45f62a53fc",
+      "source_blocks": 51,
+      "target_blocks": 51,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-021",
+        "OLFOL-022",
+        "OLFOL-023"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\langle\\Value{t_i}{M}[s_2],\\ldots,\\Value{t_k}{M}[s_2]\\rangle\\in\\Assign{R}{M}$",
+          "$s_1'=\\Subst{s}{m}{x}$",
+          "$s_2'=\\Subst{s}{m}{x}$",
+          "$\\Gamma$"
+        ],
+        "target_only": [
+          "$\\langle\\Value{t_1}{M}[s_2],\\ldots,\\Value{t_k}{M}[s_2]\\rangle\\in\\Assign{R}{M}$",
+          "$s_1'=\\Subst{s_1}{m}{x}$",
+          "$s_2'=\\Subst{s_2}{m}{x}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0165",
+      "path": "content/first-order-logic/syntax-and-semantics/extensionality.tex",
+      "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+      "translation_sha256": "74d757ce22e362481b0a22bc54b3006c69c56c285fee68734b9b7789ae1ac70a",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-024"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}\\Value{\\Subst{t}{t'}{x}}{M}[s]=\\\\\\begin{aligned}[b]&=\\Value{\\Atom{f}{\\Subst{t_1}{t'}{x},\\dots,\\Subst{t_n}{t'}{x}}}{M}[s]\\\\&\\qquad\\text{LOCALIZED$\\Subst{t}{t'}{x}$}\\\\&=\\Assign{f}{M}(\\Value{\\Subst{t_1}{t'}{x}}{M}[s],\\dots,\\Value{\\Subst{t_n}{t'}{x}}{M}[s])\\\\&\\qquad\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[s]$}\\\\&=\\Assign{f}{M}(\\Value{t_1}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}],\\dots,\\Value{t_n}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}])\\\\&\\qquad\\text{LOCALIZED}\\\\&=\\Value{t}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]$}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\Value{\\Subst{t}{t'}{x}}{M}[s]\\\\\\begin{aligned}[b]&=\\Value{\\Atom{f}{\\Subst{t_1}{t'}{x},\\dots,\\Subst{t_n}{t'}{x}}}{M}[s]\\\\&\\qquad\\text{LOCALIZED$\\Subst{t}{t'}{x}$}\\\\&=\\Assign{f}{M}(\\Value{\\Subst{t_1}{t'}{x}}{M}[s],\\dots,\\Value{\\Subst{t_n}{t'}{x}}{M}[s])\\\\&\\qquad\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[s]$}\\\\&=\\Assign{f}{M}(\\Value{t_1}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}],\\dots,\\Value{t_n}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}])\\\\&\\qquad\\text{LOCALIZED}\\\\&=\\Value{t}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]\\text{LOCALIZED$\\Value{\\Atom{f}{\\dots}}{M}[\\Subst{s}{\\Value{t'}{M}[s]}{x}]$}\\end{aligned}\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0166",
+      "path": "content/first-order-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+      "translation_sha256": "704e67a70649e422819c14b092c996daddb1705573a35e06f4123e95f16da094",
+      "source_blocks": 24,
+      "target_blocks": 24,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -5928,6 +6480,114 @@
       "passage": "consistency and model existence",
       "reverse_paraphrase": "A set deriving a contradiction is inconsistent and has no model; completeness yields the converse that every consistent set has a model.",
       "finding": "The syntactic/semantic distinction, contradiction formula and equivalent completeness formulation are preserved."
+    },
+    {
+      "unit_id": "OLP-0149",
+      "passage": "syntax and semantics chapter drivers",
+      "reverse_paraphrase": "The syntax driver imports language, grammar, readability, operator, subformula, formation-sequence, free-variable and substitution sections; the semantics driver imports structures, term values, satisfaction, assignments, extensionality and semantic notions.",
+      "finding": "Both drivers preserve every import exactly once and in source order."
+    },
+    {
+      "unit_id": "OLP-0150",
+      "passage": "formal-language syntax",
+      "reverse_paraphrase": "First-order expressions are finite symbol strings governed by inductive formation rules; their semantics is supplied only after the language and formulas are fixed.",
+      "finding": "The object-language and metalanguage distinction and the reason for unique readability remain explicit."
+    },
+    {
+      "unit_id": "OLP-0151",
+      "passage": "first-order languages",
+      "reverse_paraphrase": "A language supplies variables plus zero-or-more constants and positive-arity function and predicate symbols; identity may be logical, nonlogical or absent according to the stated convention.",
+      "finding": "Symbol classes, arities and all sample signatures remain distinct; no semantic interpretation is smuggled into the syntax."
+    },
+    {
+      "unit_id": "OLP-0152",
+      "passage": "terms and formulas",
+      "reverse_paraphrase": "Terms begin with variables and constants and close under k-place functions; atomic formulas apply predicates to matching terms or use identity, and compound formulas close under the listed connectives and quantifiers.",
+      "finding": "Every recursive case and abbreviation is retained. OLFOL-005 and OLFOL-006 repair only the unmatched parenthesis and missing object-language styling."
+    },
+    {
+      "unit_id": "OLP-0153",
+      "passage": "unique readability",
+      "reverse_paraphrase": "Every term and formula has a unique construction tree, so its outer formation case and immediate components can be recovered unambiguously from its symbol string.",
+      "finding": "The symbol-shape and parenthesis arguments remain intact; OLFOL-014 discloses the source spelling typo without changing the theorem."
+    },
+    {
+      "unit_id": "OLP-0154",
+      "passage": "main operator",
+      "reverse_paraphrase": "A nonatomic formula has one outermost connective or quantifier; removing that operator exposes its immediate component formula or formulas.",
+      "finding": "Every connective and quantifier example retains its grouping. OLFOL-007 moves two closing parentheses inside math mode only."
+    },
+    {
+      "unit_id": "OLP-0155",
+      "passage": "subformulas",
+      "reverse_paraphrase": "A formula is its own subformula, and the subformulas of a compound formula are obtained recursively from its immediate components.",
+      "finding": "Reflexivity, recursive closure and proper-subformula usage retain their exact direction."
+    },
+    {
+      "unit_id": "OLP-0156",
+      "passage": "formation sequences and induction",
+      "reverse_paraphrase": "A term or formula is well formed exactly when it is the final entry of a finite sequence whose earlier entries license each construction step; proofs may proceed by strong induction on that final index.",
+      "finding": "The converse proof keeps syntactic identity and language L. OLFOL-008 through OLFOL-011 disclose the arity, identity, copied-subscript and off-by-one repairs."
+    },
+    {
+      "unit_id": "OLP-0157",
+      "passage": "free variables and sentences",
+      "reverse_paraphrase": "An occurrence is bound only within the scope of a matching quantifier; free-variable sets are computed recursively, and formulas with no free variables are sentences.",
+      "finding": "Occurrence-level binding, scope and all open/closed examples retain their source polarity."
+    },
+    {
+      "unit_id": "OLP-0158",
+      "passage": "capture-avoiding substitution",
+      "reverse_paraphrase": "Substitution recursively replaces free occurrences while stopping under a matching binder and requiring that inserted terms not become captured by another quantifier.",
+      "finding": "All term and formula clauses, substitutability restrictions and renaming examples preserve binder scope."
+    },
+    {
+      "unit_id": "OLP-0159",
+      "passage": "semantics driver coverage",
+      "reverse_paraphrase": "The semantics half proceeds from structures and covered structures to satisfaction, assignment invariance, extensionality and global semantic notions.",
+      "finding": "All seven source imports are present exactly once and in order."
+    },
+    {
+      "unit_id": "OLP-0160",
+      "passage": "semantic interpretation overview",
+      "reverse_paraphrase": "A structure fixes a nonempty domain and interpretations for nonvariable symbols, while an assignment supplies values for variables; recursive satisfaction then evaluates formulas.",
+      "finding": "The distinct jobs of structure and assignment are explicit and no proof-system notion is substituted for satisfaction."
+    },
+    {
+      "unit_id": "OLP-0161",
+      "passage": "structures",
+      "reverse_paraphrase": "Constants denote domain elements, k-place functions map k-tuples to the domain, and k-place predicates denote k-ary relations over the domain.",
+      "finding": "All arity and domain/codomain restrictions and worked interpretations are retained. OLFOL-012 repairs only malformed English hyphenation."
+    },
+    {
+      "unit_id": "OLP-0162",
+      "passage": "covered structures and term values",
+      "reverse_paraphrase": "A structure together with an assignment gives every term a value recursively: variables use the assignment, constants use the structure and compound terms apply interpreted functions.",
+      "finding": "The recursion and example values remain exact; OLFOL-013 removes one dangling equals sign from the calculation."
+    },
+    {
+      "unit_id": "OLP-0163",
+      "passage": "recursive satisfaction",
+      "reverse_paraphrase": "Atomic formulas are satisfied by equality of term values or tuple membership in an interpreted relation; connectives follow their truth conditions, and quantifiers range over assignment modifications by domain elements.",
+      "finding": "Both directions and all worked witnesses are retained. OLFOL-015 through OLFOL-020 repair six independently traced omissions or malformed expressions and disclose them together beside the examples."
+    },
+    {
+      "unit_id": "OLP-0164",
+      "passage": "assignment dependence",
+      "reverse_paraphrase": "Term values depend only on variables occurring in the term, formula satisfaction depends only on free variables, and sentence truth is independent of assignments; a structure satisfies a sentence set memberwise.",
+      "finding": "Both induction arguments and quantifier cases retain their hypotheses. OLFOL-021 through OLFOL-023 repair the tuple index, modified-assignment bases and duplicated Gamma."
+    },
+    {
+      "unit_id": "OLP-0165",
+      "passage": "extensionality of evaluation and satisfaction",
+      "reverse_paraphrase": "Structures agreeing on the symbols used by a term or formula give the same term value and satisfaction result under the same assignment, proved recursively.",
+      "finding": "Every agreement hypothesis and recursive case is preserved; OLFOL-024 removes only a duplicated equals sign."
+    },
+    {
+      "unit_id": "OLP-0166",
+      "passage": "semantic notions",
+      "reverse_paraphrase": "A sentence is true in a structure when it is satisfied; validity quantifies over all structures, consequence over all models of the premises, satisfiability over at least one structure, and equivalence requires matching satisfaction.",
+      "finding": "Universal and existential model quantifiers, premise-set scope, truth/falsity polarity and model terminology all remain distinct."
     }
   ],
   "builds": [

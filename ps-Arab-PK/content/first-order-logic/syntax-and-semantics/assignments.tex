@@ -1,0 +1,381 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: assignments
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ass}
+
+\olsection{د متغيرونو ګومارنې}
+
+\begin{explain}
+د !!{variable} ګومارنه~$s$ \emph{هر} متغير ته يو ارزښت ورکوي---او
+متغيرونه بې‌شمېره دي۔ البته دا اړينه نۀ ده۔ موږ له !!{variable}
+ګومارنو څخه يوازې د اسانتيا دپاره غواړو چې ټولو !!{variable}s ته
+ارزښتونه وګوماري۔ د يوه ترم~$t$ ارزښت، او دا چې !!a{formula}~$!A$ د
+ګومارنې~$s$ په نسبت په !!a{structure} کښې صدق کوي که نۀ، يوازې په هغو
+ارزښتونو پورې تړلي دي چې~$s$ ئې د~$t$ !!{variable}s او د~$!A$ ازادو
+!!{variable}s ته ګوماري۔ د لاندې دوو قضيو منځپانګه همدا ده۔ د «پورې
+تړلي دي» مانا دقيقه کولو دپاره ښيو چې هرې دوې هغه متغير ګومارنې چې
+د~$t$ پر ټولو متغيرونو سره موافقې وي، هغه ته يو شان ارزښت ورکوي؛ او
+که دوې متغير ګومارنې د~$!A$ پر ټولو ازادو متغيرونو سره موافقې وي، نو
+$!A$ د يوې په نسبت هله صدق کوي چې د بلې په نسبت هم صدق وکړي۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:valindep}
+که په ترم~$t$ کښې !!{variable}s د $x_1$، \dots،~$x_n$ په منځ کښې وي،
+او $s_1(x_i) = s_2(x_i)$ د $i = 1$، \dots،~$n$ دپاره وي، نو
+$\Value{t}{M}[s_1] = \Value{t}{M}[s_2]$۔
+\end{prop}
+
+\begin{proof}
+د~$t$ پر پېچلتيا د استقرا له لارې۔ په بنسټيز حالت کښې~$t$ يا
+!!a{constant} وي يا له $x_1$، \dots،~$x_n$ متغيرونو څخه يو وي۔ که
+$t = c$ وي، نو
+$\Value{t}{M}[s_1] = \Assign{c}{M} = \Value{t}{M}[s_2]$۔ که
+$t = x_i$ وي، د قضيې د فرض له مخې $s_1(x_i) = s_2(x_i)$؛ نو
+$\Value{t}{M}[s_1] = s_1(x_i) = s_2(x_i) = \Value{t}{M}[s_2]$۔
+
+د استقرايي ګام دپاره فرض کړئ چې
+$t = \Atom{f}{t_1, \dots, t_k}$، او ادعا د
+$t_1$، \dots، $t_k$ دپاره صدق کوي۔ نو
+\begin{align*}
+  \Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]).
+\intertext{د $j = 1$، \dots،~$k$ دپاره، د~$t_j$ !!{variable}s د
+    $x_1$، \dots،~$x_n$ په منځ کښې دي۔ د استقرايي فرض له مخې
+    $\Value{t_j}{M}[s_1] = \Value{t_j}{M}[s_2]$۔ نو}
+\Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]) \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_2], \dots, \Value{t_k}{M}[s_2]) \\
+  & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_2] = \Value{t}{M}[s_2].
+\end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:satindep}
+که په~$!A$ کښې ازاد !!{variable}s د $x_1$، \dots،~$x_n$ په منځ کښې
+وي، او $s_1(x_i) = s_2(x_i)$ د $i = 1$، \dots،~$n$ دپاره وي، نو
+$\Sat{M}{!A}[s_1]$ هله او يوازې هله چې $\Sat{M}{!A}[s_2]$۔
+\end{prop}
+
+\begin{proof}
+د~$!A$ پر پېچلتيا استقرا کاروو۔ په بنسټيز حالت کښې، چې~$!A$ اټومي
+وي، $!A$ له لاندې څخه يو کېدے شي:
+\iftag{prvTrue}{$\ltrue$،}{}
+\iftag{prvFalse}{$\lfalse$،}{}
+د يوه $k$-ځايه اړوند~$R$ او ترمونو $t_1$، \dots،~$t_k$ دپاره
+$\Atom{R}{t_1, \dots, t_k}$، يا د ترمونو~$t_1$ او~$t_2$ دپاره
+$\eq[t_1][t_2]$۔ په وروستيو دوو حالتونو کښې يوازې د
+!!{biconditional} مخامخ لور ثابتوو، ځکه د شاتني لور ثبوت ئې هم‌شکله
+دے۔
+
+\begin{enumerate}
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{دواړه $\Sat{M}{\indfrm}[s_1]$ او
+    $\Sat{M}{\indfrm}[s_2]$ صدق کوي۔}}{}
+
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{دواړه $\Sat/{M}{!A}[s_1]$ او
+    $\Sat/{M}{!A}[s_2]$۔}}{}
+
+\item
+  \indcase{!A}{\Atom{R}{t_1, \ldots, t_k}}{فرض کړئ
+    $\Sat{M}{\indfrm}[s_1]$۔ نو
+    \[
+    \langle \Value{t_1}{M}[s_1], \ldots, \Value{t_k}{M}[s_1] \rangle
+    \in \Assign{R}{M}.
+    \]
+    د $i = 1$، \dots،~$k$ دپاره، د \olref{prop:valindep} له مخې
+    $\Value{t_i}{M}[s_1] = \Value{t_i}{M}[s_2]$۔ نو دا هم لرو چې
+    $\langle \Value{t_1}{M}[s_2], \ldots, \Value{t_k}{M}[s_2] \rangle
+    \in \Assign{R}{M}$؛ ځکه $\Sat{M}{\indfrm}[s_2]$۔}
+\item
+  \indcase{!A}{\eq[t_1][t_2]}{فرض کړئ $\Sat{M}{\indfrm}[s_1]$۔
+    بيا $\Value{t_1}{M}[s_1] = \Value{t_2}{M}[s_1]$۔ نو
+    \begin{align*}
+      \Value{t_1}{M}[s_2] & = \Value{t_1}{M}[s_1]
+      & \text{(د \olref{prop:valindep} له مخې)} \\
+      & = \Value{t_2}{M}[s_1]
+      & \text{(ځکه چې $\Sat{M}{\eq[t_1][t_2]}[s_1]$)}\\
+      &= \Value{t_2}{M}[s_2]
+      & \text{(د \olref{prop:valindep} له مخې)،}
+    \end{align*}
+    نو $\Sat{M}{\eq[t_1][t_2]}[s_2]$۔}
+\end{enumerate}
+\textbf{د ژباړې د نسخې سمون (OLFOL-021):} سرچينه د اټومي اړوند د
+حالت په وروستي ټوپل کښې لومړي ترم ته په ناسمه توګه د عمومي شاخص
+نښه ورکوي؛ دلته هغه د ټوپل له لومړي شاخص سره سم شوے دے۔
+
+اوس فرض کړئ چې د~$!A$ څخه د لږ پېچليو ټولو !!{formula}s~$!B$ دپاره
+$\Sat{M}{!B}[s_1]$ هله او يوازې هله چې $\Sat{M}{!B}[s_2]$۔ استقرايي
+ګام د~$!A$ د اصلي چلوونکي له مخې په حالتونو وېشل کېږي۔ په هر
+حالت کښې يوازې د !!{biconditional} مخامخ لور ثابتوو؛ د شاتني لور
+ثبوت ئې هم‌شکله دے۔ د سورو له حالتونو پرته، په ټولو حالتونو کښې
+استقرايي فرض د~$!A$ پر فرعي !!{formula}s~$!B$ کاروو۔ د~$!B$ ازاد
+متغيرونه د~$!A$ د ازادو متغيرونو په منځ کښې دي۔ نو که~$s_1$ او~$s_2$
+د~$!A$ پر ازادو متغيرونو سره موافقې وي، د~$!B$ پر هغو هم موافقې دي،
+او استقرايي فرض پر~$!B$ کارول کېدے شي۔
+
+\begin{enumerate}
+\tagitem{defNot}{}{%
+  \iftag{probNot}{%
+    \indcase!{!A}{\lnot !B}{}}{%
+    \indcase{!A}{\lnot !B}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو
+      $\Sat/{M}{!B}[s_1]$؛ د استقرايي فرض له مخې
+      $\Sat/{M}{!B}[s_2]$، ځکه $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defAnd}{}{%
+  \iftag{probAnd}{%
+    \indcase!{!A}{!B \land !C}{}}{%
+    \indcase{!A}{!B \land !C}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو
+      $\Sat{M}{!B}[s_1]$ او $\Sat{M}{!C}[s_1]$؛ د استقرايي فرض له
+      مخې $\Sat{M}{!B}[s_2]$ او $\Sat{M}{!C}[s_2]$۔ ځکه
+      $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defOr}{}{%
+  \iftag{probOr}{%
+    \indcase!{!A}{!B \lor !C}{}}{%
+    \indcase{!A}{!B \lor !C}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو
+      $\Sat{M}{!B}[s_1]$ يا $\Sat{M}{!C}[s_1]$۔ د استقرايي فرض له
+      مخې $\Sat{M}{!B}[s_2]$ يا $\Sat{M}{!C}[s_2]$؛ نو
+      $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defIf}{}{%
+  \iftag{probIf}{%
+    \indcase!{!A}{!B \lif !C}{}}{%
+    \indcase{!A}{!B \lif !C}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو
+    $\Sat/{M}{!B}[s_1]$ يا $\Sat{M}{!C}[s_1]$۔ د استقرايي فرض له مخې
+    $\Sat/{M}{!B}[s_2]$ يا $\Sat{M}{!C}[s_2]$؛ نو
+    $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defIff}{}{%
+  \iftag{probIff}{%
+    \indcase!{!A}{!B \liff !C}{}}{%
+    \indcase{!A}{!B \liff !C}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو يا
+      $\Sat{M}{!B}[s_1]$ او $\Sat{M}{!C}[s_1]$ دواړه، يا
+      $\Sat/{M}{!B}[s_1]$ او $\Sat/{M}{!C}[s_1]$ دواړه صدق نۀ کوي۔
+      د استقرايي فرض له مخې، يا $\Sat{M}{!B}[s_2]$ او
+      $\Sat{M}{!C}[s_2]$ دواړه، يا $\Sat/{M}{!B}[s_2]$ او
+      $\Sat/{M}{!C}[s_2]$ دواړه صدق نۀ کوي۔ په هر حالت کښې
+      $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defEx}{}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B]}{}}{%
+    \indcase{!A}{\lexists[x][!B]}{که $\Sat{M}{\indfrm}[s_1]$ وي، داسې
+      $m \in \Domain{M}$ شته چې $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$۔
+      $s_1' = \Subst{s_1}{m}{x}$ او $s_2' =
+      \Subst{s_2}{m}{x}$ ونيسئ۔ د~$!B$ ازاد متغيرونه د $x_1$،
+      \dots، $x_n$ او~$x$ په منځ کښې دي۔ $s_1'(x_i) = s_2'(x_i)$،
+      ځکه $s_1'$ او~$s_2'$ په ترتيب سره د~$s_1$ او~$s_2$
+      $x$-ډولونه دي، او د فرض له مخې $s_1(x_i) = s_2(x_i)$۔
+      د~$s_1'$ او~$s_2'$ د تعريف له مخې
+      $s_1'(x) = s_2'(x) = m$۔ نو استقرايي فرض پر~$!B$ او
+      $s_1'$، $s_2'$ کارول کېږي، او $\Sat{M}{!B}[s_2']$ لرو۔ څرنګه
+      چې $s_2' = \Subst{s_2}{m}{x}$، داسې $m \in \Domain{M}$ شته چې
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$؛ ځکه
+      $\Sat{M}{\indfrm}[s_2]$۔}}}
+
+\tagitem{defAll}{}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B]}{}}{%
+    \indcase{!A}{\lforall[x][!B]}{که $\Sat{M}{\indfrm}[s_1]$ وي، نو
+      د هر $m \in \Domain{M}$ دپاره
+      $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$۔ غواړو وښيو چې د هر
+      $m \in \Domain{M}$ دپاره
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$ هم صدق کوي۔ يو خپل‌سري
+      $m \in \Domain{M}$ ونيسئ، او
+      $s_1' = \Subst{s_1}{m}{x}$ او $s_2' =
+      \Subst{s_2}{m}{x}$ په پام کښې ونيسئ۔
+      $\Sat{M}{!B}[s_1']$ لرو۔ د~$!B$ ازاد متغيرونه د $x_1$،
+      \dots، $x_n$ او~$x$ په منځ کښې دي۔
+      $s_1'(x_i) = s_2'(x_i)$، ځکه $s_1'$ او~$s_2'$ په ترتيب سره
+      د~$s_1$ او~$s_2$ $x$-ډولونه دي، او د فرض له مخې
+      $s_1(x_i) = s_2(x_i)$۔ د~$s_1'$ او~$s_2'$ د تعريف له مخې
+      $s_1'(x) = s_2'(x) = m$۔ نو استقرايي فرض پر~$!B$ او
+      $s_1'$، $s_2'$ کارول کېږي، او $\Sat{M}{!B}[s_2']$ لرو۔ دا د هر
+      $m \in \Domain{M}$ دپاره صدق کوي، يعنې د ټولو
+      $m \in \Domain{M}$ دپاره
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$؛ نو
+      $\Sat{M}{\indfrm}[s_2]$۔}}}
+\end{enumerate}
+\textbf{د ژباړې د نسخې سمون (OLFOL-022):} سرچينه د عمومي سور په
+حالت کښې دواړه بدلې شوې ګومارنې له بې‌شاخصه ګومارنې څخه جوړوي؛ دلته
+په ترتيب سره د لومړۍ او دويمې ګومارنې سم شاخصونه کارول شوي دي۔
+د استقرا له مخې پايله اخلو چې هر کله د~$!A$ ازاد !!{variable}s د
+$x_1$، \dots، $x_n$ په منځ کښې وي او
+$s_1(x_i)=s_2(x_i)$ د $i = 1$، \dots،~$n$ دپاره وي، نو
+$\Sat{M}{!A}[s_1]$ هله او يوازې هله چې $\Sat{M}{!A}[s_2]$۔
+\end{proof}
+
+\begin{probtag}{probNot,probOr,probAnd,probIf,probIff,probEx,probAll}
+د \olref[fol][syn][ass]{prop:satindep} ثبوت بشپړ کړئ۔
+\end{probtag}
+
+\begin{explain}
+!!^{sentence}s ازاد متغيرونه نۀ لري؛ نو هرې دوې متغير ګومارنې د هرې
+جملې ټولو (صفر) ازادو متغيرونو ته يو شان څيزونه ګوماري۔ له دې کبله
+اوس ثابته شوې قضيه وايي چې !!a{sentence} د متغير ګومارنې په نسبت په
+جوړښت کښې صدق کوي که نۀ، له هغې ګومارنې څخه په بشپړ ډول خپلواک دي۔
+دا حقيقت ثبتوو۔ همدا د لاندې تعريف بنسټ دے، چې د متغير ګومارنې له
+يادولو پرته په !!a{structure} کښې د !!a{sentence} صدق تعريفوي۔
+\end{explain}
+
+\begin{cor}
+\ollabel{cor:sat-sentence}
+که~$!A$ !!a{sentence} او~$s$ يوه متغير ګومارنه وي، نو
+$\Sat{M}{!A}[s]$ هله او يوازې هله چې د هرې متغير ګومارنې~$s'$ دپاره
+$\Sat{M}{!A}[s']$۔
+\end{cor}
+
+\begin{proof}
+  $s'$ هره متغير ګومارنه ونيسئ۔ څرنګه چې~$!A$ !!a{sentence} ده، ازاد
+  متغيرونه نۀ لري؛ ځکه هره متغير ګومارنه~$s'$ په څرګند ډول د~$!A$
+  ټولو ازادو متغيرونو ته هماغه څيزونه ګوماري چې~$s$ ئې ګوماري۔ نو د
+  \olref{prop:satindep} شرط پوره کېږي، او
+  $\Sat{M}{!A}[s]$ هله او يوازې هله چې $\Sat{M}{!A}[s']$۔
+\end{proof}
+
+\begin{defn}
+\ollabel{defn:satisfaction}
+که~$!A$ !!a{sentence} وي، وايو چې !!a{structure}~$\Struct M$
+په~$!A$ کښې \emph{صدق کوي}، $\Sat{M}{!A}$، هله او يوازې هله چې د
+ټولو متغير ګومارنو~$s$ دپاره $\Sat{M}{!A}[s]$۔
+\end{defn}
+
+که $\Sat{M}{!A}$ وي، په ساده ډول دا هم وايو چې \emph{$!A$
+په~$\Struct{M}$ کښې رښتيا ده۔} د صدق مفهوم په طبيعي ډول له انفرادي
+!!{sentence}s څخه د !!{sentence}s سټونو ته غځېږي۔
+
+\begin{defn}
+\ollabel{defn:sat}
+که~$\Gamma$ د !!{sentence}s يو سټ وي، وايو چې
+!!a{structure}~$\Struct M$ په~$\Gamma$ کښې \emph{صدق کوي}،
+$\Sat{M}{\Gamma}$، هله او يوازې هله چې د ټولو
+$!A \in \Gamma$ دپاره $\Sat{M}{!A}$۔
+\end{defn}
+\textbf{د ژباړې د نسخې سمون (OLFOL-023):} سرچينه د دې تعريف په
+پيل کښې د جملو د سټ نښه بې‌ځايه دوه ځله راوړي؛ دلته تکرار لرې شوے
+دے۔
+
+\begin{prop}\ollabel{prop:sentence-sat-true}
+  فرض کړئ $\Struct{M}$ !!a{structure}، $!A$ !!a{sentence}، او~$s$
+  يوه متغير ګومارنه ده۔ $\Sat{M}{!A}$ هله او يوازې هله چې
+  $\Sat{M}{!A}[s]$۔
+\end{prop}
+
+\begin{proof}
+تمرین۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sentence-sat-true} ثابته کړئ۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:sat-quant}
+  فرض کړئ $!A(x)$ يوازې~$x$ ازاد لري، او~$\Struct M$
+  !!a{structure} دے۔ نو:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$\Sat{M}{\lexists[x][!A(x)]}$ هله او يوازې هله چې
+      لږ تر لږه د يوې متغير ګومارنې~$s$ دپاره
+      $\Sat{M}{!A(x)}[s]$۔}{}
+    \tagitem{prvAll}{$\Sat{M}{\lforall[x][!A(x)]}$ هله او يوازې هله چې
+      د ټولو متغير ګومارنو~$s$ دپاره $\Sat{M}{!A(x)}[s]$۔}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+تمرین۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sat-quant} ثابته کړئ۔
+\end{prob}
+
+\begin{prob}
+\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}
+فرض کړئ~$\Lang L$ له !!{function}s پرته ژبه ده۔ د
+!!{structure}~$\Struct M$، !!a{constant}~$c$، او
+$a \in \Domain M$ په لرلو سره، $\Struct M[a/c]$ هغه !!{structure}
+تعريف کړئ چې کټ مټ د~$\Struct M$ په شان دے، خو
+$\Assign{c}{M[a/c]} = a$۔ د !!{sentence}s~$!A$ دپاره
+$\Struct M \VDash !A$ داسې تعريف کړئ:
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Struct{M} \VDash \indfrm$ نۀ۔}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Struct{M} \VDash \indfrm$۔}}{}
+
+\item \indcase{!A}{\Atom{R}{d_1, \dots, d_n}}{$\Struct M \VDash \indfrm$
+  هله او يوازې هله چې
+  $\langle \Assign{d_1}{M}, \dots, \Assign{d_n}{M} \rangle \in
+  \Assign{R}{M}$۔}
+
+\item \indcase{!A}{\eq[d_1][d_2]}{$\Struct M \VDash \indfrm$ هله او
+  يوازې هله چې $\Assign{d_1}{M} = \Assign{d_2}{M}$۔}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Struct{M} \VDash \indfrm$ هله او يوازې
+    هله چې $\Struct{M} \VDash {!B}$ نۀ وي۔}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Struct{M} \VDash
+    \indfrm$ هله او يوازې هله چې $\Struct{M} \VDash!B$ او
+    $\Struct{M} \VDash !C$۔}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Struct{M} \VDash \indfrm$ هله او
+    يوازې هله چې $\Struct{M} \VDash !B$ يا
+    $\Struct{M} \VDash !C$ (يا دواړه)۔}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Struct{M} \VDash \indfrm$ هله او
+    يوازې هله چې $\Struct {M} \VDash !B$ نۀ وي يا
+    $\Struct M \VDash !C$ وي (يا دواړه)۔}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Struct{M} \VDash {\indfrm}$ هله او
+    يوازې هله چې يا $\Struct{M} \VDash {!B}$ او
+    $\Struct{M} \VDash {!C}$ دواړه وي، يا نۀ
+    $\Struct{M} \VDash {!B}$ وي او نۀ $\Struct{M} \VDash {!C}$۔}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Struct{M} \VDash {\indfrm}$ هله او
+    يوازې هله چې د ټولو $a \in \Domain{M}$ دپاره
+    $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$، په دې شرط چې~$c$
+    په~$!B$ کښې نۀ وي راغلے۔}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Struct{M} \VDash
+  {\indfrm}$ هله او يوازې هله چې داسې $a \in \Domain M$ وي چې
+  $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$، په دې شرط چې~$c$
+  په~$!B$ کښې نۀ وي راغلے۔}}{}
+\end{enumerate}
+فرض کړئ $x_1$، \dots، $x_n$ په~$!A$ کښې ټول ازاد !!{variable}s،
+$c_1$، \dots، $c_n$ هغه ثابت سمبولونه دي چې په~$!A$ کښې نۀ دي،
+$a_1$، \dots، $a_n \in \Domain M$، او $s(x_i) = a_i$۔
+
+وښيئ چې $\Sat{M}{!A}[s]$ هله او يوازې هله چې
+$\Struct M[a_1/c_1,\dots,a_n/c_n]
+\VDash \Subst{\Subst{!A}{c_1}{x_1}\dots}{c_n}{x_n}$۔
+
+(دا مسئله ښيي چې د لومړۍ درجې منطق دپاره داسې معنٰی پوهنه ورکول
+ممکن دي چې له متغير ګومارنو پرته کار وکړي۔)
+\end{prob}
+
+\begin{prob}
+فرض کړئ~$f$ يو داسې تابعي سمبول دے چې په~$!A(x,y)$ کښې نۀ وي۔ وښيئ
+چې داسې !!a{structure}~$\Struct{M}$ شته چې
+$\Sat{M}{\lforall[x][\lexists[y][!A(x,y)]]}$ هله او يوازې هله چې داسې
+$\Struct M'$ شته چې $\Sat{M'}{\lforall[x][!A(x,f(x))]}$۔
+
+(دا مسئله د سکولم د قضيې په نامه د پېژندل شوې قضيې يو ځانګړے حالت
+دے؛ $\lforall[x][!A(x,f(x))]$ ته د
+$\lforall[x][\lexists[y][!A(x,y)]]$ \emph{د سکولم نورماله بڼه} ويل
+کېږي۔)
+\end{prob}
+
+\end{document}

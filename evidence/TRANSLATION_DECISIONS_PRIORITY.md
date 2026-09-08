@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 94 high-priority entries from the complete 196-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 94 high-priority entries from the complete 216-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -250,6 +250,7 @@ This view contains 94 high-priority entries from the complete 196-entry decision
 - Locations:
   - OLP-0002; content; `content/content.tex` source line(s) 20; `ps-Arab-PK/content/content.tex` target line(s) 13; page: pending stable pagination in a reader containing this unit
   - OLP-0059; Preliminaries; `content/propositional-logic/syntax-and-semantics/preliminaries.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/preliminaries.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0154; \printtoken{S}{main operator} of a Formula; `content/first-order-logic/syntax-and-semantics/main-operator.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LICENSE
 
@@ -401,6 +402,10 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 124; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) 19,36; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 23; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 25,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 16,22,55,68,72,78,83; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 50,161; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 15,22,35,36; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 24,181,402; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -549,6 +554,10 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 73; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 140; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 64; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 24; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) 142,150; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 164; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 163,168; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 39; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 37,45,47; page: pending stable pagination in a reader containing this unit
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -904,6 +913,9 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 156,182; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 162,188; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 153; page: pending stable pagination in a reader containing this unit
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 72; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 69,70,71,84; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 186,189,211; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 19,42,82,187,188,191,213; page: pending stable pagination in a reader containing this unit
+  - OLP-0155; \printtoken{P}{subformula}; `content/first-order-logic/syntax-and-semantics/subformulas.tex` source line(s) 43,80,81; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/subformulas.tex` target line(s) 22,43,74,77,78,79; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 15,145,152,183,184,206; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 13,18,141,147,177,198,204; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1089,6 +1101,8 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0125; \usetoken{P}{derivation} with \usetoken{S}{identity}; `content/first-order-logic/axiomatic-deduction/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-AXIOM
 
@@ -1309,6 +1323,7 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
   - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 11,32,34,36,40,43,46,50; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 11,28,32,34,36,39,41,42,45,49,57; page: pending stable pagination in a reader containing this unit
+  - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1404,6 +1419,9 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 38,44,75; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 72; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 107,116; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 250,265,284,307; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1615,6 +1633,16 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 1,3,11,13,14,15,16,17,18,19,20,21,24,26,28,30,31,32,33,36,39,41,42,44,45,47,48,50,55,56,58,60,63,64,67,70,71,76,77,78; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 13,23,29,30,31,54,71,74,75,78,80,85; page: pending stable pagination in a reader containing this unit
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 1,3,11,14,15,16,17,20,21,22,23,24,25,26,27,29,30,34,35,38,42,49,55,56; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 20,21,22,24,29,36,40,52; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 1,20,21,22,44; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 19,20,21,24,25,26,40,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0149; fol; `content/first-order-logic/syntax-and-semantics/syntax.tex` source line(s) 1,8,12,14,20,24; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/syntax.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0150; Introduction; `content/first-order-logic/syntax-and-semantics/intro-syntax.tex` source line(s) 1,13,15,16,17,18,19,20,26; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-syntax.tex` target line(s) 13,14,15,17,18,19,24; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 1,3,11,14,15,17,19,23,26,32,44,45,46,47,49,53,57,65,66,68,72,93,101,102,110,135,137,139,140,144,149,150; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) 11,14,18,24,29,43,44,49,62,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 1,3,11,13,15,22,23,29,33,41,42,43,46,48,52,55,57,58,60,61,63,64,66,67,69,70,72,73,75,76,78,83,85,86,90,91,94,95,96,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 11,13,15,17,19,22,23,25,27,29,33,35,40,45,47,50,51,53,54,82,84,89,93,94,95,103,118,124,128,161,187,188,191,193,205,206,210,215,216,236; page: pending stable pagination in a reader containing this unit
+  - OLP-0153; Unique Readability; `content/first-order-logic/syntax-and-semantics/unique-readability.tex` source line(s) 1,14,16,18,24,29,31,39,45,46,47,52,57,63,64,65,66,119,120,132,133,151,156,158,183,185,186; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex` target line(s) 22,30,32,44,45,46,60,61,62,63,67,71,83,126,131,137,140,149,150,151,157,182,185; page: pending stable pagination in a reader containing this unit
+  - OLP-0154; \printtoken{S}{main operator} of a Formula; `content/first-order-logic/syntax-and-semantics/main-operator.tex` source line(s) 1,11,15,24,53,60,61,62,63,64,65,71,75,76,82,84,94,95,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex` target line(s) 11,51,52,58,62,74,83,101; page: pending stable pagination in a reader containing this unit
+  - OLP-0155; \printtoken{P}{subformula}; `content/first-order-logic/syntax-and-semantics/subformulas.tex` source line(s) 1,3,11,14,15,16,17,20,21,24,27,29,34,37,41,42,45,47,48,51,52,56,57,60,61,65,66,67,72,73,76,77,78,79,81,86,87,92,93,103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/subformulas.tex` target line(s) 17,24,45,52,89,90,95,100,101,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 1,13,14,17,20,27,34,35,37,43,44,48,56,63,67,68,80,106,111,115,145,146,150,152,173,187,198,207,213,218,239,249,254,257,268,273; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 14,18,24,31,37,40,44,55,62,66,77,113,145,148,161,167,174,177,180,191,200,204,207,212,220,227,232,236,241,259,265; page: pending stable pagination in a reader containing this unit
+  - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 1,3,11,13,15,18,21,25,28,32,38,39,44,48,49,50,51,53,54,55,58,64,68,72,73,75,79,85,86,95,96,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 18,38,39,44,48,49,50,51,53,55,59,66,70,72,81,82,91; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 1,20,31,32,45,46,84,90,103,104,108,112,113,117,119,123; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 13,19,30,31,32,48,87,93,107,113,116,123,126; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -1629,6 +1657,11 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 15,16; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 15; page: pending stable pagination in a reader containing this unit
   - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 15,23,25; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 14,15,16,17,24,25; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 41; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
+  - OLP-0159; fol; `content/first-order-logic/syntax-and-semantics/semantics.tex` source line(s) 18; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0160; Introduction; `content/first-order-logic/syntax-and-semantics/intro-semantics.tex` source line(s) 21,24,26,31; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-semantics.tex` target line(s) 20,22,24,29; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 36,38,41,42,48,49,53,54,60,75,76,77,82,83,88,89,90,98,104,153,168,190,191,232,233,339,340,417; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 33,35,38,39,45,46,48,49,56,69,70,71,73,74,78,79,80,84,85,86,93,94,95,100,151,191,192,201,210,234,235,236,246,247,347,348,368,377,385,402; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 3,11,14,16,20,23,25,203,207,210,215,217,221,222,223,232,248,264,266,339; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 11,14,17,18,20,21,23,205,206,218,219,220,221,222,228,229,234,235,236,265,282; page: pending stable pagination in a reader containing this unit
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 17,18,32,66,107,125,129; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 16,17,31,69,113,130,135; page: pending stable pagination in a reader containing this unit
 
 ## TERM-STRUCTURAL-INDUCTION
 
@@ -1640,6 +1673,11 @@ This view contains 94 high-priority entries from the complete 196-entry decision
 - Please double-check: In Pakistani Pashto mathematical prose, is «استقرايي تعريف / جوړښتي استقرا / اټومي بنسټ / جوړوونکے شرط / محدودوونکے شرط» the clearest conventional rendering of “inductive definition / structural induction / atomic base / generation clause / limiting clause” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 50,56,57,70,72,77,82,86; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 54,55,69,70,71,75,80,84,85; page: pending stable pagination in a reader containing this unit
+  - OLP-0150; Introduction; `content/first-order-logic/syntax-and-semantics/intro-syntax.tex` source line(s) 18,19,26,28,30; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-syntax.tex` target line(s) 18,25,27,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0153; Unique Readability; `content/first-order-logic/syntax-and-semantics/unique-readability.tex` source line(s) 31,63,132,133,151,158,183,186; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex` target line(s) 32,61,89,93,97,102,131,155,157,182,185; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 13,21,67,115,187,198; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 13,18,66,113,177,180,191,198,246; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 42,65; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 41,48,64,107,112,116,119,126,133,141,149,159,175,197,237,348,354; page: pending stable pagination in a reader containing this unit
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 43; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 43,100; page: pending stable pagination in a reader containing this unit
 
 ## TERM-MODEL-THEORY
 
@@ -1653,6 +1691,8 @@ This view contains 94 high-priority entries from the complete 196-entry decision
   - OLP-0139; fol; `content/first-order-logic/introduction/introduction.tex` source line(s) 24; `ps-Arab-PK/content/first-order-logic/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 3,11,19,20,24,26,28,30,32,38,47,48,49,50,53,54,56,57,60; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 11,19,24,25,27,29,32,37,47,48,49,53,56,59; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 39,41,47,52; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 38,40,46,50; page: pending stable pagination in a reader containing this unit
+  - OLP-0159; fol; `content/first-order-logic/syntax-and-semantics/semantics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

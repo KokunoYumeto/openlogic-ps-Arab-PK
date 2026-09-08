@@ -803,3 +803,183 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: places the complete atomic formula P(v0) inside the universal quantifier body.
 - Disclosure: `repair-quantifier-atom-bracing-plus-adjacent-note`.
 
+## OLFOL-005
+
+- Unit: `OLP-0152`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` (8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3) at `content/first-order-logic/syntax-and-semantics/terms-formulas.tex:148`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:144`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes the unmatched closing parenthesis from the disjunction-based abbreviation of the conditional.
+- Disclosure: `remove-unmatched-parenthesis-plus-adjacent-note`.
+
+## OLFOL-006
+
+- Unit: `OLP-0152`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` (8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3) at `content/first-order-logic/syntax-and-semantics/terms-formulas.tex:167`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:168`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: restores the object-language styling macro on the successor function symbol.
+- Disclosure: `restore-object-language-style-plus-adjacent-note`.
+
+## OLFOL-007
+
+- Unit: `OLP-0154`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/main-operator.tex` (788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786) at `content/first-order-logic/syntax-and-semantics/main-operator.tex:90-91`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex:99`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: moves the closing parentheses inside the math spans for the conjunction and disjunction examples.
+- Disclosure: `move-parentheses-inside-math-plus-adjacent-note`.
+
+## OLFOL-008
+
+- Unit: `OLP-0156`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` (b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01) at `content/first-order-logic/syntax-and-semantics/formation-sequences.tex:45-46`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:45`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: changes the argument indices from zero-through-k to one-through-k in the k-ary term clause.
+- Disclosure: `repair-argument-indices-plus-adjacent-note`.
+
+## OLFOL-009
+
+- Unit: `OLP-0156`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` (b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01) at `content/first-order-logic/syntax-and-semantics/formation-sequences.tex:200`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:201`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: replaces semantic equivalence with the chapter's syntactic-identity relation in the conjunction case.
+- Disclosure: `replace-relation-symbol-plus-combined-adjacent-note`.
+
+## OLFOL-010
+
+- Unit: `OLP-0156`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` (b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01) at `content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199,206`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:201`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: restores both copied L_0 formula-set subscripts to the first-order language L used by the theorem.
+- Disclosure: `restore-language-subscript-plus-combined-adjacent-note`.
+
+## OLFOL-011
+
+- Unit: `OLP-0156`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` (b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01) at `content/first-order-logic/syntax-and-semantics/formation-sequences.tex:184-185,204-205`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:201`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: states that m and n are final indices rather than incorrectly calling them the lengths of zero-indexed formation sequences.
+- Disclosure: `clarify-final-index-plus-combined-adjacent-note`.
+
+## OLFOL-012
+
+- Unit: `OLP-0161`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/structures.tex` (7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf) at `content/first-order-logic/syntax-and-semantics/structures.tex:77`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex:77`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: reads the malformed phrase single-two place as single two-place relation.
+- Disclosure: `read-hyphenation-as-two-place-plus-adjacent-note`.
+
+## OLFOL-013
+
+- Unit: `OLP-0162`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/covered-structures.tex` (50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530) at `content/first-order-logic/syntax-and-semantics/covered-structures.tex:54-56`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex:68`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes the dangling first equals sign so the calculation has one equality at each step.
+- Disclosure: `remove-duplicated-equals-plus-adjacent-note`.
+
+## OLFOL-014
+
+- Unit: `OLP-0153`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/unique-readability.tex` (6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833) at `content/first-order-logic/syntax-and-semantics/unique-readability.tex:19`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex:22`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: reads the source misspelling intepretation as interpretation.
+- Disclosure: `read-spelling-as-interpretation-plus-adjacent-note`.
+
+## OLFOL-015
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-176`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: states explicitly that the existential witness m must make B(m) satisfied.
+- Disclosure: `restore-matrix-instance-plus-combined-adjacent-note`.
+
+## OLFOL-016
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes the assignment argument from the interpretation of the relation symbol R.
+- Disclosure: `remove-spurious-assignment-argument-plus-combined-adjacent-note`.
+
+## OLFOL-017
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-293`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes a comma accidentally placed inside the existential formula argument.
+- Disclosure: `remove-stray-formula-comma-plus-combined-adjacent-note`.
+
+## OLFOL-018
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: restores m before =2 in the witness assignment statement.
+- Disclosure: `restore-variable-before-value-plus-combined-adjacent-note`.
+
+## OLFOL-019
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-351`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: uses m, the arbitrary domain element fixed in the argument, in the universal conclusion.
+- Disclosure: `restore-bound-metavariable-plus-combined-adjacent-note`.
+
+## OLFOL-020
+
+- Unit: `OLP-0163`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/satisfaction.tex` (1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace) at `content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-320`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:375`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes one surplus parenthesis from each of the two formulas used to derive the existential clause via defined quantification.
+- Disclosure: `remove-two-surplus-parentheses-plus-combined-adjacent-note`.
+
+## OLFOL-021
+
+- Unit: `OLP-0164`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/assignments.tex` (761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1) at `content/first-order-logic/syntax-and-semantics/assignments.tex:82-92`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:107`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: starts the concluding k-tuple with t_1 rather than the unrelated t_i.
+- Disclosure: `restore-first-tuple-index-plus-adjacent-note`.
+
+## OLFOL-022
+
+- Unit: `OLP-0164`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/assignments.tex` (761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1) at `content/first-order-logic/syntax-and-semantics/assignments.tex:174-182`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:204`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: defines s_1' from s_1 and s_2' from s_2 rather than defining both from an unindexed s.
+- Disclosure: `restore-distinct-base-assignments-plus-adjacent-note`.
+
+## OLFOL-023
+
+- Unit: `OLP-0164`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/assignments.tex` (761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1) at `content/first-order-logic/syntax-and-semantics/assignments.tex:239-243`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:259`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes the second stray occurrence of Gamma from the prose defining satisfaction of a set of sentences.
+- Disclosure: `remove-duplicated-gamma-plus-adjacent-note`.
+
+## OLFOL-024
+
+- Unit: `OLP-0165`
+- Frozen source: `content/first-order-logic/syntax-and-semantics/extensionality.tex` (50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda) at `content/first-order-logic/syntax-and-semantics/extensionality.tex:86-100`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex:105`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS`
+- Treatment: removes the dangling first equals sign so the term-value calculation has one equality at each step.
+- Disclosure: `remove-duplicated-equals-plus-adjacent-note`.
+

@@ -1,0 +1,142 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ext}
+
+\olsection{امتداديتوب}
+
+\begin{explain}
+امتداديتوب، چې کله کله اړوندتيا هم بلل کېږي، په غير رسمي ډول داسې
+څرګندولے شو: يوازېني عوامل چې د !!{formula}~$!A$ پر صدق د
+!!a{structure}~$\Struct M$ او د !!a{variable} ګومارنې~$s$ په نسبت
+اغېز لري، د !!{domain} کچه او هغه ګومارنې دي چې~$\Struct M$ او~$s$ ئې
+د ژبې هغو اجزاوو ته کوي چې په رښتيا په~$!A$ کښې راځي۔
+
+د امتداديتوب يوه سمدستي پايله دا ده: که دوه
+!!{structure}s~$\Struct M$ او~$\Struct M'$ د ژبې پر ټولو هغو اجزاوو
+سره موافق وي چې په جمله~$!A$ کښې راځي، او يوه ساحه ولري، نو
+$\Struct M$ او~$\Struct M'$ بايد پر دې هم موافق وي چې پخپله~$!A$
+رښتيا ده که نۀ۔
+\end{explain}
+
+\begin{prop}[امتداديتوب]
+  \ollabel{prop:extensionality}
+  فرض کړئ~$!A$ !!a{formula}، او~$\Struct M_1$ او~$\Struct M_2$ داسې
+  !!{structure}s دي چې $\Domain{M_1} = \Domain{M_2}$، او~$s$ پر
+  $\Domain{M_1} = \Domain{M_2}$ يوه متغير ګومارنه ده۔ که په~$!A$ کښې
+  د راتلونکو هر !!{constant}~$c$، اړوند سمبول~$R$، او
+  !!{function}~$f$ دپاره
+  $\Assign{c}{M_1} = \Assign{c}{M_2}$،
+  $\Assign{R}{M_1}=\Assign{R}{M_2}$، او
+  $\Assign{f}{M_1} = \Assign{f}{M_2}$ وي، نو
+  $\Sat{M_1}{!A}[s]$ هله او يوازې هله چې $\Sat{M_2}{!A}[s]$۔
+\end{prop}
+
+\begin{proof}
+  لومړے (پر~$t$ د استقرا له لارې) ثابته کړئ چې د هر ترم دپاره
+  $\Value{t}{M_1}[s] = \Value{t}{M_2}[s]$۔ بيا قضيه پر~$!A$ د استقرا
+  له لارې ثابته کړئ، او د استقرا په بنسټ کښې (چې~$!A$ اټومي وي) له
+  همدې ثابتې شوې ادعا څخه کار واخلئ۔
+\end{proof}
+
+\begin{prob}
+د \olref[fol][syn][ext]{prop:extensionality} ثبوت په تفصيل بشپړ کړئ۔
+\end{prob}
+
+\begin{cor}[د !!^{sentence}s دپاره امتداديتوب]
+  \ollabel{cor:extensionality-sent}
+  فرض کړئ~$!A$ !!a{sentence}، او~$\Struct{M_1}$، $\Struct{M_2}$ لکه
+  په \olref{prop:extensionality} کښې وي۔ نو $\Sat{M_1}{!A}$ هله او
+  يوازې هله چې $\Sat{M_2}{!A}$۔
+\end{cor}
+
+\begin{proof}
+له \olref{prop:extensionality} او \olref[ass]{cor:sat-sentence} څخه
+لاس ته راځي۔
+\end{proof}
+
+پر دې سربېره، د يوه ترم ارزښت، او دا چې !!a{structure} په
+!!a{formula} کښې صدق کوي که نۀ، يوازې د هغه د فرعي ترمونو په
+ارزښتونو پورې تړلي دي۔
+
+\begin{prop}\ollabel{prop:ext-terms}
+فرض کړئ~$\Struct M$ !!a{structure}، $t$ او~$t'$ ترمونه، او~$s$ يوه
+متغير ګومارنه ده۔ نو $\Value{\Subst{t}{t'}{x}}{M}[s] =
+\Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$۔
+\end{prop}
+
+\begin{proof}
+پر~$t$ د استقرا له لارې۔
+\begin{enumerate}
+\item که~$t$ يو ثابت وي، يعنې $t\ident c$، نو
+  $\Subst{t}{t'}{x} = c$، او $\Value{c}{M}[s] = \Assign{c}{M} =
+  \Value{c}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$۔
+
+\item که~$t$ له~$x$ پرته بل متغير وي، يعنې $t \ident y$، نو
+  $\Subst{t}{t'}{x} = y$، او $\Value{y}{M}[s] =
+  \Value{y}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$، ځکه
+  $\varAssign{s}{\Subst{s}{\Value{t'}{M}[s]}{x}}{x}$۔
+
+\item که $t \ident x$ وي، نو $\Subst{t}{t'}{x} = t'$۔ خو د
+  $\Subst{s}{\Value{t'}{M}[s]}{x}$ د تعريف له مخې
+  $\Value{x}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}] = \Value{t'}{M}[s]$۔
+
+\item که $t \ident \Atom{f}{t_1,\dots,t_n}$ وي، نو:
+\begin{multline*}
+  \Value{\Subst{t}{t'}{x}}{M}[s]  \\
+  \begin{aligned}[b]
+& = \Value{\Atom{f}{\Subst{t_1}{t'}{x}, \dots, \Subst{t_n}{t'}{x}}}{M}[s]\\
+& \qquad    \text{د $\Subst{t}{t'}{x}$ د تعريف له مخې}\\
+& = \Assign{f}{M}(\Value{\Subst{t_1}{t'}{x}}{M}[s], \dots,
+    \Value{\Subst{t_n}{t'}{x}}{M}[s])\\
+    & \qquad  \text{د $\Value{\Atom{f}{\dots}}{M}[s]$ د تعريف له مخې}\\
+& = \Assign{f}{M}(\Value{t_1}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}], \dots,
+   \Value{t_n}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}])\\
+& \qquad    \text{د استقرايي فرض له مخې}\\
+& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
+    \text{د $\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ د تعريف له مخې}
+  \end{aligned}
+\end{multline*}
+\textbf{د ژباړې د نسخې سمون (OLFOL-024):} سرچينه د دې محاسبې د
+لومړۍ کرښې په پای او د دويمې کرښې په پيل کښې د مساوات نښه دوه ځله
+راوړي؛ دلته زياته نښه لرې شوې ده۔
+\end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:ext-formulas}
+فرض کړئ~$\Struct M$ !!a{structure}، $!A$ !!a{formula}، $t'$ يو ترم،
+او~$s$ يوه متغير ګومارنه ده۔ نو
+$\Sat{M}{\Subst{!A}{t'}{x}}[s]$ هله او يوازې هله چې
+$\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$۔
+\end{prop}
+
+\begin{proof}
+تمرین۔
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:ext-formulas} ثابته کړئ۔
+\end{prob}
+
+\begin{explain}
+  د \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}
+  مطلب دا دے۔ فرض کړئ يو ترم~$t$ يا !!a{formula}~$!A$، او بل ترم~$t'$
+  لرو، او غواړو د~$\Subst{t}{t'}{x}$ ارزښت، يا دا معلوم کړو چې
+  $\Subst{!A}{t'}{x}$ د !!a{variable} ګومارنې~$s$ په نسبت په
+  !!a{structure}~$\Struct M$ کښې صدق کوي که نۀ۔ يوې لارې کښې لومړے
+  تعويض ترسره کولے، او بيا د~$\Struct{M}$ او~$s$ په نسبت ارزښت يا
+  صدق څېړلے شو۔ بلې لارې کښې لومړے په~$\Struct{M}$ کښې د~$s$ په نسبت
+  د~$t'$ ارزښت~$m = \Value{t'}{M}[s]$ معلومولے، بيا د
+  !!{variable} ګومارنه په~$\Subst{s}{m}{x}$ بدلولے، او ورپسې په
+  $\Struct{M}$ کښې د~$\Subst{s}{m}{x}$ په نسبت د~$t$ ارزښت، يا
+  $\Sat{M}{!A}[\Subst{s}{m}{x}]$ څېړلے شو۔
+  \Cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}
+  تضمينوي چې په دواړو لارو کښې ځواب يو شان وي۔
+\end{explain}
+
+\end{document}

@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 196 terminology, source-correction and other judgment-dependent entries across 148 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 216 terminology, source-correction and other judgment-dependent entries across 166 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -324,6 +324,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0002; content; `content/content.tex` source line(s) 20; `ps-Arab-PK/content/content.tex` target line(s) 13; page: pending stable pagination in a reader containing this unit
   - OLP-0059; Preliminaries; `content/propositional-logic/syntax-and-semantics/preliminaries.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/preliminaries.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0154; \printtoken{S}{main operator} of a Formula; `content/first-order-logic/syntax-and-semantics/main-operator.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LICENSE
 
@@ -493,6 +494,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 124; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) 19,36; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 23; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 25,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 16,22,55,68,72,78,83; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 50,161; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 15,22,35,36; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 24,181,402; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -663,6 +668,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 73; page: pending stable pagination in a reader containing this unit
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 140; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 64; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 24; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) 142,150; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 164; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 163,168; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 39; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 37,45,47; page: pending stable pagination in a reader containing this unit
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DOMAIN
 
@@ -689,6 +698,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 23,28,37,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 22,27,36,42; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 16,17,21,22,43,59,62,91,97,101; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 67; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 25,37,48,61,62,64,65; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 64; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0160; Introduction; `content/first-order-logic/syntax-and-semantics/intro-semantics.tex` source line(s) 13,16,17,18,19,20,23; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 18,32,34,37,40,46,48,50,51,55,68,83,87,90,96,100,103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 17,30; page: pending stable pagination in a reader containing this unit
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) 32,40,44; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CODOMAIN
 
@@ -826,6 +839,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0021; Basics; `content/sets-functions-relations/functions/function-basics.tex` source line(s) 116; `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex` target line(s) 111; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0023; Functions as Relations; `content/sets-functions-relations/functions/functions-relations.tex` source line(s) 33,34,35; `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex` target line(s) 35; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 11,14,21,28,29,47,51,52,54,58; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-INVERSE
 
@@ -1270,6 +1285,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0133; Identity; `content/first-order-logic/completeness/identity.tex` source line(s) 156,182; `ps-Arab-PK/content/first-order-logic/completeness/identity.tex` target line(s) 162,188; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 153; page: pending stable pagination in a reader containing this unit
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 72; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 69,70,71,84; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 186,189,211; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 19,42,82,187,188,191,213; page: pending stable pagination in a reader containing this unit
+  - OLP-0155; \printtoken{P}{subformula}; `content/first-order-logic/syntax-and-semantics/subformulas.tex` source line(s) 43,80,81; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/subformulas.tex` target line(s) 22,43,74,77,78,79; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 15,145,152,183,184,206; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 13,18,141,147,177,198,204; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1471,6 +1489,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0125; \usetoken{P}{derivation} with \usetoken{S}{identity}; `content/first-order-logic/axiomatic-deduction/identity.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0141; Syntax; `content/first-order-logic/introduction/syntax.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-AXIOM
 
@@ -1699,6 +1719,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
   - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 11,32,34,36,40,43,46,50; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 11,28,32,34,36,39,41,42,45,49,57; page: pending stable pagination in a reader containing this unit
+  - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1800,6 +1821,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 38,44,75; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 72; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 107,116; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 250,265,284,307; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -2031,6 +2055,16 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 1,3,11,13,14,15,16,17,18,19,20,21,24,26,28,30,31,32,33,36,39,41,42,44,45,47,48,50,55,56,58,60,63,64,67,70,71,76,77,78; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 13,23,29,30,31,54,71,74,75,78,80,85; page: pending stable pagination in a reader containing this unit
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 1,3,11,14,15,16,17,20,21,22,23,24,25,26,27,29,30,34,35,38,42,49,55,56; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 20,21,22,24,29,36,40,52; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 1,20,21,22,44; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 19,20,21,24,25,26,40,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0149; fol; `content/first-order-logic/syntax-and-semantics/syntax.tex` source line(s) 1,8,12,14,20,24; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/syntax.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0150; Introduction; `content/first-order-logic/syntax-and-semantics/intro-syntax.tex` source line(s) 1,13,15,16,17,18,19,20,26; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-syntax.tex` target line(s) 13,14,15,17,18,19,24; page: pending stable pagination in a reader containing this unit
+  - OLP-0151; First-Order Languages; `content/first-order-logic/syntax-and-semantics/first-order-languages.tex` source line(s) 1,3,11,14,15,17,19,23,26,32,44,45,46,47,49,53,57,65,66,68,72,93,101,102,110,135,137,139,140,144,149,150; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` target line(s) 11,14,18,24,29,43,44,49,62,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 1,3,11,13,15,22,23,29,33,41,42,43,46,48,52,55,57,58,60,61,63,64,66,67,69,70,72,73,75,76,78,83,85,86,90,91,94,95,96,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 11,13,15,17,19,22,23,25,27,29,33,35,40,45,47,50,51,53,54,82,84,89,93,94,95,103,118,124,128,161,187,188,191,193,205,206,210,215,216,236; page: pending stable pagination in a reader containing this unit
+  - OLP-0153; Unique Readability; `content/first-order-logic/syntax-and-semantics/unique-readability.tex` source line(s) 1,14,16,18,24,29,31,39,45,46,47,52,57,63,64,65,66,119,120,132,133,151,156,158,183,185,186; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex` target line(s) 22,30,32,44,45,46,60,61,62,63,67,71,83,126,131,137,140,149,150,151,157,182,185; page: pending stable pagination in a reader containing this unit
+  - OLP-0154; \printtoken{S}{main operator} of a Formula; `content/first-order-logic/syntax-and-semantics/main-operator.tex` source line(s) 1,11,15,24,53,60,61,62,63,64,65,71,75,76,82,84,94,95,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex` target line(s) 11,51,52,58,62,74,83,101; page: pending stable pagination in a reader containing this unit
+  - OLP-0155; \printtoken{P}{subformula}; `content/first-order-logic/syntax-and-semantics/subformulas.tex` source line(s) 1,3,11,14,15,16,17,20,21,24,27,29,34,37,41,42,45,47,48,51,52,56,57,60,61,65,66,67,72,73,76,77,78,79,81,86,87,92,93,103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/subformulas.tex` target line(s) 17,24,45,52,89,90,95,100,101,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 1,13,14,17,20,27,34,35,37,43,44,48,56,63,67,68,80,106,111,115,145,146,150,152,173,187,198,207,213,218,239,249,254,257,268,273; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 14,18,24,31,37,40,44,55,62,66,77,113,145,148,161,167,174,177,180,191,200,204,207,212,220,227,232,236,241,259,265; page: pending stable pagination in a reader containing this unit
+  - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 1,3,11,13,15,18,21,25,28,32,38,39,44,48,49,50,51,53,54,55,58,64,68,72,73,75,79,85,86,95,96,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 18,38,39,44,48,49,50,51,53,55,59,66,70,72,81,82,91; page: pending stable pagination in a reader containing this unit
+  - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 1,20,31,32,45,46,84,90,103,104,108,112,113,117,119,123; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 13,19,30,31,32,48,87,93,107,113,116,123,126; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SEMANTICS
 
@@ -2047,6 +2081,14 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) 44,45,46,47,52,56,64,84; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) 25,33,35,36,42,44,46,58,72,85; page: pending stable pagination in a reader containing this unit
   - OLP-0143; Satisfaction; `content/first-order-logic/introduction/satisfaction.tex` source line(s) 3,11,15,16,17,20,21,22,27,30,31,32,35,37,38,39,40,43,45,47,50,54,55,57,59,62,69,70,71,84,91,97,101,110; `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex` target line(s) 11,31,34,35,38,40,41,42,43,44,48,51,52,53,57,58,61,67,75,97,119; page: pending stable pagination in a reader containing this unit
   - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 19,20,24,31,32,33,34,35,36,38,39; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 13,19,23,24,30,33,35,38,39; page: pending stable pagination in a reader containing this unit
+  - OLP-0149; fol; `content/first-order-logic/syntax-and-semantics/syntax.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0159; fol; `content/first-order-logic/syntax-and-semantics/semantics.tex` source line(s) 12,14,16; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0160; Introduction; `content/first-order-logic/syntax-and-semantics/intro-semantics.tex` source line(s) 13,14,15,16,17,18,19,20,21,23,24,25,26,28,29,30,33,35,36,37,38,39,40,41,43; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-semantics.tex` target line(s) 14,16,23,25,26,27,28,31,33,34,36,38,39,40,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 3,11,14,17,18,22,24,25,28,29,32,33,34,35,37,38,40,45,46,47,48,50,51,53,55,63,64,67,68,69,71,76,79,82,83,85,87,90,95,96; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 14,17,21,22,23,30,31,33,36,45,51,61,63,67,68,73,82,95,97; page: pending stable pagination in a reader containing this unit
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) 3,11,19,31,32,39,40,44; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 3,11,12,16,17,19,20,23,24,25,26,27,28,30,34,36,37,42,43,44,48,50,52,54,60,75,88,89,98,101,102,103,144,148,155,156,157,158,159,163; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 12,17,22,23,24,26,28,33,97,99,153,155,169,173,175,210,218,245,251,266,285,308,337,349,376,379,432,434,435; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 19,24,25,161,170,178,179,180,189,191,206,208,209,224,229,230,231,236,242,247,261,281,282,322,327,333,344; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 18,24,43,77,158,161,188,199,221,223,244,249,255; page: pending stable pagination in a reader containing this unit
+  - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 13,15,16,17,18,20,21,22,25,26,27,30,31,32,37,38,39,40,44,49,50,51,52,54,55,56,57,58,62,63,67,68,69,72,73,76,77,78,84,85; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,16,17,19,21,24,30,36,37,39,55,57,63,74,76,86,102,120; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2063,6 +2105,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0144; \usetoken{P}{sentence}; `content/first-order-logic/introduction/sentences.tex` source line(s) 15,16; `ps-Arab-PK/content/first-order-logic/introduction/sentences.tex` target line(s) 15; page: pending stable pagination in a reader containing this unit
   - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 15,23,25; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 14,15,16,17,24,25; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 41; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
+  - OLP-0159; fol; `content/first-order-logic/syntax-and-semantics/semantics.tex` source line(s) 18; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0160; Introduction; `content/first-order-logic/syntax-and-semantics/intro-semantics.tex` source line(s) 21,24,26,31; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-semantics.tex` target line(s) 20,22,24,29; page: pending stable pagination in a reader containing this unit
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 36,38,41,42,48,49,53,54,60,75,76,77,82,83,88,89,90,98,104,153,168,190,191,232,233,339,340,417; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 33,35,38,39,45,46,48,49,56,69,70,71,73,74,78,79,80,84,85,86,93,94,95,100,151,191,192,201,210,234,235,236,246,247,347,348,368,377,385,402; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 3,11,14,16,20,23,25,203,207,210,215,217,221,222,223,232,248,264,266,339; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 11,14,17,18,20,21,23,205,206,218,219,220,221,222,228,229,234,235,236,265,282; page: pending stable pagination in a reader containing this unit
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 17,18,32,66,107,125,129; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 16,17,31,69,113,130,135; page: pending stable pagination in a reader containing this unit
 
 ## TERM-STRUCTURAL-INDUCTION
 
@@ -2076,6 +2123,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 - Locations:
   - OLP-0142; formulas; `content/first-order-logic/introduction/formulas.tex` source line(s) 50,56,57,70,72,77,82,86; `ps-Arab-PK/content/first-order-logic/introduction/formulas.tex` target line(s) 54,55,69,70,71,75,80,84,85; page: pending stable pagination in a reader containing this unit
+  - OLP-0150; Introduction; `content/first-order-logic/syntax-and-semantics/intro-syntax.tex` source line(s) 18,19,26,28,30; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/intro-syntax.tex` target line(s) 18,25,27,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0153; Unique Readability; `content/first-order-logic/syntax-and-semantics/unique-readability.tex` source line(s) 31,63,132,133,151,158,183,186; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex` target line(s) 32,61,89,93,97,102,131,155,157,182,185; page: pending stable pagination in a reader containing this unit
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 13,21,67,115,187,198; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 13,18,66,113,177,180,191,198,246; page: pending stable pagination in a reader containing this unit
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 42,65; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 41,48,64,107,112,116,119,126,133,141,149,159,175,197,237,348,354; page: pending stable pagination in a reader containing this unit
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 43; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 43,100; page: pending stable pagination in a reader containing this unit
 
 ## TERM-MODEL-THEORY
 
@@ -2091,6 +2143,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0139; fol; `content/first-order-logic/introduction/introduction.tex` source line(s) 24; `ps-Arab-PK/content/first-order-logic/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 3,11,19,20,24,26,28,30,32,38,47,48,49,50,53,54,56,57,60; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 11,19,24,25,27,29,32,37,47,48,49,53,56,59; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 39,41,47,52; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 38,40,46,50; page: pending stable pagination in a reader containing this unit
+  - OLP-0159; fol; `content/first-order-logic/syntax-and-semantics/semantics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -3248,6 +3302,266 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the surrounding definition, repeated example and frozen source bytes
 - Locations:
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) introduction/substitution.tex:13-28; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 18; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-005
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes the unmatched closing parenthesis from the disjunction-based abbreviation of the conditional
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the unmatched closing parenthesis is removed; formula letters, negation and disjunction remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) content/first-order-logic/syntax-and-semantics/terms-formulas.tex:148; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 144; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-006
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restores the object-language styling macro on the successor function symbol
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the object-language typography macro is restored; arity, subscript and argument are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0152; Terms and \printtoken{P}{formula}; `content/first-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) content/first-order-logic/syntax-and-semantics/terms-formulas.tex:167; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 168; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-007
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: moves the closing parentheses inside the math spans for the conjunction and disjunction examples
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only math-span boundaries around two existing closing parentheses change; operators and operands remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0154; \printtoken{S}{main operator} of a Formula; `content/first-order-logic/syntax-and-semantics/main-operator.tex` source line(s) content/first-order-logic/syntax-and-semantics/main-operator.tex:90-91; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex` target line(s) 99; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-008
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: changes the argument indices from zero-through-k to one-through-k in the k-ary term clause
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the lower argument index changes from 0 to 1 in the bound and constructed term.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) content/first-order-logic/syntax-and-semantics/formation-sequences.tex:45-46; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 45; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-009
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: replaces semantic equivalence with the chapter's syntactic-identity relation in the conjunction case
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the relation symbol changes; the formula letters and conjunction stay fixed.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) content/first-order-logic/syntax-and-semantics/formation-sequences.tex:200; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 201; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-010
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restores both copied L_0 formula-set subscripts to the first-order language L used by the theorem
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the two formula-set language subscripts change; membership claims and formula indices remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199,206; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 201; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-011
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that m and n are final indices rather than incorrectly calling them the lengths of zero-indexed formation sequences
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; only the prose distinction between final index and sequence length is corrected.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) content/first-order-logic/syntax-and-semantics/formation-sequences.tex:184-185,204-205; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 201; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-012
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: reads the malformed phrase single-two place as single two-place relation
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No mathematical expression changes; the prose hyphenation is repaired transparently.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) content/first-order-logic/syntax-and-semantics/structures.tex:77; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-013
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes the dangling first equals sign so the calculation has one equality at each step
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the surplus equals sign is removed from the displayed calculation.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) content/first-order-logic/syntax-and-semantics/covered-structures.tex:54-56; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-014
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: reads the source misspelling intepretation as interpretation
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula or technical claim changes; only an English source spelling error is normalized in translation.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0153; Unique Readability; `content/first-order-logic/syntax-and-semantics/unique-readability.tex` source line(s) content/first-order-logic/syntax-and-semantics/unique-readability.tex:19; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-015
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states explicitly that the existential witness m must make B(m) satisfied
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Adds only the missing satisfaction condition for the matrix instance B(m), matching the displayed recursive clause.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:171-176; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-016
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes the assignment argument from the interpretation of the relation symbol R
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the spurious [s] suffix is removed; the tuple and relation interpretation remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:208-213; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-017
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes a comma accidentally placed inside the existential formula argument
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the stray comma is removed from the formula argument; the satisfaction failure, witness formula and assignment stay fixed.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-017 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-293; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-018
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restores m before =2 in the witness assignment statement
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the omitted metalinguistic variable m is restored before the existing equality and numeral.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-018 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:324-336; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-019
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses m, the arbitrary domain element fixed in the argument, in the universal conclusion
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the mismatched metavariable changes from n to m; domain membership and universal scope remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-019 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-351; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-020
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes one surplus parenthesis from each of the two formulas used to derive the existential clause via defined quantification
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the two surplus closing parentheses are removed; negation, universal quantification, disjunction and assignment remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-020 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) content/first-order-logic/syntax-and-semantics/satisfaction.tex:278-320; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 375; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-021
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: starts the concluding k-tuple with t_1 rather than the unrelated t_i
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the first tuple subscript changes from i to 1; all term values, structure and relation membership remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-021 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) content/first-order-logic/syntax-and-semantics/assignments.tex:82-92; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 107; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-022
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: defines s_1' from s_1 and s_2' from s_2 rather than defining both from an unindexed s
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the two base-assignment subscripts are restored; the modified variable and domain element are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-022 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) content/first-order-logic/syntax-and-semantics/assignments.tex:174-182; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 204; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-023
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes the second stray occurrence of Gamma from the prose defining satisfaction of a set of sentences
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the duplicated inline Gamma fragment is removed; the definition and memberwise satisfaction condition remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-023 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) content/first-order-logic/syntax-and-semantics/assignments.tex:239-243; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 259; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-024
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: removes the dangling first equals sign so the term-value calculation has one equality at each step
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the surplus equals sign is removed from the displayed calculation.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-024 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete chapter grammar, recursive definitions, worked examples and frozen source bytes
+- Locations:
+  - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) content/first-order-logic/syntax-and-semantics/extensionality.tex:86-100; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 105; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

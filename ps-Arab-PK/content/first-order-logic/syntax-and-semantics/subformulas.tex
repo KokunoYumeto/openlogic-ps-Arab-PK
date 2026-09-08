@@ -1,0 +1,108 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: subformulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sbf}
+
+\olsection{\printtoken{P}{subformula}}
+
+\begin{explain}
+ډېر ځله د هغو !!{formula}s په باب خبرې کول ګټور وي چې يو راکړل شوے
+!!{formula} ``جوړوي''۔ دې ته د هغه \emph{!!{subformula}s} وايو۔ هر
+!!{formula}~$!A$ د خپل ځان !!a{subformula} هم ګڼل کېږي؛ د $!A$ هر هغه
+فرعي فارمول چې پخپله $!A$ نۀ وي، \emph{حقيقي !!{subformula}} دے۔
+\end{explain}
+
+\begin{defn}[سمدستي !!^{subformula}]
+که $!A$ !!a{formula} وي، د $!A$ \emph{سمدستي !!{subformula}s} په
+استقرايي ډول داسې تعريفېږي:
+\begin{enumerate}
+\item اټومي !!{formula}s سمدستي !!{subformula}s نۀ لري۔
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{د $\indfrm$ يوازينے سمدستي
+    !!{subformula} همدا~$!B$ دے۔}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{د $\indfrm$ سمدستي
+  !!{subformula}s همدا $!B$ او $!C$ دي ($\ast$ له دوه ځايه
+  نښلوونکو څخه هر يو کېدے شي)۔}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{د $\indfrm$ يوازينے
+    سمدستي !!{subformula} همدا~$!B$ دے۔}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{د $\indfrm$ يوازينے
+    سمدستي !!{subformula} همدا~$!B$ دے۔}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[حقيقي !!^{subformula}]
+که $!A$ !!a{formula} وي، د $!A$ \emph{حقيقي !!{subformula}s} په
+بازګشتي ډول داسې تعريفېږي:
+\begin{enumerate}
+\item اټومي !!{formula}s حقيقي !!{subformula}s نۀ لري۔
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{د $\indfrm$ حقيقي
+    !!{subformula}s همدا~$!B$ او د~$!B$ ټول حقيقي !!{subformula}s دي۔}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{د $\indfrm$ حقيقي
+  !!{subformula}s همدا $!B$، $!C$، د $!B$ ټول حقيقي !!{subformula}s
+  او د~$!C$ ټول حقيقي فرعي فارمولونه دي۔}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{د $\indfrm$ حقيقي
+    !!{subformula}s همدا~$!B$ او د~$!B$ ټول حقيقي
+    !!{subformula}s دي۔}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{د $\indfrm$ حقيقي
+    !!{subformula}s همدا~$!B$ او د~$!B$ ټول حقيقي
+    !!{subformula}s دي۔}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[!!^{subformula}]
+د $!A$ !!{subformula}s پخپله $!A$ او د هغه ټول حقيقي
+!!{subformula}s دي۔
+\end{defn}
+
+\begin{explain}
+پام وکړئ چې سمدستي !!{subformula}s او حقيقي !!{subformula}s مو په
+لږ توپير تعريف کړي دي۔ په لومړي حالت کښې مو د~$!A$ د هرې ممکنې بڼې
+دپاره د هغه سمدستي !!{subformula}s نېغ په نېغه تعريف کړي دي۔ دا د
+حالتونو له مخې يو څرګند تعريف دے، او حالتونه ئې د !!{formula}s د سټ
+له استقرايي تعريف سره سمون لري۔ په دويم حالت کښې مو هم د ټولو
+!!{formula}s د سټ د تعريف طريقه تعقيب کړې ده، خو په هر حالت کښې مو د
+کوچنيو !!{formula}s $!B$ او $!C$ د حقيقي !!{subformula}s تر څنګ،
+پخپله دا !!{formula}s هم ور شامل کړي دي۔ په دې سره تعريف \emph{بازګشتي}
+کېږي۔ په عمومي ډول، پر يوه استقرايي تعريف شوي سټ (زموږ په حالت کښې
+!!{formula}s) د تابع تعريف هله بازګشتي وي چې د تابع د تعريف حالتونه
+پخپله هماغه تابع وکاروي۔ خو د ښه تعريف دپاره بايد ډاډه شو چې د تابع
+قيمتونه تل يوازې د هغو مدخلو دپاره کاروو چې تر تعريفېدونکې مدخل
+``مخکښې'' راځي---زموږ په حالت کښې، د $(!B \ast !C)$ د ``حقيقي
+!!{subformula}'' د تعريف پر وخت يوازې د ``مخکښو'' !!{formula}s $!B$
+او $!C$ حقيقي !!{subformula}s کاروو۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:subfrm-trans}
+فرض کړئ $!B$ د $!A$ يو فرعي فارمول او $!C$ د $!B$ يو فرعي فارمول
+دے۔ بيا $!C$ د $!A$ يو فرعي فارمول دے۔ په بله وينا، د فرعي فارمول
+اړيکه انتقالي ده۔
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:subfrm-trans} ثابته کړئ۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:count-subfrms}
+فرض کړئ $!A$ داسې فارمول دے چې $n$ نښلوونکي او سورونه لري۔ بيا $!A$
+تر ډېره $2n+1$ فرعي فارمولونه لري۔
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:count-subfrms} ثابته کړئ۔
+\end{prob}
+
+\end{document}
