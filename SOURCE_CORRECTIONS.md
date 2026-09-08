@@ -1028,3 +1028,39 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: places the distinctness and exhaustion matrix inside the existential scopes and restores the closing order of the final universal matrix.
 - Disclosure: `repair-scope-delimiters-and-parentheses-plus-adjacent-note`.
 
+## OLFOL-030
+
+- Unit: `OLP-0176`
+- Frozen source: `content/first-order-logic/beyond/many-sorted-logic.tex` (5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7) at `content/first-order-logic/beyond/many-sorted-logic.tex:37-39`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex:41`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
+- Treatment: restores the bracketed x argument of the second universal quantifier in the many-sorted French/German example.
+- Disclosure: `restore-bracketed-variable-argument-plus-adjacent-note`.
+
+## OLFOL-031
+
+- Unit: `OLP-0177`
+- Frozen source: `content/first-order-logic/beyond/second-order-logic.tex` (944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d) at `content/first-order-logic/beyond/second-order-logic.tex:54-57`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:63`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
+- Treatment: uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation.
+- Disclosure: `replace-object-macro-with-relation-atom-macro-plus-adjacent-note`.
+
+## OLFOL-032
+
+- Unit: `OLP-0177`
+- Frozen source: `content/first-order-logic/beyond/second-order-logic.tex` (944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d) at `content/first-order-logic/beyond/second-order-logic.tex:137-144`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:162`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
+- Treatment: writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument.
+- Disclosure: `replace-undeclared-successor-s-with-declared-prime-plus-adjacent-note`.
+
+## OLFOL-033
+
+- Unit: `OLP-0178`
+- Frozen source: `content/first-order-logic/beyond/higher-order-logic.tex` (38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1) at `content/first-order-logic/beyond/higher-order-logic.tex:82-88`
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex:92`
+- Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
+- Treatment: states that x has type tau when explaining the lambda term whose type is tau to sigma.
+- Disclosure: `replace-result-type-with-input-type-plus-adjacent-note`.
+

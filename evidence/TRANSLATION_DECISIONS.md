@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 221 terminology, source-correction and other judgment-dependent entries across 173 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 230 terminology, source-correction and other judgment-dependent entries across 181 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -252,6 +252,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0043; From $\Int$ to $\Rat$; `content/sets-functions-relations/arithmetization/rationals.tex` source line(s) 20,25,33,49; `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex` target line(s) 19; page: pending stable pagination in a reader containing this unit
   - OLP-0046; Some Philosophical Reflections; `content/sets-functions-relations/arithmetization/reflections.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/reflections.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 36,94,97,109,113,116,117,122,129; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 70,80; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRODUCT
 
@@ -301,6 +302,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0057; Introduction; `content/propositional-logic/syntax-and-semantics/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/introduction.tex` target line(s) 35; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
   - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) 79; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FORMAL
 
@@ -317,6 +319,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0002; content; `content/content.tex` source line(s) line pending; `ps-Arab-PK/content/content.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0044; The Real Line; `content/sets-functions-relations/arithmetization/reals.tex` source line(s) 59; `ps-Arab-PK/content/sets-functions-relations/arithmetization/reals.tex` target line(s) 58; page: pending stable pagination in a reader containing this unit
   - OLP-0052; dedekind-induction; `content/sets-functions-relations/infinite/dedekind-induction.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-induction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) 15,47; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) 14,44; page: pending stable pagination in a reader containing this unit
 
 ## TERM-OPERATOR
 
@@ -366,6 +369,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 34,36; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) 33,34; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) 58,59,91; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) 22,23,46,58,59,60,64,94,97; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 31,97,112,115; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 29,39,91,109; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 32; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 29,30,31; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 34,40,73,231; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 45,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 20,40,74,77,78; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -394,6 +400,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ORDER
 
@@ -509,6 +516,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 24,181,402; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0169; Expressing Properties of \printtoken{P}{structure}; `content/first-order-logic/models-theories/expressing-props-of-structures.tex` source line(s) 18,21; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-props-of-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) 19,65,73,76,102,103; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) 44; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) 40; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 46,48,57; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 59; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -525,6 +534,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0042; From $\Nat$ to $\Int$; `content/sets-functions-relations/arithmetization/integers.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/integers.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0046; Some Philosophical Reflections; `content/sets-functions-relations/arithmetization/reflections.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/reflections.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0053; dedekinds-proof; `content/sets-functions-relations/infinite/dedekinds-proof.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekinds-proof.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-MODULAR
 
@@ -688,6 +698,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) 20; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 74,112,114,119,143; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 27,69,70,87,88,107,109,111,113,114,138,142; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 169,174; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 149,163,166,167,169,172; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 75; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 21,32,37,39,53,73,81,87,94,106,116; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DOMAIN
 
@@ -719,6 +731,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0161; \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/structures.tex` source line(s) 18,32,34,37,40,46,48,50,51,55,68,83,87,90,96,100,103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex` target line(s) 17,30; page: pending stable pagination in a reader containing this unit
   - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) 32,40,44; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 16,33,35,52,64; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 14,15,16,17,21,45,46; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CODOMAIN
 
@@ -769,6 +782,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0021; Basics; `content/sets-functions-relations/functions/function-basics.tex` source line(s) 24,35,39,47,52,53,84,86,87,88,96,133,135; `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex` target line(s) 18,19,24,25,33,34,35,37,38,45,46,52,57,58,59,64,65,81,82,83,85,94,95,111,128,130,131; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 109,112,116,117,130; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 13,15,16,17,22,101,113,115,116,135; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 23,49,76,80,86,89,91,108; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 49,50,84,99,113,166,282,290; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 33,96; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 33,96,99; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INJECTIVE
 
@@ -798,6 +812,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 13,78,90,93; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 13,55,83,97,101; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 132,139,143; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 131,138,142; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 158,174; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 152,172; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SURJECTIVE
 
@@ -822,6 +837,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0038; Enumerations and \usetoken{S}{enumerable} Sets; `content/sets-functions-relations/size-of-sets/enumerability-alt.tex` source line(s) 79,91; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability-alt.tex` target line(s) 76,89; page: pending stable pagination in a reader containing this unit
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) 16,37; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) 37; page: pending stable pagination in a reader containing this unit
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 37,39,63,78,90,131,132; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 36,39,67,81,93,97,99,113,136; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 158; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 153; page: pending stable pagination in a reader containing this unit
 
 ## TERM-BIJECTIVE
 
@@ -844,6 +860,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0038; Enumerations and \usetoken{S}{enumerable} Sets; `content/sets-functions-relations/size-of-sets/enumerability-alt.tex` source line(s) 27,31,36,40,48; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability-alt.tex` target line(s) 27,30,35,38,46; page: pending stable pagination in a reader containing this unit
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) 16,27,34; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) 27,34; page: pending stable pagination in a reader containing this unit
   - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 14,56,66,67,77,94,97,98,100; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 14,55,59,69,70,81,103,105,106,108; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 166; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 159; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-EXTENSIONALITY
 
@@ -1310,6 +1327,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0155; \printtoken{P}{subformula}; `content/first-order-logic/syntax-and-semantics/subformulas.tex` source line(s) 43,80,81; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/subformulas.tex` target line(s) 22,43,74,77,78,79; page: pending stable pagination in a reader containing this unit
   - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 15,145,152,183,184,206; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 13,18,141,147,177,198,204; page: pending stable pagination in a reader containing this unit
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 56; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 56,57; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 131,150,156,163,167; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 127,144,151,157,160; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 75; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 44,55,73; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1355,6 +1374,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0057; Introduction; `content/propositional-logic/syntax-and-semantics/introduction.tex` source line(s) 1,13,14,16,18,19,20,22,38,40,53,55; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/introduction.tex` target line(s) 13,15,16,19,20,22,27,35,38,49; page: pending stable pagination in a reader containing this unit
   - OLP-0058; Propositional \usetoken{P}{formula}; `content/propositional-logic/syntax-and-semantics/formulas.tex` source line(s) 1,11,13,14,16,17,21,23,24,35,80,87; `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex` target line(s) 11,13,15,16,22,23,34,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 128,148,180,200,202,206,213; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 24,28,78,92,111,119,129,159,176,178,182,188; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEMANTICS
 
@@ -1393,6 +1413,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) 18; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) 15; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TRUTH-FUNCTION
 
@@ -1444,6 +1465,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0122; \usetoken{S}{derivability} and the Propositional Connectives; `content/first-order-logic/axiomatic-deduction/provability-propositional.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` target line(s) 37,38,63,64; page: pending stable pagination in a reader containing this unit
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 144; page: pending stable pagination in a reader containing this unit
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 38; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 38,39,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 135,178; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 118,157,178,182,188; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 13,18; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 13,18; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROP-SEMANTICS
 
@@ -1473,6 +1496,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,60,61,92,116,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 23,26,27,28,32,59,60,67,75,92,93,100,102,109,111,116,117,121,126,128,129,133,143,144,145,158,163,171; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) 24,35,38; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 13,19,23,24,30,35,38; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SUBSTITUTION
 
@@ -1544,6 +1569,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0127; Introduction; `content/first-order-logic/completeness/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0168; Introduction; `content/first-order-logic/models-theories/introduction.tex` source line(s) 51,53,56,70,81,82; `ps-Arab-PK/content/first-order-logic/models-theories/introduction.tex` target line(s) 77,79; page: pending stable pagination in a reader containing this unit
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 24,55,59,71,84; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 59,82,91; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 58,72,163; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 55,144,157,162; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 118; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-FORMS
 
@@ -1608,6 +1637,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 2,16,17; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 15,17; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 2,14,28,35,43; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 26,41; page: pending stable pagination in a reader containing this unit
   - OLP-0138; first-order-logic; `content/first-order-logic/first-order-logic.tex` source line(s) 10,11,16,19,53; `ps-Arab-PK/content/first-order-logic/first-order-logic.tex` target line(s) 7,10,11,15,16,19,20; page: pending stable pagination in a reader containing this unit
+  - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) 13,18; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) 13,17; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 14,81,82,131,187,195; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 111,129,165,170,171; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 32,33; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 29,61; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -1682,6 +1716,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0145; Semantic Notions; `content/first-order-logic/introduction/semantic-notions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/semantic-notions.tex` target line(s) 39; page: pending stable pagination in a reader containing this unit
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) 34,36; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) 40; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49,50,51; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 42,49,59,61,66,75,77,78,99,100,101,103,104,105,106,107,111,115,160,170,181; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 36,53,57,65,67,68,85,86,87,88,89,90,91,94,99,141,160; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1848,6 +1884,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 38,44,75; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 72; page: pending stable pagination in a reader containing this unit
   - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 107,116; page: pending stable pagination in a reader containing this unit
   - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 250,265,284,307; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 61; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1943,6 +1980,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) 13,16,33,96,133,161,184; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) 13,15,21,29,33,51,53,96,137,156,168,194; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 13,15,26,60,61,92,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 16,32,59,60,67,75,92,93,100,109,115,117,126,128,129; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 208; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 202; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -2089,6 +2127,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0156; Formation Sequences; `content/first-order-logic/syntax-and-semantics/formation-sequences.tex` source line(s) 1,13,14,17,20,27,34,35,37,43,44,48,56,63,67,68,80,106,111,115,145,146,150,152,173,187,198,207,213,218,239,249,254,257,268,273; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` target line(s) 14,18,24,31,37,40,44,55,62,66,77,113,145,148,161,167,174,177,180,191,200,204,207,212,220,227,232,236,241,259,265; page: pending stable pagination in a reader containing this unit
   - OLP-0157; Free \printtoken{P}{variable} and \printtoken{P}{sentence}; `content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` source line(s) 1,3,11,13,15,18,21,25,28,32,38,39,44,48,49,50,51,53,54,55,58,64,68,72,73,75,79,85,86,95,96,97; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex` target line(s) 18,38,39,44,48,49,50,51,53,55,59,66,70,72,81,82,91; page: pending stable pagination in a reader containing this unit
   - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 1,20,31,32,45,46,84,90,103,104,108,112,113,117,119,123; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 13,19,30,31,32,48,87,93,107,113,116,123,126; page: pending stable pagination in a reader containing this unit
+  - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) 1,8; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 1,13,21,22,25,35,44,46,47,50,59,60,61,62; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 13,21,24,25,33,42,45,46,48,49,51,61,62,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 1,15,16,17,18,19,20,22,23,30,31,32,33,34,39,45,55,63,64,68,69,74,75,79,80,84,86,93,97,110,125,165,180,204,208,229,233,234,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 15,17,18,19,20,22,30,31,33,38,53,61,64,68,74,75,79,84,85,90,95,107,121,122,158,198,201,207,220,224,225,229,230; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SEMANTICS
 
@@ -2117,6 +2158,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0169; Expressing Properties of \printtoken{P}{structure}; `content/first-order-logic/models-theories/expressing-props-of-structures.tex` source line(s) 3,11,16,17,20,21,22,23,26,30,31,32,33,35,41,60; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-props-of-structures.tex` target line(s) 15,17,19,20,22,28,30,57; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) 11,12,16,18,19,20,21,25,26,33,39,45,46,70,73,76,92,104,105,113,115; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) 20,78,106; page: pending stable pagination in a reader containing this unit
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 3,11,14,16,17,33,35,52,57,64,66,67,68; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 14,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 14,15,16,17,21,45,46,57,61,62; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 60; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 14,15,41,84,85,89,93,94,95,97,110,111,114,120,126,130,151,153,154,159,161,165,171,173,174,175,181,200,214,216,218,221,228,229,241; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 115,122,152,158,208,211,218,220,223; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 14,30,108,119,121; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 118,120; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 61,62,76,77,90,97,98,107,108,133,161,181,182,193,194,196,200,221,222; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 68,83,84,91; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 41,54,55,56,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 26,31,48,49,80; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2178,6 +2224,80 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0169; Expressing Properties of \printtoken{P}{structure}; `content/first-order-logic/models-theories/expressing-props-of-structures.tex` source line(s) 2,39,41,52,62; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-props-of-structures.tex` target line(s) 35,37,49,59; page: pending stable pagination in a reader containing this unit
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 2,14,24,26,30,41,63,71,94,115; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 11,14,24,26,30,42,63,70,92,102,103,112; page: pending stable pagination in a reader containing this unit
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 2,57,65,66; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 65,74; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 151,223; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 126,146,157,166,209,214,215; page: pending stable pagination in a reader containing this unit
+
+## TERM-LOGIC-ORDER-HIERARCHY
+
+- Source term or sense: many-sorted logic / second-order logic / higher-order logic
+- Chosen rendering or treatment: د ډېرو ډولونو منطق / د دويمې درجې منطق / د لوړې درجې منطق
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Sorts separate object domains. Second-order variables range over relations on the first-order domain, while higher-order systems iterate function or relation types. The edition uses one transparent order vocabulary and does not treat these three systems as interchangeable.
+- Alternatives: څو ډوله منطق; ثانوي منطق; عالي مرتبه منطق
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د ډېرو ډولونو منطق / د دويمې درجې منطق / د لوړې درجې منطق» the clearest conventional rendering of “many-sorted logic / second-order logic / higher-order logic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+- Locations:
+  - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) 42; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 19,44; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 11,19,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 13,30,129,204,227,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 11,13,30,98,125,198,219,230; page: pending stable pagination in a reader containing this unit
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 11,13,21; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 11,21,41,103; page: pending stable pagination in a reader containing this unit
+
+## TERM-SECOND-ORDER-SEMANTICS
+
+- Source term or sense: comprehension schema / predicative and impredicative / full and weak second-order semantics / categorical
+- Chosen rendering or treatment: د ادراک شېما / وړاندوينيز او ناوړاندوينيز / بشپړه او کمزورې د دويمې درجې معنٰی پوهنه / قطعي
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Comprehension supplies a relation corresponding to a formula. Predicative comprehension excludes second-order quantifiers from that defining formula; impredicative comprehension allows them. Full semantics quantifies over every relation of the relevant arity, while weak semantics supplies a selected relation domain. Categorical means unique up to isomorphism, not merely detailed.
+- Alternatives: د جامع والي شېما; پريډيکاټيف او امپريډيکاټيف; معياري او هنکين معنٰی پوهنه; کټګوريکي د قطعي پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د ادراک شېما / وړاندوينيز او ناوړاندوينيز / بشپړه او کمزورې د دويمې درجې معنٰی پوهنه / قطعي» the clearest conventional rendering of “comprehension schema / predicative and impredicative / full and weak second-order semantics / categorical” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+- Locations:
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 119,150,201; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 115,146,196; page: pending stable pagination in a reader containing this unit
+
+## TERM-SIMPLE-TYPE-THEORY
+
+- Source term or sense: type / function type / finite type / simple theory of types / lambda term
+- Chosen rendering or treatment: ټايپ / د تابعې ټايپ / متناهي ټايپ / د ټايپونو ساده تيوري / لامبډا ترم
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A type classifies objects. The arrow type sigma to tau contains functions taking sigma inputs to tau outputs, product types contain pairs, and lambda abstraction binds a variable of the input type. The loanword ټايپ distinguishes this formal hierarchy from the chapter's ordinary ډول or sort.
+- Alternatives: ډول د ټايپ پر ځاے; تابعي ټايپ; د ساده ټايپونو تيوري; لامبډا اصطلاح
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «ټايپ / د تابعې ټايپ / متناهي ټايپ / د ټايپونو ساده تيوري / لامبډا ترم» the clearest conventional rendering of “type / function type / finite type / simple theory of types / lambda term” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+- Locations:
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 32,33,34,37,38,42,43,52,53,54,58,59,60,61,62,65,66,68,70,91,95,98,103,104,109,114,120; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 24,25,27,28,30,32,34,35,36,37,42,43,44,46,47,48,49,50,52,53,54,57,58,59,60,61,62,64,65,66,67,68,69,70,71,86,88,89,92,93; page: pending stable pagination in a reader containing this unit
+
+## TERM-INTUITIONISTIC-LOGIC
+
+- Source term or sense: intuitionistic logic / constructive / BHK interpretation / double-negation translation / Kripke structure and forcing
+- Chosen rendering or treatment: شهودي منطق / تعميري / د بي‌اېچ‌کې تفسير / دوه‌ګونې نفي ژباړه / د کرېپکي جوړښت او تحميل
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: The edition uses شهودي for the restricted proof system and تعميري for its motivating requirement to provide witnesses or a chosen disjunct. BHK explains proofs as constructions; the double-negation translation embeds classical provability; Kripke forcing evaluates formulas monotonically over knowledge states. These roles remain distinct.
+- Alternatives: انټېوشنېسټيک منطق; ساختماني منطق; د بروور--هايتنګ--کولموګوروف تفسير; دوه ځله نفي ژباړه; د کرېپکي مدل او فورسنګ
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «شهودي منطق / تعميري / د بي‌اېچ‌کې تفسير / دوه‌ګونې نفي ژباړه / د کرېپکي جوړښت او تحميل» the clearest conventional rendering of “intuitionistic logic / constructive / BHK interpretation / double-negation translation / Kripke structure and forcing” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+- Locations:
+  - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 74,97,98,114; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 11,13,14,65,71,78,79,83,98,108,113,118; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-MODAL-LOGIC
+
+- Source term or sense: modal logic / necessity and possibility / accessibility relation / intensional and extensional / epistemic and temporal logic
+- Chosen rendering or treatment: مودالي منطق / لزوم او امکان / د لاسرسي اړيکه / مفهومي او مصداقي / معرفتي او زماني منطق
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Box expresses necessity and diamond possibility relative to accessible worlds. Accessibility conditions select modal systems. Intensional interpretation ranges beyond the actual world; epistemic and temporal readings reinterpret the operators without changing their formal scope. The edition keeps these readings explicit rather than treating مودالي as a generic qualifier.
+- Alternatives: وجهی منطق; ضرورت او امکان; د رسېدنې اړيکه; شدتي او امتدادي منطق; پوهنیز او زماني منطق
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «مودالي منطق / لزوم او امکان / د لاسرسي اړيکه / مفهومي او مصداقي / معرفتي او زماني منطق» the clearest conventional rendering of “modal logic / necessity and possibility / accessibility relation / intensional and extensional / epistemic and temporal logic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+- Locations:
+  - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 31,50,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 11,28,36,37,44,74,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -3660,6 +3780,58 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
 - Locations:
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) content/first-order-logic/models-theories/size-of-structures.tex:41-51; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 58; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-030
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restores the bracketed x argument of the second universal quantifier in the many-sorted French/German example
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the missing square brackets around x are supplied; the quantified matrix, predicates, connectives and remaining delimiters are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-030 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+- Locations:
+  - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) content/first-order-logic/beyond/many-sorted-logic.tex:37-39; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 41; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-031
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only Obj{R}{...} is replaced by Atom{R}{...}; R, its arguments and the surrounding substitution statement are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-031 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+- Locations:
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) content/first-order-logic/beyond/second-order-logic.tex:54-57; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-032
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only s(x) and s(y) become x-prime and y-prime; both universal quantifiers, the conditional and equality conclusion are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-032 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+- Locations:
+  - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) content/first-order-logic/beyond/second-order-logic.tex:137-144; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 162; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLFOL-033
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that x has type tau when explaining the lambda term whose type is tau to sigma
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the single prose-embedded type symbol sigma becomes tau; the lambda term, equation, bound variable and function type remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLFOL-033 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+- Locations:
+  - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) content/first-order-logic/beyond/higher-order-logic.tex:82-88; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

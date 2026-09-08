@@ -1,0 +1,123 @@
+{
+  "schema": "ps-fol-beyond-draft/1",
+  "utc": "2026-09-08T03:39:24.526269+00:00",
+  "status": "OLP-0174 through OLP-0181 manually rewritten, semantically reviewed and ready for cumulative registration QA",
+  "batch_id": "PS-B040-FOL-BEYOND",
+  "units": [
+    {
+      "unit_id": "OLP-0174",
+      "path": "content/first-order-logic/beyond/beyond.tex",
+      "source_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
+      "translation_sha256": "3ca4723ddcabe02f13b661a6559af0acfe2a36cb4ba6d3845a6b8279be4a37ea",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0175",
+      "path": "content/first-order-logic/beyond/introduction.tex",
+      "source_sha256": "859471ff2e16efdd444f4d4158f8a6c1600aae949d4d5b8f2362bac945bbf769",
+      "translation_sha256": "2025be596b4ada7f94ed718b3c73bea85ef1de782c4dd95b51384776f5a6925d",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0176",
+      "path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+      "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+      "translation_sha256": "8aacd085aca40cd72ea0992db6b19b1802e8293d36da6e6893ac97ca5f90f50a",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLFOL-030"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0177",
+      "path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "translation_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLFOL-031",
+        "OLFOL-032"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0178",
+      "path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "translation_sha256": "7fae201c78d9db2e022fd91a9ca7072e4c4e3523b54efbf77ffc04ff76fdc871",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLFOL-033"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0179",
+      "path": "content/first-order-logic/beyond/intuitionistic-logic.tex",
+      "source_sha256": "063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98",
+      "translation_sha256": "3a628eadb22ce8817e4953b4a7dae31d9ed34a6862a1c4106afe63c461aba81b",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0180",
+      "path": "content/first-order-logic/beyond/modal-logics.tex",
+      "source_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
+      "translation_sha256": "5dbc0bf4fba570cb334ef849a4f4f0980b268c6d4e9e84548fd73f6607dc9d88",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0181",
+      "path": "content/first-order-logic/beyond/other-logics.tex",
+      "source_sha256": "025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350",
+      "translation_sha256": "76ce0adbec6ef451ddb6ed85ee68b74498ddaecee2eceaba7b524f4bef980b81",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 173,
+    "current_reviewed_draft_units": 8,
+    "prospective_total_after_registration": 181
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0174",
+      "OLP-0175",
+      "OLP-0179",
+      "OLP-0180",
+      "OLP-0181"
+    ],
+    "documented_correction_units": [
+      "OLP-0176",
+      "OLP-0177",
+      "OLP-0178"
+    ]
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\BEYOND_SOURCE_CHECK.json",
+    "source_check_sha256": "06169a726ea5ad6c53a8cdeca0dc5a5cddbde1eb2d7f5e9e18fd8f0be86832db",
+    "translation_engine_benchmark_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TRANSLATION_ENGINE_BENCHMARK_20260907.json",
+    "translation_engine_benchmark_sha256": "c23fc997b23771303028fa82bb14da018310a20c3aa1dfa51e79da66ffa46a27"
+  },
+  "registration_status": "term, consultation, semantic-review and source-correction registers updated; cumulative QA pending",
+  "next_action": "Run cumulative QA and decision validation through OLP-0181, sync public evidence, then advance to OLP-0182."
+}

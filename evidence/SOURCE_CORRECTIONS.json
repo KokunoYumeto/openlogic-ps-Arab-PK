@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0173; the complete models-and-theories chapter is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-08T02:22:11.012621+00:00",
+  "status": "adopted through OLP-0181; the complete beyond-first-order chapter is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-08T03:39:24.526269+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -2723,6 +2723,106 @@
           "\\begin{multline*}!A_{=n}\\ident\\lexists[x_1][\\lexists[x_2][\\dots\\lexists[x_n][{}\\\\\\begin{aligned}(\\eq/[x_1][x_2]\\land{}\\eq/[x_1][x_3]\\land\\eq/[x_1][x_4]\\land\\dots\\land\\eq/[x_1][x_n]\\land{}\\\\\\eq/[x_2][x_3]\\land\\eq/[x_2][x_4]\\land\\dots\\land{}\\eq/[x_2][x_n]\\land{}\\\\\\vdots\\\\\\eq/[x_{n-1}][x_n]\\land{}\\\\\\lforall[y][(\\eq[y][x_1]\\lor\\dots\\lor\\eq[y][x_n])])\\end{aligned}]]]\\end{multline*}"
         ]
       }
+    },
+    {
+      "id": "OLFOL-030",
+      "unit_id": "OLP-0176",
+      "classification": "universal_quantifier_variable_not_delimited_as_macro_argument",
+      "source_path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+      "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+      "source_locator": "content/first-order-logic/beyond/many-sorted-logic.tex:37-39",
+      "target_path": "ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex",
+      "target_line_1based": 41,
+      "target_sha256": "8aacd085aca40cd72ea0992db6b19b1802e8293d36da6e6893ac97ca5f90f50a",
+      "mode": "restore-bracketed-variable-argument-plus-adjacent-note",
+      "translation_change": "restores the bracketed x argument of the second universal quantifier in the many-sorted French/German example",
+      "counterexample": "The source writes the first quantifier as lforall[a] but the second as lforall x, even though the shared macro requires its variable in brackets and every surrounding quantified example follows that form.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND",
+      "formula_policy": "Only the missing square brackets around x are supplied; the quantified matrix, predicates, connectives and remaining delimiters are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\lforall[a][\\lforallx][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+        ],
+        "target_only": [
+          "\\[\\lforall[a][\\lforall[x][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-031",
+      "unit_id": "OLP-0177",
+      "classification": "relation_application_written_with_object_styling_macro",
+      "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "source_locator": "content/first-order-logic/beyond/second-order-logic.tex:54-57",
+      "target_path": "ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex",
+      "target_line_1based": 63,
+      "target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "mode": "replace-object-macro-with-relation-atom-macro-plus-adjacent-note",
+      "translation_change": "uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation",
+      "counterexample": "The same paragraph defines the replaced expression as an atomic formula and every other application of relation variable R in the section uses Atom; Obj is the styling macro for an object-language symbol, not relation application.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND",
+      "formula_policy": "Only Obj{R}{...} is replaced by Atom{R}{...}; R, its arguments and the surrounding substitution statement are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Obj{R}{t_1,\\dots,t_k}$"
+        ],
+        "target_only": [
+          "$\\Atom{R}{t_1,\\dots,t_k}$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-032",
+      "unit_id": "OLP-0177",
+      "classification": "successor_axiom_uses_undeclared_s_notation_in_prime_signature",
+      "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "source_locator": "content/first-order-logic/beyond/second-order-logic.tex:137-144",
+      "target_path": "ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex",
+      "target_line_1based": 162,
+      "target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "mode": "replace-undeclared-successor-s-with-declared-prime-plus-adjacent-note",
+      "translation_change": "writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument",
+      "counterexample": "The signature explicitly lists the prime successor symbol, all neighboring Peano axioms use primes, and the later recursion interprets that same prime; s is not introduced as a language symbol here.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND",
+      "formula_policy": "Only s(x) and s(y) become x-prime and y-prime; both universal quantifiers, the conditional and equality conclusion are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[x][\\lforall[y][(s(x)=s(y)\\lifx=y)]]$"
+        ],
+        "target_only": [
+          "$\\lforall[x][\\lforall[y][(x'=y'\\lifx=y)]]$"
+        ]
+      }
+    },
+    {
+      "id": "OLFOL-033",
+      "unit_id": "OLP-0178",
+      "classification": "lambda_bound_variable_assigned_result_type_instead_of_input_type",
+      "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "source_locator": "content/first-order-logic/beyond/higher-order-logic.tex:82-88",
+      "target_path": "ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex",
+      "target_line_1based": 92,
+      "target_sha256": "7fae201c78d9db2e022fd91a9ca7072e4c4e3523b54efbf77ffc04ff76fdc871",
+      "mode": "replace-result-type-with-input-type-plus-adjacent-note",
+      "translation_change": "states that x has type tau when explaining the lambda term whose type is tau to sigma",
+      "counterexample": "Item (6) immediately above declares x to have type tau and lambda[x][s] to have function type tau to sigma; assigning x type sigma in the prose contradicts that formation clause.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND",
+      "formula_policy": "Only the single prose-embedded type symbol sigma becomes tau; the lambda term, equation, bound variable and function type remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sigma$"
+        ],
+        "target_only": [
+          "$\\tau$"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -2730,7 +2830,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0173, then translate the beyond-first-order chapter beginning at OLP-0174 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0181, then translate the next first-order chapter beginning at OLP-0182 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -2763,7 +2863,8 @@
     "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-LOGIC-DRIVER",
     "PS-OWNER-SEMANTIC-20260907-FIRST-ORDER-INTRODUCTION",
     "PS-OWNER-SEMANTIC-20260908-FOL-SYNTAX-SEMANTICS",
-    "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES"
+    "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
+    "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND"
   ],
   "source_authorities": [
     {

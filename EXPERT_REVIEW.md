@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 173 of 722 source units are translated drafts. This log contains 101 terminology entries and 120 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 181 of 722 source units are translated drafts. This log contains 106 terminology entries and 124 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -911,6 +911,51 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Uncertainty: theory, relation, order, entailment and countability concepts supported; model-theoretic compounds are provisional
 - Alternatives: د مدلونو تيوري; اکسيوماتيکي طريقه; مقدماتي ترتيب د مخکښ‌مرتبې پر ځاے
 - Review question: In Pakistani Pashto mathematical prose, is «مدل / تيوري / مدل تيوري / بديهي طريقه / ځانګړې کول / مخکښ‌مرتبه» the clearest conventional rendering of “model / theory / model theory / axiomatic method / characterize / preorder” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-LOGIC-ORDER-HIERARCHY
+
+- Type: terminology
+- Choice: د ډېرو ډولونو منطق / د دويمې درجې منطق / د لوړې درجې منطق
+- Uncertainty: supporting logic, predicate, relation and semantic concepts regionally attested; exact hierarchy labels unattested and provisional
+- Alternatives: څو ډوله منطق; ثانوي منطق; عالي مرتبه منطق
+- Review question: In Pakistani Pashto mathematical prose, is «د ډېرو ډولونو منطق / د دويمې درجې منطق / د لوړې درجې منطق» the clearest conventional rendering of “many-sorted logic / second-order logic / higher-order logic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-SECOND-ORDER-SEMANTICS
+
+- Type: terminology
+- Choice: د ادراک شېما / وړاندوينيز او ناوړاندوينيز / بشپړه او کمزورې د دويمې درجې معنٰی پوهنه / قطعي
+- Uncertainty: supporting axiom, relation and semantics concepts regionally attested; exact second-order compounds unattested and provisional
+- Alternatives: د جامع والي شېما; پريډيکاټيف او امپريډيکاټيف; معياري او هنکين معنٰی پوهنه; کټګوريکي د قطعي پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د ادراک شېما / وړاندوينيز او ناوړاندوينيز / بشپړه او کمزورې د دويمې درجې معنٰی پوهنه / قطعي» the clearest conventional rendering of “comprehension schema / predicative and impredicative / full and weak second-order semantics / categorical” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-SIMPLE-TYPE-THEORY
+
+- Type: terminology
+- Choice: ټايپ / د تابعې ټايپ / متناهي ټايپ / د ټايپونو ساده تيوري / لامبډا ترم
+- Uncertainty: supporting function, formula and induction concepts regionally attested; exact type-theoretic labels unattested and provisional
+- Alternatives: ډول د ټايپ پر ځاے; تابعي ټايپ; د ساده ټايپونو تيوري; لامبډا اصطلاح
+- Review question: In Pakistani Pashto mathematical prose, is «ټايپ / د تابعې ټايپ / متناهي ټايپ / د ټايپونو ساده تيوري / لامبډا ترم» the clearest conventional rendering of “type / function type / finite type / simple theory of types / lambda term” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-INTUITIONISTIC-LOGIC
+
+- Type: terminology
+- Choice: شهودي منطق / تعميري / د بي‌اېچ‌کې تفسير / دوه‌ګونې نفي ژباړه / د کرېپکي جوړښت او تحميل
+- Uncertainty: supporting proof, proposition, semantics and induction concepts regionally attested; exact intuitionistic compounds and names unattested and provisional
+- Alternatives: انټېوشنېسټيک منطق; ساختماني منطق; د بروور--هايتنګ--کولموګوروف تفسير; دوه ځله نفي ژباړه; د کرېپکي مدل او فورسنګ
+- Review question: In Pakistani Pashto mathematical prose, is «شهودي منطق / تعميري / د بي‌اېچ‌کې تفسير / دوه‌ګونې نفي ژباړه / د کرېپکي جوړښت او تحميل» the clearest conventional rendering of “intuitionistic logic / constructive / BHK interpretation / double-negation translation / Kripke structure and forcing” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-MODAL-LOGIC
+
+- Type: terminology
+- Choice: مودالي منطق / لزوم او امکان / د لاسرسي اړيکه / مفهومي او مصداقي / معرفتي او زماني منطق
+- Uncertainty: supporting proposition, relation and semantics concepts regionally attested; exact modal labels unattested and provisional
+- Alternatives: وجهی منطق; ضرورت او امکان; د رسېدنې اړيکه; شدتي او امتدادي منطق; پوهنیز او زماني منطق
+- Review question: In Pakistani Pashto mathematical prose, is «مودالي منطق / لزوم او امکان / د لاسرسي اړيکه / مفهومي او مصداقي / معرفتي او زماني منطق» the clearest conventional rendering of “modal logic / necessity and possibility / accessibility relation / intensional and extensional / epistemic and temporal logic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## DEC-OLFUN-001
@@ -1938,6 +1983,42 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLFOL-029 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete chapter definitions, examples, exercises and frozen source bytes
+
+## DEC-OLFOL-030
+
+- Type: source-correction
+- Choice: restores the bracketed x argument of the second universal quantifier in the many-sorted French/German example
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-030 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+
+## DEC-OLFOL-031
+
+- Type: source-correction
+- Choice: uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-031 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+
+## DEC-OLFOL-032
+
+- Type: source-correction
+- Choice: writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-032 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+
+## DEC-OLFOL-033
+
+- Type: source-correction
+- Choice: states that x has type tau when explaining the lambda term whose type is tau to sigma
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLFOL-033 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
 
 ## DEC-REL-I
 

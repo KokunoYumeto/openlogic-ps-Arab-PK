@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 173,
-    "structural_pass": 173,
+    "draft_units": 181,
+    "structural_pass": 181,
     "visually_accepted": 105,
     "published": 82
   },
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B039-FOL-MODELS-THEORIES",
+  "batch": "PS-B040-FOL-BEYOND",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -4909,6 +4909,234 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0174",
+      "path": "content/first-order-logic/beyond/beyond.tex",
+      "source_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
+      "translation_sha256": "3ca4723ddcabe02f13b661a6559af0acfe2a36cb4ba6d3845a6b8279be4a37ea",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0175",
+      "path": "content/first-order-logic/beyond/introduction.tex",
+      "source_sha256": "859471ff2e16efdd444f4d4158f8a6c1600aae949d4d5b8f2362bac945bbf769",
+      "translation_sha256": "2025be596b4ada7f94ed718b3c73bea85ef1de782c4dd95b51384776f5a6925d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0176",
+      "path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+      "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+      "translation_sha256": "8aacd085aca40cd72ea0992db6b19b1802e8293d36da6e6893ac97ca5f90f50a",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-030"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\lforall[a][\\lforallx][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+        ],
+        "target_only": [
+          "\\[\\lforall[a][\\lforall[x][(\\Atom{\\Obj{MarriedTo}}{a,x}\\lif(\\Atom{\\Obj{DrinksWine}}{a}\\lor\\lnot\\Atom{\\Obj{EatsWurst}}{x})]]\\]"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0177",
+      "path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "translation_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-031",
+        "OLFOL-032"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Obj{R}{t_1,\\dots,t_k}$",
+          "$\\lforall[x][\\lforall[y][(s(x)=s(y)\\lifx=y)]]$"
+        ],
+        "target_only": [
+          "$\\Atom{R}{t_1,\\dots,t_k}$",
+          "$\\lforall[x][\\lforall[y][(x'=y'\\lifx=y)]]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0178",
+      "path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "translation_sha256": "7fae201c78d9db2e022fd91a9ca7072e4c4e3523b54efbf77ffc04ff76fdc871",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLFOL-033"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\sigma$"
+        ],
+        "target_only": [
+          "$\\tau$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0179",
+      "path": "content/first-order-logic/beyond/intuitionistic-logic.tex",
+      "source_sha256": "063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98",
+      "translation_sha256": "3a628eadb22ce8817e4953b4a7dae31d9ed34a6862a1c4106afe63c461aba81b",
+      "source_blocks": 28,
+      "target_blocks": 28,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0180",
+      "path": "content/first-order-logic/beyond/modal-logics.tex",
+      "source_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
+      "translation_sha256": "5dbc0bf4fba570cb334ef849a4f4f0980b268c6d4e9e84548fd73f6607dc9d88",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0181",
+      "path": "content/first-order-logic/beyond/other-logics.tex",
+      "source_sha256": "025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350",
+      "translation_sha256": "76ce0adbec6ef451ddb6ed85ee68b74498ddaecee2eceaba7b524f4bef980b81",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -6837,6 +7065,54 @@
       "passage": "expressing finite and infinite domain sizes",
       "reverse_paraphrase": "Pairwise distinct witnesses express at least n elements; adding universal exhaustion expresses exactly n. Infinitude is captured by the infinite set of all lower-bound sentences, while finiteness and uncountability are not captured even by arbitrary sentence sets.",
       "finding": "The at-least, at-most, exact and infinite claims retain their polarity. OLFOL-028 and OLFOL-029 place the unchanged matrices within their intended quantifier scopes."
+    },
+    {
+      "unit_id": "OLP-0174",
+      "passage": "beyond-first-order chapter driver",
+      "reverse_paraphrase": "The driver announces a brief survey and imports the overview, many-sorted, second-order, higher-order, intuitionistic, modal and other-logics sections.",
+      "finding": "All seven imports occur exactly once and in source order; the editorial note preserves the source's limited-scope claim."
+    },
+    {
+      "unit_id": "OLP-0175",
+      "passage": "what counts as logic",
+      "reverse_paraphrase": "A logic generally supplies a formal language and often a proof system and semantics. The section presents competing accounts of logicality and contrasts logicist higher-order foundations with Quine's set-theoretic criticism.",
+      "finding": "The qualifications 'often but not always,' the philosophical alternatives, both nonlogical axioms and Quine's objection all remain explicit."
+    },
+    {
+      "unit_id": "OLP-0176",
+      "passage": "many-sorted syntax and first-order embedding",
+      "reverse_paraphrase": "Each sort has its own variables, quantifiers and normally identity, while functions and relations have typed arguments. Unary predicates can encode the sorts in ordinary first-order logic, with relativized quantifiers and separation axioms.",
+      "finding": "The French/German example keeps both sorts and argument order. OLFOL-030 restores only x as the second quantifier's bracketed macro argument; the embedding and completeness claim retain both directions."
+    },
+    {
+      "unit_id": "OLP-0177",
+      "passage": "second-order syntax, semantics and expressive strength",
+      "reverse_paraphrase": "Second-order variables range over relations. Comprehension may be restricted predicatively; full semantics supplies all relations and yields categorical descriptions, while weak semantics treats relation domains as additional sorts and admits completeness.",
+      "finding": "Every displayed formula and the full/weak distinction were checked. OLFOL-031 restores the relation-atom macro, and OLFOL-032 uses the signature's declared prime successor in the injectivity axiom. No other formula differs."
+    },
+    {
+      "unit_id": "OLP-0178",
+      "passage": "higher-order finite types and simple type theory",
+      "reverse_paraphrase": "Arrow types contain functions, product types contain pairs, and the formation rules build variables, zero, successor, recursion, application, lambda terms, pairs and projections. Full function-space semantics is stronger than the weak typed-structure semantics.",
+      "finding": "All eight formation clauses and both recursion equations retain their types. OLFOL-033 changes only the explanatory input type from sigma to tau, matching the immediately preceding lambda rule."
+    },
+    {
+      "unit_id": "OLP-0179",
+      "passage": "constructive motivation, negative translation and Kripke semantics",
+      "reverse_paraphrase": "Existential and disjunctive intuitionistic proofs provide a witness or chosen disjunct. BHK gives proof-object readings, double negation translates classical proofs, and Kripke forcing evaluates implications over every future state.",
+      "finding": "Both irrational-exponent proofs, every BHK clause, all six translation equations, the two theorem directions and all five forcing clauses retain their logical polarity and quantifier direction."
+    },
+    {
+      "unit_id": "OLP-0180",
+      "passage": "modal operators and possible-world semantics",
+      "reverse_paraphrase": "Box expresses necessity and diamond possible truth. A binary accessibility relation links worlds; modal operators can receive alethic, provability, epistemic or temporal readings. S4 corresponds to reflexive transitive accessibility and S5 to universal accessibility.",
+      "finding": "The motivating conditional, box/diamond duality, three alternative readings, four displayed axioms, necessitation rule and both frame correspondences are preserved."
+    },
+    {
+      "unit_id": "OLP-0181",
+      "passage": "survey of further logics",
+      "reverse_paraphrase": "New logics pair syntax and proof rules with semantics. Fuzzy, probabilistic, default, nonmonotonic, epistemic, causal and deontic systems model different forms of reasoning and cross disciplinary boundaries.",
+      "finding": "Every named family and its stated modeling role is retained, including defeasible withdrawal after new information and the final Leibniz aspiration."
     }
   ],
   "builds": [
