@@ -1,0 +1,226 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{pis}
+\section{جزوي آيزومورفيزمونه}
+
+\begin{defn}
+  دوه !!{structure}s $\Struct{M}$ او $\Struct{N}$ راکړل شي۔
+  له~$\Struct{M}$ څخه~$\Struct{N}$ ته \emph{جزوي آيزومورفيزم} يوه
+  متناهي جزوي تابع~$p$ ده چې ارګومېنټونه ئې په~$\Domain M$ کښې او
+  قيمتونه ئې په~$\Domain N$ کښې وي، او د~\olref[iso]{defn:isomorphism}
+  د آيزومورفيزم شرطونه پر خپله د تعريف ساحه پوره کوي:
+  \begin{enumerate}
+  \item $p$ !!{injective} ده؛
+  \item د هر !!{constant}~$c$ دپاره: که $p(\Assign{c}{M})$ تعريف
+    شوے وي، نو $p(\Assign{c}{M}) = \Assign{c}{N}$؛
+  \item د هر $n$-ځاييز !!{predicate}~$P$ دپاره: که $a_1$،
+    \dots،~$a_n$ د~$p$ د تعريف په ساحه کښې وي، نو
+    $\langle a_1, \dots, a_n\rangle \in \Assign P M$ هله او يوازې
+    هله چې $\langle p(a_1), \dots, p(a_n) \rangle \in \Assign P N$؛
+  \item د هر $n$-ځاييز !!{function}~$f$ دپاره: که $a_1$،
+    \dots،~$a_n$ د~$p$ د تعريف په ساحه کښې وي، نو
+    $p(\Assign f M (a_1, \dots,a_n)) =
+    \Assign f N (p(a_1), \dots, p(a_n))$۔
+  \end{enumerate}
+  د~$p$ متناهي والی په دې معنا دے چې $\dom{p}$ متناهي ده۔
+\end{defn}
+
+پام وکړئ چې تشه تابع~$\emptyset$ تل د هر دوو !!{structure}s تر منځ
+يو جزوي آيزومورفيزم وي۔
+
+\begin{defn}\ollabel{defn:partialisom}
+  دوه !!{structure}s $\Struct{M}$ او $\Struct{N}$
+  \emph{په جزوي ډول آيزومورف} دي، چې $\Struct{M} \iso[p]
+  \Struct{N}$ ئې ليکو، هله او يوازې هله چې د~$\Struct{M}$ او
+  $\Struct{N}$ تر منځ د جزوي آيزومورفيزمونو يو ناتش سټ~$I$ وي چې د
+  \emph{مخ او شا} خاصيت پوره کوي:
+  \begin{enumerate}
+  \item (\emph{مخ}) د هر $p \in I$ او $a \in \Domain M$ دپاره داسې
+    $q \in I$ شته چې $p \subseteq q$ او~$a$ د~$q$ د تعريف په ساحه
+    کښې وي؛
+  \item (\emph{شا}) د هر $p \in I$ او $b \in \Domain N$ دپاره داسې
+    $q \in I$ شته چې $p \subseteq q$ او~$b$ د~$q$ د قيمتونو په ساحه
+    کښې وي۔
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:p-isom1}
+  که $\Struct{M} \iso[p] \Struct{N}$ وي او $\Struct{M}$ او
+  $\Struct{N}$ !!{enumerable} وي، نو $\Struct{M} \iso \Struct{N}$۔
+\end{thm}
+
+\begin{proof}
+  دا چې $\Struct{M}$ او $\Struct{N}$ !!{enumerable} دي، فرض کړئ
+  $\Domain{M} = \{a_0, a_1, \ldots \}$ او
+  $\Domain{N} = \{b_0, b_1, \ldots \}$۔ له يوه خپل سري
+  $p_0 \in I$ څخه په پيل، د جزوي آيزومورفيزمونو زياتېدونکې لړۍ
+  $p_0 \subseteq p_1 \subseteq p_2 \subseteq \cdots$ داسې تعريفوو:
+  \begin{enumerate}
+  \item که $n+1$ طاق وي، يعنې $n = 2r$، نو د مخ خاصيت په کارولو
+    داسې $p_{n+1} \in I$ ومومئ چې $p_n \subseteq p_{n+1}$ او~$a_r$
+    د~$p_{n+1}$ د تعريف په ساحه کښې وي؛
+  \item که $n+1$ جفت وي، يعنې $n+1 =2r$، نو د شا خاصيت په کارولو
+    داسې $p_{n+1} \in I$ ومومئ چې $p_n \subseteq p_{n+1}$ او~$b_r$
+    د~$p_{n+1}$ د قيمتونو په ساحه کښې وي۔
+  \end{enumerate}
+اوس که
+\[
+p = \bigcup_{n\ge 0} p_n,
+\]
+کېږدو، نو $p$ د~$\Struct{M}$ او~$\Struct{N}$ تر منځ يو آيزومورفيزم
+دے۔
+\end{proof}
+
+\begin{prob}
+  په تفصيل وښيئ چې په~\olref[mod][bas][pis]{thm:p-isom1} کښې تعريف
+  شوے~$p$ په رښتيا يو آيزومورفيزم دے۔
+\end{prob}
+
+\begin{thm}\ollabel{thm:p-isom2}
+  فرض کړئ $\Struct{M}$ او $\Struct{N}$ د يوې سوچه اړيکيزې
+  !!{language} !!{structure}s دي (داسې !!a{language} چې يوازې
+  !!{predicate}s لري او !!{function}s يا ثابتونه نۀ لري)۔ بيا که
+  $\Struct{M} \iso[p] \Struct{N}$ وي، نو $\Struct{M} \elemequiv
+  \Struct{N}$ هم وي۔
+\end{thm}
+
+\begin{proof}
+  پر !!{formula}s په استقرا ښودل کېږي چې که $a_1$، \dots،~$a_n$ او
+  $b_1$، \dots،~$b_n$ داسې وي چې يو جزوي آيزومورفيزم~$p$ هر~$a_i$
+  پر~$b_i$ وړي، او $s_1(x_i) =a_i$ او $s_2(x_i) =b_i$ وي (د
+  $i =1$، \dots،~$n$ دپاره)، نو $\Sat{M}{!A}[s_1]$ هله او يوازې هله
+  چې $\Sat{N}{!A}[s_2]$ وي۔ د~$n=0$ حالت
+  $\Struct{M} \elemequiv \Struct{N}$ راکوي۔
+\end{proof}
+
+\begin{rem}
+که !!{function}s موجودې وي، مخکينۍ پايله بيا هم رښتونې ده، خو د هغه
+آيزومورفيزم څېړل پکار دي چې~$p$ ئې د~$a_1$، \dots،~$a_n$ له خوا د
+$\Struct{M}$ پر توليد شوي فرعي !!{structure} او د~$b_1$،
+\dots،~$b_n$ له خوا د~$\Struct{N}$ پر توليد شوي فرعي !!{structure}
+رامنځته کوي۔
+\end{rem}
+
+مخکينۍ پايله په پړاوونو هم ``ماتېدے'' شي: په يوه !!a{formula} کښې د
+يو بل دننه کميت ټاکونکو د شمېر او د اړوندو جزوي آيزومورفيزمونو د
+غځېدو د ځلونو تر منځ اړيکه ټينګوو۔
+
+\begin{defn}
+  د هر !!{formula}~$!A$ دپاره، د~$!A$ \emph{د کميت ټاکونکو رتبه}، چې
+  $\QuantRank{!A} \in \Nat$ ئې ليکو، په بازګشتي ډول په~$!A$ کښې د
+  يو بل دننه کميت ټاکونکو تر ټولو لوړه شمېره تعريفېږي۔ دوه
+  !!{structure}s $\Struct{M}$ او $\Struct{N}$ \emph{$n$-هم‌ارز} دي،
+  چې $\Struct{M} \elemequiv[n] \Struct{N}$ ئې ليکو، که د کميت
+  ټاکونکو د مرتبې تر~$n$ پورې پر ټولو جملو سره سلا وي۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:qr-finite}
+  فرض کړئ $\Lang{L}$ يوه متناهي سوچه اړيکيزه !!{language} ده، يعنې
+  داسې !!{language} چې متناهي شمېر !!{predicate}s او !!{constant}s
+  لري او !!{function}s نۀ لري۔ بيا د هر $n \in \Nat$ دپاره، له
+  منطقي هم‌ارزۍ پرته، د~$\Lang{L}$ په !!{language} کښې يوازې متناهي ډېرې داسې
+  د لومړۍ درجې !!{sentence}s شته چې د کميت ټاکونکو رتبه ئې تر~$n$
+  زياته نۀ وي۔
+\end{prop}
+
+\begin{proof}
+  پر~$n$ په استقرا۔
+\end{proof}
+
+\begin{defn}
+  يو !!a{structure}~$\Struct{M}$ راکړل شي۔ $\Domain M^{<\omega}$ د
+  $\Domain{M}$ پر غړو د ټولو متناهي لړيو سټ ونيسئ۔ په~$\mathbf{a}, \mathbf{b}, \mathbf{c}, \ldots$ د غړو متناهي لړۍ ښيو۔ که
+  $\mathbf{a} \in \Domain{M}^{<\omega}$ او $a \in \Domain{M}$ وي، نو
+  $\mathbf{a}a$ له~$a$ سره د~$\mathbf{a}$ \emph{نښلون} ښيي۔
+\end{defn}
+
+\begin{defn}
+  !!{structure}s $\Struct{M}$ او $\Struct{N}$ راکړل شي۔ د يو شان
+  اوږدوالي لړيو تر منځ اړيکې
+  $I_n \subseteq \Domain M^{<\omega} \times \Domain N^{<\omega}$
+  پر~$n$ په بازګښت داسې تعريفوو:
+   \begin{enumerate}
+   \item $I_0(\mathbf{a},\mathbf{b})$ هله او يوازې هله چې
+     $\mathbf{a}$ او $\mathbf{b}$ په~$\Struct{M}$ او~$\Struct{N}$
+     کښې يو شان اټومي !!{formula}s پوره کړي؛ يعنې که د دواړو لړيو
+     اوږدوالی~$k$ وي، $s_1(x_i) = a_i$ او $s_2(x_i) = b_i$ وي، او
+     $!A$ داسې اټومي فارمول وي چې ټول !!{variable}s ئې په
+     $x_1$، \dots،~$x_k$ کښې وي، نو $\Sat{M}{!A}[s_1]$ هله او يوازې
+     هله چې $\Sat{N}{!A}[s_2]$ وي۔
+   \item $I_{n+1} (\mathbf{a},\mathbf{b})$ هله او يوازې هله چې د هر
+     $a\in \Domain M$ دپاره داسې $b\in \Domain N$ وي چې
+     $I_n(\mathbf{a}a,\mathbf{b}b)$، او برعکس۔
+   \end{enumerate}
+  \textbf{د ژباړې د نسخې سمون (OLMOD-003):} سرچينې په لومړي شرط کښې
+  د لړيو د اوږدوالي شاخص د اړيکو د بازګشتي شاخص سره يو شان نيولے و؛
+  دلته اوږدوالی په بېل~$k$ ښودل شوے، څو لومړنۍ اړيکه د هر اوږدوالي د
+  لړيو اټومي فارمولونه پرتله کړي۔
+\end{defn}
+
+
+\begin{defn}
+  $\Struct{M} \approx_n \Struct{N}$ ليکو که
+  $I_n(\emptyseq,\emptyseq)$ د~$\Struct{M}$ او~$\Struct{N}$ دپاره
+  صدق وکړي (دلته $\emptyseq$ تشه لړۍ ده)۔
+\end{defn}
+
+\begin{thm}\ollabel{thm:b-n-f}
+  فرض کړئ $\Lang{L}$ يوه سوچه اړيکيزه !!{language} ده۔ بيا
+  $I_n(\mathbf{a},\mathbf{b})$ دا لازموي چې د هر داسې~$!A$ دپاره چې
+  $\QuantRank{!A} \le n$ وي، $\Sat{M}{!A}[\mathbf{a}]$ هله او يوازې
+  هله چې $\Sat{N}{!A}[\mathbf{b}]$ وي (دلته هم، $\mathbf{a}$ هغه
+  وخت~$!A$ پوره کوي چې هره داسې~$s$ چې $s(x_i) = a_i$ وي، $!A$ پوره
+  کړي)۔ سربېره پر دې، که $\Lang{L}$ متناهي وي، معکوس هم صدق کوي۔
+\end{thm}
+
+\begin{proof}
+  دا چې $I_n(\mathbf{a},\mathbf{b})$ لازموي چې $\mathbf{a}$ او
+  $\mathbf{b}$ د کميت ټاکونکو تر~$n$ پورې يو شان !!{formula}s پوره
+  کوي، پر~$!A$ په اسانه استقرا ثابتېږي۔ د معکوس دپاره پر~$n$ استقرا
+  کوو او \olref{prop:qr-finite} کاروو، چې تضمينوي د هر~$n$ دپاره د
+  هغې مرتبې تر ډېره متناهي ډېر يو له بله نۀ هم‌ارز !!{formula}s شته۔
+
+  د~$n=0$ دپاره، دا فرض چې $\mathbf{a}$ او $\mathbf{b}$ يو شان بې
+  کميت ټاکونکو !!{formula}s پوره کوي، راکوي چې يو شان اټومي فارمولونه
+  پوره کوي؛ نو $I_0(\mathbf{a},\mathbf{b})$۔
+
+  د~$n+1$ په حالت کښې فرض کړئ $\mathbf{a}$ او $\mathbf{b}$ د کميت
+  ټاکونکو تر~$n+1$ پورې يو شان !!{formula}s پوره کوي۔ د
+  $I_{n+1}(\mathbf{a},\mathbf{b})$ د ښودلو دپاره کافي ده چې د هر
+  $a \in \Domain M$ دپاره داسې $b \in \Domain N$ وښيو چې
+  $I_n(\mathbf{a}a,\mathbf{b}b)$؛ او د استقرا له فرضه بيا کافي ده
+  وښيو چې د هر $a \in \Domain M$ دپاره داسې $b \in \Domain N$ شته
+  چې $\mathbf{a}a$ او $\mathbf{b}b$ د کميت ټاکونکو تر~$n$ پورې يو
+  شان !!{formula}s پوره کوي۔
+
+  يو $a \in \Domain M$ راکړل شي۔ $!T^a_n$ د رتبې تر~$n$ پورې د هغو
+  !!{formula}s~$!B(x,\mathbf{y})$ سټ ونيسئ چې $\mathbf{a}a$ ئې
+  په~$\Struct{M}$ کښې پوره کوي؛ $!T^a_n$ له منطقي هم‌ارزۍ پرته
+  متناهي دے، نو د غړو د تړون په اخيستو ئې يو د لومړۍ درجې
+  !!{formula} ګڼلے شو۔ له دې پايله کېږي چې $\mathbf{a}$
+  $\lexists[x][!T^a_n(x,\mathbf{y})]$ پوره کوي، چې د کميت ټاکونکو
+  رتبه ئې تر~$n+1$ زياته نۀ ده۔ د فرض له مخې $\mathbf{b}$ هماغه
+  !!{formula} په~$\Struct{N}$ کښې پوره کوي؛ نو داسې
+  $b \in \Domain N$ شته چې $\mathbf{b}b$، $!T^a_n$ پوره کوي۔ په
+  ځانګړي ډول، $\mathbf{b}b$ د کميت ټاکونکو تر~$n$ پورې هماغه
+  !!{formula}s پوره کوي چې $\mathbf{a}a$ ئې پوره کوي۔ په ورته ډول
+  ښودل کېږي چې د هر $b \in \Domain N$ دپاره داسې $a\in \Domain M$
+  شته چې $\mathbf{a}a$ او $\mathbf{b}b$ د کميت ټاکونکو تر~$n$ پورې
+  يو شان !!{formula}s پوره کوي؛ په دې سره ثبوت بشپړېږي۔
+\end{proof}
+
+\begin{cor}\ollabel{cor:b-n-f}
+  که $\Struct{M}$ او $\Struct{N}$ په يوه متناهي !!{language} کښې
+  سوچه اړيکيز !!{structure}s وي، نو $\Struct{M} \approx_n\Struct{N}$
+  هله او يوازې هله چې $\Struct{M} \elemequiv[n] \Struct{N}$ وي۔ په
+  ځانګړي ډول، $\Struct{M} \elemequiv \Struct{N}$ هله او يوازې هله
+  چې د هر~$n$ دپاره $\Struct{M} \approx_n \Struct{N}$ وي۔
+\end{cor}
+
+\end{document}

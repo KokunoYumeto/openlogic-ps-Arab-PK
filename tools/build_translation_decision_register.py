@@ -54,6 +54,8 @@ PART_AND_CHAPTER = {
     "axiomatic-deduction": ("د لومړۍ درجې منطق", "بديهي اشتقاق"),
     "models-theories": ("د لومړۍ درجې منطق", "مدلونه او تيورۍ"),
     "beyond": ("د لومړۍ درجې منطق", "د لومړۍ درجې له منطق څخه وړاندې"),
+    "model-theory": ("مدل تيوري", "مدل تيوري"),
+    "basics": ("مدل تيوري", "د مدل تيورۍ بنسټونه"),
 }
 
 OUTPUT_NAMES = [
@@ -125,6 +127,10 @@ def titles_for_path(source_path: str, target_file: Path) -> tuple[str | None, st
         key = "syntax-and-semantics"
     elif "first-order-logic" in parts:
         index = parts.index("first-order-logic")
+        if len(parts) > index + 1:
+            key = parts[index + 1]
+    elif "model-theory" in parts:
+        index = parts.index("model-theory")
         if len(parts) > index + 1:
             key = parts[index + 1]
     part_title, chapter_title = PART_AND_CHAPTER.get(key, (None, None))

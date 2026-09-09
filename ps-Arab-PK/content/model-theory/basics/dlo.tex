@@ -1,0 +1,81 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{dlo}
+\section{بې له سرحدي ټکو ګڼ خطي ترتيبونه}
+
+\begin{defn}
+  \emph{بې له سرحدي ټکو ګڼ خطي ترتيب} د هغې !!{language} يو !!a{structure}
+  $\Struct{M}$ دے چې يوازينے دوه ځاييز !!{predicate}~$<$ لري او لاندې
+  جملې پوره کوي:
+  \begin{enumerate}
+  \item $\lforall[x][\lnot x < x]$؛
+  \item $\lforall[x][\lforall[y][\lforall[z][(x < y \lif (y < z \lif x
+    <z ))]]]$؛
+  \item $\lforall[x][\lforall[y][(x< y \lor \eq[x][y] \lor y < x)]]$؛
+  \item $\lforall[x][\lexists[y][x < y]]$؛
+  \item $\lforall[x][\lexists[y][y < x]]$؛
+  \item $\lforall[x][\lforall[y][(x < y \lif \lexists[z][(x < z \land
+        z < y))]]]$۔
+ \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:cantorQ}
+  هر دوه !!{enumerable}، بې له سرحدي ټکو ګڼ خطي ترتيبونه آيزومورف دي۔
+\end{thm}
+
+\begin{proof}
+  فرض کړئ $\Struct{M_1}$ او $\Struct{M_2}$ !!{enumerable}، بې له
+  سرحدي ټکو ګڼ خطي ترتيبونه دي، ${<_1} = \Assign{<}{M_1}$ او
+  ${<_2} = \Assign{<}{M_2}$، او $\PIso{I}$ د دوى تر منځ د ټولو جزوي
+  آيزومورفيزمونو سټ دے۔ $\PIso{I}$ تش نۀ دے، ځکه لږ تر لږه
+  $\emptyset \in \PIso{I}$۔ ښيو چې $\PIso{I}$ د مخ او شا خاصيت پوره
+  کوي۔ بيا $\Struct{M_1} \iso[p] \Struct{M_2}$، او قضيه
+  له~\olref[pis]{thm:p-isom1} څخه پايله کېږي۔
+
+  د دې د ښودلو دپاره چې $\PIso{I}$ د مخ خاصيت پوره کوي، فرض کړئ
+  $p \in \PIso{I}$ او د~$i = 1$، \dots،~$n$ دپاره
+  $p(a_i) = b_i$، او د عموميت له زيان پرته فرض کړئ
+  $a_1 <_1 a_2 <_1 \cdots <_1 a_n$۔ يو $a \in \Domain{M_1}$ چې
+  راکړل شي، $b \in \Domain{M_2}$ داسې ومومئ:
+  \begin{enumerate}
+  \item که $a <_1 a_1$ وي، $b \in \Domain{M_2}$ داسې ونيسئ چې
+    $b <_2 b_1$؛
+  \item که $a_n <_1 a$ وي، $b \in \Domain{M_2}$ داسې ونيسئ چې
+    $b_n <_2 b$؛
+ \item که د کوم~$i$ دپاره $a_i <_1 a <_1 a_{i+1}$ وي، نو
+   $b \in \Domain{M_2}$ داسې ونيسئ چې $b_i <_2 b <_2 b_{i+1}$۔
+  \end{enumerate}
+  د مطلوب خاصيت لرونکے~$b$ تل موندل کېدے شي، ځکه $\Struct{M_2}$ بې
+  له سرحدي ټکو ګڼ خطي ترتيب دے۔ $q = p \cup \{ \langle a, b \rangle
+  \}$ داسې تعريف کړئ چې $q \in \PIso{I}$ د~$p$ مطلوبه غځونه وي۔ په
+  دې سره د مخ خاصيت ثابت شو۔ د شا خاصيت هم ورته دے۔ نو
+  $\Struct{M_1} \iso[p] \Struct{M_2}$؛ او د
+  \olref[pis]{thm:p-isom1} له مخې $\Struct{M_1} \iso \Struct{M_2}$۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[mod][bas][dlo]{thm:cantorQ} ثبوت په دې ښودلو بشپړ کړئ چې
+  $\PIso{I}$ د شا خاصيت پوره کوي۔
+\end{prob}
+
+\begin{rem}
+  $\Struct{S}$، بې له سرحدي ټکو هر !!{enumerable} ګڼ خطي ترتيب،
+  ونيسئ۔ بيا (د~\olref{thm:cantorQ} له مخې) $\Struct{S} \iso
+  \Struct{Q}$، چې $\Struct{Q} = (\Rat, <)$ هغه !!{enumerable} ګڼ
+  خطي ترتيب دے چې د تعريف ساحه ئې د ناطقو عددونو سټ~$\Rat$ دے۔ اوس د
+  \olref[thm]{remark:R} !!{structure}~$\Struct{R} = (\Real, <)$ بيا وګورئ۔ مو
+  وليدل چې داسې !!a{enumerable} !!{structure}~$\Struct{S}$ شته چې
+  $\Struct{R} \elemequiv \Struct{S}$۔ خو $\Struct{S}$، بې له سرحدي
+  ټکو يو !!a{enumerable} ګڼ خطي ترتيب دے؛ نو له جوړښت~$\Struct{Q}$
+  سره آيزومورف (او ځکه ابتدايي هم‌ارز) !!{structure} دے۔ د ابتدايي هم‌ارزۍ له
+  انتقاليت څخه $\Struct{R} \elemequiv \Struct{Q}$ پايله کېږي۔ (دا مو
+  په مستقيم ډول هم ښودلے شول: د هماغه مخ او شا دليل په وسيله مو
+  $\Struct{R} \iso[p] \Struct{Q}$ ټينګولے شو۔)
+\end{rem}
+\end{document}

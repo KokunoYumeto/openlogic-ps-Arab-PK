@@ -1,0 +1,68 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: reducts-and-expansions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{red}
+\section{راکمونې او غځونې}
+
+ډېر ځله د هغو ژبو، او د دغو ژبو د !!{structure}s پرتله ګټوره يا
+اړينه وي چې ځينې نښې سره ګډې لري۔ تر ټولو عام حالت دا دے چې د يوې
+!!a{language}~$\Lang{L}$ ټولې نښې د بلې !!a{language}~$\Lang{L'}$
+برخه هم وي، يعنې $\Lang{L} \subseteq \Lang{L'}$۔ بيا يو
+$\Lang{L}$-!!{structure}~$\Struct{M}$ تل د اضافي نښو په تفسيرولو
+$\Lang{L'}$-!!{structure} ته غځېدلے شي، په داسې حال کښې چې د ګډو نښو
+تفسيرونه هماغسې پاتې شي۔ له بلې خوا، له يوه
+$\Lang{L'}$-جوړښت~$\Struct{M'}$ څخه د هغو نښو د تفسيرونو په
+``هېرولو'' يو $\Lang{L}$-جوړښت ترلاسه کولے شو چې په~$\Lang{L}$ کښې
+نۀ راځي۔
+
+\begin{defn}
+\ollabel{defn:reduct}
+فرض کړئ $\Lang L \subseteq \Lang L'$، $\Struct M$ يو
+$\Lang L$-!!{structure} او $\Struct M'$ يو $\Lang L'$-!!{structure}
+دے۔ $\Struct M$ د~$\Struct M'$ تر~$\Lang L$ پورې \emph{راکمونه}، او
+$\Struct M'$ د~$\Struct M$ تر~$\Lang L'$ پورې \emph{غځونه} هله او
+يوازې هله ده چې
+\begin{enumerate}
+\item $\Domain{M} = \Domain{M'}$
+\item د هر داسې !!{constant}~$c \in \Lang L$ دپاره،
+  $\Assign{c}{M} = \Assign{c}{M'}$ وي۔
+\item د هر داسې !!{function}~$f \in \Lang L$ دپاره،
+  $\Assign{f}{M} = \Assign{f}{M'}$ وي۔
+\item د هر داسې !!{predicate}~$P \in \Lang L$ دپاره،
+  $\Assign{P}{M} = \Assign{P}{M'}$ وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:reduct}
+که يو $\Lang{L}$-!!{structure}~$\Struct{M}$ د يوه
+$\Lang{L'}$-!!{structure}~$\Struct{M'}$ راکمونه وي، نو د~$\Lang{L}$
+د ټولو !!{sentence}s~$!A$ دپاره
+\[
+\Sat{M}{!A} \text{ هله او يوازې هله چې } \Sat{M'}{!A}.
+\]
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][red]{prop:reduct} ثابته کړئ۔
+\end{prob}
+
+\begin{defn}
+که يو $\Lang{L}$-جوړښت $\Struct{M}$ ولرو، او $\Lang{L'} =
+\Lang{L} \cup \{P\}$ د~$\Lang{L}$ هغه غځونه وي چې يوازينے
+$n$-ځاييز !!{predicate}~$P$ ورزياتوي، او $R \subseteq \Domain{M}^n$
+يوه $n$-ځاييزه اړيکه وي، نو د~$\Struct{M}$ هغه
+غځونه~$\Struct{M'}$ چې $\Assign{P}{M'} = R$ وي، په
+$\Expan{M}{R}$ ليکو۔
+\end{defn}
+
+\end{document}

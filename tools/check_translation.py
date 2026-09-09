@@ -86,7 +86,7 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\\(?:article|Article)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\(?:texttt|textsc|textsf|textrm)\{[^{}]*\}','',residual)
  residual=re.sub(r'https?://[^}\s]+|openlogicproject\.org','',residual)
- residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL)-\d+','',residual)
+ residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL|OLMOD)-\d+','',residual)
  residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}','',residual)
  residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
  residual=re.sub(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{[^{}]*\}','',residual)

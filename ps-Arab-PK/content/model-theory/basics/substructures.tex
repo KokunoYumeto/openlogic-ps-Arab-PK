@@ -1,0 +1,51 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: substructures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{sub}
+\olsection{فرعي \printtoken{p}{structure}}
+
+د يوه !!a{structure}~$\Struct{M}$ !!{domain} ښايي د بل
+جوړښت~$\Struct{M'}$ فرعي سټ وي۔ خو څرګنده ده چې $\Struct{M}$ بايد
+يوازې هغه وخت د~$\Struct{M'}$ يوه ``برخه'' وګڼو چې نۀ يوازې
+$\Domain{M} \subseteq \Domain{M'}$ وي، بلکې $\Struct{M}$ او
+$\Struct{M'}$ لږ تر لږه پر ګډې برخې~$\Domain{M}$ د ژبې د نښو په
+تفسيرولو کښې هم ``سره سلا'' وي۔
+
+\begin{defn}
+\ollabel{defn:substructure}
+د يوې ژبې~$\Lang L$ !!{structure}s $\Struct M$ او $\Struct M'$ راکړل شي۔
+وايو $\Struct M$ د~$\Struct M'$ \emph{فرعي !!{structure}}، او
+$\Struct M'$ د~$\Struct M$ \emph{غځونه} ده، چې
+$\Struct M \substruct \Struct M'$ ئې ليکو، هله او يوازې هله چې
+\begin{enumerate}
+\item $\Domain{M} \subseteq \Domain{M'}$ وي؛
+\item د هر داسې ثابت $c \in \Lang L$ دپاره، $\Assign{c}{M} =
+    \Assign{c}{M'}$ وي؛
+\item د هر داسې $n$-ځاييز !!{function}~$f \in \Lang L$ دپاره، د
+  ټولو $a_1$، \dots،~$a_n \in \Domain{M}$ دپاره
+  $\Assign{f}{M}(a_1, \dots, a_n) = \Assign{f}{M'}(a_1, \dots, a_n)$
+  وي؛
+\item د هر داسې $n$-ځاييز !!{predicate}~$R \in \Lang L$ دپاره، د
+  ټولو $a_1$، \dots،~$a_n \in \Domain{M}$ دپاره
+  $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M}$ هله او يوازې
+  هله چې $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M'}$ وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+\ollabel{rem:substructure}
+که ژبه ثابت يا !!{function}s ونۀ لري، نو هر
+$N \subseteq \Domain{M}$ د~$\Struct M$ يو فرعي
+!!{structure}~$\Struct{N}$ ټاکي چې !!{domain} ئې
+$\Domain{N} = N$ دے؛ د دې دپاره $\Assign{R}{N} =
+\Assign{R}{M} \cap N^n$ ږدو۔
+\end{rem}
+
+% prove something about this? Examples?
+
+\end{document}

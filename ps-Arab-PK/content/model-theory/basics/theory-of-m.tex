@@ -1,0 +1,67 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: theory-of-m
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{thm}
+
+\section{د يوه \printtoken{S}{structure} تيوري}
+
+هر !!{structure}~$\Struct{M}$ ځينې !!{sentence}s رښتونې او ځينې
+دروغې کوي۔ د هغو ټولو !!{sentence}s سټ چې دا جوړښت ئې رښتونې کوي، د
+هغه \emph{تيوري} بلل کېږي۔ دا سټ په رښتيا يوه تيوري ده، ځکه د هغې هر
+معنايي استلزام بايد د هغې په ټولو مدلونو، او له دې ډلې
+په~$\Struct{M}$ کښې، رښتونے وي۔
+
+\begin{defn}
+  يو !!a{structure}~$\Struct M$ راکړل شي۔ د~$\Struct{M}$
+  \emph{تيوري} د هغو !!{sentence}s سټ~$\Theory{M}$ دے چې
+  په~$\Struct{M}$ کښې رښتونې وي، يعنې
+  $\Theory{M} = \Setabs{!A}{\Sat{M}{!A}}$۔
+\end{defn}
+
+د ``تيورۍ'' اصطلاح په غيرصوري ډول د هغو !!{sentence}s سټونو دپاره
+هم کاروو چې يو ټاکلے مطلوب تفسير لري، که د استنتاج لاندې تړلي وي او
+که نۀ۔
+
+\begin{prop}
+د هر~$\Struct{M}$ دپاره $\Theory{M}$ بشپړه ده۔
+\end{prop}
+
+\begin{proof}
+د هرې !!{sentence}~$!A$ دپاره يا $\Sat{M}{!A}$ وي يا
+$\Sat{M}{\lnot !A}$؛ نو يا $!A \in \Theory{M}$ وي يا
+$\lnot !A \in \Theory{M}$۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:equiv}
+  که د هر~$!A \in \Theory{M}$ دپاره $\Struct{N} \models !A$ وي، نو
+  $\Struct{M} \elemequiv \Struct{N}$۔
+\end{prop}
+
+\begin{proof}
+دا چې د ټولو $!A \in \Theory{M}$ دپاره $\Sat{N}{!A}$ دے،
+$\Theory{M} \subseteq \Theory{N}$۔ که $\Sat{N}{!A}$ وي، نو
+$\Sat/{N}{\lnot !A}$؛ ځکه نو $\lnot !A \notin \Theory{M}$۔ دا چې
+$\Theory{M}$ بشپړه ده، $!A \in \Theory{M}$۔ نو
+$\Theory{N} \subseteq \Theory{M}$، او له دې
+$\Struct{M} \elemequiv \Struct{N}$ لرو۔
+\end{proof}
+
+\begin{rem}\ollabel{remark:R}
+  $\Struct{R} = \langle\Real, <\rangle$ وګورئ: دا هغه !!{structure}
+  دے چې د تعريف ساحه ئې د حقيقي عددونو سټ~$\Real$ او !!{language} ئې
+  يوازې يو دوه ځاييز !!{predicate} لري چې پر حقيقي عددونو د~$<$
+  اړيکې په توګه تفسير شوے۔ څرګنده ده چې $\Struct{R}$
+  !!{nonenumerable} دے؛ خو دا چې $\Theory{R}$ څرګنده سازګاره ده، د
+  لوېنهايم--سکولم د قضيې له مخې !!a{enumerable} مدل لري، مثلاً
+  $\Struct{S}$، او د~\olref{prop:equiv} له مخې $\Struct{R}
+  \equiv \Struct{S}$۔ سربېره پر دې، دا چې $\Struct{R}$ او
+  $\Struct{S}$ آيزومورف نۀ دي، ښيي چې د~\olref[iso]{thm:isom} معکوس
+  په عام ډول نۀ صدق کوي۔
+\end{rem}
+
+\end{document}

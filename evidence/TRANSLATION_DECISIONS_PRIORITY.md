@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 99 high-priority entries from the complete 230-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 103 high-priority entries from the complete 237-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -426,6 +426,8 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) 19,65,73,76,102,103; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0175; Overview; `content/first-order-logic/beyond/introduction.tex` source line(s) 44; `ps-Arab-PK/content/first-order-logic/beyond/introduction.tex` target line(s) 40; page: pending stable pagination in a reader containing this unit
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 46,48,57; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 59; page: pending stable pagination in a reader containing this unit
+  - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) 36,62; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 32; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -467,6 +469,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 32,48; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0169; Expressing Properties of \printtoken{P}{structure}; `content/first-order-logic/models-theories/expressing-props-of-structures.tex` source line(s) 61,62; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-props-of-structures.tex` target line(s) 58,59; page: pending stable pagination in a reader containing this unit
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 14,24,25,116; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 14,23,24,113; page: pending stable pagination in a reader containing this unit
+  - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 10,13,29,55,69,72,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 10,13,29,34,35,55,68,71,75; page: pending stable pagination in a reader containing this unit
 
 ## TERM-EXTENSION
 
@@ -479,6 +482,9 @@ This view contains 99 high-priority entries from the complete 230-entry decision
 - Locations:
   - OLP-0016; Orders; `content/sets-functions-relations/relations/orders.tex` source line(s) 77,78; `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex` target line(s) 76; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0018; Trees; `content/sets-functions-relations/relations/trees.tex` source line(s) 112; `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex` target line(s) line pending; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
+  - OLP-0183; mod; `content/model-theory/basics/basics.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/basics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) 28,61,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) 23; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CLOSURE
 
@@ -586,6 +592,9 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 74,112,114,119,143; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 27,69,70,87,88,107,109,111,113,114,138,142; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 169,174; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 149,163,166,167,169,172; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 75; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 21,32,37,39,53,73,81,87,94,106,116; page: pending stable pagination in a reader containing this unit
+  - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 39; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 39,93,107; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -652,6 +661,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 18,22,37,59,60; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 17,21,36,57,59; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 29,34,69,71,75,76; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,33,68,70,73,75; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -722,6 +732,8 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 26,29,33,60,61,68,75,92,93,100,102,109,111,117,125,128,129,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 13,16,25,27,32,59,60,67,75,92,93,100,102,109,111,115,117,125,126,128,129,132,143,144,157; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 12,23,37,55; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 12,22,36,53; page: pending stable pagination in a reader containing this unit
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 57,64,65,66,67,68; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 65,72,73,74,75,76,77; page: pending stable pagination in a reader containing this unit
+  - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 14,20,23,25,32,37,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 13,14,20,23,25,32,37,38; page: pending stable pagination in a reader containing this unit
+  - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 15,30,122,123,124,126,137,138,173,181,182,201,217; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 15,31,124,125,127,138,179,187,205,219; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IFF
 
@@ -976,6 +988,10 @@ This view contains 99 high-priority entries from the complete 230-entry decision
 - Locations:
   - OLP-0049; sfr; `content/sets-functions-relations/infinite/infinite.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/infinite.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0053; dedekinds-proof; `content/sets-functions-relations/infinite/dedekinds-proof.tex` source line(s) 38; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekinds-proof.tex` target line(s) 35; page: pending stable pagination in a reader containing this unit
+  - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 10,38,68; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 10,22,37,66,121,126; page: pending stable pagination in a reader containing this unit
+  - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 60; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
+  - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 16,34,38,76,95,104; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 10,14,17,35,39,41,62,76,82,95,104,111; page: pending stable pagination in a reader containing this unit
+  - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 30,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,36,76; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROPOSITION
 
@@ -1475,6 +1491,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) 103; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) 107,116; page: pending stable pagination in a reader containing this unit
   - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 250,265,284,307; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 61; page: pending stable pagination in a reader containing this unit
+  - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-RULES
 
@@ -1565,6 +1582,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 13,15,26,60,61,92,132; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 16,32,59,60,67,75,92,93,100,109,115,117,126,128,129; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 208; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 202; page: pending stable pagination in a reader containing this unit
+  - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 23; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -1671,6 +1689,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 10,12,48,58; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 10,12,47; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 67; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
+  - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SYNTAX
 
@@ -1700,6 +1719,7 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) 1,8; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 1,13,21,22,25,35,44,46,47,50,59,60,61,62; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 13,21,24,25,33,42,45,46,48,49,51,61,62,64; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 1,15,16,17,18,19,20,22,23,30,31,32,33,34,39,45,55,63,64,68,69,74,75,79,80,84,86,93,97,110,125,165,180,204,208,229,233,234,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 15,17,18,19,20,22,30,31,33,38,53,61,64,68,74,75,79,84,85,90,95,107,121,122,158,198,201,207,220,224,225,229,230; page: pending stable pagination in a reader containing this unit
+  - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 1,20,88,94,110,114,116,119,124,126,127,149,151,178,179,182,183,186,187,190,196,199,202,204,205,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 17,23,27,45,48,67,70,88,111,115,117,128,151,153,163,184,185,190,199,205,207,211,214; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -1756,6 +1776,11 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 2,14,24,26,30,41,63,71,94,115; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 11,14,24,26,30,42,63,70,92,102,103,112; page: pending stable pagination in a reader containing this unit
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 2,57,65,66; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 65,74; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 151,223; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 126,146,157,166,209,214,215; page: pending stable pagination in a reader containing this unit
+  - OLP-0182; model-theory; `content/model-theory/model-theory.tex` source line(s) 1,7,10,11,12,21; `ps-Arab-PK/content/model-theory/model-theory.tex` target line(s) 7,10,11,12,15; page: pending stable pagination in a reader containing this unit
+  - OLP-0183; mod; `content/model-theory/basics/basics.tex` source line(s) 1,8,18; `ps-Arab-PK/content/model-theory/basics/basics.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 2,14,20,22,24,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 14,20,21,24,37,38; page: pending stable pagination in a reader containing this unit
+  - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 2; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 121; page: pending stable pagination in a reader containing this unit
+  - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 2,3,11,15,16,19,20,21,25,30,35,39,44,45,46,47,56,57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 11,15,16,21,26,60; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-ORDER-HIERARCHY
 
@@ -1819,6 +1844,56 @@ This view contains 99 high-priority entries from the complete 230-entry decision
   - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 31,50,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 11,28,36,37,44,74,78; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-MODEL-THEORY-STRUCTURES
+
+- Source term or sense: reduct / expansion / substructure / theory of a structure / elementary equivalence / automorphism
+- Choice: راکمونه / غځونه / فرعي جوړښت / د جوړښت تيوري / ابتدايي هم‌ارز / اتومورفيزم
+- Why provisional: structure, theory, interpretation, relation and function concepts supported by regional sources; exact model-theoretic compounds and the automorphism label are provisional
+- Rationale: A reduct forgets symbols while retaining the shared interpretations, an expansion adds interpretations, a substructure closes the inherited operations on a smaller domain, and the theory of a structure collects its true sentences. Elementary equivalence concerns the same sentences; isomorphism is stronger, and an automorphism maps a structure onto itself. The edition keeps these roles distinct.
+- Alternatives: راکمونه او غځونې; فرعي جوړښت او پراخ جوړښت; د جوړښت د رښتينو جملو تيوري; ساختماني يو شان والی او ځان‌نقشه
+- Please double-check: In Pakistani Pashto mathematical prose, is «راکمونه / غځونه / فرعي جوړښت / د جوړښت تيوري / ابتدايي هم‌ارز / اتومورفيزم» the clearest conventional rendering of “reduct / expansion / substructure / theory of a structure / elementary equivalence / automorphism” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0182; model-theory; `content/model-theory/model-theory.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/model-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0183; mod; `content/model-theory/basics/basics.tex` source line(s) 10,12; `ps-Arab-PK/content/model-theory/basics/basics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) 3,10,25,28,29,42,43,56,61,64; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) 27,28,44,61,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 3,20,40; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) 10,13,22,23,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 120,126; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 14,29,125,131; page: pending stable pagination in a reader containing this unit
+  - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-PARTIAL-ISOMORPHISM
+
+- Source term or sense: partial isomorphism / back-and-forth / quantifier rank / n-equivalence
+- Choice: جزوي آيزومورفيزم / مخ او شا / د کميت ټاکونکو رتبه / n-هم‌ارز
+- Why provisional: partial, relation, quantifier and induction concepts supported by regional sources; exact back-and-forth and quantifier-rank compounds are provisional
+- Rationale: A partial isomorphism is a finite injective map preserving the relevant constants, predicates and functions on its domain. Back-and-forth extends its domain and range alternately. Quantifier rank counts nested quantifiers, while n-equivalence compares sentences up to that rank. The edition does not collapse these notions into ordinary equivalence.
+- Alternatives: نيمګړے آيزومورفيزم; مخکې او شاته غځونه; د کميت ټاکونکو ژورتيا; n-برابرښت
+- Please double-check: In Pakistani Pashto mathematical prose, is «جزوي آيزومورفيزم / مخ او شا / د کميت ټاکونکو رتبه / n-هم‌ارز» the clearest conventional rendering of “partial isomorphism / back-and-forth / quantifier rank / n-equivalence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 10,14,40,62,95,111,114,119,127,179,182,183,190,196,204,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 10,14,35,41,42,62,95,111,115,118,127,128,187,204; page: pending stable pagination in a reader containing this unit
+  - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 39; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 37,76,78; page: pending stable pagination in a reader containing this unit
+
+## TERM-OVERSPILL
+
+- Source term or sense: overspill / arbitrarily large finite models / infinite model
+- Choice: له بريده اوښتنه / د هرې کچې متناهي مدلونه / نامتناهي مدل
+- Why provisional: finite, infinite, model and compactness concepts supported by regional sources; exact overspill label is a provisional descriptive choice
+- Rationale: The overspill argument expands the language by pairwise-distinct constants. If every finite size bound is met, compactness yields a model satisfying all distinctness requirements, hence an infinite model. The descriptive Pashto title signals crossing every finite bound rather than a claim about nonstandard arithmetic.
+- Alternatives: له حده اوښتنه; د هر متناهي حد نه پورته مدلونه; نامحدود مدل
+- Please double-check: In Pakistani Pashto mathematical prose, is «له بريده اوښتنه / د هرې کچې متناهي مدلونه / نامتناهي مدل» the clearest conventional rendering of “overspill / arbitrarily large finite models / infinite model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 3,10,13,14,20,38,39; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 10,14,20,37,38; page: pending stable pagination in a reader containing this unit
+
+## TERM-DENSE-LINEAR-ORDER
+
+- Source term or sense: dense linear order without endpoints / Cantor's theorem / rational order
+- Choice: بې له سرحدي ټکو ګڼ خطي ترتيب / د کانتور قضيه / د ناطقو عددونو ترتيب
+- Why provisional: order, countability, relation and isomorphism concepts supported by regional sources; exact dense-order and theorem-name surfaces are provisional
+- Rationale: The chosen title says that every two distinct ordered points have another point between them and that no endpoint exists. The word ګڼ is kept as a transparent Pakistani-target rendering of dense, while countability remains شمېرېدونکی elsewhere; the two are not conflated.
+- Alternatives: بې پایو تراکم لرونکے خطي ترتيب; کثيف خطي ترتيب بې له پایونو; د کانتور--ق قضيه; د ناطقو عددونو خطي ترتيب
+- Please double-check: In Pakistani Pashto mathematical prose, is «بې له سرحدي ټکو ګڼ خطي ترتيب / د کانتور قضيه / د ناطقو عددونو ترتيب» the clearest conventional rendering of “dense linear order without endpoints / Cantor's theorem / rational order” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 10,13,28,29,34,35,55,64,69,70,72,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 10,13,29,34,55,68,71,75; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

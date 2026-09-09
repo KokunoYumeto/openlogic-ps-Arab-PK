@@ -1,0 +1,136 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: isomorphism
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{iso}
+\olsection{آيزومورف جوړښتونه}
+
+د لومړۍ درجې !!{structure}s په دوو لارو يو شان کېدے شي۔ يوه لار دا
+ده چې يو شان !!{sentence}s رښتونې کړي۔ داسې !!{structure}s
+\emph{ابتدايي هم‌ارز} بولو۔ خو جوړښتونه ډېر سره توپير لرلے او بيا هم
+يو شان !!{sentence}s رښتونې کولے شي---د بېلګې په توګه، يو ئې
+!!{enumerable} کېدے شي او بل نۀ۔ لامل دا دے چې د يوه
+!!a{structure} ډېر خاصيتونه د لومړۍ درجې په ژبو کښې نۀ شي بيانېدلے؛
+يا ځکه چې ژبه پوره بډايه نۀ وي، يا د لومړۍ درجې منطق د بنسټيزو
+محدوديتونو، لکه د لوېنهايم--سکولم د قضيې، له امله۔ نو بله او لا سخته
+معنا چې !!{structure}s پکې يو شان کېدے شي دا ده چې له بنسټه هماغه وي:
+يوازې په هغو څيزونو کښې توپير ولري چې ترې جوړ دي، خو په جوړښتي
+خاصيتونو کښې نۀ۔ د دې خبرې د دقيقولو يوه لار د \emph{آيزومورفيزم}
+مفهوم دے۔
+
+\begin{defn}
+\ollabel{defn:elem-equiv}
+د يوې !!{language}~$\Lang{L}$ دوه !!{structure}s $\Struct{M}$ او
+$\Struct M'$ راکړل شي۔ وايو $\Struct{M}$ له~$\Struct M'$ سره
+\emph{ابتدايي هم‌ارز} دے، چې $\Struct{M} \equiv \Struct M'$ ئې
+ليکو، هله او يوازې هله چې د~$\Lang{L}$ د هرې !!{sentence}~$!A$
+دپاره $\Sat{M}{!A}$ هله او يوازې هله چې $\Sat{M'}{!A}$ وي۔
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:isomorphism} د يوې !!{language}~$\Lang L$ دوه
+!!{structure}s $\Struct{M}$ او $\Struct M'$ راکړل شي۔ وايو
+$\Struct{M}$ له~$\Struct M'$ سره \emph{آيزومورف} دے، چې
+$\Struct{M} \simeq \Struct M'$ ئې ليکو، هله او يوازې هله چې داسې
+تابع $h \colon \Domain{M} \to \Domain{M'}$ شته چې:
+\begin{enumerate}
+\item $h$ !!{injective} ده: که $h(x) = h(y)$ وي، نو $x = y$؛
+\item $h$ !!{surjective} ده: د هر $y \in \Domain{M'}$ دپاره داسې
+  $x \in \Domain{M}$ شته چې $h(x) = y$؛
+\item \ollabel{defn:iso-const}د هر !!{constant}~$c$ دپاره:
+  $h(\Assign{c}{M}) = \Assign{c}{M'}$؛
+\item \ollabel{defn:iso-pred}د هر $n$-ځاييز !!{predicate}~$P$ دپاره:
+  \[
+  \tuple{a_1, \dots, a_n}\in \Assign{P}{M} \quad\text{هله او يوازې هله چې}\quad
+  \tuple{h(a_1), \dots, h(a_n)} \in \Assign{P}{M'};
+  \]
+\item \ollabel{defn:iso-func}د هر $n$-ځاييز !!{function}~$f$ دپاره:
+  \[
+  h(\Assign{f}{M}(a_1, \dots, a_n)) =
+  \Assign{f}{M'}(h(a_1), \dots, h(a_n)).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:isom}
+که $\Struct{M} \iso \Struct M'$ وي، نو $\Struct{M} \elemequiv
+\Struct{M'}$۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $h$ له~$\Struct{M}$ څخه پر~$\Struct M'$ يو آيزومورفيزم دے۔
+د هرې ګومارنې~$s$ دپاره $h \circ s$ د~$h$ او~$s$ ترکيب، يعنې
+په~$\Struct{M'}$ کښې هغه ګومارنه ده چې
+$(h \circ s)(x) = h(s(x))$ وي۔ پر~$t$ او~$!A$ په استقرا لاندې
+پياوړې دعوې ثابتولے شو:
+\begin{enumerate}
+  \item[a.] $h(\Value{t}{M}[s]) = \Value{t}{M'}[h\circ s]$۔
+  \item[b.] $\Sat{M}{!A}[s]$ هله او يوازې هله چې
+    $\Sat{M'}{!A}[h \circ s]$۔
+\end{enumerate}
+لومړۍ دعوه د~$t$ پر پېچلتيا په استقرا ثابتېږي۔
+\begin{enumerate}
+\item که $t \ident c$ وي، نو $\Value{c}{M}[s] = \Assign{c}{M}$ او
+  $\Value{c}{M'}[h \circ s] = \Assign{c}{M'}$۔ نو
+  $h(\Value{t}{M}[s]) = h(\Assign{c}{M}) = \Assign{c}{M'}$ (د
+  \olref{defn:isomorphism} له~\olref{defn:iso-const} څخه)
+  $= \Value{t}{M'}[h \circ s]$۔
+\item که $t \ident x$ وي، نو $\Value{x}{M}[s] = s(x)$ او
+  $\Value{x}{M'}[h \circ s] = h(s(x))$۔ نو
+  $h(\Value{x}{M}[s]) = h(s(x)) = \Value{x}{M'}[h \circ s]$۔
+\item که $t \ident f(t_1, \dots, t_n)$ وي، نو
+  \begin{align*}
+    \Value{t}{M}[s] & = \Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \quad\text{او}\\
+  \Value{t}{M'}[h \circ s] & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ
+    s], \dots, \Value{t_n}{M'}[h \circ s]).
+  \end{align*}
+  \textbf{د ژباړې د نسخې سمون (OLMOD-001):} سرچينې په دويمه کرښه کښې
+  د دويم جوړښت د ترم قيمت د لومړي جوړښت د تابعې په تفسير ليکلے و؛
+  دلته د هماغې کرښې د دويم جوړښت تفسير بېرته ايښوول شوے دے۔ د استقرا
+  فرض دا دے چې د هر~$i$ دپاره $h(\Value{t_i}{M}[s]) =
+  \Value{t_i}{M'}[h\circ s]$۔ نو
+  \begin{align}
+    h(\Value{t}{M}[s])
+    & = h(\Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s])) \notag\\
+    & = \Assign{f}{M'}(h(\Value{t_1}{M}[s]), \dots,
+    h(\Value{t_n}{M}[s])) \ollabel{iso-1}\\
+    & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ s], \dots,
+    \Value{t_n}{M'}[h \circ s]) \ollabel{iso-2}\\
+    & = \Value{t}{M'}[h\circ s] \notag
+  \end{align}
+  \textbf{د ژباړې د نسخې سمون (OLMOD-002):} سرچينې د لومړۍ کرښې د
+  بهرنۍ تابعې تړونکې قوس غورځولې وه؛ دلته هغه قوس بېرته ايښوول شوے دے۔
+  دلته \olref{iso-1} د~\olref{defn:isomorphism} له
+  \olref{defn:iso-func} او \olref{iso-2} د استقرا له فرض څخه پايله
+  کېږي۔
+\end{enumerate}
+د (b) برخې ثبوت د تمرين دپاره پرېښودل شوے دے۔
+
+که $!A$ جمله وي، ګومارنې~$s$ او~$h \circ s$ بې اغېزې دي، او
+$\Sat{M}{!A}$ هله او يوازې هله چې $\Sat{M'}{!A}$ لرو۔
+\end{proof}
+
+\begin{prob}
+د~\olref[mod][bas][iso]{thm:isom} د (b) برخې ثبوت په تفصيل بشپړ
+کړئ۔ پام وکړئ چې د~\olref[mod][bas][iso]{defn:isomorphism} د
+آيزومورفيزم ځانګړوونکي پنځه خاصيتونه هر يو چېرته کارول کېږي۔
+\end{prob}
+
+\begin{defn}
+د يوه جوړښت~$\Struct{M}$ \emph{اتومورفيزم} له~$\Struct{M}$ څخه پر
+خپل ځان يو آيزومورفيزم دے۔
+\end{defn}
+
+\begin{prob}
+وښيئ چې د هر جوړښت~$\Struct{M}$ دپاره، که $X$ د~$\Struct{M}$ يو
+تعريفېدونکی فرعي سټ او $h$ د~$\Struct{M}$ يو اتومورفيزم وي، نو
+$X = \Setabs{h(x)}{x \in X}$ (يعنې $X$ د~$h$ لاندې ثابت پاتې کېږي)۔
+\end{prob}
+
+
+\end{document}

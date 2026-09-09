@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 181 of 722 source units are translated drafts. This log contains 106 terminology entries and 124 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 190 of 722 source units are translated drafts. This log contains 110 terminology entries and 127 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -956,6 +956,42 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Uncertainty: supporting proposition, relation and semantics concepts regionally attested; exact modal labels unattested and provisional
 - Alternatives: وجهی منطق; ضرورت او امکان; د رسېدنې اړيکه; شدتي او امتدادي منطق; پوهنیز او زماني منطق
 - Review question: In Pakistani Pashto mathematical prose, is «مودالي منطق / لزوم او امکان / د لاسرسي اړيکه / مفهومي او مصداقي / معرفتي او زماني منطق» the clearest conventional rendering of “modal logic / necessity and possibility / accessibility relation / intensional and extensional / epistemic and temporal logic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-MODEL-THEORY-STRUCTURES
+
+- Type: terminology
+- Choice: راکمونه / غځونه / فرعي جوړښت / د جوړښت تيوري / ابتدايي هم‌ارز / اتومورفيزم
+- Uncertainty: structure, theory, interpretation, relation and function concepts supported by regional sources; exact model-theoretic compounds and the automorphism label are provisional
+- Alternatives: راکمونه او غځونې; فرعي جوړښت او پراخ جوړښت; د جوړښت د رښتينو جملو تيوري; ساختماني يو شان والی او ځان‌نقشه
+- Review question: In Pakistani Pashto mathematical prose, is «راکمونه / غځونه / فرعي جوړښت / د جوړښت تيوري / ابتدايي هم‌ارز / اتومورفيزم» the clearest conventional rendering of “reduct / expansion / substructure / theory of a structure / elementary equivalence / automorphism” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-PARTIAL-ISOMORPHISM
+
+- Type: terminology
+- Choice: جزوي آيزومورفيزم / مخ او شا / د کميت ټاکونکو رتبه / n-هم‌ارز
+- Uncertainty: partial, relation, quantifier and induction concepts supported by regional sources; exact back-and-forth and quantifier-rank compounds are provisional
+- Alternatives: نيمګړے آيزومورفيزم; مخکې او شاته غځونه; د کميت ټاکونکو ژورتيا; n-برابرښت
+- Review question: In Pakistani Pashto mathematical prose, is «جزوي آيزومورفيزم / مخ او شا / د کميت ټاکونکو رتبه / n-هم‌ارز» the clearest conventional rendering of “partial isomorphism / back-and-forth / quantifier rank / n-equivalence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-OVERSPILL
+
+- Type: terminology
+- Choice: له بريده اوښتنه / د هرې کچې متناهي مدلونه / نامتناهي مدل
+- Uncertainty: finite, infinite, model and compactness concepts supported by regional sources; exact overspill label is a provisional descriptive choice
+- Alternatives: له حده اوښتنه; د هر متناهي حد نه پورته مدلونه; نامحدود مدل
+- Review question: In Pakistani Pashto mathematical prose, is «له بريده اوښتنه / د هرې کچې متناهي مدلونه / نامتناهي مدل» the clearest conventional rendering of “overspill / arbitrarily large finite models / infinite model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-DENSE-LINEAR-ORDER
+
+- Type: terminology
+- Choice: بې له سرحدي ټکو ګڼ خطي ترتيب / د کانتور قضيه / د ناطقو عددونو ترتيب
+- Uncertainty: order, countability, relation and isomorphism concepts supported by regional sources; exact dense-order and theorem-name surfaces are provisional
+- Alternatives: بې پایو تراکم لرونکے خطي ترتيب; کثيف خطي ترتيب بې له پایونو; د کانتور--ق قضيه; د ناطقو عددونو خطي ترتيب
+- Review question: In Pakistani Pashto mathematical prose, is «بې له سرحدي ټکو ګڼ خطي ترتيب / د کانتور قضيه / د ناطقو عددونو ترتيب» the clearest conventional rendering of “dense linear order without endpoints / Cantor's theorem / rational order” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 
 ## DEC-OLFUN-001
@@ -2019,6 +2055,33 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLFOL-033 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete beyond-first-order chapter and frozen source bytes
+
+## DEC-OLMOD-001
+
+- Type: source-correction
+- Choice: uses the M-prime interpretation for the second term-evaluation line, matching its left-hand structure and assignment
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes
+
+## DEC-OLMOD-002
+
+- Type: source-correction
+- Choice: closes the outer h application in the first line of the aligned proof
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes
+
+## DEC-OLMOD-003
+
+- Type: source-correction
+- Choice: uses k for the common sequence length and reserves n for the recursively defined relation index
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes
 
 ## DEC-REL-I
 

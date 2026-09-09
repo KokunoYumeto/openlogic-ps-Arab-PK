@@ -1,0 +1,42 @@
+% Part: first-order-logic
+% Chapter: model-theory
+% Section: overspill
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{ove}
+\olsection{له بريده اوښتنه}
+
+\begin{thm}
+\ollabel{overspill} که د جملو يو سټ~$\Gamma$ د هرې کچې متناهي
+مدلونه ولري، نو يو نامتناهي مدل هم لري۔
+\end{thm}
+
+\begin{proof}
+د~$\Gamma$ ژبه د شمېر وړ نويو ثابتونو $c_0$، $c_1$، \dots په
+ورزياتولو وغځوئ او سټ $\Gamma \cup \{c_i \neq c_j : i \neq j\}$
+وګورئ۔ دا ويل چې $\Gamma$ د هرې کچې متناهي مدلونه لري، معنا ئې دا ده
+چې د هر $m >0$ دپاره داسې $n\ge m$ شته چې $\Gamma$ د شمېر~$n$ يو مدل
+لري۔ له دې پايله کېږي چې $\Gamma \cup \{c_i \neq c_j : i \neq j\}$
+په متناهي ډول د صدق وړ دے۔ د متناهي شاهد قضيې له مخې، $\Gamma \cup
+\{c_i \neq c_j : i \neq j\}$ يو مدل~$\Struct M$ لري چې د تعريف ساحه
+ئې بايد نامتناهي وي، ځکه ټولې نابرابرۍ $c_i \neq c_j$ پوره کوي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{inf-not-fo}
+د لومړۍ درجې د هېڅ ژبې داسې جمله~$!A$ نشته چې په يوه
+!!a{structure}~$\Struct M$ کښې هله او يوازې هله رښتونې وي چې د دغه
+!!{structure} د تعريف ساحه~$\Domain{M}$ نامتناهي وي۔
+\end{prop}
+
+\begin{proof}
+که داسې~$!A$ موجوده وے، نفي~$\lnot !A$ به ئې په ټولو او يوازې په
+متناهي !!{structure}s کښې رښتونې وه؛ نو د هرې کچې متناهي مدلونه به
+ئې لرل خو نامتناهي مدل به ئې نۀ درلود، چې دا له~\olref{overspill}
+سره په ټکر کښې ده۔
+\end{proof}
+
+\end{document}

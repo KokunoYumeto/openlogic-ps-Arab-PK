@@ -1,0 +1,96 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-09T18:43:01.950811+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS",
+  "scope": "OLP-0182 through OLP-0190 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLMOD-001",
+      "unit_id": "OLP-0187",
+      "classification": "function_interpretation_uses_wrong_structure_in_term_evaluation",
+      "source_path": "content/model-theory/basics/isomorphism.tex",
+      "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+      "source_locator": "content/model-theory/basics/isomorphism.tex:86-91",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/isomorphism.tex",
+      "target_line_1based": 92,
+      "target_sha256": "872ca9e560d1fcfaa6348bafaba643ca0cf2b8f65ce1eb597212112df36fc5e4",
+      "mode": "replace-wrong-structure-interpretation-plus-adjacent-note",
+      "translation_change": "uses the M-prime interpretation for the second term-evaluation line, matching its left-hand structure and assignment",
+      "counterexample": "The source labels the second value as evaluated in M-prime but applies the function interpreted in M. The induction claim and the following isomorphism step require the M-prime function interpretation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS",
+      "formula_policy": "Only the second displayed function interpretation changes from M to M-prime; term values, assignment composition and punctuation remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\Value{t}{M}[s]&=\\Assign{f}{M}(\\Value{t_1}{M}[s],\\dots,\\Value{t_n}{M}[s])\\quad\\text{LOCALIZED}\\\\\\Value{t}{M'}[h\\circs]&=\\Assign{f}{M}(\\Value{t_1}{M'}[h\\circs],\\dots,\\Value{t_n}{M'}[h\\circs]).\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\Value{t}{M}[s]&=\\Assign{f}{M}(\\Value{t_1}{M}[s],\\dots,\\Value{t_n}{M}[s])\\quad\\text{LOCALIZED}\\\\\\Value{t}{M'}[h\\circs]&=\\Assign{f}{M'}(\\Value{t_1}{M'}[h\\circs],\\dots,\\Value{t_n}{M'}[h\\circs]).\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-002",
+      "unit_id": "OLP-0187",
+      "classification": "missing_closing_parenthesis_in_term_evaluation_proof",
+      "source_path": "content/model-theory/basics/isomorphism.tex",
+      "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+      "source_locator": "content/model-theory/basics/isomorphism.tex:94-102",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/isomorphism.tex",
+      "target_line_1based": 106,
+      "target_sha256": "872ca9e560d1fcfaa6348bafaba643ca0cf2b8f65ce1eb597212112df36fc5e4",
+      "mode": "restore-outer-parenthesis-plus-adjacent-note",
+      "translation_change": "closes the outer h application in the first line of the aligned proof",
+      "counterexample": "The source opens h(Assign f M(...)) but closes only the argument list, so the displayed equality is not balanced and does not state the intended term value.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS",
+      "formula_policy": "Only the missing final parenthesis is supplied; all terms, function symbols, labels and equalities are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align}h(\\Value{t}{M}[s])&=h(\\Assign{f}{M}(\\Value{t_1}{M}[s],\\dots,\\Value{t_n}{M}[s])\\notag\\\\&=\\Assign{f}{M'}(h(\\Value{t_1}{M}[s]),\\dots,h(\\Value{t_n}{M}[s]))\\ollabel{iso-1}\\\\&=\\Assign{f}{M'}(\\Value{t_1}{M'}[h\\circs],\\dots,\\Value{t_n}{M'}[h\\circs])\\ollabel{iso-2}\\\\&=\\Value{t}{M'}[h\\circs]\\notag\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}h(\\Value{t}{M}[s])&=h(\\Assign{f}{M}(\\Value{t_1}{M}[s],\\dots,\\Value{t_n}{M}[s]))\\notag\\\\&=\\Assign{f}{M'}(h(\\Value{t_1}{M}[s]),\\dots,h(\\Value{t_n}{M}[s]))\\ollabel{iso-1}\\\\&=\\Assign{f}{M'}(\\Value{t_1}{M'}[h\\circs],\\dots,\\Value{t_n}{M'}[h\\circs])\\ollabel{iso-2}\\\\&=\\Value{t}{M'}[h\\circs]\\notag\\end{align}"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-003",
+      "unit_id": "OLP-0189",
+      "classification": "recursive_index_confused_with_sequence_length_in_atomic_base",
+      "source_path": "content/model-theory/basics/partial-iso.tex",
+      "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+      "source_locator": "content/model-theory/basics/partial-iso.tex:143-158",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/partial-iso.tex",
+      "target_line_1based": 160,
+      "target_sha256": "4b7600e9c2f1f39b6c3baeed24839e10bea077a91ebcf2033aaf56d0acb6cb76",
+      "mode": "separate-sequence-length-index-plus-adjacent-note",
+      "translation_change": "uses k for the common sequence length and reserves n for the recursively defined relation index",
+      "counterexample": "The source first says I_n relates sequences of equal length and then restricts atomic variables to x_1 through x_n. At n=0 this would exclude every variable even for nonempty sequences, so the base relation is ill-specified.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS",
+      "formula_policy": "Only the sequence-length references change to k and x_k, with an adjacent Pashto disclosure; the recursive I_n and I_{n+1} clauses remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$x_n$"
+        ],
+        "target_only": [
+          "$k$",
+          "$k$",
+          "$x_k$"
+        ]
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0182",
+    "OLP-0183",
+    "OLP-0184",
+    "OLP-0185",
+    "OLP-0186",
+    "OLP-0188",
+    "OLP-0190"
+  ],
+  "status": "complete model-theory basics source review; three adopted corrections have adjacent Pashto disclosures and exact formula-delta accounting"
+}
