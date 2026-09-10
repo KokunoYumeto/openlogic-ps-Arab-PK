@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 237 terminology, source-correction and other judgment-dependent entries across 190 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 254 terminology, source-correction and other judgment-dependent entries across 197 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -568,6 +568,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0169; Expressing Properties of \printtoken{P}{structure}; `content/first-order-logic/models-theories/expressing-props-of-structures.tex` source line(s) 61,62; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-props-of-structures.tex` target line(s) 58,59; page: pending stable pagination in a reader containing this unit
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 14,24,25,116; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 14,23,24,113; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 10,13,29,55,69,72,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 10,13,29,34,35,55,68,71,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 42,93,240; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 43,98,256; page: pending stable pagination in a reader containing this unit
 
 ## TERM-EXTENSION
 
@@ -709,6 +711,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 39; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 39,93,107; page: pending stable pagination in a reader containing this unit
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 67,85,93,116,156; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 66,84,87,92,96,117,158,160,165,167,176,177; page: pending stable pagination in a reader containing this unit
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 79; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 18,19,38,74,78,84,104,106; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DOMAIN
 
@@ -743,6 +748,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 14,15,16,17,21,45,46; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 12,14,15,17,26,31,35,42,43; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 45,48,50,52,73; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 71; page: pending stable pagination in a reader containing this unit
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 26,27,29,34,35,37,39,45,48,49,53,55,61,67,117,123,133,154,167; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CODOMAIN
 
@@ -977,6 +983,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) 18,22,37,59,60; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) 17,21,36,57,59; page: pending stable pagination in a reader containing this unit
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 29,34,69,71,75,76; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,33,68,70,73,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -1055,6 +1063,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0173; Expressing the Size of \printtoken{P}{structure}; `content/first-order-logic/models-theories/size-of-structures.tex` source line(s) 57,64,65,66,67,68; `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex` target line(s) 65,72,73,74,75,76,77; page: pending stable pagination in a reader containing this unit
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 14,20,23,25,32,37,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 13,14,20,23,25,32,37,38; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 15,30,122,123,124,126,137,138,173,181,182,201,217; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 15,31,124,125,127,138,179,187,205,219; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 101,102,104,111; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 74,99,100,102,111,112,113,115,119; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IFF
 
@@ -1343,6 +1352,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0170; Examples of First-Order Theories; `content/first-order-logic/models-theories/theories.tex` source line(s) 56; `ps-Arab-PK/content/first-order-logic/models-theories/theories.tex` target line(s) 56,57; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 131,150,156,163,167; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 127,144,151,157,160; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 75; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 44,55,73; page: pending stable pagination in a reader containing this unit
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1378,6 +1388,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 60; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 16,34,38,76,95,104; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 10,14,17,35,39,41,62,76,82,95,104,111; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 30,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,36,76; page: pending stable pagination in a reader containing this unit
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 16,18,22,36,56,66,129,133; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 15,17,22,37,38,56,66,75,123,125,131,136,138,149; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROPOSITION
 
@@ -2001,6 +2012,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 208; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 202; page: pending stable pagination in a reader containing this unit
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 23; page: pending stable pagination in a reader containing this unit
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 41; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 75,100; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 99; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -2104,6 +2117,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 - Locations:
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 30; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 23,39,101; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -2120,6 +2134,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) 67; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SYNTAX
 
@@ -2191,6 +2206,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 10,12,14,15,17,21,28,36,40,44,45,120,125; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 10,14,21,93,94,125,130; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 11,13,16,19,26,52,53,54; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 14,16,27,56,58,64; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 13,15,16,17,23,27,34,37,41,43,45,46,59,60,67,86,105,106,117,136,137,139,144,145,149,155,172,178,185,186,190,192,193,195,196,199,200,203,205,206; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 17,170,175,179,183; page: pending stable pagination in a reader containing this unit
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 13,14,16,24,25,26,28,35,36,37,38,43,45,49,52; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 14,16,23,26,33,35,40; page: pending stable pagination in a reader containing this unit
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 16,18,21,26,27,29,34,35,37,39,44,45,48,49,53,54,55,61,67,81,117,123,133,154,157,167; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 15,27,44,159,176; page: pending stable pagination in a reader containing this unit
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) 13,18,28,29,50,86,101,103,123,134,135,155,178,179; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) 28,29,111,126,139,185,186,187; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2258,6 +2276,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 2,14,20,22,24,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 14,20,21,24,37,38; page: pending stable pagination in a reader containing this unit
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 2; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 121; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 2,3,11,15,16,19,20,21,25,30,35,39,44,45,46,47,56,57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 11,15,16,21,26,60; page: pending stable pagination in a reader containing this unit
+  - OLP-0191; mod; `content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` source line(s) 1,2,8,12,14,16,18,20; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 1,2,12,41,42,45,51,63,64,65; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 12,16,38,39,41,47,60,61,62; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-ORDER-HIERARCHY
 
@@ -2389,6 +2409,69 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
 - Locations:
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 10,13,28,29,34,35,55,64,69,70,72,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 10,13,29,34,55,68,71,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 240,257; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 256; page: pending stable pagination in a reader containing this unit
+
+## TERM-ARITHMETIC-MODELS
+
+- Source term or sense: standard model / non-standard model / standard and non-standard element / standard numeral
+- Chosen rendering or treatment: معياري مدل / نامعياري مدل / معياري او نامعياري عنصر / معياري عددنښه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A standard arithmetic model is isomorphic to the natural-number structure. A nonstandard model has elements outside the values of every standard numeral. The edition keeps model, structure, domain element and numeral distinct and uses معياري and نامعياري consistently.
+- Alternatives: د حساب معياري او نامعياري جوړښت; د عددنښو له مخې نومېدونکي او نه نومېدونکي غړي; استاندرد او غيراستاندرد مدل
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «معياري مدل / نامعياري مدل / معياري او نامعياري عنصر / معياري عددنښه» the clearest conventional rendering of “standard model / non-standard model / standard and non-standard element / standard numeral” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+- Locations:
+  - OLP-0191; mod; `content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 12,45,51; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 12,42,47,70; page: pending stable pagination in a reader containing this unit
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 10,14,27,45,155; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 10,13,27,45,161; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 10,22,23,36,41,44,45,74,80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 10,75,80; page: pending stable pagination in a reader containing this unit
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) 101; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 13,14,15,19,211,242,246; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 13,15,195,226,255,259,262,274; page: pending stable pagination in a reader containing this unit
+
+## TERM-ARITHMETIC-THEORIES
+
+- Source term or sense: Robinson arithmetic / Peano arithmetic / true arithmetic / model of arithmetic
+- Chosen rendering or treatment: د رابنسن حساب / د پيانو حساب / رښتينی حساب / د حساب مدل
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Robinson arithmetic supplies the weak finite axioms Q, Peano arithmetic adds induction, and true arithmetic is the complete theory of the standard natural-number structure. These labels remain separate throughout the model constructions.
+- Alternatives: د رابنسن حسابي تيوري; د پيانو حسابي تيوري; د طبيعي شمېرو بشپړه تيوري
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د رابنسن حساب / د پيانو حساب / رښتينی حساب / د حساب مدل» the clearest conventional rendering of “Robinson arithmetic / Peano arithmetic / true arithmetic / model of arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+- Locations:
+  - OLP-0191; mod; `content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 58; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 53; page: pending stable pagination in a reader containing this unit
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 243; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 258; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-NONSTANDARD-ARITHMETIC-BLOCKS
+
+- Source term or sense: successor / predecessor / block / dense ordering of non-standard blocks
+- Chosen rendering or treatment: جانشين / مخکښېنی / بلاک / د نامعياري بلاکونو ګڼ ترتيب
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A block contains the finitely many successor and predecessor iterates around one nonstandard element. Distinct blocks are ordered by the interpreted less-than relation and, in an enumerable model, form a denumerable dense order without endpoints. Zero is excluded from the predecessor claim.
+- Alternatives: وروستنی او مخکينی غړے; د نامعياري شمېرې برخه; د برخو کثيف ترتيب
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «جانشين / مخکښېنی / بلاک / د نامعياري بلاکونو ګڼ ترتيب» the clearest conventional rendering of “successor / predecessor / block / dense ordering of non-standard blocks” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+- Locations:
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 65,104,112,113,164,167,168,169,170,189,203,212,216,217,218,232,239,240,247,249,250,251,252; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 67,70,110,118,119,174,177,178,179,180,203,218,226,232,233,255,263,264,265,266,267,273; page: pending stable pagination in a reader containing this unit
+
+## TERM-COMPUTABLE-ARITHMETIC-MODELS
+
+- Source term or sense: computable model / computable function / decidable relation / Tennenbaum's theorem
+- Chosen rendering or treatment: محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A computable arithmetic structure has domain Nat, computable successor, addition and multiplication, and a decidable order relation. Tennenbaum's theorem excludes computable nonstandard models; standard computable copies remain unique only up to isomorphism.
+- Alternatives: حسابېدونکی مدل; الګوريتمي تابع; فيصله کېدونکې اړيکه; د ټېننباوم تيورم
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه» the clearest conventional rendering of “computable model / computable function / decidable relation / Tennenbaum's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+- Locations:
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 10,20,38,39,100,101,119,120; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 10,17,19,20,38,104,105,118,123,127,128,129; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -3962,6 +4045,175 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes
 - Locations:
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) content/model-theory/basics/partial-iso.tex:143-158; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 160; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-004
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restores x as the proof-code argument of the repeated provability predicate
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only x and its separating comma are restored in the repeated predicate; the theory, contradiction code, quantifier and surrounding claim are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) content/model-theory/models-of-arithmetic/introduction.tex:55-70; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 67; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-005
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that the possible missing x is outside the range of s
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; the prose noun is corrected from domain to range in accordance with the displayed total function and surjectivity sentence.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) content/model-theory/models-of-arithmetic/standard-models.tex:153-170; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 175; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-006
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: selects the largest occurring index when one exists and zero when none occurs
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The existing formulas are preserved; the prose case distinction makes the finite-subset construction total.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) content/model-theory/models-of-arithmetic/non-standard-models.tex:100-112; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 115; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-007
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: invokes downward Loewenheim--Skolem after compactness to obtain an enumerable model
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No existing formula changes; one theorem-supported prose inference is added after the compactness construction.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) content/model-theory/models-of-arithmetic/non-standard-models.tex:78-113; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 119; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-008
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses y equals a in the final domain case
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the final case label changes from b to a; the equations and all other cases remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-q.tex:98-108; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) 110; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-009
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses a in the right-hand successor expression for the b-plus-a case
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the stray y in the third aligned equation becomes a; all operations, values and other rows remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-q.tex:154-171; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) 177; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-010
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: restricts the unique-predecessor claim to elements other than zero
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The proposition is narrowed in prose while its existing notation and the surrounding discrete-order claims are preserved.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-011
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: adds the universal quantifier over y to the positive-addend theorem
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only one universal quantifier over y is added; the nonzero antecedent, inequality consequent and existing x quantifier are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-pa.tex:173-185; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 191; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-012
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the established nonstandard addition notation in both averaging equations
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only both occurrences of oplus in each of the two equations become nsplus; variables, equality structure and successor remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-pa.tex:217-228; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 242; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-013
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states the rational-order conclusion for enumerable nonstandard models
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; the missing model-countability qualification is added to the prose conclusion.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) content/model-theory/models-of-arithmetic/models-of-pa.tex:238-258; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 273; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-014
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses x in the domain-membership condition for the ordered pair x,a
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only n becomes x in the final set-builder condition; the tuple, domain, union and all preceding interpretations remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) content/model-theory/models-of-arithmetic/computable-models.tex:42-67; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 66; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-015
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: maps every positive n to n minus one
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the arithmetic offset in the positive branch changes from plus one to minus one.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) content/model-theory/models-of-arithmetic/computable-models.tex:68-75; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLMOD-016
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states uniqueness up to isomorphism, equivalently the absence of computable nonstandard models
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; the theorem's prose uniqueness claim is qualified by isomorphism.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLMOD-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+- Locations:
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) content/model-theory/models-of-arithmetic/computable-models.tex:119-121; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 126; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

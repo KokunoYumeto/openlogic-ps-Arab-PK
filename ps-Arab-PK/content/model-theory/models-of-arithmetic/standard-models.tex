@@ -1,0 +1,181 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{stm}
+\olsection{د حساب معياري مدلونه}
+
+د حساب ژبه~$\Lang{L_A}$ په څرګند ډول د شمېرو، په ځانګړي ډول د
+طبيعي شمېرو، په هکله ده۔ نو «معياري مدل»~$\Struct{N}$ ځانګړے دے:
+همدا هغه مدل دے چې موږ ئې په هکله خبرې کول غواړو۔ خو په منطق کښې
+زموږ پام ډېر ځله يوازې جوړښتي ځانګړتياوو ته وي، او هر دوه آيزومورف
+!!{structure}s دغه ځانګړتياوې ګډې لري۔ نو لږ پراخ فکر کولے شو او
+هر هغه !!{structure} چې له~$\Struct{N}$ سره آيزومورف وي «معياري»
+وبولو۔
+
+\begin{defn}
+د~$\Lang{L_A}$ يو !!{structure} \emph{معياري} دے، که له~$\Struct{N}$
+سره آيزومورف وي۔
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:standard-domain} که !!a{structure}~$\Struct{M}$ معياري
+وي، نو تعريف ساحه ئې د معياري عددنښو د ارزښتونو سټ دے، يعنې:
+\[
+\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}
+\]
+\end{prop}
+
+\begin{proof}
+څرګنده ده چې هر $\Value{\num{n}}{M} \in \Domain{M}$ دے۔ يوازې دا
+ښودل پاتې دي چې هر $x \in \Domain{M}$ د کوم~$n$ دپاره
+$\Value{\num{n}}{M}$ دے۔ څرنګه چې $\Struct{M}$ معياري دے، له
+$\Struct{N}$ سره آيزومورف دے۔ فرض کړئ $g\colon \Nat \to \Domain{M}$
+آيزومورفيزم وي۔ بيا $g(n) = g(\Value{\num{n}}{N}) =
+\Value{\num{n}}{M}$۔ خو د هر $x \in \Domain{M}$ دپاره داسې~$n \in
+\Nat$ شته چې $g(n) = x$ وي، ځکه $g$ !!{surjective} ده۔
+\end{proof}
+
+\begin{explain}
+که د~$\Lang{L_A}$ يو جوړښت~$\Struct{M}$ معياري وي، د~!!{domain}
+ټول غړي ئې د معياري عددنښو $\num{0}$، $\num{1}$، $\num{2}$،
+\dots په نوم يادېدے شي، يعنې د $\Obj{0}$، $\Obj{0}'$،
+$\Obj{0}''$ او داسې نورو ترمونو په وسيله۔ البته دا معنا نۀ لري چې د
+$\Domain{M}$ !!{element}s پخپله شمېرې دي؛ يوازې دومره ده چې د هغو
+په نښه کولے شو، لکه څنګه چې په~$\Domain{N}$ کښې شمېرې نښه کوو۔
+\end{explain}
+
+\begin{prob}
+وښيئ چې د~\olref[mod][mar][stm]{prop:standard-domain} معکوس ناسم دے؛
+يعنې داسې يو !!a{structure}~$\Struct{M}$ ورکړئ چې
+$\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ وي، خو له
+$\Struct{N}$ سره آيزومورف نۀ وي۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:thq-standard}
+که $\Sat{M}{\Th{Q}}$ او $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ وي، نو $\Struct{M}$ معياري دے۔
+\end{prop}
+
+\begin{proof}
+بايد وښيو چې $\Struct{M}$ له~$\Struct{N}$ سره آيزومورف دے۔ تابع
+$g\colon \Nat \to \Domain{M}$ داسې ونيسئ: $g(n) =
+\Value{\num{n}}{M}$۔ د فرض له مخې $g$ !!{surjective} ده۔ دا
+!!{injective} هم ده: هر کله چې $n \neq m$ وي، $\Th{Q} \Proves
+\eq/[\num{n}][\num{m}]$۔ نو له $\Sat{M}{\Th{Q}}$ څخه
+$\Sat{M}{\eq/[\num{n}][\num{m}]}$، هر کله چې $n \neq m$۔ په پايله
+کښې $n \neq m$ وي، نو $\Value{\num{n}}{M} \neq
+\Value{\num{m}}{M}$، يعنې $g(n) \neq g(m)$۔
+
+اوس بايد دا هم وڅېړو چې $g$ آيزومورفيزم دے۔
+\begin{enumerate}
+\item $g(\Assign{\Obj{0}}{N}) = g(0)$، ځکه $\Assign{\Obj{0}}{N} = 0$۔
+  د~$g$ له تعريفه $g(0) = \Value{\num{0}}{M}$۔ خو $\num{0}$ هماغه
+  $\Obj{0}$ دے، او د داسې ترم ارزښت چې !!a{constant} وي، هغه څه دے
+  چې !!{structure} ئې دغه !!{constant} ته ټاکي، يعنې $\Value{\Obj{0}}{M} =
+  \Assign{\Obj{0}}{M}$۔ نو $g(\Assign{\Obj{0}}{N}) =
+  \Assign{\Obj{0}}{M}$، لکه اړين چې و۔
+\item $g(\Assign{\prime}{N}(n)) = g(n+1)$، ځکه په~$\Struct{N}$ کښې
+  $\prime$ پر~$\Nat$ د جانشين تابع ده۔ بيا د~$g$ له تعريفه
+  $g(n+1) = \Value{\num{n+1}}{M}$۔ خو $\num{n+1}$ له~$\num{n}'$
+  سره يو ترم دے، نو $\Value{\num{n+1}}{M} =
+  \Value{\num{n}'}{M}$۔ د ارزښت د تابعې له تعريفه دا
+  $= \Assign{\prime}{M}(\Value{\num{n}}{M})$ دے۔ څرنګه چې
+  $\Value{\num{n}}{M} = g(n)$، نو
+  $g(\Assign{\prime}{N}(n)) = \Assign{\prime}{M}(g(n))$۔
+\item $g(\Assign{+}{N}(n,m)) = g(n+m)$، ځکه په~$\Struct{N}$ کښې $+$
+  د~$\Nat$ د جمع تابع ده۔ بيا د~$g$ له تعريفه
+$g(n+m) = \Value{\num{n+m}}{M}$۔
+  خو $\Th{Q} \Proves \num{n+m} = (\num{n} + \num{m})$، نو
+  $\Value{\num{n+m}}{M} = \Value{\num{n}+\num{m}}{M}$۔ د ارزښت د
+  تابعې له تعريفه دا
+  $= \Assign{+}{M}(\Value{\num{n}}{M},\Value{\num{m}}{M})$ دے۔
+  څرنګه چې $\Value{\num{n}}{M} = g(n)$ او
+  $\Value{\num{m}}{M} = g(m)$، نو
+  $g(\Assign{+}{N}(n, m)) = \Assign{+}{M}(g(n), g(m))$۔
+\item $g(\Assign{\times}{N}(n, m)) = \Assign{\times}{M}(g(n), g(m))$:
+  تمرين۔
+\item $\tuple{n,m} \in \Assign{<}{N}$ هله او يوازې هله چې $n < m$۔
+  که $n < m$ وي، نو $\Th{Q} \Proves \num{n} < \num{m}$ او
+  $\Sat{M}{\num{n} < \num{m}}$ هم لرو۔ نو
+  $\tuple{\Value{\num{n}}{M}, \Value{\num{m}}{M}} \in
+  \Assign{<}{M}$، يعنې $\tuple{g(n), g(m)} \in \Assign{<}{M}$۔
+  که $n \not< m$ وي، نو $\Th{Q} \Proves \lnot \num{n} < \num{m}$ او
+  په پايله کښې $\Sat/{M}{\num{n} < \num{m}}$۔ نو، لکه مخکې،
+  $\tuple{g(n), g(m)} \notin \Assign{<}{M}$۔ په ګډه:
+  $\tuple{n,m} \in \Assign{<}{N}$ هله او يوازې هله چې
+  $\tuple{g(n), g(m)} \in \Assign{<}{M}$۔
+\end{enumerate}
+\end{proof}
+
+\begin{explain}
+تابع~$g$ د~$\Lang{L_A}$ د هر بل !!{structure}~$\Struct{M}$ د تعريف
+ساحې ته له~$\Nat$ څخه د نقشې تر ټولو څرګنده لار ده، ځکه هر داسې
+$\Struct{M}$ هغه !!{element}s لري چې $\num{0}$، $\num{1}$،
+$\num{2}$ او داسې نورو په نومونو يادېږي۔ نو د حيرانتيا خبره نۀ ده چې
+که $\Struct{M}$ د~$\num{n}$ په باب لږ تر لږه ځينې بنسټيزې ويناوې
+هماغسې رښتونې کړي لکه~$\Struct{N}$ او $g$ هم دوه اړخيزه يو په يو
+وي، نو $g$ آيزومورفيزم ګرځي۔ په حقيقت کښې که $\Domain{M}$ له هغو
+!!{element}s پرته چې $\num{n}$ ئې نوموي بل څه نۀ لري، نو همدا
+يوازينے آيزومورفيزم دے۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:thq-unique-iso} که $\Struct{M}$ معياري وي، نو د
+\olref{prop:thq-standard} له ثبوت څخه $g$ له~$\Struct{N}$ څخه
+$\Struct{M}$ ته يوازينے آيزومورفيزم دے۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $h\colon \Nat \to \Domain{M}$ له~$\Struct{N}$ څخه
+$\Struct{M}$ ته آيزومورفيزم وي۔ د~$n$ پر بنسټ استقرا ښيو چې $g=h$۔
+که $n=0$ وي، نو د~$g$ له تعريفه $g(0)=\Assign{\Obj{0}}{M}$۔ خو
+څرنګه چې $h$ آيزومورفيزم دے، $h(0)=h(\Assign{\Obj{0}}{N}) =
+\Assign{\Obj{0}}{M}$، نو $g(0)=h(0)$۔
+
+اوس د $n+1$ حالت راواخلئ:
+\begin{align*}
+  g(n+1) & = \Value{\num{n+1}}{M} \text{ د $g$ له تعريفه}\\
+  & = \Value{\num{n}'}{M} \text{ ځکه $\num{n+1}\ident \num{n}'$}\\
+  & = \Assign{\prime}{M}(\Value{\num{n}}{M})
+    \text{ د $\Value{t'}{M}$ له تعريفه}\\
+  & = \Assign{\prime}{M}(g(n)) \text{ د $g$ له تعريفه}\\
+  & = \Assign{\prime}{M}(h(n)) \text{ د استقرايي فرض له مخې}\\
+  & = h(\Assign{\prime}{N}(n)) \text{ ځکه $h$ آيزومورفيزم دے}\\
+  & = h(n+1)
+\end{align*}
+\end{proof}
+
+\begin{explain}
+د هر !!{denumerable} سټ~$M$ دپاره د~$\Nat$ او~$M$ تر منځ يوه
+!!a{bijection} شته، نو هر داسې~$M$ په بالقوه ډول د معياري
+مدل~$\Struct{M}$ !!{domain} کېدے شي۔ په حقيقت کښې، کله چې يو څيز
+$z \in M$ او مناسبه تابع~$s$ د~$\Assign{\Obj{0}}{M}$ او
+$\Assign{\prime}{M}$ په توګه وټاکئ، د $+$، $\times$ او $<$ تفسيرونه
+لا له مخکې ټاکل شوي وي۔ يوازې هغه تابعې~$s\colon M \to M \setminus
+\{z\}$ په معياري مدل کښې د~$\Assign{\prime}{M}$ په توګه مناسبې دي چې
+!!{injective} او !!{surjective} دواړه وي۔ د~$s$ د قيمتونو ساحه
+$z$ لرلے نۀ شي، ځکه که داسې واے نو
+$\lforall[x][\eq/[\Obj 0][x']]$ به دروغ واے۔ دا !!{sentence}
+په~$\Struct{N}$ کښې رښتونې ده، نو $\Struct{M}$ ئې هم بايد رښتونې کړي۔ تابع~$s$ بايد
+!!{injective} وي، ځکه په~$\Struct{N}$ کښې د جانشين
+تابع~$\Assign{\prime}{N}$ همداسې ده، او د هغې
+$\Assign{\prime}{N}$ !!{injective} توب په~$\Struct{N}$ کښې د
+!!a{sentence} له خوا بيانېږي۔ دا بايد
+!!{surjective} هم وي، ځکه که نه نو داسې~$x \in M \setminus \{z\}$
+به وي چې د~$s$ د قيمتونو په ساحه کښې نۀ وي، يعنې دا !!{sentence}
+$\lforall[x][(\eq[x][\Obj 0] \lor
+\lexists[y][\eq[y'][x]])]$ به په~$\Struct{M}$ کښې دروغ وي، حال دا چې
+په~$\Struct{N}$ کښې رښتونې ده۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-005):} سرچينې په وروستۍ جمله کښې
+د تابعې د «قيمتونو ساحې» پر ځاے د «تعريف ساحه» ليکلې وه، حال دا
+چې تابع s پر ټول M تعريف شوې ده۔ دلته د جملې له فورمول او د
+پرښتياوالي له شرط سره سم د قيمتونو ساحه ليکل شوې ده۔
+\end{explain}
+
+\end{document}

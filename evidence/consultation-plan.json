@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B041-MODEL-THEORY-BASICS",
-  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0182 through OLP-0190 form a complete manually translated and source-reviewed model-theory basics batch",
+  "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0191 through OLP-0197 form a complete manually translated and source-reviewed models-of-arithmetic batch",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -3978,6 +3978,180 @@
         "TERM-DOMAIN"
       ],
       "scope": "The dense-linear-order section preserves all six defining sentences, the back-and-forth proof of Cantor's theorem, its exercise and the rational-versus-real elementary-equivalence remark."
+    },
+    "OLP-0191": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "The chapter driver preserves the introduction, standard models, non-standard models, models of Q, models of PA and computable-models imports in source order."
+    },
+    "OLP-0192": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-MODEL-THEORY",
+        "TERM-FOL-SEMANTICS",
+        "TERM-DERIVABILITY-PROPERTIES"
+      ],
+      "scope": "The introduction distinguishes isomorphic presentations from nonstandard models and relates nonstandard proof codes to the consistency sentence. OLMOD-004 restores the omitted proof-code argument."
+    },
+    "OLP-0193": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P178-ORDER"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-ISOMORPHISM",
+        "TERM-DOMAIN",
+        "TERM-FUNCTION",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The standard-model section preserves the numeral-domain characterization, explicit isomorphism, uniqueness proof and the conditions on zero and successor interpretations. OLMOD-005 corrects domain to range in the surjectivity explanation."
+    },
+    "OLP-0194": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-LOWENHEIM-SKOLEM",
+        "TERM-ENUMERABLE",
+        "TERM-FINITE"
+      ],
+      "scope": "The non-standard-model section preserves the definition, exercises and compactness construction. OLMOD-006 covers the empty finite-subset case and OLMOD-007 supplies the downward Loewenheim--Skolem step required for an enumerable model."
+    },
+    "OLP-0195": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-FUNCTION",
+        "TERM-ORDER-KINDS",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The models-of-Q section preserves both explicit operation tables, all axiom checks and exercises. OLMOD-008 removes an impossible b case from K and OLMOD-009 replaces an unbound y in L's addition verification."
+    },
+    "OLP-0196": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-ARITHMETIC-MODELS",
+        "TERM-NONSTANDARD-ARITHMETIC-BLOCKS",
+        "TERM-DENSE-LINEAR-ORDER",
+        "TERM-RECURSIVE",
+        "TERM-ORDER-KINDS"
+      ],
+      "scope": "The models-of-PA section preserves discreteness, standard-below-nonstandard order, blocks, their separation and dense ordering. OLMOD-010 through OLMOD-013 repair the predecessor scope, a free variable, undefined addition notation and a missing countability hypothesis."
+    },
+    "OLP-0197": {
+      "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX"
+      ],
+      "terms": [
+        "TERM-COMPUTABLE-ARITHMETIC-MODELS",
+        "TERM-DECIDABILITY",
+        "TERM-ENUMERABLE",
+        "TERM-ARITHMETIC-THEORIES",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The computable-model section preserves the transported computable Q model and Tennenbaum conclusion. OLMOD-014 through OLMOD-016 repair the relation variable, bijection offset and literal uniqueness claim."
     }
   },
   "semantic_review": [
@@ -6008,6 +6182,48 @@
       "passage": "dense linear orders without endpoints",
       "reverse_paraphrase": "Every two countable dense linear orders without endpoints are isomorphic by a back-and-forth construction.",
       "finding": "The six defining sentences, proof extension cases, exercise and rational/real elementary-equivalence remark are preserved."
+    },
+    {
+      "unit_id": "OLP-0191",
+      "passage": "models-of-arithmetic chapter driver",
+      "reverse_paraphrase": "The driver imports six sections in their frozen source order.",
+      "finding": "Every active import and the chapter identifier are preserved once."
+    },
+    {
+      "unit_id": "OLP-0192",
+      "passage": "arithmetic-model introduction",
+      "reverse_paraphrase": "Isomorphic presentations retain arithmetic structure, while nonstandard models contain elements outside every standard numeral value.",
+      "finding": "The consistency example retains its metamathematical direction and uses the corrected two-argument proof predicate."
+    },
+    {
+      "unit_id": "OLP-0193",
+      "passage": "standard models",
+      "reverse_paraphrase": "A standard arithmetic model is isomorphic to the natural-number structure and therefore consists exactly of standard numeral values.",
+      "finding": "The explicit isomorphism and uniqueness induction retain all constant, successor, addition, multiplication and order obligations; the final surjectivity paragraph now says range."
+    },
+    {
+      "unit_id": "OLP-0194",
+      "passage": "non-standard models",
+      "reverse_paraphrase": "Compactness supplies a model with an element distinct from every standard numeral; downward Loewenheim--Skolem then supplies an enumerable one.",
+      "finding": "The finite-subset construction handles both a nonempty list of numeral constraints and the empty case."
+    },
+    {
+      "unit_id": "OLP-0195",
+      "passage": "models of Robinson arithmetic",
+      "reverse_paraphrase": "The two finite-extension examples interpret successor, addition, multiplication and order explicitly and verify the Q axioms by cases.",
+      "finding": "The only formula changes remove an impossible b case and an unbound y; every operation table and exercise remains."
+    },
+    {
+      "unit_id": "OLP-0196",
+      "passage": "models of Peano arithmetic",
+      "reverse_paraphrase": "Induction forces a discrete order whose standard part lies below nonstandard blocks; enumerable models have a rational-like dense block order.",
+      "finding": "The predecessor statement excludes zero, the positive-addend fact quantifies y, the averaging equations use the established addition, and countability is stated where required."
+    },
+    {
+      "unit_id": "OLP-0197",
+      "passage": "computable arithmetic models",
+      "reverse_paraphrase": "A computable Q model can be transported onto Nat, while Tennenbaum rules out computable nonstandard PA models.",
+      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism."
     }
   ]
 }

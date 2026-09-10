@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 190,
-    "structural_pass": 190,
+    "draft_units": 197,
+    "structural_pass": 197,
     "visually_accepted": 105,
     "published": 82
   },
@@ -16,7 +16,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B041-MODEL-THEORY-BASICS",
+  "batch": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -5380,6 +5380,237 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0191",
+      "path": "content/model-theory/models-of-arithmetic/models-of-arithmetic.tex",
+      "source_sha256": "dc1c37f2e7064a33be5080bfa2682a2e527c7dfc2aa8a82d23362604dcb2522c",
+      "translation_sha256": "15d24199d4b1179f24542ce7afa1e9465e2cb6496f8471b8811a403e3ca74fc2",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0192",
+      "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+      "source_sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+      "translation_sha256": "c49d3626460cddeb140d3e671ac857228d6e9f35b6d19a5f549b5a9b74de8686",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-004"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lexists[x][\\OPrf[\\Th{PA}](\\gn{\\lfalse})]$"
+        ],
+        "target_only": [
+          "$\\lexists[x][\\OPrf[\\Th{PA}](x,\\gn{\\lfalse})]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0193",
+      "path": "content/model-theory/models-of-arithmetic/standard-models.tex",
+      "source_sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+      "translation_sha256": "6e0284665f89f2d07998ade6ea58a784c5a4b7d2f95d6279ec5cb27485675053",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-005"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0194",
+      "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+      "translation_sha256": "d62da8efabf2718fce2d7f0f20432d455dc5b75aa26809b1dcb0dcbd6bc5e36e",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-006",
+        "OLMOD-007"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0195",
+      "path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+      "translation_sha256": "b423f949eaba43960361683cb51bb5821da9e8759f336146f053cd8254a7e072",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-008",
+        "OLMOD-009"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=b$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}",
+          "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusy)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=a$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}",
+          "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusa)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0196",
+      "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "translation_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+      "source_blocks": 35,
+      "target_blocks": 35,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-010",
+        "OLMOD-011",
+        "OLMOD-012",
+        "OLMOD-013"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Th{PA}\\Proves\\lforall[x][(y\\neq\\Obj{0}\\lifx<(x+y))]$",
+          "$x\\oplusy=z\\oplusz$",
+          "$x\\oplusy=(z\\oplusz)^\\nssucc$"
+        ],
+        "target_only": [
+          "$\\Th{PA}\\Proves\\lforall[x][\\lforall[y][(y\\neq\\Obj{0}\\lifx<(x+y))]]$",
+          "$x\\nsplusy=z\\nsplusz$",
+          "$x\\nsplusy=(z\\nsplusz)^\\nssucc$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0197",
+      "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "translation_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-014",
+        "OLMOD-015",
+        "OLMOD-016"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{n\\in\\Domain{K}}\\end{align*}",
+          "$g(n)=n+1$"
+        ],
+        "target_only": [
+          "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{x\\in\\Domain{K}}\\end{align*}",
+          "$g(n)=n-1$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -7410,6 +7641,48 @@
       "passage": "dense linear orders without endpoints",
       "reverse_paraphrase": "Every two countable dense linear orders without endpoints are isomorphic by a back-and-forth construction.",
       "finding": "The six defining sentences, proof extension cases, exercise and rational/real elementary-equivalence remark are preserved."
+    },
+    {
+      "unit_id": "OLP-0191",
+      "passage": "models-of-arithmetic chapter driver",
+      "reverse_paraphrase": "The driver imports six sections in their frozen source order.",
+      "finding": "Every active import and the chapter identifier are preserved once."
+    },
+    {
+      "unit_id": "OLP-0192",
+      "passage": "arithmetic-model introduction",
+      "reverse_paraphrase": "Isomorphic presentations retain arithmetic structure, while nonstandard models contain elements outside every standard numeral value.",
+      "finding": "The consistency example retains its metamathematical direction and uses the corrected two-argument proof predicate."
+    },
+    {
+      "unit_id": "OLP-0193",
+      "passage": "standard models",
+      "reverse_paraphrase": "A standard arithmetic model is isomorphic to the natural-number structure and therefore consists exactly of standard numeral values.",
+      "finding": "The explicit isomorphism and uniqueness induction retain all constant, successor, addition, multiplication and order obligations; the final surjectivity paragraph now says range."
+    },
+    {
+      "unit_id": "OLP-0194",
+      "passage": "non-standard models",
+      "reverse_paraphrase": "Compactness supplies a model with an element distinct from every standard numeral; downward Loewenheim--Skolem then supplies an enumerable one.",
+      "finding": "The finite-subset construction handles both a nonempty list of numeral constraints and the empty case."
+    },
+    {
+      "unit_id": "OLP-0195",
+      "passage": "models of Robinson arithmetic",
+      "reverse_paraphrase": "The two finite-extension examples interpret successor, addition, multiplication and order explicitly and verify the Q axioms by cases.",
+      "finding": "The only formula changes remove an impossible b case and an unbound y; every operation table and exercise remains."
+    },
+    {
+      "unit_id": "OLP-0196",
+      "passage": "models of Peano arithmetic",
+      "reverse_paraphrase": "Induction forces a discrete order whose standard part lies below nonstandard blocks; enumerable models have a rational-like dense block order.",
+      "finding": "The predecessor statement excludes zero, the positive-addend fact quantifies y, the averaging equations use the established addition, and countability is stated where required."
+    },
+    {
+      "unit_id": "OLP-0197",
+      "passage": "computable arithmetic models",
+      "reverse_paraphrase": "A computable Q model can be transported onto Nat, while Tennenbaum rules out computable nonstandard PA models.",
+      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism."
     }
   ],
   "builds": [

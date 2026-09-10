@@ -1,0 +1,222 @@
+[
+  {
+    "file": "content/model-theory/models-of-arithmetic/models-of-arithmetic.tex",
+    "source_bytes": 377,
+    "target_bytes": 381,
+    "source_sha256": "dc1c37f2e7064a33be5080bfa2682a2e527c7dfc2aa8a82d23362604dcb2522c",
+    "target_sha256": "15d24199d4b1179f24542ce7afa1e9465e2cb6496f8471b8811a403e3ca74fc2",
+    "source_blocks": 12,
+    "target_blocks": 12,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/introduction.tex",
+    "source_bytes": 3184,
+    "target_bytes": 4371,
+    "source_sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+    "target_sha256": "c49d3626460cddeb140d3e671ac857228d6e9f35b6d19a5f549b5a9b74de8686",
+    "source_blocks": 8,
+    "target_blocks": 8,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [
+      "$\\lexists[x][\\OPrf[\\Th{PA}](\\gn{\\lfalse})]$"
+    ],
+    "math_target_only": [
+      "$\\lexists[x][\\OPrf[\\Th{PA}](x,\\gn{\\lfalse})]$"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/standard-models.tex",
+    "source_bytes": 7853,
+    "target_bytes": 9996,
+    "source_sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+    "target_sha256": "6e0284665f89f2d07998ade6ea58a784c5a4b7d2f95d6279ec5cb27485675053",
+    "source_blocks": 19,
+    "target_blocks": 19,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+    "source_bytes": 4664,
+    "target_bytes": 7009,
+    "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+    "target_sha256": "d62da8efabf2718fce2d7f0f20432d455dc5b75aa26809b1dcb0dcbd6bc5e36e",
+    "source_blocks": 15,
+    "target_blocks": 15,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+    "source_bytes": 7842,
+    "target_bytes": 9782,
+    "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+    "target_sha256": "b423f949eaba43960361683cb51bb5821da9e8759f336146f053cd8254a7e072",
+    "source_blocks": 15,
+    "target_blocks": 15,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [
+      "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=b$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}",
+      "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusy)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+    ],
+    "math_target_only": [
+      "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=a$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}",
+      "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusa)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+    "source_bytes": 10487,
+    "target_bytes": 14280,
+    "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+    "target_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+    "source_blocks": 35,
+    "target_blocks": 35,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [
+      "$\\Th{PA}\\Proves\\lforall[x][(y\\neq\\Obj{0}\\lifx<(x+y))]$",
+      "$x\\oplusy=z\\oplusz$",
+      "$x\\oplusy=(z\\oplusz)^\\nssucc$"
+    ],
+    "math_target_only": [
+      "$\\Th{PA}\\Proves\\lforall[x][\\lforall[y][(y\\neq\\Obj{0}\\lifx<(x+y))]]$",
+      "$x\\nsplusy=z\\nsplusz$",
+      "$x\\nsplusy=(z\\nsplusz)^\\nssucc$"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/model-theory/models-of-arithmetic/computable-models.tex",
+    "source_bytes": 4636,
+    "target_bytes": 7250,
+    "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+    "target_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+    "source_blocks": 14,
+    "target_blocks": 14,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true
+    },
+    "english": [],
+    "math_source_only": [
+      "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{n\\in\\Domain{K}}\\end{align*}",
+      "$g(n)=n+1$"
+    ],
+    "math_target_only": [
+      "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{x\\in\\Domain{K}}\\end{align*}",
+      "$g(n)=n-1$"
+    ],
+    "math_expected": true
+  }
+]

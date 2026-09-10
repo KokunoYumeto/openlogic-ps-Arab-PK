@@ -1,0 +1,292 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-09T21:43:09.045706+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+  "scope": "OLP-0191 through OLP-0197 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLMOD-004",
+      "unit_id": "OLP-0192",
+      "classification": "existential_proof_predicate_missing_proof_code_argument",
+      "source_path": "content/model-theory/models-of-arithmetic/introduction.tex",
+      "source_sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+      "source_locator": "content/model-theory/models-of-arithmetic/introduction.tex:55-70",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex",
+      "target_line_1based": 67,
+      "target_sha256": "c49d3626460cddeb140d3e671ac857228d6e9f35b6d19a5f549b5a9b74de8686",
+      "mode": "restore-proof-code-argument-plus-adjacent-note",
+      "translation_change": "restores x as the proof-code argument of the repeated provability predicate",
+      "counterexample": "The existential quantifier binds x as the witness proof code, and the same paragraph's defining formula and numeral instances use the two-argument proof predicate. Omitting x leaves the repeated predicate with the wrong arity.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only x and its separating comma are restored in the repeated predicate; the theory, contradiction code, quantifier and surrounding claim are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lexists[x][\\OPrf[\\Th{PA}](\\gn{\\lfalse})]$"
+        ],
+        "target_only": [
+          "$\\lexists[x][\\OPrf[\\Th{PA}](x,\\gn{\\lfalse})]$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-005",
+      "unit_id": "OLP-0193",
+      "classification": "total_function_confused_with_its_range",
+      "source_path": "content/model-theory/models-of-arithmetic/standard-models.tex",
+      "source_sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+      "source_locator": "content/model-theory/models-of-arithmetic/standard-models.tex:153-170",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex",
+      "target_line_1based": 175,
+      "target_sha256": "6e0284665f89f2d07998ade6ea58a784c5a4b7d2f95d6279ec5cb27485675053",
+      "mode": "replace-domain-with-range-plus-adjacent-note",
+      "translation_change": "states that the possible missing x is outside the range of s",
+      "counterexample": "The displayed function has domain all of M and codomain M without z, so no x in M without z can be outside its domain. Surjectivity fails exactly when such an x lies outside the function's range.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "No formula changes; the prose noun is corrected from domain to range in accordance with the displayed total function and surjectivity sentence.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-006",
+      "unit_id": "OLP-0194",
+      "classification": "largest-index_choice_undefined_for-empty-formula-subset",
+      "source_path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+      "source_locator": "content/model-theory/models-of-arithmetic/non-standard-models.tex:100-112",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "target_line_1based": 115,
+      "target_sha256": "d62da8efabf2718fce2d7f0f20432d455dc5b75aa26809b1dcb0dcbd6bc5e36e",
+      "mode": "supply-empty-case-for-maximum-index-plus-adjacent-note",
+      "translation_change": "selects the largest occurring index when one exists and zero when none occurs",
+      "counterexample": "A finite subset of Gamma may contain only sentences from true arithmetic and no c-versus-numeral sentence, in which case the source's largest k does not exist. Taking zero in that case preserves satisfiability.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "The existing formulas are preserved; the prose case distinction makes the finite-subset construction total.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-007",
+      "unit_id": "OLP-0194",
+      "classification": "enumerable_model_conclusion_missing_lowenheim_skolem_step",
+      "source_path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+      "source_locator": "content/model-theory/models-of-arithmetic/non-standard-models.tex:78-113",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "target_line_1based": 119,
+      "target_sha256": "d62da8efabf2718fce2d7f0f20432d455dc5b75aa26809b1dcb0dcbd6bc5e36e",
+      "mode": "add-downward-lowenheim-skolem-step-plus-adjacent-note",
+      "translation_change": "invokes downward Loewenheim--Skolem after compactness to obtain an enumerable model",
+      "counterexample": "Compactness yields a model of Gamma but does not itself ensure that the model is enumerable, while the proposition explicitly requires an enumerable nonstandard model. The countable-language downward theorem supplies that conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "No existing formula changes; one theorem-supported prose inference is added after the compactness construction.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-008",
+      "unit_id": "OLP-0195",
+      "classification": "case_split_uses_element_outside_declared_domain",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-q.tex:98-108",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "target_line_1based": 110,
+      "target_sha256": "b423f949eaba43960361683cb51bb5821da9e8759f336146f053cd8254a7e072",
+      "mode": "replace-undefined-b-case-with-a-plus-adjacent-note",
+      "translation_change": "uses y equals a in the final domain case",
+      "counterexample": "The structure K has domain the natural numbers together with a and contains no b. The following equation is already the a case, so y equals b contradicts both the declared domain and the displayed calculation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only the final case label changes from b to a; the equations and all other cases remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=b$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}(n\\nsplusm^\\nssucc)&=(n+(m+1))=(n+m)+1=(n\\nsplusm)^\\nssucc\\intertext{LOCALIZED$\\nsplus$$^\\nssucc$$+$$\\prime$$x\\in\\Domain{K}$}(x\\nsplusa^\\nssucc)&=(x\\nsplusa)=a=a^\\nssucc=(x\\nsplusa)^\\nssucc\\intertext{LOCALIZED$y\\in\\Domain{K}$$x=a$$y=n$$y=a$}(a\\nsplusn^\\nssucc)&=(a\\nsplus(n+1))=a=a^\\nssucc=(a\\nsplusn)^\\nssucc\\\\(a\\nsplusa^\\nssucc)&=(a\\nsplusa)=a=a^\\nssucc=(a\\nsplusa)^\\nssucc\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-009",
+      "unit_id": "OLP-0195",
+      "classification": "addition_verification_uses_unbound_variable_on-right",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-q.tex:154-171",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "target_line_1based": 177,
+      "target_sha256": "b423f949eaba43960361683cb51bb5821da9e8759f336146f053cd8254a7e072",
+      "mode": "replace-unbound-y-with-left-hand-a-plus-adjacent-note",
+      "translation_change": "uses a in the right-hand successor expression for the b-plus-a case",
+      "counterexample": "The third nonstandard row begins with b plus the successor of a, but its final term uses an unbound y. Substituting a matches the left-hand case and the operation table.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only the stray y in the third aligned equation becomes a; all operations, values and other rows remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusy)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&a\\nsplusa^\\nssucc=b=b^\\nssucc=(a\\nsplusa)^\\nssucc\\\\&b\\nsplusb^\\nssucc=a=a^\\nssucc=(b\\nsplusb)^\\nssucc\\\\&b\\nsplusa^\\nssucc=b=b^\\nssucc=(b\\nsplusa)^\\nssucc\\\\&a\\nsplusb^\\nssucc=a=a^\\nssucc=(a\\nsplusb)^\\nssucc\\\\\\intertext{LOCALIZED$x$$y$}&n\\nsplusa^\\nssucc=n\\nsplusa=b=b^\\nssucc=(n\\nsplusa)^\\nssucc\\\\&n\\nsplusb^\\nssucc=n\\nsplusb=a=a^\\nssucc=(n\\nsplusb)^\\nssucc\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-010",
+      "unit_id": "OLP-0196",
+      "classification": "predecessor_claim_includes_zero",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "target_line_1based": 68,
+      "target_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+      "mode": "restrict-predecessor-claim-to-nonzero-elements-plus-adjacent-note",
+      "translation_change": "restricts the unique-predecessor claim to elements other than zero",
+      "counterexample": "Robinson axiom Q2 says zero is not a successor, so zero has no predecessor. Every nonzero element has one by Q3 and injectivity.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "The proposition is narrowed in prose while its existing notation and the surrounding discrete-order claims are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-011",
+      "unit_id": "OLP-0196",
+      "classification": "positive-addend-formula-leaves-y-free",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-pa.tex:173-185",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "target_line_1based": 191,
+      "target_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+      "mode": "quantify-free-addend-variable-plus-adjacent-note",
+      "translation_change": "adds the universal quantifier over y to the positive-addend theorem",
+      "counterexample": "The proposition applies the fact to arbitrary nonstandard y, but the source formula quantifies only x and leaves y free. Universal closure over y states the required theorem.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only one universal quantifier over y is added; the nonzero antecedent, inequality consequent and existing x quantifier are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Th{PA}\\Proves\\lforall[x][(y\\neq\\Obj{0}\\lifx<(x+y))]$"
+        ],
+        "target_only": [
+          "$\\Th{PA}\\Proves\\lforall[x][\\lforall[y][(y\\neq\\Obj{0}\\lifx<(x+y))]]$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-012",
+      "unit_id": "OLP-0196",
+      "classification": "dense-block-proof_switches_to_undefined_addition_symbol",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-pa.tex:217-228",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "target_line_1based": 242,
+      "target_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+      "mode": "replace-undefined-oplus-with-established-nsplus-plus-adjacent-note",
+      "translation_change": "uses the established nonstandard addition notation in both averaging equations",
+      "counterexample": "The entire section defines and uses nsplus for interpreted addition, but the two averaging equations abruptly use an undeclared oplus. The preceding divisibility fact and following order claims require nsplus.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only both occurrences of oplus in each of the two equations become nsplus; variables, equality structure and successor remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\oplusy=z\\oplusz$",
+          "$x\\oplusy=(z\\oplusz)^\\nssucc$"
+        ],
+        "target_only": [
+          "$x\\nsplusy=z\\nsplusz$",
+          "$x\\nsplusy=(z\\nsplusz)^\\nssucc$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-013",
+      "unit_id": "OLP-0196",
+      "classification": "denumerable-block-order_claim_missing_countability_hypothesis",
+      "source_path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "source_locator": "content/model-theory/models-of-arithmetic/models-of-pa.tex:238-258",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "target_line_1based": 273,
+      "target_sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d",
+      "mode": "qualify-block-order-claim-by-enumerable-model-plus-adjacent-note",
+      "translation_change": "states the rational-order conclusion for enumerable nonstandard models",
+      "counterexample": "A nonstandard model may have uncountable domain and uncountably many blocks. Density and lack of endpoints hold generally, but denumerability and the rational-order isomorphism require the model to be enumerable.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "No formula changes; the missing model-countability qualification is added to the prose conclusion.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-014",
+      "unit_id": "OLP-0197",
+      "classification": "relation-set_comprehension_uses_wrong_variable",
+      "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:42-67",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_line_1based": 66,
+      "target_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "mode": "replace-n-with-tuple-variable-x-plus-adjacent-note",
+      "translation_change": "uses x in the domain-membership condition for the ordered pair x,a",
+      "counterexample": "The set-builder tuple is x,a but its condition refers to n, which is neither bound there nor the tuple's first component. The original definition of K uses x in the same relation clause.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only n becomes x in the final set-builder condition; the tuple, domain, union and all preceding interpretations remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{n\\in\\Domain{K}}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{x\\in\\Domain{K}}\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-015",
+      "unit_id": "OLP-0197",
+      "classification": "claimed-bijection-omits-zero-and-one",
+      "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:68-75",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_line_1based": 77,
+      "target_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "mode": "replace-plus-one-with-minus-one-plus-adjacent-note",
+      "translation_change": "maps every positive n to n minus one",
+      "counterexample": "With g(0)=a and g(n)=n+1 for positive n, neither zero nor one is in the image, so g is not a bijection. Mapping positive n to n-1 enumerates every natural number exactly once and agrees with the transported interpretations that follow.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "Only the arithmetic offset in the positive branch changes from plus one to minus one.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$g(n)=n+1$"
+        ],
+        "target_only": [
+          "$g(n)=n-1$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-016",
+      "unit_id": "OLP-0197",
+      "classification": "tennenbaum_statement_treats_isomorphic_copies_as_literal_identity",
+      "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:119-121",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_line_1based": 126,
+      "target_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "mode": "qualify-uniqueness-up-to-isomorphism-plus-adjacent-note",
+      "translation_change": "states uniqueness up to isomorphism, equivalently the absence of computable nonstandard models",
+      "counterexample": "The definition fixes domain Nat but computable permutations of Nat give computable renamed copies of the standard structure. Tennenbaum's theorem rules out computable nonstandard models rather than those isomorphic copies.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+      "formula_policy": "No formula changes; the theorem's prose uniqueness claim is qualified by isomorphism.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    }
+  ],
+  "no_change_units": [
+    "OLP-0191"
+  ],
+  "status": "complete models-of-arithmetic source review; thirteen adopted corrections have adjacent Pashto disclosures and exact formula-delta accounting where formulas changed"
+}

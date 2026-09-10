@@ -1,8 +1,8 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 190 of 722 source units are translated drafts. This log contains 110 terminology entries and 127 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 197 of 722 source units are translated drafts. This log contains 114 terminology entries and 140 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
-Every terminology entry below was backfilled from the existing decision ledger after the expert-log requirement was introduced. “Retrospective” describes the log entry timing; it does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
+Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
 ## TERM-SET
 
@@ -993,6 +993,42 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: بې پایو تراکم لرونکے خطي ترتيب; کثيف خطي ترتيب بې له پایونو; د کانتور--ق قضيه; د ناطقو عددونو خطي ترتيب
 - Review question: In Pakistani Pashto mathematical prose, is «بې له سرحدي ټکو ګڼ خطي ترتيب / د کانتور قضيه / د ناطقو عددونو ترتيب» the clearest conventional rendering of “dense linear order without endpoints / Cantor's theorem / rational order” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: retrospective backfill from the pre-existing decision ledger; this records the then-current rationale and is not a claim about unrecorded contemporaneous motives
+
+## TERM-ARITHMETIC-MODELS
+
+- Type: terminology
+- Choice: معياري مدل / نامعياري مدل / معياري او نامعياري عنصر / معياري عددنښه
+- Uncertainty: model, structure, domain, function, relation and countability concepts supported by regional sources; exact arithmetic-model compounds are provisional
+- Alternatives: د حساب معياري او نامعياري جوړښت; د عددنښو له مخې نومېدونکي او نه نومېدونکي غړي; استاندرد او غيراستاندرد مدل
+- Review question: In Pakistani Pashto mathematical prose, is «معياري مدل / نامعياري مدل / معياري او نامعياري عنصر / معياري عددنښه» the clearest conventional rendering of “standard model / non-standard model / standard and non-standard element / standard numeral” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+
+## TERM-ARITHMETIC-THEORIES
+
+- Type: terminology
+- Choice: د رابنسن حساب / د پيانو حساب / رښتينی حساب / د حساب مدل
+- Uncertainty: arithmetic, theory, proof and induction concepts supported by regional sources; eponym spellings and the exact true-arithmetic compound are provisional
+- Alternatives: د رابنسن حسابي تيوري; د پيانو حسابي تيوري; د طبيعي شمېرو بشپړه تيوري
+- Review question: In Pakistani Pashto mathematical prose, is «د رابنسن حساب / د پيانو حساب / رښتينی حساب / د حساب مدل» the clearest conventional rendering of “Robinson arithmetic / Peano arithmetic / true arithmetic / model of arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+
+## TERM-NONSTANDARD-ARITHMETIC-BLOCKS
+
+- Type: terminology
+- Choice: جانشين / مخکښېنی / بلاک / د نامعياري بلاکونو ګڼ ترتيب
+- Uncertainty: function, order, countability and induction roles supported by regional sources; exact nonstandard block vocabulary is provisional
+- Alternatives: وروستنی او مخکينی غړے; د نامعياري شمېرې برخه; د برخو کثيف ترتيب
+- Review question: In Pakistani Pashto mathematical prose, is «جانشين / مخکښېنی / بلاک / د نامعياري بلاکونو ګڼ ترتيب» the clearest conventional rendering of “successor / predecessor / block / dense ordering of non-standard blocks” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+
+## TERM-COMPUTABLE-ARITHMETIC-MODELS
+
+- Type: terminology
+- Choice: محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه
+- Uncertainty: function, relation, domain and countability concepts supported by regional sources; exact computability compounds and theorem name are provisional
+- Alternatives: حسابېدونکی مدل; الګوريتمي تابع; فيصله کېدونکې اړيکه; د ټېننباوم تيورم
+- Review question: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه» the clearest conventional rendering of “computable model / computable function / decidable relation / Tennenbaum's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
 
 ## DEC-OLFUN-001
 
@@ -2082,6 +2118,123 @@ Every terminology entry below was backfilled from the existing decision ledger a
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLMOD-003 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete model-theory basics chapter and frozen source bytes
+
+## DEC-OLMOD-004
+
+- Type: source-correction
+- Choice: restores x as the proof-code argument of the repeated provability predicate
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-005
+
+- Type: source-correction
+- Choice: states that the possible missing x is outside the range of s
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-006
+
+- Type: source-correction
+- Choice: selects the largest occurring index when one exists and zero when none occurs
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-007
+
+- Type: source-correction
+- Choice: invokes downward Loewenheim--Skolem after compactness to obtain an enumerable model
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-008
+
+- Type: source-correction
+- Choice: uses y equals a in the final domain case
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-009
+
+- Type: source-correction
+- Choice: uses a in the right-hand successor expression for the b-plus-a case
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-010
+
+- Type: source-correction
+- Choice: restricts the unique-predecessor claim to elements other than zero
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-011
+
+- Type: source-correction
+- Choice: adds the universal quantifier over y to the positive-addend theorem
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-012
+
+- Type: source-correction
+- Choice: uses the established nonstandard addition notation in both averaging equations
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-013
+
+- Type: source-correction
+- Choice: states the rational-order conclusion for enumerable nonstandard models
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-014
+
+- Type: source-correction
+- Choice: uses x in the domain-membership condition for the ordered pair x,a
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-015
+
+- Type: source-correction
+- Choice: maps every positive n to n minus one
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-016
+
+- Type: source-correction
+- Choice: states uniqueness up to isomorphism, equivalently the absence of computable nonstandard models
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
 
 ## DEC-REL-I
 

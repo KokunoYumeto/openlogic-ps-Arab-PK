@@ -1,0 +1,277 @@
+% Part: first-order-logic
+% Chapter: models-of-arithmetic
+% Section: models-of-pa
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{mpa}
+\section{د~$\Th{PA}$ مدلونه}
+
+\begin{explain}
+د~$\Th{TA}$ هر نامعياري مدل د~$\Th{PA}$ هم نامعياري مدل دے۔ موږ
+پوهېږو چې د~$\Th{TA}$، او په پايله کښې د~$\Th{PA}$، نامعياري
+مدلونه شته۔ دا هم پوهېږو چې داسې نامعياري مدلونه نامعياري «شمېرې»
+لري، يعنې د تعريف ساحې داسې !!{element}s چې له ټولو معياري «شمېرو»
+هاخوا دي۔ خو دا څنګه ترتيب شوي دي؟ څومره دي؟ ومو ليدل چې د کمزورې
+تيورۍ~$\Th{Q}$ مدلونه حتا يوازې يوه نامعياري شمېره لرلے شي۔ خو دغه
+ساده !!{structure}s د~$\Th{PA}$ يا~$\Th{TA}$ مدلونه نۀ دي۔
+
+د~$\Th{PA}$ يا~$\Th{TA}$ د مدلونو د جوړښت د پوهېدو کلي دا ده چې
+وګورو په دغو تيوريو کښې کوم حقيقتونه !!{derivable} دي۔ مثلاً
+$\Th{PA}$ لا له مخکې
+$\lforall[x][\eq/[x][x']]$ او
+$\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ ثابتوي، نو هغه ساده
+جوړښتونه چې دا !!{sentence}s دروغوي د~$\Th{PA}$ د مدلونو په توګه
+ردوي۔
+
+فرض کړئ~$\Struct{M}$ د~$\Th{PA}$ مدل دے۔ که
+$\Th{PA} \Proves !A$ وي، نو $\Sat{M}{!A}$۔ بيا د
+$\Assign{\Obj{0}}{M}$ دپاره~$\nszero$، د~$\Assign{\prime}{M}$ دپاره
+$\nssucc$، د~$\Assign{+}{M}$ دپاره~$\nsplus$، د
+$\Assign{\times}{M}$ دپاره~$\nstimes$ او د~$\Assign{<}{M}$ دپاره
+$\nsless$ کاروو۔ هره !!{sentence}~$!A$ بيا د~$\nszero$، $\nssucc$،
+$\nsplus$، $\nstimes$ او~$\nsless$ په هکله کوم شرط بيانوي، او که
+$\Sat{M}{!A}$ وي نو هغه شرط بايد پوره شي۔ مثلاً که
+$\Sat{M}{!Q_1}$، يعنې
+$\Sat{M}{\lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]}$،
+نو $\nssucc$ بايد !!{injective} وي۔
+\end{explain}
+
+\begin{prop}
+په~$\Struct{M}$ کښې $\nsless$ يو خطي سخت ترتيب دے، يعنې:
+\begin{enumerate}
+\item د هېڅ~$x \in \Domain{M}$ دپاره $x \nsless x$ نۀ وي۔
+\item که $x \nsless y$ او $y \nsless z$ وي، نو $x \nsless z$۔
+\item د هر $x\neq y$ دپاره يا $x\nsless y$، يا $y\nsless x$۔
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Th{PA}$ دا ثابتوي:
+\begin{enumerate}
+\item $\lforall[x][\lnot x < x]$
+\item $\lforall[x][\lforall[y][\lforall[z][((x < y \land y < z) \lif x < z)]]]$
+\item $\lforall[x][\lforall[y][((x < y \lor y < x) \lor \eq[x][y]))]]$
+\end{enumerate}
+\end{proof}
+
+
+\begin{prop}
+\ollabel{prop:M-discrete} $\nszero$ د~$\Domain{M}$ تر ټولو کوچنے
+!!{element} د~$\nsless$ په ترتيب کښې دے۔ د هر~$x$ دپاره
+$x\nsless x^\nssucc$، او $x^\nssucc$ تر ټولو کوچنے
+$\nsless$-لوي !!{element} دے۔ له صفر څخه پرته د هر~$x$ دپاره داسې يوازينے~$y$ شته چې
+$y^\nssucc=x$ وي۔ (موږ~$y$ په~$\Struct{M}$ کښې
+د~$x$ «مخکښېنی» بولو او په~$^\nssucc x$ ئې ښيو۔)
+\textbf{د ژباړې د نسخې سمون (OLMOD-010):} سرچينې د يوازيني
+مخکښيني دعوه د هر x دپاره کړې وه، چې صفر هم رانغاړي، حال دا چې د
+Q2 بديهي اصل له مخې صفر د هېڅ څيز جانشين نۀ دے۔ دلته دعوه په سم
+ډول له صفر څخه پرته غړو ته محدوده شوې ده۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+په~$\Lang{L_A}$ کښې داسې !!{sentence}s ومومئ چې په~$\Th{PA}$ کښې
+!!{derivable} وي (او ځکه په~$\Struct{N}$ کښې رښتونې وي) او په
+\olref[mod][mar][mpa]{prop:M-discrete} کښې د~$\nszero$، $\nssucc$
+او~$\nsless$ ځانګړتياوې تضمين کړي۔
+\end{prob}
+
+\begin{prop}
+د~$\Struct{M}$ ټول معياري !!{element}s د~$\nsless$ له مخې له ټولو
+نامعياري !!{element}s څخه کوچني دي۔
+\end{prop}
+
+\begin{proof}
+$n$ د معياري !!{element}~$\Value{\num{n}}{M}$ د
+$\Struct{M}$ غړي د لنډون په توګه کاروو۔ لا~$\Th{Q}$ د هر~$n\in\Nat$ دپاره
+$\lforall[x][(x < \num{n}' \lif (\eq[x][\num{0}] \lor
+  \eq[x][\num{1}] \lor \dots \lor \eq[x][\num{n}]))]$ ثابتوي۔
+د~$\nsless \nszero$ شرط پوره کوونکي !!{element}s نشته۔ نو که~$n$ معياري او~$x$
+نامعياري وي، $x\nsless n$ نۀ شو لرلے۔ د تعريف له مخې نامعياري
+عنصر د هېڅ~$n\in\Nat$ دپاره $\Value{\num{n}}{M}$ نۀ وي، نو
+$x\neq n$ هم دے۔ څرنګه چې $\nsless$ خطي ترتيب دے، بايد
+$n\nsless x$ وي۔
+\end{proof}
+
+\begin{prop}
+د~$\Domain{M}$ هر نامعياري !!{element}~$x$ د لاندې فرعي سټ يو غړے
+دے:
+\[
+\dots ^{\nssucc\nssucc\nssucc}x \nsless ^{\nssucc\nssucc}x \nsless
+^{\nssucc}x \nsless x \nsless x^{\nssucc} \nsless x^{\nssucc\nssucc}
+\nsless x^{\nssucc\nssucc\nssucc} \nsless \dots
+\]
+موږ دا فرعي سټ د~$x$ \emph{بلاک} بولو او په~$[x]$ ئې ليکو۔ نه تر
+ټولو کوچنے او نه تر ټولو لوے !!{element} لري۔ دا د هغو
+$y\in\Domain{M}$ د سټ په توګه ځانګړې کېدے شي چې د کوم معياري~$n$
+دپاره $x\nsplus n=y$ يا $y\nsplus n=x$ وي۔
+\end{prop}
+
+\begin{proof}
+داسې سټ~$[x]$ تل شته، ځکه د~$\Domain{M}$ هر !!{element}~$y$
+يوازينے جانشين~$y^\nssucc$ لري او که دغه غړے نامعياري وي،
+يوازينے مخکښېنی~$^\nssucc y$ لري۔ د پرله‌پسې !!{element}s $y$ او~$y^\nssucc$
+دپاره $y\nsless y^\nssucc$، او $y^\nssucc$ د~$\nsless$ له مخې
+د~$\Domain{M}$ تر ټولو کوچنے هغه !!{element} دے چې $y$ ترې
+$\nsless$ وي۔ څرنګه چې تل
+$^\nssucc y\nsless y$ او $y\nsless y^\nssucc$، نو $[x]$ نه تر ټولو
+کوچنے او نه تر ټولو لوے !!{element} لري۔ که $y\in[x]$ وي، نو
+$x\in[y]$، ځکه بيا يا $y^{\nssucc\dots\nssucc}=x$ يا
+$x^{\nssucc\dots\nssucc}=y$۔ که
+$y^{\nssucc\dots\nssucc}=x$ وي (له~$n$ ځله~$\nssucc$ سره)، نو
+$y\nsplus n=x$ او برعکس، ځکه (که~$n$ د~$\prime$ نښو شمېر وي)
+$\Th{PA} \Proves \lforall[x][\eq[x^{\prime\dots\prime}][(x +
+    \num{n})]]$۔
+\end{proof}
+
+\begin{prop}
+که $[x]\neq[y]$ او $x\nsless y$ وي، نو د هر $u\in[x]$ او
+$v\in[y]$ دپاره $u\nsless v$۔
+\end{prop}
+
+\begin{proof}
+پام وکړئ چې $\Th{PA} \Proves
+\lforall[x][\lforall[y][(x < y \lif (x' < y \lor x' = y))]]$۔
+نو که $u\nsless v$ وي او $[u]\neq[v]$، د هر~$n$ دپاره
+$u\nsplus n^\nssucc\nsless v$ هم لرو۔
+
+هر $u\in[x]$ د~$\nsless y$ شرط پوره کوي: د فرض له مخې $x\nsless y$۔ که
+$u\nsless x$ وي، د انتقال له مخې $u\nsless y$۔ او که
+$x\nsless u$ خو $u\in[x]$ وي، نو د کوم~$n$ دپاره
+$u=x\nsplus n^\nssucc$؛ نو د هغه حقيقت له مخې چې اوس مو ثابت کړ
+$u\nsless y$۔
+
+اوس فرض کړئ $v\in[y]$ د~$\nsless y$ شرط پوره کوي، يعنې د کوم معياري~$m$
+دپاره $v\nsplus m^\nssucc=y$۔ بيا $v\nsless x$ کېدے نۀ شي، ګنې
+$y=v\nsplus m^\nssucc\nsless x$ به و۔ همدارنګه $x\neq v$، ګنې
+$x\nsplus m^\nssucc=v\nsplus m^\nssucc=y$ او $[x]=[y]$ به وو۔
+نو $x\nsless v$۔ بيا د هر~$n$ دپاره
+$x\nsplus n^\nssucc\nsless v$ هم۔ له دې امله که $x\nsless u$ او
+$u\in[x]$ وي، نو $u\nsless v$۔ که $u\nsless x$ وي، د انتقال له
+مخې $u\nsless v$۔
+
+په پای کښې که $y\nsless v$ وي، نو $u\nsless v$، ځکه لکه چې ومو
+ښودل $u\nsless y$ او $y\nsless v$۔
+\end{proof}
+
+\begin{cor}
+که $[x]\neq[y]$ وي، نو $[x]\cap[y]=\emptyset$۔
+\end{cor}
+
+\begin{proof}
+فرض کړئ $z\in[x]$ او $x\nsless y$۔ بيا د هر $u\in[y]$ دپاره
+$z\nsless u$۔ که $z\in[y]$ هم واے، $z\nsless z$ به مو لرلے۔
+د~$y\nsless x$ حالت هم ورته دے۔
+\end{proof}
+
+\begin{explain}
+دا معنا لري چې بلاکونه پخپله داسې ترتيبېدے شي چې د~$\nsless$ درناوی
+وکړي: $[x]\nsless[y]$ هله او يوازې هله چې $x\nsless y$؛ يا په
+هم‌ارزه توګه، چې د هر $u\in[x]$ او $v\in[y]$ دپاره
+$u\nsless v$ وي۔ څرګنده ده چې معياري بلاک~$[0]$ تر ټولو کوچنے بلاک
+دے۔ له هېڅ نامعياري بلاک سره تقاطع نۀ لري، او هېڅ دوه نامعياري
+بلاکونه هم يو بل نۀ پرې کوي۔ په ځانګړي ډول، د پرله‌پسې جانشينونو يا
+مخکښينو په اخيستو بل بلاک ته نۀ شئ رسېدے۔
+\end{explain}
+
+\begin{prop}
+که $x$ او~$y$ نامعياري وي، نو $x\nsless x\nsplus y$ او
+$x\nsplus y\notin[x]$۔
+\end{prop}
+
+\begin{proof}
+که $y$ نامعياري وي، نو $y\neq\nszero$۔
+$\Th{PA} \Proves \lforall[x][\lforall[y][(y \neq \Obj{0} \lif x < (x+y))]]$۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-011):} سرچينې د دې عمومي
+حقيقت په ليکلو کښې y ازاد پرېښے و؛ دلته پر y هم کلي سور ورزيات
+شوے، لکه دعوه او ورپسې استعمال چې غواړي۔
+اوس فرض کړئ $x\nsplus y\in[x]$۔ څرنګه چې
+$x\nsless x\nsplus y$، د کوم معياري عدد دپاره
+$x\nsplus n^\nssucc=x\nsplus y$۔ خو د جمع د اختصار قانون
+$\Th{PA} \Proves \lforall[x][\lforall[y][\lforall[z][(\eq[(x+y)][(x+z)] \lif y = z)]]]$
+دے۔ له دې به د کوم معياري~$n$ دپاره $y=n^\nssucc$ پايله شي؛ خو
+$y$ نامعياري فرض شوې ده۔
+\end{proof}
+
+\begin{prop}
+تر ټولو کوچنے نامعياري بلاک نشته۔
+\end{prop}
+
+\begin{proof}
+$\Th{PA} \Proves \lforall[x][\lexists[y][(\eq[(y+y)][x] \lor
+      \eq[(y+y)'][x])]]$؛ يعنې هر~$x$ پر~$2$ وېشل کېږي (ښايي پاتې
+شونې~$1$ ولري)۔ که $x$ نامعياري وي، $y$ هم نامعياري دے۔ د مخکينۍ
+قضيې له مخې $y\nsless y\nsplus y$ او $y\nsplus y\notin[y]$۔
+بيا $y\nsless(y\nsplus y)^\nssucc$ او
+$(y\nsplus y)^\nssucc\notin[y]$ هم۔ خو
+$x=y\nsplus y$ يا $x=(y\nsplus y)^\nssucc$، نو $y\nsless x$ او
+$y\notin[x]$۔
+\end{proof}
+
+\begin{prop}
+تر ټولو لوے بلاک نشته۔
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+وښيئ چې د~$\Th{PA}$ په يوه نامعياري مدل کښې تر ټولو لوے بلاک
+نشته۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:blocks-dense}
+د بلاکونو ترتيب ګڼ دے۔ يعنې که $x\nsless y$ او $[x]\neq[y]$ وي،
+نو داسې بلاک~$[z]$ شته چې له دواړو بېل او د هغو تر منځ وي۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $x\nsless y$۔ لکه مخکې، $x\nsplus y$ پر دوه وېشل کېږي
+(ښايي پاتې شونې ولري): داسې $z\in\Domain{M}$ شته چې يا
+$x \nsplus y = z \nsplus z$ يا
+$x \nsplus y = (z \nsplus z)^\nssucc$۔ عنصر~$z$ د~$x$ او~$y$
+«اوسط» دے، او $x\nsless z$ او $z\nsless y$۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-012):} سرچينې د دې ثبوت په
+دوو معادلو کښې ناتعريفه جمع کارولې وه؛ دلته د ټول څپرکي ټاکلې
+نامعياري جمع بېرته ايښوول شوې ده۔
+\end{proof}
+
+\begin{prob}
+د~\olref[mod][mar][mpa]{prop:blocks-dense} مفصل ثبوت وليکئ۔
+د~$z$ د شتون د تضمين دپاره $\Th{PA}$ بايد کومه !!{sentence}
+!!{derive} کړي؟ ولې $x\nsless z$ او $z\nsless y$، او ولې
+$[x]\neq[z]$ او $[z]\neq[y]$ دي؟
+\end{prob}
+
+\begin{explain}
+له دې امله، په هر شمېرېدونکي نامعياري مدل کښې نامعياري بلاکونه د
+ناطقو په شان ترتيب لري: يو !!a{denumerable} ګڼ خطي ترتيب بې له
+سرحدي ټکو جوړوي۔ ښودل کېدے شي چې هر دوه داسې !!{denumerable}
+ترتيبونه آيزومورف دي۔ نو د رښتيني حساب د هر دوه !!{enumerable}
+نامعياري مدلونو $\Struct{M}_1$ او~$\Struct{M_2}$ هغه راکمونې چې
+يوازې~$<$ او~$=$ لرونکې ژبې ته کېږي، آيزومورفې دي۔ په رښتيا،
+آيزومورفيزم~$h$ داسې تعريفېدے شي: د~$\Struct{M_1}$ او
+$\Struct{M_2}$ معياري برخې د معياري مدل~$\Struct{N}$ سره، او ځکه له
+يو بل سره، آيزومورفې دي۔ د نامعياري برخې بلاکونه پخپله د ناطقو په
+شان ترتيب شوي او ځکه آيزومورف دي؛ د بلاکونو يو آيزومورفيزم د هر
+بلاک دننه د خپل‌سرو عناصرو په سره برابرولو غځېدے شي، او بيا د
+$\Struct{M_1}$ کښې د~$x$ د جانشين انځور د~$\Struct{M_2}$ کښې د
+$x$ د انځور جانشين وټاکل شي۔ له دې دا \emph{نۀ} راځي چې
+$\mathfrak{M}_1$ او~$\mathfrak{M}_2$ د حساب په بشپړه ژبه کښې
+آيزومورف دي (آيزومورفيزم تل د يوې !!a{language} په نسبت وي)، ځکه پر
+$\Domain{M_1}$ او~$\Domain{M_2}$ د جمع او ضرب د تعريفولو نامتجانسې
+لارې شته۔ (دا د واټ د يوې مشهورې قضيې څخه هم راځي چې د يوې بشپړې
+تيورۍ د شمېرېدونکو مدلونو شمېر 2 کېدے نۀ شي۔)
+\textbf{د ژباړې د نسخې سمون (OLMOD-013):} سرچينې د بلاکونو
+شمېرېدنه له هر نامعياري مدل څخه بې له شرطه پايله کړې وه؛ دا يوازې د شمېرېدونکي مدل دپاره لازمېږي۔ دلته دغه شرط څرګند شوے
+او د ورپسې جملې له شمېرېدونکو مدلونو سره برابر شوے دے۔
+\end{explain}
+\end{document}

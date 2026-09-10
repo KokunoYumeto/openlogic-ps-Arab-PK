@@ -1,0 +1,125 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: non-standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{nst}
+\section{نامعياري مدلونه}
+
+\begin{explain}
+د~$\Lang{L_A}$ يو !!a{structure} هغه وخت معياري بولو چې له
+$\Struct{N}$ سره آيزومورف وي۔ که يو !!a{structure} له~$\Struct{N}$
+سره آيزومورف نۀ وي، نامعياري بلل کېږي۔
+\end{explain}
+
+\begin{defn}
+د~$\Lang{L_A}$ يو !!{structure}~$\Struct{M}$ \emph{نامعياري} دے،
+که له~$\Struct{N}$ سره آيزومورف نۀ وي۔ هغه !!{element}s
+$x \in \Domain{M}$ چې د کوم $n \in \Nat$ دپاره
+$\Value{\num{n}}{M}$ وي، د~$\Struct{M}$ \emph{معياري شمېرې} بلل
+کېږي؛ او نورې \emph{نامعياري شمېرې} بلل کېږي۔
+\end{defn}
+
+\begin{explain}
+د~\olref[stm]{prop:standard-domain} له مخې د~$\Lang{L_A}$ هر
+معياري !!{structure} يوازې معياري !!{element}s لري۔ نو يو نامعياري
+!!{structure} بايد لږ تر لږه يو نامعياري عنصر ولري۔ په حقيقت کښې،
+د يوه نامعياري !!{element} شتون دا تضمينوي چې !!{structure}
+نامعياري دے۔
+\end{explain}
+
+\begin{prop}
+که د~$\Lang{L_A}$ يو !!a{structure}~$\Struct{M}$ يوه نامعياري شمېره
+ولري، نو $\Struct{M}$ نامعياري دے۔
+\end{prop}
+
+\begin{proof}
+برعکس فرض کړئ، يعنې $\Struct{M}$ معياري وي خو نامعياري شمېره~$x$
+ولري۔ $g\colon \Nat \to \Domain{M}$ يو آيزومورفيزم ونيسئ۔ په
+اسانه (پر~$n$ په استقرا) ليدل کېږي چې
+$g(\Value{\num{n}}{N}) = \Value{\num{n}}{M}$۔ په بله وينا، $g$ د
+$\Struct{N}$ معياري شمېرې د~$\Struct{M}$ معياري شمېرو ته وړي۔ که
+$\Struct{M}$ يوه نامعياري شمېره ولري، $g$ !!{surjective} کېدے نۀ
+شي، چې له فرض سره ټکر دے۔
+\end{proof}
+
+\begin{prob}
+په ياد راوړئ چې $\Th{Q}$ لاندې بديهي اصول لري:
+\begin{align*}
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]] \tag{$!Q_1$}\\
+& \lforall[x][\eq/[\Obj 0][x']] \tag{$!Q_2$}\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])] \tag{$!Q_3$}
+\end{align*}
+داسې !!{structure}s~$\Struct{M_1}$، $\Struct{M_2}$، $\Struct{M_3}$
+ورکړئ چې:
+\begin{enumerate}
+\item $\Sat{M_1}{!Q_1}$، $\Sat{M_1}{!Q_2}$، $\Sat/{M_1}{!Q_3}$؛
+\item $\Sat{M_2}{!Q_1}$، $\Sat/{M_2}{!Q_2}$، $\Sat{M_2}{!Q_3}$؛ او
+\item $\Sat/{M_3}{!Q_1}$، $\Sat{M_3}{!Q_2}$، $\Sat{M_3}{!Q_3}$۔
+\end{enumerate}
+څرګنده ده چې د هر يوه دپاره يوازې~$\Assign{\Obj{0}}{M_i}$ او
+$\Assign{\prime}{M_i}$ ټاکل پکار دي۔
+\end{prob}
+
+\begin{explain}
+د~$\Lang{L_A}$ دپاره نامعياري !!{structure}s په اسانه ټاکل کېدے
+شي۔ د بېلګې په توګه، داسې جوړښت ونيسئ چې !!{domain} ئې~$\Int$ وي او
+ټولې غيرمنطقي نښې په معمولي ډول تفسير کړي۔ څرنګه چې منفي شمېرې د
+هېڅ~$n$ دپاره د~$\num{n}$ ارزښتونه نۀ دي، دا جوړښت نامعياري دے۔
+البته دا به د حساب \emph{مدل} په دې معنا نۀ وي چې هماغه جملې رښتونې
+کړي چې~$\Struct{N}$ ئې رښتونې کوي۔ مثلاً
+$\lforall[x][\eq/[x'][\Obj{0}]]$ دروغ ده۔ خو د متناهي شاهد له قضيې
+څخه په اسانۍ ثابتولے شو چې د حساب نامعياري مدلونه شته۔
+\end{explain}
+
+\begin{prop}
+فرض کړئ $\Th{TA} = \Setabs{!A}{\Sat{N}{!A}}$ د~$\Struct{N}$ تيوري
+ده۔ $\Th{TA}$ يو !!a{enumerable} نامعياري مدل لري۔
+\end{prop}
+
+\begin{proof}
+ژبه~$\Lang{L_A}$ په يوه نوي !!{constant}~$c$ وغځوئ او د
+!!{sentence}s لاندې سټ ونيسئ:
+\[
+\Gamma = \Th{TA} \cup \{\eq/[c][\num{0}], \eq/[c][\num{1}],
+\eq/[c][\num{2}], \dots\}
+\]
+د~$\Gamma$ هر مدل~$\Struct{M^c}$ به داسې يو !!a{element}
+$x = \Assign{c}{M}$ ولري چې نامعياري وي، ځکه د هر~$n \in \Nat$
+دپاره $x \neq \Value{\num{n}}{M}$۔ دا هم څرګنده ده چې
+$\Sat{M^c}{\Th{TA}}$، ځکه $\Th{TA} \subseteq \Gamma$۔ که له
+$\Struct{M^c}$ څخه يوازې د~$c$ تفسير هېر کړو او هغه د~$\Lang{L_A}$
+يو !!a{structure}~$\Struct{M}$ وګرځوو، تعريف ساحه ئې لا هم نامعياري
+$x$ لري او $\Sat{M}{\Th{TA}}$ هم وي۔ وروستۍ خبره ځکه تضمينېږي چې
+$c$ په~$\Th{TA}$ کښې نۀ راځي۔ نو کافي ده وښيو چې $\Gamma$ مدل لري۔
+
+د متناهي شاهد قضيه کاروو۔ که د~$\Gamma$ هر متناهي فرعي سټ د صدق وړ
+وي، نو $\Gamma$ هم د صدق وړ دے۔ يو متناهي فرعي سټ
+$\Gamma_0 \subseteq \Gamma$ ونيسئ۔ په~$\Gamma_0$ کښې د~$\Th{TA}$
+ځينې !!{sentence}s او ښايي د~$\eq/[c][\num{n}]$ د بڼې متناهي ډېرې جملې وي۔
+که د دې بڼې کومه جمله وي، فرض کړئ~$k$ تر ټولو لوے عدد دے چې
+$\eq/[c][\num{k}] \in \Gamma_0$ وي؛ او که هېڅ داسې جمله نه وي، د
+k ارزښت صفر ونيسئ۔ $\Struct{N_k}$ د~$\Struct{N}$ داسې غځونه تعريف کړئ چې
+$\Assign{c}{N_k} = k+1$ وي۔ بيا $\Sat{N_k}{\Gamma_0}$: که
+$!A \in \Th{TA}$ وي، $\Sat{N_k}{!A}$، ځکه $\Struct{N_k}$ له~$c$
+پرته په هر څه کښې د~$\Struct{N}$ په شان دے او $c$ په~$!A$ کښې نۀ
+راځي۔ او د دغې بڼې هرې راغلې جملې دپاره
+$\Sat{N_k}{\eq/[c][\num{n}]}$، ځکه $n \le k$ او
+$\Value{c}{N_k} = k+1$۔ نو د~$\Gamma$ هر متناهي فرعي سټ د صدق وړ
+دے۔ د متناهي شاهد له قضيې $\Gamma$ يو مدل لري؛ او څرنګه چې ژبه
+شمېرېدونکې او دغه مدل نامتناهي دے، د ښکته لوېنهايم--سکولم له قضيې
+يو شمېرېدونکے داسې مدل اخلو۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-006):} سرچينې د متناهي فرعي سټ
+دپاره تر ټولو لوے شاخص يوازې هغه وخت ټاکلے و چې لږ تر لږه يوه
+د c او عددنښې د نابرابرۍ جمله پکې وي؛ دلته د ټولو راغلو شاخصونو يو
+پاسنی حد نيول شوے، چې د هېڅ داسې جملې حالت هم رانغاړي۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-007):} د سرچينې ثبوت د متناهي
+شاهد له قضيې يوازې د يو مدل شتون راويست، خو قضيه شمېرېدونکے مدل
+غواړي؛ وروستۍ جمله د مخکې ثابتې شوې ښکته لوېنهايم--سکولم قضيې په
+کارولو دا اړين ګام څرګندوي۔
+\end{proof}
+
+\end{document}
