@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 247 of 722 source units are translated drafts. This log contains 139 terminology entries and 189 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 255 of 722 source units are translated drafts. This log contains 143 terminology entries and 198 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1254,6 +1254,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: محاسبوي شمېر وړ بشپړ سټ; ټوله تابع د هرځاے تعريف شوې تابع پر ځاے; حسابي سلسله مراتب
 - Review question: In Pakistani Pashto mathematical prose, is «بشپړ په محاسبوي ډول د شمېر وړ سټ / د هرځاے تعريف شويو تابعو سټ Tot / هرځاے تعريف کېدل / حسابي پوړيز نظام» the clearest conventional rendering of “complete c.e. set / totality set Tot / totality / arithmetic hierarchy” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete noncomputability, reducibility and completeness source and language review
+
+## TERM-RICE-INDEX-SETS
+
+- Type: terminology
+- Choice: د رايس قضيه / شاخصي سټ / غيرابتذالي معنايي خاصيت / د پروګرام چلند
+- Uncertainty: set, function, countability and diagonal reasoning have regional support and Pakistani prose governs register; the exact Rice-theorem and semantic-property compounds remain provisional
+- Alternatives: د رايس تيورم; اندېکس سټ د شاخصي سټ پر ځاے; نۀ مبتذل معنايي خاصيت
+- Review question: In Pakistani Pashto mathematical prose, is «د رايس قضيه / شاخصي سټ / غيرابتذالي معنايي خاصيت / د پروګرام چلند» the clearest conventional rendering of “Rice's theorem / index set / nontrivial semantic property / program behavior” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+
+## TERM-FIXED-POINT-SELF-REFERENCE
+
+- Type: terminology
+- Choice: د ثابت ټکي قضيه / ثابت ټکے / ځان-مراجعه / قطري تابع / ځان-چاپوونکی پروګرام
+- Uncertainty: function, recursion and diagonal constructions have regional support and Pakistani prose governs syntax; the exact computability-theoretic fixed-point and self-reference labels remain provisional
+- Alternatives: د ټاکلي ټکي قضيه; ځان ته مراجعه; ځان چاپوونکی پروګرام
+- Review question: In Pakistani Pashto mathematical prose, is «د ثابت ټکي قضيه / ثابت ټکے / ځان-مراجعه / قطري تابع / ځان-چاپوونکی پروګرام» the clearest conventional rendering of “fixed-point theorem / fixed point / self-reference / diagonal function / self-printing program” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+
+## TERM-TURING-MACHINE-COMPONENTS
+
+- Type: terminology
+- Choice: ټيورينګ ماشين / پټه / مربع / لوست-ليک سر / الفبا / حالت / د حالت بدلون تابع
+- Uncertainty: Pakistani prose and regional function witnesses support register and functional exposition, but no inspected witness attests the exact Turing-machine component labels; all compact technical renderings remain reversible and provisional
+- Alternatives: د ټيورينګ آله; فيته د پټې پر ځاے; لوستلو او ليکلو سر; انتقالي تابع
+- Review question: In Pakistani Pashto mathematical prose, is «ټيورينګ ماشين / پټه / مربع / لوست-ليک سر / الفبا / حالت / د حالت بدلون تابع» the clearest conventional rendering of “Turing machine / tape / square / read-write head / alphabet / state / transition function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+
+## TERM-TURING-DIAGRAM-CONFIGURATION
+
+- Type: terminology
+- Choice: د حالت ډياګرام / لارښوونه / تشکيل / د ماشين جدول / دوه‌چنده کوونکے / درېدل / منل
+- Uncertainty: Pakistani prose governs sentence shape and regional mathematical diagrams and functions provide comparator context; the exact automata labels are unattested in the inspected canon and remain provisional
+- Alternatives: د حالت شکل; جوړښت د تشکيل پر ځاے; د ماشين لښتيال; دوه برابروونکی
+- Review question: In Pakistani Pashto mathematical prose, is «د حالت ډياګرام / لارښوونه / تشکيل / د ماشين جدول / دوه‌چنده کوونکے / درېدل / منل» the clearest conventional rendering of “state diagram / instruction / configuration / machine table / doubler / halt / accept” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
 
 ## DEC-OLFUN-001
 
@@ -2901,6 +2937,87 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-035 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-036
+
+- Type: source-correction
+- Choice: begins the refutation with an arbitrary partial computable f, exactly the class quantified over by the theorem
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-036 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-037
+
+- Type: source-correction
+- Choice: refers to the one function computed by the indexed algorithm in the singular
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-037 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-038
+
+- Type: source-correction
+- Choice: uses the chapter's partial-equality symbol at both steps of each derivation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-038 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-039
+
+- Type: source-correction
+- Choice: places the initial head on the first input square immediately right of the end marker
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-039 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-040
+
+- Type: source-correction
+- Choice: calls the displayed and subscripted initial state the zeroth state
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-040 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-041
+
+- Type: source-correction
+- Choice: lists the cell fields as new symbol, new state and direction, and says each table gap is a possible halting point
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-041 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-042
+
+- Type: source-correction
+- Choice: asks for a machine that takes a finite sequence as input and rearranges it
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-042 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-043
+
+- Type: source-correction
+- Choice: states the s-m-n specialization with partial equality
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-043 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-044
+
+- Type: source-correction
+- Choice: relates the indexed partial computation and g with partial equality
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-044 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
 
 ## DEC-REL-I
 

@@ -1,0 +1,197 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-19T23:25:56.875472+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+  "scope": "OLP-0248 through OLP-0255 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-036",
+      "unit_id": "OLP-0250",
+      "classification": "fixed_point_application_proof_restricts_arbitrary_candidate_to_total_computable_function",
+      "source_path": "content/computability/computability-theory/application-fixed-point.tex",
+      "source_sha256": "4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696",
+      "source_locator": "content/computability/computability-theory/application-fixed-point.tex:28-36",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex",
+      "target_line_1based": 58,
+      "target_sha256": "d57799a913d9fa10cfb6f912a2623cd2f3c1aa3101cd4667d48aeb7f168b472e",
+      "mode": "retain-arbitrary-partial-computable-candidate-from-theorem-plus-adjacent-note",
+      "translation_change": "begins the refutation with an arbitrary partial computable f, exactly the class quantified over by the theorem",
+      "counterexample": "A proof considering only total computable candidates does not rule out a partial computable candidate. If f(e) is undefined, the construction makes W_e empty and the required definedness of f(e) already fails, so the argument works for the full partial class.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only the prose qualifier changes from computable to partial computable; formulas and identifiers remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-037",
+      "unit_id": "OLP-0251",
+      "classification": "self_reference_conclusion_uses_plural_functions_for_one_function",
+      "source_path": "content/computability/computability-theory/def-functions-self-reference.tex",
+      "source_sha256": "eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37",
+      "source_locator": "content/computability/computability-theory/def-functions-self-reference.tex:49-55",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex",
+      "target_line_1based": 58,
+      "target_sha256": "39d3b3fda312b3b231d1af635f112bfafd8b5dc021627fa7cf5403856dbbf277",
+      "mode": "make-final-object-number-agree-with-single-function-plus-adjacent-note",
+      "translation_change": "refers to the one function computed by the indexed algorithm in the singular",
+      "counterexample": "The sentence introduces 'a function' and 'an algorithm' and then says that algorithm computes 'the functions'. No plurality has been introduced, so the final noun must be singular.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only grammatical number in prose is repaired; formulas and identifiers remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-038",
+      "unit_id": "OLP-0249",
+      "classification": "fixed_point_equivalence_proof_uses_ordinary_equality_for_possibly_undefined_values",
+      "source_path": "content/computability/computability-theory/fixed-point-thm.tex",
+      "source_sha256": "53820e9ac9bab541de29bbd3f329cd4b7d42b63c7be76f186ad0a118019e51c6",
+      "source_locator": "content/computability/computability-theory/fixed-point-thm.tex:77-91",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex",
+      "target_line_1based": 92,
+      "target_sha256": "4e87279069dee59069a9c7a0020423b63a1a63d6d4a968f22f4e8c9fce505b09",
+      "mode": "use-partial-equality-through-both-derivation-chains-plus-adjacent-note",
+      "translation_change": "uses the chapter's partial-equality symbol at both steps of each derivation",
+      "counterexample": "The universal computation and g may be undefined. Ordinary equality of values is not meaningful in that case, while the lemma immediately above states the same fixed-point identities with partial equality.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Four equality signs in two align environments become partial-equality signs; the two complete normalized environment replacements are registered exactly.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\cfind{e}(y)&=\\fn{Un}(f(e),y)\\\\&=\\cfind{f(e)}(y).\\end{align*}",
+          "\\begin{align*}\\cfind{e}(y)&=\\cfind{f(e)}(y)\\\\&=g(e,y).\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\cfind{e}(y)&\\simeq\\fn{Un}(f(e),y)\\\\&\\simeq\\cfind{f(e)}(y).\\end{align*}",
+          "\\begin{align*}\\cfind{e}(y)&\\simeq\\cfind{f(e)}(y)\\\\&\\simeqg(e,y).\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-039",
+      "unit_id": "OLP-0254",
+      "classification": "turing_introduction_places_initial_head_on_end_marker_instead_of_first_input_square",
+      "source_path": "content/turing-machines/machines-computations/introduction.tex",
+      "source_sha256": "659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3",
+      "source_locator": "content/turing-machines/machines-computations/introduction.tex:38-43; content/turing-machines/machines-computations/configuration.tex:48-54",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex",
+      "target_line_1based": 49,
+      "target_sha256": "3231e539f52c8e39c3b5962856a6716480ba34a1426f1aae3c516ad91974ccde",
+      "mode": "state-formal-initial-head-position-on-first-input-square-plus-adjacent-note",
+      "translation_change": "places the initial head on the first input square immediately right of the end marker",
+      "counterexample": "The introduction assigns the leftmost square to the end marker and then says the head initially scans that same square. The chapter's formal initial configuration uses tape position 1, the first input square to the right of the marker.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only the prose description of the initial head position changes; formulas and identifiers remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-040",
+      "unit_id": "OLP-0255",
+      "classification": "configuration_trace_calls_q0_state_one",
+      "source_path": "content/turing-machines/machines-computations/representing-tms.tex",
+      "source_sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
+      "source_locator": "content/turing-machines/machines-computations/representing-tms.tex:82-92",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex",
+      "target_line_1based": 87,
+      "target_sha256": "211d1315b4c6dc1b853ea0742d152eba0e45d13a37a9e8d2434952410ddad691",
+      "mode": "name-the-zero-indexed-initial-state-consistently-plus-adjacent-note",
+      "translation_change": "calls the displayed and subscripted initial state the zeroth state",
+      "counterexample": "The state diagram, preceding sentence, configuration subscript and applicable transition all identify q_0. Calling it state one contradicts all four local witnesses.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only the prose state name changes; the q_0 formulas and diagrams remain byte-equivalent after whitespace normalization.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-041",
+      "unit_id": "OLP-0255",
+      "classification": "machine_table_explanation_reverses_cell_fields_and_omits_required_connector",
+      "source_path": "content/turing-machines/machines-computations/representing-tms.tex",
+      "source_sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
+      "source_locator": "content/turing-machines/machines-computations/representing-tms.tex:168-179",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex",
+      "target_line_1based": 175,
+      "target_sha256": "211d1315b4c6dc1b853ea0742d152eba0e45d13a37a9e8d2434952410ddad691",
+      "mode": "describe-write-symbol-new-state-direction-order-and-complete-gap-sentence-plus-adjacent-note",
+      "translation_change": "lists the cell fields as new symbol, new state and direction, and says each table gap is a possible halting point",
+      "counterexample": "Rows and columns already encode the current state and read symbol, while each displayed cell is TMtrans(write symbol, new state, direction). The prose reverses its first two fields; 'Whenever there is a gap in the table is...' also lacks the connector needed by its unique grammatical reading.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only explanatory prose changes; table cells, transition macros, diagrams and formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-042",
+      "unit_id": "OLP-0255",
+      "classification": "alphabetizer_problem_omits_conjunction_between_input_and_rearrangement_actions",
+      "source_path": "content/turing-machines/machines-computations/representing-tms.tex",
+      "source_sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
+      "source_locator": "content/turing-machines/machines-computations/representing-tms.tex:288-294",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex",
+      "target_line_1based": 291,
+      "target_sha256": "211d1315b4c6dc1b853ea0742d152eba0e45d13a37a9e8d2434952410ddad691",
+      "mode": "insert-required-conjunction-between-coordinated-verbs-plus-adjacent-note",
+      "translation_change": "asks for a machine that takes a finite sequence as input and rearranges it",
+      "counterexample": "The subject performs two coordinated actions, but the source runs 'takes as input ... rearranges' together without a conjunction. The following output condition fixes the intended reading.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "Only the missing prose conjunction is supplied; alphabet, examples and formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-043",
+      "unit_id": "OLP-0248",
+      "classification": "rice_proof_uses_ordinary_equality_for_smn_specialization_of_partial_function",
+      "source_path": "content/computability/computability-theory/rice-theorem.tex",
+      "source_sha256": "6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80",
+      "source_locator": "content/computability/computability-theory/rice-theorem.tex:96-103; content/computability/computability-theory/s-m-n.tex:19-27",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex",
+      "target_line_1based": 97,
+      "target_sha256": "9d6725f8e46e006901779e898a8e7290bc82e42ab089a1b571a59ccd2db69a4a",
+      "mode": "use-partial-equality-for-specified-program-values-plus-adjacent-note",
+      "translation_change": "states the s-m-n specialization with partial equality",
+      "counterexample": "The constructed h_x may be undefined. The cited s-m-n theorem itself relates the specialized partial function to the original computation with partial equality, so ordinary equality of their values loses the undefined case.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "The one inline equality becomes partial equality; its exact normalized replacement is registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\cfind{s(e,x)}(y)=h_x(y)$"
+        ],
+        "target_only": [
+          "$\\cfind{s(e,x)}(y)\\simeqh_x(y)$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-044",
+      "unit_id": "OLP-0251",
+      "classification": "self_reference_fixed_point_application_uses_ordinary_equality_for_partial_functions",
+      "source_path": "content/computability/computability-theory/def-functions-self-reference.tex",
+      "source_sha256": "eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37",
+      "source_locator": "content/computability/computability-theory/def-functions-self-reference.tex:20-32",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex",
+      "target_line_1based": 33,
+      "target_sha256": "39d3b3fda312b3b231d1af635f112bfafd8b5dc021627fa7cf5403856dbbf277",
+      "mode": "use-partial-equality-in-fixed-point-instance-plus-adjacent-note",
+      "translation_change": "relates the indexed partial computation and g with partial equality",
+      "counterexample": "Both g and the fixed-point program may be undefined. The fixed-point lemma invoked by the sentence states exactly this relation with partial equality.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
+      "formula_policy": "The one inline equality becomes partial equality; its exact normalized replacement is registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\cfind{e}(y)=g(e,y)$"
+        ],
+        "target_only": [
+          "$\\cfind{e}(y)\\simeqg(e,y)$"
+        ]
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0252",
+    "OLP-0253"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete Rice, fixed-point, self-reference and introductory Turing-machine source review; nine adopted corrections have adjacent Pashto disclosures; three formula-changing repairs across three units are registered and all other formulas are identical"
+}

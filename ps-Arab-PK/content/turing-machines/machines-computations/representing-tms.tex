@@ -1,0 +1,296 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: representing-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{rep}
+\olsection{د ټيورينګ ماشينونو څرګندونه}
+
+\begin{explain}
+ټيورينګ ماشينونه په ليديز ډول د \emph{حالت ډياګرامونو} په وسيله
+ښودل کېدے شي۔ دا ډياګرامونه د حالت له هغو خانو جوړ دي چې غشي ئې سره
+نښلوي۔ لکه چې تمه کېږي، د حالت هره خانه د ماشين د يو حالت استازيتوب
+کوي۔ هر غشی د هغې لارښوونې استازيتوب کوي چې له هماغه حالت څخه عملي
+کېدے شي، او د لارښوونې جزئيات د اړوند غشي دپاسه يا لاندې ليکل شوي
+وي۔ لاندې ماشين وګورئ، چې يوازې دوه دننني حالتونه، $q_0$ او~$q_1$،
+او يوه لارښوونه لري:
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]   (A)              {$q_0$};
+  \node[state]   (B) [right of=A] {$q_1$};
+
+  \path (A) edge  node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (B);
+\end{tikzpicture}
+\]
+په ياد ولرئ چې ټيورينګ ماشين يو لوست-ليک سر او يوه پټه لري چې ننوت
+پرې ليکل شوے وي۔ لارښوونه داسې لوستل کېږي: \emph{که په حالت~$q_0$
+کښې~$\TMblank$ لولئ، يو~$\TMstroke$ وليکئ، ښي لوري ته لاړ شئ، او
+حالت~$q_1$ ته واوړئ}۔ دا له دې سره معادل ده چې د حالت بدلون تابع
+$\tuple{q_0, \TMblank}$ په~$\tuple{q_1, \TMstroke,
+\TMright}$ واړوي۔
+\end{explain}
+
+\begin{ex}
+\emph{جفت ماشين}: لاندې ټيورينګ ماشين هله او يوازې هله درېږي چې پر
+پټه د~$\TMstroke$ ګانو شمېر جفت وي (په دې فرض چې د پټې ټول
+$\TMstroke$ ګانې له لومړي~$\TMblank$ څخه مخکښې راځي)۔
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+
+د حالت ډياګرام له لاندې حالت بدلون تابع سره سمون لري:
+\begin{align*}
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}
+\end{align*}
+\end{ex}
+
+\begin{explain}
+پورته ماشين يوازې هغه وخت درېږي چې ننوت د کرښو جفت شمېر وي۔ که نه،
+ماشين (په نظري ډول) تر نامعلومې مودې کار ته دوام ورکوي۔ د هر ماشين
+او ننوت دپاره د ماشين \emph{تشکيلونه} پرله‌پسې څارلے شو، څو وت ئې
+وټاکو۔ د تشکيلونو صوري تعريف به وروسته ورکړو۔ اوس د تشکيلونو په اړه
+په شهودي ډول د ډياګرامونو د يوې لړۍ په توګه فکر کولے شو، چې د کار په
+بهير کښې په هره شېبه د ماشين حالت ښيي۔ تشکيلونه د پټې منځپانګه، د
+ماشين حالت او د لوست-ليک سر ځاے ښيي۔
+
+راځئ د جفت ماشين تشکيلونه هغه وخت پرله‌پسې وڅارو چې د څلورو
+$\TMstroke$ ګانو پر ننوت پيل شي۔ په دې صورت کښې تمه لرو چې ماشين
+ودرېږي۔ بيا به ماشين د درېيو~$\TMstroke$ ګانو پر ننوت وچلوو، چې
+هلته به ماشين تل روان وي۔
+
+ماشين په حالت~$q_0$ کښې، د تر ټولو کيڼ~$\TMstroke$ په لوستلو پيل
+کوي۔ د ماشين لومړنی حالت داسې ښودلے شو:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMstroke \TMblank \ldots
+\]
+پورته تشکيل روښانه دے۔ لکه چې ليدل کېږي، ماشين په صفرم حالت کښې د
+تر ټولو کيڼ~$\TMstroke$ په لوستلو پيل کوي۔ دا پر لومړي~$\TMstroke$
+د حالت د نوم په فرعي نښه ښودل کېږي۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-040):} سرچينې په دې ځاے کښې د
+ماشين حالت په نثر کښې لومړی حالت بللے و، خو ډياګرام او فرعي نښه دواړه
+صفرم حالت ټاکي؛ دلته هماغه سم حالت راوړل شوے دے۔
+په دې ځاے کښې د عملي کېدو وړ لارښوونه
+$\delta(q_0, \TMstroke) = \tuple{q_1, \TMstroke, \TMright}$ ده، نو
+ماشين پر پټه ښي لوري ته ځي او حالت~$q_1$ ته اوړي۔
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMstroke \TMblank \ldots
+\]
+څرنګه چې ماشين اوس په حالت~$q_1$ کښې يو~$\TMstroke$ لولي، بايد
+لارښوونه~$\delta(q_1, \TMstroke) = \tuple{q_0,
+  \TMstroke, \TMright}$ ``تعقيب'' کړو۔ په نتيجه کښې دا تشکيل لاس ته
+راځي:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMstroke \TMblank \ldots
+\]
+د ماشين د دوام سره قواعد يو ځل بيا په هماغه ترتيب عملي کېږي، او
+لاندې دوه تشکيلونه لاس ته راځي:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke_1 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke \TMblank_0 \ldots
+\]
+ماشين اوس په حالت~$q_0$ کښې يو~$\TMblank$ لولي۔ د حالت بدلون د
+ډياګرام له مخې په اسانه وينو چې د عملي کولو هېڅ لارښوونه نشته، نو
+ماشين درېدلے دے۔ معنا دا چې ننوت منل شوے دے۔
+
+اوس فرض کړئ ماشين د درېيو~$\TMstroke$ ګانو پر ننوت پيلوو۔ لومړني
+څو تشکيلونه ورته دي، ځکه هماغه لارښوونې عملي کېږي او يوازې د پټې په
+ننوت کښې لږ توپير شته:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMblank_1 \ldots
+\]
+ماشين اوس له ټولو~$\TMstroke$ ګانو څخه تېر شوے، او په حالت~$q_1$
+کښې يو~$\TMblank$ لولي۔ لکه چې په ډياګرام کښې ښودل شوې، د
+$\delta(q_1, \TMblank) =\tuple{q_1,
+\TMblank, \TMright}$ په بڼه يوه لارښوونه شته۔ څرنګه چې پټه ښي لوري
+ته تر نامعلومې مودې پورې له~$\TMblank$ څخه ډکه ده، ماشين به دا
+لارښوونه \emph{تل} عملي کوي، په حالت~$q_1$ کښې به پاتې کېږي او لا
+پسې به ښي لوري ته ځي۔ ماشين به هېڅکله ونۀ درېږي، او ننوت نۀ مني۔
+\end{explain}
+
+\begin{explain}
+دا خبره مهمه ده چې ټول ماشينونه نۀ درېږي۔ که درېدل په دې معنا وي چې
+د ماشين د عملي کولو لارښوونې خلاصې شي، نو داسې ماشين جوړولے شو چې
+هېڅکله نۀ درېږي: بس دا باوري کړو چې په هر حالت کښې د هرې نښې دپاره
+يو وتونکے غشی شته۔ په حالت~$q_0$ کښې د~$\TMblank$ د لوستلو يوه
+لارښوونه په ور زياتولو جفت ماشين داسې بدلولے شو چې تل روان وي۔
+\end{explain}
+
+\begin{ex}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path
+  (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+      edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (A)
+  (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+      edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+د ماشين جدولونه د ټيورينګ ماشينونو د څرګندولو بله لار ده۔ د ماشين
+جدولونه د پټې الفبا پر~$x$-محور، او د ماشين د حالتونو سټ پر~$y$-محور
+ښيي۔ د جدول دننه، د هر حالت او نښې په ګډ ځاے کښې د لارښوونې پاتې
+برخه---نوې نښه، نوی حالت او د خوځښت لوری---ليکل کېږي۔ د ماشين جدولونه
+دا اسانه کوي چې ماشين په کوم حالت او د کومې نښې دپاره درېږي۔ په جدول
+کښې هر تش ځاے د ماشين د درېدو يو ممکن ټکے دے۔ د حالت د ډياګرامونو او
+د لارښوونو د سټونو پر خلاف، چې د ماشين د درېدو ځايونه پکښې تل سملاسي
+څرګند نۀ وي، د ماشين په جدول کښې د تشو ځايونو په موندلو هر د درېدو
+ټکے ژر پېژندل کېږي۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-041):} سرچينې د جدول د حجرې
+توکي د نوي حالت او نوې نښې په سرچپه ترتيب ياد کړي وو، حال دا چې
+ښودل شوې حجرې لومړے نوې نښه او بيا نوی حالت ليکي؛ د هر تش ځاے په
+اړه ورپسې جمله کښې ورکه تړونکې کلمه هم ور زياته شوه۔
+\end{explain}
+
+\begin{ex}
+د جفت ماشين جدول دا دے:
+\[
+\centering
+\begin{tabular}{lllll}
+\cline{2-4}
+\multicolumn{1}{l|}{}      & \multicolumn{1}{c|}{$\TMblank$}
+& \multicolumn{1}{c|}{$\TMstroke$}     & \multicolumn{1}{c|}{$\TMendtape$}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_0$} & \multicolumn{1}{l|}{}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_1}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_1$} & \multicolumn{1}{l|}{\TMtrans{\TMblank}{q_1}{\TMright}}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_0}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\end{tabular}
+\]
+لکه چې وينو، ماشين هغه وخت درېږي چې په حالت~$q_0$ کښې يو~$\TMblank$ لولي۔
+\end{ex}
+
+\begin{explain}
+تر اوسه مو يوازې هغه ماشينونه کتلي چې ننوت لولي او مني ئې۔ خو
+ټيورينګ ماشينونه د لوستلو او ليکلو دواړو وړتيا لري۔ د داسې ماشين يوه
+بېلګه (که څه هم ډېرې، ډېرې بېلګې شته) \emph{دوه‌چنده کوونکے} دے۔
+دوه‌چنده کوونکے چې پر پټه د~$n$ شمېر~$\TMstroke$ ګانو له يوې ډلې سره
+پيل شي، د~$2n$ شمېر~$\TMstroke$ ګانو يوه ډله د وت په توګه ورکوي۔
+\end{explain}
+
+\begin{ex}
+  \ollabel{ex:doubler} مخکښې له دې چې دوه‌چنده کوونکے ماشين جوړ کړو،
+  د مسئلې د حل دپاره يوه \emph{تګلاره} جوړول مهم دي۔ څرنګه چې ماشين
+  (لکه چې موږ تعريف کړے) دا نۀ شي ياد ساتلے چې څو~$\TMstroke$ ګانې
+  ئې لوستې دي، بايد د پټې د ټولو~$\TMstroke$ ګانو د شمېر ساتلو يوه
+  لار پيدا کړو۔ يوه داسې لار دا ده چې وت له ننوت څخه په يو~$\TMblank$
+  جلا کړو۔ بيا ماشين له ننوت څخه لومړے~$\TMstroke$ پاکولے، د ننوت پر
+  پاتې برخې تېرېدلے، يو~$\TMblank$ پرېښودلے، او دوه نوي~$\TMstroke$
+  ګانې ليکلے شي۔ بيا به ماشين بېرته لاړ شي، په ننوت کښې به دويم
+  $\TMstroke$ پيدا کړي، او هغه به هم دوه‌چنده کړي۔ د ننوت د هر يو
+  $\TMstroke$ په بدل کښې به د وت دوه~$\TMstroke$ ګانې وليکي۔ د
+  ماشين د تګ په ترڅ کښې د ننوت په پاکولو باوري کولے شو چې هېڅ
+  $\TMstroke$ پاتې نۀ شي او نۀ دوه ځله دوه‌چنده شي۔ کله چې ټول ننوت
+  پاک شي، پر پټه به~$2n$ شمېر~$\TMstroke$ ګانې پاتې وي۔ د لاس ته
+  راغلي ټيورينګ ماشين د حالت ډياګرام په~\olref{fig:doubler} کښې
+  ښودل شوے دے۔
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (1)              {$q_0$};
+  \node[state]         (2) [right of=1] {$q_1$};
+  \node[state]         (3) [right of=2] {$q_2$};
+  \node[state]         (4) [below of=3] {$q_3$};
+  \node[state]         (5) [left of=4]  {$q_4$};
+  \node[state]         (6) [left of=5]  {$q_5$};
+
+  \path (1) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (1);
+\end{tikzpicture}
+\]
+\caption{يو دوه‌چنده کوونکے ماشين}
+\ollabel{fig:doubler}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+يو خپل‌سری ننوت وټاکئ او په~\olref[tur][mac][rep]{ex:doubler} کښې
+د دوه‌چنده کوونکي ماشين تشکيلونه پرله‌پسې وڅارئ۔
+\end{prob}
+
+\begin{prob}
+د~$\{\TMendtape,\TMblank, A, B\}$ الفبا لرونکے ټيورينګ ماشين جوړ
+کړئ چې د~$A$ ګانو او~$B$ ګانو هره هغه رشته مني، يعنې پرې درېږي، چې
+د~$A$ ګانو شمېر ئې د~$B$ ګانو له شمېر سره برابر وي \emph{او} ټول
+$A$ ګانې له ټولو~$B$ ګانو مخکښې راشي؛ او هره هغه رشته ردوي، يعنې
+پرې نۀ درېږي، چې د~$A$ ګانو شمېر د~$B$ ګانو له شمېر سره برابر نۀ وي
+يا ټولې~$A$ ګانې له ټولو~$B$ ګانو مخکښې رانۀ شي۔ (مثلاً، ماشين بايد
+$AABB$ او~$AAABBB$ ومني، خو~$AAB$ او~$AABBAABB$ دواړه رد کړي۔)
+\end{prob}
+
+\begin{prob}
+د~$\{\TMendtape,\TMblank, A, B\}$ الفبا لرونکے ټيورينګ ماشين جوړ
+کړئ چې د~$A$ ګانو او~$B$ ګانو هره رشته~$\alpha$ د ننوت په توګه
+واخلي او نقل ئې کړي، څو د~$\alpha\alpha$ په بڼه وت پيدا کړي۔ (مثلاً،
+د~$ABBA$ ننوت بايد د~$ABBAABBA$ وت ورکړي۔)
+\end{prob}
+
+\begin{prob}
+\emph{الفبايي؟}: د~$\{\TMendtape,\TMblank, A, B\}$ الفبا لرونکے
+ټيورينګ ماشين جوړ کړئ چې د~$A$ ګانو او~$B$ ګانو يوه متناهي لړۍ د
+ننوت په توګه ورکړل شي، نو وګوري چې ټولې~$A$ ګانې د ټولو~$B$ ګانو
+کيڼ لوري ته راځي که نه۔ ماشين بايد د ننوت رشته پر پټه پرېږدي، او که
+رشته ``الفبايي'' وي ودرېږي، او که نۀ وي تل په کړۍ کښې وچلېږي۔
+\end{prob}
+
+\begin{prob}
+\emph{الفبايي کوونکے}: د~$\{\TMendtape,\TMblank, A, B\}$ الفبا
+لرونکے ټيورينګ ماشين جوړ کړئ چې د~$A$ ګانو او~$B$ ګانو يوه متناهي
+لړۍ د ننوت په توګه واخلي او داسې ئې بيا ترتيب کړي چې ټولې~$A$ ګانې
+د ټولو~$B$ ګانو کيڼ لوري ته راشي۔ (مثلاً، لړۍ~$BABAA$ بايد په
+$AAABB$، او لړۍ~$ABBABB$ بايد په~$AABBBB$ بدله شي۔)
+\textbf{د ژباړې د نسخې سمون (OLCMP-042):} سرچينې د ننوت د اخيستلو
+او بيا ترتيبولو تر منځ د عطف کلمه پرېښې وه؛ دلته بشپړه جمله راوړل
+شوې ده۔
+\end{prob}
+
+\end{document}

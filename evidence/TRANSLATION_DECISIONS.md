@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 328 terminology, source-correction and other judgment-dependent entries across 247 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 341 terminology, source-correction and other judgment-dependent entries across 255 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -256,6 +256,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 36,94,97,109,113,116,117,122,129; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 70,80; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 40,42,46,47; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 46; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 35,60,61,62,91,97,133; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRODUCT
 
@@ -739,6 +741,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0219; Primes; `content/computability/recursive-functions/primes.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/primes.tex` target line(s) 12,26,28,39,42; page: pending stable pagination in a reader containing this unit
   - OLP-0221; Trees; `content/computability/recursive-functions/trees.tex` source line(s) 32; `ps-Arab-PK/content/computability/recursive-functions/trees.tex` target line(s) 12,18,22,23,24,30; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 16,25,38,39,42,62,64,69,75,79; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 10,12,16,21,23,28,30,39,42,44,50; page: pending stable pagination in a reader containing this unit
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 53; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 10,12,13,14,34,37,53,55,56,59,60; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DOMAIN
 
@@ -838,6 +841,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0216; Examples of Primitive Recursive Functions; `content/computability/recursive-functions/examples.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/examples.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0218; Bounded Minimization; `content/computability/recursive-functions/bounded-minimization.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 23,24,34,37,38,46,47,51,60; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 47,67,71,88,92; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 37,38,43,52,65,68,76,93; page: pending stable pagination in a reader containing this unit
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 32,67,78,79,115,215,221,222,258,274,275,276,281,290; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 31,66,68,75,76,113,115,117,136,143,201,205,213,214,216,217,218,219,220,256,272,273,274,280,281,288,291; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INJECTIVE
 
@@ -996,6 +1001,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 23,38,39,55,56,57,59,60,64,66,69,70,71; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 22,40,57,59,60,62,65,67,70,71; page: pending stable pagination in a reader containing this unit
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 34,35; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 35,37; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) 14,26,31,35,47,50; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 35,52; page: pending stable pagination in a reader containing this unit
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 28,44,64,98,106,124,128; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 27,61,93,95,102,110,131; page: pending stable pagination in a reader containing this unit
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 14,35,45; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 14,34,35,47,50; page: pending stable pagination in a reader containing this unit
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 47; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -2707,6 +2716,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 1,2,15,39,58,70; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
   - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 1,2; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 1,2,43; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0252; turing-machines; `content/turing-machines/turing-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 16,89,102,105; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2837,6 +2849,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 31,70,72,74,87; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 27,63,66,79; page: pending stable pagination in a reader containing this unit
   - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 10,14,17,18,30,37; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 10,14,17,18,33,38,39; page: pending stable pagination in a reader containing this unit
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 12,57,68,71,76,77,78; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 12,71,99,100; page: pending stable pagination in a reader containing this unit
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 16,21,24,26,66,71,84,88,89,97; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 16,93; page: pending stable pagination in a reader containing this unit
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 12,29,43,52,55; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 12,29,35,53,57; page: pending stable pagination in a reader containing this unit
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 14,45; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 14,47; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NORMAL-FORM-INDEX
 
@@ -2859,6 +2874,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 10,14,25; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 10,14; page: pending stable pagination in a reader containing this unit
   - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 47; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
   - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 35,56; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 41; page: pending stable pagination in a reader containing this unit
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 30,34,39,66,98,123; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 29,32,33,37,40,51,58,93,125; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-PROBLEM
 
@@ -2875,6 +2891,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,19,33; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 10,32,84; page: pending stable pagination in a reader containing this unit
   - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 18,32,33; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 12,15; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -2905,6 +2922,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 3,20,31,33,35; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 31,32,34,41; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 38; page: pending stable pagination in a reader containing this unit
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 10,48,50,52,101,103,104,124,125,126,156,157,159,174,181,184,186,201,207,213; page: pending stable pagination in a reader containing this unit
 
 ## TERM-UNIVERSAL-DIAGONAL-COMPUTATION
 
@@ -2922,6 +2940,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,12,19,38; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 12,36,45,58,85,86; page: pending stable pagination in a reader containing this unit
   - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 37; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 40,59,60,62,65,67; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 47; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 12,15; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 132; page: pending stable pagination in a reader containing this unit
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLE-SET-CHARACTERISTIC
 
@@ -2941,6 +2961,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 10,13,40,44,48; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 13,52; page: pending stable pagination in a reader containing this unit
   - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 40; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 41,46; page: pending stable pagination in a reader containing this unit
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 18,39,112; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 18,37,114; page: pending stable pagination in a reader containing this unit
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 31,37,66; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 25,31,36,69; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLY-ENUMERABLE-SETS
 
@@ -2960,6 +2982,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 10,12,13,20,26,29,53,57,58; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 10,12,13,20,26,29,63,67,68; page: pending stable pagination in a reader containing this unit
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 39,54,78; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 42,57,87; page: pending stable pagination in a reader containing this unit
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,16,17,21,22,23,26,41,52,54; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,16,17,21,22,23,27,42,57,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -2977,6 +3000,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 26,30,36,37,39,40,42,44,48; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 27,31,37,38,40,41,43,45,53; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 18,20,24,27,31,36,41,42,44,75,76,80; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) 18,20,24,25,28,29,32,36,39,40,42,43,74,75,79; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 35,36; page: pending stable pagination in a reader containing this unit
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 45; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CE-CLOSURE-COMPLEMENT
 
@@ -3022,6 +3046,65 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,17,21,26,41; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,21,27; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) 10,13,56; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 10,13,59; page: pending stable pagination in a reader containing this unit
+
+## TERM-RICE-INDEX-SETS
+
+- Source term or sense: Rice's theorem / index set / nontrivial semantic property / program behavior
+- Chosen rendering or treatment: د رايس قضيه / شاخصي سټ / غيرابتذالي معنايي خاصيت / د پروګرام چلند
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use شاخصي سټ for a set invariant under equality of the indexed partial functions. Keep syntactic questions about program text distinct from nontrivial extensional questions about program behavior, which Rice's theorem makes undecidable.
+- Alternatives: د رايس تيورم; اندېکس سټ د شاخصي سټ پر ځاے; نۀ مبتذل معنايي خاصيت
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د رايس قضيه / شاخصي سټ / غيرابتذالي معنايي خاصيت / د پروګرام چلند» the clearest conventional rendering of “Rice's theorem / index set / nontrivial semantic property / program behavior” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+- Locations:
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 3,10,18,23,30,34,38,39,43,46,47,53,109,123; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 10,18,23,29,32,36,37,43,44,111,125; page: pending stable pagination in a reader containing this unit
+
+## TERM-FIXED-POINT-SELF-REFERENCE
+
+- Source term or sense: fixed-point theorem / fixed point / self-reference / diagonal function / self-printing program
+- Chosen rendering or treatment: د ثابت ټکي قضيه / ثابت ټکے / ځان-مراجعه / قطري تابع / ځان-چاپوونکی پروګرام
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use ثابت ټکے for an index whose computed partial function agrees with the transformed indexed function, and ځان-مراجعه for the construction's reference to its own program index. Preserve partial equality wherever either side may diverge.
+- Alternatives: د ټاکلي ټکي قضيه; ځان ته مراجعه; ځان چاپوونکی پروګرام
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د ثابت ټکي قضيه / ثابت ټکے / ځان-مراجعه / قطري تابع / ځان-چاپوونکی پروګرام» the clearest conventional rendering of “fixed-point theorem / fixed point / self-reference / diagonal function / self-printing program” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+- Locations:
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 3,10,48,50,54,115,119,121,123,130,132,137,139,142,145,153,156,157,175,181,188,191,192,196,206,212,216,220; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 10,47,48,52,157,184,207; page: pending stable pagination in a reader containing this unit
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 3,10,12,18,19,37,46; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 10,12,18,19,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 3,10,14,31,44,55; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 10,14,31,33,52,56; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-MACHINE-COMPONENTS
+
+- Source term or sense: Turing machine / tape / square / read-write head / alphabet / state / transition function
+- Chosen rendering or treatment: ټيورينګ ماشين / پټه / مربع / لوست-ليک سر / الفبا / حالت / د حالت بدلون تابع
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Describe the abstract mechanism consistently with پټه, مربع and لوست-ليک سر. Use حالت for a machine state and د حالت بدلون تابع for the partial function that maps a current state and read symbol to the new state, written symbol and movement direction.
+- Alternatives: د ټيورينګ آله; فيته د پټې پر ځاے; لوستلو او ليکلو سر; انتقالي تابع
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «ټيورينګ ماشين / پټه / مربع / لوست-ليک سر / الفبا / حالت / د حالت بدلون تابع» the clearest conventional rendering of “Turing machine / tape / square / read-write head / alphabet / state / transition function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+- Locations:
+  - OLP-0252; turing-machines; `content/turing-machines/turing-machines.tex` source line(s) 7; `ps-Arab-PK/content/turing-machines/turing-machines.tex` target line(s) 7; page: pending stable pagination in a reader containing this unit
+  - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) 8,20; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 15,16,19,20,22,25,32,33,34,35,37,38,39,40,42,43,44,45,46,47,49,50,53,58,61,62,64,65,66,69,70,73,74,77,79,83,91,111; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 14,18,19,20,22,23,28,30,31,32,33,35,36,38,39,40,41,42,43,45,48,50,51,52,55,58,61,63,64,65,66,67,70,71,74,76,79,86,104; page: pending stable pagination in a reader containing this unit
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 10,13,15,16,17,19,23,25,26,31,33,34,40,41,43,47,49,50,58,73,74,75,82,83,85,88,89,92,94,96,100,105,108,110,117,120,123,126,129,132; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 10,13,14,15,16,18,31,32,34,40,41,57,71,72,79,80,84,86,88,89,92,96,111,130,133,135,142,143,166,167,168,169,170,171,176,177,197,202,204,221; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-DIAGRAM-CONFIGURATION
+
+- Source term or sense: state diagram / instruction / configuration / machine table / doubler / halt / accept
+- Chosen rendering or treatment: د حالت ډياګرام / لارښوونه / تشکيل / د ماشين جدول / دوه‌چنده کوونکے / درېدل / منل
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use تشکيل for a snapshot containing tape contents, current state and head position, keeping it distinct from ترتيب for ordering. A state diagram and machine table encode the same transition instructions; درېدل means no applicable instruction, while منل names the stipulated halting outcome in these examples.
+- Alternatives: د حالت شکل; جوړښت د تشکيل پر ځاے; د ماشين لښتيال; دوه برابروونکی
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د حالت ډياګرام / لارښوونه / تشکيل / د ماشين جدول / دوه‌چنده کوونکے / درېدل / منل» the clearest conventional rendering of “state diagram / instruction / configuration / machine table / doubler / halt / accept” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+- Locations:
+  - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) 16; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 77,78,81; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 18,74,75,77,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 13,16,17,19,32,40,58,67,70,71,72,74,77,87,90,97,98,103,111,113,116,117,133,136,137,143,144,146,169,170,173,174,175,177,178,179,183,198,202,205; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 13,19,32,40,57,66,68,69,71,74,76,84,90,97,98,104,112,113,116,133,135,136,140,142,144,166,169,170,197,201,203,204,209,222,250,257,262,265,267,282; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -5401,6 +5484,123 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
 - Locations:
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) content/computability/computability-theory/total.tex:33-38; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 39; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-036
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: begins the refutation with an arbitrary partial computable f, exactly the class quantified over by the theorem
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the prose qualifier changes from computable to partial computable; formulas and identifiers remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-036 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) content/computability/computability-theory/application-fixed-point.tex:28-36; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 58; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-037
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: refers to the one function computed by the indexed algorithm in the singular
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only grammatical number in prose is repaired; formulas and identifiers remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-037 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) content/computability/computability-theory/def-functions-self-reference.tex:49-55; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 58; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-038
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the chapter's partial-equality symbol at both steps of each derivation
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Four equality signs in two align environments become partial-equality signs; the two complete normalized environment replacements are registered exactly.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-038 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) content/computability/computability-theory/fixed-point-thm.tex:77-91; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-039
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: places the initial head on the first input square immediately right of the end marker
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the prose description of the initial head position changes; formulas and identifiers remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-039 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) content/turing-machines/machines-computations/introduction.tex:38-43; content/turing-machines/machines-computations/configuration.tex:48-54; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-040
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: calls the displayed and subscripted initial state the zeroth state
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the prose state name changes; the q_0 formulas and diagrams remain byte-equivalent after whitespace normalization.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-040 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) content/turing-machines/machines-computations/representing-tms.tex:82-92; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 87; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-041
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: lists the cell fields as new symbol, new state and direction, and says each table gap is a possible halting point
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only explanatory prose changes; table cells, transition macros, diagrams and formulas remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-041 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) content/turing-machines/machines-computations/representing-tms.tex:168-179; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 175; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-042
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: asks for a machine that takes a finite sequence as input and rearranges it
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the missing prose conjunction is supplied; alphabet, examples and formulas remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-042 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) content/turing-machines/machines-computations/representing-tms.tex:288-294; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 291; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-043
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states the s-m-n specialization with partial equality
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The one inline equality becomes partial equality; its exact normalized replacement is registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-043 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) content/computability/computability-theory/rice-theorem.tex:96-103; content/computability/computability-theory/s-m-n.tex:19-27; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 97; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-044
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: relates the indexed partial computation and g with partial equality
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The one inline equality becomes partial equality; its exact normalized replacement is registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-044 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+- Locations:
+  - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) content/computability/computability-theory/def-functions-self-reference.tex:20-32; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

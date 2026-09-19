@@ -1649,3 +1649,84 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: describes computing h by simulating the indexed function on its own index.
 - Disclosure: `omit-stray-article-in-natural-computation-description-plus-adjacent-note`.
 
+## OLCMP-036
+
+- Unit: `OLP-0250`
+- Frozen source: `content/computability/computability-theory/application-fixed-point.tex` (4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696) at `content/computability/computability-theory/application-fixed-point.tex:28-36`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex:58`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: begins the refutation with an arbitrary partial computable f, exactly the class quantified over by the theorem.
+- Disclosure: `retain-arbitrary-partial-computable-candidate-from-theorem-plus-adjacent-note`.
+
+## OLCMP-037
+
+- Unit: `OLP-0251`
+- Frozen source: `content/computability/computability-theory/def-functions-self-reference.tex` (eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37) at `content/computability/computability-theory/def-functions-self-reference.tex:49-55`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:58`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: refers to the one function computed by the indexed algorithm in the singular.
+- Disclosure: `make-final-object-number-agree-with-single-function-plus-adjacent-note`.
+
+## OLCMP-038
+
+- Unit: `OLP-0249`
+- Frozen source: `content/computability/computability-theory/fixed-point-thm.tex` (53820e9ac9bab541de29bbd3f329cd4b7d42b63c7be76f186ad0a118019e51c6) at `content/computability/computability-theory/fixed-point-thm.tex:77-91`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex:92`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: uses the chapter's partial-equality symbol at both steps of each derivation.
+- Disclosure: `use-partial-equality-through-both-derivation-chains-plus-adjacent-note`.
+
+## OLCMP-039
+
+- Unit: `OLP-0254`
+- Frozen source: `content/turing-machines/machines-computations/introduction.tex` (659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3) at `content/turing-machines/machines-computations/introduction.tex:38-43; content/turing-machines/machines-computations/configuration.tex:48-54`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex:49`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: places the initial head on the first input square immediately right of the end marker.
+- Disclosure: `state-formal-initial-head-position-on-first-input-square-plus-adjacent-note`.
+
+## OLCMP-040
+
+- Unit: `OLP-0255`
+- Frozen source: `content/turing-machines/machines-computations/representing-tms.tex` (099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd) at `content/turing-machines/machines-computations/representing-tms.tex:82-92`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:87`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: calls the displayed and subscripted initial state the zeroth state.
+- Disclosure: `name-the-zero-indexed-initial-state-consistently-plus-adjacent-note`.
+
+## OLCMP-041
+
+- Unit: `OLP-0255`
+- Frozen source: `content/turing-machines/machines-computations/representing-tms.tex` (099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd) at `content/turing-machines/machines-computations/representing-tms.tex:168-179`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:175`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: lists the cell fields as new symbol, new state and direction, and says each table gap is a possible halting point.
+- Disclosure: `describe-write-symbol-new-state-direction-order-and-complete-gap-sentence-plus-adjacent-note`.
+
+## OLCMP-042
+
+- Unit: `OLP-0255`
+- Frozen source: `content/turing-machines/machines-computations/representing-tms.tex` (099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd) at `content/turing-machines/machines-computations/representing-tms.tex:288-294`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:291`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: asks for a machine that takes a finite sequence as input and rearranges it.
+- Disclosure: `insert-required-conjunction-between-coordinated-verbs-plus-adjacent-note`.
+
+## OLCMP-043
+
+- Unit: `OLP-0248`
+- Frozen source: `content/computability/computability-theory/rice-theorem.tex` (6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80) at `content/computability/computability-theory/rice-theorem.tex:96-103; content/computability/computability-theory/s-m-n.tex:19-27`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex:97`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: states the s-m-n specialization with partial equality.
+- Disclosure: `use-partial-equality-for-specified-program-values-plus-adjacent-note`.
+
+## OLCMP-044
+
+- Unit: `OLP-0251`
+- Frozen source: `content/computability/computability-theory/def-functions-self-reference.tex` (eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37) at `content/computability/computability-theory/def-functions-self-reference.tex:20-32`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:33`
+- Audit: `PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES`
+- Treatment: relates the indexed partial computation and g with partial equality.
+- Disclosure: `use-partial-equality-in-fixed-point-instance-plus-adjacent-note`.
+

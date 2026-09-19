@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0240 through OLP-0247 form a complete manually translated and source-reviewed noncomputability, reducibility and completeness batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0248 through OLP-0255 form a complete manually translated and source-reviewed Rice, fixed-point, self-reference and introductory Turing-machine batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -5258,6 +5258,185 @@
         "TERM-LOGIC-ORDER-HIERARCHY"
       ],
       "scope": "The reduction from self-halting to Tot via a specialized constant-zero-or-nowhere-defined program remains complete, and the final non-c.e. arithmetic-hierarchy remark is preserved. OLCMP-035 removes one stray source word."
+    },
+    "OLP-0248": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-RICE-INDEX-SETS",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-HALTING-SETS"
+      ],
+      "scope": "Rice's theorem, the index-set reformulation, the syntax-versus-behavior distinction, proof by reduction from self-halting and all four undecidable-property examples remain complete. OLCMP-043 restores partial equality in the s-m-n specialization."
+    },
+    "OLP-0249": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FIXED-POINT-SELF-REFERENCE",
+        "TERM-SMN-PARAMETERIZATION",
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-HALTING-PROBLEM",
+        "TERM-PARTIAL-TOTAL"
+      ],
+      "scope": "Both equivalent fixed-point statements, their mutual derivation, the diagonal-program construction, the self-printing illustration and the lambda-calculus fixed-point combinators remain complete. OLCMP-038 preserves undefined cases in both derivation chains."
+    },
+    "OLP-0250": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FIXED-POINT-SELF-REFERENCE",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION"
+      ],
+      "scope": "The index-dependent function examples and diagonal proof that no partial computable procedure uniformly returns characteristic-function indices remain complete. OLCMP-036 keeps the proof's arbitrary candidate in the theorem's partial-computable class."
+    },
+    "OLP-0251": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-FIXED-POINT-SELF-REFERENCE",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-FUNCTION",
+        "TERM-PAIR"
+      ],
+      "scope": "The fixed-point construction of recursively specified partial functions, the greatest-common-divisor example and the comparison with ordinary recursive program definitions remain complete. OLCMP-037 repairs grammatical number and OLCMP-044 restores partial equality."
+    },
+    "OLP-0252": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-COMPUTABILITY-FOUNDATIONS"
+      ],
+      "scope": "The Turing-machines part driver preserves its title and imports without added content."
+    },
+    "OLP-0253": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-COMPUTABILITY-FOUNDATIONS"
+      ],
+      "scope": "The machines-and-computations chapter driver preserves its title, introduction and complete ordered import topology."
+    },
+    "OLP-0254": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-FUNCTION-ARGUMENT"
+      ],
+      "scope": "The motivation, idealized tape mechanism, transition semantics, illustrated execution, halting convention and historical context remain complete. OLCMP-039 aligns the initial head position with the chapter's formal configuration."
+    },
+    "OLP-0255": {
+      "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-PAIR",
+        "TERM-PARTIAL-TOTAL"
+      ],
+      "scope": "State diagrams, even-machine traces, nonhalting modification, machine tables, the doubler strategy and all five construction problems remain complete. OLCMP-040 through OLCMP-042 repair the state name, table explanation and missing conjunction without changing encoded transitions."
     }
   },
   "semantic_review": [
@@ -7630,6 +7809,54 @@
       "passage": "undecidability of totality",
       "reverse_paraphrase": "Specializing the partial function that returns zero exactly when x self-halts produces an indexed unary function that is total exactly for x in K, reducing K to Tot.",
       "finding": "The s-m-n reduction and arithmetic-hierarchy remark remain complete; only a stray source article is omitted."
+    },
+    {
+      "unit_id": "OLP-0248",
+      "passage": "Rice's theorem and index sets",
+      "reverse_paraphrase": "A decidable nontrivial extensional property of partial computable functions would distinguish a nowhere-defined function from a chosen member of the property and thereby decide self-halting. Hence only the empty and universal index-invariant classes can have computable index sets.",
+      "finding": "The theorem, its index-set equivalent, syntax/behavior distinction, reduction proof and examples remain complete; the parameterized partial-function identity now uses partial equality."
+    },
+    {
+      "unit_id": "OLP-0249",
+      "passage": "fixed points and self-reference",
+      "reverse_paraphrase": "The fixed-point theorem produces an index e whose computed partial function agrees with g(e,-), equivalently with the function indexed by f(e). Diagonal specialization supplies e; string substitution and lambda combinators illustrate the same self-reference pattern.",
+      "finding": "Both statements, both implications, the formal diagonal proof, program-text illustration and lambda digression remain complete; all potentially undefined derivation values use partial equality."
+    },
+    {
+      "unit_id": "OLP-0250",
+      "passage": "applications of the fixed-point theorem",
+      "reverse_paraphrase": "Fixed points can make programs depend on their own indices. If a partial computable procedure claimed to return a characteristic-function index for every computable c.e. set, a fixed point constructs an empty or singleton domain on which the returned program gives the wrong answer or is undefined.",
+      "finding": "Every construction and case remains complete; the refutation correctly ranges over every partial computable candidate."
+    },
+    {
+      "unit_id": "OLP-0251",
+      "passage": "self-referential function definitions",
+      "reverse_paraphrase": "The fixed-point lemma turns a partial computable two-place scheme g into a one-place partial function referring to its own index. This justifies recursive equations such as the gcd definition, after which induction can establish totality.",
+      "finding": "The abstract construction, gcd example and programming-language comparison remain complete; singular agreement and partial equality are repaired."
+    },
+    {
+      "unit_id": "OLP-0252",
+      "passage": "Turing-machines part driver",
+      "reverse_paraphrase": "The formal part groups the theory of Turing machines under one imported chapter.",
+      "finding": "The driver title and import topology are preserved exactly."
+    },
+    {
+      "unit_id": "OLP-0253",
+      "passage": "machines-and-computations chapter driver",
+      "reverse_paraphrase": "The chapter advances from motivation and visual representations through formal definitions, computation, variants, computability and universal machines.",
+      "finding": "All chapter imports remain in source order with no omission or duplicate."
+    },
+    {
+      "unit_id": "OLP-0254",
+      "passage": "Turing-machine mechanism and history",
+      "reverse_paraphrase": "A Turing machine is an idealized finite-state program operating a read-write head over a right-infinite tape. A partial transition function chooses a new state, written symbol and motion; absence of an instruction halts the run.",
+      "finding": "The entire mechanism, example, halting explanation, computability motivation and history remain complete; the head now starts on the first input square, as the formal configuration requires."
+    },
+    {
+      "unit_id": "OLP-0255",
+      "passage": "diagrams, configurations and machine tables",
+      "reverse_paraphrase": "State diagrams and tables encode transition instructions. Configuration traces show that the even machine halts exactly on even unary input, while the doubler repeatedly erases one input stroke and appends two output strokes.",
+      "finding": "All diagrams, table cells, traces, strategy and five problems remain complete and byte-equivalent in their formal content; three local prose defects are disclosed and repaired."
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-ps-Arab-PK/rice-fixed-points-turing-machines-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T23:38:07.328976+00:00",
+  "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "b489df890e0ece21a4d3e3cab4ec8b07cd9e84c691fd06878550eb44e5d5d728",
+    "ALIGNMENT.jsonl": "f3dc603bd06fcaba1d4d73346f67dbabff9a7f3e545cd055115df03ff0200e07",
+    "SEGMENT_CANON_USE.jsonl": "841f7f0f9d7029c4f1aaf750532f7c4a43688c26e7cbe0bc02ee0f377e4d17ee",
+    "SOURCE_CORRECTIONS.json": "8ac56c517bea4db502bf52a7ddc29171f7906f6b2700e2b6a1398a4c39879cd6",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "e86fa426ad5806e073e921f9feff1a5b5ba5d9ffb00ea0cc3ce567b9d41bb748",
+    "QA.json": "dc2a7bcff4e9a17c043c24a8d8ef44028d4a4b97b1d8b909715d17383dca6bdd"
+  },
+  "counts": {
+    "decisions": 341,
+    "occurrences": 15360,
+    "terminology_decisions": 143,
+    "source_correction_decisions": 193,
+    "priority_decisions": 136,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 10001
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "779d1765c10a588be11ddf1067efffe67ae027d3976e328f8e2d0e573f8ed789",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "b9f881fc2f81724f962eec707c40cf5c3804bcfe95d2f17e0141677b3c22f5ec",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "98dcce5dc253656d59b3c7334cf5c12a863dba136105fa07027f46c8c42f1d81",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "a8fac7bc32414eda1e5b42e5572fd3de29b1fb199fe995265208b344e9930a7d",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "5989a4e6bb19f4d1c539663e045972a442f684b159e57f89330964cdce1da39e",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "3a26dbad0cb87856ae003865130640976d7e5cefbb0f8512364a716bb991ca54",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\rice-fixed-points-turing-machines-decision-replay"
+}

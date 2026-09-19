@@ -27,9 +27,38 @@ def localize_text(s):
   embedded=''.join(re.findall(r'\$[^$]*\$',content))
   out+=s[pos:m.start()]+m.group(0)+'LOCALIZED'+embedded+'}';pos=i
  return out+s[pos:]
+def math_spans(s):
+ spans=[];i=0
+ local_start=re.compile(r'\\(?:text|intertext|emph|textrm|mbox)\s*\{')
+ environment_start=re.compile(r'\\begin\{(align\*?|multline\*?|equation\*?|eqnarray\*?)\}')
+ while i<len(s):
+  if s.startswith(r'\[',i) and (i==0 or s[i-1]!='\\'):
+   end=s.find(r'\]',i+2);assert end>=0,('unclosed display math',s[i:i+120])
+   spans.append(s[i:end+2]);i=end+2;continue
+  environment=environment_start.match(s,i)
+  if environment:
+   closing=r'\end{'+environment.group(1)+'}';end=s.find(closing,environment.end());assert end>=0,('unclosed math environment',s[i:i+120])
+   end+=len(closing);spans.append(s[i:end]);i=end;continue
+  if s[i]=='$' and (i==0 or s[i-1]!='\\'):
+   end=i+1
+   while end<len(s):
+    localized=local_start.match(s,end)
+    if localized:
+     cursor=localized.end();depth=1
+     while cursor<len(s) and depth:
+      if s[cursor]=='{' and s[cursor-1]!='\\':depth+=1
+      elif s[cursor]=='}' and s[cursor-1]!='\\':depth-=1
+      cursor+=1
+     assert depth==0,'unbalanced text argument';end=cursor;continue
+    if s[end]=='$' and s[end-1]!='\\':
+     spans.append(s[i:end+1]);i=end+1;break
+    end+=1
+   else: raise AssertionError('unclosed inline math')
+   continue
+  i+=1
+ return spans
 def math(s):
- spans=re.findall(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}',s)
- return Counter(re.sub(r'\s+','',localize_text(x)) for x in spans)
+ return Counter(re.sub(r'\s+','',localize_text(x)) for x in math_spans(s))
 def ids(s):
  return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|Olref|olimport|olasset|cite\w*|label|cref|ref|url|oliflabeldef|printtoken|Cref)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s)+re.findall(r'\\tagrefs\{(?:[^{}]|\{[^{}]*\})*\}',s))
 STRUCTURAL_MACRO_NAMES=set('documentclass iftag olchapter olpart olsection subsection subsubsection olfileid olimport OLEndChapterHook Article Axiom AxiomC Deduce DeduceC UnaryInf UnaryInfC BinaryInf BinaryInfC TrinaryInf TrinaryInfC QuaternaryInf QuaternaryInfC RightLabel LeftLabel DischargeRule DisplayProof noLine doubleLine bottomAlignProof Intro Elim FalseInt FalseCl LeftR RightR tagprob tagitem tagtrue tagfalse tagrefs item footnote caption olasset includegraphics href url cite citep citet ollabel label olref Olref ref cref Cref'.split())
@@ -47,7 +76,9 @@ for uid,consult in plan['units'].items():
  a=(REPO/'upstream'/p).read_bytes(); b=(REPO/'ps-Arab-PK'/p).read_bytes()
  assert H(a)==row['source_sha256']
  sa=a.decode(); sb=b.decode(); aa=re.split(r'\n\s*\n',sa.strip()); bb=re.split(r'\n\s*\n',sb.strip())
- sm,tm=math(sa),math(sb);source_only=sm-tm;target_only=tm-sm
+ try: sm,tm=math(sa),math(sb)
+ except Exception as error: raise AssertionError((uid,p,error)) from error
+ source_only=sm-tm;target_only=tm-sm
  si,ti=ids(sa),ids(sb);identifier_source_only=si-ti;identifier_target_only=ti-si
  expected_source=Counter();expected_target=Counter()
  expected_macro_source=Counter();expected_macro_target=Counter()
@@ -60,6 +91,7 @@ for uid,consult in plan['units'].items():
  checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=identifier_source_only==expected_identifier_source and identifier_target_only==expected_identifier_target,structural_macros=macro_source_only==expected_macro_source and macro_target_only==expected_macro_target,math=source_only==expected_source and target_only==expected_target,tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa))==Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb)),nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
  checks['named_token_macros']=Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sa))==Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sb))
  residual=re.sub(r'(?m)^%.*$','',sb)
+ residual=re.sub(r'(?s)\\begin\{verbatim\}.*?\\end\{verbatim\}','',residual)
  residual=re.sub(r'\\usetoken\{[^{}]*\}\{[^{}]*\}','',residual)
  diagram=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',s)]
  if diagram(sa) or diagram(sb):
@@ -94,6 +126,7 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\\(?:article|Article)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\(?:texttt|textsc|textsf|textrm)\{[^{}]*\}','',residual)
  residual=re.sub(r'https?://[^}\s]+|openlogicproject\.org','',residual)
+ residual=re.sub(r'\\olasset\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}','',residual)
  residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL|OLMOD|OLCMP)-\d+','',residual)
  residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}','',residual)
  residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|Olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
