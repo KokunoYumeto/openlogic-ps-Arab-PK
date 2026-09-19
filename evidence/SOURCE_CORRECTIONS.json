@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0223; primitive-recursive constructions are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.5.1 public artifacts remain frozen",
-  "adopted_utc": "2026-09-19T21:13:28.974887+00:00",
+  "status": "adopted through OLP-0231; general recursion and computation coding are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.5.1 public artifacts remain frozen",
+  "adopted_utc": "2026-09-19T21:37:08.506333+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -3907,6 +3907,40 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
       "formula_policy": "The coding equations and default constant-zero branch are unchanged; the prose direction and unary scope are made explicit.",
       "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-017",
+      "unit_id": "OLP-0226",
+      "classification": "halting_argument_retains_invalid_indices_after_total_natural_index_enumeration",
+      "source_path": "content/computability/recursive-functions/halting-problem.tex",
+      "source_sha256": "08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e",
+      "source_locator": "content/computability/recursive-functions/halting-problem.tex:30-89",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex",
+      "target_line_1based": 48,
+      "target_sha256": "5436ae56aff3e42608c9f9facbd23262c9445e8497d1479bffb2020880d3c859",
+      "mode": "remove-impossible-invalid-index-branches-and-state-direct-diagonal-contradiction-plus-adjacent-note",
+      "translation_change": "treats every natural e as the index of the partial recursive function defined by the normal-form equation and runs the diagonal contradiction on definedness alone",
+      "counterexample": "The preceding equation defines cfind_e for every natural e; an e with no indexed partial recursive function is therefore impossible. Keeping that disjunct weakens the case analysis and makes the conclusion say the known index e_d is not an index.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING",
+      "formula_policy": "No displayed or inline formula changes. The impossible prose disjuncts are removed and the same two h(e_d,e_d) cases are concluded directly as contradictions.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-018",
+      "unit_id": "OLP-0229",
+      "classification": "model_independent_enumeration_switches_from_partial_computable_to_partial_recursive",
+      "source_path": "content/computability/computability-theory/introduction.tex",
+      "source_sha256": "685a46820c472f602c8cb6fb72595377355a1cbbeb9d07cf2b98f86405086127",
+      "source_locator": "content/computability/computability-theory/introduction.tex:29-39",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/introduction.tex",
+      "target_line_1based": 38,
+      "target_sha256": "a8b04cd56d2d29e2f216e8d8429cfdbaec7f72545065ed7905a667775b739256",
+      "mode": "retain-partial-computable-class-name-plus-adjacent-note",
+      "translation_change": "calls cfind_k[n] the kth n-ary partial computable function, matching the universal function and enumeration introduced in the same paragraph",
+      "counterexample": "The paragraph deliberately avoids fixing a computation model and says three times that it enumerates partial computable functions. Switching only its last noun phrase to partial recursive silently narrows the just-defined model-independent enumeration.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING",
+      "formula_policy": "Only the final prose class name is aligned; the cfind notation, index k and arity n are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -3914,7 +3948,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0223, then continue with OLP-0224 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0231, then continue with OLP-0232 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -3955,7 +3989,8 @@
     "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
     "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
     "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
-    "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS"
+    "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+    "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING"
   ],
   "source_authorities": [
     {

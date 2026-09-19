@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-ps-Arab-PK/general-recursion-computation-coding-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T21:50:23.602464+00:00",
+  "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "820ec3737bd0b9485fbdfdeb134408d2babd9b33d200af410e8b120d5cd509c6",
+    "ALIGNMENT.jsonl": "833f93e155986e852097867c779e1fa0ba9a2ac17c879deb3c65e33276889a3f",
+    "SEGMENT_CANON_USE.jsonl": "08e750c717d04a51cb2f01ba6c3d2aae4f9f93195c4877353e9393ae306760eb",
+    "SOURCE_CORRECTIONS.json": "4ad15d6fec3ba62b0c0a4eac9ec7e25c64a440ce0d228d5965ac6465b2105ac3",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "c471b1f9d6abb44704f592552db707999cacd33c73ce7e1db7a99440a40f2ebf",
+    "QA.json": "86e9048315fa3c79e6fcd413789d261dbac8f5541c73b4b30c4e17c8f5bd3e8a"
+  },
+  "counts": {
+    "decisions": 303,
+    "occurrences": 14350,
+    "terminology_decisions": 131,
+    "source_correction_decisions": 167,
+    "priority_decisions": 124,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 8991
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "6b91ac3d16fc840b8dad057a2d36805f42128c933889b09f37365c79b03d1d98",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "1af9bd3958b4908794d7dfac0e581c3dfde9b5cf909a3beec9190699e4324928",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "c6706916e806819e59cb0c2d3534da1883b0cecd2850ac27f1d1ae172a567511",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "b84b81e1544cad24dd29023183677fe55e4c8ad592a8f6bcb3d47dda7a2575f7",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "49b1902202768104e09d990718b402e7e8e6a1648334e7ea1abad53d7ca317db",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "138725e80d890c93508bdb22dd77f59892a68378d5d731f18e037febeeb80407",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\general-recursion-computation-coding-decision-replay"
+}

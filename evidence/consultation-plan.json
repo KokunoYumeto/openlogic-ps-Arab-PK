@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0216 through OLP-0223 form a complete manually translated and source-reviewed primitive-recursive-constructions batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0224 through OLP-0231 form a complete manually translated and source-reviewed general-recursion and computation-coding batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -4728,6 +4728,178 @@
         "TERM-FUNCTION"
       ],
       "scope": "The countability argument, notation coding, unary enumeration, diagonal escape and Ackermann-Peter construction remain complete. OLCMP-015 and OLCMP-016 restore the official constructors and the coding direction."
+    },
+    "OLP-0224": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-COMPOSITION",
+        "TERM-COMPUTABILITY-FOUNDATIONS"
+      ],
+      "scope": "The section preserves the diagonal motivation, definedness notation, strict composition convention, unbounded minimization and the distinction between partial recursive and total recursive functions."
+    },
+    "OLP-0225": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+      ],
+      "terms": [
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-ENCODING",
+        "TERM-ENUMERATION",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "Kleene normal form, computation coding, output extraction, the single unbounded search and nonunique indices remain complete."
+    },
+    "OLP-0226": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-HALTING-PROBLEM",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-DIAGONALIZATION",
+        "TERM-DECIDABILITY"
+      ],
+      "scope": "The halting function and diagonal proof remain complete. OLCMP-017 removes impossible invalid-index alternatives after the normal-form enumeration has assigned a partial function to every natural index."
+    },
+    "OLP-0227": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-GENERAL-RECURSION-THEORY",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RECURSIVE",
+        "TERM-PARTIAL-TOTAL"
+      ],
+      "scope": "The regularity condition, restricted unbounded search, totality and extensional equivalence of general and total recursive functions are preserved."
+    },
+    "OLP-0228": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-HALTING-PROBLEM",
+        "TERM-GENERAL-RECURSION-THEORY",
+        "TERM-ENCODING"
+      ],
+      "scope": "The chapter driver preserves all twenty-three imports, the editorial expansion notice and the complete computability-theory topology."
+    },
+    "OLP-0229": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-GENERAL-RECURSION-THEORY",
+        "TERM-DECIDABILITY"
+      ],
+      "scope": "The model-independent setup, universal partial function, arity-indexed enumeration, minimization and rigorous-versus-algorithmic proof methods remain complete. OLCMP-018 retains the paragraph's partial-computable class name."
+    },
+    "OLP-0230": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+      ],
+      "terms": [
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-ENCODING",
+        "TERM-ENUMERATION",
+        "TERM-PAIRING-FUNCTION",
+        "TERM-PRIME-SEQUENCE-CODING"
+      ],
+      "scope": "The four coding capabilities, numerical indices, complete computation records, primitive-recursive verification and output extraction remain complete."
+    },
+    "OLP-0231": {
+      "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-ENCODING",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-ENUMERATION"
+      ],
+      "scope": "The model-independent normal-form construction, proof sketch, fixed enumeration and infinitely-many-indices argument preserve every formula and dependency."
     }
   },
   "semantic_review": [
@@ -6956,6 +7128,54 @@
       "passage": "non-primitive-recursive functions",
       "reverse_paraphrase": "An effective enumeration of unary primitive-recursive notations permits diagonal escape, while Ackermann-Peter supplies a computable example beyond the class.",
       "finding": "The enumeration and growth arguments remain complete; official basic-function symbols and the code direction are restored."
+    },
+    {
+      "unit_id": "OLP-0224",
+      "passage": "partial recursive functions",
+      "reverse_paraphrase": "Allowing undefined computations makes an effective enumeration possible; composition and primitive recursion extend to partial equality, while unbounded search supplies new partial functions.",
+      "finding": "Definedness, divergence, minimization and the total-recursive subclass remain explicit with unchanged formulas."
+    },
+    {
+      "unit_id": "OLP-0225",
+      "passage": "recursive-function normal form",
+      "reverse_paraphrase": "An index codes a definition, a run code records a successful computation, and one unbounded search followed by output extraction represents every partial recursive function.",
+      "finding": "The theorem, coding explanation, cfind notation and infinitely-many-indices statement remain complete."
+    },
+    {
+      "unit_id": "OLP-0226",
+      "passage": "halting problem for recursive indices",
+      "reverse_paraphrase": "The total halting predicate cannot be partial recursive because diagonal d is defined exactly where its indexed diagonal computation is undefined.",
+      "finding": "Both diagonal cases now contradict cfind_e_d equivalent to d directly; impossible non-index branches are removed."
+    },
+    {
+      "unit_id": "OLP-0227",
+      "passage": "general recursive functions",
+      "reverse_paraphrase": "Restricting minimization to regular total functions yields only total functions but extensionally the same class as total partial-recursive functions.",
+      "finding": "The regularity quantifiers, closure clauses and historic naming caveat remain complete."
+    },
+    {
+      "unit_id": "OLP-0228",
+      "passage": "computability-theory chapter driver",
+      "reverse_paraphrase": "The chapter spans universal computation, normal forms, reducibility, enumerable sets, Rice's theorem, fixed points and self-reference.",
+      "finding": "All twenty-three imports, the chapter identifier, hook and editorial notice are preserved in frozen order."
+    },
+    {
+      "unit_id": "OLP-0229",
+      "passage": "model-independent introduction",
+      "reverse_paraphrase": "Universal partial computation supports indexed enumeration and minimization, while proofs may proceed by an explicit formal model or a sufficiently precise algorithm plus Church's thesis.",
+      "finding": "The definedness notation, arity and minimization conditions remain exact; the enumeration's class name is made internally consistent."
+    },
+    {
+      "unit_id": "OLP-0230",
+      "passage": "coding computations",
+      "reverse_paraphrase": "Definitions and complete runs can be coded, verified and decoded effectively; the verification and output functions can be primitive recursive.",
+      "finding": "All four operational capabilities and the distinction between an index and a run code remain complete."
+    },
+    {
+      "unit_id": "OLP-0231",
+      "passage": "model-independent normal form",
+      "reverse_paraphrase": "Search for a valid run code and then extract its output; fixed T and U enumerate all partial computable functions and permit multiple program indices.",
+      "finding": "The theorem, proof sketch, explanatory slogan, fixed enumeration and padding intuition remain complete."
     }
   ]
 }

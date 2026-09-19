@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 120 high-priority entries from the complete 297-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 124 high-priority entries from the complete 303-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -656,6 +656,8 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0032; An Alternative Pairing Function; `content/sets-functions-relations/size-of-sets/pairing-alt.tex` source line(s) 104; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex` target line(s) 112; page: pending stable pagination in a reader containing this unit
   - OLP-0034; Reduction; `content/sets-functions-relations/size-of-sets/reduction.tex` source line(s) 89; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex` target line(s) 129; page: pending stable pagination in a reader containing this unit
   - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 41,46,49; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 43,45,46,47; page: pending stable pagination in a reader containing this unit
+  - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 10,33,37,47,48,49,51,53,58,59,61,65,66,80,81,89,92,95,99,100,105,106,111,114,115; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) 10,23,24,27,30,33,35,42,49,53,55,58,60,65,72,83,87,90,91,95,100,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 12,32; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 13,16,28,30,32; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -723,6 +725,9 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 54; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 35,93; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 34,101; page: pending stable pagination in a reader containing this unit
   - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 41,44,46,48; page: pending stable pagination in a reader containing this unit
+  - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 19,35; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 76; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 38,39,43,44,53,59,60; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SET-SIZE
 
@@ -809,6 +814,7 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0031; Pairing Functions and Codes; `content/sets-functions-relations/size-of-sets/pairing.tex` source line(s) 10,48,51,53,59,107; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex` target line(s) 10,46,49,51,57,59; page: pending stable pagination in a reader containing this unit
   - OLP-0032; An Alternative Pairing Function; `content/sets-functions-relations/size-of-sets/pairing-alt.tex` source line(s) 11,91; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex` target line(s) 11,99; page: pending stable pagination in a reader containing this unit
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CEILING
 
@@ -847,6 +853,10 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) 24,54,70,144,153; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) 16,18,35,47,106,111,112; page: pending stable pagination in a reader containing this unit
   - OLP-0221; Trees; `content/computability/recursive-functions/trees.tex` source line(s) 15,21,23,25,27,32,33,34,39,49,64,66,67,74; `ps-Arab-PK/content/computability/recursive-functions/trees.tex` target line(s) 12,14,18,22,24,36,40; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 59,60,63; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 38,39,40,42; page: pending stable pagination in a reader containing this unit
+  - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) 27,28,31,39; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) 26,27,28,30,38; page: pending stable pagination in a reader containing this unit
+  - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 36,37,40; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 10,30,33,34; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 40,44,47,49; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 37,40,43,44,53; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARITY
 
@@ -887,6 +897,7 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0036; Sets of Different Sizes, and Cantor's Theorem; `content/sets-functions-relations/size-of-sets/comparing-size.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) 106,107; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) 38,81,109,110; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 28; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-REDUCTION
 
@@ -1012,6 +1023,7 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) 2,47,51,75,83,99; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) 50,54,76,84,101; page: pending stable pagination in a reader containing this unit
   - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 2,42,45,49,50,51,52,53,55,56,57,59,64,69,72,79,82,85,89,97,99,104,111,113,118,127,130,134,161; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 10,42,45,46,48,49,50,51,52,53,54,55,56,61,65,67,74,81,84,88,95,97,102,108,109,115,124,126,130,157; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 2; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 2,3,10,21,22,29,30,31,32,35,36,38; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 10,22,28,31,35,36; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1737,6 +1749,8 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
 - Locations:
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 30; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 23,39,101; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -2120,6 +2134,10 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0209; cmp; `content/computability/recursive-functions/recursive-functions.tex` source line(s) 1; `ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 1,12,13,14,16,20,21,51; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 13; page: pending stable pagination in a reader containing this unit
   - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 1; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 1,80; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) 1,2,8; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 1,2,12,13,19,29,30; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 1,2,15,39,58,70; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2143,6 +2161,10 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0221; Trees; `content/computability/recursive-functions/trees.tex` source line(s) 14,34,39,48,50; `ps-Arab-PK/content/computability/recursive-functions/trees.tex` target line(s) 18,22,24; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 13,58,65; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) 12,41,46; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 10,12,14,25,31,38,43,45,47,62,65; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 21,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 36,43,45,60,64,78,102; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) 40,41,55,92; page: pending stable pagination in a reader containing this unit
+  - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) 14,29,32,34; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) 14,31; page: pending stable pagination in a reader containing this unit
+  - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 25; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 24; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 29,53,61; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROJECTION-CHARACTERISTIC
 
@@ -2188,6 +2210,7 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) 3,10,14,16,23,25,27,35,36,38,39,40,44,55,59,60,61,70,76,91,92,93,97,101,111,116,120,121,125,127,131,135,136,137,138,142,145,146,147,148; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) 24,27,39,66,70,84,106,112,114,121; page: pending stable pagination in a reader containing this unit
   - OLP-0221; Trees; `content/computability/recursive-functions/trees.tex` source line(s) 13,15,21,33,41,42,44,45,46,49,50,53,55,56,57,61,66; `ps-Arab-PK/content/computability/recursive-functions/trees.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 35,37; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 20,39; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-RECURSION-VARIANTS
 
@@ -2210,6 +2233,63 @@ This view contains 120 high-priority entries from the complete 297-entry decisio
 - Please double-check: In Pakistani Pashto mathematical prose, is «قطرول / د اکرمن--پېټر تابع / نابنسټيزه بازګشتي» the clearest conventional rendering of “diagonalization / Ackermann-Peter function / non-primitive-recursive” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 10,28,41,45,65; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 28; page: pending stable pagination in a reader containing this unit
+
+## TERM-PARTIAL-RECURSIVE-SEARCH
+
+- Source term or sense: partial computable / partial recursive / unbounded search / divergence
+- Choice: جزوي محاسبه کېدونکې / جزوي بازګشتي / بې‌حده پلټنه / نۀ درېدل
+- Why provisional: function and domain concepts are directly supported by regional sources; the exact partial-computability and unbounded-search compounds remain provisional
+- Rationale: A partial function may be undefined because its computation does not halt. Unbounded minimization returns the least zero only when every earlier queried value is defined; it diverges if an earlier computation diverges. Keep partial computable model-independent and partial recursive tied to the recursive-function presentation.
+- Alternatives: نيمګړې محاسبه کېدونکې تابع; نامحدوده پلټنه; نه تعريف کېدل د نۀ درېدو پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «جزوي محاسبه کېدونکې / جزوي بازګشتي / بې‌حده پلټنه / نۀ درېدل» the clearest conventional rendering of “partial computable / partial recursive / unbounded search / divergence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 10,33,49,51,65,72,79,81,82,99,102,105,111; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) 10,24,73,76,77,90,95,100; page: pending stable pagination in a reader containing this unit
+  - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) 16,25,36,37,40,42,43; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) 15,25,35,36,38,40,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) 27,29,35,47,48,52,57,66,69,70,71,73,82,83,87,89; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) 26,33,46,56,60,77,89,90,92; page: pending stable pagination in a reader containing this unit
+  - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 16,17,25,32; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 16,17; page: pending stable pagination in a reader containing this unit
+  - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 24,26,31,32,33,37,38,45,53,62; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 17,30,35,37,40,55,61; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 31,70,72,74,87; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 27,63,66,79; page: pending stable pagination in a reader containing this unit
+
+## TERM-NORMAL-FORM-INDEX
+
+- Source term or sense: normal form theorem / index / computation sequence / universal partial function
+- Choice: د نورمال شکل قضيه / شاخص / د محاسبې لړۍ / نړيواله جزوي تابع
+- Why provisional: function, enumeration, pairing and sequence concepts are supported by regional sources; the exact normal-form and universal-function labels remain provisional
+- Rationale: An index codes a definition or program, while a computation-sequence code records one run on one input. The normal form first searches for a valid run code and then extracts its output. Universal means that varying the index enumerates every partial computable function, not that one total function computes every total computable function.
+- Alternatives: معياري بڼه د نورمال شکل پر ځاے; پروګرام شمېره د شاخص پر ځاے; نړيواله جزوي محاسبه کوونکې تابع
+- Please double-check: In Pakistani Pashto mathematical prose, is «د نورمال شکل قضيه / شاخص / د محاسبې لړۍ / نړيواله جزوي تابع» the clearest conventional rendering of “normal form theorem / index / computation sequence / universal partial function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) 10,12,24,25,31,36,39,43; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) 10,12,25,29,35,37,40,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) 28,29,30,31,48,70,74,81,86,88; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) 27,29,47,50,72,78,84,89,90,91; page: pending stable pagination in a reader containing this unit
+  - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 31; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 29; page: pending stable pagination in a reader containing this unit
+  - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 34,35,38,39; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 31,33; page: pending stable pagination in a reader containing this unit
+  - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 10,24,27,42,43,48,49,57,59,64,66,67,74,94,96; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 10,24,38,39,43,44,59,79,86,87; page: pending stable pagination in a reader containing this unit
+
+## TERM-HALTING-PROBLEM
+
+- Source term or sense: halting problem / halting function / noncomputable
+- Choice: د درېدنې مسئله / د درېدنې تابع / محاسبه کېدونکې نۀ
+- Why provisional: diagonal construction and function concepts are directly supported by regional sources; the exact halting labels remain provisional
+- Rationale: The halting function asks whether the indexed computation on the given input returns a value. Its diagonal contradiction concerns definedness versus divergence. Noncomputable means no effective function solves all instances; it does not mean that individual terminating computations cannot be recognized after they halt.
+- Alternatives: د تم کېدو مسئله; د پای ته رسېدو مسئله; نامحاسبوي تابع
+- Please double-check: In Pakistani Pashto mathematical prose, is «د درېدنې مسئله / د درېدنې تابع / محاسبه کېدونکې نۀ» the clearest conventional rendering of “halting problem / halting function / noncomputable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) 10,12,25,38,52; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) 10,24,36,56; page: pending stable pagination in a reader containing this unit
+  - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-GENERAL-RECURSION-THEORY
+
+- Source term or sense: general recursive function / regular function / recursion theory / Church's thesis
+- Choice: عمومي بازګشتي تابع / منظمه تابع / د بازګښت تيوري / د چرچ اصل
+- Why provisional: recursion and function concepts are supported by regional sources; the historic class, regularity and Church-thesis labels remain provisional
+- Rationale: A regular total function has a zero for every parameter tuple, so unbounded search remains total. General recursive and total recursive denote extensionally the same total functions despite different definitions. Church's thesis links the formal models to the informal notion of effective computation and is not a mathematical theorem within one model.
+- Alternatives: ټوله بازګشتي تابع; قاعده‌منه تابع; د بازګشتي تابعو تيوري; د چرچ تز
+- Please double-check: In Pakistani Pashto mathematical prose, is «عمومي بازګشتي تابع / منظمه تابع / د بازګښت تيوري / د چرچ اصل» the clearest conventional rendering of “general recursive function / regular function / recursion theory / Church's thesis” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 10,13,15,18,22,26,29; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 10,22,28,35; page: pending stable pagination in a reader containing this unit
+  - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 15,57; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

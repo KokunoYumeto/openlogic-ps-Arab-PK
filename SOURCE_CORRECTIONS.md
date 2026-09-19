@@ -1478,3 +1478,21 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: states that every notation receives a natural-number code and that the enumeration selects unary functions.
 - Disclosure: `state-that-notations-receive-numeric-codes-plus-adjacent-note`.
 
+## OLCMP-017
+
+- Unit: `OLP-0226`
+- Frozen source: `content/computability/recursive-functions/halting-problem.tex` (08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e) at `content/computability/recursive-functions/halting-problem.tex:30-89`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex:48`
+- Audit: `PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING`
+- Treatment: treats every natural e as the index of the partial recursive function defined by the normal-form equation and runs the diagonal contradiction on definedness alone.
+- Disclosure: `remove-impossible-invalid-index-branches-and-state-direct-diagonal-contradiction-plus-adjacent-note`.
+
+## OLCMP-018
+
+- Unit: `OLP-0229`
+- Frozen source: `content/computability/computability-theory/introduction.tex` (685a46820c472f602c8cb6fb72595377355a1cbbeb9d07cf2b98f86405086127) at `content/computability/computability-theory/introduction.tex:29-39`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/introduction.tex:38`
+- Audit: `PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING`
+- Treatment: calls cfind_k[n] the kth n-ary partial computable function, matching the universal function and enumeration introduced in the same paragraph.
+- Disclosure: `retain-partial-computable-class-name-plus-adjacent-note`.
+

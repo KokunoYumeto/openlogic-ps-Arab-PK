@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 223 of 722 source units are translated drafts. This log contains 127 terminology entries and 170 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 231 of 722 source units are translated drafts. This log contains 131 terminology entries and 172 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1146,6 +1146,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: قطري کول; د اکرمن--پيټر فنکشن; غير بنسټيزه بازګشتي تابع
 - Review question: In Pakistani Pashto mathematical prose, is «قطرول / د اکرمن--پېټر تابع / نابنسټيزه بازګشتي» the clearest conventional rendering of “diagonalization / Ackermann-Peter function / non-primitive-recursive” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete primitive-recursive-constructions source and language review
+
+## TERM-PARTIAL-RECURSIVE-SEARCH
+
+- Type: terminology
+- Choice: جزوي محاسبه کېدونکې / جزوي بازګشتي / بې‌حده پلټنه / نۀ درېدل
+- Uncertainty: function and domain concepts are directly supported by regional sources; the exact partial-computability and unbounded-search compounds remain provisional
+- Alternatives: نيمګړې محاسبه کېدونکې تابع; نامحدوده پلټنه; نه تعريف کېدل د نۀ درېدو پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «جزوي محاسبه کېدونکې / جزوي بازګشتي / بې‌حده پلټنه / نۀ درېدل» the clearest conventional rendering of “partial computable / partial recursive / unbounded search / divergence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete general-recursion and computation-coding source and language review
+
+## TERM-NORMAL-FORM-INDEX
+
+- Type: terminology
+- Choice: د نورمال شکل قضيه / شاخص / د محاسبې لړۍ / نړيواله جزوي تابع
+- Uncertainty: function, enumeration, pairing and sequence concepts are supported by regional sources; the exact normal-form and universal-function labels remain provisional
+- Alternatives: معياري بڼه د نورمال شکل پر ځاے; پروګرام شمېره د شاخص پر ځاے; نړيواله جزوي محاسبه کوونکې تابع
+- Review question: In Pakistani Pashto mathematical prose, is «د نورمال شکل قضيه / شاخص / د محاسبې لړۍ / نړيواله جزوي تابع» the clearest conventional rendering of “normal form theorem / index / computation sequence / universal partial function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete general-recursion and computation-coding source and language review
+
+## TERM-HALTING-PROBLEM
+
+- Type: terminology
+- Choice: د درېدنې مسئله / د درېدنې تابع / محاسبه کېدونکې نۀ
+- Uncertainty: diagonal construction and function concepts are directly supported by regional sources; the exact halting labels remain provisional
+- Alternatives: د تم کېدو مسئله; د پای ته رسېدو مسئله; نامحاسبوي تابع
+- Review question: In Pakistani Pashto mathematical prose, is «د درېدنې مسئله / د درېدنې تابع / محاسبه کېدونکې نۀ» the clearest conventional rendering of “halting problem / halting function / noncomputable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete general-recursion and computation-coding source and language review
+
+## TERM-GENERAL-RECURSION-THEORY
+
+- Type: terminology
+- Choice: عمومي بازګشتي تابع / منظمه تابع / د بازګښت تيوري / د چرچ اصل
+- Uncertainty: recursion and function concepts are supported by regional sources; the historic class, regularity and Church-thesis labels remain provisional
+- Alternatives: ټوله بازګشتي تابع; قاعده‌منه تابع; د بازګشتي تابعو تيوري; د چرچ تز
+- Review question: In Pakistani Pashto mathematical prose, is «عمومي بازګشتي تابع / منظمه تابع / د بازګښت تيوري / د چرچ اصل» the clearest conventional rendering of “general recursive function / regular function / recursion theory / Church's thesis” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete general-recursion and computation-coding source and language review
 
 ## DEC-OLFUN-001
 
@@ -2622,6 +2658,24 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-016 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-017
+
+- Type: source-correction
+- Choice: treats every natural e as the index of the partial recursive function defined by the normal-form equation and runs the diagonal contradiction on definedness alone
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-017 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes
+
+## DEC-OLCMP-018
+
+- Type: source-correction
+- Choice: calls cfind_k[n] the kth n-ary partial computable function, matching the universal function and enumeration introduced in the same paragraph
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-018 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes
 
 ## DEC-REL-I
 
