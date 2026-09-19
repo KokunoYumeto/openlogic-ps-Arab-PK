@@ -1,0 +1,166 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{exa}
+\olsection{د بنسټيزو بازګشتي تابعو بېلګې}
+
+موږ لا د بنسټيزو بازګشتي تابعو ځينې بېلګې لرو: د جمع او ضرب تابعې~$\Add$ او~$\Mult$۔ د عينيت تابع~$\fn{id}(x) = x$ بنسټيزه بازګشتي ده، ځکه دا يوازې~$\Proj{1}{0}$ ده۔ ثابتې تابعې $\fn{const}_n(x) = n$ هم بنسټيزې بازګشتي دي، ځکه هغوئ له~$\Zero$ او~$\Succ$ څخه په پرله‌پسې ترکيب تعريفېدے شي۔ دا هغه وخت ګټور دي چې په بنسټيزو بازګشتي تعريفونو کښې ثابتونه کارول غواړو۔ مثلاً، که تابع~$f(x) = 2 \cdot x$ تعريفول غواړو، نو له~$\fn{const}_n(x)$ او ضرب څخه ئې په ترکيب داسې ترلاسه کولے شو:
+$f(x) = \Mult(\fn{const}_2(x), \Proj{1}{0}(x))$۔ له دې وروسته به دا چل کاروو۔
+
+\begin{prop}
+  د توان تابع~$\fn{exp}(x, y) = x^y$ بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  $\fn{exp}$ په بنسټيز بازګښت داسې تعريفولے شو:
+  \begin{align*}
+    \fn{exp}(x, 0) & = 1\\
+    \fn{exp}(x, y+1) & = \Mult(x, \fn{exp}(x,y)).
+    \intertext{په کره توګه دا لا له بنسټيزو بازګشتي تابعو څخه يو بازګشتي تعريف نۀ دے۔ خو رسمي بڼه ئې داسې ده:}
+    \fn{exp}(x, 0) & = f(x)\\
+    \fn{exp}(x, y+1) & = g(x, y, \fn{exp}(x,y)).
+    \intertext{چې پکښې}
+    f(x) & = \Succ(\Zero(x)) = 1\\
+    g(x, y, z) & = \Mult(\Proj{3}{0}(x, y, z), \Proj{3}{2}(x, y, z)) = x \cdot z
+  \end{align*}
+  او په دې ډول~$f$ او~$g$ له بنسټيزو بازګشتي تابعو څخه په ترکيب تعريف شوې دي۔
+\end{proof}
+
+\begin{prop}
+  مخکينۍ تابع~$\fn{pred}(y)$ چې داسې تعريف شوې ده،
+  \[
+  \fn{pred}(y) = \begin{cases}
+    0 & \text{که $y=0$ وي}\\
+    y-1 & \text{که نۀ}
+  \end{cases}
+  \]
+  بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+ پام وکړئ چې
+ \begin{align*}
+   \fn{pred}(0) & = 0 \text{ او}\\
+   \fn{pred}(y+1) & = y.
+ \end{align*}
+ دا نژدې يو بنسټيز بازګشتي تعريف دے۔ په کره توګه د بنسټيز بازګښت د تعريف له نمونې سره ځکه نۀ سمېږي چې هغه نمونه لږ تر لږه يو زيات آرګومېنټ~$x$ غواړي۔ دا په دې لحاظ هم نابلده ده چې د $\fn{pred}(y+1)$ په تعريف کښې په رښتيا~$\fn{pred}(y)$ نۀ کاروي۔ خو لومړے~$\fn{pred}'(x, y)$ داسې تعريفولے شو:
+ \begin{align*}
+   \fn{pred}'(x, 0) & = \Zero(x) = 0,\\
+   \fn{pred}'(x, y+1) & = \Proj{3}{1}(x, y, \fn{pred'}(x, y)) = y.
+ \end{align*}
+او بيا~$\fn{pred}$ ترې په ترکيب تعريفولے شو، مثلاً داسې:
+$\fn{pred}(x) = \fn{pred}'(\Zero(x), \Proj{1}{0}(x))$۔
+\end{proof}
+
+\begin{prop}
+  د فاکتوريل تابع~$\fn{fac}(x) = \fact{x} = 1 \cdot 2 \cdot 3 \cdot \dots \cdot x$ بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  څرګند بنسټيز بازګشتي تعريف دا دے:
+  \begin{align*}
+    \fn{fac}(0) &= 1\\
+    \fn{fac}(y+1) & = \fn{fac}(y) \cdot (y+1).
+    \intertext{په رسمي ډول لومړے دوه ځاييزه تابع~$h$ داسې تعريفوو:}
+    h(x, 0) & = \fn{const}_1(x)\\
+    h(x, y+1) & = g(x, y, h(x, y))
+    \intertext{چې پکښې $g(x, y, z) = \Mult(\Proj{3}{2}(x, y, z), \Succ(\Proj{3}{1}(x, y, z)))$ ده؛ بيا ږدو چې}
+    \fn{fac}(y) & = h(\Proj{1}{0}(y), \Proj{1}{0}(y)) = h(y,y).
+  \end{align*}
+  له دې وروسته به لږ کم رسمي واوسو او هر ځل به د ترکيب او بنسټيز بازګښت بشپړ رسمي تعريفونه نۀ ورکوو۔
+\end{proof}
+
+\begin{prop}
+  پرې شوې تفريق~$x \tsub y$، چې داسې تعريف شوې ده،
+  \[
+  x \tsub y = \begin{cases}
+    0 & \text{که $x < y$ وي}\\
+    x-y & \text{که نۀ}
+  \end{cases}
+  \]
+  بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  لرو چې:
+  \begin{align*}
+    x \tsub 0 & = x\\
+    x \tsub (y+1) & = \fn{pred}(x \tsub y)
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+ د~$x$ او~$y$ تر منځ واټن~$\left|x-y\right|$ بنسټيز بازګشتي دے۔
+\end{prop}
+
+\begin{proof}
+  لرو چې~$\left| x-y \right| = (x \tsub y) + (y \tsub x)$؛ نو واټن له~$+$ او~$\tsub$ څخه په ترکيب تعريفېدے شي، او دواړه بنسټيزې بازګشتي دي۔
+\end{proof}
+
+\begin{prop}
+  د~$x$ او~$y$ تر ټولو لوے ارزښت~$\fn{max}(x,y)$ بنسټيز بازګشتي دے۔
+\end{prop}
+
+\begin{proof}
+  $\fn{max}(x,y)$ له~$+$ او~$\tsub$ څخه په ترکيب داسې تعريفولے شو:
+  \[
+  \fn{max}(x,y) \defis x + (y \tsub x).
+  \]
+  که~$x$ تر ټولو لوے وي، يعنې~$x \ge y$، نو~$y \tsub x = 0$؛ ځکه $x + (y \tsub x) = x + 0 = x$۔ که~$y$ تر ټولو لوے وي، نو $y \tsub x = y - x$، او ځکه~$x + (y \tsub x) = x + (y - x) = y$۔
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:min-pr}
+  د~$x$ او~$y$ تر ټولو وړوکے ارزښت~$\fn{min}(x,y)$ بنسټيز بازګشتي دے۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[cmp][rec][exa]{prop:min-pr} ثابت کړئ۔
+\end{prob}
+
+\begin{prob}
+وښيئ چې
+\[
+f(x, y) =
+2^{(2^{\iddots^{2^{x}}})}\raisebox{1ex}{\bigg\rbrace}
+\raisebox{1ex}{\text {$y$ ځله $2$}}
+\]
+بنسټيزه بازګشتي ده۔
+\end{prob}
+
+\begin{prob}
+وښيئ چې صحيح وېش~$d(x, y) = \lfloor x/y \rfloor$ (يعنې هغه وېش چې د اعشاري ټکي وروسته هر څه پکښې غورځوئ) بنسټيز بازګشتي دے۔ کله چې~$y = 0$ وي، شرط ږدو چې~$d(x, y) = 0$ وي۔ د بنسټيز بازګښت او ترکيب په کارولو د~$d$ يو څرګند تعريف ورکړئ۔
+\end{prob}
+
+\begin{prop}
+د بنسټيزو بازګشتي تابعو سټ د لاندې دوو عملونو له مخې بند دے:
+\begin{enumerate}
+\item متناهي جمعې: که~$f(\vec x, z)$ بنسټيزه بازګشتي وي، نو لاندې تابع هم داسې ده:
+\[
+g(\vec x, y) \defis \sum_{z = 0}^y f(\vec x, z).
+\]
+\item متناهي حاصل‌ضربونه: که~$f(\vec x, z)$ بنسټيزه بازګشتي وي، نو لاندې تابع هم داسې ده:
+\[
+h(\vec x, y) \defis \prod_{z = 0}^y f(\vec x, z).
+\]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+د بېلګې په توګه، متناهي جمعې په لاندې معادلو بازګشتي تعريفېږي:
+\begin{align*}
+  g(\vec x, 0) & = f(\vec x, 0)\\
+  g(\vec x, y+1) & = g(\vec x, y) + f(\vec x, y+1).
+\end{align*}
+\end{proof}
+
+\end{document}

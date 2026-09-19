@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0208 through OLP-0215 form a complete manually translated and source-reviewed computability-foundations batch; OLINF-002 is retracted",
+  "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0216 through OLP-0223 form a complete manually translated and source-reviewed primitive-recursive-constructions batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -4579,6 +4579,155 @@
         "TERM-FUNCTION"
       ],
       "scope": "The computability argument preserves the successive evaluation trace and closure of computable functions under composition and primitive recursion."
+    },
+    "OLP-0216": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-MOE-P35-POWER-EXPONENT"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-FUNCTION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-COMPOSITION",
+        "TERM-PROJECTION-CHARACTERISTIC"
+      ],
+      "scope": "The examples preserve every primitive-recursive construction for predecessor, truncated subtraction, sign and zero tests, conditionals, absolute difference, powers and factorial."
+    },
+    "OLP-0217": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-RELATION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-BOUNDED-MINIMIZATION"
+      ],
+      "scope": "The relation section preserves characteristic functions, equality and weak order, Boolean closure and bounded quantification. OLCMP-006 aligns the relation's prose name with x less than or equal to y."
+    },
+    "OLP-0218": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-BOUNDED-MINIMIZATION",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RELATION",
+        "TERM-FUNCTION-ARGUMENT"
+      ],
+      "scope": "The bounded-minimization definition, three successor-bound cases, primitive-recursive construction and existential-equivalence observation remain complete. OLCMP-007 restores the fixed parameter vector."
+    },
+    "OLP-0219": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-MOE-P35-POWER-EXPONENT"
+      ],
+      "terms": [
+        "TERM-PRIME-SEQUENCE-CODING",
+        "TERM-BOUNDED-MINIMIZATION",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RELATION",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The divisibility relation, primality test, prime enumeration, next-prime bound and Euclid argument remain complete. OLCMP-008 through OLCMP-010 repair the division direction, function-name scoping and missing small cases."
+    },
+    "OLP-0220": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-MOE-P35-POWER-EXPONENT",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+      ],
+      "terms": [
+        "TERM-PRIME-SEQUENCE-CODING",
+        "TERM-ENCODING",
+        "TERM-PAIRING-FUNCTION",
+        "TERM-CAUCHY-SEQUENCE",
+        "TERM-BOUNDED-MINIMIZATION"
+      ],
+      "scope": "The prime-power sequence code, length and element decoders, append, subsequence, concatenation, uniform bound and sequence-flattening problem are preserved. OLCMP-011 and OLCMP-012 totalize the empty bound and repair the concatenation specification."
+    },
+    "OLP-0221": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-TREE",
+        "TERM-PRIME-SEQUENCE-CODING",
+        "TERM-ENCODING",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The finite-tree coding, immediate-subtree decoder, cumulative subtree enumeration, membership and height functions remain complete. OLCMP-013 and OLCMP-014 align the prose contract and remove the one-past-end access."
+    },
+    "OLP-0222": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-RECURSION-VARIANTS",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-PRIME-SEQUENCE-CODING"
+      ],
+      "scope": "The simultaneous, course-of-values and parameter-changing recursion schemas and their reductions to ordinary primitive recursion preserve every arity, projection and decoded-sequence dependency."
+    },
+    "OLP-0223": {
+      "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-MOE-P35-POWER-EXPONENT",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-DIAGONAL-ACKERMANN",
+        "TERM-DIAGONALIZATION",
+        "TERM-ENCODING",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The countability argument, notation coding, unary enumeration, diagonal escape and Ackermann-Peter construction remain complete. OLCMP-015 and OLCMP-016 restore the official constructors and the coding direction."
     }
   },
   "semantic_review": [
@@ -6759,6 +6908,54 @@
       "passage": "computability of primitive recursive functions",
       "reverse_paraphrase": "Successive evaluation computes every primitive-recursion value when its component functions are computable, while composition also preserves computability.",
       "finding": "The complete h(x,y) evaluation trace and closure conclusion remain exact."
+    },
+    {
+      "unit_id": "OLP-0216",
+      "passage": "primitive-recursive examples",
+      "reverse_paraphrase": "Predecessor and truncated subtraction support sign, zero, order, conditional, distance, powers and factorial through composition and primitive recursion.",
+      "finding": "All definitions, worked recurrences, absolute-difference construction and problems remain present with unchanged formulas."
+    },
+    {
+      "unit_id": "OLP-0217",
+      "passage": "primitive-recursive relations",
+      "reverse_paraphrase": "Characteristic functions turn relations into numeric functions; Boolean operations and bounded quantifiers preserve primitive recursiveness.",
+      "finding": "The equality, weak-order, negation, conjunction, disjunction, implication and quantifier constructions remain exact; the weak-order name is corrected."
+    },
+    {
+      "unit_id": "OLP-0218",
+      "passage": "bounded minimization",
+      "reverse_paraphrase": "A bounded least-witness function returns the first witness below the bound and otherwise the bound itself, permitting a primitive-recursive definition.",
+      "finding": "All three successor cases and the final equivalence remain complete; the stray parameter-vector letter is corrected."
+    },
+    {
+      "unit_id": "OLP-0219",
+      "passage": "primes",
+      "reverse_paraphrase": "Bounded quantification defines divisibility and primality, while Euclid's finite product supplies a factorial-sized bound for the next prime.",
+      "finding": "The formulas and enumeration remain complete; the failure direction, two macro scopes and two small input cases are repaired."
+    },
+    {
+      "unit_id": "OLP-0220",
+      "passage": "finite-sequence coding",
+      "reverse_paraphrase": "Prime exponents encode finite sequences, whose length and entries can be decoded and transformed by primitive-recursive operations.",
+      "finding": "Append, subsequence, concatenation, coding bounds and the flattening problem remain complete; the empty bound and independent concatenation constraints are corrected."
+    },
+    {
+      "unit_id": "OLP-0221",
+      "passage": "finite-tree coding",
+      "reverse_paraphrase": "A tree is coded as a sequence of subtree codes, enabling primitive-recursive enumeration of all subtrees, membership and height.",
+      "finding": "The complete construction remains present; cumulative levels are described accurately and the helper now consumes exactly the legal sequence indices."
+    },
+    {
+      "unit_id": "OLP-0222",
+      "passage": "other recursion schemas",
+      "reverse_paraphrase": "Simultaneous, course-of-values and parameter-changing recursion add convenient schemas without enlarging the primitive-recursive class.",
+      "finding": "Each reduction to ordinary primitive recursion retains its constructors, decoders, arities and defining equations."
+    },
+    {
+      "unit_id": "OLP-0223",
+      "passage": "non-primitive-recursive functions",
+      "reverse_paraphrase": "An effective enumeration of unary primitive-recursive notations permits diagonal escape, while Ackermann-Peter supplies a computable example beyond the class.",
+      "finding": "The enumeration and growth arguments remain complete; official basic-function symbols and the code direction are restored."
     }
   ]
 }

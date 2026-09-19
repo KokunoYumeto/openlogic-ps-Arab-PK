@@ -1,0 +1,125 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{prr}
+\olsection{بنسټيزې بازګشتي اړيکې}
+
+\begin{defn}
+اړيکه~$R(\vec x)$ هله بنسټيزه بازګشتي بلل کېږي چې ځانګړونکې تابع ئې
+\[
+\Char{R}(\vec x) = \left\{
+  \begin{array}{ll}
+  1 & \mbox{که $R(\vec x)$ وي} \\
+  0 & \mbox{که نۀ}
+  \end{array}
+\right.
+\]
+بنسټيزه بازګشتي وي۔
+\end{defn}
+
+په بله وينا، کله چې د بنسټيزې بازګشتي اړيکې~$R(\vec x)$ خبره کوو، مطلب مو د~$\Char{R}(\vec x) = 1$ په بڼه اړيکه وي، چې~$\Char{R}$ يوه بنسټيزه بازګشتي تابع ده او پر هر ننوت 1 يا 0 راګرځوي۔ د بېلګې په توګه، اړيکه~$\fn{IsZero}(x)$ هله او يوازې هله صدق کوي چې $x = 0$ وي، او له هغې سره سمون لرونکې تابع~$\Char{\fn{IsZero}}$ په بنسټيز بازګښت داسې تعريفېږي:
+\begin{align*}
+\Char{\fn{IsZero}}(0) & = 1,\\
+\Char{\fn{IsZero}}(x+1) & = 0.
+\end{align*}
+
+بايد څرګنده وي چې اړيکې له نورو بنسټيزو بازګشتي تابعو سره ترکيبولے شو۔ نو لاندې اړيکې هم بنسټيزې بازګشتي دي:
+\begin{enumerate}
+\item د برابرۍ اړيکه~$x = y$، چې په~$\fn{IsZero}(\left|x-y\right|)$ تعريفېږي؛
+\item د کوچني-يا-برابر اړيکه~$x \leq y$، چې په~$\fn{IsZero}(x \tsub y)$ تعريفېږي۔
+\end{enumerate}
+\textbf{د ژباړې د نسخې سمون (OLCMP-006):} سرچينې دويمه اړيکه «کوچني» بللې وه، خو ورپسې نښه او ځانګړونکې تابع د کوچني-يا-برابر رسمي شرط ټاکي۔ دلته نوم له رسمي شرط سره برابر شوے دے۔
+
+\begin{prop}
+  د بنسټيزو بازګشتي اړيکو سټ د بولي عملونو له مخې بند دے؛ يعنې که $P(\vec x)$ او~$Q(\vec x)$ بنسټيزې بازګشتي وي، نو لاندې اړيکې هم داسې دي:
+  \begin{enumerate}
+  \item $\lnot P(\vec x)$
+  \item $P(\vec x) \land Q(\vec x)$
+  \item $P(\vec x) \lor Q(\vec x)$
+  \item $P(\vec x) \lif Q(\vec x)$
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  فرض کړئ~$P(\vec x)$ او~$Q(\vec x)$ بنسټيزې بازګشتي دي، يعنې ځانګړونکې تابعې~$\Char{P}$ او~$\Char{Q}$ ئې بنسټيزې بازګشتي دي۔ بايد وښيو چې د~$\lnot P(\vec x)$ او نورو ځانګړونکې تابعې هم بنسټيزې بازګشتي دي۔
+  \[
+  \Char{\lnot P}(\vec x) = \begin{cases}
+    0 & \text{که $\Char{P}(\vec x) = 1$ وي}\\
+    1 & \text{که نۀ}
+  \end{cases}
+  \]
+  $\Char{\lnot P}(\vec x)$ د~$1 \tsub \Char{P}(\vec x)$ په توګه تعريفولے شو۔
+  \[
+  \Char{P \land Q}(\vec x) = \begin{cases}
+    1 & \text{که $\Char{P}(\vec x) = \Char{Q}(\vec x) = 1$ وي}\\
+    0 & \text{که نۀ}
+  \end{cases}
+  \]
+  $\Char{P \land Q}(\vec x)$ د~$\Char{P}(\vec x) \cdot \Char{Q}(\vec x)$، يا د~$\fn{min}(\Char{P}(\vec x), \Char{Q}(\vec x))$ په توګه تعريفولے شو۔ په همدې ډول،
+  \begin{align*}
+    \Char{P \lor Q}(\vec x) & = \fn{max}(\Char{P}(\vec x), \Char{Q}(\vec x)) \text{ او}\\
+    \Char{P \lif Q}(\vec x) & = \fn{max}(1 \tsub \Char{P}(\vec x), \Char{Q}(\vec x)).
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+  د بنسټيزو بازګشتي اړيکو سټ د محدودې کميت ټاکنې له مخې بند دے؛ يعنې که~$R(\vec x, z)$ بنسټيزه بازګشتي اړيکه وي، نو لاندې اړيکې هم داسې دي:
+  \begin{align*}
+    & \bforall{z < y}{R(\vec x, z)} \text{ او}\\
+    & \bexists{z < y}{R(\vec x, z)}.
+  \end{align*}
+  $\bforall{z < y}{R(\vec x, z)}$ د~$\vec x$ او~$y$ په باب هله او يوازې هله صدق کوي چې~$R(\vec x, z)$ له~$y$ څخه د هر کوچني~$z$ دپاره صدق وکړي؛ د~$\bexists{z < y}{R(\vec x, z)}$ دپاره هم ورته تشريح ده۔
+\end{prop}
+
+\begin{proof}
+  د دود له مخې~$\bforall{z < 0}{R(\vec x, z)}$ رښتونے نيسو (په ساده دليل چې له~$0$ څخه کوچنے~$z$ نشته)، او $\bexists{z < 0}{R(\vec x, z)}$ دروغ نيسو۔ محدود کلي کميت ټاکونکی کټ مټ د متناهي حاصل‌ضرب يا تکراري کمينې په شان کار کوي؛ يعنې که $P(\vec x, y) \defiff \bforall{z < y}{R(\vec x, z)}$ وي، نو $\Char{P}(\vec x, y)$ داسې تعريفېدے شي:
+  \begin{align*}
+    \Char{P}(\vec x, 0) & = 1\\
+    \Char{P}(\vec x, y+1) & = \fn{min}(\Char{P}(\vec x, y), \Char{R}(\vec x, y)).
+  \end{align*}
+  محدوده وجودي کميت ټاکنه هم په ورته ډول د~$\fn{max}$ په کارولو تعريفېدے شي۔ يا ئې له محدودې کلي کميت ټاکنې څخه د دې برابرۍ په کارولو تعريفولے شو:
+  $\bexists{z < y}{R(\vec x, z)} \liff \lnot \bforall{z < y}{\lnot R(\vec x, z)}$۔ پام وکړئ چې مثلاً د~$\bexists{x \leq y}{\dots x\dots}$ په بڼه محدود کميت ټاکونکی له~$\bexists{x < y+1}{\dots x \dots}$ سره برابر دے۔
+\end{proof}
+
+\begin{prob}
+  وښيئ چې درې ځاييزه اړيکه~$x \equiv y \mod n$ (مودولو~$n$ تطابق) بنسټيزه بازګشتي ده۔
+\end{prob}
+
+يوه بله ګټوره بنسټيزه بازګشتي تابع شرطي تابع~$\fn{cond}(x,y,z)$ ده، چې داسې تعريفېږي:
+\begin{align*}
+  \fn{cond}(x,y,z) & = \begin{cases}
+  y & \text{که $x = 0$ وي} \\
+  z & \text{که نۀ}.
+\end{cases}
+\intertext{دا په بازګشتي ډول داسې تعريفېږي:}
+\fn{cond}(0,y,z) & = y,\\
+\fn{cond}(x+1,y,z) & = z.
+\end{align*}
+له دې څخه د بنسټيزو بازګشتي اړيکو پر بنسټ په حالتونو د بنسټيزو بازګشتي تابعو تعريفونه توجيه کولے شو:
+
+\begin{prop}
+که~$g_0(\vec x)$، \dots،~$g_m(\vec x)$ بنسټيزې بازګشتي تابعې وي، او~$R_0(\vec x)$، \dots،~$R_{m-1}(\vec x)$ بنسټيزې بازګشتي اړيکې وي، نو لاندې تعريف شوې تابع~$f$ هم بنسټيزه بازګشتي ده:
+\[
+f(\vec x) = \begin{cases}
+    g_0(\vec x) & \text{که $R_0(\vec{x})$ وي} \\
+    g_1(\vec x) & \text{که $R_1(\vec{x})$ وي او $R_0(\vec{x})$ نۀ وي} \\
+    \vdots & \\
+    g_{m-1}(\vec x) & \text{که $R_{m-1}(\vec{x})$ وي او مخکيني هېڅ يو نۀ وي} \\
+    g_m(\vec x) & \mbox{که نۀ}
+\end{cases}
+\]
+\end{prop}
+
+\begin{proof}
+  کله چې~$m = 1$ وي، دا يوازې لاندې تابع ده:
+  \[
+  f(\vec x) = \fn{cond}(\Char{\lnot R_0}(\vec x),g_0(\vec x),g_1(\vec x)).
+  \]
+  کله چې~$m$ له~$1$ څخه لوے وي، يوازې د همدې بڼې تعريفونه سره ترکيبولے شو۔
+\end{proof}
+\end{document}

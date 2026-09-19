@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0215; computability foundations are structurally drafted and source-reviewed; OLINF-002 is retracted; v0.5.1 public artifacts remain frozen",
-  "adopted_utc": "2026-09-19T20:09:40.350550+00:00",
+  "status": "adopted through OLP-0223; primitive-recursive constructions are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.5.1 public artifacts remain frozen",
+  "adopted_utc": "2026-09-19T21:13:28.974887+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -3668,6 +3668,245 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
       "formula_policy": "The same initial functions, one-step operations and final union are retained; successor stages are made explicitly cumulative.",
       "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-006",
+      "unit_id": "OLP-0217",
+      "classification": "relation_name_conflicts_with_weak_inequality",
+      "source_path": "content/computability/recursive-functions/pr-relations.tex",
+      "source_sha256": "9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97",
+      "source_locator": "content/computability/recursive-functions/pr-relations.tex:41-44",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex",
+      "target_line_1based": 36,
+      "target_sha256": "9e0fbbf5a5be20d8f91279823962668ad227929f0656db7193d6973fa1b75068",
+      "mode": "name-less-than-or-equal-plus-adjacent-note",
+      "translation_change": "names x less than or equal to y as the less-than-or-equal relation",
+      "counterexample": "The displayed relation uses x <= y and its characteristic definition includes equality. Calling it strict less-than contradicts both the symbol and the defining function.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "Only the prose name is aligned with the unchanged displayed relation and characteristic function.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-007",
+      "unit_id": "OLP-0218",
+      "classification": "bounded_minimization_parameter_vector_changes_in_third_case",
+      "source_path": "content/computability/recursive-functions/bounded-minimization.tex",
+      "source_sha256": "682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6",
+      "source_locator": "content/computability/recursive-functions/bounded-minimization.tex:41-48",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex",
+      "target_line_1based": 33,
+      "target_sha256": "209a6a82fd37d1efed4e1f50d9f5e9548fb745dae459e261c378c7dbdb8f9036",
+      "mode": "restore-fixed-parameter-vector-plus-adjacent-note",
+      "translation_change": "keeps the original parameter vector x fixed in the third successor-bound case",
+      "counterexample": "The construction defines m_R(x,y) throughout. Replacing x by an unrelated z in only the third case leaves that case disconnected from the function under definition.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "Only the accidental vector letter in the third case changes; the bound and return value are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$m_R(\\vec{z},y+1)=y+1$"
+        ],
+        "target_only": [
+          "$m_R(\\vec{x},y+1)=y+1$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-008",
+      "unit_id": "OLP-0219",
+      "classification": "failed_divisibility_explanation_reverses_dividend_and_divisor",
+      "source_path": "content/computability/recursive-functions/primes.tex",
+      "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+      "source_locator": "content/computability/recursive-functions/primes.tex:14-25",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/primes.tex",
+      "target_line_1based": 17,
+      "target_sha256": "9e0d6b696ae805659e541d1c79c65a2d29e85fe4e4b18352f08540056bb760af",
+      "mode": "state-correct-division-direction-and-use-existential-definition-plus-adjacent-note",
+      "translation_change": "explains failure of x dividing y in the y-by-x direction and lets the existential equation cover the zero-divisor edge case",
+      "counterexample": "The source first defines x|y by dividing y by x, then reverses the operands in its failure sentence. Remainder language is also undefined when x is zero, whereas the following existential equation is meaningful for every natural x and y.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The formal existential definition and every later use of divisibility are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-009",
+      "unit_id": "OLP-0219",
+      "classification": "function_name_macro_absorbs_argument_in_two_occurrences",
+      "source_path": "content/computability/recursive-functions/primes.tex",
+      "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+      "source_locator": "content/computability/recursive-functions/primes.tex:46-61",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/primes.tex",
+      "target_line_1based": 39,
+      "target_sha256": "9e0d6b696ae805659e541d1c79c65a2d29e85fe4e4b18352f08540056bb760af",
+      "mode": "separate-function-name-from-argument-plus-adjacent-note",
+      "translation_change": "writes nextPrime as a function name followed by its argument in both inconsistent occurrences",
+      "counterexample": "The recursive equation and later prose already use fn{nextPrime}(x). Putting (x) inside fn changes only two instances and breaks the chapter's notation convention.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "Only macro scoping changes; the function, argument and defining bounded minimization are identical.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\fn{nextPrime(x)}$",
+          "\\[\\fn{nextPrime(x)}=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+        ],
+        "target_only": [
+          "$\\fn{nextPrime}(x)$",
+          "\\[\\fn{nextPrime}(x)=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-010",
+      "unit_id": "OLP-0219",
+      "classification": "euclid_proof_assumes_a_largest_prime_below_small_inputs",
+      "source_path": "content/computability/recursive-functions/primes.tex",
+      "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+      "source_locator": "content/computability/recursive-functions/primes.tex:64-75",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/primes.tex",
+      "target_line_1based": 42,
+      "target_sha256": "9e0d6b696ae805659e541d1c79c65a2d29e85fe4e4b18352f08540056bb760af",
+      "mode": "handle-zero-and-one-before-largest-prime-argument-plus-adjacent-note",
+      "translation_change": "checks x=0 and x=1 directly before choosing the largest prime at most x",
+      "counterexample": "For x below 2 there is no largest prime at most x, so the proof's first choice is undefined even though the theorem remains true. The product argument is valid once x is at least 2.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The theorem, factorial bound and product argument are retained; only the missing small cases are supplied.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-011",
+      "unit_id": "OLP-0220",
+      "classification": "sequence_bound_uses_negative_prime_index_for_empty_sequence_and_search_excludes_bound",
+      "source_path": "content/computability/recursive-functions/sequences.tex",
+      "source_sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+      "source_locator": "content/computability/recursive-functions/sequences.tex:145-164",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/sequences.tex",
+      "target_line_1based": 112,
+      "target_sha256": "78fb27e0a3d54ace350e3708467be6207f05a3fd3c39f160ffc458f0fd8b39d0",
+      "mode": "define-empty-sequence-bound-and-use-inclusive-search-plus-adjacent-note",
+      "translation_change": "sets the empty-sequence bound to one and permits a legal concatenation code equal to its proven upper bound",
+      "counterexample": "At k=0 the expression p_(k-1) calls for p_-1. The prose proves code <= sequenceBound, while a strict v < sequenceBound search can omit a code equal to that bound.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The conditional only totalizes the k=0 bound. The align-environment delta caused by changing < to <= is carried with OLCMP-012 because QA compares that entire environment as one span.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\fn{sequenceBound}(x,k)=p_{k-1}^{k\\cdot(x+1)},\\]"
+        ],
+        "target_only": [
+          "\\[\\fn{sequenceBound}(x,k)=\\fn{cond}(k,1,p_{\\fn{pred}(k)}^{k\\cdot(x+1)})\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-012",
+      "unit_id": "OLP-0220",
+      "classification": "concatenation_second_sequence_constraint_is_nested_under_first_quantifier",
+      "source_path": "content/computability/recursive-functions/sequences.tex",
+      "source_sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+      "source_locator": "content/computability/recursive-functions/sequences.tex:156-168",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/sequences.tex",
+      "target_line_1based": 121,
+      "target_sha256": "78fb27e0a3d54ace350e3708467be6207f05a3fd3c39f160ffc458f0fd8b39d0",
+      "mode": "make-two-element-constraints-independent-and-carry-inclusive-bound-plus-adjacent-note",
+      "translation_change": "conjoins independent universal constraints for the first and second input sequences",
+      "counterexample": "When the first sequence is empty, nesting the second universal inside the first makes the entire element condition vacuously true and leaves the second sequence unconstrained.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The length equation, index offsets and element equalities are preserved. This whole-environment exception also contains OLCMP-011's inclusive-bound repair.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v<\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v\\leq\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)}\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-013",
+      "unit_id": "OLP-0221",
+      "classification": "subtree_helper_description_says_exact_level_while_recurrence_is_cumulative",
+      "source_path": "content/computability/recursive-functions/trees.tex",
+      "source_sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+      "source_locator": "content/computability/recursive-functions/trees.tex:38-47",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/trees.tex",
+      "target_line_1based": 23,
+      "target_sha256": "03e2512269006090c51709c22642f0910f44007018589966456534402fdc8527",
+      "mode": "describe-levels-up-to-n-plus-adjacent-note",
+      "translation_change": "describes hSubtreeSeq as collecting every subtree through level n",
+      "counterexample": "The successor equation retains the previous sequence and appends the next level, so its result is cumulative rather than restricted to nodes exactly n edges from the root.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "Only the prose contract is aligned with the unchanged cumulative recurrence.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-014",
+      "unit_id": "OLP-0221",
+      "classification": "sequence_map_concatenation_reads_one_element_past_end",
+      "source_path": "content/computability/recursive-functions/trees.tex",
+      "source_sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+      "source_locator": "content/computability/recursive-functions/trees.tex:48-57",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/trees.tex",
+      "target_line_1based": 30,
+      "target_sha256": "03e2512269006090c51709c22642f0910f44007018589966456534402fdc8527",
+      "mode": "use-empty-base-and-append-current-index-plus-adjacent-note",
+      "translation_change": "lets g(s,k) concatenate images of exactly the first k elements, so g(s,len(s)) stays within the sequence",
+      "counterexample": "The source starts with element zero and appends element k+1, then calls g at len(s); that call reaches index len(s), one past the last legal index.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The helper's base and successor indices change together; the later call at len(s) and the subtree recurrence remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_k)$",
+          "\\begin{align*}g(s,0)&=f((s)_0)\\\\g(s,k+1)&=g(s,k)\\concatf((s)_{k+1})\\end{align*}"
+        ],
+        "target_only": [
+          "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_{k-1})$",
+          "\\begin{align*}g(s,0)&=\\emptyseq\\\\g(s,k+1)&=g(s,k)\\concatf((s)_k)\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-015",
+      "unit_id": "OLP-0223",
+      "classification": "notation_code_equations_switch_basic_function_symbols",
+      "source_path": "content/computability/recursive-functions/non-pr-functions.tex",
+      "source_sha256": "7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567",
+      "source_locator": "content/computability/recursive-functions/non-pr-functions.tex:45-57",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex",
+      "target_line_1based": 38,
+      "target_sha256": "5a8cdc40f8566e9aa2558c6c36b54c17c0c14b51ffda4666699e574aa78eb8a2",
+      "mode": "restore-established-zero-and-successor-symbols-plus-adjacent-note",
+      "translation_change": "uses the chapter's official Zero and Successor notation constructors in the coding equations",
+      "counterexample": "The preceding notation section assigns dedicated symbols to the zero and successor functions. Replacing them by 0 and S only in the enumeration silently changes the objects being coded.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "Only the two notation symbols are restored; their numerical tags and every compound constructor code are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{eqnarray*}\\#(0)&=&\\langle0\\rangle\\\\\\#(S)&=&\\langle1\\rangle\\\\\\#(\\Proj{n}{i})&=&\\langle2,n,i\\rangle\\\\\\#(\\fn{Comp}_{k,l}[H,G_0,\\dots,G_{k-1}])&=&\\langle3,k,l,\\#(H),\\#(G_0),\\dots,\\#(G_{k-1})\\rangle\\\\\\#(\\fn{Rec}_l[G,H])&=&\\langle4,l,\\#(G),\\#(H)\\rangle\\end{eqnarray*}"
+        ],
+        "target_only": [
+          "\\begin{eqnarray*}\\#(\\Zero)&=&\\langle0\\rangle\\\\\\#(\\Succ)&=&\\langle1\\rangle\\\\\\#(\\Proj{n}{i})&=&\\langle2,n,i\\rangle\\\\\\#(\\fn{Comp}_{k,l}[H,G_0,\\dots,G_{k-1}])&=&\\langle3,k,l,\\#(H),\\#(G_0),\\dots,\\#(G_{k-1})\\rangle\\\\\\#(\\fn{Rec}_l[G,H])&=&\\langle4,l,\\#(G),\\#(H)\\rangle\\end{eqnarray*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-016",
+      "unit_id": "OLP-0223",
+      "classification": "coding_summary_reverses_mapping_direction",
+      "source_path": "content/computability/recursive-functions/non-pr-functions.tex",
+      "source_sha256": "7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567",
+      "source_locator": "content/computability/recursive-functions/non-pr-functions.tex:58-65",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex",
+      "target_line_1based": 40,
+      "target_sha256": "5a8cdc40f8566e9aa2558c6c36b54c17c0c14b51ffda4666699e574aa78eb8a2",
+      "mode": "state-that-notations-receive-numeric-codes-plus-adjacent-note",
+      "translation_change": "states that every notation receives a natural-number code and that the enumeration selects unary functions",
+      "counterexample": "The equations define #(F) from a notation F to a number. Saying every code is assigned a number reverses the map, and the next sentence must restrict the enumeration to unary notations.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+      "formula_policy": "The coding equations and default constant-zero branch are unchanged; the prose direction and unary scope are made explicit.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -3675,7 +3914,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0215, then continue with OLP-0216 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0223, then continue with OLP-0224 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -3715,7 +3954,8 @@
     "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
     "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
     "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
-    "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS"
+    "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+    "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS"
   ],
   "source_authorities": [
     {

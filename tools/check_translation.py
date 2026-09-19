@@ -15,7 +15,7 @@ corrections_by_unit={}
 for c in corrections:corrections_by_unit.setdefault(c['unit_id'],[]).append(c)
 def localize_text(s):
  out='';pos=0
- for m in re.finditer(r'\\(?:text|intertext|emph|textrm)\{',s):
+ for m in re.finditer(r'\\(?:text|intertext|emph|textrm|mbox)\s*\{',s):
   if m.start()<pos: continue
   i=m.end(); depth=1
   while i<len(s) and depth:

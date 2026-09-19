@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-ps-Arab-PK/primitive-recursive-constructions-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T21:22:42.943000+00:00",
+  "batch_id": "PS-B046-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "f5abd3ffb1bc0101bb4475d2bb5026015bffc0d98d99a4684c9bf8c5072c7427",
+    "ALIGNMENT.jsonl": "df3b4132376c5870b2e044da21262995f1249dbb01a6fc4209c431ea4ba41948",
+    "SEGMENT_CANON_USE.jsonl": "ab20e9344c843c0b199ce28c17a56f03defc43c75bd216db7141ef0ecf180ab7",
+    "SOURCE_CORRECTIONS.json": "cd6a8efc73161281f8ae9d537c509d2ef519c18f811eda8bf5b59a2474a27d24",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "5a174bb5e2ac044ee8a705d57c560c6d38ceb9cd92a475440037af5acfd5ddb3",
+    "QA.json": "0a9592c5835b03f8eb1dd87aa162f856618cdb5768ac85c999e9585b2d13d9e9"
+  },
+  "counts": {
+    "decisions": 297,
+    "occurrences": 14097,
+    "terminology_decisions": 127,
+    "source_correction_decisions": 165,
+    "priority_decisions": 120,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 8738
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "f2ba8845eb65071c1995d7c0da72579e31943d7b087c185ac5bebe8b30fc37f8",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "d8cab08d51e61af0bfe9d00428aa27b3ceec73d158b6d4661a3c0ae61f2fd1c0",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "8e5cc273c1aa432c01323a3ce6e98070d945b53dabfbe414e7bfba2bc431ad4c",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "4c6db7e22a3b59aa48f08b2c2d14464a523ed48d659464cee1aafc3a65a78582",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "7eac20714033ca5cb63ba42322112293c03651f99ed81c21a43c7442d5a00fa6",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "2c7a490ec4d6d9328818f85edf08d1f3d63be89c9290a16e3310e98b48e8b307",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\primitive-recursive-constructions-decision-replay"
+}

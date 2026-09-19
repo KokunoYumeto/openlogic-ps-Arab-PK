@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 215 of 722 source units are translated drafts. This log contains 123 terminology entries and 159 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 223 of 722 source units are translated drafts. This log contains 127 terminology entries and 170 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1110,6 +1110,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: اسقاط تابع د پروجکشن تابع پر ځاے; مشخصه تابع د ځانګړونکې تابع پر ځاے; د آرګومېنټونو شمېر د ځاييزې کچې پر ځاے
 - Review question: In Pakistani Pashto mathematical prose, is «پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع» the clearest conventional rendering of “projection function / characteristic function / arity / zero function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+
+## TERM-BOUNDED-MINIMIZATION
+
+- Type: terminology
+- Choice: محدوده کمينه‌موندنه / محدوده پلټنه / تر ټولو وړوکے شاهد
+- Uncertainty: function and induction concepts are directly supported by regional sources; the exact bounded-search compounds remain provisional
+- Alternatives: محدود اقل موندل; تر پولې پورې پلټنه; محدوده مينيمم اخيستنه
+- Review question: In Pakistani Pashto mathematical prose, is «محدوده کمينه‌موندنه / محدوده پلټنه / تر ټولو وړوکے شاهد» the clearest conventional rendering of “bounded minimization / bounded search / least witness” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete primitive-recursive-constructions source and language review
+
+## TERM-PRIME-SEQUENCE-CODING
+
+- Type: terminology
+- Choice: اوليه عدد / عامل / فاکتوريل / د لړۍ کوډ / نښلول / غړے / اوږدوالی
+- Uncertainty: sequence, pairing, power and function concepts are directly supported by regional sources; the grouped coding and concatenation labels remain provisional
+- Alternatives: لومړنی عدد د اوليه عدد پر ځاے; د لړۍ رمز; يوځای کول د نښلولو پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «اوليه عدد / عامل / فاکتوريل / د لړۍ کوډ / نښلول / غړے / اوږدوالی» the clearest conventional rendering of “prime / factor / factorial / sequence code / concatenate / element / length” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete primitive-recursive-constructions source and language review
+
+## TERM-RECURSION-VARIANTS
+
+- Type: terminology
+- Choice: هممهاله بازګښت / د ارزښتونو د بهير بازګښت / د پاراميټرونو بدلېدونکی بازګښت
+- Uncertainty: recursion and sequence concepts are directly supported by regional sources; the three exact variant labels remain provisional
+- Alternatives: يوځايي بازګښت; د ټولو پخوانيو قيمتونو بازګښت; د بدلېدونکو پاراميټرونو بازګښت
+- Review question: In Pakistani Pashto mathematical prose, is «هممهاله بازګښت / د ارزښتونو د بهير بازګښت / د پاراميټرونو بدلېدونکی بازګښت» the clearest conventional rendering of “simultaneous recursion / course-of-values recursion / parameter-changing recursion” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete primitive-recursive-constructions source and language review
+
+## TERM-DIAGONAL-ACKERMANN
+
+- Type: terminology
+- Choice: قطرول / د اکرمن--پېټر تابع / نابنسټيزه بازګشتي
+- Uncertainty: the diagonal construction is directly supported by a regional source; the proper-name compound and negated class label remain provisional
+- Alternatives: قطري کول; د اکرمن--پيټر فنکشن; غير بنسټيزه بازګشتي تابع
+- Review question: In Pakistani Pashto mathematical prose, is «قطرول / د اکرمن--پېټر تابع / نابنسټيزه بازګشتي» the clearest conventional rendering of “diagonalization / Ackermann-Peter function / non-primitive-recursive” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete primitive-recursive-constructions source and language review
 
 ## DEC-OLFUN-001
 
@@ -2487,6 +2523,105 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-005 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+
+## DEC-OLCMP-006
+
+- Type: source-correction
+- Choice: names x less than or equal to y as the less-than-or-equal relation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-007
+
+- Type: source-correction
+- Choice: keeps the original parameter vector x fixed in the third successor-bound case
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-008
+
+- Type: source-correction
+- Choice: explains failure of x dividing y in the y-by-x direction and lets the existential equation cover the zero-divisor edge case
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-009
+
+- Type: source-correction
+- Choice: writes nextPrime as a function name followed by its argument in both inconsistent occurrences
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-010
+
+- Type: source-correction
+- Choice: checks x=0 and x=1 directly before choosing the largest prime at most x
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-011
+
+- Type: source-correction
+- Choice: sets the empty-sequence bound to one and permits a legal concatenation code equal to its proven upper bound
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-012
+
+- Type: source-correction
+- Choice: conjoins independent universal constraints for the first and second input sequences
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-013
+
+- Type: source-correction
+- Choice: describes hSubtreeSeq as collecting every subtree through level n
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-014
+
+- Type: source-correction
+- Choice: lets g(s,k) concatenate images of exactly the first k elements, so g(s,len(s)) stays within the sequence
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-015
+
+- Type: source-correction
+- Choice: uses the chapter's official Zero and Successor notation constructors in the coding equations
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
+
+## DEC-OLCMP-016
+
+- Type: source-correction
+- Choice: states that every notation receives a natural-number code and that the enumeration selects unary functions
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete primitive-recursive-constructions batch and frozen source bytes
 
 ## DEC-REL-I
 

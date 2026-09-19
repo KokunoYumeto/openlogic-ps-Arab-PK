@@ -1,0 +1,260 @@
+[
+  {
+    "file": "content/computability/recursive-functions/examples.tex",
+    "source_bytes": 5792,
+    "target_bytes": 6990,
+    "source_sha256": "d76450ea38acccc3c51ca125104c6e09b6b02ecbc33c11e31cfa9ce190d29c26",
+    "target_sha256": "9ecbc8188c2b497559288058fdf1023c1dc44452d574da84bb7d9db2479c7950",
+    "source_blocks": 25,
+    "target_blocks": 25,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/pr-relations.tex",
+    "source_bytes": 5533,
+    "target_bytes": 7044,
+    "source_sha256": "9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97",
+    "target_sha256": "9e0fbbf5a5be20d8f91279823962668ad227929f0656db7193d6973fa1b75068",
+    "source_blocks": 15,
+    "target_blocks": 15,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/bounded-minimization.tex",
+    "source_bytes": 2522,
+    "target_bytes": 3938,
+    "source_sha256": "682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6",
+    "target_sha256": "209a6a82fd37d1efed4e1f50d9f5e9548fb745dae459e261c378c7dbdb8f9036",
+    "source_blocks": 10,
+    "target_blocks": 10,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [
+      "$m_R(\\vec{z},y+1)=y+1$"
+    ],
+    "math_target_only": [
+      "$m_R(\\vec{x},y+1)=y+1$"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/primes.tex",
+    "source_bytes": 3354,
+    "target_bytes": 6338,
+    "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
+    "target_sha256": "9e0d6b696ae805659e541d1c79c65a2d29e85fe4e4b18352f08540056bb760af",
+    "source_blocks": 11,
+    "target_blocks": 11,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [
+      "$\\fn{nextPrime(x)}$",
+      "\\[\\fn{nextPrime(x)}=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+    ],
+    "math_target_only": [
+      "$\\fn{nextPrime}(x)$",
+      "\\[\\fn{nextPrime}(x)=\\bmin{y\\leq\\fact{x}+1}{(y>x\\land\\fn{Prime}(y))}.\\]"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/sequences.tex",
+    "source_bytes": 6596,
+    "target_bytes": 8987,
+    "source_sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
+    "target_sha256": "78fb27e0a3d54ace350e3708467be6207f05a3fd3c39f160ffc458f0fd8b39d0",
+    "source_blocks": 25,
+    "target_blocks": 25,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [
+      "\\[\\fn{sequenceBound}(x,k)=p_{k-1}^{k\\cdot(x+1)},\\]",
+      "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v<\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})}\\end{align*}"
+    ],
+    "math_target_only": [
+      "\\[\\fn{sequenceBound}(x,k)=\\fn{cond}(k,1,p_{\\fn{pred}(k)}^{k\\cdot(x+1)})\\]",
+      "\\begin{align*}\\fn{concat}(s,t)={}&\\bmin{v\\leq\\fn{sequenceBound}(s+t,\\len{s}+\\len{t})}{}\\\\&\\quad(\\len{v}=\\len{s}+\\len{t}\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{((v)_i=(s)_i)}\\land{}\\\\&\\qquad\\bforall{j<\\len{t}}{((v)_{\\len{s}+j}=(t)_j)})\\end{align*}"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/trees.tex",
+    "source_bytes": 3410,
+    "target_bytes": 5525,
+    "source_sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
+    "target_sha256": "03e2512269006090c51709c22642f0910f44007018589966456534402fdc8527",
+    "source_blocks": 10,
+    "target_blocks": 10,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [
+      "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_k)$",
+      "\\begin{align*}g(s,0)&=f((s)_0)\\\\g(s,k+1)&=g(s,k)\\concatf((s)_{k+1})\\end{align*}"
+    ],
+    "math_target_only": [
+      "$g_f(s,k)=f((s)_0)\\concat\\dots\\concatf((s)_{k-1})$",
+      "\\begin{align*}g(s,0)&=\\emptyseq\\\\g(s,k+1)&=g(s,k)\\concatf((s)_k)\\end{align*}"
+    ],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/other-recursions.tex",
+    "source_bytes": 2657,
+    "target_bytes": 3338,
+    "source_sha256": "ecd3dc5f6ffbfcbf812e75ed5b87ed9b1f9aa49b779a9e3a6c3a6f491d691400",
+    "target_sha256": "e07290e4a47b4ab9c930ffef267fa21ddbf0634ff8af1e2bced9e1d5492901ce",
+    "source_blocks": 8,
+    "target_blocks": 8,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [],
+    "math_target_only": [],
+    "math_expected": true
+  },
+  {
+    "file": "content/computability/recursive-functions/non-pr-functions.tex",
+    "source_bytes": 4384,
+    "target_bytes": 6888,
+    "source_sha256": "7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567",
+    "target_sha256": "5a8cdc40f8566e9aa2558c6c36b54c17c0c14b51ffda4666699e574aa78eb8a2",
+    "source_blocks": 12,
+    "target_blocks": 12,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "braces": true,
+      "brackets": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "no_ordinary_english": true,
+      "lf_only": true,
+      "trailing_whitespace": true,
+      "unchanged_numeric_diagrams": true
+    },
+    "english": [],
+    "math_source_only": [
+      "\\begin{eqnarray*}\\#(0)&=&\\langle0\\rangle\\\\\\#(S)&=&\\langle1\\rangle\\\\\\#(\\Proj{n}{i})&=&\\langle2,n,i\\rangle\\\\\\#(\\fn{Comp}_{k,l}[H,G_0,\\dots,G_{k-1}])&=&\\langle3,k,l,\\#(H),\\#(G_0),\\dots,\\#(G_{k-1})\\rangle\\\\\\#(\\fn{Rec}_l[G,H])&=&\\langle4,l,\\#(G),\\#(H)\\rangle\\end{eqnarray*}"
+    ],
+    "math_target_only": [
+      "\\begin{eqnarray*}\\#(\\Zero)&=&\\langle0\\rangle\\\\\\#(\\Succ)&=&\\langle1\\rangle\\\\\\#(\\Proj{n}{i})&=&\\langle2,n,i\\rangle\\\\\\#(\\fn{Comp}_{k,l}[H,G_0,\\dots,G_{k-1}])&=&\\langle3,k,l,\\#(H),\\#(G_0),\\dots,\\#(G_{k-1})\\rangle\\\\\\#(\\fn{Rec}_l[G,H])&=&\\langle4,l,\\#(G),\\#(H)\\rangle\\end{eqnarray*}"
+    ],
+    "math_expected": true
+  }
+]

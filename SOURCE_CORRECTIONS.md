@@ -1379,3 +1379,102 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: defines each successor stage as containing the preceding stage together with every one-step composition or primitive-recursion result.
 - Disclosure: `carry-each-stage-into-its-successor-plus-adjacent-note`.
 
+## OLCMP-006
+
+- Unit: `OLP-0217`
+- Frozen source: `content/computability/recursive-functions/pr-relations.tex` (9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97) at `content/computability/recursive-functions/pr-relations.tex:41-44`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex:36`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: names x less than or equal to y as the less-than-or-equal relation.
+- Disclosure: `name-less-than-or-equal-plus-adjacent-note`.
+
+## OLCMP-007
+
+- Unit: `OLP-0218`
+- Frozen source: `content/computability/recursive-functions/bounded-minimization.tex` (682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6) at `content/computability/recursive-functions/bounded-minimization.tex:41-48`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex:33`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: keeps the original parameter vector x fixed in the third successor-bound case.
+- Disclosure: `restore-fixed-parameter-vector-plus-adjacent-note`.
+
+## OLCMP-008
+
+- Unit: `OLP-0219`
+- Frozen source: `content/computability/recursive-functions/primes.tex` (76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4) at `content/computability/recursive-functions/primes.tex:14-25`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/primes.tex:17`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: explains failure of x dividing y in the y-by-x direction and lets the existential equation cover the zero-divisor edge case.
+- Disclosure: `state-correct-division-direction-and-use-existential-definition-plus-adjacent-note`.
+
+## OLCMP-009
+
+- Unit: `OLP-0219`
+- Frozen source: `content/computability/recursive-functions/primes.tex` (76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4) at `content/computability/recursive-functions/primes.tex:46-61`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/primes.tex:39`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: writes nextPrime as a function name followed by its argument in both inconsistent occurrences.
+- Disclosure: `separate-function-name-from-argument-plus-adjacent-note`.
+
+## OLCMP-010
+
+- Unit: `OLP-0219`
+- Frozen source: `content/computability/recursive-functions/primes.tex` (76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4) at `content/computability/recursive-functions/primes.tex:64-75`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/primes.tex:42`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: checks x=0 and x=1 directly before choosing the largest prime at most x.
+- Disclosure: `handle-zero-and-one-before-largest-prime-argument-plus-adjacent-note`.
+
+## OLCMP-011
+
+- Unit: `OLP-0220`
+- Frozen source: `content/computability/recursive-functions/sequences.tex` (044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae) at `content/computability/recursive-functions/sequences.tex:145-164`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:112`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: sets the empty-sequence bound to one and permits a legal concatenation code equal to its proven upper bound.
+- Disclosure: `define-empty-sequence-bound-and-use-inclusive-search-plus-adjacent-note`.
+
+## OLCMP-012
+
+- Unit: `OLP-0220`
+- Frozen source: `content/computability/recursive-functions/sequences.tex` (044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae) at `content/computability/recursive-functions/sequences.tex:156-168`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:121`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: conjoins independent universal constraints for the first and second input sequences.
+- Disclosure: `make-two-element-constraints-independent-and-carry-inclusive-bound-plus-adjacent-note`.
+
+## OLCMP-013
+
+- Unit: `OLP-0221`
+- Frozen source: `content/computability/recursive-functions/trees.tex` (a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277) at `content/computability/recursive-functions/trees.tex:38-47`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/trees.tex:23`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: describes hSubtreeSeq as collecting every subtree through level n.
+- Disclosure: `describe-levels-up-to-n-plus-adjacent-note`.
+
+## OLCMP-014
+
+- Unit: `OLP-0221`
+- Frozen source: `content/computability/recursive-functions/trees.tex` (a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277) at `content/computability/recursive-functions/trees.tex:48-57`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/trees.tex:30`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: lets g(s,k) concatenate images of exactly the first k elements, so g(s,len(s)) stays within the sequence.
+- Disclosure: `use-empty-base-and-append-current-index-plus-adjacent-note`.
+
+## OLCMP-015
+
+- Unit: `OLP-0223`
+- Frozen source: `content/computability/recursive-functions/non-pr-functions.tex` (7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567) at `content/computability/recursive-functions/non-pr-functions.tex:45-57`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:38`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: uses the chapter's official Zero and Successor notation constructors in the coding equations.
+- Disclosure: `restore-established-zero-and-successor-symbols-plus-adjacent-note`.
+
+## OLCMP-016
+
+- Unit: `OLP-0223`
+- Frozen source: `content/computability/recursive-functions/non-pr-functions.tex` (7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567) at `content/computability/recursive-functions/non-pr-functions.tex:58-65`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:40`
+- Audit: `PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS`
+- Treatment: states that every notation receives a natural-number code and that the enumeration selects unary functions.
+- Disclosure: `state-that-notations-receive-numeric-codes-plus-adjacent-note`.
+
