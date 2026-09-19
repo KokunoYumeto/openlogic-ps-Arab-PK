@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/lindstrom-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T19:47:45.655457+00:00",
+  "batch_id": "PS-B044-LINDSTROM",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "714d69dfe76a98d9cc566c25fd6edae8c401dc8958a466da742c76bd4ac920f2",
+    "ALIGNMENT.jsonl": "4a4100d2484b02193602242eb64f4851b2f1ef585f93fcc93e2817b81e469791",
+    "SEGMENT_CANON_USE.jsonl": "8d2380305eb8a4d3a4fb0c35fddf14631da18a9c1f02384c74c35d7338816b92",
+    "SOURCE_CORRECTIONS.json": "a17adb5e09c363aaf5f3f0e35cc1e77f1c25f2b8048bf042e85a1bfe9967cd84",
+    "TERM_DECISIONS.jsonl": "1bd2c69e2e00b3e863eb04648fc68c9158deda6dfe3baee40e5f875c41698116",
+    "QA.json": "07c18b73a6e77636e7f6038c5167ae41509ed6b52f58c8ad12b2f7324af20a61"
+  },
+  "counts": {
+    "decisions": 275,
+    "occurrences": 13447,
+    "terminology_decisions": 120,
+    "source_correction_decisions": 150,
+    "priority_decisions": 113,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 8088
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "94dfdb65e96091cc2f6c022f4c7156706ef7235dee162f0ddd16086865503009",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "d9ed0056f4c00d49c93076ba961b269cc2eea0e202f400d9f5a3c40970ac68fe",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "2e7807225cd820b7ae22ef8d1fa1ca3db1eaf2246626b34550cd670c46953d6d",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "80458ebecbd3a77c370543715ee52bafb9d14d691c7a53184243c71098d40ac5",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "e88212316dc63d3462828d2b1beb355070dd11c046c0c7c57452517a8fc574c1",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "c271e6777f4b9669d7cb59cead29d8e3995ab36dd3c604a796e120d15934f58f",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\lindstrom-decision-replay"
+}

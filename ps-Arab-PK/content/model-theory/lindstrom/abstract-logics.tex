@@ -1,0 +1,144 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: abstract-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{alg}
+\olsection{انتزاعي منطقونه}
+
+\begin{defn}
+يو \emph{انتزاعي منطق} جوړه~$\tuple{L, \models_L}$ ده، چې~$L$ داسې
+تابع ده چې هرې !!{language}~$\Lang{L}$ ته د !!{sentence}s يو
+سټ~$L(\Lang{L})$ ورکوي، او~$\models_L$ د~$\Lang{L}$ د
+!!{structure}s او د~$L(\Lang{L})$ د !!{element}s تر منځ اړيکه ده۔
+په ځانګړي ډول،~$\tuple{F, \models}$ عادي د لومړۍ درجې منطق دے؛ يعنې
+$F$ هغه تابع ده چې !!{language}~$\Lang{L}$ ته د~$\Lang{L}$ له
+ثابتونو څخه د جوړو شوو د لومړۍ درجې !!{sentence}s سټ ورکوي، او
+$\models$ د لومړۍ درجې منطق د پوره کولو اړيکه ده۔
+\end{defn}
+
+پام وکړئ چې د يوې ورکړې شوې !!{language} د !!{structure} هماغه مفهوم
+کاروو چې د لومړۍ درجې منطق دپاره ئې کاروو؛ خو دا له مخکښې نۀ فرضوو
+چې !!{sentence}s د~$\Lang{L}$ له بنسټيزو نښو څخه په معمولي ډول جوړې
+شوې دي، او نه دا چې~$\models_L$ اړيکه د لومړۍ درجې منطق په شان په
+بازګشتي ډول تعريف شوې ده۔ نو دا بشپړ عمومي تعريف، د بېلګې په توګه،
+هغه حالت هم رانغاړي چې د~$\tuple{L,\models_L}$ !!{sentence}s نامتناهي
+اوږده تړونونه يا بېلتونونه ولري، له~$\lexists$ او~$\lforall$ پرته نور
+کميت ټاکونکي ولري (لکه «نامتناهي ډېر داسې~$x$ شته چې \dots»)، يا
+ښايي د کميت ټاکونکو نامتناهي اوږده مخ‌لړۍ ولري۔ د دې د ټينګار دپاره
+چې په~$L(\Lang{L})$ کښې «!!{sentence}s» اړينه نۀ ده د لومړۍ درجې
+منطق معمولي !!{sentence}s وي، په دې څپرکي کښې پرې~$!E$،~$!F$،~\dots
+!!{variable}s چلوو، او~$!A$،~$!B$،~\dots د لومړۍ درجې معمولي
+!!{formula}s ته ساتو۔
+
+\begin{defn}
+$\Mod(L){!E}$ دې ټولګی~$\Setabs{\Struct{M}}{\Struct{M}
+  \models_L !E}$ وښيي۔ که !!{language} په څرګنده ښودل پکار وي،
+$\Mod[L](L){!E}$ ليکو۔ د~$\Lang{L}$ دوه !!{structure}s~$\Struct{M}$
+او~$\Struct{N}$ په~$\tuple{L, \models_L}$ کښې \emph{ابتدايي هم‌ارز}
+دي، چې~$\Struct{M} \elemequiv[L] \Struct{N}$ ئې ليکو، که د
+$L(\Lang{L})$ هماغه !!{sentence}s په دواړو کښې رښتونې وي۔
+\end{defn}
+
+\begin{defn}
+د~!!{language}~$\Lang{L}$ يو انتزاعي منطق~$\tuple{L,\models_L}$
+\emph{نورمال} دے که لاندې خاصيتونه پوره کړي:
+\begin{enumerate}
+\item (\emph{$L$-زياتېدنه}) د~!!{language}s~$\Lang{L}$ او
+  $\Lang{L'}$ دپاره، که~$\Lang{L} \subseteq \Lang{L'}$ وي، نو
+  $L(\Lang{L}) \subseteq L(\Lang{L'})$۔
+\item (\emph{د غځونې خاصيت}) د هر~$!E \in L(\Lang{L})$ دپاره د
+  $\Lang{L}$ يو \emph{متناهي} فرعي سټ~$\Lang{L'}$ شته، داسې چې
+  اړيکه~$\Struct{M} \models_L !E$ يوازې د~$\Lang{L'}$ پر
+  راکمونې پورې اړه لري؛ يعنې که~$\Struct{M}$ او~$\Struct{N}$ پر
+  $\Lang{L'}$ يوه راکمونه ولري، نو~$\Struct{M} \models_L !E$ هله او
+  يوازې هله چې~$\Struct{N} \models_L !E$ وي۔
+\item (\emph{د آيزومورفيزم خاصيت}) که~$\Struct{M} \models_L !E$ او
+  $\Struct{M} \simeq \Struct{N}$ وي، نو~$\Struct{N} \models_L !E$
+  هم وي۔
+\item (\emph{د نوم‌اړونې خاصيت}) اړيکه~$\models_L$ د نوم‌اړونې له
+  مخې ساتل کېږي: که !!{language}~$\Lang{L}'$ له~$\Lang{L}$ څخه داسې
+  لاس ته راشي چې هره نښه~$P$ د هماغې ځاييزې کچې په نښه~$P'$ او هر
+  ثابت~$c$ په بېل ثابت~$c'$ بدل شي، نو د هر
+  !!{structure}~$\Struct{M}$ او هرې !!{sentence}~$!E$ دپاره،
+  $\Struct{M} \models_L !E$ هله او يوازې هله چې
+  $\Struct{M}' \models_L !E'$ وي؛ دلته~$\Struct{M}'$ د~$\Struct{M}$
+  اړوند~$\Lang{L}'$-!!{structure} او~$!E' \in L(\Lang{L}')$ د~$!E$
+  نوم‌اړول شوې جمله ده۔
+\item (\emph{بولي خاصيت}) انتزاعي منطق~$\tuple{L,
+  \models_L}$ د بولي رابطونو له مخې بند دے، په دې معنا چې د هر
+  $!E \in L(\Lang{L})$ دپاره داسې~$!F \in L(\Lang{L})$ شته چې
+  $\Struct{M} \models_L !F$ هله او يوازې هله چې
+  $\Struct{M} \not\models_L !E$ وي؛ او د هر~$!E$ او~$!F$ دپاره داسې
+  $!G$ شته چې~$\Mod(L){!G} = \Mod(L){!E} \cap
+  \Mod(L){!F}$ وي۔ د اټومي !!{formula}s او نورو رابطونو دپاره هم
+  همداسې ده۔
+\item (\emph{د کميت ټاکونکي خاصيت}) په~$\Lang{L}$ کښې د هر ثابت~$c$
+  او هر~$!E \in L(\Lang{L})$ دپاره داسې~$!F \in L(\Lang{L})$ شته
+  چې
+  \[
+  \Mod[L'](L){!F} = \Setabs{\Struct{M}}{\Expan{M}{a} \in
+  \Mod[L](L){!E} \text{ چې } a \in \Domain{M}},
+  \]
+  چې دلته~$\Lang{L'} = \Lang{L} \setminus \{c\}$ او
+  $\Expan{M}{a}$ د~$\Struct{M}$ هغه~$\Lang{L}$-غځونه ده چې~$a$
+  ثابت~$c$ ته ورکوي۔
+\item (\emph{د نسبي کولو خاصيت}) يوه !!a{sentence}
+  $!E \in L(\Lang{L})$، يو نوے~$(n+1)$-ځاييز محمول~$R$، او
+  داسې نښې~$c_1$، \dots،~$c_n$ راکړل شي چې په~$\Lang{L}$ کښې نۀ وي؛
+  بيا يوه !!a{sentence}~$!F \in L(\Lang{L} \cup
+  \{R,c_1,\ldots,c_n\})$ شته چې د~$!E$ \emph{پر
+  $\Atom{R}{x, c_1, \dots c_n}$ نسبي کول} بلل کېږي، او د هر
+  !!{structure}~$\Struct{M}$ دپاره:
+  \[
+  \Expan{M}{X, b_1, \ldots, b_n} \models_L !F \text{ هله او
+    يوازې هله چې } \Struct{N} \models_L !E,
+  \]
+  چې~$\Struct{N}$ د~$\Struct{M}$ هغه فرعي جوړښت دے چې !!{domain} ئې
+  $\Domain{N} = \Setabs{a\in \Domain{M}}{\Assign{R}{M}(a, b_1, \dots, b_n)}$
+  دے (\olref[bas][sub]{rem:substructure} وګورئ)، او
+  $\Expan{M}{X, b_1, \ldots, b_n}$ د~$\Struct{M}$ هغه غځونه ده چې
+  $R$،~$c_1$، \dots،~$c_n$ په ترتيب سره په~$X$،~$b_1,$
+  \dots،~$b_n$ تفسيروي (چې~$X \subseteq M^{n+1}$)۔
+\end{enumerate}
+\textbf{د ژباړې د نسخې سمون (OLMOD-024):} سرچينې د نوم‌اړونې په
+شرط کښې نوم‌اړول شوے جوړښت د اصلي !!{language} اړوند بللے و؛ دلته هغه د اصلي
+جوړښت اړوند وبلل شو، او نوم‌اړول شوې جمله هم په څرګنده وپېژندل شوه۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-025):} سرچينې د نسبي کولو په شرط
+کښې د نوي محمول ځاييزه کچه نۀ وه ټاکلې؛ له ورپسې تعريف ساحې او غځونې
+سره سم دلته هغه يو زيات له ورکړو ثابتونو، يعنې~$(n+1)$-ځاييز، ټاکل
+شوے دے۔
+\end{defn}
+
+\begin{defn}
+دوه انتزاعي منطقونه~$\tuple{L_1, \models_{L_1}}$ او
+$\tuple{L_2, \models_{L_2}}$ راکړل شي۔ وايو چې دويم \emph{لږ تر
+لږه د لومړي هومره څرګندوونکی} دے، چې~$\tuple{L_1, \models_{L_1}}
+\leq \tuple{L_2, \models_{L_2}}$ ئې ليکو، که د هرې
+!!{language}~$\Lang{L}$ او هرې !!{sentence}
+$!E \in L_1(\Lang{L})$ دپاره داسې !!a{sentence}
+$!F \in L_2(\Lang{L})$ شته چې~$\Mod[L](L_1){!E} =
+\Mod[L](L_2){!F}$ وي۔ منطقونه~$\tuple{L_1, \models_{L_1}}$ او
+$\tuple{L_2, \models_{L_2}}$ \emph{هم‌ارز} دي که
+$\tuple{L_1, \models_{L_1}} \leq \tuple{L_2, \models_{L_2}}$ او
+$\tuple{L_2, \models_{L_2}} \leq \tuple{L_1, \models_{L_1}}$ وي۔
+\end{defn}
+
+\begin{rem}
+  د لومړۍ درجې منطق، يعنې انتزاعي منطق~$\tuple{F, \models}$، نورمال
+  دے۔ په حقيقت کښې، پورته خاصيتونه تر ډېره د لومړۍ درجې منطق دپاره
+  سملاسي دي۔ يوازې دومره يادوو چې د غځونې خاصيت له مصداقيت څخه
+  راځي، او پر~$\Atom{R}{x, c_1, \dots, c_n}$ د !!a{sentence}~$!E$
+  نسبي کول د هرې !!{subformula}~$\lforall[x][!F]$ په
+  $\lforall[x][(\Atom{R}{x, c_1, \dots, c_n} \lif \ !F)]$ بدلولو
+  سره تر لاسه کېږي۔ سربېره پر دې، که~$\tuple{L, \models_L}$ نورمال
+  وي، نو~$\tuple{F, \models} \leq \tuple{L, \models_{L}}$، لکه چې
+  دا خبره د لومړۍ درجې پر !!{formula}s په استقرا ښودل کېدے شي۔ نو له
+  عموميت څخه بې له کوم زيان څخه فرض کولے شو چې د لومړۍ درجې هره
+  !!{sentence} د هر نورمال منطق غړې ده۔
+\end{rem}
+
+\end{document}

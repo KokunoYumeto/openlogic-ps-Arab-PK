@@ -1,0 +1,232 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-19T19:16:51.925364+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+  "scope": "OLP-0203 through OLP-0207 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLMOD-024",
+      "unit_id": "OLP-0205",
+      "classification": "renamed_structure_linked_to_language_instead_of_source_structure",
+      "source_path": "content/model-theory/lindstrom/abstract-logics.tex",
+      "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+      "source_locator": "content/model-theory/lindstrom/abstract-logics.tex:64-71",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex",
+      "target_line_1based": 107,
+      "target_sha256": "94f61e16be6fb915289a24ab754553e30c3130328c7e2710044451e910585dc7",
+      "mode": "link-renamed-structure-to-M-and-identify-renamed-sentence-plus-adjacent-note",
+      "translation_change": "states that M-prime is the renamed structure corresponding to M and that E-prime is the renamed copy of E",
+      "counterexample": "A language is not the object whose predicate and constant interpretations are transported. The satisfaction biconditional needs a renamed structure corresponding to M and a renamed sentence corresponding to E.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "Only the two correspondence objects are repaired; symbol arities, distinct constants and the satisfaction biconditional remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Lang{L}$"
+        ],
+        "target_only": [
+          "$!E$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-025",
+      "unit_id": "OLP-0205",
+      "classification": "relativizing_predicate_arity_omitted",
+      "source_path": "content/model-theory/lindstrom/abstract-logics.tex",
+      "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+      "source_locator": "content/model-theory/lindstrom/abstract-logics.tex:90-104",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex",
+      "target_line_1based": 110,
+      "target_sha256": "94f61e16be6fb915289a24ab754553e30c3130328c7e2710044451e910585dc7",
+      "mode": "state-R-as-n-plus-one-place-plus-adjacent-note",
+      "translation_change": "states that R has arity n+1, matching its free element argument and n parameter constants",
+      "counterexample": "The displayed domain applies R to a,b_1,...,b_n and the expansion assigns X as a subset of M^(n+1), so leaving the arity unspecified obscures a required typing condition.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "No relation, argument, domain condition or expansion changes; only the arity already forced by the display is made explicit.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$(n+1)$",
+          "$(n+1)$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-026",
+      "unit_id": "OLP-0206",
+      "classification": "relativized_abstract_sentence_misclassified_as_first_order",
+      "source_path": "content/model-theory/lindstrom/ls-property.tex",
+      "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+      "source_locator": "content/model-theory/lindstrom/ls-property.tex:109-121",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex",
+      "target_line_1based": 123,
+      "target_sha256": "f0ec24d779c7dde908ca494ba72a709541bdca8f166e982248c483bc41c4d370",
+      "mode": "type-D1-as-L-sentence-and-D2-as-first-order-plus-adjacent-note",
+      "translation_change": "classifies D1 as an abstract-logic sentence obtained by relativizing E and D2 as the first-order back-and-forth sentence",
+      "counterexample": "Relativization yields an element of L for an arbitrary E in L; it cannot generally turn E into a first-order sentence. D2 is first order and belongs to the normal logic by the preceding remark.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "The two sentences still jointly encode the semantic disagreement and partial isomorphism, and the Downward Lowenheim--Skolem step is unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-027",
+      "unit_id": "OLP-0206",
+      "classification": "combined_structure_and_countable_model_reuse_existing_structure_symbols",
+      "source_path": "content/model-theory/lindstrom/ls-property.tex",
+      "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+      "source_locator": "content/model-theory/lindstrom/ls-property.tex:80-120",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex",
+      "target_line_1based": 127,
+      "target_sha256": "f0ec24d779c7dde908ca494ba72a709541bdca8f166e982248c483bc41c4d370",
+      "mode": "rename-combined-structure-K-and-countable-model-K0-plus-adjacent-note",
+      "translation_change": "uses K for the combined coding structure and K_0 for its enumerable model, leaving M_0 and N_0 for the two substructures",
+      "counterexample": "The source redefines M as the combined structure and then uses M_0 both for the enumerable combined model and its left substructure. The figure repeats the collision, and one domain-star exponent is mistyped.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "Only the colliding structure names, the figure's outer label and the misplaced star are repaired; all domains, internal structures, coding relations and the contradiction remain the same.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Domain{N}*$",
+          "$\\Struct{M}_0$"
+        ],
+        "target_only": [
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Domain{N}^*$",
+          "$\\Struct{K}_0$"
+        ]
+      },
+      "qa_tikz_replacements": [
+        {
+          "source": "\\path node at (0.75,3.5) {\\large $\\Struct{M}$};",
+          "target": "\\path node at (0.75,3.5) {\\large $\\Struct{K}$};",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "OLMOD-028",
+      "unit_id": "OLP-0207",
+      "classification": "finite_conjunction_claim_ignores_syntactically_many_equivalent_sentences",
+      "source_path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "source_locator": "content/model-theory/lindstrom/lindstrom-proof.tex:24-36",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "target_line_1based": 40,
+      "target_sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58",
+      "mode": "choose-one-representative-per-logical-equivalence-class-plus-adjacent-note",
+      "translation_change": "forms each finite conjunction and the final finite disjunction from representatives of the finitely many logical-equivalence classes",
+      "counterexample": "Even at bounded quantifier rank there are syntactically infinitely many equivalent repetitions. The cited proposition proves finiteness only up to logical equivalence.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "The represented n-theories and their model classes are unchanged; redundant equivalent conjuncts and disjuncts are merely omitted.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-029",
+      "unit_id": "OLP-0207",
+      "classification": "lindstrom_theorem_omits_required_normality_hypothesis",
+      "source_path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "source_locator": "content/model-theory/lindstrom/lindstrom-proof.tex:47-52",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "target_line_1based": 61,
+      "target_sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58",
+      "mode": "add-normal-abstract-logic-hypothesis-plus-adjacent-note",
+      "translation_change": "states the theorem for a normal abstract logic with Compactness and Downward Lowenheim--Skolem",
+      "counterexample": "The proof invokes Expansion, Isomorphism, Relativization and Quantifier Properties, and the claimed equivalence also uses the earlier result F <= L, which was proved only for normal logics.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "The Compactness and Lowenheim--Skolem assumptions and conclusion are preserved; the hypothesis needed by the written proof is restored.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-030",
+      "unit_id": "OLP-0207",
+      "classification": "coding_structure_reuses_union_structure_symbol",
+      "source_path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "source_locator": "content/model-theory/lindstrom/lindstrom-proof.tex:74-99",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "target_line_1based": 112,
+      "target_sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58",
+      "mode": "rename-combined-coding-structure-K-plus-adjacent-note",
+      "translation_change": "uses K for the structure combining M-star, N-star and the ordered stage sort",
+      "counterexample": "The source first defines M as the union of the M_n and later redefines M as a larger structure also containing N-star and the natural-number sort, leaving subsequent references ambiguous.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "Only the two occurrences naming the combined coding structure change; its sorts, predicates and stage relations are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Struct{M}$",
+          "$\\Struct{M}$"
+        ],
+        "target_only": [
+          "$\\Struct{K}$",
+          "$\\Struct{K}$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-031",
+      "unit_id": "OLP-0207",
+      "classification": "single_sentence_compactness_step_does_not_force_nonstandard_stage",
+      "source_path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "source_locator": "content/model-theory/lindstrom/lindstrom-proof.tex:100-121",
+      "target_path": "ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex",
+      "target_line_1based": 148,
+      "target_sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58",
+      "mode": "apply-compactness-to-theory-with-upper-constant-and-standard-successor-names-plus-adjacent-note",
+      "translation_change": "adds named standard successor stages and a constant above each of them, proves finite satisfiability in K, and obtains a genuinely nonstandard stage in K-star",
+      "counterexample": "The sentence D already has the standard coding structure as a model. Compactness applied only to D cannot ensure a nonstandard element. A finitely satisfiable infinite theory requiring one element above every named standard stage supplies the missing argument.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+      "formula_policy": "The relativized E-disagreement, I_n coding, definition of the partial-isomorphism family and final contradiction are preserved; satisfaction of the arbitrary abstract sentence is explicitly marked with models_L.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Struct{M}^*$",
+          "$\\Struct{M}_n\\models!E$",
+          "$\\Struct{N}_n\\not\\models!E$",
+          "$n^*$",
+          "$\\Struct{M^*}$"
+        ],
+        "target_only": [
+          "$\\Struct{M}_n\\models_L!E$",
+          "$\\Struct{N}_n\\not\\models_L!E$",
+          "$\\Struct{K}$",
+          "$c$",
+          "$c$",
+          "$c_0$",
+          "$c_0$",
+          "$c_1$",
+          "$c_{k+1}$",
+          "$c_k$",
+          "$c_k$",
+          "$k\\in\\Nat$",
+          "$c_k<c$",
+          "$\\Struct{K}^*$",
+          "$\\Struct{K}^*$",
+          "$n^*=\\Assign{c}{K^*}$",
+          "$k$"
+        ]
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0203",
+    "OLP-0204"
+  ],
+  "status": "complete Lindstrom source review; eight adopted corrections have adjacent Pashto disclosures, exact formula-delta accounting and one bounded diagram-label replacement"
+}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 202,
-    "structural_pass": 202,
+    "draft_units": 207,
+    "structural_pass": 207,
     "visually_accepted": 105,
     "published": 82
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B043-INTERPOLATION",
+  "batch": "PS-B044-LINDSTROM",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -5808,6 +5808,205 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0203",
+      "path": "content/model-theory/lindstrom/lindstrom.tex",
+      "source_sha256": "a3cc84f5789bc27838d0c2461c67438d5029d1071b7f94c4a4fd3b4910cd6310",
+      "translation_sha256": "2a4709c5226f31f60318a3d25fa29e171a416a98c9328d4c8d1f2b8fd5ee63e5",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0204",
+      "path": "content/model-theory/lindstrom/introduction.tex",
+      "source_sha256": "1e014424519199e2ca2760dfe343dbc6756c6972c56e17174587e9aacf913ed0",
+      "translation_sha256": "039031230abdd38e30cfcdb71a84c7ca2d818af89933954c7a4597eb99ef7053",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0205",
+      "path": "content/model-theory/lindstrom/abstract-logics.tex",
+      "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+      "translation_sha256": "94f61e16be6fb915289a24ab754553e30c3130328c7e2710044451e910585dc7",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-024",
+        "OLMOD-025"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Lang{L}$"
+        ],
+        "target_only": [
+          "$!E$",
+          "$(n+1)$",
+          "$(n+1)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0206",
+      "path": "content/model-theory/lindstrom/ls-property.tex",
+      "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+      "translation_sha256": "f0ec24d779c7dde908ca494ba72a709541bdca8f166e982248c483bc41c4d370",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-026",
+        "OLMOD-027"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Domain{N}*$",
+          "$\\Struct{M}_0$"
+        ],
+        "target_only": [
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Domain{N}^*$",
+          "$\\Struct{K}_0$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0207",
+      "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "translation_sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-028",
+        "OLMOD-029",
+        "OLMOD-030",
+        "OLMOD-031"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Struct{M}^*$",
+          "$\\Struct{M}_n\\models!E$",
+          "$\\Struct{N}_n\\not\\models!E$",
+          "$n^*$",
+          "$\\Struct{M^*}$"
+        ],
+        "target_only": [
+          "$\\Struct{M}_n\\models_L!E$",
+          "$\\Struct{N}_n\\not\\models_L!E$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$\\Struct{K}$",
+          "$c$",
+          "$c$",
+          "$c_0$",
+          "$c_0$",
+          "$c_1$",
+          "$c_{k+1}$",
+          "$c_k$",
+          "$c_k$",
+          "$k\\in\\Nat$",
+          "$c_k<c$",
+          "$\\Struct{K}^*$",
+          "$\\Struct{K}^*$",
+          "$n^*=\\Assign{c}{K^*}$",
+          "$k$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -7910,6 +8109,36 @@
       "passage": "Beth definability theorem",
       "reverse_paraphrase": "If a theory fixes the interpretation of P across all expansions of an L-structure, interpolation supplies an L-formula explicitly defining P.",
       "finding": "The two definitions, compactness reduction and both interpolation entailments are preserved; the theorem object class and one atom notation are corrected."
+    },
+    {
+      "unit_id": "OLP-0203",
+      "passage": "Lindstrom chapter driver",
+      "reverse_paraphrase": "The driver imports the introduction, abstract-logic definitions, metatheoretic properties and theorem proof in source order.",
+      "finding": "Every active import and the chapter identifier are preserved once."
+    },
+    {
+      "unit_id": "OLP-0204",
+      "passage": "Lindstrom introduction",
+      "reverse_paraphrase": "First-order logic is characterized as maximal among constrained logics satisfying Compactness and Downward Lowenheim--Skolem.",
+      "finding": "The maximality claim, both cross-references and the purely relational scope remain explicit."
+    },
+    {
+      "unit_id": "OLP-0205",
+      "passage": "abstract and normal logics",
+      "reverse_paraphrase": "A normal abstract logic assigns generalized sentences and satisfaction while respecting finite vocabulary, invariance, Boolean, quantifier and relativization operations.",
+      "finding": "All seven properties and expressive comparison are preserved; the renaming objects and relativizing arity are corrected."
+    },
+    {
+      "unit_id": "OLP-0206",
+      "passage": "partial isomorphism under abstract Lowenheim--Skolem",
+      "reverse_paraphrase": "A coding structure internalizes two structures and their back-and-forth family so an enumerable model yields isomorphic substructures with contradictory truth values.",
+      "finding": "Sequence concatenation, relativized disagreement and the final isomorphism contradiction remain intact; sentence types and structure names are disambiguated."
+    },
+    {
+      "unit_id": "OLP-0207",
+      "passage": "Lindstrom theorem proof",
+      "reverse_paraphrase": "If no finite back-and-forth rank determines an abstract sentence, Compactness builds a nonstandard stage whose remaining ranks form a partial isomorphism, contradicting semantic disagreement under Lowenheim--Skolem.",
+      "finding": "Finite equivalence-class representatives, the normality hypothesis and the infinite compactness theory close three formal gaps while preserving the intended proof."
     }
   ],
   "builds": [

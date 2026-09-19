@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: ls-property
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{lsp}
+
+\olsection{د متناهي شاهد او لوېنهايم--سکولم خاصيتونه}
+
+اوس د متناهي شاهد او لوېنهايم--سکولم خاصيتونه د انتزاعي منطقونو حالت
+ته په څرګند ډول غځوو۔
+
+\begin{defn}
+يو انتزاعي منطق~$\tuple{L, \models_L}$ \emph{د متناهي شاهد خاصيت}
+لري که د~$L(\Lang{L})$-!!{sentence}s هر سټ~$\Gamma$ هغه وخت د صدق
+وړ وي چې هر متناهي~$\Gamma_0 \subseteq \Gamma$ ئې د صدق وړ وي۔
+\end{defn}
+
+\begin{defn}
+$\tuple{L, \models_L}$ \emph{د لوېنهايم--سکولم ښکته خاصيت} لري که
+هر د صدق وړ~$\Gamma$ يو !!a{enumerable} مدل ولري۔
+\end{defn}
+
+
+د~\olref[bas][pis]{defn:partialisom} د جزوي آيزومورفيزم مفهوم سوچه
+«الجبري» دے؛ يعنې د ژبې د !!{sentence}s له يادونې پرته او يوازې د
+!!{structure}s د~!!{language}~$\Lang{L}$ د ثابتونو له مخې ورکړل شوے
+دے۔ نو دا مفهوم پر انتزاعي منطقونو هم عملي کېږي۔ د لومړۍ درجې منطق
+په حالت کښې له~\olref[bas][pis]{thm:p-isom2} څخه پوهېږو چې که دوه
+!!{structure}s په جزوي ډول آيزومورف وي، نو ابتدايي هم‌ارز دي۔ هغه
+ثبوت انتزاعي منطقونو ته نۀ غځېږي، ځکه پر !!{formula}s استقرا د خپل
+سري~$!E \in L(\Lang{L})$ دپاره ښايي موجوده نۀ وي؛ خو که د
+لوېنهايم--سکولم خاصيت صدق وکړي، قضيه بيا هم رښتونې ده۔
+
+\begin{thm}
+\ollabel{thm:abstract-p-isom}
+فرض کړئ~$\tuple{L, \models_L}$ يو نورمال منطق دے چې د
+لوېنهايم--سکولم خاصيت لري۔ بيا هر دوه په جزوي ډول آيزومورف
+!!{structure}s په~$\tuple{L, \models_L}$ کښې ابتدايي هم‌ارز دي۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ~$\Struct{M} \simeq_p \Struct{N}$، خو د کوم~$!E$ دپاره
+$\Struct{M} \models_L !E$ او~$\Struct{N} \not\models_L !E$ هم وي۔ د
+آيزومورفيزم د خاصيت له مخې فرض کولے شو چې~$\Domain{M}$ او
+$\Domain{N}$ سره بېل دي؛ او د غځونې د خاصيت له مخې فرض کولے شو چې
+$!E \in L(\Lang{L})$ د يوې متناهي !!{language}~$\Lang{L}$ دپاره
+وي۔ $\mathcal{I}$ دې د~$\Struct{M}$ او~$\Struct{N}$ تر منځ د جزوي
+آيزومورفيزمونو يو سټ وي؛ له عموميت څخه بې له زيان څخه دا هم فرض کړئ
+چې که~$p \in \mathcal{I}$ او~$q \subseteq p$ وي، نو
+$q \in \mathcal{I}$ هم وي۔
+
+$\Domain{M}^{<\omega}$ د~$\Domain{M}$ د !!{element}s د متناهي لړيو
+سټ دے۔ $S$ دې پر~$\Domain{M}^{<\omega}$ هغه درې‌ځاييزه اړيکه وي چې
+نښلون ښيي؛ يعنې که~$\mathbf{a}, \mathbf{b},
+\mathbf{c} \in \Domain{M}^{<\omega}$ وي، نو
+$S(\mathbf{a}, \mathbf{b}, \mathbf{c})$ هله او يوازې هله صدق کوي
+چې~$\mathbf{c}$ د~$\mathbf{a}$ او~$\mathbf{b}$ نښلون وي۔ همدارنګه،
+$T$ دې هغه درې‌ځاييزه اړيکه وي چې د~$b \in M$ او
+$\mathbf{a}, \mathbf{c} \in \Domain{M}^{<\omega}$ دپاره
+$T(\mathbf{a}, b, \mathbf{c})$ هله او يوازې هله صدق کوي چې
+$\mathbf{a} = a_1, \dots a_n$ او
+$\mathbf{c} = a_1, \dots a_n, b$ وي۔ دوه نوي درې‌ځاييز
+!!{predicate}s~$P$ او~$Q$ واخلئ، او !!{structure}~$\Struct{M}^*$
+داسې جوړ کړئ چې جهان ئې~$\Domain{M} \cup \Domain{M}^{<\omega}$ وي،
+$\Struct{M}$ د فرعي جوړښت په توګه ولري، او~$P$ او~$Q$ په نښلوونکو
+اړيکو~$S$ او~$T$ تفسير کړي؛ نو~$\Struct{M}^*$ د
+!!{language}~$\Lang{L} \cup \{ P, Q\}$ جوړښت دے۔ د اړتيا پر وخت د
+جهان د دوو برخو بېل نقلونه اخلو، څو دا اتحاد سره بېل کوډ شوے وي۔
+
+$\Domain{N}^{<\omega}$،~$S'$،~$T'$،~$P'$،~$Q'$ او
+$\Struct{N}^*$ په ورته ډول تعريف کړئ۔ ځکه چې د فرض له مخې
+$\Struct{M} \simeq_p \Struct{N}$، د~$\Domain{M}^{<\omega}$ او
+$\Domain{N}^{<\omega}$ تر منځ داسې اړيکه~$I$ شته چې
+$I(\mathbf{a}, \mathbf{b})$ هله او يوازې هله صدق کوي چې
+$\mathbf{a}$ او~$\mathbf{b}$ آيزومورف وي او د
+\olref[bas][pis]{defn:partialisom} د مخ او شا شرط پوره کړي۔ اوس
+$\Struct{K}$ هغه !!{structure} ونيسئ چې !!{domain} ئې د
+$\Struct{M}^*$ او~$\Struct{N}^*$ د !!{domain}s سره بېل کوډ شوے اتحاد
+وي،~$\Struct{M}^*$ او~$\Struct{N}^*$ د فرعي !!{structure}s په توګه
+ولري، او !!{language} ئې يو اضافي دوه‌ځاييز !!{predicate}~$R$ ولري چې په
+اړيکه~$I$ تفسيرېږي، او داسې !!{predicate}s هم ولري چې د دواړو برخو
+!!{domain}s~$\Domain{M}^*$ او~$\Domain{N}^*$ ټاکي۔
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[node distance=2cm, auto, thick, >=stealth']
+    \draw [rounded corners] (0,0) -- (8,0) -- (8,4) -- (0,4) --  cycle;
+    \draw (2,2) circle (0.5cm);
+    \draw (2,2) circle (1.25cm);
+    \draw (6,2) circle (0.5cm);
+    \draw (6,2) circle (1.25cm);
+    \path node at (0.75,3.5) {\large $\Struct{K}$};
+    \path node at (2,2) {\large $\Struct{M}$};
+    \path node at (6,2) {\large $\Struct{N}$};
+    \path node at (3.5,1) {\large $\Struct{M}^*$};
+    \path node at (7.5,1) {\large $\Struct{N}^*$};
+    \node (Idom) at (2.8,2) {};
+    \node (Irng) at (5.2,2) {};
+    \draw[<->, bend left] (Idom) to node {\large $I$} (Irng) ;
+  \end{tikzpicture}
+  \caption{!!{structure}~$\Struct{K}$ او د هغه دننه جزوي
+    آيزومورفيزم۔}
+\end{figure}
+
+مهمه کتنه دا ده چې د~!!{structure}~$\Struct{K}$ په !!{language} کښې يوه د
+انتزاعي منطق !!{sentence}~$!D_1$ شته چې په~$\Struct{K}$ کښې رښتونې
+ده او وايي~$\Struct{M} \models_L !E$ او
+$\Struct{N} \not\models_L !E$؛ د دې دپاره د نسبي کولو خاصيت پکار
+دے۔ همدارنګه، يوه د لومړۍ درجې !!{sentence}~$!D_2$ په~$\Struct{K}$
+کښې رښتونې ده او وايي چې~$\Struct{M} \simeq_p \Struct{N}$ د جزوي
+آيزومورفيزم~$I$ له لارې۔ د لوېنهايم--سکولم د خاصيت له مخې،~$!D_1$
+او~$!D_2$ په ګډه په يوه !!a{enumerable} مدل~$\Struct{K}_0$ کښې
+رښتونې دي؛ په دې مدل کښې په جزوي ډول آيزومورف فرعي جوړښتونه
+$\Struct{M}_0$ او~$\Struct{N}_0$ شته، داسې چې
+$\Struct{M}_0 \models_L !E$ او~$\Struct{N}_0 \not\models_L !E$۔ خو
+!!{enumerable} او په جزوي ډول آيزومورف !!{structure}s د
+\olref[bas][pis]{thm:p-isom1} له مخې په حقيقت کښې آيزومورف دي؛ دا د
+نورمالو انتزاعي منطقونو د آيزومورفيزم له خاصيت سره تناقض دے۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-026):} سرچينې دواړه شاهدې جملې د
+لومړۍ درجې بللې وې، حال دا چې لومړۍ جمله د خپل سري انتزاعي جملې د
+نسبي کولو له لارې لاس ته راځي؛ دلته لومړۍ د انتزاعي منطق جمله او
+دويمه د لومړۍ درجې جمله وبلل شوه۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-027):} سرچينې ګډ جوړښت ته د
+پخواني چپ جوړښت هماغه نوم، او بيا ښکته مدل او چپ فرعي جوړښت ته هم
+يو شان نوم ورکړے و؛ دلته ګډ جوړښت او د هغه شمېرېدونکی مدل په بېلو
+نښو ښودل شوي، او په انځور کښې بهرنی نوم هم ورسره سم شوے دے۔
+\end{proof}
+
+\end{document}

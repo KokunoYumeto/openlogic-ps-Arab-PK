@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 110 high-priority entries from the complete 264-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 113 high-priority entries from the complete 275-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -295,6 +295,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 34,40,73,231; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 45,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 20,40,74,77,78; page: pending stable pagination in a reader containing this unit
   - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) 15,27,57,64; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) 16,20,26,55,62; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -431,6 +432,8 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 32; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 16; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 18,36,48,97; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 20; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -672,6 +675,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 29,34,69,71,75,76; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,33,68,70,73,75; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 25,116,119; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 24,116,120; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -1007,6 +1011,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 30,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,36,76; page: pending stable pagination in a reader containing this unit
   - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 16,18,22,36,56,66,129,133; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 15,17,22,37,38,56,66,75,123,125,131,136,138,149; page: pending stable pagination in a reader containing this unit
   - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) 156; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 168,175; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 29,36,45,52,78,117,119,120,121; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 28,33,41,48,52,79,106,115,117,120,121,122; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROPOSITION
 
@@ -1273,6 +1278,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 14,81,82,131,187,195; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 111,129,165,170,171; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 32,33; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 29,61; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 13; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -1712,6 +1718,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 51; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 15; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SYNTAX
 
@@ -1807,6 +1814,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0191; mod; `content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` source line(s) 1,2,8,12,14,16,18,20; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
   - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 1,2,12,41,42,45,51,63,64,65; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 12,16,38,39,41,47,60,61,62; page: pending stable pagination in a reader containing this unit
   - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) 1; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0203; mod; `content/model-theory/lindstrom/lindstrom.tex` source line(s) 1; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-ORDER-HIERARCHY
 
@@ -1887,6 +1895,8 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 120,126; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 14,29,125,131; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 63; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) 55,58,59,88,99,101,102,124; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) 41,54,57,87,100,103; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 53,70,117; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 33,42,69,83,117,128; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-ISOMORPHISM
 
@@ -1899,6 +1909,8 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
 - Locations:
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 10,14,40,62,95,111,114,119,127,179,182,183,190,196,204,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 10,14,35,41,42,62,95,111,115,118,127,128,187,204; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 39; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 37,76,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 29,55,79,106,115; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 28,33,42,80; page: pending stable pagination in a reader containing this unit
+  - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) 29; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 20,25,28,29,32,38,41,43,60,73,146; page: pending stable pagination in a reader containing this unit
 
 ## TERM-OVERSPILL
 
@@ -1965,6 +1977,7 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
 - Please double-check: In Pakistani Pashto mathematical prose, is «جانشين / مخکښېنی / بلاک / د نامعياري بلاکونو ګڼ ترتيب» the clearest conventional rendering of “successor / predecessor / block / dense ordering of non-standard blocks” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 65,104,112,113,164,167,168,169,170,189,203,212,216,217,218,232,239,240,247,249,250,251,252; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 67,70,110,118,119,174,177,178,179,180,203,218,226,232,233,255,263,264,265,266,267,273; page: pending stable pagination in a reader containing this unit
+  - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 128,131,151; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLE-ARITHMETIC-MODELS
 
@@ -2017,6 +2030,46 @@ This view contains 110 high-priority entries from the complete 264-entry decisio
   - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 25; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) 24; page: pending stable pagination in a reader containing this unit
   - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) 40,107,128,143,157; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 46,118,139,154,169; page: pending stable pagination in a reader containing this unit
+
+## TERM-ABSTRACT-LOGIC
+
+- Source term or sense: abstract logic / normal logic / elementary equivalence in L
+- Choice: انتزاعي منطق / نورمال منطق / په L کښې ابتدايي هم‌ارزي
+- Why provisional: logic, sentence, semantic and proof concepts supported by regional sources; exact abstract-logic and normality labels are provisional
+- Rationale: An abstract logic assigns a sentence set and satisfaction relation to every language. A normal logic obeys the stated invariance and closure properties. L-elementary equivalence compares truth of all sentences supplied by that abstract logic, not only ordinary first-order sentences.
+- Alternatives: مجرد منطق د انتزاعي منطق پر ځاے; قاعده‌مند منطق د نورمال منطق پر ځاے; د L له مخې ابتدايي هم‌ارزي
+- Please double-check: In Pakistani Pashto mathematical prose, is «انتزاعي منطق / نورمال منطق / په L کښې ابتدايي هم‌ارزي» the clearest conventional rendering of “abstract logic / normal logic / elementary equivalence in L” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0203; mod; `content/model-theory/lindstrom/lindstrom.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) 10,13,43,49,50,72,109,122,123,129,133; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) 10,13,41,47,48,71,117,131,137,141; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 14,17,36,37,43,45,121; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 13,17,31,33,34,40,42,110,122,125; page: pending stable pagination in a reader containing this unit
+  - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 57,58,62,63; page: pending stable pagination in a reader containing this unit
+
+## TERM-LOGIC-EXPRESSIVENESS-PROPERTIES
+
+- Source term or sense: expressive / monotonicity / expansion / renaming / Boolean / quantifier / relativization properties
+- Choice: څرګندوونکی / زياتېدنه / غځونه / نوم‌اړونه / بولي / د کميت ټاکونکي / نسبي کول
+- Why provisional: semantic, predicate, relation and function roles supported by regional sources; exact property labels and expressive comparison are provisional
+- Rationale: Expressive comparison is by equality of model classes. The normality properties separately control language extension, finite vocabulary dependence, isomorphism and renaming invariance, Boolean operations, existential projection and restriction to a definable subdomain.
+- Alternatives: د بيان ځواک د څرګندوونکي پر ځاے; مونوتونيت د زياتېدنې پر ځاے; نوم‌بدلون د نوم‌اړونې پر ځاے; محدودول د نسبي کولو پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «څرګندوونکی / زياتېدنه / غځونه / نوم‌اړونه / بولي / د کميت ټاکونکي / نسبي کول» the clearest conventional rendering of “expressive / monotonicity / expansion / renaming / Boolean / quantifier / relativization properties” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) 33,52,55,64,72,73,80,88,90,93,102,111,124,125; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) 50,53,62,71,72,79,87,89,94,103,110,119,133,135; page: pending stable pagination in a reader containing this unit
+  - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) 29; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 63,91,123,124; page: pending stable pagination in a reader containing this unit
+
+## TERM-LINDSTROM-CHARACTERIZATION
+
+- Source term or sense: Lindstrom's theorem / Compactness Property / Downward Lowenheim--Skolem Property / nonstandard stage
+- Choice: د ليندستروم قضيه / د متناهي شاهد خاصيت / د لوېنهايم--سکولم ښکته خاصيت / نامعياري پړاو
+- Why provisional: compactness, countability, order and model concepts supported by regional sources; theorem name and exact property compounds are provisional
+- Rationale: Among normal abstract logics, Compactness and Downward Lowenheim--Skolem force every abstract sentence to have a first-order equivalent. The proof turns failure at every finite back-and-forth rank into a nonstandard stage and then a partial isomorphism contradicting semantic disagreement.
+- Alternatives: د لېنډستروم قضيه د ليندستروم پر ځاے; د فشردګۍ خاصيت د متناهي شاهد پر ځاے; نزولي لوېنهايم--سکولم خاصيت; غيرمعياري مرحله د نامعياري پړاو پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «د ليندستروم قضيه / د متناهي شاهد خاصيت / د لوېنهايم--سکولم ښکته خاصيت / نامعياري پړاو» the clearest conventional rendering of “Lindstrom's theorem / Compactness Property / Downward Lowenheim--Skolem Property / nonstandard stage” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0203; mod; `content/model-theory/lindstrom/lindstrom.tex` source line(s) 2,8,16; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 2,12; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
+  - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 2,24; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 17,23; page: pending stable pagination in a reader containing this unit
+  - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) 2,3,11,14,47,48,55,107,108; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 11,56,149; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

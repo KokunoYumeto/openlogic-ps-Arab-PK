@@ -1271,3 +1271,75 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: restricts transport onto a denumerable set to infinite countable structures.
 - Disclosure: `qualify-countable-structure-as-infinite-plus-adjacent-note`.
 
+## OLMOD-024
+
+- Unit: `OLP-0205`
+- Frozen source: `content/model-theory/lindstrom/abstract-logics.tex` (5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678) at `content/model-theory/lindstrom/abstract-logics.tex:64-71`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:107`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: states that M-prime is the renamed structure corresponding to M and that E-prime is the renamed copy of E.
+- Disclosure: `link-renamed-structure-to-M-and-identify-renamed-sentence-plus-adjacent-note`.
+
+## OLMOD-025
+
+- Unit: `OLP-0205`
+- Frozen source: `content/model-theory/lindstrom/abstract-logics.tex` (5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678) at `content/model-theory/lindstrom/abstract-logics.tex:90-104`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:110`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: states that R has arity n+1, matching its free element argument and n parameter constants.
+- Disclosure: `state-R-as-n-plus-one-place-plus-adjacent-note`.
+
+## OLMOD-026
+
+- Unit: `OLP-0206`
+- Frozen source: `content/model-theory/lindstrom/ls-property.tex` (ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5) at `content/model-theory/lindstrom/ls-property.tex:109-121`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:123`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: classifies D1 as an abstract-logic sentence obtained by relativizing E and D2 as the first-order back-and-forth sentence.
+- Disclosure: `type-D1-as-L-sentence-and-D2-as-first-order-plus-adjacent-note`.
+
+## OLMOD-027
+
+- Unit: `OLP-0206`
+- Frozen source: `content/model-theory/lindstrom/ls-property.tex` (ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5) at `content/model-theory/lindstrom/ls-property.tex:80-120`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:127`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: uses K for the combined coding structure and K_0 for its enumerable model, leaving M_0 and N_0 for the two substructures.
+- Disclosure: `rename-combined-structure-K-and-countable-model-K0-plus-adjacent-note`.
+
+## OLMOD-028
+
+- Unit: `OLP-0207`
+- Frozen source: `content/model-theory/lindstrom/lindstrom-proof.tex` (a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9) at `content/model-theory/lindstrom/lindstrom-proof.tex:24-36`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:40`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: forms each finite conjunction and the final finite disjunction from representatives of the finitely many logical-equivalence classes.
+- Disclosure: `choose-one-representative-per-logical-equivalence-class-plus-adjacent-note`.
+
+## OLMOD-029
+
+- Unit: `OLP-0207`
+- Frozen source: `content/model-theory/lindstrom/lindstrom-proof.tex` (a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9) at `content/model-theory/lindstrom/lindstrom-proof.tex:47-52`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:61`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: states the theorem for a normal abstract logic with Compactness and Downward Lowenheim--Skolem.
+- Disclosure: `add-normal-abstract-logic-hypothesis-plus-adjacent-note`.
+
+## OLMOD-030
+
+- Unit: `OLP-0207`
+- Frozen source: `content/model-theory/lindstrom/lindstrom-proof.tex` (a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9) at `content/model-theory/lindstrom/lindstrom-proof.tex:74-99`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:112`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: uses K for the structure combining M-star, N-star and the ordered stage sort.
+- Disclosure: `rename-combined-coding-structure-K-plus-adjacent-note`.
+
+## OLMOD-031
+
+- Unit: `OLP-0207`
+- Frozen source: `content/model-theory/lindstrom/lindstrom-proof.tex` (a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9) at `content/model-theory/lindstrom/lindstrom-proof.tex:100-121`
+- Pashto target: `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:148`
+- Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
+- Treatment: adds named standard successor stages and a constant above each of them, proves finite satisfiability in K, and obtains a genuinely nonstandard stage in K-star.
+- Disclosure: `apply-compactness-to-theory-with-upper-constant-and-standard-successor-names-plus-adjacent-note`.
+

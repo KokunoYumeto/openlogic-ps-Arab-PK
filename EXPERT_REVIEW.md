@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 202 of 722 source units are translated drafts. This log contains 117 terminology entries and 147 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 207 of 722 source units are translated drafts. This log contains 120 terminology entries and 155 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1056,6 +1056,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: مشترکه سازګاري; تر ټولو زيات نه بېلېدونکې جوړه; بشپړ سازګار سټ د اعظمي سازګار سټ پر ځاے; د رابنسن د يوځايي سازګارۍ قضيه
 - Review question: In Pakistani Pashto mathematical prose, is «ګډه سازګاري / اعظمي نه بېلېدونکې جوړه / اعظمي سازګار سټ / د رابنسن د ګډې سازګارۍ قضيه» the clearest conventional rendering of “joint consistency / maximally inseparable pair / maximal consistent set / Robinson's joint consistency theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete interpolation source and language review
+
+## TERM-ABSTRACT-LOGIC
+
+- Type: terminology
+- Choice: انتزاعي منطق / نورمال منطق / په L کښې ابتدايي هم‌ارزي
+- Uncertainty: logic, sentence, semantic and proof concepts supported by regional sources; exact abstract-logic and normality labels are provisional
+- Alternatives: مجرد منطق د انتزاعي منطق پر ځاے; قاعده‌مند منطق د نورمال منطق پر ځاے; د L له مخې ابتدايي هم‌ارزي
+- Review question: In Pakistani Pashto mathematical prose, is «انتزاعي منطق / نورمال منطق / په L کښې ابتدايي هم‌ارزي» the clearest conventional rendering of “abstract logic / normal logic / elementary equivalence in L” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Lindstrom source and language review
+
+## TERM-LOGIC-EXPRESSIVENESS-PROPERTIES
+
+- Type: terminology
+- Choice: څرګندوونکی / زياتېدنه / غځونه / نوم‌اړونه / بولي / د کميت ټاکونکي / نسبي کول
+- Uncertainty: semantic, predicate, relation and function roles supported by regional sources; exact property labels and expressive comparison are provisional
+- Alternatives: د بيان ځواک د څرګندوونکي پر ځاے; مونوتونيت د زياتېدنې پر ځاے; نوم‌بدلون د نوم‌اړونې پر ځاے; محدودول د نسبي کولو پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «څرګندوونکی / زياتېدنه / غځونه / نوم‌اړونه / بولي / د کميت ټاکونکي / نسبي کول» the clearest conventional rendering of “expressive / monotonicity / expansion / renaming / Boolean / quantifier / relativization properties” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Lindstrom source and language review
+
+## TERM-LINDSTROM-CHARACTERIZATION
+
+- Type: terminology
+- Choice: د ليندستروم قضيه / د متناهي شاهد خاصيت / د لوېنهايم--سکولم ښکته خاصيت / نامعياري پړاو
+- Uncertainty: compactness, countability, order and model concepts supported by regional sources; theorem name and exact property compounds are provisional
+- Alternatives: د لېنډستروم قضيه د ليندستروم پر ځاے; د فشردګۍ خاصيت د متناهي شاهد پر ځاے; نزولي لوېنهايم--سکولم خاصيت; غيرمعياري مرحله د نامعياري پړاو پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د ليندستروم قضيه / د متناهي شاهد خاصيت / د لوېنهايم--سکولم ښکته خاصيت / نامعياري پړاو» the clearest conventional rendering of “Lindstrom's theorem / Compactness Property / Downward Lowenheim--Skolem Property / nonstandard stage” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Lindstrom source and language review
 
 ## DEC-OLFUN-001
 
@@ -2325,6 +2352,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLMOD-023 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous adoption of a bounded manager semantic review against OLP-0197-B006, the frozen source bytes and TERM-ENUMERABLE
+
+## DEC-OLMOD-024
+
+- Type: source-correction
+- Choice: states that M-prime is the renamed structure corresponding to M and that E-prime is the renamed copy of E
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-024 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-025
+
+- Type: source-correction
+- Choice: states that R has arity n+1, matching its free element argument and n parameter constants
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-025 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-026
+
+- Type: source-correction
+- Choice: classifies D1 as an abstract-logic sentence obtained by relativizing E and D2 as the first-order back-and-forth sentence
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-026 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-027
+
+- Type: source-correction
+- Choice: uses K for the combined coding structure and K_0 for its enumerable model, leaving M_0 and N_0 for the two substructures
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-027 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-028
+
+- Type: source-correction
+- Choice: forms each finite conjunction and the final finite disjunction from representatives of the finitely many logical-equivalence classes
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-028 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-029
+
+- Type: source-correction
+- Choice: states the theorem for a normal abstract logic with Compactness and Downward Lowenheim--Skolem
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-029 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-030
+
+- Type: source-correction
+- Choice: uses K for the structure combining M-star, N-star and the ordered stage sort
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-030 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLMOD-031
+
+- Type: source-correction
+- Choice: adds named standard successor stages and a constant above each of them, proves finite satisfiability in K, and obtains a genuinely nonstandard stage in K-star
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-031 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
 
 ## DEC-REL-I
 

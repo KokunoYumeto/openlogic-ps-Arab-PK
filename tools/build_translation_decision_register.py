@@ -58,6 +58,7 @@ PART_AND_CHAPTER = {
     "basics": ("مدل تيوري", "د مدل تيورۍ بنسټونه"),
     "models-of-arithmetic": ("مدل تيوري", "د حساب مدلونه"),
     "interpolation": ("مدل تيوري", "د منځګړيتوب قضيه"),
+    "lindstrom": ("مدل تيوري", "د ليندستروم قضيه"),
 }
 
 OUTPUT_NAMES = [

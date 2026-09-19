@@ -63,7 +63,15 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\\usetoken\{[^{}]*\}\{[^{}]*\}','',residual)
  diagram=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}',s)]
  if diagram(sa) or diagram(sb):
-  checks['unchanged_numeric_diagrams']=diagram(sa)==diagram(sb)
+  source_diagrams,target_diagrams=diagram(sa),diagram(sb)
+  expected_diagrams=list(source_diagrams)
+  for c in corrections_by_unit.get(uid,[]):
+   for change in c.get('qa_tikz_replacements',[]):
+    old,new=re.sub(r'\s+','',change['source']),re.sub(r'\s+','',change['target'])
+    actual=sum(x.count(old) for x in expected_diagrams)
+    assert actual==change['count'],(uid,c['id'],old,actual,change['count'])
+    expected_diagrams=[x.replace(old,new) for x in expected_diagrams]
+  checks['unchanged_numeric_diagrams']=expected_diagrams==target_diagrams
   residual=re.sub(r'(?s)\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}','',residual)
  tableau=lambda s:[re.sub(r'\s+','',d) for d in re.findall(r'(?s)\\begin\{(?:oltableau|tableau)\}.*?\\end\{(?:oltableau|tableau)\}',s)]
  source_tableaux,target_tableaux=tableau(sa),tableau(sb)
