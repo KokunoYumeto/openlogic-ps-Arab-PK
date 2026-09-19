@@ -1,0 +1,481 @@
+% Complete cumulative LaTeX source for the named public edition.
+% Build from releases/ inside the extracted source bundle; dependencies are under ../upstream/.
+% XeLaTeX and the bundled guard workflow are documented in README.md.
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,nicefrac}
+\usepackage{xparse,graphicx,tikz,xcolor}
+\usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
+\usepackage{bidi}
+\hypersetup{pdftitle={OpenLogic Pashto Pakistan - Sets},pdfauthor={Open Logic Project; machine translation adaptation},pdfsubject={Partial edition: sets chapter; 7 of 722 source units}}
+\definecolor{oldiagcolorA}{RGB}{38,89,117}
+\definecolor{oldiagcolorB}{RGB}{189,83,41}
+\definecolor{oldiagcolorC}{RGB}{44,115,104}
+\newcommand{\Setabs}[2]{\{#1 : #2\}}
+\newcommand{\Pow}[1]{\wp(#1)}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Int}{\mathbb{Z}}
+\newcommand{\Rat}{\mathbb{Q}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\PosInt}{\mathbb{Z}^{+}}
+\newcommand{\Bin}{\mathbb{B}}
+\newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\len}[1]{\mathrm{len}(#1)}
+\newcommand{\lif}{\mathbin{\rightarrow}}
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\newcommand{\olsection}[1]{\section{#1}\label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+\NewDocumentCommand{\olref}{O{} O{} O{} m}{\begingroup
+\def\psa{#1}\def\psb{#2}\def\psc{#3}
+\ifx\psa\empty\let\psa\pspart\fi
+\ifx\psb\empty\let\psb\pschapter\fi
+\ifx\psc\empty\let\psc\pssection\fi
+\LR{\ref{\psa:\psb:\psc:#4}}\endgroup}
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\newcommand{\olasset}[1]{\centering\begin{LTR}\centering\resizebox{.46\textwidth}{!}{\input{../upstream/#1}}\end{LTR}}
+\newenvironment{explain}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{tagblock}[1]{}{}
+\newtheorem{defn}{تعريف}[section]
+\newtheorem{ex}[defn]{بېلګه}
+\newtheorem{prop}[defn]{قضيه}
+\newtheorem{thm}[defn]{قضيه}
+\newtheorem{prob}[defn]{تمرين}
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\emergencystretch=2em
+\linespread{1.18}
+\begin{document}
+\setRTL
+\begin{center}
+{\Huge خلاص منطق}\par
+{\Large پښتو - پاکستان}\par\medskip
+{\LARGE سټونه}\par\medskip
+\end{center}
+دا د ماشيني ژباړې د روان کار يوه برخه ده۔ په دې باب کښې شپږ برخې، بېلګې او تمرينونه شامل دي۔ بشپړه نسخه لا د جوړېدو په حال کښې ده۔ اصطلاحي پرېکړې او د کتنې حدود د سرچينو په شواهدو کښې ثبت دي۔
+\begin{LTR}\latinfont\small
+Adapted from the Open Logic Project, revision
+\texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}.
+Original and adaptation: Creative Commons Attribution 4.0 International;
+component exceptions remain in the accompanying upstream source.
+\href{https://openlogicproject.org/}{Open Logic Project}.
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.
+This is an independently prepared machine translation, without upstream endorsement.
+\end{LTR}
+\bigskip
+
+
+
+\olfileid{sfr}{set}{bas}
+\olsection{د غړو له مخې برابري}
+
+\emph{سټ} د څيزونو يوه ټولګه ده چې د يوه څيز په توګه ورته کتل کېږي۔ هغه څيزونه چې سټ ترې جوړ وي، د سټ \emph{عناصر} يا \emph{غړي} بللے شي۔ که \LR{$x$} د يو سټ~\LR{$A$} غړے وي، \LR{$x \in A$} ليکو؛ که نۀ وي، \LR{$x \notin A$} ليکو۔ هغه سټ چې هېڅ غړي نۀ لري، \emph{تش} سټ بللے شي او په ``\LR{$\emptyset$}'' ښودلے کېږي۔
+
+\begin{explain}
+دا مهمه نۀ ده چې سټ څنګه \emph{ټاکو}، د هغۀ غړي څنګه \emph{ترتيبوو}، يا په رښتيا د هغۀ غړي \emph{څو ځله} شمارو۔ يوازې دا مهم دي چې د هغۀ غړي کوم دي۔ دا خبره په لاندې اصل کښې راټولوو۔
+\end{explain}
+
+\begin{defn}[د غړو له مخې برابري]
+  که \LR{$A$} او \LR{$B$} سټونه وي، نو \LR{$A = B$} هله او يوازې هله وي چې د~\LR{$A$} هر غړے د~\LR{$B$} هم غړے وي، او برعکس۔
+\end{defn}
+
+د غړو له مخې برابري د ځينو نښو د کارولو جواز راکوي۔ په عمومي توګه، چې کله ځينې څيزونه \LR{$a_{1}$}، \dots، \LR{$a_{n}$} ولرو، نو \LR{$\{a_{1}, \dots, a_{n}\}$} \emph{هم هغه} سټ دے چې غړي ئې \LR{$a_1, \ldots, a_n$} دي۔ په ``\emph{هم هغه}'' ټينګار کوو، ځکه چې د غړو له مخې برابري راته وائي چې داسې سټ يوازې \emph{يو} کېدے شي۔ په حقيقت کښې، د غړو له مخې برابري د لاندې خبرې جواز هم راکوي:
+  \[
+    \{a, a, b\} = \{a, b\} = \{b,a\}.
+  \]
+دا هم هغه خبره څرګندوي چې د سټونو په پام کښې نيولو پر وخت، د هغو د غړو ترتيب يا دا چې څو ځله ښودل شوي دي، مهم نۀ دي۔
+
+\begin{tagblock}{novice}
+\begin{ex}
+چې کله د څيزونو يوه ډله ولرئ، هغه په يو سټ کښې راټولولے شئ۔ د بېلګې په توګه، د رېچرډ د وروڼو او خوېندو سټ يو داسې سټ دے چې يو کس لري، او هغه د \LR{$S=\{\textrm{Ruth}\}$} په بڼه ليکلے شو۔ له \LR{$4$} څخه د کوچنيو مثبتو صحيح عددونو سټ \LR{$\{1, 2, 3\}$} دے، خو د \LR{$\{3, 2, 1\}$} يا آن د \LR{$\{1, 2, 1, 2, 3\}$} په بڼه هم ليکل کېدے شي۔ د غړو له مخې د برابرۍ له مخې، دا ټول هم يو سټ دے۔ ځکه چې د \LR{$\{1, 2, 3\}$} هر غړے د \LR{$\{3, 2, 1\}$} (او د \LR{$\{1, 2, 1, 2, 3\}$}) هم غړے دے، او برعکس۔
+\end{ex}
+\end{tagblock}
+
+ډېر ځله به يو سټ د يو داسې خاصيت په وسيله ټاکو چې د هغۀ غړي ئې په ګډه لري۔ د دې دپاره به دا لنډه نښه کاروو: \LR{$\Setabs{x}{\phi(x)}$}، چې پکښې \LR{$\phi(x)$} د هغه خاصيت استازيتوب کوي چې~\LR{$x$} ئې بايد ولري، څو د سټ په غړو کښې وشمېرل شي۔
+
+\begin{tagblock}{novice}
+\begin{ex}
+زمونږ په بېلګه کښې، \LR{$S$} په دې بڼه هم ټاکلے شو:
+\[
+S = \Setabs{x}{x \text{\RL{ د رېچرډ ورور يا خور دے}}}.
+\]
+\end{ex}
+\end{tagblock}
+
+\begin{tagblock}{math}
+\begin{ex}
+يو عدد هله او يوازې هله \emph{کامل} بللے شي چې د خپلو حقيقي قاسمونو له مجموعې سره برابر وي (يعنې هغه عددونه چې دا عدد پرې پوره وېشل کېږي، خو پخپله له دې عدد سره برابر نۀ وي)۔ د بېلګې په توګه، \LR{$6$} کامل دے ځکه چې حقيقي قاسمونه ئې \LR{$1$}، \LR{$2$} او~\LR{$3$} دي، او \LR{$6 = 1 + 2 + 3$}۔ په حقيقت کښې، \LR{$6$} له \LR{$10$} څخه يوازينے کوچنے مثبت صحيح عدد دے چې کامل دے۔ نو د غړو له مخې د برابرۍ په کارولو سره وئيلے شو:
+\[
+	\{6\} = \Setabs{x}{x\text{\RL{ کامل دے او }}0 \leq x \leq 10}
+\]
+ښي لاس ته نښه داسې لولو: ``د هغو \LR{$x$} ګانو سټ چې \LR{$x$} کامل وي او \LR{$0 \leq x \leq 10$} وي''۔ دلته برابري دا خبره تائيدوي چې د سټونو په پام کښې نيولو پر وخت، د هغو د ټاکلو طريقه مهمه نۀ ده۔ او په لا عمومي توګه، د غړو له مخې برابري ډاډ راکوي چې تل د هغو \LR{$x$} ګانو يوازې يو سټ وي چې \LR{$\phi(x)$} وي۔ نو د غړو له مخې برابري دا جواز راکوي چې \LR{$\Setabs{x}{\phi(x)}$} ته د هغو \LR{$x$} ګانو \emph{هم هغه} سټ ووايو چې~\LR{$\phi(x)$} وي۔
+\end{ex}
+\end{tagblock}
+
+د غړو له مخې برابري راته د دې ښودلو يوه طريقه راکوي چې سټونه برابر دي: د \LR{$A = B$} د ښودلو دپاره، وښايئ چې هر کله \LR{$x \in A$} وي نو \LR{$x \in B$} هم وي، او هر کله \LR{$y \in B$} وي نو \LR{$y \in A$} هم وي۔
+
+\begin{prob}
+ثابت کړئ چې له يو څخه زيات تش سټونه نۀ شي کېدے، يعنې وښايئ چې که \LR{$A$} او \LR{$B$} داسې سټونه وي چې هېڅ غړي نۀ لري، نو \LR{$A = B$}۔
+\end{prob}
+
+
+
+\olfileid{sfr}{set}{sub}
+\olsection{فرعي سټونه او د فرعي سټونو سټونه}
+
+\begin{explain}
+مونږ به ډېر ځله سټونه سره پرتله کول غواړو۔ د پرتله کولو يو څرګند ډول داسې دے: \emph{هر هغه څيز چې په يو سټ کښې وي، په بل کښې هم وي}۔ دا حالت دومره مهم دے چې د دې دپاره نوې نښې معرفي کړو۔
+\end{explain}
+
+\begin{defn}[فرعي سټ]
+که د يو سټ \LR{$A$} هر غړے د~\LR{$B$} هم غړے وي، نو وايو چې \LR{$A$} د~\LR{$B$} يو \emph{فرعي سټ} دے، او \LR{$A \subseteq B$} ليکو۔ که \LR{$A$} د~\LR{$B$} فرعي سټ نۀ وي، \LR{$A \not\subseteq B$} ليکو۔ که \LR{$A \subseteq B$} وي خو \LR{$A \neq B$} وي، \LR{$A \subsetneq B$} ليکو او وايو چې \LR{$A$} د \LR{$B$} يو \emph{خاص فرعي سټ} دے۔
+\end{defn}
+
+\begin{ex}
+هر سټ د خپل ځان فرعي سټ دے، او \LR{$\emptyset$} د هر سټ فرعي سټ دے۔ د جفتو طبيعي عددونو سټ د طبيعي عددونو د سټ فرعي سټ دے۔ همدارنګه، \LR{$\{ a, b \} \subseteq \{ a, b, c \}$}۔ خو \LR{$\{ a, b, e \}$} د \LR{$\{ a, b, c \}$} فرعي سټ نۀ دے۔
+\end{ex}
+
+\begin{ex}
+عدد \LR{$2$} د صحيح عددونو د سټ يو غړے دے، حال دا چې د جفتو عددونو سټ د صحيح عددونو د سټ فرعي سټ دے۔ خو يو سټ کېدے شي د بل سټ \emph{هم} غړے وي او هم فرعي سټ، د بېلګې په توګه، \LR{$\{0\} \in \{0, \{0\}\}$} او هم \LR{$\{0\} \subseteq \{0, \{0\}\}$}۔
+\end{ex}
+
+د غړو له مخې برابري د سټونو د برابرۍ معيار راکوي: \LR{$A = B$} هله او يوازې هله وي چې د~\LR{$A$} هر غړے د~\LR{$B$} هم غړے وي، او برعکس۔ د ``فرعي سټ'' تعريف \LR{$A \subseteq B$} بالکل د دې معيار د لومړۍ نيمې په توګه تعريفوي: د~\LR{$A$} هر غړے د~\LR{$B$} هم غړے وي۔ البته، که \LR{$A$} او \LR{$B$} سره بدل کړو، تعريف بيا هم عملي کېږي: يعنې \LR{$B \subseteq A$} هله او يوازې هله وي چې د~\LR{$B$} هر غړے د~\LR{$A$} هم غړے وي۔ او دا بيا بالکل د غړو له مخې د برابرۍ ``برعکس'' برخه ده۔ په نورو ټکو، د غړو له مخې له برابرۍ نه دا نتيجه راوځي چې سټونه هله او يوازې هله برابر وي چې د يو بل فرعي سټونه وي۔
+
+\begin{prop}
+\LR{$A = B$} هله او يوازې هله وي چې \LR{$A \subseteq B$} او \LR{$B \subseteq A$} دواړه وي۔
+\end{prop}
+
+اوس د ځينو نورو ګټورو نښو د معرفي کولو دپاره هم ښه موقع ده۔ د دې په تعريف کښې چې \LR{$A$} کله د~\LR{$B$} فرعي سټ وي، مونږ ووئيل چې ``د~\LR{$A$} هر غړے \dots دے''، او د ``\LR{$\dots$}'' ځاے مو په ``د \LR{$B$} غړے'' ډک کړ۔ خو دا د عبارت دومره عامه \emph{بڼه} ده چې د دې دپاره د صوري نښو معرفي کول به ګټور وي۔
+
+\begin{defn}\ollabel{forallxina}
+\LR{$(\forall x \in A)\phi$} د \LR{$\forall x(x \in A \lif \phi)$} لنډه بڼه ده۔ همدارنګه، \LR{$(\exists x \in A)\phi$} د \LR{$\exists x(x \in A \land \phi)$} لنډه بڼه ده۔
+\end{defn}
+
+د دې نښو په کارولو سره وئيلے شو چې \LR{$A \subseteq B$} هله او يوازې هله وي چې \LR{$(\forall x \in A)x \in B$} وي۔
+
+اوس د يو ځانګړي ډول سټ څېړنې ته ځو: د يو ټاکلي سټ د ټولو فرعي سټونو سټ۔
+
+\begin{defn}[د فرعي سټونو سټ]
+هغه سټ چې د يو سټ~\LR{$A$} ټول فرعي سټونه پکښې وي، د~\LR{$A$} \emph{د فرعي سټونو سټ} بللے شي، او \LR{$\Pow{A}$} ليکل کېږي۔
+  \[
+    \Pow{A} = \Setabs{B}{B \subseteq A}
+  \]
+\end{defn}
+
+\begin{ex}
+د \LR{$\{ a, b, c \}$} ټول ممکن فرعي سټونه کوم دي؟ دا دي: \LR{$\emptyset$}، \LR{$\{a \}$}، \LR{$\{b\}$}، \LR{$\{c\}$}، \LR{$\{a, b\}$}، \LR{$\{a, c\}$}، \LR{$\{b, c\}$}، \LR{$\{a, b, c\}$}۔ د دې ټولو فرعي سټونو سټ \LR{$\Pow{\{a,b,c\}}$} دے:
+\[
+\Pow{\{ a, b, c \}} = \{\emptyset, \{a \}, \{b\}, \{c\}, \{a, b\},
+\{b, c\}, \{a, c\}, \{a, b, c\}\}
+\]
+\end{ex}
+
+\begin{prob}
+د \LR{$\{a, b, c, d\}$} ټول فرعي سټونه وليکئ۔
+\end{prob}
+
+\begin{prob}
+وښايئ چې که \LR{$A$} د \LR{$n$} په شمېر غړي ولري، نو \LR{$\Pow{A}$} د \LR{$2^n$} په شمېر غړي لري۔
+\end{prob}
+
+
+
+\olfileid{sfr}{set}{imp}
+\olsection{ځينې مهم سټونه}
+
+\begin{ex}
+مونږ به زياتره له هغو سټونو سره کار لرو چې غړي ئې رياضيکي څيزونه وي۔ څلور داسې سټونه دومره مهم دي چې ځانګړي نومونه لري:
+\begin{multline*}
+    \Nat = \{0, 1, 2, 3, \ldots\} \\
+    \shoveright{\text{\RL{د طبيعي عددونو سټ}}}\\
+    \shoveleft{\Int = \{\ldots, -2, -1, 0, 1, 2, \ldots\}} \\
+    \shoveright{\text{\RL{د صحيح عددونو سټ}}}\\
+    \shoveleft{\Rat = \Setabs{\nicefrac{m}{n}}{m, n \in \Int\text{\RL{ او }}n \neq 0}}\\
+    \shoveright{\text{\RL{د ناطقو عددونو سټ}}}\\
+    \shoveleft{\Real = (-\infty, \infty)}\\
+    \text{\RL{د حقيقي عددونو سټ (پيوستار)}}
+\end{multline*}
+دا ټول \emph{نامتناهي} سټونه دي، يعنې د هر يوه غړي په نامتناهي شمېر دي۔
+
+چې کله د دې سټونو له يوه نه بل ته ځو، خپلې زېرمې ته \emph{نور} عددونه ورزياتوو۔ په حقيقت کښې، دا بايد څرګنده وي چې \LR{$\Nat \subseteq \Int \subseteq \Rat \subseteq \Real$}: ځکه چې هر طبيعي عدد صحيح عدد دے؛ هر صحيح عدد ناطق عدد دے؛ او هر ناطق عدد حقيقي عدد دے۔ همدارنګه، دا هم بايد څرګنده وي چې \LR{$\Nat \subsetneq \Int \subsetneq \Rat$}، ځکه چې \LR{$-1$} صحيح عدد دے خو طبيعي عدد نۀ دے، او \LR{$\nicefrac{1}{2}$} ناطق عدد دے خو صحيح عدد نۀ دے۔ دا لږه ناڅرګنده خبره ده چې \LR{$\Rat \subsetneq \Real$}، يعنې داسې حقيقي عددونه شته چې ناطق نۀ دي\oliflabeldef{sfr:arith:real:realline}{، خو په \olref[arith][real]{realline} کښې به بيا دې خبرې ته راوګرځو}{}۔
+
+کله ناکله به د مثبتو صحيح عددونو سټ \LR{$\PosInt = \{1, 2, 3, \dots\}$} او هغه سټ هم کاروو چې يوازې لومړي دوه طبيعي عددونه لري، يعنې \LR{$\Bin = \{0, 1\}$}۔
+\end{ex}
+
+\begin{tagblock}{compsci}
+\begin{ex}[توريز تسلسلونه]
+يوه بله په زړه پورې بېلګه د يوې الفبا \LR{$A$} د \emph{متناهي توريزو تسلسلونو} سټ \LR{$A^{*}$} دے: د~\LR{$A$} د عناصرو هره متناهي لړۍ د \LR{$A$} يو توريز تسلسل دے۔ د هرې الفبا~\LR{$A$} دپاره، \emph{تش توريز تسلسل \LR{$\Lambda$}} هم د~\LR{$A$} په توريزو تسلسلونو کښې شاملوو۔ د بېلګې په توګه،
+\begin{multline*}
+\Bin^*
+=\{\Lambda,0,1,00,01,10,11,\\
+000,001,010,011,100,101,110,111,0000,\ldots\}.
+\end{multline*}
+که \LR{$x=x_{1}\ldots x_{n}\in A^{*}$} يو داسې توريز تسلسل وي چې د \LR{$A$} له \LR{$n$} ``تورو'' جوړ وي، نو وايو چې د دې تسلسل \emph{اوږدوالے}~\LR{$n$} دے او \LR{$\len{x}=n$} ليکو۔
+\end{ex}
+\end{tagblock}
+
+\begin{ex}[نامتناهي لړۍ]
+د هر سټ \LR{$A$} دپاره، د~\LR{$A$} د غړو د نامتناهي لړيو سټ~\LR{$A^\omega$} هم په پام کښې نيولے شو۔ يوه نامتناهي لړۍ \LR{$a_1a_2a_3a_4\dots$} د څيزونو له داسې لست نه جوړه وي چې په يو لوري نامتناهي غځېږي، او هر څيز ئې د~\LR{$A$} يو غړے وي۔
+\end{ex}
+
+
+
+\olfileid{sfr}{set}{uni}
+\olsection{اتحادونه او تقاطعې}
+
+\begin{explain}
+په \olref[sfr][set][bas]{sec} کښې مو د تجريد په وسيله د سټونو تعريفونه معرفي کړل، يعنې د \LR{$\Setabs{x}{\phi(x)}$} په بڼه تعريفونه۔ دلته يو خاصيت~\LR{$\phi$} په کار راوړو، او دا خاصيت د هغو سټونو يادونه کولے شي چې مخکې مو تعريف کړي دي۔ نو د بېلګې په توګه، که \LR{$A$} او~\LR{$B$} سټونه وي، د \LR{$\Setabs{x}{x \in A \lor x \in B}$} سټ له هغو ټولو څيزونو جوړ دے چې د \LR{$A$} يا~\LR{$B$} غړي وي، يعنې دا هغه سټ دے چې د \LR{$A$} او~\LR{$B$} غړي سره يوځاے کوي۔ دا لکه په \olref{fig:union} کښې انځورولے شو، چې رنګ شوې ساحه د دواړو سټونو \LR{$A$} او~\LR{$B$} غړي په ګډه ښيي۔
+
+\begin{figure}
+  \olasset{assets/diagrams/union.tikz}
+  \caption{د دوو سټونو اتحاد \LR{$A \cup B$} د~\LR{$A$} د غړو او د~\LR{$B$} د غړو ګډ سټ دے۔}
+  \ollabel{fig:union}
+\end{figure}
+
+په سټونو دا عمل، يعنې يوځاے کول ئې، ډېر ګټور او عام دے؛ نو يو صوري نوم او نښه ورکوو۔
+\end{explain}
+
+\begin{defn}[اتحاد]
+د دوو سټونو \LR{$A$} او \LR{$B$} \emph{اتحاد}، چې \LR{$A \cup B$} ليکل کېږي، د ټولو هغو څيزونو سټ دے چې د \LR{$A$}، \LR{$B$}، يا د دواړو غړي وي۔
+\[
+A \cup B = \Setabs{x}{x \in A \lor x \in B}
+\]
+\end{defn}
+
+\begin{ex}
+څرنګه چې د غړو تکرار مهم نۀ دے، د هغو دوو سټونو اتحاد چې ګډ غړے ولري، هغه غړے يوازې يو ځل لري؛ د بېلګې په توګه، \LR{$\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$}۔
+
+د يو سټ او د هغۀ د يو فرعي سټ اتحاد هم هغه لوے سټ دے: \LR{$\{a, b, c \} \cup \{a \} = \{a, b, c\}$}۔
+
+له تش سټ سره د يو سټ اتحاد له هم هغه سټ سره برابر دے: \LR{$\{a, b, c \} \cup \emptyset = \{a, b, c \}$}۔
+\end{ex}
+
+\begin{prob}
+ثابت کړئ چې که \LR{$A \subseteq B$} وي، نو \LR{$A \cup B = B$}۔
+\end{prob}
+
+\begin{explain}
+د اتحاد يو ``دوه ګونے'' عمل هم په پام کښې نيولے شو۔ دا هغه عمل دے چې د هغو ټولو غړو سټ جوړوي چې د~\LR{$A$} غړي وي او د~\LR{$B$} هم غړي وي۔ دې عمل ته \emph{تقاطع} وئيل کېږي، او لکه په \olref{fig:intersection} کښې ښودل کېدے شي۔
+\begin{figure}
+  \olasset{assets/diagrams/intersection.tikz}
+  \caption{د دوو سټونو تقاطع \LR{$A \cap B$} د هغو د ګډو غړو سټ دے۔}
+  \ollabel{fig:intersection}
+\end{figure}
+\end{explain}
+
+\begin{defn}[تقاطع]
+د دوو سټونو \LR{$A$} او \LR{$B$} \emph{تقاطع}، چې \LR{$A \cap B$} ليکل کېږي، د ټولو هغو څيزونو سټ دے چې د \LR{$A$} او~\LR{$B$} دواړو غړي وي۔
+\[
+A \cap B = \Setabs{x}{x \in A \land x \in B}
+\]
+دوه سټونه هله \emph{بېل} بللے شي چې تقاطع ئې تشه وي۔ مطلب دا چې هېڅ ګډ غړي نۀ لري۔
+\end{defn}
+
+\begin{ex}
+که دوه سټونه هېڅ ګډ غړي ونۀ لري، تقاطع ئې تشه ده: \LR{$\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$}۔
+
+که دوه سټونه ګډ غړي ولري، تقاطع ئې د هغو ټولو سټ دے: \LR{$\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$}۔
+
+د يو سټ او د هغۀ د يو فرعي سټ تقاطع هم هغه کوچنے سټ دے: \LR{$\{a, b, c\} \cap \{a, b\} = \{a, b\}$}۔
+
+له تش سټ سره د هر سټ تقاطع تشه ده: \LR{$\{a, b, c \} \cap \emptyset = \emptyset$}۔
+\end{ex}
+
+\begin{prob}
+په دقيقه توګه ثابت کړئ چې که \LR{$A \subseteq B$} وي، نو \LR{$A \cap B = A$}۔
+\end{prob}
+
+\begin{explain}
+له دوو څخه د زياتو سټونو اتحاد يا تقاطع هم جوړولے شو۔ په عمومي توګه د دې د بيانولو يوه ښکلې طريقه دا ده: فرض کړئ چې ټول هغه سټونه چې اتحاد (يا تقاطع) ئې جوړول غواړئ، په يو سټ کښې راټول کړئ۔ بيا د ټولو اصلي سټونو اتحاد د هغو ټولو څيزونو د سټ په توګه تعريفولے شو چې لږ تر لږه د دې سټ د يو غړي غړي وي، او تقاطع د هغو ټولو څيزونو د سټ په توګه چې د دې سټ د هر غړي غړي وي۔
+\end{explain}
+
+\begin{defn}
+که \LR{$A$} د سټونو يو سټ وي، نو \LR{$\bigcup A$} د~\LR{$A$} د غړو د غړو سټ دے:
+\begin{align*}
+\bigcup A & = \Setabs{x}{x \text{\RL{ د دې سټ د يو غړي غړے دے: }} A},
+\text{\RL{ يعنې،}}\\
+& = \Setabs{x}{\text{\RL{داسې يو }} B \in A
+  \text{\RL{ شته چې }} x \in B}
+\end{align*}
+\end{defn}
+
+\begin{defn}
+که \LR{$A$} د سټونو يو سټ وي، نو \LR{$\bigcap A$} د هغو څيزونو سټ دے چې د~\LR{$A$} ټول عناصر ئې په ګډه لري:
+\begin{align*}
+\bigcap A & = \Setabs{x}{x \text{\RL{ د دې سټ د هر غړي غړے دے: }} A},
+\text{\RL{ يعنې،}}\\
+ & = \Setabs{x}{\text{\RL{د هر }} B \in A, x \in B}
+\end{align*}
+\end{defn}
+
+\begin{ex}
+فرض کړئ چې \LR{$A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}$}۔ بيا \LR{$\bigcup A = \{ a, b, d, e \}$} او \LR{$\bigcap A = \{ a \}$}۔
+\end{ex}
+\begin{prob}
+	وښايئ چې که \LR{$A$} يو سټ وي او \LR{$A \in B$} وي، نو \LR{$A \subseteq \bigcup B$}۔
+\end{prob}
+
+د سټونو د يوې لړۍ \LR{$A_1$}، \LR{$A_2$}، \dots دپاره هم دا کار کولے شو:
+\begin{align*}
+\bigcup_i A_i & = \Setabs{x}{x \text{\RL{ له دې سټونو څخه د يوه غړے دے: }} A_i}\\
+\bigcap_i A_i & = \Setabs{x}{x \text{\RL{ د دې هر سټ غړے دے: }} A_i}.
+\end{align*}
+
+چې کله د سټونو يو \emph{اندکس} ولرو، يعنې داسې يو سټ \LR{$I$} چې د هر \LR{$i \in I$} دپاره \LR{$A_i$} په پام کښې نيسو، دا لنډې بڼې هم کارولے شو:
+\begin{align*}
+	\bigcup_{i \in I} A_i & = \bigcup \Setabs{A_i }{i \in I}\\
+	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
+\end{align*}
+
+په پای کښې، کېدے شي د~\LR{$A$} د هغو ټولو غړو سټ په پام کښې نيول وغواړو چې په~\LR{$B$} کښې نۀ وي۔ دا لکه په \olref{difference} کښې انځورولے شو۔
+
+\begin{figure}
+  \olasset{assets/diagrams/difference.tikz}
+  \caption{د دوو سټونو تفاضل \LR{$A \setminus B$} د~\LR{$A$} د هغو غړو سټ دے چې د~\LR{$B$} غړي نۀ وي۔}
+  \ollabel{difference}
+\end{figure}
+
+\begin{defn}[تفاضل]
+د سټونو \emph{تفاضل}~\LR{$A \setminus B$} د \LR{$A$} د هغو ټولو غړو سټ دے چې د~\LR{$B$} غړي نۀ وي، يعنې،
+\[
+A\setminus B = \Setabs{x}{x\in A \text{\RL{ او }} x \notin B}.
+\]
+\end{defn}
+
+\begin{prob}
+	ثابت کړئ چې که \LR{$A \subsetneq B$} وي، نو \LR{$B \setminus A \neq \emptyset$}۔
+\end{prob}
+
+
+
+\olfileid{sfr}{set}{pai}
+\olsection{جوړې، څوګونې او کارتيزي حاصل ضربونه}
+
+\begin{explain}
+د غړو له مخې له برابرۍ نه دا نتيجه راوځي چې د سټونو عناصر ترتيب نۀ لري۔ نو که د ترتيب استازيتوب کول غواړو، \emph{مرتبې جوړې} \LR{$\tuple{x, y}$} کاروو۔ په يوه نامرتبه جوړه \LR{$\{x, y\}$} کښې ترتيب مهم نۀ دے: \LR{$\{x, y\} = \{y, x\}$}۔ په مرتبه جوړه کښې ترتيب مهم دے: که \LR{$x \neq y$} وي، نو \LR{$\tuple{x, y} \neq \tuple{y, x}$}۔
+
+د سټونو په نظريه کښې مرتبې جوړې څنګه په پام کښې ونيسو؟ بنيادي خبره دا ده چې دا نظر وساتو: مرتبې جوړې هله او يوازې هله برابرې وي چې لومړے عنصر ئې هم يو وي او دويم عنصر ئې هم يو وي، يعنې:
+\[
+  \tuple{a, b}= \tuple{c, d}\text{\RL{ هله او يوازې هله چې دواړه }}a = c \text{\RL{ او }}b=d.
+\]
+د وينر--کوراتوسکي تعريف په کارولو سره د سټونو په نظريه کښې مرتبې جوړې تعريفولے شو۔
+\end{explain}
+
+\begin{defn}[مرتبه جوړه]\ollabel{wienerkuratowski}
+	\LR{$\tuple{a, b} = \{\{a\}, \{a, b\}\}$}۔
+\end{defn}
+
+\begin{prob}
+	د \olref[sfr][set][pai]{wienerkuratowski} په کارولو سره ثابت کړئ چې \LR{$\tuple{a, b}= \tuple{c, d}$} هله او يوازې هله وي چې \LR{$a = c$} او \LR{$b=d$} دواړه وي۔
+\end{prob}
+
+\begin{explain}
+چې د مرتبې جوړې تعريف مو وټاکلو، د نورو سټونو د تعريف دپاره ئې کارولے شو۔ د بېلګې په توګه، کله کله له دوو څخه د زياتو څيزونو مرتبې لړۍ هم غواړو، لکه \emph{درې ګونې} \LR{$\tuple{x, y, z}$}، \emph{څلورګونې} \LR{$\tuple{x, y, z, u}$}، او داسې نورې۔ درې ګونې د ځانګړو مرتبو جوړو په توګه ګڼلے شو، چې لومړے عنصر ئې پخپله يوه مرتبه جوړه وي: \LR{$\tuple{x, y, z}$} هم \LR{$\tuple{\tuple{x, y},z}$} دے۔ د څلورګونو دپاره هم همداسې ده: \LR{$\tuple{x,y,z,u}$} هم \LR{$\tuple{\tuple{\tuple{x,y},z},u}$} دے، او داسې نور۔ په عمومي توګه، د \emph{مرتبو \LR{$n$}-ګونو} \LR{$\tuple{x_1, \dots, x_n}$} خبره کوو۔
+
+د مرتبو جوړو، يا د نورو مرتبو \LR{$n$}-ګونو، ځينې سټونه به ګټور وي۔
+\end{explain}
+
+\begin{defn}[کارتيزي حاصل ضرب]
+د ورکړل شوو سټونو \LR{$A$} او \LR{$B$} \emph{کارتيزي حاصل ضرب} \LR{$A \times B$} داسې تعريفېږي:
+\[
+  A \times B = \Setabs{\tuple{x, y}}{x \in A \text{\RL{ او }} y \in B}.
+\]
+\end{defn}
+
+\begin{ex}
+که \LR{$A = \{0, 1\}$} او \LR{$B = \{1, a, b\}$} وي، نو حاصل ضرب ئې دا دے:
+\[
+A \times B = \{ \tuple{0, 1}, \tuple{0, a}, \tuple{0, b},
+    \tuple{1, 1}, \tuple{1, a}, \tuple{1, b} \}.
+\]
+\end{ex}
+
+\begin{ex}
+که \LR{$A$} يو سټ وي، له خپل ځان سره د \LR{$A$} حاصل ضرب، \LR{$A \times A$}، د~\LR{$A^2$} په بڼه هم ليکل کېږي۔ دا د هغو \emph{ټولو} جوړو \LR{$\tuple{x, y}$} سټ دے چې \LR{$x, y \in A$} وي۔ د ټولو درې ګونو \LR{$\tuple{x, y, z}$} سټ \LR{$A^3$} دے، او داسې نور۔ يو بازګشتي تعريف ورکولے شو:
+\begin{align*}
+  A^1 & = A\\
+  A^{k+1} & = A^k \times A
+\end{align*}
+\end{ex}
+
+\begin{prob}
+د \LR{$\{1, 2, 3\}^3$} ټول غړي وليکئ۔
+\end{prob}
+
+\begin{prop}\ollabel{cardnmprod}
+که \LR{$A$} د \LR{$n$} په شمېر غړي او \LR{$B$} د \LR{$m$} په شمېر غړي ولري، نو \LR{$A \times B$} د \LR{$n\cdot m$} په شمېر عناصر لري۔
+\end{prop}
+
+\begin{proof}
+په~\LR{$A$} کښې د هر غړي~\LR{$x$} دپاره، د \LR{$\tuple{x, y} \in A \times B$} په بڼه د \LR{$m$} په شمېر غړي شته۔ فرض کړئ چې \LR{$B_x = \Setabs{\tuple{x, y}}{y \in B}$}۔ څرنګه چې هر کله \LR{$x_1 \neq x_2$} وي، \LR{$\tuple{x_1, y} \neq \tuple{x_2, y}$} وي، نو \LR{$B_{x_1} \cap B_{x_2} = \emptyset$}۔ خو که \LR{$A = \{x_1, \dots, x_n\}$} وي، نو \LR{$A \times B = B_{x_1} \cup \dots \cup B_{x_n}$}، او ځکه د \LR{$n\cdot m$} په شمېر غړي لري۔
+
+د دې د انځورولو دپاره، د~\LR{$A \times B$} غړي په يوه جالۍ کښې ترتيب کړئ:
+\[
+\begin{array}{rcccc}
+  B_{x_1} = & \{\tuple{x_1, y_1} & \tuple{x_1, y_2} & \dots & \tuple{x_1, y_m}\}\\
+  B_{x_2} = & \{\tuple{x_2, y_1} & \tuple{x_2, y_2} & \dots & \tuple{x_2, y_m}\}\\
+  \vdots & & \vdots\\
+  B_{x_n} = & \{\tuple{x_n, y_1} & \tuple{x_n, y_2} & \dots & \tuple{x_n, y_m}\}
+\end{array}
+\]
+څرنګه چې ټول \LR{$x_i$} يو له بله بېل دي، او ټول \LR{$y_j$} يو له بله بېل دي، په دې جالۍ کښې هېڅ دوه جوړې يو شان نۀ دي، او شمېر ئې \LR{$n\cdot m$} دے۔
+\end{proof}
+
+\begin{prob}
+په~\LR{$k$} د استقرا په وسيله وښايئ چې د هر \LR{$k \ge 1$} دپاره، که \LR{$A$} د \LR{$n$} په شمېر غړي ولري، نو \LR{$A^k$} د \LR{$n^k$} په شمېر غړي لري۔
+\end{prob}
+
+\begin{ex}
+که \LR{$A$} يو سټ وي، په~\LR{$A$} يوه \emph{کلمه} د~\LR{$A$} د غړو هره لړۍ ده۔ يوه لړۍ د~\LR{$A$} د غړو د يوې \LR{$n$}-ګونې په توګه ګڼل کېدے شي۔ د بېلګې په توګه، که \LR{$A = \{a, b, c\}$} وي، نو لړۍ ``\LR{$bac$}'' د درې ګونې~\LR{$\tuple{b, a, c}$} په توګه ګڼل کېدے شي۔ کلمې، يعنې د نښو لړۍ، په کمپيوټر ساينس کښې بنيادي اهميت لري۔ د منل شوي دود له مخې، د~\LR{$A$} غړي د~\LR{$1$} اوږدوالي لرونکې لړۍ ګڼو، او \LR{$\emptyset$} د~\LR{$0$} اوږدوالي لرونکې لړۍ ګڼو۔ بيا په~\LR{$A$} د \emph{ټولو} کلمو سټ دا دے:
+\[
+A^* = \{\emptyset\} \cup A \cup A^2 \cup A^3 \cup \dots
+\]
+\end{ex}
+
+
+
+\olfileid{sfr}{set}{rus}
+\olsection{د رسل پاراډوکس}
+
+د غړو له مخې برابري د هغو \LR{$x$} ګانو د \emph{هم هغه} سټ دپاره د \LR{$\Setabs{x}{\phi(x)}$} نښې د کارولو جواز راکوي چې~\LR{$\phi(x)$} وي۔ خو د غړو له مخې برابري \emph{په اصل کښې} يوازې د دې خبرې جواز راکوي: \emph{که} داسې يو سټ وي چې غړي ئې ټول او يوازې هغه څيزونه وي چې \LR{$\phi$} وي، \emph{نو} داسې سټ يوازې يو وي۔ په بل عبارت: د يو~\LR{$\phi$} له ټاکلو وروسته، سټ \LR{$\Setabs{x}{\phi(x)}$} يوازينے دے، \emph{که موجود وي}۔
+
+خو دا شرط مهم دے!{} بنيادي خبره دا ده چې له هر خاصيت څخه د \emph{سټ جوړول} ممکن نۀ دي۔ يعنې ځينې خاصيتونه سټونه \emph{نۀ} تعريفوي۔ که ټولو تعريفولے، نو له ښکاره تناقضونو سره به مخ شوو۔ د دې تر ټولو مشهوره بېلګه د رسل پاراډوکس دے۔
+
+سټونه د نورو سټونو غړي کېدے شي؛ د بېلګې په توګه، د يو سټ~\LR{$A$} د فرعي سټونو سټ له سټونو جوړ وي۔ نو دا پوښتل يا څېړل معقول دي چې يو سټ د بل سټ غړے دے که نۀ۔ آيا يو سټ د خپل ځان غړے کېدے شي؟ د سټ په تصور کښې ظاهراً هېڅ داسې خبره نشته چې دا ناممکنه کړي۔ د بېلګې په توګه، که \emph{ټول} سټونه د څيزونو يوه ټولګه جوړوي، يو څوک ښائي فکر وکړي چې دا ټول په يو سټ کښې راټولېدے شي، يعنې د ټولو سټونو په سټ کښې۔ او دا چې پخپله يو سټ دے، نو د ټولو سټونو د سټ غړے به وي۔
+
+د رسل پاراډوکس هغه وخت راولاړېږي چې دا خاصيت په پام کښې ونيسو چې يو سټ خپل ځان د غړے په توګه ونۀ لري، يعنې \emph{د خپل ځان غړے نۀ وي}۔ که فرض کړو چې د ټولو هغو سټونو يو سټ شته چې خپل ځان د غړے په توګه نۀ لري، نو څه به وشي؟ آيا
+\[
+R = \Setabs{x}{x \notin x}
+\]
+شته؟ څرګندېږي چې ثابتولے شو دا نشته۔
+
+\begin{thm}[د رسل پاراډوکس]\ollabel{thm:russells-paradox}
+	د \LR{$R = \Setabs{x}{x \notin x}$} په بڼه هېڅ سټ نشته۔
+\end{thm}
+
+\begin{proof}
+که \LR{$R = \Setabs{x}{x \notin x}$} موجود وي، نو \LR{$R \in R$} هله او يوازې هله وي چې \LR{$R \notin R$} وي، او دا يو تناقض دے۔
+\end{proof}
+
+\begin{tagblock}{novice}
+\begin{explain}
+راځئ دا ثبوت لږ ورو وګورو۔ که \LR{$R$} موجود وي، دا پوښتنه معقوله ده چې \LR{$R \in R$} دے که نۀ۔ فرض کړئ چې په رښتيا \LR{$R \in R$}۔ اوس، \LR{$R$}~د هغو ټولو سټونو د سټ په توګه تعريف شوے ؤ چې د خپلو ځانونو غړي نۀ دي۔ نو که \LR{$R \in R$} وي، بيا \LR{$R$} پخپله د \LR{$R$} تعريفوونکے خاصيت نۀ لري۔ خو يوازې هغه سټونه په~\LR{$R$} کښې دي چې دا خاصيت لري؛ ځکه \LR{$R$} د~\LR{$R$} غړے نۀ شي کېدے، يعنې \LR{$R \notin R$}۔ خو \LR{$R$} په يو وخت د~\LR{$R$} غړے هم نۀ شي کېدے او ناغړے هم، نو له تناقض سره مخ يو۔
+
+څرنګه چې د \LR{$R \in R$} فرض تناقض ته رسوي، نو \LR{$R \notin R$} لرو۔ خو دا هم تناقض ته رسوي!{} ځکه که \LR{$R \notin R$} وي، نو \LR{$R$} پخپله د \LR{$R$} تعريفوونکے خاصيت لري، او ځکه \LR{$R$} به د هغو ټولو نورو سټونو په شان د \LR{$R$} غړے وي چې د خپل ځان غړي نۀ دي۔ او بيا هم، په يو وخت د~\LR{$R$} ناغړے او غړے دواړه نۀ شي کېدے۔
+\end{explain}
+\end{tagblock}
+
+\begin{digress}
+د سټونو داسې نظريه څنګه جوړه کړو چې د رسل له پاراډوکس څخه ځان وساتي، يعنې له دې \emph{متناقضې} دعوې څخه ځان وساتي چې \LR{$R = \Setabs{x}{x \notin x}$} موجود دے؟ د دې دپاره داسې بديهي اصلونه ټاکل پکار دي چې دا بيان کړي چې سټونه کله موجود وي (او کله نۀ وي)، او ډېر دقيق شرطونه ورکړي۔
+
+د سټونو هغه نظريه چې په دې باب کښې په لنډه توګه بيان شوې، دا کار نۀ کوي۔ دا \emph{په رښتيا ساده نظريه} ده۔ دا يوازې درته وائي چې سټونه د غړو له مخې د برابرۍ پابند دي، او که ځينې سټونه ولرئ، د هغو اتحاد، تقاطع او داسې نور جوړولے شئ۔ د سټونو نظريه له دې نه په زيات دقت هم جوړېدل ممکن دي۔ \oliflabeldef{cumul:::part}{دا دقيق بحث به د \olref[cumul][][]{part} برخې دپاره پرېږدو۔ اوس به په ساده طريقه مخ ته ځو، او په احتياط به هڅه کوو چې له تناقضونو ځان وساتو۔}{}
+\end{digress}
+
+
+
+\end{document}
