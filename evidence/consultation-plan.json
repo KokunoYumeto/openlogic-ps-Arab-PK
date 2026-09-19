@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0224 through OLP-0231 form a complete manually translated and source-reviewed general-recursion and computation-coding batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0232 through OLP-0239 form a complete manually translated and source-reviewed universal-computation and enumerable-sets batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -4900,6 +4900,169 @@
         "TERM-ENUMERATION"
       ],
       "scope": "The model-independent normal-form construction, proof sketch, fixed enumeration and infinitely-many-indices argument preserve every formula and dependency."
+    },
+    "OLP-0232": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-SMN-PARAMETERIZATION",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-ENCODING"
+      ],
+      "scope": "The s-m-n statement, arities, fixed and remaining inputs, program reading and primitive-recursive index transformer remain complete. OLCMP-019 keeps the explanation's program index consistent with the theorem."
+    },
+    "OLP-0233": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-ENUMERATION",
+        "TERM-RANGE"
+      ],
+      "scope": "The universal partial function, effective enumeration, uniformity, sequence coding and arity reduction remain complete. OLCMP-020 retains the derived unary function's partiality."
+    },
+    "OLP-0234": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-DIAGONALIZATION",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-NORMAL-FORM-INDEX"
+      ],
+      "scope": "The nonexistence of a total computable universal function, diagonal construction and partial-universal escape remain complete. OLCMP-021 corrects the opening universal-versus-total predicate."
+    },
+    "OLP-0235": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-HALTING-PROBLEM",
+        "TERM-DIAGONALIZATION",
+        "TERM-DECIDABILITY",
+        "TERM-PARTIAL-RECURSIVE-SEARCH"
+      ],
+      "scope": "Both halting-undecidability proofs and the Turing-machine reading remain complete. OLCMP-022 attributes the defined zero value to the diagonal function rather than the total halting predicate."
+    },
+    "OLP-0236": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-DIAGONALIZATION",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-FUNCTION-EXTENSIONALITY",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC"
+      ],
+      "scope": "The comparison among Russell's paradox, the all-functions contradiction and noncomputable diagonal functions remains complete. OLCMP-023 restores the defined set variable in Russell's biconditional."
+    },
+    "OLP-0237": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-DECIDABILITY",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-DOMAIN"
+      ],
+      "scope": "The characteristic-function definitions of computable sets and relations, their decidable synonym and the Turing-machine output distinction remain complete."
+    },
+    "OLP-0238": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+      ],
+      "terms": [
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-ENUMERABLE",
+        "TERM-RANGE",
+        "TERM-INJECTIVE",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC"
+      ],
+      "scope": "The empty-or-range definition, historical terminology, repetitions and unordered enumeration, and proof that computable sets are computably enumerable remain complete."
+    },
+    "OLP-0239": {
+      "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+      ],
+      "terms": [
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-RANGE",
+        "TERM-DOMAIN",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "All four equivalent c.e. definitions, both range/domain constructions, W_e enumeration and existential characterization remain complete. OLCMP-024 through OLCMP-026 correct local editorial defects, an unbound input and the omitted empty-set case."
     }
   },
   "semantic_review": [
@@ -7176,6 +7339,54 @@
       "passage": "model-independent normal form",
       "reverse_paraphrase": "Search for a valid run code and then extract its output; fixed T and U enumerate all partial computable functions and permit multiple program indices.",
       "finding": "The theorem, proof sketch, explanatory slogan, fixed enumeration and padding intuition remain complete."
+    },
+    {
+      "unit_id": "OLP-0232",
+      "passage": "s-m-n parameterization theorem",
+      "reverse_paraphrase": "Fixing the first m arguments of an indexed (m+n)-ary program can be performed effectively on its code, producing an index for the remaining n-ary function.",
+      "finding": "All arities, argument positions and the primitive-recursive transformer remain exact; the explanation now uses the theorem's bound program index consistently."
+    },
+    {
+      "unit_id": "OLP-0233",
+      "passage": "universal partial computable function",
+      "reverse_paraphrase": "Kleene normal form yields one partial two-place function that uniformly simulates every unary partial computable function by varying its first input.",
+      "finding": "The universality theorem, effective enumeration and sequence-coding generalization remain complete; the derived unary function correctly remains partial."
+    },
+    {
+      "unit_id": "OLP-0234",
+      "passage": "no universal total computable function",
+      "reverse_paraphrase": "A total computable universal listing of total computable unary functions would yield a total computable diagonal function differing from every listed row at its own index.",
+      "finding": "The diagonal proof and explanation of why partial universality escapes it remain complete; the opening sentence now says universal rather than total for."
+    },
+    {
+      "unit_id": "OLP-0235",
+      "passage": "halting-problem undecidability",
+      "reverse_paraphrase": "If halting were computable, one could totalize the universal function; independently, a partial diagonal function would be defined exactly when its indexed self-computation is not.",
+      "finding": "Both proofs and the Turing-machine restatement remain complete; the explanatory zero-value parenthetical now names the diagonal function."
+    },
+    {
+      "unit_id": "OLP-0236",
+      "passage": "Russell and computability diagonalization",
+      "reverse_paraphrase": "Unrestricted self-membership yields no set, an all-functions self-application yields no such function, while the computability diagonal defines a legitimate but noncomputable function.",
+      "finding": "The three conclusions and the four regions of partial, total and computable functions remain explicit; the Russell biconditional uses its defined set variable."
+    },
+    {
+      "unit_id": "OLP-0237",
+      "passage": "computable sets and relations",
+      "reverse_paraphrase": "A set or relation is computable exactly when its total characteristic function decides membership with a zero-or-one output.",
+      "finding": "The set, relation and decidable definitions and the Turing-machine distinction from partial-function computation remain complete."
+    },
+    {
+      "unit_id": "OLP-0238",
+      "passage": "computably enumerable sets",
+      "reverse_paraphrase": "A c.e. set is empty or the range of a total computable function; its enumeration may repeat values and need not be ordered, and every decidable set is c.e.",
+      "finding": "The historical terminology, examples and characteristic-function enumeration construction remain complete."
+    },
+    {
+      "unit_id": "OLP-0239",
+      "passage": "equivalent c.e. definitions",
+      "reverse_paraphrase": "Nonempty c.e. sets are exactly total-computable, partial-computable or primitive-recursive ranges; all c.e. sets are partial-computable domains and existential projections of computable relations.",
+      "finding": "Every implication, normal-form witness, W_e enumeration and existential characterization remains complete; the unbound input and empty-set gap are repaired with exact accounting."
     }
   ]
 }

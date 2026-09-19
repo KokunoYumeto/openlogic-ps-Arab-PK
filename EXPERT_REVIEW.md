@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 231 of 722 source units are translated drafts. This log contains 131 terminology entries and 172 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 239 of 722 source units are translated drafts. This log contains 135 terminology entries and 180 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1182,6 +1182,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: ټوله بازګشتي تابع; قاعده‌منه تابع; د بازګشتي تابعو تيوري; د چرچ تز
 - Review question: In Pakistani Pashto mathematical prose, is «عمومي بازګشتي تابع / منظمه تابع / د بازګښت تيوري / د چرچ اصل» the clearest conventional rendering of “general recursive function / regular function / recursion theory / Church's thesis” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete general-recursion and computation-coding source and language review
+
+## TERM-SMN-PARAMETERIZATION
+
+- Type: terminology
+- Choice: د s-m-n قضيه / پاراميټري کول / ثابت ننوتونه / ځانګړے شوے پروګرام
+- Uncertainty: function, input and coding concepts are supported by regional sources; the exact s-m-n and parameterization labels remain provisional
+- Alternatives: د پاراميټر ټاکنې قضيه; د دليلونو ثابتول; تخصص شوے پروګرام
+- Review question: In Pakistani Pashto mathematical prose, is «د s-m-n قضيه / پاراميټري کول / ثابت ننوتونه / ځانګړے شوے پروګرام» the clearest conventional rendering of “s-m-n theorem / parameterization / fixed inputs / specialized program” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+
+## TERM-UNIVERSAL-DIAGONAL-COMPUTATION
+
+- Type: terminology
+- Choice: نړيواله جزوي تابع / نړيواله هرځاے تعريف شوې تابع / قطري استدلال / د درېدنې ناپرېکړتيا
+- Uncertainty: function and diagonal-sequence concepts are supported by regional sources; the exact computability compounds remain provisional
+- Alternatives: عمومي جزوي تابع د نړيوالې پر ځاے; قطرول د قطري استدلال پر ځاے; د تم کېدو ناپرېکړتيا
+- Review question: In Pakistani Pashto mathematical prose, is «نړيواله جزوي تابع / نړيواله هرځاے تعريف شوې تابع / قطري استدلال / د درېدنې ناپرېکړتيا» the clearest conventional rendering of “universal partial function / universal total function / diagonalization / halting undecidability” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+
+## TERM-COMPUTABLE-SET-CHARACTERISTIC
+
+- Type: terminology
+- Choice: محاسبه کېدونکے سټ / محاسبه کېدونکې اړيکه / ځانګړونکې تابع / د پرېکړې وړ سټ
+- Uncertainty: set, function, relation and countability concepts are supported by regional sources; the exact computability labels remain provisional
+- Alternatives: حسابېدونکے سټ; مشخصه تابع د ځانګړونکې تابع پر ځاے; پرېکړه کېدونکے سټ
+- Review question: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکے سټ / محاسبه کېدونکې اړيکه / ځانګړونکې تابع / د پرېکړې وړ سټ» the clearest conventional rendering of “computable set / computable relation / characteristic function / decidable set” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+
+## TERM-COMPUTABLY-ENUMERABLE-SETS
+
+- Type: terminology
+- Choice: په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ
+- Uncertainty: range and countability concepts are supported by regional sources; the exact effective-enumerability and semi-decidability compounds remain provisional
+- Alternatives: محاسبه‌يي شمېرېدونکے سټ; بازګشتي شمېرېدونکے سټ; نيمه‌پرېکړه کېدونکے
+- Review question: In Pakistani Pashto mathematical prose, is «په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ» the clearest conventional rendering of “computably enumerable / recursively enumerable / c.e. / range / semi-decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
 
 ## DEC-OLFUN-001
 
@@ -2676,6 +2712,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-018 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes
+
+## DEC-OLCMP-019
+
+- Type: source-correction
+- Choice: uses e, the program index fixed by the theorem statement and opening sentence, in both the specialized program and the Turing-machine reading
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-019 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-020
+
+- Type: source-correction
+- Choice: calls g a unary partial recursive function because g is undefined exactly when the decoded call to the possibly partial f is undefined
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-020 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-021
+
+- Type: source-correction
+- Choice: states that a partial computable function is universal for the partial computable functions, matching the preceding theorem and the section's later explanation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-021 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-022
+
+- Type: source-correction
+- Choice: says the diagonal function g can only take value zero when it is defined; h is total and can take both zero and one
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-022 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-023
+
+- Type: source-correction
+- Choice: states S is a member of itself if and only if S is not a member of itself
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-023 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-024
+
+- Type: source-correction
+- Choice: uses the correctly spelled section title and says the set consists of inputs for which the indexed computation halts
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-024 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-025
+
+- Type: source-correction
+- Choice: concludes cfind_e((z)_0) is defined with value y from T(e,(z)_0,(z)_1) and U((z)_1)=y
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-025 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-026
+
+- Type: source-correction
+- Choice: treats the empty set as the domain of a nowhere-defined partial computable function and applies the total-enumerator search only to nonempty computably enumerable sets
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-026 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
 
 ## DEC-REL-I
 

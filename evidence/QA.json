@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 231,
-    "structural_pass": 231,
+    "draft_units": 239,
+    "structural_pass": 239,
     "visually_accepted": 105,
     "published": 82
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B047-GENERAL-RECURSION-AND-COMPUTATION-CODING",
+  "batch": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -6664,6 +6664,250 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0232",
+      "path": "content/computability/computability-theory/s-m-n.tex",
+      "source_sha256": "24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc",
+      "translation_sha256": "2949719e6b62b4d9e668e70d554b883331d95dc827aa67a6791926e3a6ec7a1b",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-019"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$s^m_n(x,a_0,\\dots,a_{m-1})$",
+          "$x$"
+        ],
+        "target_only": [
+          "$e$",
+          "$s^m_n(e,a_0,\\dots,a_{m-1})$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0233",
+      "path": "content/computability/computability-theory/universal-part-function.tex",
+      "source_sha256": "ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49",
+      "translation_sha256": "2f8d3391b61deaf9b9b857de8d135f9f557490c0cf93c3f341b4df34bfb1a992",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-020"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0234",
+      "path": "content/computability/computability-theory/no-universal-function.tex",
+      "source_sha256": "b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb",
+      "translation_sha256": "135a119318c6c8beb4a0553ad22a594c3d56d4460c3d1902bf69d4edfccb0802",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-021"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0235",
+      "path": "content/computability/computability-theory/halting-problem.tex",
+      "source_sha256": "7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7",
+      "translation_sha256": "1a167e3f498b0418b4806b20bfa7252ae42e3d78f6b554b9569efa35c61b21f3",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-022"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$h$"
+        ],
+        "target_only": [
+          "$g$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0236",
+      "path": "content/computability/computability-theory/russells-paradox.tex",
+      "source_sha256": "eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b",
+      "translation_sha256": "5184c46619b836124962c22c1368439547da93944a245a500ce1d4b6f1cf36e9",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-023"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$X\\notinS$"
+        ],
+        "target_only": [
+          "$S\\notinS$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0237",
+      "path": "content/computability/computability-theory/computable-sets.tex",
+      "source_sha256": "d35d7afbe6eebe0a25dcd22c5b2c82b07baacb432183d0685950902900799cbe",
+      "translation_sha256": "96b8bb4c96c6eb2f4f554d94fbe624511e3f5695efcf4cc3056f55b66ad8c762",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0238",
+      "path": "content/computability/computability-theory/ce-sets.tex",
+      "source_sha256": "a4cb50deceb3d948ebf79dc5f5aad48801a5a58e633c98e7caf834098a3402a8",
+      "translation_sha256": "3efd4008fbcaaa969e0d051299f2827de7bae31236d72c1b8becfcc929dc6c7c",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0239",
+      "path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+      "translation_sha256": "97e3c185a47405823d0c8e63cfada2d4e443679757d9ef4cd8c7c66927237450",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-024",
+        "OLCMP-025",
+        "OLCMP-026"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\cfind{e}(x)\\fdefined=y$"
+        ],
+        "target_only": [
+          "$\\cfind{e}((z)_0)\\fdefined=y$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -8940,6 +9184,54 @@
       "passage": "model-independent normal form",
       "reverse_paraphrase": "Search for a valid run code and then extract its output; fixed T and U enumerate all partial computable functions and permit multiple program indices.",
       "finding": "The theorem, proof sketch, explanatory slogan, fixed enumeration and padding intuition remain complete."
+    },
+    {
+      "unit_id": "OLP-0232",
+      "passage": "s-m-n parameterization theorem",
+      "reverse_paraphrase": "Fixing the first m arguments of an indexed (m+n)-ary program can be performed effectively on its code, producing an index for the remaining n-ary function.",
+      "finding": "All arities, argument positions and the primitive-recursive transformer remain exact; the explanation now uses the theorem's bound program index consistently."
+    },
+    {
+      "unit_id": "OLP-0233",
+      "passage": "universal partial computable function",
+      "reverse_paraphrase": "Kleene normal form yields one partial two-place function that uniformly simulates every unary partial computable function by varying its first input.",
+      "finding": "The universality theorem, effective enumeration and sequence-coding generalization remain complete; the derived unary function correctly remains partial."
+    },
+    {
+      "unit_id": "OLP-0234",
+      "passage": "no universal total computable function",
+      "reverse_paraphrase": "A total computable universal listing of total computable unary functions would yield a total computable diagonal function differing from every listed row at its own index.",
+      "finding": "The diagonal proof and explanation of why partial universality escapes it remain complete; the opening sentence now says universal rather than total for."
+    },
+    {
+      "unit_id": "OLP-0235",
+      "passage": "halting-problem undecidability",
+      "reverse_paraphrase": "If halting were computable, one could totalize the universal function; independently, a partial diagonal function would be defined exactly when its indexed self-computation is not.",
+      "finding": "Both proofs and the Turing-machine restatement remain complete; the explanatory zero-value parenthetical now names the diagonal function."
+    },
+    {
+      "unit_id": "OLP-0236",
+      "passage": "Russell and computability diagonalization",
+      "reverse_paraphrase": "Unrestricted self-membership yields no set, an all-functions self-application yields no such function, while the computability diagonal defines a legitimate but noncomputable function.",
+      "finding": "The three conclusions and the four regions of partial, total and computable functions remain explicit; the Russell biconditional uses its defined set variable."
+    },
+    {
+      "unit_id": "OLP-0237",
+      "passage": "computable sets and relations",
+      "reverse_paraphrase": "A set or relation is computable exactly when its total characteristic function decides membership with a zero-or-one output.",
+      "finding": "The set, relation and decidable definitions and the Turing-machine distinction from partial-function computation remain complete."
+    },
+    {
+      "unit_id": "OLP-0238",
+      "passage": "computably enumerable sets",
+      "reverse_paraphrase": "A c.e. set is empty or the range of a total computable function; its enumeration may repeat values and need not be ordered, and every decidable set is c.e.",
+      "finding": "The historical terminology, examples and characteristic-function enumeration construction remain complete."
+    },
+    {
+      "unit_id": "OLP-0239",
+      "passage": "equivalent c.e. definitions",
+      "reverse_paraphrase": "Nonempty c.e. sets are exactly total-computable, partial-computable or primitive-recursive ranges; all c.e. sets are partial-computable domains and existential projections of computable relations.",
+      "finding": "Every implication, normal-form witness, W_e enumeration and existential characterization remains complete; the unbound input and empty-set gap are repaired with exact accounting."
     }
   ],
   "builds": [

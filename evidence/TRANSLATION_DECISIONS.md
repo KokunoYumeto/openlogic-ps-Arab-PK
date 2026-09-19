@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 303 terminology, source-correction and other judgment-dependent entries across 231 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 315 terminology, source-correction and other judgment-dependent entries across 239 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -771,6 +771,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 12,14,15,17,26,31,35,42,43; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 45,48,50,52,73; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 71; page: pending stable pagination in a reader containing this unit
   - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 26,27,29,34,35,37,39,45,48,49,53,55,61,67,117,123,133,154,167; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 26,89,90,100,107,108,129,131,161; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 33,105,117,131,152,181; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CODOMAIN
 
@@ -806,6 +808,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0050; Hilbert's Hotel; `content/sets-functions-relations/infinite/hilberts-hotel.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/hilberts-hotel.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0051; Dedekind Algebras; `content/sets-functions-relations/infinite/dedekind-algebra.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 86,90,91,93,96,98,99; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 13,26,51; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 14,25,48; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 24,25,50,54,74,75,76,91,101,121; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 29,31,57,62,83,107,117,124; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -858,6 +863,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 132,139,143; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 131,138,142; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 158,174; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 152,172; page: pending stable pagination in a reader containing this unit
+  - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SURJECTIVE
 
@@ -922,6 +928,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0023; Functions as Relations; `content/sets-functions-relations/functions/functions-relations.tex` source line(s) 33,34,35; `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex` target line(s) 35; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 11,14,21,28,29,47,51,52,54,58; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-INVERSE
 
@@ -977,6 +984,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 41,46,49; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 43,45,46,47; page: pending stable pagination in a reader containing this unit
   - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 10,33,37,47,48,49,51,53,58,59,61,65,66,80,81,89,92,95,99,100,105,106,111,114,115; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) 10,23,24,27,30,33,35,42,49,53,55,58,60,65,72,83,87,90,91,95,100,105; page: pending stable pagination in a reader containing this unit
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 12,32; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 13,16,28,30,32; page: pending stable pagination in a reader containing this unit
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 12,13,14,30,39,40,47; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 12,13,16,18,24,30,35,43,45,50,51; page: pending stable pagination in a reader containing this unit
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 23,38,39,55,56,57,59,60,64,66,69,70,71; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 22,40,57,59,60,62,65,67,70,71; page: pending stable pagination in a reader containing this unit
+  - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 34,35; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 35,37; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -1024,6 +1035,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
   - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 25,116,119; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 24,116,120; page: pending stable pagination in a reader containing this unit
+  - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 10,18; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 10,13,18,37,39; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -1053,6 +1065,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 19,35; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 76; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 38,39,43,44,53,59,60; page: pending stable pagination in a reader containing this unit
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 30; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 31,32,36; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SET-SIZE
 
@@ -1196,6 +1209,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 36,37,40; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 10,30,33,34; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 40,44,47,49; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 37,40,43,44,53; page: pending stable pagination in a reader containing this unit
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 39; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 39; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COFINITE
 
@@ -1257,6 +1271,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) 106,107; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) 38,81,109,110; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 28; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 25,37,40,44; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 37; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-REDUCTION
 
@@ -2187,6 +2204,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 23,39,101; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 18; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 17; page: pending stable pagination in a reader containing this unit
+  - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 29; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 31; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -2672,6 +2691,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) 1,2,8; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 1,2,12,13,19,29,30; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 1,2,15,39,58,70; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 1,2; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2701,6 +2721,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0225; The Normal Form Theorem; `content/computability/recursive-functions/normal-form.tex` source line(s) 14,29,32,34; `ps-Arab-PK/content/computability/recursive-functions/normal-form.tex` target line(s) 14,31; page: pending stable pagination in a reader containing this unit
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 25; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 24; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 29,53,61; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 39; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 21,39; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 25,33,46,68; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 53,77; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROJECTION-CHARACTERISTIC
 
@@ -2720,6 +2742,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0216; Examples of Primitive Recursive Functions; `content/computability/recursive-functions/examples.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/examples.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0217; Primitive Recursive Relations; `content/computability/recursive-functions/pr-relations.tex` source line(s) 62,63; `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex` target line(s) 13,36,49; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 67,69,73; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 39,42; page: pending stable pagination in a reader containing this unit
+  - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 17,27; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 17,29; page: pending stable pagination in a reader containing this unit
 
 ## TERM-BOUNDED-MINIMIZATION
 
@@ -2797,6 +2820,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 16,17,25,32; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 16,17; page: pending stable pagination in a reader containing this unit
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 24,26,31,32,33,37,38,45,53,62; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 17,30,35,37,40,55,61; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 31,70,72,74,87; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 27,63,66,79; page: pending stable pagination in a reader containing this unit
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 10,14,17,18,30,37; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 10,14,17,18,33,38,39; page: pending stable pagination in a reader containing this unit
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 12,57,68,71,76,77,78; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 12,71,99,100; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NORMAL-FORM-INDEX
 
@@ -2815,6 +2840,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 31; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 29; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 34,35,38,39; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 31,33; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 10,24,27,42,43,48,49,57,59,64,66,67,74,94,96; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 10,24,38,39,43,44,59,79,86,87; page: pending stable pagination in a reader containing this unit
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 41,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 10,14,25; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 10,14; page: pending stable pagination in a reader containing this unit
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 47; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 35,56; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 41; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-PROBLEM
 
@@ -2829,6 +2858,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) 10,12,25,38,52; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) 10,24,36,56; page: pending stable pagination in a reader containing this unit
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,19,33; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 10,32,84; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -2844,6 +2874,65 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 10,13,15,18,22,26,29; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 10,22,28,35; page: pending stable pagination in a reader containing this unit
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 15,57; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
+
+## TERM-SMN-PARAMETERIZATION
+
+- Source term or sense: s-m-n theorem / parameterization / fixed inputs / specialized program
+- Chosen rendering or treatment: د s-m-n قضيه / پاراميټري کول / ثابت ننوتونه / ځانګړے شوے پروګرام
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: The theorem effectively fixes the first m inputs of an (m+n)-ary indexed program and returns an index for the resulting n-ary function. Keep the symbolic theorem name unchanged and explain the operation descriptively rather than treating s, m and n as translated words.
+- Alternatives: د پاراميټر ټاکنې قضيه; د دليلونو ثابتول; تخصص شوے پروګرام
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د s-m-n قضيه / پاراميټري کول / ثابت ننوتونه / ځانګړے شوے پروګرام» the clearest conventional rendering of “s-m-n theorem / parameterization / fixed inputs / specialized program” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+- Locations:
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 3,20,31,33,35; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 31,32,34,41; page: pending stable pagination in a reader containing this unit
+
+## TERM-UNIVERSAL-DIAGONAL-COMPUTATION
+
+- Source term or sense: universal partial function / universal total function / diagonalization / halting undecidability
+- Chosen rendering or treatment: نړيواله جزوي تابع / نړيواله هرځاے تعريف شوې تابع / قطري استدلال / د درېدنې ناپرېکړتيا
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A universal partial function uniformly simulates every indexed partial function and may diverge. No total computable function uniformly lists all total computable unary functions, by diagonalization. The halting predicate is total as a set-theoretic function but not computable; preserve these three distinct totality claims.
+- Alternatives: عمومي جزوي تابع د نړيوالې پر ځاے; قطرول د قطري استدلال پر ځاے; د تم کېدو ناپرېکړتيا
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «نړيواله جزوي تابع / نړيواله هرځاے تعريف شوې تابع / قطري استدلال / د درېدنې ناپرېکړتيا» the clearest conventional rendering of “universal partial function / universal total function / diagonalization / halting undecidability” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+- Locations:
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 10,14; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 10,14,35; page: pending stable pagination in a reader containing this unit
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 10,18,25,37,40,44; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 10,13,14,18,23,24,30,35,42,43,44,45,49; page: pending stable pagination in a reader containing this unit
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,12,19,38; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 12,36,45,58,85,86; page: pending stable pagination in a reader containing this unit
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 37; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 40,59,60,62,65,67; page: pending stable pagination in a reader containing this unit
+
+## TERM-COMPUTABLE-SET-CHARACTERISTIC
+
+- Source term or sense: computable set / computable relation / characteristic function / decidable set
+- Chosen rendering or treatment: محاسبه کېدونکے سټ / محاسبه کېدونکې اړيکه / ځانګړونکې تابع / د پرېکړې وړ سټ
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A set or relation is computable exactly when its total zero-one characteristic function is computable. Here decidable names the same effective yes-or-no property; it must remain distinct from semi-decidable membership, where nonmembers may never receive an answer.
+- Alternatives: حسابېدونکے سټ; مشخصه تابع د ځانګړونکې تابع پر ځاے; پرېکړه کېدونکے سټ
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکے سټ / محاسبه کېدونکې اړيکه / ځانګړونکې تابع / د پرېکړې وړ سټ» the clearest conventional rendering of “computable set / computable relation / characteristic function / decidable set” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+- Locations:
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 10,13,17,27,29; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 17,29,31; page: pending stable pagination in a reader containing this unit
+  - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 40; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 37; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 41,143; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 47; page: pending stable pagination in a reader containing this unit
+
+## TERM-COMPUTABLY-ENUMERABLE-SETS
+
+- Source term or sense: computably enumerable / recursively enumerable / c.e. / range / semi-decidable
+- Chosen rendering or treatment: په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Computably enumerable permits the empty set or the range of a total computable function; equivalent forms use a partial range, primitive-recursive range, partial-computable domain or existential projection of a computable relation. Enumeration may repeat and need not be ordered. Semi-decidable means membership eventually yields yes while nonmembership may diverge.
+- Alternatives: محاسبه‌يي شمېرېدونکے سټ; بازګشتي شمېرېدونکے سټ; نيمه‌پرېکړه کېدونکے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ» the clearest conventional rendering of “computably enumerable / recursively enumerable / c.e. / range / semi-decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+- Locations:
+  - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 10,13,18,26,40,42,51; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 10,13,14,18,25,37,39,48; page: pending stable pagination in a reader containing this unit
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 12,16,23,24,25,32,40,41,50,54,74,75,76,78,91,101,121,130,135,142; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 11,21,27,29,31,38,41,46,47,57,62,83,107,117,124,151,156,159,163,171; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -5002,6 +5091,110 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes
 - Locations:
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) content/computability/computability-theory/introduction.tex:29-39; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 38; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-019
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses e, the program index fixed by the theorem statement and opening sentence, in both the specialized program and the Turing-machine reading
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Two inline source expressions using x are replaced by the corresponding e expressions. The theorem's displayed equation and every other formula remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-019 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) content/computability/computability-theory/s-m-n.tex:31-40; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 40; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-020
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: calls g a unary partial recursive function because g is undefined exactly when the decoded call to the possibly partial f is undefined
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the prose class name gains the missing partial qualifier; the defining formula for g is unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-020 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) content/computability/computability-theory/universal-part-function.tex:29-39; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 41; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-021
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that a partial computable function is universal for the partial computable functions, matching the preceding theorem and the section's later explanation
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The malformed prose predicate is corrected; no formula, label or theorem statement changes.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-021 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) content/computability/computability-theory/no-universal-function.tex:12-14; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 15; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-022
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: says the diagonal function g can only take value zero when it is defined; h is total and can take both zero and one
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The single inline function symbol in the parenthetical changes from h to g. All displayed formulas and the rest of the proof remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-022 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) content/computability/computability-theory/halting-problem.tex:71-80; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 83; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-023
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states S is a member of itself if and only if S is not a member of itself
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The one inline source expression X notin S is replaced by S notin S; all other formulas remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-023 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) content/computability/computability-theory/russells-paradox.tex:15-20; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 20; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-024
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the correctly spelled section title and says the set consists of inputs for which the indexed computation halts
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only prose and title spelling are corrected; formulas, labels and theorem content remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-024 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) content/computability/computability-theory/equiv-ce-defs.tex:11-16,39-42; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 13; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-025
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: concludes cfind_e((z)_0) is defined with value y from T(e,(z)_0,(z)_1) and U((z)_1)=y
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The inline cfind_e(x) expression changes to cfind_e((z)_0); all surrounding premises and formulas are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-025 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) content/computability/computability-theory/equiv-ce-defs.tex:77-81; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-026
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: treats the empty set as the domain of a nowhere-defined partial computable function and applies the total-enumerator search only to nonempty computably enumerable sets
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: A prose-only empty case is inserted before the existing nonempty construction; every existing formula remains unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-026 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+- Locations:
+  - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) content/computability/computability-theory/equiv-ce-defs.tex:88-105; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 122; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

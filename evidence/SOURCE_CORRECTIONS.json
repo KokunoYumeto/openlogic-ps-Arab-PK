@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0231; general recursion and computation coding are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.5.1 public artifacts remain frozen",
-  "adopted_utc": "2026-09-19T21:37:08.506333+00:00",
+  "status": "adopted through OLP-0239; universal computation and enumerable sets are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.5.1 public artifacts remain frozen",
+  "adopted_utc": "2026-09-19T22:16:20.766274+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -3941,6 +3941,176 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING",
       "formula_policy": "Only the final prose class name is aligned; the cfind notation, index k and arity n are unchanged.",
       "decision_timing": "contemporaneous owner semantic trace against the complete general-recursion and computation-coding batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-019",
+      "unit_id": "OLP-0232",
+      "classification": "s_m_n_explanation_switches_fixed_program_index_to_undefined_variable",
+      "source_path": "content/computability/computability-theory/s-m-n.tex",
+      "source_sha256": "24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc",
+      "source_locator": "content/computability/computability-theory/s-m-n.tex:31-40",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/s-m-n.tex",
+      "target_line_1based": 40,
+      "target_sha256": "2949719e6b62b4d9e668e70d554b883331d95dc827aa67a6791926e3a6ec7a1b",
+      "mode": "retain-e-as-program-index-through-specialized-program-and-machine-explanation-plus-adjacent-note",
+      "translation_change": "uses e, the program index fixed by the theorem statement and opening sentence, in both the specialized program and the Turing-machine reading",
+      "counterexample": "The paragraph takes program e as its input and the theorem computes s^m_n(e,a_0,...). The later x has no binder and would make the displayed specialized program depend on a different value; the following sentence also begins with the typo 'It you think of x' while immediately running e.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "Two inline source expressions using x are replaced by the corresponding e expressions. The theorem's displayed equation and every other formula remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$s^m_n(x,a_0,\\dots,a_{m-1})$",
+          "$x$"
+        ],
+        "target_only": [
+          "$e$",
+          "$s^m_n(e,a_0,\\dots,a_{m-1})$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-020",
+      "unit_id": "OLP-0233",
+      "classification": "function_derived_from_partial_recursive_function_loses_partial_qualifier",
+      "source_path": "content/computability/computability-theory/universal-part-function.tex",
+      "source_sha256": "ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49",
+      "source_locator": "content/computability/computability-theory/universal-part-function.tex:29-39",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex",
+      "target_line_1based": 41,
+      "target_sha256": "2f8d3391b61deaf9b9b857de8d135f9f557490c0cf93c3f341b4df34bfb1a992",
+      "mode": "retain-partial-qualifier-for-derived-unary-function-plus-adjacent-note",
+      "translation_change": "calls g a unary partial recursive function because g is undefined exactly when the decoded call to the possibly partial f is undefined",
+      "counterexample": "Take a three-place partial recursive f that diverges on the decoded triple of some x. The defined g(x) is then also undefined, so g cannot in general be a total recursive function.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "Only the prose class name gains the missing partial qualifier; the defining formula for g is unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-021",
+      "unit_id": "OLP-0234",
+      "classification": "universal_partial_function_is_mislabeled_total_for_partial_functions",
+      "source_path": "content/computability/computability-theory/no-universal-function.tex",
+      "source_sha256": "b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb",
+      "source_locator": "content/computability/computability-theory/no-universal-function.tex:12-14",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex",
+      "target_line_1based": 15,
+      "target_sha256": "135a119318c6c8beb4a0553ad22a594c3d56d4460c3d1902bf69d4edfccb0802",
+      "mode": "replace-total-for-with-universal-for-plus-adjacent-note",
+      "translation_change": "states that a partial computable function is universal for the partial computable functions, matching the preceding theorem and the section's later explanation",
+      "counterexample": "A function universal for all partial computable functions cannot itself be total, because some indexed computations diverge. The same section later explicitly says Un is universal but is not total.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "The malformed prose predicate is corrected; no formula, label or theorem statement changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-022",
+      "unit_id": "OLP-0235",
+      "classification": "halting_diagonal_parenthetical_attributes_defined_zero_value_to_wrong_function",
+      "source_path": "content/computability/computability-theory/halting-problem.tex",
+      "source_sha256": "7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7",
+      "source_locator": "content/computability/computability-theory/halting-problem.tex:71-80",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/halting-problem.tex",
+      "target_line_1based": 83,
+      "target_sha256": "1a167e3f498b0418b4806b20bfa7252ae42e3d78f6b554b9569efa35c61b21f3",
+      "mode": "attribute-zero-when-defined-to-g-rather-than-h-plus-adjacent-note",
+      "translation_change": "says the diagonal function g can only take value zero when it is defined; h is total and can take both zero and one",
+      "counterexample": "The theorem defines h everywhere with values zero and one. The case inference h(e,e)=0 follows because a defined g(e) has value zero by g's case definition, not because h has a restricted range when defined.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "The single inline function symbol in the parenthetical changes from h to g. All displayed formulas and the rest of the proof remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$h$"
+        ],
+        "target_only": [
+          "$g$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-023",
+      "unit_id": "OLP-0236",
+      "classification": "russell_biconditional_uses_undefined_capital_X",
+      "source_path": "content/computability/computability-theory/russells-paradox.tex",
+      "source_sha256": "eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b",
+      "source_locator": "content/computability/computability-theory/russells-paradox.tex:15-20",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex",
+      "target_line_1based": 20,
+      "target_sha256": "5184c46619b836124962c22c1368439547da93944a245a500ce1d4b6f1cf36e9",
+      "mode": "replace-undefined-X-with-defined-set-S-plus-adjacent-note",
+      "translation_change": "states S is a member of itself if and only if S is not a member of itself",
+      "counterexample": "Only S is defined by the Russell comprehension. X has no binder, and replacing it by S restores the standard self-membership contradiction used by the conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "The one inline source expression X notin S is replaced by S notin S; all other formulas remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$X\\notinS$"
+        ],
+        "target_only": [
+          "$S\\notinS$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-024",
+      "unit_id": "OLP-0239",
+      "classification": "equivalent_ce_section_contains_title_spelling_and_double_preposition_typos",
+      "source_path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+      "source_locator": "content/computability/computability-theory/equiv-ce-defs.tex:11-16,39-42",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex",
+      "target_line_1based": 13,
+      "target_sha256": "97e3c185a47405823d0c8e63cfada2d4e443679757d9ef4cd8c7c66927237450",
+      "mode": "correct-title-spelling-and-remove-stray-preposition-plus-adjacent-note",
+      "translation_change": "uses the correctly spelled section title and says the set consists of inputs for which the indexed computation halts",
+      "counterexample": "'Defininitions' has an extra 'in', and 'inputs on for which' contains two competing prepositions. Both are local editorial defects with unambiguous intended readings.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "Only prose and title spelling are corrected; formulas, labels and theorem content remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-025",
+      "unit_id": "OLP-0239",
+      "classification": "range_proof_uses_unbound_x_instead_of_decoded_input_z0",
+      "source_path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+      "source_locator": "content/computability/computability-theory/equiv-ce-defs.tex:77-81",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex",
+      "target_line_1based": 92,
+      "target_sha256": "97e3c185a47405823d0c8e63cfada2d4e443679757d9ef4cd8c7c66927237450",
+      "mode": "replace-unbound-x-with-decoded-first-coordinate-plus-adjacent-note",
+      "translation_change": "concludes cfind_e((z)_0) is defined with value y from T(e,(z)_0,(z)_1) and U((z)_1)=y",
+      "counterexample": "The converse case binds z but no x. Kleene normal form applied to the two displayed premises yields the computation on input (z)_0, so the source's x is unbound and does not support the conclusion.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "The inline cfind_e(x) expression changes to cfind_e((z)_0); all surrounding premises and formulas are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\cfind{e}(x)\\fdefined=y$"
+        ],
+        "target_only": [
+          "$\\cfind{e}((z)_0)\\fdefined=y$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-026",
+      "unit_id": "OLP-0239",
+      "classification": "ce_to_domain_direction_omits_empty_set_case_before_assuming_total_enumerator",
+      "source_path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
+      "source_locator": "content/computability/computability-theory/equiv-ce-defs.tex:88-105",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex",
+      "target_line_1based": 122,
+      "target_sha256": "97e3c185a47405823d0c8e63cfada2d4e443679757d9ef4cd8c7c66927237450",
+      "mode": "handle-empty-set-by-nowhere-defined-partial-function-before-nonempty-enumerator-case-plus-adjacent-note",
+      "translation_change": "treats the empty set as the domain of a nowhere-defined partial computable function and applies the total-enumerator search only to nonempty computably enumerable sets",
+      "counterexample": "The definition declares the empty set computably enumerable, but no total function has empty range. Immediately assuming S is the range of a computable total f therefore leaves the empty case unproved.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
+      "formula_policy": "A prose-only empty case is inserted before the existing nonempty construction; every existing formula remains unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -3948,7 +4118,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0231, then continue with OLP-0232 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0239, then continue with OLP-0240 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -3990,7 +4160,8 @@
     "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
     "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
     "PS-OWNER-SEMANTIC-20260919-PRIMITIVE-RECURSIVE-CONSTRUCTIONS",
-    "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING"
+    "PS-OWNER-SEMANTIC-20260919-GENERAL-RECURSION-COMPUTATION-CODING",
+    "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS"
   ],
   "source_authorities": [
     {

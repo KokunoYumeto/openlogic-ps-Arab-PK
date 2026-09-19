@@ -1496,3 +1496,75 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: calls cfind_k[n] the kth n-ary partial computable function, matching the universal function and enumeration introduced in the same paragraph.
 - Disclosure: `retain-partial-computable-class-name-plus-adjacent-note`.
 
+## OLCMP-019
+
+- Unit: `OLP-0232`
+- Frozen source: `content/computability/computability-theory/s-m-n.tex` (24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc) at `content/computability/computability-theory/s-m-n.tex:31-40`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex:40`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: uses e, the program index fixed by the theorem statement and opening sentence, in both the specialized program and the Turing-machine reading.
+- Disclosure: `retain-e-as-program-index-through-specialized-program-and-machine-explanation-plus-adjacent-note`.
+
+## OLCMP-020
+
+- Unit: `OLP-0233`
+- Frozen source: `content/computability/computability-theory/universal-part-function.tex` (ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49) at `content/computability/computability-theory/universal-part-function.tex:29-39`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex:41`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: calls g a unary partial recursive function because g is undefined exactly when the decoded call to the possibly partial f is undefined.
+- Disclosure: `retain-partial-qualifier-for-derived-unary-function-plus-adjacent-note`.
+
+## OLCMP-021
+
+- Unit: `OLP-0234`
+- Frozen source: `content/computability/computability-theory/no-universal-function.tex` (b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb) at `content/computability/computability-theory/no-universal-function.tex:12-14`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex:15`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: states that a partial computable function is universal for the partial computable functions, matching the preceding theorem and the section's later explanation.
+- Disclosure: `replace-total-for-with-universal-for-plus-adjacent-note`.
+
+## OLCMP-022
+
+- Unit: `OLP-0235`
+- Frozen source: `content/computability/computability-theory/halting-problem.tex` (7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7) at `content/computability/computability-theory/halting-problem.tex:71-80`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex:83`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: says the diagonal function g can only take value zero when it is defined; h is total and can take both zero and one.
+- Disclosure: `attribute-zero-when-defined-to-g-rather-than-h-plus-adjacent-note`.
+
+## OLCMP-023
+
+- Unit: `OLP-0236`
+- Frozen source: `content/computability/computability-theory/russells-paradox.tex` (eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b) at `content/computability/computability-theory/russells-paradox.tex:15-20`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex:20`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: states S is a member of itself if and only if S is not a member of itself.
+- Disclosure: `replace-undefined-X-with-defined-set-S-plus-adjacent-note`.
+
+## OLCMP-024
+
+- Unit: `OLP-0239`
+- Frozen source: `content/computability/computability-theory/equiv-ce-defs.tex` (d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51) at `content/computability/computability-theory/equiv-ce-defs.tex:11-16,39-42`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:13`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: uses the correctly spelled section title and says the set consists of inputs for which the indexed computation halts.
+- Disclosure: `correct-title-spelling-and-remove-stray-preposition-plus-adjacent-note`.
+
+## OLCMP-025
+
+- Unit: `OLP-0239`
+- Frozen source: `content/computability/computability-theory/equiv-ce-defs.tex` (d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51) at `content/computability/computability-theory/equiv-ce-defs.tex:77-81`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:92`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: concludes cfind_e((z)_0) is defined with value y from T(e,(z)_0,(z)_1) and U((z)_1)=y.
+- Disclosure: `replace-unbound-x-with-decoded-first-coordinate-plus-adjacent-note`.
+
+## OLCMP-026
+
+- Unit: `OLP-0239`
+- Frozen source: `content/computability/computability-theory/equiv-ce-defs.tex` (d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51) at `content/computability/computability-theory/equiv-ce-defs.tex:88-105`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:122`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS`
+- Treatment: treats the empty set as the domain of a nowhere-defined partial computable function and applies the total-enumerator search only to nonempty computably enumerable sets.
+- Disclosure: `handle-empty-set-by-nowhere-defined-partial-function-before-nonempty-enumerator-case-plus-adjacent-note`.
+

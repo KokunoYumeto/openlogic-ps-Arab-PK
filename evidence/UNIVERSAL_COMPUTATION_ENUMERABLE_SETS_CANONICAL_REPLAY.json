@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-ps-Arab-PK/universal-computation-enumerable-sets-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T22:27:56.986873+00:00",
+  "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "f88bf9774c0e6338b1db2ce3f3839c1c4772c0d9b7bfa23359ba7c8cb6f5b084",
+    "ALIGNMENT.jsonl": "7abb0afa37e0876596eabf4f23093f960f06cfd1abbab22d4e27a05a7ed87f9e",
+    "SEGMENT_CANON_USE.jsonl": "56ab313b074b8f4235dbda492d5933a2b3540975aa7c5cfa0a82633721aabb67",
+    "SOURCE_CORRECTIONS.json": "f6913d4ae0e08df041c9b9eca917a0f3781555db65c378983f110bb5d9f03642",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "9db3bbcfad52405728dd67b2f7ad314c169ad1b25f00e45e5fdf447cfb630db3",
+    "QA.json": "def953ac1d0d35a409ccf9bd00c4ffcecc3712cbc21478ef589a62482537028a"
+  },
+  "counts": {
+    "decisions": 315,
+    "occurrences": 14632,
+    "terminology_decisions": 135,
+    "source_correction_decisions": 175,
+    "priority_decisions": 128,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 9273
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "99786d4953d06fc95e961788e57e759a181395d6cd9c9c13dd7d5e32989d8424",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "14e3c97298cbd4aef67fa1b39021cb17de636c252286bf16ceb093679d60053e",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "e6f9c2df8b398d1217bb2b59d338e0c30994b9c45a472ad825abb0ed628f1e91",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "fe6acd7f971cd54751393413bdfcf7832ae3b7f3bcad75fa7f0b0016a85f7fa7",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "4eb0f1624be3f0a29b7e2adb9d8000a894b3ccc0b01ed803c910a444abfa87cc",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "2e65e7e4ec08dbd47f6b98d38268c056811afed82803a1f9a7ec901c5e1ca25f",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\universal-computation-enumerable-sets-decision-replay"
+}
