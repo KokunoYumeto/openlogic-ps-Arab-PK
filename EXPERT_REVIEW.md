@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 197 of 722 source units are translated drafts. This log contains 114 terminology entries and 140 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 202 of 722 source units are translated drafts. This log contains 117 terminology entries and 147 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1029,6 +1029,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: حسابېدونکی مدل; الګوريتمي تابع; فيصله کېدونکې اړيکه; د ټېننباوم تيورم
 - Review question: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه» the clearest conventional rendering of “computable model / computable function / decidable relation / Tennenbaum's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
+
+## TERM-INTERPOLATION-SEPARATION
+
+- Type: terminology
+- Choice: د منځګړيتوب قضيه / منځګړی / بېلوي / نه بېلېدونکی
+- Uncertainty: entailment, sentence and proof concepts supported by regional sources; exact interpolation and separation labels are provisional
+- Alternatives: د درز ډکوونې قضيه; منځنۍ جمله د منځګړي پر ځاے; جلا کوي او نه جلا کېدونکي; د کرېګ د انټرپولېشن قضيه
+- Review question: In Pakistani Pashto mathematical prose, is «د منځګړيتوب قضيه / منځګړی / بېلوي / نه بېلېدونکی» the clearest conventional rendering of “interpolation theorem / interpolant / separates / inseparable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete interpolation source and language review
+
+## TERM-EXPLICIT-IMPLICIT-DEFINABILITY
+
+- Type: terminology
+- Choice: تعريف‌وړتيا / څرګند تعريف / ضمني تعريف / د بېت د تعريف‌وړتيا قضيه
+- Uncertainty: definition, predicate, relation and semantic concepts supported by regional sources; exact compounds and theorem name are provisional
+- Alternatives: صريح او ضمني تعريف; تعريف‌پذيري د تعريف‌وړتيا پر ځاے; د بېت د تعريف قضيه
+- Review question: In Pakistani Pashto mathematical prose, is «تعريف‌وړتيا / څرګند تعريف / ضمني تعريف / د بېت د تعريف‌وړتيا قضيه» the clearest conventional rendering of “definability / explicit definition / implicit definition / Beth definability theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete interpolation source and language review
+
+## TERM-JOINT-CONSISTENCY
+
+- Type: terminology
+- Choice: ګډه سازګاري / اعظمي نه بېلېدونکې جوړه / اعظمي سازګار سټ / د رابنسن د ګډې سازګارۍ قضيه
+- Uncertainty: consistency, proof, semantic and countability concepts supported by regional sources; exact joint-consistency and maximal-inseparability compounds are provisional
+- Alternatives: مشترکه سازګاري; تر ټولو زيات نه بېلېدونکې جوړه; بشپړ سازګار سټ د اعظمي سازګار سټ پر ځاے; د رابنسن د يوځايي سازګارۍ قضيه
+- Review question: In Pakistani Pashto mathematical prose, is «ګډه سازګاري / اعظمي نه بېلېدونکې جوړه / اعظمي سازګار سټ / د رابنسن د ګډې سازګارۍ قضيه» the clearest conventional rendering of “joint consistency / maximally inseparable pair / maximal consistent set / Robinson's joint consistency theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete interpolation source and language review
 
 ## DEC-OLFUN-001
 
@@ -2235,6 +2262,69 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLMOD-016 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes
+
+## DEC-OLMOD-017
+
+- Type: source-correction
+- Choice: uses the defined conjunction H as the negated consequent of the universal formula
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-017 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-018
+
+- Type: source-correction
+- Choice: enumerates the sentences of L'_1 and L'_2, including sentences with the newly added constants
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-018 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-019
+
+- Type: source-correction
+- Choice: defines an L'_1-only predicate by transporting its M'_1 interpretation across h
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-019 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-020
+
+- Type: source-correction
+- Choice: defines M on L'_1 union L'_2 and treats exclusive, common and functional symbols in those extended languages
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-020 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-021
+
+- Type: source-correction
+- Choice: states that a set of sentences implicitly defines P if and only if it explicitly defines P
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-021 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-022
+
+- Type: source-correction
+- Choice: writes the P'-application as the same n-place Atom form used throughout the argument
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-022 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes
+
+## DEC-OLMOD-023
+
+- Type: source-correction
+- Choice: restricts transport onto a denumerable set to infinite countable structures
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLMOD-023 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous adoption of a bounded manager semantic review against OLP-0197-B006, the frozen source bytes and TERM-ENUMERABLE
 
 ## DEC-REL-I
 

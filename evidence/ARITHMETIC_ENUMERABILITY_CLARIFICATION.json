@@ -1,0 +1,45 @@
+{
+  "schema": "ps-source-context-clarification/1",
+  "utc": "2026-09-19T18:51:59.916515+00:00",
+  "audit_id": "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
+  "unit_id": "OLP-0197",
+  "semantic_segment": "OLP-0197-B006",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+  "target_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
+  "finding": "Under the edition's enumerable convention, a one-element structure is countable but cannot be transported by a bijection onto Nat. The nonstandard arithmetic models discussed here are infinite, so the required qualification preserves the intended application.",
+  "edition_convention": {
+    "term_id": "TERM-ENUMERABLE",
+    "rendering": "د شمېر وړ / د شمېر نۀ وړ",
+    "decision": "Includes finite sets and countably infinite sets, with empty set explicit. Enumeration does not by itself mean computable enumeration. Preserve enumerable token and follow each source alternative definition.",
+    "passages": [
+      "AF-NIAZMAN-P12-COUNTABLE-IFF",
+      "AF-NIAZMAN-P33-COUNTABLE-SYNTAX",
+      "AF-BUKOVSKY-P99-COUNTABILITY",
+      "PK-IQRAM-P1-PROSE",
+      "GRAMMAR-P166-SOV"
+    ]
+  },
+  "adopted_action": {
+    "id": "OLMOD-023",
+    "unit_id": "OLP-0197",
+    "classification": "countable_structure_claim_omits_infinite_domain_hypothesis",
+    "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+    "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+    "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:25-32",
+    "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+    "target_line_1based": 32,
+    "target_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
+    "mode": "qualify-countable-structure-as-infinite-plus-adjacent-note",
+    "translation_change": "restricts transport onto a denumerable set to infinite countable structures",
+    "counterexample": "Under the edition's enumerable convention, a one-element structure is countable but cannot be transported by a bijection onto Nat. The nonstandard arithmetic models discussed here are infinite, so the required qualification preserves the intended application.",
+    "stable_audit": "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
+    "formula_policy": "No formula, token macro, computability condition or decidability condition changes; only the missing infinite-domain qualification is made explicit.",
+    "decision_timing": "contemporaneous adoption of a bounded manager semantic review against OLP-0197-B006, the frozen source bytes and TERM-ENUMERABLE"
+  },
+  "public_history": {
+    "release_tag": "v0.5.1-proof-systems-completeness-epub",
+    "source_snapshot_units": 197,
+    "disposition": "Frozen public bytes remain unchanged; this clarification is a later main-branch correction and will enter a future source snapshot."
+  }
+}

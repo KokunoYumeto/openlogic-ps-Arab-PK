@@ -1,0 +1,55 @@
+{
+  "schema": "ps-canonical-decision-replay/1",
+  "utc": "2026-09-19T18:59:57.474327+00:00",
+  "status": "pass",
+  "batch_id": "PS-B043-INTERPOLATION",
+  "input": "repository evidence synchronized from the final 202-unit state",
+  "release_tag": "v0.5.0-proof-systems-completeness",
+  "reader_units": 82,
+  "decisions": 264,
+  "occurrences": 13260,
+  "artifacts": [
+    {
+      "name": "START_HERE.md",
+      "state_sha256": "5ea846d0f29897de7e98b949c891644397d35d2dede68b623d611e7065d7b7a8",
+      "replay_sha256": "5ea846d0f29897de7e98b949c891644397d35d2dede68b623d611e7065d7b7a8",
+      "byte_identical": true
+    },
+    {
+      "name": "TRANSLATION_DECISIONS_FULL.md",
+      "state_sha256": "831b352588b34fb8bd060cf4b755ffabcc37fe550875589127fe730023a0a7a0",
+      "replay_sha256": "831b352588b34fb8bd060cf4b755ffabcc37fe550875589127fe730023a0a7a0",
+      "byte_identical": true
+    },
+    {
+      "name": "PRIORITY_REVIEW.md",
+      "state_sha256": "a711161cb0e0883dfbc6b344495d95ac133e203bff5fab552cf412b2ed4b0ce9",
+      "replay_sha256": "a711161cb0e0883dfbc6b344495d95ac133e203bff5fab552cf412b2ed4b0ce9",
+      "byte_identical": true
+    },
+    {
+      "name": "DECISION_OCCURRENCES.csv",
+      "state_sha256": "c2a7fd3b2bc21d1e664a6cf3105c72a2b26e39f8245dfe81e1de4a2f9cbe2741",
+      "replay_sha256": "c2a7fd3b2bc21d1e664a6cf3105c72a2b26e39f8245dfe81e1de4a2f9cbe2741",
+      "byte_identical": true
+    },
+    {
+      "name": "DECISIONS.json",
+      "state_sha256": "2125f13939e5a13e36d1c78734ac984431a88337ed464fdf6a39afdcbfe658bc",
+      "replay_sha256": "2125f13939e5a13e36d1c78734ac984431a88337ed464fdf6a39afdcbfe658bc",
+      "byte_identical": true
+    },
+    {
+      "name": "translation-decision.schema.json",
+      "state_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "replay_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "byte_identical": true
+    },
+    {
+      "name": "TRANSLATION_DECISION_QA.json",
+      "state_sha256": "0145d531d1ac3f9a4dfd4daac598112b586e7ce34caa214978284db2fe6a2473",
+      "replay_sha256": "0145d531d1ac3f9a4dfd4daac598112b586e7ce34caa214978284db2fe6a2473",
+      "byte_identical": true
+    }
+  ]
+}

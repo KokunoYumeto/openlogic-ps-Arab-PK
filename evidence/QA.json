@@ -4,19 +4,22 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 197,
-    "structural_pass": 197,
+    "draft_units": 202,
+    "structural_pass": 202,
     "visually_accepted": 105,
     "published": 82
   },
   "publication_coverage": {
     "reader_units": 82,
     "source_snapshot_units": 197,
-    "published_definition": "published counts units in an accepted public reader; source_snapshot_units separately counts structurally verified drafts included in the public source archive"
+    "published_definition": "published counts units in an accepted public reader; source_snapshot_units separately counts structurally verified drafts included in the public source archive",
+    "source_snapshot_release": "v0.5.1-proof-systems-completeness-epub",
+    "source_snapshot_commit": "098e49aca21518a3ef8577a5930db82d7bc2a377",
+    "source_snapshot_disposition": "immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes"
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
+  "batch": "PS-B043-INTERPOLATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -5577,7 +5580,7 @@
       "unit_id": "OLP-0197",
       "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
       "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
-      "translation_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "translation_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
       "source_blocks": 14,
       "target_blocks": 14,
       "checks": {
@@ -5597,7 +5600,8 @@
       "source_correction_ids": [
         "OLMOD-014",
         "OLMOD-015",
-        "OLMOD-016"
+        "OLMOD-016",
+        "OLMOD-023"
       ],
       "status": "structural-pass",
       "math_diff": {
@@ -5608,6 +5612,199 @@
         "target_only": [
           "\\begin{align*}\\Assign{\\Obj{0}}{K}&=0\\\\\\Assign{\\prime}{K}(x)&=\\begin{cases}x+1&\\text{LOCALIZED$x\\in\\Nat$}\\\\a&\\text{LOCALIZED$x=a$}\\end{cases}\\\\\\Assign{+}{K}(x,y)&=\\begin{cases}x+y&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\a&\\text{LOCALIZED}\\end{cases}\\\\\\Assign{\\times}{K}(x,y)&=\\begin{cases}xy&\\text{LOCALIZED$x$$y\\in\\Nat$}\\\\0&\\text{LOCALIZED$x=0$$y=0$}\\\\a&\\text{LOCALIZED}\\\\\\end{cases}\\\\\\Assign{<}{K}&=\\Setabs{\\tuple{x,y}}{x,y\\in\\Nat\\text{LOCALIZED}x<y}\\cup\\Setabs{\\tuple{x,a}}{x\\in\\Domain{K}}\\end{align*}",
           "$g(n)=n-1$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0198",
+      "path": "content/model-theory/interpolation/interpolation.tex",
+      "source_sha256": "5de1f03dcb4be6160c64ed31326b49ded46646aed4c04277aa37da33bbf8d4e9",
+      "translation_sha256": "2a08bc9e46aeba0e095a29dbd59ce6cd7b37c6ba67cb84a3906ded74574e4f98",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "path": "content/model-theory/interpolation/introduction.tex",
+      "source_sha256": "dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882",
+      "translation_sha256": "a06088fd58b8471145d9f53d8034148705d535b6d6f4778816f92814329cb95d",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "path": "content/model-theory/interpolation/separation.tex",
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "translation_sha256": "13347957ccffe7ccf99c38ec3d9c4e79da07073e53c4e9426cc111cb108eee0e",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-017"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\lforall[x][!C]\\Entails\\lnot\\delta$"
+        ],
+        "target_only": [
+          "$\\Delta_0$",
+          "$!H$",
+          "$\\lforall[x][!C]\\Entails\\lnot!H$",
+          "$\\delta$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0201",
+      "path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "translation_sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-018",
+        "OLMOD-019",
+        "OLMOD-020"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Lang{L}_0$",
+          "$\\Lang{L'_1}\\supseteq\\Lang{L'_0}$",
+          "$\\Lang{L'_2}\\supseteq\\Lang{L'_0}$",
+          "$\\Lang{L'_1}\\setminus\\Lang{L'_0}$",
+          "$\\Lang{L_1}\\cup\\Lang{L_2}$",
+          "$\\Lang{L_2}\\setminus\\Lang{L_1}$",
+          "$\\Lang{L}_1\\setminus\\Lang{L}_2$",
+          "$\\Assign{P}{M}=h(\\Assign{P}{M'_2})$",
+          "$\\Lang{L'_1}$",
+          "$\\Lang{L'_2}$"
+        ],
+        "target_only": [
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_0$",
+          "$\\Lang{L}'_1\\supseteq\\Lang{L}'_0$",
+          "$\\Lang{L}'_2\\supseteq\\Lang{L}'_0$",
+          "$\\Struct{M'_1}$",
+          "$\\Lang{L}'_1\\setminus\\Lang{L}'_0$",
+          "$\\Lang{L}'_1\\cup\\Lang{L}'_2$",
+          "$\\Lang{L}'_1\\cup\\Lang{L}'_2$",
+          "$\\Lang{L}'_2\\setminus\\Lang{L}'_1$",
+          "$\\Lang{L}'_1\\setminus\\Lang{L}'_2$",
+          "$\\Assign{P}{M}=h(\\Assign{P}{M'_1})$",
+          "$\\Struct{M'_2}$",
+          "$h$",
+          "$\\Gamma^*\\cup\\Delta^*$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0202",
+      "path": "content/model-theory/interpolation/definability.tex",
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "translation_sha256": "19657be8ec8ce32d1a612962d163da0dbec5dcedf32df3cd86fb4c218f37cc88",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMOD-021",
+        "OLMOD-022"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$!D(P)\\land!D(P')\\Entails\\Atom{P}{c_1,\\dots,c_n}\\toP'c_1\\dotsc_n$"
+        ],
+        "target_only": [
+          "$\\Sigma(P)$",
+          "$!D(P)\\land!D(P')\\Entails\\Atom{P}{c_1,\\dots,c_n}\\to\\Atom{P'}{c_1,\\dots,c_n}$",
+          "$P'c_1\\dotsc_n$",
+          "$\\Atom{P'}{c_1,\\dots,c_n}$"
         ],
         "expected_by_source_correction": true
       }
@@ -7682,7 +7879,37 @@
       "unit_id": "OLP-0197",
       "passage": "computable arithmetic models",
       "reverse_paraphrase": "A computable Q model can be transported onto Nat, while Tennenbaum rules out computable nonstandard PA models.",
-      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism."
+      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism. The transport-to-Nat claim is restricted to infinite countable structures, matching both the application and TERM-ENUMERABLE."
+    },
+    {
+      "unit_id": "OLP-0198",
+      "passage": "interpolation chapter driver",
+      "reverse_paraphrase": "The driver imports the introduction, separation lemmas, Craig proof and definability application in source order.",
+      "finding": "Every active import and the chapter identifier are preserved once."
+    },
+    {
+      "unit_id": "OLP-0199",
+      "passage": "interpolation introduction",
+      "reverse_paraphrase": "An interpolant is entailed by A, entails B and uses only nonlogical vocabulary common to A and B.",
+      "finding": "Both entailment directions, the vocabulary condition and the Beth and Robinson applications remain explicit."
+    },
+    {
+      "unit_id": "OLP-0200",
+      "passage": "separation lemmas",
+      "reverse_paraphrase": "Separating A from not-B recasts interpolation as a common-language problem; fresh constants and witnesses preserve inseparability.",
+      "finding": "Both compactness arguments retain their finite conjunctions and quantifier directions; OLMOD-017 replaces only the undefined delta with H."
+    },
+    {
+      "unit_id": "OLP-0201",
+      "passage": "Craig interpolation proof",
+      "reverse_paraphrase": "A maximally inseparable pair in extended languages yields maximally consistent theories whose common reducts are isomorphic and can be combined into a countermodel.",
+      "finding": "The construction enumerates the extended languages, transports exclusive symbols from the structure where they are defined and interprets the new constants in the final model."
+    },
+    {
+      "unit_id": "OLP-0202",
+      "passage": "Beth definability theorem",
+      "reverse_paraphrase": "If a theory fixes the interpretation of P across all expansions of an L-structure, interpolation supplies an L-formula explicitly defining P.",
+      "finding": "The two definitions, compactness reduction and both interpolation entailments are preserved; the theorem object class and one atom notation are corrected."
     }
   ],
   "builds": [

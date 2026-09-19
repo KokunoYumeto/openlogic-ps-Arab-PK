@@ -1,0 +1,123 @@
+{
+  "schema": "ps-model-theory-interpolation-draft/1",
+  "utc": "2026-09-19T18:45:45.288068+00:00",
+  "status": "OLP-0198 through OLP-0202 manually translated, semantically reviewed, registered, and accepted by cumulative and repository QA",
+  "batch_id": "PS-B043-INTERPOLATION",
+  "units": [
+    {
+      "unit_id": "OLP-0198",
+      "path": "content/model-theory/interpolation/interpolation.tex",
+      "source_sha256": "5de1f03dcb4be6160c64ed31326b49ded46646aed4c04277aa37da33bbf8d4e9",
+      "translation_sha256": "2a08bc9e46aeba0e095a29dbd59ce6cd7b37c6ba67cb84a3906ded74574e4f98",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "path": "content/model-theory/interpolation/introduction.tex",
+      "source_sha256": "dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882",
+      "translation_sha256": "a06088fd58b8471145d9f53d8034148705d535b6d6f4778816f92814329cb95d",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "path": "content/model-theory/interpolation/separation.tex",
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "translation_sha256": "13347957ccffe7ccf99c38ec3d9c4e79da07073e53c4e9426cc111cb108eee0e",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLMOD-017"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "translation_sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLMOD-018",
+        "OLMOD-019",
+        "OLMOD-020"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "path": "content/model-theory/interpolation/definability.tex",
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "translation_sha256": "19657be8ec8ce32d1a612962d163da0dbec5dcedf32df3cd86fb4c218f37cc88",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLMOD-021",
+        "OLMOD-022"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 197,
+    "current_reviewed_draft_units": 5,
+    "prospective_total_after_registration": 202,
+    "accepted_units_after_registration": 202,
+    "remaining_units": 520,
+    "published_reader_units": 82,
+    "published_source_snapshot_units": 197
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0198",
+      "OLP-0199"
+    ],
+    "documented_correction_units": [
+      "OLP-0200",
+      "OLP-0201",
+      "OLP-0202"
+    ]
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INTERPOLATION_SOURCE_CHECK.json",
+    "source_check_sha256": "c3880a6d69db4bd88578c7658c27b93a8d0b2db23d691c07d656663100aa48d2",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_interpolation_drafts.py",
+    "draft_checker_sha256": "613c73f0b074fc602e6419f0610342fa2415ec77792ffc35e36465af79932083",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INTERPOLATION_DRAFT_CHECK.json",
+    "draft_check_sha256": "a55242bd7ff398f47dc04463071b9718fc5154d6eecec5e79f07867b2199d1a8",
+    "qa_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\QA.json",
+    "qa_sha256": "ae674105c87dd855b6f7ebe4dd6fb0dcd5da5cee9ce7d33d9f943715e9acea24",
+    "alignment_sha256": "1ae549b8628367d3a58c4035add62566ff2b2f2719172f9ca49adc70bfd0d089",
+    "segment_canon_use_sha256": "0371a20e62700b449c90859d7122cf82851b6e240b46bb7282d5338e18d94abb",
+    "term_decisions_sha256": "1eed74530fa40ed4ca0ff9ecaca6128151a5c69fdb20ea36c5019c9fe0cecc73",
+    "source_corrections_sha256": "9f75ecc76ce263c623c0f81571f9ec8237a39ba9575b5728aef0a718da61047c",
+    "expert_review_log_sha256": "4814b77a556f554e72e072929e4e116b933f3614b26375d4a384b8490dce3a56",
+    "expert_review_summary_sha256": "2707e06001ab602f8e4a6b138bc892f3b69027d317581b948c2556716b47c215",
+    "decisions_sha256": "2125f13939e5a13e36d1c78734ac984431a88337ed464fdf6a39afdcbfe658bc",
+    "decision_qa_sha256": "0145d531d1ac3f9a4dfd4daac598112b586e7ce34caa214978284db2fe6a2473",
+    "translation_review_workflow_sha256": "29defd65eb33e5ac5dd1454a33f603f392a236095a7b4a4b3aff24956a911101",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INTERPOLATION_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "840d25d3610a7045ad032849e42c9e6690a4aa2326ac1b7f76bdb12e7fb8609a",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INTERPOLATION_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "7bd287a1e1ac097de21d5c018c7ed6ca0c6607f46c889c8cf8ad6c2a3bc083e4",
+    "arithmetic_enumerability_clarification_sha256": "f25f4ccfc63c098de4749612f62be99f3435b54c320b4c6c8b6b2e0c88db5deb"
+  },
+  "registration_status": "complete; canonical decision projection and independent repository replay pass byte-for-byte",
+  "next_action": "Commit and push the complete checkpoint, then translate and source-review OLP-0203 through OLP-0207 in the Lindstrom chapter.",
+  "canonical_summary": {
+    "decisions": 264,
+    "occurrences": 13260,
+    "terminology_decisions": 117,
+    "source_correction_decisions": 142,
+    "priority_decisions": 110,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 7901
+  }
+}

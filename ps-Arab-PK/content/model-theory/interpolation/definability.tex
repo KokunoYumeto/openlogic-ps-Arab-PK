@@ -1,0 +1,141 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: definability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{def}
+
+\olsection{د تعريف‌وړتيا قضيه}
+
+د منځګړيتوب د قضيې يو مهم استعمال د بېت د تعريف‌وړتيا قضيه ده۔ د
+يوې~$n$-ځاييزې اړيکې~$R$ د تعريفولو دپاره داسې !!a{formula}~$!C$
+ورکولے شو چې~$n$ ازاد !!{variable}s ولري او~$R$ پکې نۀ راځي۔ دا به
+د~$!C$ له مخې د~$R$ يو \emph{څرګند} تعريف وي۔ بيا دا هم ويلے شو چې
+په داسې !!{language} کښې يوه تيوري~$\Sigma(P)$ چې~$n$-ځاييز
+!!{predicate}~$P$ لري، $P$ په څرګنده توګه تعريفوي که يو صوري
+څرګند تعريف ولري (يا لږ تر لږه ترې لازم راشي)، يعنې
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+خو څرګند تعريف د يوې اړيکې د تعريفولو---يعنې په بشپړ ډول د هغې د
+ټاکلو---يوازې يوه لار ده۔ يوه تيوري داسې هم کېدے شي چې په هر مدل
+کښې د~$P$ تفسير د پاتې !!{language} په تفسير سره ټاکل شوے وي۔ د
+تعريف‌وړتيا قضيه وايي چې هر کله يوه تيوري د~$P$ تفسير په دې ډول
+ټاکي---يعنې~$P$ \emph{په ضمني توګه تعريفوي}---نو هغه په څرګنده
+توګه هم تعريفوي۔
+
+\begin{defn}
+فرض کړئ~$\Lang{L}$ داسې !!a{language} ده چې !!{predicate}~$P$ نۀ
+لري۔ د~$\Lang{L} \cup \{P\}$ د !!{sentence}s يو سټ~$\Sigma(P)$،
+$P$ هله او يوازې هله \emph{په څرګنده توګه تعريفوي} چې د
+$\Lang{L}$ داسې !!a{formula}~$!C(x_1, \dots, x_n)$ وي چې
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+\end{defn}
+
+\begin{defn}
+فرض کړئ~$\Lang{L}$ داسې !!a{language} ده چې !!{predicate}s~$P$ او
+$P'$ نۀ لري۔ د~$\Lang{L} \cup \{P\}$ د !!{sentence}s يو
+سټ~$\Sigma(P)$، $P$ هله او يوازې هله \emph{په ضمني توګه تعريفوي}
+چې
+\[
+\Sigma(P) \cup \Sigma(P') \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff \Atom{P'}{x_1,\dots,
+      x_n})]],
+\]
+چې~$\Sigma(P')$ په~$\Sigma(P)$ کښې د~$P$ پر ځاے په يو شان ډول د
+$P'$ له اېښودلو څخه ترلاسه کېږي۔
+\end{defn}
+
+په بله وينا، د هر مدل~$\Struct{M}$ او
+$R, R' \subseteq \Domain{M}^n$ دپاره، که دواړه
+$\Expan{M}{R} \Entails \Sigma(P)$ او
+$\Expan{M}{R'} \Entails \Sigma(P')$ وي، نو~$R=R'$؛ دلته
+$\Expan{M}{R}$ هغه !!{structure}~$\Struct{M'}$ دے چې~$\Lang{L}$
+$\Lang{L} \cup \{P\}$ ته غځوي او~$\Assign{P}{M'} = R$ کوي، او د
+$\Expan{M}{R'}$ دپاره هم همداسې ده۔
+
+\begin{thm}[د بېت د تعريف‌وړتيا قضيه]
+د~$\Lang{L} \cup\{P\}$ د جملو يو سټ~$\Sigma(P)$، $P$
+هله او يوازې هله په ضمني توګه تعريفوي چې~$\Sigma(P)$، $P$ په
+څرګنده توګه تعريف کړي۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-021):} سرچينې د قضيې په بيان
+کښې~$\Sigma(P)$ د !!{formula}s سټ بللے و، سره له دې چې دواړه مخکني
+تعريفونه او ثبوت جملې کاروي؛ او د «هله او يوازې هله» دويم «هله»
+ترې پاتې و۔ دلته «جملې» او بشپړه دوه اړخيزه رابطه ليکل شوې ده۔
+\end{thm}
+
+\begin{proof}
+که~$\Sigma(P)$، $P$ په څرګنده توګه تعريف کړي، نو دواړه
+\begin{align*}
+  \Sigma(P) & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]\\
+  \Sigma(P') & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P'}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]
+\end{align*}
+دي، او پايله ترې ترلاسه کېږي۔ د بل لوري دپاره فرض کړئ چې
+$\Sigma(P)$، $P$ په ضمني توګه تعريفوي۔ لومړے !!{constant}s~$c_1$،
+\dots،~$c_n$ په~$\Lang{L}$ کښې ورزياتوو۔ بيا
+\[
+\Sigma(P) \cup \Sigma(P') \Entails
+\Atom{P}{c_1, \dots, c_n} \to  \Atom{P'}{c_1, \dots, c_n}.
+\]
+د متناهي شاهد له مخې داسې متناهي سټونه
+$\Delta_0 \subseteq \Sigma(P)$ او~$\Delta_1 \subseteq \Sigma(P')$
+شته چې
+\[
+\Delta_0 \cup \Delta_1 \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+پرېږدئ~$!D(P)$ د ټولو هغو !!{sentence}s~$!A(P)$ عطف وي چې يا
+$!A(P) \in \Delta_0$ يا~$!A(P') \in \Delta_1$؛ او~$!D(P')$ د
+ټولو هغو !!{sentence}s~$!A(P')$ عطف وي چې يا
+$!A(P) \in \Delta_0$ يا~$!A(P') \in \Delta_1$۔ بيا
+$!D(P) \land !D(P') \Entails \Atom{P}{c_1, \dots, c_n} \to
+\Atom{P'}{c_1,\dots,c_n}$۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-022):} سرچينې په دې پايله کښې
+وروستے اټومي فارمول په خامه بڼه~$P'c_1\dots c_n$ ليکلے و؛ دلته د
+همدې ثبوت له ثابتې نښې سره سم~$\Atom{P'}{c_1,\dots,c_n}$ ليکل
+شوے دے۔
+دا داسې بيا ترتيبولے شو چې هر !!{predicate} د~$\Entails$ په يوه
+اړخ کښې راشي:
+\[
+!D(P) \land \Atom{P}{c_1, \dots, c_n} \Entails
+!D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+د کرېګ د منځګړيتوب له قضيې داسې !!a{sentence}
+$!C(c_1,\dots, c_n)$ شته چې~$P$ يا~$P'$ نۀ لري او:
+\begin{align*}
+  !D(P) \land \Atom{P}{c_1, \dots, c_n} & \Entails !C(c_1,\dots, c_n); \\
+  !C(c_1,\dots, c_n) & \Entails !D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\end{align*}
+له دې دوو استلزامونو له لومړي څخه لرو چې
+$!D(P) \Entails \Atom{P}{c_1,\dots, c_n} \lif
+!C(c_1,\dots, c_n)$۔ او له دويم څخه، ځکه چې د~$\Lang{L} \cup
+\{P\}$ يو مدل~$\Expan{M}{R} \Entails !A(P)$ هله او يوازې هله چې
+ورسره اړوند د~$\Lang{L} \cup \{P'\}$ مدل
+$\Expan{M}{R} \models !A(P')$ وي، لرو چې
+$!C(c_1,\dots, c_n) \Entails !D(P) \lif
+\Atom{P}{c_1,\dots, c_n}$؛ له دې څخه:
+\[
+!D(P) \Entails !C(c_1,\dots,c_n) \to \Atom{P}{c_1,\dots, c_n}.
+\]
+دواړه سره يوځاے کول راکوي چې
+$!D(P) \Entails \Atom{P}{c_1,\dots, c_n}
+\liff !C(c_1, \dots, c_n)$، او د يکنواختۍ او تعميم له مخې هم
+\[
+\Sigma(P) \Entails
+\lforall[x_1][\dots\lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff
+    !C(x_1,\dots, x_n))]].
+\]
+\end{proof}
+
+\end{document}

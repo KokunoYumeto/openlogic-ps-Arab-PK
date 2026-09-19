@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
-  "status": "v0.5.0 public artifacts remain frozen and verified; OLP-0191 through OLP-0197 form a complete manually translated and source-reviewed models-of-arithmetic batch",
+  "batch_id": "PS-B043-INTERPOLATION",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0198 through OLP-0202 form a complete manually translated and source-reviewed interpolation batch",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -4151,7 +4151,138 @@
         "TERM-ARITHMETIC-THEORIES",
         "TERM-FUNCTION"
       ],
-      "scope": "The computable-model section preserves the transported computable Q model and Tennenbaum conclusion. OLMOD-014 through OLMOD-016 repair the relation variable, bijection offset and literal uniqueness claim."
+      "scope": "The computable-model section preserves the transported computable Q model and Tennenbaum conclusion. OLMOD-014 through OLMOD-016 repair the relation variable, bijection offset and literal uniqueness claim. OLMOD-023 makes the infinite-domain hypothesis explicit because the edition's enumerable convention also includes finite structures."
+    },
+    "OLP-0198": {
+      "batch_id": "PS-B043-INTERPOLATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-INTERPOLATION-SEPARATION",
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-JOINT-CONSISTENCY",
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "The chapter driver preserves the introduction, separation, Craig proof and definability imports in frozen source order."
+    },
+    "OLP-0199": {
+      "batch_id": "PS-B043-INTERPOLATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-INTERPOLATION-SEPARATION",
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-JOINT-CONSISTENCY",
+        "TERM-FOL-SEMANTICS",
+        "TERM-PREDICATE"
+      ],
+      "scope": "The introduction states both entailment directions, the shared-vocabulary restriction and the two named applications without weakening their scope."
+    },
+    "OLP-0200": {
+      "batch_id": "PS-B043-INTERPOLATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-INTERPOLATION-SEPARATION",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-FOL-SYNTAX",
+        "TERM-FOL-SEMANTICS",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "The section preserves separation, inseparability, both lemmas, fresh-constant conditions, compactness and the witness argument. OLMOD-017 replaces the undefined delta by the defined conjunction H."
+    },
+    "OLP-0201": {
+      "batch_id": "PS-B043-INTERPOLATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX"
+      ],
+      "terms": [
+        "TERM-INTERPOLATION-SEPARATION",
+        "TERM-JOINT-CONSISTENCY",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-ISOMORPHISM",
+        "TERM-ENUMERATION",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The Craig proof preserves the contrapositive construction, simultaneous induction, maximal-consistency arguments and amalgamated model. OLMOD-018 through OLMOD-020 repair the extended-language enumeration, relation transport and final model scope."
+    },
+    "OLP-0202": {
+      "batch_id": "PS-B043-INTERPOLATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-INTERPOLATION-SEPARATION",
+        "TERM-MODEL-THEORY-STRUCTURES",
+        "TERM-RELATION",
+        "TERM-PREDICATE",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "scope": "The Beth section preserves explicit and implicit definitions, expansion semantics, compactness and interpolation. OLMOD-021 repairs the theorem statement and OLMOD-022 restores the established predicate-atom notation."
     }
   },
   "semantic_review": [
@@ -6223,7 +6354,37 @@
       "unit_id": "OLP-0197",
       "passage": "computable arithmetic models",
       "reverse_paraphrase": "A computable Q model can be transported onto Nat, while Tennenbaum rules out computable nonstandard PA models.",
-      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism."
+      "finding": "The relation set uses its tuple variable, the displayed map is a genuine bijection, and uniqueness is stated up to isomorphism. The transport-to-Nat claim is restricted to infinite countable structures, matching both the application and TERM-ENUMERABLE."
+    },
+    {
+      "unit_id": "OLP-0198",
+      "passage": "interpolation chapter driver",
+      "reverse_paraphrase": "The driver imports the introduction, separation lemmas, Craig proof and definability application in source order.",
+      "finding": "Every active import and the chapter identifier are preserved once."
+    },
+    {
+      "unit_id": "OLP-0199",
+      "passage": "interpolation introduction",
+      "reverse_paraphrase": "An interpolant is entailed by A, entails B and uses only nonlogical vocabulary common to A and B.",
+      "finding": "Both entailment directions, the vocabulary condition and the Beth and Robinson applications remain explicit."
+    },
+    {
+      "unit_id": "OLP-0200",
+      "passage": "separation lemmas",
+      "reverse_paraphrase": "Separating A from not-B recasts interpolation as a common-language problem; fresh constants and witnesses preserve inseparability.",
+      "finding": "Both compactness arguments retain their finite conjunctions and quantifier directions; OLMOD-017 replaces only the undefined delta with H."
+    },
+    {
+      "unit_id": "OLP-0201",
+      "passage": "Craig interpolation proof",
+      "reverse_paraphrase": "A maximally inseparable pair in extended languages yields maximally consistent theories whose common reducts are isomorphic and can be combined into a countermodel.",
+      "finding": "The construction enumerates the extended languages, transports exclusive symbols from the structure where they are defined and interprets the new constants in the final model."
+    },
+    {
+      "unit_id": "OLP-0202",
+      "passage": "Beth definability theorem",
+      "reverse_paraphrase": "If a theory fixes the interpretation of P across all expansions of an L-structure, interpolation supplies an L-formula explicitly defining P.",
+      "finding": "The two definitions, compactness reduction and both interpolation entailments are preserved; the theorem object class and one atom notation are corrected."
     }
   ]
 }

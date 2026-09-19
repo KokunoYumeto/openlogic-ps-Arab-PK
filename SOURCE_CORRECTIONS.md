@@ -1064,3 +1064,210 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: states that x has type tau when explaining the lambda term whose type is tau to sigma.
 - Disclosure: `replace-result-type-with-input-type-plus-adjacent-note`.
 
+## OLMOD-001
+
+- Unit: `OLP-0187`
+- Frozen source: `content/model-theory/basics/isomorphism.tex` (bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f) at `content/model-theory/basics/isomorphism.tex:86-91`
+- Pashto target: `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:92`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS`
+- Treatment: uses the M-prime interpretation for the second term-evaluation line, matching its left-hand structure and assignment.
+- Disclosure: `replace-wrong-structure-interpretation-plus-adjacent-note`.
+
+## OLMOD-002
+
+- Unit: `OLP-0187`
+- Frozen source: `content/model-theory/basics/isomorphism.tex` (bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f) at `content/model-theory/basics/isomorphism.tex:94-102`
+- Pashto target: `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:106`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS`
+- Treatment: closes the outer h application in the first line of the aligned proof.
+- Disclosure: `restore-outer-parenthesis-plus-adjacent-note`.
+
+## OLMOD-003
+
+- Unit: `OLP-0189`
+- Frozen source: `content/model-theory/basics/partial-iso.tex` (ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d) at `content/model-theory/basics/partial-iso.tex:143-158`
+- Pashto target: `ps-Arab-PK/content/model-theory/basics/partial-iso.tex:160`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS`
+- Treatment: uses k for the common sequence length and reserves n for the recursively defined relation index.
+- Disclosure: `separate-sequence-length-index-plus-adjacent-note`.
+
+## OLMOD-004
+
+- Unit: `OLP-0192`
+- Frozen source: `content/model-theory/models-of-arithmetic/introduction.tex` (b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6) at `content/model-theory/models-of-arithmetic/introduction.tex:55-70`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex:67`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: restores x as the proof-code argument of the repeated provability predicate.
+- Disclosure: `restore-proof-code-argument-plus-adjacent-note`.
+
+## OLMOD-005
+
+- Unit: `OLP-0193`
+- Frozen source: `content/model-theory/models-of-arithmetic/standard-models.tex` (8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8) at `content/model-theory/models-of-arithmetic/standard-models.tex:153-170`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex:175`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: states that the possible missing x is outside the range of s.
+- Disclosure: `replace-domain-with-range-plus-adjacent-note`.
+
+## OLMOD-006
+
+- Unit: `OLP-0194`
+- Frozen source: `content/model-theory/models-of-arithmetic/non-standard-models.tex` (2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1) at `content/model-theory/models-of-arithmetic/non-standard-models.tex:100-112`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:115`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: selects the largest occurring index when one exists and zero when none occurs.
+- Disclosure: `supply-empty-case-for-maximum-index-plus-adjacent-note`.
+
+## OLMOD-007
+
+- Unit: `OLP-0194`
+- Frozen source: `content/model-theory/models-of-arithmetic/non-standard-models.tex` (2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1) at `content/model-theory/models-of-arithmetic/non-standard-models.tex:78-113`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:119`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: invokes downward Loewenheim--Skolem after compactness to obtain an enumerable model.
+- Disclosure: `add-downward-lowenheim-skolem-step-plus-adjacent-note`.
+
+## OLMOD-008
+
+- Unit: `OLP-0195`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-q.tex` (09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc) at `content/model-theory/models-of-arithmetic/models-of-q.tex:98-108`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:110`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: uses y equals a in the final domain case.
+- Disclosure: `replace-undefined-b-case-with-a-plus-adjacent-note`.
+
+## OLMOD-009
+
+- Unit: `OLP-0195`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-q.tex` (09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc) at `content/model-theory/models-of-arithmetic/models-of-q.tex:154-171`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:177`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: uses a in the right-hand successor expression for the b-plus-a case.
+- Disclosure: `replace-unbound-y-with-left-hand-a-plus-adjacent-note`.
+
+## OLMOD-010
+
+- Unit: `OLP-0196`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-pa.tex` (1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4) at `content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:68`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: restricts the unique-predecessor claim to elements other than zero.
+- Disclosure: `restrict-predecessor-claim-to-nonzero-elements-plus-adjacent-note`.
+
+## OLMOD-011
+
+- Unit: `OLP-0196`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-pa.tex` (1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4) at `content/model-theory/models-of-arithmetic/models-of-pa.tex:173-185`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:191`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: adds the universal quantifier over y to the positive-addend theorem.
+- Disclosure: `quantify-free-addend-variable-plus-adjacent-note`.
+
+## OLMOD-012
+
+- Unit: `OLP-0196`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-pa.tex` (1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4) at `content/model-theory/models-of-arithmetic/models-of-pa.tex:217-228`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:242`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: uses the established nonstandard addition notation in both averaging equations.
+- Disclosure: `replace-undefined-oplus-with-established-nsplus-plus-adjacent-note`.
+
+## OLMOD-013
+
+- Unit: `OLP-0196`
+- Frozen source: `content/model-theory/models-of-arithmetic/models-of-pa.tex` (1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4) at `content/model-theory/models-of-arithmetic/models-of-pa.tex:238-258`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:273`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: states the rational-order conclusion for enumerable nonstandard models.
+- Disclosure: `qualify-block-order-claim-by-enumerable-model-plus-adjacent-note`.
+
+## OLMOD-014
+
+- Unit: `OLP-0197`
+- Frozen source: `content/model-theory/models-of-arithmetic/computable-models.tex` (f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89) at `content/model-theory/models-of-arithmetic/computable-models.tex:42-67`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:66`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: uses x in the domain-membership condition for the ordered pair x,a.
+- Disclosure: `replace-n-with-tuple-variable-x-plus-adjacent-note`.
+
+## OLMOD-015
+
+- Unit: `OLP-0197`
+- Frozen source: `content/model-theory/models-of-arithmetic/computable-models.tex` (f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89) at `content/model-theory/models-of-arithmetic/computable-models.tex:68-75`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:77`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: maps every positive n to n minus one.
+- Disclosure: `replace-plus-one-with-minus-one-plus-adjacent-note`.
+
+## OLMOD-016
+
+- Unit: `OLP-0197`
+- Frozen source: `content/model-theory/models-of-arithmetic/computable-models.tex` (f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89) at `content/model-theory/models-of-arithmetic/computable-models.tex:119-121`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:126`
+- Audit: `PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC`
+- Treatment: states uniqueness up to isomorphism, equivalently the absence of computable nonstandard models.
+- Disclosure: `qualify-uniqueness-up-to-isomorphism-plus-adjacent-note`.
+
+## OLMOD-017
+
+- Unit: `OLP-0200`
+- Frozen source: `content/model-theory/interpolation/separation.tex` (169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d) at `content/model-theory/interpolation/separation.tex:70-78`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/separation.tex:80`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: uses the defined conjunction H as the negated consequent of the universal formula.
+- Disclosure: `replace-undefined-delta-with-defined-conjunction-H-plus-adjacent-note`.
+
+## OLMOD-018
+
+- Unit: `OLP-0201`
+- Frozen source: `content/model-theory/interpolation/interpolation-proof.tex` (702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931) at `content/model-theory/interpolation/interpolation-proof.tex:38-57`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:43`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: enumerates the sentences of L'_1 and L'_2, including sentences with the newly added constants.
+- Disclosure: `enumerate-sentences-of-extended-languages-plus-adjacent-note`.
+
+## OLMOD-019
+
+- Unit: `OLP-0201`
+- Frozen source: `content/model-theory/interpolation/interpolation-proof.tex` (702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931) at `content/model-theory/interpolation/interpolation-proof.tex:171-177`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:193`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: defines an L'_1-only predicate by transporting its M'_1 interpretation across h.
+- Disclosure: `transport-L1-predicate-from-M1-prime-plus-adjacent-note`.
+
+## OLMOD-020
+
+- Unit: `OLP-0201`
+- Frozen source: `content/model-theory/interpolation/interpolation-proof.tex` (702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931) at `content/model-theory/interpolation/interpolation-proof.tex:165-190`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:203`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: defines M on L'_1 union L'_2 and treats exclusive, common and functional symbols in those extended languages.
+- Disclosure: `define-combined-model-on-primed-union-plus-adjacent-note`.
+
+## OLMOD-021
+
+- Unit: `OLP-0202`
+- Frozen source: `content/model-theory/interpolation/definability.tex` (9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29) at `content/model-theory/interpolation/definability.tex:66-69`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/definability.tex:70`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: states that a set of sentences implicitly defines P if and only if it explicitly defines P.
+- Disclosure: `state-sentences-and-complete-if-and-only-if-plus-adjacent-note`.
+
+## OLMOD-022
+
+- Unit: `OLP-0202`
+- Frozen source: `content/model-theory/interpolation/definability.tex` (9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29) at `content/model-theory/interpolation/definability.tex:91-99`
+- Pashto target: `ps-Arab-PK/content/model-theory/interpolation/definability.tex:104`
+- Audit: `PS-OWNER-SEMANTIC-20260919-INTERPOLATION`
+- Treatment: writes the P'-application as the same n-place Atom form used throughout the argument.
+- Disclosure: `restore-Atom-macro-for-P-prime-plus-adjacent-note`.
+
+## OLMOD-023
+
+- Unit: `OLP-0197`
+- Frozen source: `content/model-theory/models-of-arithmetic/computable-models.tex` (f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89) at `content/model-theory/models-of-arithmetic/computable-models.tex:25-32`
+- Pashto target: `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:32`
+- Audit: `PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY`
+- Treatment: restricts transport onto a denumerable set to infinite countable structures.
+- Disclosure: `qualify-countable-structure-as-infinite-plus-adjacent-note`.
+

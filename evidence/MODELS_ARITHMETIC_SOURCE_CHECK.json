@@ -283,10 +283,31 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
       "formula_policy": "No formula changes; the theorem's prose uniqueness claim is qualified by isomorphism.",
       "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-023",
+      "unit_id": "OLP-0197",
+      "classification": "countable_structure_claim_omits_infinite_domain_hypothesis",
+      "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:25-32",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_line_1based": 32,
+      "target_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
+      "mode": "qualify-countable-structure-as-infinite-plus-adjacent-note",
+      "translation_change": "restricts transport onto a denumerable set to infinite countable structures",
+      "counterexample": "Under the edition's enumerable convention, a one-element structure is countable but cannot be transported by a bijection onto Nat. The nonstandard arithmetic models discussed here are infinite, so the required qualification preserves the intended application.",
+      "stable_audit": "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
+      "formula_policy": "No formula, token macro, computability condition or decidability condition changes; only the missing infinite-domain qualification is made explicit.",
+      "decision_timing": "contemporaneous adoption of a bounded manager semantic review against OLP-0197-B006, the frozen source bytes and TERM-ENUMERABLE"
     }
   ],
   "no_change_units": [
     "OLP-0191"
   ],
-  "status": "complete models-of-arithmetic source review; thirteen adopted corrections have adjacent Pashto disclosures and exact formula-delta accounting where formulas changed"
+  "status": "complete models-of-arithmetic source review with fourteen adopted corrections; OLP-0197 now states the infinite-domain qualification required by the edition's enumerable convention",
+  "supplemental_audit_ids": [
+    "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY"
+  ],
+  "supplemented_utc": "2026-09-19T18:51:59.916515+00:00"
 }

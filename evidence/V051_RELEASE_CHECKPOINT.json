@@ -1,0 +1,171 @@
+{
+  "schema": "ps-openlogic-release-checkpoint/1",
+  "status": "published-and-verified",
+  "recorded_utc": "2026-09-19T18:29:01.373813+00:00",
+  "release": {
+    "tag": "v0.5.1-proof-systems-completeness-epub",
+    "commit": "098e49aca21518a3ef8577a5930db82d7bc2a377",
+    "annotated_tag_object": "c91c285bf15e226c1430773b8e82f023f9ca0076",
+    "github_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.1-proof-systems-completeness-epub",
+    "zenodo_record_id": 22848594,
+    "zenodo_record_url": "https://zenodo.org/records/22848594",
+    "zenodo_doi": "10.5281/zenodo.22848594",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197"
+  },
+  "coverage": {
+    "total_units": 722,
+    "draft_units": 197,
+    "structural_pass_units": 197,
+    "reader_units": 82,
+    "epub_units": 82,
+    "visually_accepted_units": 105,
+    "source_snapshot_units": 197,
+    "remaining_units": 525
+  },
+  "formats": {
+    "pdf": {
+      "format": "PDF",
+      "path": "readers/openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
+      "bytes": 606333,
+      "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
+      "pages": 126,
+      "policy": "The accepted cumulative PDF remains the public preview."
+    },
+    "epub": {
+      "path": "readers/openlogic-ps-Arab-PK-proof-systems-completeness.epub",
+      "bytes": 177864,
+      "sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
+      "format": "EPUB 3.4",
+      "layout": "reflowable",
+      "language": "ps-Arab-PK",
+      "page_progression": "rtl",
+      "native_mathml": true,
+      "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+    },
+    "epub_structure": {
+      "mathml_elements": 5582,
+      "mathml_tex_annotations": 5582,
+      "proof_tree_environments": 124,
+      "proof_nodes": 710,
+      "tableau_environments": 51,
+      "tableau_nodes": 279,
+      "problems": 58,
+      "definitions": 47,
+      "propositions": 77,
+      "theorems": 19,
+      "corollaries": 11,
+      "lemmas": 9,
+      "examples": 33,
+      "proofs": 103,
+      "editorial_notes": 9
+    },
+    "epub_links": {
+      "internal": 425,
+      "external": 47,
+      "broken": 0,
+      "navigation_entries": 181
+    },
+    "epubcheck": {
+      "version": "5.4.0",
+      "fatal": 0,
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "primary_report_sha256": "37ab2bff8be3673cdb61f15b77d2ff2e22e609570fc2578524b531f57b6c8afc",
+      "replay_report_sha256": "97f7eee82f7e1b62217b415d790bd1294b2ed207b7616467e2cb6a7aa07e2623"
+    },
+    "determinism": {
+      "independent_cold_rebuild": true,
+      "byte_identical": true,
+      "primary_sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
+      "replay_sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
+      "primary_build_receipt_sha256": "99c959b3ef36f7e429f4537396ff690c4673a6cbe53bc927fec6c87a087b6eb4",
+      "replay_build_receipt_sha256": "abd7432b26aeb219b5a860583d86ebcf501ae6c18bbbcf369d3707747cbcb59c"
+    }
+  },
+  "direct_latex": {
+    "editions": 7,
+    "guarded_passes_per_edition": 3,
+    "all_pdf_hashes_reproduced": true,
+    "historical_github_releases_repaired": 6,
+    "historical_github_assets_anonymously_verified": 24
+  },
+  "source_archive": {
+    "filename": "03-openlogic-ps-Arab-PK-v0.5.1-proof-systems-completeness-epub-sources.zip",
+    "bytes": 15573033,
+    "sha256": "873b2d2738179213b60a59081a302ee928f64ae9643933521ad91157fbbb1d99",
+    "tracked_files": 1145,
+    "all_git_blobs_verified": true,
+    "byte_identical_replay": true
+  },
+  "publication": {
+    "github_assets_anonymously_verified": 12,
+    "zenodo_assets_anonymously_verified": 12,
+    "zenodo_preview_filename": "01-openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.1.pdf",
+    "zenodo_effective_file_order": [
+      "01-openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.1.pdf",
+      "02-openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.1.tex",
+      "03-openlogic-ps-Arab-PK-v0.5.1-proof-systems-completeness-epub-sources.zip",
+      "04-openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.1.epub",
+      "05-EPUB-VALIDATION-v0.5.1.json",
+      "06-openlogic-ps-Arab-PK-v0.1.0-sets.tex",
+      "07-openlogic-ps-Arab-PK-v0.2.0-sets-relations.tex",
+      "08-openlogic-ps-Arab-PK-v0.3.0-sets-relations-functions.tex",
+      "09-openlogic-ps-Arab-PK-v0.4.0-proof-systems.tex",
+      "10-openlogic-ps-Arab-PK-v0.4.1-proof-systems-reference-repair.tex",
+      "11-openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness.tex",
+      "99-SHA256SUMS-v0.5.1.txt"
+    ],
+    "previous_zenodo_records_still_open": [
+      22646118,
+      22442605,
+      22381723,
+      22312916,
+      22307753,
+      22307198
+    ],
+    "doi_resolved": true,
+    "concept_doi_resolved_to_latest": true
+  },
+  "canonical_review": {
+    "decisions": 254,
+    "occurrences": 13074,
+    "terminology_decisions": 114,
+    "source_correction_decisions": 135,
+    "priority_decisions": 107,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 7715,
+    "qa_sha256": "5058c4dc8401381614a3cbcad51914e60044d727ed5e3068f961745e0491ae3c"
+  },
+  "receipts": {
+    "epub_acceptance": {
+      "path": "repo/evidence/EPUB_DELIVERY_ACCEPTANCE.json",
+      "sha256": "a055971b0fbb90c9e0a53533befc2cc9b1d592230a653ebbf0a307a58234ae03"
+    },
+    "direct_tex_validation": {
+      "path": "repo/evidence/DIRECT_TEX_VALIDATION.json",
+      "sha256": "3c3bc01cd6d6847b57ec3bde85a21f908ae67bd1da5a0a03701bd9f4f6621257"
+    },
+    "local_release_validation": {
+      "path": "releases/v0.5.1-proof-systems-completeness-epub/LOCAL_RELEASE_VALIDATION.json",
+      "sha256": "402735c6ec5455272a7257c23fda9d3c4c160b097fad0d743610235204c4a35d"
+    },
+    "github_publication": {
+      "path": "GITHUB_V051_VERIFIED.json",
+      "sha256": "1e1b29f3943f034b82bf989b099cd9307057abe2c523b5a25a5c1ab3c9f12104"
+    },
+    "historical_github_repair": {
+      "path": "HISTORICAL_GITHUB_TEX_REPAIR.json",
+      "sha256": "0d9782db78af0b75b2a1693ba8ab7e9094f001e281cad56d1be8c3e7719e5e94"
+    },
+    "zenodo_transaction": {
+      "path": "releases/v0.5.1-proof-systems-completeness-epub/ZENODO_TRANSACTION.json",
+      "sha256": "232cd61206ca285845cde38c7ee5c65a0fdf49c3ab4f90559473e6a7eb6476da"
+    },
+    "public_verification": {
+      "path": "V051_PUBLICATION_VERIFIED.json",
+      "sha256": "d085b101d0fa9dcbf5f3b833d3a2d0ca5659ab3c5110db237e180bad90708b01"
+    }
+  },
+  "next_action": "Translate and source-review OLP-0198 through OLP-0202, regenerate cumulative evidence, and continue the remaining 525-unit corpus."
+}

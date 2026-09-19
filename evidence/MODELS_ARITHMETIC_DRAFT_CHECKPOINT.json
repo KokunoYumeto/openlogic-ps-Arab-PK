@@ -1,7 +1,7 @@
 {
   "schema": "ps-fol-models-arithmetic-draft/1",
   "utc": "2026-09-10T00:06:02.132870+00:00",
-  "status": "OLP-0191 through OLP-0197 manually rewritten, source-reviewed, registered, and independently replayed",
+  "status": "OLP-0191 through OLP-0197 accepted after the OLMOD-023 infinite-domain clarification and full 202-unit replay",
   "batch_id": "PS-B042-MODEL-THEORY-MODELS-ARITHMETIC",
   "units": [
     {
@@ -83,13 +83,14 @@
       "unit_id": "OLP-0197",
       "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
       "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
-      "translation_sha256": "ebcdaa8dadbe0ac5d923013558dfd916b6ba4a3d6cf87d6b36c247e338883446",
+      "translation_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
       "manual_source_review": true,
       "pakistani_pashto_editorial_review": true,
       "source_correction_ids": [
         "OLMOD-014",
         "OLMOD-015",
-        "OLMOD-016"
+        "OLMOD-016",
+        "OLMOD-023"
       ],
       "status": "structural-pass-with-documented-source-correction"
     }
@@ -117,13 +118,13 @@
   },
   "evidence": {
     "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\MODELS_ARITHMETIC_SOURCE_CHECK.json",
-    "source_check_sha256": "2cfd67c01ea70d5a7143152bbc4e47dbb93a85a9468c3982e0a94b6c8f794333",
+    "source_check_sha256": "0e66ea0cbb0307a296671e0ceb454b31edba885f058cfe0681f32df15e5d70c9",
     "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_models_arithmetic_drafts.py",
     "draft_checker_sha256": "eab97e3eddd698c1fb613a67dab97e2ff8d7de8b14c0b0f07423109cef910c3e",
     "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\MODELS_ARITHMETIC_DRAFT_CHECK.json",
-    "draft_check_sha256": "ea4344cbbf7a0e797ec63c782a9267831e3cbc8103b12f374cb9f930bb0cea55",
+    "draft_check_sha256": "11c0620c166937e18fd0810edb3b60bcc88fa71f9a51a8d0d86810df9b5fed14",
     "qa_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\QA.json",
-    "qa_sha256": "220458b233dfe11230ba3f156ae2d29820df28f76ab9b42ab2e870b037cf8967",
+    "qa_sha256": "ae674105c87dd855b6f7ebe4dd6fb0dcd5da5cee9ce7d33d9f943715e9acea24",
     "alignment_sha256": "fa74b34a5aa953100a2ff568a8949be94d15975822173d97fc13f4ec2f106183",
     "segment_canon_use_sha256": "390096a592c5c4672b27b348ca19192d8af503254a247b838986e8b9c9941c01",
     "source_corrections_sha256": "01c0c0564004b017ea74098723e5ae198cfa5b31fe0e3ed876e1fb284e71f65b",
@@ -185,10 +186,12 @@
       }
     },
     "expert_review_log_sha256": "b26fbd30f2db6c3aa30e38392b3372a27cf9a2fe64a621f176ec2c42440a7ddd",
-    "expert_review_summary_sha256": "7a9772b9ca8326ad15a40910fc3455f4207122f93ffa37bf0ba7ad97e926a8e0"
+    "expert_review_summary_sha256": "7a9772b9ca8326ad15a40910fc3455f4207122f93ffa37bf0ba7ad97e926a8e0",
+    "arithmetic_enumerability_clarification_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\ARITHMETIC_ENUMERABILITY_CLARIFICATION.json",
+    "arithmetic_enumerability_clarification_sha256": "f25f4ccfc63c098de4749612f62be99f3435b54c320b4c6c8b6b2e0c88db5deb"
   },
-  "registration_status": "standalone QA, cumulative QA, repository replay, canonical decision validation, and independent byte-for-byte canonical replay all pass",
-  "next_action": "Commit and push OLP-0191 through OLP-0197, then build, validate, and publish the required genuine reflowable EPUB3 for the accepted 82-unit reader before resuming OLP-0198 through OLP-0202.",
+  "registration_status": "supplemental correction accepted; arithmetic standalone QA and cumulative repository QA pass",
+  "next_action": "Preserve OLMOD-023 in all future source snapshots; the active corpus cursor continues at OLP-0203.",
   "quality_repairs": [
     {
       "finding": "An accidental regex marker appeared inside one Pashto terminology alternative in the expert-review generator.",

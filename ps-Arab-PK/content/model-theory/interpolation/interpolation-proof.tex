@@ -1,0 +1,219 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: interpolation-proof
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{prf}
+
+\olsection{د کرېګ د منځګړيتوب قضيه}
+
+\begin{thm}[د کرېګ د منځګړيتوب قضيه]
+\ollabel{thm:interpol}
+که~$\Entails !A \lif !B$ وي، نو داسې !!a{sentence}~$!C$ شته چې
+$\Entails !A \lif !C$ او $\Entails !C \lif !B$ وي، او په~$!C$
+کښې هر !!{constant}، !!{function} او !!{predicate} (له~$\eq$ پرته)
+په~$!A$ او~$!B$ دواړو کښې راځي۔ !!{sentence}~$!C$ د~$!A$ او~$!B$
+يو \emph{منځګړی} بلل کېږي۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ~$\Lang{L}_1$ د~$!A$ ژبه او~$\Lang{L}_2$ د~$!B$ ژبه ده۔
+$\Lang{L}_0 = \Lang{L}_1 \cap \Lang{L}_2$ پرېږدئ۔ د هر
+$i \in \{0, 1, 2 \}$ دپاره~$\Lang{L}'_i$ له~$\Lang{L}_i$ څخه د
+نامتناهي ډېرو نويو !!{constant}s~$\Obj c_0, \Obj c_1, \Obj c_2,
+\dots$ په ورزياتولو ترلاسه شوې ژبه وي۔
+
+که~$!A$ د صدق وړ نۀ وي، $\lexists[x][\eq/[x][x]]$ يو منځګړی دے۔
+که~$\lnot !B$ د صدق وړ نۀ وي (او له همدې امله~$!B$ معتبره وي)،
+$\lexists[x][\eq[x][x]]$ يو منځګړی دے۔ نو دا هم فرض کولے شو چې
+$!A$ او~$\lnot !B$ دواړه د صدق وړ دي۔
+
+د منځګړيتوب د قضيې د نقيض عکس د ثابتولو دپاره فرض کړئ چې د~$!A$
+او~$!B$ هېڅ منځګړی نشته۔ په بله وينا، فرض کړئ چې~$\{!A\}$ او
+$\{\lnot !B\}$ په~$\Lang{L}_0$ کښې نه بېلېدونکي دي۔
+
+موخه مو دا ده چې جوړه~$(\{ !A \}, \{\lnot!B\})$ يوې اعظمي نه
+بېلېدونکې جوړې~$(\Gamma^*, \Delta^*)$ ته وغځوو۔ پرېږدئ~$!A_0$،
+$!A_1$، $!A_2$، \dots، د~$\Lang{L}'_1$ !!{sentence}s، او~$!B_0$،
+$!B_1$، $!B_2$، \dots، د~$\Lang{L}'_2$ !!{sentence}s په لړ کښې
+راوړي۔
+\textbf{د ژباړې د نسخې سمون (OLMOD-018):} سرچينې دلته د نا پراخو
+ژبو~$\Lang{L}_1$ او~$\Lang{L}_2$ جملې په لړ کښې راوړې وې، حال دا
+چې ورپسې ادعا په نويو ثابتونو لرونکو ژبو~$\Lang{L}'_1$ او
+$\Lang{L}'_2$ کښې اعظمي سازګاري غواړي؛ دلته شمېرنه همدغو پراخو
+ژبو ته سمه شوې ده۔
+د~$n \ge 0$ دپاره د !!{sentence}s د سټونو دوه زياتېدونکې لړۍ
+$(\Gamma_n, \Delta_n)$ داسې تعريفوو۔
+$\Gamma_0 = \{ !A\}$ او~$\Delta_0 = \{\lnot !B \}$ کښېږدئ۔ که
+$(\Gamma_n, \Delta_n)$ لا تعريف شوي وي، $\Gamma_{n+1}$ او
+$\Delta_{n+1}$ داسې تعريف کړئ:
+\begin{enumerate}
+\item که~$\Gamma_n \cup \{!A_n \}$ او~$\Delta_n$ په
+  $\Lang{L}'_0$ کښې نه بېلېدونکي وي، $!A_n$ په~$\Gamma_{n+1}$ کښې
+  واچوئ۔ سربېره پر دې، که~$!A_n$ يو وجودي !!{formula}
+  $\lexists[x][!S]$ وي، داسې نوی !!{constant}~$c$ وټاکئ چې په
+  $\Gamma_n$، $\Delta_n$، $!A_n$ يا~$!B_n$ کښې نۀ راځي، او
+  $\Subst{!S}{c}{x}$ په~$\Gamma_{n+1}$ کښې واچوئ۔
+\item که~$\Gamma_{n+1}$ او~$\Delta_n \cup \{!B_n \}$ په
+  $\Lang{L}'_0$ کښې نه بېلېدونکي وي، $!B_n$ په~$\Delta_{n+1}$ کښې
+  واچوئ۔ سربېره پر دې، که~$!B_n$ يو وجودي !!{formula}
+  $\lexists[x][!S]$ وي، داسې نوی !!{constant}~$c$ وټاکئ چې په
+  $\Gamma_{n+1}$، $\Delta_n$، $!A_n$ يا~$!B_n$ کښې نۀ راځي، او
+  $\Subst{!S}{c}{x}$ په~$\Delta_{n+1}$ کښې واچوئ۔
+\end{enumerate}
+په پای کښې داسې تعريف کړئ:
+\begin{align*}
+  \Gamma^* & = \bigcup_{n\ge 0} \Gamma_n, &
+  \Delta^* & = \bigcup_{n\ge 0} \Delta_n.
+\end{align*}
+اوس پر~$n$ په هممهاله استقرا ثابتولے شو چې:
+\begin{enumerate}
+\item\ollabel{part-a} $\Gamma_n$ او~$\Delta_n$ په~$\Lang{L}'_0$
+  کښې نه بېلېدونکي دي؛
+\item\ollabel{part-b} $\Gamma_{n+1}$ او~$\Delta_n$ په
+  $\Lang{L}'_0$ کښې نه بېلېدونکي دي۔
+\end{enumerate}
+د~\olref{part-a} بنسټ له~\olref[sep]{lem:sep1} څخه ترلاسه کېږي۔ د
+\olref{part-b} دپاره بايد درې حالتونه بېل کړو:
+\begin{enumerate}
+\item که~$\Gamma_0 \cup \{!A_0 \}$ او~$\Delta_0$ بېلېدونکي وي،
+  نو~$\Gamma_1 = \Gamma_0$ او~\olref{part-b} يوازې هماغه
+  \olref{part-a} ده؛
+\item که~$\Gamma_1 = \Gamma_0 \cup\{ !A_0\}$ وي، نو~$\Gamma_1$
+  او~$\Delta_0$ د جوړونې له مخې نه بېلېدونکي دي؛
+\item هغه حالت پاتې کېږي چې~$!A_0$ وجودي وي، نو
+  $\Gamma_1 = \Gamma_0 \cup \{ \lexists[x][!S],
+  \Subst{!S}{c}{x} \}$۔ د جوړونې له مخې
+  $\Gamma_0 \cup \{ \lexists[x][!S]\}$ او~$\Delta_0$ نه
+  بېلېدونکي دي، نو د~\olref[sep]{lem:sep2} له مخې
+  $\Gamma_0 \cup \{ \lexists[x][!S], \Subst{!S}{c}{x} \}$ او
+  $\Delta_0$ هم نه بېلېدونکي دي۔
+\end{enumerate}
+په دې سره د پورته~\olref{part-a} او~\olref{part-b} د استقرا بنسټ
+بشپړېږي۔ اوس استقرايي ګام ته ورځو۔ د~\olref{part-a} دپاره، که
+$\Delta_{n+1} = \Delta_n \cup \{ !B_n \}$ وي، نو
+$\Gamma_{n+1}$ او~$\Delta_{n+1}$ د جوړونې له مخې نه بېلېدونکي دي
+(حتٰی چې~$!B_n$ وجودي هم وي، د~\olref[sep]{lem:sep2} له مخې)؛ او
+که~$\Delta_{n+1} = \Delta_n$ وي (ځکه چې~$\Gamma_{n+1}$ او
+$\Delta_n \cup \{!B_n\}$ بېلېدونکي دي)، د~\olref{part-b}
+استقرايي فرضيه کاروو۔ د~\olref{part-b} د استقرايي ګام دپاره، که
+$\Gamma_{n+2} = \Gamma_{n+1} \cup \{!A_{n+1} \}$ وي، نو
+$\Gamma_{n+2}$ او~$\Delta_{n+1}$ د جوړونې له مخې نه بېلېدونکي دي
+(حتٰی چې~$!A_{n+1}$ وجودي هم وي، د~\olref[sep]{lem:sep2} له مخې)؛
+او که~$\Gamma_{n+2} = \Gamma_{n+1}$ وي، د~\olref{part-a} هغه
+استقرايي حالت کاروو چې همدا اوس مو ثابت کړ۔ په دې سره پر
+\olref{part-a} او~\olref{part-b} استقرا پاے ته رسېږي۔
+
+له دې څخه پايله کېږي چې~$\Gamma^*$ او~$\Delta^*$ نه بېلېدونکي دي؛
+که داسې نۀ وے، د متناهي شاهد له مخې به داسې~$n \ge 0$ وای چې
+$\Gamma_n$ او~$\Delta_n$ بېلېدونکي وي، د~\olref{part-a} خلاف۔ په
+ځانګړي ډول، $\Gamma^*$ او~$\Delta^*$ سازګار دي: ځکه که لومړنے يا
+دويم سټ ناسازګار وے، په ترتيب سره به
+$\lexists[x][\eq/[x][x]]$ يا~$\lforall[x][\eq[x][x]]$ بېل کړي وو۔
+
+اوس ښيو چې~$\Gamma^*$ په~$\Lang{L}'_1$ کښې او په همدې ډول
+$\Delta^*$ په~$\Lang{L}'_2$ کښې اعظمي سازګار دے۔ د لومړي سټ دپاره
+فرض کړئ چې د کوم~$n \ge 0$ دپاره $!A_n \notin \Gamma^*$ او
+$\lnot !A_n \notin \Gamma^*$ وي۔ که~$!A_n \notin \Gamma^*$ وي،
+نو~$\Gamma_n \cup \{!A_n \}$ له~$\Delta_n$ څخه بېلېدونکے دے، او
+ځکه داسې~$!C \in \Lang{L}'_0$ شته چې دواړه لاندې خبرې سمې وي:
+\begin{align*}
+  \Gamma^* & \Entails !A_n \lif !C, &
+  \Delta^* & \Entails \lnot !C.
+\end{align*}
+همدا ډول، که~$\lnot !A_n \notin \Gamma^*$ وي، داسې
+$!C' \in \Lang{L}'_0$ شته چې دواړه لاندې خبرې سمې وي:
+\begin{align*}
+  \Gamma^* & \Entails \lnot !A_n \lif !C', &
+  \Delta^* & \Entails \lnot !C'.
+\end{align*}
+د بياني منطق له مخې~$\Gamma^* \Entails !C \lor !C'$ او
+$\Delta^* \Entails \lnot (!C \lor !C')$، نو~$!C \lor !C'$،
+$\Gamma^*$ او~$\Delta^*$ بېلوي۔ ورته استدلال ثابتوي چې~$\Delta^*$
+هم اعظمي دے۔
+
+په پای کښې ښيو چې~$\Gamma^* \cap \Delta^*$ په~$\Lang{L}'_0$ کښې
+اعظمي سازګار دے۔ دا په څرګنده سازګار دے، ځکه د دوو سازګارو سټونو
+تقاطع ده۔ د اعظميت د ښودلو دپاره~$!S \in \Lang{L}'_0$ ونيسئ۔ اوس
+$\Gamma^*$ په~$\Lang{L}'_1 \supseteq \Lang{L}'_0$ کښې اعظمي دے،
+او په همدې ډول~$\Delta^*$ په
+$\Lang{L}'_2 \supseteq \Lang{L}'_0$ کښې اعظمي دے۔ نو يا
+$!S \in \Gamma^*$ يا~$\lnot !S \in \Gamma^*$، او يا
+$!S \in \Delta^*$ يا~$\lnot !S \in \Delta^*$ وي۔ که
+$!S \in \Gamma^*$ او~$\lnot !S \in \Delta^*$ وي، نو~$!S$ به
+$\Gamma^*$ او~$\Delta^*$ بېل کړي؛ او که~$\lnot !S \in \Gamma^*$
+او~$!S \in \Delta^*$ وي، نو~$\lnot !S$ به~$\Gamma^*$ او
+$\Delta^*$ بېل کړي۔ له دې امله، يا
+$!S \in \Gamma^* \cap \Delta^*$ يا
+$\lnot !S \in \Gamma^* \cap \Delta^*$ وي، او
+$\Gamma^* \cap \Delta^*$ اعظمي دے۔
+
+څرنګه چې~$\Gamma^*$ اعظمي سازګار دے، داسې يو مدل~$\Struct{M}'_1$
+لري چې !!{domain}~$\Domain{M'_1}$ ئې په هغو او يوازې هغو عناصرو
+مشتمله ده چې !!{constant}s تفسيروي، يعنې~$\Assign{c}{M'_1}$؛ کټ مټ
+لکه د بشپړتيا د قضيې په ثبوت کښې
+(\olref[fol][com][cth]{thm:completeness})۔ په همدې ډول، $\Delta^*$
+داسې يو مدل~$\Struct{M}'_2$ لري چې !!{domain}~$\Domain{M'_2}$ ئې د
+!!{constant}s په تفسيرونو~$\Assign{c}{M'_2}$ جوړه ده۔
+
+$\Struct{M_1}$ له~$\Struct{M'_1}$ څخه داسې ترلاسه کړئ چې په
+$\Lang{L}'_1 \setminus \Lang{L}'_0$ کښې د !!{constant}s،
+!!{function}s او !!{predicate}s تفسيرونه ترې وغورځوئ؛ او
+$\Struct{M_2}$ هم په همدې ډول ترلاسه کړئ۔ بيا
+$h \colon M_1 \to M_2$ چې د
+$h(\Assign{c}{M'_1}) = \Assign{c}{M'_2}$ له مخې تعريف شوے، په
+$\Lang{L}'_0$ کښې يو آيزومورفيزم دے، ځکه لکه چې ومو ښودل
+$\Gamma^* \cap \Delta^*$ په~$\Lang{L}'_0$ کښې اعظمي سازګار دے۔
+دا ځکه پايله کېږي چې هره~$\Lang{L}'_0$-!!{sentence} يا په
+$\Gamma^*$ او~$\Delta^*$ دواړو کښې ده، يا په هېڅ يوه کښې نۀ ده:
+نو~$\Assign{c}{M'_1} \in \Assign{P}{M'_1}$ هله او يوازې هله چې
+$\Atom{P}{c} \in \Gamma^*$، هله او يوازې هله چې
+$\Atom{P}{c} \in \Delta^*$، او هله او يوازې هله چې
+$\Assign{c}{M'_2} \in \Assign{P}{M'_2}$ وي۔ د آيزومورفيزم نور شرطونه
+هم په ورته ډول ثابتېدے شي۔
+
+اوس به د !!{language}~$\Lang{L}'_1 \cup \Lang{L}'_2$ يو
+مدل~$\Struct{M}$ داسې تعريف کړو:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M}$ هماغه~$\Domain{M_2}$ دے، يعنې د ټولو
+  $\Assign{c}{M'_2}$ عناصرو سټ؛
+\item که يو !!a{predicate}~$P$ په
+  $\Lang{L}'_2 \setminus \Lang{L}'_1$ کښې وي، نو
+  $\Assign{P}{M} = \Assign{P}{M'_2}$؛
+\item که يو پريديکات~$P$ په
+  $\Lang{L}'_1\setminus \Lang{L}'_2$ کښې وي، نو
+  $\Assign{P}{M} = h(\Assign{P}{M'_1})$؛ يعنې
+  $\tuple{\Assign{c_1}{M'_2}, \dots, \Assign{c_n}{M'_2}} \in
+  \Assign{P}{M}$ هله او يوازې هله چې
+  $\tuple{\Assign{c_1}{M'_1}, \dots,
+  \Assign{c_n}{M'_1}} \in \Assign{P}{M'_1}$ وي۔
+  \textbf{د ژباړې د نسخې سمون (OLMOD-019):} سرچينې په لومړۍ
+  معادله کښې د~$\Lang{L}'_1$ ځانګړي پريديکات تفسير په ناسم ډول له
+  $\Struct{M'_2}$ څخه لېږداوه، چې هلته اصلاً نۀ تفسيرېږي؛ دلته د
+  ورپسې «يعنې» شرط سره سم د~$\Struct{M'_1}$ تفسير د~$h$ له لارې
+  لېږدول شوے دے۔
+\item که يو !!a{predicate}~$P$ په~$\Lang{L}'_0$ کښې وي، نو
+  $\Assign{P}{M} = \Assign{P}{M'_2} = h(\Assign{P}{M'_1})$۔
+\item د~$\Lang{L}'_1 \cup \Lang{L}'_2$ !!^{function}s، د
+  !!{constant}s په ګډون، په ورته ډول اداره کېږي۔
+\end{enumerate}
+\textbf{د ژباړې د نسخې سمون (OLMOD-020):} سرچينې وروستے ګډ مدل
+يوازې د نا پراخو ژبو~$\Lang{L}_1 \cup \Lang{L}_2$ دپاره تعريف کړ،
+خو بيا ئې د نويو ثابتونو لرونکو ژبو~$\Lang{L}'_1$ او
+$\Lang{L}'_2$ له مدلونو سره موافق او د~$\Gamma^* \cup \Delta^*$
+مدل وباله۔ دلته ګډه ژبه او د نښو ټول حالتونه پراخو ژبو ته سم شوي،
+څو نوي ثابتونه هم تفسير ولري او وروستۍ د صدق ادعا تعريف شوې وي۔
+
+په پای کښې پر !!{formula}s په استقرا ښودل کېږي چې~$\Struct{M}$ د
+$\Lang{L}'_1$ پر ټولو !!{formula}s له~$\Struct{M'_1}$ سره، او د
+$\Lang{L}'_2$ پر ټولو !!{formula}s له~$\Struct{M'_2}$ سره موافق دے۔
+په ځانګړي ډول، $\Struct{M} \Entails \Gamma^* \cup \Delta^*$؛ نو
+$\Struct{M} \Entails !A$ او~$\Struct{M} \Entails \lnot!B$، او
+$\not\Entails !A \lif !B$۔ په دې سره د کرېګ د منځګړيتوب د قضيې
+ثبوت پاے ته رسېږي۔
+\end{proof}
+
+\end{document}

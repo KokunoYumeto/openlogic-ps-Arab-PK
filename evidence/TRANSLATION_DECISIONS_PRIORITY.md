@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 107 high-priority entries from the complete 254-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 110 high-priority entries from the complete 264-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -294,6 +294,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 32; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 29,30,31; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 34,40,73,231; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 45,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 20,40,74,77,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -428,6 +429,8 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 46,48,57; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 59; page: pending stable pagination in a reader containing this unit
   - OLP-0184; reducts-and-expansions; `content/model-theory/basics/reducts-and-expansions.tex` source line(s) 36,62; `ps-Arab-PK/content/model-theory/basics/reducts-and-expansions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 32; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 16; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 18,36,48,97; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PHILOSOPHY
 
@@ -599,7 +602,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 39; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 39,93,107; page: pending stable pagination in a reader containing this unit
   - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 67,85,93,116,156; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 66,84,87,92,96,117,158,160,165,167,176,177; page: pending stable pagination in a reader containing this unit
   - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
-  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 79; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 18,19,38,74,78,84,104,106; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 79; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 18,19,44,80,84,90,110,112; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-ARGUMENT
 
@@ -668,7 +671,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0147; Models and Theories; `content/first-order-logic/introduction/models-theories.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/models-theories.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 29,34,69,71,75,76; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,33,68,70,73,75; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
-  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -692,6 +695,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 32,35,36,45,50,80; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 31,35,38,45,51,77,82,83; page: pending stable pagination in a reader containing this unit
   - OLP-0130; Henkin Expansion; `content/first-order-logic/completeness/henkin-expansions.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/henkin-expansions.tex` target line(s) 54; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 35,93; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 34,101; page: pending stable pagination in a reader containing this unit
+  - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 41,44,46,48; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SET-SIZE
 
@@ -1002,6 +1006,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 16,34,38,76,95,104; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 10,14,17,35,39,41,62,76,82,95,104,111; page: pending stable pagination in a reader containing this unit
   - OLP-0190; dlo; `content/model-theory/basics/dlo.tex` source line(s) 30,77; `ps-Arab-PK/content/model-theory/basics/dlo.tex` target line(s) 29,36,76; page: pending stable pagination in a reader containing this unit
   - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 16,18,22,36,56,66,129,133; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 15,17,22,37,38,56,66,75,123,125,131,136,138,149; page: pending stable pagination in a reader containing this unit
+  - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) 156; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 168,175; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROPOSITION
 
@@ -1402,6 +1407,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0140; First-Order Logic; `content/first-order-logic/introduction/first-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 11,32,34,36,40,43,46,50; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 11,28,32,34,36,39,41,42,45,49,57; page: pending stable pagination in a reader containing this unit
   - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
+  - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1595,6 +1601,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 23; page: pending stable pagination in a reader containing this unit
   - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 41; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 75,100; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 99; page: pending stable pagination in a reader containing this unit
+  - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -1677,6 +1684,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0135; The Compactness Theorem; `content/first-order-logic/completeness/compactness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) 28,139; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) 130,135,136,156; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DECIDABILITY
 
@@ -1734,6 +1742,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 1,13,21,22,25,35,44,46,47,50,59,60,61,62; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 13,21,24,25,33,42,45,46,48,49,51,61,62,64; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 1,15,16,17,18,19,20,22,23,30,31,32,33,34,39,45,55,63,64,68,69,74,75,79,80,84,86,93,97,110,125,165,180,204,208,229,233,234,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 15,17,18,19,20,22,30,31,33,38,53,61,64,68,74,75,79,84,85,90,95,107,121,122,158,198,201,207,220,224,225,229,230; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 1,20,88,94,110,114,116,119,124,126,127,149,151,178,179,182,183,186,187,190,196,199,202,204,205,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 17,23,27,45,48,67,70,88,111,115,117,128,151,153,163,184,185,190,199,205,207,211,214; page: pending stable pagination in a reader containing this unit
+  - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) 11,15,17,19,21,24,26,40,41,50,53,62,63,67,68,87; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) 21,25; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -1797,6 +1806,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) 2,3,11,15,16,19,20,21,25,30,35,39,44,45,46,47,56,57; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) 11,15,16,21,26,60; page: pending stable pagination in a reader containing this unit
   - OLP-0191; mod; `content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` source line(s) 1,2,8,12,14,16,18,20; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
   - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 1,2,12,41,42,45,51,63,64,65; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 12,16,38,39,41,47,60,61,62; page: pending stable pagination in a reader containing this unit
+  - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) 1; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-ORDER-HIERARCHY
 
@@ -1876,6 +1886,7 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
   - OLP-0185; Sub\printtoken{p}{structure}; `content/model-theory/basics/substructures.tex` source line(s) 3,20,40; `ps-Arab-PK/content/model-theory/basics/substructures.tex` target line(s) 10,13,22,23,43; page: pending stable pagination in a reader containing this unit
   - OLP-0187; Isomorphic Structures; `content/model-theory/basics/isomorphism.tex` source line(s) 120,126; `ps-Arab-PK/content/model-theory/basics/isomorphism.tex` target line(s) 14,29,125,131; page: pending stable pagination in a reader containing this unit
   - OLP-0188; theory-of-m; `content/model-theory/basics/theory-of-m.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/basics/theory-of-m.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 63; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-ISOMORPHISM
 
@@ -1964,7 +1975,48 @@ This view contains 107 high-priority entries from the complete 254-entry decisio
 - Alternatives: حسابېدونکی مدل; الګوريتمي تابع; فيصله کېدونکې اړيکه; د ټېننباوم تيورم
 - Please double-check: In Pakistani Pashto mathematical prose, is «محاسبه کېدونکی مدل / محاسبه کېدونکې تابع / پرېکړه کېدونکې اړيکه / د ټېننباوم قضيه» the clearest conventional rendering of “computable model / computable function / decidable relation / Tennenbaum's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
-  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 10,20,38,39,100,101,119,120; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 10,17,19,20,38,104,105,118,123,127,128,129; page: pending stable pagination in a reader containing this unit
+  - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 10,20,38,39,100,101,119,120; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 10,17,19,20,44,110,111,124,129,133,134,135; page: pending stable pagination in a reader containing this unit
+
+## TERM-INTERPOLATION-SEPARATION
+
+- Source term or sense: interpolation theorem / interpolant / separates / inseparable
+- Choice: د منځګړيتوب قضيه / منځګړی / بېلوي / نه بېلېدونکی
+- Why provisional: entailment, sentence and proof concepts supported by regional sources; exact interpolation and separation labels are provisional
+- Rationale: An interpolant C lies semantically between A and B and uses only their shared nonlogical vocabulary. Separation is the equivalent two-set formulation; inseparability means that no sentence in the common language separates the sets.
+- Alternatives: د درز ډکوونې قضيه; منځنۍ جمله د منځګړي پر ځاے; جلا کوي او نه جلا کېدونکي; د کرېګ د انټرپولېشن قضيه
+- Please double-check: In Pakistani Pashto mathematical prose, is «د منځګړيتوب قضيه / منځګړی / بېلوي / نه بېلېدونکی» the clearest conventional rendering of “interpolation theorem / interpolant / separates / inseparable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) 8; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 13,18,20; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) 13,18,20; page: pending stable pagination in a reader containing this unit
+  - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) 14,17,18,19,21,24,27,44,54,55,60,81,87,89,93,96,100,101; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) 13,14,18,19,26,28,45,56,90,98,104,105,114; page: pending stable pagination in a reader containing this unit
+  - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) 11,13,19,30,31,34,35,36,40,49,54,67,69,78,82,84,89,95,100,101,104,125,137,139,189; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 11,13,19,29,31,34,35,36,55,61,75,77,86,93,98,104,110,135,215; page: pending stable pagination in a reader containing this unit
+  - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 13,103; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) 13,114; page: pending stable pagination in a reader containing this unit
+
+## TERM-EXPLICIT-IMPLICIT-DEFINABILITY
+
+- Source term or sense: definability / explicit definition / implicit definition / Beth definability theorem
+- Choice: تعريف‌وړتيا / څرګند تعريف / ضمني تعريف / د بېت د تعريف‌وړتيا قضيه
+- Why provisional: definition, predicate, relation and semantic concepts supported by regional sources; exact compounds and theorem name are provisional
+- Rationale: An explicit definition gives an L-formula equivalent to P. An implicit definition requires any two P-expansions of the same L-structure satisfying the theory to assign the same relation to P. Beth's theorem identifies these two conditions.
+- Alternatives: صريح او ضمني تعريف; تعريف‌پذيري د تعريف‌وړتيا پر ځاے; د بېت د تعريف قضيه
+- Please double-check: In Pakistani Pashto mathematical prose, is «تعريف‌وړتيا / څرګند تعريف / ضمني تعريف / د بېت د تعريف‌وړتيا قضيه» the clearest conventional rendering of “definability / explicit definition / implicit definition / Beth definability theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) 16; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 22,24; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) 21,23; page: pending stable pagination in a reader containing this unit
+  - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) 3,11,13,14,26,29,31,32,37,49,66,67,68,72,80; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) 11,13,19,25,28,66; page: pending stable pagination in a reader containing this unit
+
+## TERM-JOINT-CONSISTENCY
+
+- Source term or sense: joint consistency / maximally inseparable pair / maximal consistent set / Robinson's joint consistency theorem
+- Choice: ګډه سازګاري / اعظمي نه بېلېدونکې جوړه / اعظمي سازګار سټ / د رابنسن د ګډې سازګارۍ قضيه
+- Why provisional: consistency, proof, semantic and countability concepts supported by regional sources; exact joint-consistency and maximal-inseparability compounds are provisional
+- Rationale: The interpolation construction extends two inseparable sentence sets stage by stage, preserves witnesses, proves maximal consistency in the extended languages and combines their term-like models over the common language.
+- Alternatives: مشترکه سازګاري; تر ټولو زيات نه بېلېدونکې جوړه; بشپړ سازګار سټ د اعظمي سازګار سټ پر ځاے; د رابنسن د يوځايي سازګارۍ قضيه
+- Please double-check: In Pakistani Pashto mathematical prose, is «ګډه سازګاري / اعظمي نه بېلېدونکې جوړه / اعظمي سازګار سټ / د رابنسن د ګډې سازګارۍ قضيه» the clearest conventional rendering of “joint consistency / maximally inseparable pair / maximal consistent set / Robinson's joint consistency theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0199; Introduction; `content/model-theory/interpolation/introduction.tex` source line(s) 25; `ps-Arab-PK/content/model-theory/interpolation/introduction.tex` target line(s) 24; page: pending stable pagination in a reader containing this unit
+  - OLP-0201; Craig's Interpolation Theorem; `content/model-theory/interpolation/interpolation-proof.tex` source line(s) 40,107,128,143,157; `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex` target line(s) 46,118,139,154,169; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

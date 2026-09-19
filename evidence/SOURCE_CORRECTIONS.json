@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0197; models of arithmetic is structurally drafted and source-reviewed; v0.5.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-09T21:43:09.045706+00:00",
+  "status": "adopted through OLP-0202, including the OLP-0197 infinite-domain clarification; v0.5.1 public artifacts remain frozen",
+  "adopted_utc": "2026-09-19T18:51:59.916515+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -3179,6 +3179,201 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
       "formula_policy": "No formula changes; the theorem's prose uniqueness claim is qualified by isomorphism.",
       "decision_timing": "contemporaneous owner semantic trace against the complete models-of-arithmetic chapter and frozen source bytes"
+    },
+    {
+      "id": "OLMOD-017",
+      "unit_id": "OLP-0200",
+      "classification": "undefined_formula_symbol_in_separation_entailment",
+      "source_path": "content/model-theory/interpolation/separation.tex",
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "source_locator": "content/model-theory/interpolation/separation.tex:70-78",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/separation.tex",
+      "target_line_1based": 80,
+      "target_sha256": "13347957ccffe7ccf99c38ec3d9c4e79da07073e53c4e9426cc111cb108eee0e",
+      "mode": "replace-undefined-delta-with-defined-conjunction-H-plus-adjacent-note",
+      "translation_change": "uses the defined conjunction H as the negated consequent of the universal formula",
+      "counterexample": "The proof defines G and H as the finite conjunctions from Gamma_0 and Delta_0, but never defines delta. Contraposition of H entails not C(c), followed by universal instantiation, gives forall x C entails not H.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "Only the undefined delta is replaced by H; the quantifier, entailment, negation and subsequent contraposition are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lforall[x][!C]\\Entails\\lnot\\delta$"
+        ],
+        "target_only": [
+          "$\\Delta_0$",
+          "$!H$",
+          "$\\lforall[x][!C]\\Entails\\lnot!H$",
+          "$\\delta$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-018",
+      "unit_id": "OLP-0201",
+      "classification": "unprimed_sentence_enumeration_cannot_establish_primed_maximality",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "source_locator": "content/model-theory/interpolation/interpolation-proof.tex:38-57",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_line_1based": 43,
+      "target_sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c",
+      "mode": "enumerate-sentences-of-extended-languages-plus-adjacent-note",
+      "translation_change": "enumerates the sentences of L'_1 and L'_2, including sentences with the newly added constants",
+      "counterexample": "The construction later claims maximal consistency in L'_1 and L'_2 and requires witness constants. Enumerating only the unextended languages leaves sentences containing the new constants undecided.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "Only primes are added to the two enumerated language labels; the enumeration variables, stage construction and common language remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_2$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-019",
+      "unit_id": "OLP-0201",
+      "classification": "exclusive_L1_predicate_transported_from_structure_where_undefined",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "source_locator": "content/model-theory/interpolation/interpolation-proof.tex:171-177",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_line_1based": 193,
+      "target_sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c",
+      "mode": "transport-L1-predicate-from-M1-prime-plus-adjacent-note",
+      "translation_change": "defines an L'_1-only predicate by transporting its M'_1 interpretation across h",
+      "counterexample": "A predicate exclusive to L'_1 has no interpretation in the L'_2-structure M'_2. The tuple condition immediately following the equation already transports the interpretation from M'_1.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "Only M'_2 becomes M'_1 in the displayed transport equation; h and the pointwise tuple condition are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Assign{P}{M}=h(\\Assign{P}{M'_2})$"
+        ],
+        "target_only": [
+          "$\\Assign{P}{M}=h(\\Assign{P}{M'_1})$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-020",
+      "unit_id": "OLP-0201",
+      "classification": "combined_model_language_omits_new_constants_needed_for_gamma_star_delta_star",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "source_locator": "content/model-theory/interpolation/interpolation-proof.tex:165-190",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_line_1based": 203,
+      "target_sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c",
+      "mode": "define-combined-model-on-primed-union-plus-adjacent-note",
+      "translation_change": "defines M on L'_1 union L'_2 and treats exclusive, common and functional symbols in those extended languages",
+      "counterexample": "Gamma* and Delta* contain sentences with the new constants, so a structure only for L1 union L2 cannot satisfy their union or agree with M'_1 and M'_2 on all primed-language formulas.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "The final combined language and its symbol cases receive the required primes; domains, transported interpretations and the concluding induction are otherwise preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Lang{L}_0$",
+          "$\\Lang{L'_1}\\supseteq\\Lang{L'_0}$",
+          "$\\Lang{L'_2}\\supseteq\\Lang{L'_0}$",
+          "$\\Lang{L'_1}\\setminus\\Lang{L'_0}$",
+          "$\\Lang{L_1}\\cup\\Lang{L_2}$",
+          "$\\Lang{L_2}\\setminus\\Lang{L_1}$",
+          "$\\Lang{L}_1\\setminus\\Lang{L}_2$",
+          "$\\Lang{L'_1}$",
+          "$\\Lang{L'_2}$"
+        ],
+        "target_only": [
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_1$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_2$",
+          "$\\Lang{L}'_0$",
+          "$\\Lang{L}'_1\\supseteq\\Lang{L}'_0$",
+          "$\\Lang{L}'_2\\supseteq\\Lang{L}'_0$",
+          "$\\Struct{M'_1}$",
+          "$\\Lang{L}'_1\\setminus\\Lang{L}'_0$",
+          "$\\Lang{L}'_1\\cup\\Lang{L}'_2$",
+          "$\\Lang{L}'_1\\cup\\Lang{L}'_2$",
+          "$\\Lang{L}'_2\\setminus\\Lang{L}'_1$",
+          "$\\Lang{L}'_1\\setminus\\Lang{L}'_2$",
+          "$\\Struct{M'_2}$",
+          "$h$",
+          "$\\Gamma^*\\cup\\Delta^*$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-021",
+      "unit_id": "OLP-0202",
+      "classification": "beth_theorem_statement_has_wrong_object_class_and_incomplete_biconditional",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "source_locator": "content/model-theory/interpolation/definability.tex:66-69",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/definability.tex",
+      "target_line_1based": 70,
+      "target_sha256": "19657be8ec8ce32d1a612962d163da0dbec5dcedf32df3cd86fb4c218f37cc88",
+      "mode": "state-sentences-and-complete-if-and-only-if-plus-adjacent-note",
+      "translation_change": "states that a set of sentences implicitly defines P if and only if it explicitly defines P",
+      "counterexample": "Both preceding definitions and the proof treat Sigma(P) as a set of sentences, while the source theorem calls them formulas and omits the second if in its biconditional wording.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "No object-language formula changes; the theorem's prose object class and biconditional grammar are corrected.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$\\Sigma(P)$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-022",
+      "unit_id": "OLP-0202",
+      "classification": "raw_predicate_application_breaks_established_atom_notation",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "source_locator": "content/model-theory/interpolation/definability.tex:91-99",
+      "target_path": "ps-Arab-PK/content/model-theory/interpolation/definability.tex",
+      "target_line_1based": 104,
+      "target_sha256": "19657be8ec8ce32d1a612962d163da0dbec5dcedf32df3cd86fb4c218f37cc88",
+      "mode": "restore-Atom-macro-for-P-prime-plus-adjacent-note",
+      "translation_change": "writes the P'-application as the same n-place Atom form used throughout the argument",
+      "counterexample": "The implication's antecedent and all neighboring occurrences use Atom with the n constants, while raw P'c_1...c_n bypasses the established object-language notation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+      "formula_policy": "Only the raw predicate application is replaced by the equivalent Atom macro; predicate, arguments and implication direction are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete interpolation chapter and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!D(P)\\land!D(P')\\Entails\\Atom{P}{c_1,\\dots,c_n}\\toP'c_1\\dotsc_n$"
+        ],
+        "target_only": [
+          "$!D(P)\\land!D(P')\\Entails\\Atom{P}{c_1,\\dots,c_n}\\to\\Atom{P'}{c_1,\\dots,c_n}$",
+          "$P'c_1\\dotsc_n$",
+          "$\\Atom{P'}{c_1,\\dots,c_n}$"
+        ]
+      }
+    },
+    {
+      "id": "OLMOD-023",
+      "unit_id": "OLP-0197",
+      "classification": "countable_structure_claim_omits_infinite_domain_hypothesis",
+      "source_path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "source_locator": "content/model-theory/models-of-arithmetic/computable-models.tex:25-32",
+      "target_path": "ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_line_1based": 32,
+      "target_sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f",
+      "mode": "qualify-countable-structure-as-infinite-plus-adjacent-note",
+      "translation_change": "restricts transport onto a denumerable set to infinite countable structures",
+      "counterexample": "Under the edition's enumerable convention, a one-element structure is countable but cannot be transported by a bijection onto Nat. The nonstandard arithmetic models discussed here are infinite, so the required qualification preserves the intended application.",
+      "stable_audit": "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
+      "formula_policy": "No formula, token macro, computability condition or decidability condition changes; only the missing infinite-domain qualification is made explicit.",
+      "decision_timing": "contemporaneous adoption of a bounded manager semantic review against OLP-0197-B006, the frozen source bytes and TERM-ENUMERABLE"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -3186,7 +3381,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0197, then continue with OLP-0198 without altering prior release bytes.",
+  "next_action": "Replay cumulative QA and canonical decision validation through OLP-0202 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -3222,7 +3417,9 @@
     "PS-OWNER-SEMANTIC-20260908-FOL-MODELS-THEORIES",
     "PS-OWNER-SEMANTIC-20260908-FOL-BEYOND",
     "PS-OWNER-SEMANTIC-20260909-MODEL-THEORY-BASICS",
-    "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC"
+    "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
+    "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
+    "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY"
   ],
   "source_authorities": [
     {

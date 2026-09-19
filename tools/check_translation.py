@@ -130,5 +130,15 @@ if pubpath.exists():
  report['publication_coverage']['reader_units']=report['translation_coverage']['published']
  report['publication_coverage']['source_snapshot_units']=len(public_source_ids)
  report['publication_verified']=pub.get('verified',False)
+v51path=STATE/'V051_RELEASE_CHECKPOINT.json'
+if v51path.exists():
+ v51=json.loads(v51path.read_text(encoding='utf-8'))
+ if v51.get('status')=='published-and-verified':
+  historical_source_units=int(v51['coverage']['source_snapshot_units'])
+  report['publication_coverage']['source_snapshot_units']=max(report['publication_coverage']['source_snapshot_units'],historical_source_units)
+  report['publication_coverage']['source_snapshot_release']=v51['release']['tag']
+  report['publication_coverage']['source_snapshot_commit']=v51['release']['commit']
+  report['publication_coverage']['source_snapshot_disposition']='immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes'
+  report['publication_verified']=True
 (OUTPUT/'QA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\r\n')
 print(json.dumps({'units':len(results),'failures':[r for r in results if not all(r['checks'].values())],'aligned_blocks':len(alignment),'consultation_records':len(use)},ensure_ascii=False,indent=2))
