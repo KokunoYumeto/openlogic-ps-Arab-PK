@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 128 high-priority entries from the complete 315-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 132 high-priority entries from the complete 328-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -137,6 +137,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0008; Unions and Intersections; `content/sets-functions-relations/sets/unions-and-intersections.tex` source line(s) 3,10,20,24,25,27,34,35,43,47,50,59,100,102,103; `ps-Arab-PK/content/sets-functions-relations/sets/unions-and-intersections.tex` target line(s) 10,17,24,25,32,34,36,44,75; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0045; From $\Rat$ to $\Real$; `content/sets-functions-relations/arithmetization/cuts.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex` target line(s) 106; page: pending stable pagination in a reader containing this unit
   - OLP-0131; Lindenbaum's Lemma; `content/first-order-logic/completeness/lindenbaums-lemma.tex` source line(s) 21; `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex` target line(s) 21; page: pending stable pagination in a reader containing this unit
+  - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) 11,12; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) 11,12; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INTERSECTION
 
@@ -149,6 +150,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
 - Locations:
   - OLP-0008; Unions and Intersections; `content/sets-functions-relations/sets/unions-and-intersections.tex` source line(s) 3,10,62,64,65,67,71,72,77,82,85,88,91,100,103,105; `ps-Arab-PK/content/sets-functions-relations/sets/unions-and-intersections.tex` target line(s) 10,44,47,52,53,57,61,63,65,67,75; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0051; Dedekind Algebras; `content/sets-functions-relations/infinite/dedekind-algebra.tex` source line(s) 48,65,70; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) 11,12; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DIFFERENCE
 
@@ -189,6 +191,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0046; Some Philosophical Reflections; `content/sets-functions-relations/arithmetization/reflections.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/arithmetization/reflections.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 36,94,97,109,113,116,117,122,129; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 70,80; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 40,42,46,47; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRODUCT
 
@@ -662,6 +665,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 12,13,14,30,39,40,47; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 12,13,16,18,24,30,35,43,45,50,51; page: pending stable pagination in a reader containing this unit
   - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 23,38,39,55,56,57,59,60,64,66,69,70,71; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 22,40,57,59,60,62,65,67,70,71; page: pending stable pagination in a reader containing this unit
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 34,35; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 35,37; page: pending stable pagination in a reader containing this unit
+  - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) 14,26,31,35,47,50; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 35,52; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -734,6 +738,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 19,35; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 76; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 38,39,43,44,53,59,60; page: pending stable pagination in a reader containing this unit
   - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 30; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 31,32,36; page: pending stable pagination in a reader containing this unit
+  - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SET-SIZE
 
@@ -821,6 +826,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0032; An Alternative Pairing Function; `content/sets-functions-relations/size-of-sets/pairing-alt.tex` source line(s) 11,91; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex` target line(s) 11,99; page: pending stable pagination in a reader containing this unit
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CEILING
 
@@ -920,6 +926,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
 - Locations:
   - OLP-0034; Reduction; `content/sets-functions-relations/size-of-sets/reduction.tex` source line(s) 86,105,110,116; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex` target line(s) 11,14,27,48; page: pending stable pagination in a reader containing this unit
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 89,108,120; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 11,14,28,49; page: pending stable pagination in a reader containing this unit
+  - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 27,29,31,57; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) 18,26,27,53,59,64; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NUMBERSETS
 
@@ -1763,6 +1770,8 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 18; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 17; page: pending stable pagination in a reader containing this unit
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 29; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 31; page: pending stable pagination in a reader containing this unit
+  - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 40,44,48; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
+  - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -1890,6 +1899,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0176; Many-Sorted Logic; `content/first-order-logic/beyond/many-sorted-logic.tex` source line(s) 19,44; `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex` target line(s) 11,19,45; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 13,30,129,204,227,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 11,13,30,98,125,198,219,230; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 11,13,21; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 11,21,41,103; page: pending stable pagination in a reader containing this unit
+  - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SECOND-ORDER-SEMANTICS
 
@@ -2151,6 +2161,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 1,2,12,13,19,29,30; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 1,2,15,39,58,70; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 63; page: pending stable pagination in a reader containing this unit
   - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 1,2; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 1,2,43; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2300,6 +2311,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0226; The Halting Problem; `content/computability/recursive-functions/halting-problem.tex` source line(s) 10,12,25,38,52; `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex` target line(s) 10,24,36,56; page: pending stable pagination in a reader containing this unit
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,19,33; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 10,32,84; page: pending stable pagination in a reader containing this unit
+  - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 18,32,33; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -2324,6 +2336,8 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
 - Please double-check: In Pakistani Pashto mathematical prose, is «د s-m-n قضيه / پاراميټري کول / ثابت ننوتونه / ځانګړے شوے پروګرام» the clearest conventional rendering of “s-m-n theorem / parameterization / fixed inputs / specialized program” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 3,20,31,33,35; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 31,32,34,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 38; page: pending stable pagination in a reader containing this unit
 
 ## TERM-UNIVERSAL-DIAGONAL-COMPUTATION
 
@@ -2338,6 +2352,7 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0234; No Universal Computable Function; `content/computability/computability-theory/no-universal-function.tex` source line(s) 10,18,25,37,40,44; `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex` target line(s) 10,13,14,18,23,24,30,35,42,43,44,45,49; page: pending stable pagination in a reader containing this unit
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,12,19,38; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 12,36,45,58,85,86; page: pending stable pagination in a reader containing this unit
   - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) 37; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) 40,59,60,62,65,67; page: pending stable pagination in a reader containing this unit
+  - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 47; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLE-SET-CHARACTERISTIC
 
@@ -2352,6 +2367,9 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 10,13,17,27,29; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 17,29,31; page: pending stable pagination in a reader containing this unit
   - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 40; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 37; page: pending stable pagination in a reader containing this unit
   - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 41,143; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 47; page: pending stable pagination in a reader containing this unit
+  - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 10,13,40,44,48; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 13,52; page: pending stable pagination in a reader containing this unit
+  - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 40; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 41,46; page: pending stable pagination in a reader containing this unit
+  - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLY-ENUMERABLE-SETS
 
@@ -2364,6 +2382,65 @@ This view contains 128 high-priority entries from the complete 315-entry decisio
 - Locations:
   - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 10,13,18,26,40,42,51; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 10,13,14,18,25,37,39,48; page: pending stable pagination in a reader containing this unit
   - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 12,16,23,24,25,32,40,41,50,54,74,75,76,78,91,101,121,130,135,142; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 11,21,27,29,31,38,41,46,47,57,62,83,107,117,124,151,156,159,163,171; page: pending stable pagination in a reader containing this unit
+  - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 13,18,22; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 13,19,23; page: pending stable pagination in a reader containing this unit
+  - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) 11,15,18,24; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) 11,14,18,19,23,55; page: pending stable pagination in a reader containing this unit
+  - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 10,12,13,20,26,29,53,57,58; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 10,12,13,20,26,29,63,67,68; page: pending stable pagination in a reader containing this unit
+  - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 39,54,78; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 42,57,87; page: pending stable pagination in a reader containing this unit
+  - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,16,17,21,22,23,26,41,52,54; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,16,17,21,22,23,27,42,57,59; page: pending stable pagination in a reader containing this unit
+
+## TERM-HALTING-SETS
+
+- Source term or sense: halting set K_0 / self-halting set K / zero-input halting set K_1
+- Choice: د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1
+- Why provisional: function, indexing, countability and diagonal concepts are supported by regional sources; the exact three computability-set labels remain provisional
+- Rationale: Keep K_0, K and K_1 distinct by stating their input convention whenever introduced: arbitrary indexed input pairs, the index applied to itself, and the fixed zero input. Use د درېدنې سټ for the general paired set and preserve each symbolic name thereafter.
+- Alternatives: د تم کېدو سټ; ځان-درېدونکی سټ; د صفر ننوت درېدنې سټ
+- Please double-check: In Pakistani Pashto mathematical prose, is «د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1» the clearest conventional rendering of “halting set K_0 / self-halting set K / zero-input halting set K_1” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 17,18,22,32,36,37,40,43; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 18,19,23,33,37,38,39,40,46; page: pending stable pagination in a reader containing this unit
+  - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 13,38,40,42,44,46,47; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) 13,36,38,40,41,44,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 26,30,36,37,39,40,42,44,48; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 27,31,37,38,40,41,43,45,53; page: pending stable pagination in a reader containing this unit
+  - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 18,20,24,27,31,36,41,42,44,75,76,80; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) 18,20,24,25,28,29,32,36,39,40,42,43,74,75,79; page: pending stable pagination in a reader containing this unit
+  - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 35,36; page: pending stable pagination in a reader containing this unit
+
+## TERM-CE-CLOSURE-COMPLEMENT
+
+- Source term or sense: closure of c.e. sets under union and intersection / failure of closure under complement
+- Choice: د په محاسبوي ډول د شمېر وړ سټونو د اتحاد او اشتراک لاندې تړلتيا / د متمم لاندې ناتړلتيا
+- Why provisional: union, intersection, difference, domain and countability concepts are supported by regional sources; the effective closure compounds remain provisional
+- Rationale: Say a class is د ... لاندې تړلی when the indicated operation preserves membership in the class. C.e. sets are closed under union and intersection, while closure under complement fails; a c.e. set with c.e. complement is computable.
+- Alternatives: د اتحاد او اشتراک دپاره بندوالی; د متمم لاندې نه تړل کېدل; د محاسبوي شمېر وړ سټونو تړنتيا
+- Please double-check: In Pakistani Pashto mathematical prose, is «د په محاسبوي ډول د شمېر وړ سټونو د اتحاد او اشتراک لاندې تړلتيا / د متمم لاندې ناتړلتيا» the clearest conventional rendering of “closure of c.e. sets under union and intersection / failure of closure under complement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) 11,12; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) 11,12; page: pending stable pagination in a reader containing this unit
+  - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 3,10,12,13,20,25,26,28,30,37,48,53,58; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 10,12,44,56; page: pending stable pagination in a reader containing this unit
+  - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 54,56,57,65,77,80; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 86,89; page: pending stable pagination in a reader containing this unit
+
+## TERM-MANY-ONE-REDUCIBILITY
+
+- Source term or sense: many-one reduction / one-one reduction / Turing reduction / reducible / equivalent
+- Choice: ډېر-پر-يو راکمونه / يو-پر-يو راکمونه / ټيورينګ راکمېدنه / راکمېدونکے / معادل
+- Why provisional: function, pairing, set and composition concepts are supported by regional sources; the exact reducibility compounds remain provisional
+- Rationale: A many-one reduction is one total computable map on natural numbers preserving membership in both directions. Keep the direction explicit as له A څخه B ته راکموي or A، B ته راکمېدونکے دے. Reserve one-one for an injective such map and Turing reduction for procedures allowed to query the target set.
+- Alternatives: څو-پر-يو راکمونه; يو-پر-يو تقليل; ټيورينګ تقليل
+- Please double-check: In Pakistani Pashto mathematical prose, is «ډېر-پر-يو راکمونه / يو-پر-يو راکمونه / ټيورينګ راکمېدنه / راکمېدونکے / معادل» the clearest conventional rendering of “many-one reduction / one-one reduction / Turing reduction / reducible / equivalent” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 52,58,60,64,72; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) 59,64,65,66,71,77,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 31,32,45,56,64,65,69,77,98; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 35,48,59,69,70,74,90,95; page: pending stable pagination in a reader containing this unit
+  - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 28,40; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) 29,40; page: pending stable pagination in a reader containing this unit
+
+## TERM-CE-COMPLETENESS-TOTALITY
+
+- Source term or sense: complete c.e. set / totality set Tot / totality / arithmetic hierarchy
+- Choice: بشپړ په محاسبوي ډول د شمېر وړ سټ / د هرځاے تعريف شويو تابعو سټ Tot / هرځاے تعريف کېدل / حسابي پوړيز نظام
+- Why provisional: function, countability and diagonal concepts are supported by regional sources; the exact completeness, totality and arithmetic-hierarchy labels remain provisional
+- Rationale: A complete c.e. set is itself c.e. and receives a many-one reduction from every c.e. set. Tot denotes indices of computable functions defined on every input; describe that property with هرځاے تعريف rather than importing a word that could be confused with logical completeness. Preserve the hierarchy remark as a brief provisional label.
+- Alternatives: محاسبوي شمېر وړ بشپړ سټ; ټوله تابع د هرځاے تعريف شوې تابع پر ځاے; حسابي سلسله مراتب
+- Please double-check: In Pakistani Pashto mathematical prose, is «بشپړ په محاسبوي ډول د شمېر وړ سټ / د هرځاے تعريف شويو تابعو سټ Tot / هرځاے تعريف کېدل / حسابي پوړيز نظام» the clearest conventional rendering of “complete c.e. set / totality set Tot / totality / arithmetic hierarchy” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,17,21,26,41; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,21,27; page: pending stable pagination in a reader containing this unit
+  - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) 10,13,56; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 10,13,59; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

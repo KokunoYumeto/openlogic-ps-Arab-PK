@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0232 through OLP-0239 form a complete manually translated and source-reviewed universal-computation and enumerable-sets batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0240 through OLP-0247 form a complete manually translated and source-reviewed noncomputability, reducibility and completeness batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -5063,6 +5063,201 @@
         "TERM-PRIMITIVE-RECURSION"
       ],
       "scope": "All four equivalent c.e. definitions, both range/domain constructions, W_e enumeration and existential characterization remain complete. OLCMP-024 through OLCMP-026 correct local editorial defects, an unbound input and the omitted empty-set case."
+    },
+    "OLP-0240": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-HALTING-SETS",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-HALTING-PROBLEM",
+        "TERM-DECIDABILITY"
+      ],
+      "scope": "The proofs that K_0 and K are c.e. but undecidable, the domain construction and the self-application contradiction remain complete, with all three halting-set conventions kept distinct."
+    },
+    "OLP-0241": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN"
+      ],
+      "terms": [
+        "TERM-CE-CLOSURE-COMPLEMENT",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-UNION",
+        "TERM-INTERSECTION",
+        "TERM-DOMAIN",
+        "TERM-ENUMERATION"
+      ],
+      "scope": "All three closure constructions for union and intersection remain complete: domain searches, alternating enumerators, the nonempty-intersection fallback and parallel simulation. OLCMP-027 repairs only local prose defects."
+    },
+    "OLP-0242": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN"
+      ],
+      "terms": [
+        "TERM-CE-CLOSURE-COMPLEMENT",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC",
+        "TERM-DOMAIN",
+        "TERM-DECIDABILITY"
+      ],
+      "scope": "The computable-if-and-only-if-both-sides-are-c.e. characterization and the non-c.e. complement of K_0 remain complete. OLCMP-028 and OLCMP-029 align both formal and informal membership tests with the fixed d/e indices."
+    },
+    "OLP-0243": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-MANY-ONE-REDUCIBILITY",
+        "TERM-REDUCTION",
+        "TERM-HALTING-SETS",
+        "TERM-PAIR",
+        "TERM-COMPUTABILITY-FOUNDATIONS"
+      ],
+      "scope": "The motivation, K-to-K_0 diagonal example, formal many-one and one-one definitions, and complexity aside remain complete. OLCMP-030 repairs two prose typos and OLCMP-031 restores the index-first K_0 pair."
+    },
+    "OLP-0244": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P13-INTERSECTION",
+        "AF-MOE-P15-UNION",
+        "AF-MOE-P17-DIFFERENCE",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING"
+      ],
+      "terms": [
+        "TERM-MANY-ONE-REDUCIBILITY",
+        "TERM-COMPOSITION",
+        "TERM-CE-CLOSURE-COMPLEMENT",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPUTABLE-SET-CHARACTERISTIC"
+      ],
+      "scope": "Transitivity, downward preservation of c.e. and computable status, complement preservation, the characteristic-function identity and the Turing-reducibility contrast remain complete. OLCMP-032 and OLCMP-033 repair prose and the reduction's function type."
+    },
+    "OLP-0245": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-CE-COMPLETENESS-TOTALITY",
+        "TERM-MANY-ONE-REDUCIBILITY",
+        "TERM-HALTING-SETS",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-COMPOSITION"
+      ],
+      "scope": "The definition of many-one complete c.e. sets and completeness of K_0, K_1 and K remain complete. OLCMP-034 restores the K_0-to-K direction required by transitivity."
+    },
+    "OLP-0246": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-HALTING-SETS",
+        "TERM-MANY-ONE-REDUCIBILITY",
+        "TERM-SMN-PARAMETERIZATION",
+        "TERM-UNIVERSAL-DIAGONAL-COMPUTATION",
+        "TERM-PAIRING-FUNCTION"
+      ],
+      "scope": "The reduction from paired halting to zero-input halting, its oracle intuition and the formal s-m-n index construction remain complete, including the ignored third input and decoded pair coordinates."
+    },
+    "OLP-0247": {
+      "batch_id": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-CE-COMPLETENESS-TOTALITY",
+        "TERM-HALTING-SETS",
+        "TERM-SMN-PARAMETERIZATION",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-LOGIC-ORDER-HIERARCHY"
+      ],
+      "scope": "The reduction from self-halting to Tot via a specialized constant-zero-or-nowhere-defined program remains complete, and the final non-c.e. arithmetic-hierarchy remark is preserved. OLCMP-035 removes one stray source word."
     }
   },
   "semantic_review": [
@@ -7387,6 +7582,54 @@
       "passage": "equivalent c.e. definitions",
       "reverse_paraphrase": "Nonempty c.e. sets are exactly total-computable, partial-computable or primitive-recursive ranges; all c.e. sets are partial-computable domains and existential projections of computable relations.",
       "finding": "Every implication, normal-form witness, W_e enumeration and existential characterization remains complete; the unbound input and empty-set gap are repaired with exact accounting."
+    },
+    {
+      "unit_id": "OLP-0240",
+      "passage": "noncomputable halting sets",
+      "reverse_paraphrase": "The paired halting set is a partial-computable domain and hence c.e., but a decider would solve the halting problem; the self-halting set is c.e. and defeats its own assumed characteristic decider by diagonal self-application.",
+      "finding": "Both undecidability arguments, domain witnesses and distinctions between K_0 and K remain complete and exact."
+    },
+    {
+      "unit_id": "OLP-0241",
+      "passage": "closure under union and intersection",
+      "reverse_paraphrase": "C.e. union and intersection can be obtained through domain searches, alternating total enumerations, a fixed fallback for nonempty intersections, or parallel simulation of two indexed partial computations.",
+      "finding": "All constructions and the empty-intersection branch remain complete; the fallback is correctly described as returning a value rather than stalling."
+    },
+    {
+      "unit_id": "OLP-0242",
+      "passage": "complements of c.e. sets",
+      "reverse_paraphrase": "A set is computable exactly when it and its complement are c.e.: parallel search must halt on one side, and the side that halts decides membership. Therefore the complement of K_0 is not c.e.",
+      "finding": "Both directions and the corollary remain complete; the formal and informal searches now consistently assign d to A and e to its complement."
+    },
+    {
+      "unit_id": "OLP-0243",
+      "passage": "many-one reducibility",
+      "reverse_paraphrase": "A total computable map reduces A to B when it preserves membership in both directions. The diagonal map x to the pair (x,x) reduces self-halting to paired halting, motivating the order relation and its one-one strengthening.",
+      "finding": "The definitions, motivation and complexity aside remain complete; the equivalent K_0 builder now keeps the program index in the first coordinate."
+    },
+    {
+      "unit_id": "OLP-0244",
+      "passage": "properties of reducibility",
+      "reverse_paraphrase": "Many-one reducibility is transitive and pulls c.e. and computable status back from the target. The same map reduces complements, and characteristic functions compose with it; Turing reduction permits adaptive target queries.",
+      "finding": "Every proposition, exercise and the Turing/Karp/Cook comparison remain complete; the reduction function is correctly total on natural numbers."
+    },
+    {
+      "unit_id": "OLP-0245",
+      "passage": "complete c.e. sets",
+      "reverse_paraphrase": "A complete c.e. set is c.e. and receives reductions from every c.e. set. Pairing proves K_0 complete, transitivity transfers completeness to K_1, and a K_0-to-K reduction transfers it to K.",
+      "finding": "The definition and three completeness claims remain complete; the final proof direction now establishes the stated conclusion."
+    },
+    {
+      "unit_id": "OLP-0246",
+      "passage": "zero-input halting set",
+      "reverse_paraphrase": "A universal three-place program ignores its last input, and s-m-n specializes its first two inputs so that paired halting is encoded as halting on zero. This reduces K_0 to K_1.",
+      "finding": "The oracle intuition, universal-function construction, coordinate decoding and final reduction remain complete."
+    },
+    {
+      "unit_id": "OLP-0247",
+      "passage": "undecidability of totality",
+      "reverse_paraphrase": "Specializing the partial function that returns zero exactly when x self-halts produces an indexed unary function that is total exactly for x in K, reducing K to Tot.",
+      "finding": "The s-m-n reduction and arithmetic-hierarchy remark remain complete; only a stray source article is omitted."
     }
   ]
 }

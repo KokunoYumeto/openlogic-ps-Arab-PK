@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 239 of 722 source units are translated drafts. This log contains 135 terminology entries and 180 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 247 of 722 source units are translated drafts. This log contains 139 terminology entries and 189 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1218,6 +1218,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: محاسبه‌يي شمېرېدونکے سټ; بازګشتي شمېرېدونکے سټ; نيمه‌پرېکړه کېدونکے
 - Review question: In Pakistani Pashto mathematical prose, is «په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ» the clearest conventional rendering of “computably enumerable / recursively enumerable / c.e. / range / semi-decidable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete universal-computation and enumerable-sets source and language review
+
+## TERM-HALTING-SETS
+
+- Type: terminology
+- Choice: د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1
+- Uncertainty: function, indexing, countability and diagonal concepts are supported by regional sources; the exact three computability-set labels remain provisional
+- Alternatives: د تم کېدو سټ; ځان-درېدونکی سټ; د صفر ننوت درېدنې سټ
+- Review question: In Pakistani Pashto mathematical prose, is «د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1» the clearest conventional rendering of “halting set K_0 / self-halting set K / zero-input halting set K_1” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete noncomputability, reducibility and completeness source and language review
+
+## TERM-CE-CLOSURE-COMPLEMENT
+
+- Type: terminology
+- Choice: د په محاسبوي ډول د شمېر وړ سټونو د اتحاد او اشتراک لاندې تړلتيا / د متمم لاندې ناتړلتيا
+- Uncertainty: union, intersection, difference, domain and countability concepts are supported by regional sources; the effective closure compounds remain provisional
+- Alternatives: د اتحاد او اشتراک دپاره بندوالی; د متمم لاندې نه تړل کېدل; د محاسبوي شمېر وړ سټونو تړنتيا
+- Review question: In Pakistani Pashto mathematical prose, is «د په محاسبوي ډول د شمېر وړ سټونو د اتحاد او اشتراک لاندې تړلتيا / د متمم لاندې ناتړلتيا» the clearest conventional rendering of “closure of c.e. sets under union and intersection / failure of closure under complement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete noncomputability, reducibility and completeness source and language review
+
+## TERM-MANY-ONE-REDUCIBILITY
+
+- Type: terminology
+- Choice: ډېر-پر-يو راکمونه / يو-پر-يو راکمونه / ټيورينګ راکمېدنه / راکمېدونکے / معادل
+- Uncertainty: function, pairing, set and composition concepts are supported by regional sources; the exact reducibility compounds remain provisional
+- Alternatives: څو-پر-يو راکمونه; يو-پر-يو تقليل; ټيورينګ تقليل
+- Review question: In Pakistani Pashto mathematical prose, is «ډېر-پر-يو راکمونه / يو-پر-يو راکمونه / ټيورينګ راکمېدنه / راکمېدونکے / معادل» the clearest conventional rendering of “many-one reduction / one-one reduction / Turing reduction / reducible / equivalent” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete noncomputability, reducibility and completeness source and language review
+
+## TERM-CE-COMPLETENESS-TOTALITY
+
+- Type: terminology
+- Choice: بشپړ په محاسبوي ډول د شمېر وړ سټ / د هرځاے تعريف شويو تابعو سټ Tot / هرځاے تعريف کېدل / حسابي پوړيز نظام
+- Uncertainty: function, countability and diagonal concepts are supported by regional sources; the exact completeness, totality and arithmetic-hierarchy labels remain provisional
+- Alternatives: محاسبوي شمېر وړ بشپړ سټ; ټوله تابع د هرځاے تعريف شوې تابع پر ځاے; حسابي سلسله مراتب
+- Review question: In Pakistani Pashto mathematical prose, is «بشپړ په محاسبوي ډول د شمېر وړ سټ / د هرځاے تعريف شويو تابعو سټ Tot / هرځاے تعريف کېدل / حسابي پوړيز نظام» the clearest conventional rendering of “complete c.e. set / totality set Tot / totality / arithmetic hierarchy” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete noncomputability, reducibility and completeness source and language review
 
 ## DEC-OLFUN-001
 
@@ -2784,6 +2820,87 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-026 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete universal-computation and enumerable-sets batch and frozen source bytes
+
+## DEC-OLCMP-027
+
+- Type: source-correction
+- Choice: uses natural connective and comparative wording and says the total enumerator returns its fixed intersection member when a decoded pair does not match
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-027 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-028
+
+- Type: source-correction
+- Choice: tests membership in A with the index d whose partial function has domain A
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-028 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-029
+
+- Type: source-correction
+- Choice: runs the already fixed d and e computations in parallel and accepts membership in A when the d computation halts
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-029 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-030
+
+- Type: source-correction
+- Choice: states once that reduction has already been used implicitly and refers to the halting problem as unsolvable
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-030 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-031
+
+- Type: source-correction
+- Choice: writes K0 as the pairs (e,x) such that x belongs to W_e, matching the immediately preceding definition and following diagonal reduction
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-031 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-032
+
+- Type: source-correction
+- Choice: states that the following two propositions support the intuition and the first says many-one reducibility is transitive
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-032 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-033
+
+- Type: source-correction
+- Choice: types the reduction as a total function from the natural numbers to the natural numbers before asking for the characteristic-function identity
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-033 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-034
+
+- Type: source-correction
+- Choice: states that the already complete paired halting set K0 reduces to the diagonal halting set K, so transitivity makes K complete
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-034 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
+
+## DEC-OLCMP-035
+
+- Type: source-correction
+- Choice: describes computing h by simulating the indexed function on its own index
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-035 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes
 
 ## DEC-REL-I
 

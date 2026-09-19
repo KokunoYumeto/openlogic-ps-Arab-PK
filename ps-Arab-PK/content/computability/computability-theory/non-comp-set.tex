@@ -1,0 +1,68 @@
+% Part: computability
+% Chapter: computability-theory
+% Section: non-comp-set
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{thy}{ncp}
+\olsection{محاسبه نۀ کېدونکي سټونه شته}
+
+
+پورته مو وليدل چې هر محاسبه کېدونکے سټ په محاسبوي ډول د شمېر وړ
+دے۔ ايا د دې معکوس هم رښتيا دے؟ لاندې قضيه ښيي چې په عمومي ډول داسې
+نۀ ده۔
+
+\begin{thm}\ollabel{thm:K-0}
+فرض کړئ $K_0$ سټ $\Setabs{\tuple{e, x}}{\cfind{e}(x) \fdefined}$
+دے۔ بيا $K_0$ په محاسبوي ډول د شمېر وړ دے، خو محاسبه کېدونکے نۀ دے۔
+\end{thm}
+
+\begin{proof}
+د دې د ليدلو دپاره چې $K_0$ په محاسبوي ډول د شمېر وړ دے، پام وکړئ
+چې دا د هغې تابع~$f$ د تعريف ساحه ده چې داسې تعريفېږي:
+\[
+f(z) = \umin{y}{(\len{z} = 2 \land T((z)_0, (z)_1, y))}.
+\]
+ځکه که $\cfind{e}(x)$ تعريف شوې وي، $f(\tuple{e, x})$ د درېدلې
+محاسبې يوه لړۍ مومي؛ که $\cfind{e}(x)$ تعريف شوې نۀ وي، نو
+$f(\tuple{e, x})$ هم تعريف شوې نۀ ده؛ او که~$z$ ان يوه جوړه هم نۀ
+کوډوي، نو $f(z)$ بيا هم تعريف شوې نۀ ده۔
+
+دا حقيقت چې $K_0$ محاسبه کېدونکے نۀ دے، هماغه د درېدنې د مسئلې
+ناپرېکړتيا ده، \olref[hlt]{thm:halting-problem}۔
+\end{proof}
+
+سټ~$K_0$ د هغو جوړو~$\tuple{e,x}$ سټ دے چې
+$\cfind{e}(x) \fdefined$ وي، يعنې $\tuple{e,x} \in K_0$ هله او
+يوازې هله چې~$\cfind{e}$ پر ننوت~$x$ تعريف شوې وي (ودرېږي)، نو دې
+ته ``د درېدنې سټ'' هم ويل کېږي۔ سټ
+$K = \Setabs{e}{\cfind{e}(e) \fdefined}$ د ``پر خپل ځان د درېدنې
+سټ'' دے۔ دا ډېر ځله د يوې معياري ناپرېکړه کېدونکې بېلګې په توګه
+کارول کېږي۔
+
+\begin{thm}\ollabel{thm:K}
+پر خپل ځان د درېدنې سټ
+$K = \Setabs{e}{\cfind{e}(e) \fdefined}$، !!{c.e.} دے خو د پرېکړې
+وړ نۀ دے۔
+\end{thm}
+
+\begin{proof}
+  فرض کړئ $K$ د پرېکړې وړ دے، يعنې ځانګړونکې تابع~$\Char{K}$ ئې
+  محاسبه کېدونکې ده۔ وټاکئ:
+  \[d(e) = \begin{cases}
+  1 & \text{که $\Char{K}(e) = 0$ وي}\\
+  \fundefined & \text{که داسې نۀ وي۔}
+  \end{cases}
+  \]
+  فرض کړئ $k$ د~$d$ شاخص دے، يعنې $d \simeq \cfind{k}$۔ بيا
+  $d(k) \simeq \cfind{k}(k)$ ده۔ دا له هغه حقيقت سره تناقض لري چې
+  $d(k) \fdefined$ هله او يوازې هله چې
+  $\cfind{k}(k) \fundefined$ وي، او دا د~$d$ له تعريفه راځي۔
+
+  $K$ د تابع $f(x) = \umin{y}{T(x,x,y)}$ د تعريف ساحه ده او ځکه
+  !!{c.e.} دے۔
+\end{proof}
+
+\end{document}

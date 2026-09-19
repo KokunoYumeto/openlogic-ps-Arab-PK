@@ -1,0 +1,209 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-19T22:46:07.304574+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+  "scope": "OLP-0240 through OLP-0247 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-027",
+      "unit_id": "OLP-0241",
+      "classification": "ce_closure_proof_has_two_typos_and_calls_total_fallback_a_stall",
+      "source_path": "content/computability/computability-theory/ce-closed-cup-cap.tex",
+      "source_sha256": "392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e",
+      "source_locator": "content/computability/computability-theory/ce-closed-cup-cap.tex:40,54,65",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex",
+      "target_line_1based": 66,
+      "target_sha256": "74c822c1d0ce97741f975ee9c865276e31ed392d21b88c0f3dd72d8e02859cfe",
+      "mode": "repair-local-prose-typos-and-describe-constant-fallback-as-returning-plus-adjacent-note",
+      "translation_change": "uses natural connective and comparative wording and says the total enumerator returns its fixed intersection member when a decoded pair does not match",
+      "counterexample": "The case definition assigns l(x)=c whenever the two decoded enumerator values differ. Returning c terminates with an output, so it cannot simultaneously stall; 'for looking' and 'tricker' are also unambiguous local typos.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "Only prose is repaired. Every displayed and inline formula remains byte-equivalent after whitespace normalization.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-028",
+      "unit_id": "OLP-0242",
+      "classification": "complement_characterization_tests_original_set_with_its_complement_index",
+      "source_path": "content/computability/computability-theory/complement-ce.tex",
+      "source_sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
+      "source_locator": "content/computability/computability-theory/complement-ce.tex:29-42",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/complement-ce.tex",
+      "target_line_1based": 43,
+      "target_sha256": "30a4d6da4fdddfc6c5c9f8772a0032be571153af6b8336d8a221c2aa20ea8369",
+      "mode": "use-original-set-index-in-final-membership-test-plus-adjacent-note",
+      "translation_change": "tests membership in A with the index d whose partial function has domain A",
+      "counterexample": "The proof fixes A as the domain of cfind_d and its complement as the domain of cfind_e. If x is in A, the first computation halts, so T(d,x,h(x)) holds; T(e,x,h(x)) instead witnesses membership in the complement.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "The two T(e,x,h(x)) expressions become T(d,x,h(x)), and the explanatory cfind index changes from e to d. The unit-level exception is combined with the adjacent index repair by exact multiset accounting.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$T(e,x,h(x))$",
+          "$T(e,x,h(x))$",
+          "$\\cfind{e}$"
+        ],
+        "target_only": [
+          "$T(d,x,h(x))$",
+          "$T(d,x,h(x))$",
+          "$\\cfind{d}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-029",
+      "unit_id": "OLP-0242",
+      "classification": "informal_complement_decider_uses_undefined_index_and_reverses_halting_branch",
+      "source_path": "content/computability/computability-theory/complement-ce.tex",
+      "source_sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
+      "source_locator": "content/computability/computability-theory/complement-ce.tex:44-49",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/complement-ce.tex",
+      "target_line_1based": 54,
+      "target_sha256": "30a4d6da4fdddfc6c5c9f8772a0032be571153af6b8336d8a221c2aa20ea8369",
+      "mode": "retain-d-and-e-indices-and-map-d-halting-to-original-set-plus-adjacent-note",
+      "translation_change": "runs the already fixed d and e computations in parallel and accepts membership in A when the d computation halts",
+      "counterexample": "The paragraph introduces no f, while the proof has already assigned d to A and e to its complement. Searching e and f leaves one index unbound, and accepting when e halts assigns complement members to A.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "The informal inline indices are aligned with d and e. After the unchanged e occurrence cancels in the unit-level multiset, the net exception replaces one e and one f by two d occurrences.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\cfind{e}$",
+          "$\\cfind{f}$"
+        ],
+        "target_only": [
+          "$\\cfind{d}$",
+          "$\\cfind{d}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-030",
+      "unit_id": "OLP-0243",
+      "classification": "reducibility_introduction_contains_duplicate_noun_and_wrong_preposition_typo",
+      "source_path": "content/computability/computability-theory/reducibility.tex",
+      "source_sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+      "source_locator": "content/computability/computability-theory/reducibility.tex:31-38",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/reducibility.tex",
+      "target_line_1based": 46,
+      "target_sha256": "0e7edfea62dd4bcaeff0c4b8bb6eafd5426b1b07bf7f7ba48286974a04a190b8",
+      "mode": "remove-duplicated-notion-and-render-unsolvable-halting-claim-naturally-plus-adjacent-note",
+      "translation_change": "states once that reduction has already been used implicitly and refers to the halting problem as unsolvable",
+      "counterexample": "'notion of reduction notion' duplicates the same noun phrase, while 'the halting problem in unsolvable' uses a preposition where the predicate 'is' is required. Both intended readings are fixed by immediate context.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "Only prose is repaired; formulas, references and identifiers remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-031",
+      "unit_id": "OLP-0243",
+      "classification": "alternative_K0_builder_reverses_pair_coordinates_against_its_membership_condition",
+      "source_path": "content/computability/computability-theory/reducibility.tex",
+      "source_sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+      "source_locator": "content/computability/computability-theory/reducibility.tex:39-43",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/reducibility.tex",
+      "target_line_1based": 50,
+      "target_sha256": "0e7edfea62dd4bcaeff0c4b8bb6eafd5426b1b07bf7f7ba48286974a04a190b8",
+      "mode": "retain-index-first-pair-order-in-equivalent-K0-builder-plus-adjacent-note",
+      "translation_change": "writes K0 as the pairs (e,x) such that x belongs to W_e, matching the immediately preceding definition and following diagonal reduction",
+      "counterexample": "The source first defines K0 with pair (e,x), then writes pair (x,e) while still testing x in W_e. Reversing only the tuple changes which coordinate is interpreted as the program index and breaks equivalence.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "The one inline set-builder changes tuple(x,e) to tuple(e,x); every other formula remains unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$K_0=\\Setabs{\\tuple{x,e}}{x\\inW_e}$"
+        ],
+        "target_only": [
+          "$K_0=\\Setabs{\\tuple{e,x}}{x\\inW_e}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-032",
+      "unit_id": "OLP-0244",
+      "classification": "reducibility_properties_opening_contains_two_spelling_typos",
+      "source_path": "content/computability/computability-theory/prop-reduce.tex",
+      "source_sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
+      "source_locator": "content/computability/computability-theory/prop-reduce.tex:12-17",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex",
+      "target_line_1based": 18,
+      "target_sha256": "51737da6053235e2e7a95199e6879ed29e3f7c6b579f826508890ddd04023ea4",
+      "mode": "render-intended-transitivity-sentence-without-source-typos-plus-adjacent-note",
+      "translation_change": "states that the following two propositions support the intuition and the first says many-one reducibility is transitive",
+      "counterexample": "The phrases 'first one say taht' contain an agreement error and a transposed spelling. The theorem immediately below supplies the unique intended reading.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "Only prose spelling and agreement are normalized; the relation symbol and theorem statement remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-033",
+      "unit_id": "OLP-0244",
+      "classification": "many_one_reduction_exercise_restricts_function_domain_to_members_of_A",
+      "source_path": "content/computability/computability-theory/prop-reduce.tex",
+      "source_sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
+      "source_locator": "content/computability/computability-theory/prop-reduce.tex:68-71",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex",
+      "target_line_1based": 76,
+      "target_sha256": "51737da6053235e2e7a95199e6879ed29e3f7c6b579f826508890ddd04023ea4",
+      "mode": "restore-natural-number-domain-and-codomain-from-definition-plus-adjacent-note",
+      "translation_change": "types the reduction as a total function from the natural numbers to the natural numbers before asking for the characteristic-function identity",
+      "counterexample": "A many-one reduction must map every natural input so that nonmembership is preserved as well as membership. A function A to B is defined only on members of A and makes the displayed characteristic-function composition ill-typed outside A.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "The inline type f:A→B changes to f:Nat→Nat; the characteristic-function identity is unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$f\\colonA\\toB$"
+        ],
+        "target_only": [
+          "$f\\colon\\Nat\\to\\Nat$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-034",
+      "unit_id": "OLP-0245",
+      "classification": "completeness_proof_reverses_reduction_needed_to_establish_K_complete",
+      "source_path": "content/computability/computability-theory/complete-ce-sets.tex",
+      "source_sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
+      "source_locator": "content/computability/computability-theory/complete-ce-sets.tex:39-45",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex",
+      "target_line_1based": 46,
+      "target_sha256": "fd6cad7900f2a59856e33d1d2d3cacd78861baff9faf71a3ec2016a4dea90360",
+      "mode": "reverse-final-reduction-direction-to-K0-to-K-plus-adjacent-note",
+      "translation_change": "states that the already complete paired halting set K0 reduces to the diagonal halting set K, so transitivity makes K complete",
+      "counterexample": "Showing K≤K0 only reconfirms that K reduces to a complete set; it does not reduce arbitrary c.e. sets to K. Since every c.e. set reduces to K0, the required direction is K0≤K.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "The same two inline set symbols each remain present once, but their prose order is reversed to express K0≤K; the formula multiset is unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-035",
+      "unit_id": "OLP-0247",
+      "classification": "totality_proof_contains_stray_article_before_computation_instruction",
+      "source_path": "content/computability/computability-theory/total.tex",
+      "source_sha256": "020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca",
+      "source_locator": "content/computability/computability-theory/total.tex:33-38",
+      "target_path": "ps-Arab-PK/content/computability/computability-theory/total.tex",
+      "target_line_1based": 39,
+      "target_sha256": "095bb1d55ded771c7cc775d3d6e9e1b4c5ad3c42aede244da1f376fe74d429ca",
+      "mode": "omit-stray-article-in-natural-computation-description-plus-adjacent-note",
+      "translation_change": "describes computing h by simulating the indexed function on its own index",
+      "counterexample": "In 'on input x,y, the we compute h', the article 'the' has no noun and interrupts the unique grammatical reading supplied by the following simulation instruction.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
+      "formula_policy": "Only the malformed prose phrase is normalized; every formula and symbol remains unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete noncomputability, reducibility and completeness batch and frozen source bytes"
+    }
+  ],
+  "no_change_units": [
+    "OLP-0240",
+    "OLP-0246"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete noncomputability, reducibility and completeness source review; nine adopted corrections have adjacent Pashto disclosures; four formula-changing repairs across three units are registered and all other formulas are identical"
+}

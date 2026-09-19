@@ -1568,3 +1568,84 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: treats the empty set as the domain of a nowhere-defined partial computable function and applies the total-enumerator search only to nonempty computably enumerable sets.
 - Disclosure: `handle-empty-set-by-nowhere-defined-partial-function-before-nonempty-enumerator-case-plus-adjacent-note`.
 
+## OLCMP-027
+
+- Unit: `OLP-0241`
+- Frozen source: `content/computability/computability-theory/ce-closed-cup-cap.tex` (392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e) at `content/computability/computability-theory/ce-closed-cup-cap.tex:40,54,65`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex:66`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: uses natural connective and comparative wording and says the total enumerator returns its fixed intersection member when a decoded pair does not match.
+- Disclosure: `repair-local-prose-typos-and-describe-constant-fallback-as-returning-plus-adjacent-note`.
+
+## OLCMP-028
+
+- Unit: `OLP-0242`
+- Frozen source: `content/computability/computability-theory/complement-ce.tex` (9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f) at `content/computability/computability-theory/complement-ce.tex:29-42`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:43`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: tests membership in A with the index d whose partial function has domain A.
+- Disclosure: `use-original-set-index-in-final-membership-test-plus-adjacent-note`.
+
+## OLCMP-029
+
+- Unit: `OLP-0242`
+- Frozen source: `content/computability/computability-theory/complement-ce.tex` (9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f) at `content/computability/computability-theory/complement-ce.tex:44-49`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:54`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: runs the already fixed d and e computations in parallel and accepts membership in A when the d computation halts.
+- Disclosure: `retain-d-and-e-indices-and-map-d-halting-to-original-set-plus-adjacent-note`.
+
+## OLCMP-030
+
+- Unit: `OLP-0243`
+- Frozen source: `content/computability/computability-theory/reducibility.tex` (f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a) at `content/computability/computability-theory/reducibility.tex:31-38`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:46`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: states once that reduction has already been used implicitly and refers to the halting problem as unsolvable.
+- Disclosure: `remove-duplicated-notion-and-render-unsolvable-halting-claim-naturally-plus-adjacent-note`.
+
+## OLCMP-031
+
+- Unit: `OLP-0243`
+- Frozen source: `content/computability/computability-theory/reducibility.tex` (f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a) at `content/computability/computability-theory/reducibility.tex:39-43`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:50`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: writes K0 as the pairs (e,x) such that x belongs to W_e, matching the immediately preceding definition and following diagonal reduction.
+- Disclosure: `retain-index-first-pair-order-in-equivalent-K0-builder-plus-adjacent-note`.
+
+## OLCMP-032
+
+- Unit: `OLP-0244`
+- Frozen source: `content/computability/computability-theory/prop-reduce.tex` (20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8) at `content/computability/computability-theory/prop-reduce.tex:12-17`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:18`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: states that the following two propositions support the intuition and the first says many-one reducibility is transitive.
+- Disclosure: `render-intended-transitivity-sentence-without-source-typos-plus-adjacent-note`.
+
+## OLCMP-033
+
+- Unit: `OLP-0244`
+- Frozen source: `content/computability/computability-theory/prop-reduce.tex` (20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8) at `content/computability/computability-theory/prop-reduce.tex:68-71`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:76`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: types the reduction as a total function from the natural numbers to the natural numbers before asking for the characteristic-function identity.
+- Disclosure: `restore-natural-number-domain-and-codomain-from-definition-plus-adjacent-note`.
+
+## OLCMP-034
+
+- Unit: `OLP-0245`
+- Frozen source: `content/computability/computability-theory/complete-ce-sets.tex` (8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030) at `content/computability/computability-theory/complete-ce-sets.tex:39-45`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex:46`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: states that the already complete paired halting set K0 reduces to the diagonal halting set K, so transitivity makes K complete.
+- Disclosure: `reverse-final-reduction-direction-to-K0-to-K-plus-adjacent-note`.
+
+## OLCMP-035
+
+- Unit: `OLP-0247`
+- Frozen source: `content/computability/computability-theory/total.tex` (020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca) at `content/computability/computability-theory/total.tex:33-38`
+- Pashto target: `ps-Arab-PK/content/computability/computability-theory/total.tex:39`
+- Audit: `PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS`
+- Treatment: describes computing h by simulating the indexed function on its own index.
+- Disclosure: `omit-stray-article-in-natural-computation-description-plus-adjacent-note`.
+

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 239,
-    "structural_pass": 239,
+    "draft_units": 247,
+    "structural_pass": 247,
     "visually_accepted": 105,
     "published": 82
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B048-UNIVERSAL-COMPUTATION-AND-ENUMERABLE-SETS",
+  "batch": "PS-B049-NONCOMPUTABILITY-REDUCIBILITY-AND-COMPLETENESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -6908,6 +6908,248 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0240",
+      "path": "content/computability/computability-theory/non-comp-set.tex",
+      "source_sha256": "d6104b2bdb7763c1360dfda3f360b4db8ac8e2356315269b02664517918e4eca",
+      "translation_sha256": "24d99a0026fa0af722c44a4023c47b39e9c2717db412f19ae9337aa65e0d5b90",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0241",
+      "path": "content/computability/computability-theory/ce-closed-cup-cap.tex",
+      "source_sha256": "392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e",
+      "translation_sha256": "74c822c1d0ce97741f975ee9c865276e31ed392d21b88c0f3dd72d8e02859cfe",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-027"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0242",
+      "path": "content/computability/computability-theory/complement-ce.tex",
+      "source_sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
+      "translation_sha256": "30a4d6da4fdddfc6c5c9f8772a0032be571153af6b8336d8a221c2aa20ea8369",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-028",
+        "OLCMP-029"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\cfind{e}$",
+          "$\\cfind{e}$",
+          "$T(e,x,h(x))$",
+          "$T(e,x,h(x))$",
+          "$\\cfind{f}$"
+        ],
+        "target_only": [
+          "$\\cfind{d}$",
+          "$\\cfind{d}$",
+          "$\\cfind{d}$",
+          "$T(d,x,h(x))$",
+          "$T(d,x,h(x))$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0243",
+      "path": "content/computability/computability-theory/reducibility.tex",
+      "source_sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
+      "translation_sha256": "0e7edfea62dd4bcaeff0c4b8bb6eafd5426b1b07bf7f7ba48286974a04a190b8",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-030",
+        "OLCMP-031"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$K_0=\\Setabs{\\tuple{x,e}}{x\\inW_e}$"
+        ],
+        "target_only": [
+          "$K_0=\\Setabs{\\tuple{e,x}}{x\\inW_e}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0244",
+      "path": "content/computability/computability-theory/prop-reduce.tex",
+      "source_sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
+      "translation_sha256": "51737da6053235e2e7a95199e6879ed29e3f7c6b579f826508890ddd04023ea4",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-032",
+        "OLCMP-033"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$f\\colonA\\toB$"
+        ],
+        "target_only": [
+          "$f\\colon\\Nat\\to\\Nat$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0245",
+      "path": "content/computability/computability-theory/complete-ce-sets.tex",
+      "source_sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
+      "translation_sha256": "fd6cad7900f2a59856e33d1d2d3cacd78861baff9faf71a3ec2016a4dea90360",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-034"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0246",
+      "path": "content/computability/computability-theory/k-1.tex",
+      "source_sha256": "a2ddcee4c073868a4768ebc44c9b9634b48b4ade9fd31f37450df159f336a35a",
+      "translation_sha256": "3373eda639005d55250e67d7989b9aa80478ab00790048ff5b8d29b666e34e83",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0247",
+      "path": "content/computability/computability-theory/total.tex",
+      "source_sha256": "020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca",
+      "translation_sha256": "095bb1d55ded771c7cc775d3d6e9e1b4c5ad3c42aede244da1f376fe74d429ca",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-035"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -9232,6 +9474,54 @@
       "passage": "equivalent c.e. definitions",
       "reverse_paraphrase": "Nonempty c.e. sets are exactly total-computable, partial-computable or primitive-recursive ranges; all c.e. sets are partial-computable domains and existential projections of computable relations.",
       "finding": "Every implication, normal-form witness, W_e enumeration and existential characterization remains complete; the unbound input and empty-set gap are repaired with exact accounting."
+    },
+    {
+      "unit_id": "OLP-0240",
+      "passage": "noncomputable halting sets",
+      "reverse_paraphrase": "The paired halting set is a partial-computable domain and hence c.e., but a decider would solve the halting problem; the self-halting set is c.e. and defeats its own assumed characteristic decider by diagonal self-application.",
+      "finding": "Both undecidability arguments, domain witnesses and distinctions between K_0 and K remain complete and exact."
+    },
+    {
+      "unit_id": "OLP-0241",
+      "passage": "closure under union and intersection",
+      "reverse_paraphrase": "C.e. union and intersection can be obtained through domain searches, alternating total enumerations, a fixed fallback for nonempty intersections, or parallel simulation of two indexed partial computations.",
+      "finding": "All constructions and the empty-intersection branch remain complete; the fallback is correctly described as returning a value rather than stalling."
+    },
+    {
+      "unit_id": "OLP-0242",
+      "passage": "complements of c.e. sets",
+      "reverse_paraphrase": "A set is computable exactly when it and its complement are c.e.: parallel search must halt on one side, and the side that halts decides membership. Therefore the complement of K_0 is not c.e.",
+      "finding": "Both directions and the corollary remain complete; the formal and informal searches now consistently assign d to A and e to its complement."
+    },
+    {
+      "unit_id": "OLP-0243",
+      "passage": "many-one reducibility",
+      "reverse_paraphrase": "A total computable map reduces A to B when it preserves membership in both directions. The diagonal map x to the pair (x,x) reduces self-halting to paired halting, motivating the order relation and its one-one strengthening.",
+      "finding": "The definitions, motivation and complexity aside remain complete; the equivalent K_0 builder now keeps the program index in the first coordinate."
+    },
+    {
+      "unit_id": "OLP-0244",
+      "passage": "properties of reducibility",
+      "reverse_paraphrase": "Many-one reducibility is transitive and pulls c.e. and computable status back from the target. The same map reduces complements, and characteristic functions compose with it; Turing reduction permits adaptive target queries.",
+      "finding": "Every proposition, exercise and the Turing/Karp/Cook comparison remain complete; the reduction function is correctly total on natural numbers."
+    },
+    {
+      "unit_id": "OLP-0245",
+      "passage": "complete c.e. sets",
+      "reverse_paraphrase": "A complete c.e. set is c.e. and receives reductions from every c.e. set. Pairing proves K_0 complete, transitivity transfers completeness to K_1, and a K_0-to-K reduction transfers it to K.",
+      "finding": "The definition and three completeness claims remain complete; the final proof direction now establishes the stated conclusion."
+    },
+    {
+      "unit_id": "OLP-0246",
+      "passage": "zero-input halting set",
+      "reverse_paraphrase": "A universal three-place program ignores its last input, and s-m-n specializes its first two inputs so that paired halting is encoded as halting on zero. This reduces K_0 to K_1.",
+      "finding": "The oracle intuition, universal-function construction, coordinate decoding and final reduction remain complete."
+    },
+    {
+      "unit_id": "OLP-0247",
+      "passage": "undecidability of totality",
+      "reverse_paraphrase": "Specializing the partial function that returns zero exactly when x self-halts produces an indexed unary function that is total exactly for x in K, reducing K to Tot.",
+      "finding": "The s-m-n reduction and arithmetic-hierarchy remark remain complete; only a stray source article is omitted."
     }
   ],
   "builds": [
