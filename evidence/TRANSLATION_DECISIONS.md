@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 275 terminology, source-correction and other judgment-dependent entries across 207 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 282 terminology, source-correction and other judgment-dependent entries across 215 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -374,6 +374,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 45,83,85,87; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 20,40,74,77,78; page: pending stable pagination in a reader containing this unit
   - OLP-0202; The Definability Theorem; `content/model-theory/interpolation/definability.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/definability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0205; Abstract Logics; `content/model-theory/lindstrom/abstract-logics.tex` source line(s) 15,27,57,64; `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex` target line(s) 16,20,26,55,62; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 33,38; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 31,36,37; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -720,6 +721,13 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0193; Standard Models of Arithmetic; `content/model-theory/models-of-arithmetic/standard-models.tex` source line(s) 67,85,93,116,156; `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex` target line(s) 66,84,87,92,96,117,158,160,165,167,176,177; page: pending stable pagination in a reader containing this unit
   - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 79; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 18,19,44,80,84,90,110,112; page: pending stable pagination in a reader containing this unit
+  - OLP-0208; computability; `content/computability/computability.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0209; cmp; `content/computability/recursive-functions/recursive-functions.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex` target line(s) 8,11; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 17,19,20,23,24,28,33,34,39,41,42,43,44,45,46,47,51,52; page: pending stable pagination in a reader containing this unit
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) 51,73,75,77,83,84,123,124; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) 15,45,47,49,54,56,57,75,77,78,79,84,86,100,107,114,115,122,123; page: pending stable pagination in a reader containing this unit
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) 19,30,43,44,45,49,56,59,60,69,72; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) 12,13,14,15,17,18,19,30,31,34,35,37,42,43,47,48,49,50,51,54,55,62,64,73,74,75,76,77,81; page: pending stable pagination in a reader containing this unit
+  - OLP-0214; Primitive Recursion Notations; `content/computability/recursive-functions/notation-pr-functions.tex` source line(s) 20,30,38,40; `ps-Arab-PK/content/computability/recursive-functions/notation-pr-functions.tex` target line(s) 12,13,16,17,19,22,23,24,28,34,36,37,43; page: pending stable pagination in a reader containing this unit
+  - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 12,33,34,40; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) 10,12,17,35,36,37,39,40,41; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DOMAIN
 
@@ -806,6 +814,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0128; Outline of the Proof; `content/first-order-logic/completeness/outline.tex` source line(s) 109,112,116,117,130; `ps-Arab-PK/content/first-order-logic/completeness/outline.tex` target line(s) 13,15,16,17,22,101,113,115,116,135; page: pending stable pagination in a reader containing this unit
   - OLP-0132; Construction of a Model; `content/first-order-logic/completeness/construction-of-model.tex` source line(s) 23,49,76,80,86,89,91,108; `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex` target line(s) 49,50,84,99,113,166,282,290; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 33,96; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 33,96,99; page: pending stable pagination in a reader containing this unit
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) 17,18,50,57,64,73,76,78,84,101,102,105; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) 25,26; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 142; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INJECTIVE
 
@@ -832,7 +843,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 43; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
   - OLP-0050; Hilbert's Hotel; `content/sets-functions-relations/infinite/hilberts-hotel.tex` source line(s) 61,63; `ps-Arab-PK/content/sets-functions-relations/infinite/hilberts-hotel.tex` target line(s) 60,61; page: pending stable pagination in a reader containing this unit
   - OLP-0051; Dedekind Algebras; `content/sets-functions-relations/infinite/dedekind-algebra.tex` source line(s) 24,86,94,103,112,113; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex` target line(s) 23,92,109,119,120; page: pending stable pagination in a reader containing this unit
-  - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 13,78,90,93; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 13,55,83,97,101; page: pending stable pagination in a reader containing this unit
+  - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 13,78,90,93; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 13,78,92,96; page: pending stable pagination in a reader containing this unit
   - OLP-0171; Expressing Relations in \article{structure}   \printtoken{S}{structure}; `content/first-order-logic/models-theories/expressing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0172; The Theory of Sets; `content/first-order-logic/models-theories/set-theory.tex` source line(s) 132,139,143; `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex` target line(s) 131,138,142; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 158,174; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 152,172; page: pending stable pagination in a reader containing this unit
@@ -882,7 +893,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0037; The Notion of Size, and Schr\"oder-Bernstein; `content/sets-functions-relations/size-of-sets/schroder-bernstein.tex` source line(s) 31,48; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex` target line(s) 31,46; page: pending stable pagination in a reader containing this unit
   - OLP-0038; Enumerations and \usetoken{S}{enumerable} Sets; `content/sets-functions-relations/size-of-sets/enumerability-alt.tex` source line(s) 27,31,36,40,48; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability-alt.tex` target line(s) 27,30,35,38,46; page: pending stable pagination in a reader containing this unit
   - OLP-0039; \printtoken{S}{nonenumerable} Sets; `content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` source line(s) 16,27,34; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex` target line(s) 27,34; page: pending stable pagination in a reader containing this unit
-  - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 14,56,66,67,77,94,97,98,100; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 14,55,59,69,70,81,103,105,106,108; page: pending stable pagination in a reader containing this unit
+  - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) 14,56,66,67,77,94,97,98,100; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 14,54,64,65,76,98,100,101,103; page: pending stable pagination in a reader containing this unit
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 166; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 159; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-EXTENSIONALITY
@@ -930,6 +941,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0025; Composition of Functions; `content/sets-functions-relations/functions/composition.tex` source line(s) 3,10,15,23,24,25,33,34,35,39,41,48; `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex` target line(s) 10,15,16,23,25,34,39,41,48; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0035; Equinumerosity; `content/sets-functions-relations/size-of-sets/equinumerous-sets.tex` source line(s) 53; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
   - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) line pending; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) 3,10,14,82,87; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) 10,12,14,86,92; page: pending stable pagination in a reader containing this unit
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 13,27,29,54,66,74,107,112,148,149,152,158,160; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 12,30,53,62,69,104,110,143,145,148,154,156; page: pending stable pagination in a reader containing this unit
+  - OLP-0214; Primitive Recursion Notations; `content/computability/recursive-functions/notation-pr-functions.tex` source line(s) 17,38; `ps-Arab-PK/content/computability/recursive-functions/notation-pr-functions.tex` target line(s) 17,37; page: pending stable pagination in a reader containing this unit
+  - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 33,38; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) 37,40; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -945,6 +961,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0026; Partial Functions; `content/sets-functions-relations/functions/partial-functions.tex` source line(s) 12,16,17,21,26,31,32,38,39,43,50,51,52,61,63,72; `ps-Arab-PK/content/sets-functions-relations/functions/partial-functions.tex` target line(s) 12,17,21,24,25,26,32,33,34,38,44,52,53,62,65,66,73,74; page: exact occurrence page pending verified line-to-page mapping against the accepted v0.3 reader
   - OLP-0032; An Alternative Pairing Function; `content/sets-functions-relations/size-of-sets/pairing-alt.tex` source line(s) 104; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex` target line(s) 112; page: pending stable pagination in a reader containing this unit
   - OLP-0034; Reduction; `content/sets-functions-relations/size-of-sets/reduction.tex` source line(s) 89; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex` target line(s) 129; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 41,46,49; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 43,45,46,47; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -1361,6 +1378,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 131,150,156,163,167; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 127,144,151,157,160; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 75; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 44,55,73; page: pending stable pagination in a reader containing this unit
   - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0208; computability; `content/computability/computability.tex` source line(s) 11,16; `ps-Arab-PK/content/computability/computability.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0209; cmp; `content/computability/recursive-functions/recursive-functions.tex` source line(s) 2,8,11,53; `ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex` target line(s) 8,11; page: pending stable pagination in a reader containing this unit
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) 2,47,51,75,83,99; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) 50,54,76,84,101; page: pending stable pagination in a reader containing this unit
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 2,42,45,49,50,51,52,53,55,56,57,59,64,69,72,79,82,85,89,97,99,104,111,113,118,127,130,134,161; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 10,42,45,46,48,49,50,51,52,53,54,55,56,61,65,67,74,81,84,88,95,97,102,108,109,115,124,126,130,157; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -2502,6 +2523,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner terminology decision during the complete models-of-arithmetic source and language review
 - Locations:
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 10,20,38,39,100,101,119,120; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 10,17,19,20,44,110,111,124,129,133,134,135; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 25,30,37; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 23,28,29,31,34,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 34,39; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) 10,17,20,35,36,37,40,41; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INTERPOLATION-SEPARATION
 
@@ -2595,6 +2618,56 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 2,12; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
   - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 2,24; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 17,23; page: pending stable pagination in a reader containing this unit
   - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) 2,3,11,14,47,48,55,107,108; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 11,56,149; page: pending stable pagination in a reader containing this unit
+
+## TERM-COMPUTABILITY-FOUNDATIONS
+
+- Source term or sense: computability / computable numerical function / model of computation
+- Chosen rendering or treatment: محاسبه کېدنه / محاسبه کېدونکې عددي تابع / د محاسبې مدل
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Computability names effective calculation independently of any one formalism. A computable numerical function maps tuples of naturals to naturals by an effective procedure, while a model of computation is a precise formal account of such procedures.
+- Alternatives: حسابېدنه د محاسبه کېدنې پر ځاے; محاسبوي تابع د محاسبه کېدونکې تابع پر ځاے; د محاسبې نمونه د محاسبې د مدل پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «محاسبه کېدنه / محاسبه کېدونکې عددي تابع / د محاسبې مدل» the clearest conventional rendering of “computability / computable numerical function / model of computation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+- Locations:
+  - OLP-0208; computability; `content/computability/computability.tex` source line(s) 1,7,10,18; `ps-Arab-PK/content/computability/computability.tex` target line(s) 7; page: pending stable pagination in a reader containing this unit
+  - OLP-0209; cmp; `content/computability/recursive-functions/recursive-functions.tex` source line(s) 1; `ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 1,12,13,14,16,20,21,51; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 13; page: pending stable pagination in a reader containing this unit
+  - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 1; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-PRIMITIVE-RECURSION
+
+- Source term or sense: primitive recursion / primitive recursive function / base equation / recursive equation
+- Chosen rendering or treatment: بنسټيز بازګښت / بنسټيزه بازګشتي تابع / بنسټيزه معادله / بازګشتي معادله
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Primitive recursion fixes an initial value and each next value from the immediately preceding value plus parameters. Primitive recursive functions form the least class containing the basic functions and closed under composition and primitive recursion.
+- Alternatives: ابتدايي بازګښت د بنسټيز بازګښت پر ځاے; اوليه بازګشتي تابع; د پيل معادله د بنسټيزې معادلې پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «بنسټيز بازګښت / بنسټيزه بازګشتي تابع / بنسټيزه معادله / بازګشتي معادله» the clearest conventional rendering of “primitive recursion / primitive recursive function / base equation / recursive equation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+- Locations:
+  - OLP-0209; cmp; `content/computability/recursive-functions/recursive-functions.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 28,37,39,41,42; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 26,37,40,41,51; page: pending stable pagination in a reader containing this unit
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) 10,54,83,99,108; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) 10,49,56,107; page: pending stable pagination in a reader containing this unit
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 10,13,18,42,45,49,50,51,52,53,56,57,58,64,67,69,72,74,79,82,85,89,97,99,104,111,113,118,127,134,161; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 12,18,48,49,50,51,53,54,55,56,63,69,81,84,95,97,102,115,157; page: pending stable pagination in a reader containing this unit
+  - OLP-0214; Primitive Recursion Notations; `content/computability/recursive-functions/notation-pr-functions.tex` source line(s) 10,23,25,30,45,48; `ps-Arab-PK/content/computability/recursive-functions/notation-pr-functions.tex` target line(s) 10,22,24,28,46; page: pending stable pagination in a reader containing this unit
+  - OLP-0215; Primitive Recursive Functions are Computable; `content/computability/recursive-functions/pr-functions-computable.tex` source line(s) 10,12,32,38; `ps-Arab-PK/content/computability/recursive-functions/pr-functions-computable.tex` target line(s) 12,40,41; page: pending stable pagination in a reader containing this unit
+
+## TERM-PROJECTION-CHARACTERISTIC
+
+- Source term or sense: projection function / characteristic function / arity / zero function
+- Chosen rendering or treatment: پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A projection returns one selected input and lets composition reorder, identify or ignore arguments. Arity counts input places. A characteristic function represents membership or a relation by numerical outputs, while the zero function constantly returns zero.
+- Alternatives: اسقاط تابع د پروجکشن تابع پر ځاے; مشخصه تابع د ځانګړونکې تابع پر ځاے; د آرګومېنټونو شمېر د ځاييزې کچې پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع» the clearest conventional rendering of “projection function / characteristic function / arity / zero function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+- Locations:
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) 35; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) 48,56,68,70; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) 50,54,62,74,75,81; page: pending stable pagination in a reader containing this unit
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 37,51,98; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 37,50,62,96; page: pending stable pagination in a reader containing this unit
+  - OLP-0214; Primitive Recursion Notations; `content/computability/recursive-functions/notation-pr-functions.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/notation-pr-functions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -2907,19 +2980,6 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition
 - Locations:
   - OLP-0051; Dedekind Algebras; `content/sets-functions-relations/infinite/dedekind-algebra.tex` source line(s) infinite/dedekind-algebra.tex:37-68; `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex` target line(s) 45; page: pending stable pagination in a reader containing this unit
-
-## DEC-OLINF-002
-
-- Source term or sense: source-correction
-- Chosen rendering or treatment: replaces the nested cardinal-equality macro with A equinumerous with B, the exact conclusion proved by the constructed bijection from A to B and required by the later squeeze application
-- Locale/script: `ps-Arab-PK` / `Arab`
-- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
-- Rationale: Only the malformed conclusion formula is corrected; all hypotheses and proof formulas are unchanged.
-- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
-- Review request: Please double-check: Does the Pashto correction for OLINF-002 disclose the source issue clearly without obscuring the corrected mathematics?
-- Timing: contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition
-- Locations:
-  - OLP-0054; Appendix: Proving Schr\"oder-Bernstein; `content/sets-functions-relations/infinite/card-sb.tex` source line(s) infinite/card-sb.tex:55-69; `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLPL-001
 
@@ -4532,6 +4592,71 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
 - Locations:
   - OLP-0207; Lindstr\"om's Theorem; `content/model-theory/lindstrom/lindstrom-proof.tex` source line(s) content/model-theory/lindstrom/lindstrom-proof.tex:100-121; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex` target line(s) 148; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-001
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: characterizes primitive recursive functions as built from the basic functions by composition and primitive recursion
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the informal parenthetical characterization is aligned with the chapter's formal definition; the comparison with partial and general recursive functions is unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+- Locations:
+  - OLP-0210; Introduction; `content/computability/recursive-functions/introduction.tex` source line(s) content/computability/recursive-functions/introduction.tex:41-48; `ps-Arab-PK/content/computability/recursive-functions/introduction.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-002
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that the recursive step defines h(x+1) from h(x)
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the direction of the prose claim is repaired; all existing h(x) and h(x+1) expressions and every defining equation are preserved.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+- Locations:
+  - OLP-0211; Primitive Recursion; `content/computability/recursive-functions/primitive-recursion.tex` source line(s) content/computability/recursive-functions/primitive-recursion.tex:12-24; `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex` target line(s) 25; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-003
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: computes the n-place output h(x_0,...,x_{n-1}) after evaluating the k inner functions
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the endpoint of h's displayed input list changes from k-1 to n-1; the values y_0 through y_{k-1} supplied to f are unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+- Locations:
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) content/computability/recursive-functions/composition.tex:12-27; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) 29; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-004
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: calls the just-defined n-place family Proj(n,i)
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the family name immediately following its definition changes from k to n; the definition and all examples remain unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+- Locations:
+  - OLP-0212; Composition; `content/computability/recursive-functions/composition.tex` source line(s) content/computability/recursive-functions/composition.tex:29-42; `ps-Arab-PK/content/computability/recursive-functions/composition.tex` target line(s) 50; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-005
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: defines each successor stage as containing the preceding stage together with every one-step composition or primitive-recursion result
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The same initial functions, one-step operations and final union are retained; successor stages are made explicitly cumulative.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+- Locations:
+  - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) content/computability/recursive-functions/pr-functions.tex:67-81; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 75; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

@@ -1,0 +1,44 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-functions-computable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{cmp}
+\olsection{بنسټيزې بازګشتي تابعې محاسبه کېدونکې دي}
+
+فرض کړئ يوه تابع~$h$ په بنسټيز بازګښت تعريف شوې ده:
+\begin{eqnarray*}
+h(\vec x, 0)     & = & f(\vec x) \\
+h(\vec x, y + 1) & = & g(\vec x, y, h(\vec x, y))
+\end{eqnarray*}
+او فرض کړئ تابعې~$f$ او~$g$ محاسبه کېدونکې دي۔ (موږ~$\vec x$ د
+$x_0$، \dots،~$x_{k-1}$ د لنډون دپاره کاروو۔) بيا
+$h(\vec x, 0)$ په څرګند ډول محاسبه کېدے شي، ځکه دا يوازې
+$f(\vec x)$ ده چې محاسبه کېدونکې مو فرض کړې ده۔ بيا
+$h(\vec x, 1)$ هم محاسبه کېدے شي، ځکه~$1 = 0 + 1$ دے او په دې ډول
+$h(\vec x, 1)$ يوازې دا ده:
+\begin{align*}
+ h(\vec x, 1) & = g(\vec x, 0, h(\vec x, 0)) =  g(\vec x, 0, f(\vec x)).
+\intertext{په همدې ډول مخکښې تللے شو او دا محاسبه کولے شو:}
+h(\vec x, 2) & = g(\vec x, 1, h(\vec x, 1)) = g(\vec x, 1, g(\vec x, 0, f(\vec x)))\\
+h(\vec x, 3) & = g(\vec x, 2, h(\vec x, 2)) = g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x))))\\
+h(\vec x, 4) & = g(\vec x, 3, h(\vec x, 3)) = g(\vec x, 3, g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x)))))\\
+& \vdots
+\end{align*}
+نو په عمومي ډول د~$h(\vec x, y)$ د محاسبې دپاره په پرله‌پسې توګه
+$h(\vec x, 0)$، $h(\vec x, 1)$، \dots محاسبه کوو، تر هغه چې
+$h(\vec x, y)$ ته ورسېږو۔
+
+نو که تابعې~$f$ او~$g$ محاسبه کېدونکې وي، يو بنسټيز بازګشتي تعريف
+يوه نوې محاسبه کېدونکې تابع ورکوي۔ همدارنګه، که تابعې~$f$ او~$g_i$
+محاسبه کېدونکې وي، د تابعو ترکيب هم محاسبه کېدونکې تابع ورکوي۔
+
+څرنګه چې بنسټيزې تابعې~$\Zero$، $\Succ$ او~$\Proj{n}{i}$ محاسبه
+کېدونکې دي، او ترکيب او بنسټيز بازګښت له محاسبه کېدونکو تابعو څخه
+محاسبه کېدونکې تابعې ورکوي، نو هره بنسټيزه بازګشتي تابع محاسبه
+کېدونکې ده۔
+
+\end{document}

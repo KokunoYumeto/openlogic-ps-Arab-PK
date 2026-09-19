@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-ps-Arab-PK/computability-foundations-canonical-replay/v1",
+  "recorded_utc": "2026-09-19T20:20:28.330684+00:00",
+  "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+  "status": "PASS",
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "ff6f07ea0b5dfe9e8a49d4f2cf407b39c655d22568e80ec4cbcdc5ed56972c8f",
+    "ALIGNMENT.jsonl": "4b99c550fc4a86768997cc6d72aefb798138dda9557da91421049b4636b2537a",
+    "SEGMENT_CANON_USE.jsonl": "2da8c9d007d6cdcaf44c136b138beae03f54fabe7d8fdf1093e9bf30dd6e1f6c",
+    "SOURCE_CORRECTIONS.json": "7856d03c79fec195c98712d83199f467bfa3cd97973844cb468a42bf2d43d062",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "03a663b5d1a624553d84f1fb463947ceb1900c5f025e3ef7516712f6587cad26",
+    "QA.json": "afcf0c99f0dc281f796497b11f4cd96bfac7abd00f91b4a7cae5de041bc60f31"
+  },
+  "counts": {
+    "decisions": 282,
+    "occurrences": 13671,
+    "terminology_decisions": 123,
+    "source_correction_decisions": 154,
+    "priority_decisions": 116,
+    "reader_pages_available": 5359,
+    "reader_pages_pending": 8312
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "64f828e4ebabdcf4ed7f8da62c839ae06b9e19966e6dc310f0cd4a23a2861e5b",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "1f8b57d83564b4ba1c2eb2a365934f7ffc028674ca042666c60423fd3688e6c1",
+      "state_repo_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "3e39dc1b55c752ad6289fda412e3b3198e5199c5de3a84102b72f3c981c5baa1",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "9b5bca1dd2fea2ea5f434b0a60160368819e2d27c28c5e019b03fa613197d77b",
+      "state_repo_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "cf1152e35379903355c532f2d58547d0dcda36731b91f9ca0518d697670513fa",
+      "state_repo_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "c8645776c4c9177ddd0cd2a98a357f5e24b6591924634cf8e0f580606bb2fd5f",
+      "state_repo_replay_byte_identical": true
+    }
+  },
+  "replay_directory": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\computability-foundations-decision-replay"
+}

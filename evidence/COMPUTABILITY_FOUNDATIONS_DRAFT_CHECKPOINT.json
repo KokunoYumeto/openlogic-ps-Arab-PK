@@ -1,0 +1,144 @@
+{
+  "schema": "ps-computability-foundations-draft/1",
+  "utc": "2026-09-19T20:20:28.330684+00:00",
+  "status": "OLP-0208 through OLP-0215 manually translated, source-reviewed, and accepted by standalone, cumulative, repository and canonical-replay QA",
+  "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+  "units": [
+    {
+      "unit_id": "OLP-0208",
+      "path": "content/computability/computability.tex",
+      "source_sha256": "06bd974e1fdd20c55d488082a40cd9d22f95868f3e1a748300cab90330546932",
+      "translation_sha256": "c615728325719ce06265477cd42d076961e7aea261a48acb2aa3e1e097fb6569",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0209",
+      "path": "content/computability/recursive-functions/recursive-functions.tex",
+      "source_sha256": "343dbc5ce104e887d62cce98c05eb92653e7f03392e289442c3cc7332307a206",
+      "translation_sha256": "b8096183567d0b8e29f891e4eed28c990da20a6e3570cd45de2d810a121ae9fb",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0210",
+      "path": "content/computability/recursive-functions/introduction.tex",
+      "source_sha256": "5c4a5e794bb772c06d8e3fe7463f696763ab8f2c9f5a377afe229d7e7b05ea83",
+      "translation_sha256": "1b8faeb54ad3fa72d1b677a0e565768af5022a7e89e53943f9c7f38a525444ac",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-001"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0211",
+      "path": "content/computability/recursive-functions/primitive-recursion.tex",
+      "source_sha256": "97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af",
+      "translation_sha256": "6c10512354a3f5604e71f265c9c9661e99e20209ab8088917cde23a82f94e5e4",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-002"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0212",
+      "path": "content/computability/recursive-functions/composition.tex",
+      "source_sha256": "a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a",
+      "translation_sha256": "cb3772044287aa0e77de0b51451f95a16ff76cb95950ac155efdc38166c9b731",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-003",
+        "OLCMP-004"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0213",
+      "path": "content/computability/recursive-functions/pr-functions.tex",
+      "source_sha256": "893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1",
+      "translation_sha256": "b5060e465bd0f920a2541931c3beb2e3820f356e6534c54027627f95e848b94f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-005"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0214",
+      "path": "content/computability/recursive-functions/notation-pr-functions.tex",
+      "source_sha256": "8e10b20204065445cbf26871cb999e37664b46af04a7bb7233f880c9404f4a5f",
+      "translation_sha256": "a044af0e7e6572861da2ea5009fe63ac5f598431dad8259881ad8e2086c6dadf",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0215",
+      "path": "content/computability/recursive-functions/pr-functions-computable.tex",
+      "source_sha256": "3e21459528e5bc5a33625412ccc06cef21f44bc6c1a32b3f05bbf7d320731b3a",
+      "translation_sha256": "9853f82bded615d3f626641b179e4187cad12afbb2d6b019a10e8ee13ad7f0b7",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 207,
+    "current_reviewed_draft_units": 8,
+    "prospective_total_after_registration": 215,
+    "cumulative_draft_units": 215,
+    "remaining_units": 507
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0208",
+      "OLP-0209",
+      "OLP-0214",
+      "OLP-0215"
+    ],
+    "documented_correction_units": [
+      "OLP-0210",
+      "OLP-0211",
+      "OLP-0212",
+      "OLP-0213"
+    ]
+  },
+  "retractions": {
+    "OLINF-002": "adopted from manager review; active correction removed and source-equivalent chained cardinal equalities restored",
+    "OLSIZ-011": "prior false alert remains absent"
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\COMPUTABILITY_FOUNDATIONS_SOURCE_CHECK.json",
+    "source_check_sha256": "b89fe6d1201216d3545a17b4f654f2e19d69f39a79bcf95958c227556a7afa96",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_computability_foundations_drafts.py",
+    "draft_checker_sha256": "242deceec910c995460995f52a270e57f3b6e235e148c1d2d46c1b1de3531bbf",
+    "retraction_ledger_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SOURCE_AUDIT_RETRACTIONS.jsonl",
+    "retraction_ledger_sha256": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\COMPUTABILITY_FOUNDATIONS_DRAFT_CHECK.json",
+    "draft_check_sha256": "1de65cee8751bf5d9403392fe9725a5a2e387354a3f375b273f729e235896615",
+    "qa_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\QA.json",
+    "qa_sha256": "afcf0c99f0dc281f796497b11f4cd96bfac7abd00f91b4a7cae5de041bc60f31",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\COMPUTABILITY_FOUNDATIONS_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "b9b1230dad5cf489ba87c77a905a62ea4e35f0a6156027ddb8e1191b92f5d2c2",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\COMPUTABILITY_FOUNDATIONS_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "96ef8bc3fade8f3ee893e3a0c7865ac4e1d27af9312d9b8d437e858621be1a2e",
+    "translation_review_workflow_sha256": "ac964a5439c2948eb02abdbc156b3b238f0ef7dff3357bbb563b259a90b20e7b",
+    "canonical_decisions_sha256": "cf1152e35379903355c532f2d58547d0dcda36731b91f9ca0518d697670513fa",
+    "canonical_qa_sha256": "c8645776c4c9177ddd0cd2a98a357f5e24b6591924634cf8e0f580606bb2fd5f"
+  },
+  "registration_status": "complete; all seven canonical projection artifacts replay byte-for-byte; OLINF-002 retraction verified across active surfaces",
+  "next_action": "Commit and push the complete computability-foundations checkpoint, then translate and source-review OLP-0216 through OLP-0223 in the primitive-recursive constructions batch."
+}

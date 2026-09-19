@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 207 of 722 source units are translated drafts. This log contains 120 terminology entries and 155 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 215 of 722 source units are translated drafts. This log contains 123 terminology entries and 159 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1084,6 +1084,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Review question: In Pakistani Pashto mathematical prose, is «د ليندستروم قضيه / د متناهي شاهد خاصيت / د لوېنهايم--سکولم ښکته خاصيت / نامعياري پړاو» the clearest conventional rendering of “Lindstrom's theorem / Compactness Property / Downward Lowenheim--Skolem Property / nonstandard stage” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete Lindstrom source and language review
 
+## TERM-COMPUTABILITY-FOUNDATIONS
+
+- Type: terminology
+- Choice: محاسبه کېدنه / محاسبه کېدونکې عددي تابع / د محاسبې مدل
+- Uncertainty: zero, successor, projection, substitution and recursion concepts are directly supported by a regional source; the computability abstract noun and model compound remain provisional
+- Alternatives: حسابېدنه د محاسبه کېدنې پر ځاے; محاسبوي تابع د محاسبه کېدونکې تابع پر ځاے; د محاسبې نمونه د محاسبې د مدل پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «محاسبه کېدنه / محاسبه کېدونکې عددي تابع / د محاسبې مدل» the clearest conventional rendering of “computability / computable numerical function / model of computation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+
+## TERM-PRIMITIVE-RECURSION
+
+- Type: terminology
+- Choice: بنسټيز بازګښت / بنسټيزه بازګشتي تابع / بنسټيزه معادله / بازګشتي معادله
+- Uncertainty: recursion, zero, successor and induction pattern directly supported by regional sources; the exact primitive-recursion compound and equation labels remain provisional
+- Alternatives: ابتدايي بازګښت د بنسټيز بازګښت پر ځاے; اوليه بازګشتي تابع; د پيل معادله د بنسټيزې معادلې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «بنسټيز بازګښت / بنسټيزه بازګشتي تابع / بنسټيزه معادله / بازګشتي معادله» the clearest conventional rendering of “primitive recursion / primitive recursive function / base equation / recursive equation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+
+## TERM-PROJECTION-CHARACTERISTIC
+
+- Type: terminology
+- Choice: پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع
+- Uncertainty: zero and projection functions and multi-place operations are directly supported by a regional source; projection loanword, characteristic-function compound and arity label remain provisional
+- Alternatives: اسقاط تابع د پروجکشن تابع پر ځاے; مشخصه تابع د ځانګړونکې تابع پر ځاے; د آرګومېنټونو شمېر د ځاييزې کچې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع» the clearest conventional rendering of “projection function / characteristic function / arity / zero function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete computability-foundations source and language review
+
 ## DEC-OLFUN-001
 
 - Type: source-correction
@@ -1298,15 +1325,6 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLINF-001 disclose the source issue clearly without obscuring the corrected mathematics?
-- Timing: contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition
-
-## DEC-OLINF-002
-
-- Type: source-correction
-- Choice: replaces the nested cardinal-equality macro with A equinumerous with B, the exact conclusion proved by the constructed bijection from A to B and required by the later squeeze application
-- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
-- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
-- Review question: Does the Pashto correction for OLINF-002 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition
 
 ## DEC-OLPL-001
@@ -2424,6 +2442,51 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLMOD-031 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete Lindstrom chapter and frozen source bytes
+
+## DEC-OLCMP-001
+
+- Type: source-correction
+- Choice: characterizes primitive recursive functions as built from the basic functions by composition and primitive recursion
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+
+## DEC-OLCMP-002
+
+- Type: source-correction
+- Choice: states that the recursive step defines h(x+1) from h(x)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+
+## DEC-OLCMP-003
+
+- Type: source-correction
+- Choice: computes the n-place output h(x_0,...,x_{n-1}) after evaluating the k inner functions
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+
+## DEC-OLCMP-004
+
+- Type: source-correction
+- Choice: calls the just-defined n-place family Proj(n,i)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
+
+## DEC-OLCMP-005
+
+- Type: source-correction
+- Choice: defines each successor stage as containing the preceding stage together with every one-step composition or primitive-recursion result
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes
 
 ## DEC-REL-I
 

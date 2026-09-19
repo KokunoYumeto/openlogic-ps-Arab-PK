@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B044-LINDSTROM",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0203 through OLP-0207 form a complete manually translated and source-reviewed Lindstrom batch",
+  "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0208 through OLP-0215 form a complete manually translated and source-reviewed computability-foundations batch; OLINF-002 is retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -1002,7 +1002,7 @@
         "TERM-DIFFERENCE",
         "TERM-RANGE"
       ],
-      "scope": "Complete closure proof of Schroeder-Bernstein: generalized closure lemma, squeeze helper, piecewise bijection and injectivity/surjectivity proof, image notation, and final composition argument retained. OLINF-002 corrects the malformed nested cardinal-equality conclusion to the small/middle equinumerosity actually established and used by the proof."
+      "scope": "Complete closure proof of Schroeder-Bernstein: generalized closure lemma, squeeze helper, piecewise bijection and injectivity/surjectivity proof, image notation, and final composition argument retained. The helper conclusion retains the source's chained equinumerosities; OLINF-002 is retracted because the nested two-argument cardeq macros expand validly to A approximately B approximately C."
     },
     "OLP-0055": {
       "batch_id": "PS-B008-PROPOSITIONAL-SYNTAX",
@@ -4418,6 +4418,167 @@
         "TERM-FOL-SEMANTICS"
       ],
       "scope": "The theorem proof preserves bounded-rank equivalence, stage coding and the final partial-isomorphism contradiction. OLMOD-028 through OLMOD-031 supply finite representatives, normality, unambiguous coding symbols and the missing compactness theory."
+    },
+    "OLP-0208": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The part driver preserves both chapter imports and renders its editorial attribution, current exercise coverage and expansion note."
+    },
+    "OLP-0209": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The chapter driver preserves every recursive-functions import in frozen source order and renders the attribution and independent-use note."
+    },
+    "OLP-0210": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-COMPUTABLE-ARITHMETIC-MODELS",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-FUNCTION",
+        "TERM-RELATION"
+      ],
+      "scope": "The introduction preserves numerical computation, recursive definitions, characteristic functions, partial and general recursion, and comparison with other computation models. OLCMP-001 aligns the informal primitive-recursive characterization with the formal closure definition."
+    },
+    "OLP-0211": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P127-ALGEBRA-LAWS",
+        "AF-MOE-P35-POWER-EXPONENT"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-FUNCTION",
+        "TERM-COMPOSITION"
+      ],
+      "scope": "The section preserves the base/successor construction, powers of two, addition, multiplication, parameters and the general primitive-recursion schema. OLCMP-002 repairs the reversed prose direction of the recursive step."
+    },
+    "OLP-0212": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-COMPOSITION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The composition section preserves shared arity, argument reordering, identification, omission and nested composition. OLCMP-003 and OLCMP-004 correct the output input-list endpoint and projection-family index."
+    },
+    "OLP-0213": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P127-ALGEBRA-LAWS",
+        "AF-MOE-P35-POWER-EXPONENT"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-COMPOSITION",
+        "TERM-RECURSIVE",
+        "TERM-FUNCTION-ARGUMENT"
+      ],
+      "scope": "The formal inductive definition, basic functions, addition and multiplication examples, exercise and dummy-argument construction remain complete. OLCMP-005 makes the stage presentation cumulative."
+    },
+    "OLP-0214": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-PROJECTION-CHARACTERISTIC",
+        "TERM-COMPOSITION",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The notation section preserves symbols for basic functions and the Comp and Rec constructors, including the complete addition example and multiplication exercise."
+    },
+    "OLP-0215": {
+      "batch_id": "PS-B045-COMPUTABILITY-FOUNDATIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-COMPUTABLE-ARITHMETIC-MODELS",
+        "TERM-COMPOSITION",
+        "TERM-FUNCTION"
+      ],
+      "scope": "The computability argument preserves the successive evaluation trace and closure of computable functions under composition and primitive recursion."
     }
   },
   "semantic_review": [
@@ -4887,7 +5048,7 @@
       "unit_id": "OLP-0054",
       "passage": "closure squeeze helper",
       "reverse_paraphrase": "When A is included in B, B in C, and A is equinumerous with C, close C minus B under a bijection from C to A; use the bijection on the closure and identity elsewhere to biject C with B.",
-      "finding": "The piecewise function, mixed-case separation, two injectivity cases and range proof are retained. OLINF-002 replaces the malformed nested conclusion with A equinumerous with B, which the constructed composition explicitly proves."
+      "finding": "The piecewise function, mixed-case separation, two injectivity cases and range proof are retained. The helper's nested two-argument cardeq macros expand to the valid chained conclusion A approximately B approximately C; the former OLINF-002 source-error classification is retracted."
     },
     {
       "unit_id": "OLP-0054",
@@ -6550,6 +6711,54 @@
       "passage": "Lindstrom theorem proof",
       "reverse_paraphrase": "If no finite back-and-forth rank determines an abstract sentence, Compactness builds a nonstandard stage whose remaining ranks form a partial isomorphism, contradicting semantic disagreement under Lowenheim--Skolem.",
       "finding": "Finite equivalence-class representatives, the normality hypothesis and the infinite compactness theory close three formal gaps while preserving the intended proof."
+    },
+    {
+      "unit_id": "OLP-0208",
+      "passage": "computability part driver",
+      "reverse_paraphrase": "The part introduces recursive functions and computability theory from attributed notes and records the present exercise and expansion status.",
+      "finding": "Both active imports, the part identifier and the full editorial scope remain present."
+    },
+    {
+      "unit_id": "OLP-0209",
+      "passage": "recursive-functions chapter driver",
+      "reverse_paraphrase": "The chapter supplies the function-theoretic basis for later arithmetization of syntax and includes every section from primitive recursion through general recursion.",
+      "finding": "All eighteen imports, the chapter identifier, attribution and independent-use rationale are preserved."
+    },
+    {
+      "unit_id": "OLP-0210",
+      "passage": "models and kinds of computation",
+      "reverse_paraphrase": "Numerical functions motivate recursive definitions; characteristic functions absorb sets and relations into the function setting; unbounded search leads beyond primitive recursion.",
+      "finding": "The hierarchy of primitive, partial and general recursive functions and the comparison with other models remain explicit; the primitive-recursive parenthesis now matches the formal definition."
+    },
+    {
+      "unit_id": "OLP-0211",
+      "passage": "primitive-recursion schema",
+      "reverse_paraphrase": "A base equation fixes the zero case and a recursive equation computes the next value from the preceding value and parameters, yielding powers, addition and multiplication.",
+      "finding": "Every worked computation and the general f/g schema remain exact; the one reversed prose step is repaired."
+    },
+    {
+      "unit_id": "OLP-0212",
+      "passage": "composition and projections",
+      "reverse_paraphrase": "A k-place outer function receives values from k common n-place inner functions; projections allow arguments to be ignored, repeated or reordered.",
+      "finding": "Every example retains its arity and nesting; the two conflicting k/n occurrences are corrected."
+    },
+    {
+      "unit_id": "OLP-0213",
+      "passage": "inductive class of primitive recursive functions",
+      "reverse_paraphrase": "Zero, successor and projections start the class, which closes under composition and primitive recursion; staged construction and examples exhibit the least such class.",
+      "finding": "The formal definition, addition proof, multiplication problem and dummy-argument example remain complete; successor stages now retain earlier functions."
+    },
+    {
+      "unit_id": "OLP-0214",
+      "passage": "notations for primitive-recursive constructions",
+      "reverse_paraphrase": "Basic-function symbols and the Comp and Rec constructors encode a finite construction history for each primitive recursive function.",
+      "finding": "All constructor subscripts, assigned notations, the addition code and multiplication problem are preserved."
+    },
+    {
+      "unit_id": "OLP-0215",
+      "passage": "computability of primitive recursive functions",
+      "reverse_paraphrase": "Successive evaluation computes every primitive-recursion value when its component functions are computable, while composition also preserves computability.",
+      "finding": "The complete h(x,y) evaluation trace and closure conclusion remain exact."
     }
   ]
 }

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 207,
-    "structural_pass": 207,
+    "draft_units": 215,
+    "structural_pass": 215,
     "visually_accepted": 105,
     "published": 82
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B044-LINDSTROM",
+  "batch": "PS-B045-COMPUTABILITY-FOUNDATIONS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -1461,7 +1461,7 @@
       "unit_id": "OLP-0054",
       "path": "content/sets-functions-relations/infinite/card-sb.tex",
       "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
-      "translation_sha256": "de4c444f49aa8eb70839910b365d536a134f24fe921282e522156a757c8b3d92",
+      "translation_sha256": "29526fde3d82e84434209ba63bff1db5aa0c09bb782cf480b3658d27a1d7bfff",
       "source_blocks": 18,
       "target_blocks": 18,
       "checks": {
@@ -1478,19 +1478,8 @@
       },
       "residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [
-        "OLINF-002"
-      ],
-      "status": "structural-pass",
-      "math_diff": {
-        "source_only": [
-          "$\\cardeq{\\cardeq{A}{B}}{C}$"
-        ],
-        "target_only": [
-          "$\\cardeq{A}{B}$"
-        ],
-        "expected_by_source_correction": true
-      }
+      "source_correction_ids": [],
+      "status": "structural-pass"
     },
     {
       "unit_id": "OLP-0055",
@@ -6007,6 +5996,218 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0208",
+      "path": "content/computability/computability.tex",
+      "source_sha256": "06bd974e1fdd20c55d488082a40cd9d22f95868f3e1a748300cab90330546932",
+      "translation_sha256": "c615728325719ce06265477cd42d076961e7aea261a48acb2aa3e1e097fb6569",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0209",
+      "path": "content/computability/recursive-functions/recursive-functions.tex",
+      "source_sha256": "343dbc5ce104e887d62cce98c05eb92653e7f03392e289442c3cc7332307a206",
+      "translation_sha256": "b8096183567d0b8e29f891e4eed28c990da20a6e3570cd45de2d810a121ae9fb",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0210",
+      "path": "content/computability/recursive-functions/introduction.tex",
+      "source_sha256": "5c4a5e794bb772c06d8e3fe7463f696763ab8f2c9f5a377afe229d7e7b05ea83",
+      "translation_sha256": "1b8faeb54ad3fa72d1b677a0e565768af5022a7e89e53943f9c7f38a525444ac",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-001"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0211",
+      "path": "content/computability/recursive-functions/primitive-recursion.tex",
+      "source_sha256": "97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af",
+      "translation_sha256": "6c10512354a3f5604e71f265c9c9661e99e20209ab8088917cde23a82f94e5e4",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-002"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0212",
+      "path": "content/computability/recursive-functions/composition.tex",
+      "source_sha256": "a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a",
+      "translation_sha256": "cb3772044287aa0e77de0b51451f95a16ff76cb95950ac155efdc38166c9b731",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-003",
+        "OLCMP-004"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$h(x_0,\\dots,x_{k-1})=f(y_0,\\dots,y_{k-1})$",
+          "$\\Proj{k}{i}$"
+        ],
+        "target_only": [
+          "$h(x_0,\\dots,x_{n-1})=f(y_0,\\dots,y_{k-1})$",
+          "$\\Proj{n}{i}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0213",
+      "path": "content/computability/recursive-functions/pr-functions.tex",
+      "source_sha256": "893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1",
+      "translation_sha256": "b5060e465bd0f920a2541931c3beb2e3820f356e6534c54027627f95e848b94f",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-005"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0214",
+      "path": "content/computability/recursive-functions/notation-pr-functions.tex",
+      "source_sha256": "8e10b20204065445cbf26871cb999e37664b46af04a7bb7233f880c9404f4a5f",
+      "translation_sha256": "a044af0e7e6572861da2ea5009fe63ac5f598431dad8259881ad8e2086c6dadf",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0215",
+      "path": "content/computability/recursive-functions/pr-functions-computable.tex",
+      "source_sha256": "3e21459528e5bc5a33625412ccc06cef21f44bc6c1a32b3f05bbf7d320731b3a",
+      "translation_sha256": "9853f82bded615d3f626641b179e4187cad12afbb2d6b019a10e8ee13ad7f0b7",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -6476,7 +6677,7 @@
       "unit_id": "OLP-0054",
       "passage": "closure squeeze helper",
       "reverse_paraphrase": "When A is included in B, B in C, and A is equinumerous with C, close C minus B under a bijection from C to A; use the bijection on the closure and identity elsewhere to biject C with B.",
-      "finding": "The piecewise function, mixed-case separation, two injectivity cases and range proof are retained. OLINF-002 replaces the malformed nested conclusion with A equinumerous with B, which the constructed composition explicitly proves."
+      "finding": "The piecewise function, mixed-case separation, two injectivity cases and range proof are retained. The helper's nested two-argument cardeq macros expand to the valid chained conclusion A approximately B approximately C; the former OLINF-002 source-error classification is retracted."
     },
     {
       "unit_id": "OLP-0054",
@@ -8139,6 +8340,54 @@
       "passage": "Lindstrom theorem proof",
       "reverse_paraphrase": "If no finite back-and-forth rank determines an abstract sentence, Compactness builds a nonstandard stage whose remaining ranks form a partial isomorphism, contradicting semantic disagreement under Lowenheim--Skolem.",
       "finding": "Finite equivalence-class representatives, the normality hypothesis and the infinite compactness theory close three formal gaps while preserving the intended proof."
+    },
+    {
+      "unit_id": "OLP-0208",
+      "passage": "computability part driver",
+      "reverse_paraphrase": "The part introduces recursive functions and computability theory from attributed notes and records the present exercise and expansion status.",
+      "finding": "Both active imports, the part identifier and the full editorial scope remain present."
+    },
+    {
+      "unit_id": "OLP-0209",
+      "passage": "recursive-functions chapter driver",
+      "reverse_paraphrase": "The chapter supplies the function-theoretic basis for later arithmetization of syntax and includes every section from primitive recursion through general recursion.",
+      "finding": "All eighteen imports, the chapter identifier, attribution and independent-use rationale are preserved."
+    },
+    {
+      "unit_id": "OLP-0210",
+      "passage": "models and kinds of computation",
+      "reverse_paraphrase": "Numerical functions motivate recursive definitions; characteristic functions absorb sets and relations into the function setting; unbounded search leads beyond primitive recursion.",
+      "finding": "The hierarchy of primitive, partial and general recursive functions and the comparison with other models remain explicit; the primitive-recursive parenthesis now matches the formal definition."
+    },
+    {
+      "unit_id": "OLP-0211",
+      "passage": "primitive-recursion schema",
+      "reverse_paraphrase": "A base equation fixes the zero case and a recursive equation computes the next value from the preceding value and parameters, yielding powers, addition and multiplication.",
+      "finding": "Every worked computation and the general f/g schema remain exact; the one reversed prose step is repaired."
+    },
+    {
+      "unit_id": "OLP-0212",
+      "passage": "composition and projections",
+      "reverse_paraphrase": "A k-place outer function receives values from k common n-place inner functions; projections allow arguments to be ignored, repeated or reordered.",
+      "finding": "Every example retains its arity and nesting; the two conflicting k/n occurrences are corrected."
+    },
+    {
+      "unit_id": "OLP-0213",
+      "passage": "inductive class of primitive recursive functions",
+      "reverse_paraphrase": "Zero, successor and projections start the class, which closes under composition and primitive recursion; staged construction and examples exhibit the least such class.",
+      "finding": "The formal definition, addition proof, multiplication problem and dummy-argument example remain complete; successor stages now retain earlier functions."
+    },
+    {
+      "unit_id": "OLP-0214",
+      "passage": "notations for primitive-recursive constructions",
+      "reverse_paraphrase": "Basic-function symbols and the Comp and Rec constructors encode a finite construction history for each primitive recursive function.",
+      "finding": "All constructor subscripts, assigned notations, the addition code and multiplication problem are preserved."
+    },
+    {
+      "unit_id": "OLP-0215",
+      "passage": "computability of primitive recursive functions",
+      "reverse_paraphrase": "Successive evaluation computes every primitive-recursion value when its component functions are computable, while composition also preserves computability.",
+      "finding": "The complete h(x,y) evaluation trace and closure conclusion remain exact."
     }
   ],
   "builds": [

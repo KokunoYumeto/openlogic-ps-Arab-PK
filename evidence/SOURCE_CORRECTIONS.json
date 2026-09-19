@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0207; Lindstrom is structurally drafted and source-reviewed; v0.5.1 public artifacts remain frozen",
-  "adopted_utc": "2026-09-19T19:16:51.925364+00:00",
+  "status": "adopted through OLP-0215; computability foundations are structurally drafted and source-reviewed; OLINF-002 is retracted; v0.5.1 public artifacts remain frozen",
+  "adopted_utc": "2026-09-19T20:09:40.350550+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -470,31 +470,6 @@
       "translation_change": "preserves the displayed closure definition but records that the phrase “any function” and the range-union example require an endofunction on an ambient domain containing every considered set",
       "counterexample": "For a function with domain {0} and value f(0)=1, the set ran(f) union {0} contains 1 although f(1) is undefined, so it is not f-closed under the displayed unrestricted wording.",
       "formula_policy": "Every frozen formula is preserved; the missing typing hypothesis is disclosed in prose."
-    },
-    {
-      "stable_audit": "PS-OWNER-SEMANTIC-20260904-INFINITE",
-      "decision_timing": "contemporaneous owner semantic review of the complete infinite-set chapter against function typing, the stated closure properties, and the proof that applies the helper proposition",
-      "id": "OLINF-002",
-      "unit_id": "OLP-0054",
-      "classification": "malformed_nested_cardinality_conclusion_from_owner_semantic_review",
-      "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
-      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
-      "source_locator": "infinite/card-sb.tex:55-69",
-      "target_path": "ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex",
-      "target_line_1based": 52,
-      "target_sha256": "de4c444f49aa8eb70839910b365d536a134f24fe921282e522156a757c8b3d92",
-      "mode": "corrected-displayed-conclusion-plus-adjacent-note",
-      "translation_change": "replaces the nested cardinal-equality macro with A equinumerous with B, the exact conclusion proved by the constructed bijection from A to B and required by the later squeeze application",
-      "counterexample": "The source feeds a cardinal-equality proposition as the first set argument of another cardinal equality, which is not a well-typed set-size statement. The proof explicitly ends with a bijection A to B.",
-      "formula_policy": "Only the malformed conclusion formula is corrected; all hypotheses and proof formulas are unchanged.",
-      "qa_math_exception": {
-        "source_only": [
-          "$\\cardeq{\\cardeq{A}{B}}{C}$"
-        ],
-        "target_only": [
-          "$\\cardeq{A}{B}$"
-        ]
-      }
     },
     {
       "stable_audit": "PS-OWNER-SEMANTIC-20260904-PROPOSITIONAL-SYNTAX",
@@ -3592,6 +3567,107 @@
           "$k$"
         ]
       }
+    },
+    {
+      "id": "OLCMP-001",
+      "unit_id": "OLP-0210",
+      "classification": "primitive_recursive_characterization_omits_basic_functions_and_composition",
+      "source_path": "content/computability/recursive-functions/introduction.tex",
+      "source_sha256": "5c4a5e794bb772c06d8e3fe7463f696763ab8f2c9f5a377afe229d7e7b05ea83",
+      "source_locator": "content/computability/recursive-functions/introduction.tex:41-48",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/introduction.tex",
+      "target_line_1based": 50,
+      "target_sha256": "1b8faeb54ad3fa72d1b677a0e565768af5022a7e89e53943f9c7f38a525444ac",
+      "mode": "state-basic-functions-composition-and-primitive-recursion-plus-adjacent-note",
+      "translation_change": "characterizes primitive recursive functions as built from the basic functions by composition and primitive recursion",
+      "counterexample": "The later formal definition includes Zero, Successor and projections as initial functions and closes the class under both composition and primitive recursion. Primitive recursion alone does not state that inductive definition.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+      "formula_policy": "Only the informal parenthetical characterization is aligned with the chapter's formal definition; the comparison with partial and general recursive functions is unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-002",
+      "unit_id": "OLP-0211",
+      "classification": "recursive_step_direction_reversed",
+      "source_path": "content/computability/recursive-functions/primitive-recursion.tex",
+      "source_sha256": "97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af",
+      "source_locator": "content/computability/recursive-functions/primitive-recursion.tex:12-24",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex",
+      "target_line_1based": 25,
+      "target_sha256": "6c10512354a3f5604e71f265c9c9661e99e20209ab8088917cde23a82f94e5e4",
+      "mode": "define-next-value-from-current-value-plus-adjacent-note",
+      "translation_change": "states that the recursive step defines h(x+1) from h(x)",
+      "counterexample": "The paragraph's own clause (b), the computations of h(1), h(2), and every later defining equation all proceed from the current value to the next value. The source's closing sentence reverses that direction.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+      "formula_policy": "Only the direction of the prose claim is repaired; all existing h(x) and h(x+1) expressions and every defining equation are preserved.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-003",
+      "unit_id": "OLP-0212",
+      "classification": "composition_output_uses_number_of_inner_functions_as_input_endpoint",
+      "source_path": "content/computability/recursive-functions/composition.tex",
+      "source_sha256": "a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a",
+      "source_locator": "content/computability/recursive-functions/composition.tex:12-27",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/composition.tex",
+      "target_line_1based": 29,
+      "target_sha256": "cb3772044287aa0e77de0b51451f95a16ff76cb95950ac155efdc38166c9b731",
+      "mode": "end-h-input-list-at-n-minus-one-plus-adjacent-note",
+      "translation_change": "computes the n-place output h(x_0,...,x_{n-1}) after evaluating the k inner functions",
+      "counterexample": "The definition declares h to be n-place and each g_i consumes x_0 through x_{n-1}. Ending h's input list at x_{k-1} confuses the number of inner functions with their common arity.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+      "formula_policy": "Only the endpoint of h's displayed input list changes from k-1 to n-1; the values y_0 through y_{k-1} supplied to f are unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$h(x_0,\\dots,x_{k-1})=f(y_0,\\dots,y_{k-1})$"
+        ],
+        "target_only": [
+          "$h(x_0,\\dots,x_{n-1})=f(y_0,\\dots,y_{k-1})$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-004",
+      "unit_id": "OLP-0212",
+      "classification": "projection_family_index_uses_outer_function_count_instead_of_arity",
+      "source_path": "content/computability/recursive-functions/composition.tex",
+      "source_sha256": "a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a",
+      "source_locator": "content/computability/recursive-functions/composition.tex:29-42",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/composition.tex",
+      "target_line_1based": 50,
+      "target_sha256": "cb3772044287aa0e77de0b51451f95a16ff76cb95950ac155efdc38166c9b731",
+      "mode": "name-projections-Proj-n-i-plus-adjacent-note",
+      "translation_change": "calls the just-defined n-place family Proj(n,i)",
+      "counterexample": "The displayed definition has n inputs and returns x_i, and the next sentence explicitly says each member is n-place. Calling the same family Proj(k,i) imports an unrelated count from the preceding composition schema.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+      "formula_policy": "Only the family name immediately following its definition changes from k to n; the definition and all examples remain unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Proj{k}{i}$"
+        ],
+        "target_only": [
+          "$\\Proj{n}{i}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-005",
+      "unit_id": "OLP-0213",
+      "classification": "stage_construction_not_cumulative",
+      "source_path": "content/computability/recursive-functions/pr-functions.tex",
+      "source_sha256": "893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1",
+      "source_locator": "content/computability/recursive-functions/pr-functions.tex:67-81",
+      "target_path": "ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex",
+      "target_line_1based": 75,
+      "target_sha256": "b5060e465bd0f920a2541931c3beb2e3820f356e6534c54027627f95e848b94f",
+      "mode": "carry-each-stage-into-its-successor-plus-adjacent-note",
+      "translation_change": "defines each successor stage as containing the preceding stage together with every one-step composition or primitive-recursion result",
+      "counterexample": "If S_(i+1) contains only results of applying one operation to members of S_i, basic functions and earlier results need not remain in later stages, so the union is not transparently the least set closed under the two operations.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS",
+      "formula_policy": "The same initial functions, one-step operations and final union are retained; successor stages are made explicitly cumulative.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete computability-foundations batch and frozen source bytes"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -3599,7 +3675,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0207, then continue with OLP-0208 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0215, then continue with OLP-0216 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -3638,7 +3714,8 @@
     "PS-OWNER-SEMANTIC-20260909-MODELS-OF-ARITHMETIC",
     "PS-OWNER-SEMANTIC-20260919-INTERPOLATION",
     "PS-MANAGER-SEMANTIC-20260919-ARITHMETIC-ENUMERABILITY",
-    "PS-OWNER-SEMANTIC-20260919-LINDSTROM"
+    "PS-OWNER-SEMANTIC-20260919-LINDSTROM",
+    "PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS"
   ],
   "source_authorities": [
     {

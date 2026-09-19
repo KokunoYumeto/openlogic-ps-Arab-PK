@@ -218,15 +218,6 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: preserves the displayed closure definition but records that the phrase “any function” and the range-union example require an endofunction on an ambient domain containing every considered set.
 - Disclosure: `preserved-definition-plus-adjacent-typing-note`.
 
-## OLINF-002
-
-- Unit: `OLP-0054`
-- Frozen source: `content/sets-functions-relations/infinite/card-sb.tex` (88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9) at `infinite/card-sb.tex:55-69`
-- Pashto target: `ps-Arab-PK/content/sets-functions-relations/infinite/card-sb.tex:52`
-- Audit: `PS-OWNER-SEMANTIC-20260904-INFINITE`
-- Treatment: replaces the nested cardinal-equality macro with A equinumerous with B, the exact conclusion proved by the constructed bijection from A to B and required by the later squeeze application.
-- Disclosure: `corrected-displayed-conclusion-plus-adjacent-note`.
-
 ## OLPL-001
 
 - Unit: `OLP-0058`
@@ -1342,4 +1333,49 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260919-LINDSTROM`
 - Treatment: adds named standard successor stages and a constant above each of them, proves finite satisfiability in K, and obtains a genuinely nonstandard stage in K-star.
 - Disclosure: `apply-compactness-to-theory-with-upper-constant-and-standard-successor-names-plus-adjacent-note`.
+
+## OLCMP-001
+
+- Unit: `OLP-0210`
+- Frozen source: `content/computability/recursive-functions/introduction.tex` (5c4a5e794bb772c06d8e3fe7463f696763ab8f2c9f5a377afe229d7e7b05ea83) at `content/computability/recursive-functions/introduction.tex:41-48`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/introduction.tex:50`
+- Audit: `PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS`
+- Treatment: characterizes primitive recursive functions as built from the basic functions by composition and primitive recursion.
+- Disclosure: `state-basic-functions-composition-and-primitive-recursion-plus-adjacent-note`.
+
+## OLCMP-002
+
+- Unit: `OLP-0211`
+- Frozen source: `content/computability/recursive-functions/primitive-recursion.tex` (97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af) at `content/computability/recursive-functions/primitive-recursion.tex:12-24`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex:25`
+- Audit: `PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS`
+- Treatment: states that the recursive step defines h(x+1) from h(x).
+- Disclosure: `define-next-value-from-current-value-plus-adjacent-note`.
+
+## OLCMP-003
+
+- Unit: `OLP-0212`
+- Frozen source: `content/computability/recursive-functions/composition.tex` (a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a) at `content/computability/recursive-functions/composition.tex:12-27`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/composition.tex:29`
+- Audit: `PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS`
+- Treatment: computes the n-place output h(x_0,...,x_{n-1}) after evaluating the k inner functions.
+- Disclosure: `end-h-input-list-at-n-minus-one-plus-adjacent-note`.
+
+## OLCMP-004
+
+- Unit: `OLP-0212`
+- Frozen source: `content/computability/recursive-functions/composition.tex` (a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a) at `content/computability/recursive-functions/composition.tex:29-42`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/composition.tex:50`
+- Audit: `PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS`
+- Treatment: calls the just-defined n-place family Proj(n,i).
+- Disclosure: `name-projections-Proj-n-i-plus-adjacent-note`.
+
+## OLCMP-005
+
+- Unit: `OLP-0213`
+- Frozen source: `content/computability/recursive-functions/pr-functions.tex` (893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1) at `content/computability/recursive-functions/pr-functions.tex:67-81`
+- Pashto target: `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex:75`
+- Audit: `PS-OWNER-SEMANTIC-20260919-COMPUTABILITY-FOUNDATIONS`
+- Treatment: defines each successor stage as containing the preceding stage together with every one-step composition or primitive-recursion result.
+- Disclosure: `carry-each-stage-into-its-successor-plus-adjacent-note`.
 

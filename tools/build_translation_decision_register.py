@@ -59,6 +59,8 @@ PART_AND_CHAPTER = {
     "models-of-arithmetic": ("مدل تيوري", "د حساب مدلونه"),
     "interpolation": ("مدل تيوري", "د منځګړيتوب قضيه"),
     "lindstrom": ("مدل تيوري", "د ليندستروم قضيه"),
+    "computability": ("محاسبه کېدنه", "محاسبه کېدنه"),
+    "recursive-functions": ("محاسبه کېدنه", "بازګشتي تابعې"),
 }
 
 OUTPUT_NAMES = [
@@ -136,6 +138,12 @@ def titles_for_path(source_path: str, target_file: Path) -> tuple[str | None, st
         index = parts.index("model-theory")
         if len(parts) > index + 1:
             key = parts[index + 1]
+    elif "computability" in parts:
+        index = parts.index("computability")
+        if len(parts) > index + 1 and not parts[index + 1].endswith(".tex"):
+            key = parts[index + 1]
+        else:
+            key = "computability"
     part_title, chapter_title = PART_AND_CHAPTER.get(key, (None, None))
     text = target_file.read_text(encoding="utf-8")
     section_title = balanced_macro_arg(text, ("olsection", "olchapter", "chapter")) or Path(source_path).stem

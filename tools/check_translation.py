@@ -28,7 +28,7 @@ def localize_text(s):
   out+=s[pos:m.start()]+m.group(0)+'LOCALIZED'+embedded+'}';pos=i
  return out+s[pos:]
 def math(s):
- spans=re.findall(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}',s)
+ spans=re.findall(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}',s)
  return Counter(re.sub(r'\s+','',localize_text(x)) for x in spans)
 def ids(s):
  return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|Olref|olimport|olasset|cite\w*|label|cref|ref|url|oliflabeldef|printtoken|Cref)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s)+re.findall(r'\\tagrefs\{(?:[^{}]|\{[^{}]*\})*\}',s))
@@ -94,8 +94,8 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\\(?:article|Article)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\(?:texttt|textsc|textsf|textrm)\{[^{}]*\}','',residual)
  residual=re.sub(r'https?://[^}\s]+|openlogicproject\.org','',residual)
- residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL|OLMOD)-\d+','',residual)
- residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?)\}','',residual)
+ residual=re.sub(r'(?:OLFUN|OLSIZ|PSSIZ|OLARI|OLINF|OLPL|OLPF|OLSQ|OLND|OLTAB|OLAX|OLCOM|OLFOL|OLMOD|OLCMP)-\d+','',residual)
+ residual=re.sub(r'(?s)\$.*?\$|\\\[.*?\\\]|\\begin\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}.*?\\end\{(?:align\*?|multline\*?|equation\*?|eqnarray\*?)\}','',residual)
  residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|Olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
  residual=re.sub(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\begin\{(?:tagblock|tagenumerate)\}\{[^{}]*\}','',residual)
