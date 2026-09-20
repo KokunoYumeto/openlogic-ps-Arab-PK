@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/incompleteness-introduction-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T21:27:06.204785+00:00",
+  "batch_id": "PS-B054-INCOMPLETENESS-INTRODUCTION",
+  "status": "PASS",
+  "counts": {
+    "decisions": 385,
+    "occurrences": 17046,
+    "terminology_decisions": 158,
+    "source_correction_decisions": 222,
+    "priority_decisions": 151,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 2236
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "534c0b55273f67791ded0a9c9f9fb1dfb3907d658e81d763606a85188e486712",
+    "ALIGNMENT.jsonl": "38d090ec3de3cf7b915bba00dad0fc2dd447c9b5c74b9f22059f633058dc2b03",
+    "SEGMENT_CANON_USE.jsonl": "cd1e42edcf7056492bd1f316c89fe870c6be2b71551b77d137cc4cabd71a5585",
+    "SOURCE_CORRECTIONS.json": "242dea43359c02feb582f749bdf75eaf88fc3b64682e2218a1dea73e95a1cb57",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "13180f94707abd4c7e648743ff62668db6bbd62864cfbab8d5aa2bf85b9de600",
+    "QA.json": "323d755d2e096b20b9c5ac8e175149271334d40ab1a47ce824a40f9eb1efb409"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "be95f0575fe003b42b4e8234fdbd84e37ecaf6830fe8c48e1c1f5f2be61f1634",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "6853d9392285d3af2817f075fc2cc1d0ca78b3cfd7bd21d6333e42c20191894b",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "bdfd75fff9289e555a1971061d789c799260babaac192c02a78ede4299bf2165",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "1761dc8bdf45bbd2b58bfd7f90816ee5c1025796f838b7ca351652da5d176d7a",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "0e2fc7e62fc135b5928a68941cf0eaea63cd86fd5addbcd99172f638446041e0",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "600360b9cece2d42f641f0011436c58bf7d8071acedc006ce6dd77fd0fef1819",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-20T21:11:57.579733+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION",
+  "scope": "OLP-0274 through OLP-0279 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-070",
+      "unit_id": "OLP-0278",
+      "classification": "closing_parenthesis_inside_math_span",
+      "source_path": "content/incompleteness/introduction/overview.tex",
+      "source_sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+      "source_locator": "content/incompleteness/introduction/overview.tex:39-42",
+      "target_path": "ps-Arab-PK/content/incompleteness/introduction/overview.tex",
+      "target_line_1based": 41,
+      "target_sha256": "febe16057465347501f7770e78d8e84f470bbda91cc11183d22f92a4f32c99f3",
+      "mode": "move-closing-parenthesis-outside-math-plus-adjacent-note",
+      "translation_change": "closes the parenthetical phrase after the complete math atom Gamma rather than absorbing the punctuation into the atom",
+      "counterexample": "The source span is $\\Gamma)$, which puts the prose parenthesis before the math delimiter and leaves the parenthetical typography malformed; $\\Gamma$) preserves the theory symbol and closes the prose phrase.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION",
+      "formula_policy": "One inline math span changes exactly as registered; only the placement of prose punctuation changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma)$"
+        ],
+        "target_only": [
+          "$\\Gamma$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-071",
+      "unit_id": "OLP-0278",
+      "classification": "malformed_represents_token_suffix",
+      "source_path": "content/incompleteness/introduction/overview.tex",
+      "source_sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+      "source_locator": "content/incompleteness/introduction/overview.tex:67-79",
+      "target_path": "ps-Arab-PK/content/incompleteness/introduction/overview.tex",
+      "target_line_1based": 80,
+      "target_sha256": "febe16057465347501f7770e78d8e84f470bbda91cc11183d22f92a4f32c99f3",
+      "mode": "remove-redundant-English-inflection-suffix-plus-adjacent-note",
+      "translation_change": "uses the established represents terminology marker without an extra trailing s",
+      "counterexample": "The marked lexical item is already represents; appending another s produces a malformed representss token and has no grammatical or mathematical role.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION",
+      "formula_policy": "No formula changes; one exact terminology-token delta pair is registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [
+          "!!{represents}s"
+        ],
+        "target_only": [
+          "!!{represents}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-072",
+      "unit_id": "OLP-0279",
+      "classification": "diagonal_membership_test_drops_formula_subscript",
+      "source_path": "content/incompleteness/introduction/undecidability.tex",
+      "source_sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+      "source_locator": "content/incompleteness/introduction/undecidability.tex:35-41",
+      "target_path": "ps-Arab-PK/content/incompleteness/introduction/undecidability.tex",
+      "target_line_1based": 42,
+      "target_sha256": "d3f8f71bf0b1f4b19c8a25dc7a1ebbc1fc59e4165114f1f839378beb79debb78",
+      "mode": "restore-n-subscript-twice-plus-adjacent-note",
+      "translation_change": "tests the same indexed formula A_n used in the definition of the diagonal set in both construction steps",
+      "counterexample": "The set D is defined using A_n(n). Replacing this with unindexed A(n) does not identify any member of the enumerated family and therefore does not compute the defining predicate of D.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION",
+      "formula_policy": "Two inline formula spans change exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A(\\num{n})$",
+          "$\\lnot!A(\\num{n})\\in\\Gamma$"
+        ],
+        "target_only": [
+          "$!A_n(\\num{n})$",
+          "$\\lnot!A_n(\\num{n})\\in\\Gamma$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-073",
+      "unit_id": "OLP-0279",
+      "classification": "repeated_malformed_represents_token_suffix",
+      "source_path": "content/incompleteness/introduction/undecidability.tex",
+      "source_sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+      "source_locator": "content/incompleteness/introduction/undecidability.tex:43-124",
+      "target_path": "ps-Arab-PK/content/incompleteness/introduction/undecidability.tex",
+      "target_line_1based": 55,
+      "target_sha256": "d3f8f71bf0b1f4b19c8a25dc7a1ebbc1fc59e4165114f1f839378beb79debb78",
+      "mode": "remove-four-redundant-English-inflection-suffixes-plus-adjacent-note",
+      "translation_change": "uses the established represents terminology marker in four sentences without an extra trailing s",
+      "counterexample": "Each marked lexical item is already represents; the extra suffix produces representss and is neither a distinct term nor meaningful inflection.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION",
+      "formula_policy": "No formula changes; four exact terminology-token delta pairs are registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [
+          "!!{represents}s",
+          "!!{represents}s",
+          "!!{represents}s",
+          "!!{represents}s"
+        ],
+        "target_only": [
+          "!!{represents}",
+          "!!{represents}",
+          "!!{represents}",
+          "!!{represents}"
+        ]
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0274",
+    "OLP-0275",
+    "OLP-0276",
+    "OLP-0277"
+  ],
+  "bibliographic_residual_exceptions": {
+    "OLP-0276": [
+      "Uber",
+      "Was",
+      "Zahlbegriff",
+      "Zahlen",
+      "den",
+      "die",
+      "sind",
+      "sollen",
+      "und",
+      "was"
+    ],
+    "reason": "two original German work titles retained beside Pashto explanatory glosses"
+  },
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete incompleteness-introduction source review; four adopted corrections have adjacent Pashto disclosures, three exact formula-span delta pairs and five exact terminology-token delta pairs; every other formula and terminology marker is identical"
+}

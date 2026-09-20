@@ -1,0 +1,134 @@
+{
+  "schema": "ps-incompleteness-introduction-draft/1",
+  "utc": "2026-09-20T21:27:06.204785+00:00",
+  "status": "OLP-0274 through OLP-0279 manually translated, source-reviewed, and accepted by standalone, cumulative, repository and two independent canonical-replay QA passes",
+  "batch_id": "PS-B054-INCOMPLETENESS-INTRODUCTION",
+  "units": [
+    {
+      "unit_id": "OLP-0274",
+      "path": "content/incompleteness/incompleteness.tex",
+      "source_sha256": "7c29ba0de58292f390228ce158f0b6e902a128a3a1a12874b3009d3f3f0799fe",
+      "translation_sha256": "785e577d03d5fdf1e03c0406c4e7f45e2886e005077c16af090187b27170cf5f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0275",
+      "path": "content/incompleteness/introduction/introduction.tex",
+      "source_sha256": "9cb1ffee36aa180bc54dfc20c22d078b7dd0d0d1d148ca92671adaed5f78eace",
+      "translation_sha256": "57ffadc3fa531b41161b512170bfe2ac0a0395951606b28c1d0abb9a3e735df4",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0276",
+      "path": "content/incompleteness/introduction/historical-background.tex",
+      "source_sha256": "24c4a36e9f95064267c6bd001f81091cbc7f963c25e32a6d3c8630483b76d3e6",
+      "translation_sha256": "47ad1f5fe0021e4070e1ba461aa2df50af0f90e3a57501430ca5d2ec5832553e",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0277",
+      "path": "content/incompleteness/introduction/definitions.tex",
+      "source_sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71",
+      "translation_sha256": "65db1f3555b0eb7c6e0be111047b1f91de91977b8e218570a1f457fcac182b01",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0278",
+      "path": "content/incompleteness/introduction/overview.tex",
+      "source_sha256": "4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0",
+      "translation_sha256": "febe16057465347501f7770e78d8e84f470bbda91cc11183d22f92a4f32c99f3",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-070",
+        "OLCMP-071"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0279",
+      "path": "content/incompleteness/introduction/undecidability.tex",
+      "source_sha256": "ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4",
+      "translation_sha256": "d3f8f71bf0b1f4b19c8a25dc7a1ebbc1fc59e4165114f1f839378beb79debb78",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-072",
+        "OLCMP-073"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 273,
+    "current_reviewed_draft_units": 6,
+    "prospective_total_after_registration": 279,
+    "cumulative_draft_units": 279,
+    "remaining_units": 443,
+    "visually_accepted_units": 255,
+    "published_units": 255
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0274",
+      "OLP-0275",
+      "OLP-0276",
+      "OLP-0277"
+    ],
+    "documented_correction_units": [
+      "OLP-0278",
+      "OLP-0279"
+    ]
+  },
+  "bibliographic_residual_exceptions": {
+    "OLP-0276": [
+      "Uber",
+      "Was",
+      "Zahlbegriff",
+      "Zahlen",
+      "den",
+      "die",
+      "sind",
+      "sollen",
+      "und",
+      "was"
+    ],
+    "reason": "two original German work titles retained beside Pashto explanatory glosses"
+  },
+  "retractions": {
+    "OLINF-002": "prior false alert remains absent",
+    "OLSIZ-011": "prior false alert remains absent"
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INCOMPLETENESS_INTRODUCTION_SOURCE_CHECK.json",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_incompleteness_introduction_drafts.py",
+    "retraction_ledger_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SOURCE_AUDIT_RETRACTIONS.jsonl",
+    "retraction_ledger_sha256": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "source_check_sha256": "efef143659d81eee6e27ad781897f833ebde482f3687859d06f52bfaf87057a6",
+    "draft_checker_sha256": "9c74f7979070f52872580e01f867a3a88f23fa7c029941e2980abe696821e927",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INCOMPLETENESS_INTRODUCTION_DRAFT_CHECK.json",
+    "draft_check_sha256": "718efc860752869a08f98810b8b65e122c4874519aac1accabc351dd57f8693f",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INCOMPLETENESS_INTRODUCTION_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "ba98905dd4b7dae56ee26e791ac4630401cd4ef271846261eaf3a803356f3e12",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\INCOMPLETENESS_INTRODUCTION_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "65689fcdec51950ded82487592f57ce5347663b5fabb88b30843145eeecab4aa",
+    "translation_review_workflow_sha256": "7047a42521aeb884534a482a4cf0e97ff163805d5da939472176e60e8b9833ff",
+    "canonical_decisions_sha256": "0e2fc7e62fc135b5928a68941cf0eaea63cd86fd5addbcd99172f638446041e0",
+    "canonical_qa_sha256": "600360b9cece2d42f641f0011436c58bf7d8071acedc006ce6dd77fd0fef1819"
+  },
+  "registration_status": "complete; all seven canonical projection artifacts reproduce byte-for-byte; OLSIZ-011 and OLINF-002 retractions remain verified across active surfaces",
+  "next_action": "Commit and push B054, then translate and source-review OLP-0280 through OLP-0288 without altering the verified v0.6.0 release bytes."
+}

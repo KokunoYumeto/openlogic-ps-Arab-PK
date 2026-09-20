@@ -1954,3 +1954,39 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
 - Treatment: assumes the structure is a model of the modified representation !T-prime conjoined with !E.
 - Disclosure: `replace-T-with-T-prime-plus-adjacent-note`.
+
+## OLCMP-070
+
+- Unit: `OLP-0278`
+- Frozen source: `content/incompleteness/introduction/overview.tex` (4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0) at `content/incompleteness/introduction/overview.tex:39-42`
+- Pashto target: `ps-Arab-PK/content/incompleteness/introduction/overview.tex:41`
+- Audit: `PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION`
+- Treatment: closes the parenthetical phrase after the complete math atom Gamma rather than absorbing the punctuation into the atom.
+- Disclosure: `move-closing-parenthesis-outside-math-plus-adjacent-note`.
+
+## OLCMP-071
+
+- Unit: `OLP-0278`
+- Frozen source: `content/incompleteness/introduction/overview.tex` (4391b197866deaf9b67d1aa3ab870d0d11eb9d30e73475e56ee757a4c0fef0a0) at `content/incompleteness/introduction/overview.tex:67-79`
+- Pashto target: `ps-Arab-PK/content/incompleteness/introduction/overview.tex:80`
+- Audit: `PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION`
+- Treatment: uses the established represents terminology marker without an extra trailing s.
+- Disclosure: `remove-redundant-English-inflection-suffix-plus-adjacent-note`.
+
+## OLCMP-072
+
+- Unit: `OLP-0279`
+- Frozen source: `content/incompleteness/introduction/undecidability.tex` (ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4) at `content/incompleteness/introduction/undecidability.tex:35-41`
+- Pashto target: `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:42`
+- Audit: `PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION`
+- Treatment: tests the same indexed formula A_n used in the definition of the diagonal set in both construction steps.
+- Disclosure: `restore-n-subscript-twice-plus-adjacent-note`.
+
+## OLCMP-073
+
+- Unit: `OLP-0279`
+- Frozen source: `content/incompleteness/introduction/undecidability.tex` (ceeb4a161ad8064be0bd024febf2061d9fdfbf8b748293cb28c08c397cfa55f4) at `content/incompleteness/introduction/undecidability.tex:43-124`
+- Pashto target: `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:55`
+- Audit: `PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION`
+- Treatment: uses the established represents terminology marker in four sentences without an extra trailing s.
+- Disclosure: `remove-four-redundant-English-inflection-suffixes-plus-adjacent-note`.

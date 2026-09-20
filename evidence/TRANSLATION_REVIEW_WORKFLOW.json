@@ -1,7 +1,7 @@
 {
   "schema": "ps-translation-review-workflow/1",
-  "utc": "2026-09-20T15:39:09.961272+00:00",
-  "status": "implemented through OLP-0273; maintained during subsequent drafting",
+  "utc": "2026-09-20T21:26:34.800076+00:00",
+  "status": "implemented through OLP-0279; maintained during subsequent drafting",
   "coordination": {
     "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
     "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
@@ -36,35 +36,35 @@
     "human_review_gate": false
   },
   "coverage": {
-    "draft_units": 273,
+    "draft_units": 279,
     "total_units": 722,
-    "terminology_entries": 155,
-    "difficult_entries": 223,
-    "decision_entries": 378,
-    "priority_entries": 148,
-    "paired_occurrence_rows": 16431,
-    "legacy_side_rows": 13679
+    "terminology_entries": 158,
+    "difficult_entries": 227,
+    "decision_entries": 385,
+    "priority_entries": 151,
+    "paired_occurrence_rows": 17046,
+    "legacy_side_rows": 13991
   },
   "pagination": {
     "rule": "Never guess page numbers. Populate exact printed/PDF occurrence pages only from an accepted stable reader and verified line-to-page mapping.",
-    "current": "14810 of 16431 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.6.0-computability; the remaining 1621 occurrences explicitly say pending.",
+    "current": "14810 of 17046 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.6.0-computability; the remaining 2236 occurrences explicitly say pending.",
     "next": "After each later reader reaches stable verified pagination, derive pages from embedded semantic-segment labels and regenerate and validate every canonical projection before packaging the next release."
   },
   "release_disposition": "The canonical review surfaces were included in the verified v0.6.0-computability source snapshot. Occurrence pages still identify the stable v0.6.0-computability PDF reader; later drafting remains pending until a new stable reader exists, and frozen earlier assets remain unchanged.",
   "hashes": {
-    "EXPERT_REVIEW_LOG.jsonl": "c5991fdc85c9adae721994cc3d4d0ea403ed8182980308398ec30f40a0dba491",
-    "EXPERT_REVIEW_LOG_SUMMARY.json": "b303e2c42056156200cdb20a7eb99c2da3d196c3a17e60ee3a2ed02993f37198",
-    "TRANSLATION_DECISIONS.json": "d73e598b66b150f9bf1a22418de2b63c9c8fd4dddeab3dd3c2fd00218e41dbd8",
-    "TRANSLATION_DECISIONS.md": "ab6cbe7ac1423ac97b06ba29e9da7d1a7d73a54f4037f4759c0036d1d31551b8",
-    "TRANSLATION_DECISIONS_PRIORITY.md": "003744209541a8e15796c84f79c623eccf54df2ff7dd992b8b323e8e10fac425",
-    "TRANSLATION_DECISION_OCCURRENCES.csv": "2dc0be89f609bf66a236242bb39beef8dc410755229a78e4838f4a58c9bd0681",
-    "START_HERE.md": "5c897c5976c40a2d9683a74674f2233211eb509dd8e6a85b7227e2bf0d19dd66",
-    "TRANSLATION_DECISIONS_FULL.md": "f927e9eab7fce956957ce56769f133f532e1ef3364b4d381b4f2e49fa44c63aa",
-    "PRIORITY_REVIEW.md": "9db2d4e62d8301bea6cb3f591d4b2e33810a361e203dc6cb85cadb41425cb5df",
-    "DECISION_OCCURRENCES.csv": "5a9e1b5c488f15b0482840390d9613f5fd8a951f60d311d02ea8e64433f9a672",
-    "DECISIONS.json": "8d60c8853ad730f7e52814e70dedd7dd7054d88a43e2d8e83359065bcff961ee",
+    "EXPERT_REVIEW_LOG.jsonl": "534c0b55273f67791ded0a9c9f9fb1dfb3907d658e81d763606a85188e486712",
+    "EXPERT_REVIEW_LOG_SUMMARY.json": "ae3ddd9fb0cb8b9d2c221c7f2180db7956d7f999ee250e8c44de1d22c82c176b",
+    "TRANSLATION_DECISIONS.json": "179f74c901abe3f1516e372e776a734f35544ce6f530ba9ad4a455ff1333231a",
+    "TRANSLATION_DECISIONS.md": "957275020f7b6f1501a806de6f2a5e795a66fe1e129b538dfde4a50648e39a0a",
+    "TRANSLATION_DECISIONS_PRIORITY.md": "c2129e40f824d2fd7c8bf3e112a908fb923eb8dbf07695b51d8b09ad1e7d92d0",
+    "TRANSLATION_DECISION_OCCURRENCES.csv": "2718d5130ad225b335cb32389b2ac9f53961592f2a75e2bf67a60b97cabb12b7",
+    "START_HERE.md": "be95f0575fe003b42b4e8234fdbd84e37ecaf6830fe8c48e1c1f5f2be61f1634",
+    "TRANSLATION_DECISIONS_FULL.md": "6853d9392285d3af2817f075fc2cc1d0ca78b3cfd7bd21d6333e42c20191894b",
+    "PRIORITY_REVIEW.md": "bdfd75fff9289e555a1971061d789c799260babaac192c02a78ede4299bf2165",
+    "DECISION_OCCURRENCES.csv": "1761dc8bdf45bbd2b58bfd7f90816ee5c1025796f838b7ca351652da5d176d7a",
+    "DECISIONS.json": "0e2fc7e62fc135b5928a68941cf0eaea63cd86fd5addbcd99172f638446041e0",
     "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "TRANSLATION_DECISION_QA.json": "b14e1d38dad7a9fe0fa3f316c21251d1137d95b45b8c288338e29a05c450a53c"
+    "TRANSLATION_DECISION_QA.json": "600360b9cece2d42f641f0011436c58bf7d8071acedc006ce6dd77fd0fef1819"
   },
   "publication": {
     "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.6.0-computability",

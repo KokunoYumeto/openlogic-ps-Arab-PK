@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 378 terminology, source-correction and other judgment-dependent entries across 273 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 385 terminology, source-correction and other judgment-dependent entries across 279 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -1468,6 +1468,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0213; Primitive Recursion Functions; `content/computability/recursive-functions/pr-functions.tex` source line(s) 2,42,45,49,50,51,52,53,55,56,57,59,64,69,72,79,82,85,89,97,99,104,111,113,118,127,130,134,161; `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex` target line(s) 10,42,45,46,48,49,50,51,52,53,54,55,56,61,65,67,74,81,84,88,95,97,102,108,109,115,124,126,130,157; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 2; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 2,3,10,21,22,29,30,31,32,35,36,38; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 10,22,28,31,35,36; page: pending stable pagination in a reader containing this unit
+  - OLP-0274; incompleteness; `content/incompleteness/incompleteness.tex` source line(s) 12; `ps-Arab-PK/content/incompleteness/incompleteness.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 130,133,138,143,217,220,233; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 125,128,132,136,213,215,227,228; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DEDEKIND-INFINITE
 
@@ -1719,6 +1721,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 118; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
+  - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 124,129,130,177,186,189,192,196,204; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 48,109,110,115; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 214; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 210; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-FORMS
 
@@ -1868,6 +1872,12 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 22,30,79,99,113,239,242,267,278,292,320; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 19,22,30,211,261; page: pending stable pagination in a reader containing this unit
   - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 20,37,43,58,66,79,89; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,29,47,53,170,171,185,188,197,215,218,229,237,239,245,247,250; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,28,30,49,55,184,205,224,242,247; page: pending stable pagination in a reader containing this unit
+  - OLP-0274; incompleteness; `content/incompleteness/incompleteness.tex` source line(s) 11; `ps-Arab-PK/content/incompleteness/incompleteness.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0275; inc; `content/incompleteness/introduction/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 73,178,179,183,201,214,221; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 64,150,157,160,187,188,193; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 21,23,28,31,43,50,53,80,96; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 21,26,45,51,54,78,94; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,16,24,50,56,59,78,90,97,105,107,110,120,123; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,15,16,54,66,97,98,124,126; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1934,6 +1944,12 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 65,66,72,83,85; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 71,77,89; page: pending stable pagination in a reader containing this unit
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 18,22,138,241,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,267,282; page: pending stable pagination in a reader containing this unit
+  - OLP-0274; incompleteness; `content/incompleteness/incompleteness.tex` source line(s) 10; `ps-Arab-PK/content/incompleteness/incompleteness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0275; inc; `content/incompleteness/introduction/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 14,174,197,203,206,215; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 172,180; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 176,249,291,305,310; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 13,170; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 11,16,18,21,28,80,90,91,93,95; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 15,90; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -2253,6 +2269,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 67,85,86,87; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 12; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 90,185,188,192,195,199,203,208,238,251,266,293; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 84,232; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 15,35,63,69,97; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,21,25,26,28,35,39,41,43,60,61,64,69,70,75,79,102,106,108,109,115,119,125,128,133; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 119,136; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -2358,6 +2377,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 15,16,21,32,36,39,40,41,45,46,47,48,49,54,56,76,96,103,104,110,115,118,119,145,152,159,214,220,238,262,264,270,275,276,277,283,288,289,293,294; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 56,60; page: pending stable pagination in a reader containing this unit
   - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 17,30,31,40,44,50,51,55,56,57,62,71,72,75,84,85; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 42,46,52,57,58,77; page: pending stable pagination in a reader containing this unit
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 15,16,18,22,23,24,25,30,32,36,48,63,64,66,71,172,174,205,206,208,209,213,220,226,231,241,242,251,252,254,255,256; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,26,93,94,185,250,251,255,256,267,279,280,282,283; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 36,41,42,43,46,49,67,75,81,82,86,87,99,117,119,152,166,171,172,176,196,198,293; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 31,39,62,80,81,111; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2488,6 +2508,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0174; fol; `content/first-order-logic/beyond/beyond.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/beyond.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 74,97,98,114; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 11,13,14,65,71,78,79,83,98,108,113,118; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-MODAL-LOGIC
 
@@ -2585,6 +2606,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 10,22,23,36,41,44,45,74,80; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 10,75,80; page: pending stable pagination in a reader containing this unit
   - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) 101; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 13,14,15,19,211,242,246; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 13,15,195,226,255,259,262,274; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 46,75; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 42,61,68; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ARITHMETIC-THEORIES
 
@@ -2603,6 +2625,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0195; models-of-q; `content/model-theory/models-of-arithmetic/models-of-q.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0196; models-of-pa; `content/model-theory/models-of-arithmetic/models-of-pa.tex` source line(s) 243; `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex` target line(s) 258; page: pending stable pagination in a reader containing this unit
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 46,74,75,132; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 67,98,127; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NONSTANDARD-ARITHMETIC-BLOCKS
 
@@ -3027,6 +3052,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
   - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 72; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 253; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 281; page: pending stable pagination in a reader containing this unit
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 244,305; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 85; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -3278,6 +3306,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,36,37,98,99,119,123,129,133; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,37,68,73,76,82,84,85,88,95,96,108,117,118,123,129,130,132; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 14,16,26,31,33,36,47,52,54,58,80,282,302,308,327,338; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 17; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FIRST-ORDER-DECISION-PROBLEM
 
@@ -3336,6 +3365,51 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
 - Locations:
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 3,10,34,50,54,57,167,193,213,223,226,233,252,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,34,52,56,59,180,213,237,247,250,258,260,279,280,282,283; page: pending stable pagination in a reader containing this unit
+
+## TERM-INCOMPLETENESS-HILBERT-PROGRAM
+
+- Source term or sense: incompleteness theorem / Hilbert's program / formalization / finitary method / proof theory
+- Chosen rendering or treatment: د ناتکميلۍ قضيه / د هېلبرټ پروګرام / صوري کول / متناهي‌پاله لار / د ثبوتونو تيوري
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Hilbert's program separates formal axiomatization from a restricted finitary consistency proof. Use ناتکميلي for the failure of a theory to decide every sentence, and keep this distinct from first-order semantic completeness. Proof theory names the later study of formal systems and their consistency strength.
+- Alternatives: د نيمګړتيا قضيه د ناتکميلۍ پر ځاے; د هېلبرټ طرحه د پروګرام پر ځاے; متناهي طريقه د متناهي‌پالې لارې پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د ناتکميلۍ قضيه / د هېلبرټ پروګرام / صوري کول / متناهي‌پاله لار / د ثبوتونو تيوري» the clearest conventional rendering of “incompleteness theorem / Hilbert's program / formalization / finitary method / proof theory” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+- Locations:
+  - OLP-0274; incompleteness; `content/incompleteness/incompleteness.tex` source line(s) 10; `ps-Arab-PK/content/incompleteness/incompleteness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0275; inc; `content/incompleteness/introduction/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 14,113,142,153,157,161,169,180,184,197,198,203,204,209; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 134,161; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 13,16,18,21,28,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 16; page: pending stable pagination in a reader containing this unit
+
+## TERM-INCOMPLETENESS-REPRESENTABILITY
+
+- Source term or sense: represent a function or relation / arithmetization of syntax / Gödel coding / provability predicate / consistency statement
+- Chosen rendering or treatment: تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: A formula represents a numerical function or decidable relation when the theory proves the required numeral instances. Arithmetization maps syntactic objects and operations to numbers; the provability predicate then expresses derivability, while the consistency statement says that no coded derivation proves a contradiction.
+- Alternatives: ښودنه د تمثيل پر ځاے; د نحو حسابي‌سازي; د ثبوت‌پذيرۍ محمول; د سازګارۍ بيان
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله» the clearest conventional rendering of “represent a function or relation / arithmetization of syntax / Gödel coding / provability predicate / consistency statement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+- Locations:
+  - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 270,281,292,298,301; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 290,293; page: pending stable pagination in a reader containing this unit
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 35,58,65,69,74,78,84,85,91,95,97; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 59,63,65,85,87,89,91,93,97; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,20,26,28,43,44,46,47,53,60,61,70,101,108,114,118,124; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,27,56,119; page: pending stable pagination in a reader containing this unit
+
+## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
+
+- Source term or sense: independent sentence / Gödel sentence / first and second incompleteness theorems / Presburger arithmetic
+- Chosen rendering or treatment: خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: An independent sentence is neither provable nor refutable in the stated theory. A Gödel sentence is the constructed self-referential instance used for the first theorem; the second concerns the theory's own consistency statement. Presburger arithmetic is retained as the contrasting complete decidable theory without multiplication.
+- Alternatives: نافيصله جمله د خپلواکې جملې پر ځاے; ګوډلي جمله; د پرېسبورګر حسابي تيوري
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب» the clearest conventional rendering of “independent sentence / Gödel sentence / first and second incompleteness theorems / Presburger arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+- Locations:
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 18,21,28,41,42,44,46,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 11,17,20,28,40,48,93; page: pending stable pagination in a reader containing this unit
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68,121,134; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,73,137; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -6157,6 +6231,58 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
 - Locations:
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:197-214; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 222; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-070
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: closes the parenthetical phrase after the complete math atom Gamma rather than absorbing the punctuation into the atom
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline math span changes exactly as registered; only the placement of prose punctuation changes.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-070 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+- Locations:
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) content/incompleteness/introduction/overview.tex:39-42; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 41; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-071
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the established represents terminology marker without an extra trailing s
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; one exact terminology-token delta pair is registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-071 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+- Locations:
+  - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) content/incompleteness/introduction/overview.tex:67-79; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 80; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-072
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: tests the same indexed formula A_n used in the definition of the diagonal set in both construction steps
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Two inline formula spans change exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-072 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+- Locations:
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) content/incompleteness/introduction/undecidability.tex:35-41; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 42; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-073
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the established represents terminology marker in four sentences without an extra trailing s
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: No formula changes; four exact terminology-token delta pairs are registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-073 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+- Locations:
+  - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) content/incompleteness/introduction/undecidability.tex:43-124; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 55; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

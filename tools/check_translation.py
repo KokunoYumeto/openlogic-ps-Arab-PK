@@ -83,12 +83,15 @@ for uid,consult in plan['units'].items():
  expected_source=Counter();expected_target=Counter()
  expected_macro_source=Counter();expected_macro_target=Counter()
  expected_identifier_source=Counter();expected_identifier_target=Counter()
+ expected_token_source=Counter();expected_token_target=Counter()
  for c in corrections_by_unit.get(uid,[]):
   e=c.get('qa_math_exception',{});expected_source.update(e.get('source_only',[]));expected_target.update(e.get('target_only',[]))
   me=c.get('qa_macro_exception',{});expected_macro_source.update(me.get('source_only',[]));expected_macro_target.update(me.get('target_only',[]))
   ie=c.get('qa_identifier_exception',{});expected_identifier_source.update(ie.get('source_only',[]));expected_identifier_target.update(ie.get('target_only',[]))
+  te=c.get('qa_token_exception',{});expected_token_source.update(te.get('source_only',[]));expected_token_target.update(te.get('target_only',[]))
  macro_source_only=structural_macros(sa)-structural_macros(sb);macro_target_only=structural_macros(sb)-structural_macros(sa)
- checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=identifier_source_only==expected_identifier_source and identifier_target_only==expected_identifier_target,structural_macros=macro_source_only==expected_macro_source and macro_target_only==expected_macro_target,math=source_only==expected_source and target_only==expected_target,tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa))==Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb)),nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
+ source_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa));target_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb))
+ checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=identifier_source_only==expected_identifier_source and identifier_target_only==expected_identifier_target,structural_macros=macro_source_only==expected_macro_source and macro_target_only==expected_macro_target,math=source_only==expected_source and target_only==expected_target,tokens=source_tokens-target_tokens==expected_token_source and target_tokens-source_tokens==expected_token_target,nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
  checks['named_token_macros']=Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sa))==Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sb))
  residual=re.sub(r'(?m)^%.*$','',sb)
  residual=re.sub(r'(?s)\\begin\{verbatim\}.*?\\end\{verbatim\}','',residual)
@@ -136,8 +139,10 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\[[+-]?[0-9.]+(?:em|ex|pt|cm|mm|in)\]','',residual)
  residual=re.sub(r'(?<![A-Za-z])[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:em|ex|pt|cm|mm|in)\b','',residual)
  english=sorted(set(re.findall(r'[A-Za-z]{2,}',residual)))
- checks['no_ordinary_english']=not english
- result=dict(unit_id=uid,path=p,source_sha256=H(a),translation_sha256=H(b),source_blocks=len(aa),target_blocks=len(bb),checks=checks,residual_english=english,extra_locale_macros=Counter(re.findall(r'\\ps\w+',sb)),source_correction_ids=[c['id'] for c in corrections_by_unit.get(uid,[])],status='structural-pass' if all(checks.values()) else 'deterministic-defects')
+ allowed_english=sorted(set(consult.get('allowed_residual_english',[])))
+ unexpected_english=sorted(set(english)-set(allowed_english))
+ checks['no_ordinary_english']=not unexpected_english
+ result=dict(unit_id=uid,path=p,source_sha256=H(a),translation_sha256=H(b),source_blocks=len(aa),target_blocks=len(bb),checks=checks,residual_english=english,allowed_residual_english=allowed_english,unexpected_residual_english=unexpected_english,extra_locale_macros=Counter(re.findall(r'\\ps\w+',sb)),source_correction_ids=[c['id'] for c in corrections_by_unit.get(uid,[])],status='structural-pass' if all(checks.values()) else 'deterministic-defects')
  if source_only or target_only: result['math_diff']={'source_only':list(source_only.elements()),'target_only':list(target_only.elements()),'expected_by_source_correction':checks['math']}
  if identifier_source_only or identifier_target_only: result['identifier_diff']={'source_only':list(identifier_source_only.elements()),'target_only':list(identifier_target_only.elements()),'expected_by_source_correction':checks['identifiers']}
  if macro_source_only or macro_target_only: result['structural_macro_diff']={'source_only':list(macro_source_only.elements()),'target_only':list(macro_target_only.elements()),'expected_by_source_correction':checks['structural_macros']}

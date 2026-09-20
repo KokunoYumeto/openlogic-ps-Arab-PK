@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 273 of 722 source units are translated drafts. This log contains 155 terminology entries and 223 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 279 of 722 source units are translated drafts. This log contains 158 terminology entries and 227 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1398,6 +1398,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: محدود مدل د متناهي مدل پر ځاے; محدود صدق‌وړتيا; د تراختنبروت قضيه بې له نيم‌فاصلې
 - Review question: In Pakistani Pashto mathematical prose, is «متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه» the clearest conventional rendering of “finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
+
+## TERM-INCOMPLETENESS-HILBERT-PROGRAM
+
+- Type: terminology
+- Choice: د ناتکميلۍ قضيه / د هېلبرټ پروګرام / صوري کول / متناهي‌پاله لار / د ثبوتونو تيوري
+- Uncertainty: proof, consistency and induction concepts are regionally supported and Pakistani prose controls register; the exact historical and metamathematical compounds remain provisional
+- Alternatives: د نيمګړتيا قضيه د ناتکميلۍ پر ځاے; د هېلبرټ طرحه د پروګرام پر ځاے; متناهي طريقه د متناهي‌پالې لارې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د ناتکميلۍ قضيه / د هېلبرټ پروګرام / صوري کول / متناهي‌پاله لار / د ثبوتونو تيوري» the clearest conventional rendering of “incompleteness theorem / Hilbert's program / formalization / finitary method / proof theory” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+
+## TERM-INCOMPLETENESS-REPRESENTABILITY
+
+- Type: terminology
+- Choice: تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله
+- Uncertainty: function, relation, coding, proof, consistency and arithmetic roles are supported by regional sources; the exact metamathematical compounds remain provisional
+- Alternatives: ښودنه د تمثيل پر ځاے; د نحو حسابي‌سازي; د ثبوت‌پذيرۍ محمول; د سازګارۍ بيان
+- Review question: In Pakistani Pashto mathematical prose, is «تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله» the clearest conventional rendering of “represent a function or relation / arithmetization of syntax / Gödel coding / provability predicate / consistency statement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+
+## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
+
+- Type: terminology
+- Choice: خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب
+- Uncertainty: sentence, theorem, consistency, arithmetic and diagonal reasoning have regional support; the exact incompleteness labels and eponym spellings remain provisional
+- Alternatives: نافيصله جمله د خپلواکې جملې پر ځاے; ګوډلي جمله; د پرېسبورګر حسابي تيوري
+- Review question: In Pakistani Pashto mathematical prose, is «خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب» the clearest conventional rendering of “independent sentence / Gödel sentence / first and second incompleteness theorems / Presburger arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
 
 ## DEC-OLFUN-001
 
@@ -3351,6 +3378,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-069 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-070
+
+- Type: source-correction
+- Choice: closes the parenthetical phrase after the complete math atom Gamma rather than absorbing the punctuation into the atom
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-070 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+
+## DEC-OLCMP-071
+
+- Type: source-correction
+- Choice: uses the established represents terminology marker without an extra trailing s
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-071 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+
+## DEC-OLCMP-072
+
+- Type: source-correction
+- Choice: tests the same indexed formula A_n used in the definition of the diagonal set in both construction steps
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-072 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+
+## DEC-OLCMP-073
+
+- Type: source-correction
+- Choice: uses the established represents terminology marker in four sentences without an extra trailing s
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-073 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
 
 ## DEC-REL-I
 
