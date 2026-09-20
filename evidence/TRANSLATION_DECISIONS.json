@@ -1,6 +1,6 @@
 {
   "schema": "ps-translation-decision-review/1",
-  "generated_utc": "2026-09-20T03:44:43.691166+00:00",
+  "generated_utc": "2026-09-20T04:08:07.496276+00:00",
   "edition": "OpenLogic Pashto — Pakistan",
   "locale": "ps-Arab-PK",
   "script": "Arab",
@@ -13,8 +13,8 @@
     "draft_units": 271,
     "published_reader_units": 255,
     "published_source_snapshot_units": 255,
-    "decision_entries": 365,
-    "occurrence_rows": 13392
+    "decision_entries": 368,
+    "occurrence_rows": 13418
   },
   "pagination_policy": "Exact printed and PDF pages are populated only from a stable accepted reader and a verified occurrence-level line-to-page map. Draft-only entries remain explicitly pending; v0.3 unit ranges are navigation aids, not guessed occurrence pages.",
   "entries": [
@@ -10775,7 +10775,10 @@
             201,
             231,
             233,
-            235
+            235,
+            236,
+            239,
+            240
           ],
           "location_scope": "unit assigned this decision in the actual consultation plan; literal hits are exact but may omit inflected or generated token forms",
           "source_section_title": "Unary Representation of Numbers",
@@ -48783,7 +48786,9 @@
             42,
             43,
             44,
-            98
+            58,
+            59,
+            113
           ],
           "location_scope": "unit assigned this decision in the actual consultation plan; literal hits are exact but may omit inflected or generated token forms",
           "source_section_title": "Configurations and Computations",
@@ -49650,11 +49655,17 @@
             40,
             47,
             48,
-            58,
-            63,
-            83,
-            84,
-            87
+            52,
+            57,
+            59,
+            60,
+            68,
+            73,
+            93,
+            94,
+            97,
+            105,
+            115
           ],
           "location_scope": "unit assigned this decision in the actual consultation plan; literal hits are exact but may omit inflected or generated token forms",
           "source_section_title": "Configurations and Computations",
@@ -49695,7 +49706,9 @@
             74,
             191,
             233,
-            235
+            235,
+            236,
+            239
           ],
           "location_scope": "unit assigned this decision in the actual consultation plan; literal hits are exact but may omit inflected or generated token forms",
           "source_section_title": "Unary Representation of Numbers",
@@ -49896,15 +49909,22 @@
             43,
             47,
             48,
-            55,
+            52,
             57,
             58,
-            83,
-            84,
-            87,
-            89,
-            90,
-            97
+            64,
+            67,
+            68,
+            93,
+            94,
+            97,
+            99,
+            100,
+            103,
+            106,
+            107,
+            112,
+            115
           ],
           "location_scope": "unit assigned this decision in the actual consultation plan; literal hits are exact but may omit inflected or generated token forms",
           "source_section_title": "Configurations and Computations",
@@ -61690,7 +61710,7 @@
           "source_path": "content/turing-machines/machines-computations/configuration.tex",
           "source_locator": "content/turing-machines/machines-computations/configuration.tex:56-61",
           "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
-          "target_line_1based": 57,
+          "target_line_1based": 66,
           "source_section_title": "Configurations and Computations",
           "target_section_title": "تشکيلونه او محاسبې",
           "exact_printed_page": null,
@@ -61700,11 +61720,11 @@
           "page_status": "pending stable pagination in a reader containing this unit"
         }
       ],
-      "chosen_treatment": "places the input immediately to the right of the left-end marker",
+      "chosen_treatment": "places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim",
       "actual_authorities_checked": [
         {
           "audit_id": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
-          "classification": "initial_configuration_gloss_places_input_left_of_the_left_end_marker",
+          "classification": "malformed_initial_configuration_gloss_omits_valid_directional_relation",
           "frozen_source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
           "review": "Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses."
         }
@@ -61725,7 +61745,7 @@
       "script": "Arab",
       "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
       "source_term_or_sense": "source-correction",
-      "chosen_rendering_or_treatment": "places the input immediately to the right of the left-end marker",
+      "chosen_rendering_or_treatment": "places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim",
       "review_priority": "medium",
       "confidence": "high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable",
       "provisional": false,
@@ -62380,6 +62400,156 @@
       "confidence": "high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable",
       "provisional": false,
       "please_double_check": "Please double-check: Does the Pashto correction for OLCMP-058 disclose the source issue clearly without obscuring the corrected mathematics?"
+    },
+    {
+      "entry_id": "DEC-OLCMP-059",
+      "entry_type": "source-correction",
+      "source_target_locations": [
+        {
+          "unit_id": "OLP-0257",
+          "source_path": "content/turing-machines/machines-computations/configuration.tex",
+          "source_locator": "content/turing-machines/machines-computations/configuration.tex:51-55",
+          "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
+          "target_line_1based": 56,
+          "source_section_title": "Configurations and Computations",
+          "target_section_title": "تشکيلونه او محاسبې",
+          "exact_printed_page": null,
+          "exact_pdf_page": null,
+          "reader_artifact": null,
+          "published_reader_page_navigation": null,
+          "page_status": "pending stable pagination in a reader containing this unit"
+        }
+      ],
+      "chosen_treatment": "retains the source tuple for nonempty input and includes the scanned blank square when the input is empty",
+      "actual_authorities_checked": [
+        {
+          "audit_id": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+          "classification": "empty_input_initial_configuration_violates_head_index_bound",
+          "frozen_source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+          "review": "Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses."
+        }
+      ],
+      "not_found_in_checked_sources": "Not a terminology search. The named audit/review, frozen manifest and exact source bytes govern this correction.",
+      "rationale": "The original nonempty-input display is retained; one displayed tuple is added for the empty-input case and registered exactly.",
+      "alternatives_for_expert_review": [
+        "literal translation plus an adjacent correction",
+        "corrected body with the public correction log"
+      ],
+      "uncertainty": "The recorded source analysis is stable; Pashto wording remains open to language review.",
+      "review_question": "Does the Pashto correction for OLCMP-059 disclose the source issue clearly without obscuring the corrected mathematics?",
+      "entry_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition",
+      "open_to_correction": true,
+      "human_review_gate": false,
+      "edition": "OpenLogic Pashto — Pakistan",
+      "locale": "ps-Arab-PK",
+      "script": "Arab",
+      "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+      "source_term_or_sense": "source-correction",
+      "chosen_rendering_or_treatment": "retains the source tuple for nonempty input and includes the scanned blank square when the input is empty",
+      "review_priority": "medium",
+      "confidence": "high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable",
+      "provisional": false,
+      "please_double_check": "Please double-check: Does the Pashto correction for OLCMP-059 disclose the source issue clearly without obscuring the corrected mathematics?"
+    },
+    {
+      "entry_id": "DEC-OLCMP-060",
+      "entry_type": "source-correction",
+      "source_target_locations": [
+        {
+          "unit_id": "OLP-0257",
+          "source_path": "content/turing-machines/machines-computations/configuration.tex",
+          "source_locator": "content/turing-machines/machines-computations/configuration.tex:84-101",
+          "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
+          "target_line_1based": 105,
+          "source_section_title": "Configurations and Computations",
+          "target_section_title": "تشکيلونه او محاسبې",
+          "exact_printed_page": null,
+          "exact_pdf_page": null,
+          "reader_artifact": null,
+          "published_reader_page_navigation": null,
+          "page_status": "pending stable pagination in a reader containing this unit"
+        }
+      ],
+      "chosen_treatment": "assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form",
+      "actual_authorities_checked": [
+        {
+          "audit_id": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+          "classification": "halting_output_definition_assumes_end_marker_form_despite_permitted_overwrite",
+          "frozen_source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+          "review": "Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses."
+        }
+      ],
+      "not_found_in_checked_sources": "Not a terminology search. The named audit/review, frozen manifest and exact source bytes govern this correction.",
+      "rationale": "Only the existence condition governing the already displayed formula changes; every source mathematical span is retained.",
+      "alternatives_for_expert_review": [
+        "literal translation plus an adjacent correction",
+        "corrected body with the public correction log"
+      ],
+      "uncertainty": "The recorded source analysis is stable; Pashto wording remains open to language review.",
+      "review_question": "Does the Pashto correction for OLCMP-060 disclose the source issue clearly without obscuring the corrected mathematics?",
+      "entry_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition",
+      "open_to_correction": true,
+      "human_review_gate": false,
+      "edition": "OpenLogic Pashto — Pakistan",
+      "locale": "ps-Arab-PK",
+      "script": "Arab",
+      "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+      "source_term_or_sense": "source-correction",
+      "chosen_rendering_or_treatment": "assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form",
+      "review_priority": "medium",
+      "confidence": "high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable",
+      "provisional": false,
+      "please_double_check": "Please double-check: Does the Pashto correction for OLCMP-060 disclose the source issue clearly without obscuring the corrected mathematics?"
+    },
+    {
+      "entry_id": "DEC-OLCMP-061",
+      "entry_type": "source-correction",
+      "source_target_locations": [
+        {
+          "unit_id": "OLP-0258",
+          "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+          "source_locator": "content/turing-machines/machines-computations/unary-numbers.tex:227-235",
+          "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex",
+          "target_line_1based": 238,
+          "source_section_title": "Unary Representation of Numbers",
+          "target_section_title": "د عددونو يوګونې څرګندونه",
+          "exact_printed_page": null,
+          "exact_pdf_page": null,
+          "reader_artifact": null,
+          "published_reader_page_navigation": null,
+          "page_status": "pending stable pagination in a reader containing this unit"
+        }
+      ],
+      "chosen_treatment": "allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output",
+      "actual_authorities_checked": [
+        {
+          "audit_id": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+          "classification": "partial_computation_undefined_case_omits_halting_run_without_assigned_output",
+          "frozen_source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+          "review": "Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses."
+        }
+      ],
+      "not_found_in_checked_sources": "Not a terminology search. The named audit/review, frozen manifest and exact source bytes govern this correction.",
+      "rationale": "Only localized condition prose changes; every mathematical span remains identical.",
+      "alternatives_for_expert_review": [
+        "literal translation plus an adjacent correction",
+        "corrected body with the public correction log"
+      ],
+      "uncertainty": "The recorded source analysis is stable; Pashto wording remains open to language review.",
+      "review_question": "Does the Pashto correction for OLCMP-061 disclose the source issue clearly without obscuring the corrected mathematics?",
+      "entry_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition",
+      "open_to_correction": true,
+      "human_review_gate": false,
+      "edition": "OpenLogic Pashto — Pakistan",
+      "locale": "ps-Arab-PK",
+      "script": "Arab",
+      "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+      "source_term_or_sense": "source-correction",
+      "chosen_rendering_or_treatment": "allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output",
+      "review_priority": "medium",
+      "confidence": "high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable",
+      "provisional": false,
+      "please_double_check": "Please double-check: Does the Pashto correction for OLCMP-061 disclose the source issue clearly without obscuring the corrected mathematics?"
     },
     {
       "entry_id": "DEC-REL-I",

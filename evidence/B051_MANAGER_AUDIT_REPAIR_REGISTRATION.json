@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-ps-Arab-PK/b051-manager-audit-repair-registration/v1",
+  "recorded_utc": "2026-09-20T04:05:52.923956+00:00",
+  "audit_id": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "manager_evidence": {
+    "FINDINGS.json": "7caa7a3052048ff69761c88d5aff85735d0896c383a98c2c9d18c3487b370f4a",
+    "REPORT.md": "aaa1fb39bd059002b3c25ff588f9b84368fc6fd28d1249084a6bc57fb71ffdfe"
+  },
+  "affected_units": [
+    "OLP-0257",
+    "OLP-0258"
+  ],
+  "corrected_existing_action": "OLCMP-045",
+  "adopted_actions": [
+    "OLCMP-059",
+    "OLCMP-060",
+    "OLCMP-061"
+  ],
+  "excluded_false_alerts": {
+    "BN-SRC-169": "TikZ loop above replaces the explicit target with the start node; the q0 edge already renders as a q0 loop.",
+    "BN-SRC-172": "The same TikZ loop-to-path semantics applies to all three questioned edges; no diagram repair is warranted."
+  },
+  "consultation_identity_repair": {
+    "units": [
+      "OLP-0004",
+      "OLP-0005",
+      "OLP-0006",
+      "OLP-0007",
+      "OLP-0008",
+      "OLP-0009",
+      "OLP-0010"
+    ],
+    "stable_batch_id": "PS-B001-SETS",
+    "expected_changed_rows": 86,
+    "current_revalidation_not_claimed_as_new_consultation": true
+  },
+  "target_hashes": {
+    "content/turing-machines/machines-computations/configuration.tex": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
+    "content/turing-machines/machines-computations/unary-numbers.tex": "05c3907fb99c8276032c4892c74a2a4ac7f8526e91b54aa87ab3a26796606b1f"
+  },
+  "active_correction_count": 209,
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete; bounded draft, cumulative, repository and two isolated canonical-replay checks pass",
+  "completed_utc": "2026-09-20T15:14:16.987365+00:00",
+  "final_evidence": {
+    "draft_check": "B051_MANAGER_AUDIT_REPAIR_DRAFT_CHECK.json",
+    "draft_check_sha256": "b2db7e9395be79a624b6a36cafb2d733f7b0946f3acc3c64a015f4942eb3e8dc",
+    "source_corrections_sha256": "2367829c475aac58d9e1eb35adfb7780fa13e04cf12f3558acec52ddf75bd4ad",
+    "source_findings_export_sha256": "bf8340a691011f7385c8b9a698f09494dd7617a54b2bde2e863cff387f603c14",
+    "qa_sha256": "3e47dff5cf829b2e3abfcc5911842e80efb898e994e590ee6576413d59fb42ef",
+    "canonical_qa_sha256": "2882f6d03ebbd278617339a643ff689476daa1f17f7fc72c46051403a4b6e2b0"
+  }
+}

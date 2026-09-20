@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 271 of 722 source units are translated drafts. This log contains 153 terminology entries and 212 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 271 of 722 source units are translated drafts. This log contains 153 terminology entries and 215 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -3112,7 +3112,7 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 ## DEC-OLCMP-045
 
 - Type: source-correction
-- Choice: places the input immediately to the right of the left-end marker
+- Choice: places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim
 - Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-045 disclose the source issue clearly without obscuring the corrected mathematics?
@@ -3234,6 +3234,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-058 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-059
+
+- Type: source-correction
+- Choice: retains the source tuple for nonempty input and includes the scanned blank square when the input is empty
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-059 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition
+
+## DEC-OLCMP-060
+
+- Type: source-correction
+- Choice: assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-060 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition
+
+## DEC-OLCMP-061
+
+- Type: source-correction
+- Choice: allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-061 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition
 
 ## DEC-REL-I
 

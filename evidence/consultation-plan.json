@@ -50,7 +50,8 @@
       "terms": [
         "TERM-SET"
       ],
-      "scope": "chapter title; imports retained, chapter closure incomplete"
+      "scope": "chapter title; imports retained, chapter closure incomplete",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0005": {
       "passages": [
@@ -67,7 +68,8 @@
         "TERM-EXTENSIONALITY",
         "TERM-IFF"
       ],
-      "scope": "definition/explanation/exercises and examples; extensionality label provisional; English proper name Ruth retained only inside source formula"
+      "scope": "definition/explanation/exercises and examples; extensionality label provisional; English proper name Ruth retained only inside source formula",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0006": {
       "passages": [
@@ -84,7 +86,8 @@
         "TERM-IFF",
         "TERM-ELEMENT"
       ],
-      "scope": "subset definition and mutual-inclusion witness; powerset label explicitly descriptive and provisional"
+      "scope": "subset definition and mutual-inclusion witness; powerset label explicitly descriptive and provisional",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0007": {
       "passages": [
@@ -100,7 +103,8 @@
         "TERM-CONTINUUM",
         "TERM-ELEMENT"
       ],
-      "scope": "native prose and set/member usage; number-domain/string/infinite terminology not falsely attested"
+      "scope": "native prose and set/member usage; number-domain/string/infinite terminology not falsely attested",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0008": {
       "passages": [
@@ -118,7 +122,8 @@
         "TERM-DISJOINT",
         "TERM-ELEMENT"
       ],
-      "scope": "native mathematical labels for three operations; arbitrary indexed families and formulas follow source only"
+      "scope": "native mathematical labels for three operations; arbitrary indexed families and formulas follow source only",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0009": {
       "passages": [
@@ -135,7 +140,8 @@
         "TERM-ELEMENT",
         "TERM-STRING"
       ],
-      "scope": "native prose and elementary set vocabulary; ordered-tuple/product/recursion labels provisional; no false native theorem attestation"
+      "scope": "native prose and elementary set vocabulary; ordered-tuple/product/recursion labels provisional; no false native theorem attestation",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0010": {
       "passages": [
@@ -151,7 +157,8 @@
         "TERM-AXIOM",
         "TERM-ELEMENT"
       ],
-      "scope": "native exposition and membership vocabulary; Russell argument follows original and its distinction between uniqueness and existence"
+      "scope": "native exposition and membership vocabulary; Russell argument follows original and its distinction between uniqueness and existence",
+      "batch_id": "PS-B001-SETS"
     },
     "OLP-0011": {
       "batch_id": "PS-B003-RELATIONS",
@@ -5474,7 +5481,7 @@
         "TERM-TURING-CONFIGURATION-COMPUTATION",
         "TERM-PARTIAL-TOTAL"
       ],
-      "scope": "Configuration triples, initial configurations, one-step yielding, runs, halting and blank-trimmed output remain complete. OLCMP-045 places the input on the side required by the displayed tuple."
+      "scope": "Configuration triples, nonempty and empty initial configurations, one-step yielding, runs, halting and conditional blank-trimmed output remain complete. OLCMP-045, OLCMP-059 and OLCMP-060 record the qualified gloss and the two manager-audited definition repairs."
     },
     "OLP-0258": {
       "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
@@ -5497,7 +5504,7 @@
         "TERM-PARTIAL-TOTAL",
         "TERM-FUNCTION-ARGUMENT"
       ],
-      "scope": "Unary coding, total and partial computation, the adder, both doubler repairs, mover and all construction problems remain complete. OLCMP-046 restores the mover exercise's intended original-doubler reference."
+      "scope": "Unary coding, total and partial computation, the adder, both doubler repairs, mover and all construction problems remain complete. OLCMP-046 restores the mover reference and OLCMP-061 keeps undefined partial computation coherent with conditional output."
     },
     "OLP-0259": {
       "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
@@ -8232,13 +8239,13 @@
       "unit_id": "OLP-0257",
       "passage": "configurations, runs and outputs",
       "reverse_paraphrase": "A configuration records a finite relevant tape prefix, head index and state. A run begins with the end marker followed by the input and proceeds by the transition function until an undefined instruction yields a trailing-blank-trimmed output.",
-      "finding": "Every clause of one-step yielding, extension of the visited tape, halting and output remains complete; the erroneous left/right gloss is disclosed and repaired."
+      "finding": "Every clause of one-step yielding, tape extension and halting remains complete. The malformed directional gloss is described exactly; empty input includes the scanned blank square; output is assigned only when its required marker form exists."
     },
     {
       "unit_id": "OLP-0258",
       "passage": "unary computation and machine constructions",
       "reverse_paraphrase": "Natural numbers are encoded by stroke counts. The chapter defines total and partial computation, constructs addition and two valid doubling strategies, and asks for subtraction, equality and minimum machines.",
-      "finding": "All diagrams, exercises and undefined-value behavior remain complete; the mover now references the compatible original doubler."
+      "finding": "All diagrams and exercises remain complete. The mover retains its compatible original-doubler reference, and undefined partial computation now includes a halt for which no valid output is assigned."
     },
     {
       "unit_id": "OLP-0259",

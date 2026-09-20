@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-ps-Arab-PK/b051-manager-audit-repair-repository-check/v1",
+  "recorded_utc": "2026-09-20T15:14:16.987365+00:00",
+  "status": "PASS",
+  "scope": [
+    "OLP-0257",
+    "OLP-0258"
+  ],
+  "coverage": {
+    "total": 722,
+    "draft_units": 271,
+    "structural_pass": 271,
+    "visually_accepted": 255,
+    "published": 255
+  },
+  "aligned_blocks": 4269,
+  "consultation_records": 2722,
+  "restored_consultation_identity_rows": 86,
+  "restored_consultation_batch": "PS-B001-SETS",
+  "state_qa_sha256": "3e47dff5cf829b2e3abfcc5911842e80efb898e994e590ee6576413d59fb42ef",
+  "repository_qa_sha256": "3e47dff5cf829b2e3abfcc5911842e80efb898e994e590ee6576413d59fb42ef",
+  "draft_check_sha256": "b2db7e9395be79a624b6a36cafb2d733f7b0946f3acc3c64a015f4942eb3e8dc",
+  "target_hashes": {
+    "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
+    "ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex": "05c3907fb99c8276032c4892c74a2a4ac7f8526e91b54aa87ab3a26796606b1f"
+  },
+  "adopted_actions": [
+    "OLCMP-059",
+    "OLCMP-060",
+    "OLCMP-061"
+  ],
+  "qualified_action": "OLCMP-045",
+  "preserved_actions": [
+    "OLCMP-046",
+    "OLCMP-047"
+  ],
+  "excluded_false_alerts": [
+    "BN-SRC-169",
+    "BN-SRC-172"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "manager_evidence": {
+    "FINDINGS.json": "7caa7a3052048ff69761c88d5aff85735d0896c383a98c2c9d18c3487b370f4a",
+    "REPORT.md": "aaa1fb39bd059002b3c25ff588f9b84368fc6fd28d1249084a6bc57fb71ffdfe"
+  },
+  "tex_processes_launched": 0
+}

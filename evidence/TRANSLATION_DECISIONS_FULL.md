@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 365 decisions and 16183 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 368 decisions and 16186 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -4745,7 +4745,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-003880` | `OLP-0258` / `OLP-0258-B019` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:205-215` | pending; no page guessed |
 | `ps-Arab-PK-OCC-003881` | `OLP-0258` / `OLP-0258-B020` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:217-221` | pending; no page guessed |
 | `ps-Arab-PK-OCC-003882` | `OLP-0258` / `OLP-0258-B021` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:223-225` | pending; no page guessed |
-| `ps-Arab-PK-OCC-003883` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-237` | pending; no page guessed |
+| `ps-Arab-PK-OCC-003883` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 | `ps-Arab-PK-OCC-003884` | `OLP-0261` / `OLP-0261-B004` | د ټيورينګ ماشينونو يوځاے کول | `upstream/content/turing-machines/machines-computations/combining-machines.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-003885` | `OLP-0261` / `OLP-0261-B005` | د ټيورينګ ماشينونو يوځاے کول | `upstream/content/turing-machines/machines-computations/combining-machines.tex:12-23` | `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:12-22` | pending; no page guessed |
 | `ps-Arab-PK-OCC-003886` | `OLP-0261` / `OLP-0261-B006` | د ټيورينګ ماشينونو يوځاے کول | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:24-53` | pending; no page guessed |
@@ -5997,12 +5997,12 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-004975` | `OLP-0257` / `OLP-0257-B005` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:12-22` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004976` | `OLP-0257` / `OLP-0257-B006` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:24-36` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004977` | `OLP-0257` / `OLP-0257-B007` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:38-45` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004978` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004979` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:54-60` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004980` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:62-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004981` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:82-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004982` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:87-94` | pending; no page guessed |
-| `ps-Arab-PK-OCC-004983` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:96-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004978` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004979` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004980` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:72-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004981` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:92-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004982` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-004983` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:111-116` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004984` | `OLP-0258` / `OLP-0258-B004` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004985` | `OLP-0258` / `OLP-0258-B005` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:12-21` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004986` | `OLP-0258` / `OLP-0258-B006` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:23-30` | pending; no page guessed |
@@ -6019,7 +6019,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-004997` | `OLP-0258` / `OLP-0258-B019` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:205-215` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004998` | `OLP-0258` / `OLP-0258-B020` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:217-221` | pending; no page guessed |
 | `ps-Arab-PK-OCC-004999` | `OLP-0258` / `OLP-0258-B021` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:223-225` | pending; no page guessed |
-| `ps-Arab-PK-OCC-005000` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-237` | pending; no page guessed |
+| `ps-Arab-PK-OCC-005000` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 | `ps-Arab-PK-OCC-005001` | `OLP-0260` / `OLP-0260-B004` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-005002` | `OLP-0260` / `OLP-0260-B005` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:12-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-005003` | `OLP-0260` / `OLP-0260-B006` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:25-33` | pending; no page guessed |
@@ -18980,12 +18980,12 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015541` | `OLP-0257` / `OLP-0257-B005` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:12-22` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015542` | `OLP-0257` / `OLP-0257-B006` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:24-36` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015543` | `OLP-0257` / `OLP-0257-B007` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:38-45` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015544` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015545` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:54-60` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015546` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:62-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015547` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:82-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015548` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:87-94` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015549` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:96-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015544` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015545` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015546` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:72-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015547` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:92-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015548` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015549` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:111-116` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015550` | `OLP-0258` / `OLP-0258-B004` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015551` | `OLP-0258` / `OLP-0258-B005` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:12-21` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015552` | `OLP-0258` / `OLP-0258-B006` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:23-30` | pending; no page guessed |
@@ -19002,7 +19002,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015563` | `OLP-0258` / `OLP-0258-B019` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:205-215` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015564` | `OLP-0258` / `OLP-0258-B020` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:217-221` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015565` | `OLP-0258` / `OLP-0258-B021` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:223-225` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015566` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-237` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015566` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015567` | `OLP-0259` / `OLP-0259-B004` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015568` | `OLP-0259` / `OLP-0259-B005` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:12-16` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:12-16` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015569` | `OLP-0259` / `OLP-0259-B006` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:18-23` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:18-22` | pending; no page guessed |
@@ -19132,12 +19132,12 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015663` | `OLP-0257` / `OLP-0257-B005` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:12-22` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015664` | `OLP-0257` / `OLP-0257-B006` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:24-36` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015665` | `OLP-0257` / `OLP-0257-B007` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:38-45` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015666` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015667` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:54-60` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015668` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:62-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015669` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:82-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015670` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:87-94` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015671` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:96-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015666` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015667` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015668` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:72-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015669` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:92-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015670` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015671` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:111-116` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015672` | `OLP-0258` / `OLP-0258-B004` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015673` | `OLP-0258` / `OLP-0258-B005` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:12-22` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:12-21` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015674` | `OLP-0258` / `OLP-0258-B006` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:24-31` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:23-30` | pending; no page guessed |
@@ -19154,7 +19154,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015685` | `OLP-0258` / `OLP-0258-B019` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:205-215` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015686` | `OLP-0258` / `OLP-0258-B020` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:217-221` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015687` | `OLP-0258` / `OLP-0258-B021` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:223-225` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015688` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-237` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015688` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015689` | `OLP-0259` / `OLP-0259-B004` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015690` | `OLP-0259` / `OLP-0259-B005` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:12-16` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:12-16` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015691` | `OLP-0259` / `OLP-0259-B006` | درېدني حالتونه | `upstream/content/turing-machines/machines-computations/halting-states.tex:18-23` | `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex:18-22` | pending; no page guessed |
@@ -19191,12 +19191,12 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015696` | `OLP-0257` / `OLP-0257-B005` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:12-23` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:12-22` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015697` | `OLP-0257` / `OLP-0257-B006` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:25-38` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:24-36` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015698` | `OLP-0257` / `OLP-0257-B007` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:40-49` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:38-45` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015699` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015700` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:54-60` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015701` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:62-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015702` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:82-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015703` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:87-94` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015704` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:96-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015699` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015700` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015701` | `OLP-0257` / `OLP-0257-B010` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:63-82` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:72-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015702` | `OLP-0257` / `OLP-0257-B011` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:84-87` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:92-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015703` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015704` | `OLP-0257` / `OLP-0257-B013` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:97-102` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:111-116` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015705` | `OLP-0260` / `OLP-0260-B004` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015706` | `OLP-0260` / `OLP-0260-B005` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:12-25` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:12-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015707` | `OLP-0260` / `OLP-0260-B006` | منضبط ماشينونه | `upstream/content/turing-machines/machines-computations/disciplined-machines.tex:27-35` | `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex:25-33` | pending; no page guessed |
@@ -19281,7 +19281,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-015757` | `OLP-0258` / `OLP-0258-B019` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:204-214` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:205-215` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015758` | `OLP-0258` / `OLP-0258-B020` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:216-220` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:217-221` | pending; no page guessed |
 | `ps-Arab-PK-OCC-015759` | `OLP-0258` / `OLP-0258-B021` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:222-224` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:223-225` | pending; no page guessed |
-| `ps-Arab-PK-OCC-015760` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-237` | pending; no page guessed |
+| `ps-Arab-PK-OCC-015760` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 
 ## TERM-TURING-HALTING-DISCIPLINE
 
@@ -23576,12 +23576,12 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 - Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
 - Source term or construction: DEC-OLCMP-045: content/turing-machines/machines-computations/configuration.tex:56-61
 - Intended sense: Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.
-- Chosen Pashto: places the input immediately to the right of the left-end marker
+- Chosen Pashto: places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim
 - Rationale: Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.
 - Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
 - Expert question: Does the Pashto correction for OLCMP-045 disclose the source issue clearly without obscuring the corrected mathematics?
 - Authorities:
-  - `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — initial_configuration_gloss_places_input_left_of_the_left_end_marker; Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses.; Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.
+  - `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — malformed_initial_configuration_gloss_omits_valid_directional_relation; Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses.; Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.
 - Alternatives:
   - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
@@ -23589,7 +23589,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016164` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:54-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-016164` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
 
 ## DEC-OLCMP-046
 
@@ -23851,6 +23851,66 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 |---|---|---|---|---|---|
 | `ps-Arab-PK-OCC-016177` | `OLP-0271` / `OLP-0271-B026` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:214-253` | pending; no page guessed |
 
+## DEC-OLCMP-059
+
+- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLCMP-059: content/turing-machines/machines-computations/configuration.tex:51-55
+- Intended sense: The original nonempty-input display is retained; one displayed tuple is added for the empty-input case and registered exactly.
+- Chosen Pashto: retains the source tuple for nonempty input and includes the scanned blank square when the input is empty
+- Rationale: The original nonempty-input display is retained; one displayed tuple is added for the empty-input case and registered exactly.
+- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
+- Expert question: Does the Pashto correction for OLCMP-059 disclose the source issue clearly without obscuring the corrected mathematics?
+- Authorities:
+  - `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — empty_input_initial_configuration_violates_head_index_bound; Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses.; The original nonempty-input display is retained; one displayed tuple is added for the empty-input case and registered exactly.
+- Alternatives:
+  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-016178` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+
+## DEC-OLCMP-060
+
+- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLCMP-060: content/turing-machines/machines-computations/configuration.tex:84-101
+- Intended sense: Only the existence condition governing the already displayed formula changes; every source mathematical span is retained.
+- Chosen Pashto: assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form
+- Rationale: Only the existence condition governing the already displayed formula changes; every source mathematical span is retained.
+- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
+- Expert question: Does the Pashto correction for OLCMP-060 disclose the source issue clearly without obscuring the corrected mathematics?
+- Authorities:
+  - `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — halting_output_definition_assumes_end_marker_form_despite_permitted_overwrite; Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses.; Only the existence condition governing the already displayed formula changes; every source mathematical span is retained.
+- Alternatives:
+  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-016179` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+
+## DEC-OLCMP-061
+
+- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLCMP-061: content/turing-machines/machines-computations/unary-numbers.tex:227-235
+- Intended sense: Only localized condition prose changes; every mathematical span remains identical.
+- Chosen Pashto: allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output
+- Rationale: Only localized condition prose changes; every mathematical span remains identical.
+- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
+- Expert question: Does the Pashto correction for OLCMP-061 disclose the source issue clearly without obscuring the corrected mathematics?
+- Authorities:
+  - `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — partial_computation_undefined_case_omits_halting_run_without_assigned_output; Owner semantic review against the frozen source, the translated definition of enumeration, and the indexed native countability/pairing witnesses.; Only localized condition prose changes; every mathematical span remains identical.
+- Alternatives:
+  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-016180` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
+
 ## DEC-REL-I
 
 - Kind: `notation`; priority: `high`; confidence: `medium`; provisional: `true`
@@ -23869,7 +23929,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016178` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
+| `ps-Arab-PK-OCC-016181` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
 
 ## DEC-TREE-X
 
@@ -23889,7 +23949,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016179` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
+| `ps-Arab-PK-OCC-016182` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
 
 ## DEC-RPLUS
 
@@ -23909,7 +23969,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016180` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
+| `ps-Arab-PK-OCC-016183` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -23929,7 +23989,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016181` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
+| `ps-Arab-PK-OCC-016184` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -23949,7 +24009,7 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016182` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
+| `ps-Arab-PK-OCC-016185` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -23969,4 +24029,4 @@ This index contains 365 decisions and 16183 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-016183` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
+| `ps-Arab-PK-OCC-016186` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |

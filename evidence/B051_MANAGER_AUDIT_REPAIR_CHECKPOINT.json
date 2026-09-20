@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-ps-Arab-PK/b051-manager-audit-repair-checkpoint/v1",
+  "recorded_utc": "2026-09-20T15:14:16.987365+00:00",
+  "status": "complete",
+  "base_batch": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+  "base_commit": "4ec2405a737dc294766426cf55456f0bd0338ffb",
+  "current_translation_head_before_repair_commit": "a5b286c05a08ef1235ed11ae3a58bb7b61b95027",
+  "affected_units": [
+    "OLP-0257",
+    "OLP-0258"
+  ],
+  "repair_summary": [
+    "empty input now includes the scanned blank square in the initial configuration",
+    "output is assigned only when the required end-marker form exists",
+    "undefined partial computation includes a halt without an assigned valid output",
+    "OLCMP-045 describes the exact malformed source gloss without inventing an opposite-direction quotation",
+    "86 original sets-batch canon-use rows retain PS-B001-SETS consultation identity"
+  ],
+  "excluded_false_alerts": [
+    "BN-SRC-169",
+    "BN-SRC-172"
+  ],
+  "coverage": {
+    "total": 722,
+    "draft_units": 271,
+    "structural_pass": 271,
+    "visually_accepted": 255,
+    "published": 255
+  },
+  "active_corrections": 209,
+  "evidence": {
+    "B051_MANAGER_AUDIT_REPAIR_REGISTRATION.json": "92c617652a62f5a3c2997aaa1ae02474bca764eeb96d5d5e33cc8a502d9ab25c",
+    "B051_MANAGER_AUDIT_REPAIR_REPOSITORY_CHECK.json": "941a1152e7cc3af1bda73e3e62dba46f060902bf4cc815e16ea4a3abf72f3486",
+    "B051_MANAGER_AUDIT_REPAIR_CANONICAL_REPLAY.json": "ead5104441103e3f7def7ec3a1350dc54009445436575beddfdc41a82481dffb",
+    "SOURCE_CORRECTIONS.json": "2367829c475aac58d9e1eb35adfb7780fa13e04cf12f3558acec52ddf75bd4ad",
+    "SEGMENT_CANON_USE.jsonl": "1d2586277708039bea9583390b73756395db2ee1a2a7d79add80a1de9b584fcb",
+    "TRANSLATION_REVIEW_WORKFLOW.json": "083d04940026f743b4f78cba0a11cb5a44f90814d523026a70fefdea907b9870"
+  },
+  "release_disposition": "The verified 255-unit v0.6.0-computability public assets remain byte-for-byte unchanged.",
+  "next_batch": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+  "next_units": [
+    "OLP-0272",
+    "OLP-0273"
+  ]
+}

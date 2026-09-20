@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0271; Turing-machine undecidability is structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-20T03:43:18.812779+00:00",
+  "status": "adopted through OLP-0271 with bounded B051 manager-audit repair; cumulative structural and canonical QA pass; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-20T04:05:52.923956+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -4485,19 +4485,20 @@
     {
       "id": "OLCMP-045",
       "unit_id": "OLP-0257",
-      "classification": "initial_configuration_gloss_places_input_left_of_the_left_end_marker",
+      "classification": "malformed_initial_configuration_gloss_omits_valid_directional_relation",
       "source_path": "content/turing-machines/machines-computations/configuration.tex",
       "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
       "source_locator": "content/turing-machines/machines-computations/configuration.tex:56-61",
       "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
-      "target_line_1based": 57,
-      "target_sha256": "8e52dfe2163604dd67643749d9168b8cf41687896acee995af5f180e27744499",
-      "mode": "replace-left-with-right-plus-adjacent-note",
-      "translation_change": "places the input immediately to the right of the left-end marker",
-      "counterexample": "The displayed initial configuration is the concatenation of the end marker followed by I, and the preceding paragraph explicitly puts the input on squares to its right.",
+      "target_line_1based": 66,
+      "target_sha256": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
+      "mode": "render-intended-right-adjacency-plus-qualified-adjacent-note",
+      "translation_change": "places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim",
+      "counterexample": "The exact source says 'begins immediately to the left end marker,' a malformed gloss that omits a sound relation. It does not literally say 'to the left of the left-end marker.' The preceding paragraph and displayed concatenation establish right adjacency.",
       "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
       "formula_policy": "Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.",
-      "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes"
+      "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes",
+      "manager_audit_qualification": "BN-SRC-165 / manager FINDINGS.json: corrected meaning retained; editorial description narrowed to the exact malformed source claim."
     },
     {
       "id": "OLCMP-046",
@@ -4508,7 +4509,7 @@
       "source_locator": "content/turing-machines/machines-computations/unary-numbers.tex:187-198",
       "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex",
       "target_line_1based": 193,
-      "target_sha256": "4d8b2cae6942649efae899146dd307b044cacdf4707802f65b80abe95405dadd",
+      "target_sha256": "05c3907fb99c8276032c4892c74a2a4ac7f8526e91b54aa87ab3a26796606b1f",
       "mode": "replace-doubler-reference-plus-adjacent-note",
       "translation_change": "links the mover to the original six-state doubler from representing-tms",
       "counterexample": "The mover is numbered from q_6 specifically to follow the original q_0-through-q_5 doubler. The cited disciplined doubler already uses q_0 through q_8 and already produces a contiguous output, so combining it with the mover contradicts both the construction and numbering.",
@@ -4787,6 +4788,63 @@
           "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q'}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\intertext{LOCALIZED$!T(M,w)$$m>0$$l=m-1$$m=l+1$}&(\\ObjQ_{q}(\\num{l}',\\num{n})\\land\\ObjS_{\\sigma}(\\num{l}',\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{l}',\\num{n}')\\land!A(\\num{l}',\\num{n}))\\intertext{LOCALIZED$l=m=0$}&((\\ObjQ_{q}(\\num{0},\\num{n})\\land\\ObjS_{\\sigma}(\\num{0},\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{0},\\num{n}')\\land!A(\\num{0},\\num{n})))\\intertext{LOCALIZED}&\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{m},\\num{n}')\\land{}\\\\&\\qquad\\ObjS_{\\sigma_0}(\\num{0},\\num{n}')\\land\\dots\\land\\ObjS_{\\sigma_k}(\\num{k},\\num{n}')\\land{}\\\\&\\qquad\\lforall[x][(\\num{k}<x\\lif\\ObjS_\\TMblank(x,\\num{n}'))]\\end{align*}"
         ]
       }
+    },
+    {
+      "id": "OLCMP-059",
+      "unit_id": "OLP-0257",
+      "classification": "empty_input_initial_configuration_violates_head_index_bound",
+      "source_path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "source_locator": "content/turing-machines/machines-computations/configuration.tex:51-55",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
+      "target_line_1based": 56,
+      "target_sha256": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
+      "mode": "add-explicit-empty-input-blank-square-case-plus-adjacent-note",
+      "translation_change": "retains the source tuple for nonempty input and includes the scanned blank square when the input is empty",
+      "counterexample": "For empty input, C contains only the end marker and has length one while the stipulated head index is one, contradicting m < len(C). Appending the initially scanned blank square gives a valid length-two configuration.",
+      "stable_audit": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+      "formula_policy": "The original nonempty-input display is retained; one displayed tuple is added for the empty-input case and registered exactly.",
+      "decision_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "\\[\\tuple{\\TMendtape\\frown\\TMblank,1,q_0}.\\]"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-060",
+      "unit_id": "OLP-0257",
+      "classification": "halting_output_definition_assumes_end_marker_form_despite_permitted_overwrite",
+      "source_path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "source_locator": "content/turing-machines/machines-computations/configuration.tex:84-101",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
+      "target_line_1based": 105,
+      "target_sha256": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
+      "mode": "make-output-assignment-conditional-on-marker-form-plus-adjacent-note",
+      "translation_change": "assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form",
+      "counterexample": "OLP-0256 explicitly permits a machine to overwrite the end marker. A machine can therefore halt with a tape whose first symbol is blank, for which no O and j satisfy C = end-marker concatenated with O and j blanks.",
+      "stable_audit": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+      "formula_policy": "Only the existence condition governing the already displayed formula changes; every source mathematical span is retained.",
+      "decision_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition"
+    },
+    {
+      "id": "OLCMP-061",
+      "unit_id": "OLP-0258",
+      "classification": "partial_computation_undefined_case_omits_halting_run_without_assigned_output",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "source_locator": "content/turing-machines/machines-computations/unary-numbers.tex:227-235",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex",
+      "target_line_1based": 238,
+      "target_sha256": "05c3907fb99c8276032c4892c74a2a4ac7f8526e91b54aa87ab3a26796606b1f",
+      "mode": "include-halt-without-valid-output-in-undefined-case-plus-adjacent-note",
+      "translation_change": "allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output",
+      "counterexample": "After output is correctly made conditional in OLP-0257, a marker-destroying run can halt without an assigned output. The source's second clause mentions only divergence or a halt with a non-unary output and omits this third possibility.",
+      "stable_audit": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+      "formula_policy": "Only localized condition prose changes; every mathematical span remains identical.",
+      "decision_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -4794,7 +4852,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0271, then continue with OLP-0272 without altering prior release bytes.",
+  "next_action": "Translate and source-review OLP-0272 through OLP-0273 without altering the verified v0.6.0 release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -4841,7 +4899,8 @@
     "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
     "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
     "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
-    "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY"
+    "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+    "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR"
   ],
   "source_authorities": [
     {

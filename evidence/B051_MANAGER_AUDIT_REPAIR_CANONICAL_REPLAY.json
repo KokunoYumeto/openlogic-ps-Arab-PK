@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-ps-Arab-PK/b051-manager-audit-repair-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T15:14:16.987365+00:00",
+  "status": "PASS",
+  "counts": {
+    "decisions": 368,
+    "occurrences": 16186,
+    "terminology_decisions": 153,
+    "source_correction_decisions": 210,
+    "priority_decisions": 146,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 1376
+  },
+  "input_hashes": {
+    "EXPERT_REVIEW_LOG.jsonl": "1c272ce8b453e365eb2324eee3d1be907d473cadf2f7eda6a4100003bd0a4c4a",
+    "ALIGNMENT.jsonl": "25beb33650c53a6450f155cc5521f942c023f1966ba85fb3eae5a87597ad41e4",
+    "SEGMENT_CANON_USE.jsonl": "1d2586277708039bea9583390b73756395db2ee1a2a7d79add80a1de9b584fcb",
+    "SOURCE_CORRECTIONS.json": "2367829c475aac58d9e1eb35adfb7780fa13e04cf12f3558acec52ddf75bd4ad",
+    "TERM_DECISIONS.jsonl": "73fd03fcc0b26ba2408cc56b825dcc96cf1f98f1294ee7ef695631dfa938e5f1",
+    "QA.json": "3e47dff5cf829b2e3abfcc5911842e80efb898e994e590ee6576413d59fb42ef"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "bytes": 1404,
+      "sha256": "c0c046b3a762bc8ccaa65f2effa33ab580f8eb68870239d8a9e5c387f7578aa4",
+      "all_four_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "bytes": 6467129,
+      "sha256": "88bb9ad45f0b4b2fd334ef59dc68c0a6fe71564de3a726fa4edfe214cde2260c",
+      "all_four_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "bytes": 5196900,
+      "sha256": "5b7c66374b36ae0d145e3bc56016918431efb7b8c6829f41989521991b226190",
+      "all_four_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "bytes": 34959030,
+      "sha256": "2ba5af8a6b23484eabab620e2a199c9d73a3692ba16fa2e00a97d6f799ab78fa",
+      "all_four_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "bytes": 72897476,
+      "sha256": "ddf51294fb8898c37986859d0f73113c1a2bf10f7283d2d02fb55e6491f7911d",
+      "all_four_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "all_four_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "bytes": 3837,
+      "sha256": "2882f6d03ebbd278617339a643ff689476daa1f17f7fc72c46051403a4b6e2b0",
+      "all_four_byte_identical": true
+    }
+  }
+}

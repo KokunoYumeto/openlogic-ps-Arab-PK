@@ -1734,10 +1734,10 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0257`
 - Frozen source: `content/turing-machines/machines-computations/configuration.tex` (8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b) at `content/turing-machines/machines-computations/configuration.tex:56-61`
-- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:57`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:66`
 - Audit: `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS`
-- Treatment: places the input immediately to the right of the left-end marker.
-- Disclosure: `replace-left-with-right-plus-adjacent-note`.
+- Treatment: places the input immediately to the right of the left-end marker while describing the source wording as malformed rather than as an explicit opposite-direction claim.
+- Disclosure: `render-intended-right-adjacency-plus-qualified-adjacent-note`.
 
 ## OLCMP-046
 
@@ -1855,3 +1855,30 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
 - Treatment: excludes the written x-prime square, instantiates A at l-prime, and uses the current q and q-prime states in the zero-square branch.
 - Disclosure: `repair-left-move-instantiations-plus-adjacent-note`.
+
+## OLCMP-059
+
+- Unit: `OLP-0257`
+- Frozen source: `content/turing-machines/machines-computations/configuration.tex` (8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b) at `content/turing-machines/machines-computations/configuration.tex:51-55`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:56`
+- Audit: `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR`
+- Treatment: retains the source tuple for nonempty input and includes the scanned blank square when the input is empty.
+- Disclosure: `add-explicit-empty-input-blank-square-case-plus-adjacent-note`.
+
+## OLCMP-060
+
+- Unit: `OLP-0257`
+- Frozen source: `content/turing-machines/machines-computations/configuration.tex` (8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b) at `content/turing-machines/machines-computations/configuration.tex:84-101`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:105`
+- Audit: `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR`
+- Treatment: assigns an output only when the halting tape has the stipulated end-marker, output and trailing-blank form.
+- Disclosure: `make-output-assignment-conditional-on-marker-form-plus-adjacent-note`.
+
+## OLCMP-061
+
+- Unit: `OLP-0258`
+- Frozen source: `content/turing-machines/machines-computations/unary-numbers.tex` (c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3) at `content/turing-machines/machines-computations/unary-numbers.tex:227-235`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:238`
+- Audit: `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR`
+- Treatment: allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output.
+- Disclosure: `include-halt-without-valid-output-in-undefined-case-plus-adjacent-note`.

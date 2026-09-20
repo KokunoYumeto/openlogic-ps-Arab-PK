@@ -7416,7 +7416,7 @@
       "unit_id": "OLP-0257",
       "path": "content/turing-machines/machines-computations/configuration.tex",
       "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
-      "translation_sha256": "8e52dfe2163604dd67643749d9168b8cf41687896acee995af5f180e27744499",
+      "translation_sha256": "a9f9ba5bed60d81e9f202aa4582b604f79ef4be2ead4adc69c67d08b7a516f6b",
       "source_blocks": 14,
       "target_blocks": 14,
       "checks": {
@@ -7434,15 +7434,24 @@
       "residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLCMP-045"
+        "OLCMP-045",
+        "OLCMP-059",
+        "OLCMP-060"
       ],
-      "status": "structural-pass"
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [],
+        "target_only": [
+          "\\[\\tuple{\\TMendtape\\frown\\TMblank,1,q_0}.\\]"
+        ],
+        "expected_by_source_correction": true
+      }
     },
     {
       "unit_id": "OLP-0258",
       "path": "content/turing-machines/machines-computations/unary-numbers.tex",
       "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
-      "translation_sha256": "4d8b2cae6942649efae899146dd307b044cacdf4707802f65b80abe95405dadd",
+      "translation_sha256": "05c3907fb99c8276032c4892c74a2a4ac7f8526e91b54aa87ab3a26796606b1f",
       "source_blocks": 23,
       "target_blocks": 23,
       "checks": {
@@ -7461,7 +7470,8 @@
       "residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLCMP-046"
+        "OLCMP-046",
+        "OLCMP-061"
       ],
       "status": "structural-pass",
       "identifier_diff": {
@@ -10269,13 +10279,13 @@
       "unit_id": "OLP-0257",
       "passage": "configurations, runs and outputs",
       "reverse_paraphrase": "A configuration records a finite relevant tape prefix, head index and state. A run begins with the end marker followed by the input and proceeds by the transition function until an undefined instruction yields a trailing-blank-trimmed output.",
-      "finding": "Every clause of one-step yielding, extension of the visited tape, halting and output remains complete; the erroneous left/right gloss is disclosed and repaired."
+      "finding": "Every clause of one-step yielding, tape extension and halting remains complete. The malformed directional gloss is described exactly; empty input includes the scanned blank square; output is assigned only when its required marker form exists."
     },
     {
       "unit_id": "OLP-0258",
       "passage": "unary computation and machine constructions",
       "reverse_paraphrase": "Natural numbers are encoded by stroke counts. The chapter defines total and partial computation, constructs addition and two valid doubling strategies, and asks for subtraction, equality and minimum machines.",
-      "finding": "All diagrams, exercises and undefined-value behavior remain complete; the mover now references the compatible original doubler."
+      "finding": "All diagrams and exercises remain complete. The mover retains its compatible original-doubler reference, and undefined partial computation now includes a halt for which no valid output is assigned."
     },
     {
       "unit_id": "OLP-0259",
