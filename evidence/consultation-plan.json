@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B052-TURING-UNDECIDABILITY",
-  "status": "v0.6.0 public artifacts remain frozen and verified; OLP-0264 through OLP-0271 form a complete manually translated and source-reviewed Turing undecidability batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+  "status": "v0.6.0 public artifacts remain frozen and verified; OLP-0272 and OLP-0273 form a complete manually translated and source-reviewed unsolvability and Trakhtenbrot batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -5808,6 +5808,72 @@
         "TERM-TURING-HALTING-DIAGONAL"
       ],
       "scope": "Both directions of the representation theorem, configuration induction, right/left/stay cases, exercises and the actual-run structure remain complete. OLCMP-053 through OLCMP-058 repair the six localized logical defects."
+    },
+    "OLP-0272": {
+      "batch_id": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-FIRST-ORDER-SEMIDECISION",
+        "TERM-FIRST-ORDER-DECISION-PROBLEM",
+        "TERM-FOL-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-HALTING-PROBLEM"
+      ],
+      "scope": "The reduction from validity to halting, undecidability of satisfiability, and semi-decision procedure by enumerating derivations remain complete. OLCMP-062 restores the one missing object-language marker."
+    },
+    "OLP-0273": {
+      "batch_id": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P101-PAIRING",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-TRAKHTENBROT-FINITE-MODELS",
+        "TERM-TURING-LOGICAL-REPRESENTATION",
+        "TERM-FOL-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-FIRST-ORDER-DECISION-PROBLEM",
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-FINITE"
+      ],
+      "scope": "The finite-run model, looping counterexample, modified transition representation, both finite-model lemmas, Trakhtenbrot reduction, and finite-validity corollary remain complete. OLCMP-063 through OLCMP-069 repair seven localized state, structure, transition, marker, and representation defects."
     }
   },
   "semantic_review": [
@@ -8324,6 +8390,18 @@
       "passage": "verification of the representation",
       "reverse_paraphrase": "Induction derives the correct configuration sentence at every execution step; a halting configuration yields E. Conversely, the natural-number structure defined by the actual run satisfies T, so validity forces a real halting time.",
       "finding": "Both proof directions, all transition cases and exercises remain complete; six localized variable, marker, bound, relation and left-move defects are disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0272",
+      "passage": "unsolvability of the first-order decision problem",
+      "reverse_paraphrase": "A decider for first-order validity, composed after the effective Turing-run representation, would decide halting. A satisfiability decider would decide validity by negation. Validity is nevertheless semi-decidable because derivations can be enumerated until a proof is found.",
+      "finding": "Both reductions and the soundness-completeness semi-decision argument remain complete; the input sentence now carries its object-language marker consistently."
+    },
+    {
+      "unit_id": "OLP-0273",
+      "passage": "Trakhtenbrot's finite-model theorem",
+      "reverse_paraphrase": "A halting run has a finite capped-successor model. Adding B to every transition forces successive configuration numerals to stay distinct, so any finite model of T-prime and E yields a real halt. A finite-satisfiability decider would therefore decide halting.",
+      "finding": "The finite model, looping counterexample, modified right/left/stay axioms, two equivalence lemmas, theorem, corollary and exercise remain complete; seven localized source defects are disclosed and repaired."
     }
   ]
 }

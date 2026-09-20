@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0271 with bounded B051 manager-audit repair; cumulative structural and canonical QA pass; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-20T04:05:52.923956+00:00",
+  "status": "adopted through OLP-0273; first-order unsolvability and Trakhtenbrot's theorem are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-20T15:29:27.417706+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -4845,6 +4845,202 @@
       "stable_audit": "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
       "formula_policy": "Only localized condition prose changes; every mathematical span remains identical.",
       "decision_timing": "bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition"
+    },
+    {
+      "id": "OLCMP-062",
+      "unit_id": "OLP-0272",
+      "classification": "missing_object_language_marker_on_input_sentence",
+      "source_path": "content/turing-machines/undecidability/unsolvability-decision-problem.tex",
+      "source_sha256": "c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e",
+      "source_locator": "content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-57",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex",
+      "target_line_1based": 61,
+      "target_sha256": "6932dd06b906aed0a224dbfa09831cf48b5cde7721f5dd62e2631f058336c42e",
+      "mode": "restore-formula-marker-plus-adjacent-note",
+      "translation_change": "uses !B, rather than the undefined metalinguistic B, for the input sentence throughout the satisfiability reduction",
+      "counterexample": "The proof first calls the input B but immediately moves !B, negates !B, and tests validity of !B. The initial occurrence is the only one missing the established object-language marker.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline formula changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$B$"
+        ],
+        "target_only": [
+          "$!B$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-063",
+      "unit_id": "OLP-0273",
+      "classification": "single_state_exercise_uses_undefined_state_q",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:68-76",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 89,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "replace-undefined-state-with-q0-plus-adjacent-note",
+      "translation_change": "uses q_0 as both source and destination of the sole stay instruction",
+      "counterexample": "The exercise stipulates that q_0 is the machine's single state. Its destination q is otherwise undefined, while the immediately preceding example gives the intended q_0 self-loop.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline transition formula changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\delta(q_0,\\TMblank)=\\tuple{q,\\TMblank,\\TMstay}$"
+        ],
+        "target_only": [
+          "$\\delta(q_0,\\TMblank)=\\tuple{q_0,\\TMblank,\\TMstay}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-064",
+      "unit_id": "OLP-0273",
+      "classification": "exercise_assigns_successor_value_in_wrong_structure",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:71-73",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 92,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "replace-M-prime-with-M-double-prime-plus-adjacent-note",
+      "translation_change": "assigns the successor of 1 in the current exercise structure M-double-prime",
+      "counterexample": "The displayed domain, the other successor values, the order relation, and every requested predicate interpretation all belong to M-double-prime; M-prime is the prior finite model and is not being defined here.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline assignment formula changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Assign{\\prime}{M''}(0)=\\Assign{\\prime}{M'}(1)=1$"
+        ],
+        "target_only": [
+          "$\\Assign{\\prime}{M''}(0)=\\Assign{\\prime}{M''}(1)=1$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-065",
+      "unit_id": "OLP-0273",
+      "classification": "modified_left_transition_exempts_destination_instead_of_written_square",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:112-123",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 132,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "replace-unchanged-square-argument-plus-adjacent-note",
+      "translation_change": "uses A(x-prime,y), excluding the square actually overwritten before the head moves left",
+      "counterexample": "The antecedent scans x-prime and the consequent writes sigma-prime there while moving the head to x. A(x,y) would preserve the written square and exempt the destination instead.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "The source side of the one jointly changed aligned span is registered here; its corrected target side is co-registered under OLCMP-066.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x,y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)\\land!B(y')))\\end{align*}"
+        ],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-066",
+      "unit_id": "OLP-0273",
+      "classification": "modified_left_transition_omits_distinct_next_configuration_condition",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:112-135",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 135,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "add-B-of-y-prime-to-ordinary-left-branch-plus-adjacent-note",
+      "translation_change": "adds the B(y-prime) distinctness condition to the ordinary left-move branch",
+      "counterexample": "The construction says that B(y-prime) is added to each transition sentence so every next configuration number differs from all previous numbers. Right, stay, and the boundary left branch contain it, but the ordinary left branch does not.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "The target side of the one jointly changed aligned span is registered here; its source side is co-registered under OLCMP-065.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)\\land!B(y')))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)\\land!B(y')))\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-067",
+      "unit_id": "OLP-0273",
+      "classification": "missing_object_language_marker_on_halting_sentence_in_lemma_proof",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:170-185",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 199,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "restore-formula-marker-plus-adjacent-note",
+      "translation_change": "verifies satisfaction of !T-prime(M,w) conjoined with !E(M,w)",
+      "counterexample": "The lemma's statement and the construction use the defined halting sentence !E(M,w); E(M,w) without the marker is not that object-language sentence.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline satisfaction formula changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat{M'}{!T'(M,w)\\landE(M,w)}$"
+        ],
+        "target_only": [
+          "$\\Sat{M'}{!T'(M,w)\\land!E(M,w)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-068",
+      "unit_id": "OLP-0273",
+      "classification": "exercise_reverts_to_old_representation_and_omits_halting_marker",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:187-190",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 207,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "restore-T-prime-and-E-marker-plus-adjacent-note",
+      "translation_change": "asks for the satisfaction claim stated by the immediately preceding lemma, using !T-prime and !E",
+      "counterexample": "The exercise says to complete the proof of the lemma, whose finite model claim concerns the modified representation !T-prime conjoined with !E. The older !T and unmarked E do not establish that claim.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline satisfaction formula changes in two localized symbols exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat{M'}{!T(M,w)\\landE(M,w)}$"
+        ],
+        "target_only": [
+          "$\\Sat{M'}{!T'(M,w)\\land!E(M,w)}$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-069",
+      "unit_id": "OLP-0273",
+      "classification": "converse_proof_assumes_model_of_old_representation",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_locator": "content/turing-machines/undecidability/trakhtenbrot.tex:197-214",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex",
+      "target_line_1based": 222,
+      "target_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "mode": "replace-T-with-T-prime-plus-adjacent-note",
+      "translation_change": "assumes the structure is a model of the modified representation !T-prime conjoined with !E",
+      "counterexample": "The converse lemma is about !T-prime, and every subsequent entailment in the proof uses !T-prime. Assuming only the old !T does not supply the added distinct-configuration conditions needed to force an infinite domain.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT",
+      "formula_policy": "One inline conjunction changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!T(M,w)\\land!E(M,w)$"
+        ],
+        "target_only": [
+          "$!T'(M,w)\\land!E(M,w)$"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -4852,7 +5048,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate and source-review OLP-0272 through OLP-0273 without altering the verified v0.6.0 release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0273, then continue with OLP-0274 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -4900,7 +5096,8 @@
     "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
     "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
     "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
-    "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR"
+    "PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR",
+    "PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT"
   ],
   "source_authorities": [
     {

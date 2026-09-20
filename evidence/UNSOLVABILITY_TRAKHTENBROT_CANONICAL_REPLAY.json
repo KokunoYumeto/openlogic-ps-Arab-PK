@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/unsolvability-trakhtenbrot-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T15:45:55.498160+00:00",
+  "batch_id": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+  "status": "PASS",
+  "counts": {
+    "decisions": 378,
+    "occurrences": 16431,
+    "terminology_decisions": 155,
+    "source_correction_decisions": 218,
+    "priority_decisions": 148,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 1621
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "c5991fdc85c9adae721994cc3d4d0ea403ed8182980308398ec30f40a0dba491",
+    "ALIGNMENT.jsonl": "b53f8b37e3c7b7c3f3830340deb17e44fec09d68f00367d65369293b1ce74b8a",
+    "SEGMENT_CANON_USE.jsonl": "9694ef502e954a6df2edd643652fbcce4b5c0742bb6ccd4b881e9c273b9dff11",
+    "SOURCE_CORRECTIONS.json": "e3e221fea843d349f28a627d01cedab42c0a020794d07cfb8b2ca3ddcd8bff44",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "c6346b01d14c62c1d0dbce72a02ba1d8a1ccef0aa745cfe210bd8de12a9f1336",
+    "QA.json": "4047f3d432089134b22f3f8ee4f0bc9d4f28e022d222bcf2289b27d82b9a922c"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "5c897c5976c40a2d9683a74674f2233211eb509dd8e6a85b7227e2bf0d19dd66",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "f927e9eab7fce956957ce56769f133f532e1ef3364b4d381b4f2e49fa44c63aa",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "9db2d4e62d8301bea6cb3f591d4b2e33810a361e203dc6cb85cadb41425cb5df",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "5a9e1b5c488f15b0482840390d9613f5fd8a951f60d311d02ea8e64433f9a672",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "8d60c8853ad730f7e52814e70dedd7dd7054d88a43e2d8e83359065bcff961ee",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "b14e1d38dad7a9fe0fa3f316c21251d1137d95b45b8c288338e29a05c450a53c",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

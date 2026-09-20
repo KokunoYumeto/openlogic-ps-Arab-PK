@@ -1,0 +1,288 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: trakhtenbrot
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{tra}
+\olsection{د تراختن‌بروت قضيه}
+
+\begin{explain}
+  په~\olref[rep]{sec} کښې مو د يوه ټيورينګ ماشين~$M$ او ننوت
+  رشته~$w$ دپاره !!{sentence}s~$!T(M,w)$ او~$!E(M,w)$ تعريف کړل۔
+  بيا مو په~\olref[ver]{lem:valid-if-halt} او
+  \olref[ver]{lem:halt-if-valid} کښې وښودل چې~$!T(M,w) \lif
+  !E(M,w)$ هله او يوازې هله معتبر دے چې~$M$ پر ننوت~$w$ له پيلېدو
+  وروسته بالاخره ودرېږي۔ څرنګه چې د درېدنې مسئله پرېکړه کېدونکې نۀ
+  ده، له دې څخه پايله اخلو چې د لومړۍ درجې منطق د !!{sentence}s
+  اعتبار او د صدق وړتيا پرېکړه کېدونکي نۀ دي
+  (\cref{tur:und:uns:thm:decision-prob,tur:und:uns:cor:undecidable-sat})۔
+
+  خو د جملو اعتبار او د صدق وړتيا د خپلو‌سرو
+  !!{structure}s دپاره تعريف شوي، که هغه متناهي وي او که نامتناهي۔
+  ښايي تاسو ګومان وکړئ چې دا پرېکړه اسانه ده چې آيا يو
+  !!a{sentence} په يوه متناهي !!{structure} کښې د صدق وړ دے (يا په
+  ټولو متناهي !!{structure}s کښې معتبر دے)۔ د پرېکړې مسئلې د ناحلي
+  ثبوت داسې برابرولے شو چې وښيي خبره داسې نۀ ده۔
+
+  لومړے، که د~\olref[ver]{lem:halt-if-valid} ثبوت ته بېرته ورشئ،
+  وبه وينئ چې هلته مو د~$!T(M,w)$ داسې مدل~$\Struct M$ جوړ کړ چې
+  بالکل دا بيانوي چې ماشين~$M$ پر ننوت~$w$ له پيلېدو وروسته څه
+  کوي۔ د هغه مدل ډومېن~$\Nat$ و، يعنې نامتناهي و۔ خو که~$M$ په
+  رښتيا پر ننوت~$w$ ودرېږي، په همدې ډول يو متناهي مدل~$\Struct M'$
+  جوړولے شو۔ فرض کړئ~$M$ پر ننوت~$w$ له پيلېدو وروسته له~$k$
+  ګامونو وروسته درېږي۔ د ډومېن~$\Domain{M'}$ دپاره سټ~$\{0,
+  \dots, n\}$ واخلئ، چې~$n$ د~$k$ او د~$w$ د اوږدوالي تر منځ لوے
+  عدد دے، او داسې وټاکئ:
+  \[
+    \Assign{\prime}{M'}(x) =
+    \begin{cases}
+      x + 1 &\text{که $x < n$ وي}\\
+      n &\text{که نۀ وي،}
+    \end{cases}
+  \]
+  او~$\tuple{x,y} \in \Assign{<}{M'}$ هله او يوازې هله چې~$x < y$
+  يا~$x = y = n$ وي۔ له دې پرته~$\Struct{M'}$ بالکل د~$\Struct{M}$
+  په شان تعريفېږي۔ د~$\Struct{M'}$ د تعريف له مخې، لکه د
+  \olref[ver]{lem:halt-if-valid} په ثبوت کښې،
+  $\Sat{M'}{!T(M,w)}$۔ او څرنګه چې مو فرض کړې ده چې~$M$ پر
+  ننوت~$w$ درېږي، $\Sat{M'}{!E(M,w)}$۔ نو~$\Struct{M'}$ د~$!T(M,w)
+  \land !E(M,w)$ يو متناهي مدل دے (پام وکړئ چې~$\lif$ مو
+  په~$\land$ بدل کړے دے)۔
+
+  موږ د ثبوت نيمې لارې ته رسېدلي يو: ښودلې مو ده چې که~$M$ پر
+  ننوت~$w$ ودرېږي، نو~$!T(M,w) \land !E(M,w)$ يو متناهي مدل لري۔
+  له بده مرغه د دې نقيض عکس سم نۀ دے؛ يعنې داسې ټيورينګ ماشينونه
+  شته چې پر کوم ننوت~$w$ نۀ درېږي، خو~$!T(M,w) \land !E(M,w)$ بيا
+  هم يو متناهي مدل لري۔ د بېلګې په توګه هغه ماشين~$M$ په پام کښې
+  ونيسئ چې يوازې يو حالت~$q_0$ او دا لارښوونه لري:
+  $\delta(q_0,\TMblank) = \tuple{q_0,\TMblank,\TMstay}$۔ دا ماشين
+  پر تش ننوت~$w = \emptyseq$ له پيلېدو وروسته هېڅکله نۀ درېږي: په
+  يوه نامتناهي کړۍ کښې دے، خو پټه نۀ بدلوي او سر نۀ خوځوي۔ ټول
+  تشکيلونه يو شان دي (هماغه حالت، هماغه د سر موقعيت، هماغه د پټې
+  منځپانګه)۔ داسې متناهي !!{structure}~$\Struct{M''}$ تعريفولے شو
+  چې~$!T(M,\emptyseq) \land !E(M,\emptyseq)$ پوره کړي (تمرين)۔ خو
+  $!T(M,w)$ په مناسبه توګه بدلولے شو، څو داسې !!{structure}s ترې
+  بهر کړو۔
+
+  \begin{prob}
+    فرض کړئ~$M$ داسې ټيورينګ ماشين دے چې يوازې حالت~$q_0$ او يوازې
+    لارښوونه~$\delta(q_0,\TMblank) =
+    \tuple{q_0,\TMblank,\TMstay}$ لري۔ داسې وټاکئ:
+    $\Domain{M''} = \{0, 1, 2\}$، $\Assign{\prime}{M''}(0) =
+    \Assign{\prime}{M''}(1) = 1$ او~$\Assign{\prime}{M''}(2) = 2$،
+    او~$\Assign{<}{M''} = \{\tuple{0,1}, \tuple{1,1},
+    \tuple{2,2}\}$۔ $\Assign{\Obj Q_{q_0}}{M''}$، $\Assign{\Obj
+    S_{\TMblank}}{M''}$، او~$\Assign{\Obj S_{\TMendtape}}{M''}$
+    داسې تعريف کړئ چې~$!T(M,\emptyseq)$ او~$!E(M,\emptyseq)$ رښتوني
+    شي، او څرګنده کړئ چې ولې رښتوني دي۔ اشاره: پام وکړئ چې
+    $\delta(q_0, \TMendtape)$ ناتعريفه ده۔ ډاډ ترلاسه کړئ چې
+    \begin{align*}
+    & \Obj Q_{q_0}(\num{1}, \num{n}) \land \Obj S_{\TMendtape}(\num{0}, \num{n})
+      \land
+      \lforall[x][(\num{0} < x \lif \Obj S_\TMblank(x, \num{n}))] \text{\quad د هر $n \in \Nat$ دپاره}\\
+    & \lexists[y][(\Obj Q_{q_0}(\num{0}, y) \land \Obj S_{\TMendtape}(\num{0}, y))]
+    \end{align*}
+    دواړه په~$\Struct{M''}$ کښې رښتوني وي۔
+    \textbf{د ژباړې د نسخې سمون (OLCMP-063):} سرچينې د يوازېني
+    حالت پر ځاے په لارښوونه کښې يو ناتعريفه حالت راوړے و؛ دلته هماغه
+    ټاکل شوے يوازېنی حالت کارول شوے دے۔
+    \textbf{د ژباړې د نسخې سمون (OLCMP-064):} سرچينې د يو د تالي
+    ارزښت په تېروتنه د پخواني جوړښت په نوم پورې تړلے و؛ دلته د تمرين
+    روان جوړښت په يو شان ډول کارول شوے دے۔
+  \end{prob}
+\end{explain}
+
+هغه !!{sentence}s په پام کښې ونيسئ چې د ټيورينګ ماشين~$M$ عمل پر
+ننوت~$w = \sigma_{i_1}\dots\sigma_{i_k}$ بيانوي:
+\begin{enumerate}
+\item هغه اکسيومونه چې اعداد او~$<$ بيانوي (بالکل لکه په
+\olref[rep]{sec} کښې د~$!T(M,w)$ په تعريف کښې)۔
+\item هغه اکسيومونه چې د ننوت تشکيل بيانوي: بالکل لکه د~$!T(M,w)$
+په تعريف کښې۔
+\item هغه اکسيومونه چې له يوه تشکيل څخه بل ته د حالت بدلون بيانوي:
+
+د لاندې برخې دپاره، $!A(x, y)$ دې د پخوا په شان وي، او داسې دې وي:
+\[
+  !B(y) \ident \lforall[x][(x < y \lif \eq/[x][y])].
+\]
+\begin{enumerate}
+\item \ollabel{rep-right} د هرې لارښوونې~$\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMright}$ دپاره دا !!{sentence}:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad   (\Obj Q_{q_j}(x', y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y) \land !B(y')))
+\end{align*}
+\item \ollabel{rep-left} د هرې لارښوونې~$\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMleft}$ دپاره دا !!{sentence}:
+\begin{align*}
+& \lforall[x][\lforall[y][
+    ((\Obj Q_{q_i}(x', y) \land \Obj S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad   (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x', y') \land
+!A(x', y) \land !B(y'))) \land {}\\
+& \lforall[y][((\Obj Q_{q_i}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q_j}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0},
+  y') \land !A(\num{0}, y) \land !B(y')))
+\end{align*}
+\textbf{د ژباړې د نسخې سمون (OLCMP-065):} د سرچينې د کيڼ حرکت
+عادي څانګې بيا د نابدلې پټې په شرط کښې د ليکل کېدونکې مربع پر ځاے
+منزل مستثنا کاوه؛ دلته د ليکل کېدونکې مربع سم آرګومان کارول شوے دے۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-066):} د سرچينې همدې عادي څانګې
+هغه د بېلوالي شرط پرېښے و چې د دې درې واړو حالت-بدلونونو موخه ده؛
+دلته ور زيات شوے، څو د بل تشکيل عدد له ټولو مخکښېنيو بېل وي۔
+\item \ollabel{rep-stay} د هرې لارښوونې~$\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMstay}$ دپاره دا !!{sentence}:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y) \land !B(y')))
+\end{align*}
+\end{enumerate}
+لکه چې وينئ، هغه !!{sentence}s چې د~$M$ حالت-بدلونونه بيانوي د
+$!T(M,w)$ له اړوندو !!{sentence} سره يو شان دي، يوازې په پای کښې
+$!B(y')$ ور زياتوو۔ $!B(y')$ دا تضمينوي چې د ``بل'' تشکيل عدد~$y'$
+له ټولو مخکښېنيو عددونو~$\Obj 0$، $\Obj 0'$، \dots، څخه بېل وي۔
+% \item Sentences that express consistency conditions:
+% \begin{enumerate}
+%   \item\ollabel{rep-con-symb}%
+%   !!^a{sentence} that says that no square can have more than one
+%   symbol on it at any given time:
+%   \[\lforall[x][\lforall[y][(\Obj S_{\sigma}(x, y) \lif \lnot \Obj
+%   S_{\sigma'}(x, y))]],\]
+%   for every pair $\sigma \neq \sigma'$ of tape symbols of~$T$.
+%   \item\ollabel{rep-con-state}%
+%   !!^a{sentence} that says that $M$ cannot be in more than one state
+%   at any given time:
+%   \[\lforall[x][\lforall[y][(\Obj Q_{q}(x, y) \lif
+%   \lforall[z][\lnot \Obj
+%   Q_{q'}(z, y))]],\]
+%   for every pair $q \neq q'$ of states of~$T$.
+%   \item\ollabel{rep-con-tape}%
+%   !!^a{sentence} that says that $M$ cannot be on more than one tape
+%   square at any given time:
+%   \[\lforall[x][\lforall[y][(\Obj Q_{q}(x, y) \lif
+%   \lforall[z][\eq/[z][y]\lif \lnot \Obj
+%   Q_{q'}(z, y))]],\]
+%   for every pair $q$, $q'$ of states of~$T$.
+% \end{enumerate}
+\end{enumerate}
+$!T'(M, w)$ د ټيورينګ ماشين~$M$ او ننوت~$w$ دپاره د پورتنيو ټولو
+!!{sentence}s عطف وي۔
+
+\begin{lem}\ollabel{lem:halts-sat}
+  که~$M$ پر ننوت~$w$ له پيلېدو وروسته ودرېږي، نو~$!T'(M,w) \land
+  !E(M,w)$ يو متناهي مدل لري۔
+\end{lem}
+
+\begin{proof}
+  $\Struct{M'}$ د~\olref[ver]{lem:halt-if-valid} په ثبوت کښې د
+  جوړښت په شان واخلئ، خو دا توپيرونه ولري:
+  \begin{align*}
+    \Domain{M'} & = \{0, \dots, n\},\\
+    \Assign{\prime}{M'}(x) & =
+    \begin{cases}
+      x + 1 &\text{که $x < n$ وي}\\
+      n &\text{که نۀ وي،}
+    \end{cases} \\
+    \tuple{x,y} \in \Assign{<}{M'} &\text{هله او يوازې هله چې $x < y$ يا $x = y = n$ وي،}
+  \end{align*}
+  چې~$n = \max(k,\len{w})$ او~$k$ تر ټولو کوچنی داسې عدد دے چې~$M$
+  پر ننوت~$w$ له پيلېدو وروسته له~$k$ ګامونو وروسته درېدلے وي۔ د دې
+  خبرې تاييد د تمرين په توګه پرېږدو چې~$\Sat{M'}{!T'(M,w) \land
+  !E(M,w)}$۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-067):} سرچينې په وروستي
+  پوره-کېدو حکم کښې د درېدنې ټاکلې څيز-ژبې نښه پرېښې وه؛ دلته بشپړه
+  جمله راوړل شوې ده۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[tur][und][tra]{lem:halts-sat} ثبوت په دې ښودلو بشپړ کړئ
+  چې~$\Sat{M'}{!T'(M,w) \land !E(M,w)}$۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-068):} سرچينې په دې تمرين کښې
+  د بدلې شوې تمثيلي جملې پر ځاے پخوانۍ جمله راوړې وه او د درېدنې د
+  جملې ټاکلې نښه ئې پرېښې وه؛ دلته دواړه د لمې له بيان سره سم شوي دي۔
+\end{prob}
+
+\begin{lem}\ollabel{lem:sat-halts}
+  که~$!T'(M,w) \land !E(M,w)$ يو متناهي مدل ولري، نو~$M$ پر
+  ننوت~$w$ له پيلېدو وروسته درېږي۔
+\end{lem}
+
+\begin{proof}
+  نقيض عکس ښيو۔ فرض کړئ~$M$ پر ننوت~$w$ له پيلېدو وروسته نۀ
+  درېږي۔ که~$!T'(M,w) \land !E(M,w)$ هېڅ مدل ونۀ لري، خبره بشپړه
+  ده۔ نو فرض کړئ~$\Struct{M}$ د~$!T'(M,w) \land !E(M, w)$ يو مدل
+  دے۔ بايد وښيو چې دا متناهي کېدے نۀ شي۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-069):} سرچينې دلته د روانې
+  بدلې شوې جملې پر ځاے پخوانۍ تمثيلي جمله د مدل فرض ګرځولې وه؛ دلته
+  فرض د لمې او د پاتې ثبوت له بدلې شوې جملې سره يو شان شوے دے۔
+
+  بالکل د~\olref[ver]{lem:config} په شان ثابتولے شو چې که~$M$ پر
+  ننوت~$w$ له پيلېدو وروسته تر~$n$ ګامونو پورې نۀ وي درېدلے، نو
+  $!T'(M,w) \Entails !C(M, w, n) \land !B(\num{n})$۔ څرنګه چې~$M$
+  پر ننوت~$w$ له پيلېدو وروسته نۀ درېږي، د هر~$n \in \Nat$ دپاره
+  $!T'(M,w) \Entails !C(M, w, n) \land !B(\num{n})$۔ پام وکړئ چې
+  د~\olref[rep]{prop:mlessk} له مخې، د ټولو~$k < n$ دپاره~$!T'(M,w)
+  \Entails \num{k} < \num{n}$۔ همدارنګه~$!B(\num{n}) \Entails
+  \num{k} < \num{n} \lif \eq/[\num{k}][\num{n}]$۔ نو د ټولو~$k <
+  n$ دپاره~$\Sat{M}{\eq/[\num{k}][\num{n}]}$؛ يعنې نامتناهي ډېر
+  ترمونه~$\num{k}$ بايد په~$\Struct{M}$ کښې ټول بېلابېل ارزښتونه
+  ولري۔ خو دا غوښتنه کوي چې~$\Domain{M}$ نامتناهي وي؛ نو
+  $\Struct{M}$ د~$!T'(M,w) \land !E(M, w)$ متناهي مدل نۀ شي
+  کېدے۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[tur][und][tra]{lem:sat-halts} ثبوت په دې ښودلو بشپړ کړئ
+  چې که~$M$ پر ننوت~$w$ له پيلېدو وروسته تر~$n$ ګامونو پورې نۀ وي
+  درېدلے، نو~$!T'(M,w) \Entails !B(\num{n})$۔
+\end{prob}
+
+\begin{thm}[د تراختن‌بروت قضيه]
+  \ollabel{thm:trakhtenbrodt}
+  دا پرېکړه کېدونکې نۀ ده چې آيا د لومړۍ درجې منطق کوم خپل‌سری
+  !!{sentence} يو متناهي مدل لري (يعنې په يوه متناهي جوړښت کښې د
+  صدق وړ دے)۔
+\end{thm}
+
+\begin{proof}
+  فرض کړئ داسې ټيورينګ ماشين~$F$ وے چې په يوه متناهي جوړښت کښې د
+  صدق وړتيا پرېکړه کوي۔ بيا به مو د هر ټيورينګ ماشين~$M$ او
+  ننوت~$w$ دپاره جمله~$!T'(M,w) \land !E(M,w)$ محاسبه کړې وے، او
+  د~$F$ په وسيله به مو پرېکړه کړې وے چې آيا دا يو متناهي مدل لري۔
+  د~\cref{tur:und:tra:lem:halts-sat,tur:und:tra:lem:sat-halts} له
+  مخې، دا هله او يوازې هله متناهي مدل لري چې~$M$ پر ننوت~$w$ له
+  پيلېدو وروسته ودرېږي۔ نو د~$F$ په وسيله به مو د درېدنې مسئله حل
+  کړې وے، حال دا چې پوهېږو دا ناحل ده۔
+\end{proof}
+
+\begin{cor}\ollabel{cor:fproof-incomp}%
+  داسې هېڅ !!{derivation} نظام نشي موجودېدے چې د \emph{متناهي}
+  اعتبار دپاره سم او بشپړ وي؛ يعنې داسې !!a{derivation} نظام چې
+  $\Proves !B$ هله او يوازې هله ولري چې د هرې متناهي
+  !!{structure}~$\Struct{M}$ دپاره~$\Sat{M}{!B}$ وي۔
+\end{cor}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[tur][und][tra]{cor:fproof-incomp} ثابت کړئ۔ پام وکړئ چې~$!B$
+  په هره متناهي !!{structure} کښې هله او يوازې هله پوره کېږي چې
+  $\lnot !B$ په يوه متناهي جوړښت کښې د صدق وړ نۀ وي۔ څرګنده کړئ چې
+  ولې په يوه متناهي جوړښت کښې د صدق وړتيا د
+  \olref[tur][und][uns]{thm:valid-ce} په معنا نيمه د پرېکړې وړ ده۔
+  له دې څخه دا استدلال وکړئ چې که د متناهي اعتبار دپاره کوم
+  !!a{derivation} نظام وے، نو په يوه متناهي جوړښت کښې د صدق وړتيا
+  به پرېکړه کېدونکې وه۔
+\end{prob}
+
+
+\end{document}

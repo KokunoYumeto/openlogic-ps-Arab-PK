@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 271 of 722 source units are translated drafts. This log contains 153 terminology entries and 215 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 273 of 722 source units are translated drafts. This log contains 155 terminology entries and 223 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1380,6 +1380,24 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د ماشين څرګندونه د تمثيل پر ځاے; عددي نښه د عددنښې پر ځاے; جانشين د تالي پر ځاے
 - Review question: In Pakistani Pashto mathematical prose, is «د ټيورينګ ماشين تمثيل / عددنښه / تالي / د تشکيل غونډله / تاييد» the clearest conventional rendering of “represent a Turing machine / numeral / successor / configuration sentence / verification” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
+
+## TERM-FIRST-ORDER-SEMIDECISION
+
+- Type: terminology
+- Choice: د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل
+- Uncertainty: validity, derivation, countability and effective-function roles are supported by regional sources; the exact semi-decision compound remains provisional
+- Alternatives: نيمه فيصله کېدونکے اعتبار; د ثبوتونو اغېزمن لړ; پر منفي بېلګه بې‌پايلې پلټنه
+- Review question: In Pakistani Pashto mathematical prose, is «د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل» the clearest conventional rendering of “semi-decidable validity / enumerate derivations / positive answer / divergence on a negative instance” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
+
+## TERM-TRAKHTENBROT-FINITE-MODELS
+
+- Type: terminology
+- Choice: متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه
+- Uncertainty: finite, model, satisfiability, validity, relation and proof concepts are supported by regional sources; the theorem name and exact finite-semantics compounds remain provisional
+- Alternatives: محدود مدل د متناهي مدل پر ځاے; محدود صدق‌وړتيا; د تراختنبروت قضيه بې له نيم‌فاصلې
+- Review question: In Pakistani Pashto mathematical prose, is «متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه» the clearest conventional rendering of “finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
 
 ## DEC-OLFUN-001
 
@@ -3261,6 +3279,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-061 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition
+
+## DEC-OLCMP-062
+
+- Type: source-correction
+- Choice: uses !B, rather than the undefined metalinguistic B, for the input sentence throughout the satisfiability reduction
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-062 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-063
+
+- Type: source-correction
+- Choice: uses q_0 as both source and destination of the sole stay instruction
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-063 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-064
+
+- Type: source-correction
+- Choice: assigns the successor of 1 in the current exercise structure M-double-prime
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-064 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-065
+
+- Type: source-correction
+- Choice: uses A(x-prime,y), excluding the square actually overwritten before the head moves left
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-065 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-066
+
+- Type: source-correction
+- Choice: adds the B(y-prime) distinctness condition to the ordinary left-move branch
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-066 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-067
+
+- Type: source-correction
+- Choice: verifies satisfaction of !T-prime(M,w) conjoined with !E(M,w)
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-067 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-068
+
+- Type: source-correction
+- Choice: asks for the satisfaction claim stated by the immediately preceding lemma, using !T-prime and !E
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-068 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+
+## DEC-OLCMP-069
+
+- Type: source-correction
+- Choice: assumes the structure is a model of the modified representation !T-prime conjoined with !E
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-069 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
 
 ## DEC-REL-I
 

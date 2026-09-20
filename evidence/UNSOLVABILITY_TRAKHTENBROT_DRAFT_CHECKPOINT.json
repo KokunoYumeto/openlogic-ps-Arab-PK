@@ -1,0 +1,78 @@
+{
+  "schema": "ps-unsolvability-trakhtenbrot-draft/1",
+  "utc": "2026-09-20T15:45:55.498160+00:00",
+  "status": "OLP-0272 and OLP-0273 manually translated, source-reviewed, and accepted by standalone, cumulative, repository and two independent canonical-replay QA passes",
+  "batch_id": "PS-B053-UNSOLVABILITY-AND-TRAKHTENBROT",
+  "units": [
+    {
+      "unit_id": "OLP-0272",
+      "path": "content/turing-machines/undecidability/unsolvability-decision-problem.tex",
+      "source_sha256": "c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e",
+      "translation_sha256": "6932dd06b906aed0a224dbfa09831cf48b5cde7721f5dd62e2631f058336c42e",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-062"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0273",
+      "path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "translation_sha256": "b264978e2d7df2f2a54fc8d6cb2ac434640213e383fabab2486a1c0ae7a3a74f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-063",
+        "OLCMP-064",
+        "OLCMP-065",
+        "OLCMP-066",
+        "OLCMP-067",
+        "OLCMP-068",
+        "OLCMP-069"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 271,
+    "current_reviewed_draft_units": 2,
+    "prospective_total_after_registration": 273,
+    "cumulative_draft_units": 273,
+    "remaining_units": 449,
+    "visually_accepted_units": 255,
+    "published_units": 255
+  },
+  "structural_summary": {
+    "clean_units": [],
+    "documented_correction_units": [
+      "OLP-0272",
+      "OLP-0273"
+    ]
+  },
+  "retractions": {
+    "OLINF-002": "prior false alert remains absent",
+    "OLSIZ-011": "prior false alert remains absent"
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\UNSOLVABILITY_TRAKHTENBROT_SOURCE_CHECK.json",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_turing_undecidability_drafts.py",
+    "draft_checker_sha256": "394c17372fd2daca90167162f24b76cdadd0ba3a7050164926a6cd4b9e865fb5",
+    "retraction_ledger_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SOURCE_AUDIT_RETRACTIONS.jsonl",
+    "retraction_ledger_sha256": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "source_check_sha256": "67ed5e56b9651ecab3571ceebd73c7474b474dd1ccdfd955425a44ddae98b3e1",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\UNSOLVABILITY_TRAKHTENBROT_DRAFT_CHECK.json",
+    "draft_check_sha256": "e07585676988a4e5f50755998359598737fa35c34c195ebd6e1127a6dbca217a",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\UNSOLVABILITY_TRAKHTENBROT_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "a106a7e02bfac39db8d3ef7430dfacd39b4f53ee70c8a878ff4e4f901d091b87",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\UNSOLVABILITY_TRAKHTENBROT_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "2bf20d54b2c25468865bc7bdacc2a728d0b5b345a32d2139ce361a068b334a48",
+    "translation_review_workflow_sha256": "81702535674bdac179accde33b45ddff0bcaf7860889594dbfc11c133658947b",
+    "canonical_decisions_sha256": "8d60c8853ad730f7e52814e70dedd7dd7054d88a43e2d8e83359065bcff961ee",
+    "canonical_qa_sha256": "b14e1d38dad7a9fe0fa3f316c21251d1137d95b45b8c288338e29a05c450a53c"
+  },
+  "registration_status": "complete; all seven canonical projection artifacts reproduce byte-for-byte; OLSIZ-011 and OLINF-002 retractions remain verified across active surfaces",
+  "next_action": "Commit and push B053, then translate and source-review OLP-0274 through OLP-0279 without altering the verified v0.6.0 release bytes."
+}

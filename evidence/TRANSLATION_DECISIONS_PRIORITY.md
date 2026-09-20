@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 146 high-priority entries from the complete 368-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 148 high-priority entries from the complete 378-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -810,6 +810,7 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 14,20,23,25,32,37,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 13,14,20,23,25,32,37,38; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 15,30,122,123,124,126,137,138,173,181,182,201,217; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 15,31,124,125,127,138,179,187,205,219; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 101,102,104,111; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 74,99,100,102,111,112,113,115,119; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 23,24,25,33,34,50,54,57,61,63,167,193,201,211,213,226,230,233,241,242,251,252,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 24,26,27,33,34,52,56,59,63,65,180,213,221,234,236,237,250,255,258,260,266,268,278,279,280,282,283; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IFF
 
@@ -1439,6 +1440,8 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 42,49,59,61,66,75,77,78,99,100,101,103,104,105,106,107,111,115,160,170,181; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 36,53,57,65,67,68,85,86,87,88,89,90,91,94,99,141,160; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 22,30,79,99,113,239,242,267,278,292,320; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 19,22,30,211,261; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 20,37,43,58,66,79,89; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,29,47,53,170,171,185,188,197,215,218,229,237,239,245,247,250; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,28,30,49,55,184,205,224,242,247; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1501,6 +1504,8 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 65,66,72,83,85; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 71,77,89; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 18,22,138,241,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,267,282; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -2355,6 +2360,7 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 68; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,30,36,37,54,77,82,87,98,99,123,129,133,143; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,60,91,96,97,110,123,129,132; page: pending stable pagination in a reader containing this unit
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 24,27,30; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 22,35,75; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 22,35; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -2438,6 +2444,8 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 39,54,78; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 42,57,87; page: pending stable pagination in a reader containing this unit
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,16,17,21,22,23,26,41,52,54; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,16,17,21,22,23,27,42,57,59; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 72; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 253; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 281; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -2670,6 +2678,8 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
   - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 92,93; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 10,15,18,24,28,29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 10,15,17,22,27,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 10,14,21,28,45,57; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 10,14,21,22,35,47,60; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,236; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 18,27,261,262; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-LOGICAL-REPRESENTATION
 
@@ -2682,6 +2692,29 @@ This view contains 146 high-priority entries from the complete 368-entry decisio
 - Locations:
   - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 10,16,28,32,41,53,54,91,111; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 10,15,26,31,39,50,51,79,89,109; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 3,10,30,33,35,37,38,40,51,57,75,87,119,198,269,272,282; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 10,13,30,33,34,35,37,39,52,59,80,92,127,134,180,197,208,288,291,301,313; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 62,94,96,136,184; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 64,92,103,105,137,149,197; page: pending stable pagination in a reader containing this unit
+
+## TERM-FIRST-ORDER-SEMIDECISION
+
+- Source term or sense: semi-decidable validity / enumerate derivations / positive answer / divergence on a negative instance
+- Choice: د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل
+- Why provisional: validity, derivation, countability and effective-function roles are supported by regional sources; the exact semi-decision compound remains provisional
+- Rationale: Validity is semi-decidable because a machine can enumerate all formal derivations and halt with output one when it finds a derivation of the input sentence. Soundness makes every positive answer correct and completeness guarantees eventual discovery for valid sentences; invalid sentences may make the search diverge.
+- Alternatives: نيمه فيصله کېدونکے اعتبار; د ثبوتونو اغېزمن لړ; پر منفي بېلګه بې‌پايلې پلټنه
+- Please double-check: In Pakistani Pashto mathematical prose, is «د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل» the clearest conventional rendering of “semi-decidable validity / enumerate derivations / positive answer / divergence on a negative instance” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 72,75; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 70,72,77; page: pending stable pagination in a reader containing this unit
+
+## TERM-TRAKHTENBROT-FINITE-MODELS
+
+- Source term or sense: finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem
+- Choice: متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه
+- Why provisional: finite, model, satisfiability, validity, relation and proof concepts are supported by regional sources; the theorem name and exact finite-semantics compounds remain provisional
+- Rationale: Finite satisfiability asks for one finite structure satisfying a sentence, while finite validity quantifies over every finite structure. Trakhtenbrot's theorem says finite satisfiability is undecidable. Keep this distinct from the compactness phrase finitely satisfiable, which concerns every finite subset of a sentence set.
+- Alternatives: محدود مدل د متناهي مدل پر ځاے; محدود صدق‌وړتيا; د تراختنبروت قضيه بې له نيم‌فاصلې
+- Please double-check: In Pakistani Pashto mathematical prose, is «متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه» the clearest conventional rendering of “finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 3,10,34,50,54,57,167,193,213,223,226,233,252,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,34,52,56,59,180,213,237,247,250,258,260,279,280,282,283; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

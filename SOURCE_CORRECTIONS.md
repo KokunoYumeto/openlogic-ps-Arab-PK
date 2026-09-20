@@ -1882,3 +1882,75 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-MANAGER-AUDIT-20260920-B051-DEFINITION-AND-PROVENANCE-REPAIR`
 - Treatment: allows an undefined partial-function value to be witnessed by divergence, a halt without an assigned output, or a malformed unary output.
 - Disclosure: `include-halt-without-valid-output-in-undefined-case-plus-adjacent-note`.
+
+## OLCMP-062
+
+- Unit: `OLP-0272`
+- Frozen source: `content/turing-machines/undecidability/unsolvability-decision-problem.tex` (c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e) at `content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-57`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex:61`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: uses !B, rather than the undefined metalinguistic B, for the input sentence throughout the satisfiability reduction.
+- Disclosure: `restore-formula-marker-plus-adjacent-note`.
+
+## OLCMP-063
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:68-76`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:89`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: uses q_0 as both source and destination of the sole stay instruction.
+- Disclosure: `replace-undefined-state-with-q0-plus-adjacent-note`.
+
+## OLCMP-064
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:71-73`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:92`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: assigns the successor of 1 in the current exercise structure M-double-prime.
+- Disclosure: `replace-M-prime-with-M-double-prime-plus-adjacent-note`.
+
+## OLCMP-065
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:112-123`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:132`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: uses A(x-prime,y), excluding the square actually overwritten before the head moves left.
+- Disclosure: `replace-unchanged-square-argument-plus-adjacent-note`.
+
+## OLCMP-066
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:112-135`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:135`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: adds the B(y-prime) distinctness condition to the ordinary left-move branch.
+- Disclosure: `add-B-of-y-prime-to-ordinary-left-branch-plus-adjacent-note`.
+
+## OLCMP-067
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:170-185`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:199`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: verifies satisfaction of !T-prime(M,w) conjoined with !E(M,w).
+- Disclosure: `restore-formula-marker-plus-adjacent-note`.
+
+## OLCMP-068
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:187-190`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:207`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: asks for the satisfaction claim stated by the immediately preceding lemma, using !T-prime and !E.
+- Disclosure: `restore-T-prime-and-E-marker-plus-adjacent-note`.
+
+## OLCMP-069
+
+- Unit: `OLP-0273`
+- Frozen source: `content/turing-machines/undecidability/trakhtenbrot.tex` (bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802) at `content/turing-machines/undecidability/trakhtenbrot.tex:197-214`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:222`
+- Audit: `PS-OWNER-SEMANTIC-20260920-UNSOLVABILITY-TRAKHTENBROT`
+- Treatment: assumes the structure is a model of the modified representation !T-prime conjoined with !E.
+- Disclosure: `replace-T-with-T-prime-plus-adjacent-note`.

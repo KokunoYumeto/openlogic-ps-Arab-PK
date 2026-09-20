@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 368 terminology, source-correction and other judgment-dependent entries across 271 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 378 terminology, source-correction and other judgment-dependent entries across 273 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -1153,6 +1153,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0186; Overspill; `content/model-theory/basics/overspill.tex` source line(s) 14,20,23,25,32,37,38; `ps-Arab-PK/content/model-theory/basics/overspill.tex` target line(s) 13,14,20,23,25,32,37,38; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 15,30,122,123,124,126,137,138,173,181,182,201,217; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 15,31,124,125,127,138,179,187,205,219; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 101,102,104,111; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 74,99,100,102,111,112,113,115,119; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 23,24,25,33,34,50,54,57,61,63,167,193,201,211,213,226,230,233,241,242,251,252,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 24,26,27,33,34,52,56,59,63,65,180,213,221,234,236,237,250,255,258,260,266,268,278,279,280,282,283; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IFF
 
@@ -1865,6 +1866,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 42,49,59,61,66,75,77,78,99,100,101,103,104,105,106,107,111,115,160,170,181; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 36,53,57,65,67,68,85,86,87,88,89,90,91,94,99,141,160; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 22,30,79,99,113,239,242,267,278,292,320; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 19,22,30,211,261; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 20,37,43,58,66,79,89; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,29,47,53,170,171,185,188,197,215,218,229,237,239,245,247,250; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,28,30,49,55,184,205,224,242,247; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1929,6 +1932,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 65,66,72,83,85; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 71,77,89; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 18,22,138,241,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,267,282; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -2351,6 +2356,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 14,15,22,24,33,36,44,48; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 15,22,32,34; page: pending stable pagination in a reader containing this unit
   - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 199; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 15,16,21,32,36,39,40,41,45,46,47,48,49,54,56,76,96,103,104,110,115,118,119,145,152,159,214,220,238,262,264,270,275,276,277,283,288,289,293,294; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 56,60; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 17,30,31,40,44,50,51,55,56,57,62,71,72,75,84,85; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 42,46,52,57,58,77; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 15,16,18,22,23,24,25,30,32,36,48,63,64,66,71,172,174,205,206,208,209,213,220,226,231,241,242,251,252,254,255,256; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,26,93,94,185,250,251,255,256,267,279,280,282,283; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2924,6 +2931,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 68; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,30,36,37,54,77,82,87,98,99,123,129,133,143; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,60,91,96,97,110,123,129,132; page: pending stable pagination in a reader containing this unit
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 24,27,30; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 22,35,75; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 22,35; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -3017,6 +3025,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 39,54,78; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 42,57,87; page: pending stable pagination in a reader containing this unit
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,16,17,21,22,23,26,41,52,54; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,16,17,21,22,23,27,42,57,59; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 22; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 72; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 253; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 281; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -3283,6 +3293,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 92,93; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 10,15,18,24,28,29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 10,15,17,22,27,28; page: pending stable pagination in a reader containing this unit
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 10,14,21,28,45,57; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 10,14,21,22,35,47,60; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,236; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 18,27,261,262; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-LOGICAL-REPRESENTATION
 
@@ -3297,6 +3309,33 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Locations:
   - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 10,16,28,32,41,53,54,91,111; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 10,15,26,31,39,50,51,79,89,109; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 3,10,30,33,35,37,38,40,51,57,75,87,119,198,269,272,282; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 10,13,30,33,34,35,37,39,52,59,80,92,127,134,180,197,208,288,291,301,313; page: pending stable pagination in a reader containing this unit
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 62,94,96,136,184; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 64,92,103,105,137,149,197; page: pending stable pagination in a reader containing this unit
+
+## TERM-FIRST-ORDER-SEMIDECISION
+
+- Source term or sense: semi-decidable validity / enumerate derivations / positive answer / divergence on a negative instance
+- Chosen rendering or treatment: د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Validity is semi-decidable because a machine can enumerate all formal derivations and halt with output one when it finds a derivation of the input sentence. Soundness makes every positive answer correct and completeness guarantees eventual discovery for valid sentences; invalid sentences may make the search diverge.
+- Alternatives: نيمه فيصله کېدونکے اعتبار; د ثبوتونو اغېزمن لړ; پر منفي بېلګه بې‌پايلې پلټنه
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د اعتبار نيمه پرېکړه / د اشتقاقونو اغېزمنه شمېرنه / مثبت ځواب / پر منفي بېلګه نۀ درېدل» the clearest conventional rendering of “semi-decidable validity / enumerate derivations / positive answer / divergence on a negative instance” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
+- Locations:
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 72,75; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 70,72,77; page: pending stable pagination in a reader containing this unit
+
+## TERM-TRAKHTENBROT-FINITE-MODELS
+
+- Source term or sense: finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem
+- Chosen rendering or treatment: متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Finite satisfiability asks for one finite structure satisfying a sentence, while finite validity quantifies over every finite structure. Trakhtenbrot's theorem says finite satisfiability is undecidable. Keep this distinct from the compactness phrase finitely satisfiable, which concerns every finite subset of a sentence set.
+- Alternatives: محدود مدل د متناهي مدل پر ځاے; محدود صدق‌وړتيا; د تراختنبروت قضيه بې له نيم‌فاصلې
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «متناهي مدل / په متناهي جوړښت کښې د صدق وړتيا / متناهي اعتبار / د تراختن‌بروت قضيه» the clearest conventional rendering of “finite model / finite satisfiability / finite validity / Trakhtenbrot's theorem” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete unsolvability and Trakhtenbrot source and language review
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 3,10,34,50,54,57,167,193,213,223,226,233,252,255; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 10,34,52,56,59,180,213,237,247,250,258,260,279,280,282,283; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -6014,6 +6053,110 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: bounded manager-audit repair after complete source/target review of OLP-0257 and the affected OLP-0258 definition
 - Locations:
   - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) content/turing-machines/machines-computations/unary-numbers.tex:227-235; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 238; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-062
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses !B, rather than the undefined metalinguistic B, for the input sentence throughout the satisfiability reduction
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline formula changes exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-062 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) content/turing-machines/undecidability/unsolvability-decision-problem.tex:43-57; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 61; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-063
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses q_0 as both source and destination of the sole stay instruction
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline transition formula changes exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-063 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:68-76; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 89; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-064
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: assigns the successor of 1 in the current exercise structure M-double-prime
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline assignment formula changes exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-064 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:71-73; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-065
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses A(x-prime,y), excluding the square actually overwritten before the head moves left
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The source side of the one jointly changed aligned span is registered here; its corrected target side is co-registered under OLCMP-066.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-065 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:112-123; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 132; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-066
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: adds the B(y-prime) distinctness condition to the ordinary left-move branch
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The target side of the one jointly changed aligned span is registered here; its source side is co-registered under OLCMP-065.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-066 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:112-135; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 135; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-067
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: verifies satisfaction of !T-prime(M,w) conjoined with !E(M,w)
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline satisfaction formula changes exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-067 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:170-185; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 199; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-068
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: asks for the satisfaction claim stated by the immediately preceding lemma, using !T-prime and !E
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline satisfaction formula changes in two localized symbols exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-068 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:187-190; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 207; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-069
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: assumes the structure is a model of the modified representation !T-prime conjoined with !E
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline conjunction changes exactly as registered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-069 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete unsolvability and Trakhtenbrot batch and frozen source bytes
+- Locations:
+  - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) content/turing-machines/undecidability/trakhtenbrot.tex:197-214; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 222; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 
