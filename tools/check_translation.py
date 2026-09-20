@@ -26,7 +26,10 @@ def localize_text(s):
   content=s[m.end():i-1]
   embedded=''.join(re.findall(r'\$[^$]*\$',content))
   out+=s[pos:m.start()]+m.group(0)+'LOCALIZED'+embedded+'}';pos=i
- return out+s[pos:]
+ result=out+s[pos:]
+ # Some frozen source cases expressions contain bare English prose rather
+ # than a text macro. Treat that prose as localizable just like \text{...}.
+ return re.sub(r'(?<![A-Za-z\\])otherwise(?![A-Za-z])',lambda _:r'\text{LOCALIZED}',result)
 def math_spans(s):
  spans=[];i=0
  local_start=re.compile(r'\\(?:text|intertext|emph|textrm|mbox)\s*\{')

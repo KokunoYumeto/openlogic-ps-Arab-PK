@@ -1,0 +1,68 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representing-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rel}
+
+\olsection{د اړيکو تمثيلول}
+
+دا بيان کړو چې يوه \emph{اړيکه} تمثيلېدونکې وي څه معنا لري۔
+
+\begin{defn}
+\ollabel{defn:representing-relations} پر طبيعي عددونو اړيکه
+$R(x_0,\dots,x_k)$ هله \emph{په~$\Th{Q}$ کښې تمثيلېدونکې} ده چې
+داسې فارمول~$!A_R(x_0,\dots,x_k)$ وي چې هر کله
+$R(n_0,\dots,n_k)$ رښتيا وي، $\Th{Q}$،
+$!A_R(\num{n_0},\dots,\num{n_k})$ ثابت کړي، او هر کله
+$R(n_0,\dots,n_k)$ ناسم وي، $\Th{Q}$،
+$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$ ثابت کړي۔
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:representing-rels} يوه اړيکه په~$\Th{Q}$ کښې هله او
+يوازې هله تمثيلېدونکې ده چې محاسبه کېدونکې وي۔
+\end{thm}
+
+\begin{proof}
+د مخکښ لوري دپاره فرض کړئ اړيکه~$R(x_0,\dots,x_k)$ په
+فارمول~$!A_R(x_0,\dots,x_k)$ تمثيلېږي۔ د~$R$ د محاسبې الګوريتم دا
+دے: پر ننوتونو~$n_0$، \dots،~$n_k$ په هممهاله ډول د
+$!A_R(\num{n_0}, \dots, \num{n_k})$ د ثبوت او د
+$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$ د ثبوت پلټنه وکړئ۔ زموږ
+د فرض له مخې پلټنه خامخا يو له دغو دواړو مومي؛ که لومړے وي، «هو»
+راپور کړئ، او که نۀ، «نه» راپور کړئ۔
+
+په بل لوري کښې فرض کړئ~$R(x_0, \dots, x_k)$ محاسبه کېدونکې ده۔ د
+تعريف له مخې دا په دې معنا ده چې تابعه~$\Char{R}(x_0, \dots, x_k)$
+محاسبه کېدونکې ده۔ د~\olref[int]{thm:representable-iff-comp} له
+مخې، $\Char{R}$ په کوم فارمول، مثلاً
+$!A_{\Char{R}}(x_0, \dots, x_k, y)$، تمثيلېږي۔
+$!A_R(x_0, \dots, x_k)$ هغه فارمول ونيسئ چې
+$!A_{\Char{R}}(x_0, \dots, x_k, \num{1})$ وي۔ بيا د هر~$n_0$،
+\dots،~$n_k$ دپاره، که~$R(n_0, \dots, n_k)$ رښتيا وي، نو
+$\Char{R}(n_0, \dots, n_k) = 1$؛ په دې حالت کښې~$\Th{Q}$،
+$!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, \num{1})$ ثابتوي، او
+نو~$\Th{Q}$، $!A_R(\num{n_0}, \dots, \num{n_k})$ ثابتوي۔ له بلې
+خوا، که~$R(n_0, \dots, n_k)$ ناسم وي، نو
+$\Char{R}(n_0, \dots, n_k) = 0$۔ دا په دې معنا ده چې~$\Th{Q}$
+لاندې ثابتوي:
+\[
+\lforall[y][(!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, y) \lif y =
+  \num{0})].
+\]
+څرنګه چې~$\Th{Q}$، $\eq/[\num{0}][\num{1}]$ ثابتوي، $\Th{Q}$،
+$\lnot !A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, \num{1})$
+ثابتوي، او نو~$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$ هم
+ثابتوي۔
+\end{proof}
+
+\begin{prob}
+وښيئ چې که~$R$ په~$\Th{Q}$ کښې تمثيلېدونکې وي، نو~$\Char{R}$ هم
+همداسې ده۔
+\end{prob}
+
+\end{document}

@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 397 terminology, source-correction and other judgment-dependent entries across 288 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 409 terminology, source-correction and other judgment-dependent entries across 300 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -385,6 +385,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0217; Primitive Recursive Relations; `content/computability/recursive-functions/pr-relations.tex` source line(s) 14,28,122; `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex` target line(s) 13,25,33,34,36,71,90; page: pending stable pagination in a reader containing this unit
   - OLP-0218; Bounded Minimization; `content/computability/recursive-functions/bounded-minimization.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex` target line(s) 13,14; page: pending stable pagination in a reader containing this unit
   - OLP-0219; Primes; `content/computability/recursive-functions/primes.tex` source line(s) 14,15; `ps-Arab-PK/content/computability/recursive-functions/primes.tex` target line(s) 12,20; page: pending stable pagination in a reader containing this unit
+  - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) 16,25; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) 13,16,26,31; page: pending stable pagination in a reader containing this unit
 
 ## TERM-IDENTITY
 
@@ -414,6 +415,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0136; A Direct Proof of the Compactness Theorem; `content/first-order-logic/completeness/compactness-direct.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0137; The L\"owenheim--Skolem Theorem; `content/first-order-logic/completeness/downward-ls.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/completeness/downward-ls.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 123; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ORDER
 
@@ -987,6 +992,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0293; Simulating Primitive Recursion; `content/incompleteness/representability-in-q/prim-rec.tex` source line(s) 21,22,29,55; `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex` target line(s) 23,24,32,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0295; Composition is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/composition-representable.tex` source line(s) 3,10,75,98; `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -1198,6 +1205,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 127; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 123; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CEILING
 
@@ -1621,6 +1629,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 13,18; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 13,18; page: pending stable pagination in a reader containing this unit
   - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 47,79,85,86,89; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 168,211,212; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 182,184,185,227,228; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROP-SEMANTICS
 
@@ -1731,6 +1740,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 124,129,130,177,186,189,192,196,204; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 48,109,110,115; page: pending stable pagination in a reader containing this unit
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 214; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 210; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 71,74,75,79,94; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 59,71,92,146; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) 83,93,161; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) 83,84,93,95; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-FORMS
 
@@ -1801,6 +1812,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 32,33; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 29,61; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0204; introduction; `content/model-theory/lindstrom/introduction.tex` source line(s) 13; `ps-Arab-PK/content/model-theory/lindstrom/introduction.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 1,3,10,12,21,97,178,201,209,268,279,283,295; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-SYSTEMS
 
@@ -2290,6 +2302,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 90,185,188,192,195,199,203,208,238,251,266,293; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 84,232; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 15,35,63,69,97; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,21,25,26,28,35,39,41,43,60,61,64,69,70,75,79,102,106,108,109,115,119,125,128,133; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 119,136; page: pending stable pagination in a reader containing this unit
+  - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) 12,16,24,65,69; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) 70,71; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -2651,6 +2664,15 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 46,74,75,132; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 67,98,127; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0289; inc; `content/incompleteness/representability-in-q/representability-in-q.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representability-in-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 55,72; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) 14,15,53,70; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0295; Composition is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/composition-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 50; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
+  - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NONSTANDARD-ARITHMETIC-BLOCKS
 
@@ -2839,6 +2861,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 95,107,114,132,227,237,252,256,260,264,268; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 111,138,241,262,268; page: pending stable pagination in a reader containing this unit
   - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 90,103,115,119,123,143,148,182,194,240,244,252,287,291,307,311,315,320,324; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 95,112,118,126,143,250,265,283,286,312,318; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 45,51,57,69,84,107,119,163,166,170,172,180,189; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 52,103,168,174,212; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 103,108,111,115,117; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) 103,106,109,112,114,116; page: pending stable pagination in a reader containing this unit
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 13,16,19,125,176; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 14,15,17,18,121,174; page: pending stable pagination in a reader containing this unit
+  - OLP-0293; Simulating Primitive Recursion; `content/incompleteness/representability-in-q/prim-rec.tex` source line(s) 10,12,15,27,47; `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex` target line(s) 10,12,15,30,51; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 21; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROJECTION-CHARACTERISTIC
 
@@ -2859,6 +2886,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0217; Primitive Recursive Relations; `content/computability/recursive-functions/pr-relations.tex` source line(s) 62,63; `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex` target line(s) 13,36,49; page: pending stable pagination in a reader containing this unit
   - OLP-0223; Non-Primitive Recursive Functions; `content/computability/recursive-functions/non-pr-functions.tex` source line(s) 67,69,73; `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex` target line(s) 39,42; page: pending stable pagination in a reader containing this unit
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 17,27; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 17,29; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 103,122; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) 102,119; page: pending stable pagination in a reader containing this unit
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 129; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 113,125; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) 18,33,45,56; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) 17,32,44,56; page: pending stable pagination in a reader containing this unit
+  - OLP-0295; Composition is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/composition-representable.tex` source line(s) 72; `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-BOUNDED-MINIMIZATION
 
@@ -2875,6 +2907,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0218; Bounded Minimization; `content/computability/recursive-functions/bounded-minimization.tex` source line(s) 3,10,13,16,17,18,19,22,29,41,66; `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
   - OLP-0219; Primes; `content/computability/recursive-functions/primes.tex` source line(s) 12,22,53,54,55,77; `ps-Arab-PK/content/computability/recursive-functions/primes.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) 69,144,151,154,156,157,158,160,163; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) 47; page: pending stable pagination in a reader containing this unit
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 117,178; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 175; page: pending stable pagination in a reader containing this unit
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) 12,16; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 18,25,29,37,153,164,191,197,245,248,250,256,262; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIME-SEQUENCE-CODING
 
@@ -3004,6 +3039,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0227; General Recursive Functions; `content/computability/recursive-functions/general-recursive-functions.tex` source line(s) 10,13,15,18,22,26,29; `ps-Arab-PK/content/computability/recursive-functions/general-recursive-functions.tex` target line(s) 10,22,28,35; page: pending stable pagination in a reader containing this unit
   - OLP-0228; cmp; `content/computability/computability-theory/computability-theory.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/computability-theory.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0229; Introduction; `content/computability/computability-theory/introduction.tex` source line(s) 15,57; `ps-Arab-PK/content/computability/computability-theory/introduction.tex` target line(s) 14; page: pending stable pagination in a reader containing this unit
+  - OLP-0289; inc; `content/incompleteness/representability-in-q/representability-in-q.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representability-in-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 72,102,103; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 76; page: pending stable pagination in a reader containing this unit
+  - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 17,18,22,24,26,28,34,37; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) 18,19,26; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SMN-PARAMETERIZATION
 
@@ -3062,6 +3100,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 18,39,112; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 18,37,114; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 31,37,66; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 25,31,36,69; page: pending stable pagination in a reader containing this unit
+  - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLY-ENUMERABLE-SETS
 
@@ -3339,6 +3378,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,36,37,98,99,119,123,129,133; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,37,68,73,76,82,84,85,88,95,96,108,117,118,123,129,130,132; page: pending stable pagination in a reader containing this unit
   - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 14,16,26,31,33,36,47,52,54,58,80,282,302,308,327,338; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 17; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) 33; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) 32; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FIRST-ORDER-DECISION-PROBLEM
 
@@ -3430,6 +3470,15 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,20,26,28,43,44,46,47,53,60,61,70,101,108,114,118,124; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,27,56,119; page: pending stable pagination in a reader containing this unit
   - OLP-0280; inc; `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` source line(s) 8,16,18,20; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
   - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 25,38,39,41,45,46,51,73,85; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 25,28,32,35,36,37,41,42,45,46,48,66,76; page: pending stable pagination in a reader containing this unit
+  - OLP-0289; inc; `content/incompleteness/representability-in-q/representability-in-q.tex` source line(s) 2,8,12,18,20,22,24,26; `ps-Arab-PK/content/incompleteness/representability-in-q/representability-in-q.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 2,16,19,75,77,92,93,97,101,105,106,107,109,110,112,114,124,125; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) 17,19,76,93,101,105,106,107,108,110,112,120,121; page: pending stable pagination in a reader containing this unit
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 2,3,10,12,14,18,28,32,34,51,60; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 10,12,13,18,26,55,65,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0294; Basic Functions are Representable in~$\Th{Q}$; `content/incompleteness/representability-in-q/basic-representable.tex` source line(s) 2,3,10,12,15,17,19,20,21,24,33,39,46,50,64,143,168,191; `ps-Arab-PK/content/incompleteness/representability-in-q/basic-representable.tex` target line(s) 10,13,15,18,20,21,23,33,39,45,51,64,146,173,197; page: pending stable pagination in a reader containing this unit
+  - OLP-0295; Composition is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/composition-representable.tex` source line(s) 2,3,10,18,20,23,24,25,41,43,61,63,76,77,84; `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex` target line(s) 10,19,20,23,24,25,42,44,62,64,78,80,86; page: pending stable pagination in a reader containing this unit
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) 2,3,10,13,15,198,203,212,236; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) 10,13,15,214,219,228,254; page: pending stable pagination in a reader containing this unit
+  - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 2,3,10,13,31,33,36,37,42,44,45,47,49,54,56; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) 10,13,31,33,36,37,42,43,45,47,49,53,55; page: pending stable pagination in a reader containing this unit
+  - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) 2,3,11,13,16,17,25,31,40,41,59; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) 11,13,17,27,32,43,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) 2,37; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) 37; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
 
@@ -3463,6 +3512,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 22; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 18,22,48,78; page: pending stable pagination in a reader containing this unit
   - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 27,79,80,83,85,104,133,255,262; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 27,79,81,84,85,101,108,140,177,178,179,241,269; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 34,48,83,85,96,120,121,143,173,190,192,210; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 34,48,92,119,134,145,167,176,195,216; page: pending stable pagination in a reader containing this unit
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 74,91,99; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 79,98,106; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SYNTAX-SUBSTITUTION-PREDICATES
 
@@ -3496,6 +3546,65 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 10,13,14,17,18,19,33,71,80,85,94,95,98,99,107,113,134,136,152,156,157,158,176,177,178,179,185,186,212,228,230,237,241,243,254,263,267,269,272,274; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 17,101,140,142,161,162,180,181,182,188,190,215,219,235,270,276,278,285; page: pending stable pagination in a reader containing this unit
   - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 10,13,14,17,18,19,20,25,43,45,64,73,78,88,89,92,98,114,118,120,121,122,125,132,142,150,152,180,206,241,244,252,256,258,268,274,275,282,284,288; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 19,44,90,147,176,280; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 10,13,14,15,20,28,29,33,34,44,45,47,50,62,68,143,165,174,177,179,190,192,210; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 57,59,68,69,71,74,91,99,104; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-BETA-SEQUENCE-CODING
+
+- Source term or sense: beta function / finite-sequence decoder / pairing function / projection functions
+- Chosen rendering or treatment: بېټا تابعه / د متناهي لړۍ کوډ پرانيستونکې تابعه / جوړوونکې تابعه / پروجکشن تابعې
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: The beta function decodes the i-th entry from one code d. Its existence requirement covers every finite sequence without requiring a computable encoder. Pairing and its projections package and recover the two parameters used by the decoder.
+- Alternatives: بېټا کوډوونکې تابعه; د لړۍ لوستونکې تابعه; د جوړو کوډوونکې تابع
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «بېټا تابعه / د متناهي لړۍ کوډ پرانيستونکې تابعه / جوړوونکې تابعه / پروجکشن تابعې» the clearest conventional rendering of “beta function / finite-sequence decoder / pairing function / projection functions” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+- Locations:
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 10,15,24,30,34,36,37,74,127,129; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 10,35,123,125; page: pending stable pagination in a reader containing this unit
+  - OLP-0293; Simulating Primitive Recursion; `content/incompleteness/representability-in-q/prim-rec.tex` source line(s) 13,35,41,48; `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex` target line(s) 12,52; page: pending stable pagination in a reader containing this unit
+
+## TERM-SUNZI-MODULAR-REMAINDER
+
+- Source term or sense: relatively prime / congruent modulo / Sunzi's theorem / Chinese remainder theorem / remainder
+- Chosen rendering or treatment: خپلمنځي اول / د مودولو له مخې مطابق / د سونزي قضيه / د چين د پاتې شونو قضيه / پاتې شونې
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Congruence modulo c means equal remainders on division by c. Sunzi's theorem supplies one number with prescribed remainders for pairwise coprime moduli; this is the number-theoretic mechanism behind the beta decoder.
+- Alternatives: نسبتاً اول; مودولو تطابق; د چين د باقياتو قضيه; باقي
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «خپلمنځي اول / د مودولو له مخې مطابق / د سونزي قضيه / د چين د پاتې شونو قضيه / پاتې شونې» the clearest conventional rendering of “relatively prime / congruent modulo / Sunzi's theorem / Chinese remainder theorem / remainder” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+- Locations:
+  - OLP-0292; The Beta Function Lemma; `content/incompleteness/representability-in-q/beta-function.tex` source line(s) 45,46,49,55,57,60,62,72,76,95,105,142,157; `ps-Arab-PK/content/incompleteness/representability-in-q/beta-function.tex` target line(s) 43,47,53,55,58,60,70,73,92,103,138,153,154; page: pending stable pagination in a reader containing this unit
+
+## TERM-REGULAR-MINIMIZATION-REPRESENTATION
+
+- Source term or sense: regular minimization / unbounded search / least zero / representability under minimization
+- Chosen rendering or treatment: منظم اقل موندل / بې‌حده پلټنه / تر ټولو وړوکے صفر / د اقل موندلو لاندې تمثيلېدنه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Regular minimization returns the least input at which the represented total search function is zero. The representing formula states both zero at the candidate and nonzero values below it; regularity guarantees termination for every parameter tuple.
+- Alternatives: منظمه کمينه‌موندنه; نامحدوده پلټنه; تر ټولو لږ صفر
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «منظم اقل موندل / بې‌حده پلټنه / تر ټولو وړوکے صفر / د اقل موندلو لاندې تمثيلېدنه» the clearest conventional rendering of “regular minimization / unbounded search / least zero / representability under minimization” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+- Locations:
+  - OLP-0290; Introduction; `content/incompleteness/representability-in-q/introduction.tex` source line(s) 104,108,111,119,120,126; `ps-Arab-PK/content/incompleteness/representability-in-q/introduction.tex` target line(s) 17,19,76,93,101,103,105,106,107,108,109,110,112,115,117,120,121; page: pending stable pagination in a reader containing this unit
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 102; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 10,12,13,18,26,55,65,108; page: pending stable pagination in a reader containing this unit
+  - OLP-0293; Simulating Primitive Recursion; `content/incompleteness/representability-in-q/prim-rec.tex` source line(s) 13,21,22,30,35,56; `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex` target line(s) 13,23,25,32,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) 10,12,16,198,203,212,236; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) 10,12,13,15,17,214,219,228,254; page: pending stable pagination in a reader containing this unit
+  - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 22,24,28,34; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) 10,13,21,27,31,33,36,37,42,43,45,47,49,53,55; page: pending stable pagination in a reader containing this unit
+
+## TERM-SIGMA1-BOUNDED-COMPLETENESS
+
+- Source term or sense: bounded quantifier / Delta-0 formula / Sigma-1 formula / Pi-1 formula / Sigma-1 completeness
+- Chosen rendering or treatment: محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Delta-0 formulas use only propositional connectives and bounded quantifiers. Sigma-1 and Pi-1 formulas add one leading existential or universal quantifier respectively. Sigma-1 completeness here means every Sigma-1 sentence true in the standard natural-number structure is provable in Q.
+- Alternatives: محدود کمیت ټاکونکی; ډېلټا-صفر او سيګما-يو فورمول; د سيګما-يو تکميل
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا» the clearest conventional rendering of “bounded quantifier / Delta-0 formula / Sigma-1 formula / Pi-1 formula / Sigma-1 completeness” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+- Locations:
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 1,3,10,12,16,17,19,21,25,29,36,40,41,43,44,97,164,178,191,201,202,209,248,250,256,262,266,268,279,283,284,289,295; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 10,19,25,29,37,178,208,251,262,263,269,274; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -6486,6 +6595,110 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
 - Locations:
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-208; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 211; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-083
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: names the representing formula A_f in the lemma premise, matching its displayed use and every subsequent use
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline formula changes exactly as registered; the disclosure adds no further math spans.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-083 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) content/incompleteness/representability-in-q/representable-comp.tex:16-23; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 25; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-084
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states h(vec x,y), matching both primitive-recursion equations directly below
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline formula changes exactly as registered; the disclosure adds no further math spans.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-084 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0293; Simulating Primitive Recursion; `content/incompleteness/representability-in-q/prim-rec.tex` source line(s) content/incompleteness/representability-in-q/prim-rec.tex:12-20; `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex` target line(s) 20; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-085
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: directs the exercise to both proof directions, propositions rep1 and rep2, before the general composition proposition
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the first cross-reference identifier changes, exactly as registered; no math or terminology token changes.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-085 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0295; Composition is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/composition-representable.tex` source line(s) content/incompleteness/representability-in-q/composition-representable.tex:97-103; `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex` target line(s) 103; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-086
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: derives the middle equality from the induction hypothesis and Q5, then obtains the requested equality by transitivity with step5
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One align environment changes exactly as registered; localized explanatory text remains normalized by the checker.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-086 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0296; Regular Minimization is Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/minimization-representable.tex` source line(s) content/incompleteness/representability-in-q/minimization-representable.tex:42-55; `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex` target line(s) 61; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-087
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: equates t_2 with numeral m, its value fixed immediately above
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline formula changes exactly as registered; the disclosure adds no further math spans.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-087 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) content/incompleteness/representability-in-q/sigma1-completeness.tex:108-117; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 123; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-088
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: proves numeral k prime plus numeral n equals numeral m, matching the existential witness z prime plus t_1 in Q8
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: One inline formula changes exactly as registered; the disclosure adds no further math spans.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-088 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) content/incompleteness/representability-in-q/sigma1-completeness.tex:124-135; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 139; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-089
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: uses the positive equality z prime equals zero in the equal-values case and cites Q2 for both successor-not-zero contradictions
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: The equality sign and two axiom references change exactly as registered; the disclosure adds no further math spans.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-089 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) content/incompleteness/representability-in-q/sigma1-completeness.tex:137-151; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 159; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-090
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: identifies the zero-instance right side of the bounded universal equivalence as the empty conjunction, whose value is true
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: This prose correction changes no math span, identifier or terminology token.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-090 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+- Locations:
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) content/incompleteness/representability-in-q/sigma1-completeness.tex:165-173; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 184; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

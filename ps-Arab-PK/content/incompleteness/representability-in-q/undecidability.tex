@@ -1,0 +1,76 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: undecidability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{und}
+\olsection{ناپرېکړتيا}
+
+تيوري~$\Th{T}$ هغه وخت \emph{ناپرېکړه‌وړ} بولو چې داسې محاسبوي
+کړنلاره نۀ وي چې له متناهي شمېر ګامونو وروسته د~$\Th{T}$ د ژبې د
+هرې جملې~$!A$ دپاره په باوري ډول دې پوښتنې ته سم ځواب ورکړي:
+«آيا~$\Th{T}$، $!A$ ثابتوي؟» نو~$\Th{Q}$ به هله او يوازې هله د
+پرېکړې وړ وه چې داسې محاسبوي کړنلاره وای چې د حساب د ژبې د ورکړل شوې
+جملې~$!A$ دپاره پرېکړه وکړي چې~$\Th{Q} \Proves !A$ ده که نۀ۔ دا
+پوښتنه داسې لا کره کولے شو: آيا اړيکه~$\Prov[\Th{Q}](y)$، چې پر~$y$
+هله صدق کوي چې~$y$ په~$\Th{Q}$ کښې د ثابتېدونکې جملې ګوډل شمېره
+وي، بازګشتي ده؟ ځواب «نه» دے۔
+
+\begin{thm}
+$\Th{Q}$ ناپرېکړه‌وړ ده؛ يعنې اړيکه
+\[
+\Prov[\Th{Q}](y) \defiff \fn{Sent}(y) \land
+\lexists[x][\Prf[\Th{Q}](x, y)]
+\]
+بازګشتي نۀ ده۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ بازګشتي وای۔ بيا د درېدنې مسئله داسې حلولے شو: د ورکړو
+$e$ او~$n$ دپاره پوهېږو چې~$\cfind{e}(n) \fdefined$ هله او يوازې
+هله چې داسې~$s$ وي چې~$T(e, n, s)$، چې~$T$ د
+\olref[cmp][rec][nft]{thm:kleene-nf} څخه د کلېني پريديکات دے۔ ځکه
+$T$ بنسټيزه بازګشتي ده، په~$\Th{Q}$ کښې د کوم فارمول~$!B_T$ په
+وسيله تمثيلېږي؛ يعنې~$\Th{Q} \Proves
+!B_T(\num{e}, \num{n}, \num{s})$ هله او يوازې هله چې~$T(e,n,s)$۔
+که~$\Th{Q} \Proves !B_T(\num{e}, \num{n}, \num{s})$، نو
+$ \Th{Q} \Proves \lexists[y][!B_T(\num{e}, \num{n}, y)]$ هم۔ که
+داسې~$s$ نۀ وي، نو د هر~$s$ دپاره
+$\Th{Q} \Proves \lnot !B_T(\num{e}, \num{n}, \num{s})$۔ خو~$\Th{Q}$،
+$\omega$-سازګاره ده؛ يعنې که د هر~$n \in \Nat$ دپاره
+$\Th{Q} \Proves \lnot !A(\num{n})$، نو
+$\Th{Q} \Proves/ \lexists[y][!A(y)]$۔ دا ځکه پوهېږو چې د~$\Th{Q}$
+بديهي اصول په معياري مدل~$\Struct{N}$ کښې رښتوني دي۔ نو
+$\Th{Q} \Proves/ \lexists[y][!B_T(\num{e}, \num{n}, y)]$۔ په بله
+وينا، $\Th{Q} \Proves \lexists[y][!B_T(\num{e}, \num{n}, y)]$
+هله او يوازې هله چې داسې~$s$ وي چې~$T(e,n,s)$؛ يعنې هله او يوازې
+هله چې~$\cfind{e}(n) \fdefined$۔ له~$e$ او~$n$ څخه
+$\Gn{\lexists[y][!B_T(\num{e}, \num{n}, y)]}$ محاسبه کولے شو؛
+$g(e,n)$ هغه بنسټيزه بازګشتي تابعه ونيسئ چې دا کار کوي۔ نو
+\[
+h(e, n) =
+\begin{cases}
+1 & \text{که~$\Prov[\Th{Q}](g(e, n))$ وي}\\
+0 & \text{که نۀ وي}.
+\end{cases}
+\]
+دا به ښودلې وای چې که~$\Prov[\Th{Q}]$ بازګشتي وي، $h$ هم بازګشتي
+ده۔ خو د~\olref[cmp][rec][hlt]{thm:halting-problem} له مخې~$h$
+بازګشتي نۀ ده، نو~$\Prov[\Th{Q}]$ هم بازګشتي نۀ شي کېدے۔
+\end{proof}
+
+\begin{cor}
+د لومړۍ درجې منطق ناپرېکړه‌وړ دے۔
+\end{cor}
+
+\begin{proof}
+که د لومړۍ درجې منطق د پرېکړې وړ وای، په~$\Th{Q}$ کښې ثبوت‌وړتيا
+هم د پرېکړې وړ وه، ځکه~$\Th{Q} \Proves !A$ هله او يوازې هله چې
+$\Proves !T \lif !A$، چېرته چې~$!T$ د~$\Th{Q}$ د بديهي اصولو
+عطف دے۔
+\end{proof}
+
+\end{document}

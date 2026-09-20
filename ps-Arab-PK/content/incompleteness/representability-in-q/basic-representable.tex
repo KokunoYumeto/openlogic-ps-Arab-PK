@@ -1,0 +1,235 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: basic-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{bre}
+\olsection{بنسټيزې تابعې په~$\Th{Q}$ کښې تمثيلېدونکې دي}
+
+لومړے بايد وښيو چې ټولې بنسټيزې تابعې په~$\Th{Q}$ کښې
+تمثيلېدونکې دي۔ په پاې کښې بايد وښيو چې هرې~$k$-ځايه بنسټيزې
+تابعې~$f(x_0,\dots,x_{k-1})$ ته داسې !!a{formula}
+$!A_f(x_0,\dots,x_{k-1},y)$ څنګه وټاکو چې هغه تمثيل کړي۔
+
+صفر، تالي، جمع، ضرب، د مساواتو ځانګړونکې تابعه، او پروجکشنونه
+تمثيلولے شو۔ په هره قضيه کښې مناسب تمثيلوونکی فارمول په بشپړه توګه
+ساده دے؛ د بېلګې په توګه، صفر د~$y = \Obj 0$ فارمول په وسيله
+تمثيلېږي، تالي د~$x_0' = y$ !!{formula} په وسيله تمثيلېږي، او جمع
+د~$(x_0 + x_1) = y$ !!{formula} په وسيله تمثيلېږي۔ کار په دې کښې دے چې وښيو
+$\Th{Q}$ اړوند !!{sentence}s ثابتولے شي؛ د بېلګې په توګه، دا ويل
+چې جمع د پورته !!{formula} په وسيله تمثيل شوې ده، دا غواړي چې وښيو
+د طبيعي عددونو د هرې جوړې~$m$ او~$n$ دپاره~$\Th{Q}$ دا ثابتوي:
+\begin{align*}
+& \eq[\num n + \num m][\num {n+m}] \text{ او}\\
+& \lforall[y][(\eq[(\num n + \num m)][y] \lif \eq[y][\num{n+m}])].
+\end{align*}
+
+\begin{prop}
+\ollabel{prop:rep-zero}
+صفر تابعه~$\Zero(x) = 0$ په~$\Th{Q}$ کښې د
+$!A_{\Zero}(x,y) \ident \eq[y][\Obj 0]$ په وسيله تمثيلېږي۔
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-succ}
+تالي تابعه~$\Succ(x) = x+1$ په~$\Th{Q}$ کښې د
+$!A_{\Succ}(x,y) \ident \eq[y][x']$ په وسيله تمثيلېږي۔
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-proj}
+پروجکشن تابعه~$\Proj{n}{i}(x_0, \dots, x_{n-1}) = x_i$ په
+$\Th{Q}$ کښې د دې په وسيله تمثيلېږي:
+\[!A_{\Proj{n}{i}}(x_0, \dots, x_{n-1}, y) \ident \eq[y][x_i].\]
+\end{prop}
+
+\begin{prob}
+ثابته کړئ چې~$\eq[y][\Obj 0]$، $\eq[y][x']$، او~$\eq[y][x_i]$ په
+ترتيب سره~$\Zero$، $\Succ$، او~$\Proj{n}{i}$ تمثيلوي۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:rep-id}
+د~$=$ ځانګړونکې تابعه،
+\[
+\Char{=}(x_0, x_1) =
+\begin{cases}
+  1 & \text{که } x_0 =x_1\\
+  0 & \text{بل ډول}
+\end{cases}
+\]
+په~$\Th{Q}$ کښې د دې په وسيله تمثيلېږي:
+\[
+  !A_{\Char{=}}(x_0, x_1, y) \ident (\eq[x_0][x_1] \land \eq[y][\num{1}]) \lor (\eq/[x_0][x_1] \land
+\eq[y][\num{0}]).
+\]
+\end{prop}
+
+ثبوت لاندې لمې ته اړتيا لري۔
+
+\begin{lem}
+\ollabel{lem:q-proves-neq} که طبيعي عددونه~$n$ او~$m$ داسې وي چې
+$n \neq m$، نو $\Th{Q} \Proves \eq/[\num n][\num m]$۔
+\end{lem}
+
+\begin{proof}
+پر~$n$ استقرا وکاروئ څو وښيئ چې د هر~$m$ دپاره، که~$n \neq m$
+وي، نو $Q \Proves \eq/[\num n][\num m]$۔
+
+په بنسټيزه قضيه کښې~$n = 0$ دے۔ که~$m$ له~$0$ سره مساوي نۀ وي، نو
+د کوم طبيعي عدد~$k$ دپاره~$m = k + 1$۔ يو داسې بديهي اصل لرو چې
+$\lforall[x][\eq/[0][x']]$ وايي۔ د کمیت ايښوونکي د يوه بديهي اصل له
+مخې، د~$x$ پر ځاے د~$\num k$ په ايښودلو، دا پايله اخلو:
+$\eq/[0][\num k']$۔ خو~$\num k'$ هماغه~$\num m$ دے۔
+
+د استقرا په پړاو کښې فرضولے شو چې ادعا د~$n$ دپاره سمه ده، او
+$n+1$ ګورو۔ $m$ هر طبيعي عدد ونيسئ۔ دوه امکانونه شته: يا~$m = 0$
+دے يا د کوم~$k$ دپاره~$m = k+1$۔ لومړۍ قضيه لکه پورته حل کېږي۔ په
+دويمه قضيه کښې فرض کړئ~$n+1 \neq k+1$۔ بيا~$n \neq k$۔ د~$n$
+دپاره د استقرايي فرضيې له مخې
+$\Th{Q} \Proves \eq/[\num n][\num k]$۔ داسې بديهي اصل لرو چې
+$\lforall[x][\lforall[y][\eq[x'][y'] \lif \eq[x][y]]]$ وايي۔ د
+کمیت ايښوونکي د يوه بديهي اصل په کارولو، لرو:
+$\eq[\num n'][\num k'] \lif \eq[\num n][\num k]$۔ د قضيو د منطق په
+کارولو، په~$\Th{Q}$ کښې دا پايله اخلو:
+$\eq/[\num n][\num k] \lif \eq/[\num n'][\num k']$۔ د وضع مقدم په
+کارولو، $\eq/[\num n'][\num k']$ اخلو، چې هماغه غوښتنه ده، ځکه
+$\num k'$، $\num m$ دے۔
+\end{proof}
+
+\begin{explain}
+پام وکړئ چې لمه ډېره خبره نۀ کوي: په اصل کښې وايي چې~$\Th{Q}$
+ثابتولے شي چې بېلابېلې عددنښې بېلابېل څيزونه ښيي۔ د بېلګې په
+توګه،~$\Th{Q}$، $0'' \neq 0'''$ ثابتوي۔ خو دا ښودل چې خبره په عام
+ډول سمه ده څه پاملرنه غواړي۔ دا هم په پام کښې ونيسئ چې که څه هم
+استقرا کاروو، خو دا د~$\Th{Q}$ \emph{بهر} استقرا ده۔
+\end{explain}
+
+\begin{proof}[د \olref{prop:rep-id} ثبوت]
+که~$n = m$ وي، نو~$\num{n}$ او~$\num{m}$ يو شان ترمونه دي، او
+$\Char{=}(n, m) = 1$۔ خو $\Th{Q} \Proves (\eq[\num{n}][\num{m}] \land
+\eq[\num{1}][\num{1}])$، نو~$!A_=(\num{n}, \num{m},
+\num{1})$ ثابتوي۔ که~$n \neq m$ وي، نو~$\Char=(n, m) = 0$۔ د
+\olref{lem:q-proves-neq} له مخې،
+$\Th{Q} \Proves \eq/[\num{n}][\num{m}]$، او نو دا هم ثابتوي:
+$(\eq/[\num{n}][\num{m}] \land \Obj 0 = \Obj 0)$۔ له دې امله
+$\Th{Q} \Proves !A_=(\num{n}, \num{m}, \num{0})$۔
+
+د دويمې برخې دپاره هم دوه قضيې لرو۔ که~$n = m$ وي، بايد وښيو:
+$\Th{Q} \Proves \lforall[y][(!A_=(\num{n}, \num{m}, y)
+  \lif \eq[y][\num{1}])]$۔ په غيرصوري ډول استدلال کوو، فرض کړئ
+$!A_=(\num{n}, \num{m}, y)$، يعنې
+\[
+(\eq[\num{n}][\num{n}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{n}] \land \eq[y][\num{0}])
+\]
+کيڼ منفصل د منطق له مخې~$\eq[y][\num{1}]$ لازموي؛ ښے منفصل له
+$\eq[\num{n}][\num{n}]$ سره تناقض لري، چې په منطق ثابتېدونکے دے۔
+
+بل پلو، فرض کړئ~$n \neq m$۔ بيا~$!A_=(\num{n},
+\num{m}, y)$ دا دے:
+\[
+(\eq[\num{n}][\num{m}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{m}] \land \eq[y][\num{0}])
+\]
+دلته کيڼ منفصل له~$\eq/[\num{n}][\num{m}]$ سره تناقض لري، چې د
+\olref{lem:q-proves-neq} له مخې په~$\Th{Q}$ کښې ثابتېدونکے دے؛ ښے
+منفصل~$\eq[y][\num{0}]$ لازموي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-add}
+د جمع تابعه~$\Add(x_0, x_1) = x_0+x_1$ په~$\Th{Q}$ کښې د دې په
+وسيله تمثيلېږي:
+\[
+  !A_{\Add}(x_0, x_1, y) \ident \eq[y][(x_0 + x_1)].
+\]
+\end{prop}
+
+\begin{lem}
+\ollabel{lem:q-proves-add}
+$\Th{Q} \Proves \eq[(\num{n} + \num{m})][\num{n+m}]$
+\end{lem}
+
+\begin{proof}
+دا پر~$m$ په استقرا ثابتوو۔ که~$m = 0$ وي، ادعا دا ده:
+$\Th{Q} \Proves \eq[(\num{n} + \Obj 0)][\num{n}]$۔ دا له بديهي
+اصل~$!Q_4$ څخه راځي۔ اوس د~$m$ دپاره ادعا فرض کړئ؛ راځئ د~$m+1$
+دپاره ادعا ثابته کړو، يعنې وښيو:
+$\Th{Q} \Proves \eq[(\num{n} +
+  \num{m+1})][\num{n+m+1}]$۔ پام وکړئ چې~$\num{m+1}$ هماغه
+$\num{m}'$ دے، او~$\num{n+m+1}$ هماغه~$\num{n+m}'$ دے۔ د بديهي
+اصل~$!Q_5$ له مخې، $\Th{Q} \Proves
+\eq[(\num{n} + \num{m}')][(\num{n}+\num{m})']$۔ د استقرايي فرضيې
+له مخې، $\Th{Q} \Proves
+\eq[(\num{n} + \num{m})][\num{n+m}]$۔ نو
+$\Th{Q} \Proves \eq[(\num{n} + \num{m}')][\num{n+m}']$۔
+\end{proof}
+
+\begin{proof}[د \olref{prop:rep-add} ثبوت]
+هغه !!{formula}~$!A_\Add(x_0, x_1, y)$ چې~$\Add$ تمثيلوي،
+$\eq[y][(x_0 + x_1)]$ ده۔ لومړے ښيو چې که~$\Add(n, m) = k$ وي،
+نو $\Th{Q} \Proves !A_\Add(\num{n}, \num{m}, \num{k})$؛ يعنې
+$\Th{Q} \Proves \eq[\num{k}][(\num{n} + \num{m})]$۔ خو ځکه چې
+$k = n + m$، نو~$\num{k}$ هماغه~$\num{n+m}$ دے، او په
+\olref{lem:q-proves-add} کښې مو ښودلې ده چې
+$\Th{Q} \Proves \eq[(\num{n} + \num{m})][\num{n+m}]$۔
+
+دا هم بايد وښيو چې که~$\Add(n, m) = k$ وي، نو
+\[
+\Th{Q} \Proves \lforall[y][(!A_\Add(\num{n}, \num{m}, y) \lif
+  \eq[y][\num{k}])].
+\]
+فرض کړئ~$\eq[(\num{n} + \num{m})][y]$ لرو۔ ځکه چې
+\[
+\Th{Q} \Proves \eq[(\num{n}+\num{m})][\num{n+m}],
+\]
+کيڼ اړخ په~$\num{n+m}$ بدلولے شو او د خپل سري~$y$ دپاره
+$\eq[\num{n+m}][y]$ تر لاسه کوو۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-mult}
+د ضرب تابعه~$\Mult(x_0, x_1) = x_0 \cdot x_1$ په~$\Th{Q}$ کښې د
+دې په وسيله تمثيلېږي:
+\[
+  !A_{\Mult}(x_0, x_1, y) \ident y = (x_0 \times x_1).
+\]
+\end{prop}
+
+\begin{proof} تمرین۔ \end{proof}
+
+\begin{lem}
+\ollabel{lem:q-proves-mult}
+$\Th{Q} \Proves \eq[(\num{n} \times \num{m})][\num{n \cdot m}]$
+\end{lem}
+
+\begin{proof} تمرین۔ \end{proof}
+
+\begin{prob}
+\olref[inc][req][bre]{lem:q-proves-mult} ثابته کړئ۔
+\end{prob}
+
+\begin{prob}
+له \olref[inc][req][bre]{lem:q-proves-mult} څخه د
+\olref[inc][req][bre]{prop:rep-mult} په ثبوت کښې کار واخلئ۔
+\end{prob}
+
+\begin{explain}
+  په ياد ولرئ چې د حساب د ژبې د تابعې نښې دپاره~$\times$، او پر
+  عددونو د عادي ضرب د عمل دپاره~$\cdot$ کاروو۔ نو~$\cdot$ د عددونو
+  د تعبيرونو ترمنځ راتلے شي (لکه په~$m \cdot n$ کښې)، خو~$\times$
+  يوازې د حساب د ژبې د ترمونو ترمنځ راځي (لکه په
+  $(\num{m} \times \num{n})$ کښې)۔ تر دې هم مغشوشوونکې دا ده چې
+  $+$ هم د !!{function} او هم د جمع د عمل دپاره کارېږي۔ کله چې د
+  ترمونو ترمنځ راځي---لکه په~$(\num{n} + \num{m})$ کښې---دا د حساب
+  د ژبې~$2$-ځايه !!{function} ده، او کله چې د عددونو ترمنځ راځي---
+  لکه په~$n+m$ کښې---دا د جمع عمل دے۔ په دې کښې د~$\num{n+m}$
+  قضيه هم شامله ده: دا له عدد~$n+m$ سره سمون لرونکې معياري عددنښه
+  ده۔
+\end{explain}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 288 of 722 source units are translated drafts. This log contains 161 terminology entries and 236 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 300 of 722 source units are translated drafts. This log contains 165 terminology entries and 244 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1452,6 +1452,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د اشتقاق حسابي‌سازي; وروستی سېکوېنټ او وروستی فارمول; د فرض ساقطولو نښه; اثبات‌وړتيا پريديکات
 - Review question: In Pakistani Pashto mathematical prose, is «حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض» the clearest conventional rendering of “arithmetized derivation / end-sequent / end-formula / discharge label / proof predicate / open assumption” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete arithmetization-of-syntax source and language review
+
+## TERM-BETA-SEQUENCE-CODING
+
+- Type: terminology
+- Choice: بېټا تابعه / د متناهي لړۍ کوډ پرانيستونکې تابعه / جوړوونکې تابعه / پروجکشن تابعې
+- Uncertainty: function, pairing, sequence and arithmetic concepts are supported by regional sources; the exact beta-decoder compound remains provisional
+- Alternatives: بېټا کوډوونکې تابعه; د لړۍ لوستونکې تابعه; د جوړو کوډوونکې تابع
+- Review question: In Pakistani Pashto mathematical prose, is «بېټا تابعه / د متناهي لړۍ کوډ پرانيستونکې تابعه / جوړوونکې تابعه / پروجکشن تابعې» the clearest conventional rendering of “beta function / finite-sequence decoder / pairing function / projection functions” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+
+## TERM-SUNZI-MODULAR-REMAINDER
+
+- Type: terminology
+- Choice: خپلمنځي اول / د مودولو له مخې مطابق / د سونزي قضيه / د چين د پاتې شونو قضيه / پاتې شونې
+- Uncertainty: division, equality, arithmetic and sequence concepts are supported by regional sources; the exact coprimality and theorem-name expressions remain provisional
+- Alternatives: نسبتاً اول; مودولو تطابق; د چين د باقياتو قضيه; باقي
+- Review question: In Pakistani Pashto mathematical prose, is «خپلمنځي اول / د مودولو له مخې مطابق / د سونزي قضيه / د چين د پاتې شونو قضيه / پاتې شونې» the clearest conventional rendering of “relatively prime / congruent modulo / Sunzi's theorem / Chinese remainder theorem / remainder” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+
+## TERM-REGULAR-MINIMIZATION-REPRESENTATION
+
+- Type: terminology
+- Choice: منظم اقل موندل / بې‌حده پلټنه / تر ټولو وړوکے صفر / د اقل موندلو لاندې تمثيلېدنه
+- Uncertainty: function, induction, proof and least-witness concepts are supported by regional sources; the exact regular-minimization phrases remain provisional
+- Alternatives: منظمه کمينه‌موندنه; نامحدوده پلټنه; تر ټولو لږ صفر
+- Review question: In Pakistani Pashto mathematical prose, is «منظم اقل موندل / بې‌حده پلټنه / تر ټولو وړوکے صفر / د اقل موندلو لاندې تمثيلېدنه» the clearest conventional rendering of “regular minimization / unbounded search / least zero / representability under minimization” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+
+## TERM-SIGMA1-BOUNDED-COMPLETENESS
+
+- Type: terminology
+- Choice: محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا
+- Uncertainty: formula, quantification, truth, proof and induction concepts are supported by regional sources; the exact hierarchy labels remain provisional
+- Alternatives: محدود کمیت ټاکونکی; ډېلټا-صفر او سيګما-يو فورمول; د سيګما-يو تکميل
+- Review question: In Pakistani Pashto mathematical prose, is «محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا» the clearest conventional rendering of “bounded quantifier / Delta-0 formula / Sigma-1 formula / Pi-1 formula / Sigma-1 completeness” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
 
 ## DEC-OLFUN-001
 
@@ -3522,6 +3558,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-082 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-083
+
+- Type: source-correction
+- Choice: names the representing formula A_f in the lemma premise, matching its displayed use and every subsequent use
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-083 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-084
+
+- Type: source-correction
+- Choice: states h(vec x,y), matching both primitive-recursion equations directly below
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-084 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-085
+
+- Type: source-correction
+- Choice: directs the exercise to both proof directions, propositions rep1 and rep2, before the general composition proposition
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-085 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-086
+
+- Type: source-correction
+- Choice: derives the middle equality from the induction hypothesis and Q5, then obtains the requested equality by transitivity with step5
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-086 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-087
+
+- Type: source-correction
+- Choice: equates t_2 with numeral m, its value fixed immediately above
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-087 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-088
+
+- Type: source-correction
+- Choice: proves numeral k prime plus numeral n equals numeral m, matching the existential witness z prime plus t_1 in Q8
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-088 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-089
+
+- Type: source-correction
+- Choice: uses the positive equality z prime equals zero in the equal-values case and cites Q2 for both successor-not-zero contradictions
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-089 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-090
+
+- Type: source-correction
+- Choice: identifies the zero-instance right side of the bounded universal equivalence as the empty conjunction, whose value is true
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-090 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
 
 ## DEC-REL-I
 

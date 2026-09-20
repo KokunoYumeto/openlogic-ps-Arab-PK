@@ -1,0 +1,120 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representable-comp
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rpc}
+\olsection{په~$\Th{Q}$ کښې تمثيلېدونکې تابعې محاسبه کېدونکې دي}
+
+موږ به ثابته کړو چې هره هغه تابعه چې په~$\Th{Q}$ کښې تمثيلېدونکې
+وي، محاسبه کېدونکې ده۔ لومړے بايد په~$\Th{Q}$ کښې د تمثيلېدونکو
+تابعو په اړه يوه لمه ثابته کړو۔
+
+\begin{lem}\ollabel{lem:rep-q}
+  که~$f(x_0,
+  \dots, x_k)$ په~$\Th{Q}$ کښې تمثيلېدونکې وي، داسې
+  !!a{formula}~$!A_f(x_0, \dots, x_k, y)$ شته چې
+  \[
+  \Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})
+  \quad\text{هله او يوازې هله چې}\quad m = f(n_0, \dots, n_k).
+  \]
+\end{lem}
+\textbf{د ژباړې د نسخې سمون (OLCMP-083):} سرچينې په مقدمې کښې د
+تمثيلوونکي فارمول فرعي نښه پرېښې وه، خو په نمايش او ټول ورپسې ثبوت
+کښې ئې د تابعې له نوم سره فرعي نښه کارولې؛ دلته نښه يو شان شوې ده۔
+
+\begin{proof}
+  «که» برخه
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} ده۔ «يوازې
+که» برخه داسې ليدل کېږي: فرض کړئ
+$\Th{Q} \Proves !A_f(\num{n_0},
+\dots, \num{n_k}, \num{m})$، خو~$m \neq f(n_0, \dots, n_k)$۔
+$l = f(n_0, \dots, n_k)$ ونيسئ۔ د
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} له مخې،
+$\Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{l})$۔ د
+\olref[int]{defn:representable-fn}\olref[int]{defn:rep:b} له مخې،
+$\lforall[y][(!A_f(\num{n_0}, \dots, \num{n_k}, y) \lif \num{l} =
+y)]$۔ د منطق او دې فرض په کارولو سره چې~$\Th{Q} \Proves
+!A_f(\num{n_0}, \dots, \num{n_k}, \num{m})$، ترلاسه کوو چې
+$\Th{Q} \Proves \eq[\num{l}][\num{m}]$۔ له بلې خوا، د
+\olref[bre]{lem:q-proves-neq} له مخې، $\Th{Q} \Proves
+\eq/[\num{l}][\num{m}]$۔ نو~$\Th{Q}$ ناسازګاره ده۔ خو دا ناشونې
+ده، ځکه~$\Th{Q}$ په معياري مدل کښې پوره کېږي (وګورئ
+\olref[int][def]{def:standard-model})، $\Sat{N}{\Th{Q}}$، او د صحت
+د قضيې له مخې هره د پوره کېدو وړ تيوري تل سازګاره وي
+(\tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+prfSC/{fol:seq:sou:cor:consistency-soundness},
+prfND/{fol:ntd:sou:cor:consistency-soundness},
+prfTab/{fol:tab:sou:cor:consistency-soundness}})۔
+\end{proof}
+
+\begin{lem}
+هره هغه تابعه چې په~$\Th{Q}$ کښې تمثيلېدونکې وي، محاسبه کېدونکې
+ده۔
+\end{lem}
+
+\begin{proof}
+لومړے د دې خبرې شهودي مفکوره وړاندې کړو۔ د~$f$ د محاسبې دپاره
+لاندې کار کوو۔ د حساب د ژبې ټول ممکن !!{derivation}s~$\delta$ په
+لړ کښې راوړو۔ دا کار په ميخانيکي ډول کېدے شي۔ د هر يوه دپاره ګورو
+چې آيا د~$!A_f(\num{n_0}, \dots, \num{n_k}, \num{m})$ په بڼه د
+!!a{formula} کوم !!a{derivation} دے که نۀ (هماغه !!{formula} چې د
+\olref{lem:rep-q} له مخې په~$\Th{Q}$ کښې~$f$ تمثيلوي)۔ که وي، د
+\olref{lem:rep-q} له مخې~$m = f(n_0, \dots, n_k)$، نو د~$f$ ارزښت
+مو وموند۔ پلټنه پاې ته رسېږي، ځکه
+$\Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k},
+\num{f(n_0, \dots, n_k)})$؛ نو بالاخره د سم ډول کوم~$\delta$ مومو۔
+
+دا لا بشپړ کره نۀ دي، ځکه زموږ کړنلاره يوازې پر عددونو د کار پر ځاے
+پر !!{derivation}s او !!{formula}s کار کوي، او لا مو په کره توګه نۀ
+دي ويلي چې ولې «د ټولو ممکنو !!{derivation}s لړل» په ميخانيکي ډول
+شوني دي۔ خو لکه چې ليدلي مو دي، ترمونه، !!{formula}s او
+!!{derivation}s په ګوډل شمېرو کوډېدے شي۔ د محاسبې يو کره مدل، يعنې
+عمومي بازګشتي تابعې، مو هم معرفي کړے دے۔ او ليدلي مو دي چې اړيکه
+$\Prf[\Th{Q}](d,y)$، چې هله صدق کوي چې~$d$ د~$\Th{Q}$ له بديهي
+اصولو څخه د ګوډل شمېرې~$y$ لرونکي !!{formula} د کوم
+!!a{derivation} ګوډل شمېره وي، (بنسټيزه) بازګشتي ده۔ نورې بنسټيزې
+بازګشتي تابعې چې پکار مو دي~$\fn{num}$
+(\olref[art][trm]{prop:num-primrec}) او~$\fn{Subst}$
+(\olref[art][sub]{prop:subst-primrec}) دي۔ له دغو څخه~$f$ د اقل
+موندلو په وسيله تعريفېدے شي؛ نو~$f$ بازګشتي ده۔
+
+لومړے دا تعريف کړئ:
+\begin{multline*}
+  A(n_0, \dots, n_k, m) = \\
+  \fn{Subst}(\fn{Subst}(\dots\fn{Subst}(\Gn{!A_f}, \fn{num}(n_0), \Gn{x_0}),\\ \dots),
+  \fn{num}(n_k),  \Gn{x_k}), \fn{num}(m), \Gn{y})
+\end{multline*}
+دا پېچلې ښکاري، خو يوازې همدا تابعه ده:
+$A(n_0, \dots, n_k,
+m) = \Gn{!A_f(\num{n_0}, \dots, \num{n_k}, \num{m})}$۔
+
+اوس اړيکه~$R(n_0, \dots, n_k, s)$ وګورئ چې هله صدق کوي چې
+$(s)_0$ د~$\Th{Q}$ څخه د
+$!A_f(\num{n_0}, \dots, \num{n_k}, \num{(s)_1})$ د کوم
+!!a{derivation} ګوډل شمېره وي:
+\[
+R(n_0, \dots, n_k, s) \quad\text{هله او يوازې هله چې}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
+\dots, n_k, (s)_1))
+\]
+که داسې~$s$ ومومو چې~$R(n_0, \dots, n_k, s)$ پرې صدق کوي، د عددونو
+داسې جوړه---$(s)_0$ او~$(s)_1$---مو موندلې چې~$(s)_0$ د
+$A_f(\num{n_0}, \dots, \num{n_k}, (s)_1)$ د کوم !!a{derivation}
+ګوډل شمېره ده۔ نو د~$s$ لټول په غيرصوري ثبوت کښې د~$d$ او~$m$ د
+جوړې د لټولو په شان دي۔ يوه محاسبه کېدونکې تابعه چې داسې~$s$
+«لټوي»، په منظم اقل موندلو تعريفېدے شي۔ په پام کښې ونيسئ چې~$R$
+منظمه ده: د هر~$n_0$، \dots،~$n_k$ دپاره د
+$\Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k},
+\num{f(n_0, \dots, n_k)})$ کوم !!a{derivation}~$\delta$ شته؛ نو
+$R(n_0, \dots, n_k, s)$ د
+$s = \tuple{\Gn{\delta}, f(n_0, \dots, n_k)}$ دپاره صدق کوي۔ نو~$f$
+داسې ليکلے شو:
+\[
+f(n_0,\dots,n_{k}) = (\umin{s}{R(n_0, \dots, n_k, s)})_1.
+\]
+\end{proof}
+
+\end{document}

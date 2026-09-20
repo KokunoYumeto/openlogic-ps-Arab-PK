@@ -1,0 +1,264 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: minimization-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{min}
+\olsection{منظم اقل موندل په~$\Th{Q}$ کښې تمثيلېدونکے دے}
+
+بې‌حده پلټنه وګورو۔ فرض کړئ~$g(x, z)$ منظمه او په~$\Th{Q}$ کښې
+تمثيلېدونکې ده، د بېلګې په توګه د~!!{formula}~$!A_g(x, z, y)$ په
+وسيله۔ فرض کړئ~$f$ د~$f(z) = \umin{x}{[g(x, z) = 0]}$ په ډول تعريف
+شوې ده۔ غواړو داسې !!a{formula}~$!A_f(z, y)$ ومومو چې~$f$ تمثيل
+کړي۔ د~$f(z)$ ارزښت هغه عدد~$x$ دے چې (الف)~$g(x, z) = 0$ پوره
+کوي او (ب) تر ټولو وړوکے داسې عدد وي، يعنې د هر~$w < x$ دپاره
+$g(w, z) \neq 0$ وي۔ نو دا طبيعي انتخاب دے:
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))].
+\]
+البته، په عامه قضيه کښې بايد~$z$ په~$z_0$، \dots،~$z_k$ بدل کړو۔
+
+ثبوت به يو ځل بيا د هغو څيزونو په اړه څو لمې وکاروي چې~$\Th{Q}$
+ئې د ثابتولو دپاره پوره ځواک لري۔
+
+\begin{lem}
+\ollabel{lem:succ} د هر~!!{constant}~$a$ او هر طبيعي عدد~$n$ دپاره،
+\[
+\Th{Q} \Proves \eq[(a' + \num n)][(a + \num n)'].
+\]
+\end{lem}
+
+\begin{proof}
+ثبوت، د معمول په شان، پر~$n$ په استقرا دے۔ په بنسټيزه قضيه کښې
+$n = 0$؛ بايد وښيو چې~$\Th{Q}$،
+$\eq[(a' + \Obj 0)][(a + \Obj 0)']$ ثابتوي۔ خو لرو:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][a'] \quad \text{د بديهي اصل~$Q_4$ له مخې}
+  \ollabel{step1}\\
+  \Th{Q} & \Proves  \eq[(a + \Obj 0)][a] \quad \text{د بديهي اصل~$Q_4$ له مخې}
+  \ollabel{step2} \\
+  \Th{Q} & \Proves \eq[(a + \Obj 0)'][a'] \quad \text{د \olref{step2} له مخې}
+  \ollabel{step3} \\
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][(a + \Obj 0)'] \quad
+  \text{د \olref{step1} او \olref{step3} له مخې}\notag
+\end{align}
+د استقرا په پړاو کښې فرضولے شو چې ښودلې مو ده:
+$\Th{Q} \Proves \eq[(a' + \num n)][(a + \num n)']$۔ ځکه چې
+$\num{n+1}$، $\num{n}'$ دے، بايد وښيو چې~$\Th{Q}$،
+$\eq[(a' + \num{n}')][(a + \num{n}')']$ ثابتوي۔ لرو:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a' + \num n)'] \quad
+  \text{د بديهي اصل~$!Q_5$ له مخې} \ollabel{step5}\\
+  \Th{Q} & \Proves \eq[(a' + \num n)'][(a + \num n')'] \quad
+  \text{د استقرايي فرضيې او بديهي اصل~$!Q_5$ له مخې} \ollabel{step6}\\
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a + \num n')'] \quad
+  \text{د \olref{step5} او \olref{step6} له مخې۔} \notag
+\end{align}
+\textbf{د ژباړې د نسخې سمون (OLCMP-086):} سرچينې په دويمه کرښه
+کښې هماغه وروستۍ ادعا د استقرايي فرضيې په نوم تکرار کړې او په وروستۍ
+کرښه کښې ئې يوازې منځنۍ مساوات اخيستې وه۔ دلته منځنۍ مساوات لومړے
+له استقرايي فرضيې او د جمع له بديهي اصل څخه، او وروستۍ ادعا بيا د
+دواړو کرښو له تعدي څخه اخيستل شوې ده۔
+\end{proof}
+
+بيا يادول په کار دي چې دا له دې خبرې کمزورې ده چې~$\Th{Q}$،
+$\lforall[x][\lforall[y][(x' + y) = (x + y)']]$ ثابتوي۔ که څه هم
+دا !!{sentence} په~$\Struct{N}$ کښې رښتينې ده،~$\Th{Q}$ ئې نۀ
+ثابتوي۔
+
+\begin{lem}
+\ollabel{lem:less-zero}
+$\Th{Q} \Proves \lforall[x][\lnot x < \Obj 0]$.
+\end{lem}
+
+\begin{proof}
+ثبوت په غيرصوري ډول ورکوو (يعنې يوازې دومره نښې ورکوو چې صوري
+!!{derivation} څنګه جوړېږي)۔
+
+د خپل سري~$a$ دپاره بايد~$\lnot a < \Obj 0$ ثابت کړو۔ د~$<$ د
+تعريف له مخې، بايد په~$\Th{Q}$ کښې
+$\lnot \lexists[y][\eq[(y'+a)][\Obj 0]]$ ثابت کړو۔
+$\lexists[y][\eq[(y'+a)][\Obj 0]]$ فرضوو او تناقض ثابتوو۔ فرض کړئ
+$\eq[(b'+a)][\Obj 0]$۔ د~$!Q_3$ په کارولو لرو:
+$\eq[a][\Obj 0] \lor \lexists[y][\eq[a][y']]$۔ قضيې بېلوو۔
+
+لومړۍ قضيه:~$\eq[a][\Obj 0]$ صدق کوي۔ له
+$\eq[(b'+a)][\Obj 0]$ څخه~$\eq[(b' + \Obj 0)][\Obj 0]$ لرو۔ د
+$\Th{Q}$ د بديهي اصل~$!Q_4$ له مخې،
+$\eq[(b' + \Obj 0)][b']$ لرو، او له دې امله
+$\eq[b'][\Obj 0]$۔ خو د بديهي اصل~$!Q_2$ له مخې
+$\eq/[b'][\Obj 0]$ هم لرو، چې تناقض دے۔
+
+دويمه قضيه: د کوم~$c$ دپاره~$\eq[a][c']$۔ خو بيا
+$\eq[(b' + c')][\Obj 0]$ لرو۔ د بديهي اصل~$!Q_5$ له مخې،
+$\eq[(b' + c)'][\Obj 0]$ لرو، چې يو ځل بيا له بديهي اصل~$Q_2$ سره
+تناقض لري۔
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:less-nsucc}
+د هر طبيعي عدد~$n$ دپاره،
+  \[
+  \Th{Q} \Proves
+  \lforall[x][(x < \num {n+1} \lif (\eq[x][\Obj 0] \lor \dots \lor
+    \eq[x][\num n]))].
+  \]
+\end{lem}
+
+\begin{proof}
+پر~$n$ استقرا کاروو۔ لومړے بنسټيزه قضيه وګورو، چې~$n = 0$ وي۔ په
+دې قضيه کښې بايد د خپل سري~$a$ دپاره
+$a < \num 1 \lif \eq[a][\Obj 0]$ وښيو۔ فرض کړئ~$a < \num 1$۔ بيا
+د~$<$ د تعريفوونکي بديهي اصل له مخې،
+$\lexists[y][\eq[(y'+a)][\Obj 0']]$ لرو (ځکه~$\num 1 \ident
+\Obj 0'$)۔
+
+فرض کړئ~$b$ دا ځانګړنه لري، يعنې
+$\eq[(b'+a)][\Obj 0']$ لرو۔ بايد~$\eq[a][\Obj 0]$ وښيو۔ د بديهي
+اصل~$!Q_3$ له مخې، يا~$\eq[a][\Obj 0]$ لرو يا داسې~$c$ شته چې
+$\eq[a][c']$۔ په لومړۍ قضيه کښې د ښودلو څه نشته۔ نو
+$\eq[a][c']$ فرض کړئ۔ بيا~$\eq[(b' + c')][\Obj 0']$ لرو۔ د
+$\Th{Q}$ د بديهي اصل~$!Q_5$ له مخې،
+$\eq[(b'+c)'][\Obj 0']$ لرو۔ د بديهي اصل~$!Q_1$ له مخې،
+$\eq[(b' + c)][\Obj 0]$ لرو۔ خو د بديهي اصل~$!Q_8$ له مخې د دې معنا
+دا ده چې~$c < \Obj 0$، چې له~\olref{lem:less-zero} سره تناقض لري۔
+
+اوس د استقرا پړاو ته راځو۔ د~$n$ قضيه فرضوو او د~$n+1$ قضيه
+ثابتوو۔ نو فرض کړئ~$a < \num {n+2}$۔ يو ځل بيا د~$!Q_3$ په کارولو
+دوه قضيې بېلولے شو:~$\eq[a][\Obj 0]$، او د کوم~$b$ دپاره
+$\eq[a][b']$۔ په لومړۍ قضيه کښې،
+$\eq[a][\Obj 0] \lor \dots \lor \eq[a][\num{n+1}]$ په ښکاره لازمېږي۔
+په دويمه قضيه کښې~$b' < \num {n+2}$ لرو، يعنې
+$b' < \num{n+1}'$۔ د بديهي اصل~$!Q_8$ له مخې، د کوم~$c$ دپاره
+$\eq[(c'+b')][\num{n+1}']$۔ د بديهي اصل~$!Q_5$ له مخې،
+$\eq[(c'+b)'][\num{n+1}']$۔ د بديهي اصل~$!Q_1$ له مخې،
+$\eq[(c'+b)][\num{n+1}]$، او نو د بديهي اصل~$!Q_8$ له مخې
+$b < \num{n+1}$۔ د استقرايي فرضيې له مخې،
+$\eq[b][\Obj 0] \lor \dots \lor \eq[b][\num{n}]$۔ له دې څخه د منطق
+په وسيله~$\eq[b'][\Obj 0'] \lor \dots \lor \eq[b'][\num{n}']$ اخلو،
+او ځکه چې~$\eq[a][b']$، نو
+$\eq[a][\num{1}] \lor \dots \lor \eq[a][\num{n+1}]$۔
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:trichotomy} د هر طبيعي عدد~$m$ دپاره،
+  \[
+  \Th{Q} \Proves
+  \lforall[y][((y < \num{m} \lor \num{m} < y) \lor \eq[y][\num{m}])].
+  \]
+\end{lem}
+
+\begin{proof}
+پر~$m$ په استقرا۔ لومړے د~$m=0$ قضيه وګورئ۔ د~$!Q_3$ له مخې
+$\Th{Q} \Proves
+\lforall[y][(\eq[y][\Obj 0] \lor \lexists[z][\eq[y][z']])]$۔
+$a$ خپل سرے ونيسئ۔ بيا يا~$\eq[a][\Obj 0]$ وي يا د کوم~$b$ دپاره
+$\eq[a][b']$۔ په لومړۍ قضيه کښې
+$(a < \Obj 0 \lor \Obj 0 < a) \lor \eq[a][\Obj 0]$ هم لرو۔ خو که
+$\eq[a][b']$ وي، نو د~$\eq$ د منطق له مخې
+$\eq[(b' + \Obj 0)][(a + \Obj 0)]$۔ د~$!Q_4$ له مخې
+$\eq[(a + \Obj 0)][a]$، نو~$\eq[(b' + \Obj 0)][a]$ لرو، او له دې
+امله~$\lexists[z][\eq[(z' + \Obj 0)][a]]$۔ په~$!Q_8$ کښې د~$<$ د
+تعريف له مخې،~$\Obj 0 < a$۔ که~$\Obj 0 < a$ وي، نو
+$(\Obj 0 < a \lor a < \Obj 0) \lor \eq[a][\Obj 0]$ هم لرو۔
+
+اوس فرض کړئ چې لرو:
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m} \lor \num{m} < y) \lor
+    \eq[y][\num{m}])]
+  \intertext{او غواړو وښيو:}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m+1} \lor \num{m+1} < y) \lor
+    \eq[y][\num{m+1}])]
+\end{align*}
+$a$ خپل سرے ونيسئ۔ د~$!Q_3$ له مخې، يا~$\eq[a][\Obj 0]$ وي يا د
+کوم~$b$ دپاره~$\eq[a][b']$۔ په لومړۍ قضيه کښې، د~$!Q_4$ له مخې
+$\eq[\num{m}' + a][\num{m+1}]$ لرو، او نو د~$!Q_8$ له مخې
+$a < \num{m+1}$۔
+
+اوس دويمه قضيه،~$\eq[a][b']$، وګورئ۔ د استقرايي فرضيې له مخې،
+$(b < \num{m} \lor \num{m} < b) \lor
+    \eq[b][\num{m}]$۔
+
+لومړے منفصل~$b < \num{m}$ د~$!Q_8$ له مخې له
+$\lexists[z][\eq[(z' + b)][\num{m}]]$ سره معادل دے۔ فرض کړئ~$c$
+دا ځانګړنه لري۔ که~$\eq[(c' + b)][\num{m}]$ وي، نو
+$\eq[(c' + b)'][\num{m}']$ هم وي۔ د~$!Q_5$ له مخې،
+$\eq[(c' + b)'][(c' + b')]$۔ له دې امله
+$\eq[(c' + b')][\num{m}']$۔ پر~$c'$ د وجودي تعميم په کولو او په دې
+پام سره چې~$\num{m}' \ident \num{m+1}$،
+$\lexists[u][\eq[(u' + b')][\num{m+1}]]$ اخلو۔ له دې امله، که
+$b < \num{m}$ وي، نو~$b' < \num{m+1}$، او نو
+$a < \num{m+1}$۔
+
+اوس فرض کړئ~$\num{m} < b$، يعنې
+$\lexists[z][\eq[(z' + \num{m})][b]]$۔ فرض کړئ~$c$ داسې~$z$ دے،
+يعنې~$\eq[(c' + \num{m})][b]$۔ د منطق له مخې،
+$\eq[(c' + \num{m})'][b']$۔ د~$!Q_5$ له مخې،
+$\eq[(c' + \num{m}')][b']$۔ ځکه چې~$\eq[a][b']$ او
+$\num{m}' \ident \num{m+1}$، نو~$\eq[(c' + \num{m+1})][a]$۔ د
+$!Q_8$ له مخې،~$\num{m+1} < a$۔
+
+په پاې کښې،~$\eq[b][\num{m}]$ فرض کړئ۔ بيا د منطق له مخې
+$\eq[b'][\num{m}']$، او نو~$\eq[a][\num{m+1}]$۔
+
+نو د~$m$ او~$b$ د قضيې له هر منفصل څخه د~$m+1$ او~$a$ اړوند منفصل
+تر لاسه کولے شو۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-minimization}
+که~$!A_g(x, z, y)$ په~$\Th{Q}$ کښې~$g(x, z)$ تمثيلوي، نو
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))]
+\]
+$f(z) = \umin{x}{[g(x, z) = 0]}$ تمثيلوي۔
+\end{prop}
+
+\begin{proof}
+لومړے ښيو چې که~$f(n) = m$ وي، نو
+$\Th{Q} \Proves !A_f(\num n, \num m)$؛ يعنې
+\begin{align}
+  \Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0) \land \lforall[w][(w <
+    \num{m} \lif \lnot !A_g(w, \num{n}, \Obj 0))]. \notag
+  \intertext{ځکه چې~$!A_g(x, z, y)$، $g(x, z)$ تمثيلوي او
+    $g(m, n) = 0$ که~$f(n) = m$ وي، لرو:}
+\Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0). \notag
+\intertext{که~$f(n) = m$ وي، نو د هر~$k < m$ دپاره~$g(k, n) \neq 0$۔ نو}
+\Th{Q} & \Proves \lnot !A_g(\num{k}, \num{n}, \Obj 0). \notag
+\intertext{تر لاسه کوو:}
+\Th{Q} & \Proves \lforall[w][(w < \num{m} \lif \lnot
+  !A_g(w, \num{n}, \Obj 0))]. \ollabel{rep-less}
+\end{align}
+که~$m = 0$ وي، دا د~\olref{lem:less-zero} له مخې، او که نۀ وي د
+\olref{lem:less-nsucc} له مخې راځي۔
+
+اوس وښيو چې که~$f(n) = m$ وي، نو
+$\Th{Q} \Proves
+\lforall[y][(!A_f(\num{n}, y) \lif \eq[y][\num{m}])]$۔ يو ځل بيا
+استدلال په غيرصوري ډول لنډوو او صوري کول ئې لوستونکي ته پرېږدو۔
+
+فرض کړئ~$!A_f(\num{n}, b)$۔ له دې څخه (الف)
+$!A_g(b, \num{n}, \Obj 0)$ او (ب)
+$\lforall[w][(w < b \lif \lnot !A_g(w, \num{n}, \Obj
+  0))]$ اخلو۔ د~\olref{lem:trichotomy} له مخې،
+$(b < \num{m} \lor \num{m} < b) \lor \eq[b][\num{m}]$۔ وبه ښيو چې
+$b < \num{m}$ او~$\num{m} < b$ دواړه تناقض ته رسېږي۔
+
+که~$\num{m} < b$ وي، نو له~(ب) څخه
+$\lnot !A_g(\num{m}, \num{n}, \Obj 0)$۔ خو~$m = f(n)$، نو
+$g(m, n) = 0$؛ او ځکه چې~$!A_g$، $g$ تمثيلوي،
+$\Th{Q} \Proves !A_g(\num{m}, \num{n}, \Obj 0)$۔ نو تناقض لرو۔
+
+اوس~$b < \num{m}$ فرض کړئ۔ بيا ځکه چې د~\olref{rep-less} له مخې
+$\Th{Q} \Proves \lforall[w][(w <
+  \num{m} \lif \lnot !A_g(w, \num{n}, \Obj 0))]$، نو
+$\lnot !A_g(b, \num{n}, \Obj 0)$ اخلو۔ دا يو ځل بيا له~(الف) سره
+تناقض لري۔
+\end{proof}
+
+\end{document}

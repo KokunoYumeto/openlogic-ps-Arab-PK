@@ -1,0 +1,107 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: composition-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{cmp}
+\olsection{ترکيب په~$\Th{Q}$ کښې تمثيلېدونکے دے}
+
+فرض کړئ~$h$ داسې تعريف شوې ده:
+\[
+h(x_0,\dots,x_{l-1}) = f(g_0(x_0,\dots,x_{l-1}), \dots,
+g_{k-1}(x_0,\dots,x_{l-1})).
+\]
+چېرته چې موږ لا وړاندې داسې !!{formula}s $!A_f, !A_{g_0}, \dots,
+!A_{g_{k-1}}$ موندلي دي چې په ترتيب سره تابعې~$f$، او~$g_0$،
+\dots،~$g_{k-1}$ تمثيلوي۔ بايد داسې !!a{formula}~$!A_h$ ومومو چې
+$h$ تمثيل کړي۔
+
+له يوې ساده قضيې پيل وکړو، چې ټولې تابعې~$1$-ځايه وي؛ يعنې
+$h(x) = f(g(x))$ وګورئ۔ که~$!A_f(y, z)$، $f$ تمثيلوي، او
+$!A_g(x, y)$، $g$ تمثيلوي، داسې !!a{formula}~$!A_h(x, z)$ پکار
+ده چې~$h$ تمثيل کړي۔ پام وکړئ چې~$h(x) = z$ هله او يوازې هله چې
+داسې~$y$ شته چې $z = f(y)$ او~$y = g(x)$ دواړه وي۔ (که
+$h(x) = z$ وي، نو~$g(x)$ داسې~$y$ دے؛ که داسې~$y$ موجود وي، نو
+څرنګه چې $y = g(x)$ او~$z = f(y)$ دي، $z = f(g(x))$۔) له دې څخه
+ښکاري چې $\lexists[y][(!A_g(x, y) \land !A_f(y,
+  z))]$ د~$!A_h(x, z)$ دپاره ښه نوماند دے۔ يوازې بايد دا تصديق کړو
+چې~$\Th{Q}$ اړوند !!{formula}s ثابتوي۔
+
+\begin{prop}
+\ollabel{prop:rep1}
+که~$h(n) = m$ وي، نو $\Th{Q} \Proves !A_h(\num{n}, \num{m})$۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ~$h(n) = m$، يعنې~$f(g(n)) = m$۔ $k = g(n)$ ونيسئ۔ بيا
+\begin{align*}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k})
+  \intertext{ځکه~$!A_g$، $g$ تمثيلوي، او}
+  \Th{Q} & \Proves !A_f(\num{k}, \num{m})
+  \intertext{ځکه~$!A_f$، $f$ تمثيلوي۔ نو}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k}) \land !A_f(\num{k}, \num{m})
+  \intertext{او په پايله کښې دا هم}
+  \Th{Q} & \Proves \lexists[y][(!A_g(\num{n}, y) \land !A_f(y, \num{m}))],
+\end{align*}
+يعنې $\Th{Q} \Proves !A_h(\num{n}, \num{m})$۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep2}
+که~$h(n) = m$ وي، نو $\Th{Q} \Proves \lforall[z][(!A_h(\num{n}, z) \lif
+  z = \num{m})]$۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ~$h(n) = m$، يعنې~$f(g(n)) = m$۔ $k = g(n)$ ونيسئ۔ بيا
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][(!A_g(\num{n}, y) \lif \eq[y][\num{k}])]
+  \intertext{ځکه~$!A_g$، $g$ تمثيلوي، او}
+  \Th{Q} & \Proves \lforall[z][(!A_f(\num{k}, z) \lif \eq[z][\num{m}])]
+  \intertext{ځکه~$!A_f$، $f$ تمثيلوي۔ يوازې د لږ منطق په کارولو
+    ښودلے شو چې دا هم}
+  \Th{Q} & \Proves \lforall[z][(\lexists[y][(!A_g(\num{n}, y) \land
+      !A_f(y, z))] \lif \eq[z][\num{m}])].
+\end{align*}
+يعنې $\Th{Q} \Proves \lforall[y][(!A_h(\num n, y) \lif \eq[y][\num m])]$۔
+\end{proof}
+
+همدا مفکوره په هغې زياتې پېچلې قضيې کښې هم کار کوي چې~$f$ او
+$g_i$ له~$1$ څخه زيات ځایونه لري۔
+
+\begin{prop}
+\ollabel{prop:rep-composition}
+که~$!A_f(y_0, \dots, y_{k-1}, z)$ په~$\Th{Q}$ کښې
+$f(y_0, \dots, y_{k-1})$ تمثيلوي، او
+$!A_{g_i}(x_0, \dots, x_{l-1}, y)$ په~$\Th{Q}$ کښې
+$g_i(x_0, \dots, x_{l-1})$ تمثيلوي، نو
+\begin{multline*}
+  \lexists[y_0\dots][\lexists[y_{k-1}][(!A_{g_0}(x_0,\dots,x_{l-1},y_0) \land
+      \dots \land {}]]\\
+  !A_{g_{k-1}}(x_0,\dots,x_{l-1},y_{k-1}) \land !A_f(y_0,\dots,y_{k-1},z))
+\end{multline*}
+دا تمثيلوي:
+\[
+h(x_0, \dots, x_{l-1}) = f(g_0(x_0, \dots, x_{l-1}), \dots, g_{k-1}(x_0,
+\dots, x_{l-1})).
+\]
+\end{prop}
+
+\begin{proof}
+تمرین۔
+\end{proof}
+
+\begin{prob}
+د \olref[inc][req][cmp]{prop:rep1} او
+\olref[inc][req][cmp]{prop:rep2} ثبوتونه د لارښود په توګه وکاروئ او
+د \olref[inc][req][cmp]{prop:rep-composition} ثبوت په تفصيل ترسره
+کړئ۔
+\end{prob}
+\textbf{د ژباړې د نسخې سمون (OLCMP-085):} سرچينې په تمرين کښې
+دويمه قضيه دوه ځله راجع کړې وه؛ دلته د دليل دواړه مخکښ پړاوونه په
+خپل سم ترتيب راجع شوي دي۔
+
+\end{document}

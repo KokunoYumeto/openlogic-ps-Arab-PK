@@ -2071,3 +2071,75 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
 - Treatment: recurses on hCond(s,y,n), matching the four-place helper being defined before the two-place Cond wrapper.
 - Disclosure: `replace-Cond-with-hCond-in-recursive-clause-plus-adjacent-note`.
+
+## OLCMP-083
+
+- Unit: `OLP-0291`
+- Frozen source: `content/incompleteness/representability-in-q/representable-comp.tex` (d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef) at `content/incompleteness/representability-in-q/representable-comp.tex:16-23`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex:25`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: names the representing formula A_f in the lemma premise, matching its displayed use and every subsequent use.
+- Disclosure: `add-f-subscript-to-representing-formula-plus-adjacent-note`.
+
+## OLCMP-084
+
+- Unit: `OLP-0293`
+- Frozen source: `content/incompleteness/representability-in-q/prim-rec.tex` (ec7c33837767fa024b45506d818a6601efa0523abef7c474881281d6c7e969a9) at `content/incompleteness/representability-in-q/prim-rec.tex:12-20`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex:20`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: states h(vec x,y), matching both primitive-recursion equations directly below.
+- Disclosure: `replace-h-x-vec-z-with-h-vec-x-y-plus-adjacent-note`.
+
+## OLCMP-085
+
+- Unit: `OLP-0295`
+- Frozen source: `content/incompleteness/representability-in-q/composition-representable.tex` (7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6) at `content/incompleteness/representability-in-q/composition-representable.tex:97-103`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex:103`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: directs the exercise to both proof directions, propositions rep1 and rep2, before the general composition proposition.
+- Disclosure: `replace-first-rep2-reference-with-rep1-plus-adjacent-note`.
+
+## OLCMP-086
+
+- Unit: `OLP-0296`
+- Frozen source: `content/incompleteness/representability-in-q/minimization-representable.tex` (396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94) at `content/incompleteness/representability-in-q/minimization-representable.tex:42-55`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex:61`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: derives the middle equality from the induction hypothesis and Q5, then obtains the requested equality by transitivity with step5.
+- Disclosure: `replace-circular-middle-line-with-derived-middle-equality-plus-adjacent-note`.
+
+## OLCMP-087
+
+- Unit: `OLP-0300`
+- Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:108-117`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:123`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: equates t_2 with numeral m, its value fixed immediately above.
+- Disclosure: `replace-second-n-with-m-plus-adjacent-note`.
+
+## OLCMP-088
+
+- Unit: `OLP-0300`
+- Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:124-135`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:139`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: proves numeral k prime plus numeral n equals numeral m, matching the existential witness z prime plus t_1 in Q8.
+- Disclosure: `order-closed-sum-as-witness-prime-plus-t1-plus-adjacent-note`.
+
+## OLCMP-089
+
+- Unit: `OLP-0300`
+- Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:137-151`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:159`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: uses the positive equality z prime equals zero in the equal-values case and cites Q2 for both successor-not-zero contradictions.
+- Disclosure: `restore-positive-successor-equality-and-cite-Q2-plus-adjacent-note`.
+
+## OLCMP-090
+
+- Unit: `OLP-0300`
+- Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:165-173`
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:184`
+- Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
+- Treatment: identifies the zero-instance right side of the bounded universal equivalence as the empty conjunction, whose value is true.
+- Disclosure: `replace-empty-disjunction-with-empty-conjunction-plus-adjacent-note`.

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 288,
-    "structural_pass": 288,
+    "draft_units": 300,
+    "structural_pass": 300,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B055-ARITHMETIZATION-SYNTAX",
+  "batch": "PS-B056-REPRESENTABILITY-IN-Q",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -8996,6 +8996,384 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0289",
+      "path": "content/incompleteness/representability-in-q/representability-in-q.tex",
+      "source_sha256": "6715dd11caaa6921c31b7cc305ac46ff98763c3a924626870473543ab5551100",
+      "translation_sha256": "146678d6136089b95f7d3299e67493e8d63ea8f6a8ecd323925a9f84fe9fcc4d",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0290",
+      "path": "content/incompleteness/representability-in-q/introduction.tex",
+      "source_sha256": "de4ec980306a8c0b24fe5389b6c5b090facca2bd20f23305425d70d6ecff4721",
+      "translation_sha256": "92f67c331df651838235f4a27809b1507819e8701165359c6abc07fb6056868d",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0291",
+      "path": "content/incompleteness/representability-in-q/representable-comp.tex",
+      "source_sha256": "d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef",
+      "translation_sha256": "2220f79ee9040bbd06fd553e49cddbdb453d91ed2c10f899013a56642e83f6f0",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-083"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$!A(x_0,\\dots,x_k,y)$"
+        ],
+        "target_only": [
+          "$!A_f(x_0,\\dots,x_k,y)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0292",
+      "path": "content/incompleteness/representability-in-q/beta-function.tex",
+      "source_sha256": "041d2d3510e2d838d1631634a22a8d5eeb0fb5942df402382cafab3d82b6f5d0",
+      "translation_sha256": "46509ca7303fad5802876fac854d70e649c0378634be903d724258a4cc2cc17f",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0293",
+      "path": "content/incompleteness/representability-in-q/prim-rec.tex",
+      "source_sha256": "ec7c33837767fa024b45506d818a6601efa0523abef7c474881281d6c7e969a9",
+      "translation_sha256": "2b13eed789b707957d373fd76d8035e5919a8b1c2b9f63705767ad8ed66f31b9",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-084"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$h(x,\\vecz)$"
+        ],
+        "target_only": [
+          "$h(\\vecx,y)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0294",
+      "path": "content/incompleteness/representability-in-q/basic-representable.tex",
+      "source_sha256": "0bc250900584465d2c4b4db0dc26dbad8b6b23ed808586d9080afe9f91255b32",
+      "translation_sha256": "3f78ca6a1da996a3243863e56daaf4f93e4b7a05a80e6caeb437da840ff99db5",
+      "source_blocks": 33,
+      "target_blocks": 33,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0295",
+      "path": "content/incompleteness/representability-in-q/composition-representable.tex",
+      "source_sha256": "7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6",
+      "translation_sha256": "642975faf71b04cd4a3c65746efdbbc353ebf3ab4c1ca5101de046c76cc34769",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-085"
+      ],
+      "status": "structural-pass",
+      "identifier_diff": {
+        "source_only": [
+          "\\olref[inc][req][cmp]{prop:rep2}"
+        ],
+        "target_only": [
+          "\\olref[inc][req][cmp]{prop:rep1}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0296",
+      "path": "content/incompleteness/representability-in-q/minimization-representable.tex",
+      "source_sha256": "396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94",
+      "translation_sha256": "fe2e1375b9cdf2bc204fc8002e3784cce6d0e04c51abfc8ea5b3d9c5a55626a6",
+      "source_blocks": 33,
+      "target_blocks": 33,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-086"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align}\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a'+\\numn)']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step5}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a+\\numn')']\\quad\\text{LOCALIZED}\\ollabel{step6}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn)'][(a+\\numn')']\\quad\\text{LOCALIZED}\\notag\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a'+\\numn)']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step5}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn)'][(a+\\numn')']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step6}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a+\\numn')']\\quad\\text{LOCALIZED}\\notag\\end{align}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0297",
+      "path": "content/incompleteness/representability-in-q/comp-representable.tex",
+      "source_sha256": "48131a3e5cfc021a6d3eda9f9c180ed5ab21e6e31de0237a780c063c02807442",
+      "translation_sha256": "d704f4dfb507d145fd90d992341f6db17eb20cecfeb943a79dc06c15d439fbf9",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0298",
+      "path": "content/incompleteness/representability-in-q/representing-relations.tex",
+      "source_sha256": "97b0cb4406cc953b30d2006dc7e27ef8262a6f82e8926186eefbdb0a5602ef55",
+      "translation_sha256": "c4bd51d9f51489cdc2515f38984fb91178daa37369ccd1ef0d430ad7bd550396",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0299",
+      "path": "content/incompleteness/representability-in-q/undecidability.tex",
+      "source_sha256": "ced54dd307fbc001e4d3a4a2184e22d12bef0e499d9130c42765b737e46a2a98",
+      "translation_sha256": "5b523a5787509d73a979a49e14fa96dcee54bcee452ecff1c2b095b99991b782",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0300",
+      "path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+      "translation_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+      "source_blocks": 32,
+      "target_blocks": 32,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-087",
+        "OLCMP-088",
+        "OLCMP-089",
+        "OLCMP-090"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Th{Q}\\Proves\\eq[t_2][\\numn]$",
+          "$\\Th{Q}\\Proves\\eq[\\numn+{\\numk}'][\\numm]$",
+          "$\\eq/[z'][\\Obj0]$",
+          "$!Q_3$",
+          "$!Q_3$"
+        ],
+        "target_only": [
+          "$\\Th{Q}\\Proves\\eq[t_2][\\numm]$",
+          "$\\Th{Q}\\Proves\\eq[{\\numk}'+\\numn][\\numm]$",
+          "$\\eq[z'][\\Obj0]$",
+          "$!Q_2$",
+          "$!Q_2$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -11614,6 +11992,78 @@
       "passage": "axiomatic derivation coding",
       "reverse_paraphrase": "An axiomatic derivation is a sequence of formulas whose lines are axioms or follow by modus ponens or quantifier rules. The deduction theorem converts finite Gamma-premises into a nested conditional for the final proof predicate.",
       "finding": "The example, axiom test, MP test, quantifier-rule test, derivation predicate, exercises and deduction-theorem construction remain complete; two source repairs are adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0289",
+      "passage": "representability chapter driver",
+      "reverse_paraphrase": "The chapter proceeds from the theory and representation definition through both computability directions, relation representation, undecidability and Sigma-1 completeness.",
+      "finding": "The title, eleven imports and end hook are complete and ordered exactly as the source."
+    },
+    {
+      "unit_id": "OLP-0290",
+      "passage": "Q, representation and proof strategy",
+      "reverse_paraphrase": "Q is the finite eight-axiom arithmetic theory; adding induction yields PA. A function is represented when Q proves its correct numeral value and uniqueness, and the chapter proves this exactly for computable functions.",
+      "finding": "All axioms, schemas, definition clauses, theorem and the strategy eliminating primitive recursion are present without omitted prose."
+    },
+    {
+      "unit_id": "OLP-0291",
+      "passage": "represented functions are computable",
+      "reverse_paraphrase": "Enumerate coded Q derivations until one proves the representing formula for an output numeral; consistency makes that output correct, and regular minimization formalizes the search.",
+      "finding": "The informal and coded arguments, required primitive-recursive helpers and final projection from the least witness are complete; OLCMP-083 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0292",
+      "passage": "beta decoder from Sunzi's theorem",
+      "reverse_paraphrase": "Choose pairwise coprime moduli larger than all entries, use one simultaneous-remainder solution as a code, and recover each entry by the remainder function after unpacking two parameters.",
+      "finding": "The number-theoretic construction, definability inventory, decoder equations and exercise are complete and formula-identical."
+    },
+    {
+      "unit_id": "OLP-0293",
+      "passage": "simulation of primitive recursion",
+      "reverse_paraphrase": "A least beta code records the entire finite recursive computation through stage y; decoding its y-th entry returns the primitive-recursive value using only composition and regular minimization.",
+      "finding": "Both recursion equations, trace conditions and final decoding identity remain complete; OLCMP-084 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0294",
+      "passage": "basic functions represented in Q",
+      "reverse_paraphrase": "Simple graph formulas represent the basic functions, while external inductions and Q's axioms prove their numeral instances and uniqueness, including equality, addition and multiplication.",
+      "finding": "Every proposition, supporting lemma, exercise and symbol-versus-operation explanation remains complete."
+    },
+    {
+      "unit_id": "OLP-0295",
+      "passage": "composition represented in Q",
+      "reverse_paraphrase": "Existentially bind each intermediate value produced by the inner functions, then apply the outer function's representing formula; existence and uniqueness transfer to the composite.",
+      "finding": "The unary proof, general proposition and exercise remain complete; OLCMP-085 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0296",
+      "passage": "regular minimization represented in Q",
+      "reverse_paraphrase": "The candidate output is a zero of g and every smaller input is nonzero. Q proves the needed finite order facts and numeral trichotomy, establishing both existence and uniqueness of the least zero.",
+      "finding": "All four lemmas and both representation obligations remain complete; OLCMP-086 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0297",
+      "passage": "computable functions represented in Q",
+      "reverse_paraphrase": "General recursive functions reduce to the enlarged basic basis plus composition and regular minimization, each already shown representable, so every computable function is represented in Q.",
+      "finding": "The closure argument and explanation for stronger computably axiomatized theories remain complete."
+    },
+    {
+      "unit_id": "OLP-0298",
+      "passage": "computable relations represented in Q",
+      "reverse_paraphrase": "A represented relation is decided by dovetailing proofs of a sentence and its negation; conversely its computable characteristic function yields a formula proving the true and false cases.",
+      "finding": "Both directions and the converse exercise remain complete and formula-identical."
+    },
+    {
+      "unit_id": "OLP-0299",
+      "passage": "undecidability of Q",
+      "reverse_paraphrase": "If Q-provability were recursive, the represented Kleene predicate would decide whether a computation halts; finite axiomatization then transfers the contradiction to first-order validity.",
+      "finding": "The reduction, omega-consistency step, decision function and first-order corollary remain complete."
+    },
+    {
+      "unit_id": "OLP-0300",
+      "passage": "Delta-0 and Sigma-1 completeness",
+      "reverse_paraphrase": "Q evaluates every closed term and true atomic statement, reduces bounded quantifiers to finite Boolean combinations, proves every true Delta-0 sentence, and hence proves each true Sigma-1 sentence from a witness numeral.",
+      "finding": "All hierarchy definitions and induction cases remain complete; OLCMP-087 through OLCMP-090 are adjacent and registered."
     }
   ],
   "builds": [

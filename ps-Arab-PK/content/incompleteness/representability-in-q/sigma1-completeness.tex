@@ -1,0 +1,313 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: sigma1-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{s1c}
+\olsection{د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا}
+
+د~$\Th{Q}$ او د هغې د سازګارو، بديهي کېدونکو غځونو د ناتکميلۍ
+سره سره، ليدلي مو دي چې~$\Th{Q}$ د عددنښو په اړه ډېر بنسټيز
+حقيقتونه ثابتوي۔ په حقيقت کښې دا خبره په پام وړ ډول غځېدے شي۔ د دې
+د پوهېدو دپاره چې په~$\Th{Q}$ کښې کوم څيزونه ثابتېدے شي، د
+$\Delta_0$، $\Sigma_1$، او~$\Pi_1$ !!{formula}s مفهومونه معرفي
+کوو۔ په نا کره ډول،~$\Sigma_1$ !!{formula} د
+$\lexists[x][!B(x)]$ په بڼه وي، چې~$!B$ يوازې د قضيو د نښلوونکو او
+محدودو کمیت ايښوونکو په کارولو جوړ شوے وي۔ وبه ښيو چې که~$!A$ داسې
+$\Sigma_1$ !!{sentence} وي چې په~$\Struct{N}$ کښې رښتينې وي، نو
+$\Th{Q} \Proves !A$ (\olref{thm:sigma1-completeness})۔
+
+\begin{defn}
+\ollabel{defn:bd-quant}
+يوه \emph{محدوده وجودي !!{formula}} د
+$\lexists[x][(x < t \land !A(x))]$ په بڼه وي، چې~$t$ هر ترم دے، او
+موږ ئې په دوديز ډول~$\bexists{x < t}{!A(x)}$ ليکو۔
+%
+يوه \emph{محدوده کلي !!{formula}} د
+$\lforall[x][(x < t \lif !A(x))]$ په بڼه وي، چې~$t$ هر ترم دے، او
+موږ ئې په دوديز ډول~$\bforall{x < t}{!A(x)}$ ليکو۔
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:delta0-sigma1-pi1-frm}
+يوه !!{formula}~$!B$ هله~$\Delta_0$ ده چې له اټومي
+!!{formula}s څخه يوازې د قضيو د نښلوونکو او محدودې کمیت ايښودنې په
+کارولو جوړه شوې وي۔
+%
+يوه !!{formula}~$!A$ هله~$\Sigma_1$ ده چې
+$!A \ident \lexists[x][!B(x)]$ وي او~$!B$، $\Delta_0$ وي۔
+%
+يوه !!{formula}~$!A$ هله~$\Pi_1$ ده چې
+$!A \ident \lforall[x][!B(x)]$ وي او~$!B$، $\Delta_0$ وي۔
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:q-proves-clterm-id} فرض کړئ~$t$ تړلے ترم دے چې
+$\Value{t}{N} = n$۔ بيا $\Th{Q} \Proves \eq[t][\num n]$۔
+\end{lem}
+
+\begin{proof}
+دا د~$t$ پر پېچلتيا په استقرا ثابتوو۔ په بنسټيزه قضيه کښې
+$\Value{\Obj 0}{N} = 0$، او
+$\Th{Q} \Proves \eq[\Obj 0][\num 0]$، ځکه
+$\num 0 \ident \Obj 0$۔
+%
+د استقرايي قضيې دپاره، فرض کړئ~$t_1$ او~$t_2$ داسې ترمونه دي چې
+$\Value{t_1}{N} = n_1$، $\Value{t_2}{N} = n_2$،
+$\Th{Q} \Proves \eq[t_1][\num n_1]$، او
+$\Th{Q} \Proves \eq[t_2][\num n_2]$۔
+
+بيا~$\Value{(t_1')}{N} = n_1 + 1$، او د عينيت د لومړي-رتبه قواعدو
+له مخې، چې پر استقرايي فرضيه او
+!!{formula}~$\eq[\num{n_1}'][\num{n_1}']$ پلي شوي، لرو چې
+$\Th{Q} \Proves \eq[t_1'][{\num n_1}']$؛ نو د عددنښو د تعريف له
+مخې $\Th{Q} \Proves \eq[t_1'][\num{n_1 + 1}]$۔
+
+د جمعو دپاره لرو:
+\[
+      \Value{(t_1 + t_2)}{N}
+    = \Value{t_1}{N} + \Value{t_2}{N}
+    = n_1 + n_2.
+\]
+د استقرايي فرضيې او د عينيت د قواعدو له مخې،
+$\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1} + t_2]$، او بيا د عينيت
+د قواعدو په دويم پلي کولو
+$\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1} + \num{n_2}]$۔ د
+\olref[inc][req][bre]{lem:q-proves-add} له مخې،
+$\Th{Q} \Proves \eq[\num{n_1} + \num{n_2}][\num{n_1 + n_2}]$،
+نو $\Th{Q} \Proves \eq[t_1 + t_2][\num{n_1 + n_2}]$۔
+
+همداسې استدلال د~$\times$ دپاره هم کار کوي، چې
+\olref[inc][req][bre]{lem:q-proves-mult} پکې کاروو۔
+%
+ځکه چې دا د حساب ټول تړلي ترمونه رانغاړي، نو د هر داسې تړلي
+ترم~$t$ دپاره چې~$\Value{t}{N} = n$ وي،
+$\Th{Q} \Proves \eq[t][\num n]$۔
+\end{proof}
+
+\begin{prob}
+په \olref{lem:q-proves-clterm-id} کښې د~$\times$ اړوند برخه په
+تفصيل ثابته کړئ۔
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:atomic-completeness}
+فرض کړئ~$t_1$ او~$t_2$ تړلي ترمونه دي۔ بيا
+\begin{enumerate}
+\item که~$\Value{t_1}{N} = \Value{t_2}{N}$ وي،
+    نو $\Th{Q} \Proves \eq[t_1][t_2]$۔
+\item که~$\Value{t_1}{N} \neq \Value{t_2}{N}$ وي،
+    نو $\Th{Q} \Proves \eq/[t_1][t_2]$۔
+\item که~$\Value{t_1}{N} < \Value{t_2}{N}$ وي،
+    نو $\Th{Q} \Proves t_1 < t_2$۔
+\item که~$\Value{t_2}{N} \leq \Value{t_1}{N}$ وي،
+    نو $\Th{Q} \Proves \lnot(t_1 < t_2)$۔
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+د ورکړل شوو ترمونو~$t_1$ او~$t_2$ دپاره
+$n = \Value{t_1}{N}$ او~$m = \Value{t_2}{N}$ ټاکو۔
+
+فرض کړئ~$!A \ident t_1 = t_2$۔ د
+\olref{lem:q-proves-clterm-id} له مخې،
+$\Th{Q} \Proves \eq[t_1][\num n]$ او
+$\Th{Q} \Proves \eq[t_2][\num m]$۔ که~$n = m$ وي، نو
+$\Th{Q} \Proves \eq[\num n][\num m]$، او له دې امله د عينيت د
+تعدي له مخې~$\Th{Q} \Proves \eq[t_1][t_2]$۔ که~$n \neq m$ وي، نو
+$\Th{Q} \Proves \eq/[\num n][\num m]$، او يو ځل بيا د عينيت د
+تعدي له مخې~$\Th{Q} \Proves \eq/[t_1][t_2]$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-087):} سرچينې دويم تړلي ترم
+هم د لومړي ترم له ارزښت سره برابر کړے و؛ دلته هر ترم له خپل ټاکل
+شوي ارزښت سره برابر شوے دے۔
+
+اوس~$!A \ident t_1 < t_2$ ونيسئ۔ په دواړو قضيو کښې پر بديهي
+اصل~$!Q_8$ تکيه کوو، چې وايي د ټولو~$x,y$ دپاره
+$x < y \liff \lexists[z][\eq[z' + x][y]]$۔
+
+فرض کړئ~$\Sat{N}{t_1 < t_2}$۔ بيا داسې~$k \in \Nat$ شته چې
+$n + k + 1 = m$۔ د~\olref{lem:q-proves-clterm-id} له مخې،
+$\Th{Q} \Proves \eq[t_1][\num n]$ او
+$\Th{Q} \Proves \eq[t_2][\num m]$، او د دې لمې د لومړۍ برخې له
+مخې، $\Th{Q} \Proves \eq[{\num k}' + \num n][\num m]$۔ د عينيت د
+تعدي له مخې، $\Th{Q} \Proves \eq[{\num k}' + t_1][t_2]$، نو
+$\Th{Q} \Proves \lexists[z][\eq[z' + t_1][t_2]]$۔ د~$!Q_8$ د
+ښي-څخه-کيڼ لوري له مخې،~$\Th{Q} \Proves t_1 < t_2$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-088):} سرچينې په لومړۍ ثابته
+مساوات کښې د جمع غړي د هغه وجودي شاهد پر خلاف اړولي وو چې په بله
+کرښه او د کوچني والي په بديهي اصل کښې کارېږي؛ دلته ترتيب د هماغه
+شاهد له بڼې سره برابر شوے دے۔
+
+د دې پر ځاے فرض کړئ~$\Sat/{N}{t_1 < t_2}$، يعنې~$m \leq n$۔
+%
+په~$\Th{Q}$ کښې کار کوو او~$t_1 < t_2$ فرضوو۔ د~$!Q_8$ د
+کيڼ-څخه-ښي لوري له مخې، داسې~$z$ شته چې
+$\eq[z' + t_1][t_2]$۔ ځکه چې
+$\Th{Q} \Proves \eq[t_1][\num n]$ او
+$\Th{Q} \Proves \eq[t_2][\num m]$، نو
+$\eq[z' + \num n][\num m]$۔
+%
+پر~$m$ د~$!Q_5$ په کارولو د يوې بهرنۍ استقرا له مخې،
+$\eq[z' + \num{n - m}][\Obj 0]$۔
+که~$m = n$ وي، نو~$\eq[z'][\Obj 0]$، چې د~$!Q_2$ له لارې تناقض
+ورکوي۔ که~$m < n$ وي، نو د~$!Q_5$ په بيا کارولو
+$\eq[(z' + \num{n - m - 1})'][\Obj 0]$، چې د~$!Q_2$ له لارې
+تناقض ورکوي۔ نو~$\Th{Q} \Proves \lnot(t_1 < t_2)$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-089):} سرچينې په لومړۍ قضيه
+کښې د تر لاسه شوې مساوات پر ځاے نابرابري ليکلې وه، او د صفر له تالي
+سره د نابرابرۍ دپاره ئې په دواړو قضيو کښې ناسم بديهي اصل راجع کړے
+و؛ دلته نښه او دواړه راجعې له اړوند بديهي اصل سره سمې شوې دي۔
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:bounded-quant-equiv}
+فرض کړئ~$!A$ کومه !!a{formula} ده،~$t$ تړلے ترم دے، او
+$k=\Value{t}{N}$۔ بيا
+\begin{enumerate}
+\item $\Th{Q} \Proves \bforall{x<t}{!A(x)}$ هله او يوازې هله چې
+$\Th{Q} \Proves !A(\num 0) \land \dots \land !A(\num{k-1})$۔
+\item $\Th{Q} \Proves \bexists{x<t}{!A(x)}$ هله او يوازې هله چې
+$\Th{Q} \Proves !A(\num 0) \lor \dots \lor !A(\num{k-1})$۔
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+    د محدود کلي کمیت ايښوونکي قضيه ثابتوو۔
+    که~$\Value{t}{N} = 0$ وي، نو د معادلۍ کيڼ اړخ په~$\Th{Q}$
+    کښې ثابتېدونکے دے، ځکه د
+    \olref[inc][req][min]{lem:less-zero} له مخې هېڅ~$x<\num 0$
+    نشته۔ همداسې، تش عطف په ساده ډول~$\ltrue$ ګڼلے شو، چې په
+    $\Th{Q}$ کښې هم ثابتېدونکے دے۔
+    \textbf{د ژباړې د نسخې سمون (OLCMP-090):} سرچينې دلته تش منفصل
+    ياد کړے و، خو د کلي کمیت ايښوونکي ښے اړخ عطف دے؛ تش عطف رښتيا
+    وي، لکه چې ورپسې نښه هم ښيي۔
+    %
+    نو فرضوو چې د کوم طبيعي عدد~$k$ دپاره
+    $\Value{t}{N} = k+1$۔ د
+    \olref{lem:q-proves-clterm-id} له مخې فرضولے شو چې د
+    $\bforall{x<\num{k+1}}{!A(x)}$ په بڼه پر !!a{formula} کار کوو۔
+
+    فرض کړئ~$\Th{Q} \Proves \bforall{x<\num{k+1}}{!A(x)}$، او
+    $n \leq k$ ونيسئ۔ ځکه چې د~\olref{lem:atomic-completeness} له
+    مخې~$\Th{Q} \Proves \num n < \num{k+1}$، نو د منطق له مخې
+    $\Th{Q} \Proves !A(\num n)$۔ د هر~$n \leq k$ دپاره د دې حقيقت
+    په~$k+1$ ځله پلي کولو، لکه څنګه چې غوښتل شوي وو، اخلو:
+    $\Th{Q} \Proves !A(\num 0) \land \dots \land !A(\num k)$۔
+
+    د بل لوري دپاره فرض کړئ چې
+    $\Th{Q} \Proves !A(\num 0) \land \dots \land !A(\num k)$۔ په
+    $\Th{Q}$ کښې کار کوو؛ فرض کړئ~$x < \num{k+1}$۔ د
+    \olref[inc][req][min]{lem:less-nsucc} له مخې لرو:
+    $x = \num 0 \lor \dots \lor x = \num k$، نو د منطق له مخې
+    $!A(x)$؛ او له دې څخه کلي ادعا
+    $\bforall{x<\num{k+1}}{!A(x)}$ راځي۔
+
+    د محدودې وجودي کمیت ايښودنې لرونکو !!{formula}s د معادلۍ ثبوت
+    ورته دے۔
+\end{proof}
+
+\begin{prob}
+په \olref{lem:bounded-quant-equiv} کښې د وجودي قضيې تفصيلي ثبوت
+ورکړئ۔
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:delta0-completeness}
+که~$!A$ داسې~$\Delta_0$ !!{sentence} وي چې په~$\Struct{N}$ کښې
+رښتينې وي، نو~$\Th{Q} \Proves !A$۔
+\end{lem}
+
+\begin{proof}
+دا د~!!{formula} پر پېچلتيا په استقرا ثابتوو۔
+%
+بنسټيزه قضيه~\olref{lem:atomic-completeness} ورکوي، نو استقرايي
+پړاو ته ځو۔ د اسانۍ دپاره د نفي قضيه د هغې~!!{formula} د جوړښت له
+مخې پر فرعي قضيو وېشو چې نفي ورباندې پلي شوې ده۔
+
+\begin{enumerate}
+\item فرض کړئ~$(!A \land !B)$ په~$\Struct{N}$ کښې رښتينې ده، نو
+$!A$ او~$!B$ په~$\Struct{N}$ کښې رښتينې دي۔ د استقرايي فرضيې له
+مخې، $\Th{Q} \Proves !A$ او~$\Th{Q} \Proves !B$، نو د منطق له مخې
+$\Th{Q} \Proves (!A \land !B)$۔
+%
+\item فرض کړئ~$\lnot (!A \land !B)$ په~$\Struct{N}$ کښې رښتينې ده،
+نو يا~$\lnot !A$ يا~$\lnot !B$ په~$\Struct{N}$ کښې رښتينې ده۔ د
+عموميت له زيان پرته، لومړۍ فرض کړئ۔ د استقرايي فرضيې له مخې
+$\Th{Q} \Proves \lnot !A$، او له دې امله د منطق له مخې
+$\Th{Q} \Proves \lnot (!A \land !B)$۔
+%
+\item فرض کړئ~$(!A \lor !B)$ په~$\Struct{N}$ کښې رښتينې ده، نو يا
+$!A$ په~$\Struct{N}$ کښې يا~$!B$ په~$\Struct{N}$ کښې رښتينې ده۔ د عموميت له زيان
+پرته، لومړۍ فرض کړئ۔ د استقرايي فرضيې له مخې
+$\Th{Q} \Proves !A$، او له دې امله د منطق له مخې
+$\Th{Q} \Proves (!A \lor !B)$۔
+%
+\item فرض کړئ~$\lnot(!A \lor !B)$ په~$\Struct{N}$ کښې رښتينې ده،
+نو~$\lnot !A$ او~$\lnot !B$ په~$\Struct{N}$ کښې رښتينې دي۔ د
+استقرايي فرضيې له مخې، $\Th{Q} \Proves \lnot !A$ او
+$\Th{Q} \Proves \lnot !B$۔ په پايله کښې، د منطق له مخې
+$\Th{Q} \Proves \lnot(!A \lor !B)$۔
+%
+\item فرض کړئ~$\bforall{x<t}{!A(x)}$ په~$\Struct{N}$ کښې رښتينې
+ده، چې~$t$ تړلے ترم او~$k=\Value{t}{N}$ دے۔ د استقرايي فرضيې او
+منطق له مخې، که~$!A(\num n)$ د هر~$n < \Value{t}{N}$ دپاره په
+$\Struct{N}$ کښې رښتينې وي، نو
+$\Th{Q} \Proves !A(\num 0) \land \dots \land !A(\num{k-1})$۔ د
+\olref{lem:bounded-quant-equiv} له مخې،
+$\Th{Q} \Proves \bforall{x<t}{!A(x)}$۔
+%
+\item د محدود وجودي کمیت ايښوونکي قضيه، چې د
+$\bexists{x < t}{!A(x)}$ په بڼه !!a{sentence} لرو، د محدود کلي
+کمیت ايښوونکي قضيې ته ورته ده۔
+%
+\item فرض کړئ~$\lnot \bforall{x<t}{!A(x)}$ په~$\Struct{N}$ کښې
+رښتينې ده، چې~$t$ تړلے ترم دے۔ دا !!{sentence} له
+!!{sentence}~$\bexists{x<t}{\lnot !A(x)}$ سره معادله ده، او دا معادله په
+$\Th{Q}$ کښې استنتاجېدے شي؛ نو د محدودو وجودي کمیت ايښوونکو
+استدلال پلي کولے شو۔
+%
+\item همداسې، فرض کړئ~$\lnot \bexists{x<t}!A(x)$ په~$\Struct{N}$
+کښې رښتينې ده، چې~$t$ تړلے ترم دے۔ دا !!{sentence} په~$\Th{Q}$ کښې
+له~$\bforall{x<t}{\lnot!A(x)}$ سره معادله ده، نو د محدودو کلي کمیت
+ايښوونکو استدلال پلي کولے شو۔
+%
+\item په پاې کښې، فرض کړئ~$\lnot !A$ په~$\Struct{N}$ کښې رښتينې
+ده۔ يوازې هغه قضيې پاتې دي چې~$!A$ اټومي وي او چې د کومې
+$\Delta_0$ !!{sentence}~$!B$ دپاره
+$\lnot !A \ident \lnot\lnot !B$ وي۔ که~$!A$ اټومي وي، نو د
+\olref{lem:atomic-completeness} له مخې
+$\Th{Q} \Proves \lnot !A$۔ که
+$\lnot !A \ident \lnot\lnot !B$ وي، نو د منطق له مخې دا په
+$\Th{Q}$ کښې په ثابتېدونکي ډول له~$!B$ سره معادله ده، چې په
+$\Struct{N}$ کښې رښتينې ده، ځکه~$\lnot !A$ په~$\Struct{N}$ کښې
+رښتينې ده۔ نو د استقرايي فرضيې له مخې
+$\Th{Q} \Proves \lnot !A$۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+په \olref{lem:delta0-completeness} کښې د وجودي قضيې تفصيلي ثبوت
+ورکړئ۔
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:sigma1-completeness}
+که~$!A$ داسې~$\Sigma_1$ !!{sentence} وي چې په~$\Struct{N}$ کښې
+رښتينې وي، نو~$\Th{Q} \Proves !A$۔
+\end{thm}
+
+\begin{proof}
+که~$\lexists{x}!A(x)$ داسې~$\Sigma_1$ !!{sentence} وي چې په
+$\Struct{N}$ کښې رښتينې وي، نو داسې طبيعي عدد~$n$ او د متحولونو
+د ارزښت ټاکنه~$s$ شته چې~$s(x) = n$ او~$\Sat{N}{!A(x)}[s]$۔ د
+پوره کېدو د اړيکې په اړه له معياري حقيقتونو څخه
+$\Sat{N}{!A(\num n)}$ لازمېږي۔ خو~$!A(\num n)$ يوه
+$\Delta_0$ !!{formula} ده، نو د~\olref{lem:delta0-completeness} له
+مخې~$\Th{Q} \Proves !A(\num n)$؛ او له دې امله د منطق له مخې
+$\Th{Q} \Proves \lexists[x][!A(x)]$ هم لرو۔
+\end{proof}
+
+\end{document}
