@@ -1,0 +1,80 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-20T02:56:29.667449+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
+  "scope": "OLP-0256 through OLP-0263 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-045",
+      "unit_id": "OLP-0257",
+      "classification": "initial_configuration_gloss_places_input_left_of_the_left_end_marker",
+      "source_path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "source_locator": "content/turing-machines/machines-computations/configuration.tex:56-61",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex",
+      "target_line_1based": 57,
+      "target_sha256": "8e52dfe2163604dd67643749d9168b8cf41687896acee995af5f180e27744499",
+      "mode": "replace-left-with-right-plus-adjacent-note",
+      "translation_change": "places the input immediately to the right of the left-end marker",
+      "counterexample": "The displayed initial configuration is the concatenation of the end marker followed by I, and the preceding paragraph explicitly puts the input on squares to its right.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
+      "formula_policy": "Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-046",
+      "unit_id": "OLP-0258",
+      "classification": "mover_exercise_cross_references_the_independent_doubler_with_overlapping_state_numbers",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "source_locator": "content/turing-machines/machines-computations/unary-numbers.tex:187-198",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex",
+      "target_line_1based": 193,
+      "target_sha256": "4d8b2cae6942649efae899146dd307b044cacdf4707802f65b80abe95405dadd",
+      "mode": "replace-doubler-reference-plus-adjacent-note",
+      "translation_change": "links the mover to the original six-state doubler from representing-tms",
+      "counterexample": "The mover is numbered from q_6 specifically to follow the original q_0-through-q_5 doubler. The cited disciplined doubler already uses q_0 through q_8 and already produces a contiguous output, so combining it with the mover contradicts both the construction and numbering.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
+      "formula_policy": "Only the stable cross-reference changes; the machine diagrams, formulas and exercise question remain otherwise unchanged.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes",
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref[tur][mac][una]{fig:doubler-disc}"
+        ],
+        "target_only": [
+          "\\olref[tur][mac][rep]{fig:doubler}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-047",
+      "unit_id": "OLP-0261",
+      "classification": "combined_transition_function_has_overlapping_first_and_third_cases",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "source_locator": "content/turing-machines/machines-computations/combining-machines.tex:37-43",
+      "target_path": "ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex",
+      "target_line_1based": 49,
+      "target_sha256": "01bcf8f48761447e3682c743abec36325c0c4a8bacae909c7423eecfc4f4f081",
+      "mode": "restrict-first-case-to-defined-values-plus-adjacent-note",
+      "translation_change": "states that the first branch applies only when the original transition value is defined",
+      "counterexample": "For q in Q with delta(q,sigma) undefined, the source first and third conditions both apply. The intended handoff to the start state of M-prime is therefore not a function unless the first branch is restricted to defined values.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
+      "formula_policy": "Only localized condition prose changes. The displayed terms, all mathematical tokens and the construction outside that condition remain identical.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes"
+    }
+  ],
+  "no_change_units": [
+    "OLP-0256",
+    "OLP-0259",
+    "OLP-0260",
+    "OLP-0262",
+    "OLP-0263"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete formal Turing-machine, computation, combination and variants source review; three adopted corrections have adjacent Pashto disclosures; every formula and diagram is otherwise identical"
+}

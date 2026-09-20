@@ -1,0 +1,60 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: turing-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{tur}
+\olsection{ټيورينګ ماشينونه}
+
+\begin{explain}
+د ټيورينګ ماشين د جوړښت صوري تعريف مجرد ښکاري، خو په اصل کښې ساده
+دے: دا يوازې هغه ټول معلومات په يوه رياضياتي جوړښت کښې رانغاړي چې د
+ټيورينګ ماشين د کار د ټاکلو دپاره پکار دي۔ په دې کښې دا شامل دي: (1)
+ماشين په کومو حالتونو کښې اوسېدلے شي، (2) پر پټه کومې نښې روا دي، (3)
+ماشين بايد په کوم حالت کښې پيل وکړي، او (4) د ماشين د لارښوونو سټ څه
+دے۔
+\end{explain}
+
+\begin{defn}[ټيورينګ ماشين]
+يو \emph{ټيورينګ ماشين} $M$ هغه څلور‌يز $\langle Q, \Sigma, q_0,
+\delta\rangle$ دے چې له لاندې توکو جوړ دے:
+\begin{enumerate}
+\item د \emph{حالتونو} يو متناهي سټ~$Q$،
+\item يوه متناهي \emph{الفبا} $\Sigma$ چې $\TMendtape$ او
+  $\TMblank$ پکښې شامل دي،
+\item يو \emph{لومړنی حالت}~$q_0 \in Q$،
+\item د \emph{لارښوونو} يو متناهي سټ~$\delta\colon Q \times \Sigma
+  \pto Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$۔
+\end{enumerate}
+جزوي تابع~$\delta$ ته د~$M$ \emph{د حالت بدلون تابع} هم ويل کېږي۔
+\end{defn}
+
+\begin{explain}
+موږ فرض کوو چې پټه يوازې په يوه لوري کښې نامتناهي ده۔ ځکه نو ګټوره
+ده چې ځانګړې نښه~$\TMendtape$ د پټې د کيڼ پای د نښې په توګه وټاکو۔
+په دې سره د ټيورينګ ماشين پروګرامونه په اسانۍ پوهېدے شي چې کله له پټې
+څخه د ``لوېدو په خطر'' کښې دي۔ موږ دا فرض کولے شو چې دا نښه هېڅکله
+نۀ بدلېږي، يعنې که $\delta(q,\TMendtape)$ تعريف شوې وي، نو
+$\delta(q,\TMendtape) = \tuple{q', \TMendtape, x}$ وي۔ ځينې درسي
+کتابونه دا کار کوي؛ موږ ئې نۀ کوو۔ د خپل ټيورينګ ماشين د جوړولو پر
+وخت يوازې دومره پام وکړئ چې~$\TMendtape$ هېڅکله بدله نۀ کړي۔ سربېره
+پر دې، داسې حالتونه هم شته چې د دې نښې د بدلولو اجازه څه ګټور
+انعطاف برابروي۔
+\end{explain}
+
+\begin{ex}
+\emph{جفت ماشين:} جفت ماشين په صوري ډول هغه څلور‌يز
+$\tuple{Q, \Sigma, q_0, \delta}$ دے چې
+\begin{align*}
+Q & = \{ q_0, q_1 \} \\
+\Sigma & = \{ \TMendtape, \TMblank, \TMstroke \}, \\
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}.
+\end{align*}
+\end{ex}
+
+\end{document}

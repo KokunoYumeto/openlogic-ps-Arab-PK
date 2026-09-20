@@ -1,0 +1,239 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: unary-numbers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{una}
+\olsection{د عددونو يوګونې څرګندونه}
+
+\begin{explain}
+ټيورينګ ماشينونه پر خپله پټه د ليکل شوو نښو پر لړيو کار کوي۔ د
+ټيورينګ ماشين د الفبا له مخې، د نښو دا لړۍ بېلابېل ننوتونه او وتونه
+څرګندولے شي۔ البته، هغه ټيورينګ ماشينونه ځانګړې پاملرنه غواړي چې
+\emph{حسابي} تابعې، يعنې د طبيعي عددونو تابعې، محاسبه کوي۔ د مثبتو
+صحيح عددونو د څرګندولو يوه ساده لار دا ده چې د يوې نښې~$\TMstroke$
+د لړيو په توګه کوډ شي۔ که $n \in \Nat$ وي، نو $\TMstroke^n$ دې هغه
+وخت تشه لړۍ وي چې $n = 0$ وي؛ او که نۀ وي، هغه لړۍ دې وي چې کره
+$n$ شمېر~$\TMstroke$ نښې لري۔
+\end{explain}
+
+\begin{defn}[محاسبه]
+ټيورينګ ماشين~$M$ هله او يوازې هله تابع $f\colon \Nat^k \to \Nat$
+\emph{محاسبه کوي} چې~$M$ پر دې ننوت ودرېږي:
+\[
+\TMstroke^{n_1} \TMblank \TMstroke^{n_2} \TMblank \dots \TMblank \TMstroke^{n_k}
+\]
+او وت ئې $\TMstroke^{f(n_1, \dots, n_k)}$ وي۔
+\end{defn}
+
+\begin{prob}
+  دا تعريف کړئ چې ټيورينګ ماشين~$M$ کله تابع
+  $f\colon \Nat^k \to \Nat^m$ محاسبه کوي۔
+\end{prob}
+
+\begin{ex}\ollabel{ex:adder}
+\emph{جمع:}
+راځئ داسې ماشين جوړ کړو چې تابع $f(n,m) = n + m$ محاسبه کړي۔ د دې
+دپاره داسې ماشين پکار دے چې پر پټه د~$n$ او~$m$ اوږدوالي لرونکو د
+$\TMstroke$ دوو غونډونو سره پيل وکړي، او د~$n+m$ شمېر~$\TMstroke$
+ګانو په يوه غونډ ودرېږي۔ د~$\TMstroke$ د ننوت دواړه غونډونه په يوه
+$\TMblank$ سره بېلېږي؛ نو يوه لار دا ده چې په هغه مربع کښې يوه کرښه
+وليکو چې~$\TMblank$ لري، او وروستۍ~$\TMstroke$ پاکه کړو۔
+\begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]\caption{هغه ماشين چې $f(x,y) = x+y$ محاسبه کوي}
+\ollabel{fig:adder}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+په~\olref[tur][mac][una]{ex:adder} کښې د ماشين تشکيلونه د
+ننوت~$\tuple{3,2}$ دپاره يو په بل پسې وڅارئ۔ که ماشين $0+0$ محاسبه
+کړي، څه پېښېږي؟
+\end{prob}
+
+\begin{explain}
+په~\olref[rep]{ex:doubler} کښې مو د داسې ټيورينګ ماشين بېلګه ورکړه
+چې د~$\TMstroke$ نښو يوه لړۍ د ننوت په توګه اخلي او پر پټه د هغې د
+دوه‌چنده شمېر~$\TMstroke$ نښو په لړۍ درېږي---يعنې دوه‌چنده کوونکے
+ماشين۔ خو څرنګه چې په وت کښې د~$\TMstroke$ نښو د دوه‌چنده غونډ کيڼ
+لوري ته~$\TMblank$ نښې شته، نو دا په حقيقت کښې تابع $f(x) = 2x$ نۀ
+محاسبه کوي، که څه هم ښايي تاسو داسې ګڼلې وي۔ موږ به د دې د سمولو
+دوه لارې وښيو۔
+\end{explain}
+
+\begin{ex}
+په~\olref{fig:doubler-disc} کښې ماشين تابع $f(x) = 2x$ محاسبه کوي۔
+دا ماشين د~\olref[rep]{ex:doubler} د ماشين په شان د ننوت د هرې
+$\TMstroke$ په بدل کښې ننوت نۀ پاکوي او په لرې ښي لوري کښې دوه
+$\TMstroke$ نښې نۀ ليکي، بلکې د ننوت د هرې~$\TMstroke$ دپاره ښي
+لوري ته يوه~$\TMstroke$ ور زياتوي۔ دا بايد په ياد وساتي چې ننوت چېرته
+ختمېږي؛ نو د ننوت او ور زياتو شوو کرښو تر منځ يوه~$\TMblank$ پرېږدي
+او په پای کښې ئې په~$\TMstroke$ ډکوي۔ موږ بايد دا هم ``په ياد'' ولرو
+چې په ننوت کښې چېرته يو؛ نو د ننوت په غونډ کښې يوه~$\TMstroke$ په
+لنډمهاله توګه په~$\TMblank$ بدلوو۔
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (0)              {$q_0$};
+  \node[state]         (1) [above of=0] {$q_1$};
+  \node[state]         (2) [above of=1] {$q_2$};
+  \node[state]         (3) [right of=2] {$q_3$};
+  \node[state]         (4) [below of=3] {$q_4$};
+  \node[state]         (5) [below of=4] {$q_5$};
+  \node[state]         (6) [above right of=4] {$q_6$};
+  \node[state]         (7) [below of=6] {$q_7$};
+  \node[state]         (8) [below of=7] {$q_8$};
+
+  \path (0) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (1)
+%    (0) edge node {\TMtrans{\TMblank}{\TMblank}{\TMstay}} (h)
+    (1) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (1)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (3)
+        edge node[left] {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (4)
+    (4) edge        node[left] {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (0)
+    (4) edge      node[sloped] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (6)
+    (6) edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (7)
+    (7) edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (7)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (8)
+    (8) edge [loop right] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (8);
+    \end{tikzpicture}
+\]
+\caption{هغه ماشين چې $f(x) = 2x$ محاسبه کوي}
+\ollabel{fig:doubler-disc}
+\end{figure}
+\end{ex}
+
+\begin{ex}\ollabel{ex:mover}
+د تابع $f(x) = 2x$ د محاسبې دويمه شونتيا دا ده چې اصلي دوه‌چنده
+کوونکے ماشين وساتو، خو په پای کښې داسې حالتونه او لارښوونې ور زياتې
+کړو چې د کرښو دوه‌چنده غونډ د پټې تر ټولو کيڼ لوري ته يوسي۔ په
+\olref{fig:mover} کښې ماشين همدا وروستۍ برخه ترسره کوي: که دا پر داسې
+پټه پيل شي چې لومړے د~$\TMblank$ نښو يو غونډ او بيا د~$\TMstroke$
+نښو يو غونډ لري (او سر د~$\TMblank$ نښو د غونډ په هر ځاے کښې وي)،
+نو~$\TMstroke$ نښې يوه يوه پاکوي او د پټې په پيل کښې ئې ليکي۔ د دې
+د معلومولو دپاره چې کار کله بشپړ شو، ماشين لومړے د~$\TMstroke$ نښو
+د غونډ پای په~$\TMendtape$ نښه نښانوي، او دا نښه په پای کښې پاکېږي۔
+موږ د حالتونو شمېرل له~$q_6$ څخه پيل کړي، څو دوي دوه‌چنده کوونکي
+ماشين ته ور زياتېدے شي۔ تاسو يوازې يوې اضافي لارښوونې ته اړتيا لرئ:
+$\delta(q_0, \TMblank) = \tuple{q_6,\TMblank,\TMstay}$؛ يعنې له~$q_0$
+څخه~$q_6$ ته يو داسې غشی چې نښه ئې~$\TMtrans{\TMblank}{\TMblank}{\TMstay}$
+وي۔ (يوه نرۍ ستونزه شته: لاس ته راغلے ماشين د ننوت~$x=0$ دپاره کار
+نۀ کوي۔ موږ دا د تمرين په توګه پرېږدو۔)
+\begin{figure}
+  \[
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                      semithick]
+    \tikzstyle{every state}=[fill=none,draw=black,text=black]
+    \node[initial,state] (6)              {$q_6$};
+    \node[state]         (7) [right of=6] {$q_7$};
+    \node[state]         (8) [right of=7] {$q_8$};
+    \node[state]         (9) [below of=8] {$q_9$};
+    \node[state]         (10) [left of=9] {$q_{10}$};
+    \node[state]         (11) [left of=10]  {$q_{11}$};
+    \node[state]         (12) [below of=11]  {$q_{12}$};
+    \node[state]         (13) [right of=12] {$q_{13}$};
+    \node[state]         (14) [right of=13] {$q_{14}$};
+    \path
+    (6)  edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+    (7)  edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+         edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+    (8)  edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+         edge node {\TMtrans{\TMblank}{\TMendtape}{\TMleft}} (9)
+    (9)  edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (9)
+         edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (10)
+    (10) edge node[above] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (11) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (11)
+         edge node[left] {\begin{tabular}{@{}l@{}}
+          \TMtrans{\TMendtape}{\TMendtape}{\TMright}\\
+          \TMtrans{\TMstroke}{\TMstroke}{\TMright}
+         \end{tabular}} (12)
+    (12) edge node[] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (13)
+    (13) edge [loop below] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (13)
+         edge node[sloped] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (13) edge node {\TMtrans{\TMendtape}{\TMblank}{\TMstay}} (14);
+  \end{tikzpicture}
+  \]
+  \caption{د~$\TMstroke$ نښو د يو غونډ کيڼ لوري ته وړل}
+  \ollabel{fig:mover}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+په~\olref[tur][mac][una]{ex:mover} کښې مو داسې ماشين بيان کړ چې د
+\olref[tur][mac][rep]{fig:doubler} د دوه‌چنده کوونکي ماشين او د
+\olref[tur][mac][una]{fig:mover} د لېږدوونکي ماشين له يوځاے کولو څخه
+جوړ دے۔ که دا يوځاے شوے ماشين پر ننوت~$x=0$، يعنې پر تشه پټه پيل
+کړئ، څه پېښېږي؟ ماشين به څنګه سم کړئ چې په دې صورت کښې د~$2x=0$ له
+وت سره ودرېږي؟ (تاسو بايد دا د يوه حالت او يوه حالت بدلون په ور
+زياتولو وکړے شئ۔)
+\textbf{د ژباړې د نسخې سمون (OLCMP-046):} سرچينې دلته د هغه بل
+دوه‌چنده کوونکي شکل حواله ورکړې وه چې لا پخپله بشپړ وت جوړوي او
+حالتونه ئې له لېږدوونکي سره ټکر کوي؛ د مخکښېني بيان او د حالتونو له
+شمېرنې سره سم د اصلي شپږ-حالته دوه‌چنده کوونکي حواله راوړل شوه۔
+\end{prob}
+
+\begin{prob}
+\emph{تفريق:} داسې ټيورينګ ماشين طرح کړئ چې د~$n$ او~$m$ اوږدوالي
+لرونکې د کرښو دوه ناتشې رشتې د ننوت په توګه ورکړل شي، چې $n > m$،
+نو تابع $f(n,m) = n - m$ محاسبه کړي۔
+\end{prob}
+
+\begin{prob}
+\emph{مساوات:} داسې ټيورينګ ماشين طرح کړئ چې لاندې تابع محاسبه کړي:
+\[
+\fn{equality}(n,m) =
+\begin{cases}
+  \text{1} & \text{که~$n = m$ وي} \\
+  \text{0} & \text{که~$n \neq m$ وي}
+\end{cases}
+\]
+چې پکښې~$n$ او~$m \in \PosInt$ دي۔
+\end{prob}
+
+\begin{prob}
+د تابع $\min(x,y)$ د محاسبې دپاره يو ټيورينګ ماشين طرح کړئ، چې
+$x$ او~$y$ داسې مثبت صحيح عددونه وي چې پر پټه د~$\TMstroke$ نښو په
+رشتو څرګند شوي او په يوه~$\TMblank$ بېل شوي وي۔ تاسو د ماشين په
+الفبا کښې اضافي نښې کارولے شئ۔
+
+تابع~$\min$ له خپلو ارزښتمنو څخه تر ټولو کوچنی ارزښت ټاکي؛ نو
+$\min(3,5)=3$، $\min(20,16)=16$، او $\min(4,4)=4$، او داسې نور۔
+\end{prob}
+
+\begin{defn}
+  ټيورينګ ماشين~$M$ هله او يوازې هله جزوي تابع $f\colon \Nat^k
+  \pto \Nat$ محاسبه کوي چې
+  \begin{enumerate}
+    \item که $f(n_1, \dots, n_k) = m$ وي، نو~$M$ پر ننوت
+    $\TMstroke^{n_1}\concat\TMblank\concat
+    \dots \concat\TMblank\concat\TMstroke^{n_k}$ د وت~$\TMstroke^{m}$ سره درېږي۔
+    \item که $f(n_1, \dots, n_k)$ تعريف شوې نۀ وي، نو~$M$ بېخي نۀ
+    درېږي، يا له داسې وت سره درېږي چې د~$\TMstroke$ نښو يوازينی غونډ نۀ وي۔
+  \end{enumerate}
+\end{defn}
+
+\end{document}

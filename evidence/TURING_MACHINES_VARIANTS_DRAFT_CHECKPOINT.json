@@ -1,0 +1,141 @@
+{
+  "schema": "ps-turing-machines-variants-draft/1",
+  "utc": "2026-09-20T03:08:08.104901+00:00",
+  "status": "OLP-0256 through OLP-0263 manually translated, source-reviewed, and accepted by standalone, cumulative, repository and two independent canonical-replay QA passes",
+  "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+  "units": [
+    {
+      "unit_id": "OLP-0256",
+      "path": "content/turing-machines/machines-computations/turing-machines.tex",
+      "source_sha256": "20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65",
+      "translation_sha256": "85043ecfa26f901bba301ec5cbd26c7f35cdd779a12e3af1e366bdcd3b5d35b2",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0257",
+      "path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "translation_sha256": "8e52dfe2163604dd67643749d9168b8cf41687896acee995af5f180e27744499",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-045"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0258",
+      "path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "translation_sha256": "4d8b2cae6942649efae899146dd307b044cacdf4707802f65b80abe95405dadd",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-046"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0259",
+      "path": "content/turing-machines/machines-computations/halting-states.tex",
+      "source_sha256": "bc10eb130811dbd6f527c85e683a03b97f771c7f5ff0f64d5a39f040144799bf",
+      "translation_sha256": "fcc38b0804cebc801118a1c0fb148d9874c318256a018b3d65af791c4012c8e2",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0260",
+      "path": "content/turing-machines/machines-computations/disciplined-machines.tex",
+      "source_sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
+      "translation_sha256": "c20e8bce465cce592bf4dd218ceb12ca30d1cf7a496b80e214ac531792e2ed46",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0261",
+      "path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "translation_sha256": "01bcf8f48761447e3682c743abec36325c0c4a8bacae909c7423eecfc4f4f081",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-047"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0262",
+      "path": "content/turing-machines/machines-computations/variants.tex",
+      "source_sha256": "d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e",
+      "translation_sha256": "e721b266c84322cedc57944d8aceb22264db0266d581d11832cc5c7129fcb39c",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0263",
+      "path": "content/turing-machines/machines-computations/church-turing-thesis.tex",
+      "source_sha256": "a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421",
+      "translation_sha256": "79c8670105d0097a27b83453bcc73c41ce29400dec5e4724324bc63fa82c2331",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 255,
+    "current_reviewed_draft_units": 8,
+    "prospective_total_after_registration": 263,
+    "cumulative_draft_units": 263,
+    "remaining_units": 459,
+    "visually_accepted_units": 255,
+    "published_units": 255
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0256",
+      "OLP-0259",
+      "OLP-0260",
+      "OLP-0262",
+      "OLP-0263"
+    ],
+    "documented_correction_units": [
+      "OLP-0257",
+      "OLP-0258",
+      "OLP-0261"
+    ]
+  },
+  "retractions": {
+    "OLINF-002": "prior false alert remains absent",
+    "OLSIZ-011": "prior false alert remains absent"
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_MACHINES_VARIANTS_SOURCE_CHECK.json",
+    "source_check_sha256": "c1d4582cbb1103cf6f61a67d470c653d7ae7e8899206ea330f5561d4d1939a2a",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_turing_machines_and_variants_drafts.py",
+    "draft_checker_sha256": "3f4de61887655337e493755507df30e1ba3cf1c9865b662c57e51f80fff6cd4e",
+    "retraction_ledger_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SOURCE_AUDIT_RETRACTIONS.jsonl",
+    "retraction_ledger_sha256": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_MACHINES_VARIANTS_DRAFT_CHECK.json",
+    "draft_check_sha256": "99eb88a18d4f5a2bf436aaedf330f1205e52582e3e7ff0d96075342ac5e8f462",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_MACHINES_VARIANTS_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "0fd5b44ad3c4d855675dd79e7b6a5e5c225a5adac1e8118f3976f111bda4bc36",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_MACHINES_VARIANTS_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "a0f8c47f1b536fc5dbdbd6e5d6d489605ed055d6ff8d7257659177a8f3cbd395",
+    "translation_review_workflow_sha256": "d5aaba74f97c1e71b112548136fa2da30771beef330b858641db75dcbf66e51d",
+    "canonical_decisions_sha256": "61f04ec5d7b71794e5e04087c890a3c61fc20a96a0e623f75ddd1233f039b8d8",
+    "canonical_qa_sha256": "bc7bc486f379279d57226a689ba5302e3c58ac008a00871756c62432aa2df774"
+  },
+  "registration_status": "complete; all seven canonical projection artifacts reproduce byte-for-byte; OLSIZ-011 and OLINF-002 retractions remain verified across active surfaces",
+  "next_action": "Commit and push B051, then translate and source-review OLP-0264 through OLP-0271 without altering the verified v0.6.0 release bytes."
+}

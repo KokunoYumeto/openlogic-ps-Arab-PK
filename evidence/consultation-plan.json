@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
-  "status": "v0.5.1 public artifacts remain frozen and verified; OLP-0248 through OLP-0255 form a complete manually translated and source-reviewed Rice, fixed-point, self-reference and introductory Turing-machine batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+  "status": "v0.6.0 public artifacts remain frozen and verified; OLP-0256 through OLP-0263 form a complete manually translated and source-reviewed formal Turing-machine, computation, combination and variants batch; OLSIZ-011 and OLINF-002 remain retracted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -5437,6 +5437,168 @@
         "TERM-PARTIAL-TOTAL"
       ],
       "scope": "State diagrams, even-machine traces, nonhalting modification, machine tables, the doubler strategy and all five construction problems remain complete. OLCMP-040 through OLCMP-042 repair the state name, table explanation and missing conjunction without changing encoded transitions."
+    },
+    "OLP-0256": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-PAIR"
+      ],
+      "scope": "The formal four-tuple, finite state and alphabet requirements, partial transition function, end-marker convention and even-machine instance remain complete."
+    },
+    "OLP-0257": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-TURING-CONFIGURATION-COMPUTATION",
+        "TERM-PARTIAL-TOTAL"
+      ],
+      "scope": "Configuration triples, initial configurations, one-step yielding, runs, halting and blank-trimmed output remain complete. OLCMP-045 places the input on the side required by the displayed tuple."
+    },
+    "OLP-0258": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P62-PARITY",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-TURING-UNARY-COMPUTATION",
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-FUNCTION-ARGUMENT"
+      ],
+      "scope": "Unary coding, total and partial computation, the adder, both doubler repairs, mover and all construction problems remain complete. OLCMP-046 restores the mover exercise's intended original-doubler reference."
+    },
+    "OLP-0259": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS"
+      ],
+      "terms": [
+        "TERM-TURING-HALTING-DISCIPLINE",
+        "TERM-TURING-DIAGRAM-CONFIGURATION",
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-HALTING-PROBLEM"
+      ],
+      "scope": "Dedicated halt, accept and reject states and their equivalence in computing power to instruction absence remain complete."
+    },
+    "OLP-0260": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS"
+      ],
+      "terms": [
+        "TERM-TURING-HALTING-DISCIPLINE",
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-CONFIGURATION-COMPUTATION",
+        "TERM-PARTIAL-TOTAL"
+      ],
+      "scope": "All four discipline conditions, the conversion argument, disciplined adder, preservation proposition and both exercises remain complete."
+    },
+    "OLP-0261": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P26-COMPOSITION",
+        "AF-BUKOVSKY-P23-FUNCTION-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS"
+      ],
+      "terms": [
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-HALTING-DISCIPLINE",
+        "TERM-COMPOSITION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-PAIR"
+      ],
+      "scope": "The state-disjoint sequential construction, addition-then-doubling example, composition proposition and successor exercise remain complete. OLCMP-047 makes the transition cases disjoint."
+    },
+    "OLP-0262": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P103-GRAPH-OPERATIONS",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+        "AF-BUKOVSKY-P62-PARITY",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-TURING-NONDETERMINISTIC-VARIANTS",
+        "TERM-TURING-MACHINE-COMPONENTS",
+        "TERM-TURING-HALTING-DISCIPLINE",
+        "TERM-COMPUTABILITY-FOUNDATIONS"
+      ],
+      "scope": "Alphabet, motion, tape, nondeterministic, halting and numeral-representation variants and the simulation-based equivalence claim remain complete."
+    },
+    "OLP-0263": {
+      "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-NIAZMAN-P62-DOMAIN",
+        "AF-BUKOVSKY-P26-COMPOSITION",
+        "AF-BUKOVSKY-P23-FUNCTION-DOMAIN"
+      ],
+      "terms": [
+        "TERM-CHURCH-TURING-THESIS",
+        "TERM-COMPUTABILITY-FOUNDATIONS",
+        "TERM-FUNCTION-EXTENSIONALITY",
+        "TERM-HALTING-PROBLEM"
+      ],
+      "scope": "The thesis, evidence from extensionally equivalent models, construction shortcut and impossibility inference for the halting problem remain complete."
     }
   },
   "semantic_review": [
@@ -7857,6 +8019,54 @@
       "passage": "diagrams, configurations and machine tables",
       "reverse_paraphrase": "State diagrams and tables encode transition instructions. Configuration traces show that the even machine halts exactly on even unary input, while the doubler repeatedly erases one input stroke and appends two output strokes.",
       "finding": "All diagrams, table cells, traces, strategy and five problems remain complete and byte-equivalent in their formal content; three local prose defects are disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0256",
+      "passage": "formal Turing-machine definition",
+      "reverse_paraphrase": "A Turing machine packages a finite state set, finite tape alphabet with blank and end marker, start state and partial transition function. The even machine instantiates all four components.",
+      "finding": "The full definition, end-marker policy and example remain complete with every formula unchanged."
+    },
+    {
+      "unit_id": "OLP-0257",
+      "passage": "configurations, runs and outputs",
+      "reverse_paraphrase": "A configuration records a finite relevant tape prefix, head index and state. A run begins with the end marker followed by the input and proceeds by the transition function until an undefined instruction yields a trailing-blank-trimmed output.",
+      "finding": "Every clause of one-step yielding, extension of the visited tape, halting and output remains complete; the erroneous left/right gloss is disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0258",
+      "passage": "unary computation and machine constructions",
+      "reverse_paraphrase": "Natural numbers are encoded by stroke counts. The chapter defines total and partial computation, constructs addition and two valid doubling strategies, and asks for subtraction, equality and minimum machines.",
+      "finding": "All diagrams, exercises and undefined-value behavior remain complete; the mover now references the compatible original doubler."
+    },
+    {
+      "unit_id": "OLP-0259",
+      "passage": "dedicated halt, accept and reject states",
+      "reverse_paraphrase": "An explicit halting state can make acceptance or rejection visible without increasing computing power. The chapter retains instruction absence as its default halting convention for the later halting-problem proof.",
+      "finding": "Both modified even-machine diagrams and the equivalence explanation remain complete."
+    },
+    {
+      "unit_id": "OLP-0260",
+      "passage": "disciplined machines",
+      "reverse_paraphrase": "A disciplined machine has one halt state, halts over square one, preserves the end marker and never moves left from square zero. Any machine can be normalized to this form without changing halting or output.",
+      "finding": "All four conditions, normalization argument, disciplined adder, proposition and exercises remain complete."
+    },
+    {
+      "unit_id": "OLP-0261",
+      "passage": "sequential combination",
+      "reverse_paraphrase": "After disjointly renaming states, a combined machine runs the first transition function until it is undefined, then enters the second machine's start state without changing tape or head. Disciplined machines therefore realize function composition.",
+      "finding": "The construction, addition/doubling diagram and proof remain complete; the overlapping case condition is disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0262",
+      "passage": "equivalent Turing-machine variants",
+      "reverse_paraphrase": "Finite alphabets, simultaneous write/move, stationary moves, one- or two-way tapes, multiple tapes, nondeterministic relations, halting conventions and numeral encodings vary without changing the computable functions.",
+      "finding": "Every listed variant, the end-marker caveat and the parity-based simulation sketch remain complete."
+    },
+    {
+      "unit_id": "OLP-0263",
+      "passage": "Church--Turing thesis",
+      "reverse_paraphrase": "The thesis identifies intuitive effective procedures with Turing-computable procedures. It licenses moving from clear pseudocode to existence of a machine and from Turing impossibility to impossibility for every effective procedure.",
+      "finding": "The definition, extensional-equivalence support and both uses, including the halting-problem consequence, remain complete."
     }
   ]
 }

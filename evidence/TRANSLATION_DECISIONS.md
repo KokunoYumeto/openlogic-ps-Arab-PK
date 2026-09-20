@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 341 terminology, source-correction and other judgment-dependent entries across 255 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 349 terminology, source-correction and other judgment-dependent entries across 263 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -258,6 +258,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 40,42,46,47; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 46; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 35,60,61,62,91,97,133; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0256; Turing Machines; `content/turing-machines/machines-computations/turing-machines.tex` source line(s) 23,43,52,56,57,58; `ps-Arab-PK/content/turing-machines/machines-computations/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 25,26,41; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRODUCT
 
@@ -843,6 +845,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 23,24,34,37,38,46,47,51,60; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 47,67,71,88,92; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 37,38,43,52,65,68,76,93; page: pending stable pagination in a reader containing this unit
   - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 32,67,78,79,115,215,221,222,258,274,275,276,281,290; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 31,66,68,75,76,113,115,117,136,143,201,205,213,214,216,217,218,219,220,256,272,273,274,280,281,288,291; page: pending stable pagination in a reader containing this unit
+  - OLP-0256; Turing Machines; `content/turing-machines/machines-computations/turing-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 30,43,74,76,84,85,88,91,222,230,231,232; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 14,25,29,42,67,73,75,83,84,85,86,87,89,144,189,191,194,201,231,233,235; page: pending stable pagination in a reader containing this unit
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 60,83,85,162; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 26,63,84,86,88,109,162,164; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INJECTIVE
 
@@ -939,6 +944,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0162; Covered \printtoken{P}{structure} for First-order Languages; `content/first-order-logic/syntax-and-semantics/covered-structures.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 11,14,21,28,29,47,51,52,54,58; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0236; Comparison with Russell's Paradox; `content/computability/computability-theory/russells-paradox.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FUNCTION-INVERSE
 
@@ -978,6 +984,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0224; Partial Recursive Functions; `content/computability/recursive-functions/partial-functions.tex` source line(s) 43,45,60,78,102; `ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex` target line(s) 40,41,55,70,92; page: pending stable pagination in a reader containing this unit
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 28; page: pending stable pagination in a reader containing this unit
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -1005,6 +1012,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 14,35,45; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 14,34,35,47,50; page: pending stable pagination in a reader containing this unit
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 47; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 43; page: pending stable pagination in a reader containing this unit
   - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 227; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 228; page: pending stable pagination in a reader containing this unit
+  - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CHOICE
 
@@ -2719,6 +2729,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0252; turing-machines; `content/turing-machines/turing-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 16,89,102,105; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 1; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2892,6 +2904,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0235; The Halting Problem; `content/computability/computability-theory/halting-problem.tex` source line(s) 10,19,33; `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex` target line(s) 10,32,84; page: pending stable pagination in a reader containing this unit
   - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 18,32,33; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 12,15; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
+  - OLP-0259; Halting States; `content/turing-machines/machines-computations/halting-states.tex` source line(s) 75; `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 44; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -3090,6 +3104,13 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) 8,20; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 15,16,19,20,22,25,32,33,34,35,37,38,39,40,42,43,44,45,46,47,49,50,53,58,61,62,64,65,66,69,70,73,74,77,79,83,91,111; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 14,18,19,20,22,23,28,30,31,32,33,35,36,38,39,40,41,42,43,45,48,50,51,52,55,58,61,63,64,65,66,67,70,71,74,76,79,86,104; page: pending stable pagination in a reader containing this unit
   - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 10,13,15,16,17,19,23,25,26,31,33,34,40,41,43,47,49,50,58,73,74,75,82,83,85,88,89,92,94,96,100,105,108,110,117,120,123,126,129,132; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 10,13,14,15,16,18,31,32,34,40,41,57,71,72,79,80,84,86,88,89,92,96,111,130,133,135,142,143,166,167,168,169,170,171,176,177,197,202,204,221; page: pending stable pagination in a reader containing this unit
+  - OLP-0256; Turing Machines; `content/turing-machines/machines-computations/turing-machines.tex` source line(s) 10,13,16,17,18,22,23,26,27,29,33,38,39,40,42,43,44,45,46,55; `ps-Arab-PK/content/turing-machines/machines-computations/turing-machines.tex` target line(s) 10,13,15,16,17,21,22,25,26,28,32,36,38,42,44; page: pending stable pagination in a reader containing this unit
+  - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) 14,15,16,17,19,21,26,33,34,35,36,37,41,43,44,45,46,47,48,54,93,100; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) 14,15,16,19,20,25,32,33,34,35,39,40,41,42,43,44,98; page: pending stable pagination in a reader containing this unit
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 13,14,16,25,34,42,45,49,51,52,53,73,75,96,98,99,100,101,102,103,104,105,106,133,134,135,139,141,142,152,153,154,155,156,157,158,159,160,161,167; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 13,14,15,24,33,40,43,72,73,132,135,140,189,191,195,196,200,206,218,219,221,228; page: pending stable pagination in a reader containing this unit
+  - OLP-0259; Halting States; `content/turing-machines/machines-computations/halting-states.tex` source line(s) 3,10,15,18,20,21,25,27,29,33,35,36,37,48,49,53,55,56,57,58,69,72; `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex` target line(s) 10,14,15,18,19,20,24,26,27,47,48,68,70; page: pending stable pagination in a reader containing this unit
+  - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 13,14,15,16,18,19,20,21,23,24,28,30,31,32,33,38,39,40,43,44,46,47,48,58,60,61,62,63,64,72,79,80,83; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 13,14,15,16,17,18,19,20,22,26,28,29,30,31,36,37,41,43,45,76,77,79,80; page: pending stable pagination in a reader containing this unit
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 10,13,15,16,21,25,27,31,32,33,34,35,36,46,47,49,53,54,62,64,68,70,71,72,81,84,89,91,92,93,94,95,103,107,109,115,116,117,118,119; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 10,13,15,20,24,27,30,31,32,33,34,35,44,45,46,47,48,50,52,57,64,66,84,110,112,163,164,165,171; page: pending stable pagination in a reader containing this unit
+  - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) 10,12,14,15,16,18,21,22,23,24,25,30,32,33,34,35,38,41,42,44,45,46,49,52,53,54,56,57,58,59,63,65,73,74,75,76,77,78,79,80; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) 10,12,14,16,19,20,21,22,23,24,27,28,29,30,31,34,37,38,39,40,41,42,43,44,46,47,48,51,52,69,70,72,73,74,75; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-DIAGRAM-CONFIGURATION
 
@@ -3105,6 +3126,79 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0253; tur; `content/turing-machines/machines-computations/machines-computations.tex` source line(s) 16; `ps-Arab-PK/content/turing-machines/machines-computations/machines-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 77,78,81; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) 18,74,75,77,78; page: pending stable pagination in a reader containing this unit
   - OLP-0255; Representing Turing Machines; `content/turing-machines/machines-computations/representing-tms.tex` source line(s) 13,16,17,19,32,40,58,67,70,71,72,74,77,87,90,97,98,103,111,113,116,117,133,136,137,143,144,146,169,170,173,174,175,177,178,179,183,198,202,205; `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex` target line(s) 13,19,32,40,57,66,68,69,71,74,76,84,90,97,98,104,112,113,116,133,135,136,140,142,144,166,169,170,197,201,203,204,209,222,250,257,262,265,267,282; page: pending stable pagination in a reader containing this unit
+  - OLP-0256; Turing Machines; `content/turing-machines/machines-computations/turing-machines.tex` source line(s) 18,30; `ps-Arab-PK/content/turing-machines/machines-computations/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) 3,10,13,18,25,26,43,51,52,64,65,69,85,86,89; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) 10,13,17,24,26,40,47,48,58,63,83,84,87; page: pending stable pagination in a reader containing this unit
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 26,42,67,73,74,75,83,86,127,133,142,143,189,190,193,230,232; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 25,42,66,74,191,233,235; page: pending stable pagination in a reader containing this unit
+  - OLP-0259; Halting States; `content/turing-machines/machines-computations/halting-states.tex` source line(s) 13,14,19,20,21,27,28,47,48,49,70; `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex` target line(s) 14,19,20,21,27,46,69; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-CONFIGURATION-COMPUTATION
+
+- Source term or sense: initial configuration / concatenation / yields in one step / run / output
+- Chosen rendering or treatment: لومړنی تشکيل / يوځاے کول / په يوه ګام کښې ورکول / چلونه / وت
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use تشکيل for the finite tape snapshot, لومړنی تشکيل for the end-marker/input/start-state triple, and چلونه for the sequence linked by one-step yielding. Keep وت for the blank-trimmed string produced on halting.
+- Alternatives: ابتدايي تشکيل; نښلول د يوځاے کولو پر ځاے; اجرا د چلونې پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «لومړنی تشکيل / يوځاے کول / په يوه ګام کښې ورکول / چلونه / وت» the clearest conventional rendering of “initial configuration / concatenation / yields in one step / run / output” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+- Locations:
+  - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) 84,85,86,91,98; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) 16,20,39,40,41,42,43,47,48,55,57,58,83,84,87,89,90,97; page: pending stable pagination in a reader containing this unit
+  - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 45,80,81,93; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 40,42,77,78,90; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-UNARY-COMPUTATION
+
+- Source term or sense: unary representation / arithmetic function / partial computation / mover
+- Chosen rendering or treatment: يوګونې څرګندونه / حسابي تابع / جزوي محاسبه / لېږدوونکے
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use يوګونې څرګندونه for coding n by n stroke symbols and لېږدوونکے for the machine that relocates a block. Preserve the distinction between a total computation and the permitted divergence or malformed output for an undefined partial-function value.
+- Alternatives: يواړخيزه څرګندونه; حسابي فنکشن; خوځوونکے د لېږدوونکي پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «يوګونې څرګندونه / حسابي تابع / جزوي محاسبه / لېږدوونکے» the clearest conventional rendering of “unary representation / arithmetic function / partial computation / mover” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+- Locations:
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 10,131,135,183,188,190,191; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 10; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-HALTING-DISCIPLINE
+
+- Source term or sense: halting state / accept state / reject state / disciplined Turing machine
+- Chosen rendering or treatment: درېدنی حالت / د منلو حالت / د رد حالت / منضبط ټيورينګ ماشين
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use درېدنی حالت for a designated state where execution stops and منضبط for a machine with one such state, a fixed final head position, and protected end-marker behavior. Keep acceptance and rejection as distinct outcomes.
+- Alternatives: د توقف حالت; قبول او رد حالت; قاعده‌مند ماشين د منضبط پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «درېدنی حالت / د منلو حالت / د رد حالت / منضبط ټيورينګ ماشين» the clearest conventional rendering of “halting state / accept state / reject state / disciplined Turing machine” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+- Locations:
+  - OLP-0259; Halting States; `content/turing-machines/machines-computations/halting-states.tex` source line(s) 18,69; `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex` target line(s) 15; page: pending stable pagination in a reader containing this unit
+  - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 16,44,80,83; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 14,28,37,41,77,80; page: pending stable pagination in a reader containing this unit
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 167; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 171; page: pending stable pagination in a reader containing this unit
+  - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) 45; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-NONDETERMINISTIC-VARIANTS
+
+- Source term or sense: nondeterministic Turing machine / transition relation / multiple tapes / two-way infinite tape / simulation
+- Chosen rendering or treatment: ناتعييني ټيورينګ ماشين / د حالت بدلون اړيکه / څو پټې / دوه-لوري نامتناهي پټه / تقليد
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use ناتعييني when a state-symbol pair can relate to more than one successor triple, and تقليد for reproducing another machine model's computation. Keep function-based deterministic transitions distinct from relation-based branching.
+- Alternatives: غيرتعييني ټيورينګ ماشين; څو-پټيز ماشين; شبيه‌سازي د تقليد پر ځاے
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «ناتعييني ټيورينګ ماشين / د حالت بدلون اړيکه / څو پټې / دوه-لوري نامتناهي پټه / تقليد» the clearest conventional rendering of “nondeterministic Turing machine / transition relation / multiple tapes / two-way infinite tape / simulation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+- Locations:
+  - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) 25,78; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) 23,49,70; page: pending stable pagination in a reader containing this unit
+
+## TERM-CHURCH-TURING-THESIS
+
+- Source term or sense: Church--Turing thesis / effective procedure / extensionally equivalent / Turing computable
+- Chosen rendering or treatment: د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Use اصل for the thesis equating intuitive effective computability with Turing computability. Phrase extensional equivalence as computing exactly the same functions and do not present the thesis itself as a formal theorem.
+- Alternatives: د چرچ--ټيورينګ دعوه; مؤثره کړنلاره; د بېروني ارزښت له مخې معادل
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے» the clearest conventional rendering of “Church--Turing thesis / effective procedure / extensionally equivalent / Turing computable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+- Locations:
+  - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 14,16,18,19,25,28,29,30,35,43; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) 10,19,21,22,23,26,28,32,34,36,38,39; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -5601,6 +5695,45 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
 - Locations:
   - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) content/computability/computability-theory/def-functions-self-reference.tex:20-32; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-045
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: places the input immediately to the right of the left-end marker
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the directional word in the prose gloss changes; the displayed configuration and every formula remain identical.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-045 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+- Locations:
+  - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) content/turing-machines/machines-computations/configuration.tex:56-61; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) 57; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-046
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: links the mover to the original six-state doubler from representing-tms
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the stable cross-reference changes; the machine diagrams, formulas and exercise question remain otherwise unchanged.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-046 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+- Locations:
+  - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) content/turing-machines/machines-computations/unary-numbers.tex:187-198; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 193; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLCMP-047
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: states that the first branch applies only when the original transition value is defined
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only localized condition prose changes. The displayed terms, all mathematical tokens and the construction outside that condition remain identical.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLCMP-047 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+- Locations:
+  - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) content/turing-machines/machines-computations/combining-machines.tex:37-43; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 49; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

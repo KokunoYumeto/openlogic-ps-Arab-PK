@@ -1,0 +1,94 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: well-behaved-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{dis}
+\olsection{منضبط ماشينونه}
+
+\begin{explain}
+په برخه~\olref[hal]{sec} کښې مو هغه ټيورينګ ماشينونه وڅېړل چې يو
+ټاکلی درېدنی حالت~$h$ لري---داسې ماشينونه، که بېخي درېږي، هرومرو په
+حالت~$h$ کښې درېږي۔ په دې معنا د يوه درېدني حالت لرونکي ماشينونه د
+هغو ټيورينګ ماشينونو په پرتله ډېر ``منضبط'' دي چې موږ ئې په عمومي
+ډول منو۔ نور بنديزونه هم د ټيورينګ ماشينونو پر چلند لګولے شو۔ مثلاً،
+موږ ټيورينګ ماشينونه له دې هم نۀ دي منع کړي چې کله د پټې د پای نښه
+پر مربع~$0$ پاکه کړي، يا له مربع~$0$ څخه کيڼ لوري ته د تلو هڅه وکړي۔
+(زموږ تعريف وايي چې په دې صورت کښې سر بس پر مربع~$0$ پاتې کېږي؛ په
+نورو تعريفونو کښې ماشين درېږي۔) همداراز کله ناکله دا فرض هم ګټور وي
+چې ټيورينګ ماشين، که بېخي درېږي، پر مربع~$1$ ودرېږي۔
+\end{explain}
+
+\begin{defn}\ollabel{defn:disciplined}
+ټيورينګ ماشين~$M$ هله او يوازې هله \emph{منضبط} دے چې
+\begin{enumerate}
+    \item يو ټاکلی يوازينی درېدنی حالت~$h$ ولري،
+    \item که بېخي درېږي، د مربع~$1$ د لوستلو پر وخت ودرېږي،
+    \item پر مربع~$0$ د~$\TMendtape$ نښه هېڅکله پاکه نۀ کړي، او
+    \item له مربع~$0$ څخه کيڼ لوري ته د تلو هڅه هېڅکله ونۀ کړي۔
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+موږ مخکښې بحث کړے چې هر ټيورينګ ماشين په داسې ماشين بدلېدے شي چې
+هماغه چلند او يو ټاکلی درېدنی حالت ولري۔ دا کار يوازې د نوي حالت~$h$
+په زياتولو، او د هر داسې جوړې~$\tuple{q,\sigma}$ دپاره د لارښوونې
+$\delta(q, \sigma) = \tuple{h, \sigma, N}$ په زياتولو کېږي چې اصلي
+$\delta$ پرې تعريف شوې نۀ وي۔ که څه هم ثبوت ئې ستړے کوونکے دے، خو
+دا رښتيا ده چې هر ټيورينګ ماشين~$M$ په داسې منضبط ټيورينګ ماشين~$M'$
+بدلېدے شي چې پر هماغو ننوتونو درېږي او هماغه وت پيدا کوي۔ مثلاً، که
+ټيورينګ ماشين ودرېږي او پر مربع~$1$ نۀ وي، داسې لارښوونې ور زياتولے
+شو چې سر تر هغه کيڼ لوري ته بوځي څو د پټې د پای نښه پيدا کړي، بيا يو
+مربع ښي لوري ته لاړ شي، او بيا ودرېږي۔ د نورو شرطونو د پوره کولو پر
+لار به تاسو پخپله فکر وکړئ۔
+\end{explain}
+
+\begin{ex}
+    په~\olref{fig:adder-disc} کښې د جمع ماشين چې په
+    \olref[una]{ex:adder} کښې و، په منضبط ماشين بدلوو۔
+    \begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (H) [left of=D] {$h$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+        edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
+\end{tikzpicture}
+\]\caption{يو منضبط جمع کوونکے ماشين}
+\ollabel{fig:adder-disc}
+\end{figure}
+\end{ex}
+
+\begin{prop}\ollabel{prop:disciplined} د هر ټيورينګ ماشين~$M$ دپاره
+داسې منضبط ټيورينګ ماشين~$M'$ شته چې که~$M$ د وت~$O$ سره درېږي،
+هغه هم د وت~$O$ سره درېږي؛ او که~$M$ نۀ درېږي، هغه هم نۀ درېږي۔ په
+ځانګړې توګه، هره تابع $f\colon\Nat^n \to \Nat$ چې د ټيورينګ ماشين
+په وسيله محاسبه کېدونکې وي، د منضبط ټيورينګ ماشين په وسيله هم محاسبه
+کېدونکې ده۔
+\end{prop}
+
+\begin{prob}\label{tur:mac:dis:prob:disc-succ}
+داسې منضبط ماشين ورکړئ چې $f(x) = x+1$ محاسبه کړي۔
+\end{prob}
+
+
+\begin{prob}\label{tur:mac:dis:prob:copier}
+داسې منضبط ماشين پيدا کړئ چې پر ننوت $\TMstroke^n$ پيل شي او وت
+$\TMstroke^n \concat \TMblank \concat \TMstroke^n$ پيدا کړي۔
+\end{prob}
+
+\end{document}

@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/turing-machines-variants-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T03:08:08.104901+00:00",
+  "batch_id": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+  "status": "PASS",
+  "counts": {
+    "decisions": 349,
+    "occurrences": 15671,
+    "terminology_decisions": 148,
+    "source_correction_decisions": 196,
+    "priority_decisions": 141,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 861
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "df02bd6db6de5292f0cb6f832c25268235646b34e574e60b45c131160efb63da",
+    "ALIGNMENT.jsonl": "88d1b07f9cb393b6dc3ef69217592eb79cd9d9c495ad7d6d8b6d17940075db58",
+    "SEGMENT_CANON_USE.jsonl": "34e33c9675ab7b87b079e02949540613946dfef5d895b0d89908e80ce20e3932",
+    "SOURCE_CORRECTIONS.json": "e2e7c29ff3c26df8c39e78366b2608bfdf693a5b52570ad81b6e96b8dab37ad4",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "5796899f51ec949ebce7f8dc4d7c40a40898079e24db816df888c3c3538860e8",
+    "QA.json": "a826bb1dc39f4ca329f9cc173bce05b10106767a1d34396b1d5681686f192ae8"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "d4144232c4b194a12348864261b9ba172a55e500bbf470fd2809654ce16bb8ac",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "26eb7e408a53c8af7c663d4ab68058fc960843357b3ba5fd061b5ae2f98efc93",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "a3711773a4b8b9f56412be02fd4006f5423e43266020b432ad27869daac0c2e5",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "9c42f519fd6eee5282ac7b50ee92b4ddfe507fbfbb376e2e5519b58254a90224",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "61f04ec5d7b71794e5e04087c890a3c61fc20a96a0e623f75ddd1233f039b8d8",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "bc7bc486f379279d57226a689ba5302e3c58ac008a00871756c62432aa2df774",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

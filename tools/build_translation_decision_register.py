@@ -61,6 +61,7 @@ PART_AND_CHAPTER = {
     "lindstrom": ("مدل تيوري", "د ليندستروم قضيه"),
     "computability": ("محاسبه کېدنه", "محاسبه کېدنه"),
     "recursive-functions": ("محاسبه کېدنه", "بازګشتي تابعې"),
+    "machines-computations": ("ټيورينګ ماشينونه", "ماشينونه او محاسبې"),
 }
 
 OUTPUT_NAMES = [
@@ -144,6 +145,10 @@ def titles_for_path(source_path: str, target_file: Path) -> tuple[str | None, st
             key = parts[index + 1]
         else:
             key = "computability"
+    elif "turing-machines" in parts:
+        index = parts.index("turing-machines")
+        if len(parts) > index + 1 and not parts[index + 1].endswith(".tex"):
+            key = parts[index + 1]
     part_title, chapter_title = PART_AND_CHAPTER.get(key, (None, None))
     text = target_file.read_text(encoding="utf-8")
     section_title = balanced_macro_arg(text, ("olsection", "olchapter", "chapter")) or Path(source_path).stem

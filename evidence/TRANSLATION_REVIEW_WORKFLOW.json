@@ -1,7 +1,7 @@
 {
   "schema": "ps-translation-review-workflow/1",
-  "utc": "2026-09-19T23:32:11.116305+00:00",
-  "status": "implemented through OLP-0255; maintained during subsequent drafting",
+  "utc": "2026-09-20T03:05:44.081043+00:00",
+  "status": "implemented through OLP-0263; maintained during subsequent drafting",
   "coordination": {
     "model_task": "codex://threads/01a06749-ba43-7f83-8546-af3f8cb46dec",
     "manager_task": "codex://threads/01a030ca-7d79-7b80-b7ab-8f5a035a0a20",
@@ -36,42 +36,42 @@
     "human_review_gate": false
   },
   "coverage": {
-    "draft_units": 255,
+    "draft_units": 263,
     "total_units": 722,
-    "terminology_entries": 143,
-    "difficult_entries": 198,
-    "decision_entries": 341,
-    "priority_entries": 136,
-    "paired_occurrence_rows": 15360,
-    "legacy_side_rows": 12250
+    "terminology_entries": 148,
+    "difficult_entries": 201,
+    "decision_entries": 349,
+    "priority_entries": 141,
+    "paired_occurrence_rows": 15671,
+    "legacy_side_rows": 12841
   },
   "pagination": {
     "rule": "Never guess page numbers. Populate exact printed/PDF occurrence pages only from an accepted stable reader and verified line-to-page mapping.",
-    "current": "5359 of 15360 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.5.1-proof-systems-completeness-epub; the remaining 10001 occurrences explicitly say pending.",
+    "current": "14810 of 15671 canonical paired occurrences have exact printed/PDF pages derived from accepted stable-reader labels for v0.6.0-computability; the remaining 861 occurrences explicitly say pending.",
     "next": "After each later reader reaches stable verified pagination, derive pages from embedded semantic-segment labels and regenerate and validate every canonical projection before packaging the next release."
   },
-  "release_disposition": "The canonical review surfaces were included in the verified v0.5.1-proof-systems-completeness-epub source snapshot. Occurrence pages still identify the stable v0.5.1-proof-systems-completeness-epub PDF reader; later drafting remains pending until a new stable reader exists, and frozen earlier assets remain unchanged.",
+  "release_disposition": "The canonical review surfaces were included in the verified v0.6.0-computability source snapshot. Occurrence pages still identify the stable v0.6.0-computability PDF reader; later drafting remains pending until a new stable reader exists, and frozen earlier assets remain unchanged.",
   "hashes": {
-    "EXPERT_REVIEW_LOG.jsonl": "b489df890e0ece21a4d3e3cab4ec8b07cd9e84c691fd06878550eb44e5d5d728",
-    "EXPERT_REVIEW_LOG_SUMMARY.json": "0cc8e9b8e43946fcc4849955fde5f0f39cdc0d400b355bdc42ab70a935239572",
-    "TRANSLATION_DECISIONS.json": "03b80f6198a0a108a7d35f56f737148316bee820173f71a21489b49bfa4ab3d3",
-    "TRANSLATION_DECISIONS.md": "d5103be6ad18144e01586b5b604d05e810c043695232bcba0b5f6a18e00c348b",
-    "TRANSLATION_DECISIONS_PRIORITY.md": "5235c841e7b21663975a18404f20cc48772f4c2f44e9e371a5401a13dcc8af00",
-    "TRANSLATION_DECISION_OCCURRENCES.csv": "32ced414f3391392b61be907698ab7d5ccb12e20106185e2122025adf083a533",
-    "START_HERE.md": "779d1765c10a588be11ddf1067efffe67ae027d3976e328f8e2d0e573f8ed789",
-    "TRANSLATION_DECISIONS_FULL.md": "b9f881fc2f81724f962eec707c40cf5c3804bcfe95d2f17e0141677b3c22f5ec",
-    "PRIORITY_REVIEW.md": "98dcce5dc253656d59b3c7334cf5c12a863dba136105fa07027f46c8c42f1d81",
-    "DECISION_OCCURRENCES.csv": "a8fac7bc32414eda1e5b42e5572fd3de29b1fb199fe995265208b344e9930a7d",
-    "DECISIONS.json": "5989a4e6bb19f4d1c539663e045972a442f684b159e57f89330964cdce1da39e",
+    "EXPERT_REVIEW_LOG.jsonl": "df02bd6db6de5292f0cb6f832c25268235646b34e574e60b45c131160efb63da",
+    "EXPERT_REVIEW_LOG_SUMMARY.json": "331c9050b6413223cff339fad8e771a51536fef8500cbe18c15c8b8b721dc412",
+    "TRANSLATION_DECISIONS.json": "1b7b36e5bc119942ef1786e14fda42c943487626e198177c452839ca86ad1dce",
+    "TRANSLATION_DECISIONS.md": "cd35a40837c8d7c26c026b428b93b6dd37775b2f4747c6151116e6df06536afe",
+    "TRANSLATION_DECISIONS_PRIORITY.md": "3458deeef810b0caaf22de86eda8512acc5ae7e914b6a01417831bfe5481ce2a",
+    "TRANSLATION_DECISION_OCCURRENCES.csv": "8909a23f6b9f05525a5a60562795dbe5fc44d9025f8fa53a45d86563851a815b",
+    "START_HERE.md": "d4144232c4b194a12348864261b9ba172a55e500bbf470fd2809654ce16bb8ac",
+    "TRANSLATION_DECISIONS_FULL.md": "26eb7e408a53c8af7c663d4ab68058fc960843357b3ba5fd061b5ae2f98efc93",
+    "PRIORITY_REVIEW.md": "a3711773a4b8b9f56412be02fd4006f5423e43266020b432ad27869daac0c2e5",
+    "DECISION_OCCURRENCES.csv": "9c42f519fd6eee5282ac7b50ee92b4ddfe507fbfbb376e2e5519b58254a90224",
+    "DECISIONS.json": "61f04ec5d7b71794e5e04087c890a3c61fc20a96a0e623f75ddd1233f039b8d8",
     "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-    "TRANSLATION_DECISION_QA.json": "3a26dbad0cb87856ae003865130640976d7e5cefbb0f8512364a716bb991ca54"
+    "TRANSLATION_DECISION_QA.json": "bc7bc486f379279d57226a689ba5302e3c58ac008a00871756c62432aa2df774"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.1-proof-systems-completeness-epub",
-    "tag": "v0.5.1-proof-systems-completeness-epub",
+    "github_release": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.6.0-computability",
+    "tag": "v0.6.0-computability",
     "anonymous_readback_verified": true,
-    "zenodo_record": "https://zenodo.org/records/22848594",
-    "zenodo_version_doi": "10.5281/zenodo.22848594",
+    "zenodo_record": "https://zenodo.org/records/22851904",
+    "zenodo_version_doi": "10.5281/zenodo.22851904",
     "zenodo_concept_doi": "10.5281/zenodo.22307197"
   }
 }

@@ -1,0 +1,76 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: halting-states
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{hal}
+\olsection{درېدني حالتونه}
+
+\begin{explain}
+که څه هم موږ خپل ماشينونه داسې تعريف کړي چې يوازې د عملي کېدونکې
+لارښوونې د نشتوالي پر وخت درېږي، د ټيورينګ ماشينونو په عامو
+څرګندونو کښې يو ځانګړی \emph{درېدنی حالت}~$h$ وي، داسې چې
+$h \in Q$۔
+
+د درېدني حالت تر شا نظر ساده دے: کله چې ماشين خپل کار بشپړ کړي (د
+ننوت منلو ته چمتو وي، يا د وت ليکل ئې بشپړ کړي وي)، داسې حالت~$h$
+ته ننوځي چې هلته درېږي۔ ځينې ماشينونه دوه درېدني حالتونه لري: يو
+ننوت مني او بل ننوت ردوي۔
+\end{explain}
+
+\begin{ex}\emph{درېدني حالتونه}۔
+د دې مفهوم د روښانولو دپاره راځئ د جفت ماشين له يو بدلون څخه پيل
+وکړو۔ د دې پر ځاے چې ماشين د جفت ننوت په صورت کښې په حالت~$q_0$
+کښې ودرېږي، يوه لارښوونه ور زياتولے شو چې ماشين درېدني حالت ته
+واستوي۔
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial, state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+  	    edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{R}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+
+راځئ بېلګه نوره هم پراخه کړو۔ کله چې ماشين ومومي چې ننوت طاق دے،
+هېڅکله نۀ درېږي۔ موږ د کړۍ وهونکې لارښوونې پر ځاے داسې لارښوونه
+ايښودلے شو چې رد حالت~$r$ ته ځي، او په دې توګه ماشين ته يو
+\emph{رد} حالت ور زياتولے شو۔
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+  \node[state]         (D) [below of=B] {$r$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+  	    edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge node {\TMtrans{\TMblank}{\TMblank}{N}} (D)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+د ځانګړي درېدني حالت زياتول د دې په څېر حالتونو کښې ګټور وي، ځکه په
+څرګنده ښيي چې ماشين ټاکلي ننوتونه کله مني يا ردوي۔ خو پام کول مهم دي
+چې د ځانګړي درېدني حالت په زياتولو هېڅ محاسبوي ځواک نۀ زياتېږي۔ همداراز
+د درېدو لږ صوري مفهوم خپلې ګټې لري۔ د درېدو هغه تعريف چې تر اوسه مو
+په دې څپرکي کښې کارولے، د \emph{درېدو مسئلې} ثبوت شهودي او څرګندول ئې
+اسانه کوي۔ له همدې امله موږ خپل اصلي تعريف ته دوام ورکوو۔
+\end{explain}
+
+\end{document}

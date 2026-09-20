@@ -1730,3 +1730,29 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Treatment: relates the indexed partial computation and g with partial equality.
 - Disclosure: `use-partial-equality-in-fixed-point-instance-plus-adjacent-note`.
 
+## OLCMP-045
+
+- Unit: `OLP-0257`
+- Frozen source: `content/turing-machines/machines-computations/configuration.tex` (8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b) at `content/turing-machines/machines-computations/configuration.tex:56-61`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:57`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS`
+- Treatment: places the input immediately to the right of the left-end marker.
+- Disclosure: `replace-left-with-right-plus-adjacent-note`.
+
+## OLCMP-046
+
+- Unit: `OLP-0258`
+- Frozen source: `content/turing-machines/machines-computations/unary-numbers.tex` (c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3) at `content/turing-machines/machines-computations/unary-numbers.tex:187-198`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:193`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS`
+- Treatment: links the mover to the original six-state doubler from representing-tms.
+- Disclosure: `replace-doubler-reference-plus-adjacent-note`.
+
+## OLCMP-047
+
+- Unit: `OLP-0261`
+- Frozen source: `content/turing-machines/machines-computations/combining-machines.tex` (02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48) at `content/turing-machines/machines-computations/combining-machines.tex:37-43`
+- Pashto target: `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:49`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS`
+- Treatment: states that the first branch applies only when the original transition value is defined.
+- Disclosure: `restrict-first-case-to-defined-values-plus-adjacent-note`.

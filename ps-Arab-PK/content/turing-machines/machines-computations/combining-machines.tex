@@ -1,0 +1,174 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: combining-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{cmb}
+\olsection{د ټيورينګ ماشينونو يوځاے کول}
+
+\begin{explain}
+د ټيورينګ ماشينونو هغه بېلګې چې تر اوسه مو ليدلې، نسبتاً ساده وې۔
+خو په حقيقت کښې هره مسئله چې په هره اوسنۍ پروګرام‌ليکنې ژبه حل کېدے
+شي، د ټيورينګ ماشينونو په وسيله هم حل کېدے شي۔ د لا پېچلو ټيورينګ
+ماشينونو د جوړولو دپاره بايد ځان ډاډه کړو چې ماشينونه يوځاے کولے شو؛
+په دې توګه به يوه کړنلاره په ساده برخو ووېشو او د لا پېچلو مسئلو د
+حل ماشينونه به جوړ کړو۔ که د پېچلې مسئلې په رغوونکو برخو د وېشلو
+طبيعي لار پيدا کړو، مسئله په څو پړاوونو کښې حل کولے شو: څو ساده
+ټيورينګ ماشينونه جوړوو او بيا ئې په يوه داسې ماشين کښې يوځاے کوو چې
+ټوله مسئله حل کړي۔ دا خبره په بله برخه کښې د درېدو مسئلې د څېړلو پر
+وخت ځانګړې مهمه ده۔
+
+ټيورينګ ماشينونه $M = \tuple{Q, \Sigma, q_0, \delta}$ او
+~$M' = \tuple{Q', \Sigma', q_0', \delta'}$ څنګه يوځاے کړو؟ اوس د
+~$M$ له درېدو وروسته د پټې تشکيل د ماشين~$M'$ د يوې چلونې د ننوت
+تشکيل په توګه کاروو۔ د داسې يوه ټيورينګ ماشين $M \frown M'$ د لاس
+ته راوړلو دپاره لاندې کارونه وکړئ:
+\begin{enumerate}
+    \item د~$M'$ ټول حالتونه~$Q'$ بيا وشمېرئ (يا بيا ونوموئ)، څو
+    $M$ او~$M'$ هېڅ ګډ حالت ونۀ لري ($Q \cap Q' = \emptyset$)۔
+    \item د~$M \frown M'$ حالتونه $Q \cup Q'$ دي۔
+    \item د پټې الفبا $\Sigma \cup \Sigma'$ ده۔
+    \item لومړنی حالت~$q_0$ دے۔
+    \item د حالت بدلون تابع هغه تابع~$\delta''$ ده چې داسې ورکول کېږي:
+    \[\delta''(q,\sigma) =
+    \begin{cases}
+      \delta(q,\sigma) & \text{که $q \in Q$ وي او دا ارزښت تعريف شوے وي}\\
+      \delta'(q,\sigma) & \text{که $q \in Q'$ وي}\\
+      \tuple{q_0', \sigma, \TMstay} & \text{که $q \in Q$ وي او
+      $\delta(q,\sigma)$ تعريف شوې نۀ وي}
+    \end{cases}\]
+\end{enumerate}
+لاس ته راغلے ماشين چې په حالت $q \in Q$ کښې وي، د~$M$ لارښوونې
+کاروي، او چې په حالت~$q \in Q'$ کښې وي، د~$M'$ لارښوونې کاروي۔ کله
+چې دا په داسې حالت $q \in Q$ کښې وي او داسې نښه~$\sigma$ لولي چې
+~$M$ ورته د حالت بدلون نۀ لري (يعنې~$M$ به درېدلے و)، د~$M'$ لومړني
+حالت ته ننوځي (او د پټې منځپانګه او د سر ځاے هماغسې پرېږدي)۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-047):} د سرچينې د ټوټه‌ييز تعريف
+لومړي شرط يوازې دا ويل چې حالت د لومړي ماشين دے، او په دې توګه ئې له
+درېيم شرط سره ټکر کاوه۔ دلته څرګنده شوه چې لومړی شرط هغه وخت دے چې
+د لومړي ماشين ارزښت تعريف شوے وي؛ درېيم شرط ئې ناتعريف شوی حالت
+سمبالوي۔
+
+پام وکړئ، تر څو چې ماشين~$M$ منضبط نۀ وي، موږ نۀ پوهېږو چې د~$M$
+د درېدو پر وخت د پټې سر چېرته وي؛ نو د~$M$ په درېدني تشکيل کښې سر
+اړين نۀ دے چې مربع~$1$ ولولي۔ د ماشينونو د يوځاے کولو پر وخت بايد
+دا خبره په پام کښې وساتو۔
+\end{explain}
+
+\begin{ex}
+\emph{د ماشينونو يوځاے کول:} موږ به داسې ماشين طرح کړو چې د~$n$ او
+~$m$ اوږدوالي لرونکو د~$\TMstroke$ نښو له دوو غونډونو جوړ ننوت باندې
+پيل شي او پر پټه د~$2(m+n)$ شمېر~$\TMstroke$ نښو په يوه غونډ
+ودرېږي۔ د دې ماشين د جوړولو دپاره دوه اشنا ماشينونه يوځاے کولے شو:
+د جمع ماشين او دوه‌چنده کوونکے۔ لومړے د جمع ماشين د حالت ډياګرام
+کاږو۔
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]
+موږ نۀ غواړو چې ماشين په حالت~$q_2$ کښې ودرېږي، بلکې د وت د
+دوه‌چنده کولو دپاره بايد کار ته دوام ورکړي۔ را ياد کړئ چې دوه‌چنده
+کوونکے ماشين د ننوت لومړۍ کرښه پاکوي او په بېل وت کښې دوه کرښې ليکي۔
+راځئ يوه لارښوونه ور زياته کړو، څو ډاډمن شو چې د پټې سر د جمع ماشين
+د وت لومړۍ کرښه لولي۔
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E);
+\end{tikzpicture}
+\]
+اوس د ننوت دوه‌چنده کول اسانه دي---يوازې دوه‌چنده کوونکے ماشين له
+حالت~$q_4$ سره نښلوو۔ د دې دپاره د دوه‌چنده کوونکي حالتونه داسې بيا
+نومول پکار دي چې د~$q_0$ پر ځاے له~$q_4$ څخه پيل شي؛ په دې توګه دوه
+لومړني حالتونه نۀ جوړېږي۔ وروستنی ډياګرام بايد د
+\olref{fig:combined} په شان وي۔
+\begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+  \node[state]         (2) [right of=E] {$q_5$};
+  \node[state]         (3) [right of=2] {$q_6$};
+  \node[state]         (4) [below of=3] {$q_7$};
+  \node[state]         (5) [left of=4]  {$q_8$};
+  \node[state]         (6) [left of=5]  {$q_9$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E)
+    (E) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (E);
+\end{tikzpicture}
+\]
+\caption{د جمع کوونکي او دوه‌چنده کوونکي ماشينونو يوځاے کول}
+\ollabel{fig:combined}
+\end{figure}
+\end{ex}
+
+\begin{prop}
+    که~$M$ او~$M'$ منضبط وي او په ترتيب سره تابعې $f\colon
+    \Nat^k \to \Nat$ او $f'\colon \Nat \to \Nat$ محاسبه کوي، نو
+    $M \frown M'$ منضبط دے او~$\comp{f}{f'}$ محاسبه کوي۔
+\end{prop}
+
+\begin{proof}
+    څرنګه چې~$M$ منضبط دے، کله چې د وت
+    ~$f(n_1,\dots,n_k) = m$ سره درېږي، سر مربع~$1$ لولي۔ که اوس د
+    ~$M'$ لومړني حالت ته ننوځو، ماشين به د وت~$f'(m)$ سره ودرېږي او
+    بيا به هم مربع~$1$ لولي۔ د~\olref[dis]{defn:disciplined} نور
+    شرطونه هم پوره کېږي۔
+\end{proof}
+
+\begin{prob}
+    د~\cref{tur:mac:dis:prob:disc-succ} ماشين~$M$ واخلئ،
+    $M \frown M$ جوړ کړئ، او په دې توګه داسې منضبط ټيورينګ ماشين
+    ورکړئ چې $f(x) = x+2$ محاسبه کوي۔
+\end{prob}
+\end{document}

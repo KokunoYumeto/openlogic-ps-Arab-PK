@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 255,
-    "structural_pass": 255,
+    "draft_units": 263,
+    "structural_pass": 263,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B050-RICE-FIXED-POINTS-AND-TURING-MACHINES",
+  "batch": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -7387,6 +7387,217 @@
         "OLCMP-042"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0256",
+      "path": "content/turing-machines/machines-computations/turing-machines.tex",
+      "source_sha256": "20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65",
+      "translation_sha256": "85043ecfa26f901bba301ec5cbd26c7f35cdd779a12e3af1e366bdcd3b5d35b2",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0257",
+      "path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "translation_sha256": "8e52dfe2163604dd67643749d9168b8cf41687896acee995af5f180e27744499",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-045"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0258",
+      "path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "translation_sha256": "4d8b2cae6942649efae899146dd307b044cacdf4707802f65b80abe95405dadd",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-046"
+      ],
+      "status": "structural-pass",
+      "identifier_diff": {
+        "source_only": [
+          "\\olref[tur][mac][una]{fig:doubler-disc}"
+        ],
+        "target_only": [
+          "\\olref[tur][mac][rep]{fig:doubler}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0259",
+      "path": "content/turing-machines/machines-computations/halting-states.tex",
+      "source_sha256": "bc10eb130811dbd6f527c85e683a03b97f771c7f5ff0f64d5a39f040144799bf",
+      "translation_sha256": "fcc38b0804cebc801118a1c0fb148d9874c318256a018b3d65af791c4012c8e2",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0260",
+      "path": "content/turing-machines/machines-computations/disciplined-machines.tex",
+      "source_sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
+      "translation_sha256": "c20e8bce465cce592bf4dd218ceb12ca30d1cf7a496b80e214ac531792e2ed46",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0261",
+      "path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "translation_sha256": "01bcf8f48761447e3682c743abec36325c0c4a8bacae909c7423eecfc4f4f081",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-047"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0262",
+      "path": "content/turing-machines/machines-computations/variants.tex",
+      "source_sha256": "d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e",
+      "translation_sha256": "e721b266c84322cedc57944d8aceb22264db0266d581d11832cc5c7129fcb39c",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0263",
+      "path": "content/turing-machines/machines-computations/church-turing-thesis.tex",
+      "source_sha256": "a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421",
+      "translation_sha256": "79c8670105d0097a27b83453bcc73c41ce29400dec5e4724324bc63fa82c2331",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -9807,6 +10018,54 @@
       "passage": "diagrams, configurations and machine tables",
       "reverse_paraphrase": "State diagrams and tables encode transition instructions. Configuration traces show that the even machine halts exactly on even unary input, while the doubler repeatedly erases one input stroke and appends two output strokes.",
       "finding": "All diagrams, table cells, traces, strategy and five problems remain complete and byte-equivalent in their formal content; three local prose defects are disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0256",
+      "passage": "formal Turing-machine definition",
+      "reverse_paraphrase": "A Turing machine packages a finite state set, finite tape alphabet with blank and end marker, start state and partial transition function. The even machine instantiates all four components.",
+      "finding": "The full definition, end-marker policy and example remain complete with every formula unchanged."
+    },
+    {
+      "unit_id": "OLP-0257",
+      "passage": "configurations, runs and outputs",
+      "reverse_paraphrase": "A configuration records a finite relevant tape prefix, head index and state. A run begins with the end marker followed by the input and proceeds by the transition function until an undefined instruction yields a trailing-blank-trimmed output.",
+      "finding": "Every clause of one-step yielding, extension of the visited tape, halting and output remains complete; the erroneous left/right gloss is disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0258",
+      "passage": "unary computation and machine constructions",
+      "reverse_paraphrase": "Natural numbers are encoded by stroke counts. The chapter defines total and partial computation, constructs addition and two valid doubling strategies, and asks for subtraction, equality and minimum machines.",
+      "finding": "All diagrams, exercises and undefined-value behavior remain complete; the mover now references the compatible original doubler."
+    },
+    {
+      "unit_id": "OLP-0259",
+      "passage": "dedicated halt, accept and reject states",
+      "reverse_paraphrase": "An explicit halting state can make acceptance or rejection visible without increasing computing power. The chapter retains instruction absence as its default halting convention for the later halting-problem proof.",
+      "finding": "Both modified even-machine diagrams and the equivalence explanation remain complete."
+    },
+    {
+      "unit_id": "OLP-0260",
+      "passage": "disciplined machines",
+      "reverse_paraphrase": "A disciplined machine has one halt state, halts over square one, preserves the end marker and never moves left from square zero. Any machine can be normalized to this form without changing halting or output.",
+      "finding": "All four conditions, normalization argument, disciplined adder, proposition and exercises remain complete."
+    },
+    {
+      "unit_id": "OLP-0261",
+      "passage": "sequential combination",
+      "reverse_paraphrase": "After disjointly renaming states, a combined machine runs the first transition function until it is undefined, then enters the second machine's start state without changing tape or head. Disciplined machines therefore realize function composition.",
+      "finding": "The construction, addition/doubling diagram and proof remain complete; the overlapping case condition is disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0262",
+      "passage": "equivalent Turing-machine variants",
+      "reverse_paraphrase": "Finite alphabets, simultaneous write/move, stationary moves, one- or two-way tapes, multiple tapes, nondeterministic relations, halting conventions and numeral encodings vary without changing the computable functions.",
+      "finding": "Every listed variant, the end-marker caveat and the parity-based simulation sketch remain complete."
+    },
+    {
+      "unit_id": "OLP-0263",
+      "passage": "Church--Turing thesis",
+      "reverse_paraphrase": "The thesis identifies intuitive effective procedures with Turing-computable procedures. It licenses moving from clear pseudocode to existence of a machine and from Turing impossibility to impossibility for every effective procedure.",
+      "finding": "The definition, extensional-equivalence support and both uses, including the halting-problem consequence, remain complete."
     }
   ],
   "builds": [

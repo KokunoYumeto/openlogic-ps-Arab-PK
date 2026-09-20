@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 255 of 722 source units are translated drafts. This log contains 143 terminology entries and 198 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 263 of 722 source units are translated drafts. This log contains 148 terminology entries and 201 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1290,6 +1290,51 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د حالت شکل; جوړښت د تشکيل پر ځاے; د ماشين لښتيال; دوه برابروونکی
 - Review question: In Pakistani Pashto mathematical prose, is «د حالت ډياګرام / لارښوونه / تشکيل / د ماشين جدول / دوه‌چنده کوونکے / درېدل / منل» the clearest conventional rendering of “state diagram / instruction / configuration / machine table / doubler / halt / accept” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete Rice, fixed-point, self-reference and introductory Turing-machine source and language review
+
+## TERM-TURING-CONFIGURATION-COMPUTATION
+
+- Type: terminology
+- Choice: لومړنی تشکيل / يوځاے کول / په يوه ګام کښې ورکول / چلونه / وت
+- Uncertainty: Pakistani prose, function and sequence witnesses govern exposition; the compact Turing-computation labels are unattested in the inspected canon and remain reversible and provisional
+- Alternatives: ابتدايي تشکيل; نښلول د يوځاے کولو پر ځاے; اجرا د چلونې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «لومړنی تشکيل / يوځاے کول / په يوه ګام کښې ورکول / چلونه / وت» the clearest conventional rendering of “initial configuration / concatenation / yields in one step / run / output” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+
+## TERM-TURING-UNARY-COMPUTATION
+
+- Type: terminology
+- Choice: يوګونې څرګندونه / حسابي تابع / جزوي محاسبه / لېږدوونکے
+- Uncertainty: natural-number, parity, equality and function language has regional support and Pakistani prose governs register; the exact unary-machine compounds remain provisional
+- Alternatives: يواړخيزه څرګندونه; حسابي فنکشن; خوځوونکے د لېږدوونکي پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «يوګونې څرګندونه / حسابي تابع / جزوي محاسبه / لېږدوونکے» the clearest conventional rendering of “unary representation / arithmetic function / partial computation / mover” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+
+## TERM-TURING-HALTING-DISCIPLINE
+
+- Type: terminology
+- Choice: درېدنی حالت / د منلو حالت / د رد حالت / منضبط ټيورينګ ماشين
+- Uncertainty: Pakistani prose and regional function/relation witnesses support syntax and role distinctions; the exact automata compounds remain provisional
+- Alternatives: د توقف حالت; قبول او رد حالت; قاعده‌مند ماشين د منضبط پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «درېدنی حالت / د منلو حالت / د رد حالت / منضبط ټيورينګ ماشين» the clearest conventional rendering of “halting state / accept state / reject state / disciplined Turing machine” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+
+## TERM-TURING-NONDETERMINISTIC-VARIANTS
+
+- Type: terminology
+- Choice: ناتعييني ټيورينګ ماشين / د حالت بدلون اړيکه / څو پټې / دوه-لوري نامتناهي پټه / تقليد
+- Uncertainty: relation, function and parity witnesses support the mathematical contrasts while Pakistani prose governs register; the exact machine-variant labels remain provisional
+- Alternatives: غيرتعييني ټيورينګ ماشين; څو-پټيز ماشين; شبيه‌سازي د تقليد پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «ناتعييني ټيورينګ ماشين / د حالت بدلون اړيکه / څو پټې / دوه-لوري نامتناهي پټه / تقليد» the clearest conventional rendering of “nondeterministic Turing machine / transition relation / multiple tapes / two-way infinite tape / simulation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+
+## TERM-CHURCH-TURING-THESIS
+
+- Type: terminology
+- Choice: د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے
+- Uncertainty: the prior Church's-thesis decision supports اصل and regional function/composition witnesses support extensional equivalence; the full compound remains provisional
+- Alternatives: د چرچ--ټيورينګ دعوه; مؤثره کړنلاره; د بېروني ارزښت له مخې معادل
+- Review question: In Pakistani Pashto mathematical prose, is «د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے» the clearest conventional rendering of “Church--Turing thesis / effective procedure / extensionally equivalent / Turing computable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
 
 ## DEC-OLFUN-001
 
@@ -3018,6 +3063,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-044 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete Rice, fixed-point, self-reference and introductory Turing-machine batch and frozen source bytes
+
+## DEC-OLCMP-045
+
+- Type: source-correction
+- Choice: places the input immediately to the right of the left-end marker
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-045 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+
+## DEC-OLCMP-046
+
+- Type: source-correction
+- Choice: links the mover to the original six-state doubler from representing-tms
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-046 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+
+## DEC-OLCMP-047
+
+- Type: source-correction
+- Choice: states that the first branch applies only when the original transition value is defined
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-047 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
 
 ## DEC-REL-I
 
