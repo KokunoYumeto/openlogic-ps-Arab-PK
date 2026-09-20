@@ -1,0 +1,113 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-symbols
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{cod}
+\olsection{د سمبولونو کوډول}
+
+د لومړۍ درجې منطق بنسټيزه ژبه~$\Lang L$ دا سمبولونه کاروي:
+\[
+\lfalse \quad \lnot \quad \lor \quad \land \quad \lif \quad \lforall
+\quad \lexists \quad \eq \quad ( \quad ) \quad ,
+\]
+له دې سره د متغيرونو او !!{constant}s !!{enumerable} سټونه، او د هرې
+ځاييزې کچې د !!{function}s او !!{predicate}s، !!{enumerable} سټونه هم
+کاروي۔ موږ
+دې سمبولونو هر يوه ته داسې \emph{کوډونه} ټاکلے شو چې هر سمبول ته د
+هغه د کوډ په توګه يو ځانګړے عدد ورسېږي، او دوو بېلو سمبولونو ته يو
+شان عدد ور نۀ کړل شي۔ پوهېږو چې دا شوني دي، ځکه د ټولو سمبولونو سټ
+!!{enumerable} دے، نو د هغه او د طبيعي عددونو د سټ ترمنځ
+!!a{bijection} شته۔ خو دا هم باوري کول غواړو چې سمبول (او د هغه په
+اړه ځينې معلومات، لکه د !!a{function} ځاييزه کچه) له کوډ څخه په
+محاسبه کېدونکې لار بېرته ترلاسه کړے شو۔ البته د دې کار ډېرې ممکنې
+لارې شته۔ دلته يوه داسې لار ده چې بنسټيزې بازګشتي تابعې کاروي۔
+(ياد کړئ چې $\tuple{n_0, \dots, n_k}$ هغه عدد دے چې د عددونو لړۍ
+$n_0$، \dots، $n_k$ کوډوي۔)
+
+\begin{defn}
+که $s$ د~$\Lang L$ يو سمبول وي، د هغه \emph{سمبول-کوډ}~$\scode s$
+داسې تعريف کړئ:
+\begin{enumerate}
+\item که $s$ په منطقي سمبولونو کښې وي، $\scode s$ د لاندې جدول له
+  مخې ورکول کېږي:
+\[
+\begin{array}{cccccccccc}
+  \lfalse & \lnot & \lor & \land & \lif & \lforall \\
+\tuple{0, 0} & \tuple{0, 1} & \tuple{0, 2} & \tuple{0, 3} &
+\tuple{0, 4} & \tuple{0, 5} \\
+\lexists & \eq & ( & ) & ,\\
+\tuple{0, 6} & \tuple{0, 7} &
+\tuple{0, 8} & \tuple{0, 9} & \tuple{0, 10}
+\end{array}
+\]
+\item که $s$، $i$-م متغير~$\Obj v_i$ وي، نو
+  $\scode s = \tuple{1, i}$۔
+\item که $s$، $i$-م !!{constant}~$\Obj c_i$ وي، نو
+  $\scode s = \tuple{2, i}$۔
+\item که $s$، $i$-م $n$-ځايه !!{function}~$\Obj f_i^n$ وي، نو
+  $\scode s = \tuple{3, n, i}$۔
+\item که $s$، $i$-م $n$-ځايه !!{predicate}~$\Obj P_i^n$ وي، نو
+  $\scode s = \tuple{4, n, i}$۔
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+لاندې اړيکې بنسټيزې بازګشتي دي:
+\begin{enumerate}
+\item $\fn{Fn}(x, n)$ هله صدق کوي چې $x$ د کوم~$i$ دپاره د
+  $\Obj f^n_i$ کوډ وي؛ يعنې $x$ د يوې $n$-ځايه !!{function} کوډ وي۔
+\item $\fn{Pred}(x, n)$ هله صدق کوي چې $x$ د کوم~$i$ دپاره د
+  $\Obj P^n_i$ کوډ وي، يا $x$ د~$\eq$ کوډ او $n = 2$ وي؛ يعنې $x$
+  د يوه $n$-ځايه !!{predicate} کوډ وي۔
+\end{enumerate}
+\end{prop}
+
+\begin{defn}
+که $s_0, \dots, s_{n-1}$ د سمبولونو يوه لړۍ وي، د هغې
+\emph{ګوډل شمېره} $\tuple{\scode{s_0}, \dots, \scode{s_{n-1}}}$ ده۔
+\end{defn}
+
+\begin{explain}
+پام وکړئ چې \emph{کوډونه} او \emph{ګوډل شمېرې} بېل څيزونه دي۔ د
+بېلګې په توګه متغير~$\Obj v_5$ کوډ~$\scode{\Obj v_5} = \tuple{1, 5}
+= 2^2\cdot 3^6$ لري۔ خو که متغير~$\Obj v_5$ د يوه ترم په توګه
+وګڼو، دا د سمبولونو يوه لړۍ (د اوږدوالي~$1$) هم ده۔ د
+\emph{ترم}~$\Obj v_5$ \emph{ګوډل شمېره}~$\Gn{\Obj v_5}$ دا ده:
+$\tuple{\scode{\Obj v_5}} = 2^{\scode{\Obj v_5} + 1} =
+2^{2^2\cdot 3^6 + 1}$۔
+\end{explain}
+
+\begin{ex}
+ياد کړئ چې که $k_0$، \dots، $k_{n-1}$ د عددونو يوه لړۍ وي، نو د
+اولي عددونو-د-قوتونو په کوډول کښې د لړۍ کوډ
+$\tuple{k_0, \dots, k_{n-1}}$ دا دے:
+\[
+2^{k_0+1}\cdot3^{k_1+1}\cdot \dots \cdot p_{n-1}^{k_{n-1}+1},
+\]
+چې $p_i$، $i$-م اولي عدد دے (له $p_0 = 2$ څخه پيلېږي)۔ نو د بېلګې
+په توګه فارمول~$\eq[\Obj v_0][\Obj 0]$، يا په څرګنده توګه
+${\eq}(\Obj v_0,\Obj c_0)$، دا ګوډل شمېره لري:
+\[
+\tuple{\scode{\eq},\scode{(},\scode{\Obj v_0},\scode{,}, \scode{\Obj
+    c_0},\scode{)}}.
+\]
+دلته $\scode{\eq}$ دا دے: $\tuple{0,7} = 2^{0+1}\cdot
+3^{7+1}$؛ $\scode{\Obj v_0}$ دا دے: $\tuple{1,0} =
+2^{1+1}\cdot3^{0+1}$؛ او همداسې نور۔ نو $\Gn{=(\Obj v_0,\Obj c_0)}$
+دا دے:
+\begin{multline*}
+2^{\scode{=} + 1}\cdot 3^{\scode{(}+1}\cdot 5^{\scode{\Obj v_0}+1}
+\cdot 7^{\scode{,} + 1} \cdot 11^{\scode{\Obj c_0}+1} \cdot
+13^{\scode{)}+1} = \\
+2^{2^1\cdot 3^8 + 1}\cdot 3^{2^1\cdot 3^9+1}\cdot 5^{2^2\cdot 3^1+1}
+\cdot 7^{2^1\cdot 3^{11} + 1} \cdot 11^{2^3\cdot3^1+1} \cdot
+13^{2^1\cdot3^{10}+1} = \\
+2^{13\,123}\cdot 3^{39\,367}\cdot 5^{13}\cdot 7^{354\,295}\cdot11^{25}\cdot13^{118\,099}.
+\end{multline*}
+\end{ex}
+
+\end{document}

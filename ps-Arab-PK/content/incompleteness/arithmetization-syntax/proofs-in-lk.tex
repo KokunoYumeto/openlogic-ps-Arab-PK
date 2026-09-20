@@ -1,0 +1,297 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-lk
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{plk}
+\olsection{په $\Log{LK}$ کښې \usetoken{P}{derivation}}
+
+\begin{explain}
+د !!{derivation}s د حسابي کولو دپاره بايد !!{derivation}s د عددونو
+په توګه تمثيل کړو۔ ځکه چې !!{derivation}s د سېکوېنټونو داسې ونې دي
+چې هر استنتاج يوه نښه هم لري، نو بازګشتي تمثيل تر ټولو څرګنده لار
+ده: يو !!{derivation} د يوې څوګونې په توګه تمثيلوو چې اجزا ئې
+پاې-سېکوېنټ، نښه، او د وروستي استنتاج مقدماتو ته د رسېدونکو
+فرعي-!!{derivation}s تمثيلونه دي۔
+\end{explain}
+
+\begin{defn}
+که $\Gamma$ د !!{sentence}s يوه متناهي لړۍ وي،
+$\Gamma=\tuple{!A_1, \dots, !A_n}$، نو
+$\Gn{\Gamma}=\tuple{\Gn{!A_1}, \dots, \Gn{!A_n}}$۔
+
+که $\Gamma \Sequent \Delta$ يو سېکوېنټ وي، نو د
+$\Gamma \Sequent \Delta$ ګوډل شمېره دا ده:
+\[
+\Gn{\Gamma \Sequent \Delta} = \tuple{\Gn{\Gamma}, \Gn{\Delta}}
+\]
+
+که $\pi$ په $\Log{LK}$ کښې !!a{derivation} وي، $\Gn{\pi}$ داسې
+تعريفېږي:
+\begin{enumerate}
+\item که $\pi$ يوازې له ابتدايي سېکوېنټ $\Gamma \Sequent \Delta$
+  څخه جوړ وي، نو $\Gn{\pi}$ دا دے:
+  \[
+    \tuple{0, \Gn{\Gamma \Sequent \Delta}}.
+  \]
+\item که $\pi$ په داسې استنتاج پاې ته رسېږي چې يو يا دوه مقدمات
+  لري، پايله ئې $\Gamma \Sequent \Delta$ وي، او $\pi_1$ او $\pi_2$
+  هغه سمدستي فرعي ثبوتونه وي چې د وروستي استنتاج پر مقدماتو پاې ته
+  رسېږي، نو $\Gn{\pi}$ په ترتيب له دې دوو څخه يو دے:
+  \begin{align*}
+    & \tuple{1, \Gn{\pi_1}, \Gn{\Gamma \Sequent \Delta}, k} \text{ يا}\\
+    & \tuple{2, \Gn{\pi_1}, \Gn{\pi_2}, \Gn{\Gamma \Sequent \Delta}, k},
+  \end{align*}
+  چې $k$ د لاندې جدول له مخې د وروستي استنتاج د کارول شوې قاعدې
+  له مخې ټاکل کېږي:
+
+  \begin{tabular}{lccccccc}
+    \text{قاعده:} & \LeftR{\Weakening} & \RightR{\Weakening} &
+    \LeftR{\Contraction} & \RightR{\Contraction} &
+    \LeftR{\Exchange} & \RightR{\Exchange} \\
+    $k$: & 1 & 2 & 3 & 4 & 5 & 6 \\[2ex]
+    \text{قاعده:} & \LeftR{\lnot} & \RightR{\lnot} &
+    \LeftR{\land} & \RightR{\land} &
+    \LeftR{\lor} & \RightR{\lor} \\
+    $k$: & 7 & 8 & 9 & 10 & 11 & 12 \\[2ex]
+    \text{قاعده:} & \LeftR{\lif} & \RightR{\lif} &
+    \LeftR{\lforall} & \RightR{\lforall} &
+    \LeftR{\lexists} & \RightR{\lexists} \\
+    $k$: & 13 & 14 & 15 & 16 & 17 & 18 \\[2ex]
+    \text{قاعده:} & \Cut & = \\
+    $k$: & 19 & 20
+  \end{tabular}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  دا ډېر ساده !!{derivation} وګورئ:
+  \begin{prooftree}
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B \fCenter !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter (!A \land !B) \lif !A$
+  \end{prooftree}
+  د ابتدايي سېکوېنټ ګوډل شمېره به
+  $p_0=\tuple{0, \Gn{!A \Sequent !A}}$ وي۔ د هغه !!{derivation}
+  ګوډل شمېره چې د~$\LeftR{\land}$ پر پايله ختمېږي،
+  $p_1=\tuple{1,p_0,\Gn{!A \land !B \Sequent !A},9}$ ده
+  ($1$ ځکه چې $\LeftR{\land}$ يو مقدمه لري؛ بيا د پايلې
+  $!A \land !B \Sequent !A$ ګوډل شمېره؛ او $9$ هغه عدد دے چې
+  $\LeftR{\land}$ کوډوي)۔ بيا د ټول !!{derivation} ګوډل شمېره
+  $\tuple{1,p_1,\Gn{\Sequent (!A \land !B) \lif !A},14}$ ده؛ يعنې
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{!A \Sequent !A}}, \Gn{!A \land !B \Sequent !A}, 9},
+    \Gn{\Sequent (!A \land !B) \lif !A}, 14}.
+  \]
+  \textbf{د ژباړې د نسخې سمون (OLCMP-074):} سرچينې د~$p_0$ په
+  دننني ګوډل عبارت کښې د~$!A$ وروسته يو بې‌جوړې تړونکے ګرد قوس
+  ايښے و؛ دلته لرې شو څو کوډ هماغه ابتدايي سېکوېنټ ونيسي۔
+\end{ex}
+
+\begin{explain}
+چې د !!{derivation}s پر يو تمثيل هوکړې ته ورسېدو، دا هم بايد وښيو چې
+داسې !!{derivation}s په بنسټيز بازګشتي ډول اداره کولے شو، او د هغو
+اړين خاصيتونه او اړيکې هم په همدې ډول بيانولے شو۔ ځينې عمليات ساده
+دي: د بېلګې په توګه، د !!a{derivation} له ګوډل شمېرې~$p$ څخه
+$\fn{EndSequent}(p)=(p)_{(p)_0+1}$ د هغه د پاې-سېکوېنټ ګوډل شمېره
+راکوي، او $\fn{LastRule}(p)=(p)_{(p)_0+2}$ د هغه د وروستۍ قاعدې
+کوډ راکوي۔ خاصيت $\fn{Sequent}(s)$ چې داسې تعريفېږي:
+\[
+  \len{s} = 2 \land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+\]
+هله د~$s$ په اړه صدق کوي چې $s$ د !!{sentence}s لرونکي يوه
+سېکوېنټ ګوډل شمېره وي۔ ځينې نور عمليات ډېر ستونزمن دي۔ لږ تر لږه د
+هغو د ترسره کولو لار به راونغاړو۔ موخه دا ده چې وښيو اړيکه «$\pi$
+له~$\Gamma$ څخه د~$!A$ يو !!a{derivation} دے» د~$\pi$ او~$!A$ د
+ګوډل شمېرو بنسټيزه بازګشتي اړيکه ده۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-075):} سرچينې دې تابع ته په
+لومړي تعريف کښې $\fn{EndSeq}$ ويلي، خو په همدې پاتې فصل کښې هر ځاے
+$\fn{EndSequent}$ کاروي؛ دلته يو ثابت نوم کارول شوے دے۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:followsby}
+  خاصيت $\fn{Correct}(p)$، چې هله صدق کوي چې د ګوډل شمېرې~$p$
+  لرونکي !!{derivation}~$\pi$ وروستے استنتاج سم وي، بنسټيز بازګشتي
+  دے۔
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Sequent \Delta$ هله ابتدايي سېکوېنټ دے چې يا داسې
+  !!a{sentence}~$!A$ وي چې $\Gamma \Sequent \Delta$ همدا
+  $!A \Sequent !A$ وي، يا داسې ترم~$t$ وي چې
+  $\Gamma \Sequent \Delta$ همدا $\emptyset \Sequent \eq[t][t]$ وي۔
+  د ګوډل شمېرو په ژبه، $\fn{InitSeq}(s)$ هله صدق کوي چې
+  \begin{align*}
+  \bexists{x < s}{} (\fn{Sent}(x) & \land
+  s = \tuple{\tuple{x},\tuple{x}})
+  \lor {}\\
+  \bexists{t<s}{} (\fn{Term}(t) & \land
+  s = \tuple{0, \tuple{\Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)}}}).
+  \end{align*}
+
+  د استنتاج د هرې قاعدې~$R$ دپاره دا هم بايد وښيو چې اړيکه
+  $\fn{FollowsBy}_R(p)$ بنسټيزه بازګشتي ده؛
+  $\fn{FollowsBy}_R(p)$ هله صدق کوي چې $p$
+  د !!{derivation}~$\pi$ ګوډل شمېره وي، او د~$\pi$ پاې-سېکوېنټ د
+  $R$ په سم پلي کولو د~$\pi$ د سمدستي فرعي-!!{derivation}s له
+  پاې-سېکوېنټونو څخه راشي۔
+
+  يو ساده حالت د \RightR{\land} قاعده ده۔ که $\pi$ په يوه سم
+  $\RightR{\land}$ استنتاج ختم شي، داسې ښکاري:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+
+    \RightLabel{\RightR\land}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  نو په !!{derivation}~$\pi$ کښې وروستے استنتاج هله د
+  $\RightR{\land}$ سم پلي کول دي چې د !!{sentence}s داسې لړۍ
+  $\Gamma$ او $\Delta$، او داسې دوه !!{sentence}s $!A$ او~$!B$ شته
+  چې د~$\pi_1$ پاې-سېکوېنټ $\Gamma \Sequent \Delta,!A$، د~$\pi_2$
+  پاې-سېکوېنټ $\Gamma \Sequent \Delta,!B$، او د~$\pi$ پاې-سېکوېنټ
+  $\Gamma \Sequent \Delta,!A\land !B$ وي۔ دا يوازې د ګوډل شمېرو
+  ژبې ته ژباړل پکار دي۔ که $s=\Gn{\Gamma \Sequent \Delta}$ وي، نو
+  $(s)_0=\Gn{\Gamma}$ او $(s)_1=\Gn{\Delta}$ دي۔ نو
+  $\fn{FollowsBy}_{\RightR{\land}}(p)$ هله صدق کوي چې
+\begin{align*}
+& \bexists{g < p}{\bexists{d < p}{\bexists{a < p}{\bexists{b < p}{\quad}}}} \\
+& \qquad \fn{EndSequent}(p) =
+  \tuple{g, d \concat
+    \tuple{\Gn{(} \concat a \concat \Gn{\land} \concat b \concat \Gn{)}}} \land {} \\
+& \qquad \fn{EndSequent}((p)_1) = \tuple{g, d \concat \tuple{a}} \land {}\\
+& \qquad \fn{EndSequent}((p)_2) = \tuple{g, d \concat \tuple{b}} \land {}\\
+& \qquad (p)_0 = 2 \land \fn{LastRule}(p) = 10.
+\end{align*}
+جلا کرښې په ترتيب دا بيانوي: «داسې لړۍ~($\Gamma$) شته چې ګوډل
+شمېره ئې~$g$ ده، داسې لړۍ~($\Delta$) شته چې ګوډل شمېره ئې~$d$ ده،
+داسې !!a{formula}~($!A$) شته چې ګوډل شمېره ئې~$a$ ده، او داسې
+!!a{formula}~($!B$) شته چې ګوډل شمېره ئې~$b$ ده»؛ داسې چې «د~$\pi$
+پاې-سېکوېنټ $\Gamma \Sequent \Delta,!A\land !B$ دے»، «د~$\pi_1$
+پاې-سېکوېنټ $\Gamma \Sequent \Delta,!A$ دے»، «د~$\pi_2$
+پاې-سېکوېنټ $\Gamma \Sequent \Delta,!B$ دے»، او «$\pi$ دوه
+سمدستي فرعي ثبوتونه لري او وروستۍ استنتاجي قاعده
+$\RightR\land$ (په شمېره~$10$) ده»۔
+
+په~$\pi$ کښې وروستے استنتاج هله د $\RightR\lexists$ سم پلي کول
+دي چې داسې لړۍ $\Gamma$ او $\Delta$، داسې !!a{formula}~$!A$، متغير
+$x$ او ترم~$t$ شته چې د~$\pi$ پاې-سېکوېنټ
+$\Gamma \Sequent \Delta,\lexists[x][!A]$ او د~$\pi_1$
+پاې-سېکوېنټ $\Gamma \Sequent \Delta,\Subst{!A}{t}{x}$ وي۔ نو د
+ګوډل شمېرو په ژبه $\fn{FollowsBy}_{\RightR\lexists}(p)$ هله صدق کوي
+چې
+\begin{align*}
+  & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{EndSequent}(p) =
+  \tuple{
+    g,
+    d \concat \tuple{\Gn{\lexists} \concat x \concat a}
+  } \land {}\\
+  & \qquad \fn{EndSequent}((p)_1) =
+  \tuple{
+    g,
+    d \concat \tuple{\fn{Subst}(a, t, x)}
+  } \land {}\\
+  & \qquad (p)_0 = 1 \land \fn{LastRule}(p) = 18.
+\end{align*}
+بيا $\fn{Correct}(p)$ داسې تعريفوو:
+\begin{multline*}
+  \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\
+  [(\fn{LastRule}(p) = 1 \land
+  \fn{FollowsBy}_{\LeftR\Weakening}(p)) \lor \dots \lor {}\\
+  (\fn{LastRule}(p) = 20 \land \fn{FollowsBy}_{\eq}(p)) \lor {}\\
+  (p)_0 = 0 \land \fn{InitialSeq}(\fn{EndSequent}(p))]
+\end{multline*}
+لومړۍ کرښه باوري کوي چې د~$p$ پاې-سېکوېنټ په رښتيا د
+!!{sentence}s يو سېکوېنټ دے۔ وروستۍ کرښه هغه حالت رانغاړي چې $p$
+يوازې يو ابتدايي سېکوېنټ وي۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-076):} سرچينې د دې تعريف په
+تشريح کښې ناڅاپه د~$d$ پاې-سېکوېنټ ياد کړے و، خو ټول تعريف او قضيه
+د~$p$ په اړه دي؛ دلته هماغه يو شان ميتا-متغير ساتل شوے دے۔
+\end{proof}
+
+\begin{prob}
+  لاندې خاصيتونه د \olref[inc][art][plk]{prop:followsby} په څېر
+  تعريف کړئ:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Cut}(p)$؛
+  \item $\fn{FollowsBy}_{\LeftR\lif}(p)$؛
+  \item $\fn{FollowsBy}_{\eq}(p)$؛
+  \item $\fn{FollowsBy}_{\RightR{\lforall}}(p)$۔
+  \end{enumerate}
+  د وروستي خاصيت دپاره دا هم بايد وښيئ چې په بنسټيز بازګشتي ډول
+  ازمويلے شئ چې د ګوډل شمېرې~$p$ لرونکي !!{derivation} وروستے
+  استنتاج د ځانګړي متغير شرط پوره کوي؛ يعنې د~$\RightR{\lforall}$
+  ځانګړے متغير~$a$ په پاې-سېکوېنټ کښې نۀ راځي۔
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  اړيکه $\fn{Deriv}(p)$، چې هله صدق کوي چې $p$ د يوه سم
+  !!{derivation}~$\pi$ ګوډل شمېره وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\pi$ هله سم دے چې هر استنتاج ئې د يوې قاعدې سم
+  پلي کول وي؛ يعنې د هغه هر فرعي-!!{derivation}s په سم استنتاج پاې ته
+  ورسېږي۔ نو $\fn{Deriv}(p)$ هله صدق کوي چې
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(p)}}{\fn{Correct}((\fn{SubtreeSeq}(p))_i)}.
+  \]
+  \textbf{د ژباړې د نسخې سمون (OLCMP-077):} سرچينې په دې کرښه کښې
+  اړيکه $\fn{Deriv}(d)$ بللې وه، سره له دې چې قضيه او د ښي لوري ټول
+  استعمالونه~$p$ لري؛ د $\fn{Correct}$ وروستے تړونکے قوس هم ورک و۔
+  دواړه دلته د هماغه ټاکلي اشتقاق د سم شرط دپاره برابر شول۔
+\end{proof}
+
+\begin{prop}
+فرض کړئ $\Gamma$ د !!{sentence}s يو بنسټيز بازګشتي سټ دے۔ بيا
+اړيکه $\Prf[\Gamma](x,y)$، چې وايي «$x$ د
+$\Gamma_0 \Sequent !A$ د !!a{derivation}~$\pi$ کوډ دے، چې د کوم
+متناهي $\Gamma_0\subseteq\Gamma$ دپاره وي، او $y$ د~$!A$ ګوډل
+شمېره ده»، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ «$y\in\Gamma$» د بنسټيز بازګشتي
+پريديکات~$R_\Gamma(y)$ په واسطه ورکول کېږي۔ بايد وښيو چې
+$\Prf[\Gamma](x,y)$ بنسټيزه بازګشتي ده؛ دا اړيکه هله صدق کوي چې
+$y$ د يوې جملې~$!A$ ګوډل شمېره وي او $x$ د داسې
+$\Log{LK}$-!!{derivation} کوډ وي چې پاې-سېکوېنټ ئې
+$\Gamma_0\Sequent !A$ وي۔
+
+د تېرې قضيې له مخې خاصيت $\fn{Deriv}(x)$، چې هله صدق کوي چې $x$ په
+$\Log{LK}$ کښې د يوه سم !!{derivation}~$\pi$ کوډ وي، بنسټيز بازګشتي
+دے۔ که $x$ داسې کوډ وي، $\fn{EndSequent}(x)$ د~$\pi$ د
+پاې-سېکوېنټ کوډ دے، نو $(\fn{EndSequent}(x))_0$ د پاې-سېکوېنټ د
+کيڼ لوري کوډ او $(\fn{EndSequent}(x))_1$ د ښي لوري کوډ دے۔ نو «د
+~$\pi$ د پاې-سېکوېنټ ښے لور~$!A$ دے» داسې بيانولے شو:
+$\len{(\fn{EndSequent}(x))_1}=1\land
+((\fn{EndSequent}(x))_1)_0=y$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-078):} سرچينې د ښي لوري د
+يوازينۍ جملې کوډ له~$x$ سره برابر کړے و، خو $x$ د ټول
+اشتقاق کوډ دے او د قضيې له مخې د پاې جملې کوډ~$y$ دے؛ دلته
+هماغه $y$ کارول شوے دے۔
+د~$\pi$ د پاې-سېکوېنټ کيڼ لور البته پخپله متناهي دے؛ يوازې دا بيانول
+پکار دي چې هره جمله ئې په~$\Gamma$ کښې ده۔ نو
+$\Prf[\Gamma](x,y)$ داسې تعريفولے شو:
+\begin{align*}
+\Prf[\Gamma](x, y) \defiff {}&
+\fn{Deriv}(x) \land {} \\
+& \bforall{i <
+  \len{(\fn{EndSequent}(x))_0}}{R_\Gamma(((\fn{EndSequent}(x))_0)_i)} \land {}\\
+& \len{(\fn{EndSequent}(x))_1} = 1 \land ((\fn{EndSequent}(x))_1)_0 = y.
+\end{align*}
+\end{proof}
+
+\end{document}

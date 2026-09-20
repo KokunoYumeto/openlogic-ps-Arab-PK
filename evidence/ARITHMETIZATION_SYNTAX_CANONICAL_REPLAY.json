@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/arithmetization-syntax-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T22:26:40.302514+00:00",
+  "batch_id": "PS-B055-ARITHMETIZATION-SYNTAX",
+  "status": "PASS",
+  "counts": {
+    "decisions": 397,
+    "occurrences": 17670,
+    "terminology_decisions": 161,
+    "source_correction_decisions": 231,
+    "priority_decisions": 154,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 2860
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "c673c596522a94165eb398f415549a85895441d727c7232e1a5d2f414098b917",
+    "ALIGNMENT.jsonl": "ddd9a8c0e76134b4db714a82fa372426c01b67ff4a4f8044b47ab0756d8e3dba",
+    "SEGMENT_CANON_USE.jsonl": "4b4b32ae857306339fa846977fd287128735684b15a7f871f9a8502815dedb03",
+    "SOURCE_CORRECTIONS.json": "9c0372fb52e7c045eff5b7f082e516a8fb80e36c5c7ffebc7cb8369d82329d06",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "8c5591a168a7acf8249892b296142772c99c1fe53cb376f853cc6510f3c4fb0c",
+    "QA.json": "172e50a2228b743f79878adbd9892dc34532d9bf3d7311c44e25393cb71fdf2b"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "0b4647f6584b4817d314c93d04333fce270fe7a7b4606c3b6c03189afd410b56",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "d9783427f19911df07e7de3bd4b8da4414fcc246d5cc47b2e20972d80e0f775e",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "6c17e761db33e6344285a40769a10304d0c9152e02c7dba9c1662b4779055049",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "abe3feeed0b06e2671ed51c4f2cbf7f9bcf6c8f3fbb17611795018483774e443",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "02d48c1246777bb6855b9d507f78e873778e3e8ef2bd892e67e4492d088dbeac",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "24a0a6b1f23703150fc09d9ad33829d88064d37da354f178ca2010f44480624f",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

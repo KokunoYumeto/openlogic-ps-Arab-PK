@@ -1,0 +1,53 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{sub}
+\olsection{تعويض}
+
+ياد کړئ چې تعويض هغه عمليه ده چې په !!a{formula}~$!A$ کښې د
+!!a{variable}~$u$ ټولې ازادې پېښې په ترم~$t$ بدلوي، او
+$\Subst{!A}{t}{u}$ ليکل کېږي۔ کله چې دا عمليه د !!{variable}s،
+!!{formula}s او ترمونو پر ګوډل شمېرو ترسره شي، بنسټيزه بازګشتي ده۔
+
+\begin{prop}\ollabel{prop:subst-primrec}
+داسې بنسټيزه بازګشتي تابع $\fn{Subst}(x,y,z)$ شته چې دا خاصيت لري:
+\[
+\fn{Subst}(\Gn{!A}, \Gn{t}, \Gn{u}) = \Gn{\Subst{!A}{t}{u}}.
+\]
+\end{prop}
+
+\begin{proof}
+بيا تابع $\fn{hSubst}$ په بنسټيز بازګښت داسې تعريفولے شو:
+\begin{multline*}
+\begin{aligned}
+\fn{hSubst}(x, y, z, 0) & = \emptyseq \\
+\fn{hSubst}(x, y, z, i+1) & =
+\end{aligned}\\
+\begin{cases}
+\fn{hSubst}(x, y, z, i) \concat y & \text{که $\fn{FreeOcc}(x, z, i)$ وي} \\
+\fn{append}(\fn{hSubst}(x, y, z, i), (x)_{i}) & \text{که نۀ وي۔}
+\end{cases}
+\end{multline*}
+اوس $\fn{Subst}(x,y,z)$ د $\fn{hSubst}(x,y,z,\len{x})$ په توګه
+تعريفېدے شي۔
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:free-for}
+اړيکه $\fn{FreeFor}(x,y,z)$، چې هله صدق کوي چې د ګوډل شمېرې~$y$
+لرونکے ترم د ګوډل شمېرې~$z$ لرونکي متغير دپاره د ګوډل شمېرې~$x$
+لرونکي فارمول کښې !!{free for} وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof} تمرین۔ \end{proof}
+
+\begin{prob}
+\olref[inc][art][sub]{prop:free-for} ثابت کړئ۔
+\end{prob}
+
+\end{document}

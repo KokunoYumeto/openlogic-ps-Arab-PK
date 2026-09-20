@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 279 of 722 source units are translated drafts. This log contains 158 terminology entries and 227 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 288 of 722 source units are translated drafts. This log contains 161 terminology entries and 236 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1425,6 +1425,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: نافيصله جمله د خپلواکې جملې پر ځاے; ګوډلي جمله; د پرېسبورګر حسابي تيوري
 - Review question: In Pakistani Pashto mathematical prose, is «خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب» the clearest conventional rendering of “independent sentence / Gödel sentence / first and second incompleteness theorems / Presburger arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete incompleteness-introduction source and language review
+
+## TERM-SYNTAX-GODEL-CODING
+
+- Type: terminology
+- Choice: د نحو حسابي کول / سمبول-کوډ / ګوډل شمېره / د اوليه عددونو د قوتونو د لړۍ کوډول / جوړښتي لړۍ
+- Uncertainty: coding, sequence, countability, formation and arithmetic concepts have regional support; the exact Gödel-coding compounds remain provisional
+- Alternatives: د نحو حسابي‌سازي; د نښو عددي کوډ; د ګوډل عدد; د اوليه قوتونو په وسيله د لړۍ کوډول
+- Review question: In Pakistani Pashto mathematical prose, is «د نحو حسابي کول / سمبول-کوډ / ګوډل شمېره / د اوليه عددونو د قوتونو د لړۍ کوډول / جوړښتي لړۍ» the clearest conventional rendering of “arithmetization of syntax / symbol code / Gödel number / prime-power sequence coding / formation sequence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete arithmetization-of-syntax source and language review
+
+## TERM-SYNTAX-SUBSTITUTION-PREDICATES
+
+- Type: terminology
+- Choice: ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه
+- Uncertainty: variable, formula, operation and recursive-test roles are regionally supported; the exact free-for and syntactic-predicate compounds remain provisional
+- Alternatives: ازاد وقوع; بدلول د تعويض پر ځاے; د نيولو مخنيوی; نحوي محمول
+- Review question: In Pakistani Pashto mathematical prose, is «ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه» the clearest conventional rendering of “free occurrence / substitution / free for / syntactic predicate / primitive recursive test” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete arithmetization-of-syntax source and language review
+
+## TERM-DERIVATION-ARITHMETIZATION
+
+- Type: terminology
+- Choice: حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض
+- Uncertainty: derivation, proof, sequent, assumption, consistency and coding roles are regionally supported; the exact arithmetization compounds remain provisional
+- Alternatives: د اشتقاق حسابي‌سازي; وروستی سېکوېنټ او وروستی فارمول; د فرض ساقطولو نښه; اثبات‌وړتيا پريديکات
+- Review question: In Pakistani Pashto mathematical prose, is «حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض» the clearest conventional rendering of “arithmetized derivation / end-sequent / end-formula / discharge label / proof predicate / open assumption” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete arithmetization-of-syntax source and language review
 
 ## DEC-OLFUN-001
 
@@ -3414,6 +3441,87 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-073 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete incompleteness-introduction batch and frozen source bytes
+
+## DEC-OLCMP-074
+
+- Type: source-correction
+- Choice: removes the unmatched closing parenthesis after A from both copies of the encoded initial sequent
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-074 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-075
+
+- Type: source-correction
+- Choice: uses EndSequent in the defining equation, matching every subsequent use in the section
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-075 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-076
+
+- Type: source-correction
+- Choice: describes the end-sequent of p, the argument used by Correct and throughout the displayed definition
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-076 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-077
+
+- Type: source-correction
+- Choice: uses Deriv(p), matching the proposition, and closes the Correct application in the universal condition
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-077 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-078
+
+- Type: source-correction
+- Choice: compares the sole right-side sentence code with y, the stated Gödel number of A
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-078 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-079
+
+- Type: source-correction
+- Choice: places every rule case and the assumption case under the common Sent(EndFmla(d)) requirement
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-079 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-080
+
+- Type: source-correction
+- Choice: tests d against component j+1 because component zero stores the number of immediate subderivations
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-080 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-081
+
+- Type: source-correction
+- Choice: binds the preceding-line index j below i and describes c, rather than a, as the constant bounded by the line-j formula code
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-081 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
+
+## DEC-OLCMP-082
+
+- Type: source-correction
+- Choice: recurses on hCond(s,y,n), matching the four-place helper being defined before the two-place Cond wrapper
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-082 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes
 
 ## DEC-REL-I
 

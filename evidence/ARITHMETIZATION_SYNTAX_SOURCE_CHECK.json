@@ -1,0 +1,309 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-20T22:08:44.730419+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+  "scope": "OLP-0280 through OLP-0288 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-074",
+      "unit_id": "OLP-0286",
+      "classification": "unbalanced_parenthesis_in_encoded_initial_sequent",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:86-89",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "target_line_1based": 91,
+      "target_sha256": "277764966f5d2a090fbcfd9abe092ba3f9ad4f87ac07b7222a2e7faef9755e6a",
+      "mode": "remove-two-stray-closing-parentheses-plus-adjacent-note",
+      "translation_change": "removes the unmatched closing parenthesis after A from both copies of the encoded initial sequent",
+      "counterexample": "The code is intended to denote A sequent A. The unmatched parenthesis is not part of either formula and makes the displayed encoding malformed.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "The two malformed formula spans are replaced exactly as registered; adjacent disclosure references are included in the net math exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\tuple{1,p_1,\\Gn{\\Sequent(!A\\land!B)\\lif!A)},14}$",
+          "\\[\\tuple{1,\\tuple{1,\\tuple{0,\\Gn{!A\\Sequent!A)}},\\Gn{!A\\land!B\\Sequent!A},9},\\Gn{\\Sequent(!A\\land!B)\\lif!A},14}.\\]"
+        ],
+        "target_only": [
+          "$\\tuple{1,p_1,\\Gn{\\Sequent(!A\\land!B)\\lif!A},14}$",
+          "\\[\\tuple{1,\\tuple{1,\\tuple{0,\\Gn{!A\\Sequent!A}},\\Gn{!A\\land!B\\Sequent!A},9},\\Gn{\\Sequent(!A\\land!B)\\lif!A},14}.\\]",
+          "$p_0$",
+          "$!A$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-075",
+      "unit_id": "OLP-0286",
+      "classification": "inconsistent_end_sequent_function_name",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:97-105",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "target_line_1based": 112,
+      "target_sha256": "277764966f5d2a090fbcfd9abe092ba3f9ad4f87ac07b7222a2e7faef9755e6a",
+      "mode": "standardize-EndSequent-name-plus-adjacent-note",
+      "translation_change": "uses EndSequent in the defining equation, matching every subsequent use in the section",
+      "counterexample": "EndSeq is defined once but never used again, while every later formula calls EndSequent. Without normalization, the later symbol has no definition.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One defining inline formula changes exactly as registered; adjacent disclosure references are included in the net math exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\fn{EndSeq}(p)=(p)_{(p)_0+1}$"
+        ],
+        "target_only": [
+          "$\\fn{EndSequent}(p)=(p)_{(p)_0+1}$",
+          "$\\fn{EndSeq}$",
+          "$\\fn{EndSequent}$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-076",
+      "unit_id": "OLP-0286",
+      "classification": "wrong_metavariable_in_correctness_explanation",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:204-214",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "target_line_1based": 218,
+      "target_sha256": "277764966f5d2a090fbcfd9abe092ba3f9ad4f87ac07b7222a2e7faef9755e6a",
+      "mode": "replace-d-with-p-in-explanatory-prose-plus-adjacent-note",
+      "translation_change": "describes the end-sequent of p, the argument used by Correct and throughout the displayed definition",
+      "counterexample": "The displayed predicate is Correct(p), and every component in it is applied to p. Referring to d introduces an unbound, unrelated metavariable.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "The prose metavariable repair and its adjacent disclosure produce the registered net target-only p spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$p$",
+          "$p$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-077",
+      "unit_id": "OLP-0286",
+      "classification": "wrong_derivation_metavariable_and_missing_closing_parenthesis",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:236-246",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "target_line_1based": 251,
+      "target_sha256": "277764966f5d2a090fbcfd9abe092ba3f9ad4f87ac07b7222a2e7faef9755e6a",
+      "mode": "replace-Deriv-d-with-p-and-close-Correct-plus-adjacent-note",
+      "translation_change": "uses Deriv(p), matching the proposition, and closes the Correct application in the universal condition",
+      "counterexample": "The proposition and all subtree expressions use p, so Deriv(d) changes the subject without binding d. The missing parenthesis leaves Correct syntactically unclosed.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "The corrected derivability sentence and universal formula change exactly as registered; disclosure references are included in the net exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\bforall{i<\\len{\\fn{SubtreeSeq}(p)}}{\\fn{Correct}((\\fn{SubtreeSeq}(p))_i}.\\]"
+        ],
+        "target_only": [
+          "$\\fn{Deriv}(p)$",
+          "\\[\\bforall{i<\\len{\\fn{SubtreeSeq}(p)}}{\\fn{Correct}((\\fn{SubtreeSeq}(p))_i)}.\\]",
+          "$p$",
+          "$\\fn{Correct}$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-078",
+      "unit_id": "OLP-0286",
+      "classification": "end_sentence_code_compared_with_derivation_code",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:266-282",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+      "target_line_1based": 281,
+      "target_sha256": "277764966f5d2a090fbcfd9abe092ba3f9ad4f87ac07b7222a2e7faef9755e6a",
+      "mode": "replace-right-side-x-with-y-plus-adjacent-note",
+      "translation_change": "compares the sole right-side sentence code with y, the stated Gödel number of A",
+      "counterexample": "Here x codes the entire derivation and y codes the end sentence A. Equating the sentence entry with x contradicts the proposition and the final defining display.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One inline formula changes from x to y exactly as registered; disclosure references are included in the net exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\len{(\\fn{EndSequent}(x))_1}=1\\land((\\fn{EndSequent}(x))_1)_0=x$"
+        ],
+        "target_only": [
+          "$x$",
+          "$x$",
+          "$\\len{(\\fn{EndSequent}(x))_1}=1\\land((\\fn{EndSequent}(x))_1)_0=y$",
+          "$y$",
+          "$y$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-079",
+      "unit_id": "OLP-0287",
+      "classification": "missing_grouping_for_correctness_disjunction",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+      "source_sha256": "06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:211-220",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+      "target_line_1based": 223,
+      "target_sha256": "c4dcefddbbca493e92b679f2515e986a9147e26520356636bd176048aa0e0f28",
+      "mode": "group-entire-rule-or-assumption-disjunction-plus-adjacent-note",
+      "translation_change": "places every rule case and the assumption case under the common Sent(EndFmla(d)) requirement",
+      "counterexample": "Without grouping, conjunction binds only the first rule disjunct, so later rule and assumption cases can satisfy Correct(d) even when the end formula is not a sentence. The following prose says the first line applies generally.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One multline formula gains grouping brackets exactly as registered; the adjacent disclosure reference is included.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\fn{Sent}(\\fn{EndFmla}(d))\\land{}\\\\(\\fn{LastRule}(d)=1\\land\\fn{FollowsBy}_{\\Intro\\land}(d))\\lor\\dots\\lor{}\\\\(\\fn{LastRule}(d)=16\\land\\fn{FollowsBy}_{\\Elim\\eq}(d))\\lor{}\\\\\\bexists{n<d}{\\bexists{x<d}{(d=\\tuple{0,x,n})}}.\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\fn{Sent}(\\fn{EndFmla}(d))\\land{}\\\\[(\\fn{LastRule}(d)=1\\land\\fn{FollowsBy}_{\\Intro\\land}(d))\\lor\\dots\\lor{}\\\\(\\fn{LastRule}(d)=16\\land\\fn{FollowsBy}_{\\Elim\\eq}(d))\\lor{}\\\\\\bexists{n<d}{\\bexists{x<d}{(d=\\tuple{0,x,n})}}].\\end{multline*}",
+          "$\\fn{Sent}$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-080",
+      "unit_id": "OLP-0287",
+      "classification": "off_by_one_immediate_subderivation_index",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+      "source_sha256": "06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-301",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex",
+      "target_line_1based": 292,
+      "target_sha256": "c4dcefddbbca493e92b679f2515e986a9147e26520356636bd176048aa0e0f28",
+      "mode": "shift-subderivation-index-by-one-plus-adjacent-note",
+      "translation_change": "tests d against component j+1 because component zero stores the number of immediate subderivations",
+      "counterexample": "For m immediate subderivations, their codes occupy positions 1 through m. Testing position j for j<m includes the header at zero and omits the final subderivation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One inline formula changes exactly as registered; adjacent disclosure references are included in the net exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\bexists{j<(d')_0}{d=(d')_j}$"
+        ],
+        "target_only": [
+          "$\\bexists{j<(d')_0}{d=(d')_{j+1}}$",
+          "$(d')_j$",
+          "$(d')_0$",
+          "$1$",
+          "$j+1$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-081",
+      "unit_id": "OLP-0288",
+      "classification": "unbound_line_index_in_quantifier_rule_test",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+      "source_sha256": "6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:119-140",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+      "target_line_1based": 139,
+      "target_sha256": "b648b9b7fbf5e928df323ce16c54f7b8f4ed74718a1ceee28cd29fbc2e248fa1",
+      "mode": "bind-j-below-i-and-correct-constant-name-plus-adjacent-note",
+      "translation_change": "binds the preceding-line index j below i and describes c, rather than a, as the constant bounded by the line-j formula code",
+      "counterexample": "The formula refers to (d)_j but never quantifies j; the preceding-line condition requires j<i. The prose then calls the bounded constant a although the formula consistently uses c.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One multline formula gains the missing bounded quantifier; the prose name and adjacent disclosure references are included in the registered net exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\fn{QR}_1(d,i)\\defiff\\bexists{b<(d)_i}{\\bexists{x<(d)_i}{\\bexists{a<(d)_i}{\\bexists{c<(d)_j}{(}}}}\\\\\\fn{Var}(x)\\land\\fn{Const}(c)\\land{}\\\\(d)_i=\\Gn{(}\\concatb\\concat\\Gn{\\lif}\\concat\\Gn{\\lforall}\\concatx\\concata\\concat\\Gn{)}\\land{}\\\\(d)_j=\\Gn{(}\\concatb\\concat\\Gn{\\lif}\\concat\\fn{Subst}(a,c,x)\\concat\\Gn{)}\\land{}\\\\\\fn{Sent}(b)\\land\\fn{Sent}(\\fn{Subst}(a,c,x))\\land{}\\bforall{k<\\len{b}}{(b)_k\\neq(c)_0})\\end{multline*}"
+        ],
+        "target_only": [
+          "$j$",
+          "$c$",
+          "$c$",
+          "$c$",
+          "$j<i$",
+          "\\begin{multline*}\\fn{QR}_1(d,i)\\defiff\\bexists{j<i}{}\\bexists{b<(d)_i}{\\bexists{x<(d)_i}{\\bexists{a<(d)_i}{\\bexists{c<(d)_j}{(}}}}\\\\\\fn{Var}(x)\\land\\fn{Const}(c)\\land{}\\\\(d)_i=\\Gn{(}\\concatb\\concat\\Gn{\\lif}\\concat\\Gn{\\lforall}\\concatx\\concata\\concat\\Gn{)}\\land{}\\\\(d)_j=\\Gn{(}\\concatb\\concat\\Gn{\\lif}\\concat\\fn{Subst}(a,c,x)\\concat\\Gn{)}\\land{}\\\\\\fn{Sent}(b)\\land\\fn{Sent}(\\fn{Subst}(a,c,x))\\land{}\\bforall{k<\\len{b}}{(b)_k\\neq(c)_0})\\end{multline*}"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-082",
+      "unit_id": "OLP-0288",
+      "classification": "recursive_helper_calls_undefined_arity",
+      "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+      "source_sha256": "6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb",
+      "source_locator": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-208",
+      "target_path": "ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+      "target_line_1based": 211,
+      "target_sha256": "b648b9b7fbf5e928df323ce16c54f7b8f4ed74718a1ceee28cd29fbc2e248fa1",
+      "mode": "replace-Cond-with-hCond-in-recursive-clause-plus-adjacent-note",
+      "translation_change": "recurses on hCond(s,y,n), matching the four-place helper being defined before the two-place Cond wrapper",
+      "counterexample": "The source calls Cond with three arguments before defining Cond as a two-place function. The recursive step must call the four-place helper hCond.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
+      "formula_policy": "One align environment changes exactly as registered; adjacent disclosure references are included in the net exception.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete arithmetization-of-syntax batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\fn{hCond}(s,y,0)&=y\\\\\\fn{hCond}(s,y,n+1)&=\\Gn{(}\\concat(s)_{n}\\concat\\Gn{\\lif}\\concat\\fn{Cond}(s,y,n)\\concat\\Gn{)}\\\\\\fn{Cond}(s,y)&=\\fn{hCond}(s,y,\\len{s})\\\\\\intertext{LOCALIZED$\\Prf[\\Gamma](x,y)$}\\Prf[\\Gamma](x,y)&\\defiff\\bexists{s<\\fn{sequenceBound}(x,x)}{(}\\\\&\\qquad(x)_{\\len{x}-1}=\\fn{Cond}(s,y)\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{(s)_i\\in\\Gamma}\\land{}\\\\&\\qquad\\fn{Deriv}(x)).\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{hCond}(s,y,0)&=y\\\\\\fn{hCond}(s,y,n+1)&=\\Gn{(}\\concat(s)_{n}\\concat\\Gn{\\lif}\\concat\\fn{hCond}(s,y,n)\\concat\\Gn{)}\\\\\\fn{Cond}(s,y)&=\\fn{hCond}(s,y,\\len{s})\\\\\\intertext{LOCALIZED$\\Prf[\\Gamma](x,y)$}\\Prf[\\Gamma](x,y)&\\defiff\\bexists{s<\\fn{sequenceBound}(x,x)}{(}\\\\&\\qquad(x)_{\\len{x}-1}=\\fn{Cond}(s,y)\\land{}\\\\&\\qquad\\bforall{i<\\len{s}}{(s)_i\\in\\Gamma}\\land{}\\\\&\\qquad\\fn{Deriv}(x)).\\end{align*}",
+          "$\\fn{hCond}$",
+          "$\\fn{hCond}$",
+          "$\\fn{Cond}$",
+          "$\\fn{Cond}$"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0280",
+    "OLP-0281",
+    "OLP-0282",
+    "OLP-0283",
+    "OLP-0284",
+    "OLP-0285"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete arithmetization-of-syntax source review; nine adopted corrections have adjacent Pashto disclosures and exact registered math-span deltas; every other formula and every terminology marker is identical"
+}

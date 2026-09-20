@@ -1,0 +1,334 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{pnd}
+\olsection{په طبيعي استنتاج کښې \usetoken{P}{derivation}}
+
+\begin{explain}
+د !!{derivation}s د حسابي کولو دپاره بايد !!{derivation}s د عددونو
+په توګه تمثيل کړو۔ ځکه چې !!{derivation}s د !!{formula}s داسې ونې
+دي چې هر استنتاج يوه يا دوه نښې لري، نو بازګشتي تمثيل تر ټولو څرګنده
+لار ده: يو !!{derivation} د يوې څوګونې په توګه تمثيلوو چې اجزا ئې د
+وروستي استنتاج مقدماتو ته د رسېدونکو سمدستي فرعي-!!{derivation}s
+شمېر، د دغو فرعي-!!{derivation}s تمثيلونه، پاې-!!{formula}، د وروستي
+استنتاج د ختمولو نښه، او يو داسې عدد دي چې د وروستي استنتاج ډول ښيي۔
+\end{explain}
+
+\begin{defn}
+  که $\delta$ په طبيعي استنتاج کښې !!a{derivation} وي، نو
+  $\Gn{\delta}$ په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \item
+    که $\delta$ يوازې له فرض~$!A$ څخه جوړ وي، نو $\Gn{\delta}$
+    دا دے: $\tuple{0,\Gn{!A},n}$۔ عدد~$n$ که دا يو
+    !!{undischarged} فرض وي، $0$ دے؛ او که نۀ، عددي نښه ده۔
+  \item
+    که $\delta$ په داسې استنتاج پاې ته رسېږي چې صفر، يو، دوه يا درې
+    مقدمات لري، نو $\Gn{\delta}$ په ترتيب له دې څخه يو دے:
+    \begin{align*}
+      & \tuple{0, \Gn{!A}, n, k}, \\
+      & \tuple{1, \Gn{\delta_1}, \Gn{!A}, n, k}, \\
+      & \tuple{2, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{!A}, n, k}, \text{ يا}\\
+      & \tuple{3, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{\delta_3}, \Gn{!A}, n,
+        k},
+    \end{align*}
+    دلته $\delta_1$، $\delta_2$ او $\delta_3$ هغه
+    فرعي-!!{derivation}s دي چې په~$\delta$ کښې د وروستي استنتاج پر
+    مقدمه يا مقدماتو پاې ته رسېږي؛ $!A$ په~$\delta$ کښې د وروستي
+    استنتاج پايله ده؛
+    $n$ د وروستي استنتاج د ختمولو نښه ده (که استنتاج هېڅ فرض نۀ
+    ختموي، $0$ ده)؛ او $k$ د لاندې جدول له مخې د وروستي استنتاج د
+    کارول شوې قاعدې له مخې ټاکل کېږي۔
+
+    \begin{tabular}{lccccccc}
+      \text{قاعده:} & \Intro{\land} & \Elim{\land} & \Intro{\lor} & \Elim{\lor} \\
+      $k$: & 1 & 2 & 3 & 4  \\[1.5ex]
+      \text{قاعده:} &  \Intro{\lif} & \Elim{\lif} & \Intro{\lnot} & \Elim{\lnot} \\
+      $k$: & 5 & 6 & 7 & 8 \\[1.5ex]
+      \text{قاعده:}  &  \FalseInt & \FalseCl & \Intro{\lforall} & \Elim{\lforall} \\
+      $k$: & 9 & 10 & 11 & 12 \\[1.5ex]
+      \text{قاعده:} & \Intro{\lexists} & \Elim{\lexists} & \Intro{\eq} & \Elim{\eq} \\
+      $k$: & 13 & 14 & 15 & 16
+    \end{tabular}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  دا ډېر ساده !!{derivation} وګورئ:
+  \begin{prooftree}
+    \AxiomC{$\Discharge{!A \land !B}{1}$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+    \DischargeRule{\Intro{\lif}}{1}
+    \UnaryInfC{$(!A \land !B) \lif !A$}
+  \end{prooftree}
+  د فرض ګوډل شمېره به
+  $d_0=\tuple{0,\Gn{!A \land !B},1}$ وي۔ د هغه !!{derivation} ګوډل
+  شمېره چې د~$\Elim{\land}$ پر پايله ختمېږي،
+  $d_1=\tuple{1,d_0,\Gn{!A},0,2}$ ده ($1$ ځکه چې
+  $\Elim{\land}$ يوه مقدمه لري؛ بيا د پايلې~$!A$ ګوډل شمېره؛ $0$
+  ځکه چې هېڅ فرض نۀ ختمېږي؛ او $2$ هغه عدد دے چې $\Elim{\land}$
+  کوډوي)۔ بيا د ټول !!{derivation} ګوډل شمېره
+  $\tuple{1,d_1,\Gn{((!A \land !B) \lif !A)},1,5}$ ده؛ يعنې
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{(!A \land !B)}, 1}, \Gn{!A}, 0, 2},
+    \Gn{((!A \land !B) \lif !A)}, 1, 5}.
+  \]
+\end{ex}
+
+\begin{explain}
+چې د !!{derivation}s پر يو تمثيل هوکړې ته ورسېدو، دا هم بايد وښيو
+چې د داسې !!{derivation}s ګوډل شمېرې په بنسټيز بازګشتي ډول اداره
+کولے شو، او د هغو اړين خاصيتونه او اړيکې هم بيانولے شو۔ ځينې عمليات
+ساده دي: د بېلګې په توګه، د !!a{derivation} له ګوډل شمېرې~$d$ څخه
+$\fn{EndFmla}(d)=(d)_{(d)_0+1}$ د هغه د پاې-!!{formula} ګوډل
+شمېره راکوي، $\fn{DischargeLabel}(d)=(d)_{(d)_0+2}$ د ختمولو نښه
+راکوي، او $\fn{LastRule}(d)=(d)_{(d)_0+3}$ هغه عدد راکوي چې د وروستي
+استنتاج ډول ښيي۔ ځينې نور عمليات ډېر ستونزمن دي۔ لږ تر لږه د هغو د
+ترسره کولو لار به راونغاړو۔ موخه دا ده چې وښيو اړيکه «$\delta$
+له~$\Gamma$ څخه د~$!A$ يو !!a{derivation} دے» د~$\delta$ او~$!A$
+د ګوډل شمېرو بنسټيزه بازګشتي اړيکه ده۔
+\end{explain}
+
+\begin{prop}
+  لاندې اړيکې بنسټيزې بازګشتي دي:
+  \begin{enumerate}
+  \item $!A$ په~$\delta$ کښې د نښې~$n$ لرونکي فرض په توګه راځي۔
+  \item په~$\delta$ کښې د نښې~$n$ لرونکي ټول فرضونه د~$!A$ په بڼه
+    دي (يعنې په~$\delta$ کښې د نښې~$n$ په کارولو فرض~$!A$
+    !!{discharge} کولے شو)۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  بايد وښيو چې د !!{formula}s د ګوډل شمېرو او د !!{derivation}s د
+  ګوډل شمېرو ترمنځ اړوندې اړيکې بنسټيزې بازګشتي دي۔
+  \begin{enumerate}
+  \item غواړو وښيو چې $\fn{Assum}(x,d,n)$ بنسټيزه بازګشتي ده؛ دا
+    هله صدق کوي چې $x$ د ګوډل شمېرې~$d$ لرونکي !!{derivation} د
+    نښې~$n$ لرونکي فرض ګوډل شمېره وي۔ دا هله سم دي چې د ګوډل شمېرې
+    $\tuple{0,x,n}$ لرونکے !!{derivation} د~$d$ يو
+    فرعي-!!{derivation} وي۔ پام وکړئ، زموږ د !!{derivation}s د کوډولو
+    لار د هغو ونو د کوډولو ځانګړے حالت دے چې په
+    \olref[cmp][rec][tre]{sec} کښې معرفي شوې؛ نو بنسټيزه بازګشتي
+    تابع $\fn{SubtreeSeq}(d)$ د~$d$ د ټولو فرعي-!!{derivation}s د
+    ګوډل شمېرو لړۍ (چې اوږدوالے ئې تر ټولو زيات~$d$ دے) راکوي۔ نو
+    داسې تعريفولے شو:
+    \[
+    \fn{Assum}(x, d, n) \defiff \bexists{i<d}{(\fn{SubtreeSeq}(d))_i =
+      \tuple{0, x, n}}.
+    \]
+  \item غواړو وښيو چې $\fn{Discharge}(x,d,n)$ بنسټيزه بازګشتي ده؛
+    دا هله صدق کوي چې د ګوډل شمېرې~$d$ لرونکي !!{derivation} ټول
+    نښه~$n$ لرونکي فرضونه د ګوډل شمېرې~$x$ لرونکي !!{formula} وي۔
+    خو دا اړيکه هله صدق کوي چې
+    $\bforall{y<d}{(\fn{Assum}(y,d,n)\lif y=x)}$۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:followsby}
+  خاصيت $\fn{Correct}(d)$، چې هله صدق کوي چې د ګوډل شمېرې~$d$
+  لرونکي !!{derivation}~$\delta$ وروستے استنتاج سم وي، بنسټيز
+  بازګشتي دے۔
+\end{prop}
+
+\begin{proof}
+  دلته د استنتاج د هرې قاعدې~$R$ دپاره بايد وښيو چې اړيکه
+  $\fn{FollowsBy}_R(d)$ بنسټيزه بازګشتي ده؛
+  $\fn{FollowsBy}_R(d)$ هله صدق کوي چې $d$ د
+  !!{derivation}~$\delta$ ګوډل شمېره وي او د~$\delta$
+  پاې-!!{formula} د~$R$ په سم پلي کولو د~$\delta$ د سمدستي
+  فرعي-!!{derivation}s له پاې-فارمولونو څخه راشي۔
+
+  يو ساده حالت د \Intro{\land} قاعده ده۔ که $\delta$ په يوه سم
+  $\Intro{\land}$ استنتاج ختم شي، داسې ښکاري:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+
+    \RightLabel{\Intro\land}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  بيا د~$\delta$ ګوډل شمېره~$d$ دا ده:
+  $\tuple{2,d_1,d_2,\Gn{(!A \land !B)},0,k}$، چې
+  $\fn{EndFmla}(d_1)=\Gn{!A}$، $\fn{EndFmla}(d_2)=\Gn{!B}$،
+  $n=0$ او $k=1$ دي۔ نو $\fn{FollowsBy}_{\Intro\land}(d)$ داسې
+  تعريفولے شو:
+  \begin{multline*}
+    (d)_0 = 2 \land \fn{DischargeLabel}(d) = 0 \land \fn{LastRule}(d) = 1 \land {}\\
+    \fn{EndFmla}(d) = {}\\
+    \Gn{(} \concat \fn{EndFmla}((d)_1) \concat \Gn{\land}
+    \concat \fn{EndFmla}((d)_2) \concat \Gn{)}.
+  \end{multline*}
+
+  بله ساده بېلګه د $\Intro\eq$ قاعده ده۔ دا هېڅ مقدمه نۀ لري، نو د
+  فرضونو په شان $(d)_0=0$ دے۔ دا د ختمولو نښه هم نۀ لري؛ يعنې $n=0$
+  دے۔ خو $!A$ بايد د کوم تړلي ترم~$t$ دپاره د~$\eq[t][t]$ په بڼه
+  وي۔ يو بنسټيز بازګشتي تعريف دا دے:
+  \begin{multline*}
+    (d)_0 = 0 \land \fn{DischargeLabel}(d) = 0 \land {}\\
+    \bexists{t<d}{(\fn{ClTerm}(t) \land
+      \fn{EndFmla}(d) = {}\\
+      \Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)})}.
+  \end{multline*}
+
+  د يوې لا پېچلې بېلګې دپاره $\fn{FollowsBy}_{\Intro{\lif}}(d)$ هله
+  صدق کوي چې د~$\delta$ پاې-!!{formula} د~$(!A\lif !B)$ په بڼه وي،
+  د~$\delta_1$ پاې-!!{formula} هم~$!B$ وي، او په~$\delta$ کښې هر
+  نښه~$n$ لرونکے فرض د~$!A$ په بڼه وي۔ دا په بنسټيز بازګشتي ډول
+  داسې بيانولے شو:
+  \begin{multline*}
+    (d)_0 = 1 \land {}\\
+    \bexists{a<d}{(\fn{Discharge}(a, (d)_1, \fn{DischargeLabel}(d)) \land {}}\\
+      \fn{EndFmla}(d) = (\Gn{(} \concat a \concat \Gn{\lif}
+      \concat \fn{EndFmla}((d)_1) \concat \Gn{)}))
+  \end{multline*}
+  (دلته $a$ د~$!A$ ګوډل شمېره وګڼئ)۔
+
+  د بلې بېلګې دپاره \Intro{\lexists} وګورئ۔ دلته په~$\delta$ کښې
+  وروستے استنتاج هله سم دے چې داسې !!a{formula}~$!A$، تړلے ترم~$t$
+  او !!a{variable}~$x$ شته چې $\Subst{!A}{t}{x}$ د
+  !!{derivation}~$\delta_1$ پاې-!!{formula} وي او
+  $\lexists[x][!A]$ د وروستي استنتاج پايله وي۔ نو
+  $\fn{FollowsBy}_{\Intro{\lexists}}(d)$ هله صدق کوي چې
+  \begin{multline*}
+    (d)_0 = 1 \land \fn{DischargeLabel}(d) = 0 \land {} \\
+    \bexists{a < d}{\bexists{x<d}{\bexists{t<d}{
+          (\fn{ClTerm}(t) \land \fn{Var}(x)  \land {}}}}\\
+    \fn{Subst}(a,t,x) = \fn{EndFmla}((d)_1) \land
+    \fn{EndFmla}(d) = (\Gn{\lexists} \concat x \concat a)).
+  \end{multline*}
+
+  بيا $\fn{Correct}(d)$ داسې تعريفوو:
+  \begin{multline*}
+    \fn{Sent}(\fn{EndFmla}(d)) \land {}\\
+    [(\fn{LastRule}(d) = 1 \land
+    \fn{FollowsBy}_{\Intro\land}(d)) \lor \dots \lor {}\\
+    (\fn{LastRule}(d) = 16 \land \fn{FollowsBy}_{\Elim\eq}(d)) \lor {}\\
+    \bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}].
+  \end{multline*}
+  لومړۍ کرښه باوري کوي چې د~$d$ پاې-!!{formula} يوه جمله ده۔ وروستۍ
+  کرښه هغه حالت رانغاړي چې $d$ يوازې يو فرض وي۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-079):} سرچينې د قاعدو او فرض
+  د فصل د ګروپ قوسونه پرېښي وو، نو د جملې شرط يوازې پر لومړي
+  بديل پلي کېده۔ دلته ټول بديلونه د هماغه $\fn{Sent}$ شرط لاندې
+  ګروپ شوي دي، لکه چې ورپسې تشريح ئې غواړي۔
+\end{proof}
+
+\begin{prob}
+  لاندې خاصيتونه د \olref[inc][art][pnd]{prop:followsby} په څېر
+  تعريف کړئ:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Elim{\lif}}(d)$؛
+  \item $\fn{FollowsBy}_{\Elim{\eq}}(d)$؛
+  \item $\fn{FollowsBy}_{\Elim{\lor}}(d)$؛
+  \item $\fn{FollowsBy}_{\Intro{\lforall}}(d)$۔
+  \end{enumerate}
+  د وروستي خاصيت دپاره دا هم بايد وښيئ چې په بنسټيز بازګشتي ډول
+  ازمويلے شئ چې د ګوډل شمېرې~$d$ لرونکي !!{derivation} وروستے
+  استنتاج د ځانګړي متغير شرط پوره کوي؛ يعنې د
+  $\Intro{\lforall}$ استنتاج ځانګړے متغير~$a$ نۀ د~$d$ په
+  پاې-!!{formula} کښې راځي او نۀ د~$d$ په يوه پرانيستي فرض کښې۔ د
+  دې دپاره د \olref[inc][art][pnd]{prop:openassum} بنسټيز بازګشتي
+  پريديکات~$\fn{OpenAssum}$ کارولے شئ۔
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  اړيکه $\fn{Deriv}(d)$، چې هله صدق کوي چې $d$ د يوه سم
+  !!{derivation}~$\delta$ ګوډل شمېره وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\delta$ هله سم دے چې هر استنتاج ئې د يوې قاعدې
+  سم پلي کول وي؛ يعنې د هغه هر فرعي-!!{derivation}s په سم استنتاج پاې
+  ته ورسېږي۔ نو $\fn{Deriv}(d)$ هله صدق کوي چې
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(d)}}{\fn{Correct}((\fn{SubtreeSeq}(d))_i)}
+  \]
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:openassum} اړيکه $\fn{OpenAssum}(z,d)$، چې هله صدق
+  کوي چې $z$ د ګوډل شمېرې~$d$ لرونکي !!{derivation}~$\delta$ د يوه
+  !!a{undischarged} فرض~$!A$ ګوډل شمېره وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  د يوه فرض پېښه هله !!{discharged} ده چې د نښې~$n$ سره د~$\delta$
+  په داسې فرعي-!!{derivation} کښې راشي چې د ختمولو په نښه~$n$ لرونکې
+  قاعده ختمېږي۔ نو $!A$ هله د~$\delta$ يو !!a{undischarged} فرض دے
+  چې لږ تر لږه يوه پېښه ئې په~$\delta$ کښې !!{discharged} نۀ وي۔
+  بايد پام وکړو: $\delta$ کېدے شي د~$!A$ دواړه !!{discharged} او
+  !!{undischarged} پېښې ولري۔
+
+  داسې لړۍ $\delta_0$، \dots، $\delta_k$ وګورئ چې
+  $\delta_0=\delta$، $\delta_k$ فرض $\Discharge{!A}{n}$ (د کوم~$n$
+  دپاره) وي، او $\delta_{i+1}$ د~$\delta_i$ سمدستي
+  فرعي-!!{derivation} وي۔ که داسې لړۍ موجوده وي چې په هغې کښې هېڅ
+  $\delta_i$ د ختمولو نښه~$n$ لرونکي استنتاج باندې نۀ ختمېږي، نو
+  $!A$ د~$\delta$ يو !!a{undischarged} فرض دے۔
+
+  بنسټيزه بازګشتي تابع $\fn{SubtreeSeq}(d)$ د~$\delta$ د ټولو
+  فرعي-!!{derivation}s د ګوډل شمېرو لړۍ راکوي۔ د~$\delta$ د
+  فرعي-!!{derivation}s د ګوډل شمېرو هره لړۍ د هغې يوه فرعي لړۍ ده۔
+  د فرعي لړۍ کېدل يوه بنسټيزه بازګشتي اړيکه ده:
+  $\fn{Subseq}(s,s')$ هله صدق کوي چې
+  $\bforall{i<\len{s}}{\lexists[j<\len{s'}][(s)_i=(s')_j]}$۔ د
+  سمدستي فرعي-!!{derivation} کېدل هم داسې دي:
+  $\fn{Subderiv}(d,d')$ هله صدق کوي چې
+  $\bexists{j<(d')_0}{d=(d')_{j+1}}$۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-080):} د سرچينې ازموينې
+  $(d')_j$ کاراوه، خو په همدې تعريف شوي کوډ کښې $(d')_0$ د سمدستي
+  فرعي-اشتقاقونو شمېر دے او د هغو کوډونه له شاخص~$1$ څخه
+  پيلېږي۔ دلته $j+1$ کارول شوے، څو لومړے عددي سرليک ونه نيسي او
+  وروستے فرعي-اشتقاق پرې نۀ ږدي۔
+  نو $\fn{OpenAssum}(z,d)$ داسې تعريفولے شو:
+  \begin{multline*}
+    \bexists{s<\fn{SubtreeSeq}(d)}{(\fn{Subseq}(s, \fn{SubtreeSeq}(d))
+      \land (s)_0 = d \land {}} \\
+    \bexists{n<d}{((s)_{\len{s} \tsub 1} = \tuple{0, z, n} \land {}}\\
+      \bforall{i<(\len{s} \tsub 1)}{(\fn{Subderiv}((s)_{i+1}, (s)_i) \land {}}\\
+      \fn{DischargeLabel}((s)_i) \neq n))).
+  \end{multline*}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:prf-prim-rec}
+  فرض کړئ $\Gamma$ د !!{sentence}s يو بنسټيز بازګشتي سټ دے۔ بيا
+  اړيکه $\Prf[\Gamma](x,y)$، چې وايي «$x$ له~$\Gamma$ کښې
+  !!{undischarged} فرضونو څخه د~$!A$ د !!a{derivation}~$\delta$ کوډ
+  دے او $y$ د~$!A$ ګوډل شمېره ده»، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ «$y\in\Gamma$» د بنسټيز بازګشتي
+  پريديکات~$R_\Gamma(y)$ په واسطه ورکول کېږي۔ بايد وښيو چې
+  $\Prf[\Gamma](x,y)$ بنسټيزه بازګشتي ده؛ دا اړيکه هله صدق کوي چې
+  $y$ د يوې جملې~$!A$ ګوډل شمېره وي، او $x$ د طبيعي استنتاج د داسې
+  !!{derivation} کوډ وي چې پاې-!!{formula} ئې~$!A$ او ټول
+  !!{undischarged} فرضونه ئې په~$\Gamma$ کښې وي۔
+
+  د \olref{prop:deriv} له مخې خاصيت $\fn{Deriv}(x)$، چې هله صدق کوي
+  چې $x$ په طبيعي استنتاج کښې د يوه سم !!{derivation}~$\delta$ ګوډل
+  شمېره وي، بنسټيز بازګشتي دے۔ نو $\Prf[\Gamma](x,y)$ داسې تعريفولے
+  شو:
+  \begin{align*}
+    \Prf[\Gamma](x, y) \defiff {}
+    & \fn{Deriv}(x) \land \fn{EndFmla}(x) = y \land {} \\
+    & \bforall{z < x}{(\fn{OpenAssum}(z, x) \lif R_\Gamma(z))}.
+  \end{align*}
+\end{proof}
+
+\end{document}

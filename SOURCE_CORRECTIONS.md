@@ -1990,3 +1990,84 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260920-INCOMPLETENESS-INTRODUCTION`
 - Treatment: uses the established represents terminology marker in four sentences without an extra trailing s.
 - Disclosure: `remove-four-redundant-English-inflection-suffixes-plus-adjacent-note`.
+
+## OLCMP-074
+
+- Unit: `OLP-0286`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` (841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b) at `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:86-89`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:91`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: removes the unmatched closing parenthesis after A from both copies of the encoded initial sequent.
+- Disclosure: `remove-two-stray-closing-parentheses-plus-adjacent-note`.
+
+## OLCMP-075
+
+- Unit: `OLP-0286`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` (841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b) at `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:97-105`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:112`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: uses EndSequent in the defining equation, matching every subsequent use in the section.
+- Disclosure: `standardize-EndSequent-name-plus-adjacent-note`.
+
+## OLCMP-076
+
+- Unit: `OLP-0286`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` (841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b) at `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:204-214`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:218`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: describes the end-sequent of p, the argument used by Correct and throughout the displayed definition.
+- Disclosure: `replace-d-with-p-in-explanatory-prose-plus-adjacent-note`.
+
+## OLCMP-077
+
+- Unit: `OLP-0286`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` (841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b) at `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:236-246`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:251`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: uses Deriv(p), matching the proposition, and closes the Correct application in the universal condition.
+- Disclosure: `replace-Deriv-d-with-p-and-close-Correct-plus-adjacent-note`.
+
+## OLCMP-078
+
+- Unit: `OLP-0286`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` (841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b) at `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:266-282`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:281`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: compares the sole right-side sentence code with y, the stated Gödel number of A.
+- Disclosure: `replace-right-side-x-with-y-plus-adjacent-note`.
+
+## OLCMP-079
+
+- Unit: `OLP-0287`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` (06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47) at `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:211-220`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:223`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: places every rule case and the assumption case under the common Sent(EndFmla(d)) requirement.
+- Disclosure: `group-entire-rule-or-assumption-disjunction-plus-adjacent-note`.
+
+## OLCMP-080
+
+- Unit: `OLP-0287`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` (06044a4b70f61e07629055bfc3cfb7a940ce5ccfc09efe1a5473e9c5e3af3d47) at `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-301`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:292`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: tests d against component j+1 because component zero stores the number of immediate subderivations.
+- Disclosure: `shift-subderivation-index-by-one-plus-adjacent-note`.
+
+## OLCMP-081
+
+- Unit: `OLP-0288`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` (6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb) at `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:119-140`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:139`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: binds the preceding-line index j below i and describes c, rather than a, as the constant bounded by the line-j formula code.
+- Disclosure: `bind-j-below-i-and-correct-constant-name-plus-adjacent-note`.
+
+## OLCMP-082
+
+- Unit: `OLP-0288`
+- Frozen source: `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` (6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb) at `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-208`
+- Pashto target: `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:211`
+- Audit: `PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX`
+- Treatment: recurses on hCond(s,y,n), matching the four-place helper being defined before the two-place Cond wrapper.
+- Disclosure: `replace-Cond-with-hCond-in-recursive-clause-plus-adjacent-note`.

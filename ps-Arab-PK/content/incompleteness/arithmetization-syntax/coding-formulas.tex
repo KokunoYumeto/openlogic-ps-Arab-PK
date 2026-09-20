@@ -1,0 +1,91 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{frm}
+\olsection{د \printtoken{P}{formula} کوډول}
+
+کله چې اړيکه $\fn{Term}(x)$ مو په بنسټيز بازګشتي ډول تعريف کړه، د
+هغې په کارولو د !!{formula}s اړونده اړيکه $\fn{Frm}(x)$ هم په
+بنسټيز بازګشتي ډول تعريفولے شو۔
+
+\begin{prop}
+هغه اړيکه $\fn{Atom}(x)$ چې هله صدق کوي چې $x$ د يوه اټومي
+!!{formula} ګوډل شمېره وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+عدد $x$ هله د يوه اټومي !!{formula} ګوډل شمېره ده چې له لاندې څخه
+يو حالت صدق وکړي:
+\begin{enumerate}
+\item داسې $n$، $j<x$ او $z<x$ شته چې د هر $i<n$ دپاره
+  $\fn{Term}((z)_i)$ وي او $x = $
+\[
+\Gn{\Obj P^n_j(} \concat \fn{flatten}(z) \concat \Gn{)}.
+\]
+\item داسې $z_1,z_2<x$ شته چې $\fn{Term}(z_1)$،
+  $\fn{Term}(z_2)$ وي، او $x = $
+\[
+\Gn{{\eq}(} \concat z_1 \concat \Gn{,} \concat z_2 \concat{\Gn{)}}.
+\]
+  \tagitem{prvFalse}{$x = \Gn{\lfalse}$۔}{}
+  \tagitem{prvTrue}{$x = \Gn{\ltrue}$۔}{}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:frm-primrec}
+هغه اړيکه $\fn{Frm}(x)$ چې هله صدق کوي چې $x$ د !!a{formula} ګوډل
+شمېره وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+د سمبولونو لړۍ~$s$ هله !!a{formula} ده چې د !!{formula} داسې
+جوړښتي لړۍ~$s_0$، \dots، $s_{k-1}=s$ موجوده وي چې ثبتوي~$s$ د
+جوړښتي قاعدو له مخې له اټومي !!{formula}s څخه څنګه جوړ شوے دے۔ د هر
+$s_i$ کوډ (او په حقيقت کښې د لړۍ $\tuple{s_0, \dots, s_{k-1}}$ کوډ
+هم) د~$s$ له کوډ~$x$ څخه وړوکے دے۔
+\end{proof}
+
+\begin{prob}
+د \olref[inc][art][frm]{prop:frm-primrec} تفصيلي ثبوت د
+\olref[inc][art][trm]{prop:term-primrec} د لومړي ثبوت په څېر ورکړئ۔
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:freeocc-primrec}
+اړيکه $\fn{FreeOcc}(x,z,i)$، چې هله صدق کوي چې د ګوډل شمېرې~$x$
+لرونکي فارمول $i$-م سمبول د ګوډل شمېرې~$z$ لرونکي متغير يوه ازاده
+پېښه وي، بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+تمرین۔
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:freeocc-primrec} ثابت کړئ۔ دا حقيقت
+کارولے شئ چې د !!a{formula} هر هغه فرعي تار چې پخپله !!a{formula}
+وي، د هغه فرعي-!!{formula} دے۔
+\end{prob}
+
+\begin{prop}
+هغه خاصيت $\fn{Sent}(x)$ چې هله صدق کوي چې $x$ د !!a{sentence}
+ګوډل شمېره وي، بنسټيز بازګشتي دے۔
+\end{prop}
+
+\begin{proof}
+!!{sentence} داسې !!a{formula} دے چې د !!{variable}s ازادې پېښې
+نۀ لري۔ نو $\fn{Sent}(x)$ هله صدق کوي چې
+\begin{multline*}
+\bforall{i<\len{x}}{\bforall{z<x}{}}\\
+(\bexists{j<z}{z=\Gn{\Obj v_j}} \lif \lnot\fn{FreeOcc}(x,z,i)).
+\end{multline*}
+\end{proof}
+
+
+\end{document}

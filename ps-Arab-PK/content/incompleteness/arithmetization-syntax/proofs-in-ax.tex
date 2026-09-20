@@ -1,0 +1,221 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-ax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{pax}
+\olsection{بديهي \usetoken{P}{derivation}}
+
+\begin{explain}
+د بديهي !!{derivation}s د حسابي کولو دپاره بايد !!{derivation}s د
+عددونو په توګه تمثيل کړو۔ ځکه چې !!{derivation}s يوازې د
+!!{formula}s لړۍ دي، نو څرګنده لار دا ده چې هر !!{derivation} د هغه
+د !!{formula}s د کوډونو د لړۍ په کوډ سره کوډ کړو۔
+\end{explain}
+
+\begin{defn}
+که $\delta$ داسې بديهي !!{derivation} وي چې له !!{formula}s
+$!A_1$، \dots،~$!A_n$ څخه جوړ وي، نو $\Gn{\delta}$ دا دے:
+\[
+\tuple{\Gn{!A_1}, \dots, \Gn{!A_n}}.
+\]
+\end{defn}
+
+\begin{ex}
+  دا ډېر ساده !!{derivation} وګورئ:
+  \begin{derivation}
+  1. & $!B \lif (!B \lor !A)$ \\
+  2. & $(!B \lif (!B \lor !A)) \lif (!A  \lif (!B \lif (!B \lor !A)))$\\
+  3. & $!A  \lif (!B \lif (!B \lor !A))$
+  \end{derivation}
+  د دې !!{derivation} ګوډل شمېره به دا وي:
+  \begin{align*}
+  \openTuple\,
+    & \Gn{!B \lif (!B \lor !A)}, \\
+    &\Gn{(!B \lif (!B \lor !A)) \lif (!A  \lif (!B \lif (!B \lor !A)))},\\
+    & \Gn{!A  \lif (!B \lif (!B \lor !A))} \,\closeTuple.
+  \end{align*}
+\end{ex}
+
+\begin{explain}
+چې د !!{derivation}s پر يو تمثيل هوکړې ته ورسېدو، دا هم بايد وښيو
+چې داسې !!{derivation}s په بنسټيز بازګشتي ډول اداره کولے شو، او د
+هغو اړين خاصيتونه او اړيکې هم په همدې ډول بيانولے شو۔ ځينې عمليات
+ساده دي: د بېلګې په توګه، د !!a{derivation} له ګوډل شمېرې~$d$ څخه
+$(d)_{\len{d}-1}$ د هغه د پاې-!!{formula} ګوډل شمېره راکوي۔ ځينې
+نور عمليات ډېر ستونزمن دي۔ لږ تر لږه د هغو د ترسره کولو لار به
+راونغاړو۔ موخه دا ده چې وښيو اړيکه «$\delta$ له~$\Gamma$ څخه د~$!A$
+يو !!a{derivation} دے» د~$\delta$ او~$!A$ په ګوډل شمېرو کښې
+بنسټيزه بازګشتي ده۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:followsby}
+لاندې اړيکې بنسټيزې بازګشتي دي:
+\begin{enumerate}
+\item $!A$ يو بديهي اصل دے۔
+\item په~$\delta$ کښې $i$-مه کرښه په مودوس پوننس توجيه شوې ده۔
+\item په~$\delta$ کښې $i$-مه کرښه په \QR{} توجيه شوې ده۔
+\item $\delta$ يو سم !!{derivation} دے۔
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+بايد وښيو چې د !!{formula}s د ګوډل شمېرو او د !!{derivation}s د
+ګوډل شمېرو ترمنځ اړوندې اړيکې بنسټيزې بازګشتي دي۔
+\begin{enumerate}
+\item موږ ته د بديهي شېماوو يو ټاکلے لست راکړل شوے، او $!A$ هله يو
+  بديهي اصل دے چې د دې شېماوو څخه د يوې په ورکړې بڼه وي۔ ځکه چې د
+  شېماوو لست متناهي دے، بس ده چې د هرې بديهي شېما دپاره په بنسټيز
+  بازګشتي ډول وازميوو چې $!A$ د هغې په بڼه دے که نۀ۔ د بېلګې په
+  توګه دا بديهي شېما وګورئ:
+  \[
+  !B \lif (!C \lif !B).
+  \]
+  $!A$ هله د دې بديهي شېما يوه بېلګه ده چې داسې !!{formula}s $!B$
+  او $!C$ شته چې $!A$ د «$($»، بيا $!B$، بيا «$\lif$»، بيا «$($»،
+  بيا $!C$، بيا «$\lif$»، بيا $!B$، او بيا «$))$» په نښلولو ترلاسه
+  شي۔ د~$!A$ د ګوډل شمېرې~$n$ اړوند خاصيت ازمويلے شو، ځکه د لړيو
+  نښلول بنسټيز بازګشتي دي، او د~$!B$ او~$!C$ ګوډل شمېرې بايد د~$!A$
+  له ګوډل شمېرې څخه وړې وي؛ ځکه کله چې اړيکه صدق کوي، $!B$ او $!C$
+  دواړه د~$!A$ فرعي-!!{formula}s دي۔ نو داسې تعريفولے شو:
+  \begin{multline*}
+  \fn{IsAx}_{!B \lif (!C \lif !B)}(n) \defiff \bexists{b< n}{
+    \bexists{c < n}{(\fn{Sent}(b) \land \fn{Sent}(c) \land {}}}\\ n =
+  \Gn{(} \concat b \concat \Gn{\lif} \concat \Gn{(} \concat c \concat
+  \Gn{\lif} \concat b \concat \Gn{))}).
+  \end{multline*}
+  که د هرې بديهي شېما دپاره داسې تعريف ولرو، د هغو د فصل خاصيت
+  $\fn{IsAx}(n)$ تعريفوي: «$n$ د يوه بديهي اصل ګوډل شمېره ده»۔
+\item په~$\delta$ کښې $i$-مه کرښه هله په مودوس پوننس توجيه شوې ده
+  چې داسې کرښې $j$ او $k<i$ شته چې د~$j$ پر کرښه !!{sentence} کوم
+  فارمول~$!A$، د~$k$ پر کرښه جمله $!A\lif !B$، او د~$i$ پر کرښه
+  جمله~$!B$ وي۔
+  \begin{multline*}
+    \fn{MP}(d, i) \defiff \bexists{j < i}{\bexists{k < i}{}}\\
+    (d)_k = \Gn{(} \concat (d)_j
+      \concat \Gn{\lif} \concat (d)_i \concat \Gn{)}
+  \end{multline*}
+  ځکه محدود کمیت ايښودنه، نښلول او~$=$ بنسټيز بازګشتي دي، نو دا
+  يوه بنسټيزه بازګشتي اړيکه تعريفوي۔
+\item په~$\delta$ کښې يوه کرښه هله په \QR{} توجيه شوې ده چې د
+  $!B\lif\lforall[x][!A(x)]$ په بڼه وي، يوه مخکښې کرښه د کوم
+  !!{constant}~$c$ دپاره $!B\lif !A(c)$ وي، او $c$ په~$!B$ کښې نۀ
+  راځي۔ دا هله کېږي چې:
+  \begin{enumerate}
+  \item داسې !!a{sentence}~$!B$ وي؛ او
+  \item داسې !!a{formula}~$!A(x)$ وي چې يوازې يو ازاد متغير~$x$
+    ولري؛ داسې چې
+  \item کرښه~$i$، $!B\lif\lforall[x][!A(x)]$ ولري؛
+  \item کومه کرښه $j<i$ د کوم ثابت~$c$ دپاره
+    $!B\lif\Subst{!A}{c}{x}$ ولري؛ او
+  \item $c$ په~$!B$ کښې نۀ راځي۔
+  \end{enumerate}
+  دا ټول په بنسټيز بازګشتي ډول ازمويلے شو، ځکه د~$!B$، $!A(x)$ او
+  $x$ ګوډل شمېرې د~$i$ پر کرښه د فارمول له ګوډل شمېرې څخه وړې دي،
+  او د~$c$ ګوډل شمېره د~$j$ پر کرښه د فارمول له ګوډل شمېرې څخه
+  وړه ده:
+  \begin{multline*}
+    \fn{QR}_1(d, i) \defiff \bexists{j<i}{}\bexists{b < (d)_i}{\bexists{x <
+        (d)_i}{\bexists{a < (d)_i}{\bexists{c < (d)_j}{(}}}}
+    \\ \fn{Var}(x) \land \fn{Const}(c) \land {} \\
+    (d)_i = \Gn{(} \concat
+    b \concat \Gn{\lif} \concat \Gn{\lforall} \concat x \concat a
+    \concat \Gn{)} \land {}\\
+    (d)_j = \Gn{(} \concat b \concat
+    \Gn{\lif} \concat \fn{Subst}(a,c,x) \concat \Gn{)} \land {}\\ \fn{Sent}(b)
+    \land \fn{Sent}(\fn{Subst}(a,c,x)) \land {} \bforall{k <
+      \len{b}}{(b)_k \neq (c)_0})
+  \end{multline*}
+  دلته فرض کوو چې $c$ او $x$ په ترتيب د ثابت او متغير ګوډل شمېرې
+  دي چې د ترمونو په توګه ورته کتل شوي (يعنې د هغو سمبول-کوډونه نۀ
+  دي)۔ دا چې $x$ د~$!A(x)$ يوازينے ازاد متغير دے، په دې ازميوو چې
+  $\Subst{!A(x)}{c}{x}$ يوه !!a{sentence} ده؛ او دا چې $c$ په~$!B$
+  کښې نۀ راځي، په دې شرط باوروو چې د~$!B$ هر سمبول له~$c$ څخه بېل
+  وي۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-081):} سرچينې د مخکښې کرښې
+  شاخص~$j$ کاراوه خو $j<i$ ئې کمیت ايښودلے نۀ و، او ورپسې تشريح کښې
+  ئې په تېروتنه د~$a$ پر ځاے د ثابت~$c$ حد ياد کړے و۔ دلته ورک
+  محدود کمیت ورزيات او تشريح له ښودل شوي شرط سره برابره شوې ده۔
+
+  د \QR{} بله بڼه د تمرین دپاره پرېږدو۔
+\item $d$ هله د يوه سم !!{derivation} ګوډل شمېره ده چې هره کرښه ئې
+  بديهي اصل وي، يا په مودوس پوننس يا~\QR{} توجيه شوې وي۔ نو:
+  \[
+  \fn{Deriv}(d) \defiff \bforall{i < \len{d}}{(\fn{IsAx}((d)_i) \lor
+    \fn{MP}(d,i) \lor \fn{QR}(d, i))}
+  \]
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+لاندې اړيکې د \olref[inc][art][pax]{prop:followsby} په څېر تعريف
+کړئ:
+\begin{enumerate}
+\item $\fn{IsAx}_{!A \lif (!B \lif (!A \land !B))}(n)$؛
+\item $\fn{IsAx}_{\lforall[x][!A(x)] \lif !A(t)}(n)$؛
+\item $\fn{QR}_{2}(d, i)$ (د \QR{} د بلې بڼې دپاره)۔
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+فرض کړئ $\Gamma$ د !!{sentence}s يو بنسټيز بازګشتي سټ دے۔ بيا
+اړيکه $\Prf[\Gamma](x,y)$، چې وايي «$x$ له~$\Gamma$ څخه د~$!A$ د
+!!a{derivation}~$\delta$ کوډ دے او $y$ د~$!A$ ګوډل شمېره ده»،
+بنسټيزه بازګشتي ده۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ «$y\in\Gamma$» د بنسټيز بازګشتي
+پريديکات~$R_\Gamma(y)$ په واسطه ورکول کېږي۔ بايد وښيو چې اړيکه
+$\Prf[\Gamma](x,y)$ بنسټيزه بازګشتي ده؛
+$\Prf[\Gamma](x,y)$ هله صدق کوي چې
+$y$ د !!a{sentence}~$!A$ ګوډل شمېره وي او $x$ له~$\Gamma$ څخه
+د~$!A$ د !!a{derivation} کوډ وي۔
+
+د تېرې قضيې له مخې خاصيت $\fn{Deriv}(x)$، چې هله صدق کوي چې $x$ د
+يوه سم !!{derivation}~$\delta$ کوډ وي، بنسټيز بازګشتي دے۔ خو هغه
+تعريف سټ~$\Gamma$ د !!{derivation} د کرښو د توجيه د يوې اضافي لارې
+په توګه په پام کښې نۀ و نيولے۔ زموږ بنسټيز بازګشتي ازموينې چې يوه
+کرښه په \QR{} توجيه شوې که نۀ، دا شرط هم پرېښے و چې ثابت~$c$ ته په
+$\Gamma$ کښې د راتلو اجازه نشته۔ تعريف داسې سمولے شو چې $\Gamma$
+نېغ په نېغه په پام کښې ونيسي، خو د $\fn{Deriv}$ او د استنتاج د قضيې
+کارول اسانه دي۔ $\Gamma\Proves !A$ هله صدق کوي چې د !!{sentence}s
+داسې کوم متناهي لست $!B_1$، \dots، $!B_n\in\Gamma$ وي چې
+$\{!B_1,\dots,!B_n\}\Proves !A$۔ او د استنتاج د قضيې له مخې دا هله
+سم دي چې
+$\Proves(!B_1\lif(!B_2\lif\cdots(!B_n\lif !A)\cdots))$ وي۔ دا چې
+د ګوډل شمېرې~$z$ لرونکې !!a{sentence} په دې بڼه ده که نۀ، په
+بنسټيز بازګشتي ډول ازمويلے شو۔ نو $x$ له~$\Gamma$ څخه د ګوډل
+شمېرې~$y$ لرونکې !!{sentence} د !!a{derivation} د ګوډل شمېرې په توګه
+نۀ اخلو، بلکې $x$ له~$\emptyset$ څخه د پورته بڼې د يوه ځالي شرطي د
+!!a{derivation} ګوډل شمېره اخلو۔
+
+لومړے، که د !!{sentence}s يوه لړۍ ولرو، د ټولو دغو جملو په مقدماتو
+او د يوې ورکړې !!{sentence} په تالي سره شرطي په بنسټيز بازګشتي ډول
+جوړولے شو:
+\begin{align*}
+  \fn{hCond}(s, y, 0) & = y \\
+  \fn{hCond}(s, y, n+1) & = \Gn{(} \concat (s)_{n} \concat \Gn{\lif}
+  \concat \fn{hCond}(s, y, n) \concat \Gn{)}\\
+  \fn{Cond}(s, y) & = \fn{hCond}(s, y, \len{s})\\
+  \intertext{نو $\Prf[\Gamma](x,y)$ داسې تعريفولے شو:}
+  \Prf[\Gamma](x, y) & \defiff \bexists{s < \fn{sequenceBound}(x,x)}{(} \\
+  &\qquad (x)_{\len{x}-1} = \fn{Cond}(s,y) \land {} \\
+  &\qquad\bforall{i<\len{s}}{(s)_i \in \Gamma} \land {} \\
+  &\qquad\fn{Deriv}(x)).
+\end{align*}
+\textbf{د ژباړې د نسخې سمون (OLCMP-082):} سرچينې د
+$\fn{hCond}$ په بازګشتي معادله کښې پر ښي لوري $\fn{Cond}$ کاراوه،
+سره له دې چې $\fn{Cond}$ يوازې په ورپسې کرښه د بشپړې مرستندويې تابع
+له لارې تعريفېږي۔ دلته بازګشتي غږ بېرته $\fn{hCond}$ ته شوے دے۔
+د~$s$ حد له دې څخه راځي چې هر $(s)_i$ د !!{derivation} د وروستۍ
+کرښې د يوه فرعي-!!{formula} ګوډل شمېره ده؛ يعنې له
+$(x)_{\len{x}-1}$ څخه وړه ده۔ د مقدماتو~$!B \in \Gamma$ شمېر،
+يعنې د~$s$ اوږدوالے، د~$x$ د وروستۍ کرښې له اوږدوالي څخه کم دے۔
+\end{proof}
+
+\end{document}

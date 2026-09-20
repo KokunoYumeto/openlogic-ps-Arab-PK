@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 151 high-priority entries from the complete 385-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 154 high-priority entries from the complete 397-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -730,6 +730,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 10,18; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 10,13,18,37,39; page: pending stable pagination in a reader containing this unit
   - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 13,92,94,126,138; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) 13,91,93,122,133; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) 17,18,22; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) 17,18,23; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -849,6 +850,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0220; Sequences; `content/computability/recursive-functions/sequences.tex` source line(s) line pending; `ps-Arab-PK/content/computability/recursive-functions/sequences.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CEILING
 
@@ -892,6 +894,8 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 36,37,40; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) 10,30,33,34; page: pending stable pagination in a reader containing this unit
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 40,44,47,49; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 37,40,43,44,53; page: pending stable pagination in a reader containing this unit
   - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 39; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 39; page: pending stable pagination in a reader containing this unit
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 31,35,45,50,53; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 28,32,35,36,37,41,42,45,46,48; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) 19,20,26,32,35,47,49,51,53,60,61,62,63,64,70,74,75,79,85,94,95,97,98,101,102,103; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) 10,20,21,25,29,32,62,64,65,75,76,86; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARITY
 
@@ -1199,6 +1203,8 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0129; Complete Consistent Sets of \usetoken{P}{sentence}; `content/first-order-logic/completeness/complete-consistent-sets.tex` source line(s) 38; `ps-Arab-PK/content/first-order-logic/completeness/complete-consistent-sets.tex` target line(s) 38,39,43; page: pending stable pagination in a reader containing this unit
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 135,178; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 118,157,178,182,188; page: pending stable pagination in a reader containing this unit
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) 13,18; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 13,18; page: pending stable pagination in a reader containing this unit
+  - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 47,79,85,86,89; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROP-SEMANTICS
 
@@ -1266,6 +1272,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0146; Substitution; `content/first-order-logic/introduction/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0158; Substitution; `content/first-order-logic/syntax-and-semantics/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-AXIOM
 
@@ -1301,6 +1308,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0180; Modal Logics; `content/first-order-logic/beyond/modal-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/modal-logics.tex` target line(s) 68; page: pending stable pagination in a reader containing this unit
   - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 124,129,130,177,186,189,192,196,204; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 48,109,110,115; page: pending stable pagination in a reader containing this unit
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 214; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 210; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 71,74,75,79,94; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 59,71,92,146; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-FORMS
 
@@ -1452,6 +1460,9 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 21,23,28,31,43,50,53,80,96; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 21,26,45,51,54,78,94; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,16,24,50,56,59,78,90,97,105,107,110,120,123; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,15,16,54,66,97,98,124,126; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 3,42,72,78,117,140,151,215,240,248,259,284; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 42,183,219,252,254,283; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 3,65,71,112,137,146,156,167,228,255,263,272,303,314,331; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 294,296; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 3,66,150,169,214; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1557,6 +1568,10 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0112; fol; `content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0113; Rules and \usetoken{P}{derivation}; `content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex` source line(s) 62,77; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex` target line(s) 64,80; page: pending stable pagination in a reader containing this unit
   - OLP-0116; Examples of \usetoken{P}{derivation}; `content/first-order-logic/axiomatic-deduction/proving-things.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proving-things.tex` target line(s) 17,20,28,95,105; page: pending stable pagination in a reader containing this unit
+  - OLP-0280; inc; `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 27,28,30,37,39,42,45,46,79,80,82,84,86,88,89,99,104,118,119,120,121,134,156,157,158,160,176,177,178,185,186,212,213,254,264,269,271,272,274; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 14,17,26,35,79,93,101,108,124,140,142,161,162,180,181,182,188,190,215,216,217,219,235,258,266,270,276,278,285; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 20,45,46,72,76,105,118,180,193,244,273,275,281,284,285,318,324; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 10,23,27,29,44,70,75,101,102,103,114,128,176,189,222,223,242,265,269,271,277,281,309,311,316,319,321,324; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 60,97,144; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 60,93,133,146,165,172; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-STRUCTURE
 
@@ -1576,6 +1591,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0076; \usetoken{P}{derivation} with Quantifiers; `content/first-order-logic/sequent-calculus/proving-things-quant.tex` source line(s) 23; `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things-quant.tex` target line(s) 23,60; page: pending stable pagination in a reader containing this unit
   - OLP-0077; Proof-Theoretic Notions; `content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex` source line(s) 66,84; `ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex` target line(s) 70,90; page: pending stable pagination in a reader containing this unit
   - OLP-0081; Soundness; `content/first-order-logic/sequent-calculus/soundness.tex` source line(s) 62; `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex` target line(s) 66,74,77,115,150,181,188,225,260,284,303,316,329,334,337,339; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 37,79,118; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 17,40,42,83; page: pending stable pagination in a reader containing this unit
 
 ## TERM-QUANTIFIER-RULES
 
@@ -1648,6 +1664,8 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0100; Propositional Rules; `content/first-order-logic/tableaux/propositional-rules.tex` source line(s) 77,81,86,90; `ps-Arab-PK/content/first-order-logic/tableaux/propositional-rules.tex` target line(s) 77; page: pending stable pagination in a reader containing this unit
   - OLP-0105; Proof-Theoretic Notions; `content/first-order-logic/tableaux/proof-theoretic-notions.tex` source line(s) 117; `ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0106; \usetoken{S}{derivability} and Consistency; `content/first-order-logic/tableaux/provability-consistency.tex` source line(s) 33,118,133,141; `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 64,221; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 234,235; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 240,241; page: pending stable pagination in a reader containing this unit
 
 ## TERM-DERIVATION-SEARCH
 
@@ -1870,6 +1888,10 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 1,20,88,94,110,114,116,119,124,126,127,149,151,178,179,182,183,186,187,190,196,199,202,204,205,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 17,23,27,45,48,67,70,88,111,115,117,128,151,153,163,184,185,190,199,205,207,211,214; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) 11,15,17,19,21,24,26,40,41,50,53,62,63,67,68,87; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) 21,25; page: pending stable pagination in a reader containing this unit
   - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 13,14,27,39,41,50,51,53,54,70,76,81,85,114,126,140,168,177,181,184,191; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 13,30,38,39,207; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) 17,47,48,75,76,77,91; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) 12,17,23,47,76,77,79,92; page: pending stable pagination in a reader containing this unit
+  - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 13,14,19,23,24,27,39,44,46,50,51,62,79,86,88,92; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) 10,13,14,16,18,22,23,38,42,43,50,60,74,77,81,82,83,84; page: pending stable pagination in a reader containing this unit
+  - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 3,10,14,18,22,43,47,48,49,64,65,74,75,80,84,85; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 17,22,49,62,71; page: pending stable pagination in a reader containing this unit
+  - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) 13,15,44,45,46; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) 13,15,43,44,50; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -1889,6 +1911,7 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0163; Satisfaction of \article{formula} \printtoken{S}{formula}   in \article{structure} \printtoken{S}{structure}; `content/first-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 36,38,41,42,48,49,53,54,60,75,76,77,82,83,88,89,90,98,104,153,168,190,191,232,233,339,340,417; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 33,35,38,39,45,46,48,49,56,69,70,71,73,74,78,79,80,84,85,86,93,94,95,100,151,191,192,201,210,234,235,236,246,247,347,348,368,377,385,402; page: pending stable pagination in a reader containing this unit
   - OLP-0164; Variable Assignments; `content/first-order-logic/syntax-and-semantics/assignments.tex` source line(s) 3,11,14,16,20,23,25,203,207,210,215,217,221,222,223,232,248,264,266,339; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex` target line(s) 11,14,17,18,20,21,23,205,206,218,219,220,221,222,228,229,234,235,236,265,282; page: pending stable pagination in a reader containing this unit
   - OLP-0165; Extensionality; `content/first-order-logic/syntax-and-semantics/extensionality.tex` source line(s) 17,18,32,66,107,125,129; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex` target line(s) 16,17,31,69,113,130,135; page: pending stable pagination in a reader containing this unit
+  - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-STRUCTURAL-INDUCTION
 
@@ -2253,6 +2276,13 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 29,53,61; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
   - OLP-0232; The $s$-$m$-$n$ Theorem; `content/computability/computability-theory/s-m-n.tex` source line(s) 39; `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex` target line(s) 21,39; page: pending stable pagination in a reader containing this unit
   - OLP-0239; equiv-ce-defs; `content/computability/computability-theory/equiv-ce-defs.tex` source line(s) 25,33,46,68; `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex` target line(s) 53,77; page: pending stable pagination in a reader containing this unit
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 49,51,57,71; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 64; page: pending stable pagination in a reader containing this unit
+  - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 20,29,40,56,57,74,81,98,102,106; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) 54,72,78,94,98,102; page: pending stable pagination in a reader containing this unit
+  - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 14,18,43,65,80; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 18,43,63; page: pending stable pagination in a reader containing this unit
+  - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) 16,19,27; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) 15,18,25,44; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 95,107,114,132,227,237,252,256,260,264,268; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 111,138,241,262,268; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 90,103,115,119,123,143,148,182,194,240,244,252,287,291,307,311,315,320,324; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 95,112,118,126,143,250,265,283,286,312,318; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 45,51,57,69,84,107,119,163,166,170,172,180,189; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 52,103,168,174,212; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROJECTION-CHARACTERISTIC
 
@@ -2300,6 +2330,8 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0221; Trees; `content/computability/recursive-functions/trees.tex` source line(s) 13,15,21,33,41,42,44,45,46,49,50,53,55,56,57,61,66; `ps-Arab-PK/content/computability/recursive-functions/trees.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
   - OLP-0222; Other Recursions; `content/computability/recursive-functions/other-recursions.tex` source line(s) 35,37; `ps-Arab-PK/content/computability/recursive-functions/other-recursions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0230; Coding Computations; `content/computability/computability-theory/coding-computations.tex` source line(s) 20,39; `ps-Arab-PK/content/computability/computability-theory/coding-computations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) 29,69,77,78,84,85,86,90; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) 86; page: pending stable pagination in a reader containing this unit
+  - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 13,15,17,26,44,47,60,62,69,73,77,79,85,86,89,96,109; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) 25; page: pending stable pagination in a reader containing this unit
 
 ## TERM-RECURSION-VARIANTS
 
@@ -2770,6 +2802,8 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 270,281,292,298,301; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 290,293; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 35,58,65,69,74,78,84,85,91,95,97; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 59,63,65,85,87,89,91,93,97; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,20,26,28,43,44,46,47,53,60,61,70,101,108,114,118,124; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,27,56,119; page: pending stable pagination in a reader containing this unit
+  - OLP-0280; inc; `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` source line(s) 8,16,18,20; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 25,38,39,41,45,46,51,73,85; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 25,28,32,35,36,37,41,42,45,46,48,66,76; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
 
@@ -2782,6 +2816,52 @@ This view contains 151 high-priority entries from the complete 385-entry decisio
 - Locations:
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 18,21,28,41,42,44,46,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 11,17,20,28,40,48,93; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68,121,134; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,73,137; page: pending stable pagination in a reader containing this unit
+
+## TERM-SYNTAX-GODEL-CODING
+
+- Source term or sense: arithmetization of syntax / symbol code / Gödel number / prime-power sequence coding / formation sequence
+- Choice: د نحو حسابي کول / سمبول-کوډ / ګوډل شمېره / د اوليه عددونو د قوتونو د لړۍ کوډول / جوړښتي لړۍ
+- Why provisional: coding, sequence, countability, formation and arithmetic concepts have regional support; the exact Gödel-coding compounds remain provisional
+- Rationale: A symbol code names the number assigned to one symbol, while a Gödel number codes an entire syntactic sequence. Prime-power coding supplies the sequence mechanism, and a formation sequence witnesses inductive construction. Keep these levels distinct throughout the chapter.
+- Alternatives: د نحو حسابي‌سازي; د نښو عددي کوډ; د ګوډل عدد; د اوليه قوتونو په وسيله د لړۍ کوډول
+- Please double-check: In Pakistani Pashto mathematical prose, is «د نحو حسابي کول / سمبول-کوډ / ګوډل شمېره / د اوليه عددونو د قوتونو د لړۍ کوډول / جوړښتي لړۍ» the clearest conventional rendering of “arithmetization of syntax / symbol code / Gödel number / prime-power sequence coding / formation sequence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0280; inc; `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` source line(s) 8; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` target line(s) 8; page: pending stable pagination in a reader containing this unit
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 52,56,73,85; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 38,47,59,66,76; page: pending stable pagination in a reader containing this unit
+  - OLP-0282; Coding Symbols; `content/incompleteness/arithmetization-syntax/coding-symbols.tex` source line(s) 32; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-symbols.tex` target line(s) 32,71,79,93; page: pending stable pagination in a reader containing this unit
+  - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 19,24,39,47,79,84,85,86,89; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) 18,23,38,45,60,77,81,84,85; page: pending stable pagination in a reader containing this unit
+  - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 22; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 18,22,48,78; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 27,79,80,83,85,104,133,255,262; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 27,79,81,84,85,101,108,140,177,178,179,241,269; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 34,48,83,85,96,120,121,143,173,190,192,210; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 34,48,92,119,134,145,167,176,195,216; page: pending stable pagination in a reader containing this unit
+
+## TERM-SYNTAX-SUBSTITUTION-PREDICATES
+
+- Source term or sense: free occurrence / substitution / free for / syntactic predicate / primitive recursive test
+- Choice: ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه
+- Why provisional: variable, formula, operation and recursive-test roles are regionally supported; the exact free-for and syntactic-predicate compounds remain provisional
+- Rationale: Substitution replaces free occurrences of a variable by a term. Free-for is the capture-avoidance condition, not a synonym for free occurrence. The arithmetized predicates test codes of these syntactic relations by primitive recursive means.
+- Alternatives: ازاد وقوع; بدلول د تعويض پر ځاے; د نيولو مخنيوی; نحوي محمول
+- Please double-check: In Pakistani Pashto mathematical prose, is «ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه» the clearest conventional rendering of “free occurrence / substitution / free for / syntactic predicate / primitive recursive test” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 49,51,57,61,63,67,68,69,71; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) 55,60,61,62,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 14,18,43,64,65,80,84; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 18,43,63; page: pending stable pagination in a reader containing this unit
+  - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) 3,10,12,16,19,45; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) 10,12,15,18,44; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 90,103,115,119,123,143,148,182,194,240,244,252,287,291,307,311,315,320,324; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 95,112,118,126,143,250,265,283,286,312,318; page: pending stable pagination in a reader containing this unit
+
+## TERM-DERIVATION-ARITHMETIZATION
+
+- Source term or sense: arithmetized derivation / end-sequent / end-formula / discharge label / proof predicate / open assumption
+- Choice: حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض
+- Why provisional: derivation, proof, sequent, assumption, consistency and coding roles are regionally supported; the exact arithmetization compounds remain provisional
+- Rationale: The three proof systems use different code shapes: LK trees end in sequents, natural-deduction trees track end formulas and discharge labels, and axiomatic derivations are formula sequences. Their proof predicates must preserve those distinct structures while testing codes primitive recursively.
+- Alternatives: د اشتقاق حسابي‌سازي; وروستی سېکوېنټ او وروستی فارمول; د فرض ساقطولو نښه; اثبات‌وړتيا پريديکات
+- Please double-check: In Pakistani Pashto mathematical prose, is «حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض» the clearest conventional rendering of “arithmetized derivation / end-sequent / end-formula / discharge label / proof predicate / open assumption” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0280; inc; `content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0281; Introduction; `content/incompleteness/arithmetization-syntax/introduction.tex` source line(s) 14,41,42,57,59; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 10,13,14,17,18,19,33,71,80,85,94,95,98,99,107,113,134,136,152,156,157,158,176,177,178,179,185,186,212,228,230,237,241,243,254,263,267,269,272,274; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 17,101,140,142,161,162,180,181,182,188,190,215,219,235,270,276,278,285; page: pending stable pagination in a reader containing this unit
+  - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 10,13,14,17,18,19,20,25,43,45,64,73,78,88,89,92,98,114,118,120,121,122,125,132,142,150,152,180,206,241,244,252,256,258,268,274,275,282,284,288; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 19,44,90,147,176,280; page: pending stable pagination in a reader containing this unit
+  - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 10,13,14,15,20,28,29,33,34,44,45,47,50,62,68,143,165,174,177,179,190,192,210; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 
