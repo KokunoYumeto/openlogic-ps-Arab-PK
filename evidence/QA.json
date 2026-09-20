@@ -12,10 +12,10 @@
   "publication_coverage": {
     "reader_units": 255,
     "source_snapshot_units": 255,
-    "published_definition": "published counts units in the v0.6.0 release reader; source_snapshot_units counts structurally verified drafts in its exact tagged source archive",
+    "published_definition": "published counts units in an accepted public reader; source_snapshot_units separately counts structurally verified drafts included in the public source archive",
     "source_snapshot_release": "v0.6.0-computability",
-    "source_snapshot_commit": "resolved by release tag v0.6.0-computability",
-    "source_snapshot_disposition": "release-candidate metadata for the exact tagged snapshot; external publication verification is recorded separately after release"
+    "source_snapshot_commit": "3cd39721e06034c8e7984f623dc8153464132d44",
+    "source_snapshot_disposition": "immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes"
   },
   "canon_sources": 5,
   "canon_passages": 60,
@@ -12836,5 +12836,5 @@
       "accepted_utc": "2026-09-20T02:03:20.546076+00:00"
     }
   ],
-  "publication_verified": false
+  "publication_verified": true
 }

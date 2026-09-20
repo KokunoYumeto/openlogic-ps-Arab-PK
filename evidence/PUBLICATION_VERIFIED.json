@@ -1,43 +1,272 @@
 {
   "schema": "ps-publication-verification/1",
   "verified": true,
-  "verified_utc": "2026-09-07T14:53:11.281418+00:00",
-  "repo_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK",
-  "release_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.5.0-proof-systems-completeness",
-  "tag": "v0.5.0-proof-systems-completeness",
-  "public": true,
-  "assets": [
-    {
-      "path": "releases/openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
-      "filename": "openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
-      "bytes": 606333,
-      "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
-      "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/openlogic-ps-Arab-PK-proof-systems-completeness-v0.5.0.pdf",
-      "anonymous": true
-    },
-    {
-      "path": "releases/openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
-      "filename": "openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
-      "bytes": 11962469,
-      "sha256": "79c60af2fdd3ffe45f4ba50ba8d7c8c3d2ef1763ee4a3d1f391402b25499e0a6",
-      "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/openlogic-ps-Arab-PK-v0.5.0-proof-systems-completeness-sources.zip",
-      "anonymous": true
-    },
-    {
-      "path": "releases/SHA256SUMS-v0.5.0.txt",
-      "filename": "SHA256SUMS-v0.5.0.txt",
-      "bytes": 258,
-      "sha256": "ea901433fa40aeabd38abbc1112d2b30dcbc4f65d55341e414a05e8940f025f1",
-      "url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/download/v0.5.0-proof-systems-completeness/SHA256SUMS-v0.5.0.txt",
-      "anonymous": true
-    }
-  ],
-  "repository_snapshot": {
-    "source_files_verified": 1056,
-    "archive_sha256": "18499502f9afe43e3a9a32c8d164f280f6b4e0822ca8eaf151be9c9b389c2e12",
-    "bytes": 12089851,
-    "url": "https://codeload.github.com/KokunoYumeto/openlogic-ps-Arab-PK/zip/refs/tags/v0.5.0-proof-systems-completeness"
+  "verified_utc": "2026-09-20T02:32:01.064355+00:00",
+  "release": {
+    "tag": "v0.6.0-computability",
+    "commit": "3cd39721e06034c8e7984f623dc8153464132d44",
+    "github_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.6.0-computability",
+    "zenodo_record_id": 22851904,
+    "zenodo_doi": "10.5281/zenodo.22851904",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197"
   },
+  "reader_units": [
+    "OLP-0001",
+    "OLP-0002",
+    "OLP-0003",
+    "OLP-0004",
+    "OLP-0005",
+    "OLP-0006",
+    "OLP-0007",
+    "OLP-0008",
+    "OLP-0009",
+    "OLP-0010",
+    "OLP-0011",
+    "OLP-0012",
+    "OLP-0013",
+    "OLP-0014",
+    "OLP-0015",
+    "OLP-0016",
+    "OLP-0017",
+    "OLP-0018",
+    "OLP-0019",
+    "OLP-0020",
+    "OLP-0021",
+    "OLP-0022",
+    "OLP-0023",
+    "OLP-0024",
+    "OLP-0025",
+    "OLP-0026",
+    "OLP-0027",
+    "OLP-0028",
+    "OLP-0029",
+    "OLP-0030",
+    "OLP-0031",
+    "OLP-0032",
+    "OLP-0033",
+    "OLP-0034",
+    "OLP-0035",
+    "OLP-0036",
+    "OLP-0037",
+    "OLP-0038",
+    "OLP-0039",
+    "OLP-0040",
+    "OLP-0041",
+    "OLP-0042",
+    "OLP-0043",
+    "OLP-0044",
+    "OLP-0045",
+    "OLP-0046",
+    "OLP-0047",
+    "OLP-0048",
+    "OLP-0049",
+    "OLP-0050",
+    "OLP-0051",
+    "OLP-0052",
+    "OLP-0053",
+    "OLP-0054",
+    "OLP-0055",
+    "OLP-0056",
+    "OLP-0057",
+    "OLP-0058",
+    "OLP-0059",
+    "OLP-0060",
+    "OLP-0061",
+    "OLP-0062",
+    "OLP-0063",
+    "OLP-0064",
+    "OLP-0065",
+    "OLP-0066",
+    "OLP-0067",
+    "OLP-0068",
+    "OLP-0069",
+    "OLP-0070",
+    "OLP-0071",
+    "OLP-0072",
+    "OLP-0073",
+    "OLP-0074",
+    "OLP-0075",
+    "OLP-0076",
+    "OLP-0077",
+    "OLP-0078",
+    "OLP-0079",
+    "OLP-0080",
+    "OLP-0081",
+    "OLP-0082",
+    "OLP-0083",
+    "OLP-0084",
+    "OLP-0085",
+    "OLP-0086",
+    "OLP-0087",
+    "OLP-0088",
+    "OLP-0089",
+    "OLP-0090",
+    "OLP-0091",
+    "OLP-0092",
+    "OLP-0093",
+    "OLP-0094",
+    "OLP-0095",
+    "OLP-0096",
+    "OLP-0097",
+    "OLP-0098",
+    "OLP-0099",
+    "OLP-0100",
+    "OLP-0101",
+    "OLP-0102",
+    "OLP-0103",
+    "OLP-0104",
+    "OLP-0105",
+    "OLP-0106",
+    "OLP-0107",
+    "OLP-0108",
+    "OLP-0109",
+    "OLP-0110",
+    "OLP-0111",
+    "OLP-0112",
+    "OLP-0113",
+    "OLP-0114",
+    "OLP-0115",
+    "OLP-0116",
+    "OLP-0117",
+    "OLP-0118",
+    "OLP-0119",
+    "OLP-0120",
+    "OLP-0121",
+    "OLP-0122",
+    "OLP-0123",
+    "OLP-0124",
+    "OLP-0125",
+    "OLP-0126",
+    "OLP-0127",
+    "OLP-0128",
+    "OLP-0129",
+    "OLP-0130",
+    "OLP-0131",
+    "OLP-0132",
+    "OLP-0133",
+    "OLP-0134",
+    "OLP-0135",
+    "OLP-0136",
+    "OLP-0137",
+    "OLP-0138",
+    "OLP-0139",
+    "OLP-0140",
+    "OLP-0141",
+    "OLP-0142",
+    "OLP-0143",
+    "OLP-0144",
+    "OLP-0145",
+    "OLP-0146",
+    "OLP-0147",
+    "OLP-0148",
+    "OLP-0149",
+    "OLP-0150",
+    "OLP-0151",
+    "OLP-0152",
+    "OLP-0153",
+    "OLP-0154",
+    "OLP-0155",
+    "OLP-0156",
+    "OLP-0157",
+    "OLP-0158",
+    "OLP-0159",
+    "OLP-0160",
+    "OLP-0161",
+    "OLP-0162",
+    "OLP-0163",
+    "OLP-0164",
+    "OLP-0165",
+    "OLP-0166",
+    "OLP-0167",
+    "OLP-0168",
+    "OLP-0169",
+    "OLP-0170",
+    "OLP-0171",
+    "OLP-0172",
+    "OLP-0173",
+    "OLP-0174",
+    "OLP-0175",
+    "OLP-0176",
+    "OLP-0177",
+    "OLP-0178",
+    "OLP-0179",
+    "OLP-0180",
+    "OLP-0181",
+    "OLP-0182",
+    "OLP-0183",
+    "OLP-0184",
+    "OLP-0185",
+    "OLP-0186",
+    "OLP-0187",
+    "OLP-0188",
+    "OLP-0189",
+    "OLP-0190",
+    "OLP-0191",
+    "OLP-0192",
+    "OLP-0193",
+    "OLP-0194",
+    "OLP-0195",
+    "OLP-0196",
+    "OLP-0197",
+    "OLP-0198",
+    "OLP-0199",
+    "OLP-0200",
+    "OLP-0201",
+    "OLP-0202",
+    "OLP-0203",
+    "OLP-0204",
+    "OLP-0205",
+    "OLP-0206",
+    "OLP-0207",
+    "OLP-0208",
+    "OLP-0209",
+    "OLP-0210",
+    "OLP-0211",
+    "OLP-0212",
+    "OLP-0213",
+    "OLP-0214",
+    "OLP-0215",
+    "OLP-0216",
+    "OLP-0217",
+    "OLP-0218",
+    "OLP-0219",
+    "OLP-0220",
+    "OLP-0221",
+    "OLP-0222",
+    "OLP-0223",
+    "OLP-0224",
+    "OLP-0225",
+    "OLP-0226",
+    "OLP-0227",
+    "OLP-0228",
+    "OLP-0229",
+    "OLP-0230",
+    "OLP-0231",
+    "OLP-0232",
+    "OLP-0233",
+    "OLP-0234",
+    "OLP-0235",
+    "OLP-0236",
+    "OLP-0237",
+    "OLP-0238",
+    "OLP-0239",
+    "OLP-0240",
+    "OLP-0241",
+    "OLP-0242",
+    "OLP-0243",
+    "OLP-0244",
+    "OLP-0245",
+    "OLP-0246",
+    "OLP-0247",
+    "OLP-0248",
+    "OLP-0249",
+    "OLP-0250",
+    "OLP-0251",
+    "OLP-0252",
+    "OLP-0253",
+    "OLP-0254",
+    "OLP-0255"
+  ],
   "source_units": [
     {
       "unit_id": "OLP-0001",
@@ -253,7 +482,7 @@
     },
     {
       "unit_id": "OLP-0054",
-      "sha256": "de4c444f49aa8eb70839910b365d536a134f24fe921282e522156a757c8b3d92"
+      "sha256": "29526fde3d82e84434209ba63bff1db5aa0c09bb782cf480b3658d27a1d7bfff"
     },
     {
       "unit_id": "OLP-0055",
@@ -586,90 +815,516 @@
     {
       "unit_id": "OLP-0137",
       "sha256": "3e19ad39d00d3d6b9742448e2cc2d640369332115c26db6efadb24c36974e80a"
+    },
+    {
+      "unit_id": "OLP-0138",
+      "sha256": "1fd3b1f096dcc58fa1ec0c001d399000cac4598003044dc8780858060f718e44"
+    },
+    {
+      "unit_id": "OLP-0139",
+      "sha256": "e138c6666c9bf77eb3b2d084463a3244a1251df2bba4ff619c0aa7af53d648a9"
+    },
+    {
+      "unit_id": "OLP-0140",
+      "sha256": "f455efc9f5d434774b26dbb1913031896dcbe10df7ae1b5f93df73925518e4b9"
+    },
+    {
+      "unit_id": "OLP-0141",
+      "sha256": "af271fb5f05ab1b7f5b6e09ea55930c17bba74ef9c55d4afb2bc74ed1eb63242"
+    },
+    {
+      "unit_id": "OLP-0142",
+      "sha256": "534951cfa68553855827347717ef931017f6da6e88db7334c75be3826383ffda"
+    },
+    {
+      "unit_id": "OLP-0143",
+      "sha256": "179f9b5c302c38465333041501f45aead99bedbf8623e16ddaf972847788459f"
+    },
+    {
+      "unit_id": "OLP-0144",
+      "sha256": "39e0441e31112b5f74a980de8ae8969d89f0142c6096ad14e12651e65bc8f81a"
+    },
+    {
+      "unit_id": "OLP-0145",
+      "sha256": "9682c0c1b34e9e8703b9ed0580163aec24650656d59522e7942000d5d188ec13"
+    },
+    {
+      "unit_id": "OLP-0146",
+      "sha256": "77dd9aed3934e342ee6efe6e6fcbc753b9fc2dad2f5e3b15ab557614e9799473"
+    },
+    {
+      "unit_id": "OLP-0147",
+      "sha256": "3ddb3db271ab1944942d372a8e1521bca60f686558d0f9690be0360d2baa2bbc"
+    },
+    {
+      "unit_id": "OLP-0148",
+      "sha256": "36c96bc852e461f4ee9338407832e5ecbf8c6c5821ddac853a2c1c2ca8c798f1"
+    },
+    {
+      "unit_id": "OLP-0149",
+      "sha256": "40c43088997109ea152c9a2ddba0fa11477877b7d63986ba7ca0641a83a2dfcf"
+    },
+    {
+      "unit_id": "OLP-0150",
+      "sha256": "f68258711860f294fede2fa4a110417fbb7302c5fb2e0c1be54244c5ab8befda"
+    },
+    {
+      "unit_id": "OLP-0151",
+      "sha256": "dfea9d31397ac377019b4df35cb905e4ec77e48677e79919866ba02dca72294e"
+    },
+    {
+      "unit_id": "OLP-0152",
+      "sha256": "f09939618e8ef78d1d58abcdcf310813268335faa77975b4093230ace13998f4"
+    },
+    {
+      "unit_id": "OLP-0153",
+      "sha256": "cf329742e79fd52aa28b8d4ee59126a0f268b55d6185b05dcfcaa83a426a7a13"
+    },
+    {
+      "unit_id": "OLP-0154",
+      "sha256": "96e3936c514e51d4e06751376a15f051733170c4da4ac457881b7a06b6f4c3d8"
+    },
+    {
+      "unit_id": "OLP-0155",
+      "sha256": "9fa9b5bbe1f98574b4e0d3cf6db7ebb931543148f38f55a20ba7f9f75babf3c0"
+    },
+    {
+      "unit_id": "OLP-0156",
+      "sha256": "1bf92da20a3d05f1965b6935b61ca318ac1cd41ca89eff1173503acb4794fd00"
+    },
+    {
+      "unit_id": "OLP-0157",
+      "sha256": "aea0b0878640f4b65c1991fd1be803cb7ad364823c7b685a62d71cc483c94146"
+    },
+    {
+      "unit_id": "OLP-0158",
+      "sha256": "779d184a1948368fefbc91756c823f48ce82f76c305f915c02ad95203aaafb6b"
+    },
+    {
+      "unit_id": "OLP-0159",
+      "sha256": "4c236a97368b4baace58c5354c44148069adcec4ff51ba3ec2bf51f5b6b77274"
+    },
+    {
+      "unit_id": "OLP-0160",
+      "sha256": "7d9b45d0efe9de2da096a8348295aef2a310129ea0bba248800ef8c7d96da783"
+    },
+    {
+      "unit_id": "OLP-0161",
+      "sha256": "4c2fe5af81f94ee5fd1f9f163d0aefe72b75f1790034632ae6c8211dbeadb312"
+    },
+    {
+      "unit_id": "OLP-0162",
+      "sha256": "86b99795f442fa46df762e8ece995b55bd112738b8b9059ad496be4a4deee7ff"
+    },
+    {
+      "unit_id": "OLP-0163",
+      "sha256": "3c5e17a0634213a8e14406cfe81ba951b7bb0db3099c371488dd6c18c17bf47a"
+    },
+    {
+      "unit_id": "OLP-0164",
+      "sha256": "5c851ffe1b46680d6c10f3e9d4a856b85d4694b9a7db0e06836f4e45f62a53fc"
+    },
+    {
+      "unit_id": "OLP-0165",
+      "sha256": "74d757ce22e362481b0a22bc54b3006c69c56c285fee68734b9b7789ae1ac70a"
+    },
+    {
+      "unit_id": "OLP-0166",
+      "sha256": "704e67a70649e422819c14b092c996daddb1705573a35e06f4123e95f16da094"
+    },
+    {
+      "unit_id": "OLP-0167",
+      "sha256": "b20dfc901c9a7d758ae3b4e091dd54164ce1227442ceaa0d8cc34ce174a0207a"
+    },
+    {
+      "unit_id": "OLP-0168",
+      "sha256": "980690462ab9ecdd1baae73c04f834a09cebc7801f4709a9343cbaf70c2e5ef0"
+    },
+    {
+      "unit_id": "OLP-0169",
+      "sha256": "5d85f7bb80efb47015694f63e3de6802dadb19d4ae3f58134199423bd8551a6b"
+    },
+    {
+      "unit_id": "OLP-0170",
+      "sha256": "8456da1f6b9d99799520b6a980c12dbeff9c0009ec87a411e06f2160acbcff81"
+    },
+    {
+      "unit_id": "OLP-0171",
+      "sha256": "a7093a6f0e2560cc888fa16151f349e0747d8822b9a6fa6e4afb790cfb99065e"
+    },
+    {
+      "unit_id": "OLP-0172",
+      "sha256": "141a8e3a3ffefadf5122425e914f4c873abfd1bb7365a9707e2f89290e341455"
+    },
+    {
+      "unit_id": "OLP-0173",
+      "sha256": "e6cd634ac9cfa8bcec8e6f7b68a7c1b43d3d9c0c0c03e5ceaf79c772166ffc3c"
+    },
+    {
+      "unit_id": "OLP-0174",
+      "sha256": "3ca4723ddcabe02f13b661a6559af0acfe2a36cb4ba6d3845a6b8279be4a37ea"
+    },
+    {
+      "unit_id": "OLP-0175",
+      "sha256": "2025be596b4ada7f94ed718b3c73bea85ef1de782c4dd95b51384776f5a6925d"
+    },
+    {
+      "unit_id": "OLP-0176",
+      "sha256": "8aacd085aca40cd72ea0992db6b19b1802e8293d36da6e6893ac97ca5f90f50a"
+    },
+    {
+      "unit_id": "OLP-0177",
+      "sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d"
+    },
+    {
+      "unit_id": "OLP-0178",
+      "sha256": "7fae201c78d9db2e022fd91a9ca7072e4c4e3523b54efbf77ffc04ff76fdc871"
+    },
+    {
+      "unit_id": "OLP-0179",
+      "sha256": "3a628eadb22ce8817e4953b4a7dae31d9ed34a6862a1c4106afe63c461aba81b"
+    },
+    {
+      "unit_id": "OLP-0180",
+      "sha256": "5dbc0bf4fba570cb334ef849a4f4f0980b268c6d4e9e84548fd73f6607dc9d88"
+    },
+    {
+      "unit_id": "OLP-0181",
+      "sha256": "76ce0adbec6ef451ddb6ed85ee68b74498ddaecee2eceaba7b524f4bef980b81"
+    },
+    {
+      "unit_id": "OLP-0182",
+      "sha256": "b381c010445062b72f3149cc737bd211cbd649f875cc0cb1a4807d9ee822a080"
+    },
+    {
+      "unit_id": "OLP-0183",
+      "sha256": "3284883da183e09ff49da7b9f9bd414126433b585a8d3f28284be8d6433f94c0"
+    },
+    {
+      "unit_id": "OLP-0184",
+      "sha256": "d21dcff5705a365f86342267519bd66de0b0f71b004e489460005ddc03366a37"
+    },
+    {
+      "unit_id": "OLP-0185",
+      "sha256": "45c129b5ca83cc67871fbb460262c9391af4f477d4a9219ca0e3235a4a22f7a6"
+    },
+    {
+      "unit_id": "OLP-0186",
+      "sha256": "9d795f8d1d7497ab6cf99414118932162a27063aba1d6a667f71a1f99d4ab326"
+    },
+    {
+      "unit_id": "OLP-0187",
+      "sha256": "872ca9e560d1fcfaa6348bafaba643ca0cf2b8f65ce1eb597212112df36fc5e4"
+    },
+    {
+      "unit_id": "OLP-0188",
+      "sha256": "2ab66e264eb8a03611e8ee900ac6ff3240f8df4d54478307381ab9f0f2cf42e1"
+    },
+    {
+      "unit_id": "OLP-0189",
+      "sha256": "4b7600e9c2f1f39b6c3baeed24839e10bea077a91ebcf2033aaf56d0acb6cb76"
+    },
+    {
+      "unit_id": "OLP-0190",
+      "sha256": "bb1cdf2f779c2d96c2ea3caf59404cf818c6269f35d0453cfd328db4c95ed6f9"
+    },
+    {
+      "unit_id": "OLP-0191",
+      "sha256": "15d24199d4b1179f24542ce7afa1e9465e2cb6496f8471b8811a403e3ca74fc2"
+    },
+    {
+      "unit_id": "OLP-0192",
+      "sha256": "c49d3626460cddeb140d3e671ac857228d6e9f35b6d19a5f549b5a9b74de8686"
+    },
+    {
+      "unit_id": "OLP-0193",
+      "sha256": "6e0284665f89f2d07998ade6ea58a784c5a4b7d2f95d6279ec5cb27485675053"
+    },
+    {
+      "unit_id": "OLP-0194",
+      "sha256": "d62da8efabf2718fce2d7f0f20432d455dc5b75aa26809b1dcb0dcbd6bc5e36e"
+    },
+    {
+      "unit_id": "OLP-0195",
+      "sha256": "b423f949eaba43960361683cb51bb5821da9e8759f336146f053cd8254a7e072"
+    },
+    {
+      "unit_id": "OLP-0196",
+      "sha256": "d6b6e05d3f64f5240b7a3fcf0643cd72cfc19437b824f122ccb7544adc5bed0d"
+    },
+    {
+      "unit_id": "OLP-0197",
+      "sha256": "e9cb4f7409e9867b9577bbded754f8d3d4f98117fbcf452a1139c3af3f55317f"
+    },
+    {
+      "unit_id": "OLP-0198",
+      "sha256": "2a08bc9e46aeba0e095a29dbd59ce6cd7b37c6ba67cb84a3906ded74574e4f98"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "sha256": "a06088fd58b8471145d9f53d8034148705d535b6d6f4778816f92814329cb95d"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "sha256": "13347957ccffe7ccf99c38ec3d9c4e79da07073e53c4e9426cc111cb108eee0e"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "sha256": "78269ad6f5d45698b1850971f67253d3dd5e67bbedeb2e9fad91eb597260e92c"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "sha256": "19657be8ec8ce32d1a612962d163da0dbec5dcedf32df3cd86fb4c218f37cc88"
+    },
+    {
+      "unit_id": "OLP-0203",
+      "sha256": "2a4709c5226f31f60318a3d25fa29e171a416a98c9328d4c8d1f2b8fd5ee63e5"
+    },
+    {
+      "unit_id": "OLP-0204",
+      "sha256": "039031230abdd38e30cfcdb71a84c7ca2d818af89933954c7a4597eb99ef7053"
+    },
+    {
+      "unit_id": "OLP-0205",
+      "sha256": "94f61e16be6fb915289a24ab754553e30c3130328c7e2710044451e910585dc7"
+    },
+    {
+      "unit_id": "OLP-0206",
+      "sha256": "f0ec24d779c7dde908ca494ba72a709541bdca8f166e982248c483bc41c4d370"
+    },
+    {
+      "unit_id": "OLP-0207",
+      "sha256": "4710ead7eeaaf79eb593cc472ae7ecfcd3041d777b0c46f65cc040523ab8cc58"
+    },
+    {
+      "unit_id": "OLP-0208",
+      "sha256": "c615728325719ce06265477cd42d076961e7aea261a48acb2aa3e1e097fb6569"
+    },
+    {
+      "unit_id": "OLP-0209",
+      "sha256": "b8096183567d0b8e29f891e4eed28c990da20a6e3570cd45de2d810a121ae9fb"
+    },
+    {
+      "unit_id": "OLP-0210",
+      "sha256": "1b8faeb54ad3fa72d1b677a0e565768af5022a7e89e53943f9c7f38a525444ac"
+    },
+    {
+      "unit_id": "OLP-0211",
+      "sha256": "6c10512354a3f5604e71f265c9c9661e99e20209ab8088917cde23a82f94e5e4"
+    },
+    {
+      "unit_id": "OLP-0212",
+      "sha256": "cb3772044287aa0e77de0b51451f95a16ff76cb95950ac155efdc38166c9b731"
+    },
+    {
+      "unit_id": "OLP-0213",
+      "sha256": "b5060e465bd0f920a2541931c3beb2e3820f356e6534c54027627f95e848b94f"
+    },
+    {
+      "unit_id": "OLP-0214",
+      "sha256": "a044af0e7e6572861da2ea5009fe63ac5f598431dad8259881ad8e2086c6dadf"
+    },
+    {
+      "unit_id": "OLP-0215",
+      "sha256": "9853f82bded615d3f626641b179e4187cad12afbb2d6b019a10e8ee13ad7f0b7"
+    },
+    {
+      "unit_id": "OLP-0216",
+      "sha256": "9ecbc8188c2b497559288058fdf1023c1dc44452d574da84bb7d9db2479c7950"
+    },
+    {
+      "unit_id": "OLP-0217",
+      "sha256": "9e0fbbf5a5be20d8f91279823962668ad227929f0656db7193d6973fa1b75068"
+    },
+    {
+      "unit_id": "OLP-0218",
+      "sha256": "209a6a82fd37d1efed4e1f50d9f5e9548fb745dae459e261c378c7dbdb8f9036"
+    },
+    {
+      "unit_id": "OLP-0219",
+      "sha256": "9e0d6b696ae805659e541d1c79c65a2d29e85fe4e4b18352f08540056bb760af"
+    },
+    {
+      "unit_id": "OLP-0220",
+      "sha256": "78fb27e0a3d54ace350e3708467be6207f05a3fd3c39f160ffc458f0fd8b39d0"
+    },
+    {
+      "unit_id": "OLP-0221",
+      "sha256": "03e2512269006090c51709c22642f0910f44007018589966456534402fdc8527"
+    },
+    {
+      "unit_id": "OLP-0222",
+      "sha256": "e07290e4a47b4ab9c930ffef267fa21ddbf0634ff8af1e2bced9e1d5492901ce"
+    },
+    {
+      "unit_id": "OLP-0223",
+      "sha256": "5a8cdc40f8566e9aa2558c6c36b54c17c0c14b51ffda4666699e574aa78eb8a2"
+    },
+    {
+      "unit_id": "OLP-0224",
+      "sha256": "4f4087cd71075521d9fa909ac9869e6e4026efd76fdafde2fbd80c1aaf55dd2e"
+    },
+    {
+      "unit_id": "OLP-0225",
+      "sha256": "4a8d7350a22fc50a22e0415b24d3fef374ae83dea3765cf8f0e250ee1d4cf245"
+    },
+    {
+      "unit_id": "OLP-0226",
+      "sha256": "5436ae56aff3e42608c9f9facbd23262c9445e8497d1479bffb2020880d3c859"
+    },
+    {
+      "unit_id": "OLP-0227",
+      "sha256": "4283119a9dc59d96cef6cd11b47e7e53dc8468cd249139060f4bf8b45c6ee19b"
+    },
+    {
+      "unit_id": "OLP-0228",
+      "sha256": "116241a1bbdb86f9c084d1addffdd76950d6241828109c6dc70ee74a8f8dc5dc"
+    },
+    {
+      "unit_id": "OLP-0229",
+      "sha256": "a8b04cd56d2d29e2f216e8d8429cfdbaec7f72545065ed7905a667775b739256"
+    },
+    {
+      "unit_id": "OLP-0230",
+      "sha256": "34f7138b27c1210620826f9fbecceee5da03e399e1b0aafc42db1547c44d2fdb"
+    },
+    {
+      "unit_id": "OLP-0231",
+      "sha256": "cf15c3af2c43e83e7b4cf3c5e28eacc7f73d1dc953b7753a83b2a4e21b147356"
+    },
+    {
+      "unit_id": "OLP-0232",
+      "sha256": "2949719e6b62b4d9e668e70d554b883331d95dc827aa67a6791926e3a6ec7a1b"
+    },
+    {
+      "unit_id": "OLP-0233",
+      "sha256": "2f8d3391b61deaf9b9b857de8d135f9f557490c0cf93c3f341b4df34bfb1a992"
+    },
+    {
+      "unit_id": "OLP-0234",
+      "sha256": "135a119318c6c8beb4a0553ad22a594c3d56d4460c3d1902bf69d4edfccb0802"
+    },
+    {
+      "unit_id": "OLP-0235",
+      "sha256": "1a167e3f498b0418b4806b20bfa7252ae42e3d78f6b554b9569efa35c61b21f3"
+    },
+    {
+      "unit_id": "OLP-0236",
+      "sha256": "5184c46619b836124962c22c1368439547da93944a245a500ce1d4b6f1cf36e9"
+    },
+    {
+      "unit_id": "OLP-0237",
+      "sha256": "96b8bb4c96c6eb2f4f554d94fbe624511e3f5695efcf4cc3056f55b66ad8c762"
+    },
+    {
+      "unit_id": "OLP-0238",
+      "sha256": "3efd4008fbcaaa969e0d051299f2827de7bae31236d72c1b8becfcc929dc6c7c"
+    },
+    {
+      "unit_id": "OLP-0239",
+      "sha256": "97e3c185a47405823d0c8e63cfada2d4e443679757d9ef4cd8c7c66927237450"
+    },
+    {
+      "unit_id": "OLP-0240",
+      "sha256": "24d99a0026fa0af722c44a4023c47b39e9c2717db412f19ae9337aa65e0d5b90"
+    },
+    {
+      "unit_id": "OLP-0241",
+      "sha256": "74c822c1d0ce97741f975ee9c865276e31ed392d21b88c0f3dd72d8e02859cfe"
+    },
+    {
+      "unit_id": "OLP-0242",
+      "sha256": "30a4d6da4fdddfc6c5c9f8772a0032be571153af6b8336d8a221c2aa20ea8369"
+    },
+    {
+      "unit_id": "OLP-0243",
+      "sha256": "0e7edfea62dd4bcaeff0c4b8bb6eafd5426b1b07bf7f7ba48286974a04a190b8"
+    },
+    {
+      "unit_id": "OLP-0244",
+      "sha256": "51737da6053235e2e7a95199e6879ed29e3f7c6b579f826508890ddd04023ea4"
+    },
+    {
+      "unit_id": "OLP-0245",
+      "sha256": "fd6cad7900f2a59856e33d1d2d3cacd78861baff9faf71a3ec2016a4dea90360"
+    },
+    {
+      "unit_id": "OLP-0246",
+      "sha256": "3373eda639005d55250e67d7989b9aa80478ab00790048ff5b8d29b666e34e83"
+    },
+    {
+      "unit_id": "OLP-0247",
+      "sha256": "095bb1d55ded771c7cc775d3d6e9e1b4c5ad3c42aede244da1f376fe74d429ca"
+    },
+    {
+      "unit_id": "OLP-0248",
+      "sha256": "9d6725f8e46e006901779e898a8e7290bc82e42ab089a1b571a59ccd2db69a4a"
+    },
+    {
+      "unit_id": "OLP-0249",
+      "sha256": "4e87279069dee59069a9c7a0020423b63a1a63d6d4a968f22f4e8c9fce505b09"
+    },
+    {
+      "unit_id": "OLP-0250",
+      "sha256": "d57799a913d9fa10cfb6f912a2623cd2f3c1aa3101cd4667d48aeb7f168b472e"
+    },
+    {
+      "unit_id": "OLP-0251",
+      "sha256": "39d3b3fda312b3b231d1af635f112bfafd8b5dc021627fa7cf5403856dbbf277"
+    },
+    {
+      "unit_id": "OLP-0252",
+      "sha256": "cafb70cd7a85a890f321ca812186b2050a2156ca237357381e87aa7976a3cc4a"
+    },
+    {
+      "unit_id": "OLP-0253",
+      "sha256": "08929659f51a0b9b2adff4d13404a717c3152be8589f36bc5e6f31af096b9f78"
+    },
+    {
+      "unit_id": "OLP-0254",
+      "sha256": "3231e539f52c8e39c3b5962856a6716480ba34a1426f1aae3c516ad91974ccde"
+    },
+    {
+      "unit_id": "OLP-0255",
+      "sha256": "211d1315b4c6dc1b853ea0742d152eba0e45d13a37a9e8d2434952410ddad691"
     }
   ],
-  "reader_units": [
-    "OLP-0056",
-    "OLP-0057",
-    "OLP-0058",
-    "OLP-0059",
-    "OLP-0060",
-    "OLP-0061",
-    "OLP-0062",
-    "OLP-0063",
-    "OLP-0064",
-    "OLP-0065",
-    "OLP-0066",
-    "OLP-0067",
-    "OLP-0068",
-    "OLP-0069",
-    "OLP-0070",
-    "OLP-0071",
-    "OLP-0072",
-    "OLP-0073",
-    "OLP-0074",
-    "OLP-0075",
-    "OLP-0076",
-    "OLP-0077",
-    "OLP-0078",
-    "OLP-0079",
-    "OLP-0080",
-    "OLP-0081",
-    "OLP-0082",
-    "OLP-0083",
-    "OLP-0084",
-    "OLP-0085",
-    "OLP-0086",
-    "OLP-0087",
-    "OLP-0088",
-    "OLP-0089",
-    "OLP-0090",
-    "OLP-0091",
-    "OLP-0092",
-    "OLP-0093",
-    "OLP-0094",
-    "OLP-0095",
-    "OLP-0096",
-    "OLP-0097",
-    "OLP-0098",
-    "OLP-0099",
-    "OLP-0100",
-    "OLP-0101",
-    "OLP-0102",
-    "OLP-0103",
-    "OLP-0104",
-    "OLP-0105",
-    "OLP-0106",
-    "OLP-0107",
-    "OLP-0108",
-    "OLP-0109",
-    "OLP-0110",
-    "OLP-0111",
-    "OLP-0112",
-    "OLP-0113",
-    "OLP-0114",
-    "OLP-0115",
-    "OLP-0116",
-    "OLP-0117",
-    "OLP-0118",
-    "OLP-0119",
-    "OLP-0120",
-    "OLP-0121",
-    "OLP-0122",
-    "OLP-0123",
-    "OLP-0124",
-    "OLP-0125",
-    "OLP-0126",
-    "OLP-0127",
-    "OLP-0128",
-    "OLP-0129",
-    "OLP-0130",
-    "OLP-0131",
-    "OLP-0132",
-    "OLP-0133",
-    "OLP-0134",
-    "OLP-0135",
-    "OLP-0136",
-    "OLP-0137"
+  "assets": [
+    {
+      "order": 1,
+      "filename": "01-openlogic-ps-Arab-PK-cumulative-through-computability-v0.6.0.pdf",
+      "bytes": 1635063,
+      "sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d"
+    },
+    {
+      "order": 2,
+      "filename": "02-openlogic-ps-Arab-PK-cumulative-through-computability-v0.6.0.tex",
+      "bytes": 1627846,
+      "sha256": "e163a6a79df185f4afbad51c7aed0c18292b04382ecc27919567b4477979fe4d"
+    },
+    {
+      "order": 3,
+      "filename": "03-openlogic-ps-Arab-PK-v0.6.0-computability-sources.zip",
+      "bytes": 21216227,
+      "sha256": "e21acd1f90d841beffd2cfc6c60d70c18567eb41689c9ea6f2694ef67fd3891e"
+    },
+    {
+      "order": 4,
+      "filename": "04-openlogic-ps-Arab-PK-cumulative-through-computability-v0.6.0.epub",
+      "bytes": 673842,
+      "sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97"
+    },
+    {
+      "order": 5,
+      "filename": "05-CUMULATIVE-EDITION-VALIDATION-v0.6.0.json",
+      "bytes": 2432,
+      "sha256": "55acf8570e7d6885dbae2e823c64d252b65dcd67131bbcc517cb24583f4032e7"
+    },
+    {
+      "order": 6,
+      "filename": "99-SHA256SUMS-v0.6.0.txt",
+      "bytes": 637,
+      "sha256": "64a5cde24abfbf790b3954d3c9873fba107e3e2988973add124fc66e1f0ecf15"
+    }
   ]
 }
