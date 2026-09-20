@@ -1,0 +1,73 @@
+{
+  "schema": "ps-cumulative-through-computability-reader-acceptance/1",
+  "status": "accepted",
+  "release_candidate": "v0.6.0-computability",
+  "accepted_utc": "2026-09-20T02:03:20.546076+00:00",
+  "reader": {
+    "filename": "openlogic-ps-Arab-PK-cumulative-through-computability.pdf",
+    "bytes": 1635063,
+    "sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+    "pages": 326,
+    "profile": "frozen upstream default: FOL, all primitive connectives and quantifiers, all proof systems, TMs, lambda, novice, math, computer-science and philosophy examples"
+  },
+  "unit_range": {
+    "first": "OLP-0001",
+    "last": "OLP-0255",
+    "count": 255
+  },
+  "chapter_count": 25,
+  "page_mapping": {
+    "label_occurrences": 5366,
+    "paired_segments": 2683,
+    "spanning_segments": 308,
+    "content_labels": 587,
+    "sha256": "1087ba0ab1d62eae7046e4e0058fd7dd632a7438a65893c3d7662430a13fe19b"
+  },
+  "external_references": {
+    "linked_occurrences": 9,
+    "unique_targets": 8,
+    "pages_1based": [
+      62,
+      69,
+      75,
+      188,
+      257
+    ]
+  },
+  "reproducibility": {
+    "compared_artifacts": {
+      "reader.tex": {
+        "bytes": 1628262,
+        "sha256": "14f777f7239443bbf5513662f729178ad3d13d26005834e3b4adeecd51486b1f"
+      },
+      "build-inputs.json": {
+        "bytes": 122331,
+        "sha256": "a4f246535a450ade0d5a231785e4f8e080c2f7c374d8be823840b9072afb1590"
+      },
+      "reader.pdf": {
+        "bytes": 1635063,
+        "sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d"
+      },
+      "reader.aux": {
+        "bytes": 419524,
+        "sha256": "5f08b922642dd84c386666d8b11e680e1fc9a0c31fc96ff8aa7ea976849dc058"
+      },
+      "reader.out": {
+        "bytes": 54090,
+        "sha256": "28e8720d8f39e8819e6d30c7ec37ba5edb21515fa5b95223a317619ac7287dba"
+      },
+      "reader.toc": {
+        "bytes": 27033,
+        "sha256": "62fb8cf47dc21348e70b9045bf72a943f9621db8d84c12517d81ee8c2ffb037e"
+      }
+    },
+    "primary_tex_receipt_sha256": "4527dc29345f0f60991da9e843d66fd84699f675d6bd5461db76a5739ffb744c",
+    "replay_tex_receipt_sha256": "28e7078f86651eb44f1f19d78bdb4391e8072156393709b1d4c18f21911d470a",
+    "all_compared_artifacts_byte_identical": true,
+    "all_six_passes_pdf_byte_identical": true,
+    "all_six_log_checks_empty": true
+  },
+  "reference_map_sha256": "a7ba651fa3dfb17fa90596f7cae0aebd3f71e10ed615c029c1a28f414d87c11c",
+  "visual_acceptance_sha256": "a42cf6b15f28d0fbe3b97ba887016a387c62d01333967dfb703c40a1f6e70065",
+  "page_render_receipt_sha256": "ffeda28ac0f04b9af7d3a178d97b0aa9f753c58e2b13ccb1a65668fb3f46adee"
+}

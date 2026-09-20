@@ -1,0 +1,49 @@
+{
+  "schema": "ps-guarded-tex/1",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovered": false,
+  "passes": [
+    {
+      "document": "reader",
+      "exit_code": 0,
+      "captured_job_active_processes_after": 0,
+      "pdf_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+      "pass": 1
+    },
+    {
+      "document": "reader",
+      "exit_code": 0,
+      "captured_job_active_processes_after": 0,
+      "pdf_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+      "pass": 2
+    },
+    {
+      "document": "reader",
+      "exit_code": 0,
+      "captured_job_active_processes_after": 0,
+      "pdf_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+      "pass": 3
+    }
+  ],
+  "log_checks": [
+    {
+      "document": "reader",
+      "findings": [],
+      "pass": 1
+    },
+    {
+      "document": "reader",
+      "findings": [],
+      "pass": 2
+    },
+    {
+      "document": "reader",
+      "findings": [],
+      "pass": 3
+    }
+  ],
+  "status": "processes-completed",
+  "completed_utc": "2026-09-20T01:45:13.8120599Z"
+}

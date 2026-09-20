@@ -1,20 +1,20 @@
 {
-  "schema": "openlogic-ps-Arab-PK-epub-delivery-acceptance/1",
+  "schema": "openlogic-ps-Arab-PK-cumulative-epub-delivery-acceptance/1",
   "status": "accepted",
-  "accepted_utc": "2026-09-19T17:51:09.394945+00:00",
-  "release": "v0.5.1-proof-systems-completeness-epub",
+  "accepted_utc": "2026-09-20T02:06:12.093597+00:00",
+  "release_candidate": "v0.6.0-computability",
   "preview": {
     "format": "PDF",
-    "path": "readers/openlogic-ps-Arab-PK-proof-systems-completeness.pdf",
-    "bytes": 606333,
-    "sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09",
-    "pages": 126,
-    "policy": "The accepted cumulative PDF remains the public preview."
+    "path": "readers/openlogic-ps-Arab-PK-cumulative-through-computability.pdf",
+    "bytes": 1635063,
+    "sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+    "pages": 326,
+    "policy": "The accepted cumulative PDF is the public human-readable preview."
   },
   "epub": {
-    "path": "readers/openlogic-ps-Arab-PK-proof-systems-completeness.epub",
-    "bytes": 177864,
-    "sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
+    "path": "readers/openlogic-ps-Arab-PK-cumulative-through-computability.epub",
+    "bytes": 673842,
+    "sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97",
     "format": "EPUB 3.4",
     "layout": "reflowable",
     "language": "ps-Arab-PK",
@@ -23,63 +23,90 @@
     "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
   },
   "scope": {
-    "first_unit": "OLP-0056",
-    "last_unit": "OLP-0137",
-    "unit_count": 82,
-    "chapter_count": 7,
-    "semantic_segment_count": 907,
+    "first_unit": "OLP-0001",
+    "last_unit": "OLP-0255",
+    "unit_count": 255,
+    "chapter_count": 25,
+    "semantic_segment_count": 2683,
     "partial_edition": true,
     "full_project_unit_count": 722,
-    "translated_bundle_units": 197
+    "translated_bundle_units": 255
   },
   "structure": {
-    "mathml_elements": 5582,
-    "mathml_tex_annotations": 5582,
+    "mathml_elements": 15376,
+    "mathml_tex_annotations": 15376,
     "proof_tree_environments": 124,
     "proof_nodes": 710,
     "tableau_environments": 51,
     "tableau_nodes": 279,
-    "problems": 58,
-    "definitions": 47,
-    "propositions": 77,
-    "theorems": 19,
-    "corollaries": 11,
-    "lemmas": 9,
-    "examples": 33,
-    "proofs": 103,
-    "editorial_notes": 9
+    "problems": 190,
+    "definitions": 182,
+    "propositions": 165,
+    "theorems": 67,
+    "corollaries": 20,
+    "lemmas": 20,
+    "examples": 106,
+    "proofs": 248,
+    "editorial_notes": 30,
+    "historical_notes": 3,
+    "remarks": 5,
+    "figures": 20,
+    "data_tables": 1,
+    "svg_viewboxes": {
+      "figure-001.svg": "0 0 231.64 189.48",
+      "figure-002.svg": "0 0 231.64 189.48",
+      "figure-003.svg": "0 0 231.64 189.48",
+      "figure-004.svg": "0 0 137.27 94.43",
+      "figure-005.svg": "0 0 80.58 94.43",
+      "figure-006.svg": "0 0 107.84 108.3",
+      "figure-007.svg": "0 0 290.07 159.21",
+      "figure-008.svg": "0 0 311.29 169.11",
+      "figure-009.svg": "0 0 284.29 180.1",
+      "figure-010.svg": "0 0 291.66 159.51",
+      "figure-011.svg": "0 0 279.97 124.38",
+      "figure-012.svg": "0 0 162.89 91.81",
+      "figure-013.svg": "0 0 213.01 42.12",
+      "figure-014.svg": "0 0 176.85 91.81",
+      "figure-015.svg": "0 0 233.55 120.16",
+      "figure-016.svg": "0 0 581.33 390.46",
+      "figure-017.svg": "0 0 248.29 171.19",
+      "figure-018.svg": "0 0 148.27 34.41",
+      "figure-019.svg": "0 0 152.07 79.33",
+      "figure-020.svg": "0 0 152.07 79.33"
+    }
   },
   "links": {
-    "internal": 425,
-    "external": 47,
+    "internal": 1045,
+    "external": 16,
     "broken": 0,
-    "navigation_entries": 181
+    "navigation_entries": 471
   },
   "traceability": {
-    "source_unit_anchors": 82,
-    "semantic_segment_start_anchors": 907,
-    "semantic_segment_end_anchors": 907,
-    "segment_id_set_sha256": "ee0b5db1272d72b2228300766d5b662d3373bd6211641431c5dd3c7dbb3fa6b7",
-    "reference_map_entries": 246,
-    "reference_map_sha256": "5424774e3dadf33a44f0e6a7faf8404ddd38fb5c93b9dbb1372f29d448e483f7",
-    "accepted_pdf_reference_source_sha256": "8d915c4e396fb6899c648c56301742b03212ea8f3bb6278494ebe4ebd4e5ff09"
+    "source_unit_anchors": 255,
+    "semantic_segment_start_anchors": 2683,
+    "semantic_segment_end_anchors": 2683,
+    "segment_id_set_sha256": "f43b0dfe9603af8808f80d2f1f5785669b244d4c35f0f7116bd75179bdf2416a",
+    "reference_map_entries": 587,
+    "reference_map_sha256": "a7ba651fa3dfb17fa90596f7cae0aebd3f71e10ed615c029c1a28f414d87c11c",
+    "accepted_pdf_reference_source_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d"
   },
   "determinism": {
     "independent_cold_rebuild": true,
     "byte_identical": true,
-    "primary_sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
-    "replay_sha256": "276c957ed382f98145faa4d52e759ab4772785c990f185a82c42687e043f31c3",
-    "primary_build_receipt_sha256": "99c959b3ef36f7e429f4537396ff690c4673a6cbe53bc927fec6c87a087b6eb4",
-    "replay_build_receipt_sha256": "abd7432b26aeb219b5a860583d86ebcf501ae6c18bbbcf369d3707747cbcb59c"
+    "primary_sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97",
+    "replay_sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97",
+    "primary_build_receipt_sha256": "1d5e83bf6181496cb22f4b4f768dff1c4843a9b7107d355eeca82fa7ddb54f3f",
+    "replay_build_receipt_sha256": "45793c1e18a6910fecc891efc4a8d114e13a30888641411f97fbe6762f9220e1",
+    "member_manifests_identical": true
   },
   "epubcheck": {
     "version": "5.4.0",
     "fatal": 0,
     "errors": 0,
     "warnings": 0,
-    "infos": 0,
-    "primary_report_sha256": "37ab2bff8be3673cdb61f15b77d2ff2e22e609570fc2578524b531f57b6c8afc",
-    "replay_report_sha256": "97f7eee82f7e1b62217b415d790bd1294b2ed207b7616467e2cb6a7aa07e2623"
+    "usages": 0,
+    "primary_report_sha256": "d69d7c5d3fa7bf9ba5ee64783114b74be613dc9f98500086c092550135dca9e1",
+    "replay_report_sha256": "013b88c73636529a309d78e343f903930a2d0a1bab8f7964bc0904140d7e8c38"
   },
   "independent_validation": {
     "status": "accepted",
@@ -100,267 +127,63 @@
       "visible_raw_tex_absent": true,
       "formal_direction_explicit": true,
       "forbidden_bidi_css_absent": true,
+      "svg_figures_complete_and_self_contained": true,
       "semantic_counts_match_build": true
     },
-    "primary_receipt_sha256": "8cf88a0e703f05d57c5a028d6c587568bbcb7c2067d094fc1218a3b26999ef34",
-    "replay_receipt_sha256": "e5f780ea787bccfd85ecad3d0be235cf3372ef1e8c0f74162edbece17ca64277",
-    "validator_sha256": "8acff36383ac64c1fb73abe4ab3afda57f16cbc75634ece306e8c35a546f9a0b"
+    "primary_receipt_sha256": "3923fd1045dd9b0bb1b7894cef69f3d2e8adb3e2b4d3d742f03d81d0c26a43d0",
+    "replay_receipt_sha256": "78ce908d76c6841d0a3400e992461d6aef3f9e9b8f0f854f41b28ae079fc0474",
+    "validator_sha256": "88d99b53ccaf8374081eb6f06d0b0f67128eb083bce3ab463a58cb21654db48e"
   },
   "visual_validation": {
     "status": "accepted",
-    "browser": {
-      "name": "Google Chrome",
-      "version": "153.0.8010.48"
-    },
-    "viewports": [
-      {
-        "name": "wide",
-        "width": 1440,
-        "height": 1100
-      },
-      {
-        "name": "reader",
-        "width": 768,
-        "height": 1024
-      }
-    ],
-    "cases": [
-      {
-        "name": "title",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "خلاص منطق",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 98221,
-        "screenshot_sha256": "6837cfe2d7ec4fa1ae0c7fae4ae33f3def7243c3d24876958dc9e0c7eb4dd698"
-      },
-      {
-        "name": "navigation",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "فهرست",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 87738,
-        "screenshot_sha256": "7b2ae856d2c5c2e6f0347153c685fa8f5282e9fede5809c31aa0a551f4f12190"
-      },
-      {
-        "name": "proof-tree",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "د سېکوېنټ حساب",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 95781,
-        "screenshot_sha256": "975a48a0e03ae1f396f657ebfa79d3adf34662a632d0879c6b2296a9f2a666c6"
-      },
-      {
-        "name": "existential-rule",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "فطري استنتاج",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 100825,
-        "screenshot_sha256": "bfd613f38c36244cb744ba07ab04ac8ac4a9efe56186200719eb05d587a6f226"
-      },
-      {
-        "name": "tableau",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "تابلوګانې",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 95999,
-        "screenshot_sha256": "3200df2e246e127e680d3819515a7177e5c6539e08e0353c0f59d7616eb22b20"
-      },
-      {
-        "name": "completeness",
-        "viewport": {
-          "name": "wide",
-          "width": 1440,
-          "height": 1100,
-          "device_scale_factor": 1
-        },
-        "document_title": "د بشپړتيا قضيه",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 234143,
-        "screenshot_sha256": "57d2fd2cc19f59ac59c5544289d1975cc5ede5a000db4493ea4d49de7ebe3a72"
-      },
-      {
-        "name": "title",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "خلاص منطق",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 96314,
-        "screenshot_sha256": "e17ba6b2483f51423c1ba3539d4c559e72a903710c22f9babddf6d286650ccb6"
-      },
-      {
-        "name": "navigation",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "فهرست",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 76840,
-        "screenshot_sha256": "5d8548c64a6ea9b9d153fc04e0d0693236f478dc048d09b6c5fdc207327e0129"
-      },
-      {
-        "name": "proof-tree",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "د سېکوېنټ حساب",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 91034,
-        "screenshot_sha256": "0b8042102001cd1720d3a183d37cf593131574131aceccf2adfe0312d9f50f04"
-      },
-      {
-        "name": "existential-rule",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "فطري استنتاج",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 97505,
-        "screenshot_sha256": "2716c65e0c5206a5a044bec612815f65c96c35759d742aadb07a1411891d6b4f"
-      },
-      {
-        "name": "tableau",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "تابلوګانې",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 79647,
-        "screenshot_sha256": "00bfd35b052a8aec8400a3e47555b7e341ae92d8e22b95fd24effacee55e955a"
-      },
-      {
-        "name": "completeness",
-        "viewport": {
-          "name": "reader",
-          "width": 768,
-          "height": 1024,
-          "device_scale_factor": 1
-        },
-        "document_title": "د بشپړتيا قضيه",
-        "html_lang": "ps-Arab-PK",
-        "html_dir": "rtl",
-        "horizontal_overflow": false,
-        "console_errors": [],
-        "page_errors": [],
-        "screenshot_bytes": 186195,
-        "screenshot_sha256": "4bb6d50f213209cc43acdb27e74f49dcd7aa4ca27a8c6e4720e45da9ed27e2a0"
-      }
-    ],
-    "visual_tool_sha256": "fa558ce73d22ea6be5ac9b1c68a6c2bfabb6666baffe7d6d9849e6fd2083ce90"
+    "acceptance_sha256": "6f24ab7658010b6d3ca6f18f589af43374f79611961728612b8cf28be4a1333b",
+    "case_count": 42,
+    "result": "All 42 browser captures were inspected across wide and reader viewports. The review covered title and navigation pages, native MathML, proof rules and trees, tableaux, derivations, a data table, set/function/model-theory diagrams, recursive functions, and Turing-machine tape and state-machine figures. Pashto joining, RTL flow, formal LTR islands and SVG labels are legible. No clipping, overflow, overlap, missing image, tofu, console error or page error was found."
+  },
+  "figure_validation": {
+    "figure_count": 20,
+    "render_receipt_sha256": "058fa829d4dd80822cdfcadbcea37e342c0202ffaafa50b5b09ab4e393b83cff",
+    "inventory_semantic_sha256": "0c27e72ee24152e1231a5b89cf3619fed6f8a11def893d915f7f5fb2622e2ad4",
+    "visual_contact_sheet_reviewed": true
   },
   "conversion_defects_found_and_repaired": [
     {
-      "finding": "EPUBCheck rejected CSS direction and unicode-bidi declarations.",
-      "repair": "Removed the forbidden declarations and set direction with XHTML dir attributes on roots, formal panels, tables and native MathML.",
-      "regression_gate": "EPUBCheck 5.4.0 reports zero messages on primary and cold replay archives."
+      "finding": "Raw LaTeX labels were not initially exported as EPUB reference destinations.",
+      "repair": "Indexed both wrapper labels and inherited raw labels, then replayed their PDF numbering.",
+      "regression_gate": "All 587 reference destinations resolve and the primary/replay reference-map hashes match."
     },
     {
-      "finding": "The literal TeX command name in OLTAB-008 became empty MathML and consumed the first character of the following Pashto word.",
-      "repair": "Protected TeX string literals before macro expansion and reject every empty MathML TeX annotation.",
-      "regression_gate": "All 5,582 MathML nodes have one nonempty application/x-tex annotation; the command name renders as code."
+      "finding": "Multi-target cref and Cref commands initially collapsed into one hyperlink.",
+      "repair": "Expanded each target into its own numbered internal link while preserving localized prose.",
+      "regression_gate": "Independent validation resolves all 1,045 internal links with zero broken links."
     },
     {
-      "finding": "Nested dollar delimiters caused one existential-elimination assumption to disappear during conversion.",
-      "repair": "Normalized centered proof arguments to one math span and compare every formal environment's rendered list-item count with its parsed node count.",
-      "regression_gate": "All 710 proof nodes and 279 tableau nodes survive conversion; the repaired six-node rule was visually inspected at both viewports."
+      "finding": "Raw-TeX scanning treated valid MathML annotation text as visible source markup.",
+      "repair": "Excluded MathML subtrees from the visible-text scan while retaining exact annotation checks.",
+      "regression_gate": "All 15,376 MathML nodes have nonempty TeX annotations and visible raw-TeX hits remain zero."
+    },
+    {
+      "finding": "Figure reuse needed a content-derived provenance gate.",
+      "repair": "Bound the EPUB build to the exact semantic figure-inventory hash and guarded render receipt.",
+      "regression_gate": "All 20 self-contained SVG figures match the accepted inventory and render without broken images."
     }
   ],
   "tools": {
     "builder": {
-      "path": "tools/build_completeness_epub.py",
-      "sha256": "318cdacef355e2f126e66bcd7569ea84c6888c8ec55cb9c1763373b1f4d1104e"
+      "path": "tools/build_cumulative_epub.py",
+      "sha256": "89dab73585fd76427c2b54d5d27089d7f2a154e0bea742ebfe6c9937a51dd582"
     },
     "validator": {
-      "path": "tools/validate_completeness_epub.py",
-      "sha256": "8acff36383ac64c1fb73abe4ab3afda57f16cbc75634ece306e8c35a546f9a0b"
+      "path": "tools/validate_cumulative_epub.py",
+      "sha256": "88d99b53ccaf8374081eb6f06d0b0f67128eb083bce3ab463a58cb21654db48e"
+    },
+    "figure_renderer": {
+      "path": "tools/render_cumulative_epub_figures.py",
+      "sha256": "b9f7b3593f799460c1c74b4c6a8dced4b183903f67ab2dabfefbab324ce91be6"
     },
     "visual_renderer": {
       "path": "tools/render_epub_visual_qa.py",
-      "sha256": "fa558ce73d22ea6be5ac9b1c68a6c2bfabb6666baffe7d6d9849e6fd2083ce90"
+      "sha256": "83eccebfaa299139ad3d5308af634c72397583ba1039ef87bdf73583b6c870ca"
     }
   }
 }

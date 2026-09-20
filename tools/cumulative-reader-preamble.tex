@@ -1,0 +1,194 @@
+\documentclass[11pt,a4paper,oneside]{report}
+\usepackage[margin=20mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathrsfs,mathtools,mathdots,nicefrac,stmaryrd}
+\usepackage{xparse,etoolbox,xpunctuate,mfirstuc}
+\usepackage{graphicx,tikz,xcolor,framed,comment,longtable,multirow,array,booktabs,verbatim}
+\usetikzlibrary{arrows,automata,positioning,calc,decorations.pathmorphing}
+\usepackage{bussproofs}
+\input{OLP_UPSTREAM_PATH/sty/bussproofs-extra.sty}
+\usepackage[tableaux]{prooftrees}
+\usepackage[authoryear]{natbib}
+\usepackage[unicode,colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage[capitalize,nameinlink]{cleveref}
+\usepackage{fancyhdr}
+\usepackage{bidi}
+
+\hypersetup{
+  pdftitle={OpenLogic Pashto Pakistan - Cumulative Reader through Computability and Introductory Turing Machines},
+  pdfauthor={Open Logic Project; independent Pashto (Pakistan) machine translation},
+  pdfsubject={Work in progress: 255 of 722 source units}
+}
+
+\newcommand*{\DeclareDocumentMacro}[2]{\def#1{#2}}
+\NewDocumentCommand{\settexttoken}{m s m m o o}{}
+\makeatletter
+\input{OLP_UPSTREAM_PATH/sty/open-logic-formulas.sty}
+\input{OLP_UPSTREAM_PATH/sty/open-logic-selective.sty}
+\input{OLP_UPSTREAM_PATH/open-logic-config.sty}
+\makeatother
+\newbox\gnBoxA
+\newdimen\gnCornerHgt
+\setbox\gnBoxA=\hbox{$\ulcorner$}
+\global\gnCornerHgt=\ht\gnBoxA
+\newdimen\gnArgHgt
+\def\gn #1{%
+  \setbox\gnBoxA=\hbox{$#1$}%
+  \gnArgHgt=\ht\gnBoxA
+  \ifnum\gnArgHgt<\gnCornerHgt \gnArgHgt=0pt
+  \else \advance\gnArgHgt by -\gnCornerHgt
+  \fi
+  \raise\gnArgHgt\hbox{$\ulcorner$}\box\gnBoxA
+  \raise\gnArgHgt\hbox{$\urcorner$}}
+\renewcommand{\MP}{\LR{\latinfont MP}}
+\renewcommand{\QR}{\LR{\latinfont QR}}
+\renewcommand{\Hyp}{\LR{\latinfont Hyp}}
+
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\NewDocumentCommand{\olpart}{o m m}{%
+  \gdef\pspart{#2}\gdef\pschapter{}\gdef\pssection{}%
+  \IfNoValueTF{#1}{\part{#3}}{\part[#1]{#3}}%
+  \label{#2:::part}}
+\NewDocumentCommand{\olchapter}{o m m m}{%
+  \gdef\pspart{#2}\gdef\pschapter{#3}\gdef\pssection{}%
+  \IfNoValueTF{#1}{\chapter{#4}}{\chapter[#1]{#4}}%
+  \label{#2:#3::chap}}
+\NewDocumentCommand{\olsection}{o m}{%
+  \IfNoValueTF{#1}{\section{#2}}{\section[#1]{#2}}%
+  \label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+\makeatletter
+\newcommand{\olpseganchor}[2]{%
+  \protected@write\@auxout{}{%
+    \string\newlabel{olpseg:#1:#2}{{}{\thepage}{}{}{}}}}
+\makeatother
+\NewDocumentCommand{\olref}{o o o m}{\begingroup
+  \IfNoValueTF{#1}{\edef\pskey{\pspart:\pschapter:\pssection:#4}}{%
+    \IfNoValueTF{#2}{\edef\pskey{\pspart:\pschapter:#1:#4}}{%
+      \IfNoValueTF{#3}{\edef\pskey{\pspart:#1:#2:#4}}{\edef\pskey{#1:#2:#3:#4}}}}%
+  \ifcsname r@\pskey\endcsname
+    \LR{\ref{\pskey}}%
+  \else
+    \emph{ناحل شوې بهرنۍ حواله}%
+  \fi
+  \endgroup}
+\let\Olref\olref
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\providecommand{\OLEndChapterHook}{}
+\providecommand{\OLEndPartHook}{}
+\newcommand{\gitissue}[1]{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{issue \##1}}
+
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.46\textwidth}
+\NewDocumentCommand{\olasset}{O{\olphotowidth} m}{%
+  \centering\begin{LTR}\centering\resizebox{#1}{!}{\input{#2}}\end{LTR}}
+
+\renewenvironment{prooftree}
+  {\begin{center}\begin{LTR}\bottomAlignProof}
+  {\DisplayProof\end{LTR}\end{center}}
+\newenvironment{oltableau}
+  {\center\LTR\tableau{}}
+  {\endtableau\endLTR\endcenter}
+
+\newtheorem{thm}{قضيه}[chapter]
+\newtheorem{lem}[thm]{لم}
+\newtheorem{prop}[thm]{قضيه}
+\newtheorem{cor}[thm]{نتيجه}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{تعريف}
+\newtheorem{ex}[thm]{بېلګه}
+\newtheorem{prob}[thm]{تمرين}
+\newtheorem{rem}[thm]{يادونه}
+\crefname{part}{برخه}{برخې}
+\crefname{chapter}{باب}{بابونه}
+\crefname{section}{برخه}{برخې}
+\crefname{thm}{قضيه}{قضيې}
+\crefname{lem}{لم}{لمې}
+\crefname{prop}{قضيه}{قضيې}
+\crefname{cor}{نتيجه}{نتيجې}
+\crefname{defn}{تعريف}{تعريفونه}
+\crefname{ex}{بېلګه}{بېلګې}
+\crefname{prob}{تمرين}{تمرينونه}
+\crefname{rem}{يادونه}{يادونې}
+\newcommand{\crefpairconjunction}{ او }
+\newcommand{\crefmiddleconjunction}{، }
+\newcommand{\creflastconjunction}{ او }
+\newcommand{\crefpairgroupconjunction}{ او }
+\newcommand{\crefmiddlegroupconjunction}{، }
+\newcommand{\creflastgroupconjunction}{ او }
+\newcommand{\crefrangeconjunction}{ تر }
+\newenvironment{defish}{\begin{framed}}{\end{framed}}
+\newenvironment{editorial}{\begin{framed}\textbf{ادارتي يادونه۔}\enspace}{\end{framed}}
+\newenvironment{history}{\begin{framed}\textbf{تاريخي يادونه۔}\enspace}{\end{framed}}
+\newenvironment{explain}{}{}
+\newenvironment{intro}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{derivation}{%
+  \par\smallskip\begin{LTR}\begin{tabular}{@{}rll@{}}}
+  {\end{tabular}\end{LTR}\par\smallskip}
+
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\tablename}{جدول}
+\renewcommand{\partname}{برخه}
+\renewcommand{\chaptername}{باب}
+\renewcommand{\contentsname}{فهرست}
+\renewcommand{\bibname}{\RL{\normalfont سرچينې}}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.8em}
+\renewcommand{\@tocrmarg}{4.6em}
+\makeatother
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{8em}
+\hfuzz=5pt
+\linespread{1.12}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\small خلاص منطق — پښتو (پاکستان)}
+\fancyhead[LE,RO]{\small له بنسټونو تر محاسبويت}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\tracinglostchars=3
+\setRTL
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{22mm}
+{\Huge خلاص منطق}\par\bigskip
+{\Large پښتو — پاکستان}\par\bigskip
+{\LARGE له بنسټونو تر محاسبويت او د ټيورينګ ماشينونو پېژندګلو}\par\bigskip
+د ماشيني ژباړې د روان کار ټوليزه نسخه
+\end{center}
+\bigskip
+په دې ټوليزه لوستيزه نسخه کښې له OLP-0001 څخه تر OLP-0255 پورې
+ټول ژباړل شوي سرچينيز واحدونه شامل دي۔ دا OLP_READER_UNITS واحدونه د
+خلاص منطق د پروژې لومړنۍ مادې، ساده سټ نظريه، بياني او لومړۍ درجې
+منطق، د ثبوت نظامونه، موډل نظريه، محاسبويت، او د ټيورينګ ماشينونو
+لومړنۍ پېژندګلو رانغاړي۔ د ۷۲۲ واحدونو بشپړه ژباړه لا روانه ده۔
+
+\begin{LTR}\latinfont\small
+Independent Pashto (Pakistan) machine translation of Open Logic Project
+revision \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}. This cumulative
+work-in-progress reader contains OLP_READER_UNITS source units (OLP-0001
+through OLP-0255). It uses the frozen upstream default profile: first-order
+logic, all primitive connectives and quantifiers, all four proof systems,
+and the default mathematics, computer-science, philosophy, novice, lambda,
+and Turing-machine selections. Pakistani usage is primary; Afghan Pashto
+sources are labelled regional comparators. Specialist terminology remains
+openly reviewable where exact native technical attestation is sparse. No
+native-reader review or upstream endorsement is claimed.
+
+Original text and adaptation: Creative Commons Attribution 4.0 International,
+subject to the component notices preserved with the source snapshot.
+\href{https://openlogicproject.org/}{Open Logic Project}.\quad
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.\quad
+\href{https://doi.org/10.5281/zenodo.22307197}{Edition lineage}.
+\end{LTR}
+\end{titlepage}
+\tableofcontents
+\clearpage

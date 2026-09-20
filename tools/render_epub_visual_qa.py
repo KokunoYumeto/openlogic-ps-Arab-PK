@@ -14,10 +14,25 @@ from playwright.sync_api import sync_playwright
 CASES = (
     ("title", "title.xhtml", "body", 0),
     ("navigation", "nav.xhtml", "nav", 0),
-    ("proof-tree", "chapter-03.xhtml", ".proof-tree", 0),
-    ("existential-rule", "chapter-04.xhtml", ".proof-rules", 6),
-    ("tableau", "chapter-05.xhtml", ".tableau", 0),
-    ("completeness", "chapter-07.xhtml", "main", 0),
+    ("sets-diagram", "chapter-01.xhtml", ".figure", 0),
+    ("relations-diagram", "chapter-02.xhtml", ".figure", 0),
+    ("function-diagram", "chapter-03.xhtml", ".figure", 0),
+    ("proof-system-overview", "chapter-08.xhtml", ".proof-tree", 0),
+    ("sequent-calculus-rules", "chapter-09.xhtml", ".proof-rules", 3),
+    ("sequent-proof-tree", "chapter-09.xhtml", ".proof-tree", 20),
+    ("natural-deduction", "chapter-10.xhtml", ".proof-tree", 25),
+    ("tableau", "chapter-11.xhtml", ".tableau", 10),
+    ("axiomatic-derivation", "chapter-12.xhtml", ".derivation", 2),
+    ("completeness", "chapter-13.xhtml", ".semantic.thm", 0),
+    ("syntax-table", "chapter-15.xhtml", ".data-table", 0),
+    ("first-order-semantics", "chapter-16.xhtml", ".semantic.defn", 4),
+    ("model-theory", "chapter-19.xhtml", ".semantic.thm", 2),
+    ("interpolation-diagram", "chapter-21.xhtml", ".figure", 0),
+    ("lindstrom-diagram", "chapter-22.xhtml", ".figure", 0),
+    ("recursive-functions", "chapter-23.xhtml", ".semantic.defn", 1),
+    ("computability-history", "chapter-24.xhtml", ".history", 0),
+    ("turing-tape", "chapter-25.xhtml", ".figure", 0),
+    ("turing-state-machine", "chapter-25.xhtml", ".figure", 4),
 )
 
 VIEWPORTS = (
@@ -67,6 +82,10 @@ def main() -> None:
                 page.on("pageerror", lambda error: page_errors.append(str(error)))
                 url = f"{args.base_url.rstrip('/')}/{document}"
                 page.goto(url, wait_until="networkidle")
+                page.evaluate("document.fonts.ready")
+                page.wait_for_function(
+                    "Array.from(document.images).every((image) => image.complete)"
+                )
                 target = page.locator(selector).nth(index)
                 target.wait_for(state="visible")
                 target.scroll_into_view_if_needed()
@@ -76,6 +95,16 @@ def main() -> None:
                 if box is None:
                     raise RuntimeError(f"No visible box for {selector} in {document}")
                 document_height = page.evaluate("document.documentElement.scrollHeight")
+                document_width = page.evaluate("document.documentElement.scrollWidth")
+                viewport_client_width = page.evaluate(
+                    "document.documentElement.clientWidth"
+                )
+                image_count = page.locator("img").count()
+                broken_image_count = page.evaluate(
+                    "Array.from(document.images).filter((image) => "
+                    "image.complete && image.naturalWidth === 0).length"
+                )
+                mathml_count = page.locator("math").count()
                 top = max(0, box["y"] - 180)
                 height = min(viewport_height, document_height - top)
                 output = args.output_dir / f"{viewport_name}-{name}.png"
@@ -104,9 +133,16 @@ def main() -> None:
                         "document_title": page.title(),
                         "html_lang": page.locator("html").get_attribute("lang"),
                         "html_dir": page.locator("html").get_attribute("dir"),
-                        "horizontal_overflow": page.evaluate(
-                            "document.documentElement.scrollWidth > document.documentElement.clientWidth"
+                        "computed_body_direction": page.locator("body").evaluate(
+                            "element => getComputedStyle(element).direction"
                         ),
+                        "document_width": document_width,
+                        "viewport_client_width": viewport_client_width,
+                        "horizontal_overflow": document_width > viewport_client_width,
+                        "image_count": image_count,
+                        "broken_image_count": broken_image_count,
+                        "mathml_count": mathml_count,
+                        "target_box": box,
                         "console_errors": console_errors,
                         "page_errors": page_errors,
                         "screenshot": str(output),
@@ -120,7 +156,7 @@ def main() -> None:
         browser.close()
 
     receipt = {
-        "schema": "openlogic-ps-Arab-PK-epub-visual-qa/1",
+        "schema": "openlogic-ps-Arab-PK-epub-visual-qa/2",
         "browser": {"executable": str(args.browser), "version": browser_version},
         "cases": records,
     }

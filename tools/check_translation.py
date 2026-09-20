@@ -171,15 +171,22 @@ if pubpath.exists():
  report['publication_coverage']['reader_units']=report['translation_coverage']['published']
  report['publication_coverage']['source_snapshot_units']=len(public_source_ids)
  report['publication_verified']=pub.get('verified',False)
-v51path=STATE/'V051_RELEASE_CHECKPOINT.json'
-if v51path.exists():
- v51=json.loads(v51path.read_text(encoding='utf-8'))
- if v51.get('status')=='published-and-verified':
-  historical_source_units=int(v51['coverage']['source_snapshot_units'])
-  report['publication_coverage']['source_snapshot_units']=max(report['publication_coverage']['source_snapshot_units'],historical_source_units)
-  report['publication_coverage']['source_snapshot_release']=v51['release']['tag']
-  report['publication_coverage']['source_snapshot_commit']=v51['release']['commit']
-  report['publication_coverage']['source_snapshot_disposition']='immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes'
-  report['publication_verified']=True
+release_checkpoints=[]
+for checkpoint_path in (STATE/'V051_RELEASE_CHECKPOINT.json',STATE/'V060_RELEASE_CHECKPOINT.json'):
+ if checkpoint_path.exists():
+  checkpoint=json.loads(checkpoint_path.read_text(encoding='utf-8'))
+  if checkpoint.get('status')=='published-and-verified':
+   release_checkpoints.append(checkpoint)
+if release_checkpoints:
+ latest=max(release_checkpoints,key=lambda item:(int(item['coverage']['reader_units']),int(item['coverage']['source_snapshot_units'])))
+ historical_source_units=int(latest['coverage']['source_snapshot_units'])
+ historical_reader_units=int(latest['coverage']['reader_units'])
+ report['translation_coverage']['published']=max(report['translation_coverage']['published'],historical_reader_units)
+ report['publication_coverage']['reader_units']=max(report['publication_coverage']['reader_units'],historical_reader_units)
+ report['publication_coverage']['source_snapshot_units']=max(report['publication_coverage']['source_snapshot_units'],historical_source_units)
+ report['publication_coverage']['source_snapshot_release']=latest['release']['tag']
+ report['publication_coverage']['source_snapshot_commit']=latest['release']['commit']
+ report['publication_coverage']['source_snapshot_disposition']='immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes'
+ report['publication_verified']=True
 (OUTPUT/'QA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\r\n')
 print(json.dumps({'units':len(results),'failures':[r for r in results if not all(r['checks'].values())],'aligned_blocks':len(alignment),'consultation_records':len(use)},ensure_ascii=False,indent=2))
