@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 141 high-priority entries from the complete 349-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 146 high-priority entries from the complete 365-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -655,6 +655,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0256; Turing Machines; `content/turing-machines/machines-computations/turing-machines.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/turing-machines.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0258; Unary Representation of Numbers; `content/turing-machines/machines-computations/unary-numbers.tex` source line(s) 30,43,74,76,84,85,88,91,222,230,231,232; `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex` target line(s) 14,25,29,42,67,73,75,83,84,85,86,87,89,144,189,191,194,201,231,233,235; page: pending stable pagination in a reader containing this unit
   - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 60,83,85,162; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 26,63,84,86,88,109,162,164; page: pending stable pagination in a reader containing this unit
+  - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 18,19; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PARTIAL-TOTAL
 
@@ -727,6 +728,8 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0197; computable-models; `content/model-theory/models-of-arithmetic/computable-models.tex` source line(s) 28; `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
   - OLP-0206; Compactness and L\"owenheim--Skolem Properties; `content/model-theory/lindstrom/ls-property.tex` source line(s) 25,116,119; `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex` target line(s) 24,116,120; page: pending stable pagination in a reader containing this unit
   - OLP-0238; Computably Enumerable Sets; `content/computability/computability-theory/ce-sets.tex` source line(s) 10,18; `ps-Arab-PK/content/computability/computability-theory/ce-sets.tex` target line(s) 10,13,18,37,39; page: pending stable pagination in a reader containing this unit
+  - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 13,92,94,126,138; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) 13,91,93,122,133; page: pending stable pagination in a reader containing this unit
 
 ## TERM-ENUMERATION
 
@@ -756,6 +759,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0231; The Normal Form Theorem; `content/computability/computability-theory/normal-form.tex` source line(s) 76; `ps-Arab-PK/content/computability/computability-theory/normal-form.tex` target line(s) 38,39,43,44,53,59,60; page: pending stable pagination in a reader containing this unit
   - OLP-0233; The Universal Partial Computable Function; `content/computability/computability-theory/universal-part-function.tex` source line(s) 30; `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex` target line(s) 31,32,36; page: pending stable pagination in a reader containing this unit
   - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 97,102,109; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) 60,61,106,107,121; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SET-SIZE
 
@@ -944,6 +948,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0034; Reduction; `content/sets-functions-relations/size-of-sets/reduction.tex` source line(s) 86,105,110,116; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex` target line(s) 11,14,27,48; page: pending stable pagination in a reader containing this unit
   - OLP-0040; Reduction; `content/sets-functions-relations/size-of-sets/reduction-alt.tex` source line(s) 89,108,120; `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex` target line(s) 11,14,28,49; page: pending stable pagination in a reader containing this unit
   - OLP-0243; Reducibility; `content/computability/computability-theory/reducibility.tex` source line(s) 27,29,31,57; `ps-Arab-PK/content/computability/computability-theory/reducibility.tex` target line(s) 18,26,27,53,59,64; page: pending stable pagination in a reader containing this unit
+  - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-NUMBERSETS
 
@@ -1433,6 +1438,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 49,50,51; page: pending stable pagination in a reader containing this unit
   - OLP-0179; Intuitionistic Logic; `content/first-order-logic/beyond/intuitionistic-logic.tex` source line(s) 42,49,59,61,66,75,77,78,99,100,101,103,104,105,106,107,111,115,160,170,181; `ps-Arab-PK/content/first-order-logic/beyond/intuitionistic-logic.tex` target line(s) 36,53,57,65,67,68,85,86,87,88,89,90,91,94,99,141,160; page: pending stable pagination in a reader containing this unit
   - OLP-0181; Other Logics; `content/first-order-logic/beyond/other-logics.tex` source line(s) line pending; `ps-Arab-PK/content/first-order-logic/beyond/other-logics.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 22,30,79,99,113,239,242,267,278,292,320; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 19,22,30,211,261; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1494,6 +1500,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0148; Soundness and Completeness; `content/first-order-logic/introduction/soundness-completeness.tex` source line(s) 11,32,34,36,40,43,46,50; `ps-Arab-PK/content/first-order-logic/introduction/soundness-completeness.tex` target line(s) 11,28,32,34,36,39,41,42,45,49,57; page: pending stable pagination in a reader containing this unit
   - OLP-0166; Semantic Notions; `content/first-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 15,25; `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 15,24,55; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1789,6 +1796,8 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0237; Computable Sets; `content/computability/computability-theory/computable-sets.tex` source line(s) 29; `ps-Arab-PK/content/computability/computability-theory/computable-sets.tex` target line(s) 31; page: pending stable pagination in a reader containing this unit
   - OLP-0240; There Are Non-Computable Sets; `content/computability/computability-theory/non-comp-set.tex` source line(s) 40,44,48; `ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex` target line(s) 52; page: pending stable pagination in a reader containing this unit
   - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 67,85,86,87; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 12; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -1836,6 +1845,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 1,15,16,17,18,19,20,22,23,30,31,32,33,34,39,45,55,63,64,68,69,74,75,79,80,84,86,93,97,110,125,165,180,204,208,229,233,234,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 15,17,18,19,20,22,30,31,33,38,53,61,64,68,74,75,79,84,85,90,95,107,121,122,158,198,201,207,220,224,225,229,230; page: pending stable pagination in a reader containing this unit
   - OLP-0189; partial-iso; `content/model-theory/basics/partial-iso.tex` source line(s) 1,20,88,94,110,114,116,119,124,126,127,149,151,178,179,182,183,186,187,190,196,199,202,204,205,208,211; `ps-Arab-PK/content/model-theory/basics/partial-iso.tex` target line(s) 17,23,27,45,48,67,70,88,111,115,117,128,151,153,163,184,185,190,199,205,207,211,214; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) 11,15,17,19,21,24,26,40,41,50,53,62,63,67,68,87; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) 21,25; page: pending stable pagination in a reader containing this unit
+  - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 13,14,27,39,41,50,51,53,54,70,76,81,85,114,126,140,168,177,181,184,191; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 13,30,38,39,207; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2184,6 +2194,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0254; Introduction; `content/turing-machines/machines-computations/introduction.tex` source line(s) 16,89,102,105; `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 1; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 47; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PRIMITIVE-RECURSION
 
@@ -2341,6 +2352,9 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 12,15; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 12; page: pending stable pagination in a reader containing this unit
   - OLP-0259; Halting States; `content/turing-machines/machines-computations/halting-states.tex` source line(s) 75; `ps-Arab-PK/content/turing-machines/machines-computations/halting-states.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 44; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 68; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,30,36,37,54,77,82,87,98,99,123,129,133,143; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,60,91,96,97,110,123,129,132; page: pending stable pagination in a reader containing this unit
+  - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 24,27,30; page: pending stable pagination in a reader containing this unit
 
 ## TERM-GENERAL-RECURSION-THEORY
 
@@ -2385,6 +2399,8 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 47; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 12,15; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 132; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0267; Universal Turing Machines; `content/turing-machines/undecidability/universal-tm.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/universal-tm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,36,37,98,99,123,129,133; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLE-SET-CHARACTERISTIC
 
@@ -2522,6 +2538,8 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 13,14,15,16,18,19,20,21,23,24,28,30,31,32,33,38,39,40,43,44,46,47,48,58,60,61,62,63,64,72,79,80,83; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 13,14,15,16,17,18,19,20,22,26,28,29,30,31,36,37,41,43,45,76,77,79,80; page: pending stable pagination in a reader containing this unit
   - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 10,13,15,16,21,25,27,31,32,33,34,35,36,46,47,49,53,54,62,64,68,70,71,72,81,84,89,91,92,93,94,95,103,107,109,115,116,117,118,119; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 10,13,15,20,24,27,30,31,32,33,34,35,44,45,46,47,48,50,52,57,64,66,84,110,112,163,164,165,171; page: pending stable pagination in a reader containing this unit
   - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) 10,12,14,15,16,18,21,22,23,24,25,30,32,33,34,35,38,41,42,44,45,46,49,52,53,54,56,57,58,59,63,65,73,74,75,76,77,78,79,80; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) 10,12,14,16,19,20,21,22,23,24,27,28,29,30,31,34,37,38,39,40,41,42,43,44,46,47,48,51,52,69,70,72,73,74,75; page: pending stable pagination in a reader containing this unit
+  - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 10,13,14,15,16,22,23,24,25,26,27,32,34,35,43,45,46,56,57,58,59,64,65,66,68,74,76,77,87,92,94,95,97,98,108,128,131,132,134,139; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) 10,13,14,15,21,22,24,25,27,57,58,59,64,66,87,91,92,93,95,96,105,123,126,129,135,141,142,144,147; page: pending stable pagination in a reader containing this unit
+  - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 10,13,17,20,22,23,25,40,41,42,46,60,63,65,68,76,94,98,101,106,122,133,134,135,136,152,154,159,162,163,164,165,190; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 10,13,16,19,21,38,40,57,60,62,63,66,75,92,96,104,109,119,130,131,132,133,148,149,150,151,154,155,156,159,160,162,163,164,178,182,190; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-DIAGRAM-CONFIGURATION
 
@@ -2551,6 +2569,8 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
 - Locations:
   - OLP-0257; Configurations and Computations; `content/turing-machines/machines-computations/configuration.tex` source line(s) 84,85,86,91,98; `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex` target line(s) 16,20,39,40,41,42,43,47,48,55,57,58,83,84,87,89,90,97; page: pending stable pagination in a reader containing this unit
   - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 45,80,81,93; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 40,42,77,78,90; page: pending stable pagination in a reader containing this unit
+  - OLP-0267; Universal Turing Machines; `content/turing-machines/undecidability/universal-tm.tex` source line(s) 40,63,67,121,135; `ps-Arab-PK/content/turing-machines/undecidability/universal-tm.tex` target line(s) 14,37,56,58,59,62,71,76,89,110,111,123; page: pending stable pagination in a reader containing this unit
+  - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 51; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 48,50,74,89,167,178; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-UNARY-COMPUTATION
 
@@ -2576,6 +2596,7 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
   - OLP-0260; Disciplined Machines; `content/turing-machines/machines-computations/disciplined-machines.tex` source line(s) 16,44,80,83; `ps-Arab-PK/content/turing-machines/machines-computations/disciplined-machines.tex` target line(s) 14,28,37,41,77,80; page: pending stable pagination in a reader containing this unit
   - OLP-0261; Combining Turing Machines; `content/turing-machines/machines-computations/combining-machines.tex` source line(s) 167; `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex` target line(s) 171; page: pending stable pagination in a reader containing this unit
   - OLP-0262; Variants of Turing Machines; `content/turing-machines/machines-computations/variants.tex` source line(s) 45; `ps-Arab-PK/content/turing-machines/machines-computations/variants.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 45; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 44; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-NONDETERMINISTIC-VARIANTS
 
@@ -2598,6 +2619,69 @@ This view contains 141 high-priority entries from the complete 349-entry decisio
 - Please double-check: In Pakistani Pashto mathematical prose, is «د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے» the clearest conventional rendering of “Church--Turing thesis / effective procedure / extensionally equivalent / Turing computable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
   - OLP-0263; The Church--Turing Thesis; `content/turing-machines/machines-computations/church-turing-thesis.tex` source line(s) 14,16,18,19,25,28,29,30,35,43; `ps-Arab-PK/content/turing-machines/machines-computations/church-turing-thesis.tex` target line(s) 10,19,21,22,23,26,28,32,34,36,38,39; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-STANDARD-INDEXING
+
+- Source term or sense: standard Turing machine / finite description / enumeration / index
+- Choice: معياري ټيورينګ ماشين / متناهي بيان / شمېره / شاخص
+- Why provisional: function, countability and enumeration roles are supported by regional sources and Pakistani prose governs register; the exact standard-machine compound remains provisional
+- Rationale: Use معياري for a machine whose states and symbols are positive integers, شمېره for the fixed effective enumeration, and شاخص for a position coding a machine description. Keep a machine's possibly many indices distinct from its behavior.
+- Alternatives: نورمال ټيورينګ ماشين د معياري پر ځاے; پروګرام شمېره د شاخص پر ځاے; کوډ د متناهي بيان پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «معياري ټيورينګ ماشين / متناهي بيان / شمېره / شاخص» the clearest conventional rendering of “standard Turing machine / finite description / enumeration / index” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0266; Enumerating Turing Machines; `content/turing-machines/undecidability/enumerating-tms.tex` source line(s) 89,95,102,108,109,128,140; `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex` target line(s) 14,92,93,95,105,106,123,129,135,141; page: pending stable pagination in a reader containing this unit
+  - OLP-0267; Universal Turing Machines; `content/turing-machines/undecidability/universal-tm.tex` source line(s) 15,16,18,20,21,25,26,30,32,34,35,36,37,39,40,47,48,51,75,80,89,123; `ps-Arab-PK/content/turing-machines/undecidability/universal-tm.tex` target line(s) 13,15,16,19,21,24,25,29,31,33,34,35,36,37,38,39,41,43,44,47,48,68,71,73,74,83,113; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-UNIVERSAL-SIMULATION
+
+- Source term or sense: universal Turing machine / decode / simulate / current state and head position
+- Choice: نړيوال ټيورينګ ماشين / ناکوډول / مشابه چلول / اوسنی حالت او د سر موقعيت
+- Why provisional: universal-function, coding, function and relation concepts are regionally supported; the exact machine-simulation compounds remain provisional
+- Rationale: Use نړيوال for one machine that decodes an index and simulates the indexed machine on the supplied input. Similarity of execution is expressed with مشابه چلول, preserving divergence and output behavior rather than merely reproducing a description.
+- Alternatives: عمومي ټيورينګ ماشين د نړيوال پر ځاے; کوډ پرانيستل د ناکوډولو پر ځاے; شبيه‌سازي د مشابه چلولو پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «نړيوال ټيورينګ ماشين / ناکوډول / مشابه چلول / اوسنی حالت او د سر موقعيت» the clearest conventional rendering of “universal Turing machine / decode / simulate / current state and head position” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0267; Universal Turing Machines; `content/turing-machines/undecidability/universal-tm.tex` source line(s) 10,51,75,90,91,96,99; `ps-Arab-PK/content/turing-machines/undecidability/universal-tm.tex` target line(s) 10,47,71,84,89; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-HALTING-DIAGONAL
+
+- Source term or sense: halting function / halting problem / self-input diagonal / unsolvable
+- Choice: د درېدنې تابع / د درېدنې مسئله / پر خپل شاخص قطري استدلال / ناحل
+- Why provisional: function, diagonal and induction concepts are supported by regional sources; exact Turing-machine halting compounds remain provisional
+- Rationale: Use د درېدنې تابع for the total yes/no function on a machine index and input, and د درېدنې مسئله for the corresponding decision problem. The diagonal s(e) asks about M_e on e itself; ناحل means no Turing machine decides every instance.
+- Alternatives: د تم کېدو تابع; د توقف مسئله; قطرول د قطري استدلال پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «د درېدنې تابع / د درېدنې مسئله / پر خپل شاخص قطري استدلال / ناحل» the clearest conventional rendering of “halting function / halting problem / self-input diagonal / unsolvable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0268; The Halting Problem; `content/turing-machines/undecidability/halting-problem.tex` source line(s) 10,22,25,26,36,37,98,99,119,123,129,133; `ps-Arab-PK/content/turing-machines/undecidability/halting-problem.tex` target line(s) 10,21,24,35,37,68,73,76,82,84,85,88,95,96,108,117,118,123,129,130,132; page: pending stable pagination in a reader containing this unit
+  - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 14,16,26,31,33,36,47,52,54,58,80,282,302,308,327,338; page: pending stable pagination in a reader containing this unit
+
+## TERM-FIRST-ORDER-DECISION-PROBLEM
+
+- Source term or sense: decision problem / validity function / reduce the halting problem / unsolvable
+- Choice: د پرېکړې مسئله / د اعتبار تابع / د درېدنې مسئله راکمول / ناحل
+- Why provisional: validity, entailment, proof and effective-decision roles are regionally supported; the historical decision-problem compound remains provisional
+- Rationale: Use د پرېکړې مسئله for the existence of an effective yes/no procedure for first-order validity. Preserve the reduction direction: a validity decider would compute the halting function through the effectively constructed representation sentence.
+- Alternatives: د فيصلې مسئله; د اعتبار ټاکونکې تابع; تقليل د راکمونې پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «د پرېکړې مسئله / د اعتبار تابع / د درېدنې مسئله راکمول / ناحل» the clearest conventional rendering of “decision problem / validity function / reduce the halting problem / unsolvable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0264; tur; `content/turing-machines/undecidability/undecidability.tex` source line(s) line pending; `ps-Arab-PK/content/turing-machines/undecidability/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0265; Introduction; `content/turing-machines/undecidability/introduction.tex` source line(s) 92,93; `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex` target line(s) 92; page: pending stable pagination in a reader containing this unit
+  - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 10,15,18,24,28,29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 10,15,17,22,27,28; page: pending stable pagination in a reader containing this unit
+
+## TERM-TURING-LOGICAL-REPRESENTATION
+
+- Source term or sense: represent a Turing machine / numeral / successor / configuration sentence / verification
+- Choice: د ټيورينګ ماشين تمثيل / عددنښه / تالي / د تشکيل غونډله / تاييد
+- Why provisional: predicate, successor, semantics, proof and induction roles are supported by regional sources; the exact representation compounds remain provisional
+- Rationale: Use binary Q and S predicates for state/head and tape contents, عددنښه for the canonical successor term, and د تشکيل غونډله for C(M,w,n). Verification combines induction on execution steps with a natural-number structure whose predicates record the actual run.
+- Alternatives: د ماشين څرګندونه د تمثيل پر ځاے; عددي نښه د عددنښې پر ځاے; جانشين د تالي پر ځاے
+- Please double-check: In Pakistani Pashto mathematical prose, is «د ټيورينګ ماشين تمثيل / عددنښه / تالي / د تشکيل غونډله / تاييد» the clearest conventional rendering of “represent a Turing machine / numeral / successor / configuration sentence / verification” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0270; Representing Turing Machines; `content/turing-machines/undecidability/representing-tms.tex` source line(s) 10,16,28,32,41,53,54,91,111; `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex` target line(s) 10,15,26,31,39,50,51,79,89,109; page: pending stable pagination in a reader containing this unit
+  - OLP-0271; Verifying the Representation; `content/turing-machines/undecidability/verification.tex` source line(s) 3,10,30,33,35,37,38,40,51,57,75,87,119,198,269,272,282; `ps-Arab-PK/content/turing-machines/undecidability/verification.tex` target line(s) 10,13,30,33,34,35,37,39,52,59,80,92,127,134,180,197,208,288,291,301,313; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

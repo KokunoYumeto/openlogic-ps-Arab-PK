@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 263 of 722 source units are translated drafts. This log contains 148 terminology entries and 201 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 271 of 722 source units are translated drafts. This log contains 153 terminology entries and 212 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1335,6 +1335,51 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د چرچ--ټيورينګ دعوه; مؤثره کړنلاره; د بېروني ارزښت له مخې معادل
 - Review question: In Pakistani Pashto mathematical prose, is «د چرچ--ټيورينګ اصل / اغېزمنه کړنلاره / په امتدادي ډول معادل / د ټيورينګ په معنا محاسبه کېدونکے» the clearest conventional rendering of “Church--Turing thesis / effective procedure / extensionally equivalent / Turing computable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete formal Turing-machine, computation, combination and variants source and language review
+
+## TERM-TURING-STANDARD-INDEXING
+
+- Type: terminology
+- Choice: معياري ټيورينګ ماشين / متناهي بيان / شمېره / شاخص
+- Uncertainty: function, countability and enumeration roles are supported by regional sources and Pakistani prose governs register; the exact standard-machine compound remains provisional
+- Alternatives: نورمال ټيورينګ ماشين د معياري پر ځاے; پروګرام شمېره د شاخص پر ځاے; کوډ د متناهي بيان پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «معياري ټيورينګ ماشين / متناهي بيان / شمېره / شاخص» the clearest conventional rendering of “standard Turing machine / finite description / enumeration / index” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
+
+## TERM-TURING-UNIVERSAL-SIMULATION
+
+- Type: terminology
+- Choice: نړيوال ټيورينګ ماشين / ناکوډول / مشابه چلول / اوسنی حالت او د سر موقعيت
+- Uncertainty: universal-function, coding, function and relation concepts are regionally supported; the exact machine-simulation compounds remain provisional
+- Alternatives: عمومي ټيورينګ ماشين د نړيوال پر ځاے; کوډ پرانيستل د ناکوډولو پر ځاے; شبيه‌سازي د مشابه چلولو پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «نړيوال ټيورينګ ماشين / ناکوډول / مشابه چلول / اوسنی حالت او د سر موقعيت» the clearest conventional rendering of “universal Turing machine / decode / simulate / current state and head position” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
+
+## TERM-TURING-HALTING-DIAGONAL
+
+- Type: terminology
+- Choice: د درېدنې تابع / د درېدنې مسئله / پر خپل شاخص قطري استدلال / ناحل
+- Uncertainty: function, diagonal and induction concepts are supported by regional sources; exact Turing-machine halting compounds remain provisional
+- Alternatives: د تم کېدو تابع; د توقف مسئله; قطرول د قطري استدلال پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د درېدنې تابع / د درېدنې مسئله / پر خپل شاخص قطري استدلال / ناحل» the clearest conventional rendering of “halting function / halting problem / self-input diagonal / unsolvable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
+
+## TERM-FIRST-ORDER-DECISION-PROBLEM
+
+- Type: terminology
+- Choice: د پرېکړې مسئله / د اعتبار تابع / د درېدنې مسئله راکمول / ناحل
+- Uncertainty: validity, entailment, proof and effective-decision roles are regionally supported; the historical decision-problem compound remains provisional
+- Alternatives: د فيصلې مسئله; د اعتبار ټاکونکې تابع; تقليل د راکمونې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د پرېکړې مسئله / د اعتبار تابع / د درېدنې مسئله راکمول / ناحل» the clearest conventional rendering of “decision problem / validity function / reduce the halting problem / unsolvable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
+
+## TERM-TURING-LOGICAL-REPRESENTATION
+
+- Type: terminology
+- Choice: د ټيورينګ ماشين تمثيل / عددنښه / تالي / د تشکيل غونډله / تاييد
+- Uncertainty: predicate, successor, semantics, proof and induction roles are supported by regional sources; the exact representation compounds remain provisional
+- Alternatives: د ماشين څرګندونه د تمثيل پر ځاے; عددي نښه د عددنښې پر ځاے; جانشين د تالي پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «د ټيورينګ ماشين تمثيل / عددنښه / تالي / د تشکيل غونډله / تاييد» the clearest conventional rendering of “represent a Turing machine / numeral / successor / configuration sentence / verification” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete Turing-machine undecidability source and language review
 
 ## DEC-OLFUN-001
 
@@ -3090,6 +3135,105 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-047 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes
+
+## DEC-OLCMP-048
+
+- Type: source-correction
+- Choice: supplies the missing auxiliary in the claim that some problems cannot be effectively decided
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-048 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-049
+
+- Type: source-correction
+- Choice: removes the duplicated noun after the machine variable
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-049 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-050
+
+- Type: source-correction
+- Choice: asks why every Turing machine can be simulated by a standard machine
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-050 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-051
+
+- Type: source-correction
+- Choice: uses A(x-prime,y), excluding the square x+1 that is actually overwritten
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-051 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-052
+
+- Type: source-correction
+- Choice: renders the intended phrase 'after y steps'
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-052 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-053
+
+- Type: source-correction
+- Choice: restores !T(M,w) as the representation sentence in the concluding entailment
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-053 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-054
+
+- Type: source-correction
+- Choice: states that M is in state q and scans square m
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-054 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-055
+
+- Type: source-correction
+- Choice: uses the established q and sigma pair and restores the missing Obj marker on S
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-055 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-056
+
+- Type: source-correction
+- Choice: allows n equal to zero in the induction step
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-056 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-057
+
+- Type: source-correction
+- Choice: uses semantic entailment in both invocations of the less-than consequence
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-057 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
+
+## DEC-OLCMP-058
+
+- Type: source-correction
+- Choice: excludes the written x-prime square, instantiates A at l-prime, and uses the current q and q-prime states in the zero-square branch
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-058 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes
 
 ## DEC-REL-I
 

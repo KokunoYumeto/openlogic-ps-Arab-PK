@@ -1,0 +1,150 @@
+{
+  "schema": "ps-turing-undecidability-draft/1",
+  "utc": "2026-09-20T03:55:40.571267+00:00",
+  "status": "OLP-0264 through OLP-0271 manually translated, source-reviewed, and accepted by standalone, cumulative, repository and two independent canonical-replay QA passes",
+  "batch_id": "PS-B052-TURING-UNDECIDABILITY",
+  "units": [
+    {
+      "unit_id": "OLP-0264",
+      "path": "content/turing-machines/undecidability/undecidability.tex",
+      "source_sha256": "99eca564cdccc46d4c9bf724df75ab3f206d7c9dccc66c7df7eb1fc4d20120ae",
+      "translation_sha256": "ce5e6ff2ecbd542a15a2f8fc1910ac0d955141dedf9a40a50970c91ca408c37f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0265",
+      "path": "content/turing-machines/undecidability/introduction.tex",
+      "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "translation_sha256": "60a88849af83538285a76baa38e3a38801df0a693716acf9d76d2b1ff4b251ad",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-048",
+        "OLCMP-049"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0266",
+      "path": "content/turing-machines/undecidability/enumerating-tms.tex",
+      "source_sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
+      "translation_sha256": "3404d5f161750fceb46c6e5e052e3af8ea1123d12bc6dcf302f0b51c3d8aa10e",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-050"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0267",
+      "path": "content/turing-machines/undecidability/universal-tm.tex",
+      "source_sha256": "aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6",
+      "translation_sha256": "c296feea57c5ba0b1eaebb4a1c828b2eb205562b352dbb28f3c3036deede653d",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0268",
+      "path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "translation_sha256": "6d480abb05d369e77b6e03045680314922d02d58c7b74774cb1dae3a7e19fc92",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0269",
+      "path": "content/turing-machines/undecidability/decision-problem.tex",
+      "source_sha256": "e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3",
+      "translation_sha256": "c08220059bd4113a1823f73a694c9b0a1ce75619418d8dca648569d00f7865ed",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0270",
+      "path": "content/turing-machines/undecidability/representing-tms.tex",
+      "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+      "translation_sha256": "314472ef9c47b5e6e4b36abe50c5b05359dcb93380fbf6c3dbe45ce2703ceca0",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-051",
+        "OLCMP-052"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    },
+    {
+      "unit_id": "OLP-0271",
+      "path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "translation_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLCMP-053",
+        "OLCMP-054",
+        "OLCMP-055",
+        "OLCMP-056",
+        "OLCMP-057",
+        "OLCMP-058"
+      ],
+      "status": "structural-pass-with-documented-source-correction"
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 263,
+    "current_reviewed_draft_units": 8,
+    "prospective_total_after_registration": 271,
+    "cumulative_draft_units": 271,
+    "remaining_units": 451,
+    "visually_accepted_units": 255,
+    "published_units": 255
+  },
+  "structural_summary": {
+    "clean_units": [
+      "OLP-0264",
+      "OLP-0267",
+      "OLP-0268",
+      "OLP-0269"
+    ],
+    "documented_correction_units": [
+      "OLP-0265",
+      "OLP-0266",
+      "OLP-0270",
+      "OLP-0271"
+    ]
+  },
+  "retractions": {
+    "OLINF-002": "prior false alert remains absent",
+    "OLSIZ-011": "prior false alert remains absent"
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_UNDECIDABILITY_SOURCE_CHECK.json",
+    "source_check_sha256": "243e299b1925893ea5e5b4753a4f101119c2726f633c0a3f7d0bce14e102d00f",
+    "draft_checker_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\check_turing_undecidability_drafts.py",
+    "draft_checker_sha256": "9016a9f3f8fd3824f8655b9d9456375f1b18a3360a556625b6978208271ba76c",
+    "retraction_ledger_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SOURCE_AUDIT_RETRACTIONS.jsonl",
+    "retraction_ledger_sha256": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "draft_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_UNDECIDABILITY_DRAFT_CHECK.json",
+    "draft_check_sha256": "49318951cc14fcad636d4545a2cde4b84c1e374b18c5a3638ad19a643365cbd8",
+    "repository_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_UNDECIDABILITY_REPOSITORY_CHECK.json",
+    "repository_check_sha256": "a0ca43e61386ed98abad29b2de02dbdd9c7a078bdf7d366ed5dbfd2194a70cfc",
+    "canonical_replay_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\TURING_UNDECIDABILITY_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "194bce1bba1b01c9dec51abff10456992a3e32ad5c0bafc1bd5eb3ff29513bfb",
+    "translation_review_workflow_sha256": "b8765a7a1ace0ab8acecf5f6dd6577f64f7cdfeb9ca21c02130d644d22544178",
+    "canonical_decisions_sha256": "7c7427981aea0c580257608424a3038546815778128cce51c72e7b8392a5cc9d",
+    "canonical_qa_sha256": "eab324c95f5125524920e5a9fe80623a2171691f872aa88b6d502ac924ca6258"
+  },
+  "registration_status": "complete; all seven canonical projection artifacts reproduce byte-for-byte; OLSIZ-011 and OLINF-002 retractions remain verified across active surfaces",
+  "next_action": "Commit and push B052, then translate and source-review OLP-0272 through OLP-0273 without altering the verified v0.6.0 release bytes."
+}

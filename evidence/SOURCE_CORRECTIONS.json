@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0263; formal Turing machines, computations, combinations and variants are structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-20T02:56:29.667449+00:00",
+  "status": "adopted through OLP-0271; Turing-machine undecidability is structurally drafted and source-reviewed; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
+  "adopted_utc": "2026-09-20T03:43:18.812779+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -4540,6 +4540,253 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
       "formula_policy": "Only localized condition prose changes. The displayed terms, all mathematical tokens and the construction outside that condition remain identical.",
       "decision_timing": "contemporaneous owner semantic trace against the complete formal Turing-machine, computation, combination and variants batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-048",
+      "unit_id": "OLP-0265",
+      "classification": "missing_auxiliary_in_effective_decidability_clause",
+      "source_path": "content/turing-machines/undecidability/introduction.tex",
+      "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "source_locator": "content/turing-machines/undecidability/introduction.tex:43-49",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/introduction.tex",
+      "target_line_1based": 52,
+      "target_sha256": "60a88849af83538285a76baa38e3a38801df0a693716acf9d76d2b1ff4b251ad",
+      "mode": "supply-missing-auxiliary-plus-adjacent-note",
+      "translation_change": "supplies the missing auxiliary in the claim that some problems cannot be effectively decided",
+      "counterexample": "The source phrase 'cannot effectively decided' is grammatically incomplete; the intended modal passive follows from the immediately parallel computability clause.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Only the grammatical auxiliary is supplied; no formula changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-049",
+      "unit_id": "OLP-0265",
+      "classification": "redundant_machine_noun_after_machine_variable",
+      "source_path": "content/turing-machines/undecidability/introduction.tex",
+      "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "source_locator": "content/turing-machines/undecidability/introduction.tex:78-83",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/introduction.tex",
+      "target_line_1based": 81,
+      "target_sha256": "60a88849af83538285a76baa38e3a38801df0a693716acf9d76d2b1ff4b251ad",
+      "mode": "remove-redundant-noun-plus-adjacent-note",
+      "translation_change": "removes the duplicated noun after the machine variable",
+      "counterexample": "The source asks whether 'M machine' would halt, although M already denotes the machine throughout the paragraph.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Only the redundant prose noun is removed; no formula changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-050",
+      "unit_id": "OLP-0266",
+      "classification": "exercise_says_a_machine_is_computed_rather_than_simulated",
+      "source_path": "content/turing-machines/undecidability/enumerating-tms.tex",
+      "source_sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
+      "source_locator": "content/turing-machines/undecidability/enumerating-tms.tex:145-151",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex",
+      "target_line_1based": 146,
+      "target_sha256": "3404d5f161750fceb46c6e5e052e3af8ea1123d12bc6dcf302f0b51c3d8aa10e",
+      "mode": "replace-computed-with-simulated-plus-adjacent-note",
+      "translation_change": "asks why every Turing machine can be simulated by a standard machine",
+      "counterexample": "Machines compute functions; a renamed standard machine simulates another machine's behavior. The preceding proof uses renaming for exactly this purpose.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Only the prose relation between machines changes; every formula and diagram remains identical.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-051",
+      "unit_id": "OLP-0270",
+      "classification": "left_move_axiom_excludes_the_destination_instead_of_the_written_square",
+      "source_path": "content/turing-machines/undecidability/representing-tms.tex",
+      "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+      "source_locator": "content/turing-machines/undecidability/representing-tms.tex:139-158",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex",
+      "target_line_1based": 153,
+      "target_sha256": "314472ef9c47b5e6e4b36abe50c5b05359dcb93380fbf6c3dbe45ce2703ceca0",
+      "mode": "replace-unchanged-square-argument-plus-adjacent-note",
+      "translation_change": "uses A(x-prime,y), excluding the square x+1 that is actually overwritten",
+      "counterexample": "The antecedent scans x+1 and the consequent writes sigma-prime at x+1 while moving the head to x. A(x,y) would preserve the newly written x+1 square and instead exempt x, contradicting the same consequent.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "One displayed left-move axiom changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x,y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\end{align*}"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-052",
+      "unit_id": "OLP-0270",
+      "classification": "typographical_ofter_in_temporal_gloss",
+      "source_path": "content/turing-machines/undecidability/representing-tms.tex",
+      "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+      "source_locator": "content/turing-machines/undecidability/representing-tms.tex:159-166",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex",
+      "target_line_1based": 166,
+      "target_sha256": "314472ef9c47b5e6e4b36abe50c5b05359dcb93380fbf6c3dbe45ce2703ceca0",
+      "mode": "repair-after-typo-plus-adjacent-note",
+      "translation_change": "renders the intended phrase 'after y steps'",
+      "counterexample": "The source word 'ofter' is a typographical error in a repeated temporal construction.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Only the prose typo is repaired; no formula changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes"
+    },
+    {
+      "id": "OLCMP-053",
+      "unit_id": "OLP-0271",
+      "classification": "missing_formula_marker_in_concluding_entailment",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:31-42",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 42,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "restore-formula-marker-plus-adjacent-note",
+      "translation_change": "restores !T(M,w) as the representation sentence in the concluding entailment",
+      "counterexample": "Every premise and conclusion in the argument uses !T(M,w); T(M,w) is not the defined object-language sentence.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "One inline formula changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$T(M,w)\\Entails!E(M,w)$"
+        ],
+        "target_only": [
+          "$!T(M,w)\\Entails!E(M,w)$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-054",
+      "unit_id": "OLP-0271",
+      "classification": "structure_gloss_names_T_instead_of_machine_M",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:45-58",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 60,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "replace-T-with-M-plus-adjacent-note",
+      "translation_change": "states that M is in state q and scans square m",
+      "counterexample": "The satisfaction clause interprets Q_q from the run of machine M. T names the representation sentence and cannot be the machine being run.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "One inline mathematical name changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$T$"
+        ],
+        "target_only": [
+          "$M$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-055",
+      "unit_id": "OLP-0271",
+      "classification": "halting_configuration_proof_switches_to_unintroduced_primed_state_and_symbol",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:79-99",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 103,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "use-established-state-symbol-and-complete-predicate-plus-adjacent-note",
+      "translation_change": "uses the established q and sigma pair and restores the missing Obj marker on S",
+      "counterexample": "The proof assumes delta(q,sigma) undefined and C contains Q_q and S_sigma. No q-prime or sigma-prime is introduced, so the stated membership and disjunct must use q and sigma.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Two inline formulas change exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\ObjQ_{q'}(\\num{m},\\num{n})\\landS_{\\sigma'}(\\num{m},\\num{n})\\Entails\\bigvee_{\\tuple{q,\\sigma}\\inX}(\\ObjQ_q(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n}))$",
+          "$\\tuple{q',\\sigma'}\\inX$"
+        ],
+        "target_only": [
+          "$\\ObjQ_{q}(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n})\\Entails\\bigvee_{\\tuple{q,\\sigma}\\inX}(\\ObjQ_q(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n}))$",
+          "$\\tuple{q,\\sigma}\\inX$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-056",
+      "unit_id": "OLP-0271",
+      "classification": "induction_step_excludes_transition_from_time_zero",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:113-125",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 133,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "include-zero-index-plus-adjacent-note",
+      "translation_change": "allows n equal to zero in the induction step",
+      "counterexample": "The base establishes C at time zero, and the induction step must derive C at time one from it. Requiring n>0 leaves that first transition unproved.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "One inline bound changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$n>0$"
+        ],
+        "target_only": [
+          "$n\\ge0$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-057",
+      "unit_id": "OLP-0271",
+      "classification": "semantic_argument_switches_twice_to_unestablished_syntactic_provability",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:175-199",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 210,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "replace-proves-with-entails-plus-adjacent-note",
+      "translation_change": "uses semantic entailment in both invocations of the less-than consequence",
+      "counterexample": "The cited proposition states !T entails the numeral inequality, and the surrounding induction proves semantic entailment. No derivation system is fixed for the two Proves claims.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "Two inline relation symbols change exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!T(M,w)\\Proves\\num{m}<\\num{k}$",
+          "$!T(M,w)\\Proves\\num{k}<\\num{k}'$"
+        ],
+        "target_only": [
+          "$!T(M,w)\\Entails\\num{m}<\\num{k}$",
+          "$!T(M,w)\\Entails\\num{k}<\\num{k}'$"
+        ]
+      }
+    },
+    {
+      "id": "OLCMP-058",
+      "unit_id": "OLP-0271",
+      "classification": "left_move_verification_repeats_wrong_square_and_unrelated_indexed_states",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_locator": "content/turing-machines/undecidability/verification.tex:201-233",
+      "target_path": "ps-Arab-PK/content/turing-machines/undecidability/verification.tex",
+      "target_line_1based": 248,
+      "target_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "mode": "repair-left-move-instantiations-plus-adjacent-note",
+      "translation_change": "excludes the written x-prime square, instantiates A at l-prime, and uses the current q and q-prime states in the zero-square branch",
+      "counterexample": "The current instruction is delta(q,sigma)=(q-prime,sigma-prime,L). Its ordinary branch writes square m=l+1 and its boundary branch changes q to q-prime; the source instead preserves l+1 and introduces unrelated q_i and q_j.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY",
+      "formula_policy": "One aligned derivation changes exactly as registered.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete Turing-machine undecidability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q'}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x,y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\intertext{LOCALIZED$!T(M,w)$$m>0$$l=m-1$$m=l+1$}&(\\ObjQ_{q}(\\num{l}',\\num{n})\\land\\ObjS_{\\sigma}(\\num{l}',\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{l}',\\num{n}')\\land!A(\\num{l},\\num{n}))\\intertext{LOCALIZED$l=m=0$}&((\\ObjQ_{q_i}(\\num{0},\\num{n})\\land\\ObjS_{\\sigma}(\\num{0},\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{0},\\num{n}')\\land!A(\\num{0},\\num{n})))\\intertext{LOCALIZED}&\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{m},\\num{n}')\\land{}\\\\&\\qquad\\ObjS_{\\sigma_0}(\\num{0},\\num{n}')\\land\\dots\\land\\ObjS_{\\sigma_k}(\\num{k},\\num{n}')\\land{}\\\\&\\qquad\\lforall[x][(\\num{k}<x\\lif\\ObjS_\\TMblank(x,\\num{n}'))]\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q'}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\intertext{LOCALIZED$!T(M,w)$$m>0$$l=m-1$$m=l+1$}&(\\ObjQ_{q}(\\num{l}',\\num{n})\\land\\ObjS_{\\sigma}(\\num{l}',\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{l}',\\num{n}')\\land!A(\\num{l}',\\num{n}))\\intertext{LOCALIZED$l=m=0$}&((\\ObjQ_{q}(\\num{0},\\num{n})\\land\\ObjS_{\\sigma}(\\num{0},\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{0},\\num{n}')\\land!A(\\num{0},\\num{n})))\\intertext{LOCALIZED}&\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{m},\\num{n}')\\land{}\\\\&\\qquad\\ObjS_{\\sigma_0}(\\num{0},\\num{n}')\\land\\dots\\land\\ObjS_{\\sigma_k}(\\num{k},\\num{n}')\\land{}\\\\&\\qquad\\lforall[x][(\\num{k}<x\\lif\\ObjS_\\TMblank(x,\\num{n}'))]\\end{align*}"
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -4547,7 +4794,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative QA and canonical decision validation through OLP-0263, then continue with OLP-0264 without altering prior release bytes.",
+  "next_action": "Run cumulative QA and canonical decision validation through OLP-0271, then continue with OLP-0272 without altering prior release bytes.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -4593,7 +4840,8 @@
     "PS-OWNER-SEMANTIC-20260920-UNIVERSAL-COMPUTATION-ENUMERABLE-SETS",
     "PS-OWNER-SEMANTIC-20260920-NONCOMPUTABILITY-REDUCIBILITY-COMPLETENESS",
     "PS-OWNER-SEMANTIC-20260920-RICE-FIXED-POINTS-TURING-MACHINES",
-    "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS"
+    "PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS",
+    "PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY"
   ],
   "source_authorities": [
     {

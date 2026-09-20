@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-ps-Arab-PK/turing-undecidability-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T03:55:40.571267+00:00",
+  "batch_id": "PS-B052-TURING-UNDECIDABILITY",
+  "status": "PASS",
+  "counts": {
+    "decisions": 365,
+    "occurrences": 16183,
+    "terminology_decisions": 153,
+    "source_correction_decisions": 207,
+    "priority_decisions": 146,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 1373
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "b154ad95422ca1c6cd214d2c12fa1a4571844475d33be08cd649c46a42d9e3e0",
+    "ALIGNMENT.jsonl": "f8af80f9acb88a208c2e6fd3c95247875752076ba2d39d534062c5ebb1455f16",
+    "SEGMENT_CANON_USE.jsonl": "47a984a679cf62922759dca9345e4de63cd370b6ceafeea952263da01724dc43",
+    "SOURCE_CORRECTIONS.json": "db24a852fd1c96fb65511ef70ff9b74a49ed0a4ad960dcf5adfb38036da7d36c",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "29a2f4edb7958aa567e24912afc096d4b15d8d2923a356a7dd7a909ebd2b9d6b",
+    "TERM_DECISIONS.jsonl": "73fd03fcc0b26ba2408cc56b825dcc96cf1f98f1294ee7ef695631dfa938e5f1",
+    "QA.json": "ec730ff09d218943868083089490e3a28562157923ca1efb78dfd9a67af394b7"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "701a222b159c9bcc476f97b8ceeb375b1373f883bfdc02a2ac88a6a662fe9058",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "1de82ade9eae9197e0e39e225c3784e9f9545e2392c8075caa6ab0c00cdc1f9f",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "a57006da0c3adf8a543a77e08e0447d9b04eb294dc80b777524f26157b9baa71",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "872a120fe11ecf90d2855c8fea2bfd31e5f0ba7284bfb51b9abc9e5725a27ea6",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "7c7427981aea0c580257608424a3038546815778128cce51c72e7b8392a5cc9d",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "eab324c95f5125524920e5a9fe80623a2171691f872aa88b6d502ac924ca6258",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

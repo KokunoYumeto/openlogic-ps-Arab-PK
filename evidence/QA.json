@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 263,
-    "structural_pass": 263,
+    "draft_units": 271,
+    "structural_pass": 271,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B051-FORMAL-TURING-MACHINES-AND-VARIANTS",
+  "batch": "PS-B052-TURING-UNDECIDABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -7598,6 +7598,246 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0264",
+      "path": "content/turing-machines/undecidability/undecidability.tex",
+      "source_sha256": "99eca564cdccc46d4c9bf724df75ab3f206d7c9dccc66c7df7eb1fc4d20120ae",
+      "translation_sha256": "ce5e6ff2ecbd542a15a2f8fc1910ac0d955141dedf9a40a50970c91ca408c37f",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0265",
+      "path": "content/turing-machines/undecidability/introduction.tex",
+      "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "translation_sha256": "60a88849af83538285a76baa38e3a38801df0a693716acf9d76d2b1ff4b251ad",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-048",
+        "OLCMP-049"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0266",
+      "path": "content/turing-machines/undecidability/enumerating-tms.tex",
+      "source_sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
+      "translation_sha256": "3404d5f161750fceb46c6e5e052e3af8ea1123d12bc6dcf302f0b51c3d8aa10e",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-050"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0267",
+      "path": "content/turing-machines/undecidability/universal-tm.tex",
+      "source_sha256": "aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6",
+      "translation_sha256": "c296feea57c5ba0b1eaebb4a1c828b2eb205562b352dbb28f3c3036deede653d",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0268",
+      "path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "translation_sha256": "6d480abb05d369e77b6e03045680314922d02d58c7b74774cb1dae3a7e19fc92",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0269",
+      "path": "content/turing-machines/undecidability/decision-problem.tex",
+      "source_sha256": "e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3",
+      "translation_sha256": "c08220059bd4113a1823f73a694c9b0a1ce75619418d8dca648569d00f7865ed",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0270",
+      "path": "content/turing-machines/undecidability/representing-tms.tex",
+      "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+      "translation_sha256": "314472ef9c47b5e6e4b36abe50c5b05359dcb93380fbf6c3dbe45ce2703ceca0",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-051",
+        "OLCMP-052"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x,y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q_i}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q_j}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0271",
+      "path": "content/turing-machines/undecidability/verification.tex",
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "translation_sha256": "efd897c737db4765aaece0957ec03c20d7e25ee688893096b7684942d7e34528",
+      "source_blocks": 36,
+      "target_blocks": 36,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-053",
+        "OLCMP-054",
+        "OLCMP-055",
+        "OLCMP-056",
+        "OLCMP-057",
+        "OLCMP-058"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$T(M,w)\\Entails!E(M,w)$",
+          "$T$",
+          "$\\ObjQ_{q'}(\\num{m},\\num{n})\\landS_{\\sigma'}(\\num{m},\\num{n})\\Entails\\bigvee_{\\tuple{q,\\sigma}\\inX}(\\ObjQ_q(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n}))$",
+          "$\\tuple{q',\\sigma'}\\inX$",
+          "$n>0$",
+          "$!T(M,w)\\Proves\\num{m}<\\num{k}$",
+          "$!T(M,w)\\Proves\\num{k}<\\num{k}'$",
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q'}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x,y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q_i}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\intertext{LOCALIZED$!T(M,w)$$m>0$$l=m-1$$m=l+1$}&(\\ObjQ_{q}(\\num{l}',\\num{n})\\land\\ObjS_{\\sigma}(\\num{l}',\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{l}',\\num{n}')\\land!A(\\num{l},\\num{n}))\\intertext{LOCALIZED$l=m=0$}&((\\ObjQ_{q_i}(\\num{0},\\num{n})\\land\\ObjS_{\\sigma}(\\num{0},\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q_j}(\\num{0},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{0},\\num{n}')\\land!A(\\num{0},\\num{n})))\\intertext{LOCALIZED}&\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{m},\\num{n}')\\land{}\\\\&\\qquad\\ObjS_{\\sigma_0}(\\num{0},\\num{n}')\\land\\dots\\land\\ObjS_{\\sigma_k}(\\num{k},\\num{n}')\\land{}\\\\&\\qquad\\lforall[x][(\\num{k}<x\\lif\\ObjS_\\TMblank(x,\\num{n}'))]\\end{align*}"
+        ],
+        "target_only": [
+          "$M$",
+          "$!T(M,w)\\Entails!E(M,w)$",
+          "$\\ObjQ_{q}(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n})\\Entails\\bigvee_{\\tuple{q,\\sigma}\\inX}(\\ObjQ_q(\\num{m},\\num{n})\\land\\ObjS_{\\sigma}(\\num{m},\\num{n}))$",
+          "$\\tuple{q,\\sigma}\\inX$",
+          "$n\\ge0$",
+          "$!T(M,w)\\Entails\\num{m}<\\num{k}$",
+          "$!T(M,w)\\Entails\\num{k}<\\num{k}'$",
+          "\\begin{align*}&\\lforall[x][\\lforall[y][((\\ObjQ_{q}(x',y)\\land\\ObjS_{\\sigma}(x',y))\\lif{}]]\\\\&\\qquad(\\ObjQ_{q'}(x,y')\\land\\ObjS_{\\sigma'}(x',y')\\land!A(x',y)))\\land{}\\\\&\\lforall[y][((\\ObjQ_{q}(\\num{0},y)\\land\\ObjS_{\\sigma}(\\num{0},y))\\lif{}]\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},y')\\land\\ObjS_{\\sigma'}(\\num{0},y')\\land!A(\\num{0},y)))\\intertext{LOCALIZED$!T(M,w)$$m>0$$l=m-1$$m=l+1$}&(\\ObjQ_{q}(\\num{l}',\\num{n})\\land\\ObjS_{\\sigma}(\\num{l}',\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{l}',\\num{n}')\\land!A(\\num{l}',\\num{n}))\\intertext{LOCALIZED$l=m=0$}&((\\ObjQ_{q}(\\num{0},\\num{n})\\land\\ObjS_{\\sigma}(\\num{0},\\num{n}))\\lif{}\\\\&\\qquad(\\ObjQ_{q'}(\\num{0},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{0},\\num{n}')\\land!A(\\num{0},\\num{n})))\\intertext{LOCALIZED}&\\ObjQ_{q'}(\\num{l},\\num{n}')\\land\\ObjS_{\\sigma'}(\\num{m},\\num{n}')\\land{}\\\\&\\qquad\\ObjS_{\\sigma_0}(\\num{0},\\num{n}')\\land\\dots\\land\\ObjS_{\\sigma_k}(\\num{k},\\num{n}')\\land{}\\\\&\\qquad\\lforall[x][(\\num{k}<x\\lif\\ObjS_\\TMblank(x,\\num{n}'))]\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -10066,6 +10306,54 @@
       "passage": "Church--Turing thesis",
       "reverse_paraphrase": "The thesis identifies intuitive effective procedures with Turing-computable procedures. It licenses moving from clear pseudocode to existence of a machine and from Turing impossibility to impossibility for every effective procedure.",
       "finding": "The definition, extensional-equivalence support and both uses, including the halting-problem consequence, remain complete."
+    },
+    {
+      "unit_id": "OLP-0264",
+      "passage": "undecidability chapter driver",
+      "reverse_paraphrase": "The driver orders the introduction, machine enumeration, universal simulation, halting and decision problems, logical representation, verification, further unsolvability and Trakhtenbrot sections.",
+      "finding": "All imports and identifiers remain exact; only the chapter title is localized."
+    },
+    {
+      "unit_id": "OLP-0265",
+      "passage": "uncomputability and undecidability motivation",
+      "reverse_paraphrase": "Countability shows that most numerical functions are not Turing-computable, while the halting and first-order validity problems give specific undecidable questions.",
+      "finding": "All examples and the Church--Turing inference remain complete; two malformed source phrases are disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0266",
+      "passage": "enumerating Turing machines",
+      "reverse_paraphrase": "Renaming states and symbols by positive integers yields standard machines with finite integer-sequence descriptions, so only countably many numerical functions are Turing-computable.",
+      "finding": "Both even-machine figures, the exact coding sequence, theorem proof and exercise remain complete; machine simulation terminology is corrected."
+    },
+    {
+      "unit_id": "OLP-0267",
+      "passage": "universal Turing-machine simulation",
+      "reverse_paraphrase": "An effective enumeration gives machine indices. U decodes e, records the simulated state, head position and tape, repeats the indexed instruction, and converts a legitimate stroke output back to a natural number.",
+      "finding": "Every simulation step, divergence case and malformed-output case remains complete."
+    },
+    {
+      "unit_id": "OLP-0268",
+      "passage": "halting problem diagonal proof",
+      "reverse_paraphrase": "If S computed whether M_e halts on e, concatenating S with a machine that halts only on zero produces an indexed machine that halts exactly when it does not. A copier plus a hypothetical H would compute S.",
+      "finding": "Both cases of the contradiction, the reduction and all exercises remain complete."
+    },
+    {
+      "unit_id": "OLP-0269",
+      "passage": "first-order decision problem",
+      "reverse_paraphrase": "A validity decider would decide halting once the machine/input representation T and eventual-halting sentence E are constructed effectively with validity equivalent to halting.",
+      "finding": "The reduction direction and required biconditional remain complete."
+    },
+    {
+      "unit_id": "OLP-0270",
+      "passage": "first-order representation of a run",
+      "reverse_paraphrase": "Q predicates record state and head, S predicates record tape symbols, successor terms number time and tape squares, and axioms encode the initial configuration and each transition.",
+      "finding": "Every language symbol and axiom remains complete; the left-move unchanged-square condition and one typo are disclosed and repaired."
+    },
+    {
+      "unit_id": "OLP-0271",
+      "passage": "verification of the representation",
+      "reverse_paraphrase": "Induction derives the correct configuration sentence at every execution step; a halting configuration yields E. Conversely, the natural-number structure defined by the actual run satisfies T, so validity forces a real halting time.",
+      "finding": "Both proof directions, all transition cases and exercises remain complete; six localized variable, marker, bound, relation and left-move defects are disclosed and repaired."
     }
   ],
   "builds": [

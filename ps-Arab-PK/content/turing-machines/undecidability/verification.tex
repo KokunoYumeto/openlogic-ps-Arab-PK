@@ -1,0 +1,343 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: verification
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{ver}
+\olsection{د تمثيل تاييدول}
+
+\begin{explain}
+د دې د تاييدولو دپاره چې زموږ تمثيل کار کوي، بايد دوه خبرې ثابتې
+کړو۔ لومړے بايد وښيو چې که~$M$ پر ننوت~$w$ ودرېږي، نو~$!T(M, w)
+\lif !E(M, w)$ معتبر دے۔ بيا بايد معکوسه خبره وښيو، يعنې که~$!T(M,
+w) \lif !E(M, w)$ معتبر وي، نو~$M$ په رښتيا هم پر ننوت~$w$ د چلولو
+پر مهال بالاخره درېږي۔
+
+د دې دواړو د ثبوت تګلارې بېخي سره توپير لري۔ د لومړۍ پايلې دپاره
+بايد وښيو چې د لومړۍ درجې منطق يو !!a{sentence} (يعنې~$!T(M, w)
+\lif !E(M, w)$) معتبر دے۔ د دې تر ټولو اسانه لار د يوه
+!!a{derivation} ورکول دي۔ خو زموږ ثبوت بايد د ټولو~$M$ او~$w$ دپاره
+کار وکړي، نو په اصل کښې داسې يو واحد !!{sentence} نشته چې موږ ئې
+دپاره !!a{derivation} ورکړو، بلکې نامتناهي ډېر دي۔ نو تر ټولو ښه کار
+چې کولے ئې شو دا دے چې په استقرا ثابته کړو: $M$ او~$w$ هر ډول وي، او
+پر ننوت~$w$ د~$M$ درېدل هر څومره ګامونه اخلي، د~$!T(M, w) \lif
+!E(M, w)$ يو !!a{derivation} به موجود وي۔
+
+په طبيعي ډول به زموږ استقرا د هغو ګامونو پر شمېر مخته ځي چې~$M$ ئې
+درېدني تشکيل ته تر رسېدو مخکې اخلي۔ په خپل استقرايي ثبوت کښې به ټينګه
+کړو چې پر ننوت~$w$ د~$M$ د چلولو د هر ګام~$n$ دپاره~$!T(M, w)
+\Entails !C(M, w, n)$، چې~$!C(M, w, n)$ له~$n$ ګامونو وروسته پر~$w$
+د چلېدلي~$M$ تشکيل په سمه توګه بيانوي۔ اوس که~$M$ پر ننوت~$w$، مثلاً
+له~$n$ ګامونو وروسته، ودرېږي، $!C(M, w, n)$ به يو درېدنی تشکيل بيان
+کړي۔ دا به هم وښيو چې هر کله~$!C(M, w, n)$ يو درېدنی تشکيل بيانوي،
+$!C(M, w, n) \Entails !E(M, w)$۔ نو که~$M$ پر ننوت~$w$ ودرېږي، د
+کوم~$n$ دپاره به~$M$ له~$n$ ګامونو وروسته په درېدني تشکيل کښې وي۔
+له همدې امله~$!T(M, w) \Entails !C(M, w, n)$، چې~$!C(M, w, n)$ يو
+درېدنی تشکيل بيانوي؛ او څرنګه چې په هغه حالت کښې~$!C(M, w, n)
+\Entails !E(M, w)$، نو~$!T(M, w) \Entails !E(M, w)$ تر لاسه کوو؛
+يعنې~$\Entails !T(M, w) \lif !E(M, w)$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-053):} سرچينې د دې استدلال په
+وروستۍ نتيجه کښې د تمثيلوونکې غونډلې د نښې لومړے سمبول پرې ايښے و؛
+دلته بېرته راوړل شوے دے۔
+
+د معکوسې خبرې تګلاره بېخي توپير لري۔ دلته فرضوو چې~$\Entails !T(M,
+w) \lif !E(M, w)$، او بايد ثابته کړو چې~$M$ پر ننوت~$w$ درېږي۔ له
+فرض څخه مو تر لاسه کېږي چې~$!T(M, w) \Entails !E(M, w)$، يعنې
+$!E(M, w)$ په هر هغه !!{structure} کښې رښتيا دے چې~$!T(M, w)$ پکې
+رښتيا دے۔ نو داسې يو !!a{structure}~$\Struct{M}$ بيان کوو چې~$!T(M,
+w)$ پکې رښتيا دے: ډومېن به ئې~$\Nat$ وي، او د ټولو~$\Obj Q_q$ او
+$\Obj S_\sigma$ تعبير به پر ننوت~$w$ د~$M$ د چلولو پر مهال د تشکيلونو
+له خوا ورکول کېږي۔ نو مثلاً~$\Sat{M}{\Obj Q_q(\num{m}, \num{n})}$
+هله او يوازې هله چې~$M$ پر ننوت~$w$ د~$n$ ګامونو دپاره وچلول شي،
+په حالت~$q$ کښې وي او مربع~$m$ لولي۔ اوس څرنګه چې د فرض له مخې
+$!T(M, w) \Entails !E(M, w)$، او د جوړښت له مخې~$\Sat{M}{!T(M, w)}$،
+نو~$\Sat{M}{!E(M, w)}$۔ خو~$\Sat{M}{!E(M, w)}$ هله او يوازې هله چې
+کوم~$n \in \Domain{M} = \Nat$ موجود وي داسې چې پر ننوت~$w$ چلېدلے
+$M$ له~$n$ ګامونو وروسته په درېدني تشکيل کښې وي۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-054):} سرچينې د جوړښت د صدق په
+تشريح کښې په تېروتنه د ماشين پر ځاے د تمثيلوونکې غونډلې نوم راوړے و؛
+دلته فاعل د بحث له ماشين سره سم شوے دے۔
+\end{explain}
+
+\begin{defn}
+$!C(M, w, n)$ دا !!{sentence} وي:
+\[
+\Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land
+\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]
+\]
+چې~$q$ په وخت~$n$ کښې د~$M$ حالت دے، $M$ په وخت~$n$ کښې مربع~$m$
+لولي، مربع~$i$ په وخت~$n$ کښې نښه~$\sigma_i$ لري چې~$0 \le i \le
+k$، او~$k$ يا په وخت~$0$ کښې د پټې تر ټولو ښي ناتشه مربع ده، يا هغه
+تر ټولو ښي مربع ده چې د پټې سر له~$n$ ګامونو وروسته ليدلې ده؛ په دې
+دواړو کښې هره يوه چې لويه وي۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:halt-config-implies-halt}
+که پر ننوت~$w$ چلېدلے~$M$ له~$n$ ګامونو وروسته په يوه درېدني تشکيل
+کښې وي، نو~$!C(M, w, n) \Entails !E(M, w)$۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ~$M$ د ننوت~$w$ دپاره له~$n$ ګامونو وروسته درېږي۔ داسې يو
+حالت~$q$، مربع~$m$، او نښه~$\sigma$ شته چې:
+\begin{enumerate}
+\item له~$n$ ګامونو وروسته~$M$ په حالت~$q$ کښې دے، هغه مربع~$m$
+  لولي چې~$\sigma$ پرې ښکاري۔
+\item د حالت بدلون تابع~$\delta(q, \sigma)$ ناتعريفه ده۔
+\end{enumerate}
+$!C(M, w, n)$ د دې تشکيل بيان دے او دا فقرې~$\Obj Q_{q}(\num{m},
+\num{n})$ او~$\Obj S_{\sigma}(\num{m}, \num{n})$ به پکې شاملې وي۔
+دا فقرې په ګډه~$!E(M, w)$ راايجابوي:
+\[
+\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]
+\]
+ځکه~$\Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+\num{n}) \Entails \bigvee_{\tuple{q, \sigma} \in X} (\Obj Q_q(\num{m},
+\num{n}) \land \Obj S_{\sigma}(\num{m}, \num{n}))$، ځکه
+$\tuple{q,\sigma} \in X$۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-055):} سرچينې په وروستي
+استدلال کښې داسې لومړني حالت او نښه وکارول چې په فرض کښې نۀ وو ټاکل
+شوي، او د نښې له محمول څخه ئې د ژبې نښه هم پرې ايښې وه؛ دلته هماغه
+ټاکل شوي حالت او نښه او بشپړ محمول کارول شوي دي۔
+\end{proof}
+
+\begin{explain}
+نو که~$M$ د ننوت~$w$ دپاره ودرېږي، داسې~$n$ شته چې~$!C(M, w, n)
+\Entails !E(M,w)$۔ اوس به وښيو چې د هر وخت~$n$ دپاره~$!T(M, w)
+\Entails !C(M, w, n)$۔
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:config}
+د هر~$n$ دپاره، که~$M$ له~$n$ ګامونو وروسته لا نۀ وي درېدلے، نو
+$!T(M, w) \Entails !C(M, w, n)$۔
+\end{lem}
+
+\begin{proof}
+د استقرا بنسټ: که~$n = 0$ وي، د~$!C(M, w, 0)$ عاطفې د~$!T(M, w)$
+هم عاطفې دي، نو د هغه له خوا ايجابېږي۔
+
+استقرايي فرض: که~$M$ له~$n$-م ګام څخه مخکې نۀ وي درېدلے، نو
+$!T(M,w) \Entails !C(M, w, n)$۔ بايد وښيو چې (تر هغه چې~$!C(M, w,
+n)$ يو درېدنی تشکيل نۀ بيانوي) $!T(M, w) \Entails !C(M, w, n+1)$۔
+
+فرض کړئ~$n \ge 0$ او پر~$w$ پيل شوي~$M$ له~$n$ ګامونو وروسته په
+حالت~$q$ کښې مربع~$m$ لولي۔ څرنګه چې~$M$ له~$n$ ګامونو وروسته نۀ
+درېږي، د~$M$ په پروګرام کښې بايد له لاندې درېو بڼو څخه يوه لارښوونه
+وي:
+\textbf{د ژباړې د نسخې سمون (OLCMP-056):} سرچينې استقرايي ګام يوازې
+د مثبتو شاخصونو دپاره پيل کړے و او له صفرم تشکيل څخه لومړي تشکيل ته
+بدلون ئې پرې ايښے و؛ دلته شرط صفر هم رانغاړي۔
+
+\begin{enumerate}
+\item \ollabel{right} $\delta(q, \sigma) = \tuple{q', \sigma', \TMright}$
+
+\item \ollabel{left} $\delta(q, \sigma) = \tuple{q', \sigma', \TMleft}$
+
+\item \ollabel{stay} $\delta(q, \sigma) = \tuple{q', \sigma', \TMstay}$
+\end{enumerate}
+
+موږ به دا درې واړه حالتونه په وار سره وڅېړو۔
+
+\begin{enumerate}
+\item فرض کړئ د~\olref{right} په بڼه يوه لارښوونه شته۔ د
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-right} له مخې معنا ئې دا
+  ده چې
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x,
+  y) \land \Obj S_\sigma(x, y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x',
+  y') \land \Obj S_{\sigma'}(x, y') \land !A(x, y)))
+\intertext{د~$!T(M,w)$ يوه عاطفه ده۔ دا لاندې !!{sentence} راايجابوي
+  (کلي منځته راوړنه، $\num{m}$ د~$x$ دپاره او~$\num{n}$ د~$y$
+  دپاره):}
+& (\Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+\num{n})) \lif {}\\
+& \qquad (\Obj Q_{q'}(\num{m}', \num{n}') \land
+\Obj S_{\sigma'}(\num{m}, \num{n}') \land !A(\num{m}, \num{n})).
+\intertext{د استقرايي فرض له مخې~$!T(M, w) \Entails !C(M, w, n)$؛
+  يعنې:}
+& \Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land \\
+& \qquad\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]\\
+\intertext{څرنګه چې له~$n$ ګامونو وروسته د پټې مربع~$m$ نښه~$\sigma$
+  لري، اړونده عاطفه~$\Obj S_\sigma(\num{m}, \num{n})$ ده، نو دا
+  راايجابوي:}
+& \Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+   \num{n})
+\intertext{اوس تر لاسه کوو:}
+& \Obj Q_{q'}(\num{m}', \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+& \qquad\Obj S_{\sigma_0}(\num{0}, \num{n}') \land \dots \land
+  \Obj S_{\sigma_k}(\num{k}, \num{n}') \land {}\\
+& \qquad \lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+په دې ډول: لومړۍ کرښه نېغ په نېغه د مخکيني شرطي د تالي څخه د مودوس
+پونېنس په وسيله راځي۔ د منځنۍ کرښې هره عاطفه---چې
+$S_{\sigma_m}(\num{m},\num{n}')$ ترې وتلې ده---په~$!C(M, w, n)$ کښې
+له اړوندې عاطفې او~$!A(\num{m}, \num{n})$ څخه راځي۔
+
+که~$m < k$ وي، $!T(M,w) \Entails \num{m} < \num {k}$
+(\olref[rep]{prop:mlessk}) او د~$<$ د تعدي له مخې
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$ لرو۔ که~$m = k$ وي،
+نو~$\lforall[x][(\num{k} < x \lif \num{m} < x)]$ يوازې د منطق له
+مخې راځي۔ بيا وروستۍ کرښه په~$!C(M, w, n)$ کښې له اړوندې عاطفې،
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$، او~$!A(\num{m},
+\num{n})$ څخه راځي۔ که~$m<k$ وي، دا لا همدا~$!C(M, w, n+1)$ دے۔
+
+اوس فرض کړئ~$m=k$۔ په هغه حالت کښې د پټې سر له~$n+1$ ګامونو وروسته
+مربع~$k+1$ هم ليدلې ده، چې اوس تر ټولو ښي ليدل شوې مربع ده۔ نو
+$!C(M, w, n+1)$ يوه نوې عاطفه~$\Obj S_\TMblank(\num{k}',\num{n}')$
+لري، او وروستۍ عاطفه ئې~$\lforall[x][(\num{k}' < x \lif \Obj
+S_\TMblank(x, \num{n}'))]$ ده۔ بايد تاييد کړو چې دا دوه !!{sentence}s
+هم ايجابېږي۔
+
+موږ لا~$\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x,
+  \num{n}'))]$ لرو۔ په ځانګړي ډول، له دې څخه~$\num{k} < \num{k}'
+\lif \Obj S_\TMblank(\num{k}', \num{n}')$ تر لاسه کوو۔ له اکسيوم
+$\lforall[x][x < x']$ څخه~$\num{k} < \num{k}'$ تر لاسه کوو۔ د مودوس
+پونېنس له مخې~$\Obj S_\TMblank(\num{k}',\num{n}')$ راځي۔
+
+همدارنګه، څرنګه چې~$!T(M,w) \Entails \num{k} < \num{k}'$، د~$<$
+د تعدي اکسيوم موږ ته~$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ راکوي۔ (د دې تاييد د تمرین په توګه
+پرېږدو۔)
+\textbf{د ژباړې د نسخې سمون (OLCMP-057):} سرچينې په دې دوو ځايونو
+کښې نحوي ثابتېدنه کارولې وه، حال دا چې راجع شوې قضيه او د ټولې برخې
+ادعا معنايي ايجاب بيانوي؛ دواړه اړيکې له همدې مخې يو شان شوې دي۔
+
+\item فرض کړئ د~\olref{left} په بڼه يوه لارښوونه شته۔ بيا د
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-left} له مخې،
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x', y) \land \Obj
+    S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x, y') \land \Obj
+  S_{\sigma'}(x', y') \land !A(x', y))) \land {}\\
+& \lforall[y][((\Obj Q_{q}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q'}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0}, y')
+  \land !A(\num{0}, y)))
+\intertext{د~$!T(M,w)$ يوه عاطفه ده۔ که~$m>0$ وي، نو~$l = m - 1$
+  پرېږدئ (يعنې~$m = l+1$)۔ د پورتني !!{sentence} لومړۍ عاطفه دا
+  راايجابوي:}
+& (\Obj Q_{q}(\num{l}', \num{n}) \land \Obj S_{\sigma}(\num{l}', \num{n}))
+\lif {} \\
+& \qquad (\Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{l}',
+\num{n}') \land !A(\num{l}', \num{n}))
+\intertext{که نۀ وي، $l = m = 0$ پرېږدئ او لاندې هغه !!{sentence}
+  وګورئ چې دويمه عاطفه ئې راايجابوي:}
+& ((\Obj Q_{q}(\num{0}, \num{n}) \land \Obj S_{\sigma}(\num{0}, \num{n})) \lif {}\\
+& \qquad   (\Obj Q_{q'}(\num{0}, \num{n}') \land \Obj S_{\sigma'}(\num{0}, \num{n}') \land
+!A(\num{0}, \num{n})))
+\intertext{هره يوه غونډله دا راايجابوي:}
+&  \Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+&\qquad  \Obj S_{\sigma_0}(\num{0}, \num{n}')\land \dots \land
+  \Obj S_{\sigma_k}(\num{k}, \num{n}')  \land {} \\
+& \qquad  \lforall[x][(\num{k} < x
+  \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+لکه مخکې۔ (په ياد ولرئ چې په لومړي حالت کښې~$\num{l}' \ident
+\num{l+1} \ident \num{m}$، او په دويم حالت کښې~$\num{l} \ident
+\num{0}$۔) خو دا کټ مټ~$!C(M, w, n+1)$ دے۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-058):} سرچينې د کيڼ-حرکت په
+لومړۍ څانګه کښې د ليکل شوې مربع پر ځاے ګاونډۍ مربع له بدلون څخه
+مستثنا کړې وه، او د صفرمې مربع په څانګه کښې ئې د روانې لارښوونې پر
+ځاے بې‌اړيکې شاخصي حالتونه کارولي وو۔ اکسيوم او دواړه منځته راوړنې
+دلته د هماغې روانې لارښوونې له حالتونو او ليکل شوې مربع سره سمې شوې
+دي۔
+
+\item د~\olref{stay} حالت د تمرین په توګه پرېښوول شوے دے۔
+\end{enumerate}
+موږ وښودل چې د هر~$n$ دپاره~$!T(M, w) \Entails !C(M, w, n)$۔
+\end{proof}
+
+\begin{prob}
+د~\olref[tur][und][ver]{lem:config} د ثبوت حالت
+\olref[tur][und][ver]{stay} بشپړ کړئ۔
+\end{prob}
+
+\begin{prob}
+له~$\Obj S_{\sigma_i}(\num{i}, \num{n})$ او~$!A(m, n)$ څخه د
+$\Obj S_{\sigma_i}(\num{i}, \num{n}')$ يو !!a{derivation} ورکړئ
+(په دې فرض چې~$i \neq m$؛ يعنې يا~$i < m$ يا~$m < i$)۔
+\end{prob}
+
+\begin{prob}
+له~$\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}'))]$،
+$\lforall[x][x < x']$، او
+$\lforall[x][\lforall[y][\lforall[z][ ((x < y \land y < z) \lif x <
+      z)]]]$ څخه د~$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ يو !!a{derivation} ورکړئ۔)
+\end{prob}
+
+
+\begin{lem}
+\ollabel{lem:valid-if-halt}
+که~$M$ پر ننوت~$w$ ودرېږي، نو~$!T(M, w) \lif
+!E(M, w)$ معتبر دے۔
+\end{lem}
+
+\begin{proof}
+د~\olref{lem:config} له مخې پوهېږو چې د هر وخت~$n$ دپاره په
+وخت~$n$ کښې د~$M$ د تشکيل بيان~$!C(M, w, n)$ د~$!T(M, w)$ له خوا
+ايجابېږي۔ فرض کړئ~$M$ له~$k$ ګامونو وروسته درېږي۔ په هغه وخت کښې به
+د کوم~$m \in \Nat$ دپاره مربع~$m$ لولي۔ بيا~$!C(M, w, k)$ د~$M$
+يو درېدنی تشکيل بيانوي؛ يعنې~$\Obj Q_q(\num{m}, \num{k})$ او~$\Obj
+S_\sigma(\num{m}, \num{k})$ دواړه د عاطفو په توګه لري، چې
+$\delta(q,\sigma)$ ناتعريفه ده۔ نو د
+\olref{lem:halt-config-implies-halt} له مخې~$!C(M, w, k) \Entails
+!E(M, w)$۔ خو څرنګه چې~$!T(M, w) \Entails !C(M, w, k)$، نو~$!T(M,
+w) \Entails !E(M, w)$، او ځکه~$!T(M, w) \lif !E(M, w)$ معتبر دے۔
+\end{proof}
+
+
+\begin{explain}
+د خپلې ادعا د تاييد بشپړولو دپاره بايد معکوس لوری هم ټينګ کړو: که
+$!T(M, w) \lif !E(M, w)$ معتبر وي، نو~$M$ په رښتيا هم پر ننوت~$w$
+له پيل وروسته درېږي۔
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:halt-if-valid}
+که~$\Entails !T(M, w) \lif !E(M, w)$، نو~$M$ پر ننوت~$w$ درېږي۔
+\end{lem}
+
+\begin{proof}
+د~$\Lang L_M$ هغه !!{structure}~$\Struct M$ وګورئ چې ډومېن ئې
+$\Nat$ دے، $\Obj 0$ په~$0$، $\prime$ په تالي تابع، او~$<$ د کوچنيوالي
+په اړيکه تعبيروي، او محمولونه~$\Obj Q_q$ او~$\Obj S_\sigma$ په دې
+ډول تعبيروي:
+\begin{align*}
+  \Assign{\Obj Q_q}{M} & =
+\Setabs{\tuple{m, n}}{\begin{array}{ll}\text{پر~$w$ له پيل وروسته، له~$n$ ګامونو وروسته،}\\ \text{$M$ په حالت $q$
+  کښې دے او مربع~$m$ لولي}
+\end{array}} \\
+\Assign{\Obj S_\sigma}{M} & = \Setabs{\tuple{m, n}}{\begin{array}{ll}
+\text{پر~$w$ له پيل وروسته، له $n$ ګامونو وروسته،}\\ \text{مربع~$m$ د~$M$
+  نښه~$\sigma$ لري}
+\end{array}}
+\end{align*}
+په بله وينا، موږ !!{structure}~$\Struct{M}$ داسې جوړوو چې هغه څه ګام
+په ګام بيان کړي چې پر ننوت~$w$ پيل شوے~$M$ په رښتيا کوي۔ په څرګند
+ډول~$\Sat{M}{!T(M, w)}$۔ که~$\Entails !T(M, w) \lif !E(M, w)$، نو
+$\Sat{M}{!E(M, w)}$ هم؛ يعنې:
+\[
+\Sat{M}{\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]}.
+\]
+څرنګه چې~$\Domain{M} = \Nat$، بايد داسې~$m$، $n \in \Nat$ موجود
+وي چې د کوم~$q$ او~$\sigma$ دپاره~$\Sat{M}{\Obj Q_q(\num{m},
+\num{n}) \land \Obj S_\sigma(\num{m}, \num{n})}$، داسې چې
+$\delta(q, \sigma)$ ناتعريفه وي۔ د~$\Struct M$ د تعريف له مخې، معنا
+ئې دا ده چې پر ننوت~$w$ پيل شوے~$M$ له~$n$ ګامونو وروسته په
+حالت~$q$ کښې دے او نښه~$\sigma$ لولي، او د حالت بدلون تابع ناتعريفه
+ده؛ يعنې~$M$ درېدلے دے۔
+\end{proof}
+
+\end{document}

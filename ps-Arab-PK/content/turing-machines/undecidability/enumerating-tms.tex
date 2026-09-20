@@ -1,0 +1,151 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: enumerating-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{enu}
+\olsection{د ټيورينګ ماشينونو شمېرل}
+
+\begin{explain}
+موږ ښودلے شو چې د ټولو ټيورينګ ماشينونو سټ !!{enumerable} دے۔ دا
+له دې حقيقت څخه راځي چې هر ټيورينګ ماشين په متناهي ډول بيانېدے شي۔
+د حالتونو سټ او د پټې لغت‌زېرمه متناهي سټونه دي۔ د حالت بدلون تابع
+له~$Q \times \Sigma$ څخه~$Q \times \Sigma \times \{\TMleft,
+\TMright, \TMstay\}$ ته يوه قسمي تابع ده، نو دا هم د هغو متناهي
+شمېر آرګوماني جوړو د ارزښتونو په لست کولو ټاکل کېدے شي چې تابع پرې
+تعريف شوې ده۔
+
+تر دې ځايه دا خبره سمه ده، خو يو نازک توپير شته۔ د ټيورينګ ماشينونو
+تعريف پر دې هېڅ بنديز نۀ لګاوه چې د حالتونو د سټ او د پټې د الفبا
+!!{element}s څه شيان کېدے شي۔ نو مثلاً د هر حقيقي عدد دپاره له تخنيکي
+پلوه يو ټيورينګ ماشين شته چې هماغه عدد د حالت په توګه کاروي۔ خو د
+ټيورينګ ماشين \emph{چلند} له دې څخه خپلواک دے چې کوم څيزونه د حالتونو
+او لغت‌زېرمه په توګه کارول کېږي۔ په~\olref{fig:variants} کښې دا دوه
+ټيورينګ ماشينونه وګورئ۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}\\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$s$};
+\node[state]         (B) [right of=A] {$h$};
+
+\path (A) edge [bend left] node {\TMtrans{A}{A}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+edge [bend left] node {\TMtrans{A}{A}{\TMright}} (A);
+\end{tikzpicture}
+\end{center}
+\caption{د \emph{جفت} ماشين بڼې}
+\ollabel{fig:variants}
+\end{figure}
+دا دوه ډياګرامونه له دوو ماشينونو سره سمون لري: يو~$M$ چې د پټې
+الفبا ئې~$\Sigma = \{\TMendtape,\TMblank,\TMstroke\}$ او د حالتونو
+سټ ئې~$\{q_0,q_1\}$ دے، او بل~$M'$ چې الفبا ئې~$\Sigma' =
+\{\TMendtape,\TMblank,A\}$ او حالتونه ئې~$\{s,h\}$ دي۔ خو نورې
+لارښوونې ئې يو شان دي: $M$ به د~$n$ دانو~$\TMstroke$ پر لړۍ هله او
+يوازې هله ودرېږي چې~$n$ جفت وي، او~$M'$ به د~$n$ دانو~$A$ پر لړۍ
+هله او يوازې هله ودرېږي چې~$n$ جفت وي۔ موږ يوازې~$\TMstroke$ په~$A$،
+$q_0$ په~$s$، او~$q_1$ په~$h$ بدل نومولي دي۔ دا بېلګه عموميت مومي:
+موږ ټيورينګ ماشينونه تر هغه يو شان ګڼلے شو چې يو د نښو او حالتونو د
+داسې نوم‌بدلون له لارې له بل څخه تر لاسه کېږي۔ په اصل کښې، موږ د
+ټيورينګ ماشين نښې او حالتونه په ساده توګه مثبت صحيح اعداد ګڼلے شو:
+د~$\sigma_0$ پر ځاے~$1$، د~$\sigma_1$ پر ځاے~$2$، او داسې نور
+وګڼئ؛ $\TMendtape$~$1$ دے، $\TMblank$~$2$ دے، او داسې نور۔ په دې
+ډول د \emph{جفت} ماشين په~\olref{fig:standard-even} کښې انځور شوے
+ماشين ګرځي۔
+\begin{figure}
+\[\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$1$};
+\node[state]         (B) [right of=A] {$2$};
+
+\path (A) edge [bend left] node {\TMtrans{3}{3}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{2}{2}{\TMright}} (B)
+edge [bend left] node {\TMtrans{3}{3}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\caption{يو معياري \emph{جفت} ماشين}
+\ollabel{fig:standard-even}
+\end{figure}
+هغه ټيورينګ ماشين چې حالتونه او نښې ئې مثبت صحيح اعداد وي ښايي
+\emph{معياري} ماشين وبولو، او له دې وروسته يوازې معياري ماشينونه
+وڅېړو۔\footnote{د ``معياري ماشين'' اصطلاح معياري نۀ ده۔}
+
+موږ غوښتل وښيو چې د ټيورينګ ماشينونو سټ !!{enumerable} دے، او پورتنيو
+خبرو ته په پام کافي ده چې وښيو د معياري ټيورينګ ماشينونو سټ
+!!{enumerable} دے۔ فرض کړئ يو معياري ټيورينګ ماشين~$M = \tuple{Q,
+\Sigma, q_0, \delta}$ راکړل شوے دے۔ هغه د مثبتو صحيح اعدادو په يوه
+متناهي مزي څنګه بيانولے شو؟ لومړے به د حالتونو شمېر، پخپله حالتونه،
+د نښو شمېر، پخپله نښې، او پيلنی حالت لست کړو۔ (په ياد ولرئ، دا ټول
+مثبت صحيح اعداد دي، ځکه~$M$ معياري ماشين دے۔) د~$\delta$ په اړه څه؟
+د ممکنو آرګومانونو سټ، يعنې د~$\tuple{q,\sigma}$ جوړې، متناهي دے،
+ځکه~$Q$ او~$\Sigma$ متناهي دي۔ نو په~$\delta$ کښې معلومات يوازې د
+ټولو هغو $5$-تاييونو~$\tuple{q, \sigma, q', \sigma', d}$ متناهي
+لست دے چې~$\delta(q,\sigma) = \tuple{q', \sigma', D}$ وي، او~$d$
+هغه عدد دے چې لوری~$D$ کوډوي (مثلاً د~$\TMleft$ دپاره~$1$،
+د~$\TMright$ دپاره~$2$، او د~$\TMstay$ دپاره~$3$)۔
+
+په دې ډول هر معياري ټيورينګ ماشين د مثبتو صحيح اعدادو په يوه متناهي
+لست، يعنې د~$s_M \in (\PosInt)^*$ په لړۍ، بيانېدے شي۔ مثلاً معياري
+\emph{جفت} ماشين په دې لړۍ کوډ کېږي:
+\[
+2, \underbrace{1, 2}_Q, 3, \overbrace{1, 2, 3}^\Sigma, 1, \underbrace{1, 3, 2, 3, 2}_{\delta(1,3) = \tuple{2,3,R}},
+\overbrace{2, 2, 2, 2, 2}^{\delta(2,2) = \tuple{2,2,R}},
+\underbrace{2, 3, 1, 3, 2}_{\delta(2,3) = \tuple{1,3,R}}.
+\]
+\end{explain}
+
+\begin{thm}
+له~$\Nat$ څخه~$\Nat$ ته داسې تابعې شته چې د ټيورينګ په وسيله
+محاسبه کېدونکې نۀ دي۔
+\end{thm}
+
+\begin{proof}
+موږ پوهېږو چې د مثبتو صحيح اعدادو د متناهي لړيو سټ~$(\PosInt)^*$
+!!{enumerable} دے (\cref{sfr:siz:zigzag:prob:posint-star})۔ له دې څخه
+راځي چې د معياري ټيورينګ ماشينونو د بيانونو سټ، د~$(\PosInt)^*$ د
+يوه فرعي سټ په توګه، پخپله هم شمېرل کېدونکے دے۔ له~$\Nat$ څخه~$\Nat$
+ته هره د ټيورينګ په وسيله محاسبه کېدونکې تابع د کوم (په اصل کښې د
+ډېرو) ټيورينګ ماشين له خوا محاسبه کېږي۔ د هغې د حالتونو او نښو نومونه
+په مثبتو صحيح اعدادو بدلولو سره (په ځانګړي ډول~$\TMendtape$ په~$1$،
+$\TMblank$ په~$2$، او~$\TMstroke$ په~$3$) وينو چې هره د ټيورينګ په
+وسيله محاسبه کېدونکې تابع د يوه معياري ټيورينګ ماشين له خوا محاسبه
+کېږي۔ معنا دا چې له~$\Nat$ څخه~$\Nat$ ته د ټولو د ټيورينګ په وسيله
+محاسبه کېدونکو تابعو سټ هم شمېرل کېدونکے دے۔
+
+له بلې خوا، له~$\Nat$ څخه~$\Nat$ ته د ټولو تابعو سټ !!{enumerable}
+نۀ دے (\cref{sfr:siz:red:prob:nat-nat})۔ که ټولې تابعې د کوم ټيورينګ
+ماشين په وسيله محاسبه کېدے، نو د هغو ټيورينګ ماشينونو د ټولو بيانونو
+په لست کولو مو د ټولو تابعو سټ شمېرلے شو چې دا تابعې محاسبه کوي۔ نو
+ځينې تابعې شته چې د ټيورينګ په وسيله محاسبه کېدونکې نۀ دي۔
+\end{proof}
+
+\begin{prob}
+  ايا د ټيورينګ ماشينونو د بيانولو داسې لار درته ذهن ته راځي چې د
+  حالتونو او د الفبا د نښو څرګند لست کولو ته اړتيا ونۀ لري؟ تاسو د
+  ``معياري'' ماشين خپل مفهوم تعريفولے شئ، خو د دې په اړه څه ووايئ چې
+  ولې هر ټيورينګ ماشين ستاسو په نوې معنا د يوه ``معياري'' ماشين له
+  خوا تمثيلېدے شي۔
+  \textbf{د ژباړې د نسخې سمون (OLCMP-050):} سرچينې دلته ويل چې هر
+  ټيورينګ ماشين د معياري ماشين له خوا ``محاسبه'' کېدے شي؛ ماشين تابع
+  نۀ ده، نو دلته موخه د هغه تمثيلول يا مشابه‌چلول دي۔
+\end{prob}
+
+\end{document}

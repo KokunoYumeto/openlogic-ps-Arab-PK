@@ -1756,3 +1756,102 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Audit: `PS-OWNER-SEMANTIC-20260920-TURING-MACHINES-VARIANTS`
 - Treatment: states that the first branch applies only when the original transition value is defined.
 - Disclosure: `restrict-first-case-to-defined-values-plus-adjacent-note`.
+
+## OLCMP-048
+
+- Unit: `OLP-0265`
+- Frozen source: `content/turing-machines/undecidability/introduction.tex` (93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334) at `content/turing-machines/undecidability/introduction.tex:43-49`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:52`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: supplies the missing auxiliary in the claim that some problems cannot be effectively decided.
+- Disclosure: `supply-missing-auxiliary-plus-adjacent-note`.
+
+## OLCMP-049
+
+- Unit: `OLP-0265`
+- Frozen source: `content/turing-machines/undecidability/introduction.tex` (93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334) at `content/turing-machines/undecidability/introduction.tex:78-83`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:81`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: removes the duplicated noun after the machine variable.
+- Disclosure: `remove-redundant-noun-plus-adjacent-note`.
+
+## OLCMP-050
+
+- Unit: `OLP-0266`
+- Frozen source: `content/turing-machines/undecidability/enumerating-tms.tex` (4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1) at `content/turing-machines/undecidability/enumerating-tms.tex:145-151`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex:146`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: asks why every Turing machine can be simulated by a standard machine.
+- Disclosure: `replace-computed-with-simulated-plus-adjacent-note`.
+
+## OLCMP-051
+
+- Unit: `OLP-0270`
+- Frozen source: `content/turing-machines/undecidability/representing-tms.tex` (9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5) at `content/turing-machines/undecidability/representing-tms.tex:139-158`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:153`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: uses A(x-prime,y), excluding the square x+1 that is actually overwritten.
+- Disclosure: `replace-unchanged-square-argument-plus-adjacent-note`.
+
+## OLCMP-052
+
+- Unit: `OLP-0270`
+- Frozen source: `content/turing-machines/undecidability/representing-tms.tex` (9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5) at `content/turing-machines/undecidability/representing-tms.tex:159-166`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:166`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: renders the intended phrase 'after y steps'.
+- Disclosure: `repair-after-typo-plus-adjacent-note`.
+
+## OLCMP-053
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:31-42`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:42`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: restores !T(M,w) as the representation sentence in the concluding entailment.
+- Disclosure: `restore-formula-marker-plus-adjacent-note`.
+
+## OLCMP-054
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:45-58`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:60`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: states that M is in state q and scans square m.
+- Disclosure: `replace-T-with-M-plus-adjacent-note`.
+
+## OLCMP-055
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:79-99`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:103`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: uses the established q and sigma pair and restores the missing Obj marker on S.
+- Disclosure: `use-established-state-symbol-and-complete-predicate-plus-adjacent-note`.
+
+## OLCMP-056
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:113-125`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:133`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: allows n equal to zero in the induction step.
+- Disclosure: `include-zero-index-plus-adjacent-note`.
+
+## OLCMP-057
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:175-199`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:210`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: uses semantic entailment in both invocations of the less-than consequence.
+- Disclosure: `replace-proves-with-entails-plus-adjacent-note`.
+
+## OLCMP-058
+
+- Unit: `OLP-0271`
+- Frozen source: `content/turing-machines/undecidability/verification.tex` (4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660) at `content/turing-machines/undecidability/verification.tex:201-233`
+- Pashto target: `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:248`
+- Audit: `PS-OWNER-SEMANTIC-20260920-TURING-UNDECIDABILITY`
+- Treatment: excludes the written x-prime square, instantiates A at l-prime, and uses the current q and q-prime states in the zero-square branch.
+- Disclosure: `repair-left-move-instantiations-plus-adjacent-note`.

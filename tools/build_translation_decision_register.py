@@ -62,6 +62,7 @@ PART_AND_CHAPTER = {
     "computability": ("محاسبه کېدنه", "محاسبه کېدنه"),
     "recursive-functions": ("محاسبه کېدنه", "بازګشتي تابعې"),
     "machines-computations": ("ټيورينګ ماشينونه", "ماشينونه او محاسبې"),
+    "undecidability": ("ټيورينګ ماشينونه", "ناپرېکړتيا"),
 }
 
 OUTPUT_NAMES = [
