@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-ps-Arab-PK/representability-in-q-canonical-replay/v1",
+  "recorded_utc": "2026-09-20T23:47:02.023662+00:00",
+  "batch_id": "PS-B056-REPRESENTABILITY-IN-Q",
+  "status": "PASS",
+  "counts": {
+    "decisions": 409,
+    "occurrences": 18492,
+    "terminology_decisions": 165,
+    "source_correction_decisions": 239,
+    "priority_decisions": 158,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 3682
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "5045a7e347981d40df153a4f07f6d09af10a4c7a3be4e92295a596a2f1bb726f",
+    "ALIGNMENT.jsonl": "ead07edbff7de5cd7d3f913e6a7addd2b9e508051d1b9efb6fd61dd819fd1ba8",
+    "SEGMENT_CANON_USE.jsonl": "4a0e402b4d301fc73ebe9dd443decc09abdee273d8c364634ba58da71b869f82",
+    "SOURCE_MANIFEST.jsonl": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "CANON_SOURCES.jsonl": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931",
+    "CANON_PASSAGES.jsonl": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f",
+    "SOURCE_CORRECTIONS.json": "ca286d6acc8992d8bf5bf53ae72341723c996b2c5e2a65aa982c35a5b2200cb0",
+    "TERM_DECISIONS.jsonl": "011de1a1a641b6a5f4606f27ce2dd851b5ea9b12d8e78808429795679112a367",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "QA.json": "e651e47b39cc5b70ee0fd5d26b4b00ad0ba7e704766fdfe3160542f547c9edc0",
+    "READER_OCCURRENCE_PAGES.json": "1087ba0ab1d62eae7046e4e0058fd7dd632a7438a65893c3d7662430a13fe19b"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "a90384fa31ebb3752c478ea4d09ca2c98a467e04c579d2f3269d60c55ba502fa",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "3089c91f961761e93a32d63cb0b078a3d234399f2620bcd21a779f4f119ea677",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "9a14f2f8091e612fae92b6adfefabbfea04de481b8ea15bbc395271ff823a387",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "2307c0c280d122c02bbedad1c87d4a8ccb87b46792e70ae17701a57c63adcf79",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "67e2030cb3665f86ccc567b9778b7162f046cae61ef170168152dab45ab1351d",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "5029f8f51c36bbf2ce4373cfe1924e69929c2d6f4e88c69ce43f7199ff5b611e",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

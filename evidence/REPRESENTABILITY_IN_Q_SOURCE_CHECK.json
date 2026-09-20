@@ -1,0 +1,287 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-20T23:26:04.298959+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+  "scope": "OLP-0289 through OLP-0300 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-083",
+      "unit_id": "OLP-0291",
+      "classification": "inconsistent_representing_formula_subscript",
+      "source_path": "content/incompleteness/representability-in-q/representable-comp.tex",
+      "source_sha256": "d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef",
+      "source_locator": "content/incompleteness/representability-in-q/representable-comp.tex:16-23",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex",
+      "target_line_1based": 25,
+      "target_sha256": "2220f79ee9040bbd06fd553e49cddbdb453d91ed2c10f899013a56642e83f6f0",
+      "mode": "add-f-subscript-to-representing-formula-plus-adjacent-note",
+      "translation_change": "names the representing formula A_f in the lemma premise, matching its displayed use and every subsequent use",
+      "counterexample": "The lemma introduces A without a subscript but immediately asserts the property for A_f. Without the subscript, A_f is not the formula whose existence was stated.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A(x_0,\\dots,x_k,y)$"
+        ],
+        "target_only": [
+          "$!A_f(x_0,\\dots,x_k,y)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-084",
+      "unit_id": "OLP-0293",
+      "classification": "wrong_argument_list_for_primitive_recursive_function",
+      "source_path": "content/incompleteness/representability-in-q/prim-rec.tex",
+      "source_sha256": "ec7c33837767fa024b45506d818a6601efa0523abef7c474881281d6c7e969a9",
+      "source_locator": "content/incompleteness/representability-in-q/prim-rec.tex:12-20",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex",
+      "target_line_1based": 20,
+      "target_sha256": "2b13eed789b707957d373fd76d8035e5919a8b1c2b9f63705767ad8ed66f31b9",
+      "mode": "replace-h-x-vec-z-with-h-vec-x-y-plus-adjacent-note",
+      "translation_change": "states h(vec x,y), matching both primitive-recursion equations directly below",
+      "counterexample": "The source introduces h(x,vec z), although f and g use vec x and the displayed recursion defines h(vec x,0) and h(vec x,y+1). The introduced argument list is unrelated to the equations.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$h(x,\\vecz)$"
+        ],
+        "target_only": [
+          "$h(\\vecx,y)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-085",
+      "unit_id": "OLP-0295",
+      "classification": "duplicated_proposition_reference_in_exercise",
+      "source_path": "content/incompleteness/representability-in-q/composition-representable.tex",
+      "source_sha256": "7dc6295f9eb46462918d4b261094f0e6fe0c6bae7d7aeac12603e45c0afd9bf6",
+      "source_locator": "content/incompleteness/representability-in-q/composition-representable.tex:97-103",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex",
+      "target_line_1based": 103,
+      "target_sha256": "642975faf71b04cd4a3c65746efdbbc353ebf3ab4c1ca5101de046c76cc34769",
+      "mode": "replace-first-rep2-reference-with-rep1-plus-adjacent-note",
+      "translation_change": "directs the exercise to both proof directions, propositions rep1 and rep2, before the general composition proposition",
+      "counterexample": "The exercise cites rep2 twice even though the preceding development has two complementary proof obligations, rep1 and rep2, intended as the guide.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "Only the first cross-reference identifier changes, exactly as registered; no math or terminology token changes.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref[inc][req][cmp]{prop:rep2}"
+        ],
+        "target_only": [
+          "\\olref[inc][req][cmp]{prop:rep1}"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-086",
+      "unit_id": "OLP-0296",
+      "classification": "invalid_induction_chain_for_successor_addition",
+      "source_path": "content/incompleteness/representability-in-q/minimization-representable.tex",
+      "source_sha256": "396bbd36dbb04280e2521c9fb1af6b07ef3084e0205917c22eb308362f035e94",
+      "source_locator": "content/incompleteness/representability-in-q/minimization-representable.tex:42-55",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex",
+      "target_line_1based": 61,
+      "target_sha256": "fe2e1375b9cdf2bc204fc8002e3784cce6d0e04c51abfc8ea5b3d9c5a55626a6",
+      "mode": "replace-circular-middle-line-with-derived-middle-equality-plus-adjacent-note",
+      "translation_change": "derives the middle equality from the induction hypothesis and Q5, then obtains the requested equality by transitivity with step5",
+      "counterexample": "The source labels the final goal itself as following from the induction hypothesis and then derives only an intermediate equality from that goal, so the displayed argument is circular and ends on the wrong statement.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "One align environment changes exactly as registered; localized explanatory text remains normalized by the checker.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align}\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a'+\\numn)']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step5}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a+\\numn')']\\quad\\text{LOCALIZED}\\ollabel{step6}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn)'][(a+\\numn')']\\quad\\text{LOCALIZED}\\notag\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a'+\\numn)']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step5}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn)'][(a+\\numn')']\\quad\\text{LOCALIZED$!Q_5$}\\ollabel{step6}\\\\\\Th{Q}&\\Proves\\eq[(a'+\\numn')][(a+\\numn')']\\quad\\text{LOCALIZED}\\notag\\end{align}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-087",
+      "unit_id": "OLP-0300",
+      "classification": "second_closed_term_equated_to_wrong_value",
+      "source_path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+      "source_locator": "content/incompleteness/representability-in-q/sigma1-completeness.tex:108-117",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "target_line_1based": 123,
+      "target_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+      "mode": "replace-second-n-with-m-plus-adjacent-note",
+      "translation_change": "equates t_2 with numeral m, its value fixed immediately above",
+      "counterexample": "The proof fixes n=Value(t_1) and m=Value(t_2) but equates both terms to numeral n. The following n=m and n!=m cases require t_2 to be equated to numeral m.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Th{Q}\\Proves\\eq[t_2][\\numn]$"
+        ],
+        "target_only": [
+          "$\\Th{Q}\\Proves\\eq[t_2][\\numm]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-088",
+      "unit_id": "OLP-0300",
+      "classification": "summands_reversed_relative_to_less_than_witness",
+      "source_path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+      "source_locator": "content/incompleteness/representability-in-q/sigma1-completeness.tex:124-135",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "target_line_1based": 139,
+      "target_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+      "mode": "order-closed-sum-as-witness-prime-plus-t1-plus-adjacent-note",
+      "translation_change": "proves numeral k prime plus numeral n equals numeral m, matching the existential witness z prime plus t_1 in Q8",
+      "counterexample": "The source proves n+k+1=m with n first, then claims by identity alone that k+1+t_1=t_2. Identity substitution cannot reverse the summands; the closed-term lemma directly proves the needed order.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Th{Q}\\Proves\\eq[\\numn+{\\numk}'][\\numm]$"
+        ],
+        "target_only": [
+          "$\\Th{Q}\\Proves\\eq[{\\numk}'+\\numn][\\numm]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-089",
+      "unit_id": "OLP-0300",
+      "classification": "wrong_equality_sign_and_axiom_in_less_than_refutation",
+      "source_path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+      "source_locator": "content/incompleteness/representability-in-q/sigma1-completeness.tex:137-151",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "target_line_1based": 159,
+      "target_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+      "mode": "restore-positive-successor-equality-and-cite-Q2-plus-adjacent-note",
+      "translation_change": "uses the positive equality z prime equals zero in the equal-values case and cites Q2 for both successor-not-zero contradictions",
+      "counterexample": "The preceding calculation yields an equality, not a disequality. Q3 says every number is zero or a successor and creates no contradiction here; Q2 is the axiom that no successor equals zero.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "The equality sign and two axiom references change exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\eq/[z'][\\Obj0]$",
+          "$!Q_3$",
+          "$!Q_3$"
+        ],
+        "target_only": [
+          "$\\eq[z'][\\Obj0]$",
+          "$!Q_2$",
+          "$!Q_2$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-090",
+      "unit_id": "OLP-0300",
+      "classification": "empty_disjunction_named_for_universal_conjunction",
+      "source_path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+      "source_locator": "content/incompleteness/representability-in-q/sigma1-completeness.tex:165-173",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "target_line_1based": 184,
+      "target_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+      "mode": "replace-empty-disjunction-with-empty-conjunction-plus-adjacent-note",
+      "translation_change": "identifies the zero-instance right side of the bounded universal equivalence as the empty conjunction, whose value is true",
+      "counterexample": "The lemma's universal side expands to a conjunction of instances. At bound zero that conjunction is empty; an empty disjunction would instead be false and would not equal the displayed true constant.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
+      "formula_policy": "This prose correction changes no math span, identifier or terminology token.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0289",
+    "OLP-0290",
+    "OLP-0292",
+    "OLP-0294",
+    "OLP-0297",
+    "OLP-0298",
+    "OLP-0299"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete representability-in-Q source review; eight adopted corrections have adjacent Pashto disclosures and exact registered math or identifier deltas; every other formula and terminology marker is identical"
+}
