@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 329,
-    "structural_pass": 329,
+    "draft_units": 335,
+    "structural_pass": 335,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B059-SECOND-ORDER-LOGIC-SYNTAX-SEMANTICS",
+  "batch": "PS-B060-SECOND-ORDER-METATHEORY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -10222,6 +10222,213 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0330",
+      "path": "content/second-order-logic/metatheory/metatheory.tex",
+      "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
+      "translation_sha256": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0331",
+      "path": "content/second-order-logic/metatheory/introduction.tex",
+      "source_sha256": "413d8f1950ae13bf318f29e071b196cbc1971aa378d2aa94ac79e1342baf6e2c",
+      "translation_sha256": "45217e9eb5fc68519fee98f322383eb2bda591238b5f2f531931803488025ca5",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "translation_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSOL-001",
+        "OLSOL-002"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$X=\\Domain{M})$",
+          "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(x')=u(x)']\\landu(y)=z)]\\]"
+        ],
+        "target_only": [
+          "$X=\\Domain{M}$",
+          "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(w')=u(w)']\\landu(y)=z)]\\]"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0333",
+      "path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "source_sha256": "d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108",
+      "translation_sha256": "5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSOL-003"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Sat{M}{!P\\lif!A$"
+        ],
+        "target_only": [
+          "$\\Sat{M}{!P\\lif!A}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0334",
+      "path": "content/second-order-logic/metatheory/compactness.tex",
+      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+      "translation_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSOL-004",
+        "OLSOL-005",
+        "OLSOL-006"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
+          "$!A^{\\gek}\\in\\Gamma$",
+          "$!A^{\\gen}\\in\\Gamma$",
+          "$n>k$"
+        ],
+        "target_only": [
+          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][\\bigwedge_{1\\lei<j\\len}\\eq/[x_i][x_j]]].\\]",
+          "$k\\ge1$"
+        ],
+        "expected_by_source_correction": true
+      },
+      "identifier_diff": {
+        "source_only": [
+          "\\ollabel{thm:sol-undecidable}"
+        ],
+        "target_only": [
+          "\\ollabel{thm:sol-not-compact}"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0335",
+      "path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "source_sha256": "997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff",
+      "translation_sha256": "44715d5bd3d4b5c5e1e2fae044acf0faddb70ad9ada8d74e73577936fb9dc4f5",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -13086,6 +13293,42 @@
       "passage": "domain size",
       "reverse_paraphrase": "Inf states an injective non-surjective self-map. Count states a seed and self-map whose successor-closed subsets exhaust the domain, including finite domains.",
       "finding": "Both proof directions, the finite self-loop and the distinction between countable and denumerable remain."
+    },
+    {
+      "unit_id": "OLP-0330",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Five metatheory sections appear in source order.",
+      "finding": "All imports and chapter hook remain."
+    },
+    {
+      "unit_id": "OLP-0331",
+      "passage": "metatheory introduction",
+      "reverse_paraphrase": "First-order validities are computably enumerable despite undecidability, whereas full second-order validities are not; compactness and both Löwenheim–Skolem directions fail.",
+      "finding": "The distinction between decidability, enumeration and complete proof systems is explicit."
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "second-order arithmetic",
+      "reverse_paraphrase": "Full second-order induction excludes nonstandard elements; the first-order schema is infinite, while the second-order axiom is one sentence. The addition-definition source variable and a stray parenthesis are disclosed repairs.",
+      "finding": "The standardness proof, categoricity corollary and definability proposition retain all hypotheses and conclusions."
+    },
+    {
+      "unit_id": "OLP-0333",
+      "passage": "axiomatizability",
+      "reverse_paraphrase": "First-order undecidability transfers to the second-order fragment; the standard model truth reduction rules out a sound complete proof system. One malformed source math delimiter is repaired.",
+      "finding": "The proof's nine axioms, pure second-order quantification, representation and Tarski contradiction remain."
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "compactness",
+      "reverse_paraphrase": "The source counterexample needs all n witnesses pairwise distinct and a bound only on each finite subset. A duplicate theorem label also needs repair.",
+      "finding": "The corrected displayed formula and finite-model argument give the stated theorem, with three adjacent notices."
+    },
+    {
+      "unit_id": "OLP-0335",
+      "passage": "Löwenheim–Skolem",
+      "reverse_paraphrase": "The downward failure uses nonenumerable domains and the upward failure uses Count and Inf together.",
+      "finding": "Finite-inclusive countability, denumerability and nonenumerability remain distinct."
     }
   ],
   "builds": [

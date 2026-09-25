@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 329 of 722 source units are translated drafts. This log contains 175 terminology entries and 255 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 335 of 722 source units are translated drafts. This log contains 178 terminology entries and 261 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1578,6 +1578,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: ډېډېکېنډ نامتناهي; شمېرېدونکی سټ; د شمېر وړ نامحدود سټ
 - Review question: In Pakistani Pashto mathematical prose, is «د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ» the clearest conventional rendering of “Dedekind infinite / countable including finite / denumerable / orbit of an element” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+
+## TERM-SOL-SECOND-ORDER-INDUCTION
+
+- Type: terminology
+- Choice: د دويمې درجې پېانو حساب / د استقرا بديهي اصل / معياري مدل
+- Uncertainty: induction and axiom base terms have regional support; the full second-order compound and categoricity wording are provisional
+- Alternatives: د دويمې درجې استقرا اصل; د پېانو دويمې درجې حساب; يوډوله معياري مدل
+- Review question: In Pakistani Pashto mathematical prose, is «د دويمې درجې پېانو حساب / د استقرا بديهي اصل / معياري مدل» the clearest conventional rendering of “second-order Peano arithmetic / induction axiom / categorical standard model” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B060 owner source and Pakistani Pashto language review
+
+## TERM-SOL-COMPACTNESS
+
+- Type: terminology
+- Choice: کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی
+- Uncertainty: axiom/proof and semantics base prose supported regionally; the exact compactness term remains provisional
+- Alternatives: فشردګي; کمپکټوالی; د متناهي صدق وړتيا خاصيت
+- Review question: In Pakistani Pashto mathematical prose, is «کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی» the clearest conventional rendering of “compactness / finite satisfiability / finite entailment” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B060 owner source and Pakistani Pashto language review
+
+## TERM-SOL-LOEWENHEIM-SKOLEM
+
+- Type: terminology
+- Choice: ښکته/پورته لوېنهايم--سکولم / د شمېر وړ / د شمېر وړ نامتناهي / ناشمېرېدونکے
+- Uncertainty: regional countability and uncountability distinctions supported; the theorem-name and directional compounds are provisional
+- Alternatives: کوز/بره لوېنهايم--سکولم; شمېرېدونکی او ناشمېرېدونکی; نامتناهي شمېر وړ
+- Review question: In Pakistani Pashto mathematical prose, is «ښکته/پورته لوېنهايم--سکولم / د شمېر وړ / د شمېر وړ نامتناهي / ناشمېرېدونکے» the clearest conventional rendering of “downward/upward Löwenheim–Skolem / enumerable / denumerable / nonenumerable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B060 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -3819,6 +3846,60 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLPRV-003 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B058 owner source review before cumulative acceptance
+
+## DEC-OLSOL-001
+
+- Type: source-correction
+- Choice: The source places a prose closing parenthesis inside the math span after the domain equality; the target closes the math span first.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-002
+
+- Type: source-correction
+- Choice: The displayed addition definition quantifies over w but writes u(x')=u(x)' in the closure clause. Using w in both positions makes the clause express the stated successor condition for every input.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-003
+
+- Type: source-correction
+- Choice: The source closes the math span before the satisfaction command's argument brace, leaving a malformed TeX expression. The target closes the command first.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-004
+
+- Type: source-correction
+- Choice: The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-005
+
+- Type: source-correction
+- Choice: The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-006
+
+- Type: source-correction
+- Choice: The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B060 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

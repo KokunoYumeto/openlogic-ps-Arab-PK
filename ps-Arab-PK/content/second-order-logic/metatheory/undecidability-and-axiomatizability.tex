@@ -1,0 +1,56 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: undecidability-and-axiomatizability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{nax}
+
+\olsection{د دويمې درجې منطق د بديهي اصولو په بڼه بشپړ نۀ شي وړاندې کېدے}
+
+
+\begin{thm}
+\ollabel{thm:sol-undecidable}
+د دويمې درجې منطق ناپرېکړه‌وړ دے۔
+\end{thm}
+
+\begin{proof}
+د لومړۍ درجې !!{sentence} په لومړۍ درجې منطق کښې هله او يوازې هله
+معتبره ده چې په دويمې درجې منطق کښې هم معتبره وي؛ او د لومړۍ درجې
+منطق ناپرېکړه‌وړ دے۔
+\end{proof}
+
+\begin{thm}
+\ollabel{cor:sol-not-axiomatizable}
+د دويمې درجې منطق دپاره هېڅ سم او بشپړ !!{derivation} نظام نشته۔
+\end{thm}
+
+\begin{proof}
+فرض کړئ $!A$ د حساب په ژبه کښې !!a{sentence} ده۔ $\Sat{N}{!A}$ هله
+او يوازې هله چې $\Th{PA^2} \Entails !A$۔ دې $!P$ د~$\Th{PA^2}$ د نهو
+بديهي اصولو عطف وي۔ $\Th{PA^2} \Entails !A$ هله او يوازې هله چې
+$\Entails !P \lif !A$، يعنې $\Sat{M}{!P \lif !A}$۔
+\textbf{د ژباړې د نسخې سمون (OLSOL-003):} په سرچينه کښې د وروستي
+صدق د عبارت تړونکې قوسه له رياضيکي نښو دباندې راغلې وه؛ دلته د
+عبارت قوسې سمې تړل شوې دي۔ اوس هغه !!{sentence}
+$\lforall[z][\lforall[u][\lforall[u'][\lforall[u''][\lforall[L][(!P' \lif !A')]]]]]$
+وګورئ چې $\Obj{0}$ پکې په $z$، $\prime$ په يوځايه تابع متغير~$u$،
+$+$ او $\times$ په ترتيب په دوه‌ځايه تابع متغيرونو~$u'$ او~$u''$،
+او $<$ په دوه‌ځايه اړيکيز متغير~$L$ بدل شوي او بيا پرې کلي کميت
+ايښودل شوے دے۔ دا د خالص دويمې درجې منطق معتبره جمله هله او يوازې
+هله ده چې اصلي جمله معتبره وي؛ يعنې هله او يوازې هله چې
+$\Th{PA^2} \Entails !A$، او دا هله او يوازې هله چې $\Sat{N}{!A}$۔
+نو که د دويمې درجې منطق دپاره سم او بشپړ ثبوتي نظام واے، د هغه په
+وسيله به مو په~$\Struct{N}$ کښې د رښتينو !!{sentence}s يوه محاسبه
+کېدونکې شمېرنه~$f\colon \Nat \to \Sent[L_A]$ تعريف کړې واے۔ دا تابع
+به په~$\Th{Q}$ کښې د لومړۍ درجې د يوه فورمول~$!B_f(x, y)$ په وسيله
+تمثيلېدله۔ بيا به !!{formula}~$\lexists[x][!B_f(x, y)]$ په~$\Struct{N}$
+کښې د لومړۍ درجې د رښتينو !!{sentence}s سټ تعريف کړے واے، چې د
+تارسکي له قضيې سره په ټکر کښې دے۔
+\end{proof}
+
+
+
+\end{document}

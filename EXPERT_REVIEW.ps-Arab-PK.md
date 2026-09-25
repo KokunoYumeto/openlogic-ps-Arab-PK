@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۳۰ پرېکړو د کتنې لار دے: ۱۷۵ اصطلاحات، ۲۴۹ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۲۹ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۳۹ پرېکړو د کتنې لار دے: ۱۷۸ اصطلاحات، ۲۵۵ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۳۵ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -655,7 +655,7 @@
 - اصلي مفهوم: `axiom / axiom schema`؛ غوره شوې پښتو بڼه: **بديهي اصل / د بديهي اصل شېما**.
 - د کتنې وړ بديلونه: اکسيوم؛ منل شوے اصل.
 - کتل شوي شاهدان: `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0010`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/russells-paradox.tex#L42)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/russells-paradox.tex)؛ نور 27 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0010`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/russells-paradox.tex#L42)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/russells-paradox.tex)؛ نور 28 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-LOGIC-FORMS — فارمول / اشتقاق / بياني منطق / د لومړۍ درجې منطق / بشپړتيا
@@ -1087,7 +1087,7 @@
 - اصلي مفهوم: `computably enumerable / recursively enumerable / c.e. / range / semi-decidable`؛ غوره شوې پښتو بڼه: **په محاسبوي ډول د شمېر وړ / په بازګشتي ډول د شمېر وړ / د قيمتونو سټ / نيمه د پرېکړې وړ**.
 - د کتنې وړ بديلونه: محاسبه‌يي شمېرېدونکے سټ؛ بازګشتي شمېرېدونکے سټ؛ نيمه‌پرېکړه کېدونکے.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P66-SEQUENCE-LIMIT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 66).
-- د متن ځای: `OLP-0238`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/ce-sets.tex#L10)؛ [اصلي متن](upstream/content/computability/computability-theory/ce-sets.tex#L10)؛ نور 16 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0238`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/ce-sets.tex#L10)؛ [اصلي متن](upstream/content/computability/computability-theory/ce-sets.tex#L10)؛ نور 18 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-HALTING-SETS — د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1
@@ -1407,7 +1407,31 @@
 - اصلي مفهوم: `Dedekind infinite / countable including finite / denumerable / orbit of an element`؛ غوره شوې پښتو بڼه: **د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ**.
 - د کتنې وړ بديلونه: ډېډېکېنډ نامتناهي؛ شمېرېدونکی سټ؛ د شمېر وړ نامحدود سټ.
 - کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99).
-- د متن ځای: `OLP-0329`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ [اصلي متن](upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11).
+- د متن ځای: `OLP-0329`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ [اصلي متن](upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-SOL-SECOND-ORDER-INDUCTION — د دويمې درجې پېانو حساب / د استقرا بديهي اصل / معياري مدل
+
+- اصلي مفهوم: `second-order Peano arithmetic / induction axiom / categorical standard model`؛ غوره شوې پښتو بڼه: **د دويمې درجې پېانو حساب / د استقرا بديهي اصل / معياري مدل**.
+- د کتنې وړ بديلونه: د دويمې درجې استقرا اصل؛ د پېانو دويمې درجې حساب؛ يوډوله معياري مدل.
+- کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37).
+- د متن ځای: `OLP-0330`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/metatheory.tex)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/metatheory.tex)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-SOL-COMPACTNESS — کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی
+
+- اصلي مفهوم: `compactness / finite satisfiability / finite entailment`؛ غوره شوې پښتو بڼه: **کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی**.
+- د کتنې وړ بديلونه: فشردګي؛ کمپکټوالی؛ د متناهي صدق وړتيا خاصيت.
+- کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39).
+- د متن ځای: `OLP-0330`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/metatheory.tex)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/metatheory.tex#L16)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-SOL-LOEWENHEIM-SKOLEM — ښکته/پورته لوېنهايم--سکولم / د شمېر وړ / د شمېر وړ نامتناهي / ناشمېرېدونکے
+
+- اصلي مفهوم: `downward/upward Löwenheim–Skolem / enumerable / denumerable / nonenumerable`؛ غوره شوې پښتو بڼه: **ښکته/پورته لوېنهايم--سکولم / د شمېر وړ / د شمېر وړ نامتناهي / ناشمېرېدونکے**.
+- د کتنې وړ بديلونه: کوز/بره لوېنهايم--سکولم؛ شمېرېدونکی او ناشمېرېدونکی؛ نامتناهي شمېر وړ.
+- کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 111).
+- د متن ځای: `OLP-0331`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/introduction.tex#L35)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/introduction.tex#L34)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -2908,6 +2932,42 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLSOL-001
+
+- کره پرتله: `OLP-0332`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex#L40)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/second-order-arithmetic.tex:40-42`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-002
+
+- کره پرتله: `OLP-0332`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex#L124)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/second-order-arithmetic.tex:116-123`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-003
+
+- کره پرتله: `OLP-0333`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex#L35)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-34`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-004
+
+- کره پرتله: `OLP-0334`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex#L36)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/compactness.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-005
+
+- کره پرتله: `OLP-0334`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex#L53)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/compactness.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/compactness.tex:43-51`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-006
+
+- کره پرتله: `OLP-0334`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex#L63)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/compactness.tex)؛ د سرچينې کره نښه `content/second-order-logic/metatheory/compactness.tex:54-63`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
@@ -2942,4 +3002,4 @@
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0329 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0335 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

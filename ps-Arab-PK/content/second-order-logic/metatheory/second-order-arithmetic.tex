@@ -1,0 +1,135 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: second-order-arithmetic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{spa}
+
+\olsection{د دويمې درجې حساب}
+
+په ياد ولرئ چې د پېانو د حساب تيوري~$\Th{PA}$ د~$\Th{Q}$ اته
+بديهي اصول رانغاړي:
+\begin{align*}
+& \lforall[x][\eq/[x'][\Obj 0]]\\
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])]\\ 
+& \lforall[x][\eq[(x + \Obj 0)][x]]\\
+& \lforall[x][\lforall[y][\eq[(x + y')][(x + y)']]]\\
+& \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]]\\
+& \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]]\\
+& \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z' + x)][y]])]]\\
+\intertext{او ورسره د لاندې بڼې ټولې جملې:}
+& (!A(\Obj 0) \land \lforall[x][(!A(x) \lif !A(x'))]) \lif \lforall[x][!A(x)].
+\end{align*}
+وروستۍ بڼه يو «سکيما» دے: داسې قالب چې د حساب د ژبې نامتناهي ډېرې
+!!{sentence}s جوړوي، د هر !!{formula}~$!A(x)$ دپاره يوه۔ دې قالب ته
+د استقرا (د لومړۍ درجې) \emph{بديهي سکيما} وايو۔ د پېانو په
+\emph{دويمې درجې} حساب~$\Th{PA^2}$ کښې استقرا په يوه جمله بيانېدے
+شي۔ $\Th{PA^2}$ د پورته لومړنيو اتو بديهي اصولو او د (دويمې درجې)
+\emph{استقرا له بديهي اصل} څخه جوړه ده:
+\[
+\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif \lforall[x][X(x)])].
+\]
+دا وايي: که د !!{domain} يو فرعي سټ~$X$، $\Assign{\Obj{0}}{M}$ ولري
+او له هر~$x \in \Domain{M}$ سره $\Assign{\prime}{M}(x)$ هم ولري
+(يعنې «د جانشين تر عمل لاندې تړلے» وي)، نو د !!{domain} ټول څيزونه
+لري (يعنې $X = \Domain{M}$)۔
+\textbf{د ژباړې د نسخې سمون (OLSOL-001):} په سرچينه کښې د دې
+مساوات د رياضيکي نښو دننه يوه زياته تړونکې قوسه راغلې وه؛ دلته
+قوسه د توضيحي عبارت برخه ده۔
+
+د استقرا بديهي اصل تضمينوي چې هر !!{structure} چې دا اصل پوره کوي،
+په~$\Domain{M}$ کښې يوازې هغه !!{element}s لري چې بديهي اصول ئې
+شتون غواړي؛ يعنې د~$\num{n}$ ارزښتونه د $n \in \Nat$ دپاره۔
+د~$\Th{PA^2}$ هېڅ مدل نامعياري شمېرې نۀ لري۔
+
+\begin{thm}
+\ollabel{thm:sol-pa-standard}
+که $\Sat{M}{\Th{PA^2}}$، نو $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$.
+\end{thm}
+
+\begin{proof}
+دې $N = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ وي، او فرض کړئ
+$\Sat{M}{\Th{PA^2}}$۔ څرګنده ده چې د هر $n \in \Nat$ دپاره
+$\Value{\num{n}}{M} \in \Domain{M}$؛ نو $N \subseteq \Domain{M}$۔
+
+اوس د بل لوري شمول وښيو۔ داسې د متغير ګومارنه~$s$ وګورئ چې
+$s(X) = N$۔ د فرض له مخې:
+\begin{align*}
+\Sat{M}{\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x)
+      \lif X(x'))]) \lif \lforall[x][X(x)])]}, & \text{ نو}\\
+\Sat{M}{(X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif
+  \lforall[x][X(x)]}[s]. & 
+\end{align*}
+د دې شرطي جملې مقدم وګورئ۔ $\Value{\Obj{0}}{M} \in N$، نو
+$\Sat{M}{X(\Obj{0})}[s]$۔ دويم عطف~$\lforall[x][(X(x) \lif X(x'))]$
+هم صدق کوي۔ ځکه فرض کړئ $x \in N$۔ د~$N$ له تعريفه، د کوم~$n$
+دپاره $x = \Value{\num{n}}{M}$۔ له دې څخه
+$\Assign{\prime}{M}(x) = \Value{\num{n+1}}{M} \in N$۔ نو
+$\Assign{\prime}{M}(x) \in N$۔
+
+نو $\Sat{M}{X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]}[s]$ لرو۔
+له دې امله $\Sat{M}{\lforall[x][X(x)]}[s]$۔ دا وايي چې د هر
+$x \in \Domain{M}$ دپاره $x \in s(X) = N$؛ نو $\Domain{M}
+\subseteq N$۔
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:sol-pa-categorical}
+د~$\Th{PA^2}$ هر دوه مدلونه آيزومورف دي۔
+\end{cor}
+
+\begin{proof}
+د \olref{thm:sol-pa-standard} له مخې، د~$\Th{PA^2}$ د هر مدل تعريف ساحه
+د~$\Value{\num{n}}{M}$ له ارزښتونو پرته بل څه نۀ لري۔ هر داسې مدل
+د~$\Th{Q}$ مدل هم دے۔ د \olref[mod][mar][stm]{prop:thq-standard} له
+مخې، هر داسې مدل معياري دے؛ يعنې له~$\Struct{N}$ سره آيزومورف دے۔
+\end{proof}
+
+پورته مو $\Th{PA^2}$ هغه تيوري وبلله چې لومړني اته حسابي بديهي
+اصول او د دويمې درجې د استقرا بديهي اصل لري۔ په حقيقت کښې د دويمې
+درجې منطق د بيان د ځواک له برکته، د دويمې درجې پېانو حساب دپاره
+يوازې \emph{لومړني دوه} حسابي بديهي اصول او استقرا بس دي۔
+
+\begin{prop}\ollabel{prop:sol-pa-definable}
+دې $\Th{PA^{2\dagger}}$ هغه د دويمې درجې تيوري وي چې لومړني دوه
+حسابي بديهي اصول (د جانشين بديهي اصول) او د دويمې درجې د استقرا
+بديهي اصل لري۔ نو $\le$، $+$ او $\times$ په~$\Th{PA^{2\dagger}}$
+کښې تعريفېدے شي۔
+\end{prop}
+
+\begin{proof}
+د دې ښودلو دپاره چې $\le$ تعريفېدے شي، داسې فورمول~$!A_\le(x, y)$
+موندل غواړو چې $\Sat{N}{!A_\le(\num n, \num m)}$ هله او يوازې هله
+چې $n \le m$۔ دا فورمول وګورئ:
+\[
+!B(x, Y) \ident Y(x) \land \lforall[y][(Y(y) \lif Y(y'))]
+\]
+څرګنده ده چې د~$Y \subseteq \Nat$ سټ له خوا $!B(\num n, Y)$ هله او
+يوازې هله پوره کېږي چې $\Setabs{m}{n \le m} \subseteq Y$؛ نو
+$!A_\le(x, y) \ident \lforall[Y][(!B(x, Y) \lif Y(y))]$ اخيستلے شو۔
+
+د دې ليدلو دپاره چې جمع تعريفېدے شي، پام وکړئ چې $k+l=m$ هله او
+يوازې هله چې داسې تابع~$u$ شته چې $u(0)=k$، د هر $n$ دپاره
+$u(n')=u(n)'$، او $m = u(l)$۔ دا معادلت د لاندې فورمول په وسيله
+په~$\Th{PA^{2\dagger}}$ کښې د جمع د تعريف دپاره کارولے شو:
+\[
+!A_+(x,y,z) \ident \lexists[u][(u(\Obj 0)=x \land \lforall[w][u(w')=u
+ (w)'] \land u(y)=z)]
+\] 
+\textbf{د ژباړې د نسخې سمون (OLSOL-002):} د جانشين د شرط دننه
+د کلي کميت ايښودل شوي متغير لپاره سرچينه د ناسمې نښې کاروي؛
+دلته هماغه کميت ايښودل شوے متغير په دواړو ځايونو کښې راغلے دے۔
+څرګنده بايد وي چې $\Sat{N}{!A_+(\num k, \num l, \num m)}$ هله او
+يوازې هله چې $k+l=m$۔
+\end{proof}
+
+\begin{prob}
+د \olref[sol][met][spa]{prop:sol-pa-definable} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

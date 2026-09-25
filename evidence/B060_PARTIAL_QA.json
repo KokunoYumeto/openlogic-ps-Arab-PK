@@ -1,0 +1,156 @@
+{
+  "translated_partial_units": 6,
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0330",
+      "source_path": "content/second-order-logic/metatheory/metatheory.tex",
+      "target_sha256": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0331",
+      "source_path": "content/second-order-logic/metatheory/introduction.tex",
+      "target_sha256": "45217e9eb5fc68519fee98f322383eb2bda591238b5f2f531931803488025ca5",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "target_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$X=\\Domain{M})$",
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(x')=u(x)']\\landu(y)=z)]\\]"
+      ],
+      "math_target_only": [
+        "$X=\\Domain{M}$",
+        "\\[!A_+(x,y,z)\\ident\\lexists[u][(u(\\Obj0)=x\\land\\lforall[w][u(w')=u(w)']\\landu(y)=z)]\\]"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0333",
+      "source_path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "target_sha256": "5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$\\Sat{M}{!P\\lif!A$"
+      ],
+      "math_target_only": [
+        "$\\Sat{M}{!P\\lif!A}$"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0334",
+      "source_path": "content/second-order-logic/metatheory/compactness.tex",
+      "target_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
+        "$!A^{\\gek}\\in\\Gamma$",
+        "$!A^{\\gen}\\in\\Gamma$",
+        "$n>k$"
+      ],
+      "math_target_only": [
+        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][\\bigwedge_{1\\lei<j\\len}\\eq/[x_i][x_j]]].\\]",
+        "$k\\ge1$"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0335",
+      "source_path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "target_sha256": "44715d5bd3d4b5c5e1e2fae044acf0faddb70ad9ada8d74e73577936fb9dc4f5",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    }
+  ]
+}

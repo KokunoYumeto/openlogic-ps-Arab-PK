@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B059-SECOND-ORDER-LOGIC-SYNTAX-SEMANTICS",
-  "status": "OLP-0322 through OLP-0329 source-reviewed and ready for cumulative QA; frozen public artifacts unchanged",
+  "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+  "status": "OLP-0330 through OLP-0335 source-reviewed; six disclosed repairs ready for cumulative QA",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7229,6 +7229,85 @@
         "TERM-COMPUTABLY-ENUMERABLE-SETS"
       ],
       "scope": "Inf and Count retain different meanings; the finite last-element self-loop and both proof directions stay explicit."
+    },
+    "OLP-0330": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+      ],
+      "terms": [
+        "TERM-SOL-SECOND-ORDER-INDUCTION",
+        "TERM-SOL-COMPACTNESS"
+      ],
+      "scope": "Metatheory chapter label and five ordered imports retained."
+    },
+    "OLP-0331": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-SOL-COMPACTNESS",
+        "TERM-SOL-LOEWENHEIM-SKOLEM"
+      ],
+      "scope": "First-order axiomatizability/compactness and the two second-order failures remain distinct."
+    },
+    "OLP-0332": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+      ],
+      "terms": [
+        "TERM-SOL-SECOND-ORDER-INDUCTION",
+        "TERM-AXIOM"
+      ],
+      "scope": "PA induction schema versus single second-order axiom, standardness and categoricity; two marked syntax repairs."
+    },
+    "OLP-0333": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-COMPUTABLY-ENUMERABLE-SETS",
+        "TERM-SOL-SECOND-ORDER-INDUCTION"
+      ],
+      "scope": "Undecidability and nonaxiomatizability proof retain their separate claims; malformed satisfaction delimiter repaired."
+    },
+    "OLP-0334": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-SOL-COMPACTNESS",
+        "TERM-SOL-SECOND-ORDER-INDUCTION"
+      ],
+      "scope": "Both compactness forms and the corrected finite-satisfiability counterexample; three marked repairs."
+    },
+    "OLP-0335": {
+      "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL"
+      ],
+      "terms": [
+        "TERM-SOL-LOEWENHEIM-SKOLEM",
+        "TERM-SOL-DEDEKIND-COUNTABILITY"
+      ],
+      "scope": "Count includes finite models; Count and Inf together give denumerable but not nonenumerable models."
     }
   },
   "semantic_review": [
@@ -10093,6 +10172,42 @@
       "passage": "domain size",
       "reverse_paraphrase": "Inf states an injective non-surjective self-map. Count states a seed and self-map whose successor-closed subsets exhaust the domain, including finite domains.",
       "finding": "Both proof directions, the finite self-loop and the distinction between countable and denumerable remain."
+    },
+    {
+      "unit_id": "OLP-0330",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Five metatheory sections appear in source order.",
+      "finding": "All imports and chapter hook remain."
+    },
+    {
+      "unit_id": "OLP-0331",
+      "passage": "metatheory introduction",
+      "reverse_paraphrase": "First-order validities are computably enumerable despite undecidability, whereas full second-order validities are not; compactness and both Löwenheim–Skolem directions fail.",
+      "finding": "The distinction between decidability, enumeration and complete proof systems is explicit."
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "second-order arithmetic",
+      "reverse_paraphrase": "Full second-order induction excludes nonstandard elements; the first-order schema is infinite, while the second-order axiom is one sentence. The addition-definition source variable and a stray parenthesis are disclosed repairs.",
+      "finding": "The standardness proof, categoricity corollary and definability proposition retain all hypotheses and conclusions."
+    },
+    {
+      "unit_id": "OLP-0333",
+      "passage": "axiomatizability",
+      "reverse_paraphrase": "First-order undecidability transfers to the second-order fragment; the standard model truth reduction rules out a sound complete proof system. One malformed source math delimiter is repaired.",
+      "finding": "The proof's nine axioms, pure second-order quantification, representation and Tarski contradiction remain."
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "compactness",
+      "reverse_paraphrase": "The source counterexample needs all n witnesses pairwise distinct and a bound only on each finite subset. A duplicate theorem label also needs repair.",
+      "finding": "The corrected displayed formula and finite-model argument give the stated theorem, with three adjacent notices."
+    },
+    {
+      "unit_id": "OLP-0335",
+      "passage": "Löwenheim–Skolem",
+      "reverse_paraphrase": "The downward failure uses nonenumerable domains and the upward failure uses Count and Inf together.",
+      "finding": "Finite-inclusive countability, denumerability and nonenumerability remain distinct."
     }
   ]
 }

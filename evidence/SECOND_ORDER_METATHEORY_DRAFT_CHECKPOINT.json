@@ -1,0 +1,93 @@
+{
+  "schema": "ps-second-order-metatheory-draft/1",
+  "utc": "2026-09-25T04:10:45.893995+00:00",
+  "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
+  "status": "accepted cumulative drafts; source, structural, semantic, canon-use, decision and repository validation PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0330",
+      "path": "content/second-order-logic/metatheory/metatheory.tex",
+      "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
+      "translation_sha256": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0331",
+      "path": "content/second-order-logic/metatheory/introduction.tex",
+      "source_sha256": "413d8f1950ae13bf318f29e071b196cbc1971aa378d2aa94ac79e1342baf6e2c",
+      "translation_sha256": "45217e9eb5fc68519fee98f322383eb2bda591238b5f2f531931803488025ca5",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0332",
+      "path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "translation_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLSOL-001",
+        "OLSOL-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0333",
+      "path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "source_sha256": "d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108",
+      "translation_sha256": "5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLSOL-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0334",
+      "path": "content/second-order-logic/metatheory/compactness.tex",
+      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+      "translation_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLSOL-004",
+        "OLSOL-005",
+        "OLSOL-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0335",
+      "path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "source_sha256": "997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff",
+      "translation_sha256": "44715d5bd3d4b5c5e1e2fae044acf0faddb70ad9ada8d74e73577936fb9dc4f5",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": []
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previously_accepted_units": 329,
+    "current_reviewed_draft_units": 6,
+    "prospective_total_after_registration": 335,
+    "cumulative_draft_units": 335,
+    "remaining_units": 387
+  },
+  "evidence": {
+    "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SECOND_ORDER_METATHEORY_SOURCE_CHECK.json",
+    "source_check_sha256": "5a19de9bd47678c2dbc73fd74764e017e54c219e8f0800dd9776d05102fc341b",
+    "canon_consultation_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\B060_CANON_CONSULTATION.md",
+    "source_corrections_sha256": "00019b2bcf07529b965f62a9aaae521903d62ccfa97edf988c6ad721acb0e20f",
+    "qa_sha256": "f0bff16c9ab204ac455f57d5a0d95420de89fe17179c9e83a471218d6f071577",
+    "alignment_sha256": "0c505a9049211647182783f44898d1a9d05850668d44296dce51798a6f769032",
+    "canon_use_sha256": "e6dd2a3cf16c5b27028fcec0a1633a6d904bb3c7f55f2093491e51696a20de73",
+    "term_decisions_sha256": "a160e2e1f44d63604c0032d1b83fc8632fcf7e6738d48f8ba9ddbc454d8bca3e",
+    "canonical_decisions_sha256": "aba365e69c351412338fc9eb9fb4dc2980d48a0c1651758e0729bf9bc22519cd",
+    "canonical_qa_sha256": "45a5d028eedbdff8e9b90ca60aedbdcba4ade509e0d6ac0faaef3aa983975fb2",
+    "canonical_replay_sha256": "d0bbfabe758f5f650d7a30d976fc201abf1b226fd16913f2748f647335096bc8"
+  },
+  "next_action": "Commit and push B060. Complete independent guarded PDF replay and the coherent v0.7 EPUB/direct-TeX/source release; continue OLP-0336–0722."
+}

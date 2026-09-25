@@ -2239,3 +2239,51 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - پښتو متن: `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:105` (446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e).
 - سمون: د P2 د دويمې بېلګې په ګوډلي شمېر کښې د جملې `!G` نښه بېرته راوستل شوه. څنګ ته ئې پښتو وضاحت شته.
 - د کتنې ثبت: `PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY`.
+
+## OLSOL-001
+
+- Unit: `OLP-0332`.
+- Frozen source: `content/second-order-logic/metatheory/second-order-arithmetic.tex:40-42` (SHA-256 `a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:40` (SHA-256 `e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc`).
+- Correction: The source places a prose closing parenthesis inside the math span after the domain equality; the target closes the math span first.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-002
+
+- Unit: `OLP-0332`.
+- Frozen source: `content/second-order-logic/metatheory/second-order-arithmetic.tex:116-123` (SHA-256 `a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:124` (SHA-256 `e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc`).
+- Correction: The displayed addition definition quantifies over w but writes u(x')=u(x)' in the closure clause. Using w in both positions makes the clause express the stated successor condition for every input.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-003
+
+- Unit: `OLP-0333`.
+- Frozen source: `content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-34` (SHA-256 `d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:35` (SHA-256 `5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07`).
+- Correction: The source closes the math span before the satisfaction command's argument brace, leaving a malformed TeX expression. The target closes the command first.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-004
+
+- Unit: `OLP-0334`.
+- Frozen source: `content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:36` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
+- Correction: The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-005
+
+- Unit: `OLP-0334`.
+- Frozen source: `content/second-order-logic/metatheory/compactness.tex:43-51` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:53` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
+- Correction: The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-006
+
+- Unit: `OLP-0334`.
+- Frozen source: `content/second-order-logic/metatheory/compactness.tex:54-63` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:63` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
+- Correction: The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

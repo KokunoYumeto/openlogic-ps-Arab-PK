@@ -1,0 +1,61 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-25T04:10:45.893995+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY",
+  "scope": "OLP-0330 through OLP-0335 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLSOL-001",
+      "unit_id": "OLP-0332",
+      "classification": "extra-parenthesis-inside-formula",
+      "source_locator": "content/second-order-logic/metatheory/second-order-arithmetic.tex:40-42",
+      "target_line_1based": 40
+    },
+    {
+      "id": "OLSOL-002",
+      "unit_id": "OLP-0332",
+      "classification": "wrong-variable-in-universal-addition-condition",
+      "source_locator": "content/second-order-logic/metatheory/second-order-arithmetic.tex:116-123",
+      "target_line_1based": 124
+    },
+    {
+      "id": "OLSOL-003",
+      "unit_id": "OLP-0333",
+      "classification": "unbalanced-satisfaction-command-and-math-delimiter",
+      "source_locator": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-34",
+      "target_line_1based": 35
+    },
+    {
+      "id": "OLSOL-004",
+      "unit_id": "OLP-0334",
+      "classification": "duplicate-theorem-label",
+      "source_locator": "content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17",
+      "target_line_1based": 36
+    },
+    {
+      "id": "OLSOL-005",
+      "unit_id": "OLP-0334",
+      "classification": "insufficient-pairwise-distinctness-in-at-least-n-formula",
+      "source_locator": "content/second-order-logic/metatheory/compactness.tex:43-51",
+      "target_line_1based": 53
+    },
+    {
+      "id": "OLSOL-006",
+      "unit_id": "OLP-0334",
+      "classification": "finite-subset-bound-misapplied-to-infinite-premise-set",
+      "source_locator": "content/second-order-logic/metatheory/compactness.tex:54-63",
+      "target_line_1based": 63
+    }
+  ],
+  "no_change_units": [
+    "OLP-0330",
+    "OLP-0331",
+    "OLP-0335"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete B060 source and semantic review; six corrected target readings disclosed"
+}

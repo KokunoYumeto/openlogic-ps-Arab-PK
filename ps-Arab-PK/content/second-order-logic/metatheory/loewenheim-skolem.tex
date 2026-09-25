@@ -1,0 +1,56 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{lst}
+
+\olsection{د لوېنهايم--سکولم قضيه د دويمې درجې منطق دپاره نۀ صدق کوي}
+
+\begin{explain}
+د (ښکته) لوېنهايم--سکولم قضيه وايي چې د !!{sentence}s هر هغه سټ
+چې نامتناهي مدل لري، !!a{enumerable} مدل هم لري۔ دا هم د بشپړتيا
+د قضيې پايله ده: د بشپړتيا ثبوت د !!{sentence}s د هر سازګار سټ
+دپاره يو مدل جوړوي او هغه مدل !!{enumerable} وي۔ د پورته
+لوېنهايم--سکولم قضيه هم شته، چې ضمانت کوي: که د !!{sentence}s يو سټ
+!!a{denumerable} مدل ولري، نو !!a{nonenumerable} مدل هم لري۔ دا دواړه
+قضيې د دويمې درجې منطق دپاره ناسمې دي۔
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-no-ls} د لوېنهايم--سکولم قضيه د دويمې درجې منطق
+دپاره نۀ صدق کوي: داسې !!{sentence}s شته چې نامتناهي مدلونه لري،
+خو !!{enumerable} مدل نۀ لري۔
+\end{thm}
+
+\begin{proof}
+په ياد ولرئ چې
+\[
+\fn{Count} \ident \lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+په !!a{structure}~$\Struct{M}$ کښې هله او يوازې هله رښتيا ده چې
+$\Domain{M}$ !!{enumerable} وي؛ نو $\lnot\fn{Count}$ په~$\Struct{M}$
+کښې هله او يوازې هله رښتيا ده چې $\Domain{M}$ !!{nonenumerable} وي۔
+داسې !!{structure}s شته: هر !!{nonenumerable} سټ د !!{domain} په توګه
+واخلئ، لکه $\Pow{\Nat}$ يا~$\Real$۔ نو $\lnot \fn{Count}$ نامتناهي
+مدلونه لري، خو !!{enumerable} مدلونه نۀ لري۔
+\end{proof}
+
+\begin{thm}
+داسې !!{sentence}s شته چې !!{denumerable} مدلونه لري، خو
+!!{nonenumerable} مدلونه نۀ لري۔
+\end{thm}
+
+\begin{proof}
+$\fn{Count} \land \fn{Inf}$ په~$\Nat$ کښې رښتيا ده، خو په هېڅ داسې
+  !!{structure}~$\Struct{M}$ کښې نۀ ده رښتيا چې $\Domain{M}$ ئې
+  !!{nonenumerable} وي۔
+\end{proof}
+
+
+\end{document}
