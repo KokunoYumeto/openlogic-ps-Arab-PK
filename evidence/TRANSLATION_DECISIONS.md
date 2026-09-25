@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 421 terminology, source-correction and other judgment-dependent entries across 311 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 427 terminology, source-correction and other judgment-dependent entries across 321 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -3161,6 +3161,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 45; page: pending stable pagination in a reader containing this unit
   - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0321; The Undefinability of Truth; `content/incompleteness/incompleteness-provability/tarski-thm.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/incompleteness-provability/tarski-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CE-CLOSURE-COMPLEMENT
 
@@ -3239,6 +3240,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0249; The Fixed-Point Theorem; `content/computability/computability-theory/fixed-point-thm.tex` source line(s) 3,10,48,50,54,115,119,121,123,130,132,137,139,142,145,153,156,157,175,181,188,191,192,196,206,212,216,220; `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex` target line(s) 10,47,48,52,157,184,207; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 3,10,12,18,19,37,46; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 10,12,18,19,45; page: pending stable pagination in a reader containing this unit
   - OLP-0251; Defining Functions using Self-Reference; `content/computability/computability-theory/def-functions-self-reference.tex` source line(s) 3,10,14,31,44,55; `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex` target line(s) 10,14,31,33,52,56; page: pending stable pagination in a reader containing this unit
+  - OLP-0313; Introduction; `content/incompleteness/incompleteness-provability/introduction.tex` source line(s) 63; `ps-Arab-PK/content/incompleteness/incompleteness-provability/introduction.tex` target line(s) 57; page: pending stable pagination in a reader containing this unit
+  - OLP-0314; The Fixed-Point Lemma; `content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` source line(s) 3,11,14,24,25,26,29,31,32,37,41,42,43,45,46,47,52,55,57,60,61,62,64,65,70,72,76,77,79,80,86,94,95,97,98,100,101,102,110,112; `ps-Arab-PK/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` target line(s) 11,14,129,138; page: pending stable pagination in a reader containing this unit
+  - OLP-0320; L\"ob's Theorem; `content/incompleteness/incompleteness-provability/lob-thm.tex` source line(s) 13,23,36,80,81,88,93,138; `ps-Arab-PK/content/incompleteness/incompleteness-provability/lob-thm.tex` target line(s) 28,40,86,95; page: pending stable pagination in a reader containing this unit
+  - OLP-0321; The Undefinability of Truth; `content/incompleteness/incompleteness-provability/tarski-thm.tex` source line(s) 89,107; `ps-Arab-PK/content/incompleteness/incompleteness-provability/tarski-thm.tex` target line(s) 89,107; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-MACHINE-COMPONENTS
 
@@ -3479,6 +3484,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 13,16,18,21,28,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 16; page: pending stable pagination in a reader containing this unit
   - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 28; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0313; Introduction; `content/incompleteness/incompleteness-provability/introduction.tex` source line(s) 13,20,26,28,29,30,31,32,37,41; `ps-Arab-PK/content/incompleteness/incompleteness-provability/introduction.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-REPRESENTABILITY
 
@@ -3510,6 +3516,10 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) 39,45; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) 39,44; page: pending stable pagination in a reader containing this unit
   - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 57; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 52,57,70; page: pending stable pagination in a reader containing this unit
   - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 34; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) 31,37,50,53,54,55; page: pending stable pagination in a reader containing this unit
+  - OLP-0314; The Fixed-Point Lemma; `content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` source line(s) 60,78,97; `ps-Arab-PK/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` target line(s) 60,80,98; page: pending stable pagination in a reader containing this unit
+  - OLP-0315; The First Incompleteness Theorem; `content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex` source line(s) 17,19,31,32,41; `ps-Arab-PK/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex` target line(s) 17,20,31,41; page: pending stable pagination in a reader containing this unit
+  - OLP-0317; Comparison with G\"odel's Original Paper; `content/incompleteness/incompleteness-provability/godels-paper.tex` source line(s) 20,25; `ps-Arab-PK/content/incompleteness/incompleteness-provability/godels-paper.tex` target line(s) 19,23; page: pending stable pagination in a reader containing this unit
+  - OLP-0318; The \usetoken{S}{derivability} Conditions for $\Th{PA}$; `content/incompleteness/incompleteness-provability/provability-conditions.tex` source line(s) 31,33; `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex` target line(s) 32,38; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
 
@@ -3526,6 +3536,11 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68,121,134; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,73,137; page: pending stable pagination in a reader containing this unit
   - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 28; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
   - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 64; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) 61,66; page: pending stable pagination in a reader containing this unit
+  - OLP-0312; inc; `content/incompleteness/incompleteness-provability/incompleteness-provability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/incompleteness-provability/incompleteness-provability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0313; Introduction; `content/incompleteness/incompleteness-provability/introduction.tex` source line(s) 20,30,31,32,37; `ps-Arab-PK/content/incompleteness/incompleteness-provability/introduction.tex` target line(s) 19,27,33; page: pending stable pagination in a reader containing this unit
+  - OLP-0315; The First Incompleteness Theorem; `content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex` source line(s) 11,14; `ps-Arab-PK/content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex` target line(s) 11,13; page: pending stable pagination in a reader containing this unit
+  - OLP-0317; Comparison with G\"odel's Original Paper; `content/incompleteness/incompleteness-provability/godels-paper.tex` source line(s) 21,28; `ps-Arab-PK/content/incompleteness/incompleteness-provability/godels-paper.tex` target line(s) 19,25; page: pending stable pagination in a reader containing this unit
+  - OLP-0319; The Second Incompleteness Theorem; `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` source line(s) 11,35,52,59,96; `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` target line(s) 11,47,64,110; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SYNTAX-GODEL-CODING
 
@@ -3691,6 +3706,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 25,32,49; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 25,32; page: pending stable pagination in a reader containing this unit
   - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 18,19,22,27,31; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) 18,23,33; page: pending stable pagination in a reader containing this unit
   - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) 31,45,46; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
+  - OLP-0316; Rosser's Theorem; `content/incompleteness/incompleteness-provability/rosser-thm.tex` source line(s) 126,127,128; `ps-Arab-PK/content/incompleteness/incompleteness-provability/rosser-thm.tex` target line(s) 148,154,155; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INTERPRETABILITY-UNDECIDABILITY
 
@@ -3704,6 +3720,49 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
 - Locations:
   - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 11,14,22,23,24,30,32,33,37,42,45,49,54,64; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) 11,14,61,63,66; page: pending stable pagination in a reader containing this unit
+
+## TERM-PROVABILITY-ROSSER
+
+- Source term or sense: Rosser provability predicate / refutation / shorter refutation
+- Chosen rendering or treatment: د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: The Rosser predicate asks for a proof code with no smaller refutation code. Under consistency it has the same true instances as ordinary provability, but its internal proof-theoretic behavior differs. The two contradiction directions in Rosser's theorem must remain distinct.
+- Alternatives: د روسر ثبوت‌وړتيا; د ردونې پر کوډ د ثبوت د کوډ لومړيتوب
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه» the clearest conventional rendering of “Rosser provability predicate / refutation / shorter refutation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+- Locations:
+  - OLP-0316; Rosser's Theorem; `content/incompleteness/incompleteness-provability/rosser-thm.tex` source line(s) 43; `ps-Arab-PK/content/incompleteness/incompleteness-provability/rosser-thm.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
+
+## TERM-PROVABILITY-REFLECTION-LOB
+
+- Source term or sense: derivability conditions / reflection principle / Löb's theorem / fixed point
+- Chosen rendering or treatment: د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: P1 internalizes a theorem, P2 internalizes modus ponens, and P3 internalizes positive introspection. Löb's antecedent is Prov(A) implies A: if a theory proves that instance, it proves A. The fixed-point biconditional remains a syntactic theorem of the stated theory, not a metatheoretic truth claim.
+- Alternatives: د استنباط شرطونه; د انعکاس قاعده; د لوب تيورم
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی» the clearest conventional rendering of “derivability conditions / reflection principle / Löb's theorem / fixed point” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+- Locations:
+  - OLP-0312; inc; `content/incompleteness/incompleteness-provability/incompleteness-provability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/incompleteness-provability/incompleteness-provability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0314; The Fixed-Point Lemma; `content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/incompleteness-provability/fixed-point-lemma.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0318; The \usetoken{S}{derivability} Conditions for $\Th{PA}$; `content/incompleteness/incompleteness-provability/provability-conditions.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0319; The Second Incompleteness Theorem; `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` source line(s) 96; `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0320; L\"ob's Theorem; `content/incompleteness/incompleteness-provability/lob-thm.tex` source line(s) 13,23,36,60,81,93,121,122,138; `ps-Arab-PK/content/incompleteness/incompleteness-provability/lob-thm.tex` target line(s) 11,14,88,101,129,140; page: pending stable pagination in a reader containing this unit
+
+## TERM-TRUTH-DEFINABILITY-TARSKI
+
+- Source term or sense: definability in standard arithmetic / truth definition / undefinability of truth
+- Chosen rendering or treatment: په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Definability in N compares a numerical relation with satisfaction of an arithmetic formula under all standard numeral substitutions. Computable relations are definable, but not conversely; the halting relation is the explicit example. Tarski's result forbids a formula defining the codes of all true arithmetic sentences in arithmetic itself.
+- Alternatives: د صدق تعريفېدنه; د رښتيا نه تعريفېدنه; د تارسکي تيورم
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه» the clearest conventional rendering of “definability in standard arithmetic / truth definition / undefinability of truth” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+- Locations:
+  - OLP-0321; The Undefinability of Truth; `content/incompleteness/incompleteness-provability/tarski-thm.tex` source line(s) 11; `ps-Arab-PK/content/incompleteness/incompleteness-provability/tarski-thm.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 
@@ -6902,6 +6961,45 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous adoption of a bounded manager replay after B056; folded into B057 without changing the frozen public reader
 - Locations:
   - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) content/incompleteness/representability-in-q/sigma1-completeness.tex:289-297; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 311; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLPRV-001
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the marked OProv definition changes from \lexists[x][\Prf[\Th{PA}](x,y)] to \lexists[x][\OPrf[\Th{PA}](x,y)]; the adjacent Pashto note quotes both symbols and no other source math is altered.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLPRV-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
+- Locations:
+  - OLP-0318; The \usetoken{S}{derivability} Conditions for $\Th{PA}$; `content/incompleteness/incompleteness-provability/provability-conditions.tex` source line(s) content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36; `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex` target line(s) 36; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLPRV-002
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the marked negated provability expression changes from Prov[PA] to OProv[PA]; the adjacent Pashto note quotes both symbols.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLPRV-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
+- Locations:
+  - OLP-0319; The Second Incompleteness Theorem; `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` source line(s) content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45; `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` target line(s) 44; page: pending stable pagination in a reader containing this unit
+
+## DEC-OLPRV-003
+
+- Source term or sense: source-correction
+- Chosen rendering or treatment: The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: medium; high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable
+- Rationale: Only the marked P2 substitution expression changes from gn{G} to gn{!G}; the adjacent Pashto note quotes both expressions.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review request: Please double-check: Does the Pashto correction for OLPRV-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
+- Locations:
+  - OLP-0319; The Second Incompleteness Theorem; `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` source line(s) content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94; `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex` target line(s) 105; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

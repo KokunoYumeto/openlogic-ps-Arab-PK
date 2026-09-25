@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 311 of 722 source units are translated drafts. This log contains 169 terminology entries and 252 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 321 of 722 source units are translated drafts. This log contains 172 terminology entries and 255 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1524,6 +1524,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د ژبې تعبير; په تيوري کښې تمثيلېدنه; معياري مدل; د پرېکړه‌وړتيا پوله
 - Review question: In Pakistani Pashto mathematical prose, is «ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله» the clearest conventional rendering of “interpret a language or theory / interpretable / standard interpretation / undecidability boundary” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
+
+## TERM-PROVABILITY-ROSSER
+
+- Type: terminology
+- Choice: د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه
+- Uncertainty: basic proof and consistency words have regional support; Rosser's technical construction is provisional and follows the frozen source
+- Alternatives: د روسر ثبوت‌وړتيا; د ردونې پر کوډ د ثبوت د کوډ لومړيتوب
+- Review question: In Pakistani Pashto mathematical prose, is «د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه» the clearest conventional rendering of “Rosser provability predicate / refutation / shorter refutation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+
+## TERM-PROVABILITY-REFLECTION-LOB
+
+- Type: terminology
+- Choice: د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی
+- Uncertainty: proof and consistency words and a distinct diagonal verb have regional support; formalized provability and reflection compounds remain provisional
+- Alternatives: د استنباط شرطونه; د انعکاس قاعده; د لوب تيورم
+- Review question: In Pakistani Pashto mathematical prose, is «د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی» the clearest conventional rendering of “derivability conditions / reflection principle / Löb's theorem / fixed point” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+
+## TERM-TRUTH-DEFINABILITY-TARSKI
+
+- Type: terminology
+- Choice: په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه
+- Uncertainty: regional sources support exposition, proof and a distinct diagonal verb; the exact semantic and undefinability compounds remain provisional
+- Alternatives: د صدق تعريفېدنه; د رښتيا نه تعريفېدنه; د تارسکي تيورم
+- Review question: In Pakistani Pashto mathematical prose, is «په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه» the clearest conventional rendering of “definability in standard arithmetic / truth definition / undefinability of truth” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -3738,6 +3765,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-098 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous adoption of a bounded manager replay after B056; folded into B057 without changing the frozen public reader
+
+## DEC-OLPRV-001
+
+- Type: source-correction
+- Choice: The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLPRV-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
+
+## DEC-OLPRV-002
+
+- Type: source-correction
+- Choice: The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLPRV-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
+
+## DEC-OLPRV-003
+
+- Type: source-correction
+- Choice: The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLPRV-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B058 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

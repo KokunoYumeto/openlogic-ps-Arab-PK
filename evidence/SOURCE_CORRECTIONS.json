@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0311; B057 source review plus two inherited, centrally duplicated macro-interface repairs are registered; OLSIZ-011 and OLINF-002 remain retracted; v0.6.0 public artifacts remain frozen",
-  "adopted_utc": "2026-09-21T00:47:56.417994+00:00",
+  "status": "adopted through OLP-0321; three B058 notation repairs registered with adjacent Pashto disclosures; OLSIZ-011 and OLINF-002 remain retracted",
+  "adopted_utc": "2026-09-25T02:20:24.021261+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6017,6 +6017,161 @@
       ],
       "affected_segments": [
         "OLP-0300-B031"
+      ]
+    },
+    {
+      "id": "OLPRV-001",
+      "unit_id": "OLP-0318",
+      "classification": "metalinguistic-proof-relation-used-inside-object-language-provability-formula",
+      "source_path": "content/incompleteness/incompleteness-provability/provability-conditions.tex",
+      "source_sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
+      "source_locator": "content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36",
+      "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex",
+      "target_sha256": "0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95",
+      "target_line_1based": 36,
+      "mode": "replace-object-formula-Prf-with-OPrf-plus-adjacent-Pashto-disclosure",
+      "reason": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+      "formula_policy": "Only the marked OProv definition changes from \\lexists[x][\\Prf[\\Th{PA}](x,y)] to \\lexists[x][\\OPrf[\\Th{PA}](x,y)]; the adjacent Pashto note quotes both symbols and no other source math is altered.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lexists[x][\\Prf[\\Th{PA}](x,y)]$"
+        ],
+        "target_only": [
+          "$\\lexists[x][\\OPrf[\\Th{PA}](x,y)]$",
+          "$\\Prf[\\Th{PA}](x,y)$",
+          "$\\OPrf[\\Th{PA}](x,y)$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_report": "pending manager channel availability",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+      "audit_artifacts": [
+        "content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36",
+        "ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex:36"
+      ],
+      "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+      "translation_change": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+      "counterexample": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+      "upstream_reporting": "new source notation issue; manager report pending channel availability",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "affected_segments": [
+        "OLP-0318-B007"
+      ]
+    },
+    {
+      "id": "OLPRV-002",
+      "unit_id": "OLP-0319",
+      "classification": "metalinguistic-provability-symbol-in-object-language-derivation",
+      "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+      "source_locator": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45",
+      "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "target_sha256": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "target_line_1based": 44,
+      "mode": "replace-Prov-with-OProv-plus-adjacent-Pashto-disclosure",
+      "reason": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "formula_policy": "Only the marked negated provability expression changes from Prov[PA] to OProv[PA]; the adjacent Pashto note quotes both symbols.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lnot\\Prov[\\Th{PA}](\\gn{!G_\\Th{PA}})$"
+        ],
+        "target_only": [
+          "$\\lnot\\OProv[\\Th{PA}](\\gn{!G_\\Th{PA}})$",
+          "$\\Prov[\\Th{PA}]$",
+          "$\\OProv[\\Th{PA}]$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_report": "pending manager channel availability",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+      "audit_artifacts": [
+        "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45",
+        "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:44"
+      ],
+      "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+      "translation_change": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "counterexample": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "upstream_reporting": "new source notation issue; manager report pending channel availability",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "affected_segments": [
+        "OLP-0319-B009"
+      ]
+    },
+    {
+      "id": "OLPRV-003",
+      "unit_id": "OLP-0319",
+      "classification": "missing-formula-token-in-Godel-numeral-of-P2-instance",
+      "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+      "source_locator": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94",
+      "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "target_sha256": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "target_line_1based": 105,
+      "mode": "replace-G-with-formula-G-inside-Godel-numeral-plus-adjacent-Pashto-disclosure",
+      "reason": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "formula_policy": "Only the marked P2 substitution expression changes from gn{G} to gn{!G}; the adjacent Pashto note quotes both expressions.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\ident\\OProv(\\gn{G})$"
+        ],
+        "target_only": [
+          "$!A\\ident\\OProv(\\gn{!G})$",
+          "$!A$",
+          "$\\gn{G}$",
+          "$!G$",
+          "$\\gn{!G}$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_report": "pending manager channel availability",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+      "audit_artifacts": [
+        "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94",
+        "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:105"
+      ],
+      "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+      "translation_change": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "counterexample": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "upstream_reporting": "new source notation issue; manager report pending channel availability",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "affected_segments": [
+        "OLP-0319-B011"
       ]
     }
   ],

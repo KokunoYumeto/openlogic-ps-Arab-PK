@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۲۱ پرېکړو د کتنې لار دے: ۱۶۹ اصطلاحات، ۲۴۶ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۱۱ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۲۷ پرېکړو د کتنې لار دے: ۱۷۲ اصطلاحات، ۲۴۹ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۲۱ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -1095,7 +1095,7 @@
 - اصلي مفهوم: `halting set K_0 / self-halting set K / zero-input halting set K_1`؛ غوره شوې پښتو بڼه: **د درېدنې سټ K_0 / پر خپل ځان د درېدنې سټ K / پر صفر ننوت د درېدنې سټ K_1**.
 - د کتنې وړ بديلونه: د تم کېدو سټ؛ ځان-درېدونکی سټ؛ د صفر ننوت درېدنې سټ.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17).
-- د متن ځای: `OLP-0240`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex#L18)؛ [اصلي متن](upstream/content/computability/computability-theory/non-comp-set.tex#L17)؛ نور 7 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0240`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/non-comp-set.tex#L18)؛ [اصلي متن](upstream/content/computability/computability-theory/non-comp-set.tex#L17)؛ نور 8 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-CE-CLOSURE-COMPLEMENT — د په محاسبوي ډول د شمېر وړ سټونو د اتحاد او اشتراک لاندې تړلتيا / د متمم لاندې ناتړلتيا
@@ -1135,7 +1135,7 @@
 - اصلي مفهوم: `fixed-point theorem / fixed point / self-reference / diagonal function / self-printing program`؛ غوره شوې پښتو بڼه: **د ثابت ټکي قضيه / ثابت ټکے / ځان-مراجعه / قطري تابع / ځان-چاپوونکی پروګرام**.
 - د کتنې وړ بديلونه: د ټاکلي ټکي قضيه؛ ځان ته مراجعه؛ ځان چاپوونکی پروګرام.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17).
-- د متن ځای: `OLP-0249`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex#L10)؛ [اصلي متن](upstream/content/computability/computability-theory/fixed-point-thm.tex#L3)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0249`؛ [پښتو متن](ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex#L10)؛ [اصلي متن](upstream/content/computability/computability-theory/fixed-point-thm.tex#L3)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-TURING-MACHINE-COMPONENTS — ټيورينګ ماشين / پټه / مربع / لوست-ليک سر / الفبا / حالت / د حالت بدلون تابع
@@ -1255,7 +1255,7 @@
 - اصلي مفهوم: `incompleteness theorem / Hilbert's program / formalization / finitary method / proof theory`؛ غوره شوې پښتو بڼه: **د ناتکميلۍ قضيه / د هېلبرټ پروګرام / صوري کول / متناهي‌پاله لار / د ثبوتونو تيوري**.
 - د کتنې وړ بديلونه: د نيمګړتيا قضيه د ناتکميلۍ پر ځاے؛ د هېلبرټ طرحه د پروګرام پر ځاے؛ متناهي طريقه د متناهي‌پالې لارې پر ځاے.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `AF-NIAZMAN-P58-CONTRADICTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 58)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138).
-- د متن ځای: `OLP-0274`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness.tex)؛ [اصلي متن](upstream/content/incompleteness/incompleteness.tex#L10)؛ نور 5 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0274`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness.tex)؛ [اصلي متن](upstream/content/incompleteness/incompleteness.tex#L10)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-INCOMPLETENESS-REPRESENTABILITY — تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله
@@ -1263,7 +1263,7 @@
 - اصلي مفهوم: `represent a function or relation / arithmetization of syntax / Gödel coding / provability predicate / consistency statement`؛ غوره شوې پښتو بڼه: **تابعه يا اړيکه تمثيلول / د نحو حسابي کول / ګوډل کوډول / د اثبات‌وړتيا پريديکات / د سازګارۍ جمله**.
 - د کتنې وړ بديلونه: ښودنه د تمثيل پر ځاے؛ د نحو حسابي‌سازي؛ د ثبوت‌پذيرۍ محمول؛ د سازګارۍ بيان.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `AF-NIAZMAN-P58-CONTRADICTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 58)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 24)؛ `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109)؛ `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112).
-- د متن ځای: `OLP-0277`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/introduction/definitions.tex#L290)؛ [اصلي متن](upstream/content/incompleteness/introduction/definitions.tex#L270)؛ نور 18 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0277`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/introduction/definitions.tex#L290)؛ [اصلي متن](upstream/content/incompleteness/introduction/definitions.tex#L270)؛ نور 22 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-INCOMPLETENESS-GODEL-INDEPENDENCE — خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب
@@ -1271,7 +1271,7 @@
 - اصلي مفهوم: `independent sentence / Gödel sentence / first and second incompleteness theorems / Presburger arithmetic`؛ غوره شوې پښتو بڼه: **خپلواکه جمله / د ګوډل جمله / د ناتکميلۍ لومړۍ او دويمه قضيه / د پرېسبورګر حساب**.
 - د کتنې وړ بديلونه: نافيصله جمله د خپلواکې جملې پر ځاے؛ ګوډلي جمله؛ د پرېسبورګر حسابي تيوري.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `AF-NIAZMAN-P58-CONTRADICTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 58)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 24)؛ `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109)؛ `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112).
-- د متن ځای: `OLP-0278`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/introduction/overview.tex#L11)؛ [اصلي متن](upstream/content/incompleteness/introduction/overview.tex#L18)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0278`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/introduction/overview.tex#L11)؛ [اصلي متن](upstream/content/incompleteness/introduction/overview.tex#L18)؛ نور 8 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-SYNTAX-GODEL-CODING — د نحو حسابي کول / سمبول-کوډ / ګوډل شمېره / د اوليه عددونو د قوتونو د لړۍ کوډول / جوړښتي لړۍ
@@ -1351,7 +1351,7 @@
 - اصلي مفهوم: `universal computable relation / computable separator / computably inseparable / refutable theory complement`؛ غوره شوې پښتو بڼه: **نړيواله محاسبه کېدونکې اړيکه / محاسبه کېدونکې بېلوونکې / په محاسبوي ډول نه بېلېدونکي / د ردېدونکو جملو سټ**.
 - د کتنې وړ بديلونه: محاسبوي نه بېلېدنه؛ محاسبه کېدونکے بېلوونکی سټ؛ نړيواله محاسبوي اړيکه.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `AF-NIAZMAN-P58-CONTRADICTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 58)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109)؛ `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P101-PAIRING` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 101)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112).
-- د متن ځای: `OLP-0305`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex#L25)؛ [اصلي متن](upstream/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex#L25)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0305`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex#L25)؛ [اصلي متن](upstream/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex#L25)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-INTERPRETABILITY-UNDECIDABILITY — ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله
@@ -1360,6 +1360,30 @@
 - د کتنې وړ بديلونه: د ژبې تعبير؛ په تيوري کښې تمثيلېدنه؛ معياري مدل؛ د پرېکړه‌وړتيا پوله.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P48-MODUS-PONENS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 48)؛ `AF-NIAZMAN-P58-CONTRADICTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 58)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 24)؛ `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109).
 - د متن ځای: `OLP-0311`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex#L11)؛ [اصلي متن](upstream/content/incompleteness/theories-computability/interpretability.tex#L11).
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-PROVABILITY-ROSSER — د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه
+
+- اصلي مفهوم: `Rosser provability predicate / refutation / shorter refutation`؛ غوره شوې پښتو بڼه: **د روسر د اثبات‌وړتيا پريديکات / ردونه / تر ثبوت لنډه ردونه**.
+- د کتنې وړ بديلونه: د روسر ثبوت‌وړتيا؛ د ردونې پر کوډ د ثبوت د کوډ لومړيتوب.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140).
+- د متن ځای: `OLP-0316`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/rosser-thm.tex#L48)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/rosser-thm.tex#L43).
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-PROVABILITY-REFLECTION-LOB — د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی
+
+- اصلي مفهوم: `derivability conditions / reflection principle / Löb's theorem / fixed point`؛ غوره شوې پښتو بڼه: **د اثبات‌وړتيا شرطونه / د انعکاس اصل / د لوب قضيه / ثابت ټکی**.
+- د کتنې وړ بديلونه: د استنباط شرطونه؛ د انعکاس قاعده؛ د لوب تيورم.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P140-CONSISTENCY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 140)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112).
+- د متن ځای: `OLP-0312`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/incompleteness-provability.tex)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/incompleteness-provability.tex)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-TRUTH-DEFINABILITY-TARSKI — په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه
+
+- اصلي مفهوم: `definability in standard arithmetic / truth definition / undefinability of truth`؛ غوره شوې پښتو بڼه: **په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه**.
+- د کتنې وړ بديلونه: د صدق تعريفېدنه؛ د رښتيا نه تعريفېدنه؛ د تارسکي تيورم.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112).
+- د متن ځای: `OLP-0321`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/tarski-thm.tex#L11)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/tarski-thm.tex#L11).
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -2842,6 +2866,24 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLPRV-001
+
+- کره پرتله: `OLP-0318`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex#L36)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/provability-conditions.tex)؛ د سرچينې کره نښه `content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLPRV-002
+
+- کره پرتله: `OLP-0319`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex#L44)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex)؛ د سرچينې کره نښه `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLPRV-003
+
+- کره پرتله: `OLP-0319`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex#L105)؛ [اصلي متن](upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex)؛ د سرچينې کره نښه `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
@@ -2876,4 +2918,4 @@
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پورته پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. دا پښتو د لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه جوړ کړے دے. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0321 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

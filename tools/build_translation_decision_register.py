@@ -63,6 +63,11 @@ PART_AND_CHAPTER = {
     "recursive-functions": ("محاسبه کېدنه", "بازګشتي تابعې"),
     "machines-computations": ("ټيورينګ ماشينونه", "ماشينونه او محاسبې"),
     "undecidability": ("ټيورينګ ماشينونه", "ناپرېکړتيا"),
+    "introduction": ("ناتکميلي", "پېژندنه"),
+    "arithmetization-syntax": ("ناتکميلي", "د نحو حسابي کول"),
+    "representability-in-q": ("ناتکميلي", "په Q کښې تمثيلېدنه"),
+    "theories-computability": ("ناتکميلي", "تيورۍ او محاسبه کېدنه"),
+    "incompleteness-provability": ("ناتکميلي", "ناتکميلي او اثبات‌وړتيا"),
 }
 
 OUTPUT_NAMES = [
@@ -148,6 +153,10 @@ def titles_for_path(source_path: str, target_file: Path) -> tuple[str | None, st
             key = "computability"
     elif "turing-machines" in parts:
         index = parts.index("turing-machines")
+        if len(parts) > index + 1 and not parts[index + 1].endswith(".tex"):
+            key = parts[index + 1]
+    elif "incompleteness" in parts:
+        index = parts.index("incompleteness")
         if len(parts) > index + 1 and not parts[index + 1].endswith(".tex"):
             key = parts[index + 1]
     part_title, chapter_title = PART_AND_CHAPTER.get(key, (None, None))

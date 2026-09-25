@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B057-THEORIES-COMPUTABILITY",
-  "status": "v0.6.0 public artifacts remain frozen and verified; OLP-0301 through OLP-0311 form a complete manually translated and source-reviewed theories-and-computability batch; OLSIZ-011 and OLINF-002 remain retracted",
+  "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+  "status": "OLP-0312 through OLP-0321 source-reviewed and ready for cumulative QA; frozen public artifacts unchanged",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -6985,6 +6985,141 @@
         "TERM-FOL-SEMANTICS"
       ],
       "scope": "The informal interpretation definition, transferred undecidability theorem, ZFC and signature corollaries, tight monadic boundary, definability reductions and Presburger contrast remain complete. OLCMP-096 names the required standard interpretation."
+    },
+    "OLP-0312": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE",
+        "TERM-PROVABILITY-REFLECTION-LOB"
+      ],
+      "scope": "Chapter title, nine ordered imports and end hook preserve the source structure."
+    },
+    "OLP-0313": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-INCOMPLETENESS-HILBERT-PROGRAM",
+        "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE",
+        "TERM-FIXED-POINT-SELF-REFERENCE"
+      ],
+      "scope": "Hilbert's two goals, omega-consistency qualification, numeral/code/term distinctions and Quine quotation mechanism remain complete."
+    },
+    "OLP-0314": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-FIXED-POINT-SELF-REFERENCE",
+        "TERM-INCOMPLETENESS-REPRESENTABILITY",
+        "TERM-PROVABILITY-REFLECTION-LOB"
+      ],
+      "scope": "The syntactic diagonal construction and both implications of Q's fixed-point equivalence preserve all arguments and quantifiers."
+    },
+    "OLP-0315": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE",
+        "TERM-INCOMPLETENESS-REPRESENTABILITY"
+      ],
+      "scope": "The first theorem keeps consistency for unprovability and the stronger omega-consistency hypothesis for unrefutability."
+    },
+    "OLP-0316": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-PROVABILITY-ROSSER",
+        "TERM-COMPUTABLE-INSEPARABILITY"
+      ],
+      "scope": "The Rosser predicate, the two proof-code cases and the inseparability problem keep their distinct quantifiers and contradiction directions."
+    },
+    "OLP-0317": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE",
+        "TERM-INCOMPLETENESS-REPRESENTABILITY"
+      ],
+      "scope": "Gödel's 1931 paper comparison preserves the order of formal system, primitive recursive relations, representation, beta lemma and second-theorem sketch."
+    },
+    "OLP-0318": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROVABILITY-REFLECTION-LOB",
+        "TERM-INCOMPLETENESS-REPRESENTABILITY"
+      ],
+      "scope": "PA induction schema and P1–P4 are intact; OLPRV-001 repairs the object-language proof-relation symbol in the provability definition."
+    },
+    "OLP-0319": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY"
+      ],
+      "terms": [
+        "TERM-PROVABILITY-REFLECTION-LOB",
+        "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE"
+      ],
+      "scope": "Formal consistency, Gödel sentence and P1–P3 derivation are intact; OLPRV-002–003 repair two isolated notation slips."
+    },
+    "OLP-0320": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-PROVABILITY-REFLECTION-LOB",
+        "TERM-FIXED-POINT-SELF-REFERENCE"
+      ],
+      "scope": "Reflection runs from Prov(A) to A; the fixed point, P1–P3 steps, and consequences for consistency and H are complete."
+    },
+    "OLP-0321": {
+      "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-TRUTH-DEFINABILITY-TARSKI",
+        "TERM-HALTING-SETS",
+        "TERM-FIXED-POINT-SELF-REFERENCE"
+      ],
+      "scope": "Truth in standard N, definability, halting example, Tarski contradiction and object/meta-language conclusion are complete."
     }
   },
   "semantic_review": [
@@ -9741,6 +9876,66 @@
       "passage": "interpretability transfers undecidability",
       "reverse_paraphrase": "Defining arithmetic inside a theory transfers Q's undecidability; this covers ZFC and languages with a binary relation or two unary functions, while the stated monadic fragment and Presburger addition-only arithmetic remain decidable.",
       "finding": "The interpretation theorem, all four corollary-level consequences, signature boundary and definability remarks are complete; OLCMP-096 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0312",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Nine source sections are ordered to move from fixed points through Gödel, Rosser, provability conditions, Löb and Tarski.",
+      "finding": "All imports, chapter metadata and end hook are retained."
+    },
+    {
+      "unit_id": "OLP-0313",
+      "passage": "Hilbert's program and self-reference",
+      "reverse_paraphrase": "The first theorem rules out a complete consistent effective arithmetic theory; the second blocks an appropriate internal consistency proof. Quine's sentence copies its own quotation.",
+      "finding": "The omega-consistency qualification and the three-word Pashto example remain explicit."
+    },
+    {
+      "unit_id": "OLP-0314",
+      "passage": "syntactic fixed-point lemma",
+      "reverse_paraphrase": "Representability of the diagonal function in Q yields a sentence A for which Q proves A iff B(code(A)); both proof directions use the unique output code.",
+      "finding": "The explanation, formal proof and truth-definition exercise keep their distinct levels."
+    },
+    {
+      "unit_id": "OLP-0315",
+      "passage": "first incompleteness theorem",
+      "reverse_paraphrase": "Consistency prevents proving the Gödel sentence; omega-consistency prevents proving its negation, and together these yield incompleteness.",
+      "finding": "The source's two different hypotheses and both lemmas are preserved."
+    },
+    {
+      "unit_id": "OLP-0316",
+      "passage": "Rosser's theorem",
+      "reverse_paraphrase": "A least proof can be paired with absence of smaller refutations; the two contradiction arguments yield incompleteness from ordinary consistency.",
+      "finding": "The object/meta proof predicates, quantifiers and inseparability problem are preserved."
+    },
+    {
+      "unit_id": "OLP-0317",
+      "passage": "Gödel's original paper",
+      "reverse_paraphrase": "The historical walkthrough links primitive recursive proof coding and representation to the incompleteness and second-theorem sketches.",
+      "finding": "The source's chronology and beta-lemma role are retained."
+    },
+    {
+      "unit_id": "OLP-0318",
+      "passage": "formalized provability conditions",
+      "reverse_paraphrase": "PA's induction schema supports the P1 theorem-internalization, P2 implication distribution and P3 positive-introspection conditions.",
+      "finding": "All four stated conditions are intact; OLPRV-001 is adjacent and registered."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "second incompleteness theorem",
+      "reverse_paraphrase": "Internal consistency implies the unprovability of Gödel's sentence, hence that sentence, contradicting ordinary consistency if internal consistency were proved.",
+      "finding": "The P1–P3 proof steps and two isolated notation corrections are retained."
+    },
+    {
+      "unit_id": "OLP-0320",
+      "passage": "Löb's theorem",
+      "reverse_paraphrase": "If T proves the reflection instance Prov(A) implies A, then the fixed-point and P1–P3 derivation force T to prove A.",
+      "finding": "The direction of reflection, each proof step and both applications are retained."
+    },
+    {
+      "unit_id": "OLP-0321",
+      "passage": "Tarski's theorem",
+      "reverse_paraphrase": "A truth-defining arithmetic formula would conflict with the fixed point for its negation; halting provides an earlier definable noncomputable relation.",
+      "finding": "All semantic biconditionals, the standard N domain and the illustrative truth schema are retained."
     }
   ]
 }

@@ -1,0 +1,165 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: lob-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{lob}
+
+\olsection{د لوب قضيه}
+
+د يوې تيورۍ~$\Th{T}$ د ګوډل جمله د~$\lnot
+\OProv[\Th{T}](y)$ يو ثابت ټکی دے؛ يعنې داسې !!a{sentence}~$!G$
+چې
+\[
+\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G}) \liff !G.
+\]
+دا جمله !!{derivable} نۀ ده۔ ځکه که~$\Th{T} \Proves !G$ وي، نو
+(الف) د !!{derivability} د شرط~(۱) له مخې
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!G})$؛ او (ب)
+$\Th{T}
+\Proves !G$ له
+$\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})
+\liff !G$ سره يوځاے دا راکوي چې
+$\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})$۔ په دې صورت کښې
+به~$\Th{T}$ ناسازګاره وي۔ اوس طبيعي پوښتنه دا ده چې د
+$\OProv[\Th{T}](y)$ د ثابت ټکي حالت څه دے؛ يعنې د داسې
+!!a{sentence}~$!H$ حالت چې
+\[
+\Th{T} \Proves \OProv[\Th{T}](\gn{!H}) \liff !H.
+\]
+که دا جمله !!{derivable} واے، د شرط~(۱) له مخې به
+$\Th{T} \Proves \OProv[\Th{T}](\gn{!H})$ و؛ خو همدا پايله د
+پورته معادلۍ د مودس پوننس په کارولو هم ترلاسه کېږي۔ نو لږ تر لږه
+د ګوډل د جملې د پخواني استدلال له لارې د~$\Th{T}$ ناسازګاري نۀ
+راځي۔ دا، البته، نۀ ښيي چې~$\Th{T}$ په رښتيا~$!H$
+!!{derive} \emph{کوي}۔
+
+که پوښتنه لږ عمومي کړو، پرمختګ کولے شو۔ د ثابت ټکي د معادلۍ
+له کيڼ څخه ښي ته لوری،
+$\OProv[\Th{T}](\gn{!H}) \lif !H$، د يوې عمومي شېما بېلګه ده
+چې د \emph{انعکاس اصل} بلل کېږي:
+$\OProv[\Th{T}](\gn{!A}) \lif !A$۔ دا نوم ځکه ورکول کېږي چې
+په يوه معنا ښيي~$\Th{T}$ د هغو څه په باب «انعکاس» کولے شي چې
+!!{derive} کوي؛ په بنسټيز ډول د هر~$!A$ دپاره وايي: «که~$\Th{T}$،
+$!A$ !!{derive} کولے شي، نو~$!A$ رښتيا دے»۔ دا خبره، البته،
+يوازې د سمې تيورۍ دپاره رښتيا ده؛ نو داسې ښکاري چې تيورۍ به
+په عمومي توګه د دې شېما ټولې بېلګې نۀ !!{derive} کوي۔ نو يوه
+کافي پياوړې تيوري چې د !!{derivability} شرطونه پوره کوي، کومې
+بېلګې !!{derive} کولے شي؟ هغه ټولې بېلګې چې~$!A$ پخپله
+!!{derivable} وي، يقيناً۔ لاندې پايله ښيي چې بس همدومره دي۔
+
+\begin{thm}\ollabel{thm:lob}
+فرض کړئ~$\Th{T}$ داسې !!a{axiomatizable} تيوري ده چې~$\Th{Q}$
+غځوي، او~$\OProv[\Th{T}](y)$ هغه فورمول دے چې د
+\olref[2in]{sec} شرطونه P1--P3 پوره کوي۔ که~$\Th{T}$،
+$\OProv[\Th{T}](\gn{!A}) \lif !A$ !!{derive}s کړي، نو په حقيقت
+کښې~$\Th{T}$، $!A$ هم !!{derive}s کوي۔
+\end{thm}
+
+په بل ډول: که $\Th{T} \Proves/ !A$ وي، نو
+$\Th{T} \Proves/
+\OProv[\Th{T}](\gn{!A}) \lif !A$۔ دا پايله د لوب د قضيې په نوم
+يادېږي۔
+
+\begin{explain}
+د لوب د قضيې د ثبوت لارښوده مفکوره د دې يو ځيرک «ثبوت» دے چې
+سانتا کلاز شته۔ (که دغه پايله مو نۀ خوښېږي، هره بله خوښه پايله
+پر ځاے کولے شئ۔) استدلال داسې دے:
+\begin{enumerate}
+\item $X$ دې دا جمله وي: «که~$X$ رښتيا وي، نو سانتا کلاز شته»۔
+\item فرض کړئ~$X$ رښتيا ده۔
+\item نو د هغې ويل شوې خبره برقرار ده؛ يعنې که~$X$ رښتيا وي،
+  سانتا کلاز شته۔
+\item ځکه چې فرض مو کړے~$X$ رښتيا ده، له (۲) او~(۳) څخه د
+  مودس پوننس په کارولو پايله اخلو چې سانتا کلاز شته۔
+\item موږ (۴)، «سانتا کلاز شته»، له (۲)، «$X$ رښتيا ده»، څخه
+  وايستله۔ د شرطي ثبوت له مخې مو وښودله: «که~$X$ رښتيا وي، نو
+  سانتا کلاز شته»۔
+\item خو دا هماغه جمله~$X$ ده۔ نو ومو ښودله چې~$X$ رښتيا ده۔
+\item بيا د پورته (۲)--(۴) استدلال له مخې سانتا کلاز شته۔
+\end{enumerate}
+که په دې مفکوره کښې «رښتيا ده» په «!!{derivable} ده» او «سانتا
+کلاز شته» په~$!A$ واړوو او هغه صوري کړو، د لوب د قضيې ثبوت
+ترې جوړېږي۔ چاره دا ده چې د ثابت ټکي لمه په
+!!{formula}~$\OProv[\Th{T}](y) \lif !A$ پلې کړو۔ د دې فورمول
+ثابت ټکی په پورته لنډ استدلال کښې له~$X$ جملې سره سمون لري۔
+\end{explain}
+
+\begin{proof}[د \olref{thm:lob} ثبوت]
+فرض کړئ~$!A$ داسې !!a{sentence} ده چې~$\Th{T}$،
+$\OProv[\Th{T}](\gn{!A}) \lif !A$ !!{derive}s کوي۔ $!B(y)$
+دې !!{formula}~$\OProv[\Th{T}](y)
+\lif !A$ وي، او د ثابت ټکي د لمې په کارولو داسې
+!!a{sentence}~$!D$ ومومئ چې~$\Th{T}$،
+$!D \liff !B(\gn{!D})$ !!{derive}s کوي۔ بيا لاندې هره يوه
+په~$\Th{T}$ کښې !!{derivable} ده:
+\begin{align}
+  & !D \liff (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-1}\\
+  & \qquad \text{$!D$ د~$!B(y)$ ثابت ټکی دے}\notag \\
+  & !D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-2}\\
+  & \qquad\text{له \olref{L-1} څخه}\notag\\
+  & \OProv[\Th{T}](\gn{!D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A)}) \ollabel{L-3}\\
+  & \qquad \text{له \olref{L-2} څخه د P1 شرط له مخې}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D}) \lif !A})
+  \ollabel{L-4}\\
+  &\qquad \text{له \olref{L-3} څخه د P2 شرط له مخې}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif (\OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \lif \OProv[\Th{T}](\gn{!A})) \ollabel{L-5}\\
+  &\qquad \text{له \olref{L-4} څخه د P2 شرط له مخې بيا} \notag\\
+& \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \ollabel{L-6}\\
+  & \qquad\text{د !!{derivability} د P3 شرط له مخې} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{!A}) \ollabel{L-7} \\
+  &\qquad\text{له \olref{L-5} او \olref{L-6} څخه}\notag\\
+  & \OProv[\Th{T}](\gn{!A}) \lif !A \ollabel{L-8}\\
+  &\qquad\text{د قضيې د فرض له مخې} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif !A \ollabel{L-9}\\
+  &\qquad\text{له \olref{L-7} او \olref{L-8} څخه}\notag\\
+  & (\OProv[\Th{T}](\gn{!D}) \lif !A) \lif !D \ollabel{L-10}\\
+  & \qquad \text{له \olref{L-1} څخه}\notag \\
+  & !D \ollabel{L-11}\\
+  & \qquad\text{له \olref{L-9} او \olref{L-10} څخه}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \ollabel{L-12}\\
+  & \qquad\text{له \olref{L-11} څخه د P1 شرط له مخې}\notag \\
+  & !A \qquad\qquad\text{له \olref{L-8} او \olref{L-12} څخه}\notag
+\end{align}
+\end{proof}
+
+د لوب قضيه چې ولرو، د ناتکميلۍ د دويمې قضيې لنډ ثبوت ترې راځي
+(د هغو تيوريو دپاره چې د P1--P3 شرطونه پوره کوونکے
+!!a{derivability} پريديکات لري): که
+$\Th{T} \Proves
+\OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$ وي، نو
+$\Th{T} \Proves \lfalse$۔ که~$\Th{T}$ سازګاره وي،
+$\Th{T} \Proves/ \lfalse$۔ نو
+$\Th{T}
+\Proves/ \OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$، يعنې
+$\Th{T} \Proves/
+\OCon[\Th{T}]$۔ له دې څخه دا هم ښودلے شو چې~$!H$، د
+$\OProv[\Th{T}](x)$ ثابت ټکی، !!{derivable} دے۔ ځکه چې
+\begin{align*}
+  \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \liff !H\\
+  \intertext{په ځانګړي ډول}
+    \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \lif !H
+\end{align*}
+او ځکه د لوب د قضيې له مخې $\Th{T} \Proves !H$۔
+
+% Going in the other direction, for homework I
+% may ask you to work through a short proof of L\"ob's theorem, using
+% the second incompleteness theorem instead of the fixed-point lemma.
+
+\begin{prob}
+فرض کړئ~$\Th{T}$ په محاسبوي ډول بديهي‌کړې تيوري ده، او
+$\OProv[\Th{T}]$ د~$\Th{T}$ دپاره !!a{derivability} پريديکات
+دے۔ لاندې څلور بيانونه وګورئ:
+\begin{enumerate}
+\item که $T \Proves !A$ وي، نو $T \Proves \OProv[\Th{T}](\gn{!A})$۔
+\item $T \Proves !A \lif \OProv[\Th{T}](\gn{!A})$۔
+\item که $T \Proves \OProv[\Th{T}](\gn{!A})$ وي، نو $T \Proves !A$۔
+\item $T \Proves \OProv[\Th{T}](\gn{!A}) \lif !A$۔
+\end{enumerate}
+له کومو شرطونو سره له دې بيانونو هر يو رښتيا دے؟
+\end{prob}
+
+\end{document}

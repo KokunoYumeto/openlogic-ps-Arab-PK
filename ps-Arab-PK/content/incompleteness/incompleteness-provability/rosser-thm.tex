@@ -1,0 +1,158 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: rosser-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{ros}
+
+\olsection{د روسر قضيه}
+
+ايا د ګوډل ثبوت داسې بدلولے شو چې د «$\omega$-سازګارې» پر ځاے
+يوازې «سازګاره» تيوري فرض کړو او پياوړې پايله واخلو؟ ځواب «هو» دے؛
+د روسر موندلې چاره دا کار کوي۔ د روسر چاره دا ده چې د
+$\OProv[\Th{T}](y)$ پر ځاے د !!{derivability} يو «بدل شوے»
+پريديکات~$\ORProv_T(y)$ وکاروو۔
+
+\begin{thm}
+\ollabel{thm:rosser}
+فرض کړئ $\Th{T}$ هره سازګاره او !!{axiomatizable} تيوري ده چې
+$\Th{Q}$ غځوي۔ نو~$\Th{T}$ بشپړه نۀ ده۔
+\end{thm}
+
+\begin{proof}
+ياد ولرئ چې $\OProv[\Th{T}](y)$ د
+$\lexists[x][\OPrf[\Th{T}](x,
+  y)]$ په توګه تعريف شوے دے۔ دلته~$\OPrf[\Th{T}](x, y)$ هغه
+د پرېکړې وړ اړيکه تمثيلوي چې هله او يوازې هله برقرارېږي چې~$x$
+د ګوډل شمېرې~$y$ لرونکې !!{sentence} د !!a{derivation} ګوډل
+شمېره وي۔ هغه اړيکه هم د پرېکړې وړ ده چې د~$x$ او~$y$ تر منځ
+هله برقرارېږي چې~$x$ د ګوډل شمېرې~$y$ لرونکې جملې د
+\emph{ردونې} ګوډل شمېره وي۔ $\fn{not}(x)$ دې هغه ابتدايي
+بازګشتي تابعه وي چې داسې کار کوي: که~$x$ د يوه فورمول~$!A$ کوډ
+وي، نو~$\fn{not}(x)$ د~$\lnot
+!A$ کوډ وي۔ په دې توګه $\Refut[\Th{T}](x, y)$ هله او يوازې هله
+برقرارېږي چې $\Prf[\Th{T}](x, \fn{not}(y))$ برقرار وي۔
+$\ORefut[\Th{T}](x, y)$ دې دا اړيکه تمثيل کړي۔ نو که
+$\Th{T} \Proves \lnot !A$ وي او~$\delta$ ئې اړوند !!{derivation}
+وي، $\Th{Q} \Proves
+\ORefut[\Th{T}](\gn{\delta}, \gn{!A})$۔ موږ
+$\ORProv[\Th{T}](y)$ داسې تعريفوو:
+\[
+\lexists[x][(\OPrf[\Th{T}](x,y) \land \lforall[z][(z < x \lif \lnot
+  \ORefut[\Th{T}](z,y))])].
+\]
+په تقريبي ډول~$\ORProv[\Th{T}](y)$ وايي: «په~$\Th{T}$ کښې د~$y$
+ثبوت شته، او د~$y$ تر دې لنډه ردونه نشته»۔ که~$\Th{T}$ سازګاره
+فرض کړو، نو~$\ORProv[\Th{T}](y)$ د هماغو عددونو دپاره رښتيا دے
+چې~$\OProv[\Th{T}](y)$ ئې دپاره رښتيا دے؛ خو په~$\Th{T}$ کښې د
+\emph{اثبات‌وړتيا} له پلوه (او اوس پوهېږو چې د رښتياوالي او
+اثبات‌وړتيا تر منځ توپير شته!) دواړه بېل خاصيتونه لري۔ که
+$\Th{T}$ \emph{نا}سازګاره وي، نو دواړه د هماغو عددونو دپاره
+\emph{نۀ} برقرارېږي!{} ($\ORProv[\Th{T}](y)$ ته ډېر ځله داسې
+لوستل کېږي: «$y$ د روسر له مخې اثبات‌وړ دے»۔ خو لکه چې مو همدا
+اوس وليدل، د روسر اثبات‌وړتيا د اثبات‌وړتيا کوم ځانګړے ډول نۀ
+دے: په ناسازګارو تيوريو کښې داسې !!{sentence}s شته چې اثبات‌وړ
+دي، خو د روسر له مخې اثبات‌وړ نۀ دي۔ دا نوم لوستونکے ګډوډولے شي؛
+د ګډوډۍ د مخنيوي دپاره ورته يو بېل مصنوعي نوم، لکه «$y$ شمووړ دے»، هم
+ويلے شئ۔)
+
+د ثابت ټکي د لمې له مخې داسې فورمول~$!R_\Th{T}$ شته چې
+\begin{equation}
+  \Th{Q} \Proves !R_\Th{T} \liff \lnot \ORProv[\Th{T}](\gn{!R_\Th{T}}).
+  \ollabel{RT}
+\end{equation}
+د~\olref[1in]{thm:first-incompleteness} د ثبوت برعکس، دلته دعوه
+دا ده چې که~$\Th{T}$ سازګاره وي، نو~$\Th{T}$، $!R_\Th{T}$
+نۀ !!{derive} کوي، او~$\Th{T}$، $\lnot !R_\Th{T}$ هم نۀ !!{derive} کوي۔
+(په نورو ټکو، د $\omega$-سازګارۍ فرض ته اړتيا نشته۔)
+
+لومړے ښيو چې $\Th{T} \Proves/ !R_{\Th{T}}$۔ که ئې ثابت کړے
+واے، نو له~$T$ څخه به د~$!R_{\Th{T}}$ يو !!a{derivation} و؛ د
+هغې ګوډل شمېره دې~$n$ وي۔ بيا
+$\Th{Q} \Proves \OPrf[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$، ځکه چې
+$\OPrf[\Th{T}]$ په~$\Th{Q}$ کښې $\Prf[\Th{T}]$ تمثيلوي۔ همدا
+راز، د هر~$k < n$ دپاره~$k$ د~$\lnot !R_{\Th{T}}$ د يوه
+!!a{derivation} ګوډل شمېره نۀ ده، ځکه~$\Th{T}$ سازګاره ده۔ نو د
+هر~$k < n$ دپاره
+$\Th{Q} \Proves \lnot
+\ORefut[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$۔ د
+\olref[req][min]{lem:less-nsucc} له مخې
+$\Th{Q} \Proves \lforall[z][(z < \num{n} \lif \lnot \ORefut[\Th{T}](z,
+  \gn{!R_{\Th{T}}}))]$۔ نو
+\[
+\Th{Q} \Proves \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land \lforall[z][(z
+    < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+\]
+خو دا هماغه~$\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$ دے۔ د~\olref{RT}
+له مخې $\Th{Q}
+\Proves \lnot !R_{\Th{T}}$۔ ځکه چې~$\Th{T}$، $\Th{Q}$ غځوي،
+نو $\Th{T}
+\Proves \lnot !R_{\Th{T}}$ هم دے۔ موږ فرض کړې وه چې
+$\Th{T} \Proves !R_{\Th{T}}$؛ نو~$\Th{T}$ به ناسازګاره شي، چې د
+قضيې له فرض سره ټکر لري۔
+
+اوس ښيو چې $\Th{T} \Proves/ \lnot !R_{\Th{T}}$۔ بيا فرض کړئ چې
+دا نفي ثابتوي او~$n$ د~$\lnot !R_{\Th{T}}$ د يوه
+!!a{derivation} ګوډل شمېره ده۔ نو
+$\Refut[\Th{T}](n, \Gn{!R_{\Th{T}}})$ برقرارېږي۔ ځکه چې
+$\ORefut[\Th{T}]$ په~$\Th{Q}$ کښې $\Refut[\Th{T}]$ تمثيلوي،
+نو $\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$۔ بيا به وښيو چې
+$\Th{T}$ ناسازګاره کېږي، ځکه~$!R_{\Th{T}}$ به هم !!{derive} کوي۔
+څرنګه چې
+\begin{align*}
+\Th{Q} & \Proves !R_{\Th{T}} \liff \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}),
+\intertext{او ځکه چې $\Th{T}$، $\Th{Q}$ غځوي، بس دا وښيو چې}
+\Th{Q} & \Proves \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}).
+\end{align*}
+!!{sentence}~$\lnot
+\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$، يعنې
+\begin{align*}
+  \lnot & \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land
+    \lforall[z][(z < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+  \intertext{په منطقي ډول له دې سره معادله ده:}
+  & \lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+    \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\end{align*}
+موږ د منطق او په~$\Th{Q}$ کښې د !!{derive}s کېدونکو حقايقو په
+کارولو غير صوري استدلال کوو۔ فرض کړئ~$x$ خپل‌سرے دے او
+$\OPrf[\Th{T}](x,
+\gn{!R_{\Th{T}}})$ برقرارېږي۔ موږ لا پوهېږو چې
+$\Th{T} \Proves/ !R_{\Th{T}}$، نو د هر~$k$ دپاره
+$\Th{Q} \Proves \lnot \OPrf[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$۔
+له دې د هر~$k$ دپاره $\eq/[x][\num{k}]$ راځي۔ په ځانګړي ډول (الف)
+$\eq/[x][\num{n}]$ لرو۔ همدا راز
+$\lnot(\eq[x][\num{0}]
+\lor \eq[x][\num{1}] \lor \dots \lor \eq[x][\num{n-1}])$ لرو،
+نو د~\olref[req][min]{lem:less-nsucc} له مخې (ب)
+$\lnot(x < \num{n})$۔ د~\olref[req][min]{lem:trichotomy} له مخې
+$\num{n} < x$۔ ځکه چې
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$، لرو چې
+$\num{n} < x \land
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$؛ له دې څخه
+$\lexists[z][(z < x
+\land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))]$ راځي۔ ځکه چې~$x$
+خپل‌سرے و، اړينه پايله دا ده:
+\[
+\lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+  \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\]
+\end{proof}
+
+\begin{prob}
+د طبيعي عددونو دوه سټونه~$A$ او~$B$ هغه وخت
+\emph{په محاسبوي ډول نه بېلېدونکي} بلل کېږي چې هېڅ !!{decidable}
+سټ~$X$ داسې نۀ وي چې $A \subseteq X$ او
+$B \subseteq \Complement{X}$ وي ($\Complement{X}$ د~$X$
+متمم، يعنې~$\Nat \setminus X$، دے)۔ فرض کړئ~$\Th{T}$ د~$\Th{Q}$
+سازګاره او !!{axiomatizable} غځونه ده۔ $A$ دې په~$\Th{T}$ کښې د
+اثبات‌وړو !!{sentence}s د ګوډل شمېرو سټ وي، او~$B$ دې په~$\Th{T}$
+کښې د ردېدونکو جملو د ګوډل شمېرو سټ وي۔ ثابت کړئ چې~$A$ او~$B$
+په محاسبوي ډول نه بېلېدونکي دي۔
+\end{prob}
+
+\end{document}

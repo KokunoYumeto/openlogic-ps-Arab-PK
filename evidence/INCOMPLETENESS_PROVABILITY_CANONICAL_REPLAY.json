@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-ps-Arab-PK/incompleteness-provability-canonical-replay/v1",
+  "recorded_utc": "2026-09-25T03:13:36.054666+00:00",
+  "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+  "status": "PASS",
+  "counts": {
+    "decisions": 427,
+    "occurrences": 19022,
+    "terminology_decisions": 172,
+    "source_correction_decisions": 250,
+    "priority_decisions": 165,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 4212
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "27eb198dbc9742ff3a8dafdd61d1254fb40389afabedb671bc2dae5e362b9867",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "fbed617d14894890a83627e2bb89654adbeb87cacd70ea307454f2da62451e35",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "c92a173f2feb1abbbf080d77ad6bbf295a15a28804b08102908ee58da83cc258",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "67f5830e99229d552f3374482f4deb61e24a43e0f0a2711bf4b526eca0981157",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "7757b92c770ad464871b71510e2eb6f287f484e97844316daa59055e460b3947",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "5c80cb2b31ac015b71980e9ba1ff438d01e400e0c4081100a213a3b31be40379",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "7b73b592c7a63d6d9bc23aaddf0040595f95f3443c1a30a662055c5cdec6700c",
+    "ALIGNMENT.jsonl": "b6a4d9dc1061cb42a8519d291d6b8bfd4bdd20bf833b38fd448032863bd3d268",
+    "SEGMENT_CANON_USE.jsonl": "a0d4fab917f700b40c6fe931b5d59dae6cbda69fa6466e145224fa2b03220855",
+    "SOURCE_MANIFEST.jsonl": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "CANON_SOURCES.jsonl": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931",
+    "CANON_PASSAGES.jsonl": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f",
+    "SOURCE_CORRECTIONS.json": "4a7a32e6d04a7ef7d23effc94f543e5bbe4f25acd07a79ecf7b012e8447daf12",
+    "TERM_DECISIONS.jsonl": "a5e44587c4a55736971db7fb862ae85fa296af48e384d67775be11ce106ea571",
+    "QA.json": "428e1f8886df9c413915d74a0d7607be55fddd4b30a0544ec3240ac9616ed1ef"
+  }
+}

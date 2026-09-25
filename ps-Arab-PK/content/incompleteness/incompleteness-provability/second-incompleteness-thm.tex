@@ -1,0 +1,144 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: second-incompleteness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{2in}
+
+\olsection{د ناتکميلۍ دويمه قضيه}
+
+دا دعوه څنګه بيان کړو چې~$\Th{PA}$ خپله سازګاري نۀ شي ثابتولے؟
+دا ويل چې~$\Th{PA}$ ناسازګاره ده، د دې ويلو برابر دي چې
+$\Th{PA} \Proves \eq[0][1]$۔ نو د سازګارۍ جمله~$\OCon[\Th{PA}]$
+د !!{sentence}~$\lnot
+\OProv[\Th{PA}](\gn{\eq[0][1]})$ په توګه اخيستے شو، او بيا
+لاندې قضيه اړينه پايله راکوي:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness}
+که~$\Th{PA}$ سازګاره وي، نو~$\Th{PA}$،
+$\OCon[\Th{PA}]$ نۀ !!{derive} کوي۔
+\end{thm}
+
+دا خبره مهمه ده چې قضيه د~$\OCon[\Th{PA}]$ په ټاکلي تمثيل پورې
+تړلې ده، يعنې د~$\OProv[\Th{PA}](y)$ په ټاکلي تمثيل پورې۔ موږ
+يوازې دومره کاروو چې د~$\OProv[\Th{PA}](y)$ تمثيل د
+!!{derivability} درې شرطونه پوره کوي؛ نو قضيه هرې هغې تيورۍ ته
+غځېږي چې د !!a{derivability} پريديکات ئې دغه خاصيتونه ولري۔
+
+د ګوډل د استدلال لنډه نقشه لوستل ګټور دي، ځکه قضيه پکې لکه د ښې
+ټوکې اغېزمنه وروستۍ جمله راځي۔ استدلال داسې دے: $!G_\Th{PA}$
+دې د ګوډل هغه جمله وي چې د~\olref[1in]{thm:first-incompleteness}
+په ثبوت کښې مو جوړه کړه۔ موږ وښودله: «که~$\Th{PA}$ سازګاره وي،
+نو~$\Th{PA}$، $!G_\Th{PA}$ نۀ !!{derive} کوي»۔ که دا خبره
+پخپله \emph{په}~$\Th{PA}$ کښې صوري کړو، لاندې ثبوت لرو:
+\[
+\OCon[\Th{PA}] \lif \lnot \OProv[\Th{PA}](\gn{!G_\Th{PA}}).
+\]
+اوس فرض کړئ~$\Th{PA}$، $\OCon[\Th{PA}]$ !!{derive}s کوي۔ بيا
+$\lnot
+\OProv[\Th{PA}](\gn{!G_\Th{PA}})$ هم !!{derive}s کوي۔
+\textbf{د ژباړې د نسخې سمون (OLPRV-002):} اصلي سرچينه په دې
+جمله کښې~$\Prov[\Th{PA}]$ ليکي، خو د صوري جملې دپاره
+$\OProv[\Th{PA}]$ پکار دے؛ همدا نښه پورته په ثبوتېدونکې
+پايلي کښې راغلې ده۔ ځکه چې~$!G_\Th{PA}$ د ګوډل جمله ده، دا له
+$!G_\Th{PA}$ سره معادله ده۔ نو~$\Th{PA}$، $!G_\Th{PA}$
+!!{derive}s کوي۔
+
+خو موږ پوهېږو چې که~$\Th{PA}$ سازګاره وي، $!G_\Th{PA}$ نۀ
+!!{derive} کوي!{} نو که~$\Th{PA}$ سازګاره وي،
+$\OCon[\Th{PA}]$ هم نۀ !!{derive} کولے شي۔
+
+د استدلال د لا کره کولو دپاره~$!G_\Th{PA}$ د~$\Th{PA}$ د ګوډل
+جمله اخلو او د !!{derivability} شرطونه (P1)--(P3) کاروو، څو
+وښيو چې~$\Th{PA}$، $\OCon[\Th{PA}] \lif
+!G_\Th{PA}$ !!{derive}s کوي۔ له دې به څرګنده شي چې~$\Th{PA}$،
+$\OCon[\Th{PA}]$ نۀ !!{derive} کوي۔ دا په~$\Th{PA}$ کښې د
+ثبوت لنډه نقشه ده۔ (د آسانتيا دپاره د~$\Th{PA}$ لاندې ليکونه
+پرېږدو۔)
+\begin{align}
+& !G \liff \lnot \OProv(\gn{!G}) \ollabel{G2-1}\\
+& \qquad\text{$!G$ د ګوډل جمله ده}\notag \\
+& !G \lif \lnot \OProv(\gn{!G}) \ollabel{G2-2}\\
+  & \qquad\text{له \olref{G2-1} څخه} \notag\\
+& !G \lif
+  (\OProv(\gn{!G}) \lif \lfalse) \ollabel{G2-3}\\
+  & \qquad\text{له \olref{G2-2} څخه د منطق له مخې}\notag\\
+& \OProv(\gn{
+    !G \lif
+    (\OProv(\gn{!G}) \lif \lfalse)
+  }) \ollabel{G2-4}\\
+  & \qquad\text{له \olref{G2-3} څخه د P1 شرط له مخې} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{
+    (\OProv(\gn{!G}) \lif \lfalse)
+    }) \ollabel{G2-5}\\
+  & \qquad\text{له \olref{G2-4} څخه د P2 شرط له مخې} \notag\\
+& \OProv(\gn{!G}) \lif (\OProv(\gn{\OProv(\gn{!G})}) \lif \OProv(\gn{\lfalse})) \ollabel{G2-6}\\
+  & \qquad\text{له \olref{G2-5} څخه د P2 شرط او منطق له مخې} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{\OProv(\gn{!G})}) \ollabel{G2-7}\\
+   & \qquad\text{د P3 له مخې} \notag\\
+& \OProv(\gn{!G}) \lif \OProv(\gn{\lfalse}) \ollabel{G2-8}\\
+  & \qquad \text{له \olref{G2-6} او \olref{G2-7} څخه د منطق له مخې}\notag\\
+& \OCon \lif \lnot \OProv(\gn{!G}) \ollabel{G2-9}\\
+  & \qquad\text{د \olref{G2-8} متقابل عکس او $\OCon \ident \lnot \OProv(\gn{\lfalse})$}\notag \\
+& \OCon \lif !G \notag\\
+  & \qquad\text{له \olref{G2-1} او \olref{G2-9} څخه د منطق له مخې}\notag
+\end{align}
+په پورته ثبوت کښې د منطق کارول يوازې د قضيې د منطق بنسټيز
+حقايق دي: مثلاً~\olref{G2-3} له
+$\Proves \lnot!A \liff (!A\lif
+\lfalse)$ څخه کار اخلي، او~\olref{G2-8} له
+$!A \lif (!B \lif !C), !A \lif !B
+\Proves !A \lif !C$ څخه۔ په~\olref{G2-5} او~\olref{G2-6}
+کښې د P2 شرط کارول د هغه پر بېلګو
+$\OProv(\gn{!A \lif !B}) \lif
+(\OProv(\gn{!A}) \lif \OProv(\gn{!B}))$ ولاړ دي۔ په لومړۍ
+بېلګه کښې $!A \ident
+!G$ او $!B \ident \OProv(\gn{!G}) \lif \lfalse$ دي؛ په
+دويمه کښې $!A
+\ident \OProv(\gn{!G})$ او $!B \ident \lfalse$ دي۔
+\textbf{د ژباړې د نسخې سمون (OLPRV-003):} د دويمې بېلګې د
+$!A$ په اصلي نښه کښې~$\gn{G}$ ليکل شوي وو؛ دلته د لومړۍ
+بېلګې او د ثبوت د فورمولونو په شان د جملې نښه~$!G$ ده، نو
+$\gn{!G}$ ساتل پکار دي۔
+
+د ناتکميلۍ د دويمې قضيې لا انتزاعي بڼه دا ده:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness-gen} فرض کړئ~$\Th{T}$ هره
+سازګاره، !!{axiomatized} تيوري ده چې~$\Th{Q}$ غځوي، او
+$\OProv[\Th{T}](y)$ هر هغه فورمول دے چې د~$\Th{T}$ دپاره د
+!!{derivability} شرطونه P1--P3 پوره کوي۔ نو~$\Th{T}$،
+$\OCon[T]$ نۀ !!{derive} کوي۔
+\end{thm}
+
+\begin{prob}
+وښيئ چې~$\Th{PA}$، $!G_{\Th{PA}} \lif \OCon[\Th{PA}]$
+!!{derive}s کوي۔
+\end{prob}
+
+\begin{digress}
+د دې کيسې درس دا دے چې د رياضي هېڅ «معقوله» سازګاره تيوري
+خپله د سازګارۍ جمله نۀ شي !!{derive} کولے۔ فرض کړئ~$\Th{T}$
+د رياضي داسې تيوري ده چې~$\Th{Q}$ او د هېلبرټ «متناهي‌پاله»
+استدلال (هر څه چې مطلب ترې وي) رانغاړي۔ نو ټوله~$\Th{T}$ د
+$\Th{T}$ د سازګارۍ جمله نۀ شي !!{derive} کولے؛ ځکه ئې متناهي‌پاله
+برخه هم په لا پياوړي دليل سره د~$\Th{T}$ د سازګارۍ جمله نۀ شي
+!!{derive} کولے۔ په دې معنا د «ټولې رياضي» دپاره د سازګارۍ
+متناهي‌پاله ثبوت نشته۔
+
+د «متناهي‌پاله» لفظ په تفسير کښې لږ ګنجايش شته۔ ګوډل په خپلې
+۱۹۳۱ز مقالې کښې دا شونتيا مني چې هغه څه چې موږ ئې «متناهي‌پاله»
+بولو، ښايي د رياضي له هغو ډولونو بهر وي چې هېلبرټ غوښتل صوري
+کړي۔ خو ګوډل په دې کښې د نرمۍ څخه کار اخيست؛ نن دا ګرانه ده چې
+داسې څه ومومو چې په معقول ډول متناهي‌پاله وبلل شي، خو مثلاً
+په~$\Th{ZFC}$، يعنې د ټاکنې له بديهي اصل سره د زرملو--فرانکل
+د سټونو په تيورۍ کښې، صوري نۀ شي۔
+\end{digress}
+
+\end{document}

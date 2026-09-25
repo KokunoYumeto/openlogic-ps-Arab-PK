@@ -1,0 +1,134 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: first-incompleteness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{1in}
+
+\olsection{د ناتکميلۍ لومړۍ قضيه}
+
+اوس د ګوډل د ناتکميلۍ د لومړۍ قضيې اصلي ثبوت بيانولے شو۔ فرض کړئ
+$\Th{T}$ په هغې ژبه کښې هره په محاسبوي ډول بديهي‌کړې تيوري ده چې
+د حساب ژبه غځوي، او~$\Th{T}$ د~$\Th{Q}$ بديهي اصول رانغاړي۔ دا په
+ځانګړي ډول دا معنا لري چې~$\Th{T}$ محاسبه کېدونکې تابعې او اړيکې
+تمثيلوي۔
+
+موږ استدلال کړے دے چې که فورمولونه او ثبوتونه په مناسب ډول د عددونو
+په توګه کوډ شي، نو اړيکه~$\Prf[\Th{T}](x,y)$ محاسبه کېدونکې ده۔
+$\Prf[\Th{T}](x,y)$ هله او يوازې هله برقرارېږي چې~$x$ په~$\Th{T}$
+کښې د هغه !!{formula} د !!a{derivation} ګوډل شمېره وي چې ګوډل شمېره
+ئې~$y$ ده۔ په حقيقت کښې ګوډل د خپلې ټاکلې تيورۍ دپاره وښودله چې
+دا اړيکه ابتدايي بازګشتي ده؛ د دې دپاره ئې په خپله مقاله کښې د
+۴۵ تابعو او اړيکو لړ وکاراوه۔ پينځه څلوېښتمه اړيکه، $x B y$، د
+ګوډل د~$\Th{T}$ د هماغې ټاکنې دپاره همدا~$\Prf[\Th{T}](x,y)$ ده۔
+ياد ولرئ چې ګوډل په خپله مقاله کښې «بازګشتي» وايي، خو موږ به اوس
+ورته «ابتدايي بازګشتي» وايو۔
+
+څرنګه چې~$\Prf[\Th{T}](x,y)$ محاسبه کېدونکې ده، په~$\Th{T}$ کښې
+تمثيلېدے شي۔ د هغې تمثيلوونکي فورمول دپاره~$\OPrf[\Th{T}](x,y)$
+کاروو۔ $\OProv[\Th{T}](y)$ دې فورمول
+$\lexists[x][\OPrf[\Th{T}](x,y)]$ وي۔ دا د ګوډل په لړ کښې
+شپږڅلوېښتمه اړيکه، $\fn{Bew}(y)$، بيانوي۔ لکه څنګه چې ګوډل يادونه
+کوي، دا يوازينۍ اړيکه ده چې «بازګشتي نۀ شو بللے»۔ ښايي د هغه مطلب
+دا و: له تعريفه ئې محاسبه کېدنه نۀ څرګندېږي؛ او وروستيو پرمختګونو
+په حقيقت کښې وښودله چې محاسبه کېدونکې هم نۀ ده۔
+
+فرض کړئ $\Th{T}$ داسې !!{axiomatizable} تيوري ده چې~$\Th{Q}$
+رانغاړي۔ نو~$\Prf[\Th{T}](x, y)$ د پرېکړې وړ ده، او ځکه په~$\Th{Q}$
+کښې د يوه !!a{formula}~$\OPrf[\Th{T}](x, y)$ په وسيله تمثيلېږي۔
+$\OProv[\Th{T}](y)$ دې هغه فورمول وي چې پورته مو بيان کړ۔ د ثابت
+ټکي د لمې له مخې داسې فورمول~$!G_\Th{T}$ شته چې~$\Th{Q}$، او ځکه
+$\Th{T}$ هم، دا !!{derive}s کوي:
+\begin{equation}
+\ollabel{eqn:qpf}
+!G_\Th{T} \liff \lnot \OProv[\Th{T}](\gn{!G_\Th{T}}).
+\end{equation}
+پام وکړئ چې~$!G_\Th{T}$ په اصل کښې وايي: «$!G_\Th{T}$ په~$\Th{T}$
+کښې !!{derivable} نۀ دے»۔
+
+\begin{lem}\ollabel{lem:cons-G-unprov}
+که~$\Th{T}$ سازګاره او !!{axiomatizable} تيوري وي چې~$\Th{Q}$
+غځوي، نو $\Th{T} \Proves/ !G_\Th{T}$۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ $\Th{T}$، $!G_\Th{T}$ !!{derive}s کوي۔ نو د هغه
+!!a{derivation} \emph{شته} دے، او په دې توګه د کوم عدد~$m$ دپاره
+اړيکه~$\Prf[\Th{T}](m,
+\Gn{!G_\Th{T}})$ برقرارېږي۔ خو بيا~$\Th{Q}$ جمله
+$\OPrf[\Th{T}](\num m, \gn{!G_\Th{T}})$ !!{derive}s کوي۔ نو~$\Th{Q}$
+$\lexists[x][\OPrf[\Th{T}](x,\gn{!G_\Th{T}})]$ هم !!{derive}s کوي،
+چې د تعريف له مخې~$\OProv[\Th{T}](\gn{!G_\Th{T}})$ دے۔ د
+\olref{eqn:qpf} له مخې~$\Th{Q}$، $\lnot !G_\Th{T}$ !!{derive}s کوي؛
+او ځکه چې~$\Th{T}$، $\Th{Q}$ غځوي، $\Th{T}$ ئې هم ثابتوي۔
+موږ وښودله چې که~$\Th{T}$، $!G_\Th{T}$ !!{derive}s کړي، نو د هغه
+نفي~$\lnot !G_\Th{T}$ هم !!{derive}s کوي؛ په دې صورت کښې به تيوري
+ناسازګاره وي۔
+\end{proof}
+
+\begin{defn}
+\ollabel{thm:oconsis-q}
+تيوري~$\Th{T}$ \emph{$\omega$-سازګاره} ده که لاندې شرط پوره کړي:
+که~$\lexists[x][!A(x)]$ هره جمله وي او~$\Th{T}$ د
+$\lnot !A(\num 0)$، $\lnot !A(\num 1)$، $\lnot !A(\num 2)$،
+\dots هره يوه !!{derive}s کړي، نو~$\Th{T}$،
+$\lexists[x][!A(x)]$ نۀ ثابتوي۔
+\end{defn}
+
+پام وکړئ چې هره $\omega$-سازګاره تيوري سازګاره هم ده۔ دا نېغ له
+دې خبرې راځي چې که~$\Th{T}$ ناسازګاره وي، نو د هر~$!A$ دپاره
+$\Th{T} \Proves !A$۔ په ځانګړي ډول که~$\Th{T}$ ناسازګاره وي، د
+هر~$n$ دپاره $\lnot !A(\num n)$ !!{derive}s کوي او ورسره
+$\lexists[x][!A(x)]$ هم !!{derive}s کوي۔ نو ناسازګاره~$\Th{T}$
+$\omega$-ناسازګاره ده۔ د متقابل عکس له مخې، که~$\Th{T}$
+$\omega$-سازګاره وي، نو بايد سازګاره وي۔
+
+\begin{lem}\ollabel{lem:omega-cons-G-unref}
+که~$\Th{T}$، $\omega$-سازګاره او !!{axiomatizable} تيوري وي چې
+$\Th{Q}$ غځوي، نو $\Th{T} \Proves/ \lnot !G_\Th{T}$۔
+\end{lem}
+
+\begin{proof}
+ښيو چې که~$\Th{T}$، $\lnot !G_\Th{T}$ !!{derive}s کړي، نو
+$\omega$-ناسازګاره ده۔ فرض کړئ~$\Th{T}$، $\lnot !G_\Th{T}$
+!!{derive}s کوي۔ که~$\Th{T}$ ناسازګاره وي، نو $\omega$-ناسازګاره
+ده، او ثبوت بشپړ دے۔ که نۀ، نو~$\Th{T}$ سازګاره ده او د
+\olref{lem:cons-G-unprov} له مخې~$!G_\Th{T}$ نۀ !!{derive} کوي۔
+څرنګه چې په~$\Th{T}$ کښې د~$!G_\Th{T}$ هېڅ !!{derivation} نشته،
+نو~$\Th{Q}$ دا !!{derive}s کوي:
+\[
+\lnot \OPrf[\Th{T}](\num 0, \gn{!G_\Th{T}}), \lnot \OPrf[\Th{T}](\num 1,
+\gn{!G_\Th{T}}), \lnot \OPrf[\Th{T}](\num 2, \gn{!G_\Th{T}}), \dots
+\]
+او~$\Th{T}$ هم همداسې کوي۔ له بلې خوا د~\olref{eqn:qpf} له مخې
+$\lnot !G_\Th{T}$ له
+$\lexists[x][\OPrf[\Th{T}](x,\gn{!G_\Th{T}})]$ سره معادل دے۔
+نو~$\Th{T}$، $\omega$-ناسازګاره ده۔
+\end{proof}
+
+\begin{prob}
+  هره $\omega$-سازګاره تيوري سازګاره ده۔ وښيئ چې برعکس نۀ ده؛
+  يعنې داسې تيورۍ شته چې سازګارې خو $\omega$-ناسازګارې دي۔ دا په
+  ښودلو ثابت کړئ چې $\Th{Q} \cup
+  \{\lnot !G_\Th{Q}\}$ سازګاره خو $\omega$-ناسازګاره ده۔
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:first-incompleteness} فرض کړئ $\Th{T}$ هره
+$\omega$-سازګاره، !!{axiomatizable} تيوري ده چې~$\Th{Q}$ غځوي۔ نو
+$\Th{T}$ بشپړه نۀ ده۔
+\end{thm}
+
+\begin{proof}
+  که~$\Th{T}$، $\omega$-سازګاره وي، نو سازګاره ده؛ ځکه د
+  \olref{lem:cons-G-unprov} له مخې $\Th{T}
+  \Proves/ !G_\Th{T}$۔ د~\olref{lem:omega-cons-G-unref} له مخې
+  $\Th{T} \Proves/ \lnot !G_\Th{T}$۔ دا معنا لري چې~$\Th{T}$
+  ناتکميله ده، ځکه نۀ~$!G_\Th{T}$ او نۀ~$\lnot !G_\Th{T}$
+  !!{derive}s کوي۔
+\end{proof}
+
+\end{document}

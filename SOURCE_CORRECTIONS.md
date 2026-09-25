@@ -2112,7 +2112,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:108-117`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:123` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:123` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
 - Treatment: equates t_2 with numeral m, its value fixed immediately above.
 - Disclosure: `replace-second-n-with-m-plus-adjacent-note`.
@@ -2121,7 +2121,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:124-135`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:139` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:139` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
 - Treatment: proves numeral k prime plus numeral n equals numeral m, matching the existential witness z prime plus t_1 in Q8.
 - Disclosure: `order-closed-sum-as-witness-prime-plus-t1-plus-adjacent-note`.
@@ -2130,7 +2130,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:137-151`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:159` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:159` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
 - Treatment: uses the positive equality z prime equals zero in the equal-values case and cites Q2 for both successor-not-zero contradictions.
 - Disclosure: `restore-positive-successor-equality-and-cite-Q2-plus-adjacent-note`.
@@ -2139,7 +2139,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:165-173`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:184` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:184` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q`
 - Treatment: identifies the zero-instance right side of the bounded universal equivalence as the empty conjunction, whose value is true.
 - Disclosure: `replace-empty-disjunction-with-empty-conjunction-plus-adjacent-note`.
@@ -2202,7 +2202,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:258-262`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:276` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:276` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `OLI-PS300-QUANTIFIER-CALLS-20260921`
 - Treatment: supplies A(x) as the required second argument to the bounded existential macro while preserving the formula's mathematical content.
 - Disclosure: `supply-bexists-required-matrix-argument-plus-adjacent-note`.
@@ -2211,7 +2211,31 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0300`
 - Frozen source: `content/incompleteness/representability-in-q/sigma1-completeness.tex` (9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d) at `content/incompleteness/representability-in-q/sigma1-completeness.tex:289-297`
-- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:309` (44e08569a0ed5b5578a4858ad5d17b0da1175700ecabf732678b1971fdb1f80d)
+- Pashto target: `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:311` (c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4)
 - Audit: `OLI-PS300-QUANTIFIER-CALLS-20260921`
 - Treatment: uses the documented optional variable and matrix arguments for the long existential macro while preserving the formula's mathematical content.
 - Disclosure: `use-documented-lexists-optional-arguments-plus-adjacent-note`.
+
+## OLPRV-001
+
+- واحد: `OLP-0318`
+- اصلي سرچينه: `content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36` (09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11).
+- پښتو متن: `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex:36` (0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95).
+- سمون: د اثبات‌وړتيا د صوري فورمول دننه د بهرنۍ اړيکې `Prf` پر ځاے د هغې د ژبې تمثيلوونکے فورمول `OPrf` کارول شوے دے. څنګ ته ئې پښتو وضاحت شته.
+- د کتنې ثبت: `PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY`.
+
+## OLPRV-002
+
+- واحد: `OLP-0319`
+- اصلي سرچينه: `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45` (8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe).
+- پښتو متن: `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:44` (446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e).
+- سمون: د صوري استدلال دننه د بهرنۍ اثبات‌وړتيا نښه `Prov` د ژبې په نښه `OProv` واړول شوه. څنګ ته ئې پښتو وضاحت شته.
+- د کتنې ثبت: `PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY`.
+
+## OLPRV-003
+
+- واحد: `OLP-0319`
+- اصلي سرچينه: `content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94` (8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe).
+- پښتو متن: `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:105` (446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e).
+- سمون: د P2 د دويمې بېلګې په ګوډلي شمېر کښې د جملې `!G` نښه بېرته راوستل شوه. څنګ ته ئې پښتو وضاحت شته.
+- د کتنې ثبت: `PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY`.
