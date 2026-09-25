@@ -1,6 +1,6 @@
 {
   "schema": "ps-second-order-metatheory-repository-check/1",
-  "recorded_utc": "2026-09-25T04:31:48.322067+00:00",
+  "recorded_utc": "2026-09-25T04:51:52.857746+00:00",
   "status": "PASS",
   "coverage": {
     "total": 722,
@@ -12,22 +12,29 @@
   "alignment_records": 5239,
   "canon_use_records": 3329,
   "term_decisions": 178,
-  "active_source_corrections": 255,
-  "local_links": 935,
-  "line_links": 557,
-  "replay_receipt_sha256": "d0bbfabe758f5f650d7a30d976fc201abf1b226fd16913f2748f647335096bc8",
+  "active_source_corrections": 253,
+  "local_links": 931,
+  "line_links": 555,
+  "replay_receipt_sha256": "ec218bc17931d612758e0ebe381103ec4ec18d0e6704151fa2468e73d2be10b1",
   "validated_paths": {
-    "QA.json": "f0bff16c9ab204ac455f57d5a0d95420de89fe17179c9e83a471218d6f071577",
-    "ALIGNMENT.jsonl": "0c505a9049211647182783f44898d1a9d05850668d44296dce51798a6f769032",
-    "SEGMENT_CANON_USE.jsonl": "e6dd2a3cf16c5b27028fcec0a1633a6d904bb3c7f55f2093491e51696a20de73",
-    "SOURCE_CORRECTIONS.json": "00019b2bcf07529b965f62a9aaae521903d62ccfa97edf988c6ad721acb0e20f",
-    "TERM_DECISIONS.jsonl": "a160e2e1f44d63604c0032d1b83fc8632fcf7e6738d48f8ba9ddbc454d8bca3e",
-    "EXPERT_REVIEW_LOG.jsonl": "b7bd2ff44b8f676b684df6927fa4174936d2ab9f09cd9f04301ac1fa44e2b1e5",
-    "DECISIONS.json": "aba365e69c351412338fc9eb9fb4dc2980d48a0c1651758e0729bf9bc22519cd",
-    "TRANSLATION_DECISION_QA.json": "45a5d028eedbdff8e9b90ca60aedbdcba4ade509e0d6ac0faaef3aa983975fb2"
+    "QA.json": "c34eb75df5f68f16fb0735ed7a1266047324ecb0de92741fd9c49f92801aa7c3",
+    "ALIGNMENT.jsonl": "14470b9040d56a7cb5dd5a049b2a7b8735c5f2770b2038b499a26f2832ef5725",
+    "SEGMENT_CANON_USE.jsonl": "115f81b0f3406f5b1e1cebee5e0651027eafd804af21cac671fd295d2e9660fc",
+    "SOURCE_CORRECTIONS.json": "a78f8c819336c1965205f3d4349767efc69ea47d386751db51e0c2b52ab806a6",
+    "SOURCE_AUDIT_RETRACTIONS.jsonl": "c87b33401bfb8306a49024e9cd7f2a4c0bf70b1e0bb12016c387d58cc1c797e7",
+    "TERM_DECISIONS.jsonl": "0ad44c0a1da7cc2b0b6cffdcd89d596a3e2f2c438b17b609cdd92b9e9393df77",
+    "EXPERT_REVIEW_LOG.jsonl": "a014d7cd5c04862cf3bd203c79ecc5b00ccfccf59120231f3200061ec1a17471",
+    "DECISIONS.json": "da467e9d377ac8d6dc230be604795d91a0662b4a4077299eb3cdb0f503b763f1",
+    "TRANSLATION_DECISION_QA.json": "e6073a5333ea457fef9552617a7ceae8d2c764e184c372b7cfbd1bf9f81d196b"
   },
   "frozen_public_reader": {
     "pdf_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
     "epub_sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97"
-  }
+  },
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002",
+    "OLSOL-004",
+    "OLSOL-005"
+  ]
 }

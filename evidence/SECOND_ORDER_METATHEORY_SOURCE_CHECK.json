@@ -27,25 +27,11 @@
       "target_line_1based": 35
     },
     {
-      "id": "OLSOL-004",
-      "unit_id": "OLP-0334",
-      "classification": "duplicate-theorem-label",
-      "source_locator": "content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17",
-      "target_line_1based": 36
-    },
-    {
-      "id": "OLSOL-005",
-      "unit_id": "OLP-0334",
-      "classification": "insufficient-pairwise-distinctness-in-at-least-n-formula",
-      "source_locator": "content/second-order-logic/metatheory/compactness.tex:43-51",
-      "target_line_1based": 53
-    },
-    {
       "id": "OLSOL-006",
       "unit_id": "OLP-0334",
       "classification": "finite-subset-bound-misapplied-to-infinite-premise-set",
       "source_locator": "content/second-order-logic/metatheory/compactness.tex:54-63",
-      "target_line_1based": 63
+      "target_line_1based": 59
     }
   ],
   "no_change_units": [
@@ -55,7 +41,9 @@
   ],
   "retractions_verified": [
     "OLSIZ-011",
-    "OLINF-002"
+    "OLINF-002",
+    "OLSOL-004",
+    "OLSOL-005"
   ],
-  "status": "complete B060 source and semantic review; six corrected target readings disclosed"
+  "status": "B060 source and semantic review repaired; four active source corrections, two false compactness claims retracted"
 }

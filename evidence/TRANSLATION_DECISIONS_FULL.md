@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 439 decisions and 19222 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 437 decisions and 19220 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -23410,9 +23410,9 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-018937` | `OLP-0334` / `OLP-0334-B005` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:11-11` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:11-11` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018938` | `OLP-0334` / `OLP-0334-B006` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:13-24` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:13-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018939` | `OLP-0334` / `OLP-0334-B007` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:26-30` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:25-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018940` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018941` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018942` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:71-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018940` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018941` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018942` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:67-71` | pending; no page guessed |
 
 ## TERM-SOL-COMPACTNESS
 
@@ -23420,7 +23420,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 - Source term or construction: compactness / finite satisfiability / finite entailment
 - Intended sense: compactness / finite satisfiability / finite entailment
 - Chosen Pashto: کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی
-- Rationale: State both equivalent first-order compactness formulations, then distinguish the corrected second-order counterexample: every finite subset has a finite model, while the full set requires finite and arbitrarily large size simultaneously.
+- Rationale: State both equivalent first-order compactness formulations. In the second-order counterexample, read the source ellipsis as all pairwise inequalities and distinguish the corrected finite-subset bound from the impossible bound on the full infinite set.
 - Confidence reason: provisional; best available evidence. axiom/proof and semantics base prose supported regionally; the exact compactness term remains provisional
 - Expert question: In Pakistani Pashto mathematical prose, is «کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی» the clearest conventional rendering of “compactness / finite satisfiability / finite entailment” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Authorities:
@@ -23442,9 +23442,9 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-018947` | `OLP-0334` / `OLP-0334-B005` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:11-11` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:11-11` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018948` | `OLP-0334` / `OLP-0334-B006` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:13-24` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:13-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018949` | `OLP-0334` / `OLP-0334-B007` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:26-30` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:25-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018950` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018951` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018952` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:71-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018950` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018951` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018952` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:67-71` | pending; no page guessed |
 
 ## TERM-SOL-LOEWENHEIM-SKOLEM
 
@@ -28517,46 +28517,6 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 |---|---|---|---|---|---|
 | `ps-Arab-PK-OCC-019213` | `OLP-0333` / `OLP-0333-B009` | د دويمې درجې منطق د بديهي اصولو په بڼه بشپړ نۀ شي وړاندې کېدے | `upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:29-49` | `ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-52` | pending; no page guessed |
 
-## DEC-OLSOL-004
-
-- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
-- Source term or construction: DEC-OLSOL-004: content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17
-- Intended sense: Only the compactness theorem's label identifier changes.
-- Chosen Pashto: The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.
-- Rationale: Only the compactness theorem's label identifier changes.
-- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
-- Expert question: Does the Pashto correction for OLSOL-004 disclose the source issue clearly without obscuring the corrected mathematics?
-- Authorities:
-  - `PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — duplicate-theorem-label; Only the compactness theorem's label identifier changes.
-- Alternatives:
-  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 1
-
-| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
-|---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019214` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-38` | pending; no page guessed |
-
-## DEC-OLSOL-005
-
-- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
-- Source term or construction: DEC-OLSOL-005: content/second-order-logic/metatheory/compactness.tex:43-51
-- Intended sense: The displayed example alone changes to a conjunction over every index pair 1<=i<j<=n; the n=1 conjunction is empty.
-- Chosen Pashto: The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.
-- Rationale: The displayed example alone changes to a conjunction over every index pair 1<=i<j<=n; the n=1 conjunction is empty.
-- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
-- Expert question: Does the Pashto correction for OLSOL-005 disclose the source issue clearly without obscuring the corrected mathematics?
-- Authorities:
-  - `PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — insufficient-pairwise-distinctness-in-at-least-n-formula; The displayed example alone changes to a conjunction over every index pair 1<=i<j<=n; the n=1 conjunction is empty.
-- Alternatives:
-  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 1
-
-| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
-|---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019215` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
-
 ## DEC-OLSOL-006
 
 - Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
@@ -28575,7 +28535,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019216` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019214` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
 
 ## DEC-REL-I
 
@@ -28595,7 +28555,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019217` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
+| `ps-Arab-PK-OCC-019215` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
 
 ## DEC-TREE-X
 
@@ -28615,7 +28575,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019218` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
+| `ps-Arab-PK-OCC-019216` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
 
 ## DEC-RPLUS
 
@@ -28635,7 +28595,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019219` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
+| `ps-Arab-PK-OCC-019217` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -28655,7 +28615,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019220` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
+| `ps-Arab-PK-OCC-019218` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -28675,7 +28635,7 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019221` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
+| `ps-Arab-PK-OCC-019219` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -28695,4 +28655,4 @@ This index contains 439 decisions and 19222 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019222` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
+| `ps-Arab-PK-OCC-019220` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |

@@ -2264,26 +2264,12 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - Correction: The source closes the math span before the satisfaction command's argument brace, leaving a malformed TeX expression. The target closes the command first.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
 
-## OLSOL-004
-
-- Unit: `OLP-0334`.
-- Frozen source: `content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
-- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:36` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
-- Correction: The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.
-- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
-
-## OLSOL-005
-
-- Unit: `OLP-0334`.
-- Frozen source: `content/second-order-logic/metatheory/compactness.tex:43-51` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
-- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:53` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
-- Correction: The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.
-- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
-
 ## OLSOL-006
 
 - Unit: `OLP-0334`.
 - Frozen source: `content/second-order-logic/metatheory/compactness.tex:54-63` (SHA-256 `6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267`).
-- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:63` (SHA-256 `6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:59` (SHA-256 `b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d`).
 - Correction: The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; see `evidence/SOURCE_AUDIT_RETRACTIONS.jsonl`. Their historical records remain in git history, outside the active correction count.

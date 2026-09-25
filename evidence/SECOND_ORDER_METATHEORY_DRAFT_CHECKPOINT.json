@@ -2,7 +2,7 @@
   "schema": "ps-second-order-metatheory-draft/1",
   "utc": "2026-09-25T04:10:45.893995+00:00",
   "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
-  "status": "accepted cumulative drafts; source, structural, semantic, canon-use, decision and repository validation PASS",
+  "status": "accepted B060 drafts after exact compactness macro/ellipsis retractions; all cumulative validations PASS",
   "units": [
     {
       "unit_id": "OLP-0330",
@@ -49,12 +49,10 @@
       "unit_id": "OLP-0334",
       "path": "content/second-order-logic/metatheory/compactness.tex",
       "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
-      "translation_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "translation_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
       "manual_source_review": true,
       "pakistani_pashto_editorial_review": true,
       "source_correction_ids": [
-        "OLSOL-004",
-        "OLSOL-005",
         "OLSOL-006"
       ]
     },
@@ -78,16 +76,31 @@
   },
   "evidence": {
     "source_check_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\SECOND_ORDER_METATHEORY_SOURCE_CHECK.json",
-    "source_check_sha256": "5a19de9bd47678c2dbc73fd74764e017e54c219e8f0800dd9776d05102fc341b",
+    "source_check_sha256": "8f8bd86297fd5a4d1a7f31814b09d7eb70fecd3cb70d9cbbc759e47194b95c92",
     "canon_consultation_path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\B060_CANON_CONSULTATION.md",
-    "source_corrections_sha256": "00019b2bcf07529b965f62a9aaae521903d62ccfa97edf988c6ad721acb0e20f",
-    "qa_sha256": "f0bff16c9ab204ac455f57d5a0d95420de89fe17179c9e83a471218d6f071577",
-    "alignment_sha256": "0c505a9049211647182783f44898d1a9d05850668d44296dce51798a6f769032",
-    "canon_use_sha256": "e6dd2a3cf16c5b27028fcec0a1633a6d904bb3c7f55f2093491e51696a20de73",
-    "term_decisions_sha256": "a160e2e1f44d63604c0032d1b83fc8632fcf7e6738d48f8ba9ddbc454d8bca3e",
-    "canonical_decisions_sha256": "aba365e69c351412338fc9eb9fb4dc2980d48a0c1651758e0729bf9bc22519cd",
-    "canonical_qa_sha256": "45a5d028eedbdff8e9b90ca60aedbdcba4ade509e0d6ac0faaef3aa983975fb2",
-    "canonical_replay_sha256": "d0bbfabe758f5f650d7a30d976fc201abf1b226fd16913f2748f647335096bc8"
+    "source_corrections_sha256": "a78f8c819336c1965205f3d4349767efc69ea47d386751db51e0c2b52ab806a6",
+    "qa_sha256": "c34eb75df5f68f16fb0735ed7a1266047324ecb0de92741fd9c49f92801aa7c3",
+    "alignment_sha256": "14470b9040d56a7cb5dd5a049b2a7b8735c5f2770b2038b499a26f2832ef5725",
+    "canon_use_sha256": "115f81b0f3406f5b1e1cebee5e0651027eafd804af21cac671fd295d2e9660fc",
+    "term_decisions_sha256": "0ad44c0a1da7cc2b0b6cffdcd89d596a3e2f2c438b17b609cdd92b9e9393df77",
+    "canonical_decisions_sha256": "da467e9d377ac8d6dc230be604795d91a0662b4a4077299eb3cdb0f503b763f1",
+    "canonical_qa_sha256": "e6073a5333ea457fef9552617a7ceae8d2c764e184c372b7cfbd1bf9f81d196b",
+    "canonical_replay_sha256": "ec218bc17931d612758e0ebe381103ec4ec18d0e6704151fa2468e73d2be10b1",
+    "source_audit_retractions_sha256": "c87b33401bfb8306a49024e9cd7f2a4c0bf70b1e0bb12016c387d58cc1c797e7"
   },
-  "next_action": "Commit and push B060. Complete independent guarded PDF replay and the coherent v0.7 EPUB/direct-TeX/source release; continue OLP-0336–0722."
+  "next_action": "Commit and push B060. Complete independent guarded PDF replay and the coherent v0.7 EPUB/direct-TeX/source release; continue OLP-0336–0722.",
+  "repair": {
+    "utc": "2026-09-25T04:51:52.857746+00:00",
+    "retracted_claim_ids": [
+      "OLSOL-004",
+      "OLSOL-005"
+    ],
+    "restored_compactness_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
+    "active_b060_correction_ids": [
+      "OLSOL-001",
+      "OLSOL-002",
+      "OLSOL-003",
+      "OLSOL-006"
+    ]
+  }
 }

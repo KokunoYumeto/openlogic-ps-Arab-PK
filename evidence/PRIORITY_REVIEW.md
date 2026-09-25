@@ -20763,9 +20763,9 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 | `ps-Arab-PK-OCC-018937` | `OLP-0334` / `OLP-0334-B005` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:11-11` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:11-11` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018938` | `OLP-0334` / `OLP-0334-B006` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:13-24` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:13-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018939` | `OLP-0334` / `OLP-0334-B007` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:26-30` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:25-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018940` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018941` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018942` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:71-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018940` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018941` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018942` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:67-71` | pending; no page guessed |
 
 ## TERM-SOL-COMPACTNESS
 
@@ -20773,7 +20773,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 - Source term or construction: compactness / finite satisfiability / finite entailment
 - Intended sense: compactness / finite satisfiability / finite entailment
 - Chosen Pashto: کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی
-- Rationale: State both equivalent first-order compactness formulations, then distinguish the corrected second-order counterexample: every finite subset has a finite model, while the full set requires finite and arbitrarily large size simultaneously.
+- Rationale: State both equivalent first-order compactness formulations. In the second-order counterexample, read the source ellipsis as all pairwise inequalities and distinguish the corrected finite-subset bound from the impossible bound on the full infinite set.
 - Confidence reason: provisional; best available evidence. axiom/proof and semantics base prose supported regionally; the exact compactness term remains provisional
 - Expert question: In Pakistani Pashto mathematical prose, is «کمپکتوالی / په متناهي ډول د صدق وړتيا / له متناهي فرعي سټ څخه منطقي لازم والی» the clearest conventional rendering of “compactness / finite satisfiability / finite entailment” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Authorities:
@@ -20795,9 +20795,9 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 | `ps-Arab-PK-OCC-018947` | `OLP-0334` / `OLP-0334-B005` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:11-11` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:11-11` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018948` | `OLP-0334` / `OLP-0334-B006` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:13-24` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:13-23` | pending; no page guessed |
 | `ps-Arab-PK-OCC-018949` | `OLP-0334` / `OLP-0334-B007` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:26-30` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:25-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018950` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018951` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:40-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-018952` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:71-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018950` | `OLP-0334` / `OLP-0334-B008` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:33-36` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:32-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018951` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-018952` | `OLP-0334` / `OLP-0334-B010` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:64-68` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:67-71` | pending; no page guessed |
 
 ## TERM-SOL-LOEWENHEIM-SKOLEM
 
@@ -20848,7 +20848,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019217` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
+| `ps-Arab-PK-OCC-019215` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
 
 ## DEC-TREE-X
 
@@ -20868,7 +20868,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019218` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
+| `ps-Arab-PK-OCC-019216` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
 
 ## DEC-RPLUS
 
@@ -20888,7 +20888,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019219` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
+| `ps-Arab-PK-OCC-019217` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -20908,7 +20908,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019220` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
+| `ps-Arab-PK-OCC-019218` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -20928,7 +20928,7 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019221` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
+| `ps-Arab-PK-OCC-019219` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -20948,4 +20948,4 @@ This focused view contains 171 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019222` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
+| `ps-Arab-PK-OCC-019220` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |

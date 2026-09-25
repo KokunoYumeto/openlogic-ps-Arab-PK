@@ -10356,7 +10356,7 @@
       "unit_id": "OLP-0334",
       "path": "content/second-order-logic/metatheory/compactness.tex",
       "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
-      "translation_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "translation_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -10376,30 +10376,17 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLSOL-004",
-        "OLSOL-005",
         "OLSOL-006"
       ],
       "status": "structural-pass",
       "math_diff": {
         "source_only": [
-          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
           "$!A^{\\gek}\\in\\Gamma$",
           "$!A^{\\gen}\\in\\Gamma$",
           "$n>k$"
         ],
         "target_only": [
-          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][\\bigwedge_{1\\lei<j\\len}\\eq/[x_i][x_j]]].\\]",
           "$k\\ge1$"
-        ],
-        "expected_by_source_correction": true
-      },
-      "identifier_diff": {
-        "source_only": [
-          "\\ollabel{thm:sol-undecidable}"
-        ],
-        "target_only": [
-          "\\ollabel{thm:sol-not-compact}"
         ],
         "expected_by_source_correction": true
       }
@@ -13321,8 +13308,8 @@
     {
       "unit_id": "OLP-0334",
       "passage": "compactness",
-      "reverse_paraphrase": "The source counterexample needs all n witnesses pairwise distinct and a bound only on each finite subset. A duplicate theorem label also needs repair.",
-      "finding": "The corrected displayed formula and finite-model argument give the stated theorem, with three adjacent notices."
+      "reverse_paraphrase": "The source ellipsis in the at-least-n example ranges over all distinct witness pairs, and its theorem label is section-scoped. The proof incorrectly bounds the full infinite Gamma rather than each finite subset.",
+      "finding": "The source display and label are restored; the finite-subset argument is corrected with one adjacent source notice."
     },
     {
       "unit_id": "OLP-0335",

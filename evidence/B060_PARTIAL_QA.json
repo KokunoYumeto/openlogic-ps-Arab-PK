@@ -103,7 +103,7 @@
     {
       "unit_id": "OLP-0334",
       "source_path": "content/second-order-logic/metatheory/compactness.tex",
-      "target_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "target_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -118,13 +118,11 @@
         "no_replacement_character": true
       },
       "math_source_only": [
-        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]",
         "$!A^{\\gek}\\in\\Gamma$",
         "$!A^{\\gen}\\in\\Gamma$",
         "$n>k$"
       ],
       "math_target_only": [
-        "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][\\bigwedge_{1\\lei<j\\len}\\eq/[x_i][x_j]]].\\]",
         "$k\\ge1$"
       ],
       "tokens_source_only": [],

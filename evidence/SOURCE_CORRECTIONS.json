@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0335; six B060 source repairs disclosed; OLSIZ-011 and OLINF-002 remain retracted",
-  "adopted_utc": "2026-09-25T04:10:45.893995+00:00",
+  "status": "adopted through OLP-0335; four B060 source repairs active; OLSOL-004 and OLSOL-005 retracted after exact macro/ellipsis review",
+  "adopted_utc": "2026-09-25T04:38:04.354803+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6310,96 +6310,6 @@
       "upstream_reporting": "new source issue; manager report pending"
     },
     {
-      "id": "OLSOL-004",
-      "unit_id": "OLP-0334",
-      "classification": "duplicate-theorem-label",
-      "source_path": "content/second-order-logic/metatheory/compactness.tex",
-      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
-      "source_locator": "content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17",
-      "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex",
-      "target_line_1based": 36,
-      "target_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
-      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.",
-      "reason": "The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.",
-      "counterexample": "The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.",
-      "formula_policy": "Only the compactness theorem's label identifier changes.",
-      "qa_math_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "qa_identifier_exception": {
-        "source_only": [
-          "\\ollabel{thm:sol-undecidable}"
-        ],
-        "target_only": [
-          "\\ollabel{thm:sol-not-compact}"
-        ]
-      },
-      "qa_macro_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "qa_token_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "frozen_source_unchanged": true,
-      "reader_disclosure_language": "ps-Arab-PK",
-      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY",
-      "audit_artifacts": [
-        "content/second-order-logic/metatheory/compactness.tex:33-36; undecidability-and-axiomatizability.tex:14-17",
-        "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:36"
-      ],
-      "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
-      "upstream_reporting": "new source issue; manager report pending"
-    },
-    {
-      "id": "OLSOL-005",
-      "unit_id": "OLP-0334",
-      "classification": "insufficient-pairwise-distinctness-in-at-least-n-formula",
-      "source_path": "content/second-order-logic/metatheory/compactness.tex",
-      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
-      "source_locator": "content/second-order-logic/metatheory/compactness.tex:43-51",
-      "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex",
-      "target_line_1based": 53,
-      "target_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
-      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.",
-      "reason": "The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.",
-      "counterexample": "The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.",
-      "formula_policy": "The displayed example alone changes to a conjunction over every index pair 1<=i<j<=n; the n=1 conjunction is empty.",
-      "qa_math_exception": {
-        "source_only": [
-          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][(\\eq/[x_1][x_2]\\land\\eq/[x_1][x_3]\\land\\dots\\land\\eq/[x_{n-1}][x_n])]].\\]"
-        ],
-        "target_only": [
-          "\\[!A^{\\gen}\\ident\\lexists[x_1][\\dots\\lexists[x_n][\\bigwedge_{1\\lei<j\\len}\\eq/[x_i][x_j]]].\\]"
-        ]
-      },
-      "qa_identifier_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "qa_macro_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "qa_token_exception": {
-        "source_only": [],
-        "target_only": []
-      },
-      "frozen_source_unchanged": true,
-      "reader_disclosure_language": "ps-Arab-PK",
-      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY",
-      "audit_artifacts": [
-        "content/second-order-logic/metatheory/compactness.tex:43-51",
-        "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:53"
-      ],
-      "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
-      "upstream_reporting": "new source issue; manager report pending"
-    },
-    {
       "id": "OLSOL-006",
       "unit_id": "OLP-0334",
       "classification": "finite-subset-bound-misapplied-to-infinite-premise-set",
@@ -6407,8 +6317,8 @@
       "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
       "source_locator": "content/second-order-logic/metatheory/compactness.tex:54-63",
       "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex",
-      "target_line_1based": 63,
-      "target_sha256": "6cc22438793768f8b3674449db1d263c75358eb3b8705819508f10b983a06614",
+      "target_line_1based": 59,
+      "target_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.",
       "reason": "The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.",
@@ -6441,7 +6351,7 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-METATHEORY",
       "audit_artifacts": [
         "content/second-order-logic/metatheory/compactness.tex:54-63",
-        "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:63"
+        "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:59"
       ],
       "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
       "upstream_reporting": "new source issue; manager report pending"

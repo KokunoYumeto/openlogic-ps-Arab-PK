@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 335 of 722 source units are translated drafts. This log contains 178 terminology entries and 261 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 335 of 722 source units are translated drafts. This log contains 178 terminology entries and 259 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -3872,24 +3872,6 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLSOL-003 disclose the source issue clearly without obscuring the corrected mathematics?
-- Timing: contemporaneous B060 owner source review before cumulative acceptance
-
-## DEC-OLSOL-004
-
-- Type: source-correction
-- Choice: The compactness theorem reuses the preceding undecidability theorem's label. The target assigns a unique compactness label so both theorem targets survive.
-- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
-- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
-- Review question: Does the Pashto correction for OLSOL-004 disclose the source issue clearly without obscuring the corrected mathematics?
-- Timing: contemporaneous B060 owner source review before cumulative acceptance
-
-## DEC-OLSOL-005
-
-- Type: source-correction
-- Choice: The source lists only adjacent and selected inequalities, which allows repeated witnesses and fails to assert at least n elements. The target requires every pair among the n witnesses to differ.
-- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
-- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
-- Review question: Does the Pashto correction for OLSOL-005 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B060 owner source review before cumulative acceptance
 
 ## DEC-OLSOL-006
