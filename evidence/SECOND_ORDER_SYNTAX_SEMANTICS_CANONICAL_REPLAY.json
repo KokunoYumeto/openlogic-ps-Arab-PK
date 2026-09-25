@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-ps-Arab-PK/second-order-syntax-semantics-canonical-replay/v1",
+  "recorded_utc": "2026-09-25T03:46:01.023654+00:00",
+  "batch_id": "PS-B059-SECOND-ORDER-LOGIC-SYNTAX-SEMANTICS",
+  "status": "PASS",
+  "counts": {
+    "decisions": 430,
+    "occurrences": 19143,
+    "terminology_decisions": 175,
+    "source_correction_decisions": 250,
+    "priority_decisions": 168,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 4333
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "1b0f988bdaf50b005a4ba0775f4ddf7a09ba7c82407d8ae691b8f1a633973f07",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "f9bdd3e0332773932b83a3d421635e99ba6bcb4633c63d0c5ec88f1529941c96",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "380f1bbdd45772870b742841fbadccccf3209a792d5833d794246820b91a3698",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "4c94526cfdf16626a419d9dcd8aa51064658c67b60766e214c6c24bf9ab132ed",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "51ba46d309d8bfb3eea1e40e32922803fa27f523748620006f51d368d2a232d9",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "repo_primary_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "c30196a4cb08076a333b6a4b98f9679d061c5a653445c04813547c1b1956b8de",
+      "repo_primary_independent_replay_byte_identical": true
+    }
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "b77bbd201ae3491573fc0e7d2c22c2c7895b9a6ee51e4b631892255a39b819d9",
+    "ALIGNMENT.jsonl": "c841b956253b0e4e7a12c5ccea8cee1b225715fab1611785b08de46eae5a4c94",
+    "SEGMENT_CANON_USE.jsonl": "c4c0c83bf4cc26aa57986a8f105e496582d157421fd670d8b92c4dbbb057e741",
+    "SOURCE_MANIFEST.jsonl": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "CANON_SOURCES.jsonl": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931",
+    "CANON_PASSAGES.jsonl": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f",
+    "SOURCE_CORRECTIONS.json": "4a7a32e6d04a7ef7d23effc94f543e5bbe4f25acd07a79ecf7b012e8447daf12",
+    "TERM_DECISIONS.jsonl": "8d526e1ab5f67b5eaea6873daa32778dc2071455b1ae5f201bb1bbb87cb7e618",
+    "QA.json": "58dc932cd7f21fd7e31526bca313ff51811e596800faf9662e4d36dd5bd8d183"
+  }
+}

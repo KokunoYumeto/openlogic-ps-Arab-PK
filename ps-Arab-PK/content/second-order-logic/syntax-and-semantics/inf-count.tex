@@ -1,0 +1,138 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: size-of-domain
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{siz}
+
+\olsection{د نامتناهي او \usetoken{S}{enumerable}
+  \usetoken{P}{domain} بيانول}
+
+سټ~$M$ هله او يوازې هله (د ډېدېکېند په معنا) نامتناهي دے چې داسې
+!!a{injective} تابع~$f\colon M \to M$ وي چې !!{surjective} نۀ وي،
+يعنې $\ran{f} \neq M$۔ په لومړۍ درجې منطق کښې يو ځايه
+!!{function}~$f$ کتلے شو او ويلے شو چې په
+!!a{structure}~$\Struct{M}$ کښې هغې ته ګومارل شوې
+تابع~$\Assign{f}{M}$ !!{injective} ده او $\ran{f} \neq
+\Domain{M}$:
+\[
+\lforall[x][\lforall[y][(\eq[f(x)][f(y)] \to \eq[x][y])]] \land
+\lexists[y][\lforall[x][\eq/[y][f(x)]]].
+\]
+که $\Struct{M}$ په دې !!{sentence} کښې صدق وکړي،
+$\Assign{f}{M}: \Domain{M} \to \Domain{M}$ !!{injective} ده؛ نو
+$\Domain{M}$ بايد نامتناهي وي۔ که $\Domain{M}$ نامتناهي وي، او
+داسې تابع وي، $\Assign{f}{M}$ هغه تابع ټاکلے شو، او $\Struct{M}$ به
+په !!{sentence} کښې صدق وکړي۔ خو د دې دپاره اړينه ده چې زموږ ژبه
+غيرمنطقي سمبول~$f$ ولري چې دې موخې ته يې کاروو۔ په دويمې درجې
+منطق کښې په ساده ډول ويلے شو چې داسې تابع \emph{شته}۔ بيا~$f$ ته
+اړتيا نۀ وي، او د سوچه دويمې درجې منطق دا !!{sentence} ترلاسه کوو:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])].
+\]
+$\Sat{M}{\fn{Inf}}$ هله او يوازې هله چې $\Domain{M}$ نامتناهي
+وي۔ بيا $\fn{Fin} \ident \lnot \fn{Inf}$ تعريفولے شو؛
+$\Sat{M}{\fn{Fin}}$ هله او يوازې هله چې $\Domain{M}$ متناهي وي۔
+د سوچه لومړۍ درجې منطق يوه !!{sentence} دا نۀ شي بيانولے چې
+!!{domain} نامتناهي ده، که څۀ هم د هغو يو نامتناهي سټ يې بيانولے
+شي۔ د سوچه لومړۍ درجې منطق د !!{sentence}s هېڅ سټ نشته چې هله او
+يوازې هله په !!a{structure} کښې صدق وکړي چې د هغې ساحه متناهي وي۔
+
+\begin{prop}
+$\Sat{M}{\fn{Inf}}$ هله او يوازې هله چې $\Domain{M}$ نامتناهي وي۔
+\end{prop}
+
+\begin{proof}
+$\Sat{M}{\fn{Inf}}$ هله او يوازې هله چې
+  $\Sat{M}{\lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \land \lexists[y][\lforall[x][\eq/[y][u(x)]]]}[s]$ د کوم~$s$
+  دپاره وي۔ که داسې وي، $s(u)$ يوه !!a{injective} تابع ده، او داسې
+  $y \in \Domain{M}$ شته چې د~$s(u)$ په مدى کښې نۀ راځي۔ برعکس،
+  که داسې !!a{injective} $f\colon \Domain{M} \to \Domain{M}$ وي چې
+  $\ran{f} \neq \Domain{M}$، نو $s(u) = f$ د دې ډول متغير ګومارنه
+  ده۔
+\end{proof}
+
+سټ $M$ هله !!{enumerable} دے چې د !!{element}s يې داسې شمېرنه وي:
+\[
+m_0, m_1, m_2, \dots
+\]
+چې تکرار نۀ لري، خو متناهي کېدے شي۔ دا ډول شمېرنه هله او يوازې
+هله شته چې يو !!a{element} $z \in M$ او يوه تابع $f\colon M \to M$
+وي، داسې چې $z$، $f(z)$، $f(f(z))$، \dots، د~$M$ ټول !!{element}s
+وي۔ که شمېرنه وي، $z = m_0$ او $f(m_k) = m_{k+1}$ (يا، که $m_k$
+د شمېرنې وروستے !!{element} وي، $f(m_k) = m_k$) اړين !!{element} او تابع
+ورکوي۔ بل لور ته، که داسې $z$ او $f$ وي، نو $z$، $f(z)$،
+$f(f(z))$، \dots، د~$M$ يوه شمېرنه ده، او $M$ !!{enumerable} دے۔
+د $z$ او~$f$ شتون په دويمې درجې منطق کښې بيانولے شو، څو داسې
+!!{sentence} جوړه کړو چې هله او يوازې هله په !!a{structure} کښې
+رښتيا وي چې !!{structure} !!{enumerable} وي:
+\[
+\fn{Count} \ident
+\lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+
+\begin{prop}
+$\Sat{M}{\fn{Count}}$ هله او يوازې هله چې $\Domain{M}$
+!!{enumerable} وي۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ $\Domain{M}$ !!{enumerable} ده، او $m_0$، $m_1$، \dots،
+يې يوه شمېرنه وي۔ د تکرار په لرې کولو ډاډمنېدے شو چې هېڅ $m_k$ دوه
+ځلې نۀ راځي۔ $f(m_k) = m_{k+1}$ تعريف کړئ او $s(z) = m_0$ او
+$s(u) = f$ وټاکئ۔ ښيو چې
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+فرض کړئ $M \subseteq \Domain{M}$ يو هرومرو فرعي سټ دے۔ بيا فرض
+کړئ چې
+$\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif
+X(u(x)))])}[\Subst{s}{M}{X}]$۔ نو $\Subst{s}{M}{X}(z) \in M$ او
+هر کله چې $x \in M$ وي، $(\Subst{s}{M}{X}(u))(x) \in M$ هم وي۔ په
+بل عبارت، ځکه چې $\varAssign{\Subst{s}{M}{X}}{s}{X}$، $m_0 \in M$
+او که $x \in M$ وي نو $f(x) \in M$؛ نو $m_0 \in M$،
+$m_1 = f(m_0) \in M$، $m_2 = f(f(m_0)) \in M$، او داسې نور۔ نو
+$M = \Domain{M}$، او په نتيجه کښې
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$۔ ځکه چې
+$M \subseteq \Domain{M}$ هرومرو و، ثبوت بشپړ شو:
+$\Sat{M}{\fn{Count}}$۔
+
+اوس فرض کړئ $\Sat{M}{\fn{Count}}$، يعنې
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+د کوم~$s$ دپاره۔ $m = s(z)$ او $f = s(u)$ وټاکئ او
+$M = \{m, f(m), f(f(m)), \dots\}$ وګورئ۔ داسې تعريف شوے $M$ په
+څرګند ډول !!{enumerable} دے۔ نو
+\[
+\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)]}[\Subst{s}{M}{X}]
+\]
+د فرض له مخې۔ همدارنګه،
+$\Sat{M}{X(z)}[\Subst{s}{M}{X}]$، ځکه چې $M \ni m =
+\Subst{s}{M}{X}(z)$، او
+$\Sat{M}{\lforall[x][(X(x) \lif
+X(u(x)))]}[\Subst{s}{M}{X}]$ هم، ځکه چې که $x \in M$ وي نو
+$f(x) \in M$ هم وي۔ نو ځکه چې مقدم او شرطي دواړه صدق کوي، تالي
+هم بايد صدق وکړي:
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$۔ خو دا معنا لري چې
+$M = \Domain{M}$؛ نو $\Domain{M}$ !!{enumerable} ده، ځکه $M$
+د تعريف له مخې همداسې دے۔
+\end{proof}
+
+\begin{prob}
+!!{sentence} $\fn{Inf} \land \fn{Count}$ په هغو او يوازې هغو
+ساحو کښې رښتيا ده چې !!{denumerable} وي۔ د~$\fn{Count}$ تعريف داسې
+واړوئ چې يوه بله !!{sentence} شي او په مستقيم ډول وښيي چې ساحه
+!!{denumerable} ده، او ثابته يې کړئ۔
+\end{prob}
+
+\end{document}

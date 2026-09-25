@@ -1,0 +1,214 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sat}
+
+\olsection{صدق}
+
+\begin{explain}
+د دويمې درجې !!{formula}s دپاره د صدق اړيکې~$\Sat{M}{!A}[s]$ د
+تعريف دپاره بايد تعريفونه داسې وغځوو چې د دويمې درجې !!{variable}s
+هم پکې راشي۔ د !!a{structure} مفهوم په دويمې درجې منطق کښې هماغه
+د لومړۍ درجې منطق مفهوم دے۔ توپير يوازې د متغيرونو په
+ګومارنو~$s$ کښې دے: اوس بايد نۀ يوازې د لومړۍ درجې !!{variable}s،
+بلکې د دويمې درجې !!{variable}s ته هم ارزښتونه ورکړي۔
+\end{explain}
+
+\begin{defn}[د متغير ګومارنه]
+د !!a{structure}~$\Struct{M}$ دپاره \emph{د متغير ګومارنه}~$s$
+هغه تابع ده چې هر لاندې څيز لېږي:
+\begin{enumerate}
+\item د څيز !!{variable}~$\Obj{v_i}$ د~$\Domain M$ يوه غړي ته،
+  يعنې $s(\Obj{v_i}) \in \Domain{M}$؛
+\item $n$-ځايه اړيکيز متغير~$\Obj{V_i^n}$ پر~$\Domain{M}$ يوه
+  $n$-ځايه اړيکې ته، يعنې $s(\Obj{V_i^n}) \subseteq \Domain{M}^n$؛
+\item $n$-ځايه تابع متغير~$\Obj{u_i^n}$ له $\Domain{M}$ څخه
+  $\Domain{M}$ ته يوې $n$-ځايه تابع ته، يعنې
+  $s(\Obj{u_i^n})\colon \Domain{M}^n \to \Domain{M}$؛
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!^a{structure} هر !!{constant} او !!{function} ته !!a{value}
+ورکوي، او د دويمې درجې د متغير ګومارنه د هر څيز او تابع متغير دپاره
+څيزونه او تابعې ټاکي۔ دواړه په ګډه هر ترم ته يو ارزښت ټاکلو ته لار
+هواروي۔
+\end{explain}
+
+\begin{defn}[د ترم \usetoken{S}{value}]
+که $t$ د ژبې~$\Lang L$ يو ترم، $\Struct M$ د~$\Lang L$ يو
+!!a{structure}، او $s$ د~$\Struct M$ دپاره !!a{variable} ګومارنه
+وي، \emph{!!{value}}~$\Value{t}{M}[s]$ د لومړۍ درجې ترمونو په څېر
+تعريفېږي، له لاندې اضافي شرط سره:
+\begin{quote}
+\indcase{t}{\Atom{u}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = s(u)(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{quote}
+\end{defn}
+
+\begin{defn}[$x$-بڼه]
+که $s$ د !!a{structure}~$\Struct M$ دپاره !!a{variable} ګومارنه
+وي، نو د~$\Struct M$ هره هغه !!{variable} ګومارنه $s'$ چې له~$s$
+څخه زيات نه زيات د~$x$ په ټاکلي ارزښت کښې توپير لري، د~$s$
+\emph{$x$-بڼه} بلل کېږي۔ که $s'$ د~$s$ يوه $x$-بڼه وي،
+$\varAssign{s'}{s}{x}$ ليکو۔ (د دويمې درجې متغيرونو $X$ او $u$
+دپاره هم همداسې ده۔)
+\end{defn}
+
+\begin{defn}
+  که $s$ د !!a{structure}~$\Struct M$ دپاره !!a{variable} ګومارنه
+  وي او $m \in \Domain{M}$، نو ګومارنه~$\Subst{s}{m}{x}$ هغه
+  !!{variable} ګومارنه ده چې داسې تعريفېږي:
+  \[\Subst{s}{m}{y} = \begin{cases}
+    m & \text{if } y \ident x\\
+    s(y) & \text{otherwise},
+  \end{cases}\]
+  که $X$ يو $n$-ځايه اړيکيز !!{variable} او $M \subseteq
+  \Domain{M}^n$ وي، نو $\Subst{s}{M}{X}$ هغه !!{variable} ګومارنه ده
+  چې داسې تعريفېږي:
+  \[\Subst{s}{M}{y} = \begin{cases}
+    M & \text{if } y \ident X\\
+    s(y) & \text{otherwise}. 
+  \end{cases}\]
+  که $u$ يو $n$-ځايه تابع !!{variable} او $f\colon \Domain{M}^n
+  \to \Domain{M}$ وي، نو $\Subst{s}{f}{u}$ هغه !!{variable} ګومارنه
+  ده چې داسې تعريفېږي:
+  \[\Subst{s}{f}{y} = \begin{cases}
+    f & \text{if } y \ident u\\
+    s(y) & \text{otherwise}.
+  \end{cases}\]
+  په هر حالت کښې $y$ د لومړۍ يا دويمې درجې هر !!{variable} کېدے شي۔
+\end{defn}
+
+\begin{defn}[صدق]
+د دويمې درجې !!{formula}s~$!A$ دپاره د صدق تعريف د
+\olref[fol][syn][sat]{defn:satisfaction} په څېر دے، له لاندې اضافو
+سره:
+\begin{enumerate}
+\item \indcase{!A}{\Atom{X^n}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  هله او يوازې هله چې $\langle \Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s] \rangle \in
+  s(X^n)$۔}
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[X][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+  هله چې د هر $M \subseteq \Domain{M}^n$ دپاره
+  $\Sat{M}{!B}[\Subst{s}{M}{X}]$۔}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[X][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+  هله چې لږ تر لږه د يوه $M \subseteq \Domain{M}^n$ دپاره
+  $\Sat{M}{!B}[\Subst{s}{M}{X}]$ وي۔}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[u][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+  هله چې د هرې $f\colon \Domain{M}^n \to \Domain{M}$ دپاره
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$ وي۔}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[u][!B]}{$\Sat{M}{\indfrm}[s]$ هله او يوازې
+  هله چې لږ تر لږه د يوې $f\colon \Domain{M}^n \to \Domain{M}$ دپاره
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$ وي۔}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  !!{formula} $\lforall[z][(\Atom{X}{z} \liff \lnot
+    \Atom{Y}{z})]$ وګورئ۔ په دې کښې د دويمې درجې کميت ټاکونکي
+  نشته، خو د دويمې درجې !!{variable}s $X$ او~$Y$ پکښې دي (دلته
+  يو ځايه ګڼل کېږي)۔ اړونده د لومړۍ درجې !!{sentence}
+  $\lforall[z][(\Atom{P}{z} \liff \lnot \Atom{R}{z})]$ وايي چې د~$P$
+  تر تفسير لاندې راتلونکے څيز د~$R$ تر تفسير لاندې نۀ راځي، او
+  برعکس۔ په !!a{structure} کښې د !!a{predicate}~$P$ تفسير د
+  ~$\Assign{P}{M}$ له لارې ورکول کېږي۔ خو د دويمې درجې د $X$ او~$Y$
+  په شان !!{variable}s تفسير پخپله !!{structure} نۀ، بلکې د
+  !!a{variable} ګومارنه ورکوي۔ ځکه چې د دويمې درجې دا !!{formula}
+  !!a{sentence} نۀ ده (ازاد !!{variable}s $X$ او~$Y$ لري)، يوازې
+  د !!a{structure}~$\Struct{M}$ او د !!a{variable} ګومارنې~$s$ په
+  نسبت صدق کولے شي۔
+
+  $\Sat{M}{\lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})]}[s]$
+  هله وي چې د~$s(X)$ !!{element}s د~$s(Y)$ !!{element}s نۀ وي،
+  او برعکس؛ يعنې هله او يوازې هله چې
+  $s(Y) = \Domain{M} \setminus s(X)$۔ مثلاً $\Domain{M} = \{1, 2, 3\}$
+  ونيسئ۔ ځکه چې دلته هېڅ !!{predicate}s، !!{function}s يا
+  !!{constant}s نشته، يوازې د~$\Struct{M}$ ساحه اړونده ده۔ اوس
+  د $s_1(X) = \{1, 2\}$ او $s_1(Y) = \{3\}$ دپاره
+  $\Sat{M}{\lforall[z][(\Atom{X}{z}
+      \liff \lnot \Atom{Y}{z})]}[s_1]$ لرو۔
+
+  برعکس، که $s_2(X) = \{1, 2\}$ او $s_2(Y) = \{2, 3\}$ وي،
+  $\Sat/{M}{\lforall[z][(\Atom{X}{z} \liff \lnot
+      \Atom{Y}{z})]}[s_2]$۔ ځکه
+  $\Sat{M}{\Atom{X}{z}}[\Subst{s_2}{2}{z}]$ (ځکه $2 \in \Subst{s_2}{2}{z}(X)$)،
+  خو $\Sat/{M}{\lnot \Atom{Y}{z}}[\Subst{s_2}{2}{z}]$ (ځکه $2 \in
+  \Subst{s_2}{2}{z}(Y)$ هم دے)۔
+\end{ex}
+
+\begin{ex}
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$ هله
+  وي چې داسې $N \subseteq \Domain{M}$ وي چې
+  $\Sat{M}{(\lexists[y][\Atom{Y}{y}] \land \lforall[z][(\Atom{X}{z}
+  \liff \lnot \Atom{Y}{z})])}[\Subst{s}{N}{Y}]$۔ او دا د هغه
+  $N \neq \emptyset$ دپاره وي (څو
+  $\Sat{M}{\lexists[y][\Atom{Y}{y}]}[\Subst{s}{N}{Y}]$ وي) چې، د
+  تېرې بېلګې په څېر، $N = \Domain{M} \setminus s(X)$ وي۔ په بل
+  عبارت، $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$
+  هله او يوازې هله چې $\Domain{M} \setminus s(X)$ ناتش وي، يعنې
+  $s(X) \neq \Domain{M}$۔ نو !!{formula} مثلاً هله صدق کوي چې
+  $\Domain{M} = \{1, 2, 3\}$ او $s(X) = \{1, 2\}$ وي، خو هله
+  نۀ چې $s(X) = \{1, 2, 3\} = \Domain{M}$ وي۔
+
+  ځکه چې کله $s(X) = \Domain{M}$ وي دا !!{formula} صدق نۀ کوي،
+  نو !!{sentence}
+  \[
+  \lforall[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  هېڅکله صدق نۀ کوي: د هر !!{structure}~$\Struct{M}$ دپاره
+  ګومارنه~$s(X) = \Domain{M}$ دا !!{sentence} دروغ کوي۔ بل لور ته
+  جمله
+  \[
+  \lexists[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  د هرې ګومارنې~$s$ په نسبت صدق کوي، ځکه تل داسې
+  $M \subseteq \Domain{M}$ موندلے شو چې $M \neq \Domain{M}$ وي
+  (مثلاً $M = \emptyset$)۔
+\end{ex}
+
+\begin{ex}
+  د دويمې درجې !!{sentence}~$\lforall[X][\lforall[y][X(y)]]$ وايي
+  چې هره $1$-ځايه اړيکه، يعنې هر خاصيت، د هر څيز دپاره برقرار دے۔
+  دا په څرګند ډول هېڅکله رښتيا نۀ ده، ځکه په هر~$\Struct{M}$ کښې،
+  د داسې متغير ګومارنې~$s$ دپاره چې $s(X) = \emptyset$ او
+  $s(y) = a \in \Domain{M}$ وي، $\Sat/{M}{X(y)}[s]$ لرو۔ دا معنا
+  لري چې $!A \lif \lforall[X][\lforall[y][X(y)]]$ په دويمې درجې
+  منطق کښې له $\lnot !A$ سره معادل دے، يعنې
+  $\Sat{M}{!A \lif
+  \lforall[X][\lforall[y][X(y)]]}$ هله او يوازې هله چې
+  $\Sat{M}{\lnot !A}$۔ په بل عبارت، په دويمې درجې منطق کښې
+  $\lnot$ د $\lforall$ او~$\lif$ په مرسته تعريفولے شو۔
+\end{ex}
+
+\begin{prob}
+  وښيئ چې په دويمې درجې منطق کښې $\lforall$ او~$\lif$ نور
+  نښلوونکي تعريفولے شي:
+  \begin{enumerate}
+    \item ثابته کړئ چې په دويمې درجې منطق کښې $!A \land !B$ له
+    $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif
+    \lforall[x][X(x)])]$ سره معادل دے۔
+    \item داسې د دويمې درجې فارمولا ومومئ چې يوازې $\lforall$ او
+    $\lif$ کاروي او له $!A \lor !B$ سره معادله وي۔
+  \end{enumerate}
+\end{prob}
+
+\end{document}

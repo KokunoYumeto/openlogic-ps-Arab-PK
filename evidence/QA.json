@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 321,
-    "structural_pass": 321,
+    "draft_units": 329,
+    "structural_pass": 329,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B058-INCOMPLETENESS-PROVABILITY",
+  "batch": "PS-B059-SECOND-ORDER-LOGIC-SYNTAX-SEMANTICS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -10014,6 +10014,214 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0322",
+      "path": "content/second-order-logic/second-order-logic.tex",
+      "source_sha256": "08ba516c543622df9df6ffecc8250ae6641be5f470e04620c0159e6e107059b8",
+      "translation_sha256": "ee62dbcfc8db646d3dd3ec0278e2d60aad429490dc3dfa02aad782bce03f0515",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0323",
+      "path": "content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "b2c044a8b12eeee888e31f3e2615d7cd891f472e362e0328239b4c8cd8680aea",
+      "translation_sha256": "0166728080277f4fab94ed683276d1f1cec257f10c1f42d38d011a73890c0cb7",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0324",
+      "path": "content/second-order-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "3c27def372f8059cbdaf8ef1862ee6bcce1fddce4f68279b91b6d4f4adfbe417",
+      "translation_sha256": "989e1dee76e992fd7868784b3e4a0658cfcc999180e4d82c215d6e1e4d104644",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0325",
+      "path": "content/second-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_sha256": "51a8beeec221c52bb2487535e4160c8c0ce89a5c5170d7715afeed0f75d48347",
+      "translation_sha256": "61af78d49de9d1d26e19414ea51980dcd6f18281ff6717ffeb2e05aafb8d0392",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0326",
+      "path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+      "translation_sha256": "432d67aec35016406a03cc9da2f55089db52d09978c52bea811e580492faaa0e",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0327",
+      "path": "content/second-order-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_sha256": "750b84b8cbcff34c3b6ff660e91a77382a26504250d74aa04ee77ce48a0cd066",
+      "translation_sha256": "246e5174a48ae4a7f42a2870163a259e44195ac4f4d7f74c8edd5276788d516d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0328",
+      "path": "content/second-order-logic/syntax-and-semantics/expressive-power.tex",
+      "source_sha256": "5aab9a8bdfe16664fae99111703d09c6d0f6e91ae1be3d9afb19784cd5d53cbf",
+      "translation_sha256": "9f6229a36466d7b143f073b0d984e9e61d12f89daa4d31890340024528dc72b0",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
+      "source_sha256": "26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8",
+      "translation_sha256": "9b7e055e833f561811cad01e645be493dcaed50f8a9d2b06d7baa8c35a14557b",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -12830,6 +13038,54 @@
       "passage": "Tarski's theorem",
       "reverse_paraphrase": "A truth-defining arithmetic formula would conflict with the fixed point for its negation; halting provides an earlier definable noncomputable relation.",
       "finding": "All semantic biconditionals, the standard N domain and the illustrative truth schema are retained."
+    },
+    {
+      "unit_id": "OLP-0322",
+      "passage": "part driver",
+      "reverse_paraphrase": "The source opens a provisional second-order-logic part and imports syntax, metatheory and set-theory chapters.",
+      "finding": "All editorial and import elements are retained."
+    },
+    {
+      "unit_id": "OLP-0323",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The source says the chapter is incomplete until second-order substitution is treated; it imports six sections.",
+      "finding": "The caveat and exact section order remain."
+    },
+    {
+      "unit_id": "OLP-0324",
+      "passage": "standard semantics",
+      "reverse_paraphrase": "First-order quantifiers range over objects; second-order variables range over all relations and functions of the correct arity. Both displayed quantified tautologies are true in every structure.",
+      "finding": "Each quantifier, type, free-variable and example-truth claim remains distinct."
+    },
+    {
+      "unit_id": "OLP-0325",
+      "passage": "terms and formulas",
+      "reverse_paraphrase": "Relation and function variables have separate countably infinite families; second-order terms add function-variable application and formulas add relation-variable atoms plus four quantifier cases.",
+      "finding": "The two inductive definitions preserve each clause and metavariable role."
+    },
+    {
+      "unit_id": "OLP-0326",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "Assignments map object, relation and function variables to their different value sorts. The two complement examples distinguish open formulas, universal failure and existential success; the final exercise expresses connectives using universal quantification and implication.",
+      "finding": "All satisfaction cases, assignments, equations, counterexample values and the exercise remain."
+    },
+    {
+      "unit_id": "OLP-0327",
+      "passage": "semantic notions",
+      "reverse_paraphrase": "Validity ranges over all structures, entailment preserves joint satisfaction of a premise set, and satisfiability needs one structure.",
+      "finding": "The three definitions and sentence binding criterion remain."
+    },
+    {
+      "unit_id": "OLP-0328",
+      "passage": "expressive power",
+      "reverse_paraphrase": "Quantifying over all subsets defines identity without the equality symbol. The least transitive superset formula characterizes transitive closure, which first-order logic cannot define in general.",
+      "finding": "Both proof directions and the R subset R* condition remain explicit."
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "domain size",
+      "reverse_paraphrase": "Inf states an injective non-surjective self-map. Count states a seed and self-map whose successor-closed subsets exhaust the domain, including finite domains.",
+      "finding": "Both proof directions, the finite self-loop and the distinction between countable and denumerable remain."
     }
   ],
   "builds": [

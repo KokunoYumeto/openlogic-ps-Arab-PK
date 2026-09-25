@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 321 of 722 source units are translated drafts. This log contains 172 terminology entries and 255 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 329 of 722 source units are translated drafts. This log contains 175 terminology entries and 255 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1551,6 +1551,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د صدق تعريفېدنه; د رښتيا نه تعريفېدنه; د تارسکي تيورم
 - Review question: In Pakistani Pashto mathematical prose, is «په معياري حساب کښې تعريفېدنه / د رښتياوالي تعريف / د رښتياوالي نه تعريفېدنه» the clearest conventional rendering of “definability in standard arithmetic / truth definition / undefinability of truth” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
+
+## TERM-SOL-STANDARD-ASSIGNMENT
+
+- Type: terminology
+- Choice: د دويمې درجې معياري معنٰی پوهنه / اړيکيز او تابع متغيرونه / د متغير ګومارنه
+- Uncertainty: Pakistani syntax/semantics and regional predicate, relation and function base terms are supported; the exact second-order compound is provisional
+- Alternatives: د دويمې درجې بشپړه معنٰی پوهنه; د متغير ارزښت ټاکنه; رېلېشن متغير
+- Review question: In Pakistani Pashto mathematical prose, is «د دويمې درجې معياري معنٰی پوهنه / اړيکيز او تابع متغيرونه / د متغير ګومارنه» the clearest conventional rendering of “standard second-order semantics / relation and function variables / variable assignment” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+
+## TERM-SOL-EXPRESSIVITY-CLOSURE
+
+- Type: terminology
+- Choice: د بيان ځواک / له عينيت سمبول پرته عينيت / متعدي تړون / تر ټولو کوچنۍ متعدي اړيکه
+- Uncertainty: relation and predicate base words have regional support; transitive-closure compound is provisional and follows source mathematics
+- Alternatives: بياني ځواک; د انتقال تړون; له مساوات پرته عينيت
+- Review question: In Pakistani Pashto mathematical prose, is «د بيان ځواک / له عينيت سمبول پرته عينيت / متعدي تړون / تر ټولو کوچنۍ متعدي اړيکه» the clearest conventional rendering of “expressive power / identity without equality / transitive closure / least transitive relation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+
+## TERM-SOL-DEDEKIND-COUNTABILITY
+
+- Type: terminology
+- Choice: د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ
+- Uncertainty: regional countability discussion explicitly includes finite sets; the exact second-order sentence labels are source-led and provisional
+- Alternatives: ډېډېکېنډ نامتناهي; شمېرېدونکی سټ; د شمېر وړ نامحدود سټ
+- Review question: In Pakistani Pashto mathematical prose, is «د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ» the clearest conventional rendering of “Dedekind infinite / countable including finite / denumerable / orbit of an element” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 

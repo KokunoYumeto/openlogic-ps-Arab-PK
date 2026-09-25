@@ -1,0 +1,87 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: terms-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{frm}
+
+\olsection{ترمونه او \printtoken{P}{formula}}
+
+د لومړۍ درجې منطق په څېر، د دويمې درجې منطق عبارتونه له داسې بنسټيز
+لغت څخه جوړېږي چې \emph{!!{variable}s}، \emph{!!{constant}s}،
+\emph{!!{predicate}s} او کله ناکله \emph{!!{function}s} لري۔ له
+دغو څخه د منطقي نښلوونکو، کميت ټاکونکو او د لېک نښو، لکه قوسونو او
+کاماګانو، په مرسته \emph{ترمونه} او \emph{!!{formula}s} جوړېږي۔
+توپير دا دے چې د دويمې درجې منطق د څيزونو د متغيرونو تر څنګ د اړيکو
+او تابعو متغيرونه هم لري او پر هغو هم کميت ټاکنه روا ګڼي۔ نو د
+دويمې درجې منطق منطقي سمبولونه د لومړۍ درجې منطق سمبولونه دي، له
+لاندې اضافو سره:
+
+\begin{enumerate}
+\item د هرې ځايتيا~$n$ د دويمې درجې د اړيکو !!{variable}s يو
+  !!{denumerable}s سټ: $\Obj V_0^n$، $\Obj V_1^n$، $\Obj V_2^n$، \dots
+\item د دويمې درجې د تابعو !!{variable}s يو !!{denumerable}s سټ:
+  $\Obj u_0^n$، $\Obj u_1^n$، $\Obj u_2^n$، \dots
+\end{enumerate}
+
+لکه څرنګه چې $x$، $y$، $z$ د لومړۍ درجې د $\Obj v_i$ متغيرونو دپاره
+فرا-متغيرونه کاروو، همداسې به $X$، $Y$، $Z$ او نور د $\Obj V_i^n$
+دپاره، او $u$، $v$ او نور د~$\Obj u_i^n$ دپاره فرا-متغيرونه کاروو۔
+
+\begin{explain}
+د دويمې درجې ژبې غيرمنطقي سمبولونه د لومړۍ درجې ژبې په څېر ټاکل
+کېږي: د هغې !!{constant}s، !!{function}s او !!{predicate}s
+لست کېږي۔
+
+په لومړۍ درجې منطق کښې !!{identity}~$\eq$ عموماً شامله وي۔ هلته
+د ژبې~$\Lang{L}$ غيرمنطقي سمبولونه اړين دي څو په زړه پورې څۀ بيان
+کړے شو۔ بېشکه داسې !!{sentence}s شته چې هېڅ غيرمنطقي سمبول نۀ
+کاروي، خو يوازې له~$\eq$ سره په زړه پورې خبره کول ګران دي۔ په
+دويمې درجې منطق کښې، ځکه چې د اړيکو او تابعو د متغيرونو نامحدود
+زېرمتون لرو، له ځانګړيو غيرمنطقي سمبولونو پرته هم هر هغه څۀ ويلے شو
+چې په لومړۍ درجې ژبه کښې يې ويلے شو۔
+\end{explain}
+
+\begin{defn}[د دويمې درجې ترمونه]
+د~$\Lang L$ د \emph{دويمې درجې ترمونو} سټ، $\TrmSOL[L]$، د
+\olref[fol][syn][frm]{defn:terms} په تعريف کښې د لاندې شرط په زياتولو
+تعريفېږي:
+\begin{enumerate}
+\item که $u$ يو $n$-ځايه تابع متغير وي او $t_1$، \dots، $t_n$
+  ترمونه وي، نو $\Atom{u}{t_1, \ldots, t_n}$ يو ترم دے۔
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+نو د دويمې درجې ترم د لومړۍ درجې ترم ته ورته ښکاري؛ يوازې دا توپير
+لري چې د لومړۍ درجې په ترم کښې د !!a{function}~$\Obj{f^n_i}$ پر
+ځاے د دويمې درجې په ترم کښې د تابع متغير~$\Obj{u^n_i}$ راتلے شي۔
+\end{explain}
+
+\begin{defn}[د دويمې درجې \usetoken{s}{formula}]
+د ژبې~$\Lang L$ د \emph{دويمې درجې !!{formula}s} سټ~$\FrmSOL[L]$
+د \olref[fol][syn][frm]{defn:formulas} په تعريف کښې د لاندې شرطونو
+په زياتولو تعريفېږي:
+\begin{enumerate}
+\item که $X$ يو $n$-ځايه محمول متغير وي او $t_1$، \dots، $t_n$
+  د~$\Lang L$ د دويمې درجې ترمونه وي، نو
+  $\Atom{X}{t_1,\ldots, t_n}$ يو اټومي !!{formula} دے۔
+
+\tagitem{prvAll}{که $!A$ !!a{formula} او $u$ يو تابع متغير وي، نو
+  $\lforall[u][!A]$ !!a{formula} دے۔}{}
+
+\tagitem{prvAll}{که $!A$ !!a{formula} او $X$ يو محمول متغير وي، نو
+  $\lforall[X][!A]$ !!a{formula} دے۔}{}
+
+\tagitem{prvEx}{که $!A$ !!a{formula} او $u$ يو تابع متغير وي، نو
+  $\lexists[u][!A]$ !!a{formula} دے۔}{}
+
+\tagitem{prvEx}{که $!A$ !!a{formula} او $X$ يو محمول متغير وي، نو
+  $\lexists[X][!A]$ !!a{formula} دے۔}{}
+\end{enumerate}
+\end{defn}
+
+\end{document}

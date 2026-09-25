@@ -2,7 +2,7 @@
 
 Edition: OpenLogic Pashto — Pakistan; locale `ps-Arab-PK`; script `Arab`.
 
-This maintained index covers 427 terminology, source-correction and other judgment-dependent entries across 321 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
+This maintained index covers 430 terminology, source-correction and other judgment-dependent entries across 329 translated drafts. Pakistani usage is primary; Afghan sources are labelled regional comparators. A missing dictionary entry never leaves a needed term untranslated: the edition makes a reversible best-evidence choice and flags it for review.
 
 Exact source and target lines are listed below. Exact printed/PDF pages remain blank until a stable reader containing the occurrence has a verified line-to-page map. The accepted v0.3 unit ranges are retained only as navigation aids in the machine JSON.
 
@@ -2368,6 +2368,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0283; Coding Terms; `content/incompleteness/arithmetization-syntax/coding-terms.tex` source line(s) 13,14,19,23,24,27,39,44,46,50,51,62,79,86,88,92; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-terms.tex` target line(s) 10,13,14,16,18,22,23,38,42,43,50,60,74,77,81,82,83,84; page: pending stable pagination in a reader containing this unit
   - OLP-0284; Coding \printtoken{P}{formula}; `content/incompleteness/arithmetization-syntax/coding-formulas.tex` source line(s) 3,10,14,18,22,43,47,48,49,64,65,74,75,80,84,85; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/coding-formulas.tex` target line(s) 17,22,49,62,71; page: pending stable pagination in a reader containing this unit
   - OLP-0285; Substitution; `content/incompleteness/arithmetization-syntax/substitution.tex` source line(s) 13,15,44,45,46; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/substitution.tex` target line(s) 13,15,43,44,50; page: pending stable pagination in a reader containing this unit
+  - OLP-0324; Introduction; `content/second-order-logic/syntax-and-semantics/introduction.tex` source line(s) 13,14,15,17,18,19,21,25,28,29,33,35,36,38,40,41,43,48,49,50; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/introduction.tex` target line(s) 13,15,17,20,23,25,29,30,31,32,34,36,39,44,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0325; Terms and \printtoken{P}{formula}; `content/second-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 3,11,13,14,15,17,18,19,20,22,25,27,31,32,33,37,40,41,43,46,54,60,61,62,66,67,69,71,73,75,76,78,79,81,82,84,85; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 11,13,16,17,18,19,20,30,31,32,35,39,43,45,48,49,53,54,59,60,61,69,70,71,73,76,79,82; page: pending stable pagination in a reader containing this unit
 
 ## TERM-FOL-SEMANTICS
 
@@ -2423,6 +2425,9 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 15,16,18,22,23,24,25,30,32,36,48,63,64,66,71,172,174,205,206,208,209,213,220,226,231,241,242,251,252,254,255,256; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 20,23,26,93,94,185,250,251,255,256,267,279,280,282,283; page: pending stable pagination in a reader containing this unit
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 36,41,42,43,46,49,67,75,81,82,86,87,99,117,119,152,166,171,172,176,196,198,293; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 31,39,62,80,81,111; page: pending stable pagination in a reader containing this unit
   - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 11,14,22,23,24,33; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) 11,14,21,23,32,63,64,66; page: pending stable pagination in a reader containing this unit
+  - OLP-0324; Introduction; `content/second-order-logic/syntax-and-semantics/introduction.tex` source line(s) 16,17,20,21,23,24,25,26,28,32,40,51,53,56,58; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/introduction.tex` target line(s) 16,20,21,22,28,46,53; page: pending stable pagination in a reader containing this unit
+  - OLP-0326; Satisfaction; `content/second-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 3,11,14,16,23,26,27,29,31,32,37,45,58,66,67,74,80,81,90,91,92,99,103,108,113,124,125,126,127,128,129,131,132,137,138,139,155,160,163,164; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 11,14,91,92,127,128,130,134,166,170,176,183; page: pending stable pagination in a reader containing this unit
+  - OLP-0327; Semantic Notions; `content/second-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 13,14,16,21,22,23,26,27,28,32,33,34,35; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 13,15,20,26,31,32,34; page: pending stable pagination in a reader containing this unit
 
 ## TERM-VARIABLE-ASSIGNMENT
 
@@ -2514,6 +2519,8 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0177; Second-Order logic; `content/first-order-logic/beyond/second-order-logic.tex` source line(s) 13,30,129,204,227,238,240; `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex` target line(s) 11,13,30,98,125,198,219,230; page: pending stable pagination in a reader containing this unit
   - OLP-0178; Higher-Order logic; `content/first-order-logic/beyond/higher-order-logic.tex` source line(s) 11,13,21; `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex` target line(s) 11,21,41,103; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0322; second-order-logic; `content/second-order-logic/second-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/second-order-logic/second-order-logic.tex` target line(s) 7,10; page: pending stable pagination in a reader containing this unit
+  - OLP-0323; sol; `content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex` source line(s) line pending; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex` target line(s) 11,13; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SECOND-ORDER-SEMANTICS
 
@@ -3141,6 +3148,7 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
   - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) 28,30; page: pending stable pagination in a reader containing this unit
   - OLP-0306; \printtoken{S}{axiomatizable} Theories; `content/incompleteness/theories-computability/computably-axiomatizable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0329; Describing Infinite and \usetoken{S}{enumerable}   \usetoken{P}{domain}; `content/second-order-logic/syntax-and-semantics/inf-count.tex` source line(s) 53; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -3763,6 +3771,51 @@ Exact source and target lines are listed below. Exact printed/PDF pages remain b
 - Timing: contemporaneous owner terminology decision during B058 source and Pakistani Pashto language review
 - Locations:
   - OLP-0321; The Undefinability of Truth; `content/incompleteness/incompleteness-provability/tarski-thm.tex` source line(s) 11; `ps-Arab-PK/content/incompleteness/incompleteness-provability/tarski-thm.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+
+## TERM-SOL-STANDARD-ASSIGNMENT
+
+- Source term or sense: standard second-order semantics / relation and function variables / variable assignment
+- Chosen rendering or treatment: د دويمې درجې معياري معنٰی پوهنه / اړيکيز او تابع متغيرونه / د متغير ګومارنه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Under standard semantics, each n-place relation variable ranges over every subset of the nth Cartesian power of the domain and each n-place function variable over every function from that power to the domain. The structure still interprets nonlogical symbols, while the assignment interprets object and second-order variables.
+- Alternatives: د دويمې درجې بشپړه معنٰی پوهنه; د متغير ارزښت ټاکنه; رېلېشن متغير
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د دويمې درجې معياري معنٰی پوهنه / اړيکيز او تابع متغيرونه / د متغير ګومارنه» the clearest conventional rendering of “standard second-order semantics / relation and function variables / variable assignment” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+- Locations:
+  - OLP-0322; second-order-logic; `content/second-order-logic/second-order-logic.tex` source line(s) line pending; `ps-Arab-PK/content/second-order-logic/second-order-logic.tex` target line(s) 7,10; page: pending stable pagination in a reader containing this unit
+  - OLP-0323; sol; `content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex` source line(s) 12; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex` target line(s) 11,12,13; page: pending stable pagination in a reader containing this unit
+  - OLP-0324; Introduction; `content/second-order-logic/syntax-and-semantics/introduction.tex` source line(s) 40; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/introduction.tex` target line(s) 28,31,33,34,38,39,44,45; page: pending stable pagination in a reader containing this unit
+  - OLP-0325; Terms and \printtoken{P}{formula}; `content/second-order-logic/syntax-and-semantics/terms-formulas.tex` source line(s) 54,62,75,81; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/terms-formulas.tex` target line(s) 13,18,20,24,26,35,43,48,49,53,59,61,64,65,70,73,79; page: pending stable pagination in a reader containing this unit
+  - OLP-0326; Satisfaction; `content/second-order-logic/syntax-and-semantics/satisfaction.tex` source line(s) 18,22,23,28,30,38,39,62,189; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/satisfaction.tex` target line(s) 14,15,16,19,22,23,28,30,38,62,88,92,123,124,129,131,189,194,198,203,206,209; page: pending stable pagination in a reader containing this unit
+  - OLP-0327; Semantic Notions; `content/second-order-logic/syntax-and-semantics/semantic-notions.tex` source line(s) 18; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/semantic-notions.tex` target line(s) 14,15,16,17; page: pending stable pagination in a reader containing this unit
+  - OLP-0328; Expressive Power; `content/second-order-logic/syntax-and-semantics/expressive-power.tex` source line(s) 13; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/expressive-power.tex` target line(s) 13,14,17,22,49,72; page: pending stable pagination in a reader containing this unit
+
+## TERM-SOL-EXPRESSIVITY-CLOSURE
+
+- Source term or sense: expressive power / identity without equality / transitive closure / least transitive relation
+- Chosen rendering or treatment: د بيان ځواک / له عينيت سمبول پرته عينيت / متعدي تړون / تر ټولو کوچنۍ متعدي اړيکه
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Second-order quantification over every unary relation separates distinct objects without an equality symbol. The non-reflexive transitive closure R* is the smallest transitive relation containing R; the displayed second-order formula expresses inclusion in every transitive superset.
+- Alternatives: بياني ځواک; د انتقال تړون; له مساوات پرته عينيت
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د بيان ځواک / له عينيت سمبول پرته عينيت / متعدي تړون / تر ټولو کوچنۍ متعدي اړيکه» the clearest conventional rendering of “expressive power / identity without equality / transitive closure / least transitive relation” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+- Locations:
+  - OLP-0328; Expressive Power; `content/second-order-logic/syntax-and-semantics/expressive-power.tex` source line(s) 10,14,68,72,85,91; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/expressive-power.tex` target line(s) 10,67,71,81,83,89; page: pending stable pagination in a reader containing this unit
+
+## TERM-SOL-DEDEKIND-COUNTABILITY
+
+- Source term or sense: Dedekind infinite / countable including finite / denumerable / orbit of an element
+- Chosen rendering or treatment: د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ
+- Locale/script: `ps-Arab-PK` / `Arab`
+- Priority and confidence: high; provisional; best available evidence
+- Rationale: Inf asserts an injective but non-surjective self-map. Count asserts a seed and self-map whose least successor-closed subset is the entire domain; it covers finite as well as countably infinite nonempty domains. Keep this distinct from computable enumerability of sets.
+- Alternatives: ډېډېکېنډ نامتناهي; شمېرېدونکی سټ; د شمېر وړ نامحدود سټ
+- Review request: Please double-check: In Pakistani Pashto mathematical prose, is «د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ» the clearest conventional rendering of “Dedekind infinite / countable including finite / denumerable / orbit of an element” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B059 owner source and Pakistani Pashto language review
+- Locations:
+  - OLP-0329; Describing Infinite and \usetoken{S}{enumerable}   \usetoken{P}{domain}; `content/second-order-logic/syntax-and-semantics/inf-count.tex` source line(s) 11,14,59,70,73,81,85,110,121,127,129; `ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex` target line(s) 11,14,27,37,41,46,68; page: pending stable pagination in a reader containing this unit
 
 ## DEC-OLFUN-001
 

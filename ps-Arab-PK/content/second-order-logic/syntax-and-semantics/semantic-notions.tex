@@ -1,0 +1,37 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sem}
+\olsection{معنايي مفهومونه}
+
+\begin{explain}
+د \emph{اعتبار}، \emph{استلزام} او \emph{د صدق وړتيا} مرکزي منطقي
+مفهومونه د دويمې درجې منطق دپاره د لومړۍ درجې منطق په شان تعريفېږي؛
+يوازې بنسټيزه د صدق اړيکه اوس د دويمې درجې د !!{formula}s اړيکه ده۔
+د دويمې درجې !!{sentence} هغه !!a{formula} ده چې ټول متغيرونه
+يې، د محمول او تابع متغيرونو په ګډون، تړلي وي۔
+\end{explain}
+
+\begin{defn}[اعتبار]
+جمله~$!A$ هله \emph{معتبره} ده، $\Entails !A$، چې د هر
+!!{structure}~$\Struct M$ دپاره $\Sat{M}{!A}$۔
+\end{defn}
+
+\begin{defn}[استلزام]
+د جملو سټ~$\Gamma$ هله جمله~$!A$ \emph{لازموي}، $\Gamma
+\Entails !A$، چې د هر هغه !!{structure}~$\Struct M$ دپاره چې
+$\Sat{M}{\Gamma}$ وي، $\Sat{M}{!A}$ هم وي۔
+\end{defn}
+
+\begin{defn}[د صدق وړتيا]
+د جملو سټ~$\Gamma$ هله \emph{د صدق وړ} دے چې د کوم
+!!{structure}~$\Struct M$ دپاره $\Sat{M}{\Gamma}$ وي۔ که~$\Gamma$
+د صدق وړ نۀ وي، \emph{د صدق نۀ وړ} بلل کېږي۔
+\end{defn}
+
+\end{document}
