@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-ps-Arab-PK/quantifier-macro-manager-repair/v1",
+  "recorded_utc": "2026-09-21T00:47:56.417994+00:00",
+  "manager_finding_id": "OLI-PS300-QUANTIFIER-CALLS-20260921",
+  "status": "PASS",
+  "unit_id": "OLP-0300",
+  "action_ids": [
+    "OLCMP-097",
+    "OLCMP-098"
+  ],
+  "duplicate_source_finding_ids": {
+    "OLCMP-097": [
+      "BN-SRC-231",
+      "TA-INC-028"
+    ],
+    "OLCMP-098": [
+      "BN-SRC-232",
+      "TA-INC-029"
+    ]
+  },
+  "new_upstream_error_count": 0,
+  "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+  "style_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "prior_target_file_sha256": "a21c2a1916f5fdfba4343d4eb5135d4792c62b5ed6c604a09d8467ab38f6d468",
+  "repaired_target_file_sha256": "c28d51b084b32ca25cbf564123c0d63d614cb50b0857d652e335ce571c72a5b4",
+  "segment_rebinds": [
+    {
+      "segment_id": "OLP-0300-B028",
+      "source_sha256": "a2f798421330e0a2e596746cc354b4e821495485e033f57f9d310203fd4a870d",
+      "prior_target_sha256": "4354c3dee58701da8e15f299d4b9e1e72485a814b3b5a41d493053d7890fc747",
+      "expected_rebound_target_sha256": "a81f71ce988614ef3e4807e54eaa1b88336f61501d3a37658f8cc074b6ce8367",
+      "consultation_plan_scope_updated": true,
+      "actual_rebound_target_sha256": "a81f71ce988614ef3e4807e54eaa1b88336f61501d3a37658f8cc074b6ce8367",
+      "alignment_and_consultation_rebound": true
+    },
+    {
+      "segment_id": "OLP-0300-B031",
+      "source_sha256": "ecda3ab84df77533779faa1c4d25c01faa4c96695a7fa8172522fb11530a60da",
+      "prior_target_sha256": "979d8569bd8e253eee7986a418e28fbb510ea2990906b527684c486fa8b04bb6",
+      "expected_rebound_target_sha256": "043788c3475303bd36ce8a92854d2e5f043c387890c5f56af99a9e34c19527aa",
+      "consultation_plan_scope_updated": true,
+      "actual_rebound_target_sha256": "043788c3475303bd36ce8a92854d2e5f043c387890c5f56af99a9e34c19527aa",
+      "alignment_and_consultation_rebound": true
+    }
+  ],
+  "source_corrections_sha256": "a9988c248f602297836fb3279166cbdbfa91f760983a2247a5a40926e070138f",
+  "consultation_plan_sha256": "2f777ef1b55adf43f0b00732d20b0d759b0e4325278f2460a18e43c51d4f69c8",
+  "frozen_reader_release_changed": false,
+  "verified_utc": "2026-09-21T00:48:05.772080+00:00",
+  "qa_sha256": "4fd94b6cf2d3a285922940dad72fb6be432ea8e0cd909d6c2710130e408a2c87",
+  "alignment_sha256": "c3d4cde091cff977caabf9f6de831d00e382b782b766f7361fa2320453fa0f29",
+  "segment_canon_use_sha256": "67ed7d17797870f362770d60c593560e6c53d809de00d54c1725fae77763963e",
+  "olcmp_086_locator_tightened": true,
+  "frozen_release": {
+    "tag": "v0.6.0-computability",
+    "pdf_bytes": 1635063,
+    "pdf_sha256": "8d7d97ea0e9dc444d37d05acbdfd090a1139c0929ff7371400154a286fcbfa9d",
+    "epub_bytes": 673842,
+    "epub_sha256": "296fb63025751bbfd8209d1937e014bd21af945b8bdf721ae1190726b367de97"
+  }
+}

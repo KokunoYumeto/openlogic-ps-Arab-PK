@@ -1,0 +1,222 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-21T00:15:59.760880+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+  "scope": "OLP-0301 through OLP-0311 against pristine source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLCMP-091",
+      "unit_id": "OLP-0303",
+      "classification": "metalinguistic_relation_used_as_object_language_formula",
+      "source_path": "content/incompleteness/theories-computability/q-is-ce.tex",
+      "source_sha256": "26919c5d76e83e2084a4b157b7991d7a4f798c61973106e903f93812432122a4",
+      "source_locator": "content/incompleteness/theories-computability/q-is-ce.tex:48-51",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex",
+      "target_line_1based": 54,
+      "target_sha256": "15dfd5439e733872b30dece0d00779d567e95c6e9cb72c41d02accfff15dd0e6",
+      "mode": "replace-T-with-representing-formula-A-T-plus-adjacent-note",
+      "translation_change": "uses the representing formula A_T in both the Q-provability statement and the coded reduction sentence",
+      "counterexample": "Kleene's T is a metalinguistic numerical relation and cannot occur as the formula proved by Q; the preceding proof introduced A_T precisely as its representing object-language formula.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "Two identical inline formulas change exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lexists[s][T(\\numx,\\numx,s)]$",
+          "$\\lexists[s][T(\\numx,\\numx,s)]$"
+        ],
+        "target_only": [
+          "$\\lexists[s][!A_T(\\numx,\\numx,s)]$",
+          "$\\lexists[s][!A_T(\\numx,\\numx,s)]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-092",
+      "unit_id": "OLP-0305",
+      "classification": "metalinguistic_relation_applied_to_object_language_numeral",
+      "source_path": "content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex",
+      "source_sha256": "d81d5befab583c377a6a51acfffda6e2c4db3ba39aef1852fda6a88443c8547b",
+      "source_locator": "content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:58-68",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex",
+      "target_line_1based": 68,
+      "target_sha256": "dccfbe0adce786dbadcc414984072cbb56e70c6ba942d4812feb097f8fd77ec0",
+      "mode": "replace-S-of-numeral-with-S-of-natural-number-plus-adjacent-note",
+      "translation_change": "applies the metalinguistic relation S to n while retaining numeral n only inside its representing formula",
+      "counterexample": "S is declared as a relation on natural numbers, whereas D_S is the object-language formula that takes numeral terms; applying S to a numeral conflates the two levels.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "Two equation environments change exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{eqnarray*}S(\\numn)&\\lif&T\\vdash!D_S(\\numn)\\\\&\\lif&R(\\Gn{!D_S(u)},n)\\end{eqnarray*}",
+          "\\begin{eqnarray*}\\lnotS(\\numn)&\\lif&T\\vdash\\lnot!D_S(\\numn)\\\\&\\lif&T\\not\\vdash!D_S(\\numn)\\quad\\text{LOCALIZED$\\Th{T}$}\\\\&\\lif&\\lnotR(\\Gn{!D_S(u)},n).\\end{eqnarray*}"
+        ],
+        "target_only": [
+          "\\begin{eqnarray*}S(n)&\\lif&T\\vdash!D_S(\\numn)\\\\&\\lif&R(\\Gn{!D_S(u)},n)\\end{eqnarray*}",
+          "\\begin{eqnarray*}\\lnotS(n)&\\lif&T\\vdash\\lnot!D_S(\\numn)\\\\&\\lif&T\\not\\vdash!D_S(\\numn)\\quad\\text{LOCALIZED$\\Th{T}$}\\\\&\\lif&\\lnotR(\\Gn{!D_S(u)},n).\\end{eqnarray*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-093",
+      "unit_id": "OLP-0306",
+      "classification": "bound_formula_variable_collides_with_axiom_set",
+      "source_path": "content/incompleteness/theories-computability/computably-axiomatizable.tex",
+      "source_sha256": "cefc4b7c268be41dd32831fc2258102ef090194ef6bb7df234ad618b0ddda19d",
+      "source_locator": "content/incompleteness/theories-computability/computably-axiomatizable.tex:13-16",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex",
+      "target_line_1based": 17,
+      "target_sha256": "b944fa66c76f564c9e381a95dab81257821b976d381f8a9d6c2c8665b1fc35d0",
+      "mode": "rename-set-builder-formula-from-A-to-B-plus-adjacent-note",
+      "translation_change": "uses B for the sentence bound by the set builder while preserving A as the fixed computable axiom set",
+      "counterexample": "The displayed definition uses A both as the fixed axiom set and as the bound formula, making the membership condition visually self-shadowing instead of expressing derivability from the fixed set.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$T=\\Setabs{!A}{A\\Proves!A}$"
+        ],
+        "target_only": [
+          "$T=\\Setabs{!B}{A\\Proves!B}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-094",
+      "unit_id": "OLP-0309",
+      "classification": "metalinguistic_relation_applied_to_object_language_numeral",
+      "source_path": "content/incompleteness/theories-computability/inseparability.tex",
+      "source_sha256": "d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8",
+      "source_locator": "content/incompleteness/theories-computability/inseparability.tex:34-44",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex",
+      "target_line_1based": 48,
+      "target_sha256": "da50ccf0667aa86c0b33c3b047b1515478a12062211bf8bab4a79bbf16edbadf",
+      "mode": "replace-S-of-numeral-with-S-of-natural-number-plus-adjacent-note",
+      "translation_change": "applies the metalinguistic relation S to n while retaining numeral n only inside its representing formula",
+      "counterexample": "As in the earlier universal-relation argument, S is a numerical relation and D_S is its object-language representative; only D_S receives a numeral term.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "Two equation environments change exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{eqnarray*}S(\\numn)&\\lif&\\Th{Q}\\Proves!D_S(\\numn)\\\\&\\lif&!D_S(\\numn)\\inC\\end{eqnarray*}",
+          "\\begin{eqnarray*}\\lnotS(\\numn)&\\lif&\\Th{Q}\\Proves\\lnot!D_S(\\numn)\\\\&\\lif&!D_S(\\numn)\\in\\Th{\\barQ}\\\\&\\lif&!D_S(\\numn)\\not\\inC\\end{eqnarray*}"
+        ],
+        "target_only": [
+          "\\begin{eqnarray*}S(n)&\\lif&\\Th{Q}\\Proves!D_S(\\numn)\\\\&\\lif&!D_S(\\numn)\\inC\\end{eqnarray*}",
+          "\\begin{eqnarray*}\\lnotS(n)&\\lif&\\Th{Q}\\Proves\\lnot!D_S(\\numn)\\\\&\\lif&!D_S(\\numn)\\in\\Th{\\barQ}\\\\&\\lif&!D_S(\\numn)\\not\\inC\\end{eqnarray*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-095",
+      "unit_id": "OLP-0309",
+      "classification": "malformed_code_of_one_free_variable_formula",
+      "source_path": "content/incompleteness/theories-computability/inseparability.tex",
+      "source_sha256": "d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8",
+      "source_locator": "content/incompleteness/theories-computability/inseparability.tex:45",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex",
+      "target_line_1based": 52,
+      "target_sha256": "da50ccf0667aa86c0b33c3b047b1515478a12062211bf8bab4a79bbf16edbadf",
+      "mode": "replace-hash-of-D-S-num-u-with-Godel-code-of-D-S-u-plus-adjacent-note",
+      "translation_change": "codes the one-free-variable formula D_S(u) with the chapter's established Gödel-number notation",
+      "counterexample": "The source attempts to numeralize the variable u inside the formula code and uses an isolated hash notation, even though u is a variable rather than a natural number and the parallel proof codes D_S(u).",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "One inline formula changes exactly as registered; the disclosure adds no further math spans.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [
+          "$R(\\#(!D_S(\\numu)),y)$"
+        ],
+        "target_only": [
+          "$R(\\Gn{!D_S(u)},y)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-096",
+      "unit_id": "OLP-0311",
+      "classification": "truth_attributed_to_language_instead_of_interpretation",
+      "source_path": "content/incompleteness/theories-computability/interpretability.tex",
+      "source_sha256": "180003bb40b9c0d66d6e9805dba9989e14b350ad857b45e35479923bb712a966",
+      "source_locator": "content/incompleteness/theories-computability/interpretability.tex:64-67",
+      "target_path": "ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex",
+      "target_line_1based": 64,
+      "target_sha256": "e93dfda14092ef12717a64b68a286ce7dc703cbb4edb0c76ffd1c6db3fd2dbce",
+      "mode": "name-standard-arithmetic-interpretation-plus-adjacent-note",
+      "translation_change": "states Presburger's decidability result for sentences true in the standard interpretation of arithmetic",
+      "counterexample": "A language determines syntax but does not make sentences true; the immediately preceding contrast and Presburger arithmetic require truth in the standard natural-number interpretation.",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
+      "formula_policy": "This prose correction changes no math span, identifier or terminology token.",
+      "decision_timing": "contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "no_change_units": [
+    "OLP-0301",
+    "OLP-0302",
+    "OLP-0304",
+    "OLP-0307",
+    "OLP-0308",
+    "OLP-0310"
+  ],
+  "retractions_verified": [
+    "OLSIZ-011",
+    "OLINF-002"
+  ],
+  "status": "complete theories-and-computability source review; six adopted corrections have adjacent Pashto disclosures and exact registered deltas; every other formula and terminology marker is identical"
+}

@@ -1,0 +1,44 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: computably-axiomatizable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cax}
+
+\olsection{\printtoken{S}{axiomatizable} تيورۍ}
+
+يوه تيوري~$\Th{T}$ هله~\emph{!!{axiomatizable}} بلل کېږي چې د بديهي
+اصولو يو محاسبه کېدونکے سټ~$A$ ولري۔ (دا ويل چې~$A$ د~$\Th{T}$
+د بديهي اصولو سټ دے، معنا ئې دا ده چې
+$T = \Setabs{!B}{A \Proves !B}$۔)
+\textbf{د ژباړې د نسخې سمون (OLCMP-093):} سرچينې په دې سټ-جوړوونکې
+بڼه کښې يوه نښه هم د بديهي اصولو د سټ او هم د اړوندې جملې دپاره
+کارولې وه؛ دلته جمله په بله نښه بېله شوې ده، څو تعريف هماغه تيوري
+وټاکي چې له ټاکلي بديهي سټ څخه د اشتقاق وړ ده۔
+د طبيعي عددونو هره «معقوله» بديهي کول به دا خاصيت لري۔ په ځانګړې
+توګه، هره هغه تيوري چې د بديهي اصولو متناهي سټ ولري،
+!!{axiomatizable} وي۔
+
+\begin{lem}
+فرض کړئ~$\Th{T}$، !!{axiomatizable} ده۔ بيا~$\Th{T}$،
+!!{computably
+enumerable} ده۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ~$A$ د~$\Th{T}$ د بديهي اصولو يو محاسبه کېدونکے سټ دے۔ د
+دې د ټاکلو دپاره چې~$!A \in T$ ده که نۀ، يوازې د بديهي اصولو څخه
+د~$!A$ د !!a{derivation} پلټنه وکړئ۔
+
+لږ په بله وينا، $!A$ هله او يوازې هله په~$\Th{T}$ کښې ده چې
+په~$A$ کښې د بديهي اصولو يو متناهي لست~$!B_1$، \dots، $!B_k$ او
+په لومړۍ درجې منطق کښې د~$(!B_1 \land \dots \land !B_k) \lif !A$
+يو !!a{derivation} وي۔ خو موږ لا پوهېږو چې هر هغه سټ چې تعريف ئې د
+«داسې \dots شته چې \dots» په بڼه وي، !!{c.e.} وي، په دې شرط چې
+دويم «\dots» محاسبه کېدونکے وي۔
+\end{proof}
+
+\end{document}

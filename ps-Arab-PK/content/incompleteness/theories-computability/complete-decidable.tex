@@ -1,0 +1,41 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: complete-decidable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cdc}
+
+\olsection{\printtoken{S}{axiomatizable} بشپړې تيورۍ د پرېکړې وړ دي}
+
+يوه تيوري هله~\emph{بشپړه} بلل کېږي چې د هرې جملې~$!A$ دپاره يا
+$!A$ او يا~$\lnot !A$ ثابتېدونکې وي۔
+
+\begin{lem}
+فرض کړئ يوه تيوري~$\Th{T}$ بشپړه او !!{axiomatizable} ده۔ بيا
+$\Th{T}$ د پرېکړې وړ ده۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ~$\Th{T}$ بشپړه ده او~$A$ د بديهي اصولو يو محاسبه کېدونکے
+سټ دے۔ که~$\Th{T}$ ناسازګاره وي، نو څرګنده ده چې محاسبه کېدونکې
+ده۔ (الګوريتم: «تل هو ووايه۔») نو فرض کولے شو چې~$\Th{T}$ سازګاره
+هم ده۔
+
+د دې پرېکړې دپاره چې يوه جمله~$!A$ په~$\Th{T}$ کښې ده که نۀ،
+په يو وخت له~$\Th{T}$ څخه هم د~$!A$ د !!a{derivation} او هم د
+$\lnot !A$ د !!a{derivation} پلټنه وکړئ۔ ځکه~$\Th{T}$ بشپړه ده،
+خامخا به يو يا بل ومومئ؛ او ځکه~$\Th{T}$ سازګاره ده، که د
+$\lnot !A$ يو !!a{derivation} ومومئ، نو د~$!A$ هېڅ !!{derivation}
+نشته۔
+
+په بله وينا، موږ لا پوهېږو چې~$\Th{T}$، !!{c.e.} ده؛ نو د هغې
+قضيې له مخې چې مخکښې مو ثابته کړې، بس دا ښودل پکار دي چې د~$\Th{T}$
+متمم هم~!!{c.e.} دے۔ خو !!a{formula}~$!A$ هله او يوازې هله په
+$\Th{\bar T}$ کښې دے چې~$\lnot !A$ په~$\Th{T}$ کښې وي؛ نو
+$\Th{\bar T} \leq_m \Th{T}$۔
+\end{proof}
+
+\end{document}

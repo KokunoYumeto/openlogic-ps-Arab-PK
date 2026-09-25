@@ -1,0 +1,58 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: inseparability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{ins}
+
+\olsection{په~$\Th{Q}$ کښې ثابتېدونکې او ردېدونکې جملې په محاسبوي
+  ډول نه بېلېدونکې دي}
+
+
+پرېږدئ~$\Th{\bar Q}$ د هغو جملو سټ وي چې \emph{نفيانې} ئې په
+$\Th{Q}$ کښې ثابتېدونکې دي؛ يعنې
+$\Th{\bar Q} = \Setabs{!A}{\Th{Q} \Proves \lnot !A}$۔ په ياد ولرئ
+چې بېل سټونه~$A$ او~$B$ هله په محاسبوي ډول نه بېلېدونکي بلل کېږي
+چې داسې محاسبه کېدونکے سټ~$C$ نۀ وي چې~$A \subseteq C$ او
+$B \subseteq \Complement{C}$۔
+
+\begin{lem}
+$\Th{Q}$ او~$\Th{\bar Q}$ په محاسبوي ډول نه بېلېدونکي دي۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ~$C$ داسې محاسبه کېدونکے سټ دے چې~$\Th{Q} \subseteq C$ او
+$\Th{\bar Q} \subseteq \Complement{C}$۔ پرېږدئ~$R(x,y)$ لاندې
+اړيکه وي:
+\begin{quote}
+$x$ د~$!D(u)$ فارمول کوډوي او~$!D(\num y)$ په~$C$ کښې دے۔
+\end{quote}
+موږ به وښيو چې~$R(x,y)$ يوه نړيواله محاسبه کېدونکې اړيکه ده، چې
+تناقض ترې ترلاسه کېږي۔
+
+فرض کړئ~$S(y)$ محاسبه کېدونکې ده، او په~$\Th{Q}$ کښې د~$!D_S(u)$
+په وسيله تمثيلېږي۔ بيا
+\begin{eqnarray*}
+S(n) & \lif & \Th{Q} \Proves !D_S(\num n) \\
+& \lif & !D_S(\num n) \in C
+\end{eqnarray*}
+او
+\begin{eqnarray*}
+\lnot S(n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n) \\
+& \lif & !D_S(\num n) \in \Th{\bar Q} \\
+& \lif & !D_S(\num n) \not\in C
+\end{eqnarray*}
+\textbf{د ژباړې د نسخې سمون (OLCMP-094):} سرچينې په دواړو
+ماوراءژبنیو اړيکو کښې طبيعي عدد د څيز-ژبې د عددنښې په بڼه ليکلے و؛
+دلته عددنښه يوازې د تمثيلوونکي فارمول دننه کارول شوې ده۔
+نو~$S(y)$ له~$R(\Gn{!D_S(u)},y)$ سره هم‌ارزه ده۔
+\textbf{د ژباړې د نسخې سمون (OLCMP-095):} سرچينې په وروستۍ کرښه
+کښې د فارمول کوډ په داسې بڼه ليکلے و چې ازاد متغير ئې په نامعتبره
+عددنښه بدلوله او د څپرکي د ګوډل-کوډ نښه ئې نۀ کاروله؛ دلته د هماغه
+يو-ازاد-متغير فارمول سم کوډ راغلے دے۔
+\end{proof}
+
+\end{document}

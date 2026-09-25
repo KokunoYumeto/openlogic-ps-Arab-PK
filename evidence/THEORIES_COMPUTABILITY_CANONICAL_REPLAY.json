@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-ps-Arab-PK/theories-computability-canonical-replay/v1",
+  "recorded_utc": "2026-09-25T01:22:31.750931+00:00",
+  "batch_id": "PS-B057-THEORIES-COMPUTABILITY",
+  "status": "PASS",
+  "counts": {
+    "decisions": 421,
+    "occurrences": 18814,
+    "terminology_decisions": 169,
+    "source_correction_decisions": 247,
+    "priority_decisions": 162,
+    "reader_pages_available": 14810,
+    "reader_pages_pending": 4004
+  },
+  "input_evidence": {
+    "EXPERT_REVIEW_LOG.jsonl": "dd8f53079df1975d209fe17b111edf5d4cb44977f021089dfcc2c15605f7b99a",
+    "ALIGNMENT.jsonl": "c3d4cde091cff977caabf9f6de831d00e382b782b766f7361fa2320453fa0f29",
+    "SEGMENT_CANON_USE.jsonl": "67ed7d17797870f362770d60c593560e6c53d809de00d54c1725fae77763963e",
+    "SOURCE_MANIFEST.jsonl": "5a6fef5c16c15a5b2f90f874c268512cfd6ed2e846bdfa850a67304a4c05a155",
+    "CANON_SOURCES.jsonl": "bb949c92bd19ceaf46b7d3d63a069a54e911e32a86a3265e4efc6ee326d72931",
+    "CANON_PASSAGES.jsonl": "f20cf9bf558c8a47b04b1ab57f45a5f918e28ab828b8a85c2cf10ea1e6ca3a8f",
+    "SOURCE_CORRECTIONS.json": "a9988c248f602297836fb3279166cbdbfa91f760983a2247a5a40926e070138f",
+    "TERM_DECISIONS.jsonl": "01c515d8e849af930e81028859e7e93f0cf670401fb07e7bcaea853945413638",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "QA.json": "4fd94b6cf2d3a285922940dad72fb6be432ea8e0cd909d6c2710130e408a2c87",
+    "READER_OCCURRENCE_PAGES.json": "1087ba0ab1d62eae7046e4e0058fd7dd632a7438a65893c3d7662430a13fe19b"
+  },
+  "artifacts": {
+    "START_HERE.md": {
+      "sha256": "f2e4b05c432a23906ea25ef4eeafdd1676149aa063b1b3266c2115ba5c674e1d",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "sha256": "6aca1036686f07caaf1f532fc21bb058927592c7e82193c8fa50bd9efb419598",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "PRIORITY_REVIEW.md": {
+      "sha256": "3dc4968935f71213528ae92d2937891f2f5f76be2f42f06351ea6209df197de1",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "sha256": "b9723943c80bc567d26179c20ec37653685d56a8fe8eb4302aa878728f665e0a",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "DECISIONS.json": {
+      "sha256": "37f6a3f9ea9be19a8c65fed0980d3e73e3d7ad18f0c4e5fc84d6b1ccb9180fb8",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "translation-decision.schema.json": {
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    },
+    "TRANSLATION_DECISION_QA.json": {
+      "sha256": "02a356969665adf392948a65be23457917ecd6ea0025bbe45690a8441f0a3623",
+      "state_repo_primary_replay_independent_replay_byte_identical": true
+    }
+  }
+}

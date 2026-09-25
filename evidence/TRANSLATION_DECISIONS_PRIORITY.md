@@ -1,6 +1,6 @@
 # Priority translation decisions for expert review
 
-This view contains 158 high-priority entries from the complete 409-entry decision index for `ps-Arab-PK` (`Arab`).
+This view contains 162 high-priority entries from the complete 421-entry decision index for `ps-Arab-PK` (`Arab`).
 
 ## TERM-SET
 
@@ -1473,6 +1473,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 3,42,72,78,117,140,151,215,240,248,259,284; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 42,183,219,252,254,283; page: pending stable pagination in a reader containing this unit
   - OLP-0287; \usetoken{P}{derivation} in Natural Deduction; `content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` source line(s) 3,65,71,112,137,146,156,167,228,255,263,272,303,314,331; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex` target line(s) 294,296; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 3,66,150,169,214; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0306; \printtoken{S}{axiomatizable} Theories; `content/incompleteness/theories-computability/computably-axiomatizable.tex` source line(s) 25,35; `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex` target line(s) 20; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-PROPERTIES
 
@@ -1543,6 +1544,10 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 176,249,291,305,310; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) 13,170; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 11,16,18,21,28,80,90,91,93,95; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 15,90; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) 22; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 21; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0307; \printtoken{S}{axiomatizable} Complete Theories are Decidable; `content/incompleteness/theories-computability/complete-decidable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/complete-decidable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 28; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) 35; page: pending stable pagination in a reader containing this unit
 
 ## TERM-PROOF-CALCULI
 
@@ -1744,6 +1749,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 41; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0194; non-standard-models; `content/model-theory/models-of-arithmetic/non-standard-models.tex` source line(s) 75,100; `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex` target line(s) 99; page: pending stable pagination in a reader containing this unit
   - OLP-0200; Separation of \printtoken{P}{sentence}; `content/model-theory/interpolation/separation.tex` source line(s) line pending; `ps-Arab-PK/content/model-theory/interpolation/separation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SEQUENT-SOUNDNESS
 
@@ -1851,6 +1857,9 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 15,35,63,69,97; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 15,21,25,26,28,35,39,41,43,60,61,64,69,70,75,79,102,106,108,109,115,119,125,128,133; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 119,136; page: pending stable pagination in a reader containing this unit
   - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) 12,16,24,65,69; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) 70,71; page: pending stable pagination in a reader containing this unit
+  - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) 23,27; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0306; \printtoken{S}{axiomatizable} Theories; `content/incompleteness/theories-computability/computably-axiomatizable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0307; \printtoken{S}{axiomatizable} Complete Theories are Decidable; `content/incompleteness/theories-computability/complete-decidable.tex` source line(s) 3,11,18; `ps-Arab-PK/content/incompleteness/theories-computability/complete-decidable.tex` target line(s) 11,18; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOWENHEIM-SKOLEM
 
@@ -1969,6 +1978,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0192; introduction; `content/model-theory/models-of-arithmetic/introduction.tex` source line(s) 1,2,12,41,42,45,51,63,64,65; `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex` target line(s) 12,16,38,39,41,47,60,61,62; page: pending stable pagination in a reader containing this unit
   - OLP-0198; mod; `content/model-theory/interpolation/interpolation.tex` source line(s) 1; `ps-Arab-PK/content/model-theory/interpolation/interpolation.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0203; mod; `content/model-theory/lindstrom/lindstrom.tex` source line(s) 1; `ps-Arab-PK/content/model-theory/lindstrom/lindstrom.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0302; Introduction; `content/incompleteness/theories-computability/introduction.tex` source line(s) 31,33,35; `ps-Arab-PK/content/incompleteness/theories-computability/introduction.tex` target line(s) 31,33,35; page: pending stable pagination in a reader containing this unit
 
 ## TERM-LOGIC-ORDER-HIERARCHY
 
@@ -2519,6 +2529,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) 18,39,112; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 18,37,114; page: pending stable pagination in a reader containing this unit
   - OLP-0250; Applying the Fixed-Point Theorem; `content/computability/computability-theory/application-fixed-point.tex` source line(s) 31,37,66; `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex` target line(s) 25,31,36,69; page: pending stable pagination in a reader containing this unit
   - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 18,26,31; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) 19,27,33; page: pending stable pagination in a reader containing this unit
 
 ## TERM-COMPUTABLY-ENUMERABLE-SETS
 
@@ -2542,6 +2553,9 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0277; Definitions; `content/incompleteness/introduction/definitions.tex` source line(s) 244,305; `ps-Arab-PK/content/incompleteness/introduction/definitions.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 85; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) 28,30; page: pending stable pagination in a reader containing this unit
+  - OLP-0306; \printtoken{S}{axiomatizable} Theories; `content/incompleteness/theories-computability/computably-axiomatizable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-HALTING-SETS
 
@@ -2558,6 +2572,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 18,20,24,27,31,36,41,42,44,75,76,80; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) 18,20,24,25,28,29,32,36,39,40,42,43,74,75,79; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 35,36; page: pending stable pagination in a reader containing this unit
   - OLP-0248; Rice's Theorem; `content/computability/computability-theory/rice-theorem.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex` target line(s) 45; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CE-CLOSURE-COMPLEMENT
 
@@ -2571,6 +2587,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0241; ce-closed-cup-cap; `content/computability/computability-theory/ce-closed-cup-cap.tex` source line(s) 11,12; `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex` target line(s) 11,12; page: pending stable pagination in a reader containing this unit
   - OLP-0242; Computably Enumerable Sets not Closed under Complement; `content/computability/computability-theory/complement-ce.tex` source line(s) 3,10,12,13,20,25,26,28,30,37,48,53,58; `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex` target line(s) 10,12,44,56; page: pending stable pagination in a reader containing this unit
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 54,56,57,65,77,80; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 86,89; page: pending stable pagination in a reader containing this unit
+  - OLP-0307; \printtoken{S}{axiomatizable} Complete Theories are Decidable; `content/incompleteness/theories-computability/complete-decidable.tex` source line(s) 33; `ps-Arab-PK/content/incompleteness/theories-computability/complete-decidable.tex` target line(s) 36; page: pending stable pagination in a reader containing this unit
+  - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 19,27; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-MANY-ONE-REDUCIBILITY
 
@@ -2585,6 +2603,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0244; Properties of Reducibility; `content/computability/computability-theory/prop-reduce.tex` source line(s) 31,32,45,56,64,65,69,77,98; `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex` target line(s) 35,48,59,69,70,74,90,95; page: pending stable pagination in a reader containing this unit
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) line pending; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0246; An Example of Reducibility; `content/computability/computability-theory/k-1.tex` source line(s) 28,40; `ps-Arab-PK/content/computability/computability-theory/k-1.tex` target line(s) 29,40; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) 29,31; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) 33; page: pending stable pagination in a reader containing this unit
+  - OLP-0307; \printtoken{S}{axiomatizable} Complete Theories are Decidable; `content/incompleteness/theories-computability/complete-decidable.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/complete-decidable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-CE-COMPLETENESS-TOTALITY
 
@@ -2597,6 +2617,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
 - Locations:
   - OLP-0245; Complete Computably Enumerable Sets; `content/computability/computability-theory/complete-ce-sets.tex` source line(s) 10,13,17,21,26,41; `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex` target line(s) 10,21,27; page: pending stable pagination in a reader containing this unit
   - OLP-0247; Totality is Undecidable; `content/computability/computability-theory/total.tex` source line(s) 10,13,56; `ps-Arab-PK/content/computability/computability-theory/total.tex` target line(s) 10,13,59; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) 20,27,29; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) 30; page: pending stable pagination in a reader containing this unit
 
 ## TERM-RICE-INDEX-SETS
 
@@ -2778,6 +2799,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0269; The Decision Problem; `content/turing-machines/undecidability/decision-problem.tex` source line(s) 10,15,18,24,28,29; `ps-Arab-PK/content/turing-machines/undecidability/decision-problem.tex` target line(s) 10,15,17,22,27,28; page: pending stable pagination in a reader containing this unit
   - OLP-0272; The Decision Problem is Unsolvable; `content/turing-machines/undecidability/unsolvability-decision-problem.tex` source line(s) 10,14,21,28,45,57; `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex` target line(s) 10,14,21,22,35,47,60; page: pending stable pagination in a reader containing this unit
   - OLP-0273; Trakhtenbrot's Theorem; `content/turing-machines/undecidability/trakhtenbrot.tex` source line(s) 26,236; `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex` target line(s) 18,27,261,262; page: pending stable pagination in a reader containing this unit
+  - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-TURING-LOGICAL-REPRESENTATION
 
@@ -2827,6 +2850,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0275; inc; `content/incompleteness/introduction/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/introduction/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
   - OLP-0276; Historical Background; `content/incompleteness/introduction/historical-background.tex` source line(s) 14,113,142,153,157,161,169,180,184,197,198,203,204,209; `ps-Arab-PK/content/incompleteness/introduction/historical-background.tex` target line(s) 134,161; page: pending stable pagination in a reader containing this unit
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 13,16,18,21,28,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 16; page: pending stable pagination in a reader containing this unit
+  - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 28; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-REPRESENTABILITY
 
@@ -2851,6 +2876,11 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0297; Computable Functions are Representable in $\Th{Q}$; `content/incompleteness/representability-in-q/comp-representable.tex` source line(s) 2,3,10,13,31,33,36,37,42,44,45,47,49,54,56; `ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex` target line(s) 10,13,31,33,36,37,42,43,45,47,49,53,55; page: pending stable pagination in a reader containing this unit
   - OLP-0298; Representing Relations; `content/incompleteness/representability-in-q/representing-relations.tex` source line(s) 2,3,11,13,16,17,25,31,40,41,59; `ps-Arab-PK/content/incompleteness/representability-in-q/representing-relations.tex` target line(s) 11,13,17,27,32,43,64; page: pending stable pagination in a reader containing this unit
   - OLP-0299; Undecidability; `content/incompleteness/representability-in-q/undecidability.tex` source line(s) 2,37; `ps-Arab-PK/content/incompleteness/representability-in-q/undecidability.tex` target line(s) 37; page: pending stable pagination in a reader containing this unit
+  - OLP-0302; Introduction; `content/incompleteness/theories-computability/introduction.tex` source line(s) 19,20,21,22,23,25,26,28,39; `ps-Arab-PK/content/incompleteness/theories-computability/introduction.tex` target line(s) 19,21,23,26,37,38,39; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) 32,44; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) 21,35,45,53,55; page: pending stable pagination in a reader containing this unit
+  - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) 39,45; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) 39,44; page: pending stable pagination in a reader containing this unit
+  - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 57; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 52,57,70; page: pending stable pagination in a reader containing this unit
+  - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 34; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) 31,37,50,53,54,55; page: pending stable pagination in a reader containing this unit
 
 ## TERM-INCOMPLETENESS-GODEL-INDEPENDENCE
 
@@ -2863,6 +2893,8 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
 - Locations:
   - OLP-0278; Overview of Incompleteness Results; `content/incompleteness/introduction/overview.tex` source line(s) 18,21,28,41,42,44,46,80,93; `ps-Arab-PK/content/incompleteness/introduction/overview.tex` target line(s) 11,17,20,28,40,48,93; page: pending stable pagination in a reader containing this unit
   - OLP-0279; Undecidability and Incompleteness; `content/incompleteness/introduction/undecidability.tex` source line(s) 13,68,121,134; `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex` target line(s) 13,73,137; page: pending stable pagination in a reader containing this unit
+  - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 28; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) 26; page: pending stable pagination in a reader containing this unit
+  - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 64; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) 61,66; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SYNTAX-GODEL-CODING
 
@@ -2881,6 +2913,7 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
   - OLP-0286; \usetoken{P}{derivation} in $\Log{LK}$; `content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` source line(s) 27,79,80,83,85,104,133,255,262; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex` target line(s) 27,79,81,84,85,101,108,140,177,178,179,241,269; page: pending stable pagination in a reader containing this unit
   - OLP-0288; Axiomatic \usetoken{P}{derivation}; `content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` source line(s) 34,48,83,85,96,120,121,143,173,190,192,210; `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex` target line(s) 34,48,92,119,134,145,167,176,195,216; page: pending stable pagination in a reader containing this unit
   - OLP-0291; Functions Representable in $\Th{Q}$ are Computable; `content/incompleteness/representability-in-q/representable-comp.tex` source line(s) 74,91,99; `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex` target line(s) 79,98,106; page: pending stable pagination in a reader containing this unit
+  - OLP-0302; Introduction; `content/incompleteness/theories-computability/introduction.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/introduction.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
 
 ## TERM-SYNTAX-SUBSTITUTION-PREDICATES
 
@@ -2960,7 +2993,64 @@ This view contains 158 high-priority entries from the complete 409-entry decisio
 - Alternatives: محدود کمیت ټاکونکی; ډېلټا-صفر او سيګما-يو فورمول; د سيګما-يو تکميل
 - Please double-check: In Pakistani Pashto mathematical prose, is «محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا» the clearest conventional rendering of “bounded quantifier / Delta-0 formula / Sigma-1 formula / Pi-1 formula / Sigma-1 completeness” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Locations:
-  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 1,3,10,12,16,17,19,21,25,29,36,40,41,43,44,97,164,178,191,201,202,209,248,250,256,262,266,268,279,283,284,289,295; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 10,19,25,29,37,178,208,251,262,263,269,274; page: pending stable pagination in a reader containing this unit
+  - OLP-0300; \texorpdfstring{$\Sigma_1$}{Sigma-1} completeness; `content/incompleteness/representability-in-q/sigma1-completeness.tex` source line(s) 1,3,10,12,16,17,19,21,25,29,36,40,41,43,44,97,164,178,191,201,202,209,248,250,256,262,266,268,279,283,284,289,295; `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex` target line(s) 10,19,25,29,37,178,208,251,262,263,269,274,276; page: pending stable pagination in a reader containing this unit
+
+## TERM-THEORY-EFFECTIVE-PROPERTIES
+
+- Source term or sense: deductively closed theory / computably axiomatizable theory / complete theory / decidable theory / true arithmetic
+- Choice: د اشتقاق له مخې تړلې تيوري / د محاسبوي بديهي اصولو لرونکې تيوري / بشپړه تيوري / د پرېکړې وړ تيوري / رښتينی حساب
+- Why provisional: theory, proof, axiom, function and countability concepts are supported by regional sources; the combined effective-property compounds remain provisional
+- Rationale: A theory contains every deductive consequence of its sentences. Computable axiomatizability concerns an effective axiom presentation; completeness decides each sentence syntactically; decidability supplies a terminating membership test. True arithmetic is the complete theory of sentences true in the standard natural-number structure and must not be conflated with an axiomatized calculus.
+- Alternatives: استنتاجي تړلې تيوري; محاسبوي بديهي کېدونکې تيوري; رښتينی حسابي تيوري
+- Please double-check: In Pakistani Pashto mathematical prose, is «د اشتقاق له مخې تړلې تيوري / د محاسبوي بديهي اصولو لرونکې تيوري / بشپړه تيوري / د پرېکړې وړ تيوري / رښتينی حساب» the clearest conventional rendering of “deductively closed theory / computably axiomatizable theory / complete theory / decidable theory / true arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0301; inc; `content/incompleteness/theories-computability/theories-computability.tex` source line(s) 25; `ps-Arab-PK/content/incompleteness/theories-computability/theories-computability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0302; Introduction; `content/incompleteness/theories-computability/introduction.tex` source line(s) 31; `ps-Arab-PK/content/incompleteness/theories-computability/introduction.tex` target line(s) 31; page: pending stable pagination in a reader containing this unit
+  - OLP-0303; $\Th{Q}$ is \printtoken{S}{c.e.}-Complete; `content/incompleteness/theories-computability/q-is-ce.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 75,80; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 77,81; page: pending stable pagination in a reader containing this unit
+  - OLP-0306; \printtoken{S}{axiomatizable} Theories; `content/incompleteness/theories-computability/computably-axiomatizable.tex` source line(s) 3,11,13,18,21; `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0307; \printtoken{S}{axiomatizable} Complete Theories are Decidable; `content/incompleteness/theories-computability/complete-decidable.tex` source line(s) 11,17; `ps-Arab-PK/content/incompleteness/theories-computability/complete-decidable.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) 11,16,31; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) 37,38,40; page: pending stable pagination in a reader containing this unit
+  - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) 27; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) 28; page: pending stable pagination in a reader containing this unit
+  - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 41; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-OMEGA-CONSISTENCY-EXTENSIONS
+
+- Source term or sense: omega-consistent / consistent extension / refutable sentence / theory consistent with Q
+- Choice: اوميګا-سازګاره / سازګاره غځونه / ردېدونکې جمله / له Q سره سازګاره تيوري
+- Why provisional: consistency, contradiction, proof and natural-number concepts are supported by regional sources; omega-consistency and extension compounds remain provisional
+- Rationale: Omega-consistency rules out proving an existential sentence while refuting every numeral instance. Ordinary consistency only rules out proving a sentence together with its negation. An extension includes the earlier theory; being consistent with Q requires only consistency of their union and does not require inclusion.
+- Alternatives: ω-سازګاري; اوميګا-سازواري; له Q سره ګډه سازګاري
+- Please double-check: In Pakistani Pashto mathematical prose, is «اوميګا-سازګاره / سازګاره غځونه / ردېدونکې جمله / له Q سره سازګاره تيوري» the clearest conventional rendering of “omega-consistent / consistent extension / refutable sentence / theory consistent with Q” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0304; $\omega$-Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` source line(s) 11; `ps-Arab-PK/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 11; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 11; page: pending stable pagination in a reader containing this unit
+  - OLP-0308; $\Th{Q}$ has no Complete, Consistent, !!^{axiomatizable}   Extensions; `content/incompleteness/theories-computability/first-incompleteness.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/first-incompleteness.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+  - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) line pending; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) line pending; page: pending stable pagination in a reader containing this unit
+
+## TERM-COMPUTABLE-INSEPARABILITY
+
+- Source term or sense: universal computable relation / computable separator / computably inseparable / refutable theory complement
+- Choice: نړيواله محاسبه کېدونکې اړيکه / محاسبه کېدونکې بېلوونکې / په محاسبوي ډول نه بېلېدونکي / د ردېدونکو جملو سټ
+- Why provisional: relation, separation, complement, proof and computability roles are supported by regional sources; the exact effective inseparability compounds remain provisional
+- Rationale: A universal computable relation would uniformly realize every unary computable relation by fixing one parameter, which diagonalization refutes. A separator contains the provable sentences while excluding the refutable ones. Computable inseparability means no computable separator exists, a stronger fact than mere disjointness.
+- Alternatives: محاسبوي نه بېلېدنه; محاسبه کېدونکے بېلوونکی سټ; نړيواله محاسبوي اړيکه
+- Please double-check: In Pakistani Pashto mathematical prose, is «نړيواله محاسبه کېدونکې اړيکه / محاسبه کېدونکې بېلوونکې / په محاسبوي ډول نه بېلېدونکي / د ردېدونکو جملو سټ» the clearest conventional rendering of “universal computable relation / computable separator / computably inseparable / refutable theory complement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0305; Consistent Extensions of $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` source line(s) 25,32,49; `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex` target line(s) 25,32; page: pending stable pagination in a reader containing this unit
+  - OLP-0309; Sentences Provable and Refutable in $\Th{Q}$ are Computably   Inseparable; `content/incompleteness/theories-computability/inseparability.tex` source line(s) 18,19,22,27,31; `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex` target line(s) 18,23,33; page: pending stable pagination in a reader containing this unit
+  - OLP-0310; Theories Consistent with $\Th{Q}$ are Undecidable; `content/incompleteness/theories-computability/consis-with-q.tex` source line(s) 31,45,46; `ps-Arab-PK/content/incompleteness/theories-computability/consis-with-q.tex` target line(s) 48; page: pending stable pagination in a reader containing this unit
+
+## TERM-INTERPRETABILITY-UNDECIDABILITY
+
+- Source term or sense: interpret a language or theory / interpretable / standard interpretation / undecidability boundary
+- Choice: ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله
+- Why provisional: interpretation, domain, relation, function and proof concepts are supported by regional sources; theory-interpretability and boundary compounds remain provisional
+- Rationale: An interpretation defines one language's domain and nonlogical symbols inside another and transfers the relevant axioms. Standard interpretation here means the usual natural-number structure. The final language-signature bounds distinguish undecidable binary expressive power from the decidable monadic fragment and must remain exact.
+- Alternatives: د ژبې تعبير; په تيوري کښې تمثيلېدنه; معياري مدل; د پرېکړه‌وړتيا پوله
+- Please double-check: In Pakistani Pashto mathematical prose, is «ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله» the clearest conventional rendering of “interpret a language or theory / interpretable / standard interpretation / undecidability boundary” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Locations:
+  - OLP-0311; Theories in which $\Th{Q}$ is Interpretable are Undecidable; `content/incompleteness/theories-computability/interpretability.tex` source line(s) 11,14,22,23,24,30,32,33,37,42,45,49,54,64; `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex` target line(s) 11,14,61,63,66; page: pending stable pagination in a reader containing this unit
 
 ## DEC-REL-I
 

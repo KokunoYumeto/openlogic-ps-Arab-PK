@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 300 of 722 source units are translated drafts. This log contains 165 terminology entries and 244 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 311 of 722 source units are translated drafts. This log contains 169 terminology entries and 252 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1488,6 +1488,42 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: محدود کمیت ټاکونکی; ډېلټا-صفر او سيګما-يو فورمول; د سيګما-يو تکميل
 - Review question: In Pakistani Pashto mathematical prose, is «محدود کمیت ايښوونکی / ډېلټا-صفر فارمول / سيګما-يو فارمول / پاي-يو فارمول / د سيګما-يو بشپړتيا» the clearest conventional rendering of “bounded quantifier / Delta-0 formula / Sigma-1 formula / Pi-1 formula / Sigma-1 completeness” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous owner terminology decision during the complete representability-in-Q source and language review
+
+## TERM-THEORY-EFFECTIVE-PROPERTIES
+
+- Type: terminology
+- Choice: د اشتقاق له مخې تړلې تيوري / د محاسبوي بديهي اصولو لرونکې تيوري / بشپړه تيوري / د پرېکړې وړ تيوري / رښتينی حساب
+- Uncertainty: theory, proof, axiom, function and countability concepts are supported by regional sources; the combined effective-property compounds remain provisional
+- Alternatives: استنتاجي تړلې تيوري; محاسبوي بديهي کېدونکې تيوري; رښتينی حسابي تيوري
+- Review question: In Pakistani Pashto mathematical prose, is «د اشتقاق له مخې تړلې تيوري / د محاسبوي بديهي اصولو لرونکې تيوري / بشپړه تيوري / د پرېکړې وړ تيوري / رښتينی حساب» the clearest conventional rendering of “deductively closed theory / computably axiomatizable theory / complete theory / decidable theory / true arithmetic” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
+
+## TERM-OMEGA-CONSISTENCY-EXTENSIONS
+
+- Type: terminology
+- Choice: اوميګا-سازګاره / سازګاره غځونه / ردېدونکې جمله / له Q سره سازګاره تيوري
+- Uncertainty: consistency, contradiction, proof and natural-number concepts are supported by regional sources; omega-consistency and extension compounds remain provisional
+- Alternatives: ω-سازګاري; اوميګا-سازواري; له Q سره ګډه سازګاري
+- Review question: In Pakistani Pashto mathematical prose, is «اوميګا-سازګاره / سازګاره غځونه / ردېدونکې جمله / له Q سره سازګاره تيوري» the clearest conventional rendering of “omega-consistent / consistent extension / refutable sentence / theory consistent with Q” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
+
+## TERM-COMPUTABLE-INSEPARABILITY
+
+- Type: terminology
+- Choice: نړيواله محاسبه کېدونکې اړيکه / محاسبه کېدونکې بېلوونکې / په محاسبوي ډول نه بېلېدونکي / د ردېدونکو جملو سټ
+- Uncertainty: relation, separation, complement, proof and computability roles are supported by regional sources; the exact effective inseparability compounds remain provisional
+- Alternatives: محاسبوي نه بېلېدنه; محاسبه کېدونکے بېلوونکی سټ; نړيواله محاسبوي اړيکه
+- Review question: In Pakistani Pashto mathematical prose, is «نړيواله محاسبه کېدونکې اړيکه / محاسبه کېدونکې بېلوونکې / په محاسبوي ډول نه بېلېدونکي / د ردېدونکو جملو سټ» the clearest conventional rendering of “universal computable relation / computable separator / computably inseparable / refutable theory complement” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
+
+## TERM-INTERPRETABILITY-UNDECIDABILITY
+
+- Type: terminology
+- Choice: ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله
+- Uncertainty: interpretation, domain, relation, function and proof concepts are supported by regional sources; theory-interpretability and boundary compounds remain provisional
+- Alternatives: د ژبې تعبير; په تيوري کښې تمثيلېدنه; معياري مدل; د پرېکړه‌وړتيا پوله
+- Review question: In Pakistani Pashto mathematical prose, is «ژبه يا تيوري تفسيرول / تفسيرېدونکې / معياري تفسير / د ناپرېکړتيا پوله» the clearest conventional rendering of “interpret a language or theory / interpretable / standard interpretation / undecidability boundary” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous owner terminology decision during the complete theories-and-computability source and language review
 
 ## DEC-OLFUN-001
 
@@ -3630,6 +3666,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLCMP-090 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous owner semantic trace against the complete representability-in-Q batch and frozen source bytes
+
+## DEC-OLCMP-091
+
+- Type: source-correction
+- Choice: uses the representing formula A_T in both the Q-provability statement and the coded reduction sentence
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-091 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-092
+
+- Type: source-correction
+- Choice: applies the metalinguistic relation S to n while retaining numeral n only inside its representing formula
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-092 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-093
+
+- Type: source-correction
+- Choice: uses B for the sentence bound by the set builder while preserving A as the fixed computable axiom set
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-093 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-094
+
+- Type: source-correction
+- Choice: applies the metalinguistic relation S to n while retaining numeral n only inside its representing formula
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-094 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-095
+
+- Type: source-correction
+- Choice: codes the one-free-variable formula D_S(u) with the chapter's established Gödel-number notation
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-095 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-096
+
+- Type: source-correction
+- Choice: states Presburger's decidability result for sentences true in the standard interpretation of arithmetic
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-096 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous owner semantic trace against the complete theories-and-computability batch and frozen source bytes
+
+## DEC-OLCMP-097
+
+- Type: source-correction
+- Choice: supplies A(x) as the required second argument to the bounded existential macro while preserving the formula's mathematical content
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-097 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous adoption of a bounded manager replay after B056; folded into B057 without changing the frozen public reader
+
+## DEC-OLCMP-098
+
+- Type: source-correction
+- Choice: uses the documented optional variable and matrix arguments for the long existential macro while preserving the formula's mathematical content
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLCMP-098 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous adoption of a bounded manager replay after B056; folded into B057 without changing the frozen public reader
 
 ## DEC-REL-I
 
