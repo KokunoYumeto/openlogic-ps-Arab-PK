@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0335; four B060 source repairs active; OLSOL-004 and OLSOL-005 retracted after exact macro/ellipsis review",
-  "adopted_utc": "2026-09-25T04:38:04.354803+00:00",
+  "status": "adopted through OLP-0340; six B061 source repairs disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-25T05:10:09.863688+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6355,6 +6355,276 @@
       ],
       "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
       "upstream_reporting": "new source issue; manager report pending"
+    },
+    {
+      "id": "OLSOL-007",
+      "unit_id": "OLP-0339",
+      "classification": "finite-subset-satisfies-claimed-infinity-test",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "target_line_1based": 31,
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The displayed Inf(X) test omits u(X) subseteq X. The target adds this closure condition and balances the formula's final delimiters.",
+      "reason": "The displayed Inf(X) test omits u(X) subseteq X. The target adds this closure condition and balances the formula's final delimiters.",
+      "counterexample": "In a two-element domain, take X as a singleton, let u swap the two elements, and choose the element of X omitted by u(X). The source test is true though X is finite.",
+      "formula_policy": "The global injection remains; a closure conjunct for X is added. A finite X then cannot have an omitted member, whereas any Dedekind-infinite X admits the required self-map extended by identity outside X.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])]])]\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])])])]\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:31"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLSOL-008",
+      "unit_id": "OLP-0339",
+      "classification": "countability-test-excludes-empty-and-forces-whole-domain",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "target_line_1based": 47,
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The displayed Count(X) test excludes the empty set and requires X=Y for every successor-closed Y. The target adds the empty case, asks X subseteq Y, and balances the delimiters.",
+      "reason": "The displayed Count(X) test excludes the empty set and requires X=Y for every successor-closed Y. The target adds the empty case, asks X subseteq Y, and balances the delimiters.",
+      "counterexample": "For every nonempty proper X, Y=Domain satisfies the source antecedent and refutes X=Y. The empty set is enumerable but fails the source's X(z) seed requirement.",
+      "formula_policy": "The least seed-containing successor-closed set must contain X; X itself is closed, so this characterizes a finite or countable orbit. The empty set is handled separately.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y])]])\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\lnot\\lexists[x][X(x)]\\lor{}\\\\\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX\\subseteqY)])]]\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:47"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLSOL-009",
+      "unit_id": "OLP-0339",
+      "classification": "aleph-one-condition-tests-all-subsets-including-itself",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "target_line_1based": 73,
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source's Aleph_1 formula applies the countable-or-finite condition to X itself and excludes only aleph-zero X. The target requires X uncountable and tests only subsets of strictly smaller cardinality.",
+      "reason": "The source's Aleph_1 formula applies the countable-or-finite condition to X itself and excludes only aleph-zero X. The target requires X uncountable and tests only subsets of strictly smaller cardinality.",
+      "counterexample": "For an aleph-one X, choose Y=X; the source requires X finite or aleph-zero and fails. A finite X satisfies the source formula, so it also gives a false positive.",
+      "formula_policy": "Under the surrounding classical cardinal-arithmetic convention, the corrected criterion says X is uncountable and every subset with cardinality strictly below |X| is finite or aleph-zero.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][(Y\\subseteqX\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\lnot\\fn{Aleph}_0(X)$"
+        ],
+        "target_only": [
+          "$\\fn{Aleph_1}(X)\\ident\\lnot\\fn{Count}(X)\\land\\lforall[Y][((Y\\subseteqX\\land\\lnot\\cardeq{X}{Y})\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:73"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLSOL-010",
+      "unit_id": "OLP-0340",
+      "classification": "wrong-variable-in-continuum-code-proof",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "target_line_1based": 136,
+      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
+      "reason": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
+      "counterexample": "Z in the displayed Pow condition is bound locally to range over subsets of X; it is not the fixed set whose entire power set is encoded.",
+      "formula_policy": "Only the prose's mathematical variable changes from Z to X; the Cont definition remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$s(Z)$"
+        ],
+        "target_only": [
+          "$s(X)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:136"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLSOL-011",
+      "unit_id": "OLP-0340",
+      "classification": "continuum-domain-equivalence-only-proves-lower-bound",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "target_line_1based": 149,
+      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
+      "reason": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
+      "counterexample": "Take a domain larger than the continuum, a countable X, a continuum-sized Y coding P(X), and u as the identity on the whole domain. The source right-hand side holds while |Domain| differs from |Real|.",
+      "formula_policy": "Cont(Y) fixes |Y| at continuum; the added image-in-Y, injection, and surjection clauses make u a bijection Domain to Y.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\Sat{M}{\\lexists[Y][(\\fn{Cont}(Y)\\land{}\\\\\\lexists[u][(\\lforall[x][Y(u(x))]\\land{}\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]}.\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:149"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLSOL-012",
+      "unit_id": "OLP-0340",
+      "classification": "unclosed-outer-implication-in-power-code-formula",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "target_line_1based": 74,
+      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
+      "reason": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
+      "counterexample": "The source opens the second conjunct with (Y(x) lif but ends with only the inner Codes implication's closing parenthesis and two quantifier brackets.",
+      "formula_policy": "A single closing parenthesis is inserted before the outer universal quantifier's closing bracket.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)]]\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)])]\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+      "audit_artifacts": [
+        "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64",
+        "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:74"
+      ],
+      "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -6362,7 +6632,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run cumulative B057 QA and canonical replay with the OLP-0300 segment rebinds, then advance to OLP-0312 without altering prior release bytes.",
+  "next_action": "Advance OLP-0341 onward and report checked source findings to manager; keep frozen source unchanged.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

@@ -2273,3 +2273,57 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
 
 OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; see `evidence/SOURCE_AUDIT_RETRACTIONS.jsonl`. Their historical records remain in git history, outside the active correction count.
+
+## OLSOL-007
+
+- Unit: `OLP-0339`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29` (SHA-256 `2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:31` (SHA-256 `16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570`).
+- Correction: The displayed Inf(X) test omits u(X) subseteq X. The target adds this closure condition and balances the formula's final delimiters.
+- Counterexample or exact defect: In a two-element domain, take X as a singleton, let u swap the two elements, and choose the element of X omitted by u(X). The source test is true though X is finite.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-008
+
+- Unit: `OLP-0339`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40` (SHA-256 `2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:47` (SHA-256 `16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570`).
+- Correction: The displayed Count(X) test excludes the empty set and requires X=Y for every successor-closed Y. The target adds the empty case, asks X subseteq Y, and balances the delimiters.
+- Counterexample or exact defect: For every nonempty proper X, Y=Domain satisfies the source antecedent and refutes X=Y. The empty set is enumerable but fails the source's X(z) seed requirement.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-009
+
+- Unit: `OLP-0339`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57` (SHA-256 `2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:73` (SHA-256 `16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570`).
+- Correction: The source's Aleph_1 formula applies the countable-or-finite condition to X itself and excludes only aleph-zero X. The target requires X uncountable and tests only subsets of strictly smaller cardinality.
+- Counterexample or exact defect: For an aleph-one X, choose Y=X; the source requires X finite or aleph-zero and fails. A finite X satisfies the source formula, so it also gives a false positive.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-010
+
+- Unit: `OLP-0340`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120` (SHA-256 `386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:136` (SHA-256 `cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15`).
+- Correction: The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).
+- Counterexample or exact defect: Z in the displayed Pow condition is bound locally to range over subsets of X; it is not the fixed set whose entire power set is encoded.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-011
+
+- Unit: `OLP-0340`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129` (SHA-256 `386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:149` (SHA-256 `cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15`).
+- Correction: The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.
+- Counterexample or exact defect: Take a domain larger than the continuum, a countable X, a continuum-sized Y coding P(X), and u as the identity on the whole domain. The source right-hand side holds while |Domain| differs from |Real|.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLSOL-012
+
+- Unit: `OLP-0340`.
+- Frozen source: `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64` (SHA-256 `386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990`).
+- Pashto target: `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:74` (SHA-256 `cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15`).
+- Correction: The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.
+- Counterexample or exact defect: The source opens the second conjunct with (Y(x) lif but ends with only the inner Codes implication's closing parenthesis and two quantifier brackets.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

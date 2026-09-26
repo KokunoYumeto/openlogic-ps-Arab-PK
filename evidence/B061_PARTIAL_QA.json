@@ -1,0 +1,132 @@
+{
+  "translated_partial_units": 5,
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0336",
+      "source_path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "target_sha256": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0337",
+      "source_path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "target_sha256": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0338",
+      "source_path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "target_sha256": "ce8e18e590de59babc15f69b222b43646fe0193cd8c19d6a81a48cd19b4a37c9",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0339",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])]])]\\end{multline*}",
+        "\\begin{multline*}\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y])]])\\end{multline*}",
+        "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][(Y\\subseteqX\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\lnot\\fn{Aleph}_0(X)$"
+      ],
+      "math_target_only": [
+        "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])])])]\\end{multline*}",
+        "\\begin{multline*}\\lnot\\lexists[x][X(x)]\\lor{}\\\\\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX\\subseteqY)])]]\\end{multline*}",
+        "$\\fn{Aleph_1}(X)\\ident\\lnot\\fn{Count}(X)\\land\\lforall[Y][((Y\\subseteqX\\land\\lnot\\cardeq{X}{Y})\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]$"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0340",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$s(Z)$",
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)]]\\end{multline*}",
+        "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}"
+      ],
+      "math_target_only": [
+        "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)])]\\end{multline*}",
+        "$s(X)$",
+        "\\begin{multline*}\\Sat{M}{\\lexists[Y][(\\fn{Cont}(Y)\\land{}\\\\\\lexists[u][(\\lforall[x][Y(u(x))]\\land{}\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]}.\\end{multline*}"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B060-SECOND-ORDER-METATHEORY",
-  "status": "OLP-0330 through OLP-0335 source-reviewed; four active B060 repairs; two false compactness claims retracted",
+  "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+  "status": "OLP-0336 through OLP-0340 source-reviewed with six disclosed B061 corrections; frozen English source unchanged",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7308,6 +7308,80 @@
         "TERM-SOL-DEDEKIND-COUNTABILITY"
       ],
       "scope": "Count includes finite models; Count and Inf together give denumerable but not nonenumerable models."
+    },
+    "OLP-0336": {
+      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+      ],
+      "terms": [
+        "TERM-POWERSET",
+        "TERM-CONTINUUM",
+        "TERM-SOL-SET-CODING"
+      ],
+      "scope": "The editorial warning that definitions and statements may be incomplete or wrong is preserved; power-set coding and continuum terms are descriptive, not claims of native attestation."
+    },
+    "OLP-0337": {
+      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+      ],
+      "terms": [
+        "TERM-POWERSET",
+        "TERM-CARDINAL-ORDER",
+        "TERM-SOL-SET-CODING"
+      ],
+      "scope": "Second-order quantification expresses set properties without a primitive membership predicate; unions, intersections, subset comparison and Cantor's theorem remain distinct claims."
+    },
+    "OLP-0338": {
+      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P87-CANTOR-BERNSTEIN"
+      ],
+      "terms": [
+        "TERM-SET-SIZE",
+        "TERM-CARDINAL-ORDER",
+        "TERM-INJECTIVE"
+      ],
+      "scope": "Subset, equality, nonemptiness, no-larger and equinumerous formulas retain their separate senses; Schröder–Bernstein is stated for arbitrary sets."
+    },
+    "OLP-0339": {
+      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER"
+      ],
+      "terms": [
+        "TERM-SOL-DEDEKIND-COUNTABILITY",
+        "TERM-SOL-ALEPH-ONE-CONTINUUM",
+        "TERM-ENUMERABLE",
+        "TERM-FINITE"
+      ],
+      "scope": "Inf(X) requires a self-map of X, Count(X) includes the empty set and the least generated orbit, and the aleph-one criterion limits only strictly smaller cardinalities; three exact corrections are disclosed."
+    },
+    "OLP-0340": {
+      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL"
+      ],
+      "terms": [
+        "TERM-SOL-SET-CODING",
+        "TERM-SOL-ALEPH-ONE-CONTINUUM",
+        "TERM-CONTINUUM",
+        "TERM-POWERSET"
+      ],
+      "scope": "Binary-relation fibers code subsets without third-order syntax. Pow permits duplicate codes, Cont forbids them, and a separate bijection fixes exact domain size; three exact corrections are disclosed."
     }
   },
   "semantic_review": [
@@ -10208,6 +10282,36 @@
       "passage": "Löwenheim–Skolem",
       "reverse_paraphrase": "The downward failure uses nonenumerable domains and the upward failure uses Count and Inf together.",
       "finding": "Finite-inclusive countability, denumerability and nonenumerability remain distinct."
+    },
+    {
+      "unit_id": "OLP-0336",
+      "passage": "editorial status",
+      "reverse_paraphrase": "The chapter states coding and continuum results but warns its proofs are incomplete and its definitions may be wrong.",
+      "finding": "The Pashto editorial notice preserves the caution and does not upgrade conjectural claims to settled proofs."
+    },
+    {
+      "unit_id": "OLP-0337",
+      "passage": "second-order set expressibility",
+      "reverse_paraphrase": "Quantification over predicates and functions permits set-theoretic statements without a primitive membership predicate.",
+      "finding": "The translation retains the logical versus nonlogical vocabulary distinction."
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "cardinal comparison and Schröder–Bernstein",
+      "reverse_paraphrase": "Injection witnesses no-larger, bijection witnesses equinumerosity, and mutual injection yields equinumerosity.",
+      "finding": "All five displayed abbreviations and the arbitrary-set theorem remain distinct."
+    },
+    {
+      "unit_id": "OLP-0339",
+      "passage": "Inf, Count and aleph-one tests",
+      "reverse_paraphrase": "Inf needs an injective self-map of the chosen set missing one member; Count includes the empty set or a generated orbit; aleph-one is the least uncountable cardinal.",
+      "finding": "Finite and whole-domain counterexamples establish three source defects; the target discloses exact repairs."
+    },
+    {
+      "unit_id": "OLP-0340",
+      "passage": "power-set coding and exact continuum size",
+      "reverse_paraphrase": "Binary-relation fibers code subsets. Pow covers them, Cont codes them uniquely, and equality of domain size needs a bijection to a continuum-sized code set.",
+      "finding": "The wrong proof variable, unclosed implication and lower-bound-only final formula receive separate disclosed repairs."
     }
   ]
 }

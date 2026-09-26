@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۳۷ پرېکړو د کتنې لار دے: ۱۷۸ اصطلاحات، ۲۵۳ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۳۵ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۴۵ پرېکړو د کتنې لار دے: ۱۸۰ اصطلاحات، ۲۵۹ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۴۰ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -63,7 +63,7 @@
 - اصلي مفهوم: `power set`؛ غوره شوې پښتو بڼه: **د فرعي سټونو سټ**.
 - د کتنې وړ بديلونه: تواني سټ؛ د قوت سټ.
 - کتل شوي شاهدان: `AF-MOE-P11-SUBSET` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 11)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1).
-- د متن ځای: `OLP-0006`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/subsets.tex#L10)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/subsets.tex#L10)؛ نور 7 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0006`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/subsets.tex#L10)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/subsets.tex#L10)؛ نور 10 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-STRING — توريز تسلسل / لړۍ
@@ -79,7 +79,7 @@
 - اصلي مفهوم: `continuum`؛ غوره شوې پښتو بڼه: **پيوستار**.
 - د کتنې وړ بديلونه: کانټينوم؛ مسلسل مقدار.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1).
-- د متن ځای: `OLP-0007`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/important-sets.tex#L22)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/important-sets.tex#L24)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0007`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets/important-sets.tex#L22)؛ [اصلي متن](upstream/content/sets-functions-relations/sets/important-sets.tex#L24)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-UNION — اتحاد
@@ -359,7 +359,7 @@
 - اصلي مفهوم: `injective / injection`؛ غوره شوې پښتو بڼه: **يو پر يو / يو پر يو تابع**.
 - د کتنې وړ بديلونه: انجکټيف؛ ساده مپینګ.
 - کتل شوي شاهدان: `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-BUKOVSKY-P28-INVERSES-TYPES` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 28)؛ `AF-BUKOVSKY-P87-CANTOR-BERNSTEIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 87).
-- د متن ځای: `OLP-0022`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/function-kinds.tex#L51)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/function-kinds.tex#L54)؛ نور 18 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0022`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/function-kinds.tex#L51)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/function-kinds.tex#L54)؛ نور 19 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-SURJECTIVE — پر هدف سټ بشپړه / پر هدف سټ بشپړه تابع
@@ -423,7 +423,7 @@
 - اصلي مفهوم: `enumerable / countable / uncountable`؛ غوره شوې پښتو بڼه: **د شمېر وړ / د شمېر نۀ وړ**.
 - د کتنې وړ بديلونه: شمېرېدونکی؛ قابل شمار.
 - کتل شوي شاهدان: `AF-NIAZMAN-P12-COUNTABLE-IFF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 12)؛ `AF-NIAZMAN-P33-COUNTABLE-SYNTAX` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L11)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)؛ نور 25 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L11)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex)؛ نور 26 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-ENUMERATION — شمېرنه / لړ / په لړ کښې راوړل
@@ -439,7 +439,7 @@
 - اصلي مفهوم: `size / equinumerous`؛ غوره شوې پښتو بڼه: **اندازه / همشمېره**.
 - د کتنې وړ بديلونه: کميت؛ هم ځواک.
 - کتل شوي شاهدان: `AF-MOE-P10-EQUINUMEROSITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 10)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 77)؛ `AF-BUKOVSKY-P78-CARDINAL-ORDER` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 78)؛ `AF-BUKOVSKY-P133-CANTOR-THEOREM` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 133)؛ `AF-BUKOVSKY-P87-CANTOR-BERNSTEIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 87).
-- د متن ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L8)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L8)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L8)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L8)؛ نور 7 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-FINITE — متناهي / نامتناهي
@@ -447,7 +447,7 @@
 - اصلي مفهوم: `finite/infinite`؛ غوره شوې پښتو بڼه: **متناهي / نامتناهي**.
 - د کتنې وړ بديلونه: محدود او نامحدود؛ لاتناهي د نامتناهي پر ځاے.
 - کتل شوي شاهدان: `AF-NIAZMAN-P33-COUNTABLE-SYNTAX` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0003`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets-functions-relations-complete.tex#L10)؛ [اصلي متن](upstream/content/sets-functions-relations/sets-functions-relations-complete.tex#L26)؛ نور 23 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0003`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/sets-functions-relations-complete.tex#L10)؛ [اصلي متن](upstream/content/sets-functions-relations/sets-functions-relations-complete.tex#L26)؛ نور 24 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-IFF — هله او يوازې هله ... چې
@@ -535,7 +535,7 @@
 - اصلي مفهوم: `no larger than / strictly smaller (cardinal comparison)`؛ غوره شوې پښتو بڼه: **تر ... لوے نۀ / تر ... کوچنے**.
 - د کتنې وړ بديلونه: د بوج له مخې کوچنی يا مساوي؛ د شمېر له مخې کم.
 - کتل شوي شاهدان: `AF-BUKOVSKY-P78-CARDINAL-ORDER` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 78)؛ `AF-BUKOVSKY-P133-CANTOR-THEOREM` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 133)؛ `AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 77)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-BUKOVSKY-P87-CANTOR-BERNSTEIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 87).
-- د متن ځای: `OLP-0036`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex#L16)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0036`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex#L16)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-NUMBERSETS — طبيعي / صحيح / ناطق / غير ناطق / حقيقي عددونه
@@ -1407,7 +1407,7 @@
 - اصلي مفهوم: `Dedekind infinite / countable including finite / denumerable / orbit of an element`؛ غوره شوې پښتو بڼه: **د ډېدېکېند په معنا نامتناهي / د شمېر وړ، د متناهي په ګډون / د شمېر وړ نامتناهي / د يوه غړي تکراري تابعې لړۍ**.
 - د کتنې وړ بديلونه: ډېډېکېنډ نامتناهي؛ شمېرېدونکی سټ؛ د شمېر وړ نامحدود سټ.
 - کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99).
-- د متن ځای: `OLP-0329`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ [اصلي متن](upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0329`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ [اصلي متن](upstream/content/second-order-logic/syntax-and-semantics/inf-count.tex#L11)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-SOL-SECOND-ORDER-INDUCTION — د دويمې درجې پېانو حساب / د استقرا بديهي اصل / معياري مدل
@@ -1432,6 +1432,22 @@
 - د کتنې وړ بديلونه: کوز/بره لوېنهايم--سکولم؛ شمېرېدونکی او ناشمېرېدونکی؛ نامتناهي شمېر وړ.
 - کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 111).
 - د متن ځای: `OLP-0331`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/metatheory/introduction.tex#L35)؛ [اصلي متن](upstream/content/second-order-logic/metatheory/introduction.tex#L34)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-SOL-SET-CODING — د فرعي سټونو د سټ کوډول / د فرعي سټونو سټ
+
+- اصلي مفهوم: `second-order coding of sets of subsets / power set`؛ غوره شوې پښتو بڼه: **د فرعي سټونو د سټ کوډول / د فرعي سټونو سټ**.
+- د کتنې وړ بديلونه: د سټونو د سټ کوډونه؛ د اړيکې د مقطع کوډ؛ د درېيمې درجې بې‌واسطې کميت.
+- کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P133-CANTOR-THEOREM` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 133)؛ `AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 77).
+- د متن ځای: `OLP-0336`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-SOL-ALEPH-ONE-CONTINUUM — الف‌يو / د پيوستار شمېرنيزه اندازه / د پيوستار فرضيه
+
+- اصلي مفهوم: `aleph-one / cardinality of the continuum / continuum hypothesis`؛ غوره شوې پښتو بڼه: **الف‌يو / د پيوستار شمېرنيزه اندازه / د پيوستار فرضيه**.
+- د کتنې وړ بديلونه: د الف‌يو اندازه؛ د پيوستار ځواک؛ د پيوستار حدس.
+- کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P78-CARDINAL-ORDER` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 78)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 111).
+- د متن ځای: `OLP-0339`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L59)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L47)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -2956,6 +2972,42 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLSOL-007
+
+- کره پرتله: `OLP-0339`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L31)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-008
+
+- کره پرتله: `OLP-0339`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L47)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-009
+
+- کره پرتله: `OLP-0339`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L73)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-010
+
+- کره پرتله: `OLP-0340`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex#L136)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-011
+
+- کره پرتله: `OLP-0340`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex#L149)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLSOL-012
+
+- کره پرتله: `OLP-0340`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex#L74)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex)؛ د سرچينې کره نښه `content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
@@ -2990,4 +3042,4 @@
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0335 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0340 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

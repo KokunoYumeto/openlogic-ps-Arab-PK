@@ -1,0 +1,82 @@
+% Part: second-order-logic
+% Chapter: sol-and-sets
+% Section: comparing-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{set}{cmp}
+
+\olsection{د سټونو پرتله کول}
+
+\begin{prop}
+!!{formula} $\lforall[x][(X(x) \lif Y(x))]$ د فرعي سټ اړيکه
+تعريفوي؛ يعنې $\Sat{M}{\lforall[x][(X(x) \lif Y(x))]}[s]$ هله او
+يوازې هله چې $s(X) \subseteq s(Y)$۔
+\end{prop}
+
+\begin{prop}
+!!{formula} $\lforall[x][(X(x) \liff Y(x))]$ د سټونو د يووالي
+اړيکه تعريفوي؛ يعنې $\Sat{M}{\lforall[x][(X(x) \liff Y(x))]}[s]$
+هله او يوازې هله چې $s(X) = s(Y)$۔
+\end{prop}
+
+\begin{prop}
+!!{formula} $\lexists[x][X(x)]$ د ناتشوالي خاصيت تعريفوي؛ يعنې
+$\Sat{M}{\lexists[x][X(x)]}[s]$ هله او يوازې هله چې $s(X) \neq
+\emptyset$۔
+\end{prop}
+
+سټ~$X$ له سټ~$Y$ څخه لوے نۀ دے، $\cardle{X}{Y}$، هله او يوازې
+هله چې !!a{injective} تابع $f\colon X \to Y$ وي۔ دا چې د تابع
+يو پر يو والے او په~$X$ کښې د ورودي غړو د ارزښتونو په~$Y$
+کښې شتون څرګندولے شو، د تعريف ساحې د فرعي سټونو د اندازې د
+«لوے نۀ دے» اړيکه هم تعريفولے شو۔
+
+\begin{prop}
+لاندې فورمول
+\[
+\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif
+      \eq[x][y])]])]
+\]
+د «لوے نۀ دے» اړيکه تعريفوي۔
+\end{prop}
+
+دوه سټونه يو شان اندازه لري، يا «همشمېره» دي، $\cardeq{X}{Y}$،
+هله او يوازې هله چې !!a{bijective} تابع~$f\colon X \to Y$ وي۔
+
+\begin{prop}
+لاندې فورمول
+\begin{multline*}
+  \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
+    \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+  \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
+      \land \eq[y][u(x)])])])]
+\end{multline*}
+د همشمېره‌والي اړيکه تعريفوي۔
+\end{prop}
+
+دا !!{formula}s به په ترتيب سره په $X \subseteq Y$، $X = Y$،
+$X \neq \emptyset$، $\cardle{X}{Y}$ او $\cardeq{X}{Y}$ لنډوو۔
+(دا لږ څه ګډوډوونکې کېدے شي، ځکه د سټونو~$X$ او~$Y$ په
+غيررسمي خبرو کښې هم همدا نښې کاروو؛ خو دلته دا نښې د دويمې درجې
+منطق د هغو !!{formula}s لنډې بڼې دي چې يوځايي اړيکيز متغيرونه
+$X$ او~$Y$ پکښې راځي۔)
+
+\begin{prop}
+!!{sentence} $\lforall[X][\lforall[Y][((\cardle{X}{Y} \land
+    \cardle{Y}{X}) \lif \cardeq{X}{Y})]]$ معتبره ده۔
+\end{prop}
+
+\begin{proof}
+دا !!{sentence} په !!a{structure}~$\Struct{M}$ کښې هله صدق کوي
+چې د هر دوو فرعي سټونو $X \subseteq \Domain{M}$ او
+$Y \subseteq \Domain{M}$ دپاره، که $\cardle{X}{Y}$ او
+$\cardle{Y}{X}$ وي، نو $\cardeq{X}{Y}$ هم وي۔ خو دا د
+\emph{هر ډول} سټونو~$X$ او~$Y$ دپاره رښتيا ده؛ همدا د
+شرودرـبرنشتاين قضيه ده۔
+\end{proof}
+
+
+\end{document}

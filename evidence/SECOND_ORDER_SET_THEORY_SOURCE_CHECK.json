@@ -1,0 +1,75 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T01:48:04.276219+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260925-SECOND-ORDER-SET-THEORY",
+  "scope": "OLP-0336 through OLP-0340 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLSOL-007",
+      "unit_id": "OLP-0339",
+      "classification": "finite-subset-satisfies-claimed-infinity-test",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29",
+      "target_line_1based": 31,
+      "counterexample": "In a two-element domain, take X as a singleton, let u swap the two elements, and choose the element of X omitted by u(X). The source test is true though X is finite.",
+      "formula_policy": "The global injection remains; a closure conjunct for X is added. A finite X then cannot have an omitted member, whereas any Dedekind-infinite X admits the required self-map extended by identity outside X."
+    },
+    {
+      "id": "OLSOL-008",
+      "unit_id": "OLP-0339",
+      "classification": "countability-test-excludes-empty-and-forces-whole-domain",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40",
+      "target_line_1based": 47,
+      "counterexample": "For every nonempty proper X, Y=Domain satisfies the source antecedent and refutes X=Y. The empty set is enumerable but fails the source's X(z) seed requirement.",
+      "formula_policy": "The least seed-containing successor-closed set must contain X; X itself is closed, so this characterizes a finite or countable orbit. The empty set is handled separately."
+    },
+    {
+      "id": "OLSOL-009",
+      "unit_id": "OLP-0339",
+      "classification": "aleph-one-condition-tests-all-subsets-including-itself",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/cardinalities.tex:49-57",
+      "target_line_1based": 73,
+      "counterexample": "For an aleph-one X, choose Y=X; the source requires X finite or aleph-zero and fails. A finite X satisfies the source formula, so it also gives a false positive.",
+      "formula_policy": "Under the surrounding classical cardinal-arithmetic convention, the corrected criterion says X is uncountable and every subset with cardinality strictly below |X| is finite or aleph-zero."
+    },
+    {
+      "id": "OLSOL-010",
+      "unit_id": "OLP-0340",
+      "classification": "wrong-variable-in-continuum-code-proof",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120",
+      "target_line_1based": 136,
+      "counterexample": "Z in the displayed Pow condition is bound locally to range over subsets of X; it is not the fixed set whose entire power set is encoded.",
+      "formula_policy": "Only the prose's mathematical variable changes from Z to X; the Cont definition remains unchanged."
+    },
+    {
+      "id": "OLSOL-011",
+      "unit_id": "OLP-0340",
+      "classification": "continuum-domain-equivalence-only-proves-lower-bound",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129",
+      "target_line_1based": 149,
+      "counterexample": "Take a domain larger than the continuum, a countable X, a continuum-sized Y coding P(X), and u as the identity on the whole domain. The source right-hand side holds while |Domain| differs from |Real|.",
+      "formula_policy": "Cont(Y) fixes |Y| at continuum; the added image-in-Y, injection, and surjection clauses make u a bijection Domain to Y."
+    },
+    {
+      "id": "OLSOL-012",
+      "unit_id": "OLP-0340",
+      "classification": "unclosed-outer-implication-in-power-code-formula",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64",
+      "target_line_1based": 74,
+      "counterexample": "The source opens the second conjunct with (Y(x) lif but ends with only the inner Codes implication's closing parenthesis and two quantifier brackets.",
+      "formula_policy": "A single closing parenthesis is inserted before the outer universal quantifier's closing bracket."
+    }
+  ],
+  "no_change_units": [
+    "OLP-0336",
+    "OLP-0337",
+    "OLP-0338"
+  ],
+  "retractions_verified": [
+    "OLINF-002",
+    "OLSIZ-011",
+    "OLSOL-004",
+    "OLSOL-005"
+  ],
+  "status": "five source-reviewed draft units; six adjacent-disclosed source corrections; prior false alerts remain retracted"
+}

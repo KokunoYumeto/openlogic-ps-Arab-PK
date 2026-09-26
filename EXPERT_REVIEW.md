@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 335 of 722 source units are translated drafts. This log contains 178 terminology entries and 259 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 340 of 722 source units are translated drafts. This log contains 180 terminology entries and 265 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1605,6 +1605,24 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: کوز/بره لوېنهايم--سکولم; شمېرېدونکی او ناشمېرېدونکی; نامتناهي شمېر وړ
 - Review question: In Pakistani Pashto mathematical prose, is «ښکته/پورته لوېنهايم--سکولم / د شمېر وړ / د شمېر وړ نامتناهي / ناشمېرېدونکے» the clearest conventional rendering of “downward/upward Löwenheim–Skolem / enumerable / denumerable / nonenumerable” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B060 owner source and Pakistani Pashto language review
+
+## TERM-SOL-SET-CODING
+
+- Type: terminology
+- Choice: د فرعي سټونو د سټ کوډول / د فرعي سټونو سټ
+- Uncertainty: power-set and cardinal concepts are regionally supported; the second-order coding compound is source-led and provisional
+- Alternatives: د سټونو د سټ کوډونه; د اړيکې د مقطع کوډ; د درېيمې درجې بې‌واسطې کميت
+- Review question: In Pakistani Pashto mathematical prose, is «د فرعي سټونو د سټ کوډول / د فرعي سټونو سټ» the clearest conventional rendering of “second-order coding of sets of subsets / power set” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B061 owner source and Pakistani Pashto language review
+
+## TERM-SOL-ALEPH-ONE-CONTINUUM
+
+- Type: terminology
+- Choice: الف‌يو / د پيوستار شمېرنيزه اندازه / د پيوستار فرضيه
+- Uncertainty: cardinal order and countability concepts regionally supported; compound labels remain provisional
+- Alternatives: د الف‌يو اندازه; د پيوستار ځواک; د پيوستار حدس
+- Review question: In Pakistani Pashto mathematical prose, is «الف‌يو / د پيوستار شمېرنيزه اندازه / د پيوستار فرضيه» the clearest conventional rendering of “aleph-one / cardinality of the continuum / continuum hypothesis” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B061 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -3882,6 +3900,60 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLSOL-006 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B060 owner source review before cumulative acceptance
+
+## DEC-OLSOL-007
+
+- Type: source-correction
+- Choice: The displayed Inf(X) test omits u(X) subseteq X. The target adds this closure condition and balances the formula's final delimiters.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLSOL-008
+
+- Type: source-correction
+- Choice: The displayed Count(X) test excludes the empty set and requires X=Y for every successor-closed Y. The target adds the empty case, asks X subseteq Y, and balances the delimiters.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLSOL-009
+
+- Type: source-correction
+- Choice: The source's Aleph_1 formula applies the countable-or-finite condition to X itself and excludes only aleph-zero X. The target requires X uncountable and tests only subsets of strictly smaller cardinality.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLSOL-010
+
+- Type: source-correction
+- Choice: The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLSOL-011
+
+- Type: source-correction
+- Choice: The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLSOL-012
+
+- Type: source-correction
+- Choice: The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLSOL-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B061 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

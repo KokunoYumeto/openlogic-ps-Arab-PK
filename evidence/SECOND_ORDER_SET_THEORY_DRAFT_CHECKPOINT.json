@@ -1,0 +1,83 @@
+{
+  "schema": "ps-second-order-set-theory-draft/1",
+  "utc": "2026-09-26T01:48:04.276219+00:00",
+  "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+  "status": "accepted B061 editable drafts; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0336",
+      "path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "source_sha256": "304f9bcabacf05d66b95b6cdcc38a3fa4fe9b633248dfae7cd4247af62da5316",
+      "translation_sha256": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0337",
+      "path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "source_sha256": "3da2e59a89619b402e35fc14fb67b2c94584e503450b6253d22deca5f456331d",
+      "translation_sha256": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0338",
+      "path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+      "translation_sha256": "ce8e18e590de59babc15f69b222b43646fe0193cd8c19d6a81a48cd19b4a37c9",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0339",
+      "path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "translation_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "source_correction_ids": [
+        "OLSOL-007",
+        "OLSOL-008",
+        "OLSOL-009"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0340",
+      "path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "translation_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "source_correction_ids": [
+        "OLSOL-010",
+        "OLSOL-011",
+        "OLSOL-012"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 335,
+    "current_reviewed_draft_units": 5,
+    "cumulative_draft_units": 340,
+    "remaining_units": 382,
+    "public_reader_units": 255
+  },
+  "evidence": {
+    "source_check_sha256": "6069e6a38c63d92a3b801a1ac8f3b582de88587aceb7c810224712368b186b49",
+    "canon_consultation_sha256": "8bed13a024183f903b40c15bbbeb91f2cc7bc3495db50bca424374e114398dfb",
+    "source_corrections_sha256": "8f88c7ee2af9636d370600ee9142166a62e3d6f488d8ef0baedd6aea71cd6971",
+    "partial_qa_sha256": "c30201ecb937e497becce1779ad3565401a75a0d1091eddfac9e99145b8c441e",
+    "qa_sha256": "f7137119945934d9b46f2e79a5bd1cb48f751b808b182e8b94bdf3a15f174c49",
+    "alignment_sha256": "2532202549addfde19b8ba4e9b70b8524bad173ad567f27b4493f3b3a7d85b78",
+    "canon_use_sha256": "19d731ec80e4169f62423bd3a05d5a9e2beb6008f39939ad1667305f5e0500c2",
+    "term_decisions_sha256": "c1713684224bac2ae6eac06c0f7dad042d223ad790fc0b695b8ce392315b3f19",
+    "canonical_decisions_sha256": "6a2a656c7c7039b894cb0ba1bccdd8df00ef7edf05a59274313f6f64d4fc2516",
+    "canonical_qa_sha256": "699f0ede06c11b31572813a209b12f9a80540cc3ee000165994e68f951f347ea",
+    "canonical_replay_sha256": "b663d99ffe47d04b0c540ce1c63f44a0a50d3fc50bcdbb8982105c8463c67809"
+  },
+  "next_action": "Commit and push B061; continue lambda-calculus translation OLP-0341 onward; finish coherent v0.7 PDF/EPUB/direct-TeX publication when the guarded TeX slot is available."
+}

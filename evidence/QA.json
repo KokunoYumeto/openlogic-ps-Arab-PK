@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 335,
-    "structural_pass": 335,
+    "draft_units": 340,
+    "structural_pass": 340,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B060-SECOND-ORDER-METATHEORY",
+  "batch": "PS-B061-SECOND-ORDER-SET-THEORY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -10416,6 +10416,170 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0336",
+      "path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "source_sha256": "304f9bcabacf05d66b95b6cdcc38a3fa4fe9b633248dfae7cd4247af62da5316",
+      "translation_sha256": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0337",
+      "path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "source_sha256": "3da2e59a89619b402e35fc14fb67b2c94584e503450b6253d22deca5f456331d",
+      "translation_sha256": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+      "translation_sha256": "ce8e18e590de59babc15f69b222b43646fe0193cd8c19d6a81a48cd19b4a37c9",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0339",
+      "path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "translation_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSOL-007",
+        "OLSOL-008",
+        "OLSOL-009"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])]])]\\end{multline*}",
+          "\\begin{multline*}\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX=Y])]])\\end{multline*}",
+          "$\\fn{Aleph_1}(X)\\ident\\lforall[Y][(Y\\subseteqX\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]\\land\\lnot\\fn{Aleph}_0(X)$"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lexists[y][(X(y)\\land\\lforall[x][(X(x)\\lif\\eq/[y][u(x)])])])]\\end{multline*}",
+          "\\begin{multline*}\\lnot\\lexists[x][X(x)]\\lor{}\\\\\\lexists[z][\\lexists[u][(X(z)\\land\\lforall[x][(X(x)\\lifX(u(x)))]\\land{}\\\\\\lforall[Y][((Y(z)\\land\\lforall[x][(Y(x)\\lifY(u(x)))])\\lifX\\subseteqY)])]]\\end{multline*}",
+          "$\\fn{Aleph_1}(X)\\ident\\lnot\\fn{Count}(X)\\land\\lforall[Y][((Y\\subseteqX\\land\\lnot\\cardeq{X}{Y})\\lif(\\lnot\\fn{Inf}(Y)\\lor\\fn{Aleph}_0(Y)))]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0340",
+      "path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "translation_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSOL-010",
+        "OLSOL-011",
+        "OLSOL-012"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$s(Z)$",
+          "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)]]\\end{multline*}",
+          "\\begin{multline*}\\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X)\\land\\fn{Pow}(Y,R,X)\\land\\\\\\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]]]}.\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\fn{Pow}(Y,R,X)\\ident\\\\\\lforall[Z][(Z\\subseteqX\\lif\\lexists[x][(Y(x)\\land\\fn{Codes}(x,R,Z))])]\\land{}\\\\\\lforall[x][(Y(x)\\lif\\lforall[Z][(\\fn{Codes}(x,R,Z)\\lifZ\\subseteqX)])]\\end{multline*}",
+          "$s(X)$",
+          "\\begin{multline*}\\Sat{M}{\\lexists[Y][(\\fn{Cont}(Y)\\land{}\\\\\\lexists[u][(\\lforall[x][Y(u(x))]\\land{}\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][\\eq[y][u(x)]])])])]}.\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -13316,6 +13480,36 @@
       "passage": "Löwenheim–Skolem",
       "reverse_paraphrase": "The downward failure uses nonenumerable domains and the upward failure uses Count and Inf together.",
       "finding": "Finite-inclusive countability, denumerability and nonenumerability remain distinct."
+    },
+    {
+      "unit_id": "OLP-0336",
+      "passage": "editorial status",
+      "reverse_paraphrase": "The chapter states coding and continuum results but warns its proofs are incomplete and its definitions may be wrong.",
+      "finding": "The Pashto editorial notice preserves the caution and does not upgrade conjectural claims to settled proofs."
+    },
+    {
+      "unit_id": "OLP-0337",
+      "passage": "second-order set expressibility",
+      "reverse_paraphrase": "Quantification over predicates and functions permits set-theoretic statements without a primitive membership predicate.",
+      "finding": "The translation retains the logical versus nonlogical vocabulary distinction."
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "cardinal comparison and Schröder–Bernstein",
+      "reverse_paraphrase": "Injection witnesses no-larger, bijection witnesses equinumerosity, and mutual injection yields equinumerosity.",
+      "finding": "All five displayed abbreviations and the arbitrary-set theorem remain distinct."
+    },
+    {
+      "unit_id": "OLP-0339",
+      "passage": "Inf, Count and aleph-one tests",
+      "reverse_paraphrase": "Inf needs an injective self-map of the chosen set missing one member; Count includes the empty set or a generated orbit; aleph-one is the least uncountable cardinal.",
+      "finding": "Finite and whole-domain counterexamples establish three source defects; the target discloses exact repairs."
+    },
+    {
+      "unit_id": "OLP-0340",
+      "passage": "power-set coding and exact continuum size",
+      "reverse_paraphrase": "Binary-relation fibers code subsets. Pow covers them, Cont codes them uniquely, and equality of domain size needs a bijection to a continuum-sized code set.",
+      "finding": "The wrong proof variable, unclosed implication and lower-bound-only final formula receive separate disclosed repairs."
     }
   ],
   "builds": [

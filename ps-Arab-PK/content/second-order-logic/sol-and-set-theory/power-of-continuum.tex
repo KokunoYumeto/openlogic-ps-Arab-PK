@@ -1,0 +1,184 @@
+% Part: second-order-logic
+% Chapter: sol-and-sets
+% Section: power-of-continuum
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{set}{pow}
+
+\olsection{د پيوستار اندازه}
+
+\begin{explain}
+په دويمې درجې منطق کښې د !!{domain} پر فرعي سټونو کميت اچولے شو،
+خو د !!{domain} د فرعي سټونو پر سټونو ئې نۀ شو اچولے۔ دا کار
+مستقيم ترسره کولو ته \emph{د درېيمې درجې} منطق پکار دے۔ د بېلګې
+په توګه، که د کانتور دا قضيه بيانول غواړو چې د يوه سټ د ټولو
+فرعي سټونو له سټ څخه هماغه سټ ته هېڅ !!{injective} تابع نشته،
+کېدے شي داسې ئې ووايو: «د هر سټ~$X$ او هر سټ~$P$ دپاره، که
+$P$ د~$X$ د ټولو فرعي سټونو سټ وي، نو $\cardle{P}{X}$ نۀ دے»۔
+خو دا چې~$P$ د~$X$ د ټولو فرعي سټونو سټ دے، بايد دا هم
+رسمي کړو چې د~$P$ !!{element}s د~$X$ ټول او يوازې فرعي
+سټونه دي، مثلاً $\lforall[Y][(P(Y) \liff Y \subseteq X)]$۔
+ستونزه په~$P(Y)$ کښې ده: دا د دويمې درجې منطق !!a{formula}
+نۀ ده، ځکه د~$P$ غوندې يوځايي اړيکيز متغير ته يوازې
+ترمونه د ارګومېنټونو په توګه ورکولے شو۔
+
+خو که د تعريف ساحه کافي لويه وي، د سټونو پر سټونو کميت
+اچول \emph{تمثيلولے} شو۔ دا له دې خبرې ګټه اخلي چې دوه‌ځايي
+اړيکه~$R$ د !!{domain} !!{element}s د همدې !!{domain}
+له !!{element}s سره تړي۔ د داسې~$R$ دپاره ټول هغه !!{element}s
+چې له يوه~$x$ سره په~$R$ تړلي وي، يوځاے کولے شو:
+$\Setabs{y \in
+  \Domain{M}}{R(x,y)}$ هغه سټ دے چې~$x$ ئې «کوډوي»۔
+برعکس، که $Z \subseteq \Pow{\Domain{M}}$ د~$\Domain{M}$
+د فرعي سټونو يوه ټولګه وي او په~$\Domain{M}$ کښې لږ تر لږه
+د~$Z$ د سټونو هومره !!{element}s وي، نو اړيکه
+$R \subseteq \Domain{M}^2$ هم شته چې هر $Y \in Z$
+د کوم~$x$ په وسيله د~$R$ له مخې کوډ شي۔
+\end{explain}
+
+\begin{defn}
+که $R \subseteq \Domain{M}^2$ وي، نو \emph{$x$ د~$R$ له مخې}
+سټ $\Setabs{y
+  \in \Domain{M}}{R(x, y)}$ \emph{کوډوي}۔
+\end{defn}
+
+که !!a{element}~$x \in \Domain{M}$ د~$R$ له مخې سټ
+$Z \subseteq \Domain{M}$ کوډوي، نو سټ $Y \subseteq \Domain{M}$
+د سټونو يو سټ کوډوي: هغه سټونه چې د~$Y$ !!{element}s ئې
+کوډوي۔ نو سټ~$Y$ کولے شي د~$R$ له مخې~$\Pow{X}$ کوډ کړي۔
+دا هله کېږي چې د هر $Z \subseteq X$ دپاره کوم $x \in Y$
+د~$R$ له مخې~$Z$ کوډ کړي، او هر $x \in Y$ د~$R$ له مخې
+د~$X$ کوم فرعي سټ~$Z \subseteq X$ کوډ کړي۔
+
+\begin{prop}
+!!{formula}
+  \[
+  \fn{Codes}(x, R, Z) \ident \lforall[y][(Z(y) \liff
+    R(x, y))]
+  \]
+دا څرګندوي چې $s(x)$ د~$s(R)$ له مخې~$s(Z)$ کوډوي۔
+!!{formula}
+\begin{multline*}
+  \fn{Pow}(Y, R, X) \ident \\
+  \lforall[Z][(Z \subseteq X \lif \lexists[x][(Y(x) \land
+    \fn{Codes}(x, R, Z))])] \land {} \\ \lforall[x][(Y(x) \lif
+  \lforall[Z][(\fn{Codes}(x, R, Z) \lif Z \subseteq X)])]
+\end{multline*}
+دا څرګندوي چې $s(Y)$ د~$s(R)$ له مخې د~$s(X)$ د فرعي
+سټونو سټ کوډوي؛ يعنې د~$s(Y)$ غړي د~$s(R)$ له مخې
+د~$s(X)$ ټول او يوازې فرعي سټونه کوډوي۔
+\end{prop}
+\textbf{د ژباړې د نسخې سمون (OLSOL-012):} د سرچينې د
+دويم فورمول په وروستي شرط کښې د بانديني استلزام
+تړونکې قوسه کمه وه؛ دلته وتړل شوه۔
+
+\begin{explain}
+په دې طريقه د فرعي سټونو د خپلو کوډونو پر سر د کميت
+اچولو له لارې د فرعي سټونو د سټ په هکله ويناوې څرګندولے
+شو۔ د بېلګې په توګه، د کانتور قضيه اوس داسې ويلے شو
+چې د هرې هغې اړيکې د کوډونو له ساحې څخه، چې د~$X$ د
+ټولو فرعي سټونو سټ کوډوي، پخپله~$X$ ته هېڅ
+!!{injective} تابع نشته۔
+\end{explain}
+
+\begin{prop}
+لاندې جمله
+\begin{multline*}
+  \lforall[X][\lforall[Y][\lforall[R][(\fn{Pow}(Y, R, X) \lif \\
+      \lnot \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif
+            \eq[x][y])]] \land {}\\
+        \lforall[x][(Y(x) \lif X(u(x)))])])]]]
+\end{multline*}
+معتبره ده۔
+\end{prop}
+
+\begin{explain}
+د !!a{denumerable} سټ د ټولو فرعي سټونو سټ
+!!{nonenumerable} دے، نو اندازه ئې د هر !!{denumerable}
+سټ تر اندازې لوړه ده (چې~$\aleph_0$ ده)۔ د~$\Pow{\Nat}$
+اندازې ته «د پيوستار اندازه» ويل کېږي، ځکه دا د حقيقي
+عددونو پر کرښه د نقطو د سټ~$\Real$ له اندازې سره برابره
+ده۔ که !!{domain} دومره لويه وي چې د کوم
+!!a{denumerable} سټ د ټولو فرعي سټونو سټ کوډ کړے شي،
+نو د پيوستار په اندازه سټ داسې بيانولے شو چې هغه له
+هر داسې سټ~$Y$ سره همشمېره وي چې د~$\aleph_0$
+په اندازه سټ~$X$ د ټولو فرعي سټونو سټ کوډوي۔
+(که د تعريف ساحه دومره لويه نۀ وي، يعنې د~$\Real$
+سره همشمېره فرعي سټ ونۀ لري، نو د~$\Pow{X}$ د کوډ
+کولو اړيکه هم نۀ شي لرلے۔)
+\end{explain}
+
+\begin{prop}
+که $\cardle{\Real}{\Domain{M}}$ وي، نو !!{formula}
+\begin{multline*}
+\fn{Cont}(Y) \ident
+\lexists[X][\lexists[R][((\fn{Aleph}_0(X) \land
+      \fn{Pow}(Y, R, X)) \land \\
+      \lforall[x][\lforall[y][((Y(x) \land {}
+      Y(y) \land \lforall[z][R(x,z) \liff R(y,z)]) \lif \eq[x][y])]])]]
+\end{multline*}
+دا څرګندوي چې $\cardeq{s(Y)}{\Real}$۔
+\end{prop}
+
+\begin{proof}
+$\fn{Pow}(Y, R, X)$ دا څرګندوي چې $s(Y)$ د~$s(R)$ له مخې
+د~$s(X)$ د ټولو فرعي سټونو سټ کوډوي، او
+$\fn{Aleph}_0(X)$ وايي چې ټاکلے سټ د شمېر وړ نامتناهي
+سټ دے۔ نو د~$s(Y)$ اندازه لږ تر لږه د پيوستار هومره ده؛
+کېدے شي لويه هم وي که د~$s(Y)$ ډېر غړي د ټاکلي سټ
+يو فرعي سټ کوډ کړي۔ وروستے عطف دا حالت ردوي: هغه غواړي
+چې د~$s(Y)$ د غړو او د~$s(X)$ د فرعي سټونو ترمنځ د~$s(R)$
+له مخې اړيکه !!{injective} وي۔
+\end{proof}
+\textbf{د ژباړې د نسخې سمون (OLSOL-010):} د سرچينې
+د ثبوت په وروستۍ جمله کښې د کوډ کېدونکي سټ نښه غلطه ده؛
+دلته د قضیې ټاکلے سټ يادېږي۔
+
+\begin{prop}
+$\cardeq{\Domain{M}}{\Real}$ هله او يوازې هله چې
+\begin{multline*}
+  \Sat{M}{\lexists[Y][(\fn{Cont}(Y) \land {} \\
+    \lexists[u][(\lforall[x][Y(u(x))] \land {}
+      \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]] \land {} \\
+      \lforall[y][(Y(y) \lif \lexists[x][\eq[y][u(x)]])])])]}.
+\end{multline*}
+\end{prop}
+\textbf{د ژباړې د نسخې سمون (OLSOL-011):} د سرچينې
+ښودل شوې جمله يوازې دا تضمينوي چې تعريف ساحه لږ تر لږه
+د پيوستار هومره لويه ده؛ د کټ مټ برابرې اندازې دعوه
+ترې نۀ راځي۔ دلته د کوډونو له پيوستاري سټ سره د ټولې
+تعريف ساحې د يو پر يو او پر سر تابع شرط راغلے دے۔
+
+\begin{explain}
+د پيوستار فرضيه وايي چې د پيوستار اندازه لومړۍ
+!!{nonenumerable} شمېرنيزه اندازه ده؛ يعنې
+$\Pow{\Nat}$ د~$\aleph_1$ اندازه لري۔
+\end{explain}
+
+\begin{prop}
+د پيوستار فرضيه هله او يوازې هله رښتيا ده چې
+\[\fn{CH} \ident
+\lforall[X][(\fn{Aleph}_1(X) \liff \fn{Cont}(X))]\]
+معتبره وي۔
+\end{prop}
+
+دا نۀ ده رښتيا چې که د پيوستار فرضيه غلطه وي، نو
+$\lnot \fn{CH}$ به معتبره وي، يا برعکس۔ په
+!!a{enumerable} تعريف ساحه کښې نۀ د~$\aleph_1$ په
+اندازه فرعي سټ شته او نۀ د پيوستار په اندازه؛ نو
+$\fn{CH}$ په هره !!a{enumerable} تعريف ساحه کښې
+رښتيا وي۔ خو داسې بله جمله ورکولے شو چې هله او يوازې
+هله معتبره وي چې د پيوستار فرضيه غلطه وي:
+
+\begin{prop}
+د پيوستار فرضيه هله او يوازې هله غلطه ده چې
+\[\fn{NCH} \ident
+\lforall[X][(\fn{Cont}(X) \lif \lexists[Y][(Y \subseteq X \land \lnot
+    \fn{Count}(Y) \land \lnot \cardeq{X}{Y})])]\]
+معتبره وي۔
+\end{prop}
+
+\end{document}
