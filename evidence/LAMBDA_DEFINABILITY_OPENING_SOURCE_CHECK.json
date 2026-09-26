@@ -1,0 +1,37 @@
+{
+  "schema": "ps-b074-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-26T21:05:54.756332+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0373",
+      "source_sha256": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708",
+      "target_sha256": "e2ada8488f1bd868f8582221784f35086c423e953040a8c4091e683f6146bf53"
+    },
+    {
+      "unit_id": "OLP-0374",
+      "source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
+      "target_sha256": "3f24e8034268b71829ee4c579907399f8cccbaee63e74439cad9fa4142228990"
+    },
+    {
+      "unit_id": "OLP-0375",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "target_sha256": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e"
+    }
+  ],
+  "audit_sha256": "b25afa80aa0bdae60d62d227b5c21b1de8aeee2fb51170ebab0eae9f2f756cef",
+  "notes_sha256": "ece7fe8485bd3ee1f89d236d3670ac1e3f03921df2184ef25b17ed580e8f1ecf",
+  "consultation_sha256": "f6d5b8a811af117042a111e14ce90fff8f7d53889b2d119c2cd37091b65ea6c4",
+  "documented_formula_corrections": [
+    "OLLAM-048",
+    "OLLAM-050"
+  ],
+  "other_disclosures": [
+    "OLLAM-047",
+    "OLLAM-049"
+  ],
+  "unresolved": "The chapter remains experimental and later imports await translation. Exact Pakistani lambda-definability compounds are unattested; the source's multiargument step shorthand is disclosed.",
+  "next_action": "Continue lambda-definability translation from OLP-0376; validate the 372-unit reader candidate separately."
+}

@@ -1,0 +1,156 @@
+% Part: lambda-calculus
+% Chapter: lambda-definablity
+% Section: arithmetical-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{rep}{arf}
+\olsection{\usetoken{S}{lambda definable} حسابي تابعې}
+
+\begin{prop}
+  \ollabel{prop:succ-ld}
+  د ورپسې شمېرې تابع~$\Succ$ !!{lambda definable} ده۔
+\end{prop}
+
+\begin{proof}
+هغه ترم چې د ورپسې شمېرې تابع !!{lambda define}s، دا دے:
+\begin{align*}
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f ({a} f x)]].
+  \intertext{زموږ د ليکنې د دود له مخې، دا د لاندې ترم لنډه بڼه ده:}
+  \fn{Succ} & \ident \lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]].
+  \intertext{$\fn{Succ}$ داسې تابع ده چې عدد~$a$ د آرګومېنټ په توګه
+    اخلي او پايله ئې بله تابع، $\lambd[fx][f ({a}
+      f x)]$، ده۔ دا تابع په خپله د چرچ عددنښه نۀ ده۔ خو
+    که آرګومېنټ $a$ د چرچ عددنښه وي، عددنښې ته راکمېږي۔ وګورئ:}
+   (\lambd[a][\lambd[fx][f ({a} f x)]])\,\num{n} & \redone
+   \lambd[fx][f ({\num{n}} f x)].
+   \intertext{دنننے ترم $\num{n}fx$ د بېټا راکمول وړ دے، ځکه
+     $\num{n}$، $\lambd[fx][f^nx]$ دے۔ نو $\num{n}fx \red f^nx$؛
+     په دې توګه د ټول ترم دپاره لرو:}
+   \fn{Succ}\, \num n & \red \lambd[fx][f(f^n(x))],
+\end{align*}
+\textbf{د سرچينې سمون (OLLAM-048):} د چرچ عددنښه دوه
+پرله‌پسې آرګومېنټونه اخلي؛ د دواړو د تطبيق راکمول يو
+ګام نۀ دے۔ د همدې ځاے غشے څوګامي راکمول ښيي۔
+يعنې $\num{n+1}$۔
+\end{proof}
+
+\begin{ex}
+  وګورو چې د~$\num{0}$، يعنې $\lambd[fx][x]$، پر سر
+  د~$\fn{Succ}$ په تطبيق څۀ پېښېږي۔ ترمونه په بشپړه بڼه ليکو:
+  \begin{align*}
+    \fn{Succ}\, \num{0} & \ident (\lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]])(\lambd[f][\lambd[x][x]])\\
+    & \redone \lambd[f][\lambd[x][(f (({(\lambd[f][\lambd[x][x]])} f) x))]] \\
+    & \redone \lambd[f][\lambd[x][(f ({(\lambd[x][x])} x))]] \\
+    & \redone \lambd[f][\lambd[x][(f x)]] \ident \num{1}\\
+  \end{align*}
+\end{ex}
+
+\begin{prob}
+  دا ترم
+  \begin{align*}
+    \fn{Succ}' & \ident \lambd[{n}][\lambd[fx][{n} f (f x)]]
+  \end{align*}
+  د ورپسې شمېرې تابع !!{lambda define}s۔ څرګنده کړئ چې ولې۔
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:add-ld}
+  د جمع تابع~$\Add$ !!{lambda definable} ده۔
+\end{prop}
+
+\begin{proof}
+جمع د دې ترمونو په وسيله !!{lambda define}d شوې ده:
+\begin{align*}
+  \fn{Add} & \ident \lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]]
+\intertext{يا په بل ډول:}
+  \fn{Add}' & \ident \lambd[{a}{b}][{a}\, \fn{Succ} \, {b}].
+\intertext{لومړۍ جمع داسې کار کوي: $\fn{Add}$ لومړے دوه
+  عددونه ${a}$ او ${b}$ اخلي۔ پايله ئې يوه تابع ده چې
+  $f$ او $x$ اخلي او $af(bfx)$ ورکوي۔ که $a$ او $b$ د
+  چرچ عددنښې $\num{n}$ او $\num{m}$ وي، دا $f^{n+m}(x)$
+  ته راکمېږي؛ دا له $f^{n}(f^{m}(x))$ سره يو شان دے۔
+  په ورو ګامونو کښې:}
+  (\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \redone
+  \lambd[fx][\num{n}\, f (\num {m}\, f x)] \\
+  & \redone \lambd[fx][\num{n}\, f (f^m x)] \\
+  & \redone \lambd[fx][f^n (f^m x)] \ident \num {n+m}.
+\intertext{د جمع دويم تمثيل $\fn{Add'}$ په بل ډول کار کوي:
+  کله چې د چرچ پر دوو عددنښو $\num{n}$ او
+  $\num{m}$ تطبيق شي،}
+\fn{Add}' \num n \,\num m
+& \redone \num{n}\, \fn{Succ}\, \num{m}.
+\intertext{خو $\num{n} f x$ تل $f^n(x)$ ته راکمېږي؛ نو}
+  \num{n}\,  \fn{Succ}\, \num{m} & \red \fn{Succ}^n(\num{m}).
+\end{align*}
+\textbf{د سرچينې سپيناوی (OLLAM-049):} د څو متغيرونو
+تجريد د يو متغيره تجريدونو لنډه ليکنه ده؛ په پورته دوو
+کرښو کښې پر دوو آرګومېنټونو ښکاره تطبيق د بېټا له
+يوه زيات انقباضونه غواړي، که څۀ هم سرچينه يوګامي غشے
+کاروي۔
+او ځکه چې $\fn{Succ}$ د ورپسې شمېرې تابع !!{lambda define}s
+او د ورپسې شمېرې تابع پر~$m$ باندې $n$ ځله تطبيق شي،
+پايله $n+m$ وي؛ نو دا ترم بيا~$\num{n+m}$ ته راکمېږي۔
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:mult-ld}
+  ضرب د دې ترم په وسيله !!{lambda definable} دے:
+  \[
+  \fn{Mult} \ident \lambd[ab][\lambd[fx][a (b f) x]]
+  \]
+\end{prop}
+
+\begin{proof}
+  د دې د کار څرنګوالی داسې ګورو: فرض کړئ $\fn{Mult}$
+  د چرچ پر عددنښو $\num{n}$ او $\num{m}$ تطبيق کړو؛
+  $\fn{Mult} \, \num{n} \, \num{m}$،
+  $\lambd[fx][\num{n}(\num{m}\, f)x]$ ته راکمېږي۔
+  ترم $\num{m} f$ يوه تابع تعريفوي چې $f$ پر خپل آرګومېنټ
+  $m$ ځله تطبيقوي۔ نو $\num{n} (\num{m} f) x$ همدا تابع،
+  يعنې «$f$، $m$ ځله تطبيق کړه»، پر~$x$ باندې $n$ ځله
+  تطبيقوي۔ په بله وينا، $f$ پر~$x$ باندې $n\cdot
+  m$ ځله تطبيقوو۔ خو ترلاسه شوې عادي بڼه هماغه د چرچ
+  عددنښه $\num{nm}$ ده۔
+\end{proof}
+
+\begin{editorial}
+موږ دا ترم د $\eta$-راکمول په وسيله لا ساده کولے شو:
+\[
+  \fn{Mult} \ident \lambd[ab][\lambd[f][a (b f)]].
+\]
+
+خو بيا بايد لومړے $\eta$-راکمول وڅرګندوو۔
+\end{editorial}
+
+\begin{prob}
+ضرب د دې ترم په وسيله !!{lambda define}d کېدے شي:
+\[
+  \fn{Mult}' \ident \lambd[ab][a (\fn{Add}\, b) \num{0}].
+\]
+\textbf{د سرچينې سمون (OLLAM-050):} اصلي فورمول دواړه
+ځله لومړے آرګومېنټ کاروي او دويم بې‌اغېزې پرېږدي؛
+دلته لومړے آرګومېنټ د تکرار شمېر او دويم د جمع کېدونکي
+په توګه کارول شوے دے۔
+څرګنده کړئ چې دا ولې کار کوي۔
+\end{prob}
+
+د يو $\lambd$-ترم په توګه د توان تعريف په حيرانوونکې توګه
+ساده دے:
+\[
+  \fn{Exp} \ident \lambd[be][e b].
+\]
+لومړے آرګومېنټ $b$ بنسټ او دويم~$e$ توان دے۔ زموږ د
+عددونو د کوډولو له مخې، په شهودي ډول $e f$، $f^e$ دے۔
+که دا پوهېدل ګران وي، توان د تکراري ضرب له لارې هم
+تعريفولے شو:
+\[
+  \fn{Exp}' \ident \lambd[be][e (\fn{Mult}\, b) \num{1}].
+\]
+
+د چرچ پر عددنښو مخکنۍ شمېره او تفريق دومره ساده نۀ دي لکه
+چې ښايي فکر وکړو: د جوړو کوډولو ته اړتيا لري۔
+
+\end{document}

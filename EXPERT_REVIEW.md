@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 372 of 722 source units are translated drafts. This log contains 194 terminology entries and 311 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 375 of 722 source units are translated drafts. This log contains 194 terminology entries and 315 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4476,6 +4476,38 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The rule premise has N parallel-reduce to N-prime and the ensuing contraction uses N-prime.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-047
+
+- Type: source-correction
+- Choice: Disclose that the named constant function has subscript k but its subsequent value equation omits the subscript; keep both formulas literal.
+- Evidence: The displayed lambda term and preceding function name use the same fixed k, while the value equation drops the subscript.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B074 owner source review before cumulative acceptance
+
+## DEC-OLLAM-048
+
+- Type: source-correction
+- Choice: Use the multistep reduction arrow for the two curried beta contractions of the Church numeral applied to f and x.
+- Evidence: The earlier lambda syntax expands multiple bound variables into nested one-variable abstractions.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B074 owner source review before cumulative acceptance
+
+## DEC-OLLAM-049
+
+- Type: source-correction
+- Choice: Disclose that two source addition displays use one-step arrows for successive curried beta contractions; keep their formulas literal.
+- Evidence: Both displayed terms abstract a and b separately under the source's multiple-variable convention.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B074 owner source review before cumulative acceptance
+
+## DEC-OLLAM-050
+
+- Type: source-correction
+- Choice: Use b as the summand iterated a times, rather than reusing a as both count and summand.
+- Evidence: The first multiplication term and the exercise target are the product of the two inputs; the source expression ignores b.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B074 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

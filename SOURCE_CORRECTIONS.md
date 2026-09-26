@@ -2714,3 +2714,31 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/church-rosser/beta-reduction.tex:41-44 (SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:57 (SHA-256 28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2).
 - ثبت شوې پرېکړه: Replace the repeated M-prime by N-prime in the rule-four variable list. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-047
+
+- واحد: OLP-0374.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/introduction.tex:74-77 (SHA-256 ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/introduction.tex:76 (SHA-256 3f24e8034268b71829ee4c579907399f8cccbaee63e74439cad9fa4142228990).
+- د ثابتې تابعې په نوم کښې د k ښکارندويه کښته نښه شته، خو د ارزښت په ورپسې فورمول کښې نشته. فورمولونه هماغسې ساتل شوي او څنګ ته ئې سپيناوی ورکړل شوے دے.
+
+## OLLAM-048
+
+- واحد: OLP-0375.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/arithmetical-functions.tex:29-31 (SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:34 (SHA-256 af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e).
+- پرېکړه: Use the multistep reduction arrow for the two curried beta contractions of the Church numeral applied to f and x. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-049
+
+- واحد: OLP-0375.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/arithmetical-functions.tex:68-82 (SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:88 (SHA-256 af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e).
+- پرېکړه: Disclose that two source addition displays use one-step arrows for successive curried beta contractions; keep their formulas literal. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-050
+
+- واحد: OLP-0375.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/arithmetical-functions.tex:118-123 (SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133 (SHA-256 af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e).
+- پرېکړه: Use b as the summand iterated a times, rather than reusing a as both count and summand. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.

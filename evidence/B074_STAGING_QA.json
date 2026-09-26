@@ -1,0 +1,84 @@
+{
+  "schema": "ps-b074-staging-qa/1",
+  "units": [
+    {
+      "unit_id": "OLP-0373",
+      "source_path": "content/lambda-calculus/lambda-definability/lambda-definability.tex",
+      "source_sha256": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708",
+      "target_sha256": "e2ada8488f1bd868f8582221784f35086c423e953040a8c4091e683f6146bf53",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [],
+      "target_only_math": [],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    },
+    {
+      "unit_id": "OLP-0374",
+      "source_path": "content/lambda-calculus/lambda-definability/introduction.tex",
+      "source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
+      "target_sha256": "3f24e8034268b71829ee4c579907399f8cccbaee63e74439cad9fa4142228990",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [],
+      "target_only_math": [],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    },
+    {
+      "unit_id": "OLP-0375",
+      "source_path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "target_sha256": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "\\begin{align*}\\fn{Succ}&\\ident\\lambd[a][\\lambd[fx][f({a}fx)]].\\intertext{LOCALIZED}\\fn{Succ}&\\ident\\lambd[a][\\lambd[f][\\lambd[x][(f(({a}f)x))]]].\\intertext{LOCALIZED$\\fn{Succ}$$a$$\\lambd[fx][f({a}fx)]$$a$}(\\lambd[a][\\lambd[fx][f({a}fx)]])\\,\\num{n}&\\redone\\lambd[fx][f({\\num{n}}fx)].\\intertext{LOCALIZED$\\num{n}fx$$\\num{n}$$\\lambd[fx][f^nx]$$\\num{n}fx\\redonef^nx$}\\fn{Succ}\\,\\numn&\\red\\lambd[fx][f(f^n(x))],\\end{align*}",
+        "\\[\\fn{Mult}'\\ident\\lambd[ab][a(\\fn{Add}\\,a)\\num{0}].\\]"
+      ],
+      "target_only_math": [
+        "\\begin{align*}\\fn{Succ}&\\ident\\lambd[a][\\lambd[fx][f({a}fx)]].\\intertext{LOCALIZED}\\fn{Succ}&\\ident\\lambd[a][\\lambd[f][\\lambd[x][(f(({a}f)x))]]].\\intertext{LOCALIZED$\\fn{Succ}$$a$$\\lambd[fx][f({a}fx)]$$a$}(\\lambd[a][\\lambd[fx][f({a}fx)]])\\,\\num{n}&\\redone\\lambd[fx][f({\\num{n}}fx)].\\intertext{LOCALIZED$\\num{n}fx$$\\num{n}$$\\lambd[fx][f^nx]$$\\num{n}fx\\redf^nx$}\\fn{Succ}\\,\\numn&\\red\\lambd[fx][f(f^n(x))],\\end{align*}",
+        "\\[\\fn{Mult}'\\ident\\lambd[ab][a(\\fn{Add}\\,b)\\num{0}].\\]"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    }
+  ],
+  "all_checks_pass": true
+}

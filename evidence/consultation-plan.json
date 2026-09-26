@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
-  "status": "OLP-0370–0372 source-reviewed and staged; 50-block parity, three exact math corrections, eight disclosures and eight reverse-paraphrase samples",
+  "batch_id": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
+  "status": "OLP-0373–0375 source-reviewed and staged; 39 blocks, two exact formula corrections, two adjacent disclosures and eight reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7886,6 +7886,55 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0373": {
+      "batch_id": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND"
+      ],
+      "scope": "The chapter's 8-block experimental editorial driver and the 13-block Church-numeral, partial lambda-definability and constant-function introduction. OLLAM-047 discloses the source's c-sub-k/c index mismatch; all math and imports are preserved. Pakistani prose/grammar govern style; Afghan function vocabulary is a labelled regional comparator, not a technical attestation.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0374": {
+      "batch_id": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND"
+      ],
+      "scope": "The chapter's 8-block experimental editorial driver and the 13-block Church-numeral, partial lambda-definability and constant-function introduction. OLLAM-047 discloses the source's c-sub-k/c index mismatch; all math and imports are preserved. Pakistani prose/grammar govern style; Afghan function vocabulary is a labelled regional comparator, not a technical attestation.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0375": {
+      "batch_id": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-BETA-STRATEGY",
+        "TERM-LAMBDA-ETA-EXTENSIONALITY"
+      ],
+      "scope": "All 18 paired arithmetic-function blocks: successor, two addition terms, multiplication, eta simplification, exponentiation and pair-encoding preview. OLLAM-048/050 disclose two exact math corrections; OLLAM-049 discloses multiargument step shorthand. Pakistani prose and grammar govern style; Afghan function prose is a regional comparator, not a technical term attestation.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11152,6 +11201,54 @@
       "passage": "parallel into ordinary and closure",
       "reverse_paraphrase": "Each parallel beta-eta step expands to a finite beta-eta reduction, so their transitive closures coincide and the parallel diamond transfers.",
       "finding": "All source references, arrow directions and the eta side condition remain aligned."
+    },
+    {
+      "unit_id": "OLP-0373",
+      "passage": "experimental chapter driver",
+      "reverse_paraphrase": "The chapter warns that its explanation, organization into proved propositions and examples remain incomplete; imports stay in the source order.",
+      "finding": "The caution and all imports, including the commented lists import, are retained."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "Church numeral iterator",
+      "reverse_paraphrase": "The Church numeral n takes f and x and yields n applications of f to x; zero and three are concrete examples.",
+      "finding": "All displayed formulas, applications and normal-form scope stay aligned."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "partial lambda-definability",
+      "reverse_paraphrase": "A coded defined input reduces to the corresponding numeral, while an undefined input has no normal form; any normal result is unique if it exists.",
+      "finding": "The k arguments and both branches are retained without claiming totality or termination."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "constant function and computability",
+      "reverse_paraphrase": "A constant lambda term yields the same numeral for every input; the source names c-sub-k but its value equation uses c, disclosed without changing either formula.",
+      "finding": "OLLAM-047 makes the source index mismatch explicit and preserves identity/computability claims."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "successor construction",
+      "reverse_paraphrase": "The successor term applies the input numeral's iteration and then applies f once more; a curried two-argument numeral needs two beta contractions to reach f-to-the-n of x.",
+      "finding": "OLLAM-048 changes one inner strict arrow to multistep reduction; explicit zero-to-one computation remains literal."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "addition constructions",
+      "reverse_paraphrase": "The first term composes n and m iterations of f; the second iterates successor n times starting at m.",
+      "finding": "OLLAM-049 discloses two source one-step arrows used as shorthand for successive curried contractions without changing their formulas."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "multiplication construction",
+      "reverse_paraphrase": "The first term iterates an m-fold application n times; the alternate term must add b repeatedly a times from zero, not add a a times.",
+      "finding": "OLLAM-050 changes only the repeated summand to b; a=2,b=3 separates the corrected result 6 from the source's 4."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "exponentiation and predecessor preview",
+      "reverse_paraphrase": "The Church numeral exponent iterates the base, and a second construction iterates multiplication; predecessor and subtraction need encoded pairs.",
+      "finding": "Base/exponent order, all formulas and the source editorial eta caveat remain aligned."
     }
   ]
 }

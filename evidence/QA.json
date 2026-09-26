@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 372,
-    "structural_pass": 372,
+    "draft_units": 375,
+    "structural_pass": 375,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
+  "batch": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11720,6 +11720,111 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0373",
+      "path": "content/lambda-calculus/lambda-definability/lambda-definability.tex",
+      "source_sha256": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708",
+      "translation_sha256": "e2ada8488f1bd868f8582221784f35086c423e953040a8c4091e683f6146bf53",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0374",
+      "path": "content/lambda-calculus/lambda-definability/introduction.tex",
+      "source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
+      "translation_sha256": "3f24e8034268b71829ee4c579907399f8cccbaee63e74439cad9fa4142228990",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-047"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0375",
+      "path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "source_sha256": "1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24",
+      "translation_sha256": "af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-048",
+        "OLLAM-049",
+        "OLLAM-050"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\fn{Succ}&\\ident\\lambd[a][\\lambd[fx][f({a}fx)]].\\intertext{LOCALIZED}\\fn{Succ}&\\ident\\lambd[a][\\lambd[f][\\lambd[x][(f(({a}f)x))]]].\\intertext{LOCALIZED$\\fn{Succ}$$a$$\\lambd[fx][f({a}fx)]$$a$}(\\lambd[a][\\lambd[fx][f({a}fx)]])\\,\\num{n}&\\redone\\lambd[fx][f({\\num{n}}fx)].\\intertext{LOCALIZED$\\num{n}fx$$\\num{n}$$\\lambd[fx][f^nx]$$\\num{n}fx\\redonef^nx$}\\fn{Succ}\\,\\numn&\\red\\lambd[fx][f(f^n(x))],\\end{align*}",
+          "\\[\\fn{Mult}'\\ident\\lambd[ab][a(\\fn{Add}\\,a)\\num{0}].\\]"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{Succ}&\\ident\\lambd[a][\\lambd[fx][f({a}fx)]].\\intertext{LOCALIZED}\\fn{Succ}&\\ident\\lambd[a][\\lambd[f][\\lambd[x][(f(({a}f)x))]]].\\intertext{LOCALIZED$\\fn{Succ}$$a$$\\lambd[fx][f({a}fx)]$$a$}(\\lambd[a][\\lambd[fx][f({a}fx)]])\\,\\num{n}&\\redone\\lambd[fx][f({\\num{n}}fx)].\\intertext{LOCALIZED$\\num{n}fx$$\\num{n}$$\\lambd[fx][f^nx]$$\\num{n}fx\\redf^nx$}\\fn{Succ}\\,\\numn&\\red\\lambd[fx][f(f^n(x))],\\end{align*}",
+          "\\[\\fn{Mult}'\\ident\\lambd[ab][a(\\fn{Add}\\,b)\\num{0}].\\]"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -14986,6 +15091,54 @@
       "passage": "parallel into ordinary and closure",
       "reverse_paraphrase": "Each parallel beta-eta step expands to a finite beta-eta reduction, so their transitive closures coincide and the parallel diamond transfers.",
       "finding": "All source references, arrow directions and the eta side condition remain aligned."
+    },
+    {
+      "unit_id": "OLP-0373",
+      "passage": "experimental chapter driver",
+      "reverse_paraphrase": "The chapter warns that its explanation, organization into proved propositions and examples remain incomplete; imports stay in the source order.",
+      "finding": "The caution and all imports, including the commented lists import, are retained."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "Church numeral iterator",
+      "reverse_paraphrase": "The Church numeral n takes f and x and yields n applications of f to x; zero and three are concrete examples.",
+      "finding": "All displayed formulas, applications and normal-form scope stay aligned."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "partial lambda-definability",
+      "reverse_paraphrase": "A coded defined input reduces to the corresponding numeral, while an undefined input has no normal form; any normal result is unique if it exists.",
+      "finding": "The k arguments and both branches are retained without claiming totality or termination."
+    },
+    {
+      "unit_id": "OLP-0374",
+      "passage": "constant function and computability",
+      "reverse_paraphrase": "A constant lambda term yields the same numeral for every input; the source names c-sub-k but its value equation uses c, disclosed without changing either formula.",
+      "finding": "OLLAM-047 makes the source index mismatch explicit and preserves identity/computability claims."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "successor construction",
+      "reverse_paraphrase": "The successor term applies the input numeral's iteration and then applies f once more; a curried two-argument numeral needs two beta contractions to reach f-to-the-n of x.",
+      "finding": "OLLAM-048 changes one inner strict arrow to multistep reduction; explicit zero-to-one computation remains literal."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "addition constructions",
+      "reverse_paraphrase": "The first term composes n and m iterations of f; the second iterates successor n times starting at m.",
+      "finding": "OLLAM-049 discloses two source one-step arrows used as shorthand for successive curried contractions without changing their formulas."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "multiplication construction",
+      "reverse_paraphrase": "The first term iterates an m-fold application n times; the alternate term must add b repeatedly a times from zero, not add a a times.",
+      "finding": "OLLAM-050 changes only the repeated summand to b; a=2,b=3 separates the corrected result 6 from the source's 4."
+    },
+    {
+      "unit_id": "OLP-0375",
+      "passage": "exponentiation and predecessor preview",
+      "reverse_paraphrase": "The Church numeral exponent iterates the base, and a second construction iterates multiplication; predecessor and subtraction need encoded pairs.",
+      "finding": "Base/exponent order, all formulas and the source editorial eta caveat remain aligned."
     }
   ],
   "builds": [
