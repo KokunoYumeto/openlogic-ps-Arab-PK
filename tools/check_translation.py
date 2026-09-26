@@ -180,7 +180,7 @@ if pubpath.exists():
  report['publication_coverage']['source_snapshot_units']=len(public_source_ids)
  report['publication_verified']=pub.get('verified',False)
 release_checkpoints=[]
-for checkpoint_path in (STATE/'V051_RELEASE_CHECKPOINT.json',STATE/'V060_RELEASE_CHECKPOINT.json'):
+for checkpoint_path in (STATE/'V051_RELEASE_CHECKPOINT.json',STATE/'V060_RELEASE_CHECKPOINT.json',STATE/'V070_RELEASE_CHECKPOINT.json'):
  if checkpoint_path.exists():
   checkpoint=json.loads(checkpoint_path.read_text(encoding='utf-8'))
   if checkpoint.get('status')=='published-and-verified':

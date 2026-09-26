@@ -1,0 +1,89 @@
+{
+  "schema": "ps-openlogic-release-checkpoint/1",
+  "status": "published-and-verified",
+  "recorded_utc": "2026-09-26T05:01:16.269951+00:00",
+  "release": {
+    "tag": "v0.7.0-incompleteness",
+    "commit": "54d9b1b7afd96328229ea318142b66235c54f5ba",
+    "github_url": "https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.7.0-incompleteness",
+    "zenodo_record_id": 22971283,
+    "zenodo_record_url": "https://zenodo.org/records/22971283",
+    "zenodo_doi": "10.5281/zenodo.22971283",
+    "zenodo_concept_doi": "10.5281/zenodo.22307197"
+  },
+  "coverage": {
+    "total_units": 722,
+    "draft_units": 362,
+    "structural_pass_units": 362,
+    "reader_units": 321,
+    "epub_units": 321,
+    "source_snapshot_units": 362,
+    "remaining_units": 360,
+    "chapters": 31,
+    "pdf_pages": 420
+  },
+  "source_archive": {
+    "filename": "03-openlogic-ps-Arab-PK-v0.7.0-incompleteness-sources.zip",
+    "bytes": 29596014,
+    "sha256": "530f8e3082aa1feb0dee312dbf1d4c14ddbe15e38473582984d7609a68984f3c",
+    "tracked_files": 1498,
+    "all_git_blobs_verified": true,
+    "byte_identical_replay": true
+  },
+  "formats": {
+    "pdf": {
+      "path": "readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf",
+      "bytes": 2094160,
+      "sha256": "cdf30b9304f6e7a43c05cbc08be7d33bba6974cdd037740d02ef47aecdc05b53"
+    },
+    "epub": {
+      "path": "readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub",
+      "bytes": 949392,
+      "sha256": "fc6291fac902df4e5598ac071990f202d778fadf08d9ebf9888bda8e27e6ace6"
+    },
+    "direct_tex": {
+      "path": "releases/02-openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.tex",
+      "bytes": 2130685,
+      "sha256": "35acaf3c6f9ca03feea6c455fb808f290998556f5c7267bc2a91cbc7bea5a7b7"
+    }
+  },
+  "publication": {
+    "github_assets_anonymously_verified": 6,
+    "zenodo_assets_anonymously_verified": 6,
+    "zenodo_preview_filename": "01-openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.pdf",
+    "previous_zenodo_assets_reverified": 6
+  },
+  "canonical_review": {
+    "decisions": 476,
+    "occurrences": 19894,
+    "reader_pages_available": 18455,
+    "reader_pages_pending": 1439
+  },
+  "evidence": {
+    "reader_acceptance": {
+      "path": "repo/evidence/V070_READER_ACCEPTANCE.json",
+      "sha256": "b98a98af9624efe3a74421db1828a5e335c1de189dc154f84fa547871c52d661"
+    },
+    "release_prepared": {
+      "path": "releases/v0.7.0-incompleteness/RELEASE_PREPARED.json",
+      "sha256": "075b26f14351a22ad213718edba55cde2be0d0840f82dbf9ff0166cf1c29e588"
+    },
+    "github": {
+      "path": "GITHUB_V070_VERIFIED.json",
+      "sha256": "1fc7365f781185767c7fbd1786164fa4107982da6eda43be432aeb01e630cdfc"
+    },
+    "zenodo": {
+      "path": "ZENODO_V070_VERIFIED.json",
+      "sha256": "0f4eaa382fe96af2166aad46bdf7bab4baca301ebb96f88b499520e06705f565"
+    },
+    "public": {
+      "path": "V070_PUBLICATION_VERIFIED.json",
+      "sha256": "6e766b6706c97dddf794e6650f71cb7a71cb7a040896ece3fbafa8162136d0e3"
+    },
+    "canonical_review": {
+      "path": "TRANSLATION_DECISION_QA.json",
+      "sha256": "6f1b219e2dd233a40f891066a26bbe7cabf1eafc08b45a07184b096b9d698403"
+    }
+  },
+  "next_action": "Audit and translate OLP-0363 with Pakistani Pashto canon evidence, then continue the remaining 360 units and build a coherent full reader."
+}
