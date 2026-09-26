@@ -1,0 +1,51 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{trm}
+\olsection{ترمونه}
+
+د لامبډا حساب ترمونه د متغيرونو له نامتناهي زېرمي $\Obj{v_0}$،
+$\Obj{v_1}$، \dots، له~``$\lambd$'' نښې او قوسونو څخه په استقرايي
+ډول جوړېږي۔ د متغيرونو د ښودلو دپاره $x$، $y$، $z$، \dots{} او
+د ترمونو د ښودلو دپاره $M$، $N$، $P$، \dots{} کاروو۔
+
+\begin{defn}[ترمونه] \ollabel{defn:term}
+د لامبډا حساب د \emph{ترمونو} سټ په استقرايي ډول داسې تعريفېږي:
+\begin{enumerate}
+  \item \ollabel{defn:term-var} که $x$ متغير وي، نو $x$ ترم دے۔
+  \item \ollabel{defn:term-abs} که $x$ متغير او $M$ ترم وي، نو
+    $(\lambd[x][M])$ ترم دے۔
+  \item \ollabel{defn:term-app} که $M$ او $N$ دواړه ترمونه وي، نو
+    $(MN)$ ترم دے۔
+\end{enumerate}
+\end{defn}
+
+که ترم $(\lambd[x][M])$ د \olref{defn:term-abs} له مخې جوړ شوے
+وي، نو وايو چې دا د \emph{تجريد} پايله ده، او په $\lambd[x]$ کښې
+$x$ ته \emph{!!{parameter}} وايو۔ که ترم $(MN)$ د
+\olref{defn:term-app} له مخې جوړ شوے وي، نو دا د \emph{تطبيق}
+پايله ده۔
+
+پاس تعريف شوي ترمونه ټولې قوسې په بشپړه توګه لري۔ دا کار يو څه
+دروند کېدے شي، لکه ترم
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ چې ښيي۔ د
+قوسونو د پرېښودلو دپاره به نښيز دودونه وټاکو۔ خو رسمي تعريف دا
+آسانوي چې د \olref{defn:term} له مخې د هر ترم د جوړېدو طريقه
+وپېژنو۔ د بېلګې په توګه، د ترم
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ د جوړېدو وروستے
+ګام بايد تجريد وي چې !!{parameter} ئې~$x$ دے۔ دا ترم له
+$((\lambd[x][x])(\lambd[x][(xx)]))$ څخه د تجريد په وسيله جوړېږي؛
+او دغه ترم د دوو ترمونو تطبيق دے۔ له دغو دوو څخه هر ترم بيا د
+تجريد پايله ده، او همداسې نور۔
+
+\begin{prob}
+د $(\lambd[g][(\lambd[x][(g (x x))])
+  (\lambd[x][(g (x x))])])$ د جوړېدو طريقه بيان کړئ۔
+\end{prob}
+
+\end{document}

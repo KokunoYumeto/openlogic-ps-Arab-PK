@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 458 decisions and 19582 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 460 decisions and 19656 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -23779,7 +23779,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
   - د لامبډا محاسبه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - لامبډا انتزاع (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د تابعې کارونه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 19
+- Exact paired occurrences: 56
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
@@ -23802,6 +23802,43 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-019218` | `OLP-0344` / `OLP-0344-B008` | د لامبډا حساب نحو | `upstream/content/lambda-calculus/introduction/syntax.tex:33-45` | `ps-Arab-PK/content/lambda-calculus/introduction/syntax.tex:31-43` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019219` | `OLP-0344` / `OLP-0344-B009` | د لامبډا حساب نحو | `upstream/content/lambda-calculus/introduction/syntax.tex:47-57` | `ps-Arab-PK/content/lambda-calculus/introduction/syntax.tex:45-55` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019220` | `OLP-0344` / `OLP-0344-B010` | د لامبډا حساب نحو | `upstream/content/lambda-calculus/introduction/syntax.tex:59-70` | `ps-Arab-PK/content/lambda-calculus/introduction/syntax.tex:57-67` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019221` | `OLP-0356` / `OLP-0356-B004` | lam | `upstream/content/lambda-calculus/syntax/syntax.tex:8-8` | `ps-Arab-PK/content/lambda-calculus/syntax/syntax.tex:8-8` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019222` | `OLP-0357` / `OLP-0357-B004` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019223` | `OLP-0357` / `OLP-0357-B005` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019224` | `OLP-0357` / `OLP-0357-B006` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:17-27` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019225` | `OLP-0357` / `OLP-0357-B007` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:29-33` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019226` | `OLP-0357` / `OLP-0357-B008` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:35-45` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:34-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019227` | `OLP-0357` / `OLP-0357-B009` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:46-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019228` | `OLP-0358` / `OLP-0358-B004` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019229` | `OLP-0358` / `OLP-0358-B005` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019230` | `OLP-0358` / `OLP-0358-B006` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:18-20` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:18-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019231` | `OLP-0358` / `OLP-0358-B007` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:22-28` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019232` | `OLP-0358` / `OLP-0358-B008` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:30-33` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019233` | `OLP-0358` / `OLP-0358-B009` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:33-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019234` | `OLP-0358` / `OLP-0358-B010` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:42-44` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:39-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019235` | `OLP-0358` / `OLP-0358-B011` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:46-49` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:43-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019236` | `OLP-0358` / `OLP-0358-B012` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019237` | `OLP-0358` / `OLP-0358-B013` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:57-84` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:53-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019238` | `OLP-0358` / `OLP-0358-B014` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:86-96` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:80-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019239` | `OLP-0359` / `OLP-0359-B004` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019240` | `OLP-0359` / `OLP-0359-B005` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019241` | `OLP-0359` / `OLP-0359-B006` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:18-28` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:17-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019242` | `OLP-0359` / `OLP-0359-B007` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:30-37` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:29-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019243` | `OLP-0359` / `OLP-0359-B008` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:39-42` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:38-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019244` | `OLP-0360` / `OLP-0360-B004` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019245` | `OLP-0360` / `OLP-0360-B005` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:12-20` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:12-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019246` | `OLP-0360` / `OLP-0360-B006` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:22-25` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:22-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019247` | `OLP-0360` / `OLP-0360-B007` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:31-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019248` | `OLP-0360` / `OLP-0360-B008` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:35-49` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:38-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019249` | `OLP-0360` / `OLP-0360-B009` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:54-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019250` | `OLP-0360` / `OLP-0360-B010` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:55-62` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:58-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019251` | `OLP-0360` / `OLP-0360-B011` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:64-73` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:67-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019252` | `OLP-0360` / `OLP-0360-B012` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:75-83` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:79-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019253` | `OLP-0360` / `OLP-0360-B013` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:85-92` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:87-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019254` | `OLP-0360` / `OLP-0360-B014` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:94-97` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:95-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019255` | `OLP-0360` / `OLP-0360-B015` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:99-106` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:100-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019256` | `OLP-0360` / `OLP-0360-B016` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:108-110` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:109-111` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019257` | `OLP-0360` / `OLP-0360-B017` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:113-115` | pending; no page guessed |
 
 ## TERM-LAMBDA-REDUCTION-CURRYING
 
@@ -23824,46 +23861,46 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019221` | `OLP-0345` / `OLP-0345-B004` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019222` | `OLP-0345` / `OLP-0345-B005` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:12-19` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019223` | `OLP-0345` / `OLP-0345-B006` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:21-24` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:21-24` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019224` | `OLP-0345` / `OLP-0345-B007` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:26-38` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:26-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019225` | `OLP-0345` / `OLP-0345-B008` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:40-69` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:40-68` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019226` | `OLP-0345` / `OLP-0345-B009` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:70-72` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019227` | `OLP-0346` / `OLP-0346-B004` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019228` | `OLP-0346` / `OLP-0346-B005` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:12-16` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019229` | `OLP-0346` / `OLP-0346-B006` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:18-20` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019230` | `OLP-0346` / `OLP-0346-B007` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:23-28` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:22-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019231` | `OLP-0346` / `OLP-0346-B008` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:30-38` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:29-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019232` | `OLP-0347` / `OLP-0347-B004` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019233` | `OLP-0347` / `OLP-0347-B005` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:12-17` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019234` | `OLP-0347` / `OLP-0347-B006` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:20-35` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:19-33` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019235` | `OLP-0347` / `OLP-0347-B007` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:37-49` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:35-47` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019236` | `OLP-0347` / `OLP-0347-B008` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:51-69` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:49-71` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019237` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019238` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019239` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019240` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019241` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019242` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019243` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019244` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019245` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019246` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019247` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019248` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019249` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019250` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019251` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019252` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019253` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019254` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019255` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019256` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019257` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019258` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019259` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019260` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019258` | `OLP-0345` / `OLP-0345-B004` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019259` | `OLP-0345` / `OLP-0345-B005` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:12-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019260` | `OLP-0345` / `OLP-0345-B006` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:21-24` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:21-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019261` | `OLP-0345` / `OLP-0345-B007` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:26-38` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:26-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019262` | `OLP-0345` / `OLP-0345-B008` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:40-69` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:40-68` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019263` | `OLP-0345` / `OLP-0345-B009` | د لامبډا ترمونو راکمول | `upstream/content/lambda-calculus/introduction/reduction.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex:70-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019264` | `OLP-0346` / `OLP-0346-B004` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019265` | `OLP-0346` / `OLP-0346-B005` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019266` | `OLP-0346` / `OLP-0346-B006` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:18-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019267` | `OLP-0346` / `OLP-0346-B007` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:23-28` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019268` | `OLP-0346` / `OLP-0346-B008` | د چرچ--روسر خاصيت | `upstream/content/lambda-calculus/introduction/church-rosser.tex:30-38` | `ps-Arab-PK/content/lambda-calculus/introduction/church-rosser.tex:29-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019269` | `OLP-0347` / `OLP-0347-B004` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019270` | `OLP-0347` / `OLP-0347-B005` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:12-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019271` | `OLP-0347` / `OLP-0347-B006` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:20-35` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:19-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019272` | `OLP-0347` / `OLP-0347-B007` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:37-49` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:35-47` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019273` | `OLP-0347` / `OLP-0347-B008` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:51-69` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:49-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019274` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019275` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019276` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019277` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019278` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019279` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019280` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019281` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019282` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019283` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019284` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019285` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019286` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019287` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019288` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019289` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019290` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019291` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019292` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019293` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019294` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019295` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019296` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019297` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
 
 ## TERM-LAMBDA-CHURCH-NUMERALS
 
@@ -23886,46 +23923,46 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019261` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019262` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019263` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019264` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019265` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019266` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019267` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019268` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019269` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019270` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019271` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019272` | `OLP-0350` / `OLP-0350-B004` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019273` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019274` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019275` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019276` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019277` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019278` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019279` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019280` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019281` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019282` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019283` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019284` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019285` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019286` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019287` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019288` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019289` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019290` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019291` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019292` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019293` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019294` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019295` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019296` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019297` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019298` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019299` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019300` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019298` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019299` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019300` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019301` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019302` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019303` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019304` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019305` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019306` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019307` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019308` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019309` | `OLP-0350` / `OLP-0350-B004` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019310` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019311` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019312` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019313` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019314` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019315` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019316` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019317` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019318` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019319` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019320` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019321` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019322` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019323` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019324` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019325` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019326` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019327` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019328` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019329` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019330` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019331` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019332` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019333` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019334` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019335` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019336` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019337` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
 
 ## TERM-LAMBDA-FIXED-POINT-SEARCH
 
@@ -23948,14 +23985,72 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019301` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019302` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019303` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019304` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019305` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019306` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019307` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019308` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019338` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019339` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019340` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019341` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019342` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019343` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019344` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019345` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
+
+## TERM-LAMBDA-SCOPE-FREE-BOUND
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: unique readability / abbreviated term / scope / free and bound variable occurrence / closed term
+- Intended sense: unique readability / abbreviated term / scope / free and bound variable occurrence / closed term
+- Chosen Pashto: يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم
+- Rationale: Unique readability means a fully parenthesized term has one syntactic decomposition. Abbreviations expand by left-associative application and widest lambda scope. The scope of lambda x is its body occurrence, not the enclosing term; only x occurrences free in that body are bound by the initial abstraction. A closed term has no free variables.
+- Confidence reason: provisional; best available evidence. Pakistani prose and regional function/substitution concepts are inspected; exact lambda scope and unique-readability compounds remain source-led and provisional
+- Expert question: In Pakistani Pashto mathematical prose, is «يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم» the clearest conventional rendering of “unique readability / abbreviated term / scope / free and bound variable occurrence / closed term” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — The native prose uses کښې and Pakistani final ے in expository constructions; it distinguishes communication through words and sentences. Consulted for expository phrasing and spelling, not set-theoretic terminology.
+  - `GRAMMAR-P166-SOV` (checked_supports): Habibullah Tegey and Barbara Robson. A Reference Grammar of Pashto. Reference grammar; Afghan-central examples, regional comparator. https://files.eric.ed.gov/fulltext/ED399825.pdf — Word order discussion places modifiers before the verb and treats be-sentence complements as complements, not direct objects. Supports verb-final exposition. Page manually inspected from scan; no OCR text claim.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_supports): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — Native number-theoretic exposition defines zero, successor and projection functions and builds new functions by substitution and recursion. Supports تابع and the successor example, with general composition concept illustrated by substitution. Exact injection, surjection, bijection and inverse labels remain provisional. Afghan Pashto regional comparator; rendered page visually inspected for this functions batch.
+- Alternatives:
+  - بې‌سارې لوستونتيا (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د تړلو ساحه د ساحې پر ځاے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - ازاده پېښه د ازاد مورد پر ځاے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 36
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-019346` | `OLP-0357` / `OLP-0357-B004` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019347` | `OLP-0357` / `OLP-0357-B005` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019348` | `OLP-0357` / `OLP-0357-B006` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:17-27` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019349` | `OLP-0357` / `OLP-0357-B007` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:29-33` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019350` | `OLP-0357` / `OLP-0357-B008` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:35-45` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:34-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019351` | `OLP-0357` / `OLP-0357-B009` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:46-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019352` | `OLP-0358` / `OLP-0358-B004` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019353` | `OLP-0358` / `OLP-0358-B005` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019354` | `OLP-0358` / `OLP-0358-B006` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:18-20` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:18-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019355` | `OLP-0358` / `OLP-0358-B007` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:22-28` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019356` | `OLP-0358` / `OLP-0358-B008` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:30-33` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019357` | `OLP-0358` / `OLP-0358-B009` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:33-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019358` | `OLP-0358` / `OLP-0358-B010` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:42-44` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:39-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019359` | `OLP-0358` / `OLP-0358-B011` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:46-49` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:43-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019360` | `OLP-0358` / `OLP-0358-B012` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019361` | `OLP-0358` / `OLP-0358-B013` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:57-84` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:53-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019362` | `OLP-0358` / `OLP-0358-B014` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:86-96` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:80-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019363` | `OLP-0359` / `OLP-0359-B004` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019364` | `OLP-0359` / `OLP-0359-B005` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019365` | `OLP-0359` / `OLP-0359-B006` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:18-28` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:17-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019366` | `OLP-0359` / `OLP-0359-B007` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:30-37` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:29-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019367` | `OLP-0359` / `OLP-0359-B008` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:39-42` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:38-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019368` | `OLP-0360` / `OLP-0360-B004` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019369` | `OLP-0360` / `OLP-0360-B005` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:12-20` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:12-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019370` | `OLP-0360` / `OLP-0360-B006` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:22-25` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:22-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019371` | `OLP-0360` / `OLP-0360-B007` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:31-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019372` | `OLP-0360` / `OLP-0360-B008` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:35-49` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:38-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019373` | `OLP-0360` / `OLP-0360-B009` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:54-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019374` | `OLP-0360` / `OLP-0360-B010` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:55-62` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:58-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019375` | `OLP-0360` / `OLP-0360-B011` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:64-73` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:67-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019376` | `OLP-0360` / `OLP-0360-B012` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:75-83` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:79-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019377` | `OLP-0360` / `OLP-0360-B013` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:85-92` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:87-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019378` | `OLP-0360` / `OLP-0360-B014` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:94-97` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:95-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019379` | `OLP-0360` / `OLP-0360-B015` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:99-106` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:100-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019380` | `OLP-0360` / `OLP-0360-B016` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:108-110` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:109-111` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019381` | `OLP-0360` / `OLP-0360-B017` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:113-115` | pending; no page guessed |
 
 ## DEC-OLFUN-001
 
@@ -23975,7 +24070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019309` | `OLP-0024` / `OLP-0024-B012` | د تابعو معکوسونه | `upstream/content/sets-functions-relations/functions/inverses.tex:62-66` | `ps-Arab-PK/content/sets-functions-relations/functions/inverses.tex:62-68` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 36 |
+| `ps-Arab-PK-OCC-019382` | `OLP-0024` / `OLP-0024-B012` | د تابعو معکوسونه | `upstream/content/sets-functions-relations/functions/inverses.tex:62-66` | `ps-Arab-PK/content/sets-functions-relations/functions/inverses.tex:62-68` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 36 |
 
 ## DEC-OLFUN-002
 
@@ -23995,7 +24090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019310` | `OLP-0021` / `OLP-0021-B014` | بنسټونه | `upstream/content/sets-functions-relations/functions/function-basics.tex:64-72` | `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex:63-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 32 |
+| `ps-Arab-PK-OCC-019383` | `OLP-0021` / `OLP-0021-B014` | بنسټونه | `upstream/content/sets-functions-relations/functions/function-basics.tex:64-72` | `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex:63-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 32 |
 
 ## DEC-OLFUN-003
 
@@ -24015,7 +24110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019311` | `OLP-0021` / `OLP-0021-B018` | بنسټونه | `upstream/content/sets-functions-relations/functions/function-basics.tex:102-108` | `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex:99-104` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 32 |
+| `ps-Arab-PK-OCC-019384` | `OLP-0021` / `OLP-0021-B018` | بنسټونه | `upstream/content/sets-functions-relations/functions/function-basics.tex:102-108` | `ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex:99-104` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 32 |
 
 ## DEC-OLFUN-004
 
@@ -24035,7 +24130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019312` | `OLP-0023` / `OLP-0023-B012` | تابعې د اړيکو په توګه | `upstream/content/sets-functions-relations/functions/functions-relations.tex:60-76` | `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex:60-76` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 35 |
+| `ps-Arab-PK-OCC-019385` | `OLP-0023` / `OLP-0023-B012` | تابعې د اړيکو په توګه | `upstream/content/sets-functions-relations/functions/functions-relations.tex:60-76` | `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex:60-76` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 35 |
 
 ## DEC-OLFUN-005
 
@@ -24055,7 +24150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019313` | `OLP-0023` / `OLP-0023-B016` | تابعې د اړيکو په توګه | `upstream/content/sets-functions-relations/functions/functions-relations.tex:92-101` | `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex:91-101` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 35 |
+| `ps-Arab-PK-OCC-019386` | `OLP-0023` / `OLP-0023-B016` | تابعې د اړيکو په توګه | `upstream/content/sets-functions-relations/functions/functions-relations.tex:92-101` | `ps-Arab-PK/content/sets-functions-relations/functions/functions-relations.tex:91-101` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 35 |
 
 ## DEC-PSSIZ-001
 
@@ -24075,7 +24170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019314` | `OLP-0031` / `OLP-0031-B017` | جوړوونکې تابعې او کوډونه | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:106-109` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex:109-118` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45 |
+| `ps-Arab-PK-OCC-019387` | `OLP-0031` / `OLP-0031-B017` | جوړوونکې تابعې او کوډونه | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:106-109` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex:109-118` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45 |
 
 ## DEC-PSSIZ-002
 
@@ -24095,7 +24190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019315` | `OLP-0032` / `OLP-0032-B006` | يوه بله جوړوونکې تابع | `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-84` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-92` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45–46 |
+| `ps-Arab-PK-OCC-019388` | `OLP-0032` / `OLP-0032-B006` | يوه بله جوړوونکې تابع | `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-84` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-92` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45–46 |
 
 ## DEC-PSSIZ-003
 
@@ -24115,7 +24210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019316` | `OLP-0034` / `OLP-0034-B020` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:127-132` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:134-142` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 50 |
+| `ps-Arab-PK-OCC-019389` | `OLP-0034` / `OLP-0034-B020` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:127-132` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:134-142` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 50 |
 
 ## DEC-PSSIZ-004
 
@@ -24135,7 +24230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019317` | `OLP-0036` / `OLP-0036-B010` | د بېلو اندازو سټونه او د کانتور قضيه | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:42-54` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex:42-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 52 |
+| `ps-Arab-PK-OCC-019390` | `OLP-0036` / `OLP-0036-B010` | د بېلو اندازو سټونه او د کانتور قضيه | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:42-54` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex:42-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 52 |
 
 ## DEC-OLARI-001
 
@@ -24155,7 +24250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019318` | `OLP-0043` / `OLP-0043-B006` | له $\Int$ څخه $\Rat$ ته | `upstream/content/sets-functions-relations/arithmetization/rationals.tex:47-60` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex:46-60` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 60 |
+| `ps-Arab-PK-OCC-019391` | `OLP-0043` / `OLP-0043-B006` | له $\Int$ څخه $\Rat$ ته | `upstream/content/sets-functions-relations/arithmetization/rationals.tex:47-60` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/rationals.tex:46-60` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 60 |
 
 ## DEC-OLARI-002
 
@@ -24175,7 +24270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019319` | `OLP-0044` / `OLP-0044-B012` | د حقيقي عددونو کرښه | `upstream/content/sets-functions-relations/arithmetization/reals.tex:76-80` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/reals.tex:75-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 61 |
+| `ps-Arab-PK-OCC-019392` | `OLP-0044` / `OLP-0044-B012` | د حقيقي عددونو کرښه | `upstream/content/sets-functions-relations/arithmetization/reals.tex:76-80` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/reals.tex:75-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 61 |
 
 ## DEC-OLARI-003
 
@@ -24195,7 +24290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019320` | `OLP-0045` / `OLP-0045-B010` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:58-87` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62 |
+| `ps-Arab-PK-OCC-019393` | `OLP-0045` / `OLP-0045-B010` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:58-78` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:58-87` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62 |
 
 ## DEC-OLARI-004
 
@@ -24215,7 +24310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019321` | `OLP-0045` / `OLP-0045-B012` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:85-113` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:94-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62–63 |
+| `ps-Arab-PK-OCC-019394` | `OLP-0045` / `OLP-0045-B012` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:85-113` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:94-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62–63 |
 
 ## DEC-OLARI-005
 
@@ -24235,7 +24330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019322` | `OLP-0045` / `OLP-0045-B012` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:85-113` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:94-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62–63 |
+| `ps-Arab-PK-OCC-019395` | `OLP-0045` / `OLP-0045-B012` | له $\Rat$ څخه $\Real$ ته | `upstream/content/sets-functions-relations/arithmetization/cuts.tex:85-113` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cuts.tex:94-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 62–63 |
 
 ## DEC-OLARI-006
 
@@ -24255,7 +24350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019323` | `OLP-0047` / `OLP-0047-B004` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:13-16` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:13-19` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 64 |
+| `ps-Arab-PK-OCC-019396` | `OLP-0047` / `OLP-0047-B004` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:13-16` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:13-19` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 64 |
 
 ## DEC-OLARI-007
 
@@ -24275,7 +24370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019324` | `OLP-0047` / `OLP-0047-B022` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:145-151` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:151-158` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
+| `ps-Arab-PK-OCC-019397` | `OLP-0047` / `OLP-0047-B022` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:145-151` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:151-158` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
 
 ## DEC-OLARI-008
 
@@ -24295,7 +24390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019325` | `OLP-0047` / `OLP-0047-B019` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:127-136` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:130-142` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
+| `ps-Arab-PK-OCC-019398` | `OLP-0047` / `OLP-0047-B019` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:127-136` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:130-142` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
 
 ## DEC-OLARI-009
 
@@ -24315,7 +24410,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019326` | `OLP-0047` / `OLP-0047-B025` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:170-173` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:180-186` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
+| `ps-Arab-PK-OCC-019399` | `OLP-0047` / `OLP-0047-B025` | مرتبې حلقې او ميدانونه | `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:170-173` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/checking-details.tex:180-186` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 66 |
 
 ## DEC-OLARI-010
 
@@ -24335,7 +24430,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019327` | `OLP-0048` / `OLP-0048-B012` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:109-125` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:100-120` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68 |
+| `ps-Arab-PK-OCC-019400` | `OLP-0048` / `OLP-0048-B012` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:109-125` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:100-120` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68 |
 
 ## DEC-OLARI-011
 
@@ -24355,7 +24450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019328` | `OLP-0048` / `OLP-0048-B013` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:127-131` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:122-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68 |
+| `ps-Arab-PK-OCC-019401` | `OLP-0048` / `OLP-0048-B013` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:127-131` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:122-129` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68 |
 
 ## DEC-OLARI-012
 
@@ -24375,7 +24470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019329` | `OLP-0048` / `OLP-0048-B015` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:147-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68–69 |
+| `ps-Arab-PK-OCC-019402` | `OLP-0048` / `OLP-0048-B015` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:147-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68–69 |
 
 ## DEC-OLARI-013
 
@@ -24395,7 +24490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019330` | `OLP-0048` / `OLP-0048-B015` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:147-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68–69 |
+| `ps-Arab-PK-OCC-019403` | `OLP-0048` / `OLP-0048-B015` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:149-163` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:147-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 68–69 |
 
 ## DEC-OLARI-014
 
@@ -24415,7 +24510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019331` | `OLP-0048` / `OLP-0048-B020` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:181-185` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:188-197` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 69 |
+| `ps-Arab-PK-OCC-019404` | `OLP-0048` / `OLP-0048-B020` | ضميمه: حقيقي عددونه د کوشي د لړيو په توګه | `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:181-185` | `ps-Arab-PK/content/sets-functions-relations/arithmetization/cauchy.tex:188-197` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 69 |
 
 ## DEC-OLINF-001
 
@@ -24435,7 +24530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019332` | `OLP-0051` / `OLP-0051-B006` | د ډېډېکېنډ الجبرونه | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex:39-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 72 |
+| `ps-Arab-PK-OCC-019405` | `OLP-0051` / `OLP-0051-B006` | د ډېډېکېنډ الجبرونه | `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41-46` | `ps-Arab-PK/content/sets-functions-relations/infinite/dedekind-algebra.tex:39-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 72 |
 
 ## DEC-OLPL-001
 
@@ -24455,7 +24550,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019333` | `OLP-0058` / `OLP-0058-B032` | بياني \usetoken{P}{formula} | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex:154-159` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019406` | `OLP-0058` / `OLP-0058-B032` | بياني \usetoken{P}{formula} | `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158-159` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formulas.tex:154-159` | pending; no page guessed |
 
 ## DEC-OLPL-002
 
@@ -24475,7 +24570,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019334` | `OLP-0060` / `OLP-0060-B016` | جوړښتي لړۍ | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:120-146` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 83–84 |
+| `ps-Arab-PK-OCC-019407` | `OLP-0060` / `OLP-0060-B016` | جوړښتي لړۍ | `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:126-151` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:120-146` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 83–84 |
 
 ## DEC-OLPL-003
 
@@ -24495,7 +24590,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019335` | `OLP-0061` / `OLP-0061-B010` | \usetoken{P}{valuation} او صدق | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-147` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 85 |
+| `ps-Arab-PK-OCC-019408` | `OLP-0061` / `OLP-0061-B010` | \usetoken{P}{valuation} او صدق | `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133-140` | `ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134-147` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 85 |
 
 ## DEC-OLPF-001
 
@@ -24515,7 +24610,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019336` | `OLP-0065` / `OLP-0065-B006` | د سېکوېنټ حساب | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `ps-Arab-PK/content/first-order-logic/proof-systems/sequent-calculus.tex:15-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 89 |
+| `ps-Arab-PK-OCC-019409` | `OLP-0065` / `OLP-0065-B006` | د سېکوېنټ حساب | `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:15-35` | `ps-Arab-PK/content/first-order-logic/proof-systems/sequent-calculus.tex:15-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 89 |
 
 ## DEC-OLPF-002
 
@@ -24535,7 +24630,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019337` | `OLP-0067` / `OLP-0067-B007` | \usetoken{P}{tableau} | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `ps-Arab-PK/content/first-order-logic/proof-systems/tableaux.tex:32-48` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 91 |
+| `ps-Arab-PK-OCC-019410` | `OLP-0067` / `OLP-0067-B007` | \usetoken{P}{tableau} | `upstream/content/first-order-logic/proof-systems/tableaux.tex:31-42` | `ps-Arab-PK/content/first-order-logic/proof-systems/tableaux.tex:32-48` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 91 |
 
 ## DEC-OLSIZ-001
 
@@ -24555,7 +24650,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019338` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
+| `ps-Arab-PK-OCC-019411` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
 
 ## DEC-OLSIZ-002
 
@@ -24575,7 +24670,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019339` | `OLP-0031` / `OLP-0031-B015` | جوړوونکې تابعې او کوډونه | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex:89-99` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45 |
+| `ps-Arab-PK-OCC-019412` | `OLP-0031` / `OLP-0031-B015` | جوړوونکې تابعې او کوډونه | `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing.tex:89-99` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45 |
 
 ## DEC-OLSIZ-003
 
@@ -24595,7 +24690,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019340` | `OLP-0032` / `OLP-0032-B006` | يوه بله جوړوونکې تابع | `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-84` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-92` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45–46 |
+| `ps-Arab-PK-OCC-019413` | `OLP-0032` / `OLP-0032-B006` | يوه بله جوړوونکې تابع | `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-84` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/pairing-alt.tex:13-92` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 45–46 |
 
 ## DEC-OLSIZ-004
 
@@ -24615,7 +24710,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019341` | `OLP-0034` / `OLP-0034-B011` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51-58` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:52-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 49 |
+| `ps-Arab-PK-OCC-019414` | `OLP-0034` / `OLP-0034-B011` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51-58` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:52-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 49 |
 
 ## DEC-OLSIZ-005
 
@@ -24635,7 +24730,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019342` | `OLP-0034` / `OLP-0034-B015` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85-101` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:88-108` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 50 |
+| `ps-Arab-PK-OCC-019415` | `OLP-0034` / `OLP-0034-B015` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85-101` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex:88-108` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 50 |
 
 ## DEC-OLSIZ-006
 
@@ -24655,7 +24750,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019343` | `OLP-0035` / `OLP-0035-B015` | همشمېر والی | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:67-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 51 |
+| `ps-Arab-PK-OCC-019416` | `OLP-0035` / `OLP-0035-B015` | همشمېر والی | `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68-94` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:67-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 51 |
 
 ## DEC-OLSIZ-007
 
@@ -24675,7 +24770,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019344` | `OLP-0036` / `OLP-0036-B014` | د بېلو اندازو سټونه او د کانتور قضيه | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-105` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex:75-116` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 52 |
+| `ps-Arab-PK-OCC-019417` | `OLP-0036` / `OLP-0036-B014` | د بېلو اندازو سټونه او د کانتور قضيه | `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:70-105` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/comparing-size.tex:75-116` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 52 |
 
 ## DEC-OLSIZ-008
 
@@ -24695,7 +24790,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019345` | `OLP-0039` / `OLP-0039-B012` | \printtoken{S}{nonenumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:61-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:58-100` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 55 |
+| `ps-Arab-PK-OCC-019418` | `OLP-0039` / `OLP-0039-B012` | \printtoken{S}{nonenumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:61-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:58-100` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 55 |
 
 ## DEC-OLSIZ-009
 
@@ -24715,7 +24810,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019346` | `OLP-0039` / `OLP-0039-B012` | \printtoken{S}{nonenumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:61-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:58-100` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 55 |
+| `ps-Arab-PK-OCC-019419` | `OLP-0039` / `OLP-0039-B012` | \printtoken{S}{nonenumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:61-97` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:58-100` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 55 |
 
 ## DEC-OLSIZ-010
 
@@ -24735,7 +24830,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019347` | `OLP-0040` / `OLP-0040-B012` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:52-54` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 57 |
+| `ps-Arab-PK-OCC-019420` | `OLP-0040` / `OLP-0040-B012` | راکمونه | `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:52-54` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 57 |
 
 ## DEC-OLSQ-001
 
@@ -24755,7 +24850,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019348` | `OLP-0075` / `OLP-0075-B010` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:76-108` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:75-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 98 |
+| `ps-Arab-PK-OCC-019421` | `OLP-0075` / `OLP-0075-B010` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:76-108` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:75-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 98 |
 
 ## DEC-OLSQ-002
 
@@ -24775,7 +24870,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019349` | `OLP-0075` / `OLP-0075-B013` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:162-221` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 99 |
+| `ps-Arab-PK-OCC-019422` | `OLP-0075` / `OLP-0075-B013` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:158-215` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proving-things.tex:162-221` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 99 |
 
 ## DEC-OLSQ-003
 
@@ -24795,7 +24890,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019350` | `OLP-0077` / `OLP-0077-B004` | د ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-15` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 102 |
+| `ps-Arab-PK-OCC-019423` | `OLP-0077` / `OLP-0077-B004` | د ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-12` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:9-15` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 102 |
 
 ## DEC-OLSQ-004
 
@@ -24815,7 +24910,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019351` | `OLP-0079` / `OLP-0079-B009` | \usetoken{S}{derivability} او قضييز نښلوونکي | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-propositional.tex:36-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 106 |
+| `ps-Arab-PK-OCC-019424` | `OLP-0079` / `OLP-0079-B009` | \usetoken{S}{derivability} او قضييز نښلوونکي | `upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex:35-56` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/provability-propositional.tex:36-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 106 |
 
 ## DEC-OLSQ-005
 
@@ -24835,7 +24930,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019352` | `OLP-0081` / `OLP-0081-B016` | سموالے | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:127-288` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 109–110 |
+| `ps-Arab-PK-OCC-019425` | `OLP-0081` / `OLP-0081-B016` | سموالے | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:114-242` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:127-288` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 109–110 |
 
 ## DEC-OLSQ-006
 
@@ -24855,7 +24950,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019353` | `OLP-0081` / `OLP-0081-B017` | سموالے | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:290-389` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 110–111 |
+| `ps-Arab-PK-OCC-019426` | `OLP-0081` / `OLP-0081-B017` | سموالے | `upstream/content/first-order-logic/sequent-calculus/soundness.tex:244-332` | `ps-Arab-PK/content/first-order-logic/sequent-calculus/soundness.tex:290-389` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 110–111 |
 
 ## DEC-OLND-001
 
@@ -24875,7 +24970,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019354` | `OLP-0085` / `OLP-0085-B008` | قاعدې او \usetoken{P}{derivation} | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `ps-Arab-PK/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 113 |
+| `ps-Arab-PK-OCC-019427` | `OLP-0085` / `OLP-0085-B008` | قاعدې او \usetoken{P}{derivation} | `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-43` | `ps-Arab-PK/content/first-order-logic/natural-deduction/rules-and-proofs.tex:31-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 113 |
 
 ## DEC-OLND-002
 
@@ -24895,7 +24990,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019355` | `OLP-0087` / `OLP-0087-B012` | د سورونو قاعدې | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `ps-Arab-PK/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-66` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 115 |
+| `ps-Arab-PK-OCC-019428` | `OLP-0087` / `OLP-0087-B012` | د سورونو قاعدې | `upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-61` | `ps-Arab-PK/content/first-order-logic/natural-deduction/quantifier-rules.tex:58-66` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 115 |
 
 ## DEC-OLND-003
 
@@ -24915,7 +25010,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019356` | `OLP-0089` / `OLP-0089-B013` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:113-147` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 118 |
+| `ps-Arab-PK-OCC-019429` | `OLP-0089` / `OLP-0089-B013` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:116-147` | `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:113-147` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 118 |
 
 ## DEC-OLND-004
 
@@ -24935,7 +25030,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019357` | `OLP-0089` / `OLP-0089-B011` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:55-93` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 117–118 |
+| `ps-Arab-PK-OCC-019430` | `OLP-0089` / `OLP-0089-B011` | د \usetoken{P}{derivation} بېلګې | `upstream/content/first-order-logic/natural-deduction/proving-things.tex:57-96` | `ps-Arab-PK/content/first-order-logic/natural-deduction/proving-things.tex:55-93` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 117–118 |
 
 ## DEC-OLND-005
 
@@ -24955,7 +25050,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019358` | `OLP-0092` / `OLP-0092-B011` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `ps-Arab-PK/content/first-order-logic/natural-deduction/provability-consistency.tex:64-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 126 |
+| `ps-Arab-PK-OCC-019431` | `OLP-0092` / `OLP-0092-B011` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/natural-deduction/provability-consistency.tex:63-75` | `ps-Arab-PK/content/first-order-logic/natural-deduction/provability-consistency.tex:64-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 126 |
 
 ## DEC-OLND-006
 
@@ -24975,7 +25070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019359` | `OLP-0095` / `OLP-0095-B021` | سموالے | `upstream/content/first-order-logic/natural-deduction/soundness.tex:211-214` | `ps-Arab-PK/content/first-order-logic/natural-deduction/soundness.tex:218-224` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 131 |
+| `ps-Arab-PK-OCC-019432` | `OLP-0095` / `OLP-0095-B021` | سموالے | `upstream/content/first-order-logic/natural-deduction/soundness.tex:211-214` | `ps-Arab-PK/content/first-order-logic/natural-deduction/soundness.tex:218-224` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 131 |
 
 ## DEC-OLTAB-001
 
@@ -24995,7 +25090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019360` | `OLP-0098` / `OLP-0098-B006` | fol | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-17` | `ps-Arab-PK/content/first-order-logic/tableaux/tableaux.tex:15-20` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 134 |
+| `ps-Arab-PK-OCC-019433` | `OLP-0098` / `OLP-0098-B006` | fol | `upstream/content/first-order-logic/tableaux/tableaux.tex:15-17` | `ps-Arab-PK/content/first-order-logic/tableaux/tableaux.tex:15-20` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 134 |
 
 ## DEC-OLTAB-002
 
@@ -25015,7 +25110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019361` | `OLP-0103` / `OLP-0103-B016` | د~\usetoken{P}{tableau} بېلګې | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `ps-Arab-PK/content/first-order-logic/tableaux/proving-things.tex:428-447` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 141 |
+| `ps-Arab-PK-OCC-019434` | `OLP-0103` / `OLP-0103-B016` | د~\usetoken{P}{tableau} بېلګې | `upstream/content/first-order-logic/tableaux/proving-things.tex:428-444` | `ps-Arab-PK/content/first-order-logic/tableaux/proving-things.tex:428-447` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 141 |
 
 ## DEC-OLTAB-003
 
@@ -25035,7 +25130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019362` | `OLP-0104` / `OLP-0104-B010` | له سورونو سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex:214-320` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 144–145 |
+| `ps-Arab-PK-OCC-019435` | `OLP-0104` / `OLP-0104-B010` | له سورونو سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/proving-things-quant.tex:212-315` | `ps-Arab-PK/content/first-order-logic/tableaux/proving-things-quant.tex:214-320` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 144–145 |
 
 ## DEC-OLTAB-004
 
@@ -25055,7 +25150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019363` | `OLP-0105` / `OLP-0105-B016` | ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 146 |
+| `ps-Arab-PK-OCC-019436` | `OLP-0105` / `OLP-0105-B016` | ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-109` | `ps-Arab-PK/content/first-order-logic/tableaux/proof-theoretic-notions.tex:98-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 146 |
 
 ## DEC-OLTAB-005
 
@@ -25075,7 +25170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019364` | `OLP-0106` / `OLP-0106-B008` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:24-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 147 |
+| `ps-Arab-PK-OCC-019437` | `OLP-0106` / `OLP-0106-B008` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:24-38` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:24-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 147 |
 
 ## DEC-OLTAB-006
 
@@ -25095,7 +25190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019365` | `OLP-0106` / `OLP-0106-B014` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:92-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 148 |
+| `ps-Arab-PK-OCC-019438` | `OLP-0106` / `OLP-0106-B014` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:92-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 148 |
 
 ## DEC-OLTAB-007
 
@@ -25115,7 +25210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019366` | `OLP-0106` / `OLP-0106-B014` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:92-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 148 |
+| `ps-Arab-PK-OCC-019439` | `OLP-0106` / `OLP-0106-B014` | \usetoken{S}{derivability} او سازګاري | `upstream/content/first-order-logic/tableaux/provability-consistency.tex:84-98` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-consistency.tex:92-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 148 |
 
 ## DEC-OLTAB-008
 
@@ -25135,7 +25230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019367` | `OLP-0107` / `OLP-0107-B009` | \usetoken{S}{derivability} او قضيوي رابطونه | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:35-73` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-propositional.tex:35-78` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 149 |
+| `ps-Arab-PK-OCC-019440` | `OLP-0107` / `OLP-0107-B009` | \usetoken{S}{derivability} او قضيوي رابطونه | `upstream/content/first-order-logic/tableaux/provability-propositional.tex:35-73` | `ps-Arab-PK/content/first-order-logic/tableaux/provability-propositional.tex:35-78` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 149 |
 
 ## DEC-OLTAB-009
 
@@ -25155,7 +25250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019368` | `OLP-0109` / `OLP-0109-B015` | سموالے | `upstream/content/first-order-logic/tableaux/soundness.tex:126-133` | `ps-Arab-PK/content/first-order-logic/tableaux/soundness.tex:124-135` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 153 |
+| `ps-Arab-PK-OCC-019441` | `OLP-0109` / `OLP-0109-B015` | سموالے | `upstream/content/first-order-logic/tableaux/soundness.tex:126-133` | `ps-Arab-PK/content/first-order-logic/tableaux/soundness.tex:124-135` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 153 |
 
 ## DEC-OLTAB-010
 
@@ -25175,7 +25270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019369` | `OLP-0110` / `OLP-0110-B009` | له \usetoken{S}{identity} سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/identity.tex:56-71` | `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:56-74` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 154 |
+| `ps-Arab-PK-OCC-019442` | `OLP-0110` / `OLP-0110-B009` | له \usetoken{S}{identity} سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/identity.tex:56-71` | `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:56-74` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 154 |
 
 ## DEC-OLTAB-011
 
@@ -25195,7 +25290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019370` | `OLP-0110` / `OLP-0110-B010` | له \usetoken{S}{identity} سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:76-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 154–155 |
+| `ps-Arab-PK-OCC-019443` | `OLP-0110` / `OLP-0110-B010` | له \usetoken{S}{identity} سره \usetoken{P}{tableau} | `upstream/content/first-order-logic/tableaux/identity.tex:73-91` | `ps-Arab-PK/content/first-order-logic/tableaux/identity.tex:76-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 154–155 |
 
 ## DEC-OLTAB-012
 
@@ -25215,7 +25310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019371` | `OLP-0111` / `OLP-0111-B009` | له \usetoken{S}{identity} سره سموالے | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex:30-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 155 |
+| `ps-Arab-PK-OCC-019444` | `OLP-0111` / `OLP-0111-B009` | له \usetoken{S}{identity} سره سموالے | `upstream/content/first-order-logic/tableaux/soundness-identity.tex:30-43` | `ps-Arab-PK/content/first-order-logic/tableaux/soundness-identity.tex:30-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 155 |
 
 ## DEC-OLAX-001
 
@@ -25235,7 +25330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019372` | `OLP-0113` / `OLP-0113-B008` | قاعدې او \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 156 |
+| `ps-Arab-PK-OCC-019445` | `OLP-0113` / `OLP-0113-B008` | قاعدې او \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-41` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex:37-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 156 |
 
 ## DEC-OLAX-002
 
@@ -25255,7 +25350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019373` | `OLP-0118` / `OLP-0118-B015` | ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-89` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 161 |
+| `ps-Arab-PK-OCC-019446` | `OLP-0118` / `OLP-0118-B015` | ثبوت-تيوريکي مفاهيم | `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:69-84` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:70-89` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 161 |
 
 ## DEC-OLAX-003
 
@@ -25275,7 +25370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019374` | `OLP-0119` / `OLP-0119-B014` | د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:63-76` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 162 |
+| `ps-Arab-PK-OCC-019447` | `OLP-0119` / `OLP-0119-B014` | د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64-73` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:63-76` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 162 |
 
 ## DEC-OLAX-004
 
@@ -25295,7 +25390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019375` | `OLP-0119` / `OLP-0119-B018` | د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106-124` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 162 |
+| `ps-Arab-PK-OCC-019448` | `OLP-0119` / `OLP-0119-B018` | د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:103-118` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106-124` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 162 |
 
 ## DEC-OLAX-005
 
@@ -25315,7 +25410,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019376` | `OLP-0120` / `OLP-0120-B009` | له کميت ټاکونکو سره د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:26-54` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 163 |
+| `ps-Arab-PK-OCC-019449` | `OLP-0120` / `OLP-0120-B009` | له کميت ټاکونکو سره د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:26-54` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 163 |
 
 ## DEC-OLAX-006
 
@@ -25335,7 +25430,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019377` | `OLP-0120` / `OLP-0120-B009` | له کميت ټاکونکو سره د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:26-54` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 163 |
+| `ps-Arab-PK-OCC-019450` | `OLP-0120` / `OLP-0120-B009` | له کميت ټاکونکو سره د استنتاج قضيه | `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:25-48` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:26-54` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 163 |
 
 ## DEC-OLAX-007
 
@@ -25355,7 +25450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019378` | `OLP-0122` / `OLP-0122-B008` | \usetoken{S}{derivability} او د قضیې نښلوونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:31-38` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:32-41` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 164–165 |
+| `ps-Arab-PK-OCC-019451` | `OLP-0122` / `OLP-0122-B008` | \usetoken{S}{derivability} او د قضیې نښلوونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:31-38` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:32-41` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 164–165 |
 
 ## DEC-OLAX-008
 
@@ -25375,7 +25470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019379` | `OLP-0122` / `OLP-0122-B010` | \usetoken{S}{derivability} او د قضیې نښلوونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:48-60` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:52-69` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 165 |
+| `ps-Arab-PK-OCC-019452` | `OLP-0122` / `OLP-0122-B010` | \usetoken{S}{derivability} او د قضیې نښلوونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:48-60` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:52-69` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 165 |
 
 ## DEC-OLAX-009
 
@@ -25395,7 +25490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019380` | `OLP-0123` / `OLP-0123-B009` | \usetoken{S}{derivability} او کميت ټاکونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-32` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 165 |
+| `ps-Arab-PK-OCC-019453` | `OLP-0123` / `OLP-0123-B009` | \usetoken{S}{derivability} او کميت ټاکونکي | `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-32` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:27-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 165 |
 
 ## DEC-OLAX-010
 
@@ -25415,7 +25510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019381` | `OLP-0124` / `OLP-0124-B013` | سموالے | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:87-107` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex:89-116` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 166 |
+| `ps-Arab-PK-OCC-019454` | `OLP-0124` / `OLP-0124-B013` | سموالے | `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:87-107` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/soundness.tex:89-116` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 166 |
 
 ## DEC-OLAX-011
 
@@ -25435,7 +25530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019382` | `OLP-0125` / `OLP-0125-B011` | له \usetoken{S}{identity} سره \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:38-40` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:38-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 167 |
+| `ps-Arab-PK-OCC-019455` | `OLP-0125` / `OLP-0125-B011` | له \usetoken{S}{identity} سره \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:38-40` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:38-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 167 |
 
 ## DEC-OLAX-012
 
@@ -25455,7 +25550,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019383` | `OLP-0125` / `OLP-0125-B012` | له \usetoken{S}{identity} سره \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:42-45` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:47-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 167 |
+| `ps-Arab-PK-OCC-019456` | `OLP-0125` / `OLP-0125-B012` | له \usetoken{S}{identity} سره \usetoken{P}{derivation} | `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:42-45` | `ps-Arab-PK/content/first-order-logic/axiomatic-deduction/identity.tex:47-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 167 |
 
 ## DEC-OLCOM-001
 
@@ -25475,7 +25570,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019384` | `OLP-0128` / `OLP-0128-B010` | د ثبوت لنډيز | `upstream/content/first-order-logic/completeness/outline.tex:66-80` | `ps-Arab-PK/content/first-order-logic/completeness/outline.tex:67-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 169 |
+| `ps-Arab-PK-OCC-019457` | `OLP-0128` / `OLP-0128-B010` | د ثبوت لنډيز | `upstream/content/first-order-logic/completeness/outline.tex:66-80` | `ps-Arab-PK/content/first-order-logic/completeness/outline.tex:67-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 169 |
 
 ## DEC-OLCOM-002
 
@@ -25495,7 +25590,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019385` | `OLP-0131` / `OLP-0131-B011` | د لينډنباوم لمه | `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:76-91` | `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex:78-99` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 173–174 |
+| `ps-Arab-PK-OCC-019458` | `OLP-0131` / `OLP-0131-B011` | د لينډنباوم لمه | `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:76-91` | `ps-Arab-PK/content/first-order-logic/completeness/lindenbaums-lemma.tex:78-99` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 173–174 |
 
 ## DEC-OLCOM-003
 
@@ -25515,7 +25610,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019386` | `OLP-0132` / `OLP-0132-B022` | د يو مدل جوړونه | `upstream/content/first-order-logic/completeness/construction-of-model.tex:238-247` | `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:248-261` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 176 |
+| `ps-Arab-PK-OCC-019459` | `OLP-0132` / `OLP-0132-B022` | د يو مدل جوړونه | `upstream/content/first-order-logic/completeness/construction-of-model.tex:238-247` | `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:248-261` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 176 |
 
 ## DEC-OLCOM-004
 
@@ -25535,7 +25630,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019387` | `OLP-0133` / `OLP-0133-B008` | عينيت | `upstream/content/first-order-logic/completeness/identity.tex:57-80` | `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:56-83` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 176–177 |
+| `ps-Arab-PK-OCC-019460` | `OLP-0133` / `OLP-0133-B008` | عينيت | `upstream/content/first-order-logic/completeness/identity.tex:57-80` | `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:56-83` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 176–177 |
 
 ## DEC-OLCOM-005
 
@@ -25555,7 +25650,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019388` | `OLP-0133` / `OLP-0133-B012` | عينيت | `upstream/content/first-order-logic/completeness/identity.tex:113-133` | `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:116-139` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 177 |
+| `ps-Arab-PK-OCC-019461` | `OLP-0133` / `OLP-0133-B012` | عينيت | `upstream/content/first-order-logic/completeness/identity.tex:113-133` | `ps-Arab-PK/content/first-order-logic/completeness/identity.tex:116-139` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 177 |
 
 ## DEC-OLCOM-006
 
@@ -25575,7 +25670,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019389` | `OLP-0135` / `OLP-0135-B017` | د متناهي شاهد قضيه | `upstream/content/first-order-logic/completeness/compactness.tex:184-197` | `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex:191-210` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 180 |
+| `ps-Arab-PK-OCC-019462` | `OLP-0135` / `OLP-0135-B017` | د متناهي شاهد قضيه | `upstream/content/first-order-logic/completeness/compactness.tex:184-197` | `ps-Arab-PK/content/first-order-logic/completeness/compactness.tex:191-210` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 180 |
 
 ## DEC-OLCOM-007
 
@@ -25595,7 +25690,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019390` | `OLP-0136` / `OLP-0136-B022` | د متناهي شاهد قضيې نېغ ثبوت | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:128-159` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 181–182 |
+| `ps-Arab-PK-OCC-019463` | `OLP-0136` / `OLP-0136-B022` | د متناهي شاهد قضيې نېغ ثبوت | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:128-159` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 181–182 |
 
 ## DEC-OLCOM-008
 
@@ -25615,7 +25710,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019391` | `OLP-0132` / `OLP-0132-B009` | د يو مدل جوړونه | `upstream/content/first-order-logic/completeness/construction-of-model.tex:78-97` | `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:78-102` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 174–175 |
+| `ps-Arab-PK-OCC-019464` | `OLP-0132` / `OLP-0132-B009` | د يو مدل جوړونه | `upstream/content/first-order-logic/completeness/construction-of-model.tex:78-97` | `ps-Arab-PK/content/first-order-logic/completeness/construction-of-model.tex:78-102` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 174–175 |
 
 ## DEC-OLCOM-009
 
@@ -25635,7 +25730,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019392` | `OLP-0136` / `OLP-0136-B022` | د متناهي شاهد قضيې نېغ ثبوت | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:128-159` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 181–182 |
+| `ps-Arab-PK-OCC-019465` | `OLP-0136` / `OLP-0136-B022` | د متناهي شاهد قضيې نېغ ثبوت | `upstream/content/first-order-logic/completeness/compactness-direct.tex:128-143` | `ps-Arab-PK/content/first-order-logic/completeness/compactness-direct.tex:128-159` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 181–182 |
 
 ## DEC-OLFOL-001
 
@@ -25655,7 +25750,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019393` | `OLP-0140` / `OLP-0140-B007` | د لومړۍ درجې منطق | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex:31-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 185 |
+| `ps-Arab-PK-OCC-019466` | `OLP-0140` / `OLP-0140-B007` | د لومړۍ درجې منطق | `upstream/content/first-order-logic/introduction/first-order-logic.tex:33-58` | `ps-Arab-PK/content/first-order-logic/introduction/first-order-logic.tex:31-58` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 185 |
 
 ## DEC-OLFOL-002
 
@@ -25675,7 +25770,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019394` | `OLP-0143` / `OLP-0143-B006` | صدق | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:13-29` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 187 |
+| `ps-Arab-PK-OCC-019467` | `OLP-0143` / `OLP-0143-B006` | صدق | `upstream/content/first-order-logic/introduction/satisfaction.tex:13-25` | `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:13-29` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 187 |
 
 ## DEC-OLFOL-003
 
@@ -25695,7 +25790,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019395` | `OLP-0143` / `OLP-0143-B008` | صدق | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:55-73` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 188 |
+| `ps-Arab-PK-OCC-019468` | `OLP-0143` / `OLP-0143-B008` | صدق | `upstream/content/first-order-logic/introduction/satisfaction.tex:52-67` | `ps-Arab-PK/content/first-order-logic/introduction/satisfaction.tex:55-73` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 188 |
 
 ## DEC-OLFOL-004
 
@@ -25715,7 +25810,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019396` | `OLP-0146` / `OLP-0146-B006` | ځايناستي | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex:13-31` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 190 |
+| `ps-Arab-PK-OCC-019469` | `OLP-0146` / `OLP-0146-B006` | ځايناستي | `upstream/content/first-order-logic/introduction/substitution.tex:13-28` | `ps-Arab-PK/content/first-order-logic/introduction/substitution.tex:13-31` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 190 |
 
 ## DEC-OLFOL-005
 
@@ -25735,7 +25830,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019397` | `OLP-0152` / `OLP-0152-B032` | ترمونه او \printtoken{P}{formula} | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:141-146` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019470` | `OLP-0152` / `OLP-0152-B032` | ترمونه او \printtoken{P}{formula} | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:147-148` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:141-146` | pending; no page guessed |
 
 ## DEC-OLFOL-006
 
@@ -25755,7 +25850,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019398` | `OLP-0152` / `OLP-0152-B036` | ترمونه او \printtoken{P}{formula} | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 194 |
+| `ps-Arab-PK-OCC-019471` | `OLP-0152` / `OLP-0152-B036` | ترمونه او \printtoken{P}{formula} | `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-168` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:160-170` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 194 |
 
 ## DEC-OLFOL-007
 
@@ -25775,7 +25870,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019399` | `OLP-0154` / `OLP-0154-B018` | د فارمول \printtoken{S}{main operator} | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex:78-101` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 198 |
+| `ps-Arab-PK-OCC-019472` | `OLP-0154` / `OLP-0154-B018` | د فارمول \printtoken{S}{main operator} | `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:79-99` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/main-operator.tex:78-101` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 198 |
 
 ## DEC-OLFOL-008
 
@@ -25795,7 +25890,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019400` | `OLP-0156` / `OLP-0156-B009` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:37-48` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 200 |
+| `ps-Arab-PK-OCC-019473` | `OLP-0156` / `OLP-0156-B009` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:40-49` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:37-48` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 200 |
 
 ## DEC-OLFOL-009
 
@@ -25815,7 +25910,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019401` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
+| `ps-Arab-PK-OCC-019474` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
 
 ## DEC-OLFOL-010
 
@@ -25835,7 +25930,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019402` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
+| `ps-Arab-PK-OCC-019475` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
 
 ## DEC-OLFOL-011
 
@@ -25855,7 +25950,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019403` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
+| `ps-Arab-PK-OCC-019476` | `OLP-0156` / `OLP-0156-B021` | جوړښتي لړۍ | `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:182-210` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:176-205` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 201–202 |
 
 ## DEC-OLFOL-012
 
@@ -25875,7 +25970,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019404` | `OLP-0161` / `OLP-0161-B011` | د لومړۍ درجې ژبو \printtoken{P}{structure} | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex:72-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 207 |
+| `ps-Arab-PK-OCC-019477` | `OLP-0161` / `OLP-0161-B011` | د لومړۍ درجې ژبو \printtoken{P}{structure} | `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:75-80` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/structures.tex:72-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 207 |
 
 ## DEC-OLFOL-013
 
@@ -25895,7 +25990,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019405` | `OLP-0162` / `OLP-0162-B009` | پوښل شوي \printtoken{P}{structure} د لومړۍ درجې ژبو دپاره | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-71` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 208 |
+| `ps-Arab-PK-OCC-019478` | `OLP-0162` / `OLP-0162-B009` | پوښل شوي \printtoken{P}{structure} د لومړۍ درجې ژبو دپاره | `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:36-66` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/covered-structures.tex:37-71` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 208 |
 
 ## DEC-OLFOL-014
 
@@ -25915,7 +26010,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019406` | `OLP-0153` / `OLP-0153-B006` | يوازينے لوست | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-23` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 195 |
+| `ps-Arab-PK-OCC-019479` | `OLP-0153` / `OLP-0153-B006` | يوازينے لوست | `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-21` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/unique-readability.tex:13-23` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 195 |
 
 ## DEC-OLFOL-015
 
@@ -25935,7 +26030,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019407` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019480` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-016
 
@@ -25955,7 +26050,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019408` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019481` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-017
 
@@ -25975,7 +26070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019409` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019482` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-018
 
@@ -25995,7 +26090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019410` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019483` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-019
 
@@ -26015,7 +26110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019411` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019484` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-020
 
@@ -26035,7 +26130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019412` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
+| `ps-Arab-PK-OCC-019485` | `OLP-0163` / `OLP-0163-B039` | په \article{structure} \printtoken{S}{structure} کښې د \article{formula} \printtoken{S}{formula} صدق | `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347-364` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/satisfaction.tex:356-380` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 212 |
 
 ## DEC-OLFOL-021
 
@@ -26055,7 +26150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019413` | `OLP-0164` / `OLP-0164-B014` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:83-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 213–214 |
+| `ps-Arab-PK-OCC-019486` | `OLP-0164` / `OLP-0164-B014` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:82-105` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:83-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 213–214 |
 
 ## DEC-OLFOL-022
 
@@ -26075,7 +26170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019414` | `OLP-0164` / `OLP-0164-B022` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:181-211` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 214 |
+| `ps-Arab-PK-OCC-019487` | `OLP-0164` / `OLP-0164-B022` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:174-196` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:181-211` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 214 |
 
 ## DEC-OLFOL-023
 
@@ -26095,7 +26190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019415` | `OLP-0164` / `OLP-0164-B029` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:252-261` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 215 |
+| `ps-Arab-PK-OCC-019488` | `OLP-0164` / `OLP-0164-B029` | د متغيرونو ګومارنې | `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:239-244` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/assignments.tex:252-261` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 215 |
 
 ## DEC-OLFOL-024
 
@@ -26115,7 +26210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019416` | `OLP-0165` / `OLP-0165-B018` | امتداديتوب | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex:89-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 217 |
+| `ps-Arab-PK-OCC-019489` | `OLP-0165` / `OLP-0165-B018` | امتداديتوب | `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:86-103` | `ps-Arab-PK/content/first-order-logic/syntax-and-semantics/extensionality.tex:89-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 217 |
 
 ## DEC-OLFOL-025
 
@@ -26135,7 +26230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019417` | `OLP-0171` / `OLP-0171-B009` | په \article{structure} \printtoken{S}{structure} کښې د اړيکو بيانول | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex:55-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 224 |
+| `ps-Arab-PK-OCC-019490` | `OLP-0171` / `OLP-0171-B009` | په \article{structure} \printtoken{S}{structure} کښې د اړيکو بيانول | `upstream/content/first-order-logic/models-theories/expressing-relations.tex:55-67` | `ps-Arab-PK/content/first-order-logic/models-theories/expressing-relations.tex:55-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 224 |
 
 ## DEC-OLFOL-026
 
@@ -26155,7 +26250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019418` | `OLP-0172` / `OLP-0172-B011` | د سټونو تيوري | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:107-128` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 226 |
+| `ps-Arab-PK-OCC-019491` | `OLP-0172` / `OLP-0172-B011` | د سټونو تيوري | `upstream/content/first-order-logic/models-theories/set-theory.tex:112-129` | `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:107-128` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 226 |
 
 ## DEC-OLFOL-027
 
@@ -26175,7 +26270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019419` | `OLP-0172` / `OLP-0172-B012` | د سټونو تيوري | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:130-149` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 226 |
+| `ps-Arab-PK-OCC-019492` | `OLP-0172` / `OLP-0172-B012` | د سټونو تيوري | `upstream/content/first-order-logic/models-theories/set-theory.tex:131-147` | `ps-Arab-PK/content/first-order-logic/models-theories/set-theory.tex:130-149` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 226 |
 
 ## DEC-OLFOL-028
 
@@ -26195,7 +26290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019420` | `OLP-0173` / `OLP-0173-B007` | د \printtoken{P}{structure} د کچې بيانول | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:21-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 227 |
+| `ps-Arab-PK-OCC-019493` | `OLP-0173` / `OLP-0173-B007` | د \printtoken{P}{structure} د کچې بيانول | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:21-35` | `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:21-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 227 |
 
 ## DEC-OLFOL-029
 
@@ -26215,7 +26310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019421` | `OLP-0173` / `OLP-0173-B009` | د \printtoken{P}{structure} د کچې بيانول | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:43-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 227 |
+| `ps-Arab-PK-OCC-019494` | `OLP-0173` / `OLP-0173-B009` | د \printtoken{P}{structure} د کچې بيانول | `upstream/content/first-order-logic/models-theories/size-of-structures.tex:39-54` | `ps-Arab-PK/content/first-order-logic/models-theories/size-of-structures.tex:43-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 227 |
 
 ## DEC-OLFOL-030
 
@@ -26235,7 +26330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019422` | `OLP-0176` / `OLP-0176-B008` | د ډېرو ډولونو منطق | `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42` | `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex:27-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 230 |
+| `ps-Arab-PK-OCC-019495` | `OLP-0176` / `OLP-0176-B008` | د ډېرو ډولونو منطق | `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:28-42` | `ps-Arab-PK/content/first-order-logic/beyond/many-sorted-logic.tex:27-43` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 230 |
 
 ## DEC-OLFOL-031
 
@@ -26255,7 +26350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019423` | `OLP-0177` / `OLP-0177-B007` | د دويمې درجې منطق | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:30-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 230–231 |
+| `ps-Arab-PK-OCC-019496` | `OLP-0177` / `OLP-0177-B007` | د دويمې درجې منطق | `upstream/content/first-order-logic/beyond/second-order-logic.tex:30-65` | `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:30-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 230–231 |
 
 ## DEC-OLFOL-032
 
@@ -26275,7 +26370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019424` | `OLP-0177` / `OLP-0177-B011` | د دويمې درجې منطق | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:125-164` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 232 |
+| `ps-Arab-PK-OCC-019497` | `OLP-0177` / `OLP-0177-B011` | د دويمې درجې منطق | `upstream/content/first-order-logic/beyond/second-order-logic.tex:129-167` | `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:125-164` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 232 |
 
 ## DEC-OLFOL-033
 
@@ -26295,7 +26390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019425` | `OLP-0178` / `OLP-0178-B008` | د لوړې درجې منطق | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex:41-94` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 234 |
+| `ps-Arab-PK-OCC-019498` | `OLP-0178` / `OLP-0178-B008` | د لوړې درجې منطق | `upstream/content/first-order-logic/beyond/higher-order-logic.tex:40-93` | `ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex:41-94` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 234 |
 
 ## DEC-OLMOD-001
 
@@ -26315,7 +26410,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019426` | `OLP-0187` / `OLP-0187-B009` | آيزومورف جوړښتونه | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:65-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 244–245 |
+| `ps-Arab-PK-OCC-019499` | `OLP-0187` / `OLP-0187-B009` | آيزومورف جوړښتونه | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:65-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 244–245 |
 
 ## DEC-OLMOD-002
 
@@ -26335,7 +26430,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019427` | `OLP-0187` / `OLP-0187-B009` | آيزومورف جوړښتونه | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:65-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 244–245 |
+| `ps-Arab-PK-OCC-019500` | `OLP-0187` / `OLP-0187-B009` | آيزومورف جوړښتونه | `upstream/content/model-theory/basics/isomorphism.tex:67-106` | `ps-Arab-PK/content/model-theory/basics/isomorphism.tex:65-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 244–245 |
 
 ## DEC-OLMOD-003
 
@@ -26355,7 +26450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019428` | `OLP-0189` / `OLP-0189-B019` | partial-iso | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `ps-Arab-PK/content/model-theory/basics/partial-iso.tex:143-164` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 247 |
+| `ps-Arab-PK-OCC-019501` | `OLP-0189` / `OLP-0189-B019` | partial-iso | `upstream/content/model-theory/basics/partial-iso.tex:143-158` | `ps-Arab-PK/content/model-theory/basics/partial-iso.tex:143-164` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 247 |
 
 ## DEC-OLMOD-004
 
@@ -26375,7 +26470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019429` | `OLP-0192` / `OLP-0192-B007` | introduction | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex:51-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 250–251 |
+| `ps-Arab-PK-OCC-019502` | `OLP-0192` / `OLP-0192-B007` | introduction | `upstream/content/model-theory/models-of-arithmetic/introduction.tex:55-70` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/introduction.tex:51-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 250–251 |
 
 ## DEC-OLMOD-005
 
@@ -26395,7 +26490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019430` | `OLP-0193` / `OLP-0193-B018` | د حساب معياري مدلونه | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex:154-179` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 252 |
+| `ps-Arab-PK-OCC-019503` | `OLP-0193` / `OLP-0193-B018` | د حساب معياري مدلونه | `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:152-171` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/standard-models.tex:154-179` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 252 |
 
 ## DEC-OLMOD-006
 
@@ -26415,7 +26510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019431` | `OLP-0194` / `OLP-0194-B014` | non-standard-models | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-123` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 253–254 |
+| `ps-Arab-PK-OCC-019504` | `OLP-0194` / `OLP-0194-B014` | non-standard-models | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-123` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 253–254 |
 
 ## DEC-OLMOD-007
 
@@ -26435,7 +26530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019432` | `OLP-0194` / `OLP-0194-B014` | non-standard-models | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-123` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 253–254 |
+| `ps-Arab-PK-OCC-019505` | `OLP-0194` / `OLP-0194-B014` | non-standard-models | `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:100-113` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/non-standard-models.tex:99-123` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 253–254 |
 
 ## DEC-OLMOD-008
 
@@ -26455,7 +26550,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019433` | `OLP-0195` / `OLP-0195-B008` | models-of-q | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:96-115` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 254–255 |
+| `ps-Arab-PK-OCC-019506` | `OLP-0195` / `OLP-0195-B008` | models-of-q | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:94-111` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:96-115` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 254–255 |
 
 ## DEC-OLMOD-009
 
@@ -26475,7 +26570,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019434` | `OLP-0195` / `OLP-0195-B011` | models-of-q | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:137-182` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 255–256 |
+| `ps-Arab-PK-OCC-019507` | `OLP-0195` / `OLP-0195-B011` | models-of-q | `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:133-174` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-q.tex:137-182` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 255–256 |
 
 ## DEC-OLMOD-010
 
@@ -26495,7 +26590,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019435` | `OLP-0196` / `OLP-0196-B010` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-72` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 256–257 |
+| `ps-Arab-PK-OCC-019508` | `OLP-0196` / `OLP-0196-B010` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:60-67` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:61-72` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 256–257 |
 
 ## DEC-OLMOD-011
 
@@ -26515,7 +26610,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019436` | `OLP-0196` / `OLP-0196-B026` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:188-200` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258 |
+| `ps-Arab-PK-OCC-019509` | `OLP-0196` / `OLP-0196-B026` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:178-186` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:188-200` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258 |
 
 ## DEC-OLMOD-012
 
@@ -26535,7 +26630,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019437` | `OLP-0196` / `OLP-0196-B033` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:236-245` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258 |
+| `ps-Arab-PK-OCC-019510` | `OLP-0196` / `OLP-0196-B033` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:222-228` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:236-245` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258 |
 
 ## DEC-OLMOD-013
 
@@ -26555,7 +26650,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019438` | `OLP-0196` / `OLP-0196-B035` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:254-277` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258–259 |
+| `ps-Arab-PK-OCC-019511` | `OLP-0196` / `OLP-0196-B035` | models-of-pa | `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:238-260` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/models-of-pa.tex:254-277` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 258–259 |
 
 ## DEC-OLMOD-014
 
@@ -26575,7 +26670,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019439` | `OLP-0197` / `OLP-0197-B008` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:47-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
+| `ps-Arab-PK-OCC-019512` | `OLP-0197` / `OLP-0197-B008` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:47-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
 
 ## DEC-OLMOD-015
 
@@ -26595,7 +26690,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019440` | `OLP-0197` / `OLP-0197-B008` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:47-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
+| `ps-Arab-PK-OCC-019513` | `OLP-0197` / `OLP-0197-B008` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:42-75` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:47-86` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
 
 ## DEC-OLMOD-016
 
@@ -26615,7 +26710,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019441` | `OLP-0197` / `OLP-0197-B012` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:122-127` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 260 |
+| `ps-Arab-PK-OCC-019514` | `OLP-0197` / `OLP-0197-B012` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:112-117` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:122-127` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 260 |
 
 ## DEC-OLMOD-017
 
@@ -26635,7 +26730,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019442` | `OLP-0200` / `OLP-0200-B010` | د \printtoken{P}{sentence} بېلول | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `ps-Arab-PK/content/model-theory/interpolation/separation.tex:60-91` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 262 |
+| `ps-Arab-PK-OCC-019515` | `OLP-0200` / `OLP-0200-B010` | د \printtoken{P}{sentence} بېلول | `upstream/content/model-theory/interpolation/separation.tex:58-83` | `ps-Arab-PK/content/model-theory/interpolation/separation.tex:60-91` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 262 |
 
 ## DEC-OLMOD-018
 
@@ -26655,7 +26750,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019443` | `OLP-0201` / `OLP-0201-B010` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:38-108` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 263 |
+| `ps-Arab-PK-OCC-019516` | `OLP-0201` / `OLP-0201-B010` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:39-98` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:38-108` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 263 |
 
 ## DEC-OLMOD-019
 
@@ -26675,7 +26770,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019444` | `OLP-0201` / `OLP-0201-B016` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:178-208` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 264 |
+| `ps-Arab-PK-OCC-019517` | `OLP-0201` / `OLP-0201-B016` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:178-208` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 264 |
 
 ## DEC-OLMOD-020
 
@@ -26695,7 +26790,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019445` | `OLP-0201` / `OLP-0201-B016` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:178-208` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 264 |
+| `ps-Arab-PK-OCC-019518` | `OLP-0201` / `OLP-0201-B016` | د کرېګ د منځګړيتوب قضيه | `upstream/content/model-theory/interpolation/interpolation-proof.tex:165-181` | `ps-Arab-PK/content/model-theory/interpolation/interpolation-proof.tex:178-208` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 264 |
 
 ## DEC-OLMOD-021
 
@@ -26715,7 +26810,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019446` | `OLP-0202` / `OLP-0202-B010` | د تعريف‌وړتيا قضيه | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `ps-Arab-PK/content/model-theory/interpolation/definability.tex:66-74` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 265 |
+| `ps-Arab-PK-OCC-019519` | `OLP-0202` / `OLP-0202-B010` | د تعريف‌وړتيا قضيه | `upstream/content/model-theory/interpolation/definability.tex:66-69` | `ps-Arab-PK/content/model-theory/interpolation/definability.tex:66-74` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 265 |
 
 ## DEC-OLMOD-022
 
@@ -26735,7 +26830,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019447` | `OLP-0202` / `OLP-0202-B011` | د تعريف‌وړتيا قضيه | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `ps-Arab-PK/content/model-theory/interpolation/definability.tex:76-139` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 265–266 |
+| `ps-Arab-PK-OCC-019520` | `OLP-0202` / `OLP-0202-B011` | د تعريف‌وړتيا قضيه | `upstream/content/model-theory/interpolation/definability.tex:71-126` | `ps-Arab-PK/content/model-theory/interpolation/definability.tex:76-139` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 265–266 |
 
 ## DEC-OLMOD-023
 
@@ -26755,7 +26850,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019448` | `OLP-0197` / `OLP-0197-B006` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:24-38` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
+| `ps-Arab-PK-OCC-019521` | `OLP-0197` / `OLP-0197-B006` | computable-models | `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:25-33` | `ps-Arab-PK/content/model-theory/models-of-arithmetic/computable-models.tex:24-38` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 259 |
 
 ## DEC-OLMOD-024
 
@@ -26775,7 +26870,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019449` | `OLP-0205` / `OLP-0205-B008` | انتزاعي منطقونه | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:46-114` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 267–268 |
+| `ps-Arab-PK-OCC-019522` | `OLP-0205` / `OLP-0205-B008` | انتزاعي منطقونه | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:46-114` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 267–268 |
 
 ## DEC-OLMOD-025
 
@@ -26795,7 +26890,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019450` | `OLP-0205` / `OLP-0205-B008` | انتزاعي منطقونه | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:46-114` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 267–268 |
+| `ps-Arab-PK-OCC-019523` | `OLP-0205` / `OLP-0205-B008` | انتزاعي منطقونه | `upstream/content/model-theory/lindstrom/abstract-logics.tex:48-106` | `ps-Arab-PK/content/model-theory/lindstrom/abstract-logics.tex:46-114` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 267–268 |
 
 ## DEC-OLMOD-026
 
@@ -26815,7 +26910,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019451` | `OLP-0206` / `OLP-0206-B015` | د متناهي شاهد او لوېنهايم--سکولم خاصيتونه | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:109-131` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 269–270 |
+| `ps-Arab-PK-OCC-019524` | `OLP-0206` / `OLP-0206-B015` | د متناهي شاهد او لوېنهايم--سکولم خاصيتونه | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:109-131` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 269–270 |
 
 ## DEC-OLMOD-027
 
@@ -26835,7 +26930,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019452` | `OLP-0206` / `OLP-0206-B015` | د متناهي شاهد او لوېنهايم--سکولم خاصيتونه | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:109-131` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 269–270 |
+| `ps-Arab-PK-OCC-019525` | `OLP-0206` / `OLP-0206-B015` | د متناهي شاهد او لوېنهايم--سکولم خاصيتونه | `upstream/content/model-theory/lindstrom/ls-property.tex:109-122` | `ps-Arab-PK/content/model-theory/lindstrom/ls-property.tex:109-131` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 269–270 |
 
 ## DEC-OLMOD-028
 
@@ -26855,7 +26950,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019453` | `OLP-0207` / `OLP-0207-B007` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:24-44` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270 |
+| `ps-Arab-PK-OCC-019526` | `OLP-0207` / `OLP-0207-B007` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:24-36` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:24-44` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270 |
 
 ## DEC-OLMOD-029
 
@@ -26875,7 +26970,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019454` | `OLP-0207` / `OLP-0207-B009` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:56-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270 |
+| `ps-Arab-PK-OCC-019527` | `OLP-0207` / `OLP-0207-B009` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:47-52` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:56-65` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270 |
 
 ## DEC-OLMOD-030
 
@@ -26895,7 +26990,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019455` | `OLP-0207` / `OLP-0207-B012` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:95-115` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270–271 |
+| `ps-Arab-PK-OCC-019528` | `OLP-0207` / `OLP-0207-B012` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:82-98` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:95-115` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 270–271 |
 
 ## DEC-OLMOD-031
 
@@ -26915,7 +27010,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019456` | `OLP-0207` / `OLP-0207-B014` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:126-155` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 271 |
+| `ps-Arab-PK-OCC-019529` | `OLP-0207` / `OLP-0207-B014` | د ليندستروم قضيه | `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:107-122` | `ps-Arab-PK/content/model-theory/lindstrom/lindstrom-proof.tex:126-155` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 271 |
 
 ## DEC-OLCMP-001
 
@@ -26935,7 +27030,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019457` | `OLP-0210` / `OLP-0210-B007` | پېژندګلو | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `ps-Arab-PK/content/computability/recursive-functions/introduction.tex:39-53` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 274 |
+| `ps-Arab-PK-OCC-019530` | `OLP-0210` / `OLP-0210-B007` | پېژندګلو | `upstream/content/computability/recursive-functions/introduction.tex:41-52` | `ps-Arab-PK/content/computability/recursive-functions/introduction.tex:39-53` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 274 |
 
 ## DEC-OLCMP-002
 
@@ -26955,7 +27050,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019458` | `OLP-0211` / `OLP-0211-B005` | بنسټيز بازګښت | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex:12-28` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 275 |
+| `ps-Arab-PK-OCC-019531` | `OLP-0211` / `OLP-0211-B005` | بنسټيز بازګښت | `upstream/content/computability/recursive-functions/primitive-recursion.tex:12-24` | `ps-Arab-PK/content/computability/recursive-functions/primitive-recursion.tex:12-28` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 275 |
 
 ## DEC-OLCMP-003
 
@@ -26975,7 +27070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019459` | `OLP-0212` / `OLP-0212-B006` | ترکيب | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `ps-Arab-PK/content/computability/recursive-functions/composition.tex:17-31` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 276–277 |
+| `ps-Arab-PK-OCC-019532` | `OLP-0212` / `OLP-0212-B006` | ترکيب | `upstream/content/computability/recursive-functions/composition.tex:17-27` | `ps-Arab-PK/content/computability/recursive-functions/composition.tex:17-31` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 276–277 |
 
 ## DEC-OLCMP-004
 
@@ -26995,7 +27090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019460` | `OLP-0212` / `OLP-0212-B007` | ترکيب | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `ps-Arab-PK/content/computability/recursive-functions/composition.tex:33-52` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 277 |
+| `ps-Arab-PK-OCC-019533` | `OLP-0212` / `OLP-0212-B007` | ترکيب | `upstream/content/computability/recursive-functions/composition.tex:29-46` | `ps-Arab-PK/content/computability/recursive-functions/composition.tex:33-52` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 277 |
 
 ## DEC-OLCMP-005
 
@@ -27015,7 +27110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019461` | `OLP-0213` / `OLP-0213-B011` | بنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex:65-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 278 |
+| `ps-Arab-PK-OCC-019534` | `OLP-0213` / `OLP-0213-B011` | بنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/pr-functions.tex:69-80` | `ps-Arab-PK/content/computability/recursive-functions/pr-functions.tex:65-79` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 278 |
 
 ## DEC-OLCMP-006
 
@@ -27035,7 +27130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019462` | `OLP-0217` / `OLP-0217-B007` | بنسټيزې بازګشتي اړيکې | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex:31-36` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 283–284 |
+| `ps-Arab-PK-OCC-019535` | `OLP-0217` / `OLP-0217-B007` | بنسټيزې بازګشتي اړيکې | `upstream/content/computability/recursive-functions/pr-relations.tex:38-45` | `ps-Arab-PK/content/computability/recursive-functions/pr-relations.tex:31-36` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 283–284 |
 
 ## DEC-OLCMP-007
 
@@ -27055,7 +27150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019463` | `OLP-0218` / `OLP-0218-B008` | محدوده کمينه‌موندنه | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex:27-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 286 |
+| `ps-Arab-PK-OCC-019536` | `OLP-0218` / `OLP-0218-B008` | محدوده کمينه‌موندنه | `upstream/content/computability/recursive-functions/bounded-minimization.tex:41-62` | `ps-Arab-PK/content/computability/recursive-functions/bounded-minimization.tex:27-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 286 |
 
 ## DEC-OLCMP-008
 
@@ -27075,7 +27170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019464` | `OLP-0219` / `OLP-0219-B005` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:12-17` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 286–287 |
+| `ps-Arab-PK-OCC-019537` | `OLP-0219` / `OLP-0219-B005` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:12-27` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:12-17` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 286–287 |
 
 ## DEC-OLCMP-009
 
@@ -27095,7 +27190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019465` | `OLP-0219` / `OLP-0219-B008` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:28-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 287 |
+| `ps-Arab-PK-OCC-019538` | `OLP-0219` / `OLP-0219-B008` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:46-62` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:28-39` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 287 |
 
 ## DEC-OLCMP-010
 
@@ -27115,7 +27210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019466` | `OLP-0219` / `OLP-0219-B009` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:64-74` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:41-42` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 287 |
+| `ps-Arab-PK-OCC-019539` | `OLP-0219` / `OLP-0219-B009` | اوليه عددونه | `upstream/content/computability/recursive-functions/primes.tex:64-74` | `ps-Arab-PK/content/computability/recursive-functions/primes.tex:41-42` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 287 |
 
 ## DEC-OLCMP-011
 
@@ -27135,7 +27230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019467` | `OLP-0220` / `OLP-0220-B018` | لړۍ | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:106-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 289 |
+| `ps-Arab-PK-OCC-019540` | `OLP-0220` / `OLP-0220-B018` | لړۍ | `upstream/content/computability/recursive-functions/sequences.tex:144-154` | `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:106-112` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 289 |
 
 ## DEC-OLCMP-012
 
@@ -27155,7 +27250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019468` | `OLP-0220` / `OLP-0220-B019` | لړۍ | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:114-121` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 289 |
+| `ps-Arab-PK-OCC-019541` | `OLP-0220` / `OLP-0220-B019` | لړۍ | `upstream/content/computability/recursive-functions/sequences.tex:156-168` | `ps-Arab-PK/content/computability/recursive-functions/sequences.tex:114-121` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 289 |
 
 ## DEC-OLCMP-013
 
@@ -27175,7 +27270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019469` | `OLP-0221` / `OLP-0221-B008` | ونې | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `ps-Arab-PK/content/computability/recursive-functions/trees.tex:21-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 290–291 |
+| `ps-Arab-PK-OCC-019542` | `OLP-0221` / `OLP-0221-B008` | ونې | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `ps-Arab-PK/content/computability/recursive-functions/trees.tex:21-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 290–291 |
 
 ## DEC-OLCMP-014
 
@@ -27195,7 +27290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019470` | `OLP-0221` / `OLP-0221-B008` | ونې | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `ps-Arab-PK/content/computability/recursive-functions/trees.tex:21-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 290–291 |
+| `ps-Arab-PK-OCC-019543` | `OLP-0221` / `OLP-0221-B008` | ونې | `upstream/content/computability/recursive-functions/trees.tex:37-68` | `ps-Arab-PK/content/computability/recursive-functions/trees.tex:21-37` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 290–291 |
 
 ## DEC-OLCMP-015
 
@@ -27215,7 +27310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019471` | `OLP-0223` / `OLP-0223-B007` | نابنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:30-40` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 292 |
+| `ps-Arab-PK-OCC-019544` | `OLP-0223` / `OLP-0223-B007` | نابنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:30-40` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 292 |
 
 ## DEC-OLCMP-016
 
@@ -27235,7 +27330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019472` | `OLP-0223` / `OLP-0223-B007` | نابنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:30-40` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 292 |
+| `ps-Arab-PK-OCC-019545` | `OLP-0223` / `OLP-0223-B007` | نابنسټيزې بازګشتي تابعې | `upstream/content/computability/recursive-functions/non-pr-functions.tex:45-65` | `ps-Arab-PK/content/computability/recursive-functions/non-pr-functions.tex:30-40` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 292 |
 
 ## DEC-OLCMP-017
 
@@ -27255,7 +27350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019473` | `OLP-0226` / `OLP-0226-B006` | د درېدنې مسئله | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex:26-52` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 295 |
+| `ps-Arab-PK-OCC-019546` | `OLP-0226` / `OLP-0226-B006` | د درېدنې مسئله | `upstream/content/computability/recursive-functions/halting-problem.tex:27-48` | `ps-Arab-PK/content/computability/recursive-functions/halting-problem.tex:26-52` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 295 |
 
 ## DEC-OLCMP-018
 
@@ -27275,7 +27370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019474` | `OLP-0229` / `OLP-0229-B007` | پېژندنه | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `ps-Arab-PK/content/computability/computability-theory/introduction.tex:28-42` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 297 |
+| `ps-Arab-PK-OCC-019547` | `OLP-0229` / `OLP-0229-B007` | پېژندنه | `upstream/content/computability/computability-theory/introduction.tex:29-39` | `ps-Arab-PK/content/computability/computability-theory/introduction.tex:28-42` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 297 |
 
 ## DEC-OLCMP-019
 
@@ -27295,7 +27390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019475` | `OLP-0232` / `OLP-0232-B007` | د $s$-$m$-$n$ قضيه | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex:30-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 299–300 |
+| `ps-Arab-PK-OCC-019548` | `OLP-0232` / `OLP-0232-B007` | د $s$-$m$-$n$ قضيه | `upstream/content/computability/computability-theory/s-m-n.tex:30-41` | `ps-Arab-PK/content/computability/computability-theory/s-m-n.tex:30-45` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 299–300 |
 
 ## DEC-OLCMP-020
 
@@ -27315,7 +27410,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019476` | `OLP-0233` / `OLP-0233-B007` | نړيواله جزوي محاسبه کېدونکې تابع | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex:29-46` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 300 |
+| `ps-Arab-PK-OCC-019549` | `OLP-0233` / `OLP-0233-B007` | نړيواله جزوي محاسبه کېدونکې تابع | `upstream/content/computability/computability-theory/universal-part-function.tex:28-40` | `ps-Arab-PK/content/computability/computability-theory/universal-part-function.tex:29-46` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 300 |
 
 ## DEC-OLCMP-021
 
@@ -27335,7 +27430,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019477` | `OLP-0234` / `OLP-0234-B005` | هېڅ نړيواله محاسبه کېدونکې تابع نشته | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex:12-19` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 300 |
+| `ps-Arab-PK-OCC-019550` | `OLP-0234` / `OLP-0234-B005` | هېڅ نړيواله محاسبه کېدونکې تابع نشته | `upstream/content/computability/computability-theory/no-universal-function.tex:12-14` | `ps-Arab-PK/content/computability/computability-theory/no-universal-function.tex:12-19` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 300 |
 
 ## DEC-OLCMP-022
 
@@ -27355,7 +27450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019478` | `OLP-0235` / `OLP-0235-B008` | د درېدنې مسئله | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex:62-88` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 301–302 |
+| `ps-Arab-PK-OCC-019551` | `OLP-0235` / `OLP-0235-B008` | د درېدنې مسئله | `upstream/content/computability/computability-theory/halting-problem.tex:62-82` | `ps-Arab-PK/content/computability/computability-theory/halting-problem.tex:62-88` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 301–302 |
 
 ## DEC-OLCMP-023
 
@@ -27375,7 +27470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019479` | `OLP-0236` / `OLP-0236-B006` | د رسل له تناقض سره پرتله | `upstream/content/computability/computability-theory/russells-paradox.tex:18-20` | `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex:18-23` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 302 |
+| `ps-Arab-PK-OCC-019552` | `OLP-0236` / `OLP-0236-B006` | د رسل له تناقض سره پرتله | `upstream/content/computability/computability-theory/russells-paradox.tex:18-20` | `ps-Arab-PK/content/computability/computability-theory/russells-paradox.tex:18-23` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 302 |
 
 ## DEC-OLCMP-024
 
@@ -27395,7 +27490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019480` | `OLP-0239` / `OLP-0239-B005` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:11-12` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:11-17` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 304 |
+| `ps-Arab-PK-OCC-019553` | `OLP-0239` / `OLP-0239-B005` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:11-12` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:11-17` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 304 |
 
 ## DEC-OLCMP-025
 
@@ -27415,7 +27510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019481` | `OLP-0239` / `OLP-0239-B011` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:74-81` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:83-95` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 304–305 |
+| `ps-Arab-PK-OCC-019554` | `OLP-0239` / `OLP-0239-B011` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:74-81` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:83-95` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 304–305 |
 
 ## DEC-OLCMP-026
 
@@ -27435,7 +27530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019482` | `OLP-0239` / `OLP-0239-B013` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:102-127` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 305 |
+| `ps-Arab-PK-OCC-019555` | `OLP-0239` / `OLP-0239-B013` | equiv-ce-defs | `upstream/content/computability/computability-theory/equiv-ce-defs.tex:88-105` | `ps-Arab-PK/content/computability/computability-theory/equiv-ce-defs.tex:102-127` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 305 |
 
 ## DEC-OLCMP-027
 
@@ -27455,7 +27550,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019483` | `OLP-0241` / `OLP-0241-B011` | ce-closed-cup-cap | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:44-65` | `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex:45-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 307 |
+| `ps-Arab-PK-OCC-019556` | `OLP-0241` / `OLP-0241-B011` | ce-closed-cup-cap | `upstream/content/computability/computability-theory/ce-closed-cup-cap.tex:44-65` | `ps-Arab-PK/content/computability/computability-theory/ce-closed-cup-cap.tex:45-70` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 307 |
 
 ## DEC-OLCMP-028
 
@@ -27475,7 +27570,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019484` | `OLP-0242` / `OLP-0242-B008` | په محاسبوي ډول د شمېر وړ سټونه د متمم لاندې تړلي نۀ دي | `upstream/content/computability/computability-theory/complement-ce.tex:28-42` | `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:28-47` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308 |
+| `ps-Arab-PK-OCC-019557` | `OLP-0242` / `OLP-0242-B008` | په محاسبوي ډول د شمېر وړ سټونه د متمم لاندې تړلي نۀ دي | `upstream/content/computability/computability-theory/complement-ce.tex:28-42` | `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:28-47` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308 |
 
 ## DEC-OLCMP-029
 
@@ -27495,7 +27590,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019485` | `OLP-0242` / `OLP-0242-B009` | په محاسبوي ډول د شمېر وړ سټونه د متمم لاندې تړلي نۀ دي | `upstream/content/computability/computability-theory/complement-ce.tex:44-49` | `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:49-59` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308 |
+| `ps-Arab-PK-OCC-019558` | `OLP-0242` / `OLP-0242-B009` | په محاسبوي ډول د شمېر وړ سټونه د متمم لاندې تړلي نۀ دي | `upstream/content/computability/computability-theory/complement-ce.tex:44-49` | `ps-Arab-PK/content/computability/computability-theory/complement-ce.tex:49-59` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308 |
 
 ## DEC-OLCMP-030
 
@@ -27515,7 +27610,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019486` | `OLP-0243` / `OLP-0243-B007` | راکمېدنه | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:29-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308–309 |
+| `ps-Arab-PK-OCC-019559` | `OLP-0243` / `OLP-0243-B007` | راکمېدنه | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:29-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308–309 |
 
 ## DEC-OLCMP-031
 
@@ -27535,7 +27630,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019487` | `OLP-0243` / `OLP-0243-B007` | راکمېدنه | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:29-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308–309 |
+| `ps-Arab-PK-OCC-019560` | `OLP-0243` / `OLP-0243-B007` | راکمېدنه | `upstream/content/computability/computability-theory/reducibility.tex:31-48` | `ps-Arab-PK/content/computability/computability-theory/reducibility.tex:29-55` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 308–309 |
 
 ## DEC-OLCMP-032
 
@@ -27555,7 +27650,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019488` | `OLP-0244` / `OLP-0244-B005` | د راکمېدنې خاصيتونه | `upstream/content/computability/computability-theory/prop-reduce.tex:12-17` | `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:12-20` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 309 |
+| `ps-Arab-PK-OCC-019561` | `OLP-0244` / `OLP-0244-B005` | د راکمېدنې خاصيتونه | `upstream/content/computability/computability-theory/prop-reduce.tex:12-17` | `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:12-20` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 309 |
 
 ## DEC-OLCMP-033
 
@@ -27575,7 +27670,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019489` | `OLP-0244` / `OLP-0244-B013` | د راکمېدنې خاصيتونه | `upstream/content/computability/computability-theory/prop-reduce.tex:68-71` | `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:73-81` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 310 |
+| `ps-Arab-PK-OCC-019562` | `OLP-0244` / `OLP-0244-B013` | د راکمېدنې خاصيتونه | `upstream/content/computability/computability-theory/prop-reduce.tex:68-71` | `ps-Arab-PK/content/computability/computability-theory/prop-reduce.tex:73-81` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 310 |
 
 ## DEC-OLCMP-034
 
@@ -27595,7 +27690,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019490` | `OLP-0245` / `OLP-0245-B010` | بشپړ په محاسبوي ډول د شمېر وړ سټونه | `upstream/content/computability/computability-theory/complete-ce-sets.tex:44-45` | `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex:45-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 311 |
+| `ps-Arab-PK-OCC-019563` | `OLP-0245` / `OLP-0245-B010` | بشپړ په محاسبوي ډول د شمېر وړ سټونه | `upstream/content/computability/computability-theory/complete-ce-sets.tex:44-45` | `ps-Arab-PK/content/computability/computability-theory/complete-ce-sets.tex:45-50` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 311 |
 
 ## DEC-OLCMP-035
 
@@ -27615,7 +27710,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019491` | `OLP-0247` / `OLP-0247-B007` | د هرځاے تعريف کېدو مسئله ناپرېکړه کېدونکې ده | `upstream/content/computability/computability-theory/total.tex:24-39` | `ps-Arab-PK/content/computability/computability-theory/total.tex:24-41` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 312 |
+| `ps-Arab-PK-OCC-019564` | `OLP-0247` / `OLP-0247-B007` | د هرځاے تعريف کېدو مسئله ناپرېکړه کېدونکې ده | `upstream/content/computability/computability-theory/total.tex:24-39` | `ps-Arab-PK/content/computability/computability-theory/total.tex:24-41` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 312 |
 
 ## DEC-OLCMP-036
 
@@ -27635,7 +27730,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019492` | `OLP-0250` / `OLP-0250-B008` | د ثابت ټکي د قضيې کارول | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex:34-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 317–318 |
+| `ps-Arab-PK-OCC-019565` | `OLP-0250` / `OLP-0250-B008` | د ثابت ټکي د قضيې کارول | `upstream/content/computability/computability-theory/application-fixed-point.tex:34-60` | `ps-Arab-PK/content/computability/computability-theory/application-fixed-point.tex:34-62` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 317–318 |
 
 ## DEC-OLCMP-037
 
@@ -27655,7 +27750,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019493` | `OLP-0251` / `OLP-0251-B007` | د ځان-مراجعې په کارولو د تابعو تعريف | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:52-60` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 318 |
+| `ps-Arab-PK-OCC-019566` | `OLP-0251` / `OLP-0251-B007` | د ځان-مراجعې په کارولو د تابعو تعريف | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:49-55` | `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:52-60` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 318 |
 
 ## DEC-OLCMP-038
 
@@ -27675,7 +27770,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019494` | `OLP-0249` / `OLP-0249-B012` | د ثابت ټکي قضيه | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex:83-97` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 315 |
+| `ps-Arab-PK-OCC-019567` | `OLP-0249` / `OLP-0249-B012` | د ثابت ټکي قضيه | `upstream/content/computability/computability-theory/fixed-point-thm.tex:85-93` | `ps-Arab-PK/content/computability/computability-theory/fixed-point-thm.tex:83-97` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 315 |
 
 ## DEC-OLCMP-039
 
@@ -27695,7 +27790,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019495` | `OLP-0254` / `OLP-0254-B006` | پېژندنه | `upstream/content/turing-machines/machines-computations/introduction.tex:29-53` | `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex:27-53` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 320 |
+| `ps-Arab-PK-OCC-019568` | `OLP-0254` / `OLP-0254-B006` | پېژندنه | `upstream/content/turing-machines/machines-computations/introduction.tex:29-53` | `ps-Arab-PK/content/turing-machines/machines-computations/introduction.tex:27-53` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 320 |
 
 ## DEC-OLCMP-040
 
@@ -27715,7 +27810,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019496` | `OLP-0255` / `OLP-0255-B014` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:79-113` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 322–323 |
+| `ps-Arab-PK-OCC-019569` | `OLP-0255` / `OLP-0255-B014` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:82-113` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:79-113` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 322–323 |
 
 ## DEC-OLCMP-041
 
@@ -27735,7 +27830,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019497` | `OLP-0255` / `OLP-0255-B020` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:165-179` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 323 |
+| `ps-Arab-PK-OCC-019570` | `OLP-0255` / `OLP-0255-B020` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:168-180` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:165-179` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 323 |
 
 ## DEC-OLCMP-042
 
@@ -27755,7 +27850,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019498` | `OLP-0255` / `OLP-0255-B030` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:285-294` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 324 |
+| `ps-Arab-PK-OCC-019571` | `OLP-0255` / `OLP-0255-B030` | د ټيورينګ ماشينونو څرګندونه | `upstream/content/turing-machines/machines-computations/representing-tms.tex:288-295` | `ps-Arab-PK/content/turing-machines/machines-computations/representing-tms.tex:285-294` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 324 |
 
 ## DEC-OLCMP-043
 
@@ -27775,7 +27870,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019499` | `OLP-0248` / `OLP-0248-B015` | د رايس قضيه | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex:93-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 313–314 |
+| `ps-Arab-PK-OCC-019572` | `OLP-0248` / `OLP-0248-B015` | د رايس قضيه | `upstream/content/computability/computability-theory/rice-theorem.tex:97-107` | `ps-Arab-PK/content/computability/computability-theory/rice-theorem.tex:93-109` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 313–314 |
 
 ## DEC-OLCMP-044
 
@@ -27795,7 +27890,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019500` | `OLP-0251` / `OLP-0251-B005` | د ځان-مراجعې په کارولو د تابعو تعريف | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:12-35` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 318 |
+| `ps-Arab-PK-OCC-019573` | `OLP-0251` / `OLP-0251-B005` | د ځان-مراجعې په کارولو د تابعو تعريف | `upstream/content/computability/computability-theory/def-functions-self-reference.tex:12-32` | `ps-Arab-PK/content/computability/computability-theory/def-functions-self-reference.tex:12-35` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 318 |
 
 ## DEC-OLCMP-045
 
@@ -27815,7 +27910,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019501` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019574` | `OLP-0257` / `OLP-0257-B009` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:58-61` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:63-70` | pending; no page guessed |
 
 ## DEC-OLCMP-046
 
@@ -27835,7 +27930,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019502` | `OLP-0258` / `OLP-0258-B017` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:185-197` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019575` | `OLP-0258` / `OLP-0258-B017` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:187-196` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:185-197` | pending; no page guessed |
 
 ## DEC-OLCMP-047
 
@@ -27855,7 +27950,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019503` | `OLP-0261` / `OLP-0261-B006` | د ټيورينګ ماشينونو يوځاے کول | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:24-53` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019576` | `OLP-0261` / `OLP-0261-B006` | د ټيورينګ ماشينونو يوځاے کول | `upstream/content/turing-machines/machines-computations/combining-machines.tex:25-50` | `ps-Arab-PK/content/turing-machines/machines-computations/combining-machines.tex:24-53` | pending; no page guessed |
 
 ## DEC-OLCMP-048
 
@@ -27875,7 +27970,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019504` | `OLP-0265` / `OLP-0265-B008` | پېژندنه | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:43-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019577` | `OLP-0265` / `OLP-0265-B008` | پېژندنه | `upstream/content/turing-machines/undecidability/introduction.tex:45-53` | `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:43-54` | pending; no page guessed |
 
 ## DEC-OLCMP-049
 
@@ -27895,7 +27990,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019505` | `OLP-0265` / `OLP-0265-B010` | پېژندنه | `upstream/content/turing-machines/undecidability/introduction.tex:66-83` | `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:66-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019578` | `OLP-0265` / `OLP-0265-B010` | پېژندنه | `upstream/content/turing-machines/undecidability/introduction.tex:66-83` | `ps-Arab-PK/content/turing-machines/undecidability/introduction.tex:66-83` | pending; no page guessed |
 
 ## DEC-OLCMP-050
 
@@ -27915,7 +28010,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019506` | `OLP-0266` / `OLP-0266-B018` | د ټيورينګ ماشينونو شمېرل | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:145-151` | `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex:140-149` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019579` | `OLP-0266` / `OLP-0266-B018` | د ټيورينګ ماشينونو شمېرل | `upstream/content/turing-machines/undecidability/enumerating-tms.tex:145-151` | `ps-Arab-PK/content/turing-machines/undecidability/enumerating-tms.tex:140-149` | pending; no page guessed |
 
 ## DEC-OLCMP-051
 
@@ -27935,7 +28030,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019507` | `OLP-0270` / `OLP-0270-B014` | د ټيورينګ ماشينونو تمثيلول | `upstream/content/turing-machines/undecidability/representing-tms.tex:139-156` | `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:136-156` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019580` | `OLP-0270` / `OLP-0270-B014` | د ټيورينګ ماشينونو تمثيلول | `upstream/content/turing-machines/undecidability/representing-tms.tex:139-156` | `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:136-156` | pending; no page guessed |
 
 ## DEC-OLCMP-052
 
@@ -27955,7 +28050,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019508` | `OLP-0270` / `OLP-0270-B015` | د ټيورينګ ماشينونو تمثيلول | `upstream/content/turing-machines/undecidability/representing-tms.tex:158-178` | `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:158-179` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019581` | `OLP-0270` / `OLP-0270-B015` | د ټيورينګ ماشينونو تمثيلول | `upstream/content/turing-machines/undecidability/representing-tms.tex:158-178` | `ps-Arab-PK/content/turing-machines/undecidability/representing-tms.tex:158-179` | pending; no page guessed |
 
 ## DEC-OLCMP-053
 
@@ -27975,7 +28070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019509` | `OLP-0271` / `OLP-0271-B007` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:29-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019582` | `OLP-0271` / `OLP-0271-B007` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:29-42` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:29-44` | pending; no page guessed |
 
 ## DEC-OLCMP-054
 
@@ -27995,7 +28090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019510` | `OLP-0271` / `OLP-0271-B008` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:46-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019583` | `OLP-0271` / `OLP-0271-B008` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:44-58` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:46-63` | pending; no page guessed |
 
 ## DEC-OLCMP-055
 
@@ -28015,7 +28110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019511` | `OLP-0271` / `OLP-0271-B011` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:84-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019584` | `OLP-0271` / `OLP-0271-B011` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:79-99` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:84-107` | pending; no page guessed |
 
 ## DEC-OLCMP-056
 
@@ -28035,7 +28130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019512` | `OLP-0271` / `OLP-0271-B016` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:129-135` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019585` | `OLP-0271` / `OLP-0271-B016` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:122-125` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:129-135` | pending; no page guessed |
 
 ## DEC-OLCMP-057
 
@@ -28055,7 +28150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019513` | `OLP-0271` / `OLP-0271-B025` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:206-212` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019586` | `OLP-0271` / `OLP-0271-B025` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:196-199` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:206-212` | pending; no page guessed |
 
 ## DEC-OLCMP-058
 
@@ -28075,7 +28170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019514` | `OLP-0271` / `OLP-0271-B026` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:214-253` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019587` | `OLP-0271` / `OLP-0271-B026` | د تمثيل تاييدول | `upstream/content/turing-machines/undecidability/verification.tex:201-234` | `ps-Arab-PK/content/turing-machines/undecidability/verification.tex:214-253` | pending; no page guessed |
 
 ## DEC-OLCMP-059
 
@@ -28095,7 +28190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019515` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019588` | `OLP-0257` / `OLP-0257-B008` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:51-56` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:47-61` | pending; no page guessed |
 
 ## DEC-OLCMP-060
 
@@ -28115,7 +28210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019516` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019589` | `OLP-0257` / `OLP-0257-B012` | تشکيلونه او محاسبې | `upstream/content/turing-machines/machines-computations/configuration.tex:89-95` | `ps-Arab-PK/content/turing-machines/machines-computations/configuration.tex:97-109` | pending; no page guessed |
 
 ## DEC-OLCMP-061
 
@@ -28135,7 +28230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019517` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019590` | `OLP-0258` / `OLP-0258-B022` | د عددونو يوګونې څرګندونه | `upstream/content/turing-machines/machines-computations/unary-numbers.tex:226-235` | `ps-Arab-PK/content/turing-machines/machines-computations/unary-numbers.tex:227-242` | pending; no page guessed |
 
 ## DEC-OLCMP-062
 
@@ -28155,7 +28250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019518` | `OLP-0272` / `OLP-0272-B010` | د پرېکړې مسئله ناحل ده | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex:56-64` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019591` | `OLP-0272` / `OLP-0272-B010` | د پرېکړې مسئله ناحل ده | `upstream/content/turing-machines/undecidability/unsolvability-decision-problem.tex:54-58` | `ps-Arab-PK/content/turing-machines/undecidability/unsolvability-decision-problem.tex:56-64` | pending; no page guessed |
 
 ## DEC-OLCMP-063
 
@@ -28175,7 +28270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019519` | `OLP-0273` / `OLP-0273-B009` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:70-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019592` | `OLP-0273` / `OLP-0273-B009` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:70-96` | pending; no page guessed |
 
 ## DEC-OLCMP-064
 
@@ -28195,7 +28290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019520` | `OLP-0273` / `OLP-0273-B009` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:70-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019593` | `OLP-0273` / `OLP-0273-B009` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:68-87` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:70-96` | pending; no page guessed |
 
 ## DEC-OLCMP-065
 
@@ -28215,7 +28310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019521` | `OLP-0273` / `OLP-0273-B011` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:107-176` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019594` | `OLP-0273` / `OLP-0273-B011` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:107-176` | pending; no page guessed |
 
 ## DEC-OLCMP-066
 
@@ -28235,7 +28330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019522` | `OLP-0273` / `OLP-0273-B011` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:107-176` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019595` | `OLP-0273` / `OLP-0273-B011` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:99-163` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:107-176` | pending; no page guessed |
 
 ## DEC-OLCMP-067
 
@@ -28255,7 +28350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019523` | `OLP-0273` / `OLP-0273-B013` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:183-202` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019596` | `OLP-0273` / `OLP-0273-B013` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:170-185` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:183-202` | pending; no page guessed |
 
 ## DEC-OLCMP-068
 
@@ -28275,7 +28370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019524` | `OLP-0273` / `OLP-0273-B014` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:187-190` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:204-210` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019597` | `OLP-0273` / `OLP-0273-B014` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:187-190` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:204-210` | pending; no page guessed |
 
 ## DEC-OLCMP-069
 
@@ -28295,7 +28390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019525` | `OLP-0273` / `OLP-0273-B016` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:217-224` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019598` | `OLP-0273` / `OLP-0273-B016` | د تراختن‌بروت قضيه | `upstream/content/turing-machines/undecidability/trakhtenbrot.tex:197-201` | `ps-Arab-PK/content/turing-machines/undecidability/trakhtenbrot.tex:217-224` | pending; no page guessed |
 
 ## DEC-OLCMP-070
 
@@ -28315,7 +28410,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019526` | `OLP-0278` / `OLP-0278-B009` | د ناتکميلۍ د پايلو ټوليزه کتنه | `upstream/content/incompleteness/introduction/overview.tex:39-51` | `ps-Arab-PK/content/incompleteness/introduction/overview.tex:37-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019599` | `OLP-0278` / `OLP-0278-B009` | د ناتکميلۍ د پايلو ټوليزه کتنه | `upstream/content/incompleteness/introduction/overview.tex:39-51` | `ps-Arab-PK/content/incompleteness/introduction/overview.tex:37-52` | pending; no page guessed |
 
 ## DEC-OLCMP-071
 
@@ -28335,7 +28430,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019527` | `OLP-0278` / `OLP-0278-B011` | د ناتکميلۍ د پايلو ټوليزه کتنه | `upstream/content/incompleteness/introduction/overview.tex:67-82` | `ps-Arab-PK/content/incompleteness/introduction/overview.tex:67-82` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019600` | `OLP-0278` / `OLP-0278-B011` | د ناتکميلۍ د پايلو ټوليزه کتنه | `upstream/content/incompleteness/introduction/overview.tex:67-82` | `ps-Arab-PK/content/incompleteness/introduction/overview.tex:67-82` | pending; no page guessed |
 
 ## DEC-OLCMP-072
 
@@ -28355,7 +28450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019528` | `OLP-0279` / `OLP-0279-B009` | ناپرېکړتيا او ناتکميلي | `upstream/content/incompleteness/introduction/undecidability.tex:28-41` | `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:27-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019601` | `OLP-0279` / `OLP-0279-B009` | ناپرېکړتيا او ناتکميلي | `upstream/content/incompleteness/introduction/undecidability.tex:28-41` | `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:27-45` | pending; no page guessed |
 
 ## DEC-OLCMP-073
 
@@ -28375,7 +28470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019529` | `OLP-0279` / `OLP-0279-B010` | ناپرېکړتيا او ناتکميلي | `upstream/content/incompleteness/introduction/undecidability.tex:43-50` | `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:47-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019602` | `OLP-0279` / `OLP-0279-B010` | ناپرېکړتيا او ناتکميلي | `upstream/content/incompleteness/introduction/undecidability.tex:43-50` | `ps-Arab-PK/content/incompleteness/introduction/undecidability.tex:47-57` | pending; no page guessed |
 
 ## DEC-OLCMP-074
 
@@ -28395,7 +28490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019530` | `OLP-0286` / `OLP-0286-B010` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:70-91` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:70-94` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019603` | `OLP-0286` / `OLP-0286-B010` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:70-91` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:70-94` | pending; no page guessed |
 
 ## DEC-OLCMP-075
 
@@ -28415,7 +28510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019531` | `OLP-0286` / `OLP-0286-B011` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:93-109` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:96-115` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019604` | `OLP-0286` / `OLP-0286-B011` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:93-109` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:96-115` | pending; no page guessed |
 
 ## DEC-OLCMP-076
 
@@ -28435,7 +28530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019532` | `OLP-0286` / `OLP-0286-B018` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:182-215` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:186-221` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019605` | `OLP-0286` / `OLP-0286-B018` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:182-215` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:186-221` | pending; no page guessed |
 
 ## DEC-OLCMP-077
 
@@ -28455,7 +28550,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019533` | `OLP-0286` / `OLP-0286-B021` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:240-248` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-255` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019606` | `OLP-0286` / `OLP-0286-B021` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:240-248` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:244-255` | pending; no page guessed |
 
 ## DEC-OLCMP-078
 
@@ -28475,7 +28570,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019534` | `OLP-0286` / `OLP-0286-B024` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:266-284` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:273-295` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019607` | `OLP-0286` / `OLP-0286-B024` | په $\Log{LK}$ کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:266-284` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex:273-295` | pending; no page guessed |
 
 ## DEC-OLCMP-079
 
@@ -28495,7 +28590,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019535` | `OLP-0287` / `OLP-0287-B020` | په طبيعي استنتاج کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-228` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:213-227` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019608` | `OLP-0287` / `OLP-0287-B020` | په طبيعي استنتاج کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:217-228` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:213-227` | pending; no page guessed |
 
 ## DEC-OLCMP-080
 
@@ -28515,7 +28610,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019536` | `OLP-0287` / `OLP-0287-B027` | په طبيعي استنتاج کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-303` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:283-305` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019609` | `OLP-0287` / `OLP-0287-B027` | په طبيعي استنتاج کښې \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:287-303` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex:283-305` | pending; no page guessed |
 
 ## DEC-OLCMP-081
 
@@ -28535,7 +28630,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019537` | `OLP-0288` / `OLP-0288-B010` | بديهي \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:66-140` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:66-142` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019610` | `OLP-0288` / `OLP-0288-B010` | بديهي \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:66-140` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:66-142` | pending; no page guessed |
 
 ## DEC-OLCMP-082
 
@@ -28555,7 +28650,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019538` | `OLP-0288` / `OLP-0288-B016` | بديهي \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-214` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:197-219` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019611` | `OLP-0288` / `OLP-0288-B016` | بديهي \usetoken{P}{derivation} | `upstream/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:195-214` | `ps-Arab-PK/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex:197-219` | pending; no page guessed |
 
 ## DEC-OLCMP-083
 
@@ -28575,7 +28670,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019539` | `OLP-0291` / `OLP-0291-B006` | په~$\Th{Q}$ کښې تمثيلېدونکې تابعې محاسبه کېدونکې دي | `upstream/content/incompleteness/representability-in-q/representable-comp.tex:16-24` | `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex:16-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019612` | `OLP-0291` / `OLP-0291-B006` | په~$\Th{Q}$ کښې تمثيلېدونکې تابعې محاسبه کېدونکې دي | `upstream/content/incompleteness/representability-in-q/representable-comp.tex:16-24` | `ps-Arab-PK/content/incompleteness/representability-in-q/representable-comp.tex:16-27` | pending; no page guessed |
 
 ## DEC-OLCMP-084
 
@@ -28595,7 +28690,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019540` | `OLP-0293` / `OLP-0293-B005` | د بنسټيز بازګښت شبيه کول | `upstream/content/incompleteness/representability-in-q/prim-rec.tex:12-23` | `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex:12-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019613` | `OLP-0293` / `OLP-0293-B005` | د بنسټيز بازګښت شبيه کول | `upstream/content/incompleteness/representability-in-q/prim-rec.tex:12-23` | `ps-Arab-PK/content/incompleteness/representability-in-q/prim-rec.tex:12-26` | pending; no page guessed |
 
 ## DEC-OLCMP-085
 
@@ -28615,7 +28710,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019541` | `OLP-0295` / `OLP-0295-B014` | ترکيب په~$\Th{Q}$ کښې تمثيلېدونکے دے | `upstream/content/incompleteness/representability-in-q/composition-representable.tex:95-99` | `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex:97-105` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019614` | `OLP-0295` / `OLP-0295-B014` | ترکيب په~$\Th{Q}$ کښې تمثيلېدونکے دے | `upstream/content/incompleteness/representability-in-q/composition-representable.tex:95-99` | `ps-Arab-PK/content/incompleteness/representability-in-q/composition-representable.tex:97-105` | pending; no page guessed |
 
 ## DEC-OLCMP-086
 
@@ -28635,7 +28730,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019542` | `OLP-0296` / `OLP-0296-B008` | منظم اقل موندل په~$\Th{Q}$ کښې تمثيلېدونکے دے | `upstream/content/incompleteness/representability-in-q/minimization-representable.tex:37-63` | `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex:35-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019615` | `OLP-0296` / `OLP-0296-B008` | منظم اقل موندل په~$\Th{Q}$ کښې تمثيلېدونکے دے | `upstream/content/incompleteness/representability-in-q/minimization-representable.tex:37-63` | `ps-Arab-PK/content/incompleteness/representability-in-q/minimization-representable.tex:35-66` | pending; no page guessed |
 
 ## DEC-OLCMP-087
 
@@ -28655,7 +28750,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019543` | `OLP-0300` / `OLP-0300-B016` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:115-121` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:115-125` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019616` | `OLP-0300` / `OLP-0300-B016` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:115-121` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:115-125` | pending; no page guessed |
 
 ## DEC-OLCMP-088
 
@@ -28675,7 +28770,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019544` | `OLP-0300` / `OLP-0300-B018` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:127-135` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:131-142` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019617` | `OLP-0300` / `OLP-0300-B018` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:127-135` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:131-142` | pending; no page guessed |
 
 ## DEC-OLCMP-089
 
@@ -28695,7 +28790,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019545` | `OLP-0300` / `OLP-0300-B019` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:137-150` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:144-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019618` | `OLP-0300` / `OLP-0300-B019` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:137-150` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:144-163` | pending; no page guessed |
 
 ## DEC-OLCMP-090
 
@@ -28715,7 +28810,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019546` | `OLP-0300` / `OLP-0300-B021` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:163-174` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:177-191` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019619` | `OLP-0300` / `OLP-0300-B021` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:163-174` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:177-191` | pending; no page guessed |
 
 ## DEC-OLCMP-091
 
@@ -28735,7 +28830,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019547` | `OLP-0303` / `OLP-0303-B009` | $\Th{Q}$، \printtoken{S}{c.e.}-بشپړه ده | `upstream/content/incompleteness/theories-computability/q-is-ce.tex:48-52` | `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex:50-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019620` | `OLP-0303` / `OLP-0303-B009` | $\Th{Q}$، \printtoken{S}{c.e.}-بشپړه ده | `upstream/content/incompleteness/theories-computability/q-is-ce.tex:48-52` | `ps-Arab-PK/content/incompleteness/theories-computability/q-is-ce.tex:50-58` | pending; no page guessed |
 
 ## DEC-OLCMP-092
 
@@ -28755,7 +28850,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019548` | `OLP-0305` / `OLP-0305-B011` | د~$\Th{Q}$ سازګارې غځونې ناپرېکړه‌وړې دي | `upstream/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:51-73` | `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:50-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019621` | `OLP-0305` / `OLP-0305-B011` | د~$\Th{Q}$ سازګارې غځونې ناپرېکړه‌وړې دي | `upstream/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:51-73` | `ps-Arab-PK/content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex:50-75` | pending; no page guessed |
 
 ## DEC-OLCMP-093
 
@@ -28775,7 +28870,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019549` | `OLP-0306` / `OLP-0306-B006` | \printtoken{S}{axiomatizable} تيورۍ | `upstream/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-18` | `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-23` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019622` | `OLP-0306` / `OLP-0306-B006` | \printtoken{S}{axiomatizable} تيورۍ | `upstream/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-18` | `ps-Arab-PK/content/incompleteness/theories-computability/computably-axiomatizable.tex:13-23` | pending; no page guessed |
 
 ## DEC-OLCMP-094
 
@@ -28795,7 +28890,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019550` | `OLP-0309` / `OLP-0309-B009` | په~$\Th{Q}$ کښې ثابتېدونکې او ردېدونکې جملې په محاسبوي ډول نه بېلېدونکې دي | `upstream/content/incompleteness/theories-computability/inseparability.tex:34-46` | `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex:36-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019623` | `OLP-0309` / `OLP-0309-B009` | په~$\Th{Q}$ کښې ثابتېدونکې او ردېدونکې جملې په محاسبوي ډول نه بېلېدونکې دي | `upstream/content/incompleteness/theories-computability/inseparability.tex:34-46` | `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex:36-56` | pending; no page guessed |
 
 ## DEC-OLCMP-095
 
@@ -28815,7 +28910,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019551` | `OLP-0309` / `OLP-0309-B009` | په~$\Th{Q}$ کښې ثابتېدونکې او ردېدونکې جملې په محاسبوي ډول نه بېلېدونکې دي | `upstream/content/incompleteness/theories-computability/inseparability.tex:34-46` | `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex:36-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019624` | `OLP-0309` / `OLP-0309-B009` | په~$\Th{Q}$ کښې ثابتېدونکې او ردېدونکې جملې په محاسبوي ډول نه بېلېدونکې دي | `upstream/content/incompleteness/theories-computability/inseparability.tex:34-46` | `ps-Arab-PK/content/incompleteness/theories-computability/inseparability.tex:36-56` | pending; no page guessed |
 
 ## DEC-OLCMP-096
 
@@ -28835,7 +28930,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019552` | `OLP-0311` / `OLP-0311-B014` | هغه تيورۍ ناپرېکړه‌وړې دي چې~$\Th{Q}$ پکې تفسيرېدونکې وي | `upstream/content/incompleteness/theories-computability/interpretability.tex:59-67` | `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex:57-67` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019625` | `OLP-0311` / `OLP-0311-B014` | هغه تيورۍ ناپرېکړه‌وړې دي چې~$\Th{Q}$ پکې تفسيرېدونکې وي | `upstream/content/incompleteness/theories-computability/interpretability.tex:59-67` | `ps-Arab-PK/content/incompleteness/theories-computability/interpretability.tex:57-67` | pending; no page guessed |
 
 ## DEC-OLCMP-097
 
@@ -28855,7 +28950,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019553` | `OLP-0300` / `OLP-0300-B028` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:215-275` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:230-292` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019626` | `OLP-0300` / `OLP-0300-B028` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:215-275` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:230-292` | pending; no page guessed |
 
 ## DEC-OLCMP-098
 
@@ -28875,7 +28970,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019554` | `OLP-0300` / `OLP-0300-B031` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:288-298` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:305-319` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019627` | `OLP-0300` / `OLP-0300-B031` | د~\texorpdfstring{$\Sigma_1$}{سيګما-۱} بشپړتيا | `upstream/content/incompleteness/representability-in-q/sigma1-completeness.tex:288-298` | `ps-Arab-PK/content/incompleteness/representability-in-q/sigma1-completeness.tex:305-319` | pending; no page guessed |
 
 ## DEC-OLPRV-001
 
@@ -28895,7 +28990,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019555` | `OLP-0318` / `OLP-0318-B007` | د~$\Th{PA}$ د \usetoken{S}{derivability} شرطونه | `upstream/content/incompleteness/incompleteness-provability/provability-conditions.tex:30-67` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex:29-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019628` | `OLP-0318` / `OLP-0318-B007` | د~$\Th{PA}$ د \usetoken{S}{derivability} شرطونه | `upstream/content/incompleteness/incompleteness-provability/provability-conditions.tex:30-67` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex:29-69` | pending; no page guessed |
 
 ## DEC-OLPRV-002
 
@@ -28915,7 +29010,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019556` | `OLP-0319` / `OLP-0319-B009` | د ناتکميلۍ دويمه قضيه | `upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:33-45` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:32-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019629` | `OLP-0319` / `OLP-0319-B009` | د ناتکميلۍ دويمه قضيه | `upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:33-45` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:32-49` | pending; no page guessed |
 
 ## DEC-OLPRV-003
 
@@ -28935,7 +29030,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019557` | `OLP-0319` / `OLP-0319-B011` | د ناتکميلۍ دويمه قضيه | `upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:51-94` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:55-108` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019630` | `OLP-0319` / `OLP-0319-B011` | د ناتکميلۍ دويمه قضيه | `upstream/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:51-94` | `ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:55-108` | pending; no page guessed |
 
 ## DEC-OLSOL-001
 
@@ -28955,7 +29050,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019558` | `OLP-0332` / `OLP-0332-B006` | د دويمې درجې حساب | `upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42` | `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019631` | `OLP-0332` / `OLP-0332-B006` | د دويمې درجې حساب | `upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42` | `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:13-42` | pending; no page guessed |
 
 ## DEC-OLSOL-002
 
@@ -28975,7 +29070,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019559` | `OLP-0332` / `OLP-0332-B017` | د دويمې درجې حساب | `upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-126` | `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-129` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019632` | `OLP-0332` / `OLP-0332-B017` | د دويمې درجې حساب | `upstream/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-126` | `ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:116-129` | pending; no page guessed |
 
 ## DEC-OLSOL-003
 
@@ -28995,7 +29090,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019560` | `OLP-0333` / `OLP-0333-B009` | د دويمې درجې منطق د بديهي اصولو په بڼه بشپړ نۀ شي وړاندې کېدے | `upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:29-49` | `ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019633` | `OLP-0333` / `OLP-0333-B009` | د دويمې درجې منطق د بديهي اصولو په بڼه بشپړ نۀ شي وړاندې کېدے | `upstream/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:29-49` | `ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-52` | pending; no page guessed |
 
 ## DEC-OLSOL-006
 
@@ -29015,7 +29110,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019561` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019634` | `OLP-0334` / `OLP-0334-B009` | د دويمې درجې منطق کمپکت نۀ دے | `upstream/content/second-order-logic/metatheory/compactness.tex:38-62` | `ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex:37-65` | pending; no page guessed |
 
 ## DEC-OLSOL-007
 
@@ -29035,7 +29130,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019562` | `OLP-0339` / `OLP-0339-B007` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-34` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019635` | `OLP-0339` / `OLP-0339-B007` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-29` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:20-34` | pending; no page guessed |
 
 ## DEC-OLSOL-008
 
@@ -29055,7 +29150,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019563` | `OLP-0339` / `OLP-0339-B008` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:36-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019636` | `OLP-0339` / `OLP-0339-B008` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:31-40` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:36-52` | pending; no page guessed |
 
 ## DEC-OLSOL-009
 
@@ -29075,7 +29170,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019564` | `OLP-0339` / `OLP-0339-B009` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:42-57` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:54-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019637` | `OLP-0339` / `OLP-0339-B009` | د سټونو شمېرنيزې اندازې | `upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex:42-57` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex:54-77` | pending; no page guessed |
 
 ## DEC-OLSOL-010
 
@@ -29095,7 +29190,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019565` | `OLP-0340` / `OLP-0340-B015` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-121` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:126-138` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019638` | `OLP-0340` / `OLP-0340-B015` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-121` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:126-138` | pending; no page guessed |
 
 ## DEC-OLSOL-011
 
@@ -29115,7 +29210,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019566` | `OLP-0340` / `OLP-0340-B016` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:140-153` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019639` | `OLP-0340` / `OLP-0340-B016` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:140-153` | pending; no page guessed |
 
 ## DEC-OLSOL-012
 
@@ -29135,7 +29230,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019567` | `OLP-0340` / `OLP-0340-B010` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:51-67` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:56-76` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019640` | `OLP-0340` / `OLP-0340-B010` | د پيوستار اندازه | `upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:51-67` | `ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:56-76` | pending; no page guessed |
 
 ## DEC-OLLAM-001
 
@@ -29155,7 +29250,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019568` | `OLP-0347` / `OLP-0347-B008` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:51-69` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:49-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019641` | `OLP-0347` / `OLP-0347-B008` | کَري کول | `upstream/content/lambda-calculus/introduction/currying.tex:51-69` | `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:49-71` | pending; no page guessed |
 
 ## DEC-OLLAM-002
 
@@ -29175,7 +29270,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019569` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019642` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
 
 ## DEC-OLLAM-003
 
@@ -29195,7 +29290,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019570` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019643` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
 
 ## DEC-OLLAM-004
 
@@ -29215,7 +29310,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019571` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019644` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
 
 ## DEC-OLLAM-005
 
@@ -29235,7 +29330,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019572` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019645` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
 
 ## DEC-OLLAM-006
 
@@ -29255,7 +29350,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019573` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019646` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
 
 ## DEC-OLLAM-007
 
@@ -29275,7 +29370,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019574` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019647` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
 
 ## DEC-OLLAM-008
 
@@ -29295,7 +29390,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019575` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019648` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
 
 ## DEC-OLLAM-009
 
@@ -29315,7 +29410,27 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019576` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019649` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+
+## DEC-OLLAM-010
+
+- Kind: `source_correction`; priority: `normal`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-010: content/lambda-calculus/syntax/free-variables.tex:23-25
+- Intended sense: Change only the second inline N in the scope definition to M; retain the first N as the enclosing term and preserve all subsequent examples and free-variable equations.
+- Chosen Pashto: The source defines the scope of lambda x within an enclosing term N as the corresponding occurrence of N. The scope is the body occurrence M; the target corrects only that symbol.
+- Rationale: Change only the second inline N in the scope definition to M; retain the first N as the enclosing term and preserve all subsequent examples and free-variable equations.
+- Confidence reason: high for the mathematical/source diagnosis; Pashto disclosure wording remains reviewable. The recorded source analysis is stable; Pashto wording remains open to language review
+- Expert question: Does the Pashto correction for OLLAM-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-SYNTAX` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — scope-body-confused-with-enclosing-term; Change only the second inline N in the scope definition to M; retain the first N as the enclosing term and preserve all subsequent examples and free-variable equations.
+- Alternatives:
+  - literal translation plus an adjacent correction (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - corrected body with the public correction log (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-019650` | `OLP-0360` / `OLP-0360-B006` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:22-25` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:22-29` | pending; no page guessed |
 
 ## DEC-REL-I
 
@@ -29335,7 +29450,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019577` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
+| `ps-Arab-PK-OCC-019651` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 22–23 |
 
 ## DEC-TREE-X
 
@@ -29355,7 +29470,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019578` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
+| `ps-Arab-PK-OCC-019652` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 28–29 |
 
 ## DEC-RPLUS
 
@@ -29375,7 +29490,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019579` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
+| `ps-Arab-PK-OCC-019653` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 26 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -29395,7 +29510,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019580` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
+| `ps-Arab-PK-OCC-019654` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 39 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -29415,7 +29530,7 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019581` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
+| `ps-Arab-PK-OCC-019655` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 37 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -29435,4 +29550,4 @@ This index contains 458 decisions and 19582 exact paired source/target occurrenc
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019582` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |
+| `ps-Arab-PK-OCC-019656` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-computability.pdf p. 41 |

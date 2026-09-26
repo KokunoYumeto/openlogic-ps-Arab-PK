@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
-  "status": "OLP-0353 through OLP-0355 source-reviewed; five exact B064 corrections disclosed; lambda introduction complete",
+  "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+  "status": "OLP-0356 through OLP-0360 source-reviewed; one exact B065 scope correction disclosed; syntax foundation drafted",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7605,6 +7605,68 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0356": {
+      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Syntax chapter title translated; all ten imports, identifiers and chapter hook retained verbatim."
+    },
+    "OLP-0357": {
+      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND"
+      ],
+      "scope": "Inductive variable, abstraction and application formation rules, labels, complete-parenthesis examples and exercise retained."
+    },
+    "OLP-0358": {
+      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Prefix lemmas and unique formation proof preserve each rule reference and the induction over subterms."
+    },
+    "OLP-0359": {
+      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Left-associative application, widest abstraction scope, multiple binders and exact expansion example retained."
+    },
+    "OLP-0360": {
+      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Free/bound occurrences, FV equations, examples, environment explanation and exercises retained; OLLAM-010 corrects the scope body symbol N to M.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10625,6 +10687,36 @@
       "passage": "unbounded minimization",
       "reverse_paraphrase": "For each x, the fixed-point term defines a search h_x(n) that returns n when f(x,n)=0 and otherwise recurs at n+1; G(x)=H(0) yields the least zero or diverges.",
       "finding": "OLLAM-009 changes the unsupported primitive-recursive premise to the lemma's lambda-definability premise. The selector and fixed-point equations remain exact."
+    },
+    {
+      "unit_id": "OLP-0356",
+      "passage": "syntax driver",
+      "reverse_paraphrase": "A chapter driver lists exactly ten source imports in order and carries no theorem-level prose beyond its title.",
+      "finding": "The translated title and unchanged import identifiers preserve the source chapter structure."
+    },
+    {
+      "unit_id": "OLP-0357",
+      "passage": "inductive term formation",
+      "reverse_paraphrase": "Variables are terms; lambda abstraction of a term by a variable is a term; application of two terms is a term. Fully parenthesized examples admit structural construction analysis.",
+      "finding": "All three rule labels, the nested example and the formation exercise remain exact; two English source misspellings require no semantic correction."
+    },
+    {
+      "unit_id": "OLP-0358",
+      "passage": "unique readability",
+      "reverse_paraphrase": "Every fully parenthesized term has one top-level constructor. A term has no shorter term prefix, and the induction recovers each subterm uniquely.",
+      "finding": "The first-character and prefix lemmas, proposition and three proof cases retain their distinct claims and references."
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "abbreviated terms",
+      "reverse_paraphrase": "Unparenthesized application associates left, lambda abstraction has widest available scope, and one lambda can bind several listed variables.",
+      "finding": "The full expansion and exercise preserve every term symbol and parenthesis."
+    },
+    {
+      "unit_id": "OLP-0360",
+      "passage": "free and bound variables",
+      "reverse_paraphrase": "The body of a lambda abstraction is its scope. A variable occurrence outside a same-variable binder is free; FV of abstraction removes the binder, while FV of application is a union.",
+      "finding": "OLLAM-010 repairs the source's enclosing-term symbol in the scope definition. The concrete nested-binder example, free-variable equations and environment explanation remain distinct."
     }
   ]
 }

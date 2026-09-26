@@ -2408,3 +2408,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The lemma assumes f is lambda-definable, not primitive recursive. The target derives the defining term F from the stated hypothesis.
 - Counterexample or exact defect: A lambda-definable function may be partial, whereas every primitive-recursive function is total. The proof cannot invoke primitive recursiveness for the arbitrary f quantified by the lemma.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-010
+
+- Unit: `OLP-0360`.
+- Frozen source: `content/lambda-calculus/syntax/free-variables.tex:23-25` (SHA-256 `5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:26` (SHA-256 `b74c88771893aa20d68994a4b8a0c736c988ef96b9886a4f1ef45a23523f48bf`).
+- Correction: The source defines the scope of lambda x within an enclosing term N as the corresponding occurrence of N. The scope is the body occurrence M; the target corrects only that symbol.
+- Counterexample or exact defect: In the term (lambda x.x)y, the enclosing term N includes the outer application and y, but the scope of lambda x is only its body x. The source's N would incorrectly place y inside the abstraction's scope.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

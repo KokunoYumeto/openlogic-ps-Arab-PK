@@ -1,0 +1,25 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T03:14:36.202796+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SYNTAX",
+  "scope": "OLP-0356 through OLP-0360 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-010",
+      "unit_id": "OLP-0360",
+      "classification": "scope-body-confused-with-enclosing-term",
+      "source_locator": "content/lambda-calculus/syntax/free-variables.tex:23-25",
+      "target_line_1based": 26,
+      "counterexample": "In the term (lambda x.x)y, the enclosing term N includes the outer application and y, but the scope of lambda x is only its body x. The source's N would incorrectly place y inside the abstraction's scope.",
+      "formula_policy": "Change only the second inline N in the scope definition to M; retain the first N as the enclosing term and preserve all subsequent examples and free-variable equations."
+    }
+  ],
+  "no_change_units": [
+    "OLP-0356",
+    "OLP-0357",
+    "OLP-0358",
+    "OLP-0359"
+  ],
+  "status": "five source-reviewed draft units; one adjacent-disclosed scope correction with exact N/M math exception"
+}

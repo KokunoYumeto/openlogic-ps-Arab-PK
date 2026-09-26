@@ -1,0 +1,82 @@
+{
+  "schema": "ps-lambda-syntax-foundation-draft/1",
+  "utc": "2026-09-26T03:14:36.202796+00:00",
+  "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+  "status": "accepted B065 editable drafts; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0356",
+      "path": "content/lambda-calculus/syntax/syntax.tex",
+      "source_sha256": "8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e",
+      "translation_sha256": "012e3104a1b3b4fb7e1dcc181adc233cb2783381ae6ad01bc88c0b79d09403f8",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0357",
+      "path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "translation_sha256": "d57b879a093a214b84f660a0ddb6799c08bfee15910140b39a717babc3e0bb5c",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0358",
+      "path": "content/lambda-calculus/syntax/unique-readability.tex",
+      "source_sha256": "a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7",
+      "translation_sha256": "f9f20cfe5a01afa77601d6c0c53108e1cf852bfe97910b49a2b545b8102e427a",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0359",
+      "path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+      "source_sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46",
+      "translation_sha256": "b20c31fc09bae9192044c2890407206cf3c27d547b22c4bbd2aee4428fea36c6",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0360",
+      "path": "content/lambda-calculus/syntax/free-variables.tex",
+      "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+      "translation_sha256": "b74c88771893aa20d68994a4b8a0c736c988ef96b9886a4f1ef45a23523f48bf",
+      "source_correction_ids": [
+        "OLLAM-010"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 355,
+    "current_reviewed_draft_units": 5,
+    "cumulative_draft_units": 360,
+    "remaining_units": 362,
+    "public_reader_units": 255
+  },
+  "model_attribution": {
+    "model": "gpt-6-sol",
+    "effort": "ultra",
+    "session_metadata_record_sha256": "4dea332bfe4cb7f28940b921ddebd883de6a46820f22c591ac490aa48e54ca1b"
+  },
+  "evidence": {
+    "source_check_sha256": "df142e10dd1ccb7f88e7b5d035a1fbcc3dca778cf9e1fbffc90adc8f14c7db53",
+    "canon_consultation_sha256": "f49168ad22e59f64ccdfa6ef5aa2e6cd84439150a83c9254840ea5a9d8627d93",
+    "source_corrections_sha256": "36fdb476ac86ff10cdcaa4b695c04dcdd0e44bda49786a8533619c8963b760c2",
+    "partial_qa_sha256": "7feb31567e9a2c1a59255d1164888385772dde448ef8424d66d896bfc0566884",
+    "qa_sha256": "39f0a82cb42b922cbd186ee32b9b39fc59a80a38af8ab4c112c286db566d9990",
+    "alignment_sha256": "c2bc3409b9ef4e7eef618562e464978cebda2468ce973248d2dd371ceded9edd",
+    "canon_use_sha256": "9f2742bdb6386036596e4a2f8ff7c7a22260e6fba2c18e27c8c736e67419cab1",
+    "term_decisions_sha256": "4cda2a5cc3dc048ead4c9bacc0e3fd4a42139c0c8676e5af31f64baf3432bca5",
+    "canonical_decisions_sha256": "d4195a0c839893d0a9d83d9b16e4391933386a47b508242ae2866894ac9bb07d",
+    "canonical_qa_sha256": "c8986d5ce3dc67a8df2b2709fce1b9da0320765a28dc3b0d5665bf216c379e0d",
+    "canonical_replay_sha256": "9631c0b323cd952d3d1ba1bf26ad67c284c003c22916f14ea6e32b715f01d3a5"
+  },
+  "next_action": "Commit/push B065; source-audit substitution OLP-0361 before drafting; finish coherent v0.7 PDF/EPUB/direct-TeX/source release when guarded TeX is available."
+}

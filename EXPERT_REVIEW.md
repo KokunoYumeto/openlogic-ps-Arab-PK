@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 355 of 722 source units are translated drafts. This log contains 184 terminology entries and 274 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 360 of 722 source units are translated drafts. This log contains 185 terminology entries and 275 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1659,6 +1659,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د ټاکلي ټکي ترکيب کوونکے; د کري او تورينګ کمبينېټرونه; بې‌حده پلټنه
 - Review question: In Pakistani Pashto mathematical prose, is «د ثابت ټکي ترکيب کوونکے / د کري او تورينګ ترکيب کوونکي / نامحدوده کمينه‌موندنه» the clearest conventional rendering of “fixed-point combinator / Curry and Turing combinators / unbounded minimization” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B064 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-SCOPE-FREE-BOUND
+
+- Type: terminology
+- Choice: يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم
+- Uncertainty: Pakistani prose and regional function/substitution concepts are inspected; exact lambda scope and unique-readability compounds remain source-led and provisional
+- Alternatives: بې‌سارې لوستونتيا; د تړلو ساحه د ساحې پر ځاے; ازاده پېښه د ازاد مورد پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم» the clearest conventional rendering of “unique readability / abbreviated term / scope / free and bound variable occurrence / closed term” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B065 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -4071,6 +4080,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLLAM-009 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B064 owner source review before cumulative acceptance
+
+## DEC-OLLAM-010
+
+- Type: source-correction
+- Choice: The source defines the scope of lambda x within an enclosing term N as the corresponding occurrence of N. The scope is the body occurrence M; the target corrects only that symbol.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-010 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B065 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

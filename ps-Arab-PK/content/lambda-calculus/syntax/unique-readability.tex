@@ -1,0 +1,92 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: unique-readability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{unq}
+\olsection{يکتا لوستونتيا}
+
+کېدے شي وپوښتو چې ايا د هر ترم د جوړېدو يوازې يوه لاره شته؛ هو،
+همداسې ده۔ د هر لامبډا ترم د جوړولو او تفسير يوازې يوه لاره شته۔
+په لاندې بحث کښې \emph{جوړونه} هغه کړنلاره ده چې د
+\olref[trm]{defn:term} د جوړولو قاعدې يو يا څو ځله کاروي او ترم
+ترې جوړوي۔
+
+\begin{lem}\ollabel{lem:term-start}
+ترم يا په متغير پيلېږي يا په قوس۔
+\end{lem}
+
+\begin{proof}
+يو څيز هله ترم ګڼل کېږي چې د \olref[trm]{defn:term} له مخې جوړ
+شوے وي۔ که د \olref[trm]{defn:term-var} پايله وي، نو بايد متغير
+وي۔ که د \olref[trm]{defn:term-abs} يا
+\olref[trm]{defn:term-app} پايله وي، نو په قوس پيلېږي۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:app-start}
+د تطبيق پايله يا په دوو قوسونو پيلېږي يا په يوه قوس او بيا متغير۔
+\end{lem}
+
+\begin{proof}
+که $M$ د تطبيق پايله وي، نو بڼه ئې $(PQ)$ ده؛ ځکه په قوس پيلېږي۔
+څرنګه چې $P$ ترم دے، د \olref{lem:term-start} له مخې يا په قوس
+پيلېږي يا په متغير۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:initial}
+د ترم هېڅ خاصه پيلنۍ برخه پخپله ترم نۀ ده۔
+\end{lem}
+
+\begin{prob}
+\olref[lam][syn][unq]{lem:initial} د ترمونو پر اوږدوالي په استقرا
+ثابت کړئ۔
+\end{prob}
+
+\begin{prop}[يکتا لوستونتيا] \ollabel{prop:unq}
+د هر ترم جوړونه يکتا ده۔ په بله وينا، که ترم $M$ د يوې جوړونې په
+وسيله جوړ شي، نو د همدې ترم د جوړولو بله جوړونه نشته۔
+\end{prop}
+
+\begin{proof}
+  دا د ترمونو پر جوړونه په استقرا ثابتوو۔
+  \begin{enumerate}
+    \item $M$ د $x$ په بڼه دے، چې $x$ يو متغير دے۔ د تجريد او
+      تطبيق پايلې تل په قوسونو پيلېږي، نو د $M$ د جوړولو دپاره نۀ شي
+      کارېدے؛ ځکه د $M$ جوړونه بايد د
+      \olref[trm]{defn:term}\olref[trm]{defn:term-var} يوازې يو ګام
+      وي۔
+    \item $M$ د $(\lambd[x][N])$ په بڼه دے، چې $x$ متغير او $N$
+      ترم دے۔ د \olref[trm]{defn:term}\olref[trm]{defn:term-var}
+      له مخې نۀ شي جوړېدے، ځکه يوازې يو متغير نۀ دے۔ د
+      \olref{lem:app-start} له مخې د تطبيق پايله هم نۀ ده۔ نو $M$
+      يوازې پر~$N$ د تجريد پايله کېدے شي۔ د استقرا د فرضيې له مخې
+      د $N$ جوړونه پخپله يکتا ده۔
+    \item $M$ د $(PQ)$ په بڼه دے، چې $P$ او $Q$ ترمونه دي۔ څرنګه
+      چې په قوس پيلېږي، د
+      \olref[trm]{defn:term}\olref[trm]{defn:term-var} له مخې هم
+      نۀ شي جوړېدے۔ د \olref{lem:term-start} له مخې $P$ په
+      $\lambd$ نۀ شي پيلېدے، نو $(PQ)$ د تجريد پايله نۀ شي کېدے۔
+      اوس فرض کړئ چې $M$ د تطبيق له لارې د جوړېدو بله طريقه هم لري؛
+      يعنې د $(P'Q')$ په بڼه هم دے۔ بيا $P$ د $P'$ خاصه پيلنۍ برخه
+      ده، يا برعکس؛ خو دا د \olref{lem:initial} له مخې ناشوني دي۔
+      نو $P$ او $Q$ په يکتا توګه ټاکل شوي دي، او د استقرا د فرضيې
+      له مخې د $P$ او $Q$ جوړونې يکتا دي۔
+  \end{enumerate}
+\end{proof}
+
+د پاسنۍ قضيې د لوستلو آسانه بڼه دا ده:
+\begin{prop}
+  ترم $M$ يوازې له لاندې بڼو څخه يوه لرلے شي:
+  \begin{enumerate}
+    \item $x$، چې $x$ د $M$ له مخې په يکتا توګه ټاکل شوے متغير دے۔
+    \item $(\lambd[x][N])$، چې $x$ متغير او $N$ بل ترم دے، او
+      دواړه د $M$ له مخې په يکتا توګه ټاکل شوي دي۔
+    \item $(PQ)$، چې $P$ او $Q$ د $M$ له مخې په يکتا توګه ټاکل شوي
+      دوه ترمونه دي۔
+  \end{enumerate}
+\end{prop}
+
+\end{document}

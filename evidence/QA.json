@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 355,
-    "structural_pass": 355,
+    "draft_units": 360,
+    "structural_pass": 360,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B064-LAMBDA-INTRO-CLOSURE",
+  "batch": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11076,6 +11076,151 @@
         "OLLAM-009"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0356",
+      "path": "content/lambda-calculus/syntax/syntax.tex",
+      "source_sha256": "8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e",
+      "translation_sha256": "012e3104a1b3b4fb7e1dcc181adc233cb2783381ae6ad01bc88c0b79d09403f8",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0357",
+      "path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "translation_sha256": "d57b879a093a214b84f660a0ddb6799c08bfee15910140b39a717babc3e0bb5c",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0358",
+      "path": "content/lambda-calculus/syntax/unique-readability.tex",
+      "source_sha256": "a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7",
+      "translation_sha256": "f9f20cfe5a01afa77601d6c0c53108e1cf852bfe97910b49a2b545b8102e427a",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+      "source_sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46",
+      "translation_sha256": "b20c31fc09bae9192044c2890407206cf3c27d547b22c4bbd2aee4428fea36c6",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0360",
+      "path": "content/lambda-calculus/syntax/free-variables.tex",
+      "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+      "translation_sha256": "b74c88771893aa20d68994a4b8a0c736c988ef96b9886a4f1ef45a23523f48bf",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-010"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$N$"
+        ],
+        "target_only": [
+          "$M$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -14096,6 +14241,36 @@
       "passage": "unbounded minimization",
       "reverse_paraphrase": "For each x, the fixed-point term defines a search h_x(n) that returns n when f(x,n)=0 and otherwise recurs at n+1; G(x)=H(0) yields the least zero or diverges.",
       "finding": "OLLAM-009 changes the unsupported primitive-recursive premise to the lemma's lambda-definability premise. The selector and fixed-point equations remain exact."
+    },
+    {
+      "unit_id": "OLP-0356",
+      "passage": "syntax driver",
+      "reverse_paraphrase": "A chapter driver lists exactly ten source imports in order and carries no theorem-level prose beyond its title.",
+      "finding": "The translated title and unchanged import identifiers preserve the source chapter structure."
+    },
+    {
+      "unit_id": "OLP-0357",
+      "passage": "inductive term formation",
+      "reverse_paraphrase": "Variables are terms; lambda abstraction of a term by a variable is a term; application of two terms is a term. Fully parenthesized examples admit structural construction analysis.",
+      "finding": "All three rule labels, the nested example and the formation exercise remain exact; two English source misspellings require no semantic correction."
+    },
+    {
+      "unit_id": "OLP-0358",
+      "passage": "unique readability",
+      "reverse_paraphrase": "Every fully parenthesized term has one top-level constructor. A term has no shorter term prefix, and the induction recovers each subterm uniquely.",
+      "finding": "The first-character and prefix lemmas, proposition and three proof cases retain their distinct claims and references."
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "abbreviated terms",
+      "reverse_paraphrase": "Unparenthesized application associates left, lambda abstraction has widest available scope, and one lambda can bind several listed variables.",
+      "finding": "The full expansion and exercise preserve every term symbol and parenthesis."
+    },
+    {
+      "unit_id": "OLP-0360",
+      "passage": "free and bound variables",
+      "reverse_paraphrase": "The body of a lambda abstraction is its scope. A variable occurrence outside a same-variable binder is free; FV of abstraction removes the binder, while FV of application is a union.",
+      "finding": "OLLAM-010 repairs the source's enclosing-term symbol in the scope definition. The concrete nested-binder example, free-variable equations and environment explanation remain distinct."
     }
   ],
   "builds": [

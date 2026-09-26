@@ -1,0 +1,43 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: abbreviated-syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{abb}
+\olsection{د نحو لنډې نښې}
+
+د \olref[trm]{defn:term} له مخې تعريف شوي ترمونه کله کله په ليکلو
+کښې درانۀ وي؛ نو د نحو د لا لنډې بڼې ټاکل ګټور دي۔ البته بايد پام
+وکړو چې په لنډه نښه کښې ترمونه هم په يکتا توګه ولوستل شي۔ يوه ډېره
+کارېدونکې بڼه، چې \emph{لنډ شوي ترمونه} بلل کېږي، داسې ده:
+
+\begin{enumerate}
+\item چې قوسونه پرېښودل شي، تطبيق له کيڼ نه ښي ته کېږي۔ مثلاً، که
+  $M$، $N$، $P$ او~$Q$ ترمونه وي، نو $MNPQ$ د $(((MN)P)Q)$
+  لنډه نښه ده۔
+\item همداسې، چې قوسونه پرېښودل شي، د لامبډا تجريد د امکان تر
+  ټولو پراخه ساحه اخلي۔ مثلاً، $\lambd[x][MNP]$ د
+  $(\lambd[x][MNP])$ په توګه لوستل کېږي۔
+\item يوه لامبډا د څو متغيرونو د تجريد دپاره کارېدے شي۔ مثلاً،
+  $\lambd[xyz][M]$ د $\lambd[x][\lambd[y][\lambd[z][M]]]$
+  لنډه نښه ده۔
+\end{enumerate}
+
+د بېلګې په توګه،
+\[
+\lambd[xy][xxyx \lambd[z][xz]]
+\]
+د دې لنډه نښه ده:
+\[
+(\lambd[x][(\lambd[y][((((xx)y)x)(\lambd[z][(xz)]))])]).
+\]
+
+\begin{prob}
+لنډ شوے ترم $\lambd[g][(\lambd[x][g (x x)])
+  \lambd[x][g (x x)]]$ په بشپړه بڼه وليکئ۔
+\end{prob}
+
+\end{document}
