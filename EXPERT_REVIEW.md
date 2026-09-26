@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 361 of 722 source units are translated drafts. This log contains 186 terminology entries and 281 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 362 of 722 source units are translated drafts. This log contains 187 terminology entries and 289 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1677,6 +1677,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: ځایناستی د تعويض پر ځاے; نا تعريف شوے تعويض د ناټاکلي پر ځاے; د متغير ښکېلتيا د نيونې پر ځاے
 - Review question: In Pakistani Pashto mathematical prose, is «تعويض / قسمي تعويض / ناټاکلے تعويض / د متغير نيونه / معکوس تعويض» the clearest conventional rendering of “substitution / partial substitution / undefined substitution / variable capture / inverse substitution” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B066 owner source proof and Pakistani Pashto language review
+
+## TERM-LAMBDA-ALPHA-CONVERSION
+
+- Type: terminology
+- Choice: الفا-بدلون / د تړلي متغير د نوم بدلون / الفا-معادلتوب / سازګاره اړيکه
+- Uncertainty: Pakistani prose and SOV grammar inspected; Afghan substitution comparator is regional only. Exact alpha and compatible-relation compounds are source-led and provisional.
+- Alternatives: د الفا بدلون; د تړلي متغير نوم‌اړول; له جوړښت سره سازګاره اړيکه
+- Review question: Are the selected alpha-conversion, bound-variable-renaming, alpha-equivalence and compatibility compounds clear in Pakistani Pashto while keeping one-step and closure relations distinct?
+- Timing: contemporaneous B067 owner source-proof and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -4152,6 +4161,78 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLLAM-016 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-017
+
+- Type: source-correction
+- Choice: The first definition omits x != y, although both later equivalent formulations require it.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-017 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-018
+
+- Type: source-correction
+- Choice: The explanation of the smallest alpha-conversion relation omits reflexivity, although its definition and inductive rule require it.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-018 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-019
+
+- Type: source-correction
+- Choice: The second and third exercise pairs are printed identically.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-019 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-020
+
+- Type: source-correction
+- Choice: Three FV expressions omit the defined macro, and the x-absent branch skips the set equalities needed to justify its conclusion.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-020 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-021
+
+- Type: source-correction
+- Choice: The inverse proof claims y absent from FV(Subst(N,y,x)) by the clearance theorem; that theorem yields x absent.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-021 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-022
+
+- Type: source-correction
+- Choice: The printed existence construction checks only the outer binder side conditions and never ensures that substitution of R for y in its body is defined; two FV expressions also omit macros.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-022 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-023
+
+- Type: source-correction
+- Choice: The displayed uniqueness chain writes syntactic equalities where the replacement lemma and induction give only alpha-equivalence; it also compares only specially normalized variants, not every M-double-prime allowed by the theorem.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-023 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-024
+
+- Type: source-correction
+- Choice: The corollary repeats the first pair's substitution-definedness where the second pair is needed, and omits R-double-prime alpha-equivalent to R.
+- Uncertainty: The line-level source diagnosis is recorded; the general substitution uniqueness proof remains incomplete and Pashto wording remains open to review.
+- Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
+- Review question: Does the Pashto note for OLLAM-024 disclose the source issue without claiming more than the checked proof shows?
+- Timing: contemporaneous B067 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

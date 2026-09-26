@@ -1,0 +1,72 @@
+{
+  "schema": "ps-b067-partial-qa/1",
+  "status": "PASS",
+  "translated_partial_units": 1,
+  "all_checks_pass": true,
+  "unit": {
+    "unit_id": "OLP-0362",
+    "path": "content/lambda-calculus/syntax/alpha.tex",
+    "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+    "translation_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+    "source_blocks": 39,
+    "target_blocks": 39,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "named_token_macros": true,
+      "no_ordinary_english": true
+    },
+    "residual_english": [
+      "OLLAM"
+    ],
+    "allowed_residual_english": [
+      "OLLAM"
+    ],
+    "unexpected_residual_english": [],
+    "extra_locale_macros": {},
+    "source_correction_ids": [
+      "OLLAM-017",
+      "OLLAM-018",
+      "OLLAM-019",
+      "OLLAM-020",
+      "OLLAM-021",
+      "OLLAM-022",
+      "OLLAM-023",
+      "OLLAM-024"
+    ],
+    "status": "structural-pass",
+    "math_diff": {
+      "source_only": [
+        "$x\\inFV(N)$",
+        "$x\\notinFV(N)$",
+        "\\begin{align*}\\FV{\\lambd[y][\\Subst{N}{y}{x}]}&=FV{\\Subst{N}{y}{x}}\\setminus\\{y\\}\\\\&=\\FV{N}\\setminus\\{x\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[x][N]}.\\end{align*}",
+        "$y\\notin\\FV{\\Subst{N}{y}{x}}$",
+        "$z\\notinFV(N')$",
+        "$z\\notinFV(R)$",
+        "$\\Subst{M'}{R'}{y}$"
+      ],
+      "target_only": [
+        "$x\\neqy$",
+        "$x\\in\\FV{N}$",
+        "$x\\notin\\FV{N}$",
+        "\\begin{align*}\\FV{\\lambd[y][\\Subst{N}{y}{x}]}&=\\FV{\\Subst{N}{y}{x}}\\setminus\\{y\\}\\\\&=\\FV{N}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{N}&&y\\notin\\FV{N}\\\\&=\\FV{N}\\setminus\\{x\\}&&x\\notin\\FV{N}\\\\&=\\FV{\\lambd[x][N]}.\\end{align*}",
+        "$x\\notin\\FV{\\Subst{N}{y}{x}}$",
+        "$\\Subst{M''}{R''}{y}$",
+        "$R''\\aeqR$",
+        "$z\\notin\\FV{R}$",
+        "$z\\notin\\FV{N'}$"
+      ],
+      "expected_by_source_correction": true
+    }
+  },
+  "source_blocks": 39,
+  "aligned_blocks": 39,
+  "canon_use_records": 38,
+  "staging_qa_sha256": "6a7cbd3585ba5959a387249fa32e2f584fe1d720996dddf65c11e38c9dabd0ac"
+}

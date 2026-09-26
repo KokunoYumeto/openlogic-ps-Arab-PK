@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B066-LAMBDA-SUBSTITUTION",
-  "status": "OLP-0361 source-reviewed with six adjacent-disclosed corrections; staging draft passed exact structural and math-difference inspection",
+  "batch_id": "PS-B067-LAMBDA-ALPHA",
+  "status": "OLP-0362 source-reviewed and staged with eight adjacent disclosures; exact structural and math-difference QA passes",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7685,6 +7685,24 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0362": {
+      "batch_id": "PS-B067-LAMBDA-ALPHA",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-ALPHA-CONVERSION",
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "One-step binder renaming, compatible closure, alpha-equivalence, exercises, FV and inverse lemmas, and substitution theorem/corollary translated. Eight adjacent notes disclose definition, duplicate, notation and proof defects. Pakistani prose/grammar witnesses do not attest exact lambda compounds; Afghan substitution use is a labelled comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10759,6 +10777,36 @@
       "passage": "clearance and inverse theorems",
       "reverse_paraphrase": "If x is absent from N, substituting N for x removes x from the free-variable set. If y is absent from M, defined substitution of y for x can be reversed by substituting x for y; both binder inequalities and the body's induction hypothesis are required.",
       "finding": "The statements, exercise prompts and displayed inverse calculation are retained. OLLAM-016 makes the previously omitted binder and induction conditions explicit."
+    },
+    {
+      "unit_id": "OLP-0362",
+      "passage": "one-step alpha definition and compatible closure",
+      "reverse_paraphrase": "A bound variable can be renamed to a distinct fresh name when the body substitution is defined; compatibility propagates a single change through abstraction and each application component.",
+      "finding": "All three source formulations and inductive labels retained. OLLAM-017 supplies the missing distinctness side condition in the first formulation; OLLAM-018 states reflexivity in the closure explanation."
+    },
+    {
+      "unit_id": "OLP-0362",
+      "passage": "examples, exercise, and one-step FV lemma",
+      "reverse_paraphrase": "Only bound names may change; differing free environment variables prevent alpha-conversion. One-step conversion preserves the free-variable set in both cases of whether x occurs free in N.",
+      "finding": "Both printed duplicate exercise pairs preserved with OLLAM-019. OLLAM-020 repairs three FV macro omissions and supplies the valid second-case set chain."
+    },
+    {
+      "unit_id": "OLP-0362",
+      "passage": "inverse lemma and equivalence relation",
+      "reverse_paraphrase": "A one-step binder change can be reversed because old x is absent from the changed body's free-variable set and inverse substitution restores N. Reversibility plus reflexivity and transitivity yields equivalence.",
+      "finding": "OLLAM-021 changes the false y-absence claim to x-absence. All source proof exercises and cross-references remain."
+    },
+    {
+      "unit_id": "OLP-0362",
+      "passage": "substitution compatibility and existence theorem",
+      "reverse_paraphrase": "Alpha-equivalent replacements preserve definedness and outputs up to alpha-equivalence. For any term, renaming binders can make substitution defined; after renaming the outer binder, an induction step on its body is still required.",
+      "finding": "The target explains the missing inner-substitution step and discloses OLLAM-022. The source's printed existence inference alone is insufficient."
+    },
+    {
+      "unit_id": "OLP-0362",
+      "passage": "uniqueness attempt and corollary",
+      "reverse_paraphrase": "The theorem claims that choices of alpha-equivalent term and replacement produce alpha-equivalent results when both substitutions are defined. The printed proof compares only special normalized forms, and cited results yield alpha-equivalence rather than syntactic equality.",
+      "finding": "OLLAM-023 flags the incomplete uniqueness argument without presenting it as proved. OLLAM-024 restores both missing premises of the printed corollary; its conclusion is otherwise false."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0361; six B066 substitution repairs disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T03:24:25.039292+00:00",
+  "status": "adopted through OLP-0362; eight B067 alpha source issues disclosed, including an unresolved general uniqueness proof; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T03:52:31.043487+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -7342,6 +7342,367 @@
       ],
       "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-017",
+      "unit_id": "OLP-0362",
+      "classification": "one-step-definition-missing-distinctness",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:18-27",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 26,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The first definition omits x != y, although both later equivalent formulations require it.",
+      "reason": "The first definition omits x != y, although both later equivalent formulations require it.",
+      "counterexample": "With N=z and y=x for distinct x,z, the first printed conditions admit the syntactic self-pair lambda x.z to itself, while the later one-step rule excludes it.",
+      "formula_policy": "Add x != y to the first target definition and disclose the source omission.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$x\\neqy$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:18-27",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:26"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-018",
+      "unit_id": "OLP-0362",
+      "classification": "reflexive-closure-explanation-omission",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:72-79",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 82,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The explanation of the smallest alpha-conversion relation omits reflexivity, although its definition and inductive rule require it.",
+      "reason": "The explanation of the smallest alpha-conversion relation omits reflexivity, although its definition and inductive rule require it.",
+      "counterexample": "A zero-step conversion is needed for every P alpha-converts to P; the source itself includes that inductive rule.",
+      "formula_policy": "State reflexivity alongside transitivity and one-step inclusion in Pashto prose.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:72-79",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:82"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-019",
+      "unit_id": "OLP-0362",
+      "classification": "duplicate-alpha-exercise-pair",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:103-109",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 116,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "literal-source-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The second and third exercise pairs are printed identically.",
+      "reason": "The second and third exercise pairs are printed identically.",
+      "counterexample": "No authoritative intended third pair is established by the frozen source, so a replacement would be invented.",
+      "formula_policy": "Preserve both pairs and disclose the duplication immediately after the list.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:103-109",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:116"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-020",
+      "unit_id": "OLP-0362",
+      "classification": "free-variable-macro-and-proof-chain",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:125-140",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 153,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "Three FV expressions omit the defined macro, and the x-absent branch skips the set equalities needed to justify its conclusion.",
+      "reason": "Three FV expressions omit the defined macro, and the x-absent branch skips the set equalities needed to justify its conclusion.",
+      "counterexample": "When x is absent from FV(N), FV(Subst(N,y,x))=FV(N); y is absent from FV(N) by the renaming condition, and x is absent by the case premise, so removing either yields the same set.",
+      "formula_policy": "Use FV macros in both premises and the second display, and show the intermediate FV(N) minus y, FV(N), and FV(N) minus x steps.",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\inFV(N)$",
+          "$x\\notinFV(N)$",
+          "\\begin{align*}\\FV{\\lambd[y][\\Subst{N}{y}{x}]}&=FV{\\Subst{N}{y}{x}}\\setminus\\{y\\}\\\\&=\\FV{N}\\setminus\\{x\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[x][N]}.\\end{align*}"
+        ],
+        "target_only": [
+          "$x\\in\\FV{N}$",
+          "$x\\notin\\FV{N}$",
+          "\\begin{align*}\\FV{\\lambd[y][\\Subst{N}{y}{x}]}&=\\FV{\\Subst{N}{y}{x}}\\setminus\\{y\\}\\\\&=\\FV{N}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{N}&&y\\notin\\FV{N}\\\\&=\\FV{N}\\setminus\\{x\\}&&x\\notin\\FV{N}\\\\&=\\FV{\\lambd[x][N]}.\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:125-140",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:153"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-021",
+      "unit_id": "OLP-0362",
+      "classification": "inverse-proof-wrong-free-variable",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:151-167",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 184,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The inverse proof claims y absent from FV(Subst(N,y,x)) by the clearance theorem; that theorem yields x absent.",
+      "reason": "The inverse proof claims y absent from FV(Subst(N,y,x)) by the clearance theorem; that theorem yields x absent.",
+      "counterexample": "For N=x and distinct x,y, Subst(x,y,x)=y, so y is free in the result; x is absent and is the required reverse-renaming condition.",
+      "formula_policy": "Replace y by x in the free-variable claim, preserving the inverse substitution and binder-change formula.",
+      "qa_math_exception": {
+        "source_only": [
+          "$y\\notin\\FV{\\Subst{N}{y}{x}}$"
+        ],
+        "target_only": [
+          "$x\\notin\\FV{\\Subst{N}{y}{x}}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:151-167",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:184"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-022",
+      "unit_id": "OLP-0362",
+      "classification": "substitution-existence-inner-definedness-gap",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:236-246",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 277,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The printed existence construction checks only the outer binder side conditions and never ensures that substitution of R for y in its body is defined; two FV expressions also omit macros.",
+      "reason": "The printed existence construction checks only the outer binder side conditions and never ensures that substitution of R for y in its body is defined; two FV expressions also omit macros.",
+      "counterexample": "Take distinct x,y,z,w, N=lambda w.y and R=w. Choosing N'=N makes substitution of z for x in N defined, but substituting w for y into lambda w.y is undefined. Apply the smaller-term existence induction again to the renamed body before forming the outer abstraction.",
+      "formula_policy": "Explain the second induction step in Pashto and correct the two FV macro expressions; retain exact outer binder conditions.",
+      "qa_math_exception": {
+        "source_only": [
+          "$z\\notinFV(N')$",
+          "$z\\notinFV(R)$"
+        ],
+        "target_only": [
+          "$z\\notin\\FV{R}$",
+          "$z\\notin\\FV{N'}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:236-246",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:277"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-023",
+      "unit_id": "OLP-0362",
+      "classification": "substitution-uniqueness-proof-overclaims-equality",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:248-260",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 296,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "literal-source-plus-adjacent-Pashto-proof-limitation",
+      "translation_change": "The displayed uniqueness chain writes syntactic equalities where the replacement lemma and induction give only alpha-equivalence; it also compares only specially normalized variants, not every M-double-prime allowed by the theorem.",
+      "reason": "The displayed uniqueness chain writes syntactic equalities where the replacement lemma and induction give only alpha-equivalence; it also compares only specially normalized variants, not every M-double-prime allowed by the theorem.",
+      "counterexample": "Let N''=y, R''=lambda a.a and R=lambda b.b with a,b distinct and fresh. The second displayed equality identifies distinct lambda terms, though they are alpha-equivalent. General arbitrary M-double-prime remains unaddressed.",
+      "formula_policy": "Preserve the printed attempt as a labelled source calculation and warn adjacent to it that the claimed equalities do not prove general uniqueness; do not claim the theorem proof is complete.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:248-260",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:296"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-024",
+      "unit_id": "OLP-0362",
+      "classification": "corollary-missing-second-pair-hypotheses",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:270-275",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex",
+      "target_line_1based": 317,
+      "target_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The corollary repeats the first pair's substitution-definedness where the second pair is needed, and omits R-double-prime alpha-equivalent to R.",
+      "reason": "The corollary repeats the first pair's substitution-definedness where the second pair is needed, and omits R-double-prime alpha-equivalent to R.",
+      "counterexample": "With M=y, both substitutions are defined, but two non-alpha-equivalent replacements give non-alpha-equivalent results unless the omitted R-double-prime premise is restored.",
+      "formula_policy": "Require defined Subst(M-double-prime,R-double-prime,y) and R-double-prime alpha-equivalent to R; disclose both corrections.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Subst{M'}{R'}{y}$"
+        ],
+        "target_only": [
+          "$\\Subst{M''}{R''}{y}$",
+          "$R''\\aeqR$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+      "audit_artifacts": [
+        "B067_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/alpha.tex:270-275",
+        "ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:317"
+      ],
+      "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -7349,7 +7710,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Advance OLP-0362 onward and report checked source findings to manager; keep frozen source unchanged.",
+  "next_action": "Continue OLP-0363 onward; do not claim source thm:sub uniqueness proved until a complete derivation is supplied.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

@@ -1,0 +1,327 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: alpha
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{alp}
+\olsection{$\alpha$-بدلون}
+
+د $\lambd[x][x]$ او $\lambd[y][y]$ تر منځ څۀ اړيکه ده؟ دواړه د
+هماني تابع استازيتوب کوي۔ البته د جوړښت له پلوه بېل ترمونه دي۔
+توپير ئې يوازې د تړلي متغير په نوم کښې دے؛ يو د بل د تړلي متغير
+د «بيا نومولو» پايله ده۔ دې ته \emph{$\alpha$-بدلون} وايي۔
+
+\begin{defn}[د تړلي متغير د نوم بدلون، $\aconvone$]
+  که ترم~$M$ د $\lambd[x][N]$ يو مورد ولري، $x\neq y$ وي،
+  $y \notin \FV{N}$ وي او $\Subst{N}{y}{x}$ ټاکلے وي، نو د دې مورد
+  په
+  \begin{equation*}
+    \lambd[y][\Subst{N}{y}{x}]
+  \end{equation*}
+  بدلول، چې پايله ئې~$M'$ ده، \emph{د تړلي متغير د نوم بدلون}
+  بلل کېږي او $M \redone[\alpha] M'$ ليکل کېږي۔
+  \textbf{د ژباړې د نسخې سمون (OLLAM-017):} د سرچينې په دې
+  لومړي تعريف کښې د دوو نومونو نابرابري نۀ وه ويل شوې، خو
+  راتلونکے معادل تعريف او استقرايي قاعده ئې شرط بولي۔
+\end{defn}
+
+\begin{defn}[د اړيکې سازګارتيا]
+  پر ترمونو يوه اړيکه~$R$ \emph{سازګاره} بلل کېږي که دا شرطونه
+  پوره کړي:
+  \begin{enumerate}
+  \item که $R N N'$ وي، نو $R \lambd[x][N] \lambd[x][N']$ وي۔
+  \item که $R P P'$ وي، نو $R (PQ) (P'Q)$ وي۔
+  \item که $R Q Q'$ وي، نو $R (PQ) (PQ')$ وي۔
+  \end{enumerate}
+\end{defn}
+
+نو تعريف بيا داسې ويلے شو:
+\begin{defn}[د تړلي متغير د نوم بدلون، $\aconvone$]
+  \emph{د تړلي متغير د نوم بدلون} ($\redone[\alpha]$) پر ترمونو
+  تر ټولو کوچنۍ سازګاره اړيکه ده چې دا شرط پوره کوي:
+  \begin{align*}
+    &\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}] && \text{که
+      $x \neq y$، $y \notin \FV{N}$ وي} \\
+    & &&\text{او $\Subst{N}{y}{x}$ ټاکلے وي}
+  \end{align*}
+\end{defn}
+
+دلته «تر ټولو کوچنۍ» معنا دا ده چې اړيکه يوازې هغه جوړې لري
+چې د سازګارتيا او زيات شوي شرط له مخې لازمي دي؛ نورې جوړې نۀ
+لري۔ له همدې امله اړيکه داسې هم تعريفېږي:
+
+\begin{defn}[د تړلي متغير د نوم بدلون، $\aconvone$] \ollabel{defn:aconvone}
+  \emph{د تړلي متغير د نوم بدلون} ($\aconvone$) په استقرايي
+  ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \item که $N \aconvone N'$ وي، نو $\lambd[x][N] \aconvone
+    \lambd[x][N']$ وي۔ \ollabel{defn:aconvone1}
+  \item که $P \aconvone P'$ وي، نو $(PQ) \aconvone (P'Q)$ وي۔ \ollabel{defn:aconvone2}
+  \item که $Q \aconvone Q'$ وي، نو $(PQ) \aconvone (PQ')$ وي۔ \ollabel{defn:aconvone3}
+  \item که $x \neq y$، $y \notin \FV{N}$ او $\Subst{N}{y}{x}$
+    ټاکلے وي، نو
+    $\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}]$ وي۔
+    \ollabel{defn:aconvone4}
+  \end{enumerate}
+\end{defn}
+
+دا تعريفونه معادل دي، خو ثبوت ئې تمرين ته پرېږدو۔ له دې وروسته
+به استقرايي تعريف کاروو۔
+
+\begin{defn}[$\alpha$-بدلون، $\aconv$]
+  \emph{$\alpha$-بدلون} ($\aconv$) پر ترمونو تر ټولو کوچنۍ
+  انعکاسي او انتقالي اړيکه ده چې $\aconvone$ پکې شامله وي۔
+\end{defn}
+
+لکه پورته، «تر ټولو کوچنۍ» معنا دا ده چې اړيکه يوازې هغه جوړې
+لري چې د انعکاسيت، انتقاليت او $\aconvone$ له مخې لازمي دي۔
+دا لاندې معادل تعريف ته رسوي:
+\textbf{د ژباړې د نسخې سمون (OLLAM-018):} د سرچينې په تشريح
+کښې انعکاسيت له دې لړ څخه پاتې و، که څۀ هم په دواړو رسمي
+تعريفونو کښې شته۔
+
+\begin{defn}[$\alpha$-بدلون، $\aconv$] \ollabel{defn:aconv}
+  \emph{$\alpha$-بدلون} ($\aconv$) په استقرايي ډول داسې
+  تعريفېږي:
+  \begin{enumerate}
+  \item که $P \aconv Q$ او $Q \aconv R$ وي، نو $P \aconv R$ وي۔
+    \ollabel{defn:aconv1}
+  \item که $P \aconvone Q$ وي، نو $P \aconv Q$ وي۔ \ollabel{defn:aconv2}
+  \item $P \aconv P$. \ollabel{defn:aconv3}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  $\lambd[x][f x]$ په $\lambd[y][f
+  y]$ $\alpha$-بدلېږي او برعکس هم۔ په غيررسمي وينا، دواړه داسې تابعګانې
+  دي چې آرګومېنټ اخلي او د هغه آرګومېنټ د~$f$ پايله ورکوي؛
+  $f$ د چاپېريال متغير ته اشاره کوي۔
+
+  $\lambd[x][f x]$ په $\lambd[x][g
+    x]$ د $\alpha$-بدلون نۀ مومي۔ په غيررسمي وينا، لومړنۍ تابع د چاپېريال
+  متغير~$f$ او دويمه د~$g$ حواله ورکوي؛ ځکه چې په کوم چاپېريال
+  کښې $f$ او $g$ بېل وي، د دواړو تابعګانو چلند هم بېل وي۔
+\end{ex}
+
+\begin{prob}
+  آيا د ترمونو لاندې جوړې $\alpha$-بدلېدونکې دي؟
+  \begin{enumerate}
+  \item $\lambd[x][\lambd[y][x]]$ او $\lambd[y][\lambd[x][y]]$
+  \item $\lambd[x][\lambd[y][x]]$ او $\lambd[c][\lambd[b][a]]$
+  \item $\lambd[x][\lambd[y][x]]$ او $\lambd[c][\lambd[b][a]]$
+  \end{enumerate}
+  \textbf{د ژباړې د نسخې سمون (OLLAM-019):} سرچينې دويمه او
+  درېيمه جوړه يو شان چاپ کړې ده؛ دواړه دلته هماغسې ساتل شوې دي۔
+\end{prob}
+
+\begin{lem}\ollabel{lem:fv-one}
+  که $P \aconvone Q$ وي، نو $\FV{P} = \FV{Q}$ وي۔
+\end{lem}
+
+\begin{proof}
+  د $P \aconvone Q$ د !!{derivation} پر بنسټ استقرا کوو۔
+  \begin{enumerate}
+  \item که وروستۍ قاعده \olref{defn:aconvone4} وي، نو $P$ د
+    $\lambd[x][N]$ او $Q$ د
+    $\lambd[y][\Subst{N}{y}{x}]$ په بڼه دي؛ دلته $x \neq y$،
+    $y \notin \FV{N}$ او $\Subst{N}{y}{x}$ ټاکلے دے۔ اوس د
+    $x \in \FV{N}$ او د دې د نفي حالتونه بېلوو:
+    \begin{enumerate}
+    \item که $x \in \FV{N}$ وي، نو:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]} &=
+        \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = ((\FV{N} \setminus \{x\}) \cup \{y\}) \setminus \{y\}
+         && \text{د \olref[sub]{thm:infv} له مخې} \\
+        & = \FV{N} \setminus \{x\} \\
+        & = \FV{\lambd[x][N]}
+      \end{align*}
+    \item که $x \notin \FV{N}$ وي، نو:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]}
+        & = \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = \FV{N} \setminus \{y\}
+         && \text{د \olref[sub]{thm:notinfv} له مخې} \\
+        & = \FV{N} && y \notin \FV{N} \\
+        & = \FV{N} \setminus \{x\} && x \notin \FV{N} \\
+        & = \FV{\lambd[x][N]}.
+      \end{align*}
+    \end{enumerate}
+    \textbf{د ژباړې د نسخې سمون (OLLAM-020):} د سرچينې په
+    درېو ځايونو کښې د ازادو متغيرونو نښه له خپل ټاکلي ماکرو
+    پرته ليکل شوې وه۔ د دويم حالت حساب هم له منځنيو لازمو
+    مساواتو سره بشپړ شوے دے۔
+  \item نور درې حالتونه د تمرين دپاره پرېښودل شوي دي۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][alp]{lem:fv-one} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{lem}\ollabel{lem:inv}
+  که $P \aconvone Q$ وي، نو $Q \aconvone P$ وي۔
+\end{lem}
+
+\begin{proof}
+  د $P \aconvone Q$ د !!{derivation} پر بنسټ استقرا کوو۔
+  \begin{enumerate}
+  \item که وروستۍ قاعده \olref{defn:aconvone4} وي، نو $P$ د
+    $\lambd[x][N]$ او $Q$ د
+    $\lambd[y][\Subst{N}{y}{x}]$ په بڼه دي؛ $x \neq y$،
+    $y \notin \FV{N}$ او $\Subst{N}{y}{x}$ ټاکلے دے۔ لومړے، د
+    \olref[sub]{thm:clr} له مخې
+    $x \notin \FV{\Subst{N}{y}{x}}$ لرو۔ د
+    \olref[sub]{thm:inv} له مخې
+    $\Subst{\Subst{N}{y}{x}}{x}{y}$ ټاکلے دے او له~$N$ سره
+    برابر هم دے۔ بيا د \olref{defn:aconvone4} له مخې
+    $\lambd[y][\Subst{N}{y}{x}]
+    \aconvone \lambd[x][\Subst{\Subst{N}{y}{x}}{x}{y}] =
+    \lambd[x][N]$۔
+    \textbf{د ژباړې د نسخې سمون (OLLAM-021):} سرچينې دلته د
+    تعويض له پايلې څخه د نوي متغير نشتوالے ادعا کړے و؛ دا
+    په عمومي ډول ناسم دے۔ د راوړل شوې قضيې له مخې زوړ متغير
+    پکې ازاد نۀ وي، او د معکوس نوم‌بدلون لپاره همدغه شرط پکار دے۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][alp]{lem:inv} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{thm}
+  $\alpha$-بدلون پر ترمونو د معادلتوب اړيکه ده؛ يعنې انعکاسي،
+  متناظره او انتقالي ده۔
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+  \item هر ترم~$M$ له تړلي متغيره د نوم له \emph{صفر} بدلونونو
+    وروسته له~$M$ سره يو شان وي؛ يعنې هماغه~$M$ پاتې کېږي۔
+  \item که $P$ د تړلو متغيرونو د نومونو د بدلونونو په لړۍ سره
+    په~$Q$ $\alpha$-بدلېږي، نو له~$Q$ څخه همدا بدلونونه د
+    \olref{lem:inv} له مخې په معکوس ترتيب بېرته ترسره کولے شو
+    او~$P$ تر لاسه کوو۔
+  \item که $P$ د تړلو متغيرونو د نومونو په يوه لړۍ سره په~$Q$
+    او $Q$ په بله لړۍ سره په~$R$ $\alpha$-بدلېږي، نو لومړۍ او بيا
+    دويمه لړۍ په ترسره کولو $P$ په~$R$ بدلېږي۔
+  \end{enumerate}
+\end{proof}
+
+له دې وروسته $M$ او $N$ ته \emph{$\alpha$-معادل} وايو،
+$M \aeq N$، که $M$ په~$N$ $\alpha$-بدلېږي؛ لکه ثابت مو چې کړل،
+دا هغه وخت او يوازې هغه وخت کېږي چې $N$ هم په~$M$ $\alpha$-بدلېږي۔
+
+\begin{thm}\ollabel{thm:fv}
+  که $M \aeq N$ وي، نو $\FV{M} = \FV{N}$ وي۔
+\end{thm}
+
+\begin{proof}
+  دا سمدستي له \olref{lem:fv-one} څخه راځي۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:sub:R}
+  که $R \aeq R'$ او $\Subst{M}{R}{y}$ ټاکلے وي، نو
+  $\Subst{M}{R'}{y}$ هم ټاکلے وي او له
+  $\Subst{M}{R}{y}$ سره $\alpha$-معادل وي۔
+\end{lem}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:sub:R} ثابت کړئ۔
+\end{prob}
+
+په \olref[sub]{sec} کښې مو ولوستل چې تعويض په ځينو حالتونو
+کښې ناټاکلے وي؛ خو د ترمونو د $\alpha$-بدلون په وسيله تړلي
+متغيرونه بيا نومولے شو او تعويض ټاکلے کولے شو۔ پايله ئې
+$\alpha$-معادلتوب ساتي، لکه لاندې قضيه چې وايي:
+
+\begin{thm}\ollabel{thm:sub}
+  د هر~$M$، $R$ او~$y$ دپاره داسې~$M'$ شته چې $M \aeq M'$
+  او $\Subst{M'}{R}{y}$ ټاکلے وي۔ سربېره پر دې، که بله جوړه
+  $M'' \aeq M$ او~$R''$ وي چې $\Subst{M''}{R''}{y}$ ټاکلے وي
+  او $R'' \aeq R$ وي، نو
+  $\Subst{M'}{R}{y} \aeq \Subst{M''}{R''}{y}$ وي۔
+\end{thm}
+
+\begin{proof}
+  د~$M$ د جوړښت پر بنسټ استقرا کوو:
+  \begin{enumerate}
+  \item که $M$ متغير~$z$ وي: تمرين۔
+  \item فرض کړئ $M$ د $\lambd[x][N]$ په بڼه دے۔ له~$x$ او~$y$
+    څخه بېل داسې متغير~$z$ غوره کړئ چې $z \notin \FV{N}$ او
+    $z \notin \FV{R}$ وي۔ د استقرا د فرضيې له مخې داسې~$N'$ شته
+    چې $N' \aeq N$ او $\Subst{N'}{z}{x}$ ټاکلے وي۔ نو
+    $\lambd[x][N] \aeq \lambd[x][N']$ هم د
+    \olref{defn:aconvone}\olref{defn:aconvone1} له مخې دے۔
+    اوس $\lambd[x][N'] \aeq
+    \lambd[z][\Subst{N'}{z}{x}]$ د
+    \olref{defn:aconvone}\olref{defn:aconvone4} له مخې دے؛ ځکه
+    $z \ne x$، $z \notin \FV{N'}$ او $\Subst{N'}{z}{x}$ ټاکلے دے۔
+    خو له دې څخه لا دا نۀ راځي چې
+    $\Subst{\lambd[z][\Subst{N'}{z}{x}]}{R}{y}$ ټاکلے دے؛
+    دنننے تعويض هم بايد ټاکلے وي۔ د دې د تضمين دپاره د لومړي
+    تعويض پر پايله د استقرا د وجود برخه بيا کاروو؛ دا پايله له
+    اصلي تجريد څخه د جوړښت له پلوه کوچنۍ ده۔ له هغې سره
+    الفا-معادله بدنه غوره کوو چې د ټاکلي متغير پر ځاے د ټاکلي
+    ترم تعويض پکې ټاکلے وي۔ د دې بدنې تجريد له اصلي ترم سره
+    د سازګارتيا له مخې الفا-معادل پاتې کېږي؛ ځکه چې
+    $z \neq y$ او $z \notin \FV{R}$ دي، د باندې تعويض هم
+    ټاکلے وي۔
+    \textbf{د ژباړې د نسخې سمون (OLLAM-022):} سرچينې د وروستي
+    تعويض ټاکلتيا يوازې له د باندې تړونکي شرطونو راايستلې وه؛
+    دنننے تعويض ئې نۀ و تضمين کړے۔ دلته د استقرا د وجود د
+    برخې دويم کارول ښودل شوي دي۔
+
+    سربېره پر دې، که بل~$N''$ او~$R''$ هماغه شرطونه پوره کړي،
+    سرچينه لاندې حساب راوړي:
+    \begin{multline*}
+      \Subst{(\lambd[z][\Subst{N''}{z}{x}])}{R''}{y} =\\
+    \begin{aligned}
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R''}{y}] \\
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R}{y}] && \text{د
+        \olref{lem:sub:R} له مخې}\\
+      &=\lambd[z][\Subst{\Subst{N'}{z}{x}}{R}{y}]
+      && \text{د استقرا د
+        فرضيې له مخې}\\
+      &=\Subst{(\lambd[z][\Subst{N'}{z}{x}])}{R}{y}
+    \end{aligned}
+    \end{multline*}
+    \textbf{د ژباړې د نسخې سمون (OLLAM-023):} په دې لړۍ کښې
+    يادې شوې لمه او د استقرا فرضيه يوازې الفا-معادلتوب ورکوي،
+    نه نحوي برابري؛ د سرچينې د مساواتو نښې دلته د بشپړ ثبوت
+    په توګه نۀ منل کېږي۔ سربېره پر دې، لړۍ يوازې ځانګړي بيا
+    نومول شوي ترمونه پرتله کوي؛ د قضيې د هرې ممکنې بلې
+    الفا-معادلې جوړې د پايلو يوګونتيا پکې نۀ ده ثابته شوې۔
+    \item که $M$ د $(PQ)$ په بڼه وي: تمرين۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][alp]{thm:sub} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{cor}\ollabel{cor:sub}
+  د هر~$M$، $R$ او~$y$ دپاره داسې جوړه~$M'$ او~$R'$ شته
+  چې $M' \aeq M$، $R \aeq R'$ او $\Subst{M'}{R'}{y}$ ټاکلے
+  وي۔ سربېره پر دې، که بله جوړه $M'' \aeq M$ او~$R''$
+  وي چې $R'' \aeq R$ او $\Subst{M''}{R''}{y}$ ټاکلے وي، نو
+  $\Subst{M'}{R'}{y} \aeq
+  \Subst{M''}{R''}{y}$ وي۔
+  \textbf{د ژباړې د نسخې سمون (OLLAM-024):} سرچينې د دويمې
+  جوړې لپاره د لومړۍ جوړې د تعويض ټاکلتيا بيا ليکلې وه او
+  د دويم بديل ترم الفا-معادلتوب ئې هم نۀ و شرط کړے۔ دواړه
+  ورک شرطونه دلته څرګند شول۔
+\end{cor}
+
+\begin{proof}
+  دا سمدستي له \olref{thm:sub} څخه راځي۔
+\end{proof}
+
+\end{document}

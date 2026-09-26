@@ -2471,3 +2471,75 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The inverse-substitution proof mentions only z != y, leaving implicit z != x, the body substitution's definedness and the free-variable premise needed for induction.
 - Counterexample or exact defect: Defined Subst(lambda z.N,y,x) yields z != x, z != y and defined Subst(N,y,x). The theorem's y absent from FV(lambda z.N), together with z != y, gives y absent from FV(N). Both inequalities also justify definedness of the reverse abstraction step.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-017
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:18-27` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:26` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The first definition omits x != y, although both later equivalent formulations require it.
+- Evidence: With N=z and y=x for distinct x,z, the first printed conditions admit the syntactic self-pair lambda x.z to itself, while the later one-step rule excludes it.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-018
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:72-79` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:82` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The explanation of the smallest alpha-conversion relation omits reflexivity, although its definition and inductive rule require it.
+- Evidence: A zero-step conversion is needed for every P alpha-converts to P; the source itself includes that inductive rule.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-019
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:103-109` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:116` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The second and third exercise pairs are printed identically.
+- Evidence: No authoritative intended third pair is established by the frozen source, so a replacement would be invented.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-020
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:125-140` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:153` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: Three FV expressions omit the defined macro, and the x-absent branch skips the set equalities needed to justify its conclusion.
+- Evidence: When x is absent from FV(N), FV(Subst(N,y,x))=FV(N); y is absent from FV(N) by the renaming condition, and x is absent by the case premise, so removing either yields the same set.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-021
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:151-167` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:184` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The inverse proof claims y absent from FV(Subst(N,y,x)) by the clearance theorem; that theorem yields x absent.
+- Evidence: For N=x and distinct x,y, Subst(x,y,x)=y, so y is free in the result; x is absent and is the required reverse-renaming condition.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-022
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:236-246` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:277` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The printed existence construction checks only the outer binder side conditions and never ensures that substitution of R for y in its body is defined; two FV expressions also omit macros.
+- Evidence: Take distinct x,y,z,w, N=lambda w.y and R=w. Choosing N'=N makes substitution of z for x in N defined, but substituting w for y into lambda w.y is undefined. Apply the smaller-term existence induction again to the renamed body before forming the outer abstraction.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-023
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:248-260` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:296` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The displayed uniqueness chain writes syntactic equalities where the replacement lemma and induction give only alpha-equivalence; it also compares only specially normalized variants, not every M-double-prime allowed by the theorem.
+- Evidence: Let N''=y, R''=lambda a.a and R=lambda b.b with a,b distinct and fresh. The second displayed equality identifies distinct lambda terms, though they are alpha-equivalent. General arbitrary M-double-prime remains unaddressed.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-024
+
+- Unit: `OLP-0362`.
+- Frozen source: `content/lambda-calculus/syntax/alpha.tex:270-275` (SHA-256 `f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:317` (SHA-256 `b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17`).
+- Correction or disclosure: The corollary repeats the first pair's substitution-definedness where the second pair is needed, and omits R-double-prime alpha-equivalent to R.
+- Evidence: With M=y, both substitutions are defined, but two non-alpha-equivalent replacements give non-alpha-equivalent results unless the omitted R-double-prime premise is restored.
+- The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.

@@ -1,0 +1,83 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T04:07:48.243746+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ALPHA",
+  "scope": "OLP-0362 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-017",
+      "unit_id": "OLP-0362",
+      "classification": "one-step-definition-missing-distinctness",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:18-27",
+      "target_line_1based": 26,
+      "counterexample": "With N=z and y=x for distinct x,z, the first printed conditions admit the syntactic self-pair lambda x.z to itself, while the later one-step rule excludes it.",
+      "formula_policy": "Add x != y to the first target definition and disclose the source omission."
+    },
+    {
+      "id": "OLLAM-018",
+      "unit_id": "OLP-0362",
+      "classification": "reflexive-closure-explanation-omission",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:72-79",
+      "target_line_1based": 82,
+      "counterexample": "A zero-step conversion is needed for every P alpha-converts to P; the source itself includes that inductive rule.",
+      "formula_policy": "State reflexivity alongside transitivity and one-step inclusion in Pashto prose."
+    },
+    {
+      "id": "OLLAM-019",
+      "unit_id": "OLP-0362",
+      "classification": "duplicate-alpha-exercise-pair",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:103-109",
+      "target_line_1based": 116,
+      "counterexample": "No authoritative intended third pair is established by the frozen source, so a replacement would be invented.",
+      "formula_policy": "Preserve both pairs and disclose the duplication immediately after the list."
+    },
+    {
+      "id": "OLLAM-020",
+      "unit_id": "OLP-0362",
+      "classification": "free-variable-macro-and-proof-chain",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:125-140",
+      "target_line_1based": 153,
+      "counterexample": "When x is absent from FV(N), FV(Subst(N,y,x))=FV(N); y is absent from FV(N) by the renaming condition, and x is absent by the case premise, so removing either yields the same set.",
+      "formula_policy": "Use FV macros in both premises and the second display, and show the intermediate FV(N) minus y, FV(N), and FV(N) minus x steps."
+    },
+    {
+      "id": "OLLAM-021",
+      "unit_id": "OLP-0362",
+      "classification": "inverse-proof-wrong-free-variable",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:151-167",
+      "target_line_1based": 184,
+      "counterexample": "For N=x and distinct x,y, Subst(x,y,x)=y, so y is free in the result; x is absent and is the required reverse-renaming condition.",
+      "formula_policy": "Replace y by x in the free-variable claim, preserving the inverse substitution and binder-change formula."
+    },
+    {
+      "id": "OLLAM-022",
+      "unit_id": "OLP-0362",
+      "classification": "substitution-existence-inner-definedness-gap",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:236-246",
+      "target_line_1based": 277,
+      "counterexample": "Take distinct x,y,z,w, N=lambda w.y and R=w. Choosing N'=N makes substitution of z for x in N defined, but substituting w for y into lambda w.y is undefined. Apply the smaller-term existence induction again to the renamed body before forming the outer abstraction.",
+      "formula_policy": "Explain the second induction step in Pashto and correct the two FV macro expressions; retain exact outer binder conditions."
+    },
+    {
+      "id": "OLLAM-023",
+      "unit_id": "OLP-0362",
+      "classification": "substitution-uniqueness-proof-overclaims-equality",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:248-260",
+      "target_line_1based": 296,
+      "counterexample": "Let N''=y, R''=lambda a.a and R=lambda b.b with a,b distinct and fresh. The second displayed equality identifies distinct lambda terms, though they are alpha-equivalent. General arbitrary M-double-prime remains unaddressed.",
+      "formula_policy": "Preserve the printed attempt as a labelled source calculation and warn adjacent to it that the claimed equalities do not prove general uniqueness; do not claim the theorem proof is complete."
+    },
+    {
+      "id": "OLLAM-024",
+      "unit_id": "OLP-0362",
+      "classification": "corollary-missing-second-pair-hypotheses",
+      "source_locator": "content/lambda-calculus/syntax/alpha.tex:270-275",
+      "target_line_1based": 317,
+      "counterexample": "With M=y, both substitutions are defined, but two non-alpha-equivalent replacements give non-alpha-equivalent results unless the omitted R-double-prime premise is restored.",
+      "formula_policy": "Require defined Subst(M-double-prime,R-double-prime,y) and R-double-prime alpha-equivalent to R; disclose both corrections."
+    }
+  ],
+  "unresolved": "The frozen source's general substitution uniqueness proof remains incomplete; the target identifies this adjacent to the literal source calculation.",
+  "status": "one source-reviewed draft unit; eight adjacent-disclosed alpha-definition, FV, proof and corollary issues with exact paired math exceptions"
+}

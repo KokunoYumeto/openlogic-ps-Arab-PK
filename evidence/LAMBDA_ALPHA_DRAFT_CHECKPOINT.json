@@ -1,0 +1,50 @@
+{
+  "schema": "ps-lambda-alpha-draft/1",
+  "utc": "2026-09-26T04:07:48.243746+00:00",
+  "batch_id": "PS-B067-LAMBDA-ALPHA",
+  "status": "accepted B067 editable draft; cumulative source, canon, structural and decision replay QA PASS; general source proof gap disclosed",
+  "units": [
+    {
+      "unit_id": "OLP-0362",
+      "path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "translation_sha256": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "source_correction_ids": [
+        "OLLAM-017",
+        "OLLAM-018",
+        "OLLAM-019",
+        "OLLAM-020",
+        "OLLAM-021",
+        "OLLAM-022",
+        "OLLAM-023",
+        "OLLAM-024"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 361,
+    "current_reviewed_draft_units": 1,
+    "cumulative_draft_units": 362,
+    "remaining_units": 360,
+    "public_reader_units": 255
+  },
+  "evidence": {
+    "source_audit_sha256": "e90fe7ad4ad9b69461023289a81707ffe58c995cf4561478a2623e6a7476e4e4",
+    "source_check_sha256": "6d4304a55cc51e8ff15cdb5f6e320508de7ecf719a7973e3b1f800a7408b5edb",
+    "canon_consultation_sha256": "d8ffdfbb41b0504d73fa0ab2085afc12a3f889ea42057ccc43d24cc5c10b62eb",
+    "source_corrections_sha256": "4460e1e45fe5062be7d9e69193f0ffa70ab7fc0b8f573137f4f115c2a556aa04",
+    "partial_qa_sha256": "86c3021f749b24b3808202404ac7f63ffe3e14d4af6f75a3a0214fddcd8ffd86",
+    "qa_sha256": "f0d5828729f458c316a75f8cd7b8dfcc7b3fdc04ed4f963dcf54b803bf3d793a",
+    "alignment_sha256": "cceed7bb243ccc1c1e97511940537674658e5cb7615b3d3e36c0369e63321900",
+    "canon_use_sha256": "593fbafbf1a48c373d5febb9e9781539e3a2021759812c5f91a6662c65c6c07e",
+    "term_decisions_sha256": "9202e4fa5395f41a2b15aacb55189a6faf6924fde361aee06084a7191e070e48",
+    "canonical_decisions_sha256": "774d5715e98378469845493b2ffc8239a205151e1786e63edb6a67a3f6825de2",
+    "canonical_qa_sha256": "cb5adaac14c359aee56beb3fb5b4c345d0a0414dfc68091e67c90e0e5c9c2a4c",
+    "canonical_replay_sha256": "547bc52ea780c09018326a4de57d8befd103ae9539096ec825f27da127e3c34f"
+  },
+  "next_action": "Commit/push B067; source-audit de Bruijn indices OLP-0363 and continue translation. Complete the v0.7 PDF/EPUB/direct-TeX/source release at a guarded TeX checkpoint."
+}
