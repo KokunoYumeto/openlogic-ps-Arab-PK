@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 369 of 722 source units are translated drafts. This log contains 193 terminology entries and 303 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 372 of 722 source units are translated drafts. This log contains 194 terminology entries and 311 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1737,6 +1737,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani scholarly prose and grammar inspected; Afghan function/equality pages are regional comparators only. Exact parallel-reduction and complete-development labels are source-led and provisional.
 - Review question: Parallel beta reduction contracts any selected set of redexes present in the starting term in one step; it may leave all unchanged. Complete development contracts all original redexes, not newly created ones. The corrected abstraction premise must itself be parallel reduction. Substitution compatibility uses the reduced argument in the target. The complete-development lemma gives a common successor and the Church--Rosser diamond.
 - Timing: contemporaneous B072 owner source-proof review and Pakistani-first canon consultation
+
+## TERM-LAMBDA-PARALLEL-BETA-ETA-DEVELOPMENT
+
+- Type: terminology
+- Choice: هممهاله بېټااېټا-راکمول / بېټااېټا-بشپړ راکمول / د اېټا شرط لومړيتوب
+- Uncertainty: Pakistani prose and grammar inspected; Afghan function/equality pages are regional comparators only. No inspected native page attests the exact compound or priority convention; both are source-led and provisional.
+- Review question: Parallel beta-eta adds compatible beta and eta rules. Complete development must apply the conditional eta clause before the generic abstraction clause where they overlap; otherwise the displayed equations do not specify one value. This source interpretation is disclosed, and the final closure proof keeps one-step and multistep relations separate.
+- Timing: contemporaneous B073 owner source-proof review and Pakistani-first canon consultation
 
 ## DEC-OLFUN-001
 
@@ -4404,6 +4412,70 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The lemma and the immediately preceding displayed formula already use the reduced argument R-prime.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B072 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-039
+
+- Type: source-correction
+- Choice: Disclose compatible-context cases and the structural induction needed beyond the printed root-redex proof.
+- Evidence: The beta one-step relation is compatible, not merely a root contraction.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-040
+
+- Type: source-correction
+- Choice: State that parallel reflexivity covers the zero-step ordinary beta path.
+- Evidence: The reduction relation is reflexive-transitive, while the displayed sequence discusses contractions.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-041
+
+- Type: source-correction
+- Choice: Replace the abstraction rule's strict beta premise by parallel beta-eta reduction.
+- Evidence: The following reflexivity exercise and later inductive cases require the parallel premise.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-042
+
+- Type: source-correction
+- Choice: Disclose priority of the final conditional eta clause over the generic abstraction clause.
+- Evidence: The complete-development continuation proof uses the eta result for a matching abstraction.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-043
+
+- Type: source-correction
+- Choice: Explain the intended compatible one-step union of beta and eta contraction at first use.
+- Evidence: The preceding eta section formally defines the multistep closure but not a separate prose definition of the symbol used here.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-044
+
+- Type: source-correction
+- Choice: Replace the beta-contraction symbol in the eta case by the defined eta-contraction symbol.
+- Evidence: The line explicitly says eta conversion and cites the eta definition.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-045
+
+- Type: source-correction
+- Choice: Disclose compatible-context cases and structural induction for the eta branch.
+- Evidence: Eta contraction is the smallest compatible relation; the proof text only gives the root eta case.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-046
+
+- Type: source-correction
+- Choice: Replace the repeated M-prime by N-prime in the rule-four variable list.
+- Evidence: The rule premise has N parallel-reduce to N-prime and the ensuing contraction uses N-prime.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B073 owner source-proof review before cumulative acceptance
 
 ## DEC-REL-I
 

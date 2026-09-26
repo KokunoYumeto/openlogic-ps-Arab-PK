@@ -526,7 +526,7 @@ def load_units() -> tuple[list[Unit], dict]:
             "sth:ord-arithmetic::chap": 1,
         }
     )
-    if THROUGH_UNIT == 321:
+    if THROUGH_UNIT >= 321:
         del expected_external["inc:req:min:lem:less-nsucc"]
         del expected_external["inc:req:min:lem:less-zero"]
     if external_counts != expected_external:
@@ -3296,9 +3296,9 @@ def build(args: argparse.Namespace) -> None:
         STYLESHEET, encoding="utf-8", newline="\n"
     )
     edition_scope = (
-        "cumulative-through-incompleteness"
-        if THROUGH_UNIT == 321
-        else "cumulative-through-computability"
+        "cumulative-through-church-rosser" if THROUGH_UNIT == 372 else
+        "cumulative-through-incompleteness" if THROUGH_UNIT == 321 else
+        "cumulative-through-computability"
     )
     identifier = "urn:uuid:" + str(
         uuid.uuid5(
@@ -3480,7 +3480,7 @@ def build(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--through-unit", type=int, choices=(255, 321), default=255)
+    parser.add_argument("--through-unit", type=int, choices=(255, 321, 372), default=255)
     parser.add_argument("--reference-map", type=Path)
     parser.add_argument(
         "--build-dir", type=Path, required=True
@@ -3505,6 +3505,16 @@ def main() -> None:
         EXPECTED_FIGURES = 31
         if args.reference_map is None:
             parser.error("--reference-map is required for OLP-0321")
+    elif THROUGH_UNIT == 372:
+        EDITION_VERSION = "0.8.0"
+        EDITION_MODIFIED = "2026-09-26T00:00:00Z"
+        EPUB_NAME = "openlogic-ps-Arab-PK-cumulative-through-church-rosser-v0.8.0.epub"
+        SUBTITLE = "له بنسټونو تر چرچ--روسر خاصيته"
+        CHAPTER_COUNT = 37
+        EXPECTED_SEGMENTS = 3852
+        EXPECTED_FIGURES = 31
+        if args.reference_map is None:
+            parser.error("--reference-map is required for OLP-0372")
     if args.reference_map is not None:
         REFERENCE_MAP_PATH = args.reference_map.resolve()
     build(args)

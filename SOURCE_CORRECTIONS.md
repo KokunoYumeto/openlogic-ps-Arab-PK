@@ -2658,3 +2658,59 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:83-90 (SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:98 (SHA-256 0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54).
 - د سرچينې يوه رياضيکي نښه د همدغه ثبوت د اړتيا له مخې په ښکاره سمه شوې او د پښتو متن تر څنګ يې سپيناوی ورکړل شوے دے. د نورو فورمولونو او پېژندونکو بڼه ساتل شوې ده.
+
+## OLLAM-039
+
+- واحد: OLP-0370.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-reduction.tex:13-22 (SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:23 (SHA-256 28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2).
+- ثبت شوې پرېکړه: Disclose compatible-context cases and the structural induction needed beyond the printed root-redex proof. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-040
+
+- واحد: OLP-0370.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-reduction.tex:56-63 (SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:79 (SHA-256 28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2).
+- ثبت شوې پرېکړه: State that parallel reflexivity covers the zero-step ordinary beta path. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-041
+
+- واحد: OLP-0371.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:21-23 (SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:30 (SHA-256 bff24863c8610da8de33dc6fa25e181ad481cd29e745994432af14bde75a61d7).
+- ثبت شوې پرېکړه: Replace the abstraction rule's strict beta premise by parallel beta-eta reduction. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-042
+
+- واحد: OLP-0371.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:49-57 (SHA-256 88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:61 (SHA-256 bff24863c8610da8de33dc6fa25e181ad481cd29e745994432af14bde75a61d7).
+- ثبت شوې پرېکړه: Disclose priority of the final conditional eta clause over the generic abstraction clause. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-043
+
+- واحد: OLP-0372.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-21 (SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:14 (SHA-256 5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d).
+- ثبت شوې پرېکړه: Explain the intended compatible one-step union of beta and eta contraction at first use. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-044
+
+- واحد: OLP-0372.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:21-23 (SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:29 (SHA-256 5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d).
+- ثبت شوې پرېکړه: Replace the beta-contraction symbol in the eta case by the defined eta-contraction symbol. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-045
+
+- واحد: OLP-0372.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25 (SHA-256 2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:32 (SHA-256 5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d).
+- ثبت شوې پرېکړه: Disclose compatible-context cases and structural induction for the eta branch. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.
+
+## OLLAM-046
+
+- واحد: OLP-0370.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/beta-reduction.tex:41-44 (SHA-256 c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:57 (SHA-256 28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2).
+- ثبت شوې پرېکړه: Replace the repeated M-prime by N-prime in the rule-four variable list. د سرچينې فورمول او پېژندونکي يوازې د ثبت شوې استثنا له مخې بدل شوي؛ څنګ ته يې پښتو سپيناوی شته.

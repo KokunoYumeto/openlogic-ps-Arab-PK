@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 369,
-    "structural_pass": 369,
+    "draft_units": 372,
+    "structural_pass": 372,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B072-LAMBDA-PARALLEL-BETA",
+  "batch": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11592,6 +11592,134 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0370",
+      "path": "content/lambda-calculus/church-rosser/beta-reduction.tex",
+      "source_sha256": "c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361",
+      "translation_sha256": "28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-039",
+        "OLLAM-040",
+        "OLLAM-046"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$M'$"
+        ],
+        "target_only": [
+          "$N'$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0371",
+      "path": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+      "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+      "translation_sha256": "bff24863c8610da8de33dc6fa25e181ad481cd29e745994432af14bde75a61d7",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-041",
+        "OLLAM-042"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$N\\xrightarrow{\\beta}N'$"
+        ],
+        "target_only": [
+          "$N\\beredparN'$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0372",
+      "path": "content/lambda-calculus/church-rosser/beta-eta-reduction.tex",
+      "source_sha256": "2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4",
+      "translation_sha256": "5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-043",
+        "OLLAM-044",
+        "OLLAM-045"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$M\\bredoneM'$"
+        ],
+        "target_only": [
+          "$M\\eredoneM'$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -14810,6 +14938,54 @@
       "passage": "common complete development",
       "reverse_paraphrase": "Any parallel reduct of M has another parallel step to M's complete development, so any two parallel reducts share that successor.",
       "finding": "The four source cases, indices, references and Church--Rosser conclusion remain aligned; the proof depends on the documented source corrections."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "one beta step into parallel",
+      "reverse_paraphrase": "A root beta contraction is a parallel beta step by reflexivity of body and argument; compatible-context steps need structural induction.",
+      "finding": "OLLAM-039 makes the omitted context cases explicit."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "parallel into ordinary beta",
+      "reverse_paraphrase": "Induct on the last parallel rule, simulate body and argument reductions, then contract the root redex in rule four.",
+      "finding": "OLLAM-046 repairs the source's repeated M-prime to N-prime in the variable list only."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "closure and Church--Rosser",
+      "reverse_paraphrase": "Parallel beta and ordinary beta have the same smallest transitive closure, including zero steps via reflexivity; the generic diamond transfer proves confluence.",
+      "finding": "OLLAM-040 discloses the zero-step reasoning while preserving the formulas."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "parallel beta-eta generators",
+      "reverse_paraphrase": "An abstraction reduces by a parallel step of its body; beta and eta root rules also reduce corresponding parallel reducts.",
+      "finding": "OLLAM-041 changes only the invalid strict beta premise; the eta free-variable condition remains."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "beta-eta complete development",
+      "reverse_paraphrase": "A conditional eta abstraction must take precedence over the generic abstraction clause; otherwise two displayed clauses define two outputs.",
+      "finding": "OLLAM-042 discloses the necessary interpretation without silently editing the equations."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "substitution and common successor",
+      "reverse_paraphrase": "Parallel beta-eta is compatible with capture-avoiding substitution; every parallel reduct reaches the conditional complete development, giving the diamond.",
+      "finding": "The source's shortened proof and alpha-renaming dependence remain visible."
+    },
+    {
+      "unit_id": "OLP-0372",
+      "passage": "one-step beta-eta into parallel",
+      "reverse_paraphrase": "Each compatible beta or eta contraction embeds into one parallel beta-eta step; for eta use reflexivity of the underlying term.",
+      "finding": "OLLAM-043/044/045 disclose the implicit union, correct the wrong eta relation, and supply omitted context cases."
+    },
+    {
+      "unit_id": "OLP-0372",
+      "passage": "parallel into ordinary and closure",
+      "reverse_paraphrase": "Each parallel beta-eta step expands to a finite beta-eta reduction, so their transitive closures coincide and the parallel diamond transfers.",
+      "finding": "All source references, arrow directions and the eta side condition remain aligned."
     }
   ],
   "builds": [

@@ -1,0 +1,110 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-eta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pbe}
+
+\olsection{هممهاله $\beta\eta$-راکمول}
+
+په دې برخه کښې د هممهاله $\beta\eta$-راکمول د چرچ--روسر خاصيت
+ثابتوو۔ دا د $\beta\eta$-راکمول اړوند هممهاله راکمول دے۔
+
+\begin{defn}[هممهاله $\beta\eta$-راکمول، $\beredpar$] \ollabel{defn:beredpar}
+  پر ترمونو \emph{هممهاله $\beta\eta$-راکمول} ($\beredpar$)
+  په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+    \item \ollabel{defn:beredpar1} $x \beredpar x$.
+    \item \ollabel{defn:beredpar2} که $N \beredpar N'$ وي، نو $\lambd[x][N] \beredpar
+      \lambd[x][N']$.
+    \item \ollabel{defn:beredpar3} که $P \beredpar P'$ او $Q \beredpar Q'$ وي، نو $PQ \beredpar
+      P'Q'$.
+    \item \ollabel{defn:beredpar4} که $N \beredpar N'$ او $Q \beredpar Q'$ وي، نو
+      $(\lambd[x][N])Q \beredpar \Subst{N'}{Q'}{x}$.
+    \item \ollabel{defn:beredpar5} که $N \beredpar N'$ وي، نو $\lambd[x][Nx]
+      \beredpar N'$، په دې شرط چې $x \notin FV(N)$ وي۔
+  \end{enumerate}
+  \textbf{د سرچينې سمون (OLLAM-041):} د دويمې قاعدې په مقدمه
+  کښې د اصلي نسخې يوګامي بېټا غشے د همدغه هممهاله تړاو
+  په نښه بدل شوے دے؛ د لاندې انعکاس او استقرا ثبوتونه
+  همدا اړيکه غواړي۔
+\end{defn}
+
+\begin{thm}\ollabel{thm:refl}
+  $M \beredpar M$.
+\end{thm}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pbe]{thm:refl} ثابت کړئ۔
+\end{prob}
+
+\begin{defn}[$\beta\eta$-بشپړ راکمول]\ollabel{defn:becd}
+  د~$M$ \emph{$\beta\eta$-بشپړ راکمول}~$\becd{M}$ داسې
+  تعريفېږي:
+  \begin{align}
+    \becd{x} &= x \ollabel{defn:becd1} \\
+    \becd{(\lambd[x][N])} &= \lambd[x][\becd{N}] \ollabel{defn:becd2}\\
+    \becd{(PQ)} &= \becd{P}\becd{Q} && \text{که $P$ د $\lambd$ تجريد نۀ وي} 
+    \ollabel{defn:becd3} \\
+    \becd{((\lambd[x][N])Q)} &= \Subst{\becd{N}}{\becd{Q}}{x}
+                             \ollabel{defn:becd4} \\
+    \becd{(\lambd[x][Nx])} &= \becd{N} \ollabel{defn:becd5} & \text{که $x
+                                                      \notin FV(N)$ وي}
+  \end{align}
+  \textbf{د سرچينې سپيناوی (OLLAM-042):} د تجريد عمومي
+  قاعده او وروستۍ د اېټا قاعده د شرط په پوره کېدو يوې بڼې
+  ته راځي؛ د ټاکلې بشپړې پايلې دپاره وروستۍ مشروطه قاعده
+  لومړيتوب غواړي۔ دا لومړيتوب په اصلي متن کښې نۀ دے ويل شوے۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:comp}
+  که $M \beredpar M'$ او $R \beredpar R'$ وي، نو $\Subst{M}{R}{y}
+  \beredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  د $M \beredpar M'$ د !!{derivation} پر جوړښت استقرا کوو۔
+
+  لومړي څلور حالتونه د \olref[pb]{lem:comp} د حالتونو په شان دي۔
+  که وروستۍ قاعده \olref{defn:beredpar5} وي، نو $M$،
+  $\lambd[x][Nx]$ او $M'$ د ځينو $x$ او~$N'$ دپاره $N'$
+  دے، چې $x \notin FV(N)$ او $N \beredpar N'$ وي۔ غواړو
+  وښيو چې $\Subst{(\lambd[x][Nx])}{R}{y} \beredpar
+  \Subst{N'}{R'}{y}$، يعنې
+  $\lambd[x][\Subst{N}{R}{y} x] \beredpar \Subst{N'}{R'}{y}$۔
+  دا د \olref{defn:beredpar}، \olref{defn:beredpar5} او
+  د استقرا له فرضيې راځي۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:cont}
+  که $M \beredpar M'$ وي، نو $M' \beredpar \becd{M}$.
+\end{lem}
+
+\begin{proof}
+  د $M \beredpar M'$ د !!{derivation} پر جوړښت استقرا کوو۔
+
+  لومړي څلور حالتونه د \olref[pb]{lem:cont} د حالتونو په شان
+  دي۔ که وروستۍ قاعده \olref{defn:beredpar5} وي، نو $M$،
+  $\lambd[x][Nx]$ او $M'$ د ځينو $x$، $N$ او $N'$ دپاره
+  $N'$ دے، چې $x \notin FV(N)$ او $N \beredpar N'$ وي۔
+  غواړو وښيو چې $N' \beredpar
+  \becd{(\lambd[x][Nx])}$، يعنې $N' \beredpar \becd{N}$؛
+  دا د استقرا له فرضيې سملاسي راځي۔
+\end{proof}
+
+\begin{thm}\ollabel{thm:cr}
+  $\beredpar$ د چرچ--روسر خاصيت لري۔
+\end{thm}
+
+\begin{proof}
+  دا د \olref{lem:cont} سملاسي پايله ده۔
+\end{proof}
+
+\end{document}

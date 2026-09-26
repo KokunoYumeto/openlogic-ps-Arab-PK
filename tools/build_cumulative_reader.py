@@ -79,6 +79,10 @@ TOKENS.update(
         "axiomatized": ("بديهي‌کړې",) * 4,
         "decidable": ("د پرېکړې وړ",) * 4,
         "represents": ("تمثيل",) * 4,
+        "lambda define": ("لامبډا-تعريف", "لامبډا-تعريفوي", "لامبډا-تعريف", "لامبډا-تعريفوي"),
+        "lambda defined": ("لامبډا-تعريف",) * 4,
+        "lambda definable": ("د لامبډا په وسيله د تعريف وړ",) * 4,
+        "parameter": ("پارامېټر", "پارامېټرونه", "پارامېټر", "پارامېټرونو"),
     }
 )
 base.TOKENS = TOKENS
@@ -584,8 +588,8 @@ def main() -> None:
     args = parser.parse_args()
     build_dir = args.build_dir.resolve()
     build_dir.mkdir(parents=True, exist_ok=True)
-    if args.through_unit not in (255, 321):
-        raise ValueError("supported cumulative reader boundaries are OLP-0255 and OLP-0321")
+    if args.through_unit not in (255, 321, 372):
+        raise ValueError("supported cumulative reader boundaries are OLP-0255, OLP-0321 and OLP-0372")
     expected_ids = [f"OLP-{number:04d}" for number in range(1, args.through_unit + 1)]
 
     rows = [

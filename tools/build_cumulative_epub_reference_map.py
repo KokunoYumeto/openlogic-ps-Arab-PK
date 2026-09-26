@@ -99,7 +99,7 @@ def expected_keys() -> set[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--through-unit", type=int, choices=(255, 321), default=255)
+    parser.add_argument("--through-unit", type=int, choices=(255, 321, 372), default=255)
     parser.add_argument("--primary-aux", type=Path, required=True)
     parser.add_argument("--replay-aux", type=Path, required=True)
     parser.add_argument("--primary-pdf", type=Path, required=True)
@@ -113,6 +113,11 @@ def main() -> None:
         reader.EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, 322)]
         epub.THROUGH_UNIT = 321
         epub.CHAPTER_COUNT = 31
+    elif args.through_unit == 372:
+        EXPECTED_REFERENCES = 939
+        reader.EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, 373)]
+        epub.THROUGH_UNIT = 372
+        epub.CHAPTER_COUNT = 37
 
     primary_aux = args.primary_aux.resolve()
     replay_aux = args.replay_aux.resolve()

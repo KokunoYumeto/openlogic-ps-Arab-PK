@@ -119,7 +119,7 @@ def main() -> None:
     chapter_count = build_record["scope"]["chapter_count"]
     figure_count = build_record["validation"]["figures"]
     unit_count = build_record["scope"]["unit_count"]
-    require((unit_count, chapter_count, figure_count) in {(255, 25, 20), (321, 31, 31)}, "Unsupported cumulative EPUB scope")
+    require((unit_count, chapter_count, figure_count) in {(255, 25, 20), (321, 31, 31), (372, 37, 31)}, "Unsupported cumulative EPUB scope")
     CHAPTERS = [f"chapter-{number:02d}.xhtml" for number in range(1, chapter_count + 1)]
     XHTML_DOCUMENTS = ["title.xhtml", "nav.xhtml", *CHAPTERS]
     FIGURES = [f"figure-{number:03d}.svg" for number in range(1, figure_count + 1)]

@@ -1,0 +1,90 @@
+{
+  "schema": "ps-b073-staging-qa/1",
+  "units": [
+    {
+      "unit_id": "OLP-0370",
+      "source_path": "content/lambda-calculus/church-rosser/beta-reduction.tex",
+      "source_sha256": "c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361",
+      "target_sha256": "28f4e40d38eb981c452689468b08cca43aeef687aaf3d9c0f9a99b85dbba10e2",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "$M'$"
+      ],
+      "target_only_math": [
+        "$N'$"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    },
+    {
+      "unit_id": "OLP-0371",
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+      "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+      "target_sha256": "bff24863c8610da8de33dc6fa25e181ad481cd29e745994432af14bde75a61d7",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "$N\\xrightarrow{\\beta}N'$"
+      ],
+      "target_only_math": [
+        "$N\\beredparN'$"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    },
+    {
+      "unit_id": "OLP-0372",
+      "source_path": "content/lambda-calculus/church-rosser/beta-eta-reduction.tex",
+      "source_sha256": "2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4",
+      "target_sha256": "5c1fbb02a064b5329cbbfafd48ce94b61769a227e3d7ab382c3f0ea38f25372d",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "$M\\bredoneM'$"
+      ],
+      "target_only_math": [
+        "$M\\eredoneM'$"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    }
+  ],
+  "all_checks_pass": true
+}

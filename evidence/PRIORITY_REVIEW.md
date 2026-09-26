@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — priority expert review
 
-This focused view contains 202 high-priority decisions. It preserves every exact paired occurrence for those decisions.
+This focused view contains 211 high-priority decisions. It preserves every exact paired occurrence for those decisions.
 
 ## TERM-SET
 
@@ -21798,7 +21798,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
   - راکمېدونکے مورد (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - کيڼ‌لومړۍ تګلاره (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - بېټا-برابري (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 56
+- Exact paired occurrences: 66
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
@@ -21858,6 +21858,16 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 | `ps-Arab-PK-OCC-019896` | `OLP-0369` / `OLP-0369-B019` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:143-145` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:153-155` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019897` | `OLP-0369` / `OLP-0369-B020` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:157-159` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019898` | `OLP-0369` / `OLP-0369-B021` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019899` | `OLP-0370` / `OLP-0370-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019900` | `OLP-0370` / `OLP-0370-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:13-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019901` | `OLP-0370` / `OLP-0370-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019902` | `OLP-0370` / `OLP-0370-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:27-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:33-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019903` | `OLP-0370` / `OLP-0370-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:64-67` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019904` | `OLP-0370` / `OLP-0370-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:55-57` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:69-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019905` | `OLP-0370` / `OLP-0370-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:59-62` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:73-81` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019906` | `OLP-0370` / `OLP-0370-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:64-68` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:83-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019907` | `OLP-0370` / `OLP-0370-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019908` | `OLP-0370` / `OLP-0370-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:93-96` | pending; no page guessed |
 
 ## DEC-OLLAM-021
 
@@ -21877,7 +21887,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020178` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020188` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
 
 ## DEC-OLLAM-022
 
@@ -21897,7 +21907,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020179` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020189` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
 
 ## DEC-OLLAM-023
 
@@ -21917,7 +21927,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020180` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020190` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
 
 ## DEC-OLLAM-024
 
@@ -21937,7 +21947,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020181` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020191` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
 
 ## DEC-OLLAM-025
 
@@ -21957,7 +21967,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020182` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020192` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
 
 ## DEC-OLLAM-026
 
@@ -21977,7 +21987,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020183` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020193` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
 
 ## DEC-OLLAM-027
 
@@ -21997,7 +22007,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020184` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020194` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
 
 ## DEC-OLLAM-028
 
@@ -22017,7 +22027,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020185` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020195` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
 
 ## DEC-OLLAM-029
 
@@ -22037,7 +22047,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020186` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020196` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
 
 ## DEC-OLLAM-030
 
@@ -22057,7 +22067,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020187` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020197` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
 
 ## DEC-OLLAM-031
 
@@ -22077,7 +22087,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020188` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020198` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
 
 ## DEC-OLLAM-032
 
@@ -22097,7 +22107,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020189` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020199` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
 
 ## DEC-REL-I
 
@@ -22117,7 +22127,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020190` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 24–25 |
+| `ps-Arab-PK-OCC-020200` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 24–25 |
 
 ## DEC-TREE-X
 
@@ -22137,7 +22147,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020191` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 30–31 |
+| `ps-Arab-PK-OCC-020201` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 30–31 |
 
 ## DEC-RPLUS
 
@@ -22157,7 +22167,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020192` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 28 |
+| `ps-Arab-PK-OCC-020202` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 28 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -22177,7 +22187,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020193` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 41 |
+| `ps-Arab-PK-OCC-020203` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 41 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -22197,7 +22207,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020194` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 39 |
+| `ps-Arab-PK-OCC-020204` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 39 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -22217,7 +22227,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020195` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 43 |
+| `ps-Arab-PK-OCC-020205` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 43 |
 
 ## TERM-LAMBDA-ETA-EXTENSIONALITY
 
@@ -22237,23 +22247,48 @@ This focused view contains 202 high-priority decisions. It preserves every exact
   - اېټا-لنډول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د پايلو له مخې مساوات (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - امتدادي برابري (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 13
+- Exact paired occurrences: 38
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020196` | `OLP-0366` / `OLP-0366-B004` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020197` | `OLP-0366` / `OLP-0366-B005` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:12-19` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020198` | `OLP-0366` / `OLP-0366-B006` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:18-25` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:21-28` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020199` | `OLP-0366` / `OLP-0366-B007` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:30-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020200` | `OLP-0366` / `OLP-0366-B009` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:39-45` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:42-48` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020201` | `OLP-0366` / `OLP-0366-B010` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:47-48` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:50-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020202` | `OLP-0366` / `OLP-0366-B011` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:50-56` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:53-59` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020203` | `OLP-0366` / `OLP-0366-B012` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:58-60` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:61-62` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020204` | `OLP-0366` / `OLP-0366-B013` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:62-63` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:64-65` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020205` | `OLP-0366` / `OLP-0366-B014` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:65-67` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:67-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020206` | `OLP-0366` / `OLP-0366-B015` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:69-73` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:71-78` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020207` | `OLP-0366` / `OLP-0366-B016` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:75-79` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:80-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020208` | `OLP-0366` / `OLP-0366-B017` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:81-85` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:87-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020206` | `OLP-0366` / `OLP-0366-B004` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020207` | `OLP-0366` / `OLP-0366-B005` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:12-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020208` | `OLP-0366` / `OLP-0366-B006` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:18-25` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:21-28` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020209` | `OLP-0366` / `OLP-0366-B007` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:30-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020210` | `OLP-0366` / `OLP-0366-B009` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:39-45` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:42-48` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020211` | `OLP-0366` / `OLP-0366-B010` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:47-48` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:50-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020212` | `OLP-0366` / `OLP-0366-B011` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:50-56` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:53-59` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020213` | `OLP-0366` / `OLP-0366-B012` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:58-60` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:61-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020214` | `OLP-0366` / `OLP-0366-B013` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:62-63` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:64-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020215` | `OLP-0366` / `OLP-0366-B014` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:65-67` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:67-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020216` | `OLP-0366` / `OLP-0366-B015` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:69-73` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:71-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020217` | `OLP-0366` / `OLP-0366-B016` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:75-79` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:80-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020218` | `OLP-0366` / `OLP-0366-B017` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:81-85` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:87-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020219` | `OLP-0371` / `OLP-0371-B005` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020220` | `OLP-0371` / `OLP-0371-B006` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-15` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020221` | `OLP-0371` / `OLP-0371-B007` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:17-31` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:16-34` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020222` | `OLP-0371` / `OLP-0371-B009` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:37-39` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:40-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020223` | `OLP-0371` / `OLP-0371-B010` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:41-43` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020224` | `OLP-0371` / `OLP-0371-B011` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:48-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020225` | `OLP-0371` / `OLP-0371-B012` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:60-63` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:67-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020226` | `OLP-0371` / `OLP-0371-B013` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:65-66` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:72-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020227` | `OLP-0371` / `OLP-0371-B014` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:68-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:75-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020228` | `OLP-0371` / `OLP-0371-B015` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:78-80` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:86-88` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020229` | `OLP-0371` / `OLP-0371-B016` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:82-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:90-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020230` | `OLP-0371` / `OLP-0371-B017` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:85-91` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020231` | `OLP-0371` / `OLP-0371-B018` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-95` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:102-104` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020232` | `OLP-0371` / `OLP-0371-B019` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:97-99` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:106-108` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020233` | `OLP-0372` / `OLP-0372-B005` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020234` | `OLP-0372` / `OLP-0372-B006` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020235` | `OLP-0372` / `OLP-0372-B007` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:19-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020236` | `OLP-0372` / `OLP-0372-B008` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:23-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020237` | `OLP-0372` / `OLP-0372-B009` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:28-30` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020238` | `OLP-0372` / `OLP-0372-B010` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:32-32` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020239` | `OLP-0372` / `OLP-0372-B011` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:34-40` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:44-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020240` | `OLP-0372` / `OLP-0372-B012` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:54-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020241` | `OLP-0372` / `OLP-0372-B013` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:59-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020242` | `OLP-0372` / `OLP-0372-B014` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020243` | `OLP-0372` / `OLP-0372-B015` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:55-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:67-71` | pending; no page guessed |
 
 ## TERM-LAMBDA-CHURCH-ROSSER-DIAMOND
 
@@ -22273,38 +22308,59 @@ This focused view contains 202 high-priority decisions. It preserves every exact
   - ګډ ترم (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د راکمول شبکه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د الماس خاصيت (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 28
+- Exact paired occurrences: 49
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020209` | `OLP-0367` / `OLP-0367-B004` | lam | `upstream/content/lambda-calculus/church-rosser/church-rosser.tex:8-8` | `ps-Arab-PK/content/lambda-calculus/church-rosser/church-rosser.tex:8-8` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020210` | `OLP-0368` / `OLP-0368-B005` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:11-11` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020211` | `OLP-0368` / `OLP-0368-B006` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:13-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020212` | `OLP-0368` / `OLP-0368-B007` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020213` | `OLP-0368` / `OLP-0368-B008` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-26` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020214` | `OLP-0368` / `OLP-0368-B009` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:29-33` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020215` | `OLP-0368` / `OLP-0368-B010` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020216` | `OLP-0368` / `OLP-0368-B011` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:45-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:45-48` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020217` | `OLP-0368` / `OLP-0368-B012` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:50-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020218` | `OLP-0368` / `OLP-0368-B013` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:57-65` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:56-64` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020219` | `OLP-0368` / `OLP-0368-B014` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:67-78` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:66-77` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020220` | `OLP-0368` / `OLP-0368-B015` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:79-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020221` | `OLP-0369` / `OLP-0369-B005` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020222` | `OLP-0369` / `OLP-0369-B006` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020223` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020224` | `OLP-0369` / `OLP-0369-B008` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:32-42` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020225` | `OLP-0369` / `OLP-0369-B010` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:48-50` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020226` | `OLP-0369` / `OLP-0369-B011` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:52-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020227` | `OLP-0369` / `OLP-0369-B012` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:56-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020228` | `OLP-0369` / `OLP-0369-B013` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:68-73` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020229` | `OLP-0369` / `OLP-0369-B014` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:75-79` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020230` | `OLP-0369` / `OLP-0369-B015` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:74-77` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:81-84` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020231` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020232` | `OLP-0369` / `OLP-0369-B017` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:102-104` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:112-114` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020233` | `OLP-0369` / `OLP-0369-B018` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:116-151` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020234` | `OLP-0369` / `OLP-0369-B019` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:143-145` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:153-155` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020235` | `OLP-0369` / `OLP-0369-B020` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:157-159` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020236` | `OLP-0369` / `OLP-0369-B021` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020244` | `OLP-0367` / `OLP-0367-B004` | lam | `upstream/content/lambda-calculus/church-rosser/church-rosser.tex:8-8` | `ps-Arab-PK/content/lambda-calculus/church-rosser/church-rosser.tex:8-8` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020245` | `OLP-0368` / `OLP-0368-B005` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020246` | `OLP-0368` / `OLP-0368-B006` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020247` | `OLP-0368` / `OLP-0368-B007` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:16-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020248` | `OLP-0368` / `OLP-0368-B008` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-26` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020249` | `OLP-0368` / `OLP-0368-B009` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:29-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020250` | `OLP-0368` / `OLP-0368-B010` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:35-43` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020251` | `OLP-0368` / `OLP-0368-B011` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:45-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:45-48` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020252` | `OLP-0368` / `OLP-0368-B012` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:50-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020253` | `OLP-0368` / `OLP-0368-B013` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:57-65` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:56-64` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020254` | `OLP-0368` / `OLP-0368-B014` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:67-78` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:66-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020255` | `OLP-0368` / `OLP-0368-B015` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:79-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020256` | `OLP-0369` / `OLP-0369-B005` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020257` | `OLP-0369` / `OLP-0369-B006` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020258` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020259` | `OLP-0369` / `OLP-0369-B008` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:32-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020260` | `OLP-0369` / `OLP-0369-B010` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:48-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020261` | `OLP-0369` / `OLP-0369-B011` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:52-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020262` | `OLP-0369` / `OLP-0369-B012` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:56-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020263` | `OLP-0369` / `OLP-0369-B013` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:68-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020264` | `OLP-0369` / `OLP-0369-B014` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:75-79` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020265` | `OLP-0369` / `OLP-0369-B015` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:74-77` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:81-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020266` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020267` | `OLP-0369` / `OLP-0369-B017` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:102-104` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:112-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020268` | `OLP-0369` / `OLP-0369-B018` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:116-151` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020269` | `OLP-0369` / `OLP-0369-B019` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:143-145` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:153-155` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020270` | `OLP-0369` / `OLP-0369-B020` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:157-159` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020271` | `OLP-0369` / `OLP-0369-B021` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020272` | `OLP-0370` / `OLP-0370-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020273` | `OLP-0370` / `OLP-0370-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:13-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020274` | `OLP-0370` / `OLP-0370-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020275` | `OLP-0370` / `OLP-0370-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:27-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:33-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020276` | `OLP-0370` / `OLP-0370-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:64-67` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020277` | `OLP-0370` / `OLP-0370-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:55-57` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:69-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020278` | `OLP-0370` / `OLP-0370-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:59-62` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:73-81` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020279` | `OLP-0370` / `OLP-0370-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:64-68` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:83-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020280` | `OLP-0370` / `OLP-0370-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020281` | `OLP-0370` / `OLP-0370-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:93-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020282` | `OLP-0372` / `OLP-0372-B005` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020283` | `OLP-0372` / `OLP-0372-B006` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020284` | `OLP-0372` / `OLP-0372-B007` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:19-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020285` | `OLP-0372` / `OLP-0372-B008` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:23-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020286` | `OLP-0372` / `OLP-0372-B009` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:28-30` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020287` | `OLP-0372` / `OLP-0372-B010` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:32-32` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020288` | `OLP-0372` / `OLP-0372-B011` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:34-40` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:44-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020289` | `OLP-0372` / `OLP-0372-B012` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:54-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020290` | `OLP-0372` / `OLP-0372-B013` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:59-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020291` | `OLP-0372` / `OLP-0372-B014` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020292` | `OLP-0372` / `OLP-0372-B015` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:55-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:67-71` | pending; no page guessed |
 
 ## DEC-OLLAM-033
 
@@ -22324,7 +22380,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020237` | `OLP-0366` / `OLP-0366-B005` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:12-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020293` | `OLP-0366` / `OLP-0366-B005` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:12-19` | pending; no page guessed |
 
 ## DEC-OLLAM-034
 
@@ -22344,7 +22400,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020238` | `OLP-0366` / `OLP-0366-B015` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:69-73` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:71-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020294` | `OLP-0366` / `OLP-0366-B015` | $\eta$-بدلون | `upstream/content/lambda-calculus/syntax/eta.tex:69-73` | `ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:71-78` | pending; no page guessed |
 
 ## DEC-OLLAM-035
 
@@ -22364,7 +22420,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020239` | `OLP-0368` / `OLP-0368-B008` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-26` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020295` | `OLP-0368` / `OLP-0368-B008` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-26` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:22-27` | pending; no page guessed |
 
 ## DEC-OLLAM-036
 
@@ -22384,7 +22440,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020240` | `OLP-0368` / `OLP-0368-B015` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:79-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020296` | `OLP-0368` / `OLP-0368-B015` | تعريف او خاصيتونه | `upstream/content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:79-85` | pending; no page guessed |
 
 ## TERM-LAMBDA-PARALLEL-DEVELOPMENT
 
@@ -22404,26 +22460,50 @@ This focused view contains 202 high-priority decisions. It preserves every exact
   - موازي بېټا-راکمول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - په يوه وار بېټا-راکمول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - بشپړه پراختيا (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 16
+- Exact paired occurrences: 40
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020241` | `OLP-0369` / `OLP-0369-B005` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020242` | `OLP-0369` / `OLP-0369-B006` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020243` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020244` | `OLP-0369` / `OLP-0369-B008` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:32-42` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020245` | `OLP-0369` / `OLP-0369-B010` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:48-50` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020246` | `OLP-0369` / `OLP-0369-B011` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:52-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020247` | `OLP-0369` / `OLP-0369-B012` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:56-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020248` | `OLP-0369` / `OLP-0369-B013` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:68-73` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020249` | `OLP-0369` / `OLP-0369-B014` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:75-79` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020250` | `OLP-0369` / `OLP-0369-B015` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:74-77` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:81-84` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020251` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020252` | `OLP-0369` / `OLP-0369-B017` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:102-104` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:112-114` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020253` | `OLP-0369` / `OLP-0369-B018` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:116-151` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020254` | `OLP-0369` / `OLP-0369-B019` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:143-145` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:153-155` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020255` | `OLP-0369` / `OLP-0369-B020` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:157-159` | pending; no page guessed |
-| `ps-Arab-PK-OCC-020256` | `OLP-0369` / `OLP-0369-B021` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020297` | `OLP-0369` / `OLP-0369-B005` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020298` | `OLP-0369` / `OLP-0369-B006` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020299` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020300` | `OLP-0369` / `OLP-0369-B008` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:32-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020301` | `OLP-0369` / `OLP-0369-B010` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:48-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020302` | `OLP-0369` / `OLP-0369-B011` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:52-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020303` | `OLP-0369` / `OLP-0369-B012` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:51-61` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:56-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020304` | `OLP-0369` / `OLP-0369-B013` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:68-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020305` | `OLP-0369` / `OLP-0369-B014` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:75-79` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020306` | `OLP-0369` / `OLP-0369-B015` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:74-77` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:81-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020307` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020308` | `OLP-0369` / `OLP-0369-B017` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:102-104` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:112-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020309` | `OLP-0369` / `OLP-0369-B018` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:106-141` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:116-151` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020310` | `OLP-0369` / `OLP-0369-B019` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:143-145` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:153-155` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020311` | `OLP-0369` / `OLP-0369-B020` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:157-159` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020312` | `OLP-0369` / `OLP-0369-B021` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020313` | `OLP-0370` / `OLP-0370-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020314` | `OLP-0370` / `OLP-0370-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:13-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020315` | `OLP-0370` / `OLP-0370-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020316` | `OLP-0370` / `OLP-0370-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:27-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:33-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020317` | `OLP-0370` / `OLP-0370-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:64-67` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020318` | `OLP-0370` / `OLP-0370-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:55-57` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:69-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020319` | `OLP-0370` / `OLP-0370-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:59-62` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:73-81` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020320` | `OLP-0370` / `OLP-0370-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:64-68` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:83-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020321` | `OLP-0370` / `OLP-0370-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:70-72` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:89-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020322` | `OLP-0370` / `OLP-0370-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:93-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020323` | `OLP-0371` / `OLP-0371-B005` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020324` | `OLP-0371` / `OLP-0371-B006` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-15` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020325` | `OLP-0371` / `OLP-0371-B007` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:17-31` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:16-34` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020326` | `OLP-0371` / `OLP-0371-B009` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:37-39` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:40-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020327` | `OLP-0371` / `OLP-0371-B010` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:41-43` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020328` | `OLP-0371` / `OLP-0371-B011` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:48-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020329` | `OLP-0371` / `OLP-0371-B012` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:60-63` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:67-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020330` | `OLP-0371` / `OLP-0371-B013` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:65-66` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:72-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020331` | `OLP-0371` / `OLP-0371-B014` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:68-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:75-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020332` | `OLP-0371` / `OLP-0371-B015` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:78-80` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:86-88` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020333` | `OLP-0371` / `OLP-0371-B016` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:82-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:90-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020334` | `OLP-0371` / `OLP-0371-B017` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:85-91` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020335` | `OLP-0371` / `OLP-0371-B018` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-95` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:102-104` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020336` | `OLP-0371` / `OLP-0371-B019` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:97-99` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:106-108` | pending; no page guessed |
 
 ## DEC-OLLAM-037
 
@@ -22443,7 +22523,7 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020257` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020337` | `OLP-0369` / `OLP-0369-B007` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-27` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:16-30` | pending; no page guessed |
 
 ## DEC-OLLAM-038
 
@@ -22463,4 +22543,211 @@ This focused view contains 202 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020258` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020338` | `OLP-0369` / `OLP-0369-B016` | هممهاله $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:79-100` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:86-110` | pending; no page guessed |
+
+## TERM-LAMBDA-PARALLEL-BETA-ETA-DEVELOPMENT
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: parallel beta-eta reduction / beta-eta complete development / eta-priority clause
+- Intended sense: parallel beta-eta reduction / beta-eta complete development / eta-priority clause
+- Chosen Pashto: هممهاله بېټااېټا-راکمول / بېټااېټا-بشپړ راکمول / د اېټا شرط لومړيتوب
+- Rationale: د هممهاله ګام، مشروط اېټا قاعدې او څوګامي تړلتيا ترمنځ توپير د اصلي رياضيکي متن له مخې ساتل شوے دے؛ پښتو بڼه له پخوانيو ټاکنو سره سمه ده.
+- Confidence reason: د سرچينې د معنا په اړه لوړه؛ د کره پښتو نوم په اړه موقتي. د اصطلاح کره بڼه او د اېټا لومړيتوب د راتلونکې کتنې دپاره پرانيستي دي
+- Expert question: آيا د هممهاله راکمول، بشپړ راکمول او د اېټا د مشروطې قاعدې لومړيتوب په پښتو کښې جلا او کره څرګند دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — د پاکستانۍ علمي نثر او املا شاهد دے، نۀ د بېټااېټا تخنيکي نوم.
+  - `GRAMMAR-P166-SOV` (checked_context_only): Habibullah Tegey and Barbara Robson. A Reference Grammar of Pashto. Reference grammar; Afghan-central examples, regional comparator. https://files.eric.ed.gov/fulltext/ED399825.pdf — د فعل-وروستۍ جملې شاهد دے، نۀ د تخنيکي نوم شاهد.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_context_only): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز شاهد د تابع او تعويض د وينا دپاره دے، نۀ د هممهاله راکمول د نوم دپاره.
+  - `AF-NIAZMAN-P138-EQUALITY` (checked_context_only): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز شاهد د اړيکو د وينا دپاره دے، نۀ د چرچ--روسر د ثبوت دپاره.
+- Alternatives:
+  - هممهاله بېټا-اېټا راکمول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - بشپړ بېټااېټا پرمختګ (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 25
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020339` | `OLP-0371` / `OLP-0371-B005` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020340` | `OLP-0371` / `OLP-0371-B006` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-15` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:13-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020341` | `OLP-0371` / `OLP-0371-B007` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:17-31` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:16-34` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020342` | `OLP-0371` / `OLP-0371-B009` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:37-39` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:40-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020343` | `OLP-0371` / `OLP-0371-B010` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:41-43` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020344` | `OLP-0371` / `OLP-0371-B011` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:48-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020345` | `OLP-0371` / `OLP-0371-B012` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:60-63` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:67-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020346` | `OLP-0371` / `OLP-0371-B013` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:65-66` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:72-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020347` | `OLP-0371` / `OLP-0371-B014` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:68-76` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:75-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020348` | `OLP-0371` / `OLP-0371-B015` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:78-80` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:86-88` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020349` | `OLP-0371` / `OLP-0371-B016` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:82-83` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:90-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020350` | `OLP-0371` / `OLP-0371-B017` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:85-91` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020351` | `OLP-0371` / `OLP-0371-B018` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:93-95` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:102-104` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020352` | `OLP-0371` / `OLP-0371-B019` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:97-99` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:106-108` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020353` | `OLP-0372` / `OLP-0372-B005` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020354` | `OLP-0372` / `OLP-0372-B006` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020355` | `OLP-0372` / `OLP-0372-B007` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:19-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020356` | `OLP-0372` / `OLP-0372-B008` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:23-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020357` | `OLP-0372` / `OLP-0372-B009` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:28-30` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020358` | `OLP-0372` / `OLP-0372-B010` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:32-32` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020359` | `OLP-0372` / `OLP-0372-B011` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:34-40` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:44-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020360` | `OLP-0372` / `OLP-0372-B012` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:43-45` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:54-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020361` | `OLP-0372` / `OLP-0372-B013` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:47-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:59-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020362` | `OLP-0372` / `OLP-0372-B014` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:63-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020363` | `OLP-0372` / `OLP-0372-B015` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:55-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:67-71` | pending; no page guessed |
+
+## DEC-OLLAM-039
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-039: content/lambda-calculus/church-rosser/beta-reduction.tex:13-22
+- Intended sense: The beta one-step relation is compatible, not merely a root contraction.
+- Chosen Pashto: اصلي فورمولونه ساتل شوي او د ثبوت ضمني حالت په پښتو کښې څرګند شوے دے.
+- Rationale: The beta one-step relation is compatible, not merely a root contraction.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا د سرچينې د ثبوت دا ضمني شرط يا پرېښودل شوے حالت په پښتو کښې په کره ډول څرګند شوے دے؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — root-only-beta-one-parallel-proof; The beta one-step relation is compatible, not merely a root contraction.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020364` | `OLP-0370` / `OLP-0370-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:13-21` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:13-27` | pending; no page guessed |
+
+## DEC-OLLAM-040
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-040: content/lambda-calculus/church-rosser/beta-reduction.tex:56-63
+- Intended sense: The reduction relation is reflexive-transitive, while the displayed sequence discusses contractions.
+- Chosen Pashto: اصلي فورمولونه ساتل شوي او د ثبوت ضمني حالت په پښتو کښې څرګند شوے دے.
+- Rationale: The reduction relation is reflexive-transitive, while the displayed sequence discusses contractions.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا د سرچينې د ثبوت دا ضمني شرط يا پرېښودل شوے حالت په پښتو کښې په کره ډول څرګند شوے دے؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — zero-step-closure-case-implicit; The reduction relation is reflexive-transitive, while the displayed sequence discusses contractions.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020365` | `OLP-0370` / `OLP-0370-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:59-62` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:73-81` | pending; no page guessed |
+
+## DEC-OLLAM-041
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-041: content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:21-23
+- Intended sense: The following reflexivity exercise and later inductive cases require the parallel premise.
+- Chosen Pashto: يوازې اړينه رياضيکي نښه په ښکاره سمه شوې او څنګ ته پښتو سپيناوی شته.
+- Rationale: The following reflexivity exercise and later inductive cases require the parallel premise.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا دا کره فورمولي سمون د اصلي ثبوت له فرضيو او د پښتو سپيناوي سره سمون لري؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — parallel-beta-eta-abstraction-premise-wrong-relation; The following reflexivity exercise and later inductive cases require the parallel premise.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020366` | `OLP-0371` / `OLP-0371-B007` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:17-31` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:16-34` | pending; no page guessed |
+
+## DEC-OLLAM-042
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-042: content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:49-57
+- Intended sense: The complete-development continuation proof uses the eta result for a matching abstraction.
+- Chosen Pashto: اصلي فورمولونه ساتل شوي او د ثبوت ضمني حالت په پښتو کښې څرګند شوے دے.
+- Rationale: The complete-development continuation proof uses the eta result for a matching abstraction.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا د سرچينې د ثبوت دا ضمني شرط يا پرېښودل شوے حالت په پښتو کښې په کره ډول څرګند شوے دے؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — complete-development-abstraction-clauses-overlap; The complete-development continuation proof uses the eta result for a matching abstraction.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020367` | `OLP-0371` / `OLP-0371-B011` | هممهاله $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:45-58` | `ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex:48-65` | pending; no page guessed |
+
+## DEC-OLLAM-043
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-043: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:11-21
+- Intended sense: The preceding eta section formally defines the multistep closure but not a separate prose definition of the symbol used here.
+- Chosen Pashto: اصلي فورمولونه ساتل شوي او د ثبوت ضمني حالت په پښتو کښې څرګند شوے دے.
+- Rationale: The preceding eta section formally defines the multistep closure but not a separate prose definition of the symbol used here.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا د سرچينې د ثبوت دا ضمني شرط يا پرېښودل شوے حالت په پښتو کښې په کره ډول څرګند شوے دے؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — beta-eta-one-step-symbol-implicit; The preceding eta section formally defines the multistep closure but not a separate prose definition of the symbol used here.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020368` | `OLP-0372` / `OLP-0372-B006` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-14` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:13-17` | pending; no page guessed |
+
+## DEC-OLLAM-044
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-044: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:21-23
+- Intended sense: The line explicitly says eta conversion and cites the eta definition.
+- Chosen Pashto: يوازې اړينه رياضيکي نښه په ښکاره سمه شوې او څنګ ته پښتو سپيناوی شته.
+- Rationale: The line explicitly says eta conversion and cites the eta definition.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا دا کره فورمولي سمون د اصلي ثبوت له فرضيو او د پښتو سپيناوي سره سمون لري؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — eta-proof-uses-beta-arrow; The line explicitly says eta conversion and cites the eta definition.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020369` | `OLP-0372` / `OLP-0372-B008` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:23-35` | pending; no page guessed |
+
+## DEC-OLLAM-045
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-045: content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25
+- Intended sense: Eta contraction is the smallest compatible relation; the proof text only gives the root eta case.
+- Chosen Pashto: اصلي فورمولونه ساتل شوي او د ثبوت ضمني حالت په پښتو کښې څرګند شوے دے.
+- Rationale: Eta contraction is the smallest compatible relation; the proof text only gives the root eta case.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا د سرچينې د ثبوت دا ضمني شرط يا پرېښودل شوے حالت په پښتو کښې په کره ډول څرګند شوے دے؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — root-only-eta-one-parallel-proof; Eta contraction is the smallest compatible relation; the proof text only gives the root eta case.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020370` | `OLP-0372` / `OLP-0372-B008` | $\beta\eta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-eta-reduction.tex:23-35` | pending; no page guessed |
+
+## DEC-OLLAM-046
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-046: content/lambda-calculus/church-rosser/beta-reduction.tex:41-44
+- Intended sense: The rule premise has N parallel-reduce to N-prime and the ensuing contraction uses N-prime.
+- Chosen Pashto: يوازې اړينه رياضيکي نښه په ښکاره سمه شوې او څنګ ته پښتو سپيناوی شته.
+- Rationale: The rule premise has N parallel-reduce to N-prime and the ensuing contraction uses N-prime.
+- Confidence reason: د سرچينې د ستونزې په اړه لوړه؛ د پښتو عبارت په اړه موقتي. د سرچينې ستونزه ثبت ده؛ د پښتو سپيناوي عبارت د راتلونکي کتنې دپاره پرانيستے دے
+- Expert question: آيا دا کره فورمولي سمون د اصلي ثبوت له فرضيو او د پښتو سپيناوي سره سمون لري؟
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — parallel-rule-four-variable-list-typo; The rule premise has N parallel-reduce to N-prime and the ensuing contraction uses N-prime.
+- Alternatives:
+  - يوازې لفظي ژباړه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د سرچينې له ثبوت سره څنګ ته کره سپيناوی (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020371` | `OLP-0370` / `OLP-0370-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/church-rosser/beta-reduction.tex:27-49` | `ps-Arab-PK/content/lambda-calculus/church-rosser/beta-reduction.tex:33-62` | pending; no page guessed |

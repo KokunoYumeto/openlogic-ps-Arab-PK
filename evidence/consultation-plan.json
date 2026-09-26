@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B072-LAMBDA-PARALLEL-BETA",
-  "status": "OLP-0369 source-reviewed and staged; 22-block parity with two explicit math corrections, exact other identifiers/macros and four reverse-paraphrase samples",
+  "batch_id": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
+  "status": "OLP-0370–0372 source-reviewed and staged; 50-block parity, three exact math corrections, eight disclosures and eight reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7832,6 +7832,60 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0370": {
+      "batch_id": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-LAMBDA-PARALLEL-DEVELOPMENT",
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+        "TERM-LAMBDA-BETA-STRATEGY"
+      ],
+      "scope": "All source-aligned Church--Rosser proof blocks, with OLLAM-039–046 disclosing root/context, zero-step, clause priority and exact one-pair formula defects. Pakistani scholarly prose/grammar guide style; Afghan pages are regional comparators, not technical term attestations.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0371": {
+      "batch_id": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-LAMBDA-PARALLEL-BETA-ETA-DEVELOPMENT",
+        "TERM-LAMBDA-PARALLEL-DEVELOPMENT",
+        "TERM-LAMBDA-ETA-EXTENSIONALITY"
+      ],
+      "scope": "All source-aligned Church--Rosser proof blocks, with OLLAM-039–046 disclosing root/context, zero-step, clause priority and exact one-pair formula defects. Pakistani scholarly prose/grammar guide style; Afghan pages are regional comparators, not technical term attestations.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0372": {
+      "batch_id": "PS-B073-LAMBDA-CHURCH-ROSSER-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-LAMBDA-PARALLEL-BETA-ETA-DEVELOPMENT",
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+        "TERM-LAMBDA-ETA-EXTENSIONALITY"
+      ],
+      "scope": "All source-aligned Church--Rosser proof blocks, with OLLAM-039–046 disclosing root/context, zero-step, clause priority and exact one-pair formula defects. Pakistani scholarly prose/grammar guide style; Afghan pages are regional comparators, not technical term attestations.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11050,6 +11104,54 @@
       "passage": "common complete development",
       "reverse_paraphrase": "Any parallel reduct of M has another parallel step to M's complete development, so any two parallel reducts share that successor.",
       "finding": "The four source cases, indices, references and Church--Rosser conclusion remain aligned; the proof depends on the documented source corrections."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "one beta step into parallel",
+      "reverse_paraphrase": "A root beta contraction is a parallel beta step by reflexivity of body and argument; compatible-context steps need structural induction.",
+      "finding": "OLLAM-039 makes the omitted context cases explicit."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "parallel into ordinary beta",
+      "reverse_paraphrase": "Induct on the last parallel rule, simulate body and argument reductions, then contract the root redex in rule four.",
+      "finding": "OLLAM-046 repairs the source's repeated M-prime to N-prime in the variable list only."
+    },
+    {
+      "unit_id": "OLP-0370",
+      "passage": "closure and Church--Rosser",
+      "reverse_paraphrase": "Parallel beta and ordinary beta have the same smallest transitive closure, including zero steps via reflexivity; the generic diamond transfer proves confluence.",
+      "finding": "OLLAM-040 discloses the zero-step reasoning while preserving the formulas."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "parallel beta-eta generators",
+      "reverse_paraphrase": "An abstraction reduces by a parallel step of its body; beta and eta root rules also reduce corresponding parallel reducts.",
+      "finding": "OLLAM-041 changes only the invalid strict beta premise; the eta free-variable condition remains."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "beta-eta complete development",
+      "reverse_paraphrase": "A conditional eta abstraction must take precedence over the generic abstraction clause; otherwise two displayed clauses define two outputs.",
+      "finding": "OLLAM-042 discloses the necessary interpretation without silently editing the equations."
+    },
+    {
+      "unit_id": "OLP-0371",
+      "passage": "substitution and common successor",
+      "reverse_paraphrase": "Parallel beta-eta is compatible with capture-avoiding substitution; every parallel reduct reaches the conditional complete development, giving the diamond.",
+      "finding": "The source's shortened proof and alpha-renaming dependence remain visible."
+    },
+    {
+      "unit_id": "OLP-0372",
+      "passage": "one-step beta-eta into parallel",
+      "reverse_paraphrase": "Each compatible beta or eta contraction embeds into one parallel beta-eta step; for eta use reflexivity of the underlying term.",
+      "finding": "OLLAM-043/044/045 disclose the implicit union, correct the wrong eta relation, and supply omitted context cases."
+    },
+    {
+      "unit_id": "OLP-0372",
+      "passage": "parallel into ordinary and closure",
+      "reverse_paraphrase": "Each parallel beta-eta step expands to a finite beta-eta reduction, so their transitive closures coincide and the parallel diamond transfers.",
+      "finding": "All source references, arrow directions and the eta side condition remain aligned."
     }
   ]
 }
