@@ -1,0 +1,28 @@
+{
+  "schema": "ps-b068-staging-qa/1",
+  "unit_id": "OLP-0363",
+  "source_path": "content/lambda-calculus/syntax/de-bruijn.tex",
+  "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+  "target_sha256": "1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033",
+  "source_blocks": 16,
+  "target_blocks": 16,
+  "checks": {
+    "source_sha256": true,
+    "all_sixteen_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "adjacent_disclosures": true
+  },
+  "all_checks_pass": true,
+  "source_only_math": [],
+  "target_only_math": [],
+  "planned_actions": [
+    "OLLAM-025",
+    "OLLAM-026"
+  ]
+}

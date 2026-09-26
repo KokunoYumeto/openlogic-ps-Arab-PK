@@ -1,0 +1,46 @@
+{
+  "schema": "ps-lambda-de-bruijn-draft/1",
+  "utc": "2026-09-26T17:51:00.389239+00:00",
+  "batch_id": "PS-B068-LAMBDA-DE-BRUIJN",
+  "status": "accepted editable draft; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0363",
+      "path": "content/lambda-calculus/syntax/de-bruijn.tex",
+      "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+      "translation_sha256": "1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033",
+      "source_correction_ids": [
+        "OLLAM-025",
+        "OLLAM-026"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_drafts": 362,
+    "current_reviewed_drafts": 1,
+    "cumulative_drafts": 363,
+    "remaining_untranslated": 359,
+    "public_reader_units": 321,
+    "published_source_snapshot_units": 362
+  },
+  "evidence": {
+    "source_audit_sha256": "90a09c51cf61e932ccc8b672aedeea7f2d56adb37ec3a1db72b420779915d7b8",
+    "source_check_sha256": "8a23660285a3a6a0df1f9189526075861877bef5140c1948422f0c77a14742f3",
+    "consultation_sha256": "69e5ecf4f1c13ecfcd431a91047cd0a27765c1f347b368a05a66ba8d64ba9e9e",
+    "source_corrections_sha256": "c8d1d316f8aa4bfcdc64b4d26d7f2b06ce7de252d7a4dc9255dc515cfe679b26",
+    "staging_qa_sha256": "44f16bc922619d21799ea153675dd445b728736231ad5aae3f7e3ec985e53422",
+    "qa_sha256": "62150d21dbf93ecf78fd3a2161c8f77c1dad29a37a12a1b904c26feb20f1b4d9",
+    "alignment_sha256": "06b71047cad275cf3e4d07ec134e0a2a258e0c8d83168d65d616c3e88bce4ade",
+    "canon_use_sha256": "8adb46e39efaff8f58549e5905cc6b249ba933df2aa5d318e8c5fd2e41beade0",
+    "accepted_builds_sha256": "9be5d4eca81de725d8ec738076f9eb74a2723e423b1494dae44a000f83b7d448",
+    "canonical_decisions_sha256": "4a1628b3fbbe486aef43c68833b5d626e8a5dc891330cdeb0da9cfec89e234e7",
+    "canonical_qa_sha256": "827e8d4f75b493e92b5d8ccae74dccd2045e814123e806d116bc3abe7ac265aa",
+    "canonical_replay_sha256": "2119db5511f47ad328bd201fac985a613cecea01f80ef209f832a6b3b9d86c47"
+  },
+  "render_status": "Draft-only OLP-0363 was not separately rendered. The unchanged 321-unit v0.7 PDF and EPUB are published and verified; its next coherent reader expansion is pending.",
+  "next_action": "Commit and push B068, then audit and translate OLP-0364 onward; build and visually inspect a coherent next reader at a substantive chapter boundary."
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "status": "one source-reviewed editable draft; two adjacent context clarifications with exact preserved equations",
+  "utc": "2026-09-26T17:51:00.389239+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN",
+  "scope": "OLP-0363 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+  "target_sha256": "1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033",
+  "actions": [
+    {
+      "id": "OLLAM-025",
+      "classification": "context-first-occurrence-shadowing-underspecified",
+      "source_locator": "content/lambda-calculus/syntax/de-bruijn.tex:43-55",
+      "target_line_1based": 54,
+      "counterexample": "For lambda x.lambda x.x the context begins x,x. Choosing the second position gives index 1 and refers to the outer binder; nearest-binder semantics requires index 0, the first position from the head.",
+      "formula_policy": "Retain all three F equations and disclose the first-position convention adjacent to the Pashto definition."
+    },
+    {
+      "id": "OLLAM-026",
+      "classification": "decode-context-domain-underspecified",
+      "source_locator": "content/lambda-calculus/syntax/de-bruijn.tex:58-72",
+      "target_line_1based": 79,
+      "counterexample": "With an empty context, G of index 0 calls for Gamma[0], which is absent; the rule has no value there.",
+      "formula_policy": "Retain all three G equations and disclose the required in-range context condition adjacent to the Pashto definition."
+    }
+  ],
+  "semantic_review_count": 3,
+  "unresolved": "Exact De Bruijn terminology remains provisional; no native source attests it, and no human specialist endorsement is claimed.",
+  "next_action": "Continue source audit and translation at OLP-0364; preserve the frozen English bytes."
+}

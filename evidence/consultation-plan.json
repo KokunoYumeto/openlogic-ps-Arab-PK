@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B067-LAMBDA-ALPHA",
-  "status": "OLP-0362 source-reviewed and staged with eight adjacent disclosures; exact structural and math-difference QA passes",
+  "batch_id": "PS-B068-LAMBDA-DE-BRUIJN",
+  "status": "OLP-0363 source-reviewed and staged with two adjacent context clarifications; exact structural and math parity QA passes",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7703,6 +7703,25 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0363": {
+      "batch_id": "PS-B068-LAMBDA-DE-BRUIJN",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P33-COUNTABLE-SYNTAX",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-DE-BRUIJN-INDEX",
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-ALPHA-CONVERSION"
+      ],
+      "scope": "All 16 paired blocks of the De Bruijn index section translated, including nameless-term grammar, F/G context mappings, zero-based examples and the alpha-invariance proposition. Two adjacent notes disclose nearest-occurrence shadowing and the decode-domain condition. Pakistani prose and grammar were visually inspected; Afghan natural-number indexing and function terminology are labelled regional comparators, not proof authority.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10807,6 +10826,24 @@
       "passage": "uniqueness attempt and corollary",
       "reverse_paraphrase": "The theorem claims that choices of alpha-equivalent term and replacement produce alpha-equivalent results when both substitutions are defined. The printed proof compares only special normalized forms, and cited results yield alpha-equivalence rather than syntactic equality.",
       "finding": "OLLAM-023 flags the incomplete uniqueness argument without presenting it as proved. OLLAM-024 restores both missing premises of the printed corollary; its conclusion is otherwise false."
+    },
+    {
+      "unit_id": "OLP-0363",
+      "passage": "nameless indices and the nested lambda example",
+      "reverse_paraphrase": "The inner binder is at distance zero and the outer binder at distance one; the juxtaposed symbols in the body denote application, not the decimal numeral 01.",
+      "finding": "The source's zero-thin-space-one and nested-lambda equations are byte-preserved. Pashto prose states the intended parse without adding a math span."
+    },
+    {
+      "unit_id": "OLP-0363",
+      "passage": "encoding F under a variable context",
+      "reverse_paraphrase": "A zero-based list maps a variable to its position; extending the head when entering a binder makes the nearest repeated name shadow older names.",
+      "finding": "All three defining equations are unchanged. Adjacent OLLAM-025 explains the first-occurrence convention that the source leaves implicit."
+    },
+    {
+      "unit_id": "OLP-0363",
+      "passage": "decoding G and one-step alpha invariance",
+      "reverse_paraphrase": "Decoding a number reads that position from the context and chooses a fresh binder name. It requires every referenced position to exist. One-step alpha-convertible terms encode equally under a context containing the first term's free variables.",
+      "finding": "All G equations and the final proposition are unchanged. Adjacent OLLAM-026 discloses the missing context-domain qualification without claiming an unrestricted inverse theorem."
     }
   ]
 }

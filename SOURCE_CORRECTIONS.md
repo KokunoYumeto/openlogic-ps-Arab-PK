@@ -2543,3 +2543,21 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction or disclosure: The corollary repeats the first pair's substitution-definedness where the second pair is needed, and omits R-double-prime alpha-equivalent to R.
 - Evidence: With M=y, both substitutions are defined, but two non-alpha-equivalent replacements give non-alpha-equivalent results unless the omitted R-double-prime premise is restored.
 - The issue is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-025
+
+- Unit: OLP-0363.
+- Frozen source: content/lambda-calculus/syntax/de-bruijn.tex:43-55 (SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:54 (SHA-256 1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033).
+- Clarification: The printed Gamma(x) rule calls for a position but does not specify which one when a variable name occurs more than once in the context.
+- Evidence: For lambda x.lambda x.x the context begins x,x. Choosing the second position gives index 1 and refers to the outer binder; nearest-binder semantics requires index 0, the first position from the head.
+- The source equations are unchanged and the context condition is disclosed in adjacent Pashto prose.
+
+## OLLAM-026
+
+- Unit: OLP-0363.
+- Frozen source: content/lambda-calculus/syntax/de-bruijn.tex:58-72 (SHA-256 7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:79 (SHA-256 1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033).
+- Clarification: The printed G rule describes recovering a standard lambda term from a de Bruijn term without stating the context must contain every referenced numeric position.
+- Evidence: With an empty context, G of index 0 calls for Gamma[0], which is absent; the rule has no value there.
+- The source equations are unchanged and the context condition is disclosed in adjacent Pashto prose.

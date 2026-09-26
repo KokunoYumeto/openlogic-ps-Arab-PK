@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0362; eight B067 alpha source issues disclosed, including an unresolved general uniqueness proof; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T03:52:31.043487+00:00",
+  "status": "adopted through OLP-0363; two B068 De Bruijn context clarifications disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T05:14:32.202133+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -7703,6 +7703,90 @@
       ],
       "decision_timing": "contemporaneous B067 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-025",
+      "unit_id": "OLP-0363",
+      "classification": "context-first-occurrence-shadowing-underspecified",
+      "source_path": "content/lambda-calculus/syntax/de-bruijn.tex",
+      "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+      "source_locator": "content/lambda-calculus/syntax/de-bruijn.tex:43-55",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex",
+      "target_line_1based": 54,
+      "target_sha256": "1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033",
+      "mode": "literal-equations-plus-adjacent-Pashto-context-clarification",
+      "translation_change": "The printed Gamma(x) rule calls for a position but does not specify which one when a variable name occurs more than once in the context.",
+      "reason": "The printed Gamma(x) rule calls for a position but does not specify which one when a variable name occurs more than once in the context.",
+      "counterexample": "For lambda x.lambda x.x the context begins x,x. Choosing the second position gives index 1 and refers to the outer binder; nearest-binder semantics requires index 0, the first position from the head.",
+      "formula_policy": "Retain all three F equations and disclose the first-position convention adjacent to the Pashto definition.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN",
+      "audit_artifacts": [
+        "B068_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/de-bruijn.tex:43-55",
+        "ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:54"
+      ],
+      "decision_timing": "contemporaneous B068 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-026",
+      "unit_id": "OLP-0363",
+      "classification": "decode-context-domain-underspecified",
+      "source_path": "content/lambda-calculus/syntax/de-bruijn.tex",
+      "source_sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35",
+      "source_locator": "content/lambda-calculus/syntax/de-bruijn.tex:58-72",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex",
+      "target_line_1based": 79,
+      "target_sha256": "1f3adac2c1554c4d6769669e0c0a70a1a8f35215b57f3a3c3e03f52844b51033",
+      "mode": "literal-equations-plus-adjacent-Pashto-context-clarification",
+      "translation_change": "The printed G rule describes recovering a standard lambda term from a de Bruijn term without stating the context must contain every referenced numeric position.",
+      "reason": "The printed G rule describes recovering a standard lambda term from a de Bruijn term without stating the context must contain every referenced numeric position.",
+      "counterexample": "With an empty context, G of index 0 calls for Gamma[0], which is absent; the rule has no value there.",
+      "formula_policy": "Retain all three G equations and disclose the required in-range context condition adjacent to the Pashto definition.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN",
+      "audit_artifacts": [
+        "B068_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/de-bruijn.tex:58-72",
+        "ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:79"
+      ],
+      "decision_timing": "contemporaneous B068 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -7710,7 +7794,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Continue OLP-0363 onward; do not claim source thm:sub uniqueness proved until a complete derivation is supplied.",
+  "next_action": "Continue OLP-0364 onward; retain exact F/G equations and context-domain disclosures.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -7764,7 +7848,8 @@
     "PS-OWNER-SEMANTIC-20260920-ARITHMETIZATION-SYNTAX",
     "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
     "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
-    "OLI-PS300-QUANTIFIER-CALLS-20260921"
+    "OLI-PS300-QUANTIFIER-CALLS-20260921",
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN"
   ],
   "source_authorities": [
     {

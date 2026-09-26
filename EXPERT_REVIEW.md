@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 362 of 722 source units are translated drafts. This log contains 187 terminology entries and 289 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 363 of 722 source units are translated drafts. This log contains 188 terminology entries and 291 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1686,6 +1686,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د الفا بدلون; د تړلي متغير نوم‌اړول; له جوړښت سره سازګاره اړيکه
 - Review question: Are the selected alpha-conversion, bound-variable-renaming, alpha-equivalence and compatibility compounds clear in Pakistani Pashto while keeping one-step and closure relations distinct?
 - Timing: contemporaneous B067 owner source-proof and Pakistani Pashto language review
+
+## TERM-LAMBDA-DE-BRUIJN-INDEX
+
+- Type: terminology
+- Choice: د دې بروين شاخص / بې‌نومه لامبډا ترم / د متغيرونو لړ / له صفره شمېرل شوے ځای / بېرته ترلاسه کول
+- Uncertainty: Pakistani scholarly prose and grammar were visually inspected for register and verb-final syntax; the Afghan regional comparator shows natural-number indexing and function vocabulary, not De Bruijn terminology. The proper-name compound and technical paraphrases remain source-led and provisional.
+- Alternatives: د ډي بروين شاخص; د تړونکي له مخې شمېرل شوے شاخص; بې‌نومه لامبډا ترم
+- Review question: Is the De Bruijn proper-name spelling and context terminology clear in Pakistani Pashto while distinguishing binder distance from program indices?
+- Timing: contemporaneous B068 owner source review and visually inspected Pakistani Pashto language consultation
 
 ## DEC-OLFUN-001
 
@@ -4233,6 +4242,24 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal source with adjacent Pashto warning; corrected target with exact public source-correction record
 - Review question: Does the Pashto note for OLLAM-024 disclose the source issue without claiming more than the checked proof shows?
 - Timing: contemporaneous B067 owner source review before cumulative acceptance
+
+## DEC-OLLAM-025
+
+- Type: source-correction
+- Choice: The printed Gamma(x) rule calls for a position but does not specify which one when a variable name occurs more than once in the context.
+- Uncertainty: The exact context case is checked; wording remains open to specialist review.
+- Alternatives: literal source without a qualification; literal equations with an adjacent Pashto context note
+- Review question: Does this note state the context condition without changing the equations or overstating the proposition?
+- Timing: contemporaneous B068 owner source review before cumulative acceptance
+
+## DEC-OLLAM-026
+
+- Type: source-correction
+- Choice: The printed G rule describes recovering a standard lambda term from a de Bruijn term without stating the context must contain every referenced numeric position.
+- Uncertainty: The exact context case is checked; wording remains open to specialist review.
+- Alternatives: literal source without a qualification; literal equations with an adjacent Pashto context note
+- Review question: Does this note state the context condition without changing the equations or overstating the proposition?
+- Timing: contemporaneous B068 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
