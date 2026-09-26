@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۴۵ پرېکړو د کتنې لار دے: ۱۸۰ اصطلاحات، ۲۵۹ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۴۰ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۴۸ پرېکړو د کتنې لار دے: ۱۸۲ اصطلاحات، ۲۶۰ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۴۷ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -223,7 +223,7 @@
 - اصلي مفهوم: `equivalence relation / class / quotient`؛ غوره شوې پښتو بڼه: **د هم ارزښتۍ اړيکه / د هم ارزښتۍ ټولګے / خارج قسمت**.
 - د کتنې وړ بديلونه: د معادلتوب اړيکه؛ د برابر ارزښت اړيکه.
 - کتل شوي شاهدان: `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109).
-- د متن ځای: `OLP-0015`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/equivalence-relations.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/equivalence-relations.tex#L24)؛ نور 9 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0015`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/equivalence-relations.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/equivalence-relations.tex#L24)؛ نور 10 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-PREDICATE — پريديکات
@@ -319,7 +319,7 @@
 - اصلي مفهوم: `function / mapping`؛ غوره شوې پښتو بڼه: **تابع / نگاشت**.
 - د کتنې وړ بديلونه: فنکشن؛ مپینګ.
 - کتل شوي شاهدان: `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P91-PROP-FUNCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 91)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0020`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/functions.tex#L8)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/functions.tex)؛ نور 40 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0020`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/functions.tex#L8)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/functions.tex)؛ نور 42 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-DOMAIN — د تعريف ساحه
@@ -351,7 +351,7 @@
 - اصلي مفهوم: `input / argument / output / value`؛ غوره شوې پښتو بڼه: **ننوت / ارګومېنټ / وت / قيمت**.
 - د کتنې وړ بديلونه: ورودي او خروجي؛ مدخل او مخرج.
 - کتل شوي شاهدان: `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0021`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex#L18)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/function-basics.tex#L24)؛ نور 15 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0021`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/function-basics.tex#L18)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/function-basics.tex#L24)؛ نور 17 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-INJECTIVE — يو پر يو / يو پر يو تابع
@@ -527,7 +527,7 @@
 - اصلي مفهوم: `reduction (transforming one enumeration problem into another)`؛ غوره شوې پښتو بڼه: **راکمونه / ... ته راکمول**.
 - د کتنې وړ بديلونه: تقليل؛ يوه مسئله بلې ته اړول.
 - کتل شوي شاهدان: `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 111)؛ `AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 112)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P28-INVERSES-TYPES` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 28)؛ `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166).
-- د متن ځای: `OLP-0034`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex#L11)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/reduction.tex#L86)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0034`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/reduction.tex#L11)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/reduction.tex#L86)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-CARDINAL-ORDER — تر ... لوے نۀ / تر ... کوچنے
@@ -839,7 +839,7 @@
 - اصلي مفهوم: `type / function type / finite type / simple theory of types / lambda term`؛ غوره شوې پښتو بڼه: **ټايپ / د تابعې ټايپ / متناهي ټايپ / د ټايپونو ساده تيوري / لامبډا ترم**.
 - د کتنې وړ بديلونه: ډول د ټايپ پر ځاے؛ تابعي ټايپ؛ د ساده ټايپونو تيوري؛ لامبډا اصطلاح.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P7-PROPOSITION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 7)؛ `AF-NIAZMAN-P37-AXIOMATIC-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 37)؛ `AF-NIAZMAN-P39-THEORY-PROOF` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 39)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17).
-- د متن ځای: `OLP-0178`؛ [پښتو متن](ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex#L24)؛ [اصلي متن](upstream/content/first-order-logic/beyond/higher-order-logic.tex#L32).
+- د متن ځای: `OLP-0178`؛ [پښتو متن](ps-Arab-PK/content/first-order-logic/beyond/higher-order-logic.tex#L24)؛ [اصلي متن](upstream/content/first-order-logic/beyond/higher-order-logic.tex#L32)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-INTUITIONISTIC-LOGIC — شهودي منطق / تعميري / د بي‌اېچ‌کې تفسير / دوه‌ګونې نفي ژباړه / د کرېپکي جوړښت او تحميل
@@ -1287,7 +1287,7 @@
 - اصلي مفهوم: `free occurrence / substitution / free for / syntactic predicate / primitive recursive test`؛ غوره شوې پښتو بڼه: **ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه**.
 - د کتنې وړ بديلونه: ازاد وقوع؛ بدلول د تعويض پر ځاے؛ د نيولو مخنيوی؛ نحوي محمول.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P18-FORMATION-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 18)؛ `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 24)؛ `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109).
-- د متن ځای: `OLP-0281`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex#L55)؛ [اصلي متن](upstream/content/incompleteness/arithmetization-syntax/introduction.tex#L49)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0281`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex#L55)؛ [اصلي متن](upstream/content/incompleteness/arithmetization-syntax/introduction.tex#L49)؛ نور 5 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-DERIVATION-ARITHMETIZATION — حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض
@@ -1448,6 +1448,22 @@
 - د کتنې وړ بديلونه: د الف‌يو اندازه؛ د پيوستار ځواک؛ د پيوستار حدس.
 - کتل شوي شاهدان: `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-BUKOVSKY-P78-CARDINAL-ORDER` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 78)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99)؛ `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 111).
 - د متن ځای: `OLP-0339`؛ [پښتو متن](ps-Arab-PK/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L59)؛ [اصلي متن](upstream/content/second-order-logic/sol-and-set-theory/cardinalities.tex#L47)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-LAMBDA-SYNTAX — لامبډا حساب / لامبډا تجريد / تطبيق / خالص، بې‌ټايپه او ټايپ‌لرونکے لامبډا حساب / الفا-معادلتوب
+
+- اصلي مفهوم: `lambda calculus / abstraction / application / pure, untyped and typed lambda calculus / alpha-equivalence`؛ غوره شوې پښتو بڼه: **لامبډا حساب / لامبډا تجريد / تطبيق / خالص، بې‌ټايپه او ټايپ‌لرونکے لامبډا حساب / الفا-معادلتوب**.
+- د کتنې وړ بديلونه: د لامبډا محاسبه؛ لامبډا انتزاع؛ د تابعې کارونه.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
+- د متن ځای: `OLP-0341`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/lambda-calculus.tex#L7)؛ [اصلي متن](upstream/content/lambda-calculus/lambda-calculus.tex#L7)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-LAMBDA-REDUCTION-CURRYING — د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول
+
+- اصلي مفهوم: `capture-avoiding substitution / beta contraction and reduction / normal form / Church-Rosser property / Currying`؛ غوره شوې پښتو بڼه: **د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول**.
+- د کتنې وړ بديلونه: بېټا-کمول؛ نورمال بڼه؛ کارينګ.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
+- د متن ځای: `OLP-0345`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex#L10)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/reduction.tex#L16)؛ نور 2 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -3008,6 +3024,12 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLLAM-001
+
+- کره پرتله: `OLP-0347`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/currying.tex#L64)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/currying.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/currying.tex:63-64`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
@@ -3042,4 +3064,4 @@
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0340 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0347 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

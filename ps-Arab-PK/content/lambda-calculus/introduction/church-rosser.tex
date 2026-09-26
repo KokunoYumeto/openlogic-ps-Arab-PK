@@ -1,0 +1,39 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: church-rosser
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{cr}
+\olsection{د چرچ--روسر خاصيت}
+
+\begin{thm}
+\ollabel{thm:church-rosser}
+فرض کړئ $M$، $N_1$ او $N_2$ داسې ترمونه دي چې $M \red N_1$ او
+$M \red N_2$۔ بيا داسې ترم $P$ شته چې $N_1 \red P$ او $N_2 \red P$۔
+\end{thm}
+
+\begin{cor}
+که $M$ عادي بڼې ته راکمېدے شي، دغه عادي بڼه يوازينۍ ده۔
+\end{cor}
+
+\begin{proof}
+که $M \red N_1$ او $M \red N_2$ وي، د مخکينۍ قضيې له مخې داسې
+ترم~$P$ شته چې $N_1$ او $N_2$ دواړه~$P$ ته راکميږي۔ که $N_1$ او
+$N_2$ دواړه په عادي بڼه کښې وي، دا يوازې هغه وخت شوني دي چې
+$N_1 \ident P \ident N_2$ وي۔
+\end{proof}
+
+په پاى کښې، دوه ترمونه $M$ او~$N$ \emph{$\beta$-معادل}، يا يوازې
+\emph{معادل}، هغه وخت بولو چې دواړه يوه ګډ ترم ته راکميږي؛ په بله
+وينا، داسې $P$ شته چې $M \red P$ او $N \red P$۔ دا په
+$M \equal[\beta] N$ ليکو۔ د \olref{thm:church-rosser} په کارولو
+څېړلے شئ چې $\equal[\beta]$ د معادلتوب اړيکه ده، او دا اضافي
+خاصيت هم لري چې د هر $M$ او~$N$ دپاره، که $M \red N$ يا
+$N \red M$ وي، نو $M \equal[\beta] N$۔ (په حقيقت کښې، ښودل کېدے
+شي چې $\equal[\beta]$ د دې خاصيت لرونکې \emph{تر ټولو کوچنۍ}
+د معادلتوب اړيکه ده۔)
+
+\end{document}

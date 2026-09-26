@@ -1,0 +1,27 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T02:14:46.843511+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRODUCTION",
+  "scope": "OLP-0341 through OLP-0347 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-001",
+      "unit_id": "OLP-0347",
+      "classification": "undefined-body-variable-in-currying-iteration",
+      "source_locator": "content/lambda-calculus/introduction/currying.tex:63-64",
+      "target_line_1based": 64,
+      "counterexample": "No P is bound or introduced in this section's general construction. Substituting argument terms into P therefore has no specified relation to the defined lambda abstraction with body N.",
+      "formula_policy": "Replace the free, undefined P by the N already bound as the body; preserve every other operator, variable and substitution order."
+    }
+  ],
+  "no_change_units": [
+    "OLP-0341",
+    "OLP-0342",
+    "OLP-0343",
+    "OLP-0344",
+    "OLP-0345",
+    "OLP-0346"
+  ],
+  "status": "seven source-reviewed draft units; one adjacent-disclosed source correction; inherited section identifier preserved"
+}

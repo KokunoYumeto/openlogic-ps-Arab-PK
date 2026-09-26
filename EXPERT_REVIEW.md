@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 340 of 722 source units are translated drafts. This log contains 180 terminology entries and 265 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 347 of 722 source units are translated drafts. This log contains 182 terminology entries and 266 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1623,6 +1623,24 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د الف‌يو اندازه; د پيوستار ځواک; د پيوستار حدس
 - Review question: In Pakistani Pashto mathematical prose, is «الف‌يو / د پيوستار شمېرنيزه اندازه / د پيوستار فرضيه» the clearest conventional rendering of “aleph-one / cardinality of the continuum / continuum hypothesis” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B061 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-SYNTAX
+
+- Type: terminology
+- Choice: لامبډا حساب / لامبډا تجريد / تطبيق / خالص، بې‌ټايپه او ټايپ‌لرونکے لامبډا حساب / الفا-معادلتوب
+- Uncertainty: function concept and Pakistani prose conventions inspected; exact lambda and type compounds are source-led and provisional
+- Alternatives: د لامبډا محاسبه; لامبډا انتزاع; د تابعې کارونه
+- Review question: In Pakistani Pashto mathematical prose, is «لامبډا حساب / لامبډا تجريد / تطبيق / خالص، بې‌ټايپه او ټايپ‌لرونکے لامبډا حساب / الفا-معادلتوب» the clearest conventional rendering of “lambda calculus / abstraction / application / pure, untyped and typed lambda calculus / alpha-equivalence” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B062 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-REDUCTION-CURRYING
+
+- Type: terminology
+- Choice: د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول
+- Uncertainty: تعويض and recursive-function vocabulary visually attested in regional comparator; exact lambda reduction and Currying labels are provisional
+- Alternatives: بېټا-کمول; نورمال بڼه; کارينګ
+- Review question: In Pakistani Pashto mathematical prose, is «د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول» the clearest conventional rendering of “capture-avoiding substitution / beta contraction and reduction / normal form / Church-Rosser property / Currying” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B062 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -3954,6 +3972,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLSOL-012 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B061 owner source review before cumulative acceptance
+
+## DEC-OLLAM-001
+
+- Type: source-correction
+- Choice: The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-001 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B062 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

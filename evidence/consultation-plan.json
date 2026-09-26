@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
-  "status": "OLP-0336 through OLP-0340 source-reviewed with six disclosed B061 corrections; frozen English source unchanged",
+  "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+  "status": "OLP-0341 through OLP-0347 source-reviewed with one disclosed B062 correction; exact lambda terminology remains provisional",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7382,6 +7382,114 @@
         "TERM-POWERSET"
       ],
       "scope": "Binary-relation fibers code subsets without third-order syntax. Pow permits duplicate codes, Cont forbids them, and a separate bijection fixes exact domain size; three exact corrections are disclosed."
+    },
+    "OLP-0341": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-SIMPLE-TYPE-THEORY"
+      ],
+      "scope": "Part attribution and unresolved source review are preserved; chapter imports remain in source order.",
+      "allowed_residual_english": [
+        "Avigad",
+        "Jeremy",
+        "Mitacs",
+        "Qian",
+        "Zesen"
+      ]
+    },
+    "OLP-0342": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Jeremy Avigad's original notes and the requested combination with the separate definability chapter remain an editorial notice; all thirteen imports are retained.",
+      "allowed_residual_english": [
+        "Avigad",
+        "Jeremy"
+      ]
+    },
+    "OLP-0343": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-FUNCTION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-SIMPLE-TYPE-THEORY",
+        "TERM-LAMBDA-SYNTAX"
+      ],
+      "scope": "Function notation, abstraction, application, untyped universal applicability and typed contrast retain separate meanings.",
+      "allowed_residual_english": [
+        "LISP"
+      ]
+    },
+    "OLP-0344": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-SYNTAX-SUBSTITUTION-PREDICATES"
+      ],
+      "scope": "All four inductive term clauses, three scope conventions and free/bound-variable examples preserve the exact formulas."
+    },
+    "OLP-0345": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-SYNTAX-SUBSTITUTION-PREDICATES",
+        "TERM-REDUCTION"
+      ],
+      "scope": "Capture avoidance, one-step versus reflexive-transitive beta reduction, normal form and divergent or convergent examples remain distinct.",
+      "allowed_residual_english": [
+        "contractum",
+        "redex"
+      ]
+    },
+    "OLP-0346": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-EQUIVALENCE"
+      ],
+      "scope": "Church-Rosser common reduct yields unique normal form and beta-equivalence; no proof of the theorem is added beyond the source."
+    },
+    "OLP-0347": {
+      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-FUNCTION",
+        "TERM-FUNCTION-ARGUMENT",
+        "TERM-LAMBDA-REDUCTION-CURRYING"
+      ],
+      "scope": "Currying's function-valued intermediary and displayed substitutions are preserved; OLLAM-001 corrects the undefined final body variable with adjacent disclosure.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10312,6 +10420,48 @@
       "passage": "power-set coding and exact continuum size",
       "reverse_paraphrase": "Binary-relation fibers code subsets. Pow covers them, Cont codes them uniquely, and equality of domain size needs a bijection to a continuum-sized code set.",
       "finding": "The wrong proof variable, unclosed implication and lower-bound-only final formula receive separate disclosed repairs."
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "part attribution",
+      "reverse_paraphrase": "The source credits Jeremy Avigad's notes and Zesen Qian's Mitacs work, and marks latter chapters as needing review.",
+      "finding": "Names, provenance, warning and four imports retained."
+    },
+    {
+      "unit_id": "OLP-0342",
+      "passage": "chapter editorial",
+      "reverse_paraphrase": "Original concise notes need section consolidation and merger of duplicated definability material.",
+      "finding": "The notice and thirteen ordered imports remain."
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "overview",
+      "reverse_paraphrase": "Church first sought constructive logic, later equivalence with other computability notions; abstraction names functions and application supplies inputs. Untyped calculus allows any application, while the typed version differs.",
+      "finding": "Historical intent, math examples, three-point framework, typed digression and LISP note retained."
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "lambda syntax",
+      "reverse_paraphrase": "Variables and constants seed terms; application and abstraction extend them. Pure calculus drops constants, application associates left, abstraction scopes wide, and bound renaming yields alpha-equivalence.",
+      "finding": "Four formation clauses, all three conventions and both variable-status examples retained."
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "beta reduction",
+      "reverse_paraphrase": "Capture-avoiding substitution contracts a redex; a single step differs from zero or more steps, while a normal form cannot reduce. Examples include growth, self-repetition and two paths to zv.",
+      "finding": "Every reduction display, direction and normal-form criterion retained."
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "Church-Rosser",
+      "reverse_paraphrase": "Two reducts of one term have a common reduct; normal forms are unique when they exist, and common-reduct beta-equivalence is an equivalence relation.",
+      "finding": "Hypotheses, conclusion, corollary proof and equivalence characterization retained."
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "Currying",
+      "reverse_paraphrase": "A two-argument function is represented by a one-argument function that returns another one-argument function; nested substitutions apply supplied arguments to the body.",
+      "finding": "All displayed steps and the inherited section identifier retained; the undefined P in the final source display is disclosed and corrected to N."
     }
   ]
 }

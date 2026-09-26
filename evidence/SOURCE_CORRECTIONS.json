@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0340; six B061 source repairs disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-25T05:10:09.863688+00:00",
+  "status": "adopted through OLP-0347; one B062 source repair disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T01:50:10.285574+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6625,6 +6625,51 @@
       ],
       "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-001",
+      "unit_id": "OLP-0347",
+      "classification": "undefined-body-variable-in-currying-iteration",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "source_locator": "content/lambda-calculus/introduction/currying.tex:63-64",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex",
+      "target_line_1based": 64,
+      "target_sha256": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.",
+      "reason": "The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.",
+      "counterexample": "No P is bound or introduced in this section's general construction. Substituting argument terms into P therefore has no specified relation to the defined lambda abstraction with body N.",
+      "formula_policy": "Replace the free, undefined P by the N already bound as the body; preserve every other operator, variable and substitution order.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{P}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRODUCTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/currying.tex:63-64",
+        "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:64"
+      ],
+      "decision_timing": "contemporaneous B062 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -6632,7 +6677,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Advance OLP-0341 onward and report checked source findings to manager; keep frozen source unchanged.",
+  "next_action": "Advance OLP-0348 onward and report checked source findings to manager; keep frozen source unchanged.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

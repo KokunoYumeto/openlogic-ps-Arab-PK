@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 340,
-    "structural_pass": 340,
+    "draft_units": 347,
+    "structural_pass": 347,
     "visually_accepted": 255,
     "published": 255
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B061-SECOND-ORDER-SET-THEORY",
+  "batch": "PS-B062-LAMBDA-INTRODUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -10580,6 +10580,231 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0341",
+      "path": "content/lambda-calculus/lambda-calculus.tex",
+      "source_sha256": "55f3d4f5216c89a10fcbf8a214d658099485999fefd9391402994dea1881cec3",
+      "translation_sha256": "d8952c80c110407f79b0fcf1e024788dbd69dd3330f3a6746b5333dca1d287c9",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Avigad",
+        "Jeremy",
+        "Mitacs",
+        "Qian",
+        "Zesen"
+      ],
+      "allowed_residual_english": [
+        "Avigad",
+        "Jeremy",
+        "Mitacs",
+        "Qian",
+        "Zesen"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0342",
+      "path": "content/lambda-calculus/introduction/introduction.tex",
+      "source_sha256": "6988c2c02fea28c8ff52a0d0fa77a51efceb656455a10f50c3fd702a4a09a5fc",
+      "translation_sha256": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Avigad",
+        "Jeremy"
+      ],
+      "allowed_residual_english": [
+        "Avigad",
+        "Jeremy"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "path": "content/lambda-calculus/introduction/overview.tex",
+      "source_sha256": "cfb967d6315533157e73f6dbbf027a36082188da17e9324aa6f08c957070853a",
+      "translation_sha256": "3bcb84cbb3e136ae588a254d032f8a9f78bd52f0958f5f73523c19cbddcaeb09",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "LISP"
+      ],
+      "allowed_residual_english": [
+        "LISP"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "path": "content/lambda-calculus/introduction/syntax.tex",
+      "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+      "translation_sha256": "99e268be05b68a5d956ca042f9eda6525de3080416f13c046fc6830116bd3ad9",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "path": "content/lambda-calculus/introduction/reduction.tex",
+      "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "translation_sha256": "5dcf8704a82e003510f0839e79c3a764947c25548c57b19fbab2c6874f0f2186",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "contractum",
+        "redex"
+      ],
+      "allowed_residual_english": [
+        "contractum",
+        "redex"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "path": "content/lambda-calculus/introduction/church-rosser.tex",
+      "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
+      "translation_sha256": "5a69dab235bc7175fd7aadc06241fb884d1050db89b23ddae16d3bcfb74c4986",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "translation_sha256": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-001"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{P}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}(\\lambd[x_1][\\lambd[x_2][\\ldots\\lambd[x_n][N]]])M_1\\dotsM_n\\bredone\\\\\\begin{aligned}\\bredone{}&(\\Subst{(\\lambd[x_2][\\ldots\\lambd[x_n][N]])}{M_1}{x_1})M_2\\dotsM_n\\\\\\eqs{}&(\\lambd[x_2][\\ldots\\lambd[x_n][\\Subst{N}{M_1}{x_1}]])M_2\\dotsM_n\\\\\\vdots&\\\\\\bredone{}&\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}\\end{aligned}\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -13510,6 +13735,48 @@
       "passage": "power-set coding and exact continuum size",
       "reverse_paraphrase": "Binary-relation fibers code subsets. Pow covers them, Cont codes them uniquely, and equality of domain size needs a bijection to a continuum-sized code set.",
       "finding": "The wrong proof variable, unclosed implication and lower-bound-only final formula receive separate disclosed repairs."
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "part attribution",
+      "reverse_paraphrase": "The source credits Jeremy Avigad's notes and Zesen Qian's Mitacs work, and marks latter chapters as needing review.",
+      "finding": "Names, provenance, warning and four imports retained."
+    },
+    {
+      "unit_id": "OLP-0342",
+      "passage": "chapter editorial",
+      "reverse_paraphrase": "Original concise notes need section consolidation and merger of duplicated definability material.",
+      "finding": "The notice and thirteen ordered imports remain."
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "overview",
+      "reverse_paraphrase": "Church first sought constructive logic, later equivalence with other computability notions; abstraction names functions and application supplies inputs. Untyped calculus allows any application, while the typed version differs.",
+      "finding": "Historical intent, math examples, three-point framework, typed digression and LISP note retained."
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "lambda syntax",
+      "reverse_paraphrase": "Variables and constants seed terms; application and abstraction extend them. Pure calculus drops constants, application associates left, abstraction scopes wide, and bound renaming yields alpha-equivalence.",
+      "finding": "Four formation clauses, all three conventions and both variable-status examples retained."
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "beta reduction",
+      "reverse_paraphrase": "Capture-avoiding substitution contracts a redex; a single step differs from zero or more steps, while a normal form cannot reduce. Examples include growth, self-repetition and two paths to zv.",
+      "finding": "Every reduction display, direction and normal-form criterion retained."
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "Church-Rosser",
+      "reverse_paraphrase": "Two reducts of one term have a common reduct; normal forms are unique when they exist, and common-reduct beta-equivalence is an equivalence relation.",
+      "finding": "Hypotheses, conclusion, corollary proof and equivalence characterization retained."
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "Currying",
+      "reverse_paraphrase": "A two-argument function is represented by a one-argument function that returns another one-argument function; nested substitutions apply supplied arguments to the body.",
+      "finding": "All displayed steps and the inherited section identifier retained; the undefined P in the final source display is disclosed and corrected to N."
     }
   ],
   "builds": [

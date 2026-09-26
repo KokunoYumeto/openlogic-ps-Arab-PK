@@ -1,0 +1,74 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{red}
+\olsection{د لامبډا ترمونو راکمول}
+
+د لامبډا ترمونو سره څه کولے شو؟ ساده کول ئې۔ که $M$ او $N$ هر ډول
+لامبډا ترمونه او $x$ هر متغير وي، نو له دې وروسته چې د~$M$ هغه تړلي
+متغيرونه بيا ونوموو چې تر تعويض وروسته د~$N$ له آزادو متغيرونو سره
+ټکرېږي، په~$M$ کښې د~$x$ پر ځاے د~$N$ د کېښودلو پايله په
+$\Subst{M}{N}{x}$ ښيو۔ مثلاً،
+\[
+\Subst{(\lambd[w][xxw])}{yyz}{x} = \lambd[w][(yyz)(yyz)w].
+\]
+
+\begin{digress}
+د تعويض نورې نښې $[N/x]M$، $[x/N]M$ او $M[x/N]$ هم دي۔ پام
+ورته وکړئ!
+\end{digress}
+
+په وجداني ډول، $(\lambd[x][M])N$ او $\Subst{M}{N}{x}$ يوه معنا
+لري؛ لومړے ترم په دويم بدلول \emph{$\beta$-انقباض} بلل کېږي۔
+$(\lambd[x][M])N$ ته \emph{د راکمېدو وړ عبارت} (redex) او
+$\Subst{M}{N}{x}$ ته ئې \emph{د انقباض پايله} (contractum) وايي۔
+په عمومي ډول، که د~$P$ د کوم فرعي ترم په $\beta$-انقباض سره~$P'$
+ته تلل شوني وي، وايو چې $P$ په \emph{يو ګام کښې تر~$P'$ پورې
+$\beta$-راکميږي}، او $P \redone P'$ ليکو۔ که له~$P$ څخه د يو-ګامي
+راکمول د څو ګامونو په وسيله (ښايي هېڅ ګام نۀ وي)~$P'$ ترلاسه کولے
+شو، نو وايو $P$ تر~$P'$ پورې \emph{$\beta$-راکميږي}؛ په نښو کښې
+$P \red P'$۔ هغه ترم چې نور $\beta$-راکمول ئې ناشوني وي،
+\emph{$\beta$-ناراکمېدونکے} يا \emph{$\beta$-عادي} بلل کېږي۔ چې
+سياق روښانه وي، د ``$\beta$-راکميږي'' پر ځاے يوازې ``راکميږي'' او
+داسې نور وايو۔
+
+څو بېلګې وګورو۔
+\begin{enumerate}
+\item لرو:
+\begin{align*}
+(\lambd[x][xxy]) \lambd[z][z] & \redone (\lambd[z][z])(\lambd[z][z]) y \\
+& \redone (\lambd[z][z]) y \\
+& \redone y.
+\end{align*}
+\item د يوه ترم ``ساده کول'' هغه لا پېچلے هم کولے شي:
+\begin{align*}
+(\lambd[x][xxy])(\lambd[x][xxy]) & \redone (\lambd[x][xxy])(\lambd[x][xxy])y \\
+& \redone (\lambd[x][xxy])(\lambd[x][xxy])yy \\
+& \redone \dots
+\end{align*}
+\item ترم بې له بدلون څخه هم پرېښودے شي:
+\[
+(\lambd[x][xx])(\lambd[x][xx]) \redone (\lambd[x][xx])(\lambd[x][xx]).
+\]
+\item ځينې ترمونه په څو لارو راکمېدے شي؛ مثلاً،
+\[
+(\lambd[x][(\lambd[y][yx]) z)] v \redone (\lambd[y][yv]) z
+\]
+د تر ټولو بهرني تطبيق په انقباض؛ او
+\[
+(\lambd[x][(\lambd[y][yx]) z)] v \redone (\lambd[x][zx]) v
+\]
+د تر ټولو دننني تطبيق په انقباض۔ خو پام وکړئ چې په دې حالت کښې
+دواړه ترمونه وروسته هماغه يو ترم~$zv$ ته راکميږي۔
+\end{enumerate}
+
+په وروستۍ بېلګه کښې دغه ګډه وروستۍ پايله تصادف نۀ دے، بلکې د
+لامبډا حساب يو ژور او مهم خاصيت ښيي چې د ``چرچ--روسر خاصيت'' په
+نامه يادېږي۔
+
+\end{document}

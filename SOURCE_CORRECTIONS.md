@@ -2327,3 +2327,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.
 - Counterexample or exact defect: The source opens the second conjunct with (Y(x) lif but ends with only the inner Codes implication's closing parenthesis and two quantifier brackets.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-001
+
+- Unit: `OLP-0347`.
+- Frozen source: `content/lambda-calculus/introduction/currying.tex:63-64` (SHA-256 `218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:64` (SHA-256 `9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370`).
+- Correction: The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.
+- Counterexample or exact defect: No P is bound or introduced in this section's general construction. Substituting argument terms into P therefore has no specified relation to the defined lambda abstraction with body N.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
