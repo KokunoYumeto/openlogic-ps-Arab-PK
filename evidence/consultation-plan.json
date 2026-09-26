@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
-  "status": "OLP-0348 through OLP-0352 source-reviewed with three disclosed B063 corrections; Church-numeral compound provisional",
+  "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+  "status": "OLP-0353 through OLP-0355 source-reviewed; five exact B064 corrections disclosed; lambda introduction complete",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7560,6 +7560,51 @@
         "TERM-PRIMITIVE-RECURSION"
       ],
       "scope": "Composition of lambda-definable functions retains k inner functions, l arguments and their nesting order."
+    },
+    "OLP-0353": {
+      "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-REDUCTION-CURRYING"
+      ],
+      "scope": "Parameter-absorbing primitive recursion, the pair selector, successor transition, Church-numeral iteration and mutual induction are retained; OLLAM-005–008 repair four symbol and arity defects.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0354": {
+      "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-FIXED-POINT-SEARCH",
+        "TERM-LAMBDA-REDUCTION-CURRYING"
+      ],
+      "scope": "The Curry and Turing terms remain exact; distinguish common-reduct beta-equivalence from direct reduction."
+    },
+    "OLP-0355": {
+      "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-FIXED-POINT-SEARCH",
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-LAMBDA-CHURCH-NUMERALS"
+      ],
+      "scope": "Fixed-point minimization searches successive Church numerals with D's zero/one selector; OLLAM-009 restores the lemma's lambda-definability premise.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10562,6 +10607,24 @@
       "passage": "closure under composition",
       "reverse_paraphrase": "If h and each g_i are lambda-defined, nesting their representing terms gives the composition with the same k inner functions and l arguments.",
       "finding": "The displayed formula preserves every argument and function order."
+    },
+    {
+      "unit_id": "OLP-0353",
+      "passage": "parameterized primitive recursion",
+      "reverse_paraphrase": "After absorbing parameters into functions, F(0)=G and F(n+1)=H(n,F(n)); a Church numeral iterates the pair transition T from (0,G), and projection returns the second component.",
+      "finding": "The selector equations and both induction clauses are preserved. OLLAM-005–008 repair the result symbol, recursion index, primed definers and extra argument to v."
+    },
+    {
+      "unit_id": "OLP-0354",
+      "passage": "fixed-point combinators",
+      "reverse_paraphrase": "Self-application of l yields a term beta-equivalent to its image under g. Curry's Yg and g(Yg) share a reduct; Turing's variant reduces to its image directly.",
+      "finding": "Both exact Y terms and the stronger second reduction claim remain distinct."
+    },
+    {
+      "unit_id": "OLP-0355",
+      "passage": "unbounded minimization",
+      "reverse_paraphrase": "For each x, the fixed-point term defines a search h_x(n) that returns n when f(x,n)=0 and otherwise recurs at n+1; G(x)=H(0) yields the least zero or diverges.",
+      "finding": "OLLAM-009 changes the unsupported primitive-recursive premise to the lemma's lambda-definability premise. The selector and fixed-point equations remain exact."
     }
   ]
 }

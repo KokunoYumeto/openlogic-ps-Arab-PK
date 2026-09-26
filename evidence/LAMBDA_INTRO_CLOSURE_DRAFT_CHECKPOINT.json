@@ -1,0 +1,69 @@
+{
+  "schema": "ps-lambda-intro-closure-draft/1",
+  "utc": "2026-09-26T02:57:35.071812+00:00",
+  "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+  "status": "accepted B064 editable drafts; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0353",
+      "path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "translation_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "source_correction_ids": [
+        "OLLAM-005",
+        "OLLAM-006",
+        "OLLAM-007",
+        "OLLAM-008"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0354",
+      "path": "content/lambda-calculus/introduction/fixed-point-combinator.tex",
+      "source_sha256": "632b1f356b9a9b2147e82bc3b39a3442220ab78ffbede6baa28390cf1b759327",
+      "translation_sha256": "3766b38e17e8c8283e8c317b1aa755b679460c20e7957099c2260cafb0880efe",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0355",
+      "path": "content/lambda-calculus/introduction/minimization.tex",
+      "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+      "translation_sha256": "5223a1afa5b27d57c6e9bc6e15f1fce713c615a5eb0a9de626dd963cbbdbe51a",
+      "source_correction_ids": [
+        "OLLAM-009"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 352,
+    "current_reviewed_draft_units": 3,
+    "cumulative_draft_units": 355,
+    "remaining_units": 367,
+    "public_reader_units": 255
+  },
+  "model_attribution": {
+    "model": "gpt-6-sol",
+    "effort": "ultra",
+    "session_metadata_record_sha256": "5516214de3294dc52bc83e987ca9264924fe5ea9a2b2eef85cb170f24f874752"
+  },
+  "evidence": {
+    "source_check_sha256": "90ccd80cbd8c6102c2787e90d5344c6c47ce4c5e3be7bbc50e39eacffacacd39",
+    "canon_consultation_sha256": "3f13ce22f5be8fa17070506537ad8fbf218723a8d6f8d11f92d209d9b79b5a67",
+    "source_corrections_sha256": "55524a7c6fbbacca107cb63d2dc1e7d47265cb9d02566356a100db5cef85dd89",
+    "partial_qa_sha256": "18f3a379fdfaae72234f97ac197843f4bdfaa3091463ca9e14be896b3cd587c0",
+    "qa_sha256": "eb0052317bc6caab407f78a5bb1b6ebf38478bdc567c4495a22bd2f4380cb36a",
+    "alignment_sha256": "6bb83f43d8be20567b51601fa84597c7254e4db8d3ccc30256566fc91bf9ea3e",
+    "canon_use_sha256": "ba49795ad591ab843139ece26c123aaae9adce677be1cf32a731c9dbdb1d56d6",
+    "term_decisions_sha256": "6a45eafa2af05f22395f3bb618acce245f2804888218e9344f57c490bc9c0981",
+    "canonical_decisions_sha256": "bdd34a888b26b59c32354e1861914e992705f04cbd45d764e1e5de5ebb8b748f",
+    "canonical_qa_sha256": "46b0540873068570d9badbd8bdf465ae8cbeb5be12bdb4314c048b1226d59218",
+    "canonical_replay_sha256": "924f1655d5383aa68656cab24366173d9a47b87598ac679a1e4c7f06e1424a5b"
+  },
+  "next_action": "Commit/push B064; continue lambda syntax from OLP-0356; finish coherent v0.7 PDF/EPUB/direct-TeX/source release when guarded TeX is available."
+}

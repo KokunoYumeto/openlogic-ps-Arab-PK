@@ -2363,3 +2363,48 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.
 - Counterexample or exact defect: Applying the source term lambda x.lambda y.y to any numeral consumes its first binder and yields lambda y.y, not the Church numeral zero lambda x.lambda y.y. The later source chapter explicitly defines Zero with an outer argument binder.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-005
+
+- Unit: `OLP-0353`.
+- Frozen source: `content/lambda-calculus/introduction/primitive-recursion.tex:14-16` (SHA-256 `04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:20` (SHA-256 `63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca`).
+- Correction: The source names H as the sought term for f although H has already been assigned to h. The target names the new term F, as all subsequent equations do.
+- Counterexample or exact defect: If the new term remained H, the same symbol would be fixed simultaneously as a term defining h and the different function f; the later construction explicitly defines F.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-006
+
+- Unit: `OLP-0353`.
+- Frozen source: `content/lambda-calculus/introduction/primitive-recursion.tex:17-20` (SHA-256 `04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:23` (SHA-256 `63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca`).
+- Correction: The step of primitive recursion applies h to the previous index x, not to the parameter z. The target changes that one first argument.
+- Counterexample or exact defect: Let h(a,b,z)=a, g(z)=0 and z=1. The displayed source gives f(1,1)=1, while primitive recursion and the later numeral equation give f(1,1)=0.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-007
+
+- Unit: `OLP-0353`.
+- Frozen source: `content/lambda-calculus/introduction/primitive-recursion.tex:21-29` (SHA-256 `04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:36` (SHA-256 `63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca`).
+- Correction: The displayed full-arity numeral equations should use the just-given terms G-prime and H-prime. The unprimed G and H are subsequently defined as parameter-absorbing terms of different arity.
+- Counterexample or exact defect: The text quantifies fresh G-prime and H-prime, yet its purported sufficient condition refers to other G and H. After the later definitions, H takes two inputs and returns a function of z, whereas the first displayed equation applies H to three arguments including z.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-008
+
+- Unit: `OLP-0353`.
+- Frozen source: `content/lambda-calculus/introduction/primitive-recursion.tex:32-40` (SHA-256 `04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:49` (SHA-256 `63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca`).
+- Correction: In the parameter-absorbing definition of H(u,v), v represents F(n), a function of z alone. The target applies v to z without the extra u.
+- Counterexample or exact defect: Choose v=lambda z.z and H-prime(u,y,z)=y. The intended H(u,v)(z) is z; source v(u,z) first applies v to u and then applies the resulting Church numeral to z, generally giving a different term.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-009
+
+- Unit: `OLP-0355`.
+- Frozen source: `content/lambda-calculus/introduction/minimization.tex:33-35` (SHA-256 `e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:35` (SHA-256 `5223a1afa5b27d57c6e9bc6e15f1fce713c615a5eb0a9de626dd963cbbdbe51a`).
+- Correction: The lemma assumes f is lambda-definable, not primitive recursive. The target derives the defining term F from the stated hypothesis.
+- Counterexample or exact defect: A lambda-definable function may be partial, whereas every primitive-recursive function is total. The proof cannot invoke primitive recursiveness for the arbitrary f quantified by the lemma.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

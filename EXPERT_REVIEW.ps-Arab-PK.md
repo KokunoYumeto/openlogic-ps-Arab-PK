@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۵۲ پرېکړو د کتنې لار دے: ۱۸۳ اصطلاحات، ۲۶۳ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۵۲ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۵۸ پرېکړو د کتنې لار دے: ۱۸۴ اصطلاحات، ۲۶۸ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۵۵ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -983,7 +983,7 @@
 - اصلي مفهوم: `primitive recursion / primitive recursive function / base equation / recursive equation`؛ غوره شوې پښتو بڼه: **بنسټيز بازګښت / بنسټيزه بازګشتي تابع / بنسټيزه معادله / بازګشتي معادله**.
 - د کتنې وړ بديلونه: ابتدايي بازګښت د بنسټيز بازګښت پر ځاے؛ اوليه بازګشتي تابع؛ د پيل معادله د بنسټيزې معادلې پر ځاے.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-BUKOVSKY-P127-ALGEBRA-LAWS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 127)؛ `AF-MOE-P35-POWER-EXPONENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 35).
-- د متن ځای: `OLP-0209`؛ [پښتو متن](ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex)؛ [اصلي متن](upstream/content/computability/recursive-functions/recursive-functions.tex)؛ نور 33 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0209`؛ [پښتو متن](ps-Arab-PK/content/computability/recursive-functions/recursive-functions.tex)؛ [اصلي متن](upstream/content/computability/recursive-functions/recursive-functions.tex)؛ نور 34 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-PROJECTION-CHARACTERISTIC — پروجکشن تابع / ځانګړونکې تابع / ځاييزه کچه / صفر تابع
@@ -1031,7 +1031,7 @@
 - اصلي مفهوم: `partial computable / partial recursive / unbounded search / divergence`؛ غوره شوې پښتو بڼه: **جزوي محاسبه کېدونکې / جزوي بازګشتي / بې‌حده پلټنه / نۀ درېدل**.
 - د کتنې وړ بديلونه: نيمګړې محاسبه کېدونکې تابع؛ نامحدوده پلټنه؛ نه تعريف کېدل د نۀ درېدو پر ځاے.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62).
-- د متن ځای: `OLP-0224`؛ [پښتو متن](ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex#L10)؛ [اصلي متن](upstream/content/computability/recursive-functions/partial-functions.tex#L10)؛ نور 10 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0224`؛ [پښتو متن](ps-Arab-PK/content/computability/recursive-functions/partial-functions.tex#L10)؛ [اصلي متن](upstream/content/computability/recursive-functions/partial-functions.tex#L10)؛ نور 11 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-NORMAL-FORM-INDEX — د نورمال شکل قضيه / شاخص / د محاسبې لړۍ / نړيواله جزوي تابع
@@ -1463,7 +1463,7 @@
 - اصلي مفهوم: `capture-avoiding substitution / beta contraction and reduction / normal form / Church-Rosser property / Currying`؛ غوره شوې پښتو بڼه: **د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول**.
 - د کتنې وړ بديلونه: بېټا-کمول؛ نورمال بڼه؛ کارينګ.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
-- د متن ځای: `OLP-0345`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex#L10)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/reduction.tex#L16)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0345`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/reduction.tex#L10)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/reduction.tex#L16)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-LAMBDA-CHURCH-NUMERALS — د چرچ عددنښه / تکراروونکے / لامبډا-تعريفېدونکې جزوي تابع
@@ -1471,7 +1471,15 @@
 - اصلي مفهوم: `Church numeral / iterator / lambda-definable partial function`؛ غوره شوې پښتو بڼه: **د چرچ عددنښه / تکراروونکے / لامبډا-تعريفېدونکې جزوي تابع**.
 - د کتنې وړ بديلونه: د چرچ شمېرنښه؛ لامبډا عدد؛ تکراري عددنښه.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
-- د متن ځای: `OLP-0348`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex#L18)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/lambda-definability.tex#L10)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0348`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex#L18)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/lambda-definability.tex#L10)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-LAMBDA-FIXED-POINT-SEARCH — د ثابت ټکي ترکيب کوونکے / د کري او تورينګ ترکيب کوونکي / نامحدوده کمينه‌موندنه
+
+- اصلي مفهوم: `fixed-point combinator / Curry and Turing combinators / unbounded minimization`؛ غوره شوې پښتو بڼه: **د ثابت ټکي ترکيب کوونکے / د کري او تورينګ ترکيب کوونکي / نامحدوده کمينه‌موندنه**.
+- د کتنې وړ بديلونه: د ټاکلي ټکي ترکيب کوونکے؛ د کري او تورينګ کمبينېټرونه؛ بې‌حده پلټنه.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
+- د متن ځای: `OLP-0354`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex#L10)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex#L3)؛ نور 1 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -3056,38 +3064,68 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLLAM-005
+
+- کره پرتله: `OLP-0353`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex#L20)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/primitive-recursion.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/primitive-recursion.tex:14-16`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-006
+
+- کره پرتله: `OLP-0353`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex#L23)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/primitive-recursion.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/primitive-recursion.tex:17-20`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-007
+
+- کره پرتله: `OLP-0353`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex#L36)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/primitive-recursion.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/primitive-recursion.tex:21-29`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-008
+
+- کره پرتله: `OLP-0353`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex#L49)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/primitive-recursion.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/primitive-recursion.tex:32-40`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-009
+
+- کره پرتله: `OLP-0355`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex#L35)؛ [اصلي متن](upstream/content/lambda-calculus/introduction/minimization.tex)؛ د سرچينې کره نښه `content/lambda-calculus/introduction/minimization.tex:33-35`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
 
-- د پرتله ځای: `OLP-0012`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex#L97)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/relations-as-sets.tex#L98).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex#L97)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/relations-as-sets.tex#L98).
 - د کتنې دليل: اصلي I نښه ساتل شوې ده. د استدلال له سياقه دا غالباً د طبيعي عددونو عينيت ښيي، خو نښه بې له ښکاره دليل څخه نۀ ده بدله شوې.
 
 ### DEC-TREE-X
 
-- د پرتله ځای: `OLP-0018`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/trees.tex#L94)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/trees.tex#L94).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/trees.tex#L94)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/trees.tex#L94).
 - د کتنې دليل: اصلي X نښه ساتل شوې ده. د استدلال له سياقه مراد ښايي د ونې شاوخوا سټ A وي؛ دا اټکل د متن په يادښت کښې څرګند شوے دے.
 
 ### DEC-RPLUS
 
-- د پرتله ځای: `OLP-0016`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/orders.tex#L104)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/orders.tex#L105).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/orders.tex#L104)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/orders.tex#L105).
 - د کتنې دليل: په ترتيبونو کښې R+ انعکاسي تړون ښيي، خو د عملياتو په بحث کښې د لېږدي تړون په معنا کارېدلے دے. دواړه محلي تعريفونه ساتل شوي او د يوې نښې دوه استعمالونه څرګند شوي دي.
 
 ### DEC-SIZE-ALTERNATIVES
 
-- د پرتله ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L12)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L10).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L12)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L10).
 - د کتنې دليل: د څپرکي دواړه بديلې سمونيزې برخې او ټولې لارې ژباړل شوې دي. د بشپړ لوستونکي پر جوړولو بايد د بديل په نوم ښکاره شي، څو د يوې پرله‌پسې واحدې نظريې په څېر دوه ځله وړاندې نۀ شي.
 
 ### DEC-COMPOSITION-CONVENTION
 
-- د پرتله ځای: `OLP-0025`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/composition.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/composition.tex#L16).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/composition.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/composition.tex#L16).
 - د کتنې دليل: د اوپن لاجک د تابعو د ترکيب ترتيب ساتل شوے دے: g∘f لومړے f او بيا g پلي کوي. پښتو پرتله‌ييزه سرچينه د هماغې ارزونې دپاره f∘g ليکي؛ هغې سرچينې يوازې د ژبې په انتخاب کښې مرسته کړې، د فورمول ترتيب ئې نۀ دے بدل کړے.
 
 ### DEC-ENUM-TABLE-F7
 
-- د پرتله ځای: `OLP-0029`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex#L151)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L151).
+- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex#L151)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L151).
 - د کتنې دليل: د اصلي جدول په وروستي قطار کښې د f(7) ښکاره ارزښت −3 نه دے چاپ شوے. جدول ساتل شوے او د دې ښودنيزې تشې د لوستونکي يادښت د راتلونکې خپرونې پر مهال ورزیاتېږي.
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0352 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0355 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

@@ -1,0 +1,58 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T02:57:35.071812+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+  "scope": "OLP-0353 through OLP-0355 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-005",
+      "unit_id": "OLP-0353",
+      "classification": "wrong-result-term-name",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:14-16",
+      "target_line_1based": 20,
+      "counterexample": "If the new term remained H, the same symbol would be fixed simultaneously as a term defining h and the different function f; the later construction explicitly defines F.",
+      "formula_policy": "Change only the inline result-term symbol H to F; preserve the given h-term H."
+    },
+    {
+      "id": "OLLAM-006",
+      "unit_id": "OLP-0353",
+      "classification": "wrong-recursion-index",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:17-20",
+      "target_line_1based": 23,
+      "counterexample": "Let h(a,b,z)=a, g(z)=0 and z=1. The displayed source gives f(1,1)=1, while primitive recursion and the later numeral equation give f(1,1)=0.",
+      "formula_policy": "Replace only the first argument z of h in the step with x; retain f(x,z) and the parameter tuple."
+    },
+    {
+      "id": "OLLAM-007",
+      "unit_id": "OLP-0353",
+      "classification": "primed-definers-in-uncurried-recurrence",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:21-29",
+      "target_line_1based": 36,
+      "counterexample": "The text quantifies fresh G-prime and H-prime, yet its purported sufficient condition refers to other G and H. After the later definitions, H takes two inputs and returns a function of z, whereas the first displayed equation applies H to three arguments including z.",
+      "formula_policy": "Add primes only to G and H on the right sides of the full-arity numeral equations; retain the following curried G and H definitions."
+    },
+    {
+      "id": "OLLAM-008",
+      "unit_id": "OLP-0353",
+      "classification": "extra-index-applied-to-parameter-function",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:32-40",
+      "target_line_1based": 49,
+      "counterexample": "Choose v=lambda z.z and H-prime(u,y,z)=y. The intended H(u,v)(z) is z; source v(u,z) first applies v to u and then applies the resulting Church numeral to z, generally giving a different term.",
+      "formula_policy": "Delete only the extra argument u from v(u,z), keeping u as the first input of H-prime and all parameter positions intact."
+    },
+    {
+      "id": "OLLAM-009",
+      "unit_id": "OLP-0355",
+      "classification": "stronger-unassumed-premise-in-minimization-proof",
+      "source_locator": "content/lambda-calculus/introduction/minimization.tex:33-35",
+      "target_line_1based": 35,
+      "counterexample": "A lambda-definable function may be partial, whereas every primitive-recursive function is total. The proof cannot invoke primitive recursiveness for the arbitrary f quantified by the lemma.",
+      "formula_policy": "Correct only the prose premise; preserve every displayed expression and fixed-point equation."
+    }
+  ],
+  "no_change_units": [
+    "OLP-0354"
+  ],
+  "status": "three source-reviewed draft units; five adjacent-disclosed corrections, four with exact math exceptions"
+}

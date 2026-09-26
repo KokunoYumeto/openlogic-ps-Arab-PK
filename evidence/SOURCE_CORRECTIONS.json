@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0352; three B063 source repairs disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T02:16:09.464198+00:00",
+  "status": "adopted through OLP-0355; five B064 source repairs disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T02:36:52.019474+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6806,6 +6806,227 @@
       ],
       "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-005",
+      "unit_id": "OLP-0353",
+      "classification": "wrong-result-term-name",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:14-16",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 20,
+      "target_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source names H as the sought term for f although H has already been assigned to h. The target names the new term F, as all subsequent equations do.",
+      "reason": "The source names H as the sought term for f although H has already been assigned to h. The target names the new term F, as all subsequent equations do.",
+      "counterexample": "If the new term remained H, the same symbol would be fixed simultaneously as a term defining h and the different function f; the later construction explicitly defines F.",
+      "formula_policy": "Change only the inline result-term symbol H to F; preserve the given h-term H.",
+      "qa_math_exception": {
+        "source_only": [
+          "$H$"
+        ],
+        "target_only": [
+          "$F$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/primitive-recursion.tex:14-16",
+        "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:20"
+      ],
+      "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-006",
+      "unit_id": "OLP-0353",
+      "classification": "wrong-recursion-index",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:17-20",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 23,
+      "target_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The step of primitive recursion applies h to the previous index x, not to the parameter z. The target changes that one first argument.",
+      "reason": "The step of primitive recursion applies h to the previous index x, not to the parameter z. The target changes that one first argument.",
+      "counterexample": "Let h(a,b,z)=a, g(z)=0 and z=1. The displayed source gives f(1,1)=1, while primitive recursion and the later numeral equation give f(1,1)=0.",
+      "formula_policy": "Replace only the first argument z of h in the step with x; retain f(x,z) and the parameter tuple.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}f(0,\\vecz)&=g(\\vecz)\\\\f(x+1,\\vecz)&=h(z,f(x,\\vecz),\\vecz).\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}f(0,\\vecz)&=g(\\vecz)\\\\f(x+1,\\vecz)&=h(x,f(x,\\vecz),\\vecz).\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/primitive-recursion.tex:17-20",
+        "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:23"
+      ],
+      "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-007",
+      "unit_id": "OLP-0353",
+      "classification": "primed-definers-in-uncurried-recurrence",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:21-29",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 36,
+      "target_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The displayed full-arity numeral equations should use the just-given terms G-prime and H-prime. The unprimed G and H are subsequently defined as parameter-absorbing terms of different arity.",
+      "reason": "The displayed full-arity numeral equations should use the just-given terms G-prime and H-prime. The unprimed G and H are subsequently defined as parameter-absorbing terms of different arity.",
+      "counterexample": "The text quantifies fresh G-prime and H-prime, yet its purported sufficient condition refers to other G and H. After the later definitions, H takes two inputs and returns a function of z, whereas the first displayed equation applies H to three arguments including z.",
+      "formula_policy": "Add primes only to G and H on the right sides of the full-arity numeral equations; retain the following curried G and H definitions.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}F(\\num{0},\\vecz)&\\equivG(\\vecz)\\\\F(\\overline{n+1},\\vecz)&\\equivH(\\num{n},F(\\num{n},\\vecz),\\vecz)\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}F(\\num{0},\\vecz)&\\equivG'(\\vecz)\\\\F(\\overline{n+1},\\vecz)&\\equivH'(\\num{n},F(\\num{n},\\vecz),\\vecz)\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/primitive-recursion.tex:21-29",
+        "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:36"
+      ],
+      "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-008",
+      "unit_id": "OLP-0353",
+      "classification": "extra-index-applied-to-parameter-function",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_locator": "content/lambda-calculus/introduction/primitive-recursion.tex:32-40",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_line_1based": 49,
+      "target_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "In the parameter-absorbing definition of H(u,v), v represents F(n), a function of z alone. The target applies v to z without the extra u.",
+      "reason": "In the parameter-absorbing definition of H(u,v), v represents F(n), a function of z alone. The target applies v to z without the extra u.",
+      "counterexample": "Choose v=lambda z.z and H-prime(u,y,z)=y. The intended H(u,v)(z) is z; source v(u,z) first applies v to u and then applies the resulting Church numeral to z, generally giving a different term.",
+      "formula_policy": "Delete only the extra argument u from v(u,z), keeping u as the first input of H-prime and all parameter positions intact.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))\\intertext{LOCALIZED$n$}G&=\\lambd[\\vecz][G'(\\vecz)]\\text{LOCALIZED}\\\\H(u,v)&=\\lambd[\\vecz][H'(u,v(u,\\vecz),\\vecz)].\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))\\intertext{LOCALIZED$n$}G&=\\lambd[\\vecz][G'(\\vecz)]\\text{LOCALIZED}\\\\H(u,v)&=\\lambd[\\vecz][H'(u,v(\\vecz),\\vecz)].\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/primitive-recursion.tex:32-40",
+        "ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:49"
+      ],
+      "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-009",
+      "unit_id": "OLP-0355",
+      "classification": "stronger-unassumed-premise-in-minimization-proof",
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+      "source_locator": "content/lambda-calculus/introduction/minimization.tex:33-35",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex",
+      "target_line_1based": 35,
+      "target_sha256": "5223a1afa5b27d57c6e9bc6e15f1fce713c615a5eb0a9de626dd963cbbdbe51a",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The lemma assumes f is lambda-definable, not primitive recursive. The target derives the defining term F from the stated hypothesis.",
+      "reason": "The lemma assumes f is lambda-definable, not primitive recursive. The target derives the defining term F from the stated hypothesis.",
+      "counterexample": "A lambda-definable function may be partial, whereas every primitive-recursive function is total. The proof cannot invoke primitive recursiveness for the arbitrary f quantified by the lemma.",
+      "formula_policy": "Correct only the prose premise; preserve every displayed expression and fixed-point equation.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRO-CLOSURE",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/minimization.tex:33-35",
+        "ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:35"
+      ],
+      "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -6813,7 +7034,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Advance OLP-0353 onward and report checked source findings to manager; keep frozen source unchanged.",
+  "next_action": "Advance OLP-0356 onward and report checked source findings to manager; keep frozen source unchanged.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

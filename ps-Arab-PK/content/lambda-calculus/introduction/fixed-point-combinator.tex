@@ -1,0 +1,41 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: fixed-point-combinator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{fix}
+\olsection{د ثابت ټکي ترکيب کوونکي}
+
+فرض کړئ يو لامبډا ترم $g$ لرئ او داسې بل ترم $k$ غواړئ چې $k$ له
+$gk$ سره $\beta$-هم‌ارزه وي۔ زموږ د نښيز دود له مخې ترمونه
+\[
+\fn{diag}(x) = xx
+\]
+او
+\[
+l(x) = g(\fn{diag}(x))
+\]
+تعريف کړئ؛ په بله وينا، $l$ ترم $\lambd[x][g(xx)]$ دے۔ فرض کړئ
+$k$ ترم $ll$ وي۔ نو لرو
+\begin{align*}
+k & = (\lambd[x][g(xx)])(\lambd[x][g(xx)]) \\
+& \red  g((\lambd[x][g(xx)])(\lambd[x][g(xx)])) \\
+& = gk.
+\end{align*}
+که
+\[
+Y = \lambd[g][((\lambd[x][g(xx)])(\lambd[x][g(xx)]))]
+\]
+واخلو، نو $Yg$ او $g(Yg)$ يو ګډ ترم ته تقليلېږي؛ ځکه نو $Yg
+\equiv_\beta g(Yg)$۔ دا ``د کري ترکيب کوونکے'' بلل کېږي۔ که د دې
+پر ځاے
+\[
+Y = (\lambd[xg][g(xxg)])(\lambd[xg][g(xxg)])
+\]
+واخلو، نو په رښتيا $Yg$، $g(Yg)$ ته تقليلېږي، چې تر دې پياوړې
+خبره ده۔ د $Y$ دا وروستۍ بڼه ``د تورينګ ترکيب کوونکے'' بلل کېږي۔
+
+\end{document}

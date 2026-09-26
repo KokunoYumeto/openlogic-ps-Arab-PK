@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 352 of 722 source units are translated drafts. This log contains 183 terminology entries and 269 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 355 of 722 source units are translated drafts. This log contains 184 terminology entries and 274 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1650,6 +1650,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د چرچ شمېرنښه; لامبډا عدد; تکراري عددنښه
 - Review question: In Pakistani Pashto mathematical prose, is «د چرچ عددنښه / تکراروونکے / لامبډا-تعريفېدونکې جزوي تابع» the clearest conventional rendering of “Church numeral / iterator / lambda-definable partial function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B063 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-FIXED-POINT-SEARCH
+
+- Type: terminology
+- Choice: د ثابت ټکي ترکيب کوونکے / د کري او تورينګ ترکيب کوونکي / نامحدوده کمينه‌موندنه
+- Uncertainty: fixed-point vocabulary shares earlier mathematics usage and function language has regional support; the exact combinator and minimization compounds remain provisional
+- Alternatives: د ټاکلي ټکي ترکيب کوونکے; د کري او تورينګ کمبينېټرونه; بې‌حده پلټنه
+- Review question: In Pakistani Pashto mathematical prose, is «د ثابت ټکي ترکيب کوونکے / د کري او تورينګ ترکيب کوونکي / نامحدوده کمينه‌موندنه» the clearest conventional rendering of “fixed-point combinator / Curry and Turing combinators / unbounded minimization” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B064 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -4017,6 +4026,51 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLLAM-004 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B063 owner source review before cumulative acceptance
+
+## DEC-OLLAM-005
+
+- Type: source-correction
+- Choice: The source names H as the sought term for f although H has already been assigned to h. The target names the new term F, as all subsequent equations do.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-005 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B064 owner source review before cumulative acceptance
+
+## DEC-OLLAM-006
+
+- Type: source-correction
+- Choice: The step of primitive recursion applies h to the previous index x, not to the parameter z. The target changes that one first argument.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-006 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B064 owner source review before cumulative acceptance
+
+## DEC-OLLAM-007
+
+- Type: source-correction
+- Choice: The displayed full-arity numeral equations should use the just-given terms G-prime and H-prime. The unprimed G and H are subsequently defined as parameter-absorbing terms of different arity.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-007 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B064 owner source review before cumulative acceptance
+
+## DEC-OLLAM-008
+
+- Type: source-correction
+- Choice: In the parameter-absorbing definition of H(u,v), v represents F(n), a function of z alone. The target applies v to z without the extra u.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-008 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B064 owner source review before cumulative acceptance
+
+## DEC-OLLAM-009
+
+- Type: source-correction
+- Choice: The lemma assumes f is lambda-definable, not primitive recursive. The target derives the defining term F from the stated hypothesis.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-009 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B064 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

@@ -1,0 +1,82 @@
+{
+  "translated_partial_units": 3,
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0353",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_sha256": "63c816a9fc922ba9e08740c2680a9ed3e35666c8bf871234b5f9bccefad1cbca",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$H$",
+        "\\begin{align*}f(0,\\vecz)&=g(\\vecz)\\\\f(x+1,\\vecz)&=h(z,f(x,\\vecz),\\vecz).\\end{align*}",
+        "\\begin{align*}F(\\num{0},\\vecz)&\\equivG(\\vecz)\\\\F(\\overline{n+1},\\vecz)&\\equivH(\\num{n},F(\\num{n},\\vecz),\\vecz)\\end{align*}",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))\\intertext{LOCALIZED$n$}G&=\\lambd[\\vecz][G'(\\vecz)]\\text{LOCALIZED}\\\\H(u,v)&=\\lambd[\\vecz][H'(u,v(u,\\vecz),\\vecz)].\\end{align*}"
+      ],
+      "math_target_only": [
+        "$F$",
+        "\\begin{align*}f(0,\\vecz)&=g(\\vecz)\\\\f(x+1,\\vecz)&=h(x,f(x,\\vecz),\\vecz).\\end{align*}",
+        "\\begin{align*}F(\\num{0},\\vecz)&\\equivG'(\\vecz)\\\\F(\\overline{n+1},\\vecz)&\\equivH'(\\num{n},F(\\num{n},\\vecz),\\vecz)\\end{align*}",
+        "\\begin{align*}F(\\num0)&\\equivG\\\\F(\\overline{n+1})&\\equivH(\\num{n},F(\\num{n}))\\intertext{LOCALIZED$n$}G&=\\lambd[\\vecz][G'(\\vecz)]\\text{LOCALIZED}\\\\H(u,v)&=\\lambd[\\vecz][H'(u,v(\\vecz),\\vecz)].\\end{align*}"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0354",
+      "source_path": "content/lambda-calculus/introduction/fixed-point-combinator.tex",
+      "target_sha256": "3766b38e17e8c8283e8c317b1aa755b679460c20e7957099c2260cafb0880efe",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0355",
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "target_sha256": "5223a1afa5b27d57c6e9bc6e15f1fce713c615a5eb0a9de626dd963cbbdbe51a",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    }
+  ]
+}
