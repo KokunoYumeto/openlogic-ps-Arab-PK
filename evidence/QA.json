@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 365,
-    "structural_pass": 365,
+    "draft_units": 368,
+    "structural_pass": 368,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B070-LAMBDA-BETA-REDUCTION",
+  "batch": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11454,6 +11454,100 @@
         "OLLAM-032"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0366",
+      "path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "translation_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-033",
+        "OLLAM-034"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0367",
+      "path": "content/lambda-calculus/church-rosser/church-rosser.tex",
+      "source_sha256": "f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5",
+      "translation_sha256": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0368",
+      "path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "translation_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "CR",
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "CR",
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-035",
+        "OLLAM-036"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -14618,6 +14712,36 @@
       "passage": "beta-equivalence and extension",
       "reverse_paraphrase": "The seven rules generate a compatible equivalence containing contraction. It is equivalent to a finite chain of forward and backward contraction steps. A later extra rule X will define an extended relation.",
       "finding": "All seven math clauses and the indexed extension macro remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "passage": "eta contraction and reduction",
+      "reverse_paraphrase": "Eta contraction removes lambda x from lambda x.Mx only when x is absent from M's free variables. Beta-eta reduction permits zero or more beta and eta contraction steps.",
+      "finding": "The target states the condition near the introductory example, preserves the formal side condition and distinguishes one step from reflexive-transitive closure."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "passage": "extensionality theorem",
+      "reverse_paraphrase": "If two lambda terms agree after application to a fresh argument, extensionality equates them. Eta equality and extensional equality coincide; the proof establishes both inclusions.",
+      "finding": "The target preserves all formulas and the source's two malformed ext notations, disclosed by OLLAM-034; no fresh-variable hypothesis is lost."
+    },
+    {
+      "unit_id": "OLP-0367",
+      "passage": "Church--Rosser chapter title and imports",
+      "reverse_paraphrase": "This chapter is about the Church--Rosser property and imports five source sections in order.",
+      "finding": "Title localized; five import identifiers and chapter hook exact. The draft is not a complete reader chapter yet."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "passage": "diamond and normal-form uniqueness",
+      "reverse_paraphrase": "A diamond joins two reductions from one term. If a normal form exists, it is unique; confluence alone does not guarantee that a normal form exists.",
+      "finding": "The target distinguishes existence from uniqueness in adjacent Pashto and preserves the arithmetic fork and all math."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "passage": "grid theorem",
+      "reverse_paraphrase": "For two finite reduction paths, each small square of a grid has a common successor. The bottom-right term is then reachable from both path endpoints, proving transitive closure has the Church--Rosser property.",
+      "finding": "Indices, bounds and arrow directions are unchanged; OLLAM-036 explains the source's late endpoint names."
     }
   ],
   "builds": [

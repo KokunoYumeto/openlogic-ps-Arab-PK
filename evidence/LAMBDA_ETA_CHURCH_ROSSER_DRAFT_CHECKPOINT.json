@@ -1,0 +1,71 @@
+{
+  "schema": "ps-lambda-eta-church-rosser-draft/1",
+  "utc": "2026-09-26T20:06:58.823455+00:00",
+  "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+  "status": "three accepted editable drafts; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0366",
+      "path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "translation_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "source_correction_ids": [
+        "OLLAM-033",
+        "OLLAM-034"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0367",
+      "path": "content/lambda-calculus/church-rosser/church-rosser.tex",
+      "source_sha256": "f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5",
+      "translation_sha256": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0368",
+      "path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "translation_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "source_correction_ids": [
+        "OLLAM-035",
+        "OLLAM-036"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_drafts": 365,
+    "current_reviewed_drafts": 3,
+    "cumulative_drafts": 368,
+    "remaining_untranslated": 354,
+    "public_reader_units": 321,
+    "published_source_snapshot_units": 362
+  },
+  "evidence": {
+    "reconciliation_sha256": "62fc962fb423c8c8e32e60e11840bac5f3ba48c311d33dc81d496ba232a1cd9f",
+    "source_audit_sha256": "926b938a4e8b9a8af7ea03e86144d1b0cca3ebb7487b8470c834ddce51b56c51",
+    "source_check_sha256": "25812b833c71713b34ae416d1bb701cf9df20e397e8e973bc666396640e04ae5",
+    "consultation_sha256": "922678b9958d3f6c7034359ddad0a92abe94a31dbb92a824bb04a767f072a29c",
+    "source_corrections_sha256": "d27273ef1dcb9f67af7391f08980004e03f77aada6e91f7b0cfa6ae580625e2a",
+    "staging_qa_sha256": "c29b6f7dbb1f204ba978562a67a05738c5d399cdc65dbac7c1d66f019c992e51",
+    "corpus_qa_sha256": "ba1ed3010c9c16a96e3a9e24d58f1881963816f0f9a4bb47624142bcd2730e98",
+    "qa_sha256": "4aba5c501aebc6dc79d3ec1b690a575de9ff0b51c7b3492194d2d3e48a3b19ab",
+    "alignment_sha256": "ef620b187cec4e89b9c476739919c0cb00bbb4c9aeae4861bb1df4305d561e5a",
+    "canon_use_sha256": "264063b0397baeaf5bb8ae6bf04fe2494088aa2f76287dc54d868454e02cf91b",
+    "accepted_builds_sha256": "9be5d4eca81de725d8ec738076f9eb74a2723e423b1494dae44a000f83b7d448",
+    "canonical_decisions_sha256": "4d2338645388e7c1cfe3c176c1162e31a96259682de7ef509b50a82a5f318a92",
+    "canonical_qa_sha256": "c1e2c95fcea5ff714f5e5e9c093015ddce5dbb06182eda1de02272a7c8e6879b",
+    "canonical_replay_sha256": "cd0bb83e75d619f568d22ce8e368e1f4833aa84396d1474cbaa74a38ae33e8f2"
+  },
+  "render_status": "The three new draft units were not separately rendered; the Church--Rosser chapter driver still imports four untranslated sections. The unchanged 321-unit v0.7 PDF and EPUB remain the accepted public reader.",
+  "next_action": "Commit and push B071, anonymously read back the new main-branch bytes, then audit OLP-0369 and continue all 354 untranslated units."
+}

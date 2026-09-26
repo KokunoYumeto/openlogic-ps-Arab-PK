@@ -2616,3 +2616,31 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Clarification: State that normal forms are unique if they exist, rather than suggesting every term has a normal form.
 - Evidence: The self-reproducing beta-redex in this section can contract forever and supplies no reachable normal form.
 - All formulas and identifiers are unchanged; the condition is disclosed in adjacent Pashto prose.
+
+## OLLAM-033
+
+- واحد: OLP-0366.
+- ثابته سرچينه: content/lambda-calculus/syntax/eta.tex:12-23 (SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:18 (SHA-256 2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a).
+- د سرچينې دقيقې رياضيکي نښې او پېژندونکي ساتل شوي دي؛ اړوند سپيناوی د پښتو متن تر څنګ ورکړل شوے دے.
+
+## OLLAM-034
+
+- واحد: OLP-0366.
+- ثابته سرچينه: content/lambda-calculus/syntax/eta.tex:69-83 (SHA-256 a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76 (SHA-256 2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a).
+- د سرچينې دقيقې رياضيکي نښې او پېژندونکي ساتل شوي دي؛ اړوند سپيناوی د پښتو متن تر څنګ ورکړل شوے دے.
+
+## OLLAM-035
+
+- واحد: OLP-0368.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/definitions-and-properties.tex:21-26 (SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:26 (SHA-256 9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e).
+- د سرچينې دقيقې رياضيکي نښې او پېژندونکي ساتل شوي دي؛ اړوند سپيناوی د پښتو متن تر څنګ ورکړل شوے دے.
+
+## OLLAM-036
+
+- واحد: OLP-0368.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83 (SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82 (SHA-256 9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e).
+- د سرچينې دقيقې رياضيکي نښې او پېژندونکي ساتل شوي دي؛ اړوند سپيناوی د پښتو متن تر څنګ ورکړل شوے دے.

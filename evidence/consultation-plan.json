@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B070-LAMBDA-BETA-REDUCTION",
-  "status": "OLP-0365 source-reviewed and staged; exact twenty-block, formula, identifier and macro parity QA passes",
+  "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+  "status": "OLP-0366–0368 source-reviewed and staged; exact 18/7/16-block formula, identifier and macro parity QA passes",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7762,6 +7762,57 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0366": {
+      "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY"
+      ],
+      "terms": [
+        "TERM-LAMBDA-ETA-EXTENSIONALITY",
+        "TERM-LAMBDA-BETA-STRATEGY",
+        "TERM-FUNCTION-EXTENSIONALITY",
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+      ],
+      "scope": "All 18 paired eta blocks: vacuous-abstraction side condition, one-step eta contraction, reflexive-transitive beta-eta closure, equality extensions, fresh-variable extensionality, theorem, and both proof directions. OLLAM-033 and 034 disclose source omissions/notation. Pakistani prose and grammar govern style; Afghan function pages are regional concept comparators only.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0367": {
+      "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+        "TERM-LAMBDA-REDUCTION-CURRYING"
+      ],
+      "scope": "All seven paired chapter-driver blocks: localize only the Church--Rosser title while preserving five imports and the end hook. Pakistani scholarly style and grammar guide the title; exact technical name remains provisional.",
+      "allowed_residual_english": []
+    },
+    "OLP-0368": {
+      "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-LAMBDA-BETA-STRATEGY"
+      ],
+      "scope": "All 16 paired definition-and-properties blocks: diamond relation, conditional uniqueness of normal forms, arithmetic fork, transitive-closure theorem and indexed grid proof. OLLAM-035 and 036 disclose implicit conditions/endpoints. Pakistani prose and grammar govern idiom; Afghan equality/function pages are regional comparators, not attestations of Church--Rosser terminology.",
+      "allowed_residual_english": [
+        "CR",
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10926,6 +10977,36 @@
       "passage": "beta-equivalence and extension",
       "reverse_paraphrase": "The seven rules generate a compatible equivalence containing contraction. It is equivalent to a finite chain of forward and backward contraction steps. A later extra rule X will define an extended relation.",
       "finding": "All seven math clauses and the indexed extension macro remain unchanged."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "passage": "eta contraction and reduction",
+      "reverse_paraphrase": "Eta contraction removes lambda x from lambda x.Mx only when x is absent from M's free variables. Beta-eta reduction permits zero or more beta and eta contraction steps.",
+      "finding": "The target states the condition near the introductory example, preserves the formal side condition and distinguishes one step from reflexive-transitive closure."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "passage": "extensionality theorem",
+      "reverse_paraphrase": "If two lambda terms agree after application to a fresh argument, extensionality equates them. Eta equality and extensional equality coincide; the proof establishes both inclusions.",
+      "finding": "The target preserves all formulas and the source's two malformed ext notations, disclosed by OLLAM-034; no fresh-variable hypothesis is lost."
+    },
+    {
+      "unit_id": "OLP-0367",
+      "passage": "Church--Rosser chapter title and imports",
+      "reverse_paraphrase": "This chapter is about the Church--Rosser property and imports five source sections in order.",
+      "finding": "Title localized; five import identifiers and chapter hook exact. The draft is not a complete reader chapter yet."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "passage": "diamond and normal-form uniqueness",
+      "reverse_paraphrase": "A diamond joins two reductions from one term. If a normal form exists, it is unique; confluence alone does not guarantee that a normal form exists.",
+      "finding": "The target distinguishes existence from uniqueness in adjacent Pashto and preserves the arithmetic fork and all math."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "passage": "grid theorem",
+      "reverse_paraphrase": "For two finite reduction paths, each small square of a grid has a common successor. The bottom-right term is then reachable from both path endpoints, proving transitive closure has the Church--Rosser property.",
+      "finding": "Indices, bounds and arrow directions are unchanged; OLLAM-036 explains the source's late endpoint names."
     }
   ]
 }

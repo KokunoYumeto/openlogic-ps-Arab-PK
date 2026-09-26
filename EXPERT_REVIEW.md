@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 365 of 722 source units are translated drafts. This log contains 190 terminology entries and 297 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 368 of 722 source units are translated drafts. This log contains 192 terminology entries and 301 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1713,6 +1713,22 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: راکمېدونکے مورد; کيڼ‌لومړۍ تګلاره; بېټا-برابري
 - Review question: Do redex, leftmost strategy and beta-equivalence remain distinct from one-step contraction and multi-step reduction in Pakistani Pashto?
 - Timing: contemporaneous B070 owner source review and visually inspected Pakistani Pashto language consultation
+
+## TERM-LAMBDA-ETA-EXTENSIONALITY
+
+- Type: terminology
+- Choice: اېټا-بدلون / اېټا-انقباض او اېټا-پراختيا / بېټااېټا-راکمول / د قيمتونو له مخې برابري
+- Uncertainty: Pakistani prose and reference grammar inspected; Afghan function-extensionality and substitution pages are regional concept comparators. The exact untyped-lambda compounds remain source-led and provisional.
+- Review question: Eta contraction removes a vacuous abstraction only when the bound variable is not free in the function term. Beta-eta reduction closes both contraction kinds reflexively and transitively. Lambda extensionality compares behavior at one fresh argument; use the existing function-value phrasing, not the set-membership extensionality term. Keep the source's ext notation inconsistency visible in an adjacent note.
+- Timing: contemporaneous B071 owner source review and visually inspected Pakistani/regional canon
+
+## TERM-LAMBDA-CHURCH-ROSSER-DIAMOND
+
+- Type: terminology
+- Choice: د چرچ--روسر خاصيت / ګډ راکمېدونکے ترم / د راکمول جال / د عادي بڼې يکتايي
+- Uncertainty: Pakistani prose and grammar inspected; Afghan relation/function pages are regional comparators only. No inspected native page attests the exact Church--Rosser or reduction-grid compounds.
+- Review question: The diamond property joins two successors to a common successor. This entails uniqueness of a normal form only if one exists; it does not imply termination or existence. An indexed grid of local diamonds proves the transitive closure is also Church--Rosser. Preserve all arrow directions, endpoint indices and bounds.
+- Timing: contemporaneous B071 owner source review and visually inspected Pakistani/regional canon
 
 ## DEC-OLFUN-001
 
@@ -4332,6 +4348,38 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal uniqueness sentence; adjacent source-confirmed existence qualification
 - Review question: Does the note state uniqueness only when a normal form exists?
 - Timing: contemporaneous B070 owner source review before cumulative acceptance
+
+## DEC-OLLAM-033
+
+- Type: source-correction
+- Choice: The introductory statement that lambda x.fx is the same function as f needs x not free in f; the following definition supplies this condition.
+- Evidence: The eta contraction display itself requires x not in FV(M).
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B071 owner source review before cumulative acceptance
+
+## DEC-OLLAM-034
+
+- Type: source-correction
+- Choice: Disclose the source's bare ext notation in two proof math spans while retaining the formulas literally.
+- Evidence: The earlier definition and theorem use the ext macro and indexed equality with that macro.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B071 owner source review before cumulative acceptance
+
+## DEC-OLLAM-035
+
+- Type: source-correction
+- Choice: Qualify the computational gloss: any reachable normal result is unique only if it exists.
+- Evidence: The same source explicitly states the existence condition at lines 39-48.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B071 owner source review before cumulative acceptance
+
+## DEC-OLLAM-036
+
+- Type: source-correction
+- Choice: Explain that P and Q name the endpoints of the two displayed paths, first named in the proof's final sentence.
+- Evidence: The proof previously displays only P_m and Q_n, then calls N_m0 P and N_0n Q.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B071 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

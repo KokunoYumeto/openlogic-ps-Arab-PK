@@ -1,0 +1,94 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: eta
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{eta}
+\olsection{$\eta$-بدلون}
+
+د $\lambda$ ترمونو ترمنځ يوه بله اړيکه هم شته۔ په \olref[fv]{sec} کښې مو
+د $\lambd[x][(fx)]$ بېلګه کارولې وه: دا يو آرګومېنټ اخلي او $f$ پرې
+تطبيقوي۔ په بله وينا، دا هماغه تابع ده چې~$f$ ده: $\lambd[x][(fx)]N$
+او $fN$ دواړه~$fN$ ته راکمېږي۔ د همدې مفکورې د څرګندولو دپاره
+$\eta$-راکمول او $\eta$-پراختيا کاروو۔ د برابروالي په دې بېلګه کښې
+د تجريد تړلے متغير د تابع په ازادو متغيرونو کښې نۀ وي؛ لاندې تعريف
+دا شرط په څرګنده ټاکي۔ \textbf{د سرچينې سپيناوی (OLLAM-033):}
+د سرچينې په لومړنۍ وينا کښې دا شرط نۀ دے ويل شوے۔
+
+\begin{defn}[$\eta$-انقباض، $\eredone$]
+  \ollabel{defn:beredone}
+  \emph{$\eta$-انقباض} ($\eredone$) پر ترمونو تر ټولو کوچنۍ سازګاره
+  اړيکه ده چې لاندې شرط پوره کوي:
+  \[
+    \lambd[x][M x] \eredone M \text{ که } x \notin FV(M)
+  \]
+\end{defn}
+
+\begin{defn}[$\beta\eta$-راکمول، $\bered$] \ollabel{defn:bered}
+  \emph{$\beta\eta$-راکمول} ($\bered$) پر ترمونو تر ټولو کوچنۍ
+  انعکاسي او انتقالي اړيکه ده چې $\bredone$ او $\eredone$ پکې
+  شاملې دي؛ يعنې د انعکاس او انتقال د قواعدو ترڅنګ لاندې دوه
+  قاعدې هم لري:
+  \begin{enumerate}
+  \item که $M \bredone N$ وي، نو $M \bered N$۔ \ollabel{defn:bered3}
+  \item که $M \eredone N$ وي، نو $M \bered N$۔ \ollabel{defn:bered4}
+  \end{enumerate}
+    
+\end{defn}
+
+\begin{defn}
+  د $\equal$ معادلتوبي اړيکه د $\eta$-بدلون په دې قاعده غځوو:
+  \[
+  \lambd[x][f x] \equal f
+  \]
+  او غځېدلې اړيکه $\equal[\eta]$ ليکو۔
+\end{defn}
+
+$\eta$-معادلتوب ځکه مهم دے چې د لامبډا ترمونو د قيمتونو له مخې
+برابروالي سره تړاو لري:
+
+\begin{defn}[د قيمتونو له مخې برابري]
+  د $\equal$ معادلتوبي اړيکه د (\ext) قاعدې په زياتولو غځوو:
+  \begin{center}
+  که $Mx \equal Nx$ وي، نو $M \equal N$، په دې شرط چې $x \notin FV(MN)$ وي۔
+  \end{center}
+  او غځېدلې اړيکه $\equal[\ext]$ ليکو۔
+\end{defn}
+
+په لنډه وينا، قاعده وايي چې که دوه ترمونه د تابعو په توګه د يوه او
+هماغه آرګومېنټ دپاره يو شان چلند کوي، نو بايد برابر وګڼل شي۔
+
+اوس ثابتوو چې د $\eta$ قاعده د قيمتونو له مخې برابروالي هماغه
+اندازه برابروي او تر هغې زيات څۀ نۀ ورزياتوي۔
+
+\begin{thm}
+  $M \equal[\ext] N$ هله او يوازې هله چې $M \equal[\eta] N$۔
+\end{thm}
+
+\begin{proof}
+  لومړے ثابتوو چې $\equal[\eta]$ د قيمتونو له مخې برابروالي د
+  قاعدې په وړاندې تړلې ده؛ يعنې د $ext$ قاعده په $\equal[\eta]$
+  کښې څۀ نۀ زياتوي۔ له دې امله $\equal[\eta]$، $\equal[\ext]$
+  رانغاړي؛ نو که $M \equal[\ext] N$ وي، $M \equal[\eta] N$ هم وي۔
+  \textbf{د سرچينې د نښو يادونه (OLLAM-034):} د ثبوت په ځينو
+  ځايونو کښې د غځېدلې اړيکې نښه بې‌چپې کرښې ليکل شوې؛ دلته د
+  اصلي نسخې رياضيکي نښې ساتل شوې دي او مطلب هماغه قاعده ده۔
+
+  د دې د ثابتولو دپاره چې $\equal[\eta]$ د \ext{} قاعدې په وړاندې
+  تړلې ده، پام وکړئ: د هر هغه $M \equal N$ دپاره چې د \ext{} قاعدې
+  له لارې ترلاسه شي، $Mx \equal[\eta] Nx$ د هغې مقدمه ده۔ بيا د
+  $\equal$ د يوې قاعدې له مخې $\lambd[x][Mx] \equal[\eta]
+  \lambd[x][Nx]$ لرو؛ دواړو خواوو ته د $\eta$ په کارولو سره
+  $M \equal[\eta] N$ ترلاسه کوو۔
+
+  په همدې ډول ثابتوو چې د $\eta$ قاعده په $\equal[ext]$ کښې
+  شامله ده۔ د هر $\lambd[x][Mx]$ او $M$ دپاره چې $x \notin
+  FV(M)$ وي، لرو چې $(\lambd[x][Mx])x \equal[\ext] Mx$؛
+  له دې څخه د \ext{} قاعدې له مخې $\lambd[x][Mx] \equal[\ext] M$
+  ترلاسه کېږي۔
+\end{proof}
+
+\end{document}

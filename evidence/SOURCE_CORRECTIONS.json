@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0365; B070 normal-form existence qualification disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T18:22:59.361248+00:00",
+  "status": "adopted through OLP-0368; B071 four adjacent lambda source clarifications disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T19:57:07.840889+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -8049,6 +8049,174 @@
       "later_source_sha256": "ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2",
       "decision_timing": "contemporaneous B070 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-033",
+      "unit_id": "OLP-0366",
+      "classification": "eta-introduction-free-variable-condition-implicit",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "source_locator": "content/lambda-calculus/syntax/eta.tex:12-23",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+      "target_line_1based": 18,
+      "target_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "The introductory statement that lambda x.fx is the same function as f needs x not free in f; the following definition supplies this condition.",
+      "reason": "The eta contraction display itself requires x not in FV(M).",
+      "counterexample": "The variable x could occur free in an arbitrary function term, so removing lambda x would change the function.",
+      "formula_policy": "All math spans, labels and identifiers remain source-equivalent; the side condition is stated only in adjacent Pashto prose.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/eta.tex:12-23",
+        "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:18"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-034",
+      "unit_id": "OLP-0366",
+      "classification": "extensionality-notation-inconsistent",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "source_locator": "content/lambda-calculus/syntax/eta.tex:69-83",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+      "target_line_1based": 76,
+      "target_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "Disclose the source's bare ext notation in two proof math spans while retaining the formulas literally.",
+      "reason": "The earlier definition and theorem use the ext macro and indexed equality with that macro.",
+      "counterexample": "The bare math letters ext render as an unlabelled variable product rather than the intended named rule or index.",
+      "formula_policy": "All source math spans, including the inconsistent ones, are preserved verbatim; the Pashto note supplies their intended referent.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/eta.tex:69-83",
+        "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-035",
+      "unit_id": "OLP-0368",
+      "classification": "church-rosser-normal-form-existence-implicit",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "source_locator": "content/lambda-calculus/church-rosser/definitions-and-properties.tex:21-26",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "target_line_1based": 26,
+      "target_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "Qualify the computational gloss: any reachable normal result is unique only if it exists.",
+      "reason": "The same source explicitly states the existence condition at lines 39-48.",
+      "counterexample": "A divergent reduction may have no normal form even though its reduction relation is confluent.",
+      "formula_policy": "All formulas and identifiers remain source-equivalent; the condition is stated in adjacent Pashto prose.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/church-rosser/definitions-and-properties.tex:21-26",
+        "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:26"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-036",
+      "unit_id": "OLP-0368",
+      "classification": "grid-proof-endpoint-names-late",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "source_locator": "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "target_line_1based": 82,
+      "target_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "Explain that P and Q name the endpoints of the two displayed paths, first named in the proof's final sentence.",
+      "reason": "The proof previously displays only P_m and Q_n, then calls N_m0 P and N_0n Q.",
+      "counterexample": "Without the endpoint identification, a reader could read P and Q as undefined independent terms.",
+      "formula_policy": "All math spans, bounds and arrows remain source-equivalent; an adjacent Pashto note explains the endpoint names.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83",
+        "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -8056,7 +8224,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Continue OLP-0366 onward; retain beta-reduction formula parity and the conditional normal-form claim.",
+  "next_action": "Continue OLP-0369 onward; preserve frozen formulas and develop the next coherent Church--Rosser reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -8113,7 +8281,8 @@
     "OLI-PS300-QUANTIFIER-CALLS-20260921",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
-    "PS-OWNER-SEMANTIC-20260926-LAMBDA-BETA-REDUCTION"
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-BETA-REDUCTION",
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER"
   ],
   "source_authorities": [
     {

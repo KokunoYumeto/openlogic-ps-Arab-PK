@@ -1,0 +1,135 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-26T19:57:07.840889+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+  "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0366",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_bytes": 2962,
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+      "target_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "source_role": "reader_unit"
+    },
+    {
+      "unit_id": "OLP-0367",
+      "source_path": "content/lambda-calculus/church-rosser/church-rosser.tex",
+      "source_bytes": 385,
+      "source_sha256": "f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/church-rosser.tex",
+      "target_sha256": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "source_role": "chapter_driver"
+    },
+    {
+      "unit_id": "OLP-0368",
+      "source_path": "content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "source_bytes": 3491,
+      "source_sha256": "8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex",
+      "target_sha256": "9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "source_role": "reader_unit"
+    }
+  ],
+  "notes_path": "work/B071_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "7c167c595da40bb235e0d1dbcc7df0eb8c25e566225b7650f0737daad272aa00",
+  "consultation_path": "work/B071_CANON_CONSULTATION.md",
+  "consultation_sha256": "922678b9958d3f6c7034359ddad0a92abe94a31dbb92a824bb04a767f072a29c",
+  "staging_qa_sha256": "c29b6f7dbb1f204ba978562a67a05738c5d399cdc65dbac7c1d66f019c992e51",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P25-EXTENSIONALITY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 36,
+      "printed_page": "25",
+      "page_image_sha256": "944e54697b890da03d0e89f2236cd100b8947d3df2c1280c0299cb53fcb34ca3",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0366",
+      "source_lines": "12-24",
+      "kind": "eta-free-variable-condition",
+      "action": "OLLAM-033",
+      "finding": "The intro omits the free-variable side condition stated by the following formal definition."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "source_lines": "37-67",
+      "kind": "eta-extensionality-equivalence",
+      "finding": "The two rule extensions are shown equivalent by two containments; the extensionality rule requires a fresh argument variable."
+    },
+    {
+      "unit_id": "OLP-0366",
+      "source_lines": "69-85",
+      "kind": "ext-notation-inconsistency",
+      "action": "OLLAM-034",
+      "finding": "The source math uses ext without the earlier notation's backslash in two places; original formulas stay literal with an adjacent notice."
+    },
+    {
+      "unit_id": "OLP-0367",
+      "source_lines": "9-15",
+      "kind": "chapter-driver",
+      "finding": "The title is localized and all five imports stay in source order."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "source_lines": "12-48",
+      "kind": "diamond-and-conditional-normal-form",
+      "action": "OLLAM-035",
+      "finding": "The computation gloss is qualified by the existence condition already explicit later in the source."
+    },
+    {
+      "unit_id": "OLP-0368",
+      "source_lines": "50-83",
+      "kind": "grid-proof-endpoints",
+      "action": "OLLAM-036",
+      "finding": "The proof constructs the common-successor grid; P and Q denote its path endpoints, first named only in the final sentence."
+    }
+  ],
+  "formula_policy": "Frozen source unchanged; staged math, identifiers, environments and paragraph counts pass exact parity, allowing localization of English text arguments.",
+  "unresolved": "Exact Pakistani Pashto eta and Church--Rosser technical labels remain unattested in inspected native pages; choices are provisional. The chapter driver imports four sections still to translate.",
+  "next_executable_action": "Register the four adjacent disclosures, run full corpus QA and canonical decision replay, then checkpoint the three drafts."
+}
