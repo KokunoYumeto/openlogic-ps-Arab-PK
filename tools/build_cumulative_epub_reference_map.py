@@ -83,10 +83,13 @@ def expected_keys() -> set[str]:
     units, _ = epub.load_units()
     keys: set[str] = set()
     for unit in units:
-        overlap = keys & reader.label_keys(unit.text)
+        # TeX comments may contain draft labels. They do not enter the PDF
+        # AUX and must not become EPUB destinations.
+        unit_keys = reader.label_keys(epub.strip_comments(unit.text))
+        overlap = keys & unit_keys
         if overlap:
             raise ValueError(f"duplicate content labels: {sorted(overlap)[:8]}")
-        keys.update(reader.label_keys(unit.text))
+        keys.update(unit_keys)
     if len(keys) != EXPECTED_REFERENCES:
         raise ValueError(
             f"expected {EXPECTED_REFERENCES} content labels, found {len(keys)}"
@@ -96,6 +99,7 @@ def expected_keys() -> set[str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--through-unit", type=int, choices=(255, 321), default=255)
     parser.add_argument("--primary-aux", type=Path, required=True)
     parser.add_argument("--replay-aux", type=Path, required=True)
     parser.add_argument("--primary-pdf", type=Path, required=True)
@@ -103,6 +107,12 @@ def main() -> None:
     parser.add_argument("--pdf-record-path", required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    global EXPECTED_REFERENCES
+    if args.through_unit == 321:
+        EXPECTED_REFERENCES = 785
+        reader.EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, 322)]
+        epub.THROUGH_UNIT = 321
+        epub.CHAPTER_COUNT = 31
 
     primary_aux = args.primary_aux.resolve()
     replay_aux = args.replay_aux.resolve()
@@ -137,8 +147,8 @@ def main() -> None:
         "status": "accepted_pdf_numbering_replayed",
         "scope": {
             "first_unit": "OLP-0001",
-            "last_unit": "OLP-0255",
-            "unit_count": 255,
+            "last_unit": f"OLP-{args.through_unit:04d}",
+            "unit_count": args.through_unit,
         },
         "accepted_pdf": {
             "path": args.pdf_record_path,

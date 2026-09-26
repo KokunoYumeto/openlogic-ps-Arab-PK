@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -57,8 +58,27 @@ def load_inventory(path: Path) -> list[dict]:
 
 
 def document(body: str) -> str:
+    # A source figure contains two diagrams stacked inside center. The
+    # standalone class typesets its body in LR mode, where center/paragraph
+    # breaks are invalid. Pack the two original diagrams vertically in one
+    # TeX box so the SVG preserves their order and needs only one PDF page.
+    if body.count(r"\begin{tikzpicture}") == 2:
+        pattern = (
+            r"\s*\\begin\{center\}\s*"
+            r"(\\begin\{tikzpicture\}.*?\\end\{tikzpicture\})"
+            r"\\\\\s*"
+            r"(\\begin\{tikzpicture\}.*?\\end\{tikzpicture\})"
+            r"\s*\\end\{center\}\s*"
+        )
+        match = re.fullmatch(pattern, body, re.DOTALL)
+        if not match:
+            raise ValueError("unexpected two-diagram figure structure")
+        body = (
+            r"\vbox{\hbox{" + match.group(1) + r"}"
+            r"\kern1em\hbox{" + match.group(2) + r"}}"
+        )
     upstream = (ROOT / "upstream").as_posix()
-    return rf"""\documentclass[tikz,border=3pt]{{standalone}}
+    return rf"""\documentclass[border=3pt]{{standalone}}
 \usepackage{{fontspec}}
 \setmainfont[Script=Arabic]{{Amiri}}
 \newfontfamily\latinfont{{Latin Modern Roman}}
@@ -306,6 +326,7 @@ def convert(inventory_path: Path, build_dir: Path, output_dir: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--expected-figures", type=int, choices=(20, 31), default=20)
     parser.add_argument("--inventory", type=Path, required=True)
     parser.add_argument("--build-dir", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path)
@@ -313,6 +334,8 @@ def main() -> None:
         "--phase", choices=("prepare", "convert"), required=True
     )
     args = parser.parse_args()
+    global EXPECTED_FIGURES
+    EXPECTED_FIGURES = args.expected_figures
     if args.phase == "prepare":
         prepare(args.inventory.resolve(), args.build_dir.resolve())
     else:

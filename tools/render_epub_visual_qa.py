@@ -35,6 +35,16 @@ CASES = (
     ("turing-state-machine", "chapter-25.xhtml", ".figure", 4),
 )
 
+V070_CASES = (
+    ("undecidability-diagram", "chapter-26.xhtml", ".figure", 0),
+    ("incompleteness-introduction", "chapter-27.xhtml", ".semantic.defn", 0),
+    ("syntax-arithmetization-proof", "chapter-28.xhtml", ".proof-tree", 1),
+    ("syntax-arithmetization-derivation", "chapter-28.xhtml", ".derivation", 0),
+    ("representation-theorem", "chapter-29.xhtml", ".semantic.thm", 0),
+    ("theory-computability", "chapter-30.xhtml", ".semantic.thm", 0),
+    ("incompleteness-theorem", "chapter-31.xhtml", ".semantic.thm", 0),
+)
+
 VIEWPORTS = (
     ("wide", 1440, 1100),
     ("reader", 768, 1024),
@@ -46,6 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--base-url", required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--browser", type=Path, required=True)
+    parser.add_argument("--through-unit", type=int, choices=(255, 321), default=255)
     return parser.parse_args()
 
 
@@ -53,6 +64,7 @@ def main() -> None:
     args = parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     records: list[dict[str, object]] = []
+    cases = CASES + (V070_CASES if args.through_unit == 321 else ())
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(
@@ -69,7 +81,7 @@ def main() -> None:
                 "**/favicon.ico",
                 lambda route: route.fulfill(status=204, content_type="image/x-icon"),
             )
-            for name, document, selector, index in CASES:
+            for name, document, selector, index in cases:
                 page = context.new_page()
                 console_errors: list[str] = []
                 page_errors: list[str] = []
@@ -157,6 +169,7 @@ def main() -> None:
 
     receipt = {
         "schema": "openlogic-ps-Arab-PK-epub-visual-qa/2",
+        "through_unit": args.through_unit,
         "browser": {"executable": str(args.browser), "version": browser_version},
         "cases": records,
     }

@@ -74,6 +74,11 @@ TOKENS.update(
         ),
         "computably enumerable": ("په محاسبوي ډول د شمېر وړ",) * 4,
         "c.e.": ("c.e.",) * 4,
+        "axiomatizability": ("د محاسبوي بديهي کېدو وړتيا",) * 4,
+        "axiomatizable": ("په محاسبوي ډول بديهي کېدونکې",) * 4,
+        "axiomatized": ("بديهي‌کړې",) * 4,
+        "decidable": ("د پرېکړې وړ",) * 4,
+        "represents": ("تمثيل",) * 4,
     }
 )
 base.TOKENS = TOKENS
@@ -253,6 +258,9 @@ def expand_tokens(text: str) -> str:
         return TOKENS[key][3 if plural else 2]
 
     text = oblique.sub(replace_oblique, text)
+    # One inherited Pashto sentence uses the verb token without a following
+    # light verb; the other occurrences deliberately add کوي/کړي/کول.
+    text = text.replace("!!{represents}~$D$", "تمثيلوي~$D$")
     text = base.expand_tokens(text)
 
     def replace_printtoken(match: re.Match[str]) -> str:
@@ -388,6 +396,9 @@ def render_external_references(
     pattern = re.compile(r"\\(?P<command>olref|Olref)((?:\[[^\]]*\]){0,3})\{([^}]+)\}")
 
     def replace(match: re.Match[str]) -> str:
+        line_start = text.rfind("\n", 0, match.start()) + 1
+        if text[line_start:match.start()].lstrip().startswith("%"):
+            return match.group(0)
         options = re.findall(r"\[([^\]]*)\]", match.group(2))
         key = base.reference_key(part, chapter, section, options, match.group(3))
         if key in selected_labels:
@@ -568,18 +579,23 @@ def prepare_unit(text: str, rows: list[dict], row: dict) -> tuple[str, Counter, 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--build-dir", type=Path, required=True)
+    parser.add_argument("--through-unit", type=int, default=255)
+    parser.add_argument("--preamble", type=Path, default=ROOT / "tools" / "cumulative-reader-preamble.tex")
     args = parser.parse_args()
     build_dir = args.build_dir.resolve()
     build_dir.mkdir(parents=True, exist_ok=True)
+    if args.through_unit not in (255, 321):
+        raise ValueError("supported cumulative reader boundaries are OLP-0255 and OLP-0321")
+    expected_ids = [f"OLP-{number:04d}" for number in range(1, args.through_unit + 1)]
 
     rows = [
         json.loads(line)
         for line in MANIFEST.read_text(encoding="utf-8-sig").splitlines()
         if line.strip()
     ]
-    selected = rows[:255]
-    if [row["unit_id"] for row in selected] != EXPECTED_IDS:
-        raise ValueError("manifest does not contain exact OLP-0001..OLP-0255 sequence")
+    selected = rows[:args.through_unit]
+    if [row["unit_id"] for row in selected] != expected_ids:
+        raise ValueError(f"manifest does not contain exact OLP-0001..OLP-{args.through_unit:04d} sequence")
     if any(row["source_commit"] != UPSTREAM_REVISION for row in selected):
         raise ValueError("source revision mismatch")
 
@@ -643,7 +659,9 @@ def main() -> None:
         rendered.append(body)
         external_counts.update(counts)
 
-    preamble = ROOT / "tools" / "cumulative-reader-preamble.tex"
+    preamble = args.preamble.resolve()
+    if not preamble.is_file() or not preamble.is_relative_to(ROOT):
+        raise ValueError("reader preamble must be a file inside this repository")
     generated = (
         preamble.read_text(encoding="utf-8")
         .replace("OLP_UPSTREAM_PATH", (ROOT / "upstream").as_posix())
@@ -688,7 +706,7 @@ def main() -> None:
         "schema": "openlogic-ps-Arab-PK-cumulative-reader-inputs/1",
         "status": "prepared",
         "source_revision": UPSTREAM_REVISION,
-        "unit_range": {"first": "OLP-0001", "last": "OLP-0255", "count": 255},
+        "unit_range": {"first": "OLP-0001", "last": f"OLP-{args.through_unit:04d}", "count": args.through_unit},
         "profile": "frozen upstream default: FOL, all primitive connectives and quantifiers, all proof systems, TMs, lambda, novice, math, computer-science and philosophy examples",
         "profile_resolution": {
             "active_tags": sorted(ACTIVE_TAGS),
@@ -772,7 +790,7 @@ def main() -> None:
         json.dumps(
             {
                 "status": "prepared",
-                "reader_units": 255,
+                "reader_units": args.through_unit,
                 "parts": len(part_ids),
                 "chapters": len(chapter_ids),
                 "segments": len(selected_segment_ids),

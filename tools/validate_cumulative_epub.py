@@ -115,6 +115,19 @@ def descendant_count(element: ET.Element, tag: str) -> int:
 def main() -> None:
     args = parse_args()
     build_record = json.loads(args.build_record.read_text(encoding="utf-8"))
+    global CHAPTERS, XHTML_DOCUMENTS, FIGURES, REQUIRED_MEMBERS
+    chapter_count = build_record["scope"]["chapter_count"]
+    figure_count = build_record["validation"]["figures"]
+    unit_count = build_record["scope"]["unit_count"]
+    require((unit_count, chapter_count, figure_count) in {(255, 25, 20), (321, 31, 31)}, "Unsupported cumulative EPUB scope")
+    CHAPTERS = [f"chapter-{number:02d}.xhtml" for number in range(1, chapter_count + 1)]
+    XHTML_DOCUMENTS = ["title.xhtml", "nav.xhtml", *CHAPTERS]
+    FIGURES = [f"figure-{number:03d}.svg" for number in range(1, figure_count + 1)]
+    REQUIRED_MEMBERS = {
+        "mimetype", "META-INF/container.xml", "EPUB/package.opf", "EPUB/styles.css",
+        *(f"EPUB/{name}" for name in XHTML_DOCUMENTS),
+        *(f"EPUB/images/{name}" for name in FIGURES),
+    }
     reference_map = json.loads(args.reference_map.read_text(encoding="utf-8"))
     epub_sha256 = sha256_file(args.epub)
     epub_bytes = args.epub.stat().st_size
@@ -170,17 +183,17 @@ def main() -> None:
         require(spine.attrib.get("page-progression-direction") == "rtl", "Spine is not RTL")
         spine_ids = [item.attrib["idref"] for item in spine.findall(f"{O}itemref")]
         require(
-            spine_ids == ["title", *(f"chapter-{number:02d}" for number in range(1, 26))],
+            spine_ids == ["title", *(f"chapter-{number:02d}" for number in range(1, chapter_count + 1))],
             "Unexpected spine order",
         )
         require(
             manifest.get("nav", {}).get("properties") == "nav",
             "Navigation document is not identified in the manifest",
         )
-        for number in range(1, 26):
+        for number in range(1, chapter_count + 1):
             properties = manifest[f"chapter-{number:02d}"].get("properties", "").split()
             require("mathml" in properties, f"Chapter {number} lacks manifest MathML property")
-        for number in range(1, 21):
+        for number in range(1, figure_count + 1):
             item = manifest.get(f"figure-{number:03d}", {})
             require(
                 item.get("href") == f"images/figure-{number:03d}.svg"
@@ -243,6 +256,10 @@ def main() -> None:
                     formal_direction_failures.append(
                         {"document": document, "classes": " ".join(sorted(token_set))}
                     )
+                if "equation-number" in token_set and element.attrib.get("dir") != "ltr":
+                    formal_direction_failures.append(
+                        {"document": document, "classes": " ".join(sorted(token_set))}
+                    )
                 if element.tag == f"{X}table" and element.attrib.get("dir") not in {"ltr", "rtl"}:
                     table_direction_failures.append(document)
                 if element.tag == f"{X}img":
@@ -298,8 +315,8 @@ def main() -> None:
                             f"{figure} contains an external resource reference",
                         )
 
-        expected_units = [f"OLP-{number:04d}" for number in range(1, 256)]
-        require(sorted(unit_anchors) == expected_units, "Source-unit anchors do not cover OLP-0001..OLP-0255")
+        expected_units = [f"OLP-{number:04d}" for number in range(1, unit_count + 1)]
+        require(sorted(unit_anchors) == expected_units, "Source-unit anchors do not cover the declared scope")
         require(all(count == 1 for count in unit_anchors.values()), "Source-unit anchor is duplicated")
         require(
             all(boundaries == {"start": 1, "end": 1} for boundaries in segment_boundaries.values()),
@@ -359,7 +376,7 @@ def main() -> None:
     require(internal_links == build_record["validation"]["internal_links"], "Internal-link count mismatch")
     require(external_links == build_record["validation"]["external_links"], "External-link count mismatch")
     require(
-        len(image_sources) == build_record["validation"]["figures"] == 20,
+        len(image_sources) == build_record["validation"]["figures"] == figure_count,
         "Figure count mismatch",
     )
     require(len(segment_boundaries) == build_record["scope"]["semantic_segment_count"], "Segment count mismatch")

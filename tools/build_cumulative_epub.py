@@ -1,4 +1,4 @@
-"""Build the deterministic reflowable EPUB 3 reader for OLP-0001..OLP-0255."""
+"""Build deterministic reflowable EPUB 3 cumulative readers."""
 
 from __future__ import annotations
 
@@ -35,6 +35,7 @@ LANGUAGE = "ps-Arab-PK"
 CHAPTER_COUNT = 25
 EXPECTED_SEGMENTS = 2683
 EXPECTED_FIGURES = 20
+THROUGH_UNIT = 255
 XHTML_NS = "http://www.w3.org/1999/xhtml"
 EPUB_NS = "http://www.idpf.org/2007/ops"
 MATHML_NS = "http://www.w3.org/1998/Math/MathML"
@@ -104,6 +105,8 @@ PANDOC_MACROS = r"""
 \newcommand{\Domain}[1]{\ensuremath{\left|\mathfrak{#1}\right|}}
 \newcommand{\Assign}[2]{\ensuremath{#1^{\mathfrak{#2}}}}
 \newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\openTuple}{\langle}
+\newcommand{\closeTuple}{\rangle}
 \newcommand{\Setabs}[2]{\ensuremath{\{#1:#2\}}}
 \newcommand{\equivrep}[2]{\ensuremath{[#1]_{#2}}}
 \newcommand{\equivclass}[2]{\ensuremath{#1/_{\!#2}}}
@@ -128,6 +131,7 @@ PANDOC_MACROS = r"""
 \newcommand{\funimage}[2]{#1[#2]}
 \newcommand{\ran}[1]{\operatorname{ran}(#1)}
 \newcommand{\dom}[1]{\operatorname{dom}(#1)}
+\newcommand{\lcm}{\operatorname{lcm}}
 \newcommand{\pto}{\rightharpoonup}
 \newcommand{\fdefined}{\mathord{\downarrow}}
 \newcommand{\fundefined}{\mathord{\uparrow}}
@@ -153,6 +157,8 @@ PANDOC_MACROS = r"""
 \newcommand{\concat}{\frown}
 \newcommand{\Th}[1]{\mathbf{#1}}
 \newcommand{\gn}[1]{\ulcorner #1\urcorner}
+\newcommand{\scode}[1]{\mathrm{c}_{#1}}
+\newcommand{\Gn}[1]{{}^{\#}#1^{\#}}
 \newcommand{\nszero}{\mathbf{z}}
 \newcommand{\nssucc}{*}
 \newcommand{\nsplus}{\oplus}
@@ -455,7 +461,7 @@ def load_units() -> tuple[list[Unit], dict]:
         alignment_by_unit.setdefault(row["unit_id"], []).append(row)
     selected = manifest_rows[: len(reader.EXPECTED_IDS)]
     if [row["unit_id"] for row in selected] != reader.EXPECTED_IDS:
-        raise ValueError("manifest does not contain exact OLP-0001..OLP-0255 sequence")
+        raise ValueError(f"manifest does not contain exact OLP-0001..OLP-{THROUGH_UNIT:04d} sequence")
     if any(row["source_commit"] != reader.UPSTREAM_REVISION for row in selected):
         raise ValueError("source revision mismatch")
 
@@ -520,6 +526,9 @@ def load_units() -> tuple[list[Unit], dict]:
             "sth:ord-arithmetic::chap": 1,
         }
     )
+    if THROUGH_UNIT == 321:
+        del expected_external["inc:req:min:lem:less-nsucc"]
+        del expected_external["inc:req:min:lem:less-zero"]
     if external_counts != expected_external:
         raise ValueError(f"external reference count mismatch: {external_counts}")
 
@@ -592,8 +601,8 @@ def load_reference_map() -> tuple[dict, dict[str, dict]]:
     references = record["references"]
     if record["scope"] != {
         "first_unit": "OLP-0001",
-        "last_unit": "OLP-0255",
-        "unit_count": 255,
+        "last_unit": f"OLP-{THROUGH_UNIT:04d}",
+        "unit_count": THROUGH_UNIT,
     }:
         raise ValueError("reference map has the wrong cumulative scope")
     if record["reference_count"] != len(references) or not references:
@@ -609,6 +618,7 @@ def build_reference_targets(
         r"\\phantomsection\\label\{olpseg:([^}:]+-[^}:]+):start\}"
     )
     for unit in units:
+        unit_text = strip_comments(unit.text)
         if unit.role == "part":
             part_key = f"{unit.part}:::part"
             targets[part_key] = (unit.document_name, anchor_slug(part_key))
@@ -616,19 +626,19 @@ def build_reference_targets(
             chapter_key = f"{unit.part}:{unit.chapter}::chap"
             targets[chapter_key] = (unit.document_name, anchor_slug(chapter_key))
         elif unit.role == "section" and re.search(
-            r"\\olsection(?:\[[^\]]*\])?\{", unit.text
+            r"\\olsection(?:\[[^\]]*\])?\{", unit_text
         ):
             section_key = f"{unit.part}:{unit.chapter}:{unit.section}:sec"
             targets[section_key] = (unit.document_name, anchor_slug(section_key))
 
         starts = [
             (match.start(), match.group(1))
-            for match in segment_start_pattern.finditer(unit.text)
+            for match in segment_start_pattern.finditer(unit_text)
         ]
         if not starts:
             raise ValueError(f"{unit.unit_id} has no semantic segment anchors")
         positions = [position for position, _ in starts]
-        for match in re.finditer(r"\\ollabel\{([^}]+)\}", unit.text):
+        for match in re.finditer(r"\\ollabel\{([^}]+)\}", unit_text):
             index = bisect.bisect_right(positions, match.start()) - 1
             if index < 0:
                 raise ValueError(f"{unit.unit_id} label precedes first segment")
@@ -640,7 +650,7 @@ def build_reference_targets(
                 unit.document_name,
                 segment_anchor(segment_id, "start"),
             )
-        for match in re.finditer(r"\\label\{([^}]+)\}", unit.text):
+        for match in re.finditer(r"\\label\{([^}]+)\}", unit_text):
             key = match.group(1)
             if key.startswith("olpseg:"):
                 continue
@@ -848,6 +858,26 @@ def replace_source_structure(text: str, unit: Unit, state: TransformState) -> st
     text = re.sub(
         r"\\label\{olpseg:([^}:]+-[^}:]+):end\}", end_anchor, text
     )
+
+    def numbered_equation(body: str, _: int) -> str:
+        labels = re.findall(r"\\ollabel\{([^}]+)\}", body)
+        if not labels:
+            return r"\begin{equation}" + body + r"\end{equation}"
+        if len(labels) != 1:
+            raise ValueError(f"unexpected equation labels in {unit.unit_id}: {labels}")
+        key = f"{unit.part}:{unit.chapter}:{unit.section}:{labels[0]}"
+        if key not in state.reference_map:
+            raise ValueError(f"equation label lacks accepted PDF number: {key}")
+        number = state.reference_map[key]["number"]
+        state.stats["numbered_equations"] += 1
+        marker = state.tokens.html(
+            '<span class="equation-number" dir="ltr">('
+            + html.escape(number)
+            + ")</span>"
+        )
+        return r"\begin{equation}" + body + r"\end{equation}" + "\n" + marker + "\n"
+
+    text = replace_environment(text, "equation", numbered_equation)
     text = re.sub(r"\\ollabel\{[^}]+\}", "", text)
     text = re.sub(r"\\label\{[^}]+\}", "", text)
 
@@ -1479,14 +1509,20 @@ def register_figure(
         source_kind = "olasset"
         source_path = asset_matches[0]
         render_tex = rf"\input{{{source_path}}}"
-    elif tikz_count == 1:
+    elif tikz_count >= 1:
+        if tikz_count > 1 and (unit.unit_id != "OLP-0266" or tikz_count != 2):
+            raise ValueError(f"unexpected grouped TikZ figure in {unit.unit_id}")
         source_kind = "inline_tikz"
         source_path = None
         start = tex_body.index(r"\begin{tikzpicture}")
-        end_start, end = find_environment_end(
-            tex_body, "tikzpicture", start
-        )
+        cursor = start
+        for _ in range(tikz_count):
+            begin = tex_body.index(r"\begin{tikzpicture}", cursor)
+            _, end = find_environment_end(tex_body, "tikzpicture", begin)
+            cursor = end
         render_tex = tex_body[start:end]
+        if tikz_count > 1:
+            render_tex = "\\begin{center}\n" + render_tex + "\n\\end{center}"
     else:
         raise ValueError(f"figure in {unit.unit_id} has no renderable diagram")
     render_tex = re.sub(r"EPUBANCHOR\d{8}TOKEN", "", render_tex)
@@ -1880,12 +1916,12 @@ def expand_optional_notation(text: str) -> str:
 
     text = replace_command(text, "mModel", modal_model_handler)
 
-    def optional_operator(name: str, operator: str) -> None:
+    def optional_operator(name: str, operator: str, font: str = "mathsf") -> None:
         nonlocal text
 
         def handler(source: str, index: int) -> tuple[str, int]:
             subscript, cursor = read_optional(source, index)
-            result = rf"\mathsf{{{operator}}}"
+            result = rf"\{font}{{{operator}}}"
             if subscript is not None:
                 result += rf"_{{{subscript}}}"
             return result, cursor
@@ -1893,7 +1929,14 @@ def expand_optional_notation(text: str) -> str:
         text = replace_command(text, name, handler)
 
     optional_operator("OCon", "Con")
+    optional_operator("Prf", "Prf", "mathrm")
     optional_operator("OPrf", "Prf")
+    optional_operator("Refut", "Ref", "mathrm")
+    optional_operator("ORefut", "Ref")
+    optional_operator("Prov", "Prov", "mathrm")
+    optional_operator("OProv", "Prov")
+    optional_operator("RProv", "RProv", "mathrm")
+    optional_operator("ORProv", "RProv")
 
     def cfind_handler(source: str, index: int) -> tuple[str, int]:
         function_index, cursor = read_mandatory(source, index)
@@ -2194,6 +2237,7 @@ def normalize_math_emphasis(text: str) -> str:
     for environment in (
         "align",
         "align*",
+        "equation",
         "aligned",
         "array",
         "cases",
@@ -2246,6 +2290,7 @@ def transform_unit(unit: Unit, state: TransformState) -> str:
         "quote",
         "align",
         "align*",
+        "equation",
         "aligned",
         "eqnarray*",
         "gather*",
@@ -2532,8 +2577,8 @@ def title_page(translated_bundle_units: int) -> bytes:
             "ټيورينګ ماشينونو لومړنۍ پېژندګلو شامل دي۔"
         ),
         (
-            "دا جزوي لوستونکی 255 سرچينيز واحدونه (OLP-0001 تر "
-            "OLP-0255) لري؛ د 722 واحدونو بشپړه ژباړه لا روانه "
+            f"دا جزوي لوستونکی {THROUGH_UNIT} سرچينيز واحدونه (OLP-0001 تر "
+            f"OLP-{THROUGH_UNIT:04d}) لري؛ د 722 واحدونو بشپړه ژباړه لا روانه "
             f"ده او تر اوسه {translated_bundle_units} واحدونه په "
             "ژباړل شوي بنډل کښې شته۔"
         ),
@@ -2563,7 +2608,7 @@ def title_page(translated_bundle_units: int) -> bytes:
     p1.text = (
         "Independent Pashto (Pakistan) translation of Open Logic "
         f"Project revision {reader.UPSTREAM_REVISION}. This reader "
-        "contains 255 source units (OLP-0001 through OLP-0255). "
+        f"contains {THROUGH_UNIT} source units (OLP-0001 through OLP-{THROUGH_UNIT:04d}). "
         "Pakistani usage is primary; Afghan Pashto sources are "
         "labelled regional comparators. Specialist terminology "
         "remains openly reviewable where exact native technical "
@@ -2916,6 +2961,11 @@ blockquote.tableau li { margin: 0.45em 0; }
 math {
   max-width: none;
 }
+.equation-number {
+  display: block;
+  text-align: left;
+  margin-top: -0.7em;
+}
 table {
   border-collapse: collapse;
   margin: 1em auto;
@@ -3245,12 +3295,17 @@ def build(args: argparse.Namespace) -> None:
     (tree / "EPUB" / "styles.css").write_text(
         STYLESHEET, encoding="utf-8", newline="\n"
     )
+    edition_scope = (
+        "cumulative-through-incompleteness"
+        if THROUGH_UNIT == 321
+        else "cumulative-through-computability"
+    )
     identifier = "urn:uuid:" + str(
         uuid.uuid5(
             uuid.NAMESPACE_URL,
             "https://github.com/KokunoYumeto/"
             "openlogic-ps-Arab-PK/"
-            f"cumulative-through-computability/{EDITION_VERSION}",
+            f"{edition_scope}/{EDITION_VERSION}",
         )
     )
     (tree / "EPUB" / "package.opf").write_bytes(
@@ -3309,7 +3364,7 @@ def build(args: argparse.Namespace) -> None:
         "edition_version": EDITION_VERSION,
         "scope": {
             "first_unit": "OLP-0001",
-            "last_unit": "OLP-0255",
+            "last_unit": f"OLP-{THROUGH_UNIT:04d}",
             "unit_count": len(units),
             "chapter_count": CHAPTER_COUNT,
             "semantic_segment_count": (
@@ -3425,6 +3480,8 @@ def build(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--through-unit", type=int, choices=(255, 321), default=255)
+    parser.add_argument("--reference-map", type=Path)
     parser.add_argument(
         "--build-dir", type=Path, required=True
     )
@@ -3432,7 +3489,25 @@ def main() -> None:
     parser.add_argument(
         "--figures-dir", type=Path, required=True
     )
-    build(parser.parse_args())
+    args = parser.parse_args()
+    global REFERENCE_MAP_PATH, EDITION_VERSION, EDITION_MODIFIED
+    global EPUB_NAME, SUBTITLE, CHAPTER_COUNT, EXPECTED_SEGMENTS
+    global EXPECTED_FIGURES, THROUGH_UNIT
+    THROUGH_UNIT = args.through_unit
+    reader.EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, THROUGH_UNIT + 1)]
+    if THROUGH_UNIT == 321:
+        EDITION_VERSION = "0.7.0"
+        EDITION_MODIFIED = "2026-09-25T00:00:00Z"
+        EPUB_NAME = "openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.epub"
+        SUBTITLE = "له بنسټونو تر محاسبويت او د نيمګړتيا تر قضيو"
+        CHAPTER_COUNT = 31
+        EXPECTED_SEGMENTS = 3414
+        EXPECTED_FIGURES = 31
+        if args.reference_map is None:
+            parser.error("--reference-map is required for OLP-0321")
+    if args.reference_map is not None:
+        REFERENCE_MAP_PATH = args.reference_map.resolve()
+    build(args)
 
 
 if __name__ == "__main__":
