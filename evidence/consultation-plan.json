@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
-  "status": "OLP-0376–0377 source-reviewed and staged; 22 paired blocks, one exact arity correction and four reverse-paraphrase samples",
+  "batch_id": "PS-B076-LAMBDA-PRIMITIVE-RECURSIVE-FUNCTIONS",
+  "status": "OLP-0378 source-reviewed and staged; 21 paired blocks, three exact formula corrections and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7965,6 +7965,22 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0378": {
+      "batch_id": "PS-B076-LAMBDA-PRIMITIVE-RECURSIVE-FUNCTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-PRIMITIVE-RECURSION",
+        "TERM-LAMBDA-CHURCH-NUMERALS"
+      ],
+      "scope": "All 21 paired primitive-recursion proof blocks: basis, composition, closure under primitive recursion, state-pair induction and conclusion. OLLAM-052–054 make three exact formula repairs; Pakistani prose and grammar govern usage, with Afghan function prose labelled only as a regional comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11303,6 +11319,36 @@
       "passage": "zero test and Boolean operators",
       "reverse_paraphrase": "IsZero remains true only when the iterator makes zero steps; Not reverses selectors, And yields y only if x is true, and non-Boolean inputs need not return a truth value.",
       "finding": "All displayed terms and the Boolean-input caveat are retained."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "passage": "basis",
+      "reverse_paraphrase": "Zero, successor and each projection are represented by the displayed lambda terms.",
+      "finding": "The three basic terms and projection order remain literal."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "passage": "composition",
+      "reverse_paraphrase": "A k-place outer function f composed with k n-place inner functions g_0 through g_{k−1} is represented by H and yields a lambda-definable function h.",
+      "finding": "OLLAM-052/053 repair the last G index and the function/term name in the conclusion; construction and totality caveat stay aligned."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "passage": "primitive-recursion recurrence",
+      "reverse_paraphrase": "The base case is f of the fixed parameters, and the next value applies step function g to the parameters, stage index and prior h value.",
+      "finding": "OLLAM-054 repairs only the erroneous h on the right side of the source recurrence."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "passage": "state pair induction",
+      "reverse_paraphrase": "Church numeral m iterates D from pair (0,F n); the first component tracks the stage, the second h at that stage; induction proves pair (m,h(n,m)).",
+      "finding": "Base and successor cases, G's three inputs, reduction arrows and pair order are retained."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "passage": "closure proposition",
+      "reverse_paraphrase": "The final second projection returns the encoded h value; basis and closure under composition and primitive recursion yield all primitive recursive functions.",
+      "finding": "Final long calculation and all lemma references remain literal."
     }
   ]
 }

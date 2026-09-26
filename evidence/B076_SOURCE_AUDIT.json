@@ -1,0 +1,87 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-26T21:23:03.208822+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PRIMITIVE-RECURSION",
+  "batch_id": "PS-B076-LAMBDA-PRIMITIVE-RECURSIVE-FUNCTIONS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0378",
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "source_bytes": 5835,
+      "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a",
+      "paired_blocks": 21
+    }
+  ],
+  "notes_path": "work/B076_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "5a0a6d7f9ffd9ff8c122583e3c6146ac78f0a6ec746257b141eac847945d4ede",
+  "consultation_path": "work/B076_CANON_CONSULTATION.md",
+  "consultation_sha256": "1330efd9f364dc896c7e3ca94e9f485b2b97003d39ec9767e9bcbc3383d24695",
+  "staging_qa_sha256": "f0b58051daf44b5d4034aba238c5ab02f0c35e431ecc06f3860c69ed92aef94c",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0378",
+      "source_lines": "10-29",
+      "kind": "basic-lambda-representatives",
+      "finding": "Zero, successor and projection lambda terms are retained literally under the existing primitive-recursion terminology decision."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "source_lines": "31-36",
+      "kind": "composition-last-representative-index",
+      "action": "OLLAM-052",
+      "finding": "The source ends the representative list at G_k despite k inner functions indexed 0 through k−1; one exact inline symbol is corrected."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "source_lines": "31-36",
+      "kind": "composition-conclusion-term-vs-function",
+      "action": "OLLAM-053",
+      "finding": "The source calls representing term H lambda-definable when the statement concerns function h; one exact inline symbol is corrected."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "source_lines": "57-73",
+      "kind": "primitive-recursion-step-function",
+      "action": "OLLAM-054",
+      "finding": "The source places h at n+2 arguments on the recurrence right side, contradicting the assumed step function g and the proof's g application; one exact align math span is corrected."
+    },
+    {
+      "unit_id": "OLP-0378",
+      "source_lines": "75-149",
+      "kind": "pair-iteration-induction-and-closure",
+      "finding": "State pair, base case, induction step, final reduction and closure proposition retain their formulas, labels and reference targets."
+    }
+  ],
+  "formula_policy": "Exactly three enumerated math spans (OLLAM-052–054) are corrected. All other formulas, identifiers, structural macros and term tokens remain source-equivalent. Frozen English bytes are unchanged.",
+  "unresolved": "The source chapter is experimental and later imports remain untranslated. No human specialist approval is claimed; exact lambda-composition terminology remains provisional.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0378, then continue fixed points at OLP-0379."
+}

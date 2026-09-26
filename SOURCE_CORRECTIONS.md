@@ -2749,3 +2749,24 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/lambda-definability/truth-values.tex:24-33 (SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/truth-values.tex:34 (SHA-256 2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616).
 - د اړيکې د ځايونو شمېر په سرچينه کښې n دے، خو د استازي ترم دواړه تطبيقونه k آرګومېنټونه لري. يوازې د شمېر کښته نښه سمه شوې او د R د دوه‌ګوني کارونې سپيناوی ورکړل شوے دے.
+
+## OLLAM-052
+
+- واحد: OLP-0378.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36 (SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:37 (SHA-256 cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a).
+- پرېکړه: Use G-sub-(k−1) as the last representative for inner functions indexed 0 through k−1. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-053
+
+- واحد: OLP-0378.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36 (SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:37 (SHA-256 cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a).
+- پرېکړه: State that composed function h, rather than representing term H, is lambda-definable. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-054
+
+- واحد: OLP-0378.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 (SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:76 (SHA-256 cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a).
+- پرېکړه: Use g as the recurrence step function on the right side of the successor equation. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.

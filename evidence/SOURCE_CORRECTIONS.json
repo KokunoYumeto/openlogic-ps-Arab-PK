@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0377; B075 one exact relation-arity correction; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T21:09:47.345772+00:00",
+  "status": "adopted through OLP-0378; B076 three exact composition/recurrence formula repairs; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T21:23:03.208822+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -8879,6 +8879,144 @@
       ],
       "decision_timing": "contemporaneous B075 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-052",
+      "unit_id": "OLP-0378",
+      "classification": "composition-last-representative-index",
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "source_locator": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "target_line_1based": 37,
+      "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Use G-sub-(k−1) as the last representative for inner functions indexed 0 through k−1.",
+      "reason": "The source lists exactly k inner functions and its displayed H construction ends at G-sub-(k−1).",
+      "counterexample": "G-sub-k would be an unprovided (k+1)st representative.",
+      "formula_policy": "Exactly the listed one-pair math span is corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "$G_k$"
+        ],
+        "target_only": [
+          "$G_{k-1}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PRIMITIVE-RECURSION",
+      "audit_artifacts": [
+        "B076_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:37"
+      ],
+      "decision_timing": "contemporaneous B076 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-053",
+      "unit_id": "OLP-0378",
+      "classification": "composition-conclusion-term-vs-function",
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "source_locator": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "target_line_1based": 37,
+      "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "State that composed function h, rather than representing term H, is lambda-definable.",
+      "reason": "The lemma concerns the function formed by composition, while the proof constructs H to represent it.",
+      "counterexample": "Calling H lambda-definable confuses an object-language lambda term with the arithmetic function represented by it.",
+      "formula_policy": "Exactly the listed one-pair math span is corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "$H$"
+        ],
+        "target_only": [
+          "$h$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PRIMITIVE-RECURSION",
+      "audit_artifacts": [
+        "B076_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:31-36",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:37"
+      ],
+      "decision_timing": "contemporaneous B076 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-054",
+      "unit_id": "OLP-0378",
+      "classification": "primitive-recursion-step-function",
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "source_locator": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "target_line_1based": 76,
+      "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Use g as the recurrence step function on the right side of the successor equation.",
+      "reason": "The assumption gives g n+2 inputs and the induction proof computes g(n,m,h(n,m)); h itself has only n+1 inputs.",
+      "counterexample": "The source right side applies h to n+2 arguments, whereas the recursive definition requires the supplied step function g.",
+      "formula_policy": "Exactly the listed one-pair math span is corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}h(x_1,\\dots,x_n,0)&=f(x_1,\\dots,x_n)\\\\h(x_1,\\dots,x_n,y+1)&=h(x_1,\\dots,x_n,y,h(x_1,\\dots,x_n,y)).\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}h(x_1,\\dots,x_n,0)&=f(x_1,\\dots,x_n)\\\\h(x_1,\\dots,x_n,y+1)&=g(x_1,\\dots,x_n,y,h(x_1,\\dots,x_n,y)).\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PRIMITIVE-RECURSION",
+      "audit_artifacts": [
+        "B076_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:76"
+      ],
+      "decision_timing": "contemporaneous B076 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -8886,7 +9024,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0378 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0379 onward while validating the 372-unit coherent reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

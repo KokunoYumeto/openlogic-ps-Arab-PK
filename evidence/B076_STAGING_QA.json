@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b076-staging-qa/1",
+  "unit_id": "OLP-0378",
+  "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+  "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+  "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a",
+  "source_blocks": 21,
+  "target_blocks": 21,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$G_k$",
+    "$H$",
+    "\\begin{align*}h(x_1,\\dots,x_n,0)&=f(x_1,\\dots,x_n)\\\\h(x_1,\\dots,x_n,y+1)&=h(x_1,\\dots,x_n,y,h(x_1,\\dots,x_n,y)).\\end{align*}"
+  ],
+  "target_only_math": [
+    "$G_{k-1}$",
+    "$h$",
+    "\\begin{align*}h(x_1,\\dots,x_n,0)&=f(x_1,\\dots,x_n)\\\\h(x_1,\\dots,x_n,y+1)&=g(x_1,\\dots,x_n,y,h(x_1,\\dots,x_n,y)).\\end{align*}"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

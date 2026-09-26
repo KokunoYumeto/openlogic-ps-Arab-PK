@@ -1,0 +1,25 @@
+{
+  "schema": "ps-b076-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-26T22:11:18.988613+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PRIMITIVE-RECURSION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0378",
+      "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "target_sha256": "cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a"
+    }
+  ],
+  "audit_sha256": "caf504aa6b5f29b804f483ea03f13f4d3a7c1d214308adfb9cbcc38abbe594b7",
+  "notes_sha256": "5a0a6d7f9ffd9ff8c122583e3c6146ac78f0a6ec746257b141eac847945d4ede",
+  "consultation_sha256": "1330efd9f364dc896c7e3ca94e9f485b2b97003d39ec9767e9bcbc3383d24695",
+  "documented_formula_corrections": [
+    "OLLAM-052",
+    "OLLAM-053",
+    "OLLAM-054"
+  ],
+  "other_disclosures": [],
+  "unresolved": "The source chapter is experimental and later imports remain untranslated. No human specialist approval is claimed; exact lambda-composition terminology remains provisional.",
+  "next_action": "Continue lambda-definability translation from OLP-0379; validate the 372-unit reader candidate separately."
+}

@@ -1,0 +1,168 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: primitive-recursive-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{prf}
+\olsection{بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي} 
+
+په ياد ولرئ چې بنسټيزې بازګشتي تابعې هغه دي چې له
+بنسټيزو تابعو $\Zero$، $\Succ$ او $\Proj{n}{i}$ څخه د
+ترکيب او بنسټيز بازګښت په وسيله تعريفېږي۔
+
+\begin{lem}
+  \ollabel{lem:basic}
+  بنسټيزې بازګشتي تابعې $\Zero$، $\Succ$ او
+  پروجکشن تابعې~$\Proj{n}{i}$ !!{lambda definable} دي۔
+\end{lem}
+
+\begin{proof}
+دا تابعې د لاندې ترمونو په وسيله !!{lambda define} کېږي:
+\begin{align*}
+  \fn{Zero} & \ident \lambd[a][\lambd[fx][x]]\\
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f (a f x)]] \\
+  \fn{Proj}^n_i & \ident \lambd[x_0\dots x_{n-1}][x_i]
+\end{align*}
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:comp} فرض کړئ چې $k$-ځايه تابع $f$ او
+  $n$-ځايه تابعې $g_0, \dots, g_{k-1}$ په ترتيب سره د
+  $F$، $G_0$، \dots، او $G_{k-1}$ ترمونو په وسيله
+  !!{lambda definable} دي، او $h$ له هغو څخه د ترکيب
+  په وسيله تعريف شوې ده۔ بيا $h$ هم !!{lambda definable} ده۔
+  \textbf{د سرچينې سمونونه (OLLAM-052، OLLAM-053):}
+  په سرچينه کښې د وروستي استازي ترم کښته نښه او
+  د پايلې تابع نوم د فرضونو له شمېر او ورپسې ثبوت
+  سره نۀ سمون خوري؛ دلته دواړه له هماغو سره برابر دي۔
+\end{lem}
+
+\begin{proof}
+  تابع $h$ د لاندې ترم په وسيله !!{lambda define} کېږي:
+  \[
+  H \ident \lambd[x_0 \dots x_{n-1}][F\, (G_0 x_0 \dots
+    x_{n-1}) \dots (G_{k-1} x_0 \dots x_{n-1})]
+  \]
+  د دې خبرې کره کول د تمرين په توګه پرېږدو۔
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][ldf][prf]{lem:comp} ثبوت پوره کړئ؛
+  وښيئ چې $H\num{n_0}\dots\num{n_{n-1}} \red \num{h(n_0, \dots,
+    n_{n-1})}$۔
+\end{prob}
+
+پام وکړئ چې په \olref{lem:comp} کښې دا نۀ و شرط چې
+$f$ او $g_0$، \dots،~$g_{k-1}$ دې بنسټيزې بازګشتي
+وي؛ يوازې دا شرط و چې بشپړې او !!{lambda definable} وي۔
+
+\begin{lem}\ollabel{lem:prim}
+  فرض کړئ چې $f$ يوه $n$-ځايه تابع او~$g$ يوه
+  $n+2$-ځايه تابع ده، او په ترتيب سره د $F$ او~$G$
+  ترمونو په وسيله !!{lambda definable} دي۔ که تابع~$h$
+  له $f$ او $g$ څخه د بنسټيز بازګښت په وسيله تعريف شوې
+  وي، نو $h$ هم !!{lambda definable} ده۔
+\end{lem}
+
+\begin{proof}
+  په ياد ولرئ چې $h$ داسې تعريفېږي:
+  \begin{align*}
+    h(x_1, \dots, x_n, 0) &= f(x_1, \dots, x_n)\\
+    h(x_1, \dots, x_n, y+1) & = g(x_1, \dots, x_n, y, h(x_1, \dots, x_n, y)).
+  \end{align*}
+  \textbf{د سرچينې سمون (OLLAM-054):} د دويمې معادلې
+  ښي لوري ته په سرچينه کښې د پايلې تابع بيا ليکل شوې،
+  خو د فرض شوې ګامي تابع او لاندې ثبوت له مخې هلته
+  هماغه ګامي تابع پکار ده۔ په نارسمي ډول، د $h$
+  ارزښت د $y$ ګامونو په تېرېدو د ګامي تابع له مخکني
+  ارزښت څخه ترلاسه کېږي، او پيلنی ارزښت
+  $f(x_1, \dots, x_n)$ دے۔ د دې تکراري بڼې او د چرچ
+  عددنښو د تکراروونکي تعريف تر منځ ورته‌والے شته۔
+
+  د اسانۍ دپاره تعريف او ثبوت د يو اضافي آرګومېنټ~$x$
+  په حالت کښې ورکوو۔ تابع $h$ د لاندې ترم په وسيله
+  !!{lambda define} کېږي:
+  \begin{align*}
+    H \ident & \lambd[x][\lambd[y][\fn{Snd} (y
+        D \tuple{\num{0}, F x})]]
+    \intertext{چې پکې }
+    D \ident & \lambd[p][\tuple{\fn{Succ} (\fn{Fst}\, p), (G x
+          (\fn{Fst}\, p) (\fn{Snd}\, p))}]
+  \end{align*}
+  د تکرار ساتلے حالت يوه جوړه ده: لومړے غړے ئې
+  د $y$-ګامي تکرار اوسنے شمېر او دويم ئې د~$h$
+  اړوند ارزښت دے۔
+  د تکرار په هر ګام کښې د $y$ او $h$ له نوو ارزښتونو
+  يوه نوې جوړه جوړوو؛ له تکرار وروسته د جوړې دويم
+  غړے اخلو، او هماغه د $h$ وروستنے ارزښت وي۔ اوس
+  ثابتوو چې دا په رښتيا د بنسټيز بازګښت تمثيل دے۔
+
+  غواړو ثابته کړو چې د هر $n$ او $m$ دپاره
+  $H\,\num{n}\,\num{m} \red \num{h(n,m)}$۔ د دې دپاره
+  لومړے ښيو چې که $D_n \ident \Subst{D}{\num{n}}{x}$
+  وي، نو $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$۔ پر~$m$ استقرا کوو۔
+
+  که $m=0$ وي، بايد $D_n^0 \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{0}, \num{h(n, 0)}}$ وښيو۔ خو
+  $D_n^0 \tuple{\num{0}, F\, \num{n}}$ هماغه
+  $\tuple{\num{0}, F\, \num{n}}$ ده۔ څرنګه چې $F$
+  تابع~$f$ !!{lambda define}s، دا جوړه
+  $\tuple{\num{0}, \num{f(n)}}$ ته راکمېږي؛ او ځکه
+  چې $f(n) = h(n, 0)$، دا هماغه
+  $\tuple{\num{0}, \num{h(n,0)}}$ ده۔
+
+  اوس فرض کړئ چې $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$۔ غواړو وښيو چې
+  $D_n^{m+1} \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m+1}, \num{h(n, m+1)}}$۔
+  \begin{align*}
+    D_n^{m+1} \tuple{\num{0}, F\, \num{n}}
+    & \ident D_n(D_n^{m} \tuple{\num{0}, F\, \num{n}})\\
+    & \red D_n\,\tuple{\num{m}, \num{h(n, m)}} \text{\qquad (by IH)}\\
+    & \ident (\lambd[p][
+      \tuple{
+        \fn{Succ} (\fn{Fst}\, p), (G \, \num{n} (\fn{Fst}\, p) (\fn{Snd}\, p))
+    }]) \tuple{\num{m}, \num{h(n,m)}}\\
+    & \redone
+    \tuple{\fn{Succ} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}),\\
+      & \qquad (G \, \num{n} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}) (\fn{Snd}\, \tuple{\num{m}, \num{h(n,m)}}))}\\
+    & \red 
+    \tuple{\fn{Succ}\, \num{m}, (G \, \num{n} \,\num{m} \, \num{h(n,m)})}\\
+    & \red \tuple{\num{m+1}, \num{g(n, m, h(n, m))}}
+  \end{align*}
+  ځکه چې $g(n, m, h(n, m)) = h(n, m+1)$،
+  غوښتل شوې پايله ترلاسه شوه۔
+
+  په پاې کښې لاندې راکمېدنه وګورئ:
+  \begin{align*}
+    H\,\num n\,\num m &\ident \lambd[x][\lambd[y][\fn{Snd} (y
+        (\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G\, x\,
+          (\fn{Fst}\, p)\, (\fn{Snd}\, p))}) \tuple{\num{0}, F x})]]\\
+    & \qquad\,\num n\, \num m\\
+    & \red \fn{Snd} (\num m \,
+    \underbrace{(\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G \,\num n\,
+      (\fn{Fst}\, p) (\fn{Snd}\, p))})}_{D_n} \tuple{\num{0}, F \num n})\\
+    & \ident \fn{Snd} (\num m \, D_n\, \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \,(D_n^m  \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \,\tuple{\num{m}, \num{h(n, m)}} \\
+    & \red \num{h(n,m)}. 
+  \end{align*}  
+\end{proof}
+
+
+\begin{prop}
+  هره بنسټيزه بازګشتي تابع !!{lambda definable} ده۔
+\end{prop}
+
+\begin{proof}
+  د \olref{lem:basic} له مخې ټولې بنسټيزې تابعې
+  !!{lambda definable} دي، او د \olref{lem:comp}
+  او \olref{lem:prim} له مخې !!{lambda definable}
+  تابعې د ترکيب او بنسټيز بازګښت پر وړاندې تړلې دي۔
+\end{proof}
+
+\end{document}

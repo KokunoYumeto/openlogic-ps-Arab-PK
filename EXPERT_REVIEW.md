@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 377 of 722 source units are translated drafts. This log contains 194 terminology entries and 316 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 378 of 722 source units are translated drafts. This log contains 194 terminology entries and 319 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4516,6 +4516,30 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The source defines R as a subset of N^n but both representation branches and the condition consistently enumerate k arguments.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B075 owner source review before cumulative acceptance
+
+## DEC-OLLAM-052
+
+- Type: source-correction
+- Choice: Use G-sub-(k−1) as the last representative for inner functions indexed 0 through k−1.
+- Evidence: The source lists exactly k inner functions and its displayed H construction ends at G-sub-(k−1).
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B076 owner source review before cumulative acceptance
+
+## DEC-OLLAM-053
+
+- Type: source-correction
+- Choice: State that composed function h, rather than representing term H, is lambda-definable.
+- Evidence: The lemma concerns the function formed by composition, while the proof constructs H to represent it.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B076 owner source review before cumulative acceptance
+
+## DEC-OLLAM-054
+
+- Type: source-correction
+- Choice: Use g as the recurrence step function on the right side of the successor equation.
+- Evidence: The assumption gives g n+2 inputs and the induction proof computes g(n,m,h(n,m)); h itself has only n+1 inputs.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B076 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
