@@ -1,0 +1,93 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-26T21:09:47.345772+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
+  "batch_id": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0376",
+      "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "source_bytes": 1745,
+      "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+      "target_sha256": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "paired_blocks": 10
+    },
+    {
+      "unit_id": "OLP-0377",
+      "source_path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "source_bytes": 3170,
+      "source_sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+      "target_sha256": "2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616",
+      "paired_blocks": 12
+    }
+  ],
+  "notes_path": "work/B075_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "bd4dc242ae2dfd86ddad3dae30f7ec0192a01c6ba4627ba58496f2af252b3708",
+  "consultation_path": "work/B075_CANON_CONSULTATION.md",
+  "consultation_sha256": "b6e08a154eea85366faeaf23c1bb191a2ff59e2f494f50b12e1b090662bf4c20",
+  "staging_qa_sha256": "6ddd91ece0f66a81f5ab89370c4716102dee52f98e94aa65f04c57091dc09c05",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0376",
+      "source_lines": "11-32",
+      "kind": "ordered-pairs-and-projections",
+      "finding": "The ordered pair stores two terms and Fst/Snd choose their respective components; all formulas remain literal."
+    },
+    {
+      "unit_id": "OLP-0376",
+      "source_lines": "34-55",
+      "kind": "predecessor-and-subtraction",
+      "finding": "The state-pair iteration yields (n−1,n) after n positive steps and subtraction applies predecessor b times to a."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "source_lines": "12-22",
+      "kind": "boolean-selector-encoding",
+      "finding": "True chooses the first argument and false the second; all selector formulas remain literal."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "source_lines": "24-33",
+      "kind": "relation-arity-index-mismatch",
+      "action": "OLLAM-051",
+      "finding": "The relation exponent n conflicts with the k indexed arguments; one exact exponent is changed to k and the R relation/term overload is disclosed in adjacent prose."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "source_lines": "35-70",
+      "kind": "zero-negation-conjunction",
+      "finding": "The zero test, negation and conjunction agree with encoded truth values; the non-Boolean-input caveat is retained."
+    }
+  ],
+  "formula_policy": "Only the OLLAM-051 arity exponent R subset N^n to R subset N^k is corrected; all other math, identifiers, structural macros and term tokens remain source-equivalent. Frozen English bytes are unchanged.",
+  "unresolved": "The chapter is experimental and later sections remain untranslated. Exact Pakistani selector and lambda-definable relation terminology is unattested in checked pages.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0376–0377, then continue primitive recursive functions at OLP-0378."
+}

@@ -1,0 +1,57 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: pairs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{pai}
+\olsection{جوړې او مخکنۍ شمېره}
+
+\begin{defn}
+د $M$ او $N$ جوړه (چې $\tuple{M,N}$ ليکل کېږي) داسې تعريفېږي:
+\[
+\tuple{M,N} \ident \lambd[f][fMN].
+\]
+\end{defn}
+  
+په شهودي ډول دا يوه تابع ده چې بله تابع اخلي او هغه
+د جوړې پر دوو غړو تطبيقوي۔ د همدې نظر له مخې لاندې
+جوړوونکے لرو: دوه ترمونه اخلي او د هغو لرونکې جوړه ورکوي:
+\[
+  \fn{Pair} \ident \lambd[mn][\lambd[f][fmn]]
+\]
+که يوه جوړه راکړل شي، د غړو بېرته ترلاسه کول ئې هم غواړو۔
+د دې دپاره دوو لاسرسي تابعو ته اړتيا ده چې جوړه د آرګومېنټ
+په توګه اخلي او لومړے يا دويم غړے ئې ورکوي:
+\begin{align*}
+  \fn{Fst} & \ident \lambd[p][p(\lambd[mn][m])]\\
+  \fn{Snd} & \ident \lambd[p][p(\lambd[mn][n])]
+\end{align*}
+
+\begin{prob}
+  څرګنده کړئ چې د لاسرسي تابعې $\fn{Fst}$ او $\fn{Snd}$
+  ولې کار کوي۔
+\end{prob}
+
+اوس د جوړو په مرسته د مخکنۍ شمېرې تابع !!{lambda define}
+کولے شو:
+\[
+  \fn{Pred} \ident \lambd[n][\fn{Fst}(n (\lambd[p][\tuple{\fn{Snd}\, {p}, \fn{Succ}(\fn{Snd}\, {p})}]) \tuple{\num 0, \num 0})]
+\]
+په ياد ولرئ چې $\num n\, f x$، $f^{n}(x)$ ته راکمېږي؛
+دلته $f$ داسې تابع ده چې جوړه $p$ اخلي او يوه نوې جوړه
+ورکوي۔ د نوې جوړې لومړے غړے د~$p$ دويم غړے او دويم
+غړے ئې د هماغه دويم غړي ورپسې شمېره ده؛ $x$،
+$\tuple{0,0}$ ده۔ نو که $n=0$ وي، پايله
+$\tuple{0,0}$ ده، او که نۀ وي، $\tuple{\num{n-1}, \num n}$
+ده۔ بيا $\fn{Pred}$ د پايلې لومړے غړے ورکوي۔
+
+تفريق داسې تعريفولے شو چې $\fn{Pred}$ پر $a$ باندې
+$b$ ځله تطبيق کړو:
+\[
+\fn{Sub} \ident \lambd[ab][b \fn{Pred}\, a].
+\]
+    
+\end{document}

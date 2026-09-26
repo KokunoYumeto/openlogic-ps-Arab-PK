@@ -2742,3 +2742,10 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/lambda-definability/arithmetical-functions.tex:118-123 (SHA-256 1c5db87c79c1edc7766be8031d7c6e35498be393367e2651c9b37950d5db7d24).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/arithmetical-functions.tex:133 (SHA-256 af1b14c63a6e8253392c06780c9f260631031c16364eb742377a0b825926126e).
 - پرېکړه: Use b as the summand iterated a times, rather than reusing a as both count and summand. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-051
+
+- واحد: OLP-0377.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/truth-values.tex:24-33 (SHA-256 c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/truth-values.tex:34 (SHA-256 2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616).
+- د اړيکې د ځايونو شمېر په سرچينه کښې n دے، خو د استازي ترم دواړه تطبيقونه k آرګومېنټونه لري. يوازې د شمېر کښته نښه سمه شوې او د R د دوه‌ګوني کارونې سپيناوی ورکړل شوے دے.

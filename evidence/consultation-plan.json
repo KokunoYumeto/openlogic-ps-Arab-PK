@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
-  "status": "OLP-0373–0375 source-reviewed and staged; 39 blocks, two exact formula corrections, two adjacent disclosures and eight reverse-paraphrase samples",
+  "batch_id": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
+  "status": "OLP-0376–0377 source-reviewed and staged; 22 paired blocks, one exact arity correction and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7935,6 +7935,36 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0376": {
+      "batch_id": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS"
+      ],
+      "scope": "Pair encoding, projections, predecessor by state-pair iteration and subtraction by repeated predecessor; all ten blocks and formulas remain literal. Pakistani prose/grammar govern style; Afghan function phrasing is a regional comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0377": {
+      "batch_id": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS"
+      ],
+      "scope": "Boolean selectors, relation representation, IsZero, negation, conjunction and disjunction exercise. OLLAM-051 repairs one exact arity exponent; Pakistani prose/grammar govern style, with Afghan function prose only a labelled regional comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11249,6 +11279,30 @@
       "passage": "exponentiation and predecessor preview",
       "reverse_paraphrase": "The Church numeral exponent iterates the base, and a second construction iterates multiplication; predecessor and subtraction need encoded pairs.",
       "finding": "Base/exponent order, all formulas and the source editorial eta caveat remain aligned."
+    },
+    {
+      "unit_id": "OLP-0376",
+      "passage": "pair encoding and projections",
+      "reverse_paraphrase": "A pair accepts a function and passes its two components; the projections supply selectors that return the first and second components respectively.",
+      "finding": "All constructor and selector formulas and the order of components are retained."
+    },
+    {
+      "unit_id": "OLP-0376",
+      "passage": "predecessor and subtraction",
+      "reverse_paraphrase": "Starting at (0,0), each step turns (previous,current) into (current,successor(current)); selecting first after n steps yields predecessor, and iterating predecessor b times on a gives subtraction.",
+      "finding": "Zero and positive cases, n−1/n order and b-times application remain aligned."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "passage": "truth-value selectors and relation",
+      "reverse_paraphrase": "True and false choose the first and second arguments; a k-ary relation is represented by the true selector on members and the false selector otherwise.",
+      "finding": "OLLAM-051 changes only the relation's arity exponent from n to k, matching all subsequent indexed arguments."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "passage": "zero test and Boolean operators",
+      "reverse_paraphrase": "IsZero remains true only when the iterator makes zero steps; Not reverses selectors, And yields y only if x is true, and non-Boolean inputs need not return a truth value.",
+      "finding": "All displayed terms and the Boolean-input caveat are retained."
     }
   ]
 }

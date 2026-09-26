@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 375,
-    "structural_pass": 375,
+    "draft_units": 377,
+    "structural_pass": 377,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B074-LAMBDA-DEFINABILITY-OPENING",
+  "batch": "PS-B075-LAMBDA-DEFINABILITY-CONTINUATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11825,6 +11825,75 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0376",
+      "path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+      "translation_sha256": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0377",
+      "path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "source_sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+      "translation_sha256": "2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-051"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$R\\subseteq\\Nat^n$"
+        ],
+        "target_only": [
+          "$R\\subseteq\\Nat^k$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -15139,6 +15208,30 @@
       "passage": "exponentiation and predecessor preview",
       "reverse_paraphrase": "The Church numeral exponent iterates the base, and a second construction iterates multiplication; predecessor and subtraction need encoded pairs.",
       "finding": "Base/exponent order, all formulas and the source editorial eta caveat remain aligned."
+    },
+    {
+      "unit_id": "OLP-0376",
+      "passage": "pair encoding and projections",
+      "reverse_paraphrase": "A pair accepts a function and passes its two components; the projections supply selectors that return the first and second components respectively.",
+      "finding": "All constructor and selector formulas and the order of components are retained."
+    },
+    {
+      "unit_id": "OLP-0376",
+      "passage": "predecessor and subtraction",
+      "reverse_paraphrase": "Starting at (0,0), each step turns (previous,current) into (current,successor(current)); selecting first after n steps yields predecessor, and iterating predecessor b times on a gives subtraction.",
+      "finding": "Zero and positive cases, n−1/n order and b-times application remain aligned."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "passage": "truth-value selectors and relation",
+      "reverse_paraphrase": "True and false choose the first and second arguments; a k-ary relation is represented by the true selector on members and the false selector otherwise.",
+      "finding": "OLLAM-051 changes only the relation's arity exponent from n to k, matching all subsequent indexed arguments."
+    },
+    {
+      "unit_id": "OLP-0377",
+      "passage": "zero test and Boolean operators",
+      "reverse_paraphrase": "IsZero remains true only when the iterator makes zero steps; Not reverses selectors, And yields y only if x is true, and non-Boolean inputs need not return a truth value.",
+      "finding": "All displayed terms and the Boolean-input caveat are retained."
     }
   ],
   "builds": [

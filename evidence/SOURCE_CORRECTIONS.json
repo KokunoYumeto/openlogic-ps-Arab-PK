@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0375; B074 four source disclosures including two exact formula repairs; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T20:57:00.346014+00:00",
+  "status": "adopted through OLP-0377; B075 one exact relation-arity correction; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T21:09:47.345772+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -8833,6 +8833,52 @@
       ],
       "decision_timing": "contemporaneous B074 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-051",
+      "unit_id": "OLP-0377",
+      "classification": "relation-arity-index-mismatch",
+      "source_path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "source_sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+      "source_locator": "content/lambda-calculus/lambda-definability/truth-values.tex:24-33",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/truth-values.tex",
+      "target_line_1based": 34,
+      "target_sha256": "2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Use k as the relation's arity exponent, matching the k indexed arguments and membership condition; disclose the source's R relation/term overload.",
+      "reason": "The source defines R as a subset of N^n but both representation branches and the condition consistently enumerate k arguments.",
+      "counterexample": "With n different from k, the displayed application R n_1 ... n_k does not have the arity stated by R subset N^n.",
+      "formula_policy": "Exactly the listed one-pair arity exponent is corrected; all other math, identifiers, structural macros and term tokens stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "$R\\subseteq\\Nat^n$"
+        ],
+        "target_only": [
+          "$R\\subseteq\\Nat^k$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
+      "audit_artifacts": [
+        "B075_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/truth-values.tex:24-33",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/truth-values.tex:34"
+      ],
+      "decision_timing": "contemporaneous B075 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -8840,7 +8886,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0376 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0378 onward while validating the 372-unit coherent reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -8901,7 +8947,8 @@
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-PARALLEL-BETA",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE",
-    "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING"
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING",
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES"
   ],
   "source_authorities": [
     {

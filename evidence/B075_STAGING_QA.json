@@ -1,0 +1,58 @@
+{
+  "schema": "ps-b075-staging-qa/1",
+  "units": [
+    {
+      "unit_id": "OLP-0376",
+      "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+      "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+      "target_sha256": "244b648538e5ea1d84894fdc066170e0395d7d619a1baeb3f9eefa526ec8f9db",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [],
+      "target_only_math": [],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    },
+    {
+      "unit_id": "OLP-0377",
+      "source_path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "source_sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+      "target_sha256": "2c2792a95a3a13556d5d26b4cac5785e038ee50b54994a1473b3f47738734616",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "$R\\subseteq\\Nat^n$"
+      ],
+      "target_only_math": [
+        "$R\\subseteq\\Nat^k$"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    }
+  ],
+  "all_checks_pass": true
+}

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 375 of 722 source units are translated drafts. This log contains 194 terminology entries and 315 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 377 of 722 source units are translated drafts. This log contains 194 terminology entries and 316 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4508,6 +4508,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The first multiplication term and the exercise target are the product of the two inputs; the source expression ignores b.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B074 owner source review before cumulative acceptance
+
+## DEC-OLLAM-051
+
+- Type: source-correction
+- Choice: Use k as the relation's arity exponent, matching the k indexed arguments and membership condition; disclose the source's R relation/term overload.
+- Evidence: The source defines R as a subset of N^n but both representation branches and the condition consistently enumerate k arguments.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B075 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
