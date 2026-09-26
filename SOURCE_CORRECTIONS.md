@@ -2644,3 +2644,17 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/church-rosser/definitions-and-properties.tex:80-83 (SHA-256 8f2880db2bb1ecb7dc07bf844e6da844d82b48289a5f36270d20588d826deb6f).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/definitions-and-properties.tex:82 (SHA-256 9540f05ae2f5be8956765b459644f57cc658d471e0a92cac3368326ffc53b69e).
 - د سرچينې دقيقې رياضيکي نښې او پېژندونکي ساتل شوي دي؛ اړوند سپيناوی د پښتو متن تر څنګ ورکړل شوے دے.
+
+## OLLAM-037
+
+- واحد: OLP-0369.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:20-21 (SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:27 (SHA-256 0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54).
+- د سرچينې يوه رياضيکي نښه د همدغه ثبوت د اړتيا له مخې په ښکاره سمه شوې او د پښتو متن تر څنګ يې سپيناوی ورکړل شوے دے. د نورو فورمولونو او پېژندونکو بڼه ساتل شوې ده.
+
+## OLLAM-038
+
+- واحد: OLP-0369.
+- ثابته سرچينه: content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:83-90 (SHA-256 37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex:98 (SHA-256 0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54).
+- د سرچينې يوه رياضيکي نښه د همدغه ثبوت د اړتيا له مخې په ښکاره سمه شوې او د پښتو متن تر څنګ يې سپيناوی ورکړل شوے دے. د نورو فورمولونو او پېژندونکو بڼه ساتل شوې ده.

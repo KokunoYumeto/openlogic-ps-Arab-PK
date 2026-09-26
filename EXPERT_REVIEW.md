@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 368 of 722 source units are translated drafts. This log contains 192 terminology entries and 301 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 369 of 722 source units are translated drafts. This log contains 193 terminology entries and 303 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1729,6 +1729,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani prose and grammar inspected; Afghan relation/function pages are regional comparators only. No inspected native page attests the exact Church--Rosser or reduction-grid compounds.
 - Review question: The diamond property joins two successors to a common successor. This entails uniqueness of a normal form only if one exists; it does not imply termination or existence. An indexed grid of local diamonds proves the transitive closure is also Church--Rosser. Preserve all arrow directions, endpoint indices and bounds.
 - Timing: contemporaneous B071 owner source review and visually inspected Pakistani/regional canon
+
+## TERM-LAMBDA-PARALLEL-DEVELOPMENT
+
+- Type: terminology
+- Choice: هممهاله بېټا-راکمول / په اصلي ترم کښې شته رېډکس / بېټا-بشپړ راکمول / ګډ راکمېدونکے ترم
+- Uncertainty: Pakistani scholarly prose and grammar inspected; Afghan function/equality pages are regional comparators only. Exact parallel-reduction and complete-development labels are source-led and provisional.
+- Review question: Parallel beta reduction contracts any selected set of redexes present in the starting term in one step; it may leave all unchanged. Complete development contracts all original redexes, not newly created ones. The corrected abstraction premise must itself be parallel reduction. Substitution compatibility uses the reduced argument in the target. The complete-development lemma gives a common successor and the Church--Rosser diamond.
+- Timing: contemporaneous B072 owner source-proof review and Pakistani-first canon consultation
 
 ## DEC-OLFUN-001
 
@@ -4380,6 +4388,22 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The proof previously displays only P_m and Q_n, then calls N_m0 P and N_0n Q.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B071 owner source review before cumulative acceptance
+
+## DEC-OLLAM-037
+
+- Type: source-correction
+- Choice: Replace the rule-2 beta-arrow premise by the parallel-beta relation.
+- Evidence: The following reflexivity theorem and later proof cases use parallel reduction under lambda.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B072 owner source-proof review before cumulative acceptance
+
+## DEC-OLLAM-038
+
+- Type: source-correction
+- Choice: Use the reduced argument R-prime in the right-hand abstraction substitution formula.
+- Evidence: The lemma and the immediately preceding displayed formula already use the reduced argument R-prime.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B072 owner source-proof review before cumulative acceptance
 
 ## DEC-REL-I
 

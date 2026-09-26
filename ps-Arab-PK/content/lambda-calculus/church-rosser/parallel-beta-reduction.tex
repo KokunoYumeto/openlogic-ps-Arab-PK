@@ -1,0 +1,165 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pb}
+
+\olsection{هممهاله $\beta$-راکمول}
+
+د \emph{هممهاله $\beta$-راکمول} مفهوم معرفي کوو او ثابتوو
+چې دا د چرچ--روسر خاصيت لري۔
+
+\begin{defn}[هممهاله $\beta$-راکمول، $\bredpar$] \ollabel{defn:bredpar}
+  د ترمونو هممهاله راکمول ($\bredpar$) په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+    \item \ollabel{defn:bredpar1} $x \bredpar x$.
+    \item \ollabel{defn:bredpar2} که $N \bredpar N'$ وي، نو $\lambd[x][N] \bredpar
+      \lambd[x][N']$.
+    \item \ollabel{defn:bredpar3} که $P \bredpar P'$ او $Q \bredpar Q'$ وي، نو $PQ \bredpar
+      P'Q'$.
+    \item \ollabel{defn:bredpar4} که $N \bredpar N'$ او $Q \bredpar Q'$ وي، نو
+      $(\lambd[x][N])Q \bredpar \Subst{N'}{Q'}{x}$.
+  \end{enumerate}
+  \textbf{د سرچينې سمون (OLLAM-037):} د دويمې قاعدې په مقدمه کښې
+  د اصلي نسخې يوګامي بېټا غشے د همدغه هممهاله تړاو په نښه بدل
+  شوے دے؛ کنه د تجريدونو د انعکاس راتلونکې قضيه نۀ ثابتېږي۔
+\end{defn}
+
+هممهاله $\beta$-راکمول موږ ته اجازه راکوي چې د يوه ترم هر
+څو رېډکسونه په يوه ګام کښې راکم کړو۔ دا له $\beta$-راکمول سره
+په دې توپير لري چې يوازې په اصلي ترم کښې شته رېډکسونه منقبضولاے
+شو، نۀ هغه رېډکسونه چې د هممهاله $\beta$-راکمول په پايله کښې
+پيدا کېږي۔ د بېلګې په توګه، $(\lambd[f][fx])(\lambd[y][y])$
+په يوه هممهاله $\beta$-ګام کښې يا هماغه خپل ځان ته، يا
+$(\lambd[y][y])x$ ته راکمېږي، خو له هغه ځايه لا~$x$ ته نۀ؛
+حال دا چې د عادي $\beta$-راکمول له لارې~$x$ ته رسېږي۔
+سبب يې دا دے چې وروستے رېډکس د هممهاله $\beta$-راکمول
+له يوه ګام وروسته پيدا کېږي۔ دويم هممهاله $\beta$-ګام
+بيا~$x$ ورکوي۔
+
+\begin{thm}\ollabel{thm:refl}
+  $M \bredpar M$.
+\end{thm}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{thm:refl} ثابت کړئ۔
+\end{prob}
+
+\begin{defn}[$\beta$-بشپړ راکمول]\ollabel{defn:bcd}
+  د $M$ \emph{$\beta$-بشپړ راکمول}~$\bcd{M}$ په استقرايي ډول
+  داسې تعريفېږي:
+  \begin{align}
+    \bcd{x} &= x \ollabel{defn:bcd1} \\
+    \bcd{(\lambd[x][N])} &= \lambd[x][\bcd{N}] \ollabel{defn:bcd2}\\
+    \bcd{(PQ)} &= \bcd{P}\bcd{Q} && \text{که $P$ د $\lambd$ تجريد نۀ وي} 
+    \ollabel{defn:bcd3} \\
+    \bcd{((\lambd[x][N])Q)} &= \Subst{\bcd{N}}{\bcd{Q}}{x} \ollabel{defn:bcd4}
+  \end{align}
+\end{defn}
+
+د ترم $\beta$-بشپړ راکمول، لکه له نامه ئې چې ښکاري، يو
+«بشپړ هممهاله راکمول» دے۔ په هممهاله $\beta$-راکمول کښې
+لا هم دا ټاکلے شو چې رېډکس منقبض نۀ کړو؛ خو په بشپړ
+راکمول کښې بايد ټول موجود رېډکسونه منقبض کړو۔ نو د
+$(\lambd[f][fx])(\lambd[y][y])$ بشپړ راکمول
+$(\lambd[y][y])x$ دے، نۀ هماغه لومړنے ترم۔
+
+\begin{editorial}
+  په دې تعريف کښې دا ستونزه ده چې تر اوسه مو پر ($\lambd$-)ترمونو
+  د تابعو د بازګشتي تعريف لاره نۀ ده معرفي کړې۔ وروسته به ئې
+  سم کړو۔
+\end{editorial}
+
+\begin{lem}\ollabel{lem:comp}
+  که $M \bredpar M'$ او $R \bredpar R'$ وي، نو $\Subst{M}{R}{y}
+  \bredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  د $M \bredpar M'$ د !!{derivation} پر جوړښت استقرا کوو۔
+  \begin{enumerate}
+    \item وروستے ګام \olref{defn:bredpar1} دے: تمرين۔
+    \item وروستے ګام \olref{defn:bredpar2} دے: په دې حالت کښې $M$،
+      $\lambd[x][N]$ او $M'$، $\lambd[x][N']$ دے، او
+      $N \bredpar N'$ وي۔ غواړو ثابت کړو چې
+      $\Subst{(\lambd[x][N])}{R}{y} \bredpar
+      \Subst{(\lambd[x][N'])}{R'}{y}$، يعنې
+      $\lambd[x][\Subst{N}{R}{y}] \bredpar
+      \lambd[x][\Subst{N'}{R'}{y}]$۔ دا د
+      \olref{defn:bredpar2} او د استقرا له فرضيې سملاسي راځي۔
+      \textbf{د سرچينې سمون (OLLAM-038):} د اصلي نسخې د
+      دويم تعويض په فورمول کښې د آرګومېنټ د راکم شوي ترم
+      نښه پاتې شوې وه؛ دلته د قضیې له مقدمې سره سمه شوې ده۔
+    \item وروستے ګام \olref{defn:bredpar3} دے: تمرين۔
+    \item وروستے ګام \olref{defn:bredpar4} دے: $M$،
+      $(\lambd[x][N])Q$ او $M'$، $\Subst{N'}{Q'}{x}$ دے۔ غواړو
+      ثابت کړو چې $\Subst{((\lambd[x][N])Q)}{R}{y} \bredpar
+      \Subst{\Subst{N'}{Q'}{x}}{R'}{y}$، يعنې
+      $(\lambd[x][\Subst{N}{R}{y}])\Subst{Q}{R}{y} \bredpar
+      \Subst{\Subst{N'}{R'}{y}}{\Subst{Q'}{R'}{y}}{x}$۔ دا د
+      \olref{defn:bredpar4} او د استقرا له فرضيې راځي۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][cr][pb]{lem:comp} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{lem}\ollabel{lem:cont}
+  که $M \bredpar M'$ وي، نو $M' \bredpar \bcd{M}$.
+\end{lem}
+\begin{proof}
+  د $M \bredpar M'$ د !!{derivation} پر جوړښت استقرا کوو۔
+  \begin{enumerate}
+    \item وروستۍ قاعده \olref{defn:bredpar1} ده: تمرين۔
+    \item وروستۍ قاعده \olref{defn:bredpar2} ده: $M$،
+      $\lambd[x][N]$ او $M'$، $\lambd[x][N']$ دے، او
+      $N \bredpar N'$ وي۔ غواړو وښيو چې $\lambd[x][N'] \bredpar
+      \bcd{(\lambd[x][N])}$، يعنې د \olref{defn:bcd2} له مخې
+      $\lambd[x][N'] \bredpar \lambd[x][\bcd{N}]$۔ دا د
+      \olref{defn:bredpar2} او د استقرا له فرضيې راځي۔
+    \item وروستۍ قاعده \olref{defn:bredpar3} ده: $M$، $PQ$ او $M'$
+      د ځينو $P$، $Q$، $P'$ او $Q'$ دپاره $P'Q'$ دے، چې $P \bredpar P'$
+      او $Q \bredpar Q'$ وي۔ د استقرا له فرضيې $P'
+      \bredpar \bcd{P}$ او $Q' \bredpar \bcd{Q}$ لرو۔
+      \begin{enumerate}
+        \item که $P$ د ځينو $x$ او $N$ دپاره $\lambd[x][N]$ وي،
+          نو $P'$ بايد د کوم $N'$ دپاره $\lambd[x][N']$ وي، او
+          $N \bredpar N'$ وي۔ د استقرا له فرضيې $N' \bredpar \bcd{N}$ او
+          $Q' \bredpar \bcd{Q}$ لرو۔ نو $(\lambd[x][N'])Q' \bredpar
+          \Subst{\bcd{N}}{\bcd{Q}}{x}$ د \olref{defn:bredpar4} له مخې۔
+        \item که $P$ د $\lambd$ تجريد نۀ وي، نو $P'Q' \bredpar
+          \bcd{P}\bcd{Q}$ د \olref{defn:bredpar3} له مخې؛ ښۍ خوا
+          د \olref{defn:bcd3} له مخې $\bcd{PQ}$ ده۔
+      \end{enumerate}
+    \item وروستۍ قاعده \olref{defn:bredpar4} ده: $M$،
+      $(\lambd[x][N])Q$ او $M'$، $\Subst{N'}{Q'}{x}$ دے؛ دا د ځينو $x$،
+      $N$، $Q$، $N'$ او~$Q'$ دپاره دي، چې $N \bredpar N'$ او $Q \bredpar
+      Q'$ وي۔ د استقرا له فرضيې $N' \bredpar \bcd{N}$ او
+      $Q' \bredpar \bcd{Q}$ لرو۔ د \olref{lem:comp} له مخې
+      $\Subst{N'}{Q'}{x} \bredpar \Subst{\bcd{N}}{\bcd{Q}}{x}$؛
+      ښۍ خوا کټ مټ $\bcd{((\lambd[x][N])Q)}$ ده۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][cr][pb]{lem:cont} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{thm}\ollabel{thm:cr}
+  $\bredpar$ د چرچ--روسر خاصيت لري۔
+\end{thm}
+
+\begin{proof}
+  دا د \olref{lem:cont} سملاسي پايله ده۔
+\end{proof}
+
+\end{document}

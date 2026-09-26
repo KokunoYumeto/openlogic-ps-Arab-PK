@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
-  "status": "OLP-0366–0368 source-reviewed and staged; exact 18/7/16-block formula, identifier and macro parity QA passes",
+  "batch_id": "PS-B072-LAMBDA-PARALLEL-BETA",
+  "status": "OLP-0369 source-reviewed and staged; 22-block parity with two explicit math corrections, exact other identifiers/macros and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7813,6 +7813,25 @@
         "CR",
         "OLLAM"
       ]
+    },
+    "OLP-0369": {
+      "batch_id": "PS-B072-LAMBDA-PARALLEL-BETA",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-LAMBDA-PARALLEL-DEVELOPMENT",
+        "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+        "TERM-LAMBDA-BETA-STRATEGY",
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+      ],
+      "scope": "All 22 paired blocks of parallel beta reduction, complete development, substitution-compatibility lemma and common-successor proof. OLLAM-037/038 disclose and justify two exact formula corrections; all other math and identifiers are preserved. Pakistani prose/grammar guide usage and Afghan mathematical pages are labelled regional comparators, not technical term attestations.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11007,6 +11026,30 @@
       "passage": "grid theorem",
       "reverse_paraphrase": "For two finite reduction paths, each small square of a grid has a common successor. The bottom-right term is then reachable from both path endpoints, proving transitive closure has the Church--Rosser property.",
       "finding": "Indices, bounds and arrow directions are unchanged; OLLAM-036 explains the source's late endpoint names."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "parallel reduction rule and reflexivity",
+      "reverse_paraphrase": "An abstraction reduces in parallel when its body does; a beta one-step premise would make identity reduction of a normal abstraction impossible.",
+      "finding": "The target corrects only the source's rule-2 premise, with OLLAM-037 and an exact math exception."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "original redex and complete development",
+      "reverse_paraphrase": "One parallel step can contract any selection of redexes present in the source term, but not a redex first created during the step. Complete development contracts all original redexes.",
+      "finding": "The example, all four complete-development clauses and the source editorial caveat are preserved."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "substitution compatibility",
+      "reverse_paraphrase": "If both the subject term and substituted argument reduce in parallel, their substituted results reduce in parallel. The abstraction proof must substitute the reduced argument on the right.",
+      "finding": "OLLAM-038 repairs only the dropped prime in the second displayed formula; the source's exercise cases remain open exercises."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "common complete development",
+      "reverse_paraphrase": "Any parallel reduct of M has another parallel step to M's complete development, so any two parallel reducts share that successor.",
+      "finding": "The four source cases, indices, references and Church--Rosser conclusion remain aligned; the proof depends on the documented source corrections."
     }
   ]
 }

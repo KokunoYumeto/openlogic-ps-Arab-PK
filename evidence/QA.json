@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 368,
-    "structural_pass": 368,
+    "draft_units": 369,
+    "structural_pass": 369,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+  "batch": "PS-B072-LAMBDA-PARALLEL-BETA",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11548,6 +11548,50 @@
         "OLLAM-036"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0369",
+      "path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+      "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+      "translation_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-037",
+        "OLLAM-038"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$N\\xrightarrow{\\beta}N'$",
+          "$\\lambd[x][\\Subst{N}{R}{y}]\\bredpar\\lambd[x][\\Subst{N'}{R}{y}]$"
+        ],
+        "target_only": [
+          "$N\\bredparN'$",
+          "$\\lambd[x][\\Subst{N}{R}{y}]\\bredpar\\lambd[x][\\Subst{N'}{R'}{y}]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -14742,6 +14786,30 @@
       "passage": "grid theorem",
       "reverse_paraphrase": "For two finite reduction paths, each small square of a grid has a common successor. The bottom-right term is then reachable from both path endpoints, proving transitive closure has the Church--Rosser property.",
       "finding": "Indices, bounds and arrow directions are unchanged; OLLAM-036 explains the source's late endpoint names."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "parallel reduction rule and reflexivity",
+      "reverse_paraphrase": "An abstraction reduces in parallel when its body does; a beta one-step premise would make identity reduction of a normal abstraction impossible.",
+      "finding": "The target corrects only the source's rule-2 premise, with OLLAM-037 and an exact math exception."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "original redex and complete development",
+      "reverse_paraphrase": "One parallel step can contract any selection of redexes present in the source term, but not a redex first created during the step. Complete development contracts all original redexes.",
+      "finding": "The example, all four complete-development clauses and the source editorial caveat are preserved."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "substitution compatibility",
+      "reverse_paraphrase": "If both the subject term and substituted argument reduce in parallel, their substituted results reduce in parallel. The abstraction proof must substitute the reduced argument on the right.",
+      "finding": "OLLAM-038 repairs only the dropped prime in the second displayed formula; the source's exercise cases remain open exercises."
+    },
+    {
+      "unit_id": "OLP-0369",
+      "passage": "common complete development",
+      "reverse_paraphrase": "Any parallel reduct of M has another parallel step to M's complete development, so any two parallel reducts share that successor.",
+      "finding": "The four source cases, indices, references and Church--Rosser conclusion remain aligned; the proof depends on the documented source corrections."
     }
   ],
   "builds": [

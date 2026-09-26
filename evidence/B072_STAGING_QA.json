@@ -1,0 +1,36 @@
+{
+  "schema": "ps-b072-staging-qa/1",
+  "units": [
+    {
+      "unit_id": "OLP-0369",
+      "source_path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+      "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+      "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "term_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "source_only_math": [
+        "$N\\xrightarrow{\\beta}N'$",
+        "$\\lambd[x][\\Subst{N}{R}{y}]\\bredpar\\lambd[x][\\Subst{N'}{R}{y}]$"
+      ],
+      "target_only_math": [
+        "$N\\bredparN'$",
+        "$\\lambd[x][\\Subst{N}{R}{y}]\\bredpar\\lambd[x][\\Subst{N'}{R'}{y}]$"
+      ],
+      "source_only_ids": [],
+      "target_only_ids": [],
+      "source_only_macros": [],
+      "target_only_macros": []
+    }
+  ],
+  "all_checks_pass": true
+}

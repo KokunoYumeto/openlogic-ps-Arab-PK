@@ -1,0 +1,79 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-26T20:14:56.475827+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-PARALLEL-BETA",
+  "batch_id": "PS-B072-LAMBDA-PARALLEL-BETA",
+  "unit_id": "OLP-0369",
+  "source_path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_bytes": 6191,
+  "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+  "target_sha256": "0a79b356740f3455bede0b20ccbb2a4c4c0bc05b724eb2a010b31148f3848b54",
+  "notes_path": "work/B072_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "cfe9dfd2d50527efb8b892f326ecc3f7aea7a344890a073e739e1786e9fe5ddc",
+  "consultation_path": "work/B072_CANON_CONSULTATION.md",
+  "consultation_sha256": "835f0c76e37906f462747614d592da796f5846bb7f6c6278a4fc43374922d67f",
+  "staging_qa_sha256": "48c8f2690c42dc056072dd42d9e5b20b6f008b09daabc2cfa6996c2a62d84d2f",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "source_lines": "16-27",
+      "kind": "parallel-abstraction-rule-premise",
+      "action": "OLLAM-037",
+      "finding": "The source's beta-arrow premise blocks reflexivity of normal abstractions and conflicts with all later uses; target uses the parallel premise."
+    },
+    {
+      "source_lines": "29-67",
+      "kind": "one-step-versus-complete-development",
+      "finding": "One parallel step selects only original redexes, while complete development selects all of them; the source editorial caveat is retained."
+    },
+    {
+      "source_lines": "74-104",
+      "kind": "substitution-compatibility-proof",
+      "action": "OLLAM-038",
+      "finding": "The abstraction case's second formula must use the reduced argument R-prime, as in the lemma and immediately preceding formula."
+    },
+    {
+      "source_lines": "106-153",
+      "kind": "complete-development-common-successor",
+      "finding": "The proof maps any parallel reduct to the complete development, yielding the Church--Rosser diamond; exercise cases remain exercises."
+    }
+  ],
+  "formula_policy": "Exactly two documented source-math spans are replaced in the Pashto target; every other formula, identifier, token and environment is source-equivalent. Frozen English bytes are unchanged.",
+  "unresolved": "Complete-development recursion has the source's own editorial caveat, and two lemma cases are left as exercises. Exact Pakistani parallel-reduction terminology is unattested in checked pages.",
+  "next_executable_action": "Register OLLAM-037/038, run cumulative structural/semantic QA and canonical replay, then checkpoint OLP-0369."
+}
