@@ -1,0 +1,37 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: basic-pr-lambda
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{bas}
+\olsection{بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي}
+
+\begin{lem}
+تابعې $\Zero$، $\Succ$ او $\Proj{n}{i}$ !!{lambda definable} دي۔
+\end{lem}
+
+\begin{proof}
+$\Zero$ يوازې $\lambd[u][\lambd[x][\lambd[y][y]]]$ دے۔
+\textbf{د ژباړې د نسخې سمون (OLLAM-004):} سرچينې د صفر د يوځاييزې
+تابع دپاره يوازې د چرچ د صفر عددنښه راوړې وه۔ دلته د تابعې د ننوت
+دپاره يو بهرنی تړون زيات شوے دے، څو هر ننوت هماغه د صفر عددنښه
+ورکړي؛ د همدې کتاب د لامبډا-تعريفېدنې وروستے څپرکے هم دا بهرنی
+تړون په ښکاره کاروي۔
+
+د تالي تابع~$\Succ$ تعريف دا دے:
+$\fn{Succ}(u) = \lambd[x][\lambd[y][x(uxy)]]$۔ ځير شئ چې دا
+ولې کار کوي: هره عددنښه~$\num{n}$ د تکراروونکي په توګه وګڼئ۔ د
+هرې تابعې~$f$ دپاره $\fn{Succ}(\num{n},f)$ داسې تابع ده چې پر
+ننوت~$y$، لومړے له~$y$ څخه په پيل سره~$f$،~$n$ ځله تطبيقوي او
+بيا ئې يو ځل نور هم تطبيقوي۔
+
+د پروجيکشنونو په هکله نور څۀ نشته: $\fn{Proj}^n_i(x_0, \dots,
+x_{n-1}) = x_i$۔ په بله وينا، زموږ د نښيزو دودونو له مخې
+$\fn{Proj}^n_i$ لامبډا ترم
+$\lambd[x_0][\dots \lambd[x_{n-1}][x_i]]$ دے۔
+\end{proof}
+
+\end{document}

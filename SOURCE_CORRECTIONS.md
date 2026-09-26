@@ -2336,3 +2336,30 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.
 - Counterexample or exact defect: No P is bound or introduced in this section's general construction. Substituting argument terms into P therefore has no specified relation to the defined lambda abstraction with body N.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-002
+
+- Unit: `OLP-0348`.
+- Frozen source: `content/lambda-calculus/introduction/lambda-definability.tex:30-31` (SHA-256 `fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:41` (SHA-256 `ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c`).
+- Correction: The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.
+- Counterexample or exact defect: The listed inputs run from x_0 through x_(k-1), and the defining condition quantifies n_0 through n_(k-1); no independent arity n is introduced for f.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-003
+
+- Unit: `OLP-0348`.
+- Frozen source: `content/lambda-calculus/introduction/lambda-definability.tex:37-39` (SHA-256 `fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:44` (SHA-256 `ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c`).
+- Correction: The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.
+- Counterexample or exact defect: A comma separates F from its first numeral rather than applying F to the listed Church numerals, so the source expression does not denote the computation whose normal form is under discussion.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-004
+
+- Unit: `OLP-0351`.
+- Frozen source: `content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18` (SHA-256 `a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:18` (SHA-256 `1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69`).
+- Correction: The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.
+- Counterexample or exact defect: Applying the source term lambda x.lambda y.y to any numeral consumes its first binder and yields lambda y.y, not the Church numeral zero lambda x.lambda y.y. The later source chapter explicitly defines Zero with an outer argument binder.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

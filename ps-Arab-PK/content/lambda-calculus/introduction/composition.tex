@@ -1,0 +1,30 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{com}
+\olsection{\usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي}
+
+\begin{lem}
+!!{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي۔
+\end{lem}
+
+\begin{proof}
+فرض کړئ $f$ د $h$، $g_0,$
+\dots،~$g_{k-1}$ له ترکيب څخه تعريف شوې ده۔ که $h$، $g_0$،
+\dots،~$g_{k-1}$ په ترتيب سره د $H$، $G_0$،
+\dots،~$G_{k-1}$ په وسيله !!{lambda defined} وي، بايد داسې
+ترم~$F$ ومومو چې~$f$ !!{lambda define}s۔ خو~$F$ په ساده ډول داسې
+تعريفولے شو:
+\[
+F(x_0, \dots, x_{l-1}) = H(G_0(x_0, \dots, x_{l-1}),
+\dots, G_{k-1}(x_0, \dots, x_{l-1})).
+\]
+په بله وينا، د لامبډا حساب ژبه د ترکيب د تمثيل دپاره مناسبه ده۔
+\end{proof}
+
+\end{document}

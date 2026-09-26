@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0347; one B062 source repair disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T01:50:10.285574+00:00",
+  "status": "adopted through OLP-0352; three B063 source repairs disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T02:16:09.464198+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -6670,6 +6670,142 @@
       ],
       "decision_timing": "contemporaneous B062 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-002",
+      "unit_id": "OLP-0348",
+      "classification": "arity-variable-mismatch-in-lambda-definability",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:30-31",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex",
+      "target_line_1based": 41,
+      "target_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.",
+      "reason": "The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.",
+      "counterexample": "The listed inputs run from x_0 through x_(k-1), and the defining condition quantifies n_0 through n_(k-1); no independent arity n is introduced for f.",
+      "formula_policy": "Only the arity variable in the prose math changes from n to k; all Church-numeral uses of n remain unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$n$"
+        ],
+        "target_only": [
+          "$k$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/lambda-definability.tex:30-31",
+        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:41"
+      ],
+      "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-003",
+      "unit_id": "OLP-0348",
+      "classification": "comma-instead-of-application-in-undefined-case",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:37-39",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex",
+      "target_line_1based": 44,
+      "target_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.",
+      "reason": "The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.",
+      "counterexample": "A comma separates F from its first numeral rather than applying F to the listed Church numerals, so the source expression does not denote the computation whose normal form is under discussion.",
+      "formula_policy": "Remove only the separating comma and use the existing application spacing; preserve all argument numerals and order.",
+      "qa_math_exception": {
+        "source_only": [
+          "$F,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$"
+        ],
+        "target_only": [
+          "$F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/lambda-definability.tex:37-39",
+        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:44"
+      ],
+      "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-004",
+      "unit_id": "OLP-0351",
+      "classification": "zero-function-omits-input-binder",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "source_locator": "content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "target_line_1based": 18,
+      "target_sha256": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.",
+      "reason": "The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.",
+      "counterexample": "Applying the source term lambda x.lambda y.y to any numeral consumes its first binder and yields lambda y.y, not the Church numeral zero lambda x.lambda y.y. The later source chapter explicitly defines Zero with an outer argument binder.",
+      "formula_policy": "Add only a fresh outer lambda-bound input u; preserve the inner Church numeral zero. Compare frozen later source content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lambd[x][\\lambd[y][y]]$"
+        ],
+        "target_only": [
+          "$\\lambd[u][\\lambd[x][\\lambd[y][y]]]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
+      "audit_artifacts": [
+        "content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18",
+        "ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:18",
+        "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25"
+      ],
+      "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -6677,7 +6813,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Advance OLP-0348 onward and report checked source findings to manager; keep frozen source unchanged.",
+  "next_action": "Advance OLP-0353 onward and report checked source findings to manager; keep frozen source unchanged.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
-  "status": "OLP-0341 through OLP-0347 source-reviewed with one disclosed B062 correction; exact lambda terminology remains provisional",
+  "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+  "status": "OLP-0348 through OLP-0352 source-reviewed with three disclosed B063 corrections; Church-numeral compound provisional",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7490,6 +7490,76 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0348": {
+      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-NORMAL-FORM-INDEX"
+      ],
+      "scope": "Church numerals iterate functions; the two exact OLLAM-002/003 repairs align k arguments and remove a stray comma from the undefined-case application.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0349": {
+      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-GENERAL-RECURSION-THEORY"
+      ],
+      "scope": "Fair tree search enumerates reductions and returns a numeral if reached; recursive-search formalization remains sketched as in source."
+    },
+    "OLP-0350": {
+      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-NORMAL-FORM-INDEX",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "Normal-form reduction of computability to initial functions, composition, primitive recursion and unbounded search is stated; untyped lambda terms have no fixed arity."
+    },
+    "OLP-0351": {
+      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "The source omits the unary input binder from Zero; OLLAM-004 adds it with adjacent disclosure. Successor and projection terms retain their source equations.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
+    },
+    "OLP-0352": {
+      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-COMPOSITION",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "Composition of lambda-definable functions retains k inner functions, l arguments and their nesting order."
     }
   },
   "semantic_review": [
@@ -10462,6 +10532,36 @@
       "passage": "Currying",
       "reverse_paraphrase": "A two-argument function is represented by a one-argument function that returns another one-argument function; nested substitutions apply supplied arguments to the body.",
       "finding": "All displayed steps and the inherited section identifier retained; the undefined P in the final source display is disclosed and corrected to N."
+    },
+    {
+      "unit_id": "OLP-0348",
+      "passage": "Church numerals and representation",
+      "reverse_paraphrase": "The Church numeral n iterates a supplied function n times; a representing term reduces to the output numeral on defined input and has no normal form otherwise.",
+      "finding": "Both definition directions and the theorem remain; two source notation defects receive adjacent corrections."
+    },
+    {
+      "unit_id": "OLP-0349",
+      "passage": "lambda-definable implies computable",
+      "reverse_paraphrase": "Breadth-first enumeration of beta reductions finds a numeral if one is reachable; a recursive encoding of subterms, substitution and reduction sequences would formalize the search.",
+      "finding": "The proof remains an informal sketch with its Church-thesis appeal, as in the source."
+    },
+    {
+      "unit_id": "OLP-0350",
+      "passage": "computable implies lambda-definable",
+      "reverse_paraphrase": "Kleene normal form reduces the task to primitive recursive initial functions, composition, primitive recursion and unbounded search; untyped lambda terms have no intrinsic arity.",
+      "finding": "Both reduction steps and each illustrative notation remain separate."
+    },
+    {
+      "unit_id": "OLP-0351",
+      "passage": "initial functions",
+      "reverse_paraphrase": "The unary zero function ignores its input and returns the Church zero numeral; successor adds one iteration, and projection returns the selected argument.",
+      "finding": "OLLAM-004 adds the input binder omitted by this source section; successor and projection expressions remain exact."
+    },
+    {
+      "unit_id": "OLP-0352",
+      "passage": "closure under composition",
+      "reverse_paraphrase": "If h and each g_i are lambda-defined, nesting their representing terms gives the composition with the same k inner functions and l arguments.",
+      "finding": "The displayed formula preserves every argument and function order."
     }
   ]
 }

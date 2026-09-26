@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 347 of 722 source units are translated drafts. This log contains 182 terminology entries and 266 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 352 of 722 source units are translated drafts. This log contains 183 terminology entries and 269 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1641,6 +1641,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: بېټا-کمول; نورمال بڼه; کارينګ
 - Review question: In Pakistani Pashto mathematical prose, is «د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول» the clearest conventional rendering of “capture-avoiding substitution / beta contraction and reduction / normal form / Church-Rosser property / Currying” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B062 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-CHURCH-NUMERALS
+
+- Type: terminology
+- Choice: د چرچ عددنښه / تکراروونکے / لامبډا-تعريفېدونکې جزوي تابع
+- Uncertainty: number, function and substitution prose have inspected regional support; exact Church-numeral and lambda-definability compounds are source-led and provisional
+- Alternatives: د چرچ شمېرنښه; لامبډا عدد; تکراري عددنښه
+- Review question: In Pakistani Pashto mathematical prose, is «د چرچ عددنښه / تکراروونکے / لامبډا-تعريفېدونکې جزوي تابع» the clearest conventional rendering of “Church numeral / iterator / lambda-definable partial function” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B063 owner source and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -3981,6 +3990,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLLAM-001 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B062 owner source review before cumulative acceptance
+
+## DEC-OLLAM-002
+
+- Type: source-correction
+- Choice: The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-002 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B063 owner source review before cumulative acceptance
+
+## DEC-OLLAM-003
+
+- Type: source-correction
+- Choice: The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-003 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B063 owner source review before cumulative acceptance
+
+## DEC-OLLAM-004
+
+- Type: source-correction
+- Choice: The source gives the Church numeral zero itself as the unary primitive-recursive zero function. The target adds one outer input binder so every input returns the zero numeral.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-004 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B063 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

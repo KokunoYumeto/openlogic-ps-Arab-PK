@@ -1,0 +1,85 @@
+{
+  "schema": "ps-lambda-definability-draft/1",
+  "utc": "2026-09-26T02:28:38.969326+00:00",
+  "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+  "status": "accepted B063 editable drafts; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0348",
+      "path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "translation_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "source_correction_ids": [
+        "OLLAM-002",
+        "OLLAM-003"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0349",
+      "path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "translation_sha256": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0350",
+      "path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "source_sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "translation_sha256": "3c935d7f1aa84921c0f578114165dc16d34b4e7bd99a45175f2bebce3e5af32a",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0351",
+      "path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "source_sha256": "a763e494e2c1d8863885e8a3f68cef4a9b9cfeb1c59d0de0c1f9a198fdaed862",
+      "translation_sha256": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "source_correction_ids": [
+        "OLLAM-004"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    },
+    {
+      "unit_id": "OLP-0352",
+      "path": "content/lambda-calculus/introduction/composition.tex",
+      "source_sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "translation_sha256": "3036c8dad84440d63485e9dc555194664ebcc62a28dcbaffdcc8a58f3bcd3b01",
+      "source_correction_ids": [],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 347,
+    "current_reviewed_draft_units": 5,
+    "cumulative_draft_units": 352,
+    "remaining_units": 370,
+    "public_reader_units": 255
+  },
+  "model_attribution": {
+    "model": "gpt-6-sol",
+    "effort": "ultra",
+    "session_metadata_record_sha256": "d92adbdf6840bdc6cd097d3c3e9753343a1d70c51bd8926b3cb4bb829f844de5"
+  },
+  "evidence": {
+    "source_check_sha256": "10f85c067482245d75d3c75782b31225ee5d4b9dcf82772ac476966fb0d57ecc",
+    "canon_consultation_sha256": "9ecccda40fbdb511cddd884468f38d953397b066c48b9e282179e7e935ae6b85",
+    "source_corrections_sha256": "9fda992232c6f9f83030fbed7d60aff8d3dac4b4d1034b6770697b3e448de46b",
+    "partial_qa_sha256": "acd0148a2e8b9c0afe7ee0df29541194e211ca7570fe0fcfbde5b0a046feee09",
+    "qa_sha256": "585b318f9dd80db489244ae006416ec83ec22da4325b70ed84ad04db9cf68b41",
+    "alignment_sha256": "b2772e1521c6d54b90163ed5e617ec988c1ff7aaa904c2d84ed4cd47b97e3cb5",
+    "canon_use_sha256": "613ce2803e9cc82b446a2318fb3e80e5025f0d285eddd47d8ea77589e93247e6",
+    "term_decisions_sha256": "c2ce156baf2002d623b945dfdce2006eb2b894d4477fa8530753e7730e41a5f2",
+    "canonical_decisions_sha256": "e61904bf45f4404a340427ae25cc1a1d8da050f0b39c8f97513d5f5d7db019b8",
+    "canonical_qa_sha256": "6c1e5476bfd8b0b357e658bcea0769deb06e3479554a7eaf48c0984d777bddef",
+    "canonical_replay_sha256": "0d65e1be5997660ede2e8d7198407707a3f3646ca2f88fc19c0480652e51fb53"
+  },
+  "next_action": "Commit/push B063; continue OLP-0353 onward with variable audit; finish coherent v0.7 PDF/EPUB/direct-TeX/source release when guarded TeX is available."
+}

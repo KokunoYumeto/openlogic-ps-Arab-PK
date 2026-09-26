@@ -1,0 +1,42 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T02:28:38.969326+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
+  "scope": "OLP-0348 through OLP-0352 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-002",
+      "unit_id": "OLP-0348",
+      "classification": "arity-variable-mismatch-in-lambda-definability",
+      "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:30-31",
+      "target_line_1based": 41,
+      "counterexample": "The listed inputs run from x_0 through x_(k-1), and the defining condition quantifies n_0 through n_(k-1); no independent arity n is introduced for f.",
+      "formula_policy": "Only the arity variable in the prose math changes from n to k; all Church-numeral uses of n remain unchanged."
+    },
+    {
+      "id": "OLLAM-003",
+      "unit_id": "OLP-0348",
+      "classification": "comma-instead-of-application-in-undefined-case",
+      "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:37-39",
+      "target_line_1based": 44,
+      "counterexample": "A comma separates F from its first numeral rather than applying F to the listed Church numerals, so the source expression does not denote the computation whose normal form is under discussion.",
+      "formula_policy": "Remove only the separating comma and use the existing application spacing; preserve all argument numerals and order."
+    },
+    {
+      "id": "OLLAM-004",
+      "unit_id": "OLP-0351",
+      "classification": "zero-function-omits-input-binder",
+      "source_locator": "content/lambda-calculus/introduction/basic-pr-lambda.tex:17-18",
+      "target_line_1based": 18,
+      "counterexample": "Applying the source term lambda x.lambda y.y to any numeral consumes its first binder and yields lambda y.y, not the Church numeral zero lambda x.lambda y.y. The later source chapter explicitly defines Zero with an outer argument binder.",
+      "formula_policy": "Add only a fresh outer lambda-bound input u; preserve the inner Church numeral zero. Compare frozen later source content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:22-25."
+    }
+  ],
+  "no_change_units": [
+    "OLP-0349",
+    "OLP-0350",
+    "OLP-0352"
+  ],
+  "status": "five source-reviewed draft units; three adjacent-disclosed source corrections including the unary zero binder"
+}

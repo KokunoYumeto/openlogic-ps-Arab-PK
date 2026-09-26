@@ -1,0 +1,126 @@
+{
+  "translated_partial_units": 5,
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "target_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$n$",
+        "$F,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$"
+      ],
+      "math_target_only": [
+        "$k$",
+        "$F\\,\\num{n_0}\\,\\num{n_1}\\dots\\num{n_{k-1}}$"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "target_sha256": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0350",
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "target_sha256": "3c935d7f1aa84921c0f578114165dc16d34b4e7bd99a45175f2bebce3e5af32a",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0351",
+      "source_path": "content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "target_sha256": "1ee008f66987960af357a01e502e38c3a99fc95be2d0e7ff150078e065256f69",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [
+        "$\\lambd[x][\\lambd[y][y]]$"
+      ],
+      "math_target_only": [
+        "$\\lambd[u][\\lambd[x][\\lambd[y][y]]]$"
+      ],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    },
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "target_sha256": "3036c8dad84440d63485e9dc555194664ebcc62a28dcbaffdcc8a58f3bcd3b01",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "source_sha256": true,
+        "block_count": true,
+        "environments": true,
+        "math": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "terminology_tokens": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true
+      },
+      "math_source_only": [],
+      "math_target_only": [],
+      "tokens_source_only": [],
+      "tokens_target_only": []
+    }
+  ]
+}
