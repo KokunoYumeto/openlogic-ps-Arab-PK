@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B069-LAMBDA-QUOTIENT-TERMS",
-  "status": "OLP-0364 source-reviewed and staged; exact block/identifier/macro parity and two disclosed math exceptions pass",
+  "batch_id": "PS-B070-LAMBDA-BETA-REDUCTION",
+  "status": "OLP-0365 source-reviewed and staged; exact twenty-block, formula, identifier and macro parity QA passes",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7742,6 +7742,26 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0365": {
+      "batch_id": "PS-B070-LAMBDA-BETA-REDUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-BETA-STRATEGY",
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION",
+        "TERM-LAMBDA-ALPHA-CONVERSION",
+        "TERM-LAMBDA-QUOTIENT-TERM"
+      ],
+      "scope": "All 20 paired blocks of beta contraction, reflexive-transitive reduction, normal forms, four examples, Church--Rosser motivation, leftmost natural strategy, beta-equivalence and future rule extension. OLLAM-032 states the source-confirmed condition that normal forms are unique when they exist. Pakistani prose and grammar were visually inspected; Afghan equality and function/substitution pages are regional comparators only.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10882,6 +10902,30 @@
       "passage": "substitution example and quotient operations",
       "reverse_paraphrase": "The raw substitution under lambda x is undefined for replacing x, but the same class has lambda z.z as a representative that satisfies the substitution conditions. Functions on quotient terms need representative-independent outputs.",
       "finding": "OLLAM-030 removes only the dangling first-row equality sign; all other equation expressions and labels remain. OLLAM-031 states the necessary descent condition."
+    },
+    {
+      "unit_id": "OLP-0365",
+      "passage": "contraction versus reduction",
+      "reverse_paraphrase": "A redex is an applied abstraction. One-step contraction substitutes the argument into its body, compatible contexts allow a contraction inside a larger term, and reduction permits zero or more such steps.",
+      "finding": "The generating display and all relation macros are unchanged. The target distinguishes one step from reflexive-transitive closure."
+    },
+    {
+      "unit_id": "OLP-0365",
+      "passage": "normal forms and four examples",
+      "reverse_paraphrase": "Normal means no further beta contraction anywhere. A normal form of M is a reachable normal term; if one exists it is unique, but some terms diverge. The examples show termination, growing reductions, self-reproduction and two paths leading to zv.",
+      "finding": "All six display environments and their math are unchanged; adjacent OLLAM-032 cites the later source's explicit existence condition."
+    },
+    {
+      "unit_id": "OLP-0365",
+      "passage": "natural strategy",
+      "reverse_paraphrase": "The natural strategy always contracts the leftmost redex by its starting position. If any strategy can reach a normal form, this strategy can do so; this does not claim every term normalizes.",
+      "finding": "The conditional and positional convention are preserved in Pashto; the source spelling slip is translated by intended meaning."
+    },
+    {
+      "unit_id": "OLP-0365",
+      "passage": "beta-equivalence and extension",
+      "reverse_paraphrase": "The seven rules generate a compatible equivalence containing contraction. It is equivalent to a finite chain of forward and backward contraction steps. A later extra rule X will define an extended relation.",
+      "finding": "All seven math clauses and the indexed extension macro remain unchanged."
     }
   ]
 }

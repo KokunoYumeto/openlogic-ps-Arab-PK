@@ -2606,3 +2606,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: State adjacent to the editorial paragraph that projecting a raw-term operation to classes requires its class result to be independent of representative choice.
 - Evidence: A raw operation whose outputs have different alpha-equivalence classes on two representatives cannot define one operation on their common input class.
 - Formula policy: Preserve all Lambda/lambda math spans and add only the missing prerequisite in Pashto prose.
+
+## OLLAM-032
+
+- Unit: OLP-0365.
+- Frozen source: content/lambda-calculus/syntax/beta.tex:49-51 (SHA-256 42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd).
+- Later source confirmation: content/lambda-calculus/lambda-definability/introduction.tex:51 (SHA-256 ff7c8dba694a6e61b7d6445949a00ed6e61c5ddc1af1bcabcc7e0587ed1cb2d2).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:57 (SHA-256 a6c5d3f116deec353e649f3f1fae067623e4e58080d55689db81c5af11ba815c).
+- Clarification: State that normal forms are unique if they exist, rather than suggesting every term has a normal form.
+- Evidence: The self-reproducing beta-redex in this section can contract forever and supplies no reachable normal form.
+- All formulas and identifiers are unchanged; the condition is disclosed in adjacent Pashto prose.

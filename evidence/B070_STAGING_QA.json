@@ -1,0 +1,27 @@
+{
+  "schema": "ps-b070-staging-qa/1",
+  "unit_id": "OLP-0365",
+  "source_path": "content/lambda-calculus/syntax/beta.tex",
+  "source_sha256": "42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd",
+  "target_sha256": "a6c5d3f116deec353e649f3f1fae067623e4e58080d55689db81c5af11ba815c",
+  "source_blocks": 20,
+  "target_blocks": 20,
+  "checks": {
+    "source_sha256": true,
+    "all_twenty_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "adjacent_disclosure": true
+  },
+  "all_checks_pass": true,
+  "source_only_math": [],
+  "target_only_math": [],
+  "planned_actions": [
+    "OLLAM-032"
+  ]
+}

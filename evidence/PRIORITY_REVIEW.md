@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — priority expert review
 
-This focused view contains 191 high-priority decisions. It preserves every exact paired occurrence for those decisions.
+This focused view contains 193 high-priority decisions. It preserves every exact paired occurrence for those decisions.
 
 ## TERM-SET
 
@@ -21298,7 +21298,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
   - بېټا-کمول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - نورمال بڼه (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - کارينګ (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 40
+- Exact paired occurrences: 56
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
@@ -21342,6 +21342,22 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 | `ps-Arab-PK-OCC-019410` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019411` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
 | `ps-Arab-PK-OCC-019412` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019413` | `OLP-0365` / `OLP-0365-B004` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019414` | `OLP-0365` / `OLP-0365-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019415` | `OLP-0365` / `OLP-0365-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:17-25` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019416` | `OLP-0365` / `OLP-0365-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019417` | `OLP-0365` / `OLP-0365-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:32-36` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:34-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019418` | `OLP-0365` / `OLP-0365-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:38-39` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019419` | `OLP-0365` / `OLP-0365-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:41-42` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019420` | `OLP-0365` / `OLP-0365-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:44-47` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019421` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019422` | `OLP-0365` / `OLP-0365-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:53-82` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:62-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019423` | `OLP-0365` / `OLP-0365-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:84-86` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:94-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019424` | `OLP-0365` / `OLP-0365-B015` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:88-98` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:98-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019425` | `OLP-0365` / `OLP-0365-B016` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:100-112` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:111-123` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019426` | `OLP-0365` / `OLP-0365-B017` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:114-116` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:125-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019427` | `OLP-0365` / `OLP-0365-B018` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:118-122` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:129-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019428` | `OLP-0365` / `OLP-0365-B019` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:124-126` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:136-138` | pending; no page guessed |
 
 ## TERM-LAMBDA-CHURCH-NUMERALS
 
@@ -21364,46 +21380,46 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019413` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019414` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019415` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019416` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019417` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019418` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019419` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019420` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019421` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019422` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019423` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019424` | `OLP-0350` / `OLP-0350-B004` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019425` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019426` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019427` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019428` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019429` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019430` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019431` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019432` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019433` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019434` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019435` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019436` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019437` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019438` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019439` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019440` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019441` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019442` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019443` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019444` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019445` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019446` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019447` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019448` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019449` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019450` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019451` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019452` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019429` | `OLP-0348` / `OLP-0348-B004` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019430` | `OLP-0348` / `OLP-0348-B005` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019431` | `OLP-0348` / `OLP-0348-B006` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:18-22` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:17-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019432` | `OLP-0348` / `OLP-0348-B007` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:24-27` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:23-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019433` | `OLP-0348` / `OLP-0348-B008` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:29-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:28-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019434` | `OLP-0348` / `OLP-0348-B009` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:41-45` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:48-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019435` | `OLP-0348` / `OLP-0348-B010` | \usetoken{S}{lambda definable} حسابي تابعې | `upstream/content/lambda-calculus/introduction/lambda-definability.tex:47-52` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:54-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019436` | `OLP-0349` / `OLP-0349-B004` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019437` | `OLP-0349` / `OLP-0349-B005` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019438` | `OLP-0349` / `OLP-0349-B006` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:18-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019439` | `OLP-0349` / `OLP-0349-B007` | \usetoken{S}{lambda definable} تابعې محاسبه کېدونکې دي | `upstream/content/lambda-calculus/introduction/lambda-computable.tex:28-39` | `ps-Arab-PK/content/lambda-calculus/introduction/lambda-computable.tex:28-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019440` | `OLP-0350` / `OLP-0350-B004` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019441` | `OLP-0350` / `OLP-0350-B005` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019442` | `OLP-0350` / `OLP-0350-B006` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:17-28` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:17-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019443` | `OLP-0350` / `OLP-0350-B007` | محاسبه کېدونکې تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/computable-lambda.tex:30-39` | `ps-Arab-PK/content/lambda-calculus/introduction/computable-lambda.tex:29-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019444` | `OLP-0351` / `OLP-0351-B004` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019445` | `OLP-0351` / `OLP-0351-B005` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019446` | `OLP-0351` / `OLP-0351-B006` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-18` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:16-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019447` | `OLP-0351` / `OLP-0351-B007` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019448` | `OLP-0351` / `OLP-0351-B008` | بنسټيزې بازګشتي تابعې \usetoken{S}{lambda definable} دي | `upstream/content/lambda-calculus/introduction/basic-pr-lambda.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/introduction/basic-pr-lambda.tex:31-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019449` | `OLP-0352` / `OLP-0352-B004` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019450` | `OLP-0352` / `OLP-0352-B005` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:12-14` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:12-14` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019451` | `OLP-0352` / `OLP-0352-B006` | \usetoken{S}{lambda definable} تابعې د ترکيب تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/composition.tex:16-28` | `ps-Arab-PK/content/lambda-calculus/introduction/composition.tex:16-28` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019452` | `OLP-0353` / `OLP-0353-B004` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019453` | `OLP-0353` / `OLP-0353-B005` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:12-30` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019454` | `OLP-0353` / `OLP-0353-B006` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:32-42` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:41-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019455` | `OLP-0353` / `OLP-0353-B007` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:44-45` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:56-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019456` | `OLP-0353` / `OLP-0353-B008` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:59-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019457` | `OLP-0353` / `OLP-0353-B009` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:52-59` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:64-70` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019458` | `OLP-0353` / `OLP-0353-B010` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:61-67` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:72-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019459` | `OLP-0353` / `OLP-0353-B011` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:69-72` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:80-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019460` | `OLP-0353` / `OLP-0353-B012` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:74-76` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:85-87` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019461` | `OLP-0353` / `OLP-0353-B013` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:78-94` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:89-105` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019462` | `OLP-0353` / `OLP-0353-B014` | \usetoken{S}{lambda definable} تابعې د بنسټيز بازګښت تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/primitive-recursion.tex:96-141` | `ps-Arab-PK/content/lambda-calculus/introduction/primitive-recursion.tex:107-152` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019463` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019464` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019465` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019466` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019467` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019468` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
 
 ## TERM-LAMBDA-FIXED-POINT-SEARCH
 
@@ -21426,14 +21442,14 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019453` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019454` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019455` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019456` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019457` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019458` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019459` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019460` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019469` | `OLP-0354` / `OLP-0354-B004` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019470` | `OLP-0354` / `OLP-0354-B005` | د ثابت ټکي ترکيب کوونکي | `upstream/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-38` | `ps-Arab-PK/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019471` | `OLP-0355` / `OLP-0355-B004` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019472` | `OLP-0355` / `OLP-0355-B005` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:12-18` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:12-18` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019473` | `OLP-0355` / `OLP-0355-B006` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:20-31` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:20-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019474` | `OLP-0355` / `OLP-0355-B007` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:33-47` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:33-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019475` | `OLP-0355` / `OLP-0355-B008` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:49-61` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:53-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019476` | `OLP-0355` / `OLP-0355-B009` | \usetoken{S}{lambda definable} تابعې د کمينه‌موندنې تر عمل لاندې تړلې دي | `upstream/content/lambda-calculus/introduction/minimization.tex:63-67` | `ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:68-72` | pending; no page guessed |
 
 ## TERM-LAMBDA-SCOPE-FREE-BOUND
 
@@ -21456,109 +21472,109 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019461` | `OLP-0357` / `OLP-0357-B004` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019462` | `OLP-0357` / `OLP-0357-B005` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019463` | `OLP-0357` / `OLP-0357-B006` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:17-27` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:17-26` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019464` | `OLP-0357` / `OLP-0357-B007` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:29-33` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:28-32` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019465` | `OLP-0357` / `OLP-0357-B008` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:35-45` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:34-44` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019466` | `OLP-0357` / `OLP-0357-B009` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:46-49` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019467` | `OLP-0358` / `OLP-0358-B004` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019468` | `OLP-0358` / `OLP-0358-B005` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:12-16` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019469` | `OLP-0358` / `OLP-0358-B006` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:18-20` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:18-20` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019470` | `OLP-0358` / `OLP-0358-B007` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:22-28` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:22-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019471` | `OLP-0358` / `OLP-0358-B008` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:30-33` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:29-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019472` | `OLP-0358` / `OLP-0358-B009` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:33-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019473` | `OLP-0358` / `OLP-0358-B010` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:42-44` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:39-41` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019474` | `OLP-0358` / `OLP-0358-B011` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:46-49` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:43-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019475` | `OLP-0358` / `OLP-0358-B012` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:48-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019476` | `OLP-0358` / `OLP-0358-B013` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:57-84` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:53-78` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019477` | `OLP-0358` / `OLP-0358-B014` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:86-96` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:80-90` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019478` | `OLP-0359` / `OLP-0359-B004` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019479` | `OLP-0359` / `OLP-0359-B005` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019480` | `OLP-0359` / `OLP-0359-B006` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:18-28` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:17-27` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019481` | `OLP-0359` / `OLP-0359-B007` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:30-37` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:29-36` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019482` | `OLP-0359` / `OLP-0359-B008` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:39-42` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:38-41` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019483` | `OLP-0360` / `OLP-0360-B004` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019484` | `OLP-0360` / `OLP-0360-B005` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:12-20` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:12-20` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019485` | `OLP-0360` / `OLP-0360-B006` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:22-25` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:22-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019486` | `OLP-0360` / `OLP-0360-B007` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:31-36` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019487` | `OLP-0360` / `OLP-0360-B008` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:35-49` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:38-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019488` | `OLP-0360` / `OLP-0360-B009` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:54-56` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019489` | `OLP-0360` / `OLP-0360-B010` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:55-62` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:58-65` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019490` | `OLP-0360` / `OLP-0360-B011` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:64-73` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:67-77` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019491` | `OLP-0360` / `OLP-0360-B012` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:75-83` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:79-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019492` | `OLP-0360` / `OLP-0360-B013` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:85-92` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:87-93` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019493` | `OLP-0360` / `OLP-0360-B014` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:94-97` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:95-98` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019494` | `OLP-0360` / `OLP-0360-B015` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:99-106` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:100-107` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019495` | `OLP-0360` / `OLP-0360-B016` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:108-110` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:109-111` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019496` | `OLP-0360` / `OLP-0360-B017` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:113-115` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019497` | `OLP-0361` / `OLP-0361-B004` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019498` | `OLP-0361` / `OLP-0361-B005` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:12-19` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019499` | `OLP-0361` / `OLP-0361-B006` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:21-33` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:21-33` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019500` | `OLP-0361` / `OLP-0361-B007` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:35-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019501` | `OLP-0361` / `OLP-0361-B008` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:42-52` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:48-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019502` | `OLP-0361` / `OLP-0361-B009` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:54-61` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:59-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019503` | `OLP-0361` / `OLP-0361-B010` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:63-66` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:68-71` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019504` | `OLP-0361` / `OLP-0361-B011` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:68-89` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:73-100` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019505` | `OLP-0361` / `OLP-0361-B012` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:91-93` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:102-104` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019506` | `OLP-0361` / `OLP-0361-B013` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:95-98` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:106-113` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019507` | `OLP-0361` / `OLP-0361-B014` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:100-127` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:115-152` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019508` | `OLP-0361` / `OLP-0361-B015` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:129-131` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:154-156` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019509` | `OLP-0361` / `OLP-0361-B016` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:133-136` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:158-161` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019510` | `OLP-0361` / `OLP-0361-B017` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:138-140` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:163-165` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019511` | `OLP-0361` / `OLP-0361-B018` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:142-144` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:167-169` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019512` | `OLP-0361` / `OLP-0361-B019` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:147-150` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:172-175` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019513` | `OLP-0361` / `OLP-0361-B020` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:152-173` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:177-204` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019514` | `OLP-0361` / `OLP-0361-B021` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:175-177` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:206-208` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019515` | `OLP-0362` / `OLP-0362-B001` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:1-3` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:1-3` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019516` | `OLP-0362` / `OLP-0362-B002` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:5-5` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:5-5` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019517` | `OLP-0362` / `OLP-0362-B003` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:7-7` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:7-7` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019518` | `OLP-0362` / `OLP-0362-B004` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019519` | `OLP-0362` / `OLP-0362-B005` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019520` | `OLP-0362` / `OLP-0362-B006` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:18-27` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:17-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019521` | `OLP-0362` / `OLP-0362-B007` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:31-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019522` | `OLP-0362` / `OLP-0362-B008` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:39-49` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:41-50` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019523` | `OLP-0362` / `OLP-0362-B009` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:52-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019524` | `OLP-0362` / `OLP-0362-B010` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:55-67` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:56-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019525` | `OLP-0362` / `OLP-0362-B011` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:69-70` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:71-72` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019526` | `OLP-0362` / `OLP-0362-B012` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:72-75` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:74-77` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019527` | `OLP-0362` / `OLP-0362-B013` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:77-79` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:79-84` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019528` | `OLP-0362` / `OLP-0362-B014` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:81-89` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:86-95` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019529` | `OLP-0362` / `OLP-0362-B015` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:91-95` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:97-101` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019530` | `OLP-0362` / `OLP-0362-B016` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:97-101` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:103-107` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019531` | `OLP-0362` / `OLP-0362-B017` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:103-110` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:109-118` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019532` | `OLP-0362` / `OLP-0362-B018` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:120-122` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019533` | `OLP-0362` / `OLP-0362-B019` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:116-145` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:124-159` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019534` | `OLP-0362` / `OLP-0362-B020` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:161-163` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019535` | `OLP-0362` / `OLP-0362-B021` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:165-167` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019536` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019537` | `OLP-0362` / `OLP-0362-B023` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:171-173` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:191-193` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019538` | `OLP-0362` / `OLP-0362-B024` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:175-178` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:195-198` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019539` | `OLP-0362` / `OLP-0362-B025` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:180-193` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:200-212` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019540` | `OLP-0362` / `OLP-0362-B026` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:195-197` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:214-216` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019541` | `OLP-0362` / `OLP-0362-B027` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:199-201` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:218-220` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019542` | `OLP-0362` / `OLP-0362-B028` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:203-205` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:222-224` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019543` | `OLP-0362` / `OLP-0362-B029` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:207-210` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:226-230` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019544` | `OLP-0362` / `OLP-0362-B030` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:212-214` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:232-234` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019545` | `OLP-0362` / `OLP-0362-B031` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:216-218` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:236-238` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019546` | `OLP-0362` / `OLP-0362-B032` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:220-223` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:240-243` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019547` | `OLP-0362` / `OLP-0362-B033` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:225-230` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:245-251` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019548` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019549` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019550` | `OLP-0362` / `OLP-0362-B036` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:266-268` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:306-308` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019551` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019552` | `OLP-0362` / `OLP-0362-B038` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:278-280` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:323-325` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019553` | `OLP-0363` / `OLP-0363-B005` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:11-11` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019554` | `OLP-0363` / `OLP-0363-B006` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:13-17` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:13-17` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019555` | `OLP-0363` / `OLP-0363-B007` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:19-29` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:19-31` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019556` | `OLP-0363` / `OLP-0363-B008` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-38` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:33-40` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019557` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019558` | `OLP-0363` / `OLP-0363-B010` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:53-56` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:59-62` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019559` | `OLP-0363` / `OLP-0363-B011` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:58-59` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:64-65` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019560` | `OLP-0363` / `OLP-0363-B012` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-69` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:67-75` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019561` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019562` | `OLP-0363` / `OLP-0363-B014` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:75-75` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:85-85` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019563` | `OLP-0363` / `OLP-0363-B015` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:77-80` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:87-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019477` | `OLP-0357` / `OLP-0357-B004` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019478` | `OLP-0357` / `OLP-0357-B005` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019479` | `OLP-0357` / `OLP-0357-B006` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:17-27` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019480` | `OLP-0357` / `OLP-0357-B007` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:29-33` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019481` | `OLP-0357` / `OLP-0357-B008` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:35-45` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:34-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019482` | `OLP-0357` / `OLP-0357-B009` | ترمونه | `upstream/content/lambda-calculus/syntax/terms.tex:47-50` | `ps-Arab-PK/content/lambda-calculus/syntax/terms.tex:46-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019483` | `OLP-0358` / `OLP-0358-B004` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019484` | `OLP-0358` / `OLP-0358-B005` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:12-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019485` | `OLP-0358` / `OLP-0358-B006` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:18-20` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:18-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019486` | `OLP-0358` / `OLP-0358-B007` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:22-28` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:22-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019487` | `OLP-0358` / `OLP-0358-B008` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:30-33` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:29-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019488` | `OLP-0358` / `OLP-0358-B009` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:33-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019489` | `OLP-0358` / `OLP-0358-B010` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:42-44` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:39-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019490` | `OLP-0358` / `OLP-0358-B011` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:46-49` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:43-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019491` | `OLP-0358` / `OLP-0358-B012` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:51-55` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019492` | `OLP-0358` / `OLP-0358-B013` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:57-84` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:53-78` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019493` | `OLP-0358` / `OLP-0358-B014` | يکتا لوستونتيا | `upstream/content/lambda-calculus/syntax/unique-readability.tex:86-96` | `ps-Arab-PK/content/lambda-calculus/syntax/unique-readability.tex:80-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019494` | `OLP-0359` / `OLP-0359-B004` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019495` | `OLP-0359` / `OLP-0359-B005` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019496` | `OLP-0359` / `OLP-0359-B006` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:18-28` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:17-27` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019497` | `OLP-0359` / `OLP-0359-B007` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:30-37` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:29-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019498` | `OLP-0359` / `OLP-0359-B008` | د نحو لنډې نښې | `upstream/content/lambda-calculus/syntax/abbreviated-syntax.tex:39-42` | `ps-Arab-PK/content/lambda-calculus/syntax/abbreviated-syntax.tex:38-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019499` | `OLP-0360` / `OLP-0360-B004` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019500` | `OLP-0360` / `OLP-0360-B005` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:12-20` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:12-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019501` | `OLP-0360` / `OLP-0360-B006` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:22-25` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:22-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019502` | `OLP-0360` / `OLP-0360-B007` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:28-33` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:31-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019503` | `OLP-0360` / `OLP-0360-B008` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:35-49` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:38-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019504` | `OLP-0360` / `OLP-0360-B009` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:54-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019505` | `OLP-0360` / `OLP-0360-B010` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:55-62` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:58-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019506` | `OLP-0360` / `OLP-0360-B011` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:64-73` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:67-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019507` | `OLP-0360` / `OLP-0360-B012` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:75-83` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:79-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019508` | `OLP-0360` / `OLP-0360-B013` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:85-92` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:87-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019509` | `OLP-0360` / `OLP-0360-B014` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:94-97` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:95-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019510` | `OLP-0360` / `OLP-0360-B015` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:99-106` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:100-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019511` | `OLP-0360` / `OLP-0360-B016` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:108-110` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:109-111` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019512` | `OLP-0360` / `OLP-0360-B017` | ازاد متغيرونه | `upstream/content/lambda-calculus/syntax/free-variables.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:113-115` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019513` | `OLP-0361` / `OLP-0361-B004` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019514` | `OLP-0361` / `OLP-0361-B005` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:12-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019515` | `OLP-0361` / `OLP-0361-B006` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:21-33` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:21-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019516` | `OLP-0361` / `OLP-0361-B007` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:35-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019517` | `OLP-0361` / `OLP-0361-B008` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:42-52` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:48-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019518` | `OLP-0361` / `OLP-0361-B009` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:54-61` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:59-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019519` | `OLP-0361` / `OLP-0361-B010` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:63-66` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:68-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019520` | `OLP-0361` / `OLP-0361-B011` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:68-89` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:73-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019521` | `OLP-0361` / `OLP-0361-B012` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:91-93` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:102-104` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019522` | `OLP-0361` / `OLP-0361-B013` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:95-98` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:106-113` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019523` | `OLP-0361` / `OLP-0361-B014` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:100-127` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:115-152` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019524` | `OLP-0361` / `OLP-0361-B015` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:129-131` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:154-156` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019525` | `OLP-0361` / `OLP-0361-B016` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:133-136` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:158-161` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019526` | `OLP-0361` / `OLP-0361-B017` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:138-140` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:163-165` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019527` | `OLP-0361` / `OLP-0361-B018` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:142-144` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:167-169` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019528` | `OLP-0361` / `OLP-0361-B019` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:147-150` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:172-175` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019529` | `OLP-0361` / `OLP-0361-B020` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:152-173` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:177-204` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019530` | `OLP-0361` / `OLP-0361-B021` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:175-177` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:206-208` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019531` | `OLP-0362` / `OLP-0362-B001` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:1-3` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:1-3` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019532` | `OLP-0362` / `OLP-0362-B002` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:5-5` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:5-5` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019533` | `OLP-0362` / `OLP-0362-B003` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:7-7` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019534` | `OLP-0362` / `OLP-0362-B004` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019535` | `OLP-0362` / `OLP-0362-B005` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019536` | `OLP-0362` / `OLP-0362-B006` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:18-27` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:17-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019537` | `OLP-0362` / `OLP-0362-B007` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:31-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019538` | `OLP-0362` / `OLP-0362-B008` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:39-49` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:41-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019539` | `OLP-0362` / `OLP-0362-B009` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:52-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019540` | `OLP-0362` / `OLP-0362-B010` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:55-67` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:56-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019541` | `OLP-0362` / `OLP-0362-B011` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:69-70` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:71-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019542` | `OLP-0362` / `OLP-0362-B012` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:72-75` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:74-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019543` | `OLP-0362` / `OLP-0362-B013` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:77-79` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:79-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019544` | `OLP-0362` / `OLP-0362-B014` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:81-89` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:86-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019545` | `OLP-0362` / `OLP-0362-B015` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:91-95` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:97-101` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019546` | `OLP-0362` / `OLP-0362-B016` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:97-101` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:103-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019547` | `OLP-0362` / `OLP-0362-B017` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:103-110` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:109-118` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019548` | `OLP-0362` / `OLP-0362-B018` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:120-122` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019549` | `OLP-0362` / `OLP-0362-B019` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:116-145` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:124-159` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019550` | `OLP-0362` / `OLP-0362-B020` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019551` | `OLP-0362` / `OLP-0362-B021` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:165-167` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019552` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019553` | `OLP-0362` / `OLP-0362-B023` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:171-173` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:191-193` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019554` | `OLP-0362` / `OLP-0362-B024` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:175-178` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:195-198` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019555` | `OLP-0362` / `OLP-0362-B025` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:180-193` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:200-212` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019556` | `OLP-0362` / `OLP-0362-B026` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:195-197` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:214-216` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019557` | `OLP-0362` / `OLP-0362-B027` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:199-201` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:218-220` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019558` | `OLP-0362` / `OLP-0362-B028` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:203-205` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:222-224` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019559` | `OLP-0362` / `OLP-0362-B029` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:207-210` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:226-230` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019560` | `OLP-0362` / `OLP-0362-B030` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:212-214` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:232-234` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019561` | `OLP-0362` / `OLP-0362-B031` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:216-218` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:236-238` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019562` | `OLP-0362` / `OLP-0362-B032` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:220-223` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:240-243` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019563` | `OLP-0362` / `OLP-0362-B033` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:225-230` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:245-251` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019564` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019565` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019566` | `OLP-0362` / `OLP-0362-B036` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:266-268` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:306-308` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019567` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019568` | `OLP-0362` / `OLP-0362-B038` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:278-280` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:323-325` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019569` | `OLP-0363` / `OLP-0363-B005` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:11-11` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:11-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019570` | `OLP-0363` / `OLP-0363-B006` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:13-17` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:13-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019571` | `OLP-0363` / `OLP-0363-B007` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:19-29` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:19-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019572` | `OLP-0363` / `OLP-0363-B008` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:31-38` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:33-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019573` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019574` | `OLP-0363` / `OLP-0363-B010` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:53-56` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:59-62` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019575` | `OLP-0363` / `OLP-0363-B011` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:58-59` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:64-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019576` | `OLP-0363` / `OLP-0363-B012` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:61-69` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:67-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019577` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019578` | `OLP-0363` / `OLP-0363-B014` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:75-75` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:85-85` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019579` | `OLP-0363` / `OLP-0363-B015` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:77-80` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:87-90` | pending; no page guessed |
 
 ## TERM-LAMBDA-PARTIAL-SUBSTITUTION
 
@@ -21577,81 +21593,97 @@ This focused view contains 191 high-priority decisions. It preserves every exact
   - ځایناستی د تعويض پر ځاے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - نا تعريف شوے تعويض د ناټاکلي پر ځاے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د متغير ښکېلتيا د نيونې پر ځاے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 71
+- Exact paired occurrences: 87
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019564` | `OLP-0361` / `OLP-0361-B004` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019565` | `OLP-0361` / `OLP-0361-B005` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:12-19` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019566` | `OLP-0361` / `OLP-0361-B006` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:21-33` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:21-33` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019567` | `OLP-0361` / `OLP-0361-B007` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:35-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019568` | `OLP-0361` / `OLP-0361-B008` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:42-52` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:48-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019569` | `OLP-0361` / `OLP-0361-B009` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:54-61` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:59-66` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019570` | `OLP-0361` / `OLP-0361-B010` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:63-66` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:68-71` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019571` | `OLP-0361` / `OLP-0361-B011` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:68-89` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:73-100` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019572` | `OLP-0361` / `OLP-0361-B012` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:91-93` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:102-104` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019573` | `OLP-0361` / `OLP-0361-B013` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:95-98` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:106-113` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019574` | `OLP-0361` / `OLP-0361-B014` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:100-127` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:115-152` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019575` | `OLP-0361` / `OLP-0361-B015` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:129-131` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:154-156` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019576` | `OLP-0361` / `OLP-0361-B016` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:133-136` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:158-161` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019577` | `OLP-0361` / `OLP-0361-B017` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:138-140` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:163-165` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019578` | `OLP-0361` / `OLP-0361-B018` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:142-144` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:167-169` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019579` | `OLP-0361` / `OLP-0361-B019` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:147-150` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:172-175` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019580` | `OLP-0361` / `OLP-0361-B020` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:152-173` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:177-204` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019581` | `OLP-0361` / `OLP-0361-B021` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:175-177` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:206-208` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019582` | `OLP-0362` / `OLP-0362-B001` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:1-3` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:1-3` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019583` | `OLP-0362` / `OLP-0362-B002` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:5-5` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:5-5` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019584` | `OLP-0362` / `OLP-0362-B003` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:7-7` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:7-7` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019585` | `OLP-0362` / `OLP-0362-B004` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019586` | `OLP-0362` / `OLP-0362-B005` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:12-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019587` | `OLP-0362` / `OLP-0362-B006` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:18-27` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:17-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019588` | `OLP-0362` / `OLP-0362-B007` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:31-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019589` | `OLP-0362` / `OLP-0362-B008` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:39-49` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:41-50` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019590` | `OLP-0362` / `OLP-0362-B009` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:52-54` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019591` | `OLP-0362` / `OLP-0362-B010` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:55-67` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:56-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019592` | `OLP-0362` / `OLP-0362-B011` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:69-70` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:71-72` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019593` | `OLP-0362` / `OLP-0362-B012` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:72-75` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:74-77` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019594` | `OLP-0362` / `OLP-0362-B013` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:77-79` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:79-84` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019595` | `OLP-0362` / `OLP-0362-B014` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:81-89` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:86-95` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019596` | `OLP-0362` / `OLP-0362-B015` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:91-95` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:97-101` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019597` | `OLP-0362` / `OLP-0362-B016` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:97-101` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:103-107` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019598` | `OLP-0362` / `OLP-0362-B017` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:103-110` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:109-118` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019599` | `OLP-0362` / `OLP-0362-B018` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:120-122` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019600` | `OLP-0362` / `OLP-0362-B019` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:116-145` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:124-159` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019601` | `OLP-0362` / `OLP-0362-B020` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:161-163` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019602` | `OLP-0362` / `OLP-0362-B021` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:165-167` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019603` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019604` | `OLP-0362` / `OLP-0362-B023` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:171-173` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:191-193` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019605` | `OLP-0362` / `OLP-0362-B024` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:175-178` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:195-198` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019606` | `OLP-0362` / `OLP-0362-B025` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:180-193` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:200-212` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019607` | `OLP-0362` / `OLP-0362-B026` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:195-197` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:214-216` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019608` | `OLP-0362` / `OLP-0362-B027` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:199-201` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:218-220` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019609` | `OLP-0362` / `OLP-0362-B028` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:203-205` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:222-224` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019610` | `OLP-0362` / `OLP-0362-B029` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:207-210` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:226-230` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019611` | `OLP-0362` / `OLP-0362-B030` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:212-214` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:232-234` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019612` | `OLP-0362` / `OLP-0362-B031` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:216-218` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:236-238` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019613` | `OLP-0362` / `OLP-0362-B032` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:220-223` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:240-243` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019614` | `OLP-0362` / `OLP-0362-B033` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:225-230` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:245-251` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019615` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019616` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019617` | `OLP-0362` / `OLP-0362-B036` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:266-268` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:306-308` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019618` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019619` | `OLP-0362` / `OLP-0362-B038` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:278-280` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:323-325` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019620` | `OLP-0364` / `OLP-0364-B004` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019621` | `OLP-0364` / `OLP-0364-B005` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:12-17` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019622` | `OLP-0364` / `OLP-0364-B006` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:19-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019623` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019624` | `OLP-0364` / `OLP-0364-B008` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:31-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019625` | `OLP-0364` / `OLP-0364-B009` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:37-38` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:41-42` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019626` | `OLP-0364` / `OLP-0364-B010` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:40-43` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:44-47` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019627` | `OLP-0364` / `OLP-0364-B011` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:45-46` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:49-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019628` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019629` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019630` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019631` | `OLP-0364` / `OLP-0364-B015` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:66-70` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:82-86` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019632` | `OLP-0364` / `OLP-0364-B016` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:72-76` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:88-92` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019633` | `OLP-0364` / `OLP-0364-B017` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:78-81` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:94-98` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019634` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019580` | `OLP-0361` / `OLP-0361-B004` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019581` | `OLP-0361` / `OLP-0361-B005` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:12-19` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:12-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019582` | `OLP-0361` / `OLP-0361-B006` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:21-33` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:21-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019583` | `OLP-0361` / `OLP-0361-B007` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:35-40` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:35-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019584` | `OLP-0361` / `OLP-0361-B008` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:42-52` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:48-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019585` | `OLP-0361` / `OLP-0361-B009` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:54-61` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:59-66` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019586` | `OLP-0361` / `OLP-0361-B010` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:63-66` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:68-71` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019587` | `OLP-0361` / `OLP-0361-B011` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:68-89` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:73-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019588` | `OLP-0361` / `OLP-0361-B012` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:91-93` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:102-104` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019589` | `OLP-0361` / `OLP-0361-B013` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:95-98` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:106-113` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019590` | `OLP-0361` / `OLP-0361-B014` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:100-127` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:115-152` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019591` | `OLP-0361` / `OLP-0361-B015` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:129-131` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:154-156` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019592` | `OLP-0361` / `OLP-0361-B016` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:133-136` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:158-161` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019593` | `OLP-0361` / `OLP-0361-B017` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:138-140` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:163-165` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019594` | `OLP-0361` / `OLP-0361-B018` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:142-144` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:167-169` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019595` | `OLP-0361` / `OLP-0361-B019` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:147-150` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:172-175` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019596` | `OLP-0361` / `OLP-0361-B020` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:152-173` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:177-204` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019597` | `OLP-0361` / `OLP-0361-B021` | تعويض | `upstream/content/lambda-calculus/syntax/substitution.tex:175-177` | `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:206-208` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019598` | `OLP-0362` / `OLP-0362-B001` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:1-3` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:1-3` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019599` | `OLP-0362` / `OLP-0362-B002` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:5-5` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:5-5` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019600` | `OLP-0362` / `OLP-0362-B003` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:7-7` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019601` | `OLP-0362` / `OLP-0362-B004` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019602` | `OLP-0362` / `OLP-0362-B005` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019603` | `OLP-0362` / `OLP-0362-B006` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:18-27` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:17-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019604` | `OLP-0362` / `OLP-0362-B007` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:29-37` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:31-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019605` | `OLP-0362` / `OLP-0362-B008` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:39-49` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:41-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019606` | `OLP-0362` / `OLP-0362-B009` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:51-53` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:52-54` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019607` | `OLP-0362` / `OLP-0362-B010` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:55-67` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:56-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019608` | `OLP-0362` / `OLP-0362-B011` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:69-70` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:71-72` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019609` | `OLP-0362` / `OLP-0362-B012` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:72-75` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:74-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019610` | `OLP-0362` / `OLP-0362-B013` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:77-79` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:79-84` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019611` | `OLP-0362` / `OLP-0362-B014` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:81-89` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:86-95` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019612` | `OLP-0362` / `OLP-0362-B015` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:91-95` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:97-101` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019613` | `OLP-0362` / `OLP-0362-B016` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:97-101` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:103-107` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019614` | `OLP-0362` / `OLP-0362-B017` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:103-110` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:109-118` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019615` | `OLP-0362` / `OLP-0362-B018` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:112-114` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:120-122` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019616` | `OLP-0362` / `OLP-0362-B019` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:116-145` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:124-159` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019617` | `OLP-0362` / `OLP-0362-B020` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:147-149` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:161-163` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019618` | `OLP-0362` / `OLP-0362-B021` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:151-153` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:165-167` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019619` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019620` | `OLP-0362` / `OLP-0362-B023` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:171-173` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:191-193` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019621` | `OLP-0362` / `OLP-0362-B024` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:175-178` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:195-198` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019622` | `OLP-0362` / `OLP-0362-B025` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:180-193` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:200-212` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019623` | `OLP-0362` / `OLP-0362-B026` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:195-197` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:214-216` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019624` | `OLP-0362` / `OLP-0362-B027` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:199-201` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:218-220` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019625` | `OLP-0362` / `OLP-0362-B028` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:203-205` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:222-224` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019626` | `OLP-0362` / `OLP-0362-B029` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:207-210` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:226-230` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019627` | `OLP-0362` / `OLP-0362-B030` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:212-214` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:232-234` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019628` | `OLP-0362` / `OLP-0362-B031` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:216-218` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:236-238` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019629` | `OLP-0362` / `OLP-0362-B032` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:220-223` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:240-243` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019630` | `OLP-0362` / `OLP-0362-B033` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:225-230` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:245-251` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019631` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019632` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019633` | `OLP-0362` / `OLP-0362-B036` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:266-268` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:306-308` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019634` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019635` | `OLP-0362` / `OLP-0362-B038` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:278-280` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:323-325` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019636` | `OLP-0364` / `OLP-0364-B004` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019637` | `OLP-0364` / `OLP-0364-B005` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:12-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019638` | `OLP-0364` / `OLP-0364-B006` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:19-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019639` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019640` | `OLP-0364` / `OLP-0364-B008` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:31-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019641` | `OLP-0364` / `OLP-0364-B009` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:37-38` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019642` | `OLP-0364` / `OLP-0364-B010` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:40-43` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:44-47` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019643` | `OLP-0364` / `OLP-0364-B011` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:45-46` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:49-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019644` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019645` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019646` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019647` | `OLP-0364` / `OLP-0364-B015` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:66-70` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:82-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019648` | `OLP-0364` / `OLP-0364-B016` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:72-76` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:88-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019649` | `OLP-0364` / `OLP-0364-B017` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:78-81` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:94-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019650` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019651` | `OLP-0365` / `OLP-0365-B004` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019652` | `OLP-0365` / `OLP-0365-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019653` | `OLP-0365` / `OLP-0365-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:17-25` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019654` | `OLP-0365` / `OLP-0365-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019655` | `OLP-0365` / `OLP-0365-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:32-36` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:34-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019656` | `OLP-0365` / `OLP-0365-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:38-39` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019657` | `OLP-0365` / `OLP-0365-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:41-42` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019658` | `OLP-0365` / `OLP-0365-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:44-47` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019659` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019660` | `OLP-0365` / `OLP-0365-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:53-82` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:62-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019661` | `OLP-0365` / `OLP-0365-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:84-86` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:94-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019662` | `OLP-0365` / `OLP-0365-B015` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:88-98` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:98-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019663` | `OLP-0365` / `OLP-0365-B016` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:100-112` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:111-123` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019664` | `OLP-0365` / `OLP-0365-B017` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:114-116` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:125-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019665` | `OLP-0365` / `OLP-0365-B018` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:118-122` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:129-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019666` | `OLP-0365` / `OLP-0365-B019` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:124-126` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:136-138` | pending; no page guessed |
 
 ## TERM-LAMBDA-QUOTIENT-TERM
 
@@ -21671,25 +21703,80 @@ This focused view contains 191 high-priority decisions. It preserves every exact
   - معادلتوبي ټولګے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - نمائنده ترم (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د ټولګي ترم (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 15
+- Exact paired occurrences: 31
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-019710` | `OLP-0364` / `OLP-0364-B004` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:9-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019711` | `OLP-0364` / `OLP-0364-B005` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:12-17` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019712` | `OLP-0364` / `OLP-0364-B006` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:19-22` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019713` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019714` | `OLP-0364` / `OLP-0364-B008` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:31-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019715` | `OLP-0364` / `OLP-0364-B009` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:37-38` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:41-42` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019716` | `OLP-0364` / `OLP-0364-B010` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:40-43` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:44-47` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019717` | `OLP-0364` / `OLP-0364-B011` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:45-46` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:49-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019718` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019719` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019720` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019721` | `OLP-0364` / `OLP-0364-B015` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:66-70` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:82-86` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019722` | `OLP-0364` / `OLP-0364-B016` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:72-76` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:88-92` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019723` | `OLP-0364` / `OLP-0364-B017` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:78-81` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:94-98` | pending; no page guessed |
-| `ps-Arab-PK-OCC-019724` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019758` | `OLP-0364` / `OLP-0364-B004` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019759` | `OLP-0364` / `OLP-0364-B005` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:12-16` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:12-17` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019760` | `OLP-0364` / `OLP-0364-B006` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:18-21` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:19-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019761` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019762` | `OLP-0364` / `OLP-0364-B008` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:27-35` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:31-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019763` | `OLP-0364` / `OLP-0364-B009` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:37-38` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019764` | `OLP-0364` / `OLP-0364-B010` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:40-43` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:44-47` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019765` | `OLP-0364` / `OLP-0364-B011` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:45-46` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:49-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019766` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019767` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019768` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019769` | `OLP-0364` / `OLP-0364-B015` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:66-70` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:82-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019770` | `OLP-0364` / `OLP-0364-B016` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:72-76` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:88-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019771` | `OLP-0364` / `OLP-0364-B017` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:78-81` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:94-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019772` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019773` | `OLP-0365` / `OLP-0365-B004` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019774` | `OLP-0365` / `OLP-0365-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019775` | `OLP-0365` / `OLP-0365-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:17-25` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019776` | `OLP-0365` / `OLP-0365-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019777` | `OLP-0365` / `OLP-0365-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:32-36` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:34-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019778` | `OLP-0365` / `OLP-0365-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:38-39` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019779` | `OLP-0365` / `OLP-0365-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:41-42` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019780` | `OLP-0365` / `OLP-0365-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:44-47` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019781` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019782` | `OLP-0365` / `OLP-0365-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:53-82` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:62-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019783` | `OLP-0365` / `OLP-0365-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:84-86` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:94-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019784` | `OLP-0365` / `OLP-0365-B015` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:88-98` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:98-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019785` | `OLP-0365` / `OLP-0365-B016` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:100-112` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:111-123` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019786` | `OLP-0365` / `OLP-0365-B017` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:114-116` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:125-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019787` | `OLP-0365` / `OLP-0365-B018` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:118-122` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:129-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019788` | `OLP-0365` / `OLP-0365-B019` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:124-126` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:136-138` | pending; no page guessed |
+
+## TERM-LAMBDA-BETA-STRATEGY
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: redex / leftmost natural reduction strategy / beta-equivalence
+- Intended sense: redex / leftmost natural reduction strategy / beta-equivalence
+- Chosen Pashto: رېډکس / د تر ټولو کيڼ رېډکس طبيعي تګلاره / بېټا-معادلتوب
+- Rationale: A redex is an applied lambda abstraction eligible for one beta contraction. Beta reduction permits zero or more contractions, unlike one-step contraction. The natural strategy contracts the leftmost redex and reaches a normal form whenever any strategy can. A normal form is unique if it exists, not guaranteed to exist. Beta-equivalence is the compatible equivalence generated by contraction and its inverse; the future indexed extension by X is separate.
+- Confidence reason: provisional; exact beta-calculus labels are not attested in the checked native pages. Pakistani prose and grammar visually inspected; Afghan equality and substitution witnesses are labelled regional comparators. None attests these exact beta-calculus compounds, so all three labels remain source-led and provisional
+- Expert question: Do redex, leftmost natural strategy and beta-equivalence remain distinct from one-step contraction and multi-step reduction in Pakistani Pashto?
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — Visually inspected Pakistani scholarly prose guides spelling and exposition, not beta terminology.
+  - `GRAMMAR-P166-SOV` (checked_context_only): Habibullah Tegey and Barbara Robson. A Reference Grammar of Pashto. Reference grammar; Afghan-central examples, regional comparator. https://files.eric.ed.gov/fulltext/ED399825.pdf — Visually inspected reference grammar supports verb-final explanation, not lambda-calculus vocabulary.
+  - `AF-NIAZMAN-P138-EQUALITY` (checked_context_only): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — Labelled Afghan regional comparator shows reflexive, symmetric and transitive equality language, not beta-equivalence.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_context_only): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — Labelled Afghan regional comparator prints function and substitution vocabulary, not redex or natural strategy.
+- Alternatives:
+  - راکمېدونکے مورد (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - کيڼ‌لومړۍ تګلاره (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - بېټا-برابري (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 16
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-019789` | `OLP-0365` / `OLP-0365-B004` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:9-10` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:9-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019790` | `OLP-0365` / `OLP-0365-B005` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:12-15` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019791` | `OLP-0365` / `OLP-0365-B006` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:17-25` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:17-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019792` | `OLP-0365` / `OLP-0365-B007` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:27-30` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:28-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019793` | `OLP-0365` / `OLP-0365-B008` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:32-36` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:34-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019794` | `OLP-0365` / `OLP-0365-B009` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:38-39` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:41-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019795` | `OLP-0365` / `OLP-0365-B010` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:41-42` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:44-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019796` | `OLP-0365` / `OLP-0365-B011` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:44-47` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:48-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019797` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019798` | `OLP-0365` / `OLP-0365-B013` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:53-82` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:62-92` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019799` | `OLP-0365` / `OLP-0365-B014` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:84-86` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:94-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019800` | `OLP-0365` / `OLP-0365-B015` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:88-98` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:98-109` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019801` | `OLP-0365` / `OLP-0365-B016` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:100-112` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:111-123` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019802` | `OLP-0365` / `OLP-0365-B017` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:114-116` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:125-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019803` | `OLP-0365` / `OLP-0365-B018` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:118-122` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:129-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-019804` | `OLP-0365` / `OLP-0365-B019` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:124-126` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:136-138` | pending; no page guessed |
 
 ## DEC-OLLAM-021
 
@@ -21709,7 +21796,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020004` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020084` | `OLP-0362` / `OLP-0362-B022` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:155-169` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:169-189` | pending; no page guessed |
 
 ## DEC-OLLAM-022
 
@@ -21729,7 +21816,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020005` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020085` | `OLP-0362` / `OLP-0362-B034` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:232-246` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:253-280` | pending; no page guessed |
 
 ## DEC-OLLAM-023
 
@@ -21749,7 +21836,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020006` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020086` | `OLP-0362` / `OLP-0362-B035` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:248-264` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:282-304` | pending; no page guessed |
 
 ## DEC-OLLAM-024
 
@@ -21769,7 +21856,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020007` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020087` | `OLP-0362` / `OLP-0362-B037` | $\alpha$-بدلون | `upstream/content/lambda-calculus/syntax/alpha.tex:270-276` | `ps-Arab-PK/content/lambda-calculus/syntax/alpha.tex:310-321` | pending; no page guessed |
 
 ## DEC-OLLAM-025
 
@@ -21789,7 +21876,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020008` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020088` | `OLP-0363` / `OLP-0363-B009` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:40-51` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:42-57` | pending; no page guessed |
 
 ## DEC-OLLAM-026
 
@@ -21809,7 +21896,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020009` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020089` | `OLP-0363` / `OLP-0363-B013` | د دې بروين شاخص | `upstream/content/lambda-calculus/syntax/de-bruijn.tex:71-73` | `ps-Arab-PK/content/lambda-calculus/syntax/de-bruijn.tex:77-83` | pending; no page guessed |
 
 ## DEC-OLLAM-027
 
@@ -21829,7 +21916,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020010` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020090` | `OLP-0364` / `OLP-0364-B007` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:23-25` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:24-29` | pending; no page guessed |
 
 ## DEC-OLLAM-028
 
@@ -21849,7 +21936,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020011` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020091` | `OLP-0364` / `OLP-0364-B012` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:48-53` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:53-63` | pending; no page guessed |
 
 ## DEC-OLLAM-029
 
@@ -21869,7 +21956,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020012` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020092` | `OLP-0364` / `OLP-0364-B013` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:55-55` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:65-69` | pending; no page guessed |
 
 ## DEC-OLLAM-030
 
@@ -21889,7 +21976,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020013` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020093` | `OLP-0364` / `OLP-0364-B014` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:57-64` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:71-80` | pending; no page guessed |
 
 ## DEC-OLLAM-031
 
@@ -21909,7 +21996,27 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020014` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-020094` | `OLP-0364` / `OLP-0364-B018` | ترمونه د $\alpha$-معادلتوب د ټولګيو په توګه | `upstream/content/lambda-calculus/syntax/term-revisited.tex:83-92` | `ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:100-114` | pending; no page guessed |
+
+## DEC-OLLAM-032
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLLAM-032: content/lambda-calculus/syntax/beta.tex:49-51
+- Intended sense: All source math spans, display equations, relation macros, labels and references remain unchanged.
+- Chosen Pashto: State that normal forms are unique if they exist, rather than suggesting every term has a normal form.
+- Rationale: All source math spans, display equations, relation macros, labels and references remain unchanged.
+- Confidence reason: high for the source-confirmed condition; provisional wording. The later source states the condition explicitly; Pashto wording remains open to later specialist review
+- Expert question: Does the adjacent Pashto note make uniqueness conditional on existence, with the later frozen source and divergent example cited accurately?
+- Authorities:
+  - `PS-OWNER-SEMANTIC-20260926-LAMBDA-BETA-REDUCTION` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — normal-form-uniqueness-existence-condition-implicit; All source math spans, display equations, relation macros, labels and references remain unchanged.
+- Alternatives:
+  - literal uniqueness sentence without qualification (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - adjacent source-confirmed existence qualification (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-020095` | `OLP-0365` / `OLP-0365-B012` | $\beta$-راکمول | `upstream/content/lambda-calculus/syntax/beta.tex:49-51` | `ps-Arab-PK/content/lambda-calculus/syntax/beta.tex:53-60` | pending; no page guessed |
 
 ## DEC-REL-I
 
@@ -21929,7 +22036,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020015` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 24–25 |
+| `ps-Arab-PK-OCC-020096` | `OLP-0012` / `OLP-0012-B010` | اړيکې د سټونو په توګه | `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:61-106` | `ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex:60-105` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 24–25 |
 
 ## DEC-TREE-X
 
@@ -21949,7 +22056,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020016` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 30–31 |
+| `ps-Arab-PK-OCC-020097` | `OLP-0018` / `OLP-0018-B016` | ونې | `upstream/content/sets-functions-relations/relations/trees.tex:90-98` | `ps-Arab-PK/content/sets-functions-relations/relations/trees.tex:90-98` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 30–31 |
 
 ## DEC-RPLUS
 
@@ -21969,7 +22076,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020017` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 28 |
+| `ps-Arab-PK-OCC-020098` | `OLP-0016` / `OLP-0016-B018` | ترتيبونه | `upstream/content/sets-functions-relations/relations/orders.tex:104-108` | `ps-Arab-PK/content/sets-functions-relations/relations/orders.tex:103-107` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 28 |
 
 ## DEC-SIZE-ALTERNATIVES
 
@@ -21989,7 +22096,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020018` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 41 |
+| `ps-Arab-PK-OCC-020099` | `OLP-0027` / `OLP-0027-B005` | sfr | `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-15` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:10-16` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 41 |
 
 ## DEC-COMPOSITION-CONVENTION
 
@@ -22009,7 +22116,7 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020019` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 39 |
+| `ps-Arab-PK-OCC-020100` | `OLP-0025` / `OLP-0025-B005` | د تابعو ترکيب | `upstream/content/sets-functions-relations/functions/composition.tex:12-21` | `ps-Arab-PK/content/sets-functions-relations/functions/composition.tex:12-21` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 39 |
 
 ## DEC-ENUM-TABLE-F7
 
@@ -22029,4 +22136,4 @@ This focused view contains 191 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-020020` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 43 |
+| `ps-Arab-PK-OCC-020101` | `OLP-0029` / `OLP-0029-B020` | شمېرنې او \usetoken{S}{enumerable} سټونه | `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140-162` | `ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex:140-165` | openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf p. 43 |

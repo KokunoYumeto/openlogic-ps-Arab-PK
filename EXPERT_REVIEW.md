@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 364 of 722 source units are translated drafts. This log contains 189 terminology entries and 296 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 365 of 722 source units are translated drafts. This log contains 190 terminology entries and 297 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1704,6 +1704,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: معادلتوبي ټولګے; نمائنده ترم; د ټولګي ترم
 - Review question: Do class, representative and Lambda-term remain distinct from a raw lambda term in Pakistani Pashto?
 - Timing: contemporaneous B069 owner source review and visually inspected Pakistani Pashto language consultation
+
+## TERM-LAMBDA-BETA-STRATEGY
+
+- Type: terminology
+- Choice: رېډکس / د تر ټولو کيڼ رېډکس طبيعي تګلاره / بېټا-معادلتوب
+- Uncertainty: Pakistani prose and grammar visually inspected; Afghan equality and substitution witnesses are labelled regional comparators. None attests these exact beta-calculus compounds, so all three labels remain source-led and provisional.
+- Alternatives: راکمېدونکے مورد; کيڼ‌لومړۍ تګلاره; بېټا-برابري
+- Review question: Do redex, leftmost strategy and beta-equivalence remain distinct from one-step contraction and multi-step reduction in Pakistani Pashto?
+- Timing: contemporaneous B070 owner source review and visually inspected Pakistani Pashto language consultation
 
 ## DEC-OLFUN-001
 
@@ -4314,6 +4323,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
 - Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
 - Timing: contemporaneous B069 owner source review before cumulative acceptance
+
+## DEC-OLLAM-032
+
+- Type: source-correction
+- Choice: State that normal forms are unique if they exist, rather than suggesting every term has a normal form.
+- Uncertainty: The later frozen source states the existence condition explicitly; wording remains open to review.
+- Alternatives: literal uniqueness sentence; adjacent source-confirmed existence qualification
+- Review question: Does the note state uniqueness only when a normal form exists?
+- Timing: contemporaneous B070 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
