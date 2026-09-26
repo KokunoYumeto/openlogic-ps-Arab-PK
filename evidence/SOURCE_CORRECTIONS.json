@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0363; two B068 De Bruijn context clarifications disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T05:14:32.202133+00:00",
+  "status": "adopted through OLP-0364; five B069 quotient-term clarifications and two exact math-span exceptions disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T18:04:44.647722+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -7787,6 +7787,224 @@
       ],
       "decision_timing": "contemporaneous B068 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-027",
+      "unit_id": "OLP-0364",
+      "classification": "ordinary-English-abbreviation-inside-math",
+      "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:24-26",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex",
+      "target_line_1based": 27,
+      "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "mode": "source-led-adjacent-Pashto-disclosure-with-exact-formula-exception-if-needed",
+      "translation_change": "Move the source's ordinary etc. from its math span into Pashto prose, leaving the two representative expressions intact.",
+      "reason": "Move the source's ordinary etc. from its math span into Pashto prose, leaving the two representative expressions intact.",
+      "counterexample": "Retaining etc. inside math leaves untranslated English in the reader and typesets ordinary prose as mathematical italic letters.",
+      "formula_policy": "Only the representative-numbering math span changes; no representative macro or index changes.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\rep{M}[0],\\rep{M}[1],etc.$"
+        ],
+        "target_only": [
+          "$\\rep{M}[0],\\rep{M}[1]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+      "audit_artifacts": [
+        "B069_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/term-revisited.tex:24-26",
+        "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:27"
+      ],
+      "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-028",
+      "unit_id": "OLP-0364",
+      "classification": "class-substitution-codomain-implicit",
+      "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:49-54",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex",
+      "target_line_1based": 59,
+      "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "mode": "source-led-adjacent-Pashto-disclosure-with-exact-formula-exception-if-needed",
+      "translation_change": "State adjacent to the class-level definition that the raw substitution expression supplies its alpha-equivalence class as the result.",
+      "reason": "State adjacent to the class-level definition that the raw substitution expression supplies its alpha-equivalence class as the result.",
+      "counterexample": "Taking the printed right-hand side literally as one raw term gives a raw-term codomain while the defined substitution is on equivalence classes.",
+      "formula_policy": "Preserve every substitution macro and formula; qualify the type of its result in Pashto prose.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+      "audit_artifacts": [
+        "B069_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/term-revisited.tex:49-54",
+        "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:59"
+      ],
+      "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-029",
+      "unit_id": "OLP-0364",
+      "classification": "cited-alpha-uniqueness-proof-incomplete",
+      "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:56-57",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex",
+      "target_line_1based": 67,
+      "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "mode": "source-led-adjacent-Pashto-disclosure-with-exact-formula-exception-if-needed",
+      "translation_change": "Translate the cross-reference as the source's cited claim while stating that its preceding uniqueness proof still has the disclosed gap.",
+      "reason": "Translate the cross-reference as the source's cited claim while stating that its preceding uniqueness proof still has the disclosed gap.",
+      "counterexample": "The earlier proof's displayed equalities assert syntactic equality where only alpha-equivalence follows and compare only specially renamed representatives, as recorded by OLLAM-023.",
+      "formula_policy": "Keep the citation identifier unchanged; do not claim the printed proof settles representative independence.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+      "audit_artifacts": [
+        "B069_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/term-revisited.tex:56-57",
+        "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:67"
+      ],
+      "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-030",
+      "unit_id": "OLP-0364",
+      "classification": "dangling-first-row-equality",
+      "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:60-67",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex",
+      "target_line_1based": 78,
+      "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "mode": "source-led-adjacent-Pashto-disclosure-with-exact-formula-exception-if-needed",
+      "translation_change": "Remove the equals sign stranded at the end of the first labelled align row; keep the four expressions and both labels.",
+      "reason": "Remove the equals sign stranded at the end of the first labelled align row; keep the four expressions and both labels.",
+      "counterexample": "The source first row ends with equals and a line break but no right-hand side; the next row already starts the intended equality.",
+      "formula_policy": "Only the complete align math span changes in this one-character repair.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&=\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+      "audit_artifacts": [
+        "B069_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/term-revisited.tex:60-67",
+        "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:78"
+      ],
+      "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-031",
+      "unit_id": "OLP-0364",
+      "classification": "quotient-operation-descent-condition-implicit",
+      "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:85-92",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex",
+      "target_line_1based": 109,
+      "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "mode": "source-led-adjacent-Pashto-disclosure-with-exact-formula-exception-if-needed",
+      "translation_change": "State adjacent to the editorial paragraph that projecting a raw-term operation to classes requires its class result to be independent of representative choice.",
+      "reason": "State adjacent to the editorial paragraph that projecting a raw-term operation to classes requires its class result to be independent of representative choice.",
+      "counterexample": "A raw operation whose outputs have different alpha-equivalence classes on two representatives cannot define one operation on their common input class.",
+      "formula_policy": "Preserve all Lambda/lambda math spans and add only the missing prerequisite in Pashto prose.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+      "audit_artifacts": [
+        "B069_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/term-revisited.tex:85-92",
+        "ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:109"
+      ],
+      "decision_timing": "contemporaneous B069 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -7794,7 +8012,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Continue OLP-0364 onward; retain exact F/G equations and context-domain disclosures.",
+  "next_action": "Continue OLP-0365 onward; retain the OLP-0364 class result, proof caveat and exact formula exceptions.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -7849,7 +8067,8 @@
     "PS-OWNER-SEMANTIC-20260921-REPRESENTABILITY-IN-Q",
     "PS-OWNER-SEMANTIC-20260921-THEORIES-COMPUTABILITY",
     "OLI-PS300-QUANTIFIER-CALLS-20260921",
-    "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN"
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-DE-BRUIJN",
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS"
   ],
   "source_authorities": [
     {

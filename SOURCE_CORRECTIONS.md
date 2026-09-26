@@ -2561,3 +2561,48 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Clarification: The printed G rule describes recovering a standard lambda term from a de Bruijn term without stating the context must contain every referenced numeric position.
 - Evidence: With an empty context, G of index 0 calls for Gamma[0], which is absent; the rule has no value there.
 - The source equations are unchanged and the context condition is disclosed in adjacent Pashto prose.
+
+## OLLAM-027
+
+- Unit: OLP-0364.
+- Frozen source: content/lambda-calculus/syntax/term-revisited.tex:24-26 (SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:27 (SHA-256 71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44).
+- Treatment: Move the source's ordinary etc. from its math span into Pashto prose, leaving the two representative expressions intact.
+- Evidence: Retaining etc. inside math leaves untranslated English in the reader and typesets ordinary prose as mathematical italic letters.
+- Formula policy: Only the representative-numbering math span changes; no representative macro or index changes.
+
+## OLLAM-028
+
+- Unit: OLP-0364.
+- Frozen source: content/lambda-calculus/syntax/term-revisited.tex:49-54 (SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:59 (SHA-256 71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44).
+- Treatment: State adjacent to the class-level definition that the raw substitution expression supplies its alpha-equivalence class as the result.
+- Evidence: Taking the printed right-hand side literally as one raw term gives a raw-term codomain while the defined substitution is on equivalence classes.
+- Formula policy: Preserve every substitution macro and formula; qualify the type of its result in Pashto prose.
+
+## OLLAM-029
+
+- Unit: OLP-0364.
+- Frozen source: content/lambda-calculus/syntax/term-revisited.tex:56-57 (SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:67 (SHA-256 71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44).
+- Treatment: Translate the cross-reference as the source's cited claim while stating that its preceding uniqueness proof still has the disclosed gap.
+- Evidence: The earlier proof's displayed equalities assert syntactic equality where only alpha-equivalence follows and compare only specially renamed representatives, as recorded by OLLAM-023.
+- Formula policy: Keep the citation identifier unchanged; do not claim the printed proof settles representative independence.
+
+## OLLAM-030
+
+- Unit: OLP-0364.
+- Frozen source: content/lambda-calculus/syntax/term-revisited.tex:60-67 (SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:78 (SHA-256 71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44).
+- Treatment: Remove the equals sign stranded at the end of the first labelled align row; keep the four expressions and both labels.
+- Evidence: The source first row ends with equals and a line break but no right-hand side; the next row already starts the intended equality.
+- Formula policy: Only the complete align math span changes in this one-character repair.
+
+## OLLAM-031
+
+- Unit: OLP-0364.
+- Frozen source: content/lambda-calculus/syntax/term-revisited.tex:85-92 (SHA-256 6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67).
+- Pashto target: ps-Arab-PK/content/lambda-calculus/syntax/term-revisited.tex:109 (SHA-256 71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44).
+- Treatment: State adjacent to the editorial paragraph that projecting a raw-term operation to classes requires its class result to be independent of representative choice.
+- Evidence: A raw operation whose outputs have different alpha-equivalence classes on two representatives cannot define one operation on their common input class.
+- Formula policy: Preserve all Lambda/lambda math spans and add only the missing prerequisite in Pashto prose.

@@ -1,0 +1,54 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "status": "one source-reviewed editable draft; five adjacent quotient-term/layout disclosures",
+  "utc": "2026-09-26T18:14:13.240110+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-QUOTIENT-TERMS",
+  "scope": "OLP-0364 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+  "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+  "actions": [
+    {
+      "id": "OLLAM-027",
+      "classification": "ordinary-English-abbreviation-inside-math",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:24-26",
+      "target_line_1based": 27,
+      "counterexample": "Retaining etc. inside math leaves untranslated English in the reader and typesets ordinary prose as mathematical italic letters.",
+      "formula_policy": "Only the representative-numbering math span changes; no representative macro or index changes."
+    },
+    {
+      "id": "OLLAM-028",
+      "classification": "class-substitution-codomain-implicit",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:49-54",
+      "target_line_1based": 59,
+      "counterexample": "Taking the printed right-hand side literally as one raw term gives a raw-term codomain while the defined substitution is on equivalence classes.",
+      "formula_policy": "Preserve every substitution macro and formula; qualify the type of its result in Pashto prose."
+    },
+    {
+      "id": "OLLAM-029",
+      "classification": "cited-alpha-uniqueness-proof-incomplete",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:56-57",
+      "target_line_1based": 67,
+      "counterexample": "The earlier proof's displayed equalities assert syntactic equality where only alpha-equivalence follows and compare only specially renamed representatives, as recorded by OLLAM-023.",
+      "formula_policy": "Keep the citation identifier unchanged; do not claim the printed proof settles representative independence."
+    },
+    {
+      "id": "OLLAM-030",
+      "classification": "dangling-first-row-equality",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:60-67",
+      "target_line_1based": 78,
+      "counterexample": "The source first row ends with equals and a line break but no right-hand side; the next row already starts the intended equality.",
+      "formula_policy": "Only the complete align math span changes in this one-character repair."
+    },
+    {
+      "id": "OLLAM-031",
+      "classification": "quotient-operation-descent-condition-implicit",
+      "source_locator": "content/lambda-calculus/syntax/term-revisited.tex:85-92",
+      "target_line_1based": 109,
+      "counterexample": "A raw operation whose outputs have different alpha-equivalence classes on two representatives cannot define one operation on their common input class.",
+      "formula_policy": "Preserve all Lambda/lambda math spans and add only the missing prerequisite in Pashto prose."
+    }
+  ],
+  "semantic_review_count": 3,
+  "unresolved": "Exact Pakistani quotient-term compounds remain provisional; the earlier alpha-section uniqueness proof is incomplete and is not claimed as completed here.",
+  "next_action": "Continue source audit and translation at OLP-0365; preserve the frozen English bytes."
+}

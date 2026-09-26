@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 363,
-    "structural_pass": 363,
+    "draft_units": 364,
+    "structural_pass": 364,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B068-LAMBDA-DE-BRUIJN",
+  "batch": "PS-B069-LAMBDA-QUOTIENT-TERMS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11375,6 +11375,53 @@
         "OLLAM-026"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0364",
+      "path": "content/lambda-calculus/syntax/term-revisited.tex",
+      "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+      "translation_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-027",
+        "OLLAM-028",
+        "OLLAM-029",
+        "OLLAM-030",
+        "OLLAM-031"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\rep{M}[0],\\rep{M}[1],etc.$",
+          "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&=\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+        ],
+        "target_only": [
+          "$\\rep{M}[0],\\rep{M}[1]$",
+          "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -14497,6 +14544,24 @@
       "passage": "decoding G and one-step alpha invariance",
       "reverse_paraphrase": "Decoding a number reads that position from the context and chooses a fresh binder name. It requires every referenced position to exist. One-step alpha-convertible terms encode equally under a context containing the first term's free variables.",
       "finding": "All G equations and the final proposition are unchanged. Adjacent OLLAM-026 discloses the missing context-domain qualification without claiming an unrestricted inverse theorem."
+    },
+    {
+      "unit_id": "OLP-0364",
+      "passage": "alpha-equivalence classes and representatives",
+      "reverse_paraphrase": "Written terms now denote their alpha-equivalence classes, not one fixed raw term. Capital term letters denote classes; lower-case variable letters remain variables. Rep(M) selects an arbitrary member, and numbered variants select more representatives.",
+      "finding": "The source's two alpha-equivalent examples and all variable/class distinctions survive. The ordinary etc. was moved outside math under OLLAM-027."
+    },
+    {
+      "unit_id": "OLP-0364",
+      "passage": "class-level abstraction, free variables and substitution",
+      "reverse_paraphrase": "Abstraction and application return the classes of raw constructed terms. Free variables do not depend on the chosen representative. Class substitution takes the class of a defined raw substitution, but the cited proof of representative independence is not complete in the preceding source section.",
+      "finding": "Definitions, labels, cited references and math are preserved, with OLLAM-028/029 adjacent qualifications. No target sentence asserts the cited uniqueness proof is completed."
+    },
+    {
+      "unit_id": "OLP-0364",
+      "passage": "substitution example and quotient operations",
+      "reverse_paraphrase": "The raw substitution under lambda x is undefined for replacing x, but the same class has lambda z.z as a representative that satisfies the substitution conditions. Functions on quotient terms need representative-independent outputs.",
+      "finding": "OLLAM-030 removes only the dangling first-row equality sign; all other equation expressions and labels remain. OLLAM-031 states the necessary descent condition."
     }
   ],
   "builds": [

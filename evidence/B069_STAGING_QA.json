@@ -1,0 +1,37 @@
+{
+  "schema": "ps-b069-staging-qa/1",
+  "unit_id": "OLP-0364",
+  "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+  "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+  "target_sha256": "71a1d0033df12d97eaa1266aab235188ffba34fdc2a4d32e97fd92f53043ed44",
+  "source_blocks": 18,
+  "target_blocks": 18,
+  "checks": {
+    "source_sha256": true,
+    "all_eighteen_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "adjacent_disclosures": true,
+    "two_intentional_math_replacements": true
+  },
+  "all_checks_pass": true,
+  "source_only_math": [
+    "$\\rep{M}[0],\\rep{M}[1],etc.$",
+    "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&=\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+  ],
+  "target_only_math": [
+    "$\\rep{M}[0],\\rep{M}[1]$",
+    "\\begin{align}\\Subst{\\lambd[x][x]}{y}{x}&\\ollabel{eq:1}\\\\&=\\Subst{\\lambd[z][z]}{y}{x}\\ollabel{eq:2}\\\\&=\\lambd[z][\\Subst{z}{y}{x}]\\\\&=\\lambd[z][z]\\end{align}"
+  ],
+  "planned_actions": [
+    "OLLAM-027",
+    "OLLAM-028",
+    "OLLAM-029",
+    "OLLAM-030",
+    "OLLAM-031"
+  ]
+}

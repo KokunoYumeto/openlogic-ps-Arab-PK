@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 363 of 722 source units are translated drafts. This log contains 188 terminology entries and 291 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 364 of 722 source units are translated drafts. This log contains 189 terminology entries and 296 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1695,6 +1695,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: د ډي بروين شاخص; د تړونکي له مخې شمېرل شوے شاخص; بې‌نومه لامبډا ترم
 - Review question: Is the De Bruijn proper-name spelling and context terminology clear in Pakistani Pashto while distinguishing binder distance from program indices?
 - Timing: contemporaneous B068 owner source review and visually inspected Pakistani Pashto language consultation
+
+## TERM-LAMBDA-QUOTIENT-TERM
+
+- Type: terminology
+- Choice: د الفا-معادلتوب ټولګے / استازے / لامبډا-ترم / پر ټولګيو تعويض
+- Uncertainty: Pakistani scholarly prose and grammar visually inspected; Afghan equality and function language is a labelled regional comparator. None attests the exact quotient-term, representative or Lambda-term labels, which remain source-led and provisional.
+- Alternatives: معادلتوبي ټولګے; نمائنده ترم; د ټولګي ترم
+- Review question: Do class, representative and Lambda-term remain distinct from a raw lambda term in Pakistani Pashto?
+- Timing: contemporaneous B069 owner source review and visually inspected Pakistani Pashto language consultation
 
 ## DEC-OLFUN-001
 
@@ -4260,6 +4269,51 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal source without a qualification; literal equations with an adjacent Pashto context note
 - Review question: Does this note state the context condition without changing the equations or overstating the proposition?
 - Timing: contemporaneous B068 owner source review before cumulative acceptance
+
+## DEC-OLLAM-027
+
+- Type: source-correction
+- Choice: Move the source's ordinary etc. from its math span into Pashto prose, leaving the two representative expressions intact.
+- Uncertainty: The source issue is directly checked; Pashto wording remains open to later specialist review.
+- Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
+- Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
+- Timing: contemporaneous B069 owner source review before cumulative acceptance
+
+## DEC-OLLAM-028
+
+- Type: source-correction
+- Choice: State adjacent to the class-level definition that the raw substitution expression supplies its alpha-equivalence class as the result.
+- Uncertainty: The source issue is directly checked; Pashto wording remains open to later specialist review.
+- Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
+- Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
+- Timing: contemporaneous B069 owner source review before cumulative acceptance
+
+## DEC-OLLAM-029
+
+- Type: source-correction
+- Choice: Translate the cross-reference as the source's cited claim while stating that its preceding uniqueness proof still has the disclosed gap.
+- Uncertainty: The source issue is directly checked; Pashto wording remains open to later specialist review.
+- Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
+- Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
+- Timing: contemporaneous B069 owner source review before cumulative acceptance
+
+## DEC-OLLAM-030
+
+- Type: source-correction
+- Choice: Remove the equals sign stranded at the end of the first labelled align row; keep the four expressions and both labels.
+- Uncertainty: The source issue is directly checked; Pashto wording remains open to later specialist review.
+- Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
+- Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
+- Timing: contemporaneous B069 owner source review before cumulative acceptance
+
+## DEC-OLLAM-031
+
+- Type: source-correction
+- Choice: State adjacent to the editorial paragraph that projecting a raw-term operation to classes requires its class result to be independent of representative choice.
+- Uncertainty: The source issue is directly checked; Pashto wording remains open to later specialist review.
+- Alternatives: literal source without a qualification; adjacent qualification with the documented formula policy
+- Review question: Does the note identify this exact source issue and preserve the recorded formula policy?
+- Timing: contemporaneous B069 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
