@@ -2770,3 +2770,31 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:64-73 (SHA-256 dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex:76 (SHA-256 cd49423f5589808697724e39b23091b074b54efcbbe9f2c135d92ce24586101a).
 - پرېکړه: Use g as the recurrence step function on the right side of the successor equation. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-055
+
+- واحد: OLP-0379.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/fixpoints.tex:23-31 (SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:35 (SHA-256 e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7).
+- پرېکړه: Use b as the repeated summand in the illustrative multiplication term, so the term depends on both inputs. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-056
+
+- واحد: OLP-0379.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/fixpoints.tex:48-59 (SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:75 (SHA-256 e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7).
+- پرېکړه: Disclose that two terms computing the same numeric function need not be beta-equal; a fixed-point equation is an additional condition. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-057
+
+- واحد: OLP-0379.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/fixpoints.tex:157-173 (SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:188 (SHA-256 e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7).
+- پرېکړه: Use Y_C in the two comparison formulas that describe Church's combinator rather than Turing's Y. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-058
+
+- واحد: OLP-0379.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/fixpoints.tex:33-46 (SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:50 (SHA-256 e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7).
+- پرېکړه: Disclose that the displayed first row closes the lambda abstraction before the recursive branch, so the two-row unrolling must be read schematically. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.

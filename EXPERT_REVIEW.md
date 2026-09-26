@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 378 of 722 source units are translated drafts. This log contains 194 terminology entries and 319 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 379 of 722 source units are translated drafts. This log contains 194 terminology entries and 323 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4540,6 +4540,38 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The assumption gives g n+2 inputs and the induction proof computes g(n,m,h(n,m)); h itself has only n+1 inputs.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B076 owner source review before cumulative acceptance
+
+## DEC-OLLAM-055
+
+- Type: source-correction
+- Choice: Use b as the repeated summand in the illustrative multiplication term, so the term depends on both inputs.
+- Evidence: The source repeats the earlier alternate-multiplication typo: a is both count and summand and b is unused.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B077 owner source review before cumulative acceptance
+
+## DEC-OLLAM-056
+
+- Type: source-correction
+- Choice: Disclose that two terms computing the same numeric function need not be beta-equal; a fixed-point equation is an additional condition.
+- Evidence: The source moves from shared representation of factorial to a beta-equality statement without a term equality proof.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B077 owner source review before cumulative acceptance
+
+## DEC-OLLAM-057
+
+- Type: source-correction
+- Choice: Use Y_C in the two comparison formulas that describe Church's combinator rather than Turing's Y.
+- Evidence: The following proof defines Y_C and shows Y_Cg and g(Y_Cg) reduce to g(VV); the source's two Yg formulas name the wrong combinator.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B077 owner source review before cumulative acceptance
+
+## DEC-OLLAM-058
+
+- Type: source-correction
+- Choice: Disclose that the displayed first row closes the lambda abstraction before the recursive branch, so the two-row unrolling must be read schematically.
+- Evidence: The source's line grouping is not one well-grouped lambda term even though its intended point is continuing self-reference.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B077 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 378,
-    "structural_pass": 378,
+    "draft_units": 379,
+    "structural_pass": 379,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B076-LAMBDA-PRIMITIVE-RECURSIVE-FUNCTIONS",
+  "batch": "PS-B077-LAMBDA-FIXED-POINTS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11941,6 +11941,54 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0379",
+      "path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "translation_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-055",
+        "OLLAM-056",
+        "OLLAM-057",
+        "OLLAM-058"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,a)0]\\]",
+          "$Yg\\equal[\\beta]g(Yg)$",
+          "$Yg\\bredg(Yg)$"
+        ],
+        "target_only": [
+          "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,b)0]\\]",
+          "$Y_Cg\\equal[\\beta]g(Y_Cg)$",
+          "$Y_Cg\\bredg(Y_Cg)$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -15309,6 +15357,36 @@
       "passage": "closure proposition",
       "reverse_paraphrase": "The final second projection returns the encoded h value; basis and closure under composition and primitive recursion yield all primitive recursive functions.",
       "finding": "Final long calculation and all lemma references remain literal."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial self-reference",
+      "reverse_paraphrase": "A direct factorial equation mentions Fac in its own defining right side; substituting the abbreviation into itself never yields a finite pure lambda term.",
+      "finding": "OLLAM-055 repairs the copied Mult summand; OLLAM-058 discloses the schematic grouping of the unchanged unrolling display."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial functional and beta equality",
+      "reverse_paraphrase": "Fac' sends a factorial representative to another representative; only a separate beta-equivalence condition makes a term a fixed point of Fac'.",
+      "finding": "OLLAM-056 distinguishes numeric-function representation from beta equality without changing math."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "Turing Y and infinite unfolding",
+      "reverse_paraphrase": "Turing's Y reduces from Yg to g(Yg), yielding a fixed point; one infinite reduction path does not rule out a terminating path on an applied argument.",
+      "finding": "Y term, proof, beta relation and strategy caveat remain aligned."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial trace and general recursion",
+      "reverse_paraphrase": "Y Fac' unfolds factorial at 3,2,1 and reaches 1 at zero; for a general recursive equation Y of the abstraction gives a term G satisfying the substituted equation.",
+      "finding": "All displayed reductions and substitution notation remain literal."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "Church Y comparison",
+      "reverse_paraphrase": "Church's Y_C and g(Y_Cg) reach common reduct g(VV), making them beta-equal without the same direct reduction shown for Turing's Y.",
+      "finding": "OLLAM-057 changes two inline symbols from Y to Y_C; V term and common reduct remain literal."
     }
   ],
   "builds": [

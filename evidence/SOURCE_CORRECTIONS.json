@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0378; B076 three exact composition/recurrence formula repairs; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T21:23:03.208822+00:00",
+  "status": "adopted through OLP-0379; B077 three exact math-span repairs and two adjacent disclosures; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T22:20:16.354627+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9017,6 +9017,184 @@
       ],
       "decision_timing": "contemporaneous B076 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-055",
+      "unit_id": "OLP-0379",
+      "classification": "copied-multiplication-ignores-second-input",
+      "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "source_locator": "content/lambda-calculus/lambda-definability/fixpoints.tex:23-31",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "target_line_1based": 35,
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Use b as the repeated summand in the illustrative multiplication term, so the term depends on both inputs.",
+      "reason": "The source repeats the earlier alternate-multiplication typo: a is both count and summand and b is unused.",
+      "counterexample": "At a=2,b=3 the source gives 4, whereas the intended product is 6.",
+      "formula_policy": "Exactly the listed math span(s) are corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,a)0]\\]"
+        ],
+        "target_only": [
+          "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,b)0]\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+      "audit_artifacts": [
+        "B077_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/fixpoints.tex:23-31",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:35"
+      ],
+      "decision_timing": "contemporaneous B077 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-056",
+      "unit_id": "OLP-0379",
+      "classification": "representation-does-not-imply-beta-equality",
+      "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "source_locator": "content/lambda-calculus/lambda-definability/fixpoints.tex:48-59",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "target_line_1based": 75,
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "mode": "adjacent-Pashto-source-clarification",
+      "translation_change": "Disclose that two terms computing the same numeric function need not be beta-equal; a fixed-point equation is an additional condition.",
+      "reason": "The source moves from shared representation of factorial to a beta-equality statement without a term equality proof.",
+      "counterexample": "Extensionally equal numeral computations can be represented by syntactically different terms without beta equality.",
+      "formula_policy": "All math spans and identifiers remain source-equivalent; only adjacent explanatory prose is added.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+      "audit_artifacts": [
+        "B077_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/fixpoints.tex:48-59",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:75"
+      ],
+      "decision_timing": "contemporaneous B077 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-057",
+      "unit_id": "OLP-0379",
+      "classification": "Church-Y-versus-Turing-Y-symbol",
+      "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "source_locator": "content/lambda-calculus/lambda-definability/fixpoints.tex:157-173",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "target_line_1based": 188,
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Use Y_C in the two comparison formulas that describe Church's combinator rather than Turing's Y.",
+      "reason": "The following proof defines Y_C and shows Y_Cg and g(Y_Cg) reduce to g(VV); the source's two Yg formulas name the wrong combinator.",
+      "counterexample": "Turing's Yg has the direct reduction that the paragraph says Church's version lacks.",
+      "formula_policy": "Exactly the listed math span(s) are corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "$Yg\\equal[\\beta]g(Yg)$",
+          "$Yg\\bredg(Yg)$"
+        ],
+        "target_only": [
+          "$Y_Cg\\equal[\\beta]g(Y_Cg)$",
+          "$Y_Cg\\bredg(Y_Cg)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+      "audit_artifacts": [
+        "B077_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/fixpoints.tex:157-173",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:188"
+      ],
+      "decision_timing": "contemporaneous B077 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-058",
+      "unit_id": "OLP-0379",
+      "classification": "schematic-unrolling-grouping",
+      "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "source_locator": "content/lambda-calculus/lambda-definability/fixpoints.tex:33-46",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "target_line_1based": 50,
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "mode": "adjacent-Pashto-source-clarification",
+      "translation_change": "Disclose that the displayed first row closes the lambda abstraction before the recursive branch, so the two-row unrolling must be read schematically.",
+      "reason": "The source's line grouping is not one well-grouped lambda term even though its intended point is continuing self-reference.",
+      "counterexample": "Treating the two rows as a single closed expression obscures the branch's scope and could be mistaken for a valid term equation.",
+      "formula_policy": "All math spans and identifiers remain source-equivalent; only adjacent explanatory prose is added.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+      "audit_artifacts": [
+        "B077_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/fixpoints.tex:33-46",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:50"
+      ],
+      "decision_timing": "contemporaneous B077 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9024,7 +9202,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0379 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0380 onward while validating the 372-unit coherent reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

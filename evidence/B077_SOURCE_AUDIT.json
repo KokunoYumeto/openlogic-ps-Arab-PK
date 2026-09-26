@@ -1,0 +1,88 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-26T22:20:16.354627+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+  "batch_id": "PS-B077-LAMBDA-FIXED-POINTS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0379",
+      "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "source_bytes": 6921,
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+      "paired_blocks": 18
+    }
+  ],
+  "notes_path": "work/B077_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "16426856d688cc8e88e4d282d5d848929bd66c215d2deb92a6935beb227dc644",
+  "consultation_path": "work/B077_CANON_CONSULTATION.md",
+  "consultation_sha256": "5cd316c39e5cecc313909c83812a4eaea32ea16d5eb1d0ed161bb9592e2e2409",
+  "staging_qa_sha256": "bcf29160604bd65910752ff700f9d4ab1dd553fdd99d9e02076ecf01f7603238",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0379",
+      "source_lines": "13-31",
+      "kind": "copied-multiplication-ignores-second-input",
+      "action": "OLLAM-055",
+      "finding": "The illustrative Mult term repeats the prior alternate multiplication error and ignores b; one exact displayed math span uses b as the summand."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "source_lines": "33-46",
+      "kind": "schematic-unrolling-grouping",
+      "action": "OLLAM-058",
+      "finding": "The two-line unrolling display closes the first lambda branch before the recursive branch; unchanged math is disclosed as schematic."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "source_lines": "48-63",
+      "kind": "representation-versus-beta-equality",
+      "action": "OLLAM-056",
+      "finding": "Two terms may compute the same numeric function without beta equality; the target states this caveat beside the source claim and leaves formulas literal."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "source_lines": "65-155",
+      "kind": "Y-fixed-point-and-general-recursion",
+      "finding": "Turing Y term, proof, infinite unfolding, factorial trace and general recursive construction preserve their displayed formulas and labels."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "source_lines": "157-173",
+      "kind": "Church-Y-versus-Turing-Y-symbol",
+      "action": "OLLAM-057",
+      "finding": "The comparison discusses Church's Y_C but mistakenly writes Turing's Y in two inline formulas; exactly two math spans are corrected."
+    }
+  ],
+  "formula_policy": "Exactly three enumerated math spans (OLLAM-055 and two under OLLAM-057) are corrected; OLLAM-056/058 add adjacent Pashto disclosures only. All other formulas, identifiers, structural macros and term tokens remain source-equivalent. Frozen English bytes are unchanged.",
+  "unresolved": "The source chapter is experimental and later imports remain untranslated. The unrolling display is schematic and a source claim conflates extensional representation with beta equality; these are disclosed without claiming a new proof or human specialist approval.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0379, then continue minimization at OLP-0380."
+}

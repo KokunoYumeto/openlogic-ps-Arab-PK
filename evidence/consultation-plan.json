@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B076-LAMBDA-PRIMITIVE-RECURSIVE-FUNCTIONS",
-  "status": "OLP-0378 source-reviewed and staged; 21 paired blocks, three exact formula corrections and five reverse-paraphrase samples",
+  "batch_id": "PS-B077-LAMBDA-FIXED-POINTS",
+  "status": "OLP-0379 source-reviewed and staged; 18 paired blocks, three exact math-span corrections, two adjacent disclosures and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7981,6 +7981,22 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0379": {
+      "batch_id": "PS-B077-LAMBDA-FIXED-POINTS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-FIXED-POINT-SEARCH",
+        "TERM-LAMBDA-CHURCH-NUMERALS"
+      ],
+      "scope": "All 18 paired fixed-point blocks: factorial self-reference, Turing Y theorem and trace, general recursive construction, and Church Y comparison. OLLAM-055/057 make three exact math-span repairs; OLLAM-056/058 disclose two source semantic/display gaps. Pakistani prose and grammar govern usage, with Afghan function prose labelled only as a regional comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11349,6 +11365,36 @@
       "passage": "closure proposition",
       "reverse_paraphrase": "The final second projection returns the encoded h value; basis and closure under composition and primitive recursion yield all primitive recursive functions.",
       "finding": "Final long calculation and all lemma references remain literal."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial self-reference",
+      "reverse_paraphrase": "A direct factorial equation mentions Fac in its own defining right side; substituting the abbreviation into itself never yields a finite pure lambda term.",
+      "finding": "OLLAM-055 repairs the copied Mult summand; OLLAM-058 discloses the schematic grouping of the unchanged unrolling display."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial functional and beta equality",
+      "reverse_paraphrase": "Fac' sends a factorial representative to another representative; only a separate beta-equivalence condition makes a term a fixed point of Fac'.",
+      "finding": "OLLAM-056 distinguishes numeric-function representation from beta equality without changing math."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "Turing Y and infinite unfolding",
+      "reverse_paraphrase": "Turing's Y reduces from Yg to g(Yg), yielding a fixed point; one infinite reduction path does not rule out a terminating path on an applied argument.",
+      "finding": "Y term, proof, beta relation and strategy caveat remain aligned."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "factorial trace and general recursion",
+      "reverse_paraphrase": "Y Fac' unfolds factorial at 3,2,1 and reaches 1 at zero; for a general recursive equation Y of the abstraction gives a term G satisfying the substituted equation.",
+      "finding": "All displayed reductions and substitution notation remain literal."
+    },
+    {
+      "unit_id": "OLP-0379",
+      "passage": "Church Y comparison",
+      "reverse_paraphrase": "Church's Y_C and g(Y_Cg) reach common reduct g(VV), making them beta-equal without the same direct reduction shown for Turing's Y.",
+      "finding": "OLLAM-057 changes two inline symbols from Y to Y_C; V term and common reduct remain literal."
     }
   ]
 }

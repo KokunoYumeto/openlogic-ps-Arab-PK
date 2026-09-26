@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b077-staging-qa/1",
+  "unit_id": "OLP-0379",
+  "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+  "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+  "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7",
+  "source_blocks": 18,
+  "target_blocks": 18,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,a)0]\\]",
+    "$Yg\\equal[\\beta]g(Yg)$",
+    "$Yg\\bredg(Yg)$"
+  ],
+  "target_only_math": [
+    "\\[\\fn{Mult}\\ident\\lambd[ab][a(\\fn{Add}\\,b)0]\\]",
+    "$Y_Cg\\equal[\\beta]g(Y_Cg)$",
+    "$Y_Cg\\bredg(Y_Cg)$"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

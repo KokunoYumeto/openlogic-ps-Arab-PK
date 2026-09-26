@@ -1,0 +1,27 @@
+{
+  "schema": "ps-b077-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-26T22:29:54.639576+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-LAMBDA-FIXED-POINTS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0379",
+      "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+      "target_sha256": "e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7"
+    }
+  ],
+  "audit_sha256": "5b895c32206daff9262207a7ec1584cc91aabc20a76fe9fd693054eb6fcc92dc",
+  "notes_sha256": "16426856d688cc8e88e4d282d5d848929bd66c215d2deb92a6935beb227dc644",
+  "consultation_sha256": "5cd316c39e5cecc313909c83812a4eaea32ea16d5eb1d0ed161bb9592e2e2409",
+  "documented_formula_corrections": [
+    "OLLAM-055",
+    "OLLAM-057"
+  ],
+  "other_disclosures": [
+    "OLLAM-056",
+    "OLLAM-058"
+  ],
+  "unresolved": "The source chapter is experimental and later imports remain untranslated. The unrolling display is schematic and a source claim conflates extensional representation with beta equality; these are disclosed without claiming a new proof or human specialist approval.",
+  "next_action": "Continue lambda-definability translation from OLP-0380; validate the 372-unit reader candidate separately."
+}
