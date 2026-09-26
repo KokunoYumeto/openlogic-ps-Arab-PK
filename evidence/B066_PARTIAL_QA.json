@@ -1,0 +1,69 @@
+{
+  "schema": "ps-b066-partial-qa/1",
+  "status": "PASS",
+  "translated_partial_units": 1,
+  "all_checks_pass": true,
+  "unit": {
+    "unit_id": "OLP-0361",
+    "path": "content/lambda-calculus/syntax/substitution.tex",
+    "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+    "translation_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+    "source_blocks": 22,
+    "target_blocks": 22,
+    "checks": {
+      "block_count": true,
+      "environments": true,
+      "identifiers": true,
+      "structural_macros": true,
+      "math": true,
+      "tokens": true,
+      "nfc": true,
+      "no_replacement_character": true,
+      "named_token_macros": true,
+      "no_ordinary_english": true
+    },
+    "residual_english": [
+      "OLLAM"
+    ],
+    "allowed_residual_english": [
+      "OLLAM"
+    ],
+    "unexpected_residual_english": [],
+    "extra_locale_macros": {},
+    "source_correction_ids": [
+      "OLLAM-011",
+      "OLLAM-012",
+      "OLLAM-013",
+      "OLLAM-014",
+      "OLLAM-015",
+      "OLLAM-016"
+    ],
+    "status": "structural-pass",
+    "math_diff": {
+      "source_only": [
+        "$x\\notin\\FV{Q}$",
+        "\\begin{multline*}\\FV{\\Subst{\\lambd[y][P]}{N}{x}}=\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}&&\\text{LOCALIZED}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{P}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[y][P]}&&\\text{LOCALIZED}\\end{aligned}\\end{multline*}",
+        "$x\\in\\FV{M})$",
+        "$\\Subst{(PQ)}{N}{y}$",
+        "$y\\in\\FV{\\lambd[x][P]}$",
+        "$y\\in\\FV{P}$",
+        "\\begin{multline*}\\FV{\\Subst{(\\lambd[y][P])}{N}{x}}=\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}\\\\&=((\\FV{P}\\setminus\\{y\\})\\cup(\\FV{N}\\setminus\\{x\\})&&\\text{LOCALIZED}\\\\&=(\\FV{P}\\setminus\\{x,y\\})\\cup\\FV{N}&&x\\notin\\FV{N}\\\\&=(\\FV{\\lambd[y][P]}\\setminus\\{x\\})\\cup\\FV{N}\\end{aligned}\\end{multline*}"
+      ],
+      "target_only": [
+        "$x\\notin\\FV{P}$",
+        "\\begin{multline*}\\FV{\\Subst{\\lambd[y][P]}{N}{x}}\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}&&\\text{LOCALIZED}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{P}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[y][P]}&&\\text{LOCALIZED}\\end{aligned}\\end{multline*}",
+        "$x\\in\\FV{M}$",
+        "$\\Subst{(PQ)}{N}{x}$",
+        "$x\\in\\FV{P}$",
+        "$x\\in\\FV{\\lambd[y][P]}$",
+        "\\begin{multline*}\\FV{\\Subst{(\\lambd[y][P])}{N}{x}}\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}\\\\&=((\\FV{P}\\setminus\\{x\\})\\cup\\FV{N})\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=(\\FV{P}\\setminus\\{x,y\\})\\cup\\FV{N}&&y\\notin\\FV{N}\\\\&=(\\FV{\\lambd[y][P]}\\setminus\\{x\\})\\cup\\FV{N}\\end{aligned}\\end{multline*}",
+        "$z\\neqx$"
+      ],
+      "expected_by_source_correction": true
+    }
+  },
+  "source_blocks": 22,
+  "aligned_blocks": 22,
+  "canon_use_records": 18,
+  "staging_qa_sha256": "6875b378dec257ea04a5852446689112280325e914c2ff1f509fdc580e4c552e"
+}

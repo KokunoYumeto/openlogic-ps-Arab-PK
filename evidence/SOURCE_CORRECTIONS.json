@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0360; B065 scope-body source repair disclosed; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T03:00:17.244215+00:00",
+  "status": "adopted through OLP-0361; six B066 substitution repairs disclosed; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T03:24:25.039292+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -7072,6 +7072,276 @@
       ],
       "decision_timing": "contemporaneous B065 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-011",
+      "unit_id": "OLP-0361",
+      "classification": "partial-substitution-example-conflicts-with-definition",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:35-40",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 43,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The source describes the unchanged lambda x.x as the result of substituting y for x into lambda x.x, although its own abstraction rule leaves that same-binder substitution undefined.",
+      "reason": "The source describes the unchanged lambda x.x as the result of substituting y for x into lambda x.x, although its own abstraction rule leaves that same-binder substitution undefined.",
+      "counterexample": "For M=lambda x.x and a replacement y distinct from x, clause 4 fails x != y when its binder y is instantiated as x. Thus the formal substitution has no value, even though replacing only free occurrences would leave the abstraction unchanged.",
+      "formula_policy": "Keep the formal partial rule. Explain the unchanged abstraction as the intended free-occurrence meaning while stating that this operation is undefined in the example.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:35-40",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:43"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-012",
+      "unit_id": "OLP-0361",
+      "classification": "first-free-variable-proof-undefined-Q-and-double-equality",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:73-85",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 94,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The abstraction case invokes FV(Q) although Q is absent from that case; it needs FV(P). The displayed chain also prints two opening equality signs.",
+      "reason": "The abstraction case invokes FV(Q) although Q is absent from that case; it needs FV(P). The displayed chain also prints two opening equality signs.",
+      "counterexample": "If x != y and x is absent from FV(lambda y.P), then x is absent from FV(P), allowing the induction hypothesis. Q is not bound anywhere in this proof case.",
+      "formula_policy": "Change the inline condition to x not in FV(P) and remove only the redundant first equality sign from the first multline display.",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\notin\\FV{Q}$",
+          "\\begin{multline*}\\FV{\\Subst{\\lambd[y][P]}{N}{x}}=\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}&&\\text{LOCALIZED}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{P}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[y][P]}&&\\text{LOCALIZED}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "$x\\notin\\FV{P}$",
+          "\\begin{multline*}\\FV{\\Subst{\\lambd[y][P]}{N}{x}}\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}&&\\text{LOCALIZED}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{P}\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=\\FV{\\lambd[y][P]}&&\\text{LOCALIZED}\\end{aligned}\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:73-85",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:94"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-013",
+      "unit_id": "OLP-0361",
+      "classification": "free-variable-theorem-extra-parenthesis",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:95-98",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 111,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The second free-variable theorem has a spurious closing parenthesis in its hypothesis x in FV(M).",
+      "reason": "The second free-variable theorem has a spurious closing parenthesis in its hypothesis x in FV(M).",
+      "counterexample": "The printed inline expression x in FV(M)) has no matching opening parenthesis; the theorem concerns membership in FV(M).",
+      "formula_policy": "Remove only the unmatched closing parenthesis; preserve the theorem's quantifier-free condition and equation.",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\in\\FV{M})$"
+        ],
+        "target_only": [
+          "$x\\in\\FV{M}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:95-98",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:111"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-014",
+      "unit_id": "OLP-0361",
+      "classification": "application-case-substitution-variable-mismatch",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:103-108",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 124,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The application case tests substitution for y although the theorem and both component substitutions use x.",
+      "reason": "The application case tests substitution for y although the theorem and both component substitutions use x.",
+      "counterexample": "Definedness of Subst(PQ,N,y) does not establish definedness of the claimed Subst(P,N,x) and Subst(Q,N,x). The induction case must begin with substitution for x.",
+      "formula_policy": "Change only the substitution variable in the first application-case formula from y to x.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Subst{(PQ)}{N}{y}$"
+        ],
+        "target_only": [
+          "$\\Subst{(PQ)}{N}{x}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:103-108",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:124"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-015",
+      "unit_id": "OLP-0361",
+      "classification": "abstraction-case-hypothesis-and-set-algebra-errors",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:109-125",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 145,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The second proof swaps x and y in the abstraction hypothesis, applies induction to the wrong sets, omits a closing parenthesis, cites the wrong side condition and duplicates the opening equality.",
+      "reason": "The second proof swaps x and y in the abstraction hypothesis, applies induction to the wrong sets, omits a closing parenthesis, cites the wrong side condition and duplicates the opening equality.",
+      "counterexample": "Take distinct x,y,z, P=x and N=z. The substitution in lambda y.x is defined and its free-variable set is {z}; the source's intermediate ((FV(P) minus {y}) union (FV(N) minus {x})) gives {x,z}. The correct intermediate is (((FV(P) minus {x}) union FV(N)) minus {y}), simplified using y absent from FV(N).",
+      "formula_policy": "Use x in FV(lambda y.P), hence x in FV(P); replace the complete display by the corrected induction chain with y absent from FV(N), one opening equality and balanced parentheses.",
+      "qa_math_exception": {
+        "source_only": [
+          "$y\\in\\FV{\\lambd[x][P]}$",
+          "$y\\in\\FV{P}$",
+          "\\begin{multline*}\\FV{\\Subst{(\\lambd[y][P])}{N}{x}}=\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}\\\\&=((\\FV{P}\\setminus\\{y\\})\\cup(\\FV{N}\\setminus\\{x\\})&&\\text{LOCALIZED}\\\\&=(\\FV{P}\\setminus\\{x,y\\})\\cup\\FV{N}&&x\\notin\\FV{N}\\\\&=(\\FV{\\lambd[y][P]}\\setminus\\{x\\})\\cup\\FV{N}\\end{aligned}\\end{multline*}"
+        ],
+        "target_only": [
+          "$x\\in\\FV{P}$",
+          "$x\\in\\FV{\\lambd[y][P]}$",
+          "\\begin{multline*}\\FV{\\Subst{(\\lambd[y][P])}{N}{x}}\\\\\\begin{aligned}&=\\FV{\\lambd[y][\\Subst{P}{N}{x}]}\\\\&=\\FV{\\Subst{P}{N}{x}}\\setminus\\{y\\}\\\\&=((\\FV{P}\\setminus\\{x\\})\\cup\\FV{N})\\setminus\\{y\\}&&\\text{LOCALIZED}\\\\&=(\\FV{P}\\setminus\\{x,y\\})\\cup\\FV{N}&&y\\notin\\FV{N}\\\\&=(\\FV{\\lambd[y][P]}\\setminus\\{x\\})\\cup\\FV{N}\\end{aligned}\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:109-125",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:145"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-016",
+      "unit_id": "OLP-0361",
+      "classification": "inverse-proof-omitted-binder-conditions",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:163-170",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex",
+      "target_line_1based": 194,
+      "target_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "translation_change": "The inverse-substitution proof mentions only z != y, leaving implicit z != x, the body substitution's definedness and the free-variable premise needed for induction.",
+      "reason": "The inverse-substitution proof mentions only z != y, leaving implicit z != x, the body substitution's definedness and the free-variable premise needed for induction.",
+      "counterexample": "Defined Subst(lambda z.N,y,x) yields z != x, z != y and defined Subst(N,y,x). The theorem's y absent from FV(lambda z.N), together with z != y, gives y absent from FV(N). Both inequalities also justify definedness of the reverse abstraction step.",
+      "formula_policy": "Keep the displayed inverse calculation; add the missing binder and induction conditions in adjacent prose. The only new standalone mathematical formula is z != x.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$z\\neqx$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+      "audit_artifacts": [
+        "content/lambda-calculus/syntax/substitution.tex:163-170",
+        "ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:194"
+      ],
+      "decision_timing": "contemporaneous B066 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -7079,7 +7349,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Advance OLP-0361 onward and report checked source findings to manager; keep frozen source unchanged.",
+  "next_action": "Advance OLP-0362 onward and report checked source findings to manager; keep frozen source unchanged.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

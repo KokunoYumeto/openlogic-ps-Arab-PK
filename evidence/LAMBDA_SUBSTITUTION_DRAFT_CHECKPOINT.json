@@ -1,0 +1,51 @@
+{
+  "schema": "ps-lambda-substitution-draft/1",
+  "utc": "2026-09-26T03:37:22.374651+00:00",
+  "batch_id": "PS-B066-LAMBDA-SUBSTITUTION",
+  "status": "accepted B066 editable draft; cumulative source, canon, structural and decision replay QA PASS",
+  "units": [
+    {
+      "unit_id": "OLP-0361",
+      "path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "translation_sha256": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "source_correction_ids": [
+        "OLLAM-011",
+        "OLLAM-012",
+        "OLLAM-013",
+        "OLLAM-014",
+        "OLLAM-015",
+        "OLLAM-016"
+      ],
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true
+    }
+  ],
+  "coverage": {
+    "total": 722,
+    "previous_draft_units": 360,
+    "current_reviewed_draft_units": 1,
+    "cumulative_draft_units": 361,
+    "remaining_units": 361,
+    "public_reader_units": 255
+  },
+  "model_attribution": {
+    "model": "gpt-6-sol",
+    "effort": "ultra",
+    "session_metadata_record_sha256": "5bf4dbf9e049b9322503e12c0d8f1820cc1d5a49b246705077e074d832f830e1"
+  },
+  "evidence": {
+    "source_check_sha256": "adeeaf397c4b27e717b195f8950cf3b04372913b191e92f4a6399bfd71569f59",
+    "canon_consultation_sha256": "0cecd11fe2369a5eccb10286ce30ab5847b802d4cc069741375dbb9580fbb246",
+    "source_corrections_sha256": "67ee6c4e53c0693a9fb6a14b5435c4b5c19f8bd031a7dd42de24e33579b07266",
+    "partial_qa_sha256": "eeda59a1215517d7e50eae3c56a6acc0150f2e93adb07e3d188400cb88f41d21",
+    "qa_sha256": "d35e8baa0beb018e4892725553af6c4a0ab7a9d38986d2f497ef04cb996f34ab",
+    "alignment_sha256": "779222927975a84344a7c09b1bd3c9adb172574ca8e54806156d40efa63f7f0f",
+    "canon_use_sha256": "425a3b3da0e7de0b073c67287f5cc830afab6dab811b725f9d084c51617cc06f",
+    "term_decisions_sha256": "7fd067678001d8fd5d47820beb06ccfbc8a5c69bbaf6ca410f5448dd3005371d",
+    "canonical_decisions_sha256": "4be86ae84f8df8e9f322527ec8ecb1882f1c709e190f8bb125b8d162733f1e0a",
+    "canonical_qa_sha256": "632bf0fa6f6febcf860444aa596d6b7174cf60ad5467a90e1767ab53e2543c77",
+    "canonical_replay_sha256": "ea62e416d411871f2ea5ffbff388bfbafb9a6355be6bedab1174476c7d69e8b8"
+  },
+  "next_action": "Commit/push B066; audit alpha conversion OLP-0362 before drafting; finish coherent v0.7 PDF/EPUB/direct-TeX/source release when guarded TeX is available."
+}

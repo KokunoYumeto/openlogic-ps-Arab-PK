@@ -2417,3 +2417,57 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Correction: The source defines the scope of lambda x within an enclosing term N as the corresponding occurrence of N. The scope is the body occurrence M; the target corrects only that symbol.
 - Counterexample or exact defect: In the term (lambda x.x)y, the enclosing term N includes the outer application and y, but the scope of lambda x is only its body x. The source's N would incorrectly place y inside the abstraction's scope.
 - The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-011
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:35-40` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:43` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The source describes the unchanged lambda x.x as the result of substituting y for x into lambda x.x, although its own abstraction rule leaves that same-binder substitution undefined.
+- Counterexample or exact defect: For M=lambda x.x and a replacement y distinct from x, clause 4 fails x != y when its binder y is instantiated as x. Thus the formal substitution has no value, even though replacing only free occurrences would leave the abstraction unchanged.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-012
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:73-85` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:94` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The abstraction case invokes FV(Q) although Q is absent from that case; it needs FV(P). The displayed chain also prints two opening equality signs.
+- Counterexample or exact defect: If x != y and x is absent from FV(lambda y.P), then x is absent from FV(P), allowing the induction hypothesis. Q is not bound anywhere in this proof case.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-013
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:95-98` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:111` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The second free-variable theorem has a spurious closing parenthesis in its hypothesis x in FV(M).
+- Counterexample or exact defect: The printed inline expression x in FV(M)) has no matching opening parenthesis; the theorem concerns membership in FV(M).
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-014
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:103-108` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:124` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The application case tests substitution for y although the theorem and both component substitutions use x.
+- Counterexample or exact defect: Definedness of Subst(PQ,N,y) does not establish definedness of the claimed Subst(P,N,x) and Subst(Q,N,x). The induction case must begin with substitution for x.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-015
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:109-125` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:145` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The second proof swaps x and y in the abstraction hypothesis, applies induction to the wrong sets, omits a closing parenthesis, cites the wrong side condition and duplicates the opening equality.
+- Counterexample or exact defect: Take distinct x,y,z, P=x and N=z. The substitution in lambda y.x is defined and its free-variable set is {z}; the source's intermediate ((FV(P) minus {y}) union (FV(N) minus {x})) gives {x,z}. The correct intermediate is (((FV(P) minus {x}) union FV(N)) minus {y}), simplified using y absent from FV(N).
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.
+
+## OLLAM-016
+
+- Unit: `OLP-0361`.
+- Frozen source: `content/lambda-calculus/syntax/substitution.tex:163-170` (SHA-256 `8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd`).
+- Pashto target: `ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex:194` (SHA-256 `2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f`).
+- Correction: The inverse-substitution proof mentions only z != y, leaving implicit z != x, the body substitution's definedness and the free-variable premise needed for induction.
+- Counterexample or exact defect: Defined Subst(lambda z.N,y,x) yields z != x, z != y and defined Subst(N,y,x). The theorem's y absent from FV(lambda z.N), together with z != y, gives y absent from FV(N). Both inequalities also justify definedness of the reverse abstraction step.
+- The correction is identified in adjacent Pashto prose; the frozen English source is unchanged.

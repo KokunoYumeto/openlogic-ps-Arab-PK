@@ -1,6 +1,6 @@
 # د اصطلاحاتو او ژباړې د پرېکړو پښتو کتنه
 
-دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۶۰ پرېکړو د کتنې لار دے: ۱۸۵ اصطلاحات، ۲۶۹ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۶۰ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
+دا د پاکستانۍ پښتو د روانې اوپن لاجک ژباړې د ۴۶۷ پرېکړو د کتنې لار دے: ۱۸۶ اصطلاحات، ۲۷۵ ثبت شوي سرچينه‌يي سمونونه او ۶ نورې ستونزمنې پرېکړې. تر اوسه ۳۶۱ له ۷۲۲ واحدونو ژباړل شوي؛ ۲۵۵ واحدونه په خپاره لوستونکي کښې دي. د کارپوه کتنه د راتلونکو سمونونو دپاره هرکلي کېږي، خو د روان کار يا خپرونې شرط نۀ دے.
 
 هره نښه لومړی غوره پښتو بڼه يا د بدلون ډول، ورپسې بديلونه، کتلي شاهدان، او د اصلي او پښتو متن کره لارې ښيي. د اصطلاح د اصلي انګرېزي مفهوم ليکل اړين دي، څو د رياضي مانا سره پرتله وشي؛ تشريح او د کتنې لارښوونې په پښتو دي. د سرچينه‌يې سمونونو ډېرى يادښتونه د پښتو هدف د هماغې نښې ترڅنګ دي؛ د پخوانيو بې‌نښې سمونونو پښتو دليل دلته هم ورکړل شوے دے. که يوه اصطلاح په پاکستانۍ رياضيکي پښتو کښې کره شاهدي ونلري، غوره شوې بڼه د سمون وړ ده؛ افغان شاهد يوازې سيمه‌ييز پرتله‌ييز شاهد دے.
 
@@ -1287,7 +1287,7 @@
 - اصلي مفهوم: `free occurrence / substitution / free for / syntactic predicate / primitive recursive test`؛ غوره شوې پښتو بڼه: **ازاده پېښه / تعويض / دپاره ازاد / نحوي پريديکات / بنسټيزه بازګشتي ازموينه**.
 - د کتنې وړ بديلونه: ازاد وقوع؛ بدلول د تعويض پر ځاے؛ د نيولو مخنيوی؛ نحوي محمول.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P18-FORMATION-SEQUENCE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 18)؛ `PK-IQRAM-P2-SEMANTICS` (پاکستان، مخ 2)؛ `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 24)؛ `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 33)؛ `AF-NIAZMAN-P62-DOMAIN` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 62)؛ `AF-NIAZMAN-P90-PREDICATE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 90)؛ `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 17)؛ `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 205)؛ `AF-NIAZMAN-P138-EQUALITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 138)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147)؛ `AF-NIAZMAN-P110-OPERATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 110)؛ `AF-NIAZMAN-P109-RELATION` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 109).
-- د متن ځای: `OLP-0281`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex#L55)؛ [اصلي متن](upstream/content/incompleteness/arithmetization-syntax/introduction.tex#L49)؛ نور 5 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0281`؛ [پښتو متن](ps-Arab-PK/content/incompleteness/arithmetization-syntax/introduction.tex#L55)؛ [اصلي متن](upstream/content/incompleteness/arithmetization-syntax/introduction.tex#L49)؛ نور 6 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-DERIVATION-ARITHMETIZATION — حسابي شوے اشتقاق / پاې-سېکوېنټ / پاې-فارمول / د ختمولو نښه / د ثبوت پريديکات / پرانيستے فرض
@@ -1455,7 +1455,7 @@
 - اصلي مفهوم: `lambda calculus / abstraction / application / pure, untyped and typed lambda calculus / alpha-equivalence`؛ غوره شوې پښتو بڼه: **لامبډا حساب / لامبډا تجريد / تطبيق / خالص، بې‌ټايپه او ټايپ‌لرونکے لامبډا حساب / الفا-معادلتوب**.
 - د کتنې وړ بديلونه: د لامبډا محاسبه؛ لامبډا انتزاع؛ د تابعې کارونه.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
-- د متن ځای: `OLP-0341`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/lambda-calculus.tex#L7)؛ [اصلي متن](upstream/content/lambda-calculus/lambda-calculus.tex#L7)؛ نور 8 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0341`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/lambda-calculus.tex#L7)؛ [اصلي متن](upstream/content/lambda-calculus/lambda-calculus.tex#L7)؛ نور 9 ځایونه په بشپړ ثبت کښې دي.
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ### TERM-LAMBDA-REDUCTION-CURRYING — د متغير له نيولو ساتلے تعويض / بېټا-انقباض او بېټا-راکمول / عادي بڼه / د چرچ--روسر خاصيت / کَري کول
@@ -1487,7 +1487,15 @@
 - اصلي مفهوم: `unique readability / abbreviated term / scope / free and bound variable occurrence / closed term`؛ غوره شوې پښتو بڼه: **يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم**.
 - د کتنې وړ بديلونه: بې‌سارې لوستونتيا؛ د تړلو ساحه د ساحې پر ځاے؛ ازاده پېښه د ازاد مورد پر ځاے.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
-- د متن ځای: `OLP-0357`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/terms.tex)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/terms.tex)؛ نور 3 ځایونه په بشپړ ثبت کښې دي.
+- د متن ځای: `OLP-0357`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/terms.tex)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/terms.tex)؛ نور 4 ځایونه په بشپړ ثبت کښې دي.
+- د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
+
+### TERM-LAMBDA-PARTIAL-SUBSTITUTION — تعويض / قسمي تعويض / ناټاکلے تعويض / د متغير نيونه / معکوس تعويض
+
+- اصلي مفهوم: `substitution / partial substitution / undefined substitution / variable capture / inverse substitution`؛ غوره شوې پښتو بڼه: **تعويض / قسمي تعويض / ناټاکلے تعويض / د متغير نيونه / معکوس تعويض**.
+- د کتنې وړ بديلونه: ځایناستی د تعويض پر ځاے؛ نا تعريف شوے تعويض د ناټاکلي پر ځاے؛ د متغير ښکېلتيا د نيونې پر ځاے.
+- کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `GRAMMAR-P166-SOV` (د ګرامر پرتله‌ييزه مرجع، مخ 166)؛ `AF-NIAZMAN-P147-FUNCTIONS` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 147).
+- د متن ځای: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L10)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex#L3).
 - د ټاکنې بنسټ: غوره بڼه د همدغو کتل شويو شاهدانو او د اصلي مفهوم له استعمال سره پرتله شوې؛ پورته بديلونه د پاکستانۍ پښتو د لوستونکي د کتنې دپاره پرانيستي دي. د سرچينو شاهد د اصلي رياضيکي معنا ځاے نۀ نيسي.
 
 ## د سرچينې سمونونه
@@ -3108,38 +3116,74 @@
 - د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
 - د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
 
+### OLLAM-011
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L43)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:35-40`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-012
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L94)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:73-85`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-013
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L111)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:95-98`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-014
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L124)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:103-108`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-015
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L145)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:109-125`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
+### OLLAM-016
+
+- کره پرتله: `OLP-0361`؛ [پښتو متن](ps-Arab-PK/content/lambda-calculus/syntax/substitution.tex#L194)؛ [اصلي متن](upstream/content/lambda-calculus/syntax/substitution.tex)؛ د سرچينې کره نښه `content/lambda-calculus/syntax/substitution.tex:163-170`.
+- د سمون دليل: د پښتو متن په نښه شوي ځای کښې د اصلي سرچينې ستونزه، غوره شوې بڼه او د هغې رياضيکي وجه د لوستونکي په پښتو يادښت کښې څرګنده شوې ده.
+- د کتنې پوښتنه: ايا سمه بڼه د اصلي استدلال شرطونه، نښې، کمیت ټاکونکي او پايله بې له نوي بدلون څخه ساتي؟
+
 ## نورې ستونزمنې پرېکړې
 
 ### DEC-REL-I
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex#L97)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/relations-as-sets.tex#L98).
+- د پرتله ځای: `OLP-0012`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/relations-as-sets.tex#L97)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/relations-as-sets.tex#L98).
 - د کتنې دليل: اصلي I نښه ساتل شوې ده. د استدلال له سياقه دا غالباً د طبيعي عددونو عينيت ښيي، خو نښه بې له ښکاره دليل څخه نۀ ده بدله شوې.
 
 ### DEC-TREE-X
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/trees.tex#L94)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/trees.tex#L94).
+- د پرتله ځای: `OLP-0018`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/trees.tex#L94)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/trees.tex#L94).
 - د کتنې دليل: اصلي X نښه ساتل شوې ده. د استدلال له سياقه مراد ښايي د ونې شاوخوا سټ A وي؛ دا اټکل د متن په يادښت کښې څرګند شوے دے.
 
 ### DEC-RPLUS
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/orders.tex#L104)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/orders.tex#L105).
+- د پرتله ځای: `OLP-0016`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/relations/orders.tex#L104)؛ [اصلي متن](upstream/content/sets-functions-relations/relations/orders.tex#L105).
 - د کتنې دليل: په ترتيبونو کښې R+ انعکاسي تړون ښيي، خو د عملياتو په بحث کښې د لېږدي تړون په معنا کارېدلے دے. دواړه محلي تعريفونه ساتل شوي او د يوې نښې دوه استعمالونه څرګند شوي دي.
 
 ### DEC-SIZE-ALTERNATIVES
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L12)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L10).
+- د پرتله ځای: `OLP-0027`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L12)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex#L10).
 - د کتنې دليل: د څپرکي دواړه بديلې سمونيزې برخې او ټولې لارې ژباړل شوې دي. د بشپړ لوستونکي پر جوړولو بايد د بديل په نوم ښکاره شي، څو د يوې پرله‌پسې واحدې نظريې په څېر دوه ځله وړاندې نۀ شي.
 
 ### DEC-COMPOSITION-CONVENTION
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/composition.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/composition.tex#L16).
+- د پرتله ځای: `OLP-0025`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/functions/composition.tex#L16)؛ [اصلي متن](upstream/content/sets-functions-relations/functions/composition.tex#L16).
 - د کتنې دليل: د اوپن لاجک د تابعو د ترکيب ترتيب ساتل شوے دے: g∘f لومړے f او بيا g پلي کوي. پښتو پرتله‌ييزه سرچينه د هماغې ارزونې دپاره f∘g ليکي؛ هغې سرچينې يوازې د ژبې په انتخاب کښې مرسته کړې، د فورمول ترتيب ئې نۀ دے بدل کړے.
 
 ### DEC-ENUM-TABLE-F7
 
-- د پرتله ځای: [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex#L151)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L151).
+- د پرتله ځای: `OLP-0029`؛ [پښتو متن](ps-Arab-PK/content/sets-functions-relations/size-of-sets/enumerability.tex#L151)؛ [اصلي متن](upstream/content/sets-functions-relations/size-of-sets/enumerability.tex#L151).
 - د کتنې دليل: د اصلي جدول په وروستي قطار کښې د f(7) ښکاره ارزښت −3 نه دے چاپ شوے. جدول ساتل شوے او د دې ښودنيزې تشې د لوستونکي يادښت د راتلونکې خپرونې پر مهال ورزیاتېږي.
 
 ## د توليد او کتنې څرګندونه
 
-د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0360 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.
+د دې ژباړې او د پرېکړو متن تر OLP-0311 پورې OpenAI Codex — GPT-5.6 Sol، Ultra هڅه برابر کړے دے. د OLP-0312 تر OLP-0361 پورې ژباړه، پرېکړې او د دې پښتو لاسرسي مخ OpenAI Codex — GPT-6 Sol، Ultra هڅه برابر کړي دي. د انسان د تصويب ادعا نۀ کېږي.

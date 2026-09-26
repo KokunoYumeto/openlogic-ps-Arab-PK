@@ -1,0 +1,210 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{sub}
+\olsection{تعويض}
+
+\begin{explain}
+ازاد متغيرونه د چاپېريال متغيرونو ته حوالې دي؛ نو دا معنا لري چې د
+ازاد متغير پر ځاے کوم ټاکلے قيمت وکاروو۔ مثلاً، کېدے شي په
+$\lambd[x][f x]$ کښې د $f$ پر ځاے يو ټاکلے ترم، لکه د هماني تابع
+$\lambd[y][y]$، کېږدو۔ په دې سره $\lambd[x][(\lambd[y][y]) x]$
+ترلاسه کېږي۔ د لامبډا ترمونو په وسيله د ازادو متغيرونو د بدلولو دې
+بهير ته \emph{تعويض} وايي۔
+\end{explain}
+
+\begin{defn}[تعويض] \ollabel{defn:substitution}
+  په ترم~$M$ کښې د متغير~$x$ پر ځاے د ترم~$N$ \emph{تعويض}،
+  $\Subst{M}{N}{x}$، په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+    \item $\Subst{x}{N}{x} = N$. \ollabel{defn:substitution-1}
+    \item $\Subst{y}{N}{x}  = y$ که $x \neq y$ وي۔ \ollabel{defn:substitution-2}
+    \item $\Subst{PQ}{N}{x}  = (\Subst{P}{N}{x}) (\Subst{Q}{N}{x})$.
+      \ollabel{def:substitution-3}
+    \item $\Subst{(\lambd[y][P])}{N}{x} = \lambd[y][\Subst{P}{N}{x}]$،
+      که $x \neq y$ او $y \notin \FV{N}$ وي؛ که نه، تعويض ناټاکلے دے۔
+      \ollabel{defn:substitution-4}
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+په \olref{defn:substitution}\olref{defn:substitution-4} کښې $x
+\neq y$ ځکه شرط دے چې په~$M$ کښې د متغير~$x$ \emph{تړلي} موردونه
+په~$N$ بدل نۀ کړو۔ مثلاً، که د
+$\Subst{\lambd[x][x]}{y}{x}$ پر معنا غور وکړو، د تړلي متغير بدلول
+به $\lambd[x][y]$ ورکړي، حال دا چې د ازادو موردونو د بدلولو
+مقصودي پايله هماغه $\lambd[x][x]$ ده۔ د پورته رسمي تعريف له مخې
+خو په دې حالت کښې تعويض ناټاکلے دے۔
+\textbf{د ژباړې د نسخې سمون (OLLAM-011):} سرچينه همدغه تعويض د
+تعريف له مخې ناټاکلے ګڼي، خو په تشريح کښې ئې نا بدلېدونکے تجريد د
+تعويض پايله بللې وه۔ دلته د مقصودي معنا او د رسمي تعريف د
+ناټاکلتيا توپير څرګند شوے دے۔
+
+کله چې په $\lambd[y][P]$ کښې د~$x$ پر ځاے~$N$ تعويضوو، دا هم شرط
+دے چې $y \notin \FV{N}$ وي۔ مثلاً، په $\lambd[y][x]$ کښې د $x$
+پر ځاے $y$، يعنې $\Subst{\lambd[y][x]}{y}{x}$، نۀ شو تعويضولے،
+ځکه پايله به ئې $\lambd[y][y]$ شي، چې داسې تابع ده چې آرګومېنټ
+اخلي او هماغه سمدستي بېرته ورکوي۔ خو $\lambd[y][x]$ داسې تابع ده
+چې تل ترم~$x$ (يا هغه څۀ چې $x$ ورته اشاره کوي) ورکوي۔ نو هغه
+پايله چې په رښتيا ئې غواړو داسې تابع ده چې آرګومېنټ واخلي، له
+پامه ئې وغورځوي او د چاپېريال متغير~$y$ ورکړي۔ د دې د سم ترسره
+کولو دپاره بايد لومړے تړلے متغير~$y$ «بيا ونوموو»۔
+\end{explain}
+
+\begin{prob}
+  د لاندې تعويضونو پايله څۀ ده؟
+  \begin{enumerate}
+  \item $\Subst{\lambd[y][x(\lambd[w][vwx])]}{(uv)}{x}$
+  \item $\Subst{\lambd[y][x(\lambd[x][x])]}{(\lambd[y][xy])}{x}$
+  \item $\Subst{y(\lambd[v][xv])}{(\lambd[y][vy])}{x}$
+  \end{enumerate}
+\end{prob}
+
+\begin{thm} \ollabel{thm:notinfv}
+  که $x \notin \FV{M}$ وي، نو، په دې شرط چې کيڼ لورے ئې ټاکلے
+  وي، $\FV{\Subst{M}{N}{x}} = \FV{M}$ کېږي۔
+\end{thm}
+
+\begin{proof}
+  د~$M$ د جوړښت پر بنسټ استقرا کوو۔
+  \begin{enumerate}
+  \item $M$ يو متغير دے: تمرين۔
+  \item $M$ د $(PQ)$ په بڼه دے: تمرين۔
+  \item $M$ د $\lambd[y][P]$ په بڼه دے؛ څرنګه چې
+    $\Subst{\lambd[y][P]}{N}{x}$ ټاکلے دے، نو دا بايد
+    $\lambd[y][\Subst{P}{N}{x}]$ وي۔ له دې کبله
+    $\Subst{P}{N}{x}$ هم ټاکلے دے؛ سربېره پر دې، $x \neq y$ او
+    $x \notin \FV{P}$۔ نو:
+    \begin{multline*}
+      \FV{\Subst{\lambd[y][P]}{N}{x}} \\
+    \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} &&
+      \text{د \olref{defn:substitution-4} له مخې}\\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} &&
+      \text{د \olref[fv]{def:fv}\olref[fv]{def:fv2} له مخې}\\
+      & = \FV{P} \setminus \{y\} && \text{د استقرا د فرضيې له مخې} \\
+      & = \FV{\lambd[y][P]} && \text{د \olref[fv]{def:fv}\olref[fv]{def:fv2} له مخې}
+    \end{aligned}
+    \end{multline*}
+    \textbf{د ژباړې د نسخې سمون (OLLAM-012):} په سرچينه کښې دلته
+    بې‌اړونده د Q د ازادو متغيرونو سټ راغلے و؛ له فرض او د دوو
+    متغيرونو له نابرابرۍ څخه د P په ازادو متغيرونو کښې د x نشتوالے
+    ترلاسه کېږي۔ د مساواتو د لړۍ تکراري «=» هم
+    لرې شوے دے۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][sub]{thm:notinfv} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{thm} \ollabel{thm:infv}
+  که $x \in \FV{M}$ وي، نو، په دې شرط چې کيڼ لورے ئې ټاکلے وي،
+  $\FV{\Subst{M}{N}{x}} = (\FV{M} \setminus
+  \{x\}) \cup \FV{N}$ کېږي۔
+\end{thm}
+\textbf{د ژباړې د نسخې سمون (OLLAM-013):} د سرچينې د شرط په
+فورمول کښې د M د ازادو متغيرونو له سټه وروسته يوه اضافي تړونکې لېندۍ وه؛ دلته
+لرې شوې ده۔
+
+\begin{proof}
+  د~$M$ د جوړښت پر بنسټ استقرا کوو۔
+  \begin{enumerate}
+  \item $M$ يو متغير دے: تمرين۔
+  \item $M$ د $PQ$ په بڼه دے: څرنګه چې
+    $\Subst{(PQ)}{N}{x}$ ټاکلے دے، نو دا بايد
+    $(\Subst{P}{N}{x})(\Subst{Q}{N}{x})$ وي او دواړه دننني
+    تعويضونه هم ټاکلي وي۔ همدارنګه، چې $x \in \FV{PQ}$ دے، نو
+    $x \in \FV{P}$ يا $x \in \FV{Q}$ يا دواړه۔ پاتې ثبوت تمرين دے۔
+    \textbf{د ژباړې د نسخې سمون (OLLAM-014):} د سرچينې د دې
+    حالت په لومړي تعويض کښې د x پر ځاے y ليکل شوے و؛ د قضيې
+    او د پايلې سره سم دلته x راوړل شوے دے۔
+  \item $M$ د $\lambd[y][P]$ په بڼه دے۔ څرنګه چې
+    $\Subst{\lambd[y][P]}{N}{x}$ ټاکلے دے، نو دا بايد
+    $\lambd[y][\Subst{P}{N}{x}]$ وي؛ $\Subst{P}{N}{x}$ هم
+    ټاکلے دے، $x \neq y$ او $y \notin \FV{N}$ دي۔ له دې سره،
+    ځکه چې $x \in \FV{\lambd[y][P]}$ دے، $x \in \FV{P}$ هم دے۔
+    اوس:
+    \begin{multline*}
+      \FV{\Subst{(\lambd[y][P])}{N}{x}} \\
+      \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} \\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} \\
+      & = ((\FV{P} \setminus \{x\}) \cup \FV{N}) \setminus \{y\}
+        && \text{د استقرا د فرضيې له مخې} \\
+      & = (\FV{P} \setminus \{x, y\}) \cup \FV{N}
+        && y \notin \FV{N} \\
+      & = (\FV{\lambd[y][P]} \setminus \{x\}) \cup \FV{N}
+      \end{aligned}
+    \end{multline*}
+    \textbf{د ژباړې د نسخې سمون (OLLAM-015):} سرچينې د فرض
+    په بيان کښې د x او y ځايونه بدل کړي وو، د استقرا په ګام
+    کښې ئې له ناسمو سټونو متغيرونه ايستل، يوه تړونکې لېندۍ ئې
+    پرېښې وه او له N څخه د x نشتوالے ئې د ناسم دليل په توګه راوړے
+    و۔ دلته له N څخه د y د نشتوالي پر بنسټ سم حساب ښودل شوے او
+    تکراري «=» لرې شوے دے۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][sub]{thm:infv} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{thm}\ollabel{thm:clr}
+  که ښی لورے ټاکلے وي او $x \notin \FV{N}$ وي، نو
+  $x \notin \FV{\Subst{M}{N}{x}}$۔
+\end{thm}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:clr} ثابت کړئ۔
+\end{prob}
+
+
+\begin{thm}\ollabel{thm:inv}
+  که $\Subst{M}{y}{x}$ ټاکلے وي او $y \notin \FV{M}$ وي، نو
+  $\Subst{\Subst{M}{y}{x}}{x}{y} = M$۔
+\end{thm}
+
+\begin{proof}
+  د~$M$ د جوړښت پر بنسټ استقرا کوو۔
+  \begin{enumerate}
+  \item $M$ يو متغير $z$ دے: تمرين۔
+  \item $M$ د $(PQ)$ په بڼه دے۔ نو:
+    \begin{align*}
+      \Subst{\Subst{(PQ)}{y}{x}}{x}{y}
+      &=\Subst{((\Subst{P}{y}{x})(\Subst{Q}{y}{x}))}{x}{y} \\
+      &= (\Subst{\Subst{P}{y}{x}}{x}{y})(\Subst{\Subst{Q}{y}{x}}{x}{y}) \\
+      &= (PQ) \text{ د استقرا د فرضيې له مخې}
+    \end{align*}
+  \item $M$ د $\lambd[z][N]$ په بڼه دے۔ څرنګه چې
+    $\Subst{\lambd[z][N]}{y}{x}$ ټاکلے دے، نو $z \neq x$ او
+    $z \neq y$ دي او دنننے تعويض هم ټاکلے دے۔ د قضيې له بل فرض
+    او د تړونکي له نابرابرۍ څخه راځي چې y د N ازاد متغير نۀ دے۔
+    په معکوس تعويض کښې هم د تړونکي شرطونه د همدې دوو نابرابريو
+    له مخې پوره دي۔ نو:
+    \textbf{د ژباړې د نسخې سمون (OLLAM-016):} سرچينې يوازې
+    د z او y نابرابري ياده کړې وه؛ دلته د معکوس تعويض د ټاکلتيا او د
+    استقرا د فرضيې د کارولو نور شرطونه هم څرګند کړل شوي دي۔
+    \begin{align*}
+      \Subst{\Subst{(\lambd[z][N])}{y}{x}}{x}{y}\\
+      & = \Subst{(\lambd[z][\Subst{N}{y}{x}])}{x}{y} \\
+      & = \lambd[z][\Subst{\Subst{N}{y}{x}}{x}{y}] \\
+      &= \lambd[z][N] \text{ د استقرا د فرضيې له مخې}
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[lam][syn][sub]{thm:inv} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

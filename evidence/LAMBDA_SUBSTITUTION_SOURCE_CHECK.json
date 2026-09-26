@@ -1,0 +1,64 @@
+{
+  "schema": "ps-source-semantic-review/1",
+  "utc": "2026-09-26T03:37:22.374651+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-SUBSTITUTION",
+  "scope": "OLP-0361 against frozen OpenLogic revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "actions": [
+    {
+      "id": "OLLAM-011",
+      "unit_id": "OLP-0361",
+      "classification": "partial-substitution-example-conflicts-with-definition",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:35-40",
+      "target_line_1based": 43,
+      "counterexample": "For M=lambda x.x and a replacement y distinct from x, clause 4 fails x != y when its binder y is instantiated as x. Thus the formal substitution has no value, even though replacing only free occurrences would leave the abstraction unchanged.",
+      "formula_policy": "Keep the formal partial rule. Explain the unchanged abstraction as the intended free-occurrence meaning while stating that this operation is undefined in the example."
+    },
+    {
+      "id": "OLLAM-012",
+      "unit_id": "OLP-0361",
+      "classification": "first-free-variable-proof-undefined-Q-and-double-equality",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:73-85",
+      "target_line_1based": 94,
+      "counterexample": "If x != y and x is absent from FV(lambda y.P), then x is absent from FV(P), allowing the induction hypothesis. Q is not bound anywhere in this proof case.",
+      "formula_policy": "Change the inline condition to x not in FV(P) and remove only the redundant first equality sign from the first multline display."
+    },
+    {
+      "id": "OLLAM-013",
+      "unit_id": "OLP-0361",
+      "classification": "free-variable-theorem-extra-parenthesis",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:95-98",
+      "target_line_1based": 111,
+      "counterexample": "The printed inline expression x in FV(M)) has no matching opening parenthesis; the theorem concerns membership in FV(M).",
+      "formula_policy": "Remove only the unmatched closing parenthesis; preserve the theorem's quantifier-free condition and equation."
+    },
+    {
+      "id": "OLLAM-014",
+      "unit_id": "OLP-0361",
+      "classification": "application-case-substitution-variable-mismatch",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:103-108",
+      "target_line_1based": 124,
+      "counterexample": "Definedness of Subst(PQ,N,y) does not establish definedness of the claimed Subst(P,N,x) and Subst(Q,N,x). The induction case must begin with substitution for x.",
+      "formula_policy": "Change only the substitution variable in the first application-case formula from y to x."
+    },
+    {
+      "id": "OLLAM-015",
+      "unit_id": "OLP-0361",
+      "classification": "abstraction-case-hypothesis-and-set-algebra-errors",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:109-125",
+      "target_line_1based": 145,
+      "counterexample": "Take distinct x,y,z, P=x and N=z. The substitution in lambda y.x is defined and its free-variable set is {z}; the source's intermediate ((FV(P) minus {y}) union (FV(N) minus {x})) gives {x,z}. The correct intermediate is (((FV(P) minus {x}) union FV(N)) minus {y}), simplified using y absent from FV(N).",
+      "formula_policy": "Use x in FV(lambda y.P), hence x in FV(P); replace the complete display by the corrected induction chain with y absent from FV(N), one opening equality and balanced parentheses."
+    },
+    {
+      "id": "OLLAM-016",
+      "unit_id": "OLP-0361",
+      "classification": "inverse-proof-omitted-binder-conditions",
+      "source_locator": "content/lambda-calculus/syntax/substitution.tex:163-170",
+      "target_line_1based": 194,
+      "counterexample": "Defined Subst(lambda z.N,y,x) yields z != x, z != y and defined Subst(N,y,x). The theorem's y absent from FV(lambda z.N), together with z != y, gives y absent from FV(N). Both inequalities also justify definedness of the reverse abstraction step.",
+      "formula_policy": "Keep the displayed inverse calculation; add the missing binder and induction conditions in adjacent prose. The only new standalone mathematical formula is z != x."
+    }
+  ],
+  "status": "one source-reviewed draft unit; six adjacent-disclosed partial-substitution and proof corrections with exact paired math exceptions"
+}

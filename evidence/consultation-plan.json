@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
-  "status": "OLP-0356 through OLP-0360 source-reviewed; one exact B065 scope correction disclosed; syntax foundation drafted",
+  "batch_id": "PS-B066-LAMBDA-SUBSTITUTION",
+  "status": "OLP-0361 source-reviewed with six adjacent-disclosed corrections; staging draft passed exact structural and math-difference inspection",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7667,6 +7667,24 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0361": {
+      "batch_id": "PS-B066-LAMBDA-SUBSTITUTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND",
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-SYNTAX-SUBSTITUTION-PREDICATES"
+      ],
+      "scope": "Inductive partial substitution, bound-variable nonreplacement, capture avoidance, all exercises and four free-variable/inverse theorems preserved; six adjacent-disclosed source defects repaired with exact formula exceptions.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -10717,6 +10735,30 @@
       "passage": "free and bound variables",
       "reverse_paraphrase": "The body of a lambda abstraction is its scope. A variable occurrence outside a same-variable binder is free; FV of abstraction removes the binder, while FV of application is a union.",
       "finding": "OLLAM-010 repairs the source's enclosing-term symbol in the scope definition. The concrete nested-binder example, free-variable equations and environment explanation remain distinct."
+    },
+    {
+      "unit_id": "OLP-0361",
+      "passage": "partial substitution definition and examples",
+      "reverse_paraphrase": "A variable is replaced only at free occurrences; application recurses into both sides; abstraction recurses only when the target variable differs from its binder and the replacement has no free occurrence of that binder. Otherwise this formal operation is undefined.",
+      "finding": "All four rules and three problems are preserved. OLLAM-011 distinguishes intended capture-free meaning from the source's formally undefined same-binder example without changing the rule."
+    },
+    {
+      "unit_id": "OLP-0361",
+      "passage": "first free-variable theorem",
+      "reverse_paraphrase": "If x is not free in M and substitution is defined, the resulting free-variable set equals FV(M). In the abstraction case x is not free in P because x differs from y.",
+      "finding": "OLLAM-012 replaces out-of-scope Q by P and removes the duplicated opening equality; the remaining induction chain and labels are exact."
+    },
+    {
+      "unit_id": "OLP-0361",
+      "passage": "second free-variable theorem",
+      "reverse_paraphrase": "If x is free in M and substitution is defined, its free variables are (FV(M) minus x) union FV(N). For lambda y.P, first apply the induction hypothesis to P, then remove y; y is absent from FV(N) by the substitution side condition.",
+      "finding": "OLLAM-013–015 repair the theorem typo, application variable, binder hypotheses and invalid set calculation. The source's bad intermediate expression fails for P=x and N=z with distinct x,y,z."
+    },
+    {
+      "unit_id": "OLP-0361",
+      "passage": "clearance and inverse theorems",
+      "reverse_paraphrase": "If x is absent from N, substituting N for x removes x from the free-variable set. If y is absent from M, defined substitution of y for x can be reversed by substituting x for y; both binder inequalities and the body's induction hypothesis are required.",
+      "finding": "The statements, exercise prompts and displayed inverse calculation are retained. OLLAM-016 makes the previously omitted binder and induction conditions explicit."
     }
   ]
 }

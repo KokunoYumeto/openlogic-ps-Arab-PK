@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 360 of 722 source units are translated drafts. This log contains 185 terminology entries and 275 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 361 of 722 source units are translated drafts. This log contains 186 terminology entries and 281 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1668,6 +1668,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: بې‌سارې لوستونتيا; د تړلو ساحه د ساحې پر ځاے; ازاده پېښه د ازاد مورد پر ځاے
 - Review question: In Pakistani Pashto mathematical prose, is «يکتا لوستونتيا / لنډ شوے ترم / ساحه / ازاد او تړلے مورد / تړلے ترم» the clearest conventional rendering of “unique readability / abbreviated term / scope / free and bound variable occurrence / closed term” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
 - Timing: contemporaneous B065 owner source and Pakistani Pashto language review
+
+## TERM-LAMBDA-PARTIAL-SUBSTITUTION
+
+- Type: terminology
+- Choice: تعويض / قسمي تعويض / ناټاکلے تعويض / د متغير نيونه / معکوس تعويض
+- Uncertainty: Afghan regional comparator prints تعويض for recursive-function composition, while Pakistani prose supports register; exact lambda partiality, capture and inverse compounds remain source-led and provisional
+- Alternatives: ځایناستی د تعويض پر ځاے; نا تعريف شوے تعويض د ناټاکلي پر ځاے; د متغير ښکېلتيا د نيونې پر ځاے
+- Review question: In Pakistani Pashto mathematical prose, is «تعويض / قسمي تعويض / ناټاکلے تعويض / د متغير نيونه / معکوس تعويض» the clearest conventional rendering of “substitution / partial substitution / undefined substitution / variable capture / inverse substitution” while preserving the distinctions in the rationale? If not, what exact replacement and inflected forms should be used?
+- Timing: contemporaneous B066 owner source proof and Pakistani Pashto language review
 
 ## DEC-OLFUN-001
 
@@ -4089,6 +4098,60 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
 - Review question: Does the Pashto correction for OLLAM-010 disclose the source issue clearly without obscuring the corrected mathematics?
 - Timing: contemporaneous B065 owner source review before cumulative acceptance
+
+## DEC-OLLAM-011
+
+- Type: source-correction
+- Choice: The source describes the unchanged lambda x.x as the result of substituting y for x into lambda x.x, although its own abstraction rule leaves that same-binder substitution undefined.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-011 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-012
+
+- Type: source-correction
+- Choice: The abstraction case invokes FV(Q) although Q is absent from that case; it needs FV(P). The displayed chain also prints two opening equality signs.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-012 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-013
+
+- Type: source-correction
+- Choice: The second free-variable theorem has a spurious closing parenthesis in its hypothesis x in FV(M).
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-013 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-014
+
+- Type: source-correction
+- Choice: The application case tests substitution for y although the theorem and both component substitutions use x.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-014 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-015
+
+- Type: source-correction
+- Choice: The second proof swaps x and y in the abstraction hypothesis, applies induction to the wrong sets, omits a closing parenthesis, cites the wrong side condition and duplicates the opening equality.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-015 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
+
+## DEC-OLLAM-016
+
+- Type: source-correction
+- Choice: The inverse-substitution proof mentions only z != y, leaving implicit z != x, the body substitution's definedness and the free-variable premise needed for induction.
+- Uncertainty: The recorded source analysis is stable; Pashto wording remains open to language review.
+- Alternatives: literal translation plus an adjacent correction; corrected body with the public correction log
+- Review question: Does the Pashto correction for OLLAM-016 disclose the source issue clearly without obscuring the corrected mathematics?
+- Timing: contemporaneous B066 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
