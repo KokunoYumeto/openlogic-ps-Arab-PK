@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b102-substitution-semantic-check/1",
+  "status": "PASS",
+  "unit_id": "OLP-0411",
+  "source_sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+  "target_sha256": "3b74d9903871edc42226407b5857db85e3bf7622c2523b3fc0577a9719c48f58",
+  "source_correction_id": "OLNML-002",
+  "optional_tag_profiles": [
+    {
+      "prvIf": false,
+      "prvIff": false,
+      "source_biconditional_case": false,
+      "corrected_biconditional_case": false,
+      "expected": false
+    },
+    {
+      "prvIf": false,
+      "prvIff": true,
+      "source_biconditional_case": false,
+      "corrected_biconditional_case": true,
+      "expected": true
+    },
+    {
+      "prvIf": true,
+      "prvIff": false,
+      "source_biconditional_case": true,
+      "corrected_biconditional_case": false,
+      "expected": false
+    },
+    {
+      "prvIf": true,
+      "prvIff": true,
+      "source_biconditional_case": true,
+      "corrected_biconditional_case": true,
+      "expected": true
+    }
+  ],
+  "example_distinct_results": 4,
+  "verified_steps": [
+    "simultaneous D1,D2",
+    "simultaneous D2,D1",
+    "iterated D1 then D2",
+    "iterated D2 then D1"
+  ],
+  "scope": "Syntactic substitution treats each one-pass replacement atomically; the example is checked against the four stated expansion trees. The biconditional case must follow prvIff rather than prvIf."
+}

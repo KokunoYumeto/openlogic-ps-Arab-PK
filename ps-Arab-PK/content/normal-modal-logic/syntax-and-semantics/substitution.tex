@@ -1,0 +1,103 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sub}
+
+\olsection{هممهاله ځايناستي}
+
+د $!A$ !!a{formula} يوه \emph{بېلګه} هغه پايله ده چې په~$!A$ کښې د
+!!a{propositional variable} هر راتګ د يو بل !!{formula} په راتګ بدل
+شي۔ د !!{formula}s د بېلګو يادونه به د اعتبار او !!{derivability} د
+بحث پر مهال بيا بيا کوو۔ نو د دې مفهوم دقيق تعريف ګټور دے۔
+
+\begin{defn}\ollabel{def:subst-inst}
+  که $!A$ يو مودالي !!{formula} وي او ټول !!{propositional
+    variable}s ئې له $p_1$، \dots، $p_n$ څخه وي، او $!D_1$، \dots،
+  $!D_n$ هم مودالي !!{formula}s وي، نو
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ داسې
+  تعريفوو: په~$!A$ کښې د هر $p_i$ پر ځاے $!D_i$ په يو وخت ږدو۔ په
+  رسمي ډول دا پر~$!A$ استقرايي تعريف دے:
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ هماغه $\lfalse$ دے۔}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ هماغه $\ltrue$ دے۔}}{}
+    \item \indcase{!A}{q}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+        \subst{!D_n}{p_n}}$ هماغه $q$ دے، په دې شرط چې $q \not\ident p_i$
+      د $i = 1$، \dots،~$n$ د هر ارزښت دپاره وي۔}
+    \item \indcase{!A}{p_i}{$\SSubst{\indfrm}{\subst{!D_1}{p_1},
+        \dots, \subst{!D_n}{p_n}}$ هماغه $!D_i$ دے۔}
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ هماغه
+        $\lnot \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ دے۔}}{}
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+        !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ دا دے:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \land
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ دا دے:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lor
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ دا دے:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lif
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ دا دے:
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \liff
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\]}}{}
+    \textbf{د ژباړې د نسخې سمون (OLNML-002):} د سرچينې په دې حالت کښې
+    د دوه‌اړخيز شرط پر ځاے د يو اړخيز شرط \texttt{prvIf} نښه راغلې وه؛ دلته
+    يوازې هغه په \texttt{prvIff} بدله شوې ده، څو حالت له خپل عامل سره سم وي۔
+    \item \indcase{!A}{\Box !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ داسې محاسبه کېږي:
+        $\Box
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ داسې محاسبه کېږي:
+        $\Diamond
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$}}{}
+  \end{enumerate}
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+    \subst{!D_n}{p_n}}$ !!{formula} د~$!A$ د \emph{ځايناستۍ بېلګه}
+  بلل کېږي۔
+\end{defn}
+
+\begin{ex}
+  فرض کړئ چې $!A$ د $p_1 \lif \Box(p_1 \land p_2)$، $!D_1$ د
+  $\Diamond(p_2 \lif p_3)$ او $!D_2$ د $\lnot\Box p_1$ سره برابر
+  وي۔ نو $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ دا دے:
+  \begin{align*}
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2 \lif p_3) \land \lnot\Box p_1)
+    \intertext{خو $\SSubst{!A}{\subst{!D_2}{p_1}, \subst{!D_1}{p_2}}$ دا دے:}
+    \lnot\Box p_1 &
+    \lif \Box(\lnot\Box p_1 \land \Diamond(p_2 \lif p_3))
+    \intertext{پام وکړئ چې هممهاله ځايناستي عموماً له پرله‌پسې
+      ځايناستۍ سره يوه نۀ ده۔ د بېلګې په توګه، پورته
+      $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ له
+      $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ سره پرتله کړئ، چې دا دے:}
+    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ يعنې،}\\
+    \Diamond(\lnot\Box p_1 \lif p_3) &
+    \lif \Box(\Diamond(\lnot\Box p_1
+    \lif p_3) \land \lnot\Box p_1)\\
+    \intertext{او له $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ سره ئې هم پرتله کړئ:}
+    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ يعنې،}\\
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2
+    \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
+  \end{align*}
+\end{ex}
+
+\end{document}

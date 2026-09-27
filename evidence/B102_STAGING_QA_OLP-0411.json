@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b102-substitution-staging-qa/1",
+  "unit_id": "OLP-0411",
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+  "source_sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+  "target_sha256": "3b74d9903871edc42226407b5857db85e3bf7622c2523b3fc0577a9719c48f58",
+  "source_blocks": 9,
+  "target_blocks": 9,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [],
+  "target_only_math": [],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [
+    "prvIf"
+  ],
+  "target_only_tags": [
+    "prvIff"
+  ],
+  "documented_tag_exception": "OLNML-002",
+  "all_checks_pass": true
+}

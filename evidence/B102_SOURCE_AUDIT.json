@@ -1,0 +1,94 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T09:38:10.882674+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SUBSTITUTION",
+  "batch_id": "PS-B102-NORMAL-MODAL-SUBSTITUTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0411",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+      "source_bytes": 4710,
+      "source_sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+      "target_sha256": "3b74d9903871edc42226407b5857db85e3bf7622c2523b3fc0577a9719c48f58",
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLNML-002"
+      ]
+    }
+  ],
+  "notes_path": "work/B102_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "47698eb0ddbd55914e4230646310e6ca83ac589d8c74c0753f5feb589a5e8ffe",
+  "consultation_path": "work/B102_CANON_CONSULTATION.md",
+  "consultation_sha256": "8f60ce2c42b0fc2bde4747459319955b10c7684181698c934d031bb77e71a645",
+  "staging_qa_sha256": {
+    "OLP-0411": "bbe1da035cba09a60dca265628b0a8c1c6b1a55bda56389c45fdf99f16e9cb91"
+  },
+  "semantic_qa_sha256": "5f2a9460d5c4d13ac3c78e7cf7d65ba0f0450056f5ca337391085342bad86464",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 23,
+      "printed_page": "18",
+      "page_image_sha256": "d6b9a4d54bf5e26bee0481d22eb16f75f49bccbe4f51c5ba1bc5ad74f2906e38",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0411",
+      "source_lines": "11-19",
+      "kind": "instance-scope",
+      "finding": "All occurrences of one variable are replaced by a formula; both validity and derivability uses retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "source_lines": "21-74",
+      "kind": "recursive-definition",
+      "finding": "All constants, unchanged and replaced variables, Boolean and modal induction cases retained; biconditional tag repaired and disclosed as OLNML-002."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "source_lines": "76-99",
+      "kind": "order-sensitive-example",
+      "finding": "Simultaneous, reverse simultaneous and both sequential substitution results are preserved and independently checked as four distinct syntax trees."
+    }
+  ],
+  "formula_policy": "Every math span, formula letter, environment, identifier, structural macro and term token matches frozen English. Only one optional tag argument changes; frozen English remains unchanged.",
+  "unresolved": "Exact Pakistani attestations for substitution instance and iterated substitution were not found; reversible wording remains open to specialist feedback. No human approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0411; continue OLP-0412."
+}

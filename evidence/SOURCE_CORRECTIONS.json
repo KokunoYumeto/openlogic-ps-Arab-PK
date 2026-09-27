@@ -9880,6 +9880,56 @@
       ],
       "decision_timing": "contemporaneous B101 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-002",
+      "unit_id": "OLP-0411",
+      "classification": "biconditional_substitution_case_mistagged_as_conditional",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+      "source_sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/substitution.tex:56-60",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+      "target_line_1based": 60,
+      "target_sha256": "3b74d9903871edc42226407b5857db85e3bf7622c2523b3fc0577a9719c48f58",
+      "mode": "correct-optional-tag-plus-adjacent-Pashto-note",
+      "translation_change": "Changes only the biconditional substitution case tag from prvIf to prvIff and discloses the repair beside the rule.",
+      "reason": "The case pattern and result use the biconditional connective, which the preceding modal language grammar enables under prvIff. The source tags it prvIf, giving the wrong behavior when the two optional tags differ.",
+      "formula_policy": "Every math span, formula letter, environment, identifier, structural macro and term token matches frozen English. Only one optional tag argument changes; frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [
+          "prvIf"
+        ],
+        "target_only": [
+          "prvIff"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SUBSTITUTION",
+      "audit_artifacts": [
+        "B102_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/substitution.tex:56-60",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/substitution.tex:60",
+        "B102_SUBSTITUTION_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B102 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

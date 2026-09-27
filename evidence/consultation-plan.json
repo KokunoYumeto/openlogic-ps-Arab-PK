@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B101-NORMAL-MODAL-LANGUAGE",
-  "status": "OLP-0410 source-reviewed and staged; 30 paired blocks, one disclosed source punctuation correction, nine reverse-paraphrase samples and independent semantic checks",
+  "batch_id": "PS-B102-NORMAL-MODAL-SUBSTITUTION",
+  "status": "OLP-0411 source-reviewed and staged; nine paired blocks, one disclosed optional-tag correction, nine reverse-paraphrase samples and independent syntax-tree checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8600,6 +8600,27 @@
       "allowed_residual_english": [
         "OLNML"
       ]
+    },
+    "OLP-0411": {
+      "batch_id": "PS-B102-NORMAL-MODAL-SUBSTITUTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-SUBSTITUTION",
+        "TERM-LOGIC-FORMS",
+        "TERM-PROPOSITION",
+        "TERM-MODAL-LOGIC",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Nine-block simultaneous substitution definition and order-sensitive example, with one adjacent-disclosed optional-tag correction OLNML-002. Formula strings and formal structure otherwise unchanged.",
+      "allowed_residual_english": [
+        "OLNML"
+      ]
     }
   },
   "semantic_review": [
@@ -12922,6 +12943,60 @@
       "passage": "modal-free",
       "reverse_paraphrase": "A formula is modal-free precisely when it contains neither Box nor Diamond.",
       "finding": "Both operator exclusions retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "instance",
+      "reverse_paraphrase": "An instance of A replaces every occurrence of one propositional variable by one formula.",
+      "finding": "All-occurrences requirement retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "purpose",
+      "reverse_paraphrase": "Instances occur in validity and derivability discussions, motivating a precise definition.",
+      "finding": "Both uses retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "simultaneous scope",
+      "reverse_paraphrase": "A has variables among p1 through pn; formulas D1 through Dn replace them all at once.",
+      "finding": "Domain and simultaneity retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "atomic cases",
+      "reverse_paraphrase": "Truth constants are fixed, a different variable q stays q, and each listed pi becomes Di.",
+      "finding": "Each base case and q nonidentity side condition retained."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "inductive cases",
+      "reverse_paraphrase": "Substitution distributes over each enabled Boolean connective and over Box and Diamond.",
+      "finding": "All recursive cases retained; biconditional tag corrected."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "tag correction",
+      "reverse_paraphrase": "The biconditional case is enabled by prvIff, independently of the conditional prvIf tag.",
+      "finding": "Four optional-tag profiles checked."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "simultaneous example",
+      "reverse_paraphrase": "The first result replaces p1 by D1 and p2 by D2 without recursing into the inserted formulas.",
+      "finding": "Result tree checked."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "reverse order",
+      "reverse_paraphrase": "Swapping D1 and D2 yields a different simultaneous substitution instance.",
+      "finding": "Reverse result tree checked."
+    },
+    {
+      "unit_id": "OLP-0411",
+      "passage": "iterated order",
+      "reverse_paraphrase": "Successive substitutions also transform variables inside formulas inserted on the earlier pass, and the two orders differ.",
+      "finding": "Both successive result trees checked."
     }
   ]
 }

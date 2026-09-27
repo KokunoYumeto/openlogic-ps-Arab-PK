@@ -2946,3 +2946,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Removes the unmatched closing parenthesis from the disjunction-based conditional abbreviation, with an adjacent Pashto disclosure.
 - Evidence: The source has no opening parenthesis for the final closing parenthesis; the standard not-A-or-B conditional abbreviation and the alternative conjunction branch are preserved.
 - Previous parallel corrections: `OLPL-001` and `OLFOL-005`. Frozen English remains unchanged.
+
+## OLNML-002
+
+- Unit: `OLP-0411`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/substitution.tex` (c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff) at `content/normal-modal-logic/syntax-and-semantics/substitution.tex:56-60`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/substitution.tex:60` (3b74d9903871edc42226407b5857db85e3bf7622c2523b3fc0577a9719c48f58).
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SUBSTITUTION`.
+- Treatment: Changes only the biconditional substitution case tag from prvIf to prvIff and discloses the repair beside the rule.
+- Evidence: The case pattern and result use the biconditional connective, which the preceding modal language grammar enables under prvIff. The source tags it prvIf, giving the wrong behavior when the two optional tags differ.
+- Formal check: four independent optional-tag profiles; no math span changes. Frozen English remains unchanged.
