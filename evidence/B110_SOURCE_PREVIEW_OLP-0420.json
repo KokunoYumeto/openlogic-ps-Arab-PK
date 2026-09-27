@@ -1,0 +1,17 @@
+{
+  "schema": "ps-b110-frame-reflexivity-source-preview/1",
+  "status": "source-only finite preview; OLP-0419–0420 not yet accepted",
+  "unit_ids": [
+    "OLP-0419",
+    "OLP-0420"
+  ],
+  "source_sha256": "a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff",
+  "three_world_relations": 512,
+  "three_world_reflexive_relations": 64,
+  "three_world_nonreflexive_relations": 448,
+  "p_valuations_per_relation": 8,
+  "world_checks": 12288,
+  "result": "All valuations make Box p -> p true at every world iff the frame relation is reflexive.",
+  "one_world_nonreflexive_model": "With R empty and p true at the only world, Box p -> p is true in that model, though the frame is nonreflexive.",
+  "next_action": "Review frame terminology, register source and canon consultation, and run corpus QA."
+}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 418,
-    "structural_pass": 418,
+    "draft_units": 420,
+    "structural_pass": 420,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B109-NORMAL-MODAL-ENTAILMENT",
+  "batch": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13619,6 +13619,60 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0419",
+      "path": "content/normal-modal-logic/frame-definability/frame-definability.tex",
+      "source_sha256": "5e089c8eb5f039c6b93afdf7ce93b306c63b172427f89b4b9433dc6a860bcbf4",
+      "translation_sha256": "1a1caecd19997116c59bc6dc5dc6bd98a8d0f3d8ce354c8ef680d920adf7b84e",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0420",
+      "path": "content/normal-modal-logic/frame-definability/introduction.tex",
+      "source_sha256": "a61229335a4a2f9fc6815e7e058fe5c6d7ff75c46f265f1e7cd609e4f83ce6ff",
+      "translation_sha256": "3f7b56a15933e09e6416c6e52ab1ae7bbc11bafb58d4657f85e042c88fbb308a",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18373,6 +18427,48 @@
       "passage": "second exercise",
       "reverse_paraphrase": "Neither Box(p implies q) nor p implies Box q entails the other.",
       "finding": "Both directions remain separate countermodel tasks."
+    },
+    {
+      "unit_id": "OLP-0419",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Frame definability names the chapter and imports seven sections in order.",
+      "finding": "No claim that imported sections have already been translated."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "reflexive forward direction",
+      "reverse_paraphrase": "If R is reflexive, every world itself is a successor, so every Box A implies A instance holds.",
+      "finding": "World and formula universals retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "model converse fails",
+      "reverse_paraphrase": "At a nonreflexive singleton, p true makes Box p implies p true in that one model.",
+      "finding": "Model-level truth does not imply frame reflexivity."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "valuation counterexample",
+      "reverse_paraphrase": "At nonreflexive w, set V(p)=W without w; all successors satisfy p while w does not.",
+      "finding": "Adversarial valuation and implication failure retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "frame definition",
+      "reverse_paraphrase": "Frame F is the pair (W,R); a model (W,R,V) is based on it.",
+      "finding": "Valuation removed from frame only."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "frame validity",
+      "reverse_paraphrase": "F entails A iff A is true in every model based on F.",
+      "finding": "All-valuations quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "correspondence",
+      "reverse_paraphrase": "F validates Box p implies p iff its relation is reflexive.",
+      "finding": "Both directions and frame-level scope retained."
     }
   ],
   "builds": [

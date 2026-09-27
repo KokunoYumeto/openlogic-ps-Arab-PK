@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B109-NORMAL-MODAL-ENTAILMENT",
-  "status": "OLP-0418 source-reviewed and staged; 13 paired blocks, one disclosed notation correction, eight reverse-paraphrase samples and 98,304 finite world checks",
+  "batch_id": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
+  "status": "OLP-0419–0420 source-reviewed and staged; 18 paired blocks, one provisional frame terminology decision, seven reverse-paraphrase samples and 12,288 finite world checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8762,6 +8762,44 @@
       "allowed_residual_english": [
         "OLNML"
       ]
+    },
+    "OLP-0419": {
+      "batch_id": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-LOGIC",
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-MODAL-SCHEMA",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Seven-block chapter heading and seven source-order imports.",
+      "allowed_residual_english": []
+    },
+    "OLP-0420": {
+      "batch_id": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-LOGIC",
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-MODAL-SCHEMA",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Eleven-block reflexive-frame introduction, model/frame distinction, countermodel valuation and frame-validity correspondence.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13516,6 +13554,48 @@
       "passage": "second exercise",
       "reverse_paraphrase": "Neither Box(p implies q) nor p implies Box q entails the other.",
       "finding": "Both directions remain separate countermodel tasks."
+    },
+    {
+      "unit_id": "OLP-0419",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Frame definability names the chapter and imports seven sections in order.",
+      "finding": "No claim that imported sections have already been translated."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "reflexive forward direction",
+      "reverse_paraphrase": "If R is reflexive, every world itself is a successor, so every Box A implies A instance holds.",
+      "finding": "World and formula universals retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "model converse fails",
+      "reverse_paraphrase": "At a nonreflexive singleton, p true makes Box p implies p true in that one model.",
+      "finding": "Model-level truth does not imply frame reflexivity."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "valuation counterexample",
+      "reverse_paraphrase": "At nonreflexive w, set V(p)=W without w; all successors satisfy p while w does not.",
+      "finding": "Adversarial valuation and implication failure retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "frame definition",
+      "reverse_paraphrase": "Frame F is the pair (W,R); a model (W,R,V) is based on it.",
+      "finding": "Valuation removed from frame only."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "frame validity",
+      "reverse_paraphrase": "F entails A iff A is true in every model based on F.",
+      "finding": "All-valuations quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0420",
+      "passage": "correspondence",
+      "reverse_paraphrase": "F validates Box p implies p iff its relation is reflexive.",
+      "finding": "Both directions and frame-level scope retained."
     }
   ]
 }
