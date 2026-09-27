@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b078-staging-qa/1",
+  "unit_id": "OLP-0380",
+  "source_path": "content/lambda-calculus/lambda-definability/minimization.tex",
+  "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+  "target_sha256": "576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c",
+  "source_blocks": 11,
+  "target_blocks": 11,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y)]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+  ],
+  "target_only_math": [
+    "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y))]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

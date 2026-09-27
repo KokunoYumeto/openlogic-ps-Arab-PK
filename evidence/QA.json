@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 379,
-    "structural_pass": 379,
+    "draft_units": 380,
+    "structural_pass": 380,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B077-LAMBDA-FIXED-POINTS",
+  "batch": "PS-B078-LAMBDA-MINIMIZATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11989,6 +11989,48 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0380",
+      "path": "content/lambda-calculus/lambda-definability/minimization.tex",
+      "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+      "translation_sha256": "576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLLAM"
+      ],
+      "allowed_residual_english": [
+        "OLLAM"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLLAM-059",
+        "OLLAM-060"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y)]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y))]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -15387,6 +15429,36 @@
       "passage": "Church Y comparison",
       "reverse_paraphrase": "Church's Y_C and g(Y_Cg) reach common reduct g(VV), making them beta-equal without the same direct reduction shown for Turing's Y.",
       "finding": "OLLAM-057 changes two inline symbols from Y to Y_C; V term and common reduct remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "general-recursive closure setup",
+      "reverse_paraphrase": "General recursive functions arise from zero, successor and projections by composition, primitive recursion and regular minimization; the last closure operation remains to be shown lambda-definable.",
+      "finding": "All three basis functions and three closure operations remain explicit."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "regular minimization lemma",
+      "reverse_paraphrase": "For regular lambda-definable f, g of the fixed parameters is the least y with f at that y equal to zero.",
+      "finding": "The least-witness formula and k argument count remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "fixed-point search construction",
+      "reverse_paraphrase": "Search checks f at the current y, returns y at zero and otherwise recursively checks successor(y); Y supplies the self-reference.",
+      "finding": "OLLAM-059 closes the one missing parenthesis; all other term structure is preserved."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "search branches and conclusion",
+      "reverse_paraphrase": "At a zero the search returns the current numeral; otherwise it advances. Regularity provides a zero, and starting at zero returns the least such witness.",
+      "finding": "OLLAM-060 discloses that the proof calls the minimized result h while the lemma called it g; branch formulas remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "general-recursive proposition",
+      "reverse_paraphrase": "The basis and closure under composition, primitive recursion and regular minimization show every general recursive function is lambda-definable.",
+      "finding": "All referenced lemmas and the proposition's quantifier remain aligned."
     }
   ],
   "builds": [

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B077-LAMBDA-FIXED-POINTS",
-  "status": "OLP-0379 source-reviewed and staged; 18 paired blocks, three exact math-span corrections, two adjacent disclosures and five reverse-paraphrase samples",
+  "batch_id": "PS-B078-LAMBDA-MINIMIZATION",
+  "status": "OLP-0380 source-reviewed and staged; eleven paired blocks, one exact math-span correction, one adjacent disclosure and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -7997,6 +7997,22 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0380": {
+      "batch_id": "PS-B078-LAMBDA-MINIMIZATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-LAMBDA-FIXED-POINT-SEARCH",
+        "TERM-PRIMITIVE-RECURSION"
+      ],
+      "scope": "All eleven paired minimization blocks: general-recursive class, regular least-zero lemma, fixed-point search and closure proposition. OLLAM-059 repairs one missing parenthesis; OLLAM-060 discloses the source's g/h name mismatch. Pakistani prose and grammar govern usage, with Afghan function prose only a labelled regional comparator.",
+      "allowed_residual_english": [
+        "OLLAM"
+      ]
     }
   },
   "semantic_review": [
@@ -11395,6 +11411,36 @@
       "passage": "Church Y comparison",
       "reverse_paraphrase": "Church's Y_C and g(Y_Cg) reach common reduct g(VV), making them beta-equal without the same direct reduction shown for Turing's Y.",
       "finding": "OLLAM-057 changes two inline symbols from Y to Y_C; V term and common reduct remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "general-recursive closure setup",
+      "reverse_paraphrase": "General recursive functions arise from zero, successor and projections by composition, primitive recursion and regular minimization; the last closure operation remains to be shown lambda-definable.",
+      "finding": "All three basis functions and three closure operations remain explicit."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "regular minimization lemma",
+      "reverse_paraphrase": "For regular lambda-definable f, g of the fixed parameters is the least y with f at that y equal to zero.",
+      "finding": "The least-witness formula and k argument count remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "fixed-point search construction",
+      "reverse_paraphrase": "Search checks f at the current y, returns y at zero and otherwise recursively checks successor(y); Y supplies the self-reference.",
+      "finding": "OLLAM-059 closes the one missing parenthesis; all other term structure is preserved."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "search branches and conclusion",
+      "reverse_paraphrase": "At a zero the search returns the current numeral; otherwise it advances. Regularity provides a zero, and starting at zero returns the least such witness.",
+      "finding": "OLLAM-060 discloses that the proof calls the minimized result h while the lemma called it g; branch formulas remain literal."
+    },
+    {
+      "unit_id": "OLP-0380",
+      "passage": "general-recursive proposition",
+      "reverse_paraphrase": "The basis and closure under composition, primitive recursion and regular minimization show every general recursive function is lambda-definable.",
+      "finding": "All referenced lemmas and the proposition's quantifier remain aligned."
     }
   ]
 }

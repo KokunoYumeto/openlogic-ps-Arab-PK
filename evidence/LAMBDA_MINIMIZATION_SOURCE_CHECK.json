@@ -1,0 +1,25 @@
+{
+  "schema": "ps-b078-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T01:38:32.846320+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-LAMBDA-MINIMIZATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0380",
+      "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+      "target_sha256": "576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c"
+    }
+  ],
+  "audit_sha256": "ffccf33db2a3bfdf424129e42893d98ba3bda9c7225a85751785031c262c15aa",
+  "notes_sha256": "9d777463e1e6f992569a854f374208581faa829bf26277ad5e5559be768f1fc6",
+  "consultation_sha256": "e11c4337f2ded1de26d81719a4347d4e7c3488f06a48cb60cf49bab4dd1f0caa",
+  "documented_formula_corrections": [
+    "OLLAM-059"
+  ],
+  "other_disclosures": [
+    "OLLAM-060"
+  ],
+  "unresolved": "The source chapter is experimental and later imports remain untranslated. The g/h mismatch is disclosed without rewriting the proof or claiming human specialist approval.",
+  "next_action": "Continue source-manifest translation from OLP-0381; validate the 372-unit reader candidate separately."
+}

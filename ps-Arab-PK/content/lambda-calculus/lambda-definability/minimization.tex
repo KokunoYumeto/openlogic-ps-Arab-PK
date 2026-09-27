@@ -1,0 +1,84 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: minimization
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{min}
+\olsection{کمينه‌موندنه}
+
+عامې بازګشتي تابعې هغه دي چې له بنسټيزو تابعو
+$\Zero$، $\Succ$ او $\Proj{n}{i}$ څخه د ترکيب،
+بنسټيز بازګښت او منظمې کمينه‌موندنې په وسيله
+ترلاسه کېږي۔ د دې د ښودلو دپاره چې ټولې عامې
+بازګشتي تابعې !!{lambda definable} دي، بايد ثابته
+کړو چې له يوې !!a{lambda
+  definable} تابعې څخه د منظمې کمينه‌موندنې په
+وسيله تعريف شوې تابع هم !!{lambda definable} ده۔
+
+\begin{lem}
+  \ollabel{lem:min} که $f(x_1, \dots, x_k, y)$ منظمه او
+  !!{lambda definable} وي، نو هغه $g$ هم
+  !!{lambda definable} ده چې داسې تعريفېږي:
+  \[
+  g(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}
+  \]
+\end{lem}
+
+\begin{proof}
+  فرض کړئ لامبډا ترم~$F$ منظمه تابع
+  $f(\vec x, y)$ په $\lambda$ سره تعريفوي۔ د~$h$
+  د !!{lambda define} دپاره يوه لټونکې تابع او د ثابت
+  ټکي ترکيب کوونکے کاروو:
+  \begin{align*}
+    \fn{Search} & \ident \lambd[g][\lambd[f\,\vec{x}\,y][
+        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, \vec{x} (\fn{Succ}\, y))]]\\
+    H & \ident \lambd[\vec x][(Y \, \fn{Search}) F\, \vec{x}\, \num{0}],
+  \end{align*}
+  چې $Y$ پکې هر يو د ثابت ټکي ترکيب کوونکے کېدے شي۔
+  \textbf{د سرچينې سمون (OLLAM-059):} د لټون د
+  بازګشتي بلنې پرانيستې قوس ته په اصلي فورمول کښې
+  تړلے قوس نۀ و؛ دلته د هماغې بلنې قوس تړل شوے دے۔
+  په نارسمي ډول، $\fn{Search}$ ځان‌مراجعه کوونکې
+  تابع ده: له~$y$ څخه پيل کوي او ګوري چې آيا
+  $f\, \vec x\, y$ صفر دے که نۀ؛ که وي،~$y$ ورکوي،
+  او که نۀ وي، ځان له $\fn{Succ}\, y$ سره بيا
+  رابولي۔ نو $(Y \, \fn{Search}) F
+  \num{n_1}\dots\num{n_k}\,\num{0}$ هغه تر ټولو
+  وړوکے~$m$ ورکوي چې $f(n_1,
+  \dots, n_k, m) = 0$ وي۔
+  \textbf{د سرچينې سپيناوی (OLLAM-060):} په لم کښې
+  د پايلې تابع يوه نښه لري او په ثبوت کښې ورته بله
+  نښه کارول کېږي؛ لاندې محاسبه د هماغې کمينه‌موندنې
+  تابع ښيي۔
+  
+  په ځانګړي ډول، پام وکړئ چې
+  \begin{align*}
+    (Y \, \fn{Search}) F \num{n_1}
+    \dots\num{n_k}\, \num{m} & \red \num{m}
+    \intertext{که $f(n_1, \dots,
+      n_k, m) = 0$ وي؛ او کنه}
+    & \red (Y \, \fn{Search}) F\, \num{n_1} \dots\num{n_k}\, \num{m+1}
+    \intertext{که نۀ وي۔ څرنګه چې $f$ منظمه ده،
+      $f(n_1, \dots, n_k, y) = 0$ د کوم $y$ دپاره کېږي؛ نو}
+    (Y \, \fn{Search}) F \num{n_1} \dots\num{n_k}\,\num{0}
+    & \red \num{h(n_1, \dots, n_k)}.
+    \end{align*}
+\end{proof}
+
+
+\begin{prop}
+  هره عامه بازګشتي تابع !!{lambda definable} ده۔
+\end{prop}
+
+\begin{proof}
+ د \olref[prf]{lem:basic} له مخې ټولې بنسټيزې تابعې
+ !!{lambda definable} دي، او د \olref[prf]{lem:comp}،
+ \olref[prf]{lem:prim} او \olref{lem:min} له مخې
+ !!{lambda definable} تابعې د ترکيب، بنسټيز بازګښت
+ او منظمې کمينه‌موندنې پر وړاندې تړلې دي۔
+\end{proof}
+
+\end{document}

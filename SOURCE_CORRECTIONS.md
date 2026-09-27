@@ -2798,3 +2798,17 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/lambda-definability/fixpoints.tex:33-46 (SHA-256 d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/fixpoints.tex:50 (SHA-256 e2d5ab39617198ef82c71f6908e9e2cf301eca68725730851c6e61038e86e3c7).
 - پرېکړه: Disclose that the displayed first row closes the lambda abstraction before the recursive branch, so the two-row unrolling must be read schematically. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-059
+
+- واحد: OLP-0380.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/minimization.tex:32-36 (SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex:41 (SHA-256 576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c).
+- پرېکړه: Close the parenthesis opened around Search's recursive call before the lambda brackets. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLLAM-060
+
+- واحد: OLP-0380.
+- ثابته سرچينه: content/lambda-calculus/lambda-definability/minimization.tex:19-55 (SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6).
+- پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex:52 (SHA-256 576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c).
+- پرېکړه: Disclose that the lemma names the minimization result g but the proof calls the result h; preserve all source formula names. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.

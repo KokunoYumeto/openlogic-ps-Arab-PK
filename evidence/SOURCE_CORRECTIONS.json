@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0379; B077 three exact math-span repairs and two adjacent disclosures; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T22:20:16.354627+00:00",
+  "status": "adopted through OLP-0380; B078 one exact search-term repair and one adjacent notation disclosure; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-26T22:31:23.137471+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9195,6 +9195,94 @@
       ],
       "decision_timing": "contemporaneous B077 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-059",
+      "unit_id": "OLP-0380",
+      "classification": "search-recursive-call-unclosed-parenthesis",
+      "source_path": "content/lambda-calculus/lambda-definability/minimization.tex",
+      "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+      "source_locator": "content/lambda-calculus/lambda-definability/minimization.tex:32-36",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex",
+      "target_line_1based": 41,
+      "target_sha256": "576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c",
+      "mode": "explicit-formula-correction-with-adjacent-Pashto-disclosure",
+      "translation_change": "Close the parenthesis opened around Search's recursive call before the lambda brackets.",
+      "reason": "The source writes an open parenthesis before g and only closes the inner successor argument; the outer call lacks its closing delimiter.",
+      "counterexample": "Without the closing delimiter, the displayed lambda term is syntactically unbalanced.",
+      "formula_policy": "Exactly the listed math span(s) are corrected; all other math and identifiers stay source-equivalent.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y)]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\fn{Search}&\\ident\\lambd[g][\\lambd[f\\,\\vec{x}\\,y][\\fn{IsZero}(f\\,\\vec{x}\\,y)\\,y\\,(g\\,\\vec{x}(\\fn{Succ}\\,y))]]\\\\H&\\ident\\lambd[\\vecx][(Y\\,\\fn{Search})F\\,\\vec{x}\\,\\num{0}],\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-MINIMIZATION",
+      "audit_artifacts": [
+        "B078_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/minimization.tex:32-36",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex:41"
+      ],
+      "decision_timing": "contemporaneous B078 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLLAM-060",
+      "unit_id": "OLP-0380",
+      "classification": "minimized-function-name-mismatch",
+      "source_path": "content/lambda-calculus/lambda-definability/minimization.tex",
+      "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+      "source_locator": "content/lambda-calculus/lambda-definability/minimization.tex:19-55",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex",
+      "target_line_1based": 52,
+      "target_sha256": "576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c",
+      "mode": "adjacent-Pashto-source-clarification",
+      "translation_change": "Disclose that the lemma names the minimization result g but the proof calls the result h; preserve all source formula names.",
+      "reason": "The lemma's g least-witness formula and the proof's final h numeral are the same intended function but have different names.",
+      "counterexample": "Reading g and h as distinct functions leaves the proof's final reduction unconnected to the lemma's conclusion.",
+      "formula_policy": "All math spans and identifiers remain source-equivalent; only adjacent explanatory prose is added.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LAMBDA-MINIMIZATION",
+      "audit_artifacts": [
+        "B078_SOURCE_AUDIT.json",
+        "content/lambda-calculus/lambda-definability/minimization.tex:19-55",
+        "ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex:52"
+      ],
+      "decision_timing": "contemporaneous B078 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9202,7 +9290,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0380 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0381 onward while validating the 372-unit coherent reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

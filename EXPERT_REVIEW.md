@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 379 of 722 source units are translated drafts. This log contains 194 terminology entries and 323 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 380 of 722 source units are translated drafts. This log contains 194 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4572,6 +4572,22 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Evidence: The source's line grouping is not one well-grouped lambda term even though its intended point is continuing self-reference.
 - Uncertainty: Pashto wording remains open to later review.
 - Timing: contemporaneous B077 owner source review before cumulative acceptance
+
+## DEC-OLLAM-059
+
+- Type: source-correction
+- Choice: Close the parenthesis opened around Search's recursive call before the lambda brackets.
+- Evidence: The source writes an open parenthesis before g and only closes the inner successor argument; the outer call lacks its closing delimiter.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B078 owner source review before cumulative acceptance
+
+## DEC-OLLAM-060
+
+- Type: source-correction
+- Choice: Disclose that the lemma names the minimization result g but the proof calls the result h; preserve all source formula names.
+- Evidence: The lemma's g least-witness formula and the proof's final h numeral are the same intended function but have different names.
+- Uncertainty: Pashto wording remains open to later review.
+- Timing: contemporaneous B078 owner source review before cumulative acceptance
 
 ## DEC-REL-I
 
