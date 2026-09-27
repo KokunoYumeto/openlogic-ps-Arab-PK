@@ -1,0 +1,130 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T02:22:31.963197+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-OPENING",
+  "batch_id": "PS-B081-MANY-VALUED-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0383",
+      "source_path": "content/many-valued-logic/many-valued-logic.tex",
+      "source_bytes": 488,
+      "source_sha256": "64d16fcddbc3bb42bb82976d92ce7c7a33af7b0dc1b1f5fd44deed261bd16c2e",
+      "target_sha256": "4065ae563e89e8ccfb6e387772775a0c7ce524ce72604ffdcee57798c1fd8eb3",
+      "paired_blocks": 11
+    },
+    {
+      "unit_id": "OLP-0384",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_bytes": 387,
+      "source_sha256": "d7f528c2e202a2248ae41206ad05eee374ec26fff3be1f6cd5c0b3ff8836fc06",
+      "target_sha256": "d3b46f9247d8775b10aefcfad1dc6de32f612d81dfdaf252af9d0cecc447348d",
+      "paired_blocks": 13
+    },
+    {
+      "unit_id": "OLP-0385",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/introduction.tex",
+      "source_bytes": 3222,
+      "source_sha256": "d53637e3cabd6f0a5973bfe4b7b6ec9adc7d4c8c3ca9aa68a5949b2f936ff14c",
+      "target_sha256": "96a2d873b5e0ad0fae596350100b35e0c0b1dc8f4303cd1a00090351a099e61f",
+      "paired_blocks": 10
+    }
+  ],
+  "notes_path": "work/B081_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6a2bb1e9019138c5d0ac2c73dbcc0be1c33d3cdc70b4776b430830e33fa24cf1",
+  "consultation_path": "work/B081_CANON_CONSULTATION.md",
+  "consultation_sha256": "072a8f01366794fc1f5620ebd3b8072c4758825154af88ec0df97d69c369f225",
+  "staging_qa_sha256": {
+    "OLP-0383": "64a17dadd0778e31ff7e87b7083c0a5bf3a574034e94735e66f1eb9ccab5737b",
+    "OLP-0384": "9b6b16f70d719c1f344ea331f08b3d5df6dcc9ddf4eb62b1c12d7c52f963e1a1",
+    "OLP-0385": "577e2d95b75cfadf7a1e012fb0d34cb037e276f74d99c50d6209c7a4bb9dab66"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0383",
+      "source_lines": "7-19",
+      "kind": "part-driver-and-draft-warning",
+      "finding": "Part title, editorial warning, four import paths and end hook stay aligned; unfilled imports do not imply a complete reader."
+    },
+    {
+      "unit_id": "OLP-0384",
+      "source_lines": "8-24",
+      "kind": "chapter-driver-topology",
+      "finding": "Chapter title and all seven imports remain exact and in order; the established semantics rendering is used."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "source_lines": "13-32",
+      "kind": "classical-to-many-valued-generalization",
+      "finding": "Two-valued valuation, satisfaction, value-set generalization and the classical special case remain distinct."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "source_lines": "34-61",
+      "kind": "truth-functions-and-designated-values",
+      "finding": "Connective truth functions, unique valuation extension, designated subset, satisfaction, tautology and consequence remain distinct; the source's unindexed value notation in the tautology clause is preserved in fixed-logic context."
+    }
+  ],
+  "formula_policy": "All formulas, identifiers, structural macros, imports and term tokens remain source-equivalent. No mathematical correction is adopted. Frozen English bytes are unchanged.",
+  "unresolved": "The part and chapter import later untranslated children. The exact many-valued terminology lacks direct checked Pakistani attestation; the selected compound is provisional. The source's tautology value omits an explicit logic index, preserved in fixed-logic context. Human specialist approval is not claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0383–0385, then continue OLP-0386."
+}

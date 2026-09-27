@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b081-many-valued-opening-drafts/1",
+  "utc": "2026-09-27T02:31:27.979409+00:00",
+  "status": "three accepted editable drafts; cumulative source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B081-MANY-VALUED-OPENING",
+  "units": [
+    {
+      "unit_id": "OLP-0383",
+      "path": "content/many-valued-logic/many-valued-logic.tex",
+      "source_sha256": "64d16fcddbc3bb42bb82976d92ce7c7a33af7b0dc1b1f5fd44deed261bd16c2e",
+      "target_sha256": "4065ae563e89e8ccfb6e387772775a0c7ce524ce72604ffdcee57798c1fd8eb3",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0384",
+      "path": "content/many-valued-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "d7f528c2e202a2248ae41206ad05eee374ec26fff3be1f6cd5c0b3ff8836fc06",
+      "target_sha256": "d3b46f9247d8775b10aefcfad1dc6de32f612d81dfdaf252af9d0cecc447348d",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0385",
+      "path": "content/many-valued-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "d53637e3cabd6f0a5973bfe4b7b6ec9adc7d4c8c3ca9aa68a5949b2f936ff14c",
+      "target_sha256": "96a2d873b5e0ad0fae596350100b35e0c0b1dc8f4303cd1a00090351a099e61f",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "draft_units": 385,
+  "aligned_blocks": 5919,
+  "segment_canon_uses": 3748,
+  "reader_units": 321,
+  "source_snapshot_units": 362,
+  "source_audit_sha256": "24df47e04442390188cd095fc90da2be32cd217e5c9c2daadf52b176a241349f",
+  "corpus_qa_sha256": "0f73cac3df6447f3cdf9b594a90e3aa3009e24d9815852423ce0a8dcfdf9dc86",
+  "canonical_replay_sha256": "8560c75eee6adb428c3f35460fbb76cf055574b4c4c23f5dfa70eab2ca33d599",
+  "qa_sha256": "54a858d8a34d0ed7b9541d255c3366735d794cc138d4cb4ddf72db2bfb9d2eed",
+  "reader_candidate": "The 372-unit PDF candidate still needs cross-reference and visual acceptance, matching EPUB and publication.",
+  "next_action": "Commit and push B081; continue OLP-0386 onward independently of the TeX slot."
+}

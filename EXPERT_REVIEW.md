@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 382 of 722 source units are translated drafts. This log contains 194 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 385 of 722 source units are translated drafts. This log contains 195 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1745,6 +1745,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani prose and grammar inspected; Afghan function/equality pages are regional comparators only. No inspected native page attests the exact compound or priority convention; both are source-led and provisional.
 - Review question: Parallel beta-eta adds compatible beta and eta rules. Complete development must apply the conditional eta clause before the generic abstraction clause where they overlap; otherwise the displayed equations do not specify one value. This source interpretation is disclosed, and the final closure proof keeps one-step and multistep relations separate.
 - Timing: contemporaneous B073 owner source-proof review and Pakistani-first canon consultation
+
+## TERM-MANY-VALUED-SEMANTICS
+
+- Type: terminology
+- Choice: څو ارزښته منطق / د صدق تابعه / صدق‌تابع / ټاکل شوے قيمت
+- Uncertainty: Pakistani scholarly semantics prose and grammar visually inspected; Afghan truth-table, tautology, consequence and satisfaction pages are labelled regional comparators; the exact many-valued, truth-function and designated-value compounds are unattested in the checked Pakistani pages and provisional
+- Review question: A many-valued logic specifies an allowed value set V and a truth function for each connective. Truth-functional means a valuation and those functions uniquely determine every formula value; it does not mean the formula is a tautology. A designated subset V+ determines satisfaction and may contain several values or omit a literal True value. Tautology requires designation under every valuation; entailment preserves designation from premises to conclusion. Keep the established semantics, truth-value and tautology choices for inherited concepts.
+- Timing: contemporaneous B081 owner source review and visually inspected Pakistani-first Pashto consultation
 
 ## DEC-OLFUN-001
 

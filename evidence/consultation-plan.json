@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B080-LAMBDA-DEFINABLE-RECURSIVE",
-  "status": "OLP-0382 source-reviewed and staged; nine paired blocks, exact math parity and four reverse-paraphrase samples",
+  "batch_id": "PS-B081-MANY-VALUED-OPENING",
+  "status": "OLP-0383–0385 source-reviewed and staged; thirty-four paired blocks, exact math parity, one provisional terminology decision and eight reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8044,6 +8044,64 @@
       ],
       "scope": "All nine paired blocks: the converse theorem, arithmetic coding of lambda terms, partial normalization, Church-numeral code conversion, and simulation of a lambda-definable function. No math correction. Pakistani scholarly prose and grammar govern usage; Afghan function prose is only a labelled regional comparator.",
       "allowed_residual_english": []
+    },
+    "OLP-0383": {
+      "batch_id": "PS-B081-MANY-VALUED-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "Source-reviewed many-valued part and syntax/semantics opening; exact paired blocks, imports, formulas and term tokens. The new many-valued/designated-value forms are provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
+      "allowed_residual_english": []
+    },
+    "OLP-0384": {
+      "batch_id": "PS-B081-MANY-VALUED-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SYNTAX"
+      ],
+      "scope": "Source-reviewed many-valued part and syntax/semantics opening; exact paired blocks, imports, formulas and term tokens. The new many-valued/designated-value forms are provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
+      "allowed_residual_english": []
+    },
+    "OLP-0385": {
+      "batch_id": "PS-B081-MANY-VALUED-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "Source-reviewed many-valued part and syntax/semantics opening; exact paired blocks, imports, formulas and term tokens. The new many-valued/designated-value forms are provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11520,6 +11578,54 @@
       "passage": "simulation of f",
       "reverse_paraphrase": "Build the code of F applied to coded numeral inputs, normalize if possible, and decode the Church numeral result; when f is undefined, the displayed normalization call is undefined.",
       "finding": "All term and display formulas remain exact; the source offers a proof sketch only."
+    },
+    {
+      "unit_id": "OLP-0383",
+      "passage": "part driver",
+      "reverse_paraphrase": "This is draft material on propositional many-valued logics, with four imported chapters in the source order.",
+      "finding": "The target preserves the draft qualification and all imports."
+    },
+    {
+      "unit_id": "OLP-0384",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The syntax-and-semantics chapter imports introduction, connectives, formulas, matrices, valuations, semantic notions and sublogics.",
+      "finding": "The target preserves all seven paths and the end hook."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "classical baseline",
+      "reverse_paraphrase": "In classical logic valuations assign True or False to propositional variables and a formula is satisfied exactly when its value is True.",
+      "finding": "The two-value case and satisfaction condition remain exact."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "generalized value set",
+      "reverse_paraphrase": "A many-valued valuation maps each variable to an allowed value in V; classical logic is the special case V equal to {True, False}.",
+      "finding": "The target does not treat every available value as designated."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "truth functions",
+      "reverse_paraphrase": "A set of values alone is insufficient; chosen truth functions for each connective make the value of every formula unique under a valuation.",
+      "finding": "Truth-functional is kept separate from tautological."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "designated subset",
+      "reverse_paraphrase": "V need not contain literal True, and one or more values in V+ may play the designated role.",
+      "finding": "The target preserves the distinction between V and V+."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "tautology",
+      "reverse_paraphrase": "A formula is a tautology of L when its value is designated under every valuation; the source suppresses the L index once in the value notation.",
+      "finding": "The exact source formula remains unchanged and is read in fixed-logic context."
+    },
+    {
+      "unit_id": "OLP-0385",
+      "passage": "entailment",
+      "reverse_paraphrase": "Gamma entails A when every valuation satisfying every premise in Gamma also satisfies A.",
+      "finding": "The target preserves the universal conditional, not an existential witness."
     }
   ]
 }
