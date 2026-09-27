@@ -1,0 +1,77 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: matrices
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{mat}
+
+\olsection{ماتريسونه}
+
+يو څو ارزښته منطق د خپلې ژبې، د رښتياوالي د قيمتونو د سټ~$V$،
+د ټاکل شوو رښتياوالي قيمتونو د يو فرعي سټ، او د خپلو نښلوونکو
+د صدق تابعو له مخې تعريفېږي۔ دغو ټولو توکو ته په ګډه
+\emph{ماتريس} ويل کېږي۔
+
+\begin{defn}[ماتريس]
+\ollabel{defn:matrix}
+د منطق~$\Log L$ يو \emph{ماتريس} له لاندې توکو جوړ وي:
+\begin{enumerate}
+\item د نښلوونکو يو سټ چې ژبه~$\Lang L$ جوړوي؛
+\item د رښتياوالي د قيمتونو يو ناتش سټ~$V \neq \emptyset$؛
+\item د ټاکل شوو رښتياوالي قيمتونو يو سټ~$V^+ \subseteq V$؛
+\item په~$\Lang L$ کښې د هر $n$-ځايه نښلوونکي~$\star$
+دپاره د صدق تابعه~$\tf{\star} : V^n \to V$۔ که~$n = 0$
+وي، نو~$\tf{\star}$ يوازې د~$V$ يو غړے وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+د کلاسيک منطق~\LogCL{} ماتريس له لاندې توکو جوړ وي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$، چې
+  $\lfalse$، $\lnot$، $\land$، $\lor$، $\lif$ لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \False\}$۔
+  \item $\True$ يوازينے ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{\True\}$۔
+  \item د~$\lfalse$ دپاره~$\tf{\lfalse} = \False$ لرو۔ د نورو
+  صدق تابعې د معمول د رښتياوالي جدولونو له مخې ټاکل کېږي
+  (\olref{fig:tf-CL} وګورئ)۔
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{د کلاسيک منطق~$\LogCL$ د صدق تابعې۔}
+    \ollabel{fig:tf-CL}
+  \end{figure}
+  \end{ex}
+
+\end{document}

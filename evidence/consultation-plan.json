@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B082-MVL-CONNECTIVES",
-  "status": "OLP-0386 source-reviewed and staged; ten paired blocks, exact math parity, one provisional terminology decision and five reverse-paraphrase samples",
+  "batch_id": "PS-B083-MVL-FORMULAS-MATRICES",
+  "status": "OLP-0387–0388 source-reviewed and staged; eighteen paired blocks, exact math/table parity, one provisional terminology decision and six reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8120,6 +8120,43 @@
       ],
       "scope": "Source-reviewed many-valued languages and connectives; exact ten paired blocks, tags, symbols, arities and term tokens. New arity/product-logic/determinateness forms are provisional; Pakistani scholarly usage is primary and Afghan logic pages are regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0387": {
+      "batch_id": "PS-B083-MVL-FORMULAS-MATRICES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P110-OPERATION"
+      ],
+      "terms": [
+        "TERM-PROP-SYNTAX",
+        "TERM-LOGIC-FORMS",
+        "TERM-MVL-CONNECTIVE-ARITY"
+      ],
+      "scope": "Source-reviewed formula grammar and matrix/classical truth tables; exact paired blocks, symbol arities, formulas, table entries, labels and term tokens. Matrix term is provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
+      "allowed_residual_english": []
+    },
+    "OLP-0388": {
+      "batch_id": "PS-B083-MVL-FORMULAS-MATRICES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P110-OPERATION"
+      ],
+      "terms": [
+        "TERM-MVL-MATRIX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-CONNECTIVE-ARITY"
+      ],
+      "scope": "Source-reviewed formula grammar and matrix/classical truth tables; exact paired blocks, symbol arities, formulas, table entries, labels and term tokens. Matrix term is provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11674,6 +11711,42 @@
       "passage": "standard language example",
       "reverse_paraphrase": "The displayed standard language has the exact listed symbols and arities; product logic may use odot for conjunction and determinateness may be added as a unary triangle operator.",
       "finding": "Target preserves exact arities and example roles."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "formula base cases",
+      "reverse_paraphrase": "Every propositional variable and every zero-place connective is an atomic formula.",
+      "finding": "Both and only those stated atomic base cases remain."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "arity-matched closure",
+      "reverse_paraphrase": "An n-place connective applied to n formulas is a formula, and the limiting clause excludes everything else.",
+      "finding": "Target preserves the n-to-n rule and exclusion."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "notation and examples",
+      "reverse_paraphrase": "Unary and binary notation may be shortened, outermost parentheses omitted, and the three displayed formulas belong to their respective symbol languages.",
+      "finding": "No internal-parenthesis license or operator substitution is inferred."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "matrix components",
+      "reverse_paraphrase": "A matrix contains a connective language, nonempty V, a subset V+ and a truth function V^n to V per n-place connective.",
+      "finding": "Target does not add nonemptiness to V+."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "zero-place case",
+      "reverse_paraphrase": "At arity zero, the truth function is simply an element of V.",
+      "finding": "Target preserves the source identification."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "classical matrix",
+      "reverse_paraphrase": "Classical V has True and False, only True is designated, falsity evaluates to False, and the remaining connectives follow the four shown tables.",
+      "finding": "Table cells, order, label and reference remain exact."
     }
   ]
 }

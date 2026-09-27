@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 386,
-    "structural_pass": 386,
+    "draft_units": 388,
+    "structural_pass": 388,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B082-MVL-CONNECTIVES",
+  "batch": "PS-B083-MVL-FORMULAS-MATRICES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12187,6 +12187,58 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0387",
+      "path": "content/many-valued-logic/syntax-and-semantics/formulas.tex",
+      "source_sha256": "9cf70dccee9df26bf72e5f2ca8460f15bc02da829229ad2f338f0778a1b8143c",
+      "translation_sha256": "85d03e5d84f3b91bf3339250304427a81c700e266fb06595cd21eb1711edf418",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0388",
+      "path": "content/many-valued-logic/syntax-and-semantics/matrices.tex",
+      "source_sha256": "b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1",
+      "translation_sha256": "511bef310c8adcb397334a02b74365ff5307cc49bcb2aa90f40e95632e37ae06",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15741,6 +15793,42 @@
       "passage": "standard language example",
       "reverse_paraphrase": "The displayed standard language has the exact listed symbols and arities; product logic may use odot for conjunction and determinateness may be added as a unary triangle operator.",
       "finding": "Target preserves exact arities and example roles."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "formula base cases",
+      "reverse_paraphrase": "Every propositional variable and every zero-place connective is an atomic formula.",
+      "finding": "Both and only those stated atomic base cases remain."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "arity-matched closure",
+      "reverse_paraphrase": "An n-place connective applied to n formulas is a formula, and the limiting clause excludes everything else.",
+      "finding": "Target preserves the n-to-n rule and exclusion."
+    },
+    {
+      "unit_id": "OLP-0387",
+      "passage": "notation and examples",
+      "reverse_paraphrase": "Unary and binary notation may be shortened, outermost parentheses omitted, and the three displayed formulas belong to their respective symbol languages.",
+      "finding": "No internal-parenthesis license or operator substitution is inferred."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "matrix components",
+      "reverse_paraphrase": "A matrix contains a connective language, nonempty V, a subset V+ and a truth function V^n to V per n-place connective.",
+      "finding": "Target does not add nonemptiness to V+."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "zero-place case",
+      "reverse_paraphrase": "At arity zero, the truth function is simply an element of V.",
+      "finding": "Target preserves the source identification."
+    },
+    {
+      "unit_id": "OLP-0388",
+      "passage": "classical matrix",
+      "reverse_paraphrase": "Classical V has True and False, only True is designated, falsity evaluates to False, and the remaining connectives follow the four shown tables.",
+      "finding": "Table cells, order, label and reference remain exact."
     }
   ],
   "builds": [

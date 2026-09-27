@@ -1,0 +1,18 @@
+# B083 frozen-source review: many-valued formulas and matrices
+
+Frozen revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0` governs `OLP-0387`, `content/many-valued-logic/syntax-and-semantics/formulas.tex`, 1,504 bytes, SHA-256 `9cf70dccee9df26bf72e5f2ca8460f15bc02da829229ad2f338f0778a1b8143c`. The staged target SHA-256 is `85d03e5d84f3b91bf3339250304427a81c700e266fb06595cd21eb1711edf418`. Nine paired blocks pass exact environment, identifier, structural-macro, math-span and named term-token parity, NFC, and no replacement-character checks. Frozen English bytes remain unchanged.
+
+- Lines 13–26 define formulas inductively: every propositional variable is atomic, every zero-place connective (a propositional constant) is atomic, and applying an n-place connective to n formulas yields a formula. The tagged limiting clause excludes all other objects. This is preserved without widening the base cases.
+- Lines 27–30 describe only notational abbreviations for unary and binary applications. The target retains the exact displayed terms and parentheses; it does not redefine the formula grammar.
+- Line 32 permits omitting the outermost parentheses as usual, not arbitrary inner parentheses.
+- Lines 34–41 distinguish the standard-language formula, the product-logic version with `\odot`, and a formula in the expanded language with unary `\triangle`. The exact source math is unchanged.
+
+Reverse paraphrase: the least inductively generated formula set contains variables and zero-place connectives, and closes under the arity-matched application of every connective. Unary and binary print conventions are abbreviations. The examples vary the language and symbol supply while preserving the stated arities. Established `TERM-PROP-SYNTAX`, `TERM-LOGIC-FORMS`, and provisional `TERM-MVL-CONNECTIVE-ARITY` govern wording; no new mathematical correction or term decision is required.
+
+Frozen `OLP-0388`, `content/many-valued-logic/syntax-and-semantics/matrices.tex`, is 2,297 bytes with SHA-256 `b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1`. Its staged target SHA-256 is `511bef310c8adcb397334a02b74365ff5307cc49bcb2aa90f40e95632e37ae06`. Nine paired blocks pass environment, identifier, structural-macro, math-span and named term-token parity, NFC and replacement-character checks. The source and its classical truth-table cells remain unchanged.
+
+- Lines 13–28 define a matrix by a connective language, a nonempty value set `V`, a designated subset `V^+` and one truth function `V^n -> V` for each n-place connective. The source requires `V` to be nonempty but does not require `V^+` to be nonempty; the target preserves that exact distinction. When `n=0`, the function is identified with an element of `V`.
+- Lines 30–40 specialize to classical logic: the standard language has the five listed symbols, `V` has `True` and `False`, `V^+` contains only `True`, and the falsity constant is interpreted as `False`. The other truth functions are specified by the usual tables, preserving the cross-reference.
+- Lines 41–74 contain the negation, conjunction, disjunction and conditional tables. Every math entry, row order, tabular column pattern, caption math span and figure label is source-equivalent. The caption text is translated, and no table value is corrected or inferred.
+
+Reverse paraphrase for `OLP-0388`: a matrix packages syntax, possible truth values, designated values and arity-matched truth functions. The classical matrix chooses a two-element `V`, designates only `True`, gives falsity the value `False`, and assigns the remaining connectives the four displayed tables. `ماتريس` is a provisional source-led technical loan where checked Pakistani scholarly pages do not attest an exact logic-matrix term.

@@ -1,0 +1,46 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{fml}
+
+\olsection{\usetoken{P}{formula}}
+
+\begin{defn}[فارمول]
+\ollabel{defn:formulas}
+د بياني ژبې~$\Lang L$ د \emph{!!{formula}s} سټ~$\Frm[L]$
+په استقرايي ډول داسې تعريفېږي:
+\begin{enumerate}
+\item هر !!{propositional variable}~$\Obj p_i$ يو اټومي
+  !!{formula} دے۔
+\item د~$\Lang L$ هر $0$-ځايه نښلوونکے (بياني ثابت)
+  يو اټومي !!{formula} دے۔
+\item که~$\star$ د~$\Lang L$ يو $n$-ځايه نښلوونکے وي، او
+  $!A_1$، \dots، $!A_n$ !!{formula}s وي، نو
+  $\star(!A_1, \dots, !A_n)$ هم !!a{formula} دے۔
+\tagitem{limitClause}{له دې پرته هېڅ څيز !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+که~$\star$ يو $1$-ځايه نښلوونکے وي، نو
+$\star(!A_1)$ به ډېر ځله په ساده ډول $\star !A_1$ ليکو۔
+که~$\star$ يو $2$-ځايه نښلوونکے وي، نو
+$\star(!A_1,!A_2)$ به ډېر ځله د $(!A_1 \star !A_2)$
+په بڼه ليکو۔
+\end{defn}
+
+د معمول په څېر، ډېر ځله به تر ټولو بېروني قوسونه له ليکلو پرېږدو۔
+
+\begin{ex}
+  په معياري ژبه~$\Lang{L_0}$ کښې
+  $\Obj p_1 \lif (\Obj p_1 \land \lnot \Obj p_2)$ يو فارمول دے۔
+  د حاصل‌ضرب منطق په ژبه کښې به د دې پر ځاے
+  $\Obj p_1 \lif (\Obj p_1 \odot \lnot \Obj p_2)$ وليکو۔
+  که ژبې ته يو $1$-ځايه~$\triangle$ هم ور زيات کړو، نو
+  $\triangle (\Obj p_1 \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  غوندې فارمولونه به هم ولرو۔
+\end{ex}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 386 of 722 source units are translated drafts. This log contains 196 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 388 of 722 source units are translated drafts. This log contains 197 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1761,6 +1761,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani scholarly prose and syntax/semantics page inspected; Afghan proposition and k-place-operation pages are labelled regional comparators; exact arity, product-logic and determinateness compounds are unattested in checked Pakistani pages and provisional
 - Review question: A propositional language is a set of connectives with fixed input arities. A zero-place connective is a propositional constant, distinct from an individual constant in first-order logic; one- and two-place connectives retain their input counts. A language may carry distinct conjunction-like connectives or operators absent from classical logic. Product logic uses odot for conjunction in the given example; the triangle operator is unary determinateness. Keep symbol and arity assignments exact.
 - Timing: contemporaneous B082 owner source review and visually inspected Pakistani-first Pashto consultation
+
+## TERM-MVL-MATRIX
+
+- Type: terminology
+- Choice: ماتريس / د ټاکل شوو قيمتونو سټ / د صدق تابعې
+- Uncertainty: Pakistani scholarly prose and semantics page inspected; Afghan truth-table and k-place-operation pages are labelled regional comparators; the exact logic-matrix technical noun is unattested in checked Pakistani pages and provisional
+- Review question: A matrix packages a connective language, a nonempty value set V, a designated subset V+ of V, and for each n-place connective a truth function V^n to V. The frozen source does not require V+ to be nonempty; do not silently add that condition. For n=0, the truth function is identified with an element of V. The classical example designates only True and assigns the exact displayed truth tables.
+- Timing: contemporaneous B083 owner source review and visually inspected Pakistani-first Pashto consultation
 
 ## DEC-OLFUN-001
 
