@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B088-LUKASIEWICZ-THREE-VALUED",
-  "status": "OLP-0394 source-reviewed and staged; 22 paired blocks, three disclosed source-confirmed math corrections, one provisional terminology decision and seven reverse-paraphrase samples",
+  "batch_id": "PS-B089-KLEENE-THREE-VALUED",
+  "status": "OLP-0395 source-reviewed and staged; 19 paired blocks, exact math/tables, one provisional terminology decision, seven reverse-paraphrase samples; OLMVL-001 proof amendment audited",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8278,6 +8278,28 @@
       ],
       "scope": "Twenty-two source/target blocks of the complete Łukasiewicz section, quotation, four truth tables, exercises and modal extension. OLMVL-002–004 are source-confirmed and adjacent-disclosed. Pakistani scholarly semantics prose is primary; Afghan classical logical pages are regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0395": {
+      "batch_id": "PS-B089-KLEENE-THREE-VALUED",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-KLEENE-BOCHVAR",
+        "TERM-MVL-THREE-VALUED-INTRO",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-PARTIAL-RECURSIVE-SEARCH"
+      ],
+      "scope": "Complete 19-block strong/weak Kleene and Bochvar section. Source formulas and ten truth tables exact. Pakistani scholarly prose is primary; Afghan logic pages are regional comparators. OLMVL-001 proof amendment audited separately.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12012,6 +12034,48 @@
       "passage": "modal limitation",
       "reverse_paraphrase": "The contradiction should count as impossible, but under p=Undef the proposed modal matrix assigns False to its negated possibility claim rather than making it a tautology.",
       "finding": "OLMVL-004 corrects the source's stated Undef value to the value forced by its own three unchanged tables."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "computation motive",
+      "reverse_paraphrase": "An algorithm may return True or False or run forever; serial evaluation fails to return when a required part diverges.",
+      "finding": "Three outcomes and the sequential constraint are explicit."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "parallel shortcut",
+      "reverse_paraphrase": "A known False conjunct settles conjunction, and a known True disjunct settles disjunction, even if the other part never finishes.",
+      "finding": "The two short-circuit cases remain distinct."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "strong versus weak matrices",
+      "reverse_paraphrase": "Strong operations can settle on a known decisive input; weak operations return Undef if an input is Undef; both designate only True.",
+      "finding": "All eight strong/weak connective tables and designated sets are unchanged."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "no tautologies",
+      "reverse_paraphrase": "Assigning Undef to every propositional letter makes every formula Undef, so neither matrix has a tautology.",
+      "finding": "The induction claim and designated-value conclusion are translated."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "consequence exercises",
+      "reverse_paraphrase": "There are still nontrivial entailments; five exercises compare strong and weak consequence and their formulas.",
+      "finding": "Exercise number and formulas are preserved without supplying solutions."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "Bochvar meaning",
+      "reverse_paraphrase": "Undef represents meaningless paradoxical sentences rather than simply an unknown truth value.",
+      "finding": "The interpretation is expressly distinguished."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "Bochvar unary operators",
+      "reverse_paraphrase": "External negation and undefinedness are different unary functions with different tables, followed by an exercise to define them.",
+      "finding": "Both original tables and the exercise remain exact."
     }
   ]
 }

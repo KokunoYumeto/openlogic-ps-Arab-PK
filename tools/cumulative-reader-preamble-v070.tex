@@ -155,6 +155,8 @@
 \begin{document}
 \tracinglostchars=3
 \setRTL
+% XeLaTeX resets this mathcode at begin-document; restore OLP's active ! metavariables.
+\mathcode`\!="8000
 \begin{titlepage}
 \thispagestyle{empty}
 \begin{center}

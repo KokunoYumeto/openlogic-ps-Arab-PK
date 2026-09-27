@@ -2817,11 +2817,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 
 - Unit: `OLP-0391`.
 - Frozen source: `content/many-valued-logic/syntax-and-semantics/sublogics.tex` (1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7) at `content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75`.
-- Pashto target: `ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42` (403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4).
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42` (357898d22f6947442916c8b8e976a003dbcc467c7b1f8104b0f17186cd33d784).
 - Audit: `PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC`.
 - Treatment: The value-transfer theorem and consequence corollary now specify a common formula fragment, Boolean assignments for its variables, and agreement on Boolean inputs for every used connective, including constants. An adjacent Pashto note discloses the frozen source's missing scope.
 - Evidence: A falsity constant interpreted as True satisfies the four listed connective conditions but disagrees with classical evaluation of that formula.
 - Disclosure: `corrected-theorem-and-corollary-scope-plus-adjacent-Pashto-note`. All source formulas remain unchanged.
+- B089 proof amendment: the nullary-constant base and general finite-arity induction step now cover the stated shared fragment; see `B089_PROOF_AMENDMENT_AUDIT.json`. Frozen English and all math spans remain unchanged.
 
 ## OLMVL-002
 

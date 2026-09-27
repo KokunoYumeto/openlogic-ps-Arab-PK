@@ -71,6 +71,8 @@
 \linespread{1.18}
 \begin{document}
 \setRTL
+% XeLaTeX resets this mathcode at begin-document; restore OLP's active ! metavariables.
+\mathcode`\!="8000
 \begin{titlepage}
 \begin{center}
 \vspace*{25mm}

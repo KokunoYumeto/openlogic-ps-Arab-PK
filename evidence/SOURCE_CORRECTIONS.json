@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0394; B088 three disclosed local formula corrections; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-27T04:18:48.033892+00:00",
+  "status": "adopted through OLP-0395; OLMVL-001 proof amendment documented; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-27T05:24:14.733227+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9293,12 +9293,12 @@
       "source_locator": "content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75",
       "target_path": "ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex",
       "target_line_1based": 42,
-      "target_sha256": "403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4",
+      "target_sha256": "357898d22f6947442916c8b8e976a003dbcc467c7b1f8104b0f17186cd33d784",
       "mode": "corrected-theorem-and-corollary-scope-plus-adjacent-Pashto-note",
-      "translation_change": "Qualify the value-transfer theorem and consequence corollary to a shared formula fragment whose every used connective, including nullary constants, agrees on Boolean inputs; require Boolean values for every relevant variable and disclose the source omission beside the theorem",
+      "translation_change": "Qualify the value-transfer theorem and consequence corollary to a shared formula fragment whose every used connective, including nullary constants, agrees on Boolean inputs; require Boolean values for every relevant variable and disclose the source omission beside the theorem; the adjacent induction proof now explicitly handles nullary constants and every finite-arity connective in that shared fragment",
       "reason": "The source hypotheses cover only four positive-arity connectives, not arbitrary extra connectives or nullary constants, and leave the variable p's scope implicit.",
       "counterexample": "A matrix with values True and False, classical Boolean behavior for the four listed connectives, and a falsity constant interpreted as True meets the written conditions but disagrees with classical evaluation of that constant formula; it also makes that formula a many-valued tautology if True is designated.",
-      "formula_policy": "All math spans, displayed equations, labels and structural macros remain source-equivalent; only Pashto theorem scope and adjacent explanatory prose are corrected.",
+      "formula_policy": "Frozen English and all target/source math spans, truth tables, labels and structural macros remain unchanged; Pashto theorem scope and the completed induction proof are corrected.",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []
@@ -9321,10 +9321,14 @@
       "audit_artifacts": [
         "B086_SOURCE_AUDIT.json",
         "content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75",
-        "ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42"
+        "ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42",
+        "B089_PROOF_AMENDMENT_AUDIT.json"
       ],
       "decision_timing": "contemporaneous B086 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "prior_target_sha256": "403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4",
+      "amendment_audit": "B089_PROOF_AMENDMENT_AUDIT.json",
+      "amendment_audit_sha256": "0ff501b8ba32f0c63ff06b4171348e4948608f862de99f07d66af17bdedb3fba"
     },
     {
       "id": "OLMVL-002",
@@ -9467,7 +9471,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0395 onward while validating the 372-unit reader candidate.",
+  "next_action": "Run B089 cumulative and canonical QA; continue OLP-0396 after checkpoint.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",

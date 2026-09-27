@@ -1,0 +1,198 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: kleene
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{skl}
+
+\olsection{د کليني منطقونه}
+
+سټيفن کليني دوه درې ارزښته منطقونه وړاندې کړل۔ د هغو انګېزه داسې منطق
+و چې د رښتياوالي قيمتونه د محاسبوي کړنلارو پايلې ګڼي: يوه کړنلاره
+کېدے شي~$\True$ يا~$\False$ ورکړي، خو کېدے شي هېڅکله و نۀ درېږي۔
+په دې حالت کښې اړوند د رښتياوالي قيمت ناټاکلے وي او د~$\Undef$
+په قيمت ښودل کېږي۔
+
+د يوې قضيې~$!A$ د نفي د محاسبې دپاره به لومړے د~$!A$ قيمت
+محاسبه کړئ او بيا به د پايلې مخالف قيمت ورکړئ۔ که د~$!A$ محاسبه
+پای ته و نۀ رسېږي، نو ټوله کړنلاره هم پای ته نۀ رسېږي؛ نو د~$\Undef$
+نفي~$\Undef$ ده۔
+
+د عطف~$!A \land !B$ د محاسبې دپاره دوه لارې شته: په يوه کښې
+لومړے~$!A$ او بيا~$!B$ محاسبه کوو۔ که دواړو~$\True$ ورکړ، د عطف
+پايله~$\True$ وي، او کنه~$\False$ وي۔ که له دغو دوو محاسبو يوه
+هم و نۀ درېږي، ټوله کړنلاره پای ته نۀ رسېږي۔ نو په دې پرله‌پسې
+تفسير کښې که د عطف يو اړخ ناټاکلے وي، ټول عطف هم ناټاکلے وي۔
+د فصل په باب هم همداسې ده۔
+
+خو که~$!A$ او~$!B$ په هممهاله ډول وارزوو، تر دې ښه پايله
+تر لاسه کولے شو۔ که له دوو کړنلارو يوه ودرېږي او~$\False$
+ورکړي، درېدلے شو، ځکه چې د عطف ځواب به خامخا دروغ وي۔ نو په
+دې حالت کښې د عطف يو اړخ چې دروغ وي، ټول عطف دروغ وي، که څه هم
+بل اړخ ناټاکلے وي۔ په همدې ډول، د فصل د هممهالې محاسبې پر مهال
+چې د يوه اړخ کړنلاره ودرېږي او رښتيا ورکړي، درېدلے شو: فصل به
+خامخا رښتيا وي۔ نو دلته د مرکبې دعوې پايله معلومولے شو، که څه
+هم يو اړخ ئې ناټاکلے وي۔ په دې تفسير کښې~$\Undef$ د «ناټاکلي»
+پر ځای د «نامعلوم» په معنا لوستل کېدے شي۔
+
+له دغو دوو تفسيرونو څخه د کليني قوي او کمزوري منطقونه جوړېږي۔
+شرطي د~$\lnot !A \lor !B$ په معادل ډول تعريفېږي۔
+
+\begin{defn}
+\emph{د کليني قوي منطق}~$\LogKs$ د لاندې ماتريس په وسيله تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$ نښلوونکي لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+  \item $\True$ يوازينے ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{\True\}$۔
+  \item د صدق تابعې په لاندې جدولونو کښې ورکړل شوې دي:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}$ & \\ 
+      \hline  
+      $\True$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\ 
+      $\False$ & $\False$ & $\False$ & $\False$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\True$ & $\True$ \\ 
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$  \\ 
+      $\False$ & $\True$ & $\True$ & $\True$ 
+    \end{tabular}
+  \end{center} 
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+\emph{د کليني کمزورے منطق}~$\LogKw$ د لاندې ماتريس په وسيله تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$ نښلوونکي لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+  \item $\True$ يوازينے ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{\True\}$۔
+  \item د صدق تابعې په لاندې جدولونو کښې ورکړل شوې دي:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}$ & \\ 
+      \hline  
+      $\True$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\ 
+      $\False$ & $\False$ & $\Undef$ & $\False$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\ 
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$  \\ 
+      $\False$ & $\True$ & $\Undef$ & $\True$ 
+    \end{tabular}
+  \end{center} 
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+  په~$\LogKs$ او~$\LogKw$ کښې هېڅ تاوتولوژي نشته۔
+\end{prop}
+
+\begin{proof}
+  که ټولو !!{propositional variable}s~$p$ ته
+  $\pAssign v(p) = \Undef$ ورکړل شي، نو د هر فارمول~$!A$
+  د رښتياوالي قيمت~$\pValue v(!A) = \Undef$ وي؛ ځکه چې
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  په دواړو منطقونو کښې همداسې ده۔ ځکه چې په~$\LogKs$ او
+  $\LogKw$ دواړو کښې~$\Undef \notin V^+$ دے، نو په دې
+  !!{valuation} کښې~$!A$ ټاکل شوے قيمت نۀ اخلي۔
+\end{proof}
+
+که څه هم د کليني په قوي او کمزوري منطقونو کښې تاوتولوژۍ نشته،
+خو د هغو د استلزام اړيکې بې‌محتوا نۀ دي۔
+
+\begin{prob}
+  لاندې کومې اړيکې (الف) د کليني په قوي او (ب) د کليني په
+  کمزوري منطق کښې صدق کوي؟ د هرې يوې دپاره د رښتياوالي جدول ورکړئ۔
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+دميتري بوچوار~$\Undef$ د «بې‌معنا» په توګه تعبير کړ او هڅه ئې وکړه
+چې د دروغجن د پارادوکس په څېر پارادوکسونه پرې حل کړي: هغه وټاکله
+چې پارادوکس لرونکې جملې به~$\Undef$ قيمت اخلي۔ ده داسې منطق
+وړاندې کړ چې په اصل کښې د کليني کمزورے منطق دے، خو اضافي
+نښلوونکي لري۔ له هغو څخه دوه «بهرنۍ نفي» او د «ناټاکلتيا»
+عملګر دي:
+\begin{center}
+  \begin{tabular}{c|c} 
+    $\tf{\sim}$ & \\ 
+    \hline  
+    $\True$ & $\False$ \\ 
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$ 
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c} 
+    $\tf{+}$ & \\ 
+    \hline  
+    $\True$ & $\False$ \\ 
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$ 
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  آيا د بوچوار په منطق کښې~$\sim$ د~$\lnot$ او~$+$ په وسيله
+  تعريفولے شئ؟ يعنې داسې !!a{formula} ومومئ چې يوازې
+  !!{propositional
+  variable}~$p$ پکښې وي، $\sim$ پکښې نۀ وي،
+  او تل د~$\mathord{\sim}p$ په شان د رښتياوالي قيمت واخلي۔
+  د خپل ځواب د تصديق دپاره د رښتياوالي جدول ورکړئ۔
+\end{prob}
+
+
+\end{document}

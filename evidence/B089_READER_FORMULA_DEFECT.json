@@ -1,0 +1,28 @@
+{
+  "schema": "ps-reader-formula-defect/1",
+  "recorded_utc": "2026-09-27T05:29:10.309624+00:00",
+  "status": "local PDF repair compiled and affected pages visually inspected; corrected public release pending",
+  "public_release": "v0.7.0-incompleteness",
+  "public_pdf_sha256": "cdf30b9304f6e7a43c05cbc08be7d33bba6974cdd037740d02ef47aecdc05b53",
+  "defect": "Active OLP ! metavariable notation appears literally as !A, !R_T and !G_PA on physical PDF pages 413-414 (printed 412-413).",
+  "root_cause": "The upstream formula style activates ! in math mode before begin-document; XeLaTeX/bidi resets the mathcode to ordinary at begin-document. A guarded one-page probe measured mathcode 32768 before begin-document, 22561 afterward, and 32768 after restoration.",
+  "repair": "Restore mathcode 8000 after begin-document/setRTL in all six reader preambles; preserve the frozen upstream formula style and literal factorial/uniqueness punctuation.",
+  "corrected_pdf_sha256": "5e103ec5d4de07437a54505c65078f456d3df110947f127051f812cdf469ad73",
+  "corrected_pdf_bytes": 2088718,
+  "corrected_pdf_pages": 420,
+  "guard_receipt_sha256": "d772f6e1d1da65137bef1db290a4ce9f8375205d0d447ccb9c5492d57613cf70",
+  "visual_samples": [
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\b089-reader-formula-413.png",
+      "sha256": "7a1fc06cb613a87f5a98de01ea4aa324393c8c10581fdb618ce0e55bad749f95"
+    },
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\b089-reader-formula-414.png",
+      "sha256": "966fb9f6031638dcf79d949939398ec2804e8921e214c6d851036b9b8618fd7f"
+    }
+  ],
+  "extracted_text_check": "Affected pages contain φ, ρT, γPA, and no literal !A, !R_T or !G_PA; full PDF text scan only found the legitimate unique-existence symbol ∃!y.",
+  "epub_sha256": "fc6291fac902df4e5598ac071990f202d778fadf08d9ebf9888bda8e27e6ace6",
+  "epub_scope": "Existing EPUB chapter 31 XHTML has no literal !A, !R_T or !G_PA; full EPUB accessibility/render validation remains to be completed for a corrected release.",
+  "next_action": "Complete corrected release QA and publish one coherent PDF/EPUB/direct-TEX/source-ZIP version in the existing GitHub and Zenodo lineages."
+}

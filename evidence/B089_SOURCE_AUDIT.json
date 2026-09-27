@@ -1,0 +1,113 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T05:24:14.733227+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-KLEENE-THREE-VALUED",
+  "batch_id": "PS-B089-KLEENE-THREE-VALUED",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0395",
+      "source_path": "content/many-valued-logic/three-valued-logics/kleene.tex",
+      "source_bytes": 6879,
+      "source_sha256": "0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7",
+      "target_sha256": "f303752ae433ae8deeccde1236abf0850e7e606801b9367a505cf45619643dc4",
+      "paired_blocks": 19
+    }
+  ],
+  "notes_path": "work/B089_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "cedc0a9541961c26eb469c1aef7e5624edc8daa319413cffe799d978d7b26ca5",
+  "consultation_path": "work/B089_CANON_CONSULTATION.md",
+  "consultation_sha256": "87fe0a7bc7417939a89421b86c5fd91f515e22a6c2f8add273de44d1631c70fa",
+  "staging_qa_sha256": {
+    "OLP-0395": "87a826239481c08bb70f4b0f27b48f730370d412dd9e402a04d8c8247404b2c2"
+  },
+  "proof_amendment_audit_sha256": "0ff501b8ba32f0c63ff06b4171348e4948608f862de99f07d66af17bdedb3fba",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0395",
+      "source_lines": "13-43",
+      "kind": "computational-motivation",
+      "finding": "Sequential nontermination and parallel early determination are distinct; undefined, unknown and meaningless readings are not collapsed."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "source_lines": "45-131",
+      "kind": "matrix-tables",
+      "finding": "All ten source truth tables are preserved, strong and weak operations differ, and True alone is designated in each matrix."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "source_lines": "133-162",
+      "kind": "tautology-and-consequence",
+      "finding": "The all-Undef valuation proof, absence of tautologies, nontrivial entailment and five exercises are translated without formula edits."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "source_lines": "164-194",
+      "kind": "bochvar-operators",
+      "finding": "Bochvar's meaningless reading and two distinct unary operators are retained; final exercise is not solved in the translation."
+    }
+  ],
+  "formula_policy": "All math spans, ten truth tables, exercise formulas, IDs, labels, environment order and structural macros match frozen English exactly.",
+  "unresolved": "Exact Pakistani specialized Kleene/Bochvar compounds remain provisional; no human specialist approval claimed. Corrected reader release remains pending.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0395 and OLP-0391 proof amendment; then OLP-0396."
+}

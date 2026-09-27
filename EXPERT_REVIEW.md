@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 394 of 722 source units are translated drafts. This log contains 201 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 395 of 722 source units are translated drafts. This log contains 202 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1794,7 +1794,7 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Choice: Restrict the theorem and corollary to the common formula fragment whose every used connective, including nullary constants, agrees on Boolean inputs; require Boolean assignments for all relevant variables.
 - Source and target: [frozen English](upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L23) and [Pashto disclosure](ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L42).
 - Evidence: a falsity constant interpreted as True satisfies the four listed connective conditions yet disagrees with classical evaluation of that constant formula.
-- Timing: contemporaneous B086 source review before cumulative acceptance
+- Timing: contemporaneous B086 source review before cumulative acceptance; B089 proof amendment adds the nullary-constant base and finite-arity induction step without changing formulas.
 
 ## TERM-MVL-THREE-VALUED-INTRO
 
@@ -1831,6 +1831,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Type: source-correction
 - Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L231) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L245).
 - Evidence: The source's final Undef conflicts with its unchanged tables, which force False. The Pashto text discloses this beside the correction.
+
+## TERM-MVL-KLEENE-BOCHVAR
+
+- Type: terminology
+- Choice: قوي/کمزورے کليني منطق / پرله‌پسې/هممهاله ارزونه / خپرېدونکے ناټاکلے قيمت / د بوخوار بهرنۍ نفي او ناټاکلتيا
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/kleene.tex#L13) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/kleene.tex#L13).
+- Uncertainty: exact Pakistani strong/weak Kleene and Bochvar compounds remain provisional.
+- Review question: Do the decisive known values in the strong tables remain distinct from weak Undef propagation and Bochvar's meaningless reading?
+- Timing: contemporaneous B089 source review and visually inspected Pakistani-first consultation
 
 ## DEC-OLFUN-001
 

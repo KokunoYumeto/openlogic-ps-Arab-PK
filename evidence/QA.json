@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 394,
-    "structural_pass": 394,
+    "draft_units": 395,
+    "structural_pass": 395,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B088-LUKASIEWICZ-THREE-VALUED",
+  "batch": "PS-B089-KLEENE-THREE-VALUED",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12296,7 +12296,7 @@
       "unit_id": "OLP-0391",
       "path": "content/many-valued-logic/syntax-and-semantics/sublogics.tex",
       "source_sha256": "1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7",
-      "translation_sha256": "403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4",
+      "translation_sha256": "357898d22f6947442916c8b8e976a003dbcc467c7b1f8104b0f17186cd33d784",
       "source_blocks": 10,
       "target_blocks": 10,
       "checks": {
@@ -12414,6 +12414,32 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0395",
+      "path": "content/many-valued-logic/three-valued-logics/kleene.tex",
+      "source_sha256": "0b632552858c410d3670357a0df7071cb5a3c5bd285681e86988ed07263852d7",
+      "translation_sha256": "f303752ae433ae8deeccde1236abf0850e7e606801b9367a505cf45619643dc4",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -16148,6 +16174,48 @@
       "passage": "modal limitation",
       "reverse_paraphrase": "The contradiction should count as impossible, but under p=Undef the proposed modal matrix assigns False to its negated possibility claim rather than making it a tautology.",
       "finding": "OLMVL-004 corrects the source's stated Undef value to the value forced by its own three unchanged tables."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "computation motive",
+      "reverse_paraphrase": "An algorithm may return True or False or run forever; serial evaluation fails to return when a required part diverges.",
+      "finding": "Three outcomes and the sequential constraint are explicit."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "parallel shortcut",
+      "reverse_paraphrase": "A known False conjunct settles conjunction, and a known True disjunct settles disjunction, even if the other part never finishes.",
+      "finding": "The two short-circuit cases remain distinct."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "strong versus weak matrices",
+      "reverse_paraphrase": "Strong operations can settle on a known decisive input; weak operations return Undef if an input is Undef; both designate only True.",
+      "finding": "All eight strong/weak connective tables and designated sets are unchanged."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "no tautologies",
+      "reverse_paraphrase": "Assigning Undef to every propositional letter makes every formula Undef, so neither matrix has a tautology.",
+      "finding": "The induction claim and designated-value conclusion are translated."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "consequence exercises",
+      "reverse_paraphrase": "There are still nontrivial entailments; five exercises compare strong and weak consequence and their formulas.",
+      "finding": "Exercise number and formulas are preserved without supplying solutions."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "Bochvar meaning",
+      "reverse_paraphrase": "Undef represents meaningless paradoxical sentences rather than simply an unknown truth value.",
+      "finding": "The interpretation is expressly distinguished."
+    },
+    {
+      "unit_id": "OLP-0395",
+      "passage": "Bochvar unary operators",
+      "reverse_paraphrase": "External negation and undefinedness are different unary functions with different tables, followed by an exercise to define them.",
+      "finding": "Both original tables and the exercise remain exact."
     }
   ],
   "builds": [
