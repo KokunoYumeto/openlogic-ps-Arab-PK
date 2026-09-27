@@ -1,0 +1,31 @@
+{
+  "schema": "ps-b102-staging-qa/1",
+  "unit_id": "OLP-0410",
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+  "source_sha256": "a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab",
+  "target_sha256": "401fae35ae264cf6d2598a4531b765c8c11327bbac612037009d75fbb5013ed3",
+  "source_blocks": 30,
+  "target_blocks": 30,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\lnot!A\\lor!B)$"
+  ],
+  "target_only_math": [
+    "$\\lnot!A\\lor!B$"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "documented_math_exception": "OLNML-001",
+  "all_checks_pass": true
+}

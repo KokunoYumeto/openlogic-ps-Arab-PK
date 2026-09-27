@@ -9834,6 +9834,52 @@
       ],
       "decision_timing": "contemporaneous B096 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-001",
+      "unit_id": "OLP-0410",
+      "classification": "unmatched_closing_parenthesis_in_conditional_abbreviation",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+      "source_sha256": "a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:91-92",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+      "target_line_1based": 94,
+      "target_sha256": "401fae35ae264cf6d2598a4531b765c8c11327bbac612037009d75fbb5013ed3",
+      "mode": "remove-unmatched-parenthesis-plus-adjacent-Pashto-note",
+      "translation_change": "Removes the unmatched closing parenthesis from the disjunction-based conditional abbreviation, with an adjacent Pashto disclosure.",
+      "reason": "The source has no opening parenthesis for the final closing parenthesis; the standard not-A-or-B conditional abbreviation and the alternative conjunction branch are preserved.",
+      "formula_policy": "Only the stray closing parenthesis is removed from one tagged formula; all other math, IDs, macros, environments and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lnot!A\\lor!B)$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\lor!B$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LANGUAGE",
+      "audit_artifacts": [
+        "B101_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:91-92",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:94",
+        "B101_MODAL_LANGUAGE_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B101 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

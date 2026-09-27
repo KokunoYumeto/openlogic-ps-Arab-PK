@@ -2936,3 +2936,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target changes the prose's quantified side index from Gamma_1 to Gamma_i, while leaving the displayed first and last sides unchanged; it discloses the source repair beside the definition.
 - Evidence: The displayed n-sided sequent runs from Gamma_1 to Gamma_n, while the following phrase says each Gamma_1 is a finite sequence. The quantified phrase refers to each side Gamma_i.
 - Disclosure: `corrected-quantified-side-index-plus-adjacent-Pashto-note`. Frozen English remains unchanged.
+
+## OLNML-001
+
+- Unit: `OLP-0410`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex` (a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab) at `content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:91-92`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex:94` (401fae35ae264cf6d2598a4531b765c8c11327bbac612037009d75fbb5013ed3).
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LANGUAGE`.
+- Treatment: Removes the unmatched closing parenthesis from the disjunction-based conditional abbreviation, with an adjacent Pashto disclosure.
+- Evidence: The source has no opening parenthesis for the final closing parenthesis; the standard not-A-or-B conditional abbreviation and the alternative conjunction branch are preserved.
+- Previous parallel corrections: `OLPL-001` and `OLFOL-005`. Frozen English remains unchanged.

@@ -1,0 +1,112 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: language-modal-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{lan}
+
+\olsection{د بنسټيز مودالي منطق ژبه}
+
+\begin{defn}
+د مودالي منطق بنسټيزه ژبه دا توکي لري:
+\begin{enumerate}
+  \tagitem{prvFalse}{د !!{falsity} قضيوي ثابت~$\lfalse$۔}{}
+  \tagitem{prvTrue}{د !!{truth} قضيوي ثابت~$\ltrue$۔}{}
+  \item د !!{propositional variable}s يو !!{denumerable}s سټ: $\Obj
+    p_0$، $\Obj p_1$، $\Obj p_2$، \dots
+  \item قضيوي نښلوونکي: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.
+  \tagitem{prvBox}{مودالي عامل~$\Box$۔}{}
+  \tagitem{prvDiamond}{مودالي عامل~$\Diamond$۔}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+د بنسټيزې مودالي ژبې \emph{!!^{formula}s} په استقرايي ډول داسې
+  تعريفېږي:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+\tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+\item هر !!{propositional variable}~$\Obj p_i$ يو اټومي !!{formula} دے۔
+
+\tagitem{prvNot}{که $!A$ يو !!a{formula} وي، نو $\lnot !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔}{}
+
+\tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvBox}{که $!A$ يو !!a{formula} وي، نو $\Box !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvDiamond}{که $!A$ يو !!a{formula} وي، نو $\Diamond !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{limitClause}{بل هېڅ شے !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defBox,defDiamond}
+\begin{defn}
+هغه فارمولونه چې له تعريف شوو عاملونو جوړ شوي، په لاندې ډول
+بايد وپوهول شي:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defBox,defDiamond}
+
+\tagitem{defTrue}{$\ltrue$ د
+  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$ د يو
+    ثابت اټومي !!{formula}~$!A$ دپاره} لنډه نښه ده۔}{}
+
+\tagitem{defFalse}{$\lfalse$ د
+  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$ د يو
+    ثابت اټومي !!{formula}~$!A$ دپاره} لنډه نښه ده۔}{}
+
+\tagitem{defNot}{$\lnot !A$ د $!A \lif \lfalse$ لنډه نښه ده۔}{}
+
+\tagitem{defOr}{$!A \lor !B$ د
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$} لنډه نښه ده۔}{}
+
+\tagitem{defAnd}{$!A \land !B$ د
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$} لنډه نښه ده۔}{}
+
+\tagitem{defIf}{$!A \lif !B$ د
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}
+  لنډه نښه ده۔}{}
+\textbf{د ژباړې د نسخې سمون (OLNML-001):} د سرچينې د لومړي بديل
+په پای کښې يو بې‌جوړه تړلے قوس راغلے دے؛ دلته يوازې هماغه زيات قوس
+لرې شوے دے۔ دا سمون د پخوانيو بياني او لومړۍ درجې منطق له مستندو
+سمونونو سره همغږے دے۔
+
+\tagitem{defIff}{$!A \liff !B$ د $(!A \lif !B) \land (!B
+  \lif !A)$ لنډه نښه ده۔}{}
+
+\tagitem{defBox}{$\Box !A$ د $\lnot\Diamond\lnot !A$ لنډه نښه ده۔}{}
+
+\tagitem{defDiamond}{$\Diamond !A$ د $\lnot\Box\lnot !A$ لنډه نښه ده۔}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+
+که !!a{formula}~$!A$ کښې $\Box$ يا $\Diamond$ نۀ وي، هغه
+\emph{له موداليت پرته} بولو.
+
+\end{document}

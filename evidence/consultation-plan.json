@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
-  "status": "OLP-0408–0409 source-reviewed and staged; 20 paired blocks, unchanged formal spans and eleven reverse-paraphrase samples",
+  "batch_id": "PS-B101-NORMAL-MODAL-LANGUAGE",
+  "status": "OLP-0410 source-reviewed and staged; 30 paired blocks, one disclosed source punctuation correction, nine reverse-paraphrase samples and independent semantic checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8578,6 +8578,28 @@
         "Interpretatione",
         "JSL"
       ]
+    },
+    "OLP-0410": {
+      "batch_id": "PS-B101-NORMAL-MODAL-LANGUAGE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P12-COUNTABLE-IFF",
+        "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+      ],
+      "terms": [
+        "TERM-PROPOSITION",
+        "TERM-SOL-DEDEKIND-COUNTABILITY",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEMANTICS",
+        "TERM-MODAL-LOGIC"
+      ],
+      "scope": "Thirty-block basic modal language: denumerably infinite variables, optional alphabet and inductive formation tags, all defined operators and modal-free criterion; one adjacent-disclosed source punctuation correction OLNML-001.",
+      "allowed_residual_english": [
+        "OLNML"
+      ]
     }
   },
   "semantic_review": [
@@ -12846,6 +12868,60 @@
       "passage": "classical systems",
       "reverse_paraphrase": "S4 and S5 are among the classical systems formed from D, T, B, 4 and 5 schemas.",
       "finding": "All formal names and source scope retained."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "alphabet",
+      "reverse_paraphrase": "The alphabet optionally has truth and falsity constants, a countably infinite variable family, optional propositional connectives, and Box and Diamond.",
+      "finding": "Tags and exact symbols retained."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "denumerability",
+      "reverse_paraphrase": "The variable family is countably infinite, not merely finite-or-countable.",
+      "finding": "Original denumerable token retained; countability senses kept distinct."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "atomic formulas",
+      "reverse_paraphrase": "Each enabled constant and every propositional variable is atomic.",
+      "finding": "All three tagged/untagged cases retained."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "Boolean formation",
+      "reverse_paraphrase": "Negation, conjunction, disjunction, conditional and biconditional form formulas only when their relevant tags are enabled.",
+      "finding": "All optional formation cases retained."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "modal formation",
+      "reverse_paraphrase": "Box A and Diamond A are unary formulas when A is a formula; nothing else is a formula.",
+      "finding": "Both unary cases and closure clause retained."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "defined constants and connectives",
+      "reverse_paraphrase": "Missing truth, falsity and Boolean operators receive the source's tagged alternative abbreviations.",
+      "finding": "All alternatives retained verbatim."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "conditional correction",
+      "reverse_paraphrase": "The disjunction branch defines A implies B as not-A or B; the stray source closing parenthesis is removed and disclosed.",
+      "finding": "OLNML-001 recorded; other branch unchanged."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "modal duality",
+      "reverse_paraphrase": "Box A is not-Diamond-not-A, and Diamond A is not-Box-not-A.",
+      "finding": "Both equations retained and exhaustively checked over two-world models."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "passage": "modal-free",
+      "reverse_paraphrase": "A formula is modal-free precisely when it contains neither Box nor Diamond.",
+      "finding": "Both operator exclusions retained."
     }
   ]
 }

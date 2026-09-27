@@ -1,0 +1,108 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T09:20:35.533018+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LANGUAGE",
+  "batch_id": "PS-B101-NORMAL-MODAL-LANGUAGE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0410",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+      "source_bytes": 3419,
+      "source_sha256": "a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab",
+      "target_sha256": "401fae35ae264cf6d2598a4531b765c8c11327bbac612037009d75fbb5013ed3",
+      "paired_blocks": 30,
+      "source_correction_ids": [
+        "OLNML-001"
+      ]
+    }
+  ],
+  "notes_path": "work/B101_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "28de49bcf006aa370f5ffe7557da57e84c5477bcb58f4dc8b1165fc1fae454d1",
+  "consultation_path": "work/B101_CANON_CONSULTATION.md",
+  "consultation_sha256": "1ec4e6061491a14b6bbcabd35f6b7b640f730a4dc59f5b30c4404c4f85653b77",
+  "staging_qa_sha256": {
+    "OLP-0410": "8dda2991e0b5e3f448708f8f95b929c75ce3fef484ebc9af4d8fc3063d25c0d2"
+  },
+  "semantic_qa_sha256": "3c8ddfe68eac95a2964b58a7cd5166b27984efc4e3d2ec059c92341dcb3a7954",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P7-PROPOSITION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 12,
+      "printed_page": "7",
+      "page_image_sha256": "676db5dd242addc7fa5f79435bd484ad699efebce0e5c1b70143af3ebe56a7cd",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P12-COUNTABLE-IFF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 17,
+      "printed_page": "12",
+      "page_image_sha256": "e84eea989fc92d9731ddb401efd3d2fedc6d1d97cd1275e6b884ede3aef1831c",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 23,
+      "printed_page": "18",
+      "page_image_sha256": "d6b9a4d54bf5e26bee0481d22eb16f75f49bccbe4f51c5ba1bc5ad74f2906e38",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0410",
+      "source_lines": "11-29",
+      "kind": "alphabet",
+      "finding": "All optional truth constants, denumerably infinite variables, optional Boolean connectives and both modal operators retain their exact tags and symbols."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "source_lines": "31-64",
+      "kind": "inductive-grammar",
+      "finding": "Every atomic, Boolean and unary modal formation rule and the exclusion clause are preserved."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "source_lines": "66-103",
+      "kind": "defined-abbreviations",
+      "finding": "All tagged alternatives are retained; one unmatched source parenthesis is removed and disclosed as OLNML-001. Independent Boolean and Kripke duality checks pass."
+    },
+    {
+      "unit_id": "OLP-0410",
+      "source_lines": "104-105",
+      "kind": "modal-free",
+      "finding": "Modal-free means neither Box nor Diamond occurs in the formula."
+    }
+  ],
+  "formula_policy": "Only the stray closing parenthesis is removed from one tagged formula; all other math, IDs, macros, environments and term tokens match frozen English. Frozen English unchanged.",
+  "unresolved": "No exact Pakistani attestation of the specialized Box/Diamond operator compound was found; the rendering remains reversible. No human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0410; continue OLP-0411."
+}
