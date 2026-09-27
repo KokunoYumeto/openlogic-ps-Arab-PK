@@ -3025,3 +3025,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The two-world example now says its cross edges are the only edges, and the adjacent Pashto note discloses why this restriction is needed.
 - Reason: Ruv and Rvu alone allow Ruu and Rvv; the source conclusion that the relation is irreflexive does not follow without excluding self-loops.
 - The 98,304-case finite source preview confirms the printed correspondence implications. Frozen English and every formula remain unchanged.
+
+## OLNML-010
+
+- Unit: `OLP-0423`.
+- Frozen source: `content/normal-modal-logic/frame-definability/definability.tex:42` (SHA-256 `a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c`).
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/frame-definability/definability.tex:42` (SHA-256 `ef2ff8a1c0d4232ef4aaf39d14503070a95976f1756fe5559f0faab64d157258`); adjacent disclosure at line 46.
+- Treatment: Adds [w] only to the Box A satisfaction assertion in the D converse proof and discloses the omitted world argument beside the proof step.
+- Reason: From the assumption that w has no R-successor, Box A follows at w; it does not follow at every world of the model. The paired Diamond A assertion already carries [w].
+- Exactly one math span differs; all other formulas and frozen English remain unchanged.

@@ -1,0 +1,94 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T12:43:12.304749+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
+  "batch_id": "PS-B113-NORMAL-MODAL-FRAME-DEFINABILITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0423",
+      "source_path": "content/normal-modal-logic/frame-definability/definability.tex",
+      "source_bytes": 7786,
+      "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+      "target_sha256": "ef2ff8a1c0d4232ef4aaf39d14503070a95976f1756fe5559f0faab64d157258",
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLNML-010"
+      ]
+    }
+  ],
+  "notes_path": "work/B113_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "3876dfc76ea7a5176135acda2ef7056599b29a6f6b007012a1ff1ca9178df528",
+  "consultation_path": "work/B113_CANON_CONSULTATION.md",
+  "consultation_sha256": "db10867f82f1a3e5a3c9bcf8e0e6ed03a3b9da348589377f36b1659d5a216d05",
+  "staging_qa_sha256": {
+    "OLP-0423": "81b8c4c471143a1b60883066d72a744454636f6de776474271532c95ce5516ee"
+  },
+  "source_preview_sha256": "7ac9b0de10e42cfc15e529d1da37738fdca20a51892ad9a7e1d976df90134f0b",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0423",
+      "source_lines": "12-32",
+      "kind": "definability-and-converse-theorem",
+      "finding": "All-and-only frame class definition and five-class converse scope retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "source_lines": "36-92",
+      "kind": "five-countermodel-valuations",
+      "finding": "Each valuation witnesses the stated missing property; one missing world argument corrected and disclosed."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "source_lines": "94-165",
+      "kind": "corollaries-systems-relations",
+      "finding": "Model-level D strength, frame class corollary, S4/S5 examples and five relation facts retained."
+    }
+  ],
+  "formula_policy": "One documented [w] satisfaction-span addition; all other formal tokens match frozen English.",
+  "unresolved": "Exact Pakistani modal definability wording is source-led and provisional. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0423; continue OLP-0424."
+}

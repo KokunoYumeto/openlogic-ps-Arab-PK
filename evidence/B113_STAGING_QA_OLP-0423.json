@@ -1,0 +1,47 @@
+{
+  "schema": "ps-b113-definability-staging-qa/1",
+  "unit_id": "OLP-0423",
+  "source_path": "content/normal-modal-logic/frame-definability/definability.tex",
+  "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+  "target_sha256": "ef2ff8a1c0d4232ef4aaf39d14503070a95976f1756fe5559f0faab64d157258",
+  "source_blocks": 20,
+  "target_blocks": 20,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\mSat{M}{\\Box!A}$"
+  ],
+  "target_only_math": [
+    "$\\mSat{M}{\\Box!A}[w]$"
+  ],
+  "block_math_diff": [
+    {
+      "block": 10,
+      "source_only": [
+        "$\\mSat{M}{\\Box!A}$"
+      ],
+      "target_only": [
+        "$\\mSat{M}{\\Box!A}[w]$"
+      ]
+    }
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [],
+  "target_only_tags": [],
+  "source_only_terms": [],
+  "target_only_terms": [],
+  "documented_math_exception": "OLNML-010",
+  "all_checks_pass": true
+}

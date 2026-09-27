@@ -1,0 +1,63 @@
+{
+  "schema": "ps-b113-definability-source-preview/1",
+  "status": "source-only finite check; OLP-0423 not yet translated or accepted",
+  "unit_id": "OLP-0423",
+  "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+  "three_world_relations": 512,
+  "p_q_valuations_per_relation": 64,
+  "world_cases": 98304,
+  "correspondences_checked": {
+    "serial_D": {
+      "has_property": 343,
+      "valid_formula": 343,
+      "both": 343
+    },
+    "reflexive_T": {
+      "has_property": 64,
+      "valid_formula": 64,
+      "both": 64
+    },
+    "symmetric_B": {
+      "has_property": 64,
+      "valid_formula": 64,
+      "both": 64
+    },
+    "transitive_4": {
+      "has_property": 171,
+      "valid_formula": 171,
+      "both": 171
+    },
+    "euclidean_5": {
+      "has_property": 39,
+      "valid_formula": 39,
+      "both": 39
+    },
+    "partial_function_diamond_to_box": {
+      "has_property": 64,
+      "valid_formula": 64,
+      "both": 64
+    },
+    "functional_diamond_iff_box": {
+      "has_property": 27,
+      "valid_formula": 27,
+      "both": 27
+    },
+    "weakly_dense_boxbox_to_box": {
+      "has_property": 333,
+      "valid_formula": 333,
+      "both": 333
+    },
+    "weakly_connected_L": {
+      "has_property": 416,
+      "valid_formula": 416,
+      "both": 416
+    },
+    "weakly_directed_G": {
+      "has_property": 272,
+      "valid_formula": 272,
+      "both": 272
+    }
+  },
+  "result": "All ten table formulas are frame-valid iff the paired accessibility property holds on every checked three-world relation.",
+  "scope_limit": "A finite check supports source review; it is not a proof for arbitrary frames or substitutions."
+}

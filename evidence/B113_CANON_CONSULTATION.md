@@ -1,0 +1,5 @@
+# OLP-0423 Pakistani-first Pashto consultation
+
+The Pashto Academy/Peshawar scholarly article `PS-PK-IQRAM-2019` at printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) guides Pakistani exposition and semantics language; page 2 was visually inspected during this adjacent chapter work. `GRAMMAR-P166-SOV` guides verb-final conditional proof prose. The Afghan `PS-AF-NIAZMAN-2022` passages at printed pages 109 and 24 (`AF-NIAZMAN-P109-RELATION`, `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT`) are labelled regional comparators only, for relations and validity. They do not attest the exact Pakistani modal proof vocabulary.
+
+Established `TERM-EXPLICIT-IMPLICIT-DEFINABILITY`, `TERM-MODAL-FRAME`, `TERM-MODAL-ACCESSIBILITY-PROPERTIES`, `TERM-MODAL-SCHEMA`, `TERM-SEMANTICS` and `TERM-REL-PROPERTIES` guide the lexical choices. Frozen English and formal semantics govern every witness valuation, world quantifier, proof direction, system name and source correction. The D proof's omitted world argument is localized and disclosed as OLNML-010; no other formula is altered.

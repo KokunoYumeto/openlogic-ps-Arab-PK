@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 422 of 722 source units are translated drafts. This log contains 208 terminology entries and 346 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 423 of 722 source units are translated drafts. This log contains 208 terminology entries and 347 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4834,6 +4834,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - [Frozen English](upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L106) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L107).
 - Treatment: specify that the cross edges are the only edges and disclose why the irreflexivity claim requires that restriction. The formulas match.
 - Review question: Does the restriction make the countermodel claim precise?
+
+
+## DEC-OLNML-010
+
+- Type: source correction; the D converse proof omits the world argument of a Box A satisfaction claim.
+- [Frozen English](upstream/content/normal-modal-logic/frame-definability/definability.tex#L42) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/definability.tex#L42).
+- Treatment: add `[w]` only to that satisfaction span and disclose the repair beside the proof. The successorless-world assumption establishes the claim at w, not globally in the model.
+- Review question: Is the repaired claim scoped exactly to the chosen world?
 
 
 ## DEC-REL-I

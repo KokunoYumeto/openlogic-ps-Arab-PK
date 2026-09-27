@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B112-NORMAL-MODAL-FRAMES",
-  "status": "OLP-0422 source-reviewed and staged; 12 paired blocks, seven reverse-paraphrase samples; B110 finite reflexivity preview remains the supporting prior check",
+  "batch_id": "PS-B113-NORMAL-MODAL-FRAME-DEFINABILITY",
+  "status": "OLP-0423 source-reviewed and staged; 20 paired blocks, one disclosed world-argument repair, ten reverse-paraphrase samples and 512 three-world frame checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8841,6 +8841,26 @@
       ],
       "scope": "Twelve-block nonempty modal-frame definition, based-on model, frame and frame-class validity, T/reflexivity distinction and model-class remark.",
       "allowed_residual_english": []
+    },
+    "OLP-0423": {
+      "batch_id": "PS-B113-NORMAL-MODAL-FRAME-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT"
+      ],
+      "terms": [
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-MODAL-SCHEMA",
+        "TERM-SEMANTICS",
+        "TERM-REL-PROPERTIES"
+      ],
+      "scope": "Twenty-block full five-case modal frame correspondence proof, two corollaries, S4/S5 examples, relation facts and exercises; one disclosed missing-world source repair.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13733,6 +13753,66 @@
       "passage": "global validity",
       "reverse_paraphrase": "A globally valid formula or schema is valid in any frame class.",
       "finding": "Restriction of universal validity retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "definition",
+      "reverse_paraphrase": "A defines class F iff exactly the frames in F validate A.",
+      "finding": "Both directions and exact class extension retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "D converse",
+      "reverse_paraphrase": "At a world with no successor, Box p true and Diamond p false under every valuation.",
+      "finding": "The world-specific source repair OLNML-010 is disclosed."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "T converse",
+      "reverse_paraphrase": "Valuate p exactly on successors of w; validity of Box p implies p forces Rww.",
+      "finding": "Valuation construction and reflexivity conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "B converse",
+      "reverse_paraphrase": "For Ruv without Rvu, make p true exactly at non-successors of v, so p at u and not Box Diamond p at u.",
+      "finding": "Witness valuation and asymmetry direction retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "4 converse",
+      "reverse_paraphrase": "Valuate p on successors of u; a length-two path u-v-w without u-w falsifies Box p implies BoxBox p.",
+      "finding": "Counterexample path and valuation retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "5 converse",
+      "reverse_paraphrase": "Valuate p on non-successors of u; w sees p at v but also u with no p-successor.",
+      "finding": "Euclidean counterexample direction retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "D model-level strength",
+      "reverse_paraphrase": "A nonserial model fails D regardless of valuation, so D characterizes serial models as well as frames.",
+      "finding": "Stronger model-level statement retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "S4/S5",
+      "reverse_paraphrase": "S4 uses reflexive/transitive frames; S5 uses reflexive/symmetric/Euclidean frames.",
+      "finding": "All named frame properties and schema labels retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "not entailment",
+      "reverse_paraphrase": "Frame-valid T implying frame-valid D is not world-level semantic entailment of schemas.",
+      "finding": "Meta-level and object-level relation distinguished."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "relation facts",
+      "reverse_paraphrase": "The five listed relations among reflexive, symmetric, transitive, Euclidean, directed, connected, functional and serial properties remain exercises.",
+      "finding": "No proof inserted into exercises."
     }
   ]
 }

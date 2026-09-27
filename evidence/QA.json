@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 422,
-    "structural_pass": 422,
+    "draft_units": 423,
+    "structural_pass": 423,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B112-NORMAL-MODAL-FRAMES",
+  "batch": "PS-B113-NORMAL-MODAL-FRAME-DEFINABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13735,6 +13735,44 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0423",
+      "path": "content/normal-modal-logic/frame-definability/definability.tex",
+      "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+      "translation_sha256": "ef2ff8a1c0d4232ef4aaf39d14503070a95976f1756fe5559f0faab64d157258",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-010"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mSat{M}{\\Box!A}$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{\\Box!A}[w]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -18627,6 +18665,66 @@
       "passage": "global validity",
       "reverse_paraphrase": "A globally valid formula or schema is valid in any frame class.",
       "finding": "Restriction of universal validity retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "definition",
+      "reverse_paraphrase": "A defines class F iff exactly the frames in F validate A.",
+      "finding": "Both directions and exact class extension retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "D converse",
+      "reverse_paraphrase": "At a world with no successor, Box p true and Diamond p false under every valuation.",
+      "finding": "The world-specific source repair OLNML-010 is disclosed."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "T converse",
+      "reverse_paraphrase": "Valuate p exactly on successors of w; validity of Box p implies p forces Rww.",
+      "finding": "Valuation construction and reflexivity conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "B converse",
+      "reverse_paraphrase": "For Ruv without Rvu, make p true exactly at non-successors of v, so p at u and not Box Diamond p at u.",
+      "finding": "Witness valuation and asymmetry direction retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "4 converse",
+      "reverse_paraphrase": "Valuate p on successors of u; a length-two path u-v-w without u-w falsifies Box p implies BoxBox p.",
+      "finding": "Counterexample path and valuation retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "5 converse",
+      "reverse_paraphrase": "Valuate p on non-successors of u; w sees p at v but also u with no p-successor.",
+      "finding": "Euclidean counterexample direction retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "D model-level strength",
+      "reverse_paraphrase": "A nonserial model fails D regardless of valuation, so D characterizes serial models as well as frames.",
+      "finding": "Stronger model-level statement retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "S4/S5",
+      "reverse_paraphrase": "S4 uses reflexive/transitive frames; S5 uses reflexive/symmetric/Euclidean frames.",
+      "finding": "All named frame properties and schema labels retained."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "not entailment",
+      "reverse_paraphrase": "Frame-valid T implying frame-valid D is not world-level semantic entailment of schemas.",
+      "finding": "Meta-level and object-level relation distinguished."
+    },
+    {
+      "unit_id": "OLP-0423",
+      "passage": "relation facts",
+      "reverse_paraphrase": "The five listed relations among reflexive, symmetric, transitive, Euclidean, directed, connected, functional and serial properties remain exercises.",
+      "finding": "No proof inserted into exercises."
     }
   ],
   "builds": [

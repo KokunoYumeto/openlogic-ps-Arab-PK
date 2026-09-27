@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0421; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T12:13:51.632438+00:00",
+  "status": "adopted through OLP-0423; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T12:43:12.314877+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10278,6 +10278,57 @@
       ],
       "decision_timing": "contemporaneous B111 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-010",
+      "unit_id": "OLP-0423",
+      "classification": "missing_world_argument_in_D_satisfaction_claim",
+      "source_path": "content/normal-modal-logic/frame-definability/definability.tex",
+      "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+      "source_locator": "content/normal-modal-logic/frame-definability/definability.tex:42",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/frame-definability/definability.tex",
+      "target_line_1based": 42,
+      "disclosure_line_1based": 46,
+      "target_sha256": "ef2ff8a1c0d4232ef4aaf39d14503070a95976f1756fe5559f0faab64d157258",
+      "mode": "corrected-satisfaction-world-plus-adjacent-Pashto-note",
+      "translation_change": "Adds [w] only to the Box A satisfaction assertion in the D converse proof and discloses the omitted world argument beside the proof step.",
+      "reason": "From the assumption that w has no R-successor, Box A follows at w; it does not follow at every world of the model. The paired Diamond A assertion already carries [w].",
+      "formula_policy": "Exactly one normalized math-span difference is permitted; other math, identifiers, structural macros, tags and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{\\Box!A}$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{\\Box!A}[w]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
+      "audit_artifacts": [
+        "B113_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/frame-definability/definability.tex:42",
+        "ps-Arab-PK/content/normal-modal-logic/frame-definability/definability.tex:42-47",
+        "B113_SOURCE_PREVIEW_OLP-0423.json"
+      ],
+      "decision_timing": "contemporaneous B113 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10352,7 +10403,8 @@
     "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
     "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
     "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY"
   ],
   "source_authorities": [
     {
