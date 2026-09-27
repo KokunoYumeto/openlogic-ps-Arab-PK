@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 431,
-    "structural_pass": 431,
+    "draft_units": 432,
+    "structural_pass": 432,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B120-NORMAL-MODAL-K-PROOFS",
+  "batch": "PS-B121-NORMAL-MODAL-DERIVED-RULES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14022,6 +14022,45 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0432",
+      "path": "content/normal-modal-logic/axioms-systems/derived-rules.tex",
+      "source_sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+      "translation_sha256": "1cbe210df7dc9a068e7750724de6a3dd215ef1613bf7ad4beb2eb1a0e92d4d4b",
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Diamond",
+        "defined",
+        "is",
+        "primitive"
+      ],
+      "allowed_residual_english": [
+        "Diamond",
+        "defined",
+        "is",
+        "primitive"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-015"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19358,6 +19397,78 @@
       "passage": "exercises",
       "reverse_paraphrase": "Readers are asked to find K derivations for three formulas; no solution is supplied.",
       "finding": "All three exercise formulas and open instruction retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "motivation",
+      "reverse_paraphrase": "Expanded K and propositional derivations are repetitive; RK abbreviates Nec, K and MP, while implication composition uses a tautology and MP twice.",
+      "finding": "Both shortcut mechanisms retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "propositional consequence",
+      "reverse_paraphrase": "If K proves each A_i and B follows by propositional logic, K proves B via the nested implication tautology and n uses of MP.",
+      "finding": "All premises, scope and n applications retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "RK lifting",
+      "reverse_paraphrase": "A K proof of a nested implication yields the corresponding nested Box implication by induction on n.",
+      "finding": "Necessitation/K direction retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "conjunction example",
+      "reverse_paraphrase": "The derived RK and PL shortcuts reduce the conjunction proof to three rows.",
+      "finding": "Three rows and labels retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "rewriting proposition",
+      "reverse_paraphrase": "From proved A iff B and C with A substituted for q, conclude C with B substituted; the proof remains an exercise.",
+      "finding": "Equivalent-subformula direction and open exercise retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "induction exercise",
+      "reverse_paraphrase": "Induct on complexity of C to prove the two substituted formulas equivalent.",
+      "finding": "Induction parameter and biconditional retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "shorthand repair",
+      "reverse_paraphrase": "The displayed derivation goes C(A) to C(B), so its replacement shorthand is B for A; the frozen generic label was reversed.",
+      "finding": "Correction disclosed without formula changes."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "primitive Diamond example",
+      "reverse_paraphrase": "Dual gives Diamond-not-p equivalent to not-Box-double-not-p, followed by PL and replacement of double-not-p with p.",
+      "finding": "Primitive branch retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "defined Diamond example",
+      "reverse_paraphrase": "The first line is a tautology because Diamond-not-p is by definition not-Box-double-not-p.",
+      "finding": "Definition and tautology instance retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "replacement roles",
+      "reverse_paraphrase": "C(q) is not-Box-q implies Diamond-not-p, while A is double-not-p and B is p.",
+      "finding": "Roles align with replacement direction."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "schematic use",
+      "reverse_paraphrase": "Uniform substitution extends the particular p result to arbitrary A.",
+      "finding": "Particular and schematic claims distinguished."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "substitution proof",
+      "reverse_paraphrase": "Induction on derivation length keeps tautology, K, optional Dual, MP and Nec steps valid under a uniform formula substitution.",
+      "finding": "All axiom/rule cases and premise/conclusion scope retained."
     }
   ],
   "builds": [

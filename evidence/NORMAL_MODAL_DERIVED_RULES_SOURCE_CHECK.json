@@ -1,0 +1,25 @@
+{
+  "schema": "ps-b121-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T20:21:52.386663+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_ids": [
+    "OLP-0432"
+  ],
+  "source_sha256": {
+    "OLP-0432": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8"
+  },
+  "target_sha256": {
+    "OLP-0432": "1cbe210df7dc9a068e7750724de6a3dd215ef1613bf7ad4beb2eb1a0e92d4d4b"
+  },
+  "audit_sha256": "d0874ecc650f15c41022c732a324cc136d666aa2e07d8fee450638601aaabce6",
+  "notes_sha256": "8c29d6983bcacfedc6f0cb092582abd0bc9953cbc574edb59615f921cbe18cc2",
+  "consultation_sha256": "81fd42f8a7a578ea15810190092ed8ea70a70f2fe0511cfa84d5d1f97bdccffa",
+  "staging_qa_sha256": "1b45d79f617f3b03ad52af4d7e53058762ea9623c652d7940b7444faebc512a1",
+  "documented_source_corrections": [
+    "OLNML-015"
+  ],
+  "unresolved": "Bare B argument in one source Subst expression remains as printed; exact derived-rule compound provisional; no human specialist or reader-layout approval claimed.",
+  "next_action": "Translate OLP-0433."
+}

@@ -1,0 +1,6 @@
+# OLP-0432 Pakistani-first Pashto consultation
+
+Pakistani Pashto Academy/Peshawar scholarly prose printed page 1 (`PK-IQRAM-P1-PROSE`) was visually inspected for adult expository syntax, کښې and final ے; its printed page 2 (`PK-IQRAM-P2-SEMANTICS`) remains a language-register comparator. Reference grammar printed page 166 (`GRAMMAR-P166-SOV`) was visually inspected for verb-final clauses. Neither Pakistani passage attests the precise phrase “derived rule” or modal K rewriting.
+
+Afghan regional comparator printed page 48 (`AF-NIAZMAN-P48-MODUS-PONENS`) was visually inspected for the modus-ponens rule and proof-sequence argument. Printed page 37 (`AF-NIAZMAN-P37-AXIOMATIC-PROOF`) supports axiom-schema exposition, and printed page 25 (`AF-NIAZMAN-P25-TAUTOLOGY`) supports the tautology concept. These are technical comparators only; the frozen OpenLogic section controls the nested implications, `\PL` and `\RK` uses, replacement direction, operator branches and substitution proof. Existing `TERM-PROP-SEMANTICS`, `TERM-PROOF-SYSTEMS`, `TERM-PROOF-CALCULI`, `TERM-MODAL-LOGIC`, `TERM-MODAL-SCHEMA` and `TERM-MODAL-NORMAL-NECESSITATION` guide consistency. The new provisional `TERM-MODAL-DERIVED-RULES` distinguishes a derived shortcut from a primitive rule and records the un-attested Pakistani compound honestly.
+

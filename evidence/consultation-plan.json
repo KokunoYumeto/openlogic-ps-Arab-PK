@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B120-NORMAL-MODAL-K-PROOFS",
-  "status": "OLP-0431 source-reviewed and staged; 16 paired blocks, ten reverse-paraphrase samples, six exact derivation branches",
+  "batch_id": "PS-B121-NORMAL-MODAL-DERIVED-RULES",
+  "status": "OLP-0432 source-reviewed and staged; 26 paired blocks, twelve reverse-paraphrase samples, one disclosed source repair and one provisional term",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9028,6 +9028,33 @@
         "is",
         "primitive"
       ]
+    },
+    "OLP-0432": {
+      "batch_id": "PS-B121-NORMAL-MODAL-DERIVED-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-SCHEMA",
+        "TERM-MODAL-NORMAL-NECESSITATION",
+        "TERM-MODAL-DERIVED-RULES"
+      ],
+      "scope": "Twenty-six blocks of derived PL/RK rules, equivalent-formula rewriting, five derivation environments, exercise and substitution closure with one disclosed shorthand-order repair.",
+      "allowed_residual_english": [
+        "Diamond",
+        "is",
+        "primitive",
+        "defined"
+      ]
     }
   },
   "semantic_review": [
@@ -14364,6 +14391,78 @@
       "passage": "exercises",
       "reverse_paraphrase": "Readers are asked to find K derivations for three formulas; no solution is supplied.",
       "finding": "All three exercise formulas and open instruction retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "motivation",
+      "reverse_paraphrase": "Expanded K and propositional derivations are repetitive; RK abbreviates Nec, K and MP, while implication composition uses a tautology and MP twice.",
+      "finding": "Both shortcut mechanisms retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "propositional consequence",
+      "reverse_paraphrase": "If K proves each A_i and B follows by propositional logic, K proves B via the nested implication tautology and n uses of MP.",
+      "finding": "All premises, scope and n applications retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "RK lifting",
+      "reverse_paraphrase": "A K proof of a nested implication yields the corresponding nested Box implication by induction on n.",
+      "finding": "Necessitation/K direction retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "conjunction example",
+      "reverse_paraphrase": "The derived RK and PL shortcuts reduce the conjunction proof to three rows.",
+      "finding": "Three rows and labels retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "rewriting proposition",
+      "reverse_paraphrase": "From proved A iff B and C with A substituted for q, conclude C with B substituted; the proof remains an exercise.",
+      "finding": "Equivalent-subformula direction and open exercise retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "induction exercise",
+      "reverse_paraphrase": "Induct on complexity of C to prove the two substituted formulas equivalent.",
+      "finding": "Induction parameter and biconditional retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "shorthand repair",
+      "reverse_paraphrase": "The displayed derivation goes C(A) to C(B), so its replacement shorthand is B for A; the frozen generic label was reversed.",
+      "finding": "Correction disclosed without formula changes."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "primitive Diamond example",
+      "reverse_paraphrase": "Dual gives Diamond-not-p equivalent to not-Box-double-not-p, followed by PL and replacement of double-not-p with p.",
+      "finding": "Primitive branch retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "defined Diamond example",
+      "reverse_paraphrase": "The first line is a tautology because Diamond-not-p is by definition not-Box-double-not-p.",
+      "finding": "Definition and tautology instance retained."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "replacement roles",
+      "reverse_paraphrase": "C(q) is not-Box-q implies Diamond-not-p, while A is double-not-p and B is p.",
+      "finding": "Roles align with replacement direction."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "schematic use",
+      "reverse_paraphrase": "Uniform substitution extends the particular p result to arbitrary A.",
+      "finding": "Particular and schematic claims distinguished."
+    },
+    {
+      "unit_id": "OLP-0432",
+      "passage": "substitution proof",
+      "reverse_paraphrase": "Induction on derivation length keeps tautology, K, optional Dual, MP and Nec steps valid under a uniform formula substitution.",
+      "finding": "All axiom/rule cases and premise/conclusion scope retained."
     }
   ]
 }

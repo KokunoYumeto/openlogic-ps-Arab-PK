@@ -1,0 +1,166 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: derived-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{der}
+
+\olsection{مشتقې قاعدې}
+
+د !!{derivation}s موندل او ليکل څرګنده ده چې ګران، دروند او تکراري کار
+دے۔ د بېلګې په توګه، ډېر ځله غواړو له $!A \lif !B$ څخه
+$\Box !A \lif \Box !B$ ته لاړ شو، يعنې قاعده~\RK وکاروو۔ د دې دپاره
+لومړے \Nec کارول، بيا د~\Ax{K} مناسب مثال ثبتول، او ورپسې~\MP کارول
+پکار دي۔ له $!A \lif !B$ او $!B \lif !C$ څخه $!A \lif !C$ ته د تلو
+دپاره دا (اوږد) تاوتولوژيک مثال ثبتول اړين دي:
+\[
+(!A \lif !B) \lif ((!B \lif !C) \lif (!A \lif !C))
+\]
+او بيا \MP{} دوه ځله کارول پکار دي۔ ډېر ځله غواړو يو فرعي
+!!{formula} په داسې فارمول بدل کړو چې ورسره يې هم‌ارزښتيا راته معلومه
+وي؛ د بېلګې په توګه، \iftag{prvDiamond}{$\Diamond
+  !A$ په $\lnot\Box\lnot !A$}{$\Box !A$ په $\lnot\Diamond\lnot !A$}، يا
+$\lnot\lnot !A$ په $!A$۔ نو د اصلي !!{derivation} د ټولو کرښو د ليکلو
+پر ځاے، دا ثبتول اسانه دي چې منځني ګامونه ولې !!{derivable} دي۔ د همدې
+دپاره د !!{derivability} په باب څو حقيقتونه راغونډوو۔
+
+\begin{prop}
+  که $\Log{K} \Proves !A_1$، \dots، $\Log{K} \Proves !A_n$ وي، او
+  $!B$ د قضيوي منطق له مخې له $!A_1$، \dots، $!A_n$ څخه راځي، نو
+  $\Log{K} \Proves !B$۔
+\end{prop}
+
+\begin{proof}
+  که $!B$ د قضيوي منطق له مخې له $!A_1$، \dots،~$!A_n$ څخه راځي، نو
+  \[
+  !A_1 \lif (!A_2 \lif \cdots (!A_n \lif !B)\dots)
+  \]
+  د تاوتولوژۍ يو مثال دے۔ د \MP{} قاعده $n$ ځله کارول د~$!B$
+  !!{derivation} راکوي۔
+\end{proof}
+
+د دې قضيې کارول به په~\PL نښه کوو۔
+
+\begin{prop}
+  که $\Log{K} \Proves !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif
+  !A_n)\dots)$ وي، نو $\Log{K} \Proves \Box !A_1 \lif (\Box !A_2 \lif
+  \cdots (\Box !A_{n-1} \lif \Box !A_n)\dots)$۔
+\end{prop}
+
+\begin{proof}
+  دا د~$n$ پر استقرا ثابتېږي، لکه د \olref[nor]{prop:rk} په ثبوت کښې۔
+\end{proof}
+
+د دې قضيې کارول به په~\RK نښه کوو۔ راځئ وښيو چې دا پايلې د
+!!{derivability} د ادعاوو ثابتول څنګه اسانه کوي۔
+
+\begin{prop}
+  $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box (!A \land !B)$
+\end{prop}
+
+\begin{proof}
+  \begin{derivation}
+    1. & $\Log{K} \Proves !A \lif (!B \lif (!A \land !B))$ & \Taut \\
+    2. & $\Log{K} \Proves \Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \RK, 1\\
+    3. & $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \PL, 2
+  \end{derivation}
+\end{proof}
+
+\begin{prop}\ollabel{prop:rewriting}
+  که $\Log{K} \Proves !A \liff !B$ او $\Log{K} \Proves
+  \Subst{!C}{!A}{q}$ وي، نو $\Log{K} \Proves \Subst{!C}{B}{q}$۔
+\end{prop}
+
+\begin{proof}
+  تمرین۔
+\end{proof}
+
+\begin{prob}
+  \olref[nml][prf][der]{prop:rewriting} داسې ثابت کړئ: د~$!C$ پر
+  پېچلتيا په استقرا وښيئ چې که $\Log{K} \Proves !A \liff !B$ وي، نو
+  $\Log{K} \Proves \Subst{!C}{!A}{q} \liff \Subst{!C}{!B}{q}$۔
+\end{prob}
+
+دا قضيه په ځانګړي ډول هغه وخت ګټوره ده چې غواړو $\Diamond$ په
+$\Box$ (يا برعکس) واړوو، يا په !!a{formula} کښې دوه‌ګونې نفي لرې
+کړو۔ په راتلونکو برخو کښې، کله چې !!a{formula}~$!C(!B)$ د~$!C(!A)$
+پر ځاے وليکو، د \olref{prop:rewriting} کارول به په «$!B$ د $!A$ پر
+ځاے» نښه کوو۔ په بل عبارت، «$!B$ د $!A$ پر ځاے» د لاندې ګامونو
+لنډيز دے۔ په منجمده انګرېزي سرچينه کښې د همدې لنډې نښې دوه نومونه
+سرچپه راغلي؛ دلته ترتيب د ښودل شوي اشتقاق او ورپسې بېلګې سره برابر دے:
+  \begin{derivation}
+    & $\Proves !C(!A)$ \\
+    & $\Proves !A \liff !B$\\
+    & $\Proves !C(!B)$ & د \olref{prop:rewriting} له مخې
+  \end{derivation}
+د بېلګې په توګه:
+
+\begin{prop}
+  $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$
+\end{prop}
+
+\begin{proof}
+  \iftag{prvDiamond}{% Diamond is primitive
+  \begin{derivation}
+    1. & $\Log{K} \Proves \Diamond \lnot p \liff \lnot\Box\lnot\lnot p$ &
+    \Dual\\
+    2. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \PL, 1\\
+    3. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $p$ د $\lnot\lnot p$ پر ځاے\\
+  \end{derivation}
+  }{% Diamond is defined
+  \begin{derivation}
+    1. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \Taut\\
+    2. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $p$ د $\lnot\lnot p$ پر ځاے\\
+  \end{derivation}
+  د~$1$ کرښې فارمول د $\lnot q \lif \lnot q$ يو مثال دے، چې
+  $\Box\lnot\lnot p$ پکې د~$q$ پر ځاے اېښودل شوے دے۔
+  $\Diamond\lnot p$ او $\lnot\Box\lnot\lnot p$ يو شان دي، ځکه چې
+  $\Diamond$ د~$\lnot\Box\lnot$ په توګه تعريف شوے دے۔}
+\end{proof}
+
+په پورته !!{derivation} کښې وروستے ګام «$p$ د $\lnot\lnot p$ پر ځاے»
+د لاندې ګامونو لنډيز دے:
+  \begin{derivation}
+    & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot
+    p$\\
+    & $\Log{K} \Proves \lnot\lnot p \liff p$ & \Taut\\
+    & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & د \olref{prop:rewriting} له مخې
+  \end{derivation}
+په دې بېلګه کښې د \olref{prop:rewriting} د $!C(q)$، $!A$ او $!B$
+ځايونه په ترتيب سره $\lnot \Box q \lif \Diamond \lnot p$،
+$\lnot\lnot p$ او~$p$ نيسي۔
+
+که په !!a{formula} کښې فرعي !!{formula} $\lnot\Diamond !A$ وي،
+د \olref{prop:rewriting} په کارولو يې په $\Box\lnot !A$ بدلولے شو، ځکه
+چې $\Log{K} \Proves \lnot\Diamond !A \liff \Box\lnot !A$۔ دا او دې ته
+ورته بدلونونه به په لنډ ډول «$\Box\lnot$ د
+$\lnot\Diamond$ پر ځاے» نښه کوو۔
+
+لاندې قضيه دا توجيه کوي چې د !!{derivability} پايلې په طرحه‌يي
+ډول هم ثابتولے شو۔ د بېلګې په توګه، مخکنۍ قضيه يوازې
+$\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ نۀ ثابتوي، بلکې
+د هر~$!A$ دپاره $\Log{K} \Proves \lnot\Box !A \lif \Diamond
+\lnot !A$ هم ثابتوي۔
+
+\begin{prop}
+  که $!A$ د $!B$ د ځايناستۍ يو مثال وي او $\Log{K} \Proves !B$،
+  نو $\Log{K} \Proves !A$۔
+\end{prop}
+
+\begin{proof}
+  د~$!B$ د !!{derivation} پر اوږدوالي په استقرا دا ثابتول ستړي
+  کوونکي خو معمولي کار دے چې پر ټول !!{derivation} ځايناستي تطبيقول
+  بيا هم سم !!{derivation} ورکوي۔ په ځانګړي ډول، د تاوتولوژيکو
+  مثالونو د ځايناستۍ مثالونه بيا هم تاوتولوژيک مثالونه وي؛ د
+  \iftag{prvDiamond}{\Dual{} او~}{}\Ax{K} د مثالونو د ځايناستۍ مثالونه
+  بيا هم د~\iftag{prvDiamond}{\Dual{}
+    او~}{}\Ax{K} مثالونه وي؛ او په مقدمې (يا مقدمو) او نتيجه دواړو کښې
+  د !!{propositional variable}s پر ځاے د !!{formula}s په اېښودلو سره
+  د \MP{} او~\Nec{} کارول سم پاتې کېږي۔
+\end{proof}
+
+
+\end{document}

@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0429; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T19:20:25.321093+00:00",
+  "status": "adopted through OLP-0432; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T20:10:39.485418+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10528,6 +10528,53 @@
       ],
       "decision_timing": "contemporaneous B118 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-015",
+      "unit_id": "OLP-0432",
+      "classification": "reversed_generic_replacement_shorthand_order",
+      "source_path": "content/normal-modal-logic/axioms-systems/derived-rules.tex",
+      "source_sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+      "source_locator": "content/normal-modal-logic/axioms-systems/derived-rules.tex:90-98",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/axioms-systems/derived-rules.tex",
+      "target_line_1based": 90,
+      "disclosure_line_1based": 92,
+      "target_sha256": "1cbe210df7dc9a068e7750724de6a3dd215ef1613bf7ad4beb2eb1a0e92d4d4b",
+      "mode": "adjacent-Pashto-shorthand-order-correction-without-formula-change",
+      "translation_change": "Render the generic replacement as B for A, matching C(A) to C(B), and disclose that the frozen source reverses the two shorthand names.",
+      "reason": "The displayed derivation moves from C(A) to C(B). The later example correctly labels replacement of double-negated p by p as “p for double-negated p.” Both earlier generic “A for B” labels are reversed.",
+      "formula_policy": "Every inline/displayed formula, formula multiset, identifier, structural macro, tag and term marker remains unchanged; only the prose shorthand order and adjacent explanation change. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES",
+      "audit_artifacts": [
+        "B121_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/axioms-systems/derived-rules.tex:90-98",
+        "ps-Arab-PK/content/normal-modal-logic/axioms-systems/derived-rules.tex:87-99",
+        "B121_STAGING_QA_OLP-0432.json"
+      ],
+      "decision_timing": "contemporaneous B121 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10606,7 +10653,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES"
   ],
   "source_authorities": [
     {

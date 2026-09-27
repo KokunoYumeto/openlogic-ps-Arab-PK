@@ -3071,3 +3071,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Qualify the proposition’s least modal logic as normal, matching the proof intersection and next definition; specify that the all-formula witness is normal.
 - Reason: Intersecting only normal modal logics does not prove leastness among all modal logics. The following definition explicitly names the least normal modal logic, and a non-normal tautology-instance logic need not contain K.
 - The correction is disclosed adjacent to the Pashto proposition; displayed formulas and frozen English remain unchanged.
+
+## OLNML-015
+
+- Unit: OLP-0432.
+- Frozen source: content/normal-modal-logic/axioms-systems/derived-rules.tex:90-98 (SHA-256 ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/axioms-systems/derived-rules.tex:87–99 (SHA-256 1cbe210df7dc9a068e7750724de6a3dd215ef1613bf7ad4beb2eb1a0e92d4d4b).
+- Treatment: Render the generic replacement as B for A, matching C(A) to C(B), and disclose that the frozen source reverses the two shorthand names.
+- Reason: The displayed derivation moves from C(A) to C(B). The later example correctly labels replacement of double-negated p by p as “p for double-negated p.” Both earlier generic “A for B” labels are reversed.
+- The correction is disclosed adjacent to the Pashto explanation; all formulas and frozen English remain unchanged.
