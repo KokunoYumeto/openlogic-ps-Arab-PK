@@ -1,0 +1,5 @@
+# OLP-0433 Pakistani-first Pashto consultation
+
+Previously inspected Pakistani Pashto Academy/Peshawar scholarly prose at printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) guides adult expository register, کښې and final ے. Reference grammar printed page 166 (`GRAMMAR-P166-SOV`) guides verb-final clauses. Afghan regional comparators printed pages 25, 37 and 48 (`AF-NIAZMAN-P25-TAUTOLOGY`, `AF-NIAZMAN-P37-AXIOMATIC-PROOF`, `AF-NIAZMAN-P48-MODUS-PONENS`) support the existing terminology for tautology, axiomatic proofs and inference. They are comparators, not evidence for an exact Pakistani modal-K technical phrase.
+
+Existing `TERM-PROP-SEMANTICS`, `TERM-PROOF-SYSTEMS`, `TERM-MODAL-LOGIC`, `TERM-MODAL-NORMAL-NECESSITATION` and `TERM-MODAL-DERIVED-RULES` control vocabulary. The frozen OpenLogic formulas control each implication direction and rule reference. The sole row-7 disjunct-order repair is justified by the immediately preceding proof row and disclosed to readers; it does not create a new theorem or a new terminology decision.

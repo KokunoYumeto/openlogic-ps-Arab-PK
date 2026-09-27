@@ -3080,3 +3080,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Render the generic replacement as B for A, matching C(A) to C(B), and disclose that the frozen source reverses the two shorthand names.
 - Reason: The displayed derivation moves from C(A) to C(B). The later example correctly labels replacement of double-negated p by p as “p for double-negated p.” Both earlier generic “A for B” labels are reversed.
 - The correction is disclosed adjacent to the Pashto explanation; all formulas and frozen English remain unchanged.
+
+## OLNML-016
+
+- Unit: OLP-0433.
+- Frozen source: content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:68-85 (SHA-256 75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:68–88 (SHA-256 571871c54283689dc9fc29963313ecf52f41e52e9e96699c1f81f4b331f4a679).
+- Treatment: In row 7 of the fourth derivation, order the final disjuncts as Diamond A or Diamond B to match the proposition, and disclose the frozen-source reversal immediately below the derivation.
+- Reason: The fourth proposition states the A-or-B order, but its final source row prints B-or-A. Row 6 implies the stated A-or-B conclusion by propositional logic, so the existing PL,6 justification remains valid.
+- One inline formula changes exactly as registered; the correction is disclosed adjacent to the proof. The frozen English remains unchanged.

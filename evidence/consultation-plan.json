@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B121-NORMAL-MODAL-DERIVED-RULES",
-  "status": "OLP-0432 source-reviewed and staged; 26 paired blocks, twelve reverse-paraphrase samples, one disclosed source repair and one provisional term",
+  "batch_id": "PS-B122-NORMAL-MODAL-MORE-K-PROOFS",
+  "status": "OLP-0433 source-reviewed and staged; 16 paired blocks, seven reverse-paraphrase samples, one disclosed formula repair",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9055,6 +9055,26 @@
         "primitive",
         "defined"
       ]
+    },
+    "OLP-0433": {
+      "batch_id": "PS-B122-NORMAL-MODAL-MORE-K-PROOFS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-NORMAL-NECESSITATION",
+        "TERM-MODAL-DERIVED-RULES"
+      ],
+      "scope": "Four K proof propositions, four derivations and three open exercises in 16 blocks, with one disclosed final-row disjunct-order repair.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14463,6 +14483,48 @@
       "passage": "substitution proof",
       "reverse_paraphrase": "Induction on derivation length keeps tautology, K, optional Dual, MP and Nec steps valid under a uniform formula substitution.",
       "finding": "All axiom/rule cases and premise/conclusion scope retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "opening",
+      "reverse_paraphrase": "Further derivability examples use the simplified derived-rule method of the preceding section.",
+      "finding": "Cross-reference and method retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "first proposition",
+      "reverse_paraphrase": "Box(A implies B) implies Diamond A implies Diamond B through contraposition, RK, PL and Diamond duality.",
+      "finding": "Direction and rule labels retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "second proposition",
+      "reverse_paraphrase": "Box A implies that Diamond(A implies B) implies Diamond B.",
+      "finding": "Nested implication scope retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "third proposition",
+      "reverse_paraphrase": "Diamond A or Diamond B implies Diamond(A or B); the symmetric B case is asserted similarly.",
+      "finding": "Disjunction direction and shorthand retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "fourth proposition",
+      "reverse_paraphrase": "Diamond(A or B) implies Diamond A or Diamond B; row 6 directly yields the A-or-B conclusion by PL.",
+      "finding": "Source final-row reversal repaired and disclosed."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "first exercise",
+      "reverse_paraphrase": "Show Diamond not false implies Box A implies Diamond A.",
+      "finding": "Exercise remains open."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "remaining exercises",
+      "reverse_paraphrase": "Show Box(A or B) implies Diamond A or Box B, and (Diamond A implies Box B) implies Box(A implies B).",
+      "finding": "Both scopes and open exercises retained."
     }
   ]
 }

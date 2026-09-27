@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0432; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T20:10:39.485418+00:00",
+  "status": "adopted through OLP-0433; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T20:30:35.069653+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10575,6 +10575,57 @@
       ],
       "decision_timing": "contemporaneous B121 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-016",
+      "unit_id": "OLP-0433",
+      "classification": "reversed_disjunct_order_in_final_proof_row",
+      "source_path": "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex",
+      "source_sha256": "75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e",
+      "source_locator": "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:68-85",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex",
+      "target_line_1based": 85,
+      "disclosure_line_1based": 87,
+      "target_sha256": "571871c54283689dc9fc29963313ecf52f41e52e9e96699c1f81f4b331f4a679",
+      "mode": "adjacent-Pashto-disclosed-single-formula-repair",
+      "translation_change": "In row 7 of the fourth derivation, order the final disjuncts as Diamond A or Diamond B to match the proposition, and disclose the frozen-source reversal immediately below the derivation.",
+      "reason": "The fourth proposition states the A-or-B order, but its final source row prints B-or-A. Row 6 implies the stated A-or-B conclusion by propositional logic, so the existing PL,6 justification remains valid.",
+      "formula_policy": "Exactly one inline formula changes, as the math exception records. All other formulas, identifiers, structural macros, tags, term markers and frozen English remain unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!B\\lor\\Diamond!A)$"
+        ],
+        "target_only": [
+          "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!A\\lor\\Diamond!B)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-MORE-K-PROOFS",
+      "audit_artifacts": [
+        "B122_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:68-85",
+        "ps-Arab-PK/content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex:68-88",
+        "B122_STAGING_QA_OLP-0433.json"
+      ],
+      "decision_timing": "contemporaneous B122 owner proof review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10654,7 +10705,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-MORE-K-PROOFS"
   ],
   "source_authorities": [
     {

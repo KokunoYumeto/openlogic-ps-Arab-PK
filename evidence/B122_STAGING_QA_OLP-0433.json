@@ -1,0 +1,51 @@
+{
+  "schema": "ps-b122-more-K-proofs-staging-qa/1",
+  "unit_id": "OLP-0433",
+  "source_path": "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex",
+  "source_sha256": "75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e",
+  "target_sha256": "571871c54283689dc9fc29963313ecf52f41e52e9e96699c1f81f4b331f4a679",
+  "source_blocks": 16,
+  "target_blocks": 16,
+  "derivation_environments": 4,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math_scoped_correction": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "block_math_scoped_correction": true,
+    "derivation_rows_except_labels_and_repair": true,
+    "source_comments_exact": true,
+    "adjacent_pashto_disclosure": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!B\\lor\\Diamond!A)$"
+  ],
+  "target_only_math": [
+    "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!A\\lor\\Diamond!B)$"
+  ],
+  "block_math_diff": [
+    {
+      "block": 14,
+      "source_only": [
+        "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!B\\lor\\Diamond!A)$"
+      ],
+      "target_only": [
+        "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!A\\lor\\Diamond!B)$"
+      ]
+    }
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [],
+  "target_only_tags": [],
+  "source_only_terms": [],
+  "target_only_terms": [],
+  "all_checks_pass": true
+}

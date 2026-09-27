@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 432,
-    "structural_pass": 432,
+    "draft_units": 433,
+    "structural_pass": 433,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B121-NORMAL-MODAL-DERIVED-RULES",
+  "batch": "PS-B122-NORMAL-MODAL-MORE-K-PROOFS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14061,6 +14061,44 @@
         "OLNML-015"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0433",
+      "path": "content/normal-modal-logic/axioms-systems/more-proofs-in-K.tex",
+      "source_sha256": "75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e",
+      "translation_sha256": "571871c54283689dc9fc29963313ecf52f41e52e9e96699c1f81f4b331f4a679",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-016"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!B\\lor\\Diamond!A)$"
+        ],
+        "target_only": [
+          "$\\Log{K}\\Proves\\Diamond(!A\\lor!B)\\lif(\\Diamond!A\\lor\\Diamond!B)$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -19469,6 +19507,48 @@
       "passage": "substitution proof",
       "reverse_paraphrase": "Induction on derivation length keeps tautology, K, optional Dual, MP and Nec steps valid under a uniform formula substitution.",
       "finding": "All axiom/rule cases and premise/conclusion scope retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "opening",
+      "reverse_paraphrase": "Further derivability examples use the simplified derived-rule method of the preceding section.",
+      "finding": "Cross-reference and method retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "first proposition",
+      "reverse_paraphrase": "Box(A implies B) implies Diamond A implies Diamond B through contraposition, RK, PL and Diamond duality.",
+      "finding": "Direction and rule labels retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "second proposition",
+      "reverse_paraphrase": "Box A implies that Diamond(A implies B) implies Diamond B.",
+      "finding": "Nested implication scope retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "third proposition",
+      "reverse_paraphrase": "Diamond A or Diamond B implies Diamond(A or B); the symmetric B case is asserted similarly.",
+      "finding": "Disjunction direction and shorthand retained."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "fourth proposition",
+      "reverse_paraphrase": "Diamond(A or B) implies Diamond A or Diamond B; row 6 directly yields the A-or-B conclusion by PL.",
+      "finding": "Source final-row reversal repaired and disclosed."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "first exercise",
+      "reverse_paraphrase": "Show Diamond not false implies Box A implies Diamond A.",
+      "finding": "Exercise remains open."
+    },
+    {
+      "unit_id": "OLP-0433",
+      "passage": "remaining exercises",
+      "reverse_paraphrase": "Show Box(A or B) implies Diamond A or Box B, and (Diamond A implies Box B) implies Box(A implies B).",
+      "finding": "Both scopes and open exercises retained."
     }
   ],
   "builds": [
