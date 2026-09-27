@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 381,
-    "structural_pass": 381,
+    "draft_units": 382,
+    "structural_pass": 382,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B079-LAMBDA-PARTIAL-RECURSIVE",
+  "batch": "PS-B080-LAMBDA-DEFINABLE-RECURSIVE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12057,6 +12057,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0382",
+      "path": "content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex",
+      "source_sha256": "ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07",
+      "translation_sha256": "867c6412978d0c7c47c194a700f79f40ffde6bc0250f271f72df9a83db925526",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15509,6 +15535,30 @@
       "passage": "partial-recursion theorem",
       "reverse_paraphrase": "More involved encodings represent undefined values by terms lacking normal forms; every partial recursive function is lambda-definable, but the source omits the proof.",
       "finding": "The target states the theorem without inventing a construction or proof."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "converse theorem",
+      "reverse_paraphrase": "Any lambda-definable partial function is partial recursive; this is the converse of the previous unit's theorem.",
+      "finding": "The target retains partiality and does not claim total recursion."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "arithmetization and normalization",
+      "reverse_paraphrase": "Prime-power sequence coding assigns natural numbers to lambda terms; a partial recursive normalize function yields the code of a normal form when one exists and is undefined otherwise.",
+      "finding": "The target keeps the Gödel-code input and output distinction."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "Church-code conversion",
+      "reverse_paraphrase": "toChurch and fromChurch move between natural numbers and codes of Church numerals.",
+      "finding": "Both directional roles remain explicit."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "simulation of f",
+      "reverse_paraphrase": "Build the code of F applied to coded numeral inputs, normalize if possible, and decode the Church numeral result; when f is undefined, the displayed normalization call is undefined.",
+      "finding": "All term and display formulas remain exact; the source offers a proof sketch only."
     }
   ],
   "builds": [

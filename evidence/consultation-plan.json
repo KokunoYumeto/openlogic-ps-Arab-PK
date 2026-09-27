@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B079-LAMBDA-PARTIAL-RECURSIVE",
-  "status": "OLP-0381 source-reviewed and staged; nine paired blocks, exact math parity and four reverse-paraphrase samples",
+  "batch_id": "PS-B080-LAMBDA-DEFINABLE-RECURSIVE",
+  "status": "OLP-0382 source-reviewed and staged; nine paired blocks, exact math parity and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8028,6 +8028,22 @@
       ],
       "scope": "All nine paired blocks: partial-recursive class, unbounded search, failure of naive lambda composition for undefined inputs, and the theorem stated without proof. No math correction. Pakistani scholarly prose and grammar govern usage; Afghan function prose is only a labelled regional comparator.",
       "allowed_residual_english": []
+    },
+    "OLP-0382": {
+      "batch_id": "PS-B080-LAMBDA-DEFINABLE-RECURSIVE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-PRIME-SEQUENCE-CODING"
+      ],
+      "scope": "All nine paired blocks: the converse theorem, arithmetic coding of lambda terms, partial normalization, Church-numeral code conversion, and simulation of a lambda-definable function. No math correction. Pakistani scholarly prose and grammar govern usage; Afghan function prose is only a labelled regional comparator.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11480,6 +11496,30 @@
       "passage": "partial-recursion theorem",
       "reverse_paraphrase": "More involved encodings represent undefined values by terms lacking normal forms; every partial recursive function is lambda-definable, but the source omits the proof.",
       "finding": "The target states the theorem without inventing a construction or proof."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "converse theorem",
+      "reverse_paraphrase": "Any lambda-definable partial function is partial recursive; this is the converse of the previous unit's theorem.",
+      "finding": "The target retains partiality and does not claim total recursion."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "arithmetization and normalization",
+      "reverse_paraphrase": "Prime-power sequence coding assigns natural numbers to lambda terms; a partial recursive normalize function yields the code of a normal form when one exists and is undefined otherwise.",
+      "finding": "The target keeps the Gödel-code input and output distinction."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "Church-code conversion",
+      "reverse_paraphrase": "toChurch and fromChurch move between natural numbers and codes of Church numerals.",
+      "finding": "Both directional roles remain explicit."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "passage": "simulation of f",
+      "reverse_paraphrase": "Build the code of F applied to coded numeral inputs, normalize if possible, and decode the Church numeral result; when f is undefined, the displayed normalization call is undefined.",
+      "finding": "All term and display formulas remain exact; the source offers a proof sketch only."
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T01:52:45.281902+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-LAMBDA-DEFINABLE-RECURSIVE",
+  "batch_id": "PS-B080-LAMBDA-DEFINABLE-RECURSIVE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0382",
+      "source_path": "content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex",
+      "source_bytes": 1967,
+      "source_sha256": "ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07",
+      "target_sha256": "867c6412978d0c7c47c194a700f79f40ffde6bc0250f271f72df9a83db925526",
+      "paired_blocks": 9
+    }
+  ],
+  "notes_path": "work/B080_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6a7f99c9c0e8dc79693af218a948952a5df50577c879df9de32cd0104005b1ce",
+  "consultation_path": "work/B080_CANON_CONSULTATION.md",
+  "consultation_sha256": "ad14fc51d540047926d4eff96cbadfd3e48834d357a0e3576031ecb9e767c5bc",
+  "staging_qa_sha256": "14196d4694aff0a8b33904066eb18a73b07b9b16d64f1efdd4561e19d0b7565f",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0382",
+      "source_lines": "12-19",
+      "kind": "converse-partial-recursion-theorem",
+      "finding": "Every lambda-definable partial function is partial recursive; no totality claim is introduced."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "source_lines": "21-30",
+      "kind": "arithmetized-normalization-sketch",
+      "finding": "Prime-power sequence coding and the normalize, toChurch and fromChurch functions preserve definedness and input/output roles."
+    },
+    {
+      "unit_id": "OLP-0382",
+      "source_lines": "32-43",
+      "kind": "godel-code-simulation",
+      "finding": "The exact application and normalization formulas preserve the conditional Church-numeral result and undefined case."
+    }
+  ],
+  "formula_policy": "All formulas, identifiers, structural macros and term tokens remain source-equivalent. No mathematical correction is adopted. Frozen English bytes are unchanged.",
+  "unresolved": "The source gives only a proof sketch, not a full construction. This draft preserves that status; exact technical Pashto compounds remain provisional and human specialist approval is not claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0382, then continue OLP-0383."
+}
