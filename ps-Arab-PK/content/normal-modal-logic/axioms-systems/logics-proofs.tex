@@ -1,0 +1,112 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: logics-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prf}
+
+\olsection{\usetoken{P}{derivation} او مودالي نظامونه}
+
+لومړے د عادي مودالي منطقونو دپاره !!a{derivation}
+تعريفوو۔ په لنډ ډول، !!a{derivation} د !!{formula}s
+داسې لړۍ ده چې هر !!{element} ئې يا د څو
+\emph{بديهي اصلونو} څخه د يوه (د ځايناستۍ مثال)
+وي، يا له مخکنيو !!{element}s څخه د څو استنتاجي
+قاعدو له يوې راځي۔ د عادي مودالي منطقونو دپاره
+د تاوتولوژيو\iftag{prvDiamond}{، \Ax{K}، او~\Dual{}}{ او~\Ax{K}}
+ټول مثالونه بديهي اصلونه شمېرل کېږي۔ په دې سره
+مودالي نظام~$\Log{K}$، يعنې تر ټولو کوچنے عادي
+مودالي منطق، ترلاسه کېږي۔ خو د نورو نظامونو د
+ترلاسه کولو دپاره نور بديهي اصلونه هم زياتولے شو۔
+قاعدې تل مودوس پوننس~\MP{} او د لزوم ورکولو قاعده~\Nec دي۔
+
+\begin{defn}
+  که مودالي نظام~$\Log{K} !A_1 \dots !A_n$ او
+  !!a{formula}~$!B$ راکړل شوي وي، وايو چې~$!B$
+  په~$\Log{K} !A_1 \dots !A_n$ کښې \emph{!!{derivable}}
+  دے، په نښو $\Log{K} !A_1 \dots !A_n \Proves !B$،
+  هله او يوازې هله چې داسې !!{formula}s $!C_1$،
+  \dots، $!C_k$ وي چې $!C_k = !B$، او هر~$!C_i$ يا
+  د تاوتولوژۍ مثال وي، يا د $\Ax{K}$،\iftag{prvDiamond}{
+  $\Dual$،}{} $!A_1$، \dots، $!A_n$ څخه د يوه مثال
+  وي، يا د \MP{} يا~\Nec د قاعدې له مخې له مخکنيو
+  !!{formula}s څخه راځي۔
+\end{defn}
+
+لاندې قضيه موږ ته اجازه راکوي چې د~$!B$ يو
+$\Sigma$-!!{derivation} په ښودلو سره
+$!B \in \Sigma$ ثابت کړو۔
+
+\begin{prop}
+  $\Log{K} !A_1 \dots !A_n = \Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B}$۔
+\end{prop}
+
+\begin{proof}
+  د !!{derivation}s پر اوږدوالي استقرا کوو، څو وښيو چې
+  $\Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B} \subseteq
+  \Log{K} !A_1 \dots !A_n$۔
+
+  که د~$!B$ د !!{derivation} اوږدوالے~$1$ وي، يوازې
+  يو !!{formula} لري۔ دا !!{formula} د \MP{} يا \Nec
+  په واسطه له مخکنيو فارمولونو څخه نۀ شي راتلے، نو
+  بايد د تاوتولوژۍ مثال، د \Ax{K} مثال،\iftag{prvDiamond}{
+  د $\Dual$ مثال،}{} يا د $!A_1$، \dots،~$!A_n$
+  څخه د يوه مثال وي۔ خو $\Log{K}!A_1\dots!A_n$ هم
+  دا لري، نو $!B \in \Log{K}!A_1 \dots !A_n$۔
+
+  که د~$!B$ د !!{derivation} اوږدوالے~$> 1$ وي، نو
+  $!B$ سربېره پر دې د \MP{} يا \Nec{} په واسطه له
+  هغو !!{formula}s څخه هم ترلاسه کېدے شي چې د
+  !!{derivation} وروستۍ کرښه نۀ وي۔ که $!B$ له~$!C$
+  او~$!C \lif !B$ څخه (د \MP په واسطه) راځي، نو
+  د استقرا د فرض له مخې $!C$ او $!C \lif !B \in
+  \Log{K}!A_1 \dots !A_n$ دي۔ خو هر مودالي منطق
+  د مودوس پوننس لاندې تړلے دے، نو
+  $!B \in \Log{K}!A_1 \dots !A_n$۔ که
+  $!B \equiv \Box !C$ د~$!C$ څخه د \Nec په واسطه
+  راځي، نو د استقرا د فرض له مخې $!C
+  \in \Log{K}!A_1 \dots !A_n$۔ خو هر عادي مودالي
+  منطق د~$\Nec$ لاندې تړلے دے، نو
+  $!B \in \Log{K}!A_1\dots!A_n$۔
+
+  سرچپه شموليت داسې ښيو چې
+  $\Sigma = \Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B }$
+  يو عادي مودالي منطق دے چې د $!A_1$، \dots، $!A_n$
+  ټول مثالونه لري؛ بيا دا کاروو چې
+  $\Log{K} !A_1 \dots !A_n$ د تعريف له مخې تر ټولو
+  کوچنے داسې منطق دے۔
+  \begin{enumerate}
+    \item هره تاوتولوژي~$!B$ د تاوتولوژۍ يو مثال دے، نو
+      $\Log{K}!A_1\dots!A_n \Proves !B$، او $\Sigma$
+      ټولې تاوتولوژۍ لري۔
+    \item که $\Log{K}!A_1\dots!A_n \Proves !C$ او
+      $\Log{K}!A_1\dots!A_n \Proves !C \lif !B$، نو
+      $\Log{K}!A_1\dots!A_n \Proves !B$: د~$!C$
+      !!{derivation} د~$!C \lif !B$ له اشتقاق
+      سره يوځاے کړئ او د~$!B$ کرښه ورزياته کړئ۔
+      وروستۍ کرښه د \MP{} له مخې توجيه کېږي۔ نو
+      $\Sigma$ د مودوس پوننس لاندې تړلے دے۔
+    \item که $!B$ يو !!a{derivation} ولري، نو د~$!B$
+      هر د ځايناستۍ مثال هم !!a{derivation} لري:
+      ځايناستي د !!{derivation} پر هر !!{formula}
+      تطبيق کړئ۔ (تمرین: د !!{derivation}s پر اوږدوالي
+      په استقرا ثابت کړئ چې پايله لا هم سم
+      !!{derivation} دے۔) نو $\Sigma$ د يو شان
+      ځايناستۍ لاندې تړلے دے۔ (اوس مو ثابته کړه
+      چې $\Sigma$ د مودالي منطق ټول شرطونه پوره کوي۔)
+    \item $\Log{K}!A_1\dots!A_n \Proves \Ax{K}$ لرو، نو
+      $K \in \Sigma$۔
+    \tagitem{prvDiamond}{همدارنګه
+      $\Log{K}!A_1\dots!A_n \Proves \Dual$ لرو، نو
+      $\Dual \in \Sigma$۔}{}
+    \item که $\Log{K}!A_1\dots!A_n \Proves !C$، نو
+      زياته شوې کرښه~$\Box !C$ د~\Nec له مخې
+      توجيه کېږي۔ په پايله کښې $\Sigma$ د~\Nec
+      لاندې تړلے دے۔ نو $\Sigma$ عادي دے۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

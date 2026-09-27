@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 429,
-    "structural_pass": 429,
+    "draft_units": 430,
+    "structural_pass": 430,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B118-NORMAL-MODAL-LOGICS",
+  "batch": "PS-B119-NORMAL-MODAL-DERIVABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13952,6 +13952,33 @@
         "OLNML-014"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0430",
+      "path": "content/normal-modal-logic/axioms-systems/logics-proofs.tex",
+      "source_sha256": "bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a",
+      "translation_sha256": "066aae5f47e538a80efc55f8613d9c040914d02fb06bc43c0c56a7815e8c0058",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19180,6 +19207,54 @@
       "passage": "modal system",
       "reverse_paraphrase": "K A_1...A_n denotes the least normal logic with instances; K alone is the least normal logic.",
       "finding": "Notation and minimality retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "derivation opening",
+      "reverse_paraphrase": "A derivation is a finite formula sequence justified by axiom instances or MP/Nec; K is least normal logic.",
+      "finding": "Rules and system minimality retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "definition",
+      "reverse_paraphrase": "B is derivable iff a finite C_1..C_k sequence ends in B with every line an allowed axiom instance or MP/Nec result.",
+      "finding": "All finite-sequence clauses retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "equality",
+      "reverse_paraphrase": "K A_1..A_n equals the set of B derivable in it.",
+      "finding": "Set equality and derivability scope retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "base case",
+      "reverse_paraphrase": "A one-line derivation cannot use an earlier-line rule; it must be an axiom instance.",
+      "finding": "Induction base retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "MP step",
+      "reverse_paraphrase": "Earlier C and C implies B belong to the logic, hence B by closure under MP.",
+      "finding": "Premise membership and direction retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "Nec step",
+      "reverse_paraphrase": "If B is Box C and C lies in the logic, B follows by normal-logic closure under Nec.",
+      "finding": "Source equivalence notation and rule retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "converse closure",
+      "reverse_paraphrase": "The derivable set has tautologies, MP closure, uniform substitution, K, optional Dual and Nec.",
+      "finding": "Every listed normal-logic condition retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "substitution exercise",
+      "reverse_paraphrase": "Apply the same substitution to every line; proof that the resulting sequence is correct remains an exercise.",
+      "finding": "Exercise not silently solved."
     }
   ],
   "builds": [

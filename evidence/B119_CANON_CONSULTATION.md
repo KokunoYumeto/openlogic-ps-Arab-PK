@@ -1,0 +1,5 @@
+# OLP-0430 Pakistani-first Pashto consultation
+
+Pakistani Pashto Academy/Peshawar semantics article printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) guides scholarly prose and Pakistani کښې/ے spelling. Reference grammar printed page 166 (`GRAMMAR-P166-SOV`) supports verb-final proof exposition. These are not attestations of the exact K-system or derivability compounds.
+
+Afghan regional comparator printed page 37 (`AF-NIAZMAN-P37-AXIOMATIC-PROOF`) displays axiom schemata and a proof discussion; printed page 48 (`AF-NIAZMAN-P48-MODUS-PONENS`) displays modus ponens and a concatenated-derivation argument. Their rendered pages were visually inspected in the immediately preceding batch. They support general axiom and inference-rule vocabulary, not the specific OpenLogic modal construction. Existing TERM-MODAL-NORMAL-NECESSITATION, TERM-PROOF-CALCULI, TERM-AXIOM and TERM-PROOF-PROPERTIES guide consistency. Frozen OpenLogic controls every formula, optional branch and proof direction.

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B118-NORMAL-MODAL-LOGICS",
-  "status": "OLP-0429 source-reviewed and staged; 20 paired blocks, eight reverse-paraphrase samples and one disclosed source-scope correction",
+  "batch_id": "PS-B119-NORMAL-MODAL-DERIVABILITY",
+  "status": "OLP-0430 source-reviewed and staged; 14 paired blocks, eight reverse-paraphrase samples, source notation preserved without correction",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8981,6 +8981,25 @@
       ],
       "scope": "Twenty-block normal modal logic definition, K/Dual/necessitation conditions, RK induction, exercise and smallest-normal-system construction with disclosed source-scope repair.",
       "allowed_residual_english": []
+    },
+    "OLP-0430": {
+      "batch_id": "PS-B119-NORMAL-MODAL-DERIVABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MODAL-NORMAL-NECESSITATION",
+        "TERM-MODAL-LOGIC",
+        "TERM-AXIOM",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "Fourteen-block K-plus-axioms derivability definition and equality proof; length induction, modus ponens, necessitation, substitution and tagged Dual closure.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14209,6 +14228,54 @@
       "passage": "modal system",
       "reverse_paraphrase": "K A_1...A_n denotes the least normal logic with instances; K alone is the least normal logic.",
       "finding": "Notation and minimality retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "derivation opening",
+      "reverse_paraphrase": "A derivation is a finite formula sequence justified by axiom instances or MP/Nec; K is least normal logic.",
+      "finding": "Rules and system minimality retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "definition",
+      "reverse_paraphrase": "B is derivable iff a finite C_1..C_k sequence ends in B with every line an allowed axiom instance or MP/Nec result.",
+      "finding": "All finite-sequence clauses retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "equality",
+      "reverse_paraphrase": "K A_1..A_n equals the set of B derivable in it.",
+      "finding": "Set equality and derivability scope retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "base case",
+      "reverse_paraphrase": "A one-line derivation cannot use an earlier-line rule; it must be an axiom instance.",
+      "finding": "Induction base retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "MP step",
+      "reverse_paraphrase": "Earlier C and C implies B belong to the logic, hence B by closure under MP.",
+      "finding": "Premise membership and direction retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "Nec step",
+      "reverse_paraphrase": "If B is Box C and C lies in the logic, B follows by normal-logic closure under Nec.",
+      "finding": "Source equivalence notation and rule retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "converse closure",
+      "reverse_paraphrase": "The derivable set has tautologies, MP closure, uniform substitution, K, optional Dual and Nec.",
+      "finding": "Every listed normal-logic condition retained."
+    },
+    {
+      "unit_id": "OLP-0430",
+      "passage": "substitution exercise",
+      "reverse_paraphrase": "Apply the same substitution to every line; proof that the resulting sequence is correct remains an exercise.",
+      "finding": "Exercise not silently solved."
     }
   ]
 }
