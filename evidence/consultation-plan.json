@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B126-NORMAL-MODAL-SYSTEMS-DISTINCT",
-  "status": "OLP-0437 source-reviewed and staged; 20 paired blocks, eight reverse-paraphrase samples, three disclosed formula repairs and three exact TikZ diagrams",
+  "batch_id": "PS-B127-NORMAL-MODAL-PROVABILITY-FROM-SET",
+  "status": "OLP-0438 source-reviewed and staged; eight paired blocks, five reverse-paraphrase samples and exact math/term-token parity",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9164,6 +9164,25 @@
         "KD",
         "htpb"
       ]
+    },
+    "OLP-0438": {
+      "batch_id": "PS-B127-NORMAL-MODAL-PROVABILITY-FROM-SET",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-MODAL-LOGIC"
+      ],
+      "scope": "Eight blocks extending modal-system provability to formulas in a premise set, with notation and nested implication preserved.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14794,6 +14813,36 @@
       "passage": "second exercise",
       "reverse_paraphrase": "Find one reflexive transitive model refuting both B and 5 in KT4.",
       "finding": "Both targets and model conditions retained."
+    },
+    {
+      "unit_id": "OLP-0438",
+      "passage": "opening",
+      "reverse_paraphrase": "Earlier provability of a formula in system Sigma is extended to provability from formulas in set Gamma.",
+      "finding": "System and premise set distinguished."
+    },
+    {
+      "unit_id": "OLP-0438",
+      "passage": "definition subject",
+      "reverse_paraphrase": "Formula A is derivable in Sigma from a set Gamma of formulas.",
+      "finding": "Variable and set scope retained."
+    },
+    {
+      "unit_id": "OLP-0438",
+      "passage": "notation",
+      "reverse_paraphrase": "Gamma proves-subscript-Sigma A denotes this relative derivability.",
+      "finding": "Subscript and direction retained."
+    },
+    {
+      "unit_id": "OLP-0438",
+      "passage": "witness premises",
+      "reverse_paraphrase": "There exist B1 through Bn in Gamma.",
+      "finding": "Existential finite witnesses retained."
+    },
+    {
+      "unit_id": "OLP-0438",
+      "passage": "equivalence",
+      "reverse_paraphrase": "The relative derivability holds iff Sigma proves B1 implies (B2 implies ... (Bn implies A) ...).",
+      "finding": "Biconditional and nested implication order retained."
     }
   ]
 }

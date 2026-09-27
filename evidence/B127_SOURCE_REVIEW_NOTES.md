@@ -1,0 +1,5 @@
+# OLP-0438 source review — derivability from a set
+
+- Frozen `content/normal-modal-logic/axioms-systems/provability-from-set.tex`, revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, is 802 bytes, SHA-256 `de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540`. The staged Pashto SHA-256 is `acba8c1d866c2e31b2ff29ee1fd2786a68189e630d197a347a77db44b3c3d078`; frozen English is unchanged.
+- The opening extends provability of a formula in system `\Sigma` to provability from formulas in set `\Gamma`. The definition retains the biconditional, notation `$\Gamma \Proves[\Sigma] !A$`, finite premises `$!B_1$, \dots, $!B_n \in \Gamma$`, and the nested implication `$\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots (!B_n \lif !A) \cdots)$`. It does not assert a converse outside that definition or solve any exercise.
+- Focused QA passes eight paired blocks with exact inline math, title and content term tokens, identifiers, comments and environment structure. No source correction or mathematical exception is needed. Cumulative QA, canonical decision replay, reader layout and human-specialist approval remain separate checks.
