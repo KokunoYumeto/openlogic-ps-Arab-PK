@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 423 of 722 source units are translated drafts. This log contains 208 terminology entries and 347 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 424 of 722 source units are translated drafts. This log contains 209 terminology entries and 348 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4842,6 +4842,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - [Frozen English](upstream/content/normal-modal-logic/frame-definability/definability.tex#L42) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/definability.tex#L42).
 - Treatment: add `[w]` only to that satisfaction span and disclose the repair beside the proof. The successorless-world assumption establishes the claim at w, not globally in the model.
 - Review question: Is the repaired claim scoped exactly to the chosen world?
+
+
+## DEC-OLNML-011
+
+- Type: source clarification; the Compactness proof leaves the first empty conjunction, fresh-constant language expansion, empty finite-fragment case, and beyond-k constant values implicit.
+- [Frozen English](upstream/content/normal-modal-logic/frame-definability/first-order-definability.tex#L53) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/first-order-definability.tex#L65).
+- Treatment: state those conventions beside the proof without changing its displayed formulas.
+- Review question: Do the explicit conventions complete each finite-fragment model while preserving the original Compactness argument?
 
 
 ## DEC-REL-I

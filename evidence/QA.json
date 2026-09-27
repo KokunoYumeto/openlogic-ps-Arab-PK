@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 423,
-    "structural_pass": 423,
+    "draft_units": 424,
+    "structural_pass": 424,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B113-NORMAL-MODAL-FRAME-DEFINABILITY",
+  "batch": "PS-B114-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13773,6 +13773,35 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0424",
+      "path": "content/normal-modal-logic/frame-definability/first-order-definability.tex",
+      "source_sha256": "9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358",
+      "translation_sha256": "ebf353b0ada39b20fa97c47318a72794be31d0241afac0cbee3ef44c1f8807f5",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-011"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18725,6 +18754,66 @@
       "passage": "relation facts",
       "reverse_paraphrase": "The five listed relations among reflexive, symmetric, transitive, Euclidean, directed, connected, functional and serial properties remain exercises.",
       "finding": "No proof inserted into exercises."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "symmetry example",
+      "reverse_paraphrase": "Modal B defines symmetric frames; the first-order Q sentence does likewise when Q interprets R.",
+      "finding": "Both modal and first-order levels retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "definition",
+      "reverse_paraphrase": "A class of frames is first-order definable iff one Q-only first-order sentence holds exactly on its members.",
+      "finding": "One predicate, sentence and iff preserved."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "two failures",
+      "reverse_paraphrase": "Some modally definable classes are not first-order definable; some first-order definable classes are not modally definable.",
+      "finding": "Both noncontainment directions retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "Löb frame class",
+      "reverse_paraphrase": "W characterizes transitive converse-well-founded frames.",
+      "finding": "Conjunction of transitivity and converse well-foundedness retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "chain directions",
+      "reverse_paraphrase": "Well-founded excludes infinite descending R-chains; converse well-founded excludes infinite forward R-chains.",
+      "finding": "Directions distinguished."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "A1 convention",
+      "reverse_paraphrase": "The displayed n-chain formula presupposes the empty conjunction for n=1.",
+      "finding": "Implicit source convention disclosed."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "finite fragment",
+      "reverse_paraphrase": "For a finite fragment choose k as the greatest A-index, or k=1 when none occurs, and a finite strict order.",
+      "finding": "No-A case and finite k retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "fresh constants",
+      "reverse_paraphrase": "The a_i belong to a temporary expanded language; beyond k assign arbitrary finite-domain values.",
+      "finding": "Expansion and total interpretation made explicit."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "Compactness",
+      "reverse_paraphrase": "Finite satisfiability yields a model of all F and A_i, contradicting converse well-foundedness via an infinite R-chain.",
+      "finding": "Compactness quantifiers and contradiction retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "passage": "universality",
+      "reverse_paraphrase": "A universal relation is first-order definable, while universal and equivalence frames validate exactly the same modal formulas.",
+      "finding": "Modal inability to distinguish classes retained."
     }
   ],
   "builds": [

@@ -3034,3 +3034,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Adds [w] only to the Box A satisfaction assertion in the D converse proof and discloses the omitted world argument beside the proof step.
 - Reason: From the assumption that w has no R-successor, Box A follows at w; it does not follow at every world of the model. The paired Diamond A assertion already carries [w].
 - Exactly one math span differs; all other formulas and frozen English remain unchanged.
+
+## OLNML-011
+
+- Unit: OLP-0424.
+- Frozen source: content/normal-modal-logic/frame-definability/first-order-definability.tex:53-68 (SHA-256 9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/frame-definability/first-order-definability.tex:65–83 (SHA-256 ebf353b0ada39b20fa97c47318a72794be31d0241afac0cbee3ef44c1f8807f5).
+- Treatment: Explains A_1 as the empty conjunction, introduces the fresh constants in a temporary expanded language, handles a finite fragment without A_i by k=1, and assigns constants beyond k arbitrary domain values.
+- Reason: The source display presupposes an A_1 convention, and its finite-model assignment a_i=i cannot apply for i>k in a k-element domain. These explicit conventions complete the finite-fragment Compactness argument.
+- Displayed formulas, structural tokens and frozen English remain unchanged.

@@ -1,0 +1,107 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T18:11:35.795410+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
+  "batch_id": "PS-B114-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0424",
+      "source_path": "content/normal-modal-logic/frame-definability/first-order-definability.tex",
+      "source_bytes": 3895,
+      "source_sha256": "9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358",
+      "target_sha256": "ebf353b0ada39b20fa97c47318a72794be31d0241afac0cbee3ef44c1f8807f5",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLNML-011"
+      ]
+    }
+  ],
+  "notes_path": "work/B114_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "e170672347421cc9c384304302d0ebc50a897924b4c298e911d3c585febf4725",
+  "consultation_path": "work/B114_CANON_CONSULTATION.md",
+  "consultation_sha256": "6f5b83f35be0a54fdd1d96fa83da236c7bfbed29512d7dcccac115740a4c0826",
+  "staging_qa_sha256": {
+    "OLP-0424": "186d7b25dc8bc95461cc4ff0741edc0fd6bcb199a229d37490d721b78c22033e"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P178-ORDER",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 183,
+      "printed_page": "178",
+      "page_image_sha256": "3430c7a07383a8759de401ac274c9cbfd89f68fabab222cc78964fb1cedc6f5a",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0424",
+      "source_lines": "12-33",
+      "kind": "first-order-definition",
+      "finding": "Single-Q sentence and iff with class membership preserved."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "source_lines": "34-49",
+      "kind": "Lob-and-well-foundedness",
+      "finding": "Modal W and both infinite-chain directions retained."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "source_lines": "51-73",
+      "kind": "compactness",
+      "finding": "Finite-fragment model and infinite-chain contradiction retained with adjacent convention disclosures."
+    },
+    {
+      "unit_id": "OLP-0424",
+      "source_lines": "75-86",
+      "kind": "universality",
+      "finding": "First-order definability and modal indefinability separated."
+    }
+  ],
+  "formula_policy": "No math, identifier, environment, structural macro, tag or term-token differences; frozen English unchanged.",
+  "unresolved": "Exact Pakistani converse-well-founded compound remains provisional. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0424; continue OLP-0425."
+}

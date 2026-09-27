@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0423; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T12:43:12.314877+00:00",
+  "status": "adopted through OLP-0424; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T18:11:35.795225+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10329,6 +10329,55 @@
       ],
       "decision_timing": "contemporaneous B113 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-011",
+      "unit_id": "OLP-0424",
+      "classification": "implicit_empty_conjunction_expanded_language_and_finite_model_constant_assignments",
+      "source_path": "content/normal-modal-logic/frame-definability/first-order-definability.tex",
+      "source_sha256": "9c5c15840f4ad33863a32492fc8e16e7d4ce9b530bce2501a86b3f9466742358",
+      "source_locator": "content/normal-modal-logic/frame-definability/first-order-definability.tex:53-68",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/frame-definability/first-order-definability.tex",
+      "target_line_1based": 65,
+      "disclosure_line_1based": [
+        67,
+        81
+      ],
+      "target_sha256": "ebf353b0ada39b20fa97c47318a72794be31d0241afac0cbee3ef44c1f8807f5",
+      "mode": "adjacent-Pashto-source-clarifications-without-formula-change",
+      "translation_change": "Explains A_1 as the empty conjunction, introduces the fresh constants in a temporary expanded language, handles a finite fragment without A_i by k=1, and assigns constants beyond k arbitrary domain values.",
+      "reason": "The source display presupposes an A_1 convention, and its finite-model assignment a_i=i cannot apply for i>k in a k-element domain. These explicit conventions complete the finite-fragment Compactness argument.",
+      "formula_policy": "No math, identifiers, structural macros, tags or term markers changed; frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
+      "audit_artifacts": [
+        "B114_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/frame-definability/first-order-definability.tex:53-68",
+        "ps-Arab-PK/content/normal-modal-logic/frame-definability/first-order-definability.tex:65-83"
+      ],
+      "decision_timing": "contemporaneous B114 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10404,7 +10453,8 @@
     "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
     "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY"
   ],
   "source_authorities": [
     {
