@@ -1,0 +1,95 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T12:13:51.630961+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+  "batch_id": "PS-B111-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0421",
+      "source_path": "content/normal-modal-logic/frame-definability/properties-accessibility.tex",
+      "source_bytes": 7905,
+      "source_sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+      "target_sha256": "06f37334b83467cceeb15b43e69b70c5bf60f9559589c59fea04a445f3b8211b",
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLNML-008",
+        "OLNML-009"
+      ]
+    }
+  ],
+  "notes_path": "work/B111_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "fd0e658812b4502ca7dc2ef4d86491060d84ede129fa6ad5ce5c0c42d4e522c1",
+  "consultation_path": "work/B111_CANON_CONSULTATION.md",
+  "consultation_sha256": "64cb77f6648a1c6f74fbd4b58e47881d0eafda6dd93eaa7495beacdaa024d6ea",
+  "staging_qa_sha256": {
+    "OLP-0421": "789d3453e29ceaea40fed0dab85173699cac5d750c8b06355ea9bfc3656fc192"
+  },
+  "source_preview_sha256": "9ee3a3aa147ddb99953a72634b5a863ef3df869ff8765130c717b87b3b7c4a39",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0421",
+      "source_lines": "11-70",
+      "kind": "first-table-and-B-proof",
+      "finding": "Five sufficient property/schema facts and reverse-edge B proof retained; figure exact."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "source_lines": "91-119",
+      "kind": "countermodel-source-clarifications",
+      "finding": "OLNML-008 and OLNML-009 explicitly specify the needed relations, with adjacent disclosures."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "source_lines": "125-188",
+      "kind": "second-table-and-exercise",
+      "finding": "Five additional sufficient conditions preserved with exact quantifiers and distinct weak-property scopes."
+    }
+  ],
+  "formula_policy": "All math, identifiers, structural macros, tags, term tokens and TikZ arrows match frozen English; two disclosed prose clarifications.",
+  "unresolved": "Exact Pakistani modal names for the less common relation properties are not attested in checked witnesses. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0421; continue OLP-0422."
+}

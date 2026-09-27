@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 420 of 722 source units are translated drafts. This log contains 207 terminology entries and 344 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 421 of 722 source units are translated drafts. This log contains 208 terminology entries and 346 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1804,6 +1804,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - [Frozen English introduction](upstream/content/normal-modal-logic/frame-definability/introduction.tex#L45) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/introduction.tex#L44).
 - A frame is (W,R) without valuation V; its validity claim ranges over every model based on it. The exact Pakistani modal-frame compound is not attested in checked witnesses.
 - Review question: Does the rendering keep the frame/model distinction clear in Pakistani Pashto?
+
+
+## TERM-MODAL-ACCESSIBILITY-PROPERTIES
+
+- Type: terminology.
+- Choice: `مسلسل / اقليدسي / جزوي تابعي / تابعي / کمزورې ګڼه / کمزورې تړلې / کمزورې هم‌لوري` for the modal accessibility properties.
+- [Frozen English](upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L26) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L25).
+- The ten unchanged formulas define the conditions. Weak connectedness applies to two successors of one world; weak density permits the intermediate point to coincide with an endpoint. The exact Pakistani modal labels are provisional.
+- Review question: Do these names keep the ten conditions distinct in Pakistani Pashto?
 
 
 ## DEC-OLMVL-001
@@ -4810,6 +4819,21 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex#L69) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/entailment.tex#L71).
 - Treatment: use the ordered-triple macro for the one-world countermodel and disclose the change beside the example. The diagram and other formulas match the source.
 - Review question: Do the three components now match the model definition and preserve the intended counterexample?
+
+
+## DEC-OLNML-008
+
+- Type: source clarification; one-world countermodel omitted the accessibility relation.
+- [Frozen English](upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L95) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L95).
+- Treatment: choose the empty relation and disclose the source omission beside the example. The formulas match.
+- Review question: Is the empty relation required and sufficient for the claimed example?
+
+## DEC-OLNML-009
+
+- Type: source clarification; two cross edges do not exclude reflexive loops.
+- [Frozen English](upstream/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L106) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex#L107).
+- Treatment: specify that the cross edges are the only edges and disclose why the irreflexivity claim requires that restriction. The formulas match.
+- Review question: Does the restriction make the countermodel claim precise?
 
 
 ## DEC-REL-I

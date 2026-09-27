@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 420,
-    "structural_pass": 420,
+    "draft_units": 421,
+    "structural_pass": 421,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
+  "batch": "PS-B111-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13673,6 +13673,41 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0421",
+      "path": "content/normal-modal-logic/frame-definability/properties-accessibility.tex",
+      "source_sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+      "translation_sha256": "06f37334b83467cceeb15b43e69b70c5bf60f9559589c59fea04a445f3b8211b",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "to"
+      ],
+      "allowed_residual_english": [
+        "to"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-008",
+        "OLNML-009"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18469,6 +18504,60 @@
       "passage": "correspondence",
       "reverse_paraphrase": "F validates Box p implies p iff its relation is reflexive.",
       "finding": "Both directions and frame-level scope retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "five classical correspondences",
+      "reverse_paraphrase": "Serial/D, reflexive/T, symmetric/B, transitive/4 and Euclidean/5 are sufficient for every schema instance.",
+      "finding": "Each condition and axiom label retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "B proof",
+      "reverse_paraphrase": "If A holds at w and Rww-prime, symmetry gives Rw-prime-w, so Diamond A holds at w-prime.",
+      "finding": "Reverse-edge witness retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "singleton T failure",
+      "reverse_paraphrase": "Take one world, no edge and p false; Box p is vacuous and Box p implies p fails.",
+      "finding": "OLNML-008 relation completed and disclosed."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "two-world T truth",
+      "reverse_paraphrase": "Exactly two cross edges and equal atomic values make every modal formula agree at the two worlds, so every T instance holds despite irreflexivity.",
+      "finding": "OLNML-009 loops excluded and disclosed."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "partial versus total function",
+      "reverse_paraphrase": "At most one successor permits none; exactly one is serial and partially functional.",
+      "finding": "Zero-versus-one case retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak density",
+      "reverse_paraphrase": "For every Ruv there exists w with Ruw and Rwv; w may equal u or v.",
+      "finding": "Weak betweenness preserved."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak connectedness",
+      "reverse_paraphrase": "Any two successors of one world are equal or comparable in one direction.",
+      "finding": "Local property distinguished from global connectedness."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak direction",
+      "reverse_paraphrase": "Any two successors of one world have a common successor.",
+      "finding": "Common target quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "final exercise",
+      "reverse_paraphrase": "If any of the second table conditions holds, prove every instance of its paired formula in the model.",
+      "finding": "Proof remains for reader."
     }
   ],
   "builds": [

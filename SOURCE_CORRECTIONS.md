@@ -3008,3 +3008,20 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Changes only the braces around W-prime, R-prime and V-prime to the ordered-triple macro in the one-world countermodel and discloses the repair beside the example.
 - Evidence: A modal model is defined throughout this chapter as the ordered triple of worlds, accessibility relation and valuation. Source set braces lose component roles and conflict with the same example’s ordered-model usage.
 - Finite check: 98,304 world cases for the entailment claim and witnesses for three non-entailments. Frozen English remains unchanged.
+
+## OLNML-008
+
+- Unit: `OLP-0421`. Frozen source: `content/normal-modal-logic/frame-definability/properties-accessibility.tex:95-97` (SHA-256 `eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622`).
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex:95` (SHA-256 `06f37334b83467cceeb15b43e69b70c5bf60f9559589c59fea04a445f3b8211b`); adjacent disclosure at line 101.
+- Treatment: The singleton countermodel now explicitly takes the accessibility relation to be empty, and the adjacent Pashto note discloses the omission.
+- Reason: The frozen source gives W={w} and V(p)=empty but no R; its claims of nonreflexivity and vacuous Box p require R to have no loop.
+- The 98,304-case finite source preview confirms the printed correspondence implications. Frozen English and every formula remain unchanged.
+
+
+## OLNML-009
+
+- Unit: `OLP-0421`. Frozen source: `content/normal-modal-logic/frame-definability/properties-accessibility.tex:104-119` (SHA-256 `eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622`).
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/frame-definability/properties-accessibility.tex:107` (SHA-256 `06f37334b83467cceeb15b43e69b70c5bf60f9559589c59fea04a445f3b8211b`); adjacent disclosure at line 120.
+- Treatment: The two-world example now says its cross edges are the only edges, and the adjacent Pashto note discloses why this restriction is needed.
+- Reason: Ruv and Rvu alone allow Ruu and Rvv; the source conclusion that the relation is irreflexive does not follow without excluding self-loops.
+- The 98,304-case finite source preview confirms the printed correspondence implications. Frozen English and every formula remain unchanged.

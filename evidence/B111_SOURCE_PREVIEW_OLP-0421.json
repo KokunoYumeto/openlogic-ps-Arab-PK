@@ -1,0 +1,33 @@
+{
+  "schema": "ps-b111-accessibility-source-preview/1",
+  "status": "source-only semantic preview; OLP-0421 not yet translated or accepted",
+  "unit_id": "OLP-0421",
+  "source_sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+  "three_world_relations": 512,
+  "p_q_valuations_per_relation": 64,
+  "world_checks": 98304,
+  "property_world_checks": {
+    "serial_D": 65856,
+    "reflexive_T": 12288,
+    "symmetric_B": 12288,
+    "transitive_4": 32832,
+    "euclidean_5": 7488,
+    "partial_function_diamond_to_box": 12288,
+    "functional_diamond_iff_box": 5184,
+    "weakly_dense_boxbox_to_box": 63936,
+    "weakly_connected_L": 79872,
+    "weakly_directed_G": 52224
+  },
+  "cross_frame_modal_formula_samples": 44,
+  "source_defect_candidates": [
+    {
+      "locator": "paragraph before prop:reflexive",
+      "finding": "The one-world nonreflexive example specifies W and V(p), but does not explicitly specify R before asserting it is nonreflexive."
+    },
+    {
+      "locator": "prop:reflexive",
+      "finding": "The proposition requires cross edges Ruv and Rvu but later asserts the model is irreflexive without excluding self-loops; R must be exactly the two cross edges for that conclusion."
+    }
+  ],
+  "next_action": "Translate OLP-0421 and audit both bounded source-defect candidates before cumulative acceptance."
+}

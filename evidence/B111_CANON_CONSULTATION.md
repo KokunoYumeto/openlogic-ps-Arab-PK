@@ -1,0 +1,7 @@
+# OLP-0421 Pakistani-first Pashto consultation
+
+The Pashto Academy/Peshawar article `PS-PK-IQRAM-2019` at printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) supplies Pakistani scholarly prose, spelling and logical semantics register. Page 2 was directly inspected again for this batch. It does not attest modal accessibility-property labels. `GRAMMAR-P166-SOV` supplies reference grammar for conditional and quantified exposition.
+
+The directly inspected Afghan regional comparator `PS-AF-NIAZMAN-2022` at printed page 109 (`AF-NIAZMAN-P109-RELATION`) discusses structures and relations; page 147 (`AF-NIAZMAN-P147-FUNCTIONS`) discusses functions and supports only the general function concept. These are not Pakistani authority for the exact modal compounds. Established `TERM-REL-PROPERTIES`, `TERM-PARTIAL-TOTAL`, `TERM-CONNECTED`, `TERM-DENSE-LINEAR-ORDER`, `TERM-MODAL-SCHEMA`, and `TERM-MODAL-FRAME` were checked for consistency. Here weak connectedness has a different, local definition from the earlier global connected relation, and weak density does not impose strict betweenness.
+
+The frozen English formulas, quantifiers, labels and proof obligations govern meaning. Source defects OLNML-008 and OLNML-009 are localized, disclosed clarifications. The provisional modal-specific property names remain open for Pakistani Pashto specialist review without suspending translation.

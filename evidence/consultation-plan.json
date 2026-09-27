@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B110-NORMAL-MODAL-FRAME-INTRODUCTION",
-  "status": "OLP-0419–0420 source-reviewed and staged; 18 paired blocks, one provisional frame terminology decision, seven reverse-paraphrase samples and 12,288 finite world checks",
+  "batch_id": "PS-B111-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+  "status": "OLP-0421 source-reviewed and staged; 19 paired blocks, two disclosed source clarifications, nine reverse-paraphrase samples and 98,304 finite world checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8800,6 +8800,29 @@
       ],
       "scope": "Eleven-block reflexive-frame introduction, model/frame distinction, countermodel valuation and frame-validity correspondence.",
       "allowed_residual_english": []
+    },
+    "OLP-0421": {
+      "batch_id": "PS-B111-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-REL-PROPERTIES",
+        "TERM-PARTIAL-TOTAL",
+        "TERM-CONNECTED",
+        "TERM-DENSE-LINEAR-ORDER",
+        "TERM-MODAL-SCHEMA",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "Nineteen-block ten-property modal correspondence tables, B proof and diagram, two disclosed countermodel clarifications and exercises.",
+      "allowed_residual_english": [
+        "to"
+      ]
     }
   },
   "semantic_review": [
@@ -13596,6 +13619,60 @@
       "passage": "correspondence",
       "reverse_paraphrase": "F validates Box p implies p iff its relation is reflexive.",
       "finding": "Both directions and frame-level scope retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "five classical correspondences",
+      "reverse_paraphrase": "Serial/D, reflexive/T, symmetric/B, transitive/4 and Euclidean/5 are sufficient for every schema instance.",
+      "finding": "Each condition and axiom label retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "B proof",
+      "reverse_paraphrase": "If A holds at w and Rww-prime, symmetry gives Rw-prime-w, so Diamond A holds at w-prime.",
+      "finding": "Reverse-edge witness retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "singleton T failure",
+      "reverse_paraphrase": "Take one world, no edge and p false; Box p is vacuous and Box p implies p fails.",
+      "finding": "OLNML-008 relation completed and disclosed."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "two-world T truth",
+      "reverse_paraphrase": "Exactly two cross edges and equal atomic values make every modal formula agree at the two worlds, so every T instance holds despite irreflexivity.",
+      "finding": "OLNML-009 loops excluded and disclosed."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "partial versus total function",
+      "reverse_paraphrase": "At most one successor permits none; exactly one is serial and partially functional.",
+      "finding": "Zero-versus-one case retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak density",
+      "reverse_paraphrase": "For every Ruv there exists w with Ruw and Rwv; w may equal u or v.",
+      "finding": "Weak betweenness preserved."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak connectedness",
+      "reverse_paraphrase": "Any two successors of one world are equal or comparable in one direction.",
+      "finding": "Local property distinguished from global connectedness."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "weak direction",
+      "reverse_paraphrase": "Any two successors of one world have a common successor.",
+      "finding": "Common target quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0421",
+      "passage": "final exercise",
+      "reverse_paraphrase": "If any of the second table conditions holds, prove every instance of its paired formula in the model.",
+      "finding": "Proof remains for reader."
     }
   ]
 }

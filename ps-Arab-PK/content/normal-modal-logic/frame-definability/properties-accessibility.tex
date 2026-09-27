@@ -1,0 +1,194 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{acc}
+
+\olsection{د لاسرسي د اړيکو خاصيتونه}
+
+ډېر مودالي !!{formula}s د لاسرسي د اړيکې د ساده او ان اشنا خاصيتونو
+ځانګړنې څرګندوي۔ له يوې خوا دا معنا لري چې هر هغه مدل، چې يو ټاکلے
+خاصيت ولري، اړوند !!{formula} (او د هغې ټولې تعويضي بېلګې) پکې رښتيا
+کوي۔ لومړے د لاسرسي د اړيکو پنځه دوديز ډولونه او هغه فارمولونه ګورو
+چې د دغو اړيکو له امله رښتيا وي۔
+
+\begin{thm}\ollabel{thm:soundschemas}
+  فرض کړئ $\mModel{M} = \tuple{W, R, V}$ يو مدل دے۔ که $R$ د
+  \olref{tab:five} د چپې خوا خاصيت ولري، نو د ښي خوا د !!{formula}
+  هره بېلګه په~$\mModel{M}$ کښې رښتيا ده۔
+\end{thm}
+
+\begin{table}[t]
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{که $R$ \dots وي}} & {\emph{نو \dots په~$\mModel{M}$ کښې رښتيا دے:}} \\
+      \hline \hline
+      \emph{مسلسل}: $\forall u \exists v Ruv$ & \hbox to.43\textwidth
+           {$\Box p \lif \Diamond p$ \hfill (\Ax{D})} \\
+      \hline
+      \emph{انعکاسي}: $\forall w Rww$  
+      & \hbox to.43\textwidth
+          {$\Box p \lif p$ \hfill (\Ax{T})} \\
+      \hline
+      \emph{متناظره}: &  \hbox to .43\textwidth
+           {$p \lif \Box\Diamond p$ \hfill (\Ax{B})} \\
+           $\forall u\forall v(Ruv \lif Rvu)$ & \\
+      \hline
+      \emph{انتقالي}: & \hbox to.43\textwidth
+           {$\Box p \lif \Box \Box p$ \hfill (\Ax{4})} \\
+      $\forall u \forall v \forall w ((Ruv \land Rvw) \lif Ruw)$ & \\
+      \hline 
+      \emph{اقليدسي}: & \hbox to .43\textwidth
+        {$\Diamond p \lif \Box\Diamond p$ \hfill (\Ax{5})} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif Ruv)$ &\\
+      \hline
+    \end{tabular}
+    \caption{د مطابقت پنځه حقيقتونه۔}
+    \ollabel{tab:five}
+  \end{table} 
+
+
+\begin{proof}
+  د \Ax{B} مورد داسې دے: په يوه مدل کښې د طرحې د رښتياوالي دپاره
+  بايد وښيو چې ټولې بېلګې ئې د مدل په ټولو نړۍو کښې رښتيا دي۔ نو د
+  \Ax{B} يوه بېلګه $!A \lif \Box\Diamond !A$ او يوه خپلسرې نړۍ
+  $w \in W$ ونيسئ۔ فرض کړئ مقدم~$!A$ په~$w$ کښې رښتيا دے؛ غواړو
+  وښيو چې $\Box \Diamond !A$ هم په~$w$ کښې رښتيا دے۔ د دې دپاره بايد
+  $\Diamond !A$ له~$w$ څخه د لاسرسي وړ په هرې نړۍ~$w'$ کښې رښتيا
+  وي۔ اوس چې د کومې~$w'$ دپاره $Rww'$ وي، د تناظر له فرضه $Rw'w$
+  هم راځي (\olref{fig:Bsymm} وګورئ)۔ ځکه چې
+  $\mSat{M}{!A}[w]$، نو $\mSat{M}{\Diamond !A}[w']$۔ او ځکه چې
+  $w'$ د $Rww'$ لرونکو نړۍو له منځه خپلسره وه، نو
+  $\mSat{M}{\Box\Diamond!A}[w]$۔
+
+  نور موردونه د تمرين دپاره پرېږدو۔
+\end{proof}
+
+\begin{prob}
+  د \olref[nml][frd][acc]{thm:soundschemas} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below:$\mSat{{}}{\formula{A}}$\\
+          $\mSat{{}}{\Box\Diamond \formula{A}}$}] {$w$}; 
+      \node[world] (w2) [label=below:{$\mSat{{}}{\Diamond \formula{A}}$},
+        right=of w1] {$w'$}; 
+      \draw[->, bend left] (w1) to (w2); 
+      \draw[->, bend left] (w2) to (w1); 
+    \end{tikzpicture}
+  \end{center}
+\caption{له تناظر څخه استدلال۔}
+\ollabel{fig:Bsymm}
+\end{figure}
+
+پام وکړئ چې د \olref{thm:soundschemas} سرچپه استلزامونه سم نۀ دي:
+له دې چې يو مدل يوه طرحه رښتيا کوي، دا نۀ لازمېږي چې د هغه مدل د
+لاسرسي اړيکه اړوند خاصيت ولري۔ د \Ax{T} او انعکاسي مدلونو په بحث کښې
+داسې مدل په اسانۍ موندل کېږي چې پخپله د \Ax{T} يوه بېلګه پکښې
+نارښتيا وي: $W = \{w\}$ او $V(p) = \emptyset$ وټاکئ، او د لاسرسي
+اړيکه تشه ونيسئ۔ بيا $R$ انعکاسي نۀ ده، خو
+$\mSat{M}{\Box p}[w]$ او $\mSat/{M}{p}[w]$۔ دلته د \Ax{T}
+يوازې يوه بېلګه په~$\mModel{M}$ کښې نارښتيا ده؛ نورې بېلګې، لکه
+$\Box \lnot p \lif \lnot p$، رښتيا دي۔ د داسې مدل موندل ګران دي
+چې د~\Ax{T} \emph{هره تعويضي بېلګه} پکې رښتيا وي او
+$\mModel{M}$ انعکاسي نۀ وي۔ خو داسې مدل~$\mModel{M}$ هم شته:
+\emph{د سرچينې يادونه: په پورتنۍ يوې نړۍ لرونکې بېلګه کښې اصلي متن
+د لاسرسي اړيکه نۀ ټاکي؛ دلته تشه اړيکه څرګنده ټاکل شوې ده۔}
+
+\begin{prop}\ollabel{prop:reflexive}
+  فرض کړئ $\mModel{M} = \tuple{W, R, V}$ داسې مدل دے چې
+  $W = \{u, v \}$ وي، او نړۍوې $u$ او $v$ د~$R$ له مخې سره تړلې
+  وي؛ يعنې $Ruv$ او $Rvu$ دواړه وي، او له دې پرته بله اړيکه نۀ وي۔
+  فرض کړئ چې د هر $p$ دپاره $u \in V(p) \Leftrightarrow v
+  \in V(p)$۔ بيا:
+  \begin{enumerate}
+  \item د هر $!A$ دپاره: $\mSat{M}{!A}[u]$ هله او يوازې هله چې
+    $\mSat{M}{!A}[v]$ (پر~$!A$ استقرا وکاروئ)۔
+  \item د~\Ax{T} هره بېلګه په~$\mModel{M}$ کښې رښتيا ده۔
+  \end{enumerate}
+  ځکه چې $\mModel{M}$ انعکاسي نۀ دے (بلکې په حقيقت کښې
+  \emph{نفي انعکاسي} دے)، د \olref{thm:soundschemas} سرچپه لور
+  د \Ax{T} په مورد کښې ناسمه ده (د
+  \olref{thm:soundschemas} د ځينو نورو طرحو دپاره هم ورته استدلال
+  کېدلے شي، خو د ټولو دپاره نۀ)۔
+  \emph{د سرچينې يادونه: اصلي متن يوازې دوه متقابلې څنډې يادوي او
+  ځان-څنډې نۀ ردوي؛ د نفي انعکاسيت د دعوې دپاره پورته اړيکه يوازې
+  همدغو دوو څنډو ته محدوده شوې ده۔}
+\end{prop}
+
+\begin{prob}
+  د \olref[nml][frd][acc]{prop:reflexive} دعوې ثابتې کړئ۔
+\end{prob}
+
+که څه هم زموږ پام به پر پنځو دوديزو !!{formula}s \Ax{D}،
+\Ax{T}، \Ax{B}، \Ax{4} او \Ax{5} وي، په
+\olref{tab:anotherfive} کښې د لاسرسي د اړيکو څو نور خاصيتونه هم
+راخلو۔ د لاسرسي اړيکه~$R$ هله \emph{جزوي تابعي} ده چې له هرې نړۍ
+څخه تر ډېره يوې نړۍ ته لاسرسے وي۔ که له هرې نړۍ څخه کټ مټ يوې نړۍ
+ته لاسرسے وي، نو دا اړيکه \emph{تابعي} بولو۔ (نو تابعي اړيکې هماغه
+دي چې مسلسل او جزوي تابعي دواړه وي۔) دا اړيکې ځکه «تابعي» بلل
+کېږي چې د لاسرسي اړيکه د (جزوي) تابعې په شان کار کوي۔ يوه اړيکه
+هله \emph{کمزورې ګڼه} ده چې هر کله $Ruv$ وي، د~$u$ او~$v$ ترمنځ
+يوه نړۍ~$w$ وي۔ نو کمزورې ګڼې اړيکې په يوه معنا د انتقالي اړيکو
+عکس دي: په انتقالي اړيکه کښې که له~$u$ څخه د~$w$ له لارې په چکر
+سره~$v$ ته رسېدے شئ، نو نېغ هم ورته رسېدے شئ؛ په کمزورې ګڼې
+اړيکه کښې که له~$u$ څخه نېغ~$v$ ته رسېدے شئ، نو له~$u$ څخه
+د کومې~$w$ له لارې په چکر سره هم~$v$ ته رسېدے شئ۔ يوه اړيکه هله
+\emph{کمزورې هم‌لوري} ده چې که له يوې نړۍ~$w$ څخه~$u$ او~$v$
+دواړو ته رسېدے شئ، نو له~$u$ او~$v$ دواړو څخه يوې ګډې نړۍ~$t$
+ته رسېدے شئ؛ دې ته کله کله «الماسي خاصيت» يا «يوځاے کېدنه» هم
+وايي۔
+
+\begin{table}[t]
+    \begin{tabular}{| p{.50\textwidth} || p{.43\textwidth} |}
+      \hline
+      {\emph{که $R$ \dots وي}} & {\emph{نو \dots په~$\mModel{M}$ کښې رښتيا دے:}} \\
+      \hline \hline
+      \emph{جزوي تابعي}: & 
+      \multirow{2}{*}{$\Diamond p \lif \Box p$} \\
+      $ \forall w \forall u \forall v ((Rwu \land Rwv) \lif u =v )$ & \\
+      \hline
+      \multirow{2}{*}{\emph{تابعي}: $\forall w \exists v \forall u(Rwu \liff \eq[u][v]) $} 
+      & \multirow{2}{*}{$\Diamond p \liff \Box p$} \\
+      & \\
+      \hline
+      \emph{کمزورې ګڼه}: &  \multirow{2}{*}{$\Box \Box p \lif
+        \Box p$} \\
+      $\forall u\forall v(Ruv \lif \exists w(Ruw \land Rwv))$ & \\
+      \hline
+      \emph{کمزورې تړلې}: &
+      \multirow{3}{*}{\hbox to.43\textwidth{$
+        \begin{array}{@{}l@{}}
+          \Box ((p \land \Box p) \lif q) \lor {} \\
+          \qquad \Box ((q \land \Box q) \lif p)
+        \end{array}$ \hfill (\Ax{L})}
+      } \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ &\\
+      \qquad $(Ruv \lor u=v \lor Rvu))$ & \\
+      \hline 
+      \emph{کمزورې هم‌لوري}: & \multirow{3}{*}{\hbox to .43\textwidth
+        {$\Diamond\Box p \lif \Box\Diamond p$\hfill (\Ax{G})}} \\
+      $\forall w \forall u \forall v ((Rwu \land Rwv) \lif {}$ & \\
+      \qquad $\exists t (Rut \land Rvt))$ & \\
+      \hline
+    \end{tabular}
+    \caption{د مطابقت پنځه نور حقيقتونه۔}
+    \ollabel{tab:anotherfive}
+  \end{table} 
+
+\begin{prob}
+  فرض کړئ $\mModel{M} = \tuple{W, R, V}$ يو مدل دے۔ وښيئ چې که
+  $R$ د \olref[nml][frd][acc]{tab:anotherfive} د چپې خوا خاصيتونه
+  ولري، نو د ښي خوا د هر اړوند فارمول هره بېلګه په~$\mModel{M}$
+  کښې رښتيا ده۔
+\end{prob}
+
+
+
+\end{document}
