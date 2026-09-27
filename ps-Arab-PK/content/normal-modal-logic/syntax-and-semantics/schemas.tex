@@ -1,0 +1,183 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: schemas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sch}
+
+\olsection{طرحې او اعتبار}
+
+\begin{defn}
+  يوه \emph{طرحه} د !!{formula}s داسې مجموعه ده چې د يوه مودالي
+  !!{formula}~$!C$ ټولې او يوازې هماغه تعويضي بېلګې لري؛ يعنې
+  \[
+  \Setabs{!B}{\lexists[!D_1], \dots, \lexists[!D_n] \left(!B =
+  \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \right) }.
+  \]
+  !!{formula}~$!C$ د دې طرحې \emph{ځانګړونکے} !!{formula} بلل کېږي،
+  او د !!{propositional
+  variable}s د نومونو تر بدلون پورې يکتا دے۔
+  !!^a{formula}~$!A$ هله د يوې طرحې \emph{بېلګه} ده چې د هغې د
+  مجموعې غړے وي۔
+\end{defn}
+
+اسانه ده چې يوه طرحه په هغه مابعدالژبني عبارت وښيو چې د~$!C$ د
+اتومي برخو پر ځاے پکښې `$!A$'، `$!B$'،~\dots، اېښودل شوي وي۔
+نو، د بېلګې په توګه، لاندې عبارتونه طرحې ښيي:
+`$!A$'، `$!A \lif \Box!A$'، `$!A \lif (!B \lif !A)$'۔ د دوى
+ځانګړونکي !!{formula}s په ترتيب سره $p$، $p \lif \Box p$،
+او $p \lif (q \lif p)$ دي۔ د `$!A$' طرحه د \emph{ټولو}
+!!{formula}s مجموعه ښيي۔
+
+\begin{defn}
+  يوه طرحه په يوه مدل کښې هله او يوازې هله \emph{رښتيا} ده چې ټولې
+  بېلګې ئې پکې رښتيا وي؛ او هله او يوازې هله \emph{معتبره} ده چې په
+  هر مدل کښې رښتيا وي۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:Kvalid}
+  لاندې \Ax{K} طرحه معتبره ده:
+  \begin{equation*}
+  \Box(!A \lif !B) \lif (\Box !A \lif \Box !B). \tag{\Ax{K}}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  بايد وښيو چې د طرحې ټولې بېلګې د هر مدل په هره نړۍ کښې رښتيا دي۔
+  نو $\mModel{M} = \tuple{W,R,V}$ او $w \in W$ خپلسري ونيسئ۔ د دې
+  دپاره چې وښيو يو شرطي عبارت په يوه نړۍ کښې رښتيا دے، فرض کوو چې
+  مقدم ئې رښتيا دے، او بيا ښيو چې تالي ئې هم رښتيا دے۔ دلته فرض کړئ
+  چې $\mSat{M}{\Box(!A \lif !B)}[w]$ او $\mSat{M}{\Box !A}[w]$۔
+  بايد $\mSat{M}{\Box !B}[w]$ وښيو۔ نو داسې خپلسرې نړۍ $w'$ ونيسئ
+  چې $Rww'$ وي۔ د لومړي فرض له مخې $\mSat{M}{!A \lif !B}[w']$، او
+  د دويم فرض له مخې $\mSat{M}{!A}[w']$۔ له دې څخه
+  $\mSat{M}{!B}[w']$ راځي۔ ځکه چې $w'$ خپلسره وه، نو
+  $\mSat{M}{\Box !B}[w]$۔
+\end{proof}
+
+\begin{prop}\ollabel{prop:Dual-valid}
+  لاندې \Dual{} طرحه معتبره ده:
+  \begin{equation*}
+  \Diamond !A \liff \lnot\Box\lnot !A. \tag{\Dual}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:Dual-valid} ثابته کړئ۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:soundMP}
+  که $!A$ او $!A \lif !B$ په يوه مدل کښې په يوه نړۍ کښې رښتيا وي،
+  نو $!B$ هم هلته رښتيا دے۔ نو د معتبره !!{formula}s مجموعه د
+  مودس پوننس تر قاعدې لاندې تړلې ده۔
+\end{prop}
+
+\begin{prop}\ollabel{prop:valid-instances}
+  !!^a{formula}~$!A$ هله او يوازې هله معتبر دے چې ټولې تعويضي
+  بېلګې ئې معتبرې وي۔ په بله وينا، يوه طرحه هله او يوازې هله معتبره
+  ده چې ځانګړونکے !!{formula} ئې معتبر وي۔
+\end{prop}
+
+\begin{proof}
+  د «که» لوري ثبوت څرګند دے، ځکه چې $!A$ د خپل ځان تعويضي بېلګه ده۔
+
+  د «يوازې که» لوري د ثبوت دپاره لاندې خبره ښيو: فرض کړئ
+  $\mModel{M} = \tuple{W, R, V}$ يو مودالي مدل دے، او
+  $!B \ident \SSubst{!A}{\subst{!D_1}{p_1},\dots,\subst{!D_n}{p_n}}$
+  د~$!A$ يوه تعويضي بېلګه ده۔ $\mModel{M'} = \tuple{W, R,
+    V'}$ داسې تعريف کړئ چې
+  $V'(p_i) = \Setabs{w}{\mSat{M}{!D_i}[w]}$ وي۔ بيا، د هر
+  $w \in W$ دپاره، $\mSat{M}{!B}[w]$ هله او يوازې هله چې
+  $\mSat{M'}{!A}[w]$۔ (د دې خبرې ثبوت د تمرين دپاره پرېږدو۔)
+  اوس فرض کړئ $!A$ معتبر وي، خو د~$!A$ کومه تعويضي بېلګه $!B$
+  معتبره نۀ وي۔ بيا د کوم $\mModel{M} = \tuple{W, R, V}$ او کوم
+  $w \in W$ دپاره $\mSat/{M}{!B}[w]$ وي۔ خو د پورته خبرې له مخې
+  بيا $\mSat/{M'}{!A}[w]$ وي، نو $!A$ معتبر نۀ دے؛ دا تناقض دے۔
+\end{proof}
+
+\begin{prob}
+  د \olref[nml][syn][sch]{prop:valid-instances} د ثبوت د «يوازې که»
+  په برخه کښې راغلې خبره ثابته کړئ۔ (لارښوونه: پر~$!A$ استقرا وکاروئ۔)
+\end{prob}
+
+خو پام وکړئ چې يوه طرحه په يوه مدل کښې هله او يوازې هله رښتيا ده چې
+ځانګړونکے فارمول ئې هلته رښتيا وي، دا خبره سمه نۀ ده۔ البته د
+«يوازې که» لور سم دے: که د~$!A$ هره بېلګه په~$\mModel{M}$ کښې
+رښتيا وي، نو $!A$ پخپله هم په~$\mModel{M}$ کښې رښتيا دے۔ خو کېدے
+شي چې $!A$ په~$\mModel{M}$ کښې رښتيا وي، حال دا چې د~$!A$
+کومه بېلګه په~$\mModel{M}$ کښې په کومه نړۍ کښې کاذبه وي۔ يوه ډېره ساده
+ناقضه بېلګه په پام کښې ونيسئ: $p$ په داسې مدل کښې چې يوازې يوه
+نړۍ~$w$ لري او $V(p) = \{w\}$ وي؛ نو $p$ په~$w$ کښې رښتيا دے۔
+خو $\lfalse$ د~$p$ يوه بېلګه ده او په~$w$ کښې رښتيا نۀ ده۔
+
+\begin{prob}
+  وښيئ چې له لاندې !!{formula}s څخه يو هم معتبر نۀ دے:
+  \begin{enumerate}
+    \item[\Ax{D}:] \quad $\Box p \lif \Diamond p$؛
+    \item[\Ax{T}:] \quad $\Box p \lif p$؛
+    \item[\Ax{B}:] \quad $p \lif \Box\Diamond p$؛
+    \item[\Ax{4}:] \quad $\Box p \lif \Box \Box p$؛
+    \item[\Ax{5}:] \quad $\Diamond p \lif \Box \Diamond
+      p$۔
+  \end{enumerate}
+\end{prob}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{معتبرې طرحې}} & {\emph{نامعتبرې طرحې}} \\
+      \hline\hline
+      $\Box(!A \lif !B) \lif (\Diamond !A \lif \Diamond !B)$
+      & $\Box (!A \lor !B) \lif (\Box !A \lor \Box !B)$ \\
+      $\Diamond (!A \lif !B) \lif (\Box !A \lif \Diamond
+      !B)$
+      & $(\Diamond !A \land \Diamond !B) \lif \Diamond (!A
+      \land !B)$\\
+      $\Box (!A \land !B) \liff (\Box !A \land \Box !B)$
+      & $!A \lif \Box !A$ \\
+      $\Box !A \lif \Box (!B \lif !A)$
+      & $\Box \Diamond !A \lif !B$ \\
+      $\lnot \Diamond !A \lif \Box (!A \lif !B)$
+      & $\Box \Box !A \lif \Box !A$ \\
+      $\Diamond (!A \lor !B) \liff (\Diamond !A \lor
+      \Diamond !B)$
+      & $\Box \Diamond !A \lif \Diamond \Box !A$. \\
+      \hline
+    \end{tabular}
+    \caption{معتبرې او (يا؟) نامعتبرې طرحې.}
+    \ollabel{tab:valid-invalidSchemas}
+\end{table}
+
+\begin{prob}%\ollabel{ex:in/validSchemas}
+  ثابته کړئ چې د \olref[nml][syn][sch]{tab:valid-invalidSchemas}
+  په لومړۍ ستنه کښې طرحې معتبرې دي او په دويمه ستنه کښې طرحې
+  معتبرې نۀ دي۔
+\end{prob}
+
+\begin{prob}
+  معلومه کړئ چې لاندې طرحې معتبرې دي که نامعتبرې:
+  \begin{enumerate}
+  \item $(\Diamond !A \lif \Box !B) \lif (\Box !A \lif \Box
+    !B)$؛
+  \item $\Diamond(!A \lif !B) \lor \Box(!B \lif !A)$۔
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  د لاندې هرې طرحې دپاره داسې مدل $\mModel{M}$ ومومئ چې د
+  !!{formula} هره بېلګه په~$\mModel{M}$ کښې رښتيا وي:
+  \begin{enumerate}
+  \item $p \lif \Diamond\Diamond p$؛
+  \item $\Diamond p \lif \Box p$۔
+  \end{enumerate}
+\end{prob}
+
+\end{document}

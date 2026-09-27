@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B107-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
-  "status": "OLP-0416 source-reviewed and staged; 12 paired blocks, three disclosed corrections, ten reverse-paraphrase samples and 84,992 finite substitution checks",
+  "batch_id": "PS-B108-NORMAL-MODAL-SCHEMAS-VALIDITY",
+  "status": "OLP-0417 source-reviewed and staged; 25 paired blocks, one provisional modal-schema terminology decision, ten reverse-paraphrase samples and 98,304 finite world checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8723,6 +8723,26 @@
       "allowed_residual_english": [
         "OLNML"
       ]
+    },
+    "OLP-0417": {
+      "batch_id": "PS-B108-NORMAL-MODAL-SCHEMAS-VALIDITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MODAL-SCHEMA",
+        "TERM-AXIOM",
+        "TERM-MODAL-LOGIC",
+        "TERM-PROP-SEMANTICS",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Twenty-five-block definition of schema and model truth, K and Dual validity, induced-model substitution proof, model-truth counterexample, invalidity exercises and two-column table.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13369,6 +13389,66 @@
       "passage": "validity contraposition",
       "reverse_paraphrase": "A countermodel world to a substituted formula induces an assignment falsifying the original A.",
       "finding": "Counterexample direction and arbitrary outside values retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "schema definition",
+      "reverse_paraphrase": "A schema is precisely every substitution instance of its characteristic modal formula.",
+      "finding": "Set equality and both directions retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "characteristic formula",
+      "reverse_paraphrase": "The characteristic formula is unique up to propositional-variable renaming; an instance belongs to the schema set.",
+      "finding": "Uniqueness and membership retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "metalanguage notation",
+      "reverse_paraphrase": "Letters A and B in the displayed patterns stand for formulas substituted for atomic parts; the schema A contains all formulas.",
+      "finding": "Object/metalanguage distinction retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "truth versus validity",
+      "reverse_paraphrase": "Truth of a schema in M means all instances true there; validity means truth in every model.",
+      "finding": "Two quantified domains retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "K proof",
+      "reverse_paraphrase": "At arbitrary M,w, both boxed assumptions force B at every R-successor.",
+      "finding": "Two premises and successor scope retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "Dual and MP",
+      "reverse_paraphrase": "Dual remains an exercise; truth of A and A implies B at one world gives B, hence valid formulas close under MP.",
+      "finding": "Pedagogical exercise and local-to-global reasoning retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "substitution proof",
+      "reverse_paraphrase": "The induced M-prime interprets each pi as the world-set where Di is true in M; invalid B contradicts valid A.",
+      "finding": "Direction of induced-model equivalence and contraposition retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "model counterexample",
+      "reverse_paraphrase": "The characteristic p is true in a singleton model while its false-constant instance is false there.",
+      "finding": "Failure of model-truth converse retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "table and countermodels",
+      "reverse_paraphrase": "D,T,B,4,5 and the right-column examples have countermodels; the left column is universally valid.",
+      "finding": "Column classification and 98,304-world finite audit retained."
+    },
+    {
+      "unit_id": "OLP-0417",
+      "passage": "final model exercise",
+      "reverse_paraphrase": "Find a model for each schema in which every instance holds; a reflexive singleton is a witness, but the exercise is left unanswered.",
+      "finding": "All-instance quantifier retained."
     }
   ]
 }

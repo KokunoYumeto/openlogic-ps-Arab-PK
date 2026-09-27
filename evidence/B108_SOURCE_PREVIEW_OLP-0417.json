@@ -1,0 +1,192 @@
+{
+  "schema": "ps-b108-schemas-source-preview/1",
+  "status": "source-only semantic preview; OLP-0417 not translated or accepted",
+  "unit_id": "OLP-0417",
+  "source_sha256": "2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc",
+  "three_world_relations": 512,
+  "two_atom_valuations_per_relation": 64,
+  "world_checks": 98304,
+  "valid_claims_checked": [
+    "Dual",
+    "K",
+    "decide_1",
+    "decide_2",
+    "table_1",
+    "table_2",
+    "table_3",
+    "table_4",
+    "table_5",
+    "table_6"
+  ],
+  "invalid_claims_with_witnesses": {
+    "D": {
+      "world": 0,
+      "edges": [],
+      "valuation": {
+        "p": [],
+        "q": []
+      }
+    },
+    "T": {
+      "world": 0,
+      "edges": [],
+      "valuation": {
+        "p": [],
+        "q": []
+      }
+    },
+    "table_4": {
+      "world": 0,
+      "edges": [],
+      "valuation": {
+        "p": [],
+        "q": []
+      }
+    },
+    "table_6": {
+      "world": 0,
+      "edges": [],
+      "valuation": {
+        "p": [],
+        "q": []
+      }
+    },
+    "table_5": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [],
+        "q": []
+      }
+    },
+    "B": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [
+          0
+        ],
+        "q": []
+      }
+    },
+    "table_3": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [
+          0
+        ],
+        "q": []
+      }
+    },
+    "5": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [
+          1
+        ],
+        "q": []
+      }
+    },
+    "table_1": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [
+          0
+        ],
+        "q": [
+          1
+        ]
+      }
+    },
+    "table_2": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "p": [
+          0
+        ],
+        "q": [
+          1
+        ]
+      }
+    },
+    "4": {
+      "world": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "valuation": {
+        "p": [
+          0
+        ],
+        "q": []
+      }
+    }
+  },
+  "two_decision_problems": [
+    "valid",
+    "valid"
+  ],
+  "model_for_every_instance_of_final_two_schemas": {
+    "worlds": [
+      "w"
+    ],
+    "relation": [
+      [
+        "w",
+        "w"
+      ]
+    ],
+    "reason": "In a reflexive singleton, p implies Diamond Diamond p and Diamond p implies Box p hold for either truth value of p."
+  },
+  "caption_note": "Frozen source caption contains editorial parenthetical “(or?)”; the two table columns and checked examples are valid versus invalid.",
+  "next_action": "Translate OLP-0417 and audit every schema, proof scope, countermodel and table caption."
+}

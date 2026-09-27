@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 416 of 722 source units are translated drafts. This log contains 205 terminology entries and 343 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 417 of 722 source units are translated drafts. This log contains 206 terminology entries and 343 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1787,6 +1787,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: exact Pakistani sublogic and Boolean-fragment compounds are provisional.
 - Review question: Does the scope qualification include all used connectives and constants and preserve the consequence-inclusion direction?
 - Timing: contemporaneous B086 source review and visually inspected Pakistani-first consultation
+
+## TERM-MODAL-SCHEMA
+
+- Type: terminology.
+- Choice: `مودالي طرحه / ځانګړونکے فارمول` for modal schema / characteristic formula.
+- [Frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/schemas.tex#L14) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/schemas.tex#L14).
+- A schema is the full set of instances of its characteristic formula. The modal introduction already uses `طرحه`; axiom-specific `شېما` remains distinct. Exact Pakistani technical attestation is unavailable.
+- Review question: Do the chosen words clearly distinguish the instance set from its characteristic formula in Pakistani Pashto?
+
 
 ## DEC-OLMVL-001
 
