@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 417 of 722 source units are translated drafts. This log contains 206 terminology entries and 343 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 418 of 722 source units are translated drafts. This log contains 206 terminology entries and 344 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4794,6 +4794,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L124) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L123).
 - Treatment: change only the opening connective to biconditional and disclose it beside the proof.
 - Review question: Does the opening formula match the case pattern and two truth alternatives?
+
+## DEC-OLNML-007
+
+- Type: source correction; a modal model’s ordered components are written with set braces.
+- Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/entailment.tex#L69) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/entailment.tex#L71).
+- Treatment: use the ordered-triple macro for the one-world countermodel and disclose the change beside the example. The diagram and other formulas match the source.
+- Review question: Do the three components now match the model definition and preserve the intended counterexample?
+
 
 ## DEC-REL-I
 

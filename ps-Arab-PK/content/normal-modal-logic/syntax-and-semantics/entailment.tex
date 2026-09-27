@@ -1,0 +1,90 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: entailment
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{ent}
+
+\olsection{استلزام}
+
+\begin{explain}
+  په يوه نړۍ کښې د رښتياوالي د تعريف په مرسته د !!{formula}s ترمنځ
+  د استلزام اړيکه تعريفولے شو۔ !!^a{formula}~$!B$ هله او يوازې هله
+  $!A$ لازموي چې هر وخت $!B$ رښتيا وي، $!A$ هم رښتيا وي۔ دلته
+  «هر وخت» دا دواړه معناوې لري: «هر کوم مدل چې وڅېړو» او «په هغه
+  مدل کښې هره کومه نړۍ چې وڅېړو»۔
+\end{explain}
+
+\begin{defn}
+  که $\Gamma$ د !!{formula}s مجموعه وي او $!A$ !!a{formula} وي، نو
+  $\Gamma$، $!A$ \emph{لازموي}، چې په نښو کښې $\Gamma \Entails !A$
+  ليکو، هله او يوازې هله چې د هر مدل $\mModel{M} = \tuple{W, R, V}$
+  او هرې نړۍ $w \in W$ دپاره، که د هر $!B \in \Gamma$ دپاره
+  $\mSat{M}{!B}[w]$ وي، نو $\mSat{M}{!A}[w]$ وي۔ که په $\Gamma$
+  کښې يوازې يو !!{formula}~$!B$ وي، نو $!B \Entails !A$ ليکو۔
+\end{defn}
+
+\begin{ex}
+  د دې د ښودلو دپاره چې يو !!a{formula} بل لازموي، بايد د
+  $\mSat{M}{}[w]$ د تعريف په کارولو سره د ټولو مدلونو په هکله
+  استدلال وکړو۔ د بېلګې په توګه، د $p \lif \Diamond p \Entails
+  \Box\lnot p \lif \lnot p$ د ښودلو دپاره داسې استدلال کېدے شي:
+  يو مدل $\mModel{M} = \tuple{W, R, V}$ او $w \in W$ ونيسئ، او فرض
+  کړئ چې $\mSat{M}{p \lif \Diamond p}[w]$۔ بايد وښيو چې
+  $\mSat{M}{\Box\lnot p \lif \lnot p}[w]$۔ فرض کړئ داسې نۀ وي۔
+  بيا $\mSat{M}{\Box\lnot p}[w]$ او $\mSat/{M}{\lnot p}[w]$ وي۔
+  له $\mSat/{M}{\lnot p}[w]$ څخه $\mSat{M}{p}[w]$ راځي۔ د فرض
+  له مخې $\mSat{M}{p \lif \Diamond p}[w]$، نو
+  $\mSat{M}{\Diamond p}[w]$۔ د $\mSat{M}{\Diamond p}[w]$ د تعريف
+  له مخې داسې $w'$ شته چې $Rww'$ او $\mSat{M}{p}[w']$ وي۔ خو
+  $\mSat{M}{\Box \lnot p}[w]$ هم دے، نو
+  $\mSat{M}{\lnot p}[w']$ وي؛ دا تناقض دے۔
+
+  د دې د ښودلو دپاره چې يو !!a{formula}~$!B$ بل~$!A$ نۀ لازموي،
+  بايد ناقضه بېلګه ورکړو: داسې مدل $\mModel{M} = \tuple{W, R, V}$
+  چې په کومه نړۍ~$w \in W$ کښې $\mSat{M}{!B}[w]$ وي، خو
+  $\mSat/{M}{!A}[w]$ وي۔ وښيو چې $p \lif \Diamond p \Entails/
+  \Box p \lif p$۔ د \olref{fig:counterex} مدل وڅېړئ۔ په همدغه نړۍ
+  کښې $\mSat{M}{\Diamond p}[w_1]$ دے، نو
+  $\mSat{M}{p \lif \Diamond p}[w_1]$ هم دے۔ خو
+  $\mSat{M}{\Box p}[w_1]$ سره سره $\mSat/{M}{p}[w_1]$ دے؛ نو
+  $\mSat/{M}{\Box p \lif p}[w_1]$۔
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label=right:\mFalse{p}]{$w_1$}; 
+      \node[world] (w2) [label=right:\mTrue{p}, above left=of w1]{$w_2$}; 
+      \node[world] (w3) [label=right:\mTrue{p}, above right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{د $p \lif \Diamond p
+  \Entails \Box p \lif p$ د استلزام ناقضه بېلګه.}
+  \ollabel{fig:counterex}
+  \end{figure}
+  
+  ډېر وخت ساده ناقضې بېلګې بس وي۔ مدل $\mModel{M'} =
+  \tuple{W', R', V'}$ چې $W' = \{w\}$، $R' = \emptyset$ او $V'(p) =
+  \emptyset$ وي، هم ناقضه بېلګه ده: ځکه چې $\mSat/{M'}{p}[w]$، نو
+  $\mSat{M'}{p \lif \Diamond p}[w]$۔ له~$w$ څخه بلې نړۍ ته لاسرسے
+  نشته، نو $\mSat{M'}{\Box p}[w]$؛ له دې امله
+  $\mSat/{M'}{\Box p \lif p}[w]$۔
+\end{ex}
+\textbf{د نسخې د سمون يادونه (OLNML-007):} په سرچينه کښې د مدل درې
+برخې د سټ په قوسونو کښې ليکل شوې دي؛ دلته د مدل د تعريف له مخې د
+ترتيب لرونکې درې‌ګونې نښه کارول شوې ده۔
+
+\begin{prob}
+  وښيئ چې $\Box (!A \land !B) \Entails \Box !A$۔
+\end{prob}
+
+\begin{prob}
+  وښيئ چې $\Box (p \lif q) \Entails/ p \lif \Box q$ او $p \lif \Box
+  q \Entails/\Box (p \lif q)$۔
+\end{prob}
+
+\end{document}

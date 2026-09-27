@@ -2998,3 +2998,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Changes only the opening formula of the biconditional induction case from B if C to B iff C and discloses the repair.
 - Evidence: The case pattern, both truth alternatives and final substituted expression all concern the biconditional; the source opening formula alone uses the conditional.
 - Finite check: 84,992 substitution equations and four biconditional truth rows. Frozen English remains unchanged.
+
+## OLNML-007
+
+- Unit: `OLP-0418`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/entailment.tex` (825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee) at `content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-69`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/entailment.tex:71` (9b4aac4a4e255f1236da9174d542d3eee8ae2bb4cf619454f7344c03535b8ad0); adjacent disclosure at line 77.
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ENTAILMENT`.
+- Treatment: Changes only the braces around W-prime, R-prime and V-prime to the ordered-triple macro in the one-world countermodel and discloses the repair beside the example.
+- Evidence: A modal model is defined throughout this chapter as the ordered triple of worlds, accessibility relation and valuation. Source set braces lose component roles and conflict with the same example’s ordered-model usage.
+- Finite check: 98,304 world cases for the entailment claim and witnesses for three non-entailments. Frozen English remains unchanged.

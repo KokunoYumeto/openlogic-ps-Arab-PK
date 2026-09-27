@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B108-NORMAL-MODAL-SCHEMAS-VALIDITY",
-  "status": "OLP-0417 source-reviewed and staged; 25 paired blocks, one provisional modal-schema terminology decision, ten reverse-paraphrase samples and 98,304 finite world checks",
+  "batch_id": "PS-B109-NORMAL-MODAL-ENTAILMENT",
+  "status": "OLP-0418 source-reviewed and staged; 13 paired blocks, one disclosed notation correction, eight reverse-paraphrase samples and 98,304 finite world checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8743,6 +8743,25 @@
       ],
       "scope": "Twenty-five-block definition of schema and model truth, K and Dual validity, induced-model substitution proof, model-truth counterexample, invalidity exercises and two-column table.",
       "allowed_residual_english": []
+    },
+    "OLP-0418": {
+      "batch_id": "PS-B109-NORMAL-MODAL-ENTAILMENT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-LOGIC"
+      ],
+      "scope": "Thirteen-block universal modal-entailment definition, worked entailment proof, diagram and singleton countermodels, two nonentailment exercises and one disclosed source notation repair.",
+      "allowed_residual_english": [
+        "OLNML"
+      ]
     }
   },
   "semantic_review": [
@@ -13449,6 +13468,54 @@
       "passage": "final model exercise",
       "reverse_paraphrase": "Find a model for each schema in which every instance holds; a reflexive singleton is a witness, but the exercise is left unanswered.",
       "finding": "All-instance quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "entailment introduction",
+      "reverse_paraphrase": "B entails A when every model and every world where B holds also makes A hold.",
+      "finding": "Both universal domains retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "premise set",
+      "reverse_paraphrase": "For every M,w, all B in Gamma true there implies A true there.",
+      "finding": "All-premise quantifier and same-world scope retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "entailed example",
+      "reverse_paraphrase": "False Box-not-p implies not-p plus the premise yields a p-successor where Box-not-p yields not-p.",
+      "finding": "Contradiction at one successor retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "counterexample method",
+      "reverse_paraphrase": "Show a premise true and conclusion false at one world in one model.",
+      "finding": "Existential countermodel scope retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "diagram",
+      "reverse_paraphrase": "At w1 p is false, both successors satisfy p, Box p is true, and Box p implies p is false.",
+      "finding": "Edges and labels exact."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "singleton",
+      "reverse_paraphrase": "With no successors and p false, both antecedent and Box p are vacuously true but p false.",
+      "finding": "Vacuous box truth retained; OLNML-007 model tuple disclosed."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "first exercise",
+      "reverse_paraphrase": "Box(A and B) entails Box A.",
+      "finding": "Exercise remains unanswered."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "second exercise",
+      "reverse_paraphrase": "Neither Box(p implies q) nor p implies Box q entails the other.",
+      "finding": "Both directions remain separate countermodel tasks."
     }
   ]
 }

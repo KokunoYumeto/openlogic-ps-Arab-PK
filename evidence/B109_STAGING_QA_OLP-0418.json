@@ -1,0 +1,37 @@
+{
+  "schema": "ps-b109-entailment-staging-qa/1",
+  "unit_id": "OLP-0418",
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+  "source_sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+  "target_sha256": "9b4aac4a4e255f1236da9174d542d3eee8ae2bb4cf619454f7344c03535b8ad0",
+  "source_blocks": 13,
+  "target_blocks": 13,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "diagram": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\mModel{M'}=\\{W',R',V'\\}$"
+  ],
+  "target_only_math": [
+    "$\\mModel{M'}=\\tuple{W',R',V'}$"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [],
+  "target_only_tags": [],
+  "source_only_terms": [],
+  "target_only_terms": [],
+  "documented_math_exception": "OLNML-007",
+  "all_checks_pass": true
+}

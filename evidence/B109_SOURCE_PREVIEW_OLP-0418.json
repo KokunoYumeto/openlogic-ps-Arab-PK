@@ -1,0 +1,47 @@
+{
+  "schema": "ps-b109-entailment-source-preview/1",
+  "status": "source-only semantic preview; OLP-0418 not yet translated or accepted",
+  "unit_id": "OLP-0418",
+  "source_sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+  "three_world_relations": 512,
+  "two_atom_valuations_per_relation": 64,
+  "world_checks": 98304,
+  "entailed_claim": "p -> Diamond p entails Box not p -> not p",
+  "nonentailment_witnesses": {
+    "p_to_diamond_p_does_not_entail_box_p_to_p": {
+      "world": 0,
+      "edges": [],
+      "p_worlds": [],
+      "q_worlds": []
+    },
+    "box_pq_does_not_entail_p_to_box_q": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "p_worlds": [
+        0
+      ],
+      "q_worlds": []
+    },
+    "p_to_box_q_does_not_entail_box_pq": {
+      "world": 0,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "p_worlds": [
+        1
+      ],
+      "q_worlds": []
+    }
+  },
+  "diagram_reading": "w1 has p false and two p-true successors; p -> Diamond p and Box p are true at w1, but p is false there.",
+  "source_notation_candidate": "The later one-world model uses set braces for {W prime,R prime,V prime} where all other model definitions use an ordered triple; decide and document before translation.",
+  "next_action": "Translate OLP-0418, audit the model notation, retain the diagram exactly and run corpus QA."
+}

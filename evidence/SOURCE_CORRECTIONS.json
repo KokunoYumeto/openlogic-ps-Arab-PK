@@ -10133,6 +10133,57 @@
       ],
       "decision_timing": "contemporaneous B107 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-007",
+      "unit_id": "OLP-0418",
+      "classification": "model_components_written_as_unordered_set",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+      "source_sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-69",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+      "target_line_1based": 71,
+      "disclosure_line_1based": 77,
+      "target_sha256": "9b4aac4a4e255f1236da9174d542d3eee8ae2bb4cf619454f7344c03535b8ad0",
+      "mode": "correct-model-tuple-notation-plus-adjacent-Pashto-note",
+      "translation_change": "Changes only the braces around W-prime, R-prime and V-prime to the ordered-triple macro in the one-world countermodel and discloses the repair beside the example.",
+      "reason": "A modal model is defined throughout this chapter as the ordered triple of worlds, accessibility relation and valuation. Source set braces lose component roles and conflict with the same example’s ordered-model usage.",
+      "formula_policy": "Exactly the listed one-formula difference is permitted; other math spans, identifiers, structural macros, term tokens and the TikZ diagram match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mModel{M'}=\\{W',R',V'\\}$"
+        ],
+        "target_only": [
+          "$\\mModel{M'}=\\tuple{W',R',V'}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ENTAILMENT",
+      "audit_artifacts": [
+        "B109_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/entailment.tex:68-69",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/entailment.tex:70-71",
+        "B109_SOURCE_PREVIEW_OLP-0418.json"
+      ],
+      "decision_timing": "contemporaneous B109 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

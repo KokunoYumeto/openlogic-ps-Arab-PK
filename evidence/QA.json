@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 417,
-    "structural_pass": 417,
+    "draft_units": 418,
+    "structural_pass": 418,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B108-NORMAL-MODAL-SCHEMAS-VALIDITY",
+  "batch": "PS-B109-NORMAL-MODAL-ENTAILMENT",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13576,6 +13576,49 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0418",
+      "path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+      "source_sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+      "translation_sha256": "9b4aac4a4e255f1236da9174d542d3eee8ae2bb4cf619454f7344c03535b8ad0",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLNML"
+      ],
+      "allowed_residual_english": [
+        "OLNML"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-007"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mModel{M'}=\\{W',R',V'\\}$"
+        ],
+        "target_only": [
+          "$\\mModel{M'}=\\tuple{W',R',V'}$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -18282,6 +18325,54 @@
       "passage": "final model exercise",
       "reverse_paraphrase": "Find a model for each schema in which every instance holds; a reflexive singleton is a witness, but the exercise is left unanswered.",
       "finding": "All-instance quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "entailment introduction",
+      "reverse_paraphrase": "B entails A when every model and every world where B holds also makes A hold.",
+      "finding": "Both universal domains retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "premise set",
+      "reverse_paraphrase": "For every M,w, all B in Gamma true there implies A true there.",
+      "finding": "All-premise quantifier and same-world scope retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "entailed example",
+      "reverse_paraphrase": "False Box-not-p implies not-p plus the premise yields a p-successor where Box-not-p yields not-p.",
+      "finding": "Contradiction at one successor retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "counterexample method",
+      "reverse_paraphrase": "Show a premise true and conclusion false at one world in one model.",
+      "finding": "Existential countermodel scope retained."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "diagram",
+      "reverse_paraphrase": "At w1 p is false, both successors satisfy p, Box p is true, and Box p implies p is false.",
+      "finding": "Edges and labels exact."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "singleton",
+      "reverse_paraphrase": "With no successors and p false, both antecedent and Box p are vacuously true but p false.",
+      "finding": "Vacuous box truth retained; OLNML-007 model tuple disclosed."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "first exercise",
+      "reverse_paraphrase": "Box(A and B) entails Box A.",
+      "finding": "Exercise remains unanswered."
+    },
+    {
+      "unit_id": "OLP-0418",
+      "passage": "second exercise",
+      "reverse_paraphrase": "Neither Box(p implies q) nor p implies Box q entails the other.",
+      "finding": "Both directions remain separate countermodel tasks."
     }
   ],
   "builds": [
