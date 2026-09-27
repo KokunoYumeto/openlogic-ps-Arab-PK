@@ -2956,3 +2956,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Changes only the biconditional substitution case tag from prvIf to prvIff and discloses the repair beside the rule.
 - Evidence: The case pattern and result use the biconditional connective, which the preceding modal language grammar enables under prvIff. The source tags it prvIf, giving the wrong behavior when the two optional tags differ.
 - Formal check: four independent optional-tag profiles; no math span changes. Frozen English remains unchanged.
+
+## OLNML-003
+
+- Unit: `OLP-0413`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex` (4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50) at `content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:91-94`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:104` (4387d46576addde02e3513146e3639eb2b33cf4b4aba2112066550cdb00fd0ed).
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TRUTH-AT-WORLD`.
+- Treatment: Adds [w] to one satisfaction expression in the second modal-duality proof and discloses the addition in Pashto beside that proof.
+- Evidence: Relational satisfaction is defined at a world, and the surrounding equivalence, immediately following expression and later proof step all use [w]. The one source expression omits it.
+- Formal check: 24,576 three-world duality equations and nine exercise results. Frozen English remains unchanged.

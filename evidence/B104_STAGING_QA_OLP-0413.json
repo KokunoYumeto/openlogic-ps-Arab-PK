@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b104-truth-at-world-staging-qa/1",
+  "unit_id": "OLP-0413",
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+  "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+  "target_sha256": "4387d46576addde02e3513146e3639eb2b33cf4b4aba2112066550cdb00fd0ed",
+  "source_blocks": 15,
+  "target_blocks": 15,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\mSat/{M}{\\Box\\lnot!A}$"
+  ],
+  "target_only_math": [
+    "$\\mSat/{M}{\\Box\\lnot!A}[w]$"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [],
+  "target_only_tags": [],
+  "documented_math_exception": "OLNML-003",
+  "all_checks_pass": true
+}

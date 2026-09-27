@@ -1,0 +1,130 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{trw}
+
+\olsection{په يوه نړۍ کښې رښتياوالی}
+
+هر مودالي مدل ټاکي چې کوم مودالي !!{formula}s په کومو نړۍو کښې
+رښتيا ګڼل کېږي۔ دا اړيکه چې «مدل~$\mModel{M}$، !!{formula}~$!A$
+په نړۍ~$w$ کښې رښتيا کوي» د اړيکيزې معنٰی پوهنې بنسټيز مفهوم دے۔
+دا اړيکه په استقرايي ډول تعريفېږي، او د نامودالي عاملونو دپاره د
+صدق د جدولونو له معمولې ټاکنې سره سمون خوري۔
+
+\begin{defn}\ollabel{defn:mmodels}
+  په~$\mModel M$ کښې په~$w$ د !!a{formula}~$!A$ \emph{رښتياوالی}،
+  په نښو کښې $\mSat{M}{!A}[w]$، په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{هېڅکله $\mSat{M}{\lfalse}[w]$ نۀ وي}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{تل $\mSat{M}{\ltrue}[w]$ وي}.}{}
+  \item $\mSat{M}{p}[w]$ هله او يوازې هله چې $w \in V(p)$ وي۔
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ وي}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ دواړه وي}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي} (يا دواړه).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    يا دواړه $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ وي، يا
+    نۀ $\mSat{M}{!B}[w]$ وي او نۀ $\mSat{M}{!C}[w]$ وي}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Box !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w']$ د هر هغه $w' \in W$ دپاره وي چې $Rww'$ وي۔}
+  \item\ollabel{defn:sub:mmodels-diamond}
+    \indcase{!A}{\Diamond !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w']$ لږ تر لږه د يوه هغه $w' \in W$ دپاره وي چې $Rww'$ وي۔}
+  \end{enumerate}
+\end{defn}
+
+د \olref{defn:sub:mmodels-box} فقرې ته پام وکړئ: که داسې هېڅ~$w'$
+نۀ وي چې $Rww'$ وي، نو !!a{formula}~$\Box !B$ په~$w$ کښې رښتيا
+وي۔ په دې حالت کښې $\Box !B$ \emph{په تش ډول} رښتيا وي۔ همدارنګه،
+$\Box !B$ په~$w$ کښې رښتيا کېدے شي، حتٰی که $!B$ هلته رښتيا نۀ
+وي۔ په~$w$ کښې د~$!B$ رښتياوالی دا نۀ تضمينوي چې $\Diamond !B$ به
+هم په~$w$ کښې رښتيا وي۔ خو که $Rww$ وي، د بېلګې په توګه که $R$
+انعکاسي وي، نو دا نتيجه سمېږي۔ که داسې هېڅ $w'$ نۀ وي چې $Rww'$ وي،
+نو د هر~$!A$ دپاره $\mSat/{M}{\Diamond !A}[w]$ وي۔
+
+\begin{prob}
+  د \olref[nml][syn][rel]{fig:simple} مدل وڅېړئ۔ له لاندې کومې
+  جملې رښتيا دي؟
+    \begin{enumerate}
+    \item $\mSat{M}{q}[w_1]$;
+    \item $\mSat{M}{\lnot q}[w_3]$;
+    \item $\mSat{M}{p \lor q}[w_1]$;
+    \item $\mSat{M}{\Box (p \lor q)}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_3]$;
+    \item $\mSat{M}{\Box \bot}[w_3]$;
+    \item $\mSat{M}{\Diamond q}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_1]$;
+    \item $\mSat{M}{\lnot \Box\Box \lnot q}[w_1]$.
+    \end{enumerate}
+\end{prob}
+
+% Prove duality of \Box and \Diamond
+\begin{tagblock}{prvDiamond}
+\begin{prop}\ollabel{prop:dual}
+  \begin{enumerate}
+  \item $\mSat{M}{\Box !A}[w]$ هله او يوازې هله چې $\mSat{M}{\lnot\Diamond\lnot !A}[w]$ وي۔
+  \item $\mSat{M}{\Diamond !A}[w]$ هله او يوازې هله چې $\mSat{M}{\lnot\Box\lnot !A}[w]$ وي۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot\Diamond\lnot !A}[w]$ هله او يوازې هله چې $\mSat/{M}{\Diamond\lnot
+      !A}[w]$ وي، د $\mSat{M}{}[w]$ د تعريف له مخې۔ $\mSat{M}{\Diamond\lnot
+      !A}[w]$ هله او يوازې هله چې د يوه داسې $w'$ دپاره چې $Rww'$ وي، $\mSat{M}{\lnot
+      !A}[w']$ وي۔ نو $\mSat/{M}{\Diamond\lnot !A}[w]$ هله او يوازې هله چې د هر
+    داسې $w'$ دپاره چې $Rww'$ وي، $\mSat/{M}{\lnot !A}[w']$ وي۔ همدارنګه
+    $\mSat/{M}{\lnot !A}[w']$ هله او يوازې هله چې $\mSat{M}{!A}[w']$ وي۔
+    له دې ټولو څخه $\mSat{M}{\lnot\Diamond\lnot !A}[w]$ هله او يوازې هله
+    چې د هر داسې $w'$ دپاره چې $Rww'$ وي، $\mSat{M}{!A}[w']$ وي۔ بيا د
+    $\mSat{M}{}[w]$ د تعريف له مخې دا هله او يوازې هله چې
+      $\mSat{M}{\Box !A}[w]$ وي۔
+    \item \iftag{probDiamond}{تمرین۔}{$\mSat{M}{\lnot\Box\lnot !A}[w]$ هله او يوازې هله چې
+      $\mSat/{M}{\Box\lnot !A}[w]$ وي۔ $\mSat{M}{\Box\lnot !A}[w]$ هله او يوازې هله چې د هر
+      هغه $w'$ دپاره چې $Rww'$ وي، $\mSat{M}{\lnot !A}[w']$ وي۔ نو
+      $\mSat/{M}{\Box\lnot !A}[w]$ هله او يوازې هله چې د يوه داسې $w'$ دپاره چې $Rww'$ وي،
+      $\mSat/{M}{\lnot !A}[w']$ وي۔ همدارنګه $\mSat/{M}{\lnot
+        !A}[w']$ هله او يوازې هله چې $\mSat{M}{!A}[w']$ وي۔ له دې ټولو
+      څخه $\mSat{M}{\lnot\Box\lnot !A}[w]$ هله او يوازې هله چې د يوه
+      داسې~$w'$ دپاره چې $Rww'$ وي، $\mSat{M}{!A}[w']$ وي۔ بيا د
+      $\mSat{M}{}[w]$ د تعريف له مخې دا هله او يوازې هله چې $\mSat{M}{\Diamond
+        !A}[w]$ وي۔}
+  \end{enumerate}
+\end{proof}
+\textbf{د ژباړې د نسخې سمون (OLNML-003):} د دويم ثبوت په لومړۍ
+کرښه کښې د سرچينې له يوې صدقي نښې څخه د نړۍ~$w$ ارګومېنټ لوېدلے و؛
+دلته هماغه \texttt{[w]} ورزيات شوے دے۔
+
+\begin{probtag}{probDiamond}
+  د \olref[nml][syn][trw]{prop:dual} ثبوت بشپړ کړئ۔
+\end{probtag}
+\end{tagblock}
+
+\begin{prob}
+  که $\mModel{M} = \tuple{W, R, V}$ يو مدل وي، او فرض کړئ $w_1, w_2 \in
+  W$ داسې وي چې:
+  \begin{enumerate}
+  \item $w_1 \in V(p)$ هله او يوازې هله چې $w_2 \in V(p)$ وي (د هر !!{propositional variable} $p$ دپاره)؛ او
+  \item د هر $w \in W$ دپاره: $Rw_1w$ هله او يوازې هله چې $Rw_2w$ وي۔
+  \end{enumerate}
+  پر !!{formula}s په استقرا سره وښيئ چې د ټولو !!{formula}s~$!A$ دپاره:
+  $\mSat{M}{!A}[w_1]$ هله او يوازې هله چې $\mSat{M}{!A}[w_2]$ وي۔
+\end{prob}
+
+\begin{probtag}{prvDiamond}
+  که $\mModel{M} = \tuple{W, R, V}$ وي، وښيئ چې
+  $\mSat{M}{\lnot\Diamond !A}[w]$ هله او يوازې هله چې
+  $\mSat{M}{\Box\lnot!A}[w]$ وي۔
+\end{probtag}
+
+\end{document}

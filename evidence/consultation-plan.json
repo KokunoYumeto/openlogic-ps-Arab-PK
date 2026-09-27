@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B103-NORMAL-MODAL-RELATIONAL-MODELS",
-  "status": "OLP-0412 source-reviewed and staged; ten paired blocks, unchanged TikZ and formal spans, eight reverse-paraphrase samples and independent W,R,V figure checks",
+  "batch_id": "PS-B104-NORMAL-MODAL-TRUTH-AT-WORLD",
+  "status": "OLP-0413 source-reviewed and staged; 15 paired blocks, one disclosed world-argument correction, eleven reverse-paraphrase samples and independent finite semantics",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8640,6 +8640,28 @@
       ],
       "scope": "Ten-block relational-model definition and three-world figure; W,R,V, accessibility direction, valuation, labels and arrows independently checked with no source correction.",
       "allowed_residual_english": []
+    },
+    "OLP-0413": {
+      "batch_id": "PS-B104-NORMAL-MODAL-TRUTH-AT-WORLD",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-MODAL-LOGIC",
+        "TERM-SEMANTICS",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-RELATION",
+        "TERM-PROPOSITION"
+      ],
+      "scope": "Fifteen-block truth-at-a-world definition, dead-end/reflexive cases, nine model queries, duality proof and exercises; one adjacent-disclosed missing world argument OLNML-003.",
+      "allowed_residual_english": [
+        "OLNML"
+      ]
     }
   },
   "semantic_review": [
@@ -13064,6 +13086,72 @@
       "passage": "figure caption",
       "reverse_paraphrase": "The caption calls this a simple model without adding a modal frame axiom.",
       "finding": "Caption localized; no extra claim."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "truth relation",
+      "reverse_paraphrase": "A model makes a formula true at a world according to a recursively defined satisfaction relation.",
+      "finding": "World argument preserved throughout except one disclosed source repair."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "atomic constants",
+      "reverse_paraphrase": "False is never true; true is always true; p is true at w exactly when w belongs to V(p).",
+      "finding": "All base clauses retained."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "Boolean clauses",
+      "reverse_paraphrase": "Negation, and, or, if and iff have the classical truth conditions at the same world.",
+      "finding": "All connective scopes retained; four assignments checked."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "modal clauses",
+      "reverse_paraphrase": "Box B requires B at every accessible successor; Diamond B requires it at at least one successor.",
+      "finding": "Universal/existential directions retained."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "dead-end",
+      "reverse_paraphrase": "With no successors Box B is vacuously true and Diamond A false, even for Box false.",
+      "finding": "Vacuity and no-successor scope retained."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "reflexivity",
+      "reverse_paraphrase": "B true at w guarantees Diamond B at w if w accesses itself; without that premise the implication need not hold.",
+      "finding": "Sufficiency and caveat retained."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "nine queries",
+      "reverse_paraphrase": "The earlier three-world model gives F,T,T,F,T,T,T,F,F for the nine printed items.",
+      "finding": "All nine formulas unchanged and independently evaluated."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "duality",
+      "reverse_paraphrase": "Box A iff not-Diamond-not-A, and Diamond A iff not-Box-not-A, including dead-end worlds.",
+      "finding": "Both dualities finite-checked at 24,576 world/model instances."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "proof repair",
+      "reverse_paraphrase": "The second proof needs world [w] on one negated-Box satisfaction expression.",
+      "finding": "OLNML-003 adds only the missing argument with a Pashto note."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "equal worlds exercise",
+      "reverse_paraphrase": "Equal atomic values and identical outgoing R neighborhoods imply formula equivalence by induction.",
+      "finding": "Both premises and all-formula conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "passage": "final exercise",
+      "reverse_paraphrase": "Not-Diamond A is equivalent to Box-not-A at the same world.",
+      "finding": "World and negation scopes retained."
     }
   ]
 }

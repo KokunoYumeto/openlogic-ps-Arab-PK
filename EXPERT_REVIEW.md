@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 412 of 722 source units are translated drafts. This log contains 205 terminology entries and 339 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 413 of 722 source units are translated drafts. This log contains 205 terminology entries and 340 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4756,6 +4756,13 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/substitution.tex#L56) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/substitution.tex#L60).
 - Treatment: change only the case tag from prvIf to prvIff and disclose it beside the case.
 - Review question: Does the case now follow the optional biconditional operator under both independent tag settings?
+
+## DEC-OLNML-003
+
+- Type: source correction; omitted world argument in a satisfaction expression.
+- Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex#L92) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex#L104).
+- Treatment: add only the missing [w] in the second duality proof, with a Pashto disclosure after the proof.
+- Review question: Is the world argument now consistent across the equivalence and its following proof steps?
 
 ## DEC-REL-I
 

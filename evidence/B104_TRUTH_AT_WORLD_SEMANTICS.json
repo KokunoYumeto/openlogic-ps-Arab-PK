@@ -1,0 +1,26 @@
+{
+  "schema": "ps-b104-truth-at-world-semantic-check/1",
+  "status": "PASS",
+  "unit_id": "OLP-0413",
+  "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+  "target_sha256": "4387d46576addde02e3513146e3639eb2b33cf4b4aba2112066550cdb00fd0ed",
+  "source_correction_id": "OLNML-003",
+  "boolean_assignments": 4,
+  "three_world_box_diamond_duality_checks": 24576,
+  "nine_exercise_truth_values": [
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false
+  ],
+  "dead_end_world_checks": {
+    "box_false_constant_at_w3": true,
+    "diamond_p_at_w3": false
+  },
+  "scope": "Exhaustive 3-world accessibility/valuation enumeration checks both modal dualities, including empty successor sets. The nine queries use the previous three-world model. This is a finite semantic check, not a general proof."
+}

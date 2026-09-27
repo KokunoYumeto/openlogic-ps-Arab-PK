@@ -9930,6 +9930,56 @@
       ],
       "decision_timing": "contemporaneous B102 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-003",
+      "unit_id": "OLP-0413",
+      "classification": "missing_world_argument_in_duality_proof_satisfaction_expression",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:91-94",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "target_line_1based": 104,
+      "target_sha256": "4387d46576addde02e3513146e3639eb2b33cf4b4aba2112066550cdb00fd0ed",
+      "mode": "add-missing-world-argument-plus-adjacent-Pashto-note",
+      "translation_change": "Adds [w] to one satisfaction expression in the second modal-duality proof and discloses the addition in Pashto beside that proof.",
+      "reason": "Relational satisfaction is defined at a world, and the surrounding equivalence, immediately following expression and later proof step all use [w]. The one source expression omits it.",
+      "formula_policy": "Only one satisfaction math span gains the omitted world argument [w]; all other math spans, identifiers, tags, environments, structural macros and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat/{M}{\\Box\\lnot!A}$"
+        ],
+        "target_only": [
+          "$\\mSat/{M}{\\Box\\lnot!A}[w]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TRUTH-AT-WORLD",
+      "audit_artifacts": [
+        "B104_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:91-94",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex:104",
+        "B104_TRUTH_AT_WORLD_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B104 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

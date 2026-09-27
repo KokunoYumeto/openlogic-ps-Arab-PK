@@ -1,0 +1,114 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T10:03:58.049194+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TRUTH-AT-WORLD",
+  "batch_id": "PS-B104-NORMAL-MODAL-TRUTH-AT-WORLD",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0413",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "source_bytes": 5218,
+      "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+      "target_sha256": "4387d46576addde02e3513146e3639eb2b33cf4b4aba2112066550cdb00fd0ed",
+      "paired_blocks": 15,
+      "source_correction_ids": [
+        "OLNML-003"
+      ]
+    }
+  ],
+  "notes_path": "work/B104_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6012a8e6cd460bf1813bb1c04bca391c8bbe0a141ad7231b4b94dc76ab65046b",
+  "consultation_path": "work/B104_CANON_CONSULTATION.md",
+  "consultation_sha256": "409e5e80eb9464671b9b8469323e683a092707315d964165bd5f31ad3049a9bb",
+  "staging_qa_sha256": {
+    "OLP-0413": "79c06d6d70b0ea0d0b56277be45669f894509dbc016fafc732c2ebae89517308"
+  },
+  "semantic_qa_sha256": "4f272eea4ed1ea7c3891f7ec36ad895c4ef63895653e09911c08200c66a75a34",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0413",
+      "source_lines": "11-50",
+      "kind": "truth-recursion",
+      "finding": "Atomic and Boolean clauses retain exactly the source truth conditions; Box quantifies over every accessible successor and Diamond over some successor."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "source_lines": "52-64",
+      "kind": "dead-end-and-reflexivity",
+      "finding": "Vacuous Box truth, dead-end Diamond falsity and the reflexivity sufficiency direction are preserved."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "source_lines": "66-82",
+      "kind": "worked-model-questions",
+      "finding": "All nine query formulas unchanged; independent answers are F,T,T,F,T,T,T,F,F."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "source_lines": "85-113",
+      "kind": "modal-duality-proof",
+      "finding": "Both dualities and proof scopes retained; one omitted world argument is corrected and disclosed as OLNML-003. 24,576 finite duality equations checked."
+    },
+    {
+      "unit_id": "OLP-0413",
+      "source_lines": "115-126",
+      "kind": "exercises",
+      "finding": "Equal valuation/outgoing-neighborhood induction and final negated-Diamond exercise retain their quantified scope."
+    }
+  ],
+  "formula_policy": "Only one satisfaction math span gains the omitted world argument [w]; all other math spans, identifiers, tags, environments, structural macros and term tokens match frozen English. Frozen English unchanged.",
+  "unresolved": "The exact Pakistani term for vacuous modal truth is not attested in consulted witnesses; the descriptive rendering remains reversible. No human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0413; continue OLP-0414."
+}
