@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B124-PROOFS-IN-MODAL-SYSTEMS",
-  "status": "OLP-0435 source-reviewed and staged; fourteen paired blocks, six derivations and nine reverse-paraphrase samples",
+  "batch_id": "PS-B125-NORMAL-MODAL-SOUNDNESS",
+  "status": "OLP-0436 source-reviewed and staged; nine paired blocks, seven reverse-paraphrase samples and preserved tagged induction cases",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9119,6 +9119,26 @@
         "KT",
         "KTB"
       ]
+    },
+    "OLP-0436": {
+      "batch_id": "PS-B125-NORMAL-MODAL-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-AXIOM",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-NORMAL-NECESSITATION"
+      ],
+      "scope": "Nine blocks defining modal-system soundness and proving the indexed class-intersection theorem by induction on proof length, with tagged Dual, MP and Nec cases.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14659,6 +14679,48 @@
       "passage": "open S5 exercise",
       "reverse_paraphrase": "KTB4, KT5, KDB4 and KDB5 are asserted equal; proof and final problem remain open.",
       "finding": "Equality chain and exercise status retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "definition",
+      "reverse_paraphrase": "A derivation system is sound when all derivable results are valid.",
+      "finding": "Soundness distinguished from completeness."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "modal scope",
+      "reverse_paraphrase": "K plus instances of A1 through An is assessed in models where those added axioms are true.",
+      "finding": "Added axiom instances and model condition retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "theorem",
+      "reverse_paraphrase": "If each Ai instance is valid in class Ci, then any B derivable in K plus those axioms is valid in the intersection of all Ci.",
+      "finding": "Indices, respective classes and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "induction setup",
+      "reverse_paraphrase": "The proof inducts on length and abbreviates the model-class intersection by C.",
+      "finding": "Parameter and definition retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "base cases",
+      "reverse_paraphrase": "Length-one proof is a tautology, K, optional Dual or an added axiom instance; the cited validity facts cover each case.",
+      "finding": "Conditional branch and citations retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "MP step",
+      "reverse_paraphrase": "From earlier C-implies-B and C proofs of length below k, induction and sound MP give validity of B.",
+      "finding": "Premises, length bound and result retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "Nec step",
+      "reverse_paraphrase": "If B is Box C obtained by necessitation, validity of C and the cited necessitation rule give validity of B.",
+      "finding": "Operator and rule direction retained."
     }
   ]
 }

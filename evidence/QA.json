@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 435,
-    "structural_pass": 435,
+    "draft_units": 436,
+    "structural_pass": 436,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B124-PROOFS-IN-MODAL-SYSTEMS",
+  "batch": "PS-B125-NORMAL-MODAL-SOUNDNESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14159,6 +14159,33 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0436",
+      "path": "content/normal-modal-logic/axioms-systems/soundness.tex",
+      "source_sha256": "ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17",
+      "translation_sha256": "b0735040fd70a08ab6904d8847d5fd79189ed64d2241491c25761ac08467a661",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19699,6 +19726,48 @@
       "passage": "open S5 exercise",
       "reverse_paraphrase": "KTB4, KT5, KDB4 and KDB5 are asserted equal; proof and final problem remain open.",
       "finding": "Equality chain and exercise status retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "definition",
+      "reverse_paraphrase": "A derivation system is sound when all derivable results are valid.",
+      "finding": "Soundness distinguished from completeness."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "modal scope",
+      "reverse_paraphrase": "K plus instances of A1 through An is assessed in models where those added axioms are true.",
+      "finding": "Added axiom instances and model condition retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "theorem",
+      "reverse_paraphrase": "If each Ai instance is valid in class Ci, then any B derivable in K plus those axioms is valid in the intersection of all Ci.",
+      "finding": "Indices, respective classes and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "induction setup",
+      "reverse_paraphrase": "The proof inducts on length and abbreviates the model-class intersection by C.",
+      "finding": "Parameter and definition retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "base cases",
+      "reverse_paraphrase": "Length-one proof is a tautology, K, optional Dual or an added axiom instance; the cited validity facts cover each case.",
+      "finding": "Conditional branch and citations retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "MP step",
+      "reverse_paraphrase": "From earlier C-implies-B and C proofs of length below k, induction and sound MP give validity of B.",
+      "finding": "Premises, length bound and result retained."
+    },
+    {
+      "unit_id": "OLP-0436",
+      "passage": "Nec step",
+      "reverse_paraphrase": "If B is Box C obtained by necessitation, validity of C and the cited necessitation rule give validity of B.",
+      "finding": "Operator and rule direction retained."
     }
   ],
   "builds": [

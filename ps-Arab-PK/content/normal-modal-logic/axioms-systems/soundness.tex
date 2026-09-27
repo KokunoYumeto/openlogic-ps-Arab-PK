@@ -1,0 +1,60 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{snd}
+
+\olsection{سموالے}
+
+!!^a{derivation} نظام هله سم بلل کېږي چې هر هغه څه چې ترې
+!!{derive} کېدلے شي، معتبر وي۔ د مودالي نظامونو په پام کښې نيولو سره،
+يعنې داسې !!{derivation}s چې د \Ax{K} ترڅنګ د ځينو !!{formula}s
+$!A_1$، \dots،~$!A_n$ بېلګې هم پکې کارولے شو، غواړو هر !!{derivable}
+فارمول په هر هغه مدل کښې رښتيا وي چې $!A_1$، \dots، $!A_n$ پکې
+رښتيا وي۔
+
+\begin{thm}[د سموالي قضيه]\ollabel{thm:soundness}
+  که د $!A_1$، \dots، $!A_n$ هره بېلګه په ترتيب سره د مدلونو په
+  ټولګيو $\mClass{C}_1$، \dots، $\mClass{C}_n$ کښې معتبره وي،
+  نو له $\Log{K}!A_1\dots !A_n
+  \Proves !B$ څخه لازمېږي چې $!B$ د مدلونو په ټولګي
+  $\mClass{C}_1 \cap \dots \cap \mClass{C}_n$ کښې معتبر وي۔
+\end{thm}
+
+\begin{proof}
+  د ثبوتونو پر اوږدوالي استقرا کوو۔ د لنډون دپاره $\mClass{C} =
+  \mClass{C}_1 \cap \dots \cap \mClass{C}_n$ وټاکئ۔
+  \begin{enumerate}
+  \item د استقرا بنسټ: که د $!B$ د ثبوت اوږدوالے~$1$ وي، نو دا يا
+    د همېش‌رښتيا فارمول يوه بېلګه وي، يا د~\Ax{K} يوه بېلګه،
+    \iftag{prvDiamond}{ يا د~\Dual{} يوه بېلګه،}{} يا د
+    $!A_1$، \dots،~$!A_n$ له ډلې د يوه فارمول بېلګه وي۔ په لومړي
+    حالت کښې $!B$ په $\mClass{C}$ کښې معتبر وي، ځکه د همېش‌رښتيا
+    فارمول بېلګې د مدلونو په \emph{هره} ټولګي کښې معتبرې دي؛
+    \olref[syn][tau]{prop:valid-taut} وګورئ۔ په دويم حالت کښې هم
+    د \olref[syn][sch]{prop:Kvalid}\iftag{prvDiamond}{ او
+      \olref[syn][sch]{prop:Dual-valid}}{} له مخې همدا پايله راځي۔
+    په درېيم حالت کښې، څرنګه چې $!B$ په $\mClass{C}_i$ کښې معتبر دے
+    او $\mClass{C} \subseteq
+    \mClass{C}_i$، نو د \olref[syn][val]{prop:subset-class} له مخې
+    $!B$ په $\mClass{C}$ کښې هم معتبر دے۔
+  \item د استقرا ګام: فرض کړئ $!B$ د $k>1$ اوږدوالي ثبوت لري۔ که
+    $!B$ د همېش‌رښتيا فارمول يوه بېلګه يا د $!A_1$،
+    \dots، $!A_n$ له ډلې د يوه بېلګه وي، د تېر ګام په شان استدلال
+    کوو۔ نو فرض کړئ $!B$ د پخوانيو !!{formula}s $!C \lif !B$ او
+    $!C$ څخه د \MP{} په واسطه لاس ته راغلے وي۔ د $!C \lif !B$ او
+    $!C$ د ثبوتونو اوږدوالے $<k$ دے، او د استقرا د فرضيې له مخې
+    دواړه په~$\mClass{C}$ کښې معتبر دي۔ د
+    \olref[syn][sch]{prop:soundMP} له مخې $!B$ هم په $\mClass{C}$
+    کښې معتبر دے۔ په پاے کښې فرض کړئ $!B$ له $!C$ څخه د \Nec{} په
+    واسطه لاس ته راغلے وي (نو $!B = \Box!C$)۔ د استقرا د فرضيې له
+    مخې $!C$ په $\mClass{C}$ کښې معتبر دے، او د
+    \olref[syn][val]{prop:Nec-rule} له مخې~$!B$ هم معتبر دے۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}
