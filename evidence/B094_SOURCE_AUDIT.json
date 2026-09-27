@@ -1,0 +1,108 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T07:04:24.337395+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-INFINITE-GOEDEL",
+  "batch_id": "PS-B094-INFINITE-GOEDEL",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0401",
+      "source_path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "source_bytes": 3866,
+      "source_sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+      "target_sha256": "35f7cfac0189ea68f0a18dbf5e8998a9791c25f8a14b3b3ac8326134468dfb02",
+      "paired_blocks": 17,
+      "source_correction_ids": [
+        "OLMVL-009"
+      ]
+    }
+  ],
+  "notes_path": "work/B094_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6801d2f31e00e5a10f915342505736f80417cec4a20bc5b803da3ed7d267b00d",
+  "consultation_path": "work/B094_CANON_CONSULTATION.md",
+  "consultation_sha256": "c46ca107ebe21e841b2577b0b4cf726bee1b1f6a3302a79a83bc977ab60a752e",
+  "staging_qa_sha256": {
+    "OLP-0401": "d334264f90df493a0e77cd4e3968ab7b24a95975fc5b9e102a768b27f6ba7eda"
+  },
+  "semantic_qa_sha256": "37275606fe2fabfce61abe145c15b443039b2236b3fc1ee8639a44ee49ab8474",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0401",
+      "source_lines": "11-16",
+      "kind": "editorial-scope",
+      "finding": "The source explicitly labels the section a short stub; the target retains this."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "source_lines": "18-44",
+      "kind": "matrix-definition",
+      "finding": "Five truth functions and designated value are exact; one nested-math-shift source defect repaired and disclosed as OLMVL-009."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "source_lines": "46-99",
+      "kind": "finite-matrix-comparison",
+      "finding": "All three-valued tables and references retained; 30 cells checked independently."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "source_lines": "101-145",
+      "kind": "consequence-and-exercises",
+      "finding": "Forward proposition, stated converse, Gödel–Dummett characterization and final exercises retain their scope; chain counterexample checked."
+    }
+  ],
+  "formula_policy": "Exactly one normalized align environment differs by the four extra dollar delimiters around 1 and 0; all other math spans, tables, IDs, labels, references and structural macros match frozen English. Frozen English unchanged.",
+  "unresolved": "Gödel–Dummett transliteration remains provisional; the all-finite converse assertion has no source proof; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0401; continue OLP-0402."
+}

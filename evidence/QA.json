@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 400,
-    "structural_pass": 400,
+    "draft_units": 401,
+    "structural_pass": 401,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B093-INFINITE-LUKASIEWICZ",
+  "batch": "PS-B094-INFINITE-GOEDEL",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12598,6 +12598,43 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0401",
+      "path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "source_sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+      "translation_sha256": "35f7cfac0189ea68f0a18dbf5e8998a9791c25f8a14b3b3ac8326134468dfb02",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-009"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}$1$&\\text{LOCALIZED}x=0\\\\$0$&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}1&\\text{LOCALIZED}x=0\\\\0&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16542,6 +16579,60 @@
       "passage": "prelinearity exercise",
       "reverse_paraphrase": "Students are asked to show that one of the two opposite implications is always fully true.",
       "finding": "Formula exact; no answer inserted in target."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "editorial scope",
+      "reverse_paraphrase": "The source calls this a short stub of the infinite-valued Gödel section.",
+      "finding": "Stub status retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "designation",
+      "reverse_paraphrase": "Only truth value one is designated.",
+      "finding": "Sole designation exact."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "matrix",
+      "reverse_paraphrase": "Negation tests zero; conjunction is min, disjunction max, and implication returns one when x is at most y and otherwise y.",
+      "finding": "Functions exact; source math-shift repair documented."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "three-valued comparison",
+      "reverse_paraphrase": "At zero, one half and one the functions reproduce the earlier three-valued Gödel tables.",
+      "finding": "All 30 cells checked."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "forward consequence",
+      "reverse_paraphrase": "Infinite-valued entailment implies each finite m-valued entailment for m at least two.",
+      "finding": "Direction and range retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "converse",
+      "reverse_paraphrase": "The source asserts the converse but gives no proof here.",
+      "finding": "No proof inserted."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "six examples",
+      "reverse_paraphrase": "The six displayed formulas remain non-tautologies in the infinite matrix.",
+      "finding": "All formulas unchanged."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "Gödel–Dummett",
+      "reverse_paraphrase": "The infinite matrix is characterized as intuitionistic logic extended by prelinearity and is also called LC.",
+      "finding": "Schema and name retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "chain exercise",
+      "reverse_paraphrase": "The final disjunction is a three-valued tautology but fails over infinitely many values.",
+      "finding": "Formula exact; finite test and counterexample checked."
     }
   ],
   "builds": [

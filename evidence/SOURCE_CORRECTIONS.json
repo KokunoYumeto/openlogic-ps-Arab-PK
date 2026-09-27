@@ -9649,6 +9649,52 @@
       ],
       "decision_timing": "contemporaneous B092 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-009",
+      "unit_id": "OLP-0401",
+      "classification": "confirmed_nested_math_shift_in_cases",
+      "source_path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "source_sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+      "source_locator": "content/many-valued-logic/infinite-valued-logics/goedel.tex:25-39",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/goedel.tex",
+      "target_line_1based": 38,
+      "target_sha256": "35f7cfac0189ea68f0a18dbf5e8998a9791c25f8a14b3b3ac8326134468dfb02",
+      "mode": "removed-extra-math-shifts-inside-cases-plus-adjacent-Pashto-note",
+      "translation_change": "The target removes the extra dollar delimiters around the 1 and 0 results inside an existing cases environment and discloses the syntax repair beside the formula.",
+      "reason": "The source places $1$ and $0$ inside align*/cases math mode, causing invalid nested math shifts. Removing only those delimiters preserves both numeric truth values and makes the displayed matrix compilable.",
+      "formula_policy": "Exactly one normalized align environment differs by the four extra dollar delimiters around 1 and 0; all other math spans, tables, IDs, labels, references and structural macros match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}$1$&\\text{LOCALIZED}x=0\\\\$0$&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}1&\\text{LOCALIZED}x=0\\\\0&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-INFINITE-GOEDEL",
+      "audit_artifacts": [
+        "B094_SOURCE_AUDIT.json",
+        "content/many-valued-logic/infinite-valued-logics/goedel.tex:25-39",
+        "ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/goedel.tex:38",
+        "B094_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B094 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

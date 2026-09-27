@@ -1,0 +1,131 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{god}
+
+\olsection{د ګوډل منطقونه}
+
+\begin{editorial}
+  دا د نامتناهي ارزښته ګوډل د منطق د برخې يوه لنډه لومړنۍ مسوده ده۔
+\end{editorial}
+
+\begin{defn}\ollabel{def:goedel} نامتناهي ارزښته د ګوډل
+منطق~$\LogGod[\infty]$ په دې ماتريس تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V_\infty$۔
+  \item يوازې~$1$ ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{1\}$۔
+  \item صدق تابعې په لاندې تابعو ټاکل کېږي:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{که } x =0\\
+      0 & \text{په بل حالت کښې}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{که } x \le y\\
+      y & \text{په بل حالت کښې.}
+    \end{cases}
+    \end{align*}
+  د سرچينې يادونه: اصلي متن د پورته نفي د دوو پايلو شاوخوا د رياضي
+  دننه يو ځل بيا د رياضي د پيل او پای نښې ږدي؛ دلته هغه اضافي نښې
+  لرې شوې، خو دواړه عددي قيمتونه هماغه پاتې دي۔
+\end{enumerate}
+د ګوډل $m$-ارزښته منطق همداسې تعريفېږي، خو~$V = V_m$ لري۔
+\end{defn}
+
+\begin{prop}
+  د~\olref[thr][god]{defn:goedel} له مخې تعريف شوے منطق~$\LogGod[3]$
+  د~\olref{def:goedel} له مخې له تعريف شوي~$\LogGod[3]$ سره يو شان دے۔
+\end{prop}
+
+\begin{proof}
+  دا د~\olref[thr][god]{defn:goedel} د نښلوونکو صدق جدولونه
+  د~\olref{def:goedel} له معادلو څخه له ترلاسه شوو جدولونو سره
+  په پرتله کولو ليدل کېدے شي:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}[\LogGod[3]]$ & \\ 
+      \hline  
+      $1$ & $0$ \\ 
+      $1/2$ & $0$ \\
+      $0$ & $1$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1/2$ & $1/2$ & $0$\\ 
+      $0$ & $0$ & $0$ & $0$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1$ & $1$ \\ 
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1$ & $1$ & $0$  \\ 
+      $0$ & $1$ & $1$ & $1$ 
+    \end{tabular}
+  \end{center} 
+\end{proof}
+
+\begin{prop}\ollabel{prop:god-infty-m}
+  که~$\Gamma \Entails[\LogGod[\infty]] !B$ وي، نو د هر~$m \ge 2$
+  دپاره~$\Gamma \Entails[\LogGod[m]] !B$ هم وي۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][god]{prop:god-infty-m} ثابت کړئ۔
+\end{prob}
+
+په حقيقت کښې برعکس لورے هم صدق کوي۔
+
+د~$\LogGod[3]$ په شان، په~$\LogGod[\infty]$ کښې په شهودي منطق کښې
+ټول معتبر !!{formula}s تاوتولوژۍ دي، او هماغه د ناتاوتولوژيو بېلګې
+په~$\LogGod[\infty]$ کښې هم ناتاوتولوژۍ دي:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+يو داسې !!{formula} چې په شهودي منطق کښې معتبر نۀ دے، خو
+په~$\LogGod[3]$ کښې تاوتولوژي ده، يعنې~$(p \lif q) \lor (q \lif
+p)$، په~$\LogGod[\infty]$ کښې هم تاوتولوژي ده۔ په حقيقت کښې
+$\LogGod[\infty]$ د شهودي منطق په توګه هم پېژندل کېدے شي چې
+شېما~$(!A \lif !B) \lor (!B \lif !A)$ ورزياته شوې وي۔ دا مايکل
+ډمېټ وښودله؛ نو~$\LogGod[\infty]$ ته ډېر ځله د ګوډل--ډمېټ
+منطق~$\Log{LC}$ ويل کېږي۔
+
+\begin{prob}
+  وښيئ چې~$(p \lif q) \lor (q \lif p)$ د~$\LogGod[\infty]$
+  تاوتولوژي ده۔
+\end{prob}
+
+\begin{prob}
+  وښيئ چې~$(p \lif q) \lor (q \lif r) \lor (r \lif s)$، چې
+  په~$\LogGod[3]$ کښې تاوتولوژي ده، په~$\LogGod[\infty]$
+  کښې تاوتولوژي نۀ ده۔
+\end{prob}
+
+\end{document}

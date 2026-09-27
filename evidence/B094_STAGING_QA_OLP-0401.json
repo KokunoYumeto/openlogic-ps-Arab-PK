@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b094-staging-qa/1",
+  "unit_id": "OLP-0401",
+  "source_path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+  "source_sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+  "target_sha256": "35f7cfac0189ea68f0a18dbf5e8998a9791c25f8a14b3b3ac8326134468dfb02",
+  "source_blocks": 17,
+  "target_blocks": 17,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math_with_one_disclosed_source_correction": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}$1$&\\text{LOCALIZED}x=0\\\\$0$&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+  ],
+  "target_only_math": [
+    "\\begin{align*}\\tf{\\lfalse}&=0\\\\\\tf{\\lnot}[\\LogGod](x)&=\\begin{cases}1&\\text{LOCALIZED}x=0\\\\0&\\text{LOCALIZED}\\end{cases}\\\\\\tf{\\land}[\\LogGod](x,y)&=\\min(x,y)\\\\\\tf{\\lor}[\\LogGod](x,y)&=\\max(x,y)\\\\\\tf{\\lif}[\\LogGod](x,y)&=\\begin{cases}1&\\text{LOCALIZED}x\\ley\\\\y&\\text{LOCALIZED}\\end{cases}\\end{align*}"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

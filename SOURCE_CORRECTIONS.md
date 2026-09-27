@@ -2895,3 +2895,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target adds a positive denominator condition to V_infinity and replaces n<=m with n<m in V_m; an adjacent Pashto note discloses both source issues and the m>=2 scope.
 - Evidence: The source defines Nat with 0, so its first set admits undefined 0/0. Its second bound admits the extra value m/(m-1)>1 and contradicts the printed five-value V_5 example. The entire align environment is one normalized QA math span.
 - Disclosure: `corrected-two-index-bounds-in-one-align-span-plus-adjacent-Pashto-note`. Frozen English remains unchanged.
+
+## OLMVL-009
+
+- Unit: `OLP-0401`.
+- Frozen source: `content/many-valued-logic/infinite-valued-logics/goedel.tex` (5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b) at `content/many-valued-logic/infinite-valued-logics/goedel.tex:25-39`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/goedel.tex:38` (35f7cfac0189ea68f0a18dbf5e8998a9791c25f8a14b3b3ac8326134468dfb02).
+- Audit: `PS-OWNER-SEMANTIC-20260927-INFINITE-GOEDEL`.
+- Treatment: The target removes the extra dollar delimiters around the 1 and 0 results inside an existing cases environment and discloses the syntax repair beside the formula.
+- Evidence: The source places $1$ and $0$ inside align*/cases math mode, causing invalid nested math shifts. Removing only those delimiters preserves both numeric truth values and makes the displayed matrix compilable.
+- Disclosure: `removed-extra-math-shifts-inside-cases-plus-adjacent-Pashto-note`. Frozen English remains unchanged.

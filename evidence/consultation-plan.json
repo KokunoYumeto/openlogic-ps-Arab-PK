@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B093-INFINITE-LUKASIEWICZ",
-  "status": "OLP-0400 source-reviewed and staged; 16 paired blocks, exact math and tables, eight reverse-paraphrase samples and independent finite-table arithmetic",
+  "batch_id": "PS-B094-INFINITE-GOEDEL",
+  "status": "OLP-0401 source-reviewed and staged; 17 paired blocks, one disclosed math-shift repair, nine reverse-paraphrase samples and independent finite/infinite matrix checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8408,6 +8408,25 @@
       ],
       "scope": "Complete 16-block infinite-valued Łukasiewicz short stub with four exact truth functions, four exact finite truth tables, propositions, exercises and fuzzy conditional contrast. Pakistani scholarly prose primary; Afghan logic pages comparators. No source correction.",
       "allowed_residual_english": []
+    },
+    "OLP-0401": {
+      "batch_id": "PS-B094-INFINITE-GOEDEL",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY"
+      ],
+      "terms": [
+        "TERM-MVL-INFINITE-VALUED-FUZZY",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-MULTIPLE-DESIGNATION",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Complete 17-block infinite-valued Gödel short stub with exact matrix, finite tables, consequence statements, Gödel–Dummett characterization and exercises; one adjacent-disclosed source TeX syntax repair OLMVL-009.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12352,6 +12371,60 @@
       "passage": "prelinearity exercise",
       "reverse_paraphrase": "Students are asked to show that one of the two opposite implications is always fully true.",
       "finding": "Formula exact; no answer inserted in target."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "editorial scope",
+      "reverse_paraphrase": "The source calls this a short stub of the infinite-valued Gödel section.",
+      "finding": "Stub status retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "designation",
+      "reverse_paraphrase": "Only truth value one is designated.",
+      "finding": "Sole designation exact."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "matrix",
+      "reverse_paraphrase": "Negation tests zero; conjunction is min, disjunction max, and implication returns one when x is at most y and otherwise y.",
+      "finding": "Functions exact; source math-shift repair documented."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "three-valued comparison",
+      "reverse_paraphrase": "At zero, one half and one the functions reproduce the earlier three-valued Gödel tables.",
+      "finding": "All 30 cells checked."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "forward consequence",
+      "reverse_paraphrase": "Infinite-valued entailment implies each finite m-valued entailment for m at least two.",
+      "finding": "Direction and range retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "converse",
+      "reverse_paraphrase": "The source asserts the converse but gives no proof here.",
+      "finding": "No proof inserted."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "six examples",
+      "reverse_paraphrase": "The six displayed formulas remain non-tautologies in the infinite matrix.",
+      "finding": "All formulas unchanged."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "Gödel–Dummett",
+      "reverse_paraphrase": "The infinite matrix is characterized as intuitionistic logic extended by prelinearity and is also called LC.",
+      "finding": "Schema and name retained."
+    },
+    {
+      "unit_id": "OLP-0401",
+      "passage": "chain exercise",
+      "reverse_paraphrase": "The final disjunction is a three-valued tautology but fails over infinitely many values.",
+      "finding": "Formula exact; finite test and counterexample checked."
     }
   ]
 }
