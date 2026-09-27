@@ -1,0 +1,7 @@
+# OLP-0412 Pakistani-first Pashto consultation
+
+The Pashto Academy/Peshawar article `PS-PK-IQRAM-2019` was consulted on printed pages 1–2: `PK-IQRAM-P1-PROSE` (page-image SHA-256 `c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b`) for Pakistani explanatory sentence structure and orthography, and `PK-IQRAM-P2-SEMANTICS` (`4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6`) for native syntax/semantics terminology. The inspected reference grammar `GRAMMAR-P166-SOV` (printed page 166; image SHA-256 `4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c`) guides verb-final statements.
+
+The Afghan regional comparator `PS-AF-NIAZMAN-2022` was consulted at `AF-NIAZMAN-P109-RELATION` (printed page 109; image SHA-256 `53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25`) for relation vocabulary and `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` (printed page 33; image SHA-256 `7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11`) for valuation concepts. These are regional technical comparators; they do not establish an exact Pakistani term for Kripke worlds or replace OpenLogic's W,R,V orientation.
+
+Existing `TERM-MODAL-LOGIC`, `TERM-SEMANTICS`, `TERM-RELATION`, `TERM-FUNCTION` and `TERM-PROPOSITION` decisions guide established edition vocabulary where applicable. The graph geometry, arrows, truth labels and membership assignments are checked directly against the frozen source and the diagram, not inferred from the language witnesses. No human review gate is imposed.

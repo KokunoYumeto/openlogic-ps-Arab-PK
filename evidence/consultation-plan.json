@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B102-NORMAL-MODAL-SUBSTITUTION",
-  "status": "OLP-0411 source-reviewed and staged; nine paired blocks, one disclosed optional-tag correction, nine reverse-paraphrase samples and independent syntax-tree checks",
+  "batch_id": "PS-B103-NORMAL-MODAL-RELATIONAL-MODELS",
+  "status": "OLP-0412 source-reviewed and staged; ten paired blocks, unchanged TikZ and formal spans, eight reverse-paraphrase samples and independent W,R,V figure checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8621,6 +8621,25 @@
       "allowed_residual_english": [
         "OLNML"
       ]
+    },
+    "OLP-0412": {
+      "batch_id": "PS-B103-NORMAL-MODAL-RELATIONAL-MODELS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MODAL-LOGIC",
+        "TERM-SEMANTICS",
+        "TERM-RELATION",
+        "TERM-FUNCTION",
+        "TERM-PROPOSITION"
+      ],
+      "scope": "Ten-block relational-model definition and three-world figure; W,R,V, accessibility direction, valuation, labels and arrows independently checked with no source correction.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12997,6 +13016,54 @@
       "passage": "iterated order",
       "reverse_paraphrase": "Successive substitutions also transform variables inside formulas inserted on the earlier pass, and the two orders differ.",
       "finding": "Both successive result trees checked."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "model triple",
+      "reverse_paraphrase": "A relational model is a triple W,R,V with nonempty worlds, binary accessibility and a variable-to-world-set assignment.",
+      "finding": "All three components and nonemptiness retained."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "accessibility",
+      "reverse_paraphrase": "Rww-prime means w-prime is accessible from w, not the reverse.",
+      "finding": "Source-to-target orientation retained."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "truth at world",
+      "reverse_paraphrase": "p is true at w exactly when w belongs to V(p).",
+      "finding": "Membership direction retained."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "arrow convention",
+      "reverse_paraphrase": "A diagram arrow from w to w-prime represents accessibility from w to w-prime.",
+      "finding": "Both arrows checked."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "node labels",
+      "reverse_paraphrase": "mTrue and mFalse distinguish truth and falsity of p or q at each world.",
+      "finding": "All six node labels checked."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "world and relation sets",
+      "reverse_paraphrase": "The example has exactly three worlds and edges w1-to-w2 and w1-to-w3.",
+      "finding": "W and R checked against figure."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "valuation sets",
+      "reverse_paraphrase": "p is true at w1,w2 and q only at w2; both are false at w3.",
+      "finding": "V sets checked against figure."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "passage": "figure caption",
+      "reverse_paraphrase": "The caption calls this a simple model without adding a modal frame axiom.",
+      "finding": "Caption localized; no extra claim."
     }
   ]
 }

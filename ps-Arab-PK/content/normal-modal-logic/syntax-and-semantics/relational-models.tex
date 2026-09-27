@@ -1,0 +1,57 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{rel}
+
+\olsection{اړيکيز مدلونه}
+
+د نورمال مودالي منطقونو د معنٰی پوهنې بنسټيز مفهوم \emph{اړيکيز
+مدل} دے۔ دا د نړۍو له يوه سټ څخه جوړ وي چې د دوه‌ځاييزې «لاسرسي
+اړيکې» له لارې سره تړلې وي، او ورسره داسې يوه ټاکنه وي چې څرګندوي
+کوم !!{propositional variable}s په کومو نړۍو کښې «رښتيا» ګڼل کېږي۔
+
+\begin{defn}
+  د بنسټيزې مودالي ژبې يو \emph{مدل} درې‌ګونې $\mModel{M}
+  = \tuple{W, R, V}$ ده، چې په دې کښې
+  \begin{enumerate}
+  \item $W$ د «نړۍو» يو نا تش سټ دے،
+  \item $R$ پر~$W$ د لاسرسي يوه دوه‌ځاييزه اړيکه ده، او
+  \item $V$ داسې تابع ده چې هر !!{propositional
+    variable}~$p$ ته د ممکنه نړۍو يو سټ $V(p)$ ټاکي۔
+  \end{enumerate}
+  که $Rww'$ وي، نو وايو چې $w'$ له~$w$ څخه \emph{ورته لاسرسے
+    لري}۔ که $w \in V(p)$ وي، نو وايو چې $p$ په~$w$ کښې
+  \emph{رښتيا دے}۔
+\end{defn}
+
+د اړيکيزې معنٰی پوهنې ستره ګټه دا ده چې مدلونه په ساده شکلونو
+ښودل کېدے شي، لکه په \olref{fig:simple} کښې۔ نړۍوې د غوټو په بڼه
+ښودل کېږي، او نړۍ~$w'$ هله او يوازې هله له~$w$ څخه ورته لاسرسے لري
+چې له~$w$ څخه~$w'$ ته غشے وي۔ سربېره پر دې، که $w \in V(p)$ وي،
+غوټه (نړۍ) په~$\mTrue{p}$ نښه کوو؛ که نۀ وي، په~\mFalse{p} ئې
+نښه کوو۔ \olref{fig:simple} هغه مدل ښيي چې
+$W = \{w_1, w_2, w_3\}$، $R = \{\tuple{w_1, w_2},\tuple{w_1,
+  w_3}\}$، $V(p) = \{w_1, w_2\}$ او $V(q) = \{w_2\}$ لري۔
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{يو ساده مدل۔}
+  \ollabel{fig:simple}
+\end{figure}
+
+\end{document}

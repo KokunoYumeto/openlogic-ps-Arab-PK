@@ -1,0 +1,33 @@
+{
+  "schema": "ps-b103-relational-model-semantic-check/1",
+  "status": "PASS",
+  "unit_id": "OLP-0412",
+  "source_sha256": "e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf",
+  "target_sha256": "9c5c68ba3fbcd207ecd7a58469cc9cba8da3dfb028e719dc456d6b1fff3a4777",
+  "worlds": [
+    "w1",
+    "w2",
+    "w3"
+  ],
+  "accessibility_edges": [
+    [
+      "w1",
+      "w2"
+    ],
+    [
+      "w1",
+      "w3"
+    ]
+  ],
+  "valuation": {
+    "p": [
+      "w1",
+      "w2"
+    ],
+    "q": [
+      "w2"
+    ]
+  },
+  "diagram_byte_normalized_equal": true,
+  "scope": "The labelled three-node TikZ diagram matches the stated W, R, V sets and keeps arrows from w1 toward w2 and w3; this is a source/target semantic check, not a rendered-page inspection."
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T09:49:49.133886+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-RELATIONAL-MODELS",
+  "batch_id": "PS-B103-NORMAL-MODAL-RELATIONAL-MODELS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0412",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/relational-models.tex",
+      "source_bytes": 2104,
+      "source_sha256": "e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf",
+      "target_sha256": "9c5c68ba3fbcd207ecd7a58469cc9cba8da3dfb028e719dc456d6b1fff3a4777",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B103_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "14eeaff58871e8466d3a968b98b36582ed83abc9bb3798b22cc18504247c1c2c",
+  "consultation_path": "work/B103_CANON_CONSULTATION.md",
+  "consultation_sha256": "863ab877278000d98963aaf0e7fa4f82e1c737f36da49d4079abeb89eca9adf3",
+  "staging_qa_sha256": {
+    "OLP-0412": "1b36b9cb182a3fb6ae877e8797825c46cd9c8552ecde6d24bbcedafd060f2eec"
+  },
+  "semantic_qa_sha256": "83972262279710689c81b6ae487a49f839a04b7d0065520467df7f9ca4117486",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0412",
+      "source_lines": "11-31",
+      "kind": "relational-model-definition",
+      "finding": "M=(W,R,V), nonempty W, binary R, V as variable-to-world-set function, Rww-prime direction and truth at w are retained."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "source_lines": "33-40",
+      "kind": "diagram-convention",
+      "finding": "An arrow from w to w-prime is the accessibility relation; node truth/falsity labels remain distinct."
+    },
+    {
+      "unit_id": "OLP-0412",
+      "source_lines": "42-57",
+      "kind": "three-world-example",
+      "finding": "All three world labels, both arrows and all p/q valuations agree with the printed W,R,V sets; TikZ code is whitespace-normalized exact."
+    }
+  ],
+  "formula_policy": "Every math span, identifier, environment, optional tag and structural macro matches frozen English; TikZ diagram is whitespace-normalized exact. Only prose and caption are localized; no source correction adopted.",
+  "unresolved": "Exact Pakistani attestation for a specialized Kripke-world term is absent. Figure rendering awaits a natural reader build checkpoint; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0412; continue OLP-0413."
+}

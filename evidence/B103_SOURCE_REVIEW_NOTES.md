@@ -1,0 +1,7 @@
+# OLP-0412 source review — relational models
+
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/relational-models.tex`, revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, 2,104 bytes, SHA-256 `e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf`.
+- Lines 11–31 define a relational model as a triple `M=(W,R,V)`: W is nonempty; R is a binary relation on W; V maps each propositional variable to a set of worlds. The direction `Rww'` means that w' is accessible from w, and `w∈V(p)` means p is true at w. The Pashto draft retains the direction, membership and function roles.
+- Lines 33–40 explain the arrow convention and the truth labels. The target preserves the distinction between `\mTrue{p}` and `\mFalse{p}` and the iff condition for an arrow from w to w'.
+- Lines 42–57 contain a three-world TikZ figure. All math spans, identifiers, structural macros, ten aligned blocks and normalized TikZ code match frozen English; only the caption and prose are translated. The declared model has W={w1,w2,w3}, arrows w1→w2 and w1→w3, V(p)={w1,w2}, V(q)={w2}. The four truth labels in the diagram agree with these sets, including p false and q false at w3. Independent receipt `work/B103_RELATIONAL_MODEL_SEMANTICS.json` verifies these relations and values. Rendered-page inspection awaits a natural reader build checkpoint.
+- No source correction is adopted and no human specialist approval is claimed. The exact modal-world compound remains source-led and reversible in Pakistani Pashto.
