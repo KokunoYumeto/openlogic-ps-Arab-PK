@@ -3062,3 +3062,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Append [s] to the first satisfaction assertion for the open formula after fixing s(x) and s(X).
 - Reason: The displayed formula has free x and X. The paragraph fixes s, and the next satisfaction assertion carries [s]; the first omits it.
 - The correction is disclosed adjacent to the Pashto passage; frozen English remains unchanged.
+
+## OLNML-014
+
+- Unit: OLP-0429.
+- Frozen source: content/normal-modal-logic/axioms-systems/normal-logics.tex:101-119 (SHA-256 6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/axioms-systems/normal-logics.tex:107–129 (SHA-256 2284950c010092844a22ed510410bdb57e6ab3218cb66e906ed2ae202c31d017).
+- Treatment: Qualify the proposition’s least modal logic as normal, matching the proof intersection and next definition; specify that the all-formula witness is normal.
+- Reason: Intersecting only normal modal logics does not prove leastness among all modal logics. The following definition explicitly names the least normal modal logic, and a non-normal tautology-instance logic need not contain K.
+- The correction is disclosed adjacent to the Pashto proposition; displayed formulas and frozen English remain unchanged.

@@ -1,0 +1,93 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T19:20:25.321222+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
+  "batch_id": "PS-B118-NORMAL-MODAL-LOGICS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0429",
+      "source_path": "content/normal-modal-logic/axioms-systems/normal-logics.tex",
+      "source_bytes": 4374,
+      "source_sha256": "6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819",
+      "target_sha256": "2284950c010092844a22ed510410bdb57e6ab3218cb66e906ed2ae202c31d017",
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLNML-014"
+      ]
+    }
+  ],
+  "notes_path": "work/B118_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "d4e55344a3cc17438e9c92d075e43f57b8c530c3145c070edf54d3d5e7afb6cb",
+  "consultation_path": "work/B118_CANON_CONSULTATION.md",
+  "consultation_sha256": "75370bd7cad093f9e64b142eb453005b4098fd4125e387cfaccc8fc5d069473d",
+  "staging_qa_sha256": {
+    "OLP-0429": "9499d8cd261fae1c2c9a163d07f85d067b82b13fe7736ca8957542922e3eda0a"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0429",
+      "source_lines": "12-59",
+      "kind": "modal-and-normal-logic-definitions",
+      "finding": "Not-every quantifier, tautology/substitution/MP closure, K/Dual tag and necessitation preserved."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "source_lines": "61-98",
+      "kind": "RK-proof-and-exercise",
+      "finding": "Proof tree and induction exact; model-versus-world truth distinction and unproved exercise retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "source_lines": "100-119",
+      "kind": "least-normal-logic-scope",
+      "finding": "Source proposition overclaims leastness; Pashto normal qualifier and adjacent disclosure match the actual proof and definition."
+    }
+  ],
+  "formula_policy": "No math, identifier, environment, structural macro, optional-tag or term-token differences; one disclosed prose scope repair; frozen English unchanged.",
+  "unresolved": "Exact normal-modal terms remain provisional; no human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0429; continue OLP-0430."
+}

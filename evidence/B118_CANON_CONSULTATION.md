@@ -1,0 +1,5 @@
+# OLP-0429 Pakistani-first Pashto consultation
+
+Pakistani Pashto Academy/Peshawar article printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) guides scholarly prose and Pakistani کښې/ے orthography. Reference grammar printed page 166 (`GRAMMAR-P166-SOV`) guides conditional and quantified word order. The exact normal-modal-system compounds are not attested there and remain provisional.
+
+Afghan regional comparator printed page 37 (`AF-NIAZMAN-P37-AXIOMATIC-PROOF`) displays propositional axiom schemata, and printed page 48 (`AF-NIAZMAN-P48-MODUS-PONENS`) names and displays modus ponens. Their rendered pages were visually inspected. They support axiom and inference-rule vocabulary but do not supply the source's modal rule RK, necessitation, K/Dual or smallest-normal-logic scope. The established TERM-MODAL-NORMAL-NECESSITATION, TERM-MODAL-LOGIC, TERM-AXIOM and TERM-PROOF-CALCULI entries guide consistent wording. Frozen OpenLogic controls every formal clause; OLNML-014 discloses the one bounded prose correction.

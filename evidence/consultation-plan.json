@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
-  "status": "OLP-0427–0428 source-reviewed and staged; 20 paired blocks, nine reverse-paraphrase samples, one provisional modal-rule term",
+  "batch_id": "PS-B118-NORMAL-MODAL-LOGICS",
+  "status": "OLP-0429 source-reviewed and staged; 20 paired blocks, eight reverse-paraphrase samples and one disclosed source-scope correction",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8962,6 +8962,25 @@
       ],
       "scope": "Thirteen-block axiomatic modal introduction: frame validity, normal systems, modus ponens, necessitation, four-clause derivation and soundness/completeness.",
       "allowed_residual_english": []
+    },
+    "OLP-0429": {
+      "batch_id": "PS-B118-NORMAL-MODAL-LOGICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MODAL-NORMAL-NECESSITATION",
+        "TERM-MODAL-LOGIC",
+        "TERM-AXIOM",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "Twenty-block normal modal logic definition, K/Dual/necessitation conditions, RK induction, exercise and smallest-normal-system construction with disclosed source-scope repair.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14142,6 +14161,54 @@
       "passage": "soundness",
       "reverse_paraphrase": "Every derivable formula is true in models satisfying the axioms; completeness is the converse and harder.",
       "finding": "Direction and qualification retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "opening quantifier",
+      "reverse_paraphrase": "Some sets of modal formulas cannot easily be axiomatized; classical propositional derivations remain derivable.",
+      "finding": "Not-every scope preserved."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "modal logic",
+      "reverse_paraphrase": "Contains every tautology and is closed under arbitrary substitution and modus ponens.",
+      "finding": "Three conditions retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "normal logic",
+      "reverse_paraphrase": "Contains K and conditionally Dual and is closed under necessitation A to Box A.",
+      "finding": "Axiom symbols and rule direction retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "truth scope",
+      "reverse_paraphrase": "Tautological implication preserves truth at one world; necessitation preserves truth throughout a model.",
+      "finding": "Semantic scopes distinguished."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "RK induction",
+      "reverse_paraphrase": "The n=1 case is necessitation; n−1 plus K and modus ponens yields n.",
+      "finding": "Base, step and formulas retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "unproved problem",
+      "reverse_paraphrase": "Every normal logic contains not-Diamond-false; the following problem requests its proof.",
+      "finding": "Problem not silently solved."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "least system repair",
+      "reverse_paraphrase": "The source proof intersects normal logics; the translated proposition explicitly claims least normal logic and discloses the source omission.",
+      "finding": "Scope correction documented."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "modal system",
+      "reverse_paraphrase": "K A_1...A_n denotes the least normal logic with instances; K alone is the least normal logic.",
+      "finding": "Notation and minimality retained."
     }
   ]
 }

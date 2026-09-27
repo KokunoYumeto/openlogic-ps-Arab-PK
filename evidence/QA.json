@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 428,
-    "structural_pass": 428,
+    "draft_units": 429,
+    "structural_pass": 429,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
+  "batch": "PS-B118-NORMAL-MODAL-LOGICS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13923,6 +13923,35 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0429",
+      "path": "content/normal-modal-logic/axioms-systems/normal-logics.tex",
+      "source_sha256": "6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819",
+      "translation_sha256": "2284950c010092844a22ed510410bdb57e6ab3218cb66e906ed2ae202c31d017",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-014"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19103,6 +19132,54 @@
       "passage": "soundness",
       "reverse_paraphrase": "Every derivable formula is true in models satisfying the axioms; completeness is the converse and harder.",
       "finding": "Direction and qualification retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "opening quantifier",
+      "reverse_paraphrase": "Some sets of modal formulas cannot easily be axiomatized; classical propositional derivations remain derivable.",
+      "finding": "Not-every scope preserved."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "modal logic",
+      "reverse_paraphrase": "Contains every tautology and is closed under arbitrary substitution and modus ponens.",
+      "finding": "Three conditions retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "normal logic",
+      "reverse_paraphrase": "Contains K and conditionally Dual and is closed under necessitation A to Box A.",
+      "finding": "Axiom symbols and rule direction retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "truth scope",
+      "reverse_paraphrase": "Tautological implication preserves truth at one world; necessitation preserves truth throughout a model.",
+      "finding": "Semantic scopes distinguished."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "RK induction",
+      "reverse_paraphrase": "The n=1 case is necessitation; n−1 plus K and modus ponens yields n.",
+      "finding": "Base, step and formulas retained."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "unproved problem",
+      "reverse_paraphrase": "Every normal logic contains not-Diamond-false; the following problem requests its proof.",
+      "finding": "Problem not silently solved."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "least system repair",
+      "reverse_paraphrase": "The source proof intersects normal logics; the translated proposition explicitly claims least normal logic and discloses the source omission.",
+      "finding": "Scope correction documented."
+    },
+    {
+      "unit_id": "OLP-0429",
+      "passage": "modal system",
+      "reverse_paraphrase": "K A_1...A_n denotes the least normal logic with instances; K alone is the least normal logic.",
+      "finding": "Notation and minimality retained."
     }
   ],
   "builds": [

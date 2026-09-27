@@ -1,0 +1,132 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: normal-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{nor}
+
+\olsection{عادي مودالي منطقونه}
+
+د مودالي !!{formula}s ځينې سټونه په اسانۍ سره د هغو
+!!{formula}s په توګه نۀ شي پېژندل کېدے چې د بديهي
+اصلونو له يوه سټ څخه د اشتقاق وړ دي۔ غواړو مودالي
+منطقونه ښې ځانګړنې ولري۔ تر هر څه وړاندې، هر هغه څه
+چې په کلاسيک بياني منطق کښې ئې !!{derive} کولے شو،
+بايد لا هم !!{derivable} وي؛ البته دا په پام کښې نيسو
+چې !!{formula}s اوس \iftag{prvBox}{$\Box$\iftag{prvDiamond}{
+    او~}{}}{}\iftag{prvDiamond}{$\Diamond$}{} هم لرلے شي۔
+د دې دپاره غواړو چې مودالي منطق د تاوتولوژيو ټول
+مثالونه ولري او د مودوس پوننس لاندې تړلے وي۔
+
+\begin{defn}
+  \emph{مودالي منطق} د مودالي !!{formula}s داسې
+  سټ~$\Sigma$ دے چې
+  \begin{enumerate}
+  \item ټولې تاوتولوژۍ لري، او
+  \item د ځايناستۍ لاندې تړلے وي، يعنې که $!A \in \Sigma$
+    وي، او $!D_1$، \dots، $!D_n$ !!{formula}s وي، نو
+    \[
+    \SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \in \Sigma,
+    \]
+    \item د \emph{مودوس پوننس} لاندې تړلے وي، يعنې که $!A$
+      او $!A \lif !B \in \Sigma$ وي، نو $!B \in \Sigma$ وي۔
+  \end{enumerate}
+\end{defn}
+
+د مودالي منطقونو دپاره د اړيکو معناپوهنه کارولو په
+موخه بايد دا هم وغواړو چې په ټولو مودالي مدلونو کښې
+معتبر ټول !!{formula}s پکې شامل وي۔ څرګندېږي چې دا
+غوښتنه هغه وخت پوره کېږي چې د \Ax{K}\iftag{prvDiamond}{
+او~\Dual{}}{} ټول مثالونه !!{derivable} وي، او هر کله
+چې !!a{formula}~$!A$ !!{derivable} وي، نو~$\Box !A$
+هم وي۔ هغه مودالي منطق چې دا شرطونه پوره کړي،
+\emph{عادي} بلل کېږي۔ (البته ناعادي مودالي منطقونه هم
+شته، خو د اړيکو معمول مدلونه د هغو دپاره مناسب نۀ دي۔)
+
+\begin{defn}
+  مودالي منطق~$\Sigma$ \emph{عادي} دے، که دا ولري:
+  \begin{align*}
+    \tag{\Ax{K}} & \Box(p \lif q) \lif (\Box p \lif \Box q),
+    \iftag{prvDiamond}{\\
+      \tag{\Dual} & \Diamond p \liff \lnot\Box\lnot p}{}
+  \end{align*}
+  او د \emph{لزوم ورکولو} لاندې تړلے وي، يعنې که $!A \in
+  \Sigma$ وي، نو $\Box !A \in \Sigma$ وي۔
+\end{defn}
+
+پام وکړئ چې تاوتولوژيکي استلزام د \emph{يوې نړۍ په
+کښې د صدق} ساتلو دپاره په کافي اندازه دقيق دے، خو
+قاعده~\Nec{} يوازې \emph{په يوه مدل کښې صدق} ساتي
+(او له دې سره په يوه چوکاټ يا د چوکاټونو په يوه ټولګي
+کښې اعتبار هم ساتي)۔
+
+\begin{prop}\ollabel{prop:rk}
+  هر عادي مودالي منطق د~\RK قاعدې لاندې تړلے دے:
+  \begin{prooftree}
+    \AxiomC{$!A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots)$}
+    \RightLabel{\RK}
+    \UnaryInfC{$\Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+      \lif \Box!A_n)\cdots).$}
+  \end{prooftree}
+\end{prop}
+
+\begin{proof}
+  پر~$n$ استقرا کوو: که $n = 1$ وي، نو دا قاعده
+  هماغه \Nec ده، او هر عادي مودالي منطق د~\Nec لاندې
+  تړلے دے۔
+
+  اوس فرض کړئ پايله د~$n-1$ دپاره سمه ده؛ ښيو چې
+  د~$n$ دپاره هم سمه ده۔
+
+  فرض کړئ
+  \begin{align*}
+  & !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots) \in \Sigma
+  \intertext{د استقرا د فرض له مخې لرو:}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots \Box(!A_{n-1} \lif !A_n)\cdots)
+  \in \Sigma
+  \intertext{څرنګه چې $\Sigma$ عادي مودالي منطق دے، د~$\Ax{K}$
+    ټول مثالونه لري، په ځانګړې توګه:}
+  & \Box(!A_{n-1} \lif !A_n) \lif (\Box!A_{n-1} \lif \Box!A_n) \in \Sigma
+  \intertext{د مودوس پوننس او د تاوتولوژۍ د مناسبو مثالونو له مخې ترلاسه کوو:}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+  \lif \Box!A_n)\cdots) \in \Sigma. 
+  \end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:notDiamondBot}
+  هر عادي مودالي منطق~$\Sigma$، $\lnot\Diamond\lfalse$ لري۔
+\end{prop}
+
+\begin{prob}
+  \olref[nml][prf][nor]{prop:notDiamondBot} ثابت کړئ۔
+\end{prob}
+
+\begin{prop}
+  فرض کړئ $!A_1$، \dots، $!A_n$ !!{formula}s وي۔ بيا
+  يو تر ټولو کوچنے عادي مودالي منطق~$\Sigma$ شته
+  چې د~$!A_1$، \dots، $!A_n$ ټول مثالونه لري۔
+  \emph{د سرچينې يادونه: په اصلي قضيه کښې «عادي» نۀ و؛
+  خو ورپسې ثبوت يوازې د عادي مودالي منطقونو تقاطع
+  اخلي او ورپسې تعريف هم عادي منطق ټاکي۔}
+\end{prop}
+
+\begin{proof}
+  د ورکړل شويو~$!A_1$، \dots، $!A_n$ دپاره،
+  $\Sigma$ د ټولو هغو عادي مودالي منطقونو تقاطع
+  وټاکئ چې د~$!A_1$، \dots، $!A_n$ ټول مثالونه لري۔
+  د تقاطع د سټونو کورنۍ تشه نۀ ده، ځکه چې
+  $\Frm[L]$، يعنې د ټولو !!{formula}s سټ، يو داسې
+  عادي مودالي منطق دے۔
+\end{proof}
+
+\begin{defn}
+تر ټولو کوچني عادي مودالي منطق ته، چې $!A_1$، \dots، $!A_n$
+لري، \emph{مودالي نظام} وايي، او په~$\Log{K} !A_1 \dots
+!A_n$ ئې ښيو۔ تر ټولو کوچنے عادي مودالي منطق په~\Log{K}
+ښودل کېږي۔
+\end{defn}
+
+\end{document}

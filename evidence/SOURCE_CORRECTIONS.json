@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0426; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T18:48:30.508282+00:00",
+  "status": "adopted through OLP-0429; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T19:20:25.321093+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10481,6 +10481,53 @@
       ],
       "decision_timing": "contemporaneous B116 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-014",
+      "unit_id": "OLP-0429",
+      "classification": "smallest_modal_logic_claim_proved_only_for_normal_modal_logics",
+      "source_path": "content/normal-modal-logic/axioms-systems/normal-logics.tex",
+      "source_sha256": "6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819",
+      "source_locator": "content/normal-modal-logic/axioms-systems/normal-logics.tex:101-119",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/axioms-systems/normal-logics.tex",
+      "target_line_1based": 109,
+      "disclosure_line_1based": 111,
+      "target_sha256": "2284950c010092844a22ed510410bdb57e6ab3218cb66e906ed2ae202c31d017",
+      "mode": "adjacent-Pashto-source-scope-clarification-without-formula-change",
+      "translation_change": "Qualify the proposition’s least modal logic as normal, matching the proof intersection and next definition; specify that the all-formula witness is normal.",
+      "reason": "Intersecting only normal modal logics does not prove leastness among all modal logics. The following definition explicitly names the least normal modal logic, and a non-normal tautology-instance logic need not contain K.",
+      "formula_policy": "No math, identifier, structural macro, tag or term-marker changes; frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
+      "audit_artifacts": [
+        "B118_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/axioms-systems/normal-logics.tex:101-119",
+        "ps-Arab-PK/content/normal-modal-logic/axioms-systems/normal-logics.tex:107-129",
+        "B118_STAGING_QA_OLP-0429.json"
+      ],
+      "decision_timing": "contemporaneous B118 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10558,7 +10605,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS"
   ],
   "source_authorities": [
     {
