@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 424,
-    "structural_pass": 424,
+    "draft_units": 425,
+    "structural_pass": 425,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B114-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
+  "batch": "PS-B115-NORMAL-MODAL-S5-EQUIVALENCE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13802,6 +13802,34 @@
         "OLNML-011"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0425",
+      "path": "content/normal-modal-logic/frame-definability/equivalence-S5.tex",
+      "source_sha256": "057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798",
+      "translation_sha256": "b3eb9b3dbc2390d654bedca88220e320255f0554fd7e14f9ab5de96d7519cb10",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18814,6 +18842,60 @@
       "passage": "universality",
       "reverse_paraphrase": "A universal relation is first-order definable, while universal and equivalence frames validate exactly the same modal formulas.",
       "finding": "Modal inability to distinguish classes retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "S5 dual class",
+      "reverse_paraphrase": "S5 consists of formulas valid on all universal frames and equivalently all equivalence frames.",
+      "finding": "Both frame-class scopes retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "equivalence definition",
+      "reverse_paraphrase": "R is equivalence iff reflexive, symmetric and transitive; universal iff Ruv for all u,v in W.",
+      "finding": "Both iff definitions retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "four conditions",
+      "reverse_paraphrase": "Equivalence, reflexive+Euclidean, serial+symmetric+Euclidean and serial+symmetric+transitive are equivalent.",
+      "finding": "Four exact conditions retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "five proof prompts",
+      "reverse_paraphrase": "The five listed implications are a problem, and their combination proves equivalence.",
+      "finding": "Exercise remains unsolved and complete."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "partition",
+      "reverse_paraphrase": "Each w belongs to its class; R is universal within each class; the classes partition W.",
+      "finding": "Membership, universality and disjoint exhaustive union retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "easy direction",
+      "reverse_paraphrase": "Validity on all equivalence frames implies validity on all universal frames because universal is a special equivalence relation.",
+      "finding": "Implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "countermodel restriction",
+      "reverse_paraphrase": "For failure at w, restrict to W prime=[w], universal R prime, and V prime(p)=V(p) intersect W prime.",
+      "finding": "All model components and valuation restriction retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "induction",
+      "reverse_paraphrase": "Truth of every modal formula agrees in M and M prime at every w prime in W prime; the same B still fails at w.",
+      "finding": "All-world induction and counterexample retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "passage": "figure",
+      "reverse_paraphrase": "The shaded region represents the equivalence class W prime; geometric paths and labels are unchanged.",
+      "finding": "Caption translated and diagram preserved."
     }
   ],
   "builds": [

@@ -1,0 +1,98 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T18:28:48.823701+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-S5-EQUIVALENCE",
+  "batch_id": "PS-B115-NORMAL-MODAL-S5-EQUIVALENCE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0425",
+      "source_path": "content/normal-modal-logic/frame-definability/equivalence-S5.tex",
+      "source_bytes": 5743,
+      "source_sha256": "057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798",
+      "target_sha256": "b3eb9b3dbc2390d654bedca88220e320255f0554fd7e14f9ab5de96d7519cb10",
+      "paired_blocks": 18,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B115_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "e2d252deb4f5af8e3c7c48de8b604428ff4e2be329cc0169b1050ab6847c0a9a",
+  "consultation_path": "work/B115_CANON_CONSULTATION.md",
+  "consultation_sha256": "a5531c7d8f4c900d3f359b0513bf7f13d873385ea36be7d7c58efca4c70be148",
+  "staging_qa_sha256": {
+    "OLP-0425": "090983dfee71d4b5ab43bdf9547bcc14f96f2e8ecad71ede197c982540a4612f"
+  },
+  "source_preview_sha256": "b382c4f81ece2f7c18ad64da2d0ac20890d2cc6b7db64451ac196c2576e4af96",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0425",
+      "source_lines": "12-63",
+      "kind": "S5-definitions-and-four-condition-proposition",
+      "finding": "All-and-only frame class, equivalence/universal conditions and exercise implications retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "source_lines": "76-86",
+      "kind": "equivalence-class-partition",
+      "finding": "Equivalence-class membership, local universality and partition retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "source_lines": "88-116",
+      "kind": "S5-universal-frame-proof",
+      "finding": "Both validity directions and restricted countermodel induction retained."
+    },
+    {
+      "unit_id": "OLP-0425",
+      "source_lines": "118-140",
+      "kind": "figure",
+      "finding": "TikZ diagram identical after newline normalization; caption translated."
+    }
+  ],
+  "formula_policy": "No math, identifier, environment, structural macro, tag or term-token differences; frozen English and TikZ diagram unchanged.",
+  "unresolved": "Exact Pakistani equivalence-class compound remains provisional. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0425; continue OLP-0426."
+}
