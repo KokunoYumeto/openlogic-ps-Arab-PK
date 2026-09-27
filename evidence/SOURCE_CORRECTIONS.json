@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0391; B086 one disclosed shared-fragment scope correction; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-27T03:31:28.403863+00:00",
+  "status": "adopted through OLP-0394; B088 three disclosed local formula corrections; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-27T04:18:48.033892+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9325,6 +9325,141 @@
       ],
       "decision_timing": "contemporaneous B086 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-002",
+      "unit_id": "OLP-0394",
+      "classification": "confirmed_repeated_conjunction_input",
+      "source_path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+      "source_locator": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:53-55",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "target_line_1based": 52,
+      "target_sha256": "8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553",
+      "mode": "corrected-second-conjunction-input-plus-adjacent-Pashto-note",
+      "translation_change": "The target changes only the second input order and tells readers the English display repeated it.",
+      "reason": "The displayed equation repeats the False,Undef input instead of showing the symmetric Undef,False input; the unmodified conjunction table makes the intended result unambiguous.",
+      "formula_policy": "This one normalized math span is changed exactly as listed; all other source math, truth tables, IDs, labels and structural macros are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\tf{\\land}(\\False,\\Undef)=\\tf{\\land}(\\False,\\Undef)=\\False.\\]"
+        ],
+        "target_only": [
+          "\\[\\tf{\\land}(\\False,\\Undef)=\\tf{\\land}(\\Undef,\\False)=\\False.\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
+      "audit_artifacts": [
+        "B088_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:53-55",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:52"
+      ],
+      "decision_timing": "contemporaneous B088 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-003",
+      "unit_id": "OLP-0394",
+      "classification": "confirmed_surplus_formula_parenthesis",
+      "source_path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+      "source_locator": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:172-179",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "target_line_1based": 182,
+      "target_sha256": "8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553",
+      "mode": "removed-surplus-closing-parenthesis-plus-adjacent-Pashto-note",
+      "translation_change": "The target removes only the extra closing parenthesis and discloses the typo.",
+      "reason": "The first classical-tautology exercise has a surplus closing parenthesis after q and is not a well-formed formula as printed.",
+      "formula_policy": "This one normalized math span is changed exactly as listed; all other source math, truth tables, IDs, labels and structural macros are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$(\\lnotp\\landp)\\lifq)$"
+        ],
+        "target_only": [
+          "$(\\lnotp\\landp)\\lifq$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
+      "audit_artifacts": [
+        "B088_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:172-179",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:182"
+      ],
+      "decision_timing": "contemporaneous B088 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-004",
+      "unit_id": "OLP-0394",
+      "classification": "confirmed_truth_table_value_conflict",
+      "source_path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+      "source_locator": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "target_line_1based": 245,
+      "target_sha256": "8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553",
+      "mode": "corrected-modal-value-plus-adjacent-Pashto-note",
+      "translation_change": "The target prints False and explains the source/table conflict; the failure of tautology remains.",
+      "reason": "At p=Undef, the unchanged conjunction, Diamond and negation tables give Undef, then True, then False; the source prints Undef as the final value.",
+      "formula_policy": "This one normalized math span is changed exactly as listed; all other source math, truth tables, IDs, labels and structural macros are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pValuev(\\lnot\\Diamond(p\\land\\lnotp))=\\Undef$"
+        ],
+        "target_only": [
+          "$\\pValuev(\\lnot\\Diamond(p\\land\\lnotp))=\\False$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
+      "audit_artifacts": [
+        "B088_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:245"
+      ],
+      "decision_timing": "contemporaneous B088 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9332,7 +9467,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0392 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0395 onward while validating the 372-unit reader candidate.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -9395,7 +9530,8 @@
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
-    "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC"
+    "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC",
+    "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED"
   ],
   "source_authorities": [
     {

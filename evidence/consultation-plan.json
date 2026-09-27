@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B087-THREE-VALUED-OPENING",
-  "status": "OLP-0392–0393 source-reviewed and staged; nineteen paired blocks, exact math/import parity, one provisional terminology decision and four reverse-paraphrase samples",
+  "batch_id": "PS-B088-LUKASIEWICZ-THREE-VALUED",
+  "status": "OLP-0394 source-reviewed and staged; 22 paired blocks, three disclosed source-confirmed math corrections, one provisional terminology decision and seven reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8255,6 +8255,29 @@
       ],
       "scope": "Exact chapter-driver import structure and three-valued introduction. The third source value Undef remains distinct from partial-function undefinedness; both designated-set choices and four connective truth functions are preserved. Pakistani scholarly semantics prose is primary; Afghan classical Boolean pages are regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0394": {
+      "batch_id": "PS-B088-LUKASIEWICZ-THREE-VALUED",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-LUKASIEWICZ-MODAL",
+        "TERM-MVL-THREE-VALUED-INTRO",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-LOGIC"
+      ],
+      "scope": "Twenty-two source/target blocks of the complete Łukasiewicz section, quotation, four truth tables, exercises and modal extension. OLMVL-002–004 are source-confirmed and adjacent-disclosed. Pakistani scholarly semantics prose is primary; Afghan classical logical pages are regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11947,6 +11970,48 @@
       "passage": "designated choices and chapter scope",
       "reverse_paraphrase": "Only True, or True together with Undef, may be designated in the described choices; the chapter presents a selection of familiar examples and properties.",
       "finding": "Target preserves both alternatives and does not claim exhaustive coverage."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "historical motivation and quotation",
+      "reverse_paraphrase": "A future sea-battle sentence is neither presently true nor false; the Warsaw quotation calls the unsettled future possible but not necessary and proposes a half-valued third truth value.",
+      "finding": "Full quote, dates, counterfactuals, numerical values and qualifying footnote are preserved."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "conjunction and conditional",
+      "reverse_paraphrase": "Conjunction with False is False even with one unsettled input; implication of Undef by itself is stipulated True to keep reflexivity.",
+      "finding": "Unchanged truth tables support the derivation; OLMVL-002 documents the repeated source input."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "matrix definition",
+      "reverse_paraphrase": "The matrix uses True, Undef and False, four stated connectives, and True as its only designated value.",
+      "finding": "All four tables and source symbols are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "classical valuation and exercises",
+      "reverse_paraphrase": "Boolean assignments to the variables of a formula reproduce the classical value; exercises distinguish surviving and failing classical tautologies and ask for the three-valued entailment relations.",
+      "finding": "Proposition, exercise order and labels remain; OLMVL-003 repairs the malformed first exercise formula."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "non-designated classical tautology",
+      "reverse_paraphrase": "The displayed classical tautology may even evaluate False when p is Undef, so non-tautology does not imply value Undef only.",
+      "finding": "The displayed counterexample and its value remain exact."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "possibility and necessity",
+      "reverse_paraphrase": "Diamond is True when a sentence is not settled False, while Box is True only when it is settled True.",
+      "finding": "Both unary tables and duality exercise are exact."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "modal limitation",
+      "reverse_paraphrase": "The contradiction should count as impossible, but under p=Undef the proposed modal matrix assigns False to its negated possibility claim rather than making it a tautology.",
+      "finding": "OLMVL-004 corrects the source's stated Undef value to the value forced by its own three unchanged tables."
     }
   ]
 }

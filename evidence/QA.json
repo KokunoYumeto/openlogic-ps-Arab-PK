@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 393,
-    "structural_pass": 393,
+    "draft_units": 394,
+    "structural_pass": 394,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B087-THREE-VALUED-OPENING",
+  "batch": "PS-B088-LUKASIEWICZ-THREE-VALUED",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12371,6 +12371,49 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0394",
+      "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+      "translation_sha256": "8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-002",
+        "OLMVL-003",
+        "OLMVL-004"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\tf{\\land}(\\False,\\Undef)=\\tf{\\land}(\\False,\\Undef)=\\False.\\]",
+          "$(\\lnotp\\landp)\\lifq)$",
+          "$\\pValuev(\\lnot\\Diamond(p\\land\\lnotp))=\\Undef$"
+        ],
+        "target_only": [
+          "\\[\\tf{\\land}(\\False,\\Undef)=\\tf{\\land}(\\Undef,\\False)=\\False.\\]",
+          "$(\\lnotp\\landp)\\lifq$",
+          "$\\pValuev(\\lnot\\Diamond(p\\land\\lnotp))=\\False$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16063,6 +16106,48 @@
       "passage": "designated choices and chapter scope",
       "reverse_paraphrase": "Only True, or True together with Undef, may be designated in the described choices; the chapter presents a selection of familiar examples and properties.",
       "finding": "Target preserves both alternatives and does not claim exhaustive coverage."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "historical motivation and quotation",
+      "reverse_paraphrase": "A future sea-battle sentence is neither presently true nor false; the Warsaw quotation calls the unsettled future possible but not necessary and proposes a half-valued third truth value.",
+      "finding": "Full quote, dates, counterfactuals, numerical values and qualifying footnote are preserved."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "conjunction and conditional",
+      "reverse_paraphrase": "Conjunction with False is False even with one unsettled input; implication of Undef by itself is stipulated True to keep reflexivity.",
+      "finding": "Unchanged truth tables support the derivation; OLMVL-002 documents the repeated source input."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "matrix definition",
+      "reverse_paraphrase": "The matrix uses True, Undef and False, four stated connectives, and True as its only designated value.",
+      "finding": "All four tables and source symbols are retained exactly."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "classical valuation and exercises",
+      "reverse_paraphrase": "Boolean assignments to the variables of a formula reproduce the classical value; exercises distinguish surviving and failing classical tautologies and ask for the three-valued entailment relations.",
+      "finding": "Proposition, exercise order and labels remain; OLMVL-003 repairs the malformed first exercise formula."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "non-designated classical tautology",
+      "reverse_paraphrase": "The displayed classical tautology may even evaluate False when p is Undef, so non-tautology does not imply value Undef only.",
+      "finding": "The displayed counterexample and its value remain exact."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "possibility and necessity",
+      "reverse_paraphrase": "Diamond is True when a sentence is not settled False, while Box is True only when it is settled True.",
+      "finding": "Both unary tables and duality exercise are exact."
+    },
+    {
+      "unit_id": "OLP-0394",
+      "passage": "modal limitation",
+      "reverse_paraphrase": "The contradiction should count as impossible, but under p=Undef the proposed modal matrix assigns False to its negated possibility claim rather than making it a tautology.",
+      "finding": "OLMVL-004 corrects the source's stated Undef value to the value forced by its own three unchanged tables."
     }
   ],
   "builds": [

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 393 of 722 source units are translated drafts. This log contains 200 terminology entries and 326 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 394 of 722 source units are translated drafts. This log contains 201 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1804,6 +1804,33 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: exact Pakistani three-valued and third-value terms are provisional.
 - Review question: Is the added truth value distinct from undefined partial-function evaluation, and are the two designated-subset choices clear?
 - Timing: contemporaneous B087 source review and visually inspected Pakistani-first consultation
+
+## TERM-MVL-LUKASIEWICZ-MODAL
+
+- Type: terminology
+- Choice: د لوکاشېوېچ منطق / راتلونکے اتفاقي بيان / ممکن خو لازم نۀ / امکان او لزوم / درې ارزښته تاوتولوژي
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L13) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L13).
+- Uncertainty: exact Pakistani compounds for future contingents and three-valued modalities remain provisional.
+- Review question: Do the historical sense of possible and the Diamond/Box truth tables stay distinct?
+- Timing: contemporaneous B088 source review and visually inspected Pakistani-first consultation
+
+## DEC-OLMVL-002
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L53) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L52).
+- Evidence: The source repeats a conjunction input; its table supports the corrected symmetric input. The Pashto text discloses this beside the correction.
+
+## DEC-OLMVL-003
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L175) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L182).
+- Evidence: The first exercise formula has one surplus closing parenthesis. The Pashto text discloses this beside the correction.
+
+## DEC-OLMVL-004
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L231) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex#L245).
+- Evidence: The source's final Undef conflicts with its unchanged tables, which force False. The Pashto text discloses this beside the correction.
 
 ## DEC-OLFUN-001
 

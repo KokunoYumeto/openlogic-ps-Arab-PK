@@ -2822,3 +2822,35 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The value-transfer theorem and consequence corollary now specify a common formula fragment, Boolean assignments for its variables, and agreement on Boolean inputs for every used connective, including constants. An adjacent Pashto note discloses the frozen source's missing scope.
 - Evidence: A falsity constant interpreted as True satisfies the four listed connective conditions but disagrees with classical evaluation of that formula.
 - Disclosure: `corrected-theorem-and-corollary-scope-plus-adjacent-Pashto-note`. All source formulas remain unchanged.
+
+## OLMVL-002
+
+- Unit: `OLP-0394`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/lukasiewicz.tex` (fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a) at `content/many-valued-logic/three-valued-logics/lukasiewicz.tex:53-55`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:52` (8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553).
+- Audit: `PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED`.
+- Treatment: The target changes only the second input order and tells readers the English display repeated it.
+- Evidence: The displayed equation repeats the False,Undef input instead of showing the symmetric Undef,False input; the unmodified conjunction table makes the intended result unambiguous.
+- Disclosure: `corrected-second-conjunction-input-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+
+## OLMVL-003
+
+- Unit: `OLP-0394`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/lukasiewicz.tex` (fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a) at `content/many-valued-logic/three-valued-logics/lukasiewicz.tex:172-179`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:182` (8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553).
+- Audit: `PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED`.
+- Treatment: The target removes only the extra closing parenthesis and discloses the typo.
+- Evidence: The first classical-tautology exercise has a surplus closing parenthesis after q and is not a well-formed formula as printed.
+- Disclosure: `removed-surplus-closing-parenthesis-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+
+## OLMVL-004
+
+- Unit: `OLP-0394`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/lukasiewicz.tex` (fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a) at `content/many-valued-logic/three-valued-logics/lukasiewicz.tex:231-240`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/lukasiewicz.tex:245` (8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553).
+- Audit: `PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED`.
+- Treatment: The target prints False and explains the source/table conflict; the failure of tautology remains.
+- Evidence: At p=Undef, the unchanged conjunction, Diamond and negation tables give Undef, then True, then False; the source prints Undef as the final value.
+- Disclosure: `corrected-modal-value-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.

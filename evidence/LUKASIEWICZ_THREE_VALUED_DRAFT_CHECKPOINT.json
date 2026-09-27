@@ -1,0 +1,33 @@
+{
+  "schema": "ps-b088-lukasiewicz-draft/1",
+  "utc": "2026-09-27T04:27:07.432031+00:00",
+  "status": "one accepted editable draft; cumulative source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B088-LUKASIEWICZ-THREE-VALUED",
+  "units": [
+    {
+      "unit_id": "OLP-0394",
+      "path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+      "target_sha256": "8beb7e5531c998fc1585901b168641754ed89a28084d5cd2e0ff67c47a783553",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "draft_units": 394,
+  "aligned_blocks": 6021,
+  "segment_canon_uses": 3800,
+  "reader_units": 321,
+  "source_snapshot_units": 362,
+  "source_corrections": [
+    "OLMVL-002",
+    "OLMVL-003",
+    "OLMVL-004"
+  ],
+  "source_audit_sha256": "1668ef228b808b0754f5a2072931393d4f7911c281abea6566e3ef9203fd444c",
+  "corpus_qa_sha256": "624eac7a888ecd35b1db57e1ea584f7fe69cac35a5dda18e4ff3931b03064bf1",
+  "canonical_replay_sha256": "c2c72612a0f57aedead4928f17fa271cc4a3ae166aac0f464ddc2369124bea6c",
+  "qa_sha256": "809f0f8b8d75445dbebfbe968cba1e385647e7edfdff304eb2e92b703bb5a1f5",
+  "reader_candidate": "The 372-unit PDF candidate still needs cross-reference and visual acceptance, matching EPUB and publication.",
+  "next_action": "Commit/push B088; continue OLP-0395 onward independently of the TeX slot."
+}

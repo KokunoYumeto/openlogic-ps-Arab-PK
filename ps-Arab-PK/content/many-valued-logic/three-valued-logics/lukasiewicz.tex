@@ -1,0 +1,252 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{luk}
+
+\olsection{د لوکاشېوېچ منطق}
+
+د څو ارزښته منطق له لومړنيو خپرو شوو او بشپړ تشريح شوو وړانديزونو
+څخه يو د پولنډي فيلسوف يان لوکاشېوېچ و، چې په ۱۹۲۱ کال کښې ئې
+وړاندې کړ۔ د ارسطو د سمندري جګړې مسئلې هغه دې ته وهڅاوه: داسې
+ښکاري چې \emph{نن} د «سبا به سمندري جګړه وي» جمله نه رښتيا ده
+او نه دروغ؛ د هغې د رښتياوالي قيمت لا نۀ دے ټاکل شوے۔ لوکاشېوېچ
+وړانديز وکړ چې د دا ډول «راتلونکو اتفاقي» جملو دپاره درېيم
+د رښتياوالي قيمت ورزيات شي۔
+\begin{quote}
+زه له تناقض پرته دا فرض کولے شم چې راتلونکے کال په يوه ټاکلې
+شېبه کښې، مثلاً د دسمبر پر ۲۱مه غرمه، په وارسا کښې زما شتون
+اوس نه په مثبت ډول ټاکل شوے دے او نه په منفي ډول۔ نو په هغه
+وخت کښې زما په وارسا کښې شتون ممکن دے، خو لازم نۀ دے۔ د دې
+فرض له مخې «زه به راتلونکے کال د دسمبر پر ۲۱مه غرمه په وارسا
+کښې يم» بيان اوس نه رښتيا کېدے شي او نه دروغ۔ که دا اوس رښتيا
+وے، نو په راتلونکي کښې زما په وارسا کښې شتون به لازم وے، او
+دا له فرض سره په تناقض کښې دے۔ له بلې خوا، که دا اوس دروغ وے،
+نو په راتلونکي کښې زما هلته شتون به ناشونے وے، او دا هم له فرض
+سره په تناقض کښې دے۔ نو تر غور لاندې بيان اوس نه رښتيا دے او
+نه دروغ؛ درېيم قيمت غواړي چې له «۰» يا دروغو او «۱» يا رښتيا
+څخه بېل وي۔ دا قيمت په «$\frac{1}{2}$» ښودلے شو۔ دا «ممکن»
+ښيي او د «رښتيا» او «دروغ» تر څنګ درېيم قيمت جوړوي۔
+\end{quote}
+موږ به د لوکاشېوېچ د درېيم رښتياوالي قيمت دپاره~$\Undef$
+کاروو۔\footnote{لوکاشېوېچ دلته «ممکن» په هغه معنا کاروي چې نن
+عامه نۀ ده: ممکن، خو لازم نۀ۔}
+
+په دې تفسير کښې د~$\lnot$، $\land$ او~$\lor$ نښلوونکو
+د صدق تابعې ټاکل اسانه دي: د راتلونکي اتفاقي بيان نفي هم
+راتلونکے اتفاقي بيان دے، نو~$\tf{\lnot}(\Undef) = \Undef$۔
+که د عطف يو اړخ ناټاکلے او بل رښتيا وي، ټول عطف هم ناټاکلے
+وي؛ ځکه چې د راتلونکي اتفاقي اړخ له پايلې سره سم عطف کېدے شي
+رښتيا شي او کېدے شي دروغ شي۔ نو \[
+    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+خو که بل اړخ دروغ وي، عطف رښتيا کېدے نۀ شي؛ نو
+\[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+د سرچينې يادونه: د دويمې جوړې د مدخلونو ترتيب په اصلي ښودنه کښې
+په تېروتنه تکرار شوے و؛ دلته دواړه ترتيبونه ښودل شوي دي۔
+نور قيمتونه، چې مدخلونه ئې ټاکلي رښتياوالي قيمتونه~$\True$
+يا~$\False$ وي، د کلاسيک منطق په څېر دي۔
+
+د شرطي په باب حالت لږ پېچلے دے۔ فرض کړئ~$q$ يو راتلونکے
+اتفاقي بيان دے۔ که~$p$ دروغ وي، نو~$p \lif q$ به رښتيا وي،
+د~$q$ له راتلونکې پايلې پرته؛ نو بايد
+$\tf{\lif}(\False, \Undef) = \True$ وټاکو۔ او که~$p$
+رښتيا وي، نو~$q \lif p$ به د~$q$ له پايلې پرته رښتيا وي؛
+نو~$\tf{\lif}(\Undef, \True) = \True$۔ که~$p$ رښتيا
+وي، نو~$p \lif q$ کېدے شي رښتيا يا دروغ شي؛ نو
+$\tf{\lif}(\True, \Undef) = \Undef$۔ په همدې ډول، که~$p$
+دروغ وي، نو~$q \lif p$ کېدے شي رښتيا يا دروغ شي؛ نو
+$\tf{\lif}(\Undef, \False) = \Undef$۔ هغه حالت پاتې کېږي
+چې~$p$ او~$q$ دواړه راتلونکي اتفاقي بيانونه وي۔ د دې انګېزې
+له مخې، په دې حالت کښې بايد رښتيا~$\Undef$ ورکړو۔ خو په دې سره
+$!A \lif !A$ به \emph{نۀ} تاوتولوژي وي۔ لوکاشېوېچ د
+$!A \lor \lnot !A$ او~$\lnot(!A \land \lnot !A)$ له پرېښودو
+سره ستونزه نۀ لرله، خو د~$!A \lif !A$ پرېښودل ئې نۀ منل۔
+نو ئې~$\tf{\lif}(\Undef, \Undef) = \True$ وټاکه۔
+
+\begin{defn}\ollabel{def:lukasiewicz}
+درې ارزښته لوکاشېوېچ منطق د لاندې ماتريس په وسيله تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$
+  نښلوونکي لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+  \item $\True$ يوازينے ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{\True\}$۔
+  \item د صدق تابعې په لاندې جدولونو کښې ورکړل شوې دي:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}$ & \\ 
+      \hline  
+      $\True$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\ 
+      $\False$ & $\False$ & $\False$ & $\False$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\True$ & $\True$ \\ 
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\ 
+      \hline 
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\ 
+      $\Undef$ & $\True$ & $\True$ & $\Undef$  \\ 
+      $\False$ & $\True$ & $\True$ & $\True$ 
+    \end{tabular}
+  \end{center} 
+\end{enumerate}
+\end{defn}
+
+لکه په اسانه چې څرګندېږي، هر داسې !!{formula}~$!A$ چې يوازې
+$\lnot$، $\land$ او~$\lor$ لري، هغه وخت د رښتياوالي
+قيمت~$\Undef$ اخلي چې ټولو !!{propositional variable}s ته ئې
+$\Undef$ ورکړل شوے وي۔ نو، د بېلګې په توګه، کلاسيکې
+تاوتولوژۍ~$p \lor \lnot p$ او~$\lnot(p \land \lnot p)$
+په~$\LogLuk[3]$ کښې تاوتولوژۍ نۀ دي، ځکه چې کله
+$\pAssign v(p) = \Undef$ وي، نو~$\pValue{v}(!A) = \Undef$۔
+
+په هغو !!{valuation}s کښې چې د فارمول د هر بياني متغير دپاره
+$\pAssign v(p) = \True$ يا~$\False$ وي، $\pValue v(!A)$
+له کلاسيک رښتياوالي قيمت سره برابر وي۔
+
+\begin{prop}
+  که د~$!A$ د هر~$p$ دپاره
+  $\pAssign v(p) \in \{\True, \False\}$ وي، نو
+  $\pValue v(!A)[\LogLuk[3]] = \pValue v(!A)[\LogCL]$.
+\end{prop}
+
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff} فرض کړئ
+  $\pValue v(!A \liff !B) = \pValue v((!A \lif !B) \land (!B \lif
+  !A))$ په~$\LogLuk[3]$ کښې داسې تعريفوو۔ د~$\liff$
+  د رښتياوالي جدول به څنګه وي؟
+\end{prob}
+
+ډېرې کلاسيکې تاوتولوژۍ په~\LogLuk[3] کښې هم \emph{تاوتولوژۍ دي}،
+لکه~$\lnot p \lif (p \lif q)$۔ د کلاسيک منطق په څېر، دا د
+رښتياوالي په جدولونو هم تصديق کولے شو:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\  
+\end{tabular}
+\end{center}
+
+\begin{prob}
+  وښيئ چې لاندې فارمولونه په~\LogLuk[3] کښې تاوتولوژۍ دي:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (په~\olref[mvl][thr][luk]{prob:luk-taut-2} او
+  \olref[mvl][thr][luk]{prob:luk-taut-3} کښې $!A \liff !B$
+  د~$(!A \lif !B) \land (!B \lif !A)$ د لنډيز په توګه واخلئ،
+  يا د~\olref[mvl][thr][luk]{prob:luk-iff} خپل حل ته رجوع وکړئ۔)
+\end{prob}
+
+\begin{prob}
+  وښيئ چې لاندې کلاسيکې تاوتولوژۍ په~\LogLuk[3] کښې
+  تاوتولوژۍ نۀ دي:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+  د سرچينې يادونه: په لومړي فارمول کښې يو اضافي تړونيز قوس
+  و؛ دلته هغه لرې شوے دے۔
+\end{prob}
+
+له دې څخه ښايي څوک داسې وانګېري چې که څه هم ټولې کلاسيکې
+تاوتولوژۍ په~$\LogLuk[3]$ کښې تاوتولوژۍ نۀ دي، لږ تر لږه بايد
+په هره !!{valuation} کښې يا~$\True$ يا~$\Undef$ قيمت واخلي۔
+خو داسې نۀ ده۔ لاندې فارمول ضد مثال دے:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+که~$p$، $\Undef$ وي، د دې قيمت~$\False$ وي۔
+
+\begin{prob}
+  لاندې کومې اړيکې د لوکاشېوېچ په منطق کښې صدق کوي؟ د هرې
+  يوې دپاره د رښتياوالي جدول ورکړئ۔
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+لوکاشېوېچ هيله لرله چې د خپل درې ارزښته نظام پر بنسټ د امکان
+منطق جوړ کړي۔ د دې دپاره ئې يوځايه نښلوونکے~$\Diamond !A$
+(د «$!A$ ممکن دے» دپاره) او ورسره اړوند~$\Box !A$
+(د «$!A$ لازم دے» دپاره) ورزيات کړل:
+\begin{center}
+  \begin{tabular}{c|c} 
+    $\tf{\Diamond}$ & \\ 
+    \hline  
+    $\True$ & $\True$ \\ 
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$ 
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c} 
+    $\tf{\Box}$ & \\ 
+    \hline  
+    $\True$ & $\True$ \\ 
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$ 
+  \end{tabular}
+\end{center}
+په بل عبارت، $p$ هله او يوازې هله ممکن دے چې لا ئې دروغوالے
+نۀ وي ټاکل شوے؛ او~$p$ هله او يوازې هله لازم دے چې رښتياوالے
+ئې لا ټاکل شوے وي۔
+
+\begin{prob}
+  وښيئ چې~$\Box p \liff \lnot\Diamond \lnot p$ او
+  $\Diamond p \liff \lnot \Box \lnot p$ په هغه~\LogLuk[3]
+  کښې تاوتولوژۍ دي چې د~$\Box$ او~$\Diamond$ د
+  رښتياوالي جدولونه ورزيات شوي وي۔
+\end{prob}
+
+خو د دې وړانديز شوي مودالي منطق نيمګړتياوې ژر څرګندې شوې:
+هر څه چې وشي، $p \land \lnot p$ هېڅکله رښتيا کېدے نۀ شي۔
+نو که څه هم اوس ئې ارزښت نۀ وي ټاکل شوے (او ځکه ناټاکلے وي)،
+بايد ناشونے وګڼل شي؛ يعنې~$\lnot \Diamond(p \land \lnot p)$
+بايد تاوتولوژي وي۔ خو که~$\pAssign v(p) = \Undef$ وي، نو
+$\pValue v(\lnot \Diamond(p \land \lnot p)) = \False$۔
+د سرچينې يادونه: اصلي جمله دلته د نتيجې قيمت ناټاکلے
+ليکي، خو د پورته صدق جدولونو له مخې دا قيمت دروغ دے؛
+په دواړو صورتونو کښې فارمول تاوتولوژي نۀ ده۔ که څه هم
+لوکاشېوېچ په دې کښې سم و چې د امکان او لزوم په شان مودالي
+توپيرونو دپاره دوه د رښتياوالي قيمتونه بس نۀ دي، د درېيم
+قيمت ورزياتول هم بس نۀ دي۔
+
+\end{document}
