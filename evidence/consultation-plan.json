@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B083-MVL-FORMULAS-MATRICES",
-  "status": "OLP-0387–0388 source-reviewed and staged; eighteen paired blocks, exact math/table parity, one provisional terminology decision and six reverse-paraphrase samples",
+  "batch_id": "PS-B084-MVL-VALUATION-SATISFACTION",
+  "status": "OLP-0389 source-reviewed and staged; ten paired blocks, exact math parity, inherited terminology and three reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8157,6 +8157,22 @@
       ],
       "scope": "Source-reviewed formula grammar and matrix/classical truth tables; exact paired blocks, symbol arities, formulas, table entries, labels and term tokens. Matrix term is provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0389": {
+      "batch_id": "PS-B084-MVL-VALUATION-SATISFACTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-CONNECTIVE-ARITY"
+      ],
+      "scope": "Source-reviewed many-valued valuation, inductive formula evaluation and designated-value satisfaction; exact ten paired blocks, formulas, identifiers and term tokens. Pakistani scholarly usage is primary; Afghan logic page is a labelled regional comparator.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11747,6 +11763,24 @@
       "passage": "classical matrix",
       "reverse_paraphrase": "Classical V has True and False, only True is designated, falsity evaluates to False, and the remaining connectives follow the four shown tables.",
       "finding": "Table cells, order, label and reference remain exact."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "valuation",
+      "reverse_paraphrase": "A valuation assigns one element of V to every propositional variable, hence is a function PVar to V.",
+      "finding": "Target does not prematurely identify this assignment with evaluation of all formulas."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "evaluation",
+      "reverse_paraphrase": "The evaluation function on formulas is determined recursively by variable assignments, zero-place values and n-place truth functions of evaluated arguments.",
+      "finding": "All three clauses and the fixed-logic indexing are exact."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "A formula is satisfied exactly when its value lies in V+; a set Gamma is satisfied by a valuation exactly when every member is satisfied by that same valuation.",
+      "finding": "Target preserves the designated membership, negated notation and universal set condition."
     }
   ]
 }

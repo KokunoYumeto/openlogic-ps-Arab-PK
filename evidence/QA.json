@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 388,
-    "structural_pass": 388,
+    "draft_units": 389,
+    "structural_pass": 389,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B083-MVL-FORMULAS-MATRICES",
+  "batch": "PS-B084-MVL-VALUATION-SATISFACTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12239,6 +12239,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0389",
+      "path": "content/many-valued-logic/syntax-and-semantics/valuations-sat.tex",
+      "source_sha256": "295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1",
+      "translation_sha256": "284d3c71851192ebdf0d9d4a26ebe27d0c9a08289c05e2fc525c940cb1167b0c",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15829,6 +15855,24 @@
       "passage": "classical matrix",
       "reverse_paraphrase": "Classical V has True and False, only True is designated, falsity evaluates to False, and the remaining connectives follow the four shown tables.",
       "finding": "Table cells, order, label and reference remain exact."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "valuation",
+      "reverse_paraphrase": "A valuation assigns one element of V to every propositional variable, hence is a function PVar to V.",
+      "finding": "Target does not prematurely identify this assignment with evaluation of all formulas."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "evaluation",
+      "reverse_paraphrase": "The evaluation function on formulas is determined recursively by variable assignments, zero-place values and n-place truth functions of evaluated arguments.",
+      "finding": "All three clauses and the fixed-logic indexing are exact."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "A formula is satisfied exactly when its value lies in V+; a set Gamma is satisfied by a valuation exactly when every member is satisfied by that same valuation.",
+      "finding": "Target preserves the designated membership, negated notation and universal set condition."
     }
   ],
   "builds": [

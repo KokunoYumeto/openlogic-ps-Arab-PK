@@ -1,0 +1,82 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T03:00:49.145417+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MVL-VALUATION-SATISFACTION",
+  "batch_id": "PS-B084-MVL-VALUATION-SATISFACTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0389",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/valuations-sat.tex",
+      "source_bytes": 1620,
+      "source_sha256": "295efac982d3d4d6a5a4c2b910b3a37ecb85ce1b7925950db359034733498bb1",
+      "target_sha256": "284d3c71851192ebdf0d9d4a26ebe27d0c9a08289c05e2fc525c940cb1167b0c",
+      "paired_blocks": 10
+    }
+  ],
+  "notes_path": "work/B084_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "73b5e99ad5decfa327d8dc9a85db8a68b22ff59a61d9ffbbd849a2128f2300b5",
+  "consultation_path": "work/B084_CANON_CONSULTATION.md",
+  "consultation_sha256": "8177c020ceb5e649ad13abcd24876ca51b9da84c2060a6c24a50d39d9425e3a3",
+  "staging_qa_sha256": {
+    "OLP-0389": "03173c3c63c73232e788f9f24fa0d8e0c264be9082f8eb1d4dfc71d4fdd5426e"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0389",
+      "source_lines": "13-19",
+      "kind": "valuation-domain-codomain",
+      "finding": "A valuation assigns values only to propositional variables at this stage; the PVar-to-V function remains exact."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "source_lines": "21-34",
+      "kind": "inductive-formula-evaluation",
+      "finding": "Variable, zero-place and n-place clauses remain distinct, with every source formula and logic index unchanged."
+    },
+    {
+      "unit_id": "OLP-0389",
+      "source_lines": "36-45",
+      "kind": "designation-and-set-satisfaction",
+      "finding": "Formula satisfaction is membership in V+, its negation notation is source-exact, and Gamma satisfaction requires every member under one valuation."
+    }
+  ],
+  "formula_policy": "All formulas, identifiers, structural macros and term tokens remain source-equivalent. No mathematical correction is adopted. Frozen English bytes are unchanged.",
+  "unresolved": "The source's unusual negated-satisfaction syntax is preserved exactly. Human specialist approval is not claimed; no new terminology decision was needed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0389, then continue OLP-0390."
+}

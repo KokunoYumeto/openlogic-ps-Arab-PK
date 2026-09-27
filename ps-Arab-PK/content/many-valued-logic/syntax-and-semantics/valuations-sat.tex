@@ -1,0 +1,52 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} او صدق}
+
+\begin{defn}[!!^{valuation}s]
+فرض کړئ~$V$ د رښتياوالي د قيمتونو يو سټ وي۔ د~$\Lang{L}$
+له ژبې څخه~$V$ ته يوه \emph{!!{valuation}} داسې
+تابعه~$\pAssign{v}$ ده چې د ژبې !!{propositional variable}s
+ته د~$V$ !!a{element} ورکوي؛ يعنې
+$\pAssign{v} \colon \PVar \to V$۔
+\end{defn}
+
+\begin{defn}\ollabel{defn:pValue}
+  د څو ارزښته منطق~$\Log L$ د رښتياوالي د قيمتونو
+  سټ~$V$ ته د يوې !!a{valuation}~$\pAssign{v}$ په لرلو،
+  د ارزونې تابعه~$\pValue{v} \colon \Frm[L] \to V$
+  په استقرايي ډول داسې تعريف کړئ:
+  \begin{enumerate}
+    \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$؛
+    \item که~$\star$ يو $0$-ځايه نښلوونکے وي، نو
+    $\pValue{v}(\star)  = \tf{\star}[\Log L]$؛
+    \item که~$\star$ يو $n$-ځايه نښلوونکے وي، نو
+    \[
+      \pValue{v}(\star(!A_1, \dots, !A_n)) = \tf{\star}[\Log L]
+      (\pValue{v}(!A_1), \dots, \pValue{v}(!A_n)).
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}[صدق]
+\ollabel{defn:satisfaction} !!{formula}~$!A$ د
+  !!a{valuation}~$\pAssign{v}$ له مخې هله \emph{پوره کېږي}،
+  $\pSat{v}{!A}[\Log L]$، چې
+  $\pValue{v}(!A)[\Log L] \in V^+$ وي؛ دلته~$V^+$
+  د~$\Log L$ د ټاکل شوو رښتياوالي قيمتونو سټ دے۔
+
+  $\pSat/{v}{!A}[\Log L]$ د «$\pSat{v}{!A}[\Log
+  L]$ نۀ دے» په معنا ليکو۔ که~$\Gamma$ د !!{formula}s
+  يو سټ وي، نو~$\pSat{v}{\Gamma}[\Log L]$ هله او يوازې
+  هله وي چې د هر~$!A \in \Gamma$ دپاره
+  $\pSat{v}{!A}[\Log L]$ وي۔
+\end{defn}
+
+\end{document}
