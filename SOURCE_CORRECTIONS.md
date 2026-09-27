@@ -3089,3 +3089,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: In row 7 of the fourth derivation, order the final disjuncts as Diamond A or Diamond B to match the proposition, and disclose the frozen-source reversal immediately below the derivation.
 - Reason: The fourth proposition states the A-or-B order, but its final source row prints B-or-A. Row 6 implies the stated A-or-B conclusion by propositional logic, so the existing PL,6 justification remains valid.
 - One inline formula changes exactly as registered; the correction is disclosed adjacent to the proof. The frozen English remains unchanged.
+
+## OLNML-017
+
+- Unit: OLP-0437.
+- Frozen source: content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-33,65-75 (SHA-256 5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23–33,65–75 (SHA-256 db91e845bff749ac8ea83d2aa42368a63391cb80aa504a53e980fac4fadeefee).
+- Treatment: Use Ax{D} after the KT derivability sign and Ax{4}, Ax{5} after the KTB non-derivability signs, with adjacent Pashto disclosures.
+- Reason: The cited earlier proof derives axiom D from KT; the following proof and exercises identify 4 and 5 as axiom formulas. The frozen source instead uses the modal-system macro Log on the right of the derivability relation in three places.
+- Exactly three inline formula spans change as registered; the repairs are disclosed adjacent to the proof and theorem. The three TikZ diagrams and frozen English remain unchanged.

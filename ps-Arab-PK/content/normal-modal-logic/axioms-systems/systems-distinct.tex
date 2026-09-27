@@ -1,0 +1,159 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: systems-distinct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dis}
+
+\olsection{د نظامونو بېلوالے ښودل}
+
+په \olref[prs]{sec} کښې مو وليدل چې د مودالي منطق دوه نظامونه
+په حقيقت کښې څنګه يو شان ثابتولے شو۔ \olref[snd]{thm:soundness} مونږ ته
+دا هم راښيي چې دوه مودالي نظامونه $\Sigma$ او $\Sigma'$ بېل دي: داسې
+!!a{formula}~$!A$ پيدا کوو چې $\Sigma' \Proves !A$ وي، خو د~$\Sigma$
+په يوه مدل کښې ناسم وي۔
+
+\begin{prop}
+  $\Log{KD} \subsetneq \Log{KT}$
+\end{prop}
+
+\begin{proof} دا د هغه معنايي حقيقت نحوي سيال دے چې هره
+  انعکاسي اړيکه مسلسله ده۔ د $\Log{KD} \subseteq
+  \Log{KT}$ د ښودلو دپاره بايد ووينو چې له $\Log{KD} \Proves !B$
+  څخه $\Log{KT} \Proves !B$ لازمېږي۔ دا له $\Log{KT} \Proves
+  \Ax{D}$ څخه راځي، لکه په
+  \olref[prs]{prop:S5facts}\olref[prs]{prop:S5facts-KT-D} کښې چې
+  ښودل شوي دي۔ په منجمده سرچينه کښې د D بديهي اصل د نظام په نښه
+  چاپ شوے؛ دلته يې د بديهي اصل نښه کارول شوې ده۔ د دې د ښودلو دپاره
+  چې شموليت سخت دے (مساوات نۀ دے)، د سموالي له مخې
+  (\olref[snd]{thm:soundness}) بس ده چې د \Log{KD} داسې مدل وښيو
+  چې \Ax{T}، يعنې $\Box p \lif p$، پکې ناسم وي (دا اسانه کار
+  د تمرين په توګه پرېښودل شوے)؛ ځکه بيا د سموالي له مخې $\Log{KD}
+  \Proves/ \Box p \lif p$.
+\end{proof}
+
+\begin{prop}
+  $\Log{KB} \neq \Log{K4}$. 
+\end{prop}
+
+\begin{proof}
+  داسې متناظر مدل جوړوو چې د \Ax{4} يوه بېلګه پکې ناسمه وي؛ ځکه دا
+  بېلګه په \Log{K4} کښې په څرګنده !!{derivable} ده، خو په \Log{KB}
+  کښې نۀ ده، نو $\Log{K4} \nsubseteq \Log{KB}$ به ترې لازم شي۔
+  د \olref{fig:Bnot4} متناظر مدل~$\mModel{M}$ وګورئ۔ څرنګه چې مدل
+  متناظر دے، \Ax{K} او~\Ax{B} په~$\mModel{M}$ کښې رښتيا دي
+  (په ترتيب سره د \olref[syn][sch]{prop:Kvalid} او
+  \olref[frd][acc]{thm:soundschemas} له مخې)۔ خو
+  $\mSat/{M}{\Box p \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label=above:\mFalse{p},
+    label={below:$\mSat{{}}{\Box p}$\\ $\mSat/{{}}{\Box\Box p}$}] {$w_1$}; 
+    \node[world] (w2) [label=above:\mTrue{p},
+      label=below:$\mSat/{{}}{\Box p}$, right=of w1]{$w_2$}; 
+    \draw[->, bend left] (w1) to (w2); 
+    \draw[->, bend left] (w2) to (w1); 
+  \end{tikzpicture}
+  \caption{يو متناظر مدل چې د \Ax{4} يوه بېلګه پکې ناسمه ده۔}
+  \ollabel{fig:Bnot4}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KTBnot45}
+  $\Log{KTB} \Proves/ \Ax{4}$ او $\Log{KTB} \Proves/ \Ax{5}$.
+\end{thm}
+
+\begin{proof}
+  په منجمده سرچينه کښې د پورتنۍ دعوې 4 او 5 بديهي اصول د نظامونو په
+  نښو چاپ شوي؛ دلته يې د بديهي اصلونو نښې کارول شوې دي۔ د
+  \olref[frd][acc]{thm:soundschemas} له مخې پوهېږو چې د \Ax{T} او
+  \Ax{B} ټولې بېلګې په هر انعکاسي او متناظر مدل کښې په ترتيب سره
+  رښتيا دي۔ نو د سموالي له مخې بس ده چې يو انعکاسي متناظر مدل پيدا
+  کړو چې په يوه نړۍ کښې د~\Ax{4} يوه بېلګه ناسمه وي، او د~\Ax{5}
+  دپاره هم همداسې وکړو۔ د دواړو دعوو دپاره هماغه يو مدل کاروو۔ په
+  \olref{fig:KTBnot45} کښې متناظر او انعکاسي مدل وګورئ۔ هلته
+  $\mSat/{M}{\Box p \to \Box \Box
+    p}[w_1]$، نو \Ax{4} په $w_1$ کښې ناسم دے۔ همدارنګه
+  $\mSat/{M}{\Diamond
+    \lnot p \lif \Box \Diamond \lnot p}[w_2]$، نو د~\Ax{5} هغه
+  بېلګه چې $!A = \lnot p$ وي، په~$w_2$ کښې ناسمه ده۔
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label={right:\mTrue{p}},
+      label={below: $\mSat{{}}{\Box p}$\\
+        $\mSat/{{}}{\Box\Box p}$\\
+        $\mSat/{{}}{\Diamond\lnot p}$}] {$w_1$};
+    \draw[reflexive above] (w1) to (w1);
+    \node[world] (w2) [label={right:\mTrue{p}}, label={below:
+        $\mSat{{}}{\Diamond\lnot p}$\\
+        $\mSat/{{}}{\Box\Diamond\lnot p}$}, right=of w1] {$w_2$} ;
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3) [label={right:\mFalse{p}},right=of w2] {$w_3$};
+    \draw[reflexive above] (w3) to (w3);
+    \draw[->, bend left] (w1) to (w2);  
+    \draw[->, bend left] (w2) to (w3);  
+    \draw[->, bend left] (w3) to (w2);  
+    \draw[->, bend left] (w2) to (w1);  
+  \end{tikzpicture}
+  \caption{د \olref{thm:KTBnot45} دپاره مدل۔}
+  \ollabel{fig:KTBnot45}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KD5not4}
+  $\Log{KD5} \neq \Log{KT4} = \Log{S4}$.
+\end{thm}
+
+\begin{proof}
+  د \olref[frd][acc]{thm:soundschemas} له مخې پوهېږو چې د \Ax{D}
+  او~\Ax{5} ټولې بېلګې په ټولو مسلسلو اقليدسي مدلونو کښې رښتيا دي۔
+  نو بس ده چې يو مسلسل اقليدسي مدل پيدا کړو چې په يوه نړۍ کښې د~\Ax{4}
+  يوه بېلګه ناسمه وي۔ د \olref{fig:KD5not4} مدل وګورئ او پام وکړئ
+  چې $\mSat/{M}{\Box p
+  \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w2) [label=north west:\mTrue{p}]{$w_2$} ;
+    \draw[reflexive left] (w2) to (w2);
+    \node[world] (w1) [label=right:\mFalse{p},
+      label=below:{$\mSat{{}}{\Box p}, \mSat/{{}}{\Box\Box p}$},
+      below right=of w2]{$w_1$};
+    \node[world] (w3) [label=north east:\mTrue{p}, above right=of w1]{$w_3$} ;
+    \draw[reflexive right] (w3) to (w3);
+    \node[world] (w4) [label=right:\mFalse{p},above right=of w2]{$w_4$};
+    \draw[reflexive above] (w4) to (w4);
+    \draw[->] (w1) to (w2);  
+    \draw[->] (w1) to (w3);  
+    \draw[->, bend left=15] (w2) to (w3);
+    \draw[->, bend left=15] (w3) to (w2);  
+    \draw[->, bend left=15] (w2) to (w4);
+    \draw[->, bend left=15] (w4) to (w2);  
+    \draw[->, bend left=15] (w3) to (w4);
+    \draw[->, bend left=15] (w4) to (w3);  
+  \end{tikzpicture}
+  \caption{د \olref{thm:KD5not4} دپاره مدل۔}
+  \ollabel{fig:KD5not4}
+\end{figure}
+
+\begin{prob}
+  د \olref[nml][prf][dis]{thm:KD5not4} يو بل ثبوت د $3$ نړۍو
+  لرونکي مدل په مرسته ورکړئ۔
+\end{prob}
+
+\begin{prob}
+  يو داسې انعکاسي او انتقالي مدل وړاندې کړئ چې دواړه
+  $\Log{KT4} \Proves/ \Ax{B}$ او $\Log{KT4} \Proves/ \Ax{5}$
+  وښيي۔
+\end{prob}
+
+\end{document}

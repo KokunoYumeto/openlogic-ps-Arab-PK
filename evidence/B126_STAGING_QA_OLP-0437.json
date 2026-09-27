@@ -1,0 +1,38 @@
+{
+  "schema": "ps-b126-distinct-modal-systems-staging-qa/1",
+  "unit_id": "OLP-0437",
+  "source_path": "content/normal-modal-logic/axioms-systems/systems-distinct.tex",
+  "source_sha256": "5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b",
+  "target_sha256": "db91e845bff749ac8ea83d2aa42368a63391cb80aa504a53e980fac4fadeefee",
+  "source_blocks": 20,
+  "target_blocks": 20,
+  "tikz_diagrams": 3,
+  "caption_count": 3,
+  "source_only_math": [
+    "$\\Log{KT}\\Proves\\Log{D}$",
+    "$\\Log{KTB}\\Proves/\\Log{4}$",
+    "$\\Log{KTB}\\Proves/\\Log{5}$"
+  ],
+  "target_only_math": [
+    "$\\Log{KT}\\Proves\\Ax{D}$",
+    "$\\Log{KTB}\\Proves/\\Ax{4}$",
+    "$\\Log{KTB}\\Proves/\\Ax{5}$"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "term_tokens": true,
+    "three_scoped_math_repairs": true,
+    "diagram_count": true,
+    "tikz_diagrams_exact": true,
+    "tikz_diagrams_byte_exact": true,
+    "caption_count": true,
+    "source_comments": true,
+    "adjacent_pashto_disclosures": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

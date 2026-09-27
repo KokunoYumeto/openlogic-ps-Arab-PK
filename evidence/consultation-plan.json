@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B125-NORMAL-MODAL-SOUNDNESS",
-  "status": "OLP-0436 source-reviewed and staged; nine paired blocks, seven reverse-paraphrase samples and preserved tagged induction cases",
+  "batch_id": "PS-B126-NORMAL-MODAL-SYSTEMS-DISTINCT",
+  "status": "OLP-0437 source-reviewed and staged; 20 paired blocks, eight reverse-paraphrase samples, three disclosed formula repairs and three exact TikZ diagrams",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9139,6 +9139,31 @@
       ],
       "scope": "Nine blocks defining modal-system soundness and proving the indexed class-intersection theorem by induction on proof length, with tagged Dual, MP and Nec cases.",
       "allowed_residual_english": []
+    },
+    "OLP-0437": {
+      "batch_id": "PS-B126-NORMAL-MODAL-SYSTEMS-DISTINCT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-MODAL-LOGIC",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-AXIOM",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "scope": "Twenty blocks comparing KD/KT, KB/K4, KTB/4/5 and KD5/KT4, with three exact TikZ model bodies and three disclosed Log-to-Ax source repairs.",
+      "allowed_residual_english": [
+        "KB",
+        "KD",
+        "htpb"
+      ]
     }
   },
   "semantic_review": [
@@ -14721,6 +14746,54 @@
       "passage": "Nec step",
       "reverse_paraphrase": "If B is Box C obtained by necessitation, validity of C and the cited necessitation rule give validity of B.",
       "finding": "Operator and rule direction retained."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "method",
+      "reverse_paraphrase": "Soundness separates two modal systems when one proves a formula refuted by a model of the other.",
+      "finding": "Proof/model contrast retained."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "KD versus KT",
+      "reverse_paraphrase": "KT derives the D axiom, while a serial nonreflexive model refutes T, making KD a proper subset.",
+      "finding": "Proper inclusion and axiom repair retained."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "KB versus K4",
+      "reverse_paraphrase": "A two-world symmetric model refutes transitivity, so B does not entail 4.",
+      "finding": "Model geometry and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "KTB theorem",
+      "reverse_paraphrase": "A reflexive symmetric three-world model refutes axiom 4 and axiom 5.",
+      "finding": "Both non-derivability claims retain their repaired axiom types."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "third figure",
+      "reverse_paraphrase": "The reflexive and symmetric arrows and truth labels in the shared countermodel are preserved exactly.",
+      "finding": "Diagram bytes retained; caption localized."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "KD5 versus KT4",
+      "reverse_paraphrase": "A serial Euclidean four-world model refutes axiom 4, separating KD5 from KT4/S4.",
+      "finding": "Direction and frame properties retained."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "first exercise",
+      "reverse_paraphrase": "Find a three-world alternative proof for the KD5 claim.",
+      "finding": "Problem remains open."
+    },
+    {
+      "unit_id": "OLP-0437",
+      "passage": "second exercise",
+      "reverse_paraphrase": "Find one reflexive transitive model refuting both B and 5 in KT4.",
+      "finding": "Both targets and model conditions retained."
     }
   ]
 }

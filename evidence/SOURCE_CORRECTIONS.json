@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0433; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T20:30:35.069653+00:00",
+  "status": "adopted through OLP-0437; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T21:58:41.209801+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10626,6 +10626,68 @@
       ],
       "decision_timing": "contemporaneous B122 owner proof review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-017",
+      "unit_id": "OLP-0437",
+      "classification": "system_macro_used_where_axiom_formula_required",
+      "source_path": "content/normal-modal-logic/axioms-systems/systems-distinct.tex",
+      "source_sha256": "5242bad1abef085ce60944f529370410d12a911fbe55fa1047a29fca3c7b214b",
+      "source_locator": "content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-33,65-75",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/axioms-systems/systems-distinct.tex",
+      "target_line_1based": 27,
+      "additional_target_lines_1based": [
+        68
+      ],
+      "disclosure_line_1based": 29,
+      "additional_disclosure_lines_1based": [
+        72,
+        73
+      ],
+      "target_sha256": "db91e845bff749ac8ea83d2aa42368a63391cb80aa504a53e980fac4fadeefee",
+      "mode": "adjacent-Pashto-disclosed-three-formula-repair",
+      "translation_change": "Use Ax{D} after the KT derivability sign and Ax{4}, Ax{5} after the KTB non-derivability signs, with adjacent Pashto disclosures.",
+      "reason": "The cited earlier proof derives axiom D from KT; the following proof and exercises identify 4 and 5 as axiom formulas. The frozen source instead uses the modal-system macro Log on the right of the derivability relation in three places.",
+      "formula_policy": "Exactly three inline math spans change as registered. All other math, figure bodies, identifiers, environments, structural macros, tags and frozen English remain unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Log{KT}\\Proves\\Log{D}$",
+          "$\\Log{KTB}\\Proves/\\Log{4}$",
+          "$\\Log{KTB}\\Proves/\\Log{5}$"
+        ],
+        "target_only": [
+          "$\\Log{KT}\\Proves\\Ax{D}$",
+          "$\\Log{KTB}\\Proves/\\Ax{4}$",
+          "$\\Log{KTB}\\Proves/\\Ax{5}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYSTEMS-DISTINCT",
+      "audit_artifacts": [
+        "B126_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-33,65-75",
+        "ps-Arab-PK/content/normal-modal-logic/axioms-systems/systems-distinct.tex:23-33,65-75",
+        "B126_STAGING_QA_OLP-0437.json"
+      ],
+      "decision_timing": "contemporaneous B126 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10706,7 +10768,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-MORE-K-PROOFS"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-MORE-K-PROOFS",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYSTEMS-DISTINCT"
   ],
   "source_authorities": [
     {
