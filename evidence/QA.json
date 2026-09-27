@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 439,
-    "structural_pass": 439,
+    "draft_units": 442,
+    "structural_pass": 442,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B128-NORMAL-MODAL-PROVABILITY-PROPERTIES",
+  "batch": "PS-B129-NORMAL-MODAL-COMPLETENESS-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14297,6 +14297,87 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0440",
+      "path": "content/normal-modal-logic/axioms-systems/consistency.tex",
+      "source_sha256": "410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b",
+      "translation_sha256": "f06139c06aff266b055de7bfbd0c39ffeb4254bc533f1ee7fde97832de9744f5",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0441",
+      "path": "content/normal-modal-logic/completeness/completeness.tex",
+      "source_sha256": "b1cc08131ec5862cc854398515ad134b4c816dfa7b9060ef15d2d5833e51b58d",
+      "translation_sha256": "0b198724433bf934ba6616a171550a8650c69dbe190f8c47399295b4664957e9",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0442",
+      "path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "translation_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -20005,6 +20086,90 @@
       "passage": "deductive closure",
       "reverse_paraphrase": "Relative to Sigma, every formula derivable from Gamma is already a member of Gamma.",
       "finding": "Syntactic direction and system relativity retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "consistency and semantics",
+      "reverse_paraphrase": "Inconsistency means falsehood is derivable; soundness prevents all members being true at one world. Completeness supplies the converse.",
+      "finding": "Syntactic/semantic direction retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "definition and examples",
+      "reverse_paraphrase": "Sigma consistency is non-derivability of falsehood; the given set is propositionally consistent but K-inconsistent, and the Diamond example is K5-inconsistent.",
+      "finding": "All three system scopes and formulas retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "witness fact",
+      "reverse_paraphrase": "Consistency is equivalent to at least one formula not being derivable.",
+      "finding": "Existential witness and non-derivability retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "derivability fact",
+      "reverse_paraphrase": "Gamma proves A iff Gamma with not-A is inconsistent.",
+      "finding": "Biconditional and negation retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "extension fact",
+      "reverse_paraphrase": "For a consistent Gamma, adjoining A or adjoining not-A has at least one consistent branch.",
+      "finding": "Inclusive disjunction and arbitrary formula retained."
+    },
+    {
+      "unit_id": "OLP-0440",
+      "passage": "proof",
+      "reverse_paraphrase": "If both branches are inconsistent, deduction gives A-implies-false and not-A-implies-false; the tautological-instance rule derives false.",
+      "finding": "Contraposition and source to/lif symbols retained."
+    },
+    {
+      "unit_id": "OLP-0441",
+      "passage": "driver",
+      "reverse_paraphrase": "Completeness and Canonical Models names a chapter importing eight source sections in their original order.",
+      "finding": "Chapter identifiers and import order retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "soundness classes",
+      "reverse_paraphrase": "Derivability implies validity in model classes validating Sigma; K, KT and KD correspond to all, reflexive and serial models respectively.",
+      "finding": "System/class direction retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "completeness forms",
+      "reverse_paraphrase": "Completeness reverses soundness and is equivalent to a countermodel whenever A is not derivable, or an A-model whenever not-A is not derivable.",
+      "finding": "Contrapositive and negated formula forms retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "countermodel example",
+      "reverse_paraphrase": "Refuting p-implies-Box-q needs p true and Box-q false at one world, plus an accessible q-false world.",
+      "finding": "World roles and truth assignments retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "consistency requirement",
+      "reverse_paraphrase": "A model is required for every Sigma-consistent formula, precisely the formulas whose negations are not derivable.",
+      "finding": "Universal scope and source parenthetical notation retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "world construction",
+      "reverse_paraphrase": "Extend A to a complete Sigma-consistent set and use all such sets as worlds.",
+      "finding": "One formula witness distinguished from full world set."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "accessibility constraints",
+      "reverse_paraphrase": "Box B requires B at every accessible world; Diamond C requires C at at least one.",
+      "finding": "Universal/existential scopes retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "passage": "truth and membership",
+      "reverse_paraphrase": "A is true at a world iff it belongs to its complete set; every consistent A belongs to some world in one canonical model.",
+      "finding": "Biconditional and single-model construction retained."
     }
   ],
   "builds": [

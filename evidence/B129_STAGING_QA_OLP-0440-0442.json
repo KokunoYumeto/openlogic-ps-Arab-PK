@@ -1,0 +1,81 @@
+{
+  "schema": "ps-b129-modal-completeness-opening-staging-qa/1",
+  "unit_ids": [
+    "OLP-0440",
+    "OLP-0441",
+    "OLP-0442"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0440",
+      "source_path": "content/normal-modal-logic/axioms-systems/consistency.tex",
+      "source_sha256": "410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b",
+      "target_sha256": "f06139c06aff266b055de7bfbd0c39ffeb4254bc533f1ee7fde97832de9744f5",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers_and_imports": true,
+        "inline_math": true,
+        "term_tokens": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "pashto_content": true,
+        "consistency_scope": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0441",
+      "source_path": "content/normal-modal-logic/completeness/completeness.tex",
+      "source_sha256": "b1cc08131ec5862cc854398515ad134b4c816dfa7b9060ef15d2d5833e51b58d",
+      "target_sha256": "0b198724433bf934ba6616a171550a8650c69dbe190f8c47399295b4664957e9",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers_and_imports": true,
+        "inline_math": true,
+        "term_tokens": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "pashto_content": true,
+        "chapter_title": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0442",
+      "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers_and_imports": true,
+        "inline_math": true,
+        "term_tokens": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "pashto_content": true,
+        "canonical_truth_membership": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "new_blocks": 29,
+  "all_checks_pass": true
+}

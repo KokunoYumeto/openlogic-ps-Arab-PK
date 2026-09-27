@@ -1,0 +1,63 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{con}
+
+\olsection{سازګاري}
+
+سازګاري د !!{formula}s د سټونو يو مهم خاصيت دے۔ د !!{formula}s يو
+سټ هغه وخت ناسازګار وي چې يو تناقض، لکه~$\lfalse$، ترې !!{derivable}
+وي؛ او که داسې نۀ وي، سازګار وي۔ که يو سټ ناسازګار وي، نو ټول
+!!{formula}s ئې د يوه مدل په يوه نړۍ کښې يو ځای رښتيا نۀ شي کېدے۔
+د بشپړتيا د قضيې دپاره د دې سرچپه لور ثابتوو: هر سازګار سټ د يوه
+مدل، يعنې «کانوني مدل»، په يوه نړۍ کښې رښتيا وي۔
+
+\begin{defn}
+  يو سټ~$\Gamma$ د نظام~$\Sigma$ په نسبت \emph{سازګار}، يا په لنډه
+  «$\Sigma$-سازګار»، هله او يوازې هله وي چې $\Gamma
+  \Proves/[\Sigma] \lfalse$.
+\end{defn}
+
+نو د بېلګې په توګه، سټ $\{ \Box(p \lif q), \Box p, \lnot\Box q \}$
+د بياني منطق په نسبت سازګار دے، خو له \Log{K} سره سازګار نۀ دے۔
+همدارنګه، سټ $\{ \Diamond p, \Box\Diamond
+p \lif q, \lnot q \}$ له \Log{K5} سره سازګار نۀ دے۔
+
+\begin{prop}\ollabel{prop:consistencyfacts}
+  $\Gamma$ دې د !!{formula}s يو سټ وي۔ بيا:
+  \begin{enumerate}
+  \item $\Gamma$ هله او يوازې هله د~$\Sigma$ په نسبت سازګار وي چې
+    داسې کوم !!{formula}~$!A$ وي چې $\Gamma \Proves/[\Sigma]
+    !A$.
+  \item \ollabel{prop:consistencyfacts-b}%
+    $\Gamma \Proves[\Sigma] !A$ هله او يوازې هله وي چې $\Gamma \cup \{
+    \lnot!A \}$ د~$\Sigma$ په نسبت سازګار نۀ وي۔
+  \item \ollabel{prop:consistencyfacts-c}%
+    که $\Gamma$ د~$\Sigma$ په نسبت سازګار وي، نو د هر !!{formula}
+    $!A$ دپاره يا $\Gamma \cup \{ !A \}$ د~$\Sigma$ په نسبت
+    سازګار وي يا $\Gamma \cup \{ \lnot!A \}$ د~$\Sigma$ په نسبت
+    سازګار وي۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  دا حقيقتونه له کلاسيک بياني منطق څخه په اسانۍ لازمېږي۔ د
+  \olref{prop:consistencyfacts-c} دپاره استدلال وړاندې کوو۔ د
+  نقيض له لارې ځو او فرض کوو چې نۀ $\Gamma \cup \{ !A \}$ او نۀ
+  $\Gamma \cup \{ \lnot!A \}$ د~$\Sigma$ په نسبت سازګار دي۔ نو د
+  \olref{prop:consistencyfacts-b} له مخې دواړه $\Gamma, !A \Proves[\Sigma]
+  \lfalse$ او $\Gamma, \lnot !A \Proves[\Sigma] \lfalse$ دي۔ د
+  استنتاج د قضيې له مخې $\Gamma \Proves[\Sigma] !A \to \lfalse$ او
+  $\Gamma \Proves[\Sigma] \lnot!A \lif \lfalse$ دي۔ خو $(!A \lif
+  \lfalse) \lif ((\lnot!A \lif \lfalse) \lif \lfalse)$ د
+  تاوتولوژۍ يوه بېلګه ده؛ نو د
+  \olref[prp]{prop:derivabilityfacts}\olref[prp]{prop:derivabilityfacts-ruleT}
+  له مخې $\Gamma \Proves[\Sigma] \lfalse$.
+\end{proof}
+
+\end{document}

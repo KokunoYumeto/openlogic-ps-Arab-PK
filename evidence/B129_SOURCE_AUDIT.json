@@ -1,0 +1,139 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T22:52:47.140690+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETENESS-OPENING",
+  "batch_id": "PS-B129-NORMAL-MODAL-COMPLETENESS-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0440",
+      "source_path": "content/normal-modal-logic/axioms-systems/consistency.tex",
+      "source_bytes": 2493,
+      "source_sha256": "410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b",
+      "target_sha256": "f06139c06aff266b055de7bfbd0c39ffeb4254bc533f1ee7fde97832de9744f5",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0441",
+      "source_path": "content/normal-modal-logic/completeness/completeness.tex",
+      "source_bytes": 448,
+      "source_sha256": "b1cc08131ec5862cc854398515ad134b4c816dfa7b9060ef15d2d5833e51b58d",
+      "target_sha256": "0b198724433bf934ba6616a171550a8650c69dbe190f8c47399295b4664957e9",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0442",
+      "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_bytes": 3698,
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B129_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "b7bbd61076257bd166ad079c33af1fef9ea94a0a30d739f672d1bd8e10fe6c54",
+  "consultation_path": "work/B129_CANON_CONSULTATION.md",
+  "consultation_sha256": "ad56ebba0a24ac328389fb95f74077a17815694e8def08b0c3d339ac4b887a07",
+  "staging_qa_sha256": "8f3343aa98f118667943b21044dcf9fbd4a92aed4d7855fcff9f32b3020f0829",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "fresh B129 rendered-page inspection",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 145,
+      "printed_page": "140",
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "inspection_timing": "fresh B129 rendered-page inspection",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-MOE-P3-SET",
+      "source_id": "PS-AF-MOE-G7-1398",
+      "pdf_page_1based": 10,
+      "printed_page": "3",
+      "page_image_sha256": "fbb17f07b7c220c6f65989fe6eec843f03d592074d04b32912ff00a9b7fd6cc6",
+      "inspection_timing": "fresh B129 rendered-page inspection",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0440",
+      "source_lines": "13-61",
+      "kind": "consistency-definition-and-proof",
+      "finding": "System-relative non-derivability, examples, three equivalences/extension facts and contraposition proof retain exact math."
+    },
+    {
+      "unit_id": "OLP-0441",
+      "source_lines": "8-19",
+      "kind": "chapter-driver",
+      "finding": "Only title localized; all eight imports and end hook retained."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "source_lines": "13-71",
+      "kind": "completeness-and-canonical-model-opening",
+      "finding": "All countermodel forms, world/accessibility constraints and truth/membership scopes retained."
+    }
+  ],
+  "formula_policy": "All formulas, identifiers, term markers, imports, source comments, emphasis macros and formal symbols remain unchanged; frozen English unchanged.",
+  "unresolved": "Exact Pakistani canonical-model compound remains provisional; no reader-layout or human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0440–0442; continue OLP-0443."
+}
