@@ -2966,3 +2966,35 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Adds [w] to one satisfaction expression in the second modal-duality proof and discloses the addition in Pashto beside that proof.
 - Evidence: Relational satisfaction is defined at a world, and the surrounding equivalence, immediately following expression and later proof step all use [w]. The one source expression omits it.
 - Formal check: 24,576 three-world duality equations and nine exercise results. Frozen English remains unchanged.
+
+## OLNML-004
+
+- Unit: `OLP-0416`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex` (d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa) at `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:63`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:62` (5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5); adjacent disclosure at line 144.
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES`.
+- Treatment: Changes only the negation induction case tag from prvFalse to prvNot and discloses the repair beside the proof.
+- Evidence: The case pattern is not B, while prvFalse labels the preceding false-constant case. The modal truth definition uses prvNot for negation.
+- Finite check: 84,992 substitution equations and four biconditional truth rows. Frozen English remains unchanged.
+
+
+## OLNML-005
+
+- Unit: `OLP-0416`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex` (d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa) at `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:73`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:72` (5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5); adjacent disclosure at line 144.
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES`.
+- Treatment: Changes the final negation-case justification from propositional satisfaction to modal satisfaction at w and discloses the repair.
+- Evidence: The last equivalence moves between modal nonsatisfaction of a substituted formula and modal satisfaction of its negation at the same world; it invokes the modal truth definition, not the propositional valuation definition.
+- Finite check: 84,992 substitution equations and four biconditional truth rows. Frozen English remains unchanged.
+
+
+## OLNML-006
+
+- Unit: `OLP-0416`.
+- Frozen source: `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex` (d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa) at `content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:124`.
+- Pashto target: `ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:123` (5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5); adjacent disclosure at line 144.
+- Audit: `PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES`.
+- Treatment: Changes only the opening formula of the biconditional induction case from B if C to B iff C and discloses the repair.
+- Evidence: The case pattern, both truth alternatives and final substituted expression all concern the biconditional; the source opening formula alone uses the conditional.
+- Finite check: 84,992 substitution equations and four biconditional truth rows. Frozen English remains unchanged.

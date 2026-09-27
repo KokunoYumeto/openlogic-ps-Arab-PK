@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 415,
-    "structural_pass": 415,
+    "draft_units": 416,
+    "structural_pass": 416,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B106-NORMAL-MODAL-VALIDITY",
+  "batch": "PS-B107-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13494,6 +13494,61 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0416",
+      "path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+      "translation_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLNML"
+      ],
+      "allowed_residual_english": [
+        "OLNML"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-004",
+        "OLNML-005",
+        "OLNML-006"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}.\\end{align*}",
+          "\\begin{align*}\\pSat{v}{!B\\lif!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}",
+          "\\begin{align*}\\pSat{v}{!B\\liff!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      },
+      "optional_tag_diff": {
+        "source_only": [
+          "prvFalse"
+        ],
+        "target_only": [
+          "prvNot"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -18080,6 +18135,66 @@
       "passage": "empty relation class",
       "reverse_paraphrase": "B implies Box A, and Diamond A implies B, because Box is vacuously true and Diamond false.",
       "finding": "No-accessibility scope retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "tautology",
+      "reverse_paraphrase": "A modal-free formula is a tautology if every truth assignment makes it true.",
+      "finding": "Truth assignment universal scope preserved."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "modal contrast",
+      "reverse_paraphrase": "Modal formulas containing Box or Diamond are evaluated for validity, not given the earlier nonmodal tautology definition.",
+      "finding": "Definition boundary retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "instance",
+      "reverse_paraphrase": "Replace each propositional variable of a modal-free tautology simultaneously by a modal formula.",
+      "finding": "Substitution direction and all n indices retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "lemma setup",
+      "reverse_paraphrase": "At fixed M,w set propositional pi true exactly when modal Di is true at w.",
+      "finding": "Assignment/model/world quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "atomic case",
+      "reverse_paraphrase": "The substitution of pi equals Di, so propositional and modal truth match.",
+      "finding": "Atomic identity retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "negation case",
+      "reverse_paraphrase": "Propositional nonsatisfaction matches modal nonsatisfaction, then modal truth of the negated substitution.",
+      "finding": "Correct modal satisfaction definition cited as OLNML-005."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "conjunction and disjunction",
+      "reverse_paraphrase": "The induction hypothesis transfers each Boolean component at the same world.",
+      "finding": "Both truth branches retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "conditional",
+      "reverse_paraphrase": "B implies C is false only when B true and C false.",
+      "finding": "Source or form retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "biconditional",
+      "reverse_paraphrase": "B iff C holds when both components agree in truth value.",
+      "finding": "Four rows checked; corrected opening connective OLNML-006."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "validity contraposition",
+      "reverse_paraphrase": "A countermodel world to a substituted formula induces an assignment falsifying the original A.",
+      "finding": "Counterexample direction and arbitrary outside values retained."
     }
   ],
   "builds": [

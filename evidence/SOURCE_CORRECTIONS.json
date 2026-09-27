@@ -9980,6 +9980,159 @@
       ],
       "decision_timing": "contemporaneous B104 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-004",
+      "unit_id": "OLP-0416",
+      "classification": "negation_induction_case_mistagged_as_false_constant",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:63",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "target_line_1based": 62,
+      "disclosure_line_1based": 144,
+      "target_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+      "mode": "correct-optional-tag-plus-adjacent-Pashto-note",
+      "translation_change": "Changes only the negation induction case tag from prvFalse to prvNot and discloses the repair beside the proof.",
+      "reason": "The case pattern is not B, while prvFalse labels the preceding false-constant case. The modal truth definition uses prvNot for negation.",
+      "formula_policy": "Exactly the listed one-case formal difference is permitted; other math spans, identifiers, structural macros, environments and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [
+          "prvFalse"
+        ],
+        "target_only": [
+          "prvNot"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
+      "audit_artifacts": [
+        "B107_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:63",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:62",
+        "B107_TAUTOLOGICAL_INSTANCES_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B107 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-005",
+      "unit_id": "OLP-0416",
+      "classification": "wrong_satisfaction_definition_cited_in_negation_proof",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:73",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "target_line_1based": 72,
+      "disclosure_line_1based": 144,
+      "target_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+      "mode": "correct-modal-satisfaction-reference-plus-adjacent-Pashto-note",
+      "translation_change": "Changes the final negation-case justification from propositional satisfaction to modal satisfaction at w and discloses the repair.",
+      "reason": "The last equivalence moves between modal nonsatisfaction of a substituted formula and modal satisfaction of its negation at the same world; it invokes the modal truth definition, not the propositional valuation definition.",
+      "formula_policy": "Exactly the listed one-case formal difference is permitted; other math spans, identifiers, structural macros, environments and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
+      "audit_artifacts": [
+        "B107_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:73",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:72",
+        "B107_TAUTOLOGICAL_INSTANCES_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B107 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-006",
+      "unit_id": "OLP-0416",
+      "classification": "biconditional_induction_case_opens_with_conditional",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+      "source_locator": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:124",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+      "target_line_1based": 123,
+      "disclosure_line_1based": 144,
+      "target_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+      "mode": "correct-biconditional-connective-plus-adjacent-Pashto-note",
+      "translation_change": "Changes only the opening formula of the biconditional induction case from B if C to B iff C and discloses the repair.",
+      "reason": "The case pattern, both truth alternatives and final substituted expression all concern the biconditional; the source opening formula alone uses the conditional.",
+      "formula_policy": "Exactly the listed one-case formal difference is permitted; other math spans, identifiers, structural macros, environments and term tokens match frozen English. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\pSat{v}{!B\\lif!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\pSat{v}{!B\\liff!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
+      "audit_artifacts": [
+        "B107_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:124",
+        "ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex:123",
+        "B107_TAUTOLOGICAL_INSTANCES_SEMANTICS.json"
+      ],
+      "decision_timing": "contemporaneous B107 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

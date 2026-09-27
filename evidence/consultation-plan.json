@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B106-NORMAL-MODAL-VALIDITY",
-  "status": "OLP-0415 source-reviewed and staged; 13 paired blocks, unchanged formulas, eight reverse-paraphrase samples and 98,304 finite world checks",
+  "batch_id": "PS-B107-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
+  "status": "OLP-0416 source-reviewed and staged; 12 paired blocks, three disclosed corrections, ten reverse-paraphrase samples and 84,992 finite substitution checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8702,6 +8702,27 @@
       ],
       "scope": "Thirteen-block validity explanation, class-relative definition, subset and necessitation propositions, proof and two exercise sets; unrestricted versus reflexive and empty-relation classes distinguished.",
       "allowed_residual_english": []
+    },
+    "OLP-0416": {
+      "batch_id": "PS-B107-NORMAL-MODAL-TAUTOLOGICAL-INSTANCES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-LOGIC",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Twelve-block nonmodal tautology and modal substitution definition, inductive substitution lemma, contrapositive validity proof and three disclosed source repairs.",
+      "allowed_residual_english": [
+        "OLNML"
+      ]
     }
   },
   "semantic_review": [
@@ -13288,6 +13309,66 @@
       "passage": "empty relation class",
       "reverse_paraphrase": "B implies Box A, and Diamond A implies B, because Box is vacuously true and Diamond false.",
       "finding": "No-accessibility scope retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "tautology",
+      "reverse_paraphrase": "A modal-free formula is a tautology if every truth assignment makes it true.",
+      "finding": "Truth assignment universal scope preserved."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "modal contrast",
+      "reverse_paraphrase": "Modal formulas containing Box or Diamond are evaluated for validity, not given the earlier nonmodal tautology definition.",
+      "finding": "Definition boundary retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "instance",
+      "reverse_paraphrase": "Replace each propositional variable of a modal-free tautology simultaneously by a modal formula.",
+      "finding": "Substitution direction and all n indices retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "lemma setup",
+      "reverse_paraphrase": "At fixed M,w set propositional pi true exactly when modal Di is true at w.",
+      "finding": "Assignment/model/world quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "atomic case",
+      "reverse_paraphrase": "The substitution of pi equals Di, so propositional and modal truth match.",
+      "finding": "Atomic identity retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "negation case",
+      "reverse_paraphrase": "Propositional nonsatisfaction matches modal nonsatisfaction, then modal truth of the negated substitution.",
+      "finding": "Correct modal satisfaction definition cited as OLNML-005."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "conjunction and disjunction",
+      "reverse_paraphrase": "The induction hypothesis transfers each Boolean component at the same world.",
+      "finding": "Both truth branches retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "conditional",
+      "reverse_paraphrase": "B implies C is false only when B true and C false.",
+      "finding": "Source or form retained."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "biconditional",
+      "reverse_paraphrase": "B iff C holds when both components agree in truth value.",
+      "finding": "Four rows checked; corrected opening connective OLNML-006."
+    },
+    {
+      "unit_id": "OLP-0416",
+      "passage": "validity contraposition",
+      "reverse_paraphrase": "A countermodel world to a substituted formula induces an assignment falsifying the original A.",
+      "finding": "Counterexample direction and arbitrary outside values retained."
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 415 of 722 source units are translated drafts. This log contains 205 terminology entries and 340 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 416 of 722 source units are translated drafts. This log contains 205 terminology entries and 343 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4763,6 +4763,28 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex#L92) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex#L104).
 - Treatment: add only the missing [w] in the second duality proof, with a Pashto disclosure after the proof.
 - Review question: Is the world argument now consistent across the equivalence and its following proof steps?
+
+
+## DEC-OLNML-004
+
+- Type: source correction; negation induction case tagged as the false-constant case.
+- Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L63) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L62).
+- Treatment: change only the optional tag to prvNot and disclose it beside the proof.
+- Review question: Does the tag now select negation independently of the false-constant case?
+
+## DEC-OLNML-005
+
+- Type: source correction; wrong satisfaction definition cited in the final negation step.
+- Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L73) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L72).
+- Treatment: cite modal satisfaction at w for the final equivalence, with a Pashto disclosure.
+- Review question: Does the last equivalence invoke the modal negation truth condition?
+
+## DEC-OLNML-006
+
+- Type: source correction; biconditional induction case opens with a conditional.
+- Source and target: [frozen English](upstream/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L124) and [Pashto draft](ps-Arab-PK/content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex#L123).
+- Treatment: change only the opening connective to biconditional and disclose it beside the proof.
+- Review question: Does the opening formula match the case pattern and two truth alternatives?
 
 ## DEC-REL-I
 

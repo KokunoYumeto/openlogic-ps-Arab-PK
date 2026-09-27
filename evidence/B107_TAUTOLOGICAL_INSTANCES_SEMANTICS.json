@@ -1,0 +1,23 @@
+{
+  "schema": "ps-b107-tautological-instances-semantics/1",
+  "status": "PASS",
+  "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+  "target_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+  "two_world_relations": 16,
+  "two_atom_world_valuations_per_relation": 16,
+  "worlds_per_model": 2,
+  "modal_free_schemas": 166,
+  "substitution_equations_checked": 84992,
+  "modal_replacements": [
+    "Box p",
+    "Diamond not q"
+  ],
+  "biconditional_truth_rows_checked": 4,
+  "excluded_middle_substitution_valid_in_all_sampled_models": true,
+  "source_correction_ids": [
+    "OLNML-004",
+    "OLNML-005",
+    "OLNML-006"
+  ],
+  "limitation": "Finite exhaustive sample supports but does not replace the retained structural induction proof."
+}

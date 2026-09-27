@@ -1,0 +1,45 @@
+{
+  "schema": "ps-b107-tautological-instances-staging-qa/1",
+  "unit_id": "OLP-0416",
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+  "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+  "target_sha256": "5d475b1bff90db6b708f3a06c1177c2aaf2cef46d5f964d9a51c42414500f1c5",
+  "source_blocks": 12,
+  "target_blocks": 12,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "diagram": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}.\\end{align*}",
+    "\\begin{align*}\\pSat{v}{!B\\lif!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+  ],
+  "target_only_math": [
+    "\\begin{align*}\\pSat{v}{\\lnot!B}\\Leftrightarrow{}&\\pSat/{v}{!B}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$};\\\\\\Leftrightarrow{}&\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{\\lnot!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}",
+    "\\begin{align*}\\pSat{v}{!B\\liff!C}\\Leftrightarrow{}&\\text{LOCALIZED}\\pSat{v}{!B}\\text{LOCALIZED}\\pSat{v}{!C}\\\\&\\text{LOCALIZED}\\pSat/{v}{!B}\\text{LOCALIZED}\\pSat/{v}{!C}\\\\&\\qquad\\text{LOCALIZED$\\pSat{v}{}$}\\\\\\Leftrightarrow{}&\\text{LOCALIZED}\\mSat{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\text{LOCALIZED}\\mSat/{M}{\\SSubst{!B}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\text{LOCALIZED}\\\\&\\qquad\\mSat/{M}{\\SSubst{!C}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED}\\\\\\Leftrightarrow{}&\\mSat{M}{\\SSubst{(!B\\liff!C)}{\\subst{!D_1}{p_1},\\dots,\\subst{!D_n}{p_n}}}[w]\\\\&\\qquad\\text{LOCALIZED$\\mSat{M}{}[w]$}.\\end{align*}"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [
+    "prvFalse"
+  ],
+  "target_only_tags": [
+    "prvNot"
+  ],
+  "documented_math_exceptions": [
+    "OLNML-005",
+    "OLNML-006"
+  ],
+  "documented_optional_tag_exception": "OLNML-004",
+  "all_checks_pass": true
+}

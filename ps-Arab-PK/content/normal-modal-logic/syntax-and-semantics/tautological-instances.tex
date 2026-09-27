@@ -1,0 +1,165 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: tautological-instances
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tau}
+
+\olsection{د تاوتولوژۍ تعويضي بېلګې}
+
+\begin{explain}
+يو نامودالي فارمول هغه وخت تاوتولوژي وي چې د رښتياوالي د قيمت د هرې
+ټاکنې لاندې رښتيا وي۔ ښکاره ده چې هره تاوتولوژي د هر مدل په هره نړۍ
+کښې رښتيا ده۔ خو د هغو !!{formula}s دپاره چې $\Box$ او~$\Diamond$
+لري، د تاوتولوژۍ مفهوم نۀ دے تعريف شوے۔ د بېلګې په توګه، آيا
+$\Box p \lor \lnot \Box p$، چې د درېم حالت د نفي د اصل يوه بېلګه
+ده، معتبر دے؟ د \emph{تاوتولوژيکي تعويضي بېلګې} مفهوم مرسته کوي:
+هغه !!a{formula} چې د يوې (نامودالي) تاوتولوژۍ د تعويض بېلګه وي۔
+دا چې هره داسې بېلګه معتبره ده، د حيرانتيا خبره نۀ ده؛ خو بيا هم
+ثبوت غواړي۔
+\end{explain}
+
+\begin{defn}
+  مودالي !!{formula}~$!B$ هله او يوازې هله يوه \emph{تاوتولوژيکي
+    تعويضي بېلګه} ده چې داسې نامودالي تاوتولوژي~$!A$ د !!{propositional
+    variable}s $p_1$، \dots،~$p_n$ سره، او داسې !!{formula}s $!D_1$،
+  \dots،~$!D_n$ وي چې $!B \ident \SSubst{!A}{\subst{!D_1}{p_1},
+    \dots, \subst{!D_n}{p_n}}$ وي۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:valid-taut}
+  فرض کړئ $!A$ داسې نامودالي !!{formula} وي چې !!{propositional
+  variable}s ئې $p_1$، \dots، $p_n$ دي؛ او $!D_1$، \dots،
+  $!D_n$ مودالي !!{formula}s وي۔ بيا د هرې ټاکنې $\pAssign{v}$،
+  هر مدل $\mModel{M} = \tuple{W, R, V}$، او هر $w \in W$ دپاره،
+  چې د هر شاخص دپاره $\pAssign{v}(p_i) = \True$ هله او يوازې هله چې
+  $\mSat{M}{!D_i}[w]$ وي، $\pSat{v}{!A}$ هله او يوازې هله چې
+  $\mSat{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+      \subst{!D_n}{p_n}}}[w]$.
+\end{lem}
+
+\begin{proof}
+  پر $!A$ په استقرا سره ثبوت کوو۔
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\pSat/{v}{\lfalse}$
+      او $\mSat/{M}{\lfalse}[w]$ دواړه سم دي}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\pSat{v}{\ltrue}$
+      او $\mSat{M}{\ltrue}[w]$ دواړه سم دي}.}{}
+  \item \indcase{!A}{p_i}{%
+    \begin{align*}
+      \pSat{v}{p_i} \Leftrightarrow {} & \pAssign{v}(p_i) = \True \\
+      & \qquad \text{د $\pSat{v}{p_i}$ د تعريف له مخې}\\
+      \Leftrightarrow {} & \mSat{M}{!D_i}[w] \\
+      &\qquad \text{د فرض له مخې}\\
+      \Leftrightarrow {} & \mSat{M}{\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+      &\qquad \text{ځکه چې $\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}} \ident !D_i$ دے}.
+      \end{align*}}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+      \begin{align*}
+        \pSat{v}{\lnot !B} \Leftrightarrow {} & \pSat/{v}{!B}\\
+        &\qquad \text{د $\pSat{v}{}$ د تعريف له مخې};\\
+        \Leftrightarrow {} & \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د استقرايي فرض له مخې}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\lnot !B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د $\mSat{M}{}[w]$ د تعريف له مخې}.
+      \end{align*}}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \land !C} \Leftrightarrow {} &
+        \pSat{v}{!B} \text{ او } \pSat{v}{!C}\\
+        &\qquad \text{د $\pSat{v}{}$ د تعريف له مخې}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ او } \\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د استقرايي فرض له مخې}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \land !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د $\mSat{M}{}[w]$ د تعريف له مخې}.
+      \end{align*}}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lor !C} \Leftrightarrow{} &
+        \pSat{v}{!B} \text{ يا } \pSat{v}{!C}\\
+        &\qquad \text{د $\pSat{v}{}$ د تعريف له مخې};\\
+        \Leftrightarrow{} & \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ يا }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د استقرايي فرض له مخې}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lor !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د $\mSat{M}{}[w]$ د تعريف له مخې}.
+      \end{align*}}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lif !C} \Leftrightarrow{} &
+        \pSat/{v}{!B} \text{ يا } \pSat{v}{!C}\\
+        &\qquad \text{د $\pSat{v}{}$ د تعريف له مخې}\\
+        \Leftrightarrow{} &
+        \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ يا }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د استقرايي فرض له مخې}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lif !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د $\mSat{M}{}[w]$ د تعريف له مخې}.
+      \end{align*}}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \liff !C} \Leftrightarrow {} &
+        \text{يا خو } \pSat{v}{!B} \text{ او } \pSat{v}{!C}\\
+        & \text{ يا } \pSat/{v}{!B} \text{ او } \pSat/{v}{!C}\\
+        &\qquad \text{د $\pSat{v}{}$ د تعريف له مخې}\\
+        \Leftrightarrow {} &
+        \text{يا خو } \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ او }\\
+        & \qquad \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\ 
+        &  \text{ يا } \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ او }\\
+        & \qquad \mSat/{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad\text{د استقرايي فرض له مخې}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{(!B \liff !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{د $\mSat{M}{}[w]$ د تعريف له مخې}.
+      \end{align*}}}{}
+  \end{enumerate}
+  \end{proof}
+\textbf{د نسخې د سمون يادونه (OLNML-004–006):} د سرچينې د نفي د
+استقرايي مورد نښه په تېروتنه د کاذب ثابت نښه وه؛ دلته د نفي نښه
+کارول شوې ده۔ د هماغه مورد په وروستي ګام کښې د صدق د سمې مودالي
+اړيکې تعريف ياد شوے دے۔ د دوه‌اړخيز شرط د مورد په لومړۍ کرښه کښې
+هم د يو اړخيز شرط پر ځاے دوه‌اړخيز شرط ليکل شوے دے۔
+
+\begin{prop}\ollabel{prop:valid-taut}
+  ټولې تاوتولوژيکي تعويضي بېلګې معتبرې دي۔
+\end{prop}
+
+\begin{proof}
+  د مقابل نقيض له لارې: فرض کړئ $!A$ داسې وي چې
+  $\mSat/{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+  \subst{!D_n}{p_n}}}[w]$ د کوم مدل $\mModel{M}$ او نړۍ~$w$
+  دپاره وي۔ داسې ټاکنه $\pAssign{v}$ تعريف کړئ چې $\pAssign{v}(p_i) =
+  \True$ هله او يوازې هله چې $\mSat{M}{!D_i}[w]$ وي (او $\pAssign{v}$
+  د $q \notin \{p_1, \dots, p_n \}$ دپاره هر ډول قيمتونه ټاکي)۔ بيا د
+  \olref{lem:valid-taut} له مخې $\pSat/{v}{!A}$ وي، نو $!A$
+  تاوتولوژي نۀ ده۔
+\end{proof}
+
+\end{document}
