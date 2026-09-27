@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B078-LAMBDA-MINIMIZATION",
-  "status": "OLP-0380 source-reviewed and staged; eleven paired blocks, one exact math-span correction, one adjacent disclosure and five reverse-paraphrase samples",
+  "batch_id": "PS-B079-LAMBDA-PARTIAL-RECURSIVE",
+  "status": "OLP-0381 source-reviewed and staged; nine paired blocks, exact math parity and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8013,6 +8013,21 @@
       "allowed_residual_english": [
         "OLLAM"
       ]
+    },
+    "OLP-0381": {
+      "batch_id": "PS-B079-LAMBDA-PARTIAL-RECURSIVE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-PARTIAL-RECURSIVE-SEARCH",
+        "TERM-LAMBDA-CHURCH-NUMERALS",
+        "TERM-LAMBDA-REDUCTION-CURRYING"
+      ],
+      "scope": "All nine paired blocks: partial-recursive class, unbounded search, failure of naive lambda composition for undefined inputs, and the theorem stated without proof. No math correction. Pakistani scholarly prose and grammar govern usage; Afghan function prose is only a labelled regional comparator.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11441,6 +11456,30 @@
       "passage": "general-recursive proposition",
       "reverse_paraphrase": "The basis and closure under composition, primitive recursion and regular minimization show every general recursive function is lambda-definable.",
       "finding": "All referenced lemmas and the proposition's quantifier remain aligned."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "partial-recursive class",
+      "reverse_paraphrase": "Basic functions under composition, primitive recursion and unbounded minimization yield partial recursive functions; nonregular search may have no result.",
+      "finding": "The target distinguishes this class from the total general-recursive class without overstating divergence."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "naive lambda composition",
+      "reverse_paraphrase": "For representing terms F and G, a direct composition would use lambda x . F(G x), but this may fail for partial functions.",
+      "finding": "Term variables, application order and the conditional framing remain exact."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "ignored-argument counterexample",
+      "reverse_paraphrase": "Although G x has no normal form, the constant F = lambda x . lambda y . y ignores that argument, so F(G x) has normal form lambda y . y.",
+      "finding": "The target preserves the counterexample to naive strictness."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "partial-recursion theorem",
+      "reverse_paraphrase": "More involved encodings represent undefined values by terms lacking normal forms; every partial recursive function is lambda-definable, but the source omits the proof.",
+      "finding": "The target states the theorem without inventing a construction or proof."
     }
   ]
 }

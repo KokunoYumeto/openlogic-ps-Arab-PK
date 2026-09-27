@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 380,
-    "structural_pass": 380,
+    "draft_units": 381,
+    "structural_pass": 381,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B078-LAMBDA-MINIMIZATION",
+  "batch": "PS-B079-LAMBDA-PARTIAL-RECURSIVE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12031,6 +12031,32 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0381",
+      "path": "content/lambda-calculus/lambda-definability/partial-recursive-functions.tex",
+      "source_sha256": "a74678e3cced4a3650d799dae58d106964e63ddd9fd71b739a51531ef73325f0",
+      "translation_sha256": "3feedaf9836935c251834214bb9237b22743de50a7b8683aa81af4d4803f29af",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15459,6 +15485,30 @@
       "passage": "general-recursive proposition",
       "reverse_paraphrase": "The basis and closure under composition, primitive recursion and regular minimization show every general recursive function is lambda-definable.",
       "finding": "All referenced lemmas and the proposition's quantifier remain aligned."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "partial-recursive class",
+      "reverse_paraphrase": "Basic functions under composition, primitive recursion and unbounded minimization yield partial recursive functions; nonregular search may have no result.",
+      "finding": "The target distinguishes this class from the total general-recursive class without overstating divergence."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "naive lambda composition",
+      "reverse_paraphrase": "For representing terms F and G, a direct composition would use lambda x . F(G x), but this may fail for partial functions.",
+      "finding": "Term variables, application order and the conditional framing remain exact."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "ignored-argument counterexample",
+      "reverse_paraphrase": "Although G x has no normal form, the constant F = lambda x . lambda y . y ignores that argument, so F(G x) has normal form lambda y . y.",
+      "finding": "The target preserves the counterexample to naive strictness."
+    },
+    {
+      "unit_id": "OLP-0381",
+      "passage": "partial-recursion theorem",
+      "reverse_paraphrase": "More involved encodings represent undefined values by terms lacking normal forms; every partial recursive function is lambda-definable, but the source omits the proof.",
+      "finding": "The target states the theorem without inventing a construction or proof."
     }
   ],
   "builds": [
