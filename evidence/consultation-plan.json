@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B104-NORMAL-MODAL-TRUTH-AT-WORLD",
-  "status": "OLP-0413 source-reviewed and staged; 15 paired blocks, one disclosed world-argument correction, eleven reverse-paraphrase samples and independent finite semantics",
+  "batch_id": "PS-B105-NORMAL-MODAL-TRUTH-IN-MODEL",
+  "status": "OLP-0414 source-reviewed and staged; 13 paired blocks, unchanged diagram and formulas, eight reverse-paraphrase samples and six independently checked model answers",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8662,6 +8662,26 @@
       "allowed_residual_english": [
         "OLNML"
       ]
+    },
+    "OLP-0414": {
+      "batch_id": "PS-B105-NORMAL-MODAL-TRUTH-IN-MODEL",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-MODAL-LOGIC",
+        "TERM-SEMANTICS",
+        "TERM-TRUTH-FUNCTION",
+        "TERM-RELATION",
+        "TERM-PROPOSITION"
+      ],
+      "scope": "Thirteen-block model-wide truth definition, two proposition directions and nonconverses, and six schemas over the exact three-world diagram.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13152,6 +13172,54 @@
       "passage": "final exercise",
       "reverse_paraphrase": "Not-Diamond A is equivalent to Box-not-A at the same world.",
       "finding": "World and negation scopes retained."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global truth",
+      "reverse_paraphrase": "M satisfies A exactly when A holds at every world of W.",
+      "finding": "Universal world scope preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global negation",
+      "reverse_paraphrase": "If A holds everywhere, not-A cannot hold everywhere, since W is nonempty.",
+      "finding": "Nonempty W premise preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "first nonconverse",
+      "reverse_paraphrase": "A not false everywhere only establishes A at some world, not every world.",
+      "finding": "Existential versus universal scope preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global modus ponens",
+      "reverse_paraphrase": "Global A-to-B together with global A implies global B.",
+      "finding": "Both premises used at arbitrary w."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "second nonconverse",
+      "reverse_paraphrase": "A global implication between the claims of global A and global B need not give pointwise A-to-B at each world.",
+      "finding": "Vacuous external implication distinguished from internal implication."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "model diagram",
+      "reverse_paraphrase": "Three worlds, four directed edges and all three valuations match the source diagram.",
+      "finding": "Diagram text exact."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "schema questions",
+      "reverse_paraphrase": "The six globally assessed schemas give T,F,F,T,F,T.",
+      "finding": "Atomic versus arbitrary-formula quantifiers preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "counterexamples",
+      "reverse_paraphrase": "A=not p2 defeats item 2 at w1; p=p2 defeats item 3 there; A=not p1 defeats item 5.",
+      "finding": "Explicit witnesses checked."
     }
   ]
 }

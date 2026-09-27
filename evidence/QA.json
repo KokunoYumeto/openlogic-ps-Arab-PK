@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 413,
-    "structural_pass": 413,
+    "draft_units": 414,
+    "structural_pass": 414,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B104-NORMAL-MODAL-TRUTH-AT-WORLD",
+  "batch": "PS-B105-NORMAL-MODAL-TRUTH-IN-MODEL",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13439,6 +13439,34 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0414",
+      "path": "content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex",
+      "source_sha256": "12c305069df324d6b4346d4cf1d7ef7e1ee8c6f44479959de738f8a76323cbd6",
+      "translation_sha256": "00fcc9c92a9162dafb72c5adc9d16166934cb74216fa6b43fa43e066676e060f",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -17929,6 +17957,54 @@
       "passage": "final exercise",
       "reverse_paraphrase": "Not-Diamond A is equivalent to Box-not-A at the same world.",
       "finding": "World and negation scopes retained."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global truth",
+      "reverse_paraphrase": "M satisfies A exactly when A holds at every world of W.",
+      "finding": "Universal world scope preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global negation",
+      "reverse_paraphrase": "If A holds everywhere, not-A cannot hold everywhere, since W is nonempty.",
+      "finding": "Nonempty W premise preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "first nonconverse",
+      "reverse_paraphrase": "A not false everywhere only establishes A at some world, not every world.",
+      "finding": "Existential versus universal scope preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "global modus ponens",
+      "reverse_paraphrase": "Global A-to-B together with global A implies global B.",
+      "finding": "Both premises used at arbitrary w."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "second nonconverse",
+      "reverse_paraphrase": "A global implication between the claims of global A and global B need not give pointwise A-to-B at each world.",
+      "finding": "Vacuous external implication distinguished from internal implication."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "model diagram",
+      "reverse_paraphrase": "Three worlds, four directed edges and all three valuations match the source diagram.",
+      "finding": "Diagram text exact."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "schema questions",
+      "reverse_paraphrase": "The six globally assessed schemas give T,F,F,T,F,T.",
+      "finding": "Atomic versus arbitrary-formula quantifiers preserved."
+    },
+    {
+      "unit_id": "OLP-0414",
+      "passage": "counterexamples",
+      "reverse_paraphrase": "A=not p2 defeats item 2 at w1; p=p2 defeats item 3 there; A=not p1 defeats item 5.",
+      "finding": "Explicit witnesses checked."
     }
   ],
   "builds": [

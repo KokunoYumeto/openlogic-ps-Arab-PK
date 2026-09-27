@@ -1,0 +1,58 @@
+{
+  "schema": "ps-b105-truth-in-model-semantics/1",
+  "status": "PASS",
+  "source_sha256": "12c305069df324d6b4346d4cf1d7ef7e1ee8c6f44479959de738f8a76323cbd6",
+  "target_sha256": "00fcc9c92a9162dafb72c5adc9d16166934cb74216fa6b43fa43e066676e060f",
+  "model_worlds": [
+    "w1",
+    "w2",
+    "w3"
+  ],
+  "model_accessibility_edges": [
+    [
+      "w1",
+      "w2"
+    ],
+    [
+      "w1",
+      "w3"
+    ],
+    [
+      "w2",
+      "w3"
+    ],
+    [
+      "w3",
+      "w3"
+    ]
+  ],
+  "valuation": {
+    "p1": [
+      "w1",
+      "w2",
+      "w3"
+    ],
+    "p2": [
+      "w2",
+      "w3"
+    ],
+    "p3": [
+      "w3"
+    ]
+  },
+  "six_schema_answers": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true
+  ],
+  "counterexamples": {
+    "item2": "A=not p2 at w1",
+    "item3": "p=p2 at w1",
+    "item5": "A=not p1"
+  },
+  "earlier_model_global_implication_counterexample": "Global p and global q are both false, while p implies q is false at w1.",
+  "diagram_exactly_preserved": true
+}

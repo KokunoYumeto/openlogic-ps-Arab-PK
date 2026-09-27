@@ -1,0 +1,87 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: truth-in-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tru}
+
+\olsection{په يوه مدل کښې رښتياوالی}
+
+کله کله مونږ دا کتل غواړو چې په يوه ټاکلي مدل کښې کوم !!{formula}s
+په هره نړۍ کښې رښتيا دي۔ د دې دپاره يوه نښه ټاکو۔
+
+\begin{defn}
+  !!^a{formula}~$!A$ په مدل $M = \tuple{W, R,
+    V}$ کښې \emph{رښتيا} دے، او دا په $\mSat{M}{!A}$ ليکو، هله او
+  يوازې هله چې د هر $w \in W$ دپاره $\mSat{M}{!A}[w]$ وي۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:truthfacts}
+  \begin{enumerate}
+  \item که $\mSat{M}{!A}$ وي، نو $\mSat/{M}{\lnot !A}$ وي؛ خو سرچپه
+    نتيجه يې \emph{نۀ} سمېږي۔
+  \item که $\mSat{M}{!A \lif !B}$ وي، نو $\mSat{M}{!A}$ يوازې هله
+    چې $\mSat{M}{!B}$ وي؛ خو سرچپه نتيجه يې \emph{نۀ} سمېږي۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item که $\mSat{M}{!A}$ وي، نو $!A$ د~$W$ په ټولو نړۍو کښې رښتيا
+    دے۔ څرنګه چې $W \neq \emptyset$ دے، $\mSat{M}{\lnot!A}$ نۀ شي
+    کېدے؛ ګنې $!A$ به لږ تر لږه په يوه نړۍ کښې هم رښتيا او هم نارښتيا
+    وي۔
+
+    خو که $\mSat/{M}{\lnot !A}$ وي، نو $!A$ په کومه نړۍ $w \in W$
+    کښې رښتيا دے۔ له دې نۀ لازمېږي چې $\mSat{M}{!A}[w]$ د
+    \emph{هر}~$w \in W$ دپاره وي۔ د بېلګې په توګه، د
+    \olref[rel]{fig:simple} په مدل کښې $\mSat/{M}{\lnot p}$ هم وي او
+    $\mSat/{M}{p}$ هم وي۔
+  \item فرض کړئ $\mSat{M}{!A \lif !B}$ او $\mSat{M}{!A}$ دواړه وي۔
+    د $\mSat{M}{!B}$ د ښودلو دپاره يوه هره نړۍ $w \in W$ واخلئ۔ بيا
+    $\mSat{M}{!A \lif !B}[w]$ او $\mSat{M}{!A}[w]$ دي، نو
+    $\mSat{M}{!B}[w]$ دے۔ څرنګه چې $w$ هره نړۍ وه، $\mSat{M}{!B}$
+    دے۔
+
+    د سرچپه ادعا د ناسم والي د ښودلو دپاره داسې مدل $\mModel{M}$
+    پکار دے چې $\mSat{M}{!A}$ يوازې هله چې $\mSat{M}{!B}$ وي، خو
+    $\mSat/{M}{!A \lif !B}$ وي۔ بيا د \olref[rel]{fig:simple} مدل
+    وڅېړئ: $\mSat/{M}{p}$ دے، نو (په تش ډول) $\mSat{M}{p}$ يوازې
+    هله چې $\mSat{M}{q}$ وي۔ خو $\mSat/{M}{p \lif
+      q}$ دے، ځکه په~$w_1$ کښې $p$ رښتيا او $q$ نارښتيا دے۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  لاندې مدل $\mModel{M}$ وڅېړئ؛ په ژبه کښې يوازې $p_1$، $p_2$،
+  $p_3$ !!{propositional variable}s دي:
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]left:\mTrue{p_1}\\\mFalse{p_2}\\\mFalse{p_3}}]
+            {$w_1$} ; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mFalse{p_3}},
+        below right=of w1]  {$w_2$}; 
+      \node[world] (w3) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mTrue{p_3}},
+        above right=of w2] {$w_3$};
+      \draw[reflexive above] (w3) to (w3); 
+      \draw[->] (w1) to (w2);
+      \draw[->] (w2) to (w3);
+      \draw[->] (w1) to (w3); 
+    \end{tikzpicture}
+  \end{center}
+  له لاندې کوم !!{formula}s او قالبونه په مدل $\mModel{M}$ کښې رښتيا
+  دي، يعنې د $\mModel{M}$ په هره نړۍ کښې رښتيا دي؟ دليل يې ورکړئ۔
+  \begin{enumerate}
+  \item $p\lif \Diamond p$ (چې $p$ اټومي وي)؛
+  \item $!A\lif \Diamond !A$ (چې $!A$ هره جمله وي)؛
+  \item $\Box p \lif p$ (چې $p$ اټومي وي)؛
+  \item $\lnot p \lif \Diamond \Box p$ (چې $p$ اټومي وي)؛
+  \item $\Diamond \Box !A$ (چې $!A$ هره جمله وي)؛
+  \item $\Box \Diamond p$ (چې $p$ اټومي وي)۔
+  \end{enumerate}
+\end{prob}
+
+\end{document}
