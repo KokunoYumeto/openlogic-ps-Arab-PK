@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 407,
-    "structural_pass": 407,
+    "draft_units": 409,
+    "structural_pass": 409,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B099-NORMAL-MODAL-PART",
+  "batch": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12816,6 +12816,66 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0408",
+      "path": "content/normal-modal-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "73c9e7bc1748596070d4745cc798ffc55a7e7cc5317ba18c0ea62adb53eb2a58",
+      "translation_sha256": "422404c69f7e20963b355a3f0d5075440e31c8f51d3c97f88b995666d6505e66",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0409",
+      "path": "content/normal-modal-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6",
+      "translation_sha256": "bee610aa08074a718de1aad5298ffc8b5ecf1852198e65541e089da0b2733d46",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "De",
+        "Interpretatione",
+        "JSL"
+      ],
+      "allowed_residual_english": [
+        "De",
+        "Interpretatione",
+        "JSL"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -17018,6 +17078,72 @@
       "passage": "correspondence sense",
       "reverse_paraphrase": "The theory links modal schemas with accessibility-frame properties; it is not a bijection claim.",
       "finding": "Checked against the frozen downstream introduction."
+    },
+    {
+      "unit_id": "OLP-0408",
+      "passage": "chapter title",
+      "reverse_paraphrase": "The chapter covers syntax and semantics of normal modal logic.",
+      "finding": "Title and exact imports retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "modal propositions",
+      "reverse_paraphrase": "Necessity, possibility and necessary possibility are different claims; other unary modalities include obligation, future, knowledge and belief.",
+      "finding": "Scope and all four examples checked."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle necessity",
+      "reverse_paraphrase": "Necessity implies possibility, but the converse fails; the two modalities are interdefinable.",
+      "finding": "Direction and contrast retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle conjunction",
+      "reverse_paraphrase": "Possible A-and-B implies each of A and B is possible, but the converse fails.",
+      "finding": "One-way implication retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle distribution",
+      "reverse_paraphrase": "If A-to-B is necessary and A is necessary, then B is necessary.",
+      "finding": "Both premises and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Lewis systems",
+      "reverse_paraphrase": "Lewis and Langford rejected material conditional as an adequate implication, proposed strict implication, and distinguished five systems S1 through S5.",
+      "finding": "Formal signs and system identity retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Carnap limitation",
+      "reverse_paraphrase": "State descriptions are atomic-sentence collections; necessary truth holds in all of them, but iterated modalities collapse to the innermost in Carnap's account.",
+      "finding": "Truth quantifier and limitation retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Kripke accessibility",
+      "reverse_paraphrase": "Necessarily A is true at w exactly when A is true in every world accessible from w.",
+      "finding": "Iff and relation orientation retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "relational readings",
+      "reverse_paraphrase": "Binary relational structures can model alethic, epistemic and dynamic readings, with the original classroom ordering example retained.",
+      "finding": "Distinct interpretations and example retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "correspondence",
+      "reverse_paraphrase": "Properties of accessibility relation R correspond to modal schemas; reflexivity corresponds to necessarily A implies A.",
+      "finding": "Frame property and modal-language schema distinguished."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "classical systems",
+      "reverse_paraphrase": "S4 and S5 are among the classical systems formed from D, T, B, 4 and 5 schemas.",
+      "finding": "All formal names and source scope retained."
     }
   ],
   "builds": [

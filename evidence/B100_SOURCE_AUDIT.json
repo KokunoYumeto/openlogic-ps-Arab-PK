@@ -1,0 +1,127 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T08:56:39.799676+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYNTAX-INTRO",
+  "batch_id": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0408",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_bytes": 479,
+      "source_sha256": "73c9e7bc1748596070d4745cc798ffc55a7e7cc5317ba18c0ea62adb53eb2a58",
+      "target_sha256": "422404c69f7e20963b355a3f0d5075440e31c8f51d3c97f88b995666d6505e66",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/introduction.tex",
+      "source_bytes": 4865,
+      "source_sha256": "472bb6066a6995031744114d0238d83c60eb6a3d241d8e77571c59a4b912fed6",
+      "target_sha256": "bee610aa08074a718de1aad5298ffc8b5ecf1852198e65541e089da0b2733d46",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B100_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6e6f0d97312b787bd691a4f863b7eb751aa482bae7b33891eac0cc583a49a22f",
+  "consultation_path": "work/B100_CANON_CONSULTATION.md",
+  "consultation_sha256": "6cabdeef3640a50cdb723d9246a160ccd781700750cf979ae6b78ecbbd0ad272",
+  "staging_qa_sha256": {
+    "OLP-0408": "c3f4365f1267662283c1bdae318c0cea313d681643204d5e980e4e1cc715a026",
+    "OLP-0409": "ef17c4497b73aed1c019da63ed89d1893f2d9d559b5a9a232a06f1e24d3c4e67"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P7-PROPOSITION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 12,
+      "printed_page": "7",
+      "page_image_sha256": "676db5dd242addc7fa5f79435bd484ad699efebce0e5c1b70143af3ebe56a7cd",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0408",
+      "source_lines": "8-20",
+      "kind": "chapter-driver",
+      "finding": "The title follows established edition usage; ten imports and the hook remain exact."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_lines": "13-25",
+      "kind": "modal-scope",
+      "finding": "Necessity, possibility, nested modality and four additional unary modalities remain distinct."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_lines": "27-57",
+      "kind": "historical-logic",
+      "finding": "Aristotle, Lewis and Carnap claims retain direction, formal signs, system names and syntactic/semantic distinction."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_lines": "59-71",
+      "kind": "kripke-semantics",
+      "finding": "The source-world to accessible-world direction and iff truth condition are preserved."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_lines": "73-95",
+      "kind": "frame-correspondence",
+      "finding": "Binary relation, modal readings and modal-schema/frame-property correspondence retain their separate roles."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "source_lines": "46-57",
+      "kind": "preacceptance-language-revision",
+      "finding": "The Carnap state-description genitive was corrected in Pashto before acceptance; source meaning and formal spans are unchanged."
+    }
+  ],
+  "formula_policy": "Every math span, identifier, environment and structural macro matches frozen English exactly; no source correction adopted.",
+  "unresolved": "Exact Pakistani attestations for specialized modal/strict-implication compounds were not found in the consulted witnesses. The reversible draft remains open to expert correction; no human approval gate is imposed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0408–0409; continue OLP-0410."
+}

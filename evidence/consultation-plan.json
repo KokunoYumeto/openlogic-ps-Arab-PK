@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B099-NORMAL-MODAL-PART",
-  "status": "OLP-0407 source-reviewed and staged; 14 paired blocks, unchanged structural imports and four reverse-paraphrase samples",
+  "batch_id": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
+  "status": "OLP-0408–0409 source-reviewed and staged; 20 paired blocks, unchanged formal spans and eleven reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8543,6 +8543,41 @@
       ],
       "scope": "Fourteen-block part driver; title and editorial translated, seven imports and part hook unchanged. Normal is a formal modal qualifier, and correspondence concerns modal schemas and accessibility-frame properties. Technical labels are provisional.",
       "allowed_residual_english": []
+    },
+    "OLP-0408": {
+      "batch_id": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-SEMANTICS"
+      ],
+      "scope": "Seven-block chapter driver; syntax and semantics title translated in established edition wording; ten imports and hook unchanged.",
+      "allowed_residual_english": []
+    },
+    "OLP-0409": {
+      "batch_id": "PS-B100-NORMAL-MODAL-SYNTAX-INTRO",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-SEMANTICS",
+        "TERM-MODAL-LOGIC",
+        "TERM-LOGIC-FORMS",
+        "TERM-METALOGIC"
+      ],
+      "scope": "Thirteen-block modal introduction; all seven substantive paragraphs source-compared, including modal scope, historical examples, strict implication, Carnap's limitation, Kripke accessibility direction and frame correspondence. Latin work title and journal abbreviation retained as bibliography.",
+      "allowed_residual_english": [
+        "De",
+        "Interpretatione",
+        "JSL"
+      ]
     }
   },
   "semantic_review": [
@@ -12745,6 +12780,72 @@
       "passage": "correspondence sense",
       "reverse_paraphrase": "The theory links modal schemas with accessibility-frame properties; it is not a bijection claim.",
       "finding": "Checked against the frozen downstream introduction."
+    },
+    {
+      "unit_id": "OLP-0408",
+      "passage": "chapter title",
+      "reverse_paraphrase": "The chapter covers syntax and semantics of normal modal logic.",
+      "finding": "Title and exact imports retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "modal propositions",
+      "reverse_paraphrase": "Necessity, possibility and necessary possibility are different claims; other unary modalities include obligation, future, knowledge and belief.",
+      "finding": "Scope and all four examples checked."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle necessity",
+      "reverse_paraphrase": "Necessity implies possibility, but the converse fails; the two modalities are interdefinable.",
+      "finding": "Direction and contrast retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle conjunction",
+      "reverse_paraphrase": "Possible A-and-B implies each of A and B is possible, but the converse fails.",
+      "finding": "One-way implication retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Aristotle distribution",
+      "reverse_paraphrase": "If A-to-B is necessary and A is necessary, then B is necessary.",
+      "finding": "Both premises and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Lewis systems",
+      "reverse_paraphrase": "Lewis and Langford rejected material conditional as an adequate implication, proposed strict implication, and distinguished five systems S1 through S5.",
+      "finding": "Formal signs and system identity retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Carnap limitation",
+      "reverse_paraphrase": "State descriptions are atomic-sentence collections; necessary truth holds in all of them, but iterated modalities collapse to the innermost in Carnap's account.",
+      "finding": "Truth quantifier and limitation retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "Kripke accessibility",
+      "reverse_paraphrase": "Necessarily A is true at w exactly when A is true in every world accessible from w.",
+      "finding": "Iff and relation orientation retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "relational readings",
+      "reverse_paraphrase": "Binary relational structures can model alethic, epistemic and dynamic readings, with the original classroom ordering example retained.",
+      "finding": "Distinct interpretations and example retained."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "correspondence",
+      "reverse_paraphrase": "Properties of accessibility relation R correspond to modal schemas; reflexivity corresponds to necessarily A implies A.",
+      "finding": "Frame property and modal-language schema distinguished."
+    },
+    {
+      "unit_id": "OLP-0409",
+      "passage": "classical systems",
+      "reverse_paraphrase": "S4 and S5 are among the classical systems formed from D, T, B, 4 and 5 schemas.",
+      "finding": "All formal names and source scope retained."
     }
   ]
 }
