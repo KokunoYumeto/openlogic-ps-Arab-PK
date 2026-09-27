@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 414,
-    "structural_pass": 414,
+    "draft_units": 415,
+    "structural_pass": 415,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B105-NORMAL-MODAL-TRUTH-IN-MODEL",
+  "batch": "PS-B106-NORMAL-MODAL-VALIDITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13467,6 +13467,33 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0415",
+      "path": "content/normal-modal-logic/syntax-and-semantics/modal-validity.tex",
+      "source_sha256": "ac462d167fe4acb6dee2adad68ff523384f14e0bd9976bad5d48fe34f2af8bab",
+      "translation_sha256": "144445c8c7705201fd90584ee2db69fca19407c83fb81e5e978b60f0a88af70b",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18005,6 +18032,54 @@
       "passage": "counterexamples",
       "reverse_paraphrase": "A=not p2 defeats item 2 at w1; p=p2 defeats item 3 there; A=not p1 defeats item 5.",
       "finding": "Explicit witnesses checked."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "unrestricted validity",
+      "reverse_paraphrase": "A valid formula is true at every world of every normal relational model.",
+      "finding": "Universal model/world scope preserved."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "reflexive restriction",
+      "reverse_paraphrase": "Box p implies p holds when every world accesses itself, but fails at a dead end with p false.",
+      "finding": "Reflexivity premise and counterexample retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "class definition",
+      "reverse_paraphrase": "C entails A means every model in C makes A true at every world; bare entails uses all models.",
+      "finding": "Class-relative versus unrestricted quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "subset class",
+      "reverse_paraphrase": "Validity in C carries to each subclass of C.",
+      "finding": "Subset direction preserved."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "necessitation",
+      "reverse_paraphrase": "Validity of A at every possible successor yields Box A at any chosen world.",
+      "finding": "Proof quantifiers and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "first exercises",
+      "reverse_paraphrase": "The three printed Box formulas are valid for all relations and valuations.",
+      "finding": "Math spans unchanged; three-world exhaustive evaluation passed."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "singleton class",
+      "reverse_paraphrase": "A implies Box A even if the sole world has no self-loop.",
+      "finding": "Empty and reflexive singleton cases retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "empty relation class",
+      "reverse_paraphrase": "B implies Box A, and Diamond A implies B, because Box is vacuously true and Diamond false.",
+      "finding": "No-accessibility scope retained."
     }
   ],
   "builds": [

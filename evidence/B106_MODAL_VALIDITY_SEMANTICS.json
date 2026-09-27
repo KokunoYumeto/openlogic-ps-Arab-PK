@@ -1,0 +1,18 @@
+{
+  "schema": "ps-b106-modal-validity-semantics/1",
+  "status": "PASS",
+  "source_sha256": "ac462d167fe4acb6dee2adad68ff523384f14e0bd9976bad5d48fe34f2af8bab",
+  "target_sha256": "144445c8c7705201fd90584ee2db69fca19407c83fb81e5e978b60f0a88af70b",
+  "three_world_relations": 512,
+  "two_atom_valuations_per_relation": 64,
+  "world_checks": 98304,
+  "checked_claims": [
+    "Box(p and q) implies Box p",
+    "three exercise formulas valid",
+    "valid p implies valid Box p sampled by p implies p",
+    "Box p implies p over reflexive relations"
+  ],
+  "nonvalidity_witness": "One-world empty accessibility relation and p false: Box p true but p false.",
+  "singleton_world_class": "A implies Box A for either truth value and either possible self-loop.",
+  "empty_relation_class": "B implies Box A and Diamond A implies B for all A,B truth values."
+}

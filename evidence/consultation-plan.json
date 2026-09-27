@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B105-NORMAL-MODAL-TRUTH-IN-MODEL",
-  "status": "OLP-0414 source-reviewed and staged; 13 paired blocks, unchanged diagram and formulas, eight reverse-paraphrase samples and six independently checked model answers",
+  "batch_id": "PS-B106-NORMAL-MODAL-VALIDITY",
+  "status": "OLP-0415 source-reviewed and staged; 13 paired blocks, unchanged formulas, eight reverse-paraphrase samples and 98,304 finite world checks",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8682,6 +8682,26 @@
       ],
       "scope": "Thirteen-block model-wide truth definition, two proposition directions and nonconverses, and six schemas over the exact three-world diagram.",
       "allowed_residual_english": []
+    },
+    "OLP-0415": {
+      "batch_id": "PS-B106-NORMAL-MODAL-VALIDITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-PROOF-PROPERTIES",
+        "TERM-FOL-SEMANTICS",
+        "TERM-MODAL-LOGIC",
+        "TERM-RELATION",
+        "TERM-PROPOSITION"
+      ],
+      "scope": "Thirteen-block validity explanation, class-relative definition, subset and necessitation propositions, proof and two exercise sets; unrestricted versus reflexive and empty-relation classes distinguished.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13220,6 +13240,54 @@
       "passage": "counterexamples",
       "reverse_paraphrase": "A=not p2 defeats item 2 at w1; p=p2 defeats item 3 there; A=not p1 defeats item 5.",
       "finding": "Explicit witnesses checked."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "unrestricted validity",
+      "reverse_paraphrase": "A valid formula is true at every world of every normal relational model.",
+      "finding": "Universal model/world scope preserved."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "reflexive restriction",
+      "reverse_paraphrase": "Box p implies p holds when every world accesses itself, but fails at a dead end with p false.",
+      "finding": "Reflexivity premise and counterexample retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "class definition",
+      "reverse_paraphrase": "C entails A means every model in C makes A true at every world; bare entails uses all models.",
+      "finding": "Class-relative versus unrestricted quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "subset class",
+      "reverse_paraphrase": "Validity in C carries to each subclass of C.",
+      "finding": "Subset direction preserved."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "necessitation",
+      "reverse_paraphrase": "Validity of A at every possible successor yields Box A at any chosen world.",
+      "finding": "Proof quantifiers and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "first exercises",
+      "reverse_paraphrase": "The three printed Box formulas are valid for all relations and valuations.",
+      "finding": "Math spans unchanged; three-world exhaustive evaluation passed."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "singleton class",
+      "reverse_paraphrase": "A implies Box A even if the sole world has no self-loop.",
+      "finding": "Empty and reflexive singleton cases retained."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "passage": "empty relation class",
+      "reverse_paraphrase": "B implies Box A, and Diamond A implies B, because Box is vacuously true and Diamond false.",
+      "finding": "No-accessibility scope retained."
     }
   ]
 }

@@ -1,0 +1,100 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T10:30:19.737707+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-VALIDITY",
+  "batch_id": "PS-B106-NORMAL-MODAL-VALIDITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0415",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/modal-validity.tex",
+      "source_bytes": 2914,
+      "source_sha256": "ac462d167fe4acb6dee2adad68ff523384f14e0bd9976bad5d48fe34f2af8bab",
+      "target_sha256": "144445c8c7705201fd90584ee2db69fca19407c83fb81e5e978b60f0a88af70b",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B106_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "914ce89d23429d3eccc21e2c29b030accdc1f8660c4e16be3f958e032463bc75",
+  "consultation_path": "work/B106_CANON_CONSULTATION.md",
+  "consultation_sha256": "80293ed3a8ac577ad87f7c85e586ded7291084113a98c315cc139128a0d88733",
+  "staging_qa_sha256": {
+    "OLP-0415": "dce8b2e6ca6819ede04d0264070d44629a16d26bcb500c10bc8ed0ea46eb3c49"
+  },
+  "semantic_qa_sha256": "2b05046e2c99b21b53d4bb088ecfa8e614a3b3b2d252da9260c0ae3c87c7a11a",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0415",
+      "source_lines": "11-33",
+      "kind": "normal-modal-validity-explanation",
+      "finding": "All-model validity is distinguished from validity in a restricted class; Box p implies p requires reflexivity."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "source_lines": "35-59",
+      "kind": "validity-definition-and-necessitation",
+      "finding": "C entails A quantifies over every model/world in C; subset-class monotonicity and necessitation proof preserve their premises and directions."
+    },
+    {
+      "unit_id": "OLP-0415",
+      "source_lines": "61-76",
+      "kind": "modal-validity-exercises",
+      "finding": "All five exercise formulas are unchanged; singleton-world and empty-relation class qualifications retained."
+    }
+  ],
+  "formula_policy": "All source math spans, identifiers, optional tags, structural macros and term tokens are retained exactly. Frozen English unchanged.",
+  "unresolved": "The exact Pakistani compound for normal relational modal validity is not attested in consulted witnesses; the descriptive rendering remains reversible. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0415; then translate OLP-0416."
+}

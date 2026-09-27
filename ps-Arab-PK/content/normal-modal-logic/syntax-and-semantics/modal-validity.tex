@@ -1,0 +1,75 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: modal-validity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{val}
+
+\olsection{اعتبار}
+
+\begin{explain}
+  هغه !!^{formula}s چې په ټولو مدلونو کښې رښتيا وي، يعنې د هر مدل
+  په هره نړۍ کښې رښتيا وي، ځانګړې دلچسپي لري۔ دا هغه مودالي قضيې
+  څرګندوي چې د $\Box$ او $\Diamond$ د تفسير له څرنګوالي پرته رښتيا
+  دي، تر هغې چې تفسير په دې مانا «نورمال» وي چې د ممکنه نړۍو ترمنځ
+  له کومې لاسرسي اړيکې څخه جوړ شوے وي۔ داسې !!{formula}s ته
+  \emph{معتبر} وايو۔ د بېلګې په توګه، $\Box(p \land q) \lif \Box p$
+  معتبر دے۔ خو ځينې !!{formula}s چې ښايي د $\Box$ د ضرورتي تفسير له
+  مخې معتبر وګڼل شي، لکه $\Box p \lif p$، معتبر نۀ دي۔ د اړيکيزو
+  مدلونو د دلچسپۍ يوه وجه دا ده چې د $\Box$ او $\Diamond$ بېلابېل
+  تفسيرونه د لاسرسي د بېلابېلو ډولونو اړيکو په وسيله ښودل کېدے شي۔
+  دا راته وايي چې اعتبار يوازې د \emph{ټولو} مدلونو په نسبت نۀ، بلکې
+  د \emph{يوه ټاکلي ډول} د ټولو مدلونو په نسبت هم تعريف کړو۔ د بېلګې
+  په توګه، معلومه به شي چې $\Box p \lif p$ په ټولو هغو مدلونو کښې
+  رښتيا دے چې هره نړۍ له خپل ځان څخه د لاسرسي وړ وي، يعنې $R$
+  انعکاسي وي۔ د مدلونو د ټولګيو په نسبت د اعتبار تعريف مونږ ته دا
+  خبره په لنډ ډول د ويلو توان راکوي: $\Box p \lif p$ د انعکاسي
+  مدلونو په ټولګي کښې معتبر دے۔
+\end{explain}
+
+\begin{defn}
+  !!^a{formula}~$!A$ د مدلونو په ټولګي $\mClass{C}$ کښې \emph{معتبر}
+  دے، که د~$\mClass{C}$ په هر مدل کښې رښتيا وي (يعنې د~$\mClass{C}$
+  د هر مدل په هره نړۍ کښې رښتيا وي)۔ که $!A$ په~$\mClass{C}$ کښې
+  معتبر وي، نو $\mClass{C} \Entails !A$ ليکو؛ او که $!A$ د
+  \emph{ټولو} مدلونو په ټولګي کښې معتبر وي، نو $\Entails !A$ ليکو۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:subset-class}
+  که $!A$ په $\mClass{C}$ کښې معتبر وي، نو په هر داسې ټولګي
+  $\mClass{C}' \subseteq \mClass{C}$ کښې هم معتبر دے۔
+\end{prop}
+
+\begin{prop}\ollabel{prop:Nec-rule}
+  که $!A$ معتبر وي، نو $\Box!A$ هم معتبر دے۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\Entails !A$۔ د $\Entails \Box!A$ د ښودلو دپاره يو
+  مدل $\mModel{M} = \tuple{W, R, V}$ او يوه نړۍ $w \in W$ واخلئ۔
+  که $Rww'$ وي، نو د $!A$ د اعتبار له امله $\mSat{M}{!A}[w']$ وي،
+  او په دې توګه $\mSat{M}{\Box!A}[w]$ هم وي۔ څرنګه چې
+  $\mModel{M}$ او $w$ هر يو ټاکل شوي وو، $\Entails \Box!A$ دے۔
+\end{proof}
+
+\begin{prob}
+  وښيئ چې لاندې جملې معتبرې دي:
+  \begin{enumerate}
+  \item $\Box p \lif \Box (q \lif p)$؛
+  \item $\Box \lnot \lfalse$؛
+  \item $\Box p \lif (\Box q \lif \Box p)$۔
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  وښيئ چې $!A \lif \Box!A$ د هغو مدلونو $\mModel{M} = \tuple{W, R, V}$
+  په ټولګي $\mClass{C}$ کښې معتبر دے چې $W = \{w\}$ وي۔ همدارنګه،
+  وښيئ چې $!B \lif \Box !A$ او $\Diamond !A \lif !B$ د هغو مدلونو
+  $\mModel{M} = \tuple{W, R, V}$ په ټولګي کښې معتبر دي چې
+  $R = \emptyset$ وي۔
+\end{prob}
+
+\end{document}
