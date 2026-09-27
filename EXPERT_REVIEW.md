@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 391 of 722 source units are translated drafts. This log contains 199 terminology entries and 326 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 393 of 722 source units are translated drafts. This log contains 200 terminology entries and 326 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1795,6 +1795,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Source and target: [frozen English](upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L23) and [Pashto disclosure](ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L42).
 - Evidence: a falsity constant interpreted as True satisfies the four listed connective conditions yet disagrees with classical evaluation of that constant formula.
 - Timing: contemporaneous B086 source review before cumulative acceptance
+
+## TERM-MVL-THREE-VALUED-INTRO
+
+- Type: terminology
+- Choice: درې ارزښته منطق / درېيم د رښتياوالي قيمت / ټاکل شوي قيمتونه / د صدق تابعو ګډولې
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/introduction.tex#L13) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/introduction.tex#L13).
+- Uncertainty: exact Pakistani three-valued and third-value terms are provisional.
+- Review question: Is the added truth value distinct from undefined partial-function evaluation, and are the two designated-subset choices clear?
+- Timing: contemporaneous B087 source review and visually inspected Pakistani-first consultation
 
 ## DEC-OLFUN-001
 

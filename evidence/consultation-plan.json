@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B086-MVL-CLASSICAL-SUBLOGIC",
-  "status": "OLP-0391 source-reviewed and staged; ten paired blocks, exact math parity, one disclosed frozen-source scope correction, one provisional terminology decision, and five reverse-paraphrase samples",
+  "batch_id": "PS-B087-THREE-VALUED-OPENING",
+  "status": "OLP-0392–0393 source-reviewed and staged; nineteen paired blocks, exact math/import parity, one provisional terminology decision and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8215,6 +8215,46 @@
       ],
       "scope": "Ten paired blocks of Boolean truth-function agreement, structural induction and contraposition. OLMVL-001 qualifies the common formula fragment, all used connectives and constants, and Boolean variable assignments with adjacent disclosure. Pakistani scholarly semantics prose is primary; Afghan Boolean/semantic pages are regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0392": {
+      "batch_id": "PS-B087-THREE-VALUED-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-THREE-VALUED-INTRO",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "Exact chapter-driver import structure and three-valued introduction. The third source value Undef remains distinct from partial-function undefinedness; both designated-set choices and four connective truth functions are preserved. Pakistani scholarly semantics prose is primary; Afghan classical Boolean pages are regional comparators.",
+      "allowed_residual_english": []
+    },
+    "OLP-0393": {
+      "batch_id": "PS-B087-THREE-VALUED-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-THREE-VALUED-INTRO",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "Exact chapter-driver import structure and three-valued introduction. The third source value Undef remains distinct from partial-function undefinedness; both designated-set choices and four connective truth functions are preserved. Pakistani scholarly semantics prose is primary; Afghan classical Boolean pages are regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11883,6 +11923,30 @@
       "passage": "contrapositive proof",
       "reverse_paraphrase": "A classical countervaluation is Boolean and thus also a many-valued valuation; it designates all premises and not the conclusion.",
       "finding": "Target preserves each valuation condition and the transferred non-entailment."
+    },
+    {
+      "unit_id": "OLP-0392",
+      "passage": "chapter heading and imports",
+      "reverse_paraphrase": "The chapter names three-valued logics and imports its introduction, Łukasiewicz, Kleene, Gödel and multiple-designation sections in that order.",
+      "finding": "Target localizes the heading and preserves all import IDs and ordering; uncompleted imports are not counted as reader acceptance."
+    },
+    {
+      "unit_id": "OLP-0393",
+      "passage": "third value",
+      "reverse_paraphrase": "Adding Undef to True and False yields three truth values, without making evaluation a partial function.",
+      "finding": "Target retains all three source symbols and the one-additional-value count."
+    },
+    {
+      "unit_id": "OLP-0393",
+      "passage": "truth-function choices",
+      "reverse_paraphrase": "There are many definitions of the four connective truth functions and a logic may combine these choices.",
+      "finding": "Target preserves each named connective and combination possibility."
+    },
+    {
+      "unit_id": "OLP-0393",
+      "passage": "designated choices and chapter scope",
+      "reverse_paraphrase": "Only True, or True together with Undef, may be designated in the described choices; the chapter presents a selection of familiar examples and properties.",
+      "finding": "Target preserves both alternatives and does not claim exhaustive coverage."
     }
   ]
 }

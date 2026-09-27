@@ -1,0 +1,115 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T03:58:35.347121+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-THREE-VALUED-OPENING",
+  "batch_id": "PS-B087-THREE-VALUED-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0392",
+      "source_path": "content/many-valued-logic/three-valued-logics/three-valued-logics.tex",
+      "source_bytes": 336,
+      "source_sha256": "24ee5d0ab52f218eb4750bea0441cbdaf05d19cfa480cf2f92376dc0c697ecc3",
+      "target_sha256": "8f6adae2512f5c63c299998425854990535f9d84e07e033ecb68e7440107c59c",
+      "paired_blocks": 11
+    },
+    {
+      "unit_id": "OLP-0393",
+      "source_path": "content/many-valued-logic/three-valued-logics/introduction.tex",
+      "source_bytes": 763,
+      "source_sha256": "77b91c121cc775c602663a64f615c3604a32db5d61625d07dfc9ea30ab5047e1",
+      "target_sha256": "df78cb02dbd6a96d20abe9a6bec84cc8eb51d701c0f80627d509844f69d32a42",
+      "paired_blocks": 8
+    }
+  ],
+  "notes_path": "work/B087_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "3924685a1babbdcc6d76a2a689cf0b5d058a6cba1f6c91e247fdafb1f77058cd",
+  "consultation_path": "work/B087_CANON_CONSULTATION.md",
+  "consultation_sha256": "eb8ec93c255fc7fd892ab358c7f37a7845741c69a88c4cc97c4bf6714fe6e190",
+  "staging_qa_sha256": {
+    "OLP-0392": "e65453baef3cb8f32efccb98a5f00526a9a19d6bbc81db77b816a6bab80a075b",
+    "OLP-0393": "57615c50e9c5aae5541c5e6acb633952e2599069aae5554894bdde69404471b2"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0392",
+      "source_lines": "8-20",
+      "kind": "chapter-driver",
+      "finding": "The chapter title is localized; mvl/thr and five imports remain exact and ordered. Four imported content units are pending, so this is not yet a coherent reader chapter."
+    },
+    {
+      "unit_id": "OLP-0393",
+      "source_lines": "13-18",
+      "kind": "third-value-and-designation",
+      "finding": "Exactly one Undef value is added; four connective truth functions have multiple choices, and the two designated-subset alternatives remain distinct."
+    },
+    {
+      "unit_id": "OLP-0393",
+      "source_lines": "20-21",
+      "kind": "chapter-promise",
+      "finding": "The introduction promises a selection of familiar logics, motives and properties without claiming exhaustive coverage."
+    }
+  ],
+  "formula_policy": "All symbols, math spans, IDs, imports, structural macros and term tokens remain source-equivalent. Frozen English bytes are unchanged; no source correction is adopted.",
+  "unresolved": "The four imported three-valued systems remain to be translated. Exact Pakistani three-valued terminology is unattested in checked pages and provisional; no specialist approval is claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0392–0393, then translate OLP-0394."
+}
