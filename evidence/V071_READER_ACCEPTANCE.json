@@ -1,0 +1,74 @@
+{
+  "schema": "ps-v071-reader-acceptance/1",
+  "status": "accepted_local_reader_pending_public_release",
+  "recorded_utc": "2026-09-27T08:02:20.999202+00:00",
+  "scope": {
+    "reader_units": 321,
+    "source_snapshot_drafts": 405,
+    "total_units": 722,
+    "chapters": 31,
+    "pdf_pages": 420,
+    "semantic_segments": 3414
+  },
+  "repair": {
+    "v070_defect": "Literal ! metavariable notation on physical PDF pages 413–414.",
+    "affected_pages_visually_inspected": [
+      413,
+      414
+    ],
+    "changed_segment_page_anchors": 108,
+    "old_v070_release_preserved": true
+  },
+  "artifacts": {
+    "pdf": {
+      "path": "readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf",
+      "bytes": 2088718,
+      "sha256": "5e103ec5d4de07437a54505c65078f456d3df110947f127051f812cdf469ad73"
+    },
+    "epub": {
+      "path": "readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub",
+      "bytes": 949357,
+      "sha256": "d533d02588a7368e8fa530eda6c8e33a2755b41c0aa2b4ecb197b2e828808c12"
+    },
+    "direct_tex": {
+      "path": "releases/02-openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.1.tex",
+      "bytes": 2131172,
+      "sha256": "33682539709c558905a57da023cb050f10a03fa85098eaea41b57c4c29b8cfea"
+    }
+  },
+  "validation": {
+    "pdf_independent_guarded_byte_replay": true,
+    "direct_tex_guarded_passes": 3,
+    "direct_tex_pdf_exact_match": true,
+    "epub_independent_byte_replay": true,
+    "epubcheck_version": "5.4.0",
+    "epubcheck_messages": 0,
+    "epub_mathml_elements": 19671,
+    "epub_svg_figures": 31,
+    "epub_internal_links": 1335,
+    "epub_broken_links": 0,
+    "corrected_reference_count": 785
+  },
+  "decision_evidence": {
+    "corrected_page_map_path": "evidence/V071_READER_OCCURRENCE_PAGES.json",
+    "corrected_page_map_sha256": "92eed7e17cc27c59352b65de2956f185354cdb04c8cb748f7893490ecedf9f2c",
+    "decision_occurrence_pages": "Historical v0.7.0 locators; use corrected page map for v0.7.1.",
+    "canonical_replay_path": "evidence/B097_CANONICAL_REPLAY.json",
+    "canonical_replay_sha256": "7c0d78a948a13e4a08b148521ecc3cd55ec16980f6cbb8fcf8a11eac9c490bec",
+    "decisions": 542,
+    "occurrences": 21402
+  },
+  "reproducibility": {
+    "reference_map_path": "evidence/V071_EPUB_REFERENCE_MAP.json",
+    "reference_map_sha256": "f287e8c29f898da943440f3c535335f0b8061c094e87634652b6a671c59713f9",
+    "epub_acceptance_sha256": "872a5c9800469ca30562da5c89477a88c70272f7f6ff456ba3df0639e1e1fb9b",
+    "pdf_replay_sha256": "34dd593e652993f8a1b1e578dfbfc06086e75e133739000eb8fc98e1aff7be69",
+    "direct_tex_receipt_sha256": "189dcc0b16e6ff0588f5329b169c714b7be5243960a8f8ec0c78ba06e210551a"
+  },
+  "limitations": {
+    "partial_edition": true,
+    "machine_generated": true,
+    "human_specialist_reviewed": false,
+    "public_release_verified": false
+  }
+}

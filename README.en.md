@@ -4,15 +4,15 @@ The Pashto translation and mathematical review through OLP-0311 were produced by
 
 An independent machine translation of the Open Logic Project into Pashto in Arabic script, for a Pakistan curriculum target. Pakistani prose and orthography are primary; Afghan Pashto sources are explicitly labelled regional comparators.
 
-**Work in progress: 405 of 722 source units are translated and structurally verified. The current [420-page cumulative PDF](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf) and matching [31-chapter reflowable EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub) cover the first 321 units, from the foundations through computability, arithmetized syntax, and the Gödel and Rosser incompleteness theorems. Eighty-four later units remain editable verified drafts through second-order logic and the many-valued structural rules section; 317 units still need translation. The [v0.7.0 GitHub release](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.7.0-incompleteness) provides the PDF preview, direct cumulative LaTeX, complete source ZIP, EPUB, validation record and checksums.** This remains an incomplete, machine-generated edition without human specialist approval. See [the translation catalogue](https://github.com/KokunoYumeto/OpenLogic-translations).
+**Work in progress: 405 of 722 source units are translated and structurally verified. The current [420-page cumulative PDF](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf) and matching [31-chapter reflowable EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub) cover the first 321 units, from the foundations through computability, arithmetized syntax, and the Gödel and Rosser incompleteness theorems. Eighty-four later units remain editable verified drafts through second-order logic and the many-valued structural rules section; 317 units still need translation. The [corrected v0.7.1 GitHub release](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases/tag/v0.7.1-incompleteness-formula-repair) provides the PDF preview, direct cumulative LaTeX, complete source ZIP, EPUB, validation record and checksums.** This remains an incomplete, machine-generated edition without human specialist approval. See [the translation catalogue](https://github.com/KokunoYumeto/OpenLogic-translations).
 
-Read the current [cumulative PDF](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf) or [EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub). The previous [computability PDF](readers/openlogic-ps-Arab-PK-cumulative-through-computability.pdf) and [EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-computability.epub), and earlier editions, remain available through [GitHub releases](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases). The [current version DOI](https://doi.org/10.5281/zenodo.22971283) identifies this release; the [Zenodo edition lineage](https://doi.org/10.5281/zenodo.22307197) preserves versioned records.
+Read the current [cumulative PDF](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.pdf) or [EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-incompleteness.epub). The previous [computability PDF](readers/openlogic-ps-Arab-PK-cumulative-through-computability.pdf) and [EPUB](readers/openlogic-ps-Arab-PK-cumulative-through-computability.epub), and earlier editions, remain available through [GitHub releases](https://github.com/KokunoYumeto/openlogic-ps-Arab-PK/releases). The [Zenodo edition lineage](https://doi.org/10.5281/zenodo.22307197) preserves versioned records and their reading previews.
 
 The current reader covers foundations; sets, relations and functions; cardinality; propositional and first-order logic; four proof systems and completeness; model theory; recursive functions and computability; Turing machines; arithmetized syntax; and the incompleteness theorems. It preserves examples, exercises, formulas, tables, proof trees, tableaux and diagrams under the frozen upstream default profile. Editable Pashto sources mirror upstream paths in `ps-Arab-PK/`. Adjacent disclosures explain inherited notation ambiguities and source corrections without changing frozen English bytes.
 
-The published v0.7.0 PDF has a formula-notation defect on physical pages 413–414: active `!` metavariables print literally. A corrected 420-page PDF has compiled locally and the affected pages were visually inspected; full corrected-release validation remains in progress. The repair shifts 108 source-segment page anchors, so the corrected EPUB needs a new reference map.
+The earlier v0.7.0 PDF printed active `!` metavariables literally on physical pages 413–414. The v0.7.1 PDF corrects them; those pages were visually inspected, and independent three-pass builds agree byte for byte. The repair shifts 108 source-segment page anchors. The v0.7.1 EPUB uses the corrected 785-reference map, passed byte-identical independent replay, and passed EPUBCheck 5.4.0 with zero messages. The earlier release remains available.
 
-The [Pakistani-Pashto expert-review guide](EXPERT_REVIEW.ps-Arab-PK.md) is the primary review route; [English detail](EXPERT_REVIEW.md) is supplementary. The [canonical register](evidence/DECISIONS.json), [full index](evidence/TRANSLATION_DECISIONS_FULL.md), [priority index](evidence/PRIORITY_REVIEW.md), [paired-occurrence CSV](evidence/DECISION_OCCURRENCES.csv), [schema](evidence/translation-decision.schema.json), and [validation receipt](evidence/TRANSLATION_DECISION_QA.json) record 542 decisions and 21,402 exact source/target occurrence pairs. The accepted 3,414-segment page map supplies 18,455 exact reader locators; 2,947 remain pending. One floating Turing-machine figure has a documented anchor-order exception in [the page map](evidence/READER_OCCURRENCE_PAGES.json). The [source corrections](SOURCE_CORRECTIONS.md) record 331 adopted actions; four historical retractions remain documented in [the audit record](evidence/SOURCE_AUDIT_RETRACTIONS.jsonl). Expert feedback is welcome but is not a release gate.
+The [Pakistani-Pashto expert-review guide](EXPERT_REVIEW.ps-Arab-PK.md) is the primary review route; [English detail](EXPERT_REVIEW.md) is supplementary. The [canonical register](evidence/DECISIONS.json), [full index](evidence/TRANSLATION_DECISIONS_FULL.md), [priority index](evidence/PRIORITY_REVIEW.md), [paired-occurrence CSV](evidence/DECISION_OCCURRENCES.csv), [schema](evidence/translation-decision.schema.json), and [validation receipt](evidence/TRANSLATION_DECISION_QA.json) record 542 decisions and 21,402 exact source/target occurrence pairs. The decision index retains 18,455 exact v0.7.0 reader locators; 2,947 later-draft occurrences remain pending. For the corrected reader, use the [v0.7.1 3,414-segment page map](evidence/V071_READER_OCCURRENCE_PAGES.json), which records 108 shifted anchors. One floating Turing-machine figure has a documented anchor-order exception. The [source corrections](SOURCE_CORRECTIONS.md) record 331 adopted actions; four historical retractions remain documented in [the audit record](evidence/SOURCE_AUDIT_RETRACTIONS.jsonl). Expert feedback is welcome but is not a release gate.
 
 ## Source and evidence
 
@@ -28,38 +28,38 @@ Validation checks source hashes, paragraph alignment, environments, formula bodi
 
 English comments and identifiers remain as structural metadata. The proper name `Ruth` inside an original formula is a documented exception. Formula text is translated. The `psOblique` wrapper realizes required Pashto case inflection while retaining the original term token and key.
 
-The current PDF and EPUB follow 31 chapter drivers and cover OLP-0001 through OLP-0321. The accepted PDF has 420 pages and exact page evidence for 3,414 semantic segments. The EPUB contains 19,671 native MathML elements, 31 self-contained SVG figures, 1,335 validated internal links and matching unit/segment anchors. Independent rebuilds are byte-identical; EPUBCheck 5.4.0 reports no messages. Fifty-six wide and reader-width browser captures were automatically checked for overflow, broken images and browser errors, and 14 new-chapter views were visually inspected. All 420 PDF pages received an image survey with selected full-resolution checks. The 405 editable drafts remain in the working tree; OLP-0406 is next. The published v0.7.0 source snapshot stops at OLP-0362; the last forty-three drafts are not yet in a reader release.
+The current PDF and EPUB follow 31 chapter drivers and cover OLP-0001 through OLP-0321. The accepted PDF has 420 pages and exact page evidence for 3,414 semantic segments. The EPUB contains 19,671 native MathML elements, 31 self-contained SVG figures, 1,335 validated internal links and matching unit/segment anchors. Independent rebuilds are byte-identical; EPUBCheck 5.4.0 reports no messages. Fifty-six wide and reader-width browser captures were automatically checked for overflow, broken images and browser errors, and 14 new-chapter views were visually inspected. The v0.7.0 PDF received a 420-page image survey; the changed v0.7.1 pages were inspected at full resolution. The v0.7.1 source snapshot includes 405 editable drafts, while the reader still covers the first 321 units. OLP-0406 is next.
 
 ## Rebuild the current reader on Windows
 
 Requires Python 3, XeLaTeX with fontspec, amsmath/amsthm, bidi, TikZ, natbib, hyperref and the Amiri font. From this repository:
 
 ```powershell
-python tools/build_cumulative_reader.py --through-unit 321 --preamble ./tools/cumulative-reader-preamble-v070.tex --build-dir ./build/reader-v070
-./tools/guard_tex.ps1 -Passes 3 -BuildDirectory ./build/reader-v070 -DocumentBases reader
+python tools/build_cumulative_reader.py --through-unit 321 --preamble ./tools/cumulative-reader-preamble-v070.tex --build-dir ./build/reader-v071
+./tools/guard_tex.ps1 -Passes 3 -BuildDirectory ./build/reader-v071 -DocumentBases reader
 python tools/check_translation.py
 ```
 
 The direct cumulative LaTeX asset can reproduce the released PDF from inside the complete source ZIP:
 
 ```powershell
-Copy-Item ./releases/02-openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.tex ./releases/reader.tex
+Copy-Item ./releases/02-openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.1.tex ./releases/reader.tex
 ./tools/guard_tex.ps1 -Passes 3 -BuildDirectory ./releases -DocumentBases reader
 ```
 
 The guard acquires `Global\InterlanguageTeXSlotV1` for every TeX pass and log check. Derive and render the 31 EPUB figures before building the reflowable reader:
 
 ```powershell
-python tools/derive_cumulative_epub_figures.py --output ./build/v070-figures.json
-python tools/render_cumulative_epub_figures.py --phase prepare --expected-figures 31 --inventory ./build/v070-figures.json --build-dir ./build/epub-v070-figures
+python tools/derive_cumulative_epub_figures.py --output ./build/v071-figures.json
+python tools/render_cumulative_epub_figures.py --phase prepare --expected-figures 31 --inventory ./build/v071-figures.json --build-dir ./build/epub-v071-figures
 $figureBases = 1..31 | ForEach-Object { 'figure-{0:D3}' -f $_ }
-./tools/guard_tex.ps1 -Passes 1 -BuildDirectory ./build/epub-v070-figures -DocumentBases $figureBases
-python tools/render_cumulative_epub_figures.py --phase convert --expected-figures 31 --inventory ./build/v070-figures.json --build-dir ./build/epub-v070-figures --output-dir ./build/epub-v070-svg
-python tools/build_cumulative_epub.py --through-unit 321 --reference-map ./evidence/V070_EPUB_REFERENCE_MAP.json --build-dir ./build/epub-v070 --figures-dir ./build/epub-v070-svg
-python tools/validate_cumulative_epub.py --epub ./build/epub-v070/openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.epub --build-record ./build/epub-v070/build-epub.json --alignment ./evidence/ALIGNMENT.jsonl --reference-map ./evidence/V070_EPUB_REFERENCE_MAP.json --output ./build/epub-v070/validation.json
+./tools/guard_tex.ps1 -Passes 1 -BuildDirectory ./build/epub-v071-figures -DocumentBases $figureBases
+python tools/render_cumulative_epub_figures.py --phase convert --expected-figures 31 --inventory ./build/v071-figures.json --build-dir ./build/epub-v071-figures --output-dir ./build/epub-v071-svg
+python tools/build_cumulative_epub.py --through-unit 321 --edition-version 0.7.1 --reference-map ./evidence/V071_EPUB_REFERENCE_MAP.json --build-dir ./build/epub-v071 --figures-dir ./build/epub-v071-svg
+python tools/validate_cumulative_epub.py --epub ./build/epub-v071/openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.1.epub --build-record ./build/epub-v071/build-epub.json --alignment ./evidence/ALIGNMENT.jsonl --reference-map ./evidence/V071_EPUB_REFERENCE_MAP.json --output ./build/epub-v071/validation.json
 ```
 
-The complete source ZIP includes the accepted reference map, figure derivation, builders, styles, diagrams and direct cumulative LaTeX. Compare rebuilt files with the versioned SHA-256 manifest.
+The complete source ZIP includes the corrected reference map, figure derivation, builders, styles, diagrams and direct cumulative LaTeX. Compare rebuilt files with the versioned SHA-256 manifest.
 
 ## Attribution and license
 

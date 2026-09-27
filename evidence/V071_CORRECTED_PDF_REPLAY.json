@@ -1,0 +1,38 @@
+{
+  "schema": "ps-v071-corrected-pdf-replay/1",
+  "status": "independent-guarded-byte-replay-pass",
+  "recorded_utc": "2026-09-27T06:54:06.216814+00:00",
+  "scope": {
+    "first_unit": "OLP-0001",
+    "last_unit": "OLP-0321",
+    "reader_units": 321,
+    "chapters": 31,
+    "semantic_segments": 3414,
+    "physical_pdf_pages": 420
+  },
+  "artifacts": {
+    "reader.tex": {
+      "bytes": 2131172,
+      "sha256": "33682539709c558905a57da023cb050f10a03fa85098eaea41b57c4c29b8cfea",
+      "independent_byte_replay": true
+    },
+    "reader.aux": {
+      "bytes": 541185,
+      "sha256": "3c5dc1829a0fab9e795fd2181ed513336f77189af95346f97977284a43df63d1",
+      "independent_byte_replay": true
+    },
+    "reader.pdf": {
+      "bytes": 2088718,
+      "sha256": "5e103ec5d4de07437a54505c65078f456d3df110947f127051f812cdf469ad73",
+      "independent_byte_replay": true
+    }
+  },
+  "guard_receipt_sha256": "ec3e8f72e17bad0dc473f4a595dc9dc0e95fcdd25ad51cefe916f6f1d063949b",
+  "repaired_primary_pdf_sha256": "5e103ec5d4de07437a54505c65078f456d3df110947f127051f812cdf469ad73",
+  "reference_map_sha256": "f287e8c29f898da943440f3c535335f0b8061c094e87634652b6a671c59713f9",
+  "reference_count": 785,
+  "known_public_v070_defect": "Literal ! metavariable notation on physical PDF pages 413–414.",
+  "corrected_primary_visual_check": "Affected pages inspected in the guarded corrected primary candidate; independent replay is byte-identical.",
+  "pagination_shift": "108 source-segment anchors moved relative to public v0.7.0; new reader occurrence page map required.",
+  "next_action": "Build and validate new segment-page map and versioned EPUB; package one corrected v0.7.1 release while translation proceeds."
+}

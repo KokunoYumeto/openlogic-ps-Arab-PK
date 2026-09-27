@@ -2569,6 +2569,17 @@ def title_page(translated_bundle_units: int) -> bytes:
     edition.text = (
         "د ماشيني ژباړې د روان کار برېښنايي لوستيزه نسخه"
     )
+    coverage = (
+        f"دا جزوي لوستونکی {THROUGH_UNIT} سرچينيز واحدونه (OLP-0001 تر "
+        f"OLP-{THROUGH_UNIT:04d}) لري؛ د 722 واحدونو بشپړه ژباړه لا روانه ده۔"
+        if EDITION_VERSION == "0.7.1"
+        else (
+            f"دا جزوي لوستونکی {THROUGH_UNIT} سرچينيز واحدونه (OLP-0001 تر "
+            f"OLP-{THROUGH_UNIT:04d}) لري؛ د 722 واحدونو بشپړه ژباړه لا روانه "
+            f"ده او تر اوسه {translated_bundle_units} واحدونه په "
+            "ژباړل شوي بنډل کښې شته۔"
+        )
+    )
     paragraphs = [
         (
             "په دې ټوليزه لوستيزه نسخه کښې د خلاص منطق د پروژې "
@@ -2576,12 +2587,7 @@ def title_page(translated_bundle_units: int) -> bytes:
             "منطق، د ثبوت نظامونه، موډل نظريه، محاسبويت، او د "
             "ټيورينګ ماشينونو لومړنۍ پېژندګلو شامل دي۔"
         ),
-        (
-            f"دا جزوي لوستونکی {THROUGH_UNIT} سرچينيز واحدونه (OLP-0001 تر "
-            f"OLP-{THROUGH_UNIT:04d}) لري؛ د 722 واحدونو بشپړه ژباړه لا روانه "
-            f"ده او تر اوسه {translated_bundle_units} واحدونه په "
-            "ژباړل شوي بنډل کښې شته۔"
-        ),
+        coverage,
         (
             "په متن کښې کږلي عنوانونه او ورپسې آبي [OLP] نښه "
             "د بشپړ OpenLogic هغو لومړۍ درجې منطق نحوي او معنايي "
@@ -3481,6 +3487,7 @@ def build(args: argparse.Namespace) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--through-unit", type=int, choices=(255, 321, 372), default=255)
+    parser.add_argument("--edition-version", choices=("0.7.0", "0.7.1"))
     parser.add_argument("--reference-map", type=Path)
     parser.add_argument(
         "--build-dir", type=Path, required=True
@@ -3496,9 +3503,9 @@ def main() -> None:
     THROUGH_UNIT = args.through_unit
     reader.EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, THROUGH_UNIT + 1)]
     if THROUGH_UNIT == 321:
-        EDITION_VERSION = "0.7.0"
-        EDITION_MODIFIED = "2026-09-25T00:00:00Z"
-        EPUB_NAME = "openlogic-ps-Arab-PK-cumulative-through-incompleteness-v0.7.0.epub"
+        EDITION_VERSION = args.edition_version or "0.7.0"
+        EDITION_MODIFIED = "2026-09-27T00:00:00Z" if EDITION_VERSION == "0.7.1" else "2026-09-25T00:00:00Z"
+        EPUB_NAME = f"openlogic-ps-Arab-PK-cumulative-through-incompleteness-v{EDITION_VERSION}.epub"
         SUBTITLE = "له بنسټونو تر محاسبويت او د نيمګړتيا تر قضيو"
         CHAPTER_COUNT = 31
         EXPECTED_SEGMENTS = 3414
@@ -3506,6 +3513,8 @@ def main() -> None:
         if args.reference_map is None:
             parser.error("--reference-map is required for OLP-0321")
     elif THROUGH_UNIT == 372:
+        if args.edition_version is not None:
+            parser.error("--edition-version applies only to OLP-0321")
         EDITION_VERSION = "0.8.0"
         EDITION_MODIFIED = "2026-09-26T00:00:00Z"
         EPUB_NAME = "openlogic-ps-Arab-PK-cumulative-through-church-rosser-v0.8.0.epub"
@@ -3515,6 +3524,8 @@ def main() -> None:
         EXPECTED_FIGURES = 31
         if args.reference_map is None:
             parser.error("--reference-map is required for OLP-0372")
+    elif args.edition_version is not None:
+        parser.error("--edition-version applies only to OLP-0321")
     if args.reference_map is not None:
         REFERENCE_MAP_PATH = args.reference_map.resolve()
     build(args)
