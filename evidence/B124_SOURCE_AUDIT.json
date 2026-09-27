@@ -1,0 +1,94 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T21:24:40.986986+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-PROOFS-IN-MODAL-SYSTEMS",
+  "batch_id": "PS-B124-PROOFS-IN-MODAL-SYSTEMS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0435",
+      "source_path": "content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex",
+      "source_bytes": 3982,
+      "source_sha256": "12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9",
+      "target_sha256": "6b6a901c1029fafd5b263263c4051816f2574f1d25551314e6b64631723b322d",
+      "paired_blocks": 14,
+      "derivation_environments": 6,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B124_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "b1323880431b42689f2add76055269db09bcccb6cb960dadb06d63fcfd0e700e",
+  "consultation_path": "work/B124_CANON_CONSULTATION.md",
+  "consultation_sha256": "7ee17feb4323336ff432f9551d9e8e248dae29ab8766ff6dc5e9d0a6aba0a458",
+  "staging_qa_sha256": {
+    "OLP-0435": "e63fa70387275ab61978f8d55723494d4a867da0977e9b6977859d33af9ee599"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0435",
+      "source_lines": "13-80",
+      "kind": "six-modal-system-proofs",
+      "finding": "All six system/conclusion pairs, derivation rows and five substitution labels retain direction and references."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "source_lines": "84-104",
+      "kind": "S4-S5-definition-and-equivalence",
+      "finding": "S4/KT4 and S5/KTB4 identifications, four-system equality and open exercise retained."
+    }
+  ],
+  "formula_policy": "Every inline/displayed formula, identifier, environment, macro, tag and proof-rule reference remains unchanged; only prose and five substitution labels localized. KT and KTB are formal Log-system names outside dollar math, documented as exact Latin-name QA exceptions. Frozen English unchanged.",
+  "unresolved": "No precise Pakistani modal-system naming attestation in checked pages; no reader-layout or human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0435; continue OLP-0436."
+}

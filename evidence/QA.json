@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 434,
-    "structural_pass": 434,
+    "draft_units": 435,
+    "structural_pass": 435,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B123-NORMAL-MODAL-DUAL-FORMULAS",
+  "batch": "PS-B124-PROOFS-IN-MODAL-SYSTEMS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14126,6 +14126,39 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0435",
+      "path": "content/normal-modal-logic/axioms-systems/proofs-modal-systems.tex",
+      "source_sha256": "12956456e135cb022e30070608a0aa8c6b08a72c2cc9d2c63729816da57bf4f9",
+      "translation_sha256": "6b6a901c1029fafd5b263263c4051816f2574f1d25551314e6b64631723b322d",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "KT",
+        "KTB"
+      ],
+      "allowed_residual_english": [
+        "KT",
+        "KTB"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19612,6 +19645,60 @@
       "passage": "exercise",
       "reverse_paraphrase": "The proposition proof is left as Exercise and the final problem asks for it.",
       "finding": "No proof supplied or omitted."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "claims",
+      "reverse_paraphrase": "KT5 derives B and 4; KDB4 derives T; KB4 derives 5; KB5 derives 4; KT derives D.",
+      "finding": "All six system/conclusion pairs retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KT5-B proof",
+      "reverse_paraphrase": "KT5 uses axiom 5, the diamond dual of T and propositional logic to derive B.",
+      "finding": "Rows and rule references retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KT5-4 proof",
+      "reverse_paraphrase": "Two substitutions of Box A for p, the dual of 5 and RK lead from Box A to Box Box A.",
+      "finding": "Substitution role and six rows retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KDB4-T proof",
+      "reverse_paraphrase": "The diamond dual of B, D with Box A for p, and axiom 4 yield T.",
+      "finding": "Five rows and order retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KB4-5 proof",
+      "reverse_paraphrase": "B with Diamond A for p and the diamond dual of 4 yield 5 via RK and PL.",
+      "finding": "Four rows retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KB5-4 proof",
+      "reverse_paraphrase": "B with Box A for p and the diamond dual of 5 yield 4 via RK and PL.",
+      "finding": "Four rows retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "KT-D proof",
+      "reverse_paraphrase": "T and its diamond dual yield D by propositional logic.",
+      "finding": "Three rows retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "system names",
+      "reverse_paraphrase": "S4 is defined as KT4 and S5 as KTB4; the alternative systems characterize equivalence relations.",
+      "finding": "Both definitions and explanation retained."
+    },
+    {
+      "unit_id": "OLP-0435",
+      "passage": "open S5 exercise",
+      "reverse_paraphrase": "KTB4, KT5, KDB4 and KDB5 are asserted equal; proof and final problem remain open.",
+      "finding": "Equality chain and exercise status retained."
     }
   ],
   "builds": [
