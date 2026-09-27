@@ -1,0 +1,75 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T08:41:28.905112+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-PART",
+  "batch_id": "PS-B099-NORMAL-MODAL-PART",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0407",
+      "source_path": "content/normal-modal-logic/normal-modal-logic.tex",
+      "source_bytes": 675,
+      "source_sha256": "8dcd5a551f104cbdeb2a3bf027ce4b2a203c2dffcc5f93a0827bdcda7e230604",
+      "target_sha256": "7b1b6f4290b0c2dd3661162c14608792a584e8e02cb0210ceddcab476dc65944",
+      "paired_blocks": 14,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B099_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "bfe76e7db26a55dc5f3dbccf8bc5c21a42925b24976e0b54d07385a0a6b51f60",
+  "consultation_path": "work/B099_CANON_CONSULTATION.md",
+  "consultation_sha256": "d5772e618edacc356be89df9516b27c9a863edb78c9d07e94b117635b903e172",
+  "staging_qa_sha256": {
+    "OLP-0407": "4c826fdaa27a4c414227456c66ca2b4c7516eab2cdcdf74b60f450d60107bab6"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0407",
+      "source_lines": "7",
+      "kind": "normal-modal-title",
+      "finding": "The formal normal qualifier is transcribed reversibly and distinguished from ordinary usage by downstream frozen definitions."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "source_lines": "9-12",
+      "kind": "editorial-scope",
+      "finding": "Metatheory, current Antonelli notes, basic modal logic and classical axiom/frame correspondence are all preserved."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "source_lines": "15-27",
+      "kind": "part-imports",
+      "finding": "Seven imports and the part hook remain exact."
+    }
+  ],
+  "formula_policy": "No mathematics in this part driver; all identifiers, imports, environments and structural macros match frozen English exactly; no source correction adopted.",
+  "unresolved": "Exact Pakistani technical attestations for normal modal logic and correspondence theory were not found in the consulted passages; editorial choices remain open to expert correction, without a human-review gate.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0407; continue OLP-0408."
+}

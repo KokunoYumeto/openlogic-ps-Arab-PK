@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B098-MANY-VALUED-PROPOSITIONAL-RULES",
-  "status": "OLP-0406 source-reviewed and staged; 27 paired blocks, exact rule trees, 150 truth-value checks and eight reverse-paraphrase samples",
+  "batch_id": "PS-B099-NORMAL-MODAL-PART",
+  "status": "OLP-0407 source-reviewed and staged; 14 paired blocks, unchanged structural imports and four reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8529,6 +8529,20 @@
       ],
       "scope": "Complete 27-block n-sided propositional rules for negation, conjunction, disjunction and the Łukasiewicz, strong Kleene and Gödel implications. All displayed rule trees unchanged; 150 independent truth-value checks pass. No rendered source correction.",
       "allowed_residual_english": []
+    },
+    "OLP-0407": {
+      "batch_id": "PS-B099-NORMAL-MODAL-PART",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV"
+      ],
+      "terms": [
+        "TERM-MODAL-LOGIC",
+        "TERM-METALOGIC"
+      ],
+      "scope": "Fourteen-block part driver; title and editorial translated, seven imports and part hook unchanged. Normal is a formal modal qualifier, and correspondence concerns modal schemas and accessibility-frame properties. Technical labels are provisional.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12707,6 +12721,30 @@
       "passage": "derivation caption",
       "reverse_paraphrase": "The sideways figure is an example derivation in three-valued Łukasiewicz logic.",
       "finding": "Caption's named token and math span retained."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "passage": "title",
+      "reverse_paraphrase": "The part is about normal modal logics, with normal used as a defined formal condition rather than an everyday adjective.",
+      "finding": "Technical qualifier and plural scope retained."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "passage": "metatheory",
+      "reverse_paraphrase": "This part studies metatheory of normal modal logics.",
+      "finding": "Object-level and metalogical levels not conflated."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "passage": "current contents and attribution",
+      "reverse_paraphrase": "At present the part consists of Aldo Antonelli's notes on classical correspondence theory for basic modal logic.",
+      "finding": "Current limitation, author and subject retained."
+    },
+    {
+      "unit_id": "OLP-0407",
+      "passage": "correspondence sense",
+      "reverse_paraphrase": "The theory links modal schemas with accessibility-frame properties; it is not a bijection claim.",
+      "finding": "Checked against the frozen downstream introduction."
     }
   ]
 }
