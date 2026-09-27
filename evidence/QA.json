@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 389,
-    "structural_pass": 389,
+    "draft_units": 390,
+    "structural_pass": 390,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B084-MVL-VALUATION-SATISFACTION",
+  "batch": "PS-B085-MVL-SEMANTIC-NOTIONS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12265,6 +12265,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0390",
+      "path": "content/many-valued-logic/syntax-and-semantics/semantic-notions.tex",
+      "source_sha256": "897125a2b2dddc985219270cc16af490719261dc292857bbcb157d1ad899597d",
+      "translation_sha256": "bd136c8aa43a599185f6096e9695dc56eb97a4117cd9f9aaf23754dcc6c7186f",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15873,6 +15899,36 @@
       "passage": "satisfaction",
       "reverse_paraphrase": "A formula is satisfied exactly when its value lies in V+; a set Gamma is satisfied by a valuation exactly when every member is satisfied by that same valuation.",
       "finding": "Target preserves the designated membership, negated notation and universal set condition."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "formula and set satisfiability",
+      "reverse_paraphrase": "A formula or set is satisfiable when some valuation satisfies it or all its members; absence of such a valuation makes it unsatisfiable.",
+      "finding": "Target retains the existential and common-valuation scopes."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "tautology and consequence",
+      "reverse_paraphrase": "A tautology is satisfied by every valuation; semantic consequence preserves truth at each valuation satisfying all premises.",
+      "finding": "Target retains universal valuation scope and premise condition."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "four general facts",
+      "reverse_paraphrase": "The source states empty-premise tautology, finite-subset satisfiability, monotonicity and the exact transitivity or cut pattern.",
+      "finding": "Target preserves every premise, set union and entailment direction."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "proof and problem",
+      "reverse_paraphrase": "The proof says Exercise and the following problem separately asks the reader to prove the proposition.",
+      "finding": "Target preserves both prompts without inventing a proof."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "classical conditional boundary",
+      "reverse_paraphrase": "Classical semantic modus ponens and the semantic deduction theorem involve the conditional; they can fail in a many-valued logic according to its conditional truth function.",
+      "finding": "Target explicitly keeps the classical scope and many-valued failure qualification."
     }
   ],
   "builds": [

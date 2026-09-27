@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B084-MVL-VALUATION-SATISFACTION",
-  "status": "OLP-0389 source-reviewed and staged; ten paired blocks, exact math parity, inherited terminology and three reverse-paraphrase samples",
+  "batch_id": "PS-B085-MVL-SEMANTIC-NOTIONS",
+  "status": "OLP-0390 source-reviewed and staged; thirteen paired blocks, exact math parity, one provisional terminology decision and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8173,6 +8173,28 @@
       ],
       "scope": "Source-reviewed many-valued valuation, inductive formula evaluation and designated-value satisfaction; exact ten paired blocks, formulas, identifiers and term tokens. Pakistani scholarly usage is primary; Afghan logic page is a labelled regional comparator.",
       "allowed_residual_english": []
+    },
+    "OLP-0390": {
+      "batch_id": "PS-B085-MVL-SEMANTIC-NOTIONS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MVL-SEMANTIC-BOUNDARIES",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-PROOF-CALCULI",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-MVL-MATRIX"
+      ],
+      "scope": "Source-reviewed many-valued semantic notions; exact thirteen paired blocks, valuations, quantifiers, formulas, labels and term tokens. General semantic facts and conditional-dependent classical laws remain distinct; Pakistani scholarly usage is primary and Afghan logic pages are regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11781,6 +11803,36 @@
       "passage": "satisfaction",
       "reverse_paraphrase": "A formula is satisfied exactly when its value lies in V+; a set Gamma is satisfied by a valuation exactly when every member is satisfied by that same valuation.",
       "finding": "Target preserves the designated membership, negated notation and universal set condition."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "formula and set satisfiability",
+      "reverse_paraphrase": "A formula or set is satisfiable when some valuation satisfies it or all its members; absence of such a valuation makes it unsatisfiable.",
+      "finding": "Target retains the existential and common-valuation scopes."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "tautology and consequence",
+      "reverse_paraphrase": "A tautology is satisfied by every valuation; semantic consequence preserves truth at each valuation satisfying all premises.",
+      "finding": "Target retains universal valuation scope and premise condition."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "four general facts",
+      "reverse_paraphrase": "The source states empty-premise tautology, finite-subset satisfiability, monotonicity and the exact transitivity or cut pattern.",
+      "finding": "Target preserves every premise, set union and entailment direction."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "proof and problem",
+      "reverse_paraphrase": "The proof says Exercise and the following problem separately asks the reader to prove the proposition.",
+      "finding": "Target preserves both prompts without inventing a proof."
+    },
+    {
+      "unit_id": "OLP-0390",
+      "passage": "classical conditional boundary",
+      "reverse_paraphrase": "Classical semantic modus ponens and the semantic deduction theorem involve the conditional; they can fail in a many-valued logic according to its conditional truth function.",
+      "finding": "Target explicitly keeps the classical scope and many-valued failure qualification."
     }
   ]
 }

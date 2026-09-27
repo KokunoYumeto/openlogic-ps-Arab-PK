@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 389 of 722 source units are translated drafts. This log contains 197 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 390 of 722 source units are translated drafts. This log contains 198 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1769,6 +1769,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani scholarly prose and semantics page inspected; Afghan truth-table and k-place-operation pages are labelled regional comparators; the exact logic-matrix technical noun is unattested in checked Pakistani pages and provisional
 - Review question: A matrix packages a connective language, a nonempty value set V, a designated subset V+ of V, and for each n-place connective a truth function V^n to V. The frozen source does not require V+ to be nonempty; do not silently add that condition. For n=0, the truth function is identified with an element of V. The classical example designates only True and assigns the exact displayed truth tables.
 - Timing: contemporaneous B083 owner source review and visually inspected Pakistani-first Pashto consultation
+
+## TERM-MVL-SEMANTIC-BOUNDARIES
+
+- Type: terminology and semantic boundary
+- Choice: معنايي يکنواختي / معنايي انتقاليت / مودوس پوننس / د معنايي استنتاج قضيه / د څو ارزښته شرطي پوله
+- Source and target: [frozen English](upstream/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex#L61) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/semantic-notions.tex#L61).
+- Uncertainty: the exact Pakistani many-valued conditional-boundary label is provisional.
+- Review question: Are the four general semantic facts and the two conditional-dependent classical results unmistakably distinct?
+- Timing: contemporaneous B085 source review and visually inspected Pakistani-first consultation
 
 ## DEC-OLFUN-001
 

@@ -1,0 +1,70 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{sem}
+
+\olsection{معنايي مفهومونه}
+
+فرض کړئ چې يو څو ارزښته منطق~$\Log L$ په يوه ماتريس ټاکل شوے
+وي۔ بيا د~$\Log L$ دپاره معمول معنايي مفهومونه تعريفولے شو۔
+
+\begin{defn}
+\begin{enumerate}
+\item !!^a{formula}~$!A$ هله \emph{د صدق وړ} دے چې د کوم
+  $\pAssign{v}$ دپاره $\pSat{v}{!A}$ وي؛ او هله \emph{د صدق نۀ وړ}
+  دے چې د هېڅ $\pAssign{v}$ دپاره $\pSat{v}{!A}$ نۀ وي؛
+\item !!^a{formula}~$!A$ هله \emph{تاوتولوژي} ده چې د ټولو
+  !!{valuation}s~$v$ دپاره $\pSat{v}{!A}$ وي؛
+\item که~$\Gamma$ د !!{formula}s يو سټ وي، نو $\Gamma \Entails !A$
+  (``$\Gamma$، $!A$ ته استلزام ورکوي'') هله او يوازې هله چې د هرې
+  هغې !!{valuation}~$\pAssign{v}$ دپاره $\pSat{v}{!A}$ وي چې
+  $\pSat{v}{\Gamma}$ وي۔
+\item که~$\Gamma$ د !!{formula}s يو سټ وي، نو~$\Gamma$ هله
+  \emph{د صدق وړ} دے چې داسې !!a{valuation}~$\pAssign{v}$ موجوده
+  وي چې $\pSat{v}{\Gamma}$ وي؛ او که داسې نۀ وي، $\Gamma$
+  \emph{د صدق نۀ وړ} دے۔
+\end{enumerate}
+\end{defn}
+
+د دغو مفهومونو ځينې خاصيتونه د کلاسيک منطق د حالت په څېر دي:
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ هله او يوازې هله تاوتولوژي ده چې
+  $\emptyset \Entails !A$ وي؛
+\item که~$\Gamma$ د صدق وړ وي، نو د~$\Gamma$ هر متناهي فرعي سټ
+  هم د صدق وړ دے؛
+\item\ollabel{def:monotonicity}%
+يکنواختي: که $\Gamma \subseteq \Delta$
+  او $\Gamma \Entails !A$ وي، نو $\Delta \Entails !A$ هم؛
+\item\ollabel{def:Cut}%
+انتقاليت: که $\Gamma \Entails !A$ او
+  $\Delta \cup \{ !A\} \Entails !B$ وي، نو $\Gamma \cup \Delta \Entails
+  !B$؛
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+تمرين۔
+\end{proof}
+
+\begin{prob}
+د \olref[mvl][syn][sem]{prop:semanticalfacts} ثبوت ورکړئ۔
+\end{prob}
+
+په کلاسيک منطق کښې استلزام له شرطي سره تړلے شو۔ د بېلګې په
+توګه، د \emph{مودوس پوننس} اعتبار لرو: که $\Gamma
+\Entails !A$ او $\Gamma \Entails !A \lif !B$ وي، نو $\Gamma \Entails
+!B$ وي۔ په کلاسيک منطق کښې د $\Entails$ او $\lif$ تر منځ يوه بله
+مهمه اړيکه د معنايي استنتاج قضيه ده: $\Gamma \Entails !A
+\lif !B$ هله او يوازې هله چې $\Gamma \cup \{!A\} \Entails !B$
+وي۔ دا پايلې په څو ارزښته منطقونو کښې \emph{لازماً نۀ} صدق کوي۔
+دا چې صدق کوي که نۀ، د صدق پر تابعې~$\tf{\lif}$ پورې تړلې ده۔
+
+\end{document}
