@@ -1,0 +1,106 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{luk}
+
+\olsection{د لوکاشېوېچ منطق}
+
+\begin{editorial}
+  دا د نامتناهي ارزښته لوکاشېوېچ د منطق د برخې يوه لنډه لومړنۍ مسوده ده۔
+\end{editorial}
+
+\begin{defn}\ollabel{def:lukasiewicz} نامتناهي ارزښته د لوکاشېوېچ
+منطق~$\LogLuk[\infty]$ په دې ماتريس تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$ لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V_\infty$۔
+  \item يوازې~$1$ ټاکل شوے قيمت دے؛ يعنې~$V^+ = \{1\}$۔
+  \item صدق تابعې په لاندې تابعو ټاکل کېږي:
+  \begin{align*}
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{که } x \le y\\
+      1-(x-y) & \text{په بل حالت کښې.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+د لوکاشېوېچ $m$-ارزښته منطق همداسې تعريفېږي، خو~$V = V_m$ لري۔
+\end{defn}
+
+\begin{prop}
+  د~\olref[thr][luk]{def:lukasiewicz} له مخې تعريف شوے منطق~$\LogLuk[3]$
+  د~\olref{def:lukasiewicz} له مخې له تعريف شوي~$\LogLuk[3]$ سره يو شان دے۔
+\end{prop}
+
+\begin{proof}
+  دا د~\olref[thr][luk]{def:lukasiewicz} د نښلوونکو صدق جدولونه
+  د~\olref{def:lukasiewicz} له معادلو څخه له ترلاسه شوو جدولونو سره
+  په پرتله کولو ليدل کېدے شي:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}$ & \\ 
+      \hline  
+      $1$ & $0$ \\ 
+      $1/2$ & $1/2$ \\
+      $0$ & $1$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1/2$ & $1/2$ & $0$\\ 
+      $0$ & $0$ & $0$ & $0$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1$ & $1$ \\ 
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1$ & $1$ & $1/2$  \\ 
+      $0$ & $1$ & $1$ & $1$ 
+    \end{tabular}
+  \end{center} 
+\end{proof}
+
+\begin{prop}\ollabel{prop:luk-infty-m}
+  که~$\Gamma \Entails[\LogLuk[\infty]] !B$ وي، نو د هر~$m \ge 2$
+  دپاره~$\Gamma \Entails[\LogLuk[m]] !B$ هم وي۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][luk]{prop:luk-infty-m} ثابت کړئ۔
+\end{prob}
+
+په حقيقت کښې برعکس لورے هم صدق کوي۔
+
+نامتناهي ارزښته د لوکاشېوېچ منطق تر ټولو مشهور فازي منطق دے۔
+د فازي منطق په ليکنو کښې شرطي نښلوونکے ډېر ځله په~$\lnot !A \lor !B$
+تعريفېږي۔ په دې سره به يو نامتناهي ارزښته قوي کليني منطق ترلاسه شي۔
+
+\begin{prob}
+  وښيئ چې~$(p \lif q) \lor (q \lif p)$ د~$\LogLuk[\infty]$
+  تاوتولوژي ده۔
+\end{prob}
+
+\end{document}

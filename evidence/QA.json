@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 399,
-    "structural_pass": 399,
+    "draft_units": 400,
+    "structural_pass": 400,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B092-INFINITE-VALUED-INTRODUCTION",
+  "batch": "PS-B093-INFINITE-LUKASIEWICZ",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12572,6 +12572,32 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0400",
+      "path": "content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+      "source_sha256": "cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6",
+      "translation_sha256": "5620b7206611ed31906921ee90394f6804e36c4fcfd67d8d6f4a6755eec12f8f",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -16468,6 +16494,54 @@
       "passage": "fuzzy real interval",
       "reverse_paraphrase": "The complete real unit interval, or other infinite subsets, can serve as truth values; the all-real case is often called fuzzy.",
       "finding": "Rational and real sets are not conflated."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "editorial scope",
+      "reverse_paraphrase": "The source explicitly calls this section a short stub.",
+      "finding": "Editorial role and limitation preserved."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "matrix",
+      "reverse_paraphrase": "The rational-valued matrix designates only 1 and uses negation 1-x, min conjunction, max disjunction and bounded-difference implication.",
+      "finding": "All functions and designation exact."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "finite restriction",
+      "reverse_paraphrase": "The m-valued matrix changes only the truth-value set to V_m.",
+      "finding": "Value-set substitution retained; V_m correction belongs to preceding unit."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "three-valued comparison",
+      "reverse_paraphrase": "At 0, 1/2 and 1 the infinite functions reproduce the earlier three-valued Łukasiewicz tables.",
+      "finding": "All 30 cells pass independent rational arithmetic."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "forward consequence",
+      "reverse_paraphrase": "Infinite-valued entailment implies entailment in every finite m-valued restriction for m at least two.",
+      "finding": "Quantifier and direction exact."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "converse assertion",
+      "reverse_paraphrase": "The text asserts the reverse consequence direction too, without giving a proof here.",
+      "finding": "No proof inserted."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "alternative implication",
+      "reverse_paraphrase": "Some fuzzy literature defines conditional as not-A-or-B, giving an infinite-valued strong Kleene setting.",
+      "finding": "Alternative kept distinct from the Łukasiewicz implication above."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "prelinearity exercise",
+      "reverse_paraphrase": "Students are asked to show that one of the two opposite implications is always fully true.",
+      "finding": "Formula exact; no answer inserted in target."
     }
   ],
   "builds": [

@@ -1,0 +1,105 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T06:39:17.394634+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-INFINITE-LUKASIEWICZ",
+  "batch_id": "PS-B093-INFINITE-LUKASIEWICZ",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0400",
+      "source_path": "content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+      "source_bytes": 3022,
+      "source_sha256": "cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6",
+      "target_sha256": "5620b7206611ed31906921ee90394f6804e36c4fcfd67d8d6f4a6755eec12f8f",
+      "paired_blocks": 16
+    }
+  ],
+  "notes_path": "work/B093_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6c980fd5f29267a02ae9f7663e92ff4d20736735884338446c0f4f09005963c2",
+  "consultation_path": "work/B093_CANON_CONSULTATION.md",
+  "consultation_sha256": "7b04a1eb2f41ef26ed4d25bd02ef8d2db3a2dc75ede5cbbe47af4fa62b787189",
+  "staging_qa_sha256": {
+    "OLP-0400": "1ea1f54b539e7cd850fe0be037fbf2472c195d794f712837dd15501aebc2b3a8"
+  },
+  "semantic_qa_sha256": "24fea744efe5af1fc7f66ef71a6761527274a4fb503b06faeaa520d8ab2321cc",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0400",
+      "source_lines": "11-16",
+      "kind": "editorial-scope",
+      "finding": "The source's explicit short-stub status is translated, not expanded."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "source_lines": "18-43",
+      "kind": "matrix-definition",
+      "finding": "All four infinite-valued truth functions, sole designated value and finite-m restriction are exact."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "source_lines": "45-95",
+      "kind": "finite-matrix-comparison",
+      "finding": "All four displayed three-valued truth tables and both references are exact; 30 table cells independently checked."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "source_lines": "97-119",
+      "kind": "consequence-and-exercises",
+      "finding": "Forward finite consequence proposition, stated converse, alternative implication and tautology exercise retain their exact scope."
+    }
+  ],
+  "formula_policy": "All source math spans, truth tables, exercise formulas, IDs, labels, references, environments and structural macros match frozen English exactly; no source correction adopted.",
+  "unresolved": "Exact Pakistani specialized fuzzy compound remains provisional; converse entailment assertion is untranslated proof-wise because the source provides no proof; corrected reader release pending. No human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0400; continue OLP-0401."
+}

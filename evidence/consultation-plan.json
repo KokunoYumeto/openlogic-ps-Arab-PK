@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B092-INFINITE-VALUED-INTRODUCTION",
-  "status": "OLP-0398/0399 source-reviewed and staged; 17 paired blocks, one displayed-math exception repairing two source bounds, one provisional terminology decision and five reverse-paraphrase samples",
+  "batch_id": "PS-B093-INFINITE-LUKASIEWICZ",
+  "status": "OLP-0400 source-reviewed and staged; 16 paired blocks, exact math and tables, eight reverse-paraphrase samples and independent finite-table arithmetic",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8388,6 +8388,26 @@
       ],
       "scope": "Eight-block infinite-valued introduction with one adjacent-disclosed align-span correction to two source bounds; rational/real and designated-value distinctions retained.",
       "allowed_residual_english": []
+    },
+    "OLP-0400": {
+      "batch_id": "PS-B093-INFINITE-LUKASIEWICZ",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY"
+      ],
+      "terms": [
+        "TERM-MVL-INFINITE-VALUED-FUZZY",
+        "TERM-MVL-LUKASIEWICZ-MODAL",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-MULTIPLE-DESIGNATION",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Complete 16-block infinite-valued Łukasiewicz short stub with four exact truth functions, four exact finite truth tables, propositions, exercises and fuzzy conditional contrast. Pakistani scholarly prose primary; Afghan logic pages comparators. No source correction.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12284,6 +12304,54 @@
       "passage": "fuzzy real interval",
       "reverse_paraphrase": "The complete real unit interval, or other infinite subsets, can serve as truth values; the all-real case is often called fuzzy.",
       "finding": "Rational and real sets are not conflated."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "editorial scope",
+      "reverse_paraphrase": "The source explicitly calls this section a short stub.",
+      "finding": "Editorial role and limitation preserved."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "matrix",
+      "reverse_paraphrase": "The rational-valued matrix designates only 1 and uses negation 1-x, min conjunction, max disjunction and bounded-difference implication.",
+      "finding": "All functions and designation exact."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "finite restriction",
+      "reverse_paraphrase": "The m-valued matrix changes only the truth-value set to V_m.",
+      "finding": "Value-set substitution retained; V_m correction belongs to preceding unit."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "three-valued comparison",
+      "reverse_paraphrase": "At 0, 1/2 and 1 the infinite functions reproduce the earlier three-valued Łukasiewicz tables.",
+      "finding": "All 30 cells pass independent rational arithmetic."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "forward consequence",
+      "reverse_paraphrase": "Infinite-valued entailment implies entailment in every finite m-valued restriction for m at least two.",
+      "finding": "Quantifier and direction exact."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "converse assertion",
+      "reverse_paraphrase": "The text asserts the reverse consequence direction too, without giving a proof here.",
+      "finding": "No proof inserted."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "alternative implication",
+      "reverse_paraphrase": "Some fuzzy literature defines conditional as not-A-or-B, giving an infinite-valued strong Kleene setting.",
+      "finding": "Alternative kept distinct from the Łukasiewicz implication above."
+    },
+    {
+      "unit_id": "OLP-0400",
+      "passage": "prelinearity exercise",
+      "reverse_paraphrase": "Students are asked to show that one of the two opposite implications is always fully true.",
+      "finding": "Formula exact; no answer inserted in target."
     }
   ]
 }
