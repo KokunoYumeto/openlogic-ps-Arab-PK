@@ -2885,3 +2885,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target changes only the second conjunct to C=True and adds an adjacent Pashto source note.
 - Evidence: The source repeats B=True for both conjuncts, but strong Kleene conjunction is True only when B=True and C=True.
 - Disclosure: `corrected-source-proof-formula-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+## OLMVL-008
+
+- Unit: `OLP-0399`.
+- Frozen source: `content/many-valued-logic/infinite-valued-logics/introduction.tex` (4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c) at `content/many-valued-logic/infinite-valued-logics/introduction.tex:15-24`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/introduction.tex:24` (812398c6c564e30f1e2e361495bedd5c8575ee0cd334a2240771fabe0949452a).
+- Audit: `PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION`.
+- Treatment: The target adds a positive denominator condition to V_infinity and replaces n<=m with n<m in V_m; an adjacent Pashto note discloses both source issues and the m>=2 scope.
+- Evidence: The source defines Nat with 0, so its first set admits undefined 0/0. Its second bound admits the extra value m/(m-1)>1 and contradicts the printed five-value V_5 example. The entire align environment is one normalized QA math span.
+- Disclosure: `corrected-two-index-bounds-in-one-align-span-plus-adjacent-Pashto-note`. Frozen English remains unchanged.

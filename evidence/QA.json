@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 397,
-    "structural_pass": 397,
+    "draft_units": 399,
+    "structural_pass": 399,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B091-MULTIPLE-DESIGNATION",
+  "batch": "PS-B092-INFINITE-VALUED-INTRODUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12509,6 +12509,69 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0398",
+      "path": "content/many-valued-logic/infinite-valued-logics/infinite-valued-logics.tex",
+      "source_sha256": "023a2c8bb60bba2541628de969f9e9e8c0be8c9df88786f9749b4c2b36c1cd84",
+      "translation_sha256": "5f3674ebbb0c17d75f6c744824c1202cabe0c16f7ff5abc46215cc54a619b1c1",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0399",
+      "path": "content/many-valued-logic/infinite-valued-logics/introduction.tex",
+      "source_sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+      "translation_sha256": "812398c6c564e30f1e2e361495bedd5c8575ee0cd334a2240771fabe0949452a",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-008"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n\\lem}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}0<m\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n<m}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16375,6 +16438,36 @@
       "passage": "Gödel designation",
       "reverse_paraphrase": "The Gödel matrix with True and Undef designated induces classical consequence.",
       "finding": "Proposition remains an exercise; finite Boolean-collapse cases were checked independently."
+    },
+    {
+      "unit_id": "OLP-0398",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The chapter imports the introduction and the Łukasiewicz and Gödel infinite-valued sections in source order.",
+      "finding": "Imports, chapter ID and hook are exact."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "rational values",
+      "reverse_paraphrase": "The rational numbers between zero and one form an infinite set of truth values; denominators must be positive.",
+      "finding": "OLMVL-008 repairs the missing positive-denominator bound."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "finite approximants",
+      "reverse_paraphrase": "For m at least two, V_m has m equally spaced values from zero to one, so V_5 has exactly five.",
+      "finding": "OLMVL-008 repairs the off-by-one upper bound; five displayed values remain exact."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "designation",
+      "reverse_paraphrase": "Usually only the value one is designated, though formulas may take intermediate values.",
+      "finding": "Sole-designation and intermediate-value distinction preserved."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "fuzzy real interval",
+      "reverse_paraphrase": "The complete real unit interval, or other infinite subsets, can serve as truth values; the all-real case is often called fuzzy.",
+      "finding": "Rational and real sets are not conflated."
     }
   ],
   "builds": [

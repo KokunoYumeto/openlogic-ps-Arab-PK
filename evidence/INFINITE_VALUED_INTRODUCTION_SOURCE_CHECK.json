@@ -1,0 +1,28 @@
+{
+  "schema": "ps-b092-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T06:36:06.588324+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0398",
+      "source_sha256": "023a2c8bb60bba2541628de969f9e9e8c0be8c9df88786f9749b4c2b36c1cd84",
+      "target_sha256": "5f3674ebbb0c17d75f6c744824c1202cabe0c16f7ff5abc46215cc54a619b1c1"
+    },
+    {
+      "unit_id": "OLP-0399",
+      "source_sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+      "target_sha256": "812398c6c564e30f1e2e361495bedd5c8575ee0cd334a2240771fabe0949452a"
+    }
+  ],
+  "audit_sha256": "f8a27807531932b99cdcecb161d14265436fb5a88bb1c598068648bfed17832a",
+  "semantic_qa_sha256": "cddf333229962e65597c5e550cbff381f1dffb2c8b7b3f2c69aedb3c2431becf",
+  "notes_sha256": "ff08de7011687a2aa22c0ee81d6c7b7f1958274f9efb1c96946843e96ebbc20b",
+  "consultation_sha256": "9d368e62808ae1d26374f910e2c9cc05ef1f173ccdd103b1ccce544ade34fea7",
+  "documented_formula_corrections": [
+    "OLMVL-008"
+  ],
+  "unresolved": "Exact Pakistani specialized infinite-valued and fuzzy compounds remain provisional; corrected reader release remains pending; no human specialist approval claimed.",
+  "next_action": "Translate OLP-0400; continue corrected reader validation at a later natural TeX checkpoint."
+}

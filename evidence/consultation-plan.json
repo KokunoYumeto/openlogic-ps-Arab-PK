@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B091-MULTIPLE-DESIGNATION",
-  "status": "OLP-0397 source-reviewed and staged; 27 paired blocks, three adjacent-disclosed source proof corrections, one provisional terminology decision, eight reverse-paraphrase samples and finite transfer checks",
+  "batch_id": "PS-B092-INFINITE-VALUED-INTRODUCTION",
+  "status": "OLP-0398/0399 source-reviewed and staged; 17 paired blocks, one displayed-math exception repairing two source bounds, one provisional terminology decision and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8346,6 +8346,48 @@
       ],
       "scope": "Complete 27-block multiple-designation section, two source proof corrections to conjunction operands and one to the valuation base equality, each adjacent-disclosed. Pakistani scholarly prose primary; Afghan logic pages comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0398": {
+      "batch_id": "PS-B092-INFINITE-VALUED-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY"
+      ],
+      "terms": [
+        "TERM-MVL-INFINITE-VALUED-FUZZY",
+        "TERM-NUMBERSETS",
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-MULTIPLE-DESIGNATION"
+      ],
+      "scope": "Exact nine-block chapter driver with localized title and three unchanged imports.",
+      "allowed_residual_english": []
+    },
+    "OLP-0399": {
+      "batch_id": "PS-B092-INFINITE-VALUED-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY"
+      ],
+      "terms": [
+        "TERM-MVL-INFINITE-VALUED-FUZZY",
+        "TERM-NUMBERSETS",
+        "TERM-DEDEKIND-INFINITE",
+        "TERM-REAL-COMPLETENESS",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-MULTIPLE-DESIGNATION"
+      ],
+      "scope": "Eight-block infinite-valued introduction with one adjacent-disclosed align-span correction to two source bounds; rational/real and designated-value distinctions retained.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12212,6 +12254,36 @@
       "passage": "Gödel designation",
       "reverse_paraphrase": "The Gödel matrix with True and Undef designated induces classical consequence.",
       "finding": "Proposition remains an exercise; finite Boolean-collapse cases were checked independently."
+    },
+    {
+      "unit_id": "OLP-0398",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The chapter imports the introduction and the Łukasiewicz and Gödel infinite-valued sections in source order.",
+      "finding": "Imports, chapter ID and hook are exact."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "rational values",
+      "reverse_paraphrase": "The rational numbers between zero and one form an infinite set of truth values; denominators must be positive.",
+      "finding": "OLMVL-008 repairs the missing positive-denominator bound."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "finite approximants",
+      "reverse_paraphrase": "For m at least two, V_m has m equally spaced values from zero to one, so V_5 has exactly five.",
+      "finding": "OLMVL-008 repairs the off-by-one upper bound; five displayed values remain exact."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "designation",
+      "reverse_paraphrase": "Usually only the value one is designated, though formulas may take intermediate values.",
+      "finding": "Sole-designation and intermediate-value distinction preserved."
+    },
+    {
+      "unit_id": "OLP-0399",
+      "passage": "fuzzy real interval",
+      "reverse_paraphrase": "The complete real unit interval, or other infinite subsets, can serve as truth values; the all-real case is often called fuzzy.",
+      "finding": "Rational and real sets are not conflated."
     }
   ]
 }

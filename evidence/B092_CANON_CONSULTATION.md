@@ -1,0 +1,5 @@
+# B092 canon consultation — infinite-valued matrices
+
+The rendered Pakistani primary pages `PK-IQRAM-P1-PROSE` and `PK-IQRAM-P2-SEMANTICS` guide scholarly prose and semantic exposition; `GRAMMAR-P166-SOV` guides clause order. Rendered Afghan pages `AF-NIAZMAN-P8-TRUTH-TABLE`, `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT`, and `AF-NIAZMAN-P25-TAUTOLOGY` provide regional comparisons, not Pakistani attestation. Registration checks exact page hashes and locations against `CANON_PASSAGES.jsonl`.
+
+Existing `TERM-NUMBERSETS` supplies «ناطق» and «حقيقي» number-set language, `TERM-DEDEKIND-INFINITE` supplies «نامتناهي», and `TERM-MVL-MATRIX` and `TERM-MVL-MULTIPLE-DESIGNATION` supply matrix and designated-value distinctions. B092 records the specialized compound «نامتناهي ارزښته منطقونه» and the provisional transliteration «فازي». Neither exact compound is claimed to be attested in the checked Pakistani canon. The formula bounds are adjudicated by frozen source definition of natural numbers and the five-value example, not by linguistic witnesses.

@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0397; B091 three adjacent-disclosed source proof repairs",
-  "adopted_utc": "2026-09-27T06:08:58.247367+00:00",
+  "status": "adopted through OLP-0399; B092 one align-span exception repairs two index bounds",
+  "adopted_utc": "2026-09-27T06:26:27.820331+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9602,6 +9602,53 @@
       ],
       "decision_timing": "contemporaneous B091 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-008",
+      "unit_id": "OLP-0399",
+      "classification": "confirmed_infinite_value_comprehension_bounds",
+      "source_path": "content/many-valued-logic/infinite-valued-logics/introduction.tex",
+      "source_sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+      "source_locator": "content/many-valued-logic/infinite-valued-logics/introduction.tex:15-24",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/introduction.tex",
+      "target_line_1based": 24,
+      "target_sha256": "812398c6c564e30f1e2e361495bedd5c8575ee0cd334a2240771fabe0949452a",
+      "mode": "corrected-two-index-bounds-in-one-align-span-plus-adjacent-Pashto-note",
+      "translation_change": "The target adds a positive denominator condition to V_infinity and replaces n<=m with n<m in V_m; an adjacent Pashto note discloses both source issues and the m>=2 scope.",
+      "reason": "The source defines Nat with 0, so its first set admits undefined 0/0. Its second bound admits the extra value m/(m-1)>1 and contradicts the printed five-value V_5 example. The entire align environment is one normalized QA math span.",
+      "formula_policy": "Exactly one normalized align environment differs for the two confirmed bounds; every other math span, V_5 entry, label, ID, macro and token remains exact. Frozen English is unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n\\lem}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}0<m\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n<m}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION",
+      "audit_artifacts": [
+        "B092_SOURCE_AUDIT.json",
+        "content/many-valued-logic/infinite-valued-logics/introduction.tex:15-24",
+        "ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/introduction.tex:24",
+        "B092_SEMANTIC_QA.json",
+        "content/sets-functions-relations/sets/important-sets.tex:17"
+      ],
+      "decision_timing": "contemporaneous B092 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9609,7 +9656,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0398 onward while continuing corrected reader validation at natural TeX checkpoints.",
+  "next_action": "Translate OLP-0400 onward; continue corrected reader validation at natural TeX checkpoints.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -9674,7 +9721,8 @@
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
     "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC",
     "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
-    "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION"
+    "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
+    "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION"
   ],
   "source_authorities": [
     {

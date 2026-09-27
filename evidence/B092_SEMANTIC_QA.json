@@ -1,0 +1,50 @@
+{
+  "schema": "ps-b092-index-bound-qa/1",
+  "status": "PASS",
+  "nat_zero_evidence": "Frozen OLP source content/sets-functions-relations/sets/important-sets.tex:17 explicitly sets Nat={0,1,2,3,...}.",
+  "first_source_counterexample": "The source's n,m in Nat and n<=m permits n=m=0, leaving 0/0 undefined; the target requires 0<m.",
+  "second_source_counterexample": "At m=5 the source's n<=m yields six values ending 5/4, contradicting its five-entry V_5; the target uses n<m and states m>=2.",
+  "tested_m_values": {
+    "2": {
+      "corrected_cardinality": 2,
+      "source_cardinality": 3
+    },
+    "3": {
+      "corrected_cardinality": 3,
+      "source_cardinality": 4
+    },
+    "4": {
+      "corrected_cardinality": 4,
+      "source_cardinality": 5
+    },
+    "5": {
+      "corrected_cardinality": 5,
+      "source_cardinality": 6
+    },
+    "6": {
+      "corrected_cardinality": 6,
+      "source_cardinality": 7
+    },
+    "7": {
+      "corrected_cardinality": 7,
+      "source_cardinality": 8
+    },
+    "8": {
+      "corrected_cardinality": 8,
+      "source_cardinality": 9
+    },
+    "9": {
+      "corrected_cardinality": 9,
+      "source_cardinality": 10
+    },
+    "10": {
+      "corrected_cardinality": 10,
+      "source_cardinality": 11
+    },
+    "11": {
+      "corrected_cardinality": 11,
+      "source_cardinality": 12
+    }
+  },
+  "scope": "Exact arithmetic and bounded-family check; not a claim that testing alone proves the general cardinality assertion."
+}

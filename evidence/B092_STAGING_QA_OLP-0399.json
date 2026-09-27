@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b092-staging-qa/1",
+  "unit_id": "OLP-0399",
+  "source_path": "content/many-valued-logic/infinite-valued-logics/introduction.tex",
+  "source_sha256": "4ce56099c4d8b852148cfe24eb6d1ed00a03fce30c9e1770e52eadbd4412762c",
+  "target_sha256": "812398c6c564e30f1e2e361495bedd5c8575ee0cd334a2240771fabe0949452a",
+  "source_blocks": 8,
+  "target_blocks": 8,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n\\lem}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+  ],
+  "target_only_math": [
+    "\\begin{align*}V_\\infty&=\\Setabs{\\frac{n}{m}}{n,m\\in\\Nat\\text{LOCALIZED}0<m\\text{LOCALIZED}n\\lem}.\\intertext{LOCALIZED}V_m&=\\Setabs{\\frac{n}{m-1}}{n\\in\\Nat\\text{LOCALIZED}n<m}\\intertext{LOCALIZED$V_5$$5$}V_5&=\\{0,\\frac{1}{4},\\frac{1}{2},\\frac{3}{4},1\\}.\\end{align*}"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

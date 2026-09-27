@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 397 of 722 source units are translated drafts. This log contains 204 terminology entries and 332 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 399 of 722 source units are translated drafts. This log contains 205 terminology entries and 333 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1882,6 +1882,23 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Choice: The target changes only the second conjunct to C=True and adds an adjacent Pashto source note.
 - Evidence: The source repeats B=True for both conjuncts, but strong Kleene conjunction is True only when B=True and C=True.
 - Review question: Does the Pashto note disclose the proof repair clearly?
+
+## TERM-MVL-INFINITE-VALUED-FUZZY
+
+- Type: terminology
+- Choice: نامتناهي ارزښته منطق / ناطق رښتياوالي قيمتونه / حقيقي رښتياوالي قيمتونه / فازي منطق
+- Source and target: [frozen English](upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex#L11) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/introduction.tex#L11).
+- Uncertainty: exact Pakistani infinite-valued and fuzzy compounds remain provisional.
+- Review question: Are rational versus real truth-value sets and sole designation of 1 clear?
+- Timing: contemporaneous B092 source review and visually inspected Pakistani-first consultation
+
+## DEC-OLMVL-008
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/infinite-valued-logics/introduction.tex#L15) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/infinite-valued-logics/introduction.tex#L24).
+- Choice: The target adds a positive denominator condition to V_infinity and replaces n<=m with n<m in V_m; an adjacent Pashto note discloses both source issues and the m>=2 scope.
+- Evidence: The source defines Nat with 0, so its first set admits undefined 0/0. Its second bound admits the extra value m/(m-1)>1 and contradicts the printed five-value V_5 example. The entire align environment is one normalized QA math span.
+- Review question: Do both corrected bounds agree with the natural-number definition and V_5 example?
 
 ## DEC-OLFUN-001
 
