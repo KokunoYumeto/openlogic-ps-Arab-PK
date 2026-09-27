@@ -1,0 +1,221 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: multiple-designation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{mul}
+
+\olsection{يوازې $\True$ نۀ، نور قيمتونه هم ټاکل}
+
+تر اوسه چې کوم منطقونه مو ليدلي، په ټولو کښې د ټاکل شوو
+رښتياوالي قيمتونو سټ~$V^+ = \{\True\}$ و؛ يعنې يوه دعوه هله
+رښتيا ګڼل کېده چې قيمت ئې~$\True$ و۔ خو کېدے شي هغه دعوه هم
+رښتيا وګڼو چې يوازې~$\False$ نۀ وي۔ بيا د بېلګې په توګه په
+ماتريس کښې~$V^+ = \{\True, \Undef\}$ ټاکل يو بل منطق جوړوي۔
+
+\begin{defn}
+\emph{د پارادوکس منطق}~$\LogLP$ په دې ماتريس تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$
+  نښلوونکي لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+  \item $\True$ او~$\Undef$ دواړه ټاکل شوي دي؛ يعنې~$V^+ = \{\True, \Undef\}$۔
+  \item صدق تابعې د کليني د قوي منطق له تابعو سره يو شان دي۔
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+د هالډېن \emph{د بې‌معنايۍ منطق}~$\LogHal$ په دې ماتريس تعريفېږي:
+\begin{enumerate}
+  \item معياري بياني ژبه~$\Lang L_0$ چې
+  $\lnot$, $\land$, $\lor$, $\lif$
+  او يو $1$ ځايه نښلوونکے~$+$ لري۔
+  \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+  \item $\True$ او~$\Undef$ دواړه ټاکل شوي دي؛ يعنې~$V^+ = \{\True, \Undef\}$۔
+  \item صدق تابعې د کليني د کمزوري منطق له تابعو سره يو شان دي،
+  خو د «بې‌معنا دے» عملګر هم ورسره شته:
+  \begin{center}
+    \begin{tabular}{c|c} 
+    $\tf{+}$ & \\ 
+    \hline  
+    $\True$ & $\False$ \\ 
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$ 
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+دا منطقونه، سره له دې چې د کليني له منطقونو سره صدق جدولونه
+شريکوي، د هغو پر خلاف \emph{تاوتولوژۍ لري}۔
+
+\begin{prop}\ollabel{prop:LP-taut-CL} د~$\LogLP$ تاوتولوژۍ د کلاسيک
+  بياني منطق له تاوتولوژيو سره يو شان دي۔
+\end{prop}
+
+\begin{proof}
+  د~\olref[syn][sub]{prop:mvl-cl} له مخې، که~$\Entails[\LogLP] !A$
+  وي، نو~$\Entails[\LogCL] !A$ هم وي۔ د برعکس لوري د ښودلو دپاره
+  ثابتوو چې که داسې !!a{valuation}~$\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ وي چې~$\pValue v(!A)[\LogKs] = \False$، نو داسې
+  !!a{valuation}~$\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  هم شته چې~$\pValue {v'}(!A)[\LogCL] = \False$۔ دا د~$\LogLP$
+  دپاره مطلوبه پايله ورکوي، ځکه~$\LogKs$ او~$\LogLP$ يو شان
+  ځانګړې صدق تابعې لري، او~$\False$ د~$\LogLP$ يوازينے
+  نۀ ټاکل شوے قيمت دے (همدا د~$\LogLP$ او~$\LogKs$ يوازينے توپير دے)۔
+  نو که~$\Entails/[\LogLP] !A$ وي، د يوه~!!{valuation}~$\pAssign v$
+  دپاره~$\pValue v(!A)[\LogLP] = \pValue
+  v[\LogKs](!A) = \False$ وي۔ د ثابتېدونکې دعوې له مخې
+  $\pValue{v'}[\LogCL](!A) = \False$، يعنې~$\Entails/[\LogCL] !A$۔
+  
+  د دې دعوې د ثبوت دپاره لومړے~$\pAssign {v'}$ داسې تعريفوو:
+  \[
+    \pAssign {v'}(p) = 
+    \begin{cases}
+    \True & \text{که } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{په بل حالت کښې}
+  \end{cases}
+  \]
+  اوس پر~$!A$ په استقرا سره ښيو چې (الف) که~$\pValue v(!A)[\LogKs]
+  = \False$ وي، نو~$\pValue {v'}(!A)[\LogCL] = \False$؛ او (ب) که
+  $\pValue v(!A)[\LogKs] = \True$ وي، نو~$\pValue {v'}(!A)[\LogCL] =
+  \True$۔
+  \begin{enumerate}
+    \item د استقرا بنسټ:~$!A \ident p$۔ د~\olref[syn][val]{defn:pValue}
+    له مخې~$\pValue v(!A)[\LogKs] = \pAssign v(p)$ دے۔ که دا قيمت
+    دروغ وي، تعريف شوې نوې ټاکنه هم دروغ ورکوي؛ او که رښتيا وي،
+    نوې ټاکنه هم رښتيا ورکوي۔ له همدې امله (الف) او (ب) دواړه پوره دي۔
+    د سرچينې يادونه: اصلي ثبوت دلته د دواړو ټاکنو بې‌قيده برابري
+    ليکي؛ هغه د ناټاکلي مدخل دپاره ناسمه ده، خو دا دوه شرطي دعوې
+    پرې نۀ ولاړېږي۔
+    
+    د استقرايي ګام دپاره لاندې حالتونه وګورئ:
+    \item $!A \ident \lnot !B$. 
+    \begin{enumerate}
+      \item فرض کړئ~$\pValue v(\lnot!B)[\LogKs] = \False$۔ د
+      $\tf{\lnot}[\LogKs]$ د تعريف له مخې~$\pValue v(!B)[\LogKs]  =
+      \True$۔ د استقرايي فرض د (ب) حالت له مخې~$\pValue
+      {v'}(!B)[\LogCL]  = \True$ کېږي؛ نو~$\pValue {v'}(\lnot !B)[\LogCL] = \False$۔
+      \item فرض کړئ~$\pValue v(\lnot!B)[\LogKs] = \True$۔ د
+      $\tf{\lnot}[\LogKs]$ د تعريف له مخې~$\pValue v(!B)[\LogKs]  =
+      \False$۔ د استقرايي فرض د (الف) حالت له مخې~$\pValue
+      {v'}(!B)[\LogCL]  = \False$ کېږي؛ نو~$\pValue {v'}(\lnot !B)[\LogCL] = \True$۔
+    \end{enumerate}
+
+    \item $!A \ident (!B \land !C)$.
+    \begin{enumerate}
+      \item فرض کړئ~$\pValue v(!B \land !C)[\LogKs] = \False$۔ د
+      $\tf{\land}[\LogKs]$ د تعريف له مخې يا~$\pValue v(!B)[\LogKs]  =
+      \False$ وي، يا~$\pValue v(!C)[\LogKs]  = \False$ وي۔ د
+      استقرايي فرض د (الف) حالت له مخې يا~$\pValue {v'}(!B)[\LogCL]  = \False$
+      وي، يا~$\pValue {v'}(!C)[\LogCL]  = \False$؛ نو~$\pValue {v'}(!B \land
+      !C)[\LogCL] = \False$۔ د سرچينې يادونه: اصلي متن په دويم بديل
+      کښې په تېروتنه بيا د لومړي فرعي فارمول قيمت ليکي؛ دلته د دويم
+      فرعي فارمول قيمت ورکړل شو۔
+      \item فرض کړئ~$\pValue v(!B \land !C)[\LogKs] = \True$۔ د
+      $\tf{\land}[\LogKs]$ د تعريف له مخې~$\pValue v(!B)[\LogKs]  =
+      \True$ او~$\pValue v(!C)[\LogKs]  = \True$۔ د
+      استقرايي فرض د (ب) حالت له مخې~$\pValue {v'}(!B)[\LogCL]  = \True$
+      او~$\pValue {v'}(!C)[\LogCL]  = \True$؛ نو~$\pValue {v'}(!B \land
+      !C)[\LogCL] = \True$۔ د سرچينې يادونه: اصلي متن په دويم مدخل
+      کښې په تېروتنه بيا د لومړي فرعي فارمول قيمت ليکي؛ دواړه مدخلونه
+      بايد رښتيا وي۔
+    \end{enumerate}
+  \end{enumerate}
+
+  نور دوه حالتونه ورته دي او تمرين ته پرېښودل شوي دي۔ په بله لار،
+  پورته ثبوت د هغو ټولو~!!{formula}s دپاره پايله ثابتوي چې يوازې
+  $\lnot$ او~$\land$ لري۔ بيا دا حقيقتونه کارولے شو چې په
+  $\LogKs$ او~$\LogCL$ دواړو کښې د هر~$\pAssign v$ دپاره
+  $\pValue v(!B \lor
+  !C) = \pValue v(\lnot(\lnot!B \land \lnot !C))$ او~$\pValue v(!B \lif
+  !C) = \pValue v(\lnot(!B \land \lnot !C))$ دي۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[mvl][thr][mul]{prop:LP-taut-CL} ثبوت بشپړ کړئ؛ يعنې
+  په هغو حالتونو کښې (الف) او (ب) ثابت کړئ چې~$!A \ident (!B \lor !C)$
+  او~$!A \ident (!B \lif !C)$ وي۔
+\end{prob}
+
+\begin{prob}
+ثابته کړئ چې هره کلاسيکه تاوتولوژي په~$\LogHal$ کښې هم تاوتولوژي ده۔
+\end{prob}
+
+که څه هم د دغو منطقونو تاوتولوژۍ له کلاسيک منطق سره يو شان دي،
+د استلزام اړيکې ئې بېلې دي۔ د بېلګې په توګه،~$\LogLP$
+\emph{ناسازګاري زغمونکے} دے، ځکه چې~$\lnot p, p \Entails/ q$؛
+نو د انفجار اصل~$\lnot !A, !A \Entails !B$ په عمومي ډول نۀ صدق کوي۔
+(د~$!A$ او~$!B$ په ځينو حالتونو کښې صدق کوي، لکه چې~$!B$
+تاوتولوژي وي۔)
+
+\begin{prob}
+  له لاندې اړيکو کومې (الف) په~$\LogLP$ او (ب) په~$\LogHal$
+  کښې صدق کوي؟ د هرې يوې دپاره د صدق جدول ورکړئ۔
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+که په~$\LogLuk[3]$ کښې~$\Undef$ هم ټاکلے وګرځوئ، نو څه کېږي؟
+
+\begin{defn}
+  \emph{درې ارزښته آر-مينګل} منطق~$\LogRM[3]$ په دې ماتريس تعريفېږي:
+  \begin{enumerate}
+    \item معياري بياني ژبه~$\Lang L_0$ چې
+    $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ نښلوونکي لري۔
+    \item د رښتياوالي د قيمتونو سټ~$V = \{\True, \Undef, \False\}$۔
+    \item $\True$ او~$\Undef$ دواړه ټاکل شوي دي؛ يعنې~$V^+ = \{\True, \Undef\}$۔
+    \item صدق تابعې د لوکاشېوېچ د منطق~$\LogLuk[3]$ له تابعو سره يو شان دي۔
+  \end{enumerate}
+\end{defn}
+
+\begin{prob}
+  له لاندې اړيکو کومې په~$\LogRM[3]$ کښې صدق کوي؟
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+ځينې وخت بېلابېل صدق جدولونه يوازې د ټاکل شوو قيمتونو په بدلولو
+سره هماغه يو منطق (هماغه د استلزام اړيکه) جوړولے شي۔ د بېلګې په
+توګه، د ګوډل په منطق کښې که د~$\{\True\}$ پر ځای~$V^+ = \{\True,
+\Undef\}$ واخلو، همداسې کېږي۔
+
+\begin{prop}\ollabel{prop:gl-udes}
+  هغه ماتريس چې~$V = \{\False, \Undef,\True\}$، $V^+=\{\True,
+  \Undef\}$ او د ګوډل د~$3$ ارزښته منطق صدق تابعې لري،
+  کلاسيک منطق تعريفوي۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  د~\olref[mvl][thr][mul]{prop:gl-udes} ثبوت ورکړئ۔ د دې دپاره
+  هغه منطق~$\Log L$ وګورئ چې د ګوډل د منطق په شان تعريفېږي،
+  خو~$V^+=\{\True,\Undef\}$ لري؛ وښيئ چې که
+  $\Gamma \Entails/[\Log L] !B$ وي، نو~$\Gamma \Entails/[\LogCL] !B$
+  هم وي۔ د~\olref[mvl][thr][mul]{prop:LP-taut-CL} د ثبوت فکرونه
+  وکاروئ، خو د (الف) او (ب) ځانګړنو د ثبوت پر ځای وښيئ چې
+  $\pValue v(!A)[\LogGod] = \False$ هله او يوازې هله وي چې
+  $\pValue {v'}(!A)[\LogCL] = \False$ وي (او له دې امله~$\pValue
+  v(!A)[\LogGod] \in \{\True,\Undef\}$ هله او يوازې هله وي چې
+  $\pValue {v'}(!A)[\LogCL] =
+  \True$ وي)۔ روښانه کړئ چې دا ولې قضيه ثابتوي۔
+\end{prob}
+
+\end{document}

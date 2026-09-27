@@ -2855,3 +2855,33 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target prints False and explains the source/table conflict; the failure of tautology remains.
 - Evidence: At p=Undef, the unchanged conjunction, Diamond and negation tables give Undef, then True, then False; the source prints Undef as the final value.
 - Disclosure: `corrected-modal-value-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+## OLMVL-005
+
+- Unit: `OLP-0397`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/multiple-designation.tex` (4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f) at `content/many-valued-logic/three-valued-logics/multiple-designation.tex:86-89`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:92` (fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION`.
+- Treatment: The target removes the unconditional equality and proves the two conditional base cases beside a Pashto source note.
+- Evidence: The source claims v(p)=v'(p) even when v(p)=Undef and v'(p)=True. Only the separate False and True antecedent implications are needed.
+- Disclosure: `corrected-source-proof-formula-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+## OLMVL-006
+
+- Unit: `OLP-0397`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/multiple-designation.tex` (4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f) at `content/many-valued-logic/three-valued-logics/multiple-designation.tex:104-111`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:116` (fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION`.
+- Treatment: The target changes only the second alternative to C=False and adds an adjacent Pashto source note.
+- Evidence: The source repeats B=False as both alternatives, but strong Kleene conjunction is False when B=False or C=False.
+- Disclosure: `corrected-source-proof-formula-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.
+
+## OLMVL-007
+
+- Unit: `OLP-0397`.
+- Frozen source: `content/many-valued-logic/three-valued-logics/multiple-designation.tex` (4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f) at `content/many-valued-logic/three-valued-logics/multiple-designation.tex:112-117`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:124` (fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION`.
+- Treatment: The target changes only the second conjunct to C=True and adds an adjacent Pashto source note.
+- Evidence: The source repeats B=True for both conjuncts, but strong Kleene conjunction is True only when B=True and C=True.
+- Disclosure: `corrected-source-proof-formula-plus-adjacent-Pashto-note`. Frozen English and all truth tables remain unchanged.

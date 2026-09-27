@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0395; OLMVL-001 proof amendment documented; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-27T05:24:14.733227+00:00",
+  "status": "adopted through OLP-0397; B091 three adjacent-disclosed source proof repairs",
+  "adopted_utc": "2026-09-27T06:08:58.247367+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9464,6 +9464,144 @@
       ],
       "decision_timing": "contemporaneous B088 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-005",
+      "unit_id": "OLP-0397",
+      "classification": "incorrect_unconditional_induction_base_equality",
+      "source_path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "source_sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+      "source_locator": "content/many-valued-logic/three-valued-logics/multiple-designation.tex:86-89",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "target_line_1based": 92,
+      "target_sha256": "fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd",
+      "mode": "corrected-source-proof-formula-plus-adjacent-Pashto-note",
+      "translation_change": "The target removes the unconditional equality and proves the two conditional base cases beside a Pashto source note.",
+      "reason": "The source claims v(p)=v'(p) even when v(p)=Undef and v'(p)=True. Only the separate False and True antecedent implications are needed.",
+      "formula_policy": "Exactly this normalized proof-math span is changed; all other math, tables, identifiers, labels, macros and tokens are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pValuev(!A)[\\LogKs]=\\pAssignv(p)=\\pValue{v'}(!A)[\\LogCL]$"
+        ],
+        "target_only": [
+          "$\\pValuev(!A)[\\LogKs]=\\pAssignv(p)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
+      "audit_artifacts": [
+        "B091_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/multiple-designation.tex:86-89",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:92",
+        "B091_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B091 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-006",
+      "unit_id": "OLP-0397",
+      "classification": "repeated_conjunct_in_false_case",
+      "source_path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "source_sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+      "source_locator": "content/many-valued-logic/three-valued-logics/multiple-designation.tex:104-111",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "target_line_1based": 116,
+      "target_sha256": "fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd",
+      "mode": "corrected-source-proof-formula-plus-adjacent-Pashto-note",
+      "translation_change": "The target changes only the second alternative to C=False and adds an adjacent Pashto source note.",
+      "reason": "The source repeats B=False as both alternatives, but strong Kleene conjunction is False when B=False or C=False.",
+      "formula_policy": "Exactly this normalized proof-math span is changed; all other math, tables, identifiers, labels, macros and tokens are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pValuev(!B)[\\LogKs]=\\False$"
+        ],
+        "target_only": [
+          "$\\pValuev(!C)[\\LogKs]=\\False$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
+      "audit_artifacts": [
+        "B091_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/multiple-designation.tex:104-111",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:116",
+        "B091_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B091 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-007",
+      "unit_id": "OLP-0397",
+      "classification": "repeated_conjunct_in_true_case",
+      "source_path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "source_sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+      "source_locator": "content/many-valued-logic/three-valued-logics/multiple-designation.tex:112-117",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "target_line_1based": 124,
+      "target_sha256": "fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd",
+      "mode": "corrected-source-proof-formula-plus-adjacent-Pashto-note",
+      "translation_change": "The target changes only the second conjunct to C=True and adds an adjacent Pashto source note.",
+      "reason": "The source repeats B=True for both conjuncts, but strong Kleene conjunction is True only when B=True and C=True.",
+      "formula_policy": "Exactly this normalized proof-math span is changed; all other math, tables, identifiers, labels, macros and tokens are retained. Frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pValuev(!B)[\\LogKs]=\\True$"
+        ],
+        "target_only": [
+          "$\\pValuev(!C)[\\LogKs]=\\True$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION",
+      "audit_artifacts": [
+        "B091_SOURCE_AUDIT.json",
+        "content/many-valued-logic/three-valued-logics/multiple-designation.tex:112-117",
+        "ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex:124",
+        "B091_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B091 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9471,7 +9609,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Run B089 cumulative and canonical QA; continue OLP-0396 after checkpoint.",
+  "next_action": "Translate OLP-0398 onward while continuing corrected reader validation at natural TeX checkpoints.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -9535,7 +9673,8 @@
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
     "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC",
-    "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED"
+    "PS-OWNER-SEMANTIC-20260927-LUKASIEWICZ-THREE-VALUED",
+    "PS-OWNER-SEMANTIC-20260927-MULTIPLE-DESIGNATION"
   ],
   "source_authorities": [
     {

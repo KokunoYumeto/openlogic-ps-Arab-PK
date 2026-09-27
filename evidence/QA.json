@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 396,
-    "structural_pass": 396,
+    "draft_units": 397,
+    "structural_pass": 397,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B090-GODEL-THREE-VALUED",
+  "batch": "PS-B091-MULTIPLE-DESIGNATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12466,6 +12466,49 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0397",
+      "path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "source_sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+      "translation_sha256": "fb6fc385ad10a959ccd5f8143449d94da0a4cb3ab8c8a03b1a0ba5824b20b9bd",
+      "source_blocks": 27,
+      "target_blocks": 27,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-005",
+        "OLMVL-006",
+        "OLMVL-007"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\pValuev(!A)[\\LogKs]=\\pAssignv(p)=\\pValue{v'}(!A)[\\LogCL]$",
+          "$\\pValuev(!B)[\\LogKs]=\\True$",
+          "$\\pValuev(!B)[\\LogKs]=\\False$"
+        ],
+        "target_only": [
+          "$\\pValuev(!A)[\\LogKs]=\\pAssignv(p)$",
+          "$\\pValuev(!C)[\\LogKs]=\\False$",
+          "$\\pValuev(!C)[\\LogKs]=\\True$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16284,6 +16327,54 @@
       "passage": "consequence exercise",
       "reverse_paraphrase": "The final problem asks which of five entailments hold and requests a truth table for each.",
       "finding": "No answers are inserted into the translation."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "designated values",
+      "reverse_paraphrase": "A matrix may designate True and Undef instead of True alone.",
+      "finding": "Value and designation are kept separate."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "LP and Halldén",
+      "reverse_paraphrase": "LP reuses strong Kleene functions; Halldén reuses weak Kleene functions and adds a unary nonsense test that is True only at Undef.",
+      "finding": "Definitions and table remain exact."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "LP tautologies",
+      "reverse_paraphrase": "LP has exactly the classical propositional tautologies, despite a different consequence relation.",
+      "finding": "Proposition direction and later contrast are retained."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "countermodel transfer",
+      "reverse_paraphrase": "A False strong-Kleene formula has a False Boolean completion; the induction transfers determinate False and True cases.",
+      "finding": "OLMVL-005 removes a false unconditional base equality."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "conjunction cases",
+      "reverse_paraphrase": "Conjunction is False if either operand is False, and True if both are True.",
+      "finding": "OLMVL-006 and 007 repair the repeated second operand and disclose it."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "paraconsistency",
+      "reverse_paraphrase": "In LP, a contradiction in premises need not entail an arbitrary conclusion.",
+      "finding": "The non-explosion claim and six consequence exercises are preserved."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "R-Mingle",
+      "reverse_paraphrase": "The R-Mingle variant reuses the Łukasiewicz truth functions while designating both True and Undef.",
+      "finding": "Definition and four consequence questions are exact."
+    },
+    {
+      "unit_id": "OLP-0397",
+      "passage": "Gödel designation",
+      "reverse_paraphrase": "The Gödel matrix with True and Undef designated induces classical consequence.",
+      "finding": "Proposition remains an exercise; finite Boolean-collapse cases were checked independently."
     }
   ],
   "builds": [

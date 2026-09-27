@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 396 of 722 source units are translated drafts. This log contains 203 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 397 of 722 source units are translated drafts. This log contains 204 terminology entries and 332 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1849,6 +1849,39 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: the exact Pakistani finite-Gödel compound remains provisional.
 - Review question: Are the intuitionistic-to-Gödel-to-classical validity inclusions and their nonconverses clear?
 - Timing: contemporaneous B090 source review and visually inspected Pakistani-first consultation
+
+## TERM-MVL-MULTIPLE-DESIGNATION
+
+- Type: terminology
+- Choice: ټاکل شوي قيمتونه / د پارادوکس منطق / د بې‌معنايۍ منطق / ناسازګاري زغمونکے / درې ارزښته آر-مينګل
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L11) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L11).
+- Uncertainty: exact Pakistani specialized multiple-designation compounds remain provisional.
+- Review question: Are designated values distinct from truth values, and tautologies distinct from consequence?
+- Timing: contemporaneous B091 source review and visually inspected Pakistani-first consultation
+
+## DEC-OLMVL-005
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L86) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L92).
+- Choice: The target removes the unconditional equality and proves the two conditional base cases beside a Pashto source note.
+- Evidence: The source claims v(p)=v'(p) even when v(p)=Undef and v'(p)=True. Only the separate False and True antecedent implications are needed.
+- Review question: Does the Pashto note disclose the proof repair clearly?
+
+## DEC-OLMVL-006
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L104) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L116).
+- Choice: The target changes only the second alternative to C=False and adds an adjacent Pashto source note.
+- Evidence: The source repeats B=False as both alternatives, but strong Kleene conjunction is False when B=False or C=False.
+- Review question: Does the Pashto note disclose the proof repair clearly?
+
+## DEC-OLMVL-007
+
+- Type: source-correction
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L112) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/multiple-designation.tex#L124).
+- Choice: The target changes only the second conjunct to C=True and adds an adjacent Pashto source note.
+- Evidence: The source repeats B=True for both conjuncts, but strong Kleene conjunction is True only when B=True and C=True.
+- Review question: Does the Pashto note disclose the proof repair clearly?
 
 ## DEC-OLFUN-001
 

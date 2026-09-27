@@ -1,0 +1,9 @@
+{
+  "schema": "ps-b091-matrix-transfer-qa/1",
+  "status": "PASS",
+  "collapse": "False->False, Undef->True, True->True",
+  "strong_kleene_checked_determinate_cases": 20,
+  "goedel_checked_homomorphism_cases": 30,
+  "source_proof_base_counterexample": "At v(p)=Undef, source line 89-90 claims equality with v'(p)=True; only the separate False and True antecedent implications hold.",
+  "scope": "Finite truth-table check of the inductive connective steps, not a human specialist proof endorsement."
+}
