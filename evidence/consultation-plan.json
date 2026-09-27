@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B115-NORMAL-MODAL-S5-EQUIVALENCE",
-  "status": "OLP-0425 source-reviewed and staged; 18 paired blocks, source-identical diagram, nine reverse-paraphrase samples and finite S5 relation/restriction preview",
+  "batch_id": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+  "status": "OLP-0426 source-reviewed and staged; 19 paired blocks, ten reverse-paraphrase samples, one provisional term and two disclosed source repairs",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8902,6 +8902,26 @@
       ],
       "scope": "Eighteen-block S5 equivalence/universal-frame definitions, relation-property exercise, equivalence classes, restricted countermodel proof and source-identical diagram with Pashto caption.",
       "allowed_residual_english": []
+    },
+    "OLP-0426": {
+      "batch_id": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P90-PREDICATE",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-SOL-STANDARD-ASSIGNMENT",
+        "TERM-MODAL-FRAME",
+        "TERM-FOL-SYNTAX",
+        "TERM-EXPLICIT-IMPLICIT-DEFINABILITY",
+        "TERM-SEMANTICS",
+        "TERM-MODAL-STANDARD-TRANSLATION"
+      ],
+      "scope": "Nineteen-block standard translation, truth-preservation and frame-validity propositions, monadic second-order definition, reflexivity proof, two disclosed source repairs and final nondefinability claim.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -13968,6 +13988,66 @@
       "passage": "figure",
       "reverse_paraphrase": "The shaded region represents the equivalence class W prime; geometric paths and labels are unchanged.",
       "finding": "Caption translated and diagram preserved."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "opening quantifier",
+      "reverse_paraphrase": "Some modally definable frame properties are not first-order definable; all are monadic second-order definable.",
+      "finding": "Existential counterexample and universal upper bound retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "translation language",
+      "reverse_paraphrase": "Binary Q represents accessibility and unary P_i represents valuation sets for each p_i.",
+      "finding": "Predicate arities and roles retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "truth case",
+      "reverse_paraphrase": "The prvTrue item must have truth on both its case and image sides.",
+      "finding": "One-symbol correction disclosed."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "modal cases",
+      "reverse_paraphrase": "Box quantifies over every Q-successor; diamond over some Q-successor.",
+      "finding": "Quantifier and connective polarity retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "truth proposition",
+      "reverse_paraphrase": "M,w satisfies A iff matching M prime,s with s(x)=w satisfies ST_x(A).",
+      "finding": "Model/structure match and assignment retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "frame proposition",
+      "reverse_paraphrase": "Universal monadic predicate and world quantification yields a second-order sentence true iff the frame validates A.",
+      "finding": "All valuations and worlds retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "second-order definition",
+      "reverse_paraphrase": "The later class definition uses a single binary P for R and quantifies only over monadic set variables.",
+      "finding": "Local predicate letter P preserved."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "reflexivity forward",
+      "reverse_paraphrase": "Choose X as the Q-successor set of arbitrary x; the antecedent is automatic and reflexivity follows.",
+      "finding": "Set choice and proof direction retained; missing [s] disclosed."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "reflexivity reverse",
+      "reverse_paraphrase": "Assume every world is reflexive, instantiate the y-variant at s(x), and infer X(x).",
+      "finding": "Assignment variant and implication retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "closing quantifier",
+      "reverse_paraphrase": "At least one sentence of the shown monadic second-order form has no first-order equivalent; no effective decision method exists.",
+      "finding": "Not-every existential claim and undecidability retained."
     }
   ]
 }

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 425,
-    "structural_pass": 425,
+    "draft_units": 426,
+    "structural_pass": 426,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B115-NORMAL-MODAL-S5-EQUIVALENCE",
+  "batch": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13830,6 +13830,45 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0426",
+      "path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+      "translation_sha256": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-012",
+        "OLNML-013"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}$"
+        ],
+        "target_only": [
+          "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}[s]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -18896,6 +18935,66 @@
       "passage": "figure",
       "reverse_paraphrase": "The shaded region represents the equivalence class W prime; geometric paths and labels are unchanged.",
       "finding": "Caption translated and diagram preserved."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "opening quantifier",
+      "reverse_paraphrase": "Some modally definable frame properties are not first-order definable; all are monadic second-order definable.",
+      "finding": "Existential counterexample and universal upper bound retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "translation language",
+      "reverse_paraphrase": "Binary Q represents accessibility and unary P_i represents valuation sets for each p_i.",
+      "finding": "Predicate arities and roles retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "truth case",
+      "reverse_paraphrase": "The prvTrue item must have truth on both its case and image sides.",
+      "finding": "One-symbol correction disclosed."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "modal cases",
+      "reverse_paraphrase": "Box quantifies over every Q-successor; diamond over some Q-successor.",
+      "finding": "Quantifier and connective polarity retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "truth proposition",
+      "reverse_paraphrase": "M,w satisfies A iff matching M prime,s with s(x)=w satisfies ST_x(A).",
+      "finding": "Model/structure match and assignment retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "frame proposition",
+      "reverse_paraphrase": "Universal monadic predicate and world quantification yields a second-order sentence true iff the frame validates A.",
+      "finding": "All valuations and worlds retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "second-order definition",
+      "reverse_paraphrase": "The later class definition uses a single binary P for R and quantifies only over monadic set variables.",
+      "finding": "Local predicate letter P preserved."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "reflexivity forward",
+      "reverse_paraphrase": "Choose X as the Q-successor set of arbitrary x; the antecedent is automatic and reflexivity follows.",
+      "finding": "Set choice and proof direction retained; missing [s] disclosed."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "reflexivity reverse",
+      "reverse_paraphrase": "Assume every world is reflexive, instantiate the y-variant at s(x), and infer X(x).",
+      "finding": "Assignment variant and implication retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "passage": "closing quantifier",
+      "reverse_paraphrase": "At least one sentence of the shown monadic second-order form has no first-order equivalent; no effective decision method exists.",
+      "finding": "Not-every existential claim and undecidability retained."
     }
   ],
   "builds": [

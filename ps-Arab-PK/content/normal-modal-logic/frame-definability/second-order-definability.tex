@@ -1,0 +1,196 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: standard-translation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{st}
+
+\olsection{د دويمې درجې تعريف‌وړتيا}
+
+د مودالي فارمولونو په واسطه تعريفېدونکي د چوکاټونو ځينې
+خاصيتونه د لومړۍ درجې له مخې نۀ تعريفېږي۔ خو که پر يوځاييزو پريديکاتونو
+کميت ټاکنه ومنو (يعنې د دويمې درجې يوځاييزه کميت ټاکنه)، نو
+ټول هغه چوکاټي خاصيتونه تعريفوو چې په مودالي ډول تعريفېدے شي۔
+لار دا ده چې د يوه مودالي !!{formula} په کومه نړۍ کښې د صدق
+شرطونه په منظم ډول د لومړۍ درجې له !!{formula}s سره وتړو۔
+دې ته له مودالي فارمولونو څخه د لومړۍ درجې فارمولونو ته
+\emph{معياري ژباړه} وايي۔ د دې ژبې يوازې د لاسرسي اړيکې
+دپاره دوه‌ځاييز !!{predicate}~$Q$ نۀ لري، بلکې
+په~$!A$ کښې د شته !!{propositional variable}s~$\Obj p_i$
+دپاره يوځاييز !!{predicate}~$P_i$ هم لري۔
+
+\begin{defn}
+  \emph{معياري ژباړه}~$\ST_x(!A)$ په استقرايي ډول
+  په دې توګه تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\ST_x(\indfrm) = \lfalse$.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\ST_x(\indfrm) = \ltrue$.}}{}
+  \item \indcase{!A}{\Obj p_i}{$\ST_x(\indfrm) = \Atom{P_i}{x}$.}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\ST_x(\indfrm) = \lnot \ST_x(!B)$.}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \land \ST_x(!C))$.}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lor \ST_x(!C))$.}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lif \ST_x(!C))$.}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \liff \ST_x(!C))}$.}{}
+  \tagitem{prvBox}{\indcase{!A}{\Box !B}{$\ST_x(\indfrm) =
+      \lforall[y][(\Atom{Q}{x,y} \lif \ST_y(!B))]$.}}{}
+  \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{$\ST_x(\indfrm) =
+      \lexists[y][(\Atom{Q}{x,y} \land \ST_y(!B))]$.}}{}
+  \end{enumerate}
+  \emph{د سرچينې يادونه: د رښتيا د حالت په اصلي کرښه کښې
+  د رښتيا پر ځاے بيا د دروغو سمبول راغلے و؛ دلته د همدې
+  حالت سم سمبول ښودل شوے دے۔}
+\end{defn}
+
+د بېلګې په توګه، $\ST_x(\Box p \lif p)$ دا دے:
+$\lforall[y][(\Atom{Q}{x,y}
+  \lif \Atom{P}{y})] \lif \Atom{P}{x}$۔
+د~$\ST_x(!A)$ د ژبې هر !!{structure} يو ډومېن، د~$Q$
+دپاره ټاکل شوې دوه‌ځاييزه اړيکه، او د يوځاييزو
+!!{predicate}s~$P_i$ دپاره د ډومېن فرعي سټونه غواړي۔
+په بله وينا، د داسې !!a{structure} اجزا کټ مټ د~$!A$
+د يوه مدل اجزا دي: ډومېن د نړۍو سټ دے، د~$Q$ دپاره
+ټاکل شوې دوه‌ځاييزه اړيکه د لاسرسي اړيکه ده، او
+د~$P_i$ دپاره ټاکل شوي فرعي سټونه هماغه د
+ارزښت ټاکنې~$V(\Obj p_i)$ دي۔ نو دا به د حېرانتيا
+خبره نۀ وي چې په يوه مودالي مدل کښې د~$!A$ صدق او په
+ورسره برابر !!{structure} کښې د~$\ST_x(!A)$ صدق يو شان وي:
+
+\begin{prop}\ollabel{prop:st}
+  فرض کړئ $\mModel{M} = \tuple{W, R, V}$ وي،
+  $\Struct{M'}$ داسې د لومړۍ درجې !!{structure} وي
+  چې $\Domain{M'} = W$، $\Assign{Q}{M'} = R$ او
+  $\Assign{P_i}{M'} = V(\Obj p_i)$ ولري، او
+  $s(x) = w$ وي۔ بيا
+  \[
+  \mSat{M}{!A}[w] \text{ هله او يوازې هله چې } \Sat{M'}{\ST_x(!A)}[s]
+  \]
+\end{prop}
+
+\begin{proof}
+  د~$!A$ پر جوړښت په استقرا۔
+\end{proof}
+
+\begin{prop}
+  فرض کړئ $!A$ يو مودالي !!{formula} او
+  $\mModel{F} = \tuple{W, R}$ يو چوکاټ وي۔
+  $\Struct{F'}$ داسې د لومړۍ درجې !!{structure} ونيسئ
+  چې $\Domain{F'} = W$ او $\Assign{Q}{F'} = R$
+  ولري، او $!A'$ دا د دويمې درجې فارمول ونيسئ
+  \[
+  \lforall[X_1][\dots\lforall[X_n][\lforall[x][
+        \SSubst{\ST_x(!A)}{\subst{X_1}{P_1}, \dots,
+          \subst{X_n}{P_n}}]]],
+  \]
+  چې~$P_1$، \dots، $P_n$ په~$\ST_x(!A)$ کښې ټول
+  يوځاييز !!{predicate}s دي۔ بيا
+  \[
+  \mModel{F} \Entails !A \text{ هله او يوازې هله چې } \Sat{F'}{!A'}
+  \]
+\end{prop}
+
+\begin{proof}
+  $\Sat{F'}{!A'}$ هله او يوازې هله چې د هر هغه
+  !!{structure}~$\mModel{M'}$ دپاره چې
+  $\Assign{P_i}{M'} \subseteq W$ د $i = 1$،
+  \dots،~$n$ دپاره ولري، او د هر داسې~$s$ دپاره
+  چې $s(x) \in W$ وي،
+  $\Sat{M'}{\ST_x(!A)}[s]$ وي۔ د
+  \olref{prop:st} له مخې، دا هله او يوازې هله
+  کېږي چې پر~$\mModel{F}$ ولاړ هر
+  مدل~$\mModel{M}$ او هره نړۍ~$w \in W$
+  $\mSat{M}{!A}[w]$ پوره کړي؛ يعنې
+  $\mModel{F} \Entails !A$۔
+\end{proof}
+
+\begin{defn}
+  د چوکاټونو يو ټولګے~$\mClass{F}$ \emph{د دويمې درجې
+  له مخې تعريف‌وړ} دے، که د دويمې درجې په هغې ژبه کښې
+  چې يوازې يو دوه‌ځاييز !!{predicate}~$P$ او يوازې
+  پر يوځاييزو سټ‌متغيرونو کميت ټاکونکي لري، يوه
+  !!a{sentence}~$!A$ وي، داسې چې
+  $\mModel{F} = \tuple{W, R} \in \mClass{F}$
+  هله او يوازې هله چې په هغه
+  !!{structure}~$\Struct{M}$ کښې $\Sat{M}{!A}$
+  وي چې $\Domain{M} = W$ او
+  $\Assign{P}{M} = R$ لري۔
+\end{defn}
+
+\begin{cor}
+  که د چوکاټونو يو ټولګے په
+  !!a{formula}~$!A$ تعريفېدے شي،
+  نو د لاسرسي د اړيکو اړوند ټولګے
+  د يوې يوځاييزې د دويمې درجې جملې
+  په واسطه تعريفېدے شي۔
+\end{cor}
+
+\begin{proof}
+  د مخکيني ثبوت د دويمې درجې
+  يوځاييزه جمله~$!A'$ اړوند
+  خاصيت لري۔
+\end{proof}
+
+د بېلګې په توګه، بيا !!{formula}~$\Box p \lif p$
+وڅېړئ۔ دا انعکاسيت تعريفوي۔ انعکاسيت البته د
+لومړۍ درجې په !!{sentence}~$\lforall[x][\Atom{Q}{x,x}]$
+تعريفېدے شي۔ خو د دويمې درجې په دې يوځاييزه
+!!{sentence} هم تعريفېدے شي
+\[
+\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif \Atom{X}{y})]
+    \lif \Atom{X}{x})]].
+\]
+دا په دې معنا ده چې دواړه جملې هم‌ارزې دي۔ دا خبره
+په نېغه د ځان د قانع کولو دپاره داسې وڅېړئ: لومړے
+فرض کړئ د دويمې درجې جمله په
+!!a{structure}~$\Struct{M}$ کښې رښتيا ده۔ ځکه چې
+$x$ او $X$ په عمومي ډول کميت ټاکل شوي دي، پاتې
+برخه بايد د هر $x \in W$ او هر
+سټ~$X \subseteq W$ دپاره سمه وي؛ د بېلګې په
+توګه، د~$\Setabs{z}{Rxz}$ سټ دپاره، چې
+$R = \Assign{Q}{M}$ وي۔ نو د هر
+داسې~$s$ دپاره چې $s(x) \in W$
+او $s(X) = \Setabs{z}{Rxz}$ وي،
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})] \lif \Atom{X}{x}}[s]$ لرو۔
+\emph{د سرچينې يادونه: دلته اصلي متن د ازادو
+متغيرونو دپاره ګومارنه په لومړۍ صدقي نښه
+کښې نۀ وه ښودلې؛ دا ورزياته شوې ده۔}
+خو د~$s(X)$ د ټاکنې له مخې دا معنا لري چې
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{Q}{x,y})] \lif \Atom{Q}{x,x}}[s]$،
+چې له~$\Atom{Q}{x,x}$ سره هم‌ارز دے، ځکه مقدم
+تل رښتينی دے۔ ځکه چې $s(x)$ خپلسرے دے، نو
+$\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$ لرو۔
+
+اوس فرض کړئ $\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$
+او ښيو چې
+$\Sat{M}{\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif
+        \Atom{X}{y})] \lif \Atom{X}{x})]]}$۔
+هره ګومارنه~$s$ ونيسئ او فرض کړئ
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})]}[s]$۔
+$s'$ د~$s$ هغه $y$-بدله بڼه ونيسئ چې
+$s'(y) = s(x)$ وي؛ بيا
+$\Sat{M}{\Atom{Q}{x,y} \lif \Atom{X}{y}}[s']$،
+يعنې $\Sat{M}{\Atom{Q}{x,x} \lif \Atom{X}{x}}[s]$
+لرو۔ ځکه چې
+$\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$،
+مقدم رښتينی دے او
+$\Sat{M}{\Atom{X}{x}}[s]$ لرو؛ همدا مو
+ښودل غوښتل۔
+
+ځکه چې د چوکاټونو ځينې تعريفېدونکي ټولګي د
+لومړۍ درجې له مخې نۀ تعريفېږي، نو د پورته
+بڼې~$!A'$ لږ تر لږه يوه د دويمې درجې يوځاييزه
+!!{sentence} د لومړۍ درجې له هېڅ
+!!{sentence} سره هم‌ارزه نۀ ده۔
+د دې پرېکړې دپاره، چې کومې داسې جملې هم‌ارزې
+دي، اغېزمنه طريقه نشته۔
+
+\end{document}

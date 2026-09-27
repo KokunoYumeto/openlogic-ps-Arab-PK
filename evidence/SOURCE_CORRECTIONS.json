@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0424; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T18:11:35.795225+00:00",
+  "status": "adopted through OLP-0426; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T18:48:30.508282+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10378,6 +10378,109 @@
       ],
       "decision_timing": "contemporaneous B114 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-012",
+      "unit_id": "OLP-0426",
+      "classification": "duplicate_false_case_in_standard_translation_truth_item",
+      "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+      "source_locator": "content/normal-modal-logic/frame-definability/second-order-definability.tex:30",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "target_line_1based": 30,
+      "disclosure_line_1based": 46,
+      "target_sha256": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b",
+      "mode": "single-symbol-induction-case-repair-with-adjacent-Pashto-disclosure",
+      "translation_change": "In the prvTrue item only, replace the left induction-case symbol \\lfalse by \\ltrue; preserve its right side and every other case.",
+      "reason": "The source repeats the prvFalse case under the prvTrue tag, making the truth case absent even though ST_x(indfrm)=truth is printed on the right.",
+      "formula_policy": "The frozen English remains unchanged. A staging check compares the whole enumerated case sequence after exactly one symbol replacement.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_enumeration_replacement": {
+        "source": "\\tagitem{prvTrue}{\\indcase{!A}{\\lfalse}",
+        "target": "\\tagitem{prvTrue}{\\indcase{!A}{\\ltrue}",
+        "count": 1
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+      "audit_artifacts": [
+        "B116_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/frame-definability/second-order-definability.tex:30",
+        "ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex:30-48",
+        "B116_STAGING_QA_OLP-0426.json"
+      ],
+      "decision_timing": "contemporaneous B116 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-013",
+      "unit_id": "OLP-0426",
+      "classification": "omitted_assignment_on_open_reflexivity_satisfaction_claim",
+      "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+      "source_locator": "content/normal-modal-logic/frame-definability/second-order-definability.tex:133-134",
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "target_line_1based": 159,
+      "disclosure_line_1based": 161,
+      "target_sha256": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b",
+      "mode": "single-assignment-annotation-repair-with-adjacent-Pashto-disclosure",
+      "translation_change": "Append [s] to the first satisfaction assertion for the open formula after fixing s(x) and s(X).",
+      "reason": "The displayed formula has free x and X. The paragraph fixes s, and the next satisfaction assertion carries [s]; the first omits it.",
+      "formula_policy": "Only the normalized math pair recorded in qa_math_exception differs; frozen English remains unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}$"
+        ],
+        "target_only": [
+          "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}[s]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+      "audit_artifacts": [
+        "B116_SOURCE_AUDIT.json",
+        "content/normal-modal-logic/frame-definability/second-order-definability.tex:133-134",
+        "ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex:159-164",
+        "B116_STAGING_QA_OLP-0426.json"
+      ],
+      "decision_timing": "contemporaneous B116 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10454,7 +10557,8 @@
     "PS-OWNER-SEMANTIC-20260927-INFINITE-VALUED-INTRODUCTION",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FRAME-DEFINABILITY",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-FIRST-ORDER-DEFINABILITY",
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY"
   ],
   "source_authorities": [
     {

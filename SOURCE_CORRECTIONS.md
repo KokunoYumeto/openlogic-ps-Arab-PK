@@ -3043,3 +3043,22 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Explains A_1 as the empty conjunction, introduces the fresh constants in a temporary expanded language, handles a finite fragment without A_i by k=1, and assigns constants beyond k arbitrary domain values.
 - Reason: The source display presupposes an A_1 convention, and its finite-model assignment a_i=i cannot apply for i>k in a k-element domain. These explicit conventions complete the finite-fragment Compactness argument.
 - Displayed formulas, structural tokens and frozen English remain unchanged.
+
+## OLNML-012
+
+- Unit: OLP-0426.
+- Frozen source: content/normal-modal-logic/frame-definability/second-order-definability.tex:30 (SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex:30 (SHA-256 a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b).
+- Treatment: In the prvTrue item only, replace the left induction-case symbol \lfalse by \ltrue; preserve its right side and every other case.
+- Reason: The source repeats the prvFalse case under the prvTrue tag, making the truth case absent even though ST_x(indfrm)=truth is printed on the right.
+- The correction is disclosed adjacent to the Pashto passage; frozen English remains unchanged.
+
+
+## OLNML-013
+
+- Unit: OLP-0426.
+- Frozen source: content/normal-modal-logic/frame-definability/second-order-definability.tex:133-134 (SHA-256 1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex:159 (SHA-256 a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b).
+- Treatment: Append [s] to the first satisfaction assertion for the open formula after fixing s(x) and s(X).
+- Reason: The displayed formula has free x and X. The paragraph fixes s, and the next satisfaction assertion carries [s]; the first omits it.
+- The correction is disclosed adjacent to the Pashto passage; frozen English remains unchanged.

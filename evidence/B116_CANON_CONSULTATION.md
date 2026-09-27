@@ -1,0 +1,5 @@
+# OLP-0426 Pakistani-first Pashto consultation
+
+Pakistani Pashto Academy/Peshawar article PS-PK-IQRAM-2019, printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`), was visually read for scholarly prose, Pakistani کښې/ے spelling, and logical explanation. Reference grammar printed page 166 (`GRAMMAR-P166-SOV`) supports verb-final conditional exposition. These sources do not attest the exact phrase “standard translation.”
+
+Afghan regional comparator PS-AF-NIAZMAN-2022 printed page 90 (`AF-NIAZMAN-P90-PREDICATE`) distinguishes predicate from a truth-bearing statement, and printed page 109 (`AF-NIAZMAN-P109-RELATION`) links k-place predicates and relations. Both were inspected as regional comparators, not authorities over Pakistani usage. The new rendering “معياري ژباړه” is transparent but provisional. Existing TERM-SOL-STANDARD-ASSIGNMENT, TERM-MODAL-FRAME, TERM-FOL-SYNTAX, TERM-EXPLICIT-IMPLICIT-DEFINABILITY, and TERM-SEMANTICS preserve established senses. Frozen OpenLogic controls Q/P_i, set quantifiers, satisfaction, frame validity, and the two disclosed source repairs.

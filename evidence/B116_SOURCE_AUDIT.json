@@ -1,0 +1,94 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T18:48:30.508488+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+  "batch_id": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0426",
+      "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+      "source_bytes": 6676,
+      "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+      "target_sha256": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b",
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLNML-012",
+        "OLNML-013"
+      ]
+    }
+  ],
+  "notes_path": "work/B116_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "8729faae68fbb7421cb9c18f1a72f59d196c50a3898f44037180ac21d2dabc59",
+  "consultation_path": "work/B116_CANON_CONSULTATION.md",
+  "consultation_sha256": "943b8546d84056e78267d008a68e9a7555f15733af3de1a16304880063330a90",
+  "staging_qa_sha256": {
+    "OLP-0426": "f3bb58a944829b141d1920797f12064081f737da012b3e53b9d45d111a898d09"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 95,
+      "printed_page": "90",
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0426",
+      "source_lines": "12-63",
+      "kind": "standard-translation-and-truth-preservation",
+      "finding": "Every case, binary/unary predicate role and truth equivalence preserved; one duplicated true-case symbol repaired with disclosure."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "source_lines": "64-118",
+      "kind": "second-order-frame-validity",
+      "finding": "All valuation/world quantifiers, P-versus-Q local symbol choice and monadic class definition retained."
+    },
+    {
+      "unit_id": "OLP-0426",
+      "source_lines": "119-155",
+      "kind": "reflexivity-and-nondefinability",
+      "finding": "Both direct proof directions, the scoped assignment annotation, and the existential non-first-order claim retained."
+    }
+  ],
+  "formula_policy": "Only the one enumerated true-case symbol and one scoped [s] satisfaction span differ; all other math, identifiers, environments, structural macros, tags and term markers match.",
+  "unresolved": "Exact Pakistani standard-translation compound remains provisional. No human specialist or reader-layout approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0426; continue OLP-0427."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "ps-b116-second-order-definability-staging-qa/1",
+  "unit_id": "OLP-0426",
+  "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+  "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+  "target_sha256": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b",
+  "source_blocks": 19,
+  "target_blocks": 19,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math": true,
+    "term_tokens": true,
+    "optional_tags": true,
+    "block_math": true,
+    "true_case_single_symbol_repair": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}$"
+  ],
+  "target_only_math": [
+    "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}[s]$"
+  ],
+  "block_math_diff": [
+    {
+      "block": 16,
+      "source_only": [
+        "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}$"
+      ],
+      "target_only": [
+        "$\\Sat{M}{\\lforall[y][(\\Atom{Q}{x,y}\\lif\\Atom{X}{y})]\\lif\\Atom{X}{x}}[s]$"
+      ]
+    }
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "source_only_tags": [],
+  "target_only_tags": [],
+  "source_only_terms": [],
+  "target_only_terms": [],
+  "all_checks_pass": true
+}
