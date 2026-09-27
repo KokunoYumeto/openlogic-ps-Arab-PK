@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 401,
-    "structural_pass": 401,
+    "draft_units": 403,
+    "structural_pass": 403,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B094-INFINITE-GOEDEL",
+  "batch": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12635,6 +12635,72 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0402",
+      "path": "content/many-valued-logic/sequent-calculus/sequent-calculus.tex",
+      "source_sha256": "28775295786cbfede3893029fdd6742f84bb12ada787a5e5f61faba049c113e6",
+      "translation_sha256": "8b46fb3890c255b053d1d44122c67c3b454f8a44b6e0e021642b6db8a08a3db3",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0403",
+      "path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+      "translation_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-010",
+        "OLMVL-011"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align*}!A_1,\\dots,!A_n&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}",
+          "$\\pValue(!A)=\\False$"
+        ],
+        "target_only": [
+          "\\begin{align*}!A_1,\\dots,!A_m&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}",
+          "$\\pValuev(!A)=\\False$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16633,6 +16699,60 @@
       "passage": "chain exercise",
       "reverse_paraphrase": "The final disjunction is a three-valued tautology but fails over infinitely many values.",
       "finding": "Formula exact; finite test and counterexample checked."
+    },
+    {
+      "unit_id": "OLP-0402",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The chapter imports introduction, rules and proofs, structural rules and propositional rules in source order.",
+      "finding": "ID/imports/hook exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "finite matrix",
+      "reverse_paraphrase": "Every finite-valued matrix can receive a sequent calculus with one place per value.",
+      "finding": "Finite precondition retained."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "classical sequent",
+      "reverse_paraphrase": "A two-sided sequent is satisfied when some left formula is false or some right formula is true.",
+      "finding": "Disjunctive truth condition exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "left index",
+      "reverse_paraphrase": "The left side has m formulas to match the conjunction of m formulas.",
+      "finding": "OLMVL-010 repairs source mismatch."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "valuation argument",
+      "reverse_paraphrase": "An initial sequent is always satisfied because the same formula is true or false under valuation v.",
+      "finding": "OLMVL-011 restores omitted v."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "conditional rules",
+      "reverse_paraphrase": "The conditional-left and conditional-right readings are biconditional in classical logic.",
+      "finding": "Rule trees and readings exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "alternative rules",
+      "reverse_paraphrase": "Alternative conjunction-left and disjunction-right rules have biconditional satisfaction readings.",
+      "finding": "Rule trees exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "n places",
+      "reverse_paraphrase": "An n-valued logic uses n sequent places, one per truth value.",
+      "finding": "Arity and value correspondence exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "three-valued initial sequent",
+      "reverse_paraphrase": "A|A|A is always satisfied because the value of A belongs to one of the three positions.",
+      "finding": "Three clauses exact."
     }
   ],
   "builds": [

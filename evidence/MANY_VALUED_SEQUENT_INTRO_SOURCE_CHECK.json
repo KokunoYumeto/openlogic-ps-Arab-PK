@@ -1,0 +1,29 @@
+{
+  "schema": "ps-b095-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T07:32:19.728464+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0402",
+      "source_sha256": "28775295786cbfede3893029fdd6742f84bb12ada787a5e5f61faba049c113e6",
+      "target_sha256": "8b46fb3890c255b053d1d44122c67c3b454f8a44b6e0e021642b6db8a08a3db3"
+    },
+    {
+      "unit_id": "OLP-0403",
+      "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+      "target_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1"
+    }
+  ],
+  "audit_sha256": "6327e52973bb03bc9eb5aab2eca51db723b9817daa3a9933544aa1708b123b1e",
+  "semantic_qa_sha256": "9d208f8b18f999a5e146dff948cef1076e6fde7533adc46904f2422c4ceab2d5",
+  "notes_sha256": "b97665aa2ce83120d0be9d90e11a667d87656026bb92f3a1385fb9b223ab4c54",
+  "consultation_sha256": "e986cd4e898b651b028b44285a41741707cd14c4a6c86fa332fb0dd500324c3d",
+  "documented_formula_corrections": [
+    "OLMVL-010",
+    "OLMVL-011"
+  ],
+  "unresolved": "Specialized many-valued sequent vocabulary remains open to expert review; no human specialist approval claimed.",
+  "next_action": "Translate OLP-0404; continue corrected v0.7.1 reader validation."
+}

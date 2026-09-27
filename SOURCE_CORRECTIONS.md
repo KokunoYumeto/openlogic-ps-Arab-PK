@@ -2905,3 +2905,24 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target removes the extra dollar delimiters around the 1 and 0 results inside an existing cases environment and discloses the syntax repair beside the formula.
 - Evidence: The source places $1$ and $0$ inside align*/cases math mode, causing invalid nested math shifts. Removing only those delimiters preserves both numeric truth values and makes the displayed matrix compilable.
 - Disclosure: `removed-extra-math-shifts-inside-cases-plus-adjacent-Pashto-note`. Frozen English remains unchanged.
+
+## OLMVL-010
+
+- Unit: `OLP-0403`.
+- Frozen source: `content/many-valued-logic/sequent-calculus/introduction.tex` (d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef) at `content/many-valued-logic/sequent-calculus/introduction.tex:20-26`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex:26` (d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION`.
+- Treatment: The target changes the displayed left sequent's final index from n to m to agree with its immediately following conjunction and discloses the change beside the formula.
+- Evidence: The source displayed left side A_1,...,A_n but interprets it as A_1 and ... and A_m; the corresponding right side consistently ends at B_n. The two left bounds must agree.
+- Disclosure: `corrected-left-sequent-final-index-plus-adjacent-Pashto-note`. Frozen English remains unchanged.
+
+
+## OLMVL-011
+
+- Unit: `OLP-0403`.
+- Frozen source: `content/many-valued-logic/sequent-calculus/introduction.tex` (d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef) at `content/many-valued-logic/sequent-calculus/introduction.tex:27-32`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex:34` (d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION`.
+- Treatment: The target restores the omitted valuation argument v in the final initial-sequent equality and discloses the restoration beside the sentence.
+- Evidence: The source uses the valuation v in the immediately preceding equality and throughout the paragraph, but writes the final false-value expression as pValue(!A) without any valuation argument.
+- Disclosure: `restored-valuation-argument-plus-adjacent-Pashto-note`. Frozen English remains unchanged.

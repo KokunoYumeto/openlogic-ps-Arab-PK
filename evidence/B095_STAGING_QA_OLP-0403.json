@@ -1,0 +1,32 @@
+{
+  "schema": "ps-b095-staging-qa/1",
+  "unit_id": "OLP-0403",
+  "source_path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+  "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+  "target_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1",
+  "source_blocks": 13,
+  "target_blocks": 13,
+  "checks": {
+    "block_count": true,
+    "environments": true,
+    "identifiers": true,
+    "structural_macros": true,
+    "math_with_two_disclosed_source_corrections": true,
+    "term_tokens": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "source_only_math": [
+    "\\begin{align*}!A_1,\\dots,!A_n&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}",
+    "$\\pValue(!A)=\\False$"
+  ],
+  "target_only_math": [
+    "\\begin{align*}!A_1,\\dots,!A_m&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}",
+    "$\\pValuev(!A)=\\False$"
+  ],
+  "source_only_ids": [],
+  "target_only_ids": [],
+  "source_only_macros": [],
+  "target_only_macros": [],
+  "all_checks_pass": true
+}

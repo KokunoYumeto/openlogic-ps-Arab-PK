@@ -9695,6 +9695,100 @@
       ],
       "decision_timing": "contemporaneous B094 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-010",
+      "classification": "confirmed_left_sequent_index_mismatch",
+      "source_locator": "content/many-valued-logic/sequent-calculus/introduction.tex:20-26",
+      "target_line_1based": 26,
+      "mode": "corrected-left-sequent-final-index-plus-adjacent-Pashto-note",
+      "translation_change": "The target changes the displayed left sequent's final index from n to m to agree with its immediately following conjunction and discloses the change beside the formula.",
+      "reason": "The source displayed left side A_1,...,A_n but interprets it as A_1 and ... and A_m; the corresponding right side consistently ends at B_n. The two left bounds must agree.",
+      "formula_policy": "Only the leftmost displayed sequent's final A index differs in one normalized align span; the right B_n bound and all other symbols remain exact. Frozen English unchanged.",
+      "source_lines": "20-26",
+      "unit_id": "OLP-0403",
+      "source_path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex",
+      "target_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}!A_1,\\dots,!A_n&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}!A_1,\\dots,!A_m&\\Sequent!B_1,\\dots,!B_n\\intertext{LOCALIZED}(!A_1\\land\\cdots\\land!A_m)&\\lif(!B_1\\lor\\cdots\\lor!B_n)\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION",
+      "audit_artifacts": [
+        "B095_SOURCE_AUDIT.json",
+        "content/many-valued-logic/sequent-calculus/introduction.tex:20-26",
+        "ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex:26",
+        "B095_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B095 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-011",
+      "classification": "confirmed_missing_valuation_argument",
+      "source_locator": "content/many-valued-logic/sequent-calculus/introduction.tex:27-32",
+      "target_line_1based": 34,
+      "mode": "restored-valuation-argument-plus-adjacent-Pashto-note",
+      "translation_change": "The target restores the omitted valuation argument v in the final initial-sequent equality and discloses the restoration beside the sentence.",
+      "reason": "The source uses the valuation v in the immediately preceding equality and throughout the paragraph, but writes the final false-value expression as pValue(!A) without any valuation argument.",
+      "formula_policy": "Only the missing v in one inline math span differs; the formula A, False value and initial-sequent statement remain exact. Frozen English unchanged.",
+      "source_lines": "27-32",
+      "unit_id": "OLP-0403",
+      "source_path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex",
+      "target_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pValue(!A)=\\False$"
+        ],
+        "target_only": [
+          "$\\pValuev(!A)=\\False$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION",
+      "audit_artifacts": [
+        "B095_SOURCE_AUDIT.json",
+        "content/many-valued-logic/sequent-calculus/introduction.tex:27-32",
+        "ps-Arab-PK/content/many-valued-logic/sequent-calculus/introduction.tex:34",
+        "B095_SEMANTIC_QA.json"
+      ],
+      "decision_timing": "contemporaneous B095 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,

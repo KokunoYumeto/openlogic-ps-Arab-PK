@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B094-INFINITE-GOEDEL",
-  "status": "OLP-0401 source-reviewed and staged; 17 paired blocks, one disclosed math-shift repair, nine reverse-paraphrase samples and independent finite/infinite matrix checks",
+  "batch_id": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
+  "status": "OLP-0402/0403 source-reviewed and staged; 23 paired blocks, two adjacent-disclosed math corrections and nine reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8427,6 +8427,48 @@
       ],
       "scope": "Complete 17-block infinite-valued Gödel short stub with exact matrix, finite tables, consequence statements, Gödel–Dummett characterization and exercises; one adjacent-disclosed source TeX syntax repair OLMVL-009.",
       "allowed_residual_english": []
+    },
+    "OLP-0402": {
+      "batch_id": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-MVL-MATRIX",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Ten-block many-valued sequent chapter driver with four unchanged imports.",
+      "allowed_residual_english": []
+    },
+    "OLP-0403": {
+      "batch_id": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-MVL-MATRIX",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Thirteen-block classical-to-n-valued sequent introduction with exact inference trees and two adjacent-disclosed source-notation repairs.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12425,6 +12467,60 @@
       "passage": "chain exercise",
       "reverse_paraphrase": "The final disjunction is a three-valued tautology but fails over infinitely many values.",
       "finding": "Formula exact; finite test and counterexample checked."
+    },
+    {
+      "unit_id": "OLP-0402",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "The chapter imports introduction, rules and proofs, structural rules and propositional rules in source order.",
+      "finding": "ID/imports/hook exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "finite matrix",
+      "reverse_paraphrase": "Every finite-valued matrix can receive a sequent calculus with one place per value.",
+      "finding": "Finite precondition retained."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "classical sequent",
+      "reverse_paraphrase": "A two-sided sequent is satisfied when some left formula is false or some right formula is true.",
+      "finding": "Disjunctive truth condition exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "left index",
+      "reverse_paraphrase": "The left side has m formulas to match the conjunction of m formulas.",
+      "finding": "OLMVL-010 repairs source mismatch."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "valuation argument",
+      "reverse_paraphrase": "An initial sequent is always satisfied because the same formula is true or false under valuation v.",
+      "finding": "OLMVL-011 restores omitted v."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "conditional rules",
+      "reverse_paraphrase": "The conditional-left and conditional-right readings are biconditional in classical logic.",
+      "finding": "Rule trees and readings exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "alternative rules",
+      "reverse_paraphrase": "Alternative conjunction-left and disjunction-right rules have biconditional satisfaction readings.",
+      "finding": "Rule trees exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "n places",
+      "reverse_paraphrase": "An n-valued logic uses n sequent places, one per truth value.",
+      "finding": "Arity and value correspondence exact."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "passage": "three-valued initial sequent",
+      "reverse_paraphrase": "A|A|A is always satisfied because the value of A belongs to one of the three positions.",
+      "finding": "Three clauses exact."
     }
   ]
 }

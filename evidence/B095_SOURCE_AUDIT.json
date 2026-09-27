@@ -1,0 +1,127 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T07:23:22.039606+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-INTRODUCTION",
+  "batch_id": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0402",
+      "source_path": "content/many-valued-logic/sequent-calculus/sequent-calculus.tex",
+      "source_bytes": 328,
+      "source_sha256": "28775295786cbfede3893029fdd6742f84bb12ada787a5e5f61faba049c113e6",
+      "target_sha256": "8b46fb3890c255b053d1d44122c67c3b454f8a44b6e0e021642b6db8a08a3db3",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0403",
+      "source_path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+      "source_bytes": 3110,
+      "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+      "target_sha256": "d9dae2fc793924f23f6a01cf09fbc08a9f2b99b4b41b35e3349ba274ed4781d1",
+      "paired_blocks": 13,
+      "source_correction_ids": [
+        "OLMVL-010",
+        "OLMVL-011"
+      ]
+    }
+  ],
+  "notes_path": "work/B095_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "b97665aa2ce83120d0be9d90e11a667d87656026bb92f3a1385fb9b223ab4c54",
+  "consultation_path": "work/B095_CANON_CONSULTATION.md",
+  "consultation_sha256": "e986cd4e898b651b028b44285a41741707cd14c4a6c86fa332fb0dd500324c3d",
+  "staging_qa_sha256": {
+    "OLP-0402": "e1aa3c46dc4aa3db7117729f559cb11773a9455e175014a53d25f17b52dba34b",
+    "OLP-0403": "f0b8976c95ef1fcb6d1e46706c28981c52a965654d5b4e882971e69496657ab3"
+  },
+  "semantic_qa_sha256": "9d208f8b18f999a5e146dff948cef1076e6fde7533adc46904f2422c4ceab2d5",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0402",
+      "source_lines": "1-19",
+      "kind": "chapter-driver",
+      "finding": "Chapter ID, four imports and closing hook exact; frozen wrong chapter comment retained as metadata."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "source_lines": "13-32",
+      "kind": "sequent-semantics",
+      "finding": "Classical sequent meaning retained; mismatched left index and missing valuation argument corrected and adjacent-disclosed as OLMVL-010/011."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "source_lines": "34-71",
+      "kind": "inference-rules",
+      "finding": "Conditional and alternative conjunction/disjunction rule trees exact; bivalent checks confirm readings."
+    },
+    {
+      "unit_id": "OLP-0403",
+      "source_lines": "73-81",
+      "kind": "many-valued-generalization",
+      "finding": "n-place sequent and three-valued satisfaction clauses exact."
+    }
+  ],
+  "formula_policy": "OLMVL-010 and OLMVL-011 are two exact math-span exceptions with adjacent disclosure; all other math, rule trees, IDs, macros and tokens exact; frozen English unchanged.",
+  "unresolved": "Specialized many-valued sequent vocabulary remains open to expert review; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0402/0403; continue OLP-0404."
+}
