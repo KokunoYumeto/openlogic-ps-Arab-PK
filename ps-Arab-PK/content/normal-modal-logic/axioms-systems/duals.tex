@@ -1,0 +1,42 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: duals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dua}
+
+\olsection{دوه‌ګوني \usetoken{P}{formula}}
+
+\begin{defn}\ollabel{def:duals}
+  د \Ax{T}، \Ax{B}، \Ax{4} او \Ax{5} له !!{formula}s څخه هر يو
+  \emph{دوه‌ګونے} لري؛ لکه لاندې چې ښکاري، هغه د لاندېنۍ لوزې په نښه
+  ښودل کېږي:
+  \begin{align}
+    \tag{\Ax{T_\Diamond}} p & \lif \Diamond p\\
+    \tag{\Ax{B_\Diamond}} \Diamond\Box p & \lif p\\
+    \tag{\Ax{4_\Diamond}} \Diamond\Diamond p & \lif \Diamond p\\
+    \tag{\Ax{5_\Diamond}} \Diamond\Box p & \lif \Box p
+    \end{align}
+\end{defn}
+
+له پورتنيو دوه‌ګونو !!{formula}s څخه هر يو له اړوند !!{formula}
+څخه داسې لاس ته راځي: لومړے د $p$ پر ځاے $\lnot p$ کېږدو، بيا
+مقابل نقيض واخلو، وروسته $\lnot\Box\lnot$ په $\Diamond$ او
+$\lnot\Diamond\lnot$ په~$\Box$ بدل کړو۔ \Ax{D}، يعنې
+$\Box!A \lif \Diamond!A$، په همدې معنا خپله دوه‌ګونی دے۔
+
+\begin{prop}\ollabel{prop:dualsys}
+  په \olref[nml][prf][dua]{def:duals} کښې د هر !!{formula}~$!A$ دپاره:
+  $\Log{K}!A = \Log{K}!A_{\Diamond}$.
+\end{prop}
+\begin{proof}
+  تمرین۔
+\end{proof}
+\begin{prob}
+  \olref[nml][prf][dua]{prop:dualsys} ثابته کړئ۔
+\end{prob}
+
+\end{document}

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B122-NORMAL-MODAL-MORE-K-PROOFS",
-  "status": "OLP-0433 source-reviewed and staged; 16 paired blocks, seven reverse-paraphrase samples, one disclosed formula repair",
+  "batch_id": "PS-B123-NORMAL-MODAL-DUAL-FORMULAS",
+  "status": "OLP-0434 source-reviewed and staged; nine paired blocks, six reverse-paraphrase samples and one provisional dual term",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9075,6 +9075,26 @@
       ],
       "scope": "Four K proof propositions, four derivations and three open exercises in 16 blocks, with one disclosed final-row disjunct-order repair.",
       "allowed_residual_english": []
+    },
+    "OLP-0434": {
+      "batch_id": "PS-B123-NORMAL-MODAL-DUAL-FORMULAS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-SCHEMA",
+        "TERM-MODAL-DUAL-AXIOMS"
+      ],
+      "scope": "Nine blocks defining tagged duals of T, B, 4 and 5, the transformation sequence, self-dual D, system-equality proposition and open proof exercise.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14525,6 +14545,42 @@
       "passage": "remaining exercises",
       "reverse_paraphrase": "Show Box(A or B) implies Diamond A or Box B, and (Diamond A implies Box B) implies Box(A implies B).",
       "finding": "Both scopes and open exercises retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "definition",
+      "reverse_paraphrase": "Each of T, B, 4 and 5 has a dual denoted by a diamond subscript.",
+      "finding": "Axiom list, dual meaning and notation retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "four tagged formulas",
+      "reverse_paraphrase": "The T, B, 4 and 5 dual formulas remain exactly as displayed under their original tags.",
+      "finding": "All object-language formulas and tags retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "transformation sequence",
+      "reverse_paraphrase": "Substitute not-p for p, contrapose, replace not-Box-not by Diamond and not-Diamond-not by Box, in that order.",
+      "finding": "Four operations and direction retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "D case",
+      "reverse_paraphrase": "Box A implies Diamond A is self-dual in the defined sense.",
+      "finding": "D distinguished from the other four dual pairs."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "proposition",
+      "reverse_paraphrase": "For every listed axiom formula A, the K-extension with A equals the K-extension with its diamond dual.",
+      "finding": "Universal scope and equality retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "exercise",
+      "reverse_paraphrase": "The proposition proof is left as Exercise and the final problem asks for it.",
+      "finding": "No proof supplied or omitted."
     }
   ]
 }

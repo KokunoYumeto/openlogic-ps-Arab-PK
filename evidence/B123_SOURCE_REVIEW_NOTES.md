@@ -1,0 +1,6 @@
+# OLP-0434 source review — dual formulas
+
+- Frozen `content/normal-modal-logic/axioms-systems/duals.tex`, revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, is 1,208 bytes, SHA-256 `f008b31a37a4d325a5a3983a340e7bb8037b7b892af4b107822aaebb0ec08849`. The staged Pashto target SHA-256 is `8f80efa4e0a44c04cbcd1b8309932d91f14d9fc76fa51c0d132e61918d43d70d`; frozen English is unchanged.
+- The definition lists the exact duals of T, B, 4 and 5 with a Diamond subscript. The explanation gives four operations in order: substitute not-p for p, contrapose, replace not-Box-not by Diamond, and replace not-Diamond-not by Box. D is its own dual in that sense. The proposition equates each K-extension with its dual counterpart. Its proof remains “Exercise”; the final problem asks for that proof and is not silently solved.
+- Focused staging QA passes nine paired blocks, the tagged align environment, every inline formula, source comment, identifier, named token, term marker and environment. No formula or frozen-source correction is proposed. The `دوه‌ګونے` rendering of “dual” is provisional because the inspected Pakistani pages do not attest the exact modal technical compound.
+- Cumulative QA, canonical decision replay, reader layout and human-specialist approval remain separate checks.

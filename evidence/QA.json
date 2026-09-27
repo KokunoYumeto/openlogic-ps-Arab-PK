@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 433,
-    "structural_pass": 433,
+    "draft_units": 434,
+    "structural_pass": 434,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B122-NORMAL-MODAL-MORE-K-PROOFS",
+  "batch": "PS-B123-NORMAL-MODAL-DUAL-FORMULAS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14099,6 +14099,33 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0434",
+      "path": "content/normal-modal-logic/axioms-systems/duals.tex",
+      "source_sha256": "f008b31a37a4d325a5a3983a340e7bb8037b7b892af4b107822aaebb0ec08849",
+      "translation_sha256": "8f80efa4e0a44c04cbcd1b8309932d91f14d9fc76fa51c0d132e61918d43d70d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -19549,6 +19576,42 @@
       "passage": "remaining exercises",
       "reverse_paraphrase": "Show Box(A or B) implies Diamond A or Box B, and (Diamond A implies Box B) implies Box(A implies B).",
       "finding": "Both scopes and open exercises retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "definition",
+      "reverse_paraphrase": "Each of T, B, 4 and 5 has a dual denoted by a diamond subscript.",
+      "finding": "Axiom list, dual meaning and notation retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "four tagged formulas",
+      "reverse_paraphrase": "The T, B, 4 and 5 dual formulas remain exactly as displayed under their original tags.",
+      "finding": "All object-language formulas and tags retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "transformation sequence",
+      "reverse_paraphrase": "Substitute not-p for p, contrapose, replace not-Box-not by Diamond and not-Diamond-not by Box, in that order.",
+      "finding": "Four operations and direction retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "D case",
+      "reverse_paraphrase": "Box A implies Diamond A is self-dual in the defined sense.",
+      "finding": "D distinguished from the other four dual pairs."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "proposition",
+      "reverse_paraphrase": "For every listed axiom formula A, the K-extension with A equals the K-extension with its diamond dual.",
+      "finding": "Universal scope and equality retained."
+    },
+    {
+      "unit_id": "OLP-0434",
+      "passage": "exercise",
+      "reverse_paraphrase": "The proposition proof is left as Exercise and the final problem asks for it.",
+      "finding": "No proof supplied or omitted."
     }
   ],
   "builds": [
