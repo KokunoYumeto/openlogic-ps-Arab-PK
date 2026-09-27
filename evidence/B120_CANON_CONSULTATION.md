@@ -1,0 +1,6 @@
+# OLP-0431 Pakistani-first Pashto consultation
+
+Pakistani Pashto Academy/Peshawar scholarly prose, printed page 1 (`PK-IQRAM-P1-PROSE`), was inspected for the adult explanatory register, کښې and final ے. Its page 2 (`PK-IQRAM-P2-SEMANTICS`) and reference grammar printed page 166 (`GRAMMAR-P166-SOV`) remain the primary language and word-order controls. They do not attest the exact modal K proof terms.
+
+Afghan regional comparator printed page 25 (`AF-NIAZMAN-P25-TAUTOLOGY`) was visually inspected for تاوتولوژي and the distinction between a tautology and arbitrary validity. Printed page 37 (`AF-NIAZMAN-P37-AXIOMATIC-PROOF`) displays axiom schemata and proof prose; printed page 48 (`AF-NIAZMAN-P48-MODUS-PONENS`) supports the rule name and derivation format. These regional passages support broad logical vocabulary, not the exact OpenLogic modal formulas. Existing `TERM-PROP-SEMANTICS`, `TERM-PROOF-SYSTEMS`, `TERM-PROOF-PROPERTIES`, `TERM-MODAL-LOGIC`, and `TERM-MODAL-NORMAL-NECESSITATION` govern consistent wording. The frozen OpenLogic source governs all K derivations, alternative operator branches, tautology templates and exercise formulas. No new attestation of the modal compounds is claimed.
+

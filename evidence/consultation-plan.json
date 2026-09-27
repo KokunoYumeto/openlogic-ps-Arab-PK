@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B119-NORMAL-MODAL-DERIVABILITY",
-  "status": "OLP-0430 source-reviewed and staged; 14 paired blocks, eight reverse-paraphrase samples, source notation preserved without correction",
+  "batch_id": "PS-B120-NORMAL-MODAL-K-PROOFS",
+  "status": "OLP-0431 source-reviewed and staged; 16 paired blocks, ten reverse-paraphrase samples, six exact derivation branches",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9000,6 +9000,34 @@
       ],
       "scope": "Fourteen-block K-plus-axioms derivability definition and equality proof; length induction, modus ponens, necessitation, substitution and tagged Dual closure.",
       "allowed_residual_english": []
+    },
+    "OLP-0431": {
+      "batch_id": "PS-B120-NORMAL-MODAL-K-PROOFS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-PROP-SEMANTICS",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-NORMAL-NECESSITATION"
+      ],
+      "scope": "Sixteen paired blocks: four K propositions, six derivation branches across tag configurations, exact tautology templates and three unsolved exercise formulas.",
+      "allowed_residual_english": [
+        "Box",
+        "Diamond",
+        "and",
+        "are",
+        "defined",
+        "is",
+        "primitive"
+      ]
     }
   },
   "semantic_review": [
@@ -14276,6 +14304,66 @@
       "passage": "substitution exercise",
       "reverse_paraphrase": "Apply the same substitution to every line; proof that the resulting sequence is correct remains an exercise.",
       "finding": "Exercise not silently solved."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "opening",
+      "reverse_paraphrase": "Every valid formula on the left side of the cited table has a proof in the smallest modal system K.",
+      "finding": "Scope of all valid left-side formulas and K proof retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "first proposition",
+      "reverse_paraphrase": "Box A implies Box(B implies A), derived by tautology, necessitation, K and modus ponens.",
+      "finding": "Four proof rows retained exactly."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "second proposition",
+      "reverse_paraphrase": "Box(A and B) implies Box A and Box B, using both conjunction projections.",
+      "finding": "All eleven proof rows retained exactly."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "second proof template",
+      "reverse_paraphrase": "Line 9 is an instance of the displayed tautology combining two implications with common antecedent.",
+      "finding": "Line number and displayed tautology retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "third proposition",
+      "reverse_paraphrase": "Box A and Box B imply Box(A and B), via K and tautological composition.",
+      "finding": "All ten proof rows retained exactly."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "third proof templates",
+      "reverse_paraphrase": "Lines 6 and 9 instantiate two displayed tautologies, respectively implication composition and conjunction introduction.",
+      "finding": "Both line numbers and templates retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "primitive operators",
+      "reverse_paraphrase": "When Box and Diamond are primitive, the source gives the twelve-line duality derivation and two tautology instances.",
+      "finding": "Primitive branch and row sequence retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "defined Diamond",
+      "reverse_paraphrase": "When Diamond is defined as not Box not, the final unnumbered line follows by definition; line 5 uses contraposition.",
+      "finding": "Definition and unnumbered row retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "defined Box",
+      "reverse_paraphrase": "The alternate tagged statement Box not p implies not Diamond p follows from Dual and a tautology.",
+      "finding": "Different statement and five-line proof retained."
+    },
+    {
+      "unit_id": "OLP-0431",
+      "passage": "exercises",
+      "reverse_paraphrase": "Readers are asked to find K derivations for three formulas; no solution is supplied.",
+      "finding": "All three exercise formulas and open instruction retained."
     }
   ]
 }
