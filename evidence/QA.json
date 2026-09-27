@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 385,
-    "structural_pass": 385,
+    "draft_units": 386,
+    "structural_pass": 386,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B081-MANY-VALUED-OPENING",
+  "batch": "PS-B082-MVL-CONNECTIVES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12161,6 +12161,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0386",
+      "path": "content/many-valued-logic/syntax-and-semantics/connectives.tex",
+      "source_sha256": "5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30",
+      "translation_sha256": "164f06ccc59a5e56304587b263d69338bd682416ac3d85c2d1e01e6313fab640",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15685,6 +15711,36 @@
       "passage": "entailment",
       "reverse_paraphrase": "Gamma entails A when every valuation satisfying every premise in Gamma also satisfies A.",
       "finding": "The target preserves the universal conditional, not an existential witness."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "primitive symbols",
+      "reverse_paraphrase": "Classical and other propositional logics use propositional constants and primitive connectives, including the listed truth and falsity constants and five logical connectives.",
+      "finding": "Target preserves constants, connectives, conditional tags and math signs."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "defined abbreviations",
+      "reverse_paraphrase": "Besides primitives, symbols may be defined as abbreviations; the source tag controls which examples appear.",
+      "finding": "Target keeps the defined/primitives distinction and all tag branches."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "many-valued variants",
+      "reverse_paraphrase": "A many-valued logic may need several distinct versions of conjunction or connectives with no classical counterpart, so a general language definition is useful.",
+      "finding": "Target preserves both motivations and the requirement for separate symbols."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "arity definition",
+      "reverse_paraphrase": "Each connective in a propositional language has a fixed arity; 0-place ones are constants, 1-place ones unary, and 2-place ones binary.",
+      "finding": "Target does not confuse arity with truth value or first-order individual constants."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "standard language example",
+      "reverse_paraphrase": "The displayed standard language has the exact listed symbols and arities; product logic may use odot for conjunction and determinateness may be added as a unary triangle operator.",
+      "finding": "Target preserves exact arities and example roles."
     }
   ],
   "builds": [

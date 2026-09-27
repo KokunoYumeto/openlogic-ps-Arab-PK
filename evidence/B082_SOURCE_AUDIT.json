@@ -1,0 +1,90 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T02:37:39.029969+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MVL-CONNECTIVES",
+  "batch_id": "PS-B082-MVL-CONNECTIVES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0386",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/connectives.tex",
+      "source_bytes": 2792,
+      "source_sha256": "5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30",
+      "target_sha256": "164f06ccc59a5e56304587b263d69338bd682416ac3d85c2d1e01e6313fab640",
+      "paired_blocks": 10
+    }
+  ],
+  "notes_path": "work/B082_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "c270fc0970e3413b2f21492ffa79c05c953e04b0520a99621d656f9ecf145e5a",
+  "consultation_path": "work/B082_CANON_CONSULTATION.md",
+  "consultation_sha256": "aa0314c0fae31ae61daf35920b52a755bfc77cfe32b5af6bd7a876ca4f2334ea",
+  "staging_qa_sha256": {
+    "OLP-0386": "3ce19b79f551e24d784a73adcdc25181d94a4af309a6574d2b62c248d397d8a1"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P7-PROPOSITION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 12,
+      "printed_page": "7",
+      "page_image_sha256": "676db5dd242addc7fa5f79435bd484ad699efebce0e5c1b70143af3ebe56a7cd",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P110-OPERATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 115,
+      "printed_page": "110",
+      "page_image_sha256": "c5e201eaa059f006dcb77f43a280088b4e55c6773087578baba5e47e127afcf3",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0386",
+      "source_lines": "13-37",
+      "kind": "primitive-and-defined-connectives",
+      "finding": "Propositional constants, primitive connectives, and defined abbreviation branches remain distinct with exact source tags, math and term tokens."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "source_lines": "39-53",
+      "kind": "many-valued-language-and-arity",
+      "finding": "Distinct versions of a connective and novel connectives motivate the general language definition; zero-, one- and two-place classifications stay exact."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "source_lines": "55-68",
+      "kind": "standard-language-and-operator-examples",
+      "finding": "The standard symbols and their arities, the product-logic odot alternative, and the unary determinateness triangle remain exact."
+    }
+  ],
+  "formula_policy": "All formulas, identifiers, structural macros and term tokens remain source-equivalent. No mathematical correction is adopted. Frozen English bytes are unchanged.",
+  "unresolved": "The exact arity, product-logic and determinateness Pashto compounds lack direct checked Pakistani attestation and remain provisional. Human specialist approval is not claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0386, then continue OLP-0387."
+}

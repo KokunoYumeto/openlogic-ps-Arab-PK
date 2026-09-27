@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B081-MANY-VALUED-OPENING",
-  "status": "OLP-0383–0385 source-reviewed and staged; thirty-four paired blocks, exact math parity, one provisional terminology decision and eight reverse-paraphrase samples",
+  "batch_id": "PS-B082-MVL-CONNECTIVES",
+  "status": "OLP-0386 source-reviewed and staged; ten paired blocks, exact math parity, one provisional terminology decision and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8102,6 +8102,24 @@
       ],
       "scope": "Source-reviewed many-valued part and syntax/semantics opening; exact paired blocks, imports, formulas and term tokens. The new many-valued/designated-value forms are provisional. Pakistani scholarly usage is primary; Afghan logic pages are labelled regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0386": {
+      "batch_id": "PS-B082-MVL-CONNECTIVES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P7-PROPOSITION",
+        "AF-NIAZMAN-P110-OPERATION"
+      ],
+      "terms": [
+        "TERM-MVL-CONNECTIVE-ARITY",
+        "TERM-PROP-SYNTAX",
+        "TERM-OPERATOR",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Source-reviewed many-valued languages and connectives; exact ten paired blocks, tags, symbols, arities and term tokens. New arity/product-logic/determinateness forms are provisional; Pakistani scholarly usage is primary and Afghan logic pages are regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11626,6 +11644,36 @@
       "passage": "entailment",
       "reverse_paraphrase": "Gamma entails A when every valuation satisfying every premise in Gamma also satisfies A.",
       "finding": "The target preserves the universal conditional, not an existential witness."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "primitive symbols",
+      "reverse_paraphrase": "Classical and other propositional logics use propositional constants and primitive connectives, including the listed truth and falsity constants and five logical connectives.",
+      "finding": "Target preserves constants, connectives, conditional tags and math signs."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "defined abbreviations",
+      "reverse_paraphrase": "Besides primitives, symbols may be defined as abbreviations; the source tag controls which examples appear.",
+      "finding": "Target keeps the defined/primitives distinction and all tag branches."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "many-valued variants",
+      "reverse_paraphrase": "A many-valued logic may need several distinct versions of conjunction or connectives with no classical counterpart, so a general language definition is useful.",
+      "finding": "Target preserves both motivations and the requirement for separate symbols."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "arity definition",
+      "reverse_paraphrase": "Each connective in a propositional language has a fixed arity; 0-place ones are constants, 1-place ones unary, and 2-place ones binary.",
+      "finding": "Target does not confuse arity with truth value or first-order individual constants."
+    },
+    {
+      "unit_id": "OLP-0386",
+      "passage": "standard language example",
+      "reverse_paraphrase": "The displayed standard language has the exact listed symbols and arities; product logic may use odot for conjunction and determinateness may be added as a unary triangle operator.",
+      "finding": "Target preserves exact arities and example roles."
     }
   ]
 }

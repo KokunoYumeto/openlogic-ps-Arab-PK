@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 385 of 722 source units are translated drafts. This log contains 195 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 386 of 722 source units are translated drafts. This log contains 196 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1753,6 +1753,14 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: Pakistani scholarly semantics prose and grammar visually inspected; Afghan truth-table, tautology, consequence and satisfaction pages are labelled regional comparators; the exact many-valued, truth-function and designated-value compounds are unattested in the checked Pakistani pages and provisional
 - Review question: A many-valued logic specifies an allowed value set V and a truth function for each connective. Truth-functional means a valuation and those functions uniquely determine every formula value; it does not mean the formula is a tautology. A designated subset V+ determines satisfaction and may contain several values or omit a literal True value. Tautology requires designation under every valuation; entailment preserves designation from premises to conclusion. Keep the established semantics, truth-value and tautology choices for inherited concepts.
 - Timing: contemporaneous B081 owner source review and visually inspected Pakistani-first Pashto consultation
+
+## TERM-MVL-CONNECTIVE-ARITY
+
+- Type: terminology
+- Choice: د ځايونو شمېر / n-ځايه نښلوونکے / صفر ځايه ثابت / د حاصل‌ضرب منطق / د ټاکلتيا عملګر
+- Uncertainty: Pakistani scholarly prose and syntax/semantics page inspected; Afghan proposition and k-place-operation pages are labelled regional comparators; exact arity, product-logic and determinateness compounds are unattested in checked Pakistani pages and provisional
+- Review question: A propositional language is a set of connectives with fixed input arities. A zero-place connective is a propositional constant, distinct from an individual constant in first-order logic; one- and two-place connectives retain their input counts. A language may carry distinct conjunction-like connectives or operators absent from classical logic. Product logic uses odot for conjunction in the given example; the triangle operator is unary determinateness. Keep symbol and arity assignments exact.
+- Timing: contemporaneous B082 owner source review and visually inspected Pakistani-first Pashto consultation
 
 ## DEC-OLFUN-001
 

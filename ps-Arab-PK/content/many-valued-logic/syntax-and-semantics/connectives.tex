@@ -1,0 +1,70 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: connectives
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{con}
+
+\olsection{ژبې او نښلوونکي}
+
+کلاسيک بياني منطق، او ډېر نور منطقونه، د \emph{بياني ثابتونو} او
+\emph{نښلوونکو} يو سټ کاروي۔ د بېلګې په توګه، لاندې نښې د بنسټيزو
+نښو په توګه کاروو:
+\begin{enumerate}
+\tagitem{prvFalse}{د !!{falsity} بياني ثابت~$\lfalse$۔}{}
+\tagitem{prvTrue}{د !!{truth} بياني ثابت~$\ltrue$۔}{}
+\item منطقي نښلوونکي:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\end{enumerate}
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+د پورته بنسټيزو نښلوونکو تر څنګ، هغه نښې هم کاروو چې د لنډيزونو
+په توګه تعريف شوې دي، لکه
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}.}{}
+
+په څو ارزښته منطقونو کښې هم همدغه نښلوونکي کارېږي۔ خو ډېر ځله
+ګټوره وي چې د بېلګې په توګه د عطف بېلابېلې بڼې په يوه منطق کښې
+شاملې کړو؛ بيا د دغو بڼو د بېلولو دپاره بېلو نښو ته اړتيا وي۔
+ځينې څو ارزښته منطقونه داسې نښلوونکي هم لري چې په کلاسيک منطق
+کښې ئې سيال نشته۔ له همدې امله دلته له معمول څخه لږ عمومي
+تعريف کاروو۔
+
+\begin{defn}
+  يوه \emph{بياني ژبه} د \emph{نښلوونکو} له يوه سټ~$\Lang L$ څخه
+  جوړه وي۔ هر نښلوونکے~$\star$ يو ټاکلے شمېر ځايونه لري؛ هغه
+  نښلوونکے چې~$n$ ځايونه لري، \emph{$n$-ځايه} بلل کېږي۔
+  د~$0$ ځايونو نښلوونکو ته \emph{ثابتونه} هم ويل کېږي؛
+  د~$1$ ځاے نښلوونکي \emph{يو ځايه}، او د~$2$ ځايونو
+  نښلوونکي \emph{دوه ځايه} بلل کېږي۔
+\end{defn}
+
+\begin{ex}
+  د بياني منطق معياري ژبه~$\Lang L_0$ له لاندې نښلوونکو
+  (او د هر يوه له ټاکلي شمېر ځايونو) څخه جوړه ده:
+  $\lfalse$~($0$)،
+  $\lnot$~($1$)،
+  $\land$~($2$)،
+  $\lor$~($2$)،
+  $\lif$~($2$)۔ ډېری هغه منطقونه چې موږ ئې څېړو، همدا ژبه
+  کاروي۔ ځينې منطقونه د دود له مخې د ځينو نښلوونکو دپاره
+  بېلې نښې کاروي۔ د بېلګې په توګه، د حاصل‌ضرب په منطق کښې
+  د عطف نښه ډېر ځله د~$\land$ پر ځاے~$\odot$ وي۔ کله ناکله
+  د نوي عملګر زياتول هم ګټور وي، لکه د ټاکلتيا عملګر~$\triangle$
+  ($1$-ځايه)۔
+\end{ex}
+
+\end{document}
