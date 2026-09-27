@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
-  "status": "OLP-0405 source-reviewed and staged; ten paired blocks, exact rule trees and six reverse-paraphrase samples",
+  "batch_id": "PS-B098-MANY-VALUED-PROPOSITIONAL-RULES",
+  "status": "OLP-0406 source-reviewed and staged; 27 paired blocks, exact rule trees, 150 truth-value checks and eight reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8508,6 +8508,27 @@
       ],
       "scope": "Complete ten-block n-sided weakening, contraction, exchange and cut rules with exact displayed proof trees and distinct-position condition. No source correction.",
       "allowed_residual_english": []
+    },
+    "OLP-0406": {
+      "batch_id": "PS-B098-MANY-VALUED-PROPOSITIONAL-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-TRUTH-FUNCTION",
+        "TERM-LOGIC-FORMS",
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-SEQUENT-SOUNDNESS"
+      ],
+      "scope": "Complete 27-block n-sided propositional rules for negation, conjunction, disjunction and the Łukasiewicz, strong Kleene and Gödel implications. All displayed rule trees unchanged; 150 independent truth-value checks pass. No rendered source correction.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12638,6 +12659,54 @@
       "passage": "cut",
       "reverse_paraphrase": "Cut uses distinct positions i and j in its premises and merges the remaining contexts pointwise.",
       "finding": "Distinctness and rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "rule dependence",
+      "reverse_paraphrase": "A connective's n-sided sequent rules depend only on its characteristic truth function; equal functions give equal rules across logics.",
+      "finding": "Both directions of the cross-logic claim retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "shared negation",
+      "reverse_paraphrase": "Łukasiewicz and Kleene negation use the same three false, undefined and true position rules, including variants.",
+      "finding": "Named logic scope and all rule trees retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Gödel negation",
+      "reverse_paraphrase": "Gödel negation cannot have the undefined value, so it has no middle-position rule.",
+      "finding": "Exclusion and two displayed rules retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "shared conjunction and disjunction",
+      "reverse_paraphrase": "Łukasiewicz, strong Kleene and Gödel share the displayed conjunction and disjunction rules.",
+      "finding": "Each family and truth-position premise condition retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Łukasiewicz implication",
+      "reverse_paraphrase": "Its undefined condition covers true-to-undefined and undefined-to-false, excluding undefined-to-undefined.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "strong Kleene implication",
+      "reverse_paraphrase": "Its undefined condition includes undefined-to-undefined because implication is negation-or-disjunction.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Gödel implication",
+      "reverse_paraphrase": "Its false condition includes undefined-or-true antecedent with false consequent; undefined requires true-to-undefined.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "derivation caption",
+      "reverse_paraphrase": "The sideways figure is an example derivation in three-valued Łukasiewicz logic.",
+      "finding": "Caption's named token and math span retained."
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "schema": "ps-b098-three-valued-rule-semantics/1",
+  "status": "PASS",
+  "unit_id": "OLP-0406",
+  "source_sha256": "7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7",
+  "target_sha256": "d364e19b92e650aa2e1e6c76b3c36e69d316c886521729a8766612aa701280ae",
+  "value_encoding": {
+    "False": 0,
+    "Undefined": 1,
+    "True": 2
+  },
+  "checks": 150,
+  "scope": "Negation in Łukasiewicz/Kleene and Gödel; conjunction, disjunction, and implication in Łukasiewicz, strong Kleene, and Gödel logics; each displayed rule's premise conjunction equals its connective's stated truth-value condition with side contexts unsatisfied.",
+  "source_rule_trees_unchanged": true
+}

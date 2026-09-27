@@ -4,22 +4,22 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 405,
-    "structural_pass": 405,
+    "draft_units": 406,
+    "structural_pass": 406,
     "visually_accepted": 321,
     "published": 321
   },
   "publication_coverage": {
     "reader_units": 321,
-    "source_snapshot_units": 362,
+    "source_snapshot_units": 405,
     "published_definition": "published counts units in an accepted public reader; source_snapshot_units separately counts structurally verified drafts included in the public source archive",
-    "source_snapshot_release": "v0.7.0-incompleteness",
-    "source_snapshot_commit": "54d9b1b7afd96328229ea318142b66235c54f5ba",
+    "source_snapshot_release": "v0.7.1-incompleteness-formula-repair",
+    "source_snapshot_commit": "6229b85eaeb563f9a0a77dc6be8a47af63e36908",
     "source_snapshot_disposition": "immutable historical source snapshot; later main-branch corrections do not alter its unit count or bytes"
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
+  "batch": "PS-B098-MANY-VALUED-PROPOSITIONAL-RULES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12764,6 +12764,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0406",
+      "path": "content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+      "source_sha256": "7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7",
+      "translation_sha256": "d364e19b92e650aa2e1e6c76b3c36e69d316c886521729a8766612aa701280ae",
+      "source_blocks": 27,
+      "target_blocks": 27,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -16894,6 +16920,54 @@
       "passage": "cut",
       "reverse_paraphrase": "Cut uses distinct positions i and j in its premises and merges the remaining contexts pointwise.",
       "finding": "Distinctness and rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "rule dependence",
+      "reverse_paraphrase": "A connective's n-sided sequent rules depend only on its characteristic truth function; equal functions give equal rules across logics.",
+      "finding": "Both directions of the cross-logic claim retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "shared negation",
+      "reverse_paraphrase": "Łukasiewicz and Kleene negation use the same three false, undefined and true position rules, including variants.",
+      "finding": "Named logic scope and all rule trees retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Gödel negation",
+      "reverse_paraphrase": "Gödel negation cannot have the undefined value, so it has no middle-position rule.",
+      "finding": "Exclusion and two displayed rules retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "shared conjunction and disjunction",
+      "reverse_paraphrase": "Łukasiewicz, strong Kleene and Gödel share the displayed conjunction and disjunction rules.",
+      "finding": "Each family and truth-position premise condition retained."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Łukasiewicz implication",
+      "reverse_paraphrase": "Its undefined condition covers true-to-undefined and undefined-to-false, excluding undefined-to-undefined.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "strong Kleene implication",
+      "reverse_paraphrase": "Its undefined condition includes undefined-to-undefined because implication is negation-or-disjunction.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "Gödel implication",
+      "reverse_paraphrase": "Its false condition includes undefined-or-true antecedent with false consequent; undefined requires true-to-undefined.",
+      "finding": "Truth-table and rule-tree check passed."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "passage": "derivation caption",
+      "reverse_paraphrase": "The sideways figure is an example derivation in three-valued Łukasiewicz logic.",
+      "finding": "Caption's named token and math span retained."
     }
   ],
   "builds": [

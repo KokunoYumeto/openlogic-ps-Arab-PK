@@ -180,10 +180,12 @@ if pubpath.exists():
  report['publication_coverage']['source_snapshot_units']=len(public_source_ids)
  report['publication_verified']=pub.get('verified',False)
 release_checkpoints=[]
-for checkpoint_path in (STATE/'V051_RELEASE_CHECKPOINT.json',STATE/'V060_RELEASE_CHECKPOINT.json',STATE/'V070_RELEASE_CHECKPOINT.json'):
+for checkpoint_path in (STATE/'V051_RELEASE_CHECKPOINT.json',STATE/'V060_RELEASE_CHECKPOINT.json',STATE/'V070_RELEASE_CHECKPOINT.json',STATE/'V071_RELEASE_CHECKPOINT.json'):
  if checkpoint_path.exists():
   checkpoint=json.loads(checkpoint_path.read_text(encoding='utf-8'))
-  if checkpoint.get('status')=='published-and-verified':
+  if checkpoint.get('status') in ('published-and-verified','published-and-anonymously-verified'):
+   if 'coverage' not in checkpoint:
+    checkpoint={'coverage':{'reader_units':checkpoint['reader_units'],'source_snapshot_units':checkpoint['source_snapshot_drafts']},'release':{'tag':checkpoint['tag'],'commit':checkpoint['commit']}}
    release_checkpoints.append(checkpoint)
 if release_checkpoints:
  latest=max(release_checkpoints,key=lambda item:(int(item['coverage']['reader_units']),int(item['coverage']['source_snapshot_units'])))

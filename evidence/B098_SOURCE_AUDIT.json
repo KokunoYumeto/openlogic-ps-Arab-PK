@@ -1,0 +1,114 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T08:24:29.948004+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-PROPOSITIONAL-RULES",
+  "batch_id": "PS-B098-MANY-VALUED-PROPOSITIONAL-RULES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0406",
+      "source_path": "content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+      "source_bytes": 7938,
+      "source_sha256": "7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7",
+      "target_sha256": "d364e19b92e650aa2e1e6c76b3c36e69d316c886521729a8766612aa701280ae",
+      "paired_blocks": 27,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B098_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "a1cc71638bd655526a2f5e1b8dce33e3663cb1f04e7d468f18ac3d949ba53036",
+  "consultation_path": "work/B098_CANON_CONSULTATION.md",
+  "consultation_sha256": "28aa2e088a34c94e47d7e0d4d375eba56edab45f170c26fee47f7a5b73bd2f88",
+  "staging_qa_sha256": {
+    "OLP-0406": "124033dd8ac4d03722f06586ee622134fae1fa8a0e100a3de30248dbb1935c5d"
+  },
+  "rule_semantics_sha256": "18a724fee06f71fbb7704ba4e2de3383710502169630c2c99bf0a38d80ca7b69",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0406",
+      "source_lines": "1",
+      "kind": "nonrendering-header",
+      "finding": "The frozen comment says first-order-logic despite the many-valued path and file ID; only the target metadata comment was corrected."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "source_lines": "11-17",
+      "kind": "truth-function-dependence",
+      "finding": "Equal characteristic truth functions yield equal n-sided connective rules across logics."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "source_lines": "19-188",
+      "kind": "displayed-rule-trees",
+      "finding": "Negation, conjunction, disjunction and the three implication families retain every frozen proof-tree command and all math spans; 150 three-valued semantic checks pass."
+    },
+    {
+      "unit_id": "OLP-0406",
+      "source_lines": "190-233",
+      "kind": "derivation-figure",
+      "finding": "The sideways proof tree and Łukasiewicz caption retain formal tokens and identifiers."
+    }
+  ],
+  "formula_policy": "All normalized math spans, rule trees, IDs, term tokens, environments and structural macros match frozen English exactly; no source correction adopted.",
+  "unresolved": "Specialized propositional-rule terminology remains open to expert review; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0406; continue OLP-0407."
+}
