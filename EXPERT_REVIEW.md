@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 395 of 722 source units are translated drafts. This log contains 202 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 396 of 722 source units are translated drafts. This log contains 203 terminology entries and 329 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1840,6 +1840,15 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: exact Pakistani strong/weak Kleene and Bochvar compounds remain provisional.
 - Review question: Do the decisive known values in the strong tables remain distinct from weak Undef propagation and Bochvar's meaningless reading?
 - Timing: contemporaneous B089 source review and visually inspected Pakistani-first consultation
+
+## TERM-MVL-GODEL-THREE-VALUED
+
+- Type: terminology
+- Choice: متناهي ګوډل منطق / په شهودي منطق کښې معتبر فارمول / د ګوډل تاوتولوژي / کلاسيکه تاوتولوژي
+- Source and target: [frozen English](upstream/content/many-valued-logic/three-valued-logics/goedel.tex#L13) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/three-valued-logics/goedel.tex#L13).
+- Uncertainty: the exact Pakistani finite-Gödel compound remains provisional.
+- Review question: Are the intuitionistic-to-Gödel-to-classical validity inclusions and their nonconverses clear?
+- Timing: contemporaneous B090 source review and visually inspected Pakistani-first consultation
 
 ## DEC-OLFUN-001
 

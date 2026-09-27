@@ -1,0 +1,7 @@
+# B090 canon consultation — Gödel's three-valued matrix
+
+The rendered Pakistani primary pages `PK-IQRAM-P1-PROSE` and `PK-IQRAM-P2-SEMANTICS` guide the adult scholarly register and semantic exposition. `GRAMMAR-P166-SOV` supports verb-final prose. The rendered Afghan pages `AF-NIAZMAN-P8-TRUTH-TABLE`, `AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT`, `AF-NIAZMAN-P25-TAUTOLOGY`, and `AF-NIAZMAN-P33-VALUATION-SATISFIABILITY` are regional comparators for the corresponding logical concepts. Their page image hashes and exact printed/PDF page locators are rechecked against `CANON_PASSAGES.jsonl` during registration. None is claimed as exact Pakistani attestation for finite Gödel logic.
+
+The already established `TERM-INTUITIONISTIC-LOGIC` supplies «شهودي منطق» and its restriction to constructive validity; `TERM-MVL-THREE-VALUED-INTRO`, `TERM-MANY-VALUED-SEMANTICS`, `TERM-MVL-MATRIX`, `TERM-MVL-LUKASIEWICZ-MODAL`, and `TERM-MVL-KLEENE-BOCHVAR` guide the neighboring terminology. The edition's earlier Gödel spelling «ګوډل» is retained. B090 adds a provisional specialized decision covering Gödel's finite matrix and the contrast between intuitionistic validity, Gödel tautology and classical tautology. The frozen truth tables and an independent 3-valued enumeration govern the mathematical distinctions; canon does not override them.
+
+The specialized compound remains reversible and open to later specialist correction without creating a human review gate.

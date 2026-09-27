@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B089-KLEENE-THREE-VALUED",
-  "status": "OLP-0395 source-reviewed and staged; 19 paired blocks, exact math/tables, one provisional terminology decision, seven reverse-paraphrase samples; OLMVL-001 proof amendment audited",
+  "batch_id": "PS-B090-GODEL-THREE-VALUED",
+  "status": "OLP-0396 source-reviewed and staged; 13 paired blocks, exact math/tables, one provisional terminology decision, seven reverse-paraphrase samples and finite-matrix enumeration",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8300,6 +8300,29 @@
       ],
       "scope": "Complete 19-block strong/weak Kleene and Bochvar section. Source formulas and ten truth tables exact. Pakistani scholarly prose is primary; Afghan logic pages are regional comparators. OLMVL-001 proof amendment audited separately.",
       "allowed_residual_english": []
+    },
+    "OLP-0396": {
+      "batch_id": "PS-B090-GODEL-THREE-VALUED",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-GODEL-THREE-VALUED",
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-MVL-THREE-VALUED-INTRO",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-LUKASIEWICZ-MODAL",
+        "TERM-MVL-KLEENE-BOCHVAR"
+      ],
+      "scope": "Complete 13-block Gödel three-valued matrix and exercises. Four truth tables and all source math exact; Pakistani scholarly semantics prose primary, Afghan logical pages regional comparators. Independent finite-table examples checked.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12076,6 +12099,48 @@
       "passage": "Bochvar unary operators",
       "reverse_paraphrase": "External negation and undefinedness are different unary functions with different tables, followed by an exercise to define them.",
       "finding": "Both original tables and the exercise remain exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "finite family",
+      "reverse_paraphrase": "Each finite Gödel logic contains all intuitionistically valid formulas and is included in classical validity.",
+      "finding": "Both inclusions retain their direction and do not assert converses."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "matrix",
+      "reverse_paraphrase": "The three-valued matrix includes a False-valued falsity constant and designates only True.",
+      "finding": "All four tables and designated set are exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "connective comparison",
+      "reverse_paraphrase": "Conjunction and disjunction agree with Łukasiewicz and strong Kleene, while negation and implication distinguish them.",
+      "finding": "Three displayed distinguishing values remain exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "intuitionistic relationship",
+      "reverse_paraphrase": "Every intuitionistic truth is Gödel-tautological, but some Gödel tautologies fail intuitionistically and some classical tautologies fail in Gödel's matrix.",
+      "finding": "The two nonconverses and examples remain separate."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "non-tautology examples",
+      "reverse_paraphrase": "The six displayed classical formulas can each receive a non-designated Gödel value.",
+      "finding": "Finite-table enumeration found a witness for each."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "tautology exercises",
+      "reverse_paraphrase": "Students are asked to verify four Gödel tautologies and four non-tautologies with truth tables.",
+      "finding": "All eight formulas are exact and classifications pass finite-table enumeration."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "consequence exercise",
+      "reverse_paraphrase": "The final problem asks which of five entailments hold and requests a truth table for each.",
+      "finding": "No answers are inserted into the translation."
     }
   ]
 }

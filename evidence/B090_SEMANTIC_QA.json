@@ -1,0 +1,72 @@
+{
+  "schema": "ps-b090-goedel-semantic-check/1",
+  "status": "PASS",
+  "interpretation": "F=0, U=1, T=2; conjunction=min, disjunction=max; implication=T when antecedent<=consequent, otherwise consequent; negation=T only at F",
+  "checked_source_tables": [
+    "negation",
+    "implication"
+  ],
+  "verified_tautologies": [
+    "double-negation-or-negation",
+    "linear-implication-preorder",
+    "de-morgan-conditional",
+    "four-variable-implication-chain"
+  ],
+  "verified_non_tautologies": {
+    "excluded-middle": {
+      "values_FUT": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    },
+    "implication-as-material": {
+      "values_FUT": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    },
+    "double-negation-elimination": {
+      "values_FUT": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    },
+    "de-morgan-converse": {
+      "values_FUT": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    },
+    "peirce": {
+      "values_FUT": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    },
+    "negated-implication-as-conjunction": {
+      "values_FUT": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "result_FUT": 1
+    }
+  },
+  "limit": "Checks the stated three-valued matrices and examples, not intuitionistic derivability."
+}

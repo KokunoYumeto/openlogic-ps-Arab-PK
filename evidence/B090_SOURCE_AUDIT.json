@@ -1,0 +1,113 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T05:42:33.632783+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-GODEL-THREE-VALUED",
+  "batch_id": "PS-B090-GODEL-THREE-VALUED",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0396",
+      "source_path": "content/many-valued-logic/three-valued-logics/goedel.tex",
+      "source_bytes": 4106,
+      "source_sha256": "1075b4d66085bb613bcaf0ef498cf8b3705b84d9dfd3dfedf648847b39be9542",
+      "target_sha256": "dffcbb1d3be4e4b6463c6948c10332a6ca26bdf897a5e8878992afb42d1f9741",
+      "paired_blocks": 13
+    }
+  ],
+  "notes_path": "work/B090_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "c47bdf4c20689d8173f9133d0373d824f3deb569743600c577a53f0a8685a1e7",
+  "consultation_path": "work/B090_CANON_CONSULTATION.md",
+  "consultation_sha256": "e1e57f771df93eed5c636eec81fec7398dd495c19afe549dbd87d650a37b6702",
+  "staging_qa_sha256": {
+    "OLP-0396": "61e02dfed08728bfa0125bf02dfe280dc5df5e6d05f93851093b125f85e7a315"
+  },
+  "semantic_qa_sha256": "5084886ec9f146c781370c866f517270d0dce1b2a751861cef47c8310adaec69",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P8-TRUTH-TABLE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 13,
+      "printed_page": "8",
+      "page_image_sha256": "32696bdfaa990fef2a2559c32c44cb872d1fa33ab7229d9aced0027686fb1fd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0396",
+      "source_lines": "13-15",
+      "kind": "logic-inclusions",
+      "finding": "The finite Gödel family includes intuitionistic validities and lies within classical validity, without asserting either converse."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "source_lines": "17-61",
+      "kind": "matrix-definition",
+      "finding": "Falsity constant, designated value and all four tables remain exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "source_lines": "63-83",
+      "kind": "comparisons",
+      "finding": "The three distinguishing truth-function values and both strict validity directions are translated. All six negative examples and two positive counterexamples are retained."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "source_lines": "85-116",
+      "kind": "exercises",
+      "finding": "Four tautology, four non-tautology and five entailment exercises remain unchanged; independent finite-table enumeration verifies the positive and negative classifications."
+    }
+  ],
+  "formula_policy": "All math spans, four truth tables, exercise formulas, IDs, labels, environment order and structural macros match frozen English exactly.",
+  "unresolved": "Exact Pakistani finite-Gödel compounds remain provisional; no human specialist approval claimed. Corrected reader release is tracked separately and does not hold translation.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0396; continue OLP-0397."
+}

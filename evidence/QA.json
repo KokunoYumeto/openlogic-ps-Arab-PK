@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 395,
-    "structural_pass": 395,
+    "draft_units": 396,
+    "structural_pass": 396,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B089-KLEENE-THREE-VALUED",
+  "batch": "PS-B090-GODEL-THREE-VALUED",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12440,6 +12440,32 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0396",
+      "path": "content/many-valued-logic/three-valued-logics/goedel.tex",
+      "source_sha256": "1075b4d66085bb613bcaf0ef498cf8b3705b84d9dfd3dfedf648847b39be9542",
+      "translation_sha256": "dffcbb1d3be4e4b6463c6948c10332a6ca26bdf897a5e8878992afb42d1f9741",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -16216,6 +16242,48 @@
       "passage": "Bochvar unary operators",
       "reverse_paraphrase": "External negation and undefinedness are different unary functions with different tables, followed by an exercise to define them.",
       "finding": "Both original tables and the exercise remain exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "finite family",
+      "reverse_paraphrase": "Each finite Gödel logic contains all intuitionistically valid formulas and is included in classical validity.",
+      "finding": "Both inclusions retain their direction and do not assert converses."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "matrix",
+      "reverse_paraphrase": "The three-valued matrix includes a False-valued falsity constant and designates only True.",
+      "finding": "All four tables and designated set are exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "connective comparison",
+      "reverse_paraphrase": "Conjunction and disjunction agree with Łukasiewicz and strong Kleene, while negation and implication distinguish them.",
+      "finding": "Three displayed distinguishing values remain exact."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "intuitionistic relationship",
+      "reverse_paraphrase": "Every intuitionistic truth is Gödel-tautological, but some Gödel tautologies fail intuitionistically and some classical tautologies fail in Gödel's matrix.",
+      "finding": "The two nonconverses and examples remain separate."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "non-tautology examples",
+      "reverse_paraphrase": "The six displayed classical formulas can each receive a non-designated Gödel value.",
+      "finding": "Finite-table enumeration found a witness for each."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "tautology exercises",
+      "reverse_paraphrase": "Students are asked to verify four Gödel tautologies and four non-tautologies with truth tables.",
+      "finding": "All eight formulas are exact and classifications pass finite-table enumeration."
+    },
+    {
+      "unit_id": "OLP-0396",
+      "passage": "consequence exercise",
+      "reverse_paraphrase": "The final problem asks which of five entailments hold and requests a truth table for each.",
+      "finding": "No answers are inserted into the translation."
     }
   ],
   "builds": [
