@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 438,
-    "structural_pass": 438,
+    "draft_units": 439,
+    "structural_pass": 439,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B127-NORMAL-MODAL-PROVABILITY-FROM-SET",
+  "batch": "PS-B128-NORMAL-MODAL-PROVABILITY-PROPERTIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14242,7 +14242,7 @@
       "unit_id": "OLP-0438",
       "path": "content/normal-modal-logic/axioms-systems/provability-from-set.tex",
       "source_sha256": "de08bf7a3bc7b183438d82d4678a9fc80a4b8efbb072cb25c0e49d10d296f540",
-      "translation_sha256": "acba8c1d866c2e31b2ff29ee1fd2786a68189e630d197a347a77db44b3c3d078",
+      "translation_sha256": "e72e80bd44deefa823ca6521af19857988210187605d94da8b17f775c748178a",
       "source_blocks": 8,
       "target_blocks": 8,
       "checks": {
@@ -14260,6 +14260,39 @@
       },
       "residual_english": [],
       "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0439",
+      "path": "content/normal-modal-logic/axioms-systems/provability-properties.tex",
+      "source_sha256": "2054b1d871723e1845690d3dc42bf9e44a994965341fc3e6505e0c91c1b3a246",
+      "translation_sha256": "a93240b53722d4049b72b3aa5b87f74e17fcb59ef087096d96daeaeb4728d838",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "If",
+        "Rule"
+      ],
+      "allowed_residual_english": [
+        "If",
+        "Rule"
+      ],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [],
@@ -19924,6 +19957,54 @@
       "passage": "equivalence",
       "reverse_paraphrase": "The relative derivability holds iff Sigma proves B1 implies (B2 implies ... (Bn implies A) ...).",
       "finding": "Biconditional and nested implication order retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "hypotheses",
+      "reverse_paraphrase": "Sigma is a modal system and Gamma a set of modal formulas.",
+      "finding": "Variable roles and scope retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "monotonicity",
+      "reverse_paraphrase": "If Gamma proves A and Gamma is contained in Delta, Delta proves A.",
+      "finding": "Superset direction retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "reflexivity",
+      "reverse_paraphrase": "Membership of A in Gamma yields derivability from Gamma.",
+      "finding": "Premise and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "Cut",
+      "reverse_paraphrase": "Gamma proves A and Delta plus A proves B, so Gamma union Delta proves B.",
+      "finding": "Both premise sets and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "deduction theorem",
+      "reverse_paraphrase": "Gamma with B proves A iff Gamma proves B implies A.",
+      "finding": "Biconditional and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "tautological rule",
+      "reverse_paraphrase": "Gamma proves all Ai and a nested implication to B is a tautological instance, so Gamma proves B.",
+      "finding": "Source mixed to/lif symbols and order retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "example and abbreviation",
+      "reverse_paraphrase": "The last rule yields B from A-or-B and not-A, and Gamma,A abbreviates Gamma union singleton A.",
+      "finding": "Both statements retained; proof remains open."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "deductive closure",
+      "reverse_paraphrase": "Relative to Sigma, every formula derivable from Gamma is already a member of Gamma.",
+      "finding": "Syntactic direction and system relativity retained."
     }
   ],
   "builds": [

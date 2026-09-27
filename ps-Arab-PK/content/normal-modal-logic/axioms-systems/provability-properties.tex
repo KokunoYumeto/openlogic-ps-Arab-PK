@@ -1,0 +1,52 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-properties
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prp}
+
+\olsection{د \usetoken{S}{derivability} خاصيتونه}
+
+\begin{prop}\ollabel{prop:derivabilityfacts}
+  $\Sigma$ دې يو مودالي نظام او $\Gamma$ دې د مودالي
+  !!{formula}s يو سټ وي۔ لاندې خاصيتونه لري:
+  \begin{enumerate}
+  \item\ollabel{prop:derivabilityfacts-monotonicity} \emph{يکنواختي}: که
+    $\Gamma \Proves[\Sigma] !A$ او $\Gamma \subseteq \Delta$ وي، نو
+    $\Delta \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-reflexivity}
+    \emph{انعکاسيت}: که $!A \in \Gamma$ وي، نو $\Gamma
+    \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-cut} \emph{قطع}: که $\Gamma
+    \Proves[\Sigma] !A$ او $\Delta \cup \{!A\} \Proves[\Sigma] !B$
+    وي، نو $\Gamma \cup \Delta \Proves[\Sigma] !B$;
+  \item\ollabel{prop:derivabilityfacts-deduction} \emph{د استنتاج قضيه}: $\Gamma \cup \{!B\}
+    \Proves[\Sigma] !A$ هله او يوازې هله چې $\Gamma \Proves[\Sigma] !B \lif
+      !A$ وي؛
+  \item \ollabel{prop:derivabilityfacts-ruleT}% \emph{Rule T}: If
+    $\Gamma \Proves[\Sigma] !A_1$ او \dots او $\Gamma
+    \Proves[\Sigma] !A_n$ وي، او $!A_1 \to (!A_2 \lif \cdots (!A_n \lif
+    !B)\cdots)$ د تاوتولوژۍ يوه بېلګه وي، نو $\Gamma
+    \Proves[\Sigma] !B$.
+  \end{enumerate}
+\end{prop}
+
+د دې ثبوت يو اسان تمرين دے۔ د
+\olref{prop:derivabilityfacts} د
+\olref{prop:derivabilityfacts-ruleT} برخه مونږ ته دا راکوي چې، د بېلګې
+په توګه، که $\Gamma \Proves[\Sigma] !A \lor !B$
+او $\Gamma \Proves[\Sigma] \lnot !A$ وي، نو $\Gamma \Proves[\Sigma]
+!B$ وي۔ همدارنګه په راتلونکي کښې به د
+$\Gamma \cup \{ !A\} \Proves[\Sigma] !B$ پر ځای
+$\Gamma, !A \Proves[\Sigma] !B$ ليکو۔
+
+\begin{defn}
+  يو سټ~$\Gamma$ د نظام~$\Sigma$ په نسبت \emph{له اشتقاقي پلوه تړلے} هله
+  او يوازې هله وي چې له $\Gamma \Proves[\Sigma] !A$ څخه
+  $!A \in \Gamma$ لازم شي۔
+\end{defn}
+
+\end{document}

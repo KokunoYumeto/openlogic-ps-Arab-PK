@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B127-NORMAL-MODAL-PROVABILITY-FROM-SET",
-  "status": "OLP-0438 source-reviewed and staged; eight paired blocks, five reverse-paraphrase samples and exact math/term-token parity",
+  "batch_id": "PS-B128-NORMAL-MODAL-PROVABILITY-PROPERTIES",
+  "status": "OLP-0439 source-reviewed and staged; nine paired blocks, eight reverse-paraphrase samples, one provisional term and bounded OLP-0438 lexical repair",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9183,6 +9183,29 @@
       ],
       "scope": "Eight blocks extending modal-system provability to formulas in a premise set, with notation and nested implication preserved.",
       "allowed_residual_english": []
+    },
+    "OLP-0439": {
+      "batch_id": "PS-B128-NORMAL-MODAL-PROVABILITY-PROPERTIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-MOE-P3-SET"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-DERIVABILITY-PROPERTIES",
+        "TERM-MODAL-SET-DERIVABILITY"
+      ],
+      "scope": "Nine blocks covering monotonicity, reflexivity, Cut, deduction theorem, tautological-instance rule, open proof exercise, disjunctive-syllogism example and deductive closure; includes bounded OLP-0438 set-term correction.",
+      "allowed_residual_english": [
+        "If",
+        "Rule"
+      ]
     }
   },
   "semantic_review": [
@@ -14843,6 +14866,54 @@
       "passage": "equivalence",
       "reverse_paraphrase": "The relative derivability holds iff Sigma proves B1 implies (B2 implies ... (Bn implies A) ...).",
       "finding": "Biconditional and nested implication order retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "hypotheses",
+      "reverse_paraphrase": "Sigma is a modal system and Gamma a set of modal formulas.",
+      "finding": "Variable roles and scope retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "monotonicity",
+      "reverse_paraphrase": "If Gamma proves A and Gamma is contained in Delta, Delta proves A.",
+      "finding": "Superset direction retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "reflexivity",
+      "reverse_paraphrase": "Membership of A in Gamma yields derivability from Gamma.",
+      "finding": "Premise and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "Cut",
+      "reverse_paraphrase": "Gamma proves A and Delta plus A proves B, so Gamma union Delta proves B.",
+      "finding": "Both premise sets and conclusion retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "deduction theorem",
+      "reverse_paraphrase": "Gamma with B proves A iff Gamma proves B implies A.",
+      "finding": "Biconditional and implication direction retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "tautological rule",
+      "reverse_paraphrase": "Gamma proves all Ai and a nested implication to B is a tautological instance, so Gamma proves B.",
+      "finding": "Source mixed to/lif symbols and order retained."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "example and abbreviation",
+      "reverse_paraphrase": "The last rule yields B from A-or-B and not-A, and Gamma,A abbreviates Gamma union singleton A.",
+      "finding": "Both statements retained; proof remains open."
+    },
+    {
+      "unit_id": "OLP-0439",
+      "passage": "deductive closure",
+      "reverse_paraphrase": "Relative to Sigma, every formula derivable from Gamma is already a member of Gamma.",
+      "finding": "Syntactic direction and system relativity retained."
     }
   ]
 }
