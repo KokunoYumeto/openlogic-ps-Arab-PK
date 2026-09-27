@@ -1,0 +1,162 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T23:13:29.313434+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "batch_id": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0443",
+      "source_path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "source_bytes": 6135,
+      "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+      "target_sha256": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0",
+      "paired_blocks": 21,
+      "source_correction_ids": [
+        "OLNML-018"
+      ]
+    }
+  ],
+  "notes_path": "work/B130_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "4e45cbe7e5d502e901398ddcf2ef88d9f01835d843797437ffd3f96fe87ca0d5",
+  "consultation_path": "work/B130_CANON_CONSULTATION.md",
+  "consultation_sha256": "edd3dffa30654a95ce55185a632ac29d54cd71043abf3ebb9b32bf43e751b16c",
+  "staging_qa_sha256": "09bd1f009e45c810cef28677ab86e63251b84f40ac0a94288eabf5d9e5faab31",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 145,
+      "printed_page": "140",
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-MOE-P3-SET",
+      "source_id": "PS-AF-MOE-G7-1398",
+      "pdf_page_1based": 10,
+      "printed_page": "3",
+      "page_image_sha256": "fbb17f07b7c220c6f65989fe6eec843f03d592074d04b32912ff00a9b7fd6cc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0443",
+      "kind": "complete-consistent-set-properties",
+      "finding": "Definition, closure, nine tagged property branches and exercise locators preserve mathematical scope."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "kind": "disclosed-source-defects",
+      "finding": "Completeness forces not-A membership when A is absent. The biconditional property and the following negated biconditional force the converse assumption to concern iff. The source disjunction branch proves the forward direction only; the omission is disclosed without inserting a new proof."
+    },
+    {
+      "unit_id": "OLP-0442",
+      "kind": "target-clarification-not-upstream-error",
+      "finding": "The frozen source allows any accessible world, including the evaluation world itself when accessibility has a loop. The target-only other/another modifiers could incorrectly impose distinctness."
+    }
+  ],
+  "formula_policy": "Exactly two registered inline math spans change. No new proof formulas are added. All other math, identifiers, environments, structural macros, optional tags and frozen English remain unchanged.",
+  "unresolved": "The source disjunction proof omits its converse; target disclosure retains that source status. No reader-layout or human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0443; continue OLP-0444.",
+  "revised_units": [
+    {
+      "schema": "ps-b130-target-clarification/1",
+      "status": "PASS",
+      "recorded_utc": "2026-09-27T23:23:57.231991+00:00",
+      "unit_id": "OLP-0442",
+      "kind": "target-only-accessibility-distinctness-modifiers-removed",
+      "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "source_lines_1based": [
+        33,
+        34,
+        36,
+        37
+      ],
+      "target_lines_1based": [
+        35,
+        37
+      ],
+      "old_target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "target_sha256": "bc79d75125c11a4c21c6e65a7b0b362c90abb32a8031396157d9d6a949671650",
+      "literal_replacements": [
+        {
+          "old": "د لاسرسي وړ داسې بله نړۍ",
+          "new": "د لاسرسي وړ داسې نړۍ"
+        },
+        {
+          "old": "له کومو نورو نړۍو سره",
+          "new": "له کومو نړۍو سره"
+        }
+      ],
+      "source_math_unchanged": true,
+      "paired_blocks": 11,
+      "inline_math_spans": 60,
+      "reason": "The frozen source allows any accessible world, including the evaluation world itself when accessibility has a loop. The target-only other/another modifiers could incorrectly impose distinctness.",
+      "upstream_source_error": false,
+      "witness_sha256": "7637d4c01f26112a3dba02324b86de6d411ca4289e664e7d04743be9435dc5c5",
+      "term_id": "TERM-MODAL-CANONICAL-MODEL",
+      "reader_disclosure_required": false,
+      "reader_disclosure_reason": "This corrects the translation back to its frozen source; no source formula or theorem is changed."
+    }
+  ]
+}

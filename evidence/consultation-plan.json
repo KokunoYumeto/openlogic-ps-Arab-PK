@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B129-NORMAL-MODAL-COMPLETENESS-OPENING",
-  "status": "OLP-0440–0442 source-reviewed and staged; 29 paired blocks, 14 semantic samples and one provisional canonical-model term",
+  "batch_id": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "status": "OLP-0443 source-reviewed and staged; 21 paired blocks, twelve semantic samples and OLNML-018 disclosed source treatment",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9277,6 +9277,36 @@
         "TERM-MODAL-CANONICAL-MODEL"
       ],
       "scope": "Eleven blocks explaining soundness classes, completeness/countermodel forms and the all-complete-consistent-set canonical model.",
+      "allowed_residual_english": [],
+      "target_clarification": {
+        "batch": "B130",
+        "record": "B130_TARGET_CLARIFICATION.json",
+        "sha256": "404a4bdf48eb27160a28398819b4985177ac71ac8965aa00b50fa57a0203ae51"
+      }
+    },
+    "OLP-0443": {
+      "batch_id": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-MOE-P3-SET"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-AXIOM",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-SET-DERIVABILITY",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-CANONICAL-MODEL"
+      ],
+      "scope": "Twenty-one paired blocks defining complete Sigma-consistent sets, nine property branches, tagged proofs and exercises; two disclosed formula repairs and one source omission notice.",
       "allowed_residual_english": []
     }
   },
@@ -15044,8 +15074,8 @@
     {
       "unit_id": "OLP-0442",
       "passage": "countermodel example",
-      "reverse_paraphrase": "Refuting p-implies-Box-q needs p true and Box-q false at one world, plus an accessible q-false world.",
-      "finding": "World roles and truth assignments retained."
+      "reverse_paraphrase": "Refuting p-implies-Box-q needs p true and Box-q false at one world, plus an accessible q-false world that may be the same world when there is a self-loop.",
+      "finding": "B130 removes target-only distinct-world modifiers; exact source formulas and accessibility scope retained."
     },
     {
       "unit_id": "OLP-0442",
@@ -15070,6 +15100,78 @@
       "passage": "truth and membership",
       "reverse_paraphrase": "A is true at a world iff it belongs to its complete set; every consistent A belongs to some world in one canonical model.",
       "finding": "Biconditional and single-model construction retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "maximality",
+      "reverse_paraphrase": "The world-set decides every modal formula while remaining Sigma-consistent; maximality is explained by that decision property.",
+      "finding": "No cardinal-size or merely semantic consistency substituted."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "definition",
+      "reverse_paraphrase": "A complete Sigma-consistent set is consistent and contains A or not-A for every formula A.",
+      "finding": "Both conjunctive requirements and universal scope retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "closure",
+      "reverse_paraphrase": "Derivable A must belong; otherwise completeness puts not-A in Gamma and contradiction follows.",
+      "finding": "Syntactic derivability and membership distinguished."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "axioms",
+      "reverse_paraphrase": "Sigma is included in Gamma by derivability and deductive closure; every axiom instance also belongs.",
+      "finding": "Inclusion and instance claim retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "falsehood",
+      "reverse_paraphrase": "Falsehood cannot belong without making the set inconsistent.",
+      "finding": "Optional falsehood tag retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "truth",
+      "reverse_paraphrase": "Truth belongs by derivability and deductive closure.",
+      "finding": "Optional truth tag retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "negation",
+      "reverse_paraphrase": "Not-A belongs iff A is absent; the source dropped not in the second proof direction.",
+      "finding": "Two directions retained with disclosed negation restoration."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "conjunction",
+      "reverse_paraphrase": "The conjunction belongs iff both conjuncts belong, using the supplied tautological instances.",
+      "finding": "Both proof directions and optional exercise alternative retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "disjunction",
+      "reverse_paraphrase": "Disjunction membership forces one disjunct to belong by consistency; the source leaves the converse argument unwritten.",
+      "finding": "Omitted direction disclosed without silently adding proof."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "conditional",
+      "reverse_paraphrase": "Conditional membership gives B when A belongs; a missing conditional forces A and not-B membership.",
+      "finding": "Contrapositive converse and optional exercise retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Biconditional membership gives matching memberships; its absence forces mismatching memberships.",
+      "finding": "Opening converse iff restored and disclosed; both negated alternatives scoped."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "exercise",
+      "reverse_paraphrase": "The four optional connective proof alternatives remain exercises, and the final problem asks to complete the property proof.",
+      "finding": "Exact exercise tags and locator retained."
     }
   ]
 }

@@ -1,0 +1,67 @@
+{
+  "schema": "ps-b130-source-semantic-review/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T23:33:15.696675+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_ids": [
+    "OLP-0443"
+  ],
+  "source_sha256": {
+    "OLP-0443": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1"
+  },
+  "target_sha256": {
+    "OLP-0443": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0"
+  },
+  "audit_sha256": "ea13aad64db9e87935584380a07732ef0a804fe9a9f398d780b098c266d53e8d",
+  "notes_sha256": "4e45cbe7e5d502e901398ddcf2ef88d9f01835d843797437ffd3f96fe87ca0d5",
+  "consultation_sha256": "edd3dffa30654a95ce55185a632ac29d54cd71043abf3ebb9b32bf43e751b16c",
+  "staging_qa_sha256": "09bd1f009e45c810cef28677ab86e63251b84f40ac0a94288eabf5d9e5faab31",
+  "documented_source_corrections": [
+    "OLNML-018"
+  ],
+  "revised_target_clarifications": [
+    {
+      "schema": "ps-b130-target-clarification/1",
+      "status": "PASS",
+      "recorded_utc": "2026-09-27T23:23:57.231991+00:00",
+      "unit_id": "OLP-0442",
+      "kind": "target-only-accessibility-distinctness-modifiers-removed",
+      "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "source_lines_1based": [
+        33,
+        34,
+        36,
+        37
+      ],
+      "target_lines_1based": [
+        35,
+        37
+      ],
+      "old_target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "target_sha256": "bc79d75125c11a4c21c6e65a7b0b362c90abb32a8031396157d9d6a949671650",
+      "literal_replacements": [
+        {
+          "old": "د لاسرسي وړ داسې بله نړۍ",
+          "new": "د لاسرسي وړ داسې نړۍ"
+        },
+        {
+          "old": "له کومو نورو نړۍو سره",
+          "new": "له کومو نړۍو سره"
+        }
+      ],
+      "source_math_unchanged": true,
+      "paired_blocks": 11,
+      "inline_math_spans": 60,
+      "reason": "The frozen source allows any accessible world, including the evaluation world itself when accessibility has a loop. The target-only other/another modifiers could incorrectly impose distinctness.",
+      "upstream_source_error": false,
+      "witness_sha256": "7637d4c01f26112a3dba02324b86de6d411ca4289e664e7d04743be9435dc5c5",
+      "term_id": "TERM-MODAL-CANONICAL-MODEL",
+      "reader_disclosure_required": false,
+      "reader_disclosure_reason": "This corrects the translation back to its frozen source; no source formula or theorem is changed."
+    }
+  ],
+  "unresolved": "The source disjunction proof omits its converse; target disclosure retains that source status. No reader-layout or human specialist approval claimed.",
+  "next_action": "Translate OLP-0444."
+}

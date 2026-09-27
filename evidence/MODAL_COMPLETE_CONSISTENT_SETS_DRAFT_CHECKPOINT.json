@@ -1,0 +1,74 @@
+{
+  "schema": "ps-b130-modal-complete-consistent-sets-draft/1",
+  "utc": "2026-09-27T23:33:15.696675+00:00",
+  "status": "accepted editable draft; cumulative source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "units": [
+    {
+      "unit_id": "OLP-0443",
+      "path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+      "target_sha256": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "source_correction_ids": [
+        "OLNML-018"
+      ],
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "draft_units": 443,
+  "aligned_blocks": 6727,
+  "segment_canon_uses": 4226,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "source_audit_sha256": "ea13aad64db9e87935584380a07732ef0a804fe9a9f398d780b098c266d53e8d",
+  "corpus_qa_sha256": "074d2ee5afe0a50047fee8ae01b7bd512cc9404171aa8f00e4b7a75391d083a9",
+  "canonical_replay_sha256": "08572a2bfa04bda9920294895c76fe453cf7f2068f0c2acce9db11493e04a725",
+  "qa_sha256": "598b3dc7bbbe818c85da54d8f8d6d43ca23afc0a2aa8ccc84ecae3646ecc7338",
+  "v071_publication_verification_sha256": "f0d27cb02ce09b451de80fdcc36b16f47cf0994272420a8d1cbdce15565d0d5e",
+  "revised_units": [
+    {
+      "schema": "ps-b130-target-clarification/1",
+      "status": "PASS",
+      "recorded_utc": "2026-09-27T23:23:57.231991+00:00",
+      "unit_id": "OLP-0442",
+      "kind": "target-only-accessibility-distinctness-modifiers-removed",
+      "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+      "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+      "source_lines_1based": [
+        33,
+        34,
+        36,
+        37
+      ],
+      "target_lines_1based": [
+        35,
+        37
+      ],
+      "old_target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "target_sha256": "bc79d75125c11a4c21c6e65a7b0b362c90abb32a8031396157d9d6a949671650",
+      "literal_replacements": [
+        {
+          "old": "د لاسرسي وړ داسې بله نړۍ",
+          "new": "د لاسرسي وړ داسې نړۍ"
+        },
+        {
+          "old": "له کومو نورو نړۍو سره",
+          "new": "له کومو نړۍو سره"
+        }
+      ],
+      "source_math_unchanged": true,
+      "paired_blocks": 11,
+      "inline_math_spans": 60,
+      "reason": "The frozen source allows any accessible world, including the evaluation world itself when accessibility has a loop. The target-only other/another modifiers could incorrectly impose distinctness.",
+      "upstream_source_error": false,
+      "witness_sha256": "7637d4c01f26112a3dba02324b86de6d411ca4289e664e7d04743be9435dc5c5",
+      "term_id": "TERM-MODAL-CANONICAL-MODEL",
+      "reader_disclosure_required": false,
+      "reader_disclosure_reason": "This corrects the translation back to its frozen source; no source formula or theorem is changed."
+    }
+  ],
+  "json_serialization_check_sha256": "5b5ead233417c1de06b47c37b8c44a44a52a8543c015cf6becea707a7ed32a2f",
+  "next_action": "Translate and review OLP-0444; maintain full-edition QA."
+}

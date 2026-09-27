@@ -3098,3 +3098,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Use Ax{D} after the KT derivability sign and Ax{4}, Ax{5} after the KTB non-derivability signs, with adjacent Pashto disclosures.
 - Reason: The cited earlier proof derives axiom D from KT; the following proof and exercises identify 4 and 5 as axiom formulas. The frozen source instead uses the modal-system macro Log on the right of the derivability relation in three places.
 - Exactly three inline formula spans change as registered; the repairs are disclosed adjacent to the proof and theorem. The three TikZ diagrams and frozen English remain unchanged.
+
+## OLNML-018
+
+- Unit: OLP-0443.
+- Frozen source: content/normal-modal-logic/completeness/complete-consistent-sets.tex:84,122 (SHA-256 b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1).
+- Pashto target: ps-Arab-PK/content/normal-modal-logic/completeness/complete-consistent-sets.tex:83,123 (SHA-256 c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0).
+- Treatment: Restore not-A membership in the negation converse; replace implies by iff in the biconditional converse assumption. Add adjacent Pashto notices for both repairs and for the source disjunction proof omitting its converse; preserve the supplied proof and all exercises.
+- Reason: Completeness forces not-A membership when A is absent. The biconditional property and the following negated biconditional force the converse assumption to concern iff. The source disjunction branch proves the forward direction only; the omission is disclosed without inserting a new proof.
+- Exactly two inline math spans change. All optional tags and exercises remain; frozen English is unchanged.

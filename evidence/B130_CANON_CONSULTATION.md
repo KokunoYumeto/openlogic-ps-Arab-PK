@@ -1,0 +1,9 @@
+# B130 — complete consistent sets: canon before translation
+
+The existing decisions TERM-SET, TERM-PROOF-PROPERTIES, TERM-PROOF-SYSTEMS, TERM-AXIOM, TERM-MODAL-LOGIC, TERM-MODAL-SET-DERIVABILITY, TERM-COMPLETENESS-CONSTRUCTION and TERM-MODAL-CANONICAL-MODEL were read before OLP-0443 translation. Their system-relative syntactic consistency and closure senses govern the target. No new lexical authority or exact Pakistani technical attestation is claimed.
+
+Previously visually inspected Pakistani Academy passages PK-IQRAM-P1-PROSE and PK-IQRAM-P2-SEMANTICS guide the explanatory register; GRAMMAR-P166-SOV guides verb-final conditional phrasing. The registered Afghan passages AF-NIAZMAN-P140-CONSISTENCY, AF-NIAZMAN-P25-TAUTOLOGY, AF-NIAZMAN-P37-AXIOMATIC-PROOF, AF-NIAZMAN-P48-MODUS-PONENS and AF-MOE-P3-SET are regional comparators only. The consistency and set pages, and Pakistani printed page 2, were inspected again for B129 immediately before this continuation. B130 reuses those inspections without claiming another fresh page review.
+
+The frozen OpenLogic source controls all mathematical scopes. Completeness decides every formula; consistency excludes opposite memberships; deductive closure transfers derivability to membership. The explanatory maximality wording is qualified by the source's every-formula decision condition, not cardinal size. The two source formula repairs and the omitted disjunction-converse disclosure are distinct from linguistic authority and recorded as OLNML-018.
+
+The B130 refinement of TERM-MODAL-CANONICAL-MODEL removes two target-only distinct-world modifiers in OLP-0442. The existing Pakistani prose/grammar register remains primary. Frozen source lines 33–37 and the exact one-world self-loop witness supply the mathematical scope; no new Pashto attestation is claimed.

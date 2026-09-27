@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b130-complete-consistent-sets-staging-qa/1",
+  "unit_id": "OLP-0443",
+  "source_path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+  "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+  "target_sha256": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0",
+  "source_blocks": 21,
+  "target_blocks": 21,
+  "source_only_math": [
+    "$!A\\in\\Gamma$",
+    "$!A\\lif!B\\notin\\Gamma$"
+  ],
+  "target_only_math": [
+    "$\\lnot!A\\in\\Gamma$",
+    "$!A\\liff!B\\notin\\Gamma$"
+  ],
+  "source_only_macros": [
+    "\\lif"
+  ],
+  "target_only_macros": [
+    "\\lnot",
+    "\\liff"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "term_tokens": true,
+    "tags": true,
+    "two_scoped_math_repairs": true,
+    "scoped_macro_repairs": true,
+    "source_comments": true,
+    "pashto_disclosures": true,
+    "exercise_alternatives": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

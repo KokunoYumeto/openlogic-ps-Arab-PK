@@ -754,10 +754,12 @@ def main() -> None:
 
     decisions_path = output_dir / "DECISIONS.json"
     decisions_path.write_text(
-        json.dumps(document, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(document, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
         newline="\r\n",
     )
+    if json.loads(decisions_path.read_text(encoding="utf-8")) != document:
+        raise ValueError("canonical JSON serialization changed the document")
 
     csv_fields = [
         "decision_id",

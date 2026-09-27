@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 442,
-    "structural_pass": 442,
+    "draft_units": 443,
+    "structural_pass": 443,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B129-NORMAL-MODAL-COMPLETENESS-OPENING",
+  "batch": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14356,7 +14356,7 @@
       "unit_id": "OLP-0442",
       "path": "content/normal-modal-logic/completeness/introduction.tex",
       "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
-      "translation_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+      "translation_sha256": "bc79d75125c11a4c21c6e65a7b0b362c90abb32a8031396157d9d6a949671650",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -14378,6 +14378,46 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0443",
+      "path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+      "translation_sha256": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-018"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$!A\\in\\Gamma$",
+          "$!A\\lif!B\\notin\\Gamma$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\in\\Gamma$",
+          "$!A\\liff!B\\notin\\Gamma$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -20144,8 +20184,8 @@
     {
       "unit_id": "OLP-0442",
       "passage": "countermodel example",
-      "reverse_paraphrase": "Refuting p-implies-Box-q needs p true and Box-q false at one world, plus an accessible q-false world.",
-      "finding": "World roles and truth assignments retained."
+      "reverse_paraphrase": "Refuting p-implies-Box-q needs p true and Box-q false at one world, plus an accessible q-false world that may be the same world when there is a self-loop.",
+      "finding": "B130 removes target-only distinct-world modifiers; exact source formulas and accessibility scope retained."
     },
     {
       "unit_id": "OLP-0442",
@@ -20170,6 +20210,78 @@
       "passage": "truth and membership",
       "reverse_paraphrase": "A is true at a world iff it belongs to its complete set; every consistent A belongs to some world in one canonical model.",
       "finding": "Biconditional and single-model construction retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "maximality",
+      "reverse_paraphrase": "The world-set decides every modal formula while remaining Sigma-consistent; maximality is explained by that decision property.",
+      "finding": "No cardinal-size or merely semantic consistency substituted."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "definition",
+      "reverse_paraphrase": "A complete Sigma-consistent set is consistent and contains A or not-A for every formula A.",
+      "finding": "Both conjunctive requirements and universal scope retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "closure",
+      "reverse_paraphrase": "Derivable A must belong; otherwise completeness puts not-A in Gamma and contradiction follows.",
+      "finding": "Syntactic derivability and membership distinguished."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "axioms",
+      "reverse_paraphrase": "Sigma is included in Gamma by derivability and deductive closure; every axiom instance also belongs.",
+      "finding": "Inclusion and instance claim retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "falsehood",
+      "reverse_paraphrase": "Falsehood cannot belong without making the set inconsistent.",
+      "finding": "Optional falsehood tag retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "truth",
+      "reverse_paraphrase": "Truth belongs by derivability and deductive closure.",
+      "finding": "Optional truth tag retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "negation",
+      "reverse_paraphrase": "Not-A belongs iff A is absent; the source dropped not in the second proof direction.",
+      "finding": "Two directions retained with disclosed negation restoration."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "conjunction",
+      "reverse_paraphrase": "The conjunction belongs iff both conjuncts belong, using the supplied tautological instances.",
+      "finding": "Both proof directions and optional exercise alternative retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "disjunction",
+      "reverse_paraphrase": "Disjunction membership forces one disjunct to belong by consistency; the source leaves the converse argument unwritten.",
+      "finding": "Omitted direction disclosed without silently adding proof."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "conditional",
+      "reverse_paraphrase": "Conditional membership gives B when A belongs; a missing conditional forces A and not-B membership.",
+      "finding": "Contrapositive converse and optional exercise retained."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Biconditional membership gives matching memberships; its absence forces mismatching memberships.",
+      "finding": "Opening converse iff restored and disclosed; both negated alternatives scoped."
+    },
+    {
+      "unit_id": "OLP-0443",
+      "passage": "exercise",
+      "reverse_paraphrase": "The four optional connective proof alternatives remain exercises, and the final problem asks to complete the property proof.",
+      "finding": "Exact exercise tags and locator retained."
     }
   ],
   "builds": [

@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b130-target-clarification/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-27T23:23:57.231991+00:00",
+  "unit_id": "OLP-0442",
+  "kind": "target-only-accessibility-distinctness-modifiers-removed",
+  "source_path": "content/normal-modal-logic/completeness/introduction.tex",
+  "source_sha256": "c9ecf5ad894817a8446043393bd6b5d5e20e9755134d32fe362b503306a51fe7",
+  "source_lines_1based": [
+    33,
+    34,
+    36,
+    37
+  ],
+  "target_lines_1based": [
+    35,
+    37
+  ],
+  "old_target_sha256": "ea18d1d906c8371d59c0dc89cffc0e1bf603785eec87cb03cc0d1a8a7a24b19e",
+  "target_sha256": "bc79d75125c11a4c21c6e65a7b0b362c90abb32a8031396157d9d6a949671650",
+  "literal_replacements": [
+    {
+      "old": "د لاسرسي وړ داسې بله نړۍ",
+      "new": "د لاسرسي وړ داسې نړۍ"
+    },
+    {
+      "old": "له کومو نورو نړۍو سره",
+      "new": "له کومو نړۍو سره"
+    }
+  ],
+  "source_math_unchanged": true,
+  "paired_blocks": 11,
+  "inline_math_spans": 60,
+  "reason": "The frozen source allows any accessible world, including the evaluation world itself when accessibility has a loop. The target-only other/another modifiers could incorrectly impose distinctness.",
+  "upstream_source_error": false,
+  "witness_sha256": "7637d4c01f26112a3dba02324b86de6d411ca4289e664e7d04743be9435dc5c5",
+  "term_id": "TERM-MODAL-CANONICAL-MODEL",
+  "reader_disclosure_required": false,
+  "reader_disclosure_reason": "This corrects the translation back to its frozen source; no source formula or theorem is changed."
+}

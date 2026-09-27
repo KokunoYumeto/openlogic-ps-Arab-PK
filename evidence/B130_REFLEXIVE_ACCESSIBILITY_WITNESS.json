@@ -1,0 +1,28 @@
+{
+  "schema": "ps-b130-self-accessibility-witness/1",
+  "status": "PASS",
+  "worlds": [
+    "w"
+  ],
+  "accessibility_relation": [
+    [
+      "w",
+      "w"
+    ]
+  ],
+  "valuation": {
+    "p": [
+      "w"
+    ],
+    "q": []
+  },
+  "evaluation_world": "w",
+  "p_true": true,
+  "q_true": false,
+  "box_q_true": false,
+  "p_implies_box_q_true": false,
+  "accessible_q_false_witness": "w",
+  "distinct_world_required": false,
+  "reproduction_script": "work/repair_b130_accessibility.py",
+  "script_sha256": "18796bcc979127847e07c158ef989f1bd2cf4769d9ac62f6599bec2674aeecc3"
+}

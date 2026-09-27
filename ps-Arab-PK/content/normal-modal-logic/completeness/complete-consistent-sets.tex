@@ -1,0 +1,140 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: complete-consistent-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{ccs}
+
+\olsection{بشپړ $\Sigma$-سازګار سټونه}
+
+فرض کړئ چې $\Sigma$ د مودالي !!{formula}s يو سټ دے؛ دا د يوه
+نورمال مودالي منطق د بديهي اصلونو يا ټاکونکو اصولو سټ وګڼئ۔ يو
+سټ~$\Gamma$ هله او يوازې هله $\Sigma$-سازګار وي چې $\Gamma
+\Proves/[\Sigma] \lfalse$، يعنې له $\Sigma$ څخه د~$!A_1 \lif
+(!A_2 \lif \cdots (!A_n \lif \lfalse)\dots)$ هېڅ !!{derivation}
+نۀ وي، چې هر $!A_i \in \Gamma$ وي۔ داسې يو «کانوني» مدل به جوړ
+کړو چې هره نړۍ ئې د $\Sigma$-سازګار سټ يو ځانګړے ډول وي: داسې
+سټ چې يوازې $\Sigma$-سازګار نۀ وي، بلکې د سازګارۍ له پلوه اعظمي وي،
+په دې معنا چې د هر مودالي !!{formula} د صدق ارزښت ټاکي: د هر
+$!A$ دپاره يا $!A \in \Gamma$ وي يا $\lnot !A \in \Gamma$:
+
+\begin{defn}
+  يو سټ~$\Gamma$ هله او يوازې هله \emph{بشپړ $\Sigma$-سازګار}
+  وي چې $\Sigma$-سازګار وي او د هر~$!A$ دپاره يا $!A \in \Gamma$
+  وي يا $\lnot !A \in \Gamma$.
+\end{defn}
+
+بشپړ $\Sigma$-سازګار سټونه~$\Gamma$ څو ګټور خاصيتونه لري۔ يو
+دا چې له اشتقاقي پلوه تړلي وي، يعنې که $\Gamma \Proves[\Sigma]
+!A$ وي، نو $!A \in \Gamma$ وي۔ له دې په ځانګړي ډول دا لازمېږي
+چې د !!a{formula}~$!A \in \Sigma$ هره بېلګه هم $\in \Gamma$ وي۔
+سربېره پر دې، په $\Gamma$ کښې غړيتوب د بياني رابطو د صدق شرطونه
+منعکسوي۔ دا به د «کانوني مدل» د تعريف په وخت مهم وي۔
+
+\begin{prop}\ollabel{prop:ccs-properties}
+  فرض کړئ چې $\Gamma$ بشپړ $\Sigma$-سازګار دے۔ بيا:
+  \begin{enumerate}
+  \item \ollabel{prop:ccs-closed}%
+    $\Gamma$ په~$\Sigma$ کښې له اشتقاقي پلوه تړلے دے۔
+  \item \ollabel{prop:ccs-sigma}%
+    $\Sigma \subseteq \Gamma$.
+  \tagitem{prvFalse}{\ollabel{prop:ccs-lfalse}%
+    $\lfalse \notin \Gamma$}{}
+  \tagitem{prvTrue}{\ollabel{prop:ccs-ltrue}%
+    $\ltrue \in \Gamma$}{}
+  \item \ollabel{prop:ccs-lnot}%
+    $\lnot!A \in \Gamma$ هله او يوازې هله وي چې $!A \notin
+    \Gamma$.
+  \tagitem{prvAnd}{\ollabel{prop:ccs-land}%
+    $!A \land !B \in \Gamma$ هله او يوازې هله وي چې $!A \in \Gamma$ او $!B \in \Gamma$ وي}{}
+  \tagitem{prvOr}{\ollabel{prop:ccs-lor}%
+    $!A \lor !B \in \Gamma$ هله او يوازې هله وي چې $!A \in \Gamma$ يا $!B \in \Gamma$ وي}{}
+  \tagitem{prvIf}{\ollabel{prop:ccs-lif}%
+    $!A \lif !B \in \Gamma$ هله او يوازې هله وي چې $!A \notin \Gamma$ يا $!B \in \Gamma$ وي}{}
+  \tagitem{prvIff}{\ollabel{prop:ccs-liff}%
+    $!A \liff !B \in \Gamma$ هله او يوازې هله وي چې يا $!A \in \Gamma$ او $!B \in
+    \Gamma$ دواړه وي، يا $!A \notin \Gamma$ او $!B \notin \Gamma$ دواړه وي}{}
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item فرض کړئ چې $\Gamma \Proves[\Sigma] !A$، خو $!A \notin
+    \Gamma$ دے۔ بيا چې $\Gamma$ بشپړ $\Sigma$-سازګار دے، نو
+    $\lnot!A \in \Gamma$ دے۔ دا به $\Gamma$ ناسازګار کړي، ځکه چې
+    $!A, \lnot !A \Proves[\Sigma] \lfalse$.
+    
+  \item که $!A \in \Sigma$ وي، نو $\Gamma \Proves[\Sigma] !A$ وي،
+    او د اشتقاقي تړلتيا، يعنې د~\olref{prop:ccs-closed} حالت،
+    له مخې $!A \in \Gamma$ وي۔
+    
+  \tagitem{prvFalse}{که $\lfalse \in \Gamma$ وي، نو $\Gamma
+    \Proves[\Sigma] \lfalse$ وي؛ نو $\Gamma$ به
+    $\Sigma$-ناسازګار وي۔}{}
+  
+  \tagitem{prvTrue}{$\Gamma \Proves[\Sigma] \ltrue$؛ نو د اشتقاقي
+    تړلتيا، يعنې د~\olref{prop:ccs-closed} حالت، له مخې $\ltrue \in
+    \Gamma$ دے۔}{}
+
+\item که $\lnot!A \in \Gamma$ وي، نو د سازګارۍ له مخې $!A \notin
+    \Gamma$ وي؛ او که $!A \notin \Gamma$ وي، نو $\lnot !A \in \Gamma$
+    وي، ځکه چې $\Gamma$ بشپړ $\Sigma$-سازګار دے۔ په منجمده سرچينه
+    کښې د دې وروستۍ پايلې نفي لوېدلې ده؛ دلته بېرته راوستل شوې ده۔
+    
+  \tagitem{prvAnd}{\iftag{probAnd}{تمرين۔}{فرض کړئ چې $!A \land !B \in
+      \Gamma$ دے۔ څرنګه چې $(!A \land !B) \lif !A$ د تاوتولوژۍ
+      يوه بېلګه ده، نو د اشتقاقي تړلتيا، يعنې د~\olref{prop:ccs-closed}
+      حالت، له مخې $!A \in \Gamma$ دے۔ همداسې $!B \in \Gamma$
+      هم دے۔ له بلې خوا، فرض کړئ چې $!A \in \Gamma$ او $!B \in
+      \Gamma$ دواړه دي۔ بيا له اشتقاقي تړلتيا څخه $(!A \land !B) \in
+      \Gamma$ لازمېږي، ځکه چې $!A \lif (!B \lif (!A \land !B))$
+      د تاوتولوژۍ يوه بېلګه ده۔}}{}
+
+  \tagitem{prvOr}{\iftag{probOr}{تمرين۔}{فرض کړئ چې $!A \lor !B \in
+      \Gamma$، او $!A \notin \Gamma$ او $!B \notin \Gamma$ دي۔ چې
+      $\Gamma$ بشپړ $\Sigma$-سازګار دے، نو $\lnot!A \in \Gamma$
+      او $\lnot !B \in \Gamma$ دي۔ بيا $\lnot(!A \lor !B) \in \Gamma$
+      دے، ځکه چې $\lnot !A \lif (\lnot !B \lif \lnot (!A \lor !B))$
+      د تاوتولوژۍ يوه بېلګه ده۔ دا به په دې معنا وي چې $\Gamma$
+      $\Sigma$-ناسازګار دے، چې تناقض دے۔ د سرچينې په دې ثبوت کښې
+      د سرچپه لوري استدلال په څرګند ډول نۀ دے ليکلے۔}}{}
+  
+  \tagitem{prvIf}{\iftag{probIf}{تمرين۔}{فرض کړئ چې $!A \lif !B \in
+      \Gamma$ او $!A \in \Gamma$ دي؛ بيا $\Gamma \Proves[\Sigma] !B$
+      دے، نو د اشتقاقي تړلتيا له مخې $!B \in \Gamma$ دے۔ په سرچپه
+      لوري، که $!A \lif !B \notin \Gamma$ وي، نو چې $\Gamma$ بشپړ
+      $\Sigma$-سازګار دے، $\lnot (!A \lif !B) \in \Gamma$ دے۔ چې
+      $\lnot(!A \lif !B) \lif !A$ د تاوتولوژۍ يوه بېلګه ده، نو د
+      اشتقاقي تړلتيا له مخې $!A \in \Gamma$ دے۔ چې $\lnot(!A \lif !B) \lif
+      \lnot !B$ د تاوتولوژۍ يوه بېلګه ده، نو $\lnot !B \in
+      \Gamma$ دے۔ بيا $!B \notin \Gamma$ دے، ځکه چې $\Gamma$
+      $\Sigma$-سازګار دے۔}}{}
+  
+  \tagitem{prvIff}{\iftag{probIff}{تمرين۔}{فرض کړئ چې $!A \liff !B \in
+      \Gamma$ دے۔ که $!A \in \Gamma$ وي، نو $!B \in \Gamma$ وي،
+      ځکه چې $(!A \liff !B) \lif (!A \lif !B)$ د تاوتولوژۍ يوه
+      بېلګه ده۔ همدارنګه، که $!B \in \Gamma$ وي، نو $!A \in \Gamma$
+      وي۔ نو يا $!A \in \Gamma$ او $!B \in \Gamma$ دواړه وي، يا
+      نۀ $!A \in \Gamma$ وي او نۀ $!B \in \Gamma$ وي۔
+      
+      په سرچپه لوري، فرض کړئ چې $!A \liff !B \notin \Gamma$ دے۔ چې
+      $\Gamma$ بشپړ $\Sigma$-سازګار دے، نو $\lnot (!A \liff !B) \in
+      \Gamma$ دے۔ چې $\lnot(!A \liff !B) \lif (!A \lif \lnot !B)$ د
+      تاوتولوژۍ يوه بېلګه ده، نو که $!A \in \Gamma$ وي، $\lnot !B \in
+      \Gamma$ وي؛ او چې $\Gamma$ $\Sigma$-سازګار دے، نو $!B \notin
+      \Gamma$ وي۔ همدارنګه، که $!B \in \Gamma$ وي، نو $!A \notin \Gamma$
+      وي۔ نو نۀ $!A \in \Gamma$ او $!B \in \Gamma$ دواړه وي، او
+      نۀ $!A \notin \Gamma$ او $!B \notin \Gamma$ دواړه وي۔ په منجمده
+      سرچينه کښې د دې سرچپه لوري په لومړۍ فرضيه کښې د يوه اړخيز
+      شرط نښه ده؛ دلته د دوه اړخيز شرط نښه راوستل شوې ده۔}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probAnd,probOr,probIf,probIff}
+  د \olref[nml][com][ccs]{prop:ccs-properties} ثبوت بشپړ کړئ۔
+\end{probtag}
+
+\end{document}

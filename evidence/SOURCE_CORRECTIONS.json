@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0437; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-27T21:58:41.209801+00:00",
+  "status": "adopted through OLP-0443; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-27T23:13:29.313434+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -10688,6 +10688,80 @@
       ],
       "decision_timing": "contemporaneous B126 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-018",
+      "unit_id": "OLP-0443",
+      "classification": "dropped_negation_and_wrong_conditional_in_complete_consistent_set_proof",
+      "source_path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+      "source_locator": "content/normal-modal-logic/completeness/complete-consistent-sets.tex:84,122",
+      "source_literal_line_1based": [
+        84,
+        122
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "target_line_1based": 83,
+      "additional_target_lines_1based": [
+        123
+      ],
+      "disclosure_line_1based": 85,
+      "additional_disclosure_lines_1based": [
+        103,
+        131
+      ],
+      "target_sha256": "c2b037bdfc1c45a20936f09173a93283e8710db45c3387f49744ed9b94b44ae0",
+      "mode": "two-adjacent-Pashto-disclosed-formula-repairs-and-source-omission-notice",
+      "translation_change": "Restore not-A membership in the negation converse; replace implies by iff in the biconditional converse assumption. Add adjacent Pashto notices for both repairs and for the source disjunction proof omitting its converse; preserve the supplied proof and all exercises.",
+      "reason": "Completeness forces not-A membership when A is absent. The biconditional property and the following negated biconditional force the converse assumption to concern iff. The source disjunction branch proves the forward direction only; the omission is disclosed without inserting a new proof.",
+      "formula_policy": "Exactly two registered inline math spans change. No new proof formulas are added. All other math, identifiers, environments, structural macros, optional tags and frozen English remain unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\in\\Gamma$",
+          "$!A\\lif!B\\notin\\Gamma$"
+        ],
+        "target_only": [
+          "$\\lnot!A\\in\\Gamma$",
+          "$!A\\liff!B\\notin\\Gamma$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "formal_macro_changes": {
+        "source_only": [
+          "\\lif"
+        ],
+        "target_only": [
+          "\\lnot",
+          "\\liff"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+      "audit_artifacts": [
+        "B130_SOURCE_AUDIT.json",
+        "B130_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/completeness/complete-consistent-sets.tex:84,122",
+        "ps-Arab-PK/content/normal-modal-logic/completeness/complete-consistent-sets.tex:83,123",
+        "B130_STAGING_QA_OLP-0443.json"
+      ],
+      "decision_timing": "contemporaneous B130 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -10769,7 +10843,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-LOGICS",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-DERIVED-RULES",
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-MORE-K-PROOFS",
-    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYSTEMS-DISTINCT"
+    "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYSTEMS-DISTINCT",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS"
   ],
   "source_authorities": [
     {
