@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B085-MVL-SEMANTIC-NOTIONS",
-  "status": "OLP-0390 source-reviewed and staged; thirteen paired blocks, exact math parity, one provisional terminology decision and five reverse-paraphrase samples",
+  "batch_id": "PS-B086-MVL-CLASSICAL-SUBLOGIC",
+  "status": "OLP-0391 source-reviewed and staged; ten paired blocks, exact math parity, one disclosed frozen-source scope correction, one provisional terminology decision, and five reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8195,6 +8195,26 @@
       ],
       "scope": "Source-reviewed many-valued semantic notions; exact thirteen paired blocks, valuations, quantifiers, formulas, labels and term tokens. General semantic facts and conditional-dependent classical laws remain distinct; Pakistani scholarly usage is primary and Afghan logic pages are regional comparators.",
       "allowed_residual_english": []
+    },
+    "OLP-0391": {
+      "batch_id": "PS-B086-MVL-CLASSICAL-SUBLOGIC",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P8-TRUTH-TABLE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MVL-CLASSICAL-SUBLOGIC",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MANY-VALUED-SEMANTICS",
+        "TERM-MVL-MATRIX"
+      ],
+      "scope": "Ten paired blocks of Boolean truth-function agreement, structural induction and contraposition. OLMVL-001 qualifies the common formula fragment, all used connectives and constants, and Boolean variable assignments with adjacent disclosure. Pakistani scholarly semantics prose is primary; Afghan Boolean/semantic pages are regional comparators.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -11833,6 +11853,36 @@
       "passage": "classical conditional boundary",
       "reverse_paraphrase": "Classical semantic modus ponens and the semantic deduction theorem involve the conditional; they can fail in a many-valued logic according to its conditional truth function.",
       "finding": "Target explicitly keeps the classical scope and many-valued failure qualification."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "Boolean truth-function agreement",
+      "reverse_paraphrase": "The four displayed connectives have classical values when all their inputs are True or False.",
+      "finding": "Target preserves the exact restriction, four functions, and both displayed equations."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "proposition and scope correction",
+      "reverse_paraphrase": "Boolean valuations yield the same formula value only on a common formula fragment whose every used connective and constant agrees on Boolean inputs.",
+      "finding": "OLMVL-001 records a concrete nullary-constant counterexample to the unrestricted source wording; target gives the necessary scope adjacent to the theorem."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "induction proof",
+      "reverse_paraphrase": "Atomic, negation and conjunction cases use recursive value definitions, induction and connective agreement; disjunction and conditional are analogous.",
+      "finding": "All formulas, proof references and case order remain exact."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "consequence inclusion",
+      "reverse_paraphrase": "If True is designated and False is not, many-valued consequence implies classical consequence on the corrected common fragment.",
+      "finding": "Target preserves the inclusion direction and scopes every premise and conclusion."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "contrapositive proof",
+      "reverse_paraphrase": "A classical countervaluation is Boolean and thus also a many-valued valuation; it designates all premises and not the conclusion.",
+      "finding": "Target preserves each valuation condition and the transferred non-entailment."
     }
   ]
 }

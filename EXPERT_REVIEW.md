@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 390 of 722 source units are translated drafts. This log contains 198 terminology entries and 325 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 391 of 722 source units are translated drafts. This log contains 199 terminology entries and 326 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -1778,6 +1778,23 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Uncertainty: the exact Pakistani many-valued conditional-boundary label is provisional.
 - Review question: Are the four general semantic facts and the two conditional-dependent classical results unmistakably distinct?
 - Timing: contemporaneous B085 source review and visually inspected Pakistani-first consultation
+
+## TERM-MVL-CLASSICAL-SUBLOGIC
+
+- Type: terminology and classical-fragment boundary
+- Choice: د څو ارزښته منطق فرعي منطق / دوه ارزښته برخه / د صدق تابعو برابري / نقيض عکس
+- Source and target: [frozen English](upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L11) and [Pashto draft](ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L11).
+- Uncertainty: exact Pakistani sublogic and Boolean-fragment compounds are provisional.
+- Review question: Does the scope qualification include all used connectives and constants and preserve the consequence-inclusion direction?
+- Timing: contemporaneous B086 source review and visually inspected Pakistani-first consultation
+
+## DEC-OLMVL-001
+
+- Type: confirmed mathematical scope defect
+- Choice: Restrict the theorem and corollary to the common formula fragment whose every used connective, including nullary constants, agrees on Boolean inputs; require Boolean assignments for all relevant variables.
+- Source and target: [frozen English](upstream/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L23) and [Pashto disclosure](ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex#L42).
+- Evidence: a falsity constant interpreted as True satisfies the four listed connective conditions yet disagrees with classical evaluation of that constant formula.
+- Timing: contemporaneous B086 source review before cumulative acceptance
 
 ## DEC-OLFUN-001
 

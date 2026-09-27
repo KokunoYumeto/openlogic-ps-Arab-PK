@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0380; B078 one exact search-term repair and one adjacent notation disclosure; four historical false alerts remain retracted",
-  "adopted_utc": "2026-09-26T22:31:23.137471+00:00",
+  "status": "adopted through OLP-0391; B086 one disclosed shared-fragment scope correction; four historical false alerts remain retracted",
+  "adopted_utc": "2026-09-27T03:31:28.403863+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -9283,6 +9283,48 @@
       ],
       "decision_timing": "contemporaneous B078 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLMVL-001",
+      "unit_id": "OLP-0391",
+      "classification": "confirmed_mathematical_scope_defect",
+      "source_path": "content/many-valued-logic/syntax-and-semantics/sublogics.tex",
+      "source_sha256": "1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7",
+      "source_locator": "content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75",
+      "target_path": "ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex",
+      "target_line_1based": 42,
+      "target_sha256": "403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4",
+      "mode": "corrected-theorem-and-corollary-scope-plus-adjacent-Pashto-note",
+      "translation_change": "Qualify the value-transfer theorem and consequence corollary to a shared formula fragment whose every used connective, including nullary constants, agrees on Boolean inputs; require Boolean values for every relevant variable and disclose the source omission beside the theorem",
+      "reason": "The source hypotheses cover only four positive-arity connectives, not arbitrary extra connectives or nullary constants, and leave the variable p's scope implicit.",
+      "counterexample": "A matrix with values True and False, classical Boolean behavior for the four listed connectives, and a falsity constant interpreted as True meets the written conditions but disagrees with classical evaluation of that constant formula; it also makes that formula a many-valued tautology if True is designated.",
+      "formula_policy": "All math spans, displayed equations, labels and structural macros remain source-equivalent; only Pashto theorem scope and adjacent explanatory prose are corrected.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC",
+      "audit_artifacts": [
+        "B086_SOURCE_AUDIT.json",
+        "content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75",
+        "ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42"
+      ],
+      "decision_timing": "contemporaneous B086 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -9290,7 +9332,7 @@
     "This is a bounded source audit, not whole-corpus source certification.",
     "It does not independently certify any target language's complete linguistic quality."
   ],
-  "next_action": "Translate OLP-0381 onward while validating the 372-unit coherent reader.",
+  "next_action": "Translate OLP-0392 onward while validating the 372-unit coherent reader.",
   "audit_ids": [
     "OLFUN-20260904",
     "OLSIZ-20260904",
@@ -9352,7 +9394,8 @@
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-PARALLEL-BETA",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-CHURCH-ROSSER-CLOSURE",
     "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY-OPENING",
-    "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES"
+    "PS-OWNER-SEMANTIC-20260926-LAMBDA-PAIRS-TRUTH-VALUES",
+    "PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC"
   ],
   "source_authorities": [
     {

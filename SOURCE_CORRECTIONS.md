@@ -2812,3 +2812,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - ثابته سرچينه: content/lambda-calculus/lambda-definability/minimization.tex:19-55 (SHA-256 4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6).
 - پښتو متن: ps-Arab-PK/content/lambda-calculus/lambda-definability/minimization.tex:52 (SHA-256 576c0b0a4dfb1880b8e9cb6288e946dbf26ef03cd234e8cbbd2e7689e6e3857c).
 - پرېکړه: Disclose that the lemma names the minimization result g but the proof calls the result h; preserve all source formula names. يوازې ثبت شوې فورمولي استثنا بدله شوې؛ نورې رياضيکي نښې او پېژندونکي ساتل شوي دي.
+
+## OLMVL-001
+
+- Unit: `OLP-0391`.
+- Frozen source: `content/many-valued-logic/syntax-and-semantics/sublogics.tex` (1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7) at `content/many-valued-logic/syntax-and-semantics/sublogics.tex:23-38,70-75`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/syntax-and-semantics/sublogics.tex:42` (403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MVL-CLASSICAL-SUBLOGIC`.
+- Treatment: The value-transfer theorem and consequence corollary now specify a common formula fragment, Boolean assignments for its variables, and agreement on Boolean inputs for every used connective, including constants. An adjacent Pashto note discloses the frozen source's missing scope.
+- Evidence: A falsity constant interpreted as True satisfies the four listed connective conditions but disagrees with classical evaluation of that formula.
+- Disclosure: `corrected-theorem-and-corollary-scope-plus-adjacent-Pashto-note`. All source formulas remain unchanged.

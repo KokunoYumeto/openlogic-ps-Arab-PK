@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 390,
-    "structural_pass": 390,
+    "draft_units": 391,
+    "structural_pass": 391,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B085-MVL-SEMANTIC-NOTIONS",
+  "batch": "PS-B086-MVL-CLASSICAL-SUBLOGIC",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12291,6 +12291,34 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0391",
+      "path": "content/many-valued-logic/syntax-and-semantics/sublogics.tex",
+      "source_sha256": "1180052e6f39c499a3d55b43200ce6af0e92b3f2c5b55d416eaac29e96bb66a7",
+      "translation_sha256": "403af7b1ae8cd4f681410f90ca5f3819d32ec1ae35590b34c24c90e6e36053b4",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-001"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -15929,6 +15957,36 @@
       "passage": "classical conditional boundary",
       "reverse_paraphrase": "Classical semantic modus ponens and the semantic deduction theorem involve the conditional; they can fail in a many-valued logic according to its conditional truth function.",
       "finding": "Target explicitly keeps the classical scope and many-valued failure qualification."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "Boolean truth-function agreement",
+      "reverse_paraphrase": "The four displayed connectives have classical values when all their inputs are True or False.",
+      "finding": "Target preserves the exact restriction, four functions, and both displayed equations."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "proposition and scope correction",
+      "reverse_paraphrase": "Boolean valuations yield the same formula value only on a common formula fragment whose every used connective and constant agrees on Boolean inputs.",
+      "finding": "OLMVL-001 records a concrete nullary-constant counterexample to the unrestricted source wording; target gives the necessary scope adjacent to the theorem."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "induction proof",
+      "reverse_paraphrase": "Atomic, negation and conjunction cases use recursive value definitions, induction and connective agreement; disjunction and conditional are analogous.",
+      "finding": "All formulas, proof references and case order remain exact."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "consequence inclusion",
+      "reverse_paraphrase": "If True is designated and False is not, many-valued consequence implies classical consequence on the corrected common fragment.",
+      "finding": "Target preserves the inclusion direction and scopes every premise and conclusion."
+    },
+    {
+      "unit_id": "OLP-0391",
+      "passage": "contrapositive proof",
+      "reverse_paraphrase": "A classical countervaluation is Boolean and thus also a many-valued valuation; it designates all premises and not the conclusion.",
+      "finding": "Target preserves each valuation condition and the transferred non-entailment."
     }
   ],
   "builds": [
