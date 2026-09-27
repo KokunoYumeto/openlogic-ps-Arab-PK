@@ -1,0 +1,5 @@
+# B097 source and target review — OLP-0405 structural rules
+
+Frozen source: `content/many-valued-logic/sequent-calculus/structural-rules.tex`, SHA-256 `4acc6c8de469ff1e6aed5a5c65878c818fe79f9b14f8882b5031c45179375261`. The complete ten-block Pashto draft preserves all normalized math spans, rule-tree macros, identifiers, structural environments and source term tokens exactly. The source's `% Part: many-valued-logics` comment is retained as metadata.
+
+Weakening adds a sentence in position i, contraction merges a duplicate there, and exchange reverses adjacent sentence order there. A sequence of these inferences may be abbreviated with double inference lines. The cut rule has one form for each pair of distinct positions i and j, putting the cut sentence into different positions in its two premises and combining the remaining contexts positionwise in the conclusion. The target preserves the displayed three structural-rule trees, the cut tree, every Γ/Δ position, distinctness condition and rule label. No source correction is adopted, and no human specialist approval is claimed.

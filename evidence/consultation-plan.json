@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B096-MANY-VALUED-SEQUENT-RULES",
-  "status": "OLP-0404 source-reviewed and staged; fourteen paired blocks, one adjacent-disclosed index correction and seven reverse-paraphrase samples",
+  "batch_id": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
+  "status": "OLP-0405 source-reviewed and staged; ten paired blocks, exact rule trees and six reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8490,6 +8490,24 @@
       ],
       "scope": "Complete fourteen-block n-sided sequent, initial-sequent, theorem and derivability definitions with Łukasiewicz example; one adjacent-disclosed source index repair OLMVL-012.",
       "allowed_residual_english": []
+    },
+    "OLP-0405": {
+      "batch_id": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH"
+      ],
+      "scope": "Complete ten-block n-sided weakening, contraction, exchange and cut rules with exact displayed proof trees and distinct-position condition. No source correction.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12584,6 +12602,42 @@
       "passage": "Łukasiewicz example",
       "reverse_paraphrase": "For three-valued Łukasiewicz, True alone is designated; if Undef were also designated, the conclusion would occupy the middle and right positions.",
       "finding": "Actual and counterfactual sequents retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "rule scope",
+      "reverse_paraphrase": "Each classical structural rule has an indexed form for each position in an n-sided sequent.",
+      "finding": "Each-position condition retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "weakening",
+      "reverse_paraphrase": "Weakening adds A to position i while other positions remain unchanged.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "contraction",
+      "reverse_paraphrase": "Contraction replaces two copies of A in position i with one.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "exchange",
+      "reverse_paraphrase": "Exchange reverses adjacent A,B in position i.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "double lines",
+      "reverse_paraphrase": "A series of structural inferences may be shown with double inference lines.",
+      "finding": "Display convention retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "cut",
+      "reverse_paraphrase": "Cut uses distinct positions i and j in its premises and merges the remaining contexts pointwise.",
+      "finding": "Distinctness and rule tree exact."
     }
   ]
 }

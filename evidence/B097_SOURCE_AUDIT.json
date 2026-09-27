@@ -1,0 +1,99 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T07:47:11.380727+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-STRUCTURAL-RULES",
+  "batch_id": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0405",
+      "source_path": "content/many-valued-logic/sequent-calculus/structural-rules.tex",
+      "source_bytes": 1782,
+      "source_sha256": "4acc6c8de469ff1e6aed5a5c65878c818fe79f9b14f8882b5031c45179375261",
+      "target_sha256": "65cc4965e20d15e1f1759e4d53ca2d980ad0e7a413d6031441091dee184ca794",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B097_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "c8c3d8e1f9d4ec9d8836c81b57ca8cab9fad91af851223ec52910418764dd401",
+  "consultation_path": "work/B097_CANON_CONSULTATION.md",
+  "consultation_sha256": "679c7ebacf967f7b920ec04d2ceb4e42f4c60e17421f7642e74a966a9e37e7ab",
+  "staging_qa_sha256": {
+    "OLP-0405": "78a234d77a8317c2f2b09b643f99c921defef76c28efa69c0821236ac1ce36a8"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0405",
+      "source_lines": "11-13",
+      "kind": "structural-rule-scope",
+      "finding": "The classical structural rules are indexed by each sequent position i."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "source_lines": "15-39",
+      "kind": "displayed-rule-trees",
+      "finding": "Weakening, contraction and exchange rule trees, contexts and labels match frozen English exactly."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "source_lines": "41-54",
+      "kind": "cut-rule",
+      "finding": "The distinct i,j condition and cut rule tree, including combined contexts, match frozen English exactly."
+    }
+  ],
+  "formula_policy": "All normalized math spans, rule trees, IDs, term tokens, environments and structural macros match frozen English exactly; no source correction adopted.",
+  "unresolved": "Specialized structural-rule vocabulary remains open to expert review; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0405; continue OLP-0406."
+}

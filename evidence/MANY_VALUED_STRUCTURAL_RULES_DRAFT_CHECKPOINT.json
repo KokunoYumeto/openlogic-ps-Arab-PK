@@ -1,0 +1,29 @@
+{
+  "schema": "ps-b097-many-valued-structural-rules-draft/1",
+  "utc": "2026-09-27T07:56:04.273386+00:00",
+  "status": "one accepted editable draft; cumulative source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
+  "units": [
+    {
+      "unit_id": "OLP-0405",
+      "path": "content/many-valued-logic/sequent-calculus/structural-rules.tex",
+      "source_sha256": "4acc6c8de469ff1e6aed5a5c65878c818fe79f9b14f8882b5031c45179375261",
+      "target_sha256": "65cc4965e20d15e1f1759e4d53ca2d980ad0e7a413d6031441091dee184ca794",
+      "manual_source_review": true,
+      "pakistani_pashto_editorial_review": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "draft_units": 405,
+  "aligned_blocks": 6177,
+  "segment_canon_uses": 3891,
+  "reader_units": 321,
+  "source_snapshot_units": 362,
+  "source_audit_sha256": "45d72387684a40020f69a0194d487478e65a283587afc30188768fc90f0c18f3",
+  "corpus_qa_sha256": "8e320b6b43da71215ba56f54ad140763f145901f005d4a1fa3978b9c54fb4853",
+  "canonical_replay_sha256": "7c0d78a948a13e4a08b148521ecc3cd55ec16980f6cbb8fcf8a11eac9c490bec",
+  "qa_sha256": "89b15f21d759ab2a554b33b004789603305668eba589b20479c0ec99369d9095",
+  "reader_status": "Corrected PDF passed independent byte replay; stable-title v0.7.1 EPUB passed byte-identical independent replay and EPUBCheck 5.4.0; direct LaTeX build and public repair pending.",
+  "stable_epub_acceptance_sha256": "872a5c9800469ca30562da5c89477a88c70272f7f6ff456ba3df0639e1e1fb9b",
+  "next_action": "Commit/push B097, then translate OLP-0406 and finish corrected reader release."
+}

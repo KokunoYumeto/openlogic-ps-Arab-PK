@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 404,
-    "structural_pass": 404,
+    "draft_units": 405,
+    "structural_pass": 405,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B096-MANY-VALUED-SEQUENT-RULES",
+  "batch": "PS-B097-MANY-VALUED-STRUCTURAL-RULES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12738,6 +12738,32 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0405",
+      "path": "content/many-valued-logic/sequent-calculus/structural-rules.tex",
+      "source_sha256": "4acc6c8de469ff1e6aed5a5c65878c818fe79f9b14f8882b5031c45179375261",
+      "translation_sha256": "65cc4965e20d15e1f1759e4d53ca2d980ad0e7a413d6031441091dee184ca794",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -16832,6 +16858,42 @@
       "passage": "Łukasiewicz example",
       "reverse_paraphrase": "For three-valued Łukasiewicz, True alone is designated; if Undef were also designated, the conclusion would occupy the middle and right positions.",
       "finding": "Actual and counterfactual sequents retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "rule scope",
+      "reverse_paraphrase": "Each classical structural rule has an indexed form for each position in an n-sided sequent.",
+      "finding": "Each-position condition retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "weakening",
+      "reverse_paraphrase": "Weakening adds A to position i while other positions remain unchanged.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "contraction",
+      "reverse_paraphrase": "Contraction replaces two copies of A in position i with one.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "exchange",
+      "reverse_paraphrase": "Exchange reverses adjacent A,B in position i.",
+      "finding": "Rule tree exact."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "double lines",
+      "reverse_paraphrase": "A series of structural inferences may be shown with double inference lines.",
+      "finding": "Display convention retained."
+    },
+    {
+      "unit_id": "OLP-0405",
+      "passage": "cut",
+      "reverse_paraphrase": "Cut uses distinct positions i and j in its premises and merges the remaining contexts pointwise.",
+      "finding": "Distinctness and rule tree exact."
     }
   ],
   "builds": [
