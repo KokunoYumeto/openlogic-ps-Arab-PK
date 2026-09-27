@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 421,
-    "structural_pass": 421,
+    "draft_units": 422,
+    "structural_pass": 422,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B111-NORMAL-MODAL-ACCESSIBILITY-PROPERTIES",
+  "batch": "PS-B112-NORMAL-MODAL-FRAMES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13708,6 +13708,33 @@
         "OLNML-009"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0422",
+      "path": "content/normal-modal-logic/frame-definability/frames.tex",
+      "source_sha256": "2dab4bab23543be815492a62159b5e44069c50f55fee06e8a866446634a75b39",
+      "translation_sha256": "246724e3bfbdc948e02298d33d597ac9a9a5e6177a301333f108e150a4fa900d",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18558,6 +18585,48 @@
       "passage": "final exercise",
       "reverse_paraphrase": "If any of the second table conditions holds, prove every instance of its paired formula in the model.",
       "finding": "Proof remains for reader."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "frame components",
+      "reverse_paraphrase": "A frame is exactly (W,R), with nonempty W and binary R on W.",
+      "finding": "Nonemptiness and relation domain retained."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "based-on model",
+      "reverse_paraphrase": "M is based on F iff M=(W,R,V) for some valuation V.",
+      "finding": "Existential valuation and shared W,R retained."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "valid in one frame",
+      "reverse_paraphrase": "F entails A iff A is true in every model based on F.",
+      "finding": "Universal model quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "valid in a frame class",
+      "reverse_paraphrase": "Class F entails A iff every F in that class entails A.",
+      "finding": "Universal frame quantifier retained."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "T correspondence",
+      "reverse_paraphrase": "Truth of T in one model need not imply reflexivity, but a frame validates T iff reflexive.",
+      "finding": "Model and frame levels separated."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "model-class reduction",
+      "reverse_paraphrase": "A frame class validates A iff the class of all models based on member frames validates A.",
+      "finding": "Class construction and iff retained."
+    },
+    {
+      "unit_id": "OLP-0422",
+      "passage": "global validity",
+      "reverse_paraphrase": "A globally valid formula or schema is valid in any frame class.",
+      "finding": "Restriction of universal validity retained."
     }
   ],
   "builds": [

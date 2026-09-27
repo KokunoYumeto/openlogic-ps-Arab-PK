@@ -1,0 +1,52 @@
+% Part: normal-modal-logic
+% Chapter: frame-correspondence
+% Section: frames
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{fra}
+
+\olsection{چوکاټونه}
+
+\begin{defn}
+  \emph{چوکاټ} يوه جوړه $\mModel{F} = \tuple{W,R}$ ده، چې $W$ د
+  نړۍو ناتشه مجموعه او $R$ پر~$W$ يوه دوه‌ځاييزه اړيکه ده۔ مدل
+  $\mModel{M}$ هله او يوازې هله پر چوکاټ $\mModel{F} = \tuple{W,R}$
+  \emph{ولاړ} دے چې د کومې ارزښت ټاکنې $V$ دپاره
+  $\mModel{M} = \tuple{W, R, V}$ وي۔
+\end{defn}
+
+\begin{defn}
+  که $\mModel{F}$ يو چوکاټ وي، وايو چې $!A$
+  \emph{په~$\mModel{F}$ کښې معتبر} دے، $\mModel{F} \Entails !A$،
+  که $\mSat{M}{!A}$ په~$\mModel{F}$ ولاړ د هر مدل~$\mModel{M}$
+  دپاره وي۔
+  
+  که $\mClass{F}$ د چوکاټونو يو ټولګے وي، وايو چې $!A$
+  \emph{په~$\mClass{F}$ کښې معتبر} دے، $\mClass{F} \Entails !A$،
+  هله او يوازې هله چې د هر چوکاټ~$\mModel{F} \in \mClass{F}$
+  دپاره $\mModel{F} \Entails !A$ وي۔
+\end{defn}
+
+چوکاټونه ځکه مهم دي چې د طرحو او د لاسرسي د اړيکې~$R$ د خاصيتونو
+ترمنځ مطابقت د چوکاټونو په کچه وي، \emph{د مدلونو په کچه نۀ}۔ د
+بېلګې په توګه، که څه هم \Ax{T} په ټولو انعکاسي مدلونو کښې رښتيا ده،
+خو هر هغه مدل انعکاسي نۀ دے چې \Ax{T} پکې رښتيا وي۔ البته دا
+\emph{سمه} ده چې \Ax{T} په ټولو انعکاسي \emph{چوکاټونو} کښې
+\emph{معتبره} ده، او هر هغه چوکاټ هم انعکاسي دے چې \Ax{T} پکې
+معتبره وي۔
+
+\begin{rem}
+د چوکاټونو په يوه ټولګي کښې اعتبار د مدلونو په يوه ټولګي کښې د
+اعتبار د مفهوم يو ځانګړے مورد دے: $\mClass{F} \Entails !A$ هله او
+يوازې هله چې $\mClass{C} \Entails !A$، چېرې چې $\mClass{C}$ د هغو
+ټولو مدلونو ټولګے دے چې د~$\mClass{F}$ د کوم چوکاټ پر بنسټ ولاړ وي۔
+
+څرګنده ده چې که !!a{formula} يا يوه طرحه معتبره وي، يعنې د
+\emph{ټولو} مدلونو د ټولګي په نسبت معتبره وي، نو د چوکاټونو د هر
+ټولګي~$\mClass{F}$ په نسبت هم معتبره ده۔
+\end{rem}
+
+\end{document}
