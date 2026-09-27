@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
-  "status": "OLP-0402/0403 source-reviewed and staged; 23 paired blocks, two adjacent-disclosed math corrections and nine reverse-paraphrase samples",
+  "batch_id": "PS-B096-MANY-VALUED-SEQUENT-RULES",
+  "status": "OLP-0404 source-reviewed and staged; fourteen paired blocks, one adjacent-disclosed index correction and seven reverse-paraphrase samples",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8469,6 +8469,27 @@
       ],
       "scope": "Thirteen-block classical-to-n-valued sequent introduction with exact inference trees and two adjacent-disclosed source-notation repairs.",
       "allowed_residual_english": []
+    },
+    "OLP-0404": {
+      "batch_id": "PS-B096-MANY-VALUED-SEQUENT-RULES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-DERIVATION-SEARCH",
+        "TERM-MVL-MATRIX",
+        "TERM-MVL-MULTIPLE-DESIGNATION",
+        "TERM-MANY-VALUED-SEMANTICS"
+      ],
+      "scope": "Complete fourteen-block n-sided sequent, initial-sequent, theorem and derivability definitions with Łukasiewicz example; one adjacent-disclosed source index repair OLMVL-012.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -12521,6 +12542,48 @@
       "passage": "three-valued initial sequent",
       "reverse_paraphrase": "A|A|A is always satisfied because the value of A belongs to one of the three positions.",
       "finding": "Three clauses exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "n-sided sequent",
+      "reverse_paraphrase": "An n-sided sequent contains n finite, possibly empty sentence sequences, one on each side.",
+      "finding": "OLMVL-012 repairs quantified side index."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "initial sequent",
+      "reverse_paraphrase": "Any sentence repeated in every position forms an initial sequent.",
+      "finding": "All n places retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "zero-place constant",
+      "reverse_paraphrase": "A propositional constant occupies only its own truth-value position; all others are empty.",
+      "finding": "Fixed-value clause retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "logical rules",
+      "reverse_paraphrase": "Each connective has a rule for each truth value it can output.",
+      "finding": "Per-value quantifier exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "theorem",
+      "reverse_paraphrase": "A theorem has a derivation with the sentence in every designated-value position.",
+      "finding": "Designated positions exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "derivability",
+      "reverse_paraphrase": "Derivability from a set uses a finite subset and a finite sequence of premises in nondesignated positions.",
+      "finding": "Finite witness and position distinction exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "Łukasiewicz example",
+      "reverse_paraphrase": "For three-valued Łukasiewicz, True alone is designated; if Undef were also designated, the conclusion would occupy the middle and right positions.",
+      "finding": "Actual and counterfactual sequents retained."
     }
   ]
 }

@@ -2926,3 +2926,13 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: The target restores the omitted valuation argument v in the final initial-sequent equality and discloses the restoration beside the sentence.
 - Evidence: The source uses the valuation v in the immediately preceding equality and throughout the paragraph, but writes the final false-value expression as pValue(!A) without any valuation argument.
 - Disclosure: `restored-valuation-argument-plus-adjacent-Pashto-note`. Frozen English remains unchanged.
+
+## OLMVL-012
+
+- Unit: `OLP-0404`.
+- Frozen source: `content/many-valued-logic/sequent-calculus/rules-and-proofs.tex` (edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3) at `content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:14-22`.
+- Pashto target: `ps-Arab-PK/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex:22` (3da5229f5b5c5115877296fa5ddcfe09b3712ee1bbbfa58631cd1757aa8c8ade).
+- Audit: `PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-RULES`.
+- Treatment: The target changes the prose's quantified side index from Gamma_1 to Gamma_i, while leaving the displayed first and last sides unchanged; it discloses the source repair beside the definition.
+- Evidence: The displayed n-sided sequent runs from Gamma_1 to Gamma_n, while the following phrase says each Gamma_1 is a finite sequence. The quantified phrase refers to each side Gamma_i.
+- Disclosure: `corrected-quantified-side-index-plus-adjacent-Pashto-note`. Frozen English remains unchanged.

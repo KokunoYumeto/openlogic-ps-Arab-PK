@@ -1,0 +1,107 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-27T07:36:06.861157+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260927-MANY-VALUED-SEQUENT-RULES",
+  "batch_id": "PS-B096-MANY-VALUED-SEQUENT-RULES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0404",
+      "source_path": "content/many-valued-logic/sequent-calculus/rules-and-proofs.tex",
+      "source_bytes": 2934,
+      "source_sha256": "edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3",
+      "target_sha256": "3da5229f5b5c5115877296fa5ddcfe09b3712ee1bbbfa58631cd1757aa8c8ade",
+      "paired_blocks": 14,
+      "source_correction_ids": [
+        "OLMVL-012"
+      ]
+    }
+  ],
+  "notes_path": "work/B096_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "0a72879fd6f739b6ced5fb4119205f985cf03f5ecfe973725694319665176d64",
+  "consultation_path": "work/B096_CANON_CONSULTATION.md",
+  "consultation_sha256": "7cfe939f35861dad8542b0c394c3c8f559b18ce0a99bf8ef8950e46550fd0263",
+  "staging_qa_sha256": {
+    "OLP-0404": "6e91869267469039de113ad575bfe540070cdca33f707a39b9b4d83d75b8841a"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0404",
+      "source_lines": "11-22",
+      "kind": "n-sided-sequent",
+      "finding": "The each-Gamma_1 source typo is corrected as each-Gamma_i and adjacent-disclosed; the displayed sequent is exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "source_lines": "24-33",
+      "kind": "initial-sequent",
+      "finding": "Repeated sentence and zero-place-constant designated-position definitions retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "source_lines": "35-62",
+      "kind": "rules-and-derivability",
+      "finding": "Connective rule scope, theorem criterion and finite-premise derivability definitions retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "source_lines": "64-72",
+      "kind": "three-valued-example",
+      "finding": "Łukasiewicz value-position and designated-value counterfactual retained."
+    }
+  ],
+  "formula_policy": "Exactly one inline math span changes Gamma_1 to Gamma_i; the displayed n-sided sequent and every other formula, identifier, token and structural macro match frozen English. Frozen English unchanged.",
+  "unresolved": "Specialized n-sided sequent vocabulary remains open to expert review; no human specialist approval claimed.",
+  "next_executable_action": "Run cumulative and canonical QA for OLP-0404; continue OLP-0405."
+}

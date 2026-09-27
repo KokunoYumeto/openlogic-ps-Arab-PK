@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 403,
-    "structural_pass": 403,
+    "draft_units": 404,
+    "structural_pass": 404,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B095-MANY-VALUED-SEQUENT-INTRODUCTION",
+  "batch": "PS-B096-MANY-VALUED-SEQUENT-RULES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -12701,6 +12701,43 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0404",
+      "path": "content/many-valued-logic/sequent-calculus/rules-and-proofs.tex",
+      "source_sha256": "edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3",
+      "translation_sha256": "3da5229f5b5c5115877296fa5ddcfe09b3712ee1bbbfa58631cd1757aa8c8ade",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLMVL-012"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Gamma_1$"
+        ],
+        "target_only": [
+          "$\\Gamma_i$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -16753,6 +16790,48 @@
       "passage": "three-valued initial sequent",
       "reverse_paraphrase": "A|A|A is always satisfied because the value of A belongs to one of the three positions.",
       "finding": "Three clauses exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "n-sided sequent",
+      "reverse_paraphrase": "An n-sided sequent contains n finite, possibly empty sentence sequences, one on each side.",
+      "finding": "OLMVL-012 repairs quantified side index."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "initial sequent",
+      "reverse_paraphrase": "Any sentence repeated in every position forms an initial sequent.",
+      "finding": "All n places retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "zero-place constant",
+      "reverse_paraphrase": "A propositional constant occupies only its own truth-value position; all others are empty.",
+      "finding": "Fixed-value clause retained."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "logical rules",
+      "reverse_paraphrase": "Each connective has a rule for each truth value it can output.",
+      "finding": "Per-value quantifier exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "theorem",
+      "reverse_paraphrase": "A theorem has a derivation with the sentence in every designated-value position.",
+      "finding": "Designated positions exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "derivability",
+      "reverse_paraphrase": "Derivability from a set uses a finite subset and a finite sequence of premises in nondesignated positions.",
+      "finding": "Finite witness and position distinction exact."
+    },
+    {
+      "unit_id": "OLP-0404",
+      "passage": "Łukasiewicz example",
+      "reverse_paraphrase": "For three-valued Łukasiewicz, True alone is designated; if Undef were also designated, the conclusion would occupy the middle and right positions.",
+      "finding": "Actual and counterfactual sequents retained."
     }
   ],
   "builds": [

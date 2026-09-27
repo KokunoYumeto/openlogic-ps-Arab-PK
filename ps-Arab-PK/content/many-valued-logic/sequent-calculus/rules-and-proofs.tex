@@ -1,0 +1,77 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{rul}
+
+\olsection{قاعدې او \usetoken{P}{derivation}}
+
+په لاندې بحث کښې دې~$\Gamma, \Delta, \Pi, \Lambda$ د
+!!{sentence}s متناهي لړۍ تمثيل کړي۔
+
+\begin{defn}[سېکوېنټ]
+يو \emph{$n$ اړخيز سېکوېنټ} د لاندې بڼې عبارت دے:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+چې هره~$\Gamma_i$ د ژبې~$\Lang L$ د !!{sentence}s يوه متناهي
+(کېدے شي تشه) لړۍ ده۔ د سرچينې يادونه: په اصلي متن کښې دلته
+د هرې لړۍ دپاره د لومړي شاخص نښه ليکل شوې؛ د ټولو اړخونو دپاره
+ئې عمومي شاخص ته واړوله۔
+\end{defn}
+
+\begin{defn}[ابتدايي سېکوېنټ]
+يو \emph{$n$ اړخيز ابتدايي سېکوېنټ} د هرې ژبنۍ !!{sentence}~$!A$
+دپاره د~$!A \nSequent \dots \nSequent !A$ په بڼه~$n$ اړخيز
+سېکوېنټ دے۔
+
+که ژبه يو~$0$ ځايه نښلوونکے~$\star$، يعنې بياني ثابت، ولري، نو
+هغه سېکوېنټ~$\dots \nSequent \star \nSequent \dots$ هم ابتدايي
+ګڼو چې~$\star$ پکې د~$\tf{\star} \in V$ له اړوند رښتياوالي
+قيمت سره په برابر ځاے کښې راځي او نور ځايونه ئې تش وي۔
+\end{defn}
+
+د~$n$ ارزښته منطق~$\Log{L}$ د هر نښلوونکي دپاره، په~$\Log{L}$ کښې
+د هغه د هر ممکن رښتياوالي قيمت يوه منطقي قاعده شته۔ د~$\Log{L}$ د~$n$ اړخيز
+سېکوېنټ حساب !!^{derivation}s د سېکوېنټونو ونې دي: تر ټولو بره
+سېکوېنټونه ابتدايي وي، او که يو سېکوېنټ د يوه يا څو نورو لاندې
+ولاړ وي، نو بايد د~$\Log{L}$ د نښلوونکو د استنتاج د يوې قاعدې له
+مخې په سمه توګه ترې راوځي۔
+
+\begin{defn}[قضيې]
+!!^a{sentence}~$!A$ د~$n$ ارزښته منطق~$\Log{L}$ \emph{قضيه}
+ده که د هغه~$n$ اړخيز سېکوېنټ !!a{derivation} وي چې د~$\Log{L}$
+د هر ټاکل شوي رښتياوالي قيمت له اړوند ځاے سره~$!A$ لري۔ که~$!A$
+قضيه وي،~$\Proves[\Log{L}] !A$ ليکو، او که نۀ وي،~$\Proves/[\Log{L}]
+!A$ ليکو۔
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ د~$n$ ارزښته منطق~$\Log{L}$ کښې د
+!!{sentence}s له سټ~$\Gamma$ څخه \emph{!!{derivable} ده}، يعنې~$\Gamma
+\Proves[\Log{L}] !A$، هله او يوازې هله چې يو متناهي
+فرعي سټ~$\Gamma_0 \subseteq \Gamma$ او د~$\Gamma_0$ د
+!!{sentence}s يوه لړۍ~$\Gamma_0'$ وي چې لاندې سېکوېنټ
+!!a{derivation} ولري:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+دلته~$\Lambda_i$ هغه مهال~$!A$ دے چې~$i$ ځاے له ټاکل شوي
+رښتياوالي قيمت سره برابر وي، او په بل حالت کښې~$\Gamma_0'$ دے۔
+که~$!A$ له~$\Gamma$ څخه !!{derivable} نۀ وي،~$\Gamma \Proves/ !A$
+ليکو۔
+\end{defn}
+
+د بېلګې په توګه، د لوکاشېوېچ~$3$ ارزښته منطق يو~$3$ اړخيز
+سېکوېنټ حساب لري۔ په~$3$ اړخيز سېکوېنټ~$\Gamma \nSequent \Pi
+\nSequent \Delta$ کښې~$\Gamma$ له~$\False$،~$\Delta$ له~$\True$
+او~$\Pi$ له~$\Undef$ سره برابر دي۔ بديهي سېکوېنټونه~$!A
+\nSequent !A \nSequent !A$ دي۔ ځکه چې يوازې~$\True$ ټاکل شوے دے،
+$\Gamma \Proves[\LogLuk[3]] !A$ هله او يوازې هله چې سېکوېنټ~$\Gamma
+\nSequent \Gamma \nSequent !A$ يو~!!a{derivation} ولري۔ (که~$\Undef$
+هم ټاکل شوے وے، نو د~$\Gamma \nSequent !A \nSequent !A$
+!!a{derivation} به پکار و۔)
+
+\end{document}
