@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
-  "status": "OLP-0426 source-reviewed and staged; 19 paired blocks, ten reverse-paraphrase samples, one provisional term and two disclosed source repairs",
+  "batch_id": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
+  "status": "OLP-0427–0428 source-reviewed and staged; 20 paired blocks, nine reverse-paraphrase samples, one provisional modal-rule term",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -8922,6 +8922,46 @@
       ],
       "scope": "Nineteen-block standard translation, truth-preservation and frame-validity propositions, monadic second-order definition, reflexivity proof, two disclosed source repairs and final nondefinability claim.",
       "allowed_residual_english": []
+    },
+    "OLP-0427": {
+      "batch_id": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-NORMAL-NECESSITATION"
+      ],
+      "scope": "Seven-block axiomatic derivation chapter driver; title localized and all imports source-identical.",
+      "allowed_residual_english": []
+    },
+    "OLP-0428": {
+      "batch_id": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-AXIOM",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-NORMAL-NECESSITATION"
+      ],
+      "scope": "Thirteen-block axiomatic modal introduction: frame validity, normal systems, modus ponens, necessitation, four-clause derivation and soundness/completeness.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -14048,6 +14088,60 @@
       "passage": "closing quantifier",
       "reverse_paraphrase": "At least one sentence of the shown monadic second-order form has no first-order equivalent; no effective decision method exists.",
       "finding": "Not-every existential claim and undecidability retained."
+    },
+    {
+      "unit_id": "OLP-0427",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Axiomatic derivation chapter heading changes language; thirteen imported sections and their order remain fixed.",
+      "finding": "Title-only localization checked."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "validity scope",
+      "reverse_paraphrase": "A formula is valid in all models or relative to a class/frame when true at every world of each relevant model.",
+      "finding": "Model and frame quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "aim",
+      "reverse_paraphrase": "Seek a derivability system whose formulas are derivable iff valid.",
+      "finding": "Both directions of target equivalence retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "Hilbert systems",
+      "reverse_paraphrase": "Axiomatic systems are simple for metatheory but harder for hand proofs than natural deduction.",
+      "finding": "Comparison preserved."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "normal rules",
+      "reverse_paraphrase": "Normal modal logics assume modus ponens and necessitation; all tautology, K and conditionally Dual instances are axioms.",
+      "finding": "Rules, axiom families and source tag retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "modus ponens",
+      "reverse_paraphrase": "From A and A implies B infer B; C must be identical to A implies B in the follows-from definition.",
+      "finding": "Proof tree and syntactic identity retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "necessitation",
+      "reverse_paraphrase": "From A infer Box A; the follows-from condition is B identical to Box A.",
+      "finding": "Proof tree and direction retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "derivation",
+      "reverse_paraphrase": "Each B_i is a tautology instance, Sigma instance, earlier modus-ponens result or earlier necessitation result.",
+      "finding": "Four alternatives and earlier-index bounds retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "soundness",
+      "reverse_paraphrase": "Every derivable formula is true in models satisfying the axioms; completeness is the converse and harder.",
+      "finding": "Direction and qualification retained."
     }
   ]
 }

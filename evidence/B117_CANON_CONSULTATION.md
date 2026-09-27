@@ -1,0 +1,5 @@
+# OLP-0427–0428 Pakistani-first Pashto consultation
+
+The Pakistani Pashto Academy/Peshawar semantics article printed pages 1–2 (`PK-IQRAM-P1-PROSE`, `PK-IQRAM-P2-SEMANTICS`) supplies scholarly prose and edition orthography. The reference grammar printed page 166 (`GRAMMAR-P166-SOV`) supports verb-final quantified and conditional exposition. These witnesses do not attest the exact “normal modal logic” or “necessitation” compounds.
+
+The Afghan regional comparator PS-AF-NIAZMAN-2022 printed page 37 (`AF-NIAZMAN-P37-AXIOMATIC-PROOF`) shows a proof discussion and displayed axiom schemata; printed page 48 (`AF-NIAZMAN-P48-MODUS-PONENS`) names modus ponens and displays the A, A→B / B rule. Both stored rendered pages were visually inspected for this batch. They support axiomatic and modus-ponens vocabulary, but the source's modal rules and exact derivation conditions come only from frozen OpenLogic. Existing TERM-AXIOM, TERM-PROOF-CALCULI, TERM-PROOF-PROPERTIES, TERM-MODAL-LOGIC and TERM-MODAL-FRAME guide consistency. The new normal-modal/necessitation compound remains provisional for Pakistani expert review.

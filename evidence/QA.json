@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 426,
-    "structural_pass": 426,
+    "draft_units": 428,
+    "structural_pass": 428,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B116-NORMAL-MODAL-SECOND-ORDER-DEFINABILITY",
+  "batch": "PS-B117-NORMAL-MODAL-AXIOMATIC-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -13869,6 +13869,60 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0427",
+      "path": "content/normal-modal-logic/axioms-systems/axioms-systems.tex",
+      "source_sha256": "cbbd3a3ac813625c2cf55ccd7bdde41407008f7fb46b51ef302525f6160383ec",
+      "translation_sha256": "d0bcd10b1fac37708d0c4a3ad92a717db16ddf51834ca66cd10a1c1f0375efbd",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0428",
+      "path": "content/normal-modal-logic/axioms-systems/introduction.tex",
+      "source_sha256": "554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068",
+      "translation_sha256": "52332881d777c33cc24ef23fb0bcfa1cf89c3b52c3a355d30b7f84a73560fd8d",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -18995,6 +19049,60 @@
       "passage": "closing quantifier",
       "reverse_paraphrase": "At least one sentence of the shown monadic second-order form has no first-order equivalent; no effective decision method exists.",
       "finding": "Not-every existential claim and undecidability retained."
+    },
+    {
+      "unit_id": "OLP-0427",
+      "passage": "chapter driver",
+      "reverse_paraphrase": "Axiomatic derivation chapter heading changes language; thirteen imported sections and their order remain fixed.",
+      "finding": "Title-only localization checked."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "validity scope",
+      "reverse_paraphrase": "A formula is valid in all models or relative to a class/frame when true at every world of each relevant model.",
+      "finding": "Model and frame quantifiers retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "aim",
+      "reverse_paraphrase": "Seek a derivability system whose formulas are derivable iff valid.",
+      "finding": "Both directions of target equivalence retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "Hilbert systems",
+      "reverse_paraphrase": "Axiomatic systems are simple for metatheory but harder for hand proofs than natural deduction.",
+      "finding": "Comparison preserved."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "normal rules",
+      "reverse_paraphrase": "Normal modal logics assume modus ponens and necessitation; all tautology, K and conditionally Dual instances are axioms.",
+      "finding": "Rules, axiom families and source tag retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "modus ponens",
+      "reverse_paraphrase": "From A and A implies B infer B; C must be identical to A implies B in the follows-from definition.",
+      "finding": "Proof tree and syntactic identity retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "necessitation",
+      "reverse_paraphrase": "From A infer Box A; the follows-from condition is B identical to Box A.",
+      "finding": "Proof tree and direction retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "derivation",
+      "reverse_paraphrase": "Each B_i is a tautology instance, Sigma instance, earlier modus-ponens result or earlier necessitation result.",
+      "finding": "Four alternatives and earlier-index bounds retained."
+    },
+    {
+      "unit_id": "OLP-0428",
+      "passage": "soundness",
+      "reverse_paraphrase": "Every derivable formula is true in models satisfying the axioms; completeness is the converse and harder.",
+      "finding": "Direction and qualification retained."
     }
   ],
   "builds": [
