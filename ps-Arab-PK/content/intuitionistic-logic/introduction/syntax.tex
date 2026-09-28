@@ -1,0 +1,71 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{syn}
+
+\olsection{د شهودي منطق نحو}
+
+د شهودي منطق نحو د بياني منطق د نحو په شان ده۔ په کلاسيک بياني
+منطق کښې ځينې نښلوونکي د نورو په وسيله تعريفېدے شي؛ د بېلګې په توګه،
+$!A \lif !B$ د $\lnot !A \lor !B$ په وسيله، يا $!A \lor !B$ د
+$\lnot(\lnot !A \land \lnot !B)$ په وسيله تعريفولے شو۔ نو د کلاسيک
+منطق په ځينو وړاندې‌کونو کښې ځينې نښلوونکي د دغو تعريفونو لنډې نښې
+وي۔ په شهودي منطق کښې داسې نۀ ده، مګر دوه استثناوې شته: $\lnot !A$
+د $!A \lif \lfalse$ لنډه نښه کېدے شي، او ډېر ځله همداسې تعريفېږي۔
+خو بيا، البته، $\lfalse$ پخپله بايد تعريف شوې نښه نۀ وي!{} همدارنګه،
+$!A \liff !B$ د کلاسيک منطق په شان د $(!A \lif !B) \land (!B \lif
+!A)$ په توګه تعريفېدے شي۔
+
+د بياني شهودي منطق !!^{formula}s له \emph{!!{propositional variable}s}،
+د قضيوي ثابت~$\lfalse$، او \emph{منطقي نښلوونکو} څخه جوړېږي۔ موږ لرو:
+
+\begin{enumerate}
+\item د !!{propositional variable}s يو !!^a{denumerable} سټ~$\PVar$:
+  $\Obj p_0$، $\Obj p_1$، \dots
+  \item د !!{falsity} قضيوي ثابت~$\lfalse$۔
+\item منطقي نښلوونکي: $\land$ (عطف)، $\lor$ (فصل)، $\lif$ (شرطي)۔
+\item د ليک نښې: پرانيستونکې قوس «(»، تړونکې قوس «)»، او کامه۔
+\end{enumerate}
+
+\begin{defn}[فارمول]
+\ollabel{defn:formulas} د بياني شهودي منطق د \emph{!!{formula}s}
+سټ~$\Frm[L_0]$ په استقرايي ډول داسې تعريفېږي:
+\begin{enumerate}
+\item $\lfalse$ يو اټومي !!{formula} دے۔
+
+\item هر !!{propositional variable}~$\Obj p_i$ يو اټومي
+  !!{formula} دے۔
+
+\item که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔
+
+\item که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔
+
+\item که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔
+
+\tagitem{limitClause}{له دې پرته بل هېڅ څۀ !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+د پورته لومړنيو نښلوونکو تر څنګ، لاندې \emph{تعريف شوې} نښې هم
+کاروو: $\lnot$ (نفي) او $\liff$ (!!{biconditional})۔ په دې تعريف
+شويو عاملونو جوړ شوي فارمولونه داسې لوستل کېږي:
+\begin{enumerate}
+\item $\lnot !A$ د $!A \lif \lfalse$ لنډه نښه ده۔
+
+\item $!A \liff !B$ د $(!A \lif !B) \land (!B
+  \lif !A)$ لنډه نښه ده۔
+\end{enumerate}
+
+که څۀ هم $\lnot$ په رسمي ډول لنډه نښه ګڼل کېږي، کله کله به په
+تعريفونو کښې د~$\lnot$ لپاره ښکاره قاعدې او مادې داسې ورکوو لکه
+چې لومړنۍ نښه وي۔ دا زياتره د تمريني مسئلو د بيان لپاره کوو۔
+
+\end{document}

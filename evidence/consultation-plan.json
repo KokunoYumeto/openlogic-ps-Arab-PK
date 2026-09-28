@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B149-EPISTEMIC-LOGIC",
-  "status": "OLP-0482–0486 source-reviewed and staged; 62 paired blocks, 20 semantic samples, four provisional terms; cumulative QA pending",
+  "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+  "status": "OLP-0487–0490 source-reviewed and staged; 71 paired blocks, 18 semantic samples, two provisional terms and two scoped source treatments; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10201,6 +10201,85 @@
       "scope": "په نړۍ کښې صدق، تش صدق، انعکاسيت، S5، د دوو عاملانو شکل، تمرين او مشترکه پوهه.",
       "allowed_residual_english": [],
       "residual_english_rationale": "No residual English."
+    },
+    "OLP-0487": {
+      "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-EPISTEMIC-FRAME-PRINCIPLES",
+        "TERM-EPISTEMIC-ACCESSIBILITY",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES"
+      ],
+      "scope": "څلور معرفتي اصلونه، اکسيومونه او د لاسرسي چوکاټي شرطونه.",
+      "allowed_residual_english": [
+        "KK"
+      ],
+      "residual_english_rationale": "KK is the source-defined principle acronym."
+    },
+    "OLP-0488": {
+      "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-BISIMULATION",
+        "TERM-EPISTEMIC-ACCESSIBILITY",
+        "TERM-RELATION"
+      ],
+      "scope": "اتومي، مخ ته او شاته باي‌سيميولېشن شرطونه، شکل او د فورمولونو ساتنه.",
+      "allowed_residual_english": [
+        "OLAML"
+      ],
+      "residual_english_rationale": "OLAML is a source-treatment identifier."
+    },
+    "OLP-0489": {
+      "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-PUBLIC-ANNOUNCEMENT-UPDATE",
+        "TERM-EPISTEMIC-KNOWLEDGE-LEVELS"
+      ],
+      "scope": "عام اعلان، د معلوماتي پېښې ژبه، اعلان عامل او مشترکه پوهه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0490": {
+      "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-PUBLIC-ANNOUNCEMENT-UPDATE",
+        "TERM-EPISTEMIC-KNOWLEDGE-LEVELS",
+        "TERM-EPISTEMIC-ACCESSIBILITY"
+      ],
+      "scope": "شرطمن صدق، محدود مدل، تش صدق، انځور او له اعلان وروسته نارښتيا کېدونکې دعوه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
     }
   },
   "semantic_review": [
@@ -18063,6 +18142,114 @@
       "passage": "common truth",
       "reverse_paraphrase": "CKnows_{G prime} A holds at all worlds reachable by R_{G prime}.",
       "finding": "د مشترکې پوهې د هر لاسرسي نړۍ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0487",
+      "passage": "closure",
+      "reverse_paraphrase": "Closure is linked to K and known implications.",
+      "finding": "د K له فورمول سره تړلتيا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0487",
+      "passage": "veridicality",
+      "reverse_paraphrase": "Veridicality requires that known propositions be true.",
+      "finding": "د T او رښتينولۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0487",
+      "passage": "positive",
+      "reverse_paraphrase": "Positive introspection has the 4 axiom and transitivity.",
+      "finding": "مثبت ځان‌پوهاوی او تعدي جلا دي."
+    },
+    {
+      "unit_id": "OLP-0487",
+      "passage": "negative",
+      "reverse_paraphrase": "Negative introspection has the 5 axiom and Euclidean relation.",
+      "finding": "منفي ځان‌پوهاوی او اقليدسي شرط جلا دي."
+    },
+    {
+      "unit_id": "OLP-0488",
+      "passage": "atoms",
+      "reverse_paraphrase": "Related worlds agree on propositional variables.",
+      "finding": "اتومي شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0488",
+      "passage": "forth",
+      "reverse_paraphrase": "Every first-model accessible successor has a matching second-model successor.",
+      "finding": "مخ ته شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0488",
+      "passage": "back",
+      "reverse_paraphrase": "Every second-model accessible successor has a matching first-model successor.",
+      "finding": "شاته شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0488",
+      "passage": "agent set",
+      "reverse_paraphrase": "The source uses undefined A twice; chapter-defined G replaces it with disclosure.",
+      "finding": "OLAML-003 محدود او څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0488",
+      "passage": "invariance",
+      "reverse_paraphrase": "Bisimilar worlds agree on formulas in the relevant language.",
+      "finding": "د ساتنې ادعا عين ده."
+    },
+    {
+      "unit_id": "OLP-0489",
+      "passage": "event",
+      "reverse_paraphrase": "A truthful public announcement is learned by all agents.",
+      "finding": "رښتينے اعلان او ټول عاملان عين دي."
+    },
+    {
+      "unit_id": "OLP-0489",
+      "passage": "syntax",
+      "reverse_paraphrase": "The public announcement operator is indexed by a formula.",
+      "finding": "عامل او نمايه عين دي."
+    },
+    {
+      "unit_id": "OLP-0489",
+      "passage": "box",
+      "reverse_paraphrase": "Announcement behaves as a box operator.",
+      "finding": "د بکس شرط څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0489",
+      "passage": "source tags",
+      "reverse_paraphrase": "The source omits prvIff in first list but includes it inductively.",
+      "finding": "اصلي دوه لېستونه بې سمونې ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "passage": "update",
+      "reverse_paraphrase": "Announcing B restricts worlds to those satisfying B.",
+      "finding": "د W پاته نړۍوې عين دي."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "passage": "relation",
+      "reverse_paraphrase": "Every agent relation is restricted to remaining worlds.",
+      "finding": "د هر عامل اړيکه محدوده شوې."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "passage": "valuation",
+      "reverse_paraphrase": "Informational events do not change atomic truth values.",
+      "finding": "قضيوي ارزښتونه نۀ بدلېږي."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "passage": "vacuity",
+      "reverse_paraphrase": "An announcement implication is vacuous if its precondition is false.",
+      "finding": "تش صدق څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "passage": "self-refutation",
+      "reverse_paraphrase": "The announcement p and not Knows_b p becomes false after the update.",
+      "finding": "د اعلان وروسته نارښتيا کېدل ساتل شوي."
     }
   ]
 }

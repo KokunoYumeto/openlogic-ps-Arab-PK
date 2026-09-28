@@ -1,0 +1,67 @@
+{
+  "schema": "ps-b151-intuitionistic-four-staging/1",
+  "utc": "2026-09-28T19:17:06.166636+00:00",
+  "status": "four translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 490,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0491",
+    "OLP-0492",
+    "OLP-0493",
+    "OLP-0494"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0491",
+      "source_path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+      "source_sha256": "d4274226f1459dcd2a6029d4b8962f922c7ccaa0d3cb4ee090b2e442e40425c9",
+      "target_sha256": "c0696a5e391d7703e9ee8a7930b903f08f8802ec6d36af56bd81c051cee7c7d9",
+      "paired_blocks": 10,
+      "math_spans": 0,
+      "focused_qa_sha256": "335e5350ad5daf09da432600d2168ecf457585da450f293c0c9b6dad07c34498",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0492",
+      "source_path": "content/intuitionistic-logic/introduction/introduction.tex",
+      "source_sha256": "02462706d5ec30350164ff6ab0d5a17154435698739696ef05e564285efb6a1d",
+      "target_sha256": "5a5a814958af972b6bceedd09e0516647f2d8851299bd3f8cfa1076ae95767b9",
+      "paired_blocks": 11,
+      "math_spans": 0,
+      "focused_qa_sha256": "a151e0302f481d10048ae41be922601f1acfa85ff0f97d5e4273c343d0100406",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0493",
+      "source_path": "content/intuitionistic-logic/introduction/constructive-reasoning.tex",
+      "source_sha256": "0e2e1481d7a5d642bbb24f9a77b1521b56c1aa7d17842dd6b8c9e21cdb6d9ad1",
+      "target_sha256": "b8ecfc3fc857a6ea94f083cd48b14a01b4c86e4c968847f4c7ea552ee1be605e",
+      "paired_blocks": 16,
+      "math_spans": 32,
+      "focused_qa_sha256": "183569445fb8895c59b2b27d3905380e674374b8a6329c89fd28c70a7af97ae0",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0494",
+      "source_path": "content/intuitionistic-logic/introduction/syntax.tex",
+      "source_sha256": "ae3a1b269130b8527b095f31c2eb1ee75bb562ba9a69105052d56a0588b67186",
+      "target_sha256": "9995aaf0dbebdd8e60ef71c5f76cb6bedbb23cd610d66769741da073ef8cb25f",
+      "paired_blocks": 18,
+      "math_spans": 37,
+      "focused_qa_sha256": "0e5781e1cd25a4f1249cef1f7eb225e8d8b408bda192fe5281b72338e0f909be",
+      "source_treatment_ids": []
+    }
+  ],
+  "paired_blocks": 55,
+  "math_spans": 69,
+  "notes_path": "work/B151_FOUR_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "b4db3bcb6308b6acdd6719f48749fdc4586414ff0d0dd7c19289acc77823060a",
+  "consultation_path": "work/B151_FOUR_CANON_CONSULTATION.md",
+  "consultation_sha256": "e4b9f57d3059c80f00e12a832f68446348035682a962a52fbf96485729f8066f",
+  "b150_accepted_checkpoint_sha256": "ee8f31e9005298efed57d3aa6882a55eb7ea9619d9ad6ff7a82ed92fa09ecfc6",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [],
+  "next_action": "Register B151 intuitionistic opening and source review; inspect OLP-0495 BHK interpretation, then run cumulative QA and replay."
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T19:04:36.015225+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS",
+  "batch_id": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0487",
+      "source_path": "content/applied-modal-logic/epistemic-logic/properties-accessibility.tex",
+      "source_bytes": 3259,
+      "source_sha256": "b16925e353d0ef707658018dfded176d8ac04d486b0835b408349546d079e30d",
+      "target_sha256": "81dcfec6d370e26e22cb6217cee0e0caa6f655fed884c73758fa30bb982463a0",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0488",
+      "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+      "source_bytes": 4103,
+      "source_sha256": "3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d",
+      "target_sha256": "b6cc9555bda4ce5377f5cbf342738bb9dc511de194d2223a50b3ab890fc03192",
+      "paired_blocks": 17,
+      "source_correction_ids": [
+        "OLAML-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0489",
+      "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex",
+      "source_bytes": 2979,
+      "source_sha256": "9f39c9626584c27c3ce6509b5f4cb49db0c501e6fb9852598e66892db400beee",
+      "target_sha256": "b7f51622be2239cf3d2d0b51381003b9eee6afaaf637f48d09a126d6e8a3b8e4",
+      "paired_blocks": 21,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0490",
+      "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex",
+      "source_bytes": 5717,
+      "source_sha256": "b5e8c2ba742dc473a01dbc6f3908250b2afc6deb12f338019ac9482cfea361cd",
+      "target_sha256": "d2b9b99459f1f4fb82f9d73ae1559b311c31565301664d234803401f0787d333",
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLAML-004"
+      ]
+    }
+  ],
+  "notes_path": "work/B150_ALL4_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "9a6e25828a120f671655adb8854b4f4d751525ce4d42e7fdd40fe04cb702becd",
+  "consultation_path": "work/B150_ALL4_CANON_CONSULTATION.md",
+  "consultation_sha256": "ed4555b4b5ea46fadeaa1027e5cd4f3797474188c2fb9d9409c3ed86e9f6f9e9",
+  "staging_checkpoint_sha256": "3d842e26ba3767864cc46bbf4c0af37df58112b12187ab3a7fa6d20f1cc7d89e",
+  "staging_qa_sha256": {
+    "OLP-0487": "fae4fe59c581ba625d9ceaa60e674c6a2aef591bb349884a04063b30c02ca8a8",
+    "OLP-0488": "a9a3cacf5793ea67bc17f6fd52ad42dece2aa63bdaaf0d65b446d715cc558346",
+    "OLP-0489": "291f8a2a6f90e00e00d8839fae624ef7763897696fa4cb3e15edc008e3ff99eb",
+    "OLP-0490": "3abae595d0cd2e64a60764c7a9582ba6cac6f5b573b29d349a6a97b82459712e"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0488",
+      "source_correction_id": "OLAML-003",
+      "finding": "OLP-0484 د عاملانو سټ G تعريفوي؛ د باي‌سيميولېشن په همدغه څپرکي کښې A نۀ تعريفېږي."
+    },
+    {
+      "unit_id": "OLP-0490",
+      "source_correction_id": "OLAML-004",
+      "finding": "د شکل نثري ليبل د لوستونکي محتوا ده؛ نړۍوې، غشي، عامل نښې، هندسه او ټول رياضيکي سمبولونه عين ساتل شوي."
+    }
+  ],
+  "formula_policy": "71 paired blocks, 190 math spans; only two a in A to a in G substitutions in OLP-0488 and one prose TikZ label in OLP-0490. All other math, identifiers, tags, term tokens and diagram geometry exact.",
+  "unresolved": "د معرفتي اصولو او عام اعلان ځينې تخصصي نومونه لنډمهاله دي؛ د ليکوال يا انسان رسمي تصويب نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "552ce89e172d32d42c79d1fda7bb34c3b131f5d33e13c2fe7262128e03f9a92c",
+  "next_executable_action": "Register B150 epistemic principles, OLAML-003/004 and source review; run cumulative QA and canonical replay; then accept OLP-0487–0490 and continue OLP-0491."
+}

@@ -3444,3 +3444,22 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د بديلې تاريخچې د راتلونکي امکان له فورمول سره سم پښتو بيان شو او د انګرېزي تېر مهال توپير څنګ ته څرګند شو.
 - وجه: د منجمدې سرچينې «might have occurred» تېر مهال ښيي، خو هماغه \Diamond \Ftemp p فورمول او ورپسې تشريح په بديله تاريخچه کښې راتلونکے امکان ښيي.
 - فورمولونه او رسمي نښې عين دي؛ منجمده سرچينه نۀ ده بدله شوې؛ د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+## OLAML-003
+
+- واحد: OLP-0488۔
+- منجمده سرچينه: content/applied-modal-logic/epistemic-logic/bisimulations.tex؛ SHA-256 3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d۔
+- پښتو متن: ps-Arab-PK/content/applied-modal-logic/epistemic-logic/bisimulations.tex؛ SHA-256 b6cc9555bda4ce5377f5cbf342738bb9dc511de194d2223a50b3ab890fc03192۔
+- چلند: د سرچينې په دوو عامل-شرطونو کښې ناتعريف شوی A د څپرکي له تعريف شوي G سره بدل شو او څنګ‌ته څرګند شو.
+- وجه: OLP-0484 د عاملانو سټ G تعريفوي؛ د باي‌سيميولېشن په همدغه څپرکي کښې A نۀ تعريفېږي.
+- سرچينه نۀ ده بدله شوې؛ د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLAML-004
+
+- واحد: OLP-0490۔
+- منجمده سرچينه: content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex؛ SHA-256 b5e8c2ba742dc473a01dbc6f3908250b2afc6deb12f338019ac9482cfea361cd۔
+- پښتو متن: ps-Arab-PK/content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex؛ SHA-256 d2b9b99459f1f4fb82f9d73ae1559b311c31565301664d234803401f0787d333۔
+- چلند: د شکل يوازينۍ انګرېزي نثري نښه د عام اعلان په پښتو متن بدله شوه.
+- وجه: د شکل نثري ليبل د لوستونکي محتوا ده؛ نړۍوې، غشي، عامل نښې، هندسه او ټول رياضيکي سمبولونه عين ساتل شوي.
+- سرچينه نۀ ده بدله شوې؛ د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
