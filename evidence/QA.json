@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 454,
-    "structural_pass": 454,
+    "draft_units": 455,
+    "structural_pass": 455,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B137-NORMAL-MODAL-FILTRATION-EXAMPLES",
+  "batch": "PS-B138-NORMAL-MODAL-FILTRATION-FINITE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14782,6 +14782,33 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0455",
+      "path": "content/normal-modal-logic/filtrations/finite.tex",
+      "source_sha256": "aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5",
+      "translation_sha256": "5d2a672c69c8d490aa6316752785a5e09df3d91b08e40f7713f2c9db997f8911",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -21420,6 +21447,60 @@
       "passage": "problem request",
       "reverse_paraphrase": "Find W*, V* and the finest and coarsest accessibility relations for the binary tree model.",
       "finding": "د تمرين څلور غوښتنې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "scope of definition",
+      "reverse_paraphrase": "Filtrations are defined for any subformula-closed Gamma; the definition alone does not make them finite.",
+      "finding": "د تړلتيا او متناهي‌والي توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "infinite Gamma",
+      "reverse_paraphrase": "When Gamma is infinite, a filtration may also be infinite; this is a possibility, not a universal conclusion.",
+      "finding": "د امکان حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "finite Gamma",
+      "reverse_paraphrase": "For a finite Gamma, every filtration through it is finite.",
+      "finding": "د هر فلټريشن کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "classes",
+      "reverse_paraphrase": "Worlds in the same equivalence class agree on the truth of every formula in Gamma.",
+      "finding": "د هم‌ارزۍ د هوکړې حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "truth subset",
+      "reverse_paraphrase": "Each class determines the subset of Gamma true at all its member worlds.",
+      "finding": "د تابع د حاصل فرعي سټ کره دے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "injectivity",
+      "reverse_paraphrase": "If two classes determined the same truth subset, their representatives would be equivalent and the classes equal.",
+      "finding": "د يو پر يو د ثبوت جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "power set",
+      "reverse_paraphrase": "The assignment is an injection from W* into the power set of Gamma, not a surjection in the reverse direction.",
+      "finding": "د تابع جهت او د قوت‌سټ حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "cardinal bound",
+      "reverse_paraphrase": "The injection yields card(W*) at most card(Pow Gamma).",
+      "finding": "د کوچني يا مساوي نښه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "exponential bound",
+      "reverse_paraphrase": "If Gamma contains n sentences, the number of filtered worlds is at most 2^n.",
+      "finding": "د n او 2^n کره حد ساتل شوے."
     }
   ],
   "builds": [

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B137-NORMAL-MODAL-FILTRATION-EXAMPLES",
-  "status": "OLP-0454 source-reviewed and staged; 27 paired blocks, 18 semantic samples, one disclosed valuation-domain source treatment",
+  "batch_id": "PS-B138-NORMAL-MODAL-FILTRATION-FINITE",
+  "status": "OLP-0455 source-reviewed and staged; 9 paired blocks, 9 semantic samples, no source correction",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9577,6 +9577,28 @@
       ],
       "scope": "تر ټولو نرے او غټ فلټريشن، د R1/R2/R3 ثبوتونه، د جفت/طاق نړۍو دوه اړيکې، او د دوه‌تورو لړيو تمرين له څرګند ارزښت‌سټ سمون سره.",
       "allowed_residual_english": []
+    },
+    "OLP-0455": {
+      "batch_id": "PS-B138-NORMAL-MODAL-FILTRATION-FINITE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-MODAL-FILTRATION",
+        "TERM-EQUIVALENCE",
+        "TERM-POWERSET",
+        "TERM-INJECTIVE",
+        "TERM-SET-SIZE",
+        "TERM-FINITE",
+        "TERM-CARDINAL-ORDER"
+      ],
+      "scope": "د متناهي Γ لپاره د فلټريشن متناهي‌والے؛ د W* له هم‌ارزو ټولګيو د Γ قوت‌سټ ته يو پر يو تابع او د 2^n حد.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -16215,6 +16237,60 @@
       "passage": "problem request",
       "reverse_paraphrase": "Find W*, V* and the finest and coarsest accessibility relations for the binary tree model.",
       "finding": "د تمرين څلور غوښتنې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "scope of definition",
+      "reverse_paraphrase": "Filtrations are defined for any subformula-closed Gamma; the definition alone does not make them finite.",
+      "finding": "د تړلتيا او متناهي‌والي توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "infinite Gamma",
+      "reverse_paraphrase": "When Gamma is infinite, a filtration may also be infinite; this is a possibility, not a universal conclusion.",
+      "finding": "د امکان حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "finite Gamma",
+      "reverse_paraphrase": "For a finite Gamma, every filtration through it is finite.",
+      "finding": "د هر فلټريشن کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "classes",
+      "reverse_paraphrase": "Worlds in the same equivalence class agree on the truth of every formula in Gamma.",
+      "finding": "د هم‌ارزۍ د هوکړې حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "truth subset",
+      "reverse_paraphrase": "Each class determines the subset of Gamma true at all its member worlds.",
+      "finding": "د تابع د حاصل فرعي سټ کره دے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "injectivity",
+      "reverse_paraphrase": "If two classes determined the same truth subset, their representatives would be equivalent and the classes equal.",
+      "finding": "د يو پر يو د ثبوت جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "power set",
+      "reverse_paraphrase": "The assignment is an injection from W* into the power set of Gamma, not a surjection in the reverse direction.",
+      "finding": "د تابع جهت او د قوت‌سټ حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "cardinal bound",
+      "reverse_paraphrase": "The injection yields card(W*) at most card(Pow Gamma).",
+      "finding": "د کوچني يا مساوي نښه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0455",
+      "passage": "exponential bound",
+      "reverse_paraphrase": "If Gamma contains n sentences, the number of filtered worlds is at most 2^n.",
+      "finding": "د n او 2^n کره حد ساتل شوے."
     }
   ]
 }

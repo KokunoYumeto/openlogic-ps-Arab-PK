@@ -1,0 +1,85 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T03:01:38.912026+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-FINITE",
+  "batch_id": "PS-B138-NORMAL-MODAL-FILTRATION-FINITE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0455",
+      "source_path": "content/normal-modal-logic/filtrations/finite.tex",
+      "source_bytes": 1793,
+      "source_sha256": "aea5dd77f54889d35f027a23600c24a206ad42e7a6d736d51c16862ddd0997f5",
+      "target_sha256": "5d2a672c69c8d490aa6316752785a5e09df3d91b08e40f7713f2c9db997f8911",
+      "paired_blocks": 9,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B138_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "6a179237b6dae028ab94af536599d627024320a6c5e0b613c084f4bc1443629f",
+  "consultation_path": "work/B138_CANON_CONSULTATION.md",
+  "consultation_sha256": "ce48146dfe34c0600526d04bfed862b3d38b069170c3712cb3132a38ba7e3851",
+  "staging_qa_sha256": "8584e7223944263ff214e95249a097346c1f456572d51d6286422a927fdf6cd9",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 89,
+      "printed_page": "78",
+      "page_image_sha256": "75f7ee2621050fd9ef60ba53b56c0c7e5e017a7beca2bf4b326ef1e1ae4304ef",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P99-COUNTABILITY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 110,
+      "printed_page": "99",
+      "page_image_sha256": "dc729b28c01ff40d57f7caccf5be50f7f11dbc51aa144d53f4cb5c446a195049",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [],
+  "formula_policy": "All OLP-0455 mathematical spans, IDs, tags, environments, structural macros and term tokens match the frozen source exactly.",
+  "unresolved": "د متناهي فلټريشن ځانګړې پاکستانۍ مودالي اصطلاح لا لنډمهالې ده؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "6e2089a47da49183276a957194e2ced769284abb2dbd7299c6504fc64cc96daa",
+  "next_executable_action": "Run cumulative and canonical QA, then continue OLP-0456."
+}
