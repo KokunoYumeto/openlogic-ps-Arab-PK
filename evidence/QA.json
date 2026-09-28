@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 446,
-    "structural_pass": 446,
+    "draft_units": 448,
+    "structural_pass": 448,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
+  "batch": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14518,6 +14518,75 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "path": "content/normal-modal-logic/completeness/truth-lemma.tex",
+      "source_sha256": "ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147",
+      "translation_sha256": "2f475cea8509c7b451b0253920f21a5756f18b89aa17a1e7bbcb65d74c55a0ff",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-023"
+      ],
+      "status": "structural-pass",
+      "optional_tag_diff": {
+        "source_only": [
+          "probFalse,probTrue,probNot,proband,probOr,probIf,probIff,probBox,probDiamond"
+        ],
+        "target_only": [
+          "probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0448",
+      "path": "content/normal-modal-logic/completeness/completeness-K.tex",
+      "source_sha256": "067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a",
+      "translation_sha256": "1c5dd8003a97f66b9f6c2338645fe48b5349755215282a9ed4533d2df2913418",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "KTB"
+      ],
+      "allowed_residual_english": [
+        "KTB"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -20532,6 +20601,120 @@
       "passage": "valuation",
       "reverse_paraphrase": "A propositional variable is true exactly at the worlds whose sets contain it.",
       "finding": "ارزښت ټاکنه له غړيتوب سره تړي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "truth lemma",
+      "reverse_paraphrase": "At every canonical world and for each formula, truth iff membership.",
+      "finding": "د هر فارمول، ټاکلې نړۍ او دوه اړخيز شرط معنا ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "false",
+      "reverse_paraphrase": "Bottom is false and absent from a consistent world.",
+      "finding": "دواړه منفي شرطونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "true",
+      "reverse_paraphrase": "Top is true and belongs to each complete consistent world.",
+      "finding": "دواړه مثبت شرطونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "variable",
+      "reverse_paraphrase": "Truth at Delta iff Delta belongs to its valuation set iff the variable belongs to Delta.",
+      "finding": "د ارزښت ټاکنې دواړه غړيتوبونه بېل ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "negation",
+      "reverse_paraphrase": "Negation is true iff its operand is false iff its negation belongs to Delta.",
+      "finding": "نفي او د استقرا فرضيه ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Both operands must be true and both belong to the complete set.",
+      "finding": "د او رابطې دواړه غړي لازم دي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "disjunction",
+      "reverse_paraphrase": "At least one operand is true and at least one belongs to the complete set.",
+      "finding": "يا د سرچينې په معمول غير انحصاري معنا ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "conditional",
+      "reverse_paraphrase": "The antecedent is false or the consequent true, corresponding to absence or presence in the complete set.",
+      "finding": "د مخکښ نفي او د پايلې مثبت شرط ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Either both operands are true or both false, with corresponding membership cases.",
+      "finding": "دواړه برابر رښتياوالي صورتونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "box forward",
+      "reverse_paraphrase": "Truth at every accessible world implies membership at every completion extending Box extraction, hence Box membership.",
+      "finding": "د ټولو نړۍو کميت او د Box لمې کارونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "box reverse",
+      "reverse_paraphrase": "Box membership forces operand membership and thus truth in every accessible world.",
+      "finding": "هره لاسرسي وړ نړۍ اخيستل کېږي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "diamond forward",
+      "reverse_paraphrase": "A witnessing accessible world gives operand membership and hence Diamond membership in the original world.",
+      "finding": "د يوه شاهد شتون او د اړيکې جهت ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "diamond reverse",
+      "reverse_paraphrase": "Diamond membership yields a complete consistent witnessing world, and truth follows using the standing induction hypothesis and modal semantics.",
+      "finding": "د مخکې فرض شوې استقرا لنډه کارونه په امانتدار ډول ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "exercise selector",
+      "reverse_paraphrase": "The conjunction exercise uses the same case-sensitive probAnd tag as the proof branch.",
+      "finding": "يوازې عين چاڼ سم شوے؛ فورمول نۀ بدلېږي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "definition",
+      "reverse_paraphrase": "A single model determines Sigma iff its globally true formulas are exactly Sigma-derivable.",
+      "finding": "د يوه مدل او ټولو فارمولونو کميت ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "determination forward",
+      "reverse_paraphrase": "Global canonical truth gives membership in every complete consistent set; use the empty-premise characterization to get derivability.",
+      "finding": "تش سټ او د هر بشپړ سازګار سټ کميت ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "determination reverse",
+      "reverse_paraphrase": "Derivability and deductive closure give membership and truth at every world, hence global truth.",
+      "finding": "د اشتقاقي تړلتيا او صدق دواړه ګامونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "K completeness",
+      "reverse_paraphrase": "K is complete for all models; contrapositively a nonderivable formula fails in its canonical model and is invalid.",
+      "finding": "همدا کمزورې بشپړتيا او متقابل نفي ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "general class caveat",
+      "reverse_paraphrase": "For a particular class, determining Sigma is insufficient: its canonical model must also belong to that class, which need not always hold.",
+      "finding": "د ځانګړي ټولګي اضافه شرط او وروستۍ نفي ساتل شوي۔"
     }
   ],
   "builds": [

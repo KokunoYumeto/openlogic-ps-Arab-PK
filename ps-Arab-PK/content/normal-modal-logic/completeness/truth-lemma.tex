@@ -1,0 +1,148 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{tru}
+
+\olsection{د صدق لمه}
+
+کانوني مدل~$\mModel{M^\Sigma}$ داسې تعريف شوے دے چې
+$\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله چې $!A \in \Delta$۔ د !!{propositional
+variable}s لپاره د $V^\Sigma$ تعريف دا نتيجه نېغ په نېغه ورکوي۔ خو بايد
+وښيو چې دا همارزي د ټولو !!{formula}s لپاره سمه ده۔ دا کار په استقرا کوو۔
+په استقرايي ګام کښې د هغو !!{formula}s لپاره د همارزۍ ثبوت راځي چې بياني
+رابطې لري (چې هلته \olref[ccs]{prop:ccs-properties} کارول پکار دي)، او د هغو لپاره
+چې مودالي عملګر لري (چې هلته د \olref[mod]{sec} نتيجې کاروو)۔
+
+\begin{prop}[د صدق لمه]
+  \ollabel{prop:truthlemma}
+  د هر !!{formula}~$!A$ لپاره، $\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله چې
+  $!A \in \Delta$۔
+\end{prop}
+
+\begin{proof}
+  پر~$!A$ استقرا کوو۔
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat/{M^\Sigma}{\lfalse}[\Delta]$
+        د \olref[syn][trw]{defn:mmodels} له مخې، او $\lfalse \notin \Delta$
+        د
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lfalse} له مخې۔}}{}
+
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M^\Sigma}{\ltrue}[\Delta]$
+        د \olref[syn][trw]{defn:mmodels} له مخې، او $\ltrue \in \Delta$ د
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-ltrue} له مخې۔}}{}
+
+    \item \indcase{!A}{p}{$\mSat{M^\Sigma}{p}[\Delta]$ هله او يوازې هله چې $\Delta \in
+      V^\Sigma(p)$، د \olref[syn][trw]{defn:mmodels} له مخې۔ همداراز، $\Delta
+      \in V^\Sigma(p)$ هله او يوازې هله چې $p \in \Delta$، د~$V^\Sigma$
+      د تعريف له مخې۔}
+
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        \iftag{probNot}{تمرين۔}{$\mSat{M^\Sigma}{\lnot !B}[\Delta]$
+          هله او يوازې هله چې $\mSat/{M^\Sigma}{!B}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels})، هله او يوازې هله چې $!B \notin \Delta$ (د
+          استقرا فرضيې له مخې)، هله او يوازې هله چې $\lnot !B \in \Delta$ (د
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot} له مخې)۔}}}{}
+
+    \tagitem{prvAnd}{\indcase{!A}{!B \land !C}{%
+        \iftag{probAnd}{تمرين۔}{$\mSat{M^\Sigma}{!B \land
+            !C}[\Delta]$ هله او يوازې هله چې $\mSat{M^\Sigma}{!B}[\Delta]$ او
+          $\mSat{M^\Sigma}{!C}[\Delta]$ (د
+          \olref[syn][trw]{defn:mmodels} له مخې)، هله او يوازې هله چې $!B \in \Delta$ او $!C
+          \in \Delta$ (د استقرا فرضيې له مخې)، هله او يوازې هله چې $!B \land !C \in
+          \Delta$ (د
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-land} له مخې)۔}}}{}
+
+    \tagitem{prvOr}{\indcase{!A}{!B \lor !C}{%
+        \iftag{probOr}{تمرين۔}{$\mSat{M^\Sigma}{!B \lor
+            !C}[\Delta]$ هله او يوازې هله چې $\mSat{M^\Sigma}{!B}[\Delta]$ يا
+          $\mSat{M^\Sigma}{!C}[\Delta]$ (د
+          \olref[syn][trw]{defn:mmodels} له مخې)، هله او يوازې هله چې $!B \in \Delta$ يا $!C
+          \in \Delta$ (د استقرا فرضيې له مخې)، هله او يوازې هله چې $!B \lor !C \in
+          \Delta$ (د
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lor} له مخې)۔}}}{}
+
+    \tagitem{prvIf}{\indcase{!A}{!B \lif !C}{%
+        \iftag{probIf}{تمرين۔}{$\mSat{M^\Sigma}{!B \lif
+            !C}[\Delta]$ هله او يوازې هله چې $\mSat/{M^\Sigma}{!B}[\Delta]$ يا
+          $\mSat{M^\Sigma}{!C}[\Delta]$ (د
+          \olref[syn][trw]{defn:mmodels} له مخې)، هله او يوازې هله چې $!B \notin \Delta$ يا
+          $!C \in \Delta$ (د استقرا فرضيې له مخې)، هله او يوازې هله چې $!B \lif !C
+          \in \Delta$ (د
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lif} له مخې)۔}}}{}
+
+    \tagitem{prvIff}{\indcase{!A}{!B \liff !C}{%
+        \iftag{probIff}{تمرين۔}{$\mSat{M^\Sigma}{!B \liff
+            !C}[\Delta]$ هله او يوازې هله چې يا $\mSat{M^\Sigma}{!B}[\Delta]$ او
+          $\mSat{M^\Sigma}{!C}[\Delta]$، يا
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ او
+          $\mSat/{M^\Sigma}{!C}[\Delta]$ (د
+          \olref[syn][trw]{defn:mmodels} له مخې)، هله او يوازې هله چې يا $!B \in \Delta$
+          او $!C \in \Delta$، يا $!B \notin \Delta$ او $!C \notin
+          \Delta$ (د استقرا فرضيې له مخې)، هله او يوازې هله چې $!B \liff !C \in
+          \Delta$ (د
+          \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-liff} له مخې)۔}}}{}
+
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        \iftag{probBox}{تمرين۔}{لومړے فرض کړو چې
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$۔ د
+          \olref[syn][trw]{defn:mmodels} له مخې، د هر $\Delta'$ لپاره چې
+          $R^\Sigma \Delta\Delta'$ وي،
+          $\mSat{M^\Sigma}{!B}[\Delta']$۔ د استقرا فرضيې له مخې، د
+          هر $\Delta'$ لپاره چې $R^\Sigma \Delta\Delta'$ وي، $!B \in
+          \Delta'$۔ د $R^\Sigma$ د تعريف له مخې، د هر $\Delta'$
+          لپاره چې $\Box^{-1} \Delta \subseteq \Delta'$ وي، $!B \in
+          \Delta'$۔ د \olref[mod]{prop:box} له مخې، $\Box !B \in
+          \Delta$۔
+
+          اوس فرض کړو چې $\Box !B \in \Delta$۔ داسې $\Delta' \in W^\Sigma$
+          واخلو چې $R^\Sigma \Delta\Delta'$ وي، يعنې $\Box^{-1}\Delta
+          \subseteq \Delta'$۔ چونکې $\Box !B \in \Delta$، نو $!B \in
+          \Box^{-1} \Delta$۔ له دې امله، $!B \in \Delta'$۔ د
+          استقرا فرضيې له مخې، $\mSat{M^\Sigma}{!B}[\Delta']$۔ چونکې
+          $\Delta'$ د $R^\Sigma \Delta\Delta'$ په شرط هره نړۍ وه، نو د
+          ټولو $\Delta' \in W^\Sigma$ لپاره چې $R^\Sigma
+          \Delta\Delta'$ وي، $\mSat{M^\Sigma}{!B}[\Delta']$۔ د
+          \olref[syn][trw]{defn:mmodels} له مخې، $\mSat{M^\Sigma}{\Box
+            !B}[\Delta]$۔}}}{}
+
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        \iftag{probDiamond}{تمرين۔}{لومړے فرض کړو چې
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$۔ د
+          \olref[syn][trw]{defn:mmodels} له مخې، داسې يو $\Delta'$ شته چې
+          $R^\Sigma \Delta\Delta'$ وي او $\mSat{M^\Sigma}{!B}[\Delta']$۔
+          د استقرا فرضيې له مخې، داسې يو $\Delta'$ شته چې
+          $R^\Sigma \Delta\Delta'$ وي او $!B \in \Delta'$۔ د
+          $R^\Sigma$ د تعريف له مخې،\iftag{prvBox}{ داسې يو $\Delta'$ شته چې
+            $\Box^{-1} \Delta \subseteq \Delta'$ وي او $!B \in \Delta'$۔
+            د \olref[mod]{prop:diamond} له مخې،}{} داسې يو $\Delta'$ شته
+          چې $\Diamond \Delta' \subseteq \Delta$ وي او $!B \in
+          \Delta'$۔ چونکې $!B \in \Delta'$، نو $\Diamond !B \in \Diamond
+          \Delta'$، نو $\Diamond !B \in \Delta$۔
+
+          اوس فرض کړو چې $\Diamond !B \in \Delta$۔ د
+          \olref[mod]{prop:diamond} له مخې، داسې يو بشپړ
+          $\Sigma$-سازګار $\Delta' \in W^\Sigma$ شته چې
+          $\Diamond \Delta' \subseteq \Delta$ وي او $!B \in
+          \Delta'$۔\iftag{prvBox}{ د \olref[mod]{lem:box-iff-diamond} له مخې،
+            داسې يو $\Delta' \in W^\Sigma$ شته چې $\Box^{-1}
+            \Delta \subseteq \Delta'$ وي او $!B \in \Delta'$۔}{} د
+          $R^\Sigma$ د تعريف له مخې، $R^\Sigma \Delta\Delta'$، نو داسې
+          يو $\Delta' \in W^\Sigma$ شته چې $R^\Sigma
+          \Delta\Delta'$ وي او $!B \in \Delta'$۔ د
+          \olref[syn][trw]{defn:mmodels} له مخې، $\mSat{M^\Sigma}{\Diamond
+            !B}[\Delta]$۔}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
+  د \olref[nml][com][tru]{prop:truthlemma} ثبوت بشپړ کړئ۔ (د سرچينې د دې تمرين په ټاګ کښې
+  \texttt{proband} د ثبوت له \texttt{probAnd} سره د لويو او وړو تورو توپير لري؛ دلته د ثبوت
+  هماغه ټاګ راولو، څو د «او» رابطې اختياري تمرين هم په سم ډول وټاکل شي۔)
+\end{probtag}
+
+\end{document}

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
-  "status": "OLP-0444–0446 source-reviewed and staged; 55 paired blocks, 25 semantic samples and four disclosed source treatments",
+  "batch_id": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
+  "status": "OLP-0447–0448 source-reviewed and staged; 36 paired blocks, 19 semantic samples and one disclosed exercise-selector treatment",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9393,6 +9393,58 @@
       ],
       "scope": "Canonical world-set, accessibility relation and propositional valuation definition.",
       "allowed_residual_english": []
+    },
+    "OLP-0447": {
+      "batch_id": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-CANONICAL-MODEL",
+        "TERM-MODAL-SET-PREFIX-EXTRACTION",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "د صدق لمې ټولې ثبوتي او اختياري څانګې؛ د او رابطې د تمرين څرګند چاڼي سمون.",
+      "allowed_residual_english": []
+    },
+    "OLP-0448": {
+      "batch_id": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-SET-DERIVABILITY",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-CANONICAL-MODEL",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-DETERMINATION"
+      ],
+      "scope": "د يوه مدل له خوا ټاکنه، د K بشپړتيا او د ځانګړي ټولګي اضافي شرط.",
+      "allowed_residual_english": [
+        "KTB"
+      ]
     }
   },
   "semantic_review": [
@@ -15407,6 +15459,120 @@
       "passage": "valuation",
       "reverse_paraphrase": "A propositional variable is true exactly at the worlds whose sets contain it.",
       "finding": "ارزښت ټاکنه له غړيتوب سره تړي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "truth lemma",
+      "reverse_paraphrase": "At every canonical world and for each formula, truth iff membership.",
+      "finding": "د هر فارمول، ټاکلې نړۍ او دوه اړخيز شرط معنا ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "false",
+      "reverse_paraphrase": "Bottom is false and absent from a consistent world.",
+      "finding": "دواړه منفي شرطونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "true",
+      "reverse_paraphrase": "Top is true and belongs to each complete consistent world.",
+      "finding": "دواړه مثبت شرطونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "variable",
+      "reverse_paraphrase": "Truth at Delta iff Delta belongs to its valuation set iff the variable belongs to Delta.",
+      "finding": "د ارزښت ټاکنې دواړه غړيتوبونه بېل ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "negation",
+      "reverse_paraphrase": "Negation is true iff its operand is false iff its negation belongs to Delta.",
+      "finding": "نفي او د استقرا فرضيه ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Both operands must be true and both belong to the complete set.",
+      "finding": "د او رابطې دواړه غړي لازم دي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "disjunction",
+      "reverse_paraphrase": "At least one operand is true and at least one belongs to the complete set.",
+      "finding": "يا د سرچينې په معمول غير انحصاري معنا ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "conditional",
+      "reverse_paraphrase": "The antecedent is false or the consequent true, corresponding to absence or presence in the complete set.",
+      "finding": "د مخکښ نفي او د پايلې مثبت شرط ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Either both operands are true or both false, with corresponding membership cases.",
+      "finding": "دواړه برابر رښتياوالي صورتونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "box forward",
+      "reverse_paraphrase": "Truth at every accessible world implies membership at every completion extending Box extraction, hence Box membership.",
+      "finding": "د ټولو نړۍو کميت او د Box لمې کارونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "box reverse",
+      "reverse_paraphrase": "Box membership forces operand membership and thus truth in every accessible world.",
+      "finding": "هره لاسرسي وړ نړۍ اخيستل کېږي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "diamond forward",
+      "reverse_paraphrase": "A witnessing accessible world gives operand membership and hence Diamond membership in the original world.",
+      "finding": "د يوه شاهد شتون او د اړيکې جهت ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "diamond reverse",
+      "reverse_paraphrase": "Diamond membership yields a complete consistent witnessing world, and truth follows using the standing induction hypothesis and modal semantics.",
+      "finding": "د مخکې فرض شوې استقرا لنډه کارونه په امانتدار ډول ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0447",
+      "passage": "exercise selector",
+      "reverse_paraphrase": "The conjunction exercise uses the same case-sensitive probAnd tag as the proof branch.",
+      "finding": "يوازې عين چاڼ سم شوے؛ فورمول نۀ بدلېږي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "definition",
+      "reverse_paraphrase": "A single model determines Sigma iff its globally true formulas are exactly Sigma-derivable.",
+      "finding": "د يوه مدل او ټولو فارمولونو کميت ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "determination forward",
+      "reverse_paraphrase": "Global canonical truth gives membership in every complete consistent set; use the empty-premise characterization to get derivability.",
+      "finding": "تش سټ او د هر بشپړ سازګار سټ کميت ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "determination reverse",
+      "reverse_paraphrase": "Derivability and deductive closure give membership and truth at every world, hence global truth.",
+      "finding": "د اشتقاقي تړلتيا او صدق دواړه ګامونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "K completeness",
+      "reverse_paraphrase": "K is complete for all models; contrapositively a nonderivable formula fails in its canonical model and is invalid.",
+      "finding": "همدا کمزورې بشپړتيا او متقابل نفي ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0448",
+      "passage": "general class caveat",
+      "reverse_paraphrase": "For a particular class, determining Sigma is insufficient: its canonical model must also belong to that class, which need not always hold.",
+      "finding": "د ځانګړي ټولګي اضافه شرط او وروستۍ نفي ساتل شوي۔"
     }
   ]
 }

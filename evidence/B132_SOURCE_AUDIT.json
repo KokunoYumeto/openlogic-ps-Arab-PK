@@ -1,0 +1,128 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T00:31:45.160557+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TRUTH-DETERMINATION",
+  "batch_id": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0447",
+      "source_path": "content/normal-modal-logic/completeness/truth-lemma.tex",
+      "source_bytes": 6973,
+      "source_sha256": "ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147",
+      "target_sha256": "2f475cea8509c7b451b0253920f21a5756f18b89aa17a1e7bbcb65d74c55a0ff",
+      "paired_blocks": 21,
+      "source_correction_ids": [
+        "OLNML-023"
+      ]
+    },
+    {
+      "unit_id": "OLP-0448",
+      "source_path": "content/normal-modal-logic/completeness/completeness-K.tex",
+      "source_bytes": 2375,
+      "source_sha256": "067d811b2d64251f4f2365320e942a4e47341e8925b45f84de5571d735b5fa2a",
+      "target_sha256": "1c5dd8003a97f66b9f6c2338645fe48b5349755215282a9ed4533d2df2913418",
+      "paired_blocks": 15,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B132_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "961dff6bcb0ac7d5c05b406996b853c21a527ad3466bd6b77d58e837402cd6e3",
+  "consultation_path": "work/B132_CANON_CONSULTATION.md",
+  "consultation_sha256": "b7b70b27f51349d9bdde221947cae6846ebf11b0c80ace8f033410fdcac5e15f",
+  "staging_qa_sha256": "201c6e8f927ad806258ca711cf94b55bd12d6223e6945b96e728df134705718c",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "fresh B132 rendered-page inspection",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 28,
+      "printed_page": "17",
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 145,
+      "printed_page": "140",
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P25-TAUTOLOGY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 30,
+      "printed_page": "25",
+      "page_image_sha256": "d078af84a4d67a74fc36e219241250eb763f3880ec4a20ce3d3605c892b29c00",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "fresh B132 rendered-page inspection",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0447",
+      "source_correction_id": "OLNML-023",
+      "finding": "د تمرين proband او د ثبوت probAnd د حالتو له مخې بېل ټاګونه دي. يوازې د ثبوت د او رابطې ټاګ په فعالولو سره پخوانے چاڼ تمرين نۀ رانيسي. عين موجود ثبوتي ټاګ د چاڼ مطلوبه څانګه راولي."
+    }
+  ],
+  "formula_policy": "All inline/display math unchanged. One registered probtag case repair only; other tags, IDs, environments and term tokens preserved. Both QA checkers now cover probtag selector lists; prior 446 units have exact source/target selector parity.",
+  "unresolved": "د مودالي ټاکنې ځانګړے پاکستانے مرکب لنډمهالے دے؛ انساني تصويب يا د لوستونکي چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "8a607280e21c9052379d67c8171952615405097031505ddecdf7e48e1ca49532",
+  "next_executable_action": "Run cumulative and canonical QA; continue OLP-0449.",
+  "formal_english_exceptions": [
+    {
+      "unit_id": "OLP-0448",
+      "frozen_literal": "\\Log{KTB4}",
+      "detector_fragment": "KTB",
+      "role": "unchanged formal modal-logic name; no ordinary English prose exemption"
+    }
+  ]
+}

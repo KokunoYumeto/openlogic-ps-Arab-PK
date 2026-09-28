@@ -66,7 +66,7 @@ def ids(s):
  return Counter(re.findall(r'\\(?:olfileid|ollabel|olref|Olref|olimport|olasset|cite\w*|label|cref|ref|url|oliflabeldef|printtoken|Cref)(?:\[[^\]]*\])*(?:\{[^{}]*\})',s)+re.findall(r'\\tagrefs\{(?:[^{}]|\{[^{}]*\})*\}',s))
 STRUCTURAL_MACRO_NAMES=set('documentclass iftag olchapter olpart olsection subsection subsubsection olfileid olimport OLEndChapterHook Article Axiom AxiomC Deduce DeduceC UnaryInf UnaryInfC BinaryInf BinaryInfC TrinaryInf TrinaryInfC QuaternaryInf QuaternaryInfC RightLabel LeftLabel DischargeRule DisplayProof noLine doubleLine bottomAlignProof Intro Elim FalseInt FalseCl LeftR RightR tagprob tagitem tagtrue tagfalse tagrefs item footnote caption olasset includegraphics href url cite citep citet ollabel label olref Olref ref cref Cref'.split())
 def optional_tags(s):
- return Counter(re.findall(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{([^{}]+)\}',s))
+ return Counter(re.findall(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{([^{}]+)\}',s)+re.findall(r'\\begin\{probtag\}\{([^{}]+)\}',s))
 def structural_macros(s):
  s=re.sub(r'(?m)(?<!\\)%.*$','',s)
  return Counter(x for x in re.findall(r'\\([A-Za-z]+)',s) if x in STRUCTURAL_MACRO_NAMES)

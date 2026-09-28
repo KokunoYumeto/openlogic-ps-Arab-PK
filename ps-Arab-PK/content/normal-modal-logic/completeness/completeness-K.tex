@@ -1,0 +1,63 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: completeness-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmk}
+
+\olsection{د \Log{K} ټاکنه او بشپړتيا}
+
+اوس چمتو يو چې کانوني مدل د بشپړتيا د ثابتولو لپاره وکاروو۔ بشپړتيا له دې واقعيت څخه
+راځي چې د~$\Sigma$ په کانوني مدل کښې رښتيني !!{formula}s عين هغه دي چې
+د $\Sigma$ په نسبت !!{derivable} دي۔ هغه مدلونه چې دا خاصيت لري، ويل کېږي چې
+$\Sigma$ \emph{ټاکي}۔
+
+\begin{defn}
+  يو مدل $\mModel{M}$ يو عادي مودالي منطق~$\Sigma$ په عين هغه وخت
+  \emph{ټاکي} چې، د ټولو !!{formula}s~$!A$ لپاره، $\mSat{M}{!A}$ هله او يوازې هله
+  چې $\Sigma \Proves !A$۔
+\end{defn}
+
+\begin{thm}[ټاکنه]\ollabel{thm:determination}
+   $\mSat{M^\Sigma}{!A}$ هله او يوازې هله چې $\Sigma \Proves !A$۔
+\end{thm}
+
+\begin{proof}
+  که $\mSat{M^\Sigma}{!A}$ وي، نو د هر بشپړ
+  $\Sigma$-سازګار $\Delta$ لپاره
+  $\mSat{M^\Sigma}{!A}[\Delta]$ لرو۔ نو د صدق لمې له مخې، د
+  هر بشپړ $\Sigma$-سازګار $\Delta$ لپاره $!A \in
+  \Delta$؛ بيا د \olref[lin]{cor:provability-characterization} له مخې (د $\Gamma =
+  \emptyset$ په اخيستو)، $\Sigma \Proves !A$۔
+
+  په سرچپه لوري کښې، که $\Sigma \Proves !A$ وي، نو د
+  \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-closed} له مخې هر
+  بشپړ $\Sigma$-سازګار $\Delta$،~$!A$ لري؛ نو د
+  صدق لمې له مخې، د هر~$\Delta \in W^\Sigma$ لپاره
+  $\mSat{M^\Sigma}{!A}[\Delta]$، يعنې $\mSat{M^\Sigma}{!A}$۔
+\end{proof}
+
+چونکې د \Log{K} کانوني مدل،~\Log{K} ټاکي، نو سمدستي
+د \Log{K} بشپړتيا د يوې نتيجې په توګه لرو:
+
+\begin{cor}\ollabel{cor:Kcomplete}
+  بنسټيز مودالي منطق \Log{K} د ټولو مدلونو د ټولګي په نسبت
+  بشپړ دے، يعنې که $\Entails !A$ وي، نو $\Log{K}
+  \Proves !A$۔
+\end{cor}
+
+\begin{proof}
+  د متقابل نفي له مخې، که $\Log{K} \Proves/ !A$ وي، نو د ټاکنې له مخې
+  $\mSat/{M^{\Log{K}}}{!A}$؛ نو $!A$ اعتبار نۀ لري۔
+\end{proof}
+
+د مدلونو د يوه ټولګي په نسبت د نظام $\Sigma$ د بشپړتيا په عمومي صورت کښې،
+لکه د انعکاسي، متناظرو او متعدي مدلونو د ټولګي په نسبت د \Log{KTB4} بشپړتيا،
+يوازې ټاکنه بس نۀ ده۔ بايد دا هم وښيو چې د نظام
+$\Sigma$ کانوني مدل د هماغه ټولګي غړے دے۔ دا خبره د کانوني مدل له جوړونې څخه
+په څرګند ډول نۀ راځي---او تل رښتيا هم نۀ وي!
+
+\end{document}
