@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 505,
-    "structural_pass": 505,
+    "draft_units": 510,
+    "structural_pass": 510,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B153-INTUITIONISTIC-SEMANTICS",
+  "batch": "PS-B154-INTUITIONISTIC-COMPLETENESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16500,6 +16500,168 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0506",
+      "path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+      "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+      "translation_sha256": "14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-009"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0507",
+      "path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+      "source_sha256": "2397d36f77e15b27cf5889ab0e2bdfd34e060416aae5089afbfccb881cde8128",
+      "translation_sha256": "285346a8f172dc8659608435a241b2a0bdeb306db723bf713551f3bcd1cc804f",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0508",
+      "path": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+      "source_sha256": "b2a9084e2846c9a268c63972c78925c3050fdff0bcb3a2942242bfca163cdbaf",
+      "translation_sha256": "f40952c297b5c467e1bf696afbfc7f5c4df147939ca3f6ee26393ce3a30bab53",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-010"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Delta$"
+        ],
+        "target_only": [
+          "$\\Delta(\\sigma)$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0509",
+      "path": "content/intuitionistic-logic/soundness-completeness/completeness-thm.tex",
+      "source_sha256": "810866d495adead851b265f7e62f0c993a3d49fc0f42e901bf0acc24f32efe3c",
+      "translation_sha256": "9e5ecd459adbd7c21d4b55cc462e3a7246d4dbcc6be756ac7463791eadc167f9",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0510",
+      "path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+      "source_sha256": "336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5",
+      "translation_sha256": "ab89f08eed06e86c077fa9252d3deecefbd867310a0b22c066100a5f8ba7c5cb",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-011"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -24896,6 +25058,150 @@
       "passage": "false-elimination",
       "reverse_paraphrase": "False holds at no world, so a counterexample is impossible.",
       "finding": "د محال نشتون عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "classical-contrast",
+      "reverse_paraphrase": "Double-negation elimination cannot infer A intuitionistically.",
+      "finding": "د کلاسيک او شهودي توپير عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "prime",
+      "reverse_paraphrase": "Prime means consistent, deductively closed, and disjunction-selecting.",
+      "finding": "درې شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "extension",
+      "reverse_paraphrase": "Lindenbaum extension preserves non-derivability of A.",
+      "finding": "د ناثابتېدنې شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "finite-proof",
+      "reverse_paraphrase": "A proof from the union uses finitely many assumptions.",
+      "finding": "د متناهي فرضونو ګام عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "priority",
+      "reverse_paraphrase": "Only finitely many earlier indices need handling before j.",
+      "finding": "OLINT-009 د شمېر ناسمې ادعا اړوي."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "worlds",
+      "reverse_paraphrase": "Worlds are finite natural-number sequences.",
+      "finding": "د نړۍو سټ عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "extension",
+      "reverse_paraphrase": "A child uses a prime extension when B does not prove C.",
+      "finding": "د غځونې شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "access",
+      "reverse_paraphrase": "Accessibility is the initial-segment partial order.",
+      "finding": "د لاسرسي لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "valuation",
+      "reverse_paraphrase": "V(p) records worlds whose prime sets contain p.",
+      "finding": "د اټومي ټاکنې تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "lemma",
+      "reverse_paraphrase": "Truth at sigma iff derivability from Delta(sigma).",
+      "finding": "OLINT-010 د نړۍ سټ په سريزه کښې سموي."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "false",
+      "reverse_paraphrase": "Prime consistency excludes false.",
+      "finding": "د محال حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "atom",
+      "reverse_paraphrase": "Atomic truth follows the valuation.",
+      "finding": "د اټومي حالت تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "or",
+      "reverse_paraphrase": "Primeness proves the reverse disjunction direction.",
+      "finding": "د فصل اولنيوالے عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "implication",
+      "reverse_paraphrase": "A failing conditional has a future world witnessing B and not C.",
+      "finding": "د راتلونکې نړۍ شاهد عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "negation",
+      "reverse_paraphrase": "The source leaves its negation induction case empty.",
+      "finding": "تش حالت په پټه نۀ دے ډک شوے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "contrapositive",
+      "reverse_paraphrase": "Non-derivability yields a prime extension and a countermodel.",
+      "finding": "د مقابل لوري تسلسل عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "root",
+      "reverse_paraphrase": "The empty sequence has the original prime set.",
+      "finding": "د ريښې نړۍ تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "truth",
+      "reverse_paraphrase": "Truth lemma gives every premise true and A false at the root.",
+      "finding": "د ضدمدل شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "exercises",
+      "reverse_paraphrase": "Three exercises retain positive formulas, disjunction property, linear frames.",
+      "finding": "د تمرينونو درې موضوعګانې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "theorem",
+      "reverse_paraphrase": "The source states the finite countermodel property.",
+      "finding": "قضيه د سرچينې په توګه عين ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "quotient",
+      "reverse_paraphrase": "The proposed quotient identifies worlds by atomic profiles.",
+      "finding": "جوړونه په کره ډول ژباړل شوې."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "proof-gap",
+      "reverse_paraphrase": "That quotient does not preserve implication truth.",
+      "finding": "OLINT-011 د ناسموالي ضدبېلګه ثبتوي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "exercise",
+      "reverse_paraphrase": "The source asks readers to prove the false induction claim.",
+      "finding": "د تمرين سرچينه او څنګ‌ته خبرداری جلا دي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "decision",
+      "reverse_paraphrase": "The concluding algorithm claim is sourced, not established by this proof.",
+      "finding": "د ثبوت حد په څرګندونه کښې روښانه دے."
     }
   ],
   "builds": [

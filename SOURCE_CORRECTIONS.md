@@ -3540,3 +3540,33 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د لومړي حالت د صدق نړۍ په نښه کښې وتړل شوه او په دواړو فرضي سټونو کښې يوغړي قوسونه ورزيات شول.
 - وجه: د فصل د لرې کولو مخکېنۍ مقدمې او د استقرا فرض همدغه نړۍ او يوغړي فرضي سټونه غواړي.
 - سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+## OLINT-009
+
+- واحد: OLP-0506۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/lindenbaum.tex؛ SHA-256 5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex؛ SHA-256 14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c۔
+- چلند: د سرچينې د ټولو فصلونو د شمېر د کمېدو پر ځاے د ټاکلي شاخص څخه ټيټ متناهي شاخصونه کارول شوي؛ څنګ‌ته څرګندونه شته.
+- وجه: نوي زيات شوي غړي نور فصلونه ثابتېدونکي کولے شي؛ يوازې تر ټاکلي شاخص لاندې متناهي پړاوونه د پايلې لپاره بس دي.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-010
+
+- واحد: OLP-0508۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/truth-lemma.tex؛ SHA-256 b2a9084e2846c9a268c63972c78925c3050fdff0bcb3a2942242bfca163cdbaf۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/truth-lemma.tex؛ SHA-256 f40952c297b5c467e1bf696afbfc7f5c4df147939ca3f6ee26393ce3a30bab53۔
+- چلند: د صدق د لمې په سريزه کښې بنسټيز سټ د اړوندې نړۍ په غځېدلي سټ بدل شو؛ څنګ‌ته څرګندونه شته.
+- وجه: د لمې او ثبوت رسمي بيان د هرې نړۍ لپاره غځېدلی سټ کاروي، نه يوازې بنسټيز سټ.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-011
+
+- واحد: OLP-0510۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/decidability.tex؛ SHA-256 336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/decidability.tex؛ SHA-256 ab89f08eed06e86c077fa9252d3deecefbd867310a0b22c066100a5f8ba7c5cb۔
+- چلند: د سرچينې د استقرا ناسمې ادعا ته څنګ‌ته ښکاره پښتو خبرداری ورکړل شو؛ رسمي فورمول او دعوه د سرچينې په توګه ساتل شوي.
+- وجه: يوازې د اټومي ارزښتونو له مخې د نړۍو يو شان کول د شرط صدق نۀ ساتي. W={a,b,c}; R reflexive plus aRc; p true only at c, q nowhere. a and b have the same atomic P-profile, but p→q is false at a and true at b. The quotient identifies a,b and makes p→q false at their shared class.
+- د سرچينې د ثبوت تشه لا شته؛ قضيه دلته د دې جوړونې له مخې نۀ ده ثابته شوې۔
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔

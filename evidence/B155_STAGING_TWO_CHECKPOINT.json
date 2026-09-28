@@ -1,0 +1,55 @@
+{
+  "schema": "ps-b155-intuitionistic-two-staging/1",
+  "utc": "2026-09-28T20:59:36.390225+00:00",
+  "status": "two translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 510,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0511",
+    "OLP-0512"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0511",
+      "source_path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+      "source_sha256": "d891fab63bd903a4ab7404bbc8bc6ba84ff7ac5f2054761217187b5e18efa8a3",
+      "target_sha256": "4637bb15de2fea11c7f70683d14abd1181baa23f2d708e1ed97bd67b4f3333de",
+      "paired_blocks": 8,
+      "math_spans": 0,
+      "focused_qa_sha256": "a126628c2ec64b23f3de3c6a92f853479be61eca1135b791181efc7a69db64d7",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0512",
+      "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "paired_blocks": 10,
+      "math_spans": 34,
+      "focused_qa_sha256": "10cf41653c070d8ac257380984b3e374ad4b9727005d588a2d388d93956d4532",
+      "source_treatment_ids": [
+        "OLINT-012"
+      ]
+    }
+  ],
+  "paired_blocks": 18,
+  "math_spans": 34,
+  "notes_path": "work/B155_TWO_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "a71373953aa6bd099bc00f7568b4042ca5ae1f5428d159ad8be091ee8795e0a0",
+  "consultation_path": "work/B155_TWO_CANON_CONSULTATION.md",
+  "consultation_sha256": "fb1c37e27bf828d4aa87b73dc7eaf3f853297394384bc74f562fdcb78592dcf9",
+  "b154_accepted_checkpoint_sha256": "2a4ed9aeb59ec131d2ebcb6be2ca9e9353961a6d51ea3d78d36fb25d5198cb7b",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-012",
+      "unit_id": "OLP-0512",
+      "kind": "modal-word-in-intuitionistic-tableaux-introduction",
+      "source_math": [],
+      "target_math": []
+    }
+  ],
+  "next_action": "Continue source and canon review and translation at OLP-0513, then register and cumulatively validate B155."
+}

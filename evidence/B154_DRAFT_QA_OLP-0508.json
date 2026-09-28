@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b154-intuitionistic-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0508",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+  "source_sha256": "b2a9084e2846c9a268c63972c78925c3050fdff0bcb3a2942242bfca163cdbaf",
+  "target_sha256": "f40952c297b5c467e1bf696afbfc7f5c4df147939ca3f6ee26393ce3a30bab53",
+  "source_blocks": 10,
+  "target_blocks": 10,
+  "math_spans": 53,
+  "source_correction_ids": [
+    "OLINT-010"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\Delta$"
+    ],
+    "target_only": [
+      "$\\Delta(\\sigma)$"
+    ],
+    "scope": "one contextual prime-set substitution"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_exceptions_exact": true,
+    "semantic_spots": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register B154 source treatments and terms; complete cumulative QA before acceptance."
+}

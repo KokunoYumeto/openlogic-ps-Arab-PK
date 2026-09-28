@@ -1,0 +1,112 @@
+{
+  "schema": "ps-b154-intuitionistic-all5-staging/1",
+  "utc": "2026-09-28T20:43:57.746221+00:00",
+  "status": "five translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 505,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0506",
+    "OLP-0507",
+    "OLP-0508",
+    "OLP-0509",
+    "OLP-0510"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0506",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+      "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+      "target_sha256": "14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c",
+      "paired_blocks": 22,
+      "math_spans": 130,
+      "focused_qa_sha256": "a2779fb653051b5f20028a2edacadf0b5a630dda036952f23b9d98f7866b410e",
+      "source_treatment_ids": [
+        "OLINT-009"
+      ]
+    },
+    {
+      "unit_id": "OLP-0507",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+      "source_sha256": "2397d36f77e15b27cf5889ab0e2bdfd34e060416aae5089afbfccb881cde8128",
+      "target_sha256": "285346a8f172dc8659608435a241b2a0bdeb306db723bf713551f3bcd1cc804f",
+      "paired_blocks": 10,
+      "math_spans": 49,
+      "focused_qa_sha256": "8fcbf3d911bc2d5ca50cdea0c4351adc84578bbf68e4696c2745bc08306e939f",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0508",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+      "source_sha256": "b2a9084e2846c9a268c63972c78925c3050fdff0bcb3a2942242bfca163cdbaf",
+      "target_sha256": "f40952c297b5c467e1bf696afbfc7f5c4df147939ca3f6ee26393ce3a30bab53",
+      "paired_blocks": 10,
+      "math_spans": 53,
+      "focused_qa_sha256": "04009fe719e6d71a82a0a0605955bc7f0634834dfcc4f9bd955f69fa62ff364e",
+      "source_treatment_ids": [
+        "OLINT-010"
+      ]
+    },
+    {
+      "unit_id": "OLP-0509",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/completeness-thm.tex",
+      "source_sha256": "810866d495adead851b265f7e62f0c993a3d49fc0f42e901bf0acc24f32efe3c",
+      "target_sha256": "9e5ecd459adbd7c21d4b55cc462e3a7246d4dbcc6be756ac7463791eadc167f9",
+      "paired_blocks": 11,
+      "math_spans": 30,
+      "focused_qa_sha256": "2ab8cc42e82be7e1ea9c8b9a483f2032e025b768b956f54a581e42c6b2653d89",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0510",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+      "source_sha256": "336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5",
+      "target_sha256": "ab89f08eed06e86c077fa9252d3deecefbd867310a0b22c066100a5f8ba7c5cb",
+      "paired_blocks": 11,
+      "math_spans": 26,
+      "focused_qa_sha256": "8ca9fce147061e277e1c3b0e7d3832964571d4b16077e54f51f1c40e34cd1721",
+      "source_treatment_ids": [
+        "OLINT-011"
+      ]
+    }
+  ],
+  "paired_blocks": 64,
+  "math_spans": 288,
+  "notes_path": "work/B154_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "718fbb5e1d2f842fdf3807b9cfb6de33c1722cb1e9d10b104477e14b1cf25152",
+  "consultation_path": "work/B154_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "dee9cb088b233d5a0b58636a4bf3b06880d6ad6d736aa85757d6e2f902793451",
+  "b153_accepted_checkpoint_sha256": "54eda473d47b148b4c04bf2b1aa889d49fb210a06f468052e459f5a852b7635a",
+  "prior_two_draft_checkpoint_sha256": "1d964b8cc74cf1e2c5344565b44f21260db2778d9047f092edbc60f2959684ec",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-009",
+      "unit_id": "OLP-0506",
+      "kind": "finite-lower-indices-in-prime-set-proof",
+      "source_math": [],
+      "target_math": []
+    },
+    {
+      "id": "OLINT-010",
+      "unit_id": "OLP-0508",
+      "kind": "prime-set-world-index-in-truth-lemma-introduction",
+      "source_math": [
+        "$\\Delta$"
+      ],
+      "target_math": [
+        "$\\Delta(\\sigma)$"
+      ]
+    },
+    {
+      "id": "OLINT-011",
+      "unit_id": "OLP-0510",
+      "kind": "atomic-valuation-quotient-does-not-preserve-implication",
+      "source_math": [],
+      "target_math": [],
+      "proof_gap_disclosed": true
+    }
+  ],
+  "next_action": "Register B154 prime-set term and OLINT-009–011 with source audit; run independent cumulative QA and dual canonical replay; accept OLP-0506–0510, then continue OLP-0511."
+}

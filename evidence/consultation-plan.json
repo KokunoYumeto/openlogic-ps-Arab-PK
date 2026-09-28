@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
-  "status": "OLP-0501–0505 source-reviewed and staged; 72 paired blocks, 26 semantic samples, two provisional terms and five disclosed source treatments; cumulative QA pending",
+  "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+  "status": "OLP-0506–0510 source-reviewed and staged; 64 paired blocks, 24 semantic samples, one provisional term and three disclosed source treatments including one unrepaired proof gap; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10578,6 +10578,102 @@
         "OLINT"
       ],
       "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0506": {
+      "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-INTUITIONISTIC-PRIME-SET"
+      ],
+      "scope": "اولنی سټ، د لينډنباوم لمه، زياتېدونکې لړۍ او د فصلونو متناهي لومړيتوب.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0507": {
+      "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-INTUITIONISTIC-PRIME-SET",
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "د طبيعي عددونو متناهي لړۍ، اولنی غځول، لومړنۍ برخه او يورخيزه ټاکنه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0508": {
+      "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-INTUITIONISTIC-PRIME-SET"
+      ],
+      "scope": "د صدق لمې شپږ استقرايي حالتونه، د شرط دواړه لوري او د نړۍ غځېدلی سټ.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0509": {
+      "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-INTUITIONISTIC-PRIME-SET"
+      ],
+      "scope": "د بشپړتيا مقابل ثبوت، د تشې لړۍ نړۍ او درې تمرينونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0510": {
+      "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-DECIDABILITY",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
+      ],
+      "scope": "د پرېکړې وړتيا قضيه، د اټومي ارزښتونو پر بنسټ د سرچينې متناهي جوړونه، او ښکاره ثبوتي تشه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
     }
   },
   "semantic_review": [
@@ -18974,6 +19070,150 @@
       "passage": "false-elimination",
       "reverse_paraphrase": "False holds at no world, so a counterexample is impossible.",
       "finding": "د محال نشتون عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "classical-contrast",
+      "reverse_paraphrase": "Double-negation elimination cannot infer A intuitionistically.",
+      "finding": "د کلاسيک او شهودي توپير عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "prime",
+      "reverse_paraphrase": "Prime means consistent, deductively closed, and disjunction-selecting.",
+      "finding": "درې شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "extension",
+      "reverse_paraphrase": "Lindenbaum extension preserves non-derivability of A.",
+      "finding": "د ناثابتېدنې شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "finite-proof",
+      "reverse_paraphrase": "A proof from the union uses finitely many assumptions.",
+      "finding": "د متناهي فرضونو ګام عين دے."
+    },
+    {
+      "unit_id": "OLP-0506",
+      "passage": "priority",
+      "reverse_paraphrase": "Only finitely many earlier indices need handling before j.",
+      "finding": "OLINT-009 د شمېر ناسمې ادعا اړوي."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "worlds",
+      "reverse_paraphrase": "Worlds are finite natural-number sequences.",
+      "finding": "د نړۍو سټ عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "extension",
+      "reverse_paraphrase": "A child uses a prime extension when B does not prove C.",
+      "finding": "د غځونې شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "access",
+      "reverse_paraphrase": "Accessibility is the initial-segment partial order.",
+      "finding": "د لاسرسي لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0507",
+      "passage": "valuation",
+      "reverse_paraphrase": "V(p) records worlds whose prime sets contain p.",
+      "finding": "د اټومي ټاکنې تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "lemma",
+      "reverse_paraphrase": "Truth at sigma iff derivability from Delta(sigma).",
+      "finding": "OLINT-010 د نړۍ سټ په سريزه کښې سموي."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "false",
+      "reverse_paraphrase": "Prime consistency excludes false.",
+      "finding": "د محال حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "atom",
+      "reverse_paraphrase": "Atomic truth follows the valuation.",
+      "finding": "د اټومي حالت تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "or",
+      "reverse_paraphrase": "Primeness proves the reverse disjunction direction.",
+      "finding": "د فصل اولنيوالے عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "implication",
+      "reverse_paraphrase": "A failing conditional has a future world witnessing B and not C.",
+      "finding": "د راتلونکې نړۍ شاهد عين دے."
+    },
+    {
+      "unit_id": "OLP-0508",
+      "passage": "negation",
+      "reverse_paraphrase": "The source leaves its negation induction case empty.",
+      "finding": "تش حالت په پټه نۀ دے ډک شوے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "contrapositive",
+      "reverse_paraphrase": "Non-derivability yields a prime extension and a countermodel.",
+      "finding": "د مقابل لوري تسلسل عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "root",
+      "reverse_paraphrase": "The empty sequence has the original prime set.",
+      "finding": "د ريښې نړۍ تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "truth",
+      "reverse_paraphrase": "Truth lemma gives every premise true and A false at the root.",
+      "finding": "د ضدمدل شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0509",
+      "passage": "exercises",
+      "reverse_paraphrase": "Three exercises retain positive formulas, disjunction property, linear frames.",
+      "finding": "د تمرينونو درې موضوعګانې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "theorem",
+      "reverse_paraphrase": "The source states the finite countermodel property.",
+      "finding": "قضيه د سرچينې په توګه عين ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "quotient",
+      "reverse_paraphrase": "The proposed quotient identifies worlds by atomic profiles.",
+      "finding": "جوړونه په کره ډول ژباړل شوې."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "proof-gap",
+      "reverse_paraphrase": "That quotient does not preserve implication truth.",
+      "finding": "OLINT-011 د ناسموالي ضدبېلګه ثبتوي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "exercise",
+      "reverse_paraphrase": "The source asks readers to prove the false induction claim.",
+      "finding": "د تمرين سرچينه او څنګ‌ته خبرداری جلا دي."
+    },
+    {
+      "unit_id": "OLP-0510",
+      "passage": "decision",
+      "reverse_paraphrase": "The concluding algorithm claim is sourced, not established by this proof.",
+      "finding": "د ثبوت حد په څرګندونه کښې روښانه دے."
     }
   ]
 }

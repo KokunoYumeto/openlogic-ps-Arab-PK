@@ -1,0 +1,82 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{tru}
+
+\olsection{د صدق لمه}
+
+لاندې لمه په کانوني مدل کښې صدق له دې سره تړي چې کوم
+!!{formula}s د اولني سټ~$\Delta(\sigma)$ !!{element}s دي۔ د
+ژباړې د نسخې څرګندونه (OLINT-010): منجمده سرچينه په دې سريزه
+کښې يوازې بنسټيز سټ يادوي؛ د لاندې لمې او ثبوت له مخې په
+اړونده نړۍ کښې د هغه غځېدلے سټ مراد دے۔
+
+\begin{lem}\ollabel{lem:truth}
+  که $\Delta$ اولنی وي، نو $\mSat{M(\Delta)}{!A}[\sigma]$ هله
+  او يوازې هله چې $\Delta(\sigma) \Proves !A$ وي۔
+\end{lem}
+
+\begin{proof}
+  پر~$!A$ استقرا کوو۔
+  \begin{enumerate}
+    \item \indcase{!A}{\lfalse}{څرنګه چې $\Delta(\sigma)$ اولنی
+      دے، سازګار دے؛ نو $\Delta(\sigma) \Proves/ \indfrm$ وي۔
+      د تعريف له مخې $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔}
+      \item \indcase{!A}{p}{د $\mSat{{}}{}$ د تعريف له مخې
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$ هله او يوازې هله چې
+        $\sigma \in V(p)$ وي؛ يعنې $\Delta(\sigma) \Proves
+        \indfrm$ وي۔}
+      \item \indcase!{!A}{\lnot !B}{}
+      \item \indcase{!A}{!B \land
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$ هله او يوازې
+        هله چې $\mSat{M(\Delta)}{!B}[\sigma]$ او
+        $\mSat{M(\Delta)}{!C}[\sigma]$ وي۔ د استقرا د فرض له
+        مخې، $\mSat{M(\Delta)}{!B}[\sigma]$ هله او يوازې هله
+        چې $\Delta(\sigma) \Proves !B$ وي، او د~$!C$ لپاره هم
+        همداسې ده۔ خو $\Delta(\sigma) \Proves !B$ او
+        $\Delta(\sigma) \Proves !C$ هله او يوازې هله چې
+        $\Delta(\sigma) \Proves \indfrm$ وي۔}
+      \item \indcase{!A}{!B \lor
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$ هله او يوازې
+        هله چې $\mSat{M(\Delta)}{!B}[\sigma]$ يا
+        $\mSat{M(\Delta)}{!C}[\sigma]$ وي۔ د استقرا د فرض له
+        مخې دا هله او يوازې هله وي چې $\Delta(\sigma) \Proves
+        !B$ يا $\Delta(\sigma) \Proves !C$ وي۔ بايد وښيو چې
+        دا په خپل وار هله او يوازې هله وي چې
+        $\Delta(\sigma) \Proves \indfrm$ وي۔ له کيڼ څخه ښي ته
+        لوری څرګند دے؛ له ښي څخه کيڼ ته لوری د
+        $\Delta(\sigma)$ له اولنيوالي راځي۔}
+      \item \indcase{!A}{!B \lif !C}{لومړے له کيڼ څخه ښي ته
+        د لوري مقابل لوری ثابتوو: فرض کړئ $\Delta(\sigma)
+        \Proves/ !B \lif !C$ وي۔ نو $\Delta(\sigma) \cup
+        \{!B\} \Proves/ !C$ هم وي۔ څرنګه چې
+        $\tuple{!B, !C}$ د کوم~$n$ دپاره $\tuple{!B_n, !C_n}$
+        دے، نو $\Delta(\sigma.n) = (\Delta(\sigma) \cup
+        \{!B\})^*$ وي، او $\Delta(\sigma.n) \Proves !B$ خو
+        $\Delta(\sigma.n) \Proves/ !C$ وي۔ د استقرا د فرض له
+        مخې $\mSat{M(\Delta)}{!B}[\sigma.n]$ او
+        $\mSat/{M(\Delta)}{!C}[\sigma.n]$ دي۔ ځکه
+        $R\sigma(\sigma.n)$ دے، له دې څخه
+        $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ راځي۔
+
+        اوس فرض کړئ $\Delta(\sigma) \Proves !B \lif !C$ وي،
+        او $R\sigma\sigma'$ دې وي۔ څرنګه چې $\Delta(\sigma)
+        \subseteq \Delta(\sigma')$ وي، نو که
+        $\Delta(\sigma') \Proves !B$ وي،
+        $\Delta(\sigma') \Proves !C$ هم وي۔ په بله وينا، د هر
+        داسې $\sigma'$ دپاره چې $R\sigma\sigma'$ وي، يا
+        $\Delta(\sigma') \Proves/ !B$ يا
+        $\Delta(\sigma') \Proves !C$ وي۔ د استقرا د فرض له
+        مخې، دا په دې معنا ده چې هر کله $R\sigma\sigma'$ وي،
+        يا $\mSat/{M(\Delta)}{!B}[\sigma']$ يا
+        $\mSat{M(\Delta)}{!C}[\sigma']$ وي؛ يعنې
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔}
+  \end{enumerate}
+\end{proof}
+
+\end{document}

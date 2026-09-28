@@ -1,0 +1,50 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: completeness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{cpl}
+
+\olsection{د بشپړتيا قضيه}
+
+\begin{thm}\ollabel{thm:completeness}
+  که $\Gamma \Entails !A$ وي، نو $\Gamma \Proves !A$ وي۔
+\end{thm}
+
+\begin{proof}
+  مقابل لوری ثابتوو: فرض کړئ $\Gamma \Proves/ !A$ وي۔ نو د
+  \olref[lin]{lem:lindenbaum} له مخې داسې اولنی سټ~$\Gamma^*
+  \supseteq \Gamma$ شته چې $\Gamma^* \Proves/ !A$ وي۔ د
+  $\Gamma^*$ دپاره هغه کانوني مدل~$\mModel{M(\Gamma^*)}$
+  وګورئ چې په \olref[mod]{defn:canonical-model} کښې تعريف شوے
+  دے۔ د هر $!B \in \Gamma$ دپاره $\Gamma^* \Proves !B$
+  وي۔ پام وکړئ $\Gamma^*(\emptyseq) = \Gamma^*$ دے۔ د صدق
+  د لمې (\olref[tru]{lem:truth}) له مخې د هر $!B \in \Gamma$
+  دپاره $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$ او
+  $\mSat/{M(\Gamma^*)}{!A}[\emptyseq]$ لرو۔ دا ښيي چې
+  $\Gamma \Entails/ !A$ دے۔
+\end{proof}
+
+\begin{prob}
+  وښيئ چې که $!A$ يوازې !!{propositional variable}s، $\lor$
+  او~$\land$ ولري، نو $\Entails/ !A$ وي۔ له دې څخه نتيجه
+  واخلئ چې $\lif$ په شهودي منطق کښې له $\lor$ او~$\land$
+  څخه نۀ تعريفېږي۔
+\end{prob}
+  
+\begin{prob}
+  د بشپړتيا د قضيې په کارولو ثابت کړئ چې که $\Proves !A \lor !B$
+  وي، نو $\Proves !A$ يا $\Proves !B$ وي۔ (لارښوونه: فرض
+  کړئ $\mSat/{M_1}{!A}$ او $\mSat/{M_2}{!B}$ وي او داسې
+  نوے مدل~$\mModel{M}$ جوړ کړئ چې $\mSat/{M}{!A \lor !B}$ وي۔)
+\end{prob}
+  
+\begin{prob} 
+  وښيئ چې که $\mModel{M}$ داسې اړيکيز مدل وي چې خطي ترتيب
+  کاروي، نو $\mSat{M}{(!A \lif !B)\lor(!B \lif !A)}$ وي۔
+\end{prob}
+
+\end{document}

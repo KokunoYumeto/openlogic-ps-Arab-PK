@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0505; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T20:22:47.428498+00:00",
+  "status": "adopted through OLP-0510; OLINT-011 is disclosed proof gap, not a repaired proof",
+  "adopted_utc": "2026-09-28T20:46:50.652332+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -13344,6 +13344,196 @@
       ],
       "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-009",
+      "unit_id": "OLP-0506",
+      "classification": "invalid_global_decrease_claim_in_prime_set_priority_argument",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+      "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex:123,124,125",
+      "source_literal_line_1based": [
+        123,
+        124,
+        125
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+      "target_line_1based": 128,
+      "target_literal_line_1based": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "disclosure_line_1based": 135,
+      "target_sha256": "14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د سرچينې د ټولو فصلونو د شمېر د کمېدو پر ځاے د ټاکلي شاخص څخه ټيټ متناهي شاخصونه کارول شوي؛ څنګ‌ته څرګندونه شته.",
+      "reason": "نوي زيات شوي غړي نور فصلونه ثابتېدونکي کولے شي؛ يوازې تر ټاکلي شاخص لاندې متناهي پړاوونه د پايلې لپاره بس دي.",
+      "formula_policy": "Only listed exact math-span substitution; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "invalid_global_decrease_claim_in_prime_set_priority_argument"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
+      "audit_artifacts": [
+        "B154_SOURCE_AUDIT.json",
+        "B154_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex:123,124,125",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex:128,129,130,131,132",
+        "B154_DRAFT_QA_OLP-0506.json"
+      ],
+      "decision_timing": "contemporaneous B154 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "id": "OLINT-010",
+      "unit_id": "OLP-0508",
+      "classification": "root_prime_set_named_instead_of_world_extension",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+      "source_sha256": "b2a9084e2846c9a268c63972c78925c3050fdff0bcb3a2942242bfca163cdbaf",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex:14",
+      "source_literal_line_1based": [
+        14
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+      "target_line_1based": 14,
+      "target_literal_line_1based": [
+        14
+      ],
+      "disclosure_line_1based": 15,
+      "target_sha256": "f40952c297b5c467e1bf696afbfc7f5c4df147939ca3f6ee26393ce3a30bab53",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د صدق د لمې په سريزه کښې بنسټيز سټ د اړوندې نړۍ په غځېدلي سټ بدل شو؛ څنګ‌ته څرګندونه شته.",
+      "reason": "د لمې او ثبوت رسمي بيان د هرې نړۍ لپاره غځېدلی سټ کاروي، نه يوازې بنسټيز سټ.",
+      "formula_policy": "Only listed exact math-span substitution; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Delta$"
+        ],
+        "target_only": [
+          "$\\Delta(\\sigma)$"
+        ],
+        "scope": "root_prime_set_named_instead_of_world_extension"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
+      "audit_artifacts": [
+        "B154_SOURCE_AUDIT.json",
+        "B154_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex:14",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/truth-lemma.tex:14",
+        "B154_DRAFT_QA_OLP-0508.json"
+      ],
+      "decision_timing": "contemporaneous B154 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "id": "OLINT-011",
+      "unit_id": "OLP-0510",
+      "classification": "atomic_valuation_quotient_does_not_preserve_implication",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+      "source_sha256": "336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/decidability.tex:26,27,28,31,33,35,36",
+      "source_literal_line_1based": [
+        26,
+        27,
+        28,
+        31,
+        33,
+        35,
+        36
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/decidability.tex",
+      "target_line_1based": 27,
+      "target_literal_line_1based": [
+        27,
+        28,
+        29,
+        34,
+        38,
+        41,
+        45
+      ],
+      "disclosure_line_1based": 41,
+      "target_sha256": "ab89f08eed06e86c077fa9252d3deecefbd867310a0b22c066100a5f8ba7c5cb",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د سرچينې د استقرا ناسمې ادعا ته څنګ‌ته ښکاره پښتو خبرداری ورکړل شو؛ رسمي فورمول او دعوه د سرچينې په توګه ساتل شوي.",
+      "reason": "يوازې د اټومي ارزښتونو له مخې د نړۍو يو شان کول د شرط صدق نۀ ساتي. W={a,b,c}; R reflexive plus aRc; p true only at c, q nowhere. a and b have the same atomic P-profile, but p→q is false at a and true at b. The quotient identifies a,b and makes p→q false at their shared class.",
+      "formula_policy": "Only listed exact math-span substitution; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "atomic_valuation_quotient_does_not_preserve_implication"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
+      "audit_artifacts": [
+        "B154_SOURCE_AUDIT.json",
+        "B154_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/decidability.tex:26,27,28,31,33,35,36",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/decidability.tex:27,28,29,34,38,41,45",
+        "B154_DRAFT_QA_OLP-0510.json"
+      ],
+      "decision_timing": "contemporaneous B154 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true
     }
   ],
   "external_upstream_report_submitted": false,
@@ -13442,7 +13632,8 @@
     "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
-    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS"
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS"
   ],
   "source_authorities": [
     {

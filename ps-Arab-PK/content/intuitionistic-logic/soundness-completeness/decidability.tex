@@ -1,0 +1,59 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: decidability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{dec}
+
+\olsection{پرېکړې وړتيا}
+پام وکړئ چې د بشپړتيا د قضيې ثبوت د هر
+$\Gamma \Proves/ !A$ دپاره د بې‌شمېره نړۍو لرونکے داسې مدل
+راکوي چې $\Gamma \Entails/ !A$ پرې ښيي۔ لاندې قضيه وايي چې
+د $\Entails !A$ د ثابتولو دپاره د ټولو متناهي مدلونو (يعنې د
+متناهي نړۍو سټ لرونکو مدلونو) لپاره د $\mSat{M}{!A}$ ثابتول
+کافي دي۔
+
+\begin{thm}\ollabel{thm:decidability}
+  که $\Entails/ !A$ وي، نو داسې متناهي مدل شته چې
+  $\mSat/{M'}{!A}$ وي۔
+\end{thm}
+
+\begin{proof}
+  فرض کړئ $\mModel{M}=\tuple{W, R, V}$ داسې وي چې
+  $\mSat/{M}{!A}$، او $P$ د هغو !!{propositional variable}s سټ
+  وي چې په~$!A$ کښې راځي۔ $\mModel{M'}=\tuple{W', R', V'}$
+  داسې تعريف کړئ چې $W' = \Setabs{[w]}{w \in W}$ وي، چېرته
+  چې $[w] = \Setabs{p \in P}{w \in V(p)}$؛ $R'$ د فرعي سټ
+  اړيکه وي، او $V'(p)=\Setabs{[w]}{p \in [w]}$ وي۔ بايد
+  څرګنده وي چې $W'$ متناهي سټ او $\mModel{M'}$
+  !!a{relational model} دے۔
+
+  منجمده سرچينه وايي چې پر~$!A$ د استقرا له لارې د هغو ټولو
+  !!{formula}s~$!A$ دپاره چې يوازې له~$P$ څخه
+  !!{propositional variable}s کاروي، دا ښودل کېدے شي:
+  \[
+    \mSat{M}{!A}[w] \text{ هله او يوازې هله چې } \mSat{M'}{!A}[{[w]}]
+  \]
+  دا ئې لوستونکي ته د تمرين په توګه پرېښې ده۔ د ژباړې د نسخې
+  څرګندونه (OLINT-011): يوازې د اټومي متغيرونو د رښتياوالي له
+  مخې د نړۍو يو شان کول د شرط د صدق ساتنه عموماً نۀ تضمينوي؛
+  دوه نړۍې يو شان اټومي ارزښتونه لرلے شي خو د راتلونکو نړۍو
+  د توپير له امله د شرط صدق پکښې بېل وي۔ نو دغه استقرايي ادعا
+  په دې جوړښت کښې ناسم ده، او ورکړل شوے ثبوت قضيه نۀ ثابتوي۔
+\end{proof}
+
+\begin{prob}
+د \olref[int][sc][dec]{thm:decidability} ثبوت په دې ښودلو
+بشپړ کړئ چې د ټولو داسې !!{formula}s~$!A$ دپاره چې يوازې له~$P$
+څخه بياني متغيرونه کاروي، $\mSat{M,w}{!A}$ هله او يوازې هله
+چې $\mSat{M',[w]}{!A}$ وي۔
+\end{prob}
+
+له \olref{thm:decidability} څخه دا راځي چې د~$\Entails !A$
+د پرېکړې دپاره الګوريتم شته۔
+
+
+\end{document}

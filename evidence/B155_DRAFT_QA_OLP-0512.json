@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b155-intuitionistic-prefixed-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0512",
+  "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+  "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+  "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+  "source_blocks": 10,
+  "target_blocks": 10,
+  "math_spans": 34,
+  "source_correction_ids": [
+    "OLINT-012"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": [],
+    "scope": "prose-only modal-to-intuitionistic correction"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact": true,
+    "closed_tableau": true,
+    "finite_assumptions": true,
+    "positive_prefixes": true,
+    "accessibility_extension": true,
+    "modal_to_intuitionistic_correction": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register OLINT-012 and complete B155 canon and cumulative QA before acceptance."
+}
