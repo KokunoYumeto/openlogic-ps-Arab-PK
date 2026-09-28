@@ -1,0 +1,302 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{sou}
+
+\olsection{د \Log{K} سموالی}
+
+\begin{editorial}
+  دا د سموالي ثبوت د کلاسيکي قضيېيز منطق د سموالي ثبوت بيا کاروي؛
+  يعنې هر څه له سره ثابتوي۔ که ځان‌بشپړ ثبوت پکار وي، دا سمه لاره
+  ده۔ که د عام تابلو سموالی مو مخکې لوستلے وي، دا به تکرار ښکاري۔
+  پلان دا دے چې د ځان‌بشپړې نسخې او د غيرمودالي حالت پر بنسټ ولاړې
+  نسخې ترمنځ د بدلولو امکان برابر شي۔
+\end{editorial}
+
+\begin{explain}
+  د مخکښ‌لرونکو !!{tableau}s د سموالي د ښودلو لپاره بايد ثابته
+  کړو چې که
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  تړلے !!{tableau} ولري، نو $!B_1, \dots, !B_n \Entails !A$ وي۔
+  د دې مقابل نقيض ثابتول اسانه دي: که په کوم~$\mModel{M}$ کښې د
+  نړۍ~$w$ لپاره $\mSat{M}{!B_i}[w]$ د هر $i=1$, \dots,~$n$
+  په حق کښې وي، خو $\mSat/{M}{!A}[w]$ وي، نو هېڅ
+  !!{tableau} تړلے نۀ شي جوړېدے۔ په منجمده سرچينه کښې د پايلې د فارمول
+  رښتياوالی ليکل شوے و؛ د ضدمدل لپاره يې ناسموالی اړين دے۔
+  داسې ضدمدل ښيي چې د !!{tableau} پيلني فرضونه پوره کېدے شي۔
+  د ثبوت لاره دا ده چې کله د !!a{tableau} پر يوه څانګه ټول
+  مخکښ‌لرونکي !!{formula}s پوره کېدے شي، د هرې قاعدې پلي کېدل
+  لږ تر لږه يوه غځېدلې څانګه پرېږدي چې هغه هم پوره کېدے شي۔
+  تړلې څانګې نۀ شي پوره کېدے؛ نو د مخکښ‌لرونکو !!{formula}s
+  د پوره کېدونکي سټ هر !!{tableau} بايد لږ تر لږه يوه پرانيستې
+  څانګه ولري۔
+
+  د دې لارې د مودالي حالت لپاره کارولو ته بايد د «پوره کېدو»
+  تعريف مودالي مدلونو او مخکښونو ته وغځوو۔ د منجمدې سرچينې په
+  نثر کښې د مودال لفظ تکرار راغلے؛ دلته مودالي مدلونه مراد دي۔
+  بيا ثبوت نېغ دے۔
+\end{explain}
+
+\begin{defn}
+  فرض کړئ $P$ د مخکښونو يو سټ وي، يعنې
+  $P \subseteq (\PosInt)^* \setminus \{\emptyseq\}$، او
+  $\mModel{M}$ يو مدل وي۔ تابع~$f\colon P \to W$ په
+  $\mModel{M}$ کښې د~$P$ \emph{تفسير} دے که هرکله چې
+  $\sigma$ او $\sigma.n$ دواړه په~$P$ کښې وي، نو
+  $Rf(\sigma)f(\sigma.n)$ وي۔
+
+  د مخکښونو د~$P$ د تفسير په نسبت داسې تعريفولے شو:
+  \begin{enumerate}
+  \item $\mModel{M}$ هله او يوازې هله
+    $\sFmla{\True}{!A}[\sigma]$ پوره کوي چې
+    $\mSat{M}{!A}[f(\sigma)]$ وي۔
+  \item $\mModel{M}$ هله او يوازې هله
+    $\sFmla{\False}{!A}[\sigma]$ پوره کوي چې
+    $\mSat/{M}{!A}[f(\sigma)]$ وي۔
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}
+  فرض کړئ $\Gamma$ د مخکښ‌لرونکو !!{formula}s سټ وي، او
+  $P(\Gamma)$ د هغو مخکښونو سټ وي چې په دې سټ کښې راځي۔
+  که $f$ په~$\mModel{M}$ کښې د~$P(\Gamma)$ تفسير وي، نو وايو
+  چې $\mModel{M}$ د~$f$ په نسبت $\Gamma$ پوره کوي،
+  $\mSat{M}{\Gamma}[f]$، که $\mModel{M}$ په~$\Gamma$ کښې
+  هر مخکښ‌لرونکے !!{formula} د~$f$ په نسبت پوره کوي۔
+  $\Gamma$ هله او يوازې هله \emph{پوره کېدونکے} دے چې کوم
+  مدل~$\mModel{M}$ او د~$P(\Gamma)$ تفسير~$f$ وي داسې چې
+  $\mSat{M}{\Gamma}[f]$ وي۔
+\end{defn}
+
+\begin{prop}
+  که $\Gamma$ د کوم !!{formula}~$!A$ او مخکښ~$\sigma$ لپاره
+  دواړه $\sFmla{\True}{!A}[\sigma]$ او
+  $\sFmla{\False}{!A}[\sigma]$ ولري، نو $\Gamma$ نۀ شي
+  پوره کېدے۔
+\end{prop}
+
+\begin{proof}
+  داسې مدل~$\mModel{M}$ او د~$P(\Gamma)$ تفسير~$f$ نۀ شي
+  کېدے چې دواړه $\mSat{M}{!A}[f(\sigma)]$ او
+  $\mSat/{M}{!A}[f(\sigma)]$ پوره وي۔
+\end{proof}
+
+\begin{thm}[سموالی]
+  \ollabel{thm:tableau-soundness}
+  که $\Gamma$ تړلے !!{tableau} ولري، نو $\Gamma$ نۀ شي
+  پوره کېدے۔
+\end{thm}
+
+\begin{proof}
+د !!a{tableau} يوه څانګه هله پوره کېدونکې بولو چې پر هغې د
+!!{signed formula}s سټ پوره کېدونکے وي؛ او !!a{tableau} هله
+پوره کېدونکے بولو چې لږ تر لږه يوه پوره کېدونکې څانګه ولري۔
+
+دا ښيو: د استنتاج په هره قاعده د پوره کېدونکي !!{tableau}
+غځول بيا هم پوره کېدونکے !!{tableau} جوړوي۔ له دې نه قضيه
+ثابتېږي: هر تړلے !!{tableau} د هغو فرضونو د
+!!{tableau} پر سر د قاعدو په پلي کولو جوړېږي چې يوازې له
+$\Gamma$ څخه دي۔ نو که $\Gamma$ پوره کېدونکے وای، د هغه
+هر !!{tableau} به هم پوره کېدونکے و۔ خو تړلے !!{tableau}
+ښکاره نۀ شي پوره کېدے، ځکه ټولې څانګې يې تړلې او تړلې
+څانګې نۀ‌پوره کېدونکې دي۔
+
+فرض کړئ يو پوره کېدونکے !!{tableau} لرو، يعنې داسې
+!!a{tableau} چې لږ تر لږه يوه پوره کېدونکې څانګه ولري۔
+استنتاجي قاعده يا يوې څانګې ته !!{signed formula}s زياتوي، يا
+هغه په دوو څانګو وېشي۔ که په !!{tableau} کښې يوه پوره کېدونکې
+څانګه وي چې دا قاعده پرې نۀ پلې کېږي، هغه په غځېدلي
+!!{tableau} کښې هم پوره کېدونکې پاتې کېږي؛ نو غځېدلے تابلو
+پوره کېدونکے دے۔ يوازې هغه حالت پکار دے چې قاعده پر پوره
+کېدونکې څانګه پلې شي۔
+
+فرض کړئ $\Gamma$ پر دې څانګه د !!{signed formula}s سټ وي او
+$\sFmla{S}{!A}[\sigma] \in \Gamma$ هغه !!{signed formula}
+وي چې قاعده پرې پلې کېږي۔ که قاعده څانګه ونۀ وېشي، بايد وښيو
+چې غځېدلې څانګه، يعنې $\Gamma$ او د قاعدې پايلې، لا
+هم پوره کېدونکې ده۔ که قاعده څانګه ووېشي، بايد وښيو چې له
+دوو نويو څانګو لږ تر لږه يوه پوره کېدونکې ده۔
+\tagfalse{prvDiamond}
+لومړے هغه استنتاجونه ګورو چې يوازې يوه مقدمه لري۔
+\begin{enumerate}
+\item پر $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lnot}$ په پلي کولو څانګه غځېږي۔ نو په
+  غځېدلې څانګه کښې د !!{signed formula}s سټ $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma]\}$ وي۔ فرض کړئ
+  $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه
+  $\mSat{M}{\lnot !B}[f(\sigma)]$ وي۔ نو
+  $\mSat/{M}{!B}[f(\sigma)]$؛ يعنې $\mModel{M}$ د~$f$ په
+  نسبت $\sFmla{\False}{!B}[\sigma]$ پوره کوي۔
+\item پر $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lnot}$ په پلي کولو څانګه غځېږي: تمرين۔
+\item پر $\sFmla{\True}{!B \land !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\land}$ په پلي کولو څانګه غځېږي او دوه نوي
+  !!{signed formula}s ورکوي:
+  $\sFmla{\True}{!B}[\sigma]$ او $\sFmla{\True}{!C}[\sigma]$۔
+  فرض کړئ $\mSat{M}{\Gamma}[f]$، په ځانګړې توګه
+  $\mSat{M}{!B \land !C}[f(\sigma)]$۔ نو
+  $\mSat{M}{!B}[f(\sigma)]$ او $\mSat{M}{!C}[f(\sigma)]$۔
+  يعنې $\mModel{M}$ د~$f$ په نسبت دواړه
+  $\sFmla{\True}{!B}[\sigma]$ او
+  $\sFmla{\True}{!C}[\sigma]$ پوره کوي۔
+\item پر $\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lor}$ په پلي کولو څانګه غځېږي: تمرين۔
+  په منجمده سرچينه کښې د دې مقدمې مخکښ پرېښودل شوے و؛ د
+  همدې څانګې د قاعدې لپاره همدا مخکښ اړين دے۔
+\item پر $\sFmla{\False}{!B \lif !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lif}$ په پلي کولو څانګه غځېږي۔ په څانګه
+  کښې دوه نوي !!{signed formula}s راځي:
+  $\sFmla{\True}{!B}[\sigma]$ او
+  $\sFmla{\False}{!C}[\sigma]$۔ فرض کړئ
+  $\mSat{M}{\Gamma}[f]$، په ځانګړې توګه
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$۔ نو
+  $\mSat{M}{!B}[f(\sigma)]$ او
+  $\mSat/{M}{!C}[f(\sigma)]$۔ يعنې $\mModel{M}, f$ دواړه
+  $\sFmla{\True}{!B}[\sigma]$ او
+  $\sFmla{\False}{!C}[\sigma]$ پوره کوي۔
+
+\iftag{prvBox}{%
+\item پر $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\Box}$ په پلي کولو څانګه غځېږي:
+  \iftag{probBox}{تمرين۔}{په څانګه کښې نوے !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma.n]$ راځي، چېرته چې
+    $\sigma.n \in P(\Gamma)$ (ځکه $\sigma.n$ بايد کارېدلے وي)۔
+    فرض کړئ $\mSat{M}{\Gamma}[f]$، په ځانګړې توګه
+    $\mSat{M}{\Box !B}[f(\sigma)]$۔ ځکه $f$ د مخکښونو تفسير دے او
+    دواړه $\sigma$, $\sigma.n \in P(\Gamma)$ دي، نو
+    $Rf(\sigma)f(\sigma.n)$ وي۔ له دې نه
+    $\mSat{M}{!B}[f(\sigma.n)]$؛ يعنې $\mModel{M}, f$ د
+    $\sFmla{\True}{!B}[\sigma.n]$ پوره کوي۔}
+
+\item پر $\sFmla{\False}{\Box !B}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\Box}$ په پلي کولو څانګه غځېږي:
+  \iftag{probBox}{تمرين۔}{نوے !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma.n]$ راځي؛
+    $\sigma.n$ په څانګه کښې نوے مخکښ دے، يعنې
+    $\sigma.n \notin P(\Gamma)$۔ په منجمده سرچينه کښې دلته
+    د مقدمې د متغير پر ځای بل متغير ليکل شوے، خو مقدمه او پاتې
+    ثبوت د مقدمې متغير غواړي۔ ځکه $\Gamma$ پوره کېدونکے دے، داسې مودالي
+    مدل~$\mModel{M}$ او د~$P(\Gamma)$ تفسير~$f$ شته چې
+    $\mSat{M}{\Gamma}[f]$ وي؛ په ځانګړې توګه
+    $\mSat/{M}{\Box !B}[f(\sigma)]$۔ په منجمده سرچينه کښې
+    دلته د جوړښت او عام صدق نښې راغلې؛ د مخکيني مودالي تعريف
+    له مخې د مودالي مدل او صدق نښې اړينې دي۔ بايد وښيو چې
+    $\Gamma \cup \{\sFmla{\False}{!B}[\sigma.n]\}$ پوره
+    کېدونکے دے۔ د دې لپاره د $P(\Gamma) \cup \{\sigma.n\}$
+    تفسير داسې تعريفوو:
+
+  ځکه $\mSat/{M}{\Box !B}[f(\sigma)]$، داسې $w \in W$ شته چې
+  $Rf(\sigma)w$ او $\mSat/{M}{!B}[w]$ وي۔ $f'$ د~$f$ په شان
+  واخلئ، يوازې $f'(\sigma.n) = w$ دې وي۔ ځکه
+  $f'(\sigma) = f(\sigma)$ او $Rf(\sigma)w$، نو
+  $Rf'(\sigma)f'(\sigma.n)$ وي، او $f'$ د
+  $P(\Gamma) \cup \{\sigma.n\}$ تفسير دے۔ ښکاره ده چې
+  $\mSat/{M}{!B}[f'(\sigma.n)]$ وي۔ د هر
+  $\sigma' \in P(\Gamma)$ لپاره $f(\sigma') = f'(\sigma')$،
+  نو $\mSat{M}{\Gamma}[f']$۔ په دې توګه $\mModel{M}, f'$ د
+  $\Gamma \cup \{\sFmla{\False}{!B}[\sigma.n]\}$ پوره کوي۔}
+  }{}
+
+\iftag{prvDiamond}{%
+\item پر $\sFmla{\True}{\Diamond !B}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\Diamond}$ په پلي کولو څانګه غځېږي:
+  \iftag{probDiamond}{تمرين۔}{نوے !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma.n]$ راځي؛
+    $\sigma.n$ په څانګه کښې نوے مخکښ دے، يعنې
+    $\sigma.n \notin P(\Gamma)$۔ په منجمده سرچينه کښې دلته
+    د مقدمې د متغير پر ځای بل متغير او د مودالي مدل/صدق پر ځای د عام جوړښت
+    نښې راغلې؛ دلته د مقدمې او مخکيني تعريف له مخې سمې شوې دي۔
+    ځکه $\Gamma$ پوره کېدونکے دے، داسې مودالي
+    مدل~$\mModel{M}$ او د~$P(\Gamma)$ تفسير~$f$ شته چې
+    $\mSat{M}{\Gamma}[f]$ وي؛ په ځانګړې توګه
+    $\mSat{M}{\Diamond !B}[f(\sigma)]$۔ بايد وښيو چې
+    $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n]\}$ پوره
+    کېدونکے دے۔ د دې لپاره د $P(\Gamma) \cup \{\sigma.n\}$
+    تفسير داسې تعريفوو:
+
+  ځکه $\mSat{M}{\Diamond !B}[f(\sigma)]$، داسې $w \in W$ شته چې
+  $Rf(\sigma)w$ او $\mSat{M}{!B}[w]$ وي۔ $f'$ د~$f$ په شان
+  واخلئ، يوازې $f'(\sigma.n) = w$ دې وي۔ ځکه
+  $f'(\sigma) = f(\sigma)$ او $Rf(\sigma)w$، نو
+  $Rf'(\sigma)f'(\sigma.n)$ وي، او $f'$ د
+  $P(\Gamma) \cup \{\sigma.n\}$ تفسير دے۔ ښکاره ده چې
+  $\mSat{M}{!B}[f'(\sigma.n)]$ وي۔ د هر
+  $\sigma' \in P(\Gamma)$ لپاره $f(\sigma') = f'(\sigma')$،
+  نو $\mSat{M}{\Gamma}[f']$۔ په دې توګه $\mModel{M}, f'$ د
+  $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n]\}$ پوره کوي۔}
+\item پر $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\Diamond}$ په پلي کولو څانګه غځېږي:
+  \iftag{probDiamond}{تمرين۔}{په څانګه کښې نوے !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma.n]$ راځي، چېرته چې
+    $\sigma.n \in P(\Gamma)$ (ځکه $\sigma.n$ بايد کارېدلے وي)۔
+    فرض کړئ $\mSat{M}{\Gamma}[f]$، په ځانګړې توګه
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$۔ ځکه $f$ د مخکښونو
+    تفسير دے او دواړه $\sigma$, $\sigma.n \in P(\Gamma)$ دي،
+    نو $Rf(\sigma)f(\sigma.n)$ وي۔ له دې نه
+    $\mSat/{M}{!B}[f(\sigma.n)]$؛ يعنې $\mModel{M}, f$ د
+    $\sFmla{\False}{!B}[\sigma.n]$ پوره کوي۔}
+  }{}
+\end{enumerate}
+اوس هغه استنتاجونه ګورو چې څانګه په دوو لارو وېشي۔ په منجمده
+سرچينه کښې دلته «دوه مقدمې» ليکل شوې، خو لاندې هره قاعده يوه
+مقدمه او دوه پايله‌څانګې لري۔
+\begin{enumerate}
+\item پر $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\land}$ په پلي کولو څانګه غځېږي او دوه
+  څانګې جوړوي: کيڼه له $\sFmla{\False}{!B}[\sigma]$ څخه او
+  ښۍ له $\sFmla{\False}{!C}[\sigma]$ څخه دوام کوي۔ فرض کړئ
+  $\mSat{M}{\Gamma}[f]$، په ځانګړې توګه
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$۔ نو يا
+  $\mSat/{M}{!B}[f(\sigma)]$ وي يا
+  $\mSat/{M}{!C}[f(\sigma)]$۔ په لومړي حالت کښې
+  $\mModel{M}, f$ د $\sFmla{\False}{!B}[\sigma]$ پوره کوي،
+  يعنې کيڼه څانګه پوره کېدونکې ده۔ په دويم حالت کښې
+  $\mModel{M}, f$ د $\sFmla{\False}{!C}[\sigma]$ پوره کوي،
+  يعنې ښۍ څانګه پوره کېدونکې ده۔
+\item پر $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lor}$ په پلي کولو څانګه غځېږي: تمرين۔
+\item پر $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lif}$ په پلي کولو څانګه غځېږي: تمرين۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+د \olref[nml][tab][sou]{thm:tableau-soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$ هم وي۔
+\end{cor}
+
+\begin{proof}
+  که $\Gamma \Proves !A$ وي، نو د ځينو $!B_1$, \dots,
+  $!B_n \in \Gamma$ لپاره
+  $\Delta = \{\sFmla{\False}{!A}[1], \sFmla{\True}{!B_1}[1],
+  \dots, \sFmla{\True}{!B_n}[1]\}$ تړلے !!{tableau} لري۔
+  غواړو وښيو چې $\Gamma \Entails !A$۔ سرچپه فرض کړئ؛ نو د
+  کوم $\mModel{M}$ او $w$ لپاره $\mSat{M}{!B_i}[w]$ د هر
+  $i=1$, \dots,~$n$ په حق کښې وي، خو
+  $\mSat/{M}{!A}[w]$۔ فرض کړئ $f(1) = w$؛ بيا $f$ په
+  $\mModel{M}$ کښې د~$P(\Delta)$ تفسير دے، او $\mModel{M}$
+  د~$f$ په نسبت $\Delta$ پوره کوي۔ خو د
+  \olref{thm:tableau-soundness} له مخې، $\Delta$ نۀ شي پوره
+  کېدے، ځکه تړلے !!{tableau} لري؛ دا تناقض دے۔ نو
+  $\Gamma \Entails !A$۔ په منجمده سرچينه کښې د وروستۍ پايلې
+  په ځای بيا د لومړني فرض د اشتقاق ادعا ليکل شوې، حال دا چې دا هماغه
+  لومړنے فرض دے او د قضیې مطلوبه پايله نۀ ده۔
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+که $\Proves !A$ وي، نو $!A$ په ټولو مدلونو کښې رښتينے دے۔
+\end{cor}
+
+\end{document}

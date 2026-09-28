@@ -1,0 +1,63 @@
+{
+  "schema": "ps-b142-modal-tableaux-proof-soundness-staging/1",
+  "utc": "2026-09-28T14:13:47.259104+00:00",
+  "status": "two new drafts and one accepted-unit revision staged; cumulative acceptance pending",
+  "accepted_draft_units": 462,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0463",
+    "OLP-0464"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0463",
+      "source_path": "content/normal-modal-logic/tableaux/proofs-in-K.tex",
+      "source_sha256": "17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b",
+      "target_sha256": "73bc3ef6c9d42ff1010fe155111412c19584e921501b9a5e2773ba4be2e8ef89",
+      "paired_blocks": 10,
+      "focused_qa_sha256": "b9e9408f7dfbcf9ccfae4b2e44990fbf967ad9325ae7bad92d51367f8df52245",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "paired_blocks": 28,
+      "focused_qa_sha256": "71a018956821ef4b9a932063c68e9fb1e43e2a741719bd366e80ba4930ca510a",
+      "source_treatment_ids": [
+        "OLNML-031",
+        "OLNML-032",
+        "OLNML-033",
+        "OLNML-034",
+        "OLNML-035",
+        "OLNML-036"
+      ]
+    }
+  ],
+  "notes_path": "work/B142_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "49b757abb9ec76a5d415c2f6fd2141e42f02f4cf5df6b5172dc4a8f154e253bd",
+  "consultation_path": "work/B142_CANON_CONSULTATION.md",
+  "consultation_sha256": "80be9e4531c33436c43639cdd2a2b31690357d3c2f6550b0862593a99e42973c",
+  "frozen_source_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Register OLNML-031–037 for two new units and the revised OLP-0459 diagrams; then run cumulative corpus and decision QA.",
+  "revised_unit_ids": [
+    "OLP-0459"
+  ],
+  "revised_units": [
+    {
+      "unit_id": "OLP-0459",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "previous_target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "target_sha256": "2cb63b3056d9a5d806e9c7083a3508d88ad2507046d57a11ee6864cb90517719",
+      "paired_blocks": 13,
+      "focused_qa_sha256": "57b8e93e7d45c15afdfbcc1baaabaac4432de52edf266170e9f7fd68102a42e3",
+      "source_treatment_ids": [
+        "OLNML-037"
+      ]
+    }
+  ]
+}

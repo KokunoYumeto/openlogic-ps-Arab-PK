@@ -23,6 +23,9 @@ $\mModel{M}$ څخه راغلے غشے هم ولري، لکه په
 ورزياتوو، او بيا د~$w_2$ او~$w_5$ د ټولګيو ترمنځ هم۔ خو
 $\Box p$ بايد په~$w_2$ کښې رښتينے وي، حال دا چې $p$ په~$w_5$
 کښې ناسم دے۔
+په منجمده سرچينه کښې د دواړو رسمونو د دويمې نړۍ ځانته غشی
+پاتې شوے؛ دلته يې ورزياتوو، څو لومړے رسم مسلسل او اقليدسي
+او دويم رسم د هماغه اړيکې سم فلټريشن وي۔
 
 \begin{figure}[htpb]
   \centering
@@ -35,6 +38,7 @@ $\Box p$ بايد په~$w_2$ کښې رښتينے وي، حال دا چې $p$ پ�
             label = {below: $\mSat{{}}{\Box p}$},
             right=of w1] {$w_2$}; 
     \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
     \node[world] (w3)
           [label={left: \mFalse{p}},
             label={below: $\mSat{{}}{\Box p}$},
@@ -69,6 +73,7 @@ $\Box p$ بايد په~$w_2$ کښې رښتينے وي، حال دا چې $p$ پ�
            label = {below: $\mSat{{}}{\Box p}$},
            right=of w1, yshift=1.5cm] {$[w_2]$}; 
     \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
     \node[world] (w4)
          [label={right:\mTrue{p}},
            label={below: $\mSat/{{}}{\Box p}$},

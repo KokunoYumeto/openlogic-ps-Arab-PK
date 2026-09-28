@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0459; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T03:39:10.719811+00:00",
+  "status": "adopted through OLP-0464; B142 revises OLP-0459 without changing unit count",
+  "adopted_utc": "2026-09-28T14:17:15.371730+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -11402,9 +11402,9 @@
         124
       ],
       "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
-      "target_line_1based": 114,
-      "disclosure_line_1based": 111,
-      "target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "target_line_1based": 119,
+      "disclosure_line_1based": 116,
+      "target_sha256": "2cb63b3056d9a5d806e9c7083a3508d88ad2507046d57a11ee6864cb90517719",
       "mode": "adjacent-Pashto-disclosed-source-treatment",
       "translation_change": "د مودالي تړلي فلټريشن د قضيې له (۱) متناظرۍ، (۲) تعدي او (۳) اقليدسيتوب سره د ثبوت برخې هم په همدې ترتيب راوړل شوې: AxB تمرين، د Ax4 بشپړ ثبوت، Ax5 تمرين. د سرچينې د شمېرې توپير په پښتو ثبوت کښې څرګند شوے.",
       "reason": "منجمد ثبوت په (۱) کښې د Ax4 په کارولو تعدي ثابتوي، په (۲) کښې د Ax5 اقليدسي تمرين او په (۳) کښې د AxB متناظر تمرين ورکوي؛ دا د قضيې د برخو له شمېرې سره نۀ سمون خوري. د درې برخو بيا ترتيب فورمولونه او د تمرينونو ماهيت نه بدلوي.",
@@ -11440,7 +11440,407 @@
         "B140_DRAFT_QA_OLP-0459.json"
       ],
       "decision_timing": "contemporaneous B140 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "B140 historical frozen-source treatment; not a new current-upstream candidate",
+      "prior_target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "revision_note": "B142 changed the same target file for independent OLNML-037; B140 audit and original target hash remain historical."
+    },
+    {
+      "id": "OLNML-031",
+      "unit_id": "OLP-0464",
+      "classification": "soundness_countermodel_requires_false_conclusion",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:31",
+      "source_literal_line_1based": [
+        31
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 30,
+      "disclosure_line_1based": 31,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ضدمدل په فرض کښې د پایلې د صدق نفي ورزياته شوه؛ منجمده سرچينه يې بې نفې ليکي.",
+      "reason": "د استدلال سرچپه لوری د مقدماتو رښتياوالی او د پایلې ناسم‌والی غواړي؛ بې نفې فورمول ضدمدل نه جوړوي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{!A}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M}{!A}[w]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:31",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:31",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-032",
+      "unit_id": "OLP-0464",
+      "classification": "false_disjunction_rule_missing_world_prefix",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:141",
+      "source_literal_line_1based": [
+        141
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 149,
+      "disclosure_line_1based": 151,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د F-∨ د مقدمې نښه لرونکي فارمول ته د هماغې څانګې مخکښ ورزيات شو.",
+      "reason": "هره مودالي تابلو قاعده د نړۍ مخکښ لري؛ د دې بې مخکښه مقدمه له نورو قاعدو او د ثبوت له ډول سره نه سمون خوري.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:141",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:151",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-033",
+      "unit_id": "OLP-0464",
+      "classification": "modal_witness_rule_conclusions_use_wrong_formula_variable",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:168,192",
+      "source_literal_line_1based": [
+        168,
+        192
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 181,
+      "disclosure_line_1based": 183,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د F-Box او T-Diamond د شاهد پايلو متغير له A څخه د مقدمې B ته واوښت.",
+      "reason": "دواړه مقدمې Box B يا Diamond B دي او ورپسې د څانګې سټونه هم د B نښه لرونکي فارمول کاروي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.n]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!B}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.n]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:168,192",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:183",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-034",
+      "unit_id": "OLP-0464",
+      "classification": "modal_soundness_witness_uses_nonmodal_model_and_satisfaction_macros",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:170,171,194,195",
+      "source_literal_line_1based": [
+        170,
+        171,
+        194,
+        195
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 186,
+      "disclosure_line_1based": 188,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دواړو شاهدانو د عام جوړښت او صدق نښې د مودالي مدل او مودالي پوره‌کېدو نښو ته واوښتې.",
+      "reason": "همدا ثبوت مخکې او وروسته مودالي مدل او مودالي صدق تعريفوي؛ عام Struct او Sat دلته د ثبوت ناسم ډول ښيي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Struct{M}$",
+          "$\\Struct{M}$",
+          "$\\Sat{M}{\\Gamma}[f]$",
+          "$\\Sat{M}{\\Gamma}[f]$"
+        ],
+        "target_only": [
+          "$\\mModel{M}$",
+          "$\\mModel{M}$",
+          "$\\mSat{M}{\\Gamma}[f]$",
+          "$\\mSat{M}{\\Gamma}[f]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:170,171,194,195",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:188",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-035",
+      "unit_id": "OLP-0464",
+      "classification": "soundness_prose_modal_models_and_branching_conclusions",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:41,222",
+      "source_literal_line_1based": [
+        41,
+        222
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 248,
+      "disclosure_line_1based": 247,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "تکراري «modal modals» مودالي مدلونو ته او «دوه مقدمې» د يوې مقدمې په دوو پايله‌څانګو ته په پښتو کښې روښانه شول.",
+      "reason": "لاندې څانګه‌وېشونکې قاعدې هره يوه يوه مقدمه او دوه پايله‌څانګې لري؛ د سرچينې تکرار او شمېرنه د خپل ثبوت خلاف دي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:41,222",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:247",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-036",
+      "unit_id": "OLP-0464",
+      "classification": "soundness_corollary_final_conclusion_must_be_entailment",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "source_locator": "content/normal-modal-logic/tableaux/soundness.tex:261",
+      "source_literal_line_1based": [
+        261
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex",
+      "target_line_1based": 292,
+      "disclosure_line_1based": 292,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ضدمدل له تناقض څخه وروستۍ پايله د اشتقاق پر ځای معنوي لازم‌والی بيانوي.",
+      "reason": "قضيه له Gamma Proves A څخه Gamma Entails A ثابتوي؛ وروستۍ منجمده جمله بيا Gamma Proves A وايي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\Proves!A$"
+        ],
+        "target_only": [
+          "$\\Gamma\\Entails!A$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/soundness.tex:261",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/soundness.tex:292",
+        "B142_DRAFT_QA_OLP-0464.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-037",
+      "unit_id": "OLP-0459",
+      "classification": "euclidean_filtration_figures_missing_w2_reflexive_edges",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "source_locator": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex:37,71",
+      "source_literal_line_1based": [
+        37,
+        71
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "target_line_1based": 41,
+      "disclosure_line_1based": 26,
+      "target_sha256": "2cb63b3056d9a5d806e9c7083a3508d88ad2507046d57a11ee6864cb90517719",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دواړو شکلونو په دويمه نړۍ کښې ځانته غشی ورزيات شو؛ څنګ ته پښتو څرګندونه د منجمدې سرچينې د رسم نشتوالی ښيي.",
+      "reason": "په لومړي رسم کښې w1→w2 اقليدسيتوب w2→w2 غواړي او بې له هغه w2 هېڅ جانشين نه لري. په فلټريشن کښې دا ځانته غشی له اصلي اړيکې وررسېږي.",
+      "formula_policy": "Only the exact registered math or TikZ exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+      "audit_artifacts": [
+        "B142_SOURCE_AUDIT.json",
+        "B142_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/filtrations/euclidean-filtrations.tex:37,71",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:26",
+        "B142_DRAFT_QA_OLP-0459.json"
+      ],
+      "decision_timing": "contemporaneous B142 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; frozen-source treatment only; no direct upstream issue",
+      "qa_tikz_replacements": [
+        {
+          "source": "\\draw[->] (w1) to (w2);",
+          "target": "\\draw[->] (w1) to (w2);\\draw[reflexive above] (w2) to (w2);",
+          "count": 2
+        }
+      ]
     }
   ],
   "external_upstream_report_submitted": false,
@@ -11529,7 +11929,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES"
   ],
   "source_authorities": [
     {

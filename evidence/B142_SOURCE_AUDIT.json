@@ -1,0 +1,193 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T14:17:15.371730+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+  "batch_id": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "new_unit_ids": [
+    "OLP-0463",
+    "OLP-0464"
+  ],
+  "revised_unit_ids": [
+    "OLP-0459"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0459",
+      "kind": "revised",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_bytes": 5222,
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "previous_target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "target_sha256": "2cb63b3056d9a5d806e9c7083a3508d88ad2507046d57a11ee6864cb90517719",
+      "paired_blocks": 13,
+      "source_correction_ids": [
+        "OLNML-037"
+      ]
+    },
+    {
+      "unit_id": "OLP-0463",
+      "kind": "new",
+      "source_path": "content/normal-modal-logic/tableaux/proofs-in-K.tex",
+      "source_bytes": 3256,
+      "source_sha256": "17c60b914fceb4b984233ac0cf4aa37d1f6ee938b91e052aa986b970f0f0842b",
+      "previous_target_sha256": null,
+      "target_sha256": "73bc3ef6c9d42ff1010fe155111412c19584e921501b9a5e2773ba4be2e8ef89",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0464",
+      "kind": "new",
+      "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "source_bytes": 12701,
+      "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+      "previous_target_sha256": null,
+      "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+      "paired_blocks": 28,
+      "source_correction_ids": [
+        "OLNML-031",
+        "OLNML-032",
+        "OLNML-033",
+        "OLNML-034",
+        "OLNML-035",
+        "OLNML-036"
+      ]
+    }
+  ],
+  "notes_path": "work/B142_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "49b757abb9ec76a5d415c2f6fd2141e42f02f4cf5df6b5172dc4a8f154e253bd",
+  "consultation_path": "work/B142_CANON_CONSULTATION.md",
+  "consultation_sha256": "80be9e4531c33436c43639cdd2a2b31690357d3c2f6550b0862593a99e42973c",
+  "staging_checkpoint_sha256": "178f448b7d8162ee5a062a78ddd97a2c0320050286e8d4e60a65b161e971b23f",
+  "staging_qa_sha256": {
+    "OLP-0459": "57b8e93e7d45c15afdfbcc1baaabaac4432de52edf266170e9f7fd68102a42e3",
+    "OLP-0463": "b9e9408f7dfbcf9ccfae4b2e44990fbf967ad9325ae7bad92d51367f8df52245",
+    "OLP-0464": "71a018956821ef4b9a932063c68e9fb1e43e2a741719bd366e80ba4930ca510a"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 216,
+      "printed_page": "205",
+      "page_image_sha256": "22843a61c352fcea7d9dd0484a7ca74e045bab66821e58bf397a58fa2f5bace7",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-031",
+      "finding": "د استدلال سرچپه لوری د مقدماتو رښتياوالی او د پایلې ناسم‌والی غواړي؛ بې نفې فورمول ضدمدل نه جوړوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-032",
+      "finding": "هره مودالي تابلو قاعده د نړۍ مخکښ لري؛ د دې بې مخکښه مقدمه له نورو قاعدو او د ثبوت له ډول سره نه سمون خوري."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-033",
+      "finding": "دواړه مقدمې Box B يا Diamond B دي او ورپسې د څانګې سټونه هم د B نښه لرونکي فارمول کاروي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-034",
+      "finding": "همدا ثبوت مخکې او وروسته مودالي مدل او مودالي صدق تعريفوي؛ عام Struct او Sat دلته د ثبوت ناسم ډول ښيي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-035",
+      "finding": "لاندې څانګه‌وېشونکې قاعدې هره يوه يوه مقدمه او دوه پايله‌څانګې لري؛ د سرچينې تکرار او شمېرنه د خپل ثبوت خلاف دي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "source_correction_id": "OLNML-036",
+      "finding": "قضيه له Gamma Proves A څخه Gamma Entails A ثابتوي؛ وروستۍ منجمده جمله بيا Gamma Proves A وايي."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "source_correction_id": "OLNML-037",
+      "finding": "په لومړي رسم کښې w1→w2 اقليدسيتوب w2→w2 غواړي او بې له هغه w2 هېڅ جانشين نه لري. په فلټريشن کښې دا ځانته غشی له اصلي اړيکې وررسېږي."
+    }
+  ],
+  "formula_policy": "The two new units add 38 paired blocks. Exact registered math exceptions apply only to OLP-0464; exactly two registered TikZ edge insertions apply only to revised OLP-0459. IDs, tags, environments and term tokens remain exact.",
+  "unresolved": "عين پاکستانۍ مودالي تابلو اصطلاحات لنډمهالي دي؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "a45b16ea0c4bd142bc20ddba24e48cafab2e1a5dfa5a4791233207e28b529311",
+  "next_executable_action": "Run independent cumulative corpus and canonical decision QA for 464 drafts; then continue OLP-0465."
+}

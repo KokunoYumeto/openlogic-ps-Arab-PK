@@ -1,0 +1,62 @@
+{
+  "schema": "ps-b142-modal-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0464",
+  "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+  "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+  "target_sha256": "53ccfce5e02ab44031b10b62d754f63af551d1891c5ae193137d64161837f775",
+  "source_blocks": 28,
+  "target_blocks": 28,
+  "expected_source_math": [
+    "$\\mSat{M}{!A}[w]$",
+    "$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$",
+    "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+    "$\\Struct{M}$",
+    "$\\Struct{M}$",
+    "$\\Sat{M}{\\Gamma}[f]$",
+    "$\\Sat{M}{\\Gamma}[f]$",
+    "$\\sFmla{\\True}{!A}[\\sigma.n]$",
+    "$\\Gamma\\Proves!A$"
+  ],
+  "expected_target_math": [
+    "$\\mModel{M}$",
+    "$\\mModel{M}$",
+    "$\\mSat/{M}{!A}[w]$",
+    "$\\mSat{M}{\\Gamma}[f]$",
+    "$\\mSat{M}{\\Gamma}[f]$",
+    "$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$",
+    "$\\sFmla{\\True}{!B}[\\sigma.n]$",
+    "$\\sFmla{\\False}{!B}[\\sigma.n]$",
+    "$\\Gamma\\Entails!A$"
+  ],
+  "expected_source_macro_names": [
+    "\\Struct",
+    "\\Struct",
+    "\\Sat",
+    "\\Sat",
+    "\\Proves"
+  ],
+  "expected_target_macro_names": [
+    "\\Entails",
+    "\\mModel",
+    "\\mModel",
+    "\\mSat",
+    "\\mSat",
+    "\\sigma"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "math": true,
+    "macro_names": true,
+    "source_comments": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

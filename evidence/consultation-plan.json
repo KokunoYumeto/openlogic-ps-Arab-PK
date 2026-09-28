@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B141-MODAL-TABLEAUX-OPENING",
-  "status": "OLP-0460–0462 source-reviewed and staged; 34 paired blocks, 22 semantic samples, one provisional modal-prefix term decision",
+  "batch_id": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
+  "status": "OLP-0463–0464 source-reviewed and staged; OLP-0459 figure revision staged; seven disclosed source treatments",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9736,6 +9736,42 @@
       ],
       "scope": "د K قضيېيزو او مودالي تابلو قاعدو جدولونه، د يو شان مخکښ تړل، د کارېدلي/نوي مخکښ څانګيز قيد او د ناسمو تړلو تابلوګانو بېلګې.",
       "allowed_residual_english": []
+    },
+    "OLP-0463": {
+      "batch_id": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-MODAL-TABLEAU-PREFIX"
+      ],
+      "scope": "د K لپاره د Box او Diamond دوه تړلې تابلوګانې او څلور عين فورمولي تمرينونه.",
+      "allowed_residual_english": []
+    },
+    "OLP-0464": {
+      "batch_id": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-PROOF-CALCULI",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "د K د مخکښ‌لرونکو تابلوګانو سموالی: د تفسير f، پوره‌کېدو، هرې قاعدې د پوره‌کېدو د ساتنې او د اشتقاق د معنوي لازم‌والي ثبوت.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -16788,6 +16824,174 @@
       "passage": "tag alternatives",
       "reverse_paraphrase": "All Box, Diamond and mixed tagged tableau alternatives stay exactly in place.",
       "finding": "د ټولو اختياري څانګو فورمولونه او کوډ عين دي."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "Box conjunction",
+      "reverse_paraphrase": "A closed tableau proves Box A and Box B entail Box(A and B).",
+      "finding": "د Box د دواړو فرضونو او ګډې پايلې جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "Box branch closure",
+      "reverse_paraphrase": "The prefixed tableau closes by opposing signs at the same accessible world.",
+      "finding": "د تړلو د هماغې نړۍ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "Diamond disjunction",
+      "reverse_paraphrase": "Diamond(A or B) entails Diamond A or Diamond B in a closed tableau.",
+      "finding": "د Diamond د وېش جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "Diamond branch closure",
+      "reverse_paraphrase": "Both alternatives close under matching prefixed formulas.",
+      "finding": "د دواړو څانګو بندېدل ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "exercise one",
+      "reverse_paraphrase": "The first exercise remains a K derivability obligation.",
+      "finding": "د لومړي تمرين فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "exercise two",
+      "reverse_paraphrase": "The second exercise remains a K derivability obligation.",
+      "finding": "د دويم تمرين فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "exercise three",
+      "reverse_paraphrase": "The third exercise remains a K derivability obligation.",
+      "finding": "د درېيم تمرين فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0463",
+      "passage": "exercise four",
+      "reverse_paraphrase": "The fourth exercise remains a K derivability obligation.",
+      "finding": "د څلورم تمرين فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "contrapositive",
+      "reverse_paraphrase": "A countermodel makes premises true and conclusion false at one world.",
+      "finding": "OLNML-031 نفي څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "prefix interpretation",
+      "reverse_paraphrase": "f sends prefixes to worlds and prefix extension to accessible worlds.",
+      "finding": "د تفسير جهت او د لاسرسي شرط ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "signed truth",
+      "reverse_paraphrase": "T A at a prefix is satisfied exactly when A holds at its interpreted world.",
+      "finding": "د T نښې صدق ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "signed falsehood",
+      "reverse_paraphrase": "F A at a prefix is satisfied exactly when A fails at its interpreted world.",
+      "finding": "د F نښې نفي ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "branch satisfiability",
+      "reverse_paraphrase": "A tableau is satisfiable when it has a satisfiable branch.",
+      "finding": "وجودي څانګيز شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "closed branch",
+      "reverse_paraphrase": "Matching T/F formulas at one prefix cannot both be satisfied.",
+      "finding": "د تړلې څانګې تناقض ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "rule invariant",
+      "reverse_paraphrase": "Extending a satisfiable tableau preserves at least one satisfiable branch.",
+      "finding": "د سموالي ثبوت اصلي ناوردا ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "negation rules",
+      "reverse_paraphrase": "T-not and F-not exchange signs under the same prefix.",
+      "finding": "د نفي دواړه قاعدې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "conjunction rule",
+      "reverse_paraphrase": "T-and adds both conjuncts on the same branch.",
+      "finding": "د T-and قاعده ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "false disjunction",
+      "reverse_paraphrase": "F-or carries the same world prefix as its branch.",
+      "finding": "OLNML-032 مخکښ څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "conditional rule",
+      "reverse_paraphrase": "F-conditional makes antecedent true and consequent false.",
+      "finding": "د F-شرطي جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "T Box",
+      "reverse_paraphrase": "T-Box acts at an already present successor.",
+      "finding": "د کارېدلي مخکښ قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "F Box",
+      "reverse_paraphrase": "F-Box introduces a fresh successor witnessing B false.",
+      "finding": "OLNML-033 او OLNML-034 سمې نښې ساتي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "T Diamond",
+      "reverse_paraphrase": "T-Diamond introduces a fresh successor witnessing B true.",
+      "finding": "OLNML-033 او OLNML-034 سمې نښې ساتي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "F Diamond",
+      "reverse_paraphrase": "F-Diamond acts at an already present successor.",
+      "finding": "د کارېدلي مخکښ قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "branching rules",
+      "reverse_paraphrase": "F-and, T-or, T-conditional each split one premise into two conclusions.",
+      "finding": "OLNML-035 دوه پايله‌څانګې روښانوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "corollary",
+      "reverse_paraphrase": "A closed tableau proving Gamma proves A yields Gamma semantically entails A.",
+      "finding": "OLNML-036 وروستۍ پايله سمه کوي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "theorem",
+      "reverse_paraphrase": "The theorem applies to closed prefixed tableau branches.",
+      "finding": "د قضیې ساحه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "model witness",
+      "reverse_paraphrase": "Modal model and modal satisfaction notation are used in both existential witness cases.",
+      "finding": "OLNML-034 د مودالي نښو ډول سموي."
+    },
+    {
+      "unit_id": "OLP-0464",
+      "passage": "remaining exercise",
+      "reverse_paraphrase": "The tagged completeness of the proof remains an exercise where the source says so.",
+      "finding": "د تمرين پاتې ساحه ساتل شوې."
     }
   ]
 }
