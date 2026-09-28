@@ -1,0 +1,192 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: filtrations-def
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{fil}
+
+\olsection{فلټريشنونه}
+
+د~$\Gamma$ له مخې د~$\mModel{M}$ «يوازينے» فلټريشن نۀ تعريفوو؛
+بلکې دا تعريفوو چې يو مدل~$\mModel{M^*}$ کله د~$\mModel{M}$
+فلټريشن ګڼل کېږي۔ ټول فلټريشنونه د نړۍو عين سټ~$W^*$ او عين
+ارزښت‌تابع~$V^*$ لري۔ خو بېلابېل فلټريشنونه بېلابېلې د لاسرسي
+اړيکې~$R^*$ لرلے شي۔ سره له دې، د فلټريشن ګڼل کېدو لپاره $R^*$
+بايد څو شرطونه پوره کړي۔ دا عين هغه شرطونه دي چې د اصلي پايلې د
+ثبوت لپاره ورته اړ يو: که $!A \in \Gamma$ وي، نو
+$\mSat{M}{!A}[w]$ هله او يوازې هله وي چې
+$\mSat{M^*}{!A}[{[w]}]$ وي۔
+
+\begin{defn}\ollabel{defn:filtration}
+  فرض کړئ $\Gamma$ د فرعي فارمولونو لپاره تړلے دے او
+  $\mModel{M} = \tuple{W,
+    R, V}$۔ د~$\Gamma$ له مخې د~$\mModel{M}$ يو
+  \emph{فلټريشن} هر هغه مدل
+  $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ دے چې:
+  \begin{enumerate}
+  \item $W^* = \Setabs{[w]}{w \in W}$؛
+  \item \ollabel{defn:filtration-R}%
+    د هر $u,v \in W$ لپاره:
+    \begin{enumerate}
+    \item \ollabel{defn:filtration-R1}%
+      که $Ruv$ وي، نو $R^*[u][v]$؛
+    \tagitem{prvBox}{\ollabel{defn:filtration-R2}%
+      که $R^*[u][v]$ وي، نو د هر $\Box !A \in \Gamma$ لپاره، که
+      $\mSat{M}{\Box!A}[u]$ وي، نو $\mSat{M}{!A}[v]$}{}
+    \tagitem{prvDiamond}{\ollabel{defn:filtration-R3}%
+      که $R^*[u][v]$ وي، نو د هر $\Diamond !A \in \Gamma$ لپاره، که
+      $\mSat{M}{!A}[v]$ وي، نو $\mSat{M}{\Diamond!A}[u]$۔}{}
+    \end{enumerate}
+  \item $V^*(p) = \Setabs{[u]}{u \in V(p)}$۔
+  \end{enumerate}
+\end{defn}
+
+د $V^*(p)$ په معنا فکر کول ګټور دي: دا د هغو ټولو نړۍو~$w$ د
+هم‌ارزښتۍ د ټولګيو~$[w]$ سټ دے چې $p$ په~$\mModel{M}$ کښې
+پکښې رښتينے وي۔ که $w \in V(p)$ وي، نو د تعريف له مخې
+$[w] \in V^*(p)$۔ خو که $[w] \in V^*(p)$ وي، لازم نۀ ده چې
+$w \in V(p)$ هم وي۔ له $[w] \in V^*(p)$ څخه يوازې دا ډاډېږي چې
+د \emph{يوې} نړۍ~$u \in V(p)$ لپاره $[w] = [u]$ وي۔ البته
+$[w] = [u]$ دا معنا لري چې $w \equiv u$۔ نو کله چې
+$[w] \in V^*(p)$ وي، يوازې دا نتيجه اخيستے شو چې د يوې
+$u \in V(p)$ لپاره $w \equiv u$ وي۔
+
+\begin{thm}\ollabel{thm:filtrations}
+  که $\mModel{M^*}$ د~$\Gamma$ له مخې د~$\mModel{M}$ فلټريشن
+  وي، نو د هر $!A \in \Gamma$ او $w \in W$ لپاره
+  $\mSat{M}{!A}[w]$ هله او يوازې هله چې
+  $\mSat{M^*}{!A}[{[w]}]$۔
+\end{thm}
+
+\begin{proof}
+  پر~$!A$ استقرا کوو او دا کاروو چې $\Gamma$ د فرعي فارمولونو
+  لپاره تړلے دے۔ ځکه $!A \in \Gamma$ او $\Gamma$ د فرعي
+  !!{formula}s لپاره تړلے دے، د~$!A$ ټول فرعي !!{formula}s هم
+  $\in \Gamma$ دي۔ نو په هر استقرايي ګام کښې د~$!A$ پر فرعي
+  !!{formula}s د استقرا فرضيه پلي کېږي۔
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{نه
+        $\mSat{M}{\indfrm}[w]$ او نه $\mSat{M^*}{\indfrm}[{[w]}]$۔}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{دواړه
+        $\mSat{M}{\indfrm}[w]$ او $\mSat{M^*}{\indfrm}[{[w]}]$۔}}{}
+    \item \indcase{!A}{p}{له کيڼ نه ښي لوري ته خبره سمدستي ده:
+      $\mSat{M}{\indfrm}[w]$ يوازې هله وي چې $w \in V(p)$ وي؛
+      له دې نه $[w]
+      \in V^*(p)$، يعنې $\mSat{M^*}{\indfrm}[{[w]}]$ راځي۔
+      برعکس، فرض کړئ $\mSat{M^*}{\indfrm}[{[w]}]$، يعنې $[w] \in
+      V^*(p)$۔ نو د يوې $v \in V(p)$ لپاره $w \equiv v$۔ البته
+      $\mSat{M}{p}[v]$ هم وي۔ ځکه $w \equiv v$، نړۍې $w$ او $v$
+      د~$\Gamma$ هماغه !!{formula}s رښتيني کوي۔ د فرض له مخې $p
+      \in \Gamma$ او $\mSat{M}{p}[v]$ دي؛ نو
+      $\mSat{M}{\indfrm}[w]$۔}
+
+    \tagitem{prvNot}{\iftag{probNot}{تمرين۔}{\indcase{!A}{\lnot
+          !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+          $\mSat/{M}{!B}[w]$۔ د استقرا فرضيې له مخې
+          $\mSat/{M}{!B}[w]$ هله او يوازې هله چې
+          $\mSat/{M^*}{!B}[{[w]}]$۔ په پای کښې
+          $\mSat/{M^*}{!B}[{[w]}]$ هله او يوازې هله چې
+          $\mSat{M^*}{\indfrm}[{[w]}]$۔}}}{}
+
+    \tagitem{prvAnd}{\iftag{probAnd}{تمرين۔}{\indcase{!A}{(!B \land
+          !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+          $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ دواړه وي۔ د استقرا
+          فرضيې له مخې $\mSat{M}{!B}[w]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$، او $\mSat{M}{!C}[w]$ هله او يوازې
+          هله چې $\mSat{M^*}{!C}[{[w]}]$۔ او
+          $\mSat{M^*}{\indfrm}[{[w]}]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$ او
+          $\mSat{M^*}{!C}[{[w]}]$ دواړه وي۔}}}{}
+
+    \tagitem{prvOr}{\iftag{probOr}{تمرين۔}{\indcase{!A}{(!B \lor
+          !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+          $\mSat{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي۔ د استقرا
+          فرضيې له مخې $\mSat{M}{!B}[w]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$، او $\mSat{M}{!C}[w]$ هله او يوازې
+          هله چې $\mSat{M^*}{!C}[{[w]}]$۔ او
+          $\mSat{M^*}{\indfrm}[{[w]}]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$ يا
+          $\mSat{M^*}{!C}[{[w]}]$ وي۔}}}{}
+
+    \tagitem{prvIf}{\iftag{probIf}{تمرين۔}{\indcase{!A}{(!B \lif
+          !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+          $\mSat/{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي۔ د استقرا
+          فرضيې له مخې $\mSat{M}{!B}[w]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$، او $\mSat{M}{!C}[w]$ هله او يوازې
+          هله چې $\mSat{M^*}{!C}[{[w]}]$۔ او
+          $\mSat{M^*}{\indfrm}[{[w]}]$ هله او يوازې هله چې
+          $\mSat/{M^*}{!B}[{[w]}]$ يا
+          $\mSat{M^*}{!C}[{[w]}]$ وي۔}}}{}
+
+    \tagitem{prvIff}{\iftag{probIff}{تمرين۔}{\indcase{!A}{(!B \liff
+          !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+          $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ دواړه وي، يا
+          $\mSat/{M}{!B}[w]$ او $\mSat/{M}{!C}[w]$ دواړه وي۔ د
+          استقرا فرضيې له مخې $\mSat{M}{!B}[w]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$، او $\mSat{M}{!C}[w]$ هله او يوازې
+          هله چې $\mSat{M^*}{!C}[{[w]}]$۔ او
+          $\mSat{M^*}{\indfrm}[{[w]}]$ هله او يوازې هله چې
+          $\mSat{M^*}{!B}[{[w]}]$ او
+          $\mSat{M^*}{!C}[{[w]}]$ دواړه وي، يا
+          $\mSat/{M^*}{!B}[{[w]}]$ او
+          $\mSat/{M^*}{!C}[{[w]}]$ دواړه وي۔}}}{}
+
+    \tagitem{prvBox}{\iftag{probBox}{تمرين۔}{\indcase{!A}{\Box
+          !B}{فرض کړئ $\mSat{M}{\indfrm}[w]$۔ د دې د ښودلو لپاره
+          چې $\mSat{M^*}{\indfrm}[{[w]}]$، داسې $v$ واخلئ چې
+          $R^*[w][v]$ وي۔ د
+          \olref{defn:filtration}\olref{defn:filtration-R2} له مخې
+          $\mSat{M}{!B}[v]$ وي، او د استقرا فرضيې له مخې
+          $\mSat{M^*}{!B}[{[v]}]$۔ ځکه $v$ هره يوه نړۍ کېدے شوه،
+          $\mSat{M^*}{\indfrm}[{[w]}]$ ثابت شو۔
+
+          برعکس، فرض کړئ $\mSat{M^*}{\indfrm}[{[w]}]$ او داسې هره
+          $v$ واخلئ چې $Rwv$ وي۔ د
+          \olref{defn:filtration}\olref{defn:filtration-R1} له مخې
+          $R^*[w][v]$، نو $\mSat{M^*}{!B}[{[v]}]$ وي؛ د استقرا
+          فرضيې له مخې $\mSat{M}{!B}[v]$، او ځکه $v$ اختياري وه،
+          $\mSat{M}{\indfrm}[w]$ ثابت شو۔}}}{}
+
+    \tagitem{prvDiamond}{\iftag{probDiamond}{تمرين۔}{\indcase{!A}{\Diamond
+          !B}{فرض کړئ $\mSat{M}{\indfrm}[w]$۔ نو د يوې $v \in W$
+          لپاره $Rwv$ او $\mSat{M}{!B}[v]$ وي۔ د استقرا فرضيې له
+          مخې $\mSat{M^*}{!B}[{[v]}]$، او د
+          \olref{defn:filtration}\olref{defn:filtration-R1} له مخې
+          $R^*[w][v]$۔ نو $\mSat{M^*}{\indfrm}[{[w]}]$۔
+
+          اوس فرض کړئ $\mSat{M^*}{\indfrm}[{[w]}]$۔ نو د يوې $[v]
+          \in W^*$ لپاره، چې $R^*[w][v]$ وي،
+          $\mSat{M^*}{!B}[{[v]}]$ وي۔ د استقرا فرضيې له مخې
+          $\mSat{M}{!B}[v]$۔ د
+          \olref{defn:filtration}\olref{defn:filtration-R3} له مخې
+          $\mSat{M}{\indfrm}[w]$ وي۔}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[nml][fil][fil]{thm:filtrations} ثبوت بشپړ کړئ۔
+\end{prob}
+
+هغه څه چې په يوه مدل کښې د نړۍو د صدق په اړه سم دي، د يوه مدل د صدق
+او د مدلونو د يوه ټولګي د اعتبار په اړه هم سم دي۔
+
+\begin{cor}
+  فرض کړئ $\Gamma$ د فرعي فارمولونو لپاره تړلے دے۔ بيا:
+  \begin{enumerate}
+  \item که $\mModel{M^*}$ د~$\Gamma$ له مخې د~$\mModel{M}$
+    فلټريشن وي، نو د هر $!A \in \Gamma$ لپاره: $\mSat{M}{!A}$ هله
+    او يوازې هله چې $\mSat{M^*}{!A}$۔
+  \item که $\mClass{C}$ د مدلونو يو ټولگے وي، او
+    $\Gamma(\mClass{C})$ په~$\mClass{C}$ کښې د مدلونو د
+    $\Gamma$-فلټريشنونو ټولگے وي، نو هر !!{formula}~$!A \in \Gamma$
+    په~$\mClass{C}$ کښې هله او يوازې هله معتبر دے چې
+    په~$\Gamma(\mClass{C})$ کښې معتبر وي۔
+  \end{enumerate}
+\end{cor}
+
+
+
+\end{document}

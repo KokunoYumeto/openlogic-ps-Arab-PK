@@ -1,0 +1,33 @@
+{
+  "schema": "ps-b136-target-clarification/1",
+  "status": "PASS",
+  "recorded_utc": "2026-09-28T02:23:19.481514+00:00",
+  "unit_id": "OLP-0452",
+  "kind": "duplicated-Pashto-particle-removed",
+  "source_path": "content/normal-modal-logic/filtrations/preliminaries.tex",
+  "source_sha256": "52ddd6bc925f0da353223ff038b1cb59be4a633ef8b8a8ec885d48fb99fcced8",
+  "source_lines_1based": [
+    63,
+    64,
+    65
+  ],
+  "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/preliminaries.tex",
+  "target_lines_1based": [
+    63,
+    64
+  ],
+  "old_target_sha256": "ebc2be6cf41faba5aefa9d79961f308ecd585b3c52fe43aedeaa4c4c2f28110e",
+  "target_sha256": "c7a1c843daa11428a3ec60ba50ce2a488869f8a1ad6d2d54771a54a997cd40fe",
+  "literal_replacements": [
+    {
+      "old": "نو $u$ به د\n  د~$\\Gamma$ هماغه",
+      "new": "نو $u$ به\n  د~$\\Gamma$ هماغه"
+    }
+  ],
+  "source_math_unchanged": true,
+  "paired_blocks": 14,
+  "reason": "The translation duplicated the Pashto particle د across a line break in the transitivity proof. Removing one copy restores ordinary grammar without changing the frozen source or the proof.",
+  "upstream_source_error": false,
+  "reader_disclosure_required": false,
+  "reader_disclosure_reason": "This fixes a target-language typo; no source formula or theorem is changed."
+}

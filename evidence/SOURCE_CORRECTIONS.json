@@ -11109,7 +11109,7 @@
       "target_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
       "mode": "adjacent-Pashto-disclosed-source-treatment",
       "translation_change": "د ساده بېلګې لاسرسی عمومي ټاکل شوے؛ د Box شرط د هرې نړۍ د B صدق دے، چې له ورپسې استقرايي ګام سره سمون لري. سرچينه‌يي توپير په خپل ځای ښکاره شوے.",
-      "reason": "په تشه اړيکه کښې Box تش‌صدق لري، خو د سرچينې وروستے ګام د هرې نړۍ B غواړي. د سرچينې د «يوې v نړۍ Box B» شرط هم د عمومي Box معنا نۀ ورکوي.",
+      "reason": "سرچينه لومړے د لاسرسي اړيکه نفي کوي، خو وروستے استقرايي ګام د هرې نړۍ B غواړي؛ په تشه اړيکه کښې Box په تش ډول رښتيا وي. په ناتش عمومي چوکاټ کښې «د يوې v نړۍ Box B» له Box B په w کښې همارز دے، خو سرچينه دا عمومي لاسرسی نۀ فرضوي او ګردشي عبارت د هرې نړۍ B شرط نۀ څرګندوي. سمون همدا فرض او شرط څرګندوي؛ د ناتش عمومي چوکاټ هم‌ارزي نۀ ردوي.",
       "formula_policy": "Only registered math spans differ for OLNML-025/026; IDs, tags, environments, term tokens and frozen source are unchanged.",
       "qa_math_exception": {
         "source_only": [
@@ -11146,7 +11146,17 @@
         "B134_STAGING_QA_OLP-0450-0451.json"
       ],
       "decision_timing": "contemporaneous B134 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "revision_history": [
+        {
+          "batch": "B136",
+          "kind": "formal-rationale-clarification",
+          "recorded_utc": "2026-09-28T02:23:19.481514+00:00",
+          "old_reason_sha256": "cdae5768a2e7ac7d4d02116abaf8d0950bf7ef3cc628176a1a9cfd4b5f7cb324",
+          "new_reason_sha256": "0feafdb30c80fb17ff106778de2a06b0045fbcbbd2c115e2aab368d3f02283e5",
+          "finding": "On a nonempty universal frame the source existential Box expression is equivalent to Box at w; the defect is the missing universal-accessibility assumption and circular presentation."
+        }
+      ]
     },
     {
       "id": "OLNML-026",

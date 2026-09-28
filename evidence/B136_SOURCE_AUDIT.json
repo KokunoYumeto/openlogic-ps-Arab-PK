@@ -1,0 +1,99 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T02:25:21.078390+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-DEFINITION",
+  "batch_id": "PS-B136-NORMAL-MODAL-FILTRATION-DEFINITION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0453",
+      "source_path": "content/normal-modal-logic/filtrations/filtrations-def.tex",
+      "source_bytes": 7954,
+      "source_sha256": "e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1",
+      "target_sha256": "2dfdbb429f52393e6495c0902952c5b5571fc3c17e38be0bfc7849b0c6bfb4e9",
+      "paired_blocks": 23,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B136_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "76dfccdd7a59d953a814b13dc3a5fd4fd63ca397864311041dea547d79ed36ae",
+  "consultation_path": "work/B136_CANON_CONSULTATION.md",
+  "consultation_sha256": "41e4350c76152238592b310728d8ba6d2de24df7097646aac019568a0deaf626",
+  "staging_qa_sha256": "414afd3b03a8672a1ab55da9bc7eab6b1876f38b8beb80616b54db3e336528ee",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0452",
+      "target_clarification_sha256": "0ac3ee5abc5cbfeb52cd1eba9fbb115a6612405f1bddfd4a0466cff99f695f8d",
+      "finding": "The translation duplicated the Pashto particle د across a line break in the transitivity proof. Removing one copy restores ordinary grammar without changing the frozen source or the proof."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "source_correction_id": "OLNML-025",
+      "rationale_clarification_sha256": "9637a09bcf85903faa7bd746cd24b6b11e0454b34d6a25bb1f873ce91ab006e3",
+      "finding": "For nonempty W and universal accessibility, exists v in W with Box B at v is equivalent to Box B at w; no such frame assumption is stated in the source."
+    }
+  ],
+  "formula_policy": "OLP-0453 all math/IDs/tags/environments/term tokens unchanged. OLP-0452 target-only duplicated particle repair changes no math; OLP-0451 target and frozen source unchanged while its recorded rationale is clarified.",
+  "target_clarification_sha256": "0ac3ee5abc5cbfeb52cd1eba9fbb115a6612405f1bddfd4a0466cff99f695f8d",
+  "olnml025_rationale_clarification_sha256": "9637a09bcf85903faa7bd746cd24b6b11e0454b34d6a25bb1f873ce91ab006e3",
+  "unresolved": "د R2/R3 ځانګړي پاکستاني مودالي مرکبونه لا لنډمهالي دي؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "3b2fe185381718c316557cda28f49fb6cc61f3fc4d012edd5c5921e72581e0a7",
+  "next_executable_action": "Run cumulative and canonical QA, then continue OLP-0454."
+}

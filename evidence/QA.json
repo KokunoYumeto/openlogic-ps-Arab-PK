@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 452,
-    "structural_pass": 452,
+    "draft_units": 453,
+    "structural_pass": 453,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B135-NORMAL-MODAL-FILTRATION-PRELIMINARIES",
+  "batch": "PS-B136-NORMAL-MODAL-FILTRATION-DEFINITION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14692,9 +14692,36 @@
       "unit_id": "OLP-0452",
       "path": "content/normal-modal-logic/filtrations/preliminaries.tex",
       "source_sha256": "52ddd6bc925f0da353223ff038b1cb59be4a633ef8b8a8ec885d48fb99fcced8",
-      "translation_sha256": "ebc2be6cf41faba5aefa9d79961f308ecd585b3c52fe43aedeaa4c4c2f28110e",
+      "translation_sha256": "c7a1c843daa11428a3ec60ba50ce2a488869f8a1ad6d2d54771a54a997cd40fe",
       "source_blocks": 14,
       "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0453",
+      "path": "content/normal-modal-logic/filtrations/filtrations-def.tex",
+      "source_sha256": "e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1",
+      "translation_sha256": "2dfdbb429f52393e6495c0902952c5b5571fc3c17e38be0bfc7849b0c6bfb4e9",
+      "source_blocks": 23,
+      "target_blocks": 23,
       "checks": {
         "block_count": true,
         "environments": true,
@@ -21106,6 +21133,144 @@
       "passage": "partition disjointness",
       "reverse_paraphrase": "A common member of [w] and [v] forces w equivalent to v, hence the classes are equal.",
       "finding": "ګډ غړے د ټولګيو عين‌والے ثابتوي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "worlds and valuation",
+      "reverse_paraphrase": "Every filtration shares W* and V*; only the accessibility relation R* may vary.",
+      "finding": "د يو‌شان او بېلابېلو برخو توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "R1",
+      "reverse_paraphrase": "Every original edge Ruv gives an edge R*[u][v] in the filtration.",
+      "finding": "د اصلي نه نوي اړيکې جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "R2",
+      "reverse_paraphrase": "If R*[u][v] and Box A belongs to Gamma, truth of Box A at u entails truth of A at v in M.",
+      "finding": "د Box شرط او د دواړو نړۍو ترتيب ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "R3",
+      "reverse_paraphrase": "If R*[u][v] and Diamond A belongs to Gamma, truth of A at v entails Diamond A at u in M.",
+      "finding": "د Diamond د شاهد لور او کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "valuation forward",
+      "reverse_paraphrase": "A world w satisfying p gives its class [w] in V*(p).",
+      "finding": "مخکښ غړيتوب بې اضافه فرضه راځي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "valuation converse caution",
+      "reverse_paraphrase": "Membership of [w] in V*(p) gives some equivalent u satisfying p, not automatically p at w.",
+      "finding": "د استازي د صدق محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "theorem scope",
+      "reverse_paraphrase": "For every A in Gamma and w in W, truth at w in M iff truth at [w] in M*.",
+      "finding": "د هر فارمول او هرې نړۍ کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "induction closure",
+      "reverse_paraphrase": "Subformula closure keeps each induction hypothesis within Gamma.",
+      "finding": "د استقرا د فرضيې د کارونې حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "false case",
+      "reverse_paraphrase": "Bottom is false at both original and filtered worlds.",
+      "finding": "د دواړو نفي ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "true case",
+      "reverse_paraphrase": "Top is true at both original and filtered worlds.",
+      "finding": "د دواړو مثبتو شرطونو معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "variable forward",
+      "reverse_paraphrase": "Truth of p at w implies w in V(p) and [w] in V*(p).",
+      "finding": "د متغير مخکښ لور ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "variable reverse",
+      "reverse_paraphrase": "An equivalent witness v satisfies p; p in Gamma transfers that truth to w.",
+      "finding": "د p غړيتوب اړين قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "negation",
+      "reverse_paraphrase": "The negated case applies the induction hypothesis to B in both directions.",
+      "finding": "د نفي دوه اړخيزه معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Both operands must hold at each paired world.",
+      "finding": "د دواړو غړو اړتيا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "disjunction",
+      "reverse_paraphrase": "At least one operand holds at each paired world.",
+      "finding": "يا غير انحصاري پاتې ده."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "conditional",
+      "reverse_paraphrase": "The antecedent is false or the consequent is true.",
+      "finding": "د شرط دواړه بديلونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Both operands are true or both are false in each paired world.",
+      "finding": "د دواړو برابر رښتياوالي حالتونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "Box forward",
+      "reverse_paraphrase": "Arbitrary filtered successor uses R2 and induction to satisfy B.",
+      "finding": "R2 او د ټولو نړۍو کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "Box reverse",
+      "reverse_paraphrase": "Arbitrary original successor uses R1 and induction to satisfy B.",
+      "finding": "R1 او سرچپه لور ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "Diamond forward",
+      "reverse_paraphrase": "One original witness maps via R1 to a filtered witness.",
+      "finding": "وجودي شاهد او R1 ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "Diamond reverse",
+      "reverse_paraphrase": "One filtered witness gives B at its representative, then R3 gives Diamond B at w.",
+      "finding": "وجودي شاهد او R3 ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "model corollary",
+      "reverse_paraphrase": "For each A in Gamma, model-wide truth is preserved under filtration.",
+      "finding": "د هر فارمول قيد او د ټول مدل صدق ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0453",
+      "passage": "class corollary",
+      "reverse_paraphrase": "Validity in C iff validity in the class of Gamma-filtrations of models in C, for A in Gamma.",
+      "finding": "د اصلي او فلټريشن ټولګيو او فورمول حد ساتل شوے."
     }
   ],
   "builds": [
