@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
-  "status": "OLP-0468–0469 source-reviewed and staged; 34 paired blocks, 14 semantic samples, ten disclosed source treatments; cumulative QA pending",
+  "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+  "status": "OLP-0470–0474 source-reviewed and staged; 54 paired blocks, 21 semantic samples, one provisional term and one disclosed source treatment; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9862,6 +9862,104 @@
       ],
       "scope": "له بشپړې پرانيستې K تابلو څخه پرېکړې کړنلاره او دوه صريح ضدمدلونه، شپږ ونې او دوه انځورونه.",
       "allowed_residual_english": []
+    },
+    "OLP-0470": {
+      "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "د مودالي سېکوېنټ د څپرکي عنوان، د مسودې سمونګر يادښت او څلور فعال واردات.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0471": {
+      "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-RULES",
+        "TERM-HYPERSEQUENT",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "د K لپاره د LK اضافي Box/Diamond قواعد او د S5 د پرېکون پرته عادي/هايپر سېکوېنټ توپير.",
+      "allowed_residual_english": [
+        "LK"
+      ],
+      "residual_english_rationale": "LK is the exact formal calculus identifier."
+    },
+    "OLP-0472": {
+      "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-RULES"
+      ],
+      "scope": "د K مودالي سېکوېنټ قواعد، اړخيز فارمولونه او د دوو ناسم پراخونو نامعتبرې پايلې.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0473": {
+      "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-RULES"
+      ],
+      "scope": "د K د Box او Diamond درې سېکوېنټ ونې، د دوه‌ګونتيا ثبوت او څلور تمرينونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0474": {
+      "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-RULES",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-PROOF-PROPERTIES"
+      ],
+      "scope": "د T/D/B/4/5 قاعدې، شپږ مودالي نظامونه، د K4 او S5 بېلګې، د S5 پرېکون او شپږ تمرينونه.",
+      "allowed_residual_english": [
+        "Box",
+        "and",
+        "both",
+        "only",
+        "primitive",
+        "prmitive"
+      ],
+      "residual_english_rationale": "These words occur only in unchanged inline TeX source comments, including the source typo prmitive."
     }
   },
   "semantic_review": [
@@ -17310,6 +17408,132 @@
       "passage": "diagram fidelity",
       "reverse_paraphrase": "Both countermodel figures preserve all worlds, edges and valuations.",
       "finding": "دواړه TikZ انځورونه بايټ په بايټ عين دي."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "chapter title",
+      "reverse_paraphrase": "This is the modal sequent-calculus chapter driver.",
+      "finding": "د څپرکي سرليک او پېژند د مودالي سېکوېنټ حساب دي."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "editorial status",
+      "reverse_paraphrase": "The source calls this a draft needing more examples and soundness and completeness proofs.",
+      "finding": "د سرچينې نيمګړتيا د سمونګر په يادښت کښې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "imports",
+      "reverse_paraphrase": "Introduction, K rules, K proofs and further rules are the four active imports.",
+      "finding": "څلور فعال واردات او درې تبصره شوي واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "K modal extension",
+      "reverse_paraphrase": "LK receives modal Box and Diamond rules under the source tag alternatives.",
+      "finding": "د درېو ټګ‌حالتونو رسمي بلاک عين دے."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "S5 qualifier",
+      "reverse_paraphrase": "No LK-derived cut-free complete ordinary sequent calculus for S5 is known.",
+      "finding": "د نه‌پېژندنې احتياطي دعوه د ناممکنۍ ثبوت نۀ بولي."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "hypersequent contrast",
+      "reverse_paraphrase": "S5 does have a cut-free complete hypersequent calculus.",
+      "finding": "د هايپر سېکوېنټ د حساب موجوديت له عادي حساب څخه جلا ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "axioms",
+      "reverse_paraphrase": "A sequent of the form A entails A remains an axiom.",
+      "finding": "د بديهي اصل بڼه عين ده."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "modalized contexts",
+      "reverse_paraphrase": "Box Gamma and Diamond Delta prefix every member of their respective sequences.",
+      "finding": "د هر غړي مودالي مخکښ او د تشې لړۍ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "single principal formula",
+      "reverse_paraphrase": "Only one right Box or left Diamond principal formula may be modalized.",
+      "finding": "د اصلي فارمول يوازينے قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "first invalid extension",
+      "reverse_paraphrase": "Modalizing arbitrarily many principal formulas derives K-invalid formulas.",
+      "finding": "د دوو ناسمې پايلو رسمي ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "side formula extension",
+      "reverse_paraphrase": "Leaving side formulas unchanged while modalizing the principal formula derives K-invalid formulas.",
+      "finding": "د څنګ‌فارمولونو د ناسم حالت دوه ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "Box conjunction",
+      "reverse_paraphrase": "Box A and Box B jointly entail Box(A and B) in the displayed derivation.",
+      "finding": "د لومړۍ ونې فورمول او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "Diamond disjunction",
+      "reverse_paraphrase": "Diamond(A or B) entails Diamond A or Diamond B in the displayed derivation.",
+      "finding": "د دويمې ونې فورمول او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "duality",
+      "reverse_paraphrase": "The duality proof has two left-negation steps that the frozen source mislabels as right-negation.",
+      "finding": "OLNML-051 دوه ليبلونه سموي؛ نورې ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four K sequent proof exercises retain formulas and order.",
+      "finding": "د څلورو تمرينونو فورمولونه او ترتيب عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "rule alternatives",
+      "reverse_paraphrase": "Three tag alternatives preserve each T, D, B, 4 and 5 modal sequent rule.",
+      "finding": "درې رسمي جدولونه او ټګونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "frame table",
+      "reverse_paraphrase": "T, D, K4, B, S4 and S5 retain their accessibility properties and rule labels.",
+      "finding": "د شپږو نظامونو قطارونه او خاصيتونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "K4 examples",
+      "reverse_paraphrase": "Box and Diamond presentations both derive axiom 4.",
+      "finding": "د K4 دواړه ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "S5 axiom",
+      "reverse_paraphrase": "Three primitive-operator presentations derive axiom 5.",
+      "finding": "د S5 درې ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "cut necessity",
+      "reverse_paraphrase": "The displayed S5 sequent derivation uses Cut, which the ordinary calculus needs for completeness.",
+      "finding": "د پرېکون شرط او درې ټګ‌حالتونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "six exercises",
+      "reverse_paraphrase": "Six modal-system derivability exercises retain formulas and order.",
+      "finding": "د شپږو تمرينونو فورمولونه او ترتيب عين دي."
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b147-applied-modal-staging/1",
+  "utc": "2026-09-28T16:29:58.326620+00:00",
+  "status": "three translated drafts staged, not accepted or in cumulative QA",
+  "accepted_draft_units": 474,
+  "staged_unit_ids": [
+    "OLP-0475",
+    "OLP-0476",
+    "OLP-0477"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0475",
+      "source_path": "content/applied-modal-logic/applied-modal-logic.tex",
+      "source_sha256": "e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e",
+      "target_sha256": "323d2bfe610a5a95d0239d729411132c386bd79bb775848b39726547165af5e0",
+      "paired_blocks": 9,
+      "focused_qa_sha256": "6fce4a262e5a93cc39a0703aa5105b00b335bd38e36cba541c7e0926c2a40d27"
+    },
+    {
+      "unit_id": "OLP-0476",
+      "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+      "source_sha256": "002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4",
+      "target_sha256": "b1a203ad4a9bbcb38c914511fe8c2944535bace47289efb6f18eefb350d4852d",
+      "paired_blocks": 8,
+      "focused_qa_sha256": "f0517bf6e28795b2b7ae48ea1f24638dbd7b4860943b282241269cc32d7e6d56"
+    },
+    {
+      "unit_id": "OLP-0477",
+      "source_path": "content/applied-modal-logic/temporal-logic/introduction.tex",
+      "source_sha256": "327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd",
+      "target_sha256": "c908fe863460fe91f560d383001d87fa34de27255f34d76f1a2912513af51f14",
+      "paired_blocks": 10,
+      "focused_qa_sha256": "e6c1faedfcb8d6655b2fa74b9e1dcd8199f676978d758771e94c3f7cde7aa701"
+    }
+  ],
+  "paired_blocks": 27,
+  "terminology_note": "Applied title is provisional; future contingent follows the earlier TERM-MVL-LUKASIEWICZ-MODAL sense, subject to applied-modal chapter review.",
+  "next_action": "Consult applicable Pakistani-first canon, register decisions and source-semantic review, then continue OLP-0478 temporal semantics."
+}

@@ -3417,3 +3417,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د q شاهد ۱٫۲ شو.
 - وجه: د وروستۍ ونې او انځور q شاهد په ۱٫۲ نړۍ کښې ښيي.
 - يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+## OLNML-051
+
+- واحد: OLP-0473۔
+- منجمده سرچينه: content/normal-modal-logic/sequent-calculus/proofs-in-K.tex؛ SHA-256 62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex؛ SHA-256 ee1de84cf33bb18c3b154fc3d987a56d254d4324a794f5954d7fc6231ca5a995۔
+- چلند: د دوه‌ګونتيا په ونې کښې د نفي د کيڼې قاعدې دوه ليبلونه د غلطې ښۍ قاعدې پر ځاے راوړل شول.
+- وجه: په دواړو موردونو کښې پايله نفي په کيڼه خوا کښې راولي؛ د منجمدې سرچينې د propositional-rules.tex تعريف دا د LeftR نفي قاعده بولي.
+- يوازې دوه عين RightR/LeftR ليبلونه بدل شوي؛ رسمي ونې، فورمولونه او منجمده سرچينه نور عين دي۔

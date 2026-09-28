@@ -1,0 +1,132 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T16:15:53.897760+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS",
+  "batch_id": "PS-B146-MODAL-SEQUENT-CALCULUS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0470",
+      "source_path": "content/normal-modal-logic/sequent-calculus/sequent-calculus.tex",
+      "source_bytes": 556,
+      "source_sha256": "94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1",
+      "target_sha256": "314a5ce35d3eba20ae3a46ccded23cae8f401df2f559b1ed05f4463a40362878",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0471",
+      "source_path": "content/normal-modal-logic/sequent-calculus/introduction.tex",
+      "source_bytes": 1505,
+      "source_sha256": "c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897",
+      "target_sha256": "22a82423ed9bac8af1b088a3806bbcf9fa851c2eddfd130aa2a1a5b534efa108",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0472",
+      "source_path": "content/normal-modal-logic/sequent-calculus/rules-for-K.tex",
+      "source_bytes": 4852,
+      "source_sha256": "ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f",
+      "target_sha256": "fe8ecd020c39f2ad93a69b6fc18d39bb4c84285106faa6302f3ad8766129d983",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0473",
+      "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+      "source_bytes": 4093,
+      "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+      "target_sha256": "ee1de84cf33bb18c3b154fc3d987a56d254d4324a794f5954d7fc6231ca5a995",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLNML-051"
+      ]
+    },
+    {
+      "unit_id": "OLP-0474",
+      "source_path": "content/normal-modal-logic/sequent-calculus/more-rules.tex",
+      "source_bytes": 10933,
+      "source_sha256": "7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45",
+      "target_sha256": "1edec566d91b4b6ae3324c1e7bc643e580242e5d4074a48bfb463092ca5ed9be",
+      "paired_blocks": 17,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B146_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "291c32e8618874936706159beeac1149d2f8a8990464d480323670bee1e842ae",
+  "consultation_path": "work/B146_CANON_CONSULTATION.md",
+  "consultation_sha256": "be1344956d4e264c2e0e3d9c7e54115fc56a2e926a1f16cd41662f5b15cf6494",
+  "staging_checkpoint_sha256": "f4437b1403c2ce679d47f4cf76d46d4ea067ba192810d1d7d2926df2efc0ca1a",
+  "staging_qa_sha256": {
+    "OLP-0470": "953f22aa4d547283b46077a335b80daf38aeaaf72f05b26439b7ef386c2c98b9",
+    "OLP-0471": "d589b091f33f83d0bd540ee037cfa83389750ca98d377269b981d868acf85236",
+    "OLP-0472": "cad5e12c0a4d5a76004a5bf5ec02e315fbf452b19fc20e1d339b0502475e9dc2",
+    "OLP-0473": "993191275cdf0714f0868b87c816e06ab0f693d0d9c83abf8cd16ffa26bc1352",
+    "OLP-0474": "96dca7177ac5bc463c13dc2ab0e96ba59f6f5f52336f58b603f608607ef89a7c"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "rendered page re-read in B146 before/while drafting",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "rendered page re-read in B146 before/while drafting",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "rendered page re-read in B146 before/while drafting",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "rendered page re-read in B146 before/while drafting",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 44,
+      "printed_page": "39",
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "inspection_timing": "rendered page re-read in B146 before/while drafting",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0473",
+      "source_correction_id": "OLNML-051",
+      "finding": "په دواړو موردونو کښې پايله نفي په کيڼه خوا کښې راولي؛ د منجمدې سرچينې د propositional-rules.tex تعريف دا د LeftR نفي قاعده بولي."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "term_id": "TERM-HYPERSEQUENT",
+      "finding": "Exact technical term unattested in checked Pashto canon; provisional phonetic rendering keeps the source distinction."
+    }
+  ],
+  "formula_policy": "54 paired blocks; all math spans, IDs, tags, environments, term tokens and proof-tree nodes exact except two registered LeftR negation labels in OLP-0473.",
+  "unresolved": "هايپر سېکوېنټ موقتي نوم دے؛ د انسان تصويب يا د عينې چاپي اصطلاح دعوه نۀ ده شوې.",
+  "model_provenance_sha256": "192732e3e6ad573ddfc95f75546f5f11ec46bdd8dea1e8c3f5b886868ae28ba3",
+  "next_executable_action": "Run two independent cumulative QA checks and dual canonical replay for OLP-0470–0474; then continue OLP-0475."
+}

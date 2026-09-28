@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0469; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T15:46:10.556633+00:00",
+  "status": "adopted through OLP-0474; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T16:15:53.897760+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12585,6 +12585,69 @@
       ],
       "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-051",
+      "unit_id": "OLP-0473",
+      "classification": "dual_sequent_negation_rule_labels_right_instead_of_left",
+      "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+      "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+      "source_locator": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:85,102",
+      "source_literal_line_1based": [
+        85,
+        102
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+      "target_line_1based": 90,
+      "additional_target_lines_1based": [
+        107
+      ],
+      "disclosure_line_1based": 84,
+      "target_sha256": "ee1de84cf33bb18c3b154fc3d987a56d254d4324a794f5954d7fc6231ca5a995",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دوه‌ګونتيا په ونې کښې د نفي د کيڼې قاعدې دوه ليبلونه د غلطې ښۍ قاعدې پر ځاے راوړل شول.",
+      "reason": "په دواړو موردونو کښې پايله نفي په کيڼه خوا کښې راولي؛ د منجمدې سرچينې د propositional-rules.tex تعريف دا د LeftR نفي قاعده بولي.",
+      "formula_policy": "Only two exact structural macro-name substitutions are allowed; all proof formulas, premises, conclusions, identifiers, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [
+          "RightR",
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR",
+          "LeftR"
+        ],
+        "scope": "two negation labels whose conclusions place negation on the left"
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS",
+      "audit_artifacts": [
+        "B146_SOURCE_AUDIT.json",
+        "B146_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:85,102",
+        "ps-Arab-PK/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex:84-87,90,107",
+        "B146_DRAFT_QA_OLP-0473.json",
+        "content/first-order-logic/sequent-calculus/propositional-rules.tex:13-25"
+      ],
+      "decision_timing": "contemporaneous B146 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -12676,7 +12739,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS"
   ],
   "source_authorities": [
     {

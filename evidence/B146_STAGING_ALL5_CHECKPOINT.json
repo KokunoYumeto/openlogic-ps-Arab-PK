@@ -1,0 +1,73 @@
+{
+  "schema": "ps-b146-modal-sequent-staging/1",
+  "utc": "2026-09-28T16:15:53.897760+00:00",
+  "status": "five translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 469,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0470",
+    "OLP-0471",
+    "OLP-0472",
+    "OLP-0473",
+    "OLP-0474"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0470",
+      "source_path": "content/normal-modal-logic/sequent-calculus/sequent-calculus.tex",
+      "source_sha256": "94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1",
+      "target_sha256": "314a5ce35d3eba20ae3a46ccded23cae8f401df2f559b1ed05f4463a40362878",
+      "paired_blocks": 7,
+      "focused_qa_sha256": "953f22aa4d547283b46077a335b80daf38aeaaf72f05b26439b7ef386c2c98b9",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0471",
+      "source_path": "content/normal-modal-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897",
+      "target_sha256": "22a82423ed9bac8af1b088a3806bbcf9fa851c2eddfd130aa2a1a5b534efa108",
+      "paired_blocks": 8,
+      "focused_qa_sha256": "d589b091f33f83d0bd540ee037cfa83389750ca98d377269b981d868acf85236",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0472",
+      "source_path": "content/normal-modal-logic/sequent-calculus/rules-for-K.tex",
+      "source_sha256": "ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f",
+      "target_sha256": "fe8ecd020c39f2ad93a69b6fc18d39bb4c84285106faa6302f3ad8766129d983",
+      "paired_blocks": 10,
+      "focused_qa_sha256": "cad5e12c0a4d5a76004a5bf5ec02e315fbf452b19fc20e1d339b0502475e9dc2",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0473",
+      "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+      "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+      "target_sha256": "ee1de84cf33bb18c3b154fc3d987a56d254d4324a794f5954d7fc6231ca5a995",
+      "paired_blocks": 12,
+      "focused_qa_sha256": "993191275cdf0714f0868b87c816e06ab0f693d0d9c83abf8cd16ffa26bc1352",
+      "source_treatment_ids": [
+        "OLNML-051"
+      ]
+    },
+    {
+      "unit_id": "OLP-0474",
+      "source_path": "content/normal-modal-logic/sequent-calculus/more-rules.tex",
+      "source_sha256": "7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45",
+      "target_sha256": "1edec566d91b4b6ae3324c1e7bc643e580242e5d4074a48bfb463092ca5ed9be",
+      "paired_blocks": 17,
+      "focused_qa_sha256": "96dca7177ac5bc463c13dc2ab0e96ba59f6f5f52336f58b603f608607ef89a7c",
+      "source_treatment_ids": []
+    }
+  ],
+  "paired_blocks": 54,
+  "notes_path": "work/B146_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "291c32e8618874936706159beeac1149d2f8a8990464d480323670bee1e842ae",
+  "consultation_path": "work/B146_CANON_CONSULTATION.md",
+  "consultation_sha256": "be1344956d4e264c2e0e3d9c7e54115fc56a2e926a1f16cd41662f5b15cf6494",
+  "frozen_sources_unchanged": true,
+  "prior_next_draft_checkpoint_sha256": "926984d7fa8cc9001d6b429cbeb00d812cf27ef7ba148ffb107a95f47cbbb64b",
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Run two independent cumulative QA checks and dual canonical replay for OLP-0470–0474; then continue OLP-0475."
+}

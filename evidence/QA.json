@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 469,
-    "structural_pass": 469,
+    "draft_units": 474,
+    "structural_pass": 474,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+  "batch": "PS-B146-MODAL-SEQUENT-CALCULUS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15344,6 +15344,172 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0470",
+      "path": "content/normal-modal-logic/sequent-calculus/sequent-calculus.tex",
+      "source_sha256": "94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1",
+      "translation_sha256": "314a5ce35d3eba20ae3a46ccded23cae8f401df2f559b1ed05f4463a40362878",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0471",
+      "path": "content/normal-modal-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897",
+      "translation_sha256": "22a82423ed9bac8af1b088a3806bbcf9fa851c2eddfd130aa2a1a5b534efa108",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "LK"
+      ],
+      "allowed_residual_english": [
+        "LK"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0472",
+      "path": "content/normal-modal-logic/sequent-calculus/rules-for-K.tex",
+      "source_sha256": "ae411a3ba93f8dead177612c4e2ac01e15814d1270e2a0cd4012338ad262018f",
+      "translation_sha256": "fe8ecd020c39f2ad93a69b6fc18d39bb4c84285106faa6302f3ad8766129d983",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0473",
+      "path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+      "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+      "translation_sha256": "ee1de84cf33bb18c3b154fc3d987a56d254d4324a794f5954d7fc6231ca5a995",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-051"
+      ],
+      "status": "structural-pass",
+      "structural_macro_diff": {
+        "source_only": [
+          "RightR",
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR",
+          "LeftR"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0474",
+      "path": "content/normal-modal-logic/sequent-calculus/more-rules.tex",
+      "source_sha256": "7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45",
+      "translation_sha256": "1edec566d91b4b6ae3324c1e7bc643e580242e5d4074a48bfb463092ca5ed9be",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Box",
+        "and",
+        "both",
+        "only",
+        "primitive",
+        "prmitive"
+      ],
+      "allowed_residual_english": [
+        "Box",
+        "and",
+        "both",
+        "only",
+        "primitive",
+        "prmitive"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -22792,6 +22958,132 @@
       "passage": "diagram fidelity",
       "reverse_paraphrase": "Both countermodel figures preserve all worlds, edges and valuations.",
       "finding": "دواړه TikZ انځورونه بايټ په بايټ عين دي."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "chapter title",
+      "reverse_paraphrase": "This is the modal sequent-calculus chapter driver.",
+      "finding": "د څپرکي سرليک او پېژند د مودالي سېکوېنټ حساب دي."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "editorial status",
+      "reverse_paraphrase": "The source calls this a draft needing more examples and soundness and completeness proofs.",
+      "finding": "د سرچينې نيمګړتيا د سمونګر په يادښت کښې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0470",
+      "passage": "imports",
+      "reverse_paraphrase": "Introduction, K rules, K proofs and further rules are the four active imports.",
+      "finding": "څلور فعال واردات او درې تبصره شوي واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "K modal extension",
+      "reverse_paraphrase": "LK receives modal Box and Diamond rules under the source tag alternatives.",
+      "finding": "د درېو ټګ‌حالتونو رسمي بلاک عين دے."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "S5 qualifier",
+      "reverse_paraphrase": "No LK-derived cut-free complete ordinary sequent calculus for S5 is known.",
+      "finding": "د نه‌پېژندنې احتياطي دعوه د ناممکنۍ ثبوت نۀ بولي."
+    },
+    {
+      "unit_id": "OLP-0471",
+      "passage": "hypersequent contrast",
+      "reverse_paraphrase": "S5 does have a cut-free complete hypersequent calculus.",
+      "finding": "د هايپر سېکوېنټ د حساب موجوديت له عادي حساب څخه جلا ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "axioms",
+      "reverse_paraphrase": "A sequent of the form A entails A remains an axiom.",
+      "finding": "د بديهي اصل بڼه عين ده."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "modalized contexts",
+      "reverse_paraphrase": "Box Gamma and Diamond Delta prefix every member of their respective sequences.",
+      "finding": "د هر غړي مودالي مخکښ او د تشې لړۍ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "single principal formula",
+      "reverse_paraphrase": "Only one right Box or left Diamond principal formula may be modalized.",
+      "finding": "د اصلي فارمول يوازينے قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "first invalid extension",
+      "reverse_paraphrase": "Modalizing arbitrarily many principal formulas derives K-invalid formulas.",
+      "finding": "د دوو ناسمې پايلو رسمي ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0472",
+      "passage": "side formula extension",
+      "reverse_paraphrase": "Leaving side formulas unchanged while modalizing the principal formula derives K-invalid formulas.",
+      "finding": "د څنګ‌فارمولونو د ناسم حالت دوه ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "Box conjunction",
+      "reverse_paraphrase": "Box A and Box B jointly entail Box(A and B) in the displayed derivation.",
+      "finding": "د لومړۍ ونې فورمول او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "Diamond disjunction",
+      "reverse_paraphrase": "Diamond(A or B) entails Diamond A or Diamond B in the displayed derivation.",
+      "finding": "د دويمې ونې فورمول او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "duality",
+      "reverse_paraphrase": "The duality proof has two left-negation steps that the frozen source mislabels as right-negation.",
+      "finding": "OLNML-051 دوه ليبلونه سموي؛ نورې ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0473",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four K sequent proof exercises retain formulas and order.",
+      "finding": "د څلورو تمرينونو فورمولونه او ترتيب عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "rule alternatives",
+      "reverse_paraphrase": "Three tag alternatives preserve each T, D, B, 4 and 5 modal sequent rule.",
+      "finding": "درې رسمي جدولونه او ټګونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "frame table",
+      "reverse_paraphrase": "T, D, K4, B, S4 and S5 retain their accessibility properties and rule labels.",
+      "finding": "د شپږو نظامونو قطارونه او خاصيتونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "K4 examples",
+      "reverse_paraphrase": "Box and Diamond presentations both derive axiom 4.",
+      "finding": "د K4 دواړه ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "S5 axiom",
+      "reverse_paraphrase": "Three primitive-operator presentations derive axiom 5.",
+      "finding": "د S5 درې ونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "cut necessity",
+      "reverse_paraphrase": "The displayed S5 sequent derivation uses Cut, which the ordinary calculus needs for completeness.",
+      "finding": "د پرېکون شرط او درې ټګ‌حالتونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0474",
+      "passage": "six exercises",
+      "reverse_paraphrase": "Six modal-system derivability exercises retain formulas and order.",
+      "finding": "د شپږو تمرينونو فورمولونه او ترتيب عين دي."
     }
   ],
   "builds": [

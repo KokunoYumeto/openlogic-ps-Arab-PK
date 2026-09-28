@@ -1,0 +1,129 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: rules-for-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{rul}
+
+\olsection{د \Log{K} لپاره قاعدې}
+
+د عادي قضيېيزو اړيکو قاعدې د عادي سېکوېنټ حساب~$\Log{LK}$
+له قاعدو سره يو شان دي۔ بديهي اصول هم هماغه دي: د
+$!A \Sequent !A$ په بڼه هر سېکوېنټ بديهي اصل شمېرل کېږي۔
+
+د مودالي عملګر\iftag{prvBox}{\iftag{prvDiamond}{ونو~$\Box$
+او}{~$\Box$}}{}\iftag{prvDiamond}{~$\Diamond$}{} لپاره دا
+اضافي \iftag{notprvBox,notprvDiamond}{قاعده}{قاعدې} لرو:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof  
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+دلته \iftag{prvBox}{$\Box\Gamma$ د هغو !!{formula}s لړۍ ده
+چې د~$\Gamma$ د هر !!{formula} مخې ته $\Box$ په اېښودلو
+له~$\Gamma$ څخه تر لاسه کېږي\iftag{prvDiamond}{، او
+}{}}{}\iftag{prvDiamond}{$\Diamond\Delta$ د هغو !!{formula}s لړۍ ده
+چې د~$\Delta$ د هر !!{formula} مخې ته $\Diamond$ په اېښودلو
+له~$\Delta$ څخه تر لاسه کېږي}{}۔ \iftag{notprvDiamond}{د $\Box$ قاعدې د مقدمې
+ښۍ خوا بايد تر ډېره يو !!{formula}~$!A$ ولري۔ }{}%
+\iftag{notprvBox}{د $\Diamond$ قاعدې د مقدمې کيڼه خوا بايد
+تر ډېره يو !!{formula}~$!A$ ولري۔ }{}%
+\iftag{prvBox}{$\Gamma$\iftag{prvDiamond}{ او}{}}{}\iftag{prvDiamond}{$\Delta$}{}
+تشه کېدے شي؛ په دې حالت کښې د پايلې سېکوېنټ اړونده برخه
+\iftag{prvBox}{$\Box\Gamma$\iftag{prvDiamond}{ او}{}}{}\iftag{prvDiamond}{$\Diamond\Delta$}{}
+هم تشه وي۔
+
+يوازې يوه !!{formula}~$!A$ ته
+\iftag{prvBox}{په ښۍ خوا کښې د $\Box$ زياتولو\iftag{prvDiamond}{ او
+}{}}{}\iftag{prvDiamond}{په کيڼه خوا کښې د $\Diamond$ زياتولو}{}
+قيد اړين دے۔ که مو
+\iftag{prvBox}{د ښۍ خوا هر څومره !!{formula}s ته د $\Box$
+زياتولو\iftag{prvDiamond}{ يا }{}}{}\iftag{prvDiamond}{د کيڼې خوا
+هر څومره !!{formula}s ته د $\Diamond$ زياتولو}{} اجازه ورکړې
+واے، نو دا مو !!{derive} کولے شول:
+  \[
+    \iftag{prvBox}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\fCenter !A, \lnot !A$
+      \RightLabel{$\Box*$}
+      \UnaryInf$\fCenter \Box!A, \Box\lnot !A$
+      \doubleLine
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\fCenter \Box!A \lor \Box \lnot !A$
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{\qquad}
+    \iftag{prvDiamond}{
+      \Axiom$!A \fCenter !A$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot !A, !A \fCenter$
+      \RightLabel{$\Diamond*$}
+      \UnaryInf$\Diamond\lnot !A,\Diamond!A \fCenter $
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\Diamond!A \fCenter \lnot\Diamond\lnot !A$
+      \RightLabel{\RightR{\lif}}
+      \UnaryInf$ \fCenter \Diamond!A \lif \lnot\Diamond\lnot !A$
+      \DisplayProof}{}
+  \]
+خو په~$\Log{K}$ کښې \iftag{prvBox}{$\Box!A \lor \Box \lnot !A$\iftag{prvDiamond}{ او
+$\Diamond!A \lif \lnot\Diamond\lnot !A$ دواړه معتبر نۀ دي}{ معتبر نۀ دے}}{$\Diamond!A \lif
+\lnot\Diamond\lnot !A$ معتبر نۀ دے}۔
+
+که مو په مقدمه کښې له~$!A$ سره نور څنګ‌فارمولونه هم پرېښي، او
+\iftag{prvBox}{د $\Box$ قاعدې ته مو اجازه ورکړې واے چې په ښۍ خوا
+کښې يوازې د~$!A$ مخې ته $\Box$ کېږدي\iftag{prvDiamond}{، يا }{}}{}%
+\iftag{prvDiamond}{د $\Diamond$ قاعدې ته مو اجازه ورکړې واے چې
+په کيڼه خوا کښې يوازې د~$!A$ مخې ته $\Diamond$ کېږدي}{}
+(خو څنګ‌فارمولونه بدل نۀ کړي)، نو دا مو !!{derive} کولے شول:
+\[
+  \iftag{prvBox}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\fCenter !A, \lnot !A$
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \lnot !A, !A$
+    \RightLabel{$\Box*$}
+    \UnaryInf$\fCenter \lnot!A, \Box !A$
+    \doubleLine
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\fCenter \lnot!A \lor \Box !A$
+    \DisplayProof}{}
+  \iftag{notprvBox,notprvDiamond}{}{\qquad}
+  \iftag{prvDiamond}{
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{$\Diamond*$}
+    \UnaryInf$\Diamond\lnot !A, !A \fCenter $
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$!A \fCenter \lnot\Diamond\lnot !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif \lnot\Diamond\lnot !A$
+    \DisplayProof}{}
+\]
+خو په~$\Log{K}$ کښې \iftag{prvBox}{$\lnot!A \lor \Box !A$ (چې له $!A
+\lif \Box!A$ سره همارز دے)\iftag{prvDiamond}{ او $!A \lif \lnot\Diamond\lnot !A$
+دواړه معتبر نۀ دي}{ معتبر نۀ دے}}{$!A \lif \lnot\Diamond\lnot !A$ معتبر نۀ دے}۔
+
+\end{document}
