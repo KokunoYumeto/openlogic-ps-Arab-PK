@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
-  "status": "OLP-0511–0515 source-reviewed and staged; 68 paired blocks, 23 semantic samples, no new terms, and eleven disclosed source treatments including one unrepaired arbitrary-prefix proof gap; cumulative QA pending",
+  "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+  "status": "OLP-0516–0520 source-reviewed and staged; 52 paired blocks, 21 changed canon-use blocks, three provisional compound terms, four disclosed source treatments and one exact formula substitution; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10726,7 +10726,7 @@
         "TERM-MODAL-TABLEAU-PREFIX",
         "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
       ],
-      "scope": "د اتو قاعدو جدولونه، يورخيز تړل کېدل، يو شان فرضي مخکښ، کارېدلے او نوے مخکښ.",
+      "scope": "د اتو قاعدو جدولونه، يورخيز تړل کېدل، يو شان فرضي مخکښ، کارېدلے او نوے مخکښ. B156: two prose rule labels corrected against frozen Sign/Op macro; Pakistani prose pages1–2 visually reconsulted for the disclosure.",
       "allowed_residual_english": [
         "OLINT"
       ],
@@ -10773,6 +10773,100 @@
         "OLINT"
       ],
       "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0516": {
+      "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-COUNTERFACTUAL-CONDITIONAL"
+      ],
+      "scope": "د خلاف‌واقع شرطونو د برخې عنوان او دوه څپرکي؛ مقدم عموماً کاذب دے، نۀ د نوم لازمي شرط.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No ordinary residual English."
+    },
+    "OLP-0517": {
+      "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-COUNTERFACTUAL-CONDITIONAL",
+        "TERM-MATERIAL-CONDITIONAL"
+      ],
+      "scope": "د پېژندنې څپرکي عنوان او څلور واردات.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No ordinary residual English."
+    },
+    "OLP-0518": {
+      "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MATERIAL-CONDITIONAL",
+        "TERM-PROP-SYNTAX",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MVL-SEMANTIC-BOUNDARIES",
+        "TERM-PROOF-CALCULI"
+      ],
+      "scope": "مادي شرطي، د صدق تابع، د استنتاج معنايي قضيه، دولس رسمي استلزامونه او د طبيعي ژبې حد.",
+      "allowed_residual_english": [
+        "OLCNT"
+      ],
+      "residual_english_rationale": "OLCNT is the disclosed source-treatment identifier."
+    },
+    "OLP-0519": {
+      "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-MATERIAL-CONDITIONAL",
+        "TERM-SEMANTICS",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "د نښلوونکي او استلزام توپير، د لويس نيوکه، پښه‌ليک، د سپوږمۍ او ورځپاڼې بېلګې.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No ordinary residual English."
+    },
+    "OLP-0520": {
+      "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P48-MODUS-PONENS"
+      ],
+      "terms": [
+        "TERM-STRICT-CONDITIONAL",
+        "TERM-MATERIAL-CONDITIONAL",
+        "TERM-SEMANTICS",
+        "TERM-PROOF-CALCULI"
+      ],
+      "scope": "کلک شرطي د Box مادي شرطي په توګه، د S5 سياق، استلزامونه، ضدبېلګې او پنځلس تمرينونه.",
+      "allowed_residual_english": [
+        "OLCNT"
+      ],
+      "residual_english_rationale": "OLCNT is the disclosed source-treatment identifier."
     }
   },
   "semantic_review": [
@@ -19451,6 +19545,114 @@
       "passage": "entailment",
       "reverse_paraphrase": "Contradiction to a countermodel proves semantic entailment, with derivability assumed.",
       "finding": "OLINT-022 د پايلې نښه سموي."
+    },
+    {
+      "unit_id": "OLP-0516",
+      "passage": "name",
+      "reverse_paraphrase": "Counterfactual is the usual name; the source later says antecedents are usually false.",
+      "finding": "د عموماً او لازمي توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0516",
+      "passage": "imports",
+      "reverse_paraphrase": "Two chapter imports remain exact.",
+      "finding": "واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0517",
+      "passage": "imports",
+      "reverse_paraphrase": "Material conditional, its paradoxes, strict conditional and counterfactual imports remain exact.",
+      "finding": "د څلورو برخو پېژندنې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "truth",
+      "reverse_paraphrase": "Material conditional fails only when antecedent true and consequent false.",
+      "finding": "د دواړو قيمتونو شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "deduction",
+      "reverse_paraphrase": "Semantic deduction theorem preserves the premise set Gamma.",
+      "finding": "د ګاما دواړه پېښې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "formal",
+      "reverse_paraphrase": "Equivalence, premise entailments, negation, modus ponens, agglomeration, strengthening, transitivity and contraposition remain exact.",
+      "finding": "ټول رسمي بيانونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "ordinary",
+      "reverse_paraphrase": "Nonmathematical purported counterexamples are not asserted to overturn mathematical truth functions.",
+      "finding": "د غيررياضيکي سياق حد عين دے."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "Lewis",
+      "reverse_paraphrase": "Lewis criticizes reading the material connective as implies.",
+      "finding": "د لويس تاريخي نيوکه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "entailment",
+      "reverse_paraphrase": "Logical entailment ranges over every valuation, not the contingent truth of an English sentence.",
+      "finding": "ټولې ټاکنې له يوې واقعي جملې جلا دي."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "footnote",
+      "reverse_paraphrase": "The footnote distinguishes implies and only if pronunciations.",
+      "finding": "پښه‌ليک بشپړ دے."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "tautology",
+      "reverse_paraphrase": "A disjunction of the two material conditionals is a tautology.",
+      "finding": "ورځپاڼې بېلګه او د شرطونو دواړه لوري عين دي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "definition",
+      "reverse_paraphrase": "Strict conditional is the necessity of the material conditional.",
+      "finding": "د Box رسمي تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "nontruthfunctional",
+      "reverse_paraphrase": "Strict conditional is not determined by the two local truth values.",
+      "finding": "د صدق تابعې نشتون عين دے."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "correction",
+      "reverse_paraphrase": "The nonentailment premise is negated strict conditional, as the third counterexample exercise states.",
+      "finding": "OLCNT-003 يو نښلوونکے سموي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "scope",
+      "reverse_paraphrase": "Several claims require the explicit S5 context and fail on unrestricted K frames.",
+      "finding": "OLCNT-004 د سرچينې سياق څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four counterexample, eight proof and three final exercises remain unchanged.",
+      "finding": "پنځلس تمرينونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "necessity",
+      "reverse_paraphrase": "In S5, strict conditionals have necessary truth or necessary falsity within their accessible class.",
+      "finding": "د وروستيو دعوو چوکاټي حد څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "OLINT-023",
+      "reverse_paraphrase": "The two prose rule labels use Sign then Op, exactly as the macro definition and the formal rule table.",
+      "finding": "Two label arguments corrected; all formal tables and earlier sign repairs retained."
     }
   ]
 }

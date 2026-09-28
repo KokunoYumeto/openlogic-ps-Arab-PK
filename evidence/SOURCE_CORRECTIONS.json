@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0515; OLINT-011 and OLINT-017 are disclosed unrepaired source proof gaps",
-  "adopted_utc": "2026-09-28T22:42:12.218254+00:00",
+  "status": "adopted through OLP-0520; historical OLINT-011 and OLINT-017 source proof gaps remain disclosed",
+  "adopted_utc": "2026-09-28T23:26:59.821407+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -13619,7 +13619,7 @@
         123
       ],
       "disclosure_line_1based": 96,
-      "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "target_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
       "mode": "adjacent-Pashto-disclosed-source-treatment",
       "translation_change": "د ريښتيني شرط په تشريح کښې څلور نښې د رسمي جدول له مخې سمې شوې دي.",
       "reason": "د هماغې برخې جدول د ريښتيني شرط لپاره کاذب مقدم يا رښتينې پايلې ته دوه بديلې څانګې ورکوي.",
@@ -13668,7 +13668,16 @@
       "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": false,
-      "additional_formal_evidence": {}
+      "additional_formal_evidence": {},
+      "revision_history": [
+        {
+          "utc": "2026-09-28T23:26:59.821407+00:00",
+          "batch": "B156",
+          "old_target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+          "new_target_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
+          "reason": "Independent OLINT-023 correction in the same target file; prior four sign corrections unchanged."
+        }
+      ]
     },
     {
       "id": "OLINT-014",
@@ -14271,6 +14280,320 @@
       "upstream_reporting": "manager report pending; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": false,
       "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLCNT-001",
+      "unit_id": "OLP-0518",
+      "classification": "obvious_typo_earn_for_learn_in_symbolization_prose",
+      "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "source_locator": "content/counterfactuals/introduction/material-conditional.tex:16",
+      "source_literal_line_1based": [
+        16
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/introduction/material-conditional.tex",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "target_line_1based": 17,
+      "target_literal_line_1based": [
+        17,
+        20
+      ],
+      "disclosure_line_1based": 20,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د سرچينې ښکاره ټايپي تېروتنه د نښه‌ليکنې د زده کولو په معنا روښانه شوې، له څنګ‌ته څرګندونې سره.",
+      "reason": "لومړني کورسونه د شرطيو نښه‌ليکنه ورزده کوي؛ د زده کولو د کلمې لومړے توری په سرچينه کښې نشت دے.",
+      "formula_policy": "Only OLCNT-003 substitutes lif by strictif in one source formula; the containing normalized align span is listed exactly. All other formal content preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "obvious_typo_earn_for_learn_in_symbolization_prose"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
+      "audit_artifacts": [
+        "B156_SOURCE_AUDIT.json",
+        "B156_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/counterfactuals/introduction/material-conditional.tex:16",
+        "ps-Arab-PK/content/counterfactuals/introduction/material-conditional.tex:17,20",
+        "B156_DRAFT_QA_OLP-0518.json",
+        "B156_STRICT_SEMANTIC_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B156 owner source review before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null
+    },
+    {
+      "id": "OLCNT-002",
+      "unit_id": "OLP-0518",
+      "classification": "false_conditional_shorthand_clarified_as_negated_conditional",
+      "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "source_locator": "content/counterfactuals/introduction/material-conditional.tex:42",
+      "source_literal_line_1based": [
+        42
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/introduction/material-conditional.tex",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "target_line_1based": 45,
+      "target_literal_line_1based": [
+        45,
+        48
+      ],
+      "disclosure_line_1based": 48,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د کاذب شرطي لنډ عبارت د لاندې رسمي استلزامونو د شرطي نفي په معنا روښانه شو.",
+      "reason": "د لاندې دواړو رسمي بيانونو چپ يا ښي اړخ د شرطي نفي ده؛ فورمولونه عين ساتل شوي.",
+      "formula_policy": "Only OLCNT-003 substitutes lif by strictif in one source formula; the containing normalized align span is listed exactly. All other formal content preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "false_conditional_shorthand_clarified_as_negated_conditional"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
+      "audit_artifacts": [
+        "B156_SOURCE_AUDIT.json",
+        "B156_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/counterfactuals/introduction/material-conditional.tex:42",
+        "ps-Arab-PK/content/counterfactuals/introduction/material-conditional.tex:45,48",
+        "B156_DRAFT_QA_OLP-0518.json",
+        "B156_STRICT_SEMANTIC_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B156 owner source review before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null
+    },
+    {
+      "id": "OLCNT-003",
+      "unit_id": "OLP-0520",
+      "classification": "material_conditional_used_in_strict_conditional_nonentailment",
+      "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+      "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+      "source_locator": "content/counterfactuals/introduction/strict-conditional.tex:33",
+      "source_literal_line_1based": [
+        33
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/introduction/strict-conditional.tex",
+      "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+      "target_line_1based": 27,
+      "target_literal_line_1based": [
+        27,
+        42
+      ],
+      "disclosure_line_1based": 27,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ناستلزام د جدول په پنځمه کرښه کښې مادي نښلوونکے کلک نښلوونکي ته سم شو؛ څنګ‌ته څرګندونه شته.",
+      "reason": "د همدې واحد درېيم ضدبېلګه‌يي تمرين د کلک شرطي نفي کاروي. د مادي شرطي نفي بيا له رښتيني مقدم او کاذبې پايلې سره هم‌ارزښته ده او د ناستلزام اصلي دعوه ناسموي.",
+      "formula_policy": "Only OLCNT-003 substitutes lif by strictif in one source formula; the containing normalized align span is listed exactly. All other formal content preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\lif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\strictif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+        ],
+        "scope": "material_conditional_used_in_strict_conditional_nonentailment"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
+      "audit_artifacts": [
+        "B156_SOURCE_AUDIT.json",
+        "B156_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/counterfactuals/introduction/strict-conditional.tex:33",
+        "ps-Arab-PK/content/counterfactuals/introduction/strict-conditional.tex:27,42",
+        "B156_DRAFT_QA_OLP-0520.json",
+        "B156_STRICT_SEMANTIC_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B156 owner source review before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "dc6e4cec32067f180d700e845d33a4900b3b581b16a2f3e0cc475cacfeaf4396"
+    },
+    {
+      "id": "OLCNT-004",
+      "unit_id": "OLP-0520",
+      "classification": "unstated_S5_scope_in_strict_conditional_claims",
+      "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+      "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+      "source_locator": "content/counterfactuals/introduction/strict-conditional.tex:26,82",
+      "source_literal_line_1based": [
+        26,
+        82
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/introduction/strict-conditional.tex",
+      "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+      "target_line_1based": 31,
+      "target_literal_line_1based": [
+        31,
+        92
+      ],
+      "disclosure_line_1based": 31,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د نثري استلزامونو او لزومي دعوو د S5 سياق په څنګ‌ته پښتو څرګندونه کښې واضح شو.",
+      "reason": "د واحد خپل تمرينونه S5 نوموي؛ د OLP-0413 او OLP-0425 رسمي معنا او د K ثبت شوې ضدبېلګې ښيي چې دغه دعوې د ټولو بې‌قيده چوکاټونو لپاره عمومي نۀ دي.",
+      "formula_policy": "Only OLCNT-003 substitutes lif by strictif in one source formula; the containing normalized align span is listed exactly. All other formal content preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "unstated_S5_scope_in_strict_conditional_claims"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
+      "audit_artifacts": [
+        "B156_SOURCE_AUDIT.json",
+        "B156_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/counterfactuals/introduction/strict-conditional.tex:26,82",
+        "ps-Arab-PK/content/counterfactuals/introduction/strict-conditional.tex:31,92",
+        "B156_DRAFT_QA_OLP-0520.json",
+        "B156_STRICT_SEMANTIC_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B156 owner source review before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "dc6e4cec32067f180d700e845d33a4900b3b581b16a2f3e0cc475cacfeaf4396"
+    },
+    {
+      "id": "OLINT-023",
+      "unit_id": "OLP-0513",
+      "classification": "reversed_TRule_Sign_Op_arguments_in_two_prose_labels",
+      "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "source_locator": "content/intuitionistic-logic/tableaux/rules.tex:90,100",
+      "source_literal_line_1based": [
+        90,
+        100
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/rules.tex",
+      "target_line_1based": 92,
+      "target_literal_line_1based": [
+        92,
+        107
+      ],
+      "disclosure_line_1based": 105,
+      "target_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د شرط د رښتينې او کاذبې قاعدې په دواړو نثري نومونو کښې د نښې او نښلوونکي د ماکرو آرګومېنټونه د رسمي جدول او ماکرو له تعريف سره برابر شول.",
+      "reason": "منجمد تعريف لومړے آرګومېنټ نښه او دويم نښلوونکے بولي او دويم بيا لومړے چاپوي؛ د همدې برخې جدول هم دغه ترتيب کاروي.",
+      "formula_policy": "Exactly two inline TRule argument reversals; earlier OLINT-013 four sign corrections retained. No formal rule table changed.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\TRule{\\lif}{\\True}$",
+          "$\\TRule{\\lif}{\\False}$"
+        ],
+        "target_only": [
+          "$\\TRule{\\True}{\\lif}$",
+          "$\\TRule{\\False}{\\lif}$"
+        ],
+        "scope": "two source-inherited prose rule-label reversals"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS",
+      "audit_artifacts": [
+        "B156_0513_RULE_LABEL_REPAIR.json",
+        "content/intuitionistic-logic/tableaux/rules.tex:90,100",
+        "upstream/open-logic-config.sty:293,297,298"
+      ],
+      "decision_timing": "B156 review of exact frozen macro after authorized manager finding; before cumulative acceptance",
+      "upstream_reporting": "Manager centrally catalogues this group; no new direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {
+        "path": "upstream/open-logic-config.sty",
+        "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "definition_lines_1based": [
+          293,
+          294,
+          295,
+          297,
+          298
+        ]
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -14371,7 +14694,9 @@
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
-    "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX"
+    "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
+    "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS"
   ],
   "source_authorities": [
     {

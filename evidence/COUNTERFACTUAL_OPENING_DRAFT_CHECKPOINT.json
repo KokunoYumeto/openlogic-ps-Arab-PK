@@ -1,0 +1,97 @@
+{
+  "schema": "ps-b156-counterfactual-opening-draft/1",
+  "utc": "2026-09-28T23:44:35.262354+00:00",
+  "status": "accepted editable drafts; source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B156-COUNTERFACTUAL-OPENING",
+  "units": [
+    {
+      "unit_id": "OLP-0516",
+      "path": "content/counterfactuals/counterfactuals.tex",
+      "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+      "target_sha256": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+      "source_correction_ids": [],
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0517",
+      "path": "content/counterfactuals/introduction/introduction.tex",
+      "source_sha256": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+      "target_sha256": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+      "source_correction_ids": [],
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0518",
+      "path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "source_correction_ids": [
+        "OLCNT-001",
+        "OLCNT-002"
+      ],
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0519",
+      "path": "content/counterfactuals/introduction/paradoxes-material.tex",
+      "source_sha256": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+      "target_sha256": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+      "source_correction_ids": [],
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0520",
+      "path": "content/counterfactuals/introduction/strict-conditional.tex",
+      "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+      "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+      "source_correction_ids": [
+        "OLCNT-003",
+        "OLCNT-004"
+      ],
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "revised_units": [
+    {
+      "unit_id": "OLP-0513",
+      "old_target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "target_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
+      "source_correction_id": "OLINT-023",
+      "repair_receipt_sha256": "a167defb0a6fb11928c116b84f9ad28f9797973d069c54448235d821284b71f0"
+    }
+  ],
+  "draft_units": 520,
+  "aligned_blocks": 7817,
+  "segment_canon_uses": 4882,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "source_audit_sha256": "d11c27e164aee1eb009630f592df3969a6bdb7869e793c9d113d77bca05bece1",
+  "model_provenance_sha256": "bf2dee5eaeca364fd62cb6831ad86ae68740396c7348dfb216aefb223686086d",
+  "corpus_qa_sha256": "5bb05ae29d84dc9ef6ce8cd75ebf21308771c390909e8f1ccabb8652e9a0c916",
+  "canonical_replay_sha256": "ef60b8750a3debb5003fe56be7c5cfe8418a75b97115b7ea5d671dae45bb83d7",
+  "qa_sha256": "f185c9aa3a7e35617bf0f0a5d012349b4fc7ccf6617d1e3842820702a4ac4374",
+  "staged_not_accepted_unit_ids": [
+    "OLP-0521",
+    "OLP-0522",
+    "OLP-0523",
+    "OLP-0524",
+    "OLP-0525"
+  ],
+  "staged_checkpoint_sha256": "9256ffe63f4852102addc49d0f82e25e8bdc97d05a15cf164236e3428f31209f",
+  "historical_proof_gaps_disclosed_unrepaired": [
+    "OLINT-011",
+    "OLINT-017"
+  ],
+  "v071_publication_verification_sha256": "f0d27cb02ce09b451de80fdcc36b16f47cf0994272420a8d1cbdce15565d0d5e",
+  "next_action": "Push the accepted B156 and checked B157 staging to the existing public repository and verify every changed file anonymously; then register B157 terms/source choices and continue full translation."
+}

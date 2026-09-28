@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b156-counterfactual-opening-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0520",
+  "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+  "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+  "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+  "source_blocks": 13,
+  "target_blocks": 13,
+  "math_spans": 26,
+  "source_correction_ids": [
+    "OLCNT-003",
+    "OLCNT-004"
+  ],
+  "math_exception": {
+    "source_only": [
+      "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\lif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+    ],
+    "target_only": [
+      "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\strictif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+    ],
+    "scope": "one material-to-strict conditional substitution"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "one_disclosed_math_span_only": true,
+    "fifteen_exercises": true,
+    "three_problem_blocks": true,
+    "source_math_correction_disclosed": true,
+    "S5_context_disclosed": true,
+    "one_S5_context_notation_added": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register the two provisional specialized terms and source clarifications; finish B156 source review and cumulative QA before acceptance."
+}

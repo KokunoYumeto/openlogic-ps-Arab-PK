@@ -1,0 +1,88 @@
+{
+  "schema": "ps-b156-all5-staging/1",
+  "utc": "2026-09-28T23:24:16.993666+00:00",
+  "status": "five source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 515,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0516",
+    "OLP-0517",
+    "OLP-0518",
+    "OLP-0519",
+    "OLP-0520"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0516",
+      "source_path": "content/counterfactuals/counterfactuals.tex",
+      "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+      "target_sha256": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+      "focused_qa_sha256": "20215106955a41af4b2bd121f99bc23972ab706b9b9bedbddf93be9588b10320",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0517",
+      "source_path": "content/counterfactuals/introduction/introduction.tex",
+      "source_sha256": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+      "target_sha256": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+      "focused_qa_sha256": "f7bedae05b8247f90b10d133bcd8cd6c0fff9a39e4bc831121cbdf44d01a60b9",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0518",
+      "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "focused_qa_sha256": "43454224e636fb78c8152df3c0dbaf8af0dbd3feb1aaebe8feb3967c02680250",
+      "source_treatment_ids": [
+        "OLCNT-001",
+        "OLCNT-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0519",
+      "source_path": "content/counterfactuals/introduction/paradoxes-material.tex",
+      "source_sha256": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+      "target_sha256": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+      "focused_qa_sha256": "4db7efa2080ff4d642025984fa0034116e4b890df40d4688aeecd574d138ef51",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0520",
+      "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+      "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+      "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+      "focused_qa_sha256": "899b25f3dda0359a0cc6887d4e199f03ff9847aaf43f901fd7ebd58142613114",
+      "source_treatment_ids": [
+        "OLCNT-003",
+        "OLCNT-004"
+      ]
+    }
+  ],
+  "paired_blocks": 52,
+  "math_spans": 82,
+  "changed_content_canon_uses": 21,
+  "notes_path": "work/B156_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "1e88314b1c87325cd805a593ee357ff5ee7cc390890a091f971b4a364a26bbe9",
+  "consultation_path": "work/B156_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "3af316bfc7299cd59def16884f1f3f48d3007a08f0de78732d0f08c18c0064fa",
+  "focused_verification_sha256": "52bec9882839031e1e638b4f54eb974edfdb0866a917fdfaafd18ef8f8320f84",
+  "finite_semantic_check_sha256": "dc6e4cec32067f180d700e845d33a4900b3b581b16a2f3e0cc475cacfeaf4396",
+  "model_provenance_sha256": "bf2dee5eaeca364fd62cb6831ad86ae68740396c7348dfb216aefb223686086d",
+  "prior_four_staging_sha256": "cbeb4567e8a5626f235c3e73f129a921ca019f8bbd7c7233b7503242662f049f",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    "OLCNT-001",
+    "OLCNT-002",
+    "OLCNT-003",
+    "OLCNT-004"
+  ],
+  "pending_term_ids": [
+    "TERM-COUNTERFACTUAL-CONDITIONAL",
+    "TERM-MATERIAL-CONDITIONAL",
+    "TERM-STRICT-CONDITIONAL"
+  ],
+  "next_action": "Run independent 520-unit corpus QA and dual canonical replay; accept B156, then continue the counterfactual definition at OLP-0521."
+}

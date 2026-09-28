@@ -1,0 +1,116 @@
+% Part: conditional-logics
+% Chapter: minimal-change-semantics
+% Section: true-false
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{con}{min}{tf}
+
+\olsection{د واقعيت خلاف شرطونو صدق او کذب}
+
+د واقعيت خلاف شرطي $!A \cif !B$ (په ناتشه توګه) رښتينې ده
+که تر ټولو نژدې $!A$-نړۍ ټولې $!B$-نړۍ وي، لکه څنګه چې په
+\olref{fig:true} کښې ښودل شوې ده۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{په ناتشه توګه رښتينې د واقعيت خلاف شرطي}
+\ollabel{fig:true}
+\end{center}
+\end{figure}
+د واقعيت خلاف شرطي په $w$ کښې هله هم رښتينې ده چې
+د~$w$ چاپېره د کروي سيمو نظام هېڅ $!A$-منونکې کروي سيمه
+ونۀ لري۔ په دې حالت کښې هغه \emph{په تشه توګه} رښتينې ده
+(\olref{fig:vacuous} وګورئ)۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \proposition{0}{6.5}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.2,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \spherepos{0}{7}{node {$\formula{A}$}}
+\end{tikzpicture}
+\caption{په تشه توګه رښتينې د واقعيت خلاف شرطي}
+\ollabel{fig:vacuous}
+\end{center}
+\end{figure}
+
+دا په دوو طريقو کاذبه کېدے شي۔ يوه طريقه دا ده چې تر ټولو
+نژدې $!A$-نړۍ ټولې $!B$-نړۍ نۀ وي، خو ځينې يې وي۔ په دې
+حالت کښې، $!A \cif
+\lnot !B$ هم کاذبه ده (\olref{fig:false} وګورئ)۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,0)}]{90}{1}{30}{3}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{کاذبه د واقعيت خلاف شرطي، کاذب مقابل}
+\ollabel{fig:false}
+\end{center}
+\end{figure}
+که تر ټولو نژدې $!A$-نړۍ له $!B$-نړۍو سره هېڅ ګډه نړۍ
+ونۀ لري، نو $!A \cif !B$ کاذبه ده۔ خو په دې حالت کښې ټولې
+تر ټولو نژدې $!A$-نړۍ $\lnot !B$-نړۍ دي، نو
+$!A \cif \lnot !B$ رښتينې ده (\olref{fig:false-opposite} وګورئ)۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(-1,0)}]{90}{1}{30}{3}}
+  \path (-1,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{کاذبه د واقعيت خلاف شرطي، رښتينے مقابل}
+\ollabel{fig:false-opposite}
+\end{center}
+\end{figure}
+
+د کلک شرطي په پرتله، د واقعيت خلاف شرطونه اتفاقي کېدے شي۔
+په \olref{fig:contingent} کښې د کروي سيمو مدل وګورئ۔
+له~$u$ سره تر ټولو نژدې $!A$-نړۍ ټولې $!B$-نړۍ دي، نو
+$\mSat{M}{!A \cif
+  !B}[u]$۔ خو له~$v$ سره ځينې تر ټولو نژدې $!A$-نړۍ
+$!B$-نړۍ نۀ دي، نو $\mSat/{M}{!A \cif !B}[v]$۔
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.6]\small
+  \spheresystem{7}
+  \spheresystem[shift={(0:3.1)},dashed]{4}
+  \propositionintersect{45}{4}{40}{4.5}
+  \begin{scope}
+    \clip \propositionplot{45}{4}{40}{4.5} ;
+    \spherelayer[shift={(0:3.1)}]{3}
+  \end{scope}
+  \proposition[shift={(1.4,-.5)}]{90}{1}{35}{5}
+  \path (0,0) node {$u$};
+  \path (0:3.1) node {$v$};
+  \spherepos{35}{9}{node {$\formula{A}$}}
+  \spherepos{80}{9}{node {$\formula{B}$}}
+\end{tikzpicture}
+\end{center}
+\caption{اتفاقي د واقعيت خلاف شرطي}
+\ollabel{fig:contingent}
+\end{figure}
+\end{document}

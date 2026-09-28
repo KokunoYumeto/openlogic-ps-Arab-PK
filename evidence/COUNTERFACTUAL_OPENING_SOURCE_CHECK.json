@@ -1,0 +1,43 @@
+{
+  "schema": "ps-b156-source-semantic-review/1",
+  "status": "PASS",
+  "utc": "2026-09-28T23:44:35.262354+00:00",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_ids": [
+    "OLP-0516",
+    "OLP-0517",
+    "OLP-0518",
+    "OLP-0519",
+    "OLP-0520"
+  ],
+  "source_sha256": {
+    "OLP-0516": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+    "OLP-0517": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+    "OLP-0518": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+    "OLP-0519": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+    "OLP-0520": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f"
+  },
+  "target_sha256": {
+    "OLP-0516": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+    "OLP-0517": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+    "OLP-0518": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+    "OLP-0519": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+    "OLP-0520": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3"
+  },
+  "audit_sha256": "d11c27e164aee1eb009630f592df3969a6bdb7869e793c9d113d77bca05bece1",
+  "notes_sha256": "1e88314b1c87325cd805a593ee357ff5ee7cc390890a091f971b4a364a26bbe9",
+  "consultation_sha256": "3af316bfc7299cd59def16884f1f3f48d3007a08f0de78732d0f08c18c0064fa",
+  "source_correction_ids": [
+    "OLCNT-001",
+    "OLCNT-002",
+    "OLCNT-003",
+    "OLCNT-004",
+    "OLINT-023"
+  ],
+  "revised_unit": "OLP-0513",
+  "repair_receipt_sha256": "a167defb0a6fb11928c116b84f9ad28f9797973d069c54448235d821284b71f0",
+  "finite_semantic_check_sha256": "dc6e4cec32067f180d700e845d33a4900b3b581b16a2f3e0cc475cacfeaf4396",
+  "source_correction_registry_sha256": "7d99e8676533e22e5a4c4de3e269cc7c988997c4d8c1eb2d04049068b146e2d8",
+  "unresolved": "د درې ځانګړو مرکبو نومونو عين پاکستانۍ چاپي شاهدي نۀ ده ادعا شوې؛ نومونه لنډمهاله دي. د متناهي معنايي QA کتنه د نامحدودې S5 قضيې نوے ثبوت نۀ دے. د ليکوال يا انسان متخصص تصويب نۀ دے ادعا شوے.",
+  "next_action": "Push the accepted B156 and checked B157 staging to the existing public repository and verify every changed file anonymously; then register B157 terms/source choices and continue full translation."
+}

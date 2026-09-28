@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b157-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0521",
+  "source_path": "content/counterfactuals/introduction/counterfactuals.tex",
+  "source_sha256": "b99a7ee8d111ff23508238df4fae5208e76f84f1a2cba55c5eecaff5814f7dba",
+  "target_sha256": "f2e1a5651f239eeed018b832133afddd29b1e347d444d519a7897e3d9cf84e03",
+  "source_blocks": 11,
+  "target_blocks": 11,
+  "math_spans": 6,
+  "tikz_diagrams": 0,
+  "source_correction_ids_pending_registration": [
+    "OLCNT-005"
+  ],
+  "metalinguistic_english_exception": "Two exact to be literals name the English verb under discussion.",
+  "checks": {
+    "math_exact": true,
+    "paired_blocks": true,
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "tikz_bytes_equal": true,
+    "nfc": true,
+    "source_frozen": true,
+    "no_replacement_character": true,
+    "two_metalinguistic_to_be_literals": true,
+    "no_untranslated_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+}

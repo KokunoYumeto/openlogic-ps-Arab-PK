@@ -1,0 +1,242 @@
+{
+  "schema": "ps-b156-strict-conditional-finite-semantic-check/1",
+  "status": "PASS",
+  "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+  "target_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+  "source_support": {
+    "OLP-0413": {
+      "path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+      "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50"
+    },
+    "OLP-0425": {
+      "path": "content/normal-modal-logic/frame-definability/equivalence-S5.tex",
+      "source_sha256": "057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798"
+    }
+  },
+  "source_treatments": [
+    "OLCNT-003",
+    "OLCNT-004"
+  ],
+  "S5_equivalence_relation_counts": {
+    "1": 1,
+    "2": 2,
+    "3": 5
+  },
+  "world_valuation_points": 7944,
+  "positive_schemas_checked": 12,
+  "negative_schema_counterexamples": {
+    "material-not-entails-strict": {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 1
+    },
+    "false-antecedent-not-entails-strict": {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 1
+    },
+    "not-strict-not-entails-local-counterinstance": {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 1
+    },
+    "strict-comparison-disjunction-not-valid": {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [
+          1
+        ],
+        "C": []
+      },
+      "world": 0
+    },
+    "consequent-not-entails-strict": {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [
+          1
+        ],
+        "C": []
+      },
+      "world": 1
+    }
+  },
+  "original_material_negative_is_truth_functionally_equivalent": true,
+  "unrestricted_K_counterexamples": [
+    {
+      "worlds": 1,
+      "relation": [],
+      "valuation": {
+        "A": [
+          0
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 0,
+      "failed_unrestricted_claims": [
+        "strict-implies-material",
+        "modus-ponens"
+      ]
+    },
+    {
+      "worlds": 3,
+      "relation": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "valuation": {
+        "A": [
+          2
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 0,
+      "failed_unrestricted_claims": [
+        "true-strict-is-necessary"
+      ]
+    },
+    {
+      "worlds": 2,
+      "relation": [
+        [
+          0,
+          1
+        ]
+      ],
+      "valuation": {
+        "A": [
+          1
+        ],
+        "B": [],
+        "C": []
+      },
+      "world": 0,
+      "failed_unrestricted_claims": [
+        "false-strict-is-necessary"
+      ]
+    }
+  ],
+  "scope_limitation": "Finite one-to-three-world source sanity checks and concrete unrestricted-frame counterexamples. This is not a new proof of the full unbounded S5 theorem."
+}

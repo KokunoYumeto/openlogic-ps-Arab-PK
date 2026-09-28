@@ -1,0 +1,119 @@
+% Part: counterfactuals
+% Chapter: introduction
+% Section: strict-conditional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{int}{str}
+
+\olsection{کلک شرطي}
+
+لويس \emph{کلک شرطي}~$\strictif$ معرفي کړ او استدلال يې
+وکړ چې له لازمولو سره د همدغه شرطي مطابقت شته، د مادي شرطي
+نۀ۔ د صدق د امکان او لزوم په مودالي منطق کښې
+$!A \strictif !B$ د $\Box(!A \lif !B)$ په توګه تعريفېدے
+شي۔ نو کلک شرطي (په يوه نړۍ کښې) رښتيا دے هله او يوازې هله
+چې اړوند مادي شرطي لازم وي۔
+
+کلک شرطي د مادي شرطي د پاراډوکسونو په وړاندې څه حالت لري؟
+د کاذب مقدم لرونکے کلک شرطي او د رښتينې پايلې لرونکے کلک
+شرطي کېدے شي رښتيا وي او کېدے شي کاذب وي۔ پر دې سربېره
+$(!A \strictif !B) \lor (!B \strictif !A)$ معتبر نۀ دے۔
+کلک شرطي $!A \strictif !B$ له $\lnot !A \lor !B$ سره هم
+هم‌ارزښته نۀ دے؛ نو د صدق تابع نۀ دے۔
+
+دا لرو۔ د ژباړې د نسخې څرګندونه (OLCNT-003): سرچينه د
+لاندې جدول په پنځمه کرښه کښې د مادي شرطي نفي ليکي، خو د
+همدې برخې درېيم ضدبېلګه‌يي تمرين د کلک شرطي نفي کاروي؛ د
+ناستلزام دعوه دلته د کلک شرطي نفي ته سمه شوې ده۔ د ژباړې د
+نسخې څرګندونه (OLCNT-004): دا بيانونه او ورپسې د کلک شرطي
+د لزوم دعوې د همدې برخې د \Log{S5} تمرينونو په سياق کښې
+لوستل کېږي۔ سرچينه دا چوکاټي شرط په نثري دعوو کښې نۀ
+څرګندوي؛ د بې‌قيده مودالي چوکاټونو لپاره ټولې دغه دعوې
+عمومي نۀ دي۔
+\begin{align}
+  !A \strictif !B & \Entails \lnot !A \lor !B
+  \text{ خو:}\\
+  \lnot !A \lor !B & \Entails/ !A \strictif !B\\
+  !B & \Entails/ !A \strictif !B\\
+  \lnot !A & \Entails/ !A \strictif !B\\
+  \lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B
+  \text{ خو:}\\
+  !A \land \lnot !B & \Entails \lnot(!A \strictif !B)
+  \intertext{خو کلک شرطي لا هم مودوس پوننس مني:}
+  !A, !A \strictif !B & \Entails !B
+  \intertext{د کلکو شرطيو پايلې په عطف کښې يوځاے کېدے شي:}
+  !A \strictif !B,  !A \strictif !C & \Entails !A \strictif (!B \land !C)
+  \intertext{د کلک شرطي لپاره د مقدم پياوړي کول سم دي:}
+  !A \strictif !B & \Entails (!A \land !C) \strictif !B
+  \intertext{کلک شرطي هم متعدي دے:}
+  !A \strictif !B, !B \strictif !C & \Entails !A \strictif !C
+  \intertext{په پاے کښې، کلک شرطي له خپل نقيض عکس سره
+    هم‌ارزښته دے:}
+  !A \strictif !B & \Entails \lnot !B \strictif \lnot !A\\
+  \lnot !B \strictif \lnot !A & \Entails !A \strictif !B
+\end{align}
+
+\begin{prob}
+  د هغو استلزامي اړيکو لپاره د \Log{S5} ضدبېلګې ورکړئ چې د
+  کلک شرطي لپاره نۀ سمېږي، يعنې د دې لپاره:
+  \begin{enumerate}
+  \item $\lnot p \Entails/ \Box(p \lif q)$
+  \item $q \Entails/ \Box(p \lif q)$
+  \item $\lnot\Box(p \lif q) \Entails/ p \land \lnot q$
+  \item $\Entails/ \Box(p \lif q) \lor \Box(q \lif p)$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  د لاندې بيانونو د \Log{S5} ثبوتونو په ورکولو وښيئ چې
+  معتبرې استلزامي اړيکې د کلک شرطي لپاره سمې دي:
+  \begin{enumerate}
+  \item  $\Box(!A \lif !B) \Entails \lnot !A \lor !B$
+  \item $!A \land \lnot !B \Entails \lnot\Box(!A \lif !B)$
+  \item $!A, \Box(!A \lif !B) \Entails !B$
+  \item $\Box(!A \lif !B), \Box(!A \lif !C) \Entails \Box(!A \lif (!B
+    \land !C))$
+  \item $\Box(!A \lif !B) \Entails \Box((!A \land !C) \lif !B)$
+  \item $\Box(!A \lif !B), \Box(!B \lif !C) \Entails \Box(!A
+    \lif !C)$
+  \item $\Box(!A \lif !B) \Entails \Box(\lnot !B \lif \lnot !A)$
+  \item $\Box(\lnot !B \lif \lnot !A) \Entails \Box(!A \lif !B)$
+  \end{enumerate}
+  \end{prob}
+
+خو کلک شرطي لا هم خپل «پاراډوکسونه» لري۔ لکه څرنګه چې د
+کاذب مقدم يا رښتينې پايلې لرونکے مادي شرطي رښتيا وي، د
+\emph{په لازمي ډول} کاذب مقدم يا په لازمي ډول رښتينې پايلې
+لرونکے کلک شرطي هم رښتيا وي۔ پر دې سربېره هر رښتينے کلک
+شرطي په لازمي ډول رښتيا او هر کاذب کلک شرطي په لازمي ډول
+کاذب دے۔ د OLCNT-004 څرګندونې چوکاټي شرط دلته هم مراد دے۔
+په بل عبارت دا لرو:
+\begin{align}
+  \Box \lnot !A & \Entails !A \strictif !B\\
+  \Box !B & \Entails !A \strictif !B\\
+  !A \strictif !B& \Entails \Box(!A \strictif !B)\\
+  \lnot(!A \strictif !B) & \Entails \Box\lnot(!A \strictif !B)
+\end{align}
+که $\strictif$ د «لازموي» په توګه وګڼئ، دا ستونزې نۀ دي۔
+منطقي استلزامي اړيکې په هر حال رياضيکي حقيقتونه دي؛ نو
+اتفاقي نۀ شي کېدے۔ خو که غواړئ $\strictif$ داسې منطقي
+نښلوونکے وکاروئ چې «که \dots نو \dots» ويناوې رانغاړي، دا
+دعوې، په تېره وروستۍ دوه، ستونزې راولاړوي۔ ځکه خامخا داسې
+«که \dots نو \dots» ويناوې شته چې په اتفاق رښتيا يا په
+اتفاق کاذبې دي---په حقيقت کښې عموماً نۀ لازمې دي او نۀ
+ناممکنې۔
+
+\begin{prob}
+  په \Log{S5} کښې د دې ثبوتونه ورکړئ:
+  \begin{enumerate}
+    \item  $\Box \lnot !A \Entails !A \strictif !B$
+    \item $!A \strictif !B \Entails \Box(!A \strictif !B)$
+    \item $\lnot(!A \strictif !B)  \Entails \Box\lnot(!A \strictif !B)$
+  \end{enumerate}
+  د دې لپاره د $\strictif$ تعريف وکاروئ۔
+\end{prob}
+
+\end{document}

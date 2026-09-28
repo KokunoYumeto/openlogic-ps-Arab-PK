@@ -1,0 +1,59 @@
+{
+  "schema": "ps-b156-source-rule-label-repair/1",
+  "utc": "2026-09-28T23:26:59.821407+00:00",
+  "status": "PASS",
+  "unit_id": "OLP-0513",
+  "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+  "old_target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+  "target_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
+  "source_correction_id": "OLINT-023",
+  "source_lines_1based": [
+    90,
+    100
+  ],
+  "target_lines_1based": [
+    92,
+    107
+  ],
+  "disclosure_line_1based": 105,
+  "math_exception": {
+    "source_only": [
+      "$\\TRule{\\lif}{\\True}$",
+      "$\\TRule{\\lif}{\\False}$"
+    ],
+    "target_only": [
+      "$\\TRule{\\True}{\\lif}$",
+      "$\\TRule{\\False}{\\lif}$"
+    ],
+    "scope": "two source-inherited prose rule-label reversals"
+  },
+  "checks": {
+    "exact_math_exceptions": true,
+    "blocks_equal": true,
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "nfc": true,
+    "math_count_equal": true
+  },
+  "previous_focused_qa_sha256": "83546a59e8220ad3bd427c15a7b92029b74dc5185c12bf60ee260dba541f1a82",
+  "frozen_macro_evidence": {
+    "path": "upstream/open-logic-config.sty",
+    "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+    "definition_lines_1based": [
+      293,
+      294,
+      295,
+      297,
+      298
+    ]
+  },
+  "canon_reconsulted": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS"
+  ],
+  "historical_receipts_preserved": true,
+  "render_status": "No rendered reader change claimed; cumulative source QA pending."
+}

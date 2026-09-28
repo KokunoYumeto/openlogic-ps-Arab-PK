@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 515,
-    "structural_pass": 515,
+    "draft_units": 520,
+    "structural_pass": 520,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B155-INTUITIONISTIC-TABLEAUX",
+  "batch": "PS-B156-COUNTERFACTUAL-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16727,7 +16727,7 @@
       "unit_id": "OLP-0513",
       "path": "content/intuitionistic-logic/tableaux/rules.tex",
       "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
-      "translation_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "translation_sha256": "cdd0cd17910a81ca161495570cfd6b79eb61b445f932935cd3b028b713fccae4",
       "source_blocks": 16,
       "target_blocks": 16,
       "checks": {
@@ -16752,21 +16752,26 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLINT-013"
+        "OLINT-013",
+        "OLINT-023"
       ],
       "status": "structural-pass",
       "math_diff": {
         "source_only": [
+          "$\\TRule{\\lif}{\\True}$",
           "$\\sFmla{\\True}{!A}[\\sigma.{*}]$",
           "$\\sFmla{\\False}{!B}[\\sigma.{*}]$",
           "$\\sFmla{\\True}{!A}[\\sigma]$",
-          "$\\sFmla{\\False}{!B}[\\sigma]$"
+          "$\\sFmla{\\False}{!B}[\\sigma]$",
+          "$\\TRule{\\lif}{\\False}$"
         ],
         "target_only": [
+          "$\\TRule{\\True}{\\lif}$",
           "$\\sFmla{\\False}{!A}[\\sigma.{*}]$",
           "$\\sFmla{\\True}{!B}[\\sigma.{*}]$",
           "$\\sFmla{\\False}{!A}[\\sigma]$",
-          "$\\sFmla{\\True}{!B}[\\sigma]$"
+          "$\\sFmla{\\True}{!B}[\\sigma]$",
+          "$\\TRule{\\False}{\\lif}$"
         ],
         "expected_by_source_correction": true
       }
@@ -16862,6 +16867,164 @@
           "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
           "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
           "$\\Gamma\\Entails!A$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0516",
+      "path": "content/counterfactuals/counterfactuals.tex",
+      "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+      "translation_sha256": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0517",
+      "path": "content/counterfactuals/introduction/introduction.tex",
+      "source_sha256": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+      "translation_sha256": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0518",
+      "path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "translation_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLCNT"
+      ],
+      "allowed_residual_english": [
+        "OLCNT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCNT-001",
+        "OLCNT-002"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0519",
+      "path": "content/counterfactuals/introduction/paradoxes-material.tex",
+      "source_sha256": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+      "translation_sha256": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0520",
+      "path": "content/counterfactuals/introduction/strict-conditional.tex",
+      "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+      "translation_sha256": "6fff6a288ede2d8c0129ff92e1761b58a7bcfb1e511d85df6df716eb7c9628d3",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLCNT"
+      ],
+      "allowed_residual_english": [
+        "OLCNT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCNT-003",
+        "OLCNT-004"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\lif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\text{LOCALIZED}\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\strictif!B)&\\Entails/!A\\land\\lnot!B\\text{LOCALIZED}\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)\\intertext{LOCALIZED}!A,!A\\strictif!B&\\Entails!B\\intertext{LOCALIZED}!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)\\intertext{LOCALIZED}!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B\\intertext{LOCALIZED}!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C\\intertext{LOCALIZED}!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
         ],
         "expected_by_source_correction": true
       }
@@ -25543,6 +25706,114 @@
       "passage": "entailment",
       "reverse_paraphrase": "Contradiction to a countermodel proves semantic entailment, with derivability assumed.",
       "finding": "OLINT-022 د پايلې نښه سموي."
+    },
+    {
+      "unit_id": "OLP-0516",
+      "passage": "name",
+      "reverse_paraphrase": "Counterfactual is the usual name; the source later says antecedents are usually false.",
+      "finding": "د عموماً او لازمي توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0516",
+      "passage": "imports",
+      "reverse_paraphrase": "Two chapter imports remain exact.",
+      "finding": "واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0517",
+      "passage": "imports",
+      "reverse_paraphrase": "Material conditional, its paradoxes, strict conditional and counterfactual imports remain exact.",
+      "finding": "د څلورو برخو پېژندنې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "truth",
+      "reverse_paraphrase": "Material conditional fails only when antecedent true and consequent false.",
+      "finding": "د دواړو قيمتونو شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "deduction",
+      "reverse_paraphrase": "Semantic deduction theorem preserves the premise set Gamma.",
+      "finding": "د ګاما دواړه پېښې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "formal",
+      "reverse_paraphrase": "Equivalence, premise entailments, negation, modus ponens, agglomeration, strengthening, transitivity and contraposition remain exact.",
+      "finding": "ټول رسمي بيانونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0518",
+      "passage": "ordinary",
+      "reverse_paraphrase": "Nonmathematical purported counterexamples are not asserted to overturn mathematical truth functions.",
+      "finding": "د غيررياضيکي سياق حد عين دے."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "Lewis",
+      "reverse_paraphrase": "Lewis criticizes reading the material connective as implies.",
+      "finding": "د لويس تاريخي نيوکه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "entailment",
+      "reverse_paraphrase": "Logical entailment ranges over every valuation, not the contingent truth of an English sentence.",
+      "finding": "ټولې ټاکنې له يوې واقعي جملې جلا دي."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "footnote",
+      "reverse_paraphrase": "The footnote distinguishes implies and only if pronunciations.",
+      "finding": "پښه‌ليک بشپړ دے."
+    },
+    {
+      "unit_id": "OLP-0519",
+      "passage": "tautology",
+      "reverse_paraphrase": "A disjunction of the two material conditionals is a tautology.",
+      "finding": "ورځپاڼې بېلګه او د شرطونو دواړه لوري عين دي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "definition",
+      "reverse_paraphrase": "Strict conditional is the necessity of the material conditional.",
+      "finding": "د Box رسمي تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "nontruthfunctional",
+      "reverse_paraphrase": "Strict conditional is not determined by the two local truth values.",
+      "finding": "د صدق تابعې نشتون عين دے."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "correction",
+      "reverse_paraphrase": "The nonentailment premise is negated strict conditional, as the third counterexample exercise states.",
+      "finding": "OLCNT-003 يو نښلوونکے سموي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "scope",
+      "reverse_paraphrase": "Several claims require the explicit S5 context and fail on unrestricted K frames.",
+      "finding": "OLCNT-004 د سرچينې سياق څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four counterexample, eight proof and three final exercises remain unchanged.",
+      "finding": "پنځلس تمرينونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0520",
+      "passage": "necessity",
+      "reverse_paraphrase": "In S5, strict conditionals have necessary truth or necessary falsity within their accessible class.",
+      "finding": "د وروستيو دعوو چوکاټي حد څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "OLINT-023",
+      "reverse_paraphrase": "The two prose rule labels use Sign then Op, exactly as the macro definition and the formal rule table.",
+      "finding": "Two label arguments corrected; all formal tables and earlier sign repairs retained."
     }
   ],
   "builds": [

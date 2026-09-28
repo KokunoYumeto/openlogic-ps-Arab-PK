@@ -1,0 +1,52 @@
+{
+  "schema": "ps-b157-finite-source-scope-check/1",
+  "status": "PASS",
+  "OLCNT-006": {
+    "inner": [
+      0
+    ],
+    "outer": [
+      0,
+      1
+    ],
+    "difference": [
+      1
+    ],
+    "difference_inside_outer": true
+  },
+  "OLCNT-007": {
+    "center": 0,
+    "inner": [
+      0
+    ],
+    "outer": [
+      0,
+      1
+    ],
+    "antecedent": [
+      1
+    ],
+    "consequent": [
+      1
+    ],
+    "outer_condition": true,
+    "inner_condition": false
+  },
+  "OLCNT-008": {
+    "center": 0,
+    "system": [
+      [],
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "nonempty_families_checked": 7,
+    "all_four_definition_conditions": true,
+    "empty_sphere_permitted": true
+  },
+  "scope": "Finite consistency and counterexample checks of frozen prose; no new unbounded result and no source definition change."
+}
