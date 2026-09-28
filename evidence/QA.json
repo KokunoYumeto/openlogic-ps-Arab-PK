@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 451,
-    "structural_pass": 451,
+    "draft_units": 452,
+    "structural_pass": 452,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B134-NORMAL-MODAL-FILTRATION-OPENING",
+  "batch": "PS-B135-NORMAL-MODAL-FILTRATION-PRELIMINARIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14687,6 +14687,33 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0452",
+      "path": "content/normal-modal-logic/filtrations/preliminaries.tex",
+      "source_sha256": "52ddd6bc925f0da353223ff038b1cb59be4a633ef8b8a8ec885d48fb99fcced8",
+      "translation_sha256": "ebc2be6cf41faba5aefa9d79961f308ecd585b3c52fe43aedeaa4c4c2f28110e",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -21007,6 +21034,78 @@
       "passage": "finite subformulas",
       "reverse_paraphrase": "Agreement on finitely many subformulas of A guarantees finitely many equivalence classes.",
       "finding": "د متناهي‌والي اصلي وجه د فرعي فارمولونو شمېر دے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "finite witness",
+      "reverse_paraphrase": "A formula true or false in a model also has the corresponding truth or falsity in a finite model.",
+      "finding": "د رښتينوالي او نارښتينوالي دواړه لوري ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "subformula closure",
+      "reverse_paraphrase": "Every subformula of each formula already in Gamma is also in Gamma.",
+      "finding": "د هر غړي ټول فرعي فارمولونه په سټ کښې دي."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "modal closure",
+      "reverse_paraphrase": "Modal closure adds both Box A and Diamond A for every A in Gamma, in addition to subformula closure.",
+      "finding": "د دواړو مودالي نښو اضافه شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "subformula example",
+      "reverse_paraphrase": "All subformulas of fixed A form a subformula-closed set; modal closure is not asserted.",
+      "finding": "د لومړۍ او دويمې تړلتيا فرق ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "filtration preservation",
+      "reverse_paraphrase": "The filtration of a model through subformulas of A preserves whether A is true or false.",
+      "finding": "د ضدمدل د ساتنې دوه اړخيزه معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "equivalence definition",
+      "reverse_paraphrase": "Two worlds are equivalent exactly if they agree on truth of every formula in Gamma.",
+      "finding": "د هر فارمول کميت او د دواړو نړۍو شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "class definition",
+      "reverse_paraphrase": "The class [w] contains precisely the worlds equivalent to w.",
+      "finding": "د ټولګي غړيتوب له هم‌ارزۍ سره سم دے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "reflexivity",
+      "reverse_paraphrase": "Each world agrees with itself on all formulas in Gamma.",
+      "finding": "د انعکاس دليل ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "symmetry",
+      "reverse_paraphrase": "Agreement of u with v reverses to agreement of v with u.",
+      "finding": "د تقارن جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "transitivity",
+      "reverse_paraphrase": "Agreement of u with v and v with w yields agreement of u with w.",
+      "finding": "د دريو نړۍو ترتيب ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "partition cover",
+      "reverse_paraphrase": "Each w belongs to its own class, so all classes cover W.",
+      "finding": "د انعکاس نه پوښښ ترلاسه کېږي."
+    },
+    {
+      "unit_id": "OLP-0452",
+      "passage": "partition disjointness",
+      "reverse_paraphrase": "A common member of [w] and [v] forces w equivalent to v, hence the classes are equal.",
+      "finding": "ګډ غړے د ټولګيو عين‌والے ثابتوي."
     }
   ],
   "builds": [

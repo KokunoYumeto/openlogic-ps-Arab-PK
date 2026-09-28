@@ -1,6 +1,6 @@
 # Translation decision review — start here
 
-This package records every currently identified judgment-dependent Pashto (Pakistan) translation choice in the canonical OpenLogic schema. It contains **582 decisions** and **24034 exact paired source/target occurrences** across **451 of 722 translated source units**.
+This package records every currently identified judgment-dependent Pashto (Pakistan) translation choice in the canonical OpenLogic schema. It contains **583 decisions** and **24097 exact paired source/target occurrences** across **452 of 722 translated source units**.
 
 - [Full expert-review index](TRANSLATION_DECISIONS_FULL.md)
 - [High-priority review](PRIORITY_REVIEW.md)
