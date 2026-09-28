@@ -1,0 +1,112 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T18:21:10.988217+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES",
+  "batch_id": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0479",
+      "source_path": "content/applied-modal-logic/temporal-logic/properties-accessibility.tex",
+      "source_bytes": 2395,
+      "source_sha256": "63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095",
+      "target_sha256": "0f24bb649cbaf8b4356c00939d9a95255606a95e0d7c7990c31f1e109c2ab2f1",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0480",
+      "source_path": "content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex",
+      "source_bytes": 1608,
+      "source_sha256": "610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97",
+      "target_sha256": "46275ccbeec9b131a6e1490d15e267cf3114ccaacb877e3a55c2f9016ce587b1",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0481",
+      "source_path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+      "source_bytes": 3412,
+      "source_sha256": "29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a",
+      "target_sha256": "270c82c9da9264db2fb6b1bb1866968cdd5351d7d27f49f814cafa96c9003611",
+      "paired_blocks": 11,
+      "source_correction_ids": [
+        "OLAML-002"
+      ]
+    }
+  ],
+  "notes_path": "work/B148_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "6954824062f5e5d2ce98d1da2d7163c13aab7ee7bd1f58799177a61ce5370380",
+  "consultation_path": "work/B148_CANON_CONSULTATION.md",
+  "consultation_sha256": "159473d1f5e6821d6c6283f6124bbc796a8396c320bba40d4a2a876d8dc429be",
+  "staging_checkpoint_sha256": "c161b23b50708067a96e2d9a3137f4382665cfb59e3b20b258e7364cec103a39",
+  "staging_qa_sha256": {
+    "OLP-0479": "3eccdd2e2b54bb2d976ff798def52687ce65f25b45112ddd882a9d3e0babf50a",
+    "OLP-0480": "1ee884e4501e25066047acf39fb43d445b221ea65b602fb55e4735041e2b1108",
+    "OLP-0481": "d41c759906382ea3ebf69bb1a7daf41f9567104cf702381fb37ac5e3a099fd14"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P178-ORDER",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 183,
+      "printed_page": "178",
+      "page_image_sha256": "3430c7a07383a8759de401ac274c9cbfd89f68fabab222cc78964fb1cedc6f5a",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0481",
+      "source_correction_id": "OLAML-002",
+      "finding": "د منجمدې سرچينې «might have occurred» تېر مهال ښيي، خو هماغه \\Diamond \\Ftemp p فورمول او ورپسې تشريح په بديله تاريخچه کښې راتلونکے امکان ښيي."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "term_id": "TERM-TEMPORAL-INTERVAL-OPERATORS",
+      "finding": "Source operators retained; provisional explanatory Pashto labels."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "term_id": "TERM-POSSIBLE-HISTORIES",
+      "finding": "Provisional history label follows the source sequence model."
+    }
+  ],
+  "formula_policy": "32 paired blocks; all 104 math spans, IDs, tags, environments and term tokens exact. OLAML-002 affects prose tense only.",
+  "unresolved": "د وقفي عاملونو او ممکنو تاريخچو عين پاکستانۍ نومونه نۀ دي ثابت؛ د سرچينې ليکوال رسمي سمون هم نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "e7263d98e4588be49dc350c56910e588b32b36cccfc00947412aa27d52aec76f",
+  "next_executable_action": "Register B148 canon and source decisions, run independent cumulative QA and dual canonical replay, then accept OLP-0479–0481; continue epistemic logic at OLP-0482."
+}

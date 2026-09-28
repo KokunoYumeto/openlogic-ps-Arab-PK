@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 478,
-    "structural_pass": 478,
+    "draft_units": 481,
+    "structural_pass": 481,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B147-APPLIED-MODAL-TEMPORAL-SEMANTICS",
+  "batch": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15635,6 +15635,89 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0479",
+      "path": "content/applied-modal-logic/temporal-logic/properties-accessibility.tex",
+      "source_sha256": "63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095",
+      "translation_sha256": "0f24bb649cbaf8b4356c00939d9a95255606a95e0d7c7990c31f1e109c2ab2f1",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0480",
+      "path": "content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex",
+      "source_sha256": "610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97",
+      "translation_sha256": "46275ccbeec9b131a6e1490d15e267cf3114ccaacb877e3a55c2f9016ce587b1",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0481",
+      "path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+      "source_sha256": "29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a",
+      "translation_sha256": "270c82c9da9264db2fb6b1bb1866968cdd5351d7d27f49f814cafa96c9003611",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLAML-002"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -23311,6 +23394,72 @@
       "passage": "duality",
       "reverse_paraphrase": "P/H and F/G form two dual pairs.",
       "finding": "دوه دوه‌ګونې جوړې عين دي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "unrestricted",
+      "reverse_paraphrase": "Without frame restrictions only K and its temporal analogues hold universally.",
+      "finding": "بې‌قيده چوکاټ او يوازې K/دوه زماني بڼې ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "directions",
+      "reverse_paraphrase": "Past and future unboundedness yield different existential consequences.",
+      "finding": "د تېر او راتلونکي بې‌سرحدۍ لوري نه دي ګډ شوي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "irreflexive",
+      "reverse_paraphrase": "Irreflexivity has no corresponding temporal-language formula.",
+      "finding": "د نفي انعکاسيت د نه‌څرګندېدو ادعا عين ده."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "arity",
+      "reverse_paraphrase": "Since and Until are binary temporal operators.",
+      "finding": "دواړه دوه‌ځاييز عاملونه دي."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "since",
+      "reverse_paraphrase": "Since requires an earlier B witness and C at every intervening point.",
+      "finding": "د مخکيني B شاهد او ټولو منځنيو C شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "until",
+      "reverse_paraphrase": "Until requires a later B witness and C at every intervening point.",
+      "finding": "د وروستيني B شاهد او ټولو منځنيو C شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "model",
+      "reverse_paraphrase": "The possible-histories model has T, C and V, with C a set of state sequences.",
+      "finding": "درې‌ګونې او د C د لړيو سټ عين دي."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "suffixes",
+      "reverse_paraphrase": "Histories are assumed closed under suffixes.",
+      "finding": "د وروستيو برخو فرض ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "future",
+      "reverse_paraphrase": "F uses a successor within the same history.",
+      "finding": "د راتلونکي شاهد په هماغه تاريخچه کښې دے."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "diamond",
+      "reverse_paraphrase": "Diamond quantifies over an alternative history containing the current point.",
+      "finding": "بديله تاريخچه بايد اوسنے ټکے ولري."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "tense conflict",
+      "reverse_paraphrase": "The source prose uses past tense, but its formula and explanation use alternative future possibility.",
+      "finding": "OLAML-002 راتلونکے امکان او د سرچينې تېر مهال توپير څنګ ته څرګندوي."
     }
   ],
   "builds": [

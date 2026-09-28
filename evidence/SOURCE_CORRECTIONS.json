@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0478; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T16:43:42.909227+00:00",
+  "status": "adopted through OLP-0481; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T18:21:10.988217+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12705,6 +12705,61 @@
       ],
       "decision_timing": "contemporaneous B147 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLAML-002",
+      "unit_id": "OLP-0481",
+      "classification": "possible_histories_example_past_tense_conflicts_with_future_formula",
+      "source_path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+      "source_sha256": "29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a",
+      "source_locator": "content/applied-modal-logic/temporal-logic/possible-histories.tex:69-73",
+      "source_literal_line_1based": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "target_path": "ps-Arab-PK/content/applied-modal-logic/temporal-logic/possible-histories.tex",
+      "target_line_1based": 69,
+      "disclosure_line_1based": 72,
+      "target_sha256": "270c82c9da9264db2fb6b1bb1866968cdd5351d7d27f49f814cafa96c9003611",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د بديلې تاريخچې د راتلونکي امکان له فورمول سره سم پښتو بيان شو او د انګرېزي تېر مهال توپير څنګ ته څرګند شو.",
+      "reason": "د منجمدې سرچينې «might have occurred» تېر مهال ښيي، خو هماغه \\Diamond \\Ftemp p فورمول او ورپسې تشريح په بديله تاريخچه کښې راتلونکے امکان ښيي.",
+      "formula_policy": "No math, identifiers, tags, macros or term tokens changed; frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES",
+      "audit_artifacts": [
+        "B148_SOURCE_AUDIT.json",
+        "B148_SOURCE_PREAUDIT_NOTES.md",
+        "content/applied-modal-logic/temporal-logic/possible-histories.tex:69-73",
+        "ps-Arab-PK/content/applied-modal-logic/temporal-logic/possible-histories.tex:69-74",
+        "B148_DRAFT_QA_OLP-0481.json"
+      ],
+      "decision_timing": "contemporaneous B148 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -12798,7 +12853,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS",
-    "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL"
+    "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL",
+    "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES"
   ],
   "source_authorities": [
     {

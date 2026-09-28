@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B147-APPLIED-MODAL-TEMPORAL-SEMANTICS",
-  "status": "OLP-0475–0478 source-reviewed and staged; 51 paired blocks, 17 semantic samples, two provisional terms and one disclosed source treatment; cumulative QA pending",
+  "batch_id": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+  "status": "OLP-0479–0481 source-reviewed and staged; 32 paired blocks, 11 semantic samples, two provisional terms and one disclosed source treatment; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10038,6 +10038,62 @@
       "scope": "د زماني ژبې، مدل، مخکښې‌والي، څلورو صدق شرطونو او دوه‌ګونتيا رسمي تعريفونه.",
       "allowed_residual_english": [],
       "residual_english_rationale": "No residual English."
+    },
+    "OLP-0479": {
+      "batch_id": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TEMPORAL-LOGIC-OPERATORS",
+        "TERM-MODAL-FRAME",
+        "TERM-ORDER-KINDS",
+        "TERM-DENSE-LINEAR-ORDER",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-RELATION"
+      ],
+      "scope": "د K دوه زماني طرحې، د مخکښې‌والي پنځه چوکاټي ځانګړتياوې او د نفي انعکاسيت د نه‌ښودنې احتياط.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0480": {
+      "batch_id": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TEMPORAL-LOGIC-OPERATORS",
+        "TERM-TEMPORAL-INTERVAL-OPERATORS"
+      ],
+      "scope": "د Since/Until دوه‌ځاييزې ژبې او د مخکيني/وروستيني شاهد او منځنيو ټکو رسمي شرطونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0481": {
+      "batch_id": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TEMPORAL-LOGIC-OPERATORS",
+        "TERM-POSSIBLE-HISTORIES",
+        "TERM-MODAL-LOGIC"
+      ],
+      "scope": "د C ممکنې تاريخچې، وروستۍ برخې، د راتلونکي په يوه تاريخچه او د امکان په بديله تاريخچه کښې صدق.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
     }
   },
   "semantic_review": [
@@ -17714,6 +17770,72 @@
       "passage": "duality",
       "reverse_paraphrase": "P/H and F/G form two dual pairs.",
       "finding": "دوه دوه‌ګونې جوړې عين دي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "unrestricted",
+      "reverse_paraphrase": "Without frame restrictions only K and its temporal analogues hold universally.",
+      "finding": "بې‌قيده چوکاټ او يوازې K/دوه زماني بڼې ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "directions",
+      "reverse_paraphrase": "Past and future unboundedness yield different existential consequences.",
+      "finding": "د تېر او راتلونکي بې‌سرحدۍ لوري نه دي ګډ شوي."
+    },
+    {
+      "unit_id": "OLP-0479",
+      "passage": "irreflexive",
+      "reverse_paraphrase": "Irreflexivity has no corresponding temporal-language formula.",
+      "finding": "د نفي انعکاسيت د نه‌څرګندېدو ادعا عين ده."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "arity",
+      "reverse_paraphrase": "Since and Until are binary temporal operators.",
+      "finding": "دواړه دوه‌ځاييز عاملونه دي."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "since",
+      "reverse_paraphrase": "Since requires an earlier B witness and C at every intervening point.",
+      "finding": "د مخکيني B شاهد او ټولو منځنيو C شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0480",
+      "passage": "until",
+      "reverse_paraphrase": "Until requires a later B witness and C at every intervening point.",
+      "finding": "د وروستيني B شاهد او ټولو منځنيو C شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "model",
+      "reverse_paraphrase": "The possible-histories model has T, C and V, with C a set of state sequences.",
+      "finding": "درې‌ګونې او د C د لړيو سټ عين دي."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "suffixes",
+      "reverse_paraphrase": "Histories are assumed closed under suffixes.",
+      "finding": "د وروستيو برخو فرض ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "future",
+      "reverse_paraphrase": "F uses a successor within the same history.",
+      "finding": "د راتلونکي شاهد په هماغه تاريخچه کښې دے."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "diamond",
+      "reverse_paraphrase": "Diamond quantifies over an alternative history containing the current point.",
+      "finding": "بديله تاريخچه بايد اوسنے ټکے ولري."
+    },
+    {
+      "unit_id": "OLP-0481",
+      "passage": "tense conflict",
+      "reverse_paraphrase": "The source prose uses past tense, but its formula and explanation use alternative future possibility.",
+      "finding": "OLAML-002 راتلونکے امکان او د سرچينې تېر مهال توپير څنګ ته څرګندوي."
     }
   ]
 }
