@@ -1,0 +1,44 @@
+{
+  "schema": "ps-b143-modal-tableaux-more-rules-staging/1",
+  "utc": "2026-09-28T14:52:38.111733+00:00",
+  "status": "two translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 464,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0465",
+    "OLP-0466"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0465",
+      "source_path": "content/normal-modal-logic/tableaux/more-rules.tex",
+      "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+      "target_sha256": "2e58db54e9f4d6352be60c15966d47a8ba14c744a57c2b7954fcac5f00e68bfb",
+      "paired_blocks": 12,
+      "focused_qa_sha256": "290fb7ccca87cbd95db55f78bee576abd85ad06e0f1fe11b1138686241e94cad",
+      "source_treatment_ids": [
+        "OLNML-040"
+      ]
+    },
+    {
+      "unit_id": "OLP-0466",
+      "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+      "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+      "target_sha256": "77229246801523efcbc2398dda9195835e1af8088998adf2db7ebd930f84630f",
+      "paired_blocks": 23,
+      "focused_qa_sha256": "6c78aa3be06c7d7066a4b19944735f6c39c3634e6063a7fe6e33d39ea9534811",
+      "source_treatment_ids": [
+        "OLNML-038",
+        "OLNML-039"
+      ]
+    }
+  ],
+  "notes_path": "work/B143_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "772bbfcc1e5c10cc5c1ac6f48742aa98cc88aca2c68d1e3532c87d01ceb33626",
+  "consultation_path": "work/B143_CANON_CONSULTATION.md",
+  "consultation_sha256": "896b3057aa8978ee1c39f8bd9a21c741b5687ac857f1aa2e7638658d90203f45",
+  "frozen_source_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Register OLNML-038–039, then run cumulative corpus and canonical decision QA for OLP-0465–0466."
+}

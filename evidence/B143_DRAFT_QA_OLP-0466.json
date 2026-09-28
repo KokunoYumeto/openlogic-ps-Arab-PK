@@ -1,0 +1,43 @@
+{
+  "schema": "ps-b143-modal-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0466",
+  "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+  "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+  "target_sha256": "77229246801523efcbc2398dda9195835e1af8088998adf2db7ebd930f84630f",
+  "source_blocks": 23,
+  "target_blocks": 23,
+  "expected_source_math": [
+    "$\\sFmla{\\True}{\\Box!B}[\\sigma]$",
+    "$\\mSat{M}{\\Box!B}[f(\\sigma).n]$",
+    "$\\mSat/{M}{\\Diamond!B}[f(\\sigma).n]$"
+  ],
+  "expected_target_math": [
+    "$\\mSat{M}{\\Box!B}[f(\\sigma.n)]$",
+    "$\\mSat/{M}{\\Diamond!B}[f(\\sigma.n)]$",
+    "$\\sFmla{\\False}{\\Diamond!B}[\\sigma]$"
+  ],
+  "expected_source_macro_names": [
+    "\\Box",
+    "\\True"
+  ],
+  "expected_target_macro_names": [
+    "\\Diamond",
+    "\\False"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "math": true,
+    "macro_names": true,
+    "source_comments": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 464,
-    "structural_pass": 464,
+    "draft_units": 466,
+    "structural_pass": 466,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
+  "batch": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15113,6 +15113,90 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0465",
+      "path": "content/normal-modal-logic/tableaux/more-rules.tex",
+      "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+      "translation_sha256": "2e58db54e9f4d6352be60c15966d47a8ba14c744a57c2b7954fcac5f00e68bfb",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_tableau_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-040"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Log{S5}\\Proves\\Ax{5}$",
+          "$\\Box!A\\lif\\Box\\Diamond!A$"
+        ],
+        "target_only": [
+          "$\\Log{S5}\\Proves\\Box!A\\lif\\Box\\Diamond!A$",
+          "$\\Diamond!A\\lif\\Box\\Diamond!A$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0466",
+      "path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+      "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+      "translation_sha256": "77229246801523efcbc2398dda9195835e1af8088998adf2db7ebd930f84630f",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-038",
+        "OLNML-039"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\sFmla{\\True}{\\Box!B}[\\sigma]$",
+          "$\\mSat{M}{\\Box!B}[f(\\sigma).n]$",
+          "$\\mSat/{M}{\\Diamond!B}[f(\\sigma).n]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{\\Box!B}[f(\\sigma.n)]$",
+          "$\\mSat/{M}{\\Diamond!B}[f(\\sigma.n)]$",
+          "$\\sFmla{\\False}{\\Diamond!B}[\\sigma]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -22333,6 +22417,114 @@
       "passage": "remaining exercise",
       "reverse_paraphrase": "The tagged completeness of the proof remains an exercise where the source says so.",
       "finding": "د تمرين پاتې ساحه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "T rules",
+      "reverse_paraphrase": "Reflexivity supports T-Box and T-Diamond rules.",
+      "finding": "د انعکاسيت د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "D rules",
+      "reverse_paraphrase": "Seriality supports D-Box and D-Diamond rules.",
+      "finding": "د مسلسل‌والي د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "B rules",
+      "reverse_paraphrase": "Symmetry supports B-Box and B-Diamond rules.",
+      "finding": "د متناظرۍ د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "4 rules",
+      "reverse_paraphrase": "Transitivity supports 4-Box and 4-Diamond rules with an already used successor prefix.",
+      "finding": "د تعدي او کارېدلي مخکښ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "4r rules",
+      "reverse_paraphrase": "Euclideanness supports reverse 4r-Box and 4r-Diamond rules.",
+      "finding": "د اقليدسيتوب د سرچپه 4r لوری ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "systems table",
+      "reverse_paraphrase": "T, D, K4, B, S4 and S5 match their source frame properties and rules.",
+      "finding": "د ټولو شپږو قطارونو شرطونه او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "S5 example",
+      "reverse_paraphrase": "The closed tableau proves Box A implies Box Diamond A in S5; the frozen source incorrectly calls it axiom 5, whose actual form begins with Diamond A.",
+      "finding": "OLNML-040 د ونې او قضیې فورمول سموي او د ۵ اکسيوم له نومه توپير څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "six exercises",
+      "reverse_paraphrase": "All six modal derivability exercises retain formulas and order.",
+      "finding": "د شپږو تمرينونو فورمولونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "rule soundness definition",
+      "reverse_paraphrase": "A rule preserves a satisfiable branch within the same model class.",
+      "finding": "د سموالي کميتي شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "T Box",
+      "reverse_paraphrase": "Reflexivity transfers Box B to B at the same prefix.",
+      "finding": "د T-Box شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "T Diamond",
+      "reverse_paraphrase": "Reflexivity transfers failure of Diamond B to failure of B.",
+      "finding": "د T-Diamond نفي ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "D pair",
+      "reverse_paraphrase": "Seriality provides a successor for both Box and false-Diamond consequences.",
+      "finding": "د D دواړو اړخونو وجودي شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "B pair",
+      "reverse_paraphrase": "Symmetry reverses the prefix accessibility edge in both B proofs.",
+      "finding": "د B دواړو اړخونو د غشي جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4 pair",
+      "reverse_paraphrase": "Transitivity propagates Box truth and Diamond failure to a used successor.",
+      "finding": "د کارېدلي مخکښ او تعدي شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4r Box",
+      "reverse_paraphrase": "Euclideanness propagates Box truth from sigma.n back to sigma.",
+      "finding": "د 4r-Box جهت او OLNML-039 د تابع استدلال سموي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4r Diamond",
+      "reverse_paraphrase": "Euclideanness propagates false Diamond from sigma.n back to sigma.",
+      "finding": "OLNML-038 او OLNML-039 پايله او استدلال سموي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "tagged exercises",
+      "reverse_paraphrase": "Each of five propositions retains the tagged exercise when the source requests one.",
+      "finding": "د پنځو تمرينونو ټګونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "corollary",
+      "reverse_paraphrase": "The listed tableau systems are sound for their matching model classes.",
+      "finding": "د پايلې اړونده ټولګې ساتل شوي."
     }
   ],
   "builds": [

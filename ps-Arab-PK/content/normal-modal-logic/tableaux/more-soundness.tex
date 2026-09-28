@@ -1,0 +1,204 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: more-soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{msn}
+      
+\olsection{د نورو قاعدو سموالی}
+
+وايو چې يوه قاعده د مدلونو د يوې ټولګې لپاره سمه ده که د
+!!a{tableau} هره څانګه چې د هغې ټولګې په کوم مدل کښې پوره کېږي،
+د قاعدې له پلي کېدو وروسته ترې جوړه شوې څانګه هم د هماغې
+ټولګې په کوم مدل کښې پوره شي۔
+
+\begin{prop}
+  \ollabel{prop:soundness-T} 
+  \iftag{prvBox}{\Ax{T}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ او }%
+  \iftag{prvDiamond}{\Ax{T}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{د انعکاسي مدلونو لپاره سمه قاعده ده}{د انعکاسي مدلونو لپاره سمې قاعدې دي}۔
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{د T$\Box$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probBox}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma]$ راځي۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat{M}{\Box
+      !B}[f(\sigma)]$. څرنګه چې $R$ انعکاسي ده، نو
+    $Rf(\sigma)f(\sigma)$.  نو $\mSat{M}{!B}[f(\sigma)]$, يعنې
+    $\mModel{M}, f$ د $\sFmla{\True}{!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\tagitem{prvDiamond}{د T$\Diamond$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probDiamond}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma]$ راځي۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat/{M}{\Diamond
+      !B}[f(\sigma)]$. څرنګه چې $R$ انعکاسي ده، نو
+    $Rf(\sigma)f(\sigma)$.  نو $\mSat/{M}{!B}[f(\sigma)]$, يعنې
+    $\mModel{M}, f$ د $\sFmla{\False}{!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  د \olref[nml][tab][msn]{prop:soundness-T} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-D} 
+  \iftag{prvBox}{\Ax{D}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ او }%
+  \iftag{prvDiamond}{\Ax{D}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{د مسلسل مدلونو لپاره سمه قاعده ده}{د مسلسل مدلونو لپاره سمې قاعدې دي}۔
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{د D$\Box$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probBox}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\True}{\Diamond !B}[\sigma]$ راځي۔ فرض کړئ $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه،
+    $\mSat{M}{\Box !B}[f(\sigma)]$. څرنګه چې $R$ مسلسل ده، داسې $w
+    \in W$ شته چې $Rf(\sigma)w$. بيا $\mSat{M}{!B}[w]$, او له دې امله
+    $\mSat{M}{\Diamond !B}[f(\sigma)]$.  نو $\mModel{M}, f$ د $\sFmla{\True}{\Diamond!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\tagitem{prvDiamond}{د D$\Diamond$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probDiamond}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\False}{\Box !B}[\sigma]$ راځي۔ فرض کړئ $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه،
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$. څرنګه چې $R$ مسلسل ده، داسې $w
+    \in W$ شته چې $Rf(\sigma)w$. بيا $\mSat/{M}{!B}[w]$, او له دې امله
+    $\mSat/{M}{\Box !B}[f(\sigma)]$.  نو $\mModel{M}, f$ د $\sFmla{\False}{\Box!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  د \olref[nml][tab][msn]{prop:soundness-D} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-B} 
+  \iftag{prvBox}{\Ax{B}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ او }%
+  \iftag{prvDiamond}{\Ax{B}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{د متناظرو مدلونو لپاره سمه قاعده ده}{د متناظرو مدلونو لپاره سمې قاعدې دي}۔
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{د B$\Box$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$ ده:
+  \iftag{probBox}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma]$ راځي۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے، نو
+    $Rf(\sigma)f(\sigma.n)$.  څرنګه چې $R$ متناظره ده، نو
+    $Rf(\sigma.n)f(\sigma)$.  او ځکه چې $\mSat{M}{\Box !B}[f(\sigma.n)]$ وي،
+    $\mSat{M}{!B}[f(\sigma)]$. نو $\mModel{M}, f$ د $\sFmla{\True}{!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\tagitem{prvDiamond}{د B$\Diamond$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$ ده:
+  \iftag{probDiamond}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma]$ راځي۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat/{M}{\Diamond
+      !B}[f(\sigma.n)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے، نو
+    $Rf(\sigma)f(\sigma.n)$.  څرنګه چې $R$ متناظره ده، نو
+    $Rf(\sigma.n)f(\sigma)$.  او ځکه چې $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ وي،
+    $\mSat/{M}{!B}[f(\sigma)]$. نو $\mModel{M}, f$ د $\sFmla{\False}{!B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  د \olref[nml][tab][msn]{prop:soundness-B} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4} 
+  \iftag{prvBox}{\Ax{4}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ او }%
+  \iftag{prvDiamond}{\Ax{4}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{د متعديو مدلونو لپاره سمه قاعده ده}{د متعديو مدلونو لپاره سمې قاعدې دي}۔
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{د 4$\Box$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probBox}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\True}{\Box!B}[\sigma.n]$ راځي۔ فرض کړئ $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه،
+    $\mSat{M}{\Box !B}[f(\sigma)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے او
+    $\sigma.n$ بايد په څانګه کښې کارېدلے وي، نو $Rf(\sigma)f(\sigma.n)$. اوس هر داسې $w$ ونيسئ چې $Rf(\sigma.n)w$.  څرنګه چې $R$ متعديه ده، نو
+    $Rf(\sigma)w$.  ځکه چې $\mSat{M}{\Box !B}[f(\sigma)]$ وي، نو
+    $\mSat{M}{!B}[w]$. نو $\mSat{M}{\Box !B}[f(\sigma.n)]$، او
+    $\mModel{M}, f$ د $\sFmla{\True}{\Box !B}[\sigma.n]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\tagitem{prvDiamond}{د 4$\Diamond$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ ده:
+  \iftag{probDiamond}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\False}{\Diamond!B}[\sigma.n]$ راځي۔ فرض کړئ $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه،
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے او
+    $\sigma.n$ بايد په څانګه کښې کارېدلے وي، نو $Rf(\sigma)f(\sigma.n)$. اوس هر داسې $w$ ونيسئ چې $Rf(\sigma.n)w$.  څرنګه چې $R$ متعديه ده، نو
+    $Rf(\sigma)w$.  ځکه چې $\mSat/{M}{\Diamond !B}[f(\sigma)]$ وي، نو
+    $\mSat/{M}{!B}[w]$. نو $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$، او
+    $\mModel{M}, f$ د $\sFmla{\False}{\Diamond !B}[\sigma.n]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  د \olref[nml][tab][msn]{prop:soundness-4} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4r} 
+  \iftag{prvBox}{\Ax{4r}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ او }%
+  \iftag{prvDiamond}{\Ax{4r}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{د اقليدسي مدلونو لپاره سمه قاعده ده}{د اقليدسي مدلونو لپاره سمې قاعدې دي}۔
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{د 4r$\Box$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$ ده:
+  \iftag{probBox}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\True}{\Box!B}[\sigma]$ راځي۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے، نو
+    $Rf(\sigma)f(\sigma.n)$. اوس هر داسې $w$ ونيسئ چې
+    $Rf(\sigma)w$.  څرنګه چې $R$ اقليدسي ده، نو $Rf(\sigma.n)w$.  ځکه چې
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ وي، نو $\mSat{M}{!B}[w]$؛ په منجمده سرچينه کښې د تابع د استدلال د مخکښ غځونه له تابع څخه بهر ليکل شوې وه، خو دلته د تابع دننه ده۔ نو
+    $\mSat{M}{\Box !B}[f(\sigma)]$، او $\mModel{M}, f$ د $\sFmla{\True}{\Box !B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\tagitem{prvDiamond}{د 4r$\Diamond$ قاعدې په پلي کولو څانګه غځېږي؛ مقدمه
+  $\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$ ده:
+  \iftag{probDiamond}{تمرین۔}{پر څانګه نوی !!{signed
+      formula}~$\sFmla{\False}{\Diamond!B}[\sigma]$ راځي۔ په منجمده سرچينه کښې دلته د بلې قاعدې نښه راغلې وه؛ د 4r د امکاني قاعدې له جدول سره يې سمه بڼه راوړل شوه۔ فرض کړئ
+    $\mSat{M}{\Gamma}[f]$؛ په ځانګړې توګه، $\mSat/{M}{\Diamond
+      !B}[f(\sigma.n)]$. څرنګه چې $f$ په~$\mModel{M}$ کښې د څانګې د مخکښونو تفسير دے، نو
+    $Rf(\sigma)f(\sigma.n)$. اوس هر داسې $w$ ونيسئ چې
+    $Rf(\sigma)w$.  څرنګه چې $R$ اقليدسي ده، نو $Rf(\sigma.n)w$.  ځکه چې
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ وي، نو $\mSat/{M}{!B}[w]$؛ په منجمده سرچينه کښې د تابع د استدلال د مخکښ غځونه له تابع څخه بهر ليکل شوې وه، خو دلته د تابع دننه ده۔ نو
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$، او $\mModel{M}, f$ د $\sFmla{\False}{\Diamond !B}[\sigma]$ نښه لرونکے فارمول پوره کوي۔}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  د \olref[nml][tab][msn]{prop:soundness-4r} ثبوت بشپړ کړئ۔
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:soundness-logics} په \olref[mru]{tab:logics-rules} کښې ښودل شوي !!{tableau} نظامونه
+د مدلونو د خپلو اړوندو ټولګيو لپاره سم دي۔
+\end{cor}
+
+\end{document}

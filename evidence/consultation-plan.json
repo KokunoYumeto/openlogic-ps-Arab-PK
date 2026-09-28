@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B142-MODAL-TABLEAUX-PROOFS-SOUNDNESS-AND-FILTRATION-FIGURES",
-  "status": "OLP-0463–0464 source-reviewed and staged; OLP-0459 figure revision staged; seven disclosed source treatments",
+  "batch_id": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+  "status": "OLP-0465–0466 source-reviewed and staged; 35 paired blocks, 18 semantic samples, two disclosed source treatments",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9772,6 +9772,43 @@
       ],
       "scope": "د K د مخکښ‌لرونکو تابلوګانو سموالی: د تفسير f، پوره‌کېدو، هرې قاعدې د پوره‌کېدو د ساتنې او د اشتقاق د معنوي لازم‌والي ثبوت.",
       "allowed_residual_english": []
+    },
+    "OLP-0465": {
+      "batch_id": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES"
+      ],
+      "scope": "د T/D/B/4/4r اضافي Box او Diamond قاعدو جدول، د شپږو مودالي نظامونو د لاسرسي خاصيتونه، د د S5 د ښودل شوي فورمول تړلے تابلو او شپږ تمرينونه.",
+      "allowed_residual_english": []
+    },
+    "OLP-0466": {
+      "batch_id": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES"
+      ],
+      "scope": "د T/D/B/4/4r قاعدو لس سموالي څانګې، د مخکښ تفسير، اړوند اړيکو ثبوتونه، ټګ شوي تمرينونه او د نظامونو سموالي پايله.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -16992,6 +17029,114 @@
       "passage": "remaining exercise",
       "reverse_paraphrase": "The tagged completeness of the proof remains an exercise where the source says so.",
       "finding": "د تمرين پاتې ساحه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "T rules",
+      "reverse_paraphrase": "Reflexivity supports T-Box and T-Diamond rules.",
+      "finding": "د انعکاسيت د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "D rules",
+      "reverse_paraphrase": "Seriality supports D-Box and D-Diamond rules.",
+      "finding": "د مسلسل‌والي د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "B rules",
+      "reverse_paraphrase": "Symmetry supports B-Box and B-Diamond rules.",
+      "finding": "د متناظرۍ د دواړو قاعدو نسبت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "4 rules",
+      "reverse_paraphrase": "Transitivity supports 4-Box and 4-Diamond rules with an already used successor prefix.",
+      "finding": "د تعدي او کارېدلي مخکښ شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "4r rules",
+      "reverse_paraphrase": "Euclideanness supports reverse 4r-Box and 4r-Diamond rules.",
+      "finding": "د اقليدسيتوب د سرچپه 4r لوری ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "systems table",
+      "reverse_paraphrase": "T, D, K4, B, S4 and S5 match their source frame properties and rules.",
+      "finding": "د ټولو شپږو قطارونو شرطونه او قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "S5 example",
+      "reverse_paraphrase": "The closed tableau proves Box A implies Box Diamond A in S5; the frozen source incorrectly calls it axiom 5, whose actual form begins with Diamond A.",
+      "finding": "OLNML-040 د ونې او قضیې فورمول سموي او د ۵ اکسيوم له نومه توپير څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0465",
+      "passage": "six exercises",
+      "reverse_paraphrase": "All six modal derivability exercises retain formulas and order.",
+      "finding": "د شپږو تمرينونو فورمولونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "rule soundness definition",
+      "reverse_paraphrase": "A rule preserves a satisfiable branch within the same model class.",
+      "finding": "د سموالي کميتي شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "T Box",
+      "reverse_paraphrase": "Reflexivity transfers Box B to B at the same prefix.",
+      "finding": "د T-Box شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "T Diamond",
+      "reverse_paraphrase": "Reflexivity transfers failure of Diamond B to failure of B.",
+      "finding": "د T-Diamond نفي ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "D pair",
+      "reverse_paraphrase": "Seriality provides a successor for both Box and false-Diamond consequences.",
+      "finding": "د D دواړو اړخونو وجودي شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "B pair",
+      "reverse_paraphrase": "Symmetry reverses the prefix accessibility edge in both B proofs.",
+      "finding": "د B دواړو اړخونو د غشي جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4 pair",
+      "reverse_paraphrase": "Transitivity propagates Box truth and Diamond failure to a used successor.",
+      "finding": "د کارېدلي مخکښ او تعدي شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4r Box",
+      "reverse_paraphrase": "Euclideanness propagates Box truth from sigma.n back to sigma.",
+      "finding": "د 4r-Box جهت او OLNML-039 د تابع استدلال سموي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "4r Diamond",
+      "reverse_paraphrase": "Euclideanness propagates false Diamond from sigma.n back to sigma.",
+      "finding": "OLNML-038 او OLNML-039 پايله او استدلال سموي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "tagged exercises",
+      "reverse_paraphrase": "Each of five propositions retains the tagged exercise when the source requests one.",
+      "finding": "د پنځو تمرينونو ټګونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0466",
+      "passage": "corollary",
+      "reverse_paraphrase": "The listed tableau systems are sound for their matching model classes.",
+      "finding": "د پايلې اړونده ټولګې ساتل شوي."
     }
   ]
 }

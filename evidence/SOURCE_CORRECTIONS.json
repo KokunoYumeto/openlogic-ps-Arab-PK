@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0464; B142 revises OLP-0459 without changing unit count",
-  "adopted_utc": "2026-09-28T14:17:15.371730+00:00",
+  "status": "adopted through OLP-0466; B143 S5 tableau label treatment registered",
+  "adopted_utc": "2026-09-28T14:54:06.353176+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -11841,6 +11841,177 @@
           "count": 2
         }
       ]
+    },
+    {
+      "id": "OLNML-038",
+      "unit_id": "OLP-0466",
+      "classification": "euclidean_4r_diamond_rule_conclusion_has_wrong_sign_and_modal_operator",
+      "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+      "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+      "source_locator": "content/normal-modal-logic/tableaux/more-soundness.tex:204",
+      "source_literal_line_1based": [
+        204
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/more-soundness.tex",
+      "target_line_1based": 183,
+      "disclosure_line_1based": 183,
+      "target_sha256": "77229246801523efcbc2398dda9195835e1af8088998adf2db7ebd930f84630f",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د 4r-Diamond په ثبوت کښې د نوې څانګې پايله د غلط T-Box پر ځای F-Diamond شوه.",
+      "reason": "د جدول قاعده، د مقدمې F-Diamond بڼه او د همدې ثبوت وروستۍ پايله ټول F-Diamond غواړي؛ منجمده سرچينه دلته T-Box ليکي.",
+      "formula_policy": "Only exact registered math exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{\\Box!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{\\Diamond!B}[\\sigma]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+      "audit_artifacts": [
+        "B143_SOURCE_AUDIT.json",
+        "B143_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/more-soundness.tex:204",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/more-soundness.tex:183",
+        "B143_DRAFT_QA_OLP-0466.json"
+      ],
+      "decision_timing": "contemporaneous B143 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-039",
+      "unit_id": "OLP-0466",
+      "classification": "euclidean_4r_witness_prefix_extension_must_be_inside_interpretation",
+      "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+      "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+      "source_locator": "content/normal-modal-logic/tableaux/more-soundness.tex:198,210",
+      "source_literal_line_1based": [
+        198,
+        210
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/more-soundness.tex",
+      "target_line_1based": 178,
+      "disclosure_line_1based": 178,
+      "target_sha256": "77229246801523efcbc2398dda9195835e1af8088998adf2db7ebd930f84630f",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د 4r-Box او 4r-Diamond په دواړو شاهدانو کښې د مخکښ غځونه د f د استدلال دننه راوړل شوه.",
+      "reason": "تفسير f د نړۍ مخکښ sigma.n اخلي؛ f(sigma).n د مدل د نړۍ پر پايلې د مخکښ ټکي لګوي او ناسم ډول لري.",
+      "formula_policy": "Only exact registered math exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{\\Box!B}[f(\\sigma).n]$",
+          "$\\mSat/{M}{\\Diamond!B}[f(\\sigma).n]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{\\Box!B}[f(\\sigma.n)]$",
+          "$\\mSat/{M}{\\Diamond!B}[f(\\sigma.n)]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+      "audit_artifacts": [
+        "B143_SOURCE_AUDIT.json",
+        "B143_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/more-soundness.tex:198,210",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/more-soundness.tex:178",
+        "B143_DRAFT_QA_OLP-0466.json"
+      ],
+      "decision_timing": "contemporaneous B143 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-040",
+      "unit_id": "OLP-0465",
+      "classification": "S5_tableau_example_mislabels_box_start_formula_as_axiom_5",
+      "source_path": "content/normal-modal-logic/tableaux/more-rules.tex",
+      "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+      "source_locator": "content/normal-modal-logic/tableaux/more-rules.tex:161-162",
+      "source_literal_line_1based": [
+        161,
+        162
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/more-rules.tex",
+      "target_line_1based": 162,
+      "disclosure_line_1based": 163,
+      "target_sha256": "2e58db54e9f4d6352be60c15966d47a8ba14c744a57c2b7954fcac5f00e68bfb",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د S5 د تړلي تابلو دعوه د ونې له ضرورت‌پيل فورمول سره سمه شوه؛ د منجمدې سرچينې د Ax5 ناسم نوم او د اصلي امکان‌پيل اکسيوم بڼه څنګ ته څرګنده شوه.",
+      "reason": "د سرچينې ونه له ناسم Box-پيل شرط څخه د Box A او د Box Diamond A څانګې اخلي؛ د Ax5 اصلي فورمول Diamond A څخه Box Diamond A ته دے، لکه د سرچينې schemas.tex او simple-S5.tex ښيي.",
+      "formula_policy": "Only the two exact source and two target math spans are excepted; tableau tree, identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Log{S5}\\Proves\\Ax{5}$",
+          "$\\Box!A\\lif\\Box\\Diamond!A$"
+        ],
+        "target_only": [
+          "$\\Log{S5}\\Proves\\Box!A\\lif\\Box\\Diamond!A$",
+          "$\\Diamond!A\\lif\\Box\\Diamond!A$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+      "audit_artifacts": [
+        "B143_SOURCE_AUDIT.json",
+        "B143_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/more-rules.tex:161-162",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/more-rules.tex:163",
+        "B143_DRAFT_QA_OLP-0465.json"
+      ],
+      "decision_timing": "contemporaneous B143 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -11930,7 +12101,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS"
   ],
   "source_authorities": [
     {
