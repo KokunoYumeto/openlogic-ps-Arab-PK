@@ -3318,3 +3318,102 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د S5 د تړلي تابلو دعوه د ونې له ضرورت‌پيل فورمول سره سمه شوه؛ د منجمدې سرچينې د Ax5 ناسم نوم او د اصلي امکان‌پيل اکسيوم بڼه څنګ ته څرګنده شوه.
 - وجه: د سرچينې ونه له ناسم Box-پيل شرط څخه د Box A او د Box Diamond A څانګې اخلي؛ د Ax5 اصلي فورمول Diamond A څخه Box Diamond A ته دے، لکه د سرچينې schemas.tex او simple-S5.tex ښيي.
 - د تابلو ونه عين ده؛ يوازې د ادعا عين فورمولي بڼه سمه او په پښتو کښې څنګ ته څرګنده شوې، منجمده سرچينه نۀ ده بدله شوې۔
+
+## OLNML-041
+
+- واحد: OLP-0468۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45۔
+- چلند: د کارېدلي مخکښ شرط يوازې پلي کېدونکو غځېدلو مخکښونو پورې محدود شو.
+- وجه: د K مودالي قاعده د څانګې له هر مخکښ سره نه، بلکې له هر پلي کېدونکي σ.n سره تړلې ده.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-042
+
+- واحد: OLP-0468۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45۔
+- چلند: د قضيېيزې بېلګې مخکښ او د T-disjunction د لومړۍ پايلې T نښه راوړل شوه.
+- وجه: د بشپړې څانګې د مثال پايلې بايد د T-conjunction او T-disjunction له رسمي قاعدو سره برابرې وي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-043
+
+- واحد: OLP-0468۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45۔
+- چلند: د څلورو مودالي مقدماتو !A دنننے فورمول او د پايلو T/F !A بڼې راوړل شوې.
+- وجه: د K قاعدې د Box/Diamond له مقدمې څخه د دننني فورمول په نښه لرونکې پايله رسوي؛ يوازې موډل آپرېټر پايله نۀ ده.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-044
+
+- واحد: OLP-0468۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45۔
+- چلند: د ثبوت په پای کښې د هرې څانګې «تړلې» د دعوې له «بشپړې» سره سمه شوه.
+- وجه: قضيه د بشپړو څانګو وجود ثابتوي؛ ټولې څانګې تړلې کېدل د دې پايلې خلاف دي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-045
+
+- واحد: OLP-0468۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex؛ SHA-256 cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45۔
+- چلند: د استقرا په درېو موردونو کښې د دويم غړي C د تکراري B پر ځاے راوړل شو.
+- وجه: په B∧C، B∨C او B→C موردونو کښې دويمه استقرايي قضيه پر C ده.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-046
+
+- واحد: OLP-0469۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e۔
+- چلند: د ناستلزام په دعوه کښې د اصلي !A فورمول وساتل شو.
+- وجه: د هماغه جملې لومړۍ دعوه او ورپسې ضدمدل دواړه د !A په باب دي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-047
+
+- واحد: OLP-0469۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e۔
+- چلند: د ضدمدل د لټون په دواړو ځايونو کښې «بشپړه» څانګه وبلل شوه.
+- وجه: ضدمدل له پرانيستې بشپړې څانګې څخه جوړېږي؛ تړلې څانګه ضدمدل نه ورکوي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-048
+
+- واحد: OLP-0469۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e۔
+- چلند: د منځنۍ ونې د درېيمې کرښې F-Diamond او د هغې F قاعده په نثر کښې سمه شوه.
+- وجه: د ونې درېيمه کرښه F-Diamond ده او د کارېدلي مخکښ لپاره F-Diamond قاعده پلې کېږي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-049
+
+- واحد: OLP-0469۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e۔
+- چلند: د منځنۍ ونې لومړۍ کرښې استلزام د لومړۍ او وروستۍ ونې له اصلي استلزام سره برابر شو.
+- وجه: د منځنۍ ونې نورې کرښې د (◇p∧◇q)→◇(p∧q) د نفي تابع دي؛ سرچپه پيل ورسره نه جوړېږي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-050
+
+- واحد: OLP-0469۔
+- منجمده سرچينه: content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd۔
+- پښتو متن: ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex؛ SHA-256 b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e۔
+- چلند: د q شاهد ۱٫۲ شو.
+- وجه: د وروستۍ ونې او انځور q شاهد په ۱٫۲ نړۍ کښې ښيي.
+- يوازې عين ثبت شوې رسمي استثنا پلې شوې؛ پښتو څرګندونه څنګ ته ده او منجمده سرچينه نۀ ده بدله شوې۔

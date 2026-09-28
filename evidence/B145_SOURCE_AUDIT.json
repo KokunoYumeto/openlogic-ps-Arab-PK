@@ -1,0 +1,161 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T15:46:10.556633+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+  "batch_id": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0468",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_bytes": 10148,
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "paired_blocks": 25,
+      "source_correction_ids": [
+        "OLNML-041",
+        "OLNML-042",
+        "OLNML-043",
+        "OLNML-044",
+        "OLNML-045"
+      ]
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_bytes": 12874,
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLNML-046",
+        "OLNML-047",
+        "OLNML-048",
+        "OLNML-049",
+        "OLNML-050"
+      ]
+    }
+  ],
+  "notes_path": "work/B145_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "38174af2ae9e665f92e1dd6618db5a13d84c7622de18326b5b2e97e0b3d4b76c",
+  "consultation_path": "work/B145_CANON_CONSULTATION.md",
+  "consultation_sha256": "e28dcdfc02067e97181ff8efbfc87e8cca554ecd6383c17a970addf1d5c8c3fa",
+  "staging_checkpoint_sha256": "1a6e0e31b22fe67ce788528867f7c997c24812b3ef9246c0083f598669edd05c",
+  "staging_qa_sha256": {
+    "OLP-0468": "91c94ed333f671b02649bb58469484c5299284e0680740dc484adb294204dd48",
+    "OLP-0469": "178f2fe27fc31113264952dfa1fac37c04477e89025c1c02343e2345743025f8"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "registered visual consultation; Pakistani source and Afghan comparator roles checked",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0468",
+      "source_correction_id": "OLNML-041",
+      "finding": "د K مودالي قاعده د څانګې له هر مخکښ سره نه، بلکې له هر پلي کېدونکي σ.n سره تړلې ده."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "source_correction_id": "OLNML-042",
+      "finding": "د بشپړې څانګې د مثال پايلې بايد د T-conjunction او T-disjunction له رسمي قاعدو سره برابرې وي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "source_correction_id": "OLNML-043",
+      "finding": "د K قاعدې د Box/Diamond له مقدمې څخه د دننني فورمول په نښه لرونکې پايله رسوي؛ يوازې موډل آپرېټر پايله نۀ ده."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "source_correction_id": "OLNML-044",
+      "finding": "قضيه د بشپړو څانګو وجود ثابتوي؛ ټولې څانګې تړلې کېدل د دې پايلې خلاف دي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "source_correction_id": "OLNML-045",
+      "finding": "په B∧C، B∨C او B→C موردونو کښې دويمه استقرايي قضيه پر C ده."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_correction_id": "OLNML-046",
+      "finding": "د هماغه جملې لومړۍ دعوه او ورپسې ضدمدل دواړه د !A په باب دي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_correction_id": "OLNML-047",
+      "finding": "ضدمدل له پرانيستې بشپړې څانګې څخه جوړېږي؛ تړلې څانګه ضدمدل نه ورکوي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_correction_id": "OLNML-048",
+      "finding": "د ونې درېيمه کرښه F-Diamond ده او د کارېدلي مخکښ لپاره F-Diamond قاعده پلې کېږي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_correction_id": "OLNML-049",
+      "finding": "د منځنۍ ونې نورې کرښې د (◇p∧◇q)→◇(p∧q) د نفي تابع دي؛ سرچپه پيل ورسره نه جوړېږي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_correction_id": "OLNML-050",
+      "finding": "د وروستۍ ونې او انځور q شاهد په ۱٫۲ نړۍ کښې ښيي."
+    }
+  ],
+  "formula_policy": "34 paired blocks; exact registered math substitutions and one tableau line; six trees otherwise unchanged, both TikZ figures unchanged; identifiers, tags, environments and tokens exact.",
+  "unresolved": "د عينې پاکستانۍ مودالي تابلو اصطلاح لنډمهاله ده؛ انساني تصويب يا نوې چاپي پاڼه‌کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "952b487356e2fb8e8cfd8613c9cecc0d7ead0d3404f7398e294f218574918784",
+  "next_executable_action": "Run independent cumulative corpus QA and dual canonical decision replay for OLP-0468–0469; then translate OLP-0470."
+}

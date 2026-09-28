@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 467,
-    "structural_pass": 467,
+    "draft_units": 469,
+    "structural_pass": 469,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B144-MODAL-TABLEAUX-SIMPLE-S5",
+  "batch": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15225,6 +15225,125 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0468",
+      "path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "translation_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-041",
+        "OLNML-042",
+        "OLNML-043",
+        "OLNML-044",
+        "OLNML-045"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\sFmla{\\True}{!B\\land!C}$",
+          "$\\sFmla{\\False}{!B}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma.n]$",
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!B\\land!C}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Box!A}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond!A}[\\sigma]$",
+          "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Box!A}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond!A}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0469",
+      "path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "translation_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "unchanged_tableau_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-046",
+        "OLNML-047",
+        "OLNML-048",
+        "OLNML-049",
+        "OLNML-050"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Entails/A$",
+          "$\\TRule{\\True}{\\Diamond}$",
+          "$\\sFmla{\\True}{q}[1.1]$",
+          "$\\sFmla{\\True}{\\Diamond(p\\landq)}[1]$"
+        ],
+        "target_only": [
+          "$\\Entails/!A$",
+          "$!A$",
+          "$!A$",
+          "$A$",
+          "$\\TRule{\\False}{\\Diamond}$",
+          "$\\sFmla{\\False}{\\Diamond(p\\landq)}[1]$",
+          "$\\sFmla{\\True}{q}[1.2]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -22589,6 +22708,90 @@
       "passage": "closure witness",
       "reverse_paraphrase": "The false Diamond at world 2 uses world 3, where A is both true and false.",
       "finding": "د ونې د ۲ او ۳ مخکښونه او وروستے تړل عين دي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "completeness direction",
+      "reverse_paraphrase": "If no closed tableau proves Gamma entails A, the exhaustive construction yields a countermodel.",
+      "finding": "د بشپړتيا لوری او د ضدمدل جوړښت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "complete branch clauses",
+      "reverse_paraphrase": "A complete branch contains relevant outcomes of every applicable propositional and modal rule.",
+      "finding": "د قاعدو څلور شرطونه او د کارېدلي مخکښ محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "example corrections",
+      "reverse_paraphrase": "The conjunctive, disjunctive and four modal examples have their correct signed conclusions.",
+      "finding": "د OLNML-042–043 نښې او دننني فورمولونه څرګند دي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "finite construction",
+      "reverse_paraphrase": "The systematic finite construction makes every resulting branch complete.",
+      "finding": "د بشپړې او تړلې څانګې توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "branch model",
+      "reverse_paraphrase": "Used prefixes are worlds; accessibility and valuation follow the branch.",
+      "finding": "د څانګې د مدل درې برخې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "truth lemma",
+      "reverse_paraphrase": "Truth at each used prefix follows by induction on formula complexity.",
+      "finding": "د استقرا دوه‌غړي موردونه او C سمون ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "completeness corollaries",
+      "reverse_paraphrase": "Semantic consequence implies tableau derivability; validity implies theoremhood.",
+      "finding": "د دواړو پايلو لوری ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "decision procedure",
+      "reverse_paraphrase": "The finite systematic tableau search either closes or yields a complete open branch.",
+      "finding": "د پرېکړې کړنلارې دوه پايلې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "countermodel construction",
+      "reverse_paraphrase": "The complete open branch supplies worlds, accessibility and valuation for a countermodel.",
+      "finding": "د ضدمدل د جوړولو درې برخې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Box counterexample",
+      "reverse_paraphrase": "Box(p or q) need not imply Box p or Box q.",
+      "finding": "د لومړۍ بېلګې دعوه، ونې او شکل عين دي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Box valuations",
+      "reverse_paraphrase": "The open branch gives p at 1.2 and q at 1.1.",
+      "finding": "د نړۍو ارزښتونه له ونې او شکل سره عين دي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Diamond counterexample",
+      "reverse_paraphrase": "Diamond p and Diamond q need not imply Diamond(p and q).",
+      "finding": "د دويمې بېلګې استلزام او F-Diamond قاعده سمه شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Diamond witness",
+      "reverse_paraphrase": "The q witness is at 1.2, distinct from p at 1.1.",
+      "finding": "د q شاهد له ونې او شکل سره ۱٫۲ ته سم شو."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "diagram fidelity",
+      "reverse_paraphrase": "Both countermodel figures preserve all worlds, edges and valuations.",
+      "finding": "دواړه TikZ انځورونه بايټ په بايټ عين دي."
     }
   ],
   "builds": [

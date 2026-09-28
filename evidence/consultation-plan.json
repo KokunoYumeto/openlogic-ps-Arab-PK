@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B144-MODAL-TABLEAUX-SIMPLE-S5",
-  "status": "OLP-0467 source-reviewed and staged; 9 paired blocks, 6 semantic samples; cumulative QA pending",
+  "batch_id": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+  "status": "OLP-0468–0469 source-reviewed and staged; 34 paired blocks, 14 semantic samples, ten disclosed source treatments; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9826,6 +9826,42 @@
       ],
       "scope": "د عمومي مدلونو په نسبت S5، ساده مخکښونه، څلور مودالي قاعدې او د پنځم اکسيوم تړلے تابلو.",
       "allowed_residual_english": []
+    },
+    "OLP-0468": {
+      "batch_id": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "د K تابلو بشپړتيا، بشپړې څانګې، د څانګې مدل، د رښتيا لممه، د استقرا موردونه او دوه پايلې.",
+      "allowed_residual_english": []
+    },
+    "OLP-0469": {
+      "batch_id": "PS-B145-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-MODAL-FRAME",
+        "TERM-PROP-SEMANTICS"
+      ],
+      "scope": "له بشپړې پرانيستې K تابلو څخه پرېکړې کړنلاره او دوه صريح ضدمدلونه، شپږ ونې او دوه انځورونه.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -17190,6 +17226,90 @@
       "passage": "closure witness",
       "reverse_paraphrase": "The false Diamond at world 2 uses world 3, where A is both true and false.",
       "finding": "د ونې د ۲ او ۳ مخکښونه او وروستے تړل عين دي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "completeness direction",
+      "reverse_paraphrase": "If no closed tableau proves Gamma entails A, the exhaustive construction yields a countermodel.",
+      "finding": "د بشپړتيا لوری او د ضدمدل جوړښت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "complete branch clauses",
+      "reverse_paraphrase": "A complete branch contains relevant outcomes of every applicable propositional and modal rule.",
+      "finding": "د قاعدو څلور شرطونه او د کارېدلي مخکښ محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "example corrections",
+      "reverse_paraphrase": "The conjunctive, disjunctive and four modal examples have their correct signed conclusions.",
+      "finding": "د OLNML-042–043 نښې او دننني فورمولونه څرګند دي."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "finite construction",
+      "reverse_paraphrase": "The systematic finite construction makes every resulting branch complete.",
+      "finding": "د بشپړې او تړلې څانګې توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "branch model",
+      "reverse_paraphrase": "Used prefixes are worlds; accessibility and valuation follow the branch.",
+      "finding": "د څانګې د مدل درې برخې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "truth lemma",
+      "reverse_paraphrase": "Truth at each used prefix follows by induction on formula complexity.",
+      "finding": "د استقرا دوه‌غړي موردونه او C سمون ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0468",
+      "passage": "completeness corollaries",
+      "reverse_paraphrase": "Semantic consequence implies tableau derivability; validity implies theoremhood.",
+      "finding": "د دواړو پايلو لوری ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "decision procedure",
+      "reverse_paraphrase": "The finite systematic tableau search either closes or yields a complete open branch.",
+      "finding": "د پرېکړې کړنلارې دوه پايلې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "countermodel construction",
+      "reverse_paraphrase": "The complete open branch supplies worlds, accessibility and valuation for a countermodel.",
+      "finding": "د ضدمدل د جوړولو درې برخې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Box counterexample",
+      "reverse_paraphrase": "Box(p or q) need not imply Box p or Box q.",
+      "finding": "د لومړۍ بېلګې دعوه، ونې او شکل عين دي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Box valuations",
+      "reverse_paraphrase": "The open branch gives p at 1.2 and q at 1.1.",
+      "finding": "د نړۍو ارزښتونه له ونې او شکل سره عين دي."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Diamond counterexample",
+      "reverse_paraphrase": "Diamond p and Diamond q need not imply Diamond(p and q).",
+      "finding": "د دويمې بېلګې استلزام او F-Diamond قاعده سمه شوې."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "Diamond witness",
+      "reverse_paraphrase": "The q witness is at 1.2, distinct from p at 1.1.",
+      "finding": "د q شاهد له ونې او شکل سره ۱٫۲ ته سم شو."
+    },
+    {
+      "unit_id": "OLP-0469",
+      "passage": "diagram fidelity",
+      "reverse_paraphrase": "Both countermodel figures preserve all worlds, edges and valuations.",
+      "finding": "دواړه TikZ انځورونه بايټ په بايټ عين دي."
     }
   ]
 }

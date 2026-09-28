@@ -1,0 +1,51 @@
+{
+  "schema": "ps-b145-tableaux-completeness-countermodels-staging/1",
+  "utc": "2026-09-28T15:46:10.556633+00:00",
+  "status": "two translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 467,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0468",
+    "OLP-0469"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0468",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "paired_blocks": 25,
+      "focused_qa_sha256": "91c94ed333f671b02649bb58469484c5299284e0680740dc484adb294204dd48",
+      "source_treatment_ids": [
+        "OLNML-041",
+        "OLNML-042",
+        "OLNML-043",
+        "OLNML-044",
+        "OLNML-045"
+      ]
+    },
+    {
+      "unit_id": "OLP-0469",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "paired_blocks": 9,
+      "focused_qa_sha256": "178f2fe27fc31113264952dfa1fac37c04477e89025c1c02343e2345743025f8",
+      "source_treatment_ids": [
+        "OLNML-046",
+        "OLNML-047",
+        "OLNML-048",
+        "OLNML-049",
+        "OLNML-050"
+      ]
+    }
+  ],
+  "notes_path": "work/B145_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "38174af2ae9e665f92e1dd6618db5a13d84c7622de18326b5b2e97e0b3d4b76c",
+  "consultation_path": "work/B145_CANON_CONSULTATION.md",
+  "consultation_sha256": "e28dcdfc02067e97181ff8efbfc87e8cca554ecd6383c17a970addf1d5c8c3fa",
+  "frozen_source_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Run independent cumulative corpus QA and dual canonical decision replay for OLP-0468–0469; then translate OLP-0470."
+}

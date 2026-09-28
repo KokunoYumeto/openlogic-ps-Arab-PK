@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0466; B143 S5 tableau label treatment registered",
-  "adopted_utc": "2026-09-28T14:54:06.353176+00:00",
+  "status": "adopted through OLP-0469; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T15:46:10.556633+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12012,6 +12012,579 @@
       ],
       "decision_timing": "contemporaneous B143 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-041",
+      "unit_id": "OLP-0468",
+      "classification": "complete_branch_used_prefix_scope",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "source_locator": "content/normal-modal-logic/tableaux/completeness.tex:40,44",
+      "source_literal_line_1based": [
+        40,
+        44
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex",
+      "target_line_1based": 45,
+      "disclosure_line_1based": 45,
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د کارېدلي مخکښ شرط يوازې پلي کېدونکو غځېدلو مخکښونو پورې محدود شو.",
+      "reason": "د K مودالي قاعده د څانګې له هر مخکښ سره نه، بلکې له هر پلي کېدونکي σ.n سره تړلې ده.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/completeness.tex:40,44",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex:45",
+        "B145_DRAFT_QA_OLP-0468.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-042",
+      "unit_id": "OLP-0468",
+      "classification": "propositional_example_prefix_and_truth_sign",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "source_locator": "content/normal-modal-logic/tableaux/completeness.tex:50,53",
+      "source_literal_line_1based": [
+        50,
+        53
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex",
+      "target_line_1based": 56,
+      "disclosure_line_1based": 56,
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د قضيېيزې بېلګې مخکښ او د T-disjunction د لومړۍ پايلې T نښه راوړل شوه.",
+      "reason": "د بشپړې څانګې د مثال پايلې بايد د T-conjunction او T-disjunction له رسمي قاعدو سره برابرې وي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{!B\\land!C}$",
+          "$\\sFmla{\\False}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!B\\land!C}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/completeness.tex:50,53",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex:56",
+        "B145_DRAFT_QA_OLP-0468.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-043",
+      "unit_id": "OLP-0468",
+      "classification": "modal_example_missing_operand_and_wrong_conclusions",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "source_locator": "content/normal-modal-logic/tableaux/completeness.tex:54,60",
+      "source_literal_line_1based": [
+        54,
+        60
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex",
+      "target_line_1based": 68,
+      "disclosure_line_1based": 68,
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د څلورو مودالي مقدماتو !A دنننے فورمول او د پايلو T/F !A بڼې راوړل شوې.",
+      "reason": "د K قاعدې د Box/Diamond له مقدمې څخه د دننني فورمول په نښه لرونکې پايله رسوي؛ يوازې موډل آپرېټر پايله نۀ ده.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\False}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Diamond}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Box}[\\sigma.n]$",
+          "$\\sFmla{\\False}{\\Diamond}[\\sigma.n]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{\\Box!A}[\\sigma]$",
+          "$\\sFmla{\\True}{\\Diamond!A}[\\sigma]$",
+          "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\False}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.n]$",
+          "$\\sFmla{\\True}{\\Box!A}[\\sigma]$",
+          "$\\sFmla{\\False}{\\Diamond!A}[\\sigma]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/completeness.tex:54,60",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex:68",
+        "B145_DRAFT_QA_OLP-0468.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-044",
+      "unit_id": "OLP-0468",
+      "classification": "completeness_proof_closed_should_be_complete",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "source_locator": "content/normal-modal-logic/tableaux/completeness.tex:80",
+      "source_literal_line_1based": [
+        80
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex",
+      "target_line_1based": 89,
+      "disclosure_line_1based": 89,
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ثبوت په پای کښې د هرې څانګې «تړلې» د دعوې له «بشپړې» سره سمه شوه.",
+      "reason": "قضيه د بشپړو څانګو وجود ثابتوي؛ ټولې څانګې تړلې کېدل د دې پايلې خلاف دي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/completeness.tex:80",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex:89",
+        "B145_DRAFT_QA_OLP-0468.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-045",
+      "unit_id": "OLP-0468",
+      "classification": "induction_second_conjunct_repeats_B_instead_of_C",
+      "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+      "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+      "source_locator": "content/normal-modal-logic/tableaux/completeness.tex:146,162,178",
+      "source_literal_line_1based": [
+        146,
+        162,
+        178
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex",
+      "target_line_1based": 159,
+      "disclosure_line_1based": 159,
+      "target_sha256": "cd58b07bfcf1682e3630fcedd5a8b6178b7956d7925c85bcd4ac4080674efc45",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د استقرا په درېو موردونو کښې د دويم غړي C د تکراري B پر ځاے راوړل شو.",
+      "reason": "په B∧C، B∨C او B→C موردونو کښې دويمه استقرايي قضيه پر C ده.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$",
+          "$\\mSat/{M(\\Delta)}{!C}[\\sigma]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/completeness.tex:146,162,178",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/completeness.tex:159",
+        "B145_DRAFT_QA_OLP-0468.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-046",
+      "unit_id": "OLP-0469",
+      "classification": "non_entailment_formula_missing_marked_A",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "source_locator": "content/normal-modal-logic/tableaux/countermodels.tex:16",
+      "source_literal_line_1based": [
+        16
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex",
+      "target_line_1based": 17,
+      "disclosure_line_1based": 17,
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ناستلزام په دعوه کښې د اصلي !A فورمول وساتل شو.",
+      "reason": "د هماغه جملې لومړۍ دعوه او ورپسې ضدمدل دواړه د !A په باب دي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Entails/A$"
+        ],
+        "target_only": [
+          "$\\Entails/!A$",
+          "$!A$",
+          "$!A$",
+          "$A$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/countermodels.tex:16",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex:17",
+        "B145_DRAFT_QA_OLP-0469.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-047",
+      "unit_id": "OLP-0469",
+      "classification": "countermodel_search_complete_not_closed",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "source_locator": "content/normal-modal-logic/tableaux/countermodels.tex:76,206",
+      "source_literal_line_1based": [
+        76,
+        206
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex",
+      "target_line_1based": 83,
+      "disclosure_line_1based": 83,
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ضدمدل د لټون په دواړو ځايونو کښې «بشپړه» څانګه وبلل شوه.",
+      "reason": "ضدمدل له پرانيستې بشپړې څانګې څخه جوړېږي؛ تړلې څانګه ضدمدل نه ورکوي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/countermodels.tex:76,206",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex:83",
+        "B145_DRAFT_QA_OLP-0469.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-048",
+      "unit_id": "OLP-0469",
+      "classification": "middle_example_false_diamond_narrative_sign",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "source_locator": "content/normal-modal-logic/tableaux/countermodels.tex:205,206",
+      "source_literal_line_1based": [
+        205,
+        206
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex",
+      "target_line_1based": 218,
+      "disclosure_line_1based": 218,
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د منځنۍ ونې د درېيمې کرښې F-Diamond او د هغې F قاعده په نثر کښې سمه شوه.",
+      "reason": "د ونې درېيمه کرښه F-Diamond ده او د کارېدلي مخکښ لپاره F-Diamond قاعده پلې کېږي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\TRule{\\True}{\\Diamond}$",
+          "$\\sFmla{\\True}{\\Diamond(p\\landq)}[1]$"
+        ],
+        "target_only": [
+          "$\\TRule{\\False}{\\Diamond}$",
+          "$\\sFmla{\\False}{\\Diamond(p\\landq)}[1]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/countermodels.tex:205,206",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex:218",
+        "B145_DRAFT_QA_OLP-0469.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-049",
+      "unit_id": "OLP-0469",
+      "classification": "middle_tableau_reverses_implication",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "source_locator": "content/normal-modal-logic/tableaux/countermodels.tex:209",
+      "source_literal_line_1based": [
+        209
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex",
+      "target_line_1based": 222,
+      "disclosure_line_1based": 222,
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د منځنۍ ونې لومړۍ کرښې استلزام د لومړۍ او وروستۍ ونې له اصلي استلزام سره برابر شو.",
+      "reason": "د منځنۍ ونې نورې کرښې د (◇p∧◇q)→◇(p∧q) د نفي تابع دي؛ سرچپه پيل ورسره نه جوړېږي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/countermodels.tex:209",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex:222",
+        "B145_DRAFT_QA_OLP-0469.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "qa_tableau_replacements": [
+        {
+          "source": "\\pFmla{\\False}{\\Diamond(p \\land q) \\lif (\\Diamond p \\land \\Diamond q)}{1}",
+          "target": "\\pFmla{\\False}{(\\Diamond p \\land \\Diamond q) \\lif \\Diamond(p \\land q)}{1}",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "OLNML-050",
+      "unit_id": "OLP-0469",
+      "classification": "q_witness_prefix_one_point_two",
+      "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+      "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+      "source_locator": "content/normal-modal-logic/tableaux/countermodels.tex:285",
+      "source_literal_line_1based": [
+        285
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex",
+      "target_line_1based": 304,
+      "disclosure_line_1based": 304,
+      "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د q شاهد ۱٫۲ شو.",
+      "reason": "د وروستۍ ونې او انځور q شاهد په ۱٫۲ نړۍ کښې ښيي.",
+      "formula_policy": "Only exact registered math and tableau exceptions are allowed; identifiers, structural macros, tags and term tokens remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{q}[1.1]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{q}[1.2]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
+      "audit_artifacts": [
+        "B145_SOURCE_AUDIT.json",
+        "B145_SOURCE_PREAUDIT_NOTES.md",
+        "content/normal-modal-logic/tableaux/countermodels.tex:285",
+        "ps-Arab-PK/content/normal-modal-logic/tableaux/countermodels.tex:304",
+        "B145_DRAFT_QA_OLP-0469.json"
+      ],
+      "decision_timing": "contemporaneous B145 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -12102,7 +12675,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS"
   ],
   "source_authorities": [
     {

@@ -1,0 +1,50 @@
+{
+  "schema": "ps-b145-tableau-countermodels-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0469",
+  "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+  "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+  "target_sha256": "b4158e52e3572184c6ea77a6dc138fb7fede247999a5f7f5e087e5e7de6c640e",
+  "source_blocks": 9,
+  "target_blocks": 9,
+  "source_math_spans": 51,
+  "target_math_spans": 54,
+  "expected_source_only_math": [
+    "$\\Entails/A$",
+    "$\\TRule{\\True}{\\Diamond}$",
+    "$\\sFmla{\\True}{q}[1.1]$",
+    "$\\sFmla{\\True}{\\Diamond(p\\landq)}[1]$"
+  ],
+  "expected_target_only_math": [
+    "$\\Entails/!A$",
+    "$!A$",
+    "$!A$",
+    "$A$",
+    "$\\TRule{\\False}{\\Diamond}$",
+    "$\\sFmla{\\False}{\\Diamond(p\\landq)}[1]$",
+    "$\\sFmla{\\True}{q}[1.2]$"
+  ],
+  "qa_tableau_replacement": {
+    "source": "\\pFmla{\\False}{\\Diamond(p \\land q) \\lif (\\Diamond p \\land \\Diamond q)}{1}",
+    "target": "\\pFmla{\\False}{(\\Diamond p \\land \\Diamond q) \\lif \\Diamond(p \\land q)}{1}",
+    "count": 1
+  },
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "exact_disclosed_math_differences": true,
+    "example_tableaux_except_one_correction": true,
+    "model_figures_unchanged": true,
+    "source_comments": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "no_placeholders": true,
+    "adjacent_disclosures": true
+  },
+  "all_checks_pass": true
+}

@@ -1,0 +1,248 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cpl}
+
+\olsection{د \Log{K} بشپړتيا}
+
+\begin{explain}
+  د !!{tableau}s د طريقې د بشپړتيا د ښودلو لپاره بايد ثابته کړو
+  چې که د $\Gamma \Proves !A$ د ښودلو لپاره تړلے !!{tableau}
+  نۀ وي، نو $\Gamma \Entails/ !A$ وي، يعنې ضدمدل موجود وي۔
+  خو «تړلے !!{tableau} نۀ شته» معنا دا ده چې د هغه د جوړولو
+  هره ممکنه هڅه په تړلو کښې پاتې راځي۔ مهمه خبره دا ده چې که
+  هره هڅه داسې پاتې راځي، نو يوه ټاکلې، \emph{منظمه او هر اړخيزه}
+  طريقه هم څانګې نۀ شي تړلے۔ او که تړلے !!{tableau} موجود وي،
+  همدغه منظمه او هر اړخيزه طريقه به يې وتړي۔ د دې يوې تابلو
+  پرانيستې څانګې به د ضدمدل د تعريف لپاره ټول اړين معلومات ولري۔
+  د داسې څانګې ضدمدل هغه ټول مخکښونه چې پر څانګه کارېدلي،
+  د نړۍو په توګه اخلي؛ !!a{propositional
+    variable}~$p$ په
+  $\sigma$ کښې هله او يوازې هله رښتينے وي چې
+  $\sFmla{\True}{p}[\sigma]$ په څانګه کښې راغلے وي۔
+\end{explain}
+
+\begin{defn}
+  د !!a{tableau} يوه څانګه هغه مهال بشپړه بولو چې هرکله پکښې
+  داسې مخکښ‌لرونکے !!{formula}~$\sFmla{S}{!A}[\sigma]$ وي چې
+  قاعده پرې پلې کېدے شي، نو څانګه دا هم ولري:
+  \begin{enumerate}
+    \item د قضيېيزو يو-پر-بل اېښودونکو قاعدو په حالت کښې د
+      قاعدې ټول اړوند پايلې، يعنې مخکښ‌لرونکي !!{formula}s؛
+    \item د قضيېيزو څانګې وېشونکو قاعدو په حالت کښې له
+      اړوندو پايلنو !!{formula}s څخه لږ تر لږه يو؛
+    \item د هغو مودالي قاعدو په حالت کښې چې نوے مخکښ غواړي،
+      لږ تر لږه يوه ممکنه پايله؛
+    \item د هغو مودالي قاعدو په حالت کښې چې کارېدلے مخکښ
+      غواړي، د څانګې د هر پلي کېدونکي کارېدلي مخکښ لپاره
+      اړونده پايله۔
+  \end{enumerate}
+  په منجمده سرچينه کښې وروستۍ ماده «هر راغلے مخکښ» وايي؛
+  د قاعدې له مخې يوازې د مخکښ په غځېدلې بڼه پلي کېدونکي
+  کارېدلي مخکښونه مراد دي۔
+\end{defn}
+
+\begin{explain}
+د بېلګې په توګه، که بشپړه څانګه $\sFmla{\True}{!B
+  \land !C}[\sigma]$ ولري، نو $\sFmla{\True}{!B}[\sigma]$
+او $\sFmla{\True}{!C}[\sigma]$ هم لري۔ که
+$\sFmla{\True}{!B \lor !C}[\sigma]$ ولري، نو لږ تر لږه
+$\sFmla{\True}{!B}[\sigma]$ يا $\sFmla{\True}{!C}[\sigma]$
+لري۔ په منجمده سرچينه کښې د لومړۍ مقدمې مخکښ پاتې شوے
+او د دويمې بېلګې لومړۍ پايله په تېروتنه د B د ناسموالي
+نښه ده؛ دلته د قضيېيزو قاعدو رښتينې پايلې ښودل شوې دي۔
+که څانګه \iftag{prvBox}
+{$\sFmla{\False}{\Box !A}[\sigma]$} {$\sFmla{\True}{\Diamond !A}[\sigma]$}
+ولري، نو د لږ تر لږه يوه~$n$ لپاره
+\iftag{prvBox} {$\sFmla{\False}{!A}[\sigma.n]$}
+{$\sFmla{\True}{!A}[\sigma.n]$} هم لري۔ او که څانګه
+\iftag{prvBox} {$\sFmla{\True}{\Box !A}[\sigma]$}
+{$\sFmla{\False}{\Diamond !A}[\sigma]$} ولري، نو د هر هغه~$n$
+لپاره چې $\sigma.n$ په څانګه کښې کارېدلے وي،
+\iftag{prvBox} {$\sFmla{\True}{!A}[\sigma.n]$}
+{$\sFmla{\False}{!A}[\sigma.n]$} هم لري۔ په منجمده سرچينه
+کښې د دې څلورو مقدماتو او څلورو پايلو دنننے فارمول
+غورځېدلے؛ دلته د مخکنيو مودالي قاعدو سره سم راوړل شوے دے۔
+\end{explain}
+
+\begin{prop}\ollabel{prop:complete-tableau}
+  هر متناهي~$\Gamma$ داسې !!a{tableau} لري چې هره څانګه ئې بشپړه وي۔
+\end{prop}
+
+\begin{proof}
+  د~$\Gamma$ د !!a{tableau} يوه پرانيستې څانګه واخلئ۔ پر دې
+  څانګه يوازې متناهي ډېر داسې مخکښ‌لرونکي !!{formula}s دي چې
+  قاعده پرې پلې کېدے شي۔ په يوه ټاکلي ترتيب (مثلاً له پاسه
+  تر ښکته) د دغو !!{formula}s له هر يوه لپاره چې پورته (۱)–(۴) شرطونه
+  يې لا نۀ وي پوره کړي، پلې کېدونکې قاعدې وکاروئ او څانګه
+  وغځوئ۔ کله کله څانګه وېشل کېږي؛ د هرې نوې څانګې په سر کښې
+  پر پاتې مخکښ‌لرونکو !!{formula}s همدغه قاعدې پلې کړئ۔
+  ځکه چې پر څانګه د مخکښ‌لرونکو !!{formula}s او کارېدلو
+  مخکښونو شمېر متناهي دے، دا کړنلاره په پايله کښې اصلي
+  څانګه په (کېدے شي ګڼو) څانګو غځوي۔ په هره يوه يې همدا
+  کړنلاره بيا پلې کړئ او تکرار يې کړئ۔ د جوړښت له مخې به
+  هره څانګه بشپړه وي۔ په منجمده سرچينه کښې دلته «تړلې»
+  ليکل شوي، خو دا د همدې قضیې له غوښتنې سره نۀ جوړېږي۔
+\end{proof}
+
+\begin{thm}[بشپړتيا]
+  \ollabel{thm:tableau-completeness}
+  که~$\Gamma$ تړلے !!{tableau} ونۀ لري، نو~$\Gamma$ د صدق وړ دے۔
+\end{thm}
+
+\begin{proof}
+د پورته قضيې له مخې~$\Gamma$ داسې !!a{tableau} لري چې هره
+څانګه ئې بشپړه ده۔ ځکه تړلے !!{tableau} نۀ لري، نو په دغه
+!!a{tableau} کښې لږ تر لږه يوه پرانيستې او بشپړه څانګه شته۔
+$\Delta$ دې پر څانګه د مخکښ‌لرونکو !!{formula}s سټ وي، او
+$P(\Delta)$ دې پکښې د راغلو مخکښونو سټ وي۔
+
+مدل~$\mModel{M(\Delta)} = \tuple{P(\Delta), R, V}$ داسې تعريفوو
+چې نړۍې ئې په~$\Delta$ کښې راغلي مخکښونه دي، او د لاسرسي
+اړيکه يې داسې ده:
+\[
+R\sigma\sigma' \quad \text{هله او يوازې هله} \quad
+\sigma'=\sigma.n \quad \text{د کوم~$n$ لپاره}
+\]
+او
+\[
+V(p) = \Setabs{\sigma}{\sFmla{\True}{p}[\sigma] \in \Delta}.
+\]
+پر~$!A$ د استقرا له لارې ښيو چې که
+$\sFmla{\True}{!A}[\sigma] \in \Delta$ وي، نو
+$\mSat{M(\Delta)}{!A}[\sigma]$ وي؛ او که
+$\sFmla{\False}{!A}[\sigma] \in \Delta$ وي، نو
+$\mSat/{M(\Delta)}{!A}[\sigma]$ وي۔
+
+\begin{enumerate}
+  \item \indcase{!A}{p}{که
+    $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د~$V$
+    د تعريف له مخې $\sigma \in V(p)$ وي؛ له دې امله
+    $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+    که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو
+    $\sFmla{\True}{\indfrm}[\sigma] \notin \Delta$ وي؛ ځکه
+    که داسې نۀ وي، څانګه به تړلې وي۔ نو $\sigma \notin V(p)$
+    او له دې امله $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔}
+  \item \indcase{!A}{\lnot !B}{\iftag{probNot}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat/{M(\Delta)}{!B}[\sigma]$ وي، نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat{M(\Delta)}{!B}[\sigma]$ وي، نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔}}
+  \item \indcase{!A}{!B \land !C}{\iftag{probAnd}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې دواړه
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$ او
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat{M(\Delta)}{!B}[\sigma]$ او
+      $\mSat{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې يا
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ يا
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې يا $\mSat/{M(\Delta)}{!B}[\sigma]$ يا
+      $\mSat/{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔ په منجمده
+      سرچينه کښې د دويم غړي پر ځاے لومړنے بيا ليکل شوے و۔}}
+  \item \indcase{!A}{!B \lor !C}{\iftag{probOr}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې يا
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$ يا
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې يا $\mSat{M(\Delta)}{!B}[\sigma]$ يا
+      $\mSat{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې دواړه
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ او
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat/{M(\Delta)}{!B}[\sigma]$ او
+      $\mSat/{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔ په منجمده
+      سرچينه کښې د دويم غړي پر ځاے لومړنے بيا ليکل شوے و۔}}
+  \item \indcase{!A}{!B \lif !C}{\iftag{probIf}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې يا
+      $\sFmla{\False}{!B}[\sigma] \in \Delta$ يا
+      $\sFmla{\True}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې يا $\mSat/{M(\Delta)}{!B}[\sigma]$ يا
+      $\mSat{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې دواړه
+      $\sFmla{\True}{!B}[\sigma] \in \Delta$ او
+      $\sFmla{\False}{!C}[\sigma] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat{M(\Delta)}{!B}[\sigma]$ او
+      $\mSat/{M(\Delta)}{!C}[\sigma]$ وي؛ نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔ په منجمده
+      سرچينه کښې د دويم غړي پر ځاے لومړنے بيا ليکل شوے و۔}}
+  \item \indcase{!A}{\Box !B}{\iftag{probBox}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې د هر کارېدلي~$\sigma.n$ لپاره
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$ وي؛ يعنې د هر
+      هغه~$\sigma' \in P(\Delta)$ لپاره چې $R\sigma\sigma'$ وي۔
+      د استقرا د فرضيې له مخې د هر هغه~$\sigma'$ لپاره چې
+      $R\sigma\sigma'$ وي،
+      $\mSat{M(\Delta)}{!B}[\sigma']$ وي؛ نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې د کوم~$\sigma.n$ لپاره
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat/{M(\Delta)}{!B}[\sigma.n]$ وي۔
+      ځکه چې $R\sigma(\sigma.n)$، داسې~$\sigma'$ شته چې
+      $\mSat/{M(\Delta)}{!B}[\sigma']$ وي؛ نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔}}
+  \item \indcase{!A}{\Diamond !B}{\iftag{probDiamond}{تمرين۔}{که
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې د کوم~$\sigma.n$ لپاره
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$ وي۔ د استقرا د
+      فرضيې له مخې $\mSat{M(\Delta)}{!B}[\sigma.n]$ وي۔
+      ځکه چې $R\sigma(\sigma.n)$، داسې~$\sigma'$ شته چې
+      $\mSat{M(\Delta)}{!B}[\sigma']$ وي؛ نو
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$ وي۔
+
+      که $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ وي، نو د
+      څانګې د بشپړتيا له مخې د هر کارېدلي~$\sigma.n$ لپاره
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$ وي؛ يعنې د هر
+      هغه~$\sigma' \in P(\Delta)$ لپاره چې $R\sigma\sigma'$ وي۔
+      د استقرا د فرضيې له مخې د هر هغه~$\sigma'$ لپاره چې
+      $R\sigma\sigma'$ وي،
+      $\mSat/{M(\Delta)}{!B}[\sigma']$ وي؛ نو
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ وي۔}}
+\end{enumerate}
+ځکه چې $\Gamma \subseteq \Delta$، نو
+$\mSat{M(\Delta)}{\Gamma}$ وي۔
+\end{proof}
+
+\begin{prob}
+د \olref[nml][tab][cpl]{thm:tableau-completeness} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-completeness}
+که $\Gamma \Entails !A$ وي، نو $\Gamma \Proves !A$ وي۔
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:weak-completeness}
+که~$!A$ په ټولو مدلونو کښې رښتينے وي، نو $\Proves !A$ وي۔
+\end{cor}
+
+\end{document}
