@@ -1,0 +1,36 @@
+{
+  "schema": "ps-b133-frame-completeness-staging-qa/1",
+  "unit_ids": [
+    "OLP-0449"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0449",
+      "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+      "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+      "target_sha256": "10b56fbcbd6f97eae0a5a34d109b1b7c0dbadd84907839f09ba9f76633c0b366",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "source_only_math": [],
+      "target_only_math": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "all_math": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "frame_scope": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "new_blocks": 23,
+  "all_checks_pass": true
+}

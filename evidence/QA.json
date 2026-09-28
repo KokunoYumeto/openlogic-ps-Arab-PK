@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 448,
-    "structural_pass": 448,
+    "draft_units": 449,
+    "structural_pass": 449,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B132-NORMAL-MODAL-TRUTH-DETERMINATION",
+  "batch": "PS-B133-NORMAL-MODAL-FRAME-COMPLETENESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14587,6 +14587,37 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+      "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+      "translation_sha256": "10b56fbcbd6f97eae0a5a34d109b1b7c0dbadd84907839f09ba9f76633c0b366",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "htp"
+      ],
+      "allowed_residual_english": [
+        "htp"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -20715,6 +20746,90 @@
       "passage": "general class caveat",
       "reverse_paraphrase": "For a particular class, determining Sigma is insufficient: its canonical model must also belong to that class, which need not always hold.",
       "finding": "د ځانګړي ټولګي اضافه شرط او وروستۍ نفي ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "D seriality",
+      "reverse_paraphrase": "D forces at least one accessible successor from each canonical world, by consistency of Box extraction and Lindenbaum extension.",
+      "finding": "د يوې راتلونکې نړۍ شتون، سازګاري او غځونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "D contradiction",
+      "reverse_paraphrase": "If Box extraction were inconsistent, D would derive Diamond bottom while normality derives its negation.",
+      "finding": "د تضاد دواړه لوري ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "T reflexivity",
+      "reverse_paraphrase": "Box A at a world implies A there, so every world accesses itself.",
+      "finding": "خپله نړۍ بېله نۀ ده ګڼل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "B symmetry",
+      "reverse_paraphrase": "From access Delta to Delta-prime, B produces the opposite access direction using Diamond membership.",
+      "finding": "د اړيکې جهت بدلول کره ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "4 transitivity",
+      "reverse_paraphrase": "Two successive accessibility steps yield the first-to-third step via Box Box A.",
+      "finding": "د دريو نړۍو ترتيب او دوه‌ګونے Box ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "5 Euclidean",
+      "reverse_paraphrase": "Two successors of one starting world force an accessibility arrow from the first successor to the second.",
+      "finding": "د ګډې پيل نړۍ او وروستي جهت کميت ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "S5 classes",
+      "reverse_paraphrase": "Reflexive Euclidean models form the same class as reflexive symmetric transitive models for S5.",
+      "finding": "د دواړو ټولګيو عين‌والے ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "general schema class",
+      "reverse_paraphrase": "The selected D/T/B/4/5 schema extensions of K are determined by the intersection of matching model classes.",
+      "finding": "د سکيماګانو او اړوندو ټولګيو اشتراک ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "partial function",
+      "reverse_paraphrase": "Diamond A implies Box A yields at most one successor from any world.",
+      "finding": "تر يوې زياتې نړۍ د نفي شرط ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "function",
+      "reverse_paraphrase": "Diamond A iff Box A combines partial functionality with seriality for exactly one successor.",
+      "finding": "عين يوه راتلونکې نړۍ د دوو شرطونو حاصل دے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "weak density",
+      "reverse_paraphrase": "For every access from first to second world, an intermediate third world witnesses both component accesses, possibly coinciding with an endpoint.",
+      "finding": "د منځنۍ نړۍ د بېل‌والي اضافي شرط نۀ دے راغلے۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "Gamma union",
+      "reverse_paraphrase": "The consistency set combines Box extraction from the first world with Diamond prefixing of the second.",
+      "finding": "د اتحاد دواړه برخې او جهتونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "weak density contradiction",
+      "reverse_paraphrase": "Finite inconsistency of Gamma leads to Box not-conjunction in first world and not-conjunction in second, contradicting all Bj there.",
+      "finding": "د استنتاج، Box کولو، تړلتيا او وروستي تضاد ګامونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0449",
+      "passage": "non-frame-complete systems",
+      "reverse_paraphrase": "Not every modal logic proves every formula valid on every frame validating all its theorems.",
+      "finding": "وروستۍ عمومي منفي ادعا مثبته نۀ ده ګرځول شوې۔"
     }
   ],
   "builds": [

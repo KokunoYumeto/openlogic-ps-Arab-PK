@@ -1,0 +1,84 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T01:12:18.080057+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FRAME-COMPLETENESS",
+  "batch_id": "PS-B133-NORMAL-MODAL-FRAME-COMPLETENESS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0449",
+      "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+      "source_bytes": 10725,
+      "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+      "target_sha256": "10b56fbcbd6f97eae0a5a34d109b1b7c0dbadd84907839f09ba9f76633c0b366",
+      "paired_blocks": 23,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B133_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "dee386d88caef37da366a532bca5b2178465d3238064e37691b99cf06c2348e0",
+  "consultation_path": "work/B133_CANON_CONSULTATION.md",
+  "consultation_sha256": "34ca28c0c1a5df1ac811fa6ca0a384cd5257a1701e461fd92679f7f38e153313",
+  "staging_qa_sha256": "80ca36069dd199f8841676edd43d692548025ed71f4bf979837968ed26a6f1ff",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "fresh B133 rendered-page inspection after draft and before acceptance",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 152,
+      "printed_page": "147",
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "inspection_timing": "fresh B133 rendered-page inspection after draft and before acceptance",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [],
+  "formula_policy": "All inline and display math unchanged after localization of math prose; all identifiers, tags, environments, term tokens and frozen English preserved.",
+  "formal_english_exceptions": [
+    {
+      "unit_id": "OLP-0449",
+      "frozen_literal": "\\begin{table}[htp]",
+      "detector_fragment": "htp",
+      "role": "unchanged structural TeX table placement option, not ordinary English prose"
+    }
+  ],
+  "unresolved": "د جزوي تابعي او کمزورې ګڼې ځانګړي پاکستاني مرکبونه لنډمهالي دي؛ د انسان تصويب يا چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "b028177a9578d9a73f4dd66284b040187007542b3b6d7808807e39942943cece",
+  "next_executable_action": "Run cumulative and canonical QA; continue OLP-0450."
+}

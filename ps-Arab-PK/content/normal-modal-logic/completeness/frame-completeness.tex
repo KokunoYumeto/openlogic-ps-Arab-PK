@@ -1,0 +1,228 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: frame-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{fra}
+
+\olsection{د چوکاټ بشپړتيا}
+
+د \Log{K} د بشپړتيا قضيه نورو مودالي نظامونو ته غځېدے شي، کله چې وښيو
+چې د يوه ټاکلي منطق کانوني مدل د چوکاټ اړوند خاصيت لري۔
+
+\begin{thm}\ollabel{thm:completeframeprops}
+  که يو عادي مودالي منطق $\Sigma$ د \olref{tab:correspondencetable} د کيڼ لوري
+  له !!{formula}s څخه يو ولري،
+  نو د~$\Sigma$ کانوني مدل د ښي لوري اړوند خاصيت لري۔
+\end{thm}
+
+\begin{table}[htp]
+  \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      \emph{که $\Sigma$ دا ولري \dots} & \emph{\dots نو د $\Sigma$ کانوني
+        مدل دا خاصيت لري:} \\
+      \hline \hline
+      \Ax{D}:\;\; $\Box!A \lif \Diamond !A$ & \quad مسلسل؛ \\
+      \hline
+      \Ax{T}:\;\; $\Box!A \lif !A$ &\quad  انعکاسي؛\\
+      \hline
+      \Ax{B}: \;\;$!A \lif \Box\Diamond!A$ &\quad  متناظر؛ \\
+      \hline
+      \Ax{4}: \;\; $\Box!A \lif \Box\Box!A$ & \quad متعدي؛ \\
+      \hline 
+      \Ax{5}: \;\; $\Diamond !A \lif \Box\Diamond!A$& \quad اقليدسي۔\\
+      \hline
+    \end{tabular}
+    \caption{د مطابقت بنسټيز واقعيتونه۔}
+    \ollabel{tab:correspondencetable}
+\end{table}
+
+\begin{proof}
+  دا هر يو په خپل وار اخلو۔
+
+  فرض کړو چې $\Sigma$، \Ax{D} لري، او $\Delta \in W^\Sigma$ واخلو؛ بايد
+  وښيو چې داسې يو $\Delta'$ شته چې $R^\Sigma
+  \Delta\Delta'$ وي۔ بس ده چې وښيو $\Box^{-1}\Delta$
+  $\Sigma$-سازګار دے، ځکه بيا د لينډنباوم لمې له مخې يو
+  بشپړ $\Sigma$-سازګار سټ $\Delta' \supseteq
+  \Box^{-1}\Delta$ شته؛ او د $R^\Sigma$ د تعريف
+  \iftag{prvBox}{}{او \olref[mod]{lem:box-iff-diamond} }له مخې
+  $R^\Sigma \Delta\Delta'$ لرو۔ نو د تضاد لپاره فرض کړو چې
+  $\Box^{-1}\Delta$ $\Sigma$-سازګار \emph{نۀ} دے، يعنې
+  $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$۔ د \olref[mod]{lem:box2} له مخې،
+  $\Delta \Proves[\Sigma] \Box\lfalse$؛ او چونکې $\Sigma$،
+  \Ax{D} لري، نو $\Delta \Proves[\Sigma] \Diamond\lfalse$ هم۔ خو $\Sigma$
+  عادي دے، نو $\Sigma \Proves \lnot\Diamond \lfalse$
+  (\olref[prf][nor]{prop:notDiamondBot})؛ له دې امله $\Delta
+  \Proves[\Sigma] \lnot\Diamond \lfalse$ هم، چې د~$\Delta$
+  د سازګارۍ خلاف دے۔
+
+  اوس فرض کړو چې $\Sigma$، \Ax{T} لري، او $\Delta \in
+  W^\Sigma$ واخلو۔ غواړو وښيو چې $R^\Sigma \Delta\Delta$،
+  يعنې\iftag{prvBox}{}{ د \olref[mod]{lem:box-iff-diamond} له مخې،}
+  $\Box^{-1}\Delta \subseteq \Delta$۔ خو که $\Box!A \in \Delta$ وي، نو
+  د \Ax{T} له مخې $!A \in \Delta$ هم، لکه چې غوښتل شوي وو۔
+
+  اوس فرض کړو چې $\Sigma$، \Ax{B} لري، او د $\Delta$، $\Delta' \in W^\Sigma$
+  لپاره $R^\Sigma \Delta\Delta'$ فرض کړو۔ بايد وښيو
+  چې $R^\Sigma \Delta'\Delta$، يعنې\iftag{prvBox}{
+    $\Box^{-1}\Delta' \subseteq \Delta$۔ د
+    \olref[mod]{lem:box-iff-diamond} له مخې، دا له دې سره همارز دے چې}{}
+  $\Diamond\Delta \subseteq \Delta'$۔ نو $!A \in \Delta$ فرض کړو۔ د
+  \Ax{B} له مخې، $\Box\Diamond!A \in \Delta$ هم۔ له هغې فرضيې چې
+  $R^\Sigma \Delta\Delta'$\iftag{prvBox}{}{ او
+    \olref[mod]{lem:box-iff-diamond}}، لرو چې $\Box^{-1}\Delta
+  \subseteq \Delta'$؛ نو $\Diamond!A \in \Delta'$، لکه چې غوښتل شوي وو۔
+
+  اوس فرض کړو چې $\Sigma$، \Ax{4} لري، او $R^\Sigma
+  \Delta_1\Delta_2$ او $R^\Sigma \Delta_2\Delta_3$ فرض کړو۔ بايد وښيو
+  چې $R^\Sigma \Delta_1\Delta_3$۔ له فرضيې\iftag{prvBox}{}{ او
+    \olref[mod]{lem:box-iff-diamond}} دواړه $\Box^{-1}\Delta_1
+  \subseteq \Delta_2$ او $\Box^{-1}\Delta_2 \subseteq \Delta_3$ لرو۔ د
+  $R^\Sigma \Delta_1\Delta_3$ د ښودلو لپاره بس ده چې
+  $\Box^{-1}\Delta_1 \subseteq \Delta_3$ وښيو۔ نو $!B \in
+  \Box^{-1}\Delta_1$ واخلو، يعنې $\Box!B \in \Delta_1$۔ د \Ax{4} له مخې،
+  $\Box\Box!B \in \Delta_1$ هم؛ او له فرضيې لومړے دا ترلاسه کوو چې
+  $\Box!B \in \Delta_2$، او بيا دا چې $!B \in \Delta_3$، لکه چې
+  غوښتل شوي وو۔
+
+  اوس فرض کړو چې $\Sigma$، \Ax{5} لري، او $R^\Sigma
+  \Delta_1\Delta_2$ او $R^\Sigma \Delta_1\Delta_3$ فرض کړو۔ بايد وښيو
+  چې $R^\Sigma \Delta_2\Delta_3$۔ لومړۍ فرضيه
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$\iftag{prvBox}{}{ د
+    \olref[mod]{lem:box-iff-diamond} له مخې} راکوي، او دويمه فرضيه
+  له دې سره همارزه ده چې $\Diamond\Delta_3 \subseteq \Delta_1$\iftag{prvBox}{،
+    د \olref[mod]{lem:box-iff-diamond} له مخې}{}۔ د $R^\Sigma
+  \Delta_2\Delta_3$ د ښودلو لپاره\iftag{prvBox}{، د
+    \olref[mod]{lem:box-iff-diamond} له مخې، بس ده چې}{ بايد}
+  $\Diamond\Delta_3 \subseteq \Delta_2$ وښيو۔ نو $\Diamond!A \in
+  \Diamond\Delta_3$ واخلو، يعنې $!A \in \Delta_3$۔ د دويمې فرضيې له مخې
+  $\Diamond!A \in \Delta_1$؛ او د \Ax{5} له مخې، $\Box\Diamond!A \in
+  \Delta_1$ هم۔ خو اوس لومړۍ فرضيه $\Diamond!A \in
+  \Delta_2$ راکوي، لکه چې غوښتل شوي وو۔
+  \end{proof}
+
+د يوې نتيجې په توګه د څو نظامونو د بشپړتيا پايلې ترلاسه کوو۔
+د بېلګې په توګه، پوهېږو چې $\Log{S5} = \Log{KT5} =
+\Log{KTB4}$ د ټولو انعکاسي اقليدسي مدلونو د ټولګي په نسبت بشپړ دے؛
+دا عين د ټولو انعکاسي، متناظرو او متعدي مدلونو ټولګے دے۔
+
+\begin{thm}\ollabel{thm:generaldet}
+  پرېږدئ چې $\mClass{C}_\Ax{D}$، $\mClass{C}_\Ax{T}$،
+  $\mClass{C}_\Ax{B}$، $\mClass{C}_\Ax{4}$ او
+  $\mClass{C}_\Ax{5}$ په ترتيب د ټولو مسلسل، انعکاسي،
+  متناظرو، متعدي او اقليدسي مدلونو ټولګي وي۔ بيا د
+  \Ax{D}، \Ax{T}، \Ax{B}، \Ax{4} او \Ax{5} له منځه د هر ډول
+  سکيماګانو $!A_1$، \dots، $!A_n$ لپاره، نظام
+  $\Log{K}!A_1 \dots !A_n$ د مدلونو د هغه ټولګي له خوا ټاکل کېږي چې
+  $\mClass{C} = \mClass{C}_{!A_1} \cap \dots
+  \cap \mClass{C}_{!A_n}$ دے۔
+\end{thm}
+
+\begin{prop}
+  پرېږدئ چې $\Sigma$ يو عادي مودالي منطق وي؛ بيا:
+  \begin{enumerate}
+  \item\ollabel{prop:anotherfive-a}%
+    که $\Sigma$ د $\Diamond!A \lif \Box
+    !A$ سکيما ولري، نو د $\Sigma$ کانوني مدل جزوي تابعي دے۔
+  \item که $\Sigma$ د $\Diamond!A \liff \Box
+    !A$ سکيما ولري، نو د $\Sigma$ کانوني مدل تابعي دے۔
+  \item که $\Sigma$ د $\Box\Box!A \lif \Box
+    !A$ سکيما ولري، نو د $\Sigma$ کانوني مدل کمزورې ګڼه لري۔
+  \end{enumerate}
+(د چوکاټ د دغو خاصيتونو د تعريفونو لپاره \olref[frd][acc]{tab:anotherfive}
+  وګورئ)۔
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item فرض کړو چې $\Sigma$ د $\Diamond !A \lif
+    \Box !A$ سکيما لري۔ د دې د ښودلو لپاره چې $R^\Sigma$ جزوي تابعي دے، بايد
+    ثابت کړو چې د هر $\Delta_1$، $\Delta_2$، $\Delta_3 \in
+    W^\Sigma$ لپاره، که $R^\Sigma \Delta_1\Delta_2$ او $R^\Sigma
+    \Delta_1\Delta_3$ وي، نو $\Delta_2=\Delta_3$۔ چونکې $R^\Sigma
+    \Delta_1\Delta_2$، نو $\Box^{-1}\Delta_1 \subseteq \Delta_2$ لرو؛
+    او چونکې $R^\Sigma \Delta_1\Delta_3$، نو $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$ هم\iftag{prvBox}{}{، دواړه د
+      \olref[mod]{lem:box-iff-diamond} له مخې}۔ د $\Delta_2=\Delta_3$ عين‌والے
+    هله ترلاسه کېږي چې دواړه شمولونه، $\Delta_2 \subseteq \Delta_3$ او $\Delta_3 \subseteq
+    \Delta_2$، ثابت کړو۔ د لومړي شمول لپاره، $!A \in \Delta_2$ واخلو؛ بيا
+    $\Diamond!A \in \Delta_1$، او د سکيما او د $\Delta_1$ د اشتقاقي تړلتيا
+    له مخې $\Box!A \in \Delta_1$ هم؛ بيا له هغې فرضيې چې
+    $R^\Sigma \Delta_1\Delta_3$، $!A \in \Delta_3$۔ دويم
+    شمول هم په همدغه ډول دے۔
+
+  \item دا سمدستي له~\olref{prop:anotherfive-a} برخې
+    او په \olref{thm:completeframeprops} کښې د مسلسل‌والي له ثبوته راځي۔
+
+  \item فرض کړو چې $\Sigma$ د $\Box\Box!A \lif \Box!A$ سکيما لري۔
+    د دې د ښودلو لپاره چې $R^\Sigma$ کمزورې ګڼه لري، $R^\Sigma
+    \Delta_1\Delta_2$ واخلو۔ بايد وښيو چې داسې يو بشپړ
+    $\Sigma$-سازګار سټ $\Delta_3$ شته چې $R^\Sigma
+    \Delta_1\Delta_3$ او $R^\Sigma \Delta_3\Delta_2$ وي۔ پرېږدئ چې:
+    \[
+    \Gamma = \Box^{-1}\Delta_1 \cup \Diamond\Delta_2.
+    \]
+    بس ده چې وښيو $\Gamma$ $\Sigma$-سازګار دے، ځکه بيا
+    د لينډنباوم لمې له مخې يو بشپړ
+    $\Sigma$-سازګار سټ~$\Delta_3$ ته غځېدے شي، داسې چې $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$ او $\Diamond\Delta_2 \subseteq \Delta_3$،
+    يعنې $R^\Sigma \Delta_1\Delta_3$\iftag{prvBox}{}{ (د
+      \olref[mod]{lem:box-iff-diamond} له مخې)} او $R^\Sigma
+    \Delta_3\Delta_2$\iftag{prvBox}{ (د
+      \olref[mod]{lem:box-iff-diamond} له مخې)}{}۔
+
+    د تضاد لپاره فرض کړو چې $\Gamma$ سازګار نۀ دے۔ بيا
+    داسې !!{formula}s $\Box!A_1$، \dots، $\Box!A_n \in \Delta_1$
+    او $!B_1$، \dots،~$!B_m \in \Delta_2$ شته چې \[!A_1, \dots,
+    !A_n, \Diamond!B_1, \dots, \Diamond!B_m \Proves[\Sigma]
+    \lfalse.\] چونکې $\Diamond (!B_1 \land \dots \land !B_m) \to
+    (\Diamond!B_1 \land \dots \land \Diamond!B_m)$ په
+    هر عادي مودالي منطق کښې !!{derivable} دے، نو لاندې استدلال کوو، چې د~$\Delta_2$
+    له سازګارۍ سره تضاد لري:
+    \begin{align*}
+      !A_1, \dots, !A_n, & \Diamond!B_1, \dots,
+      \Diamond!B_m \Proves[\Sigma] \lfalse \\
+      !A_1, \dots,!A_n & \Proves[\Sigma] (\Diamond!B_1 \land
+      \dots \land \Diamond!B_m) \lif \lfalse\\
+      & \qquad\text{د استنتاج د قضيې له مخې}\\
+      & \qquad\text{\olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-deduction}، او \Taut} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Diamond(!B_1 \land
+      \dots \land !B_m) \lif \lfalse\\
+      & \qquad \text{چونکې $\Sigma$ عادي دے} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \lnot\Diamond (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{د \PL له مخې} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{$\Box\lnot$ د $\lnot\Diamond$ په معنا} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma] \Box\Box \lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{د \olref[mod]{lem:box1} له مخې} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{د $\Box\Box!A \lif \Box!A$ سکيما له مخې} \\
+      \Delta_1 & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{د يو‌رنګه‌والي له مخې، \olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-monotonicity}} \\
+      & \Box\lnot (!B_1 \land \dots \land !B_m) \in \Delta_1\\
+      &\qquad\text{د اشتقاقي تړلتيا له مخې}; \\
+      & \lnot (!B_1 \land \dots \land !B_m) \in \Delta_2\\
+      &\qquad \text{چونکې }
+      R^\Sigma \Delta_1\Delta_2.
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+د دغو بېلګو پر بنسټ ښايي داسې وګڼل شي چې د مودالي منطق هر
+نظام~$\Sigma$ \emph{بشپړ} دے، په دې معنا چې هر هغه فارمول ثابتوي چې په هر
+هغه چوکاټ کښې اعتبار لري چې د $\Sigma$ هره قضيه پکښې اعتبار لري۔
+له بده مرغه، ډېر نظامونه شته چې په دې معنا بشپړ نۀ دي۔
+
+\end{document}
