@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B139-NORMAL-MODAL-K-S5-FMP",
-  "status": "OLP-0456 source-reviewed and staged; 16 paired blocks, 11 semantic samples, one disclosed filtered-world source treatment",
+  "batch_id": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+  "status": "OLP-0457–0459 source-reviewed and staged; 34 paired blocks, 27 semantic samples, two disclosed source treatments",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9620,6 +9620,68 @@
       ],
       "scope": "د K او S5 د متناهي مدل خاصيت، د عمومي مدل د فلټريشن عمومي پاتې کېدل، د صدق د ساتنې د نړۍ ټولگے، او دوه تمرينونه.",
       "allowed_residual_english": []
+    },
+    "OLP-0457": {
+      "batch_id": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-BUKOVSKY-P99-COUNTABILITY"
+      ],
+      "terms": [
+        "TERM-DECIDABILITY",
+        "TERM-FINITE-MODEL-PROPERTY",
+        "TERM-MODAL-FILTRATION",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES"
+      ],
+      "scope": "د S5 د پرېکړې وړتيا، د ثبوتونو او متناهي عمومي ضدمدلونو موازي شمېرنه، او د نورو لاسرسي خاصيتونو راتلونکې اړتیا.",
+      "allowed_residual_english": []
+    },
+    "OLP-0458": {
+      "batch_id": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-MODAL-FILTRATION",
+        "TERM-MODAL-FILTRATION-BOUNDS",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "د C1–C4 اړيکو جدول، د متناظر/متعدي/اقليدسي فلټريشن د جوړولو څلور قضيې، د متناظرۍ ثبوت او درې تمرينونه.",
+      "allowed_residual_english": [
+        "ht"
+      ]
+    },
+    "OLP-0459": {
+      "batch_id": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P138-EQUALITY",
+        "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+      ],
+      "terms": [
+        "TERM-MODAL-FILTRATION",
+        "TERM-MODAL-FILTRATION-BOUNDS",
+        "TERM-MODALLY-CLOSED",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES"
+      ],
+      "scope": "د مسلسل اقليدسي مدل د ناکام فلټريشن دوه شکلونه، د مودالي تړلي Γ نامتناهي قيد، او د متناظرۍ/تعدي/اقليدسيتوب د تر ټولو غټ فلټريشن قضيه.",
+      "allowed_residual_english": [
+        "ht",
+        "htpb"
+      ]
     }
   },
   "semantic_review": [
@@ -16378,6 +16440,168 @@
       "passage": "counterexample exercise",
       "reverse_paraphrase": "Find a filtration that loses symmetry, transitivity or Euclideanness from a model with that respective property.",
       "finding": "د نه‌ساتنې د درې بديلونو کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "decision problem",
+      "reverse_paraphrase": "A computable yes-or-no procedure decides derivability in S5.",
+      "finding": "د پرېکړې د اغېزمنې کړنلارې قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "variable restriction",
+      "reverse_paraphrase": "Only p1 through pk occurring in A need valuation enumeration.",
+      "finding": "د متغيرونو محدود ټولگے ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "finite per size",
+      "reverse_paraphrase": "For each n, only finitely many valuations and relations over n worlds need checking.",
+      "finding": "د هرې کچې متناهي شمېرنه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "parallel proof search",
+      "reverse_paraphrase": "One branch enumerates S5 theorems by systematically generating proofs.",
+      "finding": "د لومړي بهير هدف ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "parallel model search",
+      "reverse_paraphrase": "The other branch enumerates finite universal models of sizes 1,2,... to test failure.",
+      "finding": "OLNML-029 د عمومي مدل قيد څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "termination",
+      "reverse_paraphrase": "General completeness or the S5 finite model property ensures one branch answers.",
+      "finding": "د دوه بهيرونو بشپړتيا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0457",
+      "passage": "frame contrast",
+      "reverse_paraphrase": "Universal filtrations remain universal; reflexivity and seriality are similar, other properties need more work.",
+      "finding": "د خاصيتونو ترمنځ توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "frame warning",
+      "reverse_paraphrase": "Arbitrary filtrations preserve universal, serial and reflexive properties but may lose symmetry or transitivity.",
+      "finding": "د هر فلټريشن د کميت توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "coarsest relation",
+      "reverse_paraphrase": "C1 alone defines the coarsest filtration relation.",
+      "finding": "د تر ټولو غټ حد معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "finer relation",
+      "reverse_paraphrase": "C1 and C2 admits fewer pairs than C1 alone.",
+      "finding": "د اړيکې د نرۍ‌والي جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "C1 table",
+      "reverse_paraphrase": "The C1 box and diamond clauses move truth from u to v in the stated directions.",
+      "finding": "د دواړو مودالي شرطونو جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "C2 table",
+      "reverse_paraphrase": "C2 reverses the direction of C1 for symmetry.",
+      "finding": "د C1 او C2 سرچپه تړاو ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "C3 C4 table",
+      "reverse_paraphrase": "C3 and C4 constrain persistence of box and diamond truth in opposite directions.",
+      "finding": "د اړيکو څلور شرطونه عين پاتې دي."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "symmetry theorem",
+      "reverse_paraphrase": "C1 plus C2 yields symmetric R-star when the original is symmetric.",
+      "finding": "د لومړۍ برخې فرض او پايله ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "transitivity theorem",
+      "reverse_paraphrase": "C1 plus C3 yields transitive R-star when the original is transitive.",
+      "finding": "د دويمې برخې شرطونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "combined cases",
+      "reverse_paraphrase": "All four conditions preserve symmetry and transitivity; C1+C3+C4 preserve transitivity and Euclideanness.",
+      "finding": "د وروستيو دوو برخو ګډ شرطونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0458",
+      "passage": "proof and exercises",
+      "reverse_paraphrase": "The proof checks filtration R1 under symmetric R; the other three cases remain exercises.",
+      "finding": "د ثبوت او تمرينونو وېش عين دے."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "example scope",
+      "reverse_paraphrase": "The first diagram is serial and Euclidean.",
+      "finding": "د بېلګې دواړه خاصيتونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "equivalence class",
+      "reverse_paraphrase": "Worlds w1 and w3 agree on Gamma and collapse to one filtered class.",
+      "finding": "د ټولګي عين هم‌ارزي ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "forced edges",
+      "reverse_paraphrase": "Inherited edges and Euclidean completion force arrows between the indicated classes.",
+      "finding": "د غشو د اړتيا لړۍ ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "truth obstruction",
+      "reverse_paraphrase": "Box p at w2 conflicts with p false at w5 under those arrows.",
+      "finding": "د صدق د ټکر علت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "modal closure",
+      "reverse_paraphrase": "Subformula closure alone is insufficient; Gamma must be modally closed.",
+      "finding": "د دوو تړلتياوو توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "infinite cost",
+      "reverse_paraphrase": "Modally closed Gamma is infinite, so the result does not immediately give finite model property or decidability.",
+      "finding": "د متناهي پايلې محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "three clauses",
+      "reverse_paraphrase": "Coarsest filtration preserves symmetry, transitivity and Euclideanness under the matching source hypotheses.",
+      "finding": "د قضیې درې برخې عين دي."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "proof order",
+      "reverse_paraphrase": "The frozen proof lists transitivity, Euclidean and symmetry out of theorem order; the target reorders the items.",
+      "finding": "OLNML-030 په متن کښې څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "transitivity proof",
+      "reverse_paraphrase": "C1 and modal closure plus the box/diamond forms of axiom 4 yield C1(u,w).",
+      "finding": "د دواړو ثبوتي څانګو رياضي عين ده."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "passage": "remaining exercises",
+      "reverse_paraphrase": "Axioms B and 5 are left as symmetry and Euclidean exercises respectively.",
+      "finding": "د تمرينونو ماهيت نۀ دے بدل شوے."
     }
   ]
 }

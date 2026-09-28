@@ -1,0 +1,53 @@
+{
+  "schema": "ps-b140-filtration-chapter-staging/1",
+  "utc": "2026-09-28T03:36:07.062427+00:00",
+  "status": "three translated drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 456,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0457",
+    "OLP-0458",
+    "OLP-0459"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0457",
+      "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+      "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+      "target_sha256": "9aa6cbfb28f33283b81640470659d411415243b8dc1d3e65676b188c44ad293a",
+      "paired_blocks": 9,
+      "focused_qa_sha256": "17dba62fb5eea64d254118adfb3b0b8d978150fef0afb80be997f1460f90fc27",
+      "source_treatment_ids": [
+        "OLNML-029"
+      ]
+    },
+    {
+      "unit_id": "OLP-0458",
+      "source_path": "content/normal-modal-logic/filtrations/more-filtrations.tex",
+      "source_sha256": "6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b",
+      "target_sha256": "a5a0deb66cd193babb1366f48ea2db4e7c22384afa8a2b020231835ccfec9f17",
+      "paired_blocks": 12,
+      "focused_qa_sha256": "de995adadd7bbd35c62247c61c9ed85f7dd654f15323d467f0b5aaa81cb98188",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0459",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "paired_blocks": 13,
+      "focused_qa_sha256": "c13e95b8429afdcb4fe8365f63b4be1a5c4036e63cb599ccef70e02ad55895ef",
+      "source_treatment_ids": [
+        "OLNML-030"
+      ]
+    }
+  ],
+  "notes_path": "work/B140_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "f1d5ef53fba3d8163398c9132ae717ed962141f0d5aa4ccc04a9e1795ddb061f",
+  "consultation_path": "work/B140_CANON_CONSULTATION.md",
+  "consultation_sha256": "9047f88849088ac15625bf194802bf9f68678be05fbed55e65e7b8b5db1b6b80",
+  "frozen_source_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Register source treatments and canon consultation; run cumulative corpus and decision replay for OLP-0457–0459."
+}

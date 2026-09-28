@@ -1,0 +1,150 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T03:39:10.719811+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
+  "batch_id": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0457",
+      "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+      "source_bytes": 1420,
+      "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+      "target_sha256": "9aa6cbfb28f33283b81640470659d411415243b8dc1d3e65676b188c44ad293a",
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLNML-029"
+      ]
+    },
+    {
+      "unit_id": "OLP-0458",
+      "source_path": "content/normal-modal-logic/filtrations/more-filtrations.tex",
+      "source_bytes": 5661,
+      "source_sha256": "6b103381a08ffabe6a5add8967f9ea83fa5dfb97ec349cd817f372fd752cdc0b",
+      "target_sha256": "a5a0deb66cd193babb1366f48ea2db4e7c22384afa8a2b020231835ccfec9f17",
+      "paired_blocks": 12,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0459",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_bytes": 5222,
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "paired_blocks": 13,
+      "source_correction_ids": [
+        "OLNML-030"
+      ]
+    }
+  ],
+  "notes_path": "work/B140_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "f1d5ef53fba3d8163398c9132ae717ed962141f0d5aa4ccc04a9e1795ddb061f",
+  "consultation_path": "work/B140_CANON_CONSULTATION.md",
+  "consultation_sha256": "9047f88849088ac15625bf194802bf9f68678be05fbed55e65e7b8b5db1b6b80",
+  "staging_checkpoint_sha256": "788463b748ba1881f9a620415de07f9ea3ca8c89b90b8822c56ece6bf08f0699",
+  "staging_qa_sha256": {
+    "OLP-0457": "17dba62fb5eea64d254118adfb3b0b8d978150fef0afb80be997f1460f90fc27",
+    "OLP-0458": "de995adadd7bbd35c62247c61c9ed85f7dd654f15323d467f0b5aaa81cb98188",
+    "OLP-0459": "c13e95b8429afdcb4fe8365f63b4be1a5c4036e63cb599ccef70e02ad55895ef"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P99-COUNTABILITY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 110,
+      "printed_page": "99",
+      "page_image_sha256": "dc729b28c01ff40d57f7caccf5be50f7f11dbc51aa144d53f4cb5c446a195049",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 216,
+      "printed_page": "205",
+      "page_image_sha256": "22843a61c352fcea7d9dd0484a7ca74e045bab66821e58bf397a58fa2f5bace7",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0457",
+      "source_correction_id": "OLNML-029",
+      "finding": "که د دويم بهير لټون غيرعمومي چوکاټونه هم ومني، د S5 يوه قضيه (لکه Box p -> p) د يوې نړۍ په تشه اړيکه کښې ناسمېږي، او پرېکړه به غلط ځواب ورکړي. د سرچينې د ثبوت وروستۍ جمله خپله متناهي عمومي ضدمدل غواړي."
+    },
+    {
+      "unit_id": "OLP-0459",
+      "source_correction_id": "OLNML-030",
+      "finding": "منجمد ثبوت په (۱) کښې د Ax4 په کارولو تعدي ثابتوي، په (۲) کښې د Ax5 اقليدسي تمرين او په (۳) کښې د AxB متناظر تمرين ورکوي؛ دا د قضيې د برخو له شمېرې سره نۀ سمون خوري. د درې برخو بيا ترتيب فورمولونه او د تمرينونو ماهيت نه بدلوي."
+    }
+  ],
+  "formula_policy": "All 34 blocks preserve their math multiset, IDs, tags, environment sequence and term tokens; the 0459 proof items are reordered and disclosed.",
+  "unresolved": "عين پاکستانۍ مودالي اصطلاحات لنډمهالي دي؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "ceb936aa9bc8d3d2ec0f17e09c9376f3613456b88c9767e728b82833faf49c7d",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0457–0459; then continue OLP-0460."
+}

@@ -1,0 +1,137 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: more-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{acc}
+
+\olsection{فلټريشنونه او د لاسرسي خاصيتونه}
+
+لکه چې يادونه وشوه، د عمومي، مسلسل او انعکاسي مدلونو فلټريشنونه
+هم تل په ترتيب سره عمومي، مسلسل يا انعکاسي وي۔ خو د متناظر يا
+متعدي مدل هر فلټريشن په ترتيب سره متناظر يا متعدي نۀ وي۔ سره له
+دې، په ځينو حالاتو کښې فلټريشنونه داسې تعريفېدے شي چې دا خاصيتونه
+وساتل شي۔ د دې لپاره د تر ټولو غټ فلټريشن د تعريف په شان ځو، خو
+د~$R^*$ په تعريف کښې نور شرطونه هم ورزياتوو۔ فرض کړئ $\Gamma$
+د فرعي !!{formula}s لپاره تړلے دے۔ په مدل~$\mModel{M} =\tuple{W, R, V}$
+کښې د نړۍو $u$ او $v$ ترمنځ د
+\olref{tab:Cn-filtrations} اړيکې~$C_i(u,v)$ وګورئ۔ د دغو شرطونو
+له بېلابېلو ګډونو څخه $R^*[u][v]$ تعريفولے شو۔ د بېلګې په توګه،
+که $R^*[u][v]$ هله او يوازې هله وټاکو چې $C_1(u,v)$ پوره وي،
+نو عين تر ټولو غټ فلټريشن راځي۔ که $R^*[u][v]$ هله او يوازې هله
+وټاکو چې $C_1(u,v)$ او $C_2(u, v)$ دواړه پوره وي، بل فلټريشن
+راځي۔ دا له تر ټولو غټ فلټريشن څخه «لا نرے» دے، ځکه د نړۍو
+د جوړو لږ شمېر $C_1(u,v)$ او $C_2(u,v)$ دواړه پوره کوي، په
+پرتله د هغو چې يوازې $C_1(u,v)$ پوره کوي۔
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|ll|}
+    \hline
+    \multirow{2}{*}{$C_1(u,v)$:}
+    \iftag{prvBox}{&
+      که $\Box!A \in \Gamma$ او $\mSat{M}{\Box!A}[u]$ وي،
+      نو $\mSat{M}{!A}[v]$؛\iftag{prvDiamond}{ او}{}\\}{}
+    \iftag{prvDiamond}{&
+      که $\Diamond!A \in \Gamma$ او $\mSat{M}{!A}[v]$ وي،
+      نو $\mSat{M}{\Diamond!A}[u]$؛ \\}{}
+    \hline
+    \multirow{2}{*}{$C_2(u,v)$:} 
+    \iftag{prvBox}{&
+      که $\Box!A \in \Gamma$ او $\mSat{M}{\Box!A}[v]$ وي،
+      نو $\mSat{M}{!A}[u]$؛\iftag{prvDiamond}{ او}{}\\}{}
+    \iftag{prvDiamond}{&
+      که $\Diamond!A \in \Gamma$ او $\mSat{M}{!A}[u]$ وي،
+      نو $\mSat{M}{\Diamond!A}[v]$؛ \\}{}
+    \hline
+    \multirow{2}{*}{$C_3(u,v)$:}
+    \iftag{prvBox}{&
+      که $\Box!A \in \Gamma$ او $\mSat{M}{\Box!A}[u]$ وي،
+      نو $\mSat{M}{\Box!A}[v]$؛\iftag{prvDiamond}{ او}{}\\}{}
+    \iftag{prvDiamond}{&
+      که $\Diamond!A \in \Gamma$ او $\mSat{M}{\Diamond!A}[v]$ وي،
+      نو $\mSat{M}{\Diamond!A}[u]$؛ \\}{}
+    \hline
+    \multirow{2}{*}{$C_4(u,v)$:}
+    \iftag{prvBox}{&
+      که $\Box!A \in \Gamma$ او $\mSat{M}{\Box!A}[v]$ وي،
+      نو $\mSat{M}{\Box!A}[u]$؛\iftag{prvDiamond}{ او}{}\\}{}
+    \iftag{prvDiamond}{&
+      که $\Diamond!A \in \Gamma$ او $\mSat{M}{\Diamond!A}[u]$ وي،
+      نو $\mSat{M}{\Diamond!A}[v]$؛ \\}{}
+    \hline
+    \end{tabular}
+  \caption{د فلټريشنونو د تعريف لپاره پر ممکنو نړۍو شرطونه۔}
+  \ollabel{tab:Cn-filtrations}
+\end{table}
+
+\begin{thm}\ollabel{thm:more-filtrations}
+  فرض کړئ $\mModel{M} =\tuple{W,R,V}$ يو مدل وي او $\Gamma$ د
+  فرعي !!{formula}s لپاره تړلے وي۔ $W^*$ او $V^*$ د
+  \olref[fil]{defn:filtration} په شان تعريف کړئ۔ بيا:
+  \begin{enumerate}
+  \item فرض کړئ $R^*[u][v]$ هله او يوازې هله چې $C_1(u, v) \land
+    C_2(u,v)$۔ بيا $R^*$ متناظره ده، او $\mModel{M^*} =
+    \tuple{W^*,R^*,V^*}$ فلټريشن دے که $\mModel{M}$ متناظر وي۔
+  \item فرض کړئ $R^*[u][v]$ هله او يوازې هله چې $C_1(u, v)
+    \land C_3(u,v)$۔ بيا $R^*$ متعديه ده، او
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ فلټريشن دے که
+    $\mModel{M}$ متعدي وي۔
+  \item فرض کړئ $R^*[u][v]$ هله او يوازې هله چې $C_1(u, v) \land C_2(u,v)
+    \land C_3(u,v) \land C_4(u,v)$۔ بيا $R^*$ متناظره او متعديه
+    ده، او $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ فلټريشن دے که
+    $\mModel{M}$ متناظر او متعدي وي۔
+  \item فرض کړئ $R^*$ داسې تعريف شوې وي چې $R^*[u][v]$ هله او
+    يوازې هله چې $C_1(u,
+    v) \land C_3(u,v) \land C_4(u,v)$۔ بيا $R^*$ متعديه او
+    اقليدسي ده، او $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ فلټريشن
+    دے که $\mModel{M}$ متعدي او اقليدسي وي۔
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $R^*$ سمدستي متناظره ښکاري، ځکه $C_1(u,v)
+      \Leftrightarrow C_2(v,u)$ او $C_2(u,v) \Leftrightarrow
+      C_1(v,u)$۔ نو دا ښودل پاتې دي چې که $\mModel{M}$ متناظر
+      وي، $\mModel{M^*}$ د~$\Gamma$ له مخې فلټريشن دے۔
+      شرط~$C_1(u,v)$ دا تضمينوي چې
+      \iftag{prvBox}{%
+        \iftag{prvDiamond}{%
+          د \olref[fil]{defn:filtration}
+          \olref[fil]{defn:filtration-R2} او
+          \olref[fil]{defn:filtration-R3} پوره کېږي}{%
+          \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R2} پوره کېږي}}{%
+        \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R3} پوره کېږي}۔
+      نو يوازې د
+      \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1},
+      تصديق پکار دے، يعنې له $Ruv$ څخه $R^*[u][v]$ راووځي۔
+
+      نو $Ruv$ فرض کړئ۔ د $R^*[u][v]$ د ښودلو لپاره بايد
+      $C_1(u,v)$ او $C_2(u,v)$ ثابت کړو۔ د~$C_1$ لپاره:
+      \iftag{prvBox}{که $\Box!A
+        \in\Gamma$ او $\mSat{M}{\Box!A}[u]$ وي، نو
+        $\mSat{M}{!A}[v]$ هم وي (ځکه $Ruv$)۔
+        \iftag{prvDiamond}{همداسې، }{}}{}\iftag{prvDiamond}{که
+        $\Diamond!A \in \Gamma$ او $\mSat{M}{!A}[v]$ وي، نو
+        د~$Ruv$ له امله $\mSat{M}{\Diamond!A}[u]$۔}{}
+      د~$C_2$ لپاره: \iftag{prvBox}{که $\Box!A \in \Gamma$ او
+        $\mSat{M}{\Box!A}[v]$ وي، نو د متناظرۍ له مخې له $Ruv$
+        څخه $Rvu$ راځي؛ نو $\mSat{M}{!A}[u]$۔
+        \iftag{prvDiamond}{همداسې، }{}}{}\iftag{prvDiamond}{که
+        $\Diamond!A \in\Gamma$ او $\mSat{M}{!A}[u]$ وي، نو
+        $\mSat{M}{\Diamond!A}[v]$ (ځکه د متناظرۍ له مخې $Rvu$)۔}{}
+    \item تمرين۔
+    \item تمرين۔
+    \item تمرين۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[nml][fil][acc]{thm:more-filtrations} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

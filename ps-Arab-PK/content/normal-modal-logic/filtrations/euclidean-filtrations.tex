@@ -1,0 +1,142 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: euclidean-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{euc}
+
+\olsection{د اقليدسي مدلونو فلټريشنونه}
+
+د \olref[acc]{sec} طريقه د هغو مدلونو لپاره کار نۀ ورکوي چې اقليدسي
+وي، يا مسلسل او اقليدسي دواړه وي۔ د \olref{fig:ser-eucl} پاسنے مدل
+وګورئ؛ هغه اقليدسي او مسلسل دواړه دے۔ فرض کړئ
+$\Gamma = \{p, \Box p \}$۔ د~$\Gamma$ له مخې فلټريشن کښې
+$[w_1] = [w_3]$ کېږي، ځکه $w_1$ او $w_3$ يوازې هغه نړۍې دي
+چې پر~$\Gamma$ سره يوه خوله دي۔ هر فلټريشن به له
+$\mModel{M}$ څخه راغلے غشے هم ولري، لکه په
+\olref{fig:ser-eucl2} کښې چې ښودل شوے۔ دا مدل اقليدسي نۀ دے۔
+پر دې سربېره، د اقليدسي کولو لپاره ورسره نور غشي هم نۀ شو
+زياتولے: د~$[w_2]$ او $[w_4]$ ترمنځ به په دواړو لوريو غشي
+ورزياتوو، او بيا د~$w_2$ او~$w_5$ د ټولګيو ترمنځ هم۔ خو
+$\Box p$ بايد په~$w_2$ کښې رښتينے وي، حال دا چې $p$ په~$w_5$
+کښې ناسم دے۔
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$}] {$w_1$}; 
+    \node[world] (w2)
+          [label={right: \mTrue{p}},
+            label = {below: $\mSat{{}}{\Box p}$},
+            right=of w1] {$w_2$}; 
+    \draw[->] (w1) to (w2);
+    \node[world] (w3)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$},
+            below=of w1] {$w_3$}; 
+    \node[world] (w4)
+          [label={right:\mTrue{p}},
+            label={below: $\mSat/{{}}{\Box p}$},
+            right=of w3] {$w_4$};
+    \draw[->] (w3) to (w4);
+    \draw[reflexive above] (w4) to (w4);     
+    \node[world] (w5)
+          [label={right: \mFalse{p}},
+            label=below:$\mSat/{{}}{\Box p}$,
+            right=of w4] {$w_5$}; 
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);     
+  \end{tikzpicture}
+  \caption{يو مسلسل او اقليدسي مدل۔}
+  \ollabel{fig:ser-eucl}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[modal,every text node part/.style={align=center}]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={right:$[w_1]=[w_3]$},
+            label={below: $\mSat{{}}{\Box p}$}] {$[w_1]$}; 
+    \node[world] (w2)
+         [label={right: \mTrue{p}},
+           label = {below: $\mSat{{}}{\Box p}$},
+           right=of w1, yshift=1.5cm] {$[w_2]$}; 
+    \draw[->] (w1) to (w2);
+    \node[world] (w4)
+         [label={right:\mTrue{p}},
+           label={below: $\mSat/{{}}{\Box p}$},
+           right=of w1,yshift=-1.5cm] {$[w_4]$};
+    \draw[->] (w1) to (w4);
+    \draw[reflexive above] (w4) to (w4);     
+    \node[world] (w5)
+         [label={right: \mFalse{p}},
+             label=below:$\mSat/{{}}{\Box p}$,
+             right=of w4] {$[w_5]$}; 
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);     
+  \end{tikzpicture}
+  \caption{په \olref{fig:ser-eucl} کښې د مدل فلټريشن۔}
+  \ollabel{fig:ser-eucl2}
+\end{figure}
+
+په تېره، د اقليدسي فلټريشن د ترلاسه کولو لپاره دا بس نۀ دي چې
+د فرعي !!{formula}s لپاره د هر تړلي سټ~$\Gamma$ له مخې
+فلټريشنونه واخلو۔ پر ځای يې داسې سټونه~$\Gamma$ پکار دي چې
+\emph{مودالي تړلي} وي (وګورئ
+\olref[pre]{defn:modallyclosed})۔ د جملو دا ډول سټونه نامتناهي
+دي، نو د اړوند نظام د متناهي مدل خاصيت يا د پرېکړې وړتيا
+سمدستي نۀ راکوي۔
+
+\begin{thm}\ollabel{thm:modal-closed-filt}
+  فرض کړئ $\Gamma$ مودالي تړلے وي،
+  $\mModel{M}=\tuple{W,R,V}$ وي، او
+  $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ د
+  $\mModel{M}$ تر ټولو غټ فلټريشن وي۔
+  \begin{enumerate}
+  \item که $\mModel{M}$ متناظر وي، $\mModel{M^*}$ هم متناظر دے۔
+  \item که $\mModel{M}$ متعدي وي، $\mModel{M^*}$ هم متعدي دے۔
+  \item که $\mModel{M}$ اقليدسي وي، $\mModel{M^*}$ هم اقليدسي دے۔
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+په منجمده سرچينه کښې د ثبوت د برخو شمېرې د قضیې له برخو سره نۀ
+برابرېدې؛ دلته د دواړو ترتيب يو شان راوړل شوے دے۔
+\begin{enumerate}
+  \item تمرين۔ له دې خبرې کار واخلئ چې \Ax{B} او
+    $\Ax{B_\Diamond}$ دواړه په ټولو متناظرو مدلونو کښې معتبر دي۔
+  \item که $\mModel{M^*}$ تر ټولو غټ فلټريشن وي، نو د تعريف له مخې
+    $R^*[u][v]$ هله او يوازې هله وي چې $C_1(u,v)$ وي۔ د تعدي
+    لپاره $C_1(u,v)$ او $C_1(v,w)$ فرض کړئ؛ بايد
+    $C_1(u,w)$ وښيو۔ \iftag{prvBox}{فرض کړئ
+      $\mSat{M}{\Box !A}[u]$ وي؛ بيا
+      $\mSat{M}{\Box\Box!A}[u]$ وي، ځکه \Ax{4} په ټولو
+      متعديو مدلونو کښې معتبر دے۔ د تړلتيا له مخې
+      $\Box\Box!A \in \Gamma$؛ نو د $C_1(u,v)$ له مخې
+      $\mSat{M}{\Box!A}[v]$، او د $C_1(v,w)$ له مخې
+      $\mSat{M}{!A}[w]$ هم وي۔ }{}\iftag{prvDiamond}{فرض کړئ
+      $\mSat{M}{!A}[w]$ وي؛ بيا د $C_1(v,w)$ له مخې
+      $\mSat{M}{\Diamond !A}[v]$ وي، ځکه د مودالي تړلتيا له مخې
+      $\Diamond !A \in \Gamma$۔ د $C_1(u,v)$ له مخې
+      $\mSat{M}{\Diamond\Diamond !A}[u]$ راځي، ځکه د مودالي
+      تړلتيا له مخې $\Diamond\Diamond!A \in \Gamma$۔ ځکه چې
+      $\Ax{4}_\Diamond$ په ټولو متعديو مدلونو کښې معتبر دے،
+      $\mSat{M}{\Diamond!A}[u]$۔}{}
+  \item تمرين۔ له دې خبرې کار واخلئ چې \Ax{5} او
+    $\Ax{5_\Diamond}$ دواړه په ټولو اقليدسي مدلونو کښې معتبر دي۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[nml][fil][euc]{thm:modal-closed-filt} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

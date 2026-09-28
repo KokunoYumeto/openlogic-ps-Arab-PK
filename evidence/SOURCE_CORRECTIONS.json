@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0456; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T03:16:30.115148+00:00",
+  "status": "adopted through OLP-0459; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T03:39:10.719811+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -11330,6 +11330,117 @@
       ],
       "decision_timing": "contemporaneous B139 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-029",
+      "unit_id": "OLP-0457",
+      "classification": "S5_decidability_countermodel_search_requires_universal_models",
+      "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+      "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+      "source_locator": "content/normal-modal-logic/filtrations/S5-decidable.tex:25-31",
+      "source_literal_line_1based": [
+        25,
+        27,
+        28,
+        30,
+        31
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/S5-decidable.tex",
+      "target_line_1based": 28,
+      "disclosure_line_1based": 30,
+      "target_sha256": "9aa6cbfb28f33283b81640470659d411415243b8dc1d3e65676b188c44ad293a",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د S5 د پرېکړې وړتيا په دويم موازي بهير کښې يوازې متناهي عمومي مدلونه شمېرل کېږي؛ دا قيد په منجمده سرچينه کښې د پلټنې په جمله کښې نۀ و څرګند او په پښتو کښې څنګ ته ياد شوے.",
+      "reason": "که د دويم بهير لټون غيرعمومي چوکاټونه هم ومني، د S5 يوه قضيه (لکه Box p -> p) د يوې نړۍ په تشه اړيکه کښې ناسمېږي، او پرېکړه به غلط ځواب ورکړي. د سرچينې د ثبوت وروستۍ جمله خپله متناهي عمومي ضدمدل غواړي.",
+      "formula_policy": "No math, identifier, macro, tag or term-token exception; source is frozen. The registered treatment clarifies prose or reorders proof items.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
+      "audit_artifacts": [
+        "B140_SOURCE_AUDIT.json",
+        "B140_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/S5-decidable.tex:25-31",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/S5-decidable.tex:30",
+        "B140_DRAFT_QA_OLP-0457.json"
+      ],
+      "decision_timing": "contemporaneous B140 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-030",
+      "unit_id": "OLP-0459",
+      "classification": "modally_closed_filtration_proof_items_misordered_against_theorem",
+      "source_path": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "source_sha256": "904eebe3b14b5f58fcac9db524e0546c9cdd6f1a07b00f1ef097fba80b0664db",
+      "source_locator": "content/normal-modal-logic/filtrations/euclidean-filtrations.tex:100-125",
+      "source_literal_line_1based": [
+        100,
+        101,
+        102,
+        108,
+        122,
+        124
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/euclidean-filtrations.tex",
+      "target_line_1based": 114,
+      "disclosure_line_1based": 111,
+      "target_sha256": "6e15f0ecea09277d16ea4558bfe01dc3492a05925c338a512e7898e365620173",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د مودالي تړلي فلټريشن د قضيې له (۱) متناظرۍ، (۲) تعدي او (۳) اقليدسيتوب سره د ثبوت برخې هم په همدې ترتيب راوړل شوې: AxB تمرين، د Ax4 بشپړ ثبوت، Ax5 تمرين. د سرچينې د شمېرې توپير په پښتو ثبوت کښې څرګند شوے.",
+      "reason": "منجمد ثبوت په (۱) کښې د Ax4 په کارولو تعدي ثابتوي، په (۲) کښې د Ax5 اقليدسي تمرين او په (۳) کښې د AxB متناظر تمرين ورکوي؛ دا د قضيې د برخو له شمېرې سره نۀ سمون خوري. د درې برخو بيا ترتيب فورمولونه او د تمرينونو ماهيت نه بدلوي.",
+      "formula_policy": "No math, identifier, macro, tag or term-token exception; source is frozen. The registered treatment clarifies prose or reorders proof items.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE",
+      "audit_artifacts": [
+        "B140_SOURCE_AUDIT.json",
+        "B140_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/euclidean-filtrations.tex:100-125",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/euclidean-filtrations.tex:111",
+        "B140_DRAFT_QA_OLP-0459.json"
+      ],
+      "decision_timing": "contemporaneous B140 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -11417,7 +11528,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TRUTH-DETERMINATION",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-CHAPTER-CLOSE"
   ],
   "source_authorities": [
     {
