@@ -1,0 +1,77 @@
+{
+  "schema": "ps-b134-filtration-opening-staging-qa/1",
+  "unit_ids": [
+    "OLP-0450",
+    "OLP-0451"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0450",
+      "source_path": "content/normal-modal-logic/filtrations/filtrations.tex",
+      "source_sha256": "33219caedd7ed764901499b694eb234af0fcf15c1ccea29b9799a1c32d3b71af",
+      "target_sha256": "8277b64aa8f87a69d8818697e25f0d769157ac1d9c05a104ed75afa9d1734e6e",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "source_only_math": [],
+      "target_only_math": [],
+      "source_only_macros": {},
+      "target_only_macros": {},
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "registered_math_only": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "nine_imports": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0451",
+      "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+      "target_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "source_only_math": [
+        "$\\mSat{M}{\\Box!B}[v]$",
+        "$[w]\\inV^*$"
+      ],
+      "target_only_math": [
+        "$\\mSat{M}{!B}[v]$",
+        "$[w]\\inV^*(p)$"
+      ],
+      "source_only_macros": {
+        "\\Box": 1
+      },
+      "target_only_macros": {},
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "registered_math_only": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "corrections_disclosed": true,
+        "finite_class_scope": true,
+        "universal_toy_relation": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "new_blocks": 20,
+  "all_checks_pass": true
+}

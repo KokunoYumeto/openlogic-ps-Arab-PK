@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 449,
-    "structural_pass": 449,
+    "draft_units": 451,
+    "structural_pass": 451,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B133-NORMAL-MODAL-FRAME-COMPLETENESS",
+  "batch": "PS-B134-NORMAL-MODAL-FILTRATION-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14618,6 +14618,75 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0450",
+      "path": "content/normal-modal-logic/filtrations/filtrations.tex",
+      "source_sha256": "33219caedd7ed764901499b694eb234af0fcf15c1ccea29b9799a1c32d3b71af",
+      "translation_sha256": "8277b64aa8f87a69d8818697e25f0d769157ac1d9c05a104ed75afa9d1734e6e",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0451",
+      "path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+      "translation_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-024",
+        "OLNML-025",
+        "OLNML-026"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mSat{M}{\\Box!B}[v]$",
+          "$[w]\\inV^*$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!B}[v]$",
+          "$[w]\\inV^*(p)$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -20830,6 +20899,114 @@
       "passage": "non-frame-complete systems",
       "reverse_paraphrase": "Not every modal logic proves every formula valid on every frame validating all its theorems.",
       "finding": "وروستۍ عمومي منفي ادعا مثبته نۀ ده ګرځول شوې۔"
+    },
+    {
+      "unit_id": "OLP-0450",
+      "passage": "chapter title",
+      "reverse_paraphrase": "Filtrations and decidability are the two named subjects of the new chapter.",
+      "finding": "د څپرکي دواړه موضوعګانې ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0450",
+      "passage": "chapter imports",
+      "reverse_paraphrase": "The chapter imports nine sections in the source order, including the S5 finite-model and decidability sections.",
+      "finding": "نهه واردېدونکې برخې په عين ترتيب دي."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "decidability",
+      "reverse_paraphrase": "Decidable means there is an effective yes-or-no validity procedure for each formula.",
+      "finding": "د اغېزمنې پرېکړې دواړه ځوابونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "finite valuations",
+      "reverse_paraphrase": "For fixed n worlds, one variable has 2^n truth sets and m variables have 2^(nm) assignments.",
+      "finding": "د دوو شمېرنو توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "relations",
+      "reverse_paraphrase": "There are 2^(n^2) possible binary accessibility relations on n worlds.",
+      "finding": "د اړيکو شمېر د نړۍو د جوړو له مخې دے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "class membership",
+      "reverse_paraphrase": "For the chosen frame class, test whether a finite frame has the required accessibility property before testing valuations.",
+      "finding": "د چوکاټ د ټولګي شرط د ارزښت ټاکنې څخه بېل دے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "finite search",
+      "reverse_paraphrase": "Finite sizes can be enumerated indefinitely; finding a countermodel terminates and proves invalidity.",
+      "finding": "د متناهي کچو نامتناهي لړ او د ضدمدل له موندلو سره درېدنه بېله ده."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "finite model property",
+      "reverse_paraphrase": "Each invalid formula has a finite countermodel, but FMP alone does not halt on valid formulas.",
+      "finding": "د خاصيت د کميت او د درېدنې محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "size bound",
+      "reverse_paraphrase": "A formula-dependent finite size limit lets the search end with a validity answer if no countermodel appears.",
+      "finding": "د کچې حد د پرېکړې اضافه شرط دے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "partition classes",
+      "reverse_paraphrase": "A finite number of equivalence classes produces finite many new worlds; each class itself may be finite or infinite.",
+      "finding": "OLNML-024 په خپل ځای څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "countermodel preservation",
+      "reverse_paraphrase": "The quotient model must preserve A truth at each original world and its class, hence preserve a countermodel.",
+      "finding": "د صدق دوه اړخيز شرط او ضدمدل ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "toy relation",
+      "reverse_paraphrase": "The corrected toy frame has universal accessibility; Box B means B holds at every world.",
+      "finding": "OLNML-025 له استقرا سره سم دے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "first equivalence",
+      "reverse_paraphrase": "The preliminary equivalence groups worlds by agreement on all propositional variables, not by identity of worlds.",
+      "finding": "د لومړۍ بېلګې هم‌ارزي له رسمي فرعي فارمولونو بېله ده."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "valuation base",
+      "reverse_paraphrase": "The truth set for p in the quotient is V*(p); membership of [w] is typed by p.",
+      "finding": "OLNML-026 د تابع متغير ساتي."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "negation induction",
+      "reverse_paraphrase": "The negation case applies the induction hypothesis to the operand, preserving both truth directions.",
+      "finding": "د نفي دواړه لوري ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "box induction",
+      "reverse_paraphrase": "The source sketches the universal Box step from quotient truth to original truth, not a separate new proof.",
+      "finding": "د سرچينې د تشريحي ګام حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "general filtration",
+      "reverse_paraphrase": "A filtration requires an accessibility relation R* that preserves truth for the selected formula.",
+      "finding": "د نوې اړيکې او صدق د ساتنې شرطونه بېل دي."
+    },
+    {
+      "unit_id": "OLP-0451",
+      "passage": "finite subformulas",
+      "reverse_paraphrase": "Agreement on finitely many subformulas of A guarantees finitely many equivalence classes.",
+      "finding": "د متناهي‌والي اصلي وجه د فرعي فارمولونو شمېر دے."
     }
   ],
   "builds": [

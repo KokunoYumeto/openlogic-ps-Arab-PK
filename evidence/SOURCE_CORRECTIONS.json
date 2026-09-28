@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0448; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T00:31:45.160557+00:00",
+  "status": "adopted through OLP-0451; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T01:46:07.355774+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -11039,6 +11039,169 @@
       ],
       "decision_timing": "contemporaneous B132 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-024",
+      "unit_id": "OLP-0451",
+      "classification": "finite_partition_classes_need_not_each_be_infinite",
+      "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+      "source_locator": "content/normal-modal-logic/filtrations/introduction.tex:76",
+      "source_literal_line_1based": [
+        76
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex",
+      "target_line_1based": 63,
+      "disclosure_line_1based": 63,
+      "target_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د نامتناهي نړۍو وېش متناهي ډېر ټولګي غواړي؛ هر ټولګے پخپله متناهي يا نامتناهي کېدے شي. د سرچينې د هر ټولګي د نامتناهي‌والي ناسمه غوښتنه په خپل ځای څرګنده شوې.",
+      "reason": "د هم ارزښتۍ يوه طبقه يوغړې کېدے شي؛ د نوي مدل متناهي‌والے د طبقو له متناهي شمېر نه راځي، نه د هرې طبقې له نامتناهي‌والي.",
+      "formula_policy": "Only registered math spans differ for OLNML-025/026; IDs, tags, environments, term tokens and frozen source are unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
+      "audit_artifacts": [
+        "B134_SOURCE_AUDIT.json",
+        "B134_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/introduction.tex:76",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex:63",
+        "B134_STAGING_QA_OLP-0450-0451.json"
+      ],
+      "decision_timing": "contemporaneous B134 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-025",
+      "unit_id": "OLP-0451",
+      "classification": "toy_universal_relation_box_quantifier_repair",
+      "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+      "source_locator": "content/normal-modal-logic/filtrations/introduction.tex:87,88,106",
+      "source_literal_line_1based": [
+        87,
+        88,
+        106
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex",
+      "target_line_1based": 75,
+      "disclosure_line_1based": 78,
+      "target_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ساده بېلګې لاسرسی عمومي ټاکل شوے؛ د Box شرط د هرې نړۍ د B صدق دے، چې له ورپسې استقرايي ګام سره سمون لري. سرچينه‌يي توپير په خپل ځای ښکاره شوے.",
+      "reason": "په تشه اړيکه کښې Box تش‌صدق لري، خو د سرچينې وروستے ګام د هرې نړۍ B غواړي. د سرچينې د «يوې v نړۍ Box B» شرط هم د عمومي Box معنا نۀ ورکوي.",
+      "formula_policy": "Only registered math spans differ for OLNML-025/026; IDs, tags, environments, term tokens and frozen source are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{\\Box!B}[v]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!B}[v]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
+      "audit_artifacts": [
+        "B134_SOURCE_AUDIT.json",
+        "B134_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/introduction.tex:87",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex:75",
+        "B134_STAGING_QA_OLP-0450-0451.json"
+      ],
+      "decision_timing": "contemporaneous B134 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-026",
+      "unit_id": "OLP-0451",
+      "classification": "valuation_function_missing_variable_argument",
+      "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+      "source_locator": "content/normal-modal-logic/filtrations/introduction.tex:97",
+      "source_literal_line_1based": [
+        97
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex",
+      "target_line_1based": 88,
+      "disclosure_line_1based": 88,
+      "target_sha256": "8d34dfa6368af96a04a966d5d0eea7071dd574a7917e9adfec2834e6214c8da4",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د بنسټيز ګام غړيتوب د p د ارزښت‌سټ V^*(p) ته ليکل شوے؛ د متغير د نښې لوېدل په خپل ځای څرګند شوي.",
+      "reason": "V^* د ارزښت تابع ده؛ د [w] غړيتوب د هغې د p لپاره په حاصل سټ V^*(p) کښې معنا لري.",
+      "formula_policy": "Only registered math spans differ for OLNML-025/026; IDs, tags, environments, term tokens and frozen source are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$[w]\\inV^*$"
+        ],
+        "target_only": [
+          "$[w]\\inV^*(p)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
+      "audit_artifacts": [
+        "B134_SOURCE_AUDIT.json",
+        "B134_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/introduction.tex:97",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/introduction.tex:88",
+        "B134_STAGING_QA_OLP-0450-0451.json"
+      ],
+      "decision_timing": "contemporaneous B134 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -11123,7 +11286,8 @@
     "PS-OWNER-SEMANTIC-20260927-NORMAL-MODAL-SYSTEMS-DISTINCT",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TRUTH-DETERMINATION"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TRUTH-DETERMINATION",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING"
   ],
   "source_authorities": [
     {
