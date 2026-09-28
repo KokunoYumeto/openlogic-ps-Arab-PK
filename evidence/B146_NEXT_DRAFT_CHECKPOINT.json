@@ -1,0 +1,38 @@
+{
+  "schema": "ps-b146-modal-sequent-staging/1",
+  "utc": "2026-09-28T16:01:28.129017+00:00",
+  "status": "two translated source-preaudited drafts staged; canon decisions and cumulative acceptance pending",
+  "accepted_draft_units": 469,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0470",
+    "OLP-0471"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0470",
+      "source_path": "content/normal-modal-logic/sequent-calculus/sequent-calculus.tex",
+      "source_sha256": "94307f3948f0d7279630b64423a6095dd687e47e84368fde684e0e2203d256a1",
+      "target_sha256": "314a5ce35d3eba20ae3a46ccded23cae8f401df2f559b1ed05f4463a40362878",
+      "paired_blocks": 7,
+      "focused_qa_sha256": "953f22aa4d547283b46077a335b80daf38aeaaf72f05b26439b7ef386c2c98b9"
+    },
+    {
+      "unit_id": "OLP-0471",
+      "source_path": "content/normal-modal-logic/sequent-calculus/introduction.tex",
+      "source_sha256": "c647612a3cbf98569d9533d15a111b2df1457e6c19a63a8e77f1a2f75c895897",
+      "target_sha256": "22a82423ed9bac8af1b088a3806bbcf9fa851c2eddfd130aa2a1a5b534efa108",
+      "paired_blocks": 8,
+      "focused_qa_sha256": "d589b091f33f83d0bd540ee037cfa83389750ca98d377269b981d868acf85236"
+    }
+  ],
+  "paired_blocks": 15,
+  "notes_path": "work/B146_PREAUDIT_0470_0471.md",
+  "notes_sha256": "c68ca3ddbfa09f4f8eb203d71f1084bf16b40d0ab588df9e64d66eb82a8a82c2",
+  "prior_staging_checkpoint_sha256": "55dea0f27a3513bbf2cd26f2f730af17a4ef7f1f580a296c3e5213ebd2e853ed",
+  "frozen_sources_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "unresolved": "هايپر سېکوېنټ لپاره د اصطلاحي پرېکړې ثبت او کانوني ځای‌نښې؛ دواړه واحدونه لا په ۴۶۹ منل شويو کښې نۀ دي.",
+  "next_action": "Register the provisional hypersequent term and canon use for OLP-0470–0471; run cumulative QA; then continue OLP-0472."
+}

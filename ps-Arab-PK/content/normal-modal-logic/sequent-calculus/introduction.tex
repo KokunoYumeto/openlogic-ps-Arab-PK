@@ -1,0 +1,48 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{int}
+
+\olsection{سريزه}
+
+د قضيېيز منطق د سېکوېنټ حساب په هغو اضافي قاعدو غځېدلے شي چې
+له~\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ او~}{}}{}%
+\iftag{prvDiamond}{$\Diamond$}{} سره کار کوي۔ مثلاً د~$\Log{K}$
+لپاره له \Log{LK} سره دا قاعدې هم شته:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof  
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+د~$\Log{K}$ د غځونو لپاره نورې قاعدې هم زياتول پکار دي۔
+
+هر مودالي منطق داسې سېکوېنټ حساب نۀ لري۔ ان~$\Log{S5}$، چې
+له معنايي پلوه ساده دے (بې له لاسرسي اړيکو څخه هم تعريفېږي)،
+داسې له~$\Log{LK}$ څخه راوتلے سېکوېنټ حساب ورته نۀ دے پېژندل شوے
+چې د~\Cut له قاعدې پرته بشپړ وي۔ خو د پرېکون له قاعدې پرته
+بشپړ \emph{هايپر سېکوېنټ} حساب لري۔
+
+\end{document}
