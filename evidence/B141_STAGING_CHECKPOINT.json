@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b141-modal-tableaux-opening-staging/1",
+  "utc": "2026-09-28T03:54:24.231771+00:00",
+  "status": "three translated drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 459,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0460",
+    "OLP-0461",
+    "OLP-0462"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0460",
+      "source_path": "content/normal-modal-logic/tableaux/tableaux.tex",
+      "source_sha256": "58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b",
+      "target_sha256": "1bd766fbfc5e41fea7619dafddbee5757d172e26cb41f983f1385e74fe30de7e",
+      "paired_blocks": 8,
+      "focused_qa_sha256": "17e85ec695d84496633f7c525a89881c0f575e9b6cb66058792a84ca9701fea5"
+    },
+    {
+      "unit_id": "OLP-0461",
+      "source_path": "content/normal-modal-logic/tableaux/introduction.tex",
+      "source_sha256": "87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54",
+      "target_sha256": "f7f0a9d892e2df972f4858f9cec06b638582bd4cfaa7ac885d65aaba6a1b0c9d",
+      "paired_blocks": 9,
+      "focused_qa_sha256": "107834a5350deaeee39cbfc282b249771573ea5bbd11b429ff101a53002a478b"
+    },
+    {
+      "unit_id": "OLP-0462",
+      "source_path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+      "source_sha256": "781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3",
+      "target_sha256": "f64d4b7b9ed6cb0a097b4f75d4ff215675db90612a0ed10fe40932edea012a28",
+      "paired_blocks": 17,
+      "focused_qa_sha256": "95ff03d5d65685ac83ad250fbcc394b8dd4f248f195b6710c82b8f47046b952f"
+    }
+  ],
+  "notes_path": "work/B141_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "305d082ee90a0492364c6f398c19ca2369038d30be6d9c77d3f87f5455956991",
+  "consultation_path": "work/B141_CANON_CONSULTATION.md",
+  "consultation_sha256": "d1cbc86200c2b6e85bbbca9750720412226e6586243b7df4c8831404fbaa3759",
+  "frozen_source_unchanged": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Register modal-tableau prefix choice and canon consultation for OLP-0460–0462; run cumulative corpus and decision replay."
+}

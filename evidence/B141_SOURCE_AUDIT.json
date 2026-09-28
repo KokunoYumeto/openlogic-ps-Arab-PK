@@ -1,0 +1,117 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T03:56:53.304890+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-OPENING",
+  "batch_id": "PS-B141-MODAL-TABLEAUX-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0460",
+      "source_path": "content/normal-modal-logic/tableaux/tableaux.tex",
+      "source_bytes": 663,
+      "source_sha256": "58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b",
+      "target_sha256": "1bd766fbfc5e41fea7619dafddbee5757d172e26cb41f983f1385e74fe30de7e",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0461",
+      "source_path": "content/normal-modal-logic/tableaux/introduction.tex",
+      "source_bytes": 2529,
+      "source_sha256": "87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54",
+      "target_sha256": "f7f0a9d892e2df972f4858f9cec06b638582bd4cfaa7ac885d65aaba6a1b0c9d",
+      "paired_blocks": 9,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0462",
+      "source_path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+      "source_bytes": 9559,
+      "source_sha256": "781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3",
+      "target_sha256": "f64d4b7b9ed6cb0a097b4f75d4ff215675db90612a0ed10fe40932edea012a28",
+      "paired_blocks": 17,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B141_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "305d082ee90a0492364c6f398c19ca2369038d30be6d9c77d3f87f5455956991",
+  "consultation_path": "work/B141_CANON_CONSULTATION.md",
+  "consultation_sha256": "d1cbc86200c2b6e85bbbca9750720412226e6586243b7df4c8831404fbaa3759",
+  "staging_checkpoint_sha256": "b2a03599c716089dd6fc555a835a9d2c5081034c42a145aebd0eeabb9378cccc",
+  "staging_qa_sha256": {
+    "OLP-0460": "17e85ec695d84496633f7c525a89881c0f575e9b6cb66058792a84ca9701fea5",
+    "OLP-0461": "107834a5350deaeee39cbfc282b249771573ea5bbd11b429ff101a53002a478b",
+    "OLP-0462": "95ff03d5d65685ac83ad250fbcc394b8dd4f248f195b6710c82b8f47046b952f"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0461",
+      "finding": "Modal prefix is a nonempty positive-integer world name; used/new is branch-relative."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "finding": "T-Box/F-Diamond require used; F-Box/T-Diamond require new, preserving soundness."
+    }
+  ],
+  "formula_policy": "All 34 blocks preserve math, identifiers, tags, environments, tableau trees and term tokens; local-language words in text math and rule tables are localized.",
+  "unresolved": "د مودالي تابلو د مخکښ عين پاکستانۍ اصطلاح لنډمهالې ده؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "44c97b0349b20feab8fd04d71307949cac1898151cc7a05533f8f341ea07bace",
+  "next_executable_action": "Run independent cumulative and canonical QA for OLP-0460–0462; then continue OLP-0463."
+}

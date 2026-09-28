@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 459,
-    "structural_pass": 459,
+    "draft_units": 462,
+    "structural_pass": 462,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B140-FILTRATION-CHAPTER-CLOSE",
+  "batch": "PS-B141-MODAL-TABLEAUX-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14943,6 +14943,88 @@
         "OLNML-030"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0460",
+      "path": "content/normal-modal-logic/tableaux/tableaux.tex",
+      "source_sha256": "58eea9ef8caa03576eb40d2be64cbd3d5dbfc07e1bb052af3558481e9f7d8f1b",
+      "translation_sha256": "1bd766fbfc5e41fea7619dafddbee5757d172e26cb41f983f1385e74fe30de7e",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0461",
+      "path": "content/normal-modal-logic/tableaux/introduction.tex",
+      "source_sha256": "87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54",
+      "translation_sha256": "f7f0a9d892e2df972f4858f9cec06b638582bd4cfaa7ac885d65aaba6a1b0c9d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0462",
+      "path": "content/normal-modal-logic/tableaux/rules-for-K.tex",
+      "source_sha256": "781f917de40a4b8e0c38ade5e7cd1d9eab39a629563df7f6d07e0434ab5dffe3",
+      "translation_sha256": "f64d4b7b9ed6cb0a097b4f75d4ff215675db90612a0ed10fe40932edea012a28",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_tableau_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -21863,6 +21945,138 @@
       "passage": "remaining exercises",
       "reverse_paraphrase": "Axioms B and 5 are left as symmetry and Euclidean exercises respectively.",
       "finding": "د تمرينونو ماهيت نۀ دے بدل شوے."
+    },
+    {
+      "unit_id": "OLP-0460",
+      "passage": "chapter scope",
+      "reverse_paraphrase": "The chapter concerns prefixed modal tableaux, not ordinary first-order tableaux.",
+      "finding": "د مخکښ‌لرونکې مودالي موضوع قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0460",
+      "passage": "editorial draft",
+      "reverse_paraphrase": "The source explicitly labels the chapter a draft and calls for more examples and completeness proofs.",
+      "finding": "د نيمګړتيا اداري يادونه پټه نۀ ده."
+    },
+    {
+      "unit_id": "OLP-0460",
+      "passage": "imports",
+      "reverse_paraphrase": "Nine chapter imports and the end hook remain unchanged.",
+      "finding": "د لوستونکي د جوړښت واردونې عين دي."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "signed formula",
+      "reverse_paraphrase": "A signed formula pairs a truth sign with a sentence.",
+      "finding": "د رښتياوالي نښه او جمله دواړه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "branch growth",
+      "reverse_paraphrase": "Rules add one or two tips and produce simpler formulas.",
+      "finding": "د څانګې د غځېدو او پېچلتيا جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "closure",
+      "reverse_paraphrase": "A branch closes with matching true and false signs for the same formula.",
+      "finding": "د تړلو د دواړو نښو شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "derivation",
+      "reverse_paraphrase": "A closed tableau shows initial signed assumptions unsatisfiable.",
+      "finding": "د استنتاج د نۀ‌پوره‌کېدو معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "finite premises",
+      "reverse_paraphrase": "Gamma proves A iff a finite subset Gamma0 yields a closed tableau with false A and true premises.",
+      "finding": "د متناهي فرعي سټ او غلط A قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "modal extension",
+      "reverse_paraphrase": "Modal tableaux extend signed formulas and add Box/Diamond rules.",
+      "finding": "د مودالي غځونې دواړه اړخونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "prefix domain",
+      "reverse_paraphrase": "A prefix is a nonempty finite sequence of positive integers.",
+      "finding": "د لړۍ مثبت‌والي او ناخالي‌والي ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "prefix notation",
+      "reverse_paraphrase": "Dots separate components; sigma.n equals sigma concatenated with n.",
+      "finding": "د مخکښ د ليکدود او غځونې معنا ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0461",
+      "passage": "world interpretation",
+      "reverse_paraphrase": "Sigma names a world and sigma.n names an accessible successor.",
+      "finding": "د لاسرسي د نړۍو جهت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "propositional rules",
+      "reverse_paraphrase": "Propositional rules keep the same sigma prefix at every conclusion.",
+      "finding": "د قضيېيزو قاعدو مخکښ عين ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "closure prefix",
+      "reverse_paraphrase": "Closure requires both matching formula and matching prefix.",
+      "finding": "د نړۍ د نوم يووالی لازم ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "assumptions",
+      "reverse_paraphrase": "All assumptions use one common prefix, conventionally 1.",
+      "finding": "د فرضونو ګډ مخکښ ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "modal conclusion",
+      "reverse_paraphrase": "A modal rule conclusion has prefix sigma.n.",
+      "finding": "د پايلې مخکښ غځونه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "used pair",
+      "reverse_paraphrase": "T-Box and F-Diamond require an already used sigma.n on the same branch.",
+      "finding": "د کارېدلي مخکښ دواړه قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "new pair",
+      "reverse_paraphrase": "F-Box and T-Diamond require a new sigma.n on the same branch.",
+      "finding": "د نوي مخکښ دواړه قاعدې عين دي."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "table direction",
+      "reverse_paraphrase": "The used/new labels in the K rule table match each modal rule.",
+      "finding": "د دواړو جدولونو متن او رياضي يو شان دي."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "first unsoundness",
+      "reverse_paraphrase": "Box A does not entail Diamond A; dropping the used condition creates a false closed tableau.",
+      "finding": "د لومړي ناسم استنتاج منع ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "second unsoundness",
+      "reverse_paraphrase": "Diamond A does not entail Box A; dropping the new condition creates a false closed tableau.",
+      "finding": "د دويم ناسم استنتاج منع ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0462",
+      "passage": "tag alternatives",
+      "reverse_paraphrase": "All Box, Diamond and mixed tagged tableau alternatives stay exactly in place.",
+      "finding": "د ټولو اختياري څانګو فورمولونه او کوډ عين دي."
     }
   ],
   "builds": [

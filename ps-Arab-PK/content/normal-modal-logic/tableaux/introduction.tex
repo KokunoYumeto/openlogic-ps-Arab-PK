@@ -1,0 +1,64 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{int}
+
+\olsection{پېژندنه}
+
+!!^{tableau}s د !!{signed
+  formula}s ځانګړې (ښکته څانګې جوړوونکې)
+ونې دي؛ يعنې داسې جوړې چې د رښتياوالي نښه ($\True$ يا
+$\False$) او !!a{sentence} لري:
+\[
+\sFmla{\True}{!A} \text{ يا } \sFmla{\False}{!A}.
+\]
+!!^a{tableau} د يو شمېر \emph{فرضونو} څخه پيلېږي۔ هر بل
+!!{signed formula} د يوې استنتاجي قاعدې په کارولو جوړېږي۔ ځينې
+استنتاجي قاعدې د ونې يوې څوکې ته يو يا څو !!{signed formula}s
+زياتوي؛ نورې دوه نوې څوکې جوړوي، چې دوه څانګې ترې پيدا کېږي۔
+د قاعدو په پايله کښې داسې !!{signed formula}s راځي چې د هغو
+!!{formula} د هغې !!{signed formula} له فارمول څخه لږ پېچلے وي چې قاعده
+پرې پلې شوې وه۔ کله چې په يوه څانګه کښې دواړه
+$\sFmla{\True}{!A}$ او $\sFmla{\False}{!A}$ وي، څانګه
+\emph{تړلې} بولو۔ که د !!a{tableau} هره څانګه تړلې وي، ټول
+!!{tableau} تړلے دے۔ تړلے !!{tableau} داسې !!a{derivation}
+دے چې ښيي د !!{tableau} د پيل !!{signed formula}s سټ نۀ شي پوره
+کېدے۔ په دې سره د~$\Proves$ اړيکه تعريفولے شو:
+$\Gamma \Proves !A$ هله او يوازې هله چې داسې متناهي
+سټ~$\Gamma_0 = \{!B_1, \dots, !B_n\} \subseteq \Gamma$ وي
+چې د لاندې فرضونو لپاره تړلے !!{tableau} موجود وي:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+د مودالي منطقونو لپاره بايد د !!{signed
+formula} مفهوم وغځوو
+او داسې قاعدې هم زياتې کړو چې
+\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ او
+    $\Diamond$}}{$\Diamond$} راونغاړي۔ په مودالي !!{tableau}s
+کښې !!{formula}s د نښې ($\True$ يا $\False$) تر څنګ
+\emph{مخکښونه}~$\sigma$ هم لري۔ مخکښونه د مثبتو صحيح عددونو
+ناخالي لړۍ دي، يعنې $\sigma \in (\PosInt)^* \setminus
+\{\emptyseq\}$۔ موږ دا مخکښونه له شاوخوا
+$\tuple{\ }$ پرته ليکو، او جلا !!{element}s د~$,$ پر ځای
+په~$.$ بېلوو۔ که $\sigma$ مخکښ وي، نو $\sigma.n$ له
+$\sigma \concat \tuple{n}$ سره برابر دے؛ د بېلګې په توګه،
+که $\sigma = 1.2.1$ وي، نو $\sigma.3$ برابر $1.2.1.3$
+دے۔ نو د بېلګې په توګه،
+\[
+\sFmla{\True}{\Box !A \lif !A}[1.2]
+\]
+يو \emph{مخکښ‌لرونکے !!{signed formula}} دے (يا په لنډ ډول
+\emph{مخکښ‌لرونکے !!{formula}})۔
+
+د مفهوم له مخې، مخکښ په داسې مدل کښې د يوې نړۍ نوم دے چې ښايي
+د !!a{tableau} د يوې څانګې !!{formula}s پوره کړي؛ که $\sigma$
+د کومې نړۍ نوم وي، نو $\sigma.n$ د هغې نړۍ نوم دے چې له
+($\sigma$ نومې) نړۍ څخه د لاسرسي وړ وي۔
+
+\end{document}

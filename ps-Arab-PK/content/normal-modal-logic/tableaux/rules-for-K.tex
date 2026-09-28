@@ -1,0 +1,274 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: rules-for-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{rul}
+
+\olsection{د \Ax{K} لپاره قاعدې}
+
+د عامو قضيېيزو رابطو قاعدې د عامو نښه لرونکو قضيېيزو
+!!{tableau}s له قاعدو سره يو شان دي؛ يوازې مخکښونه ورسره
+زياتېږي۔ په هر حالت کښې، پر نښه لرونکي !!{formula}
+$\sFmla{S}{!A}[\sigma]$ پلې شوې قاعده نوي !!{formula}s
+جوړوي چې د هغو مخکښ هم~$\sigma$ وي۔ دا بايد له مفهومي پلوه
+څرګنده وي: که $!A \land !B$ په~$\sigma$ نومې نړۍ کښې رښتينے
+وي، نو $!A$ او $!B$ هم په~$\sigma$ کښې رښتيني دي (نۀ په
+بله نړۍ کښې)۔ قضيېيزې قاعدې په \olref{tab:prop-rules} کښې
+راټولې شوې دي۔
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \DisplayProof
+    \\[1ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid
+      \quad \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{د قضيېيزو رابطو لپاره د مخکښ‌لرونکي !!{tableau} قاعدې}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+د تړلو شرط د عامو !!{tableau}s د شرط په شان دے، خو دلته بايد
+يوازې !!{formula}s نه، بلکې مخکښونه هم سره يو شان وي۔ نو که
+په يوه څانګه کښې دواړه
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{او}\quad \sFmla{\False}{!A}[\sigma]
+\]
+د کوم مخکښ~$\sigma$ او !!{formula}~$!A$ لپاره وي، هغه څانګه
+تړلې ده۔
+
+د فرضونو د ايښودلو قاعدې هم د عامو !!{tableau}s په شان دي، خو
+د فرضونو لپاره تل مخکښ~$1$ کاروو۔ (د مخکښ ټاکنه مهمه نۀ ده،
+تر هغو چې د ټولو فرضونو لپاره يو شان وي۔) نو، د بېلګې په توګه،
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+هله او يوازې هله وايو چې د لاندې فرضونو لپاره تړلے تابلو وي:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+د مودالي \iftag{prvBox}{\iftag{prvDiamond}{نښو~$\Box$
+    او}{نښې~$\Box$}}{نښې}\iftag{prvDiamond}{~$\Diamond$}{}
+لپاره، پر هغه !!a{formula} چې مخکښ يې~$\sigma$ دے د قاعدې
+د پلي کېدو پايلې مخکښ $\sigma.n$ وي۔ خو کوم $n$ روا دے، دا
+په دې پورې تړلې ده چې نښه~$\True$ ده که~$\False$۔
+
+\iftag{prvBox}{د $\TRule{\True}{\Box}$ قاعده هغه څانګه چې
+  $\sFmla{\True}{\Box !A}[\sigma]$ لري، په
+  $\sFmla{\True}{!A}[\sigma.n]$ غځوي۔\iftag{prvDiamond}{
+    همداسې، }{}}{}\iftag{prvDiamond}{د
+  $\TRule{\False}{\Diamond}$ قاعده هغه څانګه چې
+  $\sFmla{\False}{\Diamond !A}[\sigma]$ لري، په
+  $\sFmla{\False}{!A}[\sigma.n]$ غځوي۔}{}
+\iftag{notprvBox,notprvDiamond}{دا قاعده}{دا قاعدې} يوازې د
+هغې~$\sigma.n$ لپاره پلې کېدے شي چې په اړونده څانګه کښې
+\emph{لا مخکې} راغلې وي۔ داسې مخکښ په څانګه کښې «کارېدلے» بولو۔
+
+\iftag{prvBox}{د $\TRule{\False}{\Box}$ قاعده هغه څانګه چې
+  $\sFmla{\False}{\Box !A}[\sigma]$ لري، په
+  $\sFmla{\False}{!A}[\sigma.n]$ غځوي۔\iftag{prvDiamond}{
+    همداسې، }{}}{}\iftag{prvDiamond}{د
+  $\TRule{\True}{\Diamond}$ قاعده هغه څانګه چې
+  $\sFmla{\True}{\Diamond !A}[\sigma]$ لري، په
+  $\sFmla{\True}{!A}[\sigma.n]$ غځوي۔}{}
+خو \iftag{notprvBox,notprvDiamond}{دا قاعده}{دا قاعدې} يوازې
+د هغې~$\sigma.n$ لپاره پلې کېدے شي چې په اړونده څانګه کښې
+\emph{لا مخکې نۀ} وي راغلې۔ داسې مخکښ په څانګه کښې «نوے» بولو۔
+
+قاعدې په \olref{tab:rules-K} کښې ورکړل شوې دي۔
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[\sigma]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma.n]}
+      \DisplayProof\\
+      $\sigma.n$ کارېدلے دے & $\sigma.n$ نوے دے
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[\sigma]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma.n]}
+      \DisplayProof\\
+      $\sigma.n$ نوے دے & $\sigma.n$ کارېدلے دے
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{د \Ax{K} مودالي قاعدې۔}
+  \ollabel{tab:rules-K}
+\end{table}
+
+د \iftag{prvBox}{\TRule{\True}{\Box}}{\TRule{\False}{\Diamond}}
+لپاره د مخکښ د مخکې کارېدلو قيد اړين دے؛ ګنې لاندې تابلو به
+هم تړلے !!{tableau} ګڼل کېده:
+\iftag{notprvBox,notprvDiamond}{%
+  \iftag{prvBox}{%
+  \begin{oltableau}
+    [\pFmla{\True}{\Box \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[1]}
+          [\pFmla{\True}{\Box\lnot\formula{A}}{1},
+            just ={\TRule{\False}{\lnot}[2]}
+            [\pFmla{\True}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\True}{\Box}[4]}
+              [\pFmla{\False}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  }{
+  \begin{oltableau}
+    [\pFmla{\True}{\lnot\Diamond\lnot \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Diamond\formula{A}}{1}, just = \TAss
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\False}{\Diamond}[2]}
+          [\pFmla{\False}{\Diamond\lnot\formula{A}}{1},
+            just ={\TRule{\True}{\lnot}[1]}
+            [\pFmla{\False}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\False}{\Diamond}[4]}
+              [\pFmla{\True}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+}}{
+  \begin{oltableau}
+    [\pFmla{\True}{\Box \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Diamond \formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[1]}
+          [\pFmla{\False}{\formula{A}}{1.1},
+            just = {\TRule{\False}{\Diamond}[2]}, close]
+        ]
+      ]
+    ]
+\end{oltableau}}
+
+خو $\Box \formula{A} \Entails/ \Diamond \formula{A}$؛ نو زموږ
+ثبوتي نظام به ناسم وي۔ همداسې، $\Diamond \formula{A} \Entails/
+\Box \formula{A}$؛ خو که د
+\iftag{prvBox}{\TRule{\False}{\Box}}{\TRule{\True}{\Diamond}}
+لپاره د نوي مخکښ قيد نۀ وي، لاندې تابلو به تړلے وي:
+\iftag{notprvBox,notprvDiamond}{%
+  \iftag{prvBox}{%
+  \begin{oltableau}
+    [\pFmla{\True}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[2]}
+          [\pFmla{\False}{\Box\lnot\formula{A}}{1},
+            just ={\TRule{\True}{\lnot}[1]}
+            [\pFmla{\False}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\False}{\Box}[4]}
+              [\pFmla{\True}{\formula{A}}{1.1},
+                  just ={\TRule{\False}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  }{
+  \begin{oltableau}
+    [\pFmla{\True}{\Diamond \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\lnot\Diamond\lnot\formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Diamond}[1]}
+          [\pFmla{\True}{\Diamond\lnot\formula{A}}{1},
+            just ={\TRule{\False}{\lnot}[2]}
+            [\pFmla{\True}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\True}{\Diamond}[4]}
+              [\pFmla{\False}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+}}{
+  \begin{oltableau}
+    [\pFmla{\True}{\Diamond \formula{A}}{1}, just = \TAss,name=one
+      [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss, name=two
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Diamond}[1]}
+          [\pFmla{\False}{\formula{A}}{1.1},
+            just = {\TRule{\False}{\Box}[2]}, close]
+        ]
+      ]
+    ]
+  \end{oltableau}}
+
+\end{document}
