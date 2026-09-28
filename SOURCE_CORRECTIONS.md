@@ -3107,3 +3107,42 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - Treatment: Restore not-A membership in the negation converse; replace implies by iff in the biconditional converse assumption. Add adjacent Pashto notices for both repairs and for the source disjunction proof omitting its converse; preserve the supplied proof and all exercises.
 - Reason: Completeness forces not-A membership when A is absent. The biconditional property and the following negated biconditional force the converse assumption to concern iff. The source disjunction branch proves the forward direction only; the omission is disclosed without inserting a new proof.
 - Exactly two inline math spans change. All optional tags and exercises remain; frozen English is unchanged.
+
+## OLNML-019
+
+- واحد: OLP-0444۔
+- منجمده سرچينه: `content/normal-modal-logic/completeness/lindenbaums-lemma.tex:30`؛ SHA-256 `1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b`۔
+- پښتو متن: `ps-Arab-PK/content/normal-modal-logic/completeness/lindenbaums-lemma.tex`؛ SHA-256 `46d105d5803608c4be1229210767026d08f2787dae4500c2d68af2b85e45764a`۔
+- چلند: د شمېرنې په بېلګه کښې په هر پړاو کښې تر هغه پړاو زيات نۀ اوږدوالے اخلو، او په خپل ځای ئې څرګندوو. تکرارونه روا پاتې دي؛ د جوړونې فورمولونه نۀ بدلوي.
+- وجه: د ژبې هر متغير يو اټومي فارمول دے. د سرچينې په محدود شاخص او عين اوږدوالي لړ کښې اټومي p2 نۀ راځي. تر پړاو پورې اوږدوالے هر فارمول په محدود پړاو کښې شاملوي او د هر پړاو لړ متناهي ساتي.
+- سمون په خپل ځای په پښتو څرګند شوے؛ منجمده انګرېزي سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-020
+
+- واحد: OLP-0445۔
+- منجمده سرچينه: `content/normal-modal-logic/completeness/modalities-ccs.tex:95,96`؛ SHA-256 `92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6`۔
+- پښتو متن: `ps-Arab-PK/content/normal-modal-logic/completeness/modalities-ccs.tex`؛ SHA-256 `62236716cf72702cc6b330f7c21582722a105e7e6fb4249eb6811a19d736af00`۔
+- چلند: د دواړو محدودو شرطي ځنځيرونو وروستے اندېکس له n نه k ته سمېږي، او په خپل ځای څرګندېږي. يوازې دوه رياضيکي عبارتونه بدلېږي.
+- وجه: د ثبوت محدودې فرضيې د k په شاخص پای ته رسېږي. د هماغو فرضيو ځنځيرونه او د Box مخې ته زياتولو قاعده هم بايد هماغه وروستے شاخص ولري.
+- سمون په خپل ځای په پښتو څرګند شوے؛ منجمده انګرېزي سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-021
+
+- واحد: OLP-0445۔
+- منجمده سرچينه: `content/normal-modal-logic/completeness/modalities-ccs.tex:109`؛ SHA-256 `92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6`۔
+- پښتو متن: `ps-Arab-PK/content/normal-modal-logic/completeness/modalities-ccs.tex`؛ SHA-256 `62236716cf72702cc6b330f7c21582722a105e7e6fb4249eb6811a19d736af00`۔
+- چلند: د دويمې Box لمې په منځني اشتقاق کښې د هماغه نظام فرعي نښه بېرته راوستل شوې، او په خپل ځای څرګنده شوې ده. يوازې يو رياضيکي عبارت بدلېږي.
+- وجه: منځنے اشتقاق د لومړۍ لمې له لارې په هماغه ټاکلي مودالي نظام کښې ترلاسه کېږي. د نظام د فرعي نښې غورځول ئې د لازم اشتقاق په نسبت ناسمه يا مبهمه دعوه جوړوي.
+- سمون په خپل ځای په پښتو څرګند شوے؛ منجمده انګرېزي سرچينه نۀ ده بدله شوې۔
+
+
+## OLNML-022
+
+- واحد: OLP-0445۔
+- منجمده سرچينه: `content/normal-modal-logic/completeness/modalities-ccs.tex:50`؛ SHA-256 `92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6`۔
+- پښتو متن: `ps-Arab-PK/content/normal-modal-logic/completeness/modalities-ccs.tex`؛ SHA-256 `62236716cf72702cc6b330f7c21582722a105e7e6fb4249eb6811a19d736af00`۔
+- چلند: د Diamond تشريحي څانګې د اړيکې ټاکلو جمله د دوه اړخيز تعريف په توګه څرګنده شوې، او د سرچينې د «هر کله چې» لنډ بيان سمون په خپل ځای ښودل شوے دے. هېڅ رياضيکي عبارت نۀ بدلوي.
+- وجه: مطلوب لور له اړيکې نه د غړيتوب شرط ته ځي. يوازې د شرط نه اړيکې ته «هر کله چې» دا لور نۀ تضمينوي. د همدې متن د «هله او يوازې هله» اشاره او د کانوني مدل ورپسې تعريف دواړه دوه اړخيز شرط ټاکي.
+- سمون په خپل ځای په پښتو څرګند شوے؛ منجمده انګرېزي سرچينه نۀ ده بدله شوې۔

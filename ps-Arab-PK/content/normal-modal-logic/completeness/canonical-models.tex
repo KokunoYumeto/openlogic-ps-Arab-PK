@@ -1,0 +1,36 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: canonical-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmd}
+
+\olsection{کانوني مدلونه}
+
+د يوه مودالي نظام~$\Sigma$ دپاره \emph{کانوني مدل} هغه ځانګړے
+مدل~$\mModel{M^\Sigma}$ دے چې نړۍوې ئې ټول بشپړ
+$\Sigma$-سازګار سټونه دي۔ د لاسرسي اړيکه~$R^\Sigma$ او
+ارزښت ټاکنه $V^\Sigma$ ئې داسې تعريف شوي دي چې په يوه
+نړۍ~$\Delta$ کښې رښتيني !!{formula}s په عين ډول هغه
+!!{formula}s وي چې~$\Delta$ ترې جوړ دے۔
+
+\begin{defn}
+  $\Sigma$ دې يو نورمال مودالي منطق وي۔ د $\Sigma$ دپاره
+  \emph{کانوني مدل} $\mModel{M}^\Sigma = \tuple{W^\Sigma, R^\Sigma,
+    V^\Sigma}$ دے، چې:
+  \begin{enumerate}
+  \item $W^\Sigma = \Setabs{ \Delta }{\Delta \text{
+      بشپړ $\Sigma$-سازګار دے} }$.
+  \item $R^\Sigma \Delta\Delta'$ هله او يوازې هله وي چې
+    \iftag{prvBox}{$\Box^{-1}\Delta \subseteq
+      \Delta'$}{$\Diamond\Delta' \subseteq \Delta$}.
+  \item $V^\Sigma(p) = \Setabs{\Delta}{p \in \Delta}$.
+  \end{enumerate}
+\end{defn}
+
+
+\end{document}
+

@@ -1,0 +1,116 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{lin}
+
+\olsection{د لينډنباوم لمه}
+
+د لينډنباوم لمه ثابتوي چې د !!{formula}s هر $\Sigma$-سازګار سټ
+لږ تر لږه په يوه \emph{بشپړ} $\Sigma$-سازګار سټ کښې شامل دے۔
+د کانوني مدل زموږ جوړونه به وښيي چې د هر بشپړ $\Sigma$-سازګار
+سټ~$\Delta$ دپاره په کانوني مدل کښې داسې يوه نړۍ شته چې ټول او
+يوازې هغه !!{formula}s پکې رښتيا وي چې په~$\Delta$ کښې دي۔ نو د
+لينډنباوم لمه ډاډ راکوي چې هر $\Sigma$-سازګار سټ د کانوني مدل
+په کومه نړۍ کښې رښتيا دے۔
+
+\begin{thm}[د لينډنباوم لمه]\ollabel{thm:lindenbaum}
+  که $\Gamma$ $\Sigma$-سازګار وي، نو داسې يو بشپړ $\Sigma$-سازګار
+  سټ~$\Delta$ شته چې~$\Gamma$ غځوي۔
+\end{thm}
+
+\begin{proof}
+$!A_0$، $!A_1$، \dots{} دې د ژبې د ټولو فارمولونو يو بشپړ لړ
+وي (تکرارونه روا دي)۔ د بېلګې په توګه، لومړے $\Obj p_0$ په لړ
+کښې راوړئ، او په هر پړاو $n \ge 1$ کښې هغه متناهي شمېر فارمولونه
+په لړ کښې راوړئ چې اوږدوالے ئې تر~$n$ زيات نۀ وي او يوازې له
+$\Obj p_0$، \dots،~$\Obj p_n$ څخه متغيرونه کاروي۔ په منجمده
+سرچينه کښې د پړاو په دې بېلګه کښې يوازې د هماغه اوږدوالي فارمولونه
+ليکل شوي دي؛ دلته د بشپړې شمېرنې دپاره تر هغه اوږدوالي پورې ټول
+فارمولونه اخلو، څو د لوړو شاخصونو لنډ فارمولونه هم په لړ کښې راشي۔
+د !!{formula}s سټونه~$\Delta_n$ پر~$n$ د استقرا له لارې تعريفوو،
+او بيا $\Delta = \bigcup_n \Delta_n$ ږدو۔ لومړے $\Delta_0 = \Gamma$
+ږدو۔ که $\Delta_n$ تعريف شوے وي، نو $\Delta_{n+1}$ داسې تعريفوو:
+\[
+\Delta_{n+1} =
+\begin{cases}
+  \Delta_n \cup \{!A_n\}, & \text{که $\Delta_n \cup \{ !A_n\}$
+    $\Sigma$-سازګار وي؛} \\
+  \Delta_n \cup \{ \lnot !A_n\}, & \text{که داسې نۀ وي۔}
+\end{cases}
+\]
+اوس $\Delta = \bigcup_{n=0}^\infty \Delta_n$ ږدو۔
+
+بايد وښيو چې دا تعريف په رښتيا داسې يو سټ~$\Delta$ راکوي چې
+غوښتل شوي خاصيتونه لري، يعنې $\Gamma \subseteq \Delta$ او
+$\Delta$ بشپړ $\Sigma$-سازګار دے۔
+
+دا څرګنده ده چې $\Gamma \subseteq \Delta$، ځکه د جوړونې له مخې
+$\Delta_0 \subseteq \Delta$ او $\Delta_0 = \Gamma$ دي۔ په رښتيا،
+د هر~$n$ دپاره $\Delta_n \subseteq \Delta$، ځکه $\Delta$ د ټولو
+سټونو~$\Delta_n$ اتحاد دے۔ (چې د جوړونې په هر ګام کښې له مخکې
+جوړ شوي سټ سره !!a{formula} زياتوو، نو $\Delta_n \subseteq
+\Delta_{n+1}$؛ او چې $\subseteq$ انتقالي دے، نو هر کله چې
+$n \le m$ وي، $\Delta_n \subseteq \Delta_{m}$ وي۔) د جوړونې په
+هر پړاو کښې يا $!A_n$ يا $\lnot !A_n$ زياتوو، او هر !!{formula}
+د ټولو فارمولونو~$!A_n$ په لړ کښې (لږ تر لږه يو ځل) راځي۔ نو د
+هر $!A$ دپاره يا $!A \in \Delta$ وي يا $\lnot !A \in \Delta$؛
+نو د تعريف له مخې $\Delta$ بشپړ دے۔
+
+په پای کښې بايد وښيو چې $\Delta$ $\Sigma$-سازګار دے۔ د دې دپاره
+ښيو چې (a) که $\Delta$ $\Sigma$-ناسازګار وے، نو کوم $\Delta_n$
+به $\Sigma$-ناسازګار وے، او (b) ټول سټونه~$\Delta_n$
+$\Sigma$-سازګار دي۔
+
+نو فرض کړئ چې $\Delta$ $\Sigma$-ناسازګار وے۔ بيا $\Delta
+\Proves[\Sigma] \lfalse$، يعنې داسې $!A_1$، \dots،~$!A_k \in
+\Delta$ شته چې $\Sigma \Proves !A_1 \lif (!A_2 \lif \cdots (!A_k
+\lif \lfalse)\dots)$۔ چې $\Delta = \bigcup_{n=0}^\infty \Delta_n$
+دے، نو هر $!A_i \in \Delta_{n_i}$ د کوم~$n_i$ دپاره دے۔ $n$ دې
+په دې شاخصونو کښې تر ټولو لوے وي۔ چې $n_i \le n$، نو
+$\Delta_{n_i} \subseteq \Delta_n$۔ نو ټول $!A_i$ په کوم يوه
+سټ~$\Delta_n$ کښې دي۔ دا به په دې معنا وي چې $\Delta_n
+\Proves[\Sigma] \lfalse$، يعنې $\Delta_n$ $\Sigma$-ناسازګار دے۔
+
+د دې د ښودلو دپاره چې هر $\Delta_n$ $\Sigma$-سازګار دے، پر~$n$
+ساده استقرا کاروو۔ $\Delta_0 = \Gamma$، او فرض مو کړے و چې
+$\Gamma$ $\Sigma$-سازګار دے۔ نو دعوه د $n = 0$ دپاره سمه ده۔
+اوس فرض کړئ چې د $n$ دپاره سمه وي، يعنې $\Delta_n$
+$\Sigma$-سازګار وي۔ $\Delta_{n+1}$ يا $\Delta_n \cup \{!A_n\}$
+دے که دا $\Sigma$-سازګار وي، او که داسې نۀ وي، نو
+$\Delta_n \cup \{\lnot!A_n\}$ دے۔ په لومړي حالت کښې
+$\Delta_{n+1}$ څرګند $\Sigma$-سازګار دے۔ خو د
+\olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-c}
+له مخې يا $\Delta_n \cup \{!A_n\}$ يا
+$\Delta_n \cup \{\lnot!A_n\}$ سازګار دے؛ نو په دويم حالت کښې هم
+$\Delta_{n+1}$ سازګار دے۔
+\end{proof}
+
+\begin{cor}\ollabel{cor:provability-characterization}
+  $\Gamma \Proves[\Sigma] !A$ هله او يوازې هله وي چې $!A \in \Delta$
+  د هر هغه بشپړ $\Sigma$-سازګار سټ~$\Delta$ دپاره وي چې
+  $\Gamma$ غځوي (په دې کښې هغه حالت هم شامل دے چې
+  $\Gamma = \emptyset$، او په هغه حالت کښې د مودالي نظام~$\Sigma$
+  يوه بله ځانګړونه ترلاسه کوو)۔
+\end{cor}
+
+\begin{proof}
+  فرض کړئ چې $\Gamma \Proves[\Sigma] !A$، او $\Delta$ دې هر هغه
+  بشپړ $\Sigma$-سازګار سټ وي چې $\Gamma$ غځوي۔ که $!A
+  \notin \Delta$ وي، نو د اعظميت له مخې $\lnot!A \in \Delta$،
+  او بيا $\Delta \Proves[\Sigma] !A$ (د يکنواختۍ له مخې) او
+  $\Delta \Proves[\Sigma] \lnot!A$ (د انعکاس له مخې)؛ نو
+  $\Delta$ ناسازګار دے۔ په سرچپه لوري، که
+  $\Gamma \Proves/[\Sigma] !A$ وي، نو
+  $\Gamma \cup \{ \lnot!A\}$ $\Sigma$-سازګار دے، او د لينډنباوم
+  د لمې له مخې داسې يو بشپړ سازګار سټ~$\Delta$ شته چې
+  $\Gamma \cup \{ \lnot!A \}$ غځوي۔ د سازګارۍ له مخې $!A
+  \notin \Delta$.
+\end{proof}
+
+\end{document}
+

@@ -1,0 +1,98 @@
+{
+  "schema": "ps-b131-canonical-construction-staging-qa/1",
+  "unit_ids": [
+    "OLP-0444",
+    "OLP-0445",
+    "OLP-0446"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0444",
+      "source_path": "content/normal-modal-logic/completeness/lindenbaums-lemma.tex",
+      "source_sha256": "1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b",
+      "target_sha256": "46d105d5803608c4be1229210767026d08f2787dae4500c2d68af2b85e45764a",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "source_only_math": [],
+      "target_only_math": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "all_math": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "enumeration_disclosure": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0445",
+      "source_path": "content/normal-modal-logic/completeness/modalities-ccs.tex",
+      "source_sha256": "92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6",
+      "target_sha256": "62236716cf72702cc6b330f7c21582722a105e7e6fb4249eb6811a19d736af00",
+      "source_blocks": 31,
+      "target_blocks": 31,
+      "source_only_math": [
+        "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_n\\lif!A)\\cdots)$",
+        "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_n\\lif\\Box!A)\\cdots)$",
+        "$\\Box\\Box^{-1}\\Gamma\\Proves\\Box!A$"
+      ],
+      "target_only_math": [
+        "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_k\\lif!A)\\cdots)$",
+        "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_k\\lif\\Box!A)\\cdots)$",
+        "$\\Box\\Box^{-1}\\Gamma\\Proves[\\Sigma]\\Box!A$"
+      ],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "all_math": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "three_adjacent_disclosures": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0446",
+      "source_path": "content/normal-modal-logic/completeness/canonical-models.tex",
+      "source_sha256": "7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3",
+      "target_sha256": "b2d2449f63de94cdd9bcb9ce5e2267ee772f63a4a426f80fd7e22e138c41e3f0",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "source_only_math": [],
+      "target_only_math": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "term_tokens": true,
+        "all_math": true,
+        "macro_names": true,
+        "source_comments": true,
+        "unicode_nfc": true,
+        "no_replacement_character": true,
+        "canonical_scope": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "new_blocks": 55,
+  "all_checks_pass": true
+}

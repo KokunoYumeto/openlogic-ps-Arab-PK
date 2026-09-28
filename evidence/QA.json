@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 443,
-    "structural_pass": 443,
+    "draft_units": 446,
+    "structural_pass": 446,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
+  "batch": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14418,6 +14418,106 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0444",
+      "path": "content/normal-modal-logic/completeness/lindenbaums-lemma.tex",
+      "source_sha256": "1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b",
+      "translation_sha256": "46d105d5803608c4be1229210767026d08f2787dae4500c2d68af2b85e45764a",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-019"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "path": "content/normal-modal-logic/completeness/modalities-ccs.tex",
+      "source_sha256": "92b97da95c28f21f5806bcce481e64571dc3a82d5d1c315bcaf1c569c90d00a6",
+      "translation_sha256": "62236716cf72702cc6b330f7c21582722a105e7e6fb4249eb6811a19d736af00",
+      "source_blocks": 31,
+      "target_blocks": 31,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-020",
+        "OLNML-021",
+        "OLNML-022"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_n\\lif!A)\\cdots)$",
+          "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_n\\lif\\Box!A)\\cdots)$",
+          "$\\Box\\Box^{-1}\\Gamma\\Proves\\Box!A$"
+        ],
+        "target_only": [
+          "$\\Sigma\\Proves!B_1\\lif(!B_2\\lif\\cdots(!B_k\\lif!A)\\cdots)$",
+          "$\\Sigma\\Proves\\Box!B_1\\lif(\\Box!B_2\\lif\\cdots(\\Box!B_k\\lif\\Box!A)\\cdots)$",
+          "$\\Box\\Box^{-1}\\Gamma\\Proves[\\Sigma]\\Box!A$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0446",
+      "path": "content/normal-modal-logic/completeness/canonical-models.tex",
+      "source_sha256": "7d21c989f62f34ed387f7cbaef899f8b6d2c37467306110765c7395f70b1e4c3",
+      "translation_sha256": "b2d2449f63de94cdd9bcb9ce5e2267ee772f63a4a426f80fd7e22e138c41e3f0",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -20282,6 +20382,156 @@
       "passage": "exercise",
       "reverse_paraphrase": "The four optional connective proof alternatives remain exercises, and the final problem asks to complete the property proof.",
       "finding": "Exact exercise tags and locator retained."
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "world extension",
+      "reverse_paraphrase": "Every consistent set extends to a complete consistent set; its entire membership becomes truth at a canonical world.",
+      "finding": "د سټ او نړۍ د غړيتوب/صدق دپاره ټول او يوازې شرط ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "lemma",
+      "reverse_paraphrase": "A Sigma-consistent Gamma has a complete Sigma-consistent extension Delta.",
+      "finding": "سازګاري، بشپړتيا او غځونه جلا شرطونه دي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "enumeration",
+      "reverse_paraphrase": "Repetitions are allowed; stage n lists formulas of length at most n using variable indices through n.",
+      "finding": "د سرچينې د تنګې شمېرنې سمون څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "recursive choice",
+      "reverse_paraphrase": "Start from Gamma; add A_n when consistent, otherwise not-A_n, then take the union.",
+      "finding": "دواړه څانګې او د اتحاد نښې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "inclusions",
+      "reverse_paraphrase": "The sequence is ascending and every stage is included in the union.",
+      "finding": "د انتقالي شمول استدلال ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "completeness",
+      "reverse_paraphrase": "Every formula is decided when its position in the exhaustive list is reached.",
+      "finding": "د محدود پړاو او بشپړ لړ غوښتنه ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "finite inconsistency",
+      "reverse_paraphrase": "A finite inconsistency witness in the union appears together in a largest stage.",
+      "finding": "د شاهد محدودوالے او د ټولو فرضيو يو پړاو ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "stage induction",
+      "reverse_paraphrase": "The base is Gamma; the two-branch consistency fact preserves consistency at the successor.",
+      "finding": "د صفر بنسټ او د استقرا ګام دواړه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "corollary",
+      "reverse_paraphrase": "Derivability is membership in every complete consistent extension, including empty Gamma; nonderivability gives an extension containing not-A.",
+      "finding": "دواړه لوري، تشې فرضيې او مقابل غړيتوب ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "truth scopes",
+      "reverse_paraphrase": "Box uses every accessible world and Diamond uses some accessible world; membership must match those truth clauses.",
+      "finding": "کميتونه او د صدق/غړيتوب دواړه لوري ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "accessibility stipulation",
+      "reverse_paraphrase": "The Box-extraction subset condition and Diamond-prefix subset condition define the same intended accessibility relation.",
+      "finding": "د Diamond د تعريف دوه اړخيز شرط څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "prefix definitions",
+      "reverse_paraphrase": "Prefix one modal operator to every member, or extract only members starting with that operator by removing the first operator.",
+      "finding": "استخراج معکوسه تابع يا د ټولو نښو حذف نۀ ګڼل کېږي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "boxed subset",
+      "reverse_paraphrase": "Re-prefixing extracted Box-members selects exactly the original Box-leading members, a subset of Gamma.",
+      "finding": "شمول د مساوات په دعوه نۀ دے بدل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "first lemma",
+      "reverse_paraphrase": "A finite k-premise derivation boxes each of those same k premises and the conclusion by RK.",
+      "finding": "د دواړو وروستيو اندېکسونو سمون څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "second lemma",
+      "reverse_paraphrase": "Derivability from Box-extracted Gamma boxes the conclusion relative to the same Sigma and then uses monotonicity.",
+      "finding": "د نظام فرعي نښه په خپل ځای بېرته راوستل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Box forward",
+      "reverse_paraphrase": "A Box-member puts its unboxed member into every consistent extension of the extracted set.",
+      "finding": "د هر سټ شرط ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Box converse",
+      "reverse_paraphrase": "A missing Box-member makes the extracted set with not-A consistent and hence extendible to a complete set missing A.",
+      "finding": "نقيض عکس او د لينډنباوم شاهد ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Diamond forward inclusion",
+      "reverse_paraphrase": "Membership of A in a set whose Diamond-prefix is included in Gamma gives Diamond-A membership in Gamma.",
+      "finding": "د شمول لور ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Diamond witness",
+      "reverse_paraphrase": "Diamond-A membership gives a consistent extension of Box-extracted Gamma with A, and any failed Diamond inclusion contradicts that extension.",
+      "finding": "وجودي شاهد او د نقيض استدلال ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "condition equivalence",
+      "reverse_paraphrase": "For complete consistent Gamma and Delta, Box extraction inclusion is equivalent to Diamond-prefix inclusion.",
+      "finding": "دواړه لوري د نفي او سازګارۍ له مخې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "both primitive",
+      "reverse_paraphrase": "When both operators are primitive, Dual and the Box result recover the Diamond result with the equivalent accessibility condition.",
+      "finding": "ټولې اختياري څانګې او نښې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "exercise",
+      "reverse_paraphrase": "Prove the requested alternate modal membership characterization without using the Box/Diamond condition-equivalence lemma.",
+      "finding": "د تمرين منع شوې لمه او دواړه ټاګونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "world set",
+      "reverse_paraphrase": "All complete Sigma-consistent sets are worlds of the one canonical model.",
+      "finding": "ټول سټونه ساتل شوي؛ د يوه فارمول ځانګړے مدل نۀ دے۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "relation",
+      "reverse_paraphrase": "Accessibility is exactly the Box-extraction inclusion or the Diamond-prefix inclusion selected by the source tag.",
+      "finding": "اړيکه دوه اړخيزه ده او د بېلې نړۍ شرط نۀ لري۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "valuation",
+      "reverse_paraphrase": "A propositional variable is true exactly at the worlds whose sets contain it.",
+      "finding": "ارزښت ټاکنه له غړيتوب سره تړي۔"
     }
   ],
   "builds": [

@@ -1,0 +1,268 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: modalities-ccs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{mod}
+
+\olsection{مودالي عملګر او بشپړ سازګار سټونه}
+
+\begin{explain}
+کله چې داسې يو مدل~$\mModel{M^\Sigma}$ جوړوو چې د نړۍو سټ ئې
+په کوم نورمال مودالي منطق~$\Sigma$ کښې له بشپړو
+$\Sigma$-سازګارو سټونو~$\Delta$ څخه جوړ وي، نو د دغو «نړۍو»
+تر منځ د لاسرسي يوه اړيکه~$R^\Sigma$ هم تعريفول غواړي۔ غواړو
+د لاسرسي اړيکه (او ټاکنه $V^\Sigma)$ داسې تعريف شي چې
+$\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله وي چې
+$!A \in \Delta$ وي۔ دا به څنګه وکړو؟
+
+د لاسرسي د اړيکې تر تعريف وروسته، په يوه نړۍ کښې د صدق تعريف
+دا ډاډ راکوي چې \iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$
+  هله او يوازې هله وي چې $\mSat{M^\Sigma}{!A}[\Delta']$ د ټولو
+  هغو $\Delta'$ دپاره وي چې $R^\Sigma\Delta\Delta'$ وي}
+  {$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$ هله او يوازې هله وي چې
+  $\mSat{M^\Sigma}{!A}[\Delta']$ لږ تر لږه د يوه داسې $\Delta'$
+  دپاره وي چې $R^\Sigma\Delta\Delta'$ وي}۔ د دې ثبوت چې
+$\mSat{M^\Sigma}{!A}[\Delta]$ هله او يوازې هله وي چې
+$!A \in \Delta$، دا غواړي چې په ځانګړي ډول د هغو !!{formula}s
+دپاره هم دا سمه وي چې په يوه مودالي عملګر پيل کېږي، يعنې
+\iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$ هله او يوازې هله
+  وي چې $\Box !A \in \Delta$}
+  {$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$ هله او يوازې هله وي چې
+  $\Diamond !A \in \Delta$}۔ دا غوښتنه په يوه نړۍ کښې د
+\iftag{prvBox}{$\Box !A$}{$\Diamond !A$} د صدق له تعريف سره يو
+ځای کولو څخه دا ترلاسه کېږي:
+\[
+\iftag{prvBox}{%
+  \Box!A \in \Delta \text{ هله او يوازې هله چې } !A \in \Delta' \text{
+    د هر داسې $\Delta'$ دپاره چې } R^\Sigma\Delta\Delta'}{%
+  \Diamond!A \in \Delta \text{ هله او يوازې هله چې } !A \in \Delta' \text{ لږ تر
+    لږه د يوه } \Delta' \text{ دپاره چې } R^\Sigma\Delta\Delta'}
+\]
+\iftag{prvBox}{له کيڼ نه ښي لوري ته پام وکړئ: دا وايي چې که
+  $\Box !A \in \Delta$ وي، نو د هر $!A$ او هر داسې $\Delta'$
+  دپاره چې $R^\Sigma\Delta\Delta'$ وي، $!A \in \Delta'$ وي۔ که
+  دا وټاکو چې $R^\Sigma\Delta\Delta'$ هله او يوازې هله وي چې
+  $!A \in \Delta'$ د ټولو هغو $\Box!A \in \Delta$ دپاره وي، نو
+  دا شرط پوره کېږي۔ د «هله او يوازې هله» ښي اړخ شرط داسې په لنډ
+  ډول ليکلے شو: $\Setabs{!A}{\Box!A \in \Delta}
+  \subseteq \Delta'$۔}{له ښي نه کيڼ لوري ته پام وکړئ: دا وايي
+  چې که $!A \in \Delta'$ وي، نو $\Diamond!A \in \Delta$ وي، د
+  هر $!A$ او هر داسې $\Delta'$ دپاره چې $R^\Sigma\Delta\Delta'$
+  وي۔ که دا وټاکو چې $R^\Sigma\Delta\Delta'$ هله او يوازې هله
+  وي چې $\Diamond!A \in \Delta$ د ټولو هغو $!A \in \Delta'$
+  دپاره وي، نو دا شرط پوره کېږي۔ د منجمدې سرچينې په دې تشريحي
+  جمله کښې يوازې «هر کله چې» ليکل شوي دي؛ دلته د اړيکې تعريف
+  دواړو لورو ته څرګندوو، لکه د راتلونکي کانوني مدل په تعريف کښې۔
+  د «هله او يوازې هله» ښي اړخ شرط داسې په لنډ ډول ليکلے شو:
+  $\Setabs{\Diamond!A}{!A \in \Delta'} \subseteq \Delta$۔}
+
+نو پوښتنه دا ده: آيا د $R^\Sigma$ دا تعريف په رښتيا ډاډ راکوي
+چې \iftag{prvBox}{$\Box !A \in \Delta$ هله او يوازې هله وي چې
+  $\mSat{M^\Sigma}{\Box !A}[\Delta]$؟ \iftag{prvDiamond}{آيا دا
+    هم ډاډ راکوي چې }{}}{}\iftag{prvDiamond}{$\Diamond !A \in \Delta$
+  هله او يوازې هله وي چې $\mSat{M^\Sigma}{\Diamond !A}[\Delta]$؟}{}
+راتلونکې څو پايلې به دا ثابتې کړي۔
+\end{explain}
+
+\begin{defn}
+  که $\Gamma$ د !!{formula}s يو سټ وي، نو دا ږدو:
+  \begin{align*}
+    \Box\Gamma & = \Setabs{\Box !B}{!B \in \Gamma}\\
+    \Diamond\Gamma & = \Setabs{\Diamond !B}{!B \in \Gamma}\\
+    \intertext{او}
+    \Box^{-1}\Gamma & = \Setabs{!B}{\Box !B \in \Gamma}\\
+    \Diamond^{-1}\Gamma & = \Setabs{!B}{\Diamond !B \in \Gamma}\\
+  \end{align*}
+\end{defn}
+
+په بل عبارت، $\Box\Gamma$ هغه $\Gamma$ دے چې په~$\Gamma$ کښې
+د هر !!{formula} مخې ته ئې $\Box$ زيات کړے وي؛ $\Box^{-1}\Gamma$
+په~$\Gamma$ کښې له ټولو هغو !!{formula}s څخه جوړ دے چې په
+$\Box$ پيل کېږي، خو د پيل $\Box$ نښې ئې لرې شوې وي۔ دا تعريف په
+خپل ځان کښې ډېر مهم نۀ دے، خو نښې به د پام وړ ساده کړي۔
+
+پام وکړئ چې $\Box\Box^{-1}\Gamma \subseteq \Gamma$:
+\[
+\Box\Box^{-1}\Gamma = \Setabs{\Box!B}{\Box!B \in \Gamma}
+\]
+يعنې دا يوازې په~$\Gamma$ کښې د ټولو هغو !!{formula}s سټ دے
+چې په~$\Box$ پيل کېږي۔
+
+\begin{lem}\ollabel{lem:box1}
+  که $\Gamma \Proves[\Sigma] !A$ وي، نو
+  $\Box\Gamma \Proves[\Sigma] \Box !A$ وي۔
+\end{lem}
+
+\begin{proof}
+  که $\Gamma \Proves[\Sigma] !A$ وي، نو داسې $!B_1$، \dots،
+  $!B_k \in \Gamma$ شته چې $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots
+  (!B_k \lif !A)\cdots)$۔ چې $\Sigma$ نورمال دے، نو د \RK{}
+  قاعدې له مخې $\Sigma \Proves \Box!B_1 \lif (\Box!B_2 \lif \cdots (\Box!B_k \lif
+  \Box!A)\cdots)$، چې په څرګند ډول $\Box!B_1$، \dots،
+  $\Box!B_k \in \Box\Gamma$ دي۔ نو د تعريف له مخې
+  $\Box\Gamma \Proves[\Sigma] \Box !A$۔ په منجمده سرچينه کښې د
+  دواړو ځنځيرونو وروستے اندېکس له مخکښې محدودې لړۍ سره نۀ سمون
+  خوري؛ دلته د هماغې لړۍ اندېکس کارول شوے دے۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:box2}
+  که $\Box^{-1} \Gamma \Proves[\Sigma] !A$ وي، نو
+  $\Gamma \Proves[\Sigma] \Box!A$ وي۔
+\end{lem}
+
+\begin{proof}
+  فرض کړئ چې $\Box^{-1}\Gamma \Proves[\Sigma] !A$؛ بيا د
+  \olref{lem:box1} له مخې
+  $\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box!A$۔ په منجمده
+  سرچينه کښې د دې منځني اشتقاق د نظام فرعي نښه لوېدلې ده؛ دلته
+  هماغه نظام څرګند شوے دے۔ خو چې
+  $\Box\Box^{-1}\Gamma \subseteq \Gamma$، نو د يکنواختۍ له مخې
+  $\Gamma \Proves[\Sigma] \Box!A$ هم دے۔
+\end{proof}
+
+\iftag{prvBox}{%
+% Box is primitive
+  
+\begin{prop}\ollabel{prop:box}
+  که $\Gamma$ بشپړ $\Sigma$-سازګار وي، نو $\Box !A \in \Gamma$
+  هله او يوازې هله وي چې د هر هغه بشپړ $\Sigma$-سازګار
+  سټ~$\Delta$ دپاره چې $\Box^{-1} \Gamma \subseteq \Delta$ وي،
+  $!A \in \Delta$ وي۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ چې $\Gamma$ بشپړ $\Sigma$-سازګار دے۔ د «يوازې که» لور
+  اسانه دے: فرض کړئ چې $\Box !A \in \Gamma$ او
+  $\Box^{-1}\Gamma \subseteq \Delta$ دي۔ چې $\Box!A \in \Gamma$،
+  نو $!A \in \Box^{-1}\Gamma \subseteq \Delta$؛ نو $!A \in \Delta$.
+
+  د «که» لوري دپاره نقيض عکس ثابتوو: فرض کړئ چې
+  $\Box!A \notin \Gamma$۔ چې $\Gamma$ بشپړ $\Sigma$-سازګار دے،
+  نو له اشتقاقي پلوه تړلے دے، او له دې څخه
+  $\Gamma \Proves/[\Sigma] \Box !A$ لازمېږي۔ د \olref{lem:box2}
+  له مخې $\Box^{-1}\Gamma \Proves/[\Sigma] !A$۔ د
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  له مخې $\Box^{-1}\Gamma \cup \{ \lnot!A \}$ $\Sigma$-سازګار
+  دے۔ د لينډنباوم د لمې له مخې داسې يو بشپړ $\Sigma$-سازګار
+  سټ~$\Delta$ شته چې $\Box^{-1}\Gamma \cup \{ \lnot!A \} \subseteq
+  \Delta$ وي۔ د سازګارۍ له مخې $!A \notin \Delta$.
+\end{proof}
+}{%
+% Box is not primitive, only Diamond is
+
+\begin{prop}\ollabel{prop:diamond}
+  که $\Gamma$ بشپړ $\Sigma$-سازګار وي، نو $\Diamond !A \in \Gamma$
+  هله او يوازې هله وي چې د کوم هغه بشپړ $\Sigma$-سازګار
+  سټ~$\Delta$ دپاره چې $\Diamond\Delta \subseteq \Gamma$ وي،
+  $!A \in \Delta$ وي۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ چې $\Gamma$ بشپړ $\Sigma$-سازګار دے۔ له ښي نه کيڼ لور
+  اسانه دے: $\Delta$ دې داسې بشپړ $\Sigma$-سازګار سټ وي چې
+  $\Diamond\Delta \subseteq \Gamma$ او $!A \in \Delta$ وي۔ بيا
+  $\Diamond!A \in \Diamond\Delta \subseteq \Gamma$، يعنې
+  $\Diamond!A \in \Gamma$.
+
+  له کيڼ نه ښي لوري دپاره فرض کړئ چې $\Diamond !A \in \Gamma$۔
+  بايد وښيو چې داسې يو بشپړ $\Sigma$-سازګار سټ~$\Delta$ شته چې
+  $!A \in \Delta$ او $\Diamond\Delta \subseteq \Gamma$ وي۔ چې
+  $\Diamond !A \in \Gamma$ او $\Gamma$ $\Sigma$-سازګار دے، نو
+  $\Box\lnot !A \notin \Gamma$۔ چې $\Gamma$ بشپړ
+  $\Sigma$-سازګار دے، نو له اشتقاقي پلوه تړلے دے؛ نو
+  $\Gamma \Proves/[\Sigma] \Box\lnot !A$۔ د \olref{lem:box2} له
+  مخې $\Box^{-1}\Gamma \Proves/[\Sigma] \lnot !A$۔ د
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  له مخې $\Box^{-1}\Gamma \cup \{ !A \}$ $\Sigma$-سازګار دے۔ د
+  لينډنباوم د لمې له مخې داسې يو بشپړ $\Sigma$-سازګار سټ~$\Delta$
+  شته چې $\Box^{-1}\Gamma \cup \{ !A \} \subseteq \Delta$ وي۔ په
+  څرګند ډول $!A \in \Delta$۔ د دې د ښودلو دپاره چې
+  $\Diamond\Delta \subseteq \Gamma$، فرض کړئ چې داسې نۀ وي: د
+  کوم $!B \in \Delta$ دپاره $\Diamond !B \notin \Gamma$ وي۔ بيا
+  چې $\Gamma$ بشپړ $\Sigma$-سازګار دے، نو
+  $\Box\lnot !B \in \Gamma$۔ خو بيا $\lnot !B \in \Box^{-1}\Gamma \subseteq
+  \Delta$ هم دے، چې له دې سره به $\Delta$ ناسازګار شي۔
+\end{proof}
+}
+
+\begin{lem}\ollabel{lem:box-iff-diamond}
+  فرض کړئ چې $\Gamma$ او $\Delta$ بشپړ $\Sigma$-سازګار دي۔ بيا
+  $\Box^{-1}\Gamma \subseteq \Delta$ هله او يوازې هله وي چې
+  $\Diamond\Delta \subseteq \Gamma$ وي۔
+\end{lem}
+
+\begin{proof}
+  د «يوازې که» لور: فرض کړئ چې $\Box^{-1}\Gamma \subseteq \Delta$،
+  او فرض کړئ چې $\Diamond!A \in \Diamond\Delta$ (يعنې
+  $!A \in \Delta$)۔ د دې د ښودلو دپاره چې $\Diamond!A \in \Gamma$،
+  د $\Box\lnot!A \notin \Gamma$ ښودل بس دي، ځکه بيا د اعظميت له
+  مخې $\lnot\Box\lnot !A \in \Gamma$ وي۔ اوس که
+  $\Box\lnot!A \in \Gamma$ وي، نو د فرضيې له مخې
+  $\lnot!A \in \Delta$ وي، چې دا د $\Delta$ له سازګارۍ سره په
+  ټکر کښې دے (ځکه $!A \in \Delta$)۔ نو
+  $\Box\lnot!A \notin \Gamma$، لکه چې غوښتل شوي وو۔
+
+  د «که» لور: فرض کړئ چې $\Diamond\Delta \subseteq \Gamma$۔ د
+  نقيض عکس له لارې استدلال کوو: د $\Box!A \notin \Gamma$ د ښودلو
+  دپاره فرض کړئ چې $!A \notin \Delta$۔ که $!A \notin \Delta$
+  وي، نو د اعظميت له مخې $\lnot!A \in \Delta$، او د فرضيې له
+  مخې $\Diamond\lnot!A \in \Gamma$۔ خو په يوه نورمال مودالي
+  منطق کښې $\Diamond\lnot!A$ له $\lnot\Box !A$ سره همارز دے؛
+  او که دا وروستے په $\Gamma$ کښې وي، نو د سازګارۍ له مخې
+  $\Box!A \notin\Gamma$، لکه چې غوښتل شوي وو۔
+\end{proof}
+
+\iftag{prvBox}{%
+  \iftag{prvDiamond}{%
+% Box and Diamond are both primitive; prove
+% prop:diamond using lem:box-iff-diamond
+  
+\begin{prop}\ollabel{prop:diamond}
+  که $\Gamma$ بشپړ $\Sigma$-سازګار وي، نو $\Diamond !A \in \Gamma$
+  هله او يوازې هله وي چې د کوم هغه بشپړ $\Sigma$-سازګار
+  سټ~$\Delta$ دپاره چې $\Diamond\Delta \subseteq \Gamma$ وي،
+  $!A \in \Delta$ وي۔
+\end{prop}
+
+\begin{proof}
+فرض کړئ چې $\Gamma$ بشپړ $\Sigma$-سازګار دے۔ د \Dual{} او
+تړلتيا له مخې $\Diamond!A \in \Gamma$ هله او يوازې هله وي چې
+$\lnot\Box\lnot !A \in \Gamma$ وي۔ د
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot} له مخې
+$\lnot\Box\lnot !A \in \Gamma$ هله او يوازې هله وي چې
+$\Box\lnot !A \notin \Gamma$ وي، ځکه $\Gamma$ بشپړ
+$\Sigma$-سازګار دے۔ د \olref{prop:box} له مخې
+$\Box\lnot !A \notin \Gamma$ هله او يوازې هله وي چې د کوم
+بشپړ $\Sigma$-سازګار سټ~$\Delta$ دپاره چې
+$\Box^{-1}\Gamma \subseteq \Delta$ وي، $\lnot!A \notin \Delta$
+وي۔ اوس هر داسې سټ~$\Delta$ په نظر کښې ونيسئ۔ د
+\olref{lem:box-iff-diamond} له مخې
+$\Box^{-1}\Gamma \subseteq \Delta$ هله او يوازې هله وي چې
+$\Diamond\Delta \subseteq \Gamma$ وي۔ همدارنګه، د
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot} له مخې
+$\lnot !A \notin \Delta$ هله او يوازې هله وي چې $!A \in \Delta$
+وي۔ نو $\Diamond!A \in \Gamma$ هله او يوازې هله وي چې د کوم
+بشپړ $\Sigma$-سازګار سټ~$\Delta$ دپاره چې
+$\Diamond\Delta \subseteq \Gamma$ وي، $!A \in \Delta$ وي۔
+\end{proof}
+
+}{}}{}
+  
+\begin{prob}
+  وښيئ چې که $\Gamma$ بشپړ $\Sigma$-سازګار وي، نو
+  \iftag{prvBox}{$\Diamond !A \in \Gamma$ هله او يوازې هله وي چې
+    داسې يو بشپړ $\Sigma$-سازګار سټ~$\Delta$ شته چې
+    $\Box^{-1}\Gamma \subseteq \Delta$ او $!A \in \Delta$ وي۔}
+    {$\Box !A \in \Gamma$ هله او يوازې هله وي چې د هر هغه بشپړ
+    $\Sigma$-سازګار سټ~$\Delta$ دپاره چې
+    $\Box^{-1} \Gamma \subseteq \Delta$ وي، $!A \in \Delta$ وي۔}
+  \emph{دا کار د \olref[nml][com][mod]{lem:box-iff-diamond} له
+    کارولو پرته وکړئ}۔
+\end{prob}
+
+\end{document}
+

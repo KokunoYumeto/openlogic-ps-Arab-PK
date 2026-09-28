@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B130-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
-  "status": "OLP-0443 source-reviewed and staged; 21 paired blocks, twelve semantic samples and OLNML-018 disclosed source treatment",
+  "batch_id": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
+  "status": "OLP-0444–0446 source-reviewed and staged; 55 paired blocks, 25 semantic samples and four disclosed source treatments",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9308,6 +9308,91 @@
       ],
       "scope": "Twenty-one paired blocks defining complete Sigma-consistent sets, nine property branches, tagged proofs and exercises; two disclosed formula repairs and one source omission notice.",
       "allowed_residual_english": []
+    },
+    "OLP-0444": {
+      "batch_id": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-MOE-P3-SET",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-ENUMERABLE",
+        "TERM-ENUMERATION",
+        "TERM-RECURSIVE",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-SET-DERIVABILITY",
+        "TERM-MODAL-CANONICAL-MODEL"
+      ],
+      "scope": "Lindenbaum extension and derivability characterization; disclosed enumeration-example repair.",
+      "allowed_residual_english": []
+    },
+    "OLP-0445": {
+      "batch_id": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-MOE-P3-SET",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-SET-DERIVABILITY",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-CANONICAL-MODEL",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-SET-PREFIX-EXTRACTION"
+      ],
+      "scope": "All tagged modal-set lemmas and membership conditions; disclosed index, system-subscript and stipulative-iff treatments.",
+      "allowed_residual_english": []
+    },
+    "OLP-0446": {
+      "batch_id": "PS-B131-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+        "AF-BUKOVSKY-P99-COUNTABILITY",
+        "AF-NIAZMAN-P140-CONSISTENCY",
+        "AF-NIAZMAN-P25-TAUTOLOGY",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-MOE-P3-SET",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-LOGIC",
+        "TERM-MODAL-CANONICAL-MODEL",
+        "TERM-COMPLETENESS-CONSTRUCTION",
+        "TERM-MODAL-FRAME",
+        "TERM-MODAL-SET-PREFIX-EXTRACTION"
+      ],
+      "scope": "Canonical world-set, accessibility relation and propositional valuation definition.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -15172,6 +15257,156 @@
       "passage": "exercise",
       "reverse_paraphrase": "The four optional connective proof alternatives remain exercises, and the final problem asks to complete the property proof.",
       "finding": "Exact exercise tags and locator retained."
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "world extension",
+      "reverse_paraphrase": "Every consistent set extends to a complete consistent set; its entire membership becomes truth at a canonical world.",
+      "finding": "د سټ او نړۍ د غړيتوب/صدق دپاره ټول او يوازې شرط ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "lemma",
+      "reverse_paraphrase": "A Sigma-consistent Gamma has a complete Sigma-consistent extension Delta.",
+      "finding": "سازګاري، بشپړتيا او غځونه جلا شرطونه دي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "enumeration",
+      "reverse_paraphrase": "Repetitions are allowed; stage n lists formulas of length at most n using variable indices through n.",
+      "finding": "د سرچينې د تنګې شمېرنې سمون څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "recursive choice",
+      "reverse_paraphrase": "Start from Gamma; add A_n when consistent, otherwise not-A_n, then take the union.",
+      "finding": "دواړه څانګې او د اتحاد نښې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "inclusions",
+      "reverse_paraphrase": "The sequence is ascending and every stage is included in the union.",
+      "finding": "د انتقالي شمول استدلال ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "completeness",
+      "reverse_paraphrase": "Every formula is decided when its position in the exhaustive list is reached.",
+      "finding": "د محدود پړاو او بشپړ لړ غوښتنه ساتل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "finite inconsistency",
+      "reverse_paraphrase": "A finite inconsistency witness in the union appears together in a largest stage.",
+      "finding": "د شاهد محدودوالے او د ټولو فرضيو يو پړاو ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "stage induction",
+      "reverse_paraphrase": "The base is Gamma; the two-branch consistency fact preserves consistency at the successor.",
+      "finding": "د صفر بنسټ او د استقرا ګام دواړه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0444",
+      "passage": "corollary",
+      "reverse_paraphrase": "Derivability is membership in every complete consistent extension, including empty Gamma; nonderivability gives an extension containing not-A.",
+      "finding": "دواړه لوري، تشې فرضيې او مقابل غړيتوب ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "truth scopes",
+      "reverse_paraphrase": "Box uses every accessible world and Diamond uses some accessible world; membership must match those truth clauses.",
+      "finding": "کميتونه او د صدق/غړيتوب دواړه لوري ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "accessibility stipulation",
+      "reverse_paraphrase": "The Box-extraction subset condition and Diamond-prefix subset condition define the same intended accessibility relation.",
+      "finding": "د Diamond د تعريف دوه اړخيز شرط څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "prefix definitions",
+      "reverse_paraphrase": "Prefix one modal operator to every member, or extract only members starting with that operator by removing the first operator.",
+      "finding": "استخراج معکوسه تابع يا د ټولو نښو حذف نۀ ګڼل کېږي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "boxed subset",
+      "reverse_paraphrase": "Re-prefixing extracted Box-members selects exactly the original Box-leading members, a subset of Gamma.",
+      "finding": "شمول د مساوات په دعوه نۀ دے بدل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "first lemma",
+      "reverse_paraphrase": "A finite k-premise derivation boxes each of those same k premises and the conclusion by RK.",
+      "finding": "د دواړو وروستيو اندېکسونو سمون څرګند شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "second lemma",
+      "reverse_paraphrase": "Derivability from Box-extracted Gamma boxes the conclusion relative to the same Sigma and then uses monotonicity.",
+      "finding": "د نظام فرعي نښه په خپل ځای بېرته راوستل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Box forward",
+      "reverse_paraphrase": "A Box-member puts its unboxed member into every consistent extension of the extracted set.",
+      "finding": "د هر سټ شرط ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Box converse",
+      "reverse_paraphrase": "A missing Box-member makes the extracted set with not-A consistent and hence extendible to a complete set missing A.",
+      "finding": "نقيض عکس او د لينډنباوم شاهد ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Diamond forward inclusion",
+      "reverse_paraphrase": "Membership of A in a set whose Diamond-prefix is included in Gamma gives Diamond-A membership in Gamma.",
+      "finding": "د شمول لور ساتل شوے۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "Diamond witness",
+      "reverse_paraphrase": "Diamond-A membership gives a consistent extension of Box-extracted Gamma with A, and any failed Diamond inclusion contradicts that extension.",
+      "finding": "وجودي شاهد او د نقيض استدلال ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "condition equivalence",
+      "reverse_paraphrase": "For complete consistent Gamma and Delta, Box extraction inclusion is equivalent to Diamond-prefix inclusion.",
+      "finding": "دواړه لوري د نفي او سازګارۍ له مخې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "both primitive",
+      "reverse_paraphrase": "When both operators are primitive, Dual and the Box result recover the Diamond result with the equivalent accessibility condition.",
+      "finding": "ټولې اختياري څانګې او نښې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0445",
+      "passage": "exercise",
+      "reverse_paraphrase": "Prove the requested alternate modal membership characterization without using the Box/Diamond condition-equivalence lemma.",
+      "finding": "د تمرين منع شوې لمه او دواړه ټاګونه ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "world set",
+      "reverse_paraphrase": "All complete Sigma-consistent sets are worlds of the one canonical model.",
+      "finding": "ټول سټونه ساتل شوي؛ د يوه فارمول ځانګړے مدل نۀ دے۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "relation",
+      "reverse_paraphrase": "Accessibility is exactly the Box-extraction inclusion or the Diamond-prefix inclusion selected by the source tag.",
+      "finding": "اړيکه دوه اړخيزه ده او د بېلې نړۍ شرط نۀ لري۔"
+    },
+    {
+      "unit_id": "OLP-0446",
+      "passage": "valuation",
+      "reverse_paraphrase": "A propositional variable is true exactly at the worlds whose sets contain it.",
+      "finding": "ارزښت ټاکنه له غړيتوب سره تړي۔"
     }
   ]
 }
