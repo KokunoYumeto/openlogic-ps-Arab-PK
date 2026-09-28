@@ -1,0 +1,71 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: canonical-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{mod}
+
+\olsection{کانوني مدل}
+
+زموږ په مدل کښې نړۍې به د طبيعي عددونو متناهي لړۍ~$\sigma$
+وي، يعنې $\sigma \in \Nat^*$۔ پام وکړئ چې $\Nat^*$ په استقرايي
+ډول داسې تعريفېږي:
+\begin{enumerate}
+\item $\emptyseq \in \Nat^*$۔
+\item که $\sigma \in \Nat^*$ او $n \in \Nat$ وي، نو $\sigma.n \in
+  \Nat^*$ وي (دلته $\sigma.n$ د $\sigma \concat \tuple{n}$ معنا
+  لري او $\sigma \concat \sigma'$ د $\sigma$ او $\sigma'$ يوځاے
+  کول دي)۔
+\item له دې پرته بل څۀ په $\Nat^*$ کښې نشته۔
+\end{enumerate}
+نو د استقرايي تعريفونو دپاره $\Nat^*$ کارولے شو۔
+
+$\tuple{!B_1, !C_1}$، $\tuple{!B_2, !C_2}$، \dots، دې د
+!!{formula}s د ټولو جوړو يوه شمېرنه وي۔ د !!{formula}s د يوه
+سټ~$\Delta$ په لرلو سره، $\Delta(\sigma)$ په استقرايي ډول
+داسې تعريفوو:
+\begin{enumerate}
+\item $\Delta(\emptyseq) = \Delta$
+\item $\Delta(\sigma.n) = {}$
+  \[
+  \begin{cases}
+    (\Delta(\sigma) \cup \{!B_n\})^* &
+    \text{که $\Delta(\sigma) \cup \{!B_n\} \Proves/ !C_n$ وي} \\
+    \Delta(\sigma) & \text{که داسې نۀ وي}
+  \end{cases}
+  \]
+\end{enumerate}
+دلته له $(\Delta(\sigma) \cup \{!B_n\})^*$ څخه د
+!!{formula}s هغه اولنی سټ مراد دے چې د
+\olref[lin]{lem:lindenbaum} له مخې، د $\Delta(\sigma) \cup
+\{!B_n\}$ پر سټ او !!{formula}~$!C_n$ د لمې په تطبيقولو شته۔
+پام وکړئ چې د دې تعريف له مخې، که $\Delta(\sigma) \cup
+\{!B_n\} \Proves/ !C_n$ وي، نو $\Delta(\sigma.n)
+\Proves !B_n$ او $\Delta(\sigma.n) \Proves/ !C_n$ وي۔ دا هم
+پام وکړئ چې د هر~$n$ دپاره $\Delta(\sigma) \subseteq
+\Delta(\sigma.n)$ وي۔ که $\Delta$ اولنی وي، نو د هر~$\sigma$
+دپاره $\Delta(\sigma)$ هم اولنی وي۔
+
+\begin{defn}\ollabel{defn:canonical-model}
+  فرض کړئ $\Delta$ اولنی دے۔ نو د~$\Delta$ دپاره
+  \emph{کانوني مدل} $\mModel{M(\Delta)}$ داسې تعريفېږي:
+  \begin{enumerate}
+  \item $W = \Nat^*$، د طبيعي عددونو د متناهي لړيو سټ۔
+  \item $R$ داسې جزئي ترتيب دے چې $R\sigma\sigma'$ هله او
+    يوازې هله وي چې $\sigma$ د~$\sigma'$ لومړنۍ برخه وي
+    (يعنې د کومې لړۍ~$\sigma''$ دپاره $\sigma' =
+    \sigma \concat \sigma''$ وي)۔
+  \item $V(p) = \Setabs{\sigma}{p \in \Delta(\sigma)}$۔
+  \end{enumerate}
+\end{defn}
+
+په اسانه کتل کېدے شي چې $R$ په رښتيا جزئي ترتيب دے۔ د~$V$
+د يورخيزې زياتېدنې شرط هم پوره دے۔ ځکه چې $\Delta(\sigma)
+\subseteq \Delta(\sigma.n)$ وي، نو پر~$\sigma$ د استقرا له مخې
+هر کله چې $R\sigma\sigma'$ وي، $\Delta(\sigma)
+\subseteq \Delta(\sigma')$ راځي۔
+
+\end{document}

@@ -1,0 +1,149 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T20:22:47.428498+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+  "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0501",
+      "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "source_bytes": 2238,
+      "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+      "target_sha256": "1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3",
+      "paired_blocks": 14,
+      "source_correction_ids": [
+        "OLINT-004"
+      ]
+    },
+    {
+      "unit_id": "OLP-0502",
+      "source_path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "source_bytes": 4159,
+      "source_sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "target_sha256": "e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3",
+      "paired_blocks": 15,
+      "source_correction_ids": [
+        "OLINT-005"
+      ]
+    },
+    {
+      "unit_id": "OLP-0503",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex",
+      "source_bytes": 683,
+      "source_sha256": "a431fe8a0f6a36831ecb5daffee42d7b0258b6afcf65409e082ba0d5c3dc8855",
+      "target_sha256": "723b9a9ae635152322e583dff98ee889e73bc8f1f434723dbdcef8befc081344",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0504",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "source_bytes": 2277,
+      "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+      "target_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLINT-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0505",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "source_bytes": 7307,
+      "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+      "target_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+      "paired_blocks": 23,
+      "source_correction_ids": [
+        "OLINT-007",
+        "OLINT-008"
+      ]
+    }
+  ],
+  "notes_path": "work/B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "a455bb4abd51d00cd6bd4e3f2c28f75b252eb3f2692eb0e074ae515274a9a769",
+  "consultation_path": "work/B153_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "c25a0d72e01cc56f87a8b0ebaf691d4d1c0770b8469273c08fb9f1fb2998cb4f",
+  "staging_checkpoint_sha256": "b21afdea464d2a4d52c0b0173d6efb10a00c59f91b104f2f3776a3b711b45c8b",
+  "staging_qa_sha256": {
+    "OLP-0501": "8563be3eb36473ab447878cd2b6affb9d625d75038274793597669b16a7cac4a",
+    "OLP-0502": "66ef723bae1fea7b8f01665217665ab6019289b892f1e8f2719b500ad41894f9",
+    "OLP-0503": "60a93b15d479c30263c2637599dcd692135e7ce8fd6b7f51b504fdf11f127b05",
+    "OLP-0504": "33c669dea8c9bc9f68cf5a46b0477e542683798dfa9d962cf7789aedbbdeaa0c",
+    "OLP-0505": "a065f4394cc7d69adbbf8ed0c5e3c1254656c584789cee66b181583b80b62742"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0501",
+      "source_correction_id": "OLINT-004",
+      "finding": "لومړۍ قضيه ځايي فرض لري، خو د سرچينې ثبوت قوي ټول-مدلي فرض کاروي؛ دويمه له لومړۍ څخه د ټولو نړۍو لپاره راځي."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "source_correction_id": "OLINT-005",
+      "finding": "سرچينه پخپله توپولوژي د پرانيستو سټونو ټولګه او له X سره يې جوړښت فضا تعريفوي."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "source_correction_id": "OLINT-006",
+      "finding": "د معنايي تعريف له مخې دلته د يو غړي صدق مراد دے؛ درېګوني مـاکرو نښه ناسم جوړښت لري."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "source_correction_id": "OLINT-007",
+      "finding": "سرچينه B او C مقدمې او وروستۍ B او C صدق ليکي، خو په منځ کښې د A او B عطف پايله ليکي."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "source_correction_id": "OLINT-008",
+      "finding": "د فصل د لرې کولو مخکېنۍ مقدمې او د استقرا فرض همدغه نړۍ او يوغړي فرضي سټونه غواړي."
+    }
+  ],
+  "formula_policy": "72 paired blocks, 336 math spans; exactly five math-span substitutions in OLINT-006–008. OLINT-004–005 are prose treatments. All other math, identifiers, tags, term tokens, macros and environments exact.",
+  "unresolved": "د محدودونې او توپولوژيکي دنننۍ برخې عين پاکستانۍ چاپي تخنيکي نومونه لنډمهالي دي؛ د ليکوال يا انسان رسمي تصويب نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "3f3854559b854b3f4f0b1a75edbb7f7bf32244a926096b731d13af42345eb494",
+  "next_executable_action": "Register B153 terminology and OLINT-004–008 with source audit; run independent cumulative QA and dual canonical replay; accept OLP-0501–0505, then continue OLP-0506."
+}

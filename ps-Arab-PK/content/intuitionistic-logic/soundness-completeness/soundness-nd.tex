@@ -1,0 +1,170 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{snd}
+
+\olsection{د طبيعي استنتاج سموالے}
+
+اوس به د اړيکيزې معنايي پوهنې له مخې د طبيعي استنتاج سموالے ثابت
+کړو: يعنې وښيو چې که !!a{formula} د فرضونو له يوه سټ څخه
+!!{derivable} وي، نو د فرضونو سټ هغه !!{formula} لازموي۔
+
+\begin{thm}[سموالے]
+  \ollabel{thm:soundness}
+  که $\Gamma \Proves !A$ وي، نو $ \Gamma \Entails !A$ وي۔
+\end{thm}
+
+\begin{proof}
+  ثابتوو چې که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$
+  وي۔ ثبوت له~$\Gamma$ څخه د~$!A$ پر !!{derivation} استقرا ده۔
+  
+  \begin{enumerate}
+  \item که !!{derivation} يوازې له فرض~$!A$ څخه جوړ وي،
+    $!A \Proves !A$ لرو او بايد $!A \Entails !A$ وښيو۔ فرض کړئ
+    $\mSat{M}{!A}[w]$ وي۔ نو په څرګنده $\mSat{M}{!A}[w]$ وي۔
+
+  \item !!{derivation} په $\Intro{\land}$ پاے ته رسېږي:
+    \iftag{probAnd}{تمرين۔}{له !!{undischarged} فرضونو~$\Gamma$
+      څخه د مقدمې~$!B$ او له !!{undischarged} فرضونو~$\Delta$
+      څخه د مقدمې~$!C$ !!{derivation}s ښيي چې $\Gamma \Proves
+      !B$ او $\Delta \Proves !C$۔ د استقرا د فرض له مخې
+      $\Gamma \Entails !B$ او $\Delta \Entails !C$ لرو۔ بايد
+      $\Gamma \cup \Delta \Entails !B \land !C$ وښيو، ځکه د ټول
+      !!{derivation} !!{undischarged} فرضونه د $\Gamma$ او
+      $\Delta$ ګډ سټ دے۔ نو $\mSat{M}{\Gamma
+        \cup \Delta}[w]$ فرض کړئ۔ بيا $\mSat{M}{\Gamma}[w]$
+      هم وي۔ ځکه چې $\Gamma \Entails !B$، نو $\mSat{M}{!B}[w]$
+      وي۔ په ورته ډول $\mSat{M}{!C}[w]$ وي۔ نو
+      $\mSat{M}{!B \land !C}[w]$ وي۔ د ژباړې د نسخې څرګندونه
+      (OLINT-007): منجمده سرچينه په دې حالت کښې د مقدمې د دوو
+      بېلو نښو پر ځاے د بل عطف پايله ليکي؛ د همدغو مقدمو او
+      وروستۍ کرښې له مخې دلته د هغو عطف مراد دے۔}
+
+  \item !!{derivation} په $\Elim{\land}$ پاے ته رسېږي:
+    \iftag{probAnd}{تمرين۔}{له !!{undischarged} فرضونو $\Gamma$
+        څخه د مقدمې $!B \land !C$ !!{derivation} ښيي چې
+        $\Gamma \Proves !B \land !C$۔ د استقرا د فرض له مخې
+        $\Gamma \Entails !B \land !C$۔ بايد $\Gamma
+        \Entails !B$ وښيو۔ نو $\mSat{M}{\Gamma}[w]$ فرض کړئ۔
+        ځکه $\Gamma \Entails !B \land !C$، نو
+        $\mSat{M}{!B \land !C}[w]$ وي۔ بيا
+        $\mSat{M}{!B}[w]$ هم وي۔ په ورته ډول که $\Elim\land$
+        په~$!C$ پاے ته ورسېږي، نو $\Gamma \Entails !C$ وي۔}
+
+  \item !!{derivation} په $\Intro{\lor}$ پاے ته رسېږي:
+    \iftag{probOr}{تمرين۔}{فرض کړئ مقدمه $!B$ ده او په~$!B$
+      ختمېدونکي !!{derivation} !!{undischarged} فرضونه $\Gamma$
+      دي۔ نو $\Gamma \Proves !B$ لرو او د استقرا د فرض له مخې
+      $\Gamma \Entails !B$۔ بايد $\Gamma \Entails !B \lor !C$
+      وښيو۔ $\mSat{M}{\Gamma}[w]$ فرض کړئ۔ ځکه
+      $\Gamma \Entails !B$، نو $\mSat{M}{!B}[w]$ وي۔ بيا
+      $\mSat{M}{!B \lor !C}[w]$ هم وي۔ په ورته ډول، که مقدمه
+      ~$!C$ وي، نو $\Gamma \Entails !C$ لرو۔}
+    
+  \item !!{derivation} په~$\Elim{\lor}$ پاے ته رسېږي:
+    \iftag{probOr}{تمرين۔}{په مقدمو ختمېدونکي !!{derivation}s دا دي:
+      $!B \lor !C$ له !!{undischarged} فرضونو~$\Gamma$ څخه،
+      $!D$ له !!{undischarged} فرضونو
+      $\Delta_1 \cup \{!B\}$ څخه، او $!D$ له !!{undischarged}
+      فرضونو~$\Delta_2 \cup \{!C\}$ څخه۔ نو $\Gamma \Proves
+      !B \lor !C$، $\Delta_1 \cup \{!B\} \Proves !D$ او
+      $\Delta_2 \cup \{!C\} \Proves !D$ لرو۔ د استقرا د فرض له
+      مخې $\Gamma \Entails !B \lor !C$،
+      $\Delta_1 \cup \{!B\} \Entails !D$ او
+      $\Delta_2 \cup \{!C\} \Entails !D$ دي۔ بايد
+      $\Gamma \cup \Delta_1 \cup \Delta_2 \Entails !D$ ثابت کړو۔
+
+    $\mSat{M}{\Gamma \cup \Delta_1 \cup \Delta_2}[w]$ فرض کړئ۔
+    نو $\mSat{M}{\Gamma}[w]$ وي، او ځکه چې
+    $\Gamma \Entails !B \lor !C$، نو
+    $\mSat{M}{!B \lor !C}[w]$ وي۔ د $\mSat{M}{}$ د تعريف له
+    مخې يا $\mSat{M}{!B}[w]$ وي يا $\mSat{M}{!C}[w]$۔ نو دوه
+    حالتونه بېلوو: (الف)~$\mSat{M}{!B}[w]$ وي۔ بيا
+    $\mSat{M}{\Delta_1 \cup \{!B\}}[w]$ وي۔ ځکه
+    $\Delta_1 \cup \{!B\} \Entails !D$، نو
+    $\mSat{M}{!D}[w]$ وي۔ (ب)~$\mSat{M}{!C}[w]$ وي۔ بيا
+    $\mSat{M}{\Delta_2 \cup \{!C\}}[w]$ وي۔ ځکه
+    $\Delta_2 \cup \{!C\} \Entails !D$، نو
+    $\mSat{M}{!D}[w]$ وي۔ په دواړو حالاتو کښې
+    $\mSat{M}{!D}[w]$ لرو، لکه چې غوښتل مو۔
+    د ژباړې د نسخې څرګندونه (OLINT-008): منجمده سرچينه د لومړي
+    حالت د صدق نښه ناسمه تړي، او په دواړو حالتونو کښې د فرض
+    يوازېنی غړے له سټه پرته ليکي؛ دلته د مخکينيو فرضونو له
+    سټونو سره د دواړو حالتونو نښې برابرې شوې دي۔}
+
+  \item !!{derivation} په $\Intro{\lif}$ پاے ته رسېږي او
+    پايله ئې~$!B\lif !C$ ده۔ نو مقدمه~$!C$ ده، او په دې مقدمه
+    ختمېدونکے !!{derivation} !!{undischarged} فرضونه~$\Gamma \cup
+    \{!B\}$ لري۔ په دې توګه $\Gamma \cup \{!B\} \Proves !C$،
+    او د استقرا د فرض له مخې $\Gamma \cup \{!B\} \Entails !C$
+    لرو۔ بايد $\Gamma \Entails !B \lif !C$ وښيو۔
+
+    $\mSat{M}{\Gamma}[w]$ فرض کړئ۔ بايد وښيو چې د هر داسې
+    $w'$ لپاره چې $Rww'$ وي، که $\mSat{M}{!B}[w']$ وي، نو
+    $\mSat{M}{!C}[w']$ وي۔ نو $Rww'$ او
+    $\mSat{M}{!B}[w']$ فرض کړئ۔ د
+    \olref[sem][rel]{prop:true-monotonic} له مخې
+    $\mSat{M}{\Gamma}[w']$ وي۔ ځکه
+    $\Gamma \cup \{!B\} \Entails !C$، نو
+    $\mSat{M}{!C}[w']$ وي؛ همدا مو غوښتل۔
+
+  \item !!{derivation} په $\Elim{\lif}$ پاے ته رسېږي او
+    پايله ئې~$!C$ ده۔ مقدمې $!B \lif !C$ او $!B$ دي چې په
+    ترتيب له !!{undischarged} فرضونو $\Gamma$ او $\Delta$
+    څخه !!{derivation}s لري۔ نو $\Gamma \Proves !B \lif !C$ او
+    $\Delta \Proves !B$ لرو۔ د استقرا د فرض له مخې
+    $\Gamma \Entails !B \lif !C$ او $\Delta \Entails !B$
+    دي۔ بايد $\Gamma \cup \Delta \Entails !C$ وښيو۔
+
+    $\mSat{M}{\Gamma \cup \Delta}[w]$ فرض کړئ۔ ځکه
+    $\mSat{M}{\Gamma}[w]$ او $\Gamma \Entails !B \lif !C$
+    دي، نو $\mSat{M}{!B \lif !C}[w]$ وي۔ د تعريف له مخې د هر
+    داسې $w'$ لپاره چې $Rww'$ وي، که $\mSat{M}{!B}[w']$ وي،
+    نو $\mSat{M}{!C}[w']$ وي۔ څرنګه چې $R$ انعکاسي ده، $w$
+    هم په هغو $w'$ کښې دے چې $Rww'$ لري؛ يعنې که
+    $\mSat{M}{!B}[w]$ وي، نو $\mSat{M}{!C}[w]$ وي۔ ځکه
+    $\mSat{M}{\Delta}[w]$ او $\Delta \Entails !B$ دي، نو
+    $\mSat{M}{!B}[w]$ وي۔ نو $\mSat{M}{!C}[w]$ شو؛ همدا مو
+    غوښتل۔
+
+  \item !!{derivation} په $\FalseInt$ پاے ته رسېږي او پايله ئې
+    ~$!A$ ده۔ مقدمه $\lfalse$ ده او د مقدمې د !!{derivation}
+    !!{undischarged} فرضونه~$\Gamma$ دي۔ نو $\Gamma \Proves
+    \lfalse$ وي۔ د استقرا د فرض له مخې
+    $\Gamma \Entails \lfalse$ وي۔ بايد $\Gamma \Entails !A$
+    وښيو۔
+
+    په نامستقيم ډول ځو۔ که $\Gamma \Entails/ !A$ وي، داسې
+    مدل~$\mModel{M}$ او نړۍ~$w$ شته چې
+    $\mSat{M}{\Gamma}[w]$ او $\mSat/{M}{!A}[w]$ وي۔ ځکه
+    $\Gamma \Entails \lfalse$، نو $\mSat{M}{\lfalse}[w]$
+    وي۔ خو دا ناشونې ده، ځکه د تعريف له مخې
+    $\mSat/{M}{\lfalse}[w]$ وي۔ نو $\Gamma \Entails !A$ دے۔
+  \item !!{derivation} په $\Intro\lnot$ پاے ته رسېږي: تمرين۔
+  \item !!{derivation} په $\Elim\lnot$ پاے ته رسېږي: تمرين۔
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  د \olref[int][sc][snd]{thm:soundness} ثبوت بشپړ کړئ۔ د
+  $\Intro\lnot$ او $\Elim\lnot$ د حالتونو لپاره د
+  \olref[int][sem][rel]{defn:true-at-w} له مخې د
+  $\mSat{M}{\lnot !A}[w]$ تعريف وکاروئ؛ يعنې $\lnot !A$ د
+  $!A \lif \lfalse$ په توګه تعريف شوے مۀ ګڼئ۔
+\end{prob}
+
+\begin{prob}
+  وښيئ چې لاندې !!{formula}s په شهودي منطق کښې !!{derivable} نۀ دي:
+  \begin{enumerate}
+    \item $(!A \lif !B) \lor (!B \lif !A)$
+    \item $(\lnot\lnot !A \lif !A) \lif (!A \lor \lnot !A)$
+    \item $(!A \lif !B \lor !C) \lif \bigl((!A \lif !B)\lor(!A \lif !C)\bigr)$
+  \end{enumerate}
+\end{prob}
+
+\end{document}

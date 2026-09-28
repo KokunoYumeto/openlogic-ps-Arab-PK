@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 500,
-    "structural_pass": 500,
+    "draft_units": 505,
+    "structural_pass": 505,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B152-INTUITIONISTIC-DEDUCTIONS",
+  "batch": "PS-B153-INTUITIONISTIC-SEMANTICS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16316,6 +16316,190 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0501",
+      "path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+      "translation_sha256": "1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-004"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0502",
+      "path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "source_sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "translation_sha256": "e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-005"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0503",
+      "path": "content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex",
+      "source_sha256": "a431fe8a0f6a36831ecb5daffee42d7b0258b6afcf65409e082ba0d5c3dc8855",
+      "translation_sha256": "723b9a9ae635152322e583dff98ee889e73bc8f1f434723dbdcef8befc081344",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0504",
+      "path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+      "translation_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-006"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mSat{M}{\\Gamma}{!A_n}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!A_n}[w]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0505",
+      "path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+      "translation_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-007",
+        "OLINT-008"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Gamma\\cup\\Delta\\Entails!A\\land!B$",
+          "$\\mSat{M}{!B}$",
+          "$\\Delta_1\\cup!B\\Entails!D$",
+          "$\\Delta_2\\cup!C\\Entails!D$"
+        ],
+        "target_only": [
+          "$\\Gamma\\cup\\Delta\\Entails!B\\land!C$",
+          "$\\mSat{M}{!B}[w]$",
+          "$\\Delta_1\\cup\\{!B\\}\\Entails!D$",
+          "$\\Delta_2\\cup\\{!C\\}\\Entails!D$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -24556,6 +24740,162 @@
       "passage": "monotonicity",
       "reverse_paraphrase": "Truth at worlds is monotone; proof is an exercise.",
       "finding": "قضيه او تمرين جلا ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "model-truth",
+      "reverse_paraphrase": "A is true in M iff true at every world of M.",
+      "finding": "ټولې نړۍې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "validity",
+      "reverse_paraphrase": "A is valid iff true in every model.",
+      "finding": "ټول مدلونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "entailment",
+      "reverse_paraphrase": "Gamma entails A iff every satisfying world also satisfies A.",
+      "finding": "د هرې نړۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "restriction",
+      "reverse_paraphrase": "M_w contains exactly worlds accessible from w, with restricted R,V.",
+      "finding": "درې محدودې برخې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "restriction-truth",
+      "reverse_paraphrase": "A at w in M iff A is globally true in M_w.",
+      "finding": "د نړۍ او محدود مدل تړاو عين دے."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "topology",
+      "reverse_paraphrase": "Topology is a collection of open subsets; X plus topology is the space.",
+      "finding": "OLINT-005 توپير ساتي."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "open-closure",
+      "reverse_paraphrase": "Empty and whole sets, finite intersections, arbitrary unions are open.",
+      "finding": "درې شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Conjunction corresponds to intersection.",
+      "finding": "تقاطع عين ده."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "disjunction",
+      "reverse_paraphrase": "Disjunction corresponds to union.",
+      "finding": "اجتماع عين ده."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "implication",
+      "reverse_paraphrase": "Implication is interior of complement of A union B.",
+      "finding": "دنننۍ برخې فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "interior",
+      "reverse_paraphrase": "Interior is union of all open subsets contained in V.",
+      "finding": "د دنننۍ برخې تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0503",
+      "passage": "scope",
+      "reverse_paraphrase": "The chapter collects soundness and completeness results.",
+      "finding": "د دواړو پايلو حد عين دے."
+    },
+    {
+      "unit_id": "OLP-0503",
+      "passage": "editorial",
+      "reverse_paraphrase": "The source explicitly says the introduction and facts remain to be supplied.",
+      "finding": "اداري نيمګړتيا پټه شوې نۀ ده."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "induction",
+      "reverse_paraphrase": "Soundness is proved by induction on derivation length.",
+      "finding": "د n پر اوږدوالي استقرا عين ده."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "axiom",
+      "reverse_paraphrase": "Axiom validity is explicitly an unproved editorial dependency.",
+      "finding": "د سرچينې اداري حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "assumption",
+      "reverse_paraphrase": "Assumption membership yields local truth of A_n.",
+      "finding": "OLINT-006 يوازې اضافي وسيطه لرې کوي."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "modus-ponens",
+      "reverse_paraphrase": "Modus ponens uses reflexive accessibility at w.",
+      "finding": "د انعکاسيتوب کارونه عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "induction",
+      "reverse_paraphrase": "The proof is induction on natural derivations.",
+      "finding": "استقرا پر استنتاج عين ده."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "assumption",
+      "reverse_paraphrase": "Assumption A entails itself at the same world.",
+      "finding": "لومړنے حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Introduction combines proofs of B and C.",
+      "finding": "OLINT-007 پايله د مقدمو سره برابروي."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "conjunction-elimination",
+      "reverse_paraphrase": "Either conjunct follows at a satisfying world.",
+      "finding": "د عطف د لرې کولو حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "disjunction-introduction",
+      "reverse_paraphrase": "Either premise yields the disjunction.",
+      "finding": "د فصل د معرفي حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "disjunction-elimination",
+      "reverse_paraphrase": "Both B and C branches entail D from their own added assumption.",
+      "finding": "OLINT-008 د نړۍ او يوغړي سټ نښې سموي."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "implication-introduction",
+      "reverse_paraphrase": "Every accessible future world satisfying B must satisfy C.",
+      "finding": "د هرې راتلونکې نړۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "implication-elimination",
+      "reverse_paraphrase": "Reflexivity allows modus ponens at the current world.",
+      "finding": "د انعکاسيتوب کارونه عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "false-elimination",
+      "reverse_paraphrase": "False holds at no world, so a counterexample is impossible.",
+      "finding": "د محال نشتون عين دے."
     }
   ],
   "builds": [

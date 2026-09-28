@@ -1,0 +1,55 @@
+{
+  "schema": "ps-b154-intuitionistic-two-staging/1",
+  "utc": "2026-09-28T20:35:45.323291+00:00",
+  "status": "two translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 505,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0506",
+    "OLP-0507"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0506",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+      "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+      "target_sha256": "14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c",
+      "paired_blocks": 22,
+      "math_spans": 130,
+      "focused_qa_sha256": "a2779fb653051b5f20028a2edacadf0b5a630dda036952f23b9d98f7866b410e",
+      "source_treatment_ids": [
+        "OLINT-009"
+      ]
+    },
+    {
+      "unit_id": "OLP-0507",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+      "source_sha256": "2397d36f77e15b27cf5889ab0e2bdfd34e060416aae5089afbfccb881cde8128",
+      "target_sha256": "285346a8f172dc8659608435a241b2a0bdeb306db723bf713551f3bcd1cc804f",
+      "paired_blocks": 10,
+      "math_spans": 49,
+      "focused_qa_sha256": "8fcbf3d911bc2d5ca50cdea0c4351adc84578bbf68e4696c2745bc08306e939f",
+      "source_treatment_ids": []
+    }
+  ],
+  "paired_blocks": 32,
+  "math_spans": 179,
+  "notes_path": "work/B154_TWO_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "daaa8b18a161ce667f8787d91e8aec1e049e6db0a607fdd5594fdeda7a2a2955",
+  "consultation_path": "work/B154_TWO_CANON_CONSULTATION.md",
+  "consultation_sha256": "81928250e0f44fc25a4342138fc8ebaa81daaae4631f9ba8f7422644f4be0eb9",
+  "b153_accepted_checkpoint_sha256": "54eda473d47b148b4c04bf2b1aa889d49fb210a06f468052e459f5a852b7635a",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-009",
+      "unit_id": "OLP-0506",
+      "kind": "finite-lower-indices-in-prime-set-proof",
+      "source_math": [],
+      "target_math": []
+    }
+  ],
+  "next_action": "Continue source and canon review and translation at OLP-0508, then register and cumulatively validate B154."
+}

@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0500; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T19:53:06.772906+00:00",
+  "status": "adopted through OLP-0505; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T20:22:47.428498+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -13045,6 +13045,305 @@
       ],
       "decision_timing": "contemporaneous B152 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-004",
+      "unit_id": "OLP-0501",
+      "classification": "proof_order_and_premise_correction",
+      "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+      "source_locator": "content/intuitionistic-logic/semantics/semantic-notions.tex:33,37",
+      "source_literal_line_1based": [
+        33,
+        37
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "target_line_1based": 35,
+      "target_literal_line_1based": [
+        35,
+        37
+      ],
+      "disclosure_line_1based": 42,
+      "target_sha256": "1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ثبوت لومړۍ ماده له ځايي فرضه او دويمه له ټول مدل څخه په خپل ترتيب ثابته شوه.",
+      "reason": "لومړۍ قضيه ځايي فرض لري، خو د سرچينې ثبوت قوي ټول-مدلي فرض کاروي؛ دويمه له لومړۍ څخه د ټولو نړۍو لپاره راځي.",
+      "formula_policy": "Only listed exact math-span substitutions; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "proof_order_and_premise_correction"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+      "audit_artifacts": [
+        "B153_SOURCE_AUDIT.json",
+        "B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/semantics/semantic-notions.tex:33,37",
+        "ps-Arab-PK/content/intuitionistic-logic/semantics/semantic-notions.tex:35,37",
+        "B153_DRAFT_QA_OLP-0501.json"
+      ],
+      "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-005",
+      "unit_id": "OLP-0502",
+      "classification": "topology_versus_topological_space",
+      "source_path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "source_sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "source_locator": "content/intuitionistic-logic/semantics/topological-semantics.tex:33,35",
+      "source_literal_line_1based": [
+        33,
+        35
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "target_line_1based": 33,
+      "target_literal_line_1based": [
+        33,
+        35
+      ],
+      "disclosure_line_1based": 36,
+      "target_sha256": "e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "په يوه نثري جمله کښې X د توپولوژيکي فضا په نوم راغلے دے، نه د پرانيستو سټونو د ټولګې په نوم.",
+      "reason": "سرچينه پخپله توپولوژي د پرانيستو سټونو ټولګه او له X سره يې جوړښت فضا تعريفوي.",
+      "formula_policy": "Only listed exact math-span substitutions; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "topology_versus_topological_space"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+      "audit_artifacts": [
+        "B153_SOURCE_AUDIT.json",
+        "B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/semantics/topological-semantics.tex:33,35",
+        "ps-Arab-PK/content/intuitionistic-logic/semantics/topological-semantics.tex:33,35",
+        "B153_DRAFT_QA_OLP-0502.json"
+      ],
+      "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-006",
+      "unit_id": "OLP-0504",
+      "classification": "extra_satisfaction_argument",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex:41",
+      "source_literal_line_1based": [
+        41
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "target_line_1based": 42,
+      "target_literal_line_1based": [
+        42
+      ],
+      "disclosure_line_1based": 43,
+      "target_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د صدق له نښې څخه زياته د فرضونو وسيطه لرې شوې ده.",
+      "reason": "د معنايي تعريف له مخې دلته د يو غړي صدق مراد دے؛ درېګوني مـاکرو نښه ناسم جوړښت لري.",
+      "formula_policy": "Only listed exact math-span substitutions; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{\\Gamma}{!A_n}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!A_n}[w]$"
+        ],
+        "scope": "extra_satisfaction_argument"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+      "audit_artifacts": [
+        "B153_SOURCE_AUDIT.json",
+        "B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex:41",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-axd.tex:42",
+        "B153_DRAFT_QA_OLP-0504.json"
+      ],
+      "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-007",
+      "unit_id": "OLP-0505",
+      "classification": "wrong_conjunction_introduction_conclusion",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:39",
+      "source_literal_line_1based": [
+        39
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "target_line_1based": 37,
+      "target_literal_line_1based": [
+        37
+      ],
+      "disclosure_line_1based": 44,
+      "target_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د عطف د معرفي پايله د هماغو B او C مقدمو او وروستۍ کرښې له مخې سمه شوې ده.",
+      "reason": "سرچينه B او C مقدمې او وروستۍ B او C صدق ليکي، خو په منځ کښې د A او B عطف پايله ليکي.",
+      "formula_policy": "Only listed exact math-span substitutions; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\cup\\Delta\\Entails!A\\land!B$"
+        ],
+        "target_only": [
+          "$\\Gamma\\cup\\Delta\\Entails!B\\land!C$"
+        ],
+        "scope": "wrong_conjunction_introduction_conclusion"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+      "audit_artifacts": [
+        "B153_SOURCE_AUDIT.json",
+        "B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:39",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:37",
+        "B153_DRAFT_QA_OLP-0505.json"
+      ],
+      "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-008",
+      "unit_id": "OLP-0505",
+      "classification": "malformed_disjunction_elimination_notation",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+      "source_locator": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:82,83,85",
+      "source_literal_line_1based": [
+        82,
+        83,
+        85
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "target_line_1based": 87,
+      "target_literal_line_1based": [
+        87,
+        89,
+        92
+      ],
+      "disclosure_line_1based": 95,
+      "target_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د لومړي حالت د صدق نړۍ په نښه کښې وتړل شوه او په دواړو فرضي سټونو کښې يوغړي قوسونه ورزيات شول.",
+      "reason": "د فصل د لرې کولو مخکېنۍ مقدمې او د استقرا فرض همدغه نړۍ او يوغړي فرضي سټونه غواړي.",
+      "formula_policy": "Only listed exact math-span substitutions; all other formulas, identifiers, tags, term tokens and structural macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{!B}$",
+          "$\\Delta_1\\cup!B\\Entails!D$",
+          "$\\Delta_2\\cup!C\\Entails!D$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!B}[w]$",
+          "$\\Delta_1\\cup\\{!B\\}\\Entails!D$",
+          "$\\Delta_2\\cup\\{!C\\}\\Entails!D$"
+        ],
+        "scope": "malformed_disjunction_elimination_notation"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
+      "audit_artifacts": [
+        "B153_SOURCE_AUDIT.json",
+        "B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:82,83,85",
+        "ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:87,89,92",
+        "B153_DRAFT_QA_OLP-0505.json"
+      ],
+      "decision_timing": "contemporaneous B153 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -13142,7 +13441,8 @@
     "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES",
     "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
-    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS"
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS"
   ],
   "source_authorities": [
     {

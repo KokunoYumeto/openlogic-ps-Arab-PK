@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B152-INTUITIONISTIC-DEDUCTIONS",
-  "status": "OLP-0496–0500 source-reviewed and staged; 82 paired blocks, 24 semantic samples, two provisional terms and one disclosed source treatment; cumulative QA pending",
+  "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+  "status": "OLP-0501–0505 source-reviewed and staged; 72 paired blocks, 26 semantic samples, two provisional terms and five disclosed source treatments; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10478,6 +10478,106 @@
       "scope": "درېګونې اړيکيز مدل، شپږ صدق مادې، د نفي تمرين او زياتېدونکے صدق.",
       "allowed_residual_english": [],
       "residual_english_rationale": "No residual English."
+    },
+    "OLP-0501": {
+      "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS",
+        "TERM-INTUITIONISTIC-RESTRICTION",
+        "TERM-MODEL-THEORY"
+      ],
+      "scope": "مدلي رښتياوالے، اعتبار، استلزام، د لاسرسي نړۍو محدودونه او د صدق قضيه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0502": {
+      "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-INTUITIONISTIC-TOPOLOGICAL-SEMANTICS",
+        "TERM-TOPOLOGICAL-INTERIOR"
+      ],
+      "scope": "توپولوژي، توپولوژيکي فضا، درې تړلي شرطونه، پنځه د صدق مادې او دنننۍ برخه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0503": {
+      "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-SEQUENT-SOUNDNESS"
+      ],
+      "scope": "د سموالي او بشپړتيا عنوان، اداري يادښت او اووه واردات.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No residual English."
+    },
+    "OLP-0504": {
+      "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
+      ],
+      "scope": "د بديهي استنتاج سموالے، د اوږدوالي استقرا او درې وروستي حالتونه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0505": {
+      "batch_id": "PS-B153-INTUITIONISTIC-SEMANTICS",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-INTUITIONISTIC-LOGIC",
+        "TERM-PROOF-CALCULI",
+        "TERM-SEQUENT-SOUNDNESS",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
+      ],
+      "scope": "د طبيعي استنتاج سموالے، لس قاعده‌يي حالتونه او دوه وروستي تمرينونه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
     }
   },
   "semantic_review": [
@@ -18718,6 +18818,162 @@
       "passage": "monotonicity",
       "reverse_paraphrase": "Truth at worlds is monotone; proof is an exercise.",
       "finding": "قضيه او تمرين جلا ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "model-truth",
+      "reverse_paraphrase": "A is true in M iff true at every world of M.",
+      "finding": "ټولې نړۍې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "validity",
+      "reverse_paraphrase": "A is valid iff true in every model.",
+      "finding": "ټول مدلونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "entailment",
+      "reverse_paraphrase": "Gamma entails A iff every satisfying world also satisfies A.",
+      "finding": "د هرې نړۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "restriction",
+      "reverse_paraphrase": "M_w contains exactly worlds accessible from w, with restricted R,V.",
+      "finding": "درې محدودې برخې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0501",
+      "passage": "restriction-truth",
+      "reverse_paraphrase": "A at w in M iff A is globally true in M_w.",
+      "finding": "د نړۍ او محدود مدل تړاو عين دے."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "topology",
+      "reverse_paraphrase": "Topology is a collection of open subsets; X plus topology is the space.",
+      "finding": "OLINT-005 توپير ساتي."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "open-closure",
+      "reverse_paraphrase": "Empty and whole sets, finite intersections, arbitrary unions are open.",
+      "finding": "درې شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Conjunction corresponds to intersection.",
+      "finding": "تقاطع عين ده."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "disjunction",
+      "reverse_paraphrase": "Disjunction corresponds to union.",
+      "finding": "اجتماع عين ده."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "implication",
+      "reverse_paraphrase": "Implication is interior of complement of A union B.",
+      "finding": "دنننۍ برخې فورمول عين دے."
+    },
+    {
+      "unit_id": "OLP-0502",
+      "passage": "interior",
+      "reverse_paraphrase": "Interior is union of all open subsets contained in V.",
+      "finding": "د دنننۍ برخې تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0503",
+      "passage": "scope",
+      "reverse_paraphrase": "The chapter collects soundness and completeness results.",
+      "finding": "د دواړو پايلو حد عين دے."
+    },
+    {
+      "unit_id": "OLP-0503",
+      "passage": "editorial",
+      "reverse_paraphrase": "The source explicitly says the introduction and facts remain to be supplied.",
+      "finding": "اداري نيمګړتيا پټه شوې نۀ ده."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "induction",
+      "reverse_paraphrase": "Soundness is proved by induction on derivation length.",
+      "finding": "د n پر اوږدوالي استقرا عين ده."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "axiom",
+      "reverse_paraphrase": "Axiom validity is explicitly an unproved editorial dependency.",
+      "finding": "د سرچينې اداري حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "assumption",
+      "reverse_paraphrase": "Assumption membership yields local truth of A_n.",
+      "finding": "OLINT-006 يوازې اضافي وسيطه لرې کوي."
+    },
+    {
+      "unit_id": "OLP-0504",
+      "passage": "modus-ponens",
+      "reverse_paraphrase": "Modus ponens uses reflexive accessibility at w.",
+      "finding": "د انعکاسيتوب کارونه عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "induction",
+      "reverse_paraphrase": "The proof is induction on natural derivations.",
+      "finding": "استقرا پر استنتاج عين ده."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "assumption",
+      "reverse_paraphrase": "Assumption A entails itself at the same world.",
+      "finding": "لومړنے حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Introduction combines proofs of B and C.",
+      "finding": "OLINT-007 پايله د مقدمو سره برابروي."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "conjunction-elimination",
+      "reverse_paraphrase": "Either conjunct follows at a satisfying world.",
+      "finding": "د عطف د لرې کولو حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "disjunction-introduction",
+      "reverse_paraphrase": "Either premise yields the disjunction.",
+      "finding": "د فصل د معرفي حالت عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "disjunction-elimination",
+      "reverse_paraphrase": "Both B and C branches entail D from their own added assumption.",
+      "finding": "OLINT-008 د نړۍ او يوغړي سټ نښې سموي."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "implication-introduction",
+      "reverse_paraphrase": "Every accessible future world satisfying B must satisfy C.",
+      "finding": "د هرې راتلونکې نړۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "implication-elimination",
+      "reverse_paraphrase": "Reflexivity allows modus ponens at the current world.",
+      "finding": "د انعکاسيتوب کارونه عين دے."
+    },
+    {
+      "unit_id": "OLP-0505",
+      "passage": "false-elimination",
+      "reverse_paraphrase": "False holds at no world, so a counterexample is impossible.",
+      "finding": "د محال نشتون عين دے."
     }
   ]
 }

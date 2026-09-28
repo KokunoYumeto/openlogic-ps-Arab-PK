@@ -1,0 +1,152 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: lindenbaum
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{lin}
+
+\olsection{د لينډنباوم لمه}
+
+د شهودي منطق د بشپړتيا قضيه د دې په فرضولو ثابتېږي چې
+$\Gamma \Proves/ !A$؛ بيا داسې مدل جوړوو چې
+$\mSat{M}{\Gamma}$ او~$\mSat/{M}{!A}$ ولري۔
+
+په کلاسيک منطق کښې د !!{derivability} اړيکه سازګارۍ ته راکمولے
+شو، ځکه !!a{formula}~$!A$ له د !!{formula}s له يوه سټ څخه هله او
+يوازې هله !!{derivable} وي چې دغه سټ د~$!A$ له نفي سره يوځاے
+ناسازګار وي۔ په شهودي منطق کښې دا کار نۀ شو کولے۔ په شهودي منطق
+کښې که $\lnot!A$ ناسازګار وي، يوازې $\Proves \lnot\lnot !A$
+ترلاسه کوو۔ څرنګه چې $\lnot\lnot!A \lif !A$ په عمومي ډول په
+شهودي منطق کښې نۀ منل کېږي، نو $\Proves !A$ نۀ شو اخيستلے۔
+
+نو د مدل~$\mModel{M}$ د جوړولو پر مهال بايد د
+!!{formula}~$!A$ د !!{derivability} نشتون په پام کښې وساتو؛ له دې امله د مدل
+$\mModel{M}$ د جوړولو دپاره بشپړ سټ $\Gamma^* \supseteq \Gamma$
+نۀ شو کارولے، ځکه په هر بشپړ سټ~$\Gamma^*$ کښې
+$\Gamma^* \Proves !A \lor \lnot !A$ وي۔
+
+د بشپړ سټ~$\Gamma^*$ پر ځاے د فارمولونو د اولني سټ مفهوم کاروو:
+
+\begin{defn}\ollabel{defn:prime}
+  د !!{formula}s سټ~$\Gamma$ هله او يوازې هله \emph{اولنی} دے چې
+  \begin{enumerate}
+  \item\ollabel{defn:prime1} $\Gamma$ سازګار وي، يعنې $\Gamma \Proves/ \lfalse$؛
+  \item\ollabel{defn:prime2} که $\Gamma \Proves !A$ وي، نو $!A \in \Gamma$ وي؛ او
+  \item\ollabel{defn:prime3} که $!A \lor !B \in \Gamma$ وي، نو $!A \in
+    \Gamma$ يا $!B \in \Gamma$ وي۔
+  \end{enumerate}
+\end{defn}
+
+\begin{lem}[د لينډنباوم لمه]
+  \ollabel{lem:lindenbaum} که $\Gamma \Proves/ !A$ وي، نو داسې
+  $\Gamma^* \supseteq \Gamma$ شته چې $\Gamma^*$ اولنی وي او
+  $\Gamma^* \Proves/ !A$ وي۔
+\end{lem}
+
+\begin{proof}
+  $!B_1 \lor !C_1$، $!B_2 \lor !C_2$، \dots، دې د
+  $!B \lor !C$ په بڼه د ټولو !!{formula}s يوه شمېرنه وي۔ د
+  !!{formula}s د سټونو يوه زياتېدونکې لړۍ~$\Gamma_n$ تعريفوو،
+  چې هر $\Gamma_{n+1}$ د $\Gamma_n$ او يوه نوي !!{formula}
+  له يوځاے کولو جوړېږي۔ $\Gamma^*$ به د ټولو~$\Gamma_n$ اتحاد
+  وي۔ نوي !!{formula}s داسې ټاکو چې $\Gamma^*$ اولنی شي او لا
+  هم $\Gamma^* \Proves/ !A$ پاتې شي۔ يعنې په هر ګام کښې بايد
+  لومړنی داسې فصل~$!B_i \lor !C_i$ ومومو چې:
+  \begin{enumerate}
+  \item\ollabel{gamma-1} $\Gamma_n \Proves !B_i \lor !C_i$
+  \item\ollabel{gamma-2} $!B_i \notin \Gamma_n$ او $!C_i \notin \Gamma_n$
+  \end{enumerate}
+  يا $!B_i$ په $\Gamma_n$ کښې زياتوو، که $\Gamma_n \cup \{!B_i\}
+  \Proves/ !A$ وي؛ او که داسې نۀ وي، $!C_i$ زياتوو۔ بايد وښيو
+  چې دا کار سم دے۔ اوس $i(n)$ هغه تر ټولو کوچنی $i$ ټاکو چې
+  \olref{gamma-1} او~\olref{gamma-2} پوره کوي۔
+  
+  $\Gamma_0 = \Gamma$ او
+  \[
+  \Gamma_{n+1} = \begin{cases}
+    \Gamma_n \cup \{!B_{i(n)}\} &
+    \text{که $\Gamma_n \cup \{!B_{i(n)}\} \Proves/ !A$ وي} \\
+    \Gamma_n \cup \{!C_{i(n)}\} & \text{که داسې نۀ وي}
+    \end{cases}
+  \]
+  تعريف کړئ۔ که $i(n)$ نۀ وي ټاکلے، يعنې هر کله چې
+  $\Gamma_n \Proves !B \lor !C$ وي، نو يا $!B \in \Gamma_n$
+  يا $!C \in \Gamma_n$ وي، $\Gamma_{n+1}
+  = \Gamma_n$ ږدو۔ اوس $\Gamma^* = \bigcup_{n=0}^\infty \Gamma_n$
+  ږدو۔
+
+  لومړے ښيو چې د هر $n$ دپاره $\Gamma_n \Proves/ !A$ وي۔ پر~$n$
+  استقرا کاروو۔ د $n = 0$ لپاره دعوه د لمې له فرضه، يعنې
+  $\Gamma \Proves/ !A$، راځي۔ که $n>0$ وي، بايد وښيو چې له
+  $\Gamma_n \Proves/ !A$ څخه $\Gamma_{n+1} \Proves/ !A$
+  راځي۔ که $i(n)$ نۀ وي ټاکلے، $\Gamma_{n+1} = \Gamma_n$ او
+  د ثابتولو څۀ نشته۔ نو فرض کړئ $i(n)$ ټاکلے وي۔ د اسانتيا دپاره
+  $i = i(n)$ ږدو۔
+  
+  د دعوې مقابل لوری ثابتوو۔ فرض کړئ $\Gamma_{n+1}
+  \Proves !A$۔ د جوړونې له مخې $\Gamma_{n+1} = \Gamma_n \cup
+  \{!B_i\}$ وي که $\Gamma_n \cup \{!B_i\} \Proves/ !A$ وي؛
+  او که داسې نۀ وي، $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$
+  وي۔ لومړے حالت څرګند ناشونی دے، ځکه په هغه کښې به
+  $\Gamma_{n+1} \Proves/ !A$ وي۔ نو $\Gamma_n \cup
+  \{!B_i\} \Proves !A$ او $\Gamma_{n+1} = \Gamma_n \cup
+  \{!C_i\}$ دي۔ د $i(n)$ له تعريفه $\Gamma _n \Proves !B_i \lor
+  !C_i$ لرو۔ $\Gamma_n \cup \{!B_i\} \Proves !A$ هم لرو، او
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\} \Proves !A$ هم۔ نو
+  $\Gamma_n \Proves !A$ راځي، لکه چې غوښتل مو وښيو۔
+
+  که $\Gamma^* \Proves !A$ وي، نو داسې متناهي فرعي سټ
+  $\Gamma' \subseteq \Gamma^*$ شته چې $\Gamma' \Proves !A$
+  وي۔ هر $!D \in \Gamma'$ بايد د کوم~$i$ دپاره په $\Gamma_i$
+  کښې وي۔ $n$ دې د دغو شاخصونو تر ټولو لوے وي۔ څرنګه چې د
+  $i \le n$ لپاره $\Gamma_i \subseteq \Gamma_n$ وي، نو
+  $\Gamma' \subseteq \Gamma_n$۔ خو بيا $\Gamma_n \Proves !A$
+  کېږي؛ دا زموږ له پورته ثبوت شوي $\Gamma_n \Proves/ !A$ سره
+  په ټکر کښې دے۔
+
+  په پاے کښې ښيو چې $\Gamma^*$ اولنی دے، يعنې د
+  \olref{defn:prime} درې شرطونه \olref{defn:prime1}،
+  \olref{defn:prime2} او~\olref{defn:prime3} پوره کوي۔
+
+  لومړے، $\Gamma^* \Proves/ !A$ دے، نو $\Gamma^*$ سازګار
+  دے؛ ځکه \olref{defn:prime1} پوره کېږي۔
+
+  اوس ښيو چې که $\Gamma^* \Proves !B \lor !C$ وي، نو يا
+  $!B \in \Gamma^*$ يا $!C \in \Gamma^*$ وي۔ په دې سره
+  \olref{defn:prime3} ثابتېږي، ځکه که $!B \lor !C \in \Gamma^*$
+  وي، نو $\Gamma^* \Proves !B \lor !C$ هم وي۔ نو فرض کړئ
+  $\Gamma^* \Proves !B \lor !C$ وي، خو $!B \notin \Gamma^*$
+  او $!C \notin \Gamma^*$ وي۔ له $\Gamma^* \Proves !B \lor !C$
+  څخه د کوم~$n$ دپاره $\Gamma_n \Proves !B \lor !C$ راځي۔
+  $!B \lor !C$ د ټولو فصلونو په شمېرنه کښې، ووايئ د
+  $!B_j \lor !C_j$ په توګه، راځي۔ دغه $!B_j \lor !C_j$ د
+  $i(n)$ د تعريف شرطونه پوره کوي: $\Gamma_n \Proves !B_j
+  \lor !C_j$ او $!B_j \notin \Gamma_n$ او $!C_j \notin \Gamma_n$
+  دي۔ د دغه شاخص څخه ټيټ شاخصونه متناهي دي؛ هر ټيټ فصل
+  $!B_i \lor !C_i$ چې په کوم پړاو کښې غوره شي، د يوه غړي
+  $!B_i$ يا $!C_i$ په زياتېدو سره بيا شرط نۀ پوره کوي۔
+  ځکه چې دغه فصل د فرض له مخې لا شرط پوره کوي، په يو پړاو~$m$
+  کښې به $j = i(m)$ شي۔ نو يا $!B \in \Gamma_{m+1}$ يا
+  $!C \in \Gamma_{m+1}$ کېږي، چې د $!B \notin \Gamma^*$ او
+  $!C \notin \Gamma^*$ له فرض سره ټکر لري۔ د ژباړې د نسخې
+  څرګندونه (OLINT-009): منجمده سرچينه دلته وايي چې په هر ګام
+  کښې د شرط پوره کوونکو فصلونو ټول شمېر کمېږي؛ د نوي غړي په
+  زياتېدو سره نور فصلونه هم ثابتېدے شي۔ له ټاکلي شاخص څخه ټيټ
+  متناهي شاخصونه يو ځل هوارېږي، او همدا د دې دليل کافي بڼه ده۔
+
+  اوس فرض کړئ $\Gamma^* \Proves !B$۔ نو $\Gamma^* \Proves !B \lor
+  !B$ وي۔ خو تازه مو ثابت کړل چې که $\Gamma^* \Proves !B \lor !B$
+  وي، نو $!B \in \Gamma^*$ وي۔ نو $\Gamma^*$ د
+  \olref{defn:prime} شرط~\olref{defn:prime2} پوره کوي۔
+\end{proof}
+
+\begin{prob}
+وښيئ چې که $\Gamma \Proves/ \bot$ وي، نو $\Gamma$ په کلاسيک
+منطق کښې سازګار دے؛ يعنې داسې ټاکنه شته چې د~$\Gamma$ ټول
+فارمولونه رښتيا کوي۔
+\end{prob}
+
+\end{document}

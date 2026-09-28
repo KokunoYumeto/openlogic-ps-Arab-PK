@@ -1,0 +1,140 @@
+{
+  "schema": "ps-b153-intuitionistic-all5-staging/1",
+  "utc": "2026-09-28T20:18:03.234680+00:00",
+  "status": "five translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 500,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0501",
+    "OLP-0502",
+    "OLP-0503",
+    "OLP-0504",
+    "OLP-0505"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0501",
+      "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+      "target_sha256": "1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3",
+      "paired_blocks": 14,
+      "math_spans": 45,
+      "focused_qa_sha256": "8563be3eb36473ab447878cd2b6affb9d625d75038274793597669b16a7cac4a",
+      "source_treatment_ids": [
+        "OLINT-004"
+      ]
+    },
+    {
+      "unit_id": "OLP-0502",
+      "source_path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "source_sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "target_sha256": "e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3",
+      "paired_blocks": 15,
+      "math_spans": 78,
+      "focused_qa_sha256": "66ef723bae1fea7b8f01665217665ab6019289b892f1e8f2719b500ad41894f9",
+      "source_treatment_ids": [
+        "OLINT-005"
+      ]
+    },
+    {
+      "unit_id": "OLP-0503",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex",
+      "source_sha256": "a431fe8a0f6a36831ecb5daffee42d7b0258b6afcf65409e082ba0d5c3dc8855",
+      "target_sha256": "723b9a9ae635152322e583dff98ee889e73bc8f1f434723dbdcef8befc081344",
+      "paired_blocks": 8,
+      "math_spans": 0,
+      "focused_qa_sha256": "60a93b15d479c30263c2637599dcd692135e7ce8fd6b7f51b504fdf11f127b05",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0504",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+      "target_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+      "paired_blocks": 12,
+      "math_spans": 56,
+      "focused_qa_sha256": "33c669dea8c9bc9f68cf5a46b0477e542683798dfa9d962cf7789aedbbdeaa0c",
+      "source_treatment_ids": [
+        "OLINT-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0505",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+      "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+      "target_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+      "paired_blocks": 23,
+      "math_spans": 157,
+      "focused_qa_sha256": "a065f4394cc7d69adbbf8ed0c5e3c1254656c584789cee66b181583b80b62742",
+      "source_treatment_ids": [
+        "OLINT-007",
+        "OLINT-008"
+      ]
+    }
+  ],
+  "paired_blocks": 72,
+  "math_spans": 336,
+  "notes_path": "work/B153_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "a455bb4abd51d00cd6bd4e3f2c28f75b252eb3f2692eb0e074ae515274a9a769",
+  "consultation_path": "work/B153_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "c25a0d72e01cc56f87a8b0ebaf691d4d1c0770b8469273c08fb9f1fb2998cb4f",
+  "b152_accepted_checkpoint_sha256": "cfa0cada4be74eecb21d040582b54ac30ad191ba21b5994e76f8a4281e0a6a09",
+  "prior_four_draft_checkpoint_sha256": "1b5016dd2f291b1e3328f37a863e4e910ca19d672824edb0d8991c02f1db9c60",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-004",
+      "unit_id": "OLP-0501",
+      "kind": "proof-order-and-premise-correction",
+      "source_math": [],
+      "target_math": []
+    },
+    {
+      "id": "OLINT-005",
+      "unit_id": "OLP-0502",
+      "kind": "topology-versus-topological-space",
+      "source_math": [],
+      "target_math": []
+    },
+    {
+      "id": "OLINT-006",
+      "unit_id": "OLP-0504",
+      "kind": "extra-satisfaction-argument",
+      "source_math": [
+        "$\\mSat{M}{\\Gamma}{!A_n}[w]$"
+      ],
+      "target_math": [
+        "$\\mSat{M}{!A_n}[w]$"
+      ]
+    },
+    {
+      "id": "OLINT-007",
+      "unit_id": "OLP-0505",
+      "kind": "wrong-conjunction-introduction-conclusion",
+      "source_math": [
+        "$\\Gamma\\cup\\Delta\\Entails!A\\land!B$"
+      ],
+      "target_math": [
+        "$\\Gamma\\cup\\Delta\\Entails!B\\land!C$"
+      ]
+    },
+    {
+      "id": "OLINT-008",
+      "unit_id": "OLP-0505",
+      "kind": "malformed-disjunction-elimination-notation",
+      "source_math": [
+        "$\\mSat{M}{!B}$",
+        "$\\Delta_1\\cup!B\\Entails!D$",
+        "$\\Delta_2\\cup!C\\Entails!D$"
+      ],
+      "target_math": [
+        "$\\mSat{M}{!B}[w]$",
+        "$\\Delta_1\\cup\\{!B\\}\\Entails!D$",
+        "$\\Delta_2\\cup\\{!C\\}\\Entails!D$"
+      ]
+    }
+  ],
+  "next_action": "Register B153 terminology and OLINT-004–008 with source audit; run independent cumulative QA and dual canonical replay; accept OLP-0501–0505, then continue OLP-0506."
+}

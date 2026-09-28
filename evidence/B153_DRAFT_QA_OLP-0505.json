@@ -1,0 +1,54 @@
+{
+  "schema": "ps-b153-intuitionistic-nd-soundness-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0505",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+  "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+  "target_sha256": "eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9",
+  "source_blocks": 23,
+  "target_blocks": 23,
+  "math_spans": 157,
+  "source_correction_ids": [
+    "OLINT-007",
+    "OLINT-008"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\Gamma\\cup\\Delta\\Entails!A\\land!B$",
+      "$\\mSat{M}{!B}$",
+      "$\\Delta_1\\cup!B\\Entails!D$",
+      "$\\Delta_2\\cup!C\\Entails!D$"
+    ],
+    "target_only": [
+      "$\\Gamma\\cup\\Delta\\Entails!B\\land!C$",
+      "$\\mSat{M}{!B}[w]$",
+      "$\\Delta_1\\cup\\{!B\\}\\Entails!D$",
+      "$\\Delta_2\\cup\\{!C\\}\\Entails!D$"
+    ],
+    "scope": "one conjunction-conclusion mismatch; three disjunction-elimination notation errors"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "four_math_exceptions": true,
+    "ten_rule_cases": true,
+    "four_tagged_exercises": true,
+    "conjunction_correction": true,
+    "disjunction_correction": true,
+    "future_monotonicity": true,
+    "reflexive_elimination": true,
+    "false_has_no_world": true,
+    "negation_exercises": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register OLINT-007/008, complete B153 source audit and cumulative QA before acceptance."
+}

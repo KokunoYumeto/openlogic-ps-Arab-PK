@@ -3491,3 +3491,52 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د عطف د جوړې د تشريح په يوه فورمول کښې دويم غړے د لومړي پر ځاے راوړل شو؛ څنګ‌ته په پښتو څرګند شو.
 - وجه: د سرچينې جوړه N1,N2 او هماغه ورپسې جمله N2 د A2 جوړونه بولي؛ د عطف دويم غړے A1 ليکل تناقض دے.
 - دا يوازې يوه رياضيکي برخه بدلوي؛ سرچينه نۀ ده بدله شوې او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+## OLINT-004
+
+- واحد: OLP-0501۔
+- منجمده سرچينه: content/intuitionistic-logic/semantics/semantic-notions.tex؛ SHA-256 e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/semantics/semantic-notions.tex؛ SHA-256 1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3۔
+- چلند: د ثبوت لومړۍ ماده له ځايي فرضه او دويمه له ټول مدل څخه په خپل ترتيب ثابته شوه.
+- وجه: لومړۍ قضيه ځايي فرض لري، خو د سرچينې ثبوت قوي ټول-مدلي فرض کاروي؛ دويمه له لومړۍ څخه د ټولو نړۍو لپاره راځي.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-005
+
+- واحد: OLP-0502۔
+- منجمده سرچينه: content/intuitionistic-logic/semantics/topological-semantics.tex؛ SHA-256 a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/semantics/topological-semantics.tex؛ SHA-256 e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3۔
+- چلند: په يوه نثري جمله کښې X د توپولوژيکي فضا په نوم راغلے دے، نه د پرانيستو سټونو د ټولګې په نوم.
+- وجه: سرچينه پخپله توپولوژي د پرانيستو سټونو ټولګه او له X سره يې جوړښت فضا تعريفوي.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-006
+
+- واحد: OLP-0504۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/soundness-axd.tex؛ SHA-256 ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-axd.tex؛ SHA-256 9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24۔
+- چلند: د صدق له نښې څخه زياته د فرضونو وسيطه لرې شوې ده.
+- وجه: د معنايي تعريف له مخې دلته د يو غړي صدق مراد دے؛ درېګوني مـاکرو نښه ناسم جوړښت لري.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-007
+
+- واحد: OLP-0505۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/soundness-nd.tex؛ SHA-256 2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex؛ SHA-256 eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9۔
+- چلند: د عطف د معرفي پايله د هماغو B او C مقدمو او وروستۍ کرښې له مخې سمه شوې ده.
+- وجه: سرچينه B او C مقدمې او وروستۍ B او C صدق ليکي، خو په منځ کښې د A او B عطف پايله ليکي.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔
+
+
+## OLINT-008
+
+- واحد: OLP-0505۔
+- منجمده سرچينه: content/intuitionistic-logic/soundness-completeness/soundness-nd.tex؛ SHA-256 2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93۔
+- پښتو متن: ps-Arab-PK/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex؛ SHA-256 eb86e82690f290a943b9c72c244d69419b6f920559ec56972f5a060b2555cae9۔
+- چلند: د لومړي حالت د صدق نړۍ په نښه کښې وتړل شوه او په دواړو فرضي سټونو کښې يوغړي قوسونه ورزيات شول.
+- وجه: د فصل د لرې کولو مخکېنۍ مقدمې او د استقرا فرض همدغه نړۍ او يوغړي فرضي سټونه غواړي.
+- سرچينه نۀ ده بدله شوې؛ څنګ‌ته پښتو څرګندونه شته او د ليکوال رسمي تاييد نۀ دے ادعا شوے۔

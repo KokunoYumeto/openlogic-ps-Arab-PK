@@ -1,0 +1,41 @@
+{
+  "schema": "ps-b154-intuitionistic-lindenbaum-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0506",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+  "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+  "target_sha256": "14fa728d288b350d2450dc9f939994a6561e2d6ee8e412c8ad96656e7a68e27c",
+  "source_blocks": 22,
+  "target_blocks": 22,
+  "math_spans": 130,
+  "source_correction_ids": [
+    "OLINT-009"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": [],
+    "scope": "prose-only proof-argument repair"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact": true,
+    "prime_conditions": true,
+    "all_disjunction_enumeration": true,
+    "non_derivability_preserved": true,
+    "finite_premise_step": true,
+    "prime_proof_correction": true,
+    "classical_exercise": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register OLINT-009 and provisional prime-set term; complete B154 source audit and cumulative QA before acceptance."
+}
