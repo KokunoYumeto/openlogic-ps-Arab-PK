@@ -1,0 +1,102 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: topological-semantics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{top}
+
+\olsection{توپولوژيکي معنايي پوهنه}
+
+د شهودي منطق د معنايي پوهنې بله لار د توپولوژۍ د رياضيکي مفهوم
+کارول دي۔
+
+\begin{defn}
+  فرض کړئ $X$ يو سټ دے۔ پر~$X$ \emph{توپولوژي} داسې سټ
+  $\Top{O} \subseteq \Pow{X}$ دے چې لاندې خاصيتونه پوره کوي۔
+  د~$\Top{O}$ !!{element}s د توپولوژۍ \emph{پرانيستي سټونه}
+  بلل کېږي۔ سټ $X$ له $\Top{O}$ سره په ګډه \emph{توپولوژيکي فضا}
+  بلل کېږي۔
+  \begin{enumerate}
+  \item تش سټ او ټوله فضا پرانيستي دي: $\emptyset$، $X \in
+    \Top{O}$۔
+  \item پرانيستي سټونه د متناهي تقاطع له مخې تړلي دي: که $U$، $V \in
+    \Top{O}$ وي، نو $U \cap V \in \Top{O}$۔
+  \item پرانيستي سټونه د هرې اجتماع له مخې تړلي دي: که د هر $i \in I$
+    لپاره $U_i \in \Top{O}$ وي، نو $\bigcup \Setabs{U_i}{i \in
+      I} \in \Top{O}$۔
+  \end{enumerate}
+\end{defn}
+
+که د پرانيستو سټونو ټولګه له سياق څخه معلومېدے شي، توپولوژيکي
+فضا په لنډ ډول په $X$ هم نومولے شو۔ خو پام وکړئ چې $X$ يوازې
+هغه وخت توپولوژيکي فضا بلل کېږي چې د پرانيستو سټونو ټولګه ورته
+ټاکل شوې وي۔ د ژباړې د نسخې څرګندونه (OLINT-005): منجمده سرچينه
+په دې دوو ځايونو کښې فضا د توپولوژۍ په نوم يادوي؛ د مخکېني تعريف
+له مخې توپولوژي د پرانيستو سټونو ټولګه او فضا له هغې سره سټ دے۔
+
+\begin{defn}
+  د شهودي قضييز منطق \emph{توپولوژيکي مدل} يوه درېګونې
+  $\mModel{X} = \tuple{X, \Top{O}, V}$ ده، چې $\Top{O}$
+  پر~$X$ توپولوژي ده او $V$ داسې تابع ده چې هر بياني متغير ته
+  په $\Top{O}$ کښې يو پرانيستے سټ ټاکي۔
+
+  د توپولوژيکي مدل~$\mModel{X}$ په لرلو سره $\Prop{X}{!A}$ په
+  استقرايي ډول داسې تعريفولے شو:
+  \begin{enumerate}
+  \item $\Prop{X}{\lfalse} = \emptyset$
+  \item $\Prop{X}{p} = V(p)$
+  \item $\Prop{X}{!A \land !B} = \Prop{X}{!A} \cap \Prop{X}{!B}$
+  \item $\Prop{X}{!A \lor !B} = \Prop{X}{!A} \cup \Prop{X}{!B}$
+  \item $\Prop{X}{!A \lif !B} = \Interior{(X \setminus \Prop{X}{!A}) \cup
+    \Prop{X}{!B}}$
+  \end{enumerate}
+  دلته $\Interior{V}$ هغه تابع ده چې سټ $V \subseteq X$ ئې خپل
+  \emph{دنننۍ برخه} ته وړي، يعنې د هغو ټولو پرانيستو سټونو اجتماع
+  ته چې په دغه سټ کښې شامل دي۔ په بله وينا،
+  \[
+  \Interior{V} = \bigcup \Setabs{U}{U \subseteq V \text{ او } U \in \Top{O}}.
+  \]
+\end{defn}
+
+د هر سټ دنننۍ برخه تل پرانيستې وي، ځکه د پرانيستو سټونو اجتماع ده۔
+نو $\Prop{X}{!A}$ تل پرانيستے سټ دے۔
+
+که څۀ هم توپولوژيکي معنايي پوهنه ډېره انتزاعي ده، د هغې د انګېزې
+لپاره تصوراتي لارې شته۔ فرض کړئ د $X$ !!{element}s، يا «ټکي»،
+هغه ځايونه دي چې ويناوې پکې ارزول کېدے شي۔ د هغو ټولو ټکو سټ
+چې $!A$ پکې رښتيا وي، د~$!A$ څرګنده کړې قضيه ده۔ د ټکو هر سټ
+ممکنه قضيه نۀ ده؛ يوازې د $\Top{O}$ !!{element}s داسې دي۔
+$!A \Entails !B$ هله او يوازې هله چې $!B$ په هر هغه ټکي کښې
+رښتيا وي چې~$!A$ پکې رښتيا وي؛ يعنې د ټولو~$X$ لپاره
+$\Prop{X}{!A} \subseteq \Prop{X}{!B}$ وي۔ محاله وينا~$\lfalse$
+هېڅکله رښتيا نۀ ده، نو $\Prop{X}{\lfalse} = \emptyset$۔
+
+د $!B \land !C$، $!B \lor !C$ او $!B \lif !C$ څرګندې کړې
+قضيې بايد د $!B$ او~$!C$ له قضيو سره څنګه تړلې وي، څو شهودي
+معتبر اصول پوره شي؟ يعنې څو $!A \Proves !B$ هله او يوازې هله
+وي چې $\Prop{X}{!A} \subset \Prop{X}{!B}$ وي؟ د هر $!A$
+لپاره $\lfalse \Proves !A$ غواړو، او دا پوره کېږي ځکه د هر
+$U$ لپاره $\emptyset \subseteq U$ دے۔ څرنګه چې
+$!B \land !C \Proves !B$، نو
+$\Prop{X}{!B \land !C} \subseteq \Prop{X}{!B}$ غواړو؛ په
+همدې ډول $\Prop{X}{!B \land !C} \subseteq \Prop{X}{!C}$ هم۔
+تر ټولو لوے سټ چې $W \subseteq U$ او $W \subseteq V$ پوره کوي،
+$U \cap V$ دے۔ بل خوا $!B \Proves !B \lor !C$ او
+$!C \Proves !B \lor !C$ دي، نو
+$\Prop{X}{!B} \subseteq \Prop{X}{!B \lor !C}$ او
+$\Prop{X}{!C} \subseteq \Prop{X}{!B \lor !C}$ غواړو۔ تر ټولو
+کوچنے سټ~$W$ چې $U \subseteq W$ او $V \subseteq W$ پوره کوي،
+$U \cup V$ دے۔
+
+د $\lif$ تعريف لږ پېچلے دے: $!A \lif !B$ تر ټولو کمزورې هغه
+قضيه څرګندوي چې له $!A$ سره يوځاے $!B$ ته استلزام ورکوي۔
+له $(!A \lif !B) \land !A \Proves !B $ څخه څرګنده ده چې $!A
+\lif !B$ له $!A$ سره يوځاے~$!B$ ته استلزام ورکوي۔ نو
+$\Prop{X}{!A \lif !B}$ بايد تر ټولو لوے پرانيستے سټ وي چې
+$\Prop{X}{!A \lif !B} \cap \Prop{X}{!A} \subset
+\Prop{X}{!B}$ پوره کړي؛ له همدې څخه زموږ تعريف راځي۔
+
+\end{document}

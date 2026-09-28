@@ -1,0 +1,82 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{sem}
+
+\olsection{معنايي مفاهيم}
+
+\begin{defn}
+  وايو $!A$ \emph{په مدل $\mModel{M} = \tuple{W,R,V}$ کښې رښتيا دے،} $
+  \mSat{M}{!A}$، هله او يوازې هله چې د هر $w \in W$ لپاره
+  $\mSat{M}{!A}[w]$ وي۔ $!A$ هله \emph{معتبر} دے، $\Entails !A$،
+  چې په ټولو مدلونو کښې رښتيا وي۔ وايو د !!{formula}s سټ~$\Gamma$
+  د~$!A$ لپاره \emph{استلزام} ورکوي، $\Gamma
+  \Entails !A$، هله او يوازې هله چې د هر مدل~$\mModel{M}$ او هر
+  داسې~$w$ لپاره چې $\mSat{M}{\Gamma}[w]$ وي،
+  $\mSat{M}{!A}[w]$ وي۔
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-entails}
+  \begin{enumerate}
+  \item\ollabel{prop:sat-entails1} که $\mSat{M}{\Gamma}[w]$ او
+    $\Gamma \Entails !A$ وي، نو $\mSat{M}{!A}[w]$ وي۔
+  \item\ollabel{prop:sat-entails2} که $\mSat{M}{\Gamma}$ او $\Gamma
+    \Entails !A$ وي، نو $\mSat{M}{!A}$ وي۔
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item فرض کړئ $\mSat{M}{\Gamma}[w]$۔ ځکه $\Gamma \Entails !A$
+    دے، د استلزام له تعريفه $\mSat{M}{!A}[w]$ راځي۔
+  \item فرض کړئ $\mSat{M}{\Gamma}$۔ نو د هر $u \in W$ لپاره
+    $\mSat{M}{\Gamma}[u]$ وي۔ په تېره بيا د هرې نړۍ لپاره
+    $\mSat{M}{\Gamma}[w]$ وي؛ د \olref{prop:sat-entails1} له مخې
+    $\mSat{M}{!A}[w]$ هم وي۔ نو قضيه په ټول مدل کښې رښتيا ده۔
+  \end{enumerate}
+  \textbf{د ژباړې د نسخې څرګندونه (OLINT-004):} منجمده سرچينه د
+  لومړۍ مادې په ثبوت کښې د ټول مدل قوي فرض کاروي او بيا دويمه
+  ماده له هماغې لومړۍ راباسي؛ دلته لومړۍ ماده د ځايي فرض له مخې
+  او دويمه د ټولو نړۍو له مخې په خپل سم ترتيب ثابته شوې ده۔
+\end{proof}
+
+
+\begin{defn}\ollabel{defn:restrict}
+  فرض کړئ $\mModel{M}$ اړيکيز مدل او $w \in W$ وي۔ تر~$w$
+  پورې د~$\mModel{M}$ \emph{محدودونه}
+  $\mModel{M}_w=\tuple{W_w, R_w, V_w}$ داسې ټاکل کېږي:
+  \begin{align*}
+    W_w & = \Setabs{u \in W}{Rwu},\\
+    R_w  & = R \cap (W_w)^2, \text{ او}\\
+    V_w(p) & = V(p) \cap W_w.
+  \end{align*}
+\end{defn}
+
+\begin{prop}\ollabel{prop:restrict}
+  $\mSat{M}{!A}[w]$ هله او يوازې هله چې $\mSat{M_w}{!A}$ وي۔
+\end{prop}
+
+\begin{prob}
+  \olref[int][sem][sem]{prop:restrict} ثابت کړئ۔
+\end{prob}
+
+\begin{prop}
+  فرض کړئ چې د هر داسې مدل~$\mModel{M}$ لپاره چې
+  $\mSat{M}{\Gamma}$ وي، $\mSat{M}{!A}$ هم وي۔ نو
+  $\Gamma \Entails !A$ دے۔
+\end{prop}
+
+\begin{proof}
+  فرض کړئ $\mSat{M}{\Gamma}[w]$ وي۔ د
+  \olref{prop:restrict} په هر~$!B \in \Gamma$ تطبيقولو سره
+  $\mSat{M_w}{\Gamma}$ لرو۔ د فرض له مخې
+  $\mSat{M_w}{!A}$ لرو۔ بيا د \olref{prop:restrict} له مخې
+  $\mSat{M}{!A}[w]$ راځي۔
+\end{proof}
+
+\end{document}

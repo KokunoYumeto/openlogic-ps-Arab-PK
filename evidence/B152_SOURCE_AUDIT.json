@@ -1,0 +1,138 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T19:53:06.772906+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
+  "batch_id": "PS-B152-INTUITIONISTIC-DEDUCTIONS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0496",
+      "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+      "source_bytes": 8383,
+      "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+      "target_sha256": "4251bc6a8f0a14b3284415bf836b941e855e67bf2e2963198aa9f4bd51f47fae",
+      "paired_blocks": 34,
+      "source_correction_ids": [
+        "OLINT-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0497",
+      "source_path": "content/intuitionistic-logic/introduction/axiomatic-derivations.tex",
+      "source_bytes": 2428,
+      "source_sha256": "52d798d7dafbabc8b9a386ee1ed6ec0fa3b565217a9f4013242300ab3a621827",
+      "target_sha256": "e93d36ceb9d015733d872932a08cb6b7287c4f826ff0c28c627a5404a04059d0",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0498",
+      "source_path": "content/intuitionistic-logic/semantics/semantics.tex",
+      "source_bytes": 594,
+      "source_sha256": "b3a317c7e49f5e50aa6d36811a805910d62b6163b5d96fc723ba9ff2af9e16f4",
+      "target_sha256": "e74a7bb9691bdd8a8b51e76a25bf1883c8aef434d625db805d696853dcc33e80",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0499",
+      "source_path": "content/intuitionistic-logic/semantics/introduction.tex",
+      "source_bytes": 3468,
+      "source_sha256": "e69a3d0c1eca8eab6b6dd8fb8664ef4290fbd2e929f1c3faaa4dcd217e2d0a00",
+      "target_sha256": "85208f82a4d58721646493a467e6e2d9b2a7fc1914f0846f2312d80561637c52",
+      "paired_blocks": 14,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0500",
+      "source_path": "content/intuitionistic-logic/semantics/relational-models.tex",
+      "source_bytes": 2564,
+      "source_sha256": "ceab9f9d7f437b8b7180b065125b178bb5b3bdcbd15f9cb8900c516875173ae0",
+      "target_sha256": "f7398a118f439b92e00cbb10d4036c18c86bcd16b31d839e0a05e7d63600c32c",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B152_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "85895648e0a57e199f64385794c59b576e0bddb8338b204b8e8fc1ae74945398",
+  "consultation_path": "work/B152_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "6119551062646a802fbe35f9c0838d67b29a1948ccf088c73808132812c05025",
+  "staging_checkpoint_sha256": "b9666f8edc3df7c23d24ebd4a1d66582064a5e6fcd45521dfa45e4f55e0945ec",
+  "staging_qa_sha256": {
+    "OLP-0496": "8d8574cf381417574865d71769370aeb35af30124ea8c2cda25f3007042fffd6",
+    "OLP-0497": "f220c9e42c1d34d83d8c0c977ded63cdf86558022642672e6b90892bfc7d38ca",
+    "OLP-0498": "85a71eaf5f379cd421aef1eb52f14e963f8bea6de25569521622952415336040",
+    "OLP-0499": "05b9e31cca5452a2ca80c506ebae5f96737bfc00e1f1636c26cbac6f34043ce8",
+    "OLP-0500": "5e080e49ec4608d42548faef55f8619c1eec951b876b774efc4ff051350633db"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 53,
+      "printed_page": "48",
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0496",
+      "source_correction_id": "OLINT-003",
+      "finding": "د سرچينې جوړه N1,N2 او هماغه ورپسې جمله N2 د A2 جوړونه بولي؛ د عطف دويم غړے A1 ليکل تناقض دے."
+    }
+  ],
+  "formula_policy": "82 paired blocks, 292 math spans; only repeated A1 to A2 in one OLP-0496 conjunction phrase. All other math, identifiers, tags, term tokens, macros and environments exact.",
+  "unresolved": "د اړيکيز او توپولوژيکي معنايي پوهنې عين پاکستانۍ تخنيکي نومونه لنډمهالي دي؛ د ليکوال يا انسان رسمي تصويب نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "9ce416fe00088dd7815c289265d3db4561f6d84c2fa140527247057e28036213",
+  "next_executable_action": "Register B152 relational-model terminology, OLINT-003 and source review; run cumulative QA and dual canonical replay; accept OLP-0496–0500; continue OLP-0501."
+}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 495,
-    "structural_pass": 495,
+    "draft_units": 500,
+    "structural_pass": 500,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B151-INTUITIONISTIC-OPENING",
+  "batch": "PS-B152-INTUITIONISTIC-DEDUCTIONS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16164,6 +16164,158 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0496",
+      "path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+      "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+      "translation_sha256": "4251bc6a8f0a14b3284415bf836b941e855e67bf2e2963198aa9f4bd51f47fae",
+      "source_blocks": 34,
+      "target_blocks": 34,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "BHK",
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "BHK",
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-003"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$!A_1\\land!A_1$"
+        ],
+        "target_only": [
+          "$!A_1\\land!A_2$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0497",
+      "path": "content/intuitionistic-logic/introduction/axiomatic-derivations.tex",
+      "source_sha256": "52d798d7dafbabc8b9a386ee1ed6ec0fa3b565217a9f4013242300ab3a621827",
+      "translation_sha256": "e93d36ceb9d015733d872932a08cb6b7287c4f826ff0c28c627a5404a04059d0",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0498",
+      "path": "content/intuitionistic-logic/semantics/semantics.tex",
+      "source_sha256": "b3a317c7e49f5e50aa6d36811a805910d62b6163b5d96fc723ba9ff2af9e16f4",
+      "translation_sha256": "e74a7bb9691bdd8a8b51e76a25bf1883c8aef434d625db805d696853dcc33e80",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0499",
+      "path": "content/intuitionistic-logic/semantics/introduction.tex",
+      "source_sha256": "e69a3d0c1eca8eab6b6dd8fb8664ef4290fbd2e929f1c3faaa4dcd217e2d0a00",
+      "translation_sha256": "85208f82a4d58721646493a467e6e2d9b2a7fc1914f0846f2312d80561637c52",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0500",
+      "path": "content/intuitionistic-logic/semantics/relational-models.tex",
+      "source_sha256": "ceab9f9d7f437b8b7180b065125b178bb5b3bdcbd15f9cb8900c516875173ae0",
+      "translation_sha256": "f7398a118f439b92e00cbb10d4036c18c86bcd16b31d839e0a05e7d63600c32c",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -24260,6 +24412,150 @@
       "passage": "excluded middle",
       "reverse_paraphrase": "General A or not A is unavailable but its double negation has a construction; h1 receives M1.",
       "finding": "OLINT-002 او د نفي نفي توپير ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "premises",
+      "reverse_paraphrase": "A rule preserves constructions from its premises to conclusion.",
+      "finding": "د مقدمې او نتيجې د جوړونې لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "assumptions",
+      "reverse_paraphrase": "A derivation from Gamma maps all premise constructions to A.",
+      "finding": "د خلاصو فرضونو تابع عين ده."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "conjunction",
+      "reverse_paraphrase": "A1 and A2 are paired; each projection returns its own conjunct.",
+      "finding": "OLINT-003 دويم غړے سموي."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "conditional",
+      "reverse_paraphrase": "The function for A implies B maps constructions of A to B.",
+      "finding": "د تابع ورودي او پايله عين دي."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "disjunction",
+      "reverse_paraphrase": "A tagged branch and the matching function yield C.",
+      "finding": "د i څانګې انتخاب عين دے."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "absurdity",
+      "reverse_paraphrase": "False has no construction and false elimination is vacuous.",
+      "finding": "د محال د جوړونې نشتون ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0496",
+      "passage": "proofs",
+      "reverse_paraphrase": "Four proof trees and six exercise formulas are retained.",
+      "finding": "رسمې ونې او تمرينونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0497",
+      "passage": "sequence",
+      "reverse_paraphrase": "A derivation is a finite formula sequence from Gamma.",
+      "finding": "د لړۍ او فرضونو تعريف عين دے."
+    },
+    {
+      "unit_id": "OLP-0497",
+      "passage": "ponens",
+      "reverse_paraphrase": "Only earlier Aj and Ak can justify Ai by modus ponens.",
+      "finding": "د j,k د i څخه کوچنيوالي شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0497",
+      "passage": "axioms",
+      "reverse_paraphrase": "Nine intuitionistic axiom schemata are retained exactly.",
+      "finding": "نهه فورمولونه او نښې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0497",
+      "passage": "classical",
+      "reverse_paraphrase": "Every intuitionistic axiom and derivation is classical too.",
+      "finding": "د شموليت لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0498",
+      "passage": "scope",
+      "reverse_paraphrase": "The chapter currently covers Kripke and topological semantics.",
+      "finding": "د اوسني پوښښ حد عين دے."
+    },
+    {
+      "unit_id": "OLP-0498",
+      "passage": "imports",
+      "reverse_paraphrase": "The chapter has four active imports.",
+      "finding": "څلور واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "order",
+      "reverse_paraphrase": "Accessibility is reflexive, antisymmetric and transitive.",
+      "finding": "جزئي ترتيب درې شرطونه ساتي."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "knowledge",
+      "reverse_paraphrase": "Known propositions persist at accessible future states.",
+      "finding": "زياتېدنه عين ده."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "and-or",
+      "reverse_paraphrase": "Conjunction and disjunction have local classical truth conditions.",
+      "finding": "اوسنۍ نړۍ او دواړه نښلوونکي جلا دي."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "conditional",
+      "reverse_paraphrase": "Implication checks every accessible future state.",
+      "finding": "د راتلونکو نړۍو شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "negation",
+      "reverse_paraphrase": "Negation excludes any possible future knowledge of A.",
+      "finding": "د نفي راتلونکے شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0499",
+      "passage": "topology",
+      "reverse_paraphrase": "Propositions become open sets; conjunction is intersection.",
+      "finding": "د توپولوژۍ بديل عين دے."
+    },
+    {
+      "unit_id": "OLP-0500",
+      "passage": "triple",
+      "reverse_paraphrase": "The model is W,R,V with nonempty W and partial-order R.",
+      "finding": "د درېګونې شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0500",
+      "passage": "valuation",
+      "reverse_paraphrase": "V is monotone with respect to accessibility.",
+      "finding": "د V راتلونکې‌نړۍ شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0500",
+      "passage": "clauses",
+      "reverse_paraphrase": "All six inductive truth clauses are retained.",
+      "finding": "شپږ مادې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0500",
+      "passage": "implication",
+      "reverse_paraphrase": "Implication checks each accessible future state.",
+      "finding": "د هر w-prime لپاره شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0500",
+      "passage": "monotonicity",
+      "reverse_paraphrase": "Truth at worlds is monotone; proof is an exercise.",
+      "finding": "قضيه او تمرين جلا ساتل شوي."
     }
   ],
   "builds": [

@@ -1,0 +1,99 @@
+{
+  "schema": "ps-b153-intuitionistic-four-staging/1",
+  "utc": "2026-09-28T20:07:01.960036+00:00",
+  "status": "four translated source-reviewed drafts staged; fifth source review and cumulative acceptance pending",
+  "accepted_draft_units": 500,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0501",
+    "OLP-0502",
+    "OLP-0503",
+    "OLP-0504"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0501",
+      "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+      "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+      "target_sha256": "1916f88a9acaa337dc1b67e9ab497b3685481d69fdd8beadd96bcc6bb44d0fa3",
+      "paired_blocks": 14,
+      "math_spans": 45,
+      "focused_qa_sha256": "8563be3eb36473ab447878cd2b6affb9d625d75038274793597669b16a7cac4a",
+      "source_treatment_ids": [
+        "OLINT-004"
+      ]
+    },
+    {
+      "unit_id": "OLP-0502",
+      "source_path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "source_sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "target_sha256": "e58867db23992d6d7898dc98092b9136359ecc3fc09891bd7f3973114c0c7ab3",
+      "paired_blocks": 15,
+      "math_spans": 78,
+      "focused_qa_sha256": "66ef723bae1fea7b8f01665217665ab6019289b892f1e8f2719b500ad41894f9",
+      "source_treatment_ids": [
+        "OLINT-005"
+      ]
+    },
+    {
+      "unit_id": "OLP-0503",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex",
+      "source_sha256": "a431fe8a0f6a36831ecb5daffee42d7b0258b6afcf65409e082ba0d5c3dc8855",
+      "target_sha256": "723b9a9ae635152322e583dff98ee889e73bc8f1f434723dbdcef8befc081344",
+      "paired_blocks": 8,
+      "math_spans": 0,
+      "focused_qa_sha256": "60a93b15d479c30263c2637599dcd692135e7ce8fd6b7f51b504fdf11f127b05",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0504",
+      "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+      "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+      "target_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+      "paired_blocks": 12,
+      "math_spans": 56,
+      "focused_qa_sha256": "33c669dea8c9bc9f68cf5a46b0477e542683798dfa9d962cf7789aedbbdeaa0c",
+      "source_treatment_ids": [
+        "OLINT-006"
+      ]
+    }
+  ],
+  "paired_blocks": 49,
+  "math_spans": 179,
+  "notes_path": "work/B153_FOUR_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "1ab728a7c52a97ddee599914889c677e1d8d6fb203cb848385547392492c4b70",
+  "consultation_path": "work/B153_FOUR_CANON_CONSULTATION.md",
+  "consultation_sha256": "ead417fd86314faee1309bf2dde024630888560c33b9bbc6f550ea6c80696c51",
+  "b152_accepted_checkpoint_sha256": "cfa0cada4be74eecb21d040582b54ac30ad191ba21b5994e76f8a4281e0a6a09",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-004",
+      "unit_id": "OLP-0501",
+      "kind": "proof-order-and-premise-correction",
+      "source_math": [],
+      "target_math": []
+    },
+    {
+      "id": "OLINT-005",
+      "unit_id": "OLP-0502",
+      "kind": "topology-versus-topological-space",
+      "source_math": [],
+      "target_math": []
+    },
+    {
+      "id": "OLINT-006",
+      "unit_id": "OLP-0504",
+      "kind": "extra-satisfaction-argument",
+      "source_math": [
+        "$\\mSat{M}{\\Gamma}{!A_n}[w]$"
+      ],
+      "target_math": [
+        "$\\mSat{M}{!A_n}[w]$"
+      ]
+    }
+  ],
+  "next_action": "Translate and source-review OLP-0505, then register B153 terminology and OLINT-004/005/006 plus any OLP-0505 treatments; run cumulative QA and replay before acceptance."
+}

@@ -1,0 +1,65 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-axd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{sax}
+
+\olsection{د بديهي \usetoken{P}{derivation} سموالے}
+
+\begin{editorial}
+  د سموالي ثبوت پر دې حقيقت ولاړ دے چې ټول بديهي اصول په شهودي
+  معنا معتبر دي؛ دا لا بايد ثابت شي، مثلاً د معنايي پوهنې په څپرکي کښې۔
+\end{editorial}
+
+\begin{thm}[سموالے]
+  \ollabel{thm:soundness}
+  که $\Gamma \Proves !A$ وي، نو $ \Gamma \Entails !A$ وي۔
+\end{thm}
+
+\begin{proof}
+  ثابتوو چې که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$
+  وي۔ ثبوت له~$\Gamma$ څخه د~$!A$ په !!{derivation} کښې د
+  !!{formula}s پر شمېر~$n$ استقرا ده۔ ښيو چې که $!A_1$،
+  \dots، $!A_n = !A$ له~$\Gamma$ څخه !!a{derivation} وي، نو
+  $\Gamma \Entails !A_n$ وي۔ پام وکړئ چې که $!A_1$، \dots،
+  $!A_n$ !!a{derivation} وي، نو د هر $k<n$ لپاره $!A_1$،
+  \dots، $!A_k$ هم استنتاج دے۔
+
+  د اوږدوالي~$0$ هېڅ !!{derivation}s نشته، نو د $n=0$ لپاره ادعا
+  تشه رښتيا ده۔ اوس فرض کوو چې ادعا د اوږدوالي~$<n$ د ټولو
+  !!{derivation}s لپاره سمه ده۔ د~$!A_n$ د توجيه له مخې حالتونه
+  بېلوو۔
+  
+  \begin{enumerate}
+  \item $!A_n$ بديهي اصل دے۔ ټول بديهي اصول معتبر دي، نو
+    د هر~$\Gamma$ لپاره $\Gamma \Entails !A_n$ وي۔
+  \item $!A_n \in \Gamma$ وي۔ نو د هر $\mModel{M}$ او $w$
+    لپاره، که $\mSat{M}{\Gamma}[w]$ وي، څرګنده ده چې
+    $\mSat{M}{!A_n}[w]$ وي؛ يعنې $\Gamma \Entails !A$ وي۔
+    د ژباړې د نسخې څرګندونه (OLINT-006): منجمده سرچينه دلته د
+    صدق په نښه کښې يوه زياته د فرضونو وسيله داخلوي؛ د تعريف له مخې
+    دلته يوازې د همدې غړي صدق مراد دے۔
+  \item $!A_n$ له $!A_i$ او $!A_j \ident !A_i \lif !A_n$ څخه د
+    \MP{} له مخې راځي۔ $!A_1$، \dots، $!A_i$ او $!A_1$،
+    \dots، $!A_j$ له~$\Gamma$ څخه !!{derivation}s دي، نو د
+    استقرايي فرض له مخې $\Gamma \Entails !A_i$ او
+    $\Gamma \Entails !A_i \lif !A_n$ وي۔
+    
+    فرض کړئ $\mSat{M}{\Gamma}[w]$ وي۔ ځکه
+    $\mSat{M}{\Gamma}[w]$ او $\Gamma \Entails !A_i \lif !A_n$
+    دي، نو $\mSat{M}{!A_i \lif !A_n}[w]$ وي۔ د تعريف له مخې
+    د هر داسې $w'$ لپاره چې $Rww'$ وي، که
+    $\mSat{M}{!A_i}[w']$ وي، نو $\mSat{M}{!A_n}[w']$ وي۔
+    څرنګه چې $R$ انعکاسي ده، $w$ هم په هغو $w'$ کښې دے چې
+    $Rww'$ لري؛ يعنې که $\mSat{M}{!A_i}[w]$ وي، نو
+    $\mSat{M}{!A_n}[w]$ وي۔ ځکه چې $\Gamma \Entails !A_i$،
+    $\mSat{M}{!A_i}[w]$ وي۔ نو $\mSat{M}{!A_n}[w]$ شو،
+    لکه چې غوښتل مو۔
+  \end{enumerate}
+\end{proof}
+
+\end{document}

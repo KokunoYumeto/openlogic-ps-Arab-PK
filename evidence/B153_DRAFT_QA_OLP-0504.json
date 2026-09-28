@@ -1,0 +1,41 @@
+{
+  "schema": "ps-b153-intuitionistic-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0504",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+  "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+  "target_sha256": "9cba43f3a70d294b420c48ba1f17ecb073db3b47cd4b0726c89acc83683efc24",
+  "source_blocks": 12,
+  "target_blocks": 12,
+  "math_spans": 56,
+  "source_correction_ids": [
+    "OLINT-006"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\mSat{M}{\\Gamma}{!A_n}[w]$"
+    ],
+    "target_only": [
+      "$\\mSat{M}{!A_n}[w]$"
+    ]
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "math_exception_exact": true,
+    "three_induction_cases": true,
+    "reflexivity_used": true,
+    "treatment_disclosed": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "B153 full source audit and cumulative QA pending."
+}

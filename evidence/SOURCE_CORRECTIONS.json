@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0495; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T19:28:28.007836+00:00",
+  "status": "adopted through OLP-0500; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T19:53:06.772906+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12989,6 +12989,62 @@
       ],
       "decision_timing": "contemporaneous B151 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-003",
+      "unit_id": "OLP-0496",
+      "classification": "repeated_first_conjunct_in_BHK_pair_description",
+      "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+      "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+      "source_locator": "content/intuitionistic-logic/introduction/natural-deduction.tex:59",
+      "source_literal_line_1based": [
+        59
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/introduction/natural-deduction.tex",
+      "target_line_1based": 56,
+      "disclosure_line_1based": 59,
+      "target_sha256": "4251bc6a8f0a14b3284415bf836b941e855e67bf2e2963198aa9f4bd51f47fae",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د عطف د جوړې د تشريح په يوه فورمول کښې دويم غړے د لومړي پر ځاے راوړل شو؛ څنګ‌ته په پښتو څرګند شو.",
+      "reason": "د سرچينې جوړه N1,N2 او هماغه ورپسې جمله N2 د A2 جوړونه بولي؛ د عطف دويم غړے A1 ليکل تناقض دے.",
+      "formula_policy": "Only one exact math-span substitution; all other formulas, identifiers, tags, term tokens and macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A_1\\land!A_1$"
+        ],
+        "target_only": [
+          "$!A_1\\land!A_2$"
+        ],
+        "scope": "one BHK conjunction elimination phrase"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
+      "audit_artifacts": [
+        "B152_SOURCE_AUDIT.json",
+        "B152_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/introduction/natural-deduction.tex:59",
+        "ps-Arab-PK/content/intuitionistic-logic/introduction/natural-deduction.tex:56",
+        "B152_DRAFT_QA_OLP-0496.json"
+      ],
+      "decision_timing": "contemporaneous B152 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -13085,7 +13141,8 @@
     "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL",
     "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES",
     "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS",
-    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK"
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS"
   ],
   "source_authorities": [
     {
