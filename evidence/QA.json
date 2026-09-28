@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 466,
-    "structural_pass": 466,
+    "draft_units": 467,
+    "structural_pass": 467,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
+  "batch": "PS-B144-MODAL-TABLEAUX-SIMPLE-S5",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15197,6 +15197,34 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0467",
+      "path": "content/normal-modal-logic/tableaux/simple-S5.tex",
+      "source_sha256": "424a248ae136b994af3f140ae1e3cc4d68dbbbedd4ba0ca88f24d6148615fa65",
+      "translation_sha256": "29baa28b89364afac680ebbad027894a5d468fd3b1e47dc358c7b05bd473e817",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_tableau_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -22525,6 +22553,42 @@
       "passage": "corollary",
       "reverse_paraphrase": "The listed tableau systems are sound for their matching model classes.",
       "finding": "د پايلې اړونده ټولګې ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "universal models",
+      "reverse_paraphrase": "S5 is sound and complete for models with universal accessibility.",
+      "finding": "د عمومي مدلونو د ټولګي قيد او د هرې نړۍ لاسرسی ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "accessibility irrelevance",
+      "reverse_paraphrase": "Within a universal model existence of a world and existence of an accessible world coincide.",
+      "finding": "د موجودې او د لاسرسي وړ نړۍ ترمنځ هله او يوازې هله شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "prefix contrast",
+      "reverse_paraphrase": "General prefixes are positive-integer sequences; simplified S5 prefixes are positive integers.",
+      "finding": "د عامې لړۍ او د ساده مثبت عدد توپير څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "rule table",
+      "reverse_paraphrase": "True Box and false Diamond use an existing prefix; false Box and true Diamond introduce a new one.",
+      "finding": "د څلورو قاعدو نښې او کارېدلے/نوے شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "S5 axiom 5",
+      "reverse_paraphrase": "The simplified closed tableau proves Diamond A implies Box Diamond A in S5.",
+      "finding": "د پنځم اکسيوم امکان‌پيل فورمول عين پاتې دے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "closure witness",
+      "reverse_paraphrase": "The false Diamond at world 2 uses world 3, where A is both true and false.",
+      "finding": "د ونې د ۲ او ۳ مخکښونه او وروستے تړل عين دي."
     }
   ],
   "builds": [

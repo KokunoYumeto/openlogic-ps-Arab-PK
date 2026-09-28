@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B143-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
-  "status": "OLP-0465–0466 source-reviewed and staged; 35 paired blocks, 18 semantic samples, two disclosed source treatments",
+  "batch_id": "PS-B144-MODAL-TABLEAUX-SIMPLE-S5",
+  "status": "OLP-0467 source-reviewed and staged; 9 paired blocks, 6 semantic samples; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9809,6 +9809,23 @@
       ],
       "scope": "د T/D/B/4/4r قاعدو لس سموالي څانګې، د مخکښ تفسير، اړوند اړيکو ثبوتونه، ټګ شوي تمرينونه او د نظامونو سموالي پايله.",
       "allowed_residual_english": []
+    },
+    "OLP-0467": {
+      "batch_id": "PS-B144-MODAL-TABLEAUX-SIMPLE-S5",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "د عمومي مدلونو په نسبت S5، ساده مخکښونه، څلور مودالي قاعدې او د پنځم اکسيوم تړلے تابلو.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -17137,6 +17154,42 @@
       "passage": "corollary",
       "reverse_paraphrase": "The listed tableau systems are sound for their matching model classes.",
       "finding": "د پايلې اړونده ټولګې ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "universal models",
+      "reverse_paraphrase": "S5 is sound and complete for models with universal accessibility.",
+      "finding": "د عمومي مدلونو د ټولګي قيد او د هرې نړۍ لاسرسی ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "accessibility irrelevance",
+      "reverse_paraphrase": "Within a universal model existence of a world and existence of an accessible world coincide.",
+      "finding": "د موجودې او د لاسرسي وړ نړۍ ترمنځ هله او يوازې هله شرط ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "prefix contrast",
+      "reverse_paraphrase": "General prefixes are positive-integer sequences; simplified S5 prefixes are positive integers.",
+      "finding": "د عامې لړۍ او د ساده مثبت عدد توپير څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "rule table",
+      "reverse_paraphrase": "True Box and false Diamond use an existing prefix; false Box and true Diamond introduce a new one.",
+      "finding": "د څلورو قاعدو نښې او کارېدلے/نوے شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "S5 axiom 5",
+      "reverse_paraphrase": "The simplified closed tableau proves Diamond A implies Box Diamond A in S5.",
+      "finding": "د پنځم اکسيوم امکان‌پيل فورمول عين پاتې دے."
+    },
+    {
+      "unit_id": "OLP-0467",
+      "passage": "closure witness",
+      "reverse_paraphrase": "The false Diamond at world 2 uses world 3, where A is both true and false.",
+      "finding": "د ونې د ۲ او ۳ مخکښونه او وروستے تړل عين دي."
     }
   ]
 }

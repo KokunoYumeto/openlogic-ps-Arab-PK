@@ -1,0 +1,89 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: simple-S5
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{s5}
+
+\olsection{د \Log{S5} لپاره ساده \usetoken{P}{tableau}}
+
+\Log{S5} د عمومي مدلونو د ټولګي په نسبت سم او بشپړ دے؛
+يعنې داسې مدلونه چې هره نړۍ ئې له هرې نړۍ څخه د لاسرسي وړ وي۔
+په دغو عمومي مدلونو کښې د لاسرسي اړيکه توپير نۀ راولي:
+«داسې نړۍ~$w$ شته چې $\mSat{M}{!A}[w]$ وي» هله او يوازې هله
+رښتيا ده چې داسې يو~$w$ له~$u$ څخه د لاسرسي وړ وي۔
+نو په \Log{S5} کښې مدلونه يوازې د نړيو په يوه سټ او يوه
+ارزونه~$V$ تعريفولے شو۔ دا ښيي چې د !!{tableau} قاعدې هم
+ساده کولے شو۔ په عمومي حالت کښې د مثبتو صحيح عددونو لړۍ
+د مخکښونو په توګه اخلو، څو معلومه کړو چې کوم مخکښونه له
+نورو نړۍو څخه د لاسرسي وړ نړۍې نوموي: $\sigma.n$ له~$\sigma$
+څخه د لاسرسي وړ نړۍ نوموي۔ خو د \Log{S5} د دغو عمومي
+مدلونو هره نړۍ له هرې نړۍ څخه د لاسرسي وړ ده؛ نو د دې
+څارنې اړتيا نۀ شته۔ د دې پر ځای مثبت صحيح عددونه د
+مخکښونو په توګه کارولے شو۔ ساده شوې قاعدې په
+\olref{tab:rules-S5} کښې راغلې دي۔
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[n]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[n]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ په څانګه کښې کارېدلے دے & $m$ په څانګه کښې نوے دے
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ په څانګه کښې نوے دے & $m$ په څانګه کښې کارېدلے دے
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{د \Log{S5} لپاره ساده شوې قاعدې۔}
+  \ollabel{tab:rules-S5}
+\end{table}
+
+\begin{ex}
+  داسې ساده تړلے تابلو ورکوو چې $\Log{S5} \Proves \Ax{5}$،
+  يعنې $\Diamond!A \lif \Box\Diamond!A$، ثابتوي۔
+  \begin{oltableau}
+    [\pFmla{\False}{\Diamond\formula{A} \lif \Box\Diamond \formula{A}}{1},
+      just = \TAss
+      [\pFmla{\True}{\Diamond \formula{A}}{1}, just = {\TRule{\False}{\lif}[1]}
+        [\pFmla{\False}{\Box\Diamond \formula{A}}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\False}{\Diamond \formula{A}}{2},
+            just = {\TRule{\False}{\Box}[3]}
+            [\pFmla{\True}{\formula{A}}{3},
+              just = {\TRule{\True}{\Diamond}[2]}
+                [\pFmla{\False}{\formula{A}}{3},
+                  just = {\TRule{\False}{\Diamond}[4]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+\end{document}
