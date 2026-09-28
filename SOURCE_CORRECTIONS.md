@@ -3426,3 +3426,12 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - چلند: د دوه‌ګونتيا په ونې کښې د نفي د کيڼې قاعدې دوه ليبلونه د غلطې ښۍ قاعدې پر ځاے راوړل شول.
 - وجه: په دواړو موردونو کښې پايله نفي په کيڼه خوا کښې راولي؛ د منجمدې سرچينې د propositional-rules.tex تعريف دا د LeftR نفي قاعده بولي.
 - يوازې دوه عين RightR/LeftR ليبلونه بدل شوي؛ رسمي ونې، فورمولونه او منجمده سرچينه نور عين دي۔
+
+## OLAML-001
+
+- واحد: OLP-0478۔
+- منجمده سرچينه: content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex؛ SHA-256 237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d۔
+- پښتو متن: ps-Arab-PK/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex؛ SHA-256 153929fdffc937f34ba40de566e85653cf163199362ceb9a36f03e368db0d49a۔
+- چلند: د فارمول په استقرايي ماده کښې د عادي F پر ځاے د تعريف شوي راتلونکي عامل رسمي نښه راوړل شوه.
+- وجه: د ژبې په لړ کښې او د صدق په شرط کښې \Ftemp راغلے او open-logic-config.sty همدا عامل تعريفوي؛ د سرچينې يوازينے F د عامل پر ځاے عادي رياضيکي توری دے.
+- يوازې يوه عين رياضيکي برخه بدله شوې؛ نور فورمولونه، پېژندونه، ټګونه او منجمده سرچينه عين دي۔

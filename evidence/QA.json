@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 474,
-    "structural_pass": 474,
+    "draft_units": 478,
+    "structural_pass": 478,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B146-MODAL-SEQUENT-CALCULUS",
+  "batch": "PS-B147-APPLIED-MODAL-TEMPORAL-SEMANTICS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15510,6 +15510,131 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0475",
+      "path": "content/applied-modal-logic/applied-modal-logic.tex",
+      "source_sha256": "e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e",
+      "translation_sha256": "323d2bfe610a5a95d0239d729411132c386bd79bb775848b39726547165af5e0",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0476",
+      "path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+      "source_sha256": "002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4",
+      "translation_sha256": "b1a203ad4a9bbcb38c914511fe8c2944535bace47289efb6f18eefb350d4852d",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0477",
+      "path": "content/applied-modal-logic/temporal-logic/introduction.tex",
+      "source_sha256": "327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd",
+      "translation_sha256": "c908fe863460fe91f560d383001d87fa34de27255f34d76f1a2912513af51f14",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Beezie",
+        "Richard"
+      ],
+      "allowed_residual_english": [
+        "Beezie",
+        "Richard"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0478",
+      "path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+      "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+      "translation_sha256": "153929fdffc937f34ba40de566e85653cf163199362ceb9a36f03e368db0d49a",
+      "source_blocks": 24,
+      "target_blocks": 24,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLAML-001"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$F!A$"
+        ],
+        "target_only": [
+          "$\\Ftemp!A$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -23084,6 +23209,108 @@
       "passage": "six exercises",
       "reverse_paraphrase": "Six modal-system derivability exercises retain formulas and order.",
       "finding": "د شپږو تمرينونو فورمولونه او ترتيب عين دي."
+    },
+    {
+      "unit_id": "OLP-0475",
+      "passage": "part title",
+      "reverse_paraphrase": "The part is called applied modal logic.",
+      "finding": "د تطبيقي مودالي منطق سرليک ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0475",
+      "passage": "editorial status",
+      "reverse_paraphrase": "Experimental draft material includes temporal and epistemic applications.",
+      "finding": "د تجربوي مسودې حالت او دواړه مثالونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0476",
+      "passage": "chapter title",
+      "reverse_paraphrase": "The chapter is Temporal Logics.",
+      "finding": "زماني منطقونه عنوان دے."
+    },
+    {
+      "unit_id": "OLP-0476",
+      "passage": "imports",
+      "reverse_paraphrase": "Five temporal sections are imported in source order.",
+      "finding": "پنځه فعال واردات عين او په هماغه ترتيب دي."
+    },
+    {
+      "unit_id": "OLP-0477",
+      "passage": "Prior",
+      "reverse_paraphrase": "Prior introduced tense logic by adding temporal operators to propositional logic.",
+      "finding": "تاريخي نسبت او د عاملونو ورزياتول ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0477",
+      "passage": "Beezie",
+      "reverse_paraphrase": "Sitting and not sitting may both be true at different times, not simultaneously.",
+      "finding": "د يو وخت شرط او د تضاد توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0477",
+      "passage": "future contingent",
+      "reverse_paraphrase": "A future contingent is neither necessary nor impossible.",
+      "finding": "د نۀ لازم او نۀ ناممکن دواړه قيدونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0477",
+      "passage": "future truth",
+      "reverse_paraphrase": "Strict determinism permits already fixed truth values, whereas an open future leaves them undetermined.",
+      "finding": "د جبرپال او پرانيستي راتلونکي بديلونه جلا دي."
+    },
+    {
+      "unit_id": "OLP-0477",
+      "passage": "time structure",
+      "reverse_paraphrase": "Models may be linear, branching or circular, and discrete or continuous.",
+      "finding": "د جوړښت او پيوستون دواړه انتخابونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "language",
+      "reverse_paraphrase": "Two past and two future operators extend the propositional language.",
+      "finding": "P/H او F/G د تېر/راتلونکي جوړه ساتي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "formula correction",
+      "reverse_paraphrase": "The isolated italic F in the formula clause is corrected to the defined future operator.",
+      "finding": "OLAML-001 يوه رياضيکي برخه سموي او څنګ ته بيانوي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "model",
+      "reverse_paraphrase": "A temporal model is a nonempty time set, a binary precedence relation and a valuation.",
+      "finding": "درې‌ګونې، نه‌تشوالی، اړيکه او ټاکنه عين دي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "no frame restriction",
+      "reverse_paraphrase": "No condition on precedence is imposed yet.",
+      "finding": "خطي يا نورو ځانګړتياوو شرط نۀ دے زيات شوے."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "nonmodal",
+      "reverse_paraphrase": "Propositional truth conditions are as in normal modal logic.",
+      "finding": "د غيرمودالي عاملونو د صدق شرايط يو شان دي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "past",
+      "reverse_paraphrase": "P uses some preceding point and H every preceding point.",
+      "finding": "د مخکينيو ټکو شتون او هر شرطونه جلا دي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "future",
+      "reverse_paraphrase": "F uses some succeeding point and G every succeeding point.",
+      "finding": "د وروستيو ټکو شتون او هر شرطونه جلا دي."
+    },
+    {
+      "unit_id": "OLP-0478",
+      "passage": "duality",
+      "reverse_paraphrase": "P/H and F/G form two dual pairs.",
+      "finding": "دوه دوه‌ګونې جوړې عين دي."
     }
   ],
   "builds": [

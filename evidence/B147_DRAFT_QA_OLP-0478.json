@@ -1,0 +1,31 @@
+{
+  "schema": "ps-b147-temporal-semantics-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0478",
+  "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+  "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+  "target_sha256": "153929fdffc937f34ba40de566e85653cf163199362ceb9a36f03e368db0d49a",
+  "source_blocks": 24,
+  "target_blocks": 24,
+  "math_spans": 101,
+  "source_correction_ids": [
+    "OLAML-001"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_exact_except_one_future_operator": true,
+    "identifiers": true,
+    "tags": true,
+    "structural_macros": true,
+    "environments": true,
+    "term_tokens": true,
+    "source_comments": true,
+    "temporal_operator_quantifiers_and_directions": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "no_known_english_prose": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Cumulative decision registration and source/canon audit remain before acceptance."
+}

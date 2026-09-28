@@ -1,0 +1,59 @@
+{
+  "schema": "ps-b148-temporal-frame-staging/1",
+  "utc": "2026-09-28T18:16:03.779633+00:00",
+  "status": "three translated drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 478,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0479",
+    "OLP-0480",
+    "OLP-0481"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0479",
+      "source_path": "content/applied-modal-logic/temporal-logic/properties-accessibility.tex",
+      "source_sha256": "63699c7012da1cd23c29024e0e1ebecedaac878fcb0d6678fd26d69b7400d095",
+      "target_sha256": "0f24bb649cbaf8b4356c00939d9a95255606a95e0d7c7990c31f1e109c2ab2f1",
+      "paired_blocks": 10,
+      "math_spans": 20,
+      "focused_qa_sha256": "3eccdd2e2b54bb2d976ff798def52687ce65f25b45112ddd882a9d3e0babf50a",
+      "pending_source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0480",
+      "source_path": "content/applied-modal-logic/temporal-logic/extra-temporal-operators.tex",
+      "source_sha256": "610e36a049e01fb2ace59164fd64a6482a8109a49e5d859af928922edfe26f97",
+      "target_sha256": "46275ccbeec9b131a6e1490d15e267cf3114ccaacb877e3a55c2f9016ce587b1",
+      "paired_blocks": 11,
+      "math_spans": 31,
+      "focused_qa_sha256": "1ee884e4501e25066047acf39fb43d445b221ea65b602fb55e4735041e2b1108",
+      "pending_source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0481",
+      "source_path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+      "source_sha256": "29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a",
+      "target_sha256": "270c82c9da9264db2fb6b1bb1866968cdd5351d7d27f49f814cafa96c9003611",
+      "paired_blocks": 11,
+      "math_spans": 53,
+      "focused_qa_sha256": "d41c759906382ea3ebf69bb1a7daf41f9567104cf702381fb37ac5e3a099fd14",
+      "pending_source_treatment_ids": [
+        "OLAML-002"
+      ]
+    }
+  ],
+  "paired_blocks": 32,
+  "math_spans": 104,
+  "notes_path": "work/B148_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "6954824062f5e5d2ce98d1da2d7163c13aab7ee7bd1f58799177a61ce5370380",
+  "consultation_path": "work/B148_CANON_CONSULTATION.md",
+  "consultation_sha256": "159473d1f5e6821d6c6283f6124bbc796a8396c320bba40d4a2a876d8dc429be",
+  "frozen_sources_unchanged": true,
+  "source_treatment_pending_registration": [
+    "OLAML-002"
+  ],
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Register B148 canon and source decisions, run independent cumulative QA and dual canonical replay, then accept OLP-0479–0481; continue epistemic logic at OLP-0482."
+}

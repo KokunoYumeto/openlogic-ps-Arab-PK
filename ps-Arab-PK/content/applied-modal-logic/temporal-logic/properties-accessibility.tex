@@ -1,0 +1,62 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: properties-accessibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{acc}
+
+\olsection{د زماني چوکاټونو خاصيتونه}
+
+څرنګه چې زموږ زماني مدلونه پر اړيکه~$\prec$ هېڅ شرط نۀ ږدي، نو
+زموږ له اشنا اکسيومونو څخه يوازې~$K$، يا د هغې د $K_{\Gtemp}$ او
+~$K_{\Htemp}$ ورته بڼې، په ټولو مدلونو کښې سمې دي:
+\begin{align*}
+\tag{$K_{\Gtemp}$}  \Gtemp (p \to q) & \to (\Gtemp p \to \Gtemp q)\\
+\tag{$K_{\Htemp}$}  \Htemp (p \to q) & \to (\Htemp p \to \Htemp q)
+\end{align*}
+
+خو که غواړو زموږ مدلونه د وخت د ښودلو په طريقه سخت شرطونه ولري،
+لکه دا چې~$\prec$ يو خطي ترتيب وي، نو په مدلونو کښې به نورې
+معتبرې طرحې هم ولرو۔
+
+\begin{table}[t]
+  \begin{tabular}{| p{.48\textwidth} || p{.48\textwidth} |}
+    \hline
+    {\emph{که $\prec$ \dots وي}} & {\emph{نو \dots په~$\mModel{M}$ کښې رښتيا دے:}} \\
+    \hline \hline
+    \emph{انتقالي}: \newline
+    $\forall u \forall v \forall w ((u \prec v \land v \prec w) \lif u \prec w)$ &
+    $\Ftemp \Ftemp p \lif \Ftemp p$  \\
+    \hline
+    \emph{خطي}: \newline
+    $\forall w \forall v (w \prec v \lor w = v \lor v \prec w)$ &
+    $(\Ftemp \Ptemp  p \lor \Ptemp \Ftemp p) \lif (\Ptemp p \lor p \lor \Ftemp p)$\\
+    \hline
+    \emph{ګڼه}: \newline
+    $\forall w \forall v (w \prec v \to \exists u(w \prec u \land u \prec v))$ &
+    $\Ftemp p \lif \Ftemp \Ftemp p$ \\
+    \hline
+    \emph{په تېر لوري بې سرحده}: \newline
+    $\forall w \exists v( v \prec w)$ &
+    $\Htemp p \to \Ptemp p$ \\
+    \hline
+    \emph{په راتلونکي لوري بې سرحده}: \newline
+    $\forall w \exists v( w \prec v)$ &
+    $\Gtemp p \to \Ftemp p$ \\
+    \hline
+  \end{tabular}
+  \caption{د زماني چوکاټونو د مطابقت ځينې خاصيتونه۔}
+  \ollabel{tab:correspondence}
+\end{table}
+
+د \olref{tab:correspondence} ځينې خاصيتونه ښايي د وخت د ښودونکي
+مدل لپاره مطلوب ښکاره شي۔ خو که څۀ هم پر~$\prec$ اړيکه هر ډول
+شرط ايښودلے شو، ټول شرطونه د زماني منطق په ژبه کښې د څرګندېدونکو
+!!{formula}s سره نۀ برابرېږي۔ د بېلګې په توګه، نفي انعکاسيت،
+يعنې دا چې $\forall w \lnot (w \prec w)$، په زماني منطق کښې
+ورته کوم فارمول نۀ لري۔
+
+\end{document}

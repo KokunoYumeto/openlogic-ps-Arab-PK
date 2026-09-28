@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0474; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T16:15:53.897760+00:00",
+  "status": "adopted through OLP-0478; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T16:43:42.909227+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12648,6 +12648,63 @@
       ],
       "decision_timing": "contemporaneous B146 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLAML-001",
+      "unit_id": "OLP-0478",
+      "classification": "temporal_future_operator_plain_F_in_inductive_formula_clause",
+      "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+      "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+      "source_locator": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58",
+      "source_literal_line_1based": [
+        58
+      ],
+      "target_path": "ps-Arab-PK/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 59,
+      "target_sha256": "153929fdffc937f34ba40de566e85653cf163199362ceb9a36f03e368db0d49a",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د فارمول په استقرايي ماده کښې د عادي F پر ځاے د تعريف شوي راتلونکي عامل رسمي نښه راوړل شوه.",
+      "reason": "د ژبې په لړ کښې او د صدق په شرط کښې \\Ftemp راغلے او open-logic-config.sty همدا عامل تعريفوي؛ د سرچينې يوازينے F د عامل پر ځاے عادي رياضيکي توری دے.",
+      "formula_policy": "Only the exact one-span F to Ftemp substitution is allowed; all other formulas, identifiers, tags, term tokens and macros remain exact. Frozen source unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$F!A$"
+        ],
+        "target_only": [
+          "$\\Ftemp!A$"
+        ],
+        "scope": "one future-operator formula in the inductive language clause"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL",
+      "audit_artifacts": [
+        "B147_SOURCE_AUDIT.json",
+        "B147_SOURCE_PREAUDIT_NOTES.md",
+        "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:27,58,114",
+        "ps-Arab-PK/content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex:58-61",
+        "B147_DRAFT_QA_OLP-0478.json",
+        "upstream/open-logic-config.sty:870"
+      ],
+      "decision_timing": "contemporaneous B147 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -12740,7 +12797,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-SOUNDNESS-FILTRATION-FIGURES",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-MORE-RULES-SOUNDNESS",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TABLEAUX-COMPLETENESS-COUNTERMODELS",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS",
+    "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL"
   ],
   "source_authorities": [
     {

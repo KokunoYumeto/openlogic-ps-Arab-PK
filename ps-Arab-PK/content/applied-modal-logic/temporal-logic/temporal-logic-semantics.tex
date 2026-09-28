@@ -1,0 +1,133 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{sem}
+
+\olsection{د زماني منطق معنٰی پوهنه}
+
+\begin{defn}
+د زماني منطق بنسټيزه ژبه دا توکي لري:
+\begin{enumerate}
+  \tagitem{prvFalse}{د !!{falsity} قضيوي ثابت~$\lfalse$۔}{}
+  \tagitem{prvTrue}{د !!{truth} قضيوي ثابت~$\ltrue$۔}{}
+  \item د !!{propositional variable}s يو !!{denumerable}s سټ: $\Obj
+    p_0$، $\Obj p_1$، $\Obj p_2$، \dots
+  \item قضيوي نښلوونکي: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.
+  \item د تېر وخت عاملونه $\Ptemp$ او $\Htemp$۔
+  \item د راتلونکي وخت عاملونه $\Ftemp$ او $\Gtemp$۔
+\end{enumerate}
+\end{defn}
+
+وروسته به د مودالي عاملونو د نورو ډولونو د ورزياتولو امکان هم وڅېړو۔
+
+\begin{defn}
+د زماني ژبې \emph{!!^{formula}s} په استقرايي ډول داسې
+  تعريفېږي:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+\tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+\item هر قضيوي متغير~$\Obj p_i$ يو اټومي !!{formula} دے۔
+
+\tagitem{prvNot}{که $!A$ يو !!a{formula} وي، نو $\lnot !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔}{}
+
+\tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  يو !!a{formula} دے۔}{}
+
+\item که $!A$ يو !!a{formula} وي، نو $\Ptemp  !A$، $\Htemp  !A$، $\Ftemp !A$، $\Gtemp  !A$ ټول
+  !!{formula}s دي۔ په منجمده سرچينه کښې درېيم عامل په غلطه د عادي اېف
+  په بڼه ليکل شوے؛ دلته د ژبې له پورته تعريف او د صدق له لاندې مادې سره
+  سم د راتلونکي عامل رسمي نښه راوړل شوې ده۔
+
+\tagitem{limitClause}{بل هېڅ شے !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+د نورو مفهومي منطقونو په څېر، د زماني منطقونو معنٰی پوهنه د اړيکيزو
+مدلونو له مخې ورکول کېږي۔
+
+\begin{defn}
+  د زماني ژبې يو \emph{مدل} درې‌ګونې
+  $\mModel{M} = \tuple{T, \prec, V}$ ده، چې په دې کښې
+  \begin{enumerate}
+  \item $T$ يو نا تش سټ دے، چې د وخت د ټکو په توګه تفسيرېږي۔
+  \item $\prec$ پر~$T$ يوه دوه‌ځاييزه اړيکه ده۔
+  \item $V$ داسې تابع ده چې هر !!{propositional
+    variable}~$p$ ته د وخت د ټکو يو سټ $V(p)$ ټاکي۔
+  \end{enumerate}
+  که $t \prec t'$ وي، نو وايو چې $t$ له~$t'$ څخه \emph{مخکښې راځي}۔
+  که $t \in V(p)$ وي، نو وايو چې $p$ په~$t$ کښې \emph{رښتيا دے}۔
+\end{defn}
+
+تر دې ځايه موږ د مخکښې‌والي پر اړيکه~$\prec$ هېڅ شرط نۀ دے ايښے۔
+يعنې اوس د زماني مدلونو پر جوړښت هېڅ محدوديت نشته: وخت پکښې خطي،
+څوڅانګيز، دوراني يا د بل هر ډول جوړښت لرلے شي۔
+
+د عادي مودالي منطق په څېر، هر زماني مدل ټاکي چې کوم !!{formula}s
+ئې په کومو ټکو کښې رښتيا دي۔ د اړيکيزې معنٰی پوهنې د بنسټيز مفهوم
+دپاره هماغه نښه کاروو: «مدل~$\mModel{M}$ د ټکي~$t$ په حالت کښې
+!!{formula}~$!A$ رښتيا کوي»۔ د رښتياوالي دا اړيکه په استقرايي ډول
+تعريفېږي او د ټولو نا‌مودالي عاملونو دپاره له عادي مودالي حالت سره
+يو شان ده۔
+
+\begin{defn}\ollabel{defn:tmodels}
+  په~$\mModel M$ کښې د~$t$ په حالت کښې \emph{د !!a{formula}~$!A$
+  رښتياوالی}، چې په نښو کښې ئې $\mSat{M}{!A}[t]$ ليکو، په استقرايي
+  ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[t]$ هېڅکله نۀ وي}۔}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[t]$ تل وي}۔}{}
+  \item $\mSat{M}{p}[t]$ هله او يوازې هله چې $t \in V(p)$ وي۔
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[t]$ وي}۔}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[t]$ او $\mSat{M}{!C}[t]$ دواړه وي}۔}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[t]$ يا $\mSat{M}{!C}[t]$ وي} (يا دواړه)۔}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[t]$ يا $\mSat{M}{!C}[t]$ وي}۔}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    يا $\mSat{M}{!B}[t]$ او $\mSat{M}{!C}[t]$ دواړه وي، يا
+    نۀ $\mSat{M}{!B}[t]$ وي او نۀ $\mSat{M}{!C}[t]$}۔}{}
+  \item\ollabel{defn:sub:mmodels-p}
+    \indcase{!A}{\Ptemp  !B}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    د کوم $t' \in T$ دپاره چې $t' \prec t$ وي، $\mSat{M}{!B}[t']$ وي}
+\item\ollabel{defn:sub:mmodels-h}
+    \indcase{!A}{\Htemp  !B}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    د هر $t' \in T$ دپاره چې $t' \prec t$ وي، $\mSat{M}{!B}[t']$ وي}
+   \item\ollabel{defn:sub:mmodels-f}
+    \indcase{!A}{\Ftemp  !B}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    د کوم $t' \in T$ دپاره چې $t \prec t'$ وي، $\mSat{M}{!B}[t']$ وي}
+\item\ollabel{defn:sub:mmodels-g}
+    \indcase{!A}{\Gtemp  !B}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې
+    د هر $t' \in T$ دپاره چې $t \prec t'$ وي، $\mSat{M}{!B}[t']$ وي}
+  \end{enumerate}
+\end{defn}
+
+له دې معنٰی پوهنې څخه څرګندېږي چې $\Ptemp$ او~$\Htemp$ دوه‌ګوني
+عاملونه دي؛ همداسې $\Ftemp$ او $\Gtemp$ هم دوه‌ګوني دي۔ نو
+$\Htemp  !A$ د $\lnot \Ptemp \lnot !A$ په توګه تعريفولے شو،
+او همدا خبره د $\Gtemp$ او~$\Ftemp$ په اړه هم کېږي۔
+
+\end{document}

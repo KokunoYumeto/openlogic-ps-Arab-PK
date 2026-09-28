@@ -1,0 +1,45 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: extra-operators
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{ext}
+
+\olsection{د زماني منطق نور عاملونه}
+
+د تېر او راتلونکي وخت د يو-ځاييزو عاملونو ترڅنګ، زماني منطقونه کله کله
+دوه‌ځاييز عاملونه $\Since $ او~$\Until$ هم لري چې په ترتيب سره
+«له هغه وخته راهيسې» او «تر هغه وخته پورې» ښيي۔ دا معنا لري چې
+$\Since $ او~$\Until$ د زماني منطق ژبې ته ورزيات کړو، او د زماني
+!!{formula} په تعريف کښې لاندې ماده ورزياته کړو:
+
+\begin{itemize}
+\item[] که $!A$ او $!B$ !!{formula}s وي، نو $(\Since  !A !B)$ او
+  $(\Until !A !B)$ دواړه !!{formula}s دي۔
+\end{itemize}
+
+د دغو عاملونو معنٰی پوهنه بيا داسې ورکول کېږي:
+
+\begin{defn}\ollabel{defn:since-until}
+  په~$\mModel M$ کښې د~$t$ په حالت کښې \emph{د !!a{formula}~$!A$ رښتياوالی}:
+  \begin{enumerate}
+  \item\ollabel{defn:sub:mmodels-since} \indcase{!A}{\Since  !B
+    !C}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې د کوم $t' \in
+    T$ دپاره $t' \prec t$ او $\mSat{M}{!B}[t']$ وي، او د هر هغه
+    $s$ دپاره چې $t' \prec s \prec t$ وي، $\mSat{M}{!C}[s]$ وي}
+   \item\ollabel{defn:sub:mmodels-until} \indcase{!A}{\Until !B
+    !C}{$\mSat{M}{\indfrm}[t]$ هله او يوازې هله چې د کوم $t' \in
+    T$ دپاره $t \prec t'$ او $\mSat{M}{!B}[t']$ وي، او د هر هغه
+    $s$ دپاره چې $t \prec s \prec t'$ وي، $\mSat{M}{!C}[s]$ وي}
+  \end{enumerate}
+\end{defn}
+
+د $\Since  !B !C$ د پوهېدو عادي لاره دا ده: «له هغه وخته چې
+$!B$ واقع شوے، $!C$ روان پاتې شوے دے»۔ د $\Until !B !C$
+عادي لوست بيا دا دے: «تر هغه وخته چې $!B$ به واقع شي، $!C$
+به روان وي»۔
+
+\end{document}

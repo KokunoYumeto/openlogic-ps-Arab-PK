@@ -1,0 +1,63 @@
+{
+  "schema": "ps-b147-applied-temporal-all4-staging/1",
+  "utc": "2026-09-28T16:43:42.909227+00:00",
+  "status": "four translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 474,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0475",
+    "OLP-0476",
+    "OLP-0477",
+    "OLP-0478"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0475",
+      "source_path": "content/applied-modal-logic/applied-modal-logic.tex",
+      "source_sha256": "e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e",
+      "target_sha256": "323d2bfe610a5a95d0239d729411132c386bd79bb775848b39726547165af5e0",
+      "paired_blocks": 9,
+      "focused_qa_sha256": "6fce4a262e5a93cc39a0703aa5105b00b335bd38e36cba541c7e0926c2a40d27",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0476",
+      "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic.tex",
+      "source_sha256": "002d60bc4f9fd0b84f7d062f1cf8a325563ce8f343c5d070e124e4f05c4115e4",
+      "target_sha256": "b1a203ad4a9bbcb38c914511fe8c2944535bace47289efb6f18eefb350d4852d",
+      "paired_blocks": 8,
+      "focused_qa_sha256": "f0517bf6e28795b2b7ae48ea1f24638dbd7b4860943b282241269cc32d7e6d56",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0477",
+      "source_path": "content/applied-modal-logic/temporal-logic/introduction.tex",
+      "source_sha256": "327c7c72f1b98905b0786413d23b688185ed185226419ff49bcd78aaeb3f76dd",
+      "target_sha256": "c908fe863460fe91f560d383001d87fa34de27255f34d76f1a2912513af51f14",
+      "paired_blocks": 10,
+      "focused_qa_sha256": "e6c1faedfcb8d6655b2fa74b9e1dcd8199f676978d758771e94c3f7cde7aa701",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0478",
+      "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+      "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+      "target_sha256": "153929fdffc937f34ba40de566e85653cf163199362ceb9a36f03e368db0d49a",
+      "paired_blocks": 24,
+      "focused_qa_sha256": "40f7140cb2c0d516ef7902383b7905e5f84c34212327fb1c76547beffaf5e60a",
+      "source_treatment_ids": [
+        "OLAML-001"
+      ]
+    }
+  ],
+  "paired_blocks": 51,
+  "notes_path": "work/B147_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "5816cca6f07e7cf6ee6ce9aa4b08b1409389dc951f58febf5c72dccb96ff8416",
+  "consultation_path": "work/B147_CANON_CONSULTATION.md",
+  "consultation_sha256": "0d47a84c1e8e3f01691aa4a1bb9207f3256cd3561a29d10d3ba61f4e8bc971ee",
+  "frozen_sources_unchanged": true,
+  "prior_three_draft_checkpoint_sha256": "5c1d9eb3e169e3439c60cf201a1ac5a0a3b15daf41592495ad89aa50cade5268",
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "next_action": "Run two independent cumulative QA checks and dual canonical replay for OLP-0475–0478; then continue OLP-0479."
+}
