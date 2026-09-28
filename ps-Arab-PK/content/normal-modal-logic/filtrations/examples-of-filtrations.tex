@@ -1,0 +1,242 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: examples-of-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{exf}
+
+\olsection{د فلټريشنونو بېلګې}
+
+تر اوسه مو دا نۀ دي ښودلي چې فلټريشنونه شته هم که نه۔ خو په حقيقت
+کښې د هر مدل~$\mModel{M}$ لپاره، د~$\Gamma$ له مخې د~$\mModel{M}$
+ډېر فلټريشنونه شته۔ دلته ئې دوه په ځانګړي ډول پېژنو: تر ټولو نرے
+او تر ټولو غټ فلټريشن۔ د يوه مدل فلټريشنونه د لاسرسي په اړيکه کښې
+توپير لري (ځکه \olref[fil]{defn:filtration} نېغ په نېغه ټاکي چې
+$W^*$ او~$V^*$ بايد څه وي)۔ تر ټولو نرے فلټريشن به تر ممکنه حده
+لږې اړيکه لرونکې نړۍې ولري، او تر ټولو غټ به تر ممکنه حده ډېرې۔
+
+\begin{defn}
+  که $\Gamma$ د فرعي فارمولونو لپاره تړلے وي، د مدل~$\mModel{M}$
+  \emph{تر ټولو نرے} فلټريشن~$\mModel{M^*}$ داسې تعريفېږي:
+  \[
+  R^*[u][v] \quad \text{if and only if} \quad \exists u'\in [u] \;
+  \exists v' \in [v] : Ru'v'.
+  \]
+\end{defn}
+
+\begin{prop}\ollabel{prop:finest}
+  تر ټولو نرے فلټريشن~$\mModel{M^*}$ په رښتيا هم فلټريشن دے۔
+\end{prop}
+
+\begin{proof}
+  بايد وګورو چې په دې ډول تعريف شوې $R^*$ د
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R} شرط پوره
+  کوي۔ درې واړه شرطونه په وار سره ګورو۔
+
+  که $Ruv$ وي، نو ځکه چې $u \in [u]$ او $v \in [v]$، $R^*[u][v]$
+  هم وي؛ نو \olref[fil]{defn:filtration-R1} پوره کېږي۔
+  
+  \iftag{prvBox}{\iftag{probBox}{د
+      \olref[fil]{defn:filtration-R2} تصديق د تمرين لپاره پرېږدو۔}{د
+        \olref[fil]{defn:filtration-R2} لپاره، فرض کړئ
+        $\Box!A \in \Gamma$، $R^*[u][v]$ او
+        $\mSat{M}{\Box!A}[u]$ وي۔ د~$R^*$ د تعريف له مخې داسې
+        $u' \equiv u$ او $v' \equiv v$ شته چې $Ru'v'$ وي۔ ځکه $u$
+        او $u'$ د~$\Gamma$ پر فارمولونو سره يوه خوله دي،
+        $\mSat{M}{\Box!A}[u']$ هم وي؛ نو
+        $\mSat{M}{!A}[v']$ وي۔ د فرعي !!{formula}s لپاره د~$\Gamma$
+        د تړلتيا له مخې، $v$ او $v'$ د~$!A$ په اړه سره يوه خوله
+        دي؛ نو لکه څنګه چې غوښتل مو، $\mSat{M}{!A}[v]$۔}}{}
+  
+  \iftag{prvDiamond}{\iftag{probDiamond}{د
+      \olref[fil]{defn:filtration-R3} تصديق د تمرين لپاره پرېږدو۔}{د
+        \olref[fil]{defn:filtration-R3} د تصديق لپاره، فرض کړئ
+        $\Diamond!A \in \Gamma$، $R^*[u][v]$ او
+        $\mSat{M}{!A}[v]$ وي۔ د~$R^*$ د تعريف له مخې داسې
+        $u' \equiv u$ او $v' \equiv v$ شته چې $Ru'v'$ وي۔ ځکه $v$
+        او $v'$ د~$\Gamma$ پر فارمولونو سره يوه خوله دي، او
+        $\Gamma$ د فرعي !!{formula}s لپاره تړلے دے،
+        $\mSat{M}{!A}[v']$ هم وي؛ نو
+        $\mSat{M}{\Diamond !A}[u']$۔ ځکه $u$ او $u'$ هم
+        د~$\Gamma$ پر فارمولونو سره يوه خوله دي،
+        $\mSat{M}{\Diamond !A}[u]$۔}}{}
+\end{proof}
+
+\begin{probtag}{probBox,probDiamond}
+  د \olref[nml][fil][exf]{prop:finest} ثبوت بشپړ کړئ۔
+\end{probtag}
+
+\begin{defn}
+  که $\Gamma$ د فرعي فارمولونو لپاره تړلے وي، د مدل~$\mModel{M}$
+  \emph{تر ټولو غټ} فلټريشن~$\mModel{M^*}$ داسې تعريفېږي چې
+  $R^*[u][v]$ هله او يوازې هله وي چې
+  \iftag{notprvBox,notprvDiamond}{لاندې شرط پوره شي:}{له لاندې
+    شرطونو څخه \emph{دواړه} پوره شي:}
+  \begin{tagenumerate}{prvBox,prvDiamond}
+  \tagitem{prvBox}{\ollabel{defn:coarsest-Box}که $\Box!A \in \Gamma$
+    او $\mSat{M}{\Box!A}[u]$ وي، نو
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{؛}{۔}}{}
+  \tagitem{prvDiamond}{\ollabel{defn:coarsest-Diamond}که $\Diamond!A
+    \in \Gamma$ او $\mSat{M}{!A}[v]$ وي، نو
+    $\mSat{M}{\Diamond!A}[u]$۔}{}
+  \end{tagenumerate}
+\end{defn}
+
+\begin{prop}
+  تر ټولو غټ فلټريشن~$\mModel{M^*}$ په رښتيا هم فلټريشن دے۔
+\end{prop}
+
+\begin{proof}
+  د~$R^*$ د تعريف له مخې، يوازې دا شرط پاتې دے چې له $Ruv$ څخه
+  $R^*[u][v]$ راووځي۔ نو $Ruv$ فرض کړئ۔
+  \iftag{prvBox}{فرض کړئ $\Box!A \in \Gamma$ او
+    $\mSat{M}{\Box!A}[u]$ وي؛ نو ښکاره ده چې
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{، او
+      \olref{defn:coarsest-Box} پوره کېږي۔ }{۔}}{}\iftag{prvDiamond}{فرض
+    کړئ $\Diamond!A \in \Gamma$ او $\mSat{M}{!A}[v]$ وي۔ نو
+    ځکه چې~$Ruv$،
+    $\mSat{M}{\Diamond!A}[u]$\iftag{prvBox}{، او
+      \olref{defn:coarsest-Diamond} پوره کېږي}{}۔}{}
+\end{proof}
+
+\begin{ex}
+  فرض کړئ $W = \PosInt$، $Rnm$ هله او يوازې هله چې $m = n + 1$،
+  او $V(p) = \Setabs{2n}{n \in
+    \Nat}$۔ مدل~$\mModel{M} = \tuple{W, R, V}$ په
+  \olref{fig:ex-filtration} کښې انځور شوے دے۔ نړۍې $1$، $2$ او
+  داسې نورې دي؛ هره نړۍ يوازې يوې بلې نړۍ، يعنې خپل راتلونکي ته
+  لاسرسے لري، او $p$ هله او يوازې هله رښتينے دے چې شمېره جفته وي۔
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$1$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$2$};
+      \node[world] (3) [label=below:\mFalse{p}, right=of 2] {$3$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$4$};
+      \node[phantom] (5) [right=of 4] {};
+      \draw[->] (1) to (2);
+      \draw[->] (2) to (3);
+      \draw[->] (3) to (4);
+      \draw[dotted] (4) to (5);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$[1]$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$[2]$};
+      \draw[->,bend left] (1) to (2);
+      \draw[->,bend left] (2) to (1);
+      
+      \node[world] (3) [label=below:\mFalse{p},right=of 2] {$[1]$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$[2]$};
+      \draw[->,bend left] (3) to (4);
+      \draw[->,bend left] (4) to (3);
+      \draw[->,reflexive above] (4) to (4);
+    \end{tikzpicture}
+    \caption{يو نامتناهي مدل او د هغه فلټريشنونه۔}
+    \ollabel{fig:ex-filtration}
+  \end{figure}
+  
+  اوس $\Gamma$ د~$\Box p \lif p$ د فرعي !!{formula}s سټ، يعنې
+  $\{p, \Box p, \Box p \lif p\}$، وټاکئ۔ $p$ يوازې په جفتو
+  شمېرو کښې رښتينے دے، او $\Box p$ يوازې په طاقو شمېرو کښې
+  رښتينے دے؛ نو $\Box p \lif p$ هم يوازې په جفتو شمېرو کښې
+  رښتينے دے۔ په بل عبارت، هره طاقه شمېره $\Box p$ رښتينے کوي،
+  خو $p$ او $\Box p \lif p$ ناسم کوي؛ هره جفته شمېره $p$ او
+  $\Box p \lif p$ رښتيني کوي، خو $\Box p$ ناسم کوي۔ نو
+  $W^* = \{ [1], [2] \}$، چېرته چې $[1] =
+  \{1, 3, 5, \dots\}$ او $[2] = \{2, 4, 6, \dots\}$ دي۔ ځکه
+  $2 \in V(p)$، $[2] \in V^*(p)$؛ او ځکه $1 \notin V(p)$،
+  $[1] \notin V^*(p)$۔ نو $V^*(p) = \{[2]\}$۔
+
+  پر~$W^*$ ولاړ هر فلټريشن بايد داسې د لاسرسي اړيکه ولري چې
+  $\tuple{[1], [2]}, \tuple{[2],[1]}$ پکښې وي: ځکه $R12$،
+  د \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R1} له
+  مخې $R^*[1][2]$ اړين دے؛ او ځکه $R23$، بايد
+  $R^*[2][3]$ وي، او $[3]=[1]$۔ خو
+  $\tuple{[1],[1]}$ پکښې راتلے نۀ شي: که راغلے، نو
+  $R^*[1][1]$ به وي، حال دا چې $\mSat{M}{\Box p}[1]$
+  خو $\mSat/{M}{p}[1]$؛ دا له
+  \olref[fil]{defn:filtration-R2} سره په ټکر کښې دے۔ هېڅ شرط
+  $R^*[2][2]$ نۀ لازموي او نۀ ئې منع کوي۔ نو د~$\mModel{M}$
+  دوه ممکن فلټريشنونه دي چې له لاندې دوو د لاسرسي اړيکو سره سمون
+  لري:
+  \[
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}\} \text{ and }
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}, \tuple{[2],[2]}\}.
+  \]
+  په دواړو حالاتو کښې، په~$[1]$ کښې $p$ او
+  $\Box p \lif p$ ناسم، او $\Box p$ رښتينے دي؛ په~$[2]$
+  کښې $p$ او $\Box p \lif p$ رښتيني، او $\Box p$ ناسم دي۔
+\end{ex}
+
+
+\begin{prob}
+  لاندې مدل~$\mModel{M} = \tuple{W, R, V}$ وګورئ، چې $W
+  = \Setabs{0\sigma}{\sigma \in \Bin^*}$، يعنې د~$0$ او~$1$ د
+  هغو لړيو سټ دے چې په~$0$ پيلېږي؛ $R\sigma\sigma'$ هله او يوازې
+  هله چې $\sigma' =
+  \sigma 0$ يا $\sigma' = \sigma 1$ وي؛ او $V(p) = W \cap
+  \Setabs{\sigma
+    0}{\sigma \in \Bin^*}$ او $V(q) = W \cap \Setabs{\sigma 1}{\sigma \in
+    \Bin^* \setminus \{1\}}$ دي۔ په منجمده سرچينه کښې له همدغه
+  نړۍو سټ سره تقاطع نۀ ده ليکل شوې؛ بې له هغې دواړه ارزښت‌سټونه
+  د مدل له نړۍو بهر لړۍ هم لري۔ دلته د مدل د نړۍو سټ ته محدوديت
+  څرګند شوے دے۔
+  دا ئې انځور دے:
+  \begin{center}
+    \begin{tikzpicture}[modal,
+        node distance=2cm
+      ]
+
+      \node[world] (0) [label={below:\mTrue{p}\\\mFalse{q}},font=\tiny] {$0$};
+      \node[world] (00) [label={below:\mTrue{p}\\\mFalse{q}},
+        above right=of 0,font=\tiny] {$00$};
+      \node[world] (000) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 00, yshift=.8cm, font=\tiny] {$000$};
+      \node[phantom] (0000) [right=of 000, yshift=.5cm] {};
+      \node[phantom] (0001) [right=of 000, yshift=-.5cm] {};
+      \node[world] (001) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 00, yshift=-.8cm, font=\tiny] {$001$};
+      \node[phantom](0010) [right=of 001, yshift=.5cm] {};
+      \node[phantom](0011) [right=of 001, yshift=-.5cm] {};
+      \node[world] (01) [label={below:\mFalse{p}\\\mTrue{q}},
+        below right=of 0,font=\tiny] {$01$};
+      \node[world] (010) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 01, yshift=.8cm,font=\tiny] {$010$};
+      \node[phantom] (0100) [right=of 010, yshift=.5cm] {};
+      \node[phantom] (0101) [right=of 010, yshift=-.5cm] {};
+      \node[world] (011) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 01, yshift=-.8cm,font=\tiny] {$011$};
+      \node[phantom] (0110) [right=of 011, yshift=.5cm] {};
+      \node[phantom] (0111) [right=of 011, yshift=-.5cm] {};
+
+      \draw[->] (0) to (00);
+      \draw[->] (0) to (01);
+      \draw[->] (00) to (000);
+      \draw[dotted] (000) to (0000);
+      \draw[dotted] (000) to (0001);
+      \draw[->] (00) to (001);
+      \draw[dotted] (001) to (0010);
+      \draw[dotted] (001) to (0011);
+      \draw[->] (01) to (010);
+      \draw[dotted] (010) to (0100);
+      \draw[dotted] (010) to (0101);
+      \draw[->] (01) to (011);
+      \draw[dotted] (011) to (0110);
+      \draw[dotted] (011) to (0111);
+    \end{tikzpicture}
+  \end{center}
+  د هرې نړۍ~$w$ لپاره
+  $\mSat/{M}{\Box(p \lor q) \lif (\Box p \lor \Box q)}[w]$ وي۔
+
+  $\Gamma$ د~$\Box(p \lor q) \lif
+  (\Box p \lor \Box q)$ د فرعي !!{formula}s سټ وټاکئ۔ $W^*$ او
+  $V^*$ څه دي؟ د~$\mModel{M}$ د تر ټولو نري فلټريشن د لاسرسي
+  اړيکه څه ده؟ د تر ټولو غټ فلټريشن اړيکه څه ده؟
+\end{prob}
+
+\end{document}

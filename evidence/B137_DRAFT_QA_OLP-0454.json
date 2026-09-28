@@ -1,0 +1,34 @@
+{
+  "schema": "ps-b137-filtration-examples-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0454",
+  "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+  "source_sha256": "8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484",
+  "target_sha256": "4017b992984ac9f2067c0d76be78d646837f232b84ae859114f3ecf24b0485ea",
+  "source_blocks": 27,
+  "target_blocks": 27,
+  "registered_source_correction_id": "OLNML-027",
+  "expected_source_math": [
+    "$V(p)=\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$",
+    "$V(q)=\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"
+  ],
+  "expected_target_math": [
+    "$V(p)=W\\cap\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$",
+    "$V(q)=W\\cap\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "math": true,
+    "macro_names": true,
+    "source_comments": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

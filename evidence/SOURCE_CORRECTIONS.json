@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0451; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T01:46:07.355774+00:00",
+  "status": "adopted through OLP-0454; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T02:47:42.437189+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -11212,6 +11212,66 @@
       ],
       "decision_timing": "contemporaneous B134 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLNML-027",
+      "unit_id": "OLP-0454",
+      "classification": "filtration_problem_valuation_sets_outside_world_domain",
+      "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+      "source_sha256": "8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484",
+      "source_locator": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex:170-175",
+      "source_literal_line_1based": [
+        170,
+        173,
+        174,
+        175
+      ],
+      "target_path": "ps-Arab-PK/content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+      "target_line_1based": 182,
+      "disclosure_line_1based": 185,
+      "target_sha256": "4017b992984ac9f2067c0d76be78d646837f232b84ae859114f3ecf24b0485ea",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د وروستي تمرين د ارزښت‌تابع په دواړو سټونو کښې د نړۍو له سټ سره تقاطع څرګنده شوه؛ د نړۍو پر سر د p او q صدق او شکل نۀ دي بدل شوي. د سرچينې نېغ په نېغه توپير په پښتو متن کښې څنګ ته څرګند شوے.",
+      "reason": "د مدل ارزښت‌تابع بايد د نړۍو سټ فرعي سټونه ورکړي. د سرچينې V(p) د 10 په څېر او V(q) د 1 په څېر لړۍ هم رانغاړي، حال دا چې W يوازې په 0 پيلېدونکې لړۍ لري. له W سره تقاطع په W کښې غړيتوب نۀ بدلوي، خو دواړه ارزښت‌سټونه د مدل لپاره سم ډول ته راولي.",
+      "formula_policy": "Only the two registered valuation math spans acquire W intersection; IDs, tags, environments, term tokens, diagrams and frozen source are unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$V(p)=\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$",
+          "$V(q)=\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"
+        ],
+        "target_only": [
+          "$V(p)=W\\cap\\Setabs{\\sigma0}{\\sigma\\in\\Bin^*}$",
+          "$V(q)=W\\cap\\Setabs{\\sigma1}{\\sigma\\in\\Bin^*\\setminus\\{1\\}}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES",
+      "audit_artifacts": [
+        "B137_SOURCE_AUDIT.json",
+        "B137_SOURCE_REVIEW_NOTES.md",
+        "content/normal-modal-logic/filtrations/examples-of-filtrations.tex:170-175",
+        "ps-Arab-PK/content/normal-modal-logic/filtrations/examples-of-filtrations.tex:182-188",
+        "B137_DRAFT_QA_OLP-0454.json"
+      ],
+      "decision_timing": "contemporaneous B137 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -11297,7 +11357,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-COMPLETE-CONSISTENT-SETS",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-CANONICAL-CONSTRUCTION",
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-TRUTH-DETERMINATION",
-    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING"
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-OPENING",
+    "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES"
   ],
   "source_authorities": [
     {

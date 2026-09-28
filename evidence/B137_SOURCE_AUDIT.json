@@ -1,0 +1,93 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T02:47:42.437189+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-FILTRATION-EXAMPLES",
+  "batch_id": "PS-B137-NORMAL-MODAL-FILTRATION-EXAMPLES",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0454",
+      "source_path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+      "source_bytes": 9611,
+      "source_sha256": "8a20bbfcc005772b9166800bca81278de3b28c4b47f51d01dc07f69777c8a484",
+      "target_sha256": "4017b992984ac9f2067c0d76be78d646837f232b84ae859114f3ecf24b0485ea",
+      "paired_blocks": 27,
+      "source_correction_ids": [
+        "OLNML-027"
+      ]
+    }
+  ],
+  "notes_path": "work/B137_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "7bd6eddca94e2c609502beaec8c14e3bc3cced1e344a9e30b0cdb1d0011f4f4e",
+  "consultation_path": "work/B137_CANON_CONSULTATION.md",
+  "consultation_sha256": "4e5c1dc813fb2cd7fe42184ad93711a148468f8beaaf6909c5f11e3e485114fd",
+  "staging_qa_sha256": "cecdc04e19017680bda96954154c9b949d07988408378e8db480e28ffb2d20e3",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 143,
+      "printed_page": "138",
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0454",
+      "source_correction_id": "OLNML-027",
+      "finding": "د مدل ارزښت‌تابع بايد د نړۍو سټ فرعي سټونه ورکړي. د سرچينې V(p) د 10 په څېر او V(q) د 1 په څېر لړۍ هم رانغاړي، حال دا چې W يوازې په 0 پيلېدونکې لړۍ لري. له W سره تقاطع په W کښې غړيتوب نۀ بدلوي، خو دواړه ارزښت‌سټونه د مدل لپاره سم ډول ته راولي."
+    }
+  ],
+  "formula_policy": "Only the two registered valuation math spans acquire W intersection; IDs, tags, environments, term tokens, diagrams and frozen source are unchanged.",
+  "unresolved": "د نري/غټ فلټريشن عين پاکستانۍ تخنيکي جوړه نۀ ده موندل شوې؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "ec3dd7079114f1c8c7020b677e34b919affc0205c18e29e4b40d661f4825633b",
+  "next_executable_action": "Run cumulative and canonical QA, then continue OLP-0455."
+}

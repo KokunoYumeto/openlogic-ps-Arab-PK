@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B136-NORMAL-MODAL-FILTRATION-DEFINITION",
-  "status": "OLP-0453 source-reviewed and staged; 23 paired blocks, 23 semantic samples, bounded OLP-0452 typo and OLNML-025 rationale clarifications",
+  "batch_id": "PS-B137-NORMAL-MODAL-FILTRATION-EXAMPLES",
+  "status": "OLP-0454 source-reviewed and staged; 27 paired blocks, 18 semantic samples, one disclosed valuation-domain source treatment",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9555,6 +9555,28 @@
       ],
       "scope": "د W*، R* او V* رسمي تعريف؛ د R1/R2/R3 درې شرطونه؛ د متغير او ټولو رابطو د صدق د ساتنې دوه اړخيز ثبوت؛ د مدل او ټولګي پايله.",
       "allowed_residual_english": []
+    },
+    "OLP-0454": {
+      "batch_id": "PS-B137-NORMAL-MODAL-FILTRATION-EXAMPLES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+        "AF-NIAZMAN-P138-EQUALITY"
+      ],
+      "terms": [
+        "TERM-MODAL-FILTRATION-BOUNDS",
+        "TERM-MODAL-FILTRATION",
+        "TERM-EQUIVALENCE",
+        "TERM-MODAL-ACCESSIBILITY-PROPERTIES",
+        "TERM-RELATION",
+        "TERM-PROP-SEMANTICS",
+        "TERM-MODAL-FRAME"
+      ],
+      "scope": "تر ټولو نرے او غټ فلټريشن، د R1/R2/R3 ثبوتونه، د جفت/طاق نړۍو دوه اړيکې، او د دوه‌تورو لړيو تمرين له څرګند ارزښت‌سټ سمون سره.",
+      "allowed_residual_english": []
     }
   },
   "semantic_review": [
@@ -16085,6 +16107,114 @@
       "passage": "class corollary",
       "reverse_paraphrase": "Validity in C iff validity in the class of Gamma-filtrations of models in C, for A in Gamma.",
       "finding": "د اصلي او فلټريشن ټولګيو او فورمول حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "two extrema",
+      "reverse_paraphrase": "For a fixed quotient W* and V*, filtrations differ only in R*; finest takes least edges, coarsest greatest allowed.",
+      "finding": "د نړۍو شمېر او د اړيکې شاملېدل جلا پاتې دي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "finest definition",
+      "reverse_paraphrase": "R*[u][v] iff some representatives u prime in [u], v prime in [v] satisfy Ru prime v prime.",
+      "finding": "د دوو وجودي شاهدانو کميت او جهت ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "finest R1",
+      "reverse_paraphrase": "An original edge Ruv gives the quotient edge by choosing u and v as representatives.",
+      "finding": "R1 د شاهدانو له ځان ټاکلو راځي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "finest R2",
+      "reverse_paraphrase": "Box A at u transfers to u prime; an original edge gives A at v prime, then Gamma closure transfers A to v.",
+      "finding": "د Box لور، فرعي فارمول او د ټولو طبقو هوکړه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "finest R3",
+      "reverse_paraphrase": "A at v transfers to v prime; the original edge gives Diamond A at u prime and Gamma agreement transfers it to u.",
+      "finding": "د Diamond شاهد او سرچپه انتقال ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "optional proof cases",
+      "reverse_paraphrase": "Both Box and Diamond verification may be assigned as exercises under their original tags.",
+      "finding": "اختياري تمريني ټاګونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "coarsest definition",
+      "reverse_paraphrase": "The largest permitted relation satisfies every applicable R2 and R3 implication.",
+      "finding": "د دواړو شرطونو عموميت او شمول ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "coarsest R1 proof",
+      "reverse_paraphrase": "Each original edge Ruv obeys the Box and Diamond implications, so belongs to the greatest permitted relation.",
+      "finding": "له اصلي څنډې نه نوي اړيکې ته لور ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "integer model",
+      "reverse_paraphrase": "World n accesses only n+1 and p holds exactly at even positive integers.",
+      "finding": "د لاسرسي جهت او جفتوالی ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "integer truth pattern",
+      "reverse_paraphrase": "Box p holds exactly at odd worlds; Box p implies p holds exactly at even worlds.",
+      "finding": "د Box او شرط صدق بېل ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "quotient classes",
+      "reverse_paraphrase": "Odd and even integers form [1] and [2], and only [2] belongs to V*(p).",
+      "finding": "د ټولګيو او ارزښت‌تابع غړيتوب ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "mandatory edges",
+      "reverse_paraphrase": "Edges [1] to [2] and [2] to [1] are forced by R1.",
+      "finding": "د لازمو دوو څنډو لور ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "forbidden loop",
+      "reverse_paraphrase": "A loop at [1] violates R2 because Box p holds at 1 while p does not.",
+      "finding": "د منع شوې څنډې دليل ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "optional loop",
+      "reverse_paraphrase": "A loop at [2] is neither forced nor forbidden, giving exactly two filtrations.",
+      "finding": "د اختياري څنډې او دوو فلټريشنونو شمېر ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "binary-world domain",
+      "reverse_paraphrase": "The problem world set comprises finite binary sequences that start with 0.",
+      "finding": "د 0 پيل قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "valuation domain repair",
+      "reverse_paraphrase": "Intersecting both source valuation sets with W removes non-world strings without changing truth at a world.",
+      "finding": "OLNML-027 په خپل ځای څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "problem formula",
+      "reverse_paraphrase": "Every world falsifies Box(p or q) implies (Box p or Box q).",
+      "finding": "د نفي شوي فورمول کميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0454",
+      "passage": "problem request",
+      "reverse_paraphrase": "Find W*, V* and the finest and coarsest accessibility relations for the binary tree model.",
+      "finding": "د تمرين څلور غوښتنې ساتل شوې."
     }
   ]
 }
