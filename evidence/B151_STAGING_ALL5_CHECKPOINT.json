@@ -1,0 +1,105 @@
+{
+  "schema": "ps-b151-intuitionistic-all5-staging/1",
+  "utc": "2026-09-28T19:25:41.372160+00:00",
+  "status": "five translated source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 490,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0491",
+    "OLP-0492",
+    "OLP-0493",
+    "OLP-0494",
+    "OLP-0495"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0491",
+      "source_path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+      "source_sha256": "d4274226f1459dcd2a6029d4b8962f922c7ccaa0d3cb4ee090b2e442e40425c9",
+      "target_sha256": "c0696a5e391d7703e9ee8a7930b903f08f8802ec6d36af56bd81c051cee7c7d9",
+      "paired_blocks": 10,
+      "math_spans": 0,
+      "focused_qa_sha256": "335e5350ad5daf09da432600d2168ecf457585da450f293c0c9b6dad07c34498",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0492",
+      "source_path": "content/intuitionistic-logic/introduction/introduction.tex",
+      "source_sha256": "02462706d5ec30350164ff6ab0d5a17154435698739696ef05e564285efb6a1d",
+      "target_sha256": "5a5a814958af972b6bceedd09e0516647f2d8851299bd3f8cfa1076ae95767b9",
+      "paired_blocks": 11,
+      "math_spans": 0,
+      "focused_qa_sha256": "a151e0302f481d10048ae41be922601f1acfa85ff0f97d5e4273c343d0100406",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0493",
+      "source_path": "content/intuitionistic-logic/introduction/constructive-reasoning.tex",
+      "source_sha256": "0e2e1481d7a5d642bbb24f9a77b1521b56c1aa7d17842dd6b8c9e21cdb6d9ad1",
+      "target_sha256": "b8ecfc3fc857a6ea94f083cd48b14a01b4c86e4c968847f4c7ea552ee1be605e",
+      "paired_blocks": 16,
+      "math_spans": 32,
+      "focused_qa_sha256": "183569445fb8895c59b2b27d3905380e674374b8a6329c89fd28c70a7af97ae0",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0494",
+      "source_path": "content/intuitionistic-logic/introduction/syntax.tex",
+      "source_sha256": "ae3a1b269130b8527b095f31c2eb1ee75bb562ba9a69105052d56a0588b67186",
+      "target_sha256": "9995aaf0dbebdd8e60ef71c5f76cb6bedbb23cd610d66769741da073ef8cb25f",
+      "paired_blocks": 18,
+      "math_spans": 37,
+      "focused_qa_sha256": "0e5781e1cd25a4f1249cef1f7eb225e8d8b408bda192fe5281b72338e0f909be",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0495",
+      "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+      "target_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+      "paired_blocks": 20,
+      "math_spans": 194,
+      "focused_qa_sha256": "c7fd7d6d52020187297e6e8e3705878008e4fb1695393df7c7307e3dc790ce4e",
+      "source_treatment_ids": [
+        "OLINT-001",
+        "OLINT-002"
+      ]
+    }
+  ],
+  "paired_blocks": 75,
+  "math_spans": 263,
+  "notes_path": "work/B151_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "7a849f69de93a12c89b1720fd52db85486f01157cd12ad7181980c993546735e",
+  "consultation_path": "work/B151_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "63901d678238bfb8c99c3e59427aca4ad0a7f5ef98ccfe074a95bd640996f9d5",
+  "prior_four_draft_checkpoint_sha256": "5a7aed84494243e33399fa7164295edd5e6bd91cdb75bdb2803c2497a8cd83f8",
+  "b150_accepted_checkpoint_sha256": "ee8f31e9005298efed57d3aa6882a55eb7ea9619d9ad6ff7a82ed92fa09ecfc6",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    {
+      "id": "OLINT-001",
+      "unit_id": "OLP-0495",
+      "kind": "missing-formula-marker",
+      "source_math": [
+        "$C$"
+      ],
+      "target_math": [
+        "$!C$"
+      ]
+    },
+    {
+      "id": "OLINT-002",
+      "unit_id": "OLP-0495",
+      "kind": "mismatched-first-disjunction-component",
+      "source_math": [
+        "$\\tuple{1,M_2}$"
+      ],
+      "target_math": [
+        "$\\tuple{1,M_1}$"
+      ]
+    }
+  ],
+  "next_action": "Register B151 intuitionistic and BHK terms, OLINT-001/002, and source review; run cumulative QA and dual canonical replay; then accept OLP-0491–0495 and continue OLP-0496."
+}

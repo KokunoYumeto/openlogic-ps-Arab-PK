@@ -1,0 +1,136 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T19:28:28.007836+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
+  "batch_id": "PS-B151-INTUITIONISTIC-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0491",
+      "source_path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+      "source_bytes": 334,
+      "source_sha256": "d4274226f1459dcd2a6029d4b8962f922c7ccaa0d3cb4ee090b2e442e40425c9",
+      "target_sha256": "c0696a5e391d7703e9ee8a7930b903f08f8802ec6d36af56bd81c051cee7c7d9",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0492",
+      "source_path": "content/intuitionistic-logic/introduction/introduction.tex",
+      "source_bytes": 355,
+      "source_sha256": "02462706d5ec30350164ff6ab0d5a17154435698739696ef05e564285efb6a1d",
+      "target_sha256": "5a5a814958af972b6bceedd09e0516647f2d8851299bd3f8cfa1076ae95767b9",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0493",
+      "source_path": "content/intuitionistic-logic/introduction/constructive-reasoning.tex",
+      "source_bytes": 4189,
+      "source_sha256": "0e2e1481d7a5d642bbb24f9a77b1521b56c1aa7d17842dd6b8c9e21cdb6d9ad1",
+      "target_sha256": "b8ecfc3fc857a6ea94f083cd48b14a01b4c86e4c968847f4c7ea552ee1be605e",
+      "paired_blocks": 16,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0494",
+      "source_path": "content/intuitionistic-logic/introduction/syntax.tex",
+      "source_bytes": 2691,
+      "source_sha256": "ae3a1b269130b8527b095f31c2eb1ee75bb562ba9a69105052d56a0588b67186",
+      "target_sha256": "9995aaf0dbebdd8e60ef71c5f76cb6bedbb23cd610d66769741da073ef8cb25f",
+      "paired_blocks": 18,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0495",
+      "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "source_bytes": 7723,
+      "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+      "target_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLINT-001",
+        "OLINT-002"
+      ]
+    }
+  ],
+  "notes_path": "work/B151_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "7a849f69de93a12c89b1720fd52db85486f01157cd12ad7181980c993546735e",
+  "consultation_path": "work/B151_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "63901d678238bfb8c99c3e59427aca4ad0a7f5ef98ccfe074a95bd640996f9d5",
+  "staging_checkpoint_sha256": "aa956ceb29fb8e26b34d818b718f96868d4d3e1965222b6e22b9853068299502",
+  "staging_qa_sha256": {
+    "OLP-0491": "335e5350ad5daf09da432600d2168ecf457585da450f293c0c9b6dad07c34498",
+    "OLP-0492": "a151e0302f481d10048ae41be922601f1acfa85ff0f97d5e4273c343d0100406",
+    "OLP-0493": "183569445fb8895c59b2b27d3905380e674374b8a6329c89fd28c70a7af97ae0",
+    "OLP-0494": "0e5781e1cd25a4f1249cef1f7eb225e8d8b408bda192fe5281b72338e0f909be",
+    "OLP-0495": "c7fd7d6d52020187297e6e8e3705878008e4fb1695393df7c7307e3dc790ce4e"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P21-SQRT2-IRRATIONAL-BOUNDS",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 32,
+      "printed_page": "21",
+      "page_image_sha256": "d9e58ad8100ddbf5ce53aba56d6728044088bc520eb541e7c441c0eb0782cbd6",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 42,
+      "printed_page": "37",
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 23,
+      "printed_page": "18",
+      "page_image_sha256": "d6b9a4d54bf5e26bee0481d22eb16f75f49bccbe4f51c5ba1bc5ad74f2906e38",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0495",
+      "source_correction_id": "OLINT-001",
+      "finding": "هماغه فورمول ((!A and !B) implies !C) او د مثال ورپسې جملې د پايلې !C ښيي؛ بې‌نښې C دلته ناتعريفه ده."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "source_correction_id": "OLINT-002",
+      "finding": "د فصل د لومړۍ مادې له مخې د لومړۍ څانګې جوړونه بايد خپله ورکړل شوې M1 وي؛ د سرچينې tuple{1,M2} د h1 له ورودي سره نه سمون خوري."
+    }
+  ],
+  "formula_policy": "75 paired blocks, 263 math spans; only C to !C and tuple(1,M2) to tuple(1,M1) in OLP-0495. All other math, identifiers, tags, term tokens, macros and environments exact.",
+  "unresolved": "BHK جوړونه او د منځني حالت د ايستلو اصل لنډمهاله نومونه دي؛ د ليکوال يا انسان رسمي تصويب نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "0d88f361a1b5bae8b81c238fe18890eee756086016b6369e9d6c8750566c88d0",
+  "next_executable_action": "Register B151 intuitionistic and BHK terms, OLINT-001/002, and source review; run cumulative QA and dual canonical replay; then accept OLP-0491–0495 and continue OLP-0496."
+}

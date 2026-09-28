@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0490; prior frozen-source actions preserved",
-  "adopted_utc": "2026-09-28T19:04:36.015225+00:00",
+  "status": "adopted through OLP-0495; prior frozen-source actions preserved",
+  "adopted_utc": "2026-09-28T19:28:28.007836+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -12877,6 +12877,118 @@
           "count": 1
         }
       ]
+    },
+    {
+      "id": "OLINT-001",
+      "unit_id": "OLP-0495",
+      "classification": "missing_formula_marker_in_BHK_currying_codomain",
+      "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+      "source_locator": "content/intuitionistic-logic/introduction/bhk-interpretation.tex:95",
+      "source_literal_line_1based": [
+        95
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "target_line_1based": 89,
+      "disclosure_line_1based": 92,
+      "target_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د تابع د پايلې په يوه تشريح کښې د سرچينې C د همدې قضیې له نورو فورمولونو سره سم !C ته واړول شو او څنګ‌ته څرګند شو.",
+      "reason": "هماغه فورمول ((!A and !B) implies !C) او د مثال ورپسې جملې د پايلې !C ښيي؛ بې‌نښې C دلته ناتعريفه ده.",
+      "formula_policy": "Only one exact math-span substitution for this action; all other formulas, identifiers, tags, term tokens and macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$C$"
+        ],
+        "target_only": [
+          "$!C$"
+        ],
+        "scope": "one BHK currying codomain reference"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
+      "audit_artifacts": [
+        "B151_SOURCE_AUDIT.json",
+        "B151_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/introduction/bhk-interpretation.tex:95",
+        "ps-Arab-PK/content/intuitionistic-logic/introduction/bhk-interpretation.tex:89",
+        "B151_DRAFT_QA_OLP-0495.json"
+      ],
+      "decision_timing": "contemporaneous B151 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    {
+      "id": "OLINT-002",
+      "unit_id": "OLP-0495",
+      "classification": "wrong_second_component_in_first_disjunction_injection",
+      "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+      "source_locator": "content/intuitionistic-logic/introduction/bhk-interpretation.tex:136",
+      "source_literal_line_1based": [
+        136
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "target_line_1based": 131,
+      "disclosure_line_1based": 134,
+      "target_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د h1 لومړۍ ورودي جوړونه په نښه لرونکې جوړه کښې د هماغې M1 په توګه راوړل شوه او څنګ‌ته څرګنده شوه.",
+      "reason": "د فصل د لومړۍ مادې له مخې د لومړۍ څانګې جوړونه بايد خپله ورکړل شوې M1 وي؛ د سرچينې tuple{1,M2} د h1 له ورودي سره نه سمون خوري.",
+      "formula_policy": "Only one exact math-span substitution for this action; all other formulas, identifiers, tags, term tokens and macros unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\tuple{1,M_2}$"
+        ],
+        "target_only": [
+          "$\\tuple{1,M_1}$"
+        ],
+        "scope": "one first-disjunction injection pair"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
+      "audit_artifacts": [
+        "B151_SOURCE_AUDIT.json",
+        "B151_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/introduction/bhk-interpretation.tex:136",
+        "ps-Arab-PK/content/intuitionistic-logic/introduction/bhk-interpretation.tex:131",
+        "B151_DRAFT_QA_OLP-0495.json"
+      ],
+      "decision_timing": "contemporaneous B151 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -12972,7 +13084,8 @@
     "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-SEQUENT-CALCULUS",
     "PS-OWNER-SEMANTIC-20260928-APPLIED-MODAL-TEMPORAL",
     "PS-OWNER-SEMANTIC-20260928-TEMPORAL-FRAMES-HISTORIES",
-    "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS"
+    "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FRAMES-ANNOUNCEMENTS",
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK"
   ],
   "source_authorities": [
     {

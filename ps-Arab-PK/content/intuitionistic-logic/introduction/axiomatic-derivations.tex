@@ -1,0 +1,70 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: axiomatic-derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{axd}
+
+\olsection{بديهي \usetoken{P}{derivation}}
+
+د شهودي قضييز منطق بديهي !!{derivation}s د تصور له پلوه تر ټولو ساده
+او په تاريخي لحاظ لومړني !!{derivation} نظامونه دي۔ د کلاسيک
+قضييز منطق په څېر کار کوي۔
+
+\begin{defn}[!!^{derivability}]
+که $\Gamma$ د $\Lang L$ د !!{formula}s يو سټ وي، نو له
+$\Gamma$ څخه \emph{!!{derivation}} د !!{formula}s يوه متناهي
+لړۍ $!A_1$، \dots،~$!A_n$ ده چې د هر $i \le n$ لپاره لاندې
+يو شرط پوره کېږي:
+\begin{enumerate}
+\item $!A_i \in \Gamma$ وي؛ يا
+\item $!A_i$ يو بديهي اصل وي؛ يا
+\item $!A_i$ د ځينو $!A_j$ او $!A_k$ څخه، چې $j < i$ او $k <
+  i$ وي، د مودوس پوننس له مخې راشي؛ يعنې $!A_k \ident !A_j \lif !A_i$۔
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[بديهي اصول]
+د شهودي قضييز منطق د \emph{بديهي اصولو} سټ~$\PAx$ د لاندې
+بڼو ټول !!{formula}s دي:
+\begin{align}
+  & (!A \land !B) \lif !A \ollabel{ax:land1}\\
+  & (!A \land !B) \lif !B \ollabel{ax:land2}\\
+  & !A \lif (!B \lif (!A \land !B)) \ollabel{ax:land3}\\
+  & !A \lif (!A \lor !B) \ollabel{ax:lor1}\\
+  & !A \lif (!B \lor !A) \ollabel{ax:lor2}\\
+  & (!A \lif !C) \lif ((!B \lif !C) \lif ((!A \lor !B) \lif !C)) \ollabel{ax:lor3}\\
+  & !A \lif (!B \lif !A) \ollabel{ax:lif1}\\
+  & (!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C)) \ollabel{ax:lif2}\\
+  & \lfalse \lif !A \ollabel{ax:lfalse1}
+\end{align}
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{formula}~$!A$ له $\Gamma$ څخه هله \emph{!!{derivable}}
+ګڼل کېږي، او دا په $\Gamma \Proves !A$ ليکو، چې له
+$\Gamma$ څخه داسې !!a{derivation} وي چې په $!A$ پاے ته رسېږي۔
+\end{defn}
+
+\begin{defn}[قضيې]
+!!^a{formula}~$!A$ هله \emph{قضيه} ده چې له تش سټ څخه د~$!A$
+!!a{derivation} وي۔ که $!A$ قضيه وي، $\Proves !A$ ليکو، او که
+نه وي، $\Proves/ !A$ ليکو۔
+\end{defn}
+
+\begin{prop}
+  که د شهودي منطق په بديهي !!{derivation} نظام کښې
+  $\Gamma \Proves !A$ وي، نو په کلاسيک منطق کښې هم
+  $\Gamma \Proves !A$ وي۔ په تېره بيا، که $!A$ شهودي قضيه وي،
+  نو کلاسيکه قضيه هم ده۔
+\end{prop}
+
+\begin{proof}
+  هر شهودي بديهي اصل هم کلاسيک بديهي اصل دے؛ نو په شهودي منطق کښې
+  هر !!{derivation} په کلاسيک منطق کښې هم !!a{derivation} دے۔
+\end{proof}
+
+\end{document}

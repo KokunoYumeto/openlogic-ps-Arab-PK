@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b152-intuitionistic-deduction-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0496",
+  "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+  "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+  "target_sha256": "4251bc6a8f0a14b3284415bf836b941e855e67bf2e2963198aa9f4bd51f47fae",
+  "source_blocks": 34,
+  "target_blocks": 34,
+  "math_spans": 158,
+  "source_correction_ids": [
+    "OLINT-003"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$!A_1\\land!A_1$"
+    ],
+    "target_only": [
+      "$!A_1\\land!A_2$"
+    ],
+    "scope": "the repeated first conjunct in BHK conjunction elimination"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_exception_exact": true,
+    "five_rule_schemes": true,
+    "four_proof_trees_exact": true,
+    "six_exercises": true,
+    "source_correction_disclosed": true,
+    "BHK_rule_meaning": true,
+    "classical_containment": true,
+    "no_untranslated_qualifier": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register OLINT-003, source audit and B152 cumulative QA before acceptance."
+}

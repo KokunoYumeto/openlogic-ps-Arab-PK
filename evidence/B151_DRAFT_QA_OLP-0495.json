@@ -1,0 +1,52 @@
+{
+  "schema": "ps-b151-bhk-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0495",
+  "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+  "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+  "target_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+  "source_blocks": 20,
+  "target_blocks": 20,
+  "math_spans": 194,
+  "source_correction_ids": [
+    "OLINT-001",
+    "OLINT-002"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$C$",
+      "$\\tuple{1,M_2}$"
+    ],
+    "target_only": [
+      "$!C$",
+      "$\\tuple{1,M_1}$"
+    ],
+    "scope": "one missing formula marker and one mismatched tagged-disjunction component"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_exception_exact": true,
+    "six_construction_clauses": true,
+    "five_examples": true,
+    "typed_implication": true,
+    "tagged_disjunction": true,
+    "no_false_construction": true,
+    "double_negation_intro": true,
+    "contradiction_projections": true,
+    "currying_witness": true,
+    "composition_direction": true,
+    "excluded_middle_scope": true,
+    "both_disclosures": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "OLINT-001/002 need source-treatment registry and B151 cumulative QA; BHK construction and excluded-middle labels are provisional."
+}

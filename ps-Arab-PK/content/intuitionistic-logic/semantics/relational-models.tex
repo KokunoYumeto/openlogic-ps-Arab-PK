@@ -1,0 +1,74 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{rel}
+
+\olsection{\usetoken{P}{relational model}}
+
+د شهودي قضييز منطق د دقيقې معنايي پوهنې لپاره بايد تعريف کړو چې
+کوم څيز داسې مدل ګڼل کېږي چې !!{formula}s د هغه له مخې وارزوو۔
+د دغه تعريف پر بنسټ بيا د اعتبار او استلزام په شان معنايي مفاهيم
+هم تعريفولے شو۔ يوه داسې معنايي پوهنه د !!{relational model}s له
+لارې ورکول کېږي۔
+
+\begin{defn}
+  د شهودي قضييز منطق !!^a{relational model} يوه درېګونې
+  $\mModel{M} = \tuple{W, R, V}$ ده، چې پکې
+  \begin{enumerate}
+  \item $W$ يو ناتش سټ دے،
+  \item $R$ پر~$W$ جزئي ترتيب دے (يعنې انعکاسي، ضد متقارن او
+    متعدي دوه‌ځاييزه اړيکه)، او
+  \item $V$ داسې تابع ده چې هر !!{propositional
+    variable}~$p$ ته د~$W$ يو فرعي سټ ټاکي،
+  \item $V$ د $R$ له مخې يورخيزه زياتېدونکې وي، يعنې که $w
+    \in V(p)$ او $Rww'$ وي، نو $w' \in V(p)$ وي۔
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}\ollabel{defn:true-at-w}
+  دا مفهوم چې $!A$ \emph{په $\mModel{M}$ کښې په $w$ رښتيا دے}،
+  چې په $\mSat{M}{!A}[w]$ ئې ليکو، په لاندې ډول په استقرايي توګه
+  تعريفوو:
+  \begin{enumerate}
+  \item \indcase{!A}{p}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې $w \in V(p)$ وي۔}
+  \item \indcase{!A}{\lfalse}{$\mSat{M}{\indfrm}[w]$ نۀ وي}۔
+  \item \indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    داسې هېڅ $w'$ نۀ وي چې $Rww'$ او $\mSat{M}{!B}[w']$ وي}۔
+  \item \indcase{!A}{!B \land !C}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ وي}۔
+  \item \indcase{!A}{!B \lor !C}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي (يا دواړه)}۔
+  \item \indcase{!A}{!B \lif !C}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    د هر داسې $w'$ لپاره چې $Rww'$ وي، يا $\mSat{M}{!B}[w']$
+    نۀ وي يا $\mSat{M}{!C}[w']$ وي} (يا دواړه)۔
+  \end{enumerate}
+  که $\mSat{M}{!A}[w]$ نۀ وي، $\mSat/{M}{!A}[w]$ ليکو۔ که
+  $\Gamma$ د !!{formula}s يو سټ وي، $\mSat{M}{\Gamma}[w]$ دا معنا
+  لري چې د هر $!B \in \Gamma$ لپاره $\mSat{M}{!B}[w]$ وي۔
+\end{defn}
+
+\begin{prob}
+  وښيئ چې د \olref[int][sem][rel]{defn:true-at-w} له مخې
+  $\mSat{M}{\lnot !A}[w]$ هله او يوازې هله چې
+  $\mSat{M}{!A \lif \lfalse}[w]$ وي۔
+\end{prob}
+
+\begin{prop}\ollabel{prop:true-monotonic}
+  په نړۍو کښې رښتياوالے د~$R$ له مخې يورخيزه زياتېږي، يعنې که
+  $\mSat{M}{!A}[w]$ او $Rww'$ وي، نو $\mSat{M}{!A}[w']$ وي۔
+\end{prop}
+
+\begin{proof}
+  تمرين۔
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][rel]{prop:true-monotonic} ثابت کړئ۔
+\end{prob}
+
+\end{document}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 490,
-    "structural_pass": 490,
+    "draft_units": 495,
+    "structural_pass": 495,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B150-EPISTEMIC-FRAMES-BISIMULATION",
+  "batch": "PS-B151-INTUITIONISTIC-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16009,6 +16009,161 @@
         "OLAML-004"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0491",
+      "path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+      "source_sha256": "d4274226f1459dcd2a6029d4b8962f922c7ccaa0d3cb4ee090b2e442e40425c9",
+      "translation_sha256": "c0696a5e391d7703e9ee8a7930b903f08f8802ec6d36af56bd81c051cee7c7d9",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0492",
+      "path": "content/intuitionistic-logic/introduction/introduction.tex",
+      "source_sha256": "02462706d5ec30350164ff6ab0d5a17154435698739696ef05e564285efb6a1d",
+      "translation_sha256": "5a5a814958af972b6bceedd09e0516647f2d8851299bd3f8cfa1076ae95767b9",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0493",
+      "path": "content/intuitionistic-logic/introduction/constructive-reasoning.tex",
+      "source_sha256": "0e2e1481d7a5d642bbb24f9a77b1521b56c1aa7d17842dd6b8c9e21cdb6d9ad1",
+      "translation_sha256": "b8ecfc3fc857a6ea94f083cd48b14a01b4c86e4c968847f4c7ea552ee1be605e",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0494",
+      "path": "content/intuitionistic-logic/introduction/syntax.tex",
+      "source_sha256": "ae3a1b269130b8527b095f31c2eb1ee75bb562ba9a69105052d56a0588b67186",
+      "translation_sha256": "9995aaf0dbebdd8e60ef71c5f76cb6bedbb23cd610d66769741da073ef8cb25f",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0495",
+      "path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+      "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+      "translation_sha256": "912a70aaf77dbcf2a038112c899607e3dd007a0570123f11bf9eec1915df5564",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "BHK",
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "BHK",
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-001",
+        "OLINT-002"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$C$",
+          "$\\tuple{1,M_2}$"
+        ],
+        "target_only": [
+          "$!C$",
+          "$\\tuple{1,M_1}$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -23979,6 +24134,132 @@
       "passage": "self-refutation",
       "reverse_paraphrase": "The announcement p and not Knows_b p becomes false after the update.",
       "finding": "د اعلان وروسته نارښتيا کېدل ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0491",
+      "passage": "title",
+      "reverse_paraphrase": "The part is Intuitionistic Logic.",
+      "finding": "شهودي منطق سرليک دے."
+    },
+    {
+      "unit_id": "OLP-0491",
+      "passage": "imports",
+      "reverse_paraphrase": "The part imports introduction, semantics, soundness/completeness and tableaux.",
+      "finding": "څلور واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0492",
+      "passage": "title",
+      "reverse_paraphrase": "The chapter introduces intuitionistic logic.",
+      "finding": "سريزه عنوان دے."
+    },
+    {
+      "unit_id": "OLP-0492",
+      "passage": "imports",
+      "reverse_paraphrase": "Five introduction subsections are imported.",
+      "finding": "پنځه واردات عين دي."
+    },
+    {
+      "unit_id": "OLP-0493",
+      "passage": "parity",
+      "reverse_paraphrase": "An implicitly defined n is even if the Riemann hypothesis holds and odd otherwise.",
+      "finding": "د جوړ/طاق شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0493",
+      "passage": "explicit",
+      "reverse_paraphrase": "Classical uniqueness does not supply an explicit n.",
+      "finding": "د ځانګړي او ښکاره عدد توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0493",
+      "passage": "case split",
+      "reverse_paraphrase": "The first irrational-power proof cannot identify which case holds.",
+      "finding": "لومړے ثبوت ناتعميري دے."
+    },
+    {
+      "unit_id": "OLP-0493",
+      "passage": "witness",
+      "reverse_paraphrase": "The second proof supplies sqrt(3) and log base 3 of 4.",
+      "finding": "دويم ثبوت ښکاره شاهد ورکوي."
+    },
+    {
+      "unit_id": "OLP-0493",
+      "passage": "philosophy",
+      "reverse_paraphrase": "Brouwer and Bishop motivate but do not replace the formal calculus.",
+      "finding": "فلسفي او رسمي اړخونه جلا دي."
+    },
+    {
+      "unit_id": "OLP-0494",
+      "passage": "same syntax",
+      "reverse_paraphrase": "Propositional intuitionistic syntax uses the same forms as propositional logic.",
+      "finding": "د نحو يو شان والی عين دے."
+    },
+    {
+      "unit_id": "OLP-0494",
+      "passage": "nondefinability",
+      "reverse_paraphrase": "Classical interdefinitions of connectives generally fail intuitionistically.",
+      "finding": "د نورو تعريفونو نه‌چلېدل څرګند دي."
+    },
+    {
+      "unit_id": "OLP-0494",
+      "passage": "negation",
+      "reverse_paraphrase": "Negation abbreviates implication to primitive falsity.",
+      "finding": "نفي او لومړنی کذب جلا دي."
+    },
+    {
+      "unit_id": "OLP-0494",
+      "passage": "biconditional",
+      "reverse_paraphrase": "Iff abbreviates a conjunction of both directions.",
+      "finding": "د دواړو شرطيانو عطف عين دے."
+    },
+    {
+      "unit_id": "OLP-0494",
+      "passage": "closure",
+      "reverse_paraphrase": "The five formation clauses and nothing-else clause are retained.",
+      "finding": "د نه‌ورزياتېدو ماده ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "distinction",
+      "reverse_paraphrase": "Informal construction is distinguished from formal derivation.",
+      "finding": "جوړونه او اشتقاق بېل دي."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "conjunction",
+      "reverse_paraphrase": "Conjunction constructions are pairs.",
+      "finding": "د عطف جوړه عين ده."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "disjunction",
+      "reverse_paraphrase": "Disjunction constructions are tagged pairs.",
+      "finding": "د فصل نښه لرونکې جوړه عين ده."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "implication",
+      "reverse_paraphrase": "Implication constructions map constructions of A to B; false has none.",
+      "finding": "تابع او کذب شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "double negation",
+      "reverse_paraphrase": "A construction of A maps h to h(M), proving A implies not-not-A.",
+      "finding": "د h(M) جوړونه عين ده."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "currying",
+      "reverse_paraphrase": "The currying output has !C; source bare C is disclosed.",
+      "finding": "OLINT-001 محدود سمون دے."
+    },
+    {
+      "unit_id": "OLP-0495",
+      "passage": "excluded middle",
+      "reverse_paraphrase": "General A or not A is unavailable but its double negation has a construction; h1 receives M1.",
+      "finding": "OLINT-002 او د نفي نفي توپير ساتل شوي."
     }
   ],
   "builds": [
