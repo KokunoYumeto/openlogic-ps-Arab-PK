@@ -1,0 +1,82 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{pal}
+
+\olsection{د عام اعلان منطق}
+
+خوځنده معرفتي منطقونه موږ ته دا ښودلے شي چې د عاملانو پوهه د وخت
+په تېرېدو يا د نويو معلوماتو په ترلاسه کولو سره څنګه بدلېږي۔ ډېر
+داسې منطقونه د پوهې بدلون د معلوماتي \emph{پېښو} يا
+\emph{تازه‌کونو} په وسيله ښيي۔ د تازه‌کونې تر ټولو بنسټيز ډول
+عام اعلان دے چې پکښې يو فارمول په رښتيا اعلانېږي او ټول عاملان
+په ګډه د اعلان شاهدان وي۔ د دې دپاره ژبه داسې پراخوو:
+
+\begin{defn}
+فرض کړئ $G$ د عاملانو د نښو يو سټ وي۔ د عامو اعلانونو په ګډون
+د څو-عامله معرفتي منطق بنسټيزه ژبه دا توکي لري:
+\begin{enumerate}
+  \tagitem{prvFalse}{د !!{falsity} قضيوي ثابت~$\lfalse$۔}{}
+  \tagitem{prvTrue}{د !!{truth} قضيوي ثابت~$\ltrue$۔}{}
+  \item د !!{propositional variable}s يو !!{denumerable}s سټ: $\Obj
+    p_0$، $\Obj p_1$، $\Obj p_2$، \dots
+  \item قضيوي نښلوونکي: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \item د پوهې عامل $\Knows_a$، چې $a \in G$ وي۔
+  \item د عام اعلان عامل $[!B]$، چې $!B$ يو !!a{formula} وي۔
+\end{enumerate}
+\end{defn}
+
+د عام اعلان عامل د بکس عامل په شان کار کوي؛ ځکه د ژبې استقرايي
+تعريف هم په همدې ډول ورکوو:
+
+\begin{defn}
+  د معرفتي ژبې \emph{!!^{formula}s} په استقرايي ډول داسې
+  تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+  \tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+  \item هر قضيوي متحول $\Obj p_i$ يو اټومي
+  !!{formula} دے۔
+
+  \tagitem{prvNot}{که $!A$ يو !!a{formula} وي، نو $\lnot !A$ هم
+  يو !!a{formula} دے۔}{}
+
+  \tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔}{}
+
+  \tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔}{}
+
+  \tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔}{}
+
+  \tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  يو !!a{formula} دے۔}{}
+
+  \item که $!A$ يو !!a{formula} وي او $a \in G$ وي، نو $\Knows_a !A$
+  يو !!a{formula} دے۔
+  
+  \item که $!A$ او $!B$ !!{formula}s وي، نو $[!A] !B$ يو !!a{formula} دے۔
+
+  \tagitem{limitClause}{بل هېڅ شے !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+د !!{formula}~$[!A] !B$ موخه شوې معنا دا ده: «وروسته له دې چې
+$!A$ په رښتيا اعلان شي، $!B$ رښتيا وي»۔ کله کله د عامو اعلانونو
+په بحث کښې د مشترکې پوهې يادونه هم ګټوره وي؛ نو ژبه ښايي د مشترکې
+پوهې عامل~$\CKnows_G
+!A$ هم ولري۔
+
+\end{document}

@@ -1,0 +1,31 @@
+{
+  "schema": "ps-b150-public-announcement-semantics-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0490",
+  "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex",
+  "source_sha256": "b5e8c2ba742dc473a01dbc6f3908250b2afc6deb12f338019ac9482cfea361cd",
+  "target_sha256": "d2b9b99459f1f4fb82f9d73ae1559b311c31565301664d234803401f0787d333",
+  "source_blocks": 20,
+  "target_blocks": 20,
+  "math_spans": 86,
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_exact": true,
+    "single_localized_figure_label": true,
+    "restricted_model": true,
+    "conditional_update_and_vacuity": true,
+    "self_refuting_announcement": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "no_english_section_prose": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "The figure text is localized in Pashto; geometry, edges, world and agent labels, and all formulas are exact. Record one scoped TikZ text exception at registration."
+}

@@ -1,0 +1,113 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{trw}
+
+\olsection{په يوه نړۍ کښې رښتياوالی}
+
+لکه د نورمال مودالي منطق په شان، هر معرفتي مدل ټاکي چې کوم !!{formula}s
+ئې په کومو نړۍو کښې رښتيا ګڼل کېږي۔ د اړيکيزې معنٰی پوهنې د بنسټيز
+مفهوم لپاره هماغه نښه کاروو: «مدل~$\mModel{M}$ په نړۍ~$w$ کښې
+!!{formula}~$!A$ رښتيا کوي»۔ دا اړيکه په استقرايي ډول تعريفېږي، او د
+ټولو غيرمودالي عاملونو لپاره ئې تعريف د نورمال مودالي حالت په شان عين دے۔
+
+\begin{defn}\ollabel{defn:mmodels}
+  په~$\mModel M$ کښې \emph{په~$w$ د !!a{formula}~$!A$ رښتياوالی}،
+  چې په نښو کښې ئې $\mSat{M}{!A}[w]$ ليکو، په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{هېڅکله $\mSat{M}{\lfalse}[w]$ نۀ وي}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{تل $\mSat{M}{\ltrue}[w]$ وي}.}{}
+  \item $\mSat{M}{p}[w]$ هله او يوازې هله چې $w \in V(p)$ وي۔
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ وي}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ دواړه وي}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي} (يا دواړه)۔}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    يا دواړه $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ وي، يا
+    نۀ $\mSat{M}{!B}[w]$ وي او نۀ $\mSat{M}{!C}[w]$ وي}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    د هر هغه $w' \in W$ لپاره $\mSat{M}{!B}[w']$ وي چې $R_a ww'$ وي}
+  \end{enumerate}
+\end{defn}
+
+خو دلته د لاسرسي پر اړيکو د قيدونو په اړه فکر کول پکار دي۔ د
+\olref{defn:sub:mmodels-box} د مادې له مخې، که هېڅ داسې~$w'$
+نۀ وي چې $R_a ww'$ وي، نو !!a{formula}~$\Knows_a !B$ په~$w$
+کښې رښتيا دے۔ دا د نورمال مودالي منطق هماغه ماده ده: که يوه نړۍ
+جانشينې نړۍ ونۀ لري، نو ټول $\Box$-فارمولونه پکښې په تش ډول رښتيا
+وي۔ که $\Knows$ د \emph{پوهې} د ښودلو عامل وګڼو، دا ډېره ناعادي
+پايله ښکاري۔ ځکه موږ عموماً فکر کوو چې داسې \emph{هېڅ} حالت نشته
+چې يو عامل په يوه وخت کښې هم $!A$ او هم $\lnot !A$ وپېژني۔
+
+يوه لاره دا ده چې په معرفتي منطق کښې د لاسرسي اړيکه تل
+\emph{انعکاسي} وټاکو۔ دا په نژدې معنا له دې نظر سره سمون لري چې
+واقعي نړۍ د عامل له معلوماتو سره سازګاره ده۔ په حقيقت کښې معرفتي
+منطقونه عموماً S5 کاروي، خو نور يې ښايي کمزوري نظامونه وکاروي،
+چې دا د $\Knows_a$ د اړيکې له مطلوب تفسير سره تړاو لري۔
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$}; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$}; 
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[<->] (w1) to node {$a$} (w2);
+      \draw[->,loop left] (w1) to node {$a,b$} (w1);
+      \draw[<->] (w1) to [swap] node {$b$} (w3);
+      \draw[->,loop above] (w2) to node {$a,b$} (w2) ;
+      \draw[->,loop below] (w3) to node {$a,b$} (w3) ;
+    \end{tikzpicture}
+  \end{center}
+  \caption{يو ساده معرفتي مدل۔}
+  \ollabel{fig:simple}
+\end{figure}
+
+\begin{prob}
+  په \olref[aml][el][trw]{fig:simple} کښې وګورئ چې له لاندې کومې
+  دعوې سمې دي:
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_a \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b q \lor \Knows_b \lnot q}[w_2]$;
+    \item $\mSat{M}{\Knows_a( \Knows_b q \lor \Knows_b \lnot q)}[w_2]$;
+    \item $\mSat{M}{\EKnows_{\{a,b\}} \lnot q}[w_3]$;
+    \end{enumerate}
+\end{prob}
+
+اوس چې په يوه نړۍ کښې مو د رښتياوالي بنسټيز تعريف ورکړ، د نورمال
+مودالي منطق نور معنايي مفاهيم، لکه مودالي اعتبار او لازم راتلل، هم
+دغه نوي تفسير ته د مودالي عاملونو په پلي کولو سره راځي۔
+
+اوس د مشترکې پوهې د عامل~$\CKnows_G$ لپاره هم د صدق شرطونه ټاکلے
+شو۔ د \olref[sfr][rel][ops]{sec} له مخې ياد کړئ چې د اړيکې~$R$
+\emph{انتقالي تړون}~$R^+$ داسې تعريفېږي:
+\begin{align*}
+  R^+ &= \bigcup_{ n \in \mathbb{N}} R^n, 
+\intertext{چې}
+  R^0 & = R \text{ او}\\ 
+  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}.
+\end{align*}
+بيا، که $G$ د عاملانو يوه ډله وي، نو $R_G = ( \bigcup_{b
+\in G} R_b )^+$ د ټولو عاملانو د لاسرسي اړيکو د اتحاد انتقالي
+تړون تعريفوو۔
+
+\begin{defn}
+که $G' \subseteq G$ وي، نو $\mSat{M}{\CKnows_{G'} !A}[ w]$
+هله او يوازې هله وي چې د هر هغه $w'$ لپاره چې $R_{G'} w w'$
+وي، $\mSat{M}{!A}[w']$ وي۔
+\end{defn}
+
+\end{document}

@@ -1,0 +1,86 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{lan}
+
+\olsection{د معرفتي منطق ژبه}
+
+\begin{defn}
+فرض کړئ $G$ د عاملانو د نښو يو سټ وي۔ د څو-عامله معرفتي منطق
+بنسټيزه ژبه دا توکي لري:
+\begin{enumerate}
+  \tagitem{prvFalse}{د !!{falsity} قضيوي ثابت~$\lfalse$۔}{}
+  \tagitem{prvTrue}{د !!{truth} قضيوي ثابت~$\ltrue$۔}{}
+  \item د !!{propositional variable}s يو !!{denumerable}s سټ: $\Obj
+    p_0$، $\Obj p_1$، $\Obj p_2$، \dots
+  \item قضيوي نښلوونکي: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (نفي)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (عطف)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (فصل)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}.
+  \item د پوهې عامل $\Knows_a$، چې $a \in G$ وي۔
+\end{enumerate}
+\end{defn}
+
+که په خپل نظام کښې يوازې د يوه عامل پوهه څېړو، د سټ~$G$ او د
+جلا جلا عاملانو يادونه پرېښودلے شو۔ په دې حالت کښې يوازې بنسټيز
+عامل~$\Knows$ لرو۔
+
+\begin{defn}
+د معرفتي ژبې \emph{!!^{formula}s} په استقرايي ډول داسې
+  تعريفېږي:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ يو اټومي !!{formula} دے۔}{}
+
+\tagitem{prvTrue}{$\ltrue$ يو اټومي !!{formula} دے۔}{}
+
+\item هر قضيوي متحول~$\Obj p_i$ يو اټومي !!{formula} دے۔
+
+\tagitem{prvNot}{که $!A$ يو !!a{formula} وي، نو $\lnot !A$ هم
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvAnd}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \land
+  !B)$ يو !!a{formula} دے۔}{}
+
+\tagitem{prvOr}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lor !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIf}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \lif !B)$
+  يو !!a{formula} دے۔}{}
+
+\tagitem{prvIff}{که $!A$ او $!B$ !!{formula}s وي، نو $(!A \liff !B)$
+  يو !!a{formula} دے۔}{}
+
+\item که $!A$ يو !!a{formula} وي او $a \in G$ وي، نو $\Knows_a !A$
+  هم يو !!a{formula} دے۔
+
+\tagitem{limitClause}{بل هېڅ شے !!a{formula} نۀ دے۔}{}
+\end{enumerate}
+\end{defn}
+
+که !!a{formula}~$!A$ کښې $\Knows_a$ نۀ وي، هغه
+\emph{له موداليت پرته} بولو۔
+
+\begin{defn}
+  د $\Knows$ عامل د يوه کس د پوهې د ښودلو لپاره دے؛ $\EKnows$،
+  چې ډېر ځله «هر څوک پوهېږي» لوستل کېږي، د ډلې د هر غړي پوهه ښيي۔
+  که $G' \subseteq G$ وي، نو $\EKnows_{G'} !A$ د
+  \[\bigwedge_{b \in G'} \Knows_b !A.\] لنډه نښه تعريفوو۔
+\end{defn}
+
+د عاملانو د ډلې~$G$ په منځ کښې د پوهې يوه لا پياوړې معنا هم
+تعريفولے شو، يعنې \emph{مشترکه پوهه}۔ که د معلوماتو يوه برخه د
+ډلې مشترکه پوهه وي، نو د ډلې د عاملانو په هر ممکن ترکيب کښې هر يو
+پوهېږي چې نور پوهېږي، او پوهېږي چې نور پوهېږي چې نور پوهېږي،
+\dots بې‌پايه۔ دا د ډلې د هر غړي تر پوهې ډېره پياوړې ده۔ داسې
+اړيکيز مدلونه جوړول اسانه دي چې پکښې يو !!a{formula} د ډلې د هر
+غړي پوهه وي، خو مشترکه پوهه نۀ وي۔ $\CKnows_G !A$ به د دې
+ښودلو لپاره کاروو چې «په~$G$ کښې دا مشترکه پوهه ده چې~$!A$»۔
+
+\end{document}

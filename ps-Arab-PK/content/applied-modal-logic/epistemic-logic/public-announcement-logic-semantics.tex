@@ -1,0 +1,122 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: public-announcement-logic-semantics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{psm}
+
+\olsection{د عام اعلان د منطق معنٰی پوهنه}
+
+د عام اعلان د منطق اړيکيز مدلونه د معرفتي منطق د مدلونو په شان
+دي۔ خو د عام اعلان د عامل معنٰی پوهنه نوې ده۔
+
+\begin{defn}\ollabel{defn:mmodels} په~$\mModel M = \tuple{W, R, V}$
+  کښې \emph{په~$w$ د !!a{formula}~$!A$ رښتياوالی}، چې په نښو
+  کښې ئې $\mSat{M}{!A}[w]$ ليکو، په استقرايي ډول داسې تعريفېږي:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{هېڅکله $\mSat{M}{\lfalse}[w]$ نۀ وي}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{تل $\mSat{M}{\ltrue}[w]$ وي}.}{}
+  \item $\mSat{M}{p}[w]$ هله او يوازې هله چې $w \in V(p)$ وي۔
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ وي}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ دواړه وي}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي} (يا دواړه)۔}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat/{M}{!B}[w]$ يا $\mSat{M}{!C}[w]$ وي}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    يا دواړه $\mSat{M}{!B}[w]$ او $\mSat{M}{!C}[w]$ وي، يا
+    نۀ $\mSat{M}{!B}[w]$ وي او نۀ $\mSat{M}{!C}[w]$ وي}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    د هر هغه $w' \in W$ لپاره $\mSat{M}{!B}[w']$ وي چې $R_a ww'$ وي}
+  \item\ollabel{defn:sub:mmodels-pal}
+    \indcase{!A}{[!B] !C}{$\mSat{M}{\indfrm}[w]$ هله او يوازې هله چې
+    $\mSat{M}{!B}[w]$ له مخې $\mSat{M \mid !B}{!C}[w]$ لازم راځي}
+
+  
+  دلته $\mModel M \mid !B = \tuple{W', R', V'}$ داسې تعريفېږي:
+  \begin{enumerate}
+    \item $W' = \Setabs{ u \in W}{\mSat{M}{!B}[u]}$۔ نو د
+      $\mModel M \mid !B$ نړۍوې د~$\mModel M$ هغه نړۍوې دي چې
+      $!B$ پکښې رښتيا وي۔
+    \item $R'_a = R_a \cap (W' \times W')$۔ د هر عامل د لاسرسي
+      اړيکه يوازې هغو نړۍو ته محدودېږي چې په~$W'$ کښې پاتې وي۔
+    \item $V'(p) = \Setabs{ u \in W'}{u \in V(p) }$۔ په ورته ډول،
+      په نړۍو کښې قضيوي ارزښت ټاکنې هماغسې پاتې کېږي۔ دا هغه
+      نظر ښيي چې معلوماتي پېښې د قضيوي متحولونو د رښتياوالي
+      قيمت نۀ بدلوي۔
+  \end{enumerate}
+  
+  \end{enumerate}
+\end{defn}
+
+نو د عام اعلان د منطق ځانګړتيا دا ده چې په~$\mModel M$ کښې د
+!!a{formula} رښتياوالی کله کله يوازې له~$\mModel M$ څخه په بل
+مدل ته په رجوع کولو پرېکړه کېدے شي۔
+
+دا هم وګورئ چې زموږ معنٰی پوهنه د اعلان عامل د $\Box$ عامل په
+څېر نيسي۔ نو که !!a{formula}~$!A$ په يوه نړۍ کښې په رښتيا اعلان
+نۀ شي کېدے، $[!A]B$ هلته په تش ډول رښتيا دے؛ لکه په پاي‌ټکو کښې
+چې ټول $\Box$ !!{formula}s رښتيا وي۔
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below left:$p, \lnot q$}]{$w_1$}; 
+      \node[world] (w2) [left=of w1, label={left:$\lnot p, \lnot q$}]{$w_2$}; 
+      \node[world] (w3) [above=of w1, label={right:$p, q$}] {$w_3$};
+      \draw[<->] (w1) to [swap] node {$b$} (w2);
+      \draw[->,loop below] (w1) to node {$a, b$} (w1);
+      \draw[<->] (w1) to [swap] node {$a$} (w3);
+      \draw[->,loop above] (w2) to node {$a, b$} (w2) ;
+      \draw[->,loop above] (w3) to node {$a, b$} (w3) ;
+      
+      \node[world](v1)[right of=w1, xshift=1.25in, label={right:$p, \lnot q$}]{$w'_1$};
+      \node[world](v3)[above of=v1,label={right:$p,q$}]{$w'_3$};
+      \draw[<->] (v1) to node {$a$} (v3);
+      \draw[->,loop below] (v1) to node {$a,b$} (v1);
+      \draw[->,loop above] (v3) to node {$a,b$} (v3) ;
+      
+      \node(m)[below=of w1]{$\mModel M$};
+      \node(m')[below=of v1]{$\mModel M \mid p$}; 
+
+      \draw[-,dotted] (w1) to node {\footnotesize د~$p$ اعلان}(v1) ;
+     
+    \end{tikzpicture}
+  \end{center}
+  \caption{د~$p$ له عام اعلان څخه مخکې او وروسته۔}
+  \ollabel{fig:announcement-example}
+\end{figure}
+
+د !!a{formula} عام اعلان داسې ليدلے شو چې مدل کوچنے کوي، يا يې
+يوازې هغو نړۍو ته محدودوي چې !!{formula} پکښې رښتيا و۔
+\olref{fig:announcement-example} د~$p$ د عام اعلان د اغېز بېلګه
+ښيي۔ د دغه مدل يوه د پام وړ خبره دا ده چې عامل~$b$ د اعلان په
+پايله کښې د~$p$ په رښتياوالي پوهېږي، خو عامل~$a$ يې نوې پوهه
+نۀ ترلاسه کوي؛ ځکه $a$ له مخکې پوهېدۀ چې~$p$ رښتيا و۔
+
+په رسمي ډول، $\mSat{M}{\lnot \Knows_b p}[w_1]$ لرو، خو $\mSat{M
+\mid p}{\Knows_b p}[w'_1]$ هم لرو۔ له دې څخه $\mSat{M}{[p] \Knows_b
+p}[w_1]$ لازمېږي۔ خو د اعلان د پايلې په اړه تر دې پياوړې دعوې
+هم کولے شو۔ په حقيقت کښې $\mSat{M}{[p]\CKnows_{\{a,b\}} p}[w_1]$
+هم دے۔ په بله وينا، د~$p$ له اعلان وروسته دا خبره
+\emph{مشترکه پوهه} کېږي۔
+
+خو ښايي وپوښتو چې آيا دا په عمومي حالت کښې هم رښتيا دي، او آيا
+د~$!A$ رښتينے اعلان به \emph{تل} $!A$ په مشترکه پوهه بدلوي؟
+ځواب نفي دے، که څۀ هم ښايي حيرانوونکے وي۔ ان داسې !!{formula}s
+په رښتيا اعلانېدل ممکن دي چې تر اعلان وروسته نور رښتيا نۀ وي۔
+د بېلګې په توګه، په \olref{fig:announcement-example} کښې په~$w_1$
+د $p \land \lnot \Knows_b p$ د اعلان اغېز وګورئ۔ په حقيقت کښې
+$\mModel M \mid p$ او $\mModel M \mid (p \land \lnot \Knows_b p)$
+يو مدل دي۔ خو لکه مخکې مو وليدل، $\mSat{M \mid p}{\Knows_b
+p}[w'_1]$ دے۔ نو $\mSat{M \mid (p \land \lnot \Knows_b p)}{\lnot
+(p \land \lnot \Knows_b p)}[w'_1]$ دے۔ په دې توګه دا داسې
+!!a{formula} دے چې له اعلان وروسته نارښتيا کېږي۔
+
+\end{document}

@@ -1,0 +1,45 @@
+{
+  "schema": "ps-b150-bisimulation-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0488",
+  "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+  "source_sha256": "3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d",
+  "target_sha256": "b6cc9555bda4ce5377f5cbf342738bb9dc511de194d2223a50b3ab890fc03192",
+  "source_blocks": 17,
+  "target_blocks": 17,
+  "math_spans": 52,
+  "source_correction_ids": [
+    "OLAML-003"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$a\\inA$",
+      "$a\\inA$"
+    ],
+    "target_only": [
+      "$a\\inG$",
+      "$a\\inG$"
+    ],
+    "scope": "two agent quantifiers in bisimulation forth/back clauses"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_exception_exact": true,
+    "diagram_exact": true,
+    "three_bisimulation_clauses": true,
+    "forth_back_distinct": true,
+    "undefined_A_disclosed": true,
+    "theorem_preserved": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "OLAML-003 needs source-correction registry and B150 cumulative QA; exact Pakistani bisimulation term unattested."
+}

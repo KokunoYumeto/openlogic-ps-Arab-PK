@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 481,
-    "structural_pass": 481,
+    "draft_units": 486,
+    "structural_pass": 486,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B148-TEMPORAL-FRAME-PROPERTIES",
+  "batch": "PS-B149-EPISTEMIC-LOGIC",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -15718,6 +15718,164 @@
         "OLAML-002"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0482",
+      "path": "content/applied-modal-logic/epistemic-logic/epistemic-logic.tex",
+      "source_sha256": "12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834",
+      "translation_sha256": "f68418a4e297ce37cdd69f95e24ebef9ba36a2e6edce2007aee266d05c1dc052",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Aldo",
+        "Antonelli",
+        "Audrey",
+        "Yap"
+      ],
+      "allowed_residual_english": [
+        "Aldo",
+        "Antonelli",
+        "Audrey",
+        "Yap"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0483",
+      "path": "content/applied-modal-logic/epistemic-logic/introduction.tex",
+      "source_sha256": "b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9",
+      "translation_sha256": "9112c3b0199cf6886e260baed81052589a77853af6522776d8b4551fee532829",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Belief",
+        "Hintikka",
+        "Jaako",
+        "Knowledge",
+        "and"
+      ],
+      "allowed_residual_english": [
+        "Belief",
+        "Hintikka",
+        "Jaako",
+        "Knowledge",
+        "and"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0484",
+      "path": "content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex",
+      "source_sha256": "a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455",
+      "translation_sha256": "ae7997aadac39c92bc745462dfb57eceee92d7fa67390b927cb2cdc876b67b97",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0485",
+      "path": "content/applied-modal-logic/epistemic-logic/relational-models.tex",
+      "source_sha256": "2c35ea27376dd725cd7695eb76a679a8d9187c17a3091dc7db972886374daf21",
+      "translation_sha256": "97160c0c9ed1f13f9f739c36dc310d9505613916b6de71986b38c56396d78a98",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0486",
+      "path": "content/applied-modal-logic/epistemic-logic/truth-at-w.tex",
+      "source_sha256": "d1a57861965ea7a83ae4e6a37a6fcb19f5fce14c1a16336f551f6a0101060abc",
+      "translation_sha256": "944897ce5ce783e846deadc668f02cdf5f09ab711633d9ce352df1d941ae5e3a",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -23460,6 +23618,126 @@
       "passage": "tense conflict",
       "reverse_paraphrase": "The source prose uses past tense, but its formula and explanation use alternative future possibility.",
       "finding": "OLAML-002 راتلونکے امکان او د سرچينې تېر مهال توپير څنګ ته څرګندوي."
+    },
+    {
+      "unit_id": "OLP-0482",
+      "passage": "title",
+      "reverse_paraphrase": "The chapter is Epistemic Logics.",
+      "finding": "معرفتي منطقونه سرليک دے."
+    },
+    {
+      "unit_id": "OLP-0482",
+      "passage": "editorial",
+      "reverse_paraphrase": "Antonelli notes were rewritten by Yap to add bisimulation and dynamic epistemic logic.",
+      "finding": "د دواړو ونډې او د ورزياتو موادو ډول ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0483",
+      "passage": "modal contrast",
+      "reverse_paraphrase": "Epistemic operators model knowledge or belief rather than generic necessity or possibility.",
+      "finding": "معرفتي تفسير د عام مودالي تفسير څخه جلا دے."
+    },
+    {
+      "unit_id": "OLP-0483",
+      "passage": "examples",
+      "reverse_paraphrase": "Four examples involve Richard, Audrey, Tuesday classes and a twelve-month year.",
+      "finding": "څلور بېلګې او عاملان ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0483",
+      "passage": "source citation",
+      "reverse_paraphrase": "The source cites Jaako Hintikka and the 1962 Knowledge and Belief book.",
+      "finding": "د سرچينې ليکدود او کتاب پېژندنه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0483",
+      "passage": "agents",
+      "reverse_paraphrase": "Multi-agent logic represents relations between what different agents know.",
+      "finding": "د يو او څو عاملانو توپير څرګند دے."
+    },
+    {
+      "unit_id": "OLP-0484",
+      "passage": "agent set",
+      "reverse_paraphrase": "G is a set of agent symbols and Knows_a is indexed by a in G.",
+      "finding": "د عامل نمايه او G شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0484",
+      "passage": "single agent",
+      "reverse_paraphrase": "The unindexed Knows operator is used for a single agent.",
+      "finding": "د يو عامل بې‌نمايې عامل جلا دے."
+    },
+    {
+      "unit_id": "OLP-0484",
+      "passage": "formula closure",
+      "reverse_paraphrase": "The inductive language includes no formulas beyond the listed clauses.",
+      "finding": "د نه‌ورزياتېدو ماده ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0484",
+      "passage": "everybody",
+      "reverse_paraphrase": "EKnows abbreviates conjunction over agents in G prime.",
+      "finding": "د هر غړي د پوهې عطف عين دے."
+    },
+    {
+      "unit_id": "OLP-0484",
+      "passage": "common",
+      "reverse_paraphrase": "Common knowledge iterates knowledge to arbitrary depth and is stronger than group knowledge.",
+      "finding": "د تکرار او پياوړتيا توپير ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0485",
+      "passage": "index",
+      "reverse_paraphrase": "There is one accessibility relation R_a for each agent a in G.",
+      "finding": "د هر عامل جلا اړيکه عين ده."
+    },
+    {
+      "unit_id": "OLP-0485",
+      "passage": "valuation",
+      "reverse_paraphrase": "V maps each proposition variable to worlds where it is true.",
+      "finding": "د V د ټاکنې لور ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0485",
+      "passage": "information",
+      "reverse_paraphrase": "Accessible worlds are consistent with an agent’s information and indistinguishable at w.",
+      "finding": "سازګارتيا او نه‌توپير جلا څرګند دي."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "truth clauses",
+      "reverse_paraphrase": "Non-modal truth clauses match normal modal logic; Knows_a quantifies over all R_a successors.",
+      "finding": "د فردي پوهې هر-جانشين شرط عين دے."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "vacuity",
+      "reverse_paraphrase": "Without successors Knows formulas are vacuously true.",
+      "finding": "د تش صدق ستونزه ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "reflexivity",
+      "reverse_paraphrase": "Reflexivity makes the actual world consistent with the agent’s information.",
+      "finding": "د انعکاسيت معنا عين ده."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "diagram",
+      "reverse_paraphrase": "The two-agent diagram and six problem formulas are structurally exact.",
+      "finding": "غشي، نښې او شپږ فورمولونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "closure",
+      "reverse_paraphrase": "The source defines R+ using R0=R and builds R_G from the union of indexed relations.",
+      "finding": "د سرچينې ځانګړې نمايه او اتحاد عين دي."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "passage": "common truth",
+      "reverse_paraphrase": "CKnows_{G prime} A holds at all worlds reachable by R_{G prime}.",
+      "finding": "د مشترکې پوهې د هر لاسرسي نړۍ شرط ساتل شوے."
     }
   ],
   "builds": [

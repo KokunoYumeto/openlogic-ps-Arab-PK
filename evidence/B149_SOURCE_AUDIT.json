@@ -1,0 +1,132 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T18:42:51.468786+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-EPISTEMIC-FOUNDATIONS",
+  "batch_id": "PS-B149-EPISTEMIC-LOGIC",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0482",
+      "source_path": "content/applied-modal-logic/epistemic-logic/epistemic-logic.tex",
+      "source_bytes": 765,
+      "source_sha256": "12674717c3c51628c4a275e5c34b38b66e2ec1eb7bbffea7bf08629d68489834",
+      "target_sha256": "f68418a4e297ce37cdd69f95e24ebef9ba36a2e6edce2007aee266d05c1dc052",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0483",
+      "source_path": "content/applied-modal-logic/epistemic-logic/introduction.tex",
+      "source_bytes": 2025,
+      "source_sha256": "b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9",
+      "target_sha256": "9112c3b0199cf6886e260baed81052589a77853af6522776d8b4551fee532829",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0484",
+      "source_path": "content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex",
+      "source_bytes": 3144,
+      "source_sha256": "a3dbe66fb9357878583c30a38b9801609179a229bc1ae39a6fd3e565f243e455",
+      "target_sha256": "ae7997aadac39c92bc745462dfb57eceee92d7fa67390b927cb2cdc876b67b97",
+      "paired_blocks": 21,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0485",
+      "source_path": "content/applied-modal-logic/epistemic-logic/relational-models.tex",
+      "source_bytes": 2012,
+      "source_sha256": "2c35ea27376dd725cd7695eb76a679a8d9187c17a3091dc7db972886374daf21",
+      "target_sha256": "97160c0c9ed1f13f9f739c36dc310d9505613916b6de71986b38c56396d78a98",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0486",
+      "source_path": "content/applied-modal-logic/epistemic-logic/truth-at-w.tex",
+      "source_bytes": 4950,
+      "source_sha256": "d1a57861965ea7a83ae4e6a37a6fcb19f5fce14c1a16336f551f6a0101060abc",
+      "target_sha256": "944897ce5ce783e846deadc668f02cdf5f09ab711633d9ce352df1d941ae5e3a",
+      "paired_blocks": 15,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B149_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "278f1da51df356ab79de7e9052f9415cf621c3a015e3083d55d55feffdcfa392",
+  "consultation_path": "work/B149_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "3b67c8cd97bec0c0e4f3d88e5dfbfb749be8851bf4cc9f2af6bbbfadce58854e",
+  "staging_checkpoint_sha256": "2af0e16437ef3123c3d08ad5fcc699862c5c54f72839bff5c6bfb15edf822272",
+  "staging_qa_sha256": {
+    "OLP-0482": "d8a1b93c7f6219b020cdb37ce9e14211788dda42aac0c96204e39fbfba8cbaa6",
+    "OLP-0483": "217428d3262d7cf4abfba2c9bb91f20abd9a1fe12a81b51ce3bfb741cc7da4ad",
+    "OLP-0484": "3780dbcc290716ab1c0750c6b7c2b338299d30f642c9f952a5175d2c035f5fe1",
+    "OLP-0485": "2fb78d0097079f5845bb71bbd4a2ced30950eca946b941241e9ec2e4717152dc",
+    "OLP-0486": "ee1cbc8a9cc17b5f1d1f821c9721369ce7ac4b8b22732be3a8213d5cc55a152b"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0484",
+      "term_id": "TERM-EPISTEMIC-KNOWLEDGE-LEVELS",
+      "finding": "Individual, everyone-knows and common-knowledge operators remain distinct."
+    },
+    {
+      "unit_id": "OLP-0486",
+      "finding": "R^0=R source-defined indexing preserved; diagram and six exercise formulas exact."
+    }
+  ],
+  "formula_policy": "62 paired blocks; 134 math spans, IDs, tags, term tokens and diagram geometry exact. No source correction introduced.",
+  "unresolved": "معرفتي، باي‌سيميولېشن او د پوهې د کچو نومونه لنډمهاله دي؛ د انسان يا د عينې پاکستانۍ چاپي اصطلاح تصويب نۀ دے ادعا شوے.",
+  "model_provenance_sha256": "ed24cb872da684fa9da482fee3ee7bfab1a38a8e85fa0f2541cc6fa98617c82d",
+  "next_executable_action": "Register B149 epistemic terms and source review for OLP-0482–0486; run independent cumulative QA and dual canonical replay; continue OLP-0487."
+}
