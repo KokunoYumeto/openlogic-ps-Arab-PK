@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0510; OLINT-011 is disclosed proof gap, not a repaired proof",
-  "adopted_utc": "2026-09-28T20:46:50.652332+00:00",
+  "status": "adopted through OLP-0515; OLINT-011 and OLINT-017 are disclosed unrepaired source proof gaps",
+  "adopted_utc": "2026-09-28T22:42:12.218254+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -13534,6 +13534,743 @@
       "decision_timing": "contemporaneous B154 owner source review before cumulative acceptance",
       "upstream_reporting": "manager report pending; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": true
+    },
+    {
+      "id": "OLINT-012",
+      "unit_id": "OLP-0512",
+      "classification": "modal_word_in_intuitionistic_tableaux_intro",
+      "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "source_locator": "content/intuitionistic-logic/tableaux/introduction.tex:40",
+      "source_literal_line_1based": [
+        40
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/introduction.tex",
+      "target_line_1based": 38,
+      "target_literal_line_1based": [
+        38,
+        40,
+        43,
+        44,
+        63
+      ],
+      "disclosure_line_1based": 42,
+      "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "په شهودي سريزه کښې د مودالي کلمې پر ځاے شهودي ليکل شوي؛ څنګ‌ته څرګندونه شته.",
+      "reason": "د څپرکي موضوع او ورپسې رسمي قاعدې شهودي دي.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "modal_word_in_intuitionistic_tableaux_intro"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/introduction.tex:40",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/introduction.tex:38,40,43,44,63",
+        "B155_DRAFT_QA_OLP-0512.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-013",
+      "unit_id": "OLP-0513",
+      "classification": "true_conditional_prose_has_reversed_branch_signs",
+      "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "source_locator": "content/intuitionistic-logic/tableaux/rules.tex:92,97,98",
+      "source_literal_line_1based": [
+        92,
+        97,
+        98
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/rules.tex",
+      "target_line_1based": 94,
+      "target_literal_line_1based": [
+        94,
+        95,
+        96,
+        103,
+        104,
+        123
+      ],
+      "disclosure_line_1based": 96,
+      "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ريښتيني شرط په تشريح کښې څلور نښې د رسمي جدول له مخې سمې شوې دي.",
+      "reason": "د هماغې برخې جدول د ريښتيني شرط لپاره کاذب مقدم يا رښتينې پايلې ته دوه بديلې څانګې ورکوي.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\True}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!A}[\\sigma]$",
+          "$\\sFmla{\\False}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!A}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$"
+        ],
+        "scope": "true_conditional_prose_has_reversed_branch_signs"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/rules.tex:92,97,98",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/rules.tex:94,95,96,103,104,123",
+        "B155_DRAFT_QA_OLP-0513.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-014",
+      "unit_id": "OLP-0514",
+      "classification": "false_conjunction_tree_justification_points_to_wrong_line",
+      "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+      "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+      "source_locator": "content/intuitionistic-logic/tableaux/proofs.tex:32,34",
+      "source_literal_line_1based": [
+        32,
+        34
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/proofs.tex",
+      "target_line_1based": 16,
+      "target_literal_line_1based": [
+        16,
+        35,
+        37
+      ],
+      "disclosure_line_1based": 16,
+      "target_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د کاذب عطف دواړه توجيهي حوالې له څلورمې اوومې کرښې ته سمې شوې دي.",
+      "reason": "څلورمه کرښه کاذب شرط دے؛ کاذب عطف په اوومه کرښه کښې دے.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "false_conjunction_tree_justification_points_to_wrong_line"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/proofs.tex:32,34",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/proofs.tex:16,35,37",
+        "B155_DRAFT_QA_OLP-0514.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {
+        "formal_tree_source_only": [
+          "\\TRule{\\False}{\\land}[4]",
+          "\\TRule{\\False}{\\land}[4]"
+        ],
+        "formal_tree_target_only": [
+          "\\TRule{\\False}{\\land}[7]",
+          "\\TRule{\\False}{\\land}[7]"
+        ]
+      },
+      "qa_tableau_replacements": [
+        {
+          "source": "\\TRule{\\False}{\\land}[4]",
+          "target": "\\TRule{\\False}{\\land}[7]",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "OLINT-015",
+      "unit_id": "OLP-0515",
+      "classification": "countermodel_conclusion_sign_not_negated",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:22",
+      "source_literal_line_1based": [
+        22
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 21,
+      "target_literal_line_1based": [
+        21,
+        22,
+        240
+      ],
+      "disclosure_line_1based": 22,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ضدمدل په تشريح کښې د پايلې ناصدق ته نښه سمه شوې ده.",
+      "reason": "ضدمدل ټولې مقدمې رښتيا او پايله ناصدقه غواړي.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{!A}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat/{M}{!A}[w]$"
+        ],
+        "scope": "countermodel_conclusion_sign_not_negated"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:22",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:21,22,240",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-016",
+      "unit_id": "OLP-0515",
+      "classification": "modal_case_word_in_intuitionistic_soundness",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:31",
+      "source_literal_line_1based": [
+        31
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 35,
+      "target_literal_line_1based": [
+        35
+      ],
+      "disclosure_line_1based": 35,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د شهودي سموالې په بحث کښې مودالي حالت شهودي ته سم شو.",
+      "reason": "د څپرکي موضوع او د نفي او شرط رسمي معنا شهودي ده.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "modal_case_word_in_intuitionistic_soundness"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:31",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:35",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-017",
+      "unit_id": "OLP-0515",
+      "classification": "arbitrary_prefix_domain_lacks_intermediate_prefix_condition",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:40,53,68",
+      "source_literal_line_1based": [
+        40,
+        53,
+        68
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 45,
+      "target_literal_line_1based": [
+        45,
+        66,
+        86,
+        105,
+        111,
+        127
+      ],
+      "disclosure_line_1based": 45,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د سرچينې عام تعريف او دعوې ساتل شوي؛ د منځنيو مخکښونو نشتون په څنګ‌ته پښتو څرګندونه کښې ثبوتي تشه بلل شوې.",
+      "reason": "د سمدستي مخکښونو شرط د اوږده غځون لاسرسے نۀ تضمينوي که منځني مخکښونه په P کښې نۀ وي. د خپل‌سرو P لپاره د نوي مخکښ پخوا موجود اوږده غځونونه د تفسير د غځولو اضافي ستونزه هم جوړوي. له يو شان لومړني مخکښ څخه جوړې شوې عادي څانګې منځني مخکښونه ساتي؛ د عادي استلزام قضيې ناسموالی نۀ دے ادعا شوے.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "arbitrary_prefix_domain_lacks_intermediate_prefix_condition"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:40,53,68",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:45,66,86,105,111,127",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "additional_formal_evidence": {
+        "counterexample": {
+          "prefixes": [
+            "1",
+            "1.1.1"
+          ],
+          "worlds": [
+            "a",
+            "b"
+          ],
+          "relation": [
+            [
+              "a",
+              "a"
+            ],
+            [
+              "b",
+              "b"
+            ]
+          ],
+          "p_true_at": [
+            "a"
+          ],
+          "interpretation": {
+            "1": "a",
+            "1.1.1": "b"
+          },
+          "branch": [
+            "True p at 1",
+            "False p at 1.1.1"
+          ],
+          "source_interpretation_holds_vacuously": true,
+          "satisfiable": true,
+          "source_closure_criterion_closes_branch": true
+        }
+      }
+    },
+    {
+      "id": "OLINT-018",
+      "unit_id": "OLP-0515",
+      "classification": "monotonic_closure_proof_malformed_relation_and_same_world_conclusion",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:78,80",
+      "source_literal_line_1based": [
+        78,
+        80
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 102,
+      "target_literal_line_1based": [
+        102
+      ],
+      "disclosure_line_1based": 102,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "ګډه جمله سمه شوه؛ د لاسرسي دويمه نړۍ تفسير شوه، او د صدق پايله غځېدلې نړۍ ته لاړه.",
+      "reason": "د يورخيز صدق معنا له اصلي نړۍ څخه لاسرسي وړ نړۍ ته د صدق ساتنه ده؛ د OLINT-017 عامه تشه لا پر ځاے ده.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$Rf(\\sigma)(\\sigma.{*})$",
+          "$\\mSat{M}{!A}[f(\\sigma)]$"
+        ],
+        "target_only": [
+          "$Rf(\\sigma)f(\\sigma.{*})$",
+          "$\\mSat{M}{!A}[f(\\sigma.{*})]$"
+        ],
+        "scope": "monotonic_closure_proof_malformed_relation_and_same_world_conclusion"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:78,80",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:102",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-019",
+      "unit_id": "OLP-0515",
+      "classification": "false_disjunction_exercise_omits_prefix",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:141",
+      "source_literal_line_1based": [
+        141
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 167,
+      "target_literal_line_1based": [
+        167
+      ],
+      "disclosure_line_1based": 167,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د کاذب فصل په تمريني حالت کښې پرېښودل شوے مخکښ ورزيات شو.",
+      "reason": "د قاعدې مقدمه مخکښ‌لرونکے نښه‌لرونکے فارمول دے، لکه د همدې څپرکي رسمي قاعده.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$"
+        ],
+        "scope": "false_disjunction_exercise_omits_prefix"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:141",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:167",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-020",
+      "unit_id": "OLP-0515",
+      "classification": "false_conditional_proof_repeats_principal_formula_instead_of_rule_conclusions",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:151,164",
+      "source_literal_line_1based": [
+        151,
+        164
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 180,
+      "target_literal_line_1based": [
+        180
+      ],
+      "disclosure_line_1based": 180,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د کاذب شرط په ګام کښې دواړه سټونه د قاعدې رښتيني مقدم او کاذبې پايلې ته سم شول.",
+      "reason": "همدې ګام د نوې نړۍ شاهد د مقدم د صدق او د پايلې د ناصدق له مخې ټاکلے دے؛ بايد د قاعدې اصلي غځېدلې څانګه وښيي.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$"
+        ],
+        "target_only": [
+          "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$"
+        ],
+        "scope": "false_conditional_proof_repeats_principal_formula_instead_of_rule_conclusions"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:151,164",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:180",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-021",
+      "unit_id": "OLP-0515",
+      "classification": "branching_rules_misnamed_two_premise_inferences",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:166",
+      "source_literal_line_1based": [
+        166
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 201,
+      "target_literal_line_1based": [
+        201
+      ],
+      "disclosure_line_1based": 201,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دوو مقدمو پر ځاے د دوو بديلو څانګو تشريح ورکړل شوه.",
+      "reason": "لاندې د کاذب عطف، رښتيني فصل او رښتيني شرط قاعدې يوه مقدمه او دوه بديلې څانګې لري.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [],
+        "scope": "branching_rules_misnamed_two_premise_inferences"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:166",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:201",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
+    },
+    {
+      "id": "OLINT-022",
+      "unit_id": "OLP-0515",
+      "classification": "soundness_corollary_ends_with_derivability_instead_of_entailment",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "source_locator": "content/intuitionistic-logic/tableaux/soundness.tex:205",
+      "source_literal_line_1based": [
+        205
+      ],
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex",
+      "target_line_1based": 246,
+      "target_literal_line_1based": [
+        246
+      ],
+      "disclosure_line_1based": 246,
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د سموالې د پايلې په پاے کښې ثابتېدنه معنايي استلزام ته سمه شوه.",
+      "reason": "ثابتېدنه له پيله فرض ده؛ له ضدمدل څخه تناقض د معنايي استلزام نفي ردوي.",
+      "formula_policy": "Only listed exact math-span substitutions; OLINT-014 also changes the two explicitly listed raw proof-tree rule references. Frozen source preserved.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\Proves!A$"
+        ],
+        "target_only": [
+          "$\\Gamma\\Entails!A$"
+        ],
+        "scope": "soundness_corollary_ends_with_derivability_instead_of_entailment"
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+      "audit_artifacts": [
+        "B155_SOURCE_AUDIT.json",
+        "B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "content/intuitionistic-logic/tableaux/soundness.tex:205",
+        "ps-Arab-PK/content/intuitionistic-logic/tableaux/soundness.tex:246",
+        "B155_DRAFT_QA_OLP-0515.json"
+      ],
+      "decision_timing": "contemporaneous B155 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "additional_formal_evidence": {}
     }
   ],
   "external_upstream_report_submitted": false,
@@ -13633,7 +14370,8 @@
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-BHK",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-DEDUCTIONS",
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-SEMANTICS-SOUNDNESS",
-    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS"
+    "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
+    "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX"
   ],
   "source_authorities": [
     {

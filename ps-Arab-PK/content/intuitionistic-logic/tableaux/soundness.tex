@@ -1,0 +1,256 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{sou}
+
+\olsection{د شهودي \usetoken{P}{tableau} سموالے}
+
+\begin{explain}
+  د دې ښودلو لپاره چې شهودي !!{tableau}s سم دي، بايد وښيو چې که
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  تړلے !!{tableau} ولري، نو $!B_1, \dots, !B_n \Entails !A$۔ د
+  مقابل لوري ثبوت اسانه دے: که د کوم $\mModel{M}$ او نړۍ~$w$
+  لپاره د ټولو $i=1$، \dots,~$n$ دپاره $\mSat{M}{!B_i}[w]$
+  وي خو $\mSat/{M}{!A}[w]$ وي، نو هېڅ !!{tableau} نۀ شي تړلے۔
+  د ژباړې د نسخې څرګندونه (OLINT-015): سرچينه دلته د پايلې
+  صدق ليکي؛ ضدمدل د پايلې ناصدق غواړي، نو د صدق نفي شوې نښه
+  دلته سمه شوې ده۔ داسې ضدمدل ښيي چې د !!{tableau} لومړني
+  فرضونه د صدق وړ دي۔ د ثبوت تګلاره دا ده چې وښيو: کله هم
+  چې د !!a{tableau} پر څانګه ټول مخکښ‌لرونکي !!{formula}s په
+  ګډه د صدق وړ وي، د هرې قاعدې پلې کول لږ تر لږه يوه غځېدلې
+  څانګه ورکوي چې هغه هم د صدق وړ وي۔ تړلې څانګې د صدق وړ نۀ
+  دي؛ نو د مخکښ‌لرونکو !!{formula}s د صدق وړ سټ هر
+  !!{tableau} بايد لږ تر لږه يوه پرانيستې څانګه ولري۔
+
+  په شهودي حالت کښې د دې تګلارې د پلې کولو لپاره بايد د
+  «د صدق وړ» تعريف اړيکيزو مدلونو او مخکښونو ته وغځوو۔ د دې
+  تعريف په لرلو سره ثبوت نېغ په نېغه دے۔ د ژباړې د نسخې
+  څرګندونه (OLINT-016): سرچينه په دې شهودي بحث کښې «مودالي
+  حالت» ليکي؛ دلته د څپرکي له موضوع سره سم «شهودي حالت» دے۔
+\end{explain}
+
+\begin{defn}
+  $P$ دې د مخکښونو يو سټ وي، يعنې $P \subseteq (\PosInt)^*
+  \setminus \{\emptyseq\}$، او $\mModel{M}$ دې يو مدل وي۔
+  تابع~$f\colon P \to W$ په~$\mModel{M}$ کښې د~$P$
+  \emph{تفسير} دے که، هر کله چې $\sigma$ او $\sigma.n$ دواړه
+  په~$P$ کښې وي، $Rf(\sigma)f(\sigma.n)$ هم وي۔ د ژباړې د
+  نسخې څرګندونه (OLINT-017): سرچينه دلته د منځنيو مخکښونو
+  موجوديت شرط نۀ بولي۔ که د اوږده غځون منځني مخکښونه په سټ
+  کښې نۀ وي، د سمدستي غځونونو دا شرط د اوږده غځون د نړۍو
+  لاسرسے نۀ تضمينوي۔ ورپسې يادښت او د تړلو څانګو عمومي دعوه
+  همدې اضافي شرط ته اړ دي؛ دا د سرچينې په عام بيان کښې پاتې
+  ثبوتي تشه ده۔ له يو شان لومړني مخکښ څخه د بيان شويو قاعدو
+  په وسيله جوړې شوې څانګې بيا دغه منځني مخکښونه لري۔ تعريف
+  دلته د سرچينې په بڼه ساتل شوے، او عامه تشه نۀ ده پټه شوې۔
+
+  د مخکښونو~$P$ د يوه تفسير په نسبت دا تعريفولے شو:
+  \begin{enumerate}
+  \item $\mModel{M}$ په $\sFmla{\True}{!A}[\sigma]$ کښې صدق کوي هله او يوازې هله چې
+    $\mSat{M}{!A}[f(\sigma)]$.
+  \item $\mModel{M}$ په $\sFmla{\False}{!A}[\sigma]$ کښې صدق کوي هله او يوازې هله چې
+    $\mSat/{M}{!A}[f(\sigma)]$.
+  \end{enumerate}
+\end{defn}
+
+پام وکړئ چې $R$ انعکاسي او متعدي دے، او $\sigma.{*}$ د
+$\sigma$، $\sigma.n_1$، $\sigma.n_1.n_2$، \dots نښه ده؛ نو
+د سرچينې د دعوې له مخې $Rf(\sigma)f(\sigma.{*})$ هم لرو۔ د
+OLINT-017 څرګندونې له مخې دا استنتاج د اړوندو منځنيو مخکښونو
+موجوديت ته اړ دے۔
+
+\begin{defn}
+  $\Gamma$ دې د مخکښ‌لرونکو !!{formula}s سټ وي، او $P(\Gamma)$
+  دې په هغه کښې د راغلو مخکښونو سټ وي۔ که $f$ په
+  $\mModel{M}$ کښې د~$P(\Gamma)$ تفسير وي، وايو چې
+  $\mModel{M}$ د~$f$ په نسبت په $\Gamma$ کښې صدق کوي،
+  $\mSat{M}{\Gamma}[f]$، که $\mModel{M}$ د~$f$ په نسبت د
+  $\Gamma$ په هر مخکښ‌لرونکي !!{formula} کښې صدق کوي۔
+  $\Gamma$ \emph{د صدق وړ} دے هله او يوازې هله چې يو
+  مدل~$\mModel{M}$ او د $P(\Gamma)$ تفسير~$f$ داسې وي چې
+  $\mSat{M}{\Gamma}[f]$۔
+\end{defn}
+
+\begin{prop}
+  که $\Gamma$ د کوم !!{formula}~$!A$ او مخکښ~$\sigma$ دپاره
+  $\sFmla{\True}{!A}[\sigma]$ او
+  $\sFmla{\False}{!A}[\sigma.{*}]$ دواړه ولري، يا
+  $\sFmla{\True}{\lfalse}[\sigma]$ ولري، نو $\Gamma$ د صدق
+  وړ نۀ دے۔ د OLINT-017 له مخې د لومړي حالت عمومي بيان په
+  سرچينه کښې د منځنيو مخکښونو اضافي شرط غواړي۔
+\end{prop}
+
+\begin{proof}
+  تل $\mSat/{M}{\lfalse}[f(\sigma)]$ وي؛ نو هغه $\Gamma$ چې
+  $\sFmla{\True}{\lfalse}$ لري، د صدق وړ نۀ دے۔
+
+  د $P(\Gamma)$ داسې تفسير~$f$ او مدل~$\mModel{M}$ هم نۀ شي
+  موجودېدے چې لاندې دواړه شرطونه ولري: که
+  $\mSat{M}{!A}[f(\sigma)]$ وي، نو د
+  \olref[sem][rel]{prop:true-monotonic} له مخې، څرنګه چې
+  $Rf(\sigma)f(\sigma.{*})$ دے،
+  $\mSat{M}{!A}[f(\sigma.{*})]$ هم دے۔ نو
+  $\mSat{M}{!A}[f(\sigma)]$ او
+  $\mSat/{M}{!A}[f(\sigma.{*})]$ دواړه نۀ شو لرلے۔ د ژباړې
+  د نسخې څرګندونه (OLINT-018): د سرچينې ګډه جمله سمه شوې، د
+  لاسرسي په دويم اړخ کښې تفسير ورزيات شوے، او د يورخيز صدق
+  پايله د غځېدلې نړۍ لپاره ليکل شوې ده؛ سرچينه هماغه لومړۍ
+  نړۍ بيا ليکي۔ د OLINT-017 عامه ثبوتي تشه لا پر ځاے ده۔
+\end{proof}
+
+\begin{thm}[سموالے]
+  \ollabel{thm:tableau-soundness}
+  که $\Gamma$ تړلے !!{tableau} ولري، نو $\Gamma$ د صدق وړ نۀ
+  دے۔ د OLINT-017 له مخې د ټولو خپل‌سرو مخکښونو لپاره د دې
+  بيان په سرچينه کښې د منځنيو مخکښونو شرط نۀ دے څرګند شوے۔
+\end{thm}
+
+\begin{proof}
+د !!a{tableau} څانګه د صدق وړ بولو هله او يوازې هله چې پر هغې
+د !!{signed formula}s سټ د صدق وړ وي؛ او !!a{tableau} د صدق
+وړ بولو که لږ تر لږه يوه د صدق وړ څانګه ولري۔
+
+دا ښيو: د استنتاج د يوې قاعدې په وسيله د صدق وړ !!{tableau}
+غځول تل د صدق وړ !!{tableau} ورکوي۔ په دې سره قضيه ثابتېږي:
+هر تړلے !!{tableau} پر هغه !!{tableau} د استنتاج د قاعدو په
+پلې کولو جوړېږي چې يوازې د~$\Gamma$ فرضونه لري۔ نو که
+$\Gamma$ د صدق وړ وے، د هغه هر !!{tableau} به د صدق وړ وے۔
+خو تړلے !!{tableau} په ښکاره د صدق وړ نۀ دے، ځکه ټولې څانګې
+يې تړلې دي او تړلې څانګې د صدق وړ نۀ دي۔ دا سرچينه‌يي
+استدلال د OLINT-017 څرګند شوي شرط په حدودو کښې لوستل کېږي۔
+
+فرض کړئ د صدق وړ !!{tableau} لرو، يعنې داسې !!a{tableau} چې
+لږ تر لږه يوه د صدق وړ څانګه لري۔ د استنتاج قاعده يا څانګې ته
+!!{signed formula}s ورزياتوي يا څانګه په دوو وېشي۔ که د
+!!{tableau} د صدق وړ يوه څانګه د اړوندې قاعدې په پلې کولو نۀ
+غځېږي، هغه په غځېدلي !!{tableau} کښې هم د صدق وړ پاتې کېږي؛
+نو غځېدلے تابلو د صدق وړ دے۔ ځکه يوازې هغه حالت کتل غواړي
+چې قاعده پر د صدق وړ څانګې پلې کېږي۔
+
+$\Gamma$ دې پر هماغې څانګې د !!{signed formula}s سټ وي، او
+$\sFmla{S}{!A}[\sigma] \in \Gamma$ دې هغه !!{signed formula}
+وي چې قاعده پرې پلې کېږي۔ که قاعده څانګه نۀ وېشي، بايد وښيو
+چې غځېدلې څانګه، يعنې $\Gamma$ له قاعده‌يي پايلو سره، لا د
+صدق وړ ده۔ که قاعده څانګه وېشي، بايد وښيو چې د جوړو شويو دوو
+څانګو لږ تر لږه يوه د صدق وړ ده۔
+\begin{enumerate}
+\item پر $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lnot}$ په پلې کولو څانګه غځېږي۔ نو غځېدلې
+  څانګه !!{signed formula}s $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma.{*}]\}$ لري۔ فرض کړئ
+  $\mSat{M}{\Gamma}[f]$ دے۔ په ځانګړي ډول
+  $\mSat{M}{\lnot !B}[f(\sigma)]$ دے۔ نو د هر هغه $w$ لپاره
+  چې $Rf(\sigma)w$ وي، $\mSat/{M}{!B}[w]$ دے؛
+  $f(\sigma.{*})$ هم پکښې شامل دے۔ ځکه $\mModel{M}$ د~$f$
+  په نسبت په $\sFmla{\False}{!B}[\sigma.{*}]$ کښې صدق کوي۔
+\item پر $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lnot}$ په پلې کولو څانګه غځېږي: تمرين۔
+\item پر $\sFmla{\True}{!B \land !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\land}$ په پلې کولو څانګه غځېږي؛ په څانګه
+  کښې دوه نوي !!{signed formula}s جوړېږي:
+  $\sFmla{\True}{!B}[\sigma]$ او $\sFmla{\True}{!C}[\sigma]$۔
+  فرض کړئ $\mSat{M}{\Gamma}[f]$ دے؛ په ځانګړي ډول
+  $\mSat{M}{!B \land !C}[f(\sigma)]$ دے۔ نو
+  $\mSat{M}{!B}[f(\sigma)]$ او $\mSat{M}{!C}[f(\sigma)]$
+  دي۔ دا معنا لري چې $\mModel{M}$ د~$f$ په نسبت په
+  $\sFmla{\True}{!B}[\sigma]$ او
+  $\sFmla{\True}{!C}[\sigma]$ دواړو کښې صدق کوي۔
+\item پر $\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lor}$ په پلې کولو څانګه غځېږي: تمرين۔ د
+  ژباړې د نسخې څرګندونه (OLINT-019): د سرچينې په دې
+  نښه‌لرونکي فارمول کښې پرېښودل شوے مخکښ دلته ورزيات شوے دے۔
+\item پر $\sFmla{\False}{!B \lif !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\lif}$ په پلې کولو څانګه غځېږي؛ په څانګه
+  کښې دوه نوي !!{signed formula}s جوړېږي:
+  $\sFmla{\True}{!B}[\sigma.n]$ او
+  $\sFmla{\False}{!C}[\sigma.n]$؛ $\sigma.n$ په څانګه کښې
+  نوے مخکښ دے، يعنې $\sigma.n \notin P(\Gamma)$۔
+  
+  $\Gamma$ د صدق وړ دے؛ نو يو $\mModel{M}$ او د $P(\Gamma)$
+  تفسير~$f$ داسې دي چې $\mSat{M}{\Gamma}[f]$، او په ځانګړي
+  ډول $\mSat/{M}{!B \lif !C}[f(\sigma)]$ وي۔ بايد وښيو چې
+  $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n],\sFmla{\False}{!C}[\sigma.n]\}$
+  د صدق وړ دے۔ د ژباړې د نسخې څرګندونه (OLINT-020): سرچينه
+  دلته او د دې ګام په پاے کښې په نوې نړۍ کښې بيا هماغه کاذب
+  شرط ليکي؛ د قاعدې اصلي پايلې په نوې نړۍ کښې رښتينے مقدم او
+  کاذبه پايله دي۔ دواړه سټونه دلته د همدې ګام له رسمي قاعدې
+  او جوړ شوي شاهد سره سم شوي دي۔ د دې لپاره د $P(\Gamma)
+  \cup \{\sigma.n\}$ تفسير په دې ډول تعريفوو:
+  
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$ دے؛ نو يو $w \in W$
+  داسې شته چې $Rf(\sigma)w$، $\mSat{M}{!B}[w]$ او
+  $\mSat/{M}{!C}[w]$ وي۔ $f'$ دې د $f$ په شان وي، يوازې
+  $f'(\sigma.n) = w$ دے۔ څرنګه چې $f'(\sigma) = f(\sigma)$
+  او $Rf(\sigma)w$ دي، $Rf'(\sigma)f'(\sigma.n)$ لرو؛ نو
+  $f'$ د $P(\Gamma) \cup \{\sigma.n\}$ تفسير دے۔ په ښکاره
+  $\mSat{M}{!B}[f'(\sigma.n)]$ او
+  $\mSat/{M}{!C}[f'(\sigma.n)]$ دي۔ د ټولو مخکښونو
+  $\sigma' \in P(\Gamma)$ لپاره $f(\sigma') = f'(\sigma')$
+  دے؛ نو $\mSat{M}{\Gamma}[f']$۔ ځکه $\mModel{M}, f'$ په
+  $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n],\sFmla{\False}{!C}[\sigma.n]\}$
+  کښې صدق کوي۔
+\end{enumerate}
+اوس هغه ممکن استنتاجونه ګورو چې دوه څانګې جوړوي۔ د ژباړې د
+نسخې څرګندونه (OLINT-021): سرچينه دلته «دوه مقدمې» ليکي؛
+لاندې قاعدې يوه مقدمه او دوه بديلې څانګې لري، نو دلته د
+څانګو شمېر مراد دے۔
+\begin{enumerate}
+\item پر $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$ د
+  $\TRule{\False}{\land}$ په پلې کولو څانګه غځېږي؛ دوه
+  څانګې جوړېږي: کيڼه يې پر $\sFmla{\False}{!B}[\sigma]$ او
+  ښي يې پر $\sFmla{\False}{!C}[\sigma]$ روانېږي۔ فرض کړئ
+  $\mSat{M}{\Gamma}[f]$ دے؛ په ځانګړي ډول
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$ دے۔ نو
+  $\mSat/{M}{!B}[f(\sigma)]$ يا $\mSat/{M}{!C}[f(\sigma)]$
+  دے۔ په لومړي حالت کښې $\mModel{M}, f$ په
+  $\sFmla{\False}{!B}[\sigma]$ کښې صدق کوي، يعنې کيڼه څانګه
+  د صدق وړ ده۔ په دويم کښې $\mModel{M}, f$ په
+  $\sFmla{\False}{!C}[\sigma]$ کښې صدق کوي، يعنې ښي څانګه
+  د صدق وړ ده۔
+\item پر $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lor}$ په پلې کولو څانګه غځېږي: تمرين۔
+\item پر $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$ د
+  $\TRule{\True}{\lif}$ په پلې کولو څانګه غځېږي: تمرين۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+د \olref[int][tab][sou]{thm:tableau-soundness} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+که $\Gamma \Proves !A$ وي، نو $\Gamma \Entails !A$۔
+\end{cor}
+
+\begin{proof}
+  که $\Gamma \Proves !A$ وي، نو د ځينو $!B_1$، \dots,
+  $!B_n \in \Gamma$ دپاره
+  $\Delta = \{\sFmla{\False}{!A}[1], \sFmla{\True}{!B_1}[1],
+  \dots, \sFmla{\True}{!B_n}[1]\}$ تړلے !!{tableau} لري۔
+  غواړو وښيو چې $\Gamma \Entails !A$۔ نفي يې فرض کړئ؛ نو
+  د کوم $\mModel{M}$ او $w$ دپاره د $i=1$، \dots,~$n$
+  لپاره $\mSat{M}{!B_i}[w]$ خو $\mSat/{M}{!A}[w]$ دے۔
+  $f(1) = w$ دې وي؛ نو $f$ په~$\mModel{M}$ کښې د~$P(\Delta)$
+  تفسير دے، او $\mModel{M}$ د~$f$ په نسبت په~$\Delta$ کښې
+  صدق کوي۔ خو د \olref{thm:tableau-soundness} له مخې
+  $\Delta$ د صدق وړ نۀ دے، ځکه تړلے !!{tableau} لري؛ تناقض
+  دے۔ نو په پاے کښې بايد $\Gamma \Entails !A$ ولرو۔ د
+  ژباړې د نسخې څرګندونه (OLINT-022): سرچينه دلته هغه
+  ثابتېدنه بيا ليکي چې له پيله فرض وه؛ د ثبوت پايله معنايي
+  استلزام دے، او نښه يې دلته سمه شوې ده۔
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+که $\Proves !A$ وي، نو $!A$ په ټولو مدلونو کښې رښتيا دے۔
+\end{cor}
+
+\end{document}

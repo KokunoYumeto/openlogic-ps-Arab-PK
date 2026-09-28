@@ -1,0 +1,86 @@
+{
+  "schema": "ps-b155-intuitionistic-tableaux-draft/1",
+  "utc": "2026-09-28T22:59:04.335205+00:00",
+  "status": "accepted editable drafts; cumulative source, canon, structural and decision-replay QA PASS",
+  "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+  "units": [
+    {
+      "unit_id": "OLP-0511",
+      "path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+      "source_sha256": "d891fab63bd903a4ab7404bbc8bc6ba84ff7ac5f2054761217187b5e18efa8a3",
+      "target_sha256": "4637bb15de2fea11c7f70683d14abd1181baa23f2d708e1ed97bd67b4f3333de",
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "source_correction_ids": [],
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0512",
+      "path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "source_correction_ids": [
+        "OLINT-012"
+      ],
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0513",
+      "path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "source_correction_ids": [
+        "OLINT-013"
+      ],
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0514",
+      "path": "content/intuitionistic-logic/tableaux/proofs.tex",
+      "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+      "target_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "source_correction_ids": [
+        "OLINT-014"
+      ],
+      "human_specialist_approval_claimed": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "ai_source_review": true,
+      "pakistani_pashto_editorial_review_by_ai": true,
+      "source_correction_ids": [
+        "OLINT-015",
+        "OLINT-016",
+        "OLINT-017",
+        "OLINT-018",
+        "OLINT-019",
+        "OLINT-020",
+        "OLINT-021",
+        "OLINT-022"
+      ],
+      "human_specialist_approval_claimed": false
+    }
+  ],
+  "draft_units": 515,
+  "aligned_blocks": 7765,
+  "segment_canon_uses": 4861,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "source_audit_sha256": "d9a34a8a8138aa66dfc49f9506f20394e4cd71d94153b840a13d77e02d0e91b4",
+  "model_provenance_sha256": "12d7c255958eadb1b69649588e4f89afe5cb8469ebb41b10d8de5f13d81981c7",
+  "corpus_qa_sha256": "d4254e2694a44b7fb6efd4921074493fda66acd43cf294094174f5a3b721f3ca",
+  "canonical_replay_sha256": "4fd8bdaaed52f1cf7e66d02cc01189f7373690f10ed2c13a4dfc242a4e3420f5",
+  "qa_sha256": "fe5a8610a89b76cd3c5e52c2ad677e3c193b5e25f282dbf950d5d78d5b9c18ed",
+  "v071_publication_verification_sha256": "f0d27cb02ce09b451de80fdcc36b16f47cf0994272420a8d1cbdce15565d0d5e",
+  "proof_gap_disclosed_unrepaired": "OLINT-017",
+  "next_action": "Checkpoint the four B156 drafts OLP-0516–0519 with exact hashes and pending terminology choices; continue counterfactual source and canon review at OLP-0520."
+}

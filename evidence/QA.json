@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 510,
-    "structural_pass": 510,
+    "draft_units": 515,
+    "structural_pass": 515,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B154-INTUITIONISTIC-COMPLETENESS",
+  "batch": "PS-B155-INTUITIONISTIC-TABLEAUX",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -16662,6 +16662,209 @@
         "OLINT-011"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0511",
+      "path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+      "source_sha256": "d891fab63bd903a4ab7404bbc8bc6ba84ff7ac5f2054761217187b5e18efa8a3",
+      "translation_sha256": "4637bb15de2fea11c7f70683d14abd1181baa23f2d708e1ed97bd67b4f3333de",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0512",
+      "path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "translation_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-012"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0513",
+      "path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "translation_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-013"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\sFmla{\\True}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!A}[\\sigma]$",
+          "$\\sFmla{\\False}{!B}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\False}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!A}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0514",
+      "path": "content/intuitionistic-logic/tableaux/proofs.tex",
+      "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+      "translation_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_tableau_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-014"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0515",
+      "path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "translation_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLINT"
+      ],
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLINT-015",
+        "OLINT-016",
+        "OLINT-017",
+        "OLINT-018",
+        "OLINT-019",
+        "OLINT-020",
+        "OLINT-021",
+        "OLINT-022"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mSat{M}{!A}[w]$",
+          "$\\mSat{M}{!A}[f(\\sigma)]$",
+          "$Rf(\\sigma)(\\sigma.{*})$",
+          "$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$",
+          "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\Proves!A$"
+        ],
+        "target_only": [
+          "$\\mSat/{M}{!A}[w]$",
+          "$Rf(\\sigma)f(\\sigma.{*})$",
+          "$\\mSat{M}{!A}[f(\\sigma.{*})]$",
+          "$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$",
+          "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
+          "$\\Gamma\\Entails!A$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -25202,6 +25405,144 @@
       "passage": "decision",
       "reverse_paraphrase": "The concluding algorithm claim is sourced, not established by this proof.",
       "finding": "د ثبوت حد په څرګندونه کښې روښانه دے."
+    },
+    {
+      "unit_id": "OLP-0511",
+      "passage": "editorial",
+      "reverse_paraphrase": "Source requests more examples, completeness proofs and countermodel discussion.",
+      "finding": "د اداري يادښت نيمګړتيا ښکاره ده."
+    },
+    {
+      "unit_id": "OLP-0511",
+      "passage": "imports",
+      "reverse_paraphrase": "Four active and two commented imports retain exact identities.",
+      "finding": "واردات او تبصرې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "sign",
+      "reverse_paraphrase": "Signed formulas assert truth or falsity at their prefix world.",
+      "finding": "نښې او نړۍ جلا دي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "close",
+      "reverse_paraphrase": "Every branch must close for a closed tableau.",
+      "finding": "ټولې څانګې تړل غواړي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "finite",
+      "reverse_paraphrase": "Derivability from Gamma has finitely many true premise assumptions and one false conclusion.",
+      "finding": "متناهي شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "prefix",
+      "reverse_paraphrase": "Prefixes are nonempty finite sequences of positive integers.",
+      "finding": "د لړۍ ډول عين دے."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "extension",
+      "reverse_paraphrase": "Sigma-star includes all finite extensions including sigma itself.",
+      "finding": "د اوږده غځون او تشې لړۍ لوست عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "and-or",
+      "reverse_paraphrase": "Conjunction and disjunction preserve the same prefix.",
+      "finding": "د لومړيو څلورو قاعدو مخکښ عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "close",
+      "reverse_paraphrase": "True A at sigma and false A at an extension close; the reverse only at the same prefix.",
+      "finding": "د تړلتيا لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "assume",
+      "reverse_paraphrase": "All initial premise and conclusion assumptions use prefix 1.",
+      "finding": "يو شان فرضي مخکښ عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "true-if",
+      "reverse_paraphrase": "True conditional branches to false antecedent or true consequent at a used extension.",
+      "finding": "OLINT-013 د رسمي جدول له مخې څلور نښې سموي."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "false-if",
+      "reverse_paraphrase": "False conditional has true antecedent and false consequent at one fresh immediate extension.",
+      "finding": "د نوي شاهد دوه يوځايي شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "tree",
+      "reverse_paraphrase": "Example derives curried implication from conjunction implication.",
+      "finding": "د ونې فورمولونه او تړلتيا عين دي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "refs",
+      "reverse_paraphrase": "Both false conjunction children cite line 7, not line 4.",
+      "finding": "OLINT-014 دوه حوالې سموي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "exercises",
+      "reverse_paraphrase": "All four target derivability exercises remain exact.",
+      "finding": "څلور تمرينونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "countermodel",
+      "reverse_paraphrase": "All premises true and conclusion not true at one world.",
+      "finding": "OLINT-015 ناصدق سموي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "interpret",
+      "reverse_paraphrase": "Immediate-prefix accessibility in arbitrary P does not imply access along a missing intermediate prefix.",
+      "finding": "OLINT-017 تعريف ساتي او عامه تشه ښکاره کوي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "One model and one interpretation satisfy every prefixed formula in the set.",
+      "finding": "ګډ صدق د يو شان تفسير په نسبت دے."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "closure",
+      "reverse_paraphrase": "Monotone truth reaches the interpreted extension when that access is justified.",
+      "finding": "OLINT-018 د تفسير او پايلې ځايي بدلونه ثبتوي؛ عامه تشه پاتې ده."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "rules",
+      "reverse_paraphrase": "A rule preserves at least one satisfiable branch.",
+      "finding": "څانګيز بديل له دوو مقدمو سره نۀ ګډېږي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "witness",
+      "reverse_paraphrase": "False implication chooses an accessible world with true antecedent and false consequent.",
+      "finding": "OLINT-020 دواړه سټونه قاعده‌يي پايلو ته سموي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four rule cases remain exercises.",
+      "finding": "تش ثبوتي حالتونه په پټه نۀ دي بشپړ شوي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "entailment",
+      "reverse_paraphrase": "Contradiction to a countermodel proves semantic entailment, with derivability assumed.",
+      "finding": "OLINT-022 د پايلې نښه سموي."
     }
   ],
   "builds": [

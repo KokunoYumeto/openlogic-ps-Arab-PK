@@ -1,0 +1,153 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{rul}
+
+\olsection{د شهودي منطق قاعدې}
+
+د $\land$ او $\lor$ نښلوونکو قاعدې د عادي قضييزو نښه‌لرونکو
+!!{tableau}s له قاعدو سره يو شان دي؛ يوازې مخکښونه ورزيات شوي
+دي۔ په هر حالت کښې پر نښه‌لرونکي !!{formula}
+$\sFmla{S}{!A}[\sigma]$ پلې شوې قاعده داسې نوي
+!!{formula}s جوړوي چې مخکښ يې هم~$\sigma$ وي۔ دا له مفهومي
+پلوه څرګنده ده: مثلاً که $!A \land !B$ په~$\sigma$ نومولې
+نړۍ کښې رښتيا وي، نو $!A$ او $!B$ هم په~$\sigma$ کښې رښتيا
+دي (په بلې نړۍ کښې اړين نۀ دي)۔ د $\land$ او $\lor$ قاعدې
+په \olref{tab:prop-rules} کښې راټولوو۔
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{د $\land$ او $\lor$ لپاره د مخکښ‌لرونکي !!{tableau} قاعدې}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+د تړل کېدو شرط د عادي !!{tableau}s له شرط سره ورته دے، خو
+يوازې د !!{formula}s برابري کافي نۀ ده؛ مخکښونه هم بايد سره
+برابر يا د لاسرسي له مخې اړوند وي۔ په حقيقت کښې لږ پراخ شرط
+اخيستلے شو: په شهودي مدلونو کښې !!{formula}s چې يو ځل رښتيا
+شي، بيا رښتيا پاتې کېږي؛ نو ناشونې ده چې $!A$ په~$\sigma$
+کښې رښتيا خو په کوم لاس‌رسي وړ مخکښ~$\sigma.{*}$ کښې کاذب
+وي۔ نو څانګه هله تړلې وي چې دواړه لاندې نښې ولري:
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{او}\quad \sFmla{\False}{!A}[\sigma.{*}]
+\]
+د کوم مخکښ~$\sigma$ او !!{formula}~$!A$ دپاره۔ پام وکړئ چې
+که نښې سرچپه وي، يعنې څانګه دا ولري:
+\[
+\sFmla{\False}{!A}[\sigma] \quad\text{او}\quad \sFmla{\True}{!A}[\sigma.{*}]
+\]
+نو څانګه يوازې هغه وخت تړلې ده چې $*$ تشه لړۍ وي۔
+
+پر دې سربېره، که څانګه~$\sFmla{\True}{\bot}[\sigma]$ ولري،
+هغه هم تړلې ده۔
+
+د فرضونو د ايښودلو قاعدې هم د عادي !!{tableau}s په شان دي،
+خو د فرضونو دپاره تل مخکښ~$1$ کاروو۔ (کوم مخکښ چې کاروو مهم
+نۀ دے، بس د ټولو فرضونو دپاره يو شان وي۔) نو مثلاً وايو چې
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+هله او يوازې هله چې د لاندې فرضونو دپاره تړلے تابلو وي:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+د شرط~$\lif$ قاعدې له کلاسيکو او مودالي قاعدو بېلې دي۔ د
+$\TRule{\lif}{\True}$ قاعده هغه څانګه چې
+$\sFmla{\True}{!A \lif !B}[\sigma]$ لري، په دوو بېلو
+څانګو کښې په ترتيب $\sFmla{\False}{!A}[\sigma.{*}]$ يا
+$\sFmla{\True}{!B}[\sigma.{*}]$ ورزياتولو غځوي۔ د ژباړې د
+نسخې څرګندونه (OLINT-013): منجمده سرچينه دلته د ريښتيني
+شرط د قاعدې پايلې د کاذب شرط د شاهد په بڼه سرچپه ليکي؛ د
+همدې برخې لاندې جدول د ريښتيني شرط دپاره کاذب مقدم او رښتينې
+پايله په دوو څانګو کښې ښيي، او همدا دلته مراد دي۔ قاعده يوازې
+پر داسې مخکښ~$\sigma.{*}$ پلې کېدے شي چې په اړونده څانګه کښې
+\emph{لا مخکې} راغلے وي۔ داسې مخکښ «کارېدلے» بولو۔ (څرنګه چې
+$\sigma.{*}$ خپله $\sigma$ هم رانغاړي، قاعده تل د
+$\sFmla{\False}{!A}[\sigma]$ او
+$\sFmla{\True}{!B}[\sigma]$ په بېلو څانګو کښې په زياتولو
+پلې کېدے شي۔)
+
+د $\TRule{\lif}{\False}$ قاعده هغه څانګه چې
+$\sFmla{\False}{!A \lif !B}[\sigma]$ لري، په هماغه څانګه
+کښې د $\sFmla{\True}{!A}[\sigma.n]$ او
+$\sFmla{\False}{!B}[\sigma.n]$ دواړو په زياتولو غځوي؛
+$\sigma.n$ بايد په څانګه کښې نوے مخکښ وي۔
+
+د $\lnot$ قاعدې په ورته ډول تعريفېږي (د $\lnot !A$ د
+$!A \lif \lfalse$ په توګه تعريف کاروو)۔
+
+قاعدې په \olref{tab:rules-lif-lnot} کښې ورکړل شوې دي۔
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ کارېدلے دے} & \text{$\sigma.n$ نوے دے}\\
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ کارېدلے دے} & \text{$\sigma.n$ نوے دے}\\
+    \hline
+  \end{array}\]
+  \caption{د $\lnot$ او $\lif$ لپاره د مخکښ‌لرونکي !!{tableau} قاعدې}
+  \ollabel{tab:rules-lif-lnot}
+\end{table}
+
+\end{document}

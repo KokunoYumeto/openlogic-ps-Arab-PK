@@ -1,0 +1,55 @@
+{
+  "schema": "ps-b156-four-draft-verification/1",
+  "status": "PASS; drafts unaccepted",
+  "recorded_utc": "2026-09-28T22:59:03.583158+00:00",
+  "unit_ids": [
+    "OLP-0516",
+    "OLP-0517",
+    "OLP-0518",
+    "OLP-0519"
+  ],
+  "paired_blocks": 39,
+  "changed_content_canon_uses": 13,
+  "math_spans": 56,
+  "units": [
+    {
+      "unit_id": "OLP-0516",
+      "source_path": "content/counterfactuals/counterfactuals.tex",
+      "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+      "target_sha256": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+      "focused_qa_sha256": "20215106955a41af4b2bd121f99bc23972ab706b9b9bedbddf93be9588b10320",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0517",
+      "source_path": "content/counterfactuals/introduction/introduction.tex",
+      "source_sha256": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+      "target_sha256": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+      "focused_qa_sha256": "f7bedae05b8247f90b10d133bcd8cd6c0fff9a39e4bc831121cbdf44d01a60b9",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0518",
+      "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "focused_qa_sha256": "43454224e636fb78c8152df3c0dbaf8af0dbd3feb1aaebe8feb3967c02680250",
+      "source_treatment_ids": [
+        "OLCNT-001",
+        "OLCNT-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0519",
+      "source_path": "content/counterfactuals/introduction/paradoxes-material.tex",
+      "source_sha256": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+      "target_sha256": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+      "focused_qa_sha256": "4db7efa2080ff4d642025984fa0034116e4b890df40d4688aeecd574d138ef51",
+      "source_treatment_ids": []
+    }
+  ],
+  "preflight_sha256": "f37a14adac644d52558940ddce96a1e62548c2a98794ee331b3a42f82baa2ede",
+  "alignment_sha256": "56ca4f0dd75430c36835cc9634efe8b7361ae68fab3183fe1ae4e40eb16bce9f",
+  "canon_use_sha256": "19a04ac174b13c22f405b0a73a408575f1705b980b2a8834a4dca842d605eea3",
+  "next_action": "Continue OLP-0520 source and canon review, then finish and register B156 before cumulative acceptance."
+}

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B154-INTUITIONISTIC-COMPLETENESS",
-  "status": "OLP-0506–0510 source-reviewed and staged; 64 paired blocks, 24 semantic samples, one provisional term and three disclosed source treatments including one unrepaired proof gap; cumulative QA pending",
+  "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+  "status": "OLP-0511–0515 source-reviewed and staged; 68 paired blocks, 23 semantic samples, no new terms, and eleven disclosed source treatments including one unrepaired arbitrary-prefix proof gap; cumulative QA pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -10674,6 +10674,105 @@
         "OLINT"
       ],
       "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0511": {
+      "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-INTUITIONISTIC-LOGIC"
+      ],
+      "scope": "د شهودي تابلوګانو عنوان، اداري يادښت، واردات او د سرچينې نيمګړتيا.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "No ordinary residual English."
+    },
+    "OLP-0512": {
+      "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-INTUITIONISTIC-LOGIC"
+      ],
+      "scope": "نښه‌لرونکي فارمولونه، تړلتيا، متناهي فرضونه، مخکښونه او د لاسرسي غځون.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0513": {
+      "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
+      ],
+      "scope": "د اتو قاعدو جدولونه، يورخيز تړل کېدل، يو شان فرضي مخکښ، کارېدلے او نوے مخکښ.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0514": {
+      "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX"
+      ],
+      "scope": "د تړلي تابلو بېلګه، د عطف د قاعدې دوه سمې حوالې او څلور تمرينونه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
+    },
+    "OLP-0515": {
+      "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P109-RELATION"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-MODAL-TABLEAU-PREFIX",
+        "TERM-PROOF-PROPERTIES",
+        "TERM-SEMANTICS",
+        "TERM-FOL-SEMANTICS",
+        "TERM-INTUITIONISTIC-RELATIONAL-SEMANTICS"
+      ],
+      "scope": "د مخکښونو تفسير، د ګډ صدق وړتيا، د څانګو د صدق ساتنه، معنايي استلزام او د خپل‌سرو مخکښونو څرګنده سرچينه‌يي تشه.",
+      "allowed_residual_english": [
+        "OLINT"
+      ],
+      "residual_english_rationale": "OLINT is the disclosed source-treatment identifier."
     }
   },
   "semantic_review": [
@@ -19214,6 +19313,144 @@
       "passage": "decision",
       "reverse_paraphrase": "The concluding algorithm claim is sourced, not established by this proof.",
       "finding": "د ثبوت حد په څرګندونه کښې روښانه دے."
+    },
+    {
+      "unit_id": "OLP-0511",
+      "passage": "editorial",
+      "reverse_paraphrase": "Source requests more examples, completeness proofs and countermodel discussion.",
+      "finding": "د اداري يادښت نيمګړتيا ښکاره ده."
+    },
+    {
+      "unit_id": "OLP-0511",
+      "passage": "imports",
+      "reverse_paraphrase": "Four active and two commented imports retain exact identities.",
+      "finding": "واردات او تبصرې عينې دي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "sign",
+      "reverse_paraphrase": "Signed formulas assert truth or falsity at their prefix world.",
+      "finding": "نښې او نړۍ جلا دي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "close",
+      "reverse_paraphrase": "Every branch must close for a closed tableau.",
+      "finding": "ټولې څانګې تړل غواړي."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "finite",
+      "reverse_paraphrase": "Derivability from Gamma has finitely many true premise assumptions and one false conclusion.",
+      "finding": "متناهي شاهد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "prefix",
+      "reverse_paraphrase": "Prefixes are nonempty finite sequences of positive integers.",
+      "finding": "د لړۍ ډول عين دے."
+    },
+    {
+      "unit_id": "OLP-0512",
+      "passage": "extension",
+      "reverse_paraphrase": "Sigma-star includes all finite extensions including sigma itself.",
+      "finding": "د اوږده غځون او تشې لړۍ لوست عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "and-or",
+      "reverse_paraphrase": "Conjunction and disjunction preserve the same prefix.",
+      "finding": "د لومړيو څلورو قاعدو مخکښ عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "close",
+      "reverse_paraphrase": "True A at sigma and false A at an extension close; the reverse only at the same prefix.",
+      "finding": "د تړلتيا لوری عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "assume",
+      "reverse_paraphrase": "All initial premise and conclusion assumptions use prefix 1.",
+      "finding": "يو شان فرضي مخکښ عين دے."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "true-if",
+      "reverse_paraphrase": "True conditional branches to false antecedent or true consequent at a used extension.",
+      "finding": "OLINT-013 د رسمي جدول له مخې څلور نښې سموي."
+    },
+    {
+      "unit_id": "OLP-0513",
+      "passage": "false-if",
+      "reverse_paraphrase": "False conditional has true antecedent and false consequent at one fresh immediate extension.",
+      "finding": "د نوي شاهد دوه يوځايي شرطونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "tree",
+      "reverse_paraphrase": "Example derives curried implication from conjunction implication.",
+      "finding": "د ونې فورمولونه او تړلتيا عين دي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "refs",
+      "reverse_paraphrase": "Both false conjunction children cite line 7, not line 4.",
+      "finding": "OLINT-014 دوه حوالې سموي."
+    },
+    {
+      "unit_id": "OLP-0514",
+      "passage": "exercises",
+      "reverse_paraphrase": "All four target derivability exercises remain exact.",
+      "finding": "څلور تمرينونه عين دي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "countermodel",
+      "reverse_paraphrase": "All premises true and conclusion not true at one world.",
+      "finding": "OLINT-015 ناصدق سموي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "interpret",
+      "reverse_paraphrase": "Immediate-prefix accessibility in arbitrary P does not imply access along a missing intermediate prefix.",
+      "finding": "OLINT-017 تعريف ساتي او عامه تشه ښکاره کوي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "One model and one interpretation satisfy every prefixed formula in the set.",
+      "finding": "ګډ صدق د يو شان تفسير په نسبت دے."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "closure",
+      "reverse_paraphrase": "Monotone truth reaches the interpreted extension when that access is justified.",
+      "finding": "OLINT-018 د تفسير او پايلې ځايي بدلونه ثبتوي؛ عامه تشه پاتې ده."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "rules",
+      "reverse_paraphrase": "A rule preserves at least one satisfiable branch.",
+      "finding": "څانګيز بديل له دوو مقدمو سره نۀ ګډېږي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "witness",
+      "reverse_paraphrase": "False implication chooses an accessible world with true antecedent and false consequent.",
+      "finding": "OLINT-020 دواړه سټونه قاعده‌يي پايلو ته سموي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "exercises",
+      "reverse_paraphrase": "Four rule cases remain exercises.",
+      "finding": "تش ثبوتي حالتونه په پټه نۀ دي بشپړ شوي."
+    },
+    {
+      "unit_id": "OLP-0515",
+      "passage": "entailment",
+      "reverse_paraphrase": "Contradiction to a countermodel proves semantic entailment, with derivability assumed.",
+      "finding": "OLINT-022 د پايلې نښه سموي."
     }
   ]
 }

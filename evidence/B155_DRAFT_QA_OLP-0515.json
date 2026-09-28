@@ -1,0 +1,64 @@
+{
+  "schema": "ps-b155-intuitionistic-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0515",
+  "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+  "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+  "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+  "source_blocks": 26,
+  "target_blocks": 26,
+  "math_spans": 175,
+  "source_correction_ids": [
+    "OLINT-015",
+    "OLINT-016",
+    "OLINT-017",
+    "OLINT-018",
+    "OLINT-019",
+    "OLINT-020",
+    "OLINT-021",
+    "OLINT-022"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\mSat{M}{!A}[w]$",
+      "$Rf(\\sigma)(\\sigma.{*})$",
+      "$\\mSat{M}{!A}[f(\\sigma)]$",
+      "$\\sFmla{\\False}{!B\\lor!C}\\in\\Gamma$",
+      "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$",
+      "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$",
+      "$\\Gamma\\Proves!A$"
+    ],
+    "target_only": [
+      "$\\mSat/{M}{!A}[w]$",
+      "$Rf(\\sigma)f(\\sigma.{*})$",
+      "$\\mSat{M}{!A}[f(\\sigma.{*})]$",
+      "$\\sFmla{\\False}{!B\\lor!C}[\\sigma]\\in\\Gamma$",
+      "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
+      "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$",
+      "$\\Gamma\\Entails!A$"
+    ],
+    "scope": "Only disclosed source treatments OLINT-015, OLINT-016, OLINT-017, OLINT-018, OLINT-019, OLINT-020, OLINT-021, OLINT-022"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact_except_disclosed": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "disclosures_present": true,
+    "two_interpretation_clauses": true,
+    "four_exercise_cases_retained": true,
+    "prefix_gap_disclosed": true,
+    "satisfiability_preservation_and_entailment_distinct": true,
+    "source_counterexample_checked": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register disclosed source treatments, including unrepaired arbitrary-prefix gap, and run cumulative QA and decision replay before acceptance."
+}

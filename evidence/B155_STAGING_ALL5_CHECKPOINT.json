@@ -1,0 +1,106 @@
+{
+  "schema": "ps-b155-intuitionistic-all5-staging/1",
+  "utc": "2026-09-28T22:38:23.711204+00:00",
+  "status": "five source-reviewed translated drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 510,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0511",
+    "OLP-0512",
+    "OLP-0513",
+    "OLP-0514",
+    "OLP-0515"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0511",
+      "source_path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+      "source_sha256": "d891fab63bd903a4ab7404bbc8bc6ba84ff7ac5f2054761217187b5e18efa8a3",
+      "target_sha256": "4637bb15de2fea11c7f70683d14abd1181baa23f2d708e1ed97bd67b4f3333de",
+      "paired_blocks": 8,
+      "math_spans": 0,
+      "focused_qa_sha256": "a126628c2ec64b23f3de3c6a92f853479be61eca1135b791181efc7a69db64d7",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0512",
+      "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "paired_blocks": 10,
+      "math_spans": 34,
+      "focused_qa_sha256": "10cf41653c070d8ac257380984b3e374ad4b9727005d588a2d388d93956d4532",
+      "source_treatment_ids": [
+        "OLINT-012"
+      ]
+    },
+    {
+      "unit_id": "OLP-0513",
+      "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "paired_blocks": 16,
+      "math_spans": 47,
+      "focused_qa_sha256": "83546a59e8220ad3bd427c15a7b92029b74dc5185c12bf60ee260dba541f1a82",
+      "source_treatment_ids": [
+        "OLINT-013"
+      ]
+    },
+    {
+      "unit_id": "OLP-0514",
+      "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+      "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+      "target_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+      "paired_blocks": 8,
+      "math_spans": 5,
+      "focused_qa_sha256": "cb93bbd6c6123566e959789b45a4ae1f46c459422f15e051d97805caa7018643",
+      "source_treatment_ids": [
+        "OLINT-014"
+      ]
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "paired_blocks": 26,
+      "math_spans": 175,
+      "focused_qa_sha256": "1dc6de06f98096a1ac8c3c70c9b21835dcf097eac46ed795f6dd07b8185d13b5",
+      "source_treatment_ids": [
+        "OLINT-015",
+        "OLINT-016",
+        "OLINT-017",
+        "OLINT-018",
+        "OLINT-019",
+        "OLINT-020",
+        "OLINT-021",
+        "OLINT-022"
+      ]
+    }
+  ],
+  "paired_blocks": 68,
+  "math_spans": 261,
+  "notes_path": "work/B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "23c9994b2a5fddafe1dd72852cfed341a914900e9588e65bcb8617c2e15911c3",
+  "consultation_path": "work/B155_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "a984665cf72f58726c8111667266c3c75b3fb3d03d36c2a7f20cdb07969aa876",
+  "source_action_specs_sha256": "5ff4e693b04a557ad4f565ba44c5fcc17c9d77a42b0ee7b082738290c4837e61",
+  "source_frozen": true,
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "pending_source_treatments": [
+    "OLINT-012",
+    "OLINT-013",
+    "OLINT-014",
+    "OLINT-015",
+    "OLINT-016",
+    "OLINT-017",
+    "OLINT-018",
+    "OLINT-019",
+    "OLINT-020",
+    "OLINT-021",
+    "OLINT-022"
+  ],
+  "proof_gap_disclosed_unrepaired": "OLINT-017",
+  "next_action": "Register B155 source treatments and canon use; run independent cumulative QA and dual canonical decision replay, then accept OLP-0511–0515."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "ps-b155-intuitionistic-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0514",
+  "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+  "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+  "target_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+  "source_blocks": 8,
+  "target_blocks": 8,
+  "math_spans": 5,
+  "source_correction_ids": [
+    "OLINT-014"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": [],
+    "scope": "Only disclosed source treatments OLINT-014"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact_except_disclosed": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "disclosures_present": true,
+    "tree_exact_except_two_justification_refs": true,
+    "two_justification_refs_only": true,
+    "four_exercises": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register disclosed source treatments, including unrepaired arbitrary-prefix gap, and run cumulative QA and decision replay before acceptance."
+}

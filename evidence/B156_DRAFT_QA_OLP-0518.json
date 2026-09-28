@@ -1,0 +1,39 @@
+{
+  "schema": "ps-b156-counterfactual-opening-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0518",
+  "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+  "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+  "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+  "source_blocks": 10,
+  "target_blocks": 10,
+  "math_spans": 23,
+  "source_correction_ids": [
+    "OLCNT-001",
+    "OLCNT-002"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": [],
+    "scope": "prose-only typo and formal-negation clarification"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "thirteen_entailment_statements": true,
+    "two_source_clarifications_disclosed": true,
+    "truth_function_and_nonmathematical_scope": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register the two provisional specialized terms and source clarifications; finish B156 source review and cumulative QA before acceptance."
+}

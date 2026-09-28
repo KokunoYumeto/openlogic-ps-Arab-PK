@@ -1,0 +1,198 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T22:42:12.218254+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
+  "batch_id": "PS-B155-INTUITIONISTIC-TABLEAUX",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0511",
+      "source_path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+      "source_bytes": 599,
+      "source_sha256": "d891fab63bd903a4ab7404bbc8bc6ba84ff7ac5f2054761217187b5e18efa8a3",
+      "target_sha256": "4637bb15de2fea11c7f70683d14abd1181baa23f2d708e1ed97bd67b4f3333de",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0512",
+      "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+      "source_bytes": 2939,
+      "source_sha256": "d247348c60332898ef0ee789cf200c83633ab364190dd8a68e7c3a767b5fcdb0",
+      "target_sha256": "57c31effd9b07e3c8964b63646ad404e537243a28468258496b4765021822164",
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLINT-012"
+      ]
+    },
+    {
+      "unit_id": "OLP-0513",
+      "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+      "source_bytes": 5140,
+      "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+      "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+      "paired_blocks": 16,
+      "source_correction_ids": [
+        "OLINT-013"
+      ]
+    },
+    {
+      "unit_id": "OLP-0514",
+      "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+      "source_bytes": 1833,
+      "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+      "target_sha256": "6220f6cd961d8dee73cebde912f2de67aa443f8a2c30beac0e0e5d82ca993550",
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLINT-014"
+      ]
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "source_bytes": 9818,
+      "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+      "target_sha256": "32cd1d67926b165a99c14dcb2cf73157dfb8725c562bf24f6ceb1aaac93ad4a1",
+      "paired_blocks": 26,
+      "source_correction_ids": [
+        "OLINT-015",
+        "OLINT-016",
+        "OLINT-017",
+        "OLINT-018",
+        "OLINT-019",
+        "OLINT-020",
+        "OLINT-021",
+        "OLINT-022"
+      ]
+    }
+  ],
+  "notes_path": "work/B155_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "23c9994b2a5fddafe1dd72852cfed341a914900e9588e65bcb8617c2e15911c3",
+  "consultation_path": "work/B155_ALL5_CANON_CONSULTATION.md",
+  "consultation_sha256": "a984665cf72f58726c8111667266c3c75b3fb3d03d36c2a7f20cdb07969aa876",
+  "staging_checkpoint_sha256": "4b8cf3bfaf02d30713797230b06b391a11b97aee30c5ba6355804947be82308f",
+  "source_action_specs_sha256": "5ff4e693b04a557ad4f565ba44c5fcc17c9d77a42b0ee7b082738290c4837e61",
+  "staging_qa_sha256": {
+    "OLP-0511": "a126628c2ec64b23f3de3c6a92f853479be61eca1135b791181efc7a69db64d7",
+    "OLP-0512": "10cf41653c070d8ac257380984b3e374ad4b9727005d588a2d388d93956d4532",
+    "OLP-0513": "83546a59e8220ad3bd427c15a7b92029b74dc5185c12bf60ee260dba541f1a82",
+    "OLP-0514": "cb93bbd6c6123566e959789b45a4ae1f46c459422f15e051d97805caa7018643",
+    "OLP-0515": "1dc6de06f98096a1ac8c3c70c9b21835dcf097eac46ed795f6dd07b8185d13b5"
+  },
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "role": "Reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 29,
+      "printed_page": "24",
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0512",
+      "source_correction_id": "OLINT-012",
+      "finding": "د څپرکي موضوع او ورپسې رسمي قاعدې شهودي دي.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0513",
+      "source_correction_id": "OLINT-013",
+      "finding": "د هماغې برخې جدول د ريښتيني شرط لپاره کاذب مقدم يا رښتينې پايلې ته دوه بديلې څانګې ورکوي.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0514",
+      "source_correction_id": "OLINT-014",
+      "finding": "څلورمه کرښه کاذب شرط دے؛ کاذب عطف په اوومه کرښه کښې دے.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-015",
+      "finding": "ضدمدل ټولې مقدمې رښتيا او پايله ناصدقه غواړي.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-016",
+      "finding": "د څپرکي موضوع او د نفي او شرط رسمي معنا شهودي ده.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-017",
+      "finding": "د سمدستي مخکښونو شرط د اوږده غځون لاسرسے نۀ تضمينوي که منځني مخکښونه په P کښې نۀ وي. د خپل‌سرو P لپاره د نوي مخکښ پخوا موجود اوږده غځونونه د تفسير د غځولو اضافي ستونزه هم جوړوي. له يو شان لومړني مخکښ څخه جوړې شوې عادي څانګې منځني مخکښونه ساتي؛ د عادي استلزام قضيې ناسموالی نۀ دے ادعا شوے.",
+      "proof_gap_disclosed_unrepaired": true
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-018",
+      "finding": "د يورخيز صدق معنا له اصلي نړۍ څخه لاسرسي وړ نړۍ ته د صدق ساتنه ده؛ د OLINT-017 عامه تشه لا پر ځاے ده.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-019",
+      "finding": "د قاعدې مقدمه مخکښ‌لرونکے نښه‌لرونکے فارمول دے، لکه د همدې څپرکي رسمي قاعده.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-020",
+      "finding": "همدې ګام د نوې نړۍ شاهد د مقدم د صدق او د پايلې د ناصدق له مخې ټاکلے دے؛ بايد د قاعدې اصلي غځېدلې څانګه وښيي.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-021",
+      "finding": "لاندې د کاذب عطف، رښتيني فصل او رښتيني شرط قاعدې يوه مقدمه او دوه بديلې څانګې لري.",
+      "proof_gap_disclosed_unrepaired": false
+    },
+    {
+      "unit_id": "OLP-0515",
+      "source_correction_id": "OLINT-022",
+      "finding": "ثابتېدنه له پيله فرض ده؛ له ضدمدل څخه تناقض د معنايي استلزام نفي ردوي.",
+      "proof_gap_disclosed_unrepaired": false
+    }
+  ],
+  "formula_policy": "68 paired blocks and 261 math spans; eleven exact math-span substitutions and two raw proof-tree rule-reference substitutions only. All other math, identifiers, tags, structural macros, term tokens, environments and frozen comments preserved.",
+  "unresolved": "د عين تخصصي پاکستانۍ چاپي اصطلاحاتو شاهد نۀ دے ادعا شوے. OLINT-017 د خپل‌سرو مخکښونو د عمومي تفسير او سموالې سرچينه‌يي تشه ساتي؛ د عادي توليد شويو تابلوګانو د استلزام پايلې ناسموالی نۀ دے ادعا شوے. د ليکوال يا انسان متخصص تصويب نۀ دے ادعا شوے.",
+  "proof_gap_disclosed_unrepaired": "OLINT-017",
+  "model_provenance_sha256": "12d7c255958eadb1b69649588e4f89afe5cb8469ebb41b10d8de5f13d81981c7",
+  "next_executable_action": "Register B155 source treatments and canon use; run independent cumulative QA and dual canonical decision replay, then accept OLP-0511–0515."
+}

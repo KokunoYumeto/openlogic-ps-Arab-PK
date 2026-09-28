@@ -1,0 +1,50 @@
+{
+  "schema": "ps-b155-intuitionistic-tableaux-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0513",
+  "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+  "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+  "target_sha256": "d47c599bda750e445718e92df353fb2b76755f3a9a8768f244ec3584ed5fe141",
+  "source_blocks": 16,
+  "target_blocks": 16,
+  "math_spans": 47,
+  "source_correction_ids": [
+    "OLINT-013"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\sFmla{\\True}{!A}[\\sigma.{*}]$",
+      "$\\sFmla{\\False}{!B}[\\sigma.{*}]$",
+      "$\\sFmla{\\True}{!A}[\\sigma]$",
+      "$\\sFmla{\\False}{!B}[\\sigma]$"
+    ],
+    "target_only": [
+      "$\\sFmla{\\False}{!A}[\\sigma.{*}]$",
+      "$\\sFmla{\\True}{!B}[\\sigma.{*}]$",
+      "$\\sFmla{\\False}{!A}[\\sigma]$",
+      "$\\sFmla{\\True}{!B}[\\sigma]$"
+    ],
+    "scope": "Only disclosed source treatments OLINT-013"
+  },
+  "checks": {
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "source_comments_equal": true,
+    "source_frozen": true,
+    "paired_blocks": true,
+    "math_span_count": true,
+    "math_spans_exact_except_disclosed": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true,
+    "disclosures_present": true,
+    "four_conjunction_disjunction_rules": true,
+    "used_and_new_prefix_conditions": true,
+    "monotone_closure_and_reverse_exception": true,
+    "common_assumption_prefix": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register disclosed source treatments, including unrepaired arbitrary-prefix gap, and run cumulative QA and decision replay before acceptance."
+}

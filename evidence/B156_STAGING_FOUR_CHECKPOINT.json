@@ -1,0 +1,73 @@
+{
+  "schema": "ps-b156-four-staging/1",
+  "utc": "2026-09-28T23:00:37.305270+00:00",
+  "status": "four source-reviewed drafts staged; cumulative acceptance pending",
+  "accepted_draft_units": 515,
+  "total_units": 722,
+  "staged_unit_ids": [
+    "OLP-0516",
+    "OLP-0517",
+    "OLP-0518",
+    "OLP-0519"
+  ],
+  "units": [
+    {
+      "unit_id": "OLP-0516",
+      "source_path": "content/counterfactuals/counterfactuals.tex",
+      "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+      "target_sha256": "7988716ebd13ebc6704410c5a94714a36bebb5adb423b7b06d02f2eadfd63afc",
+      "focused_qa_sha256": "20215106955a41af4b2bd121f99bc23972ab706b9b9bedbddf93be9588b10320",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0517",
+      "source_path": "content/counterfactuals/introduction/introduction.tex",
+      "source_sha256": "9c730df185a453a8a7234e93924fdb224243e5eb28966c4fde44b0740aa668e9",
+      "target_sha256": "ce6a198e059eae5cbdf052beb3535b995769fb3ddda9f6d47c797b6dcd86c5ad",
+      "focused_qa_sha256": "f7bedae05b8247f90b10d133bcd8cd6c0fff9a39e4bc831121cbdf44d01a60b9",
+      "source_treatment_ids": []
+    },
+    {
+      "unit_id": "OLP-0518",
+      "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+      "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+      "target_sha256": "474a05b5ff930a94d26e6e3237b075b6a4d6186123334fff650fe38257bffffd",
+      "focused_qa_sha256": "43454224e636fb78c8152df3c0dbaf8af0dbd3feb1aaebe8feb3967c02680250",
+      "source_treatment_ids": [
+        "OLCNT-001",
+        "OLCNT-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0519",
+      "source_path": "content/counterfactuals/introduction/paradoxes-material.tex",
+      "source_sha256": "a96e295c0662cc160349ae9241950d176eb45968998616ebd599b1004f7a167c",
+      "target_sha256": "cd6bb513caef6e01b6c7e6c71bcc49298ba54feb839d71677709e3d5b4648e88",
+      "focused_qa_sha256": "4db7efa2080ff4d642025984fa0034116e4b890df40d4688aeecd574d138ef51",
+      "source_treatment_ids": []
+    }
+  ],
+  "paired_blocks": 39,
+  "math_spans": 56,
+  "changed_content_canon_uses": 13,
+  "focused_verification_sha256": "6ce5c3c9071af3a2d4d0cb83643f97a71a2ea8b908c4fefded1ddb58c2fff3b5",
+  "preflight_path": "work/B156_FOUR_COUNTERFACTUAL_PREFLIGHT.md",
+  "preflight_sha256": "f37a14adac644d52558940ddce96a1e62548c2a98794ee331b3a42f82baa2ede",
+  "staging_alignment_path": "work/B156_FOUR_STAGING_ALIGNMENT.jsonl",
+  "staging_alignment_sha256": "56ca4f0dd75430c36835cc9634efe8b7361ae68fab3183fe1ae4e40eb16bce9f",
+  "staging_canon_use_path": "work/B156_FOUR_STAGING_CANON_USE.jsonl",
+  "staging_canon_use_sha256": "19a04ac174b13c22f405b0a73a408575f1705b980b2a8834a4dca842d605eea3",
+  "b155_accepted_checkpoint_sha256": "dd9719ea84875ec084c0c62a537b4fbebd856ec21348679ede017d445ed1779e",
+  "pending_terminology": [
+    "TERM-COUNTERFACTUAL-CONDITIONAL",
+    "TERM-MATERIAL-CONDITIONAL"
+  ],
+  "pending_source_treatments": [
+    "OLCNT-001",
+    "OLCNT-002"
+  ],
+  "reader_units": 321,
+  "source_snapshot_units": 405,
+  "source_frozen": true,
+  "next_action": "Translate OLP-0520 strict conditional with disclosed source formula and S5-scope treatments; register B156 terminology/source choices and run cumulative QA before acceptance."
+}
