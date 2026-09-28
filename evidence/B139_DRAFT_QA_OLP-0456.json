@@ -1,0 +1,32 @@
+{
+  "schema": "ps-b139-finite-model-property-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0456",
+  "source_path": "content/normal-modal-logic/filtrations/S5-fmp.tex",
+  "source_sha256": "73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e",
+  "target_sha256": "fdf8bc04220ce4d3ab6c609a957bc21a8e75bcdd3f4957c858132d3c22afd8aa",
+  "source_blocks": 16,
+  "target_blocks": 16,
+  "registered_source_correction_id": "OLNML-028",
+  "expected_source_math": [
+    "$\\mSat{M^*}{!A}[w]$"
+  ],
+  "expected_target_math": [
+    "$\\mSat{M^*}{!A}[{[w]}]$"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "environments": true,
+    "identifiers": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "term_tokens": true,
+    "math": true,
+    "macro_names": true,
+    "source_comments": true,
+    "unicode_nfc": true,
+    "no_replacement_character": true
+  },
+  "all_checks_pass": true
+}

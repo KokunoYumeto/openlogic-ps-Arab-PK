@@ -1,0 +1,93 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "source-reviewed and staged; cumulative acceptance pending",
+  "recorded_utc": "2026-09-28T03:16:30.115148+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260928-NORMAL-MODAL-K-S5-FMP",
+  "batch_id": "PS-B139-NORMAL-MODAL-K-S5-FMP",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0456",
+      "source_path": "content/normal-modal-logic/filtrations/S5-fmp.tex",
+      "source_bytes": 3339,
+      "source_sha256": "73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e",
+      "target_sha256": "fdf8bc04220ce4d3ab6c609a957bc21a8e75bcdd3f4957c858132d3c22afd8aa",
+      "paired_blocks": 16,
+      "source_correction_ids": [
+        "OLNML-028"
+      ]
+    }
+  ],
+  "notes_path": "work/B139_SOURCE_REVIEW_NOTES.md",
+  "notes_sha256": "e11f6f25d934e30031be5b4f89cb0c3b473bced838b5107ad565368248d803fb",
+  "consultation_path": "work/B139_CANON_CONSULTATION.md",
+  "consultation_sha256": "5bcafded44869c163d155df7d3f1ba3534a88a3998aeb7970a6cfa45516e837e",
+  "staging_qa_sha256": "ff2b9f817cc761e42c1f1c790bb422e5bb0c49a00cb20d869c6b7fde5f313410",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Pakistani primary scholarly prose"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "pdf_page_1based": 179,
+      "printed_page": "166",
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 114,
+      "printed_page": "109",
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 38,
+      "printed_page": "33",
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P99-COUNTABILITY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "pdf_page_1based": 110,
+      "printed_page": "99",
+      "page_image_sha256": "dc729b28c01ff40d57f7caccf5be50f7f11dbc51aa144d53f4cb5c446a195049",
+      "inspection_timing": "earlier registered visual inspection reused",
+      "role": "Afghan regional comparator"
+    }
+  ],
+  "findings": [
+    {
+      "unit_id": "OLP-0456",
+      "source_correction_id": "OLNML-028",
+      "finding": "د فلټريشن د صدق د ساتنې قضيه له M د w نړۍ څخه په M* کښې د [w] نړۍ ته ځي. د سرچينې w د فلټريشن په نړۍو سټ W* کښې په عمومي ډول غړے نۀ دے؛ [w] يې غړے دے. د K د ثبوت پاتې کميت، فلټريشن او 2^n حد نۀ بدلېږي."
+    }
+  ],
+  "formula_policy": "Only the registered filtered-world math span differs; IDs, tags, environments, term tokens and frozen source are unchanged.",
+  "unresolved": "د K/S5 د متناهي مدل خاصيت عين پاکستانۍ مودالي اصطلاح لنډمهالې ده؛ انساني تصويب يا د نوي واحد چاپي کتنه نۀ ده ادعا شوې.",
+  "model_provenance_sha256": "5139bfa0cc9d92ba0c1bd7722e585768a0b9704137a3088074eacdab38cc0edf",
+  "next_executable_action": "Run cumulative and canonical QA, then continue OLP-0457."
+}

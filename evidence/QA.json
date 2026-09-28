@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 455,
-    "structural_pass": 455,
+    "draft_units": 456,
+    "structural_pass": 456,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B138-NORMAL-MODAL-FILTRATION-FINITE",
+  "batch": "PS-B139-NORMAL-MODAL-K-S5-FMP",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14809,6 +14809,44 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0456",
+      "path": "content/normal-modal-logic/filtrations/S5-fmp.tex",
+      "source_sha256": "73dfbf706b0e5593dd2a012581fac25f80499260b6f0ac17001235860f4e356e",
+      "translation_sha256": "fdf8bc04220ce4d3ab6c609a957bc21a8e75bcdd3f4957c858132d3c22afd8aa",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLNML-028"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mSat{M^*}{!A}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat{M^*}{!A}[{[w]}]$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -21501,6 +21539,72 @@
       "passage": "exponential bound",
       "reverse_paraphrase": "If Gamma contains n sentences, the number of filtered worlds is at most 2^n.",
       "finding": "د n او 2^n کره حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "FMP definition",
+      "reverse_paraphrase": "Any formula true somewhere in a Sigma-model is true somewhere in a finite Sigma-model.",
+      "finding": "د يوې شاهدې نړۍ او نظام قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "K frame scope",
+      "reverse_paraphrase": "K imposes no model-frame restrictions, so every filtration remains a K-model.",
+      "finding": "د K بې‌قيده مدلونه ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "K truth transport",
+      "reverse_paraphrase": "Truth of A at original w is preserved at filtered class [w], not at bare w.",
+      "finding": "OLNML-028 د نړۍ ډول سموي."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "finite subformulas",
+      "reverse_paraphrase": "The subformula set Gamma of A is finite and yields at most 2^n quotient worlds.",
+      "finding": "د متناهي‌والي د مخکنۍ قضيې حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "L filtration caution",
+      "reverse_paraphrase": "An L-model filtration must itself be an L-model; arbitrary filtrations need not preserve every frame property.",
+      "finding": "د عمومي ادعا محدوديت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "universal validity",
+      "reverse_paraphrase": "Validity in all universal models iff validity in all finite universal models.",
+      "finding": "د دواړو ټولګيو دوه اړخيزه اعتبار ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "finite countermodel",
+      "reverse_paraphrase": "A failure at w in a universal model passes to [w] in a finite filtration.",
+      "finding": "د ضدمدل نړۍ او جهت ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "universal closure",
+      "reverse_paraphrase": "Every original Ruv edge yields R*[u][v], and universal R makes filtered R* universal.",
+      "finding": "د R1 له مخې د اړيکې عموميت ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "S5 transfer",
+      "reverse_paraphrase": "Satisfiability in a reflexive Euclidean model transfers through a universal and finite universal model back to a finite reflexive Euclidean model.",
+      "finding": "د درې ګامه شاهد لړۍ ساتل شوې."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "serial reflexive exercise",
+      "reverse_paraphrase": "Every filtration of a serial or reflexive model preserves the respective property.",
+      "finding": "د تمرين respective قيد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0456",
+      "passage": "counterexample exercise",
+      "reverse_paraphrase": "Find a filtration that loses symmetry, transitivity or Euclideanness from a model with that respective property.",
+      "finding": "د نه‌ساتنې د درې بديلونو کميت ساتل شوے."
     }
   ],
   "builds": [
