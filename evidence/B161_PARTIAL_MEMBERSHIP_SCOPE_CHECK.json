@@ -1,0 +1,23 @@
+{
+  "schema": "ps-b161-partial-membership-scope-check/1",
+  "status": "PASS",
+  "membership": {
+    "x": [
+      "y"
+    ],
+    "y": [
+      "x"
+    ]
+  },
+  "successor_members": {
+    "s(x)": [
+      "x",
+      "y"
+    ],
+    "s(y)": [
+      "x",
+      "y"
+    ]
+  },
+  "scope": "Two-node partial membership calculation only; not a model of all Zminus axioms or an independence theorem. Shows why excluding membership cycles matters to source successor-scope reasoning."
+}

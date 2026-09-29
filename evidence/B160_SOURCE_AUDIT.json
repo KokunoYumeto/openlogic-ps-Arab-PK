@@ -1,0 +1,76 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "accepted editable drafts; cumulative QA and dual canonical replay PASS",
+  "utc": "2026-09-29T02:07:23.614028+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-ZERMELO-OPENING",
+  "batch_id": "PS-B160-ZERMELO-SEPARATION-UNION-PAIRS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0537",
+      "source_path": "content/set-theory/z/z.tex",
+      "source_bytes": 371,
+      "source_sha256": "43206be4ccde2c429283bc09a731a20b667ca5fcaec3030a9db434442a71a69b",
+      "target_sha256": "b587f20f73b6e466c15ce33af112ac8d6b2ebab04dafab4401f2fae07e7fb1b0",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0538",
+      "source_path": "content/set-theory/z/story.tex",
+      "source_bytes": 1611,
+      "source_sha256": "675bc77160d15d826fc2960c15764275f12e8ef2450e121d6f34981d7af64a99",
+      "target_sha256": "f83286207b85cc843df19e1656b78800e12bcd2b284d93a02262643757bd799d",
+      "paired_blocks": 6,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0539",
+      "source_path": "content/set-theory/z/separation.tex",
+      "source_bytes": 4310,
+      "source_sha256": "5e4a9611823aa454b51908d88aa15f3fd4ee41af84f847a98e1c8a003a9b7a0b",
+      "target_sha256": "72266802ac44fe94a704b124c2c2dfe5a68c7191965b1bc9ea17ef2831c0188b",
+      "paired_blocks": 24,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0540",
+      "source_path": "content/set-theory/z/union.tex",
+      "source_bytes": 922,
+      "source_sha256": "5cd50b70d0d606fa557040cfa94f3b34303bd1f5ac56c1ed03cb23ed4520fdc4",
+      "target_sha256": "6fa39122adc6152f1e3aad9387faa416e877c7b211de3f65cd00468185726d12",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0541",
+      "source_path": "content/set-theory/z/pairs.tex",
+      "source_bytes": 2590,
+      "source_sha256": "6e386f6c7bb1e2a08dd198e5ad421083df93eb4273efa9370d92b5432d11843f",
+      "target_sha256": "a6cf3c87bd26d91b86a14290c50f4c90769100f97a9bf551d5ffc3a912409c49",
+      "paired_blocks": 16,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B160_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "bb07714eb59b60df5992f97233b3bbcf6427274a1fb43bfd6d63e6cfc43408b4",
+  "staging_checkpoint_sha256": "4e15871389ca03e6319325b995dc50abb07121368e04ba5e3d6efc0458d5a636",
+  "model_provenance_sha256": "b29f6422cd6ead66e6b17408df0f19b723837eb0bc8f4352fd338f1023f6cb58",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-MOE-P11-SUBSET"
+  ],
+  "new_term_ids": [
+    "TERM-SET-SEPARATION",
+    "TERM-SET-STAGE-PRINCIPLES",
+    "TERM-SET-PAIRING-AXIOM"
+  ],
+  "new_source_correction_ids": [],
+  "formula_policy": "All60 paired blocks and92 ordered active math spans exact. No formal, diagram, citation, identifier or tag correction.",
+  "unresolved": "عين نوي تخنيکي مرکب نومونه لنډمهاله دي. د پړاو غير رسمي توجيه د نوې رسمي سازګارۍ يا بنياد قضيې ثبوت نۀ دے. د پخواني شاخص ځينې انګرېزي تشريحګانې لا د پښتو کولو اړې دي.",
+  "next_executable_action": "Publish and anonymously verify B160 acceptance, the localized stage-principle review and five checked B161 drafts. Localize reader stage macros and preserve prepared scope without TeX-slot polling. Register B161 choices and OLSTH-003 source-scope disclosure, run546-unit QA and continue OLP-0547 onward. Same GPT-6 Sol Ultra chat remains active.",
+  "accepted_utc": "2026-09-29T02:22:05.132416+00:00",
+  "corpus_qa_sha256": "290923a5f409f5635b5ef704d4988577d1611b0f8ade3474fe6191d603a6234a",
+  "canonical_replay_sha256": "cd39c8fee20443b31497713d63e8dc9b05829187563383c95b89eacf8aa579d9"
+}
