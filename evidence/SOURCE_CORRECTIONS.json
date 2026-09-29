@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0520; historical OLINT-011 and OLINT-017 source proof gaps remain disclosed",
-  "adopted_utc": "2026-09-28T23:26:59.821407+00:00",
+  "status": "adopted through OLP-0525; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
+  "adopted_utc": "2026-09-28T23:57:44.357035+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -14594,6 +14594,270 @@
           298
         ]
       }
+    },
+    {
+      "id": "OLCNT-005",
+      "unit_id": "OLP-0521",
+      "classification": "missing_closing_parenthesis_in_subjunctive_prose",
+      "source_path": "content/counterfactuals/introduction/counterfactuals.tex",
+      "source_sha256": "b99a7ee8d111ff23508238df4fae5208e76f84f1a2cba55c5eecaff5814f7dba",
+      "source_locator": "content/counterfactuals/introduction/counterfactuals.tex:19,60",
+      "source_literal_line_1based": [
+        19,
+        60
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/introduction/counterfactuals.tex",
+      "target_sha256": "e3b4a792e9be2bfbb83a1b2e129eda7c98387c208d3d574c86d442ad9557fdda",
+      "target_line_1based": 19,
+      "target_literal_line_1based": [
+        19
+      ],
+      "disclosure_line_1based": 19,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د لومړۍ تشريح د پرانيستي قوس ورک تړون په ژباړه کښې تړل شوے، له څنګ‌ته څرګندونې سره.",
+      "reason": "سرچينه قوس پرانيزي خو د التزامي شرطونو د نوم له تشريح وروسته يې نۀ تړي؛ رسمي محتوا نۀ بدلېږي.",
+      "formula_policy": "Prose or typography only; all166 math spans, seven raw TikZ diagrams, identifiers and formal definitions unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
+      "audit_artifacts": [
+        "B157_SOURCE_AUDIT.json",
+        "B157_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B157_DRAFT_QA_OLP-0521.json",
+        "B157_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B157 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "revision_history": [
+        {
+          "batch": "B157",
+          "old_target_sha256": "f2e1a5651f239eeed018b832133afddd29b1e347d444d519a7897e3d9cf84e03",
+          "target_sha256": "e3b4a792e9be2bfbb83a1b2e129eda7c98387c208d3d574c86d442ad9557fdda",
+          "reason": "CRLF-to-LF only; source-local prose treatment unchanged."
+        }
+      ]
+    },
+    {
+      "id": "OLCNT-006",
+      "unit_id": "OLP-0524",
+      "classification": "layer_prose_puts_difference_outside_outer_sphere",
+      "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/sphere-models.tex:40,41,43,47",
+      "source_literal_line_1based": [
+        40,
+        41,
+        43,
+        47
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+      "target_line_1based": 44,
+      "target_literal_line_1based": [
+        44
+      ],
+      "disclosure_line_1based": 44,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د پوړ موقعيت له دننۍ سيمې بهر او په بهرنۍ سيمه کښې دننه روښانه شوے.",
+      "reason": "د سرچينې خپل ليکل شوے سټ توپير په بهرنۍ سيمه کښې پروت دے، نه له هغې بهر؛ فورمول او شکل عين دي.",
+      "formula_policy": "Prose or typography only; all166 math spans, seven raw TikZ diagrams, identifiers and formal definitions unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
+      "audit_artifacts": [
+        "B157_SOURCE_AUDIT.json",
+        "B157_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B157_DRAFT_QA_OLP-0524.json",
+        "B157_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B157 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "8d7a0e1cdc084b4dd57083ecd3fa51528a404343d1ca9c66e53ca0aacf27001d",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "revision_history": [
+        {
+          "batch": "B157",
+          "old_target_sha256": "b56fb0b3175931ae18550d14a5c30dd97efdc5c0ebd9380563d5df2926ea3e28",
+          "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+          "reason": "CRLF-to-LF only; source-local prose treatment unchanged."
+        }
+      ]
+    },
+    {
+      "id": "OLCNT-007",
+      "unit_id": "OLP-0524",
+      "classification": "inner_sphere_witness_condition_requires_admitting_restriction",
+      "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/sphere-models.tex:67,102,103",
+      "source_literal_line_1based": [
+        67,
+        102,
+        103
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+      "target_line_1based": 113,
+      "target_literal_line_1based": [
+        113
+      ],
+      "disclosure_line_1based": 113,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دننيو سيمو د دعوې لپاره د مقدم-منونکې سيمې قيد او د تر ټولو دننۍ منونکې سيمې د شتون حد څرګند شوے.",
+      "reason": "په دننۍ سيمه کښې د مقدم شاهد نۀ لازماً پاتې کېږي؛ ثبت شوې دوه‌نړۍ بېلګه د سرچينې بې‌قيده نثري دعوه ناسموي.",
+      "formula_policy": "Prose or typography only; all166 math spans, seven raw TikZ diagrams, identifiers and formal definitions unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
+      "audit_artifacts": [
+        "B157_SOURCE_AUDIT.json",
+        "B157_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B157_DRAFT_QA_OLP-0524.json",
+        "B157_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B157 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "8d7a0e1cdc084b4dd57083ecd3fa51528a404343d1ca9c66e53ca0aacf27001d",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "revision_history": [
+        {
+          "batch": "B157",
+          "old_target_sha256": "b56fb0b3175931ae18550d14a5c30dd97efdc5c0ebd9380563d5df2926ea3e28",
+          "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+          "reason": "CRLF-to-LF only; source-local prose treatment unchanged."
+        }
+      ]
+    },
+    {
+      "id": "OLCNT-008",
+      "unit_id": "OLP-0524",
+      "classification": "innermost_singleton_prose_needs_nonempty_sphere_scope",
+      "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/sphere-models.tex:36,37,67,99,103,106,108",
+      "source_literal_line_1based": [
+        36,
+        37,
+        67,
+        99,
+        103,
+        106,
+        108
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+      "target_line_1based": 39,
+      "target_literal_line_1based": [
+        39
+      ],
+      "disclosure_line_1based": 39,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د مرکز يوعنصري سټ د تر ټولو دننۍ ناتشې سيمې په معنا روښانه شوے؛ رسمي تعريف عين دے.",
+      "reason": "تعريف تش سټ نۀ منع کوي؛ ثبت شوے درې-سيمو نظام ټول څلور رسمي شرطونه پوره کوي او تشه سيمه هم لري.",
+      "formula_policy": "Prose or typography only; all166 math spans, seven raw TikZ diagrams, identifiers and formal definitions unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
+      "audit_artifacts": [
+        "B157_SOURCE_AUDIT.json",
+        "B157_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B157_DRAFT_QA_OLP-0524.json",
+        "B157_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B157 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "8d7a0e1cdc084b4dd57083ecd3fa51528a404343d1ca9c66e53ca0aacf27001d",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "revision_history": [
+        {
+          "batch": "B157",
+          "old_target_sha256": "b56fb0b3175931ae18550d14a5c30dd97efdc5c0ebd9380563d5df2926ea3e28",
+          "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+          "reason": "CRLF-to-LF only; source-local prose treatment unchanged."
+        }
+      ]
     }
   ],
   "external_upstream_report_submitted": false,
@@ -14696,7 +14960,8 @@
     "PS-OWNER-SEMANTIC-20260928-INTUITIONISTIC-COMPLETENESS",
     "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
-    "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS"
+    "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS",
+    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES"
   ],
   "source_authorities": [
     {

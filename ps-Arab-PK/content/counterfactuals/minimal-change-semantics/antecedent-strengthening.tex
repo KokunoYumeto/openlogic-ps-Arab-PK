@@ -1,0 +1,76 @@
+% Part: counterfactuals
+% Chapter: minimal-change-semantics
+% Section: antecedent-strengthening
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{min}{agg}
+
+\olsection{د مقدم پياوړي کول}
+
+«د مقدم پياوړي کول» دې استنتاج ته وايي:
+$!A \lif !C \Entails (!A \land !B) \lif !C$۔ دا د مادي
+شرطي لپاره معتبر دے، خو د واقعيت خلاف شرطونو لپاره نامعتبر
+دے۔ فرض کړئ چې دا رښتينې ده چې که زه د اورلګيت دا لرګے ووهم،
+نو بل به شي۔ (يعنې په لرګي يا د اورلګيت د کتابچې په سطحه کښې
+څه خرابوالے نشت، زه به لرګے مات نۀ کړم، او داسې نور۔) خو دا
+رښتينې نۀ ده چې که زه دا لرګے په بهرنۍ خلا کښې ووهم، نو بل
+به شي۔ د نسخې څرګندونه (OLCNT-009): منجمده سرچينه دلته او
+د نژدې نړۍو په لاندې تشريح کښې د وهلو پر ځاے د بلولو فعل
+کاروي؛ د همدې برخې د دواړو نقل شويو ويناوو او رسمي بېلګې له
+مخې د مقدم مراد د لرګي وهل دي، چې دلته روښانه شوے دے۔ نو دا
+استنتاج نامعتبر دے:
+\begin{quote}
+  که د اورلګيت لرګے وهل شوے وے، نو بل شوے به وے۔
+
+  نو که د اورلګيت لرګے په بهرنۍ خلا کښې وهل شوے وے، نو بل شوے به وے۔
+\end{quote}
+
+د شرطونو د لويس--سټالنکر شننه دا تشريح کوي: هغه تر ټولو
+نژدې نړۍ چې زه پکښې لرګے وهم او دا په بهرنۍ خلا کښې کوم،
+له واقعي نړۍ څخه د هغې تر ټولو نژدې نړۍ په پرتله ډېره ليرې
+ده چې زه پکښې لرګے وهم۔ نو که څه هم په وروستۍ نړۍ کښې د
+لرګي بلېدل رښتيني دي، په لومړۍ کښې نۀ دي۔ او بايد همداسې وي۔
+
+\begin{ex}
+  د کروي سيمو معنٰی پوهنه استنتاج نامعتبر ثابتوي، يعنې $p
+  \cif r \Entails/ (p \land q) \cif r$ لرو۔ مدل $\mModel{M}
+  = \tuple{W, O, V}$ وګورئ چې $W = \{w, w_1, w_2\}$، $O_w = \{\{w\}, \{w,
+  w_1\}, \{w, w_1, w_2\}\}$، $V(p) = \{w_1, w_2\}$، $V(q) = \{w_2\}$
+  او $V(r) = \{w_1\}$ لري۔ يوه $p$-منونکې کروي سيمه $S = \{w,
+  w_1\}$ شته او $p \lif r$ پکښې په ټولو نړۍو کښې رښتينې ده،
+  نو $\mSat{M}{p
+    \cif r}[w]$۔ يوه $(p \land q)$-منونکې کروي سيمه $S' =
+  \{w, w_1, w_2\}$ هم شته، خو $\mSat/{M}{(p \land q) \lif r}[w_2]$،
+  نو $\mSat/{M}{(p \land q) \cif r}[w]$
+  (\olref{fig:antecedent-strengthening} وګورئ)۔
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[layerwidth=1.5,scale=.6]\tiny
+  \spheresystem{3}
+  \propositionintersect{-10}{3}{30}{5}
+  \begin{scope}
+    \clip plot[smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} -- (4.5,4.5) ;
+    \spherefill{2}
+  \end{scope}
+  \draw[proposition] plot[dashed,smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} ;
+  \proposition{30}{2}{30}{5}
+  \path (0,0) node[world] {$w$};
+  \spherepos{30}{2}{node[world] {$w_1$}}
+  \spherepos{-10}{3}{node[world] {$w_2$}}
+  \spherepos{-10}{4}{node {$q$}}
+  \spherepos{30}{4}{node {$r$}}
+  \draw (1,4.5) node[below] {$p$};
+\end{tikzpicture}
+\caption{د مقدم د پياوړي کولو ضدبېلګه}
+\ollabel{fig:antecedent-strengthening}
+\end{center}
+\end{figure}
+\end{ex}
+
+\end{document}

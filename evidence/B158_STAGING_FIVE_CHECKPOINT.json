@@ -1,0 +1,232 @@
+{
+  "schema": "ps-b158-five-staging/1",
+  "utc": "2026-09-29T00:10:26.206423+00:00",
+  "status": "five checked drafts staged; not accepted",
+  "accepted_draft_units_at_staging": 520,
+  "B157_acceptance_pending": true,
+  "unit_ids": [
+    "OLP-0526",
+    "OLP-0527",
+    "OLP-0528",
+    "OLP-0529",
+    "OLP-0530"
+  ],
+  "units": [
+    {
+      "schema": "ps-b158-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0526",
+      "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+      "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+      "target_sha256": "b425f497678c75b74c520b4a1b6f26e49dec28808cc9fdeed01efdb8e60f140e",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "math_spans": 22,
+      "tikz_diagrams": 1,
+      "source_correction_ids_pending_registration": [
+        "OLCNT-009"
+      ],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b158-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0527",
+      "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+      "target_sha256": "8d050701d246b360fa236ddb797087985e02d09f83055b151994cca7030e2b5a",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "math_spans": 25,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [
+        "OLCNT-010",
+        "OLCNT-011"
+      ],
+      "math_exception": {
+        "source_only": [
+          "$\\mSat/{M}{q\\lifr}$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{q\\lifr}$"
+        ]
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b158-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0528",
+      "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+      "target_sha256": "031c217729b984b08c84314abfbfbffff23a62064467bed51d95e48d7c33cfab",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "math_spans": 28,
+      "tikz_diagrams": 1,
+      "source_correction_ids_pending_registration": [
+        "OLCNT-012",
+        "OLCNT-013"
+      ],
+      "math_exception": {
+        "source_only": [
+          "$O=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$",
+          "$\\mSat{M}{p\\cifq}[w]$",
+          "$\\mSat/{M}{\\lnotq\\lif\\lnotp}[w_2]$"
+        ],
+        "target_only": [
+          "$O_w=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$",
+          "$\\mSat{M_1}{p\\cifq}[w]$",
+          "$\\mSat/{M_1}{\\lnotq\\lif\\lnotp}[w_2]$"
+        ]
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b158-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0529",
+      "source_path": "content/set-theory/set-theory.tex",
+      "source_sha256": "2ecb71a25920205cd2d00a9ad69601348ff5fd0db30e5b94d396d0da01007a21",
+      "target_sha256": "bc8be02c0b28c1fc1171da70a0182b14d5067a90136d2716615587ace951c2d8",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "math_spans": 0,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b158-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0530",
+      "source_path": "content/set-theory/story/story.tex",
+      "source_sha256": "d8a35d662d8ba0ef853832e82502a4c802f13edae6055c14a578fe051aeabd03",
+      "target_sha256": "a046ccb9bcfed264d0e623b2378e5ece5e2b77827e146ff493c8d202899d4d28",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "math_spans": 0,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    }
+  ],
+  "paired_blocks": 46,
+  "changed_content_canon_uses": 20,
+  "math_spans": 75,
+  "tikz_diagrams": 2,
+  "source_frozen": true,
+  "notes_sha256": "d19230489cc4756d894c059e06a52490b2caddfc7994193226a55501e2638f40",
+  "finite_scope_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+  "staging_alignment_sha256": "eacf9661ff294ac51f6d7a0c4a4a0c73109cbb189f4aca14719d0b0848ea93cb",
+  "staging_canon_use_sha256": "3480498eb5c0a31a3d7fbdf5d07d78a4b1cf114e5b76bf0594c21876dcf6297b",
+  "new_term_choices_pending_registration": [
+    "antecedent strengthening",
+    "iterative conception"
+  ],
+  "source_treatments_pending_registration": [
+    "OLCNT-009",
+    "OLCNT-010",
+    "OLCNT-011",
+    "OLCNT-012",
+    "OLCNT-013"
+  ],
+  "next_action": "Accept B157 after its live replay finishes; register B158 source and terminology choices and full semantic review before cumulative acceptance."
+}

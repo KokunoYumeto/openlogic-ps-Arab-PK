@@ -1,0 +1,43 @@
+{
+  "schema": "ps-b157-normalized-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0525",
+  "source_path": "content/counterfactuals/minimal-change-semantics/true-false.tex",
+  "source_sha256": "cd1c4ae0d9b97228174e754a0f786211c56f689360a476ba1ec27858f58922e9",
+  "target_sha256": "a8d9a3b7378ee0b378b34099c37082ab877af25cdd8cad49a35fe6867a4bf138",
+  "source_blocks": 8,
+  "target_blocks": 8,
+  "math_spans": 39,
+  "tikz_diagrams": 5,
+  "source_correction_ids_pending_registration": [],
+  "metalinguistic_english_exception": null,
+  "checks": {
+    "math_exact": true,
+    "paired_blocks": true,
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "tikz_bytes_equal": true,
+    "nfc": true,
+    "source_frozen": true,
+    "no_replacement_character": true,
+    "no_untranslated_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance.",
+  "prior_published_focused_qa_sha256": "063510bd8778d7bbad421f1844ce2413dbe63b5010e376ad6e863e6451952bb5",
+  "prior_target_sha256": "b80455e6afb81d6965b88028f7fb80279899a4f0c29adfb5b23f4593924c25da",
+  "additional_raw_byte_checks": {
+    "math_exact": true,
+    "ids_equal": true,
+    "tags_equal": true,
+    "macros_equal": true,
+    "raw_tikz_bytes_equal": true,
+    "only_newline_bytes_changed": true
+  },
+  "source_newline_style": "LF",
+  "target_newline_style": "LF"
+}

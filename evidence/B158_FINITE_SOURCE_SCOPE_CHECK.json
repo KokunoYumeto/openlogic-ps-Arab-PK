@@ -1,0 +1,53 @@
+{
+  "schema": "ps-b158-source-countermodel-replay/1",
+  "status": "PASS",
+  "checks": {
+    "antecedent-strengthening": [
+      true,
+      false
+    ],
+    "transitivity": [
+      true,
+      true,
+      false
+    ],
+    "contraposition": [
+      true,
+      false
+    ]
+  },
+  "worlds": [
+    0,
+    1,
+    2
+  ],
+  "center": 0,
+  "centered_systems": {
+    "0": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "1": [
+      [
+        1
+      ]
+    ],
+    "2": [
+      [
+        2
+      ]
+    ]
+  },
+  "source_model_data_preserved": true,
+  "scope": "Replay of three frozen finite source countermodels; no new unbounded theorem or changed diagram."
+}

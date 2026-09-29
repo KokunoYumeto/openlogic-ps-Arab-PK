@@ -1,0 +1,36 @@
+{
+  "schema": "ps-b157-newline-reconciliation/1",
+  "status": "PASS",
+  "units": {
+    "OLP-0521": {
+      "source_path": "content/counterfactuals/introduction/counterfactuals.tex",
+      "old_target_sha256": "f2e1a5651f239eeed018b832133afddd29b1e347d444d519a7897e3d9cf84e03",
+      "target_sha256": "e3b4a792e9be2bfbb83a1b2e129eda7c98387c208d3d574c86d442ad9557fdda"
+    },
+    "OLP-0522": {
+      "source_path": "content/counterfactuals/minimal-change-semantics/minimal-change-semantics.tex",
+      "old_target_sha256": "6927a859f84137cf417778b830bafca23c87c2d3283c36a0f8fbc00a567b022b",
+      "target_sha256": "25193eb958778f338ed0a27210eedafe45b4899678b32569b2b5e0a7e01e2292"
+    },
+    "OLP-0523": {
+      "source_path": "content/counterfactuals/minimal-change-semantics/introduction.tex",
+      "old_target_sha256": "3508330e742e42df50040fbf3e9e44bd3238f30dc54d97518ab231542473ff0a",
+      "target_sha256": "13776b31fadd823733f7dc241f79f968ff14ce6d45172059c810f9f91ecb9b1b"
+    },
+    "OLP-0524": {
+      "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "old_target_sha256": "b56fb0b3175931ae18550d14a5c30dd97efdc5c0ebd9380563d5df2926ea3e28",
+      "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd"
+    },
+    "OLP-0525": {
+      "source_path": "content/counterfactuals/minimal-change-semantics/true-false.tex",
+      "old_target_sha256": "b80455e6afb81d6965b88028f7fb80279899a4f0c29adfb5b23f4593924c25da",
+      "target_sha256": "a8d9a3b7378ee0b378b34099c37082ab877af25cdd8cad49a35fe6867a4bf138"
+    }
+  },
+  "prior_published_staging_sha256": "9256ffe63f4852102addc49d0f82e25e8bdc97d05a15cf164236e3428f31209f",
+  "revised_staging_sha256": "c8f0dc8fe1a38f674a719705aa9f93d4bbd21c6f1eb39c1815a02f16b83ef15d",
+  "revised_source_audit_sha256": "aecd3b04fef7fdd2c9272321cf580fa14d7154146c2de53f3335c61bea1d3596",
+  "historical_receipts_unchanged": true,
+  "reason": "Raw cumulative segmentation treated newline-only differences as translated blocks; matching source newline bytes removes26 false changed-content classifications."
+}

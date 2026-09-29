@@ -1,4 +1,4 @@
-"""Build the cumulative OLP-0001..OLP-0255 Pashto reader.
+"""Prepare a cumulative Pashto reader within the full 722-unit source manifest.
 
 The script prepares deterministic XeLaTeX input only.  TeX must be run via
 ``tools/guard_tex.ps1`` so the global Interlanguage TeX mutex and captured
@@ -26,10 +26,15 @@ EXPECTED_IDS = [f"OLP-{number:04d}" for number in range(1, 256)]
 
 # Match the default profile declared by the frozen upstream configuration.
 ACTIVE_TAGS = base.ACTIVE_TAGS | frozenset(
-    {"TMs", "lambda", "novice", "math", "compsci", "phil", "cmplCCS", "cmplMCS"}
+    {"TMs", "lambda", "novice", "math", "compsci", "phil", "cmplCCS", "cmplMCS",
+     "prvBox", "prvDiamond"}
 )
-INACTIVE_TAGS = base.INACTIVE_TAGS
+INACTIVE_TAGS = base.INACTIVE_TAGS | frozenset(
+    {"defBox", "defDiamond", "probBox", "probDiamond",
+     "probFalse", "probTrue", "proband"}
+)
 base.ACTIVE_TAGS = ACTIVE_TAGS
+base.INACTIVE_TAGS = INACTIVE_TAGS
 base.INACTIVE_TAGS = INACTIVE_TAGS
 
 TOKENS = dict(base.TOKENS)
@@ -83,6 +88,9 @@ TOKENS.update(
         "lambda defined": ("لامبډا-تعريف",) * 4,
         "lambda definable": ("د لامبډا په وسيله د تعريف وړ",) * 4,
         "parameter": ("پارامېټر", "پارامېټرونه", "پارامېټر", "پارامېټرونو"),
+        "relational model": (
+            "اړيکيز مدل", "اړيکيز مدلونه", "اړيکيز مدل", "اړيکيز مدلونو"
+        ),
     }
 )
 base.TOKENS = TOKENS
@@ -588,8 +596,8 @@ def main() -> None:
     args = parser.parse_args()
     build_dir = args.build_dir.resolve()
     build_dir.mkdir(parents=True, exist_ok=True)
-    if args.through_unit not in (255, 321, 372):
-        raise ValueError("supported cumulative reader boundaries are OLP-0255, OLP-0321 and OLP-0372")
+    if not 1 <= args.through_unit <= 722:
+        raise ValueError("cumulative reader boundary must be between OLP-0001 and OLP-0722")
     expected_ids = [f"OLP-{number:04d}" for number in range(1, args.through_unit + 1)]
 
     rows = [
@@ -736,6 +744,14 @@ def main() -> None:
             ],
         },
         "source_syntax_recoveries": [
+            {
+                "unit_id": "OLP-0447",
+                "source_path": "content/normal-modal-logic/completeness/truth-lemma.tex",
+                "finding": "The optional exercise tag list uses undeclared probFalse/probTrue and lowercase proband; the frozen default config makes the other prob tags false while all primitive proof cases are active.",
+                "reader_recovery": "Resolve these three optional-exercise tags as inactive in this explicit default-profile reader. No proof case or translated source file is changed; the complete exercise remains in the editable source.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
             {
                 "unit_id": "OLP-0039",
                 "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",

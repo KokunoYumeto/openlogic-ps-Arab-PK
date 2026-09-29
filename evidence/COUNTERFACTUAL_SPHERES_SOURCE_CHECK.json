@@ -1,0 +1,41 @@
+{
+  "schema": "ps-b157-source-semantic-review/1",
+  "status": "PASS",
+  "utc": "2026-09-29T00:28:01.334110+00:00",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_ids": [
+    "OLP-0521",
+    "OLP-0522",
+    "OLP-0523",
+    "OLP-0524",
+    "OLP-0525"
+  ],
+  "source_sha256": {
+    "OLP-0521": "b99a7ee8d111ff23508238df4fae5208e76f84f1a2cba55c5eecaff5814f7dba",
+    "OLP-0522": "07af1173a0566d6b3fe2a45972e0eb9ad540a826380eedc5a5053fef44976df1",
+    "OLP-0523": "52eadae36895fda99f808b74a27529041a2fa0bccbfddea6c11eec92c016b2e4",
+    "OLP-0524": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+    "OLP-0525": "cd1c4ae0d9b97228174e754a0f786211c56f689360a476ba1ec27858f58922e9"
+  },
+  "target_sha256": {
+    "OLP-0521": "e3b4a792e9be2bfbb83a1b2e129eda7c98387c208d3d574c86d442ad9557fdda",
+    "OLP-0522": "25193eb958778f338ed0a27210eedafe45b4899678b32569b2b5e0a7e01e2292",
+    "OLP-0523": "13776b31fadd823733f7dc241f79f968ff14ce6d45172059c810f9f91ecb9b1b",
+    "OLP-0524": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+    "OLP-0525": "a8d9a3b7378ee0b378b34099c37082ab877af25cdd8cad49a35fe6867a4bf138"
+  },
+  "audit_sha256": "d2d5851d5261744dea60abc1cf1f16c4f4a7b32c7195b57e3a71fa6390f581ab",
+  "notes_sha256": "3e72d6190f7d02764fe232cb6b90ef570031ca6aeb974992e689bc7fb5241beb",
+  "staging_checkpoint_sha256": "c8f0dc8fe1a38f674a719705aa9f93d4bbd21c6f1eb39c1815a02f16b83ef15d",
+  "historical_staging_sha256": "9256ffe63f4852102addc49d0f82e25e8bdc97d05a15cf164236e3428f31209f",
+  "source_correction_ids": [
+    "OLCNT-005",
+    "OLCNT-006",
+    "OLCNT-007",
+    "OLCNT-008"
+  ],
+  "source_correction_registry_sha256": "667addfc0e2e64b6bf54b17683ba64c7423c2829239421ac35a430741b739e33",
+  "finite_scope_check_sha256": "8d7a0e1cdc084b4dd57083ecd3fa51528a404343d1ca9c66e53ca0aacf27001d",
+  "unresolved": "د څلورو مرکبو نومونو عين تخصصي پاکستانۍ چاپي شاهدي يا د انسان تصويب نۀ دے ادعا شوے؛ نومونه لنډمهاله دي. د متناهي سرچينه‌يي QA بېلګې د نوې نامحدودې قضيې ثبوت نۀ دي.",
+  "next_action": "Push and anonymously verify B157 acceptance, B158 staging and reader workflow repairs; register B158 source/term choices, run cumulative QA and continue at OLP-0531. Preserve pending expanded-reader build scope; TeX occupancy never blocks translation."
+}

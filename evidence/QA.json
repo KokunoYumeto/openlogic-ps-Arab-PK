@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 520,
-    "structural_pass": 520,
+    "draft_units": 525,
+    "structural_pass": 525,
     "visually_accepted": 321,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B156-COUNTERFACTUAL-OPENING",
+  "batch": "PS-B157-COUNTERFACTUAL-SPHERES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -17028,6 +17028,162 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0521",
+      "path": "content/counterfactuals/introduction/counterfactuals.tex",
+      "source_sha256": "b99a7ee8d111ff23508238df4fae5208e76f84f1a2cba55c5eecaff5814f7dba",
+      "translation_sha256": "e3b4a792e9be2bfbb83a1b2e129eda7c98387c208d3d574c86d442ad9557fdda",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLCNT",
+        "be",
+        "to"
+      ],
+      "allowed_residual_english": [
+        "OLCNT",
+        "be",
+        "to"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCNT-005"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0522",
+      "path": "content/counterfactuals/minimal-change-semantics/minimal-change-semantics.tex",
+      "source_sha256": "07af1173a0566d6b3fe2a45972e0eb9ad540a826380eedc5a5053fef44976df1",
+      "translation_sha256": "25193eb958778f338ed0a27210eedafe45b4899678b32569b2b5e0a7e01e2292",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0523",
+      "path": "content/counterfactuals/minimal-change-semantics/introduction.tex",
+      "source_sha256": "52eadae36895fda99f808b74a27529041a2fa0bccbfddea6c11eec92c016b2e4",
+      "translation_sha256": "13776b31fadd823733f7dc241f79f968ff14ce6d45172059c810f9f91ecb9b1b",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0524",
+      "path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+      "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+      "translation_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "OLCNT"
+      ],
+      "allowed_residual_english": [
+        "OLCNT"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCNT-006",
+        "OLCNT-007",
+        "OLCNT-008"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0525",
+      "path": "content/counterfactuals/minimal-change-semantics/true-false.tex",
+      "source_sha256": "cd1c4ae0d9b97228174e754a0f786211c56f689360a476ba1ec27858f58922e9",
+      "translation_sha256": "a8d9a3b7378ee0b378b34099c37082ab877af25cdd8cad49a35fe6867a4bf138",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -25814,6 +25970,132 @@
       "passage": "OLINT-023",
       "reverse_paraphrase": "The two prose rule labels use Sign then Op, exactly as the macro definition and the formal rule table.",
       "finding": "Two label arguments corrected; all formal tables and earlier sign repairs retained."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "usually",
+      "reverse_paraphrase": "Counterfactual antecedents are usually false, not false by definition.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "moods",
+      "reverse_paraphrase": "The English verb to be and its past subjunctive remain named metalinguistic literals.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "Adams",
+      "reverse_paraphrase": "The indicative Kennedy example and counterfactual alternative have different truth conditions; conditional historical claims retain their assumptions.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "causation",
+      "reverse_paraphrase": "A match counterfactual expresses causation; both material examples may be true merely because the match is never struck.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "ontology",
+      "reverse_paraphrase": "The ontic account refers to a closest antecedent-world; probability and belief-revision accounts are alternatives.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0521",
+      "passage": "plurality",
+      "reverse_paraphrase": "Stalnaker and Lewis have different assumptions and valid inferences; no unique shared logic is asserted.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0522",
+      "passage": "imports",
+      "reverse_paraphrase": "Six chapter imports and the end hook remain exact.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0523",
+      "passage": "minimal",
+      "reverse_paraphrase": "Only the change needed to strike the match is considered; all unrelated dramatic changes remain excluded.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0523",
+      "passage": "connective",
+      "reverse_paraphrase": "Lewis and Stalnaker symbols and the added binary connective are preserved exactly.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0523",
+      "passage": "worlds",
+      "reverse_paraphrase": "Satisfaction at w is defined through antecedent and consequent truth at other worlds, requiring a closeness relation.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0523",
+      "passage": "diagram",
+      "reverse_paraphrase": "Nested spheres represent closeness; all source TikZ commands and the intuitive nearest-world explanation are retained.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "model",
+      "reverse_paraphrase": "The triple, valuation domain and codomain, sphere assignment, singleton centering, nestedness and closure conditions remain exact.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "families",
+      "reverse_paraphrase": "Nonempty unions and intersections refer to nonempty families; the resulting set need not be nonempty.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "layer",
+      "reverse_paraphrase": "The set difference lies inside the outer sphere and outside the inner sphere; the empty-sphere possibility is explicitly scoped.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "finite-example",
+      "reverse_paraphrase": "All eight named worlds, valuation, three spheres, excluded w7 and smallest p-admitting sphere remain exact.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "satisfaction",
+      "reverse_paraphrase": "The vacuous case quantifies over the sphere union; the nonvacuous case requires one antecedent witness and the material condition at every sphere world.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0524",
+      "passage": "limit",
+      "reverse_paraphrase": "Smaller spheres inherit the full nonvacuous condition only when admitting; a smallest admitting sphere need not exist in an infinite descending system.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0525",
+      "passage": "nonvacuous",
+      "reverse_paraphrase": "All closest antecedent-worlds satisfy the consequent.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0525",
+      "passage": "vacuous",
+      "reverse_paraphrase": "No admitting sphere makes the counterfactual vacuously true.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0525",
+      "passage": "false-cases",
+      "reverse_paraphrase": "Mixed closest worlds make both opposite conditionals false; total failure of the consequent makes the opposite true.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0525",
+      "passage": "contingent",
+      "reverse_paraphrase": "Different centers can make the same counterfactual true and false; the five source diagrams and all captions remain complete.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
     }
   ],
   "builds": [

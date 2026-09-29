@@ -1,0 +1,47 @@
+{
+  "schema": "ps-b157-normalized-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0524",
+  "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+  "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+  "target_sha256": "2d12fd3b11f48e49edd97a0c499523ad80676494b8015d57803132c7fdd369fd",
+  "source_blocks": 15,
+  "target_blocks": 15,
+  "math_spans": 98,
+  "tikz_diagrams": 1,
+  "source_correction_ids_pending_registration": [
+    "OLCNT-006",
+    "OLCNT-007",
+    "OLCNT-008"
+  ],
+  "metalinguistic_english_exception": null,
+  "checks": {
+    "math_exact": true,
+    "paired_blocks": true,
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "tikz_bytes_equal": true,
+    "nfc": true,
+    "source_frozen": true,
+    "no_replacement_character": true,
+    "no_untranslated_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance.",
+  "prior_published_focused_qa_sha256": "274e6ea09b5db61a3a521b8f62b83dc29de3cf739d743df0d1755901c6c70097",
+  "prior_target_sha256": "b56fb0b3175931ae18550d14a5c30dd97efdc5c0ebd9380563d5df2926ea3e28",
+  "additional_raw_byte_checks": {
+    "math_exact": true,
+    "ids_equal": true,
+    "tags_equal": true,
+    "macros_equal": true,
+    "raw_tikz_bytes_equal": true,
+    "only_newline_bytes_changed": true
+  },
+  "source_newline_style": "LF",
+  "target_newline_style": "LF"
+}
