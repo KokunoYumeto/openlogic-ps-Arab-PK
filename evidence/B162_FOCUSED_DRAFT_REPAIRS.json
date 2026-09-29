@@ -1,0 +1,20 @@
+{
+  "schema": "ps-b162-focused-draft-repair/1",
+  "status": "PASS",
+  "source_unchanged": true,
+  "units": [
+    "OLP-0547",
+    "OLP-0548",
+    "OLP-0549",
+    "OLP-0550",
+    "OLP-0551"
+  ],
+  "repairs": [
+    "Restored source LF for chapter driver and introduction; other three retain CRLF.",
+    "Adjusted Pashto prose placement so all194 active mathematical spans retain exact source order.",
+    "Clarified next-after-first-infinite stage wording."
+  ],
+  "final_stage_sha256": "06ab7d3843a9900b8da22905af751b96905376245d41eaedaa7e7898b492ca7f",
+  "source_local_treatment": "OLSTH-004 prose domain/range typo; formulas unchanged",
+  "next_action": "Finish the confirmed live B161 canonical replay60820, accept546 after PASS, preserve/publish B162 checked five-stage sources; prepare546-unit complete Z chapter and make one bounded guarded TeX attempt; register B162 and continue OLP-0552."
+}

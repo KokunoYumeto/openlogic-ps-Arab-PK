@@ -1,0 +1,83 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "accepted editable drafts; corpus QA and dual canonical replay PASS",
+  "utc": "2026-09-29T02:55:56.843010+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-ZERMELO-END",
+  "batch_id": "PS-B161-ZERMELO-INFINITY-NATURAL-CLOSURE",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0542",
+      "source_path": "content/set-theory/z/powerset.tex",
+      "source_bytes": 2221,
+      "source_sha256": "e4189963f1fa098226ec3ae72a660f56882350d3d8be819b6c5232663261e722",
+      "target_sha256": "1b8d4c1dfc8b9e6cb70bf7d18e9b2fbce803e3429d0f61e5bfa96a5ab7bf351e",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0543",
+      "source_path": "content/set-theory/z/infinity-again.tex",
+      "source_bytes": 6335,
+      "source_sha256": "29267a484b8628ec7cafd50d87dac4a0f6650914c625dec7dd06ac0e79aa3f91",
+      "target_sha256": "7f10dff9730a49b2d649041cf7c48a0b20fbf6f9b3b2e604027e46cab93be023",
+      "paired_blocks": 21,
+      "source_correction_ids": [
+        "OLSTH-003"
+      ]
+    },
+    {
+      "unit_id": "OLP-0544",
+      "source_path": "content/set-theory/z/milestone.tex",
+      "source_bytes": 1360,
+      "source_sha256": "15127543e5463e6dc278ab5cb43c4127fe55a54696e9b076d77c053608a5ff40",
+      "target_sha256": "a1ae3bf4853b582719113d26afeda062e9f43fb64194f4040a3adb11ac1eca39",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0545",
+      "source_path": "content/set-theory/z/nat.tex",
+      "source_bytes": 2773,
+      "source_sha256": "33f3b77912ba9c7217893e6a0e9f59c16b2ca51e5b0652f99850bed6aeb8f12c",
+      "target_sha256": "52b7776c9416dd1e98d8888ecd31c361fb5602e7bfdf58ebec8522e037c3559a",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0546",
+      "source_path": "content/set-theory/z/arbintersections.tex",
+      "source_bytes": 2979,
+      "source_sha256": "866857905e11e5f329a248326ba04ba14f293b388bd8e3573caaf05fb2b7d56d",
+      "target_sha256": "15b1c6260fdd08ab9ffa429c90facb1c58762bb4e21a1b9fe4cb83d7de7876fc",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B161_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "633029e1b5f6f5dfa436fb597d9388ccbe01e026bc3f2f2b2eff0b09dc5bf326",
+  "staging_checkpoint_sha256": "6999a625ce63f478638831870a8e1746a01dc1de008b8817426c1dbb87836020",
+  "model_provenance_sha256": "833282f3dbec9a6878647e9de51d3542f4cfbea5712ac73e3ae76661a3750a58",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-MOE-P11-SUBSET",
+    "AF-BUKOVSKY-P192-DEDEKIND-FINITE",
+    "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+  ],
+  "new_term_ids": [
+    "TERM-SET-INFINITY-AXIOM",
+    "TERM-SET-REPRESENTATION-CONVENTION",
+    "TERM-SET-BOUNDED-CLASS-INTERSECTION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-003"
+  ],
+  "formula_policy": "All61 paired blocks and128 ordered active math spans exact. Source assertion retained with adjacent premise/scope disclosure; no formal change or global countermodel claim.",
+  "unresolved": "عين نوي تخصصي پاکستاني مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ انتخاب سرچينه‌يي او لنډمهاله دے. د پخواني شاخص ځينې انګرېزي تشريحګانې لا د پښتو کولو اړې دي.",
+  "next_executable_action": "Publish and anonymously verify546 accepted drafts and five checked B162 drafts. Prepare the complete546-unit Zermelo chapter reader and make one bounded guarded TeX acquisition. Continue B162 registration and OLP-0552 onward in the same GPT-6 Sol Ultra chat; no workers, polling or human-dependent hold.",
+  "accepted_utc": "2026-09-29T03:10:23.795485+00:00",
+  "corpus_qa_sha256": "53390a26756be80d446bb45f91604c6991c0fb84ea29e560d254e3b356c545d3",
+  "canonical_replay_sha256": "8f989c396317959a639b6077c19dd21527bcd721915ee32552ea496cc4f8efde"
+}

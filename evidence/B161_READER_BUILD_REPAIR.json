@@ -1,0 +1,26 @@
+{
+  "schema": "ps-b161-reader-build-repair/1",
+  "utc": "2026-09-29T03:13:33.887411+00:00",
+  "status": "two concrete workflow defects repaired; corrected compilation not yet attempted",
+  "failed_receipt_sha256": "2b52da43de2bb02eb0248a8f02a7d983414858f2e446dbb874e4228ef29671c6",
+  "failed_build_inputs_sha256": "f6396ac6838e4508667ee4c2b71cb13871e96f3f5d0ef09ab961cdf9496c2ea3",
+  "guard_before_sha256": "cd2ff10e2159537593ac3e0e91c04b813ef06b545d12064accc46ae9482b748e",
+  "guard_after_sha256": "8b1bfd81523d3081ac0183d7d1ba9803e107f3686749c55aa124c3d82e9ba53f",
+  "guard_change": "Use stream-based .NET SHA256 because Get-FileHash was unavailable; same named mutex, captured job, bounded passes and finally release.",
+  "preamble": "tools/cumulative-reader-preamble-v095.tex",
+  "preamble_sha256": "d6fd1c39b8c1abdc2a959f271b0f9de94641a2000a49ede650ea0cff9ab100b4",
+  "tikz_change": "Load intersections for exact source OLP-0425-B017 name path / name intersections diagram; no source/target/diagram bytes changed.",
+  "partial_pdf": {
+    "accepted": false,
+    "pages_reported_by_failed_engine": 523,
+    "bytes": 2445233,
+    "sha256": "e5728379e105fbb8cbc074ebb2ab14fca8675b79873b492c123bc8b7af15d7d6"
+  },
+  "unresolved": [
+    "Corrected reader must complete all passes, reproducibility and rendered QA.",
+    "Eleven missing-character ^^V warnings in Amiri Bold around partial physical pages393–396 require source-local diagnosis.",
+    "Overfull boxes and reference warnings need final-pass review."
+  ],
+  "next_action": "Preserve source checkpoint; register B162 and continue OLP-0552 onward. Accumulate corrected reader scope at the next validated checkpoint; no mutex polling.",
+  "dotnet_sha256_verified_against_python": true
+}

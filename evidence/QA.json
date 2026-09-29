@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 541,
-    "structural_pass": 541,
+    "draft_units": 546,
+    "structural_pass": 546,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 60,
-  "batch": "PS-B160-ZERMELO-SEPARATION-UNION-PAIRS",
+  "batch": "PS-B161-ZERMELO-INFINITY-NATURAL-CLOSURE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -14000,15 +14000,7 @@
         "named_token_macros": true,
         "no_ordinary_english": true
       },
-      "residual_english": [
-        "Box",
-        "Diamond",
-        "and",
-        "are",
-        "defined",
-        "is",
-        "primitive"
-      ],
+      "residual_english": [],
       "allowed_residual_english": [
         "Box",
         "Diamond",
@@ -14043,12 +14035,7 @@
         "named_token_macros": true,
         "no_ordinary_english": true
       },
-      "residual_english": [
-        "Diamond",
-        "defined",
-        "is",
-        "primitive"
-      ],
+      "residual_english": [],
       "allowed_residual_english": [
         "Diamond",
         "defined",
@@ -14285,10 +14272,7 @@
         "named_token_macros": true,
         "no_ordinary_english": true
       },
-      "residual_english": [
-        "If",
-        "Rule"
-      ],
+      "residual_english": [],
       "allowed_residual_english": [
         "If",
         "Rule"
@@ -15490,14 +15474,7 @@
         "named_token_macros": true,
         "no_ordinary_english": true
       },
-      "residual_english": [
-        "Box",
-        "and",
-        "both",
-        "only",
-        "primitive",
-        "prmitive"
-      ],
+      "residual_english": [],
       "allowed_residual_english": [
         "Box",
         "and",
@@ -17442,9 +17419,7 @@
         "named_token_macros": true,
         "no_ordinary_english": true
       },
-      "residual_english": [
-        "OLSTH"
-      ],
+      "residual_english": [],
       "allowed_residual_english": [
         "OLSTH"
       ],
@@ -17658,6 +17633,143 @@
       "translation_sha256": "a6cf3c87bd26d91b86a14290c50f4c90769100f97a9bf551d5ffc3a912409c49",
       "source_blocks": 16,
       "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0542",
+      "path": "content/set-theory/z/powerset.tex",
+      "source_sha256": "e4189963f1fa098226ec3ae72a660f56882350d3d8be819b6c5232663261e722",
+      "translation_sha256": "1b8d4c1dfc8b9e6cb70bf7d18e9b2fbce803e3429d0f61e5bfa96a5ab7bf351e",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0543",
+      "path": "content/set-theory/z/infinity-again.tex",
+      "source_sha256": "29267a484b8628ec7cafd50d87dac4a0f6650914c625dec7dd06ac0e79aa3f91",
+      "translation_sha256": "7f10dff9730a49b2d649041cf7c48a0b20fbf6f9b3b2e604027e46cab93be023",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-003"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0544",
+      "path": "content/set-theory/z/milestone.tex",
+      "source_sha256": "15127543e5463e6dc278ab5cb43c4127fe55a54696e9b076d77c053608a5ff40",
+      "translation_sha256": "a1ae3bf4853b582719113d26afeda062e9f43fb64194f4040a3adb11ac1eca39",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0545",
+      "path": "content/set-theory/z/nat.tex",
+      "source_sha256": "33f3b77912ba9c7217893e6a0e9f59c16b2ca51e5b0652f99850bed6aeb8f12c",
+      "translation_sha256": "52b7776c9416dd1e98d8888ecd31c361fb5602e7bfdf58ebec8522e037c3559a",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0546",
+      "path": "content/set-theory/z/arbintersections.tex",
+      "source_sha256": "866857905e11e5f329a248326ba04ba14f293b388bd8e3573caaf05fb2b7d56d",
+      "translation_sha256": "15b1c6260fdd08ab9ffa429c90facb1c58762bb4e21a1b9fe4cb83d7de7876fc",
+      "source_blocks": 8,
+      "target_blocks": 8,
       "checks": {
         "block_count": true,
         "environments": true,
@@ -27057,6 +27169,204 @@
       "passage": "exercises",
       "reverse_paraphrase": "Both the three-member and general finite-set existence exercises, and the full inactive source proof comment, are retained.",
       "finding": "د بشپړ اصلي او پښتو سياق پرتله تېره؛ شرطونه، منفيت، د اصل اضافي حيثيت او د سټ/کورنۍ توپير ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "axiom",
+      "reverse_paraphrase": "Every A has its exact powerset, with the displayed membership biconditional unchanged.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "stage",
+      "reverse_paraphrase": "Every subset is available by S and the powerset at some later stage; No Last Stage supplies that later stage.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "product",
+      "reverse_paraphrase": "The full Cartesian-product proof uses Separation bounded by the double powerset of A union B.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "interaction",
+      "reverse_paraphrase": "Separation determines the subsets whose existence gives the powerset its extent.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "relations",
+      "reverse_paraphrase": "The exercise requires exact relation domain A and actual range B, not silently codomain B.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "functions",
+      "reverse_paraphrase": "The separate all-functions exercise adds no surjectivity requirement.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0542",
+      "passage": "quotient",
+      "reverse_paraphrase": "The complete equivalence-class existence exercise and exact notation are retained.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "finite-sequence",
+      "reverse_paraphrase": "All five finite ordinal displays and numeric labels are retained; inactive inline comments remain exact.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "many-versus-one",
+      "reverse_paraphrase": "Infinitely many distinct finite sets does not establish one infinite set.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "existence",
+      "reverse_paraphrase": "The exact Infinity axiom gives an empty-containing successor-closed set.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "scope",
+      "reverse_paraphrase": "The source successor assertion on arbitrary I is retained with OLSTH-003 local premise disclosure; no full countermodel is claimed.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "omega",
+      "reverse_paraphrase": "Omega is the least successor-closed part generated by emptyset, not every member of arbitrary I.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "induction",
+      "reverse_paraphrase": "Base emptyset and the full contrapositive successor induction proof remain.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "case-one",
+      "reverse_paraphrase": "If n is absent from range f, restriction to n misses f(n) and proves Dedekind infinitude of n.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "case-two",
+      "reverse_paraphrase": "If n is in range f, replace its unique preimage output by m outside range f, obtaining case one.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "infinite-stage",
+      "reverse_paraphrase": "An infinite stage is nonfirst, has earlier stages and has no immediate predecessor.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "separate-premise",
+      "reverse_paraphrase": "No Last Stage does not force an infinite stage; the philosophical lack of intrinsic justification is retained.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0543",
+      "passage": "assumption",
+      "reverse_paraphrase": "The later development simply assumes the infinite-stage principle, without new human approval.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0544",
+      "passage": "list",
+      "reverse_paraphrase": "Zminus has exactly Extensionality, Union, Pairs, Powersets, Infinity and all Separation instances.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0544",
+      "passage": "minus",
+      "reverse_paraphrase": "Neither Foundation nor Choice is silently included in this list.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0544",
+      "passage": "history",
+      "reverse_paraphrase": "Full Zermelo1908 attribution and Potter2004 Appendix A footnote remain.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0544",
+      "passage": "request",
+      "reverse_paraphrase": "Reconstructing prior naive mathematics is a reader request, not a claimed completed formalization.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0545",
+      "passage": "stipulation",
+      "reverse_paraphrase": "Taking particular sets as natural numbers is a convention, not a metaphysical identity claim.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0545",
+      "passage": "alternatives",
+      "reverse_paraphrase": "Both von Neumann and Zermelo successor maps and their distinct exact representations of2 remain.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0545",
+      "passage": "practical",
+      "reverse_paraphrase": "Von Neumann scales to transfinite numbers; both approaches serve ordinary arithmetic.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0545",
+      "passage": "Benacerraf",
+      "reverse_paraphrase": "Full Benacerraf1965 attribution and Which sets question remain.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0545",
+      "passage": "simulation",
+      "reverse_paraphrase": "Every listed number type, ordered pair, function and relation is simulated nonuniquely.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "class",
+      "reverse_paraphrase": "The full formula-defined family need not be a set; naive comprehension is unavailable.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "biconditional",
+      "reverse_paraphrase": "The exact starred membership biconditional is the intended intersection condition.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "witness",
+      "reverse_paraphrase": "Some S satisfying phi is required and supplies the Separation bound.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "unbounded-predicate",
+      "reverse_paraphrase": "Quantification over X remains unbounded inside the bounded Separation predicate.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "exercise",
+      "reverse_paraphrase": "The exercise and complete inactive proof comment are preserved.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
+    },
+    {
+      "unit_id": "OLP-0546",
+      "passage": "application",
+      "reverse_paraphrase": "Function closure is bounded inside range f union singleton o; no empty-family intersection is claimed.",
+      "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ شرطونه، نطاق، نفي، ثبوت او د اضافي فرض حيثيت ساتل شوے دے."
     }
   ],
   "builds": [

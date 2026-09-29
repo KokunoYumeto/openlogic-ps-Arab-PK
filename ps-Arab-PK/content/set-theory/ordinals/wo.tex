@@ -1,0 +1,69 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{wo}
+\olsection{ښه ترتيبونه}
+
+بنسټيز مفهوم داسې دے:
+
+\begin{defn}
+اړيکه $<$ د $A$ \emph{ښه ترتيب} ورکوي، که او يوازې که دا دواړه شرطونه پوره کړي:
+\begin{enumerate}
+	\item $<$ متصله وي، يعنې د ټولو $a, b \in A$ دپاره يا $a < b$
+	يا $a = b$ يا $b < a$ وي؛
+	\item د $A$ هر ناتشه فرعي سټ د $<$ له مخې يو مينيمال !!{element} ولري،
+	يعنې که $\emptyset \neq X \subseteq A$ وي، نو $(\exists m \in
+	X)(\forall z \in X)z \nless m$ وي.
+\end{enumerate}
+\end{defn}
+
+په اسانۍ ليدلے شو چې هغه درې بېلګې چې اوس مو وڅېړلې، په رښتيا
+د ښه ترتيب اړيکې وې.
+
+\begin{prob}
+\Olref[sth][ordinals][idea]{sec} په طبيعي عددونو باندې د ترتيب درې
+بېلګې وړاندې کړې. وڅېړئ چې هر يو ښه ترتيب دے.
+\end{prob}
+
+دلته د ښه ترتيب په اړه ځينې ابتدايي، خو ډېرې مهمې مشاهدې دي.
+
+\begin{prop}\ollabel{wo:strictorder}
+که $<$ د $A$ ښه ترتيب ورکوي، نو د $A$ هر ناتشه فرعي سټ د $<$ له
+مخې يو يوازينے تر ټولو کوچنے غړے لري؛ او $<$ غير انعکاسي، نامتقارنه او متعدي ده.
+\end{prop}
+
+\begin{proof}
+که $X$ د $A$ ناتشه فرعي سټ وي، نو د $<$ له مخې يو مينيمال
+!!{element} $m$ لري، يعنې $(\forall z \in X)z \nless m$ وي.
+ځکه چې $<$ متصله ده، نو $(\forall z \in X)m \leq z$ دي.
+نو $m$ د $<$ له مخې د $X$ تر ټولو کوچنے !!{element} دے.
+
+د غير انعکاسيت دپاره $a \in A$ وټاکئ؛ د $<$ له مخې د $\{a\}$
+تر ټولو کوچنے !!{element} $a$ دے، نو $a \nless a$ دي.
+د تعديت دپاره، که $a < b < c$ وي، نو ځکه چې $\{a, b, c\}$ د
+$<$ له مخې تر ټولو کوچنے !!{element} لري، $a < c$ دي.
+نامتقارن توب د غير انعکاسيت او تعديت څخه نتيجه کېږي.
+\end{proof}
+
+\begin{prop}\ollabel{propwoinduction}
+که $<$ د $A$ ښه ترتيب ورکوي، نو د هر فارمول $\phi(x)$ دپاره:
+\[
+	\text{که }(\forall a \in A)((\forall b < a)\phi(b) \lif
+		\phi(a))\text{ وي، نو }(\forall a \in A)\phi(a).
+\]
+\end{prop}
+
+\begin{proof}
+نقيض عکس به ثابت کړو. فرض کړئ چې $\lnot(\forall a \in
+A)\phi(a)$، يعنې $X = \Setabs{x \in A}{\lnot\phi(x)} \neq
+\emptyset$ دے. نو $X$ د $<$ له مخې يو مينيمال !!{element} $a$
+لري. په دې توګه $(\forall b < a)\phi(b)$، خو $\lnot \phi(a)$ دي.
+\end{proof}\noindent دا وروستے خاصيت بايد په طبيعي عددونو باندې
+د قوي استقرا اصل در په ياد کړي، يعنې: که
+$(\forall n \in \omega)((\forall m < n)\phi(m)
+\lif \phi(n))$ وي، نو $(\forall n \in \omega)\phi(n)$ دي.
+او همدا خاصيت ښه ترتيب يو ډېر \emph{ټينګ} مفهوم ګرځوي.\footnote{يوه
+يادونه: ټول فارمولونه پارامترونه لرلے شي (مګر که په ښکاره بل ډول ويل شوي وي).}
+
+\end{document}

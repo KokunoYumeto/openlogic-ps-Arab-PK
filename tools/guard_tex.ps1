@@ -1,11 +1,17 @@
 param([int]$Passes = 2, [string]$BuildDirectory = (Join-Path (Split-Path $PSScriptRoot) 'build\sets'), [string[]]$DocumentBases = @('sets'), [ValidateRange(1,60000)][int]$MutexTimeoutMs = 1000)
 $ErrorActionPreference = 'Stop'
+function Get-PsTaskSha256([string]$TaskPath) {
+    $taskHasher = [System.Security.Cryptography.SHA256]::Create()
+    $taskStream = [System.IO.File]::OpenRead($TaskPath)
+    try { return [System.BitConverter]::ToString($taskHasher.ComputeHash($taskStream)).Replace('-', '').ToLowerInvariant() }
+    finally { $taskStream.Dispose(); $taskHasher.Dispose() }
+}
 $taskBuild = [System.IO.Path]::GetFullPath($BuildDirectory)
 foreach($taskBase in $DocumentBases) { if($taskBase -notmatch '^[a-zA-Z0-9-]+$') { throw 'Invalid document base' } }
 if(Test-Path -LiteralPath (Join-Path $taskBuild 'TEX_RECEIPT.json')) {
     $taskHistory=Join-Path $taskBuild 'tex-history'
     New-Item -ItemType Directory -Path $taskHistory -Force | Out-Null
-    $taskPriorHash=(Get-FileHash -LiteralPath (Join-Path $taskBuild 'TEX_RECEIPT.json') -Algorithm SHA256).Hash.ToLowerInvariant()
+    $taskPriorHash=Get-PsTaskSha256 (Join-Path $taskBuild 'TEX_RECEIPT.json')
     Copy-Item -LiteralPath (Join-Path $taskBuild 'TEX_RECEIPT.json') -Destination (Join-Path $taskHistory "$taskPriorHash.json")
 }
 $taskOldEpoch = $env:SOURCE_DATE_EPOCH
@@ -82,7 +88,7 @@ public static class PsGuardedTex {
         $taskFindings = @($taskLog -split "`n" | Where-Object { $_ -match 'Missing character|^!|Overfull|undefined|Rerun to get' })
         $taskReceipt.log_checks += @{document=$taskBase;pass=$taskPass;findings=$taskFindings}
         if(Test-Path -LiteralPath (Join-Path $taskBuild "$taskBase.pdf")) {
-            $taskReceipt.passes[-1].pdf_sha256=(Get-FileHash -LiteralPath (Join-Path $taskBuild "$taskBase.pdf") -Algorithm SHA256).Hash.ToLowerInvariant()
+            $taskReceipt.passes[-1].pdf_sha256=Get-PsTaskSha256 (Join-Path $taskBuild "$taskBase.pdf")
         }
         if($taskCode -ne 0) { throw "TeX pass $taskPass failed with exit code $taskCode" }
       }

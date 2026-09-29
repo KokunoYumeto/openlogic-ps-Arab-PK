@@ -1,0 +1,179 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{iso}
+\olsection{د ترتيب آيزومورفيزمونه}
+
+د دې د بيانولو دپاره چې ښه ترتيب \emph{څومره} ټينګ مفهوم دے،
+لومړے به د ښه ترتيبونو د پرتله کولو يوه لاره معرفي کړو.
+
+\begin{defn}
+يو \emph{ښه ترتيب} جوړه $\tuple{A, <}$ ده، داسې چې $<$ د $A$
+ښه ترتيب ورکوي. ښه ترتيبونه $\tuple{A, <}$ او $\tuple{B,
+\lessdot}$ \emph{د ترتيب له مخې آيزومورف} دي، {که او يوازې که}
+يوه !!a{bijection} $f \colon A \to B$ شته، داسې چې:
+$x < y$، که او يوازې که $f(x) \lessdot  f(y)$ وي.
+په دې حالت کښې $\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}$ ليکو،
+او وايو چې $f$ يو \emph{د ترتيب آيزومورفيزم} دے.
+\end{defn}
+\noindent
+په راتلونکي بحث کښې به د لنډون دپاره د «د ترتيب آيزومورفيزمونو»
+پر ځاے «آيزومورفيزمونه» وايو. په شهودي توګه آيزومورفيزمونه
+هغه !!{bijection}s دي چې جوړښت ساتي. دلته د آيزومورفيزمونو ځينې ساده حقيقتونه دي.
+
+\begin{lem}\ollabel{isoscompose}
+د آيزومورفيزمونو ترکيبونه آيزومورفيزمونه دي، يعنې: که
+$f \colon A \to B$ او $g \colon B \to C$ آيزومورفيزمونه وي، نو
+$(g \circ f)\colon A \to C$ يو آيزومورفيزم دے.
+\end{lem}
+\begin{prob}
+	\olref[sth][ordinals][iso]{isoscompose} ثابت کړئ.
+\end{prob}
+\begin{proof}
+د تمرين په توګه پرېښودل شوے.
+\end{proof}
+\begin{cor}\ollabel{ordisoisequiv}
+	$\ordeq{X}{Y}$ د هم‌ارزۍ اړيکه ده.
+\end{cor}
+\begin{prop}\ollabel{ordisounique}
+که $\tuple{A, <}$ او $\tuple{B, \lessdot}$ آيزومورف ښه ترتيبونه
+وي، نو د هغو ترمنځ آيزومورفيزم يوازينے دے.
+\end{prop}
+
+\begin{proof}
+$f$ او $g$ آيزومورفيزمونه $A \to B$ وګرځوئ. پايله به د
+استقرا په وسيله ثابت کړو، يعنې د \olref[wo]{propwoinduction} په کارولو سره.
+$a\in A$ وټاکئ او (د استقرا دپاره) فرض کړئ چې
+$(\forall b < a)f(b) = g(b)$ دي. $x \in B$ وټاکئ.
+
+که $x \lessdot f(a)$ وي، نو $f^{-1}(x) < a$ دي؛ په دې توګه
+$g(f^{-1}(x)) \lessdot g(a)$ دي، ځکه چې $f$ او $g$
+آيزومورفيزمونه دي. خو ځکه چې $f^{-1}(x) < a$ دي، زموږ د فرض
+له مخې $x =f(f^{-1}(x)) = g(f^{-1}(x))$ دي.
+نو $x \lessdot g(a)$ دي. همدغه شان، که $x \lessdot g(a)$ وي،
+نو $x \lessdot f(a)$ دي.
+
+په عمومي توګه $(\forall x \in B)(x \lessdot f(a) \liff x \lessdot
+g(a))$ لرو. د \olref[sfr][rel][ord]{prop:extensionality-strictlinearorders}
+له مخې ترې $f(a) = g(a)$ نتيجه کېږي. نو د
+\olref[wo]{propwoinduction} له مخې $(\forall a \in A)f(a) = g(a)$ دي.
+\end{proof}\noindent
+دا تر يوه حده ښيي چې ښه ترتيبونه ټينګ دي. خو د دې د نور بيان
+دپاره به د نورو نښو معرفي کول ګټور وي.
+
+\begin{defn}
+کله چې $\tuple{A, <}$ يو ښه ترتيب او $a \in A$ وي،
+$A_a = \Setabs{x \in A}{x < a}$ وګرځوئ. وايو چې $A_a$ د $A$
+يوه خاصه \emph{پيلنۍ برخه} ده (او اجازه ورکوو چې خپله $A$ د
+$A$ يوه غير خاصه پيلنۍ برخه وي). $<_a$ د $<$ هماغې پيلنۍ
+برخې ته محدودول وګرځوئ، يعنې
+$\funrestrictionto{\mathord{<}}{A_a^2}$.
+\end{defn}
+\noindent
+د دې نښو په کارولو سره دا بيان او ثابتولے شو چې هېڅ ښه ترتيب
+د خپلې هېڅ خاصې پيلنۍ برخې سره آيزومورف نۀ دے.
+
+\begin{lem}\ollabel{wellordnotinitial}
+که $\tuple{A, <}$ يو ښه ترتيب او $a \in A$ وي، نو
+$\ordneq{\tuple{A, <}}{\tuple{A_a, <_a}}$ دي.
+\end{lem}
+
+\begin{proof}
+د نقيض د ردولو دپاره فرض کړئ چې $f \colon A \to A_a$ يو
+آيزومورفيزم دے. ځکه چې $f$ يوه بيجکشن او $A_a \subsetneq A$
+دے، نو د \olref[wo]{wo:strictorder} په کارولو سره $b \in A$
+د $<$ له مخې د $A$ تر ټولو کوچنے !!{element} وګرځوئ چې
+$b \neq f(b)$ وي. دا به وښيو چې
+$(\forall x \in A)(x<b \liff x < f(b))$ دي؛ له دې به د
+\olref[sfr][rel][ord]{prop:extensionality-strictlinearorders}
+له مخې $b = f(b)$ نتيجه شي، چې د نقيض ردول بشپړوي.
+
+فرض کړئ چې $x < b$ دي. نو $x = f(x)$ دي، د $b$ د ټاکنې له مخې.
+او $f(x) < f(b)$ دي، ځکه چې $f$ آيزومورفيزم دے.
+نو $x < f(b)$ دي.
+
+فرض کړئ چې $x < f(b)$ دي. نو $f^{-1}(x) < b$ دي، ځکه چې
+$f$ آيزومورفيزم دے؛ او په دې توګه
+$f^{-1}(x) = x$ دي، د $b$ د ټاکنې له مخې. نو $x < b$ دي.
+\end{proof}
+
+زموږ راتلونکې پايله په تقريبي توګه دا ښيي چې د يوه آيزومورفيزم
+«پيلنۍ برخه» آيزومورفيزم ده:
+
+\begin{lem}\ollabel{wellordinitialsegment}
+$\tuple{A, <}$ او $\tuple{B, \lessdot}$ ښه ترتيبونه وګرځوئ.
+که $f\colon A \to B$ آيزومورفيزم او $a \in A$ وي، نو
+$\funrestrictionto{f}{A_{a}} : A_a \to B_{f(a)}$ آيزومورفيزم دے.
+\end{lem}
+
+\begin{proof}
+ځکه چې $f$ آيزومورفيزم دے:
+	%Since $f$ is an isomorphism, $b < a$ iff $f(b) \lessdot f(a)$, so that 
+\begin{align*}
+	\funimage{f}{A_a} &= \funimage{f}{\Setabs{x \in A}{x < a}}\\
+	&= \funimage{f}{\Setabs{f^{-1}(y) \in A}{f^{-1}(y) < a}} \\
+	&= \Setabs{y \in B}{y \lessdot f(a)} \\
+	&=B_{f(a)}
+\end{align*}
+او $\funrestrictionto{f}{A_a}$ ترتيب ساتي، ځکه چې $f$ ئې ساتي.
+\end{proof}
+
+زموږ راتلونکې دوه پايلې ثابتوي چې ښه ترتيبونه تل د پرتله وړ دي:
+
+\begin{lem}\ollabel{lemordsegments}
+$\tuple{A, <}$ او $\tuple{B, \lessdot}$ ښه ترتيبونه وګرځوئ.
+که $\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1}, \lessdot_{b_1}}}$
+او $\ordeq{\tuple{A_{{a_2}}, <_{a_2}}}{\tuple{B_{{b_2}},
+\lessdot_{b_2}}}$ وي، نو ${a_1}  < {a_2} \text{ که او يوازې که }{b_1} \lessdot
+{b_2}$ دي.
+\end{lem}
+
+\begin{proof}
+\emph{له کيڼې خوا نه ښۍ خوا ته} به ثابت کړو؛ بل لورے هم ورته دے.
+فرض کړئ چې دواړه
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1},
+\lessdot_{b_1}}}$ او $\ordeq{\tuple{A_{{a_2}},
+<_{a_2}}}{\tuple{B_{{b_2}}, \lessdot_{b_2}}}$ دي، او زموږ
+آيزومورفيزم $f \colon A_{{a_2}} \to B_{{b_2}}$ دے.
+${a_1} < {a_2}$ وګرځوئ؛ نو د \olref{wellordinitialsegment} له مخې
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$ دي. په دې توګه
+$\ordeq{\tuple{B_{b_1}, \lessdot_{b_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$ دي؛ او د \olref{wellordnotinitial} له مخې
+${b_1} = f({a_1})$ دي. اوس ${b_1} \lessdot {b_2}$ دي، ځکه چې
+د $f$ د قيمتونو سټ $B_{{b_2}}$ دے. \emph{د سرچينې د سمون يادښت
+(OLSTH-004): په دې وروستۍ جمله کښې سرچينه د قيمتونو د سټ پر ځاے
+د تعريف ساحه ليکي؛ دلته د مخکيني څرګند نگاشت له مخې د قيمتونو سټ ويل شوے دے.}
+\end{proof}
+
+\begin{thm}\ollabel{thm:woalwayscomparable}
+د هر دوو راکړل شويو ښه ترتيبونو دپاره يو د بل له يوې پيلنۍ برخې
+(چې خاصه کېدل ئې ضروري نۀ دي) سره آيزومورف دے.
+\end{thm}
+
+\begin{proof}
+$\tuple{A, <}$ او $\tuple{B, \lessdot}$ ښه ترتيبونه وګرځوئ.
+د بېلونې په کارولو سره
+\[
+	f = \Setabs{\tuple{a, b} \in A \times B}{
+		\ordeq{\tuple{A_a, <_a}}{\tuple{B_b, \lessdot_b}}}.
+\]
+وګرځوئ. د \olref{lemordsegments} له مخې
+$a_1 < a_2$، که او يوازې که $b_1 \lessdot b_2$ دي، د ټولو
+$\tuple{a_1, b_1}, \tuple{a_2, b_2} \in f$ دپاره.
+نو $f \colon \dom{f} \to \ran{f}$ آيزومورفيزم دے.
+
+که $a_2 \in \dom{f}$ او $a_1 < a_2$ وي، نو د
+\olref{wellordinitialsegment} له مخې $a_1 \in \dom{f}$ دي؛
+نو $\dom{f}$ د $A$ پيلنۍ برخه ده. همدغه شان $\ran{f}$ د $B$
+پيلنۍ برخه ده. د نقيض د ردولو دپاره فرض کړئ چې دواړه
+\emph{خاصې} پيلنۍ برخې دي. نو $a$ د $<$ له مخې د $A \setminus \dom{f}$
+تر ټولو کوچنے !!{element} وګرځوئ، داسې چې
+$\dom{f} = A_a$ وي؛ او $b$ د $\lessdot$ له مخې د $B \setminus \ran{f}$
+تر ټولو کوچنے !!{element} وګرځوئ، داسې چې $\ran{f} = B_b$
+وي. نو $f \colon A_a \to B_b$ آيزومورفيزم دے، او له دې امله
+$\tuple{a, b} \in f$ دي، چې تضاد دے.
+\end{proof}
+
+\end{document}

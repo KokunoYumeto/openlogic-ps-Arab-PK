@@ -1,0 +1,17 @@
+{
+  "schema": "ps-b161-inline-comment-scanner-repair/1",
+  "status": "PASS",
+  "scope": "Residual ordinary-English scanning only: exact inactive inline TeX comments ignored; escaped percent remains active. Recognize source-disclosure IDs and roman exercise labels as code. No target/source change or ordinary-English exemption.",
+  "tools": [
+    {
+      "path": "work/qa_batch.py",
+      "before_sha256": "94282e74e26132389dedd4bbd357ab0ee42a288b65b036da37e4f5d464efb541",
+      "after_sha256": "1d6a9661b049963dee72d282a8352a50e41065b11535d293070fb0c8485826ff"
+    },
+    {
+      "path": "tools/check_translation.py",
+      "before_sha256": "8eed955edfb646dad1aeda1d98dc144940748ed778590a3bdcaae882086c3fc7",
+      "after_sha256": "2a75b8db3233f233b7facd38674328eb1c1e8ecebf7808845c53e34626ad9dd5"
+    }
+  ]
+}

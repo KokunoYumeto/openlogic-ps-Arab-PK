@@ -19,7 +19,8 @@
     {
       "filename": "REVIEW.md",
       "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
-    }
+    },
+    "B161_SOURCE_AUDIT.json"
   ],
   "source_authority": {
     "declared_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
@@ -15278,6 +15279,65 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-003",
+      "unit_id": "OLP-0543",
+      "classification": "omitted_arbitrary_infinity_witness_successor_scope_premise",
+      "source_path": "content/set-theory/z/infinity-again.tex",
+      "source_sha256": "29267a484b8628ec7cafd50d87dac4a0f6650914c625dec7dd06ac0e79aa3f91",
+      "source_locator": "content/set-theory/z/infinity-again.tex:50",
+      "source_literal_line_1based": [
+        50,
+        82,
+        98
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/z/infinity-again.tex",
+      "target_sha256": "7f10dff9730a49b2d649041cf7c48a0b20fbf6f9b3b2e604027e46cab93be023",
+      "target_line_1based": 53,
+      "target_literal_line_1based": [
+        48,
+        53
+      ],
+      "disclosure_line_1based": 53,
+      "mode": "adjacent-Pashto-source-scope-disclosure; source assertion retained",
+      "translation_change": "د سرچينې د هر شاهد د تالي يو پر يو توب ادعا ساتل شوې؛ د تجمعي پړاو غير رسمي فرض او لږ تر لږه طبيعي بندې برخې توپير په څنګ کښې څرګند شوے.",
+      "reason": "سرچينه د راکړل شوي هر I په اړه د تالي د يو پر يو توب جلا استدلال نۀ ورکوي. د بنياد راتلونکې برخه د پړاوونو په مراتبو کښې د هر سټ شتون جلا فرض ګڼي. يادښت د دې فرض حدود څرګندوي؛ هېڅ فورمول نۀ بدلوي او د بشپړې سټ تيورۍ مقابل ماډل يا استقلال نۀ ثابتوي.",
+      "formula_policy": "All128 ordered active math spans unchanged; prose scope disclosure only. Partial two-node graph is not a full set-theory model or independence proof.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ZERMELO-END",
+      "audit_artifacts": [
+        "B161_SOURCE_AUDIT.json",
+        "B161_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B161_DRAFT_QA_OLP-0543.json",
+        "B161_PARTIAL_MEMBERSHIP_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B161 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "cd7d45ad11eb8ddd53eb34810123576a52c038bde6b92132c6b81a9926863d20",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No full countermodel, independence theorem, inconsistency claim, or rejection of the intended omega construction."
     }
   ],
   "external_upstream_report_submitted": false,
@@ -15383,7 +15443,8 @@
     "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
-    "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION"
+    "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
+    "PS-OWNER-SEMANTIC-20260929-ZERMELO-END"
   ],
   "source_authorities": [
     {
