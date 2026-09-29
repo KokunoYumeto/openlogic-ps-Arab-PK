@@ -1,0 +1,97 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "accepted editable drafts; cumulative QA and dual canonical replay PASS",
+  "utc": "2026-09-29T00:54:51.879512+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+  "batch_id": "PS-B158-COUNTERFACTUAL-END-SET-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0526",
+      "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+      "source_bytes": 2648,
+      "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+      "target_sha256": "b425f497678c75b74c520b4a1b6f26e49dec28808cc9fdeed01efdb8e60f140e",
+      "paired_blocks": 11,
+      "source_correction_ids": [
+        "OLCNT-009"
+      ]
+    },
+    {
+      "unit_id": "OLP-0527",
+      "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "source_bytes": 3602,
+      "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+      "target_sha256": "8d050701d246b360fa236ddb797087985e02d09f83055b151994cca7030e2b5a",
+      "paired_blocks": 13,
+      "source_correction_ids": [
+        "OLCNT-010",
+        "OLCNT-011"
+      ]
+    },
+    {
+      "unit_id": "OLP-0528",
+      "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "source_bytes": 2345,
+      "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+      "target_sha256": "031c217729b984b08c84314abfbfbffff23a62064467bed51d95e48d7c33cfab",
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLCNT-012",
+        "OLCNT-013"
+      ]
+    },
+    {
+      "unit_id": "OLP-0529",
+      "source_path": "content/set-theory/set-theory.tex",
+      "source_bytes": 410,
+      "source_sha256": "2ecb71a25920205cd2d00a9ad69601348ff5fd0db30e5b94d396d0da01007a21",
+      "target_sha256": "bc8be02c0b28c1fc1171da70a0182b14d5067a90136d2716615587ace951c2d8",
+      "paired_blocks": 6,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0530",
+      "source_path": "content/set-theory/story/story.tex",
+      "source_bytes": 345,
+      "source_sha256": "d8a35d662d8ba0ef853832e82502a4c802f13edae6055c14a578fe051aeabd03",
+      "target_sha256": "a046ccb9bcfed264d0e623b2378e5ece5e2b77827e146ff493c8d202899d4d28",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "d19230489cc4756d894c059e06a52490b2caddfc7994193226a55501e2638f40",
+  "staging_checkpoint_sha256": "f44fc244ad7077ad8a72a2cf7e4bd5ae41d64c3567ad9b8b751eff8323b5edaf",
+  "finite_scope_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "region": "Pakistan; Pashto Academy, University of Peshawar",
+      "inspection": "Actual visual reconsultation during B158 writing and again at registration",
+      "finding": "د علمي نثر او د معنا/نښې د شننې شاهد؛ د نويو تخصصي مرکبو نومونو عين چاپي تصويب نۀ دے."
+    }
+  ],
+  "model_provenance_sha256": "66cdb7528ee6fc5f641c15945832f64d6b4f9131cf798037c405872c55a8f52c",
+  "new_term_ids": [
+    "TERM-COUNTERFACTUAL-ANTECEDENT-STRENGTHENING",
+    "TERM-SET-THEORY-ITERATIVE-CONCEPTION"
+  ],
+  "new_source_correction_ids": [
+    "OLCNT-009",
+    "OLCNT-010",
+    "OLCNT-011",
+    "OLCNT-012",
+    "OLCNT-013"
+  ],
+  "formula_policy": "46 paired blocks,75 math spans; four disclosed math-span corrections, two raw byte-identical diagrams and other formal content unchanged.",
+  "unresolved": "د دوو مرکبو نومونو عين تخصصي پاکستانۍ چاپي شاهدي يا د انسان تصويب نۀ دے ادعا شوے؛ نومونه لنډمهاله دي. د متناهي سرچينه‌يي QA بېلګې د نوې نامحدودې قضيې ثبوت نۀ دي.",
+  "next_executable_action": "Publish and anonymously verify B158 acceptance, B159 staging and the localized review guide; prepare the accumulated reader through OLP-0528 and make one bounded TeX-slot attempt at this natural validated checkpoint. Continue B159 choice registration, bounded review of existing predicativity names and translation at OLP-0536; TeX occupancy never blocks translation.",
+  "accepted_utc": "2026-09-29T01:09:54.945124+00:00",
+  "corpus_qa_sha256": "b22588f6ba8d5faecebb563f458926ce1ff0a662d935da7a3311016049478e60",
+  "canonical_replay_sha256": "0036c07a92a556caa2bd441a7b259c3e6eba53ff436ddbbee4be15b0f38f5e5a"
+}

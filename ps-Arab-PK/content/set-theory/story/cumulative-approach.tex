@@ -1,0 +1,90 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{story}{approach}
+\olsection{تجمعي-تکراري لاره}
+
+دا يې يو څه بشپړ بيان دے چې څنګه به سټونه په پړاوونو کښې
+طبقه‌بندي کړو:
+\begin{quote}
+  سټونه په \emph{پړاوونو} کښې جوړېږي۔ د هر پړاو $S$ لپاره
+  ځينې پړاوونه شته چې تر $S$ \emph{وړاندې} دي۔ په پړاو $S$
+  کښې هره هغه ټولګه چې په تر $S$ وړاندې پړاوونو کښې له
+  جوړ شويو سټونو څخه جوړه وي، يو سټ ګرځي۔ له هغو سټونو
+  پرته چې په پړاوونو کښې جوړېږي، نور سټونه نشت۔ \citep[p.~323]{Shoenfield:AST}
+\end{quote}
+دا \emph{د سټ د تجمعي-تکراري تصور} يوه خاکه ده۔ دا به د هغې
+رسمي سټ تيورۍ بنسټ وي چې په \olref[sth][][]{part} کښې يې
+وړاندې کوو۔
+
+دا يو څه نور وڅېړو۔ لکه شوينفيلډ چې دا بهير بيانوي، په هر
+پړاو کښې له هغو {سټونو} نوي سټونه جوړوو چې له مخکينيو
+پړاوونو راپاتې وو او زمونږ لپاره موجود وو۔ نو د شوينفيلډ
+د انځور له مخې، په لومړني پړاو، پړاو $0$، کښې هيڅ
+\emph{مخکيني} پړاوونه نشت؛ نو \emph{په لا قوي دليل} له
+مخکينيو پړاوونو زمونږ لپاره هيڅ سټونه نشت۔\footnote{ولې
+  بايد فرض کړو چې لومړنے پړاو \emph{شته}؟ په
+  \olref[z][story]{sec} کښې د \stagesord{} پښه‌ليک وګورئ۔}
+نو يوازې يو سټ جوړوو: بې له !!{element}s سټ $\emptyset$۔
+په پړاو $1$ کښې له مخکينيو پړاوونو کټ مټ يو سټ راته موجود
+دے، نو يوازې يو نوے سټ $\{\emptyset\}$ دے۔ په پړاو $2$ کښې
+له مخکينيو پړاوونو دوه سټونه راته موجود دي او دوه نوي
+سټونه $\{\{\emptyset\}\}$ او $\{\emptyset, \{\emptyset\}\}$ جوړوو۔
+په پړاو $3$ کښې له مخکينيو پړاوونو څلور سټونه راته موجود
+دي، نو دولس نوي سټونه جوړوو\ldots۔ نو د سټونو تجمعي-تکراري
+انځور به يو څه داسې ښکاري (عددونه پړاوونه ښيي):
+\begin{center}
+	\begin{tikzpicture}[scale=0.6]
+	\tikzset{cut_here/.style={densely dotted}}
+	\draw (-4,6) -- (-1, 0)-- (2,6); 
+	\draw[cut_here] (-5,8)--(-4,6);
+	\draw[cut_here] (2,6)--(3,8);
+	\draw(-1.5, 1)--(-0.5, 1);
+	\draw(-2, 2)--(0, 2);
+	\draw(-2.5, 3)--(0.5,3);
+	\draw(-3, 4)--(1, 4);
+	\draw(-3.5, 5)--(1.5, 5);
+	\draw(-4, 6)--(2, 6);
+	\node[label] at (0, 0) {\small 0};
+	\node[label] at (0.5, 1) {\small 1};
+	\node[label] at (1, 2) {\small 2};
+	\node[label] at (1.5, 3) {\small 3};
+	\node[label] at (2, 4) {\small 4};
+	\node[label] at (2.5, 5) {\small 5};
+	\node[label] at (3, 6) {\small 6};
+	\end{tikzpicture}
+\end{center}
+نو ولې دا بيان ومنو؟
+
+يوه وجه دا ده چې دا يو ښه او د کار وړ بيان دے۔ د تر ټولو
+څرګند بيان، يعنې ساده ادراک، تر ناکامېدو وروسته يو ښه
+بيان راته پکار دے۔
+
+خو دا بيان \emph{يوازې} ښه نۀ دے۔ د دې باور لپاره ښه وجه
+لرو چې پر دې بيان ولاړه هره سټ تيوري به \emph{سازګاره} وي۔
+وجه يې دا ده:
+
+د سټ د تجمعي-تکراري تصور له مخې، سټونه په پړاوونو کښې
+جوړوو؛ او د هغو !!{element}s بايد داسې شيان وي چې
+\emph{له مخکې} موجود وو۔ نو د هر پړاو~$S$ لپاره دا سټ جوړولے شو:
+\[
+  R_S = \Setabs{x}{x \notin x \text{ او $x$ تر $S$ وړاندې موجود و}}
+\]
+د رسل د تناقض په ثبوت کښې راغلے استدلال به اوس دا ثابت کړي
+چې $R_S$ پخپله تر پړاو $S$ وړاندې موجود نۀ دے۔ او دا تناقض
+نۀ دے۔ سربېره پر دې، که د سټ تجمعي-تکراري تصور ومنو، نو
+بايد ان دا \emph{تمه} مو هم نۀ واے لرلې چې پخپله د رسل سټ
+جوړ کړو۔ ځکه هغه به د هغو ټولو خپل ځان د غړي په توګه نۀ
+لرونکو سټونو سټ وي چې «هر کله به موجود شي»۔ په لږو ټکو:
+دا حقيقت چې پخپله د رسل سټ (په ثبوت سره) نۀ شو جوړولے، د
+تجمعي-تکراري بيان له مخې \emph{حيرانوونکے} نۀ دے؛ دا هماغه
+څه دي چې مونږ به يې \emph{وړاندوينه} کوله۔
+
+%In one sense, then, the cumulative-iterative conception of set yields a response to Russell's Paradox which is rather like the \emph{predicativist}'s response. After all, the predicativist said that the collection of all non-self-membered sets$_n$ is a set$_{n+1}$, and this set$_n$ will not be self-membered. (Indeed, most predicativists will treat it as \emph{ungrammatical} to try to ask whether a set is self-membered.)
+%
+%But there is an important difference between the cumulative-iterative approach and the predicativist approach: the cumulative-iterative approach treats all of our entities as being \emph{of the same kind}. The predicativist will presumably have an empty set$_0$ (i.e., a set$_0$ with no !!{element}s), and an empty set$_1$ (i.e., a set$_1$ with no !!{element}s), and these will be \emph{different entities}. But on the cumulative-iterative approach, there is just one empty set, $\emptyset$, and it will be available at every stage of the hierarchy. 
+
+%Indeed, the Axiom of Extensionality, stated at the start of this chapter, will hold true of the elements in this hierarchy (so that there can be \emph{only one} ``empty'' set). But I do not intend to use the cumulative-iterative conception to justify Extensionality (see \cite{Boolos1971}). Again: I suggest that we should accept Extensionality, just because we are interested in extensional collections. 
+
+\end{document}

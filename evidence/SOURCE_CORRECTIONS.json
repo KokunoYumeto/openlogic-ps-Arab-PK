@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0525; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
-  "adopted_utc": "2026-09-28T23:57:44.357035+00:00",
+  "status": "adopted through OLP-0530; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
+  "adopted_utc": "2026-09-29T00:54:51.879512+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -14858,6 +14858,298 @@
           "reason": "CRLF-to-LF only; source-local prose treatment unchanged."
         }
       ]
+    },
+    {
+      "id": "OLCNT-009",
+      "unit_id": "OLP-0526",
+      "classification": "antecedent_match_verb_inconsistent_with_quotes_and_model",
+      "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+      "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex:19,28",
+      "source_literal_line_1based": [
+        19,
+        28
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+      "target_sha256": "b425f497678c75b74c520b4a1b6f26e49dec28808cc9fdeed01efdb8e60f140e",
+      "target_line_1based": 20,
+      "target_literal_line_1based": [
+        20
+      ],
+      "disclosure_line_1based": 20,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د مقدم په درې نثري ځايونو کښې د بلولو فعل د نقل شويو شرطونو او رسمي مدل له مخې د وهلو په معنا روښانه شوے؛ پايله بلېدل عين دي.",
+      "reason": "د سرچينې نقل شوي شرطونه د لرګي وهل د مقدم په توګه اخلي؛ درې تشريحي مقدمونه بلول ليکي. د واقعي ضدبېلګې د سبب او پايلې توپير ساتل شوے.",
+      "formula_policy": "Only four disclosed math-span treatments in OLCNT-011–013; all other75-span content, two raw TikZ diagrams and identifiers unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+      "audit_artifacts": [
+        "B158_SOURCE_AUDIT.json",
+        "B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B158_DRAFT_QA_OLP-0526.json",
+        "B158_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B158 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCNT-010",
+      "unit_id": "OLP-0527",
+      "classification": "duplicated_english_auxiliary_in_two_quoted_conditionals",
+      "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/transitivity.tex:20,23",
+      "source_literal_line_1based": [
+        20,
+        23
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "target_sha256": "8d050701d246b360fa236ddb797087985e02d09f83055b151994cca7030e2b5a",
+      "target_line_1based": 23,
+      "target_literal_line_1based": [
+        23
+      ],
+      "disclosure_line_1based": 23,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دوو نقل شويو شرطونو د فعل ټايپي تکرار په پښتو کښې يو ځل بيان شوے، له څرګندونې سره.",
+      "reason": "د سرچينې اضافي فعل د مثال منطقي يا سياسي فرض نۀ دے؛ بشپړ نثر، فرضونه او پښه‌ليک ساتل شوي.",
+      "formula_policy": "Only four disclosed math-span treatments in OLCNT-011–013; all other75-span content, two raw TikZ diagrams and identifiers unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+      "audit_artifacts": [
+        "B158_SOURCE_AUDIT.json",
+        "B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B158_DRAFT_QA_OLP-0527.json",
+        "B158_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B158 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCNT-011",
+      "unit_id": "OLP-0527",
+      "classification": "negated_satisfaction_sign_conflicts_with_truth_and_valuation",
+      "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/transitivity.tex:60",
+      "source_literal_line_1based": [
+        60
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/transitivity.tex",
+      "target_sha256": "8d050701d246b360fa236ddb797087985e02d09f83055b151994cca7030e2b5a",
+      "target_line_1based": 64,
+      "target_literal_line_1based": [
+        64
+      ],
+      "disclosure_line_1based": 64,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "په يوه تحقق‌يي برخه کښې د نفي نښه د مثبت تحقق نښې ته سمه شوې.",
+      "reason": "د ورکړل شوې q-منونکې سيمې په دواړو نړۍو کښې مادي شرطي رښتينې ده. د سرچينې نفي نښه له خپل نثر او ټاکنې سره ناسمون لري؛ محدود QA دواړه مقدمونه رښتيني او پايله کاذبه ښيي.",
+      "formula_policy": "Only four disclosed math-span treatments in OLCNT-011–013; all other75-span content, two raw TikZ diagrams and identifiers unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+      "audit_artifacts": [
+        "B158_SOURCE_AUDIT.json",
+        "B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B158_DRAFT_QA_OLP-0527.json",
+        "B158_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B158 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat/{M}{q\\lifr}$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{q\\lifr}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCNT-012",
+      "unit_id": "OLP-0528",
+      "classification": "sphere_system_written_as_whole_assignment_function",
+      "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/contraposition.tex:30",
+      "source_literal_line_1based": [
+        30
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "target_sha256": "031c217729b984b08c84314abfbfbffff23a62064467bed51d95e48d7c33cfab",
+      "target_line_1based": 32,
+      "target_literal_line_1based": [
+        32
+      ],
+      "disclosure_line_1based": 32,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د ورکړل شويو کروي سيمو د نظام نوم د مرکز نظام O_w ته برابر شوے؛ سټونه عين دي.",
+      "reason": "په رسمي تعريف کښې O تابع ده؛ د دې مثال ورکړل شوے د سټونو سټ د مرکز نظام دے. د محدود QA لپاره د نورو نړۍو يوعنصري نظامونه بشپړ معتبر مدل ورکوي.",
+      "formula_policy": "Only four disclosed math-span treatments in OLCNT-011–013; all other75-span content, two raw TikZ diagrams and identifiers unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+      "audit_artifacts": [
+        "B158_SOURCE_AUDIT.json",
+        "B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B158_DRAFT_QA_OLP-0528.json",
+        "B158_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B158 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+      "qa_math_exception": {
+        "source_only": [
+          "$O=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$"
+        ],
+        "target_only": [
+          "$O_w=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCNT-013",
+      "unit_id": "OLP-0528",
+      "classification": "two_satisfaction_statements_use_wrong_declared_model_name",
+      "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+      "source_locator": "content/counterfactuals/minimal-change-semantics/contraposition.tex:58,61",
+      "source_literal_line_1based": [
+        58,
+        61
+      ],
+      "target_path": "ps-Arab-PK/content/counterfactuals/minimal-change-semantics/contraposition.tex",
+      "target_sha256": "031c217729b984b08c84314abfbfbffff23a62064467bed51d95e48d7c33cfab",
+      "target_line_1based": 64,
+      "target_literal_line_1based": [
+        64
+      ],
+      "disclosure_line_1based": 64,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د دوو تحقق‌يي بيانونو مدل نوم د معرفي شوي M_1 سره برابر شوے.",
+      "reason": "سرچينه M_1 معرفي کوي، خو وروسته دوه بيانونه M ليکي؛ مدل، نړۍ، ټاکنه، انځور او صدق-شرطونه نۀ بدلوي.",
+      "formula_policy": "Only four disclosed math-span treatments in OLCNT-011–013; all other75-span content, two raw TikZ diagrams and identifiers unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+      "audit_artifacts": [
+        "B158_SOURCE_AUDIT.json",
+        "B158_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B158_DRAFT_QA_OLP-0528.json",
+        "B158_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B158 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "3859bcbaef4923f51966e4879c47c54fe9cd3cc028712b5ca50fb6aba3bd51c2",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mSat{M}{p\\cifq}[w]$",
+          "$\\mSat/{M}{\\lnotq\\lif\\lnotp}[w_2]$"
+        ],
+        "target_only": [
+          "$\\mSat{M_1}{p\\cifq}[w]$",
+          "$\\mSat/{M_1}{\\lnotq\\lif\\lnotp}[w_2]$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -14961,7 +15253,8 @@
     "PS-OWNER-SEMANTIC-20260929-INTUITIONISTIC-TABLEAUX",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
     "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS",
-    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES"
+    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
+    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING"
   ],
   "source_authorities": [
     {

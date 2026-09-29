@@ -1,0 +1,27 @@
+{
+  "schema": "ps-b159-finite-source-stage-counts/1",
+  "status": "PASS",
+  "counts": [
+    {
+      "stage": 0,
+      "earlier_available": 0,
+      "new_sets": 1
+    },
+    {
+      "stage": 1,
+      "earlier_available": 1,
+      "new_sets": 1
+    },
+    {
+      "stage": 2,
+      "earlier_available": 2,
+      "new_sets": 2
+    },
+    {
+      "stage": 3,
+      "earlier_available": 4,
+      "new_sets": 12
+    }
+  ],
+  "scope": "Replay of four supplied finite stage counts only; no formal consistency or unbounded theorem claimed."
+}
