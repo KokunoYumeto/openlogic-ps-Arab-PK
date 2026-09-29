@@ -1,0 +1,31 @@
+{
+  "schema": "ps-b186-choice-driver-draft-qa/1",
+  "status": "checked driver draft; not accepted",
+  "utc": "2026-09-29T21:07:22.555873+00:00",
+  "unit_id": "OLP-0592",
+  "source_path": "content/set-theory/choice/choice.tex",
+  "source_sha256": "eba6992abe80bc796682f62b5df71990fba3f5595c6d067f9cbc26d776c6499b",
+  "target_sha256": "ec80a8543f99159efd614bc4352582cafd15bec999968a7590d1d5281b7b7d1c",
+  "source_bytes": 372,
+  "target_bytes": 378,
+  "ordered_imports": [
+    "introduction",
+    "tarskiscott",
+    "hartogs",
+    "wellorderingproblem",
+    "countablechoice",
+    "justifications",
+    "banach",
+    "vitali"
+  ],
+  "checks": {
+    "source_frozen": true,
+    "only_chapter_title_localized": true,
+    "ordered_imports_equal": true,
+    "all_eight_imports": true,
+    "comments_equal": true,
+    "newline_style_matches_source": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Include this exact driver in the next source-audited Choice batch."
+}

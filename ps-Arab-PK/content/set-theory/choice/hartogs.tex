@@ -1,0 +1,119 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{choice}{hartogs}
+\olsection{د پرتلې وړتيا او د هارتوګس لم}
+
+دا يې ښه اړخ و۔ اوس بد اړخ ته راځو۔ بې له انتخابه
+چارې \emph{ګډې وډې} کېږي۔ د دې د ليدو دپاره د
+\cite{Hartogs1915} دا ښکلې پايله وګورئ:
+
+\begin{lem}[\emph{په $\ZF$ کښې}]\ollabel{HartogsLemma}
+د هر سټ $A$ دپاره داسې ترتيبي عدد $\alpha$ شته
+چې $\cardnless{\alpha}{A}$ وي۔
+\end{lem}
+
+\begin{proof}
+که $B \subseteq A$ او $R \subseteq B^2$ وي، نو
+\olref[ord-arithmetic][using-addition]{rankcomputation}
+له مخې $\tuple{B, R} \subseteq
+V_{\setrank{A}+4}$ وي۔ نو د بېلونې په
+کارولو دا سټ په پام کښې ونيسئ:
+\[
+	C = \Setabs{\tuple{B, R} \in V_{\setrank{A}+5}}{B\subseteq A 
+	\text{ او $\tuple{B, R}$ ښه ترتيب دے}}
+\]
+د تعويض او
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+په کارولو دا سټ جوړ کړئ:
+\[
+	\alpha = \Setabs{\ordtype{B, R}}{\tuple{B, R} \in C}.
+\]
+د \olref[ordinals][basic]{corordtransitiveord} له مخې
+$\alpha$ ترتيبي عدد دے، ځکه دا د ترتيبي عددونو انتقالي
+سټ دے۔ ځکه که $\gamma \in \beta \in \alpha$ وي، نو
+$\beta = \ordtype{B, R}$ د داسې کوم
+$B \subseteq R$ دپاره وي، او بيا
+$\gamma = \ordtype{B_b, R_b}$ د کوم $b
+\in B$ دپاره وي، د
+\olref[ordinals][iso]{wellordinitialsegment} له مخې؛
+نو $\gamma \in \alpha$۔
+\textbf{د سرچينې يادښت (OLSTH-023):} په تېر چاپي استدلال
+کښې د فرعي سټ نسبت د مخکيني سټ پر ځاے له اړيکې سره
+تړل شوے دے۔ دا د تعريف له شرط سره نه لګېږي۔ چاپي
+رياضيکي نښه هماغسې ساتل شوې او دا تېروتنه نه ده رغول شوې۔
+
+د تناقض دپاره فرض کړئ چې
+!!a{injection} $f \colon \alpha \to A$ شته۔
+بيا چې:
+\begin{align*}
+	B &= \ran{f}\\
+	R &= \Setabs{\tuple{f(\alpha), f(\beta)} \in A \times A}{\alpha \in \beta}.
+\end{align*}
+څرګنده ده چې $\alpha = \ordtype{B, R}$ او
+$\tuple{B, R} \in C$۔ نو $\alpha
+\in \alpha$، چې تناقض دے۔
+\end{proof}
+
+له دې څخه يوه ژوره پايله راځي:
+
+\begin{thm}[\emph{په $\ZF$ کښې}]
+لاندې دعوې همارزې دي:
+\begin{enumerate}
+	\item\ollabel{equivwo} د ښه ترتيب اصل
+	\item\ollabel{equivcompare} يا $\cardle{A}{B}$ وي يا
+	$\cardle{B}{A}$ وي، د هر دوو سټونو $A$ او $B$
+	دپاره
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\emph{\olref{equivwo} $\Rightarrow$ \olref{equivcompare}.}
+$A$ او $B$ وټاکئ۔ د \olref{equivwo} په کارولو
+ښه ترتيبونه $\tuple{A, R}$ او $\tuple{B, S}$
+شته۔ د
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+له مخې $f \colon
+\alpha \to \tuple{A, R}$ او $g \colon \beta \to \tuple{B, S}$
+هم‌شکلي وګڼئ۔ د
+\olref[sth][ordinals][basic]{ordinalsaresubsets} له مخې
+يا $\alpha \subseteq \beta$ وي يا
+$\beta \subseteq \alpha$ وي۔ که
+$\alpha \subseteq \beta$ وي، نو
+$\comp{f^{-1}}{g} \colon A \to B$ يوه
+!!a{injection} ده، نو $\cardle{A}{B}$؛ او که
+$\beta \subseteq \alpha$ وي، په همدې ډول
+$\cardle{B}{A}$۔
+
+\emph{\olref{equivcompare} $\Rightarrow$ \olref{equivwo}.}
+$A$ وټاکئ؛ د \olref{HartogsLemma} له مخې داسې
+ترتيبي عدد $\beta$ شته چې
+$\cardnless{\beta}{A}$ وي۔ د
+\olref{equivcompare} په کارولو
+$\cardle{A}{\beta}$ لرو۔ نو يوه
+!!{injection} $f \colon A \to
+\beta$ شته، او د $A$ غړي د دې يو پر يو تابع په وسيله
+د $\Setabs{\tuple{a, b} \in A \times A}{f(a)
+\in f(b)}$ اړيکې په تعريفولو سره ښه ترتيبولے شو۔
+\end{proof}
+\noindent
+سمدستي پايله دا ده: که ښه ترتيب ناکام شي، ځينې سټونه
+د اندازې له مخې \emph{په رښتيا نه پرتله کېږي}۔ نو که
+ښه ترتيب ناکام شي، د اصلي عددونو نامتناهيت هاخوا حساب
+به ګډ وډ شي۔ د بېلګې په توګه، دا فکر به پرېږدو چې
+که $A$ او $B$ نامتناهي وي، نو
+$\cardeq{\cardeq{A \disjointsum B}{A \times
+B}}{M}$، چې $M$ د $A$ او $B$ له منځه لوے
+سټ دے (وګورئ
+\olref[card-arithmetic][simp]{cardplustimesmax})۔
+مسئله ساده ده: که د $A$ او $B$ اندازه
+\emph{پرتله} نه شو کړے، نو دا پوښتنه بې‌معنا ده
+چې کوم يو لوے دے۔
+\textbf{د سرچينې يادښت (OLSTH-024):} په تېر چاپي
+سمبول کښې د هم‌شمېرۍ نښه د بلې هم‌شمېرۍ نښې په
+يوه خوا کښې راغلې ده؛ دا د يادې شوې حسابي پايلې
+سم ليکل نه دي۔ اصلي سمبول هماغسې ساتل شوے او
+دلته يې بديل فورمول نه دے اټکل شوے۔
+
+\end{document}

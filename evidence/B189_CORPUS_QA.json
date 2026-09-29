@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b189-corpus-qa/1",
+  "utc": "2026-09-29T21:36:45.797047+00:00",
+  "status": "PASS",
+  "projected_draft_units": 595,
+  "accepted_before_finalizer": 594,
+  "staged_units": [
+    "OLP-0595"
+  ],
+  "aligned_blocks": 8781,
+  "segment_canon_uses": 5556,
+  "semantic_samples": 2165,
+  "terms": 301,
+  "review_entries": 753,
+  "source_actions": 446,
+  "byte_identical_surfaces": {
+    "QA.json": "3ed2079565bdf5a8f1999cac9e098818dcdf1289edac4bfe288c43105379d522",
+    "ALIGNMENT.jsonl": "f268e6cc84822f65bfda4e0494a8e2ecf4559bae04bb86c349a38235f54ef02f",
+    "SEGMENT_CANON_USE.jsonl": "c6e4e1571edf399191c5b250d3c8914a198888282c5afb77eaa973ef164ac688"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "2ec94ea4e032388cab5dad768be10f27929c8bad15ee2feee7d2af4e586e659d",
+  "focused_qa_sha256": {
+    "B189_HARTOGS_DRAFT_QA.json": "06d01fef9be562ab5c18ce33dd2a21e6d9db3fdc1dd69e657b48619362ed58ca"
+  },
+  "next_action": "Dual canonical replay from frozen595 inputs; accept only if PASS."
+}

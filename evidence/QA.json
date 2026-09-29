@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 589,
-    "structural_pass": 589,
+    "draft_units": 595,
+    "structural_pass": 595,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B183-CARDINAL-EXPONENTIATION",
+  "batch": "PS-B189-HARTOGS-COMPARABILITY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -19093,6 +19093,184 @@
         "OLSTH-019"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0590",
+      "path": "content/set-theory/card-arithmetic/ch.tex",
+      "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+      "translation_sha256": "30a494d877c51fb3f27f3b093f1e0aa3dfb7176a6ace66e8b3dd76ab925d0e58",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "CH",
+        "GCH"
+      ],
+      "allowed_residual_english": [
+        "CH",
+        "GCH"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-020",
+        "OLSTH-021"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0591",
+      "path": "content/set-theory/card-arithmetic/fix.tex",
+      "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+      "translation_sha256": "b57b3fb0deda4e737d95012923179e4991a144966b6f08b5b88033c4f7b0f474",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-022"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0592",
+      "path": "content/set-theory/choice/choice.tex",
+      "source_sha256": "eba6992abe80bc796682f62b5df71990fba3f5595c6d067f9cbc26d776c6499b",
+      "translation_sha256": "ec80a8543f99159efd614bc4352582cafd15bec999968a7590d1d5281b7b7d1c",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0593",
+      "path": "content/set-theory/choice/introduction.tex",
+      "source_sha256": "bf4d57a0cb3263fa3b2cc386ba572017442f24e1016c995a81474e43ffaa7143",
+      "translation_sha256": "53e5a9dbe706de2fa9a4cd01b81aabcbca59da02c5c8f983dc41f69910317515",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0594",
+      "path": "content/set-theory/choice/tarskiscott.tex",
+      "source_sha256": "2cf102fa76c9cb3c1080901967626539d8da1aa6dda38dddbbc743ae5e883579",
+      "translation_sha256": "d60a48972afe53f4cc01d579a85eedbb109d6c0ae29e57a7303d3bf57680dcee",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [
+        "ts"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0595",
+      "path": "content/set-theory/choice/hartogs.tex",
+      "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+      "translation_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-023",
+        "OLSTH-024"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -31623,6 +31801,468 @@
       "passage": "restricted-reductions",
       "reverse_paraphrase": "Both power-of-two simplifications keep all cardinal inequalities and the infinity hypothesis on b.",
       "finding": "د اړوند اصلي تعريف، پښتو بيان او رياضيکي حدود تنګ سياق بيا وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B004",
+      "reverse_paraphrase": "The section is the Continuum Hypothesis.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B005",
+      "reverse_paraphrase": "The preceding exponent result motivates powersets but does not license straightforward behavior for every infinite cardinal.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B006",
+      "reverse_paraphrase": "The section introduces notation for the coming cardinal sequences.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B007",
+      "reverse_paraphrase": "Aleph and beth start at omega; aleph uses cardinal successors, beth uses powers of two, and both take unions at limits.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B008",
+      "reverse_paraphrase": "A larger cardinal exists above each cardinal; the sequences are specified by transfinite recursion, with the printed referent typo disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B009",
+      "reverse_paraphrase": "Cantor and Peirce are attributed the respective Hebrew-letter notations; the footnote records Peirce’s flawed claim about later beth terms.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B010",
+      "reverse_paraphrase": "Every aleph and beth term is asserted to be a cardinal for every ordinal index.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B011",
+      "reverse_paraphrase": "The base, successor and limit cardinal cases are invoked in the induction proof.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B012",
+      "reverse_paraphrase": "Every infinite cardinal is asserted to be a uniquely indexed aleph.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B013",
+      "reverse_paraphrase": "The successor and nonsuccessor proof cases retain the printed formulas; the finite-cardinal induction gap is disclosed but unrepaired.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B014",
+      "reverse_paraphrase": "The text asks whether every infinite cardinal is also a beth and links the question to powersets.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B015",
+      "reverse_paraphrase": "GCH is equality of the aleph and beth sequences at every ordinal index.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B016",
+      "reverse_paraphrase": "Under GCH, the discussed cardinal exponent is between a and its successor; a footnote attributes the branch condition to cofinality.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B017",
+      "reverse_paraphrase": "GCH is a hypothesis rather than a theorem, and the text distinguishes consistency of GCH and its negation with ZFC.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B018",
+      "reverse_paraphrase": "CH is the particular equation aleph one equals beth one.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B019",
+      "reverse_paraphrase": "The Cohen consistency statement for not-CH yields independence of CH from ZFC.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B020",
+      "reverse_paraphrase": "The continuum is the real line; CH denies a cardinal strictly between the naturals and the continuum.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B021",
+      "reverse_paraphrase": "The text asks about truth after formal independence and introduces two observations.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B022",
+      "reverse_paraphrase": "Formal independence alone does not immediately imply indeterminate truth; additional natural axioms might settle the matter.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B023",
+      "reverse_paraphrase": "Successor cardinality need not be supplied merely by taking a powerset; the commented hierarchy example remains unchanged.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "OLP-0590-B024",
+      "reverse_paraphrase": "The final footnote directs further reading to the cited Potter section.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د لړيو د تعريف، کميت ټاکونکو، فورمولونو، حوالو او ښکاره سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "aleph-beth-recursions",
+      "reverse_paraphrase": "Aleph successor takes the next cardinal; beth successor takes two to the preceding beth; limit stages take unions.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "aleph-proof-finite-base",
+      "reverse_paraphrase": "The printed induction hypothesis includes finite b without an aleph index and does not separately establish the omega base.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "gch-versus-ch",
+      "reverse_paraphrase": "GCH quantifies over every ordinal index, whereas CH is only the first nontrivial aleph-one/beth-one instance.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0590",
+      "passage": "independence-versus-truth",
+      "reverse_paraphrase": "Consistency and independence claims concern ZFC derivability; the philosophical truth question is expressly left open.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B003",
+      "reverse_paraphrase": "The section concerns aleph fixed points.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B004",
+      "reverse_paraphrase": "Replacement motivates asking how tall the cumulative hierarchy must be.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B005",
+      "reverse_paraphrase": "The small ordinal examples tempt the false general inequality kappa below aleph indexed by kappa.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B006",
+      "reverse_paraphrase": "ZFC disproves that inequality by the existence of aleph fixed points.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B007",
+      "reverse_paraphrase": "The proposition asserts existence of an aleph fixed point.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B008",
+      "reverse_paraphrase": "A countable recursion from zero gives a cardinal union equal to its aleph-indexed value.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B009",
+      "reverse_paraphrase": "Both Boolos quotations and their page citations concern the immense fixed point and the philosophical worry about Replacement.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B010",
+      "reverse_paraphrase": "The Tristram Shandy diary analogy has one recorded day per year; immortality eventually covers each numbered day.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B011",
+      "reverse_paraphrase": "The analogy asks how a growing gap can disappear at an aleph fixed point.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B012",
+      "reverse_paraphrase": "Under ZFC the next three results concern a nontrivial hierarchy stage whose width equals its height.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B013",
+      "reverse_paraphrase": "A beth fixed point exists.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B014",
+      "reverse_paraphrase": "The beth proof repeats the earlier aleph fixed-point construction with the new sequence.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B015",
+      "reverse_paraphrase": "The proposition states both stage-size formulas and the omega-times-omega threshold.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B016",
+      "reverse_paraphrase": "Transfinite induction and ordinal arithmetic establish that omega plus alpha equals alpha above the stated threshold.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B017",
+      "reverse_paraphrase": "Some hierarchy stage has cardinality equal to its ordinal index.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B018",
+      "reverse_paraphrase": "Choosing a beth fixed point and applying the preceding stage-size proposition yields the corollary.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B019",
+      "reverse_paraphrase": "At the fixed stage, as many prior stages as elements make the hierarchy intuitively as wide as tall.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B020",
+      "reverse_paraphrase": "The final question asks how often width matches height and claims ordinal-many occurrences.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "OLP-0591-B021",
+      "reverse_paraphrase": "The tau recursion and W recursion retain their exact formulas; the printed strict-growth and injection assertions are false at an already beth-fixed input, disclosed without repair.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0592",
+      "passage": "OLP-0592-B004",
+      "reverse_paraphrase": "The chapter driver is titled Choice; all eight ordered imports remain the same.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0593",
+      "passage": "OLP-0593-B004",
+      "reverse_paraphrase": "The section is an introduction.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0593",
+      "passage": "OLP-0593-B005",
+      "reverse_paraphrase": "The preceding cardinal theory uses ordinals and Well-Ordering; Choice is equivalent and raises philosophical questions about use and justification.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B003",
+      "reverse_paraphrase": "The section introduces the Tarski–Scott trick.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B004",
+      "reverse_paraphrase": "Earlier cardinal-as-ordinal definitions assumed Well-Ordering as a standard convention.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B005",
+      "reverse_paraphrase": "Cardinal comparisons still make sense without Well-Ordering; only the cardinal representative needs replacement.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B006",
+      "reverse_paraphrase": "The naive class of all equinumerous sets is too large to be a set, as singleton ranks continually rise.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B007",
+      "reverse_paraphrase": "Tarski and Scott supply a rank-based trick; the footnote allows formula parameters.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B008",
+      "reverse_paraphrase": "For a formula, choose all satisfying sets of the least possible rank, or the empty set if none satisfy it.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B009",
+      "reverse_paraphrase": "Foundation gives ranks; the least satisfying stage and Separation produce the rank-minimal representative set in ZF.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B010",
+      "reverse_paraphrase": "The justified trick now defines a cardinality notion.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B011",
+      "reverse_paraphrase": "The ts-cardinality of A is the rank-minimal set of all sets equinumerous with A.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B012",
+      "reverse_paraphrase": "The ts-cardinals need no Well-Ordering, and the cited results can be restated and proved in ZF.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "OLP-0594-B013",
+      "reverse_paraphrase": "The analogous ts-ordinal construction uses well-orders and cites Potter chapters nine through twelve.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د معنا، کمّي کوونکو، تعريفونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "tau-fixed-input-counterexample",
+      "reverse_paraphrase": "At a beth fixed input kappa, every tau iterate remains kappa, falsifying strict growth.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "W1-W2-collapse",
+      "reverse_paraphrase": "W one is beth fixed, so the printed W two equals W one and cannot define the claimed injection.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0591",
+      "passage": "stage-size-threshold",
+      "reverse_paraphrase": "The second hierarchy stage-size formula is conditional on omega times omega at most alpha.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0593",
+      "passage": "choice-wellordering-equivalence",
+      "reverse_paraphrase": "The text says Choice and Well-Ordering are equivalent and asks how the axiom is used and justified.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "least-rank-representatives",
+      "reverse_paraphrase": "The Tarski–Scott representative is a least-rank set of equinumerous sets, not their unrestricted proper class.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0594",
+      "passage": "ZF-without-wellordering",
+      "reverse_paraphrase": "The construction uses Foundation and Separation in ZF rather than Choice/Well-Ordering.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B003",
+      "reverse_paraphrase": "The section concerns size comparability and Hartogs lemma.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B004",
+      "reverse_paraphrase": "Without Choice, cardinal comparison becomes messy; Hartogs is cited as the example.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B005",
+      "reverse_paraphrase": "For every set A, some ordinal does not inject into A in ZF.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B006",
+      "reverse_paraphrase": "Separation and Replacement collect order types; downward closure makes their set an ordinal, with the printed wrong subset referent disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B007",
+      "reverse_paraphrase": "An injection of the resulting ordinal into A induces a well-order whose type belongs to itself, contradiction; source variable shadowing remains visible.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B008",
+      "reverse_paraphrase": "Hartogs yields a further equivalence theorem.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B009",
+      "reverse_paraphrase": "Within ZF, Well-Ordering is equivalent to comparability of the cardinal sizes of all pairs of sets.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B010",
+      "reverse_paraphrase": "Well-order types are comparable by ordinal inclusion, yielding an injection in one direction.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "OLP-0595-B011",
+      "reverse_paraphrase": "Hartogs and cardinal comparability yield an injection of A into an ordinal; failure of Well-Ordering allows incomparable sizes. The final nested cardinal relation is disclosed as malformed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "hartogs-no-injection",
+      "reverse_paraphrase": "For any A, the collected order types form an ordinal not injectable into A.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "comparability-two-directions",
+      "reverse_paraphrase": "Well-Ordering yields comparability; comparability plus Hartogs embeds each set into some ordinal.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "source-subset-referent",
+      "reverse_paraphrase": "The printed B subseteq R conflicts with the C condition B subseteq A; symbols are retained and disclosed.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0595",
+      "passage": "source-nested-relation",
+      "reverse_paraphrase": "The final printed nested cardinal-equivalence expression is malformed and not silently corrected.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
     }
   ],
   "builds": [

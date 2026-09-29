@@ -1,0 +1,44 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T21:35:57.202531+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY",
+  "batch_id": "PS-B189-HARTOGS-COMPARABILITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0595",
+      "source_path": "content/set-theory/choice/hartogs.tex",
+      "source_bytes": 3605,
+      "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+      "target_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLSTH-023",
+        "OLSTH-024"
+      ]
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0595": "06d01fef9be562ab5c18ce33dd2a21e6d9db3fdc1dd69e657b48619362ed58ca"
+  },
+  "preaudit_sha256": {
+    "OLP-0595": "cbc03206fe75d47bfd395d81db08e806e3a3668088a4ba2f578a05daf02a7375"
+  },
+  "model_provenance_sha256": "109b65674db97a8620f297cede40104210a83019240d1e755817fea606a50888",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER"
+  ],
+  "new_term_ids": [
+    "TERM-SET-HARTOGS-COMPARABILITY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-023",
+    "OLSTH-024"
+  ],
+  "semantic_samples_added": 13,
+  "formula_policy": "All 56 ordered active math spans and structural identifiers are exact; two unresolved printed defects are disclosed.",
+  "unresolved": "د چاپي فرعي-سټ غلطه مرجع او دوه ځله ننباسل شوې هم‌شمېري نه دي رغول شوي؛ د متغير نوم ټکر متخصصې کتنې ته پاتې دے.",
+  "next_executable_action": "Run dual 595-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0596."
+}

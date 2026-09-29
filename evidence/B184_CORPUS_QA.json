@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b184-corpus-qa/1",
+  "utc": "2026-09-29T20:58:04.878488+00:00",
+  "status": "PASS",
+  "projected_draft_units": 590,
+  "accepted_before_finalizer": 589,
+  "staged_units": [
+    "OLP-0590"
+  ],
+  "aligned_blocks": 8720,
+  "segment_canon_uses": 5514,
+  "semantic_samples": 2113,
+  "terms": 298,
+  "review_entries": 747,
+  "source_actions": 443,
+  "byte_identical_surfaces": {
+    "QA.json": "b4b041b5a31809ffe4d88d1189665933ced6e060ce92c111de47d2a9692819e1",
+    "ALIGNMENT.jsonl": "3626133895fefc7ba2057de19336cfc7af10ce8d6b4b25cd2466ddb93d7b66a2",
+    "SEGMENT_CANON_USE.jsonl": "886461e28300b99550499a1cc383dc455074ef722c002544e408d21919a53742"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "8359f6fef9ebc47781cd9d98b66fb745b68bcad2a9c2fe207be62a9cec40cbee",
+  "focused_qa_sha256": {
+    "B184_CONTINUUM_DRAFT_QA.json": "2224865427f3be8983dd6d2648d56885a4e16ed0f78dacccf913d95e57338d0c"
+  },
+  "next_action": "Dual canonical replay from frozen590 inputs; accept only if PASS. Continue OLP-0591 translation."
+}

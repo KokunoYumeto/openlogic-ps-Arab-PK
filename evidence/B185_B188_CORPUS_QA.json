@@ -1,0 +1,36 @@
+{
+  "schema": "ps-b185-b188-corpus-qa/1",
+  "utc": "2026-09-29T21:22:21.720973+00:00",
+  "status": "PASS",
+  "projected_draft_units": 594,
+  "accepted_before_finalizer": 590,
+  "staged_units": [
+    "OLP-0591",
+    "OLP-0592",
+    "OLP-0593",
+    "OLP-0594"
+  ],
+  "aligned_blocks": 8769,
+  "segment_canon_uses": 5547,
+  "semantic_samples": 2152,
+  "terms": 300,
+  "review_entries": 750,
+  "source_actions": 444,
+  "byte_identical_surfaces": {
+    "QA.json": "aa60e3349f95629f5429d354972f5457dfbad142c94542e91743bb2eeca4fb10",
+    "ALIGNMENT.jsonl": "82fae70c067c9b87a959ba94b6612f62724fc335594612184025242f81a18ab9",
+    "SEGMENT_CANON_USE.jsonl": "e2567fd29dcb95b6081892ac5d5f95809324cef9912a2a7af5af1f809bb5f36d"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "020683e4d648997c0d2cdb83e00aca5bc877a11f3f0183b7fc15aff97ff8b305",
+  "focused_qa_sha256": {
+    "B185_ALEPH_FIXED_DRAFT_QA.json": "76a8452191dc3b16d8378ea1e6a90166b57f70b06c788cd9c214e491cabc2ce6",
+    "B186_CHOICE_DRIVER_DRAFT_QA.json": "b993a39e0809c3f1bba0a97db374bd49ad31edc73710b7c7c9c75914ab1f578f",
+    "B187_CHOICE_INTRO_DRAFT_QA.json": "c5169a22dc58addea153c87219b6c5bfe3ad5318f5a74c29af46f11a590bfaac",
+    "B188_TARSKI_SCOTT_DRAFT_QA.json": "11e2fd325df474b78b73aa2379e45f87b14871f78c5425629f2e6d2aa5a5b100"
+  },
+  "next_action": "Dual canonical replay from frozen594 inputs; accept only if PASS."
+}

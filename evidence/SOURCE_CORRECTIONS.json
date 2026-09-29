@@ -16283,6 +16283,285 @@
         "target_only": []
       },
       "limits": "Exact local zero-exponent qualification; no original-author approval claimed."
+    },
+    {
+      "id": "OLSTH-020",
+      "unit_id": "OLP-0590",
+      "classification": "referent_typo_in_dual_cardinal_sequence_definition",
+      "source_path": "content/set-theory/card-arithmetic/ch.tex",
+      "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+      "source_locator": "content/set-theory/card-arithmetic/ch.tex:35",
+      "source_literal_line_1based": [
+        35
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/card-arithmetic/ch.tex",
+      "target_sha256": "30a494d877c51fb3f27f3b093f1e0aa3dfb7176a6ace66e8b3dd76ab925d0e58",
+      "target_line_1based": 35,
+      "target_literal_line_1based": [
+        35
+      ],
+      "disclosure_line_1based": 37,
+      "mode": "adjacent-Pashto-disclosed-source-local-prose-referent-correction",
+      "translation_change": "د يوه اصلي عدد د پاتې تعريف پر ځاے د الف او بېت د دواړو لړيو پاتې تعريفونه ياد شول؛ چاپي عبارت ښکاره شو.",
+      "reason": "The printed sentence says the rest of the definition of cardinal a is provided by transfinite recursion, although the paragraph has just defined the aleph and beth sequences. The target names the two sequences and discloses the printed referent; all mathematical spans remain in source order.",
+      "formula_policy": "All 58 ordered active mathematical spans are exact; the source issue is disclosed in adjacent Pashto prose.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-CONTINUUM-HYPOTHESIS",
+      "audit_artifacts": [
+        "B184_SOURCE_AUDIT.json",
+        "B184_CONTINUUM_DRAFT_QA.json",
+        "B184_CONTINUUM_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B184 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "2224865427f3be8983dd6d2648d56885a4e16ed0f78dacccf913d95e57338d0c",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Source-local prose referent only; no formula change or original-author approval claimed."
+    },
+    {
+      "id": "OLSTH-021",
+      "unit_id": "OLP-0590",
+      "classification": "finite_cardinal_base_gap_in_aleph_exhaustion_proof",
+      "source_path": "content/set-theory/card-arithmetic/ch.tex",
+      "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+      "source_locator": "content/set-theory/card-arithmetic/ch.tex:70",
+      "source_literal_line_1based": [
+        70
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/card-arithmetic/ch.tex",
+      "target_sha256": "30a494d877c51fb3f27f3b093f1e0aa3dfb7176a6ace66e8b3dd76ab925d0e58",
+      "target_line_1based": 75,
+      "target_literal_line_1based": [
+        75
+      ],
+      "disclosure_line_1based": 88,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-proof-gap",
+      "translation_change": "د چاپي استقرا د متناهي کوچنيو اصلي عددونو تشه د ثبوت ترڅنګ ښکاره شوه؛ فورمولونه او دعوه هماغسې پاتې دي.",
+      "reason": "The proposition concerns infinite cardinals, but the printed induction hypothesis quantifies over every smaller cardinal b, including finite b for which no aleph index gamma_b has been defined. The first infinite cardinal omega also needs a separate base treatment. The target retains every printed formula and states that this proof gap remains open.",
+      "formula_policy": "All 58 ordered active mathematical spans are exact; the source issue is disclosed in adjacent Pashto prose.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-CONTINUUM-HYPOTHESIS",
+      "audit_artifacts": [
+        "B184_SOURCE_AUDIT.json",
+        "B184_CONTINUUM_DRAFT_QA.json",
+        "B184_CONTINUUM_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B184 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "2224865427f3be8983dd6d2648d56885a4e16ed0f78dacccf913d95e57338d0c",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; OLSTH-021 proof gap is unresolved."
+    },
+    {
+      "id": "OLSTH-022",
+      "unit_id": "OLP-0591",
+      "classification": "beth_fixed_point_iteration_nonincrease_and_failed_injection",
+      "source_path": "content/set-theory/card-arithmetic/fix.tex",
+      "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+      "source_locator": "content/set-theory/card-arithmetic/fix.tex:152,160",
+      "source_literal_line_1based": [
+        152,
+        160
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/card-arithmetic/fix.tex",
+      "target_sha256": "b57b3fb0deda4e737d95012923179e4991a144966b6f08b5b88033c4f7b0f474",
+      "target_line_1based": 166,
+      "target_literal_line_1based": [
+        166,
+        181
+      ],
+      "disclosure_line_1based": 173,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-proof-error",
+      "translation_change": "د تل زياتېدو او يو پر يو توب ناسمه چاپي ادعا د فورمولونو له ساتلو سره ښکاره شوه.",
+      "reason": "If card(A) is already a beth fixed point, every tau iterate equals card(A), so the printed strict inequality is false. W_1 is beth fixed, hence W_2=W_1; the printed injection assertion fails for this recursion. The target leaves all formulas intact and discloses the unresolved source error.",
+      "formula_policy": "All 58 ordered active mathematical spans are exact; only adjacent Pashto prose discloses the source error.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-FIXED-CHOICE-OPENING",
+      "audit_artifacts": [
+        "B185_B188_SOURCE_AUDIT.json",
+        "B185_ALEPH_FIXED_DRAFT_QA.json",
+        "B185_ALEPH_FIXED_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B185 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "76a8452191dc3b16d8378ea1e6a90166b57f70b06c788cd9c214e491cabc2ce6",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed strict-growth and injection claims remain unresolved."
+    },
+    {
+      "id": "OLSTH-023",
+      "unit_id": "OLP-0595",
+      "classification": "wrong_subset_referent_in_hartogs_transitivity_proof",
+      "source_path": "content/set-theory/choice/hartogs.tex",
+      "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+      "source_locator": "content/set-theory/choice/hartogs.tex:33",
+      "source_literal_line_1based": [
+        33
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/hartogs.tex",
+      "target_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "target_line_1based": 37,
+      "target_literal_line_1based": [
+        37
+      ],
+      "disclosure_line_1based": 42,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-referent-error",
+      "translation_change": "د انتقالي‌والي په چاپي استدلال کښې د فرعي سټ غلطه مرجع ښکاره شوه؛ نښه نه ده بدله شوې.",
+      "reason": "The printed proof writes B subseteq R when taking the order type of a member of C. C was defined using B subseteq A and R as a relation on B. The displayed relation is preserved in the target and the referent error is disclosed in adjacent Pashto.",
+      "formula_policy": "All 56 ordered active mathematical spans are exact; adjacent Pashto prose discloses the source issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY",
+      "audit_artifacts": [
+        "B189_SOURCE_AUDIT.json",
+        "B189_HARTOGS_DRAFT_QA.json",
+        "B189_HARTOGS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B189 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "06d01fef9be562ab5c18ce33dd2a21e6d9db3fdc1dd69e657b48619362ed58ca",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed passage remains unresolved."
+    },
+    {
+      "id": "OLSTH-024",
+      "unit_id": "OLP-0595",
+      "classification": "nested_cardinal_equivalence_as_relation_argument",
+      "source_path": "content/set-theory/choice/hartogs.tex",
+      "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+      "source_locator": "content/set-theory/choice/hartogs.tex:80,81",
+      "source_literal_line_1based": [
+        80,
+        81
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/hartogs.tex",
+      "target_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "target_line_1based": 106,
+      "target_literal_line_1based": [
+        106,
+        107
+      ],
+      "disclosure_line_1based": 113,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-formula-error",
+      "translation_change": "د وروستۍ حسابي پايلې دوه ځله ننباسل شوې هم‌شمېرۍ نښه ښکاره شوه؛ بديل فورمول نه دے اټکل شوے.",
+      "reason": "The printed final expression places one cardinal-equivalence relation inside the first argument of another, so it is not a well-formed restatement of the cited maximum theorem. The target preserves the formula exactly and discloses this unresolved source defect.",
+      "formula_policy": "All 56 ordered active mathematical spans are exact; adjacent Pashto prose discloses the source issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY",
+      "audit_artifacts": [
+        "B189_SOURCE_AUDIT.json",
+        "B189_HARTOGS_DRAFT_QA.json",
+        "B189_HARTOGS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B189 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "06d01fef9be562ab5c18ce33dd2a21e6d9db3fdc1dd69e657b48619362ed58ca",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed passage remains unresolved."
     }
   ],
   "external_upstream_report_submitted": false,

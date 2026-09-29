@@ -1,0 +1,45 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T20:56:05.219650+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-CONTINUUM-HYPOTHESIS",
+  "batch_id": "PS-B184-CONTINUUM-HYPOTHESIS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0590",
+      "source_path": "content/set-theory/card-arithmetic/ch.tex",
+      "source_bytes": 6837,
+      "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+      "target_sha256": "30a494d877c51fb3f27f3b093f1e0aa3dfb7176a6ace66e8b3dd76ab925d0e58",
+      "paired_blocks": 25,
+      "source_correction_ids": [
+        "OLSTH-020",
+        "OLSTH-021"
+      ]
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0590": "2224865427f3be8983dd6d2648d56885a4e16ed0f78dacccf913d95e57338d0c"
+  },
+  "preaudit_sha256": {
+    "OLP-0590": "53fc845c47d837d6b42faca356073a958aba9e05230497fa0c72c36b819fa7e1"
+  },
+  "model_provenance_sha256": "4abeada620b372b48269a4ac23b62aaeb51edbfcd4758f3d8ced058d0a88aba9",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+  ],
+  "new_term_ids": [
+    "TERM-SET-BETH-GCH",
+    "TERM-SET-COFINALITY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-020",
+    "OLSTH-021"
+  ],
+  "semantic_samples_added": 25,
+  "formula_policy": "All 58 ordered active math spans, identifiers, comments and structural commands are exact. OLSTH-020 fixes only a prose referent; OLSTH-021 discloses an unrepaired source proof gap.",
+  "unresolved": "د الف عمومي ثبوت د متناهي کوچنيو اصلي عددونو او اوميګا بنسټ تشه لري؛ د اصلي ليکوال تصويب نه دے ادعا شوے. بشپړ لوستونکی او راتلونکي واحدونه پاتې دي.",
+  "next_executable_action": "Run two 590-unit corpus QA generators and dual canonical replay; accept only on PASS, then continue OLP-0591. TeX slot never suspends translation."
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T21:20:49.923827+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-FIXED-CHOICE-OPENING",
+  "batch_id": "PS-B185-B188-FIXED-POINTS-CHOICE-OPENING",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0591",
+      "source_path": "content/set-theory/card-arithmetic/fix.tex",
+      "source_bytes": 7091,
+      "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+      "target_sha256": "b57b3fb0deda4e737d95012923179e4991a144966b6f08b5b88033c4f7b0f474",
+      "paired_blocks": 22,
+      "source_correction_ids": [
+        "OLSTH-022"
+      ]
+    },
+    {
+      "unit_id": "OLP-0592",
+      "source_path": "content/set-theory/choice/choice.tex",
+      "source_bytes": 372,
+      "source_sha256": "eba6992abe80bc796682f62b5df71990fba3f5595c6d067f9cbc26d776c6499b",
+      "target_sha256": "ec80a8543f99159efd614bc4352582cafd15bec999968a7590d1d5281b7b7d1c",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0593",
+      "source_path": "content/set-theory/choice/introduction.tex",
+      "source_bytes": 589,
+      "source_sha256": "bf4d57a0cb3263fa3b2cc386ba572017442f24e1016c995a81474e43ffaa7143",
+      "target_sha256": "53e5a9dbe706de2fa9a4cd01b81aabcbca59da02c5c8f983dc41f69910317515",
+      "paired_blocks": 6,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0594",
+      "source_path": "content/set-theory/choice/tarskiscott.tex",
+      "source_bytes": 3324,
+      "source_sha256": "2cf102fa76c9cb3c1080901967626539d8da1aa6dda38dddbbc743ae5e883579",
+      "target_sha256": "d60a48972afe53f4cc01d579a85eedbb109d6c0ae29e57a7303d3bf57680dcee",
+      "paired_blocks": 14,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0591": "76a8452191dc3b16d8378ea1e6a90166b57f70b06c788cd9c214e491cabc2ce6",
+    "OLP-0592": "b993a39e0809c3f1bba0a97db374bd49ad31edc73710b7c7c9c75914ab1f578f",
+    "OLP-0593": "c5169a22dc58addea153c87219b6c5bfe3ad5318f5a74c29af46f11a590bfaac",
+    "OLP-0594": "11e2fd325df474b78b73aa2379e45f87b14871f78c5425629f2e6d2aa5a5b100"
+  },
+  "preaudit_sha256": {
+    "OLP-0591": "3763a7afea557fd9088eb163c3e21eafd5288f58b6e9e0714422e6980c817298"
+  },
+  "model_provenance_sha256": "791edaa27d0927c29cebb9b73c1a45a0776745b9b32398edb9a320fc6dd0cc67",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+    "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+  ],
+  "new_term_ids": [
+    "TERM-SET-CHOICE-WELLORDER",
+    "TERM-SET-TARSKI-SCOTT-CARDINAL"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-022"
+  ],
+  "semantic_samples_added": 39,
+  "formula_policy": "The focused receipts verify exact ordered active math, identifiers, citations and structure. OLSTH-022 discloses an unrepaired printed error.",
+  "unresolved": "د OLSTH-022 چاپي ثبوتي تېروتنه لا نه ده رغول شوې؛ د انتخاب د دوو اصطلاحي بڼو د وروستي يووالي کتنه پاتې ده.",
+  "next_executable_action": "Run dual 594-unit corpus QA and dual canonical replay; accept only on PASS, then continue OLP-0595."
+}

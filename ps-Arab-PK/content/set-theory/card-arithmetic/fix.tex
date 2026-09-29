@@ -1,0 +1,186 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{fix}
+\olsection{د $\aleph$ ثابت ټکي}
+
+په \olref[spine][]{chap} کښې مو ويلي وو چې د تعويض اصل توجيه
+غواړي، ځکه دا د سټونو مراتبي جوړښت ډېر لوړوي۔ اوس چې مو د اصلي
+عددونو يو څه حساب وکړ، د دې جوړښت د لوړوالي يوه بېلګه وړاندې
+کولے شو۔
+
+ښکاره ده چې $0 < \aleph_0$، او $1 < \aleph_1$، او
+$2 < \aleph_2$\ldots؛ په رښتيا، د اندازې توپير په هر پړاو کښې
+لا \emph{لوېږي}۔ نو دا ګومان راولاړېږي چې
+$\kappa< \aleph_\kappa$ به د هر ترتيبي عدد $\kappa$ دپاره وي۔
+
+خو د $\ZFC$ په منلو دا ګومان \emph{ناسم} دے۔ په رښتيا،
+\emph{د $\aleph$ ثابت ټکي} هم شته؛ يعنې داسې اصلي عددونه
+$\kappa$ چې $\kappa=\aleph_\kappa$ وي۔
+
+\begin{prop}\ollabel{alephfixed}
+د $\aleph$ يو ثابت ټکی شته۔
+\end{prop}
+
+\begin{proof}
+د بازګښت په کارولو لاندې تعريف کړئ:
+\begin{align*}
+	\kappa_0 &= 0\\
+	\kappa_{n+1} &= \aleph_{\kappa_n}\\
+	\kappa&= \bigcup_{n < \omega}\kappa_n
+\end{align*}
+اوس $\kappa$ د
+\olref[cardinals][classing]{unioncardinalscardinal} له مخې
+اصلي عدد دے۔ خو بيا:
+\[
+	\kappa= \bigcup_{n < \omega} \kappa_{n+1} = 
+	\bigcup_{n < \omega}\aleph_{\kappa_n} = 
+	\bigcup_{\alpha < \kappa}\aleph_\alpha = \aleph_\kappa
+\]
+%	By construction, $\kappa$ is the least cardinal greater than each
+%	$\kappa_n$. So $\aleph_\kappa$ is the least cardinal greater than
+%	each $\aleph_{\kappa_n}$, and hence greater than each
+%	$\kappa_{n+1}$. But equally $\kappa$ is the least cardinal greater
+%	than each $\kappa_{n+1} = \aleph_{\kappa_n}$. So $\kappa=
+%	\aleph_\kappa$.
+\end{proof}
+
+بولوس يو وخت د همدغې، زموږ له خوا جوړې شوې، د $\aleph$
+د ثابت ټکي په اړه يوه ليکنه وکړه۔ د ليکنې په سر کښې يې د
+$\kappa$ له شتون څخه وروسته وويل:
+\begin{quote}
+	[د $\kappa$ اندازه] د هغو کسانو له نظره چې مخکې يې د سټونو
+	له نظريې سره آشنايي نه وي لرلې، \emph{ډېره لويه} شمېره ده؛
+	زما په اند دومره لويه چې د هرې هغې نظريې د رښتياوالي په اړه
+	شک پيدا کوي چې يوه ادعا يې دا وي چې لږ تر لږه
+	$\kappa$ څيزونه شته۔
+	\citep[p.~257]{Boolos2000}
+\end{quote}
+او د ليکنې په پاے کښې يې دا پوښتنه وکړه:
+\begin{quote}
+	[ايا] موږ شک کوو چې، که څه هم د کيسې په پيل کښې به داسې
+	نه وه، خو تر دې ځايه په رسېدو څرخونه بې‌ځايه تاوېږي او
+	موږ نور د کوم واقع شوي شي وصف نه اورو؟
+	\citep[p.~268]{Boolos2000}
+\end{quote}
+که موږ په رښتيا له «هر هغه څه چې واقع دي» هاخوا تللي يو،
+نو نېغه پړه به پر تعويض واچوو۔ ځکه همدا اصل زموږ ثبوت ته
+لار برابروي۔ که داسې وي، نو ګومان کېږي چې بولوس به اړ شي
+خپله هغه څو لسيزې پخوانۍ ادعا بيا وګوري چې تعويض «هېڅ
+ناغوښتې» پايله نه لري (وګورئ \olref[replacement][extrinsic]{sec})۔
+
+خو ايا د $\kappa$ شتون دومره بد دے؟ دلته ښايي د رسل
+\emph{د ټرېسټرم شېنډي تناقض} په پام کښې نيول مرسته وکړي۔
+ټرېسټرم شېنډي خپل ژوند په ورځپاڼه کښې ثبتوي، خو د يوې
+ورځې د ثبتولو دپاره يو کال وخت اخلي۔ د هر کال په تېرېدو
+لا شاته پاتې کېږي: له يو کال وروسته يې يوازې يوه ورځ
+ثبت کړې او ۳۶۴ تېرې ورځې يې نه دي ثبت کړې؛ له دوو کلونو
+وروسته يې يوازې دوې ورځې ثبت کړې او ۷۲۸ ورځې نه دي ثبت
+کړې؛ له درېيو کلونو وروسته يې يوازې درې ورځې ثبت کړې
+او ۱۰۹۲ ورځې نه دي ثبت کړې \dots\footnote{کبيسې کلونه
+له پامه غورځوو۔} بيا هم، که ټرېسټرم \emph{تلپاتې} وي،
+هره ورځ به ثبت کړے شي، ځکه د خپل ژوند $n$مه ورځ
+به په $n$م کال کښې ثبت کړي۔ په دې ډول به «د وخت په پاے
+کښې» د هغه ورځپاڼه بشپړه وي۔
+
+اوس ولې دا له دې فکره دومره جلا ده چې $\alpha$ له
+$\aleph_\alpha$ څخه کوچنے، بلکې په زياتېدونکي او ډېر
+ښکاره ډول کوچنے، وي، تر هغې چې $\kappa$ ته ورسېږو،
+او هلته دواړه سره برابر شي او $\kappa
+= \aleph_\kappa$ وګرځي؟
+
+دا خبره يوې خوا ته پرېږدو، او که $\ZFC$ ومنو، نو د
+ثابت ټکي د جوړښتونو په اړه له يوې بلې په زړه پورې
+خبرې سره پای ته رسېږو۔ راتلونکې درې پايلې په وجداني
+ډول دا ثابتوي چې يو (ناابتدايي) پړاو شته چې د مراتبي
+جوړښت پلنوالے يې له لوړوالي سره برابر دے:
+
+\begin{prop}\ollabel{bethfixed}
+د $\beth$ يو ثابت ټکی شته، يعنې داسې $\kappa$ چې
+$\kappa=\beth_\kappa$ وي۔
+\end{prop}
+
+\begin{proof}
+لکه په \olref{alephfixed} کښې، خو «$\beth$» د
+«$\aleph$» پر ځاے وکاروئ۔
+\end{proof}
+
+\begin{prop}\ollabel{stagesize}
+$\card{V_{\omega+\alpha}} = \beth_{\alpha}$۔ که
+$\omega \ordtimes \omega \leq \alpha$ وي، نو
+$\card{V_\alpha} = \beth_\alpha$۔
+\end{prop}
+
+\begin{proof}
+لومړۍ ادعا د نامتناهيت هاخوا په ساده استقرا ثابتېږي۔
+دويمه ادعا له دې راځي چې که $\omega \ordtimes \omega \leq
+\alpha$ وي، نو $\omega + \alpha = \alpha$۔ د دې د
+ثابتولو دپاره د ترتيبي حساب هغه حقيقتونه کاروو چې په
+\olref[ord-arithmetic][]{chap} کښې راغلي دي۔ لومړے پام
+وکړئ چې $\omega \ordtimes \omega = \omega \ordtimes (1
+\ordplus \omega) = ( \omega  \ordtimes 1) \ordplus
+(\omega\ordtimes\omega) = \omega
+\ordplus (\omega \ordtimes \omega)$۔ اوس که
+$\omega \ordtimes \omega \leq \alpha$ وي، يعنې
+$\alpha = (\omega\ordtimes\omega) \ordplus \beta$
+د کوم $\beta$ دپاره وي، نو $\omega \ordplus \alpha = \omega
+\ordplus ((\omega \ordtimes \omega) \ordplus \beta) =
+(\omega \ordplus (\omega \ordtimes \omega)) \ordplus
+\beta = (\omega \ordtimes \omega) \ordplus \beta =
+\alpha$۔
+\end{proof}
+
+\begin{cor}
+داسې $\kappa$ شته چې $\card{V_\kappa} = \kappa$۔
+\end{cor}
+
+\begin{proof}
+هغه $\kappa$ واخلئ چې د \olref{bethfixed} له مخې
+د $\beth$ ثابت ټکی دے۔ څرګنده ده چې $\omega \ordtimes
+\omega < \kappa$۔ نو د \olref{stagesize} له مخې
+$\card{V_\kappa} = \beth_\kappa= \kappa$۔
+\end{proof}
+
+د $V_\kappa$ لاندې دومره پړاوونه شته، څومره چې په
+$V_\kappa$ کښې !!{element}s شته۔ نو په وجداني توګه
+$V_\kappa$ هماغومره پلن دے څومره چې لوړ دے۔
+دا د ټرېسټرم شېنډي د کيسې په شان ده: له يوه پړاو څخه
+بل ته د \emph{توان سټونو} په اخيستلو ځو، او په هر
+ګام کښې مو مراتبي جوړښت \emph{ډېر} لوېږي۔ خو «په
+پاے کښې»، يعنې د $\kappa$ په پړاو کښې، د جوړښت
+پلنوالے له لوړوالي سره برابر شي۔
+
+ښايي څوک وپوښتي: \emph{د مراتبي جوړښت پلنوالے
+څو ځله له لوړوالي سره برابرېږي؟} ځواب دا دے:
+\emph{د ترتيبي عددونو هومره ځله۔} خو دا لږې
+تشريح ته اړتيا لري۔
+
+يو ترم $\tau$ په لاندې ډول تعريفوو۔ د هر $A$ دپاره:
+\begin{align*}
+	\tau_0(A) & \defis \card{A}\\
+	\tau_{n+1}(A) & \defis \beth_{\tau_n(A)}\\
+	\tau(A) & \defis \bigcup_{n < \omega}\tau_n(A)
+\intertext{لکه په \olref{bethfixed} کښې، $\tau(A)$ د
+$\beth$ ثابت ټکی دے، د هر $A$ دپاره؛ چاپي متن دا
+هم «څرګنده» بولي چې $\card{A} < \tau(A)$۔
+نو اوس دا بازګښتي تعريف وګورئ:}
+	W_0 &\defis 0\\
+	W_{\alpha + 1} & \defis \tau(W_\alpha)\\
+	W_\alpha & \defis \bigcup_{\beta < \alpha} W_\beta
+	\text{، چې $\alpha$ حدي وي}
+\end{align*}
+\textbf{د سرچينې يادښت (OLSTH-022):} د چاپي «تل لوے»
+ادعا ناسمه ده: که د لومړني سټ اصلي شمېر لا د بېت ثابت ټکی
+وي، دا تکرار هماغه اصلي شمېر بېرته ورکوي۔ په ځانګړي
+ډول د صفر څخه جوړ شوے لومړے بېت ثابت ټکی په بل تالي
+پړاو کښې نه لوېږي؛ نو لاندې يو پر يو توب هم په چاپي
+تعريف نه ثابتېږي۔ فورمولونه هماغسې پاتې دي او تشه
+لا نه ده رغول شوې۔
+دا جوړښت د ټولو ترتيبي عددونو دپاره تعريف شوے دے۔
+نو په وجداني توګه، $W$ د ترتيبي عددونو څخه د
+$\beth$ ثابت ټکو ته «!!a{injection}» ده۔ او لکه
+مخکې، $V_{W_\alpha}$ د هر $\alpha$ دپاره له خپل
+لوړوالي سره هم‌پلن دے۔
+
+\end{document}

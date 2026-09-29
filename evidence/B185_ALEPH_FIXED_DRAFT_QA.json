@@ -1,0 +1,39 @@
+{
+  "schema": "ps-b185-aleph-fixed-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T21:02:06.001615+00:00",
+  "unit_id": "OLP-0591",
+  "source_path": "content/set-theory/card-arithmetic/fix.tex",
+  "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+  "target_sha256": "b57b3fb0deda4e737d95012923179e4991a144966b6f08b5b88033c4f7b0f474",
+  "source_bytes": 7091,
+  "target_bytes": 9875,
+  "paired_blocks": 22,
+  "changed_blocks": 19,
+  "ordered_math_spans": 58,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-022"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, comments, term tokens and CRLF remain exact; an adjacent source note discloses the false strict-growth claim and resulting injection gap.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "one_adjacent_disclosure": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

@@ -3970,3 +3970,51 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Audit: `PS-OWNER-SEMANTIC-20260929-CARDINAL-EXPONENT-ZERO`
 - Treatment: د چاپي متناهي توان د شرط صفر حالت بېل او رد شو؛ قضيه او د هغې د ضرب ثبوت يوازې د ناصفر متناهي توان دپاره بيان شول..
 - Disclosure: `adjacent-Pashto-disclosed-source-local-zero-exponent-qualification`.
+
+## OLSTH-020
+
+- Unit: `OLP-0590`
+- Frozen source: `content/set-theory/card-arithmetic/ch.tex` (b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212) at `content/set-theory/card-arithmetic/ch.tex:35`
+- Pashto target: `ps-Arab-PK/content/set-theory/card-arithmetic/ch.tex:35`
+- Audit: `PS-OWNER-SEMANTIC-20260929-CONTINUUM-HYPOTHESIS`
+- Treatment: د يوه اصلي عدد د پاتې تعريف پر ځاے د الف او بېت د دواړو لړيو پاتې تعريفونه ياد شول؛ چاپي عبارت ښکاره شو..
+- Disclosure: `adjacent-Pashto-disclosed-source-local-prose-referent-correction`.
+
+## OLSTH-021
+
+- Unit: `OLP-0590`
+- Frozen source: `content/set-theory/card-arithmetic/ch.tex` (b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212) at `content/set-theory/card-arithmetic/ch.tex:70`
+- Pashto target: `ps-Arab-PK/content/set-theory/card-arithmetic/ch.tex:75`
+- Audit: `PS-OWNER-SEMANTIC-20260929-CONTINUUM-HYPOTHESIS`
+- Treatment: د چاپي استقرا د متناهي کوچنيو اصلي عددونو تشه د ثبوت ترڅنګ ښکاره شوه؛ فورمولونه او دعوه هماغسې پاتې دي..
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-proof-gap`.
+
+## OLSTH-022
+
+- Unit: `OLP-0591`
+- Frozen source: `content/set-theory/card-arithmetic/fix.tex` (cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074) at `content/set-theory/card-arithmetic/fix.tex:152,160`
+- Pashto target: `ps-Arab-PK/content/set-theory/card-arithmetic/fix.tex:166`
+- Audit: `PS-OWNER-SEMANTIC-20260929-FIXED-CHOICE-OPENING`
+- Treatment: د تل زياتېدو او يو پر يو توب ناسمه چاپي ادعا د فورمولونو له ساتلو سره ښکاره شوه۔
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-proof-error`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-023
+
+- Unit: `OLP-0595`
+- Frozen source: `content/set-theory/choice/hartogs.tex` (ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4) at `content/set-theory/choice/hartogs.tex:33`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/hartogs.tex:37`
+- Audit: `PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY`
+- Treatment: د انتقالي‌والي په چاپي استدلال کښې د فرعي سټ غلطه مرجع ښکاره شوه؛ نښه نه ده بدله شوې۔
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-referent-error`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-024
+
+- Unit: `OLP-0595`
+- Frozen source: `content/set-theory/choice/hartogs.tex` (ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4) at `content/set-theory/choice/hartogs.tex:80,81`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/hartogs.tex:106`
+- Audit: `PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY`
+- Treatment: د وروستۍ حسابي پايلې دوه ځله ننباسل شوې هم‌شمېرۍ نښه ښکاره شوه؛ بديل فورمول نه دے اټکل شوے۔
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-formula-error`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.

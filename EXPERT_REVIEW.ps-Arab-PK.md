@@ -4735,3 +4735,20 @@ OLP-0526–0530 منل شوي دي: ۴۶ جوړې برخې، ۷۵ رياضيکي
 - د متن ځای: OLP-0589؛ [پښتو متن](ps-Arab-PK/content/set-theory/card-arithmetic/expotough.tex#L80)؛ [اصلي متن](upstream/content/set-theory/card-arithmetic/expotough.tex#L77).
 - ناڅرګندتيا: د اصلي ليکوال رسمي تصويب نه دے ادعا شوے؛ په هدف کښې د صفر استثنا ښکاره ده.
 - د کتنې پوښتنه: ايا د متناهي توان غيرصفر شرط د قضیې او ثبوت په دواړو ځايونو کښې څرګند دے؟
+
+## د اصلي عددونو او انتخاب د سرچينې يادښتونه
+
+### DEC-OLSTH-022 — د بېت ثابت ټکي بيا نه لوېدل
+
+- چاپي جوړښت که له مخکېني ثابت ټکي پيل شي، نور نه لوېږي؛ د ادعا شوې يو پر يو تابع ثبوت نه جوړېږي. [پښتو متن](ps-Arab-PK/content/set-theory/card-arithmetic/fix.tex#L173)؛ [اصلي متن](upstream/content/set-theory/card-arithmetic/fix.tex#L152).
+- فورمولونه ساتل شوي؛ د اصلي ليکوال تصويب نه دے ادعا شوے.
+
+### DEC-OLSTH-023 — د هارتوګس د ثبوت فرعي سټ
+
+- چاپي استدلال فرعي سټ له اړيکې سره تړي، خو د مخکېني تعريف شرط له ټاکلي سټ سره تړاو لري. [پښتو متن](ps-Arab-PK/content/set-theory/choice/hartogs.tex#L42)؛ [اصلي متن](upstream/content/set-theory/choice/hartogs.tex#L33).
+- نښه ساتل شوې؛ سرچينه‌يي عيب ښکاره دے.
+
+### DEC-OLSTH-024 — دوه ځله ننباسل شوې هم‌شمېري
+
+- وروستے چاپي عبارت د هم‌شمېرۍ اړيکه د بلې هم‌شمېرۍ په خوا کښې ننباسي؛ بديل فورمول نه دے اټکل شوے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/hartogs.tex#L113)؛ [اصلي متن](upstream/content/set-theory/choice/hartogs.tex#L80).
+- د پاکستانۍ نثر پاڼه د املا شاهد دے؛ د عين تخصصي سمون تصويب نه کوي.
