@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b184-continuum-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T20:37:29.839076+00:00",
+  "unit_id": "OLP-0590",
+  "source_path": "content/set-theory/card-arithmetic/ch.tex",
+  "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+  "target_sha256": "30a494d877c51fb3f27f3b093f1e0aa3dfb7176a6ace66e8b3dd76ab925d0e58",
+  "source_bytes": 6837,
+  "target_bytes": 9686,
+  "paired_blocks": 25,
+  "changed_blocks": 21,
+  "ordered_math_spans": 58,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-020",
+    "OLSTH-021"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, comments, term tokens and CRLF remain exact; two adjacent source notes disclose a printed referent typo and an unrepaired induction proof gap.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "two_adjacent_disclosures": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

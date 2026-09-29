@@ -3961,3 +3961,12 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Audit: `PS-OWNER-SEMANTIC-20260929-CARDINALS-HUME`
 - Treatment: د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے..
 - Disclosure: `adjacent-Pashto-disclosed-source-local-prose-correction`.
+
+## OLSTH-019
+
+- Unit: `OLP-0589`
+- Frozen source: `content/set-theory/card-arithmetic/expotough.tex` (3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec) at `content/set-theory/card-arithmetic/expotough.tex:77`
+- Pashto target: `ps-Arab-PK/content/set-theory/card-arithmetic/expotough.tex:80`
+- Audit: `PS-OWNER-SEMANTIC-20260929-CARDINAL-EXPONENT-ZERO`
+- Treatment: د چاپي متناهي توان د شرط صفر حالت بېل او رد شو؛ قضيه او د هغې د ضرب ثبوت يوازې د ناصفر متناهي توان دپاره بيان شول..
+- Disclosure: `adjacent-Pashto-disclosed-source-local-zero-exponent-qualification`.

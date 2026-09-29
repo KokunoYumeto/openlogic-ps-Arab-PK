@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 588,
-    "structural_pass": 588,
+    "draft_units": 589,
+    "structural_pass": 589,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B181-B182-CARDINAL-OPERATIONS-SIMPLIFICATION",
+  "batch": "PS-B183-CARDINAL-EXPONENTIATION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -18765,7 +18765,7 @@
       "unit_id": "OLP-0579",
       "path": "content/set-theory/ord-arithmetic/exponentiation.tex",
       "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
-      "translation_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "translation_sha256": "6844287a91785b94e10ac99dd767020e8a3f21ea92cfaf276a81e7956f1bdfcf",
       "source_blocks": 9,
       "target_blocks": 9,
       "checks": {
@@ -19063,6 +19063,35 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0589",
+      "path": "content/set-theory/card-arithmetic/expotough.tex",
+      "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+      "translation_sha256": "f21c23aef6f40a3e77b0686c51f713071dcebb9366db09455ad4f3a21941f11f",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-019"
+      ],
       "status": "structural-pass"
     }
   ],
@@ -30741,7 +30770,7 @@
       "unit_id": "OLP-0579",
       "passage": "OLP-0579-B006",
       "reverse_paraphrase": "Exponentiation is defined by zero, successor and limit transfinite recursion.",
-      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+      "finding": "B183 retrospective lexical reconciliation: transfinite is rendered د نامتناهيت هاخوا; the mathematical formulas and the original source are unchanged."
     },
     {
       "unit_id": "OLP-0579",
@@ -30753,7 +30782,7 @@
       "unit_id": "OLP-0579",
       "passage": "OLP-0579-B008",
       "reverse_paraphrase": "The exercise asks transfinite induction to recover recursion from the corrected finite-function model for nonzero base.",
-      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+      "finding": "B183 retrospective lexical reconciliation: transfinite is rendered د نامتناهيت هاخوا; the mathematical formulas and the original source are unchanged."
     },
     {
       "unit_id": "OLP-0580",
@@ -31492,6 +31521,108 @@
       "passage": "union-choice-dependency",
       "reverse_paraphrase": "A family of injections is fixed simultaneously; the source footnote points ahead to Choice.",
       "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B003",
+      "reverse_paraphrase": "The section concerns limited simplifications of cardinal exponentiation.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B004",
+      "reverse_paraphrase": "The canonical-order work simplified infinite cardinal addition and multiplication, but exponentiation needs separate analysis.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B005",
+      "reverse_paraphrase": "The two identities distribute an exponent over cardinal sum and identify a power of a power with exponent product.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B006",
+      "reverse_paraphrase": "A function on a disjoint sum splits into two component functions, yielding the first bijection.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B007",
+      "reverse_paraphrase": "Currying a function from c into functions b to a produces a function on b times c, yielding the second bijection.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B008",
+      "reverse_paraphrase": "The next result seeks a tractable infinite-cardinal exponent when both base and exponent are large.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B009",
+      "reverse_paraphrase": "When 2 is at most a, a at most b, and b infinite, a to b equals 2 to b.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B010",
+      "reverse_paraphrase": "The displayed comparison sandwiches a to b between two copies of 2 to b using powersets, the exponent law and infinite product simplification.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B011",
+      "reverse_paraphrase": "Cantor prevents collapse of 2 to b to b; the earlier reduction does not settle cases where b is smaller than a.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B012",
+      "reverse_paraphrase": "The printed finite-power claim includes zero incorrectly; the target restricts it to nonzero finite n and discloses the unique empty-function case.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B013",
+      "reverse_paraphrase": "For positive finite n, a to n is a finite nonempty product of infinite a, hence equals a.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B014",
+      "reverse_paraphrase": "When infinite b is below a but a is at most 2 to b, the same 2 to b value bounds a to b.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "OLP-0589-B015",
+      "reverse_paraphrase": "The last inequality chain proves the second restricted exponent simplification and leaves broader cases open.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د فرضونو، تابعو د لوري، محاسبې او ښکاره صفر-استثنا له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "split-functions",
+      "reverse_paraphrase": "The disjoint-sum bijection maps one function to its separate b and c restrictions.",
+      "finding": "د اړوند اصلي تعريف، پښتو بيان او رياضيکي حدود تنګ سياق بيا وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "curried-functions",
+      "reverse_paraphrase": "The iterated-function bijection evaluates f(gamma) at beta and keeps domain b times c.",
+      "finding": "د اړوند اصلي تعريف، پښتو بيان او رياضيکي حدود تنګ سياق بيا وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "zero-exponent-counterexample",
+      "reverse_paraphrase": "At n equal to zero, there is exactly one function from the empty set to infinite a, so the unrestricted printed theorem is false.",
+      "finding": "د اړوند اصلي تعريف، پښتو بيان او رياضيکي حدود تنګ سياق بيا وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0589",
+      "passage": "restricted-reductions",
+      "reverse_paraphrase": "Both power-of-two simplifications keep all cardinal inequalities and the infinity hypothesis on b.",
+      "finding": "د اړوند اصلي تعريف، پښتو بيان او رياضيکي حدود تنګ سياق بيا وکتل شو."
     }
   ],
   "builds": [

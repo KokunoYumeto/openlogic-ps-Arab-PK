@@ -1,0 +1,41 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T20:22:34.991119+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-CARDINAL-EXPONENT-ZERO",
+  "batch_id": "PS-B183-CARDINAL-EXPONENTIATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0589",
+      "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+      "source_bytes": 4360,
+      "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+      "target_sha256": "f21c23aef6f40a3e77b0686c51f713071dcebb9366db09455ad4f3a21941f11f",
+      "paired_blocks": 16,
+      "source_correction_ids": [
+        "OLSTH-019"
+      ]
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0589": "ce52a74e3d28ce786cc197e482c87c98f72109f4cdbb83b9928ee7397162bb96"
+  },
+  "preaudit_sha256": {
+    "OLP-0589": "7c0023d5d964bf92d5990a7aa8fe9ccd34f017658424876e73132939bb0f1ba6"
+  },
+  "model_provenance_sha256": "9ad53a69d4cef7d303239326f44b81f4b51d62d99b269e169201c2b6b2d6a1d3",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [
+    "OLSTH-019"
+  ],
+  "semantic_samples_added": 17,
+  "formula_policy": "All 36 active math spans, labels, citations, token calls and comments are exact; OLSTH-019 narrows only adjacent prose for nonzero finite exponent.",
+  "unresolved": "د چاپي عمومي دعوې صفر حالت ناسم دے او په پښتو کښې ښکاره محدود شو؛ د اصلي ليکوال تصويب نه دے ادعا شوے. بشپړ لوستونکی او راتلونکي واحدونه پاتې دي.",
+  "next_executable_action": "Run two 589-unit corpus QA generators and dual canonical replay; accept only on PASS, then continue OLP-0590. TeX slot never suspends translation."
+}

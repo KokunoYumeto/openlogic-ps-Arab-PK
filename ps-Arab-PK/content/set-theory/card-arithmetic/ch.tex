@@ -1,0 +1,163 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{ch}
+
+\olsection{د پيوستار فرضيه}
+
+تېرې پايلې (په سمه توګه) دې ته اشاره وکړه چې د اصلي عددونو توان
+به ډېر \emph{اسان} و، که نامتناهي اصلي عددونه د $2$ له توانونو سره
+«په نېغه توګه» چلند وکړي؛ يعنې، د \olref[opps]{lem:SizePowerset2Exp}
+له مخې، د توان سټونو له اخيستلو سره۔ خو دا نه شو فرضولے چې
+نامتناهي اصلي عددونه په رښتيا له توان سټونو سره داسې نېغ چلند کوي۔
+
+د دې خبرې د سپړلو د پيل دپاره څو ګټورې نښې راوړو۔
+
+\begin{defn}
+چې $ \cardsucc{\cardfont{a}} $ له $\cardfont{a}$ څخه په کلکه لوے
+تر ټولو کوچنے اصلي عدد دے، لاندې دوه نامتناهي لړۍ تعريفوو:
+\begin{align*}
+	\aleph_{0} &\defis \omega & 		
+	\beth_{0} &\defis \omega\\
+	\aleph_{\alpha \ordplus 1} &\defis \cardsucc{(\aleph_{\alpha})} &
+	\beth_{\alpha+1} &\defis \cardexpo{2}{\beth_{\alpha}}\\
+	\aleph_{\alpha} &\defis \bigcup_{\beta< \alpha} \aleph_{\beta} &
+	\beth_{\alpha} &\defis \bigcup_{\beta < \alpha}\beth_{\beta} & \text{چې $\alpha$ حدي ترتيبي عدد وي}.
+	\end{align*}
+\end{defn}
+
+د $\cardsucc{\cardfont{a}}$ تعريف پر ځاے دے، ځکه
+\olref[cardinals][classing]{lem:NoLargestCardinal} وايي چې د هر اصلي
+عدد $\cardfont{a}$ دپاره له $\cardfont{a}$ څخه لوے يو اصلي عدد
+شته، او د نامتناهيت هاخوا
+استقرا دا تضمينوي چې له $\cardfont{a}$ څخه لوے يو \emph{تر ټولو کوچنے}
+اصلي عدد شته۔ د دغو لړيو پاتې تعريفونه د نامتناهيت هاخوا بازګښت
+له لارې ورکول کېږي۔
+\textbf{د سرچينې يادښت (OLSTH-020):} چاپي جمله دلته د
+$\cardfont{a}$ د پاتې تعريف خبره کوي؛ په سياق کښې د دغو دوو لړيو
+پاتې تعريفونه مراد دي۔
+
+کانتور د «$\aleph$» نښه راوړه؛ دې ته \emph{اَلېف} وايي۔ دا د
+عبراني الفبا لومړے تورى او د «نامتناهي» د عبراني کلمې لومړے
+تورے دے۔ پيرس د «$\beth$» نښه راوړه؛ دې ته \emph{بېت} وايي،
+چې د عبراني الفبا دويم تورى دے۔\footnote{پيرس دا نښه د ۱۹۰۰م کال
+د دسمبر په يوه ليک کښې کانتور ته کارولې وه۔ خو په هماغه ليک
+کښې ئې د دې دپاره ناسم استدلال هم وکړ چې $\beth_\alpha$ د
+$\alpha \geq \omega$ دپاره شتون نه لري۔}
+اوس دا نښې موږ ته نامتناهي اصلي عددونه راکوي۔
+
+\begin{prop}
+$\aleph_\alpha$ او $\beth_\alpha$ د هر ترتيبي عدد $\alpha$
+دپاره اصلي عددونه دي۔
+\end{prop}
+
+\begin{proof}
+دواړه پايلې د نامتناهيت هاخوا په ساده استقرا ثابتېږي۔
+$\aleph_0 = \beth_0 = \omega$ د
+\olref[cardinals][classing]{omegaisacardinal} له مخې اصلي عدد دے۔
+که فرض کړو چې $\aleph_\alpha$ او $\beth_\alpha$ دواړه اصلي
+عددونه دي، نو $\aleph_{\alpha+1}$ او
+$\beth_{\alpha+1}$ په څرګند ډول د اصلي عددونو په توګه تعريف
+شوي دي۔ او د اصلي عددونو د يوه سټ اتحاد د
+\olref[cardinals][classing]{unioncardinalscardinal} له مخې اصلي
+عدد دے۔
+\end{proof}
+\noindent
+سربېره پر دې، هر نامتناهي اصلي عدد يو $\aleph$ دے:
+
+\begin{prop}
+که $\cardfont{a}$ نامتناهي اصلي عدد وي، نو
+$\cardfont{a} = \aleph_\gamma$، د يوه يوازيني $\gamma$ دپاره۔
+\end{prop}
+
+\begin{proof}
+پر اصلي عددونو د نامتناهيت هاخوا استقرا کوو۔ د استقرا دپاره فرض
+کړئ چې که $\cardfont{b} < \cardfont{a}$ وي، نو
+$\cardfont{b} = \aleph_{\gamma_\cardfont{b}}$۔ که
+$\cardfont{a} = \cardsucc{\cardfont{b}}$ د کوم
+$\cardfont{b}$ دپاره وي، نو $\cardfont{a} =
+\cardsucc{(\aleph_{\gamma_\cardfont{b}})}=
+\aleph_{\gamma_\cardfont{b}+1}$۔ که $\cardfont{a}$ د هېڅ
+اصلي عدد تالي نه وي، نو ځکه چې اصلي عددونه ترتيبي عددونه دي،
+$\cardfont{a} = \bigcup_{\cardfont{b} < \cardfont{a}} \cardfont{b} =
+\bigcup_{\cardfont{b} < \cardfont{a}}{\aleph_{\gamma_\cardfont{b}}}$؛
+نو $\cardfont{a} = \aleph_\gamma$، چېرته چې $\gamma =
+\bigcup_{\cardfont{b} < \cardfont{a}}\gamma_\cardfont{b}$۔
+\end{proof}
+\textbf{د سرچينې يادښت (OLSTH-021):} چاپي ثبوت د کوچنيو اصلي
+عددونو په فرض کښې متناهي عددونه هم رانغاړي، حال دا چې د هغو
+دپاره د اَلېف شاخص نه دے تعريف شوے؛ د لومړي نامتناهي اصلي عدد
+بنسټيز حالت هم بېل نه دے ثابت شوے۔ پورته فورمولونه
+د سرچينې په بڼه پاتې دي او د دې ثبوت تشه لا پرانيستې ده۔
+
+څرنګه چې هر نامتناهي اصلي عدد يو $\aleph$ دے، دا پوښتنه راولاړېږي:
+ايا هر نامتناهي اصلي عدد يو $\beth$ هم دے؟ که داسې \emph{وے}،
+نو نامتناهي اصلي عددونو به د توان سټونو د اخيستلو له عمل سره
+«په نېغه توګه» چلند کاوه۔ په رښتيا، بيا به مو لاندې ادعا درلوده:
+
+\begin{defish}
+\emph{د پيوستار عمومي فرضيه} (GCH)۔
+$\aleph_\alpha  = \beth_\alpha$، د هر $\alpha$ دپاره۔
+\end{defish}
+
+سربېره پر دې، که GCH سمه وے، نو د اصلي عددونو توان مو د پام وړ
+ساده کولے شو۔ په ځانګړې توګه، ثابتولے مو شول چې کله
+$\cardfont{b} < \cardfont{a}$ وي، د
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$ اندازه د
+$\cardfont{a}\leq \cardexpo{\cardfont{a}}{\cardfont{b}} \leq
+\cardsucc{\cardfont{a}}$ تر منځ راځي۔ بيا مو دقيق شرطونه هم
+ورکولے شول چې له دغو دوو امکانونو کوم يو پېښېږي، يعنې
+$\cardfont{a} = \cardexpo{\cardfont{a}}{\cardfont{b}}$
+او که $\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardsucc{\cardfont{a}}$۔\footnote{دا شرط د
+\emph{هم‌پايۍ} له مخې ټاکل کېږي۔}
+
+خو GCH يوه \emph{فرضيه} ده، \emph{قضيه} نه ده۔ په رښتيا،
+\citet{Godel1938} ثابته کړه چې که $\ZFC$ سازګاره وي، نو
+$\ZFC + \text{GCH}$ هم سازګاره ده۔ خو وروسته څرګنده شوه
+چې $\lnot$GCH هم له $\ZFC$ سره زياتولے شو۔ د GCH تر ټولو
+ساده غير بديهي \emph{ځانګړے حالت} دا دے:
+
+\begin{defish}
+\emph{د پيوستار فرضيه} (CH)۔ $\aleph_1 = \beth_1$۔
+\end{defish}
+
+\citet{Cohen1963} ثابته کړه چې که $\ZFC$ سازګاره وي، نو
+$\ZFC + \lnot\text{CH}$ هم سازګاره ده۔ نو د پيوستار فرضيه
+له $\ZFC$ څخه خپلواکه ده۔
+
+دې ته د پيوستار فرضيه ځکه ويل کېږي چې «پيوستار» د حقيقي عددونو
+د کرښې، $\Real$، بل نوم دے۔
+\olref[opps]{continuumis2aleph0} وايي چې $\card{\Real} =
+\beth_1$۔ نو د پيوستار فرضيه وايي چې د طبيعي عددونو د سټ د
+اصلي شمېر، $\aleph_0 = \beth_0$، او د پيوستار د اصلي شمېر،
+$\beth_1$، تر منځ بل اصلي عدد نشته۔
+
+له $\ZFC$ څخه د (G)CH د \emph{خپلواکۍ} له مخې، د دې د
+\emph{رښتياوالي} په باب څه ووايو؟ په دې باب \emph{ډېرې}
+خبرې شته۔ د سټونو په نظريه کښې د وروستيو څېړنو ډېره ګټوره
+برخه هم د دغو پوښتنو څېړلو ته متوجه ده۔ خو دوه لنډ ټکي
+خامخا د يادولو وړ دي۔
+
+لومړے: له دغو رسمي خپلواکۍ پايلو څخه دا \emph{سمدستي}
+نه راځي چې د GCH يا CH د رښتيا ارزښت \emph{ناتاکلے}
+دے۔ کېدای شي يوازې نورو داسې اصلونو ته اړتيا ولرو چې موږ
+ته طبيعي ښکاري او پوښتنه په يوه يا بله خوا هواره کړي۔
+ګېډل پخپله همدا غبرګون مناسب ګاڼه۔
+
+دويم: له $\ZFC$ څخه د CH خپلواکي بېشکه \emph{حيرانوونکې}
+ده، خو په لفظي معنا \emph{ناباورېدونکې} نه ده۔ خبره دا ده چې
+$\ZFC$، تر کومه ځايه چې موږ ته وايي، د يوه اصلي عدد څخه د
+هغه تالي ته تګ ښايي د توان سټونو له اخيستلو څخه ډېر نازک
+عمل وغواړي۔
+ %The operation of taking powersets moves us from one stage of the
+ %hierarchy to its successor stage (from $V_{\alpha}$ to
+ %$V_{\alpha+1}$). 
+
+له دې دوو خبرو وروسته، که نور معلومات غواړئ، اوس به د دې
+بحث د بېلابېلو دريځونو لرونکو فيلسوفانو او رياضي‌پوهانو
+ليکنې ولولئ۔\footnote{کېدای شي لوستل د \citet[\S15.6]{Potter2004}
+څخه پيل کړئ۔}
+
+\end{document}

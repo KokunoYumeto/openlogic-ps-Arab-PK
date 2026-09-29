@@ -16057,7 +16057,7 @@
         19
       ],
       "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex",
-      "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "target_sha256": "6844287a91785b94e10ac99dd767020e8a3f21ea92cfaf276a81e7956f1bdfcf",
       "target_line_1based": 20,
       "target_literal_line_1based": [
         20
@@ -16074,7 +16074,7 @@
         "B171_B175_SOURCE_AUDIT.json",
         "B173_EXPONENTIATION_DRAFT_QA.json"
       ],
-      "decision_timing": "contemporaneous source comparison before acceptance",
+      "decision_timing": "contemporaneous source comparison before acceptance; B183 target-only terminology correction, formulas unchanged",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": false,
       "finite_semantic_check_sha256": null,
@@ -16122,7 +16122,7 @@
         39
       ],
       "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex",
-      "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "target_sha256": "6844287a91785b94e10ac99dd767020e8a3f21ea92cfaf276a81e7956f1bdfcf",
       "target_line_1based": 35,
       "target_literal_line_1based": [
         35
@@ -16139,7 +16139,7 @@
         "B171_B175_SOURCE_AUDIT.json",
         "B173_EXPONENTIATION_DRAFT_QA.json"
       ],
-      "decision_timing": "contemporaneous source comparison before acceptance",
+      "decision_timing": "contemporaneous source comparison before acceptance; B183 target-only terminology correction, formulas unchanged",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": true,
       "finite_semantic_check_sha256": null,
@@ -16193,7 +16193,7 @@
       "disclosure_line_1based": 47,
       "mode": "adjacent-Pashto-disclosed-source-local-prose-correction",
       "translation_change": "د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے.",
-      "reason": "The printed gloss says A itself is not a natural number, which does not follow from card(A) outside omega. A={omega} is not a natural ordinal yet has cardinality one. The Pashto gloss states precisely that card(A) is not natural; the displayed condition is unchanged.",
+      "reason": "The displayed condition card(A) outside omega implies A itself is not a natural ordinal, since a natural ordinal has itself as its cardinal. The printed gloss states only this necessary condition, not an equivalent one. Its converse fails: A={omega} is not a natural ordinal but has cardinality one. The Pashto gloss states precisely that card(A) is not natural; the displayed condition is unchanged.",
       "formula_policy": "All81 ordered active mathematics spans remain exact; only the false prose gloss is narrowed.",
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
@@ -16203,7 +16203,7 @@
         "B178_CARDINAL_CLASSES_DRAFT_QA.json",
         "B178_CARDINAL_CLASSES_SOURCE_PREAUDIT.md"
       ],
-      "decision_timing": "contemporaneous B178 source-semantic comparison before acceptance",
+      "decision_timing": "contemporaneous B178 source-semantic comparison before acceptance; B183 rationale implication corrected, target unchanged",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
       "proof_gap_disclosed_unrepaired": false,
       "finite_semantic_check_sha256": null,
@@ -16228,6 +16228,61 @@
         "target_only": []
       },
       "limits": "Exact local prose correction; no original-author approval claimed."
+    },
+    {
+      "id": "OLSTH-019",
+      "unit_id": "OLP-0589",
+      "classification": "zero_exponent_exception_in_finite_cardinal_power",
+      "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+      "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+      "source_locator": "content/set-theory/card-arithmetic/expotough.tex:77",
+      "source_literal_line_1based": [
+        77
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/card-arithmetic/expotough.tex",
+      "target_sha256": "f21c23aef6f40a3e77b0686c51f713071dcebb9366db09455ad4f3a21941f11f",
+      "target_line_1based": 80,
+      "target_literal_line_1based": [
+        80
+      ],
+      "disclosure_line_1based": 81,
+      "mode": "adjacent-Pashto-disclosed-source-local-zero-exponent-qualification",
+      "translation_change": "د چاپي متناهي توان د شرط صفر حالت بېل او رد شو؛ قضيه او د هغې د ضرب ثبوت يوازې د ناصفر متناهي توان دپاره بيان شول.",
+      "reason": "The printed proposition quantifies over n in omega, including zero. By the immediately preceding definition, cardinal a to zero is the cardinality of the set of functions from the empty set to a; this set has exactly one member, the empty function. For infinite a, one is not a. The Pashto theorem and proof are explicitly restricted to nonzero finite exponents; all source formulas remain unchanged.",
+      "formula_policy": "All 36 ordered active mathematical spans remain exact; only adjacent prose restricts the displayed claim to nonzero finite exponent.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-CARDINAL-EXPONENT-ZERO",
+      "audit_artifacts": [
+        "B183_SOURCE_AUDIT.json",
+        "B183_CARDINAL_EXPONENTIATION_DRAFT_QA.json",
+        "B183_CARDINAL_EXPONENTIATION_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B183 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Exact local zero-exponent qualification; no original-author approval claimed."
     }
   ],
   "external_upstream_report_submitted": false,

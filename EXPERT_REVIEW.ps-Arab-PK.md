@@ -4706,7 +4706,7 @@ OLP-0526–0530 منل شوي دي: ۴۶ جوړې برخې، ۷۵ رياضيکي
 ### DEC-OLSTH-018 — د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے.
 
 - اصلي مفهوم: cardinality_vs_set_natural_number_gloss؛ غوره شوې بڼه يا چلند: **د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے.**.
-- د انتخاب وجه: The printed gloss says A itself is not a natural number, which does not follow from card(A) outside omega. A={omega} is not a natural ordinal yet has cardinality one. The Pashto gloss states precisely that card(A) is not natural; the displayed condition is unchanged.
+- د انتخاب وجه: The displayed condition card(A) outside omega implies A itself is not a natural ordinal, since a natural ordinal has itself as its cardinal. The printed gloss states only this necessary condition, not an equivalent one. Its converse fails: A={omega} is not a natural ordinal but has cardinality one. The Pashto gloss states precisely that card(A) is not natural; the displayed condition is unchanged.
 - بديلونه: A پخپله طبيعي عدد نۀ ګڼل؛ د اصلي شمېر شرط ناسم تفسيروي؛ د فورمول بدلول؛ اړتيا نه لري او اصلي قضيه بدلوي.
 - کتل شوي شاهدان: `PK-IQRAM-P1-PROSE` (پاکستان، مخ 1)؛ `AF-BUKOVSKY-P99-COUNTABILITY` (افغانستان؛ يوازې پرتله‌ييز شاهد، مخ 99).
 - د متن ځای: `OLP-0584`؛ [پښتو متن](ps-Arab-PK/content/set-theory/cardinals/classing.tex#L46)؛ [اصلي متن](upstream/content/set-theory/cardinals/classing.tex#L42).
@@ -4724,3 +4724,14 @@ OLP-0526–0530 منل شوي دي: ۴۶ جوړې برخې، ۷۵ رياضيکي
 - د متن ځای: `OLP-0588`؛ [پښتو متن](ps-Arab-PK/content/set-theory/card-arithmetic/simp.tex#L15)؛ [اصلي متن](upstream/content/set-theory/card-arithmetic/simp.tex#L15).
 - ناڅرګندتيا: عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ د منجمد درې-شرطي تعريف او سيمه‌ييز ترتيبي شاهد له مخې نوم لنډمهاله دے.
 - د کتنې پوښتنه: ايا د اعظمې مختص، بيا لومړي او بيا دويم مختص درې شرطونه په پښتو کښې روښانه دي؟
+
+## د اصلي توان د صفر حالت
+
+### DEC-OLSTH-019 — د ناصفر متناهي توان شرط
+
+- اصلي مفهوم: د چاپي دعوې صفر توان؛ غوره شوې بڼه: ناصفر متناهي توان.
+- د انتخاب وجه: په صفر توان کښې د تشې ساحې څخه هر بنسټ ته يوازې يوه تابع شته؛ د نامتناهي بنسټ صفر توان يو دے، نه هماغه بنسټ. د اصلي فورمولونو بايټونه نه دي بدل شوي.
+- کتل شوي شاهدان: PK-IQRAM-P1-PROSE د پاکستانۍ املا او نثر دپاره؛ AF-NIAZMAN-P147-FUNCTIONS او AF-BUKOVSKY-P133-CANTOR-THEOREM يوازې سيمه‌ييز رياضيکي پرتله‌ييز شاهدان دي.
+- د متن ځای: OLP-0589؛ [پښتو متن](ps-Arab-PK/content/set-theory/card-arithmetic/expotough.tex#L80)؛ [اصلي متن](upstream/content/set-theory/card-arithmetic/expotough.tex#L77).
+- ناڅرګندتيا: د اصلي ليکوال رسمي تصويب نه دے ادعا شوے؛ په هدف کښې د صفر استثنا ښکاره ده.
+- د کتنې پوښتنه: ايا د متناهي توان غيرصفر شرط د قضیې او ثبوت په دواړو ځايونو کښې څرګند دے؟
