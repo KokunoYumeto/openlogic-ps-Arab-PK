@@ -1,0 +1,200 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{classing}
+\olsection{متناهي، \usetoken{S}{enumerable} او \usetoken{S}{nonenumerable}}
+
+اوس چې اصلي عددونه مو وپېژندل، ښه ده د اصلي عددونو د بېلابېلو
+ډولونو په اړه لږ وغږېږو؛ په ځانګړې توګه د متناهي،
+!!{enumerable} او !!{nonenumerable} اصلي عددونو په اړه۔
+
+زموږ له لومړنيو دوو پايلو څخه څرګندېږي چې متناهي اصلي عددونه به
+عين متناهي ترتيبي عددونه وي؛ هماغه چې پخوا مو په
+\olref[z][infinity-again]{defnomega} کښې د خپلو \emph{طبيعي
+عددونو} په توګه تعريف کړل:
+
+\begin{prop}\ollabel{finitecardisoequal}
+فرض کړئ $n, m \in \omega$۔ نو $n = m$ هغه وخت او يوازې هغه وخت
+چې $\cardeq{n}{m}$ وي۔
+\end{prop}
+
+\begin{proof}
+له \emph{چپې خوا ښۍ خوا ته} لورے څرګند دے۔ د \emph{ښۍ خوا
+چپې خوا ته} لوري د ثبوت دپاره فرض کړئ چې $\cardeq{n}{m}$، خو
+$n \neq m$۔ د درې‌ګوني وېش له مخې يا $n \in m$ يا $m \in n$؛
+له عموميت له کمېدو پرته $n \in m$ فرض کړئ۔ بيا $n \subsetneq m$
+او يوه !!a{bijection} $f \colon m \to n$ شته، نو $m$ د
+ډېډېکېنډ په معنا نامتناهي دے؛ دا له
+\olref[z][infinity-again]{naturalnumbersarentinfinite} سره ټکر لري۔
+\end{proof}
+
+\begin{cor}\ollabel{naturalsarecardinals}
+که $n \in \omega$ وي، نو $n$ اصلي عدد دے۔
+\end{cor}
+
+\begin{proof}
+سمدستي پايله ده۔
+\end{proof}
+\noindent
+له دې دا هم څرګندېږي چې د يوه اصلي عدد د «متناهي» يا
+«نامتناهي» بللو څو معقولې معناوې سره برابرې دي:
+\begin{thm}\ollabel{generalinfinitycharacter}د هر سټ $A$ دپاره لاندې
+شرطونه همارزښته دي:
+\begin{enumerate}
+	\item\ollabel{card:notinomega} $\card{A} \notin \omega$، يعنې
+	د $A$ اصلي شمېر طبيعي عدد نۀ دے؛
+	\textbf{د سرچينې يادښت (OLSTH-018):} چاپي متن دلته د سټ
+	پخپله طبيعي عدد نۀ کېدل وايي؛ دا د ښودل شوي شرط معنا نه ده۔
+	\item\ollabel{card:omegaplus} $\omega \leq \card{A}$؛
+	\item\ollabel{card:infinite} $A$ د ډېډېکېنډ په معنا نامتناهي دے۔
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+دا د \olref[ord-arithmetic][using-addition]{ordinfinitycharacter}،
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} او
+\olref{naturalsarecardinals} له مخې دي۔
+\end{proof}
+
+له دې سره هغه ځينې مفهومونه په \emph{رسمي ډول تعريفولے} شو چې
+په \olref[sfr][][]{part} کښې مو لږ په غيررسمي توګه کارول:
+
+\begin{defn}\ollabel{defnfinite}
+وايو چې $A$ \emph{متناهي} دے که او يوازې که $\card{A}$ يو
+طبيعي عدد وي، يعنې $\card{A} \in \omega$۔ کنه وايو چې $A$
+\emph{نامتناهي} دے۔
+\end{defn}
+\noindent
+خو پام وکړئ چې دا تعريف د $\ZFC$ په چوکاټ کښې وړاندې شوے دے۔
+بالاخره، د هر سټ د اصلي شمېر د شتون د تضمين دپاره مو ښه ترتيب
+ته اړتيا درلوده۔ په رښتيا، له ښه ترتيب پرته داسې سټ شته کېدے شي
+چې نه متناهي وي او نه د ډېډېکېنډ په معنا نامتناهي۔ دې ډول مسئلې
+ته به په \olref[choice][]{chap} کښې بېرته راوګرځو۔ اوس مهال پر
+ښه ترتيب تکيه کوو۔
+
+اوس له متناهي اصلي عددونو څخه نامتناهي اصلي عددونو ته راځو۔
+دا دوه لومړنۍ پايلې دي:
+
+\begin{cor}\ollabel{omegaisacardinal}
+$\omega$ تر ټولو کوچنے نامتناهي اصلي عدد دے۔
+\end{cor}
+
+\begin{proof}
+$\omega$ اصلي عدد دے، ځکه چې $\omega$ د ډېډېکېنډ په معنا
+نامتناهي دے او که $\cardeq{\omega}{n}$ د کوم $n \in \omega$
+دپاره وي، نو $n$ به هم د ډېډېکېنډ په معنا
+نامتناهي وي؛ دا له
+\olref[z][infinity-again]{naturalnumbersarentinfinite} سره ټکر لري۔
+اوس د تعريف له مخې $\omega$ تر ټولو کوچنے نامتناهي اصلي عدد دے۔
+\end{proof}
+
+\begin{cor}
+هر نامتناهي اصلي عدد يو حدي ترتيبي عدد دے۔
+\end{cor}
+
+\begin{proof}
+فرض کړئ $\alpha$ يو نامتناهي تالي ترتيبي عدد وي، نو
+$\alpha = \beta \ordplus 1$ د کوم $\beta$ دپاره دے۔ د
+\olref{finitecardisoequal} له مخې $\beta$ هم نامتناهي دے؛ نو د
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter} له مخې
+$\cardeq{\beta}{\beta \ordplus 1}$۔ اوس د
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} له مخې
+$\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$؛ نو
+$\alpha \neq \card{\alpha}$۔
+\end{proof}
+
+موږ له وړاندې، په \olref[sfr][siz][enm-alt]{defn:enumerable} کښې،
+دې ته پام اړولے و چې د نامتناهي سټونو تر منځ !!{enumerable} او
+!!{nonenumerable} توپيرولے شو۔ هغه تعريف په طبيعي ډول لاندې
+پايله راکوي:
+
+\begin{prop}
+$A$ هغه وخت او يوازې هغه وخت !!{enumerable} دے چې
+$\card{A} \leq \omega$ وي؛ او $A$ هغه وخت او يوازې هغه وخت
+!!{nonenumerable} دے چې $\omega < \card{A}$ وي۔
+\end{prop}
+
+\begin{proof}
+د درې‌ګوني وېش له مخې دواړه ادعاوې همارزښې دي، نو بس ده دا
+ثابته کړو چې $A$ هغه وخت او يوازې هغه وخت !!{enumerable} دے
+چې $\card{A} \leq \omega$ وي۔ له \emph{ښۍ خوا چپې خوا ته}:
+که $\card{A} \leq \omega$ وي، نو د
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} او
+\olref{omegaisacardinal} له مخې $\cardle{A}{\omega}$۔ له
+\emph{چپې خوا ښۍ خوا ته}: که $A$ !!{enumerable} وي، نو د
+\olref[sfr][siz][enm-alt]{defn:enumerable} له مخې درې حالتونه دي:
+\begin{enumerate}
+	\item که $A = \emptyset$ وي، نو د \olref{naturalsarecardinals}
+	او \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} له مخې
+	$\card{A} = 0 \in \omega$؛
+	\item که $\cardeq{n}{A}$ وي، نو د \olref{naturalsarecardinals}
+	او \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} له مخې
+	$\card{A} = n \in \omega$؛
+	\item که $\cardeq{\omega}{A}$ وي، نو د \olref{omegaisacardinal}
+	له مخې $\card{A} = \omega$۔
+\end{enumerate}
+نو په ټولو حالتونو کښې $\card{A} \leq \omega$۔
+\end{proof}
+\noindent
+په رښتيا، $\omega$ ځانګړے ځاے لري۔ که څه هم شمېر وړ ترتيبي
+عددونه ډېر دي:
+
+\begin{cor}
+$\omega$ يوازينے !!{enumerable} نامتناهي اصلي عدد دے۔
+\end{cor}
+
+\begin{proof}
+فرض کړئ $\cardfont{a}$ يو !!a{enumerable} نامتناهي اصلي عدد
+وي۔ ځکه چې $\cardfont{a}$ نامتناهي دے، $\omega \leq
+\cardfont{a}$۔ ځکه چې $\cardfont{a}$ يو !!a{enumerable} اصلي
+عدد دے، $\cardfont{a} = \card{\cardfont{a}} \leq \omega$۔ نو
+د درې‌ګوني وېش له مخې $\cardfont{a} = \omega$۔
+\end{proof}
+
+البته اصلي عددونه بې‌شمېره دي۔ نو پوښتنه کولے شو: \emph{څو
+اصلي عددونه شته؟} لاندې پايلې ښيي چې ښايي دا پوښتنه له سره
+وڅېړو۔
+
+\begin{prop}\ollabel{unioncardinalscardinal}
+که د $X$ هر غړے اصلي عدد وي، نو $\bigcup X$ هم اصلي عدد دے۔
+\end{prop}
+
+\begin{proof}
+دا په اسانه کتل کېدے شي چې $\bigcup X$ ترتيبي عدد دے۔
+فرض کړئ $\alpha \in \bigcup X$ يو ترتيبي عدد وي؛ نو
+$\alpha \in \cardfont{b} \in X$ د کوم اصلي عدد $\cardfont{b}$
+دپاره وي۔ ځکه چې $\cardfont{b}$ اصلي عدد دے،
+$\cardless{\alpha}{\cardfont{b}}$۔ ځکه چې $\cardfont{b}
+\subseteq \bigcup X$، نو $\cardle{\cardfont{b}}{\bigcup X}$،
+او له دې $\cardneq{\alpha}{\bigcup X}$۔ په عمومي کولو سره
+$\bigcup X$ اصلي عدد دے۔
+\end{proof}
+
+\begin{thm}\ollabel{lem:NoLargestCardinal}
+تر ټولو لوے اصلي عدد نشته۔
+\end{thm}
+
+\begin{proof}
+د هر اصلي عدد $\cardfont{a}$ دپاره د کانتور قضيه
+(\olref[sfr][siz][car]{thm:cantor}) او
+\olref[cardinals][cardsasords]{lem:CardinalsExist} دا راکوي چې
+$\cardfont{a} < \card{\Pow{\cardfont{a}}}$۔
+\end{proof}
+
+\begin{thm}
+د ټولو اصلي عددونو سټ نشته۔
+\end{thm}
+
+\begin{proof}
+د تناقض دپاره فرض کړئ $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
+يو اصلي عدد دے}}$۔ اوس د \olref{unioncardinalscardinal} له مخې
+$\bigcup C$ اصلي عدد دے، نو د \olref{lem:NoLargestCardinal} له مخې
+يو اصلي عدد $\cardfont{b} > \bigcup C$ شته۔ د تعريف له مخې
+$\cardfont{b} \in C$، نو $\cardfont{b} \subseteq \bigcup{C}$،
+او له دې $\cardfont{b} \leq \bigcup C$؛ دا تناقض دے۔
+\end{proof}
+
+دا د رسل له تناقض او بورالي--فورتي دواړو سره پرتله کړئ۔
+
+\end{document}

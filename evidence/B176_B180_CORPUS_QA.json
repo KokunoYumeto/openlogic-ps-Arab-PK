@@ -1,0 +1,38 @@
+{
+  "schema": "ps-b176-b180-corpus-qa/1",
+  "utc": "2026-09-29T19:33:58.126055+00:00",
+  "status": "PASS",
+  "projected_draft_units": 586,
+  "accepted_before_finalizer": 581,
+  "staged_units": [
+    "OLP-0582",
+    "OLP-0583",
+    "OLP-0584",
+    "OLP-0585",
+    "OLP-0586"
+  ],
+  "aligned_blocks": 8638,
+  "segment_canon_uses": 5446,
+  "semantic_samples": 2030,
+  "terms": 295,
+  "review_entries": 741,
+  "source_actions": 440,
+  "byte_identical_surfaces": {
+    "QA.json": "9f229b793e8ae401dffc26d053cc6713051b547eefbb4daa49984e2d6decbd28",
+    "ALIGNMENT.jsonl": "2f066150f98cbe988663bea022b76c8d12934e3c32c3d8bac35cd4d11e0dddf1",
+    "SEGMENT_CANON_USE.jsonl": "7f0bb04a64de66db5e36792c9ca2af2436ff0c8da2122be1092e1788f75be15f"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "56c3e25da81577449f3bb0f24b926606f6c4b7d0ea82cfc28c30dbd09b5bb0db",
+  "focused_qa_sha256": {
+    "B176_CARDINALS_AS_ORDINALS_DRAFT_QA.json": "a1665040bacc84454ea65dcb6f7293425ac037f1970ba81877ac79865358d2fb",
+    "B177_ZFC_MILESTONE_DRAFT_QA.json": "086626665e7b12e943ef25140847fee36d162eb4a33989e4ddf791a9fabcbb75",
+    "B178_CARDINAL_CLASSES_DRAFT_QA.json": "17e4c886d1bfebcb2f2239bb2e0383f3cba987b85a8b61099bee917941e9cf0d",
+    "B179_HUME_PRINCIPLE_DRAFT_QA.json": "a397fa0f58bb9effbaac3fc596e5506b77c7e3d46670adc6f6a962771cd92fe2",
+    "B180_CARDINAL_ARITHMETIC_DRIVER_DRAFT_QA.json": "8b6febbcd617d06a7a5e05a82999a9b6142fe63670527d297b45e092aa7dd682"
+  },
+  "next_action": "Dual canonical replay from frozen586 inputs; accept only if PASS. Continue translation from OLP-0587."
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "ps-b178-cardinal-classes-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T19:26:06.702774+00:00",
+  "unit_id": "OLP-0584",
+  "source_path": "content/set-theory/cardinals/classing.tex",
+  "source_sha256": "facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6",
+  "target_sha256": "3eb915808cda6e48a56fd9a9ed0401cfe02fb27453a54915776fa7575821bb7a",
+  "source_bytes": 7093,
+  "target_bytes": 9732,
+  "paired_blocks": 31,
+  "changed_blocks": 28,
+  "ordered_math_spans": 81,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-018"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": []
+  },
+  "preaudit_sha256": "e67a332e2d4b9af2b934e769c128d93ed0d09ca3bb98ccea2bb1c6f9ce054af6",
+  "formula_policy": "All active mathematics, identifiers, comments, term tokens and CRLF retained; OLSTH-018 corrects only the adjacent prose gloss of cardinality outside omega.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "one_adjacent_source_disclosure": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact corrections, terms and block-level semantics before cumulative acceptance."
+}

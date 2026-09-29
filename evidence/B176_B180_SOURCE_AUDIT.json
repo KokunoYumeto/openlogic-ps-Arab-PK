@@ -1,0 +1,84 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T19:33:10.457858+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-CARDINALS-HUME",
+  "batch_id": "PS-B176-B180-CARDINALS-CLASSIFICATION-HUME",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0582",
+      "source_path": "content/set-theory/cardinals/cardsasords.tex",
+      "source_bytes": 6005,
+      "source_sha256": "76eb33836f0e2c21be7701b157030b8465ac08daccf532eeb5fa74dc8110100d",
+      "target_sha256": "1bdb7fa65b877bb6e506432f14bfd6ecdd9cbb897dd8860fc1261369d857340c",
+      "paired_blocks": 14,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0583",
+      "source_path": "content/set-theory/cardinals/milestone.tex",
+      "source_bytes": 1056,
+      "source_sha256": "50f4f989834763156b2d27822acd03201532846baa243a8f97d6b3fa299a54fd",
+      "target_sha256": "93d098bc91bf0bce84e5e1d3880701cd3ba904dc5128d23262f1afb45203c32e",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0584",
+      "source_path": "content/set-theory/cardinals/classing.tex",
+      "source_bytes": 7093,
+      "source_sha256": "facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6",
+      "target_sha256": "3eb915808cda6e48a56fd9a9ed0401cfe02fb27453a54915776fa7575821bb7a",
+      "paired_blocks": 31,
+      "source_correction_ids": [
+        "OLSTH-018"
+      ]
+    },
+    {
+      "unit_id": "OLP-0585",
+      "source_path": "content/set-theory/cardinals/hp.tex",
+      "source_bytes": 4988,
+      "source_sha256": "b4c06d8cd04558e99e48c018a170bef91763b86b74ef03b260282ea5eae5b09e",
+      "target_sha256": "74ab50eac7eabf30db46215c34a50ec0c7965f603f444ec283a11385e91a2275",
+      "paired_blocks": 12,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0586",
+      "source_path": "content/set-theory/card-arithmetic/card-arithmetic.tex",
+      "source_bytes": 299,
+      "source_sha256": "b3fbea63d204335a19534ac83b115a8b519ae07e12121e668dddce7fc4589b77",
+      "target_sha256": "5c1adfabb90af575405afe38bbffc31f2250304acd9d6d16064526e88b28c993",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0582": "a1665040bacc84454ea65dcb6f7293425ac037f1970ba81877ac79865358d2fb",
+    "OLP-0583": "086626665e7b12e943ef25140847fee36d162eb4a33989e4ddf791a9fabcbb75",
+    "OLP-0584": "17e4c886d1bfebcb2f2239bb2e0383f3cba987b85a8b61099bee917941e9cf0d",
+    "OLP-0585": "a397fa0f58bb9effbaac3fc596e5506b77c7e3d46670adc6f6a962771cd92fe2",
+    "OLP-0586": "8b6febbcd617d06a7a5e05a82999a9b6142fe63670527d297b45e092aa7dd682"
+  },
+  "preaudit_sha256": {
+    "OLP-0584": "e67a332e2d4b9af2b934e769c128d93ed0d09ca3bb98ccea2bb1c6f9ce054af6"
+  },
+  "model_provenance_sha256": "e5f6cab699435946a4a87f1e12d21a330555a14208916fca7cecf3896a1310d1",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P99-COUNTABILITY"
+  ],
+  "new_term_ids": [
+    "TERM-SET-CARDINAL-CLASSIFICATION",
+    "TERM-SET-HUME-PRINCIPLE",
+    "TERM-SET-CARDINAL-ARITHMETIC"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-018"
+  ],
+  "semantic_samples_added": 66,
+  "formula_policy": "Five focused checks retain all active math, labels, citation/diagram structure and comments; OLSTH-018 corrects only an adjacent false prose gloss.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ د منجمد تعريف او محدود سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے. بشپړ لوستونکی او راتلونکي اصلي-حساب واحدونه لا پاتې دي.",
+  "next_executable_action": "Run two586-unit corpus QA generators and dual canonical replay; accept only on PASS, then continue OLP-0587 onward. TeX slot never suspends translation."
+}

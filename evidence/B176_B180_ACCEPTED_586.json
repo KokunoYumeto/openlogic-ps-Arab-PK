@@ -1,0 +1,51 @@
+{
+  "schema": "ps-b176-b180-accepted-editable/1",
+  "status": "accepted editable drafts; corpus QA and dual canonical replay PASS",
+  "utc": "2026-09-29T19:45:59.711831+00:00",
+  "accepted_through_unit": "OLP-0586",
+  "draft_units": 586,
+  "remaining_unaccepted_units": 136,
+  "unit_ids": [
+    "OLP-0582",
+    "OLP-0583",
+    "OLP-0584",
+    "OLP-0585",
+    "OLP-0586"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "aligned_blocks": 8638,
+  "segment_canon_uses": 5446,
+  "semantic_samples": 2030,
+  "terms": 295,
+  "review_entries": 741,
+  "source_actions": 440,
+  "decisions": 741,
+  "occurrences": 28514,
+  "reader_pages_available_historical": 18455,
+  "reader_pages_pending": 10059,
+  "source_audit_sha256": "56c3e25da81577449f3bb0f24b926606f6c4b7d0ea82cfc28c30dbd09b5bb0db",
+  "focused_qa_sha256": {
+    "B176_CARDINALS_AS_ORDINALS_DRAFT_QA.json": "a1665040bacc84454ea65dcb6f7293425ac037f1970ba81877ac79865358d2fb",
+    "B177_ZFC_MILESTONE_DRAFT_QA.json": "086626665e7b12e943ef25140847fee36d162eb4a33989e4ddf791a9fabcbb75",
+    "B178_CARDINAL_CLASSES_DRAFT_QA.json": "17e4c886d1bfebcb2f2239bb2e0383f3cba987b85a8b61099bee917941e9cf0d",
+    "B179_HUME_PRINCIPLE_DRAFT_QA.json": "a397fa0f58bb9effbaac3fc596e5506b77c7e3d46670adc6f6a962771cd92fe2",
+    "B180_CARDINAL_ARITHMETIC_DRIVER_DRAFT_QA.json": "8b6febbcd617d06a7a5e05a82999a9b6142fe63670527d297b45e092aa7dd682"
+  },
+  "corpus_qa_sha256": "ea8964ba3267f2961ca185d6ef319ab691cc296d240756e72dbb2eaa50357028",
+  "canonical_replay_sha256": "fd4b952d8b6fc54d54321ae42de28182a7f3fe9297d76633951ced7f32c656be",
+  "qa_sha256": "9f229b793e8ae401dffc26d053cc6713051b547eefbb4daa49984e2d6decbd28",
+  "source_correction_ids": [
+    "OLSTH-018"
+  ],
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "known_prior_gaps": [
+    "OLINT-011",
+    "OLINT-017",
+    "OLSTH-012",
+    "OLSTH-017"
+  ],
+  "next_action": "Continue the frozen source from OLP-0587 while preparing a scoped public main checkpoint and anonymous readback. At a natural validated checkpoint make one bounded guarded TeX attempt; translation continues regardless of slot. Full reader and release verification remain required."
+}

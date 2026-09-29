@@ -3952,3 +3952,12 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Audit: `PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION`
 - Treatment: د ترکيبي تعريف او تمرين د برابرولو ادعا بې‌صفره بنسټ ته محدوده شوه؛ د صفر-بنسټ چاپي تشه ښکاره ده..
 - Disclosure: `adjacent-Pashto-disclosed-source-domain-qualification`.
+
+## OLSTH-018
+
+- Unit: `OLP-0584`
+- Frozen source: `content/set-theory/cardinals/classing.tex` (facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6) at `content/set-theory/cardinals/classing.tex:42`
+- Pashto target: `ps-Arab-PK/content/set-theory/cardinals/classing.tex:46`
+- Audit: `PS-OWNER-SEMANTIC-20260929-CARDINALS-HUME`
+- Treatment: د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے..
+- Disclosure: `adjacent-Pashto-disclosed-source-local-prose-correction`.

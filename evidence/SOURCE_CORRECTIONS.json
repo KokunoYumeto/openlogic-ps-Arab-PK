@@ -16173,6 +16173,61 @@
         "target_only": []
       },
       "limits": "Local translation treatment only; no original-author approval or formal proof claimed."
+    },
+    {
+      "id": "OLSTH-018",
+      "unit_id": "OLP-0584",
+      "classification": "cardinality_vs_set_natural_number_gloss",
+      "source_path": "content/set-theory/cardinals/classing.tex",
+      "source_sha256": "facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6",
+      "source_locator": "content/set-theory/cardinals/classing.tex:42",
+      "source_literal_line_1based": [
+        42
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/cardinals/classing.tex",
+      "target_sha256": "3eb915808cda6e48a56fd9a9ed0401cfe02fb27453a54915776fa7575821bb7a",
+      "target_line_1based": 46,
+      "target_literal_line_1based": [
+        46
+      ],
+      "disclosure_line_1based": 47,
+      "mode": "adjacent-Pashto-disclosed-source-local-prose-correction",
+      "translation_change": "د سټ پر ځاے د هغه اصلي شمېر طبيعي عدد نه کېدل بيان شوي؛ ښودل شوے شرط هماغه دے.",
+      "reason": "The printed gloss says A itself is not a natural number, which does not follow from card(A) outside omega. A={omega} is not a natural ordinal yet has cardinality one. The Pashto gloss states precisely that card(A) is not natural; the displayed condition is unchanged.",
+      "formula_policy": "All81 ordered active mathematics spans remain exact; only the false prose gloss is narrowed.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-CARDINALS-HUME",
+      "audit_artifacts": [
+        "B176_B180_SOURCE_AUDIT.json",
+        "B178_CARDINAL_CLASSES_DRAFT_QA.json",
+        "B178_CARDINAL_CLASSES_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B178 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Exact local prose correction; no original-author approval claimed."
     }
   ],
   "external_upstream_report_submitted": false,
