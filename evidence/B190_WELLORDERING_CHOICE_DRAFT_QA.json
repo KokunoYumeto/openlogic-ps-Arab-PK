@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b190-wellordering-choice-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T21:40:09.394424+00:00",
+  "unit_id": "OLP-0596",
+  "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+  "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+  "target_sha256": "8cdb354917ea590269567dda373fb9e10da82e6aa5645efde13f46a4d41404cb",
+  "source_bytes": 3686,
+  "target_bytes": 5870,
+  "paired_blocks": 18,
+  "changed_blocks": 15,
+  "ordered_math_spans": 45,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-025",
+    "OLSTH-026"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact; the Well-Ordering and Choice definitions are translated without changing formulas.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "two_source_disclosures": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

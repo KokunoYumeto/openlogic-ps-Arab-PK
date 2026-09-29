@@ -1,0 +1,41 @@
+{
+  "schema": "ps-b194-vitali-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T22:37:10.516205+00:00",
+  "unit_id": "OLP-0600",
+  "source_path": "content/set-theory/choice/vitali.tex",
+  "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+  "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+  "source_bytes": 12889,
+  "target_bytes": 17424,
+  "paired_blocks": 37,
+  "changed_blocks": 33,
+  "ordered_math_spans": 135,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-029",
+    "OLSTH-030",
+    "OLSTH-031"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact; the Vitali argument is translated with exact ordered formulas; printed group, undefined symbol and measure-proof type errors are disclosed.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "source_disclosure_present": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

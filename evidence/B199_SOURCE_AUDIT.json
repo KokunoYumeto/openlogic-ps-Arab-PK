@@ -1,0 +1,43 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T23:17:09.872980+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-USING-DEFINITIONS",
+  "batch_id": "PS-B199-USING-DEFINITIONS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0605",
+      "source_path": "content/methods/proofs/using-definitions.tex",
+      "source_bytes": 5369,
+      "source_sha256": "0496b9489f10eb402e2eb91b503c7b522c2e73349e1481ceb9781f2e191a3bce",
+      "target_sha256": "c90ed2ba467772a2011b270886bdb8b622d40ac2a7b1bcfa563251cb96b16ef2",
+      "paired_blocks": 17,
+      "changed_blocks": 12,
+      "ordered_math_spans": 71,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "0cd30b4a411b6499fe620d702f188c19f3d02e8baac8a5a5fa86fa4fcb33365d",
+  "preaudit_sha256": "a17eb8a0bc5448d0b44f77f9b5cecd928a89312aee166d1aef842c77a6ac1196",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P138-EQUALITY",
+    "AF-MOE-P15-UNION"
+  ],
+  "new_term_ids": [
+    "TERM-PROOF-DEFINIENDUM-DEFINIENS"
+  ],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 15,
+  "source_header_observation": {
+    "source_line_1based": 9,
+    "frozen_literal": "\\olfileid{mod}{prf}{def}",
+    "sibling_part_id": "mth",
+    "effect": "The source macro sets the part component of this section label to mod. No reference break was demonstrated; the frozen identifier is retained."
+  },
+  "formula_policy": "All 71 ordered active math spans, term tokens, identifiers, structural commands and comments remain exact.",
+  "unresolved": "د تعريفېدونکي او تعريفوونکي عين پاکستانۍ تخصصي نومونه نه دي تثبيت شوي؛ د سرچينې د سرليک د برخې نښه هماغسې ساتل شوې ده.",
+  "next_executable_action": "Run dual 605-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0606."
+}

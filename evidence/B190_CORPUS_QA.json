@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b190-corpus-qa/1",
+  "utc": "2026-09-29T21:54:28.913461+00:00",
+  "status": "PASS",
+  "projected_draft_units": 596,
+  "accepted_before_finalizer": 595,
+  "staged_units": [
+    "OLP-0596"
+  ],
+  "aligned_blocks": 8799,
+  "segment_canon_uses": 5571,
+  "semantic_samples": 2184,
+  "terms": 302,
+  "review_entries": 756,
+  "source_actions": 448,
+  "byte_identical_surfaces": {
+    "QA.json": "eaf5b6c96e7ce47fade5ffecce177a51e27ed4c74ec04b0efcb16f754b9573ba",
+    "ALIGNMENT.jsonl": "3fe3ede86396bc9d82b8010e82eaa154564e6768d31f9d26d78776289dc653ca",
+    "SEGMENT_CANON_USE.jsonl": "acb205f3ea2639c155505ac1102843933a2341683884378d1c49dee4f7bd20a4"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "f73f605e5afdf0af8da3542607b2247a2cb1b956c1bc6362ef5147caa96d8433",
+  "focused_qa_sha256": {
+    "B190_WELLORDERING_CHOICE_DRAFT_QA.json": "94d588c90b463c7b6c1037cc59a344b90aded693fd738a1b416dc3339f29fbc1"
+  },
+  "next_action": "Dual canonical replay from frozen596 inputs; accept only if PASS."
+}

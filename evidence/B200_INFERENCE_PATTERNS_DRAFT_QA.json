@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b200-inference-patterns-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T23:26:13.707353+00:00",
+  "unit_id": "OLP-0606",
+  "source_path": "content/methods/proofs/inference-patterns.tex",
+  "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+  "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+  "source_bytes": 17286,
+  "target_bytes": 23524,
+  "paired_blocks": 46,
+  "changed_blocks": 41,
+  "ordered_math_spans": 301,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-032",
+    "OLSTH-033"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact; the instructional proof patterns and intentional invalid witness argument are preserved, while two printed formula defects are disclosed adjacent to the exact spans.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "printed_source_disclosures": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

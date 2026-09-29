@@ -1,0 +1,39 @@
+{
+  "schema": "ps-b194-hartogs-reconciliation-qa/1",
+  "status": "correction checked; cumulative acceptance pending",
+  "utc": "2026-09-29T22:42:25.595057+00:00",
+  "unit_id": "OLP-0595",
+  "source_path": "content/set-theory/choice/hartogs.tex",
+  "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+  "target_sha256": "be72f33d47675bd0e041b9a90f8d72025e490f01087e7ac5bffef82a3f8e5200",
+  "source_bytes": 3605,
+  "target_bytes": 4837,
+  "paired_blocks": 12,
+  "changed_blocks": 9,
+  "ordered_math_spans": 56,
+  "active_source_correction_ids": [
+    "OLSTH-023"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact; the Hartogs definitions are translated without changing formulas.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "only_legitimate_source_disclosure": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Withdraw false-positive OLSTH-024 from active ledgers; run cumulative QA and canonical replay."
+}

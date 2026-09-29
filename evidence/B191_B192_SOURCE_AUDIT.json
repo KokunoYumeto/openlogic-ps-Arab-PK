@@ -1,0 +1,55 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T22:09:47.894566+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-COUNTABLE-CHOICE-INTRINSIC",
+  "batch_id": "PS-B191-B192-COUNTABLE-CHOICE-INTRINSIC",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0597",
+      "source_path": "content/set-theory/choice/countablechoice.tex",
+      "source_bytes": 7098,
+      "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+      "target_sha256": "5797da1cbfeea92a195654261a94b0260c6c506921d634194e68525799cae5ea",
+      "paired_blocks": 22,
+      "source_correction_ids": [
+        "OLSTH-027"
+      ]
+    },
+    {
+      "unit_id": "OLP-0598",
+      "source_path": "content/set-theory/choice/justifications.tex",
+      "source_bytes": 2735,
+      "source_sha256": "4ad40cf83f5d5fe896183b2bdeb7c9cb2d3879aeb4b1bb4192607241e95c4ed8",
+      "target_sha256": "4e93165da9ad9b8169d48fa9a4d50169cb69583ffc3854748fedffaa3645dd67",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0597": "02f895938208276fe6481b1d275cf61b24bfe2669878c195c605b2c4baac51ee",
+    "OLP-0598": "5bf0663dc35577ad9a4fb29762ddbde76b0aac85aa27e328cbee265e8cc3b9d0"
+  },
+  "preaudit_sha256": {
+    "OLP-0597": "1d4e46bdac33a0ba56913ab78caeac653fecf21caa74cfc14504a727d0247d5c",
+    "OLP-0598": "e5c58be63f195f4399f09c114eceb3e80e3510da6d3f6c7f0e7d3e7c29c97cc3"
+  },
+  "model_provenance_sha256": "fcebb6ba1cc2a036d1d95f570f96fb59c8f6eb1df3f27bd40cba24b21aa0d3fd",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P99-COUNTABILITY",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER"
+  ],
+  "new_term_ids": [
+    "TERM-SET-COUNTABLE-CHOICE",
+    "TERM-SET-CHOICE-SET-INTRINSIC"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-027"
+  ],
+  "semantic_samples_added": 35,
+  "formula_policy": "The focused receipts verify 91 ordered math spans, identifiers, citations and structure; OLSTH-027 discloses one unrepaired printed index error.",
+  "unresolved": "د چاپي اتحاد د شاخص تېروتنه نه ده رغول شوې؛ د شمېر وړ انتخاب او انتخاب سټ عين پاکستانۍ چاپي اصطلاحات لا نه دي تثبيت شوي.",
+  "next_executable_action": "Run dual 598-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0599."
+}

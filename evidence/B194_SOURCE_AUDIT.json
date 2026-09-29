@@ -1,0 +1,55 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T22:47:15.672051+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-VITALI",
+  "batch_id": "PS-B194-VITALI",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0600",
+      "source_path": "content/set-theory/choice/vitali.tex",
+      "source_bytes": 12889,
+      "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "paired_blocks": 37,
+      "source_correction_ids": [
+        "OLSTH-029",
+        "OLSTH-030",
+        "OLSTH-031"
+      ]
+    }
+  ],
+  "additional_corrected_unit": {
+    "unit_id": "OLP-0595",
+    "target_sha256": "be72f33d47675bd0e041b9a90f8d72025e490f01087e7ac5bffef82a3f8e5200",
+    "withdrawn_source_correction_id": "OLSTH-024",
+    "active_source_correction_ids": [
+      "OLSTH-023"
+    ]
+  },
+  "focused_qa_sha256": {
+    "OLP-0600": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+    "OLP-0595": "b54763ed1761362d285312ba45efb20f9cf72ef4ecf608840e9c600b4e828779"
+  },
+  "preaudit_sha256": "da1d3e74de019da4fe099eda97448fc8a36b659f6041d8c07e4fd4921ee1850d",
+  "olsth024_reconciliation_sha256": "604d1e6ed91d94e149b584e8db564fcdd33722b838f2a94a9a6faf2c342261ce",
+  "model_provenance_sha256": "3449ce7d480679b200c51c22118294c12aa3f7e42616eb23e90ec8cf43e2d4bd",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P99-COUNTABILITY"
+  ],
+  "new_term_ids": [
+    "TERM-SET-VITALI-ROTATION-GROUP",
+    "TERM-SET-VITALI-COUNTABLE-ADDITIVITY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-029",
+    "OLSTH-030",
+    "OLSTH-031"
+  ],
+  "semantic_samples_added": 39,
+  "formula_policy": "The focused receipt verifies 135 ordered math spans, citations and structure; three printed defects are disclosed unrepaired. The Hartogs macro false-positive was withdrawn with exact math retained.",
+  "unresolved": "د ويتالي درې چاپي ستونزې نه دي رغول شوې؛ د ګروپ او اندازې عين پاکستانۍ نومونه لنډمهالي دي.",
+  "next_executable_action": "Run dual 600-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0601."
+}

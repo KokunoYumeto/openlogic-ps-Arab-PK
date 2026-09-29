@@ -1,0 +1,54 @@
+{
+  "schema": "ps-b194-accepted-editable/1",
+  "status": "accepted editable draft; dual corpus QA and canonical replay PASS",
+  "utc": "2026-09-29T23:00:49.666529+00:00",
+  "accepted_through_unit": "OLP-0600",
+  "draft_units": 600,
+  "remaining_unaccepted_units": 122,
+  "unit_ids": [
+    "OLP-0600"
+  ],
+  "additional_corrected_unit_ids": [
+    "OLP-0595"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "aligned_blocks": 8883,
+  "segment_canon_uses": 5642,
+  "semantic_samples": 2270,
+  "terms": 307,
+  "review_entries": 765,
+  "source_actions_historical": 453,
+  "source_actions_active": 452,
+  "decisions": 765,
+  "occurrences": 29382,
+  "reader_pages_available_historical": 18455,
+  "reader_pages_pending": 10927,
+  "source_audit_sha256": "e9d1d8c5449a893d5b97b67d668786d8ab9b98215306c3d81b945753a5ea7d8f",
+  "olsth024_reconciliation_sha256": "604d1e6ed91d94e149b584e8db564fcdd33722b838f2a94a9a6faf2c342261ce",
+  "focused_qa_sha256": {
+    "OLP-0600": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+    "OLP-0595": "b54763ed1761362d285312ba45efb20f9cf72ef4ecf608840e9c600b4e828779"
+  },
+  "corpus_qa_sha256": "2be29d22516b877fe388f2ff38a3bf5a175fcebac409100375ceee465ae61039",
+  "canonical_replay_sha256": "40e6777f9617a97dd90b632d50c03d381d7ecbd2b39421142a0dcc3069ea4e1d",
+  "qa_sha256": "0f751d89b4bb8cd36d2a8a487ed229fdcaec8f68bc2ab2c39aef0fd7767a50dd",
+  "source_correction_ids": [
+    "OLSTH-029",
+    "OLSTH-030",
+    "OLSTH-031"
+  ],
+  "superseded_source_correction_ids": [
+    "OLSTH-024"
+  ],
+  "next_checked_draft_sha256": {
+    "OLP-0601": "232325ea1744ddc501e79de8c3ca764a4cfa613ce4ff2cb2a0b442842522aee0",
+    "OLP-0602": "b6ede87fc90aea9d3d576f4c8cf0ced329b9c42fd3bbdc7a4195ccc367fa2d16",
+    "OLP-0603": "7bdc2e1b43e218832c7888ecb5f158c1e270e5639a79ee2246e5a379e51b410a",
+    "OLP-0604": "a06ae0a89de66127b5940df2eafe437353be712501e6844c340f6fa8481649f2"
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "next_action": "Register checked OLP-0601–0604 Methods/Proofs units against actual canon, run cumulative QA/replay, and continue OLP-0605. TeX slot occupancy never suspends translation."
+}

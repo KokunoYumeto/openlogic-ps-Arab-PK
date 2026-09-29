@@ -16509,7 +16509,7 @@
     {
       "id": "OLSTH-024",
       "unit_id": "OLP-0595",
-      "classification": "nested_cardinal_equivalence_as_relation_argument",
+      "classification": "withdrawn_false_positive",
       "source_path": "content/set-theory/choice/hartogs.tex",
       "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
       "source_locator": "content/set-theory/choice/hartogs.tex:80,81",
@@ -16518,17 +16518,17 @@
         81
       ],
       "target_path": "ps-Arab-PK/content/set-theory/choice/hartogs.tex",
-      "target_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "target_sha256": "be72f33d47675bd0e041b9a90f8d72025e490f01087e7ac5bffef82a3f8e5200",
       "target_line_1based": 106,
       "target_literal_line_1based": [
         106,
         107
       ],
-      "disclosure_line_1based": 113,
-      "mode": "adjacent-Pashto-disclosed-unrepaired-source-formula-error",
-      "translation_change": "د وروستۍ حسابي پايلې دوه ځله ننباسل شوې هم‌شمېرۍ نښه ښکاره شوه؛ بديل فورمول نه دے اټکل شوے.",
-      "reason": "The printed final expression places one cardinal-equivalence relation inside the first argument of another, so it is not a well-formed restatement of the cited maximum theorem. The target preserves the formula exactly and discloses this unresolved source defect.",
-      "formula_policy": "All 56 ordered active mathematical spans are exact; adjacent Pashto prose discloses the source issue.",
+      "disclosure_line_1based": null,
+      "mode": "withdrawn_after_checked_macro_expansion",
+      "translation_change": "ناسمه د سرچينې-عيب يادونه لرې شوه؛ اصلي فورمول هماغسې پاتې دے.",
+      "reason": "The two-argument cardeq macro expands its arguments as #1 \\approx #2. The nested call therefore prints a chain of two cardinal equivalences, not a proposition passed to a cardinal function. The former source-error claim was a false positive and its Pashto warning was removed.",
+      "formula_policy": "All 56 ordered active mathematical spans remain exact; no source defect is asserted for this expression.",
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
       "stable_audit": "PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY",
@@ -16539,8 +16539,8 @@
       ],
       "decision_timing": "contemporaneous B189 source-semantic comparison before acceptance",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
-      "proof_gap_disclosed_unrepaired": true,
-      "finite_semantic_check_sha256": "06d01fef9be562ab5c18ce33dd2a21e6d9db3fdc1dd69e657b48619362ed58ca",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "b54763ed1761362d285312ba45efb20f9cf72ef4ecf608840e9c600b4e828779",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []
@@ -16561,7 +16561,526 @@
         "source_only": [],
         "target_only": []
       },
-      "limits": "No original-author approval claimed; the printed passage remains unresolved."
+      "limits": "Earlier B189 receipts remain historical; OLSTH-024 is no longer an active erratum.",
+      "status": "superseded",
+      "active_erratum": false,
+      "superseded_prior_classification": "nested_cardinal_equivalence_as_relation_argument",
+      "superseded_prior_reason": "The printed final expression places one cardinal-equivalence relation inside the first argument of another, so it is not a well-formed restatement of the cited maximum theorem. The target preserves the formula exactly and discloses this unresolved source defect.",
+      "superseded_by": "B194_OLSTH024_RECONCILIATION.json",
+      "superseded_utc": "2026-09-29T22:44:03.878503+00:00",
+      "macro_source_path": "upstream/open-logic-config.sty",
+      "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+      "macro_definition_line_1based": 956,
+      "historical_action_record_sha256": "42551310e708941c35de2f9c8961d4f29ccf36bbb863c1c47cab3763ac97dea9",
+      "historical_review_record_sha256": "67e74b4a3ea5758f88399ceb0d66540df633cb28ec3108b915f85a0fbb4f3f09"
+    },
+    {
+      "id": "OLSTH-025",
+      "unit_id": "OLP-0596",
+      "classification": "stopping_rule_overwrites_choice_values_and_breaks_injectivity",
+      "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+      "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+      "source_locator": "content/set-theory/choice/wellorderingproblem.tex:61",
+      "source_literal_line_1based": [
+        61
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex",
+      "target_sha256": "8cdb354917ea590269567dda373fb9e10da82e6aa5645efde13f46a4d41404cb",
+      "target_line_1based": 73,
+      "target_literal_line_1based": [
+        73
+      ],
+      "disclosure_line_1based": 80,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-proof-gap",
+      "translation_change": "د تمېدو چاپي لارښوونه له راتلونکي يو پر يو والي سره نه لګېږي؛ فورمول نه دے بدل شوے.",
+      "reason": "The printed stopping convention assigns the whole set A to every delta no greater than the first stopping alpha. That overwrites previously selected element values and conflicts with the later claim that g is injective. The formula remains unchanged.",
+      "formula_policy": "All 45 ordered active mathematical spans are exact; the printed proof gap is disclosed in adjacent Pashto prose.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-WELLORDERING-CHOICE",
+      "audit_artifacts": [
+        "B190_SOURCE_AUDIT.json",
+        "B190_WELLORDERING_CHOICE_DRAFT_QA.json",
+        "B190_WELLORDERING_CHOICE_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B190 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "94d588c90b463c7b6c1037cc59a344b90aded693fd738a1b416dc3339f29fbc1",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed proof gap remains unresolved."
+    },
+    {
+      "id": "OLSTH-026",
+      "unit_id": "OLP-0596",
+      "classification": "empty_set_base_case_missing_from_choice_recursion",
+      "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+      "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+      "source_locator": "content/set-theory/choice/wellorderingproblem.tex:52",
+      "source_literal_line_1based": [
+        52
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex",
+      "target_sha256": "8cdb354917ea590269567dda373fb9e10da82e6aa5645efde13f46a4d41404cb",
+      "target_line_1based": 64,
+      "target_literal_line_1based": [
+        64
+      ],
+      "disclosure_line_1based": 85,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-proof-gap",
+      "translation_change": "د خالي سټ دپاره د چاپي لومړني ارزښت نه تعريفېدنه ښکاره شوه؛ بېل حالت نه دے اټکل شوے.",
+      "reason": "For empty A, the choice function on nonempty subsets of A has empty domain, so the printed g(0)=f(A) is undefined. The theorem itself has an easy empty case, but the printed proof does not treat it.",
+      "formula_policy": "All 45 ordered active mathematical spans are exact; the printed proof gap is disclosed in adjacent Pashto prose.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-WELLORDERING-CHOICE",
+      "audit_artifacts": [
+        "B190_SOURCE_AUDIT.json",
+        "B190_WELLORDERING_CHOICE_DRAFT_QA.json",
+        "B190_WELLORDERING_CHOICE_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B190 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "94d588c90b463c7b6c1037cc59a344b90aded693fd738a1b416dc3339f29fbc1",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed proof gap remains unresolved."
+    },
+    {
+      "id": "OLSTH-027",
+      "unit_id": "OLP-0597",
+      "classification": "wrong_union_subscript_in_dedekind_countable_choice_inequality",
+      "source_path": "content/set-theory/choice/countablechoice.tex",
+      "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+      "source_locator": "content/set-theory/choice/countablechoice.tex:64",
+      "source_literal_line_1based": [
+        64
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/countablechoice.tex",
+      "target_sha256": "5797da1cbfeea92a195654261a94b0260c6c506921d634194e68525799cae5ea",
+      "target_line_1based": 80,
+      "target_literal_line_1based": [
+        80
+      ],
+      "disclosure_line_1based": 86,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-index-error",
+      "translation_change": "د چاپي اتحاد د شاخص تېروتنه د نامساوات ترڅنګ ښکاره شوه؛ فورمول بدل نه شو.",
+      "reason": "The first line of the displayed bound takes the union of A_n under an i<n binder, whereas the preceding construction and subsequent sum require the earlier A_i. For fixed n the printed union is A_n when n>0, so the claimed strict bound does not follow. The target retains the formula.",
+      "formula_policy": "All 69 ordered active mathematical spans are exact; adjacent Pashto prose discloses the source index error.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-COUNTABLE-CHOICE-INTRINSIC",
+      "audit_artifacts": [
+        "B191_B192_SOURCE_AUDIT.json",
+        "B191_COUNTABLE_CHOICE_DRAFT_QA.json",
+        "B191_COUNTABLE_CHOICE_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B191 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "02f895938208276fe6481b1d275cf61b24bfe2669878c195c605b2c4baac51ee",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed index error remains unrepaired."
+    },
+    {
+      "id": "OLSTH-028",
+      "unit_id": "OLP-0599",
+      "classification": "surplus_closing_parenthesis_in_tangent_example",
+      "source_path": "content/set-theory/choice/banach.tex",
+      "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+      "source_locator": "content/set-theory/choice/banach.tex:49",
+      "source_literal_line_1based": [
+        49
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/banach.tex",
+      "target_sha256": "43082f32bd3bc364a73d22dc11dabf8e38c46265891c83a13906dfaac24c9c9f",
+      "target_line_1based": 47,
+      "target_literal_line_1based": [
+        47
+      ],
+      "disclosure_line_1based": 58,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-parenthesis-error",
+      "translation_change": "د چاپ شوې تابعې زيات تړونکے قوس په نږدې پښتو بيان کښې ښکاره شو؛ فورمول بدل نه شو.",
+      "reason": "The interval-to-real-line example prints \\tan(\\pi(r-\\nicefrac{1}{2}))) with three closing parentheses after the fraction but only two corresponding opens. The intended bijection is recognizable, but the frozen mathematical span is retained.",
+      "formula_policy": "All five ordered active mathematical spans are exact; adjacent Pashto prose discloses the surplus printed parenthesis.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-BANACH-TARSKI",
+      "audit_artifacts": [
+        "B193_SOURCE_AUDIT.json",
+        "B193_BANACH_TARSKI_DRAFT_QA.json",
+        "B193_BANACH_TARSKI_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B193 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "959c57538482161349a793283e2d00c6d9850c540ee306850e0de3fa54e62728",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed parenthesis remains unrepaired."
+    },
+    {
+      "id": "OLSTH-029",
+      "unit_id": "OLP-0600",
+      "classification": "rational_radian_rotations_not_closed_under_composition",
+      "source_path": "content/set-theory/choice/vitali.tex",
+      "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+      "source_locator": "content/set-theory/choice/vitali.tex:36",
+      "source_literal_line_1based": [
+        36,
+        37,
+        42,
+        51,
+        52
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
+      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "target_line_1based": 36,
+      "target_literal_line_1based": [
+        36,
+        41,
+        53
+      ],
+      "disclosure_line_1based": 68,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د نسبي راډياني زاويې د چاپي ګروپ ناتړلتيا ښکاره شوه؛ تعريف او فورمولونه هماغسې پاتې دي.",
+      "reason": "Rational radian values in [0,2pi) do not form a rotation group: 4 and 4 radians are allowed, but their composition has representative angle 8-2pi, which is irrational; 2pi-r is irrational for nonzero rational r. The printed closure and inverse claims, and the later second-half basis claim, fail under the stated definition.",
+      "formula_policy": "All 135 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-VITALI",
+      "audit_artifacts": [
+        "B194_SOURCE_AUDIT.json",
+        "B194_VITALI_DRAFT_QA.json",
+        "B194_VITALI_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B194 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+    },
+    {
+      "id": "OLSTH-030",
+      "unit_id": "OLP-0600",
+      "classification": "rotation_variable_quantified_over_choice_points",
+      "source_path": "content/set-theory/choice/vitali.tex",
+      "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+      "source_locator": "content/set-theory/choice/vitali.tex:257",
+      "source_literal_line_1based": [
+        257,
+        258,
+        259
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
+      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "target_line_1based": 288,
+      "target_literal_line_1based": [
+        288,
+        291
+      ],
+      "disclosure_line_1based": 307,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د اندازه‌يي ثبوت د ګرځون نښې غلط چاپي ساحه ښکاره شوه؛ دواړه اصلي موردونه ساتل شوي دي.",
+      "reason": "The measure proof twice quantifies rho over C, which is a set of selected circle points, while funimage(rho,C) requires rho to be a rotation. The printed variable domain is ill-typed; the target retains both occurrences and discloses the mismatch.",
+      "formula_policy": "All 135 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-VITALI",
+      "audit_artifacts": [
+        "B194_SOURCE_AUDIT.json",
+        "B194_VITALI_DRAFT_QA.json",
+        "B194_VITALI_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B194 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+    },
+    {
+      "id": "OLSTH-031",
+      "unit_id": "OLP-0600",
+      "classification": "undefined_R1_in_partition_proof",
+      "source_path": "content/set-theory/choice/vitali.tex",
+      "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+      "source_locator": "content/set-theory/choice/vitali.tex:159",
+      "source_literal_line_1based": [
+        159
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
+      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "target_line_1based": 177,
+      "target_literal_line_1based": [
+        177
+      ],
+      "disclosure_line_1based": 193,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.",
+      "reason": "The partition proof uses R_1 as an index although it previously defined rotationsgroup_1 and rotationsgroup_2 only. The target retains the exact printed identifier and discloses its undefined status.",
+      "formula_policy": "All 135 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-VITALI",
+      "audit_artifacts": [
+        "B194_SOURCE_AUDIT.json",
+        "B194_VITALI_DRAFT_QA.json",
+        "B194_VITALI_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B194 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+    },
+    {
+      "id": "OLSTH-032",
+      "unit_id": "OLP-0606",
+      "classification": "membership_formula_missing_left_argument",
+      "source_path": "content/methods/proofs/inference-patterns.tex",
+      "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+      "source_locator": "content/methods/proofs/inference-patterns.tex:198",
+      "source_literal_line_1based": [
+        198,
+        199
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
+      "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "target_line_1based": 247,
+      "target_literal_line_1based": [
+        247,
+        248
+      ],
+      "disclosure_line_1based": 250,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.",
+      "reason": "The printed proof has bare membership formulas \"\\in D\" and \"\\in E\" after referring to arbitrary x. Membership is binary; the missing left argument makes those two displayed inline expressions ill formed. The nearby prose identifies the intended x cases. The target retains both exact formula spans and discloses the omission adjacent to them.",
+      "formula_policy": "All 301 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-INFERENCE-PATTERNS",
+      "audit_artifacts": [
+        "B200_SOURCE_AUDIT.json",
+        "B200_INFERENCE_PATTERNS_DRAFT_QA.json",
+        "B200_INFERENCE_PATTERNS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B200 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "b9bf1853f4faadad199c35e24649759d953471d8aa679573a064c2fa8a5a6006",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+    },
+    {
+      "id": "OLSTH-033",
+      "unit_id": "OLP-0606",
+      "classification": "x_instead_of_A_in_nonempty_set_equivalence",
+      "source_path": "content/methods/proofs/inference-patterns.tex",
+      "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+      "source_locator": "content/methods/proofs/inference-patterns.tex:310",
+      "source_literal_line_1based": [
+        310,
+        311
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
+      "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "target_line_1based": 453,
+      "target_literal_line_1based": [
+        453,
+        454
+      ],
+      "disclosure_line_1based": 458,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د نه تشوالي د چاپي معادل شرط د څيز او سټ د نښو توپير څرګند شو؛ اصلي فورمول ساتل شوے.",
+      "reason": "The explanatory proof derives an existence claim from A neq emptyset, then prints x neq emptyset iff some x is in A. The left-hand subject must concern A for that equivalence; the printed x/A substitution is a source error. The target preserves the exact formula and gives an adjacent Pashto disclosure.",
+      "formula_policy": "All 301 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-INFERENCE-PATTERNS",
+      "audit_artifacts": [
+        "B200_SOURCE_AUDIT.json",
+        "B200_INFERENCE_PATTERNS_DRAFT_QA.json",
+        "B200_INFERENCE_PATTERNS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B200 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "b9bf1853f4faadad199c35e24649759d953471d8aa679573a064c2fa8a5a6006",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
     }
   ],
   "external_upstream_report_submitted": false,

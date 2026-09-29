@@ -1,0 +1,36 @@
+{
+  "schema": "ps-b194-corpus-qa/1",
+  "utc": "2026-09-29T22:48:11.961667+00:00",
+  "status": "PASS",
+  "projected_draft_units": 600,
+  "accepted_before_finalizer": 599,
+  "staged_units": [
+    "OLP-0600"
+  ],
+  "aligned_blocks": 8883,
+  "segment_canon_uses": 5642,
+  "semantic_samples": 2270,
+  "terms": 307,
+  "review_entries": 765,
+  "source_actions": 453,
+  "active_source_actions": 452,
+  "superseded_source_action_ids": [
+    "OLSTH-024"
+  ],
+  "olsth024_reconciliation_sha256": "604d1e6ed91d94e149b584e8db564fcdd33722b838f2a94a9a6faf2c342261ce",
+  "byte_identical_surfaces": {
+    "QA.json": "0f751d89b4bb8cd36d2a8a487ed229fdcaec8f68bc2ab2c39aef0fd7767a50dd",
+    "ALIGNMENT.jsonl": "528c70c9e5aff6d4332cb7d26b7c6c747c778cabd5cacc37d3ed9abb0c28c39a",
+    "SEGMENT_CANON_USE.jsonl": "fe38df1dd50d68c580d13710b8552c8373e804ebb246f3d68db9557811957d4e"
+  },
+  "qa_scripts": {
+    "state": "91599dba83296a57a36ea5bae6eb57525388c58365182f6c3cc7911410c07c0b",
+    "repository": "c8c881d8617c244b8f2451096b7cd94e4092e403ec2dab647097e570a541127f"
+  },
+  "source_audit_sha256": "e9d1d8c5449a893d5b97b67d668786d8ab9b98215306c3d81b945753a5ea7d8f",
+  "focused_qa_sha256": {
+    "B194_VITALI_DRAFT_QA.json": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+    "B194_HARTOGS_RECONCILIATION_QA.json": "b54763ed1761362d285312ba45efb20f9cf72ef4ecf608840e9c600b4e828779"
+  },
+  "next_action": "Dual canonical replay from frozen600 inputs; accept only if PASS."
+}

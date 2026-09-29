@@ -1,0 +1,105 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T23:02:39.268374+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-PROOFS-INTRO",
+  "batch_id": "PS-B195-B198-METHODS-PROOFS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0601",
+      "source_path": "content/methods/methods.tex",
+      "source_bytes": 595,
+      "source_sha256": "e3fef82eff1e663d6b27e1e1c9007372cb3873a7a295eb3cac441e57927bbcf9",
+      "target_sha256": "43f4c36dae60bac2695ede63ef2d58c43f06d78727616b436081fced59b63709",
+      "paired_blocks": 9,
+      "changed_blocks": 2,
+      "ordered_math_spans": 0,
+      "focused_qa_sha256": "232325ea1744ddc501e79de8c3ca764a4cfa613ce4ff2cb2a0b442842522aee0",
+      "preaudit_sha256": "73481a33072305d8bc39a062805167e590c05a30e8c71f44d70e4c668d1cde74",
+      "consulted_passage_ids": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "term_ids": [
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0602",
+      "source_path": "content/methods/proofs/proofs.tex",
+      "source_bytes": 445,
+      "source_sha256": "174ff1e6150d27c58b80541f4891c2c679b359a0d2b6a8b35b5dae2ab16761b5",
+      "target_sha256": "f8949eb89401a86bd3f20a1fa67d52a434a4cf70614115029798105cac3270f2",
+      "paired_blocks": 16,
+      "changed_blocks": 1,
+      "ordered_math_spans": 0,
+      "focused_qa_sha256": "b6ede87fc90aea9d3d576f4c8cf0ced329b9c42fd3bbdc7a4195ccc367fa2d16",
+      "preaudit_sha256": "276615b6b7100face68c66380ff475b86d9e34bcdd935194051b3c076d06e289",
+      "consulted_passage_ids": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "term_ids": [
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0603",
+      "source_path": "content/methods/proofs/introduction.tex",
+      "source_bytes": 3735,
+      "source_sha256": "ae06d0471d8f4c8565a11f9dbd7bb77513f837bb495032b6356cafbaa319ad83",
+      "target_sha256": "7abc260b773d31079609f3bfa22075c01f2417cd0f3e2b4acf5480e732c828d0",
+      "paired_blocks": 11,
+      "changed_blocks": 6,
+      "ordered_math_spans": 6,
+      "focused_qa_sha256": "7bdc2e1b43e218832c7888ecb5f158c1e270e5639a79ee2246e5a379e51b410a",
+      "preaudit_sha256": "9f8b43ff58b1fb201e8130ecb890c52dd04acd23f5028ea7fbf54cfb81571e92",
+      "consulted_passage_ids": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P7-PROPOSITION"
+      ],
+      "term_ids": [
+        "TERM-PROOF-SYSTEMS",
+        "TERM-PROOF-CALCULI",
+        "TERM-PROPOSITION"
+      ],
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0604",
+      "source_path": "content/methods/proofs/starting-proofs.tex",
+      "source_bytes": 1448,
+      "source_sha256": "84908cb7ef78b1ec62e2ccc41376d5bc039c6e44e1855c386d7b112c69d5ce64",
+      "target_sha256": "7318e7887c07a552c00193afba374a78b2b85cd7695c14a46d986f3f2253d63b",
+      "paired_blocks": 10,
+      "changed_blocks": 5,
+      "ordered_math_spans": 3,
+      "focused_qa_sha256": "a06ae0a89de66127b5940df2eafe437353be712501e6844c340f6fa8481649f2",
+      "preaudit_sha256": "a16631da9c25b4de97ff3383f7021514fb1114fc6cc64ac08afaeef4547205ad",
+      "consulted_passage_ids": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "term_ids": [
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "source_correction_ids": []
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "AF-NIAZMAN-P7-PROPOSITION"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 17,
+  "formula_policy": "Focused checks preserve ordered active mathematics, identifiers, comments and TeX structure in all four units.",
+  "unresolved": "د درسي نثر عين تخصصي پاکستانۍ بڼه په کتل شوو مخونو کښې نه ده ثابته؛ د انتخابونو بياکتنه پرانيستې ده.",
+  "next_executable_action": "Run dual 604-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0605."
+}

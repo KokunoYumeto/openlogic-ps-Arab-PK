@@ -4748,7 +4748,55 @@ OLP-0526–0530 منل شوي دي: ۴۶ جوړې برخې، ۷۵ رياضيکي
 - چاپي استدلال فرعي سټ له اړيکې سره تړي، خو د مخکېني تعريف شرط له ټاکلي سټ سره تړاو لري. [پښتو متن](ps-Arab-PK/content/set-theory/choice/hartogs.tex#L42)؛ [اصلي متن](upstream/content/set-theory/choice/hartogs.tex#L33).
 - نښه ساتل شوې؛ سرچينه‌يي عيب ښکاره دے.
 
-### DEC-OLSTH-024 — دوه ځله ننباسل شوې هم‌شمېري
+### DEC-OLSTH-024 — بېرته اخيستل شوې خبرتيا
 
-- وروستے چاپي عبارت د هم‌شمېرۍ اړيکه د بلې هم‌شمېرۍ په خوا کښې ننباسي؛ بديل فورمول نه دے اټکل شوے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/hartogs.tex#L113)؛ [اصلي متن](upstream/content/set-theory/choice/hartogs.tex#L80).
-- د پاکستانۍ نثر پاڼه د املا شاهد دے؛ د عين تخصصي سمون تصويب نه کوي.
+- د هارتوګس د وروستي فورمول پخوانۍ د عيب خبرتيا ناسمه وه: د اصلي ماکرو له غځېدو وروسته فورمول سم دے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/hartogs.tex#L106)؛ [اصلي متن](upstream/content/set-theory/choice/hartogs.tex#L80).
+- مضلله يادونه له پښتو متن څخه لرې شوې؛ [د کتنې رسيد](evidence/B194_OLSTH024_RECONCILIATION.json) تاريخ ساتي.
+
+## د انتخاب او ثبوتونو وروستي سرچينه‌يي يادښتونه
+
+### DEC-OLSTH-025 — OLP-0596
+
+- د تمېدو چاپي لارښوونه له راتلونکي يو پر يو والي سره نه لګېږي؛ فورمول نه دے بدل شوے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex#L73)؛ [اصلي متن](upstream/content/set-theory/choice/wellorderingproblem.tex#L61).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-026 — OLP-0596
+
+- د خالي سټ دپاره د چاپي لومړني ارزښت نه تعريفېدنه ښکاره شوه؛ بېل حالت نه دے اټکل شوے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex#L64)؛ [اصلي متن](upstream/content/set-theory/choice/wellorderingproblem.tex#L52).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-027 — OLP-0597
+
+- د چاپي اتحاد د شاخص تېروتنه د نامساوات ترڅنګ ښکاره شوه؛ فورمول بدل نه شو. [پښتو متن](ps-Arab-PK/content/set-theory/choice/countablechoice.tex#L80)؛ [اصلي متن](upstream/content/set-theory/choice/countablechoice.tex#L64).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-028 — OLP-0599
+
+- د چاپ شوې تابعې زيات تړونکے قوس په نږدې پښتو بيان کښې ښکاره شو؛ فورمول بدل نه شو. [پښتو متن](ps-Arab-PK/content/set-theory/choice/banach.tex#L47)؛ [اصلي متن](upstream/content/set-theory/choice/banach.tex#L49).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-029 — OLP-0600
+
+- د نسبي راډياني زاويې د چاپي ګروپ ناتړلتيا ښکاره شوه؛ تعريف او فورمولونه هماغسې پاتې دي. [پښتو متن](ps-Arab-PK/content/set-theory/choice/vitali.tex#L36)؛ [اصلي متن](upstream/content/set-theory/choice/vitali.tex#L36).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-030 — OLP-0600
+
+- د اندازه‌يي ثبوت د ګرځون نښې غلط چاپي ساحه ښکاره شوه؛ دواړه اصلي موردونه ساتل شوي دي. [پښتو متن](ps-Arab-PK/content/set-theory/choice/vitali.tex#L288)؛ [اصلي متن](upstream/content/set-theory/choice/vitali.tex#L257).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-031 — OLP-0600
+
+- د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے. [پښتو متن](ps-Arab-PK/content/set-theory/choice/vitali.tex#L177)؛ [اصلي متن](upstream/content/set-theory/choice/vitali.tex#L159).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-032 — OLP-0606
+
+- د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي. [پښتو متن](ps-Arab-PK/content/methods/proofs/inference-patterns.tex#L247)؛ [اصلي متن](upstream/content/methods/proofs/inference-patterns.tex#L198).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+
+### DEC-OLSTH-033 — OLP-0606
+
+- د نه تشوالي د چاپي معادل شرط د څيز او سټ د نښو توپير څرګند شو؛ اصلي فورمول ساتل شوے. [پښتو متن](ps-Arab-PK/content/methods/proofs/inference-patterns.tex#L453)؛ [اصلي متن](upstream/content/methods/proofs/inference-patterns.tex#L310).
+- د اصلي فورمول پټ بدلون يا د ليکوال تصويب نه ادعا کېږي.
+

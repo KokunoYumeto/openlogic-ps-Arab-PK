@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b194-olsth024-reconciliation/1",
+  "status": "PASS; old source-error claim superseded",
+  "utc": "2026-09-29T22:44:03.878503+00:00",
+  "unit_id": "OLP-0595",
+  "former_action_id": "OLSTH-024",
+  "source_path": "content/set-theory/choice/hartogs.tex",
+  "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+  "macro_path": "upstream/open-logic-config.sty",
+  "macro_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "macro_line_1based": 956,
+  "macro_definition": "\\DeclareDocumentCommand \\cardeq { m m } {#1 \\approx #2}",
+  "source_formula_lines_1based": [
+    80,
+    81
+  ],
+  "literal_expansion_meaning": "A disjointsum B approx A times B approx M",
+  "old_target_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+  "corrected_target_sha256": "be72f33d47675bd0e041b9a90f8d72025e490f01087e7ac5bffef82a3f8e5200",
+  "removed_target_lines_1based": [
+    113,
+    114,
+    115,
+    116,
+    117
+  ],
+  "active_hartogs_source_note_ids": [
+    "OLSTH-023"
+  ],
+  "historical_action_record_sha256": "42551310e708941c35de2f9c8961d4f29ccf36bbb863c1c47cab3763ac97dea9",
+  "historical_review_record_sha256": "67e74b4a3ea5758f88399ceb0d66540df633cb28ec3108b915f85a0fbb4f3f09",
+  "historical_receipts_preserved": [
+    "B189_ACCEPTED_595.json",
+    "B189_SOURCE_AUDIT.json"
+  ],
+  "focused_qa_sha256": "b54763ed1761362d285312ba45efb20f9cf72ef4ecf608840e9c600b4e828779",
+  "active_review_entry_removed": "DEC-OLSTH-024",
+  "no_upstream_report": true,
+  "next_action": "Register Vitali OLP-0600 and run dual cumulative QA/replay before acceptance."
+}

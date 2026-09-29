@@ -1,0 +1,44 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T23:31:37.248062+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-INFERENCE-PATTERNS",
+  "batch_id": "PS-B200-INFERENCE-PATTERNS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0606",
+      "source_path": "content/methods/proofs/inference-patterns.tex",
+      "source_bytes": 17286,
+      "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+      "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "paired_blocks": 46,
+      "changed_blocks": 41,
+      "ordered_math_spans": 301,
+      "source_correction_ids": [
+        "OLSTH-032",
+        "OLSTH-033"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "b9bf1853f4faadad199c35e24649759d953471d8aa679573a064c2fa8a5a6006",
+  "preaudit_sha256": "c31351e88d8527cb1a8dc047516c69be777829e2e2aade092081db20df04dfbf",
+  "model_provenance_sha256": "06249a20dfbd82aaebe7a4b59b2ce2c7273d7771a620773b26641c624736becf",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P7-PROPOSITION",
+    "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+    "AF-NIAZMAN-P39-THEORY-PROOF"
+  ],
+  "new_term_ids": [
+    "TERM-PROOF-CASES-EXISTENTIAL-WITNESS"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-032",
+    "OLSTH-033"
+  ],
+  "semantic_samples_added": 46,
+  "formula_policy": "All 301 ordered active math spans remain exact; the two source defects are disclosed adjacent to them, and the invalid final witness argument remains intentionally invalid.",
+  "unresolved": "د دوو چاپي فورمولونو ستونزې نه دي رغول شوې؛ د ثبوت د بڼو عين پاکستانۍ مرکبې نومونه لنډمهالي دي.",
+  "next_executable_action": "Run dual 606-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0607."
+}

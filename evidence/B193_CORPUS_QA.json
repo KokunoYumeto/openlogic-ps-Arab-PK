@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b193-corpus-qa/1",
+  "utc": "2026-09-29T22:24:09.538648+00:00",
+  "status": "PASS",
+  "projected_draft_units": 599,
+  "accepted_before_finalizer": 598,
+  "staged_units": [
+    "OLP-0599"
+  ],
+  "aligned_blocks": 8846,
+  "segment_canon_uses": 5609,
+  "semantic_samples": 2231,
+  "terms": 305,
+  "review_entries": 761,
+  "source_actions": 450,
+  "byte_identical_surfaces": {
+    "QA.json": "f78adaff17a54b23ed2f779af0d23a1995deff1982413466199d8a19af866070",
+    "ALIGNMENT.jsonl": "74a1f057ccc5dfa2849db595d7f811eb0a8e401d5ccf69bc2ffb514a0e323ec6",
+    "SEGMENT_CANON_USE.jsonl": "66f9f7be9962a9e57f1a4edb702e65b4311e32b23659cd2104598ca89cfd45f2"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "a9b4c3c751d5bb851b9523ae137164de40280cbd3d06b5f7b50f7e2ac6db4d9d",
+  "focused_qa_sha256": {
+    "B193_BANACH_TARSKI_DRAFT_QA.json": "959c57538482161349a793283e2d00c6d9850c540ee306850e0de3fa54e62728"
+  },
+  "next_action": "Dual canonical replay from frozen599 inputs; accept only if PASS."
+}

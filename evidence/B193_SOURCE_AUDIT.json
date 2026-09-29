@@ -1,0 +1,44 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T22:23:51.078978+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-BANACH-TARSKI",
+  "batch_id": "PS-B193-BANACH-TARSKI",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0599",
+      "source_path": "content/set-theory/choice/banach.tex",
+      "source_bytes": 3942,
+      "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+      "target_sha256": "43082f32bd3bc364a73d22dc11dabf8e38c46265891c83a13906dfaac24c9c9f",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLSTH-028"
+      ]
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0599": "959c57538482161349a793283e2d00c6d9850c540ee306850e0de3fa54e62728"
+  },
+  "preaudit_sha256": "a060861f91f687228cd44bfb7985c345b2b6cc40356e4db07daa3201ae7b3e07",
+  "model_provenance_sha256": "6957153bec3972bb2a1c18ea11b6fdb212a6c93bfe15af48f5a0c8d869642854",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-MEASURABLE-PIECES"
+  ],
+  "reused_term_ids": [
+    "TERM-PARADOX",
+    "TERM-SET-REPLACEMENT-JUSTIFICATION",
+    "TERM-SET-CHOICE-WELLORDER"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-028"
+  ],
+  "semantic_samples_added": 12,
+  "formula_policy": "The focused receipt verifies five ordered math spans, citations and structure; OLSTH-028 discloses one unrepaired printed parenthesis.",
+  "unresolved": "چاپي زيات قوس نه دے رغول شوے؛ د اندازې وړتيا عين پاکستانۍ تخصصي نوم لا نه دے تثبيت شوے.",
+  "next_executable_action": "Run dual 599-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0600."
+}

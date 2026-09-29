@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 595,
-    "structural_pass": 595,
+    "draft_units": 606,
+    "structural_pass": 606,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B189-HARTOGS-COMPARABILITY",
+  "batch": "PS-B200-INFERENCE-PATTERNS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -19246,7 +19246,7 @@
       "unit_id": "OLP-0595",
       "path": "content/set-theory/choice/hartogs.tex",
       "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
-      "translation_sha256": "1c60f0492f4d173e2c9b909ac762e3fd3e3fd479b601d6edd1c75ccde6b67284",
+      "translation_sha256": "be72f33d47675bd0e041b9a90f8d72025e490f01087e7ac5bffef82a3f8e5200",
       "source_blocks": 12,
       "target_blocks": 12,
       "checks": {
@@ -19267,8 +19267,318 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLSTH-023",
-        "OLSTH-024"
+        "OLSTH-023"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0596",
+      "path": "content/set-theory/choice/wellorderingproblem.tex",
+      "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+      "translation_sha256": "8cdb354917ea590269567dda373fb9e10da82e6aa5645efde13f46a4d41404cb",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-025",
+        "OLSTH-026"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0597",
+      "path": "content/set-theory/choice/countablechoice.tex",
+      "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+      "translation_sha256": "5797da1cbfeea92a195654261a94b0260c6c506921d634194e68525799cae5ea",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-027"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0598",
+      "path": "content/set-theory/choice/justifications.tex",
+      "source_sha256": "4ad40cf83f5d5fe896183b2bdeb7c9cb2d3879aeb4b1bb4192607241e95c4ed8",
+      "translation_sha256": "4e93165da9ad9b8169d48fa9a4d50169cb69583ffc3854748fedffaa3645dd67",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0599",
+      "path": "content/set-theory/choice/banach.tex",
+      "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+      "translation_sha256": "43082f32bd3bc364a73d22dc11dabf8e38c46265891c83a13906dfaac24c9c9f",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-028"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0600",
+      "path": "content/set-theory/choice/vitali.tex",
+      "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+      "translation_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "source_blocks": 37,
+      "target_blocks": 37,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-029",
+        "OLSTH-030",
+        "OLSTH-031"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0601",
+      "path": "content/methods/methods.tex",
+      "source_sha256": "e3fef82eff1e663d6b27e1e1c9007372cb3873a7a295eb3cac441e57927bbcf9",
+      "translation_sha256": "43f4c36dae60bac2695ede63ef2d58c43f06d78727616b436081fced59b63709",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0602",
+      "path": "content/methods/proofs/proofs.tex",
+      "source_sha256": "174ff1e6150d27c58b80541f4891c2c679b359a0d2b6a8b35b5dae2ab16761b5",
+      "translation_sha256": "f8949eb89401a86bd3f20a1fa67d52a434a4cf70614115029798105cac3270f2",
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0603",
+      "path": "content/methods/proofs/introduction.tex",
+      "source_sha256": "ae06d0471d8f4c8565a11f9dbd7bb77513f837bb495032b6356cafbaa319ad83",
+      "translation_sha256": "7abc260b773d31079609f3bfa22075c01f2417cd0f3e2b4acf5480e732c828d0",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0604",
+      "path": "content/methods/proofs/starting-proofs.tex",
+      "source_sha256": "84908cb7ef78b1ec62e2ccc41376d5bc039c6e44e1855c386d7b112c69d5ce64",
+      "translation_sha256": "7318e7887c07a552c00193afba374a78b2b85cd7695c14a46d986f3f2253d63b",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0605",
+      "path": "content/methods/proofs/using-definitions.tex",
+      "source_sha256": "0496b9489f10eb402e2eb91b503c7b522c2e73349e1481ceb9781f2e191a3bce",
+      "translation_sha256": "c90ed2ba467772a2011b270886bdb8b622d40ac2a7b1bcfa563251cb96b16ef2",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0606",
+      "path": "content/methods/proofs/inference-patterns.tex",
+      "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+      "translation_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "source_blocks": 46,
+      "target_blocks": 46,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-032",
+        "OLSTH-033"
       ],
       "status": "structural-pass"
     }
@@ -32237,8 +32547,8 @@
     {
       "unit_id": "OLP-0595",
       "passage": "OLP-0595-B011",
-      "reverse_paraphrase": "Hartogs and cardinal comparability yield an injection of A into an ordinal; failure of Well-Ordering allows incomparable sizes. The final nested cardinal relation is disclosed as malformed.",
-      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، يو پر يو تابعو، فورمولونو، حوالو او سرچينه‌يي تشو له مخې پرتله شول."
+      "reverse_paraphrase": "Hartogs and cardinal comparability yield an injection of A into an ordinal; failure of Well-Ordering allows incomparable sizes. The nested cardinal macro expands to an ordinary equivalence chain; its former warning is withdrawn.",
+      "finding": "د اصلي ماکرو پراختيا وکتل شوه؛ د وروستي فورمول پخوانۍ د عيب دعوه ناسمه وه او له پښتو بلاکه لرې شوه."
     },
     {
       "unit_id": "OLP-0595",
@@ -32260,9 +32570,1107 @@
     },
     {
       "unit_id": "OLP-0595",
-      "passage": "source-nested-relation",
-      "reverse_paraphrase": "The final printed nested cardinal-equivalence expression is malformed and not silently corrected.",
+      "passage": "macro-expansion-reconciliation",
+      "reverse_paraphrase": "The nested cardeq macro expands to two successive equivalences. It is not malformed, and no source warning remains in the target.",
+      "finding": "د ماکرو تعريف او دواړه فورمولي دليلونه په منجمد سرچينه کښې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B003",
+      "reverse_paraphrase": "The section asks about the Well-Ordering problem.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B004",
+      "reverse_paraphrase": "Well-Ordering has major consequences; the equivalent Choice principle becomes the next focus.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B005",
+      "reverse_paraphrase": "Cantor first praised universal Well-Ordering, then saw its need for proof; his quotation and citations are retained.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B006",
+      "reverse_paraphrase": "Zermelo is credited with the purported solution, followed by definitions.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B007",
+      "reverse_paraphrase": "A choice function selects an element of each set in its domain; for A its domain is the nonempty members of A.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B008",
+      "reverse_paraphrase": "For every nonempty x in A, a choice function for A selects a particular element f(x).",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B009",
+      "reverse_paraphrase": "The Axiom of Choice asserts that every set has a choice function.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B010",
+      "reverse_paraphrase": "Zermelo is credited with both implications between Choice and Well-Ordering.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B011",
+      "reverse_paraphrase": "Over ZF, Well-Ordering and Choice are equivalent.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B012",
+      "reverse_paraphrase": "A well-order of the union of A supplies the least-element choice function for A.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B013",
+      "reverse_paraphrase": "Choice gives f on nonempty subsets of A and the printed transfinite g recursion; its stopping convention and empty base gap are disclosed without changing formulas.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B014",
+      "reverse_paraphrase": "Before stopping, each chosen value is new, so the distinct-stage argument uses ordinal trichotomy to claim injectivity.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B015",
+      "reverse_paraphrase": "Hartogs is invoked to force a stopping ordinal and a range equal to A; the source injectivity gap remains disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B016",
+      "reverse_paraphrase": "The purported bijection from an ordinal to A then induces a well-order of A.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "OLP-0596-B017",
+      "reverse_paraphrase": "The section closes by asking whether the equivalent principles should be accepted.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د تابعې د ساحې، کمّي کوونکو، ثبوتي لوري، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "choice-function-domain",
+      "reverse_paraphrase": "The choice function has as domain exactly the nonempty members of A.",
       "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "stopping-rule-overwrite",
+      "reverse_paraphrase": "The printed stop convention overwrites pre-stop values and conflicts with injectivity.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "empty-A-base",
+      "reverse_paraphrase": "For empty A, the printed f(A) initialization is undefined.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0596",
+      "passage": "equivalence-directions",
+      "reverse_paraphrase": "Well-Ordering yields Choice by least elements; Choice is claimed to yield Well-Ordering by transfinite selection.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B003",
+      "reverse_paraphrase": "The section concerns Countable Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B004",
+      "reverse_paraphrase": "Finite choice functions require no Choice or Well-Ordering.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B005",
+      "reverse_paraphrase": "Each finite family of nonempty sets has a finite set of selected ordered pairs in Zminus.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B006",
+      "reverse_paraphrase": "Infinite families make a minimal extension of finite choice uncertain.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B007",
+      "reverse_paraphrase": "Countable Choice says every countable set has a choice function.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B008",
+      "reverse_paraphrase": "This weaker form of Choice has often been used without being noticed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B009",
+      "reverse_paraphrase": "Countable Choice is a special case of Choice and has often been used without recognition.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B010",
+      "reverse_paraphrase": "The first example concerns the finite-or-Dedekind-infinite dichotomy and explains the earlier Choice assumption.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B011",
+      "reverse_paraphrase": "Dedekind is credited with a proof using Countable Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B012",
+      "reverse_paraphrase": "Under Countable Choice, every A is finite or admits an injection from omega.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B013",
+      "reverse_paraphrase": "The proof chooses finite subsets of sizes two to the n, forms disjoint pieces, and selects one member from each; the printed union index is disclosed as wrong.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B014",
+      "reverse_paraphrase": "The proof uses Countable Choice once for the finite-subset sequence and once for representatives; Cohen is cited for independence without Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B015",
+      "reverse_paraphrase": "The second example concerns Cantor’s countable-union claim and its dependence on Countable Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B016",
+      "reverse_paraphrase": "Under Countable Choice, a countable union of countable sets is countable.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B017",
+      "reverse_paraphrase": "Choosing surjections from omega to each nonempty A_n yields a surjection from omega squared onto the union.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B018",
+      "reverse_paraphrase": "The hidden Choice steps motivate the philosophical question of justifying Countable Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B019",
+      "reverse_paraphrase": "A proposed supertask sums shrinking finite choice times to one minute.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B020",
+      "reverse_paraphrase": "The philosophical critique questions literal choosing and metaphysical possibility.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "OLP-0597-B021",
+      "reverse_paraphrase": "A countable supertask cannot justify unrestricted Choice, which would require arbitrary ordinal length.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B003",
+      "reverse_paraphrase": "The section considers an intrinsic justification of Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B004",
+      "reverse_paraphrase": "Choice, Well-Ordering and size comparability are equivalent candidates for justification.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B005",
+      "reverse_paraphrase": "The stage-accumulation principle says any collection of sets formed earlier appears at the stage and no others are formed then.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B006",
+      "reverse_paraphrase": "Several authors are said to invoke this stage principle to justify Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B007",
+      "reverse_paraphrase": "A further equivalent form of Choice is introduced.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B008",
+      "reverse_paraphrase": "For pairwise disjoint nonempty members of A, a choice set intersects each member in exactly one element.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B009",
+      "reverse_paraphrase": "The equivalence proof is left as an exercise with Potter citation.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B010",
+      "reverse_paraphrase": "For such a family, the choice set is the range of a choice function.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B011",
+      "reverse_paraphrase": "The attempted intrinsic argument appeals to stage availability of a possible selector subset of the union.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "OLP-0598-B012",
+      "reverse_paraphrase": "The text calls this a quick attempt and directs the reader to Potter for fuller development.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، انتخاب تابعو، ثبوتونو، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "finite-versus-countable-choice",
+      "reverse_paraphrase": "Finite families have a choice function without Choice; countable families require the separate principle.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "dedekind-double-choice",
+      "reverse_paraphrase": "The first proof uses Countable Choice both to pick finite subsets and to choose members from their differences.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "union-surjections",
+      "reverse_paraphrase": "The union proof chooses a countable sequence of surjections, not a single function without Choice.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0597",
+      "passage": "printed-union-index",
+      "reverse_paraphrase": "The printed bound unions A_n under i<n; the index error is disclosed and unrepaired.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "choice-set-condition",
+      "reverse_paraphrase": "The choice set meets each pairwise disjoint nonempty member in one point.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0598",
+      "passage": "justification-status",
+      "reverse_paraphrase": "The stage-possibility argument is presented as an attempted intrinsic justification, not an established theorem.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B003",
+      "reverse_paraphrase": "The Banach--Tarski Paradox is named.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B004",
+      "reverse_paraphrase": "Extrinsic support for Choice invokes the ability to compare cardinals, well-order sets and regard cardinals as ordinals.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B005",
+      "reverse_paraphrase": "The text introduces an apparently undesirable consequence attributed to Banach and Tarski.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B006",
+      "reverse_paraphrase": "In ZFC a ball has a finite decomposition reassemblable by rigid motions into two copies; the apparent doubled volume is highlighted.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B007",
+      "reverse_paraphrase": "The pea-to-Big-Ben consequence uses the same sort of finite decomposition and rigid reassembly.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B008",
+      "reverse_paraphrase": "These consequences do not follow in ZF alone; a footnote notes principles strictly weaker than full Choice suffice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B009",
+      "reverse_paraphrase": "The authors compare the paradox with three Choice-free cardinal or geometric surprises and preserve the printed tangent expression with a disclosed extra parenthesis.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B010",
+      "reverse_paraphrase": "Rigid motions preserve volume, hence the five pieces cannot all be measurable; their unusual existence is tied to the stage principle.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "OLP-0599-B011",
+      "reverse_paraphrase": "The closing deliberately absurd anagram joke doubles the Banach--Tarski name.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د هندسي دعوې، حجم، اندازه، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "paradox-versus-contradiction",
+      "reverse_paraphrase": "The surprising geometric paradox is not described as a formal contradiction.",
+      "finding": "نږدې منجمد بيان او پښتو معنا په جلا توګه وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "measurability",
+      "reverse_paraphrase": "Volume preservation is consistent with reassembly because not all component pieces are measurable.",
+      "finding": "نږدې منجمد بيان او پښتو معنا په جلا توګه وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0599",
+      "passage": "printed-parenthesis",
+      "reverse_paraphrase": "The tangent example has an extra printed closing parenthesis disclosed without formula repair.",
+      "finding": "نږدې منجمد بيان او پښتو معنا په جلا توګه وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B003",
+      "reverse_paraphrase": "The appendix names Vitali’s paradox.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B004",
+      "reverse_paraphrase": "The appendix uses a simpler result to illuminate Banach--Tarski without presenting its full algebraic proof.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B005",
+      "reverse_paraphrase": "In ZFC, a circle is claimed to admit a countable decomposition reassembled by rigid motions into two copies.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B006",
+      "reverse_paraphrase": "Vitali’s construction of a nonmeasurable set underlies a countably infinite, rather than finite, decomposition.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B007",
+      "reverse_paraphrase": "The circle lies in the plane and the printed rotation set uses rational radian angles in the indicated interval.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B008",
+      "reverse_paraphrase": "The printed lemma asserts an abelian group under function composition.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B009",
+      "reverse_paraphrase": "The proof identifies the zero rotation as an identity.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B010",
+      "reverse_paraphrase": "The printed inverse uses the angle two pi minus r; this fails rational-radian membership as disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B011",
+      "reverse_paraphrase": "Composition is asserted associative for all three rotation variables.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B012",
+      "reverse_paraphrase": "Composition is asserted commutative; the adjacent note discloses failure of closure and inverses.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B013",
+      "reverse_paraphrase": "The group is proposed to split into two halves from either of which it can be recovered.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B014",
+      "reverse_paraphrase": "The partition lemma states two disjoint basis sets for the rotation group.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B015",
+      "reverse_paraphrase": "The two half-angle families and their doubling identities are printed without formula repair.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B016",
+      "reverse_paraphrase": "The unit circle and rational-rotation relation are defined; the relation is presented as orbit membership.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B017",
+      "reverse_paraphrase": "The orbit relation is claimed to be an equivalence relation.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B018",
+      "reverse_paraphrase": "The proof cites the earlier group lemma, whose printed premise is defective.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B019",
+      "reverse_paraphrase": "Choice selects one representative from each equivalence class; the footnote identifies uncountable Choice.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B021",
+      "reverse_paraphrase": "Every circle point is claimed to lie in the image of one selected representative under a rotation.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B022",
+      "reverse_paraphrase": "Distinct rotations are claimed to yield disjoint images of the representative set.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B023",
+      "reverse_paraphrase": "The nonoverlap proof uses inverses and uniqueness of representatives.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B024",
+      "reverse_paraphrase": "The algebraic facts are now applied to the circle.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B025",
+      "reverse_paraphrase": "Two disjoint portions of the circle are each claimed to yield a copy from countably many rotated pieces.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B026",
+      "reverse_paraphrase": "The proof defines two unions, invokes the coverage and doubling claims, and prints an undefined R1 index.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B027",
+      "reverse_paraphrase": "The strategy is summarized as algebra, equivalence classes, then Choice representatives.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B028",
+      "reverse_paraphrase": "The same strategy is said to underlie Banach--Tarski with more complicated algebra.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B029",
+      "reverse_paraphrase": "A free group splits into four pieces; Choice selects sphere-surface orbit representatives.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B030",
+      "reverse_paraphrase": "The Hausdorff surface paradox asserts finite reassembly into two disjoint sphere surfaces.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B031",
+      "reverse_paraphrase": "Further algebra passes from the surface to the solid ball; a cited quotation emphasizes group complexity.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B032",
+      "reverse_paraphrase": "The two-dimensional joke would need countably many pieces, unlike a three-dimensional version.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B033",
+      "reverse_paraphrase": "The component pieces are nonmeasurable infinite scatterings.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B034",
+      "reverse_paraphrase": "A measure on a sigma-algebra obeys countable additivity on disjoint sets.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B035",
+      "reverse_paraphrase": "The corollary asserts no rotation image of the choice set has a compatible measure.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "OLP-0600-B036",
+      "reverse_paraphrase": "The reductio sums congruent pieces to one, but twice quantifies a rotation over points, as disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "rational-radian-closure",
+      "reverse_paraphrase": "Two allowed four-radian rotations compose to an angle irrational modulo two pi.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "choice-representatives",
+      "reverse_paraphrase": "The representative set uses uncountable Choice, not merely Countable Choice.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "partition-dependence",
+      "reverse_paraphrase": "The partition and two-copy claim depends on the printed false group premise.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "undefined-R1",
+      "reverse_paraphrase": "The printed R1 index is not defined by the earlier rotation-half names.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "measure-additivity",
+      "reverse_paraphrase": "Countable additivity and invariance would force equal disjoint pieces to sum to one.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0600",
+      "passage": "measure-proof-type",
+      "reverse_paraphrase": "The proof treats points in C as rotations; this is disclosed and not silently repaired.",
+      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+    },
+    {
+      "unit_id": "OLP-0601",
+      "passage": "OLP-0601-B004",
+      "reverse_paraphrase": "The part is titled Methods.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0601",
+      "passage": "OLP-0601-B005",
+      "reverse_paraphrase": "This part introduces proof methods, proof writing and induction to non-mathematics students; more material is planned.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0602",
+      "passage": "OLP-0602-B004",
+      "reverse_paraphrase": "The chapter is titled Proofs.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B005",
+      "reverse_paraphrase": "The section is titled Introduction.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B006",
+      "reverse_paraphrase": "Formal derivation systems are distinguished from the broader mathematical practice of constructing explanatory proofs.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B007",
+      "reverse_paraphrase": "A proof supplies the why for a mathematical claim; the example asks why primes other than two are odd.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B008",
+      "reverse_paraphrase": "Every proof step needs a cogent justification from valid assumptions, definitions and inference.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B009",
+      "reverse_paraphrase": "Propositions, theorems, lemmas and corollaries name different roles for proved statements and supporting results.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "OLP-0603-B010",
+      "reverse_paraphrase": "Hypotheses may be assumed in a proof and restrict the objects or formulas at issue.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "OLP-0604-B005",
+      "reverse_paraphrase": "The section is titled Starting a Proof.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "OLP-0604-B006",
+      "reverse_paraphrase": "The reader asks where to begin a proof.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "OLP-0604-B007",
+      "reverse_paraphrase": "The desired conclusion may be announced first but must not be used as an assumption.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "OLP-0604-B008",
+      "reverse_paraphrase": "List permitted assumptions and definitions before proving the conclusion; label an assumption of p explicitly.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "OLP-0604-B009",
+      "reverse_paraphrase": "The arrangement of a proof depends on the logical form of the question.",
+      "finding": "منجمد اصلي او پښتو بلاک د اصطلاح، فرض، پايلې او د ثبوت د منطقي رول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "proof-vs-derivation",
+      "reverse_paraphrase": "A formal derivation in a calculus differs from a mathematical proof that explains why a result follows.",
+      "finding": "د منجمد متن د استدلال رول له پښتو ژباړې سره په ځانګړې توګه پرتله شو."
+    },
+    {
+      "unit_id": "OLP-0603",
+      "passage": "result-roles",
+      "reverse_paraphrase": "A lemma assists a theorem, and a corollary follows as a consequence.",
+      "finding": "د منجمد متن د استدلال رول له پښتو ژباړې سره په ځانګړې توګه پرتله شو."
+    },
+    {
+      "unit_id": "OLP-0604",
+      "passage": "conclusion-not-premise",
+      "reverse_paraphrase": "Writing the intended conclusion at the foot of the page does not grant it as a premise.",
+      "finding": "د منجمد متن د استدلال رول له پښتو ژباړې سره په ځانګړې توګه پرتله شو."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B005",
+      "reverse_paraphrase": "The section is titled Using Definitions.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B006",
+      "reverse_paraphrase": "A definiendum is the shortened defined expression, while the definiens states the fuller condition whose logical structure is used in proofs.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B007",
+      "reverse_paraphrase": "The discussion introduces a proof example.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B008",
+      "reverse_paraphrase": "The proposition claims commutativity of set union for arbitrary A and B.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B009",
+      "reverse_paraphrase": "To prove the equation, first unpack equality of sets in terms of having the same elements.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B010",
+      "reverse_paraphrase": "Set equality holds exactly when each element of either set belongs to the other.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B011",
+      "reverse_paraphrase": "The equality expression is the definiendum; the two-way membership condition is the definiens, despite different names for one set.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B012",
+      "reverse_paraphrase": "Apply set equality to the two unions, not directly to A and B; the mistaken shortcut would prove a different equation.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B013",
+      "reverse_paraphrase": "Unpack union through set abstraction until membership reduces to a disjunction, yielding the exact quantified claim.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B014",
+      "reverse_paraphrase": "The full reformulation has two directions, each quantified over every x.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B015",
+      "reverse_paraphrase": "Distinguish definition variables from the terms of the claim and unpack as many definitions as needed.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "OLP-0605-B016",
+      "reverse_paraphrase": "The exercise asks to restate nonempty intersection without intersection, equality or empty-set symbols.",
+      "finding": "منجمد اصلي او پښتو بلاک د تعريف د رول، د اتحاد د غړيتوب او فورمولونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "defined-versus-defining",
+      "reverse_paraphrase": "The shortened expression and its defining condition have different roles.",
+      "finding": "د ټاکلي نوم، تعريفوونکي شرط او د مساوات د دواړو لورو توپير په ځانګړې توګه وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "union-versus-input-equality",
+      "reverse_paraphrase": "Equality of A union B and B union A does not require equality of A and B.",
+      "finding": "د ټاکلي نوم، تعريفوونکي شرط او د مساوات د دواړو لورو توپير په ځانګړې توګه وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0605",
+      "passage": "both-membership-directions",
+      "reverse_paraphrase": "The unpacked equality needs both implications, each for every element.",
+      "finding": "د ټاکلي نوم، تعريفوونکي شرط او د مساوات د دواړو لورو توپير په ځانګړې توګه وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B005",
+      "reverse_paraphrase": "The section is titled Inference Patterns.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B006",
+      "reverse_paraphrase": "Proofs combine individual inferences; a stated reason connects a conclusion to assumptions or earlier results.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B007",
+      "reverse_paraphrase": "Applying a definition replaces the defined equality with its two-way membership condition.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B008",
+      "reverse_paraphrase": "A proof of set equality can announce the defining condition before deriving each direction.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B009",
+      "reverse_paraphrase": "The first subproof shows every element of D lies in E.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B010",
+      "reverse_paraphrase": "The second subproof shows every element of E lies in D.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B011",
+      "reverse_paraphrase": "The heading introduces using a conjunction.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B012",
+      "reverse_paraphrase": "From p and q one may infer either conjunct; equality supplies a two-way membership example.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B013",
+      "reverse_paraphrase": "The heading introduces proving a conjunction.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B014",
+      "reverse_paraphrase": "To prove p and q, prove both parts, including both directions of set equality.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B015",
+      "reverse_paraphrase": "The heading introduces proving a disjunction.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B016",
+      "reverse_paraphrase": "One true disjunct suffices, but proof by cases is often needed when the hypotheses divide into alternatives.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B017",
+      "reverse_paraphrase": "The heading introduces conditional proof.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B018",
+      "reverse_paraphrase": "To prove if p then q, assume p and derive q.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B019",
+      "reverse_paraphrase": "Only if, if, and provided that have the same direction; a biconditional requires both directions or an exact equivalence chain.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B020",
+      "reverse_paraphrase": "The heading introduces universal claims.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B021",
+      "reverse_paraphrase": "A universal subset claim applies to a particular member z.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B022",
+      "reverse_paraphrase": "Universal claims often assert that every P-object also has property Q.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B023",
+      "reverse_paraphrase": "Prove a universal claim for an arbitrary representative, using conventional variable names.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B024",
+      "reverse_paraphrase": "The arbitrary object must retain generality: assume only P and derive Q.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B025",
+      "reverse_paraphrase": "Every A is a subset of A union B.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B026",
+      "reverse_paraphrase": "For arbitrary x in A, union membership follows by disjunction and set abstraction.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B027",
+      "reverse_paraphrase": "The heading introduces proof by cases.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B028",
+      "reverse_paraphrase": "If p or q, derive r separately under each case; the union example spells out the two branches.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B029",
+      "reverse_paraphrase": "Proof by cases is useful for a disjunctive goal.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B030",
+      "reverse_paraphrase": "Subset hypotheses for B and C yield inclusion of their union in the union of D and E.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B031",
+      "reverse_paraphrase": "Definitions reduce the inclusion to a universal conditional; two printed bare membership spans lack left arguments and are disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B032",
+      "reverse_paraphrase": "An editorial quote explains why an arbitrary x satisfying the antecedent is introduced.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B033",
+      "reverse_paraphrase": "The proof assumes x lies in B or C and announces cases.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B034",
+      "reverse_paraphrase": "In the B case, membership in D gives membership in D or E.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B035",
+      "reverse_paraphrase": "In the C case, membership in E gives membership in D or E.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B036",
+      "reverse_paraphrase": "The heading introduces proving an existence claim.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B037",
+      "reverse_paraphrase": "Existence proofs identify or construct an object and verify the required property.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B038",
+      "reverse_paraphrase": "A witness can be named and its existence and property justified.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B039",
+      "reverse_paraphrase": "From x in B, a nonempty subset A of B exists.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B040",
+      "reverse_paraphrase": "Choose singleton A={x}; show it is nonempty and contained in B.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B041",
+      "reverse_paraphrase": "The heading introduces using existence claims.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B042",
+      "reverse_paraphrase": "An existential witness receives a fresh name; a conclusion independent of that name follows from the existence premise.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B043",
+      "reverse_paraphrase": "If A is nonempty, so is A union B.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B044",
+      "reverse_paraphrase": "Choose a member of A and infer a member of its union; the printed x/A nonemptiness mismatch is disclosed.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "OLP-0606-B045",
+      "reverse_paraphrase": "The final alleged proof is intentionally invalid because separate nonempty sets can have different witnesses.",
+      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "cases-two-branches",
+      "reverse_paraphrase": "Both alternatives are separately sufficient for r; their conjunction need not be proved.",
+      "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "universal-arbitrary",
+      "reverse_paraphrase": "The chosen x is arbitrary except for property P, permitting universal generalization.",
+      "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "fresh-witness",
+      "reverse_paraphrase": "A witness name for an existence claim must not clash with prior assumptions and must disappear from the final conclusion.",
+      "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "printed-formulas",
+      "reverse_paraphrase": "The bare membership spans and x/A nonemptiness substitution remain exact and are disclosed.",
+      "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0606",
+      "passage": "invalid-intersection-proof",
+      "reverse_paraphrase": "Separate existential witnesses need not be the same, so two nonempty sets may be disjoint.",
+      "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
     }
   ],
   "builds": [

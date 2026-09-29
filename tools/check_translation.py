@@ -12,7 +12,8 @@ passages={p['passage_id']:p for p in map(json.loads,(STATE/'CANON_PASSAGES.jsonl
 correction_path=STATE/'SOURCE_CORRECTIONS.json'
 corrections=json.loads(correction_path.read_text(encoding='utf-8'))['actions'] if correction_path.exists() else []
 corrections_by_unit={}
-for c in corrections:corrections_by_unit.setdefault(c['unit_id'],[]).append(c)
+for c in corrections:
+ if c.get('status','active') != 'superseded': corrections_by_unit.setdefault(c['unit_id'],[]).append(c)
 def localize_text(s):
  out='';pos=0
  for m in re.finditer(r'\\(?:text|intertext|emph|textrm|mbox)\s*\{',s):

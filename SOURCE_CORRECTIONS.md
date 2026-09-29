@@ -4015,6 +4015,88 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Frozen source: `content/set-theory/choice/hartogs.tex` (ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4) at `content/set-theory/choice/hartogs.tex:80,81`
 - Pashto target: `ps-Arab-PK/content/set-theory/choice/hartogs.tex:106`
 - Audit: `PS-OWNER-SEMANTIC-20260929-HARTOGS-COMPARABILITY`
-- Treatment: د وروستۍ حسابي پايلې دوه ځله ننباسل شوې هم‌شمېرۍ نښه ښکاره شوه؛ بديل فورمول نه دے اټکل شوے۔
-- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-formula-error`.
+- Treatment: ناسمه د سرچينې-عيب يادونه لرې شوه؛ اصلي فورمول هماغسې پاتې دے.
+- Disclosure: `withdrawn_after_checked_macro_expansion`.
+- Status: **withdrawn false positive**. The source macro expands to the valid Hartogs expression; the historical finding and its withdrawal remain in `evidence/B194_OLSTH024_RECONCILIATION.json`.
+
+
+## OLSTH-025
+
+- Unit: `OLP-0596`
+- Frozen source: `content/set-theory/choice/wellorderingproblem.tex` (9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4) at `content/set-theory/choice/wellorderingproblem.tex:61`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex:73`
+- Treatment: د تمېدو چاپي لارښوونه له راتلونکي يو پر يو والي سره نه لګېږي؛ فورمول نه دے بدل شوے.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-proof-gap`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-026
+
+- Unit: `OLP-0596`
+- Frozen source: `content/set-theory/choice/wellorderingproblem.tex` (9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4) at `content/set-theory/choice/wellorderingproblem.tex:52`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/wellorderingproblem.tex:64`
+- Treatment: د خالي سټ دپاره د چاپي لومړني ارزښت نه تعريفېدنه ښکاره شوه؛ بېل حالت نه دے اټکل شوے.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-proof-gap`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-027
+
+- Unit: `OLP-0597`
+- Frozen source: `content/set-theory/choice/countablechoice.tex` (37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994) at `content/set-theory/choice/countablechoice.tex:64`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/countablechoice.tex:80`
+- Treatment: د چاپي اتحاد د شاخص تېروتنه د نامساوات ترڅنګ ښکاره شوه؛ فورمول بدل نه شو.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-index-error`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-028
+
+- Unit: `OLP-0599`
+- Frozen source: `content/set-theory/choice/banach.tex` (51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a) at `content/set-theory/choice/banach.tex:49`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/banach.tex:47`
+- Treatment: د چاپ شوې تابعې زيات تړونکے قوس په نږدې پښتو بيان کښې ښکاره شو؛ فورمول بدل نه شو.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-parenthesis-error`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-029
+
+- Unit: `OLP-0600`
+- Frozen source: `content/set-theory/choice/vitali.tex` (e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32) at `content/set-theory/choice/vitali.tex:36`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/vitali.tex:36`
+- Treatment: د نسبي راډياني زاويې د چاپي ګروپ ناتړلتيا ښکاره شوه؛ تعريف او فورمولونه هماغسې پاتې دي.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-030
+
+- Unit: `OLP-0600`
+- Frozen source: `content/set-theory/choice/vitali.tex` (e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32) at `content/set-theory/choice/vitali.tex:257`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/vitali.tex:288`
+- Treatment: د اندازه‌يي ثبوت د ګرځون نښې غلط چاپي ساحه ښکاره شوه؛ دواړه اصلي موردونه ساتل شوي دي.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-031
+
+- Unit: `OLP-0600`
+- Frozen source: `content/set-theory/choice/vitali.tex` (e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32) at `content/set-theory/choice/vitali.tex:159`
+- Pashto target: `ps-Arab-PK/content/set-theory/choice/vitali.tex:177`
+- Treatment: د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-032
+
+- Unit: `OLP-0606`
+- Frozen source: `content/methods/proofs/inference-patterns.tex` (dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31) at `content/methods/proofs/inference-patterns.tex:198`
+- Pashto target: `ps-Arab-PK/content/methods/proofs/inference-patterns.tex:247`
+- Treatment: د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
+- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## OLSTH-033
+
+- Unit: `OLP-0606`
+- Frozen source: `content/methods/proofs/inference-patterns.tex` (dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31) at `content/methods/proofs/inference-patterns.tex:310`
+- Pashto target: `ps-Arab-PK/content/methods/proofs/inference-patterns.tex:453`
+- Treatment: د نه تشوالي د چاپي معادل شرط د څيز او سټ د نښو توپير څرګند شو؛ اصلي فورمول ساتل شوے.
+- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
 - Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
