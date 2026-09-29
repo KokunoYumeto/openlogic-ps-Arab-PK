@@ -1,0 +1,329 @@
+\documentclass[11pt,a4paper,oneside]{report}
+\usepackage[margin=20mm,headheight=15pt]{geometry}
+\usepackage[no-math]{fontspec}
+\setmainfont[Script=Arabic]{Amiri}
+\newfontfamily\latinfont{Latin Modern Roman}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathrsfs,mathtools,mathdots,nicefrac,stmaryrd}
+\usepackage{xparse,etoolbox,xpunctuate,mfirstuc}
+\usepackage{graphicx,tikz,xcolor,framed,comment,longtable,multirow,array,booktabs,verbatim,rotating}
+\usetikzlibrary{arrows,automata,positioning,calc,decorations.pathmorphing,intersections}
+\usepackage{bussproofs}
+\input{OLP_UPSTREAM_PATH/sty/bussproofs-extra.sty}
+\usepackage[tableaux]{prooftrees}
+\usepackage[authoryear]{natbib}
+\usepackage[unicode,colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage[capitalize,nameinlink]{cleveref}
+\usepackage{fancyhdr}
+\usepackage{bidi}
+
+% Exact additional-symbol declarations from frozen sty/open-logic.sty:228--231.
+\DeclareSymbolFont{symbolsC}{U}{ntxsyc}{m}{n}
+\DeclareMathSymbol{\boxright}{\mathbin}{symbolsC}{128}
+\DeclareMathSymbol{\diamondright}{\mathbin}{symbolsC}{132}
+\DeclareMathSymbol{\fishhookright}{\mathbin}{symbolsC}{74}
+
+\hypersetup{
+  pdftitle={خلاص منطق — پښتو (پاکستان) — له بنسټونو څخه د سټونو د لومړنيو اصلونو پورې},
+  pdfauthor={اوپن لاجک پروژه؛ خپلواکه ماشيني پښتو ژباړه},
+  pdfsubject={روان کار: له ۷۲۲ سرچينيزو واحدونو څخه ۵۵۶ ژباړل شوي}
+}
+
+\newcommand*{\DeclareDocumentMacro}[2]{\def#1{#2}}
+\NewDocumentCommand{\settexttoken}{m s m m o o}{}
+\makeatletter
+\input{OLP_UPSTREAM_PATH/sty/open-logic-formulas.sty}
+\input{OLP_UPSTREAM_PATH/sty/open-logic-selective.sty}
+\input{OLP_UPSTREAM_PATH/open-logic-config.sty}
+\makeatother
+
+% Localized reader names for the frozen stage-principle macros; identifiers unchanged.
+\renewcommand\stageshier{\emph{پړاوونه بنسټ دي}}
+\renewcommand\stagesord{\emph{پړاوونه مرتب دي}}
+\renewcommand\stagesacc{\emph{پړاوونه تجمع کوي}}
+\renewcommand\stagessucc{\emph{پړاوونه دوام کوي}}
+\renewcommand\stagesinf{\emph{پړاوونه نامتناهيت ته رسېږي}}
+% Frozen source sphere-drawing definitions; package metadata omitted for inline use.
+% upstream/sty/ptolemaicastronomy.sty SHA-256 450f79a006fbf105046f366f31d4243d6b8a4903783d8ae05717c4106c9aad85
+
+\tikzset{
+  sphere/.style = {dotted},
+  sphere intersection/.style = {fill=lightgray},
+  sphere layer/.style = {fill=lightgray},
+  proposition/.style={smooth,tension=1.7},
+}
+
+\pgfkeyssetvalue{/tikz/layerwidth}{.5}
+\pgfkeyssetvalue{/tikz/innerfactor}{.4}
+
+% \sphereplot{n} gives the plot codes for the nth sphere
+
+\newcommand{\sphereplot}[1]{
+  circle
+    [radius=(#1)*\pgfkeysvalueof{/tikz/layerwidth}-
+      \pgfkeysvalueof{/tikz/layerwidth}*\pgfkeysvalueof{/tikz/innerfactor}]
+}
+
+
+% \spheresystem[options]{n} draws a sphere system centered at
+% the origin with n number of layers
+
+\newcommand{\spheresystem}[2][]{
+  \foreach \i in {1,...,#2}{
+    \draw[sphere,#1] \sphereplot{\i} ;
+  }
+}
+
+% \spherelayer[options]{n} shades the n-th layer
+
+\newcommand{\spherelayer}[2][]{
+  \begin{scope}[even odd rule]
+    \fill[#1,sphere layer]
+    \sphereplot{#2-1} \sphereplot{#2} ;
+  \end{scope}
+}
+
+% \spherefill[options]{n} fills the nth sphere
+
+\newcommand{\spherefill}[2][]{
+    \fill[sphere intersection,#1]
+    \sphereplot{#2} ;
+}
+
+% \sphereintersect[options]{path}{n} draws the path and shades the area
+% of the path in the n th layer. Options only apply to the sphere layer
+
+\newcommand{\sphereintersect}[3][]{
+  \begin{scope}[even odd rule]
+    \path[clip] #3;
+    \spherefill[#1]{#2}
+  \end{scope}
+  \draw #3;
+}
+
+% \sphereproposition[options]{direction}{n}{width}{length} draws a
+% proposition intersecting the n-th layer in direction away from the
+% center of the sphere system, with endpoints length away from the
+% vertex at an angle of width/2. Note that options applies to \draw,
+% not to plot. To change the tension on the plot, e.g., say
+% \tikzset{proposition/.style={smooth,tension=2}} -- in a group to
+% make it apply only to a single proposition.
+
+\newcommand{\propositionplot}[4]{
+  plot [proposition]
+  coordinates {+(#1+#3/2:#4)
+    +(#1:#2*\pgfkeysvalueof{/tikz/layerwidth}-
+    \pgfkeysvalueof{/tikz/layerwidth}*.9
+    -\pgfkeysvalueof{/tikz/layerwidth}*\pgfkeysvalueof{/tikz/innerfactor})
+    +(#1-#3/2:#4)}
+}
+
+\newcommand{\proposition}[5][]{
+  \draw[proposition,#1] \propositionplot {#2}{#3}{#4}{#5} ;
+  }
+
+% \spherepropositionintersect does the same as \sphereproposition but
+% also shades the are of intersection with the closest sphere
+
+\newcommand{\propositionintersect}[5][]{
+  \begin{scope}
+  \path[clip] \propositionplot{#2}{#3}{#4}{#5};
+  \spherefill[#1]{#3}
+  \end{scope}
+  \draw[proposition,#1] \propositionplot{#2}{#3}{#4}{#5};
+}
+
+% \spherepos[options]{direction}{n}{code} shifts the scope to a
+% position in the center of the nth layer in direction angle from the
+% center -- and then puts code there.
+
+\newcommand{\spherepos}[4][]{
+  \begin{scope}[#1,shift=(#2:#3*\pgfkeysvalueof{/tikz/layerwidth}-
+      \pgfkeysvalueof{/tikz/layerwidth}/2-
+        \pgfkeysvalueof{/tikz/layerwidth}*\pgfkeysvalueof{/tikz/innerfactor})]
+    \path #4 ;
+  \end{scope}
+}
+
+\newbox\gnBoxA
+\newdimen\gnCornerHgt
+\setbox\gnBoxA=\hbox{$\ulcorner$}
+\global\gnCornerHgt=\ht\gnBoxA
+\newdimen\gnArgHgt
+\def\gn #1{%
+  \setbox\gnBoxA=\hbox{$#1$}%
+  \gnArgHgt=\ht\gnBoxA
+  \ifnum\gnArgHgt<\gnCornerHgt \gnArgHgt=0pt
+  \else \advance\gnArgHgt by -\gnCornerHgt
+  \fi
+  \raise\gnArgHgt\hbox{$\ulcorner$}\box\gnBoxA
+  \raise\gnArgHgt\hbox{$\urcorner$}}
+\renewcommand{\MP}{\LR{\latinfont MP}}
+\renewcommand{\QR}{\LR{\latinfont QR}}
+\renewcommand{\Hyp}{\LR{\latinfont Hyp}}
+
+\newcommand{\olfileid}[3]{\gdef\pspart{#1}\gdef\pschapter{#2}\gdef\pssection{#3}}
+\NewDocumentCommand{\olpart}{o m m}{%
+  \gdef\pspart{#2}\gdef\pschapter{}\gdef\pssection{}%
+  \IfNoValueTF{#1}{\part{#3}}{\part[#1]{#3}}%
+  \label{#2:::part}}
+\NewDocumentCommand{\olchapter}{o m m m}{%
+  \gdef\pspart{#2}\gdef\pschapter{#3}\gdef\pssection{}%
+  \IfNoValueTF{#1}{\chapter{#4}}{\chapter[#1]{#4}}%
+  \label{#2:#3::chap}}
+\NewDocumentCommand{\olsection}{o m}{%
+  \IfNoValueTF{#1}{\section{#2}}{\section[#1]{#2}}%
+  \label{\pspart:\pschapter:\pssection:sec}}
+\newcommand{\ollabel}[1]{\label{\pspart:\pschapter:\pssection:#1}}
+\makeatletter
+\newcommand{\olpseganchor}[2]{%
+  \protected@write\@auxout{}{%
+    \string\newlabel{olpseg:#1:#2}{{}{\thepage}{}{}{}}}}
+\makeatother
+\NewDocumentCommand{\olref}{o o o m}{\begingroup
+  \IfNoValueTF{#1}{\edef\pskey{\pspart:\pschapter:\pssection:#4}}{%
+    \IfNoValueTF{#2}{\edef\pskey{\pspart:\pschapter:#1:#4}}{%
+      \IfNoValueTF{#3}{\edef\pskey{\pspart:#1:#2:#4}}{\edef\pskey{#1:#2:#3:#4}}}}%
+  \ifcsname r@\pskey\endcsname
+    \LR{\ref{\pskey}}%
+  \else
+    \emph{ناحل شوې بهرنۍ حواله}%
+  \fi
+  \endgroup}
+\let\Olref\olref
+\NewDocumentCommand{\oliflabeldef}{m m m}{\ifcsname r@#1\endcsname #2\else #3\fi}
+\providecommand{\OLEndChapterHook}{}
+\providecommand{\OLEndPartHook}{}
+\newcommand{\gitissue}[1]{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{issue \##1}}
+
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.46\textwidth}
+\NewDocumentCommand{\olasset}{O{\olphotowidth} m}{%
+  \centering\begin{LTR}\centering\resizebox{#1}{!}{\input{#2}}\end{LTR}}
+
+\renewenvironment{prooftree}
+  {\begin{center}\begin{LTR}\bottomAlignProof}
+  {\DisplayProof\end{LTR}\end{center}}
+\newenvironment{oltableau}
+  {\center\LTR\tableau{}}
+  {\endtableau\endLTR\endcenter}
+
+\newtheorem{thm}{قضيه}[chapter]
+\newtheorem{lem}[thm]{لم}
+\newtheorem{prop}[thm]{قضيه}
+\newtheorem{cor}[thm]{نتيجه}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{تعريف}
+\newtheorem{ex}[thm]{بېلګه}
+\newtheorem{prob}[thm]{تمرين}
+\newtheorem{rem}[thm]{يادونه}
+\newtheorem{conv}[thm]{د ليکنې دود}
+\crefname{part}{برخه}{برخې}
+\crefname{chapter}{باب}{بابونه}
+\crefname{section}{برخه}{برخې}
+\crefname{thm}{قضيه}{قضيې}
+\crefname{lem}{لم}{لمې}
+\crefname{prop}{قضيه}{قضيې}
+\crefname{cor}{نتيجه}{نتيجې}
+\crefname{defn}{تعريف}{تعريفونه}
+\crefname{ex}{بېلګه}{بېلګې}
+\crefname{prob}{تمرين}{تمرينونه}
+\crefname{rem}{يادونه}{يادونې}
+\crefname{conv}{د ليکنې دود}{د ليکنې دودونه}
+\newcommand{\crefpairconjunction}{ او }
+\newcommand{\crefmiddleconjunction}{، }
+\newcommand{\creflastconjunction}{ او }
+\newcommand{\crefpairgroupconjunction}{ او }
+\newcommand{\crefmiddlegroupconjunction}{، }
+\newcommand{\creflastgroupconjunction}{ او }
+\newcommand{\crefrangeconjunction}{ تر }
+\newenvironment{defish}{\begin{framed}}{\end{framed}}
+\newenvironment{editorial}{\begin{framed}\textbf{ادارتي يادونه۔}\enspace}{\end{framed}}
+\newenvironment{history}{\begin{framed}\textbf{تاريخي يادونه۔}\enspace}{\end{framed}}
+\newenvironment{explain}{}{}
+\newenvironment{intro}{}{}
+\newenvironment{digress}{\par\medskip}{\par\medskip}
+\newenvironment{derivation}{%
+  \par\smallskip\begin{LTR}\begin{tabular}{@{}rll@{}}}
+  {\end{tabular}\end{LTR}\par\smallskip}
+
+\renewcommand{\proofname}{ثبوت}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\tablename}{جدول}
+\renewcommand{\partname}{برخه}
+\renewcommand{\chaptername}{باب}
+\renewcommand{\contentsname}{فهرست}
+\renewcommand{\bibname}{\RL{\normalfont سرچينې}}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.8em}
+\renewcommand{\@tocrmarg}{4.6em}
+\makeatother
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{8em}
+\hfuzz=5pt
+\linespread{1.12}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\small خلاص منطق — پښتو (پاکستان)}
+\fancyhead[LE,RO]{\small له بنسټونو څخه د سټونو د لومړنيو اصلونو پورې}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\tracinglostchars=3
+\setRTL
+% XeLaTeX resets this mathcode at begin-document; restore OLP's active ! metavariables.
+\mathcode`\!="8000
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{22mm}
+{\Huge خلاص منطق}\par\bigskip
+{\Large پښتو — پاکستان}\par\bigskip
+{\LARGE له بنسټونو څخه د سټونو د لومړنيو اصلونو پورې}\par\bigskip
+د ماشيني ژباړې د روان کار ټوليزه نسخه
+\end{center}
+\bigskip
+په دې ټوليزه لوستيزه نسخه کښې له OLP-0001 څخه تر OLP-0556 پورې
+ټول ژباړل شوي سرچينيز واحدونه شامل دي۔ دا OLP_READER_UNITS واحدونه د
+خلاص منطق د پروژې لومړنۍ مادې، ساده سټ نظريه، بياني او لومړۍ درجې
+منطق، د ثبوت نظامونه، موډل نظريه، محاسبويت، د ټيورينګ ماشينونو
+پېژندګلو، د رابنسن حساب، د ناتکميلۍ او اثبات‌وړتيا قضيې، د دويمې درجې او
+ګڼ‌ارزښته منطق، عادي مودالي منطق، زماني او معرفتي منطق، شهودي منطق
+تر تابلوګانو او سموالې پورې، مادي او کلک شرطونه، او د واقعيت خلاف
+شرطونو بشپړه کروي معنٰی پوهنه او د سټونو تکراري تصور،
+د رسل تناقض، پريديکاتيف او امپريديکاتيف او د فرېګه ضميمه، د پړاوونو مفصل اصول، بېلونه، اتحاد او جوړې رانغاړي۔ د شهودي سرچينه‌يي ثبوتونو پاتې
+تشې په اړوندو ځايونو کښې په ښکاره بيان شوې دي۔
+د ۷۲۲ واحدونو بشپړه ژباړه لا روانه ده۔ تر OLP-0311 پورې متن
+OpenAI Codex، GPT-5.6 Sol، Ultra هڅې ژباړلے او کتلے دے؛
+د OLP-0312 تر OLP-0556 متن OpenAI Codex، GPT-6 Sol، Ultra
+هڅې ژباړلے او کتلے دے۔ په OLP-0177 کښې د دوو پريديکاتيف/امپريديکاتيف
+نومونو سمون هم OpenAI Codex، GPT-6 Sol، Ultra هڅې کړے دے۔
+د انسان د تصويب ادعا نۀ کېږي۔
+
+\begin{LTR}\latinfont\small
+Independent Pashto (Pakistan) machine translation of Open Logic Project
+revision \texttt{9620cc73f9c8e0ad003c514a5d3748f29611c4c0}. This cumulative
+work-in-progress reader contains OLP_READER_UNITS source units (OLP-0001
+through OLP-0556). It uses the frozen upstream default profile: first-order
+logic, all primitive connectives and quantifiers, all four proof systems,
+and the default mathematics, computer-science, philosophy, novice, lambda,
+and Turing-machine selections. Pakistani usage is primary; Afghan Pashto
+sources are labelled regional comparators. Specialist terminology remains
+openly reviewable where exact native technical attestation is sparse. No
+native-reader review or upstream endorsement is claimed.
+
+Translation and mathematical review through OLP-0311: OpenAI Codex,
+GPT-5.6 Sol, Ultra effort. OLP-0312 through OLP-0556: OpenAI Codex,
+GPT-6 Sol, Ultra effort. The two predicativity-label corrections in
+OLP-0177 were also produced by OpenAI Codex, GPT-6 Sol, Ultra effort.
+
+Original text and adaptation: Creative Commons Attribution 4.0 International,
+subject to the component notices preserved with the source snapshot.
+\href{https://openlogicproject.org/}{Open Logic Project}.\quad
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{Translation catalogue}.\quad
+\href{https://doi.org/10.5281/zenodo.22307197}{Edition lineage}.
+\end{LTR}
+\end{titlepage}
+\tableofcontents
+\clearpage

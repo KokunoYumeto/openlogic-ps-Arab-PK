@@ -1,0 +1,19 @@
+{
+  "schema": "ps-b163-reader-first-pass-failure/1",
+  "utc": "2026-09-29T04:44:47.080293+00:00",
+  "reader_scope": 556,
+  "status": "terminal failed first pass; no live TeX operation",
+  "mutex_acquired": true,
+  "error": "TeX pass 1 failed with exit code 1",
+  "missing_glyph_warnings": [
+    "Missing character: There is no ۔ in font cmr10!",
+    "Missing character: There is no ۔ in font cmr10!"
+  ],
+  "reader_log_sha256": "58df9a3b58b50041d30b1174e11b94c1aae32123cddebbfa76c9ccf03cdda6f3",
+  "failed_guard_receipt_sha256": "280bf29505f8be6f052ca8589006cf90ea755c22d9fae7589e40cc3404ad6a3e",
+  "failed_build_inputs_sha256": "73bc9cc972cc47be6bafbe21451e5c426a2844e66df150a227f52cdb4d9a3991",
+  "partial_pdf_accepted": false,
+  "new_public_reader": false,
+  "finding": "OLP-0426 frozen upstream and target close the iff-case macro argument before the math delimiter. One OLP-0061 Pashto full stop sits outside its math text argument; two cmr10 warnings occur during this failed traversal.",
+  "next_action": "Apply exact reader-only syntax and text-font punctuation recoveries, preserve failed inputs, then continue B164 registration and OLP-0562. One new TeX acquisition only at a later naturally validated scope; no translation hold."
+}

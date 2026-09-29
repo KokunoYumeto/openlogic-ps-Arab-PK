@@ -1,0 +1,104 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{Valphabasic}
+\olsection{د پړاوونو بنسټيز خاصيتونه}
+
+د $V_\alpha$ ګانو د تعريف د بنسټيز اهميت د څرګندولو دپاره به ځينې
+بنسټيزې نتيجې وړاندې کړو. په يوه تعريف پېل کوو:\footnote{د دې خاصيت
+دپاره معياري اصطلاح نشته؛ اصلي متن ئې «potent» بولي، د \citet{ButtonLT1}
+د نومولو په تعقيب. دلته ئې پښتو بڼه «توانمن» اخيستل شوې ده.}
+\begin{defn}
+	سټ $A$ \emph{توانمن} دے، که او يوازې که $\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ وي.
+\end{defn}
+\begin{lem}\ollabel{Valphabasicprops}
+د هر ترتيبي عدد $\alpha$ دپاره:
+\begin{enumerate}
+	\item\ollabel{Valphatrans} هر $V_\alpha$ متعدي دے.
+	\item\ollabel{Valphapotent} هر $V_\alpha$ توانمن دے.
+	\item\ollabel{Valphacum} که $\gamma \in \alpha$ وي، نو $V_\gamma
+	\in V_\alpha$ دے (او له دې $V_\gamma \subseteq V_\alpha$ هم د
+	\olref{Valphatrans} له مخې دے).
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+دا د نامتناهيت هاخوا په هممهاله استقرا ثابتوو. د استقرا دپاره فرض کړئ
+چې \olref{Valphatrans}--\olref{Valphacum} د هر ترتيبي عدد $\beta < \alpha$
+دپاره صدق کوي.
+
+د $\alpha = \emptyset$ حالت څرګند دے.
+
+فرض کړئ $\alpha = \ordsucc{\beta}$ دے. د \olref{Valphacum} د ښودلو
+دپاره، که $\gamma \in \alpha$ وي، نو $V_\gamma \subseteq V_\beta$ د فرض
+له مخې دے، نو $V_\gamma \in \Pow{V_\beta} = V_\alpha$ دے.
+د \olref{Valphapotent} د ښودلو دپاره فرض کړئ $A \subseteq B \in V_\alpha$
+دي، يعنې $A
+\subseteq B \subseteq V_\beta$؛ نو $A \subseteq V_\beta$ دے، نو $A \in
+V_\alpha$ دے. د \olref{Valphatrans} د ښودلو دپاره وګورئ چې، که $x \in A \in
+V_\alpha$ وي، نو $A \subseteq V_\beta$ لرو، نو $x \in V_\beta$ دے، نو
+$x
+\subseteq V_\beta$ دے، ځکه چې $V_\beta$ د فرض له مخې متعدي دے، نو $x
+\in V_\alpha$ دے.
+
+فرض کړئ $\alpha$ حدي ترتيبي عدد دے. د \olref{Valphacum} د ښودلو
+دپاره، که $\gamma \in \alpha$ وي، نو $\gamma \in \ordsucc{\gamma} \in \alpha$
+دي، نو $V_\gamma \in V_{\ordsucc{\gamma}}$ د فرض له مخې دے، او له دې
+$V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$ دے.
+د \olref{Valphatrans} او \olref{Valphapotent} د ښودلو دپاره يوازې وګورئ
+چې د متعدي سټونو اتحاد متعدي دے، او د توانمنو سټونو اتحاد توانمن دے.
+\end{proof}
+
+\begin{lem}\ollabel{Valphanotref}
+د هر ترتيبي عدد $\alpha$ دپاره، $V_\alpha \notin V_\alpha$ دے.
+\end{lem}
+
+\begin{proof}
+د نامتناهيت هاخوا استقرا کاروو. ښکاره ده چې $V_\emptyset \notin V_\emptyset$ دے.
+
+که $V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ وي،
+نو $V_{\ordsucc{\alpha}} \subseteq V_\alpha$ دے؛ او ځکه چې $V_\alpha
+\in V_{\ordsucc{\alpha}}$ د \olref{Valphabasicprops} له مخې دے،
+$V_\alpha \in V_\alpha$ لرو. په معکوسه توګه: که $V_\alpha \notin V_\alpha$
+وي، نو $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$ دے.
+
+که $\alpha$ حدي عدد وي او $V_\alpha \in V_\alpha = \bigcup_{\beta \in
+\alpha}V_\beta$ وي، نو $V_\alpha \in V_\beta$ د کوم $\beta \in
+\alpha$ دپاره دے؛ خو بيا $V_\beta \in V_\alpha$ هم دے، نو $V_\beta \in
+V_\beta$ د \olref{Valphabasicprops} په دوه ځله کارولو دے.
+په معکوسه توګه، که $V_\beta
+\notin V_\beta$ د ټولو $\beta \in \alpha$ دپاره وي، نو $V_\alpha \notin
+V_\alpha$ دے.
+\end{proof}
+
+\begin{cor}
+د هر دوو ترتيبي عددونو $\alpha, \beta$ دپاره: $\alpha \in \beta$، که او يوازې که $V_\alpha \in V_\beta$ وي.
+\end{cor}
+
+\begin{proof}
+\Olref{Valphabasicprops} يو لورے ورکوي. په معکوسه توګه فرض کړئ
+$V_\alpha \in V_\beta$ دے. نو $\alpha \neq \beta$ د \olref{Valphanotref}
+له مخې دي؛ او $\beta \notin \alpha$، ځکه چې که داسې نۀ وي، نو
+$V_\beta \in V_\alpha$ به لرو او له دې $V_\beta \in V_\beta$ د
+\olref{Valphabasicprops} په دوه ځله کارولو لرو، چې له
+\olref{Valphanotref} سره په تناقض کښې دي. نو $\alpha \in \beta$ د درې ګونتوب له مخې دے.
+\end{proof}
+\noindent
+دا ټول موږ ته اجازه راکوي چې هر $V_\alpha$ د مراتبو د لړۍ د $\alpha$
+پړاو په توګه وګڼو. وجه ئې دا ده:
+
+بې شکه $V_\alpha$ ګانې د يوه \emph{تکراري} بهير په وسيله جوړې شوې
+ګڼلے شو، ځکه چې د ترتيبي عددونو کارول مو د تکرار تصور تعقيبوي.
+همدارنګه، که يو پړاو تر بل مخکې جوړېږي، يعنې
+$V_\beta \in V_\alpha$، يعنې $\beta \in \alpha$، نو د جوړولو بهير مو
+\emph{تجمعي} دے، ځکه چې $V_\beta \subseteq V_\alpha$ دے.
+په پای کښې، په رښتيا د هغو سټونو \emph{ټولې} ممکنې ټولګې جوړوو چې
+په کوم مخکيني پړاو کښې موجود وو، ځکه چې هر تالي پړاو
+$V_{\ordsucc{\alpha}}$ د خپل مخکيني پړاو $V_\alpha$ د فرعي سټونو سټ دے.
+
+په دې توګه، په $\ZFminus$ کښې د سټونو د تجمعي--تکراري مراتبو د لړۍ
+د تصور په کره بيانولو کښې \emph{تقريباً} کار بشپړ شوے دے.
+خو، بې شکه، لا د تعويض توجيه کول پکار دي.
+
+\end{document}

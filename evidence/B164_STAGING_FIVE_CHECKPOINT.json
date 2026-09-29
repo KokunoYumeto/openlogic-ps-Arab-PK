@@ -1,0 +1,220 @@
+{
+  "schema": "ps-b164-five-staging/1",
+  "utc": "2026-09-29T04:31:05.293386+00:00",
+  "status": "five checked drafts staged; not accepted",
+  "accepted_draft_units_at_staging": 551,
+  "B163_acceptance_pending": true,
+  "unit_ids": [
+    "OLP-0557",
+    "OLP-0558",
+    "OLP-0559",
+    "OLP-0560",
+    "OLP-0561"
+  ],
+  "units": [
+    {
+      "schema": "ps-b164-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0557",
+      "source_path": "content/set-theory/ordinals/opps.tex",
+      "source_sha256": "f53aa4197833752c4ecdd3d7755c8e13cdec164fd68d0261dac26290a95cd171",
+      "target_sha256": "527e7f4324b4e91d185837155d3053e9b70cf2ae1681a248134de3fc70cccdee",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "math_spans": 61,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b164-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0558",
+      "source_path": "content/set-theory/spine/spine.tex",
+      "source_sha256": "990b6ec9c7785eb5cc4fdbd82c029fffa99c0409a869a7309bb4522b41b6e0d6",
+      "target_sha256": "5797ef881b5cb4049262468eb5bd083aa53438bc7f0dcac860eaa0d30d81c97a",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "math_spans": 0,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b164-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0559",
+      "source_path": "content/set-theory/spine/idea.tex",
+      "source_sha256": "72e78cfef1d30e6a2e097f398dd5f502654f906c855dc226b9f616947a2b6955",
+      "target_sha256": "ebb594e695e2003ef4223c284cd66568043cef71fc72f2403680188dffae8003",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "math_spans": 4,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b164-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0560",
+      "source_path": "content/set-theory/spine/recursion.tex",
+      "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+      "target_sha256": "033b44f5799d5fc664c631b0390ff5ae16c5f6f037720c66d46a84f303cefacd",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "math_spans": 74,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-005"
+      ],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b164-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0561",
+      "source_path": "content/set-theory/spine/stagesbasics.tex",
+      "source_sha256": "055948a696b012f7bf5b0a6e9ac39297a0a910f6c17ca9580782e9795e87def6",
+      "target_sha256": "3846f4094824927fec988c435f9cacb2c12b6788a442ff4d7966548d9c4f7fd2",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "math_spans": 66,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    }
+  ],
+  "paired_blocks": 70,
+  "changed_content_canon_uses": 51,
+  "math_spans": 205,
+  "tikz_diagrams": 0,
+  "source_frozen": true,
+  "notes_sha256": "a20addd9c7499698e2077ecde682e93f435bc3035f756f63787cc2b2d842fbc5",
+  "staging_alignment_sha256": "51460a6d19fff166ce53e943cdc027d22970c3b5860f8989338f601a77e1fa81",
+  "staging_canon_use_sha256": "52abe0e100131cab33f9980a15bd2bdccdde3ccde41856a5afab5df72af5eb99",
+  "new_source_treatments_pending_registration": [
+    "OLSTH-005"
+  ],
+  "new_choices_pending_registration": [
+    "successor versus limit ordinal",
+    "strict versus non-strict upper bound",
+    "ordinal approximation and transfinite recursion",
+    "internal stages and potent sets"
+  ],
+  "next_action": "Accept B163 after its live dual replay PASS, then register B164 choices, OLSTH-005 branch repair and semantic samples; continue OLP-0562 onward. TeX availability governs compilation only.",
+  "formula_policy": "205 ordered symbolic math spans retained; first xi condition semantically extended by empty-domain case with adjacent disclosure. Other branches and proof equations unchanged.",
+  "semantic_branch_check_sha256": "160bddc90374cd5b3f1ede37b4292ab5cac36c0eb534c19683b78b8fd0aa6875",
+  "focused_repairs_sha256": "1be4683513b011f9344038ef86727c7e14c6f8488afcca627f260d9ac23aaea1",
+  "batch_id": "PS-B164-ORDINAL-SUCCESSORS-STAGE-RECURSION"
+}

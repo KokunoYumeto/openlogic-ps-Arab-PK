@@ -577,6 +577,24 @@ def prepare_unit(text: str, rows: list[dict], row: dict) -> tuple[str, Counter, 
         if body.count(old) != 1:
             raise ValueError("OLP-0151 source-syntax recovery site changed")
         body = body.replace(old, new)
+    if row["unit_id"] == "OLP-0061":
+        # This one translated sentence puts its Pashto full stop in outer
+        # display math. Move the same punctuation into the existing text
+        # argument so the reader uses its Pashto font, not cmr10.
+        old = r"\text{که $\pValue{v}(!A) = \False $ وي}۔"
+        new = r"\text{که $\pValue{v}(!A) = \False $ وي۔}"
+        if body.count(old) != 1:
+            raise ValueError("OLP-0061 math-text punctuation recovery site changed")
+        body = body.replace(old, new)
+    if row["unit_id"] == "OLP-0426":
+        # The frozen source closes the indcase argument before its math
+        # delimiter in the iff case. Repair only that grouping in the reader;
+        # all formula tokens and both editable witnesses remain unchanged.
+        old = r"\liff \ST_x(!C))}$.}{}"
+        new = r"\liff \ST_x(!C))$.}}{}"
+        if body.count(old) != 1:
+            raise ValueError("OLP-0426 source-syntax recovery site changed")
+        body = body.replace(old, new)
     body = remove_imports(body)
     body, assets = rewrite_assets(body, row["source_path"])
     body = wrap_rtl_math_text(expand_tokens(body))
@@ -744,6 +762,22 @@ def main() -> None:
             ],
         },
         "source_syntax_recoveries": [
+            {
+                "unit_id": "OLP-0061",
+                "source_path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+                "finding": "One translated Pashto full stop after the final ternary-connective branch sits in outer display math and generates cmr10 missing-glyph warnings.",
+                "reader_recovery": "Retain that punctuation inside its existing Pashto text argument; symbolic formula tokens are unchanged.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
+            {
+                "unit_id": "OLP-0426",
+                "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+                "finding": "The frozen source and translated witness close the indcase argument before the math delimiter in the standard-translation iff case.",
+                "reader_recovery": "Close math before both macro arguments. All symbolic formula tokens remain in their original order.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
             {
                 "unit_id": "OLP-0447",
                 "source_path": "content/normal-modal-logic/completeness/truth-lemma.tex",

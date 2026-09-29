@@ -1,0 +1,143 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{recursion}
+\olsection{د نامتناهيت هاخوا بازګښت قضيې}
+
+خو لومړے کار دا دے چې تاييد کړو
+\olref[valpha]{defValphas} يو بريالے تعريف دے. په عمومي توګه، ثابتول
+پکار دي چې د نامتناهيت هاخوا په بازګښت د تعريف د وړاندې کولو هره هڅه
+بريالۍ کېږي. د دې برخې مقصد همدا دے.
+
+\emph{خبردار: دا مواد پېچلي دي}. خو عمومي مطلب ئې ساده دے:
+د نامتناهيت هاخوا استقرا او تعويض په ګډه د نامتناهيت هاخوا بازګښت د
+څو بڼو جواز تضمينوي.\footnote{يوه يادونه: ټول فارمولونه او ترمونه
+پارامترونه لرلے شي، مګر که په ښکاره بل ډول ويل شوي وي.}
+
+\begin{defn}
+	فرض کړئ $\tau(x)$ ترم دے، $f$ تابعه ده، او $\alpha$ ترتيبي عدد دے.
+وايو چې $f$ يو \emph{$\alpha$-تقريب} د $\tau$ دپاره دے، که او يوازې که
+دواړه $\dom{f} = \alpha$ او $(\forall \beta \in \alpha)f(\beta) = \tau(\funrestrictionto{f}{\beta})$ وي.
+\end{defn}
+
+\begin{lem}[محدود بازګښت]\ollabel{transrecursionfun}
+د هر ترم $\tau(x)$ او هر ترتيبي عدد $\alpha$ دپاره، يو يوازينے
+$\alpha$-تقريب د $\tau$ دپاره شته.
+\end{lem}
+\begin{proof}
+و به ښيو چې د هر $\gamma \leq \alpha$ دپاره يو يوازينے
+$\gamma$-تقريب شته.
+
+لومړے يکتايي ثابتوو. فرض کړئ $g$ او $h$ په ترتيب سره $\gamma$- او
+$\delta$-تقريبونه دي. د دواړو تابعو په ورننوتونکو ترتيبي عددونو باندې د نامتناهيت هاخوا استقرا ښيي چې
+$g(\beta) = h(\beta)$ د هر $\beta \in \dom{g} \cap \dom{h} =
+\gamma \cap \delta = \min(\gamma, \delta)$ دپاره دي. نو زموږ تقريبونه،
+که شتون ولري، يوازيني دي او په ټولو ګډو قيمتونو سره سمون لري.
+
+د شتون د ثابتولو دپاره اوس د نامتناهيت هاخوا ساده استقرا
+(\olref[ordinals][opps]{simpletransrecursion}) په هغو ترتيبي عددونو
+کاروو چې $\delta \leq \alpha$ وي.
+
+تشه تابعه په ښکاره $\emptyset$-تقريب ده.
+
+که $g$ يو $\gamma$-تقريب وي، نو $g \cup
+\{\tuple{\gamma, \tau(g)}\}$ يو $\ordsucc{\gamma}$-تقريب دے.
+
+که $\gamma$ حدي ترتيبي عدد وي او $g_\delta$ يو
+$\delta$-تقريب د هر $\delta < \gamma$ دپاره وي، نو $g = \bigcup_{\delta \in \gamma} g_\delta$ واخلو.
+دا تابعه ده، ځکه چې بېل $g_\delta$ ګانې په ټولو ګډو قيمتونو سره سمون
+لري. او که $\delta \in \gamma$ وي، نو $g(\delta) = g_{\ordsucc{\delta}}(\delta) =
+\tau(\funrestrictionto{g_{\ordsucc{\delta}}}{\delta}) =
+\tau(\funrestrictionto{g}{\delta})$ دے.
+
+په دې سره د نامتناهيت هاخوا استقرا ثبوت بشپړېږي.
+\end{proof}
+
+که ځان ته د تابعې پر ځای د يوه \emph{ترم} د تعريفولو اجازه ورکړو، نو
+د پخوانۍ نتيجې نه د $\alpha$ حد لرې کولے شو. د لاندې نتيجې په بيان او
+ثبوت کښې، کله چې $\sigma$ ترم وي، نو
+$\funrestrictionto{\sigma}{\alpha} = \Setabs{\tuple{\beta,
+\sigma(\beta)}}{\beta \in \alpha}$ اخلو.
+
+\begin{thm}[عمومي بازګښت]\ollabel{transrecursionschema}
+د هر ترم $\tau(x)$ دپاره يو ترم
+$\sigma(x)$ په ښکاره تعريفولے شو، داسې چې
+$\sigma(\alpha) = \tau(\funrestrictionto{\sigma}{\alpha})$ د هر
+ترتيبي عدد~$\alpha$ دپاره وي.
+\end{thm}
+
+\begin{proof}
+د هر $\alpha$ دپاره د \olref{transrecursionfun} له مخې يو يوازينے
+$\alpha$-تقريب $f_\alpha$ د~$\tau$ دپاره شته. $\sigma(\alpha)$ د
+$f_{\ordsucc{\alpha}}(\alpha)$ په توګه تعريف کړو. اوس:
+	\begin{align*}
+		\sigma(\alpha) &=
+		f_{\ordsucc{\alpha}}(\alpha) \\&=
+		\tau(\funrestrictionto{f_{\ordsucc{\alpha}}}{\alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\alpha}}(\beta)}}{\beta \in \alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\beta}}(\beta)}}{\beta \in \alpha})\\&=
+		\tau(\funrestrictionto{\sigma}{\alpha})
+	\end{align*}
+په ياد ولرئ چې $f_{\ordsucc{\beta}}(\beta) = f_{\ordsucc{\alpha}}(\beta)$
+د ټولو $\beta < \alpha$ دپاره دي، لکه په \olref{transrecursionfun} کښې.
+\end{proof}
+\noindent
+وګورئ چې \olref{transrecursionschema} يوه \emph{شېما} ده. دا مهمه ده چې
+د $\sigma$ څخه د تابعې د تعريفولو تمه نۀ شو لرلے، يعنې د يوه ټاکلي
+ډول \emph{سټ} د تعريفولو، ځکه چې بيا $\dom{\sigma}$ به د ټولو ترتيبي
+عددونو سټ وي، چې د بورالي--فورتي له تناقض سره په ټکر کښې دے
+(\olref[ordinals][basic]{buraliforti}).
+
+خو لا ښودل پکار دي چې \olref{transrecursionschema}
+زموږ د $V_\alpha$ ګانو تعريف توجيه کوي. ښايي دا سمدستي څرګند نۀ وي؛
+خو د نامتناهيت هاخوا بازګښت په يوه وروستۍ ساده بڼه به څرګند شي.
+
+\begin{thm}[ساده بازګښت]\ollabel{simplerecursionschema}
+د هر دوو ترمونو $\tau(x)$ او $\theta(x)$ او هر سټ $A$ دپاره، يو ترم
+$\sigma(x)$ په ښکاره تعريفولے شو چې:
+\begin{align*}
+	\sigma(\emptyset) &= A\\
+	\sigma(\ordsucc{\alpha}) &= \tau(\sigma(\alpha)) &&
+		\text{د هر ترتيبي عدد دپاره }\alpha\\
+	\sigma(\alpha) &= \theta(\ran{\funrestrictionto{\sigma}{\alpha}})&&
+	\text{کله چې }\alpha\text{ حدي ترتيبي عدد وي}
+\end{align*}
+\end{thm}
+
+\begin{proof}
+لومړے ترم $\xi(x)$ داسې تعريفوو:
+%t $\xi(x) = A$ if $x$ is not a function whose domain is an ordinal;
+%otherwise let:
+\[
+	\xi(x) =
+	\begin{cases}
+			A &\text{که $x$ تابعه نۀ وي، يا ئې د تعريف}\\
+			&\hspace{1em}\text{ساحه ترتيبي عدد نۀ وي يا تشه وي؛ په بل صورت:}\\
+			\tau(x(\alpha)) & \text{که $\dom{x} = \ordsucc{\alpha}$ وي}\\
+			\theta(\ran{x}) & \text{که $\dom{x}$ حدي ترتيبي عدد وي}
+	\end{cases}
+\]
+د \olref{transrecursionschema} له مخې يو ترم $\sigma(x)$ شته چې
+$\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha})$ د هر
+ترتيبي عدد $\alpha$ دپاره وي؛ همدارنګه، $\funrestrictionto{\sigma}{\alpha}$
+د $\alpha$ د تعريف ساحې لرونکې تابعه ده. ښيو چې $\sigma$ مطلوب خاصيتونه
+لري، د نامتناهيت هاخوا ساده استقرا په وسيله
+(\olref[ordinals][opps]{simpletransrecursion}). (د ژباړې يادونه
+(OLSTH-005): د سرچينې په ښودل شوي تعريف کښې د تشې تابعې حالت نشته،
+خو ورپسې ثبوت ئې بنسټيز قيمت کاروي. دلته په لومړي شرط کښې تشه
+تعريف ساحه هم شامله شوې ده، څو هماغه بنسټيز قيمت ټاکل شوے وي.
+نور تالي او حدي حالتونه او د ثبوت ټولې معادلې ساتل شوې دي.)
+
+لومړے، $\sigma(\emptyset) = \xi(\emptyset) = A$ دے.
+
+بيا، $\sigma(\ordsucc{\alpha}) = \xi(\funrestrictionto{\sigma}{\ordsucc{\alpha}}) = \tau(\funrestrictionto{\sigma}{\ordsucc{\alpha}}(\alpha)) = \tau(\sigma(\alpha))$ دے.
+
+په پای کښې، $\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha}) = \theta(\ran{\funrestrictionto{\sigma}{\alpha}})$، کله چې $\alpha$ حدي عدد وي.
+\end{proof}
+\noindent
+اوس، د \olref[valpha]{defValphas} د توجيه کولو دپاره يوازې $A
+= \emptyset$ او $\tau(x) = \Pow{x}$ او $\theta(x) = \bigcup x$ واخلو.
+بالاخره په دې سره د $V_\alpha$ ګانو تعريف توجيه کېږي!{}
+
+\end{document}

@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B162-ORDINAL-IDEAS-WELL-ORDER-COMPARISON",
-  "status": "B162 five source-reviewed drafts registered; cumulative acceptance pending",
+  "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+  "status": "B163 five source-reviewed drafts registered; cumulative acceptance pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -11434,6 +11434,87 @@
       "scope": "B162؛ بشپړ ترتيبي تعريفونه، ټول شرطونه، ثبوتونه، تمرينونه او انځورونه؛ عين رسمي متن ساتل شوے.",
       "allowed_residual_english": [],
       "residual_english_rationale": "Only exact inactive source comments, identifiers and disclosed source-action IDs; no ordinary English prose."
+    },
+    "OLP-0552": {
+      "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P65-ISOMORPHISM"
+      ],
+      "terms": [
+        "TERM-SET-ORDINAL-CANONICAL-REPRESENTATIVE",
+        "TERM-SET-TRANSITIVE-SET",
+        "TERM-SET-ORDINAL-ORDER-TYPE"
+      ],
+      "scope": "B163؛ د فون نويمن بشپړ تعريفونه، ټول استقرايي فرضونه، ثبوتونه، تمرينونه، حاشيې او د تعويض عين يکتايي شرط ساتل شوي.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Exact inactive source comments, stable identifiers and citations only; no ordinary English prose."
+    },
+    "OLP-0553": {
+      "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-SET-TRANSITIVE-SET",
+        "TERM-SET-TRANSFINITE-INDUCTION-TRICHOTOMY",
+        "TERM-SET-WELLORDER-INDUCTION",
+        "TERM-SET-INITIAL-SEGMENT"
+      ],
+      "scope": "B163؛ د فون نويمن بشپړ تعريفونه، ټول استقرايي فرضونه، ثبوتونه، تمرينونه، حاشيې او د تعويض عين يکتايي شرط ساتل شوي.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Exact inactive source comments, stable identifiers and citations only; no ordinary English prose."
+    },
+    "OLP-0554": {
+      "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-BUKOVSKY-P202-REPLACEMENT-SCHEMA"
+      ],
+      "terms": [
+        "TERM-SET-REPLACEMENT-UNIQUE-IMAGE",
+        "TERM-SET-SEPARATION",
+        "TERM-RANGE"
+      ],
+      "scope": "B163؛ د فون نويمن بشپړ تعريفونه، ټول استقرايي فرضونه، ثبوتونه، تمرينونه، حاشيې او د تعويض عين يکتايي شرط ساتل شوي.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Exact inactive source comments, stable identifiers and citations only; no ordinary English prose."
+    },
+    "OLP-0555": {
+      "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-BUKOVSKY-P202-REPLACEMENT-SCHEMA"
+      ],
+      "terms": [
+        "TERM-SET-REPLACEMENT-UNIQUE-IMAGE",
+        "TERM-SET-SEPARATION"
+      ],
+      "scope": "B163؛ د فون نويمن بشپړ تعريفونه، ټول استقرايي فرضونه، ثبوتونه، تمرينونه، حاشيې او د تعويض عين يکتايي شرط ساتل شوي.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Exact inactive source comments, stable identifiers and citations only; no ordinary English prose."
+    },
+    "OLP-0556": {
+      "batch_id": "PS-B163-VON-NEUMANN-REPLACEMENT-ORDER-TYPES",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P65-ISOMORPHISM",
+        "AF-BUKOVSKY-P202-REPLACEMENT-SCHEMA"
+      ],
+      "terms": [
+        "TERM-SET-ORDINAL-CANONICAL-REPRESENTATIVE",
+        "TERM-SET-TRANSITIVE-SET",
+        "TERM-SET-REPLACEMENT-UNIQUE-IMAGE",
+        "TERM-ISOMORPHISM",
+        "TERM-SET-INITIAL-SEGMENT"
+      ],
+      "scope": "B163؛ د فون نويمن بشپړ تعريفونه، ټول استقرايي فرضونه، ثبوتونه، تمرينونه، حاشيې او د تعويض عين يکتايي شرط ساتل شوي.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Exact inactive source comments, stable identifiers and citations only; no ordinary English prose."
     }
   },
   "semantic_review": [
@@ -21210,6 +21291,300 @@
       "passage": "contradiction",
       "reverse_paraphrase": "If both segments were proper, their least missing endpoints would be a pair in f, contradiction; equality cases remain allowed.",
       "finding": "د بشپړ سرچينه‌يي او پښتو سياق پرتله تېره؛ د ترتيب ډول، د هر فرعي سټ شرط، دوه‌اړخيز نگاشت او د پيلنۍ برخې حد ساتل شوے."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "order-type",
+      "reverse_paraphrase": "Order types are proposed as representatives of well-orders, with equality exactly for isomorphism and strict comparison exactly for a proper initial segment.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "set-definition",
+      "reverse_paraphrase": "A transitive set contains every element of each of its elements; this is not the definition of a transitive relation.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "ordinal-definition",
+      "reverse_paraphrase": "An ordinal is a transitive set well-ordered by membership.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "restricted-membership",
+      "reverse_paraphrase": "The restricted membership relation is the exact pair graph on alpha squared; saying alpha itself is a well-order abuses notation only.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "first-four",
+      "reverse_paraphrase": "All four displayed finite ordinals and their exact nested braces are retained.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "natural-transfinite",
+      "reverse_paraphrase": "The Infinity ordinal construction makes naturals ordinals but also permits transfinite ordinals; it is not merely cardinality.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0552",
+      "passage": "philosophical-convention",
+      "reverse_paraphrase": "The complete question of literal ordinals versus representational sets and all four source cross-references remain; later prose adopts the von Neumann convention.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "member-ordinal",
+      "reverse_paraphrase": "A member b is a subset of alpha by set transitivity, inherits the membership well-order, and is itself transitive via the relation-transitivity argument.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "two-transitivities",
+      "reverse_paraphrase": "The full x in c in b proof separately uses alpha as a transitive set and membership as a transitive relation on alpha.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "minimal-witness",
+      "reverse_paraphrase": "If phi holds of some ordinal, an ordinal witness exists with no member satisfying phi; all displayed quantifiers are ordinal-restricted.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "witness-proof",
+      "reverse_paraphrase": "If alpha itself is not minimal, choose the membership-least phi member of alpha; the member-ordinal lemma supplies its ordinal status.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "induction-form",
+      "reverse_paraphrase": "Negating phi and elementary logic yield the scheme that truth on all predecessors implies truth at every ordinal.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "double-induction",
+      "reverse_paraphrase": "The first hypothesis compares each alpha-member with every ordinal; the second compares alpha with each beta-member.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "trichotomy-reduction",
+      "reverse_paraphrase": "Assuming neither ordinal belongs to the other, the proof derives alpha subset beta and beta subset alpha.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "first-subset",
+      "reverse_paraphrase": "For gamma in alpha, equality with beta or beta in gamma would force beta in alpha, contradiction; therefore gamma in beta.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "second-subset-exercise",
+      "reverse_paraphrase": "The symmetric second-hypothesis argument remains stated, with the explicit exercise to supply its omitted details.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "notation-footnote",
+      "reverse_paraphrase": "The less-than shorthand, less-or-equal motivation and complete nonstandard underlined-membership footnote remain.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "least-property",
+      "reverse_paraphrase": "A phi ordinal is least under less-or-equal among all phi ordinals; irreflexivity and relation transitivity remain exact.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "characterization",
+      "reverse_paraphrase": "A is an ordinal exactly when it is a transitive set of ordinals, using induction and trichotomy for the reverse direction.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "Burali-Forti",
+      "reverse_paraphrase": "An all-ordinal set O would be transitive and an ordinal, hence O in O, contradicting irreflexivity.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "historical-credit",
+      "reverse_paraphrase": "The full1899 Cantor letter to Dedekind account, Burali-Forti attribution and Heijenoort page105 quotation are retained.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "class-warning",
+      "reverse_paraphrase": "Ordinals are collectively ordered without collectively constituting a set; the warning is retained.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "descending",
+      "reverse_paraphrase": "Every strictly descending ordinal sequence is finite because an infinite sequence would lack a minimal member.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "subset-comparison",
+      "reverse_paraphrase": "Membership implies subset by transitivity, and trichotomy gives the full subset comparison.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "isomorphic-equality",
+      "reverse_paraphrase": "Ordinal equality exactly matches isomorphism, using trichotomy and non-isomorphism to a proper initial segment.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0553",
+      "passage": "union-exercise",
+      "reverse_paraphrase": "The complete exercise asks that a union of a set of ordinals is an ordinal.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "motivation",
+      "reverse_paraphrase": "Every well-order needs an ordinal representative; this desired existence is not yet proved from the earlier axioms.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "unique-y",
+      "reverse_paraphrase": "For each x in A there must be exactly one y satisfying phi; Replacement provides the set of all such y.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "scheme",
+      "reverse_paraphrase": "Infinitely many formula instances remain explicit, and the alternative displayed scheme excludes B from phi.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "term-totality",
+      "reverse_paraphrase": "The whole footnote defines a term as uniquely denoting on every assignment, with empty-set, singleton and union examples.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "term-image",
+      "reverse_paraphrase": "The exact term-image set equality and full unique-denotation proof remain.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "function-distinction",
+      "reverse_paraphrase": "A term need not name a set of ordered pairs; an existing function image is already a subset of its range.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "Zminus-image",
+      "reverse_paraphrase": "The old-axiom image argument and full double-union footnote remain; Replacement adds strength.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0554",
+      "passage": "regional-variant",
+      "reverse_paraphrase": "The actually read Pashto page supports the Replacement name but presents set-valued fibres, not the source unique-y formula; no equivalence is imported.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0555",
+      "passage": "justification",
+      "reverse_paraphrase": "Replacement justification is deferred to the exact source chapter, without suspending the newly stated axiom system.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0555",
+      "passage": "exact-list",
+      "reverse_paraphrase": "ZFminus has Extensionality, Union, Pairs, Powersets, Infinity and all Separation and Replacement instances.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0555",
+      "passage": "minus",
+      "reverse_paraphrase": "ZFminus adds Replacement to Zminus; the missing ingredient is deferred rather than Regularity or Choice being silently added.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0555",
+      "passage": "attribution",
+      "reverse_paraphrase": "Fraenkel1922 credit and Skolem1922 first precise formulation are both retained.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "unique-representative",
+      "reverse_paraphrase": "Working in ZFminus, every well-order is isomorphic to exactly one ordinal.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "least-counterexample",
+      "reverse_paraphrase": "If a proper initial segment fails ordinal representation, choose its least endpoint; otherwise take the whole initial counterexample.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "proper-segments",
+      "reverse_paraphrase": "Every proper initial segment of B has a unique ordinal representative by the selected minimality and prior uniqueness.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "Replacement-graph",
+      "reverse_paraphrase": "Replacement builds the exact graph of ordered pairs beta,b where beta represents the initial segment B_b; the pair orientation is retained.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "isomorphism-goal",
+      "reverse_paraphrase": "The full proof shows f maps some ordinal alpha isomorphically onto B, contradicting its chosen failure.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "range-order",
+      "reverse_paraphrase": "Range is B, and membership gamma in beta is equivalent to f(gamma) lessdot f(beta).",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "transitive-domain",
+      "reverse_paraphrase": "Each member beta of the domain represents B_b; each gamma in beta also lies in the domain by the initial-segment lemma.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "definition",
+      "reverse_paraphrase": "Order type is the unique ordinal isomorphic to the given well-order.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "equality-law",
+      "reverse_paraphrase": "Order-type equality holds exactly when the two well-orders are isomorphic.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "strict-law",
+      "reverse_paraphrase": "Membership between order types holds exactly when the first order matches a proper initial segment of the second.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
+    },
+    {
+      "unit_id": "OLP-0556",
+      "passage": "restriction-chain",
+      "reverse_paraphrase": "The full three-line restriction-isomorphism chain and all three cited lemmas remain, including the existential endpoint b.",
+      "finding": "د سرچينې او بشپړ پښتو سياق پرتله تېره؛ د سټ/اړيکې تعديت، د استقرا ټولو مخکينيو غړو شرط، يوازيني y، د ترم/تابعې توپير او د ترتيب د ډول استازيتوب ساتل شوي."
     }
   ]
 }

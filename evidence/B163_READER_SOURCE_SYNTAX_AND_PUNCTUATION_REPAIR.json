@@ -1,0 +1,32 @@
+{
+  "schema": "ps-b163-reader-recovery/1",
+  "utc": "2026-09-29T04:46:12.584857+00:00",
+  "status": "exact generator recoveries applied; corrected556 input assembled; TeX and rendering pending",
+  "builder_before_sha256": "272274501115c4555765ce66fdf7329ea8b40b1c7c1485b6ca080f2e8b87ce2c",
+  "builder_after_sha256": "04bf7bbf929c82c8973caea87e6d784be20fe2f8d5b7541a81f24602a32cd1c8",
+  "reader_units": 556,
+  "reader_tex_sha256": "157786805735f65b778ed17fdaf23ef223f27dfe8e633dae424d561403cb6a3b",
+  "reader_tex_bytes": 3331508,
+  "build_inputs_sha256": "55ce74d2469d4ba33f251625b33293770e5801e745c73954c5d093ef5fc4118a",
+  "unchanged_witness_sha256": {
+    "upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882",
+    "upstream/content/normal-modal-logic/frame-definability/second-order-definability.tex": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+    "ps-Arab-PK/content/propositional-logic/syntax-and-semantics/valuations-sat.tex": "b4ceef87314958c9db427a582bb8f16b4fb1c7e88be2f77b2b7102a7d070ca04",
+    "ps-Arab-PK/content/normal-modal-logic/frame-definability/second-order-definability.tex": "a6cb0a5e03d1b8053e8fee8acfe00b1007e888bdbf57e55ec19eb6bbf167210b"
+  },
+  "recoveries": [
+    "OLP-0061: identical full stop moved into its existing Pashto text argument",
+    "OLP-0426: close math before macro braces; all symbolic formula tokens retained"
+  ],
+  "static_checks": {
+    "builder_syntax": true,
+    "unique_exact_sites": true,
+    "frozen_iff_typo_confirmed": true,
+    "generated_iff_closing_recovered": true,
+    "generated_punctuation_inside_rtl_text": true,
+    "source_and_target_bytes_unchanged": true
+  },
+  "tex_launched": false,
+  "rendered_or_public_reader_accepted": false,
+  "next_action": "Continue B164 registration and OLP-0562. Make one guarded attempt for accumulated validated scope at a later natural checkpoint; no TeX polling."
+}

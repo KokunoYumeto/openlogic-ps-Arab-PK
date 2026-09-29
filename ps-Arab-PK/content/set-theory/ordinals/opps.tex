@@ -1,0 +1,99 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{opps}
+\olsection{تالي او حدي ترتيبي عددونه}
+
+په ورپسې څو څپرکو کښې به ترتيبي عددونه ډېر کاروو. نو ځينې ساده
+مفهومونه معرفي کول به ګټور وي.
+
+\begin{defn}
+د هر ترتيبي عدد $\alpha$ \emph{تالي} $\ordsucc{\alpha}
+=\alpha \cup \{\alpha\}$ دے. وايو چې $\alpha$ \emph{تالي} ترتيبي عدد دے،
+که $\ordsucc{\beta} = \alpha$ د کوم ترتيبي عدد~$\beta$ دپاره وي.
+وايو چې $\alpha$ \emph{حدي} ترتيبي عدد دے، که او يوازې که $\alpha$
+نۀ تش وي او نۀ تالي ترتيبي عدد وي.
+\end{defn}
+\noindent
+لاندې نتيجه ښيي چې دا د \emph{تالي} مناسب مفهوم دے:
+
+\begin{prop}
+د هر ترتيبي عدد $\alpha$ دپاره:
+\begin{enumerate}
+	\item $\alpha \in \ordsucc{\alpha}$؛
+	\item $\ordsucc{\alpha}$ ترتيبي عدد دے؛
+	\item داسې ترتيبي عدد $\beta$ نشته چې $\alpha \in \beta \in
+	\ordsucc{\alpha}$ وي.
+	\end{enumerate}
+\end{prop}
+
+\begin{proof}
+ښکاره ده چې $\alpha \in \alpha \cup \{\alpha\} = \ordsucc{\alpha}$ دے.
+همدارنګه، $\ordsucc{\alpha}$ د ترتيبي عددونو متعدي سټ دے، نو د
+\olref[basic]{corordtransitiveord} له مخې ترتيبي عدد دے.
+او $\alpha \in \beta \in \ordsucc{\alpha}$ ناشوني دي، ځکه چې بيا به يا
+$\beta \in \alpha$ يا $\beta = \alpha$ وي، چې له
+\olref[basic]{ordordered} سره په تناقض کښې دي.
+\end{proof}
+\noindent
+دا د نامتناهيت هاخوا استقرا د ثبوت يوې بلې بڼې ته هم جواز ورکوي:
+
+\begin{thm}[د نامتناهيت هاخوا ساده استقرا]\ollabel{simpletransrecursion}
+فرض کړئ $\phi(x)$ داسې فارمول دے چې:
+\begin{enumerate}
+	\item $\phi(\emptyset)$؛ او
+	\item د هر ترتيبي عدد $\alpha$ دپاره، که $\phi(\alpha)$ وي، نو
+	$\phi(\ordsucc{\alpha})$ وي؛ او
+	\item که $\alpha$ حدي ترتيبي عدد وي او $(\forall \beta \in
+	\alpha)\phi(\beta)$ وي، نو $\phi(\alpha)$ وي.
+\end{enumerate}
+بيا $\forall \alpha \phi(\alpha)$ دے.
+\end{thm}
+
+\begin{proof}
+نقيض عکس ثابتوو. نو فرض کړئ کوم ترتيبي عدد $\lnot\phi$ لري؛
+$\gamma$ تر ټولو کوچنے داسې ترتيبي عدد وټاکئ. بيا يا
+$\gamma = \emptyset$ دے، يا $\gamma = \ordsucc{\alpha}$ د کوم $\alpha$
+دپاره دے چې $\phi(\alpha)$ لري؛ يا $\gamma$ حدي ترتيبي عدد دے او
+$(\forall
+\beta \in \gamma)\phi(\beta)$ دي.
+\end{proof}
+\noindent
+يوه وروستۍ نښه به وروسته ګټوره ثابته شي:
+
+\begin{defn}\ollabel{defsupstrict}
+که $X$ د ترتيبي عددونو سټ وي، نو $\supstrict(X) = \bigcup_{\alpha
+\in X} \ordsucc{\alpha}$ دے.
+\end{defn}
+\noindent
+دلته «lsub» د «تر ټولو لږ په کلکه پاسني حد» نښه ده.\footnote{ځينې کتابونه
+دې ته «$\text{sup}(X)$» کاروي. خو نور کتابونه «$\text{sup}(X)$» د تر ټولو
+لږ \emph{غير اکيد} پاسني حد دپاره کاروي، يعنې يوازې د $\bigcup X$ دپاره.
+که $X$ تر ټولو لوے غړے $\alpha$ ولري، نو دا دوه مفهومونه بېلېږي:
+تر ټولو لږ \emph{اکيد} پاسنے حد $\ordsucc{\alpha}$ دے، خو تر ټولو لږ
+\emph{غير اکيد} پاسنے حد يوازې $\alpha$ دے.} لاندې نتيجه دا څرګندوي:
+
+\begin{prop}
+که $X$ د ترتيبي عددونو سټ وي، نو $\supstrict(X)$ هغه تر ټولو کوچنے
+ترتيبي عدد دے چې د $X$ له هر ترتيبي عدد څخه لوے وي.
+\end{prop}
+
+\begin{proof}
+$Y = \Setabs{\ordsucc{\alpha}}{\alpha \in X}$ واخلو، نو
+$\supstrict(X) = \bigcup Y$ دے. ځکه چې ترتيبي عددونه متعدي دي او د هر
+ترتيبي عدد هر غړے ترتيبي عدد دے، $\supstrict(X)$ د ترتيبي عددونو متعدي
+سټ دے، نو د \olref[basic]{corordtransitiveord} له مخې ترتيبي عدد دے.
+
+که $\alpha \in X$ وي، نو $\ordsucc{\alpha} \in Y$ دے، نو $\ordsucc{\alpha}
+\subseteq \bigcup Y = \supstrict(X)$ دے، او له دې $\alpha \in
+\supstrict(X)$ دے. نو $\supstrict(X)$ د $X$ له هر ترتيبي عدد څخه په کلکه
+لوے دے.
+
+په معکوسه توګه، که $\alpha \in \supstrict(X)$ وي، نو $\alpha \in
+\ordsucc{\beta} \in Y$ د کوم $\beta \in X$ دپاره دي، نو $\alpha \leq
+\beta \in X$ دي. په دې توګه $\supstrict(X)$ د $X$ تر ټولو \emph{لږ}
+اکيد پاسنے حد دے.
+\end{proof}
+
+\end{document}

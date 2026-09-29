@@ -1,0 +1,51 @@
+{
+  "schema": "ps-b164-recursion-base-case-check/1",
+  "status": "PASS; source-local branch partition",
+  "utc": "2026-09-29T04:26:03.458174+00:00",
+  "source_unit": "OLP-0560",
+  "source_condition": "A only if not a function with ordinal domain; otherwise successor/limit cases",
+  "source_failure": "The empty function has ordinal domain empty, which is neither successor nor limit by0557; no source branch applies.",
+  "target_repair": "Include empty domain in the A branch, with adjacent OLSTH-005 disclosure.",
+  "cases": [
+    {
+      "function": false,
+      "ordinal_domain": null,
+      "empty_domain": null,
+      "source_branch": "A",
+      "repaired_branch": "A"
+    },
+    {
+      "function": true,
+      "ordinal_domain": false,
+      "empty_domain": false,
+      "source_branch": "A",
+      "repaired_branch": "A"
+    },
+    {
+      "function": true,
+      "ordinal_domain": true,
+      "empty_domain": true,
+      "source_branch": null,
+      "repaired_branch": "A"
+    },
+    {
+      "function": true,
+      "ordinal_domain": true,
+      "empty_domain": false,
+      "successor_domain": true,
+      "source_branch": "tau",
+      "repaired_branch": "tau"
+    },
+    {
+      "function": true,
+      "ordinal_domain": true,
+      "empty_domain": false,
+      "limit_domain": true,
+      "source_branch": "theta",
+      "repaired_branch": "theta"
+    }
+  ],
+  "exhaustiveness_basis": "Source0557 defines limit ordinals as neither empty nor successor; thus empty/successor/limit exhaust ordinal domains. Non-function and non-ordinal-domain inputs take the original A branch.",
+  "limits": "A symbolic condition partition and source-local counterexample, not finite evidence for the full recursion theorem or a new global theorem.",
+  "all_other_branches_and_proof_equations_unchanged": true
+}
