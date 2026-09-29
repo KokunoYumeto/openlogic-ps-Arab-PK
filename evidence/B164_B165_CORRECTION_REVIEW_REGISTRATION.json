@@ -1,0 +1,24 @@
+{
+  "schema": "ps-b164-b165-correction-review-registration/1",
+  "utc": "2026-09-29T17:22:40.962719+00:00",
+  "status": "registered before 564-unit acceptance",
+  "correction_ids": [
+    "OLSTH-005",
+    "OLSTH-006",
+    "OLSTH-007"
+  ],
+  "review_ids": [
+    "DEC-OLSTH-005",
+    "DEC-OLSTH-006",
+    "DEC-OLSTH-007"
+  ],
+  "review_entries": 709,
+  "review_log_sha256": "c772f1ad841aa3299af6c19c1d217095caf57e9c748acfdedbe13bbbec13276f",
+  "frozen_source_unchanged": true,
+  "target_hashes": {
+    "OLSTH-005": "033b44f5799d5fc664c631b0390ff5ae16c5f6f037720c66d46a84f303cefacd",
+    "OLSTH-006": "d9b3104bbdffaa77a49b4c0bcd6f95fc4e2e4681551b2e8a6b56eb15725f61fc",
+    "OLSTH-007": "1b35f714df68555f086cff615ec2dab79f82329c49ea238f7bf44172e33732f6"
+  },
+  "next_action": "Rerun both corpus QA generators and dual canonical replay with all709 decisions before accepting564 units."
+}

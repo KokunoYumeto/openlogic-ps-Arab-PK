@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 556 of 722 source units are translated drafts. This log contains 266 terminology entries and 432 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 564 of 722 source units are translated drafts. This log contains 274 terminology entries and 435 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4905,3 +4905,5 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Alternatives: insert -3 silently; delete the f(7) heading
 - Review question: Should the eventual body show the corrected -3 entry with an adjacent stable source note?
 - Timing: retrospective backfill from existing reader notes, semantic reviews and source findings; not a claim of original contemporaneous motive
+
+The Pakistani-Pashto review guide includes the eight new B164–B165 term choices and exact OLSTH-005–007 source-correction questions, with source/target line locators and inspected-witness limits.

@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 698 decisions and 27579 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 709 decisions and 27829 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -42223,7 +42223,7 @@ This index contains 698 decisions and 27579 exact paired source/target occurrenc
 - Alternatives:
   - د سټ تعديت په درې‌ځايه اړيکه تعريفول؛ عين فرعي سټ شرط باسي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د اړيکې تعديت په غړي-فرعي سټ شرط بدلول؛ د استدلال ډول بدلوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 49
+- Exact paired occurrences: 78
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
@@ -42276,6 +42276,35 @@ This index contains 698 decisions and 27579 exact paired source/target occurrenc
 | `ps-Arab-PK-OCC-027522` | `OLP-0556` / `OLP-0556-B011` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:54-54` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:57-57` | pending; no page guessed |
 | `ps-Arab-PK-OCC-027523` | `OLP-0556` / `OLP-0556-B012` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:56-62` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:59-65` | pending; no page guessed |
 | `ps-Arab-PK-OCC-027524` | `OLP-0556` / `OLP-0556-B013` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:64-77` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027525` | `OLP-0561` / `OLP-0561-B003` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027526` | `OLP-0561` / `OLP-0561-B004` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:8-22` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:8-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027527` | `OLP-0561` / `OLP-0561-B005` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:24-27` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:26-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027528` | `OLP-0561` / `OLP-0561-B006` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:29-29` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:31-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027529` | `OLP-0561` / `OLP-0561-B007` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:31-39` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:33-43` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027530` | `OLP-0561` / `OLP-0561-B008` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:41-48` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:45-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027531` | `OLP-0561` / `OLP-0561-B009` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:50-52` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:53-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027532` | `OLP-0561` / `OLP-0561-B010` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:54-55` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:57-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027533` | `OLP-0561` / `OLP-0561-B011` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:57-61` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:60-64` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027534` | `OLP-0561` / `OLP-0561-B012` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:63-69` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:66-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027535` | `OLP-0561` / `OLP-0561-B013` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:71-73` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:75-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027536` | `OLP-0561` / `OLP-0561-B014` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:75-80` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:79-89` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027537` | `OLP-0561` / `OLP-0561-B015` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:82-89` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:91-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027538` | `OLP-0561` / `OLP-0561-B016` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:91-93` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:100-102` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027539` | `OLP-0562` / `OLP-0562-B004` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:7-7` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027540` | `OLP-0562` / `OLP-0562-B005` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:9-11` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:9-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027541` | `OLP-0562` / `OLP-0562-B006` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:13-20` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:13-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027542` | `OLP-0562` / `OLP-0562-B007` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:22-23` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:21-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027543` | `OLP-0562` / `OLP-0562-B008` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:25-27` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:24-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027544` | `OLP-0562` / `OLP-0562-B009` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:28-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027545` | `OLP-0562` / `OLP-0562-B010` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:31-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027546` | `OLP-0562` / `OLP-0562-B011` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:37-51` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:35-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027547` | `OLP-0562` / `OLP-0562-B012` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:53-57` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:52-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027548` | `OLP-0562` / `OLP-0562-B013` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:59-62` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:58-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027549` | `OLP-0562` / `OLP-0562-B014` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:64-74` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:63-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027550` | `OLP-0562` / `OLP-0562-B015` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:76-86` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:77-89` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027551` | `OLP-0562` / `OLP-0562-B016` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:88-90` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:91-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027552` | `OLP-0562` / `OLP-0562-B017` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:92-94` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:95-99` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027553` | `OLP-0562` / `OLP-0562-B018` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:96-103` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:101-108` | pending; no page guessed |
 
 ## TERM-SET-TRANSFINITE-INDUCTION-TRICHOTOMY
 
@@ -42294,42 +42323,54 @@ This index contains 698 decisions and 27579 exact paired source/target occurrenc
 - Alternatives:
   - عادي يوازې-تالي استقرا؛ د ټولو مخکينيو ترتيبي عددونو شرط محدودوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - د ټولو ترتيبي عددونو يو ښه مرتب سټ؛ د بورالي--فورتي عين منع شوې نتيجه فرض کوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 32
+- Exact paired occurrences: 44
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-027525` | `OLP-0553` / `OLP-0553-B003` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:5-6` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027526` | `OLP-0553` / `OLP-0553-B004` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:8-11` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:8-11` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027527` | `OLP-0553` / `OLP-0553-B005` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:13-15` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:13-15` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027528` | `OLP-0553` / `OLP-0553-B006` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:17-20` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:17-20` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027529` | `OLP-0553` / `OLP-0553-B007` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:22-28` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:22-30` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027530` | `OLP-0553` / `OLP-0553-B008` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:30-33` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:32-35` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027531` | `OLP-0553` / `OLP-0553-B009` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:35-37` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:37-39` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027532` | `OLP-0553` / `OLP-0553-B010` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:39-41` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:41-43` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027533` | `OLP-0553` / `OLP-0553-B011` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:43-50` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:45-52` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027534` | `OLP-0553` / `OLP-0553-B012` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:52-72` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:54-76` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027535` | `OLP-0553` / `OLP-0553-B013` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:74-77` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:78-81` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027536` | `OLP-0553` / `OLP-0553-B014` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:79-82` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:83-86` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027537` | `OLP-0553` / `OLP-0553-B015` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:84-91` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:88-96` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027538` | `OLP-0553` / `OLP-0553-B016` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:93-99` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:98-105` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027539` | `OLP-0553` / `OLP-0553-B017` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:101-109` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:107-114` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027540` | `OLP-0553` / `OLP-0553-B018` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:111-112` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:116-116` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027541` | `OLP-0553` / `OLP-0553-B019` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:114-120` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:118-125` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027542` | `OLP-0553` / `OLP-0553-B020` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:122-124` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:127-129` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027543` | `OLP-0553` / `OLP-0553-B021` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:126-129` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:131-134` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027544` | `OLP-0553` / `OLP-0553-B022` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:131-133` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:136-138` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027545` | `OLP-0553` / `OLP-0553-B023` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:135-139` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:140-145` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027546` | `OLP-0553` / `OLP-0553-B024` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:141-144` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:147-150` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027547` | `OLP-0553` / `OLP-0553-B025` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:146-148` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:152-154` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027548` | `OLP-0553` / `OLP-0553-B026` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:150-169` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:156-177` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027549` | `OLP-0553` / `OLP-0553-B027` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:171-173` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:179-181` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027550` | `OLP-0553` / `OLP-0553-B028` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:175-177` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:183-185` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027551` | `OLP-0553` / `OLP-0553-B029` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:179-182` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:187-191` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027552` | `OLP-0553` / `OLP-0553-B030` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:184-187` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:193-196` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027553` | `OLP-0553` / `OLP-0553-B031` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:189-194` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:198-203` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027554` | `OLP-0553` / `OLP-0553-B032` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:196-199` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:205-208` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027555` | `OLP-0553` / `OLP-0553-B033` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:201-205` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:210-214` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027556` | `OLP-0553` / `OLP-0553-B034` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:207-209` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:216-218` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027554` | `OLP-0553` / `OLP-0553-B003` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027555` | `OLP-0553` / `OLP-0553-B004` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:8-11` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:8-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027556` | `OLP-0553` / `OLP-0553-B005` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:13-15` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:13-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027557` | `OLP-0553` / `OLP-0553-B006` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:17-20` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:17-20` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027558` | `OLP-0553` / `OLP-0553-B007` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:22-28` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:22-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027559` | `OLP-0553` / `OLP-0553-B008` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:30-33` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:32-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027560` | `OLP-0553` / `OLP-0553-B009` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:35-37` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:37-39` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027561` | `OLP-0553` / `OLP-0553-B010` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:39-41` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:41-43` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027562` | `OLP-0553` / `OLP-0553-B011` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:43-50` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:45-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027563` | `OLP-0553` / `OLP-0553-B012` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:52-72` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:54-76` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027564` | `OLP-0553` / `OLP-0553-B013` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:74-77` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:78-81` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027565` | `OLP-0553` / `OLP-0553-B014` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:79-82` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:83-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027566` | `OLP-0553` / `OLP-0553-B015` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:84-91` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:88-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027567` | `OLP-0553` / `OLP-0553-B016` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:93-99` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:98-105` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027568` | `OLP-0553` / `OLP-0553-B017` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:101-109` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:107-114` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027569` | `OLP-0553` / `OLP-0553-B018` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:111-112` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:116-116` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027570` | `OLP-0553` / `OLP-0553-B019` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:114-120` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:118-125` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027571` | `OLP-0553` / `OLP-0553-B020` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:122-124` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:127-129` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027572` | `OLP-0553` / `OLP-0553-B021` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:126-129` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:131-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027573` | `OLP-0553` / `OLP-0553-B022` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:131-133` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:136-138` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027574` | `OLP-0553` / `OLP-0553-B023` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:135-139` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:140-145` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027575` | `OLP-0553` / `OLP-0553-B024` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:141-144` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:147-150` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027576` | `OLP-0553` / `OLP-0553-B025` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:146-148` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:152-154` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027577` | `OLP-0553` / `OLP-0553-B026` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:150-169` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:156-177` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027578` | `OLP-0553` / `OLP-0553-B027` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:171-173` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:179-181` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027579` | `OLP-0553` / `OLP-0553-B028` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:175-177` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:183-185` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027580` | `OLP-0553` / `OLP-0553-B029` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:179-182` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:187-191` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027581` | `OLP-0553` / `OLP-0553-B030` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:184-187` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:193-196` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027582` | `OLP-0553` / `OLP-0553-B031` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:189-194` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:198-203` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027583` | `OLP-0553` / `OLP-0553-B032` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:196-199` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:205-208` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027584` | `OLP-0553` / `OLP-0553-B033` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:201-205` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:210-214` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027585` | `OLP-0553` / `OLP-0553-B034` | د ترتيبي عددونو بنسټيز خاصيتونه | `upstream/content/set-theory/ordinals/basic.tex:207-209` | `ps-Arab-PK/content/set-theory/ordinals/basic.tex:216-218` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027586` | `OLP-0557` / `OLP-0557-B003` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027587` | `OLP-0557` / `OLP-0557-B004` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:8-9` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:8-9` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027588` | `OLP-0557` / `OLP-0557-B005` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:11-20` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:11-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027589` | `OLP-0557` / `OLP-0557-B006` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:22-30` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:21-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027590` | `OLP-0557` / `OLP-0557-B007` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:32-41` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:31-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027591` | `OLP-0557` / `OLP-0557-B008` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:43-53` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:42-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027592` | `OLP-0557` / `OLP-0557-B009` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:55-63` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:54-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027593` | `OLP-0557` / `OLP-0557-B010` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:65-76` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:65-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027594` | `OLP-0557` / `OLP-0557-B011` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:78-81` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:77-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027595` | `OLP-0557` / `OLP-0557-B012` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:83-88` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:82-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027596` | `OLP-0557` / `OLP-0557-B013` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:90-93` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:88-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027597` | `OLP-0557` / `OLP-0557-B014` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:95-99` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:93-97` | pending; no page guessed |
 
 ## TERM-SET-REPLACEMENT-UNIQUE-IMAGE
 
@@ -42348,30 +42389,473 @@ This index contains 698 decisions and 27579 exact paired source/target occurrenc
 - Alternatives:
   - د شاهد د سټ-فايبر فارمول واردول؛ د سرچينې عين يوازيني y شېما بدلوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
   - ترم او موجوده سټ-تابعه يو ګڼل؛ د تعويض زيات قوت پټوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
-- Exact paired occurrences: 23
+- Exact paired occurrences: 51
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-027557` | `OLP-0554` / `OLP-0554-B003` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:5-6` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027558` | `OLP-0554` / `OLP-0554-B004` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:8-13` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:8-13` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027559` | `OLP-0554` / `OLP-0554-B005` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:15-18` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:15-18` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027560` | `OLP-0554` / `OLP-0554-B006` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:20-30` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:20-30` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027561` | `OLP-0554` / `OLP-0554-B007` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:32-37` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:32-37` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027562` | `OLP-0554` / `OLP-0554-B008` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:39-41` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:39-44` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027563` | `OLP-0554` / `OLP-0554-B009` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:43-48` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:46-51` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027564` | `OLP-0554` / `OLP-0554-B010` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:50-60` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:53-63` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027565` | `OLP-0554` / `OLP-0554-B011` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:62-70` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:65-73` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027566` | `OLP-0555` / `OLP-0555-B002` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:3-5` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:3-5` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027567` | `OLP-0555` / `OLP-0555-B003` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:7-11` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:7-10` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027568` | `OLP-0555` / `OLP-0555-B004` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:13-24` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:12-21` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027569` | `OLP-0556` / `OLP-0556-B003` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:5-6` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027570` | `OLP-0556` / `OLP-0556-B004` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:8-8` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:8-9` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027571` | `OLP-0556` / `OLP-0556-B005` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:10-12` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:11-13` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027572` | `OLP-0556` / `OLP-0556-B006` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:14-23` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:15-24` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027573` | `OLP-0556` / `OLP-0556-B007` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:25-32` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:26-33` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027574` | `OLP-0556` / `OLP-0556-B008` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:34-43` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:35-46` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027575` | `OLP-0556` / `OLP-0556-B009` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:45-46` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:48-49` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027576` | `OLP-0556` / `OLP-0556-B010` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:48-52` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:51-55` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027577` | `OLP-0556` / `OLP-0556-B011` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:54-54` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:57-57` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027578` | `OLP-0556` / `OLP-0556-B012` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:56-62` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:59-65` | pending; no page guessed |
-| `ps-Arab-PK-OCC-027579` | `OLP-0556` / `OLP-0556-B013` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:64-77` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027598` | `OLP-0554` / `OLP-0554-B003` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027599` | `OLP-0554` / `OLP-0554-B004` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:8-13` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:8-13` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027600` | `OLP-0554` / `OLP-0554-B005` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:15-18` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:15-18` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027601` | `OLP-0554` / `OLP-0554-B006` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:20-30` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:20-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027602` | `OLP-0554` / `OLP-0554-B007` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:32-37` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:32-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027603` | `OLP-0554` / `OLP-0554-B008` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:39-41` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:39-44` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027604` | `OLP-0554` / `OLP-0554-B009` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:43-48` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:46-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027605` | `OLP-0554` / `OLP-0554-B010` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:50-60` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:53-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027606` | `OLP-0554` / `OLP-0554-B011` | تعويض | `upstream/content/set-theory/ordinals/replacement.tex:62-70` | `ps-Arab-PK/content/set-theory/ordinals/replacement.tex:65-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027607` | `OLP-0555` / `OLP-0555-B002` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:3-5` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:3-5` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027608` | `OLP-0555` / `OLP-0555-B003` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:7-11` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:7-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027609` | `OLP-0555` / `OLP-0555-B004` | $\ZFminus$: يو مهم پړاو | `upstream/content/set-theory/ordinals/milestone.tex:13-24` | `ps-Arab-PK/content/set-theory/ordinals/milestone.tex:12-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027610` | `OLP-0556` / `OLP-0556-B003` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027611` | `OLP-0556` / `OLP-0556-B004` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:8-8` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:8-9` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027612` | `OLP-0556` / `OLP-0556-B005` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:10-12` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:11-13` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027613` | `OLP-0556` / `OLP-0556-B006` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:14-23` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:15-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027614` | `OLP-0556` / `OLP-0556-B007` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:25-32` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:26-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027615` | `OLP-0556` / `OLP-0556-B008` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:34-43` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:35-46` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027616` | `OLP-0556` / `OLP-0556-B009` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:45-46` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:48-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027617` | `OLP-0556` / `OLP-0556-B010` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:48-52` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:51-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027618` | `OLP-0556` / `OLP-0556-B011` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:54-54` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:57-57` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027619` | `OLP-0556` / `OLP-0556-B012` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:56-62` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:59-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027620` | `OLP-0556` / `OLP-0556-B013` | ترتيبي عددونه د ترتيب د ډولونو په توګه | `upstream/content/set-theory/ordinals/ordtype.tex:64-77` | `ps-Arab-PK/content/set-theory/ordinals/ordtype.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027621` | `OLP-0560` / `OLP-0560-B003` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027622` | `OLP-0560` / `OLP-0560-B004` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:8-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027623` | `OLP-0560` / `OLP-0560-B005` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:13-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027624` | `OLP-0560` / `OLP-0560-B006` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:18-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027625` | `OLP-0560` / `OLP-0560-B007` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:22-27` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:24-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027626` | `OLP-0560` / `OLP-0560-B008` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:32-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027627` | `OLP-0560` / `OLP-0560-B009` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027628` | `OLP-0560` / `OLP-0560-B010` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:37-37` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027629` | `OLP-0560` / `OLP-0560-B011` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:39-40` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:44-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027630` | `OLP-0560` / `OLP-0560-B012` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:42-46` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:47-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027631` | `OLP-0560` / `OLP-0560-B013` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:48-49` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:54-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027632` | `OLP-0560` / `OLP-0560-B014` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:51-55` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:57-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027633` | `OLP-0560` / `OLP-0560-B015` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:57-62` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:63-68` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027634` | `OLP-0560` / `OLP-0560-B016` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:64-81` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:70-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027635` | `OLP-0560` / `OLP-0560-B017` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:83-86` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:92-94` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027636` | `OLP-0560` / `OLP-0560-B018` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:88-98` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:96-106` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027637` | `OLP-0560` / `OLP-0560-B019` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:100-118` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:108-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027638` | `OLP-0560` / `OLP-0560-B020` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:120-120` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:132-132` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027639` | `OLP-0560` / `OLP-0560-B021` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:122-122` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:134-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027640` | `OLP-0560` / `OLP-0560-B022` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:124-128` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:136-141` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027641` | `OLP-0563` / `OLP-0563-B003` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/zf.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027642` | `OLP-0563` / `OLP-0563-B004` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/zf.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027643` | `OLP-0563` / `OLP-0563-B005` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/zf.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027644` | `OLP-0563` / `OLP-0563-B006` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/zf.tex:17-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027645` | `OLP-0563` / `OLP-0563-B007` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:22-25` | `ps-Arab-PK/content/set-theory/spine/zf.tex:21-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027646` | `OLP-0563` / `OLP-0563-B008` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:27-34` | `ps-Arab-PK/content/set-theory/spine/zf.tex:26-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027647` | `OLP-0563` / `OLP-0563-B009` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:36-41` | `ps-Arab-PK/content/set-theory/spine/zf.tex:34-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027648` | `OLP-0563` / `OLP-0563-B010` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:43-44` | `ps-Arab-PK/content/set-theory/spine/zf.tex:40-41` | pending; no page guessed |
+
+## TERM-SET-SUCCESSOR-LIMIT-ORDINAL
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: successor ordinal / limit ordinal / simple transfinite induction
+- Intended sense: successor ordinal / limit ordinal / simple transfinite induction
+- Chosen Pashto: تالي ترتيبي عدد / حدي ترتيبي عدد / د نامتناهيت هاخوا ساده استقرا
+- Rationale: تالي د ترتيبي عدد اتحاد له خپل يوازيني غړي لرونکي سټ سره دے. حدي ترتيبي عدد نۀ تش دے او نۀ د کوم ترتيبي عدد تالي دے؛ صفر په حدي حالت کښې نۀ شاملوو. ساده استقرا يو بنسټيز، يو تالي او يو حدي شرط لري؛ په حدي شرط کښې ټول مخکيني غړي فرض کېږي، نه يوازې يو مخکينے غړے.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا حدي عدد د صفر نه بېل، اکيد حد د غير اکيد حد نه بېل، او عمومي ترم د سټ-تابعې نه بېل ساتل شوے دے؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے؛ افغان مخ د تابعې، بندښت يا حد د بيان سيمه‌ييز شاهد دے. عين پاکستانے نوے تخصصي مرکب نۀ تصويبوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو د تالي بندښت، اقل والي او استقرا سيمه‌ييز شاهد دے؛ د نامتناهيت هاخوا بازګښت يا توانمن سټ د عين تخصصي مرکب د تصويب ادعا نۀ ده.
+  - `OPENLOGIC-TERM-SET-SUCCESSOR-LIMIT-ORDINAL-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — تالي د ترتيبي عدد اتحاد له خپل يوازيني غړي لرونکي سټ سره دے. حدي ترتيبي عدد نۀ تش دے او نۀ د کوم ترتيبي عدد تالي دے؛ صفر په حدي حالت کښې نۀ شاملوو. ساده استقرا يو بنسټيز، يو تالي او يو حدي شرط لري؛ په حدي شرط کښې ټول مخکيني غړي فرض کېږي، نه يوازې يو مخکينے غړے.
+- Alternatives:
+  - هر ناتالي عدد حدي بلل؛ تش ترتيبي عدد ناسم حدي کوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - يوازې په تالي استقرا؛ حدي پړاو او د ټولو مخکينيو عددونو فرض باسي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 32
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027649` | `OLP-0557` / `OLP-0557-B003` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027650` | `OLP-0557` / `OLP-0557-B004` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:8-9` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:8-9` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027651` | `OLP-0557` / `OLP-0557-B005` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:11-20` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:11-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027652` | `OLP-0557` / `OLP-0557-B006` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:22-30` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:21-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027653` | `OLP-0557` / `OLP-0557-B007` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:32-41` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:31-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027654` | `OLP-0557` / `OLP-0557-B008` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:43-53` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:42-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027655` | `OLP-0557` / `OLP-0557-B009` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:55-63` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:54-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027656` | `OLP-0557` / `OLP-0557-B010` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:65-76` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:65-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027657` | `OLP-0557` / `OLP-0557-B011` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:78-81` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:77-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027658` | `OLP-0557` / `OLP-0557-B012` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:83-88` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:82-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027659` | `OLP-0557` / `OLP-0557-B013` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:90-93` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:88-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027660` | `OLP-0557` / `OLP-0557-B014` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:95-99` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:93-97` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027661` | `OLP-0560` / `OLP-0560-B003` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027662` | `OLP-0560` / `OLP-0560-B004` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:8-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027663` | `OLP-0560` / `OLP-0560-B005` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:13-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027664` | `OLP-0560` / `OLP-0560-B006` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:18-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027665` | `OLP-0560` / `OLP-0560-B007` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:22-27` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:24-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027666` | `OLP-0560` / `OLP-0560-B008` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:32-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027667` | `OLP-0560` / `OLP-0560-B009` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027668` | `OLP-0560` / `OLP-0560-B010` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:37-37` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027669` | `OLP-0560` / `OLP-0560-B011` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:39-40` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:44-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027670` | `OLP-0560` / `OLP-0560-B012` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:42-46` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:47-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027671` | `OLP-0560` / `OLP-0560-B013` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:48-49` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:54-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027672` | `OLP-0560` / `OLP-0560-B014` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:51-55` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:57-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027673` | `OLP-0560` / `OLP-0560-B015` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:57-62` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:63-68` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027674` | `OLP-0560` / `OLP-0560-B016` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:64-81` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:70-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027675` | `OLP-0560` / `OLP-0560-B017` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:83-86` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:92-94` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027676` | `OLP-0560` / `OLP-0560-B018` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:88-98` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:96-106` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027677` | `OLP-0560` / `OLP-0560-B019` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:100-118` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:108-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027678` | `OLP-0560` / `OLP-0560-B020` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:120-120` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:132-132` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027679` | `OLP-0560` / `OLP-0560-B021` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:122-122` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:134-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027680` | `OLP-0560` / `OLP-0560-B022` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:124-128` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:136-141` | pending; no page guessed |
+
+## TERM-SET-STRICT-UPPER-BOUND
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: least strict upper bound versus non-strict supremum
+- Intended sense: least strict upper bound versus non-strict supremum
+- Chosen Pashto: تر ټولو لږ اکيد پاسنے حد / تر ټولو لږ غير اکيد پاسنے حد
+- Rationale: د ترتيبي عددونو د سټ د هر غړي تالي اخلو او بيا ئې اتحاد اخلو؛ پايله له هر غړي په کلکه لويه ده او په دې شرط تر ټولو لږه ده. د تر ټولو لوے غړي په شتون کښې اکيد حد د هغه تالي دے، خو غير اکيد حد هماغه لوے غړے دے. د سرچينې lsub نښه ثابته نښه ده؛ د حقيقي عددونو د فوقاني حد عين تعريف ورته نۀ واردېږي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا حدي عدد د صفر نه بېل، اکيد حد د غير اکيد حد نه بېل، او عمومي ترم د سټ-تابعې نه بېل ساتل شوے دے؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے؛ افغان مخ د تابعې، بندښت يا حد د بيان سيمه‌ييز شاهد دے. عين پاکستانے نوے تخصصي مرکب نۀ تصويبوي.
+  - `AF-BUKOVSKY-P22-REAL-SUPREMUM` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — دا مخ د حقيقي عددونو فوقاني حد بيانوي؛ د سخت ترتيبي حد د عين تعريف شاهد نۀ دے. د سخت او غير سخت حد توپير د منجمد سرچينې له تعريفه اخيستل کېږي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو د تالي بندښت، اقل والي او استقرا سيمه‌ييز شاهد دے؛ د نامتناهيت هاخوا بازګښت يا توانمن سټ د عين تخصصي مرکب د تصويب ادعا نۀ ده.
+  - `OPENLOGIC-TERM-SET-STRICT-UPPER-BOUND-4` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د ترتيبي عددونو د سټ د هر غړي تالي اخلو او بيا ئې اتحاد اخلو؛ پايله له هر غړي په کلکه لويه ده او په دې شرط تر ټولو لږه ده. د تر ټولو لوے غړي په شتون کښې اکيد حد د هغه تالي دے، خو غير اکيد حد هماغه لوے غړے دے. د سرچينې lsub نښه ثابته نښه ده؛ د حقيقي عددونو د فوقاني حد عين تعريف ورته نۀ واردېږي.
+- Alternatives:
+  - يوازې فوقاني حد بې له اکيد شرطه؛ د اعظمي غړي په حالت کښې يو پړاو غلطوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د اتحاد او د تاليانو د اتحاد يو ګڼل؛ اکيد او غير اکيد حدود سره ګډوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 12
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027681` | `OLP-0557` / `OLP-0557-B003` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:5-6` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027682` | `OLP-0557` / `OLP-0557-B004` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:8-9` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:8-9` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027683` | `OLP-0557` / `OLP-0557-B005` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:11-20` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:11-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027684` | `OLP-0557` / `OLP-0557-B006` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:22-30` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:21-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027685` | `OLP-0557` / `OLP-0557-B007` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:32-41` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:31-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027686` | `OLP-0557` / `OLP-0557-B008` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:43-53` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:42-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027687` | `OLP-0557` / `OLP-0557-B009` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:55-63` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:54-63` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027688` | `OLP-0557` / `OLP-0557-B010` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:65-76` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:65-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027689` | `OLP-0557` / `OLP-0557-B011` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:78-81` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:77-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027690` | `OLP-0557` / `OLP-0557-B012` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:83-88` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:82-86` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027691` | `OLP-0557` / `OLP-0557-B013` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:90-93` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:88-91` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027692` | `OLP-0557` / `OLP-0557-B014` | تالي او حدي ترتيبي عددونه | `upstream/content/set-theory/ordinals/opps.tex:95-99` | `ps-Arab-PK/content/set-theory/ordinals/opps.tex:93-97` | pending; no page guessed |
+
+## TERM-SET-TRANSFINITE-RECURSION-APPROXIMATION
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: ordinal approximation / bounded and general transfinite recursion / term versus global set-function
+- Intended sense: ordinal approximation / bounded and general transfinite recursion / term versus global set-function
+- Chosen Pashto: ترتيبي تقريب / محدود بازګښت / عمومي بازګښت / د نامتناهيت هاخوا بازګښت
+- Rationale: تقريب د ټاکلې ترتيبي ساحې تابعه ده چې په هر غړي ئې قيمت د ترم د مخکيني تاريخ په محدودولو ټاکل کېږي. محدود نتيجه عين يوازينۍ سټ-تابعه ورکوي؛ عمومي شېما يو ترم ورکوي او د ټولو ترتيبي عددونو د ساحې لرونکې سټ-تابعه نۀ غواړي. ټول پارامترونه روا دي. د ساده بڼې بنسټ، تالي او حدي حالتونه بېل دي؛ حدي ترم د مخکيني تاريخ د قيمتونو سټ اخلي. OLSTH-005 تشه ساحه د بنسټيز قيمت په شرط کښې په ښکاره ورزياتوي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا حدي عدد د صفر نه بېل، اکيد حد د غير اکيد حد نه بېل، او عمومي ترم د سټ-تابعې نه بېل ساتل شوے دے؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے؛ افغان مخ د تابعې، بندښت يا حد د بيان سيمه‌ييز شاهد دے. عين پاکستانے نوے تخصصي مرکب نۀ تصويبوي.
+  - `AF-NIAZMAN-P147-FUNCTIONS` (checked_context_only): Sultan Ahmad Niazman. Mathematical Logic / د ریاضي منطق. Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2022/06/Mathematical-Logic-Sultan-Ahmad-Niazman.pdf — پاکستانے نثر د املا او بيان لومړنے شاهد دے؛ افغان مخ د تابعې، بندښت يا حد د بيان سيمه‌ييز شاهد دے. عين پاکستانے نوے تخصصي مرکب نۀ تصويبوي.
+  - `OPENLOGIC-TERM-SET-TRANSFINITE-RECURSION-APPROXIMATION-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — تقريب د ټاکلې ترتيبي ساحې تابعه ده چې په هر غړي ئې قيمت د ترم د مخکيني تاريخ په محدودولو ټاکل کېږي. محدود نتيجه عين يوازينۍ سټ-تابعه ورکوي؛ عمومي شېما يو ترم ورکوي او د ټولو ترتيبي عددونو د ساحې لرونکې سټ-تابعه نۀ غواړي. ټول پارامترونه روا دي. د ساده بڼې بنسټ، تالي او حدي حالتونه بېل دي؛ حدي ترم د مخکيني تاريخ د قيمتونو سټ اخلي. OLSTH-005 تشه ساحه د بنسټيز قيمت په شرط کښې په ښکاره ورزياتوي.
+- Alternatives:
+  - عمومي ترم د ټولو ترتيبي عددونو سټ-تابعه ګڼل؛ د بورالي--فورتي تناقض جوړوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - حدي ترم ته د تعريف ساحه ورکول؛ د مخکيني تاريخ د قيمتونو سټ بدلوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 24
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027693` | `OLP-0559` / `OLP-0559-B004` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:7-7` | `ps-Arab-PK/content/set-theory/spine/idea.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027694` | `OLP-0559` / `OLP-0559-B005` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:9-14` | `ps-Arab-PK/content/set-theory/spine/idea.tex:9-13` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027695` | `OLP-0559` / `OLP-0559-B006` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:16-33` | `ps-Arab-PK/content/set-theory/spine/idea.tex:15-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027696` | `OLP-0559` / `OLP-0559-B007` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:35-40` | `ps-Arab-PK/content/set-theory/spine/idea.tex:33-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027697` | `OLP-0560` / `OLP-0560-B003` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027698` | `OLP-0560` / `OLP-0560-B004` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:8-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027699` | `OLP-0560` / `OLP-0560-B005` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:13-16` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027700` | `OLP-0560` / `OLP-0560-B006` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:18-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027701` | `OLP-0560` / `OLP-0560-B007` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:22-27` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:24-30` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027702` | `OLP-0560` / `OLP-0560-B008` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:32-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027703` | `OLP-0560` / `OLP-0560-B009` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:38-40` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027704` | `OLP-0560` / `OLP-0560-B010` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:37-37` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:42-42` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027705` | `OLP-0560` / `OLP-0560-B011` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:39-40` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:44-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027706` | `OLP-0560` / `OLP-0560-B012` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:42-46` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:47-52` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027707` | `OLP-0560` / `OLP-0560-B013` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:48-49` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:54-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027708` | `OLP-0560` / `OLP-0560-B014` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:51-55` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:57-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027709` | `OLP-0560` / `OLP-0560-B015` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:57-62` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:63-68` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027710` | `OLP-0560` / `OLP-0560-B016` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:64-81` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:70-90` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027711` | `OLP-0560` / `OLP-0560-B017` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:83-86` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:92-94` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027712` | `OLP-0560` / `OLP-0560-B018` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:88-98` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:96-106` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027713` | `OLP-0560` / `OLP-0560-B019` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:100-118` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:108-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027714` | `OLP-0560` / `OLP-0560-B020` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:120-120` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:132-132` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027715` | `OLP-0560` / `OLP-0560-B021` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:122-122` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:134-134` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027716` | `OLP-0560` / `OLP-0560-B022` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:124-128` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:136-141` | pending; no page guessed |
+
+## TERM-SET-INTERNAL-STAGE-POTENCY
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: internal stage definition / potent set / cumulative hierarchy
+- Intended sense: internal stage definition / potent set / cumulative hierarchy
+- Chosen Pashto: د پړاو داخلي تعريف / توانمن سټ / تجمعي سلسله
+- Rationale: پړاوونه د تيورۍ دننه په تش، تالي او حدي معادلو تعريفېږي؛ د بهرني مدل د واقعي سټونو بېل بيان نۀ دے. توانمن د عين ښودل شوي شرط لنډمهاله نوم دے: د سټ د کوم غړي هر فرعي سټ د هماغه سټ غړے وي. د سرچينې potent د Button نوم دے؛ پښتو بڼه ورته نۀ منسوبېږي. د تعديت، توانمنتيا او مخکيني پړاو د غړيتوب يوځای ثبوت ټول حالتونه ساتي. د پړاوونو سلسله د تجمعي او تکراري تعبير دواړو شرطونو ته کتل کېږي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا حدي عدد د صفر نه بېل، اکيد حد د غير اکيد حد نه بېل، او عمومي ترم د سټ-تابعې نه بېل ساتل شوے دے؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے؛ افغان مخ د تابعې، بندښت يا حد د بيان سيمه‌ييز شاهد دے. عين پاکستانے نوے تخصصي مرکب نۀ تصويبوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو د تالي بندښت، اقل والي او استقرا سيمه‌ييز شاهد دے؛ د نامتناهيت هاخوا بازګښت يا توانمن سټ د عين تخصصي مرکب د تصويب ادعا نۀ ده.
+  - `OPENLOGIC-TERM-SET-INTERNAL-STAGE-POTENCY-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — پړاوونه د تيورۍ دننه په تش، تالي او حدي معادلو تعريفېږي؛ د بهرني مدل د واقعي سټونو بېل بيان نۀ دے. توانمن د عين ښودل شوي شرط لنډمهاله نوم دے: د سټ د کوم غړي هر فرعي سټ د هماغه سټ غړے وي. د سرچينې potent د Button نوم دے؛ پښتو بڼه ورته نۀ منسوبېږي. د تعديت، توانمنتيا او مخکيني پړاو د غړيتوب يوځای ثبوت ټول حالتونه ساتي. د پړاوونو سلسله د تجمعي او تکراري تعبير دواړو شرطونو ته کتل کېږي.
+  - `OPENLOGIC-TERM-SET-INTERNAL-STAGE-POTENCY-4` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — پړاوونه د تيورۍ دننه په تش، تالي او حدي معادلو تعريفېږي؛ د بهرني مدل د واقعي سټونو بېل بيان نۀ دے. توانمن د عين ښودل شوي شرط لنډمهاله نوم دے: د سټ د کوم غړي هر فرعي سټ د هماغه سټ غړے وي. د سرچينې potent د Button نوم دے؛ پښتو بڼه ورته نۀ منسوبېږي. د تعديت، توانمنتيا او مخکيني پړاو د غړيتوب يوځای ثبوت ټول حالتونه ساتي. د پړاوونو سلسله د تجمعي او تکراري تعبير دواړو شرطونو ته کتل کېږي.
+- Alternatives:
+  - توانمن د هر سټ هر فرعي سټ بلل؛ د موجود غړي شرط باسي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - داخلي پړاوونه له مدل بهر له ټولو واقعي سټونو سره يو ګڼل؛ د سرچينې د دوو کچو توپير له منځه وړي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 19
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027717` | `OLP-0558` / `OLP-0558-B004` | sth | `upstream/content/set-theory/spine/spine.tex:8-8` | `ps-Arab-PK/content/set-theory/spine/spine.tex:8-8` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027718` | `OLP-0559` / `OLP-0559-B004` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:7-7` | `ps-Arab-PK/content/set-theory/spine/idea.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027719` | `OLP-0559` / `OLP-0559-B005` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:9-14` | `ps-Arab-PK/content/set-theory/spine/idea.tex:9-13` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027720` | `OLP-0559` / `OLP-0559-B006` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:16-33` | `ps-Arab-PK/content/set-theory/spine/idea.tex:15-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027721` | `OLP-0559` / `OLP-0559-B007` | پړاوونه د $V_\alpha$ ګانو په توګه تعريفول | `upstream/content/set-theory/spine/idea.tex:35-40` | `ps-Arab-PK/content/set-theory/spine/idea.tex:33-37` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027722` | `OLP-0561` / `OLP-0561-B003` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027723` | `OLP-0561` / `OLP-0561-B004` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:8-22` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:8-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027724` | `OLP-0561` / `OLP-0561-B005` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:24-27` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:26-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027725` | `OLP-0561` / `OLP-0561-B006` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:29-29` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:31-31` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027726` | `OLP-0561` / `OLP-0561-B007` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:31-39` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:33-43` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027727` | `OLP-0561` / `OLP-0561-B008` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:41-48` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:45-51` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027728` | `OLP-0561` / `OLP-0561-B009` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:50-52` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:53-55` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027729` | `OLP-0561` / `OLP-0561-B010` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:54-55` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:57-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027730` | `OLP-0561` / `OLP-0561-B011` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:57-61` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:60-64` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027731` | `OLP-0561` / `OLP-0561-B012` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:63-69` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:66-73` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027732` | `OLP-0561` / `OLP-0561-B013` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:71-73` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:75-77` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027733` | `OLP-0561` / `OLP-0561-B014` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:75-80` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:79-89` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027734` | `OLP-0561` / `OLP-0561-B015` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:82-89` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:91-98` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027735` | `OLP-0561` / `OLP-0561-B016` | د پړاوونو بنسټيز خاصيتونه | `upstream/content/set-theory/spine/stagesbasics.tex:91-93` | `ps-Arab-PK/content/set-theory/spine/stagesbasics.tex:100-102` | pending; no page guessed |
+
+## TERM-SET-FOUNDATION-REGULARITY
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: Foundation axiom / source-specific Regularity formulation / equivalence over ZFminus
+- Intended sense: Foundation axiom / source-specific Regularity formulation / equivalence over ZFminus
+- Chosen Pashto: د بنسټ اصل / منظموالی / د ZFminus په شتون کښې همارزښتي
+- Rationale: د بنسټ اصل د هر ناتش A دپاره داسې B په A کښې غواړي چې له A سره تش تقاطع ولري. دلته منظموالی ځانګړې فورمول لري: د هر A دپاره کوم ترتيبي α شته چې A د Vα فرعي سټ وي. دواړه د ZFminus په شتون کښې همارزښته بلل کېږي؛ د Zminus دپاره هماغه ادعا نۀ کېږي. د Vα تعريف د تعويض او نامتناهيت هاخوا بازګښت کاروي؛ دا له Zminus/Z څخه په خپله نۀ راځي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا د بنسټ عين فارمول، د ZFminus په شرط همارزښتي، د متعدي بندښت تکرار او د رتبې د اقل والي شرط په ځای پاتې دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے. عين د بنسټ، منظموالي يا رتبې تخصصي نوم نۀ تصويبوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو لږ تر لږه تړلے سټ، تالي او استقرا سيمه‌ييز شاهد دے؛ د سټ د متعدي بندښت يا ترتيبي رتبې عين ثبوت نۀ دے.
+  - `OPENLOGIC-TERM-SET-FOUNDATION-REGULARITY-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د بنسټ اصل د هر ناتش A دپاره داسې B په A کښې غواړي چې له A سره تش تقاطع ولري. دلته منظموالی ځانګړې فورمول لري: د هر A دپاره کوم ترتيبي α شته چې A د Vα فرعي سټ وي. دواړه د ZFminus په شتون کښې همارزښته بلل کېږي؛ د Zminus دپاره هماغه ادعا نۀ کېږي. د Vα تعريف د تعويض او نامتناهيت هاخوا بازګښت کاروي؛ دا له Zminus/Z څخه په خپله نۀ راځي.
+  - `OPENLOGIC-TERM-SET-FOUNDATION-REGULARITY-4` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د بنسټ اصل د هر ناتش A دپاره داسې B په A کښې غواړي چې له A سره تش تقاطع ولري. دلته منظموالی ځانګړې فورمول لري: د هر A دپاره کوم ترتيبي α شته چې A د Vα فرعي سټ وي. دواړه د ZFminus په شتون کښې همارزښته بلل کېږي؛ د Zminus دپاره هماغه ادعا نۀ کېږي. د Vα تعريف د تعويض او نامتناهيت هاخوا بازګښت کاروي؛ دا له Zminus/Z څخه په خپله نۀ راځي.
+- Alternatives:
+  - منظموالی د بېلابېلو کتابونو له بل نوم يا فارمول سره بې‌اشارې بدلول؛ د دې سرچينې عين فورمول پټوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د Zminus په شتون کښې همارزښتي ادعا کول؛ د Vα د تعريف اړتيا له پامه غورځوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 38
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027736` | `OLP-0562` / `OLP-0562-B004` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:7-7` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027737` | `OLP-0562` / `OLP-0562-B005` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:9-11` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:9-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027738` | `OLP-0562` / `OLP-0562-B006` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:13-20` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:13-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027739` | `OLP-0562` / `OLP-0562-B007` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:22-23` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:21-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027740` | `OLP-0562` / `OLP-0562-B008` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:25-27` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:24-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027741` | `OLP-0562` / `OLP-0562-B009` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:28-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027742` | `OLP-0562` / `OLP-0562-B010` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:31-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027743` | `OLP-0562` / `OLP-0562-B011` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:37-51` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:35-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027744` | `OLP-0562` / `OLP-0562-B012` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:53-57` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:52-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027745` | `OLP-0562` / `OLP-0562-B013` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:59-62` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:58-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027746` | `OLP-0562` / `OLP-0562-B014` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:64-74` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:63-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027747` | `OLP-0562` / `OLP-0562-B015` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:76-86` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:77-89` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027748` | `OLP-0562` / `OLP-0562-B016` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:88-90` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:91-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027749` | `OLP-0562` / `OLP-0562-B017` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:92-94` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:95-99` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027750` | `OLP-0562` / `OLP-0562-B018` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:96-103` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:101-108` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027751` | `OLP-0563` / `OLP-0563-B003` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/zf.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027752` | `OLP-0563` / `OLP-0563-B004` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/zf.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027753` | `OLP-0563` / `OLP-0563-B005` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/zf.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027754` | `OLP-0563` / `OLP-0563-B006` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/zf.tex:17-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027755` | `OLP-0563` / `OLP-0563-B007` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:22-25` | `ps-Arab-PK/content/set-theory/spine/zf.tex:21-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027756` | `OLP-0563` / `OLP-0563-B008` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:27-34` | `ps-Arab-PK/content/set-theory/spine/zf.tex:26-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027757` | `OLP-0563` / `OLP-0563-B009` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:36-41` | `ps-Arab-PK/content/set-theory/spine/zf.tex:34-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027758` | `OLP-0563` / `OLP-0563-B010` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:43-44` | `ps-Arab-PK/content/set-theory/spine/zf.tex:40-41` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027759` | `OLP-0564` / `OLP-0564-B003` | رتبه | `upstream/content/set-theory/spine/rank.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/rank.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027760` | `OLP-0564` / `OLP-0564-B004` | رتبه | `upstream/content/set-theory/spine/rank.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/rank.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027761` | `OLP-0564` / `OLP-0564-B005` | رتبه | `upstream/content/set-theory/spine/rank.tex:13-30` | `ps-Arab-PK/content/set-theory/spine/rank.tex:12-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027762` | `OLP-0564` / `OLP-0564-B006` | رتبه | `upstream/content/set-theory/spine/rank.tex:32-39` | `ps-Arab-PK/content/set-theory/spine/rank.tex:31-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027763` | `OLP-0564` / `OLP-0564-B007` | رتبه | `upstream/content/set-theory/spine/rank.tex:41-43` | `ps-Arab-PK/content/set-theory/spine/rank.tex:47-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027764` | `OLP-0564` / `OLP-0564-B008` | رتبه | `upstream/content/set-theory/spine/rank.tex:45-51` | `ps-Arab-PK/content/set-theory/spine/rank.tex:51-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027765` | `OLP-0564` / `OLP-0564-B009` | رتبه | `upstream/content/set-theory/spine/rank.tex:53-58` | `ps-Arab-PK/content/set-theory/spine/rank.tex:60-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027766` | `OLP-0564` / `OLP-0564-B010` | رتبه | `upstream/content/set-theory/spine/rank.tex:60-73` | `ps-Arab-PK/content/set-theory/spine/rank.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027767` | `OLP-0564` / `OLP-0564-B011` | رتبه | `upstream/content/set-theory/spine/rank.tex:75-76` | `ps-Arab-PK/content/set-theory/spine/rank.tex:82-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027768` | `OLP-0564` / `OLP-0564-B013` | رتبه | `upstream/content/set-theory/spine/rank.tex:82-88` | `ps-Arab-PK/content/set-theory/spine/rank.tex:89-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027769` | `OLP-0564` / `OLP-0564-B014` | رتبه | `upstream/content/set-theory/spine/rank.tex:90-92` | `ps-Arab-PK/content/set-theory/spine/rank.tex:98-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027770` | `OLP-0564` / `OLP-0564-B015` | رتبه | `upstream/content/set-theory/spine/rank.tex:94-110` | `ps-Arab-PK/content/set-theory/spine/rank.tex:102-119` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027771` | `OLP-0564` / `OLP-0564-B016` | رتبه | `upstream/content/set-theory/spine/rank.tex:112-117` | `ps-Arab-PK/content/set-theory/spine/rank.tex:121-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027772` | `OLP-0564` / `OLP-0564-B017` | رتبه | `upstream/content/set-theory/spine/rank.tex:119-120` | `ps-Arab-PK/content/set-theory/spine/rank.tex:129-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027773` | `OLP-0564` / `OLP-0564-B018` | رتبه | `upstream/content/set-theory/spine/rank.tex:122-126` | `ps-Arab-PK/content/set-theory/spine/rank.tex:132-137` | pending; no page guessed |
+
+## TERM-SET-TRANSITIVE-CLOSURE-SET
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: transitive closure of a set / finite union iterations
+- Intended sense: transitive closure of a set / finite union iterations
+- Chosen Pashto: د سټ متعدي بندښت / د اتحاد متناهي تکرارونه
+- Rationale: د A د متعدي بندښت په دې سرچينه کښې د cl_n(A) د متناهي اتحادونو اتحاد دے: صفرمه برخه A ده او هره بله برخه د مخکنۍ برخې اتحاد. که x د b غړے وي او b په کوم cl_n کښې وي، x په راتلونکي cl برخه کښې راځي؛ نو ټول بندښت متعدي سټ دے. دا د اړيکې د انتقالي بندښت سره نۀ ګډېږي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا د بنسټ عين فارمول، د ZFminus په شرط همارزښتي، د متعدي بندښت تکرار او د رتبې د اقل والي شرط په ځای پاتې دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے. عين د بنسټ، منظموالي يا رتبې تخصصي نوم نۀ تصويبوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو لږ تر لږه تړلے سټ، تالي او استقرا سيمه‌ييز شاهد دے؛ د سټ د متعدي بندښت يا ترتيبي رتبې عين ثبوت نۀ دے.
+  - `OPENLOGIC-TERM-SET-TRANSITIVE-CLOSURE-SET-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د A د متعدي بندښت په دې سرچينه کښې د cl_n(A) د متناهي اتحادونو اتحاد دے: صفرمه برخه A ده او هره بله برخه د مخکنۍ برخې اتحاد. که x د b غړے وي او b په کوم cl_n کښې وي، x په راتلونکي cl برخه کښې راځي؛ نو ټول بندښت متعدي سټ دے. دا د اړيکې د انتقالي بندښت سره نۀ ګډېږي.
+- Alternatives:
+  - د اړيکې متعدي بندښت؛ د سټ د غړو د غړيتوب د تړلو جوړښت پر ځاے بل ډول څيز جوړوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - يوازې يو ځل اتحاد؛ د هرې متناهي اوږدوالي غړيتوب لړۍ نه رانغاړي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 30
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027774` | `OLP-0562` / `OLP-0562-B004` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:7-7` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027775` | `OLP-0562` / `OLP-0562-B005` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:9-11` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:9-11` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027776` | `OLP-0562` / `OLP-0562-B006` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:13-20` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:13-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027777` | `OLP-0562` / `OLP-0562-B007` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:22-23` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:21-22` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027778` | `OLP-0562` / `OLP-0562-B008` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:25-27` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:24-26` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027779` | `OLP-0562` / `OLP-0562-B009` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:29-31` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:28-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027780` | `OLP-0562` / `OLP-0562-B010` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:33-35` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:31-33` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027781` | `OLP-0562` / `OLP-0562-B011` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:37-51` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:35-50` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027782` | `OLP-0562` / `OLP-0562-B012` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:53-57` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:52-56` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027783` | `OLP-0562` / `OLP-0562-B013` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:59-62` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:58-61` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027784` | `OLP-0562` / `OLP-0562-B014` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:64-74` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:63-75` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027785` | `OLP-0562` / `OLP-0562-B015` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:76-86` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:77-89` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027786` | `OLP-0562` / `OLP-0562-B016` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:88-90` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:91-93` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027787` | `OLP-0562` / `OLP-0562-B017` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:92-94` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:95-99` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027788` | `OLP-0562` / `OLP-0562-B018` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:96-103` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:101-108` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027789` | `OLP-0564` / `OLP-0564-B003` | رتبه | `upstream/content/set-theory/spine/rank.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/rank.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027790` | `OLP-0564` / `OLP-0564-B004` | رتبه | `upstream/content/set-theory/spine/rank.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/rank.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027791` | `OLP-0564` / `OLP-0564-B005` | رتبه | `upstream/content/set-theory/spine/rank.tex:13-30` | `ps-Arab-PK/content/set-theory/spine/rank.tex:12-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027792` | `OLP-0564` / `OLP-0564-B006` | رتبه | `upstream/content/set-theory/spine/rank.tex:32-39` | `ps-Arab-PK/content/set-theory/spine/rank.tex:31-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027793` | `OLP-0564` / `OLP-0564-B007` | رتبه | `upstream/content/set-theory/spine/rank.tex:41-43` | `ps-Arab-PK/content/set-theory/spine/rank.tex:47-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027794` | `OLP-0564` / `OLP-0564-B008` | رتبه | `upstream/content/set-theory/spine/rank.tex:45-51` | `ps-Arab-PK/content/set-theory/spine/rank.tex:51-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027795` | `OLP-0564` / `OLP-0564-B009` | رتبه | `upstream/content/set-theory/spine/rank.tex:53-58` | `ps-Arab-PK/content/set-theory/spine/rank.tex:60-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027796` | `OLP-0564` / `OLP-0564-B010` | رتبه | `upstream/content/set-theory/spine/rank.tex:60-73` | `ps-Arab-PK/content/set-theory/spine/rank.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027797` | `OLP-0564` / `OLP-0564-B011` | رتبه | `upstream/content/set-theory/spine/rank.tex:75-76` | `ps-Arab-PK/content/set-theory/spine/rank.tex:82-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027798` | `OLP-0564` / `OLP-0564-B013` | رتبه | `upstream/content/set-theory/spine/rank.tex:82-88` | `ps-Arab-PK/content/set-theory/spine/rank.tex:89-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027799` | `OLP-0564` / `OLP-0564-B014` | رتبه | `upstream/content/set-theory/spine/rank.tex:90-92` | `ps-Arab-PK/content/set-theory/spine/rank.tex:98-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027800` | `OLP-0564` / `OLP-0564-B015` | رتبه | `upstream/content/set-theory/spine/rank.tex:94-110` | `ps-Arab-PK/content/set-theory/spine/rank.tex:102-119` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027801` | `OLP-0564` / `OLP-0564-B016` | رتبه | `upstream/content/set-theory/spine/rank.tex:112-117` | `ps-Arab-PK/content/set-theory/spine/rank.tex:121-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027802` | `OLP-0564` / `OLP-0564-B017` | رتبه | `upstream/content/set-theory/spine/rank.tex:119-120` | `ps-Arab-PK/content/set-theory/spine/rank.tex:129-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027803` | `OLP-0564` / `OLP-0564-B018` | رتبه | `upstream/content/set-theory/spine/rank.tex:122-126` | `ps-Arab-PK/content/set-theory/spine/rank.tex:132-137` | pending; no page guessed |
+
+## TERM-SET-Z-ZF-FOUNDATION-MILESTONE
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: Z versus ZF / Foundation and Replacement axiom inventories
+- Intended sense: Z versus ZF / Foundation and Replacement axiom inventories
+- Chosen Pashto: د Z او ZF اصلونه / بنسټ او تعويض
+- Rationale: Z د Zminus په اصولو بنسټ ورزياتوي، او ZF د ZFminus په اصولو بنسټ ورزياتوي، يعنې د Z سره د تعويض ټولې بېلګې جمع کوي. د سرچينې عين نوملړ ساتل کېږي: د غړو له مخې برابري، اتحاد، جوړې، د فرعي سټونو سټونه، نامتناهيت، بنسټ، ټولې بېلونې او بيا د تعويض بېلګې. د انتخاب اصل نۀ ورزياتېږي.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا د بنسټ عين فارمول، د ZFminus په شرط همارزښتي، د متعدي بندښت تکرار او د رتبې د اقل والي شرط په ځای پاتې دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے. عين د بنسټ، منظموالي يا رتبې تخصصي نوم نۀ تصويبوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو لږ تر لږه تړلے سټ، تالي او استقرا سيمه‌ييز شاهد دے؛ د سټ د متعدي بندښت يا ترتيبي رتبې عين ثبوت نۀ دے.
+  - `OPENLOGIC-TERM-SET-Z-ZF-FOUNDATION-MILESTONE-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — Z د Zminus په اصولو بنسټ ورزياتوي، او ZF د ZFminus په اصولو بنسټ ورزياتوي، يعنې د Z سره د تعويض ټولې بېلګې جمع کوي. د سرچينې عين نوملړ ساتل کېږي: د غړو له مخې برابري، اتحاد، جوړې، د فرعي سټونو سټونه، نامتناهيت، بنسټ، ټولې بېلونې او بيا د تعويض بېلګې. د انتخاب اصل نۀ ورزياتېږي.
+- Alternatives:
+  - Z او ZF د تعويض له شرط پرته يو ګڼل؛ د دوو تيوريو توپير له منځه وړي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د انتخاب اصل په لېست کښې ورزياتول؛ د سرچينې تيوري بدلوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 8
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027804` | `OLP-0563` / `OLP-0563-B003` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/zf.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027805` | `OLP-0563` / `OLP-0563-B004` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/zf.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027806` | `OLP-0563` / `OLP-0563-B005` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:13-16` | `ps-Arab-PK/content/set-theory/spine/zf.tex:12-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027807` | `OLP-0563` / `OLP-0563-B006` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:18-20` | `ps-Arab-PK/content/set-theory/spine/zf.tex:17-19` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027808` | `OLP-0563` / `OLP-0563-B007` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:22-25` | `ps-Arab-PK/content/set-theory/spine/zf.tex:21-24` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027809` | `OLP-0563` / `OLP-0563-B008` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:27-34` | `ps-Arab-PK/content/set-theory/spine/zf.tex:26-32` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027810` | `OLP-0563` / `OLP-0563-B009` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:36-41` | `ps-Arab-PK/content/set-theory/spine/zf.tex:34-38` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027811` | `OLP-0563` / `OLP-0563-B010` | $\Z$ او $\ZF$: يو مهم پړاو | `upstream/content/set-theory/spine/zf.tex:43-44` | `ps-Arab-PK/content/set-theory/spine/zf.tex:40-41` | pending; no page guessed |
+
+## TERM-SET-RANK-HEREDITARY-INDUCTION
+
+- Kind: `terminology`; priority: `high`; confidence: `medium`; provisional: `true`
+- Source term or construction: set rank / hereditary property / membership induction
+- Intended sense: set rank / hereditary property / membership induction
+- Chosen Pashto: د سټ رتبه / وراثتي خاصيت / د غړيتوب استقرا
+- Rationale: د A رتبه هغه لږ تر لږه ترتيبي α ده چې A د Vα فرعي سټ وي. که B د A غړے وي، د B رتبه د A له رتبې ټيټه وي. وراثتي خاصيت له ټولو غړو نه ټول سټ ته لېږدول کېږي؛ په دې شرط د غړيتوب استقرا د ټولو سټونو پايله ورکوي. د کمې رتبې د مقابلې استدلال او د رتبې د سخت حد معادله په بشپړ ډول ساتل شوي. OLSTH-007 د سرچينې په يوه جمله کښې د x د خپلې رتبې پړاو کاروي، ځکه د ورکړل شوي α پړاو نفي د فرض خلاف وه.
+- Confidence reason: لنډمهاله اصطلاحي مرکب؛ له کره رياضيکي شرطونو او بشپړ ثبوت سره پرتله شوے.. عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے
+- Expert question: ايا د بنسټ عين فارمول، د ZFminus په شرط همارزښتي، د متعدي بندښت تکرار او د رتبې د اقل والي شرط په ځای پاتې دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او بيان لومړنے شاهد دے. عين د بنسټ، منظموالي يا رتبې تخصصي نوم نۀ تصويبوي.
+  - `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو د استقرا په ثبوت کښې د خاصيت ساتنه ښيي؛ د غړيتوب يا نامتناهيت هاخوا استقرا عين قضيه نۀ ده.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو لږ تر لږه تړلے سټ، تالي او استقرا سيمه‌ييز شاهد دے؛ د سټ د متعدي بندښت يا ترتيبي رتبې عين ثبوت نۀ دے.
+  - `OPENLOGIC-TERM-SET-RANK-HEREDITARY-INDUCTION-4` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د A رتبه هغه لږ تر لږه ترتيبي α ده چې A د Vα فرعي سټ وي. که B د A غړے وي، د B رتبه د A له رتبې ټيټه وي. وراثتي خاصيت له ټولو غړو نه ټول سټ ته لېږدول کېږي؛ په دې شرط د غړيتوب استقرا د ټولو سټونو پايله ورکوي. د کمې رتبې د مقابلې استدلال او د رتبې د سخت حد معادله په بشپړ ډول ساتل شوي. OLSTH-007 د سرچينې په يوه جمله کښې د x د خپلې رتبې پړاو کاروي، ځکه د ورکړل شوي α پړاو نفي د فرض خلاف وه.
+- Alternatives:
+  - رتبه د لومړي پړاو د غړيتوب د شاخص په توګه اخيستل؛ د دې سرچينې د فرعي سټ لږ تر لږه تعريف ګډوډوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - وراثت له يوه غړي نه نتيجې ته محدودول؛ د ټولو غړو فرض کمزوری کوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 15
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027812` | `OLP-0564` / `OLP-0564-B003` | رتبه | `upstream/content/set-theory/spine/rank.tex:5-6` | `ps-Arab-PK/content/set-theory/spine/rank.tex:5-6` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027813` | `OLP-0564` / `OLP-0564-B004` | رتبه | `upstream/content/set-theory/spine/rank.tex:8-11` | `ps-Arab-PK/content/set-theory/spine/rank.tex:8-10` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027814` | `OLP-0564` / `OLP-0564-B005` | رتبه | `upstream/content/set-theory/spine/rank.tex:13-30` | `ps-Arab-PK/content/set-theory/spine/rank.tex:12-29` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027815` | `OLP-0564` / `OLP-0564-B006` | رتبه | `upstream/content/set-theory/spine/rank.tex:32-39` | `ps-Arab-PK/content/set-theory/spine/rank.tex:31-45` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027816` | `OLP-0564` / `OLP-0564-B007` | رتبه | `upstream/content/set-theory/spine/rank.tex:41-43` | `ps-Arab-PK/content/set-theory/spine/rank.tex:47-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027817` | `OLP-0564` / `OLP-0564-B008` | رتبه | `upstream/content/set-theory/spine/rank.tex:45-51` | `ps-Arab-PK/content/set-theory/spine/rank.tex:51-58` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027818` | `OLP-0564` / `OLP-0564-B009` | رتبه | `upstream/content/set-theory/spine/rank.tex:53-58` | `ps-Arab-PK/content/set-theory/spine/rank.tex:60-65` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027819` | `OLP-0564` / `OLP-0564-B010` | رتبه | `upstream/content/set-theory/spine/rank.tex:60-73` | `ps-Arab-PK/content/set-theory/spine/rank.tex:67-80` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027820` | `OLP-0564` / `OLP-0564-B011` | رتبه | `upstream/content/set-theory/spine/rank.tex:75-76` | `ps-Arab-PK/content/set-theory/spine/rank.tex:82-83` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027821` | `OLP-0564` / `OLP-0564-B013` | رتبه | `upstream/content/set-theory/spine/rank.tex:82-88` | `ps-Arab-PK/content/set-theory/spine/rank.tex:89-96` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027822` | `OLP-0564` / `OLP-0564-B014` | رتبه | `upstream/content/set-theory/spine/rank.tex:90-92` | `ps-Arab-PK/content/set-theory/spine/rank.tex:98-100` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027823` | `OLP-0564` / `OLP-0564-B015` | رتبه | `upstream/content/set-theory/spine/rank.tex:94-110` | `ps-Arab-PK/content/set-theory/spine/rank.tex:102-119` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027824` | `OLP-0564` / `OLP-0564-B016` | رتبه | `upstream/content/set-theory/spine/rank.tex:112-117` | `ps-Arab-PK/content/set-theory/spine/rank.tex:121-127` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027825` | `OLP-0564` / `OLP-0564-B017` | رتبه | `upstream/content/set-theory/spine/rank.tex:119-120` | `ps-Arab-PK/content/set-theory/spine/rank.tex:129-130` | pending; no page guessed |
+| `ps-Arab-PK-OCC-027826` | `OLP-0564` / `OLP-0564-B018` | رتبه | `upstream/content/set-theory/spine/rank.tex:122-126` | `ps-Arab-PK/content/set-theory/spine/rank.tex:132-137` | pending; no page guessed |
+
+## DEC-OLSTH-005
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-005: transfinite_recursion_missing_empty_function_base_case
+- Intended sense: په سرچينه کښې تشه تابعه د ترتيبي تعريف ساحه لري، خو ساحه ئې نه تالي ده او نه د ورکړل شوي حدي شرط لاندې راځي. په درې اصلي څانګو کښې د ξ ارزښت ورته نه ټاکل کېږي، حال دا چې ورپسې ثبوت ξ(تشې تابعې)=A کاروي. په لومړۍ څانګه کښې تشه ساحه په ښکاره شامله شوه؛ نور دوه شرطونه او د ثبوت معادلې بدل شوي نه دي.
+- Chosen Pashto: د تشې تابعې د تعريف ساحې څانګه د ξ په لومړي شرط کښې څرګنده ورزياته شوې؛ ξ(تشې تابعې)=A اوس له تعريفه راځي.
+- Rationale: په سرچينه کښې تشه تابعه د ترتيبي تعريف ساحه لري، خو ساحه ئې نه تالي ده او نه د ورکړل شوي حدي شرط لاندې راځي. په درې اصلي څانګو کښې د ξ ارزښت ورته نه ټاکل کېږي، حال دا چې ورپسې ثبوت ξ(تشې تابعې)=A کاروي. په لومړۍ څانګه کښې تشه ساحه په ښکاره شامله شوه؛ نور دوه شرطونه او د ثبوت معادلې بدل شوي نه دي.
+- Confidence reason: source-local mathematical consistency checked; not a calibrated probability. د اصلي ليکوال رسمي تصويب نه دے ادعا شوے؛ سمون يوازې د دې ثبوت په ښودل شوي ځای کښې دے
+- Expert question: ايا د تشې تابعې د تعريف ساحه په لومړي شرط کښې له نورو دوو څانګو سره بې‌ټکره ده او د بازګښت بنسټيز ارزښت په کره ډول ټاکي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او استدلالي بيان لومړنے شاهد دے؛ د رياضيکي سمون تصويب نه کوي.
+  - `AF-BUKOVSKY-P205-NATURAL-CLOSURE` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — طبيعي عددونو د لږ تر لږه تړلي سټ او تالي تصور ښيي؛ د ξ دا ځانګړے تعريف يا د تشې تابعې څانګه نه ثابتوي.
+  - `OPENLOGIC-DEC-OLSTH-005-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — په سرچينه کښې تشه تابعه د ترتيبي تعريف ساحه لري، خو ساحه ئې نه تالي ده او نه د ورکړل شوي حدي شرط لاندې راځي. په درې اصلي څانګو کښې د ξ ارزښت ورته نه ټاکل کېږي، حال دا چې ورپسې ثبوت ξ(تشې تابعې)=A کاروي. په لومړۍ څانګه کښې تشه ساحه په ښکاره شامله شوه؛ نور دوه شرطونه او د ثبوت معادلې بدل شوي نه دي.
+- Alternatives:
+  - اصلي درې څانګې بې له يادونې پرېښودل؛ په بنسټيز حالت کښې ξ ناتعريفه پاتې کېږي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - نورې څانګې يا د ثبوت پايله بدلول؛ د هماغې تشې ساحې د تنګ سمون ضرورت نه لري (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027827` | `OLP-0560` / `OLP-0560-B019` | د نامتناهيت هاخوا بازګښت قضيې | `upstream/content/set-theory/spine/recursion.tex:100-118` | `ps-Arab-PK/content/set-theory/spine/recursion.tex:108-130` | pending; no page guessed |
+
+## DEC-OLSTH-006
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-006: transitive_foundation_bound_witness_case_mismatch
+- Intended sense: ثبوت B د D غړے ټاکي، د B هر x د کوم V_δ برخه ثابتوي او له دې B ⊆ V_β اخلي. د β د کرانې په چاپ شوي فورمول کښې کوچنے b بې‌تړاوه دے؛ کميت بايد په هماغه B باندې وګرځي. يوازې دغه يو حرف سم شوے دے.
+- Chosen Pashto: د β د کرانې په فورمول کښې بې‌تړاوه کوچنے b د مخکې ټاکل شوي لوی B په نښه بدل شو.
+- Rationale: ثبوت B د D غړے ټاکي، د B هر x د کوم V_δ برخه ثابتوي او له دې B ⊆ V_β اخلي. د β د کرانې په چاپ شوي فورمول کښې کوچنے b بې‌تړاوه دے؛ کميت بايد په هماغه B باندې وګرځي. يوازې دغه يو حرف سم شوے دے.
+- Confidence reason: source-local mathematical consistency checked; not a calibrated probability. د اصلي ليکوال رسمي تصويب نه دے ادعا شوے؛ سمون يوازې د دې ثبوت په ښودل شوي ځای کښې دے
+- Expert question: ايا د β د کرانې وجودي شاهد د مخکې ټاکل شوي B غړے دے، څو ورپسې B ⊆ V_β نتيجه راووځي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او استدلالي بيان لومړنے شاهد دے؛ د رياضيکي سمون تصويب نه کوي.
+  - `OPENLOGIC-DEC-OLSTH-006-2` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — ثبوت B د D غړے ټاکي، د B هر x د کوم V_δ برخه ثابتوي او له دې B ⊆ V_β اخلي. د β د کرانې په چاپ شوي فورمول کښې کوچنے b بې‌تړاوه دے؛ کميت بايد په هماغه B باندې وګرځي. يوازې دغه يو حرف سم شوے دے.
+- Alternatives:
+  - کوچنے b همداسې ساتل؛ د ثبوت په دې برخه کښې بې‌تړاوه شاهد پاتې کېږي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - بل نوی سټ تعريفول؛ د مخکې ټاکل شوي B له استدلاله بې‌ځايه انحراف دے (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027828` | `OLP-0562` / `OLP-0562-B015` | د بنسټ اصل | `upstream/content/set-theory/spine/foundation.tex:76-86` | `ps-Arab-PK/content/set-theory/spine/foundation.tex:77-89` | pending; no page guessed |
+
+## DEC-OLSTH-007
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-007: rank_stage_index_contradiction
+- Intended sense: سرچينه x∈V_α فرضوي او بيا لفظاً x∉V_α اخلي. اړوند ثبوت د x د خپلې رتبې په پړاو کښې نۀ‌غړيتوب کاروي؛ له دې rank(x)=α ناممکن کېږي. د صفر، تالي او حدي حالتونو د اقل والي دليل دا تنګ شاخص سمون پخوي، نور فورمولونه نه بدلوي.
+- Chosen Pashto: د خپلې رتبې د پړاو نۀ‌غړيتوب $x\notin V_{\setrank{x}}$ د چاپ شوې متناقضې نفي پر ځاے په څنګ کښې څرګند سم شو.
+- Rationale: سرچينه x∈V_α فرضوي او بيا لفظاً x∉V_α اخلي. اړوند ثبوت د x د خپلې رتبې په پړاو کښې نۀ‌غړيتوب کاروي؛ له دې rank(x)=α ناممکن کېږي. د صفر، تالي او حدي حالتونو د اقل والي دليل دا تنګ شاخص سمون پخوي، نور فورمولونه نه بدلوي.
+- Confidence reason: source-local mathematical consistency checked; not a calibrated probability. د اصلي ليکوال رسمي تصويب نه دے ادعا شوے؛ سمون يوازې د دې ثبوت په ښودل شوي ځای کښې دے
+- Expert question: ايا د x د خپلې رتبې په پړاو کښې نۀ‌غړيتوب د صفر، تالي او حدي حالتونو له مخې سم دے او د ثبوت د اقل والي ګام پوره کوي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; native scholarly prose primary. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستانے نثر د املا او استدلالي بيان لومړنے شاهد دے؛ د رياضيکي سمون تصويب نه کوي.
+  - `AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; explicitly regional mathematical comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — د طبيعي عددونو عادي استقرايي ژبه ښيي؛ د سټ رتبې يا د خپلې رتبې پړاو دغه قضيه نه ثابتوي.
+  - `OPENLOGIC-DEC-OLSTH-007-3` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — سرچينه x∈V_α فرضوي او بيا لفظاً x∉V_α اخلي. اړوند ثبوت د x د خپلې رتبې په پړاو کښې نۀ‌غړيتوب کاروي؛ له دې rank(x)=α ناممکن کېږي. د صفر، تالي او حدي حالتونو د اقل والي دليل دا تنګ شاخص سمون پخوي، نور فورمولونه نه بدلوي.
+- Alternatives:
+  - x∉V_α همداسې ساتل؛ له څرګند فرض x∈V_α سره سمدستي ټکر کوي (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د رتبې بشپړ تعريف بدلول؛ د خپلې رتبې د پړاو تنګ اصلاح ته اړتيا نه لري (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-027829` | `OLP-0564` / `OLP-0564-B006` | رتبه | `upstream/content/set-theory/spine/rank.tex:32-39` | `ps-Arab-PK/content/set-theory/spine/rank.tex:31-45` | pending; no page guessed |

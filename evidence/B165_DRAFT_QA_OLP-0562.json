@@ -1,0 +1,43 @@
+{
+  "schema": "ps-b165-draft-qa/1",
+  "status": "draft; not accepted",
+  "unit_id": "OLP-0562",
+  "source_path": "content/set-theory/spine/foundation.tex",
+  "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+  "target_sha256": "d9b3104bbdffaa77a49b4c0bcd6f95fc4e2e4681551b2e8a6b56eb15725f61fc",
+  "source_blocks": 19,
+  "target_blocks": 19,
+  "math_spans": 51,
+  "tikz_diagrams": 0,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-006"
+  ],
+  "math_exception": {
+    "source_only": [
+      "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inb)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+    ],
+    "target_only": [
+      "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inB)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+    ]
+  },
+  "checks": {
+    "math_matches_disclosed_source_exceptions": true,
+    "paired_blocks": true,
+    "identifiers_equal": true,
+    "tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "tikz_bytes_equal": true,
+    "nfc": true,
+    "source_frozen": true,
+    "no_replacement_character": true,
+    "raw_source_newline_style_equal": true,
+    "no_malformed_carriage_returns": true,
+    "no_untranslated_ordinary_english": true,
+    "ordered_active_math_equal": true
+  },
+  "all_checks_pass": true,
+  "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+}

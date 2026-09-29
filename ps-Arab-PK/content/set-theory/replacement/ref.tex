@@ -1,0 +1,43 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{ref}
+\olsection{تعويض او انعکاس}
+
+د \stagesinex له لارې د تعويض د توجيې زموږ وروستۍ هڅه له يوې ژورې
+او ښکلې پايلې پيلېږي:\footnote{يادونه: ټول فورمولونه پاراميټرونه
+لرلے شي، مګر چې په څرګند ډول بل څه ويل شوي وي.}
+%In this, I will use overlining, such as $x_1, \ldots, x_n$, to
+%abbreviate ``$x_1, \ldots, x_n$'': 
+\begin{thm}[د انعکاس شېما]\ollabel{reflectionschema}
+د هر فورمول $\phi$ دپاره:
+\[
+\forall \alpha \exists \beta > \alpha (\forall x_1 \ldots, x_n \in
+V_\beta)(\phi(x_1, \ldots, x_n) \liff \phi^{V_\beta}(x_1, \ldots, x_n))
+\]
+\end{thm}
+\noindent 
+لکه په \olref[sth][replacement][strength]{formularelativization} کښې،
+$\phi^{V_\beta}$ د $\phi$ د ټولو کميت ټاکونکو د $V_\beta$ سټ ته
+د محدودولو پايله ده۔ نو انعکاس په بداهتي ډول داسې وايي: که $\phi$
+په ټوله سلسله کښې رښتيا وي، نو $\phi$ د سلسلې په هر څومره لرې
+\emph{پيلنيو برخو} کښې هم رښتيا وي۔
+
+\citet{Montague1961} او \citet{Levy1960} وښودله چې د تعويض او
+انعکاس مناسبې رسمي بڼې د~$\Z$ په نسبت همارزښته دي؛ نو له دغو دوو
+هر يو چې ورزيات کړو، $\ZF$ ترلاسه کېږي۔ (دا پايلې په
+\olref[sth][replacement][refproofs]{sec} کښې ثابتوو۔) له دې
+همارزښت څخه هيله کېدے شي چې د \stagesinex{} په مټ انعکاس او تعويض
+داسې توجيه کړو: د \stagesinex په منلو سره سلسله بايد ډېره، ډېره
+لوړه وي؛ دومره لوړه چې د هغې په اړه هېڅ وينا ئې د لوړوالي د حد
+ټاکلو دپاره بس نۀ وي۔ دا داسې هم پوهېدے شو چې که کومه جمله~$\phi$
+په ټوله سلسله کښې رښتيا وي، نو د سلسلې په هر څومره لرې پيلنيو
+برخو کښې هم رښتيا وي۔ همدا انعکاس دے۔
+
+بيا هم، دا د تعويض د دننۍ توجيې يوه رښتيا هيله‌بښونکې هڅه ښکاري۔
+خو دلته د دې په اړه تر دې ډېر څه ويل پکار دي۔ اوس پخپله پرېکړه
+وکړئ چې دا هڅه بريالۍ ده که نۀ۔\footnote{کېدے شي د نورو معلوماتو
+دپاره \citet[95--100]{Incurvati2020} هم ولولئ.}
+
+\end{document}

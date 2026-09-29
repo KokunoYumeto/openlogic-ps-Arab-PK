@@ -1,0 +1,139 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{rank}
+\olsection{رتبه}
+
+اوس چې پړاوونه مو د $V_\alpha$ په توګه تعريف کړي او پوهېږو چې هر سټ
+د کوم پړاو فرعي سټ دے، د سټ \emph{رتبه} تعريفولے شو۔ په بداهتي توګه،
+د $A$ رتبه هغه لومړۍ شېبه ده چې $A$ پکښې جوړېږي۔ په کره توګه:
+
+\begin{defn}\ollabel{defnsetrank}
+د هر سټ $A$ دپاره $\setrank{A}$ تر ټولو وړوکے هغه ترتيبي عدد $\alpha$
+دے چې $A \subseteq V_\alpha$ دے۔
+\end{defn}
+\begin{prop}\ollabel{ranksexist}
+	$\setrank{A}$ د هر $A$ دپاره شته۔
+\end{prop}
+\begin{proof}
+	د تمرين په توګه پرېښودل شوے دے۔
+\end{proof}
+\begin{prob}
+	د \olref[sth][spine][rank]{ranksexist} ثبوت ورکړئ۔
+\end{prob}
+\noindent
+د رتبو ښه ترتيب موږ ته د ځينو مهمو پايلو د ثابتولو امکان راکوي:
+\begin{prop}\ollabel{valphalowerrank}
+د هر ترتيبي عدد $\alpha$ دپاره $V_\alpha = \Setabs{x}{\setrank{x} \in \alpha}$ دے۔
+\end{prop}
+
+\begin{proof}
+که $\setrank{x} \in \alpha$ وي، نو $x \subseteq V_{\setrank{x}} \in
+V_\alpha$ دے؛ نو $x \in V_\alpha$ دے، ځکه چې $V_\alpha$ توانمن دے
+(دلته \olref[Valphabasic]{Valphabasicprops} څو ځلې کارول کېږي)۔ بالعکس،
+که $x \in V_\alpha$ وي، نو $x \subseteq V_\alpha$ دے؛ له دې امله
+$\setrank{x} \leq \alpha$ دے۔ اوس يو ساده نامتناهيت هاخوا استقرا ښيي چې
+$x \notin V_{\setrank{x}}$ دے؛ نو د سټ رتبه له ورکړل شوي ترتيبي عدد
+څخه کمه ده۔ (د سرچينې سمون، OLSTH-007: سرچينه په دې وروستۍ وينا کښې
+د هماغه ورکړل شوي پړاو غړيتوب نفي کوي چې د ثبوت فرض ئې مني۔ د استقرا
+د سمې پايلې پړاو د سټ خپله رتبه ده؛ دلته يوازې دغه شاخص سم شوے دے۔)
+\end{proof}
+\begin{prob}
+	په \olref[sth][spine][rank]{valphalowerrank} کښې ياد شوے ساده
+	نامتناهيت هاخوا استقرا بشپړ کړئ۔
+\end{prob}
+
+\begin{prop}\ollabel{rankmemberslower}
+که $B \in A$ وي، نو $\setrank{B} \in \setrank{A}$ دے۔
+\end{prop}
+
+\begin{proof}
+د \olref{valphalowerrank} له مخې
+$A \subseteq V_{\setrank{A}} = \Setabs{x}{\setrank{x} \in
+\setrank{A}}$ دے۔
+\end{proof}
+\noindent
+په دې حقيقت داسې پايله ثابتولے شو چې د استقرا د يوې بڼې له لارې د
+\emph{ټولو سټونو} په اړه د ويناوو د ثابتولو امکان راکوي:
+
+\begin{thm}[د $\in$-استقرا شېما]
+د هر فارمول $\phi$ دپاره:
+\[
+	\forall A((\forall x \in A)\phi(x) \lif \phi(A)) \lif \forall A \phi(A).
+\]
+\end{thm}
+
+\begin{proof}
+نقيض عکس به ثابتوو۔ نو فرض کړئ $\lnot \forall A
+\phi(A)$ دے۔ د نامتناهيت هاخوا استقرا
+(\olref[ordinals][basic]{ordinductionschema}) له مخې يو داسې سټ شته
+چې $\phi$ نۀ دے او تر ټولو وړوکې ممکنه رتبه لري؛ يعنې داسې $A$ شته
+چې $\lnot \phi(A)$ دے او $\forall x(\setrank{x} \in \setrank{A}
+\lif \phi(x))$ دے۔ اوس که $x \in A$ وي، نو د
+\olref{rankmemberslower} له مخې $\setrank{x} \in
+\setrank{A}$ دے؛ له دې امله $\phi(x)$ دے؛ يعنې $(\forall x \in
+A)\phi(x) \land \lnot \phi(A)$ دے۔
+\end{proof}\noindent دا ځواکمنه پايله په غير رسمي توګه داسې بيانولے
+شو: $\phi$ هله او يوازې هله \emph{وراثتي} دے چې، هر کله د يوه سټ
+هر !!{element} د $\phi$ خاصيت ولري، هماغه سټ پخپله هم $\phi$ وي۔ نو
+$\in$-استقرا دا درته وايي: که $\phi$ وراثتي وي، هر سټ $\phi$ دے۔
+
+د رتبو بحث د اوس دپاره په دې توګه پاې ته رسوو چې هغه څو ادعاوې
+ثابتې کړو چې څو ځلې مو ئې مخکښې اشاره کړې وه۔
+
+\begin{prop}\ollabel{ranksupstrict}
+$\setrank{A} = \supstrict_{x \in A}\setrank{x}$.
+\end{prop}
+
+\begin{proof}
+$\alpha = \supstrict_{x \in A}\setrank{x}$ واخلئ۔ د
+\olref{rankmemberslower} له مخې $\alpha \leq \setrank{A}$ دے۔ خو که
+$x \in A$ وي، نو $\setrank{x} \in \alpha$ دے؛ نو د
+\olref{valphalowerrank} له مخې $x \in V_\alpha$ دے، او له دې امله
+$A \subseteq V_\alpha$ دے؛ يعنې $\setrank{A} \leq \alpha$ دے۔ نو
+$\setrank{A} = \alpha$ دے۔
+\end{proof}
+
+\begin{cor}\ollabel{ordsetrankalpha}
+د هر ترتيبي عدد $\alpha$ دپاره $\setrank{\alpha} = \alpha$ دے۔
+\end{cor}
+
+\begin{proof}
+د نامتناهيت هاخوا استقرا دپاره فرض کړئ چې $\setrank{\beta} = \beta$
+د هر $\beta \in \alpha$ دپاره دے۔ اوس د \olref{ranksupstrict} له مخې
+$\setrank{\alpha} = \supstrict_{\beta \in
+\alpha}\setrank{\beta} = \supstrict_{\beta \in \alpha}\beta = \alpha$
+دے۔
+%	First note that $\setrank{\alpha} \neq \beta$ for any $\beta \in
+%	\alpha$. For otherwise we would have $\beta = \setrank{\beta} \in
+%	\setrank{\alpha} = \beta$ by \olref{rankmemberslower}, i.e.,
+%	$\beta \in \beta$, a contradiction. 
+%
+%	Now note that $\alpha \subseteq V_\alpha$. For $\alpha =
+%	\Setabs{\beta}{\beta \in \alpha}$ by
+%	\olref[sfr][ordinals][basic]{ordissetofsmallerord}. And if
+%	$\beta \in \alpha$ then $\beta \subseteq V_{\setrank{\beta}} =
+%	V_\beta \in V_\alpha$, hence $\beta \in V_\alpha$, by
+%	\olref[sfr][spine][Valphabasic]{Valphabasicprops} twice. 
+\end{proof}
+
+په پاې کښې، د هغې پايلې يو لنډ ثبوت وړاندې کوو چې د
+\olref[foundation]{sec} په پاې کښې مو ئې ژمنه کړې وه: $\ZFminus$ د
+$\emph{منظموالی} \Rightarrow \emph{د بنسټ اصل}$ شرطي وينا ثابتوي۔
+(ياد ولرئ چې په دې ثبوت کښې د ``رتبې'' مفهوم او
+\olref{rankmemberslower} کارولے شو؛ ځکه لکه څنګه چې د دې برخې په
+پيل کښې مو ياد کړل، دا د $\ZFminus + \text{منظموالی}$ له مخې وړاندې
+کېدلے شي۔)
+
+\begin{prop}[په $\ZFminus + \text{منظموالی}$ کښې کار کوو]\ollabel{zfminusregularityfoundation} د بنسټ اصل صدق کوي۔
+\end{prop}
+
+\begin{proof}
+$A \neq \emptyset$ وټاکئ او داسې $B \in A$ واخلئ چې تر ټولو وړوکې
+ممکنه رتبه لري۔ که $c \in B$ وي، نو د \olref{rankmemberslower} له مخې
+$\setrank{c} \in \setrank{B}$ دے؛ نو $c \notin A$ دے، د $B$ د
+انتخاب له امله۔
+\end{proof}
+
+\end{document}

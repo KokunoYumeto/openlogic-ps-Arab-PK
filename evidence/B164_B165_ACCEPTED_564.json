@@ -1,0 +1,60 @@
+{
+  "schema": "ps-b164-b165-accepted-editable/1",
+  "status": "accepted editable drafts; corpus QA and dual canonical replay PASS",
+  "utc": "2026-09-29T17:36:53.753830+00:00",
+  "accepted_through_unit": "OLP-0564",
+  "draft_units": 564,
+  "remaining_unaccepted_units": 158,
+  "unit_ids": [
+    "OLP-0557",
+    "OLP-0558",
+    "OLP-0559",
+    "OLP-0560",
+    "OLP-0561",
+    "OLP-0562",
+    "OLP-0563",
+    "OLP-0564"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "aligned_blocks": 8365,
+  "segment_canon_uses": 5253,
+  "semantic_samples": 1761,
+  "terms": 274,
+  "review_entries": 709,
+  "source_actions": 429,
+  "decisions": 709,
+  "occurrences": 27829,
+  "reader_pages_available_historical": 18455,
+  "reader_pages_pending": 9374,
+  "source_audit_sha256": {
+    "PS-B164-ORDINAL-SUCCESSORS-STAGE-RECURSION": "4be098ae2abed326278943dcbbebfde9d17654f368e231e69e117518adc66d3e",
+    "PS-B165-FOUNDATION-ZF-RANK": "ab9417e4acc2848f58e3278c9f8a8810c9d12f3c2b75717c70bbe974d7c45851"
+  },
+  "staging_sha256": {
+    "B164": "89aaf9851796a8d545a7d50e296cbfda009d6056943745215cd7555d40e42ed8",
+    "B165": "166ee5c5179a50f08c6e081885563acace6dd9b1a20d72c9a694317a55b77fe5"
+  },
+  "correction_review_registration_sha256": "bdaa87e189cda6b72e908fac9988ee6208acbd47fc5bfc943cab5982efdac571",
+  "corpus_qa_sha256": "1bb03b58a51ce406435b41552340c58b26764ad89a86a8faa1e66f3bebbeed81",
+  "canonical_replay_sha256": "e40a71097eff9ec22de461ad0d3448da57be8d0e170a682884112f3fced57000",
+  "qa_sha256": "07fe5255616438d9a13d20d9eae8f37a4b6fcf7263b0b4ed46c421a6e5923e0e",
+  "staged_not_accepted_unit_ids": [
+    "OLP-0565",
+    "OLP-0566",
+    "OLP-0567",
+    "OLP-0568",
+    "OLP-0569",
+    "OLP-0570",
+    "OLP-0571"
+  ],
+  "staged_checkpoint_sha256": "4d892fa44753a234b6e5bcc65c34e1d4bb7888e386cf77229867f02167bb9b78",
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "known_prior_gaps": [
+    "OLINT-011",
+    "OLINT-017"
+  ],
+  "next_action": "Register B166 terms and all semantic samples for checked OLP-0565–0571; continue OLP-0572 onward. Prepare a 564-unit reader and make one bounded guarded TeX attempt at a later natural checkpoint; continue translation if unavailable or failed. Full 722-unit reader, metadata and verified release remain required."
+}

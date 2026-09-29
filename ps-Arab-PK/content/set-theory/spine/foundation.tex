@@ -1,0 +1,110 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{foundation}
+
+\olsection{د بنسټ اصل}
+
+زموږ کار يوازې \emph{نږدې} پاې ته رسېدلے دے، لا \emph{بشپړ} نۀ دے؛ ځکه په
+$\ZFminus$ کښې هېڅ داسې څه نشته چې دا تضمين کړي چې \emph{هر} سټ په کوم
+$V_\alpha$ کښې دے؛ يعنې هر سټ په کوم پړاو کښې جوړېږي۔
+
+اوس په يوه نسبتاً څرګنده رياضياتي معنٰی کښې موږ ته دا \emph{پروا نۀ لري}
+چې له دې سلسلې نه بهر سټونه شته که نۀ۔ (که هلته سټونه وي، په اسانۍ سره ئې
+له پامه غورځولے شو۔) خو د سټ خپل \emph{مفهوم} مو په دې فکر ولاړ کړے دے چې
+هر سټ په کوم پړاو کښې جوړېږي (په \olref[z][story]{sec} کښې \stageshier{}
+وګورئ)۔ نو غواړو چې له دې سلسلې نه بهر د سټونو امکان رد کړو۔ په دې خاطر
+بايد يو نوے اصل ورزيات کړو، څو ډاډمن شو چې هر سټ د سلسلې په کوم ځاے کښې
+راځي۔
+
+څرنګه چې $V_\alpha$ زموږ پړاوونه دي، په ساده توګه دا لاندې وينا د يوه
+اصل په توګه ورزياتولے شو:
+
+\begin{defish}
+\emph{منظموالی۔} $\forall A \exists \alpha\, A \subseteq V_\alpha$
+\end{defish}
+
+دا به يو بالکل معقول چلند وي۔ خو د هغو دليلونو له مخې چې په راتلونکې
+برخه کښې به بيان شي، د دې پر ځاے يو بل اصل غوره کوو:
+
+\begin{axiom}[د بنسټ اصل]
+$(\forall A \neq \emptyset)(\exists B \in A)A \cap B = \emptyset$.
+\end{axiom}
+
+په يو څه هڅه سره په $\ZFminus$ کښې ښودلے شو چې د بنسټ اصل منظموالي ته
+استلزام ورکوي:
+\begin{defn}
+د هر سټ $A$ دپاره داسې واخلئ:
+\begin{align*}
+	\text{cl}_0(A) &= A,\\
+	\text{cl}_{n+1}(A) &= \bigcup \text{cl}_n(A),\\
+	\text{trcl}(A) &= \bigcup_{n < \omega} \text{cl}_{n}(A).
+\end{align*}
+$\text{trcl}(A)$ ته د $A$ \emph{متعدي بندښت} وايو۔
+\end{defn}
+\noindent
+د ``متعدي بندښت'' نوم مناسب دے:
+\begin{prop}\ollabel{subsetoftrcl}
+$A \subseteq \trcl{A}$ او $\trcl{A}$ يو متعدي سټ دے۔
+\end{prop}
+
+\begin{proof}
+په ښکاره $A = \text{cl}_0(A) \subseteq \text{trcl}(A)$ دے۔ او که $x
+\in b \in \trcl{A}$ وي، نو $b \in \text{cl}_n(A)$ د کوم $n$ دپاره دے؛
+له دې امله $x \in \text{cl}_{n+1}(A) \subseteq \text{trcl}(A)$ دے۔
+\end{proof}
+
+\begin{lem}\ollabel{lem:TransitiveWellFounded}
+که $A$ يو متعدي سټ وي، نو داسې $\alpha$ شته چې $A
+\subseteq V_\alpha$ دے۔
+\end{lem}
+
+\begin{proof}
+له \olref[ordinals][opps]{defsupstrict} نه د ``$\supstrict(X)$'' تعريف راياد
+کړئ او دا دوه سټونه تعريف کړئ:
+\begin{align*}
+	D  &= \Setabs{x \in A}{\forall \delta\ x \nsubseteq V_\delta}\\
+	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
+	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
+\end{align*}
+فرض کړئ $D = \emptyset$ دے۔ نو که $x \in A$ وي، داسې $\delta$ شته چې
+$x \subseteq V_\delta$ دے او د ترتيبي عددونو د ښه ترتيب له مخې
+$(\forall \gamma \in \delta)x \nsubseteq V_\gamma$ دے؛ نو $\delta \in \alpha$
+دے او د \olref[spine][Valphabasic]{Valphabasicprops} له مخې $x \in V_\alpha$
+دے۔ له دې امله، لکه څنګه چې غوښتل شوي وو، $A \subseteq V_{\alpha}$ دے۔
+
+نو يوازې دا ښودل بس دي چې $D = \emptyset$ دے۔ د تناقض له لارې د ثبوت
+دپاره ئې عکس فرض کړئ۔ د بنسټ د اصل له مخې داسې $B \in D \subseteq A$
+شته چې $D \cap B = \emptyset$ دے۔ که $x \in B$ وي، نو $x \in A$ دے، ځکه
+$A$ متعدي دے؛ او څرنګه چې $x \notin D$ دے، نو $\exists \delta\ x \subseteq
+V_\delta$ دے۔ اوس داسې واخلئ:
+\[
+	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
+\]
+لکه د مخکښې په شان، $B \subseteq V_\beta$ دے؛ دا له دې وينا سره تناقض
+لري چې $B \in D$ دے۔ (د سرچينې سمون، OLSTH-006: په دې يوې معادلې کښې
+کوچنے توری د مخکښې ټاکل شوي لوې توري پر ځاے راغلے و۔ دلته هماغه ټاکلے
+شوے سټ کارول شوے دے؛ نور شرطونه او فارمولونه ساتل شوي دي۔)
+\end{proof}
+
+\begin{thm}\ollabel{zfentailsregularity}
+منظموالی صدق کوي۔
+\end{thm}
+
+\begin{proof}
+$A$ وټاکئ؛ د \olref{subsetoftrcl} له مخې $A \subseteq \trcl{A}$ دے، او
+دا متعدي سټ دے۔ نو د \olref{lem:TransitiveWellFounded} له مخې داسې
+$\alpha$ شته چې $A \subseteq \trcl{A} \subseteq V_\alpha$ دے۔
+\end{proof}
+
+دا پايلې ښيي چې $\ZFminus$ شرطي وينا
+$\emph{د بنسټ اصل}\Rightarrow\emph{منظموالی}$ ثابتوي۔ په
+\olref[spine][rank]{zfminusregularityfoundation} کښې به وښيو چې
+$\ZFminus$ د $\emph{منظموالی}\Rightarrow\emph{د بنسټ اصل}$ وينا ثابتوي۔
+نو د بنسټ اصل او منظموالی د $\ZFminus$ په شتون کښې \emph{همارزښته} دي۔
+دا معنا لري چې د $\ZFminus$ په فرضولو سره د بنسټ اصل په دې توجيه کولے
+شو چې له منظموالي سره همارزښته دے۔ او منظموالی د \stageshier{} پر بنسټ
+نېغ په نېغه توجيه کولے شو۔
+
+\end{document}

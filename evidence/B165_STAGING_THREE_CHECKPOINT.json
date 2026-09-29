@@ -1,0 +1,159 @@
+{
+  "schema": "ps-b165-three-staging/1",
+  "utc": "2026-09-29T05:03:02.197556+00:00",
+  "status": "three checked drafts staged; not accepted",
+  "accepted_draft_units_at_staging": 556,
+  "B164_acceptance_pending": true,
+  "unit_ids": [
+    "OLP-0562",
+    "OLP-0563",
+    "OLP-0564"
+  ],
+  "units": [
+    {
+      "schema": "ps-b165-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0562",
+      "source_path": "content/set-theory/spine/foundation.tex",
+      "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+      "target_sha256": "d9b3104bbdffaa77a49b4c0bcd6f95fc4e2e4681551b2e8a6b56eb15725f61fc",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "math_spans": 51,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-006"
+      ],
+      "math_exception": {
+        "source_only": [
+          "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inb)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+        ],
+        "target_only": [
+          "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inB)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+        ]
+      },
+      "checks": {
+        "math_matches_disclosed_source_exceptions": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_malformed_carriage_returns": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b165-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0563",
+      "source_path": "content/set-theory/spine/zf.tex",
+      "source_sha256": "94df3fb797ff5d12ce812c586f3dd8211fd7972ebaf25d3363bb135ad7686d73",
+      "target_sha256": "dc833ba4b7a1043ad11bf6d41e4b057026d0d0223868064c2d7fc59015304985",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "math_spans": 19,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_matches_disclosed_source_exceptions": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_malformed_carriage_returns": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b165-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0564",
+      "source_path": "content/set-theory/spine/rank.tex",
+      "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+      "target_sha256": "1b35f714df68555f086cff615ec2dab79f82329c49ea238f7bf44172e33732f6",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "math_spans": 64,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-007"
+      ],
+      "math_exception": {
+        "source_only": [
+          "$x\\notinV_\\alpha$"
+        ],
+        "target_only": [
+          "$x\\notinV_{\\setrank{x}}$"
+        ]
+      },
+      "checks": {
+        "math_matches_disclosed_source_exceptions": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_malformed_carriage_returns": true,
+        "no_untranslated_ordinary_english": true,
+        "ordered_active_math_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    }
+  ],
+  "paired_blocks": 49,
+  "changed_content_canon_uses": 38,
+  "math_spans": 134,
+  "tikz_diagrams": 0,
+  "source_frozen": true,
+  "notes_sha256": "d1190e486a97d3545108e8d09d9c5048b655136e0b84d2b37b79e2461d7ee144",
+  "staging_alignment_sha256": "d85298b4d851cbb2bd69ab030bdde3d6368bcfc47cf3227283b81fd70b37a57e",
+  "staging_canon_use_sha256": "fe7c56bdf5dc3ffb4eeb53a59c7e01da749457228dea93c6c6aa2cc969bac57c",
+  "new_source_treatments_pending_registration": [
+    "OLSTH-006",
+    "OLSTH-007"
+  ],
+  "new_choices_pending_registration": [
+    "Foundation versus this source-specific Regularity",
+    "transitive set closure versus relation closure",
+    "set rank and hereditary membership induction"
+  ],
+  "next_action": "Register B164 then B165 terms, exact source-local corrections and full semantic samples; cumulative QA and canonical replay precede acceptance. Continue OLP-0565 onward; TeX slot state does not hold translation.",
+  "formula_policy": "All ordered symbolic spans retained except one b-to-B correction in the beta bound and one own-rank stage-index correction. Textual mathematical names localized; no other formula changes.",
+  "source_local_correction_check_sha256": "9a57d07c49fe7f4324e3d16ac39fe03248dc5fba97343b4dca2ca5f15d2b8e8e",
+  "focused_repairs_sha256": "a8c6102124984ac61e26c84f31ccf2888187d955b1525452f3803767e6a38186",
+  "batch_id": "PS-B165-FOUNDATION-ZF-RANK"
+}

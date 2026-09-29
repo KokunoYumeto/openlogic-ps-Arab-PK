@@ -1,0 +1,80 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T05:06:47.916213+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-STAGE-RECURSION",
+  "batch_id": "PS-B164-ORDINAL-SUCCESSORS-STAGE-RECURSION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0557",
+      "source_path": "content/set-theory/ordinals/opps.tex",
+      "source_bytes": 3774,
+      "source_sha256": "f53aa4197833752c4ecdd3d7755c8e13cdec164fd68d0261dac26290a95cd171",
+      "target_sha256": "527e7f4324b4e91d185837155d3053e9b70cf2ae1681a248134de3fc70cccdee",
+      "paired_blocks": 15,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0558",
+      "source_path": "content/set-theory/spine/spine.tex",
+      "source_bytes": 307,
+      "source_sha256": "990b6ec9c7785eb5cc4fdbd82c029fffa99c0409a869a7309bb4522b41b6e0d6",
+      "target_sha256": "5797ef881b5cb4049262468eb5bd083aa53438bc7f0dcac860eaa0d30d81c97a",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0559",
+      "source_path": "content/set-theory/spine/idea.tex",
+      "source_bytes": 1750,
+      "source_sha256": "72e78cfef1d30e6a2e097f398dd5f502654f906c855dc226b9f616947a2b6955",
+      "target_sha256": "ebb594e695e2003ef4223c284cd66568043cef71fc72f2403680188dffae8003",
+      "paired_blocks": 8,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0560",
+      "source_path": "content/set-theory/spine/recursion.tex",
+      "source_bytes": 6139,
+      "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+      "target_sha256": "033b44f5799d5fc664c631b0390ff5ae16c5f6f037720c66d46a84f303cefacd",
+      "paired_blocks": 23,
+      "source_correction_ids": [
+        "OLSTH-005"
+      ]
+    },
+    {
+      "unit_id": "OLP-0561",
+      "source_path": "content/set-theory/spine/stagesbasics.tex",
+      "source_bytes": 4444,
+      "source_sha256": "055948a696b012f7bf5b0a6e9ac39297a0a910f6c17ca9580782e9795e87def6",
+      "target_sha256": "3846f4094824927fec988c435f9cacb2c12b6788a442ff4d7966548d9c4f7fd2",
+      "paired_blocks": 17,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B164_ALL5_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "a20addd9c7499698e2077ecde682e93f435bc3035f756f63787cc2b2d842fbc5",
+  "staging_checkpoint_sha256": "89aaf9851796a8d545a7d50e296cbfda009d6056943745215cd7555d40e42ed8",
+  "model_provenance_sha256": "4b37a0dbf4891b0ecb71cb47f396598abfd5db850b85b2fd7412e9f247e5075e",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P22-REAL-SUPREMUM",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-BUKOVSKY-P205-NATURAL-CLOSURE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-SUCCESSOR-LIMIT-ORDINAL",
+    "TERM-SET-STRICT-UPPER-BOUND",
+    "TERM-SET-TRANSFINITE-RECURSION-APPROXIMATION",
+    "TERM-SET-INTERNAL-STAGE-POTENCY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-005"
+  ],
+  "semantic_samples_added": 43,
+  "formula_policy": "All205 ordered symbolic spans across the batch retained; first xi text predicate deliberately extended by empty-domain case. Other branches and all proof equations unchanged.",
+  "unresolved": "عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے. پخوانے انګرېزي شاخص او بشپړه لوستيزه کتنه لا بشپړېدلو ته اړ دي.",
+  "next_executable_action": "Run both561-unit corpus QA generators and dual canonical replay; continue B165 source registration and OLP-0565 onward. TeX attempt only at a later natural validated scope; no polling or translation hold."
+}

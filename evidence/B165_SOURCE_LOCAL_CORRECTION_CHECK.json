@@ -1,0 +1,30 @@
+{
+  "schema": "ps-b165-source-local-correction-check/1",
+  "utc": "2026-09-29T04:57:14.673025+00:00",
+  "status": "source-local symbolic implications checked; focused file parity pending",
+  "OLSTH-006": {
+    "scope": "OLP-0562 beta definition only",
+    "finding": "The preceding Foundation step binds B, its members are shown bounded, and the following contradiction uses B subset V_beta. Lowercase b in the displayed bound is unbound in that argument.",
+    "correction": "Quantify x in B; all other quantifiers and predicate conditions retained."
+  },
+  "OLSTH-007": {
+    "scope": "OLP-0564 reverse inclusion proof only",
+    "finding": "The premise x in V_alpha contradicts the source literal conclusion x notin V_alpha. The true intended rank-indexed nonmembership yields rank x less than alpha.",
+    "cases": [
+      {
+        "case": "zero rank",
+        "argument": "V_0 is empty, so membership in the own-rank stage is impossible."
+      },
+      {
+        "case": "successor own rank beta+1",
+        "argument": "Membership in V_(beta+1)=P(V_beta) would imply x subset V_beta, contradicting minimality of the rank."
+      },
+      {
+        "case": "limit own rank lambda",
+        "argument": "Membership in the union V_lambda gives membership in V_beta for some beta<lambda. Stage potency gives x subset V_beta, contradicting rank minimality."
+      }
+    ],
+    "conclusion": "x notin V_rank(x); combined with assumed x in V_alpha and rank(x)<=alpha, equality is impossible."
+  },
+  "limits": "This checks the two disclosed source-local corrections; no new independent theorem or full formal-kernel verification is claimed."
+}

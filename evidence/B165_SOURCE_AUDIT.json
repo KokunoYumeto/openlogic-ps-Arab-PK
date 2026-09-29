@@ -1,0 +1,64 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T17:04:02.514907+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-FOUNDATION-RANK",
+  "batch_id": "PS-B165-FOUNDATION-ZF-RANK",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0562",
+      "source_path": "content/set-theory/spine/foundation.tex",
+      "source_bytes": 4349,
+      "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+      "target_sha256": "d9b3104bbdffaa77a49b4c0bcd6f95fc4e2e4681551b2e8a6b56eb15725f61fc",
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLSTH-006"
+      ]
+    },
+    {
+      "unit_id": "OLP-0563",
+      "source_path": "content/set-theory/spine/zf.tex",
+      "source_bytes": 1969,
+      "source_sha256": "94df3fb797ff5d12ce812c586f3dd8211fd7972ebaf25d3363bb135ad7686d73",
+      "target_sha256": "dc833ba4b7a1043ad11bf6d41e4b057026d0d0223868064c2d7fc59015304985",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0564",
+      "source_path": "content/set-theory/spine/rank.tex",
+      "source_bytes": 5018,
+      "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+      "target_sha256": "1b35f714df68555f086cff615ec2dab79f82329c49ea238f7bf44172e33732f6",
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLSTH-007"
+      ]
+    }
+  ],
+  "notes_path": "work/B165_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "d1190e486a97d3545108e8d09d9c5048b655136e0b84d2b37b79e2461d7ee144",
+  "staging_checkpoint_sha256": "166ee5c5179a50f08c6e081885563acace6dd9b1a20d72c9a694317a55b77fe5",
+  "model_provenance_sha256": "fee212352105162722f7937d5843e555f05b78a2db98004e4787aeecfc62c4aa",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P205-NATURAL-CLOSURE",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+  ],
+  "new_term_ids": [
+    "TERM-SET-FOUNDATION-REGULARITY",
+    "TERM-SET-TRANSITIVE-CLOSURE-SET",
+    "TERM-SET-Z-ZF-FOUNDATION-MILESTONE",
+    "TERM-SET-RANK-HEREDITARY-INDUCTION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-006",
+    "OLSTH-007"
+  ],
+  "semantic_samples_added": 40,
+  "formula_policy": "All134 ordered symbolic spans retained except two exact, disclosed source-local replacements; formula exceptions pinned in SOURCE_CORRECTIONS.json. All source comments and identifiers retained.",
+  "unresolved": "عين پاکستانے تخصصي مرکب په کتل شويو مخونو کښې نۀ دے موندل شوے؛ د سرچينې د کره تعريف او څرګند سيمه‌ييز شاهد له مخې انتخاب لنډمهاله دے. پخوانے انګرېزي شاخص او بشپړه لوستيزه کتنه لا بشپړېدلو ته اړ دي.",
+  "next_executable_action": "Run both564-unit corpus QA generators and dual canonical replay; then accept B164–B165 if all PASS. Continue source OLP-0565 onward. TeX only at later natural validated scope."
+}

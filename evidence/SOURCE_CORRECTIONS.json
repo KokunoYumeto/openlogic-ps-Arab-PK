@@ -22,7 +22,9 @@
     },
     "B161_SOURCE_AUDIT.json",
     "B162_SOURCE_AUDIT.json",
-    "B163_SOURCE_AUDIT.json"
+    "B163_SOURCE_AUDIT.json",
+    "B164_SOURCE_AUDIT.json",
+    "B165_SOURCE_AUDIT.json"
   ],
   "source_authority": {
     "declared_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
@@ -15396,6 +15398,187 @@
         "target_only": []
       },
       "limits": "A source-local prose typo correction; no source formula or new theorem."
+    },
+    {
+      "id": "OLSTH-005",
+      "unit_id": "OLP-0560",
+      "classification": "transfinite_recursion_missing_empty_function_base_case",
+      "source_path": "content/set-theory/spine/recursion.tex",
+      "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+      "source_locator": "content/set-theory/spine/recursion.tex:108",
+      "source_literal_line_1based": [
+        108
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/spine/recursion.tex",
+      "target_sha256": "033b44f5799d5fc664c631b0390ff5ae16c5f6f037720c66d46a84f303cefacd",
+      "target_line_1based": 116,
+      "target_literal_line_1based": [
+        116
+      ],
+      "disclosure_line_1based": 127,
+      "mode": "adjacent-Pashto-disclosed-empty-domain-branch-correction",
+      "translation_change": "د تشې تابعې د تعريف ساحه په لومړي شرط کښې ورزياته شوه؛ بنسټيز قيمت ټاکل کېږي.",
+      "reason": "تشه تابعه د ترتيبي تعريف ساحې لرونکې تابعه ده، خو ساحه ئې نۀ تالي ده او نۀ د سرچينې له تعريف سره سم حدي ده. نو د xi په اصلي درې څانګو کښې هېڅ يوه د هغې قيمت نۀ ټاکي، سره له دې چې ورپسې ثبوت xi(empty)=A کاروي. د لومړۍ څانګې تشه ساحه هم A ته استوي؛ نور دوه شرطونه نه بدلېږي.",
+      "formula_policy": "All205 ordered symbolic spans across the batch retained; first xi text predicate deliberately extended by empty-domain case. Other branches and all proof equations unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-STAGE-RECURSION",
+      "audit_artifacts": [
+        "B164_SOURCE_AUDIT.json",
+        "B164_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B164_DRAFT_QA_OLP-0560.json",
+        "B164_RECURSION_BASE_CASE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B164 complete source comparison before acceptance",
+      "upstream_reporting": "bounded manager milestone already notes staged correction; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Source-local semantic branch correction. A finite/symbolic branch audit is not a proof of the full transfinite recursion theorem.",
+      "symbolic_branch_partition_check_sha256": "160bddc90374cd5b3f1ede37b4292ab5cac36c0eb534c19683b78b8fd0aa6875"
+    },
+    {
+      "id": "OLSTH-006",
+      "unit_id": "OLP-0562",
+      "classification": "transitive_foundation_bound_witness_case_mismatch",
+      "source_path": "content/set-theory/spine/foundation.tex",
+      "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+      "source_locator": "content/set-theory/spine/foundation.tex:82",
+      "source_literal_line_1based": [
+        82
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/spine/foundation.tex",
+      "target_sha256": "d9b3104bbdffaa77a49b4c0bcd6f95fc4e2e4681551b2e8a6b56eb15725f61fc",
+      "target_line_1based": 83,
+      "target_literal_line_1based": [
+        83
+      ],
+      "disclosure_line_1based": 86,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "OLSTH-006 عين يو سمبول/شاخص په متن کښې سموي؛ پاتې رياضيکي شرطونه او ثبوتونه ساتل شوي دي.",
+      "reason": "The argument binds B in D, proves every x in B lies in a stage, and derives B subset V_beta. Lowercase b in the beta bound is an unbound mismatch; the bound must range over this B.",
+      "formula_policy": "Across B165, all134 ordered active symbolic spans retained except exactly OLSTH-006 and OLSTH-007; exact before/after math spans stored in qa_math_exception.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-FOUNDATION-RANK",
+      "audit_artifacts": [
+        "B165_SOURCE_AUDIT.json",
+        "B165_SOURCE_PREAUDIT_NOTES.md",
+        "B165_DRAFT_QA_OLP-0562.json",
+        "B165_SOURCE_LOCAL_CORRECTION_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B165 source proof comparison before acceptance",
+      "upstream_reporting": "manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inb)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+        ],
+        "target_only": [
+          "\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inB)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "A one-symbol source-local bound-variable correction; not an independent theorem or unrestricted Foundation claim.",
+      "symbolic_branch_partition_check_sha256": "160bddc90374cd5b3f1ede37b4292ab5cac36c0eb534c19683b78b8fd0aa6875",
+      "source_local_implication_check_sha256": "9a57d07c49fe7f4324e3d16ac39fe03248dc5fba97343b4dca2ca5f15d2b8e8e"
+    },
+    {
+      "id": "OLSTH-007",
+      "unit_id": "OLP-0564",
+      "classification": "rank_stage_index_contradiction",
+      "source_path": "content/set-theory/spine/rank.tex",
+      "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+      "source_locator": "content/set-theory/spine/rank.tex:35",
+      "source_literal_line_1based": [
+        35
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/spine/rank.tex",
+      "target_sha256": "1b35f714df68555f086cff615ec2dab79f82329c49ea238f7bf44172e33732f6",
+      "target_line_1based": 37,
+      "target_literal_line_1based": [
+        37
+      ],
+      "disclosure_line_1based": 38,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "OLSTH-007 عين يو سمبول/شاخص په متن کښې سموي؛ پاتې رياضيکي شرطونه او ثبوتونه ساتل شوي دي.",
+      "reason": "The proof assumes x in V_alpha, then literally concludes x notin V_alpha. The intended induction proves nonmembership in the own-rank stage, so equality rank(x)=alpha is impossible.",
+      "formula_policy": "Across B165, all134 ordered active symbolic spans retained except exactly OLSTH-006 and OLSTH-007; exact before/after math spans stored in qa_math_exception.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-FOUNDATION-RANK",
+      "audit_artifacts": [
+        "B165_SOURCE_AUDIT.json",
+        "B165_SOURCE_PREAUDIT_NOTES.md",
+        "B165_DRAFT_QA_OLP-0564.json",
+        "B165_SOURCE_LOCAL_CORRECTION_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B165 source proof comparison before acceptance",
+      "upstream_reporting": "manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\notinV_\\alpha$"
+        ],
+        "target_only": [
+          "$x\\notinV_{\\setrank{x}}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "One source-local stage-index correction with zero/successor/limit justification; no kernel formalization claimed.",
+      "symbolic_branch_partition_check_sha256": "160bddc90374cd5b3f1ede37b4292ab5cac36c0eb534c19683b78b8fd0aa6875",
+      "source_local_implication_check_sha256": "9a57d07c49fe7f4324e3d16ac39fe03248dc5fba97343b4dca2ca5f15d2b8e8e"
     }
   ],
   "external_upstream_report_submitted": false,
@@ -15504,7 +15687,9 @@
     "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
     "PS-OWNER-SEMANTIC-20260929-ZERMELO-END",
     "PS-OWNER-SEMANTIC-20260929-ORDINAL-ORDER-COMPARISON",
-    "PS-OWNER-SEMANTIC-20260929-VON-NEUMANN-REPLACEMENT"
+    "PS-OWNER-SEMANTIC-20260929-VON-NEUMANN-REPLACEMENT",
+    "PS-OWNER-SEMANTIC-20260929-STAGE-RECURSION",
+    "PS-OWNER-SEMANTIC-20260929-FOUNDATION-RANK"
   ],
   "source_authorities": [
     {

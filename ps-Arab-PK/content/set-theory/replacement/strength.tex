@@ -1,0 +1,56 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{strength}
+\olsection{د تعويض قوت}
+
+د تعويض د قوت په اړه له يوې ساده کتنې پيل کوو: که له $\Z$ څخه
+وړاندې ولاړ نۀ شو، د $\omega + \omega$ سره برابر يا تر هغه لوی هېڅ د
+فون نويمن ترتيبي عدد شتون نۀ شو ثابتولے۔
+
+د دې دليل لنډه طرحه داسې ده۔ په~$\ZF$ کښې کار وکړئ او
+$V_{\omega+\omega}$ سټ په پام کښې ونيسئ۔ دا سټ د~$\Z$ د يوه
+\emph{مدل} د ساحې کار کوي۔ د دې د ليدلو دپاره د فارمول د
+\emph{نسبي کولو} نښه تعريفوو:
+\begin{defn}\ollabel{formularelativization}
+	د هر سټ $M$ او هر فارمول $\phi$ دپاره، $\phi^M$ هغه فارمول دے
+چې د $\phi$ ټول کميت ټاکونکي په $M$ پورې محدود کړو۔ يعنې
+``$\lexists[x]$'' په ``$(\lexists[x \in M])$'' او
+``$\lforall[x]$'' په ``$(\lforall[x \in M])$'' بدل کړئ۔
+\end{defn}\noindent
+ښودل کېدے شي چې د هر اصل $\phi$ د~$\Z$ دپاره
+$\ZF \vdash \phi^{V_{\omega+\omega}}$ دے۔ خو د
+\olref[spine][rank]{ordsetrankalpha} له مخې $\omega+\omega$ په
+$V_{\omega+\omega}$ کښې \emph{غړے نۀ دے}۔ نو $\Z$ د
+$\omega+\omega$ له نشتون سره سازګار دے۔
+
+له همدې امله مو په \olref[ordinals][replacement]{sec} کښې ويلي وو
+چې \olref[ordinals][ordtype]{thmOrdinalRepresentation} له تعويض پرته
+نۀ شي ثابتېدلے۔ ځکه په~$\Z$ کښې يو څرګند ښه ترتيب په اسانۍ تعريفولے
+شو چې په بداهتي توګه ئې د ترتيب ډول بايد $\omega+\omega$ وي۔ د دې
+يوه غير رسمي مثال مو په \olref[ordinals][idea]{sec} کښې د طبيعي
+عددونو په دې ترتيب سره ورکړے و:
+\begin{align*}
+	n \lessdot m \text{ هله او يوازې هله چې }&\text{يا }n < m\text{ او }m-n\text{ جفت وي،}\\
+	& \text{يا $n$ جفت او $m$ طاق وي.}
+\end{align*}
+خو که $\omega+\omega$ موجود نۀ وي، دا ښه ترتيب له هېڅ ترتيبي عدد
+سره آيزومورف نۀ دے۔ نو $\Z$ د
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} ثبوت \emph{نۀ}
+ورکوي۔
+
+اوس موضوع بل اړخ ته واړوو: تعويض موږ ته د $\omega+\omega$ شتون
+ثابتوي؛ نو د $V_{\omega+\omega}$ شتون هم ورسره ثابتولے شي۔ دا يوازې
+همدومره نۀ دي۔ د هر هغه ښه ترتيب دپاره چې تعريفولے ئې شو،
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} وايي چې له هغه
+ښه ترتيب سره آيزومورف يو $\alpha$ شته، او له دې امله $V_\alpha$ هم
+شته۔ نو تعويض په څرګنده توګه دا تضمينوي چې د سټونو سلسله بايد
+\emph{ډېره لوړه} وي۔
+
+په راتلونکو څو برخو کښې، او بيا په
+\olref[card-arithmetic][fix]{sec} کښې، به لا ښه پوه شو چې تعويض د
+سټونو سلسله \emph{څومره} لوړېدو ته اړ باسي۔ اوس دپاره ساده خبره دا ده
+چې تعويض په رښتيا \emph{توجيه} غواړي!
+
+\end{document}
