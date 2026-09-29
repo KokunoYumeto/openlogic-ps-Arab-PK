@@ -5,9 +5,11 @@
   "current_staging_sha256": "80c9838dfae8b9bf55bc023cbca80ced6767c0191562156198ba288f170fb1fb",
   "repairs": [
     "Before focused PASS, restored ordered math positions in0552 and0556; all formulas unchanged.",
-    "Corrected staging canon-use batch identity after adapting the prior focused checker."
+    "Corrected staging canon-use batch identity after adapting the prior focused checker.",
+    "Removed inherited PK-IQRAM-P2-SEMANTICS from0552 staging canon uses; not consulted for this batch. Actual P1 and regional order witness retained."
   ],
   "all_focused_checks_passed": true,
   "ordered_math_spans": 199,
-  "new_source_corrections": []
+  "new_source_corrections": [],
+  "canon_scope_repair_sha256": "fd013ac74178732a30f10eed9d0980c519882a00aa0d5f623b13f9397946e8e2"
 }
