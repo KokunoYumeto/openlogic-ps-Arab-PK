@@ -15987,6 +15987,192 @@
         "target_only": []
       },
       "limits": "Only one source-local symbolic repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-015",
+      "unit_id": "OLP-0577",
+      "classification": "missing_relation_in_rank_exercise",
+      "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+      "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+      "source_locator": "content/set-theory/ord-arithmetic/using-addition.tex:61",
+      "source_literal_line_1based": [
+        61
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/using-addition.tex",
+      "target_sha256": "7534db54e7f08c78b77965891b133543f6240b1b616390846418b1c4408c262c",
+      "target_line_1based": 64,
+      "target_literal_line_1based": [
+        64
+      ],
+      "disclosure_line_1based": 66,
+      "mode": "adjacent-Pashto-disclosed-source-local-correction",
+      "translation_change": "د رتبې د تمرين دويمه تشه په مساوات ډکه شوې؛ د اصلي ليکوال تصويب نه ادعا کېږي.",
+      "reason": "The second exercise lacks a relation sign between the two displayed sides; equality is the candidate upper-bound example, given the preceding lemma.",
+      "formula_policy": "Focused ordered-math comparison passes exact OLSTH-015–017 exceptions; frozen source unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION",
+      "audit_artifacts": [
+        "B171_B175_SOURCE_AUDIT.json",
+        "B171_USING_ADDITION_DRAFT_QA.json"
+      ],
+      "decision_timing": "contemporaneous source comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\setrank{A\\timesB}\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+        ],
+        "target_only": [
+          "$\\setrank{A\\timesB}=\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Local translation treatment only; no original-author approval or formal proof claimed."
+    },
+    {
+      "id": "OLSTH-016",
+      "unit_id": "OLP-0579",
+      "classification": "finite_function_parameters_reversed",
+      "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+      "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+      "source_locator": "content/set-theory/ord-arithmetic/exponentiation.tex:19",
+      "source_literal_line_1based": [
+        19
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex",
+      "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "target_line_1based": 20,
+      "target_literal_line_1based": [
+        20
+      ],
+      "disclosure_line_1based": 28,
+      "mode": "adjacent-Pashto-disclosed-source-local-correction",
+      "translation_change": "د توان په ترکيبي کارونې کښې د تابعې دوۀ پارامترونه اړول شوي؛ د finfun تعريف هماغسې پاتې دے.",
+      "reason": "The printed finfun(alpha,beta) has functions alpha to beta and type beta^alpha. The alpha^beta uses require finfun(beta,alpha), as 2^3 versus 3^2 immediately checks.",
+      "formula_policy": "Focused ordered-math comparison passes exact OLSTH-015–017 exceptions; frozen source unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION",
+      "audit_artifacts": [
+        "B171_B175_SOURCE_AUDIT.json",
+        "B173_EXPONENTIATION_DRAFT_QA.json"
+      ],
+      "decision_timing": "contemporaneous source comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\ordtype{\\text{LOCALIZED}(\\alpha,\\beta),\\sqsubset}$",
+          "$\\text{LOCALIZED}(\\alpha,\\gamma)$",
+          "$\\ordexpo{\\alpha}{\\beta}=\\ordtype{\\text{LOCALIZED}(\\alpha,\\beta),\\sqsubset}$"
+        ],
+        "target_only": [
+          "$\\text{LOCALIZED}(\\alpha,\\beta)$",
+          "$\\ordexpo{\\alpha}{\\beta}$",
+          "$\\ordtype{\\text{LOCALIZED}(\\beta,\\alpha),\\sqsubset}$",
+          "$\\ordexpo{\\beta}{\\alpha}$",
+          "$\\text{LOCALIZED}(\\gamma,\\alpha)$",
+          "$\\ordexpo{\\alpha}{\\beta}=\\ordtype{\\text{LOCALIZED}(\\beta,\\alpha),\\sqsubset}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Local translation treatment only; no original-author approval or formal proof claimed."
+    },
+    {
+      "id": "OLSTH-017",
+      "unit_id": "OLP-0579",
+      "classification": "zero_base_limit_gap",
+      "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+      "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+      "source_locator": "content/set-theory/ord-arithmetic/exponentiation.tex:39",
+      "source_literal_line_1based": [
+        39
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex",
+      "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "target_line_1based": 35,
+      "target_literal_line_1based": [
+        35
+      ],
+      "disclosure_line_1based": 34,
+      "mode": "adjacent-Pashto-disclosed-source-domain-qualification",
+      "translation_change": "د ترکيبي تعريف او تمرين د برابرولو ادعا بې‌صفره بنسټ ته محدوده شوه؛ د صفر-بنسټ چاپي تشه ښکاره ده.",
+      "reason": "At alpha=0 and beta=omega, finfun(omega,0) is empty while printed recursion gives 0^omega=1; restrict equivalence to nonzero base and disclose the remaining zero-base gap.",
+      "formula_policy": "Focused ordered-math comparison passes exact OLSTH-015–017 exceptions; frozen source unchanged.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION",
+      "audit_artifacts": [
+        "B171_B175_SOURCE_AUDIT.json",
+        "B173_EXPONENTIATION_DRAFT_QA.json"
+      ],
+      "decision_timing": "contemporaneous source comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": [
+          "$\\alpha\\neq0$",
+          "$\\alpha\\neq0$",
+          "$\\alpha\\neq0$",
+          "$\\alpha=0$",
+          "$\\beta=\\omega$",
+          "$\\text{LOCALIZED}(\\omega,0)$",
+          "$0$",
+          "$\\ordexpo{0}{\\omega}=1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Local translation treatment only; no original-author approval or formal proof claimed."
     }
   ],
   "external_upstream_report_submitted": false,

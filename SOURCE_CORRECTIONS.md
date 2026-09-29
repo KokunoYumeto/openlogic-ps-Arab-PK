@@ -3925,3 +3925,30 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Audit: `PS-OWNER-SEMANTIC-20260929-ORDINAL-ADDITION`
 - Treatment: د صفر او يوه د حاصل ضرب تش ارزښت د دويمې معادلې په تش سټ بدل شو؛ نورې معادلې ساتل شوې..
 - Disclosure: `adjacent-Pashto-disclosed-source-local-symbol-correction`.
+
+## OLSTH-015
+
+- Unit: `OLP-0577`
+- Frozen source: `content/set-theory/ord-arithmetic/using-addition.tex` (9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1) at `content/set-theory/ord-arithmetic/using-addition.tex:61`
+- Pashto target: `ps-Arab-PK/content/set-theory/ord-arithmetic/using-addition.tex:64`
+- Audit: `PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION`
+- Treatment: د رتبې د تمرين دويمه تشه په مساوات ډکه شوې؛ د اصلي ليکوال تصويب نه ادعا کېږي..
+- Disclosure: `adjacent-Pashto-disclosed-source-local-correction`.
+
+## OLSTH-016
+
+- Unit: `OLP-0579`
+- Frozen source: `content/set-theory/ord-arithmetic/exponentiation.tex` (965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc) at `content/set-theory/ord-arithmetic/exponentiation.tex:19`
+- Pashto target: `ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex:20`
+- Audit: `PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION`
+- Treatment: د توان په ترکيبي کارونې کښې د تابعې دوۀ پارامترونه اړول شوي؛ د finfun تعريف هماغسې پاتې دے..
+- Disclosure: `adjacent-Pashto-disclosed-source-local-correction`.
+
+## OLSTH-017
+
+- Unit: `OLP-0579`
+- Frozen source: `content/set-theory/ord-arithmetic/exponentiation.tex` (965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc) at `content/set-theory/ord-arithmetic/exponentiation.tex:39`
+- Pashto target: `ps-Arab-PK/content/set-theory/ord-arithmetic/exponentiation.tex:35`
+- Audit: `PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION`
+- Treatment: د ترکيبي تعريف او تمرين د برابرولو ادعا بې‌صفره بنسټ ته محدوده شوه؛ د صفر-بنسټ چاپي تشه ښکاره ده..
+- Disclosure: `adjacent-Pashto-disclosed-source-domain-qualification`.

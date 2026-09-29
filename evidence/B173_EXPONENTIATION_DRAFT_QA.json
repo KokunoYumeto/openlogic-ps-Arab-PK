@@ -1,0 +1,40 @@
+{
+  "schema": "ps-b173-exponentiation-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T19:03:02.330590+00:00",
+  "unit_id": "OLP-0579",
+  "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+  "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+  "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+  "source_bytes": 2721,
+  "target_bytes": 4740,
+  "paired_blocks": 9,
+  "changed_blocks": 6,
+  "ordered_math_spans": 22,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-016",
+    "OLSTH-017"
+  ],
+  "preaudit_sha256": "3788795f29c44e8420358f6fc8393444361aa280fad799fb25f33f0f5b037800",
+  "formula_policy": "Ordered active formulas match the exact disclosed parameter reversal and nonzero-base qualification; frozen source, identifiers, environment structure and CRLF retained.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks_after_disclosure_strip": true,
+    "ordered_math_matches_disclosed_repairs": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "two_adjacent_disclosures": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register the two exact source repairs, terminology and block-level semantics before cumulative acceptance."
+}

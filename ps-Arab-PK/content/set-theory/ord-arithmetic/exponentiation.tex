@@ -1,0 +1,74 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{expo}
+\olsection{د ترتيبي عددونو توان}
+
+اوس د ترتيبي عددونو توان ته راځو۔ له بده مرغه، د ترتيبي عددونو د
+توان دپاره کوم \emph{ښکلے} ترکيبي تعريف نشته۔
+
+البته څرګند ترکيبي تعريفونه \emph{شته}۔ يو يې دا دے۔
+پرېږدئ چې $\text{finfun}(\alpha,\beta)$ د ټولو هغو تابعو $f
+\colon \alpha \to \beta$ سټ وي چې $\Setabs{\gamma \in
+\alpha}{f(\gamma) \neq 0}$ يې له کوم طبيعي عدد سره هم‌شمېره وي۔
+پر $\text{finfun}(\alpha,\beta)$ دا ښه ترتيب وټاکئ: $f
+\sqsubset g$ هغه وخت او يوازې هغه وخت چې $f \neq g$ او
+$f(\gamma_0) < g(\gamma_0)$ وي، چېرته چې
+$\gamma_0 = \text{max}\Setabs{\gamma \in \alpha}{f(\gamma) \neq
+g(\gamma)}$ دے۔ که $\alpha\neq0$ وي، بيا $\ordexpo{\alpha}{\beta}$ د
+$\ordtype{\text{finfun}(\beta, \alpha), \sqsubset}$ په توګه تعريفولے
+شو۔ Potter همدا څرګند تعريف کاروي او سمدستي ورپسې داسې وايي:
+\begin{quote}
+	د دې ترتيب ټاکنه يوازې زموږ له دې غوښتنې راولاړېږي چې د ترتيبي
+	عددونو د توان داسې تعريف ترلاسه کړو چې مناسب بازګشتي شرط پوره
+	کړي\ldots، او د دې تصور د مرتب جمع يا مرتب ضرب تر تصور ډېر ګران دے۔
+	\citep[p.~199]{Potter2004}
+\end{quote}
+\noindent\textbf{د سرچينې يادښت (OLSTH-016).}
+په انګليسي سرچينه کښې دلته د $\ordexpo{\alpha}{\beta}$ دپاره
+$\text{finfun}(\alpha, \beta)$ ليکل شوي دي، خو د تابعې پورته تعريف
+دا ډول $\ordexpo{\beta}{\alpha}$ جوړوي۔ په دې پښتو متن کښې د
+کارونې دوه پارامترونه اړول شوي دي؛ تعريف او منجمد سرچينه پر خپل
+ځاے دي۔ دا تنګ سمون لا د کارپوه کتنې ته اړ دے۔
+\par\noindent\textbf{د سرچينې يادښت (OLSTH-017).}
+په چاپي سرچينه کښې د بې‌صفره بنسټ شرط نشته۔ خو د $\alpha=0$ او
+$\beta=\omega$ په حالت کښې $\text{finfun}(\omega,0)$ تشه ده او
+ترتيب ډول يې $0$ دے، حال دا چې لاندې بازګښت
+$\ordexpo{0}{\omega}=1$ ورکوي۔ له دې امله د ترکيبي تعريف او
+بازګښت برابرول يوازې د $\alpha\neq0$ په شرط دلته ادعا کېږي؛
+صفر-بنسټ جلا سرچينه‌يي تشه ده او د کارپوه کتنې ته اړ ده۔
+همداسې ده۔ جمع مو داسې تشريح کړه چې «د $\alpha$ يوه کاپي او
+ورپسې د $\beta$ يوه کاپي» ده، او ضرب مو داسې تشريح کړ چې «يوه
+$\beta$-لړۍ د $\alpha$ له کاپيو جوړه ده»۔ خو د
+$\text{finfun}(\gamma, \alpha)$ په اړه دومره لنډه او څرګنده خبره
+نه لرو۔ نو د ترتيبي عددونو توان به د متعدي بازګښت \emph{له لارې}
+تعريف کړو، يعنې:
+
+\begin{defn}\ollabel{ordexporecursion}
+\begin{align*}
+	\ordexpo{\alpha}{0} &= 1\\
+	\ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
+	\ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{چې $\beta$ حدي ترتيبي عدد وي}
+\end{align*}
+\end{defn}
+
+که مو د سټ د نظريې د څېړونکو په توګه کار کاوه، ښايي د ترتيبي
+عددونو د توان ځينې ځانګړنې مو نورې هم څېړلې واے۔ خو دلته له دې
+څخه زيات څه نه ورزياتوو؛ يوازې دې اشنا حقيقت ته پام کوو چې د
+ترتيبي عددونو توان تبادلي نه دے۔ ځکه
+$\ordexpo{2}{\omega} =
+\bigcup_{\delta < \omega}\ordexpo{2}{\delta} = \omega$، خو
+$\ordexpo{\omega}{2} = \omega \ordtimes \omega$۔ په اصل کښې بايد
+د توان د تبادلي والي \emph{تمه} ونه کړو، ځکه چې د طبيعي عددونو
+دپاره هم تبادلي نه دے: $\ordexpo{2}{3} = 8 < 9 = \ordexpo{3}{2}$۔
+
+\begin{prob}
+د متعدي استقرا په کارولو ثابته کړئ چې که $\alpha\neq0$ وي او
+$\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
+\sqsubset}$ تعريف کړو، نو د
+\olref[sth][ord-arithmetic][expo]{ordexporecursion} بازګشتي معادلې
+ترلاسه کوو۔
+\end{prob}
+
+\end{document}

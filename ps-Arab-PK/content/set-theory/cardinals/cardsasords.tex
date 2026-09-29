@@ -1,0 +1,127 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{cardsasords}
+\olsection{اصلي عددونه د ترتيبي عددونو په توګه}
+
+په حقيقت کښې به زموږ د اصلي عددونو نظريه په څرګنده توګه د ترتيبي
+عددونو له نظريې کار اخلي۔ يعنې: اصلي عددونه به د ځانګړو ترتيبي
+عددونو په توګه تعريف کړو۔ په تېره بيا، لاندې تعريف وړاندې کوو:
+
+\begin{defn}\ollabel{defcardinalasordinal}
+که $A$ ښه ترتيبېدے شي، نو $\card{A}$ تر ټولو کوچنے ترتيبي عدد
+$\gamma$ دے چې $\cardeq{A}{\gamma}$ وي۔ د هر ترتيبي عدد $\gamma$
+دپاره وايو چې $\gamma$ يو \emph{اصلي عدد} دے که او يوازې که
+$\gamma = \card{\gamma}$ وي۔
+\end{defn}
+
+موږ اوس «$A$ ښه ترتيبېدے شي» وويل۔ لکه په رياضياتو کښې چې نږدې
+تل وي، دلته د امکان عبارت يوازې د يوې وجودي ادعا لنډ بيان دے:
+«$A$ ښه ترتيبېدے شي» دا وايي چې «داسې يوه اړيکه شته چې پر
+$A$ ښه ترتيب جوړوي»۔
+
+خو \olref{defcardinalasordinal} يوه ستونزه لري۔ غواړو چې \emph{هر}
+سټ اندازه ولري، يعنې $\card{A}$ د هر~$A$ دپاره موجود وي۔ خو زموږ
+تعريف په يوه شرط پيلېږي: «که $A$ ښه ترتيبېدے شي\ldots»۔ که
+کوم سټ $A$ ښه ترتيب نه شي، نو دا تعريف د هغه دپاره $\card{A}$
+څيز نه ټاکي۔
+
+نو د \olref{defcardinalasordinal} د کارولو دپاره پکار ده چې هر سټ
+ښه ترتيبېدے شي۔ خو له بده مرغه، په~$\ZF$ کښې دا تضمين نه لرو۔
+له همدې امله، که \olref{defcardinalasordinal} کاروو، بايد يو نوے
+اصل هم ور زيات کړو، لکه:
+\begin{axiom}[ښه ترتيب]
+هر سټ ښه ترتيبېدے شي۔
+\end{axiom}
+په \olref[choice][]{chap} کښې به وڅېړو چې د ښه ترتيب اصل د منلو
+وړ دے که نه۔ خو له دې ځايه به يې کاروو۔ په دې اصل سره دا ثابتول
+اسانه دي چې اصلي عددونه (د \olref{defcardinalasordinal} د تعريف
+له مخې) موجود دي او ښه چلند کوي:
+
+\begin{lem}\ollabel{lem:CardinalsExist}
+د هر سټ $A$ دپاره:
+\begin{enumerate}
+	\item\ollabel{cardaexists} $\card{A}$ موجود او يوازينے دے؛
+	\item\ollabel{cardaapprox}  $\cardeq{\card{A}}{A}$؛
+	\item\ollabel{cardaidem}  $\card{A}$ اصلي عدد دے، يعنې
+	$\card{A} = \card{\card{A}}$؛
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$A$ وټاکئ۔ د ښه ترتيب له مخې $\tuple{A, R}$ يو ښه ترتيب
+شته۔ د \olref[ordinals][ordtype]{thmOrdinalRepresentation} له مخې
+$\tuple{A, R}$ له يوه يوازيني ترتيبي عدد $\beta$ سره هم‌شکل دے۔
+نو $\cardeq{A}{\beta}$۔ د نامتناهيت هاخوا استقرا له مخې داسې يو
+تر ټولو کوچنے ترتيبي عدد $\gamma$ شته چې $\cardeq{A}{\gamma}$
+وي۔ نو $\card{A} = \gamma$، او \olref{cardaexists} او
+\olref{cardaapprox} ثابت شول۔ د \olref{cardaidem} د ثبوت دپاره
+وګورئ چې که $\delta \in \gamma$ وي، نو $\cardless{\delta}{A}$ د
+$\gamma$ د ټاکنې له مخې؛ او ځکه چې هم‌شمېري يوه د همارزښت
+اړيکه ده (\olref[sfr][siz][equ]{equinumerosityisequi})، نو
+$\cardless{\delta}{\gamma}$ هم دے۔ نو $\gamma =
+\card{\gamma}$۔
+%So, for reductio, suppose that there is some ordinal $\delta \in \gamma$ such that $\cardeq{\gamma}{\delta}$. Then, $\cardeq{\cardeq{A}{\gamma}}{\delta}$ so that $\cardeq{A}{\delta}$ by \olref[sfr][set][equ]{equinumerosityisequi}, which contradicts the choice of $\gamma$ as the least ordinal such that $\cardeq{A}{\gamma}$. 
+\end{proof}
+
+راتلونکې پايله د کانتور اصل، او تر هغه زيات، تضمينوي۔ (په پام
+کښې ونيسئ چې اصلي عددونه خپل ترتيب له ترتيبي عددونو اخلي، يعنې
+$\cardfont{a} < \cardfont{b}$ هغه وخت او يوازې هغه وخت چې
+$\cardfont{a} \in \cardfont{b}$ وي۔ د دې د بيان دپاره به د هغو
+څيزونو دپاره چې اصلي عددونه يې ګڼو، فرکټور توري کاروو۔ دا عام
+دود دے۔ يو بل عام دود د يوناني تورو کارول دي، ځکه چې اصلي عددونه
+ترتيبي عددونه هم دي؛ خو د الفبا د منځ توري ټاکل کېږي، لکه
+$\kappa, \lambda$۔):
+\begin{lem}\ollabel{lem:CardinalsBehaveRight}
+د هر ډول سټونو $A$ او $B$ دپاره:
+\begin{align*}
+	\cardeq{A}{B} &\text{ هغه وخت او يوازې هغه وخت چې } \card{A} = \card{B}\\
+	\cardle{A}{B} &\text{ هغه وخت او يوازې هغه وخت چې } \card{A} \leq \card{B}\\
+	\cardless{A}{B}&\text{ هغه وخت او يوازې هغه وخت چې } \card{A} < \card{B}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+د دويمې ادعا له چپې خوا ښۍ خوا ته لورے ثابتوو (نور حالتونه ورته
+دي او تمرين ته يې پرېږدو)۔ نو لاندې شکل وګورئ:
+\begin{center}
+	\begin{tikzpicture}
+	\node (nodea) {$A$};
+	\node[right = 6em of nodea] (nodeb) {$B$};
+	\node[below = 2em of nodea] (nodecarda) {$\card{A}$};
+	\node[below = 2em of nodeb] (nodecardb) {$\card{B}$};
+	\draw[->] (nodea)--(nodeb);
+	\draw[<->] (nodea)--(nodecarda);
+	\draw[<->] (nodeb)--(nodecardb);
+	\draw[->, dashed] (nodecarda)--(nodecardb);
+\end{tikzpicture}
+\end{center}
+دواړه‌سري غشي !!{bijection}s ښيي چې د شتون تضمين يې
+\olref{lem:CardinalsExist} کوي۔ له $\cardle{A}{B}$ څخه
+!!a{injection} $A\to B$ شته۔ اوس د غشو په تعقيب له $\card{A}$
+څخه $A$ ته، بيا $B$ ته، او بيا $\card{B}$ ته ځو؛ په دې توګه
+!!a{injection} $\card{A} \to \card{B}$ ترلاسه کوو (مات غشے)۔
+\end{proof}\noindent له \olref{lem:CardinalsBehaveRight} څخه د
+شرودر--برنشتاين قضيه هم بيا ثابتولے شو۔ دا ادعا ده چې که
+$\cardle{A}{B}$ او $\cardle{B}{A}$ وي، نو $\cardeq{A}{B}$۔
+دا مو د \olref[sfr][siz][sb]{thm:schroder-bernstein} په توګه
+بيان کړې وه، خو لومړے مو په \olref[sfr][infinite][card-sb]{sec}
+کښې په يو څه هڅه ثابته کړه۔ اوس وګورئ:
+
+\begin{proof}[د شرودر--برنشتاين بيا ثبوت]
+که $\cardle{A}{B}$ او $\cardle{B}{A}$ وي، نو د
+\olref{lem:CardinalsBehaveRight} له مخې $\card{A} \leq \card{B}$
+او $\card{B} \leq \card{A}$۔ نو د درې‌ګوني وېش او
+\olref{lem:CardinalsBehaveRight} له مخې $\card{A} = \card{B}$
+او $\cardeq{A}{B}$۔
+\end{proof}
+\noindent
+که څه هم دا ثبوت ډېر ساده دے، خو په ناڅرګنده توګه پر تعويض
+(د \olref[ordinals][ordtype]{thmOrdinalRepresentation} د تضمين
+دپاره) او پر ښه ترتيب (د \olref{lem:CardinalsBehaveRight} د
+تضمين دپاره) دواړو تکيه کوي۔ پر خلاف يې، د
+\olref[sfr][infinite][card-sb]{sec} ثبوت ډېر خپلواک و (په رښتيا
+هم په~$\Zminus$ کښې ترسره کېدے شي)۔
+
+\end{document}

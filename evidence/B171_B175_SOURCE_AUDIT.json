@@ -1,0 +1,91 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T19:07:49.979087+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-ORDINAL-CARDINAL-TRANSITION",
+  "batch_id": "PS-B171-B175-ORDINAL-CARDINAL-TRANSITION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0577",
+      "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+      "source_bytes": 4730,
+      "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+      "target_sha256": "7534db54e7f08c78b77965891b133543f6240b1b616390846418b1c4408c262c",
+      "paired_blocks": 20,
+      "source_correction_ids": [
+        "OLSTH-015"
+      ]
+    },
+    {
+      "unit_id": "OLP-0578",
+      "source_path": "content/set-theory/ord-arithmetic/multiplication.tex",
+      "source_bytes": 4066,
+      "source_sha256": "eade2bc67a7dede697f1a89e0359c3ef4a1c52154bbcf4b1b45176f5d3742abb",
+      "target_sha256": "0f1b4aab1f4531bfec43e887b5ba154837c69f2ab32ce7ddd216b9df419b7d71",
+      "paired_blocks": 19,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0579",
+      "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+      "source_bytes": 2721,
+      "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+      "target_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLSTH-016",
+        "OLSTH-017"
+      ]
+    },
+    {
+      "unit_id": "OLP-0580",
+      "source_path": "content/set-theory/cardinals/cardinals.tex",
+      "source_bytes": 287,
+      "source_sha256": "c837e8387ad2e577aa30b67d723f1c811794d325069bfd2447a2ea297ba66c43",
+      "target_sha256": "e2a1d943c07059852d9c7bd6b94726ec403dac3ee0ef0465eac5602376d4bf85",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0581",
+      "source_path": "content/set-theory/cardinals/cp.tex",
+      "source_bytes": 1893,
+      "source_sha256": "950307ddcd75e93c0cb6aeaeb8f969f17e519027f1ff3672f433552edd519fae",
+      "target_sha256": "5cfbb07c1a3371a232aa49e4adf23a5e7b11046e477e9355f76712adbcc426da",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0577": "da5e86e029af74f574204114bfd346c88444310ee1c910aadd457ab5eae3548d",
+    "OLP-0578": "74a5579ac8f478beca4dc75049bfc4beec8378d269ae83a8a5350b0987760801",
+    "OLP-0579": "d4890d184f204e19741dfe09db43a480f8c26d63542941d76a9e37426949ea80",
+    "OLP-0580": "7e823af8fa4cb25a1fec688d4c0827011c3d822cf5fe9b42f20bc7ad9edaabd6",
+    "OLP-0581": "122bded3deb08887af23a253fc4251fd8773f15a7f2008dc396b87e04da13923"
+  },
+  "preaudit_sha256": {
+    "OLP-0577": "9ed298c24ee349fc551c0e0f12e539c6a77254d590f37458a45a4494e7557f08",
+    "OLP-0579": "3788795f29c44e8420358f6fc8393444361aa280fad799fb25f33f0f5b037800"
+  },
+  "model_provenance_sha256": "60b0356ba094841cbda3d9f77515554ada377a236a0d8c810ccdf9f9f95590e9",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-ORDINAL-MULTIPLICATION",
+    "TERM-SET-ORDINAL-EXPONENTIATION",
+    "TERM-SET-FINITE-SUPPORT-FUNCTION",
+    "TERM-SET-CARDINAL",
+    "TERM-SET-CANTOR-PRINCIPLE"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-015",
+    "OLSTH-016",
+    "OLSTH-017"
+  ],
+  "semantic_samples_added": 54,
+  "formula_policy": "Five focused checks retain original identifiers and ordered active math except exactly disclosed OLSTH-015–017; source bytes frozen.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ انتخاب د منجمد تعريف له مخې لنډمهاله دے. د OLSTH-017 صفر-بنسټ تشه او بشپړ لوستونکی لا د کتنې وړ دي.",
+  "next_executable_action": "Run two581-unit corpus QA generators and dual canonical replay; accept only on PASS, then continue OLP-0582 onward. TeX slot never suspends translation."
+}

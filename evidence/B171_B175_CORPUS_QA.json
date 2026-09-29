@@ -1,0 +1,38 @@
+{
+  "schema": "ps-b171-b175-corpus-qa/1",
+  "utc": "2026-09-29T19:08:47.184223+00:00",
+  "status": "PASS",
+  "projected_draft_units": 581,
+  "accepted_before_finalizer": 576,
+  "staged_units": [
+    "OLP-0577",
+    "OLP-0578",
+    "OLP-0579",
+    "OLP-0580",
+    "OLP-0581"
+  ],
+  "aligned_blocks": 8567,
+  "segment_canon_uses": 5393,
+  "semantic_samples": 1964,
+  "terms": 292,
+  "review_entries": 737,
+  "source_actions": 439,
+  "byte_identical_surfaces": {
+    "QA.json": "64bc4a2bc4402ace94b374f8bd333a8aa82cf98a537a2d58af3880855cde372a",
+    "ALIGNMENT.jsonl": "fbfc3ef9f58cbac790c80c42a7d70adac890b08cf85daa82eb68ab638d53a206",
+    "SEGMENT_CANON_USE.jsonl": "ac21eb0801910335cfe17709c2af6541c2a534a0397acee0a366d2c3b6014b09"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "b4d674e96bb26171a10da05be66bfde2f799676e332fdac36bbed4a621c6c3a8",
+  "focused_qa_sha256": {
+    "B171_USING_ADDITION_DRAFT_QA.json": "da5e86e029af74f574204114bfd346c88444310ee1c910aadd457ab5eae3548d",
+    "B172_MULTIPLICATION_DRAFT_QA.json": "74a5579ac8f478beca4dc75049bfc4beec8378d269ae83a8a5350b0987760801",
+    "B173_EXPONENTIATION_DRAFT_QA.json": "d4890d184f204e19741dfe09db43a480f8c26d63542941d76a9e37426949ea80",
+    "B174_CARDINALS_DRIVER_DRAFT_QA.json": "7e823af8fa4cb25a1fec688d4c0827011c3d822cf5fe9b42f20bc7ad9edaabd6",
+    "B175_CANTOR_PRINCIPLE_DRAFT_QA.json": "122bded3deb08887af23a253fc4251fd8773f15a7f2008dc396b87e04da13923"
+  },
+  "next_action": "Dual canonical replay from frozen581 inputs; accept only if PASS. Continue translation from OLP-0582."
+}

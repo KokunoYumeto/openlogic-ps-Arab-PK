@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 576,
-    "structural_pass": 576,
+    "draft_units": 581,
+    "structural_pass": 581,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B170-ORDINAL-ADDITION",
+  "batch": "PS-B171-B175-ORDINAL-CARDINAL-TRANSITION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -18695,6 +18695,183 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0577",
+      "path": "content/set-theory/ord-arithmetic/using-addition.tex",
+      "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+      "translation_sha256": "7534db54e7f08c78b77965891b133543f6240b1b616390846418b1c4408c262c",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-015"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\setrank{A\\timesB}\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+        ],
+        "target_only": [
+          "$\\setrank{A\\timesB}=\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0578",
+      "path": "content/set-theory/ord-arithmetic/multiplication.tex",
+      "source_sha256": "eade2bc67a7dede697f1a89e0359c3ef4a1c52154bbcf4b1b45176f5d3742abb",
+      "translation_sha256": "0f1b4aab1f4531bfec43e887b5ba154837c69f2ab32ce7ddd216b9df419b7d71",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0579",
+      "path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+      "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+      "translation_sha256": "26fb3908a4bd7aa93b5e819ce8b62b806b9c969950a0f92334f551695434d56d",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Potter"
+      ],
+      "allowed_residual_english": [
+        "Potter"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-016",
+        "OLSTH-017"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\ordtype{\\text{LOCALIZED}(\\alpha,\\beta),\\sqsubset}$",
+          "$\\text{LOCALIZED}(\\alpha,\\gamma)$",
+          "$\\ordexpo{\\alpha}{\\beta}=\\ordtype{\\text{LOCALIZED}(\\alpha,\\beta),\\sqsubset}$"
+        ],
+        "target_only": [
+          "$\\text{LOCALIZED}(\\alpha,\\beta)$",
+          "$\\alpha\\neq0$",
+          "$\\alpha\\neq0$",
+          "$\\alpha\\neq0$",
+          "$\\ordexpo{\\alpha}{\\beta}$",
+          "$\\ordtype{\\text{LOCALIZED}(\\beta,\\alpha),\\sqsubset}$",
+          "$\\ordexpo{\\beta}{\\alpha}$",
+          "$\\alpha=0$",
+          "$\\beta=\\omega$",
+          "$\\text{LOCALIZED}(\\omega,0)$",
+          "$0$",
+          "$\\ordexpo{0}{\\omega}=1$",
+          "$\\text{LOCALIZED}(\\gamma,\\alpha)$",
+          "$\\ordexpo{\\alpha}{\\beta}=\\ordtype{\\text{LOCALIZED}(\\beta,\\alpha),\\sqsubset}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0580",
+      "path": "content/set-theory/cardinals/cardinals.tex",
+      "source_sha256": "c837e8387ad2e577aa30b67d723f1c811794d325069bfd2447a2ea297ba66c43",
+      "translation_sha256": "e2a1d943c07059852d9c7bd6b94726ec403dac3ee0ef0465eac5602376d4bf85",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0581",
+      "path": "content/set-theory/cardinals/cp.tex",
+      "source_sha256": "950307ddcd75e93c0cb6aeaeb8f969f17e519027f1ff3672f433552edd519fae",
+      "translation_sha256": "5cfbb07c1a3371a232aa49e4adf23a5e7b11046e477e9355f76712adbcc426da",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -30157,6 +30334,330 @@
       "passage": "Hilbert-hotel-scope",
       "reverse_paraphrase": "Hilbert Hotel is an intuition for the order-type comparison, not a proof that all ordinal sums commute.",
       "finding": "اصلي تعريف، پښتو بيان او اړوند فورمول په تنګ سياق کښې پرتله شول؛ د دوو سرچينه‌ييو سمونونو ساحه نه ده پراخه شوې."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B003",
+      "reverse_paraphrase": "Section title announces ordinal addition applied to ranks.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B004",
+      "reverse_paraphrase": "Ordinal addition calculates ranks under the earlier rank definition.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B005",
+      "reverse_paraphrase": "Six displayed rank statements distinguish powerset, pair, union, ordered pair, product bound and big union cases.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B006",
+      "reverse_paraphrase": "The proof repeatedly uses the earlier strict rank supremum lemma.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B007",
+      "reverse_paraphrase": "Subsets have rank at most A; A itself belongs to its powerset, giving equality.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B008",
+      "reverse_paraphrase": "The unordered pair rank follows the strict supremum lemma.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B009",
+      "reverse_paraphrase": "The binary union rank follows the strict supremum lemma.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B010",
+      "reverse_paraphrase": "The ordered-pair rank uses the pair calculation twice.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B011",
+      "reverse_paraphrase": "Cartesian-product rank is bounded using two powersets of A union B.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B012",
+      "reverse_paraphrase": "Big union rank separates successor from limit and zero stages by cofinal member ranks.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B013",
+      "reverse_paraphrase": "The exercise asks for lower-bound equality and candidate upper-bound equality, plus other possible ranks; OLSTH-015 supplies a missing relation sign.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B014",
+      "reverse_paraphrase": "The text shifts from rank computations to equivalent notions of ordinal infinity.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B015",
+      "reverse_paraphrase": "Five conditions for an ordinal are equivalent: outside omega, at least omega, one plus alpha, equipotence with successor and Dedekind infinity.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B016",
+      "reverse_paraphrase": "Trichotomy proves the first implication; the next implication uses a least gamma after a limit beta and ordinal addition recursion.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B017",
+      "reverse_paraphrase": "A tagged-copy bijection and order isomorphism give equipotence; successor/limit equations remain in sequence.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B018",
+      "reverse_paraphrase": "An injection into a proper subset witnesses Dedekind infinity, with f(0,1) outside the range.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "OLP-0577-B019",
+      "reverse_paraphrase": "The final implication cites natural numbers as not Dedekind infinite.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B004",
+      "reverse_paraphrase": "Section title names ordinal multiplication.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B005",
+      "reverse_paraphrase": "A beta-high grid of alpha-wide rows makes the order type of multiplication concrete.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B006",
+      "reverse_paraphrase": "Reverse lexicographic comparison on alpha times beta orders the second coordinate first.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B007",
+      "reverse_paraphrase": "Product is the order type of the tagged pair domain with reverse lexicographic relation.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B008",
+      "reverse_paraphrase": "The Cartesian pair domain is well ordered for all ordinal factors.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B009",
+      "reverse_paraphrase": "Well ordering is referred to the earlier addition proof; recursive behavior follows.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B010",
+      "reverse_paraphrase": "Zero, successor and limit multiplication equations retain their distinct hypotheses and strict supremum.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B011",
+      "reverse_paraphrase": "The recursion proof is left as an exercise.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B012",
+      "reverse_paraphrase": "The recursive equations could define the same ordinal multiplication directly.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B013",
+      "reverse_paraphrase": "Monotonicity, cancellation, associativity and left distributivity retain their source conditions.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B014",
+      "reverse_paraphrase": "Remaining product-law proofs are left as an exercise.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B015",
+      "reverse_paraphrase": "Further results lead to a noncommutative example.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B016",
+      "reverse_paraphrase": "Two times omega is omega, strictly below omega times two.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B017",
+      "reverse_paraphrase": "The proof and half-integer intuition compare two copies of omega with two points per natural number.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "OLP-0578-B018",
+      "reverse_paraphrase": "The final exercise names the earlier well-order, recursion and law claims.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B003",
+      "reverse_paraphrase": "Section title names ordinal exponentiation.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B004",
+      "reverse_paraphrase": "No simple synthetic definition is promised.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B005",
+      "reverse_paraphrase": "Finite-support functions and last-difference ordering are described; Potter is attributed; OLSTH-016 reverses parameters and OLSTH-017 restricts the zero-base case with exact disclosures.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B006",
+      "reverse_paraphrase": "Exponentiation is defined by zero, successor and limit transfinite recursion.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B007",
+      "reverse_paraphrase": "Two to omega differs from omega squared, while finite powers also fail commutativity.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "OLP-0579-B008",
+      "reverse_paraphrase": "The exercise asks transfinite induction to recover recursion from the corrected finite-function model for nonzero base.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0580",
+      "passage": "OLP-0580-B004",
+      "reverse_paraphrase": "The cardinal chapter heading is localized; five child imports and hook remain unchanged.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "OLP-0581-B003",
+      "reverse_paraphrase": "Section title names Cantor’s Principle.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "OLP-0581-B004",
+      "reverse_paraphrase": "Order types classify well orders by isomorphism, while equipotence uses a bijection without order preservation.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "OLP-0581-B005",
+      "reverse_paraphrase": "Cardinals are introduced as representatives of size, parallel to ordinals for well orders.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "OLP-0581-B006",
+      "reverse_paraphrase": "Cantor’s Principle equates cardinal equality exactly with equipotence and points ahead to Hume’s Principle.",
+      "finding": "ټول اصلي او پښتو بلاکونه د کميتونو، ترتيب، حوالو او فورمولونو له مخې پرتله شول؛ استثناوې په OLSTH-015–017 کښې جلا ثبت دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "rank-upper-lower",
+      "reverse_paraphrase": "The product-rank exercise asks about attaining both the lower and upper displayed bounds, not a universal equality.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0577",
+      "passage": "dedekind-range",
+      "reverse_paraphrase": "The injection range omits f(0,1), which is a specified element of alpha.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "row-order",
+      "reverse_paraphrase": "The beta coordinate chooses the row before the alpha coordinate chooses a point inside it.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "limit-product",
+      "reverse_paraphrase": "The limit product is a strict supremum over earlier right factors.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0578",
+      "passage": "noncommuting",
+      "reverse_paraphrase": "Two times omega and omega times two have different order types despite finite multiplication being commutative.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "finite-support-domain",
+      "reverse_paraphrase": "finfun(alpha,beta) has domain alpha and codomain beta; alpha^beta uses finfun(beta,alpha).",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "zero-base-counterexample",
+      "reverse_paraphrase": "finfun(omega,0) is empty while the printed recursion yields 0^omega=1.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0579",
+      "passage": "recursion-three-cases",
+      "reverse_paraphrase": "Zero, successor and limit equations are kept separately; the explicit model is qualified for nonzero base.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0580",
+      "passage": "imports",
+      "reverse_paraphrase": "The chapter driver retains exactly its five original imports and closing hook.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "bijection-vs-isomorphism",
+      "reverse_paraphrase": "Equipotence needs a bijection, whereas equality of order types needs an order isomorphism.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
+    },
+    {
+      "unit_id": "OLP-0581",
+      "passage": "cantor-iff",
+      "reverse_paraphrase": "Equal cardinals and equinumerosity are equivalent in both directions.",
+      "finding": "د تعريف او اړوند فورمول تر منځ عين رياضيکي تړاو وکتل شو؛ نه‌تصويب شوې سرچينه‌يۍ مسألې د لوستونکي له پاره ښکاره دي."
     }
   ],
   "builds": [
