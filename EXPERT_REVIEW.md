@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 586 of 722 source units are translated drafts. This log contains 295 terminology entries and 446 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 588 of 722 source units are translated drafts. This log contains 296 terminology entries and 446 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4921,3 +4921,5 @@ The new ordinal-addition entries cover the tagged disjoint sum, reverse lexicogr
 The ordinal/cardinal entries include three exact source-local issues, with the zero-base exception independently disclosed and a qualified synthetic definition.
 
 The new cardinal entries document three provisional technical choices and the source-local cardinality gloss OLSTH-018.
+
+The new canonical-order entry records its provisional Pashto wording against the source’s exact three-clause definition.

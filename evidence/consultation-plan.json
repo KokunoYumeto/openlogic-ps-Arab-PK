@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B176-B180-CARDINALS-CLASSIFICATION-HUME",
-  "status": "B176–B180 five source-reviewed drafts registered; cumulative acceptance pending",
+  "batch_id": "PS-B181-B182-CARDINAL-OPERATIONS-SIMPLIFICATION",
+  "status": "B181–B182 two source-reviewed drafts registered; cumulative acceptance pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -11962,6 +11962,41 @@
       "scope": "پاکستانۍ نثر د املا/بيان شاهد؛ افغان شمېر وړوالی يوازې د OLP-0584 سيمه‌ييز رياضيکي پرتله‌ييز شاهد؛ منجمد اصلي متن د فورمولونو او ثبوتونو معيار. OLSTH-018 نثري سمون ښکاره دے.",
       "allowed_residual_english": [],
       "residual_english_rationale": "Only stable source identifiers and macro token keys; no ordinary English prose remains."
+    },
+    "OLP-0587": {
+      "batch_id": "PS-B181-B182-CARDINAL-OPERATIONS-SIMPLIFICATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P110-OPERATION",
+        "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+      ],
+      "terms": [
+        "TERM-SET-CARDINAL-ARITHMETIC",
+        "TERM-SET-CARDINAL",
+        "TERM-FUNCTION",
+        "TERM-POWERSET"
+      ],
+      "scope": "پاکستانۍ نثر د بيان او املا لومړنے شاهد؛ افغان رياضيکي مخونه يوازې سيمه‌ييز پرتله‌ييز شاهدان؛ منجمد اصلي متن د تعريفونو، فورمولونو، ثبوت او انتخاب د فرض معيار. تخنيکي نوم چې عين پاکستانۍ شاهد نه لري لنډمهاله دے.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Only stable source identifiers, math operators and macro token keys; no ordinary English prose remains."
+    },
+    "OLP-0588": {
+      "batch_id": "PS-B181-B182-CARDINAL-OPERATIONS-SIMPLIFICATION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P109-RELATION",
+        "AF-NIAZMAN-P178-ORDER",
+        "AF-BUKOVSKY-P192-DEDEKIND-FINITE"
+      ],
+      "terms": [
+        "TERM-SET-CARDINAL-ARITHMETIC",
+        "TERM-WELLORDER",
+        "TERM-SET-CANONICAL-PAIR-ORDER",
+        "TERM-CHOICE"
+      ],
+      "scope": "پاکستانۍ نثر د بيان او املا لومړنے شاهد؛ افغان رياضيکي مخونه يوازې سيمه‌ييز پرتله‌ييز شاهدان؛ منجمد اصلي متن د تعريفونو، فورمولونو، ثبوت او انتخاب د فرض معيار. تخنيکي نوم چې عين پاکستانۍ شاهد نه لري لنډمهاله دے.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Only stable source identifiers, math operators and macro token keys; no ordinary English prose remains."
     }
   },
   "semantic_review": [
@@ -24144,6 +24179,252 @@
       "passage": "driver-imports",
       "reverse_paraphrase": "Five child imports and the chapter hook are retained byte for byte.",
       "finding": "د اړوند اصلي تعريف، پښتو بيان او حسابي يا منطقي پايلې تنګ سياق بيا وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B003",
+      "reverse_paraphrase": "The section defines basic cardinal operations.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B004",
+      "reverse_paraphrase": "Ignoring order makes cardinal arithmetic easier to state than ordinal arithmetic; addition, multiplication and exponentiation are defined together.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B005",
+      "reverse_paraphrase": "Cardinal sum counts disjoint union; product counts Cartesian product; a to the b counts functions from b into a. Existence of the function set is left as an exercise.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B006",
+      "reverse_paraphrase": "The exercise asks for existence of the function set in Zminus and its set rank from ranks of X and Y in ZF.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B007",
+      "reverse_paraphrase": "Finite disjoint sums and products motivate the transfinite definitions; cardinal arithmetic differs from ordinal arithmetic.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B008",
+      "reverse_paraphrase": "Cardinal sum and product are both commutative and associative.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B009",
+      "reverse_paraphrase": "The proof gives explicit cardinal equalities for commutativity and defers associativity.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B010",
+      "reverse_paraphrase": "The exercise asks for associativity of cardinal sum and product.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B011",
+      "reverse_paraphrase": "An infinite set is characterized by adding one to its cardinal without changing that cardinal.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B012",
+      "reverse_paraphrase": "The proof invokes ordinal infinity and the transfer lemma for cardinals.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B013",
+      "reverse_paraphrase": "Cardinal and ordinal operations require different symbols; their exponentiations differ even though 2 is the set containing zero and one.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B014",
+      "reverse_paraphrase": "Every powerset has cardinality two to the cardinality of the original set.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B015",
+      "reverse_paraphrase": "A subset B maps bijectively to its characteristic function from A to 2, yielding the cardinal exponent identity.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B016",
+      "reverse_paraphrase": "The earlier binary-string nonenumerability argument is generalized from omega to any set A.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B017",
+      "reverse_paraphrase": "Cantor gives a strictly greater cardinal 2 to the a for every cardinal a.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B018",
+      "reverse_paraphrase": "The corollary follows from Cantor and the powerset lemma; cardinal two to omega exceeds omega while ordinal two to omega equals omega.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B019",
+      "reverse_paraphrase": "The next theorem gives a more exact account of how the reals are nonenumerable.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B021",
+      "reverse_paraphrase": "The proof skeleton uses injections in both directions between the reals and the powerset of omega, then Schroeder–Bernstein and the powerset exponent lemma. The injections remain an exercise.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "OLP-0587-B022",
+      "reverse_paraphrase": "The exercise asks the reader to finish the continuum proof by exhibiting both cardinal inequalities.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B003",
+      "reverse_paraphrase": "The title announces simplification of cardinal addition and multiplication.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B004",
+      "reverse_paraphrase": "The resulting infinite-cardinal operations are easy, but the proof needs well-ordered ordinal representations.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B005",
+      "reverse_paraphrase": "Canonical ordering of ordinal pairs compares maximum coordinate first, then first coordinate, then second.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B006",
+      "reverse_paraphrase": "The square of any ordinal is well ordered by this canonical relation.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B007",
+      "reverse_paraphrase": "Two distinct pairs are comparable because equality of both maxima and coordinates forces pair equality.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B008",
+      "reverse_paraphrase": "A nonempty subset has a least pair: minimize maximum coordinate, then first, then second.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B009",
+      "reverse_paraphrase": "Equinumerous ordinals have equinumerous Cartesian squares.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B010",
+      "reverse_paraphrase": "A bijection acts coordinatewise on pairs; the text then turns to the crucial square-size lemma.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B011",
+      "reverse_paraphrase": "The least infinite ordinal whose square is larger than itself would be a cardinal and exceed omega.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B012",
+      "reverse_paraphrase": "Segments in canonical order are bounded by smaller ordinal squares; minimality gives their sizes below alpha and yields alpha-square equinumerosity by Schroeder–Bernstein.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B013",
+      "reverse_paraphrase": "The text introduces the simplifying maximum theorem.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B014",
+      "reverse_paraphrase": "For infinite cardinals, both sum and product equal the larger input cardinal.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B015",
+      "reverse_paraphrase": "The proof chains cardinal inequalities under the larger input; the same result bounds the union of at most a many sets of size at most a.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B016",
+      "reverse_paraphrase": "The proposition states the indexed-union cardinal bound with explicit beta and X_beta hypotheses.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "OLP-0588-B017",
+      "reverse_paraphrase": "Choosing injections for every beta invokes Choice; taking the least index of v defines an injection into a times a and proves the union bound.",
+      "finding": "منجمد اصلي بلاک او پښتو بلاک د کميتونو، تعريفونو، فرعي حالتونو، ثبوت او حوالو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "exponent-argument-order",
+      "reverse_paraphrase": "Cardinal a to b is the size of functions from b to a, not from a to b.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "characteristic-bijection",
+      "reverse_paraphrase": "The characteristic-function map is a bijection between all subsets of A and all functions from A into 2.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0587",
+      "passage": "continuum-proof-limit",
+      "reverse_paraphrase": "The reals theorem offers a proof skeleton; construction of both injections is deferred.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "canonical-order-clauses",
+      "reverse_paraphrase": "The maximum/first/second-coordinate comparison has three exact alternative clauses.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "least-counterexample",
+      "reverse_paraphrase": "The infinite square theorem uses the least counterexample and its initial-ordinal property.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "finite-gamma-implicit",
+      "reverse_paraphrase": "The source states the displayed segment estimate for infinite gamma; finite gamma segments are finite, an implicit case before the order-type bound.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0588",
+      "passage": "union-choice-dependency",
+      "reverse_paraphrase": "A family of injections is fixed simultaneously; the source footnote points ahead to Choice.",
+      "finding": "د منجمد اصل او پښتو بيان اړوند رياضيکي ميکانيزم او حدود بيا وکتل شول."
     }
   ]
 }

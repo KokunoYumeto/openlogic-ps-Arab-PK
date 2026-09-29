@@ -1,0 +1,112 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{expotough}
+
+\olsection[ځينې ساده کول]{د اصلي توان ځينې ساده کول}
+
+که څه هم د $\canonord$ تعريف لږ پېچلے و، پايله يې د اصلي جمعې
+او ضرب په اړه ګټوره ده، \olref[simp]{cardplustimesmax}۔ خو
+نامتناهي توان په دومره نېغه توګه نه ساده کېږي۔ د دې د علت د
+روښانولو دپاره له يوې پايلې پيل کوو چې د متناهي حالت يوه اشنا
+بڼه غځوي (که څه هم ثبوت يې په لوړه انتزاعي کچه دے):
+
+\begin{prop}\ollabel{simplecardexpo}
+$\cardexpo{\cardfont{a}}{\cardfont{b} \cardplus \cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b}} \cardtimes
+\cardexpo{\cardfont{a}}{\cardfont{c}}$ او
+$\cardexpo{(\cardexpo{\cardfont{a}}{\cardfont{b}})}{\cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b} \cardtimes \cardfont{c}}$، د
+هر درېيو اصلي عددونو $\cardfont{a}, \cardfont{b}, \cardfont{c}$ دپاره۔
+\end{prop}
+
+\begin{proof}
+د لومړۍ ادعا دپاره يوه تابع $f \colon
+(\cardfont{b}\disjointsum\cardfont{c}) \to \cardfont{a}$ وګورئ۔ اوس
+دا «ووېشئ»: $f_\cardfont{b}(\beta) = f(\beta, 0)$ د هر
+$\beta \in \cardfont{b}$ دپاره، او $f_\cardfont{c}(\gamma) = f(\gamma, 1)$
+د هر $\gamma \in \cardfont{c}$ دپاره تعريف کړئ۔ نقشه $f \mapsto
+(f_{\cardfont{b}} \times f_\cardfont{c})$ يوه !!a{bijection}
+$\funfromto{\cardfont{b} \disjointsum \cardfont{c}}{\cardfont{a}} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}} \times
+\funfromto{\cardfont{c}}{\cardfont{a}})$ ده۔
+
+د دويمې ادعا دپاره يوه تابع $f \colon \cardfont{c} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}})$ وګورئ؛ نو د هر
+$\gamma \in
+\cardfont{c}$ دپاره يوه تابع $f(\gamma) \colon \cardfont{b} \to
+\cardfont{a}$ لرو۔ اوس
+$f^*(\beta, \gamma) = (f(\gamma))(\beta)$ د هر
+$\tuple{\beta, \gamma} \in \cardfont{b} \times \cardfont{c}$
+دپاره تعريف کړئ۔ نقشه
+$f \mapsto f^*$ يوه !!a{bijection}
+$\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
+\to \funfromto{\cardfont{b} \cardtimes \cardfont{c}}{\cardfont{a}}$ ده۔
+\end{proof}
+
+اوس زموږ \emph{غوښتنه} دا ده چې د نامتناهي اصلي عددونو په حالت
+کښې $\cardexpo{\cardfont{a}}{\cardfont{b}}$ په اسانه محاسبه کړو۔
+لاندې پايله په دې لوري يو ښه ګام دے:
+
+\begin{prop}\ollabel{cardexpo2reduct}
+که $2 \leq \cardfont{a} \leq \cardfont{b}$ وي او $\cardfont{b}$
+نامتناهي وي، نو $\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$۔
+\end{prop}
+
+\begin{proof}
+\begin{align*}
+	\cardexpo{2}{\cardfont{b}} &\leq
+	\cardexpo{\cardfont{a}}{\cardfont{b}}\text{، ځکه $2 \leq \cardfont{a}$}\\
+	&\leq \cardexpo{(2^\cardfont{a})}{\cardfont{b}}
+	\text{، د \olref[opps]{lem:SizePowerset2Exp} له مخې}\\
+	&= \cardexpo{2}{\cardfont{a} \cardtimes \cardfont{b}}
+	\text{، د \olref{simplecardexpo} له مخې} \\
+	&= \cardexpo{2}{\cardfont{b}}
+	\text{، د \olref[simp]{cardplustimesmax} له مخې}
+\end{align*}
+\end{proof}
+
+له دې څخه نور ساده کول په رښتيا تمه نه شو کولے، ځکه
+$\cardfont{b} < \cardexpo{2}{\cardfont{b}}$ د
+\olref[card-arithmetic][opps]{lem:SizePowerset2Exp} له مخې۔
+خو دا موږ ته د $\cardexpo{\cardfont{a}}{\cardfont{b}}$ په اړه
+نه وايي چې کله $\cardfont{b} < \cardfont{a}$ وي، څه ووايو۔
+البته که $\cardfont{b}$ \emph{متناهي} وي،
+لار يې پېژنو۔
+
+\begin{prop}
+که $\cardfont{a}$ نامتناهي وي او $n \in \omega$ وي، او نوموړے
+طبيعي عدد صفر نه وي، نو $\cardexpo{\cardfont{a}}{n} = \cardfont{a}$۔
+\textbf{د سرچينې يادښت (OLSTH-019):} چاپي شرط صفر هم رانغاړي؛
+په صفر توان کښې يوازې تشه تابع شته او حاصل يو دے، نو ادعا دلته
+يوازې د ناصفر متناهي توان دپاره اخيستل شوې ده۔
+\end{prop}
+
+\begin{proof}
+د ناصفر متناهي توان دپاره
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a} \cardtimes \cardfont{a}
+\cardtimes \ldots \cardtimes \cardfont{a} = \cardfont{a}$، د
+\olref[simp]{cardplustimesmax} له مخې۔
+\end{proof}
+\noindent
+پر دې سربېره، په ځينو نورو حالتونو کښې هم د
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$ اندازه ټاکلے شو:
+
+\begin{prop}
+که $2 \leq \cardfont{b} < \cardfont{a} \leq
+\cardexpo{2}{\cardfont{b}}$ وي او $\cardfont{b}$ نامتناهي وي، نو
+$\cardexpo{\cardfont{a}}{\cardfont{b}} = \cardexpo{2}{\cardfont{b}}$۔
+\end{prop}
+
+\begin{proof}
+$\cardexpo{2}{\cardfont{b}}\leq \cardexpo{\cardfont{a}}{\cardfont{b}}
+\leq \cardexpo{(\cardexpo{2}{\cardfont{b}})}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}\cardtimes\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$، لکه په \olref{cardexpo2reduct} کښې
+استدلال وشو۔
+\end{proof}
+\noindent
+خو له دې ځايه وروسته مسئلې ډېرې نازکې کېږي۔
+
+\end{document}

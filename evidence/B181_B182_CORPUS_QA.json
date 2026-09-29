@@ -1,0 +1,32 @@
+{
+  "schema": "ps-b181-b182-corpus-qa/1",
+  "utc": "2026-09-29T20:02:34.101147+00:00",
+  "status": "PASS",
+  "projected_draft_units": 588,
+  "accepted_before_finalizer": 586,
+  "staged_units": [
+    "OLP-0587",
+    "OLP-0588"
+  ],
+  "aligned_blocks": 8679,
+  "segment_canon_uses": 5480,
+  "semantic_samples": 2071,
+  "terms": 296,
+  "review_entries": 742,
+  "source_actions": 440,
+  "byte_identical_surfaces": {
+    "QA.json": "09f71e646ad67b3bf673a668ce8c7cfe29b34ed229432e84d766a187b6dcab5c",
+    "ALIGNMENT.jsonl": "1d756878528f5e7e06e4c8a82a4ae4d7e9beee4382a831f8412f7b06a7c84150",
+    "SEGMENT_CANON_USE.jsonl": "7e293a633ef7fcb37f0f374030a1f7bb4b8989e7d7f97603686f2ed318267192"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "737e5f569309195458e496574a6164f7622b3e31d4420b03a2377a5300aaa17b",
+  "focused_qa_sha256": {
+    "B181_CARDINAL_OPERATIONS_DRAFT_QA.json": "1e8b77d1d98e64282f90a85169da378c46f5983128f9c60e51ad249c0b6ee74f",
+    "B182_CARDINAL_SIMPLIFICATION_DRAFT_QA.json": "35e492f7e889d4d37dd202211581953c3e1bbd6f4a4037ba4f3f4b9b451cb4f2"
+  },
+  "next_action": "Dual canonical replay from frozen588 inputs; accept only if PASS. Continue translation from OLP-0589."
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "ps-b183-cardinal-exponentiation-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T20:06:21.705672+00:00",
+  "unit_id": "OLP-0589",
+  "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+  "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+  "target_sha256": "f21c23aef6f40a3e77b0686c51f713071dcebb9366db09455ad4f3a21941f11f",
+  "source_bytes": 4360,
+  "target_bytes": 5396,
+  "paired_blocks": 16,
+  "changed_blocks": 13,
+  "ordered_math_spans": 36,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-019"
+  ],
+  "math_exception": {
+    "source_only": [],
+    "target_only": []
+  },
+  "formula_policy": "All active mathematics, identifiers, comments, term tokens and CRLF retained; OLSTH-019 narrows the adjacent prose to nonzero finite exponent because exponent zero has value one.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "one_adjacent_source_disclosure": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact corrections, terms and block-level semantics before cumulative acceptance."
+}

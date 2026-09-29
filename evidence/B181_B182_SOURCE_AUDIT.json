@@ -1,0 +1,53 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T20:01:51.788241+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-CARDINAL-OPERATIONS",
+  "batch_id": "PS-B181-B182-CARDINAL-OPERATIONS-SIMPLIFICATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0587",
+      "source_path": "content/set-theory/card-arithmetic/opps.tex",
+      "source_bytes": 5892,
+      "source_sha256": "fe59199062c34a36e296a777ee0da52721751686f202735791a472d0a0906872",
+      "target_sha256": "4340cdf093fa4606b71e0efaf4679b82ab3112d0f3850c42cacf0d4cb21a5613",
+      "paired_blocks": 23,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0588",
+      "source_path": "content/set-theory/card-arithmetic/simp.tex",
+      "source_bytes": 5779,
+      "source_sha256": "a606bab065a11c689b655ff8053e3e77894decb42b88e70605a981c129148da0",
+      "target_sha256": "b6480f600316a8aa35bcc6f0209008e27e10c9bcbd307089cf3e5c8dcd509887",
+      "paired_blocks": 18,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": {
+    "OLP-0587": "1e8b77d1d98e64282f90a85169da378c46f5983128f9c60e51ad249c0b6ee74f",
+    "OLP-0588": "35e492f7e889d4d37dd202211581953c3e1bbd6f4a4037ba4f3f4b9b451cb4f2"
+  },
+  "preaudit_sha256": {
+    "OLP-0587": "4d5e9fdbf995ffecc41b7b892863588099d20c26310b913f5687a8ffe1022fe6",
+    "OLP-0588": "e0f7ba5e511e2ad2d77c82fa359d3a894d64eb0638b8f31c8de2636c66092df3"
+  },
+  "model_provenance_sha256": "35a1bda67cf9f0192f83fbc97d5327528723b136bb36180730dc642b6781aebd",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P110-OPERATION",
+    "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+    "AF-NIAZMAN-P109-RELATION",
+    "AF-NIAZMAN-P178-ORDER",
+    "AF-BUKOVSKY-P192-DEDEKIND-FINITE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-CANONICAL-PAIR-ORDER"
+  ],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 41,
+  "formula_policy": "Two focused checks retain all 131 active math spans, labels, citations, token calls, comments and CRLF; no source correction.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ د منجمد درې-شرطي تعريف او سيمه‌ييز ترتيبي شاهد له مخې نوم لنډمهاله دے. د دويم ثبوت متناهي-ګاما حالت په اصلي متن کښې ضمني دے؛ بشپړ لوستونکی او پاتې واحدونه لا کار غواړي.",
+  "next_executable_action": "Run two 588-unit corpus QA generators and dual canonical replay; accept only on PASS, then continue OLP-0589. TeX slot never suspends translation."
+}

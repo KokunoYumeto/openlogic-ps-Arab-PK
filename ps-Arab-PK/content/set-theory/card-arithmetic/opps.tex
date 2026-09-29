@@ -1,0 +1,155 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{opps}
+\olsection{د بنسټيزو عملياتو تعريف}
+
+څرنګه چې دلته د ترتيب ساتلو ته اړتيا نه لرو، د اصلي عددونو حساب
+د ترتيبي عددونو تر حسابه يو څه په اسانه تعريفېږي۔ جمع، ضرب او
+توان به يو ځاے تعريف کړو۔
+
+\begin{defn}
+کله چې $\cardfont{a}$ او $\cardfont{b}$ اصلي عددونه وي:
+\begin{align*}
+	\cardfont{a} \cardplus \cardfont{b} &\defis
+	\card{\cardfont{a} \disjointsum \cardfont{b}}\\
+	\cardfont{a} \cardtimes \cardfont{b} &\defis
+	\card{\cardfont{a} \times \cardfont{b}}\\
+	\cardexpo{\cardfont{a}}{\cardfont{b}} &\defis
+	\card{\funfromto{\cardfont{b}}{\cardfont{a}}}
+\end{align*}
+چې دلته $\funfromto{X}{Y} = \Setabs{f}{f \text{تابع ده } X \to Y}$۔
+(دا ښودل اسانه دي چې $\funfromto{X}{Y}$ د هر دوو سټونو $X$
+او $Y$ دپاره شته؛ ثبوت يې د تمرين په توګه پرېږدو۔)
+\end{defn}
+
+\begin{prob}
+په $\Zminus$ کښې ثابته کړئ چې $\funfromto{X}{Y}$ د هر دوو
+سټونو $X$ او~$Y$ دپاره شته۔ په $\ZF$ کښې کار وکړئ او
+$\setrank{\funfromto{X}{Y}}$ د $\setrank{X}$ او $\setrank{Y}$
+له مخې محاسبه کړئ، لکه څنګه چې په
+\olref[sth][ord-arithmetic][using-addition]{rankcomputation} کښې شوي دي۔
+\end{prob}
+
+د دې تعريف تشريح به مرسته وکړي۔ د جمعې په برخه کښې: دلته د
+بېلې مجموعې مفهوم، $\disjointsum$، کارول کېږي، چې په
+\olref[ord-arithmetic][add]{defdissum} کښې تعريف شوے دے؛ او
+په اسانه ښکاري چې دا تعريف د متناهي حالتونو دپاره سمه پايله
+ورکوي۔ د ضرب په برخه کښې: \olref[sfr][set][pai]{cardnmprod}
+موږ ته وايي چې که $A$ د $n$ غړي او $B$ د $m$ غړي ولري، نو
+$A \times B$ د $n \cdot m$ غړي لري؛ نو زموږ تعريف همدا تصور
+له متناهي څخه نامتناهي ضرب ته غځوي۔ توان همداسې دے: د متناهي
+حالت تصور نامتناهي حالت ته غځوو۔ په رښتيا، له ځينو اړخونو د
+نامتناهي اصلي عددونو حساب د نامتناهي ترتيبي عددونو تر حسابه
+«عادي» حساب ته ډېر ورته دے:
+
+\begin{prop}\ollabel{cardplustimescommute}
+$\cardplus$ او $\cardtimes$ دواړه تبادلي او اتحادي دي۔
+\end{prop}
+
+\begin{proof}
+د تبادلي والي دپاره، د
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} له مخې
+بس ده پام وکړو چې $\cardeq{(\cardfont{a} \disjointsum
+\cardfont{b})}{(\cardfont{b} \disjointsum \cardfont{a})}$ او
+$\cardeq{(\cardfont{a} \times \cardfont{b})}{(\cardfont{b} \times
+\cardfont{a})}$۔ اتحادي والى د تمرين په توګه پرېږدو۔
+\end{proof}
+
+\begin{prob}
+ثابته کړئ چې $\cardplus$ او $\cardtimes$ اتحادي دي۔
+\end{prob}
+
+\begin{prop}
+$A$ هغه وخت او يوازې هغه وخت نامتناهي دے چې
+$\card{A} \cardplus 1 = 1 \cardplus \card{A} = \card{A}$ وي۔
+\end{prop}
+
+\begin{proof}
+لکه په
+\olref[cardinals][classing]{generalinfinitycharacter} کښې،
+دا له \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} او
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} څخه
+راځي۔
+\end{proof}
+
+دا څرګندوي چې ولې د ترتيبي او اصلي عددونو د جمعې او ضرب دپاره
+بېلابېلو نښو ته اړتيا لرو: دا په رښتيا \emph{بېلابېل} عمليات
+دي۔ د پايلو راتلونکې جوړه ښيي چې ترتيبي او اصلي توان هم
+بېلابېل عمليات دي۔ (په ياد ولرئ چې له
+\olref[z][infinity-again]{defnomega} څخه $2 = \{0,
+1\}$ راځي):
+
+\begin{lem}\ollabel{lem:SizePowerset2Exp}
+$\card{\Pow{A}} = \cardexpo{2}{\card{A}}$، د هر $A$ دپاره۔
+\end{lem}
+
+\begin{proof}
+د هر فرعي سټ $B \subseteq A$ دپاره، $\chi_B \in
+\funfromto{A}{2}$ داسې وټاکئ:
+\begin{align*}
+	\chi_{B}(x) &\defis
+	\begin{cases}
+		1 & \text{که }x\in B\\
+		0 & \text{کنه.}
+	\end{cases}
+\end{align*}
+اوس $f(B) = \chi_B$ وټاکئ؛ دا يوه !!a{bijection}
+$f \colon \Pow{A} \to \funfromto{A}{2}$ تعريفوي۔ نو
+$\cardeq{\Pow{A}}{\funfromto{A}{2}}$۔ له دې
+$\cardeq{\Pow{A}}{\funfromto{\card{A}}{2}}$ هم راځي، او بيا
+$\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =
+2^{\card{A}}$۔
+\end{proof}
+
+دا لنډ ثبوت په اصل کښې د \olref[sfr][siz][red-alt]{sec} بحث
+هم رانغاړي۔ هلته مو وښودله چې څنګه د $\Pow{\omega}$
+نۀ‌شمېر وړتيا د نامتناهي دوه‌ګونو لړيو د سټ، $\Bin^\omega$،
+نۀ‌شمېر وړتيا ته «راوګرځوو»۔ په عمل کښې، $\Bin^{\omega}$
+هماغه $\funfromto{\omega}{2}$ دے؛ او مخکيني ثبوت وښودله چې
+په \olref[sfr][siz][red-alt]{sec} کښې زموږ استدلال د
+هر سټ~$A$ دپاره، د~$\omega$ پر ځاے، هم کار کوي۔ دا پايله د
+اصلي توان په اړه يو ژر تر لاسه کېدونکے حقيقت هم راکوي:
+
+\begin{cor}\ollabel{cantorcor}
+$\cardfont{a} < \cardexpo{2}{\cardfont{a}}$ د هر اصلي عدد~$\cardfont{a}$ دپاره۔
+\end{cor}
+
+\begin{proof}
+دا د کانتور له قضيې (\olref[sfr][siz][car]{thm:cantor}) او
+\olref{lem:SizePowerset2Exp} څخه راځي۔
+\end{proof}
+\noindent
+نو $\omega < \cardexpo{2}{\omega}$۔ خو پام وکړئ: دا پايله
+د \emph{اصلي عددونو} د توان په اړه ده۔ له \emph{ترتيبي
+عددونو} د توان سره بايد پرتله شي، ځکه په وروستي حالت کښې
+$\omega = \ordexpo{2}{\omega}$ (وګورئ
+\olref[ord-arithmetic][expo]{sec})۔
+
+څرنګه چې اوس د اصلي توان په اړه غږېږو، د هغې «لارې» په اړه هم
+لږ ډېر کره کېدے شو چې $\Real$ پرې !!{nonenumerable} دے۔
+
+\begin{thm}\ollabel{continuumis2aleph0}
+$\card{\Real} = \cardexpo{2}{\omega}$
+\end{thm}
+
+\begin{proof}[د ثبوت چوکاټ]
+د دې د ثبوت ډېرې لارې شته۔ تر ټولو نېغه لاره دا ده چې
+$\cardle{\Pow{\omega}}{\Real}$ او
+$\cardle{\Real}{\Pow{\omega}}$ وښيو، بيا د
+شرودر--برنشتاين له قضيې څخه $\cardeq{\Real}{\Pow{\omega}}$
+واخلو، او له \olref[card-arithmetic][opps]{lem:SizePowerset2Exp}
+څخه $\card{\Real} = \cardexpo{2}{\omega}$ ترلاسه کړو۔ د
+$f \colon \Pow{\omega} \to \Real$ او
+$g \colon \Real \to \Pow{\omega}$ غوندې يو پر يو تابعو
+تعريف د (روښانوونکي) تمرين په توګه پرېږدو۔
+\end{proof}
+
+\begin{prob}
+د \olref[sth][card-arithmetic][opps]{continuumis2aleph0}
+ثبوت بشپړ کړئ؛ يعنې وښيئ چې $\cardle{\Pow{\omega}}{\Real}$
+او $\cardle{\Real}{\Pow{\omega}}$۔
+\end{prob}
+
+\end{document}

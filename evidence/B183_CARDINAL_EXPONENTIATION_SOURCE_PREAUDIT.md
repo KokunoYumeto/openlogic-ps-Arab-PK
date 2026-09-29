@@ -1,0 +1,13 @@
+# OLP-0589 — cardinal exponentiation, checked draft
+
+Frozen source: `upstream/content/set-theory/card-arithmetic/expotough.tex`, 4,360 bytes, SHA-256 `3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec`, upstream revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`.
+
+Target: `ps-Arab-PK/content/set-theory/card-arithmetic/expotough.tex`, 5,396 bytes, SHA-256 `f21c23aef6f40a3e77b0686c51f713071dcebb9366db09455ad4f3a21941f11f`. Focused QA `B183_CARDINAL_EXPONENTIATION_DRAFT_QA.json`, SHA-256 `ce52a74e3d28ce786cc197e482c87c98f72109f4cdbb83b9928ee7397162bb96`: 16 paired blocks, 13 changed, 36 ordered math spans; IDs, references, structural macros, token calls, comments and CRLF preserved. This is checked but not cumulatively accepted.
+
+Canon consulted before drafting: `PK-IQRAM-P1-PROSE`, printed p. 1, image SHA-256 `c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b`, for Pakistani expository spelling and syntax only; `AF-NIAZMAN-P147-FUNCTIONS`, printed p. 147, image SHA-256 `a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734`, an Afghan regional comparator for function language and a zero function, not this cardinal-exponentiation theorem; and frozen OpenLogic OLP-0587 for the mathematical definition of cardinal exponentiation by function sets. The Afghan page does not attest a Pakistani specialist name for these exponent laws.
+
+**OLSTH-019, source-local zero-exponent exception.** The source proposition says that for an infinite cardinal and every finite natural `n`, its `n`th cardinal power equals the base. The printed condition includes zero. By OLP-0587's definition, functions from the empty set to the base form a singleton (the empty function), so the zero exponent has cardinality one, not the infinite base. The target retains the displayed formula and adds an adjacent Pashto qualification that the finite exponent must be nonzero, plus a reader-visible source note. The proof's repeated-product line is also explicitly read for nonzero finite exponent. Frozen English bytes and all active mathematical spans stay unchanged. Register the disclosure and source action before cumulative acceptance; do not report the printed unrestricted proposition as proved.
+
+The two exponent identities arise from splitting a function on a disjoint sum and currying a function on a product. The reduction to a power of two keeps the bound `2 ≤ a ≤ b` with infinite `b`; the final case keeps `2 ≤ b < a ≤ 2^b` with infinite `b`. No unconditional simplification is claimed beyond these hypotheses.
+
+Next: register OLP-0589 with exact canon-use and reverse-paraphrase samples and OLSTH-019. Continue OLP-0590 while the OLP-0587–0588 canonical replay proceeds; TeX slot state never suspends translation.

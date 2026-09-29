@@ -1,0 +1,150 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{simp}
+
+\olsection{د جمعې او ضرب ساده کول}
+
+د اصلي عددونو نامتناهي جمع او ضرب په پايله کښې \emph{ډېر} اسانه
+ثابتېږي۔ دا له دې راځي چې اصلي عددونه (ځينې) ترتيبي عددونه دي،
+نو ښه ترتيب شوي دي، او له همدې امله په يوه ټاکلې توګه کار پرې
+کېدے شي۔ خو د دې ښودل \emph{هغومره} اسانه نه دي۔ د پيل دپاره
+يو څه ځيرک تعريف ته اړتيا لرو:
+
+\begin{defn}
+پر ترتيبي عددونو جوړو يو \emph{معياري ترتيب}، $\canonord$،
+داسې تعريفوو چې $\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ هغه وخت او يوازې هغه وخت وي چې له
+لاندې حالتونو يو پېښ شي:
+\begin{enumerate}
+	\item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$؛ يا
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ او
+	$\alpha_1 < \beta_1$؛ يا
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ او
+	$\alpha_1 = \beta_1$ او $\alpha_2 < \beta_2$
+\end{enumerate}
+\end{defn}
+
+\begin{lem}
+$\tuple{\alpha \times \alpha, \canonord}$ د هر ترتيبي عدد
+$\alpha$ دپاره ښه ترتيب دے۔
+\end{lem}
+
+\begin{proof}
+څرګنده ده چې $\canonord$ پر $\alpha \times \alpha$ هرې دوو
+بېلابېلو جوړو ته ترتيب ورکوي۔ فرض کړئ نه $\tuple{\alpha_1,
+\alpha_2}$ له $\tuple{\beta_1,
+\beta_2}$ څخه د $\canonord$ له مخې کوچنۍ وي، نه دويمه له
+لومړۍ څخه۔ بيا $\max(\alpha_1,
+\alpha_2) = \max(\beta_1, \beta_2)$، $\alpha_1 = \beta_1$
+او $\alpha_2 = \beta_2$؛ نو $\tuple{\alpha_1, \alpha_2} =
+\tuple{\beta_1,  \beta_2}$۔
+
+د ښه ترتيب د ښودلو دپاره دې $X \subseteq \alpha\times\alpha$
+ناتش وي۔ څرنګه چې $\alpha$ ترتيبي عدد دے، يو $\delta$ د
+$\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$ تر ټولو کوچنے غړے دے۔ اوس له
+$\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$ څخه ټولې جوړې لرې کړئ، پرته له هغو چې لومړے مختص يې
+تر ټولو کوچنے وي؛ له پاتې جوړو څخه هغه چې دويم مختص يې تر
+ټولو کوچنے وي، د $\canonord$ له مخې د $X$ تر ټولو کوچنے غړے دے۔
+\end{proof}
+\noindent
+اوس يوې وړوکې، ساده کتنې ته راځو:
+
+\begin{prop}\ollabel{simplecardproduct}
+که $\cardeq{\alpha}{\beta}$ وي، نو $\cardeq{\alpha \times \alpha}{\beta
+\times \beta}$۔
+\end{prop}
+
+\begin{proof}
+بس $f \colon \alpha \to \beta$ دې دا تابع وټاکي:
+$\tuple{\gamma_1,
+\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$۔
+\end{proof}
+\noindent
+اوس دا ټول د يوه مهمې لمې په ثبوت کښې کاروو:
+\begin{lem}\ollabel{alphatimesalpha}
+$\cardeq{\alpha}{\alpha \times \alpha}$، د هر نامتناهي ترتيبي
+عدد $\alpha$ دپاره۔
+\end{lem}
+
+\begin{proof}
+د تناقض دپاره دې $\alpha$ تر ټولو کوچنے نامتناهي ترتيبي عدد
+وي چې دا ادعا يې په اړه ناسمه وي۔
+\olref[sfr][siz][zigzag]{natsquaredenumerable} ښيي چې
+$\cardeq{\omega}{\omega\times\omega}$، نو $\omega \in \alpha$۔
+سربېره پر دې، $\alpha$ اصلي عدد دے: د تناقض دپاره فرض کړئ
+چې نه دے؛ بيا $\card{\alpha} \in \alpha$، نو د فرضيې له مخې
+$\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$؛
+او د تعريف له مخې $\cardeq{\card{\alpha}}{\alpha}$؛ نو له
+\olref{simplecardproduct} څخه
+$\cardeq{\alpha}{\alpha\times\alpha}$ راځي۔
+
+اوس د هر $\tuple{\gamma_1, \gamma_2} \in \alpha \times \alpha$
+دپاره لاندې برخه وګورئ:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) &= \Setabs{\tuple{\delta_1, \delta_2} \in \alpha \times \alpha}{\tuple{\delta_1, \delta_2} \canonord \tuple{\gamma_1, \gamma_2}}
+\end{align*}
+که $\gamma = \max(\gamma_1, \gamma_2)$ ونيسو، نو
+$\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$۔
+نو کله چې $\gamma$ نامتناهي وي، لاندې ته پام وکړئ:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) &
+	\precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
+	&\approx (\gamma \ordtimes \gamma)
+	\text{، د \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} او
+	\olref{simplecardproduct} له مخې}\\
+	&\approx \gamma \text{، د استقرا د فرضيې له مخې}\\
+	& \prec \alpha\text{، ځکه $\alpha$ اصلي عدد دے}
+\end{align*}
+نو $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$،
+او له دې $\cardle{\alpha \times \alpha}{\alpha}$۔ څرنګه چې
+طبعاً $\cardle{\alpha}{\alpha \times \alpha}$، پايله د
+شرودر--برنشتاين له قضيې راځي۔
+\end{proof}
+
+بالاخره د ساده کولو پايلې ته رسېږو:
+
+\begin{thm}\ollabel{cardplustimesmax}
+که $\cardfont{a}, \cardfont{b}$ نامتناهي اصلي عددونه وي، نو:
+\[
+	\cardfont{a}
+\cardtimes \cardfont{b} = \cardfont{a} \cardplus \cardfont{b} =
+\text{max}(\cardfont{a}, \cardfont{b}).
+\]
+\end{thm}
+
+\begin{proof}
+له عموميت له کمېدو پرته فرض کړئ $\cardfont{a} = \max(\cardfont{a},
+\cardfont{b})$۔ بيا د \olref{alphatimesalpha} په کارولو سره
+$\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
+\cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
+\cardfont{a} \cardtimes \cardfont{a}$۔ \end{proof}\noindent په ورته ډول،
+که $\cardfont{a}$ نامتناهي وي، د $\cardfont{a}$ په اندازه د
+داسې سټونو اتحاد چې د هر يوه اندازه $\leq\cardfont{a}$ وي،
+اندازه يې هم $\leq\cardfont{a}$ وي:
+
+\begin{prop}\ollabel{kappaunionkappasize}
+دې $\cardfont{a}$ يو نامتناهي اصلي عدد وي۔ د هر ترتيبي عدد
+$\beta \in \cardfont{a}$ دپاره دې $X_\beta$ داسې سټ وي چې
+$\card{X_\beta} \leq \cardfont{a}$۔ بيا
+$\card{\bigcup_{\beta \in \cardfont{a}} X_\beta}
+\leq \cardfont{a}$۔
+\end{prop}
+
+\begin{proof}
+د هر $\beta \in \cardfont{a}$ دپاره يوه !!a{injection}
+$f_\beta \colon X_\beta \to \cardfont{a}$ وټاکئ۔\footnote{دا تابعې
+څنګه يوځاے «ټاکل» کېږي؟ \olref[sth][choice][countablechoice]{sec}
+وګورئ۔} يوه !!a{injection} $g \colon
+\bigcup_{\beta \in \cardfont{a}} X_\beta \to \cardfont{a} \times
+\cardfont{a}$ په $g(v) = \tuple{\beta, f_\beta(v)}$ سره تعريف
+کړئ، چې دلته $v \in X_\beta$، او $v \notin X_\gamma$ د هر
+$\gamma \in \beta$ دپاره۔ اوس
+$\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq \cardfont{a} \times
+\cardfont{a} \approx \cardfont{a}$ د \olref{cardplustimesmax}
+له مخې۔
+\end{proof}
+
+\end{document}
