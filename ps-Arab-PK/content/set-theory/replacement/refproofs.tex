@@ -1,0 +1,193 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{refproofs}
+\olsection{ضميمه: د تعويض اړوندې پايلې}
+
+په دې برخه کښې به د $\ZF$ دننه انعکاس ثابت کړو۔ دا به هم وښيو چې
+انعکاس په يوه معنا له تعويض سره همارزښته دے۔ بيا به د دې ټولو يوه
+په زړه پورې پايله د انعکاس/تعويض د قوت په اړه ثابته کړو۔
+\emph{خبردارے: دا په دې درسي کتاب کښې تر ټولو پرمختللې رياضيکي برخه ده۔}
+
+له يوې لمې پيل کوو چې د لنډيز دپاره د متغيرونو يا څيزونو د لړيو
+د ښودلو \emph{پر سر کرښې} نښه کاروي۔ يعنې «$\overline{a}_k$» د
+«$a_{k_1}$، \dots، $a_{k_n}$» لنډه نښه ده، او $n$ له سياقه
+ټاکل کېږي۔
+
+\begin{lem}\ollabel{lemreflection}
+د هر $1 \leq i \leq k$ دپاره دې $\phi_i(\overline{v}_i, x)$
+يو فورمول وي۔ نو د هر $\alpha$ دپاره داسې $\beta > \alpha$ شته چې
+د هر $\overline{a}_1,
+\ldots, \overline{a}_k \in V_\beta$ او هر $1 \leq i \leq k$
+دپاره:
+\[
+	\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V_\beta) \phi_i(\overline{a}_i, x)
+\]
+\end{lem}
+
+\begin{proof}
+يو ترم $\mu$ داسې تعريفوو: $\mu(\overline{a}_1, \ldots,
+\overline{a}_k)$ تر ټولو لږ پړاو $V$ دے چې د هر $1 \leq i \leq k$
+دپاره دا ټول شرطي بيانونه پوره کوي:
+\[
+\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x)
+\]
+OLSTH-008: د سرچينې په دې شرط کښې يوه اضافه وروستۍ تړونکې قوسه
+لرې شوې؛ د شرط دواړه اړخونه عين دي۔ په اسانه کتل کېدے شي چې
+$\mu(\overline{a}_1, \ldots, \overline{a}_k)$ د ټولو
+$\overline{a}_1, \ldots, \overline{a}_k$ دپاره شته۔ اوس د تعويض
+او زموږ د بازګښت د قضيې په مټ تعريف کړئ:
+\begin{align*}
+	S_0 & = V_{\alpha+1}\\
+	S_{n+1} & = S_n \cup \bigcup
+	\Setabs{\mu(\overline{a}_1, \ldots, \overline{a}_k)}
+	{\overline{a}_1, \ldots, \overline{a}_k \in S_n} \\
+	S &= \bigcup_{m < \omega} S_m.
+\end{align*}
+OLSTH-009: د سرچينې د وروستۍ معادلې بې‌تړاوه شاخص د اتحاد په
+عين تړلي شاخص بدل شوے۔ هر $S_n$، او له دې امله پخپله $S$ هم،
+له $V_\alpha$ وروسته يو پړاو دے۔ اوس
+$\overline{a}_1$، \dots،~$\overline{a}_k \in S$ وټاکئ؛ نو
+داسې $n < \omega$ شته چې $\overline{a}_1$، \dots،
+$\overline{a}_k \in S_n$۔ کوم $1 \leq i \leq k$ وټاکئ او فرض
+کړئ چې $\exists x \phi_i(\overline{a}_i,x)$۔ د جوړونې له مخې
+$(\exists x \in \mu(\overline{a}_1,\ldots, \overline{a}_k))
+\phi_i(\overline{a}_i, x)$؛ نو
+$(\exists x \in S_{n+1})\phi_i(\overline{a}_i, x)$، او بيا
+$(\exists x \in S)\phi_i(\overline{a}_i, x)$۔ نو $S$ زموږ
+$V_\beta$ دے۔
+\end{proof}
+\noindent
+اوس \olref[sth][replacement][ref]{reflectionschema} په نېغه توګه
+ثابتولے شو:
+
+\begin{proof}[ثبوت]
+$\alpha$ وټاکئ۔ بې له دې چې عموميت کم شي، فرضولے شو چې د $\phi$
+يوازيني وصلي نښانې $\exists$، $\lnot$ او $\land$ دي (ځکه د بيان
+دپاره بس دي)۔ $\psi_1, \ldots, \psi_k$ دې د $\phi$ ټول فرعي
+فورمولونه د پېچلتيا په ترتيب وښيي، څو $\psi_k = \phi$ شي۔
+د \olref{lemreflection} له مخې داسې $\beta > \alpha$ شته چې د هر
+$\overline{a}_i \in V_\beta$ او هر $1 \leq i \leq k$ دپاره:
+\begin{align}\label{reflectionnicelybehaved}
+	\exists x\psi_i(\overline{a}_i, x) \rightarrow
+	(\exists x \in V_\beta) \psi_i(\overline{a}_i, x)\tag{*}
+\end{align}
+د $\psi_i$ د پېچلتيا په استقرا به وښيو چې
+$\psi_i(\overline{a}_i) \leftrightarrow
+\psi_i^{V_\beta}(\overline{a}_i)$ د هر
+$\overline{a}_i \in V_\beta$ دپاره۔ که $\psi_i$ اټومي وي،
+خبره ښکاره ده۔ دغه دوه‌اړخيزه همدارنګه ښيي چې که $\psi_i$ د هغو
+فرعي فورمولونو نفي يا عطف وي چې دا خاصيت لري، نو $\psi_i$ هم دا
+خاصيت لري۔ يوازې د کميت ټاکلو حالت پاتې کېږي۔
+$\overline{a}_i \in V_\beta$ وټاکئ؛ بيا:
+\begin{align*}
+	(\exists x \psi_i(\overline{a}_i, x))^{V_\beta}
+	&\text{ هله او يوازې هله چې }
+	(\exists x \in V_\beta)\psi_i^{V_\beta}(\overline{a}_i, x)
+	&&\text{د تعريف له مخې}\\
+	&\text{ هله او يوازې هله چې }
+	(\exists x \in V_\beta)\psi_i(\overline{a}_i,  x)
+	&&\text{د استقرا د فرض له مخې}\\
+	&\text{ هله او يوازې هله چې }
+	\exists x \psi_i(\overline{a}_i, x)
+	&&\text{د \eqref{reflectionnicelybehaved} له مخې}
+\end{align*}
+استقرا بشپړه شوه؛ ځکه $\psi_k = \phi$، غوښتل شوې پايله راځي۔
+\end{proof}
+
+موږ په $\ZF$ کښې انعکاس ثابت کړ۔ زموږ ثبوت په اصل کښې د
+\citet{Montague1961} لاره تعقيبوي۔ اوس غواړو په $\Z$ کښې ثابت کړو
+چې له انعکاسه تعويض راځي۔ ثبوت د \citet{Levy1960} لاره په ساده
+بڼه تعقيبوي۔
+
+څرنګه چې په $\Z$ کښې کار کوو، انعکاس په عين مخکنۍ بڼه نۀ شو
+وړاندې کولے۔ هغه مو د «$V_\alpha$» په نښه بيان کړے و، او دغه
+پړاوونه په $\Z$ کښې نۀ شو تعريفولے
+(\olref[sth][spine][zf]{sec} وګورئ)۔ نو د انعکاس يوه ظاهراً
+کمزورې بڼه داسې وړاندې کوو:
+OLSTH-010: د سرچينې په دې جمله کښې «د تعويض بڼه» ليکل شوې، خو
+ورپسې تعريف شوے اصل کمزورے انعکاس دے؛ همدغه تنګ نثري نوم سم شوے دے۔
+
+\begin{defish}
+\emph{کمزورے انعکاس.} د هر فورمول $\phi$ دپاره داسې متعدي سټ $S$
+شته چې $0$، $1$ او د $\phi$ هر پاراميټر د $S$ !!{element}s وي،
+او $(\forall \overline{x} \in S)(\phi \liff \phi^S)$۔
+\end{defish}
+
+له دې څخه د تعويض د ثبوت دپاره لومړے د
+\citet[first
+part of Theorem 2]{Levy1960} لاره تعقيبوو او ښيو
+چې دوه فورمولونه په يو وخت «منعکس» کولے شو:
+
+\begin{lem}[په $\Z + \text{کمزوري انعکاس}$ کښې.]\ollabel{lem:reflect}
+د هر دوو فورمولونو $\psi, \chi$ دپاره داسې متعدي سټ $S$ شته چې
+$0$ او $1$ (او د فورمولونو هر پاراميټر) د $S$ !!{element}s وي،
+او $(\forall \overline{x} \in S)((\psi \liff \psi^S) \land (\chi
+\liff \chi^S))$۔
+\end{lem}
+
+\begin{proof}
+$\phi$ دې $(z = 0 \land \psi) \lor (z = 1 \land \chi)$ فورمول وي۔
+
+دلته مو لنډه نښه کارولې ده؛ «$z = 0$» بايد په بشپړه بڼه
+«$\forall t\, t \notin z$» او «$z =1$» بايد
+«$\forall s(s \in z \liff \forall t\, t \notin s)$»
+وليکو۔ خو څرنګه چې $0, 1 \in S$ او $S$ متعدي دے، دا فورمولونه
+د $S$ دپاره \emph{مطلق} دي: که کميت ټاکونکي ئې $S$ ته محدود هم
+کړو، پر هماغه څيز به پلي کېږي۔\footnote{په لا رسمي ډول، که
+$\xi$ له دغو دوو فورمولونو يو وي، نو
+$\xi(z) \liff \xi^S(z)$۔}
+
+د کمزوري انعکاس له مخې داسې مناسب $S$ شته چې:
+\begin{align*}
+	(\forall z, \overline{x} \in S)(&\phi \liff \phi^S)\\
+	\text{يعنې }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
+	&\phantom{(}((z = 0 \land \psi) \lor (z = 1 \land \chi))^S)\\
+	\text{يعنې }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
+	&\phantom{(}((z = 0 \land \psi^S) \lor (z = 1 \land \chi^S)))\\
+	\text{يعنې }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\end{align*}
+له دويمې دعوې درېيمه راځي، ځکه «$z = 0$» او «$z=1$»
+د $S$ دپاره مطلق دي؛ څلورمه دعوه بيا له $0 \neq 1$ څخه راځي۔
+\end{proof}\noindent اوس د \citet[Theorem 6]{Levy1960} د لارې
+په تعقيب او ساده کولو سره تعويض ترلاسه کولے شو:
+
+\begin{thm}[په $\Z$ + کمزوري انعکاس کښې]\label{thm:replacement}
+د هر فورمول $\phi(v,w)$ او هر $A$ دپاره، که
+$(\forall x \in A)\lexists![y][\phi(x,y)]$ وي، نو
+$\Setabs{y}{(\exists x \in A)\phi(x,y)}$ شته۔
+\end{thm}
+OLSTH-011: د سرچينې د دې فورمول د وجودي شرط وروستۍ پاتې
+تړونکې قوسه وربشپړه شوې؛ د سټ د غړو شرط نۀ دے بدل شوے۔
+
+\begin{proof}
+داسې $A$ وټاکئ چې $(\forall x \in A)\lexists![y][\phi(x,y)]$
+وي، او دا فورمولونه تعريف کړئ:
+\begin{align*}
+	\psi &\text{ دا دے } (\phi(x, z) \land A = A)\\
+	\chi &\text{ دا دے } \lexists[y][\phi(x, y)]
+\end{align*}
+د \olref{lem:reflect} په کارولو، څرنګه چې $A$ د $\psi$
+پاراميټر دے، داسې متعدي~$S$ شته چې $0, 1, A \in S$ وي
+(د نورو پاراميټرونو ترڅنګ)، او:
+\[
+	(\forall x,z \in S)((\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\]
+نو په ځانګړې توګه:
+\begin{align*}
+	(\forall  x, z \in S)(&\phi(x, z) \liff \phi^S(x, z))\\
+	(\forall x \in S)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi^S(x, y))
+\end{align*}
+دا سره يوځاے کړئ، او دا هم وګورئ چې $A \subseteq S$ دے، ځکه
+$A \in S$ او $S$ متعدي دے:
+\begin{align*}
+	(\forall x \in A)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi(x, y))
+\end{align*}
+اوس $(\forall x \in A)(\lexists![y \in S])\phi(x, y)$؛ ځکه
+$(\forall x \in A)\lexists![y][\phi(x, y)]$۔ بيا بېلونه دا راکوي:
+$\Setabs{y \in S}{(\exists x \in A) \phi(x, y)} = \Setabs{y}{(\exists
+x \in A) \phi(x, y)}$۔
+\end{proof}
+
+\end{document}

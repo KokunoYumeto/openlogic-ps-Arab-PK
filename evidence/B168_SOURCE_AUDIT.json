@@ -1,0 +1,39 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T18:19:31.354985+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-FINITE-AXIOMATIZABILITY",
+  "batch_id": "PS-B168-FINITE-AXIOMATIZABILITY",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0573",
+      "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+      "source_bytes": 5071,
+      "source_sha256": "31413d0ed7d34d8cd7ee45cbf8f137fb28c954de9ed84ef6bed96f502fad4cf4",
+      "target_sha256": "b4263477f8348027eaaeb8c7f3ac3a58653bbc73011ce5c87c9617536d00924b",
+      "paired_blocks": 12,
+      "source_correction_ids": [
+        "OLSTH-012"
+      ]
+    }
+  ],
+  "notes_path": "work/B168_FINITE_AXIOM_SOURCE_PREAUDIT.md",
+  "notes_sha256": "a02bcc6c3235bb070b991f34635fa8fbfa362f6c7124adb3ad833ccfbe32756f",
+  "focused_qa_sha256": "edc45d927dbeb6b62af1c9b04fc389fd94d8816f43fbbe4b1241a0cb811379b1",
+  "gap_check_sha256": "f1d1553bfdbb9a4219bc8969aad09ae7b2ae7a9deb6e2808b67447aa13a1aa2b",
+  "model_provenance_sha256": "ee895306bb99a35b545ed28734bd13f55f6ff23ae8a025826d0d6225bd826e3c",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-FINITE-AXIOMATIZABILITY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-012"
+  ],
+  "semantic_samples_added": 17,
+  "formula_policy": "All52 ordered active math spans and citations retained; OLSTH-012 is a source proof-gap notice, not a correction or a theorem refutation.",
+  "unresolved": "د سرچينې د دويمې قضيې ورکړل شوے ثبوت OLSTH-012 ته بديل دليل غواړي؛ د بشپړ لوستونکي کتنه هم پاتې ده.",
+  "next_executable_action": "Run dual573-unit corpus QA and canonical replay, then accept if PASS; continue checked OLP-0574/0575 and later ordinal arithmetic. TeX slot never suspends translation."
+}

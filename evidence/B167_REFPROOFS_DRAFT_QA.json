@@ -1,0 +1,52 @@
+{
+  "schema": "ps-b167-refproofs-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T18:02:42.054321+00:00",
+  "unit_id": "OLP-0572",
+  "source_path": "content/set-theory/replacement/refproofs.tex",
+  "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+  "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+  "source_bytes": 7874,
+  "target_bytes": 10253,
+  "paired_blocks": 19,
+  "ordered_math_spans": 114,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-008",
+    "OLSTH-009",
+    "OLSTH-010",
+    "OLSTH-011"
+  ],
+  "math_exception": {
+    "source_only": [
+      "\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x))\\]",
+      "\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_n.\\end{align*}",
+      "$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y}$"
+    ],
+    "target_only": [
+      "\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x)\\]",
+      "\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_m.\\end{align*}",
+      "$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y)}$"
+    ]
+  },
+  "formula_policy": "Only three explicit source-local formula repairs; one adjacent prose referent repair; all other active symbolic spans retained in order.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_matches_three_disclosed_formula_repairs": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_lf": true,
+    "target_nfc": true,
+    "no_replacement_character": true,
+    "four_adjacent_disclosures": true,
+    "source_correction_not_made_upstream": true,
+    "no_untranslated_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register four correction decisions and semantic samples, then run cumulative QA and canonical replay before acceptance."
+}

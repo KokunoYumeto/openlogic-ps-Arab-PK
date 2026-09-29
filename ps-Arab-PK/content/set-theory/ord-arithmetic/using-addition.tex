@@ -1,0 +1,126 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{using-addition}
+\olsection{د ترتيبي جمع کارول}
+
+د ترتيبي عددونو په جمع سره د بېلابېلو سټونو رتبې په ښکاره حسابولے شو،
+د \olref[spine][rank]{defnsetrank} په معنا:
+
+\begin{lem}\ollabel{rankcomputation}
+که $\setrank{A} = \alpha$ او $\setrank{B} = \beta$ وي، نو:
+\begin{enumerate}
+	\item\ollabel{exrankpow} $\setrank{\Pow{A}} = \alpha\ordplus 1$
+	\item\ollabel{exrankpair} $\setrank{\{A, B\}} = \max(\alpha,
+	\beta) \ordplus 1$
+	\item\ollabel{exrankcup} $\setrank{A \cup B} = \max(\alpha,
+	\beta)$
+	\item\ollabel{exranktuple} $\setrank{\tuple{A,B}} = \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exranktimes} $\setrank{A \times B} \leq \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exrankunion} $\setrank{\bigcup A} = \alpha$ چې
+	$\alpha$ تش يا حدي وي؛ $\setrank{\bigcup A} = \gamma$ چې
+	$\alpha = \gamma\ordplus 1$ وي
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+په ټول ثبوت کښې \olref[spine][rank]{ranksupstrict} بيا بيا کاروو۔
+
+\emph{\olref{exrankpow}.} که $x \subseteq A$ وي، نو $\setrank{x} \leq
+\setrank{A}$۔ نو $\setrank{\Pow{A}} \leq \alpha \ordplus  1$۔
+څرنګه چې په ځانګړې توګه $A \in \Pow{A}$، نو
+$\setrank{\Pow{A}} = \alpha \ordplus  1$۔
+
+\emph{\olref{exrankpair}.} د \olref[spine][rank]{ranksupstrict} له مخې۔
+
+\emph{\olref{exrankcup}.} د \olref[spine][rank]{ranksupstrict} له مخې۔
+
+\emph{\olref{exranktuple}.} \olref{exrankpair} دوه ځله وکاروئ۔
+
+\emph{\olref{exranktimes}.} پام وکړئ چې
+$A \times B \subseteq \Pow{\Pow{A \cup B}}$، او \olref{exranktuple}
+وکاروئ۔
+
+\emph{\olref{exrankunion}.} که $\alpha = \gamma\ordplus 1$ وي، نو
+داسې $c \in A$ شته چې $\setrank{c} = \gamma$ وي، او د $A$
+هېڅ !!{element} تر دې لوړه رتبه نه لري؛ نو
+$\setrank{\bigcup A} = \gamma$۔ که $\alpha$ حدي ترتيبي عدد وي،
+نو $A$ داسې !!{element}s لري چې رتبې يې $\alpha$ ته هر څومره نږدې،
+خو په کلکه ترې ټيټې، رسېږي؛ نو $\bigcup A$ هم داسې !!{element}s
+لري چې رتبې يې $\alpha$ ته هر څومره نږدې، خو په کلکه ترې ټيټې،
+رسېږي؛ له دې امله $\setrank{\bigcup A} = \alpha$۔
+\end{proof}
+\noindent
+دا د تمرين دپاره پرېږدو چې ولې \olref{exranktimes} يو
+\emph{نا}مساوات دے۔
+
+\begin{prob}
+داسې سټونه $A$ او $B$ جوړ کړئ چې $\setrank{A \times B}=
+\max(\setrank{A}, \setrank{B})$ وي۔ داسې سټونه $A$ او $B$
+جوړ کړئ چې
+$\setrank{A \times B}=\max(\setrank{A}, \setrank{B}) \ordplus  2$
+وي۔ ايا نورې رتبې هم ممکنې دي؟
+OLSTH-015: د سرچينې د تمرين په دويمه معادله کښې د دواړو خواوو
+تر منځ نښه نه وه؛ د مخکنۍ لمې د پورته کرانې د مثال دپاره دلته
+مساوات په ښکاره ور زيات شوے دے۔ د تمرين نور شرطونه نه دي بدل شوي۔
+\end{prob}
+
+اوس دا هم ښودلے شو چې د يو ترتيبي عدد د «متناهي» يا «نامتناهي»
+بللو څو معقولې معناوې سره برابرې دي:
+
+\begin{lem}\ollabel{ordinfinitycharacter}
+د هر ترتيبي عدد $\alpha$ دپاره لاندې شرطونه همارزښته دي:
+\begin{enumerate}
+	\item\ollabel{ord:notinomega} $\alpha\notin \omega$، يعنې
+	$\alpha$ طبيعي عدد نه دے
+	\item\ollabel{ord:omegaplus} $\omega \leq \alpha$
+	\item\ollabel{ord:oneplus} $1 \ordplus  \alpha = \alpha$
+	%\alpha \approx \alpha \ordplus 1$
+	\item\ollabel{ord:plusone} $\alpha \approx \alpha\ordplus 1$،
+	يعنې $\alpha$ او $\alpha\ordplus 1$ هم‌شمېره دي
+	\item\ollabel{ord:infinite} $\alpha$ د ډېډېکېنډ په معنا نامتناهي دے
+	\end{enumerate}
+\end{lem}
+\noindent
+نو د ترتيبي عدد د (نا)متناهي والي د پوهېدو پنځه په ثبوت برابرې
+لارې لرو۔
+
+\begin{proof}
+\emph{\olref{ord:notinomega} $\Rightarrow$ \olref{ord:omegaplus}.}
+د درې‌ګوني وېش له مخې۔
+
+\emph{\olref{ord:omegaplus} $\Rightarrow$ \olref{ord:oneplus}.}
+$\alpha \geq \omega$ وټاکئ۔ د نامتناهيت هاخوا استقرا له مخې داسې
+تر ټولو کوچنے ترتيبي عدد $\gamma$ (ښايي $0$) شته چې يو حدي
+ترتيبي عدد $\beta$ د $\alpha = \beta \ordplus \gamma$ شرط پوره
+کوي۔ اوس:
+\[
+	1 \ordplus \alpha =
+	1 \ordplus (\beta \ordplus \gamma) =
+	(1 \ordplus \beta) \ordplus \gamma =
+	\supstrict_{\delta < \beta} (1 \ordplus  \delta) \ordplus  \gamma =
+	\beta \ordplus  \gamma =
+	\alpha.
+\]
+\emph{\olref{ord:oneplus} $\Rightarrow$ \olref{ord:plusone}.}
+په څرګنده يوه !!a{bijection}
+$f \colon (\alpha \disjointsum 1) \to (1 \disjointsum \alpha)$
+شته۔ که $1 \ordplus \alpha = \alpha$ وي، نو يوه هم‌شکلتيا
+$g \colon (1 \disjointsum \alpha) \to \alpha$ شته۔ اوس
+$\comp{f}{g}$ وګورئ۔
+
+\emph{\olref{ord:plusone} $\Rightarrow$ \olref{ord:infinite}.}
+که $\alpha \approx \alpha \ordplus 1$ وي، يوه !!a{bijection}
+$f \colon (\alpha \disjointsum 1) \to \alpha$ شته۔
+$g(\gamma) = f(\gamma, 0)$ د هر $\gamma < \alpha$ دپاره تعريف کړئ؛
+دا !!{injection} ښيي چې $\alpha$ د ډېډېکېنډ په معنا نامتناهي دے،
+ځکه $f(0,1) \in \alpha \setminus \ran{g}$۔
+
+\emph{\olref{ord:infinite} $\Rightarrow$ \olref{ord:notinomega}.}
+دا \olref[z][infinity-again]{naturalnumbersarentinfinite} دے۔
+\end{proof}
+
+\end{document}

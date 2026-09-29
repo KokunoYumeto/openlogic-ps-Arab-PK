@@ -1,0 +1,218 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{add}
+\olsection{د ترتيبي عددونو جمع}
+
+فرض کړئ چې $\alpha$ او $\beta$ جمع کول غواړو۔ د $\beta$ يوه
+کاپي د $\alpha$ د يوې کاپۍ سملاسي وروسته کېښودلے شو۔ (کاپيو ته اړ يو،
+ځکه له \olref[ordinals][basic]{ordinalsaresubsets} څخه پوهېږو چې يا
+$\alpha \subseteq \beta$ وي يا $\beta \subseteq \alpha$۔) په بداهتي
+ډول دا داسې ده لکه لومړے د $\alpha$ په اوږدوالي ګامونه واخلو،
+\emph{او بيا} د $\beta$ په اوږدوالي ګامونه واخلو۔ پايلې ته رسېدلې
+لړۍ به ښه ترتيب شوې وي؛ نو د
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} له مخې له يوه
+(يوازيني) ترتيبي عدد سره هم‌شکله ده۔ هماغه ترتيبي عدد د $\alpha$
+او $\beta$ \emph{مجموعه} ګڼلے شو۔
+
+دا د ترتيبي جمع تر شا بداهتي تصور دے۔ د کره تعريف دپاره لومړے
+د سټونو د \emph{کاپيو} جوړولو تصور اخلو۔ دلته د $0$ او $1$ خپل‌سري
+ټاګونه کاروو، څو څرګنده شي چې کوم څيز له کومه راغلے دے:
+
+\begin{defn}\ollabel{defdissum}
+د $A$ او $B$ \emph{ناګډه مجموعه} دا ده:
+$A \disjointsum B = (A\times \{0\}) \cup (B \times \{1\})$۔
+\end{defn}
+
+اوس د ترتيبي عددونو پر جوړو يو ترتيب تعريفوو:
+
+\begin{defn}
+د هر ډول ترتيبي عددونو $\alpha_1, \alpha_2, \beta_1, \beta_2$
+دپاره وايو چې:
+\begin{align*}
+	\tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ هله او يوازې هله چې }&
+	\text{يا $\alpha_2 \in \beta_2$ وي}\\
+	& \text{يا هم $\alpha_2 = \beta_2$ او $\alpha_1 \in \beta_1$ دواړه وي}
+\end{align*}
+\end{defn}
+
+دا \emph{برعکس قاموسي} ترتيب دے، ځکه لومړے د جوړې دويم غړے او
+بيا لومړے غړے پرتله کېږي۔ اوس په ياد ولرئ چې $\alpha \ordplus \beta$
+مو د $\alpha$ د کاپۍ ورپسې د $\beta$ د کاپۍ د ترتيب ډول غوښت۔ د دې
+دپاره وايو:
+
+\begin{defn}\ollabel{defordplus}
+د هر ډول ترتيبي عددونو $\alpha$، $\beta$ دپاره د دوی مجموعه دا ده:
+$\alpha \ordplus \beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$۔
+\end{defn}
+\noindent
+پام وکړئ چې دلته مو د نښو په کارونه کښې لږ تساهل کړے دے؛ په کره
+ډول بايد «$\Setabs{\tuple{x,y}\in \alpha\disjointsum\beta}{x \rlexless y}$»
+د «$\rlexless$» پر ځاے وليکو۔ خو د لنډيز دپاره به لاندې همدا
+تساهل روان ساتو۔
+
+لاندې پايله، له \olref[ordinals][ordtype]{thmOrdinalRepresentation}
+سره يوځاے، ښيي چې زموږ تعريف په سمه توګه جوړ شوے دے:
+
+\begin{lem}\ollabel{ordsumlessiswo}
+$\tuple{\alpha \disjointsum \beta, \rlexless}$ ښه ترتيب دے،
+د هر ډول ترتيبي عددونو $\alpha$ او $\beta$ دپاره۔
+\end{lem}
+
+\begin{proof}
+په څرګنده $\rlexless$ پر $\alpha \disjointsum \beta$ تړلې اړيکه ده۔
+د دې د ښه‌بنسټه والي د ښودلو دپاره ناتش
+$X \subseteq \alpha \disjointsum \beta$ وټاکئ۔ $Y$ دې د $X$
+هغه فرعي سټ وي چې د غړو دويم مختص ئې تر ټولو کوچنے وي، يعنې
+$Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$۔
+اوس د $Y$ هغه غړے وټاکئ چې لومړے مختص ئې تر ټولو کوچنے وي۔
+\end{proof}
+\noindent
+په دې توګه د ترتيبي جمع يو ښه ښکاره تعريف لرو۔ يوه د تعجب وړ
+نه ده پايله دا ده ($1 = \{0\}$ په ياد ولرئ، د
+\olref[z][infinity-again]{defnomega} له مخې):
+\begin{prop}
+$\alpha \ordplus  1 = \ordsucc{\alpha}$، د هر ترتيبي عدد
+$\alpha$ دپاره۔
+\end{prop}
+
+\begin{proof}
+د $f$ هم‌شکلتيا له $\ordsucc{\alpha} = \alpha \cup \{\alpha\}$ څخه تر
+$\alpha\disjointsum1 = (\alpha \times \{0\})
+\cup (\{0\} \times \{1\})$ پورې وګورئ؛ دا
+$f(\gamma) = \tuple{\gamma, 0}$ د $\gamma \in \alpha$ دپاره،
+او $f(\alpha) = \tuple{0, 1}$ ټاکي۔
+OLSTH-013: د سرچينې په ښودل شوي قيمت کښې دواړه برخې له مخکې
+ټاګ شوې دي؛ د دويمې ناګډې جمع پر ځاے د همدغو برخو عادي اتحاد
+ښودل شوے دے۔ د f قيمتونه نه دي بدل شوي۔
+\end{proof}
+\noindent
+سربېره پر دې، په اسانه ښودل کېږي چې جمع ځينې بازګشتي شرطونه
+پوره کوي:
+
+\begin{lem}\ollabel{ordadditionrecursion}
+د هر ډول ترتيبي عددونو $\alpha, \beta$ دپاره:
+\begin{align*}
+	\alpha\ordplus 0 &= \alpha\\
+	\alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
+	\alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{که $\beta $ حدي ترتيبي عدد وي}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+هر حالت جلا ګورو؛ لومړے:
+\begin{align*}
+	\alpha \ordplus  0
+	& = \ordtype{(\alpha \times \{0\}) \cup (0 \times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha \times \{0\}) \cup \emptyset, \rlexless}\\
+	&= \alpha\\
+	\alpha \ordplus (\beta \ordplus  1)
+	%&= \ordtype{(\alpha\times \{0\}) \cup (\ordtype{\beta \ordplus  1}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\ordsucc{\beta}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
+	&= (\alpha \ordplus  \beta) \ordplus  1
+\end{align*}
+OLSTH-014: د سرچينې په دويمه معادله کښې د تش سټ او د يوغړي
+سټ نښې سره ګډې شوې وې؛ د صفر او يوه د حاصل ضرب پر ځاے تش سټ
+راغلے دے۔ لومړۍ او وروستۍ معادلې عين دي۔
+اوس دې $\beta \neq \emptyset$ حدي وي۔ که $\delta < \beta$ وي،
+نو $\delta\ordplus 1 < \beta$ هم دے؛ له دې امله
+$\alpha \ordplus  \delta$ د $\alpha \ordplus  \beta$ يوه
+مناسبه پيلنۍ برخه ده۔ نو $\alpha \ordplus  \beta$ د
+$X = \Setabs{\alpha \ordplus  \delta}{\delta < \beta}$ کلکه
+پاسنۍ کرانه ده۔ سربېره پر دې، که
+$\alpha \leq \gamma < \alpha \ordplus  \beta$ وي، نو په ښکاره
+$\gamma = \alpha \ordplus \delta$ د کوم $\delta < \beta$
+دپاره دے۔ نو
+$\alpha \ordplus  \beta = \supstrict_{\delta< \beta}(\alpha\ordplus \delta)$۔
+\end{proof}
+
+خو دلته يوه په زړه پورې خبره ده۔ د ترتيبي جمع د تعريف دپاره مو
+\emph{پر ځاے} يوازې د نامتناهيت هاخوا بازګښت قضيه کارولے شوه،
+او د \olref{ordadditionrecursion} هماغه بازګشتي معادلې مو ايښودلے
+شوې (البته «$\ordsucc{\beta}$» په کارولو، د
+«$\beta \ordplus 1$» پر ځاے)۔
+
+نو د ترتيبي عددونو عمليې په دوو بېلو لارو تعريفولے شو۔ په
+\emph{ترکيبي} لاره يو ښه ترتيب شوے سټ په ښکاره جوړوو او د هغه
+د ترتيب ډول اخلو۔ يا ئې \emph{بازګشتي} لاره تعريفولے شو، يوازې
+د بازګښت معادلې په ايښودلو۔ که کار سم شوے وي، پايله يوه ده؛ ځکه
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} تضمينوي چې
+دغه بازګشتي معادلې \emph{يوازيني} ترتيبي عددونه ټاکي۔
+
+په ډېرو اړخونو کښې د ترتيبي عددونو حساب د طبيعي عددونو د جمع
+په شان دے۔ د بېلګې په توګه، لاندې ثابتولے شو:
+
+\begin{lem}\ollabel{ordinaladditionisnice}
+که $\alpha, \beta, \gamma$ ترتيبي عددونه وي، نو:
+\begin{enumerate}
+	\item\ollabel{ordaddition1} که $\beta < \gamma$ وي، نو $\alpha
+	\ordplus  \beta < \alpha \ordplus  \gamma$
+	\item\ollabel{ordaddition2} که $\alpha \ordplus  \beta =
+	\alpha\ordplus \gamma$ وي، نو $\beta = \gamma$
+	\item\ollabel{ordaddition3} $\alpha \ordplus  (\beta \ordplus
+	\gamma) = (\alpha \ordplus  \beta) \ordplus  \gamma$، يعنې
+	جمع اتحادي ده
+	\item\ollabel{ordaddition4} که $\alpha \leq \beta$ وي، نو $\alpha
+	\ordplus  \gamma \leq \beta \ordplus \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\olref{ordaddition3} ثابتوو او پاتې برخې د تمرين دپاره پرېږدو۔
+ثبوت د $\gamma$ په اړه د ساده نامتناهيت هاخوا استقرا له لارې،
+د \olref{ordadditionrecursion} په کارولو کېږي۔ که $\gamma = 0$ وي:
+\[
+(\alpha \ordplus  \beta) \ordplus  0 = \alpha \ordplus  \beta  = \alpha \ordplus  (\beta \ordplus  0)
+\]
+که $\gamma = \delta\ordplus 1$ وي، د استقرا له مخې فرض کړئ چې
+$(\alpha \ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
+\delta)$؛ اوس \olref{ordadditionrecursion} درې وارې کاروو:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  (\delta \ordplus  1) & = ((\alpha \ordplus  \beta) \ordplus  \delta)\ordplus 1\\
+	& = (\alpha \ordplus  (\beta \ordplus  \delta)) \ordplus  1\\
+	& = \alpha \ordplus  ((\beta \ordplus  \delta)\ordplus 1)\\
+	& = \alpha \ordplus  (\beta \ordplus  (\delta\ordplus 1))
+\end{align*}
+که $\gamma$ حدي ترتيبي عدد وي، د استقرا له مخې فرض کړئ چې که
+$\delta \in \gamma$ وي، نو
+$(\alpha \ordplus  \beta) \ordplus  \delta =
+\alpha \ordplus  (\beta \ordplus  \delta)$؛ اوس:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
+	&= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\
+	&= \alpha \ordplus  \supstrict_{\delta < \gamma}(\beta \ordplus  \delta)\\
+	& = \alpha \ordplus  (\beta \ordplus  \gamma)
+\end{align*}
+\end{proof}
+
+\begin{prob}
+د \olref[sth][ord-arithmetic][add]{ordinaladditionisnice} پاتې
+برخې ثابتې کړئ۔
+\end{prob}
+
+تر دې ځايه ترتيبي جمع بايد ډېره اشنا ښکاره شي۔ خو يوه مهمه
+لاره شته چې ترتيبي جمع پکې د طبيعي عددونو له جمع سره \emph{نه}
+ورته کېږي۔
+
+\begin{prop}\ollabel{ordsumnotcommute}
+ترتيبي جمع تبادلي \emph{نه} ده؛ $1 \ordplus  \omega = \omega <
+\omega \ordplus  1$۔
+\end{prop}
+
+\begin{proof}
+پام وکړئ چې $1 \ordplus  \omega = \supstrict_{n < \omega} (1 \ordplus n)
+= \omega \in \omega \cup \{\omega\} = \ordsucc{\omega} = \omega
+\ordplus  1$۔
+\end{proof}
+\noindent
+که څه هم دا په لومړي نظر حيرانولے شي، \emph{بايد مو حيران نه کړي}۔
+له يوې خوا، په $1 \ordplus  \omega$ کښې له ټولو طبيعي عددونو
+\emph{مخکښې} يو اضافي غړے ږدئ۔ لکه د هلبرټ د هوټل په استدلال کښې
+چې مو په \olref[sfr][infinite][hilbert]{sec} کښې وکړل، په بداهتي
+ډول دا اضافي لومړنے غړے بايد د ټول ترتيب په ډول کښې توپير رانه ولي۔
+له بلې خوا، په $\omega \ordplus  1$ کښې له ټولو طبيعي عددونو
+\emph{وروسته} يو اضافي غړے ږدئ۔ دا بيا بيخي بل ډول څيز دے!
+
+\end{document}

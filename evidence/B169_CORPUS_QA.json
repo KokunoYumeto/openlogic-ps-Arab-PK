@@ -1,0 +1,29 @@
+{
+  "schema": "ps-b169-corpus-qa/1",
+  "utc": "2026-09-29T18:31:51.878571+00:00",
+  "status": "PASS",
+  "projected_draft_units": 575,
+  "accepted_before_finalizer": 573,
+  "staged_units": [
+    "OLP-0574",
+    "OLP-0575"
+  ],
+  "aligned_blocks": 8479,
+  "segment_canon_uses": 5327,
+  "semantic_samples": 1875,
+  "terms": 284,
+  "review_entries": 724,
+  "source_actions": 434,
+  "byte_identical_surfaces": {
+    "QA.json": "f63fdfe5959d10539fd98d6811bad21666a91b26c96637a757666c6fc2494868",
+    "ALIGNMENT.jsonl": "2f7b6440cf66ac5fa30cac8386e96130334e8f1501aaa45ae1f62e6acd8fafbf",
+    "SEGMENT_CANON_USE.jsonl": "9baa84305548d5da306c636325935f7f948f8a152e0921f6e7ad204629a69ee3"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "0fa3b7f927b977f8fbb8a74be3bb16aad9c3bddf5b03a2b4bb08aa2eac0e9bd0",
+  "focused_qa_sha256": "9e0391f8cd6a92943c6c9b4a2d73b53d202af3da3a029afdfb380896e35de55e",
+  "next_action": "Dual canonical replay from frozen575 inputs; accept B169 only if PASS. Continue checked OLP-0576 addition."
+}

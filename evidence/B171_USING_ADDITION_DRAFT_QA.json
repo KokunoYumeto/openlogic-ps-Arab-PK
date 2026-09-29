@@ -1,0 +1,48 @@
+{
+  "schema": "ps-b171-using-addition-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T18:40:34.061904+00:00",
+  "unit_id": "OLP-0577",
+  "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+  "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+  "target_sha256": "7534db54e7f08c78b77965891b133543f6240b1b616390846418b1c4408c262c",
+  "source_bytes": 4730,
+  "target_bytes": 5921,
+  "paired_blocks": 20,
+  "changed_blocks": 17,
+  "ordered_math_spans": 64,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-015"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\setrank{A\\timesB}\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+    ],
+    "target_only": [
+      "$\\setrank{A\\timesB}=\\max(\\setrank{A},\\setrank{B})\\ordplus2$"
+    ]
+  },
+  "preaudit_sha256": "9ed298c24ee349fc551c0e0f12e539c6a77254d590f37458a45a4494e7557f08",
+  "formula_policy": "All active mathematics retained except one explicit source-local exercise relation repair, disclosed in adjacent Pashto text; original comments, term tokens and CRLF retained.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_matches_disclosed_repair": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "one_adjacent_disclosure": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact corrections, terms and block-level semantics before cumulative acceptance."
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T18:31:21.565882+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-ORDINAL-ARITHMETIC-INTRO",
+  "batch_id": "PS-B169-ORDINAL-ARITHMETIC-INTRO",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0574",
+      "source_path": "content/set-theory/ord-arithmetic/ord-arithmetic.tex",
+      "source_bytes": 336,
+      "source_sha256": "aeccfd957a75eb3ddbfc0ed123fc50201eb60973fad8ac05dcc8f65cb2c91b64",
+      "target_sha256": "cdf51c4c60e8726e82721ad54c81643c6f4f85b9711d64977f0d466faf24b31e",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0575",
+      "source_path": "content/set-theory/ord-arithmetic/introduction.tex",
+      "source_bytes": 886,
+      "source_sha256": "9e0976b1ea12b68d90487495db0bc3624653a8c55cdea1300fded90db48a73b8",
+      "target_sha256": "e1c51d6329d1926413c9c47b1ef1bb3626b91d2988a17cd2669f01e4a7616ea7",
+      "paired_blocks": 6,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "9e0391f8cd6a92943c6c9b4a2d73b53d202af3da3a029afdfb380896e35de55e",
+  "model_provenance_sha256": "6ebf8a2d295bd0f91953a659a42d5f0708ab6dd0424e1e6191ead363f9a1650a",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-ORDINAL-ARITHMETIC"
+  ],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 8,
+  "formula_policy": "Three ordered active math spans retained exactly; all import IDs, citation IDs and inactive source comments retained.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ انتخاب د منجمد تعريف له مخې لنډمهاله دے. راتلونکے د ترتيبي جمع بشپړ ثبوت لا ژباړل غواړي.",
+  "next_executable_action": "Run both575-unit corpus QA generators and dual canonical replay; accept B169 if PASS. Continue source-compare and translate OLP-0576 with two exact source-local formula candidates."
+}

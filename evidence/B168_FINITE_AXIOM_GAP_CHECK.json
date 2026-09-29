@@ -1,0 +1,14 @@
+{
+  "schema": "ps-b168-source-gap-finite-counterexample/1",
+  "status": "PASS; source claim refuted, source formula retained",
+  "source_claim": "For every Separation instance sigma, Z proves all transitive X satisfy sigma relativized to X.",
+  "instance": "Separation on A with parameter p and selection condition x=p.",
+  "finite_witness": "X=von Neumann 3={0,1,2}; A=2 and p=1 belong to X, but required B={1} is not an element of X.",
+  "checked": {
+    "X_transitive": true,
+    "A_and_p_in_X": true,
+    "selected_B_not_in_X": true,
+    "no_candidate_B_in_X": true
+  },
+  "limit": "This refutes the displayed universally quantified auxiliary claim and exercise, not the finite-axiomatizability theorems themselves."
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "ps-b170-ordinal-addition-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-29T18:31:10.138730+00:00",
+  "unit_id": "OLP-0576",
+  "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+  "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+  "target_sha256": "7c68c72842edbee08a9a6deab5ca70b5f9232750ca0ebfa2b317c2a07d2a124a",
+  "source_bytes": 9309,
+  "target_bytes": 11895,
+  "paired_blocks": 26,
+  "changed_blocks": 23,
+  "ordered_math_spans": 82,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-013",
+    "OLSTH-014"
+  ],
+  "math_exception": {
+    "source_only": [
+      "$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\disjointsum(\\{0\\}\\times\\{1\\})$",
+      "\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup\\{0\\},\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"
+    ],
+    "target_only": [
+      "$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\cup(\\{0\\}\\times\\{1\\})$",
+      "\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup\\emptyset,\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"
+    ]
+  },
+  "preaudit_sha256": "266393536b18d80ce3be1db7c8de512027c77d26c86e44d10ba2133f41bf3115",
+  "formula_policy": "All active mathematics retained except two explicit source-local formula repairs, each disclosed in adjacent Pashto text; original comments and CRLF retained.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_matches_two_disclosed_repairs": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_crlf": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "two_adjacent_disclosures": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact corrections, terms and block-level semantics before cumulative acceptance."
+}

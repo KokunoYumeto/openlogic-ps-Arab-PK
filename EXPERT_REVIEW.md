@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 564 of 722 source units are translated drafts. This log contains 274 terminology entries and 435 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage: 576 of 722 source units are translated drafts. This log contains 287 terminology entries and 442 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 
@@ -4907,3 +4907,13 @@ Earlier terminology entries were backfilled from the existing decision ledger af
 - Timing: retrospective backfill from existing reader notes, semantic reviews and source findings; not a claim of original contemporaneous motive
 
 The Pakistani-Pashto review guide includes the eight new B164–B165 term choices and exact OLSTH-005–007 source-correction questions, with source/target line locators and inspected-witness limits.
+
+The Pakistani-Pashto review guide now includes six provisional Replacement, hierarchy and Reflection decisions with source/target line locators and limited witness claims.
+
+Reflection proof review now includes two provisional technical terms and four exact source-local treatments. The frozen source is retained; all four treatments have adjacent Pashto disclosures.
+
+The new OLSTH-012 entry records an unresolved gap in the printed Separation claim, with a finite counterexample and exact locations; the original theorem and exercise formulas remain.
+
+The provisional ordinal-arithmetic term is recorded at the chapter title and introduction with exact source/target locations.
+
+The new ordinal-addition entries cover the tagged disjoint sum, reverse lexicographic order, and two exact source-local formula repairs with adjacent disclosures.

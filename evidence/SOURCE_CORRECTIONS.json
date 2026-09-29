@@ -15579,6 +15579,414 @@
       "limits": "One source-local stage-index correction with zero/successor/limit justification; no kernel formalization claimed.",
       "symbolic_branch_partition_check_sha256": "160bddc90374cd5b3f1ede37b4292ab5cac36c0eb534c19683b78b8fd0aa6875",
       "source_local_implication_check_sha256": "9a57d07c49fe7f4324e3d16ac39fe03248dc5fba97343b4dca2ca5f15d2b8e8e"
+    },
+    {
+      "id": "OLSTH-008",
+      "unit_id": "OLP-0572",
+      "classification": "extra_closing_parenthesis_in_mu_conditional",
+      "source_path": "content/set-theory/replacement/refproofs.tex",
+      "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+      "source_locator": "content/set-theory/replacement/refproofs.tex:34",
+      "source_literal_line_1based": [
+        34
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/replacement/refproofs.tex",
+      "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+      "target_line_1based": 34,
+      "target_literal_line_1based": [
+        34
+      ],
+      "disclosure_line_1based": 36,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "د μ د شرط اضافه وروستۍ تړونکې قوسه لرې شوه؛ د شرط دواړه اړخونه بې له بدله دي.",
+      "reason": "The source conditional defining the least stage mu has one unmatched closing parenthesis after phi_i; remove that parenthesis only.",
+      "formula_policy": "B167 retains all114 ordered active mathematical spans except exactly OLSTH-008, 009 and 011; OLSTH-010 changes prose only.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-REFLECTION-PROOFS",
+      "audit_artifacts": [
+        "B167_SOURCE_AUDIT.json",
+        "B167_REFPROOFS_DRAFT_QA.json",
+        "B167_REFPROOFS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B167 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x))\\]"
+        ],
+        "target_only": [
+          "\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x)\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-009",
+      "unit_id": "OLP-0572",
+      "classification": "free_union_index_in_S_definition",
+      "source_path": "content/set-theory/replacement/refproofs.tex",
+      "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+      "source_locator": "content/set-theory/replacement/refproofs.tex:42",
+      "source_literal_line_1based": [
+        42
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/replacement/refproofs.tex",
+      "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+      "target_line_1based": 46,
+      "target_literal_line_1based": [
+        46
+      ],
+      "disclosure_line_1based": 48,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "د S د اتحاد په معادله کښې بې‌تړاوه n د تړلي m په نښه بدل شو.",
+      "reason": "The displayed union binds m but the summand uses free n. Change only the summand index to m so S is the union of the recursive stages.",
+      "formula_policy": "B167 retains all114 ordered active mathematical spans except exactly OLSTH-008, 009 and 011; OLSTH-010 changes prose only.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-REFLECTION-PROOFS",
+      "audit_artifacts": [
+        "B167_SOURCE_AUDIT.json",
+        "B167_REFPROOFS_DRAFT_QA.json",
+        "B167_REFPROOFS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B167 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_n.\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_m.\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-010",
+      "unit_id": "OLP-0572",
+      "classification": "weak_reflection_prose_referent",
+      "source_path": "content/set-theory/replacement/refproofs.tex",
+      "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+      "source_locator": "content/set-theory/replacement/refproofs.tex:100",
+      "source_literal_line_1based": [
+        100
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/replacement/refproofs.tex",
+      "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+      "target_line_1based": 107,
+      "target_literal_line_1based": [
+        107
+      ],
+      "disclosure_line_1based": 109,
+      "mode": "adjacent-Pashto-disclosed-source-local-prose-correction",
+      "translation_change": "د معرفي په جمله کښې د تعويض پر ځاے د انعکاس نوم راغے؛ ورپسې اصل کمزورے انعکاس دے.",
+      "reason": "The introduction says a weaker formulation of Replacement, but the following displayed definition is explicitly Weak-Reflection. Correct only the introductory referent to Reflection.",
+      "formula_policy": "B167 retains all114 ordered active mathematical spans except exactly OLSTH-008, 009 and 011; OLSTH-010 changes prose only.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-REFLECTION-PROOFS",
+      "audit_artifacts": [
+        "B167_SOURCE_AUDIT.json",
+        "B167_REFPROOFS_DRAFT_QA.json",
+        "B167_REFPROOFS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B167 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-011",
+      "unit_id": "OLP-0572",
+      "classification": "missing_image_condition_closing_parenthesis",
+      "source_path": "content/set-theory/replacement/refproofs.tex",
+      "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+      "source_locator": "content/set-theory/replacement/refproofs.tex:147",
+      "source_literal_line_1based": [
+        147
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/replacement/refproofs.tex",
+      "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+      "target_line_1based": 159,
+      "target_literal_line_1based": [
+        159
+      ],
+      "disclosure_line_1based": 161,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "د تصوير د غړو د وجودي شرط پاتې تړونکې قوسه ورزياته شوه؛ شرط نه دے بدل شوے.",
+      "reason": "The theorem image comprehension opens an existential parenthesis but omits its closing parenthesis. Close that parenthesis only; the member condition is unchanged.",
+      "formula_policy": "B167 retains all114 ordered active mathematical spans except exactly OLSTH-008, 009 and 011; OLSTH-010 changes prose only.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-REFLECTION-PROOFS",
+      "audit_artifacts": [
+        "B167_SOURCE_AUDIT.json",
+        "B167_REFPROOFS_DRAFT_QA.json",
+        "B167_REFPROOFS_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B167 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y}$"
+        ],
+        "target_only": [
+          "$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y)}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-012",
+      "unit_id": "OLP-0573",
+      "classification": "transitivity_does_not_imply_relativized_separation",
+      "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+      "source_sha256": "31413d0ed7d34d8cd7ee45cbf8f137fb28c954de9ed84ef6bed96f502fad4cf4",
+      "source_locator": "content/set-theory/replacement/finiteaxiomatizability.tex:47,50",
+      "source_literal_line_1based": [
+        47,
+        50
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/replacement/finiteaxiomatizability.tex",
+      "target_sha256": "b4263477f8348027eaaeb8c7f3ac3a58653bbc73011ce5c87c9617536d00924b",
+      "target_line_1based": 78,
+      "target_literal_line_1based": [
+        75,
+        86
+      ],
+      "disclosure_line_1based": 78,
+      "mode": "adjacent-Pashto-source-gap-disclosure; original assertion and exercise retained",
+      "translation_change": "د هر متعدي سټ دپاره د بېلونې د نسبي شېما ادعا او تمرين عين ساتل شوي؛ د فون نويمن درې محدود مقابل مثال په څنګ کښې څرګند دے.",
+      "reason": "The source asserts every transitive X satisfies each relativized Separation instance. Von Neumann 3 is transitive, contains A=2 and p=1, but the x=p subset {1} of A is not an element of X. Thus the auxiliary claim and corresponding exercise fail as written; this does not refute the finite-axiomatizability theorems.",
+      "formula_policy": "All52 ordered active math spans unchanged; one adjacent Pashto unresolved-gap disclosure.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-FINITE-AXIOMATIZABILITY",
+      "audit_artifacts": [
+        "B168_SOURCE_AUDIT.json",
+        "B168_FINITE_AXIOM_SOURCE_PREAUDIT.md",
+        "B168_FINITE_AXIOM_DRAFT_QA.json",
+        "B168_FINITE_AXIOM_GAP_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B168 source comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": true,
+      "finite_semantic_check_sha256": "f1d1553bfdbb9a4219bc8969aad09ae7b2ae7a9deb6e2808b67447aa13a1aa2b",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Finite counterexample refutes the auxiliary universal claim, not the Montague/Potter theorem. No replacement proof or author approval claimed."
+    },
+    {
+      "id": "OLSTH-013",
+      "unit_id": "OLP-0576",
+      "classification": "second_disjoint_sum_on_already_tagged_copies",
+      "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+      "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+      "source_locator": "content/set-theory/ord-arithmetic/addition.tex:78",
+      "source_literal_line_1based": [
+        78
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/addition.tex",
+      "target_sha256": "7c68c72842edbee08a9a6deab5ca70b5f9232750ca0ebfa2b317c2a07d2a124a",
+      "target_line_1based": 83,
+      "target_literal_line_1based": [
+        83
+      ],
+      "disclosure_line_1based": 86,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "د دواړو لا-ټاګ شويو برخو تر منځ د دويمې ناګډې جمع پر ځاے عادي اتحاد راغلے؛ f عين قيمتونه لري.",
+      "reason": "The displayed codomain of f applies disjoint sum a second time to already tagged pieces. Replacing only the second operation with ordinary union leaves the one-time tagged-copy set matching the specified f values.",
+      "formula_policy": "B170 retains all82 ordered active mathematical spans except exactly OLSTH-013 and OLSTH-014.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-ADDITION",
+      "audit_artifacts": [
+        "B170_SOURCE_AUDIT.json",
+        "B170_ORDINAL_ADDITION_DRAFT_QA.json",
+        "B170_ORDINAL_ADDITION_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B170 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\disjointsum(\\{0\\}\\times\\{1\\})$"
+        ],
+        "target_only": [
+          "$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\cup(\\{0\\}\\times\\{1\\})$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local symbolic repair; no independent formal proof or original author approval claimed."
+    },
+    {
+      "id": "OLSTH-014",
+      "unit_id": "OLP-0576",
+      "classification": "zero_product_miswritten_as_singleton",
+      "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+      "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+      "source_locator": "content/set-theory/ord-arithmetic/addition.tex:100",
+      "source_literal_line_1based": [
+        100
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ord-arithmetic/addition.tex",
+      "target_sha256": "7c68c72842edbee08a9a6deab5ca70b5f9232750ca0ebfa2b317c2a07d2a124a",
+      "target_line_1based": 108,
+      "target_literal_line_1based": [
+        108
+      ],
+      "disclosure_line_1based": 116,
+      "mode": "adjacent-Pashto-disclosed-source-local-symbol-correction",
+      "translation_change": "د صفر او يوه د حاصل ضرب تش ارزښت د دويمې معادلې په تش سټ بدل شو؛ نورې معادلې ساتل شوې.",
+      "reason": "The zero ordinal is empty, so 0 times {1} is empty, not singleton {0}. Replace only the second displayed line with the empty set.",
+      "formula_policy": "B170 retains all82 ordered active mathematical spans except exactly OLSTH-013 and OLSTH-014.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-ADDITION",
+      "audit_artifacts": [
+        "B170_SOURCE_AUDIT.json",
+        "B170_ORDINAL_ADDITION_DRAFT_QA.json",
+        "B170_ORDINAL_ADDITION_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B170 source proof comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup\\{0\\},\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup\\emptyset,\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "Only one source-local symbolic repair; no independent formal proof or original author approval claimed."
     }
   ],
   "external_upstream_report_submitted": false,

@@ -1,0 +1,29 @@
+{
+  "schema": "ps-b168-corpus-qa/1",
+  "utc": "2026-09-29T18:20:06.168161+00:00",
+  "status": "PASS",
+  "projected_draft_units": 573,
+  "accepted_before_finalizer": 572,
+  "staged_units": [
+    "OLP-0573"
+  ],
+  "aligned_blocks": 8466,
+  "segment_canon_uses": 5323,
+  "semantic_samples": 1867,
+  "terms": 283,
+  "review_entries": 723,
+  "source_actions": 434,
+  "byte_identical_surfaces": {
+    "QA.json": "1306d195a55877b85ab1d91135911a232191520278a0d057491c7c335914f816",
+    "ALIGNMENT.jsonl": "be265c038dd5135a12e6d35fb9de08731395900ba0dc12058f9d5abbb62ef3e3",
+    "SEGMENT_CANON_USE.jsonl": "0aa7e4380717b5555e224515af53fe1ae884ff7d17bac0301a06c298ee074685"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "e907a0646970ec5dd5fd8ea4b72ca868ac6e4f9ebf60f568c005571f55ec5ff2",
+  "focused_qa_sha256": "edc45d927dbeb6b62af1c9b04fc389fd94d8816f43fbbe4b1241a0cb811379b1",
+  "gap_check_sha256": "f1d1553bfdbb9a4219bc8969aad09ae7b2ae7a9deb6e2808b67447aa13a1aa2b",
+  "next_action": "Dual canonical replay from frozen573 inputs; accept B168 only if PASS. Continue checked ordinal introduction and later units."
+}

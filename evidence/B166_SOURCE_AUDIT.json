@@ -1,0 +1,94 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed drafts; cumulative acceptance pending",
+  "utc": "2026-09-29T17:46:25.663890+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-REPLACEMENT-JUSTIFICATION",
+  "batch_id": "PS-B166-REPLACEMENT-JUSTIFICATION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0565",
+      "source_path": "content/set-theory/replacement/replacement.tex",
+      "source_bytes": 375,
+      "source_sha256": "65e993fb2a190799326cdaca3b946d7f92b72f8963e591048f2be4918354f997",
+      "target_sha256": "ae9bd3dbebc8529376a5ecf3f8e798a6c9169e6770b0cc4188d998216b8f702a",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0566",
+      "source_path": "content/set-theory/replacement/introduction.tex",
+      "source_bytes": 1184,
+      "source_sha256": "e623e78d259b8d80570492733074213737414fe7fbbc8d7dc641d77760783ad6",
+      "target_sha256": "feea8af8f97e0cd902b9fa12e4035f2c4f8bcb3cc117e4778e18bce205c2a01f",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0567",
+      "source_path": "content/set-theory/replacement/strength.tex",
+      "source_bytes": 2769,
+      "source_sha256": "4f3e4108f3ab822b38f880ddcade17b6e270a0f0272d9b0c40e9a9a389911301",
+      "target_sha256": "82fbdb6050b85f60dca84e881d7651950a0b9db4469513e522cf5ef5d097641f",
+      "paired_blocks": 9,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0568",
+      "source_path": "content/set-theory/replacement/extrinsic.tex",
+      "source_bytes": 5943,
+      "source_sha256": "004138bef28268b2a7f9547172634b404d5bcd15716839e7822f4cccc6126c30",
+      "target_sha256": "27294bb099a4acf257f01864d065964c864ff41fdb1caab15561a1be613eedc6",
+      "paired_blocks": 15,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0569",
+      "source_path": "content/set-theory/replacement/limofsize.tex",
+      "source_bytes": 3221,
+      "source_sha256": "579ce35979a90771bcf225ff54b688aa34c19a88bd46fd5b51256f5ab2e68d49",
+      "target_sha256": "4a03a26b8d0eb8b8a97f3b9b7638ebf3839e11236472b8a44effca13961c5289",
+      "paired_blocks": 10,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0570",
+      "source_path": "content/set-theory/replacement/absinf.tex",
+      "source_bytes": 5832,
+      "source_sha256": "fd6cb8f41f12694c74f9cc52336851f0b04eee98efbcdad5b60300c2de0ebea2",
+      "target_sha256": "09f99f8a3e992cf22a3aa4bfd9fb1292cf4cc7389aff2e70aefd64db44233ef7",
+      "paired_blocks": 15,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0571",
+      "source_path": "content/set-theory/replacement/ref.tex",
+      "source_bytes": 2075,
+      "source_sha256": "fbdfc9b85a4c276113f81e9a1ba5a20f59930a75175e43a1e11a6d9bee57644e",
+      "target_sha256": "23bd41b6a366c5a553fe00c7a46cc7cd622b5911a04ac4620ba5e3a4ae39ba95",
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B166_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "947c2d0b9cf22cf0e7a7c7a690fc83521212d265cf2d46c8c4973a55f662d48d",
+  "staging_checkpoint_sha256": "4d892fa44753a234b6e5bcc65c34e1d4bb7888e386cf77229867f02167bb9b78",
+  "model_provenance_sha256": "d2e769d3ecef9730ca19c517f6245cd496757c88fe3e98166132d3868c250f41",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-BUKOVSKY-P202-REPLACEMENT-SCHEMA"
+  ],
+  "new_term_ids": [
+    "TERM-SET-REPLACEMENT-JUSTIFICATION",
+    "TERM-SET-FORMULA-RELATIVIZATION",
+    "TERM-SET-LEVEL-THEORY-ZR",
+    "TERM-SET-LIMITATION-OF-SIZE",
+    "TERM-SET-ABSOLUTE-INFINITY-COFINALITY",
+    "TERM-SET-REFLECTION-SCHEMA"
+  ],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 60,
+  "formula_policy": "All120 ordered symbolic spans in seven units retained exactly; prose in source mathematical text arguments localized. No source correction in B166.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شويو مخونو کښې نه ده موندل شوې؛ انتخاب د منجمد تعريف او محدودو ژبنيو/سيمه‌ييزو شاهدانو له مخې لنډمهاله دے. د بشپړ لوستونکي جوړول او د پخواني انګرېزي شاخص پښتو کول لا پاتې دي.",
+  "next_executable_action": "Run both571-unit corpus QA generators and dual canonical replay; accept B166 only if all PASS. Continue OLP-0572 onward. TeX only at a later natural validated checkpoint, with no translation hold."
+}

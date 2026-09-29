@@ -1,0 +1,108 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{mult}
+
+\olsection{د ترتيبي عددونو ضرب}
+
+اوس د ترتيبي عددونو ضرب ته راځو، او د جمع په شان يې څېړو۔ فرض
+کړئ چې $\alpha$ له~$\beta$ سره ضربول غواړو۔ د دې د تصور دپاره
+يو مستطيل جال په پام کښې ونيسئ چې سور يې $\alpha$ او لوړوالے يې
+$\beta$ وي؛ د $\alpha$ او $\beta$ حاصل ضرب دا دے چې د هر قطار
+په اوږدو کښې لاړ شئ، بيا بل قطار ته ورشئ\ldots تر څو ټول جال
+تېر کړئ۔ په بله وينا، د $\alpha$ او $\beta$ حاصل ضرب داسې جوړېږي
+چې د $\beta$ \emph{هر} غړے د $\alpha$ په يوه کاپۍ بدل کړئ۔
+
+د رسمي کولو دپاره د $\alpha$ او $\beta$ پر کارتيزي حاصل ضرب
+هماغه برعکس قاموسي ترتيب کاروو:
+
+\begin{defn}
+د هر ډول ترتيبي عددونو $\alpha, \beta$ دپاره د دوی حاصل ضرب
+$\alpha \ordtimes \beta = \ordtype{\alpha \times \beta, \rlexless}$ دے۔
+\end{defn}
+\noindent
+بيا بايد پخلی وکړو چې دا تعريف په سمه توګه جوړ شوے دے:
+
+\begin{lem}\ollabel{ordtimeslessiswo}
+$\tuple{\alpha \times \beta, \rlexless}$ د هر ډول ترتيبي عددونو
+$\alpha$ او $\beta$ دپاره ښه ترتيب دے۔
+\end{lem}
+
+\begin{proof}
+عين د \olref[add]{ordsumlessiswo} په شان۔
+\end{proof}
+\noindent
+دا هم ثابتول ګران نه دي چې ضرب لاندې چلند کوي:
+
+\begin{lem}\ollabel{ordtimesrecursion}
+د هر ډول ترتيبي عددونو $\alpha, \beta$ دپاره:
+\begin{align*}
+	\alpha \ordtimes 0 &= 0\\
+	\alpha \ordtimes (\beta \ordplus 1) &=
+		(\alpha \ordtimes \beta) \ordplus \alpha\\
+	\alpha  \ordtimes \beta &=
+		\supstrict_{\delta < \beta}(\alpha \ordtimes \delta) &&
+		\text{چې $\beta$ حدي ترتيبي عدد وي}.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+دا د تمرين دپاره پرېږدو۔
+\end{proof}
+
+په رښتيا، د جمع په شان مو ترتيبي ضرب هم د نېغ تعريف پر ځاے د
+دغو بازګشتي معادلو له لارې تعريفولے شو۔ د جمع په څېر دلته هم
+ځينې چلندونه اشنا دي:
+
+\begin{lem}\ollabel{ordinalmultiplicationisnice}
+که $\alpha, \beta, \gamma$ ترتيبي عددونه وي، نو:
+\begin{enumerate}
+	\item\ollabel{ordtimes1} که $\alpha \neq 0$ او $\beta < \gamma$
+	وي، نو $\alpha \ordtimes \beta < \alpha \ordtimes \gamma$؛
+	\item\ollabel{ordtimes2} که $\alpha \neq 0$ او $\alpha \ordtimes
+	\beta = \alpha\ordtimes\gamma$ وي، نو $\beta = \gamma$؛
+	\item\ollabel{ordtimes3} $\alpha \ordtimes (\beta \ordtimes
+	\gamma) = (\alpha \ordtimes \beta) \ordtimes \gamma$؛
+	\item\ollabel{ordtimes4} که $\alpha \leq \beta$ وي، نو $\alpha
+	\ordtimes \gamma \leq \beta \ordtimes \gamma$؛
+	\item\ollabel{ordtimes5} $\alpha \ordtimes (\beta \ordplus
+	\gamma) = (\alpha \ordtimes \beta )\ordplus (\alpha\ordtimes
+	\gamma)$۔
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+دا هم د تمرين دپاره پرېږدو۔
+\end{proof}
+
+نورې پايلې هم د خپلې خوښې تر بريده ثابتولے يا لوستلے شئ۔ خو د
+\olref[ord-arithmetic][add]{ordsumnotcommute} له مخې لاندې خبره
+بايد حيرانوونکې نه وي:
+
+\begin{prop}
+ترتيبي ضرب تبادلي نه دے: $2 \ordtimes \omega  =
+\omega < \omega \ordtimes 2$۔
+\end{prop}
+
+\begin{proof}
+$2 \ordtimes \omega = \supstrict_{n < \omega}(2\ordtimes  n) = \omega \in \supstrict_{n < \omega}(\omega \ordplus n) = \omega \ordplus \omega = \omega \ordtimes 2$۔
+\end{proof}
+\noindent
+دلته هم بداهتي دليل ډېر روښانه دے۔ د $2
+\ordtimes \omega$ د حساب دپاره هر طبيعي عدد په دوو څيزونو بدل کړئ۔
+هماغه د ترتيب ډول ترلاسه کوئ که په طبيعي عددونو کښې د ټولو
+«نيمو» عددونو ځايونه ورزيات کړئ؛ يعنې پر
+$\Setabs{\nicefrac{n}{2}}{n \in \omega}$ طبيعي ترتيب وګورئ۔
+په دې بڼه ئې د ترتيب ډول په څرګنده پخپله د $\omega$ په شان دے۔
+خو د $\omega \ordtimes 2$ د حساب دپاره د $\omega$ دوې کاپۍ
+يوه د بلې ورپسې ږدئ۔
+
+\begin{prob}
+\olref[sth][ord-arithmetic][mult]{ordtimeslessiswo}،
+\olref[sth][ord-arithmetic][mult]{ordtimesrecursion}،
+او \olref[sth][ord-arithmetic][mult]{ordinalmultiplicationisnice}
+ثابت کړئ۔
+\end{prob}
+
+\end{document}

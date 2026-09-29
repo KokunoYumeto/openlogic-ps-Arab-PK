@@ -1,0 +1,45 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T18:05:54.609007+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-REFLECTION-PROOFS",
+  "batch_id": "PS-B167-REFLECTION-PROOFS",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0572",
+      "source_path": "content/set-theory/replacement/refproofs.tex",
+      "source_bytes": 7874,
+      "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+      "target_sha256": "be23c92476bf8170d6f95daa90017c8c5e833e7e7c8fa0bf1dc0364047d5ca5b",
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLSTH-008",
+        "OLSTH-009",
+        "OLSTH-010",
+        "OLSTH-011"
+      ]
+    }
+  ],
+  "notes_path": "work/B167_REFPROOFS_SOURCE_PREAUDIT.md",
+  "notes_sha256": "a9e2b523b862dc18cdd51780763e90f24c233e8ecec9c283cb6b859db6de133c",
+  "focused_qa_sha256": "306c72c3da6ad9dab5044e8b8054f69117f78471b520faa3c82064501456881d",
+  "model_provenance_sha256": "7f8838072243e37f3eec79f1cfd32a4e734fa093054a71cd04694eda9e13ba24",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-WEAK-REFLECTION",
+    "TERM-SET-FORMULA-ABSOLUTENESS"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-008",
+    "OLSTH-009",
+    "OLSTH-010",
+    "OLSTH-011"
+  ],
+  "semantic_samples_added": 29,
+  "formula_policy": "All114 ordered active symbolic spans preserved except three exact disclosed source-local repairs; fourth correction changes prose referent only. Comments and identifiers retained.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ انتخاب د منجمد تعريف له مخې لنډمهاله دے. د بشپړ لوستونکي او پخواني انګرېزي شاخص کتنه لا پاتې ده.",
+  "next_executable_action": "Run two572-unit corpus QA generators and dual canonical replay, then accept B167 if all PASS. Continue OLP-0573 onward; TeX slot never suspends translation."
+}

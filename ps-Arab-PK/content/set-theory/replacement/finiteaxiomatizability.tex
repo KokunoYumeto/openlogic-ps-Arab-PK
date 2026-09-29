@@ -1,0 +1,117 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	
+\olfileid{sth}{replacement}{finiteaxiomatizability}
+\olsection{ضميمه: متناهي اصل‌بندي کېدنه}
+دا څپرکے له تعويض څخه د ځينو پايلو په راايستلو پاے ته رسوو۔ لومړۍ
+پايله د \citet{Montague1961} ده؛ پام وکړئ چې دا د $\ZF$ \emph{په دننه}
+کښې ثبوت نه، بلکې د $\ZF$ \emph{په اړه} ثبوت دے:
+\begin{thm}\ollabel{zfnotfinitely}
+	$\ZF$ په متناهيو اصلونو نه شي اصل‌بندي کېدلے۔ په عمومي ډول: که $\Th{T}$
+	متناهي وي او $\Th{T} \Proves \ZF$ وي، نو $\Th{T}$ ناسازګاره دے۔
+	
+	(دلته مو په پټه خپل بحث هغو لومړۍ مرتبې جملو ته محدود کړے چې يوازېنے
+	غيرمنطقي لومړنی نښان يې $\in$ دے؛ او $\Th{T} \Proves \ZF$ په دې
+	معنا ليکو چې $\Th{T} \Proves \phi$ د هر $\phi \in \ZF$
+	دپاره دے۔)
+\end{thm}
+\begin{proof}
+	داسې متناهي $\Th{T}$ وټاکئ چې $\Th{T} \Proves \ZF$ وي۔ نو
+	$\Th{T}$ انعکاس ثابتوي، يعنې \olref[sth][replacement][ref]{reflectionschema}۔
+	څرنګه چې $\Th{T}$ متناهي دے، د يوې عطفې $\theta$ په بڼه يې بيا ليکلے شو۔
+	د همدې فورمول په انعکاس سره $\Th{T} \Proves \exists \beta(\theta \liff \theta^{V_\beta})$۔
+	او ځکه چې په څرګنده $\Th{T} \Proves \theta$ دے، نو
+	$\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$ ترلاسه کوو۔
+	
+	اوس دې $\psi(X)$ د لاندې فورمول لنډه نښه وي:
+	\[
+		\theta^X \land X\text{ متعدي دے} \land (\forall Y \in X)(Y\text{ متعدي دے}\lif \lnot \theta^{Y})
+	\]
+	په لنډ ډول، دا وايي چې $X$ د $\theta$ متعدي مدل دے، او په دې اړه
+	د $\in$ له مخې لږتر لږه دے۔ اوس دا په ياد ولرئ چې
+	$\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$؛ د $\ZF$
+	دننه د رتبې له بنسټيزو حقيقتونو، او له دې امله د $\Th{T}$ دننه، لرو:
+	\begin{equation}
+		\Th{T} \Proves \exists M \psi(M). \tag{*}\label{Mpsi}
+	\end{equation}
+	د $\psi(X)$ د لومړي عطف له مخې، هرکله چې $\Th{T} \Proves \sigma$
+	وي، $\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$ هم لرو۔ نو
+	د \eqref{Mpsi} له مخې:
+	\begin{align*}
+		\Th{T} &\Proves \forall X(\psi(X) \lif (\exists N \psi(N))^X)\\
+	\intertext{له دې او بيا له \eqref{Mpsi} څخه په ګټې اخيستو:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \psi(N))^M)
+	\intertext{نو په ځانګړې توګه:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ متعدي دے})^N \land (\theta^N)^M))
+	\intertext{نو د متعدي والي په اړه له بنسټيز استدلاله:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ متعدي دے} \land \theta^N))
+	\end{align*} 
+	له دې ښکاري چې $\Th{T}$ ناسازګاره دے۔\footnote{دغه «بنسټيز استدلال»
+	د متعدي سټونو د ځينو «مطلق والي حقيقتونو» ثبوت غواړي۔}
+\end{proof}
+
+ورته پايله \citet[223]{Potter2004} ياده کړې ده:
+
+\begin{prop}\ollabel{finiteextensionofZ}
+	فرض کړئ $\Th{T}$ د $\Z$ په نسبت د متناهيو نويو اصلونو پراختيا ده۔
+	که $\Th{T} \Proves \ZF$ وي، نو $\Th{T}$ ناسازګاره دے۔
+	(دلته د \olref{zfnotfinitely} هماغه ضمني محدوديتونه کاروو۔)
+\end{prop}
+\begin{proof}
+	$\theta$ دې د $\Th{T}$ د ټولو اصلونو عطف وي، خو د بېلونې
+	(نامتناهي ډېرو) بېلګو پرته۔ $\psi$ له $\theta$ څخه د
+	\olref{zfnotfinitely} په شان تعريف کړئ؛ بيا ښودلے شو چې
+	$\Th{T} \Proves \exists M \psi(M)$۔
+	
+	د \olref{zfnotfinitely} په شان، دا شېما ټينګولے شو: هرکله چې
+	$\Th{T} \Proves \sigma$ وي، نو
+	$\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$۔ بيا ثبوت عين
+	د \olref{zfnotfinitely} په شان پاے ته رسوو۔
+	
+	خو د دې شېما ټينګول د \olref{zfnotfinitely} تر حالت لږ ډېر کار غواړي۔
+	د بېلونې بېلګې په $\Th{T}$ کښې شته، خو د $\theta$ عطفونه نه دي۔
+	بيا هم سرچينه وايي چې دا خنډ د
+	$\Th{T} \Proves \forall X(X\text{ متعدي دے} \lif \sigma^X)$
+	په ثابتولو اوارېدلے شي، د بېلونې د هرې بېلګې $\sigma$ دپاره۔
+	دا لوستونکي ته پرېږدو۔
+	OLSTH-012: دا وروستۍ ادعا يوازې له متعدي والي نه نه راځي۔ د فون
+	نويمن «درې» متعدي سټ دے؛ «دوه» پکې غړے دے، خو د «دوه» له غړو
+	څخه د «يو» يوازينے فرعي سټ په «درې» کښې غړے نه دے۔ له همدې امله
+	د بېلونې نسبي بڼه د هر متعدي سټ دپاره نه شي ثابتېدلے۔ د سرچينې
+	فورمول او لاندې تمرين عين ساتل شوي؛ دا ثبوت نور دليل غواړي۔
+\end{proof}
+\begin{prob}
+	وښيئ چې د بېلونې د هرې بېلګې $\sigma$ دپاره دا رښتيا ده:
+	$\Z \Proves \forall X(X\text{ متعدي دے} \lif \sigma^X)$۔
+	(دا شېما مو په \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}
+	کښې کارولې وه۔)
+\end{prob}
+\begin{prob}
+	وښيئ چې د هر $\phi \in \Z$ دپاره
+	$\ZF \Proves \phi^{V_{\omega+\omega}}$ دے۔
+\end{prob}
+\begin{prob}
+	په \olref[sth][replacement][finiteaxiomatizability]{zfnotfinitely}
+	او \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}
+	کښې په ثبوتونو کښې کارول شوې پاتې شېمايي پايلې تائيد کړئ۔
+\end{prob}
+
+لکه په \olref[sth][replacement][absinf]{sec} کښې چې وويل شول، دا ښيي
+چې تعويض له \olref[ordinals][ordtype]{thmOrdinalRepresentation} څخه
+په کلکه قوي دے۔ يا په لږ زيات دقت: که $\Z$ + «هر ښه ترتيب د يوه
+يوازيني ترتيب‌عدد سره هم‌شکله دے» سازګار وي، نو د تعويض کومه بېلګه
+نه شي ثابتولے۔
+
+
+	%	By assumption, $\psi^{V_\alpha}$ has the form: 
+	%	\[
+	%		(\forall A \in V_\alpha)(\exists S \in V_\alpha)(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A))
+	%	\]
+	%	To establish this holds, fix $A \in V_\alpha$. Using Separation, obtain: 
+	%	\[
+	%		S = \Setabs{x \in A}{\phi^{V_\alpha}(x)}
+	%	\]
+	%	Now $S \in V_\alpha$, since $S \subseteq A \in V_\alpha$, and clearly $(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A)$.
+
+\end{document}

@@ -1,0 +1,42 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T18:42:51.245831+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-ORDINAL-ADDITION",
+  "batch_id": "PS-B170-ORDINAL-ADDITION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0576",
+      "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+      "source_bytes": 9309,
+      "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+      "target_sha256": "7c68c72842edbee08a9a6deab5ca70b5f9232750ca0ebfa2b317c2a07d2a124a",
+      "paired_blocks": 26,
+      "source_correction_ids": [
+        "OLSTH-013",
+        "OLSTH-014"
+      ]
+    }
+  ],
+  "notes_path": "work/B170_ORDINAL_ADDITION_SOURCE_PREAUDIT.md",
+  "notes_sha256": "266393536b18d80ce3be1db7c8de512027c77d26c86e44d10ba2133f41bf3115",
+  "focused_qa_sha256": "c250b4b5cbd161c442e164116430c1dbf7be1388e3d45eb8bc1265e2788ee51b",
+  "model_provenance_sha256": "3cd72e4c2b2dcc419e29c7bd5419c79c80903d7db77f5f23071ac1821a3cc32c",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE"
+  ],
+  "new_term_ids": [
+    "TERM-SET-ORDINAL-ADDITION",
+    "TERM-SET-DISJOINT-SUM",
+    "TERM-SET-REVERSE-LEXICOGRAPHIC"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-013",
+    "OLSTH-014"
+  ],
+  "semantic_samples_added": 35,
+  "formula_policy": "All82 ordered active math spans retained except exactly two disclosed source-local formula repairs. Original comments, identifiers and CRLF retained.",
+  "unresolved": "عين پاکستانۍ چاپي تخصصي اصطلاح په کتل شوې پاڼه کښې نه ده موندل شوې؛ انتخاب د منجمد تعريف له مخې لنډمهاله دے. د ترتيبي ضرب او قواوو راتلونکې برخې او بشپړ لوستونکی لا پاتې دي.",
+  "next_executable_action": "Run two576-unit corpus QA generators and dual canonical replay, then accept B170 if PASS; continue OLP-0577 onward. TeX slot never suspends translation."
+}

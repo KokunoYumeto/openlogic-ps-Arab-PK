@@ -1,0 +1,28 @@
+{
+  "schema": "ps-b170-corpus-qa/1",
+  "utc": "2026-09-29T18:43:21.532413+00:00",
+  "status": "PASS",
+  "projected_draft_units": 576,
+  "accepted_before_finalizer": 575,
+  "staged_units": [
+    "OLP-0576"
+  ],
+  "aligned_blocks": 8505,
+  "segment_canon_uses": 5350,
+  "semantic_samples": 1910,
+  "terms": 287,
+  "review_entries": 729,
+  "source_actions": 436,
+  "byte_identical_surfaces": {
+    "QA.json": "edef306d8da793af1e765108e9ad68e06cad935a072bf992f0db9912552d343b",
+    "ALIGNMENT.jsonl": "b1a15dcf94adc2a43318ee68d1fccd535336aef1b8cccec8433692d76f901536",
+    "SEGMENT_CANON_USE.jsonl": "45078fe49ebd83daeee5c4e39645bbb8dff6fce890fa998721b80ab44025658f"
+  },
+  "qa_scripts": {
+    "state": "2d16e6d4518fce8deb506561a66574911c5da6dc66a6fa7ed228bde4dd23079d",
+    "repository": "9d83085ab32a5fc83462266710892e5ed2df1a59f607797321b076ab18f8febe"
+  },
+  "source_audit_sha256": "0316e44639a05d6edadb650b583ba89cb455b7656d8e347578063429147b29cc",
+  "focused_qa_sha256": "c250b4b5cbd161c442e164116430c1dbf7be1388e3d45eb8bc1265e2788ee51b",
+  "next_action": "Dual canonical replay from frozen576 inputs; accept B170 only if PASS. Continue checked OLP-0577/0578."
+}
