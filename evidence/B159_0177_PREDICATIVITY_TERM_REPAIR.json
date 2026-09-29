@@ -1,0 +1,68 @@
+{
+  "schema": "ps-b159-predicativity-term-repair/1",
+  "status": "PASS; two lexical occurrences corrected; cumulative QA/register replay pending",
+  "utc": "2026-09-29T01:25:41.683096+00:00",
+  "unit_id": "OLP-0177",
+  "term_id": "TERM-SECOND-ORDER-SEMANTICS",
+  "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
+  "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+  "old_target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+  "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56",
+  "changes": [
+    [
+      "ناوړاندوينيزه",
+      "امپريديکاتيف"
+    ],
+    [
+      "وړاندوينيزه",
+      "پريديکاتيف"
+    ]
+  ],
+  "checks": {
+    "math": true,
+    "ids": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "line_count_unchanged": true
+  },
+  "new_decision": false,
+  "new_source_correction": false,
+  "existing_source_treatments_rebased_unchanged": [
+    "OLFOL-031",
+    "OLFOL-032"
+  ],
+  "actual_authorities_checked": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "inspection": "Actual visual consultation during B159 writing and this bounded lexical review",
+      "role": "Pakistani scholarly prose primary; Afghan predicate passage explicitly regional comparator. Exact predicativity labels not attested."
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "inspection": "Actual visual consultation during B159 writing and this bounded lexical review",
+      "role": "Pakistani scholarly prose primary; Afghan predicate passage explicitly regional comparator. Exact predicativity labels not attested."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 95,
+      "printed_page": "90",
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "inspection": "Actual visual consultation during B159 writing and this bounded lexical review",
+      "role": "Pakistani scholarly prose primary; Afghan predicate passage explicitly regional comparator. Exact predicativity labels not attested."
+    }
+  ],
+  "model": "gpt-6-sol",
+  "reasoning_effort": "ultra",
+  "historical_reader_and_source_archive_bytes_unchanged": true,
+  "rendered_current_source_acceptance_pending": true,
+  "next_action": "Register B159 six-unit batch, rebuild cumulative QA and canonical surfaces; refresh pending reader input and actual model-credit exception for OLP-0177 before next TeX attempt."
+}

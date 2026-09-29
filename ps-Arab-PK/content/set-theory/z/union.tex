@@ -1,0 +1,27 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{union}
+\olsection{اتحاد}
+
+\olref[sth][z][sep]{prop:intersectionsexist} تقاطعګانې راکړې.
+خو که غواړو چې خپل‌سري اتحادونه شتون ولري، نو يو بل بديهي
+اصل هم ټاکل پکار دي:
+
+\begin{axiom}[اتحاد] د هر سټ $A$ دپاره سټ $\bigcup A =
+\Setabs{x}{(\exists b \in A) x \in b}$ شتون لري.
+\[
+	\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)
+\]
+\end{axiom}
+
+د تجمعي-تکراري تصور له مخې دا بديهي اصل هم توجيه کېږي.
+$A$ يو سټ وګرځوئ؛ نو $A$ په يوه پړاو $S$ کښې جوړېږي
+(د \stageshier له مخې). د $A$ هر غړے له $S$ \emph{نه مخکې}
+جوړ شوے دے (د \stagesacc له مخې)؛ نو په همدې ډول استدلال
+کولو سره، د $A$ د هر غړي هر غړے له $S$ نه مخکې جوړ شوے دے.
+په دې توګه دا \emph{ټول} سټونه له $S$ نه مخکې موجود دي،
+څو په $S$ کښې په يوه سټ کښې راټول شي. او همدغه سټ $\bigcup A$ دے.
+
+\end{document}

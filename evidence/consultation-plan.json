@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B158-COUNTERFACTUAL-END-SET-OPENING",
-  "status": "B158 five source-reviewed drafts registered; cumulative acceptance pending",
+  "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+  "status": "B159 five source-reviewed drafts registered; cumulative acceptance pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -3670,7 +3670,37 @@
         "TERM-DERIVABILITY-PROPERTIES",
         "TERM-MODEL-THEORY"
       ],
-      "scope": "The section keeps relation quantification, comprehension, full versus weak semantics, categorical arithmetic, definability examples and the completeness/compactness contrast. OLFOL-031 and OLFOL-032 repair only two local notation defects."
+      "scope": "The section keeps relation quantification, comprehension, full versus weak semantics, categorical arithmetic, definability examples and the completeness/compactness contrast. OLFOL-031 and OLFOL-032 repair only two local notation defects. B159 retrospectively corrects only two predicativity labels after actual P1/P2/predicate consultation; other cited witnesses retain their original consultation timing, not a fresh inspection claim.",
+      "revision_consultations": [
+        {
+          "utc": "2026-09-29T01:25:41.683096+00:00",
+          "batch": "B159",
+          "scope": [
+            "OLP-0177"
+          ],
+          "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+          "previous_target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+          "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56",
+          "literal_changes": [
+            [
+              "ناوړاندوينيزه",
+              "امپريديکاتيف"
+            ],
+            [
+              "وړاندوينيزه",
+              "پريديکاتيف"
+            ]
+          ],
+          "consulted_passages": [
+            "PK-IQRAM-P1-PROSE",
+            "PK-IQRAM-P2-SEMANTICS",
+            "AF-NIAZMAN-P90-PREDICATE"
+          ],
+          "reason": "پخواني لنډمهاله نومونه د وړاندوينې معنا ته ناسم اشاره کولے شي. پريديکاتيف او امپريديکاتيف د سرچينې تخصصي نومونه په صوتي بڼه ساتي؛ د کمي کولو د دامن بشپړ تعريف عين پاتې دے. عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي.",
+          "model": "gpt-6-sol",
+          "reasoning_effort": "ultra"
+        }
+      ]
     },
     "OLP-0178": {
       "batch_id": "PS-B040-FOL-BEYOND",
@@ -11030,6 +11060,124 @@
       "scope": "B158: تکراري تصور؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
       "allowed_residual_english": [],
       "residual_english_rationale": "OLCNT disclosed source-treatment ids only; no ordinary residual English."
+    },
+    "OLP-0531": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-EXTENSIONALITY"
+      ],
+      "scope": "B159: د غړو له مخې برابري؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
+    },
+    "OLP-0532": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-PREDICATE",
+        "TERM-EXTENSIONALITY",
+        "TERM-SET-COMPREHENSION-EXTENSION"
+      ],
+      "scope": "B159: د رسل تناقض (بيا)؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [
+        "Grundgesetze"
+      ],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
+    },
+    "OLP-0533": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-SECOND-ORDER-SEMANTICS",
+        "TERM-SET-COMPREHENSION-EXTENSION",
+        "TERM-SET-CUMULATIVE-STAGES"
+      ],
+      "scope": "B159: پريديکاتيف او امپريديکاتيف؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [
+        "OLSTH"
+      ],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
+    },
+    "OLP-0534": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-EMPTY",
+        "TERM-SET-THEORY-ITERATIVE-CONCEPTION",
+        "TERM-SET-CUMULATIVE-STAGES"
+      ],
+      "scope": "B159: تجمعي-تکراري لاره؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
+    },
+    "OLP-0535": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-SET",
+        "TERM-SET-CUMULATIVE-STAGES",
+        "TERM-SET-URELEMENTS",
+        "TERM-BIJECTIVE"
+      ],
+      "scope": "B159: بنسټيز غير سټ غړي ومنو که نۀ؟؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
+    },
+    "OLP-0536": {
+      "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-MOE-P3-SET",
+        "AF-MOE-P5-MEMBERSHIP",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-PREDICATE",
+        "TERM-SET-COMPREHENSION-EXTENSION",
+        "TERM-SET-FREGE-EXTENSION",
+        "TERM-SECOND-ORDER-SEMANTICS"
+      ],
+      "scope": "B159: ضميمه: د فرېګه پنځم بنسټيز قانون؛ بشپړ ګرامري يا رسمي سياق، د سرچينې څرګند حدود او عين فورمولونه.",
+      "allowed_residual_english": [
+        "Grundgesetze"
+      ],
+      "residual_english_rationale": "Only exact work-title Grundgesetze or disclosed OLSTH ids; no ordinary untranslated English."
     }
   },
   "semantic_review": [
@@ -20055,6 +20203,198 @@
       "unit_id": "OLP-0530",
       "passage": "driver",
       "reverse_paraphrase": "The iterative-conception title, six section imports and chapter end hook remain complete.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0531",
+      "passage": "identity",
+      "reverse_paraphrase": "Equal members determine the same set; many distinct concepts may have the same instances.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0531",
+      "passage": "axiom",
+      "reverse_paraphrase": "The exact extensionality quantifiers and implication are preserved.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0531",
+      "passage": "scope",
+      "reverse_paraphrase": "Extensionality determines identity, not which sets exist.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0531",
+      "passage": "motivation",
+      "reverse_paraphrase": "The text motivates extensional collections while leaving existence principles to the next section.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "existence",
+      "reverse_paraphrase": "Naive comprehension asserts existence for every formula; Russell gives nonexistence.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "contradiction",
+      "reverse_paraphrase": "Self-membership is equivalent to its negation if R exists.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "history",
+      "reverse_paraphrase": "June1901 and June16,1902 remain the exact source dates with correspondence citation.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "uniqueness",
+      "reverse_paraphrase": "Extensionality licenses the unique-set notation, but the nonexistence claim avoids it.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "logic",
+      "reverse_paraphrase": "The barber and pug parallels and complete first-order theorem schema are retained.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0532",
+      "passage": "classical-scope",
+      "reverse_paraphrase": "The claim is explicitly classical; nonclassical alternatives require changing logic, not merely set theory.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "negation",
+      "reverse_paraphrase": "Russell R contains exactly non-self-membered sets; the source extra prose negation is disclosed.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "domain",
+      "reverse_paraphrase": "Impredicativity quantifies over a domain containing the defined object, if it exists.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "principle",
+      "reverse_paraphrase": "The quote rejects the circular definitions and endorses the vicious-circle restriction; the source follow-up reversal is disclosed.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "types",
+      "reverse_paraphrase": "The primes and indexed set types remain distinct; the text does not identify these different types.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "Ramsey",
+      "reverse_paraphrase": "Tallest-in-group identification can be harmless; pointing is an offered predicative alternative.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "creation",
+      "reverse_paraphrase": "The circular recipe objection concerns creating essentially impredicative objects, not every definition or identification.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0533",
+      "passage": "cumulative",
+      "reverse_paraphrase": "The adopted cumulative approach stratifies stages without different kinds of sets.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "quote",
+      "reverse_paraphrase": "Every stage forms sets from collections of earlier sets; no other sets are assumed.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "counts",
+      "reverse_paraphrase": "Earlier available/new counts are0/1,1/1,2/2,4/12.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "initial-stage",
+      "reverse_paraphrase": "The first-stage assumption remains explicitly questioned by the full footnote and reference.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "diagram",
+      "reverse_paraphrase": "The raw stage diagram and every original comment remain intact.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "restricted-Russell",
+      "reverse_paraphrase": "Rs is not available before S; that is not a contradiction.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0534",
+      "passage": "strength",
+      "reverse_paraphrase": "The narrative gives a reason for belief in consistency, not a complete formal consistency proof.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0535",
+      "passage": "objects",
+      "reverse_paraphrase": "Urelements are nonsets that can be elements, with arbitrary earlier-set combinations.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0535",
+      "passage": "application",
+      "reverse_paraphrase": "Cow/pig equinumerosity uses a bijection and illustrates applicability.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0535",
+      "passage": "foundation",
+      "reverse_paraphrase": "Applicability and pure foundational reduction favor different decisions; the full quoted view and citation remain.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0535",
+      "passage": "pedagogy",
+      "reverse_paraphrase": "The book excludes urelements for simplicity and alignment with its intended philosophical literature, not as a theorem of their nonexistence.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0536",
+      "passage": "abstraction",
+      "reverse_paraphrase": "A predicate becomes a first-order term naming its extension; the value-range footnote retains the generalization.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0536",
+      "passage": "membership",
+      "reverse_paraphrase": "Membership uses existential second-order G and equality to its extension.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0536",
+      "passage": "law-V",
+      "reverse_paraphrase": "Coextensiveness gives extension identity and conversely; both F and G are in predicate position.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0536",
+      "passage": "first-proof",
+      "reverse_paraphrase": "The membership definition, Basic LawV and elementary second-order reasoning give exact property-satisfaction.",
+      "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
+    },
+    {
+      "unit_id": "OLP-0536",
+      "passage": "second-proof",
+      "reverse_paraphrase": "Existential generalization yields comprehension for arbitrary F; the exact Russell choice follows.",
       "finding": "د سرچينې او پښتو د کره سياق پرتله تېره؛ له څرګند شويو نثري حدودو پرته رسمي محتوا عين ده."
     }
   ]

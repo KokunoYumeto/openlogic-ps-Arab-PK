@@ -1,0 +1,16 @@
+# B160 — source and canon preaudit
+
+Scope: OLP-0537–0541, frozen revision9620cc73f9c8e0ad003c514a5d3748f29611c4c0. Five target drafts, not corpus-accepted. All source paragraphs, footnotes, axioms, theorem/proposition proofs, exercises, citation keys and the inactive Pairs proof are retained. The chapter driver retains its nine imports.
+
+Actual rendered reconsultation: PK-IQRAM-P1-PROSE and PK-IQRAM-P2-SEMANTICS, Pakistani scholarly expository prose primary. AF-MOE-P11-SUBSET is an explicitly Afghan regional comparator for subset membership, inspected for the Separation discussion. The regional subset-symbol convention does not replace frozen source notation. The exact new Separation/Pairs/stage-principle compounds are provisional; no printed Pakistani specialist attestation or human approval is claimed.
+
+Source-local semantic findings:
+
+- OLP-0538: all three named stage principles and the complete well-ordering footnote remain. Well-ordering is an admitted substantial assumption; Scott1974/ButtonLT1 avoidance-and-derivation caveat remains. The stage-principle monikers are author-created, unlike the standard axiom names. The final source sentence lacks a verb ("We simply monikers"); the target expresses the intended act of naming without inventing a mathematical premise. No formal correction action is needed.
+- OLP-0539: Separation is an infinite scheme, not one axiom. The defining formula does not contain S; parameters are explicitly allowed. The bounded Russell set R_A exists, is not self-membered and is not a member of A. This does not license unbounded comprehension. The no-universal-set theorem retains its reductio, while the subsequent stage account remains informal and refers to the later rank definition. "Immediately after all members" must not be strengthened to an assertion that all member stages have a maximum; the target keeps the original informal explanation, without an added successor/maximal-stage axiom. Empty-set existence is conditional on some set existing. Set difference and nonempty-family intersection use Separation; the empty-family exception is retained. No Foundation axiom is introduced.
+- OLP-0540: Union collects members of members with the exact nested existential, not just members of A. Strict earlier-stage availability is preserved.
+- OLP-0541: No Last Stage is explicitly added and accepted; it is not derived from the prior three stage principles. Pairs is unordered and allows a=b. The ordered pair is the source Kuratowski construction. Singleton, binary union and ordered-pair proofs and both finite-set exercises remain complete. The inactive English proof comment remains verbatim source code, not ordinary untranslated prose.
+
+Provisional renderings: Separation — بېلونه; Scheme of Separation — د بېلونې شېما; Pairs — جوړې; no last stage — وروستے پړاو نۀ شته; universal set — عمومي سټ. Reused compounds and membership vocabulary are checked in their local logical roles. Exact frozen formal content governs every statement; this is translation and bounded source QA, not original mathematical research.
+
+Next: register new/reused choices and complete reverse-paraphrase samples after B159 acceptance, then cumulative QA and seven-surface replay. Continue translation even if TeX is occupied.

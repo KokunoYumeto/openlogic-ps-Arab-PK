@@ -1,0 +1,65 @@
+{
+  "schema": "ps-b159-qa-parser-repair/1",
+  "status": "PASS; both536-unit cumulative checks produce no failures",
+  "changes": [
+    "Indented source comments recognized as comments.",
+    "Double-dollar display delimiter consumed as a single complete math span for formal parity and residual-prose analysis."
+  ],
+  "files": [
+    {
+      "path": "work/qa_batch.py",
+      "old_sha256": "365f1cf5041cee6b25f627405757b7634bb7b65b6cfe309b137f48c461d078d7",
+      "new_sha256": "e9f2718501990e10e58ad8e7deeb25c405e8021ea1856e893e2e84e5f9fcf49f"
+    },
+    {
+      "path": "tools/check_translation.py",
+      "old_sha256": "dc3e9f833a53faa9a0b876171789cdad64dd89b76c5ded83070260f51e1d73dc",
+      "new_sha256": "41fc96aeace2e5af47bf88ead52c995d20ab8919a7521ed6496cea5fc280468b"
+    }
+  ],
+  "source_and_target_bytes_unchanged_by_parser_repair": true,
+  "final_files": {
+    "work/qa_batch.py": "94282e74e26132389dedd4bbd357ab0ee42a288b65b036da37e4f5d464efb541",
+    "tools/check_translation.py": "8eed955edfb646dad1aeda1d98dc144940748ed778590a3bdcaae882086c3fc7"
+  },
+  "historical_stage_sha256": "4772ca24ef2247aca6e70884b40696ac9265ac823f409e6a1d04138c32e0e62b",
+  "current_stage_sha256": "a46b734cbd6f15cc83c5e19c37b460a722608e357bc40971ac5a3c7381998e38",
+  "math_count_reconciliation": [
+    {
+      "unit_id": "OLP-0531",
+      "historical_count": 5,
+      "active_count": 5,
+      "target_sha256_unchanged": true
+    },
+    {
+      "unit_id": "OLP-0532",
+      "historical_count": 11,
+      "active_count": 11,
+      "target_sha256_unchanged": true
+    },
+    {
+      "unit_id": "OLP-0533",
+      "historical_count": 26,
+      "active_count": 26,
+      "target_sha256_unchanged": true
+    },
+    {
+      "unit_id": "OLP-0534",
+      "historical_count": 24,
+      "active_count": 16,
+      "target_sha256_unchanged": true
+    },
+    {
+      "unit_id": "OLP-0535",
+      "historical_count": 7,
+      "active_count": 5,
+      "target_sha256_unchanged": true
+    },
+    {
+      "unit_id": "OLP-0536",
+      "historical_count": 27,
+      "active_count": 26,
+      "target_sha256_unchanged": true
+    }
+  ]
+}

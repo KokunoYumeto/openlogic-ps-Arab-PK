@@ -1,7 +1,7 @@
 {
   "schema": "ps-openlogic-source-corrections/1",
-  "status": "adopted through OLP-0530; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
-  "adopted_utc": "2026-09-29T00:54:51.879512+00:00",
+  "status": "adopted through OLP-0536; historical OLINT-011 and OLINT-017 proof gaps remain disclosed",
+  "adopted_utc": "2026-09-29T01:29:16.437921+00:00",
   "audit_id": "MULTIPLE-AUDITS",
   "audit_artifacts": [
     {
@@ -2733,7 +2733,7 @@
       "source_locator": "content/first-order-logic/beyond/second-order-logic.tex:54-57",
       "target_path": "ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex",
       "target_line_1based": 63,
-      "target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56",
       "mode": "replace-object-macro-with-relation-atom-macro-plus-adjacent-note",
       "translation_change": "uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation",
       "counterexample": "The same paragraph defines the replaced expression as an atomic formula and every other application of relation variable R in the section uses Atom; Obj is the styling macro for an object-language symbol, not relation application.",
@@ -2747,7 +2747,16 @@
         "target_only": [
           "$\\Atom{R}{t_1,\\dots,t_k}$"
         ]
-      }
+      },
+      "revision_history": [
+        {
+          "utc": "2026-09-29T01:25:41.683096+00:00",
+          "batch": "B159",
+          "reason": "Two lexical predicativity labels corrected; this source/formal treatment remains unchanged.",
+          "previous_target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+          "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56"
+        }
+      ]
     },
     {
       "id": "OLFOL-032",
@@ -2758,7 +2767,7 @@
       "source_locator": "content/first-order-logic/beyond/second-order-logic.tex:137-144",
       "target_path": "ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex",
       "target_line_1based": 162,
-      "target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+      "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56",
       "mode": "replace-undeclared-successor-s-with-declared-prime-plus-adjacent-note",
       "translation_change": "writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument",
       "counterexample": "The signature explicitly lists the prime successor symbol, all neighboring Peano axioms use primes, and the later recursion interprets that same prime; s is not introduced as a language symbol here.",
@@ -2772,7 +2781,16 @@
         "target_only": [
           "$\\lforall[x][\\lforall[y][(x'=y'\\lifx=y)]]$"
         ]
-      }
+      },
+      "revision_history": [
+        {
+          "utc": "2026-09-29T01:25:41.683096+00:00",
+          "batch": "B159",
+          "reason": "Two lexical predicativity labels corrected; this source/formal treatment remains unchanged.",
+          "previous_target_sha256": "795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d",
+          "target_sha256": "567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56"
+        }
+      ]
     },
     {
       "id": "OLFOL-033",
@@ -15150,6 +15168,116 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-001",
+      "unit_id": "OLP-0533",
+      "classification": "Russell_set_prose_contains_extra_negation",
+      "source_path": "content/set-theory/story/predicativity.tex",
+      "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+      "source_locator": "content/set-theory/story/predicativity.tex:11",
+      "source_literal_line_1based": [
+        11
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/story/predicativity.tex",
+      "target_sha256": "bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2",
+      "target_line_1based": 12,
+      "target_literal_line_1based": [
+        12
+      ],
+      "disclosure_line_1based": 12,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د رسل د سټ نثري اضافي نفي د عين ليکل شوي فورمول له معنا سره برابره شوې، له څرګندونې سره.",
+      "reason": "سرچينه هغه سټونه چې خپل ځان د غړي په توګه نۀ لري، په نثر کښې د اضافي نفي په وسيله سرچپه کوي. رسمي فورمول عين پاتې دے.",
+      "formula_policy": "Prose-only treatment; all89 active math spans, both raw diagrams and formal identifiers unchanged. Historical100-span metric includes inactive comments and a split display.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
+      "audit_artifacts": [
+        "B159_SOURCE_AUDIT.json",
+        "B159_ALL6_SOURCE_PREAUDIT_NOTES.md",
+        "B159_DRAFT_QA_OLP-0533.json",
+        "B159_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B159 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-002",
+      "unit_id": "OLP-0533",
+      "classification": "vicious_circle_principle_rejection_conflicts_with_quote_and_restriction",
+      "source_path": "content/set-theory/story/predicativity.tex",
+      "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+      "source_locator": "content/set-theory/story/predicativity.tex:39",
+      "source_literal_line_1based": [
+        39
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/story/predicativity.tex",
+      "target_sha256": "bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2",
+      "target_line_1based": 41,
+      "target_literal_line_1based": [
+        41
+      ],
+      "disclosure_line_1based": 41,
+      "mode": "adjacent-Pashto-disclosed-source-treatment",
+      "translation_change": "د بدې دايرې د اصل منل د مخکيني نقل او راتلونکي محدود ادراک له بيان سره برابر شوے، له څرګندونې سره.",
+      "reason": "نقل شوي ليکوالان امپريديکاتيف تعريفونه ردوي او د بدې دايرې اصل مني؛ سرچينه د تعقيب په جمله کښې د اصل ردول ليکي. ژباړه هماغه قبوليت بيانوي، نقل او رسمي تعريف نۀ بدلوي.",
+      "formula_policy": "Prose-only treatment; all89 active math spans, both raw diagrams and formal identifiers unchanged. Historical100-span metric includes inactive comments and a split display.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
+      "audit_artifacts": [
+        "B159_SOURCE_AUDIT.json",
+        "B159_ALL6_SOURCE_PREAUDIT_NOTES.md",
+        "B159_DRAFT_QA_OLP-0533.json",
+        "B159_FINITE_SOURCE_SCOPE_CHECK.json"
+      ],
+      "decision_timing": "contemporaneous B159 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
@@ -15254,7 +15382,8 @@
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-OPENING",
     "PS-OWNER-SEMANTIC-20260929-TRULE-LABELS",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
-    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING"
+    "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
+    "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION"
   ],
   "source_authorities": [
     {

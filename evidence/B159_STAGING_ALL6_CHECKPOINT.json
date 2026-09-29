@@ -1,0 +1,252 @@
+{
+  "schema": "ps-b159-six-staging/1",
+  "utc": "2026-09-29T01:20:07.599007+00:00",
+  "status": "six checked drafts staged; not accepted",
+  "accepted_draft_units_at_staging": 530,
+  "B158_acceptance_pending": false,
+  "unit_ids": [
+    "OLP-0531",
+    "OLP-0532",
+    "OLP-0533",
+    "OLP-0534",
+    "OLP-0535",
+    "OLP-0536"
+  ],
+  "units": [
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0531",
+      "source_path": "content/set-theory/story/extensionality.tex",
+      "source_sha256": "d70f6b437cb7f29b4e9ef5bcc1ab66c3021ea6f57d1b2fdf5aaea5b51bdb81c9",
+      "target_sha256": "f904997b075d5d8aba1bed0c8ed6a2a7198ec48c0fdf17ee7c1c2f3058fec535",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "math_spans": 5,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0532",
+      "source_path": "content/set-theory/story/russells-paradox-again.tex",
+      "source_sha256": "c468df1becf253ceb2c82540f2ec7e5112fa07bf649119e120184b4593f23b7d",
+      "target_sha256": "dccf0f2420a75f7b42a7ce7e6d298c5fca68c59b3804d059b078bfcf0c2fd7bb",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "math_spans": 11,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0533",
+      "source_path": "content/set-theory/story/predicativity.tex",
+      "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+      "target_sha256": "bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "math_spans": 26,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-001",
+        "OLSTH-002"
+      ],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0534",
+      "source_path": "content/set-theory/story/cumulative-approach.tex",
+      "source_sha256": "86099ec03bf39142ceb2d76826a796a91731caa5eae0cd35d74b6c1a7fe2f798",
+      "target_sha256": "1512a71c517d34e2f0ff961bb9a8c1a2d31dff0dff90fc2e173d82a092744030",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "math_spans": 24,
+      "tikz_diagrams": 1,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0535",
+      "source_path": "content/set-theory/story/urelements.tex",
+      "source_sha256": "61419cd0dbc03cdf569c7350b028da4daac493e5815f8bf43381544758587b31",
+      "target_sha256": "e7b7fc9d46713333aa10a151be88e475c81bc8765dab0143c2a14181917b51af",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "math_spans": 7,
+      "tikz_diagrams": 1,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    },
+    {
+      "schema": "ps-b159-draft-qa/1",
+      "status": "draft; not accepted",
+      "unit_id": "OLP-0536",
+      "source_path": "content/set-theory/story/grundgesetze.tex",
+      "source_sha256": "d5b70cb63a142ee49c968e41a593dd7c6131d35817afcc6fda2321fa07162cd5",
+      "target_sha256": "c679ba1485cd90bf6b8abb35c922316749cf06e74e66dc8899a3ef02b252b669",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "math_spans": 27,
+      "tikz_diagrams": 0,
+      "source_correction_ids_pending_registration": [],
+      "math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "checks": {
+        "math_exact": true,
+        "paired_blocks": true,
+        "identifiers_equal": true,
+        "tags_equal": true,
+        "structural_macros_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "tikz_bytes_equal": true,
+        "nfc": true,
+        "source_frozen": true,
+        "no_replacement_character": true,
+        "raw_source_newline_style_equal": true,
+        "no_untranslated_ordinary_english": true,
+        "double_dollar_display_bytes_equal": true
+      },
+      "all_checks_pass": true,
+      "unresolved": "Register terms, source treatments and full semantic samples, then run cumulative QA before acceptance."
+    }
+  ],
+  "paired_blocks": 72,
+  "changed_content_canon_uses": 50,
+  "math_spans": 100,
+  "tikz_diagrams": 2,
+  "source_frozen": true,
+  "notes_sha256": "a9f463c1cbf972717e49e5fa3ffa4f9ab2bcbd71cc9314559eeb1f6ec9682c65",
+  "finite_scope_check_sha256": "175a3ccb00afd1daade531a099bbf50989b95adac5b72105673396936457e820",
+  "staging_alignment_sha256": "90b290b05a8cd148b34ef5c79b52c25c271d676b3d1081b192db0207c5a35718",
+  "staging_canon_use_sha256": "35c815bdeda6ebdd191b584af9329a3fedf40957c4d62754ef17fbb1cd5d1c6f",
+  "new_term_choices_pending_registration": [
+    "predicate extension / comprehension",
+    "predicative / impredicative",
+    "cumulative-iterative approach / stages",
+    "urelements",
+    "Frege concept extension / value-range / Basic Law V"
+  ],
+  "source_treatments_pending_registration": [
+    "OLSTH-001",
+    "OLSTH-002"
+  ],
+  "next_action": "Register all six B159 source and terminology choices; review prior predicativity labels in bounded scope, run cumulative QA and continue at OLP-0537. Preserve pending reader scope; TeX occupancy never blocks translation."
+}

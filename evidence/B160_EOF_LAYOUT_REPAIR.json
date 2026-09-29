@@ -1,0 +1,29 @@
+{
+  "schema": "ps-b160-eof-layout-repair/1",
+  "status": "PASS",
+  "utc": "2026-09-29T01:58:24.511426+00:00",
+  "changes": [
+    {
+      "path": "ps-Arab-PK/content/set-theory/z/separation.tex",
+      "old_sha256": "70b214318f48b5486207423d4f60108d98d3b6d6f7cdbf4b9222307668fd0bb5",
+      "new_sha256": "72266802ac44fe94a704b124c2c2dfe5a68c7191965b1bc9ea17ef2831c0188b",
+      "change": "Remove one accidental terminal blank CRLF; match the frozen source terminal newline. No prose/formal/identifier changes."
+    },
+    {
+      "path": "ps-Arab-PK/content/set-theory/z/union.tex",
+      "old_sha256": "ff1970aa14879bc69c39e44ee3bae6664ebf92a15f902c7948f4931860ebeb2a",
+      "new_sha256": "6fa39122adc6152f1e3aad9387faa416e877c7b211de3f65cd00468185726d12",
+      "change": "Remove one accidental terminal blank CRLF; match the frozen source terminal newline. No prose/formal/identifier changes."
+    },
+    {
+      "path": "ps-Arab-PK/content/set-theory/z/pairs.tex",
+      "old_sha256": "f8a2ba75942a45333683e4f184feb5a73e194d02d47da6de7bf4f15c82d57b8c",
+      "new_sha256": "a6cf3c87bd26d91b86a14290c50f4c90769100f97a9bf551d5ffc3a912409c49",
+      "change": "Remove one accidental terminal blank CRLF; match the frozen source terminal newline. No prose/formal/identifier changes."
+    }
+  ],
+  "old_stage_sha256": "5998a807d45a14cd54415990d852dd8b41824b50679931adb95727156f15adf9",
+  "old_stage_snapshot": "B160_STAGING_FIVE_PRE_EOF_REPAIR_CHECKPOINT.json",
+  "new_stage_sha256": "4e15871389ca03e6319325b995dc50abb07121368e04ba5e3d6efc0458d5a636",
+  "finding": "Scoped Git whitespace gate found three author-introduced terminal blank lines; removed them before any public commit. All60 blocks,41 canon uses and92 ordered active math spans still pass."
+}

@@ -1,0 +1,77 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{pairs}
+\olsection{جوړې}
+
+راتلونکے بديهي اصل چې په پام کښې ئې نيسو، دا دے:
+
+\begin{axiom}[جوړې]
+د هر دوو سټونو $a, b$ دپاره سټ $\{a, b\}$ شتون لري.
+\[
+	\forall a \forall b \exists P \forall x (x \in P \liff (x = a \lor x = b))
+\]
+\end{axiom}
+
+د تکراري تصور په کارولو سره دا اصل په لاندې ډول توجيه کولے شو.
+فرض کړئ چې $a$ په پړاو $S$ کښې موجود دے او $b$ په پړاو $T$
+کښې موجود دے. $M$ د $S$ او $T$ له پړاوونو څخه هغه يو وګرځوئ
+چې وروسته راځي. نو ځکه چې $a$ او $b$ دواړه په پړاو $M$ کښې
+موجود دي، سټ $\{a,b\}$ يوه ممکنه ټولګه ده چې له $M$ نه په هر
+وروسته پړاو کښې موجوده کېدلے شي (يعنې له دواړو څخه له وروستني پړاو نه وروسته).
+
+خو لږ تم شئ!{} ولې فرض کړو چې له $M$ نه وروسته کوم پړاوونه
+\emph{شته}؟ که نۀ وي، نو زموږ توجيه ناکامېږي. نو د جوړو د اصل
+د توجيه دپاره به د \olref[sth][z][story]{sec} په کيسه کښې يو بل
+اصل هم زياتوو، يعنې:
+\begin{enumerate}
+	\item[] \stagessucc. وروستے پړاو نۀ شته.
+\end{enumerate}
+ايا دا اصل توجيه لري؟ د شوينفيلډ په کيسه کښې دا خبره
+\emph{په ښکاره} نۀ وه بيان شوې چې وروستے پړاو نۀ شته.
+خو بيا هم، که څه هم دا (په دقيقه مانا) زموږ په کيسه کښې يو
+اضافي اصل دے، له هغې بنسټيزې مفکورې سره ښه سمون خوري چې
+سټونه په پړاوونو کښې جوړېږي. په راتلونکي بحث کښې به ئې
+يوازې ومنو. او په دې توګه د جوړو بديهي اصل هم منو.
+
+په دې نوي اصل سره د ډېرو نورو سټونو شتون ثابتولے شو. د بېلګې په توګه:
+
+\begin{prop}\ollabel{prop:pairsconsequences}
+د هر دوو سټونو $a$ او $b$ دپاره لاندې سټونه شتون لري:
+	\begin{enumerate}
+		\item\ollabel{singleton} $\{a\}$
+		\item\ollabel{binunion} $a \cup b$
+		\item\ollabel{tuples} $\tuple{a, b}$
+	\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\olref{singleton}. د جوړو له مخې $\{a, a\}$ شتون لري، چې د
+غړو له مخې د برابرۍ په اساس هماغه $\{a\}$ دے.
+
+\olref{binunion}. د جوړو له مخې $\{a, b\}$ شتون لري. اوس
+$a \cup b = \bigcup
+\{a, b\}$ د اتحاد له مخې شتون لري.
+
+\olref{tuples}. د \olref{singleton} له مخې $\{a\}$ شتون لري.
+د جوړو له مخې $\{a,
+b\}$ شتون لري. اوس $\{\{a\}, \{a, b\}\} = \tuple{a, b}$
+د جوړو د اصل د بيا کارولو له مخې شتون لري.
+\end{proof}
+
+\begin{prob}
+وښيئ چې د هر درېو سټونو $a, b, c$ دپاره سټ $\{a, b, c\}$ شتون لري.
+\end{prob}
+
+\begin{prob}
+وښيئ چې د هرې لړۍ سټونو $a_1, \ldots, a_n$ دپاره سټ $\{a_1, \ldots,
+a_n\}$ شتون لري.
+\end{prob}
+
+%\begin{proof} By two applications of Pairs, $\{\{a_1, a_2\}, \{a_1,
+%   a_3\}\}$ exists. By Union and Extensionality, $\bigcup \{\{a_1,
+%   a_2\}, \{a_1, a_3\}\} = \{a_1, a_2, a_3\}$ exists. Repeat this
+%   trick as often as necessary. \end{proof}
+
+\end{document}

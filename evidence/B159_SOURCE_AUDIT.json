@@ -1,0 +1,148 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "accepted editable drafts; cumulative QA and dual canonical replay PASS",
+  "utc": "2026-09-29T01:29:16.437921+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
+  "batch_id": "PS-B159-SET-THEORY-ITERATIVE-CONCEPTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0531",
+      "source_path": "content/set-theory/story/extensionality.tex",
+      "source_bytes": 1271,
+      "source_sha256": "d70f6b437cb7f29b4e9ef5bcc1ab66c3021ea6f57d1b2fdf5aaea5b51bdb81c9",
+      "target_sha256": "f904997b075d5d8aba1bed0c8ed6a2a7198ec48c0fdf17ee7c1c2f3058fec535",
+      "paired_blocks": 9,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0532",
+      "source_path": "content/set-theory/story/russells-paradox-again.tex",
+      "source_bytes": 3092,
+      "source_sha256": "c468df1becf253ceb2c82540f2ec7e5112fa07bf649119e120184b4593f23b7d",
+      "target_sha256": "dccf0f2420a75f7b42a7ce7e6d298c5fca68c59b3804d059b078bfcf0c2fd7bb",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0533",
+      "source_path": "content/set-theory/story/predicativity.tex",
+      "source_bytes": 5441,
+      "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+      "target_sha256": "bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2",
+      "paired_blocks": 17,
+      "source_correction_ids": [
+        "OLSTH-001",
+        "OLSTH-002"
+      ]
+    },
+    {
+      "unit_id": "OLP-0534",
+      "source_path": "content/set-theory/story/cumulative-approach.tex",
+      "source_bytes": 5055,
+      "source_sha256": "86099ec03bf39142ceb2d76826a796a91731caa5eae0cd35d74b6c1a7fe2f798",
+      "target_sha256": "1512a71c517d34e2f0ff961bb9a8c1a2d31dff0dff90fc2e173d82a092744030",
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0535",
+      "source_path": "content/set-theory/story/urelements.tex",
+      "source_bytes": 3780,
+      "source_sha256": "61419cd0dbc03cdf569c7350b028da4daac493e5815f8bf43381544758587b31",
+      "target_sha256": "e7b7fc9d46713333aa10a151be88e475c81bc8765dab0143c2a14181917b51af",
+      "paired_blocks": 9,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0536",
+      "source_path": "content/set-theory/story/grundgesetze.tex",
+      "source_bytes": 2767,
+      "source_sha256": "d5b70cb63a142ee49c968e41a593dd7c6131d35817afcc6fda2321fa07162cd5",
+      "target_sha256": "c679ba1485cd90bf6b8abb35c922316749cf06e74e66dc8899a3ef02b252b669",
+      "paired_blocks": 13,
+      "source_correction_ids": []
+    }
+  ],
+  "notes_path": "work/B159_ALL6_SOURCE_PREAUDIT_NOTES.md",
+  "notes_sha256": "a9f463c1cbf972717e49e5fa3ffa4f9ab2bcbd71cc9314559eeb1f6ec9682c65",
+  "staging_checkpoint_sha256": "a46b734cbd6f15cc83c5e19c37b460a722608e357bc40971ac5a3c7381998e38",
+  "finite_scope_check_sha256": "175a3ccb00afd1daade531a099bbf50989b95adac5b72105673396936457e820",
+  "consulted_passages": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 1,
+      "printed_page": "1",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "region": "Pakistan; Pashto Academy, University of Peshawar",
+      "inspection": "Actual visual reconsultation during B159 writing and again at registration",
+      "finding": "پاکستاني علمي نثر لومړنے دے؛ افغان مخونه د سټ، غړي او پريديکات سيمه‌ييز شاهدان دي. د نويو مرکبو نومونو عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي."
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "pdf_page_1based": 2,
+      "printed_page": "2",
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "region": "Pakistan; Pashto Academy, University of Peshawar",
+      "inspection": "Actual visual reconsultation during B159 writing and again at registration",
+      "finding": "پاکستاني علمي نثر لومړنے دے؛ افغان مخونه د سټ، غړي او پريديکات سيمه‌ييز شاهدان دي. د نويو مرکبو نومونو عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي."
+    },
+    {
+      "passage_id": "AF-MOE-P3-SET",
+      "source_id": "PS-AF-MOE-G7-1398",
+      "pdf_page_1based": 10,
+      "printed_page": "3",
+      "page_image_sha256": "fbb17f07b7c220c6f65989fe6eec843f03d592074d04b32912ff00a9b7fd6cc6",
+      "region": "Afghanistan; explicitly regional comparator",
+      "inspection": "Actual visual reconsultation during B159 writing and again at registration",
+      "finding": "پاکستاني علمي نثر لومړنے دے؛ افغان مخونه د سټ، غړي او پريديکات سيمه‌ييز شاهدان دي. د نويو مرکبو نومونو عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي."
+    },
+    {
+      "passage_id": "AF-MOE-P5-MEMBERSHIP",
+      "source_id": "PS-AF-MOE-G7-1398",
+      "pdf_page_1based": 12,
+      "printed_page": "5",
+      "page_image_sha256": "4cb0e66aeae88e0b4cc287ec10319434210cbc77b64bddf56b0e6868de0a9a44",
+      "region": "Afghanistan; explicitly regional comparator",
+      "inspection": "Actual visual reconsultation during B159 writing and again at registration",
+      "finding": "پاکستاني علمي نثر لومړنے دے؛ افغان مخونه د سټ، غړي او پريديکات سيمه‌ييز شاهدان دي. د نويو مرکبو نومونو عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "pdf_page_1based": 95,
+      "printed_page": "90",
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "region": "Afghanistan; explicitly regional comparator",
+      "inspection": "Actual visual reconsultation during B159 writing and again at registration",
+      "finding": "پاکستاني علمي نثر لومړنے دے؛ افغان مخونه د سټ، غړي او پريديکات سيمه‌ييز شاهدان دي. د نويو مرکبو نومونو عين پاکستانۍ چاپي تصويب نۀ ادعا کېږي."
+    }
+  ],
+  "model_provenance_sha256": "386228da1ee3fb50223d40a2f621ea0f86d553eaccf799462cdf016bf8dc6064",
+  "new_term_ids": [
+    "TERM-SET-COMPREHENSION-EXTENSION",
+    "TERM-SET-CUMULATIVE-STAGES",
+    "TERM-SET-URELEMENTS",
+    "TERM-SET-FREGE-EXTENSION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-001",
+    "OLSTH-002"
+  ],
+  "formula_policy": "72 paired blocks,89 active exact math spans and two raw diagrams; both source treatments are prose-only. Earlier OLP-0177 changes two lexical labels only; its formal content remains unchanged.",
+  "unresolved": "د څلورو مرکبو نومونو عين تخصصي پاکستانۍ چاپي شاهدي يا د انسان تصويب نۀ دے ادعا شوے؛ نومونه لنډمهاله دي. د متناهي سرچينه‌يي QA بېلګې د نوې نامحدودې قضيې ثبوت نۀ دي.",
+  "next_executable_action": "Publish B159 acceptance, the OLP-0177 two-label repair, active-math/comment QA parser repairs and five checked B160 drafts; anonymously verify exact public bytes. Refresh the accumulated536-unit reader input with explicit correction-model credit and make one bounded TeX-slot attempt at this natural validated checkpoint. Register B160 and continue OLP-0542 onward irrespective of TeX occupancy.",
+  "revision_history": [
+    {
+      "utc": "2026-09-29T01:36:23.780398+00:00",
+      "historical_stage_sha256": "4772ca24ef2247aca6e70884b40696ac9265ac823f409e6a1d04138c32e0e62b",
+      "reason": "Math delimiter parser repaired; active spans89, previously100 counting inactive comments and split display; target bytes unchanged."
+    }
+  ],
+  "parser_repair_sha256": "9bc5b86b4747a6df8c35316db82adbdf26a4a97d611497707654a8eccc801445",
+  "accepted_utc": "2026-09-29T01:53:24.172519+00:00",
+  "corpus_qa_sha256": "b81dc6abf83ae8c8e397c46773e61995430a3ddca22fdfae41f632427a0d815d",
+  "canonical_replay_sha256": "891041df42b05fc0d85cb2e5c158737aa524d618b3100e4025d8569d21be431a"
+}

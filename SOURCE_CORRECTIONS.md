@@ -1032,7 +1032,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0177`
 - Frozen source: `content/first-order-logic/beyond/second-order-logic.tex` (944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d) at `content/first-order-logic/beyond/second-order-logic.tex:54-57`
-- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:63` (795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d)
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:63` (567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56)
 - Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
 - Treatment: uses the relation-atom macro for R(t_1,...,t_k) in the substitution explanation.
 - Disclosure: `replace-object-macro-with-relation-atom-macro-plus-adjacent-note`.
@@ -1041,7 +1041,7 @@ The frozen English source bytes remain unchanged. Each correction below is appli
 
 - Unit: `OLP-0177`
 - Frozen source: `content/first-order-logic/beyond/second-order-logic.tex` (944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d) at `content/first-order-logic/beyond/second-order-logic.tex:137-144`
-- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:162` (795ac9c03c74310c54cdc0c9f35c462564da240a17f38d4003815f443f2a4e4d)
+- Pashto target: `ps-Arab-PK/content/first-order-logic/beyond/second-order-logic.tex:162` (567697777579cd4711d1cc57589de074855edf7aaf22c5e68325039d8b9cfe56)
 - Audit: `PS-OWNER-SEMANTIC-20260908-FOL-BEYOND`
 - Treatment: writes injectivity of the successor operation with the prime notation declared by the arithmetic signature and used throughout the induction argument.
 - Disclosure: `replace-undeclared-successor-s-with-declared-prime-plus-adjacent-note`.
@@ -3818,3 +3818,22 @@ OLSOL-004 and OLSOL-005 were retracted after exact macro and ellipsis review; se
 - سرچينه SHA-256: bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc۔
 - پښتو SHA-256: 031c217729b984b08c84314abfbfbffff23a62064467bed51d95e48d7c33cfab۔
 - يوازې څلور ثبت شوې رياضيکي برخې په څرګند ډول سمې شوي؛ پاتې فورمولونه، شکلونه او منجمد تعريف عين دي۔
+
+## OLSTH-001
+
+- واحد: OLP-0533۔
+- چلند: د رسل د سټ نثري اضافي نفي د عين ليکل شوي فورمول له معنا سره برابره شوې، له څرګندونې سره.
+- وجه: سرچينه هغه سټونه چې خپل ځان د غړي په توګه نۀ لري، په نثر کښې د اضافي نفي په وسيله سرچپه کوي. رسمي فورمول عين پاتې دے.
+- سرچينه SHA-256: c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa۔
+- پښتو SHA-256: bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2۔
+- يوازې نثري چلند دے؛ ټول فورمولونه، شکلونه او منجمد تعريف عين دي۔
+
+
+## OLSTH-002
+
+- واحد: OLP-0533۔
+- چلند: د بدې دايرې د اصل منل د مخکيني نقل او راتلونکي محدود ادراک له بيان سره برابر شوے، له څرګندونې سره.
+- وجه: نقل شوي ليکوالان امپريديکاتيف تعريفونه ردوي او د بدې دايرې اصل مني؛ سرچينه د تعقيب په جمله کښې د اصل ردول ليکي. ژباړه هماغه قبوليت بيانوي، نقل او رسمي تعريف نۀ بدلوي.
+- سرچينه SHA-256: c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa۔
+- پښتو SHA-256: bfad6d875c1c3383b80267900eecd835a29ecc1ddae3b39646c0159e37280fa2۔
+- يوازې نثري چلند دے؛ ټول فورمولونه، شکلونه او منجمد تعريف عين دي۔
