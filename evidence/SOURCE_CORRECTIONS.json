@@ -20,7 +20,8 @@
       "filename": "REVIEW.md",
       "sha256": "26913176baacbda5ae8a47bcc82ccf0366b0763313e6eeeb45df59e64249a1f9"
     },
-    "B161_SOURCE_AUDIT.json"
+    "B161_SOURCE_AUDIT.json",
+    "B162_SOURCE_AUDIT.json"
   ],
   "source_authority": {
     "declared_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
@@ -15338,6 +15339,62 @@
         "target_only": []
       },
       "limits": "No full countermodel, independence theorem, inconsistency claim, or rejection of the intended omega construction."
+    },
+    {
+      "id": "OLSTH-004",
+      "unit_id": "OLP-0551",
+      "classification": "initial_segment_comparison_prose_domain_range_typo",
+      "source_path": "content/set-theory/ordinals/iso.tex",
+      "source_sha256": "eb57a72aed6e4ff2398fe8d9c52239c79d2578df37c5e4bb891568381a41cb39",
+      "source_locator": "content/set-theory/ordinals/iso.tex:134",
+      "source_literal_line_1based": [
+        134
+      ],
+      "target_path": "ps-Arab-PK/content/set-theory/ordinals/iso.tex",
+      "target_sha256": "177e43520b6333f1c3254337306afa2b568352c36cd7eba023d6ace0160ff294",
+      "target_line_1based": 146,
+      "target_literal_line_1based": [
+        145,
+        146
+      ],
+      "disclosure_line_1based": 146,
+      "mode": "adjacent-Pashto-disclosed-prose-domain-range-correction",
+      "translation_change": "په پيلنۍ برخه کښې د f د تعريف ساحې پر ځاے د قيمتونو سټ ويل شوے؛ د عين مخکيني نگاشت له مخې تنګ نثري سمون په څنګ کښې څرګند دے.",
+      "reason": "سرچينه په ښکاره f له A_a2 څخه B_b2 ته آيزومورفيزم ټاکي؛ نو ساحه ئې A_a2 او د قيمتونو سټ ئې B_b2 دے. وروستۍ جمله د b1<b2 د نتيجې دپاره په تېروتنه B_b2 ته ساحه وايي. ژباړه د قيمتونو سټ وايي، ځکه چې آيزومورفيزم بيجکشن ده؛ هېڅ فورمول يا استدلالي پايله نۀ بدلوي.",
+      "formula_policy": "All194 ordered active math spans and three raw diagrams unchanged. Prose domain/range word only, justified by the explicit bijective signature.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260929-ORDINAL-ORDER-COMPARISON",
+      "audit_artifacts": [
+        "B162_SOURCE_AUDIT.json",
+        "B162_ALL5_SOURCE_PREAUDIT_NOTES.md",
+        "B162_DRAFT_QA_OLP-0551.json"
+      ],
+      "decision_timing": "contemporaneous B162 source comparison before acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": null,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "A source-local prose typo correction; no source formula or new theorem."
     }
   ],
   "external_upstream_report_submitted": false,
@@ -15444,7 +15501,8 @@
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-SPHERES",
     "PS-OWNER-SEMANTIC-20260929-COUNTERFACTUAL-END-SET-OPENING",
     "PS-OWNER-SEMANTIC-20260929-SET-THEORY-ITERATIVE-CONCEPTION",
-    "PS-OWNER-SEMANTIC-20260929-ZERMELO-END"
+    "PS-OWNER-SEMANTIC-20260929-ZERMELO-END",
+    "PS-OWNER-SEMANTIC-20260929-ORDINAL-ORDER-COMPARISON"
   ],
   "source_authorities": [
     {

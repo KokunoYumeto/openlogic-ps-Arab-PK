@@ -1,0 +1,31 @@
+{
+  "schema": "ps-b161-bold-math-font-repair/1",
+  "utc": "2026-09-29T03:30:21.519084+00:00",
+  "status": "reader blueprint corrected; compilation and rendered verification pending",
+  "previous_preamble_sha256": "d6fd1c39b8c1abdc2a959f271b0f9de94641a2000a49ede650ea0cff9ab100b4",
+  "new_preamble_path": "tools/cumulative-reader-preamble-v096.tex",
+  "new_preamble_sha256": "8f7550773dc01d795281380d5a92c3e7132e50b23178c2bf94f1f47f477c0238",
+  "local_fontspec_sty_sha256": "14fdcaeea0c2f2278c03ecf0ccea5dc383a045b3d60cb4373ff2bbd800771fe6",
+  "source_theory_macro": {
+    "path": "upstream/open-logic-config.sty",
+    "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+    "line_1based": 1145,
+    "definition": "\\DeclareDocumentCommand \\Th { m } {\\mathbf{#1}}"
+  },
+  "evidence": {
+    "missing_character_warnings": 11,
+    "exact_reader_bold_bar_theory_occurrences": 11,
+    "forms": [
+      "\\Th{\\bar Q}",
+      "\\Th{\\bar T}"
+    ],
+    "partial_pdf_sha256": "e5728379e105fbb8cbc074ebb2ab14fca8675b79873b492c123bc8b7af15d7d6",
+    "visually_inspected_partial_physical_pages": [
+      393,
+      394
+    ]
+  },
+  "inference": "Fontspec changed bold math text to Amiri Bold; the eleven source barred-bold theory expressions correspond to eleven missing U+0016 accent warnings. Disable fontspec math-family replacement while preserving Amiri Pashto text and unchanged math tokens.",
+  "formula_or_target_changes": false,
+  "next_action": "At next validated accumulated reader checkpoint compile through mutex guard, inspect actual barred-theory segments OLP-0305\u20130311 and require zero missing characters; complete full render/reproducibility QA before acceptance."
+}

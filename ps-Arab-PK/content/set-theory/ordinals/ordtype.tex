@@ -1,0 +1,82 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{ordtype}
+\olsection{ترتيبي عددونه د ترتيب د ډولونو په توګه}
+
+اوس چې تعويض لرو او په $\ZFminus$ کښې کار کوو، بالاخره هغه نتيجه
+ثابتولے شو چې مقصد مو وه:
+
+\begin{thm}\ollabel{thmOrdinalRepresentation}
+هر ښه ترتيب له يوه يوازيني ترتيبي عدد سره آيزومورف دے.
+\end{thm}
+
+\begin{proof}
+فرض کړئ $\tuple{A, <}$ ښه ترتيب دے. د
+\olref[basic]{ordisoidentity} له مخې، له زيات نه زيات يوه ترتيبي عدد
+سره آيزومورف دے. نو د تناقض د راوستلو دپاره فرض کړئ $\tuple{A, <}$ له
+\emph{هېڅ} ترتيبي عدد سره آيزومورف نۀ دے. لومړے به «$\tuple{A, <}$ تر
+ممکن حده کوچنے کړو». په تفصيل سره: که کومه خاصه پيلنۍ برخه $\tuple{A_a,
+<_a}$ له هېڅ ترتيبي عدد سره آيزومورف نۀ وي، نو يو تر ټولو کوچنے $a \in A$
+دا خاصيت لري؛ بيا $B = A_a$ او $\mathord{\lessdot} =
+\mathord{<_a}$ واخلو. که داسې نۀ وي، نو $B = A$ او $\mathord{\lessdot} =
+\mathord{<}$ واخلو.
+
+له تعريفه، د $B$ هره خاصه پيلنۍ برخه له کوم ترتيبي عدد سره آيزومورف
+ده، او د پورته بحث له مخې هغه يوازينے دے. نو د تعويض له مخې لاندې
+سټ شتون لري او تابعه ده:
+\[
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ او }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+\]
+د تناقض د بشپړولو دپاره به وښيو چې $f$ يو آيزومورفيزم
+$\alpha \to B$ دے، د کوم ترتيبي عدد $\alpha$ دپاره.
+
+ښکاره ده چې $\ran{f}
+= B$ دے. او د \olref[iso]{lemordsegments} له مخې $f$ ترتيب ساتي،
+يعنې $\gamma \in \beta$ هله او يوازې هله چې $f(\gamma) \lessdot f(\beta)$ وي.
+د دې د ښودلو دپاره چې $\dom{f}$ ترتيبي عدد دے، د
+\olref[basic]{corordtransitiveord} له مخې دا ښودل کافي دي چې
+$\dom{f}$ متعدي دے. نو $\beta \in \dom{f}$ ثابت وټاکئ، يعنې
+$\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$ د کوم $b$ دپاره.
+که $\gamma \in
+\beta$ وي، نو $\gamma \in \dom{f}$ د
+\olref[iso]{wellordinitialsegment} له مخې دے؛ په تعميمولو سره، $\beta \subseteq
+\dom{f}$ دے.
+\end{proof}
+
+دا نتيجه د لاندې تعريف جواز راکوي، چې له \olref[vn]{sec} راهيسې مو
+وړاندې کول غوښتل:
+
+\begin{defn}
+که $\tuple{A, <}$ ښه ترتيب وي، نو د هغه د ترتيب ډول،
+$\ordtype{A, <}$، هغه يوازينے ترتيبي عدد $\alpha$ دے چې
+$\ordeq{\tuple{A, < }}{\alpha}$ وي.
+\end{defn}
+
+همدارنګه، دا تعريف د دوو ښو اصلونو جواز راکوي:
+
+\begin{cor}\ollabel{ordtypesworklikeyouwant}
+که $\tuple{A, <}$ او $\tuple{B, \lessdot}$ ښه ترتيبونه وي:
+\begin{align*}
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ هله او يوازې هله چې }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ هله او يوازې هله چې }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ د يو مناسب }b \in B
+\end{align*}
+\end{cor}
+
+\begin{proof}
+برابري د \olref[basic]{ordisoidentity} له مخې ده. د دويمې ادعا د
+ثابتولو دپاره، $\ordtype{A, <} = \alpha$ او $\ordtype{B,
+\lessdot} = \beta$ واخلو، او $f \colon \beta \to \tuple {B, \lessdot}$
+زموږ آيزومورفيزم وټاکو. بيا:
+\begin{align*}
+	\alpha \in \beta&\text{ هله او يوازې هله چې }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ آيزومورفيزم دے}\\
+	&\text{ هله او يوازې هله چې }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ هله او يوازې هله چې }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ د کوم $b \in B$ دپاره}
+\end{align*}
+دا د \olref[iso]{ordisounique}،
+\olref[iso]{wellordinitialsegment} او
+\olref[basic]{ordissetofsmallerord} له مخې دي.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,220 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{basic}
+\olsection{د ترتيبي عددونو بنسټيز خاصيتونه}
+
+ومو ليدل چې لومړني څو ترتيبي عددونه طبيعي عددونه دي. د ترتيبي عددونو
+د نظريې د جوړولو اصلي وجه دا ده چې د استقرا هغه اصل پراخ کړو چې په
+طبيعي عددونو باندې عملي کېږي. دې مقصد ته به د ځينو ابتدايي نتيجو په
+لړۍ ورسېږو.
+
+\begin{lem}\ollabel{ordmemberord}
+د ترتيبي عدد هر !!{element} ترتيبي عدد دے.
+\end{lem}
+
+\begin{proof}
+فرض کړئ $\alpha$ ترتيبي عدد دے او $b \in \alpha$ دے. ځکه چې $\alpha$
+متعدي دے، $b \subseteq \alpha$ دے. نو $\in$ د $b$ ښه ترتيب ورکوي، ځکه
+چې $\in$ د $\alpha$ ښه ترتيب ورکوي.
+
+د دې د ليدلو دپاره چې $b$ متعدي دے، فرض کړئ $x \in c \in b$ دي.
+نو $c \in \alpha$ دے، ځکه چې $b
+\subseteq \alpha$ دے. بيا، ځکه چې $\alpha$ متعدي دے، $c \subseteq
+\alpha$ دے، نو $x \in \alpha$ دے. په دې توګه $x, c, b \in \alpha$ دي.
+خو $\in$ د $\alpha$ ښه ترتيب ورکوي، نو د
+\olref[sth][ordinals][wo]{wo:strictorder} له مخې $\in$ په
+$\alpha$ باندې متعدي اړيکه ده. نو له $x
+\in c \in b$ څخه $x \in b$ ترلاسه کوو. په تعميمولو سره $c \subseteq b$
+\end{proof}
+
+\begin{cor}\ollabel{ordissetofsmallerord}
+$\alpha = \Setabs{\beta \in \alpha}{\beta \text{ ترتيبي عدد دے}}$، د
+هر ترتيبي عدد~$\alpha$ دپاره.
+\end{cor}
+
+\begin{proof}
+له \olref{ordmemberord} څخه سمدستي نتيجه اخلو.
+\end{proof}
+
+د لاندې دوو مهمو نتيجو،
+\olref{ordinductionschema} او \olref{ordtrichotomy}، عمومي مطلب دا دے
+چې ترتيبي عددونه پخپله د غړيتوب له مخې ښه مرتب دي:
+
+\begin{thm}[د نامتناهيت هاخوا استقرا]\ollabel{ordinductionschema}
+د هر فارمول $\phi(x)$ دپاره:
+\[
+	\text{که }\exists \alpha \phi(\alpha)\text{ وي، نو }\exists \alpha(\phi(\alpha)
+	\land  (\forall \beta \in \alpha) \lnot \phi(\beta))
+\]
+دلته ښودل شوي کمّي کوونکي په ضمني توګه ترتيبي عددونو ته محدود دي.
+\end{thm}
+
+\begin{proof}
+%\olref{ordinductionschema1}. 
+فرض کړئ $\phi(\alpha)$ د کوم ترتيبي عدد $\alpha$ دپاره صدق کوي.
+که $ (\forall \beta
+\in \alpha) \lnot \phi(\beta)$ وي، نو مقصد ترلاسه شو. که داسې نۀ وي، نو ځکه
+چې $\alpha$ ترتيبي عدد دے، د $\in$ له مخې يو تر ټولو کوچنے داسې !!{element}
+لري چې $\phi$ پرې صدق کوي؛ او د \olref{ordmemberord} له مخې دا ترتيبي عدد دے.
+%	\olref{ordinductionschema2}. Suppose there is some ordinal
+%	$\gamma$ such that $\lnot\phi(\gamma)$. Then by
+%	\olref{ordinductionschema1}, there is an $\in$-minimal ordinal
+%	$\alpha$ for which $\lnot\phi(\alpha)$. So $(\forall \beta <
+%	\alpha) \phi(\beta)$, rendering the antecedent of the conditional
+%	false.
+\end{proof}
+\noindent
+وګورئ چې \olref{ordinductionschema} په هماغه معنا د دې شېما په بڼه هم
+بيانولے شو:
+\[
+\text{که }\forall \alpha((\forall \beta \in \alpha)\phi(\beta) \lif
+\phi(\alpha))\text{ وي، نو }\forall \alpha\phi(\alpha)
+\]
+يوازې په \olref{ordinductionschema} کښې $\lnot\phi(\alpha)$ اخلو او بيا
+ابتدايي منطقي بدلونونه ترسره کوو.
+
+\begin{thm}[درې ګونتوب]\ollabel{ordtrichotomy}
+$\alpha \in \beta \lor \alpha = \beta \lor \beta \in \alpha$، د هر دوو
+ترتيبي عددونو $\alpha$ او $\beta$ دپاره.
+\end{thm}
+
+\begin{proof}
+ثبوت په دوه ګونې استقرا ولاړ دے، يعنې
+\olref{ordinductionschema} دوه ځله کاروو. وايو چې $x$ له $y$ سره
+\emph{د پرتله کېدو وړ} دے، که او يوازې که $x \in y \lor x = y \lor y \in x$ وي.
+
+د استقرا دپاره فرض کړئ چې په~$\alpha$ کښې هر ترتيبي عدد له
+\emph{هر} ترتيبي عدد سره د پرتله کېدو وړ دے. د دويمې استقرا دپاره فرض کړئ
+چې $\alpha$ په~$\beta$ کښې له هر ترتيبي عدد سره د پرتله کېدو وړ دے.
+و به ښيو چې $\alpha$ له~$\beta$ سره د پرتله کېدو وړ دے. په~$\beta$ باندې
+له استقرا څخه به نتيجه واخلو چې $\alpha$ له هر ترتيبي عدد سره د پرتله کېدو
+وړ دے؛ او بيا په~$\alpha$ باندې له استقرا څخه چې \emph{هر} ترتيبي عدد له
+\emph{هر} ترتيبي عدد سره د پرتله کېدو وړ دے، لکه چې پکار دي.
+بس دا فرض کول کافي دي چې $\alpha \notin \beta$ او $\beta \notin
+\alpha$ دي، او وښيو چې $\alpha = \beta$ دے.
+
+د دې د ښودلو دپاره چې $\alpha \subseteq \beta$ دے، $\gamma \in \alpha$
+ثابت وټاکئ؛ د \olref{ordmemberord} له مخې دا ترتيبي عدد دے. نو د لومړۍ
+استقرا د فرض له مخې $\gamma$ له $\beta$ سره د پرتله کېدو وړ دے.
+خو که يا $\gamma
+= \beta$ يا $\beta \in \gamma$ وي، نو $\beta \in \alpha$ دے
+(که اړتيا وي، د $\alpha$ له تعديت څخه کار اخلو)، چې زموږ د فرض خلاف دے؛
+نو $\gamma \in \beta$ دے. په تعميمولو سره $\alpha \subseteq
+\beta$ دے.
+
+په عين ورته استدلال، د دويمې استقرا د فرض په کارولو، ښيو چې
+$\beta \subseteq \alpha$ دے. نو $\alpha = \beta$ دے.
+\end{proof}\noindent له دې امله، کله ناکله به د $\alpha <\beta$
+نښه د $\alpha \in \beta$ پر ځای وليکو، ځکه چې $\in$ د ترتيب د اړيکې
+په شان کار کوي. له اشناوالي پرته کومه ژوره وجه نۀ لري؛ او هم دا چې
+$\alpha \leq \beta$ ليکل تر $\alpha \in
+\beta \lor \alpha = \beta$ اسانه دي.\footnote{موږ $\alpha
+\mathrel{\underline{\in}} \beta$ ليکلے شو؛ خو دا به بالکل غير معياري وي.}
+
+زموږ د وروستيو نتيجو دوه لنډې پايلې دا دي؛ لومړۍ پايله نوې نښې کاروي:
+
+\begin{cor}\ollabel{ordordered}
+که $\exists \alpha\phi(\alpha)$ وي، نو $\exists \alpha(\phi(\alpha)
+\land \forall \beta(\phi(\beta) \lif \alpha \leq \beta))$ دے.
+همدارنګه، د هر درې ترتيبي عددونو $\alpha, \beta, \gamma$ دپاره دواړه
+$\alpha
+\notin \alpha$ او $\alpha \in \beta \in \gamma \lif \alpha \in
+\gamma$ دي.
+\end{cor}
+
+\begin{proof}
+د \olref[wo]{wo:strictorder} په شان.
+\end{proof}
+
+\begin{prob}
+د \olref[sth][ordinals][basic]{ordtrichotomy} په ثبوت کښې «په عين ورته
+استدلال» بشپړ کړئ.
+\end{prob}
+
+\begin{cor}\ollabel{corordtransitiveord}
+$A$ ترتيبي عدد دے، که او يوازې که $A$ د ترتيبي عددونو متعدي سټ وي.
+\end{cor}
+
+\begin{proof}
+\emph{له چپ نه ښي خوا ته.} د \olref{ordmemberord} له مخې.
+\emph{له ښي نه چپ خوا ته.} که $A$ د ترتيبي عددونو متعدي سټ وي، نو
+$\in$ د $A$ ښه ترتيب د \olref{ordinductionschema} او
+\olref{ordtrichotomy} له مخې ورکوي.
+\end{proof}
+
+اوس، موږ د
+\olref{ordinductionschema} او \olref{ordtrichotomy} معنا داسې بيان کړه چې
+$\in$ د ترتيبي عددونو ښه ترتيب ورکوي. خو د لاندې نتيجې له امله بايد
+د دې ډول ادعا په اړه \emph{ډېر احتياط} وکړو:
+
+\begin{thm}[د بورالي--فورتي تناقض]\ollabel{buraliforti}
+د ټولو ترتيبي عددونو سټ نشته.
+\end{thm}
+
+\begin{proof}
+د تناقض د راوستلو دپاره فرض کړئ $O$ د ټولو ترتيبي عددونو سټ دے.
+که $\alpha \in
+\beta \in O$ وي، نو د \olref{ordmemberord} له مخې $\alpha$ ترتيبي عدد دے،
+نو $\alpha \in O$ دے. په دې توګه $O$ متعدي دے، او له
+\olref{corordtransitiveord} څخه $O$ ترتيبي عدد دے. نو $O \in O$ دے، چې له
+\olref{ordordered} سره په تناقض کښې دے.
+\end{proof}
+\noindent
+دا نتيجه د \citeauthor{Burali-Forti1897} په نوم نومول شوې ده. خو کانتور په
+۱۸۹۹ کښې، ډېډېکنډ ته په يوه ليک کښې، په لومړي ځل په روښانه توګه وليدل
+چې د ټولو ترتيبي عددونو د يوه سټ فرض کول \emph{تناقض} راولاړوي.
+لکه څنګه چې فان هاينورټ وضاحت کوي:
+\begin{quote}
+  بورالي--فورتي پخپله دا تناقض داسې ګاڼه چې د \emph{برهان بالخلف}
+  له لارې دا نتيجه ثابتوي چې د ترتيبي عددونو طبيعي ترتيب يوازې
+  يو جزوي ترتيب دے.
+  \citep[p.~105]{Heijenoort1967}
+\end{quote}
+د بورالي--فورتي تېروتنه يوې خوا ته پرېږدو؛ پورته بحث داسې لنډولے شو:
+ترتيبي عددونه هغه سټونه دي چې هر يو په جلا توګه د غړيتوب له مخې ښه مرتب
+دے، او ټول په ګډه د غړيتوب له مخې ښه مرتب دي، خو په ګډه يو سټ نۀ جوړوي.
+
+د دې بحث په پای کښې، د ترتيبي عددونو ځينې نور بنسټيز خاصيتونه وړاندې
+کوو چې له \olref{ordinductionschema} او
+\olref{ordtrichotomy} څخه نتيجه اخلو.
+
+\begin{prop}
+د ترتيبي عددونو هره په کلکه نزولي لړۍ متناهي ده.
+\end{prop}
+
+\begin{proof}
+د ترتيبي عددونو هره نامتناهي په کلکه نزولي لړۍ $\alpha_0 > \alpha_1 > \alpha_2 > \ldots$
+د $<$ له مخې مينيمال غړے نۀ لري، چې له \olref{ordinductionschema} سره
+په تناقض کښې ده.
+\end{proof}
+
+\begin{prop}\ollabel{ordinalsaresubsets}
+$\alpha \subseteq \beta \lor \beta \subseteq \alpha$، د هر دوو ترتيبي
+عددونو $\alpha, \beta$ دپاره.
+\end{prop}
+
+\begin{proof}
+که $\alpha \in \beta$ وي، نو $\alpha \subseteq \beta$ دے، ځکه چې $\beta$
+متعدي دے. همدارنګه، که $\beta \in \alpha$ وي، نو $\beta \subseteq
+\alpha$ دے. او که $\alpha = \beta$ وي، نو $\alpha \subseteq \beta$ او
+$\beta \subseteq \alpha$ دي. نو د \olref{ordtrichotomy} له مخې مقصد ترلاسه شو.
+\end{proof}
+
+\begin{prop}\ollabel{ordisoidentity}
+$\alpha = \beta$، که او يوازې که $\ordeq{\alpha}{\beta}$ وي، د هر دوو
+ترتيبي عددونو $\alpha, \beta$ دپاره.
+\end{prop}
+
+\begin{proof}
+ترتيبي عددونه ښه ترتيبونه دي؛ نو دا له درې ګونتوب
+(\olref[basic]{ordtrichotomy}) او
+\olref[iso]{wellordnotinitial} څخه سمدستي نتيجه اخلو.
+\end{proof}
+
+\begin{prob}\ollabel{probunionordinalsordinal}
+ثابت کړئ چې، که د $X$ هر غړے ترتيبي عدد وي، نو $\bigcup X$ ترتيبي عدد دے.
+\end{prob}
+
+\end{document}
