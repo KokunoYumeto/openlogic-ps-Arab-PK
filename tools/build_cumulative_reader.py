@@ -110,11 +110,34 @@ def bibliography_inputs(body: str, build_dir: Path) -> tuple[str, dict]:
     missing = cited - keys
     if missing:
         raise ValueError(f"cited keys absent from frozen bibliography: {sorted(missing)}")
+    # Bibliography notes can cite other entries. Select their finite closure on
+    # the first pass, so BibTeX need not discover missing note citations later.
+    starts = list(re.finditer(r"@\w+\s*\{\s*([^,\s]+)\s*,", database))
+    entries = {match[1]: database[match.start():starts[i + 1].start() if i + 1 < len(starts) else len(database)]
+               for i, match in enumerate(starts)}
+    assert set(entries) == keys
+    selected = set(cited)
+    for _ in range(len(keys) + 1):
+        dependencies: set[str] = set()
+        for key in sorted(selected):
+            entry = entries[key]
+            for match in re.finditer(r"\\cite[a-zA-Z]*\*?(?:\[[^\]]*\])*\{([^{}]*)\}", entry):
+                dependencies.update(item.strip() for item in match[1].split(","))
+            dependencies.update(re.findall(r'\bcrossref\s*=\s*[{"]([^}"]+)[}"]', entry, re.I))
+        if dependencies - keys:
+            raise ValueError(f"bibliography dependency keys absent from frozen database: {sorted(dependencies - keys)}")
+        expanded = selected | dependencies
+        if expanded == selected:
+            break
+        selected = expanded
+    else:
+        raise ValueError("finite bibliography citation closure did not converge")
+    additional = sorted(selected - cited)
     dependency = build_dir / "open-logic.bib"
     dependency.write_bytes(source.read_bytes())
     tex = r"""\clearpage
 \begin{LTR}\latinfont
-\bibliographystyle{plainnat}
+""" + (r"\nocite{" + ",".join(additional) + "}\n" if additional else "") + r"""\bibliographystyle{plainnat}
 \bibliography{open-logic}
 \end{LTR}"""
     return tex, {
@@ -123,6 +146,8 @@ def bibliography_inputs(body: str, build_dir: Path) -> tuple[str, dict]:
         "build_dependency": dependency.name,
         "build_dependency_sha256": sha256(dependency),
         "cited_keys": sorted(cited),
+        "bibliography_note_dependency_keys": additional,
+        "selected_keys_including_dependencies": sorted(selected),
         "database_key_count": len(keys),
         "missing_keys": [],
         "style": "plainnat",
@@ -665,6 +690,26 @@ def prepare_unit(text: str, rows: list[dict], row: dict) -> tuple[str, Counter, 
         if recovered != expected:
             raise ValueError(f"{row['unit_id']} display paragraph recovery sites changed: {recovered}")
         profile_stats["modal_display_paragraph_break_recoveries"] += recovered
+    if row["unit_id"] in {"OLP-0634", "OLP-0636", "OLP-0637"}:
+        # Exact retained quotations need their own reading direction inside
+        # Pashto prose. Keep the original words and punctuation intact.
+        pattern = (r"\\emph\{(in rebus mathematicis errores qu\\`\{a\}m minimi\s+non sunt contemnendi)\}"
+                   if row["unit_id"] == "OLP-0634" else
+                   r"\\emph\{(je le vois, mais je ne le crois\s+pas\.?)\}")
+        expected = {"OLP-0634": 1, "OLP-0636": 1, "OLP-0637": 2}[row["unit_id"]]
+        body, count = re.subn(pattern, lambda m: r"\emph{\LR{\latinfont " + m[1] + "}}", body)
+        if count != expected:
+            raise ValueError(f"{row['unit_id']} retained Latin quotation sites changed: {count}")
+        profile_stats["retained_latin_quote_direction_recoveries"] += count
+    if row["unit_id"] in {"OLP-0479", "OLP-0487"}:
+        # Include tabular padding and rule widths in the two observed wide
+        # correspondence tables; content and mathematical tokens stay exact.
+        old = r"p{.48\textwidth}"
+        new = r"p{\dimexpr .5\linewidth-2\tabcolsep-2\arrayrulewidth\relax}"
+        if body.count(old) != 2:
+            raise ValueError(f"{row['unit_id']} correspondence table columns changed")
+        body = body.replace(old, new)
+        profile_stats["correspondence_table_column_recoveries"] += 2
     if re.search(r"!!|\\(?:use|print)token|\\Article|\\article|\\olimport|\\psOblique", body):
         raise ValueError(f"{row['unit_id']} preparation left a source-only macro")
     if unicodedata.normalize("NFC", body) != body:
@@ -834,6 +879,20 @@ def main() -> None:
             ],
         },
         "source_syntax_recoveries": [
+            {
+                "unit_ids": ["OLP-0634", "OLP-0636", "OLP-0637"],
+                "finding": "Four retained Latin/French quotations inherit RTL word order in Pashto prose.",
+                "reader_recovery": "Isolate only the four exact original quotations as LTR Latin text. Words and punctuation unchanged.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
+            {
+                "unit_ids": ["OLP-0479", "OLP-0487"],
+                "finding": "Two correspondence tables omit padding/rules in their column width allocation.",
+                "reader_recovery": "Account for tabular padding and rules in all four column widths; preserve every cell and formula.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
             {
                 "unit_ids": ["OLP-0471", "OLP-0472"],
                 "source_paths": ["content/normal-modal-logic/sequent-calculus/introduction.tex",

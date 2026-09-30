@@ -1,0 +1,24 @@
+{
+  "schema": "ps-compiled-reader-pending-qa/1",
+  "utc": "2026-09-30T09:06:08.613960+00:00",
+  "status": "compiled all three passes and BibTeX; acceptance withheld pending concrete citation/layout QA",
+  "reader_units": 637,
+  "tex_receipt_sha256": "6427b70cb0034d5e034d6f4c5f81e7c4a5e0ce3796f36fb51dfc037857406533",
+  "pdf_sha256": "9edcce148a6d019ac39dc40fa3d9bdd0f60018fbf46164d07d7adabbc637b4d9",
+  "reader_input_sha256": "d603b3345a5e6cabe6f85ce839960dccd3186b7ff4127b9b55fa1417c8d28f9b",
+  "bibliography_bbl_sha256": "c6ebb4da030650dbcebff95a78e410dc9d085524000e06df193c17276f44c3de",
+  "captured_job_terminal": true,
+  "mutex_released": true,
+  "missing_glyphs": 0,
+  "unresolved_bibliography_note_keys": [
+    "Frege1953",
+    "Peter1967"
+  ],
+  "findings": [
+    "Two bibliography-note citations enter AUX only after BibTeX. New source-only finite citation closure selects them before first bibliography pass.",
+    "Three modest overfull boxes require actual page inspection; label rerun warning also remains."
+  ],
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "ps-access-localization/1",
+  "utc": "2026-09-30T09:31:38.447571+00:00",
+  "status": "PASS; complete localized source638 status and pending-render recipe",
+  "accepted_units": 638,
+  "whole_sol6_reviews": 14,
+  "whole_sol6_pending": 285,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "current_reader_recipe": {
+    "through_unit": 638,
+    "preamble": "tools/cumulative-reader-preamble-v104.tex",
+    "passes": 4,
+    "bibtex": true
+  },
+  "localized_files": [
+    {
+      "path": "README.md",
+      "sha256": "db06b7930823a94d817c9fee65a5b67fedfeba4a6f521d420e75508bf7fdcd4f"
+    },
+    {
+      "path": "README.ps-Arab-PK.md",
+      "sha256": "db06b7930823a94d817c9fee65a5b67fedfeba4a6f521d420e75508bf7fdcd4f"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "7294c9d6712079628e8f6f8d5db5af6034228b18ea91217a1bc89510515b2ef9"
+    },
+    {
+      "path": "EXPERT_REVIEW.md",
+      "sha256": "6b6cbbd5313aff0d798a93246f22db7cacc80dcc5072ffcc6dc361f52163ce43"
+    },
+    {
+      "path": "EXPERT_REVIEW.ps-Arab-PK.md",
+      "sha256": "bbe25d3f4b67eb34db60d2b61cb4f3d6b9b4e82bcb4bb8d2ed2e995393c91f81"
+    },
+    {
+      "path": "SOURCE_CORRECTIONS.md",
+      "sha256": "b77ff36ba8abca1be7d609324a440b614060724f41ccc529ce09178b81ff1e4f"
+    },
+    {
+      "path": "evidence/SOL6_REAUDIT_STATUS.ps-Arab-PK.md",
+      "sha256": "847adec7349ac7b0dc7c12be8ca520f0e195cca046d6ae50dbd254997e716b45"
+    }
+  ],
+  "preamble_sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false
+}

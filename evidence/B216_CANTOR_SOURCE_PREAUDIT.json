@@ -1,0 +1,24 @@
+{
+  "schema": "ps-cantor-source-preaudit/1",
+  "utc": "2026-09-30T09:24:04.369905+00:00",
+  "status": "complete local proof comparison",
+  "issues": [
+    {
+      "id": "OLSTH-050",
+      "unit_id": "OLP-0638",
+      "block": 8,
+      "classification": "binary_fraction_endpoint_convention_incomplete",
+      "reason": "سرچينه هر عدد په صفر-صحيحې برخې کسري بڼه کوډوي، خو وروسته د ښي پای ساده بڼه له واحد-صحيحې برخې سره وړانديز کوي۔ هماغه بڼه د پورتني کوډ د ارقامو فرض نۀ پوره کوي؛ د صحيحې برخې غورځول يو پر يو والے ماتوي۔ د ښي پای تکراري بڼه اړينه ده، ورسره د نورو دوه‌ګونې بڼو لرونکو عددونو ثابت انتخاب۔",
+      "counterexample": "The declared expansion0.a1a2... of endpoint1 must be0.111... . Representation1.000... is outside that zero-integer-part scheme; ignoring its integer part gives all-zero fractional digits, colliding with endpoint0. A fixed terminating convention for dyadic numbers below1 plus all-ones for1 avoids this endpoint failure; no surjectivity is thereby asserted.",
+      "adjudication": "Local domain/encoding convention gap only. The cardinality theorem and its modern Schroeder–Bernstein completion remain correct; no historical full-text verification claimed."
+    }
+  ],
+  "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+  "frozen_source_unchanged": true,
+  "exact_checks": {
+    "endpoint_one_binary_series_sum": "sum(2**(-n), n>=1)=1",
+    "discarded_integer_part_collision": "Fractional digits of1.000... and0.000... coincide.",
+    "displayed_example": "Interleaving all-ones with all-zeros gives0.101010...=2/3.",
+    "two_injection_completion": "Correct modern Schroeder–Bernstein use; source separately acknowledges its later proof date."
+  }
+}

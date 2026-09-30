@@ -1,0 +1,53 @@
+{
+  "schema": "ps-frozen-translation-batch-qa/1",
+  "utc": "2026-09-30T09:19:29.986163+00:00",
+  "status": "checked complete draft batch; not accepted",
+  "units": [
+    {
+      "unit_id": "OLP-0638",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "source_bytes": 3408,
+      "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+      "target_bytes": 5373,
+      "target_sha256": "96a39cb07ad43e5eb54e073394c185f86c436f70719736081abb87b00abbe5cb",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 41,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-050"
+      ],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "translation_module_sha256": "773fb908fd2adf52d2972cb860aef7a2bc0e418d5c51bd4180158812df596499",
+  "checker_sha256": "b6706a5b5994dc14285245f0bb798a11d09ca39925ffc358a789e7cb538f960f",
+  "all_checks_pass": true,
+  "semantic_canon_registration_complete": false,
+  "new_render_acceptance": false
+}

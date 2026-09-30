@@ -1,0 +1,119 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T09:24:04.369905+00:00",
+  "status": "complete source and canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0638",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "source_bytes": 3408,
+      "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+      "target_bytes": 5373,
+      "target_sha256": "96a39cb07ad43e5eb54e073394c185f86c436f70719736081abb87b00abbe5cb",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 41,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-050"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "77b3434a023e8f57ff32a8e62b637aba055ffccdda06b05a3fd328e423078dd9",
+  "model_provenance_sha256": "44042980d1870d99d090fc450618a94644fe2ea19e536caf13741fce4cc52e23",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "GRAMMAR-P166-SOV",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+    "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين دوه‌ييزه پراختيا تخصصي چاپي بڼه نۀ ثابتوي۔",
+      "evidence_limit": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين دوه‌ييزه پراختيا تخصصي چاپي بڼه نۀ ثابتوي۔",
+      "actual_consultation": "Pages actually read in this continuation before this draft; evidence reused only for its stated concept/prose role."
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "د جملې فعل‌وروسته ترتيب او بشپړوونکي؛ د کانتور رياضيکي ثبوت نۀ تصديقوي۔",
+      "evidence_limit": "د جملې فعل‌وروسته ترتيب او بشپړوونکي؛ د کانتور رياضيکي ثبوت نۀ تصديقوي۔",
+      "actual_consultation": "Pages actually read in this continuation before this draft; evidence reused only for its stated concept/prose role."
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "78",
+      "pdf_page_1based": 89,
+      "page_image_sha256": "75f7ee2621050fd9ef60ba53b56c0c7e5e017a7beca2bf4b326ef1e1ae4304ef",
+      "finding": "افغان سيمه‌ييز شاهد يو پر يو تصوير او د اصلي شمېرونو پرتله د وقفې په مثالونو کښې ښيي؛ د خط او مربع عين تاريخي ثبوت نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد يو پر يو تصوير او د اصلي شمېرونو پرتله د وقفې په مثالونو کښې ښيي؛ د خط او مربع عين تاريخي ثبوت نۀ دے۔",
+      "actual_consultation": "Pages actually read in this continuation before this draft; evidence reused only for its stated concept/prose role."
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "66",
+      "pdf_page_1based": 77,
+      "page_image_sha256": "82a75f156e7c1e259ce0c2a23bfd6e10ab701f3524186d08aba0dabb16b704ca",
+      "finding": "افغان سيمه‌ييز مخ لړۍ او حد ښيي؛ د دوه‌ييزې نښه‌ليکنې يا د رقمونو د يوځای کولو عين پاکستانۍ اصطلاح شاهد نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ لړۍ او حد ښيي؛ د دوه‌ييزې نښه‌ليکنې يا د رقمونو د يوځای کولو عين پاکستانۍ اصطلاح شاهد نۀ دے۔",
+      "actual_consultation": "Pages actually read in this continuation before this draft; evidence reused only for its stated concept/prose role."
+    }
+  ],
+  "new_term_ids": [
+    "TERM-BINARY-EXPANSION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-050"
+  ],
+  "new_review_entry_ids": [
+    "TERM-BINARY-EXPANSION",
+    "DEC-OLSTH-050",
+    "DEC-B216-CANTOR-PLANE"
+  ],
+  "semantic_samples_added": 9,
+  "numeric_identity_check": true,
+  "external_source_preaudit_sha256": "4591f1e27b79787115817ac6f9c0d0994004664e46ee0e8a3f8720b940cb6d0e",
+  "unresolved": "بشپړ ۷۲۲ واحديز لوستونکی، EPUB، معلومات او د Sol6 خپلواکه کتنه پاتې دي۔",
+  "next_executable_action": "Run dual638 corpus QA and exact canonical replay; accept638. Continue639 full source comparison and review0325. Corrected637 render remains pending; no TeX slot polling."
+}

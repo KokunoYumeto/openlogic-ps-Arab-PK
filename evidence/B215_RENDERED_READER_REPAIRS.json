@@ -1,0 +1,49 @@
+{
+  "schema": "ps-reader-rendering-repair/1",
+  "utc": "2026-09-30T09:13:22.710149+00:00",
+  "status": "concrete rendered findings repaired in new reader inputs; rendering verification pending",
+  "source_target_edited": false,
+  "findings": [
+    {
+      "scope": "four exact quotations0634/0636/0637",
+      "issue": "Retained source words appear in RTL order.",
+      "repair": "LTR isolation and Latin font; same original words and punctuation."
+    },
+    {
+      "scope": "equation tags",
+      "issue": "Tag parentheses appear mirrored on temporal axiom labels.",
+      "repair": "Isolate existing amsmath tag-form output as LTR; original tag content retained."
+    },
+    {
+      "scope": "two correspondence tables0479/0487",
+      "issue": "Table width exceeds text width by8.24796pt.",
+      "repair": "Subtract padding/rules explicitly from column allocation; content retained."
+    },
+    {
+      "scope": "Pashto PDF text extraction",
+      "issue": "Native glyphs look correct but text copying returns unrelated Unicode for contextual glyphs.",
+      "repair": "Enable XeTeX ActualText; actual extraction still needs verification."
+    }
+  ],
+  "authority": {
+    "url": "https://tug.ctan.org/info/xetexref/xetex-reference.pdf",
+    "title": "XeTeX reference guide",
+    "locator": "PDF page10, XeTeXgenerateactualtext",
+    "finding": "Value1 adds ActualText to improve search/copy; no full PDF/UA compliance claim."
+  },
+  "builder_sha256": "cb051868c5903edb76a7e3c82ae1a6de97985a8131a7a7babc3960f099954c93",
+  "preamble_sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+  "prior_reader_sha256": "9edcce148a6d019ac39dc40fa3d9bdd0f60018fbf46164d07d7adabbc637b4d9",
+  "inspected_physical_pages": [
+    1,
+    539,
+    605,
+    612,
+    774,
+    775,
+    780,
+    785
+  ],
+  "new_reader_accepted": false,
+  "next_action": "Prepare/hash-check637 input, one bounded4-pass/BibTeX build, verify citation closure, LTR quotations/tags, tables and actual Unicode copying."
+}

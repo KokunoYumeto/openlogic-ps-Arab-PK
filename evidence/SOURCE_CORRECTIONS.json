@@ -17947,6 +17947,63 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-050",
+      "unit_id": "OLP-0638",
+      "classification": "binary_fraction_endpoint_convention_incomplete",
+      "source_path": "content/history/set-theory/cantor-plane.tex",
+      "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+      "source_locator": "content/history/set-theory/cantor-plane.tex:39",
+      "source_literal_line_1based": [
+        39
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/cantor-plane.tex",
+      "target_sha256": "96a39cb07ad43e5eb54e073394c185f86c436f70719736081abb87b00abbe5cb",
+      "target_line_1based": 30,
+      "target_literal_line_1based": [
+        30
+      ],
+      "disclosure_line_1based": 36,
+      "mode": "adjacent-Pashto-disclosed-source-convention-gap",
+      "translation_change": "اصلي ښودنې ساتل شوې؛ نږدې پښتو يادونه د واحد پای‌ټکي اړينه بڼه او ثابت انتخاب څرګندوي۔",
+      "reason": "سرچينه هر عدد په صفر-صحيحې برخې کسري بڼه کوډوي، خو وروسته د ښي پای ساده بڼه له واحد-صحيحې برخې سره وړانديز کوي۔ هماغه بڼه د پورتني کوډ د ارقامو فرض نۀ پوره کوي؛ د صحيحې برخې غورځول يو پر يو والے ماتوي۔ د ښي پای تکراري بڼه اړينه ده، ورسره د نورو دوه‌ګونې بڼو لرونکو عددونو ثابت انتخاب۔",
+      "counterexample": "The declared expansion0.a1a2... of endpoint1 must be0.111... . Representation1.000... is outside that zero-integer-part scheme; ignoring its integer part gives all-zero fractional digits, colliding with endpoint0. A fixed terminating convention for dyadic numbers below1 plus all-ones for1 avoids this endpoint failure; no surjectivity is thereby asserted.",
+      "formula_policy": "Original spans, displayed interleaving, theorem, links and tokens unchanged; prose disclosure only.",
+      "affected_segments": [
+        "OLP-0638-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B216-CANTOR-PLANE",
+      "decision_timing": "د بشپړې ژباړې پر وخت د منجمد متن او رښتيا لوستل شوي شاهد پرتله۔",
+      "audit_artifacts": [
+        "B216_SOURCE_AUDIT.json",
+        "B216_CANTOR_SOURCE_PREAUDIT.json",
+        "B216_CANTOR_PLANE_DRAFT_QA.json"
+      ],
+      "limits": "Local domain/encoding convention gap only. The cardinality theorem and its modern Schroeder–Bernstein completion remain correct; no historical full-text verification claimed.",
+      "upstream_reporting": "No direct upstream message; authorized manager milestone only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
