@@ -1,0 +1,63 @@
+{
+  "schema": "ps-sol6-theorem-reaudit/1",
+  "utc": "2026-09-30T01:26:41.961852+00:00",
+  "status": "two further complete source units re-audited; broader review remains pending",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "units": [
+    {
+      "unit_id": "OLP-0315",
+      "source_path": "content/incompleteness/incompleteness-provability/first-incompleteness-thm.tex",
+      "source_sha256": "076a28d62623cf636f5ca0b13b86a3e765b760caa6f69bedac3c2265d86d4950",
+      "target_sha256": "613c91dbe46ae76ed9faf22fd15bcee4c34468816dd00685846fd702029d259a",
+      "paired_blocks_reviewed": 19,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "outcome": "retain after complete source-semantic and wording comparison",
+      "new_render_acceptance": false
+    },
+    {
+      "unit_id": "OLP-0316",
+      "source_path": "content/incompleteness/incompleteness-provability/rosser-thm.tex",
+      "source_sha256": "3c59d5c743202651c9d749cdee809bc8daaf013aa0a0d23719760205601ad55f",
+      "target_sha256": "c7ea6795f1fbe7f2587cd1ec59779c2dcc86e97a896d5b48e9280ae40475cf37",
+      "paired_blocks_reviewed": 13,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "outcome": "retain after complete source-semantic and wording comparison",
+      "new_render_acceptance": false
+    }
+  ],
+  "new_segment_entries": 22,
+  "cumulative_segment_entries": 43,
+  "cumulative_segment_ledger_sha256": "078eb0a8b4d323aa867dca3b2eabdbcaf448c863c85b11c8987795eda9014b3a",
+  "previous_ledger_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0314.jsonl",
+  "next_unit": "OLP-0317",
+  "full_reaudit_completed": false
+}

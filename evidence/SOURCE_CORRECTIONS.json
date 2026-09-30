@@ -16809,7 +16809,7 @@
         52
       ],
       "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
-      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "target_sha256": "25bb18582258b8f64e4620298306e62ca6fa059b3513749fbe70958379eb4d35",
       "target_line_1based": 36,
       "target_literal_line_1based": [
         36,
@@ -16868,13 +16868,13 @@
         259
       ],
       "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
-      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
-      "target_line_1based": 288,
+      "target_sha256": "25bb18582258b8f64e4620298306e62ca6fa059b3513749fbe70958379eb4d35",
+      "target_line_1based": 284,
       "target_literal_line_1based": [
-        288,
-        291
+        284,
+        287
       ],
-      "disclosure_line_1based": 307,
+      "disclosure_line_1based": 303,
       "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
       "translation_change": "د اندازه‌يي ثبوت د ګرځون نښې غلط چاپي ساحه ښکاره شوه؛ دواړه اصلي موردونه ساتل شوي دي.",
       "reason": "The measure proof twice quantifies rho over C, which is a set of selected circle points, while funimage(rho,C) requires rho to be a rotation. The printed variable domain is ill-typed; the target retains both occurrences and discloses the mismatch.",
@@ -16916,7 +16916,7 @@
     {
       "id": "OLSTH-031",
       "unit_id": "OLP-0600",
-      "classification": "undefined_R1_in_partition_proof",
+      "classification": "withdrawn_false_positive",
       "source_path": "content/set-theory/choice/vitali.tex",
       "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
       "source_locator": "content/set-theory/choice/vitali.tex:159",
@@ -16924,16 +16924,16 @@
         159
       ],
       "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
-      "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "target_sha256": "25bb18582258b8f64e4620298306e62ca6fa059b3513749fbe70958379eb4d35",
       "target_line_1based": 177,
       "target_literal_line_1based": [
         177
       ],
-      "disclosure_line_1based": 193,
-      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
-      "translation_change": "د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.",
-      "reason": "The partition proof uses R_1 as an index although it previously defined rotationsgroup_1 and rotationsgroup_2 only. The target retains the exact printed identifier and discloses its undefined status.",
-      "formula_policy": "All 135 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "disclosure_line_1based": null,
+      "mode": "withdrawn_after_checked_macro_expansion",
+      "translation_change": "د اصلي ماکرو له غځېدو وروسته د لومړۍ ډلې نښه هماغه تعريف شوې نښه ده؛ ناسمه خبرتيا لرې شوه.",
+      "reason": "The frozen configuration defines rotationsgroup as the literal R. Thus rotationsgroup_1 and R_1 print the identical already-defined notation. Sol6 compared TeX command names instead of their mathematical output; the undefined-index claim is a false positive. The rational-radian and rotation-domain defects are independent and remain disclosed.",
+      "formula_policy": "All 135 ordered active mathematical spans remain exact; OLSTH-029 and OLSTH-030 remain disclosed.",
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
       "stable_audit": "PS-OWNER-SEMANTIC-20260930-VITALI",
@@ -16944,7 +16944,7 @@
       ],
       "decision_timing": "contemporaneous B194 source-semantic comparison before acceptance",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
-      "proof_gap_disclosed_unrepaired": true,
+      "proof_gap_disclosed_unrepaired": false,
       "finite_semantic_check_sha256": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
       "qa_math_exception": {
         "source_only": [],
@@ -16966,12 +16966,21 @@
         "source_only": [],
         "target_only": []
       },
-      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+      "limits": "Previous B194 records describe the historical target. There is no undefined R1 defect under the frozen configuration.",
+      "status": "superseded",
+      "active_erratum": false,
+      "superseded_prior_classification": "undefined_R1_in_partition_proof",
+      "superseded_prior_reason": "The partition proof uses R_1 as an index although it previously defined rotationsgroup_1 and rotationsgroup_2 only. The target retains the exact printed identifier and discloses its undefined status.",
+      "superseded_by": "SOL6_VITALI_MACRO_RECONCILIATION.json",
+      "superseded_utc": "2026-09-30T01:10:41.984801+00:00",
+      "macro_source_path": "upstream/open-logic-config.sty",
+      "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+      "macro_definition_line_1based": 1225
     },
     {
       "id": "OLSTH-032",
       "unit_id": "OLP-0606",
-      "classification": "membership_formula_missing_left_argument",
+      "classification": "withdrawn_false_positive",
       "source_path": "content/methods/proofs/inference-patterns.tex",
       "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
       "source_locator": "content/methods/proofs/inference-patterns.tex:198",
@@ -16980,17 +16989,17 @@
         199
       ],
       "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
-      "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "target_sha256": "673e263e10874116c61f9dfb9975e7ee6bd967006c967ff9841c05e7dff94b0c",
       "target_line_1based": 247,
       "target_literal_line_1based": [
         247,
         248
       ],
-      "disclosure_line_1based": 250,
-      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
-      "translation_change": "د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.",
-      "reason": "The printed proof has bare membership formulas \"\\in D\" and \"\\in E\" after referring to arbitrary x. Membership is binary; the missing left argument makes those two displayed inline expressions ill formed. The nearby prose identifies the intended x cases. The target retains both exact formula spans and discloses the omission adjacent to them.",
-      "formula_policy": "All 301 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+      "disclosure_line_1based": null,
+      "mode": "withdrawn_after_full_sentence_semantic_review",
+      "translation_change": "د غړيتوب په عبارتونو کښې څيز له نږدې جملې معلوم دے؛ ناسمه د عيب يادونه لرې شوه.",
+      "reason": "The source says any x in B is also in D and any x in C is also in E. The sentence supplies x as the subject of the inline relation fragment. A math span need not be a complete standalone formula. No membership defect or proof gap follows. Sol6 classified the fragments in isolation, and the adjacent target warning was misleading.",
+      "formula_policy": "All 301 ordered active math spans retained; no defect asserted for prose-supplied subjects.",
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
       "stable_audit": "PS-OWNER-SEMANTIC-20260930-INFERENCE-PATTERNS",
@@ -17001,7 +17010,7 @@
       ],
       "decision_timing": "contemporaneous B200 source-semantic comparison before acceptance",
       "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
-      "proof_gap_disclosed_unrepaired": true,
+      "proof_gap_disclosed_unrepaired": false,
       "finite_semantic_check_sha256": "b9bf1853f4faadad199c35e24649759d953471d8aa679573a064c2fa8a5a6006",
       "qa_math_exception": {
         "source_only": [],
@@ -17023,7 +17032,13 @@
         "source_only": [],
         "target_only": []
       },
-      "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+      "limits": "B200 receipts describe the prior version. The source was valid at these locators; the withdrawn claim is historical.",
+      "status": "superseded",
+      "active_erratum": false,
+      "superseded_prior_classification": "membership_formula_missing_left_argument",
+      "superseded_prior_reason": "The printed proof has bare membership formulas \"\\in D\" and \"\\in E\" after referring to arbitrary x. Membership is binary; the missing left argument makes those two displayed inline expressions ill formed. The nearby prose identifies the intended x cases. The target retains both exact formula spans and discloses the omission adjacent to them.",
+      "superseded_by": "SOL6_MEMBERSHIP_RECONCILIATION.json",
+      "superseded_utc": "2026-09-30T01:05:54.136926+00:00"
     },
     {
       "id": "OLSTH-033",
@@ -17037,13 +17052,13 @@
         311
       ],
       "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
-      "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
-      "target_line_1based": 453,
+      "target_sha256": "673e263e10874116c61f9dfb9975e7ee6bd967006c967ff9841c05e7dff94b0c",
+      "target_line_1based": 450,
       "target_literal_line_1based": [
-        453,
-        454
+        450,
+        451
       ],
-      "disclosure_line_1based": 458,
+      "disclosure_line_1based": 455,
       "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
       "translation_change": "د نه تشوالي د چاپي معادل شرط د څيز او سټ د نښو توپير څرګند شو؛ اصلي فورمول ساتل شوے.",
       "reason": "The explanatory proof derives an existence claim from A neq emptyset, then prints x neq emptyset iff some x is in A. The left-hand subject must concern A for that equivalence; the printed x/A substitution is a source error. The target preserves the exact formula and gives an adjacent Pashto disclosure.",
@@ -17081,6 +17096,63 @@
         "target_only": []
       },
       "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+    },
+    {
+      "id": "OLSTH-034",
+      "unit_id": "OLP-0608",
+      "classification": "missing_outer_closing_parenthesis_in_subset_formula",
+      "source_path": "content/methods/proofs/example-2.tex",
+      "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+      "source_locator": "content/methods/proofs/example-2.tex:54-55",
+      "source_literal_line_1based": [
+        54,
+        55
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/example-2.tex",
+      "target_sha256": "4f62f8cfef3bd1d54369b83fcb074ff5511c042869aa42f3a5e2a924a2b6d3b1",
+      "target_line_1based": 53,
+      "target_literal_line_1based": [
+        53,
+        54
+      ],
+      "disclosure_line_1based": 56,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-punctuation-issue",
+      "translation_change": "د چاپي فرعي‌سټ د عبارت دباندې پرانيستي قوس ورک تړونکے ښکاره شو؛ فورمول هماغسې ساتل شوے دے.",
+      "reason": "Frozen source lines 54–55 print the second inclusion as C subseteq (A cup (C setminus A), omitting the outer closing parenthesis. The surrounding equality proof clearly concerns C subseteq A cup (C setminus A). The target retains the exact mathematical span and discloses the printed punctuation omission immediately afterward; no author-approved correction is claimed.",
+      "formula_policy": "All 86 ordered active math spans are exact; adjacent Pashto prose discloses the unmatched parenthesis.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260930-SUBSET-DIFFERENCE-EXAMPLE",
+      "audit_artifacts": [
+        "B202_SOURCE_AUDIT.json",
+        "B202_EXAMPLE2_DRAFT_QA.json",
+        "B202_EXAMPLE2_SOURCE_PREAUDIT.md"
+      ],
+      "decision_timing": "contemporaneous B202 source-semantic comparison before acceptance",
+      "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "ee4d1668c0181c52f1de62d0562a17f233e4bc070679c7b80cc5ced3c3bdedb1",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "limits": "No original-author approval claimed; the frozen formula remains unrepaired."
     }
   ],
   "external_upstream_report_submitted": false,

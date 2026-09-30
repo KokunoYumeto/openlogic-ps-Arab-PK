@@ -1,0 +1,213 @@
+{
+  "schema": "ps-sol6-membership-reconciliation/1",
+  "utc": "2026-09-30T01:05:54.136926+00:00",
+  "status": "source claims corrected; cumulative QA and full re-audit still pending",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "withdrawn_active_claim": "OLSTH-032",
+  "rejected_staged_candidates": [
+    "OLSTH-035",
+    "OLSTH-036",
+    "OLSTH-038",
+    "OLSTH-039"
+  ],
+  "retained_staged_candidate": {
+    "id": "OLSTH-037",
+    "reason": "Wrong set C in union-inclusion explanation; no missing-subject defect."
+  },
+  "reason": "The source says any x in B is also in D and any x in C is also in E. The sentence supplies x as the subject of the inline relation fragment. A math span need not be a complete standalone formula. No membership defect or proof gap follows. Sol6 classified the fragments in isolation, and the adjacent target warning was misleading.",
+  "original_action": {
+    "id": "OLSTH-032",
+    "unit_id": "OLP-0606",
+    "classification": "membership_formula_missing_left_argument",
+    "source_path": "content/methods/proofs/inference-patterns.tex",
+    "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+    "source_locator": "content/methods/proofs/inference-patterns.tex:198",
+    "source_literal_line_1based": [
+      198,
+      199
+    ],
+    "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
+    "target_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+    "target_line_1based": 247,
+    "target_literal_line_1based": [
+      247,
+      248
+    ],
+    "disclosure_line_1based": 250,
+    "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+    "translation_change": "د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.",
+    "reason": "The printed proof has bare membership formulas \"\\in D\" and \"\\in E\" after referring to arbitrary x. Membership is binary; the missing left argument makes those two displayed inline expressions ill formed. The nearby prose identifies the intended x cases. The target retains both exact formula spans and discloses the omission adjacent to them.",
+    "formula_policy": "All 301 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+    "frozen_source_unchanged": true,
+    "reader_disclosure_language": "ps-Arab-PK",
+    "stable_audit": "PS-OWNER-SEMANTIC-20260930-INFERENCE-PATTERNS",
+    "audit_artifacts": [
+      "B200_SOURCE_AUDIT.json",
+      "B200_INFERENCE_PATTERNS_DRAFT_QA.json",
+      "B200_INFERENCE_PATTERNS_SOURCE_PREAUDIT.md"
+    ],
+    "decision_timing": "contemporaneous B200 source-semantic comparison before acceptance",
+    "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+    "proof_gap_disclosed_unrepaired": true,
+    "finite_semantic_check_sha256": "b9bf1853f4faadad199c35e24649759d953471d8aa679573a064c2fa8a5a6006",
+    "qa_math_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_identifier_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_macro_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_token_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_tag_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+  },
+  "original_review": {
+    "entry_id": "DEC-OLSTH-032",
+    "entry_type": "source-correction",
+    "source_target_locations": [
+      {
+        "unit_id": "OLP-0606",
+        "source_path": "content/methods/proofs/inference-patterns.tex",
+        "target_path": "ps-Arab-PK/content/methods/proofs/inference-patterns.tex",
+        "source_literal_line_1based": [
+          198,
+          199
+        ],
+        "target_literal_or_token_line_1based": [
+          247,
+          248,
+          250
+        ],
+        "location_scope": "proof-by-cases membership formulas and adjacent disclosure",
+        "source_section_title": "Inference Patterns",
+        "target_section_title": "د استنتاج بڼې",
+        "exact_printed_page": null,
+        "exact_pdf_page": null,
+        "reader_artifact": null,
+        "published_reader_page_navigation": null,
+        "page_status": "pending stable pagination in a reader containing this unit"
+      }
+    ],
+    "chosen_treatment": "د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.",
+    "actual_authorities_checked": [
+      {
+        "passage_id": "PK-IQRAM-P1-PROSE",
+        "source_id": "PS-PK-IQRAM-2019",
+        "pdf_page_1based": 1,
+        "printed_page": "1",
+        "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+        "region": "Pakistan; native scholarly prose primary",
+        "inspection": "Exact rendered page visually inspected.",
+        "finding": "پاکستانۍ علمي نثر د املا او بيان لومړنے شاهد دے؛ د ثبوت د دې بڼو عين تخصصي نومونه نه ثابتوي."
+      },
+      {
+        "source_context_unit_id": "OLP-0606",
+        "source_path": "content/methods/proofs/inference-patterns.tex",
+        "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+        "finding": "منجمد چاپي فورمول او نږدې استدلال د عيب د تشخيص معيار دي؛ د ليکوال تصويب نه دے."
+      }
+    ],
+    "not_found_in_checked_sources": "د اصلي ليکوال رسمي سمون نه دے موندل شوے.",
+    "rationale": "The printed proof has bare membership formulas \"\\in D\" and \"\\in E\" after referring to arbitrary x. Membership is binary; the missing left argument makes those two displayed inline expressions ill formed. The nearby prose identifies the intended x cases. The target retains both exact formula spans and discloses the omission adjacent to them.",
+    "alternatives_for_expert_review": [
+      "چاپي ستونزه بې له يادونې پرېښودل",
+      "د منجمد فورمول پټه سمونه"
+    ],
+    "uncertainty": "د ليکوال رسمي تصويب نشته؛ چاپي ستونزه لا هماغسې ده.",
+    "review_question": "ايا د چاپي غړيتوب د ورک چپ اړخ يادونه بې له فورمول بدلون روښانه ده؟",
+    "entry_timing": "B200 contemporaneous source disclosure before acceptance",
+    "open_to_correction": true,
+    "human_review_gate": false,
+    "edition": "OpenLogic Pashto — Pakistan",
+    "locale": "ps-Arab-PK",
+    "script": "Arab",
+    "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+    "source_term_or_sense": "membership_formula_missing_left_argument",
+    "chosen_rendering_or_treatment": "د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.",
+    "review_priority": "high",
+    "confidence": "exact frozen source and target checked; not a calibrated probability",
+    "provisional": true,
+    "please_double_check": "ايا د چاپي غړيتوب د ورک چپ اړخ يادونه بې له فورمول بدلون روښانه ده؟"
+  },
+  "source_evidence": [
+    {
+      "unit_id": "OLP-0606",
+      "path": "content/methods/proofs/inference-patterns.tex",
+      "sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+      "lines_1based": [
+        198,
+        199
+      ]
+    },
+    {
+      "unit_id": "OLP-0609",
+      "path": "content/methods/proofs/proof-by-contradiction.tex",
+      "sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+      "shorthand_lines_1based": [
+        124,
+        131,
+        133,
+        134,
+        165,
+        201
+      ],
+      "wrong_set_line_1based": 134
+    }
+  ],
+  "target_changes": [
+    {
+      "unit_id": "OLP-0606",
+      "before": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "after": "673e263e10874116c61f9dfb9975e7ee6bd967006c967ff9841c05e7dff94b0c",
+      "reviewed_blocks": [
+        "OLP-0606-B031"
+      ],
+      "unreviewed_remaining_unit_blocks": 45
+    },
+    {
+      "unit_id": "OLP-0609",
+      "before": "1de8c09bc4ec44decbfb23224ee960bba016b2a90ddf02bbc8f3770b57f76a7a",
+      "after": "255c4281e2ebd4d66b09fb1e9945cef9a168f21ed11aa73a9860eded23e8a5f7",
+      "changed_blocks_this_repair": [
+        9,
+        14,
+        17,
+        19
+      ],
+      "acceptance": "still unregistered staged draft"
+    }
+  ],
+  "canon_reconsulted": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "scope": "Pakistan prose/orthography primary; Afghan subset page is a regional relation-definition comparator, not an authority to diagnose English mathematical shorthand."
+    },
+    {
+      "passage_id": "AF-MOE-P11-SUBSET",
+      "page_image_sha256": "bd1c5efa04820307feef6483955f502d176aaaa889643f4a043613656626526d",
+      "scope": "Pakistan prose/orthography primary; Afghan subset page is a regional relation-definition comparator, not an authority to diagnose English mathematical shorthand."
+    }
+  ],
+  "active_review_entries": 769,
+  "historical_source_actions": 456,
+  "active_source_actions": 454,
+  "new_focused_draft_receipt_sha256": "f1fbe3051bad93513cfcefae00f2764daf63725118cf438ce0aae3f29d7293f1",
+  "next_action": "Regenerate both corpus ledgers and canonical projections, verify parity; independently redo all inventoried Sol6 work."
+}

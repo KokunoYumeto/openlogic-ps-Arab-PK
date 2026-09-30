@@ -1,6 +1,6 @@
 # Terminology and translation decisions for expert review
 
-Coverage: 595 of 722 source units are accepted editable drafts. This log contains 301 terminology entries and 452 difficult translation/source entries. It is partial, maintained alongside the translation, and open to asynchronous correction. Expert response is welcome but is not a build or publication gate.
+Coverage:608 of722 source units have previously accepted editable drafts, now subject to the requested independent Sol6 re-audit. The maintained machine register contains309 terminology decisions and459 other judgments,768 in total. This prose guide is partial; the canonical register supplies the current complete identified-decision inventory. Expert feedback is welcome and is not a build or publication gate.
 
 Earlier terminology entries were backfilled from the existing decision ledger after the expert-log requirement was introduced; later entries record their contemporaneous review timing. “Retrospective” describes only the entries that carry that label and does not invent an earlier motive. Exact machine-readable locations, page identities, checked-authority findings, alternatives and review questions are in `evidence/EXPERT_REVIEW_LOG.jsonl`.
 

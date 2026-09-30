@@ -1,0 +1,44 @@
+{
+  "schema": "ps-sol6-repair-corpus-qa/1",
+  "utc": "2026-09-30T01:12:20.983006+00:00",
+  "status": "PASS; structural and evidence validation, full semantic re-audit remains pending",
+  "current_editable_units": 608,
+  "staged_unregistered_unit": "OLP-0609",
+  "source_claims_active": 453,
+  "source_claims_historical": 456,
+  "semantic_samples": 2367,
+  "corpus_generator_parity": {
+    "QA.json": "86c21bc11198b8889e9421538acf18df10efe579278f94e10c6864c6a6272d00",
+    "ALIGNMENT.jsonl": "08f6807ae994d0e1e097b3c9e0dbf7d9bcfe4c6b60efd6622035063e4db5fd8d",
+    "SEGMENT_CANON_USE.jsonl": "35e1b3b352f96eb581a5390878d545f517018b9042f2335bce9deab87fbee016"
+  },
+  "canonical_generator_parity": {
+    "START_HERE.md": "48ba8ae74d5b39257935787617a4a5b5f6909d2d3a00a5e4c4982ff24ad67c9e",
+    "TRANSLATION_DECISIONS_FULL.md": "865df7feda5746c2b8627a0934bc9b65aeedcfdfc69ffa5a98b4a251d139b88a",
+    "PRIORITY_REVIEW.md": "f59b0ec7614f6ef691d02cc29914a411748608f38ce7df33a5d43a744645e1d3",
+    "DECISION_OCCURRENCES.csv": "15ae6c43a3e1784e449daae1a2b6d9ef320efaa6a4ef64e63d8bd2790c82384c",
+    "DECISIONS.json": "86283f48c144611551cf758fa8bd810cf83f811256da825e5ea5f3363194145e",
+    "translation-decision.schema.json": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "TRANSLATION_DECISION_QA.json": "66455b25b82edff3bf2585674a3dcfeb0cfabfbcdcab3892f3da9737a319ebb1"
+  },
+  "canonical_counts": {
+    "decisions": 768,
+    "occurrences": 29813,
+    "terminology_decisions": 309,
+    "source_correction_decisions": 454,
+    "priority_decisions": 436,
+    "reader_pages_available": 18455,
+    "reader_pages_pending": 11358
+  },
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "repair_receipt_sha256": "4c962e139f43cf451236e175b2635283621ecaed9517fd964609a1f75036d5df",
+  "vitali_macro_repair_receipt_sha256": "666d707536910bd53d806709df043f43dcf05eeef9d3f089bb0c0eb39e1b9db3",
+  "builder_sha256": "809f56201e03743bff52ef7492789fa6264ad1e80b297ce93bf52fabc26b1846",
+  "original_accepted608_receipt_sha256": "ea799ae2bdb35e350dd2810fd46bc8e2ac4c555a55e9f26b8c419e3f8c6e1bda",
+  "reader_acceptance_changed": false,
+  "full_reaudit_completed": false
+}

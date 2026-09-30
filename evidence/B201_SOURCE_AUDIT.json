@@ -1,0 +1,35 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-29T23:54:07.599124+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-DISTRIBUTIVITY-EXAMPLE",
+  "batch_id": "PS-B201-EXAMPLE1",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0607",
+      "source_path": "content/methods/proofs/example-1.tex",
+      "source_bytes": 7955,
+      "source_sha256": "d9536cc5ffc9bcaa7dee417fe8bbfb1c7f7dc99a5abec3fdf5fd58ea4593922a",
+      "target_sha256": "b33f3d1db433589f0148e8029574959fb11d6d29bb8844eeb929e9456c6e88a0",
+      "paired_blocks": 14,
+      "changed_blocks": 9,
+      "ordered_math_spans": 134,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "c7240461866f195e7b2695509ec6729ea777f6a4a6894519fec02be668416a9e",
+  "preaudit_sha256": "4eac591d48659b0fbe17e7765cdd755e85380ac960652fcf61224823e0521a17",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-MOE-P15-UNION",
+    "AF-MOE-P13-INTERSECTION",
+    "AF-NIAZMAN-P39-THEORY-PROOF"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "semantic_samples_added": 12,
+  "formula_policy": "All 134 ordered active math spans, term tokens, identifiers, structural commands and comments remain exact.",
+  "unresolved": "د اتحاد او تقاطع عين پاکستانۍ تخصصي درسي شاهد په دغو کتل شويو مخونو کښې نه دے موندل شوے؛ موجودې مستندې اصطلاحي پرېکړې دلته کارول شوې دي.",
+  "next_executable_action": "Run independent 607-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0608."
+}

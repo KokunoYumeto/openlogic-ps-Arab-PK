@@ -1,0 +1,41 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "status": "registered source-reviewed draft; cumulative acceptance pending",
+  "utc": "2026-09-30T00:10:31.339668+00:00",
+  "audit_id": "PS-OWNER-SEMANTIC-20260930-SUBSET-DIFFERENCE-EXAMPLE",
+  "batch_id": "PS-B202-EXAMPLE2",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0608",
+      "source_path": "content/methods/proofs/example-2.tex",
+      "source_bytes": 4828,
+      "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+      "target_sha256": "4f62f8cfef3bd1d54369b83fcb074ff5511c042869aa42f3a5e2a924a2b6d3b1",
+      "paired_blocks": 9,
+      "changed_blocks": 4,
+      "ordered_math_spans": 86,
+      "source_correction_ids": [
+        "OLSTH-034"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "ee4d1668c0181c52f1de62d0562a17f233e4bc070679c7b80cc5ced3c3bdedb1",
+  "preaudit_sha256": "57bb92b6e6e49994295897a3c2dec02a1edda2d7b973d43398f06c7dc58d8940",
+  "model_provenance_sha256": "84d8bf278aacff69a6af7c18d8eeea1061d795899865f5aaf2d97307f94b2573",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-MOE-P11-SUBSET",
+    "AF-MOE-P15-UNION",
+    "AF-MOE-P17-DIFFERENCE",
+    "AF-NIAZMAN-P8-TRUTH-TABLE"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [
+    "OLSTH-034"
+  ],
+  "semantic_samples_added": 7,
+  "formula_policy": "All 86 ordered active math spans remain exact; one printed parenthesis omission is disclosed adjacent to the unchanged formula.",
+  "unresolved": "د چاپي قوس نيمګړتيا نه ده رغول شوې؛ د خارج منځني عين پاکستانۍ اصطلاح لا لنډمهالې ده.",
+  "next_executable_action": "Run independent 608-unit corpus QA and canonical replay; accept only on PASS. Continue OLP-0609."
+}

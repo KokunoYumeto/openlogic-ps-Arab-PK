@@ -1,0 +1,184 @@
+{
+  "schema": "ps-sol6-opening-reaudit/1",
+  "utc": "2026-09-30T01:16:26.160058+00:00",
+  "status": "three complete source units re-audited; broader work remains pending",
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "units": [
+    {
+      "unit_id": "OLP-0312",
+      "source_path": "content/incompleteness/incompleteness-provability/incompleteness-provability.tex",
+      "source_sha256": "0f9f91331dc384bcae2953a10d927ce1d39bb922693ea6eec054e48abeffab4c",
+      "target_sha256_before": "74756f6ef4f7539f725e92fa79245895ebb3d2d61b8d9372110f2ce7762150a1",
+      "target_sha256_after": "74756f6ef4f7539f725e92fa79245895ebb3d2d61b8d9372110f2ce7762150a1",
+      "paired_blocks_reviewed": 15,
+      "translated_blocks_reviewed": [
+        4
+      ],
+      "outcome": "retain translation after source, meaning and wording review",
+      "rendered_gate": "historical reader only; no new render acceptance",
+      "witnesses": [
+        {
+          "passage_id": "PK-IQRAM-P1-PROSE",
+          "source_id": "PS-PK-IQRAM-2019",
+          "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+          "printed_page": "1",
+          "pdf_page_1based": 1,
+          "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Pakistani prose and orthography primary; does not attest specialized incompleteness terminology."
+        },
+        {
+          "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "printed_page": "39",
+          "pdf_page_1based": 44,
+          "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional proof/theory/inference definitions, not an exact Pakistani term standard or a witness to this fixed-point proof."
+        },
+        {
+          "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "printed_page": "140",
+          "pdf_page_1based": 145,
+          "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional contradiction/consistency concept evidence; does not attest omega-consistency or finitary consistency proofs."
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0313",
+      "source_path": "content/incompleteness/incompleteness-provability/introduction.tex",
+      "source_sha256": "85c5bd1864d412e461a0b7b8c3184db0af1c58940e21facdad02a4c86f56ef6c",
+      "target_sha256_before": "6e77324c31e48230f0857ec13041e08eb16da9df5d05274090fc887629548941",
+      "target_sha256_after": "6e77324c31e48230f0857ec13041e08eb16da9df5d05274090fc887629548941",
+      "paired_blocks_reviewed": 13,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "outcome": "retain translation after source, meaning and wording review",
+      "rendered_gate": "historical reader only; no new render acceptance",
+      "witnesses": [
+        {
+          "passage_id": "PK-IQRAM-P1-PROSE",
+          "source_id": "PS-PK-IQRAM-2019",
+          "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+          "printed_page": "1",
+          "pdf_page_1based": 1,
+          "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Pakistani prose and orthography primary; does not attest specialized incompleteness terminology."
+        },
+        {
+          "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "printed_page": "39",
+          "pdf_page_1based": 44,
+          "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional proof/theory/inference definitions, not an exact Pakistani term standard or a witness to this fixed-point proof."
+        },
+        {
+          "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "printed_page": "140",
+          "pdf_page_1based": 145,
+          "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional contradiction/consistency concept evidence; does not attest omega-consistency or finitary consistency proofs."
+        },
+        {
+          "passage_id": "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+          "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+          "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+          "printed_page": "112",
+          "pdf_page_1based": 123,
+          "page_image_sha256": "f8d554420bdf8bf496761c6593faa4415f7a418210131ba9473e44057daa24f3",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional diagonal-method language and sequence construction; does not attest arithmetized syntactic self-reference."
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0314",
+      "source_path": "content/incompleteness/incompleteness-provability/fixed-point-lemma.tex",
+      "source_sha256": "3e54d996af60656fa17a41135421c3d0e4d00e13cf8562a968f4af0f6c67337f",
+      "target_sha256_before": "2f9024f522b4ffe1de4ee0fc0455cafb89b10085f5dc4a8f8e1da6032b049c11",
+      "target_sha256_after": "2f9024f522b4ffe1de4ee0fc0455cafb89b10085f5dc4a8f8e1da6032b049c11",
+      "paired_blocks_reviewed": 17,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "outcome": "retain translation after source, meaning and wording review",
+      "rendered_gate": "historical reader only; no new render acceptance",
+      "witnesses": [
+        {
+          "passage_id": "PK-IQRAM-P1-PROSE",
+          "source_id": "PS-PK-IQRAM-2019",
+          "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+          "printed_page": "1",
+          "pdf_page_1based": 1,
+          "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Pakistani prose and orthography primary; does not attest specialized incompleteness terminology."
+        },
+        {
+          "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+          "source_id": "PS-AF-NIAZMAN-2022",
+          "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+          "printed_page": "39",
+          "pdf_page_1based": 44,
+          "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional proof/theory/inference definitions, not an exact Pakistani term standard or a witness to this fixed-point proof."
+        },
+        {
+          "passage_id": "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE",
+          "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+          "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+          "printed_page": "112",
+          "pdf_page_1based": 123,
+          "page_image_sha256": "f8d554420bdf8bf496761c6593faa4415f7a418210131ba9473e44057daa24f3",
+          "actual_consultation": "rendered page re-inspected during this audit",
+          "evidence_limit": "Regional diagonal-method language and sequence construction; does not attest arithmetized syntactic self-reference."
+        }
+      ]
+    }
+  ],
+  "new_segment_ledger_sha256": "1c23649100e32aad933b65873be7f11e920be79373c66f60b693162a47303d9b",
+  "new_segment_entries": 21,
+  "source_semantics_checked": true,
+  "native_witness_limits_explicit": true,
+  "source_bytes_changed": false,
+  "translation_bytes_changed": false,
+  "full_reaudit_completed": false,
+  "next_unit": "OLP-0315"
+}

@@ -4074,23 +4074,17 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
 - Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
 
-## OLSTH-031
+## OLSTH-031 — بېرته اخيستل شوې ناسمه خبرتيا
 
-- Unit: `OLP-0600`
-- Frozen source: `content/set-theory/choice/vitali.tex` (e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32) at `content/set-theory/choice/vitali.tex:159`
-- Pashto target: `ps-Arab-PK/content/set-theory/choice/vitali.tex:177`
-- Treatment: د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.
-- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
-- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+- د اصلي ماکرو له غځېدو وروسته د لومړۍ ډلې نښه هماغه تعريف شوې نښه ده؛ د ناتعريف شوې نښې پخوانۍ خبرتيا ناسمه وه او لرې شوه.
+- [اصلي متن](upstream/content/set-theory/choice/vitali.tex#L159)؛ [پښتو متن](ps-Arab-PK/content/set-theory/choice/vitali.tex#L177).
+- اصلي فورمول ساتل شوے دے. [د بياکتنې رسيد](evidence/SOL6_VITALI_MACRO_RECONCILIATION.json) پخوانۍ دعوه او د بېرته اخيستلو دليل ساتي.
 
-## OLSTH-032
+## OLSTH-032 — بېرته اخيستل شوې ناسمه خبرتيا
 
-- Unit: `OLP-0606`
-- Frozen source: `content/methods/proofs/inference-patterns.tex` (dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31) at `content/methods/proofs/inference-patterns.tex:198`
-- Pashto target: `ps-Arab-PK/content/methods/proofs/inference-patterns.tex:247`
-- Treatment: د غړيتوب د دوو چاپي عبارتونو ورک چپ اړخونه څرګند شول؛ فورمولونه نه دي پټ سم شوي.
-- Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
-- Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+- په اصلي جملو کښې څيز له نږدې متن معلوم دے؛ د غړيتوب لنډ عبارتونه سم دي. د ورک چپ اړخ پخوانۍ خبرتيا ناسمه وه او لرې شوه.
+- [اصلي متن](upstream/content/methods/proofs/inference-patterns.tex#L198)؛ [پښتو متن](ps-Arab-PK/content/methods/proofs/inference-patterns.tex#L247).
+- اصلي فورمول ساتل شوے دے. [د بياکتنې رسيد](evidence/SOL6_MEMBERSHIP_RECONCILIATION.json) پخوانۍ دعوه او د بېرته اخيستلو دليل ساتي.
 
 ## OLSTH-033
 

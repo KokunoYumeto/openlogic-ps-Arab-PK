@@ -1,0 +1,153 @@
+{
+  "schema": "ps-sol6-vitali-macro-reconciliation/1",
+  "utc": "2026-09-30T01:10:41.984801+00:00",
+  "status": "false positive withdrawn; corpus replay pending",
+  "withdrawn_claim": "OLSTH-031",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "reason": "The frozen configuration defines rotationsgroup as the literal R. Thus rotationsgroup_1 and R_1 print the identical already-defined notation. Sol6 compared TeX command names instead of their mathematical output; the undefined-index claim is a false positive. The rational-radian and rotation-domain defects are independent and remain disclosed.",
+  "source_path": "content/set-theory/choice/vitali.tex",
+  "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+  "source_line_1based": 159,
+  "macro_source_path": "upstream/open-logic-config.sty",
+  "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "macro_definition": "\\newcommand\\rotationsgroup{R}",
+  "macro_definition_line_1based": 1225,
+  "target_sha256_before": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+  "target_sha256_after": "25bb18582258b8f64e4620298306e62ca6fa059b3513749fbe70958379eb4d35",
+  "reviewed_blocks": [
+    "OLP-0600-B026"
+  ],
+  "other_unit_blocks": "not claimed re-audited by this repair",
+  "original_action": {
+    "id": "OLSTH-031",
+    "unit_id": "OLP-0600",
+    "classification": "undefined_R1_in_partition_proof",
+    "source_path": "content/set-theory/choice/vitali.tex",
+    "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+    "source_locator": "content/set-theory/choice/vitali.tex:159",
+    "source_literal_line_1based": [
+      159
+    ],
+    "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
+    "target_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+    "target_line_1based": 177,
+    "target_literal_line_1based": [
+      177
+    ],
+    "disclosure_line_1based": 193,
+    "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+    "translation_change": "د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.",
+    "reason": "The partition proof uses R_1 as an index although it previously defined rotationsgroup_1 and rotationsgroup_2 only. The target retains the exact printed identifier and discloses its undefined status.",
+    "formula_policy": "All 135 ordered active mathematical spans are exact; adjacent Pashto prose discloses the printed issue.",
+    "frozen_source_unchanged": true,
+    "reader_disclosure_language": "ps-Arab-PK",
+    "stable_audit": "PS-OWNER-SEMANTIC-20260930-VITALI",
+    "audit_artifacts": [
+      "B194_SOURCE_AUDIT.json",
+      "B194_VITALI_DRAFT_QA.json",
+      "B194_VITALI_SOURCE_PREAUDIT.md"
+    ],
+    "decision_timing": "contemporaneous B194 source-semantic comparison before acceptance",
+    "upstream_reporting": "bounded manager report after verified milestone; no direct upstream issue",
+    "proof_gap_disclosed_unrepaired": true,
+    "finite_semantic_check_sha256": "cb42b431075a8090f32092b37c516614687278fffa79c112fbe59b2eb93060bb",
+    "qa_math_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_identifier_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_macro_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_token_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_tag_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "limits": "No original-author approval claimed; the printed issue remains unrepaired."
+  },
+  "original_review": {
+    "entry_id": "DEC-OLSTH-031",
+    "entry_type": "source-correction",
+    "source_target_locations": [
+      {
+        "unit_id": "OLP-0600",
+        "source_path": "content/set-theory/choice/vitali.tex",
+        "target_path": "ps-Arab-PK/content/set-theory/choice/vitali.tex",
+        "source_literal_line_1based": [
+          159
+        ],
+        "target_literal_or_token_line_1based": [
+          177,
+          193
+        ],
+        "location_scope": "partition proof undefined index and adjacent disclosure",
+        "source_section_title": "Appendix: Vitali's Paradox",
+        "target_section_title": "ضميمه: د ويتالي پاراډوکس",
+        "exact_printed_page": null,
+        "exact_pdf_page": null,
+        "reader_artifact": null,
+        "published_reader_page_navigation": null,
+        "page_status": "pending stable pagination in a reader containing this unit"
+      }
+    ],
+    "chosen_treatment": "د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.",
+    "actual_authorities_checked": [
+      {
+        "passage_id": "PK-IQRAM-P1-PROSE",
+        "source_id": "PS-PK-IQRAM-2019",
+        "pdf_page_1based": 1,
+        "printed_page": "1",
+        "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+        "region": "Pakistan; native scholarly prose primary",
+        "inspection": "Exact rendered page visually inspected.",
+        "finding": "پاکستانۍ علمي نثر د املا او بيان شاهد دے؛ د ګروپ يا اندازې عين نوم نه ثابتوي."
+      },
+      {
+        "source_context_unit_id": "OLP-0600",
+        "source_path": "content/set-theory/choice/vitali.tex",
+        "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+        "finding": "منجمد تعريف، استدلال او فورمول د عيب د تشخيص معيار دي؛ د ليکوال تصويب نه دے."
+      }
+    ],
+    "not_found_in_checked_sources": "د اصلي ليکوال رسمي سمون نه دے موندل شوے.",
+    "rationale": "The partition proof uses R_1 as an index although it previously defined rotationsgroup_1 and rotationsgroup_2 only. The target retains the exact printed identifier and discloses its undefined status.",
+    "alternatives_for_expert_review": [
+      "چاپي ستونزه بې له يادونې پرېښودل",
+      "د منجمد فورمول يا شاخص پټه سمونه"
+    ],
+    "uncertainty": "د ليکوال رسمي تصويب نشته؛ چاپي ستونزه لا هماغسې ده.",
+    "review_question": "ايا ناتعريف شوې چاپي لنډه نښه بې له پټې سمونې ښکاره ده؟",
+    "entry_timing": "B194 contemporaneous source disclosure before acceptance",
+    "open_to_correction": true,
+    "human_review_gate": false,
+    "edition": "OpenLogic Pashto — Pakistan",
+    "locale": "ps-Arab-PK",
+    "script": "Arab",
+    "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+    "source_term_or_sense": "undefined_R1_in_partition_proof",
+    "chosen_rendering_or_treatment": "د وېش په ثبوت کښې ناتعريف شوې چاپي لنډه نښه ښکاره شوه؛ اصلي شاخص نه دے بدل شوے.",
+    "review_priority": "high",
+    "confidence": "exact frozen source and target checked; not a calibrated probability",
+    "provisional": true,
+    "please_double_check": "ايا ناتعريف شوې چاپي لنډه نښه بې له پټې سمونې ښکاره ده؟"
+  },
+  "retained_source_claims": [
+    "OLSTH-029",
+    "OLSTH-030"
+  ],
+  "historical_source_actions": 456,
+  "active_source_actions": 453,
+  "review_entries": 768
+}

@@ -899,13 +899,16 @@ def main() -> None:
         raise ValueError("not every canon-use term/segment pair is represented")
 
     raw_cache: dict[str, bytes] = {}
+    evidence_hash_cache: dict[str, str] = {}
     for decision in decisions:
         for occurrence in decision["occurrences"]:
             alignment = alignments[occurrence["semantic_unit_id"]]
             for side in ("source", "target"):
                 locator = occurrence[side]
                 file_path = REPO / locator["path"]
-                raw = raw_cache.setdefault(locator["path"], file_path.read_bytes())
+                if locator["path"] not in raw_cache:
+                    raw_cache[locator["path"]] = file_path.read_bytes()
+                raw = raw_cache[locator["path"]]
                 if sha256_bytes(raw) != locator["file_sha256"]:
                     raise ValueError(f"file hash mismatch: {locator['path']}")
                 span = locator["byte_span"]
@@ -915,7 +918,12 @@ def main() -> None:
                     raise ValueError(f"byte span mismatch: {occurrence['occurrence_id']} {side}")
             evidence = occurrence["evidence_refs"][0]
             evidence_path = REPO / evidence["path_or_uri"]
-            if not evidence_path.is_file() or sha256(evidence_path) != evidence["sha256"]:
+            evidence_key = str(evidence_path)
+            if evidence_key not in evidence_hash_cache:
+                if not evidence_path.is_file():
+                    raise ValueError(f"evidence file missing: {evidence['path_or_uri']}")
+                evidence_hash_cache[evidence_key] = sha256(evidence_path)
+            if evidence_hash_cache[evidence_key] != evidence["sha256"]:
                 raise ValueError(f"evidence hash mismatch: {evidence['path_or_uri']}")
 
     csv_check = list(csv.DictReader(io.StringIO(csv_path.read_text(encoding="utf-8-sig"))))

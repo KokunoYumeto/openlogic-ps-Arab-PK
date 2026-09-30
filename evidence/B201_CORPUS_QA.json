@@ -1,0 +1,32 @@
+{
+  "schema": "ps-b201-corpus-qa/1",
+  "utc": "2026-09-29T23:54:51.111853+00:00",
+  "status": "PASS",
+  "projected_draft_units": 607,
+  "accepted_before_finalizer": 606,
+  "staged_units": [
+    "OLP-0607"
+  ],
+  "aligned_blocks": 9006,
+  "segment_canon_uses": 5718,
+  "semantic_samples": 2360,
+  "terms": 309,
+  "review_entries": 769,
+  "source_actions_historical": 455,
+  "source_actions_active": 454,
+  "new_source_correction_ids": [],
+  "byte_identical_surfaces": {
+    "QA.json": "0d6d9b432c9bcb84f5700707fe7026cd2e27679458b925e067d51b6a6c9cbbdb",
+    "ALIGNMENT.jsonl": "98fb16c6e5bf03361c9d1c8b959798568aa7201530259c0217ade1102dd0d503",
+    "SEGMENT_CANON_USE.jsonl": "3bef0ce5356a21b574eedd4c864a4b24c3eb024771ab3b084bf5296a79fc30de"
+  },
+  "qa_scripts": {
+    "state": "91599dba83296a57a36ea5bae6eb57525388c58365182f6c3cc7911410c07c0b",
+    "repository": "c8c881d8617c244b8f2451096b7cd94e4092e403ec2dab647097e570a541127f"
+  },
+  "source_audit_sha256": "284ca7a80adc1218b0426c291b0bbe0d67f7869be010ef01bdf5c7c524d8c7db",
+  "focused_qa_sha256": {
+    "OLP-0607": "c7240461866f195e7b2695509ec6729ea777f6a4a6894519fec02be668416a9e"
+  },
+  "next_action": "Dual canonical replay from frozen607 inputs; accept only if PASS."
+}

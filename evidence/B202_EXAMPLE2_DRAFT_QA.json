@@ -1,0 +1,39 @@
+{
+  "schema": "ps-b202-example-2-draft-qa/1",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-30T00:10:16.011345+00:00",
+  "unit_id": "OLP-0608",
+  "source_path": "content/methods/proofs/example-2.tex",
+  "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+  "target_sha256": "4f62f8cfef3bd1d54369b83fcb074ff5511c042869aa42f3a5e2a924a2b6d3b1",
+  "source_bytes": 4828,
+  "target_bytes": 5950,
+  "paired_blocks": 9,
+  "changed_blocks": 4,
+  "ordered_math_spans": 86,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-034"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact; the printed unmatched outer parenthesis is disclosed adjacent to its unchanged formula.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "source_disclosure_adjacent": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}

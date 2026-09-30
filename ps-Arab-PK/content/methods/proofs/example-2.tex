@@ -1,0 +1,109 @@
+% Part: methods
+% Chapter: proofs
+% Section: example-2
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mth}{prf}{ex2}
+
+\olsection{بله بېلګه}
+
+\begin{prop}
+که $A \subseteq C$ وي، نو $A \cup (C \setminus A) = C$۔
+\end{prop}  
+
+\begin{proof}
+  فرض کړئ چې $A \subseteq C$۔ غواړو وښيو چې $A \cup (C
+  \setminus A) = C$۔
+  \begin{quote}
+    لومړے ګورو چې دا يوه شرطي دعوه ده۔ په ضمني ډول پرې عمومي
+    کمیت ټاکل شوے دے: دا قضيه د ټولو سټونو $A$ او $C$ دپاره
+    ټينګېږي۔ نو $A$ او $C$ د هر ډول سټونو متغيرونه دي۔ د داسې
+    دعوې د ثابتولو دپاره مقدم فرضوو او نتيجه ثابتوو۔
+
+    اوس د $A \subseteq C$ فرض کاروو۔ د~$\subseteq$ تعريف
+    پرانيزو: فرض دا معنا لري چې د~$A$ ټول !!{element}s د~$C$
+    !!{element}s هم دي۔ دا وليکو؛ په ټول ثبوت کښې به ترې کار اخلو۔
+  \end{quote}
+  د~$\subseteq$ له تعريفه، څرنګه چې $A \subseteq C$، د هر
+  $z$ دپاره، که $z \in A$ وي، نو $z \in C$ وي۔
+  \begin{quote}
+    د فرض ټول ورکړل شوي تعريفونه مو پرانيستل۔ اوس پايلې ته ځو۔
+    غواړو وښيو چې $A \cup (C \setminus A) = C$؛ نو د تېرې
+    بېلګې په شان ثبوت ترتيب کوو: ښيو چې د
+    $A \cup (C \setminus A)$ هر !!{element} د~$C$ !!a{element}
+    هم دے، او برعکس د $C$ هر !!{element} د $A \cup (C
+    \setminus A)$ !!a{element} هم دے۔ په لنډه يې داسې ليکو:
+    $A \cup (C \setminus A) \subseteq C$ او
+    $C \subseteq A \cup (C \setminus A)$۔ (دلته تعريف د
+    پرانيستلو پر ځاے په يوه لنډه بڼه راغونډوو، څو ثبوت اسان
+    ولوستل شي۔) دا عطف دے؛ نو دواړه برخې ثابتول پکار دي۔
+    د لومړۍ برخې، يعنې دا چې د $A \cup (C \setminus A)$ هر
+    !!{element} د~$C$ !!a{element} هم دے، د ثابتولو دپاره
+    $z \in A \cup (C \setminus A)$ د يوه هر ډول~$z$ دپاره
+    فرضوو او ښيو چې $z \in C$۔
+    د $\cup$ له تعريفه اخلو چې $z \in A$ يا
+    $z \in C \setminus A$؛ دا له
+    $z \in A \cup (C \setminus A)$ څخه راځي۔ اوس به مو د
+    دې لارې چل زده شوے وي۔
+    \end{quote}
+  $A \cup (C \setminus A) = C$ هغه وخت او يوازې هغه وخت وي
+  چې $A \cup (C \setminus A) \subseteq
+  C$ او $C \subseteq (A \cup (C \setminus A)$ وي۔ د اصلي
+  چاپي فورمول دباندې پرانيستے قوس نه دے تړل شوے؛
+  OLSTH-034 دا چاپي نيمګړتيا ثبتوي او فورمول هماغسې ساتل شوے دے۔
+  لومړے ثابتوو چې $A \cup (C \setminus A) \subseteq C$۔
+  $z \in A \cup (C
+  \setminus A)$ دې وي۔ نو يا $z \in A$ يا $z \in (C \setminus A)$۔
+  \begin{quote}
+    يوه فصل ته ورسېدو؛ له دې څخه غواړو $z \in C$ ثابت کړو۔
+    دا د حالتونو له مخې ثبوت کوو۔
+  \end{quote}
+  حالت ۱: $z \in A$۔ ځکه چې د هر $z$ دپاره، که $z \in A$ وي،
+  نو $z \in C$ وي، دلته هم $z \in C$ لرو۔
+  \begin{quote}
+    دلته مو هغه مخکې ليکلے حقيقت وکاراوه چې د قضیې له
+    $A \subseteq C$ فرضه راغلے وو۔ لومړے حالت بشپړ شو؛ اوس
+    دويم حالت، $z \in (C
+    \setminus A)$، ګورو۔ په ياد ولرئ چې $C \setminus A$ د
+    دوو سټونو \emph{تفاضل} ښيي؛ يعنې د~$C$ د هغو ټولو
+    !!{element}s سټ چې د~$A$ !!{element}s نه دي۔ خو د $C$
+    هر !!{element} چې په~$A$ کښې نه وي، په ځانګړې توګه
+    د~$C$ !!a{element} خو وي۔
+  \end{quote}
+  حالت ۲: $z \in (C \setminus A)$۔ دا معنا لري چې $z \in C$
+  او $z \notin A$۔ نو په ځانګړې توګه $z \in C$۔
+  \begin{quote}
+    ښه، لومړے لوری مو ثابت کړ۔ اوس دويم لوری: دلته
+    $C \subseteq A \cup (C \setminus
+    A)$ ثابتوو۔ نو فرضوو چې $z \in C$ او ښيو چې
+    $z \in A \cup (C \setminus A)$۔
+  \end{quote}
+  اوس $z \in C$ دې وي۔ غواړو وښيو چې $z \in A$ يا
+  $z \in C \setminus A$۔
+  \begin{quote}
+    د $A$ ټول !!{element}s د $C$ !!{element}s هم دي؛ او
+    $C \setminus A$ د هغو ټولو شيانو سټ دے چې د $C$
+    !!{element}s دي خو د $A$ نه دي۔ له دې ښکاري چې $z$
+    يا په $A$ کښې دے يا په $C
+    \setminus A$ کښې۔ که لا مو د دې پايلې وجه نه وي پېژندلې،
+    دا ګام ښايي روښانه نه وي۔ غوره ده چې ګام په ګام يې ثابت
+    کړو۔ يو ساده حقيقت کار راکوي چې بې له ثبوته يې ويلے شو:
+    $z \in A$ يا $z \notin A$۔ دې ته «د منځني حالت د ايستلو
+    اصل» وايي: د هر بيان~$p$ دپاره، يا $p$ رښتيا وي يا يې نفي
+    رښتيا وي۔ (دلته $p$ دا بيان دے چې $z \in A$۔) دا فصل دے؛
+    نو بيا د حالتونو له مخې ثبوت کارولے شو۔
+  \end{quote}
+  يا $z \in A$ يا $z \notin A$۔ په لومړي حالت کښې
+  $z \in A \cup
+  (C \setminus A)$۔ په دويم حالت کښې $z \in C$ او
+  $z \notin A$؛ نو $z \in C \setminus A$۔ بيا
+  $z \in A \cup (C \setminus A)$ هم دے۔
+  \begin{quote}
+    ثبوت بشپړ شو: ومو ښودل چې $A \cup (C \setminus A) = C$۔
+  \end{quote}
+\end{proof}
+
+\end{document}

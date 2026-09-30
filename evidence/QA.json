@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 606,
-    "structural_pass": 606,
+    "draft_units": 608,
+    "structural_pass": 608,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B200-INFERENCE-PATTERNS",
+  "batch": "PS-B202-EXAMPLE2",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -19390,7 +19390,7 @@
       "unit_id": "OLP-0600",
       "path": "content/set-theory/choice/vitali.tex",
       "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
-      "translation_sha256": "c2da607d1e92cc53ef755d27a26143ae28d6a14a62304597bff863ab1c3f4d51",
+      "translation_sha256": "25bb18582258b8f64e4620298306e62ca6fa059b3513749fbe70958379eb4d35",
       "source_blocks": 37,
       "target_blocks": 37,
       "checks": {
@@ -19412,8 +19412,7 @@
       "extra_locale_macros": {},
       "source_correction_ids": [
         "OLSTH-029",
-        "OLSTH-030",
-        "OLSTH-031"
+        "OLSTH-030"
       ],
       "status": "structural-pass"
     },
@@ -19556,7 +19555,7 @@
       "unit_id": "OLP-0606",
       "path": "content/methods/proofs/inference-patterns.tex",
       "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
-      "translation_sha256": "7a414633d110b202ef594a31be0afbfa1acddd60a68ee279df2d3ddafd85f032",
+      "translation_sha256": "673e263e10874116c61f9dfb9975e7ee6bd967006c967ff9841c05e7dff94b0c",
       "source_blocks": 46,
       "target_blocks": 46,
       "checks": {
@@ -19577,8 +19576,63 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLSTH-032",
         "OLSTH-033"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0607",
+      "path": "content/methods/proofs/example-1.tex",
+      "source_sha256": "d9536cc5ffc9bcaa7dee417fe8bbfb1c7f7dc99a5abec3fdf5fd58ea4593922a",
+      "translation_sha256": "b33f3d1db433589f0148e8029574959fb11d6d29bb8844eeb929e9456c6e88a0",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0608",
+      "path": "content/methods/proofs/example-2.tex",
+      "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+      "translation_sha256": "4f62f8cfef3bd1d54369b83fcb074ff5511c042869aa42f3a5e2a924a2b6d3b1",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-034"
       ],
       "status": "structural-pass"
     }
@@ -33105,8 +33159,8 @@
     {
       "unit_id": "OLP-0600",
       "passage": "OLP-0600-B026",
-      "reverse_paraphrase": "The proof defines two unions, invokes the coverage and doubling claims, and prints an undefined R1 index.",
-      "finding": "منجمد اصلي او پښتو بلاکونه د کمّي کوونکو، ګرځونونو، اندازې، فورمولونو او حوالو له مخې پرتله شول."
+      "reverse_paraphrase": "The proof defines two unions and invokes coverage and doubling. The source macro expands to R, so the R1 index is exactly the already-defined rotation half.",
+      "finding": "د ماکرو اصلي تعريف وکتل شو؛ د ناتعريف شوې نښې پخوانۍ دعوه ناسمه وه. نورې رياضيکي ستونزې جلا پاتې دي."
     },
     {
       "unit_id": "OLP-0600",
@@ -33188,9 +33242,9 @@
     },
     {
       "unit_id": "OLP-0600",
-      "passage": "undefined-R1",
-      "reverse_paraphrase": "The printed R1 index is not defined by the earlier rotation-half names.",
-      "finding": "نږدې منجمد تعريف، پښتو بيان او د دعوې منطقي ساحه جلا وکتل شوه."
+      "passage": "checked-R1-macro",
+      "reverse_paraphrase": "The frozen rotationsgroup macro prints R, making R1 the defined first rotation half. No undefined-symbol issue exists.",
+      "finding": "منجمد ماکرو د نښې هويت ثابتوي؛ خبرتيا لرې شوه، فورمول نه دے بدل شوے."
     },
     {
       "unit_id": "OLP-0600",
@@ -33555,8 +33609,8 @@
     {
       "unit_id": "OLP-0606",
       "passage": "OLP-0606-B031",
-      "reverse_paraphrase": "Definitions reduce the inclusion to a universal conditional; two printed bare membership spans lack left arguments and are disclosed.",
-      "finding": "منجمد اصلي او پښتو بلاک د شرط، سور، شاهد، حالت او فورمول له مخې پرتله شول."
+      "reverse_paraphrase": "Definitions reduce inclusion to a universal conditional. In the source sentences x supplies the subject of in D and in E; these are legitimate relation fragments.",
+      "finding": "د بشپړې جملې له کتنې وروسته د ورک چپ اړخ پخوانۍ دعوه باطله شوه؛ فرضونه او نتيجه ساتل شوي دي."
     },
     {
       "unit_id": "OLP-0606",
@@ -33663,7 +33717,7 @@
     {
       "unit_id": "OLP-0606",
       "passage": "printed-formulas",
-      "reverse_paraphrase": "The bare membership spans and x/A nonemptiness substitution remain exact and are disclosed.",
+      "reverse_paraphrase": "The x/A nonemptiness substitution is a genuine source error, disclosed without formula alteration. Prose-supplied membership subjects are valid shorthand.",
       "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
     },
     {
@@ -33671,6 +33725,120 @@
       "passage": "invalid-intersection-proof",
       "reverse_paraphrase": "Separate existential witnesses need not be the same, so two nonempty sets may be disjoint.",
       "finding": "د ځانګړې دعوې فرضونه، عموميت او د چاپي تېروتنې حد په نږدې متن کښې وکتل شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B005",
+      "reverse_paraphrase": "The section is titled An Example.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B006",
+      "reverse_paraphrase": "The example illustrates definition expansion, conjunction, universal statements and proof by cases using union and intersection.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B007",
+      "reverse_paraphrase": "For all sets A, B and C, union of A with the intersection of B and C equals the intersection of the two unions.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B008",
+      "reverse_paraphrase": "The prose invites a proof of the preceding proposition.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B009",
+      "reverse_paraphrase": "Set equality is unpacked into two inclusions; the first inclusion begins with an arbitrary member of A union (B intersection C).",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B010",
+      "reverse_paraphrase": "The first inclusion splits into z in A and z in B intersection C; each branch yields membership in both unions and hence their intersection.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B011",
+      "reverse_paraphrase": "The first implication is concluded and the reverse inclusion is introduced with a new arbitrary member of the intersection.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B012",
+      "reverse_paraphrase": "From the intersection, z lies in both unions; the proof first splits on z in A or z in B, without reducing the conjunction to a three-way disjunction.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "OLP-0607-B013",
+      "reverse_paraphrase": "Under z in B, the second union splits into z in A or z in C; the B assumption is redundant in subcase 2a and essential in 2b, completing the reverse inclusion.",
+      "finding": "اصلي او پښتو بلاک د وېش د دواړو لورو، د هر ډول غړي، عطف، فصل او فرعي حالتونو له مخې پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "two-inclusions",
+      "reverse_paraphrase": "The set equality requires both implications, each for an arbitrary element.",
+      "finding": "د ثبوت اړوند معنايي خطر په ځانګړې توګه له اصلي متن سره وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "case-2a-redundancy",
+      "reverse_paraphrase": "In reverse inclusion subcase 2a, z in B is not needed because z in A already yields union membership.",
+      "finding": "د ثبوت اړوند معنايي خطر په ځانګړې توګه له اصلي متن سره وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0607",
+      "passage": "conjunction-not-three-way-disjunction",
+      "reverse_paraphrase": "The two union memberships are conjoined; it is incorrect to replace them with z in A or B or C.",
+      "finding": "د ثبوت اړوند معنايي خطر په ځانګړې توګه له اصلي متن سره وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "OLP-0608-B005",
+      "reverse_paraphrase": "The section is titled Another Example.",
+      "finding": "د شرطي فرض، شمول، تفاضل، دواړو لورو، نفي او چاپي فورمول معنا له اصلي متن سره پرتله شوه."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "OLP-0608-B006",
+      "reverse_paraphrase": "If A is a subset of C, then A union the difference C minus A equals C.",
+      "finding": "د شرطي فرض، شمول، تفاضل، دواړو لورو، نفي او چاپي فورمول معنا له اصلي متن سره پرتله شوه."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "OLP-0608-B007",
+      "reverse_paraphrase": "The proof assumes A subseteq C and treats the conditional as tacitly universal over arbitrary A and C.",
+      "finding": "د شرطي فرض، شمول، تفاضل، دواړو لورو، نفي او چاپي فورمول معنا له اصلي متن سره پرتله شوه."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "OLP-0608-B008",
+      "reverse_paraphrase": "The hypothesis gives inclusion of each A-member in C; equality is proved by two inclusions, the first by set-difference cases and the second by excluded middle on z in A. The unmatched printed outer parenthesis is disclosed without changing the formula.",
+      "finding": "د شرطي فرض، شمول، تفاضل، دواړو لورو، نفي او چاپي فورمول معنا له اصلي متن سره پرتله شوه."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "forward-cases",
+      "reverse_paraphrase": "If z is in A or in C minus A, either case yields z in C.",
+      "finding": "د ثبوت ځانګړے معنايي خطر او د چاپي عيب حد په نږدې متن کښې وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "reverse-excluded-middle",
+      "reverse_paraphrase": "For z in C, either z is in A or z is not; the latter gives z in C minus A.",
+      "finding": "د ثبوت ځانګړے معنايي خطر او د چاپي عيب حد په نږدې متن کښې وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0608",
+      "passage": "printed-parenthesis",
+      "reverse_paraphrase": "The outer closing parenthesis is absent in one printed inclusion formula; the stated set identity remains sound.",
+      "finding": "د ثبوت ځانګړے معنايي خطر او د چاپي عيب حد په نږدې متن کښې وکتل شو."
     }
   ],
   "builds": [
