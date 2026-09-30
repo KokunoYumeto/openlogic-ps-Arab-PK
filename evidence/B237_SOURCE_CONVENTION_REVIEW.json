@@ -1,0 +1,46 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T21:44:25.033586+00:00",
+  "status": "PASS; minimal source repairs and already valid formulas distinguished",
+  "frozen_source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "primary_contexts": [
+    {
+      "path": "upstream/content/proof-theory/natural-deduction/rules-N2.tex",
+      "sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "locator": "11-14",
+      "finding": "Implication introduction preserves the antecedent in its conditional conclusion."
+    },
+    {
+      "path": "upstream/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "locator": "97-120",
+      "finding": "Cont adds unique codes; its own proof explicitly allows Pow code sets to be larger when codes repeat."
+    }
+  ],
+  "counterexamples": [
+    {
+      "correction_id": "OLCMP-134",
+      "construction": "Let Gamma be empty and A=B=P. The assumption P entails P, but the empty context does not entail P (take P false). Implication introduction yields P -> P, matching the frozen N2 introduction rule.",
+      "exact_original_text": "$\\Gamma \\Entails !B$",
+      "exact_proposed_source_text": "$\\Gamma \\Entails !A \\lif !B$"
+    },
+    {
+      "correction_id": "OLSOL-016",
+      "construction": "Take D=N disjoint-union P(N) disjoint-union P(P(N)), X the N component and Y=D. Each member of the P(N) component codes its corresponding subset of X; all other domain members code the empty subset. Pow(Y,R,X) holds, with many repeated empty-set codes, but |Y| >= |P(P(N))| > |P(N)| = continuum. Adding the source Cont uniqueness clause gives a bijection Y -> P(X).",
+      "exact_original_text": "set~$Y$ that codes the power set of set~$X$ of size~$\\aleph_0$.",
+      "exact_proposed_source_text": "set~$Y$ that codes the power set of set~$X$ of size~$\\aleph_0$, with distinct elements of~$Y$ coding distinct subsets of~$X$."
+    }
+  ],
+  "reverified_existing_action_ids": [
+    "OLSOL-010",
+    "OLSOL-011",
+    "OLSOL-012"
+  ],
+  "whole0340_display_formulas_unchanged_from_prior_target": true,
+  "inline_X_restored_to_its_source_block": true,
+  "cantor_sentence_globally_injective_witness_still_valid": true,
+  "ch_and_nch_full_domain_scope_rechecked": true,
+  "no_optional_background_or_exercise_solution_added": true,
+  "no_illustration_assignment_from_translation": true,
+  "frozen_sources_unchanged": true
+}

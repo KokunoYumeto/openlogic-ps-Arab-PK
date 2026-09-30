@@ -42,6 +42,9 @@ TOKENS.update(
     {
         "proof": ("ثبوت", "ثبوتونه", "ثبوت", "ثبوتونو"),
         "provable": ("د ثابتولو وړ",) * 4,
+        "introduction": ("داخلولو",) * 4,
+        "elimination": ("ايستلو",) * 4,
+        "proving": ("ثابتولو",) * 4,
         "prove": ("ثابت",) * 4,
         "height": ("لوړوالے", "لوړوالي", "لوړوالي", "لوړوالو"),
         # Frozen open-logic-config.sty:1672--1678: exact diagram colours and names.

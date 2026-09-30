@@ -1,0 +1,52 @@
+{
+  "schema": "ps-access-localization/1",
+  "utc": "2026-09-30T21:47:25.939915+00:00",
+  "status": "PASS; current source, whole review and pending reader counts explicit",
+  "accepted_units": 663,
+  "reader_units": 654,
+  "native_counts": {
+    "status": "PASS",
+    "total": 299,
+    "reviewed": 30,
+    "pending": 269
+  },
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "helper_sha256": "389b07daf445fbc366761cd6493d297814dee7a3a0c37db80612f61be6589dca",
+  "localized_files": [
+    {
+      "path": "README.md",
+      "sha256": "192431331010c1ae95c07c8c5b8886c4742e2ec7946026c008b329dce9887475"
+    },
+    {
+      "path": "README.ps-Arab-PK.md",
+      "sha256": "192431331010c1ae95c07c8c5b8886c4742e2ec7946026c008b329dce9887475"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "cf8f8f51efc6f1beca63da5a3b33981cab6404a8daa6413dec2984b9e5a1a0a4"
+    },
+    {
+      "path": "EXPERT_REVIEW.md",
+      "sha256": "8864a3812342ef0e0809a89849a8cce118fd44af4e1a95743a7c6146f3d8cd7b"
+    },
+    {
+      "path": "EXPERT_REVIEW.ps-Arab-PK.md",
+      "sha256": "5da2813c0a6e03f7d10c6c755c72b31c7f1e3adc299a5626ca118d443ba6786e"
+    },
+    {
+      "path": "SOURCE_CORRECTIONS.md",
+      "sha256": "15d073fce3c59d40be2dbb88e476a9c812ffb7c21568700a71d9263678038392"
+    },
+    {
+      "path": "evidence/SOL6_REAUDIT_STATUS.ps-Arab-PK.md",
+      "sha256": "d1abb05b221a7c8daa47010857f53b3c28a4796b28e5afb425e7e89f51f8dab3"
+    }
+  ],
+  "older_explanation_localization": "incomplete; explicit",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false
+}

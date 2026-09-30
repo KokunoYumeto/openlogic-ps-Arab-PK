@@ -1,0 +1,24 @@
+{
+  "schema": "ps-reader-token-repair/1",
+  "utc": "2026-09-30T21:35:48.804592+00:00",
+  "status": "Three missing source tokens mapped; current reader replay pending",
+  "source_unit": "OLP-0663",
+  "source_sha256": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9",
+  "registered_term_family": "TERM-NATURAL-DEDUCTION",
+  "mappings": {
+    "introduction": "داخلولو",
+    "elimination": "ايستلو",
+    "proving": "ثابتولو"
+  },
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "previous_sha256": "38f5ffee62467d821726bc1eb414414f12286874bdc671b6b00b65c6d6c34f08",
+      "sha256": "69a8e9e518f390c962e7f57b0e1eac75c858224206374d36a58458f93b7da861",
+      "bytes": 61218
+    }
+  ],
+  "math_or_source_changed_by_tool": false,
+  "source_tokens_preserved": true,
+  "human_approval_claimed": false
+}

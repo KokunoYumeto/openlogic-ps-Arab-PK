@@ -6663,11 +6663,11 @@
       "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
       "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:113-120",
       "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
-      "target_line_1based": 136,
-      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "target_line_1based": 130,
+      "target_sha256": "1b73092c14325e6d463bbf081b175b7df524dd0a57032b666684e54fe02c50ea",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
-      "reason": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
+      "translation_change": "د Cont په ثبوت کښې د پوښښ له امله لږ تر لږه اندازه او د بې‌تکراره کوډونو له امله لوړې اندازې نشتوالے ساتل شوي دي؛ غلط Z د پخواني سمون له مخې X دے۔",
+      "reason": "د Cont په ثبوت کښې د پوښښ له امله لږ تر لږه اندازه او د بې‌تکراره کوډونو له امله لوړې اندازې نشتوالے ساتل شوي دي؛ غلط Z د پخواني سمون له مخې X دے۔",
       "counterexample": "Z in the displayed Pow condition is bound locally to range over subsets of X; it is not the fixed set whose entire power set is encoded.",
       "formula_policy": "Only the prose's mathematical variable changes from Z to X; the Cont definition remains unchanged.",
       "qa_math_exception": {
@@ -6698,7 +6698,27 @@
         "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:136"
       ],
       "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "revision_history": [
+        {
+          "utc": "2026-09-30T21:44:25.033586+00:00",
+          "batch": "B237",
+          "previous_source_corrections_sha256": "a27f0503b6a27681aae51c432c7dd9523f10e20ee793cfadbf77dccda7053bf2",
+          "prior_fields": {
+            "reason": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
+            "translation_change": "The proof's final phrase names subsets of s(Z), although the proposition and coding definition concern s(X). The target names s(X).",
+            "exact_original_text": null,
+            "exact_proposed_source_text": null,
+            "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15"
+          },
+          "reason": "پخوانے سمون خپلواکه بيا تصديق شو؛ کره اصل او وړانديز او پښتو دليل تازه تړل شوي دي۔"
+        }
+      ],
+      "exact_original_text": "$s(Z)$",
+      "exact_proposed_source_text": "$s(X)$",
+      "reporting_lane": "source_erratum_substantive",
+      "latest_full_reaudit": "SOL6_REAUDIT_0340.json",
+      "target_math_changed_this_reaudit": false
     },
     {
       "id": "OLSOL-011",
@@ -6708,11 +6728,11 @@
       "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
       "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:123-129",
       "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
-      "target_line_1based": 149,
-      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "target_line_1based": 144,
+      "target_sha256": "1b73092c14325e6d463bbf081b175b7df524dd0a57032b666684e54fe02c50ea",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
-      "reason": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
+      "translation_change": "د ټولې تعريف ساحې عين پيوستاري اندازه د Cont کوډونو سټ ته بشپړه دوه اړخيزه يو پر يو تابع غواړي؛ د اصل يوازې ټيټ حد ورکونکے فورمول پخوانے سمون کره دے۔",
+      "reason": "د ټولې تعريف ساحې عين پيوستاري اندازه د Cont کوډونو سټ ته بشپړه دوه اړخيزه يو پر يو تابع غواړي؛ د اصل يوازې ټيټ حد ورکونکے فورمول پخوانے سمون کره دے۔",
       "counterexample": "Take a domain larger than the continuum, a countable X, a continuum-sized Y coding P(X), and u as the identity on the whole domain. The source right-hand side holds while |Domain| differs from |Real|.",
       "formula_policy": "Cont(Y) fixes |Y| at continuum; the added image-in-Y, injection, and surjection clauses make u a bijection Domain to Y.",
       "qa_math_exception": {
@@ -6743,7 +6763,27 @@
         "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:149"
       ],
       "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "revision_history": [
+        {
+          "utc": "2026-09-30T21:44:25.033586+00:00",
+          "batch": "B237",
+          "previous_source_corrections_sha256": "a27f0503b6a27681aae51c432c7dd9523f10e20ee793cfadbf77dccda7053bf2",
+          "prior_fields": {
+            "reason": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
+            "translation_change": "The source's final proposition has only Y subseteq range(u), so it does not express Domain equinumerous with the continuum. The target requires a Cont(Y) code set and a bijection from the full domain to Y.",
+            "exact_original_text": null,
+            "exact_proposed_source_text": null,
+            "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15"
+          },
+          "reason": "پخوانے سمون خپلواکه بيا تصديق شو؛ کره اصل او وړانديز او پښتو دليل تازه تړل شوي دي۔"
+        }
+      ],
+      "exact_original_text": "\\begin{multline*}\n  \\Sat{M}{\\lexists[X][\\lexists[Y][\\lexists[R][(\\fn{Aleph}_0(X) \\land \\fn{Pow}(Y, R, X) \\land \\\\\n          \\lexists[u][(\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)] \\lif \\eq[x][y])]] \\land {} \\\\\\lforall[y][(Y(y) \\lif \\lexists[x][\\eq[y][u(x)]])])])]]]}.\n        \\end{multline*}",
+      "exact_proposed_source_text": "\\begin{multline*}\n  \\Sat{M}{\\lexists[Y][(\\fn{Cont}(Y) \\land {} \\\\\n    \\lexists[u][(\\lforall[x][Y(u(x))] \\land {}\n      \\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)] \\lif \\eq[x][y])]] \\land {} \\\\\n      \\lforall[y][(Y(y) \\lif \\lexists[x][\\eq[y][u(x)]])])])]}.\n\\end{multline*}",
+      "reporting_lane": "source_erratum_substantive",
+      "latest_full_reaudit": "SOL6_REAUDIT_0340.json",
+      "target_math_changed_this_reaudit": false
     },
     {
       "id": "OLSOL-012",
@@ -6753,11 +6793,11 @@
       "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
       "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:59-64",
       "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
-      "target_line_1based": 74,
-      "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15",
+      "target_line_1based": 56,
+      "target_sha256": "1b73092c14325e6d463bbf081b175b7df524dd0a57032b666684e54fe02c50ea",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
-      "reason": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
+      "translation_change": "Codes د فايبر عين غړي او Pow د ټولو او يوازې مطلوبو فرعي سټونو راتلل بيانوي؛ د بانديني استلزام تړونکې قوس پخوانے سمون کره دے۔",
+      "reason": "Codes د فايبر عين غړي او Pow د ټولو او يوازې مطلوبو فرعي سټونو راتلل بيانوي؛ د بانديني استلزام تړونکې قوس پخوانے سمون کره دے۔",
       "counterexample": "The source opens the second conjunct with (Y(x) lif but ends with only the inner Codes implication's closing parenthesis and two quantifier brackets.",
       "formula_policy": "A single closing parenthesis is inserted before the outer universal quantifier's closing bracket.",
       "qa_math_exception": {
@@ -6788,7 +6828,27 @@
         "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:74"
       ],
       "decision_timing": "contemporaneous B061 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "revision_history": [
+        {
+          "utc": "2026-09-30T21:44:25.033586+00:00",
+          "batch": "B237",
+          "previous_source_corrections_sha256": "a27f0503b6a27681aae51c432c7dd9523f10e20ee793cfadbf77dccda7053bf2",
+          "prior_fields": {
+            "reason": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
+            "translation_change": "The source's second Pow conjunct omits the closing parenthesis for the outer Y(x) implication. The target closes that implication without changing its operands.",
+            "exact_original_text": null,
+            "exact_proposed_source_text": null,
+            "target_sha256": "cd6226da5d1e7ec66d2d546a90a2ce739de7f3afd75be566205f6b40dd4a6d15"
+          },
+          "reason": "پخوانے سمون خپلواکه بيا تصديق شو؛ کره اصل او وړانديز او پښتو دليل تازه تړل شوي دي۔"
+        }
+      ],
+      "exact_original_text": "\\begin{multline*}\n  \\fn{Pow}(Y, R, X) \\ident \\\\\n  \\lforall[Z][(Z \\subseteq X \\lif \\lexists[x][(Y(x) \\land\n    \\fn{Codes}(x, R, Z))])] \\land {} \\\\ \\lforall[x][(Y(x) \\lif\n  \\lforall[Z][(\\fn{Codes}(x, R, Z) \\lif Z \\subseteq X)]]\n\\end{multline*}",
+      "exact_proposed_source_text": "\\begin{multline*}\n  \\fn{Pow}(Y, R, X) \\ident \\\\\n  \\lforall[Z][(Z \\subseteq X \\lif \\lexists[x][(Y(x) \\land\n    \\fn{Codes}(x, R, Z))])] \\land {} \\\\ \\lforall[x][(Y(x) \\lif\n  \\lforall[Z][(\\fn{Codes}(x, R, Z) \\lif Z \\subseteq X)])]\n\\end{multline*}",
+      "reporting_lane": "source_erratum_substantive",
+      "latest_full_reaudit": "SOL6_REAUDIT_0340.json",
+      "target_math_changed_this_reaudit": false
     },
     {
       "id": "OLLAM-001",
@@ -20613,6 +20673,110 @@
       ],
       "decision_timing": "د بشپړې سرچينې، نښه لرونکي مخالف مثال او اصلي شاهدانو له کتنې وروسته ثبت۔",
       "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-134",
+      "unit_id": "OLP-0663",
+      "classification": "implication-introduction-entailment-drops-antecedent",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/introduction.tex",
+      "source_sha256": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9",
+      "source_locator": "content/proof-theory/natural-deduction/introduction.tex:76",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/introduction.tex",
+      "target_sha256": "3073818310e828b4cf6e0b3dfbc0782137a330904a1db466801d1f5d37e2c7bc",
+      "target_line_1based": 73,
+      "disclosure_line_1based": 96,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "له فرضونو منطقي لازميت د سېکوېنټ پر دواړو خواوو د کار بنسټ دے۔ د شرط تړنې د داخلولو د اصل ناسمه پايله سمه شرط تړنه شوه؛ دواړه اصلي رسمونه عين دي۔",
+      "reason": "له فرضونو منطقي لازميت د سېکوېنټ پر دواړو خواوو د کار بنسټ دے۔ د شرط تړنې د داخلولو د اصل ناسمه پايله سمه شرط تړنه شوه؛ دواړه اصلي رسمونه عين دي۔",
+      "exact_original_text": "$\\Gamma \\Entails !B$",
+      "exact_proposed_source_text": "$\\Gamma \\Entails !A \\lif !B$",
+      "counterexample": "Let Gamma be empty and A=B=P. The assumption P entails P, but the empty context does not entail P (take P false). Implication introduction yields P -> P, matching the frozen N2 introduction rule.",
+      "formula_policy": "يوازې د شرط تړنې ثبت شوې پايله بدلېږي؛ د پيوستار ټول پخواني فورمولونه عين پاتې دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B237-NATURAL-DEDUCTION-INTRO-CONTINUUM",
+      "audit_artifacts": [
+        "B237_SOURCE_AUDIT.json",
+        "B237_FINAL_DRAFT_QA.json",
+        "B237_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma\\Entails!B$"
+        ],
+        "target_only": [
+          "$\\Gamma\\Entails!A\\lif!B$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-016",
+      "unit_id": "OLP-0340",
+      "classification": "continuum-size-prose-omits-unique-codes",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "source_sha256": "386d49b1ac96e634b3ea56980e592fdbf8bd6f5aa112e0e9e235c9835734d990",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex:96",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "target_sha256": "1b73092c14325e6d463bbf081b175b7df524dd0a57032b666684e54fe02c50ea",
+      "target_line_1based": 98,
+      "disclosure_line_1based": 114,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د طبيعي اعدادو د فرعي سټونو سټ او د حقيقي اعدادو سټ کټ مټ همشمېره دي۔ يوازې Pow کوډونه تکرارولے شي او د کوډونو اندازه لوړېدے شي؛ د پيوستار عين اندازه د بې‌تکراره کوډونو اړين شرط هم غواړي، چې اوس روښانه شوے دے۔",
+      "reason": "د طبيعي اعدادو د فرعي سټونو سټ او د حقيقي اعدادو سټ کټ مټ همشمېره دي۔ يوازې Pow کوډونه تکرارولے شي او د کوډونو اندازه لوړېدے شي؛ د پيوستار عين اندازه د بې‌تکراره کوډونو اړين شرط هم غواړي، چې اوس روښانه شوے دے۔",
+      "exact_original_text": "set~$Y$ that codes the power set of set~$X$ of size~$\\aleph_0$.",
+      "exact_proposed_source_text": "set~$Y$ that codes the power set of set~$X$ of size~$\\aleph_0$, with distinct elements of~$Y$ coding distinct subsets of~$X$.",
+      "counterexample": "Take D=N disjoint-union P(N) disjoint-union P(P(N)), X the N component and Y=D. Each member of the P(N) component codes its corresponding subset of X; all other domain members code the empty subset. Pow(Y,R,X) holds, with many repeated empty-set codes, but |Y| >= |P(P(N))| > |P(N)| = continuum. Adding the source Cont uniqueness clause gives a bijection Y -> P(X).",
+      "formula_policy": "يوازې د شرط تړنې ثبت شوې پايله بدلېږي؛ د پيوستار ټول پخواني فورمولونه عين پاتې دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B237-NATURAL-DEDUCTION-INTRO-CONTINUUM",
+      "audit_artifacts": [
+        "B237_SOURCE_AUDIT.json",
+        "B237_FINAL_DRAFT_QA.json",
+        "B237_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []
