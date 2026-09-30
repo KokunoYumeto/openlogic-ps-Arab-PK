@@ -1,0 +1,126 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T11:31:50.243659+00:00",
+  "status": "complete whole644 source/canon comparison registered; acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0644",
+      "source_path": "content/first-order-logic/completeness/maximally-consistent-sets.tex",
+      "source_bytes": 7012,
+      "source_sha256": "f2bc62fc8b385c2c68d58c5a95e5e9a18ff11820b8f63ab17810b281aeae4b51",
+      "target_bytes": 8447,
+      "target_sha256": "4291878df4532542e90bc451e88a5e7da408fcc7592e370efa762c5dc2a0ec5c",
+      "paired_blocks": 29,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "ordered_math_spans": 118,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "74a984f4132f641ef45c5c16cd1192693e0219950c0088bad0661063630dbd92",
+  "model_provenance_sha256": "8582e0b6384721b66183148ccd2bd650aa17f963f4888a7eefcfc0ff0aa4ba4d",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P140-CONSISTENCY",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P109-RELATION"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني بالغ نثر، نحو/معنا او ځايي املا؛ د اعظمي سازګارۍ عين اصطلاح نۀ تصديقوي۔",
+      "evidence_limit": "پاکستاني بالغ نثر، نحو/معنا او ځايي املا؛ د اعظمي سازګارۍ عين اصطلاح نۀ تصديقوي۔",
+      "actual_consultation": "Exact pages2,140,39,109 freshly visually read before registration; disciplinary mathematical content checked against the whole frozen source."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "140",
+      "pdf_page_1based": 145,
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "finding": "افغان سيمه‌ييز مخ د تناقض او ناسازګارۍ ثبوتي مانا ښيي؛ د اعظمي غځونې لمه نۀ ثابتوي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د تناقض او ناسازګارۍ ثبوتي مانا ښيي؛ د اعظمي غځونې لمه نۀ ثابتوي۔",
+      "actual_consultation": "Exact pages2,140,39,109 freshly visually read before registration; disciplinary mathematical content checked against the whole frozen source."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "finding": "افغان سيمه‌ييز مخ اصول، متناهي ثبوتي لړۍ او مودوس پوننس ښيي؛ د بشپړتيا ټول ثبوت نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ اصول، متناهي ثبوتي لړۍ او مودوس پوننس ښيي؛ د بشپړتيا ټول ثبوت نۀ دے۔",
+      "actual_consultation": "Exact pages2,140,39,109 freshly visually read before registration; disciplinary mathematical content checked against the whole frozen source."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "109",
+      "pdf_page_1based": 114,
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "finding": "افغان سيمه‌ييز مخ غيرتشه ساحه او د محمول اړيکيز تفسير تعريفوي؛ د صدق د لمې خپلواک ثبوت نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ غيرتشه ساحه او د محمول اړيکيز تفسير تعريفوي؛ د صدق د لمې خپلواک ثبوت نۀ دے۔",
+      "actual_consultation": "Exact pages2,140,39,109 freshly visually read before registration; disciplinary mathematical content checked against the whole frozen source."
+    }
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [
+    "DEC-PS-0644-MAXIMAL-INCLUSION"
+  ],
+  "semantic_samples_added": 24,
+  "related_prior_model_repair": "SOL6_REAUDIT_0326.json",
+  "related_repair_sha256": "e88adb659037a8c0ca3d9aa6938dc73663cbaf913c18658fdf0e7403b25691d1",
+  "unresolved": "پاتې ۷۸ واحدونه، په عين سياق کښې ټول بديلونه، بشپړ لوستونکی، EPUB، پښتو تشريحات او پراخه Sol6 بياکتنه پاتې دي۔",
+  "next_executable_action": "Dual644 corpus QA and exact canonical replay, including corrected0326; accept644 then publish. Continue645 and whole0327 review."
+}

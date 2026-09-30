@@ -105,6 +105,10 @@ for uid,consult in plan['units'].items():
  source_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa.replace('\r\n','\n')));target_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb.replace('\r\n','\n')))
  checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=identifier_source_only==expected_identifier_source and identifier_target_only==expected_identifier_target,optional_tags=tag_source_only==expected_tag_source and tag_target_only==expected_tag_target,structural_macros=macro_source_only==expected_macro_source and macro_target_only==expected_macro_target,math=source_only==expected_source and target_only==expected_target,tokens=source_tokens-target_tokens==expected_token_source and target_tokens-source_tokens==expected_token_target,nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
  checks['named_token_macros']=Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sa))==Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sb))
+ # Case labels are reader-facing prose even inside a protected math display.
+ checks['localized_case_labels']=re.search(r'\\text\{(?:if\s*|otherwise)\}',sb) is None
+ group_balance=lambda text: sum(1 if c=='{' else -1 for c in re.findall(r'(?<!\\)[{}]',re.sub(r'(?m)(?<!\\)%.*$','',text)))
+ checks['source_target_group_balance']=group_balance(sa)==group_balance(sb)
  residual=re.sub(r'(?m)(?<!\\)%.*$','',sb)
  residual=re.sub(r'(?s)\\begin\{verbatim\}.*?\\end\{verbatim\}','',residual)
  residual=re.sub(r'\\usetoken\{[^{}]*\}\{[^{}]*\}','',residual)

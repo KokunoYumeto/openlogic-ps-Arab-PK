@@ -1,0 +1,116 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: maximally-consistent-sets
+
+% Definition of maximally consistent sets. Properties of mcs required
+% for completeness proved are in maximally-consistent-sets.tex in the
+% chapter on the proof system used.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{mcs}
+\olsection{د \usetoken{P}{sentence} اعظمي سازګار سټونه}
+
+\begin{defn}[اعظمي سازګار سټ]
+\ollabel{mcs}
+د !!{sentence}s سټ~$\Gamma$ \emph{اعظمي سازګار} دے هله او يوازې هله چې
+\begin{enumerate}
+\item $\Gamma$ سازګار وي، او
+\item که $\Gamma \subsetneq \Gamma'$ وي، نو $\Gamma'$ ناسازګار وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+د پاسني تعريف يو همارز بديل دا دے: د جملو سټ $\Gamma$ \emph{اعظمي سازګار} دے هله او يوازې هله چې
+\begin{enumerate}
+\item $\Gamma$ سازګار وي، او
+\item که $\Gamma \cup \{ !A \}$ سازګار وي، نو $!A \in \Gamma$۔
+\end{enumerate}
+په بل عبارت، اعظمي سازګار سټ~$\Gamma$ ته هغه !!{sentence}s چې له وړاندې په~$\Gamma$ کښې نۀ وي، له دې پرته نۀ شو زياتولے چې پايله کښې ترې جوړ شوے لوے سټ ناسازګار شي۔
+\end{explain}
+
+\begin{explain}
+اعظمي سازګار سټونه د بشپړتيا په ثبوت کښې ځکه مهم دي چې تضمينولے شو د !!{sentence}s هر سازګار سټ~$\Gamma$ په يو اعظمي سازګار سټ~$\Gamma^*$ کښې پروت وي، او اعظمي سازګار سټ د هرې !!{sentence}~$!A$ دپاره يا $!A$ يا د هغې نفي $\lnot !A$ لري۔ دا په ځانګړي ډول د اتومي !!{sentence}s دپاره هم رښتيا دي؛ نو په داسې ژبه کښې چې په مناسبو !!{constant}s غځول شوې وي، له اعظمي سازګار سټ څخه !!a{structure} جوړولے شو، چې د !!{predicate}s تفسير ئې د دې له مخې تعريفېږي چې کومې اتومي !!{sentence}s په~$\Gamma^*$ کښې دي۔ بيا ښودلے شو چې دا !!{structure} د~$\Gamma^*$ ټولې !!{sentence}s (او ځکه د $\Gamma$ هم) رښتيا کوي۔ د دې وروستي حقيقت ثبوت غواړي چې $\lnot !A \in \Gamma^*$ هله او يوازې هله چې $!A \notin \Gamma^*$، $(!A \lor !B) \in \Gamma^*$ هله او يوازې هله چې $!A \in \Gamma^*$ يا $!B \in \Gamma^*$، او داسې نور۔
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:mcs}
+فرض کړئ چې $\Gamma$ اعظمي سازګار دے۔ نو:
+\begin{enumerate}
+\item \ollabel{prop:mcs-prov-in} که $\Gamma \Proves !A$ وي، نو $!A \in \Gamma$۔
+
+\item \ollabel{prop:mcs-either-or} د هر $!A$ دپاره يا $!A \in \Gamma$ يا $\lnot !A \in \Gamma$۔
+
+\tagitem{prvAnd}{\ollabel{prop:mcs-and} $(!A \land !B) \in \Gamma$ هله او يوازې هله چې $!A \in \Gamma$ او $!B \in \Gamma$ دواړه وي۔}{}
+
+\tagitem{prvOr}{\ollabel{prop:mcs-or} $(!A \lor !B) \in \Gamma$ هله او يوازې هله چې يا $!A \in \Gamma$ يا $!B \in \Gamma$۔}{}
+
+\tagitem{prvIf}{\ollabel{prop:mcs-if} $(!A \lif !B) \in \Gamma$ هله او يوازې هله چې يا $!A \notin \Gamma$ يا $!B \in \Gamma$۔}{}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+په ټولو لاندې برخو کښې فرض کوو چې $\Gamma$ اعظمي سازګار دے۔
+\begin{enumerate}
+\item که $\Gamma \Proves !A$ وي، نو $!A \in \Gamma$۔
+
+فرض کړئ چې $\Gamma \Proves !A$۔ برعکس فرض کړئ چې $!A \notin \Gamma$: نو ځکه چې $\Gamma$ اعظمي سازګار دے، $\Gamma \cup \{!A\}$ ناسازګار دے، ځکه نو $\Gamma \cup \{!A\} \Proves \lfalse$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-contr},prfND/{fol:ntd:prv:prop:provability-contr}}
+له مخې $\Gamma$ ناسازګار دے۔ دا د دې فرض خلاف دے چې $\Gamma$ سازګار دے۔ ځکه نو داسې نۀ شي کېدے چې $!A \notin \Gamma$؛ نو $!A \in \Gamma$۔
+
+\item د هر $!A$ دپاره يا $!A \in \Gamma$ يا $\lnot !A \in \Gamma$۔
+
+برعکس فرض کړئ چې د کوم~$!A$ دپاره $!A \notin \Gamma$ او $\lnot !A \notin \Gamma$ دواړه وي۔ ځکه چې $\Gamma$ اعظمي سازګار دے، $\Gamma \cup \{!A\}$ او $\Gamma \cup \{\lnot !A\}$ دواړه ناسازګار دي؛ نو $\Gamma \cup \{!A\} \Proves \lfalse$ او $\Gamma \cup \{\lnot !A\} \Proves \lfalse$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-exhaustive},prfND/{fol:ntd:prv:prop:provability-exhaustive}}
+له مخې $\Gamma$ ناسازګار دے، چې تناقض دے۔ نو داسې !!a{sentence}~$!A$ نۀ شي کېدے، او د هر $!A$ دپاره $!A \in \Gamma$ يا $\lnot !A \in \Gamma$۔
+
+\tagitem{defAnd}{}{%
+\iftag{probAnd}{تمرين۔}{%
+$(!A \land !B) \in \Gamma$ هله او يوازې هله چې $!A \in \Gamma$ او $!B \in \Gamma$ دواړه وي:
+
+د مخامخ جهت دپاره فرض کړئ چې $(!A \land !B) \in \Gamma$۔ نو $\Gamma \Proves !A \land !B$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-land-left},prfND/{fol:ntd:prv:prop:provability-land-left}}
+له مخې $\Gamma \Proves !A$ او $\Gamma \Proves !B$۔ د
+\olref{prop:mcs-prov-in} له مخې $!A \in \Gamma$ او $!B \in \Gamma$، لکه چې غوښتل شوي وو۔
+
+د معکوس جهت دپاره $!A \in \Gamma$ او $!B \in \Gamma$ ونيسئ۔ نو $\Gamma \Proves !A$ او $\Gamma \Proves !B$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-land-right},prfND/{fol:ntd:prv:prop:provability-land-right}}
+له مخې $\Gamma \Proves !A \land !B$۔ د \olref{prop:mcs-prov-in} له مخې $(!A \land !B) \in \Gamma$۔}}
+
+\tagitem{defOr}{}{%
+\iftag{probOr}{تمرين۔}{%
+$(!A \lor !B) \in \Gamma$ هله او يوازې هله چې يا $!A \in \Gamma$ يا $!B \in \Gamma$۔
+
+د مخامخ جهت د مقابل نقيض دپاره فرض کړئ چې $!A \notin \Gamma$ او $!B \notin \Gamma$۔ غواړو وښيو چې $(!A \lor !B) \notin \Gamma$۔ ځکه چې $\Gamma$ اعظمي سازګار دے، $\Gamma \cup \{!A\} \Proves \lfalse$ او $\Gamma \cup \{!B\} \Proves \lfalse$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-lor-left},prfND/{fol:ntd:prv:prop:provability-lor-left}}
+له مخې $\Gamma \cup \{(!A \lor !B)\}$ ناسازګار دے۔ نو $(!A \lor !B) \notin \Gamma$، لکه چې غوښتل شوي وو۔
+
+د معکوس جهت دپاره فرض کړئ چې $!A \in \Gamma$ يا $!B \in \Gamma$۔ نو $\Gamma \Proves !A$ يا $\Gamma \Proves !B$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-lor-right},prfND/{fol:ntd:prv:prop:provability-lor-right}}
+له مخې $\Gamma \Proves !A \lor !B$۔ د \olref{prop:mcs-prov-in} له مخې $(!A \lor !B) \in \Gamma$، لکه چې غوښتل شوي وو۔}}
+
+\tagitem{defIf}{}{%
+\iftag{probIf}{تمرين۔}{%
+$(!A \lif !B) \in \Gamma$ هله او يوازې هله چې يا $!A \notin \Gamma$ يا $!B \in \Gamma$:
+
+د مخامخ جهت دپاره $(!A \lif !B) \in \Gamma$ ونيسئ، او برعکس فرض کړئ چې $!A \in \Gamma$ او $!B \notin \Gamma$۔ په دغو فرضونو $\Gamma \Proves !A \lif !B$ او $\Gamma \Proves !A$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-mp},prfND/{fol:ntd:prv:prop:provability-mp}}
+له مخې $\Gamma \Proves !B$۔ خو بيا د \olref{prop:mcs-prov-in} له مخې $!B \in \Gamma$، چې د $!B \notin \Gamma$ فرض سره په تناقض کښې دے۔
+
+د معکوس جهت دپاره، اول هغه حالت وګورئ چې $!A \notin \Gamma$۔ د \olref{prop:mcs-either-or} له مخې $\lnot !A \in \Gamma$، نو $\Gamma \Proves \lnot !A$۔ د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-lif},prfND/{fol:ntd:prv:prop:provability-lif}}
+له مخې $\Gamma \Proves !A \lif !B$۔ بيا د \olref{prop:mcs-prov-in} له مخې راځي چې $(!A \lif !B) \in \Gamma$، لکه چې غوښتل شوي وو۔
+
+اوس هغه حالت وګورئ چې $!B \in \Gamma$۔ نو $\Gamma \Proves !B$، او د
+\tagrefs{prfSC/{fol:seq:prv:prop:provability-lif},prfND/{fol:ntd:prv:prop:provability-lif}}
+له مخې $\Gamma \Proves !A \lif !B$۔ د \olref{prop:mcs-prov-in} له مخې $(!A \lif !B) \in \Gamma$۔}}
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+د \olref[fol][com][mcs]{prop:mcs} ثبوت بشپړ کړئ۔
+\end{prob}
+
+\end{document}

@@ -404,6 +404,61 @@ def context(text: str) -> tuple[str, str, str, str]:
     return "", "", "", "front"
 
 
+def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[list[tuple[dict, str]], list[dict]]:
+    """Place the two completed legacy alternatives inside their own chapters.
+
+    Later source units include an entire experimental proof-theory part. They
+    require their own translated drivers and import order, not a generic tail
+    appendix or an assumption that every remaining file is an alternative.
+    """
+    primary = [(row, body) for row, body in prepared if int(row['unit_id'][-4:]) <= 642]
+    additions: dict[str, list[tuple[dict, str]]] = {}
+    records = []
+    for row, body in prepared:
+        if int(row['unit_id'][-4:]) <= 642:
+            continue
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644'}:
+            raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
+        parent = Path(row['source_path']).parent
+        chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
+        if not chapter_rows or not any(context(b)[3] == 'chapter' for r, b in chapter_rows):
+            raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
+        anchor = chapter_rows[-1][0]['unit_id']
+        part, chapter, section, role = context(body)
+        if role != 'section' or not part or not chapter or not section:
+            raise ValueError(f"alternate context is incomplete: {row['unit_id']}")
+        revised_section = section + '-' + row['unit_id'].lower().replace('-', '')
+        original_command = rf"\olfileid{{{part}}}{{{chapter}}}{{{section}}}"
+        revised_command = rf"\olfileid{{{part}}}{{{chapter}}}{{{revised_section}}}"
+        if body.count(original_command) != 1:
+            raise ValueError(f"alternate has ambiguous file identity: {row['unit_id']}")
+        before_anchors = re.findall(r'\\(?:phantomsection\\label|label)\{(olpseg:[^{}]+)\}', body)
+        body = body.replace(original_command, revised_command)
+        # Internal references follow the alternate; other chapters continue to
+        # refer to the preferred existing section. Raw fully qualified labels
+        # and explicit three-option references also require the local namespace.
+        old_prefix, new_prefix = f'{part}:{chapter}:{section}:', f'{part}:{chapter}:{revised_section}:'
+        body = body.replace(old_prefix, new_prefix)
+        body = body.replace(f'[{part}][{chapter}][{section}]', f'[{part}][{chapter}][{revised_section}]')
+        after_anchors = re.findall(r'\\(?:phantomsection\\label|label)\{(olpseg:[^{}]+)\}', body)
+        if before_anchors != after_anchors:
+            raise ValueError(f"alternate semantic anchors changed: {row['unit_id']}")
+        body = (r'\paragraph{د منجمدې سرچينې بشپړ بديل متن: \LR{' + row['unit_id'] + '}}\n') + body
+        additions.setdefault(anchor, []).append((row, body))
+        records.append({'unit_id': row['unit_id'], 'source_path': row['source_path'],
+                        'placement_after_unit': anchor, 'chapter_directory': parent.as_posix(),
+                        'original_context': [part, chapter, section],
+                        'reader_context': [part, chapter, revised_section],
+                        'policy': 'Complete alternate inside its own existing chapter; independent local labels and self references; no duplicate chapter. All semantic anchors retained. Editable source bytes unchanged.'})
+    ordered = []
+    for row, body in primary:
+        ordered.append((row, body))
+        ordered.extend(additions.get(row['unit_id'], []))
+    if sorted(row['unit_id'] for row, body in ordered) != sorted(row['unit_id'] for row, body in prepared):
+        raise ValueError('reader integration changed unit coverage')
+    return ordered, records
+
+
 def label_keys(text: str) -> set[str]:
     part, chapter, section, role = context(text)
     labels: set[str] = set()
@@ -781,6 +836,7 @@ def main() -> None:
             }
         )
 
+    prepared, alternate_integration = integrate_accepted_alternates(prepared)
     selected_labels: set[str] = set()
     for _row, body in prepared:
         overlap = selected_labels & label_keys(body)
@@ -863,6 +919,8 @@ def main() -> None:
         "part_driver_ids": part_ids,
         "chapter_driver_ids": chapter_ids,
         "chapter_count": len(chapter_ids),
+        "alternate_integration": alternate_integration,
+        "reader_unit_order": [row['unit_id'] for row, body in prepared],
         "semantic_segment_count": len(selected_segment_ids),
         "semantic_segment_anchor_encoding": "Direct page-only AUX writes via \\olpseganchor, safe inside amsmath and TikZ displays.",
         "selected_label_count": len(selected_labels),

@@ -1,0 +1,169 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T11:28:43.041190+00:00",
+  "status": "complete independent source/canon review; six actual prose omissions corrected; dual current corpus validation pending",
+  "units": [
+    {
+      "unit_id": "OLP-0326",
+      "source_path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_sha256": "be2351bde2b55b0a7446cfdfd60c62f6939a1061ffa900d9a5939305c403bfc7",
+      "target_sha256_before": "432d67aec35016406a03cc9da2f55089db52d09978c52bea811e580492faaa0e",
+      "target_sha256_after": "efed314fde4002bc8c8ae12aa0669b0bacbdd943037a7afa37e7c8742e3b5664",
+      "paired_blocks": 23,
+      "translated_blocks_reviewed": 18,
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "paired_blocks": true,
+        "all_original_case_math_unchanged": true,
+        "six_case_labels_localized": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "tokens_equal": true
+      },
+      "reviewed_math_clause_permutations": {
+        "7": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          12,
+          15
+        ],
+        "10": [
+          0,
+          1,
+          2,
+          4,
+          3,
+          5,
+          6,
+          8,
+          7,
+          9,
+          11,
+          10,
+          12,
+          13,
+          14
+        ]
+      }
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "own read-only runtime; no settings changed"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "Exact pages2,109,91 freshly visually read during this review.",
+      "evidence_limit": "پاکستاني بالغ نثر او د نحو/معنا توپير؛ د دويمې درجې عين ثبوت نۀ دے۔",
+      "finding": "پاکستاني بالغ نثر او د نحو/معنا توپير؛ د دويمې درجې عين ثبوت نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "109",
+      "pdf_page_1based": 114,
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "actual_consultation": "Exact pages2,109,91 freshly visually read during this review.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د غيرتشې ساحې او څوځايه اړيکې تفسير ښيي؛ د دويمې درجې ټولې کميت ټاکنې نۀ ثابتوي۔",
+      "finding": "افغان سيمه‌ييز شاهد د غيرتشې ساحې او څوځايه اړيکې تفسير ښيي؛ د دويمې درجې ټولې کميت ټاکنې نۀ ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P91-PROP-FUNCTION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "91",
+      "pdf_page_1based": 96,
+      "page_image_sha256": "b3ebb014b6315125d090b78f818e88c1b1d459babdaa95a2ae6db9465fdda64a",
+      "actual_consultation": "Exact pages2,109,91 freshly visually read during this review.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د پرانيستې تابع د متغيرونو او تعويض مانا ښيي؛ د ازادو پېښو د نيولو عين ثبوت نۀ دے۔",
+      "finding": "افغان سيمه‌ييز شاهد د پرانيستې تابع د متغيرونو او تعويض مانا ښيي؛ د ازادو پېښو د نيولو عين ثبوت نۀ دے۔"
+    }
+  ],
+  "segment_entries_added": 18,
+  "new_source_correction_ids": [
+    "OLSOL-013",
+    "OLSOL-014"
+  ],
+  "new_wording_choice_id": "DEC-PS-REAUDIT-0326-TEXTMATH",
+  "source_definition_checks": {
+    "printed": [
+      "\\Subst{s}{m}{y}",
+      "\\Subst{s}{M}{y}",
+      "\\Subst{s}{f}{y}"
+    ],
+    "intended": [
+      "\\Subst{s}{m}{x}(y)",
+      "\\Subst{s}{M}{X}(y)",
+      "\\Subst{s}{f}{u}(y)"
+    ],
+    "scope": "All right-side cases and prose introduction specify the intended fixed update. Preserve printed witness; disclose notation typo.",
+    "capture_check": {
+      "domain": [
+        0
+      ],
+      "free_assignment_X": [
+        0
+      ],
+      "A": "X(0)",
+      "B": "X(0)",
+      "A_and_B": true,
+      "captured_encoding": false,
+      "counterexample_reason": "Universal bound X includes empty relation; under that relation q/A/B are false and the outer implication is false.",
+      "fresh_truth_table": [
+        {
+          "A": false,
+          "B": false,
+          "fresh_encoded": false,
+          "conjunction": false
+        },
+        {
+          "A": false,
+          "B": true,
+          "fresh_encoded": false,
+          "conjunction": false
+        },
+        {
+          "A": true,
+          "B": false,
+          "fresh_encoded": false,
+          "conjunction": false
+        },
+        {
+          "A": true,
+          "B": true,
+          "fresh_encoded": true,
+          "conjunction": true
+        }
+      ],
+      "convention_limit": "Local exercise omits explicit freshness; intended connective definition is valid when the bound relation variable is chosen fresh. Not a rejection of the correct theorem."
+    }
+  },
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0326.jsonl",
+  "whole_unit_segment_snapshot_sha256": "34940ea65e99046d3f25e72dad1997bdbcaad0373b27a5ff616e4e8a0ecd7356",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "Validate corrected0326 with new general644 batch; full sequential audit next0327. Full722 remains active."
+}

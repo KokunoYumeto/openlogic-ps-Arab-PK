@@ -1,0 +1,13 @@
+{
+  "schema": "ps-concrete-reader-grouping-repair/1",
+  "utc": "2026-09-30T11:43:35.054166+00:00",
+  "finding": "Own OLAX-015 prose note consumed one of two existing tag branch closures; target had group balance+1 versus source0 and reader resolver raised unbalanced TeX argument.",
+  "unit_id": "OLP-0643",
+  "target_before_sha256": "13ff2b0a128f96817f1610d71ffb5d09c2a57d332c74ca15c035ce43fa6b70b5",
+  "target_after_sha256": "7248bf577756ef5dd0509d7219096142496ae95530e076dc03d3b9f69db10688",
+  "actual_change": "One closing brace restores the outer tagitem argument after the existing note. All words and mathematical expressions unchanged.",
+  "corpus_scope_check": "All644 accepted/staged source-target pairs checked for introduced group-balance difference; only643 differed. New dual QA check prevents recurrence. This is not proof that every original source is syntactically valid.",
+  "previous_public_commit": "723ec225dd53c534fa1a373102bf26d304d3207e",
+  "source_frozen": true,
+  "reader_accepted": false
+}
