@@ -17338,6 +17338,64 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-042",
+      "unit_id": "OLP-0618",
+      "classification": "missing_nonempty_restriction_for_strict_prefix_bracket_excess",
+      "source_path": "content/methods/induction/structural-induction.tex",
+      "source_sha256": "f57f94a62ed4aab37f569b5d56430b3756ee6e3a5281a0488cae5c233f2a62d8",
+      "source_locator": "content/methods/induction/structural-induction.tex:75",
+      "source_literal_line_1based": [
+        75
+      ],
+      "target_path": "ps-Arab-PK/content/methods/induction/structural-induction.tex",
+      "target_sha256": "e4a8aefbb2d6d3ff11a1f5c8c345405c295cbbd2e6fe34a9e67d1b6f09383f2e",
+      "target_line_1based": 87,
+      "target_literal_line_1based": [
+        87
+      ],
+      "disclosure_line_1based": 91,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د تش تار استثنا په نږدې پښتو يادونه څرګنده شوه؛ چاپي دعوه او ثبوت هماغسې دي.",
+      "reason": "چاپي تعريف هر له کيڼې خوا يو شان لنډ تار مني او تش تار نۀ باسي. په تش تار کښې دواړه قوسي شمېرونه صفر دي، نو سخت زياتوالے ناسم دے. د يوه توري تش پيل د ثبوت د لومړي حالت د «هېڅ خاصه برخه نشته» خلاف مثال هم دے. د ناتشو پيلنيو برخو دپاره دعوه او د ثبوت حالتونه سم دي؛ د يکتا لوستونتيا په بل ثبوت کښې پرتله کېدونکي ښه‌جوړ ترمونه ناتش دي، نو هغه نتيجه له دې استثنا سره نۀ خرابېږي.",
+      "counterexample": "چاپي تعريف هر له کيڼې خوا يو شان لنډ تار مني او تش تار نۀ باسي. په تش تار کښې دواړه قوسي شمېرونه صفر دي، نو سخت زياتوالے ناسم دے. د يوه توري تش پيل د ثبوت د لومړي حالت د «هېڅ خاصه برخه نشته» خلاف مثال هم دے. د ناتشو پيلنيو برخو دپاره دعوه او د ثبوت حالتونه سم دي؛ د يکتا لوستونتيا په بل ثبوت کښې پرتله کېدونکي ښه‌جوړ ترمونه ناتش دي، نو هغه نتيجه له دې استثنا سره نۀ خرابېږي.",
+      "formula_policy": "Every ordered mathematical span retained; adjacent prose note only.",
+      "affected_segments": [
+        "OLP-0618-B013",
+        "OLP-0618-B014"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "proof_gap_disclosed_unrepaired": true,
+      "stable_audit": "PS-B205-INDUCTION-COMPLETE",
+      "decision_timing": "د B205 د بشپړې سرچينې او اصلي مخونو د اوسنۍ کتنې پر وخت انتخاب.",
+      "audit_artifacts": [
+        "B205_SOURCE_AUDIT.json",
+        "B205_INDUCTION_REVIEWED_QA.json"
+      ],
+      "limits": "The defect concerns allowing an empty prefix; nonempty prefixes and the later uniqueness proof retain their stated arguments.",
+      "upstream_reporting": "authorized manager milestone only; no direct upstream report",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

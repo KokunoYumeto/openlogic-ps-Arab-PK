@@ -179,6 +179,11 @@ def record_kind(entry_type: str) -> str:
 
 
 def recording_mode(entry: dict) -> str:
+    explicit = entry.get("recording_mode")
+    if explicit is not None:
+        if explicit not in ("contemporaneous", "retrospective"):
+            raise ValueError(f"Invalid recording mode: {explicit}")
+        return explicit
     timing = entry.get("entry_timing", "").casefold()
     return "contemporaneous" if timing.startswith("contemporaneous") else "retrospective"
 
