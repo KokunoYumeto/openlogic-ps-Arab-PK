@@ -1,0 +1,43 @@
+{
+  "schema": "ps-calculus-source-preaudit/1",
+  "utc": "2026-09-30T07:53:11.028136+00:00",
+  "issues": [
+    {
+      "id": "OLSTH-047",
+      "unit_id": "OLP-0635",
+      "block": 7,
+      "classification": "fixed_derivative_used_for_varying_difference_quotient",
+      "reason": "چاپي بيان د ثابتې نقطې مشتق د زياتوالي له کمېدو سره بدلېدونکے ګڼي؛ په دې بهير کښې بدلېدونکے مقدار د توپير نسبت دے۔ نښه‌ليکنه ساتل شوه او نږدې يادونه دواړه مقدارونه جلا کوي۔",
+      "counterexample": "د پخوانۍ تابع په ثابتې نقطې c=1/2 کښې د توپير نسبت 1/4+beta/4 دے، خو مشتق 1/4 دے او د beta سره نۀ بدلېږي۔",
+      "authorities": [
+        {
+          "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+          "title": "OpenStax Calculus Volume1,3.1",
+          "locator": "The Derivative of a Function at a Point; equations3.5 and3.6; limit exists proviso"
+        }
+      ]
+    },
+    {
+      "id": "OLSTH-048",
+      "unit_id": "OLP-0635",
+      "block": 8,
+      "classification": "function_limit_definition_omits_punctured_neighborhood_condition",
+      "reason": "چاپي اپسيلون--ډېلټا شرط د واټن مثبتوالے نۀ لري، نو مرکزي نقطه هم شاملوي؛ معمول حد پر مرکزي نقطې د ارزښت شرط نۀ ږدي۔ چاپي فارمول نۀ دے بدل شوے؛ کره محدود توپير په نږدې پښتو يادونه کښې دے۔",
+      "counterexample": "g(0)=1 and g(x)=0 for x!=0 has ordinary limit0 at0. For every delta>0,x=0 satisfies the printed antecedent but its conclusion fails at epsilon=1/2. The derivative quotient is undefined at zero increment.",
+      "authorities": [
+        {
+          "url": "https://openstax.org/books/calculus-volume-1/pages/2-5-the-precise-definition-of-a-limit",
+          "title": "OpenStax Calculus Volume1,2.5",
+          "locator": "Quantifying Closeness and Definition; x!=a and0<|x-a|<delta"
+        },
+        {
+          "url": "https://web.mit.edu/wwmath/calculus/limits/formal.html",
+          "title": "MIT World Web Math: Formal Definition of Limits",
+          "locator": "Definition and paragraph about actual function value atx=a"
+        }
+      ]
+    }
+  ],
+  "exact_rational_geometry_check": "PASS: source heights9/16,57/16,33/16,17/16; slopes1,3/4,1/2; limiting slope1/4.",
+  "limits": "Only two local notational/definition defects disclosed. No modern infinitesimal impossibility or full historical attribution verification is claimed; source prose and diagrams retained."
+}

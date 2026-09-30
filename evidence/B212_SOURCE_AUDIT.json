@@ -1,0 +1,237 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T07:53:11.028136+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0633",
+      "source_path": "content/history/set-theory/set-theory.tex",
+      "source_bytes": 453,
+      "source_sha256": "ee70b24e3407317f80b68ff14169f662199c01faeb4a9e9c3d1b532f375432bb",
+      "target_bytes": 521,
+      "target_sha256": "3869e11023f7642e7b4f16613bf2bbe14ead3f6cec90ccd4a1fde7b643671cba",
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0634",
+      "source_path": "content/history/set-theory/infinitesimals.tex",
+      "source_bytes": 4466,
+      "source_sha256": "3786a8e92d38becf74effa7b233c16f9bca37d5f6b0ac90d7049e71e77118436",
+      "target_bytes": 5971,
+      "target_sha256": "54eb74acde09ad720c9d161c3691b9446a2f70d5bc0e1f15bc2679cffa3ccb83",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 25,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0635",
+      "source_path": "content/history/set-theory/limits.tex",
+      "source_bytes": 4097,
+      "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+      "target_bytes": 6825,
+      "target_sha256": "0f76b2fe3083348ede0da13923ab85a66d175fc870b1c3cfe90280aaa8675257",
+      "paired_blocks": 15,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14
+      ],
+      "ordered_math_spans": 53,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-047",
+        "OLSTH-048"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "32095285f4d6fcdb29cb864a7b43389cd34f0f51a56baa4cc61aad03c6cef2c1",
+  "model_provenance_sha256": "6b03b9cf10575de4aea6b6e23ff7b9889ae18e08cf02c7d1b4768c6dc365d02a",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "GRAMMAR-P166-SOV",
+    "AF-BUKOVSKY-P15-CAUCHY-HISTORY",
+    "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ نثر، کښې او وروستنے ے د نثر او رسم‌الخط لپاره وکارول شول؛ د حسابان عين تخصصي نومونه يا تاريخي دعوې نۀ ثابتوي۔",
+      "evidence_limit": "پاکستاني بالغ نثر، کښې او وروستنے ے د نثر او رسم‌الخط لپاره وکارول شول؛ د حسابان عين تخصصي نومونه يا تاريخي دعوې نۀ ثابتوي۔",
+      "inspection": "Actual pages consulted in this continuation; grammar page already actually read before this draft.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "فعل‌وروسته ترتيب او د جملې بشپړوونکي د بالغ نثر د جوړښت لپاره دي؛ د حسابان تخصصي نومونه نۀ تصديقوي۔",
+      "evidence_limit": "فعل‌وروسته ترتيب او د جملې بشپړوونکي د بالغ نثر د جوړښت لپاره دي؛ د حسابان تخصصي نومونه نۀ تصديقوي۔",
+      "inspection": "Actual pages consulted in this continuation; grammar page already actually read before this draft.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P15-CAUCHY-HISTORY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "15",
+      "pdf_page_1based": 26,
+      "page_image_sha256": "69dca30677dc91cdd6dfb588b17ee76a46667561256533609abab947310bb710",
+      "finding": "افغان سيمه‌ييز مخ انفينټېسيمال، کوشي، بولڅانو او وايرشټراس د حقيقي عددونو په تاريخي بيان کښې يادوي۔ د انفينټېسيمال او حد د مفهوم شاهد دے؛ د مشتق، ميلان او مماس عين پاکستانۍ اصطلاح نۀ ده۔ د هرې حقيقي لړۍ د حد چاپي مطلقه دعوه دلته رياضيکي دليل نۀ ګڼل کېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ انفينټېسيمال، کوشي، بولڅانو او وايرشټراس د حقيقي عددونو په تاريخي بيان کښې يادوي۔ د انفينټېسيمال او حد د مفهوم شاهد دے؛ د مشتق، ميلان او مماس عين پاکستانۍ اصطلاح نۀ ده۔ د هرې حقيقي لړۍ د حد چاپي مطلقه دعوه دلته رياضيکي دليل نۀ ګڼل کېږي۔",
+      "inspection": "Actual pages consulted in this continuation; grammar page already actually read before this draft.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "66",
+      "pdf_page_1based": 77,
+      "page_image_sha256": "82a75f156e7c1e259ce0c2a23bfd6e10ab701f3524186d08aba0dabb16b704ca",
+      "finding": "افغان سيمه‌ييز مخ د حقيقي عددي لړۍ حد د مثبت اپسيلون او طبيعي پيلني شاخص له مخې تعريفوي۔ د حد او ورنژدې کېدو د مفهوم شاهد دے؛ د تابع د حد لپاره د مرکزي نقطې د استثنا يا پيوستون عين تخصصي نوم شاهد نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د حقيقي عددي لړۍ حد د مثبت اپسيلون او طبيعي پيلني شاخص له مخې تعريفوي۔ د حد او ورنژدې کېدو د مفهوم شاهد دے؛ د تابع د حد لپاره د مرکزي نقطې د استثنا يا پيوستون عين تخصصي نوم شاهد نۀ دے۔",
+      "inspection": "Actual pages consulted in this continuation; grammar page already actually read before this draft.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0633": {
+      "source_numbers": {},
+      "original_numbers_equal": true,
+      "disclosed_note_identifiers_excluded": false
+    },
+    "OLP-0634": {
+      "source_numbers": {
+        "17": 2,
+        "2": 16,
+        "4": 9,
+        "1": 19,
+        "0": 13,
+        "25": 3,
+        "5": 14,
+        "3": 8,
+        "9": 6,
+        "16": 9,
+        "57": 1,
+        "33": 1,
+        "75": 1,
+        "1704": 1
+      },
+      "original_numbers_equal": true,
+      "disclosed_note_identifiers_excluded": false
+    },
+    "OLP-0635": {
+      "source_numbers": {
+        "0": 20,
+        "19": 2,
+        "1": 9,
+        "2": 14,
+        "5": 7,
+        "1817": 1
+      },
+      "original_numbers_equal": true,
+      "disclosed_note_identifiers_excluded": true
+    }
+  },
+  "new_term_ids": [
+    "TERM-CALCULUS-INFINITESIMAL",
+    "TERM-CALCULUS-DERIVATIVE",
+    "TERM-CALCULUS-CONTINUITY"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-047",
+    "OLSTH-048"
+  ],
+  "new_review_entry_ids": [
+    "TERM-CALCULUS-INFINITESIMAL",
+    "TERM-CALCULUS-DERIVATIVE",
+    "TERM-CALCULUS-CONTINUITY",
+    "DEC-OLSTH-047",
+    "DEC-OLSTH-048",
+    "DEC-B212-CALCULUS-HISTORY"
+  ],
+  "semantic_samples_added": 18,
+  "external_source_preaudit_sha256": "790526cd2b8ef57a6f10b57ed883377325dcd3fd154ed92dd16ea3f6aa9f6a89",
+  "unresolved": "بشپړ ۷۲۲ واحديز لوستونکی، EPUB، ټول معلومات او د Sol6 بشپړه خپلواکه کتنه پاتې دي۔ د TeX ځای اشغال ژباړه نۀ بندوي۔",
+  "next_executable_action": "Run dual635 corpus QA and canonical replay; accept633–635. Continue636 and independent whole-unit0321 review; compile only at a validated checkpoint via repaired guard."
+}

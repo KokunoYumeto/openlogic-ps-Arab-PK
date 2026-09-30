@@ -1,4 +1,4 @@
-param([int]$Passes = 2, [string]$BuildDirectory = (Join-Path (Split-Path $PSScriptRoot) 'build\sets'), [string[]]$DocumentBases = @('sets'), [ValidateRange(1,60000)][int]$MutexTimeoutMs = 1000)
+param([ValidateRange(1,8)][int]$Passes = 2, [string]$BuildDirectory = (Join-Path (Split-Path $PSScriptRoot) 'build\sets'), [string[]]$DocumentBases = @('sets'), [ValidateRange(1,60000)][int]$MutexTimeoutMs = 1000, [switch]$BibTeX)
 $ErrorActionPreference = 'Stop'
 function Get-PsTaskSha256([string]$TaskPath) {
     $taskHasher = [System.Security.Cryptography.SHA256]::Create()
@@ -8,6 +8,7 @@ function Get-PsTaskSha256([string]$TaskPath) {
 }
 $taskBuild = [System.IO.Path]::GetFullPath($BuildDirectory)
 foreach($taskBase in $DocumentBases) { if($taskBase -notmatch '^[a-zA-Z0-9-]+$') { throw 'Invalid document base' } }
+if($BibTeX -and $Passes -lt 3) { throw 'BibTeX requires at least three XeLaTeX passes' }
 if(Test-Path -LiteralPath (Join-Path $taskBuild 'TEX_RECEIPT.json')) {
     $taskHistory=Join-Path $taskBuild 'tex-history'
     New-Item -ItemType Directory -Path $taskHistory -Force | Out-Null
@@ -19,7 +20,7 @@ $taskOldForce = $env:FORCE_SOURCE_DATE
 $taskMutex = New-Object System.Threading.Mutex($false, 'Global\InterlanguageTeXSlotV1')
 $taskAcquired = $false
 $taskAbandoned = $false
-$taskReceipt = [ordered]@{ schema='ps-guarded-tex/1'; mutex='Global\InterlanguageTeXSlotV1'; timeout_ms=$MutexTimeoutMs; acquired=$false; abandoned_recovered=$false; passes=@(); log_checks=@(); status='not-started' }
+$taskReceipt = [ordered]@{ schema='ps-guarded-tex/1'; mutex='Global\InterlanguageTeXSlotV1'; timeout_ms=$MutexTimeoutMs; acquired=$false; abandoned_recovered=$false; passes=@(); bibliography_runs=@(); log_checks=@(); status='not-started' }
 try {
     try { $taskAcquired = $taskMutex.WaitOne($MutexTimeoutMs) } catch [System.Threading.AbandonedMutexException] { $taskAcquired=$true; $taskAbandoned=$true }
     $taskReceipt.acquired=$taskAcquired
@@ -80,6 +81,7 @@ public static class PsGuardedTex {
 }
 '@
     $taskEngine = (Get-Command xelatex.exe).Source
+    if($BibTeX) { $taskBibEngine = (Get-Command bibtex.exe).Source }
     foreach($taskBase in $DocumentBases) {
       for($taskPass=1;$taskPass -le $Passes;$taskPass++) {
         $taskCode = [PsGuardedTex]::Run($taskEngine, "-no-shell-escape -interaction=nonstopmode -halt-on-error $taskBase.tex", $taskBuild, 180)
@@ -91,6 +93,16 @@ public static class PsGuardedTex {
             $taskReceipt.passes[-1].pdf_sha256=Get-PsTaskSha256 (Join-Path $taskBuild "$taskBase.pdf")
         }
         if($taskCode -ne 0) { throw "TeX pass $taskPass failed with exit code $taskCode" }
+        if($BibTeX -and $taskPass -eq 1) {
+          $taskBibCode = [PsGuardedTex]::Run($taskBibEngine, $taskBase, $taskBuild, 180)
+          $taskBibLog = Join-Path $taskBuild "$taskBase.blg"
+          $taskBibFindings = @(Get-Content -LiteralPath $taskBibLog | Where-Object { $_ -match 'Warning|error|couldn.t|not found' })
+          $taskReceipt.bibliography_runs += @{document=$taskBase;after_pass=1;exit_code=$taskBibCode;captured_job_active_processes_after=0;log_sha256=(Get-PsTaskSha256 $taskBibLog);findings=$taskBibFindings}
+          if(Test-Path -LiteralPath (Join-Path $taskBuild "$taskBase.bbl")) {
+            $taskReceipt.bibliography_runs[-1].bbl_sha256=Get-PsTaskSha256 (Join-Path $taskBuild "$taskBase.bbl")
+          }
+          if($taskBibCode -ne 0) { throw "BibTeX failed with exit code $taskBibCode" }
+        }
       }
     }
     $taskReceipt.status='processes-completed'

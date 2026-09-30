@@ -95,25 +95,70 @@ TOKENS.update(
 )
 base.TOKENS = TOKENS
 
-CITATION_ITEMS = r"""
-\clearpage
+def bibliography_inputs(body: str, build_dir: Path) -> tuple[str, dict]:
+    """Use the exact frozen database; do not hand-select a small bibliography."""
+    source = ROOT / "upstream" / "bib" / "open-logic.bib"
+    database = source.read_text(encoding="utf-8")
+    keys = set(re.findall(r"@\w+\s*\{\s*([^,\s]+)\s*,", database))
+    cited: set[str] = set()
+    for match in re.finditer(r"\\cite[a-zA-Z]*\*?(?:\[[^\]]*\])*\{([^{}]*)\}", body):
+        cited.update(key.strip() for key in match[1].split(","))
+    missing = cited - keys
+    if missing:
+        raise ValueError(f"cited keys absent from frozen bibliography: {sorted(missing)}")
+    dependency = build_dir / "open-logic.bib"
+    dependency.write_bytes(source.read_bytes())
+    tex = r"""\clearpage
 \begin{LTR}\latinfont
-\begin{thebibliography}{99}
-\bibitem[Benacerraf(1965)]{Benacerraf1965} Paul Benacerraf. 1965. ``What Numbers Could Not Be.'' \emph{The Philosophical Review} 74(1): 47--73.
-\bibitem[Frege(1884)]{Frege1884} Gottlob Frege. 1884. \emph{Die Grundlagen der Arithmetik}. Breslau: Wilhelm Koebner.
-\bibitem[Cantor(1892)]{Cantor1892} Georg Cantor. 1892. ``Uber eine elementare Frage der Mannigfaltigkeitslehre.'' \emph{Jahresbericht der Deutschen Mathematiker-Vereinigung} 1: 75--78.
-\bibitem[Potter(2004)]{Potter2004} Michael Potter. 2004. \emph{Set Theory and Its Philosophy}. Oxford University Press.
-\bibitem[Conway(2006)]{Conway2006} John Conway. 2006. ``The Power of Mathematics.'' In \emph{Power}, Cambridge University Press.
-\bibitem[O'Connor and Robertson(2005)]{OConnorRobertson:RN} John J. O'Connor and Edmund F. Robertson. 2005. ``The Real Numbers: Stevin to Hilbert.''
-\bibitem[Katz and Katz(2012)]{KatzKatz2012} Karin Usadi Katz and Mikhail G. Katz. 2012. ``Stevin Numbers and Reality.'' \emph{Foundations of Science} 17(2): 109--123.
-\bibitem[Hilbert(2013)]{EwaldSieg2013} David Hilbert. 2013. \emph{Lectures on the Foundations of Arithmetic and Logic 1917--1933}. Edited by William Bragg Ewald and Wilfried Sieg. Springer.
-\bibitem[Dedekind(1888)]{Dedekind1888} Richard Dedekind. 1888. \emph{Was sind und was sollen die Zahlen?} Braunschweig: Vieweg.
-\bibitem[Magnus et al.(2021)]{Magnus2021} P. D. Magnus et al. 2021. \emph{Forall x: Calgary. An Introduction to Formal Logic}. Open Logic Project.
-\bibitem[Smullyan(1968)]{Smullyan1968} Raymond M. Smullyan. 1968. \emph{First-Order Logic}. New York: Springer.
-\bibitem[Zuckerman(1973)]{Zuckerman1973} Martin M. Zuckerman. 1973. ``Formation Sequences for Propositional Formulas.'' \emph{Notre Dame Journal of Formal Logic} 14(1): 134--138.
-\end{thebibliography}
-\end{LTR}
-""".strip()
+\bibliographystyle{plainnat}
+\bibliography{open-logic}
+\end{LTR}"""
+    return tex, {
+        "source_path": source.relative_to(ROOT).as_posix(),
+        "source_sha256": sha256(source),
+        "build_dependency": dependency.name,
+        "build_dependency_sha256": sha256(dependency),
+        "cited_keys": sorted(cited),
+        "database_key_count": len(keys),
+        "missing_keys": [],
+        "style": "plainnat",
+        "execution": "BibTeX inside the same acquired guarded job, after XeLaTeX pass one",
+    }
+
+
+def photo_inputs(body: str) -> tuple[str, dict, set[Path]]:
+    """Require every selected portrait, complete original credit and localization."""
+    photo_ids = sorted(set(re.findall(r"\\olphoto(?:\[[^\]]*\])?\{([a-z-]+)\}", body)))
+    assets: set[Path] = set()
+    sections: list[str] = []
+    for photo_id in photo_ids:
+        directory = ROOT / "assets" / "photos" / photo_id
+        image = directory / f"{photo_id}-small.png"
+        original = directory / f"{photo_id}-credit.tex"
+        localized = ROOT / "ps-Arab-PK" / "photocredits" / f"{photo_id}-credit.tex"
+        for path in (image, original, localized, directory / "README.md"):
+            if not path.is_file():
+                raise FileNotFoundError(f"required portrait dependency: {path.relative_to(ROOT)}")
+            assets.add(path)
+        sections.append(
+            r"\par\medskip\noindent "
+            + localized.read_text(encoding="utf-8").strip()
+            + "\n\n" + r"\textbf{د اصلي سرچينې بشپړ انتساب او شرطونه:}"
+            + "\n" + r"\begin{LTR}\latinfont\small "
+            + original.read_text(encoding="utf-8").strip()
+            + "\n" + r"\end{LTR}" + "\n"
+        )
+    if photo_ids:
+        assets.add(ROOT / "assets" / "photos" / "README.md")
+        assets.add(ROOT / "ps-Arab-PK" / "photocredits" / "INTRO.tex")
+        tex = (r"\clearpage\chapter*{د انځورونو سرچينې او د کارولو شرطونه}"
+               + "\n" + r"\addcontentsline{toc}{chapter}{د انځورونو سرچينې او د کارولو شرطونه}"
+               + "\n" + (ROOT / "ps-Arab-PK" / "photocredits" / "INTRO.tex").read_text(encoding="utf-8")
+               + "\n" + "\n".join(sections))
+    else:
+        tex = ""
+    return tex, {"photo_ids": photo_ids, "originals_and_localized_credits_complete": True,
+                 "component_terms": "Preserved per image; noncommercial permissions are not blanket CC BY 4.0."}, assets
 
 
 def sha256(path: Path) -> str:
@@ -692,14 +737,20 @@ def main() -> None:
     preamble = args.preamble.resolve()
     if not preamble.is_file() or not preamble.is_relative_to(ROOT):
         raise ValueError("reader preamble must be a file inside this repository")
+    rendered_body = "\n\n".join(rendered)
+    bibliography_tex, bibliography_record = bibliography_inputs(rendered_body, build_dir)
+    photo_tex, photo_record, photo_assets = photo_inputs(rendered_body)
+    asset_paths.update(photo_assets)
     generated = (
         preamble.read_text(encoding="utf-8")
         .replace("OLP_UPSTREAM_PATH", (ROOT / "upstream").as_posix())
         .replace("OLP_READER_UNITS", str(len(selected)))
+        .replace("OLP_ASSETS_PATH", (ROOT / "assets").as_posix())
         + "\n\n"
-        + "\n\n".join(rendered)
+        + rendered_body
         + "\n\n"
-        + CITATION_ITEMS
+        + bibliography_tex
+        + "\n\n" + photo_tex
         + "\n\n\\end{document}\n"
     )
     # Semantic segment anchors may occur inside amsmath or TikZ displays.  A
@@ -812,6 +863,8 @@ def main() -> None:
             },
         ],
         "input_files": input_files,
+        "bibliography": bibliography_record,
+        "portraits": photo_record,
         "assets": [
             {
                 "path": path.relative_to(ROOT).as_posix(),

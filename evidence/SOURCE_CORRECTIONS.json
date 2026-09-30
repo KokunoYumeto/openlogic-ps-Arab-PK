@@ -17750,6 +17750,139 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-047",
+      "unit_id": "OLP-0635",
+      "classification": "fixed_derivative_used_for_varying_difference_quotient",
+      "source_path": "content/history/set-theory/limits.tex",
+      "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+      "source_locator": "content/history/set-theory/limits.tex:16",
+      "source_literal_line_1based": [
+        16
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/limits.tex",
+      "target_sha256": "0f76b2fe3083348ede0da13923ab85a66d175fc870b1c3cfe90280aaa8675257",
+      "target_line_1based": 15,
+      "target_literal_line_1based": [
+        15
+      ],
+      "disclosure_line_1based": 15,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "اصلي فارمول او نښه‌ليکنه ساتل شوي؛ نږدې پښتو يادونه د سرچينې کره محدود توپير ښيي۔",
+      "reason": "چاپي بيان د ثابتې نقطې مشتق د زياتوالي له کمېدو سره بدلېدونکے ګڼي؛ په دې بهير کښې بدلېدونکے مقدار د توپير نسبت دے۔ نښه‌ليکنه ساتل شوه او نږدې يادونه دواړه مقدارونه جلا کوي۔",
+      "counterexample": "د پخوانۍ تابع په ثابتې نقطې c=1/2 کښې د توپير نسبت 1/4+beta/4 دے، خو مشتق 1/4 دے او د beta سره نۀ بدلېږي۔",
+      "formula_policy": "All source mathematical spans, identifiers, citations and links unchanged; adjacent explanatory prose only.",
+      "affected_segments": [
+        "OLP-0635-B007"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B212-CALCULUS-HISTORY",
+      "decision_timing": "د روانې بشپړې ژباړې پر وخت د سرچينې او رښتيا لوستل شويو مخونو پرتله۔",
+      "audit_artifacts": [
+        "B212_SOURCE_AUDIT.json",
+        "B212_LIMITS_SOURCE_PREAUDIT.json",
+        "B212_CALCULUS_HISTORY_DRAFT_QA.json"
+      ],
+      "external_authorities": [
+        {
+          "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative",
+          "title": "OpenStax Calculus Volume1,3.1",
+          "locator": "The Derivative of a Function at a Point; equations3.5 and3.6; limit exists proviso"
+        }
+      ],
+      "limits": "Only two local notational/definition defects disclosed. No modern infinitesimal impossibility or full historical attribution verification is claimed; source prose and diagrams retained.",
+      "upstream_reporting": "authorized manager milestone only; no direct upstream message",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-048",
+      "unit_id": "OLP-0635",
+      "classification": "function_limit_definition_omits_punctured_neighborhood_condition",
+      "source_path": "content/history/set-theory/limits.tex",
+      "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+      "source_locator": "content/history/set-theory/limits.tex:22",
+      "source_literal_line_1based": [
+        22
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/limits.tex",
+      "target_sha256": "0f76b2fe3083348ede0da13923ab85a66d175fc870b1c3cfe90280aaa8675257",
+      "target_line_1based": 17,
+      "target_literal_line_1based": [
+        17
+      ],
+      "disclosure_line_1based": 30,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "اصلي فارمول او نښه‌ليکنه ساتل شوي؛ نږدې پښتو يادونه د سرچينې کره محدود توپير ښيي۔",
+      "reason": "چاپي اپسيلون--ډېلټا شرط د واټن مثبتوالے نۀ لري، نو مرکزي نقطه هم شاملوي؛ معمول حد پر مرکزي نقطې د ارزښت شرط نۀ ږدي۔ چاپي فارمول نۀ دے بدل شوے؛ کره محدود توپير په نږدې پښتو يادونه کښې دے۔",
+      "counterexample": "g(0)=1 and g(x)=0 for x!=0 has ordinary limit0 at0. For every delta>0,x=0 satisfies the printed antecedent but its conclusion fails at epsilon=1/2. The derivative quotient is undefined at zero increment.",
+      "formula_policy": "All source mathematical spans, identifiers, citations and links unchanged; adjacent explanatory prose only.",
+      "affected_segments": [
+        "OLP-0635-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B212-CALCULUS-HISTORY",
+      "decision_timing": "د روانې بشپړې ژباړې پر وخت د سرچينې او رښتيا لوستل شويو مخونو پرتله۔",
+      "audit_artifacts": [
+        "B212_SOURCE_AUDIT.json",
+        "B212_LIMITS_SOURCE_PREAUDIT.json",
+        "B212_CALCULUS_HISTORY_DRAFT_QA.json"
+      ],
+      "external_authorities": [
+        {
+          "url": "https://openstax.org/books/calculus-volume-1/pages/2-5-the-precise-definition-of-a-limit",
+          "title": "OpenStax Calculus Volume1,2.5",
+          "locator": "Quantifying Closeness and Definition; x!=a and0<|x-a|<delta"
+        },
+        {
+          "url": "https://web.mit.edu/wwmath/calculus/limits/formal.html",
+          "title": "MIT World Web Math: Formal Definition of Limits",
+          "locator": "Definition and paragraph about actual function value atx=a"
+        }
+      ],
+      "limits": "Only two local notational/definition defects disclosed. No modern infinitesimal impossibility or full historical attribution verification is claimed; source prose and diagrams retained.",
+      "upstream_reporting": "authorized manager milestone only; no direct upstream message",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

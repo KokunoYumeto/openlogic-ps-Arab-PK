@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 632,
-    "structural_pass": 632,
+    "draft_units": 635,
+    "structural_pass": 635,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B210-REMAINING-BIOGRAPHIES",
+  "batch": "PS-B212-CALCULUS-HISTORY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -20343,6 +20343,112 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0633",
+      "path": "content/history/set-theory/set-theory.tex",
+      "source_sha256": "ee70b24e3407317f80b68ff14169f662199c01faeb4a9e9c3d1b532f375432bb",
+      "translation_sha256": "3869e11023f7642e7b4f16613bf2bbe14ead3f6cec90ccd4a1fde7b643671cba",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "path": "content/history/set-theory/infinitesimals.tex",
+      "source_sha256": "3786a8e92d38becf74effa7b233c16f9bca37d5f6b0ac90d7049e71e77118436",
+      "translation_sha256": "54eb74acde09ad720c9d161c3691b9446a2f70d5bc0e1f15bc2679cffa3ccb83",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "contemnendi",
+        "errores",
+        "in",
+        "mathematicis",
+        "minimi",
+        "non",
+        "qu",
+        "rebus",
+        "sunt"
+      ],
+      "allowed_residual_english": [
+        "contemnendi",
+        "errores",
+        "in",
+        "mathematicis",
+        "minimi",
+        "non",
+        "qu",
+        "rebus",
+        "sunt"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "path": "content/history/set-theory/limits.tex",
+      "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+      "translation_sha256": "0f76b2fe3083348ede0da13923ab85a66d175fc870b1c3cfe90280aaa8675257",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-047",
+        "OLSTH-048"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -35801,6 +35907,114 @@
       "passage": "OLP-0320-B014",
       "reverse_paraphrase": "The exercise distinguishes four assertions: P1 external closure, internalA→ProvA, externalreflection, and internalreflection. InternalA→ProvA is not true for all sentences; positiveSigma1 sentences are a familiar sufficientscope for standard arithmetic provability, whereas internalreflection is equivalentto derivingA byLöb. Exercise wording/questions retained without inventing answers in the translated text.",
       "finding": "د Sol6 بشپړه نوې خپلواکه کتنه؛ د وروستۍ حوالې پاتې پړاو څرګند شو، نور ټول ثبوت، فرضونه او نثر کره وساتل شول."
+    },
+    {
+      "unit_id": "OLP-0633",
+      "passage": "OLP-0633-B004",
+      "reverse_paraphrase": "Chapter title covers set-theory history and mythology; it does not endorse myth as proof.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0633",
+      "passage": "OLP-0633-B005",
+      "reverse_paraphrase": "Editorial attributes the historical prelude to Tim Button’s Open Set Theory text.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B003",
+      "reverse_paraphrase": "Title names infinitesimals and differentiation.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B004",
+      "reverse_paraphrase": "Independent late17th-century discovery; differentiation means local rate of change or gradient.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B005",
+      "reverse_paraphrase": "Exact quadratic, black graph and axes retained.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B008",
+      "reverse_paraphrase": "Exact three triangles retain vertices, base lengths3/2/1 and slopes1/3/4/1/2; these are secant approximations atc=1/2.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B009",
+      "reverse_paraphrase": "Historical infinitesimal proposal gives the first derivative; no claim about modern hyperreal models added.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B010",
+      "reverse_paraphrase": "Zero increment divides by zero; positive real increment yields approximation rather than exact tangent gradient.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B011",
+      "reverse_paraphrase": "Full Berkeley argument demands one stable interpretation, distinguishes engineering approximation from mathematics, preserves both paragraph citations, Latin original/Pashto gloss and Newton1704 title attribution.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0634",
+      "passage": "OLP-0634-B012",
+      "reverse_paraphrase": "Incisive philosophical objections coexist with historically successful calculus use.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B005",
+      "reverse_paraphrase": "Title announces rigorous limits.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B006",
+      "reverse_paraphrase": "Standard historical solution avoids infinitesimals.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B007",
+      "reverse_paraphrase": "Printed derivative-for-quotient wording retained with bounded explicit correction; fixed derivative differs from varying approximation.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B008",
+      "reverse_paraphrase": "All epsilon/delta quantifier order and original defective displayed antecedent preserved. Adjacent note explains excluded center with counterexample; absolute value definitions and graph remain exact.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B011",
+      "reverse_paraphrase": "Informal error/distance gloss and displayed strict inequalities retained.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B012",
+      "reverse_paraphrase": "Derivative is the quotient limit where it exists; abs-value at0 has right slope1 and left slope-1, hence no derivative; differentiability iff this limit exists.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B013",
+      "reverse_paraphrase": "Input/output precision formulation, difference-to0 test and equality of value/limit preserved. Continuity differs from differentiability.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0635",
+      "passage": "OLP-0635-B014",
+      "reverse_paraphrase": "Set-theory focus limits the analysis digression;19th-century rigorous limits provide a way to proceed without infinitesimals.",
+      "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
     }
   ],
   "builds": [

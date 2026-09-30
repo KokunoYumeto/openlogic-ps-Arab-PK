@@ -4175,3 +4175,17 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 د لوب د ثبوت وروستۍ چاپي حواله L-8 او L-12 ښيي. L-8 د پايلې د ثبوت‌وړتيا څخه پايله غواړي، خو L-12 د ثابت ټکي د ثبوت‌وړتيا بيان دے. پخپله L-9 هماغه ثابت ټکي ته مناسب شرط لري او له L-12 سره مستقيمه مودس پوننس ورکوي؛ يا L-7 بيا L-8 کارول کېږي. دا د حوالې پاتې منځنی پړاو دے، د قضيې غلطه پايله نۀ ده. ټولې اصلي حوالې او صوري کرښې وساتل شوې او نږدې پښتو يادونه سمه اړيکه څرګندوي.
 
 [د لوب بشپړ پښتو ثبوت](ps-Arab-PK/content/incompleteness/incompleteness-provability/lob-thm.tex) او [د ټول واحد نوې کتنه](evidence/SOL6_REAUDIT_0320.json) وګورئ؛ L-9 او L-12 مناسب مقدم لري. دا د صحيح قضيې د ردولو ادعا نۀ ده.
+
+
+### OLSTH-047
+
+چاپي بيان د ثابتې نقطې مشتق د زياتوالي له کمېدو سره بدلېدونکے ګڼي؛ په دې بهير کښې بدلېدونکے مقدار د توپير نسبت دے۔ نښه‌ليکنه ساتل شوه او نږدې يادونه دواړه مقدارونه جلا کوي۔
+
+[Exact bounded source adjudication](evidence/B212_LIMITS_SOURCE_PREAUDIT.json); [Pashto source-faithful text](ps-Arab-PK/content/history/set-theory/limits.tex).
+
+
+### OLSTH-048
+
+چاپي اپسيلون--ډېلټا شرط د واټن مثبتوالے نۀ لري، نو مرکزي نقطه هم شاملوي؛ معمول حد پر مرکزي نقطې د ارزښت شرط نۀ ږدي۔ چاپي فارمول نۀ دے بدل شوے؛ کره محدود توپير په نږدې پښتو يادونه کښې دے۔
+
+[Exact bounded source adjudication](evidence/B212_LIMITS_SOURCE_PREAUDIT.json); [Pashto source-faithful text](ps-Arab-PK/content/history/set-theory/limits.tex).

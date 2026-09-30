@@ -1,0 +1,96 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T08:00:37.224044+00:00",
+  "status": "complete independent source and canon re-audit; justified retained text; no new reader acceptance",
+  "units": [
+    {
+      "unit_id": "OLP-0321",
+      "source_path": "content/incompleteness/incompleteness-provability/tarski-thm.tex",
+      "source_sha256": "f967d78857eb1d7c618a36065f6506072ade75b3f30fefe3dc4728be74da2226",
+      "target_sha256_before": "6ce00b5269677fefbfd23be53d3a34b546e7cdd886a1dd584a483f04770510a9",
+      "target_sha256_after": "6ce00b5269677fefbfd23be53d3a34b546e7cdd886a1dd584a483f04770510a9",
+      "paired_blocks": 20,
+      "translated_blocks_reviewed": 15,
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "exact_contextual_math_permutations_verified": true,
+        "source_and_target_unchanged": true
+      },
+      "source_math_order_equal_diagnostic": false,
+      "reviewed_math_clause_permutations": {
+        "13": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "14": [
+          0,
+          1,
+          2,
+          4,
+          3,
+          5,
+          6,
+          8,
+          7
+        ]
+      },
+      "permutation_reason": "B013 scopes the same equation by all naturalx before giving it; B014 places the standard model before the defined relation. Variable roles, scope, every formula body and displayed order unchanged."
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only own runtime; no settings changed"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "Native page freshly viewed and read during complete independent review in this continuation.",
+      "evidence_limit": "Pakistani adult expository prose and orthography; no exact Tarski specialist label."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "24",
+      "pdf_page_1based": 29,
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "actual_consultation": "Native page freshly viewed and read during complete independent review in this continuation.",
+      "evidence_limit": "Regional valuation/consequence distinction; not arithmetic truth-definability or proof of the diagonal lemma."
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "Native page freshly viewed and read during complete independent review in this continuation.",
+      "evidence_limit": "Regional axiom, proof sequence and modus ponens; not proof that Q is true in standard N."
+    }
+  ],
+  "segment_entries_added": 15,
+  "new_source_correction_ids": [],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0321.jsonl",
+  "whole_unit_segment_snapshot_sha256": "d0d8cb172074eafa2627159275262a0cd6902221de61863bb17ff3d24f43cf20",
+  "interpretive_limits": "Diagonal expressive strength scopes the final language claim. Semantic versus syntactic notions, partiality, numerals and external negation reviewed; no unsupported new source-warning or theorem added.",
+  "evidence_timing": "Fresh retrospective independent review; original production attributions are preserved.",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "Continue general636 and sequential Sol6 whole-unit0322; full722 edition remains active."
+}

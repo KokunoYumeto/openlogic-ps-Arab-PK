@@ -1,0 +1,31 @@
+{
+  "schema": "ps-reader-dependency-repair/1",
+  "utc": "2026-09-30T07:15:47.546348+00:00",
+  "status": "reader dependencies and localized provenance repaired; TeX not yet attempted",
+  "findings": [
+    "Inherited twelve-item bibliography omitted111 of123 cited keys; use full frozen database",
+    "Inherited preamble lacked olphoto; require every portrait and original/localized attribution",
+    "Inherited preamble remained556 and omitted current GPT-6.1 Sol/Ultra work"
+  ],
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "ebdb0bc885fe92fb34a50505139f4d0b81dc8ab68eff5783fa439b73548e121d"
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62"
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v099.tex",
+      "sha256": "8e57d141ab4ac8cb9a8a988f57a6eac5d45e89ad7818056bce2c3773f6d13f6f"
+    }
+  ],
+  "localized_credit_units": 11,
+  "credit_mapping_sha256": "7822aad30e4fbd523cbcbc1cff8ec0835bf2df1e48caf77e0dd4d478ad9baa9b",
+  "original_image_and_credit_acquisition_sha256": "3262a07a252ad14fa3bf7e921f87585d8b753890f1b3024bc6c924cfb875267f",
+  "source_and_existing_translation_bytes_changed": false,
+  "tex_policy": "One bounded global mutex acquisition; captured XeLaTeX/BibTeX processes, all passes and logs while held; no polling when unavailable.",
+  "new_reader_accepted": false,
+  "translation_next": "OLP-0633; Sol6 review OLP-0321"
+}
