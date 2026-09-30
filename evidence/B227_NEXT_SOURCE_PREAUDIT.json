@@ -1,0 +1,72 @@
+{
+  "schema": "ps-next-source-preadjudication/1",
+  "utc": "2026-09-30T14:59:40.519235+00:00",
+  "status": "whole653/654 source read; four precise653 findings, target drafting/registration pending",
+  "source_units": [
+    {
+      "unit_id": "OLP-0653",
+      "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "actual_whole_source_read": true
+    },
+    {
+      "unit_id": "OLP-0654",
+      "source_path": "content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex",
+      "source_sha256": "a48f8fbe50c76b8ff8f0dfac091ee98f8e4a9e893637364e66c589945e4a8474",
+      "actual_whole_source_read": true
+    }
+  ],
+  "confirmed653_findings": [
+    {
+      "kind": "universal_quantifier_instead_of_existential_halving_witness",
+      "source_line_1based": 139,
+      "source_fragment": "\\lforall[y][\\lforall[x][(y = x + x \\lor y = x + x + \\Obj{0}')]]",
+      "finding": "The prose says every y has a half witness x; the displayed universal x makes the claim false at y=0,x=1. Correct inner quantifier is existential.",
+      "counterexample": {
+        "y": 0,
+        "x": 1,
+        "first_equality": false,
+        "second_equality": false
+      },
+      "required_target_treatment": "Replace that one inner quantifier, preserve remaining expression, register exact math exception and adjacent Pashto disclosure."
+    },
+    {
+      "kind": "standard_block_is_omega_not_doubly_infinite_Z",
+      "source_line_1based": 124,
+      "finding": "The standard block has least element0 and order type omega. Only nonstandard blocks are two-sided integer chains.",
+      "required_target_treatment": "Restrict the source chain claim to nonstandard blocks with adjacent disclosure; do not falsely change the final omega+Z*Q characterization."
+    },
+    {
+      "kind": "strict_quotient_order_requires_distinct_blocks",
+      "source_line_1based": 131,
+      "finding": "0<1 yet both have the same standard block. Strict comparison of quotient blocks requires x not approximately y.",
+      "required_target_treatment": "Make the distinct-block premise explicit in Pashto and disclose the source omission."
+    },
+    {
+      "kind": "successor_proof_repeats_weaker_premise",
+      "source_line_1based": 120,
+      "finding": "After ruling out xstar=y the intended conclusion is xstar<y; source repeats x<y. This repeated weaker statement is not a false theorem, but leaves the successor step unstated.",
+      "required_target_treatment": "State the intended successor conclusion, record precise math change/disclosure rather than inventing a false inequality claim."
+    }
+  ],
+  "other_contextual_wording": [
+    "Nonlogical symbol roles include predicate/function/constant, not constants alone. The isomorphism argument concerns the original arithmetic reduct when c is newly added. Contextual clarification must not invent an incorrect general theorem.",
+    "Final pure-order definability proof uses parameter-free A(x), or fixes any standard parameters; original finite/cofinite conclusion and assigned exercises remain intact."
+  ],
+  "0331_scope_adjudication": {
+    "source_and_current_target_whole_read": true,
+    "source_sha256": "413d8f1950ae13bf318f29e071b196cbc1971aa378d2aa94ac79e1342baf6e2c",
+    "actual_definition_source": "content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
+    "definition_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d",
+    "finding": "Actual foundational source specifies a denumerable standard vocabulary indexed by natural numbers and says its results concern this standard language or restrictions. Do not invent a missing countable-language error from an uncountable-signature counterexample outside that stated context. Verify effective-proof-system scope and full second-order semantics during whole0331 review before judging any omission.",
+    "whole0331_reaudit_completed": false
+  },
+  "current_model_gate": {
+    "helper_sha256": "99a489b8d8e48b52e75f8533650dc99efe5da4829ace8177c3b3b0d9acc44377",
+    "actual_helper_read": true,
+    "finding": "The current helper requires a nonempty actual model identifier and Ultra effort; it imposes no fixed model name and never changes settings. Own B226 runtime is GPT-6.1 Sol/Ultra. This is a current-helper audit, not a claim that every historical workflow file has been reviewed."
+  },
+  "source_frozen_unchanged": true,
+  "new_source_corrections_registered": [],
+  "next_action": "Translate653/654 from whole sources already read, correcting nonstandard-arithmetic quantifier/block issues; review whole0331 in the actual standard countable-language context. Full722 reader/EPUB/localized metadata continue; no new session/worker/effort change."
+}

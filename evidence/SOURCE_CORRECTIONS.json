@@ -19030,6 +19030,194 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-105",
+      "unit_id": "OLP-0653",
+      "classification": "universal_quantifier_instead_of_existential_halving_witness",
+      "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "source_locator": "content/model-theory/basics/nonstandard-arithmetic.tex:139",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/nonstandard-arithmetic.tex",
+      "target_sha256": "fe5ab3404d9d3db78529491ca1b1e5a17835c900403a832b14a4f1a7be98c72f",
+      "target_line_1based": 51,
+      "disclosure_line_1based": 76,
+      "mode": "precise-formula-or-hypothesis-repair-plus-adjacent-Pashto-source-disclosure",
+      "translation_change": "د هر عدد د نيمې برخې يو شاهد پکار دے، نۀ دا چې هر عدد ئې شاهد وي۔ د صفر او يو بېلګه پخوانے عمومي شرط ردوي؛ داخلي کمي کوونکے وجودي شو۔",
+      "reason": "د هر عدد د نيمې برخې يو شاهد پکار دے، نۀ دا چې هر عدد ئې شاهد وي۔ د صفر او يو بېلګه پخوانے عمومي شرط ردوي؛ داخلي کمي کوونکے وجودي شو۔",
+      "formula_policy": "Only the half-witness inner quantifier and one intended successor conclusion changed. Standard-block and distinct-block hypotheses clarified in prose; all other formulas/identifiers retained.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B227-NONSTANDARD-ARITHMETIC",
+      "audit_artifacts": [
+        "B227_SOURCE_AUDIT.json",
+        "B227_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B227 complete frozen source and relevant native pages actually read; choices registered before dual QA.",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Sat{N}{\\lforall[y][\\lforall[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"
+        ],
+        "target_only": [
+          "$\\Sat{N}{\\lforall[y][\\lexists[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-106",
+      "unit_id": "OLP-0653",
+      "classification": "standard_block_not_doubly_infinite_integer_chain",
+      "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "source_locator": "content/model-theory/basics/nonstandard-arithmetic.tex:124",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/nonstandard-arithmetic.tex",
+      "target_sha256": "fe5ab3404d9d3db78529491ca1b1e5a17835c900403a832b14a4f1a7be98c72f",
+      "target_line_1based": 51,
+      "disclosure_line_1based": 72,
+      "mode": "precise-formula-or-hypothesis-repair-plus-adjacent-Pashto-source-disclosure",
+      "translation_change": "يوازې نامعياري بلاکونه د صحيح عددونو دوه‌خوا نامتناهي ترتيبي ډول لري۔ معياري بلاک د صفر تر ټولو کوچنے عنصر لري او د طبيعي عددونو ترتيبي ډول لري۔",
+      "reason": "يوازې نامعياري بلاکونه د صحيح عددونو دوه‌خوا نامتناهي ترتيبي ډول لري۔ معياري بلاک د صفر تر ټولو کوچنے عنصر لري او د طبيعي عددونو ترتيبي ډول لري۔",
+      "formula_policy": "Only the half-witness inner quantifier and one intended successor conclusion changed. Standard-block and distinct-block hypotheses clarified in prose; all other formulas/identifiers retained.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B227-NONSTANDARD-ARITHMETIC",
+      "audit_artifacts": [
+        "B227_SOURCE_AUDIT.json",
+        "B227_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B227 complete frozen source and relevant native pages actually read; choices registered before dual QA.",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-107",
+      "unit_id": "OLP-0653",
+      "classification": "strict_quotient_order_requires_distinct_blocks",
+      "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "source_locator": "content/model-theory/basics/nonstandard-arithmetic.tex:131",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/nonstandard-arithmetic.tex",
+      "target_sha256": "fe5ab3404d9d3db78529491ca1b1e5a17835c900403a832b14a4f1a7be98c72f",
+      "target_line_1based": 51,
+      "disclosure_line_1based": 73,
+      "mode": "precise-formula-or-hypothesis-repair-plus-adjacent-Pashto-source-disclosure",
+      "translation_change": "د بلاکونو سخت کوچنيوالے د بېلو بلاکونو شرط غواړي۔ صفر تر يو کوچنے دے، خو دواړه په يوه معياري بلاک کښې دي؛ حذف شوے شرط څرګند شو۔",
+      "reason": "د بلاکونو سخت کوچنيوالے د بېلو بلاکونو شرط غواړي۔ صفر تر يو کوچنے دے، خو دواړه په يوه معياري بلاک کښې دي؛ حذف شوے شرط څرګند شو۔",
+      "formula_policy": "Only the half-witness inner quantifier and one intended successor conclusion changed. Standard-block and distinct-block hypotheses clarified in prose; all other formulas/identifiers retained.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B227-NONSTANDARD-ARITHMETIC",
+      "audit_artifacts": [
+        "B227_SOURCE_AUDIT.json",
+        "B227_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B227 complete frozen source and relevant native pages actually read; choices registered before dual QA.",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-108",
+      "unit_id": "OLP-0653",
+      "classification": "successor_step_repeats_weaker_premise",
+      "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "source_locator": "content/model-theory/basics/nonstandard-arithmetic.tex:120",
+      "target_path": "ps-Arab-PK/content/model-theory/basics/nonstandard-arithmetic.tex",
+      "target_sha256": "fe5ab3404d9d3db78529491ca1b1e5a17835c900403a832b14a4f1a7be98c72f",
+      "target_line_1based": 51,
+      "disclosure_line_1based": 67,
+      "mode": "precise-formula-or-hypothesis-repair-plus-adjacent-Pashto-source-disclosure",
+      "translation_change": "د جانشين د مساوات له ردولو وروسته د جانشين سخت کوچنيوالے پکار دے۔ پخوانے تکرار ناسم شرط نۀ دے؛ يوازې اړين اثباتي ګام يې نۀ وے بيان کړے۔",
+      "reason": "د جانشين د مساوات له ردولو وروسته د جانشين سخت کوچنيوالے پکار دے۔ پخوانے تکرار ناسم شرط نۀ دے؛ يوازې اړين اثباتي ګام يې نۀ وے بيان کړے۔",
+      "formula_policy": "Only the half-witness inner quantifier and one intended successor conclusion changed. Standard-block and distinct-block hypotheses clarified in prose; all other formulas/identifiers retained.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B227-NONSTANDARD-ARITHMETIC",
+      "audit_artifacts": [
+        "B227_SOURCE_AUDIT.json",
+        "B227_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B227 complete frozen source and relevant native pages actually read; choices registered before dual QA.",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [
+          "$x\\precy$"
+        ],
+        "target_only": [
+          "$x^*\\precy$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

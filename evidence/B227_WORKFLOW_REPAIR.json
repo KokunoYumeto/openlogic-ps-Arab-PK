@@ -1,0 +1,9 @@
+{
+  "schema": "ps-local-workflow-repair/1",
+  "utc": "2026-09-30T15:49:05.450761+00:00",
+  "status": "PASS; exact source-aware boundary check resumed and completed",
+  "issue": "New visual receipt script initially searched expanded label syntax in generated TeX; actual reader uses olpseganchor wrapper. Visual receipt had already been saved, no metadata or repair receipt mutated by the failed boundary assertion.",
+  "repair": "Use actual olpseganchor{OLP-0418-B004}{start}, verify sole twelve-byte clearpage insertion by removing it and comparing full reader bytes. On resume validate original visual receipt hashes/samples and preserve it.",
+  "script_sha256": "ae9cb7e3cf7e56744199af54ccb4b75d8e2da13980591db56499df796a54d6ab",
+  "outcome": "All654 inputs and6520 anchors unchanged; metadata and pending float repair receipt completed. No extra TeX acquisition."
+}

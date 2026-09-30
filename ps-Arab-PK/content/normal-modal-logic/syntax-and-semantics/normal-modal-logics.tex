@@ -1,0 +1,47 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: normal-modal-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{nor}
+
+\olsection{عادي مودالي منطقونه}
+
+مودالي منطق د !!{formula}s هر داسې سټ ګڼلے شو چې مناسب خاصيتونه ولري۔ ځينې مودالي منطقونه ځانګړې دلچسپي لري، ځکه تعبيرونه او کارونې ئې په زړه پورې دي، خو په تېره بيا ځکه چې تيوري ئې په ښه توګه معلومه ده۔ دا هماغه منطقونه دي چې عادي مودالي منطقونه بللے کېږي۔
+
+\begin{defn}\ollabel{defn:modal-logic}
+\emph{مودالي منطق}~$\Log L$ د بنسټيزې مودالي ژبې د !!{formula}s داسې يو سټ دے چې
+\begin{enumerate}
+\item ټولې قضيوي تاوتولوژۍ لري،
+\item د يو‌شان ځاے ناستولو لاندې تړلے وي، او
+\item د مودوس پوننس لاندې تړلے وي؛ يعنې هر کله چې $!A$ او $(!A \lif
+  !B) \in \Log L$ وي، نو $!B \in \Log L$ هم وي۔
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+د !!{formula}s ځينې داسې سټونه چې چندان په زړه پورې نۀ دي، خو دا تعريف پوره کوي او ځکه مودالي منطقونه ګڼلے کېږي، دا دي:
+\begin{enumerate}
+\item د ټولو تاوتولوژيو سټ،
+\item د ټولو !!{formula}s سټ (ناسازګار مودالي منطق)۔
+\end{enumerate}
+\end{ex}
+
+\begin{defn}\label{defn:normal-modal-logic}
+مودالي منطق~$\Log L$ هله او يوازې هله \emph{عادي} دے چې
+\begin{enumerate}
+\item دا دواړه ولري:
+\begin{align}
+\tag{K} \Box(p \lif q) & \lif (\Box p \lif \Box q) \\
+\tag{Dual} \Diamond p & \liff \lnot \Box \lnot p
+\end{align}
+\item او د لزوم ورکولو لاندې تړلے وي؛ يعنې هر کله چې $!A \in
+  \Log L$ وي، نو $\Box !A \in \Log L$ هم وي۔
+\end{enumerate}
+\end{defn}
+
+د مودالي منطقونو د تعريف دوه عمده لارې به ووينو۔ يوه د ثبوت له تيورۍ څخه ده: د هغو !!{formula}s د سټ په توګه چې په ټاکلو !!{derivation} نظامونو کښې ترې اشتقاق کېدے شي۔ بله د مدل له تيورۍ څخه ده: د هغو !!{formula}s د سټونو په توګه چې د مدلونو په ټاکلو ټولګيو کښې معتبر وي۔ دا د معمولي قضيوي منطق (او هم د لومړۍ درجې منطق) د حالت په شان دے۔ هلته هم د !!{formula}s يو سټ په دوو بېلو لارو ځانګړے کولے شو؛ د بېلګې په توګه، د هغو تاوتولوژيو سټ چې د صدق ارزښتونو په ټولو ټاکنو کښې رښتينې دي، او د هغو ټولو !!{derivable} !!{formula}s سټ چې په يوه !!{derivation} نظام کښې ترې اشتقاق کېږي۔ د عادي مودالي منطقونو دپاره دا دوه‌ګونې ټاکنه په اړيکيزو مدلونو او بديهي (د هېلبرټ په ډول) ثبوتي نظامونو کېږي۔
+\end{document}

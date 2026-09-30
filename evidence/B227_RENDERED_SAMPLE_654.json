@@ -1,0 +1,87 @@
+{
+  "schema": "ps-reader-rendered-sample/1",
+  "utc": "2026-09-30T15:47:27.520563+00:00",
+  "status": "six new-section pages actually inspected; following-section float interrupts normal-logic definition, repair prepared and render pending",
+  "reader_units": 654,
+  "pdf_pages": 809,
+  "pdf_sha256": "15ce97d564670a88f169da30fde9dfb3594c241894e92035677b65b6b8ed6d99",
+  "reader_tex_sha256": "0aa16bcb07e01ab53a1bf0b695b3579caa2b452ad6d013daa1ac79c17d3d7934",
+  "guard_receipt_sha256": "13d621b47489e175618eba4d13f0b3c2e67bc649bf757871cb8233a3b0ddf44c",
+  "samples": [
+    {
+      "assembled_pdf_page": 270,
+      "printed_page": 269,
+      "image_sha256": "9230b508c86a2e6c455ac2d801d24973a6e15b7031192f7eebff318d07d95a78",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 271,
+      "printed_page": 270,
+      "image_sha256": "c9ea24af8fc2504e5a9a6b8a525920d2f1e326e7ac41ade4e50d523479bd0f37",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 272,
+      "printed_page": 271,
+      "image_sha256": "d23566f04859d8b506eb8c7e2ed31bea5abf2221d22f159d2093b24448bc11eb",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 452,
+      "printed_page": 451,
+      "image_sha256": "98f6e53b680941b021ab9b974ddfd1ce401d398d62d72d364c400028d40baf0f",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 550,
+      "printed_page": 549,
+      "image_sha256": "6f4d5c706e5d87abe0d281617d11ea85e4d330b65b7e65668dece889ba9f6b62",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 551,
+      "printed_page": 550,
+      "image_sha256": "11acfcb64bf7c8e1cb304ef5634547ac56b2a4468ab30689c93d52d381d473a4",
+      "actual_visual_inspection": true
+    }
+  ],
+  "verified_content": [
+    "All four adjacent arithmetic correction notes visible with existential half witness and intended successor inequality",
+    "All thirteen structural cases, pure-order definability exercises and valid theorem links legible on printed269-271",
+    "Effective/full-semantic clarification of0331 visible on printed451",
+    "K and Dual formulas and stable labels legible on printed550; uniform substitution/MP/necessitation definitions present"
+  ],
+  "concrete_layout_finding": {
+    "physical_pdf_page": 551,
+    "printed_page": 550,
+    "following_section_unit": "OLP-0418",
+    "float": "figure43.2 modal entailment counterexample",
+    "finding": "Diagram from following entailment section floats between normal-logic definition title on printed549 and its K/Dual clauses on printed550. Formulas/text are not clipped, but semantic continuity is interrupted.",
+    "required_fix": "Generated reader finishes normal-modal definition before importing entailment; editable source unchanged."
+  },
+  "final_log_findings": [
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/sc' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/LatinModernRoman(0)/m/sc' undefined",
+    "Overfull \\hbox (3.1974pt too wide) in paragraph at lines 49546--49547",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 56521--56546",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 57050--57074",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined"
+  ],
+  "bibliography_findings": [
+    "Warning--empty publisher in Berkeley1734",
+    "Warning--can't use both author and editor fields in Frege1953",
+    "Warning--can't use both author and editor fields in EwaldSieg2013",
+    "Warning--empty publisher in Hume1740",
+    "Warning--empty journal in OConnorRobertson:RN",
+    "Warning--empty journal in Weston2003",
+    "warning$ -- 6",
+    "(There were 6 warnings)"
+  ],
+  "all_captured_engine_processes_terminal": true,
+  "new_reader_accepted": false,
+  "full_reader_visual_review_completed": false,
+  "epub_accepted": false
+}

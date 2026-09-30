@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 652,
-    "structural_pass": 652,
+    "draft_units": 654,
+    "structural_pass": 654,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B226-LEGACY-CONVERSION-CLASSICAL-COMPARISON",
+  "batch": "PS-B227-NONSTANDARD-NORMAL-MODAL",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11252,7 +11252,7 @@
       "unit_id": "OLP-0331",
       "path": "content/second-order-logic/metatheory/introduction.tex",
       "source_sha256": "413d8f1950ae13bf318f29e071b196cbc1971aa378d2aa94ac79e1342baf6e2c",
-      "translation_sha256": "45217e9eb5fc68519fee98f322383eb2bda591238b5f2f531931803488025ca5",
+      "translation_sha256": "994f4123cf92905b88e0a1603436e38983feeb70c71d0b5f7f4c663c68db0c70",
       "source_blocks": 8,
       "target_blocks": 8,
       "checks": {
@@ -22303,6 +22303,80 @@
       "source_correction_ids": [
         "OLCMP-104"
       ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+      "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+      "translation_sha256": "fe5ab3404d9d3db78529491ca1b1e5a17835c900403a832b14a4f1a7be98c72f",
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-105",
+        "OLCMP-106",
+        "OLCMP-107",
+        "OLCMP-108"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$x\\precy$",
+          "$\\Sat{N}{\\lforall[y][\\lforall[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"
+        ],
+        "target_only": [
+          "$x^*\\precy$",
+          "$\\Sat{N}{\\lforall[y][\\lexists[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0654",
+      "path": "content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex",
+      "source_sha256": "a48f8fbe50c76b8ff8f0dfac091ee98f8e4a9e893637364e66c589945e4a8474",
+      "translation_sha256": "919802e12a21ffdb52c27227221f8b6b8c21deb5ceba0862ecf2a9232687007f",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
       "status": "structural-pass"
     }
   ],
@@ -39094,6 +39168,144 @@
       "passage": "OLP-0330-B004",
       "reverse_paraphrase": "Second-order metatheory chapter heading adopts the established general metatheory term fra tiwari; mathematical meaning unchanged, all five ordered imports retained.",
       "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B004",
+      "reverse_paraphrase": "Nonstandard arithmetic models title; mod/bas/nsa identity retained.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B005",
+      "reverse_paraphrase": "Arithmetic language includes constant0, binary predicate<, unary successor, binary addition/multiplication. Standard structure has natural domain and those interpretations. True arithmetic is the complete theory of that structure.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B006",
+      "reverse_paraphrase": "Numeral n abbreviates n finite STANDARD successor applications to0.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B007",
+      "reverse_paraphrase": "Standard arithmetic structure iff isomorphic to the natural-number structure.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B008",
+      "reverse_paraphrase": "True arithmetic has enumerable nonstandard models; no computable-presentation claim.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B009",
+      "reverse_paraphrase": "Adjoin fresh c greater than every standard numeral; each finite fragment satisfiable. Compactness then downward LS gives countable model. Interpret zero, order, successor, addition and multiplication with exact arities; source nonlogical constants wording clarified as symbols.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B010",
+      "reverse_paraphrase": "Isomorphism contradiction concerns original arithmetic REDUCT, not the language containing c absent from N. Surjectivity yields n mapping to c; numeral invariance forces c to equal its nth numeral despite strict inequality. Full proof retained.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B011",
+      "reverse_paraphrase": "Well-foundedness excludes externally infinite descending R-chains; consistency of ZF assumed for non-well-founded-model exercise. No solution invented.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B012",
+      "reverse_paraphrase": "Elementary equivalence transfers first-order truths for precise structure analysis; countable nonstandard models characterized at order reduct level.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B013",
+      "reverse_paraphrase": "All thirteen numbered mechanisms retained: irreflexivity, linearity, least0, discrete successor, standard initial segment, all nonstandard elements above every numeral, unique predecessor except0, finite STANDARD distance equivalence and blocks, separated-block order, quotient strict comparison, halving/no least nonstandard block, no greatest block, averaging/density. Standard block has natural order type; only nonstandard blocks have integer order type. Two displayed source corrections and two missing restrictions disclosed. Countable dense nonstandard quotient gives rational order; reducts to < and = isomorphic, not full arithmetic structures. Vaught attribution retained as source attribution.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B014",
+      "reverse_paraphrase": "No-greatest-block assigned exercise retained without supplied proof.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B015",
+      "reverse_paraphrase": "Pure order language with only < and identity; definable subsets of naturals exactly finite/cofinite. No extra arithmetic predicates.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B016",
+      "reverse_paraphrase": "Immediate-predecessor formula and eventual successor-closure sentence D retained; assigned iff proof finite/cofinite retained.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0653",
+      "passage": "OLP-0653-B017",
+      "reverse_paraphrase": "Order-structure automorphism maps adjacent nonstandard b to c, preserving parameter-free A; gives D in nonstandard model and then standard model. Why-questions remain exercises, no full-arithmetic automorphism asserted.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B005",
+      "reverse_paraphrase": "Normal modal logics title; normal is a defined technical family.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B006",
+      "reverse_paraphrase": "Suitably closed sets of basic modal formulas; theoretically well-understood normal systems, with interesting interpretations/applications.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B007",
+      "reverse_paraphrase": "Modal logic contains all propositional tautologies and is closed under UNIFORM substitution and modus ponens. Set membership/implication roles retained.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B008",
+      "reverse_paraphrase": "Two examples: tautologies and all formulas, latter inconsistent; no consistency assumption added.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B009",
+      "reverse_paraphrase": "Normal means K and Dual formulas plus necessitation closure of logic membership A to Box A. Both labels/alignments retained; no local-premise necessitation rule invented.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0654",
+      "passage": "OLP-0654-B010",
+      "reverse_paraphrase": "Proof-theoretic derivable-formula sets versus semantic model-class validities; propositional/FOL analogy. Normal modal systems admit relational semantics and axiomatic Hilbert-style proof systems.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0331",
+      "passage": "OLP-0331-B005",
+      "reverse_paraphrase": "Whole second-order metatheory introduction title retained.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0331",
+      "passage": "OLP-0331-B006",
+      "reverse_paraphrase": "Sound/complete EFFECTIVE first-order proofs yield computable enumeration of all and only valid sentences. Full second-order validities are not computably enumerable, excluding an effective sound and complete calculus, while sound incomplete systems remain possible. Actual standard countable vocabulary and mechanically checkable proofs supply context; no uncountable-signature false error.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0331",
+      "passage": "OLP-0331-B007",
+      "reverse_paraphrase": "Finite satisfiability compactness and downward LS to denumerable model for infinite-model theories in the stated countable language. Both general results fail under FULL second-order semantics, not Henkin semantics.",
+      "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
     }
   ],
   "builds": [

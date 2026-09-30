@@ -417,7 +417,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
     for row, body in prepared:
         if int(row['unit_id'][-4:]) <= 642:
             continue
-        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648', 'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652'}:
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648', 'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652', 'OLP-0653', 'OLP-0654'}:
             raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
         parent = Path(row['source_path']).parent
         chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
@@ -425,6 +425,15 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
             raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
         anchor = chapter_rows[-1][0]['unit_id']
         part, chapter, section, role = context(body)
+        if row['unit_id'] in {'OLP-0653', 'OLP-0654'}:
+            # The frozen model-theory driver places its optional nonstandard
+            # arithmetic section after DLO, whose theorem the proof uses.
+            # Normal modal logics uses uniform substitution, K and Dual after
+            # their schema semantics, before moving to entailment.
+            anchor = 'OLP-0190' if row['unit_id'] == 'OLP-0653' else 'OLP-0417'
+            expected_context = ('mod', 'bas', 'dlo') if row['unit_id'] == 'OLP-0653' else ('nml', 'syn', 'sch')
+            if not any(r['unit_id'] == anchor and Path(r['source_path']).parent == parent and context(b)[:3] == expected_context for r, b in primary):
+                raise ValueError('nonstandard arithmetic/modal definitions require their translated source context')
         if row['unit_id'] in {'OLP-0651', 'OLP-0652'}:
             # The legacy conversion stub introduces the complete alpha section.
             # The legacy LK text is an explicitly disclosed classical comparison
@@ -486,9 +495,15 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
         after_anchors = re.findall(r'\\(?:phantomsection\\label|label)\{(olpseg:[^{}]+)\}', body)
         if before_anchors != after_anchors:
             raise ValueError(f"alternate semantic anchors changed: {row['unit_id']}")
-        heading = ('د منجمدې سرچينې بشپړه اړونده برخه' if row['unit_id'] in {'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652'}
+        heading = ('د منجمدې سرچينې بشپړه اړونده برخه' if row['unit_id'] in {'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652', 'OLP-0653', 'OLP-0654'}
                    else 'د منجمدې سرچينې بشپړ بديل متن')
         body = (r'\paragraph{' + heading + r': \LR{' + row['unit_id'] + '}}\n') + body
+        if row['unit_id'] == 'OLP-0654':
+            # Actual654 PDF page550 placed the following entailment diagram
+            # between the normal-logic definition and its K/Dual clauses.
+            # Finish this page before importing entailment, so its floats
+            # cannot move backwards into this complete definition.
+            body += '\n' + r'\clearpage' + '\n'
         additions.setdefault(anchor, []).append((row, body))
         records.append({'unit_id': row['unit_id'], 'source_path': row['source_path'],
                         'placement_after_unit': anchor, 'chapter_directory': parent.as_posix(),
