@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 667,
-    "structural_pass": 667,
+    "draft_units": 668,
+    "structural_pass": 668,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B241-N2-RULES-LAMBDA-SYNTAX",
+  "batch": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11767,7 +11767,7 @@
       "unit_id": "OLP-0345",
       "path": "content/lambda-calculus/introduction/reduction.tex",
       "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
-      "translation_sha256": "5dcf8704a82e003510f0839e79c3a764947c25548c57b19fbab2c6874f0f2186",
+      "translation_sha256": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
       "source_blocks": 10,
       "target_blocks": 10,
       "checks": {
@@ -22954,6 +22954,56 @@
         "OLCMP-139"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "translation_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "rules"
+      ],
+      "allowed_residual_english": [
+        "rules"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-140",
+        "OLCMP-141",
+        "OLCMP-142",
+        "OLCMP-143",
+        "OLCMP-144"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]",
+          "$\\pheight{\\delta_1}=\\pheight{\\delta_2}=1$"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_3$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]",
+          "$\\pheight{\\delta_2}=\\pheight{\\delta_3}=1$"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -41315,6 +41365,126 @@
       "unit_id": "OLP-0344",
       "passage": "OLP-0344-B010",
       "reverse_paraphrase": "د تړلو متغيرونو د نوم بدلولو الفا معادلتوب او مثالونه عين دي۔ تړلے راتګ بايد د هماغه متغير په تړونکي تجريد کښې وي؛ په وروستي مثال کښې y او x ازاد او z تړلے دے، د سرچينې خپل مثال د ۰۱۷ سمون شاهد دے۔ د ازاد املا او پاکستاني يو شانوالے لفظ سم شول۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B005",
+      "reverse_paraphrase": "قاعدې او د ثبوت اصلي جمع سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B006",
+      "reverse_paraphrase": "د تعريفونو او اصطلاحاتو اصلي پيل دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B007",
+      "reverse_paraphrase": "د شرطي فارمول داخلولو او ايستلو دواړه اصلي رسمونه عين دي؛ لويه مقدمه اصلي فارمول لري او کوچنۍ مقدمه جلا ده، پايله لاندې ده۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B008",
+      "reverse_paraphrase": "د داخلولو قاعدې اصلي فارمول په پايله کښې لري او هماغه لويه عملګره داخلوي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B009",
+      "reverse_paraphrase": "د فرضونو نښې ټاکلي راتګونه باسي؛ د اړينې بڼې ټول فرضونه يا ان يو فرض ايستل اړين نۀ دي۔ اصلي بې‌فرضه ايستلو رسم عين دے، لومړۍ نښه په رسم کښې شته خو پرېښودے شي؛ ۱۴۴ سمون يوازې د سرچينې ناسمه يادونه سموي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B010",
+      "reverse_paraphrase": "د يوې بڼې دوه بېلې نښې په ترتيب ايستل کېږي؛ د يوه ليبل ټول فرضونه بايد هماغه فارمول وي۔ اصلي رسم عين دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B011",
+      "reverse_paraphrase": "د موجود کميت دواړه قاعدې، تړلے بې‌متغيره ترم، د فارمول کره تعويض او د ځانګړي ثابت په پاتې پرانيستو فرضونو او پايله او matrix کښې نۀ راتلل بشپړ دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B012",
+      "reverse_paraphrase": "د N1 ثبوت د فارمولونو متناهي ونه ده چې له فرضونو جوړېږي، نۀ د سېکوېنټونو له بديهياتو؛ د پاڼې، استنتاج او پرانيستي راتګ شرطونه عين دي؛ ۱۴۰ سمون ښکاره دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B013",
+      "reverse_paraphrase": "د يو فرض بنسټ، يوې يا دوو يا درې مقدمو جوړښت، سازګار ليبلونه او د فرضونو د ايستلو کره څانګې بشپړ دي؛ د درېيم فرعي ثبوت ناسمه دويمه مقدمه په درېيمه سمه شوه، نور ټول رسمونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B014",
+      "reverse_paraphrase": "فرعي او سمدستي فرعي ثبوتونه کره توپير لري؛ اصلي جدول او واردات د N1 دي او نقل شوي N2 نومونه په ۱۴۲ سمون سره سم شول۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B016",
+      "reverse_paraphrase": "لوړوالے د فرض دپاره صفر، د هر استنتاج د لوړو سمدستي فرعي ثبوتونو له زيات نه يو زيات دے؛ د يوې او دوو او درې مقدمو ټول اصلي فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B017",
+      "reverse_paraphrase": "لومړنے فرض ثبوت صفر لوړوالے لري؛ د دواړو conjunction ايستلو ثبوتونو لوړوالے يو دے۔ د ۱۴۳ سمون په برابرۍ کښې همدا دوه ثبوتونه ښيي، نۀ لومړنے صفر-لوړوالي ثبوت۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B018",
+      "reverse_paraphrase": "د دوو يو-لوړوالي ثبوتونو conjunction داخلول دوه لوړوالے او دوه پرانيستي فرض راتګونه ورکوي؛ اصلي رسم او برابرۍ عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0668",
+      "passage": "OLP-0668-B019",
+      "reverse_paraphrase": "وروستے شرطي داخلول دواړه په يوه ليبل نښه شوي فرضونه باسي؛ لوړوالے درې او پاتې پرانيستے فرض نشته؛ بشپړ اصلي ثبوت عين دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B004",
+      "reverse_paraphrase": "د لامبډا ترمونو د راکمولو سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B005",
+      "reverse_paraphrase": "تعويض د متغير له نيولو ساتلے دے؛ د ټکر وړ تړلو متغيرونو نومونه مخکې بدلېږي۔ اصلي xxw او yyz مثال عين دے؛ د ساده کولو فعل او د ازادو املا سم شول۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B006",
+      "reverse_paraphrase": "د تعويض درې بېلې نښيزې بڼې عين دي او د نښو د توپير اصلي احتياط ساتل شوے دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B007",
+      "reverse_paraphrase": "بېټا انقباض، د راکمېدو وړ عبارت او د انقباض پايله جلا دي؛ يو ګام له صفر يا ډېرو ګامونو بېل دے او عادي ترم نور انقباض نۀ مني۔ د راکمولو د فعل او اضافې املا سمه شوه، ټول اصل فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B008",
+      "reverse_paraphrase": "د درې ګامونو عادي پايله، د ترم د اوږدېدو بې‌پايه لړۍ، خپل ځان ته يو ګام او د بهرنۍ او دنننۍ څانګې دواړه لارې تر هماغه zv پورې کره دي؛ ټول څلور اصلي رسمي مثالونه عين بايټونه لري۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0345",
+      "passage": "OLP-0345-B009",
+      "reverse_paraphrase": "د وروستي مثال ګډه پايله د چرچ--روسر خاصيت ښيي؛ دغه اصلي ادعا نۀ د نوې قضیې د بشپړ ثبوت په توګه وړاندې کېږي او نۀ د راکمولو ترتيب يو شان ګڼي۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
     }
   ],

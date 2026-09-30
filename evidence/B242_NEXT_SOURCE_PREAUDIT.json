@@ -1,0 +1,107 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-09-30T23:05:03.157302+00:00",
+  "unit_id": "OLP-0668",
+  "status": "Complete draft/source comparison; registration pending",
+  "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+  "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+  "paired_source_blocks": 20,
+  "source_proof_trees": 13,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-140",
+      "unit_id": "OLP-0668",
+      "block": 12,
+      "source_line_1based": 131,
+      "exact_original_text": "finite trees of sequents\nthat are inductively generated from axioms using the rules of\ninference.",
+      "exact_proposed_source_text": "finite trees of formulas\nthat are inductively generated from labelled assumptions using the rules of\ninference.",
+      "additional_exact_source_fragments": [],
+      "reason": "The same section inductively defines N1 proofs as formula trees with labelled assumptions; N1 table has formula nodes. Sequent trees/axioms copy a different presentation and contradict the local definition."
+    },
+    {
+      "proposed_id": "OLCMP-141",
+      "unit_id": "OLP-0668",
+      "block": 13,
+      "source_line_1based": 177,
+      "exact_original_text": "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_2$}",
+      "exact_proposed_source_text": "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_3$}",
+      "additional_exact_source_fragments": [],
+      "reason": "The generic clause explicitly assigns delta3 conclusion A3, but the copied third subtree shows A2. Replace only that index. Actual disjunction-elimination can specialize the last two premises to the same C; the generic names must still match their assigned subproofs."
+    },
+    {
+      "proposed_id": "OLCMP-142",
+      "unit_id": "OLP-0668",
+      "block": 14,
+      "source_line_1based": 202,
+      "exact_original_text": "The rules of \\Log{N2c} and \\Log{N2i}\nare given in \\olref{tab:N1}",
+      "exact_proposed_source_text": "The rules of \\Log{N1c} and \\Log{N1i}\nare given in \\olref{tab:N1}",
+      "additional_exact_source_fragments": [],
+      "reason": "The referenced label and immediately imported rules-N1 file explicitly name N1c/N1i. Change only copied system names, keep identifier/import."
+    },
+    {
+      "proposed_id": "OLCMP-143",
+      "unit_id": "OLP-0668",
+      "block": 17,
+      "source_line_1based": 247,
+      "exact_original_text": "$\\pheight{\\delta_1} = \\pheight{\\delta_2} = 1$",
+      "exact_proposed_source_text": "$\\pheight{\\delta_2} = \\pheight{\\delta_3} = 1$",
+      "additional_exact_source_fragments": [],
+      "reason": "The immediately defined assumption delta1 has height0. Both displayed elimination subproofs delta2/delta3 have one inference and height1; delta4 has2 and delta5 has3 as already printed."
+    },
+    {
+      "proposed_id": "OLCMP-144",
+      "unit_id": "OLP-0668",
+      "block": 9,
+      "source_line_1based": 74,
+      "exact_original_text": "When a rule does not discharge any assumptions, we just leave out the\ndischarge label (as we did here).",
+      "exact_proposed_source_text": "When a rule does not discharge any assumptions, we may leave out the\ndischarge label (the first discharge label in the displayed proof could be omitted).",
+      "additional_exact_source_fragments": [],
+      "reason": "The source actual displayed first inference retains label x but no x assumption, while the later inference labelled y discharges the sole y assumption. Vacuous discharge is valid; retain the full diagram and correct only the false claim that the label was already omitted."
+    }
+  ],
+  "primary_contexts": [
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true,
+      "locators": [
+        "entire source; inductive definition, own labelled-discharge example and exact height0/1/2/3 examples"
+      ]
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+      "sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+      "actually_read": true,
+      "locators": [
+        "complete N1 rule table"
+      ]
+    }
+  ],
+  "whole0345": {
+    "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+    "target_sha256_before": "5dcf8704a82e003510f0839e79c3a764947c25548c57b19fbab2c6874f0f2186",
+    "target_sha256_after": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
+    "source_and_target_read_completely": true,
+    "changes": [
+      [
+        "د لامبډا ترمونو سره څه کولے شو؟ ساده کول ئې۔",
+        "له لامبډا ترمونو سره څه کولے شو؟ ساده کولے ئې شو۔"
+      ],
+      [
+        "له آزادو متغيرونو سره",
+        "له ازادو متغيرونو سره"
+      ],
+      [
+        "د يو-ګامي\nراکمول د څو ګامونو په وسيله",
+        "د يو-ګامي\nراکمولو د څو ګامونو په وسيله"
+      ],
+      [
+        "راکميږي",
+        "راکمېږي"
+      ]
+    ],
+    "new_source_correction_ids": [],
+    "scope": "Capture-avoiding substitution, one-step versus zero-or-more reduction, normal form, divergence/self-loop and both routes to zv all independently checked. Original math/formal examples retained. Only small native prose/spelling repairs."
+  },
+  "next_action": "Focused per-block QA and register668/whole0345; dualQA and acceptance; full722 remains active."
+}

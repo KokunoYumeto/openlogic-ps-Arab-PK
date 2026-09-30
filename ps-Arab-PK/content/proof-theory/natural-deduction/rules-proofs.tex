@@ -1,0 +1,309 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{rp}
+
+\olsection{قاعدې او \usetoken{P}{proof}}
+
+لومړے ځينې تعريفونه ورکوو او ځينې اصطلاحات ټاکو۔
+
+د \Log{N1c} او~\Log{N1i} هغه دوه قاعدې وګورئ چې د $!A
+\lif !B$ يادونه کوي۔
+\[
+\bottomAlignProof
+\AxiomC{$\Discharge{!A}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+د \Elim{\lif} قاعده آسانه ده۔ له کرښې بره !!{formula}s
+\emph{مقدمې} دي۔ کيڼ اړخ ته !!{formula} هماغه \emph{اصلي}
+!!{formula}~$!A \lif !B$ دے۔ ټولې د !!{elimination} قاعدې
+يوه داسې مقدمه لري چې تل په تر ټولو کيڼ اړخ کښې وي۔ دې ته د
+استنتاج \emph{لويه} مقدمه وايي۔ که نورې مقدمې هم وي، لکه په دې
+حالت کښې، هغو ته \emph{کوچنۍ} مقدمې وايي۔ د !!{introduction}
+قاعدو مقدمه يا مقدمې هم لويې مقدمې بلل کېږي۔ له کرښې لاندې
+!!{formula} \emph{پايله} ده۔
+
+د \Intro{\lif} قاعده يوازې يوه مقدمه لري، او دلته پايله
+اصلي فارمول~$!A \lif !B$ دے۔ د !!{introduction} ټولې قاعدې
+همداسې دي: پايله اصلي فارمول دے؛ د هغه لويه عملګره هماغه ده چې
+``داخلېږي''۔
+
+د $\Discharge{!A}{x}$ نښه دا معنا لري۔ په !!a{proof} کښې
+د \Intro{\lif} استنتاج !!a{formula}~$!B$ د مقدمې په توګه اخلي۔
+په~$!B$ ختمېدونکے فرعي !!{proof} يو شمېر پيلني !!{formula}s
+لري۔ دې ته \emph{فرضونه} وايي۔ !!^a{proof} چې له يوه يا ډېرو
+د~$!A$ په بڼه فرضونو څخه~$!B$ ثابتوي، !!a{proof} دے چې $!A$
+څخه~$!B$ نتيجه کېږي۔ چې د \Intro{\lif} قاعده وکاروو،~$!A
+\lif !B$ نتيجه اخلو او پايله نور په فرض~$!A$ پورې نۀ تړل کېږي۔
+د دې ښودلو دپاره، په هغه !!{proof} کښې چې د~\Intro{\lif}
+استنتاج هم لري، د~$!A$ په بڼه فرضونه \emph{ايستل کېږي} يا
+\emph{بندېږي}۔ قاعده ټاکي چې کوم فرضونه ايستل کېدے شي۔ د
+\Intro{\lif} په حالت کښې چې پايله ئې $!A \lif !B$ وي، دا
+د~$!A$ په بڼه فرضونه دي، يعنې د شرطي فارمول له مخکينۍ برخې سره
+يو شان دي۔ کله کله بايد وښيو چې په کومه قاعده کوم فرضونه ايستل
+کېږي؛ د فرض ايستلو نښه~$x$ همدا ښيي۔ د فرضونو ايستونکې قاعدې
+\emph{اړ نۀ دي} چې د اړينې بڼې \emph{ټول} فرضونه يا ان يو فرض
+هم وباسي۔ مثلاً، دا سم دے، که څه هم لومړے \Intro{\lif}
+هېڅ فرض نۀ باسي:
+\[
+\AxiomC{$\Discharge{!A}{y}$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!B \lif !A)$}
+\DisplayProof
+\]
+چې قاعده هېڅ فرض نۀ باسي، د فرض ايستلو نښه پرېښودے شو؛ په دې
+رسم کښې لومړۍ نښه پرېښودے شي۔
+\textbf{سرچينه‌يي سمون OLCMP-144:} په اصلي رسم کښې نښه شته،
+که څه هم اړوند فرض نشته۔ د نښې پرېښودل اختيار دے؛ د سرچينې
+``لکه دلته مو پرېښې ده'' خبره له رسم سره سمه نۀ ده۔
+
+په دې !!{proof} کښې
+\[
+\AxiomC{$\Discharge{!A}{x}$}
+\AxiomC{$\Discharge{!A}{y}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !A$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!A \lif !A)$}
+\DisplayProof
+\]
+لومړے \Intro{\lif} استنتاج کيڼ فرض $!A^x$ باسي او دويم
+ښي فرض~$!A^y$ باسي۔ يعنې ټول په~$x$ نښه شوي فرضونه هغه
+\Intro{\lif} باسي چې نښه ئې~$x$ وي، او ټول په~$y$ نښه شوي
+فرضونه هغه باسي چې نښه ئې~$y$ وي۔ د دې د سم کار دپاره بايد
+ټول په يوه نښه شوي فرضونه هماغه يو !!{formula} وي۔
+
+د کميت قاعدې لږې پېچلې دي۔ مثلاً، په \Log{N1i} کښې د
+$\lexists$ قاعدې دا دي:
+\[
+\bottomAlignProof
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$\lexists[x][!A(x)]$} 
+\AxiomC{$\Discharge{!A(c)}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!B$} \DisplayProof 
+\bottomAlignProof
+\] په
+\Intro{\lexists} قاعده کښې مقدمه~$!A(t)$ ده، چې $t$~يو
+تړلے ترم دے، يعنې داسې ترم چې متغيرونه نۀ لري۔ دا استنتاج سم
+دے، يعنې د \Intro{\lexists} له شېمايي قاعدې سره سمون لري، که
+يو !!{formula}~$!A$، يو متغير~$x$ او يو تړلے ترم~$t$ داسې وي
+چې پايله $\lexists[x][!A]$ او مقدمه~$\Subst{!A}{t}{x}$ وي۔
+د \Elim{\lexists} قاعده د~$!A(c)$ په بڼه فرضونه ايستلو ته
+اجازت راکوي؛ يعنې د هر استنتاج دپاره يو !!{constant}~$c$ وي او
+د $\Subst{!A}{c}{x}$ په بڼه فرضونه ايستل کېدے شي۔ د يو
+استنتاج ټول ايستل شوي فرضونه بايد هماغه~$c$ وکاروي۔ دې ثابت
+ته د \Elim{\lexists} استنتاج \emph{ځانګړے متغير} وايي۔
+استنتاج يوازې هغه وخت سم دے چې $c$~له ايستل شوي~$!A(c)$ پرته
+په بل پرانيستي فرض کښې نۀ راځي، په~$!B$ کښې نۀ راځي او
+په~$!A$ کښې نۀ راځي۔ دې ته \emph{د ځانګړي متغير شرط} وايي۔
+
+په \Log{N1c} او~\Log{N1i} کښې !!^{proof}s د فارمولونو
+متناهي ونې دي چې له نښه لرونکو فرضونو څخه په استقرايي ډول د
+استنتاج د قواعدو په وسيله جوړېږي۔ هره پاڼه يو فرض دے، چې کېدے
+شي د فرض ايستلو نښه ولري، او هر بل !!{formula} د نظام د يوې
+استنتاجي قاعدې په وسيله له هغو !!{formula}s څخه نتيجه کېږي چې
+نېغ ئې بره وي۔ که له استنتاج بره په ونه کښې د فرض په توګه د
+!!{formula} يو راتګ له هغه بره استنتاج نۀ وي ايستلے، هغه
+په دغه استنتاج کښې \emph{پرانيستے} بلل کېږي۔
+\textbf{سرچينه‌يي سمون OLCMP-140:} د N1 ونې د فارمولونو دي،
+نۀ د سېکوېنټونو؛ پيلني توکي ئې فرضونه دي۔ ورپسې اصلي تعريف او
+د N1 جدول همدغه جوړښت ښيي۔
+
+\begin{defn}\ollabel{defn:proof}
+په \Log{N1c} او~\Log{N1i} کښې \emph{!!^{proof}s} د
+!!{formula}s متناهي ونې دي چې په استقرايي ډول داسې جوړېږي:
+\begin{enumerate}
+  \item\ollabel{defn:prf:assumption} هر !!{formula} چې د فرض
+  ايستلو نښه لکه $x$ يا $y$ ولري، په ځانله ډول !!a{proof} دے۔
+  په هغه !!a{proof} کښې چې يوازې يو !!{formula} لري، دغه
+  !!{formula} پرانيستے فرض ګڼل کېږي۔
+  \item\ollabel{defn:prf:one-prem} که $R$ يوه قاعده وي چې يوه،
+  دوه يا درې مقدمې $!A_1$، $!A_2$، $!A_3$ او پايله~$!A$
+  ولري، او $\delta_1$، $\delta_2$، $\delta_3$ هغه !!{proof}s
+  وي چې په ترتيب په $!A_1$، $!A_2$، $!A_3$ ختمېږي، نو
+  په ترتيب دا
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \DeduceC{$!A_3$}
+  \RightLabel{$R$}
+  \TrinaryInfC{$!A$}
+  \DisplayProof
+  \]
+  !!a{proof} دے، په دې شرط چې د !!{proof}s د فرضونو نښې
+  سازګارې وي، يعنې دوه بېل !!{formula}s د فرض ايستلو يوه نښه
+  و نۀ لري، او استنتاجونه د~$R$ سمې کارونې وي۔
+  \textbf{سرچينه‌يي سمون OLCMP-141:} درېيم فرعي ثبوت په
+  خپلې درېيمې مقدمې ختمېږي؛ د رسم نقل شوے دويم اندېکس سم شوے دے۔
+  \item په نوي !!{proof} کښې د تر ټولو بره !!{formula} راتګونه
+  د !!{proof} \emph{پرانيستي فرضونه} دي، که د $\delta_1$،
+  $\delta_2$ يا~$\delta_3$ پرانيستي فرضونه وي، پرته له هغو
+  راتګونو چې قاعده ئې باسي۔ که د قاعدې نښه~$x$ يا $x\, y$
+  وي، نو د \Intro{\lif} او~\Intro{\lnot} دپاره دا په
+  $\delta_1$ کښې ټول په~$x$ نښه شوي پرانيستي فرضونه دي؛ د
+  \Elim{\lexists} دپاره په~$\delta_2$ کښې ټول په~$x$ نښه
+  شوي پرانيستي فرضونه دي؛ او د \Elim{\lor} دپاره په
+  $\delta_2$ کښې ټول په~$x$ نښه شوي او په~$\delta_3$ کښې
+  ټول په~$y$ نښه شوي پرانيستي فرضونه دي۔
+\end{enumerate}
+\end{defn}
+
+هغه !!{proof}s چې د !!a{proof} په استقرايي جوړښت کښې
+کارول کېږي، د هغه \emph{فرعي !!{proof}s} بلل کېږي۔ هغه فرعي
+!!{proof}s چې د يو استنتاج په مقدمو ختمېږي، د هغه استنتاج
+\emph{سمدستي فرعي !!{proof}s} بلل کېږي۔ د \Log{N1c} او
+\Log{N1i} قاعدې په \olref{tab:N1} کښې ورکړل شوې دي۔
+\textbf{سرچينه‌يي سمون OLCMP-142:} دلته د اصلي N1 جدول او
+ورپسې واردات دي؛ د بل نظام نقل شوے نوم سم شوے دے۔
+
+\subfile{rules-N1}
+
+\begin{defn}
+د !!a{proof}~$\delta$ \emph{!!{height}}~$\pheight{\delta}$
+په استقرايي ډول داسې تعريفېږي۔
+\begin{enumerate}
+  \item که $\delta$ يوازې يو فرض ولري، $\pheight{\delta} = 0$۔
+  \item که $\delta$ په يوه مقدمه لرونکي استنتاج ختمېږي چې
+  سمدستي فرعي !!{proof} ئې~$\delta_1$ وي، نو
+  $\pheight{\delta} = \pheight{\delta_1} + 1$۔
+  \item که $\delta$ په دوو مقدمو لرونکي استنتاج ختمېږي چې
+  سمدستي فرعي !!{proof}s ئې~$\delta_1$ او~$\delta_2$ وي، نو
+  $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}) + 1$۔
+  \item که $\delta$ په \Elim{\lor} ختمېږي چې سمدستي فرعي
+  !!{proof}s ئې~$\delta_1$، $\delta_2$ او~$\delta_3$ وي، نو
+  $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}, \pheight{\delta_3}) + 1$۔
+\end{enumerate}
+که سېکوېنټ~$S$ د $\le n$ لوړوالي !!a{proof} ولري،
+$\Proves[n] S$ ليکو۔
+\end{defn}
+
+\begin{ex}
+په \Log{N1i} کښې هر !!{formula} له خپل ځانه د پرانيستي فرض
+په توګه !!a{proof} ګڼل کېږي۔ نو
+\[
+!A \land !B^x
+\]
+!!a{proof}~$\delta_1$ دے۔ لوړوالے ئې~$0$ دے۔ له
+$\delta_1$ څخه د~\Elim{\land} د دوو ډولونو په کارولو دوه
+!!{proof}s~$\delta_2$ او~$\delta_3$ ترلاسه کولے شو:
+\[
+\AxiomC{$!A \land !B^x$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\qquad
+\AxiomC{$!A \land !B^x$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\DisplayProof
+\]
+په~$\delta_2$ او~$\delta_3$ کښې د وروستي استنتاج سمدستي
+فرعي !!{proof}s هماغه يو دي: $!A \land !B$۔ دواړه
+!!{proof}s د $!A\land !B$ راتګ د پرانيستي فرض په توګه لري۔
+$\pheight{\delta_2} = \pheight{\delta_3} = 1$ لرو۔
+\textbf{سرچينه‌يي سمون OLCMP-143:} د فرض يوازېني ثبوت
+لوړوالے صفر دے؛ د دواړو يو-استنتاجي ثبوتونو لوړوالے يو دے۔
+په اصلي برابرۍ کښې د لومړي ثبوت ناسمه شمېره سمه شوه۔
+
+د \Intro{\land} قاعده د~$!B \land !A$ په بڼه پايلې
+دپاره د $!B$ او $!A$ په بڼه دوه مقدمې غواړي۔ نو دا
+!!a{proof}~$\delta_4$ دے:
+\[
+\AxiomC{$!A \land !B^x$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$!A \land !B^x$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DisplayProof
+\]
+لوړوالے ئې $\pheight{\delta_4} = \max(\pheight{\delta_2},
+\pheight{\delta_3})+1 = \max(1,1) + 1 = 2$ دے۔ د فرضونو
+په توګه د $!A \land !B$ دوه راتګونه لري او دواړه پرانيستي دي۔
+
+په پاے کښې د \Intro{\lif} په کارولو $\delta_5$ ترلاسه
+کولے شو:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+\DisplayProof
+\]
+لوړوالے ئې $\pheight{\delta_4} + 1 = 3$ دے۔ د
+\Intro{\lif} استنتاج د $!A \land !B$ په بڼه ټول په~$x$
+نښه شوي فرضونه باسي، يعنې د سمدستي فرعي ثبوت دواړه پخوا
+پرانيستي فرضونه۔ دا چې د $\delta_5$ يوازې همدغه فرضونه دي،
+نو پرانيستے فرض نۀ لري، او د خپل پاييز !!{formula}
+$(!A \land !B) \lif (!B \land !A)$ \emph{ثبوت} دے، يعنې
+!!a{proof} دے۔
+\end{ex}
+
+\end{document}

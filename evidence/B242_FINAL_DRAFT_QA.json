@@ -1,0 +1,107 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T23:11:12.332972+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0668",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_bytes": 10788,
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_bytes": 14359,
+      "paired_blocks": 20,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "math_exact_per_source_block": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_thirteen_rule_diagrams_retained": true,
+        "only_generic_third_premise_display_changed": true,
+        "exact_third_index_replacement": true,
+        "rules_N1_import_retained": true,
+        "local_height_progression_checked": true
+      },
+      "source_correction_ids": [
+        "OLCMP-140",
+        "OLCMP-141",
+        "OLCMP-142",
+        "OLCMP-143",
+        "OLCMP-144"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0345",
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "target_sha256_before": "5dcf8704a82e003510f0839e79c3a764947c25548c57b19fbab2c6874f0f2186",
+      "target_sha256": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
+      "target_sha256_after": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
+      "target_bytes": 3426,
+      "paired_blocks": 10,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0345-REDUCTION-PROSE-AND-SCOPE"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0668": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_thirteen_rule_diagrams_retained": true,
+      "only_generic_third_premise_display_changed": true,
+      "exact_third_index_replacement": true,
+      "rules_N1_import_retained": true,
+      "local_height_progression_checked": true
+    },
+    "OLP-0345": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_prior_math_spans_byte_identical": true,
+      "all_four_original_examples_retained": true,
+      "display_and_align_bytes_exact": true
+    }
+  },
+  "all_thirteen_diagrams_retained": true,
+  "mathematical_or_historical_source_corrections_added": 5,
+  "source_preaudit_sha256": "b5757e85e7e7342e737b0193d0ffbd0244af569156b6872b901938582fd2562d"
+}

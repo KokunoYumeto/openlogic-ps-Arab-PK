@@ -1,0 +1,19 @@
+{
+  "schema": "ps-reader-rendering-defect/1",
+  "utc": "2026-09-30T23:32:51.349361+00:00",
+  "status": "open; no expanded-reader acceptance",
+  "reader_units": 654,
+  "reader_tex_sha256": "c6ccfe8012dbda482c636e953e95b348694585a1e7bdabcda656a0da96704008",
+  "pdf_sha256": "78b193927f2cac61b476a34d6d314e2b549c54829eafee5e846c985e9beb9361",
+  "affected_observed_unit": "OLP-0342",
+  "segment_id": "OLP-0342-B005",
+  "related_same_literal_unit": "OLP-0341",
+  "source_target_credit_text": "Jeremy Avigad",
+  "source_credit_retained": true,
+  "target_sha256": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+  "physical_page": 464,
+  "printed_page": "463",
+  "page_png_sha256": "670705cf06ea076bc91e756592aeccac919d2118a92edb8871308a27e7ed0407",
+  "finding": "The unisolated two-word Latin credit renders with the surname visually before the given name in the RTL editorial block. Source/target retain the original name bytes; the reader must isolate the whole Latin phrase as one LTR run.",
+  "next_action": "Repair only the reader Latin-credit rendering at the next source checkpoint; retain original attribution, exact target/source bytes and other formal spans; verify the repaired rendered page before any reader acceptance."
+}

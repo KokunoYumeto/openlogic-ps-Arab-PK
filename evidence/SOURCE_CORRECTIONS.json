@@ -21148,6 +21148,269 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-140",
+      "unit_id": "OLP-0668",
+      "classification": "N1-formula-tree-assumption-leaves",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_locator": "content/proof-theory/natural-deduction/rules-proofs.tex:131",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-proofs.tex",
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_line_1based": 130,
+      "disclosure_line_1based": 138,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د N1 ثبوت د فارمولونو متناهي ونه ده چې له فرضونو جوړېږي، نۀ د سېکوېنټونو له بديهياتو؛ د پاڼې، استنتاج او پرانيستي راتګ شرطونه عين دي؛ ۱۴۰ سمون ښکاره دے۔",
+      "reason": "د N1 ثبوت د فارمولونو متناهي ونه ده چې له فرضونو جوړېږي، نۀ د سېکوېنټونو له بديهياتو؛ د پاڼې، استنتاج او پرانيستي راتګ شرطونه عين دي؛ ۱۴۰ سمون ښکاره دے۔",
+      "exact_original_text": "finite trees of sequents\nthat are inductively generated from axioms using the rules of\ninference.",
+      "exact_proposed_source_text": "finite trees of formulas\nthat are inductively generated from labelled assumptions using the rules of\ninference.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The same section inductively defines N1 proofs as formula trees with labelled assumptions; N1 table has formula nodes. Sequent trees/axioms copy a different presentation and contradict the local definition.",
+      "formula_policy": "يوازې د درېيمې مقدمې ثبت شوے اندېکس او د لوړوالي ثبت شوې برابري سمه شوې ده؛ نور ټول فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+      "audit_artifacts": [
+        "B242_SOURCE_AUDIT.json",
+        "B242_FINAL_DRAFT_QA.json",
+        "B242_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-141",
+      "unit_id": "OLP-0668",
+      "classification": "third-premise-index",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_locator": "content/proof-theory/natural-deduction/rules-proofs.tex:177",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-proofs.tex",
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_line_1based": 142,
+      "disclosure_line_1based": 189,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د يو فرض بنسټ، يوې يا دوو يا درې مقدمو جوړښت، سازګار ليبلونه او د فرضونو د ايستلو کره څانګې بشپړ دي؛ د درېيم فرعي ثبوت ناسمه دويمه مقدمه په درېيمه سمه شوه، نور ټول رسمونه عين دي۔",
+      "reason": "د يو فرض بنسټ، يوې يا دوو يا درې مقدمو جوړښت، سازګار ليبلونه او د فرضونو د ايستلو کره څانګې بشپړ دي؛ د درېيم فرعي ثبوت ناسمه دويمه مقدمه په درېيمه سمه شوه، نور ټول رسمونه عين دي۔",
+      "exact_original_text": "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_2$}",
+      "exact_proposed_source_text": "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_3$}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The generic clause explicitly assigns delta3 conclusion A3, but the copied third subtree shows A2. Replace only that index. Actual disjunction-elimination can specialize the last two premises to the same C; the generic names must still match their assigned subproofs.",
+      "formula_policy": "يوازې د درېيمې مقدمې ثبت شوے اندېکس او د لوړوالي ثبت شوې برابري سمه شوې ده؛ نور ټول فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+      "audit_artifacts": [
+        "B242_SOURCE_AUDIT.json",
+        "B242_FINAL_DRAFT_QA.json",
+        "B242_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_3$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-142",
+      "unit_id": "OLP-0668",
+      "classification": "N1-table-system-name",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_locator": "content/proof-theory/natural-deduction/rules-proofs.tex:202",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-proofs.tex",
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_line_1based": 204,
+      "disclosure_line_1based": 209,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "فرعي او سمدستي فرعي ثبوتونه کره توپير لري؛ اصلي جدول او واردات د N1 دي او نقل شوي N2 نومونه په ۱۴۲ سمون سره سم شول۔",
+      "reason": "فرعي او سمدستي فرعي ثبوتونه کره توپير لري؛ اصلي جدول او واردات د N1 دي او نقل شوي N2 نومونه په ۱۴۲ سمون سره سم شول۔",
+      "exact_original_text": "The rules of \\Log{N2c} and \\Log{N2i}\nare given in \\olref{tab:N1}",
+      "exact_proposed_source_text": "The rules of \\Log{N1c} and \\Log{N1i}\nare given in \\olref{tab:N1}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The referenced label and immediately imported rules-N1 file explicitly name N1c/N1i. Change only copied system names, keep identifier/import.",
+      "formula_policy": "يوازې د درېيمې مقدمې ثبت شوے اندېکس او د لوړوالي ثبت شوې برابري سمه شوې ده؛ نور ټول فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+      "audit_artifacts": [
+        "B242_SOURCE_AUDIT.json",
+        "B242_FINAL_DRAFT_QA.json",
+        "B242_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-143",
+      "unit_id": "OLP-0668",
+      "classification": "height-one-proof-indices",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_locator": "content/proof-theory/natural-deduction/rules-proofs.tex:247",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-proofs.tex",
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_line_1based": 235,
+      "disclosure_line_1based": 259,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "لومړنے فرض ثبوت صفر لوړوالے لري؛ د دواړو conjunction ايستلو ثبوتونو لوړوالے يو دے۔ د ۱۴۳ سمون په برابرۍ کښې همدا دوه ثبوتونه ښيي، نۀ لومړنے صفر-لوړوالي ثبوت۔",
+      "reason": "لومړنے فرض ثبوت صفر لوړوالے لري؛ د دواړو conjunction ايستلو ثبوتونو لوړوالے يو دے۔ د ۱۴۳ سمون په برابرۍ کښې همدا دوه ثبوتونه ښيي، نۀ لومړنے صفر-لوړوالي ثبوت۔",
+      "exact_original_text": "$\\pheight{\\delta_1} = \\pheight{\\delta_2} = 1$",
+      "exact_proposed_source_text": "$\\pheight{\\delta_2} = \\pheight{\\delta_3} = 1$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The immediately defined assumption delta1 has height0. Both displayed elimination subproofs delta2/delta3 have one inference and height1; delta4 has2 and delta5 has3 as already printed.",
+      "formula_policy": "يوازې د درېيمې مقدمې ثبت شوے اندېکس او د لوړوالي ثبت شوې برابري سمه شوې ده؛ نور ټول فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+      "audit_artifacts": [
+        "B242_SOURCE_AUDIT.json",
+        "B242_FINAL_DRAFT_QA.json",
+        "B242_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pheight{\\delta_1}=\\pheight{\\delta_2}=1$"
+        ],
+        "target_only": [
+          "$\\pheight{\\delta_2}=\\pheight{\\delta_3}=1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-144",
+      "unit_id": "OLP-0668",
+      "classification": "vacuous-discharge-retained-label-description",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_locator": "content/proof-theory/natural-deduction/rules-proofs.tex:74",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-proofs.tex",
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_line_1based": 47,
+      "disclosure_line_1based": 74,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د فرضونو نښې ټاکلي راتګونه باسي؛ د اړينې بڼې ټول فرضونه يا ان يو فرض ايستل اړين نۀ دي۔ اصلي بې‌فرضه ايستلو رسم عين دے، لومړۍ نښه په رسم کښې شته خو پرېښودے شي؛ ۱۴۴ سمون يوازې د سرچينې ناسمه يادونه سموي۔",
+      "reason": "د فرضونو نښې ټاکلي راتګونه باسي؛ د اړينې بڼې ټول فرضونه يا ان يو فرض ايستل اړين نۀ دي۔ اصلي بې‌فرضه ايستلو رسم عين دے، لومړۍ نښه په رسم کښې شته خو پرېښودے شي؛ ۱۴۴ سمون يوازې د سرچينې ناسمه يادونه سموي۔",
+      "exact_original_text": "When a rule does not discharge any assumptions, we just leave out the\ndischarge label (as we did here).",
+      "exact_proposed_source_text": "When a rule does not discharge any assumptions, we may leave out the\ndischarge label (the first discharge label in the displayed proof could be omitted).",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The source actual displayed first inference retains label x but no x assumption, while the later inference labelled y discharges the sole y assumption. Vacuous discharge is valid; retain the full diagram and correct only the false claim that the label was already omitted.",
+      "formula_policy": "يوازې د درېيمې مقدمې ثبت شوے اندېکس او د لوړوالي ثبت شوې برابري سمه شوې ده؛ نور ټول فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+      "audit_artifacts": [
+        "B242_SOURCE_AUDIT.json",
+        "B242_FINAL_DRAFT_QA.json",
+        "B242_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

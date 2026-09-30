@@ -1,0 +1,190 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T23:11:12.332972+00:00",
+  "status": "بشپړ OLP-0668 او بشپړه OLP-0345 بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0668",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "source_bytes": 10788,
+      "target_sha256": "abd3ffd101c73f8a28c66ced4f68b4e65e81b6fc6ee0caa05ae906a4ddf5d361",
+      "target_bytes": 14359,
+      "paired_blocks": 20,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "math_exact_per_source_block": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_thirteen_rule_diagrams_retained": true,
+        "only_generic_third_premise_display_changed": true,
+        "exact_third_index_replacement": true,
+        "rules_N1_import_retained": true,
+        "local_height_progression_checked": true
+      },
+      "source_correction_ids": [
+        "OLCMP-140",
+        "OLCMP-141",
+        "OLCMP-142",
+        "OLCMP-143",
+        "OLCMP-144"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0345",
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "target_sha256_before": "5dcf8704a82e003510f0839e79c3a764947c25548c57b19fbab2c6874f0f2186",
+      "target_sha256": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
+      "target_sha256_after": "c3d57595d2ae6297dc73d50342139778a060ec88dac3695ae7ea2ab922876f68",
+      "target_bytes": 3426,
+      "paired_blocks": 10,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0345-REDUCTION-PROSE-AND-SCOPE"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ علمي او معنايي نثر لومړنے دے؛ د لويو او کوچنيو مقدمو عين پاکستانے مرکب موقتي دے۔",
+      "evidence_limit": "پاکستانے بالغ علمي او معنايي نثر لومړنے دے؛ د لويو او کوچنيو مقدمو عين پاکستانے مرکب موقتي دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د N1 فارمولونو ونه او د فرض نښې منجمده سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د N1 فارمولونو ونه او د فرض نښې منجمده سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ د مقدمې او پايلې ځانګړي رولونه اصلي N1 تعريف ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ د مقدمې او پايلې ځانګړي رولونه اصلي N1 تعريف ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "48",
+      "pdf_page_1based": 53,
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د شرطي او مقدمې په ګډ استنتاج کښې پايله ښيي؛ اصلي نښه لرونکي فرضونه او د ايستلو رول بېل دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د شرطي او مقدمې په ګډ استنتاج کښې پايله ښيي؛ اصلي نښه لرونکي فرضونه او د ايستلو رول بېل دے۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ استقرايي بنسټ او ګام ښيي؛ د لوړوالي کره صفر او يو او دوه او درې شمېر د اصل خپل ثبوتونه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ استقرايي بنسټ او ګام ښيي؛ د لوړوالي کره صفر او يو او دوه او درې شمېر د اصل خپل ثبوتونه ټاکي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے اصلي علمي نثر کښې، ے او د جملې معنايي بيان ښيي؛ د بېټا راکمولو عين پاکستانے مرکب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے اصلي علمي نثر کښې، ے او د جملې معنايي بيان ښيي؛ د بېټا راکمولو عين پاکستانے مرکب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د تابعې تعويض او ارجاعي تعريف ښيي؛ د بېټا انقباض او د نيولو مخنيوي کره حد بېل سرچينه‌يي مفهوم دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د تابعې تعويض او ارجاعي تعريف ښيي؛ د بېټا انقباض او د نيولو مخنيوي کره حد بېل سرچينه‌يي مفهوم دے۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P48-MODUS-PONENS",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [
+    "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+  ],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-140",
+    "OLCMP-141",
+    "OLCMP-142",
+    "OLCMP-143",
+    "OLCMP-144"
+  ],
+  "new_review_entry_ids": [
+    "DEC-PS-0345-REDUCTION-PROSE-AND-SCOPE",
+    "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT",
+    "DEC-OLCMP-140",
+    "DEC-OLCMP-141",
+    "DEC-OLCMP-142",
+    "DEC-OLCMP-143",
+    "DEC-OLCMP-144"
+  ],
+  "revised_review_entry_ids": [],
+  "semantic_samples_added": 20,
+  "focused_qa_sha256": "f628dee29918eadfcdc644d150c346f9fbfbbc7e4b8f417ab10a97f706daeaa3",
+  "model_provenance_sha256": "cc3aabab72a6f0f892f71c76e6054c0b53042892e11a6db25c01c74161646ec8",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0345.json",
+  "related_reaudit_sha256": "ad370e93749f13abbe515d27e4e9284e5c45e29f49bb29053f18c74827a39e95",
+  "unresolved": "۵۴ واحدونه، د تجربوي برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۶۴ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۶۸ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ بشپړ OLP-0669 او OLP-0346 دوام؛ د TeX ځای ژباړه نۀ دروي۔",
+  "formal_code_exception_receipt": "B242_FORMAL_SUBFILE_QA.json",
+  "formal_code_exception_sha256": "3dbf0dda454d551bca7be2c78f7f64d9dd96d6f193760616d118571f3f6d793b"
+}
