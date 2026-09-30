@@ -1,0 +1,494 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T04:45:37.302968+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "source_bytes": 2302,
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "target_bytes": 3455,
+      "target_sha256": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0624",
+      "source_path": "content/history/biographies/gerhard-gentzen.tex",
+      "source_bytes": 3016,
+      "source_sha256": "408dd58408ae82521025e8fcaa688d6025ed3bd84752721b826906bfcde5e6a0",
+      "target_bytes": 4568,
+      "target_sha256": "aee47270f9f983775d6636e36b7b31baf5a19612a8fbb942db48e2664435bb17",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0625",
+      "source_path": "content/history/biographies/kurt-goedel.tex",
+      "source_bytes": 3639,
+      "source_sha256": "b1096c00b2909587e2ac9bae78c9fb1484e4b056e4ebc13c08316cb85afc2664",
+      "target_bytes": 5430,
+      "target_sha256": "9cff7d525e64e5a21ce476eb5400c2c23cf1b721ad03a3031d3aae3de9cf1978",
+      "paired_blocks": 15,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "c369f031cf89714293b222088b2029e9b3a73c588d732383ead17aa70f6df892",
+  "model_provenance_sha256": "88023a9ba377d0ace7804b74f18d4a925bb07a2dcff0fb179369481ce3fe7ee9",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P140-CONSISTENCY",
+    "AF-NIAZMAN-P138-EQUALITY"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني علمي نثر د بالغ بيان، کښې او وروستي ے د رسم‌الخط شاهد دے؛ د شخصي نومونو يا ژوند د نېټو تصديق نۀ دے.",
+      "evidence_limit": "پاکستاني علمي نثر د بالغ بيان، کښې او وروستي ے د رسم‌الخط شاهد دے؛ د شخصي نومونو يا ژوند د نېټو تصديق نۀ دے.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني معنايي نثر د لفظ، جملې او د عبارت د مانا د توپير دپاره وکتل شو؛ د تاريخي يا طبي دعوو سرچينه نۀ ده.",
+      "evidence_limit": "پاکستاني معنايي نثر د لفظ، جملې او د عبارت د مانا د توپير دپاره وکتل شو؛ د تاريخي يا طبي دعوو سرچينه نۀ ده.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "مرجع ګرامر د فعل وروستنے ترتيب او د بشپړوونکو جملې شاهد دے؛ د پاکستاني رياضيکي نوم تصويب نۀ دے.",
+      "evidence_limit": "مرجع ګرامر د فعل وروستنے ترتيب او د بشپړوونکو جملې شاهد دے؛ د پاکستاني رياضيکي نوم تصويب نۀ دے.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "finding": "افغان سيمه‌ييز رياضيکي مخ د صفر، ورپسې عدد، ارتسام، تعويض او بياځلې تعريف تابعې ښيي؛ د محاسبه کېدنې د تابعې مفهوم سره مرسته کوي، خو د چرچ--ټيورينګ د اصل يا لامبډا حساب عين نوم نۀ تصديقوي.",
+      "evidence_limit": "افغان سيمه‌ييز رياضيکي مخ د صفر، ورپسې عدد، ارتسام، تعويض او بياځلې تعريف تابعې ښيي؛ د محاسبه کېدنې د تابعې مفهوم سره مرسته کوي، خو د چرچ--ټيورينګ د اصل يا لامبډا حساب عين نوم نۀ تصديقوي.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "finding": "افغان سيمه‌ييز مخ تيوري، بديهيات، استنباطي قوانين او د ثبوت متناهي لړۍ جلا تعريفوي؛ د طبيعي استنتاج او سېکوېنټ د حساب عين مرکب نومونه لا سرچينه‌يي او لنډمهاله دي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ تيوري، بديهيات، استنباطي قوانين او د ثبوت متناهي لړۍ جلا تعريفوي؛ د طبيعي استنتاج او سېکوېنټ د حساب عين مرکب نومونه لا سرچينه‌يي او لنډمهاله دي.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "140",
+      "pdf_page_1based": 145,
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "finding": "افغان سيمه‌ييز مخ د يو فارمول او د هغه د نفي دواړو اثبات له ناسازګارۍ سره تړي؛ د ګېنټسن يا ګوډل د تاريخي قضيو خپلواک ثبوت نۀ دے.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د يو فارمول او د هغه د نفي دواړو اثبات له ناسازګارۍ سره تړي؛ د ګېنټسن يا ګوډل د تاريخي قضيو خپلواک ثبوت نۀ دے.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "138",
+      "pdf_page_1based": 143,
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "finding": "افغان سيمه‌ييز مخ د مساوات انعکاس، تناظر، انتقال او تعويض صوري کوي؛ په منطق کښې د عينيت اړيکه د يوه شي له ځان سره برابري ده، نۀ د شخص پېژندنه.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د مساوات انعکاس، تناظر، انتقال او تعويض صوري کوي؛ په منطق کښې د عينيت اړيکه د يوه شي له ځان سره برابري ده، نۀ د شخص پېژندنه.",
+      "inspection": "Native page image visually inspected in this continuation before registration and final translation review.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0623": {
+      "14": 1,
+      "1903": 1,
+      "1920": 1,
+      "1927": 1,
+      "1967": 1,
+      "1990": 1,
+      "1": 1,
+      "1995": 1,
+      "92": 1,
+      "1936": 1,
+      "1979": 1
+    },
+    "OLP-0624": {
+      "24": 1,
+      "1909": 1,
+      "1933": 1,
+      "1934": 1,
+      "1936": 1,
+      "1942": 1,
+      "1943": 1,
+      "1945": 2,
+      "4": 1,
+      "35": 1
+    },
+    "OLP-0625": {
+      "28": 1,
+      "1906": 1,
+      "1924": 1,
+      "1929": 1,
+      "1938": 2,
+      "1977": 1,
+      "14": 1,
+      "1978": 1
+    }
+  },
+  "segment_context_checked": {
+    "OLP-0623": {
+      "5": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "6": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "7": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "8": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P147-FUNCTIONS",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "terms": [
+          "TERM-CHURCH-TURING-THESIS",
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-COMPUTABILITY-FOUNDATIONS",
+          "TERM-FIRST-ORDER-DECISION-PROBLEM"
+        ]
+      },
+      "9": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "10": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "terms": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-CHURCH-TURING-THESIS"
+        ]
+      }
+    },
+    "OLP-0624": {
+      "5": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "6": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "7": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "terms": [
+          "TERM-PROOF-CALCULI",
+          "TERM-INCOMPLETENESS-HILBERT-PROGRAM"
+        ]
+      },
+      "8": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P140-CONSISTENCY"
+        ],
+        "terms": [
+          "TERM-PROOF-CALCULI",
+          "TERM-PROOF-PROPERTIES"
+        ]
+      },
+      "9": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "10": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "11": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      }
+    },
+    "OLP-0625": {
+      "5": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "6": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "7": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "8": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P140-CONSISTENCY",
+          "AF-NIAZMAN-P138-EQUALITY"
+        ],
+        "terms": [
+          "TERM-PROOF-PROPERTIES",
+          "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE",
+          "TERM-IDENTITY"
+        ]
+      },
+      "9": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "10": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "11": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "12": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV"
+        ],
+        "terms": []
+      },
+      "13": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P140-CONSISTENCY",
+          "AF-NIAZMAN-P138-EQUALITY"
+        ],
+        "terms": [
+          "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE"
+        ]
+      },
+      "14": {
+        "passages": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "GRAMMAR-P166-SOV",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P140-CONSISTENCY",
+          "AF-NIAZMAN-P138-EQUALITY"
+        ],
+        "terms": [
+          "TERM-INCOMPLETENESS-GODEL-INDEPENDENCE"
+        ]
+      }
+    }
+  },
+  "source_bibliography_sha256": "5375d3ec87b5d38f57e95ba10b833fe3d7d68c12c7f7c550b5081d93c755d023",
+  "source_citation_finding": "Frozen Church bibliography identifies the1936 decision-problem and elementary-number-theory papers. The parenthetical thesis is preserved; this alone does not establish a source error. No external historical confirmation claimed.",
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [
+    "DEC-B207-BIOGRAPHY-TECHNICAL-DISTINCTIONS"
+  ],
+  "semantic_samples_added": 23,
+  "unresolved": "پاتې اووه ژوندليکونه له OLP-0626 څخه لا پاتې دي؛ د ټول ۷۲۲ لوستونکی، خپلواکه بياکتنه، بشپړ ځايي‌کول او خپرونه لا پاتې دي.",
+  "next_executable_action": "Run both625 corpus generators, verify precise new segment passage/term mappings and byte-identical canonical replay, accept complete biographies623–625; continue Noether626."
+}

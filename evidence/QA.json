@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 622,
-    "structural_pass": 622,
+    "draft_units": 625,
+    "structural_pass": 625,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B206-HISTORY-OPENING",
+  "batch": "PS-B207-BIOGRAPHIES",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -20020,6 +20020,123 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0623",
+      "path": "content/history/biographies/alonzo-church.tex",
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "translation_sha256": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Entscheidungsproblem",
+        "UCLA"
+      ],
+      "allowed_residual_english": [
+        "Entscheidungsproblem",
+        "UCLA"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0624",
+      "path": "content/history/biographies/gerhard-gentzen.tex",
+      "source_sha256": "408dd58408ae82521025e8fcaa688d6025ed3bd84752721b826906bfcde5e6a0",
+      "translation_sha256": "aee47270f9f983775d6636e36b7b31baf5a19612a8fbb942db48e2664435bb17",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "II",
+        "SA",
+        "Schlie",
+        "Untersuchungen",
+        "ber",
+        "das",
+        "en",
+        "logische"
+      ],
+      "allowed_residual_english": [
+        "II",
+        "SA",
+        "Schlie",
+        "Untersuchungen",
+        "ber",
+        "das",
+        "en",
+        "logische"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0625",
+      "path": "content/history/biographies/kurt-goedel.tex",
+      "source_sha256": "b1096c00b2909587e2ac9bae78c9fb1484e4b056e4ebc13c08316cb85afc2664",
+      "translation_sha256": "9cff7d525e64e5a21ce476eb5400c2c23cf1b721ad03a3031d3aae3de9cf1978",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "Der",
+        "Herr",
+        "IAS",
+        "Warum",
+        "kleine"
+      ],
+      "allowed_residual_english": [
+        "Der",
+        "Herr",
+        "IAS",
+        "Warum",
+        "kleine"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -34896,6 +35013,144 @@
       "passage": "OLP-0622-B011",
       "reverse_paraphrase": "Both full-biography citations, BBC Radio4 and its translated program title, the radical views description and rap reference remain; no published Pashto edition of those resources is claimed.",
       "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B005",
+      "reverse_paraphrase": "The section names Alonzo Church.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B006",
+      "reverse_paraphrase": "The photograph caption names Church; church-alonzo is the unchanged image identifier.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B007",
+      "reverse_paraphrase": "Church was born in Washington DC on June14,1903; an early air-gun incident blinded one eye. Preparatory schooling in Connecticut ended in1920 and Princeton university study began that year; doctorate1927, then two years abroad and return. Politeness, meticulous blackboard writing, clear Duco glue preserving papers, science-fiction magazines and letters pointing out inaccuracies all remain.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B008",
+      "reverse_paraphrase": "Church, Kleene and Rosser developed lambda calculus independently of Turing machines. Their formal definitions compute the same functions. The Church–Turing thesis identifies intuitive effective computability of natural-number functions with formal computation; it is not presented as a proved theorem. Church’s theorem separately states first-order validity is undecidable.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B009",
+      "reverse_paraphrase": "In1967 Church moved from Princeton to UCLA, remained professor until retirement1990, and died August1,1995 at age92.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0623",
+      "passage": "OLP-0623-B010",
+      "reverse_paraphrase": "The brief biography, original papers,1930s Princeton interview and JSL book-review archive retain every citation. The original parenthetical Church’s Thesis is retained as اصل; it does not rename the theorem in the preceding paragraph. Review period1936–1979 remains. UCLA and Entscheidungsproblem preserve identifiable source names, not ordinary untranslated exposition.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B005",
+      "reverse_paraphrase": "The section names Gerhard Gentzen.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B006",
+      "reverse_paraphrase": "The photograph names Gentzen; gentzen-gerhard stays unchanged.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B007",
+      "reverse_paraphrase": "Gentzen created structural proof theory, natural deduction and sequent-calculus derivation systems. Born November24,1909 in Greifswald, homeschooled three years and initially behind most classmates at preparatory school, he nevertheless excelled in mathematics and also wrote poems and school plays. The protected derivation token remains.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B008",
+      "reverse_paraphrase": "He studied at Greifswald and then Göttingen,Munich,Berlin; doctorate1933 under Weyl, with most supervision by Bernays who was dismissed by the Nazis. Hilbert assistant1934; the same-year calculus developments and original German paper title with translated bracketed explanation remain; consistency of Peano axioms1936. This is consistency, not completeness.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B009",
+      "reverse_paraphrase": "The source’s complicated Nazi relationship remains: Bernays’s forced departure coincided with joining university SA; Nazi Party membership and wartime telecommunications service are reported. Release1942 for a nervous breakdown remains. The source explicitly leaves his loyalty or career motive uncertain; no new historical verdict is added.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B010",
+      "reverse_paraphrase": "Accepted Prague German University position1943; Prague revolt and Soviet arrests1945; forced-labour detention attributed to Nazi organizational membership. Malnutrition death in his cell August4,1945 at age35 remains.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0624",
+      "passage": "OLP-0624-B011",
+      "reverse_paraphrase": "Both biography readings, original German deduction papers and the single collected English-translation volume with biographical sketch retain all citation keys. No Pashto edition of the cited works is implied.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B005",
+      "reverse_paraphrase": "The section names Kurt Gödel using the established provisional spelling ګوډل.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B006",
+      "reverse_paraphrase": "The photograph caption names Gödel; goedel-kurt stays unchanged.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B007",
+      "reverse_paraphrase": "Born April28,1906 in Brünn, then Austria–Hungary and now Brno,Czech Republic. Pronunciation and original family nickname remain with Pashto sense Little Mr Why. Excellent grades except occasionally mathematics, illness absences, exemption from physical education, childhood rheumatic-fever diagnosis and his lifelong belief about his heart despite contrary medical assessments remain attributed as in the source.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B008",
+      "reverse_paraphrase": "Vienna study1924, doctorate1929; physics intention shifted to mathematics and logic partly through Carnap. Hahn-supervised dissertation proves first-order predicate logic completeness with identity. First and second incompleteness results followed a year later and were published in1931. Semantic completeness and theory incompleteness remain distinct. Vienna Circle involvement and Carnap influence remain.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B009",
+      "reverse_paraphrase": "Marriage to Adele Nimbursky1938; parents objected because she was six years older, divorced and a nightclub dancer. Social pressures did not change the marriage, which stayed happy until his death.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B010",
+      "reverse_paraphrase": "After Nazi annexation of Austria1938 Gödel and Adele emigrated to the United States; the sentence does not assert a newly specified emigration date. Princeton IAS appointment, introversion and eccentricity, fruitful collaboration, essays in set theory,philosophy,physics and strong Einstein friendship remain.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B011",
+      "reverse_paraphrase": "Later mental-health deterioration, wife’s hospitalization1977 preventing meal preparation, lifelong problems, paranoia, fear of poisoning, refusal of food and starvation death January14,1978 in Princeton remain source reports, without independent clinical diagnosis.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B012",
+      "reverse_paraphrase": "The full biography and four additional biographical or philosophical collections keep all five citation keys.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B013",
+      "reverse_paraphrase": "Original German dissertation and incompleteness paper retain citations. Published and unpublished writings and selected correspondence are available in the English Collected Papers; the translated displayed title does not imply a published Pashto version.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0625",
+      "passage": "OLP-0625-B014",
+      "reverse_paraphrase": "Detailed theorem treatment and an informal philosophical podcast retain the author identity and both citations.",
+      "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
     }
   ],
   "builds": [

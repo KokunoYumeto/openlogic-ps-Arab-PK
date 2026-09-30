@@ -1,0 +1,48 @@
+{
+  "schema": "ps-frozen-translation-batch-qa/1",
+  "utc": "2026-09-30T04:23:49.514502+00:00",
+  "status": "checked complete draft batch; not accepted",
+  "units": [
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "source_bytes": 2302,
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "target_bytes": 3455,
+      "target_sha256": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ordered_math_spans": 0,
+      "source_correction_ids_pending_registration": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "translation_module_sha256": "2f9ccce8ca8c0ba7dbe4c6ab0a050c9fb6e0ae378e4c6b10630e7e8d1729120c",
+  "checker_sha256": "b6706a5b5994dc14285245f0bb798a11d09ca39925ffc358a789e7cb538f960f",
+  "all_checks_pass": true,
+  "semantic_canon_registration_complete": false,
+  "new_render_acceptance": false
+}

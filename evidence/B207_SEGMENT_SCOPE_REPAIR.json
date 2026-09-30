@@ -1,0 +1,22 @@
+{
+  "schema": "ps-segment-consultation-scope-repair/1",
+  "status": "PASS; both corpus generators byte-identical and exact contextual mappings verified",
+  "changes": [
+    {
+      "path": "work/qa_batch.py",
+      "before": "c64d2e00b079cab21960eded7ac5b62e07087d77aa9e1ed0c1ba5667d08fa1c8",
+      "after": "20577c38232f173251ce7a2dff416b75825c63010dcd68f512bf0d4f0b892d97"
+    },
+    {
+      "path": "tools/check_translation.py",
+      "before": "d85ae758078af8ad08a86d1a4daaec1a8719f5263e0def68efcd38dc7c60098e",
+      "after": "45128809be235e52647147e74448adacc507bc319535a8200ad4ffae558ee6dd"
+    }
+  ],
+  "reason": "Biographical captions and personal-history blocks must not acquire function/proof term decisions solely because the same file contains one technical paragraph. Optional block-scoped passage and term lists preserve actual contextual use; existing plans without overrides keep their historical mappings.",
+  "validation": "Exact new segment mappings and both deterministic outputs will be compared before acceptance.",
+  "full_historical_semantic_reaudit_completed": false,
+  "verified_new_segments": 23,
+  "qa_sha256": "673df3a3e9c450809cc0823a3778fed64dccc00586eb01ebb1173c556faa1845",
+  "canon_uses_sha256": "157a1199f0a3bbba529a7338979b840172da23ef28ebc214c1775c283da72e5b"
+}
