@@ -1,0 +1,34 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T20:30:36.562353+00:00",
+  "status": "resolved; intermediate duplicates retained",
+  "unit_id": "OLP-0660",
+  "preaudit_sha256": "fc213726fca6fb74e6be88c1164e1ccd738485caacd92fcaab6277518c68cf32",
+  "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+  "primary_contexts": [
+    {
+      "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+      "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+      "locator": "ordinary Cut definition",
+      "actual_source_context_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "locator": "prop:weak-G3c-adm and repeated context weakening",
+      "actual_source_context_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+      "source_sha256": "08233bea6d0d9dedcf1d7ed436524c5d36d87a89ba9ea28226f2caefe8c08023",
+      "locator": "prop:G3c-cont-adm",
+      "actual_source_context_consulted": true
+    }
+  ],
+  "exact_intermediate_source_sequent": "$!B, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda,\n\\Lambda$",
+  "finding": "The induction result of the third tree may be weakened on both sides with Pi and Lambda by the exact height-preserving admissibility proposition. Its larger displayed end-sequent is therefore a valid proof-existence consequence. Keep these copies. Ordinary Cut removes B and concatenates the two actual displayed contexts; the final tree and following claim require the matching Delta multiplicity. Filename intuitionistic does not change the explicitly G3c/multi-succedent body into an intuitionistic theorem.",
+  "no_optional_background_added": true,
+  "no_exercise_solved": true,
+  "frozen_source_unchanged": true,
+  "new_erratum_for_weakening": false
+}

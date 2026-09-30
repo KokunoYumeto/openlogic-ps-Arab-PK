@@ -19997,6 +19997,114 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-124",
+      "unit_id": "OLP-0660",
+      "classification": "formula-prefix-marker-reversed",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+      "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+      "source_locator": "content/proof-theory/cut-elimination/intuitionistic.tex:43",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/intuitionistic.tex",
+      "target_sha256": "35eec1448b7dd7a285953044fc159d87b211a074acfb4ece7c3a8225b42a7b97",
+      "target_line_1based": 1,
+      "disclosure_line_1based": 51,
+      "mode": "د فارمول او عام پرېکون د کره سياقونو سمون او پښتو څرګندونه",
+      "translation_change": "د شرط تړنې اصلي پرېکون، د هماغه فارمول په لږ لوړوالي پرېکون، بيا د پايلې او د مقدمې په لږه رتبه پرېکون ټول څلور رسمونه عين ترتيب لري۔ د درېيم رسم د فارمول نښه سمه شوه۔ منځني اضافي سياقونه د G3c د کمزوري کولو له منلو وړتيا سره مشروع دي۔ وروستے عام پرېکون د مقدمې فارمول لرې کوي او د دواړو پاتې سياقونو ټول نقلونه يوځاے کوي؛ د رسم او استقرايي پايلې دواړو کښې د تالي دوه نقلونه ساتل شوي دي۔ په انقباض سره مطلوب سېکوېنټ پاتې کېږي۔ خام مرستندويه ټوټه ساتل شوې؛ د دوتنې نوم ترې نوې شهودي قضيه نۀ جوړوي۔",
+      "reason": "The third tree reverses the source formula prefix to B!. Its matching first and second tree premises, later conclusion and Cut on C all require !B. Correct only that marker.",
+      "exact_original_text": "\\Deduce$B!, \\Gamma \\fCenter \\Delta, !C$",
+      "exact_proposed_source_text": "\\Deduce$!B, \\Gamma \\fCenter \\Delta, !C$",
+      "formula_policy": "عين ثبت شوي لږ تر لږه سمونونه؛ لومړني دوه رسمونه او کمزوري شوي منځني سياقونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B234-IMPLICATION-CUT",
+      "audit_artifacts": [
+        "B234_SOURCE_AUDIT.json",
+        "B234_FINAL_DRAFT_QA.json",
+        "B234_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، اصلي قواعدو او اصلي شاهدانو له بياکتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$B!,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Pi\\fCenter\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Pi\\fCenter\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-125",
+      "unit_id": "OLP-0660",
+      "classification": "ordinary-cut-final-context-multiplicities",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+      "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+      "source_locator": "content/proof-theory/cut-elimination/intuitionistic.tex:56",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/intuitionistic.tex",
+      "target_sha256": "35eec1448b7dd7a285953044fc159d87b211a074acfb4ece7c3a8225b42a7b97",
+      "target_line_1based": 1,
+      "disclosure_line_1based": 70,
+      "mode": "د فارمول او عام پرېکون د کره سياقونو سمون او پښتو څرګندونه",
+      "translation_change": "د شرط تړنې اصلي پرېکون، د هماغه فارمول په لږ لوړوالي پرېکون، بيا د پايلې او د مقدمې په لږه رتبه پرېکون ټول څلور رسمونه عين ترتيب لري۔ د درېيم رسم د فارمول نښه سمه شوه۔ منځني اضافي سياقونه د G3c د کمزوري کولو له منلو وړتيا سره مشروع دي۔ وروستے عام پرېکون د مقدمې فارمول لرې کوي او د دواړو پاتې سياقونو ټول نقلونه يوځاے کوي؛ د رسم او استقرايي پايلې دواړو کښې د تالي دوه نقلونه ساتل شوي دي۔ په انقباض سره مطلوب سېکوېنټ پاتې کېږي۔ خام مرستندويه ټوټه ساتل شوې؛ د دوتنې نوم ترې نوې شهودي قضيه نۀ جوړوي۔",
+      "reason": "The displayed final Cut premises have contexts Gamma,Pi => Delta,Lambda,B and B,Gamma,Pi,Pi => Delta,Lambda,Lambda. Ordinary Cut removes B and concatenates these contexts, giving two Gamma, three Pi, two Delta and three Lambda. The source conclusion incorrectly retains B and contracts prematurely; the following induction claim also omits the second Delta. Correct both while preserving the legitimate weakened intermediate contexts and final admissible contraction.",
+      "exact_original_text": "\\[\n\\AxiomC{}\n\\RightLabel{$\\pi_1''$}\n\\Deduce$\\Gamma, \\Pi \\fCenter \\Delta, \\Lambda, !B$\n\\AxiomC{}\n\\RightLabel{$\\pi_2'''$}\n\\Deduce$!B, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda,\n\\Lambda$\n\\RightLabel{\\Cut}\n\\BinaryInf$!B, \\Gamma, \\Pi \\fCenter \\Delta, \\Lambda$\n\\DisplayProof\n\\]\n$\\Gamma,\n\\Gamma, \\Pi, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda, \\Lambda, \\Lambda$",
+      "exact_proposed_source_text": "\\[\n\\AxiomC{}\n\\RightLabel{$\\pi_1''$}\n\\Deduce$\\Gamma, \\Pi \\fCenter \\Delta, \\Lambda, !B$\n\\AxiomC{}\n\\RightLabel{$\\pi_2'''$}\n\\Deduce$!B, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda,\n\\Lambda$\n\\RightLabel{\\Cut}\n\\BinaryInf$\\Gamma, \\Gamma, \\Pi, \\Pi, \\Pi \\fCenter \\Delta, \\Delta, \\Lambda, \\Lambda, \\Lambda$\n\\DisplayProof\n\\]\n$\\Gamma, \\Gamma, \\Pi, \\Pi, \\Pi \\fCenter \\Delta, \\Delta, \\Lambda, \\Lambda, \\Lambda$",
+      "formula_policy": "عين ثبت شوي لږ تر لږه سمونونه؛ لومړني دوه رسمونه او کمزوري شوي منځني سياقونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B234-IMPLICATION-CUT",
+      "audit_artifacts": [
+        "B234_SOURCE_AUDIT.json",
+        "B234_FINAL_DRAFT_QA.json",
+        "B234_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، اصلي قواعدو او اصلي شاهدانو له بياکتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda,!B$\\AxiomC{}\\RightLabel{$\\pi_2'''$}\\Deduce$!B,\\Gamma,\\Pi,\\Pi\\fCenter\\Delta,\\Lambda,\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]",
+          "$\\Gamma,\\Gamma,\\Pi,\\Pi,\\Pi\\fCenter\\Delta,\\Lambda,\\Lambda,\\Lambda$"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda,!B$\\AxiomC{}\\RightLabel{$\\pi_2'''$}\\Deduce$!B,\\Gamma,\\Pi,\\Pi\\fCenter\\Delta,\\Lambda,\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma,\\Gamma,\\Pi,\\Pi,\\Pi\\fCenter\\Delta,\\Delta,\\Lambda,\\Lambda,\\Lambda$\\DisplayProof\\]",
+          "$\\Gamma,\\Gamma,\\Pi,\\Pi,\\Pi\\fCenter\\Delta,\\Delta,\\Lambda,\\Lambda,\\Lambda$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

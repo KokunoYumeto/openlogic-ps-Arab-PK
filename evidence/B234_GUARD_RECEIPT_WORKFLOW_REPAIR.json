@@ -1,0 +1,21 @@
+{
+  "schema": "ps-guard-receipt-workflow-repair/1",
+  "utc": "2026-09-30T20:44:13.887996+00:00",
+  "status": "PASS; exact warning strings and compact completion output",
+  "modified_files": [
+    {
+      "path": "tools/guard_tex.ps1",
+      "previous_sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62",
+      "sha256": "735802f6326efeddc9678065447c846c13a40e7cb25c0d59652d5ceadaf69299",
+      "bytes": 8538
+    }
+  ],
+  "reason": "Get-Content line objects include filesystem/provider properties; JSON expansion generated an enormous bibliography-warning object graph. Read exact .blg text with System.IO.File.ReadAllText and split into plain strings; print compact completion facts while retaining the full evidence file.",
+  "completed_guard_session": 96150,
+  "original_receipt_sha256": "32ff5d8f84d1e9412725029b877854ce2a7fb43657d0645530501fada58d434a",
+  "normalized_receipt_sha256": "79dae3c2a09d2a875d15d977963c0e1905156484f56d9865dcb23b9ab2bbc213",
+  "original_receipt_preserved": true,
+  "warning_text_exactly_matches_original_blg": true,
+  "no_second_teX_acquisition_or_process": true,
+  "same_mutex_and_captured_process_tree_rules": true
+}

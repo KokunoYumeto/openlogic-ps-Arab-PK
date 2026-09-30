@@ -1,0 +1,133 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T20:30:36.562353+00:00",
+  "status": "بشپړ OLP-0660 او بشپړه OLP-0337 بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0660",
+      "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+      "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+      "source_bytes": 2132,
+      "target_sha256": "35eec1448b7dd7a285953044fc159d87b211a074acfb4ece7c3a8225b42a7b97",
+      "target_bytes": 2927,
+      "paired_blocks": 1,
+      "changed_blocks": [
+        1
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "all_four_trees_retained": true,
+        "raw_auxiliary_fragment_retained": true,
+        "first_two_trees_byte_identical": true,
+        "weakened_intermediate_sequent_retained": true
+      },
+      "source_correction_ids": [
+        "OLCMP-124",
+        "OLCMP-125"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0337",
+      "source_path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "source_sha256": "3da2e59a89619b402e35fc14fb67b2c94584e503450b6253d22deca5f456331d",
+      "target_sha256_before": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "target_sha256": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "target_sha256_after": "0e3c32d920b0ed18aca583cdd4712d1faa39563e17735abf72e0a0697c20b116",
+      "target_bytes": 1128,
+      "paired_blocks": 7,
+      "source_correction_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د B234 مسودې او بشپړې بياکتنې مخکې پنځه کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ معنايي او استدلالي نثر لومړنے شاهد دے؛ د G3c عين قواعد او د سياقونو نقلونه منجمده سرچينه ټاکي۔",
+      "evidence_limit": "پاکستانے بالغ معنايي او استدلالي نثر لومړنے شاهد دے؛ د G3c عين قواعد او د سياقونو نقلونه منجمده سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "د B234 مسودې او بشپړې بياکتنې مخکې پنځه کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ منطقي ثبوت او بديهي شېما ښيي؛ د پرېکون رتبې او لوړوالي عين ترکيب د پاکستاني چاپ ثبت نۀ ګڼل کېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ منطقي ثبوت او بديهي شېما ښيي؛ د پرېکون رتبې او لوړوالي عين ترکيب د پاکستاني چاپ ثبت نۀ ګڼل کېږي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "د B234 مسودې او بشپړې بياکتنې مخکې پنځه کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د استقرا بنسټ، فرضيه او بل ګام په اصلي رياضي نثر کښې ښيي؛ د G3c د رتبې او لوړوالي ترتيب سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د استقرا بنسټ، فرضيه او بل ګام په اصلي رياضي نثر کښې ښيي؛ د G3c د رتبې او لوړوالي ترتيب سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "133",
+      "pdf_page_1based": 144,
+      "page_image_sha256": "46f820907244b9d469c59bb7b2c13ba339536f23d008e4c85a1a055a2f415b7d",
+      "actual_consultation": "د B234 مسودې او بشپړې بياکتنې مخکې پنځه کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د سټ او د فرعي سټونو د سټ د اندازو توپير او قطري استدلال ښيي؛ په دويمې درجې منطق کښې د عين کوډ ثبوت نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د سټ او د فرعي سټونو د سټ د اندازو توپير او قطري استدلال ښيي؛ په دويمې درجې منطق کښې د عين کوډ ثبوت نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "77",
+      "pdf_page_1based": 88,
+      "page_image_sha256": "3d91d98e0273df13e0f37fbe48abd519f8072b0b0aae2c7bb7cadb8f875fea39",
+      "actual_consultation": "د B234 مسودې او بشپړې بياکتنې مخکې پنځه کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ دوه‌اړخيزه يو پر يو تابع او برابرې اندازې ښيي؛ د اتحاد، اشتراک او ځانګړي غيرمنطقي لغت د حذف دعوه سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ دوه‌اړخيزه يو پر يو تابع او برابرې اندازې ښيي؛ د اتحاد، اشتراک او ځانګړي غيرمنطقي لغت د حذف دعوه سرچينه ټاکي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+    "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-124",
+    "OLCMP-125"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLCMP-124",
+    "DEC-OLCMP-125"
+  ],
+  "semantic_samples_added": 3,
+  "focused_qa_sha256": "49c4e6c225bd52141f8378cbc29d4371d8c47791f19ecfa04af418aa30bf3423",
+  "model_provenance_sha256": "c53aeb51362dd0bd9cc18a475df73dc6fef373971512e76af6a4ce024764930f",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0337.json",
+  "related_reaudit_sha256": "c02287ed2c4d911cf73404bc2a1ea2303d80ce0d4179771ce354931c03d7336a",
+  "source_convention_review_sha256": "73d7ddcbb3b0bba53b50a7d658855b2aefe39d24c60005a8f6862530c01d3a5c",
+  "unresolved": "۶۲ واحدونه، د تجربوي برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۷۲ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۶۰ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ بشپړ OLP-0661 او OLP-0338 دوام؛ د TeX د ځای اشغال د ژباړې خنډ نۀ دے۔"
+}

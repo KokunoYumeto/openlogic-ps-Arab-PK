@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B233-CUT-INTRODUCTION-SOL-EDITORIAL",
+  "batch_id": "PS-B234-IMPLICATION-CUT-SOL-INTRODUCTION",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -7982,7 +7982,7 @@
       "scope": "بشپړه تازه سرچينه‌يي او کانوني کتنه؛ د عام او ګډ سياق پرېکون دواړه رسمونه، د ټوکن اصلي کرښه‌ماتېدل او د تجربوي باب ټول اصلي واردول او بشپړ اخطار ساتل شوي دي۔"
     },
     "OLP-0337": {
-      "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
+      "batch_id": "PS-B234-IMPLICATION-CUT-SOL-INTRODUCTION",
       "passages": [
         "PK-IQRAM-P2-SEMANTICS",
         "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
@@ -7993,7 +7993,31 @@
         "TERM-CARDINAL-ORDER",
         "TERM-SOL-SET-CODING"
       ],
-      "scope": "Second-order quantification expresses set properties without a primitive membership predicate; unions, intersections, subset comparison and Cantor's theorem remain distinct claims."
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+          "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+        ],
+        "6": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+          "AF-BUKOVSKY-P133-CANTOR-THEOREM"
+        ]
+      },
+      "terms_by_block": {
+        "5": [
+          "TERM-POWERSET",
+          "TERM-CARDINAL-ORDER",
+          "TERM-SOL-SET-CODING"
+        ],
+        "6": [
+          "TERM-POWERSET",
+          "TERM-CARDINAL-ORDER",
+          "TERM-SOL-SET-CODING"
+        ]
+      },
+      "scope": "بشپړه تازه سرچينه‌يي او کانوني کتنه؛ څلور اصلي رسمونه او کمزوري شوي سياقونه او د سټونو د تيورۍ ټولې بېلې دعوې ساتل شوې دي۔"
     },
     "OLP-0338": {
       "batch_id": "PS-B061-SECOND-ORDER-SET-THEORY",
@@ -17689,6 +17713,38 @@
       "allowed_residual_english": [
         "LK"
       ]
+    },
+    "OLP-0660": {
+      "batch_id": "PS-B234-IMPLICATION-CUT-SOL-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-SEQUENT-STRUCTURE",
+        "TERM-SEQUENT-RULES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-G3C-CUT-MEASURES-INVERSION",
+        "TERM-STRUCTURAL-INDUCTION"
+      ],
+      "passages_by_block": {
+        "1": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ]
+      },
+      "terms_by_block": {
+        "1": [
+          "TERM-SEQUENT-STRUCTURE",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-G3C-CUT-MEASURES-INVERSION",
+          "TERM-STRUCTURAL-INDUCTION"
+        ]
+      },
+      "scope": "بشپړه تازه سرچينه‌يي او کانوني کتنه؛ څلور اصلي رسمونه او کمزوري شوي سياقونه او د سټونو د تيورۍ ټولې بېلې دعوې ساتل شوې دي۔"
     }
   },
   "semantic_review": [
@@ -35427,6 +35483,24 @@
       "passage": "OLP-0336-B005",
       "reverse_paraphrase": "د سرچينې اخطار وايي چې د فرعي سټونو سټونه او پيوستار کوډ کېږي؛ پايلې بيان شوې خو ثبوتونه نۀ دي ډک شوي، تمرينونه هم نشته او پخپله تعريفونه او پايلې ستونزې لرلے شي۔ د احتياط او د ناسم يا مبهم خبر د راپور بشپړ اخطار ساتل شوے، بې له نويو ثبوتونو يا نوي عيب جوړولو۔",
       "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0660",
+      "passage": "OLP-0660-B001",
+      "reverse_paraphrase": "د شرط تړنې اصلي پرېکون، د هماغه فارمول په لږ لوړوالي پرېکون، بيا د پايلې او د مقدمې په لږه رتبه پرېکون ټول څلور رسمونه عين ترتيب لري۔ د درېيم رسم د فارمول نښه سمه شوه۔ منځني اضافي سياقونه د G3c د کمزوري کولو له منلو وړتيا سره مشروع دي۔ وروستے عام پرېکون د مقدمې فارمول لرې کوي او د دواړو پاتې سياقونو ټول نقلونه يوځاے کوي؛ د رسم او استقرايي پايلې دواړو کښې د تالي دوه نقلونه ساتل شوي دي۔ په انقباض سره مطلوب سېکوېنټ پاتې کېږي۔ خام مرستندويه ټوټه ساتل شوې؛ د دوتنې نوم ترې نوې شهودي قضيه نۀ جوړوي۔",
+      "finding": "اصلي قواعد، د نقلونو شمېر، د پرېکون فارمول، استقرا او د غيرمنطقي لغت نشتوالے مستقلاً پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0337",
+      "passage": "OLP-0337-B005",
+      "reverse_paraphrase": "د دويمې درجې منطق له لارې د سټونو د تيورۍ د بيان سريزه بشپړه ده۔",
+      "finding": "اصلي قواعد، د نقلونو شمېر، د پرېکون فارمول، استقرا او د غيرمنطقي لغت نشتوالے مستقلاً پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0337",
+      "passage": "OLP-0337-B006",
+      "reverse_paraphrase": "د تعريف ساحې پر فرعي سټونو او تابعو کميت اچول، د سټونو خاصيتونه بې له ځانګړي غيرمنطقي غړيتوب محموله بيانول، اتحاد او اشتراک او فرعي سټ اړيکه، د اندازو پرتله او د کانتور پايلې ټولې بېلې سرچينه‌يي دعوې عين ساتل شوې دي۔ د عين دويمې درجې کوډونو نوے ثبوت نۀ زياتېږي۔",
+      "finding": "اصلي قواعد، د نقلونو شمېر، د پرېکون فارمول، استقرا او د غيرمنطقي لغت نشتوالے مستقلاً پرتله شول۔"
     }
   ]
 }

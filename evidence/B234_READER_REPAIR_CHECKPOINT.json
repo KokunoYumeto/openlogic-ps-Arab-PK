@@ -1,0 +1,91 @@
+{
+  "schema": "ps-reader-repair-source-checkpoint/1",
+  "utc": "2026-09-30T20:46:11.113693+00:00",
+  "status": "PASS; current654 compiled and five actual pages inspected; full expanded reader unaccepted",
+  "reader_units": 654,
+  "reader_tex_sha256": "3e3ec72913bbdba31b556426435035ff3b85246e416326cc22a4be94d6f91e76",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false,
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "38f5ffee62467d821726bc1eb414414f12286874bdc671b6b00b65c6d6c34f08",
+      "bytes": 61079,
+      "previous_checkpoint_sha256": "4a4e455b12555179e40c8ab17fa35c1cfce8f91709807cbdf9dbec8cd6ba4d58"
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "735802f6326efeddc9678065447c846c13a40e7cb25c0d59652d5ceadaf69299",
+      "bytes": 8538,
+      "previous_checkpoint_sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62"
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v103.tex",
+      "sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v104.tex",
+      "sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v105.tex",
+      "sha256": "1caa2604953eb56498fcfa33601991a63d1b0dddc7a88d18a208eb8202872b87",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v106.tex",
+      "sha256": "bd1113c81f47729f51c5b5e4dfcb6e75904f9aa9c3e84b2e9b4c4a066bf00695",
+      "bytes": 14907
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v107.tex",
+      "sha256": "195599874f4cd9b35226ae9ad48fd27ee18fff2937e299dc2815d5f001091496",
+      "bytes": 14920
+    }
+  ],
+  "historical_b211_receipt_sha256": "01c2f47d46b5ac14c4277ee07dafafed2990542317454c303f56deeb948d0f5f",
+  "previous_reader_checkpoint_sha256": "03a559c60827e376177aaca8122adf6fa66c762aa0ceeb93d9aaa8c521d69871",
+  "b215_evidence": [
+    {
+      "path": "evidence/B215_COMPILED_637_PENDING_QA.json",
+      "sha256": "95773b4ad81f691a802e4a0d09dc4d957d019bf7927ed06bf7451ba1ceacfac3"
+    },
+    {
+      "path": "evidence/B215_READER_REPAIR_PREFLIGHT_637.json",
+      "sha256": "ff52e56f83c605581de1d5a9b3510fc00b8c8dd1dbe844e99b76b347bc862265"
+    },
+    {
+      "path": "evidence/B215_RENDERED_READER_REPAIRS.json",
+      "sha256": "7b3c7950ea46ef90e0f158953fa944f7575176dd48dc332d5ce7d49ce4e64b31"
+    },
+    {
+      "path": "evidence/B215_TEX_SLOT_UNAVAILABLE_637.json",
+      "sha256": "ca4cc268ffaace19621cdaba956a9d470a79c6b4aeac4b18a2fba4063655de68"
+    }
+  ],
+  "preflight_sha256": "7c9ece7d251ae7f89964b00fd7f82e9b5a523155976e0ef008859b305cd27f0f",
+  "compiled_candidate_scope": 654,
+  "last_slot_result": "Guard96150 terminal;4passes/BibTeX successful;capturedtrees0;810pages;five actual pages inspected. No second acquisition.",
+  "policy": "No slot polling; one accumulated attempt at a later validated substantive checkpoint.",
+  "source_accepted_units": 660,
+  "reader_pending_unit_ids": [
+    "OLP-0655",
+    "OLP-0656",
+    "OLP-0657",
+    "OLP-0658",
+    "OLP-0659",
+    "OLP-0660"
+  ],
+  "previous_compiled_candidate_pdf_sha256": null,
+  "previous_rendered_sample_sha256": null,
+  "slot_result_sha256": "e6ff43c5fd0f0fd5fe0714ab92ea3b5cfa4e156289b8d950b9c5949c78006705",
+  "validated_tool_repair": {
+    "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\B234_GUARD_RECEIPT_WORKFLOW_REPAIR.json",
+    "sha256": "2e88c465debbfe2788ad5b176293472941136e707edfdc58f9076cc2eadca50e"
+  },
+  "compiled_candidate_pdf_sha256": "4b5ce38a2ca62274dd3c88092312058e640f2a78b02a0f663c7ce27e928b82c8",
+  "rendered_sample_sha256": "b8ec8c32b37bf095fa9eda30c22e8bc6d3f475ad3e348450a62c507c161e2d7a"
+}

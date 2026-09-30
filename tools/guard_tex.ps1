@@ -96,7 +96,8 @@ public static class PsGuardedTex {
         if($BibTeX -and $taskPass -eq 1) {
           $taskBibCode = [PsGuardedTex]::Run($taskBibEngine, $taskBase, $taskBuild, 180)
           $taskBibLog = Join-Path $taskBuild "$taskBase.blg"
-          $taskBibFindings = @(Get-Content -LiteralPath $taskBibLog | Where-Object { $_ -match 'Warning|error|couldn.t|not found' })
+          $taskBibText = [System.IO.File]::ReadAllText($taskBibLog)
+          $taskBibFindings = @($taskBibText -split '\r?\n' | Where-Object { $_ -match 'Warning|error|couldn.t|not found' })
           $taskReceipt.bibliography_runs += @{document=$taskBase;after_pass=1;exit_code=$taskBibCode;captured_job_active_processes_after=0;log_sha256=(Get-PsTaskSha256 $taskBibLog);findings=$taskBibFindings}
           if(Test-Path -LiteralPath (Join-Path $taskBuild "$taskBase.bbl")) {
             $taskReceipt.bibliography_runs[-1].bbl_sha256=Get-PsTaskSha256 (Join-Path $taskBuild "$taskBase.bbl")
@@ -117,4 +118,4 @@ public static class PsGuardedTex {
     $env:SOURCE_DATE_EPOCH=$taskOldEpoch
     $env:FORCE_SOURCE_DATE=$taskOldForce
 }
-$taskReceipt | ConvertTo-Json -Depth 8
+[ordered]@{status=$taskReceipt.status;acquired=$taskReceipt.acquired;passes=$taskReceipt.passes.Count;bibliography_runs=$taskReceipt.bibliography_runs.Count;receipt=(Join-Path $taskBuild 'TEX_RECEIPT.json')} | ConvertTo-Json -Compress
