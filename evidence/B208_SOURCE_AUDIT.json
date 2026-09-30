@@ -1,0 +1,150 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T05:09:59.038941+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0626",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "source_bytes": 3735,
+      "source_sha256": "db6fbf6574c82c930646e6faaa5e486fb360c04aee3da1419e418a4a0616162d",
+      "target_bytes": 5513,
+      "target_sha256": "926faad4aa91055c8251cdb363b150c248a9a9ae0936627ce0c5eb83d2bbff06",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 3,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "0e3862c7631c66834d701ee2179a5e4c0f67c78a4b67f2dcd6f9a67b5f6ffaf8",
+  "model_provenance_sha256": "ae8d3ca3d0daf683bbcd1870071a238c459a05848b1213c538b51bd435fd1b57",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-NIAZMAN-P178-ORDER",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ علمي نثر او کښې/ے رسم‌الخط لومړني دي؛ د نوېتر نوم او د ژوند نېټې نۀ تصديقوي.",
+      "evidence_limit": "پاکستاني بالغ علمي نثر او کښې/ے رسم‌الخط لومړني دي؛ د نوېتر نوم او د ژوند نېټې نۀ تصديقوي.",
+      "inspection": "Actual native page visually inspected in this continuation before final draft review and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني معنايي نثر د څرګند لفظ او مانا د جلا ساتلو شاهد دے؛ د الجبر عين تخصصي نومونه نۀ تصديقوي.",
+      "evidence_limit": "پاکستاني معنايي نثر د څرګند لفظ او مانا د جلا ساتلو شاهد دے؛ د الجبر عين تخصصي نومونه نۀ تصديقوي.",
+      "inspection": "Actual native page visually inspected in this continuation before final draft review and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکي بيان شاهد دے؛ د پاکستان ځانګړے رياضيکي معيار نۀ دے.",
+      "evidence_limit": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکي بيان شاهد دے؛ د پاکستان ځانګړے رياضيکي معيار نۀ دے.",
+      "inspection": "Actual native page visually inspected in this continuation before final draft review and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P178-ORDER",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "178",
+      "pdf_page_1based": 183,
+      "page_image_sha256": "3430c7a07383a8759de401ac274c9cbfd89f68fabab222cc78964fb1cedc6f5a",
+      "finding": "افغان سيمه‌ييز مخ د سخت جزوي ترتيب اړيکه، نۀ انعکاسيت او تعديت بيانوي؛ عين د نوېتر، ايډيال يا د لړۍ د شرطونو نومونه نۀ ثابتوي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د سخت جزوي ترتيب اړيکه، نۀ انعکاسيت او تعديت بيانوي؛ عين د نوېتر، ايډيال يا د لړۍ د شرطونو نومونه نۀ ثابتوي.",
+      "inspection": "Actual native page visually inspected in this continuation before final draft review and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "finding": "افغان سيمه‌ييز مخ د طبيعي عددونو د استقرا صفر بنسټ او ورپسې ګام، او د خاصيت د سټ له لارې ثبوت ښيي؛ عين د نوېتر استقرا نۀ بيانوي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د طبيعي عددونو د استقرا صفر بنسټ او ورپسې ګام، او د خاصيت د سټ له لارې ثبوت ښيي؛ عين د نوېتر استقرا نۀ بيانوي.",
+      "inspection": "Actual native page visually inspected in this continuation before final draft review and registration.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "23": 1,
+    "1882": 1,
+    "1904": 1,
+    "1907": 1,
+    "1908": 1,
+    "1915": 1,
+    "1919": 1,
+    "1": 1,
+    "2": 1,
+    "1933": 1,
+    "81": 1,
+    "1935": 1
+  },
+  "new_term_ids": [
+    "TERM-NOETHERIAN-CHAIN-CONDITIONS"
+  ],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [
+    "TERM-NOETHERIAN-CHAIN-CONDITIONS",
+    "DEC-B208-NOETHER-BIOGRAPHY"
+  ],
+  "semantic_samples_added": 7,
+  "source_nonissues_checked": [
+    "Noetherian rings use the ascending condition; the source’s well-founded-order induction uses the descending condition. No silent reversal or blanket identity of the two conditions is introduced."
+  ],
+  "independent_reaudit_included": {
+    "receipt": "SOL6_REAUDIT_0319.json",
+    "sha256": "6c2c084e7dca8762e2a0593f389248e4b27203f91cb3106f538e593d2e759e7e",
+    "whole_units_reviewed": 9,
+    "whole_units_pending": 290
+  },
+  "unresolved": "پاتې شپږ ژوندليکونه له OLP-0627 څخه؛ د ۷۲۲ واحدونو پراخ لوستونکی، ځايي‌کول او بشپړه خپلواکه کتنه لا پاتې دي.",
+  "next_executable_action": "Run both626 corpus generators and current canonical replay, including the fresh0319 audit; acceptNoether626 and continuePeter627. Full Sol6 audit next0320."
+}

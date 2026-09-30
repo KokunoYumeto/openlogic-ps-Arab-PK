@@ -1,0 +1,11 @@
+{
+  "schema": "ps-source-preserving-whitespace-qa/1",
+  "utc": "2026-09-30T05:35:51.370301+00:00",
+  "finding": "The copied source has trailing whitespace after the unchanged olfileid command in Peter627. Strict commit validation previously recognized only source comments.",
+  "treatment": "Recognize only a complete olfileid with three unchanged literal arguments, or an unchanged comment, at the same hash-bound source line. Every other staged path and all prose remain under strict whitespace validation.",
+  "checker_before_sha256": "338c2ea4f5e1cc2d5ec3d52e0d557f280becfde67eb8542c73b184889a89bd86",
+  "checker_after_sha256": "77a9ce7d2f3dc137a1b4035664c5c104b1c14a4d666ceee8a686a92cae135f02",
+  "frozen_source_unchanged": true,
+  "translation_bytes_unchanged": true,
+  "status": "implemented; actual commit validation follows"
+}

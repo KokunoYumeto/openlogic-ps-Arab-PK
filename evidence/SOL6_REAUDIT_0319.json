@@ -1,0 +1,161 @@
+{
+  "schema": "ps-sol6-prose-and-source-reaudit/1",
+  "utc": "2026-09-30T04:59:43.225839+00:00",
+  "status": "complete independent whole-unit review; dual corpus validation follows",
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only own chat runtime; no settings changed"
+  },
+  "units": [
+    {
+      "unit_id": "OLP-0319",
+      "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+      "target_sha256_before": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "target_sha256_after": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "paired_blocks_reviewed": 17,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "outcome": "retain after complete fresh proof and linguistic comparison",
+      "new_render_acceptance": false
+    }
+  ],
+  "new_segment_entries": 12,
+  "cumulative_segment_entries": 78,
+  "cumulative_segment_ledger_sha256": "2c87322eef6387da12454fc3f1d1d8bad98a81f4a11efd9d01a99e57a690de5a",
+  "segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0319.jsonl",
+  "original_source_corrections": [
+    {
+      "id": "OLPRV-002",
+      "unit_id": "OLP-0319",
+      "classification": "metalinguistic-provability-symbol-in-object-language-derivation",
+      "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+      "source_locator": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45",
+      "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "target_sha256": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "target_line_1based": 44,
+      "mode": "replace-Prov-with-OProv-plus-adjacent-Pashto-disclosure",
+      "reason": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "formula_policy": "Only the marked negated provability expression changes from Prov[PA] to OProv[PA]; the adjacent Pashto note quotes both symbols.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lnot\\Prov[\\Th{PA}](\\gn{!G_\\Th{PA}})$"
+        ],
+        "target_only": [
+          "$\\lnot\\OProv[\\Th{PA}](\\gn{!G_\\Th{PA}})$",
+          "$\\Prov[\\Th{PA}]$",
+          "$\\OProv[\\Th{PA}]$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_report": "pending manager channel availability",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+      "audit_artifacts": [
+        "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:38-45",
+        "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:44"
+      ],
+      "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+      "translation_change": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "counterexample": "The antecedent formalized inside PA uses OProv[PA], and the next sentence infers the Gödel sentence from that object-language provability formula. The source switches once to the metalinguistic Prov[PA] in this inference, breaking the stated formalized argument.",
+      "upstream_reporting": "new source notation issue; manager report pending channel availability",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "affected_segments": [
+        "OLP-0319-B009"
+      ]
+    },
+    {
+      "id": "OLPRV-003",
+      "unit_id": "OLP-0319",
+      "classification": "missing-formula-token-in-Godel-numeral-of-P2-instance",
+      "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+      "source_locator": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94",
+      "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+      "target_sha256": "446dc52ddf04bb77eaf4e4137fe005e7f65e8e073bc1b207c98871db235ad68e",
+      "target_line_1based": 105,
+      "mode": "replace-G-with-formula-G-inside-Godel-numeral-plus-adjacent-Pashto-disclosure",
+      "reason": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "formula_policy": "Only the marked P2 substitution expression changes from gn{G} to gn{!G}; the adjacent Pashto note quotes both expressions.",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\ident\\OProv(\\gn{G})$"
+        ],
+        "target_only": [
+          "$!A\\ident\\OProv(\\gn{!G})$",
+          "$!A$",
+          "$\\gn{G}$",
+          "$!G$",
+          "$\\gn{!G}$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_report": "pending manager channel availability",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+      "audit_artifacts": [
+        "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:89-94",
+        "ps-Arab-PK/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex:105"
+      ],
+      "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+      "translation_change": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "counterexample": "The displayed P2 instances and the preceding first case uniformly use the formula !G. The last explanatory sentence writes gn{G}, dropping the formula marker only in the second case's substitution for !A.",
+      "upstream_reporting": "new source notation issue; manager report pending channel availability",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "affected_segments": [
+        "OLP-0319-B011"
+      ]
+    }
+  ],
+  "retained_source_correction_ids": [
+    "OLPRV-002",
+    "OLPRV-003"
+  ],
+  "macro_sources": {
+    "upstream/open-logic-config.sty": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+    "upstream/sty/open-logic-formulas.sty": "e423085b198e355af8bbffea36afd511528eca67089cafb88f97b224a9242011"
+  },
+  "new_wording_decisions": [],
+  "target_bytes_unchanged": true,
+  "source_corrections_sha256": "d33df66ac96b869c5c4b7c313169e695931ce2923da67cabec5af69f8f4c781c",
+  "canonical_refresh_status": "Pending next natural production batch; the verified B207 source checkpoint remains its immutable snapshot.",
+  "full_reaudit_completed": false,
+  "next_action": "Continue general biographies at Noether626, preserving source warning candidate for Robinson628; sequential Sol6 review resumes0320, with290 whole units remaining."
+}

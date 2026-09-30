@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 625,
-    "structural_pass": 625,
+    "draft_units": 628,
+    "structural_pass": 628,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B207-BIOGRAPHIES",
+  "batch": "PS-B209-PETER-ROBINSON",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -20137,6 +20137,93 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0626",
+      "path": "content/history/biographies/emmy-noether.tex",
+      "source_sha256": "db6fbf6574c82c930646e6faaa5e486fb360c04aee3da1419e418a4a0616162d",
+      "translation_sha256": "926faad4aa91055c8251cdb363b150c248a9a9ae0936627ce0c5eb83d2bbff06",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0627",
+      "path": "content/history/biographies/rozsa-peter.tex",
+      "source_sha256": "cd1559c7f682712f7257c16abe9afa075178ba9aa6a587b035d7e466d3bf668f",
+      "translation_sha256": "cc1f9ed7a6037c32c234e109756c7de2db7c134cf7654bdcfb33b800aebbef8f",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0628",
+      "path": "content/history/biographies/julia-robinson.tex",
+      "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+      "translation_sha256": "6fa04927c8e231bf4ecac192f45821822541e2ce771f3f9c73ee6cbc49bf8bb0",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "MRDP"
+      ],
+      "allowed_residual_english": [
+        "MRDP"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-043"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -35151,6 +35238,216 @@
       "passage": "OLP-0625-B014",
       "reverse_paraphrase": "Detailed theorem treatment and an informal philosophical podcast retain the author identity and both citations.",
       "finding": "د بلاک بشپړه معنا، د دعوې منسوبول، نېټې، د نوم ښودنه او ټولې پېژندنې له منجمدې سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B005",
+      "reverse_paraphrase": "The title is the second incompleteness theorem, not semantic incompleteness of first-order logic.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B006",
+      "reverse_paraphrase": "PA inconsistency is equivalently derivability of0=1, and its chosen consistency sentence is the negation of the representing arithmetic provability formula at the numeral coding0=1. The predicate is object-language syntax, not a statement that external PA proves its own consistency.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B007",
+      "reverse_paraphrase": "The theorem assumes PA consistent and concludes nonderivability of this particular consistency sentence. No omega-consistency or stronger premise is added.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B008",
+      "reverse_paraphrase": "The result depends on the chosen consistency/provability representation. Generalization requires the three derivability conditions; it does not apply without such conditions to every sentence extensionally called a consistency assertion.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B009",
+      "reverse_paraphrase": "The sketch first formalizes the first theorem inside PA as Con implies notProv(G). If PA derived Con it would derive notProv(G), hence its fixed-point Gödel sentence G. OLPRV-002 is retained after checking the external roman Prov and arithmetic sans-serif OProv definitions; the isolated source switch is a notation slip.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B010",
+      "reverse_paraphrase": "External consistency excludes deriving G, so the preceding hypothetical derivation of Con is impossible. The consistency premise is retained in both statements.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B011",
+      "reverse_paraphrase": "All ten displayed proof steps and their prose annotations are checked. G2-1 is the PA fixed point; G2-2–3 use propositional logic; P1 yieldsG2-4; P2 with A=G,B=(Prov(G) implies falsity) yieldsG2-5; a second P2 instance with A=Prov(G),B=falsity yieldsG2-6; P3 yieldsG2-7; combining6–7 yields8; contraposition and the defined consistency sentence yield9; the fixed point yieldsCon impliesG. The explanation keeps the two P2 substitutions distinct. OLPRV-003 is retained because the active !G expands to gamma in the frozen Greek configuration whereas bareG does not. Consistency coded by0=1 and by falsity is equivalent in PA by logical explosion and PA’s proof of0 notEqual1; this is not a newly detected source error.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B012",
+      "reverse_paraphrase": "The introductory sentence labels the next theorem as the more abstract version.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B013",
+      "reverse_paraphrase": "The general theorem retains consistent axiomatizedT extendingQ and a formula satisfyingP1–P3 forT. The conclusion uses the corresponding chosenCon(T), without converting the representation premise to truth of all reflection instances.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B014",
+      "reverse_paraphrase": "The exercise asks for PA derivability ofG impliesCon, the reverse implication to the displayed proof. It is obtainable by internalizing falsity impliesG withP1 andP2, then usingG impliesnotProv(G); it is not a false converse of the external theorem.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B015",
+      "reverse_paraphrase": "The Hilbert-program conclusion retains the reasonable-consistent-theory qualification, inclusion ofQ and the finitary fragment, and the source’s uncertainty about the meaning of finitary. A fragment cannot derive what the containing consistent theory cannot derive under the stated representation.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0319",
+      "passage": "OLP-0319-B016",
+      "reverse_paraphrase": "The historical discussion preserves interpretive latitude, Gödel’s1931 concession, and the source’s present assessment that a reasonable finitary method is difficult to place outside formalizableZFC. This assessment is attributed to the exposition, not a new theorem or a claim that incompleteness prohibits all consistency proofs.",
+      "finding": "د Sol6 د متن بشپړه نوې خپلواکه کتنه: فرضونه، صوري دامن، ټول ثبوتي پړاوونه او دوه پخواني نښيز سمونونه کره دي؛ متن وساتل شو."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B005",
+      "reverse_paraphrase": "The section is Emmy Noether.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B006",
+      "reverse_paraphrase": "The caption names Noether and the noether-emmy asset identifier remains exact.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B007",
+      "reverse_paraphrase": "Born March23,1882 in Erlangen to an upper-middle-class scholarly family. Mother of modern algebra attribution, contributions to mathematics and physics, girls’ arts education and exclusion from college preparation, auditing Göttingen and Erlangen where her father taught, enrollment after policy change1904 and doctorate1907 all remain.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B008",
+      "reverse_paraphrase": "Unpaid Erlangen teaching1908–1915; Hilbert invited her to Göttingen but women could not hold professorships, so again unpaid lectures under his name. Noether’s theorem and continuing theoretical-physics use remain; teaching right1919 and Hilbert’s reported senate-not-a-bathhouse quote remain attributed.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B009",
+      "reverse_paraphrase": "Late1920s abstract-algebra work; ascending condition excludes infinite strictly increasing chains, with Noetherian-ring ideals and the exact displayed proper-subset sequence. General partial orders and the dual descending condition are distinct. Descending condition permits induction along the order as with the less-than order on naturals; source calls these well-founded or Noetherian, and the proof principle Noetherian induction. Every ordered mathematical span and both chain directions are retained.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B010",
+      "reverse_paraphrase": "Jewish identity, Nazi dismissal1933, temporary Bryn Mawr migration, Princeton lectures and her assessment of its reception of women retain source attribution and Dick citation withpage81. Uterine-tumor operation1935, resulting fatal infection and Bryn Mawr burial remain historical source reports.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0626",
+      "passage": "OLP-0626-B011",
+      "reverse_paraphrase": "Biography, Perimeter theoretical-physics lectures, the named history podcast and original German collected works retain all four source citation keys. The translated program title does not claim a published Pashto version.",
+      "finding": "د بلاک بشپړه معنا، د لړۍ جهتونه، منسوب بيان، نېټې او ټولې اصلي پېژندنې له سرچينې سره پرتله شوې."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B005",
+      "reverse_paraphrase": "The section names Rózsa Péter.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B006",
+      "reverse_paraphrase": "The photo caption names Péter; peter-rozsa identifier remains.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B007",
+      "reverse_paraphrase": "Born February17,1905 in Budapest as the source’s Politzer name; recursive-function work essential to recursion theory remains.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B008",
+      "reverse_paraphrase": "School1922, Budapest university name change, chemistry at father’s insistence then mathematics degree1927, Depression-era odd teaching jobs, return to graduate study, initial number-theory discouragement, independently rediscovering Gödel results and renewed confidence, Hilbert-program inspiration, PhD1935 and JSL editorship1937 all remain. No number-theory results are falsely called original discoveries.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B009",
+      "reverse_paraphrase": "Two1935 papers distinguish recursion kinds and exhibit a recursively defined function that is not primitive recursive. The Ackermann simplification, Ackermann–Péter attribution and first recursion-theory book preserve all citations; recursive does not imply primitive recursive.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B010",
+      "reverse_paraphrase": "No full-time teaching until1945; antisemitic exclusion during Nazi occupation, guarded Budapest ghetto1944 and forced residence until liberation1945, teachers’ college then university1955, and the two Hungarian academic firsts remain reported as source claims.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B011",
+      "reverse_paraphrase": "Passionate teaching through exploring problem nature and beauty rather than only lecturing; affectionate Aunt Rosa title and death1977 at71 remain.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0627",
+      "passage": "OLP-0627-B012",
+      "reverse_paraphrase": "Both biographies, the brief interview and the displayed Playing With Infinity title retain every citation and do not imply a published Pashto version.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B004",
+      "reverse_paraphrase": "The section names Julia Robinson.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B005",
+      "reverse_paraphrase": "The photo caption names Robinson; robinson-julia identifier remains.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B006",
+      "reverse_paraphrase": "Julia Bowman Robinson, decision problems and Hilbert tenth contribution; birth December8,1919 in SaintLouis, childhood number interest, scarlet fever atnine, recurrent rheumatic fever, bedridden time, private tutoring catch-up and lasting physical effects retain attribution andpage4 citation.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B007",
+      "reverse_paraphrase": "High-school awards, SanDiego study and Berkeley senior transfer, Raphael friendship and marriage1941, spouse-based teaching exclusion, continued auditing, family hopes, pneumonia and reported heart scarring retain source scope. The doctor’s prediction of not living beyondforty and advice against children remain explicitly reported advice, not translator guidance;page13 citation retained.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B008",
+      "reverse_paraphrase": "Return to Berkeley and source PhD1948 underTarski; reals decidable, naturals undecidable and rationals then open, resolved negatively in the cited thesis. Each number domain and conclusion remain distinct.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B009",
+      "reverse_paraphrase": "Hilbert’s list23 in1900, uniform finite-time integer-polynomial solution decision, unchanged3x^2-2y+3=0 example, exponential unknowns, Davis/Putnam joint work, conditionalJ.R. implication,1960s continuation,1970 proof and fullMRDP attribution remain. Later collaboration and thousands-of-miles letter quote retain citationpage45.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B010",
+      "reverse_paraphrase": "AMS first female president and original overly broad first-woman NAS claim remain visibly translated; OLSTH-043 immediately restricts the verified correct first to the mathematics section and identifies Sabin as overall first. No election year added. Leukemia diagnosis, July30,1985 death at65 remain source reports.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
+    },
+    {
+      "unit_id": "OLP-0628",
+      "passage": "OLP-0628-B011",
+      "reverse_paraphrase": "Collected works with reprinted NAS memoir, both sister-written works, Csicsery documentary and Matijasevich collaboration memoir retain every citation key and the distinction between autobiography based on interviews and full memoir.",
+      "finding": "د بلاک ټول نثر، نومونه، طبي/سياسي منسوبول، عددي نېټې او د رياضي د پرېکړې دامن له منجمدې سرچينې سره کره پرتله شول؛ يوازې OLSTH-043 د اصلي سرچينو په مرسته څرګند اصلاح لري."
     }
   ],
   "builds": [

@@ -1,0 +1,74 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T05:17:29.629790+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0626",
+  "draft_units": 626,
+  "remaining_unaccepted_units": 96,
+  "unit_ids": [
+    "OLP-0626"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "9a5e50d74f3ca608bd99d0afa4e1726839632843a73ba16a8ab9257cfdd453b3",
+  "corpus_qa_sha256": "fa26e058e4d6a9961b3ce0125edb8c2f06bfcf1bc6f812a636f8f88e83e95dca",
+  "canonical_replay_sha256": "99ee118166243b884b4c8c995bea051f1445f3d2a5946d954a92d16b3bfe7c85",
+  "qa_sha256": "bc04be586dad251774fc7fb713064474da9f7d7578c314e10e44a1a5309adb88",
+  "canonical_builder_sha256": "240c70d87d35e7cba33879a94db955b33a1969defb9641e9ee260afb57b20215",
+  "units": [
+    {
+      "unit_id": "OLP-0626",
+      "source_path": "content/history/biographies/emmy-noether.tex",
+      "source_bytes": 3735,
+      "source_sha256": "db6fbf6574c82c930646e6faaa5e486fb360c04aee3da1419e418a4a0616162d",
+      "target_bytes": 5513,
+      "target_sha256": "926faad4aa91055c8251cdb363b150c248a9a9ae0936627ce0c5eb83d2bbff06",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 3,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "aligned_blocks": 9266,
+  "segment_canon_uses": 5864,
+  "semantic_samples": 2521,
+  "canonical_counts": {
+    "decisions": 784,
+    "occurrences": 30265,
+    "terminology_decisions": 314,
+    "source_correction_decisions": 458,
+    "priority_decisions": 443,
+    "reader_pages_available": 18262,
+    "reader_pages_pending": 12003
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0627 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0320; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

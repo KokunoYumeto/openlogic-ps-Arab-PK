@@ -1,0 +1,116 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T05:30:05.515522+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0628",
+  "draft_units": 628,
+  "remaining_unaccepted_units": 94,
+  "unit_ids": [
+    "OLP-0627",
+    "OLP-0628"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "b6ce167177b1eca921eb19b41e1621bf40c5c65781959825f18a675da90e85e6",
+  "corpus_qa_sha256": "43f5cf6efc0c5bde75d6f29a658e07dcb4bf7bbf5089c48b64a9155208ab15c2",
+  "canonical_replay_sha256": "3d3a2d2ab24721ba949e1d47a66029b3a1d3286f36c9782b603fd74650408614",
+  "qa_sha256": "da3e84af7c7e9936caeeb1bb6b1576808d174b5392d7c20f8a460e114787484c",
+  "canonical_builder_sha256": "240c70d87d35e7cba33879a94db955b33a1969defb9641e9ee260afb57b20215",
+  "units": [
+    {
+      "unit_id": "OLP-0627",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "source_bytes": 3680,
+      "source_sha256": "cd1559c7f682712f7257c16abe9afa075178ba9aa6a587b035d7e466d3bf668f",
+      "target_bytes": 5465,
+      "target_sha256": "cc1f9ed7a6037c32c234e109756c7de2db7c134cf7654bdcfb33b800aebbef8f",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0628",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "source_bytes": 4769,
+      "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+      "target_bytes": 7535,
+      "target_sha256": "6fa04927c8e231bf4ecac192f45821822541e2ce771f3f9c73ee6cbc49bf8bb0",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 1,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-043"
+      ]
+    }
+  ],
+  "aligned_blocks": 9291,
+  "segment_canon_uses": 5880,
+  "semantic_samples": 2537,
+  "canonical_counts": {
+    "decisions": 787,
+    "occurrences": 30281,
+    "terminology_decisions": 315,
+    "source_correction_decisions": 459,
+    "priority_decisions": 444,
+    "reader_pages_available": 18262,
+    "reader_pages_pending": 12019
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0629 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0320; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

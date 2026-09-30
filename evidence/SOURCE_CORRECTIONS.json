@@ -6154,7 +6154,21 @@
       },
       "affected_segments": [
         "OLP-0319-B009"
-      ]
+      ],
+      "independent_reaudit": {
+        "utc": "2026-09-30T04:59:43.225839+00:00",
+        "receipt": "SOL6_REAUDIT_0319.json",
+        "outcome": "retained after full proof and macro-context comparison",
+        "macro_source_path": "upstream/open-logic-config.sty",
+        "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "formula_macro_source_path": "upstream/sty/open-logic-formulas.sty",
+        "formula_macro_source_sha256": "e423085b198e355af8bbffea36afd511528eca67089cafb88f97b224a9242011",
+        "macro_definition_lines_1based": [
+          1061,
+          1062
+        ],
+        "reason": "Prov is the external roman relation and OProv its arithmetic sans-serif representing formula; the proof explicitly derives the latter."
+      }
     },
     {
       "id": "OLPRV-003",
@@ -6207,7 +6221,20 @@
       },
       "affected_segments": [
         "OLP-0319-B011"
-      ]
+      ],
+      "independent_reaudit": {
+        "utc": "2026-09-30T04:59:43.225839+00:00",
+        "receipt": "SOL6_REAUDIT_0319.json",
+        "outcome": "retained after full proof and macro-context comparison",
+        "macro_source_path": "upstream/open-logic-config.sty",
+        "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "formula_macro_source_path": "upstream/sty/open-logic-formulas.sty",
+        "formula_macro_source_sha256": "e423085b198e355af8bbffea36afd511528eca67089cafb88f97b224a9242011",
+        "macro_definition_lines_1based": [
+          36
+        ],
+        "reason": "In the frozen Greek formula configuration !G expands to gamma while bareG remains LatinG. The second P2 substitution must designate the same Gödel sentence as both displayed steps and the first substitution. This is a notation correction, not a newly false theorem."
+      }
     },
     {
       "id": "OLSOL-001",
@@ -17376,6 +17403,77 @@
       ],
       "limits": "The defect concerns allowing an empty prefix; nonempty prefixes and the later uniqueness proof retain their stated arguments.",
       "upstream_reporting": "authorized manager milestone only; no direct upstream report",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-043",
+      "unit_id": "OLP-0628",
+      "classification": "first_woman_NAS_claim_missing_mathematics_section_restriction",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+      "source_locator": "content/history/biographies/julia-robinson.tex:75",
+      "source_literal_line_1based": [
+        75
+      ],
+      "target_path": "ps-Arab-PK/content/history/biographies/julia-robinson.tex",
+      "target_sha256": "6fa04927c8e231bf4ecac192f45821822541e2ce771f3f9c73ee6cbc49bf8bb0",
+      "target_line_1based": 123,
+      "target_literal_line_1based": [
+        123
+      ],
+      "disclosure_line_1based": 130,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د اکاډمۍ د لومړۍ ښځې پراخه دعوه په نږدې يادونه کښې د رياضياتو څانګې ته محدوده شوه؛ اصلي دعوه په ښکاره ساتل شوې ده.",
+      "reason": "منجمد متن رابنسن د علومو د ملي اکاډمۍ د ټولو غړو په هکله لومړۍ ښځه بولي. د اکاډمۍ رسمي تاريخچه فلورنس سابن لومړۍ ښځينه غړې ښيي، او د همدې متن د لوست اصلي فېفرمان يادښت د رابنسن لومړيتوب په څرګنده د رياضياتو څانګې ته محدودوي. چاپي دعوه وساتل شوه او نږدې پښتو يادونه ئې کره دامن ښيي. د ټاکنې کال نۀ ورزياتېږي؛ د سرچينو د کال اختلاف د دې بې‌کاله دعوې د سمون برخه نۀ ده.",
+      "counterexample": "منجمد متن رابنسن د علومو د ملي اکاډمۍ د ټولو غړو په هکله لومړۍ ښځه بولي. د اکاډمۍ رسمي تاريخچه فلورنس سابن لومړۍ ښځينه غړې ښيي، او د همدې متن د لوست اصلي فېفرمان يادښت د رابنسن لومړيتوب په څرګنده د رياضياتو څانګې ته محدودوي. چاپي دعوه وساتل شوه او نږدې پښتو يادونه ئې کره دامن ښيي. د ټاکنې کال نۀ ورزياتېږي؛ د سرچينو د کال اختلاف د دې بې‌کاله دعوې د سمون برخه نۀ ده.",
+      "formula_policy": "All source mathematical spans and source citations remain exact; adjacent prose note only.",
+      "affected_segments": [
+        "OLP-0628-B010"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B209-PETER-ROBINSON",
+      "decision_timing": "د روانې بشپړې ژباړې پر وخت د سرچينې او اصلي مخونو کتنه.",
+      "audit_artifacts": [
+        "B209_SOURCE_AUDIT.json",
+        "B209_ROBINSON_SOURCE_PREAUDIT.json",
+        "B209_PETER_ROBINSON_DRAFT_QA.json"
+      ],
+      "limits": "The issue is scope of first-woman membership. No fresh clinical claim or disputed election-year correction is added.",
+      "external_authorities": [
+        {
+          "url": "https://www.nationalacademies.org/members",
+          "title": "National Academies membership FAQ",
+          "locator": "Who was the first woman elected to the National Academy of Sciences?",
+          "finding": "Florence Rena Sabin was the first woman member."
+        },
+        {
+          "url": "https://www.nationalacademies.org/read/4560/chapter/21",
+          "title": "Solomon Feferman, Julia Bowman Robinson, Biographical Memoirs63",
+          "locator": "Opening paragraph and later mathematical-section election paragraph",
+          "finding": "Robinson is identified as first woman in the mathematical section, and first woman AMS president."
+        }
+      ],
+      "upstream_reporting": "authorized manager milestone only; no direct upstream message",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []

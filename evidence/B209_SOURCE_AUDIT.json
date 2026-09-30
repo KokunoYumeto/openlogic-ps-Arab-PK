@@ -1,0 +1,271 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T05:28:28.587936+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0627",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "source_bytes": 3680,
+      "source_sha256": "cd1559c7f682712f7257c16abe9afa075178ba9aa6a587b035d7e466d3bf668f",
+      "target_bytes": 5465,
+      "target_sha256": "cc1f9ed7a6037c32c234e109756c7de2db7c134cf7654bdcfb33b800aebbef8f",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0628",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "source_bytes": 4769,
+      "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+      "target_bytes": 7535,
+      "target_sha256": "6fa04927c8e231bf4ecac192f45821822541e2ce771f3f9c73ee6cbc49bf8bb0",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 1,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-043"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "847b0ad961620d9e4b92ffe21421bd7d85089e1bb339f3435d330dbb8756b7bd",
+  "model_provenance_sha256": "805401d90391995199532594d7f5d37b7bfe15878965fc2e356af49374072b95",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P140-CONSISTENCY",
+    "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+    "AF-MOE-P35-POWER-EXPONENT",
+    "AF-BUKOVSKY-P127-ALGEBRA-LAWS"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے لومړني رسم‌الخط شاهدان دي؛ تاريخي نېټې او شخصي نومونه نۀ تصديقوي.",
+      "evidence_limit": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے لومړني رسم‌الخط شاهدان دي؛ تاريخي نېټې او شخصي نومونه نۀ تصديقوي.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني معنايي نثر د لفظ، جملې او د عبارت د مانا د کره جلاوالي شاهد دے؛ د رياضي د تخصصي نومونو عين تصويب نۀ دے.",
+      "evidence_limit": "پاکستاني معنايي نثر د لفظ، جملې او د عبارت د مانا د کره جلاوالي شاهد دے؛ د رياضي د تخصصي نومونو عين تصويب نۀ دے.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکي بيان شاهد دے؛ ځانګړے پاکستانے رياضيکي معيار نۀ دے.",
+      "evidence_limit": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکي بيان شاهد دے؛ ځانګړے پاکستانے رياضيکي معيار نۀ دے.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "finding": "افغان سيمه‌ييز مخ صفر، ورپسې عدد، ارتسام، تعويض او بازګشتي تابعې صوري کوي؛ د عمومي او بنسټيز بازګښت د مفهوم پرتله دے، نۀ د پېتر د تاريخي نتيجو ثبوت.",
+      "evidence_limit": "افغان سيمه‌ييز مخ صفر، ورپسې عدد، ارتسام، تعويض او بازګشتي تابعې صوري کوي؛ د عمومي او بنسټيز بازګښت د مفهوم پرتله دے، نۀ د پېتر د تاريخي نتيجو ثبوت.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "finding": "افغان سيمه‌ييز مخ بديهيات، استنباطي قوانين او د ثبوت لړۍ جلا کوي؛ د ناتکميلۍ يا د ديوفانټي ناحل‌والي قضيه نۀ ثابتوي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ بديهيات، استنباطي قوانين او د ثبوت لړۍ جلا کوي؛ د ناتکميلۍ يا د ديوفانټي ناحل‌والي قضيه نۀ ثابتوي.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "140",
+      "pdf_page_1based": 145,
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "finding": "افغان سيمه‌ييز مخ د تناقض او د سازګارۍ مفهوم روښانوي؛ د يوې تيورۍ د پرېکړې وړتيا ورسره يو شان نۀ ده.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د تناقض او د سازګارۍ مفهوم روښانوي؛ د يوې تيورۍ د پرېکړې وړتيا ورسره يو شان نۀ ده.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "24",
+      "pdf_page_1based": 29,
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "finding": "افغان سيمه‌ييز مخ د مقدماتو او پايلې د معنايي صدق تعريف ښيي؛ د حقيقي، طبيعي او نسبي عددونو د تيوريو د پرېکړې پوښتنه د منجمدې سرچينې له مخې ساتل کېږي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د مقدماتو او پايلې د معنايي صدق تعريف ښيي؛ د حقيقي، طبيعي او نسبي عددونو د تيوريو د پرېکړې پوښتنه د منجمدې سرچينې له مخې ساتل کېږي.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-MOE-P35-POWER-EXPONENT",
+      "source_id": "PS-AF-MOE-G7-1398",
+      "source_sha256": "1b762171ab5d157af8b9c1d31cb4cbd69627f5896dbe65b286024d8f44b274f8",
+      "printed_page": "35",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "e3b313c639ad789c294795c37c97dec36519f254ca29700e0cf11f6c6a576640",
+      "finding": "افغان ښوونيز مخ قاعده، نما او توان جلا ښيي؛ يوازې د نما په ځای کښې د نامعلوم د راتلو د معنا مفهوم شاهد دے. د بالغ بيان يا د ديوفانټي مسئلو عين نوم شاهد نۀ دے.",
+      "evidence_limit": "افغان ښوونيز مخ قاعده، نما او توان جلا ښيي؛ يوازې د نما په ځای کښې د نامعلوم د راتلو د معنا مفهوم شاهد دے. د بالغ بيان يا د ديوفانټي مسئلو عين نوم شاهد نۀ دے.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P127-ALGEBRA-LAWS",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "127",
+      "pdf_page_1based": 138,
+      "page_image_sha256": "4b9f742942038a97805453ca69b2b7306f4e10808199339fe9a42c276a97751c",
+      "finding": "افغان سيمه‌ييز مخ د جمع، ضرب او نما د الجبري قوانينو صوري بيان ښيي؛ عين کثيرالحد، ضريب يا د صحيح عددي حل نومونه نۀ تصديقوي.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د جمع، ضرب او نما د الجبري قوانينو صوري بيان ښيي؛ عين کثيرالحد، ضريب يا د صحيح عددي حل نومونه نۀ تصديقوي.",
+      "inspection": "Actual native page inspected during this continuation before final source comparison and registration.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0627": {
+      "17": 1,
+      "1905": 1,
+      "1922": 1,
+      "1927": 1,
+      "1935": 1,
+      "1937": 1,
+      "1945": 2,
+      "1944": 1,
+      "1955": 1,
+      "1977": 1,
+      "71": 1
+    },
+    "OLP-0628": {
+      "8": 1,
+      "1919": 1,
+      "4": 1,
+      "1941": 1,
+      "13": 1,
+      "1948": 1,
+      "23": 1,
+      "1900": 1,
+      "2": 1,
+      "3": 1,
+      "0": 1,
+      "1970": 1,
+      "45": 1,
+      "30": 1,
+      "1985": 1,
+      "65": 1
+    }
+  },
+  "new_term_ids": [
+    "TERM-DIOPHANTINE-DECISION-PROBLEM"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-043"
+  ],
+  "new_review_entry_ids": [
+    "TERM-DIOPHANTINE-DECISION-PROBLEM",
+    "DEC-OLSTH-043",
+    "DEC-B209-PETER-ROBINSON-BIOGRAPHIES"
+  ],
+  "semantic_samples_added": 16,
+  "external_source_preaudit_sha256": "26e31a1c231f56a0f4b66dc988551520a3e187aa9b0541365810a045dd89c2c4",
+  "external_authorities": [
+    {
+      "url": "https://www.nationalacademies.org/members",
+      "title": "National Academies membership FAQ",
+      "locator": "Who was the first woman elected to the National Academy of Sciences?",
+      "finding": "Florence Rena Sabin was the first woman member."
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/4560/chapter/21",
+      "title": "Solomon Feferman, Julia Bowman Robinson, Biographical Memoirs63",
+      "locator": "Opening paragraph and later mathematical-section election paragraph",
+      "finding": "Robinson is identified as first woman in the mathematical section, and first woman AMS president."
+    }
+  ],
+  "unresolved": "څلور ژوندليکونه له OLP-0629 څخه پاتې دي؛ بشپړ ۷۲۲ واحديز لوستونکی، ځايي‌کول او د Sol6 ټولې خپلواکې کتنې لا پاتې دي.",
+  "next_executable_action": "Run both628 corpus generators and canonical replay; acceptPeter627 andRobinson628. Publish combined source tranche626–628 with validated0319 audit in existing main; continueRussell629, sequentialSol6 audit0320."
+}

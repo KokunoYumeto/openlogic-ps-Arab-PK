@@ -1,0 +1,90 @@
+{
+  "schema": "ps-frozen-translation-batch-qa/1",
+  "utc": "2026-09-30T05:21:30.328155+00:00",
+  "status": "checked complete draft batch; not accepted",
+  "units": [
+    {
+      "unit_id": "OLP-0627",
+      "source_path": "content/history/biographies/rozsa-peter.tex",
+      "source_bytes": 3680,
+      "source_sha256": "cd1559c7f682712f7257c16abe9afa075178ba9aa6a587b035d7e466d3bf668f",
+      "target_bytes": 5465,
+      "target_sha256": "cc1f9ed7a6037c32c234e109756c7de2db7c134cf7654bdcfb33b800aebbef8f",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 0,
+      "source_correction_ids_pending_registration": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0628",
+      "source_path": "content/history/biographies/julia-robinson.tex",
+      "source_bytes": 4769,
+      "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+      "target_bytes": 7535,
+      "target_sha256": "6fa04927c8e231bf4ecac192f45821822541e2ce771f3f9c73ee6cbc49bf8bb0",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 1,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-043"
+      ],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "translation_module_sha256": "5e39277a19939dfa8da9b8231783fda9f645897d90fb30afa421d631e3148b66",
+  "checker_sha256": "b6706a5b5994dc14285245f0bb798a11d09ca39925ffc358a789e7cb538f960f",
+  "all_checks_pass": true,
+  "semantic_canon_registration_complete": false,
+  "new_render_acceptance": false
+}

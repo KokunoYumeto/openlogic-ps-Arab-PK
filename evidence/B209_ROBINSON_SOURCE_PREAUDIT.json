@@ -1,0 +1,26 @@
+{
+  "schema": "ps-source-claim-preaudit/1",
+  "utc": "2026-09-30T05:17:39.967201+00:00",
+  "unit_id": "OLP-0628",
+  "source_path": "content/history/biographies/julia-robinson.tex",
+  "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+  "status": "genuine scope error independently verified; adjacent Pashto disclosure pending translation",
+  "finding": "The frozen source calls Robinson the first woman elected to the NAS overall. The Academy identifies Sabin as its first woman; the cited Feferman memoir specifically limits Robinson’s first to the mathematical section.",
+  "source_line_1based": 75,
+  "primary_authorities": [
+    {
+      "url": "https://www.nationalacademies.org/members",
+      "title": "National Academies membership FAQ",
+      "locator": "Who was the first woman elected to the National Academy of Sciences?",
+      "finding": "Florence Rena Sabin was the first woman member."
+    },
+    {
+      "url": "https://www.nationalacademies.org/read/4560/chapter/21",
+      "title": "Solomon Feferman, Julia Bowman Robinson, Biographical Memoirs63",
+      "locator": "Opening paragraph and later mathematical-section election paragraph",
+      "finding": "Robinson is identified as first woman in the mathematical section, and first woman AMS president."
+    }
+  ],
+  "evidence_limit": "No election year is added: the memoir and current directory disagree on Robinson’s election year. That conflict is outside the source’s year-free claim and is not resolved by inference.",
+  "next_action": "When translating628 preserve the frozen claim with an explicit adjacent Pashto scope correction identifying the mathematics section; register exact source/target hashes and the new source action. No silent historical substitution."
+}
