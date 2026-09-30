@@ -1,0 +1,77 @@
+{
+  "schema": "ps-frozen-translation-batch-qa/1",
+  "utc": "2026-09-30T12:01:48.799349+00:00",
+  "status": "checked complete draft batch; not accepted",
+  "units": [
+    {
+      "unit_id": "OLP-0645",
+      "source_path": "content/first-order-logic/syntax-and-semantics/introduction.tex",
+      "source_bytes": 3578,
+      "source_sha256": "4b014ef7f3ec0676ec6c57d276e0747b7afd44bfe295b74e4091e12a4726d186",
+      "target_bytes": 4833,
+      "target_sha256": "b4d7351940c568048ce6c6769f275296e2b60d13f05647a15a4f286420b26db5",
+      "paired_blocks": 9,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ordered_math_spans": 13,
+      "source_correction_ids_pending_registration": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0646",
+      "source_path": "content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_bytes": 633,
+      "source_sha256": "380792883e147d6bd35236c0ab68243f087e068d8d12ddc189fca9f33d633cb8",
+      "target_bytes": 646,
+      "target_sha256": "fe66bc6389d7e0fd48fed9b66cc3f20cf0b04b3e60871ca2f9be9bd86314636e",
+      "paired_blocks": 21,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "source_correction_ids_pending_registration": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "translation_module_sha256": "10c27357f2aa88bd3b3953f7784e1d768494123ec8448f9439a187e7877d5d31",
+  "checker_sha256": "b6706a5b5994dc14285245f0bb798a11d09ca39925ffc358a789e7cb538f960f",
+  "all_checks_pass": true,
+  "semantic_canon_registration_complete": false,
+  "new_render_acceptance": false
+}

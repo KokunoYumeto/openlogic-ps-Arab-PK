@@ -1,0 +1,181 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T12:12:49.884394+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0646",
+  "draft_units": 646,
+  "remaining_unaccepted_units": 76,
+  "unit_ids": [
+    "OLP-0645",
+    "OLP-0646"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "765f17da015c9f33b5d85260319ef4a7f993b53bc5c8468fc7cec78b21f7869b",
+  "corpus_qa_sha256": "c5bb9c09b4e5bffd133c5ff980c204ca0399a7458bd31ca83747903f62e5d1d1",
+  "canonical_replay_sha256": "6146c92fc008765ea3710a1fee13fb04f2b3c6f9c2ab8df958df0f53543e1599",
+  "qa_sha256": "b95feb2ac14a67dbc6df3bd5c113971952f94922f87f1585a09c322d1dda0eec",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0645",
+      "source_path": "content/first-order-logic/syntax-and-semantics/introduction.tex",
+      "source_bytes": 3578,
+      "source_sha256": "4b014ef7f3ec0676ec6c57d276e0747b7afd44bfe295b74e4091e12a4726d186",
+      "target_bytes": 4833,
+      "target_sha256": "b4d7351940c568048ce6c6769f275296e2b60d13f05647a15a4f286420b26db5",
+      "paired_blocks": 9,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ordered_math_spans": 13,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0646",
+      "source_path": "content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_bytes": 633,
+      "source_sha256": "380792883e147d6bd35236c0ab68243f087e068d8d12ddc189fca9f33d633cb8",
+      "target_bytes": 646,
+      "target_sha256": "fe66bc6389d7e0fd48fed9b66cc3f20cf0b04b3e60871ca2f9be9bd86314636e",
+      "paired_blocks": 21,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [],
+      "exact_import_targets": [
+        {
+          "import": "introduction",
+          "unit_id": "OLP-0645",
+          "source_sha256": "4b014ef7f3ec0676ec6c57d276e0747b7afd44bfe295b74e4091e12a4726d186"
+        },
+        {
+          "import": "first-order-languages",
+          "unit_id": "OLP-0151",
+          "source_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d"
+        },
+        {
+          "import": "terms-formulas",
+          "unit_id": "OLP-0152",
+          "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3"
+        },
+        {
+          "import": "unique-readability",
+          "unit_id": "OLP-0153",
+          "source_sha256": "6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833"
+        },
+        {
+          "import": "main-operator",
+          "unit_id": "OLP-0154",
+          "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786"
+        },
+        {
+          "import": "subformulas",
+          "unit_id": "OLP-0155",
+          "source_sha256": "6e287a941dee45c936517925a0db269918b5020ac24892a03342dc7678f6c938"
+        },
+        {
+          "import": "formation-sequences",
+          "unit_id": "OLP-0156",
+          "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01"
+        },
+        {
+          "import": "free-vars-sentences",
+          "unit_id": "OLP-0157",
+          "source_sha256": "b04a358a03907e8e42caa4b1cee49c217db77e1ca2c742da21c6eb6d7051edde"
+        },
+        {
+          "import": "substitution",
+          "unit_id": "OLP-0158",
+          "source_sha256": "3db5cd0e374edb0ba4cff9f6f849272190d5fc5420e5132e1237adcd64619fae"
+        },
+        {
+          "import": "structures",
+          "unit_id": "OLP-0161",
+          "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf"
+        },
+        {
+          "import": "covered-structures",
+          "unit_id": "OLP-0162",
+          "source_sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530"
+        },
+        {
+          "import": "satisfaction",
+          "unit_id": "OLP-0163",
+          "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace"
+        },
+        {
+          "import": "assignments",
+          "unit_id": "OLP-0164",
+          "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1"
+        },
+        {
+          "import": "extensionality",
+          "unit_id": "OLP-0165",
+          "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda"
+        },
+        {
+          "import": "semantic-notions",
+          "unit_id": "OLP-0166",
+          "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e"
+        }
+      ]
+    }
+  ],
+  "aligned_blocks": 9562,
+  "segment_canon_uses": 6045,
+  "semantic_samples": 2730,
+  "canonical_counts": {
+    "decisions": 826,
+    "occurrences": 30747,
+    "terminology_decisions": 324,
+    "source_correction_decisions": 479,
+    "priority_decisions": 466,
+    "reader_pages_available": 18244,
+    "reader_pages_pending": 12503
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0647 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0328; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

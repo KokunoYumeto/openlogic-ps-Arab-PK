@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 644,
-    "structural_pass": 644,
+    "draft_units": 646,
+    "structural_pass": 646,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B220-MAXIMAL-CONSISTENCY-ALTERNATE",
+  "batch": "PS-B222-FOL-COMBINED-INTRODUCTION",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -22047,6 +22047,64 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "path": "content/first-order-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "4b014ef7f3ec0676ec6c57d276e0747b7afd44bfe295b74e4091e12a4726d186",
+      "translation_sha256": "b4d7351940c568048ce6c6769f275296e2b60d13f05647a15a4f286420b26db5",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0646",
+      "path": "content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "source_sha256": "380792883e147d6bd35236c0ab68243f087e068d8d12ddc189fca9f33d633cb8",
+      "translation_sha256": "fe66bc6389d7e0fd48fed9b66cc3f20cf0b04b3e60871ca2f9be9bd86314636e",
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -38399,6 +38457,36 @@
       "passage": "OLP-0643-B033",
       "reverse_paraphrase": "Same conjunction projection conclusion and bounded OLAX-015 note; one missing outer tagitem closing brace restored after the added emphasis note. Every prose word, original formula, branch and reference retained.",
       "finding": "د زياتې شوې يادونې د ګروپ يوه تړونکې نښه سمه شوه؛ د اصل کلمات او رياضيکي نښې هماغسې دي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B005",
+      "reverse_paraphrase": "Introduction title.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B006",
+      "reverse_paraphrase": "Theory/metatheory, terms from variable/constant/function vocabulary, atomic predicates applied to terms, compound formulas via connectives/quantifiers. All alternative-symbol/primitive-connective/parentheses/Polish-notation choices retained. Inductive formation and essentiallyunique construction qualified by proper setup; inductive meanings then possible.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B007",
+      "reverse_paraphrase": "Structure has nonempty domain, quantifier range, constant elements, function interpretations and predicate relations. Variable assignment provides values for open formulas. Exact satisfaction notation and induction over A retained; conjunction truth-table example complete. Closed sentences lack free variables, hence assignment independence.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B008",
+      "reverse_paraphrase": "Sentence validity everystructure, entailment everystructure jointly satisfying allGamma also satisfiesA, satisfiability somestructure jointly satisfies allsentences. Both inductive definitions support proofs of semantic properties and relations.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0646",
+      "passage": "OLP-0646-B004",
+      "reverse_paraphrase": "Combined syntax/semantics chapter title. All fifteen exact imports and chapter-end hook preserved in editable driver; complete-reader mapping must place its outline alongside existing separate syntax and semantics chapters without duplication.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
     }
   ],
   "builds": [

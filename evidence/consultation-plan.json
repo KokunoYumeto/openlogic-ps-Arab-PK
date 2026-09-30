@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B220-MAXIMAL-CONSISTENCY-ALTERNATE",
-  "status": "complete644 and corrected0326 registered; dual acceptance pending",
+  "batch_id": "PS-B222-FOL-COMBINED-INTRODUCTION",
+  "status": "complete645/646 registered; dual acceptance pending",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -14480,6 +14480,87 @@
           "AF-NIAZMAN-P39-THEORY-PROOF"
         ]
       }
+    },
+    "OLP-0645": {
+      "batch_id": "PS-B222-FOL-COMBINED-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-INDUCTIVE-TERM-READABILITY",
+        "TERM-LOGICAL-METATHEORY",
+        "TERM-FOL-SEMANTICS",
+        "TERM-VARIABLE-ASSIGNMENT",
+        "TERM-SEMANTICS"
+      ],
+      "terms_by_block": {
+        "5": [
+          "TERM-FOL-SYNTAX"
+        ],
+        "6": [
+          "TERM-FOL-SYNTAX",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-INDUCTIVE-TERM-READABILITY",
+          "TERM-LOGICAL-METATHEORY"
+        ],
+        "7": [
+          "TERM-FOL-SYNTAX",
+          "TERM-FOL-SEMANTICS",
+          "TERM-VARIABLE-ASSIGNMENT",
+          "TERM-STRUCTURAL-INDUCTION"
+        ],
+        "8": [
+          "TERM-FOL-SEMANTICS",
+          "TERM-SEMANTICS",
+          "TERM-STRUCTURAL-INDUCTION"
+        ]
+      },
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P2-SEMANTICS"
+        ],
+        "6": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "7": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P109-RELATION",
+          "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+        ],
+        "8": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+          "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ]
+      },
+      "scope": "Entire alternate combined introduction/driver retained; first-order syntax and semantics are integrated with their existing chapters, not duplicated."
+    },
+    "OLP-0646": {
+      "batch_id": "PS-B222-FOL-COMBINED-INTRODUCTION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS"
+      ],
+      "terms": [
+        "TERM-FOL-SYNTAX",
+        "TERM-FOL-SEMANTICS"
+      ],
+      "terms_by_block": {
+        "4": [
+          "TERM-FOL-SYNTAX",
+          "TERM-FOL-SEMANTICS"
+        ]
+      },
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P2-SEMANTICS"
+        ]
+      },
+      "scope": "Entire alternate combined introduction/driver retained; first-order syntax and semantics are integrated with their existing chapters, not duplicated."
     }
   },
   "semantic_review": [
@@ -30832,6 +30913,36 @@
       "passage": "OLP-0643-B033",
       "reverse_paraphrase": "Same conjunction projection conclusion and bounded OLAX-015 note; one missing outer tagitem closing brace restored after the added emphasis note. Every prose word, original formula, branch and reference retained.",
       "finding": "د زياتې شوې يادونې د ګروپ يوه تړونکې نښه سمه شوه؛ د اصل کلمات او رياضيکي نښې هماغسې دي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B005",
+      "reverse_paraphrase": "Introduction title.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B006",
+      "reverse_paraphrase": "Theory/metatheory, terms from variable/constant/function vocabulary, atomic predicates applied to terms, compound formulas via connectives/quantifiers. All alternative-symbol/primitive-connective/parentheses/Polish-notation choices retained. Inductive formation and essentiallyunique construction qualified by proper setup; inductive meanings then possible.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B007",
+      "reverse_paraphrase": "Structure has nonempty domain, quantifier range, constant elements, function interpretations and predicate relations. Variable assignment provides values for open formulas. Exact satisfaction notation and induction over A retained; conjunction truth-table example complete. Closed sentences lack free variables, hence assignment independence.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0645",
+      "passage": "OLP-0645-B008",
+      "reverse_paraphrase": "Sentence validity everystructure, entailment everystructure jointly satisfying allGamma also satisfiesA, satisfiability somestructure jointly satisfies allsentences. Both inductive definitions support proofs of semantic properties and relations.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
+    },
+    {
+      "unit_id": "OLP-0646",
+      "passage": "OLP-0646-B004",
+      "reverse_paraphrase": "Combined syntax/semantics chapter title. All fifteen exact imports and chapter-end hook preserved in editable driver; complete-reader mapping must place its outline alongside existing separate syntax and semantics chapters without duplication.",
+      "finding": "ټول شرطونه، د هر/کوم جوړښت فرق، د جملې تړلتيا او ټول واردات پرتله شوي۔"
     }
   ]
 }

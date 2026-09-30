@@ -405,7 +405,7 @@ def context(text: str) -> tuple[str, str, str, str]:
 
 
 def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[list[tuple[dict, str]], list[dict]]:
-    """Place the two completed legacy alternatives inside their own chapters.
+    """Place completed legacy alternatives inside their corresponding chapters.
 
     Later source units include an entire experimental proof-theory part. They
     require their own translated drivers and import order, not a generic tail
@@ -417,7 +417,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
     for row, body in prepared:
         if int(row['unit_id'][-4:]) <= 642:
             continue
-        if row['unit_id'] not in {'OLP-0643', 'OLP-0644'}:
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646'}:
             raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
         parent = Path(row['source_path']).parent
         chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
@@ -425,6 +425,28 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
             raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
         anchor = chapter_rows[-1][0]['unit_id']
         part, chapter, section, role = context(body)
+        if row['unit_id'] in {'OLP-0645', 'OLP-0646'}:
+            # The alternate combined outline and its full introduction belong
+            # before the preferred separate syntax and semantics exposition.
+            anchor = 'OLP-0149'
+            if not any(r['unit_id'] == anchor and context(b) == ('fol', 'syn', '', 'chapter') for r, b in primary):
+                raise ValueError('combined first-order outline requires its preferred syntax driver')
+        if row['unit_id'] == 'OLP-0646':
+            original = r'\olchapter{fol}{syn}{نحو او معنٰی پوهنه}'
+            if role != 'chapter' or body.count(original) != 1:
+                raise ValueError('combined first-order chapter outline changed')
+            replacement = r'\paragraph{د سرچينې ګډ باب: نحو او معنٰی پوهنه}'
+            body = body.replace(original, replacement)
+            body = (r'\olfileid{fol}{syn}{combined-driver-olp0646}' + '\n'
+                    + r'\paragraph{د ګډې سرچينې ترتيب}' + '\n'
+                    + 'دا ګډ سرليک د لاندې نحو او معنٰی پوهنې دواړو پرلهپسې بابونو سرچينه‌يي ترتيب ښيي؛ اصلي پنځلس واردات په سمون وړ ګډ فايل کښې خوندي دي، او اړوند برخې دلته بې له تکراري بابونو راځي۔\n'
+                    + body)
+            additions.setdefault(anchor, []).insert(0, (row, body))
+            records.append({'unit_id': row['unit_id'], 'source_path': row['source_path'],
+                            'placement_after_unit': anchor, 'chapter_directory': parent.as_posix(),
+                            'original_context': ['fol', 'syn', ''], 'reader_context': ['fol', 'syn', 'combined-driver-olp0646'],
+                            'policy': 'Combined editable chapter driver retains all fifteen imports; reader preserves its complete localized heading and outline role before the corresponding separate syntax/semantics chapters, without opening a duplicate chapter. Header semantic anchors retained; editable bytes unchanged.'})
+            continue
         if role != 'section' or not part or not chapter or not section:
             raise ValueError(f"alternate context is incomplete: {row['unit_id']}")
         revised_section = section + '-' + row['unit_id'].lower().replace('-', '')

@@ -1,0 +1,66 @@
+{
+  "schema": "ps-reader-repair-source-checkpoint/1",
+  "utc": "2026-09-30T12:29:20.616105+00:00",
+  "status": "PASS; all646 current hashes, complete unique order and four in-context alternatives; actual render pending",
+  "reader_units": 646,
+  "reader_tex_sha256": "683ee477dd244d9a9f87dbeeda398437857bf9c34fadb91a1d37de9d548f5758",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false,
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "1c0f7db9a857a2f25431b0d8f9bef291cf958f968fce75a9f137079ac87823eb",
+      "bytes": 52909
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62",
+      "bytes": 8283
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v103.tex",
+      "sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v104.tex",
+      "sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v105.tex",
+      "sha256": "1caa2604953eb56498fcfa33601991a63d1b0dddc7a88d18a208eb8202872b87",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v106.tex",
+      "sha256": "bd1113c81f47729f51c5b5e4dfcb6e75904f9aa9c3e84b2e9b4c4a066bf00695",
+      "bytes": 14907
+    }
+  ],
+  "historical_b211_receipt_sha256": "01c2f47d46b5ac14c4277ee07dafafed2990542317454c303f56deeb948d0f5f",
+  "previous_reader_checkpoint_sha256": "687c8a34c3abb3979cb19064f540724412d47c90bf74de81361187378f40a9fe",
+  "b215_evidence": [
+    {
+      "path": "evidence/B215_COMPILED_637_PENDING_QA.json",
+      "sha256": "95773b4ad81f691a802e4a0d09dc4d957d019bf7927ed06bf7451ba1ceacfac3"
+    },
+    {
+      "path": "evidence/B215_READER_REPAIR_PREFLIGHT_637.json",
+      "sha256": "ff52e56f83c605581de1d5a9b3510fc00b8c8dd1dbe844e99b76b347bc862265"
+    },
+    {
+      "path": "evidence/B215_RENDERED_READER_REPAIRS.json",
+      "sha256": "7b3c7950ea46ef90e0f158953fa944f7575176dd48dc332d5ce7d49ce4e64b31"
+    },
+    {
+      "path": "evidence/B215_TEX_SLOT_UNAVAILABLE_637.json",
+      "sha256": "ca4cc268ffaace19621cdaba956a9d470a79c6b4aeac4b18a2fba4063655de68"
+    }
+  ],
+  "preflight_sha256": "23a3c472e32eb1bb801d949206b8ffb02ae02a464ad979271046d4d78f860499",
+  "compiled_candidate_scope": 637,
+  "last_slot_result": "644 unavailable; zero engines. No646 attempt or polling; accumulate scope while translating.",
+  "policy": "No slot polling; one accumulated attempt at a later validated substantive checkpoint."
+}
