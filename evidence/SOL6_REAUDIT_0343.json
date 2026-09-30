@@ -1,0 +1,62 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T22:22:13.204150+00:00",
+  "status": "بشپړه خپلواکه بياکتنه؛ اصل تاريخ، رياضي مثالونه او ټايپي توپير عين دي، کوچني پښتو بيانونه سم شوي دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0343",
+      "source_path": "content/lambda-calculus/introduction/overview.tex",
+      "source_sha256": "cfb967d6315533157e73f6dbbf027a36082188da17e9324aa6f08c957070853a",
+      "target_sha256_before": "3bcb84cbb3e136ae588a254d032f8a9f78bd52f0958f5f73523c19cbddcaeb09",
+      "target_sha256": "44721ea4cc282005026ba40e5a2a65ff4187978b48d38aa870db2a8347316267",
+      "target_sha256_after": "44721ea4cc282005026ba40e5a2a65ff4187978b48d38aa870db2a8347316267",
+      "target_bytes": 4394,
+      "paired_blocks": 12,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0343-LAMBDA-OVERVIEW-PROSE"
+      ],
+      "translated_blocks_reviewed": 8,
+      "target_retained_unchanged": false,
+      "all_prior_math_bytes_retained": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے اصلي علمي نثر کښې، ے او د جملې معنايي بيان ښيي؛ د computability عين تخنيکي مرکب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے اصلي علمي نثر کښې، ے او د جملې معنايي بيان ښيي؛ د computability عين تخنيکي مرکب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ تابعې، آرګومېنټونه، تعويض او ارجاعي تعريف ښيي؛ د لامبډا تجريد او تطبيق او ټايپونه بېل سرچينه‌يي مفاهيم دي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ تابعې، آرګومېنټونه، تعويض او ارجاعي تعريف ښيي؛ د لامبډا تجريد او تطبيق او ټايپونه بېل سرچينه‌يي مفاهيم دي۔"
+    }
+  ],
+  "segment_entries_added": 8,
+  "new_source_correction_ids": [],
+  "wording_choice_ids": [
+    "DEC-PS-0343-LAMBDA-OVERVIEW-PROSE"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0343.jsonl",
+  "whole_unit_segment_snapshot_sha256": "e294aabe62f6a19b9c5b9412333c4d3fcf5161530714e298a1affbf44bf41670",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "بشپړ OLP-0667 او OLP-0344 دوام؛ هر اصلي رياضي بلاک عين وساتئ۔"
+}

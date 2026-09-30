@@ -1,0 +1,16 @@
+{
+  "schema": "ps-formal-code-qa-exception/1",
+  "utc": "2026-09-30T22:23:46.175054+00:00",
+  "unit_id": "OLP-0666",
+  "status": "Exact retained TeX column code registered; dual QA rerun pending",
+  "allowed_token": "cc",
+  "exact_source_target_literal": "\\begin{tabular}[t]{@{}cc@{}}",
+  "source_sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+  "target_sha256": "d622da126e9de58ae691de4893e13d13ea5f46876636a97ee6d30f0e5bfa908f",
+  "previous_consultation_sha256": "fb577a6c8351fb58b694e6e8e6641cf72bd6665b51dcf4141b21df1ff3a77d1d",
+  "current_consultation_sha256": "07ee80aac941946e29234f98ed7395652f63a7565f0f1d24843dbf9ac85451dc",
+  "reason": "The ordinary-English detector leaves the cc column spec from a nested @{} tabular argument. Both frozen source and target retain that exact two-centred-column code; it is not untranslated prose.",
+  "target_changed": false,
+  "qa_algorithms_changed": false,
+  "no_blanket_exemption": true
+}

@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B239-REGULAR-NATURAL-PROOFS-LAMBDA-INTRO-DRIVER",
+  "batch_id": "PS-B240-N1-RULES-LAMBDA-OVERVIEW",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -8610,10 +8610,9 @@
       ]
     },
     "OLP-0343": {
-      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "batch_id": "PS-B240-N1-RULES-LAMBDA-OVERVIEW",
       "passages": [
         "PK-IQRAM-P1-PROSE",
-        "GRAMMAR-P166-SOV",
         "AF-NIAZMAN-P147-FUNCTIONS"
       ],
       "terms": [
@@ -8622,7 +8621,91 @@
         "TERM-SIMPLE-TYPE-THEORY",
         "TERM-LAMBDA-SYNTAX"
       ],
-      "scope": "Function notation, abstraction, application, untyped universal applicability and typed contrast retain separate meanings.",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "9": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "10": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "11": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "5": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "6": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "7": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "8": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "9": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "10": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ],
+        "11": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-LAMBDA-SYNTAX"
+        ]
+      },
+      "scope": "بشپړ جدول او ټول شپاړس رسمونه، ځانګړي متغير شرطونه او د لامبډا د تجريد او تطبيق او بې‌ټايپې بڼې اصل توپيرونه عين دي۔",
       "allowed_residual_english": [
         "LISP"
       ]
@@ -18967,6 +19050,43 @@
         ]
       },
       "scope": "بشپړ اصلي ثبوت او ټول شرطونه، اصلي نۀ حل شوي تمرينونه او د باب د ادغام پاتې اېډېټوري خبر ساتل شوي دي۔"
+    },
+    "OLP-0666": {
+      "batch_id": "PS-B240-N1-RULES-LAMBDA-OVERVIEW",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-SEQUENT-RULES",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS"
+        ]
+      },
+      "scope": "بشپړ جدول او ټول شپاړس رسمونه، ځانګړي متغير شرطونه او د لامبډا د تجريد او تطبيق او بې‌ټايپې بڼې اصل توپيرونه عين دي۔",
+      "allowed_residual_english": [
+        "cc"
+      ],
+      "formal_code_exception": {
+        "literal": "\\begin{tabular}[t]{@{}cc@{}}",
+        "source_sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+        "target_sha256": "d622da126e9de58ae691de4893e13d13ea5f46876636a97ee6d30f0e5bfa908f",
+        "role": "Two centred columns in the frozen tabular column specification, not reader prose."
+      }
     }
   },
   "semantic_review": [
@@ -37227,6 +37347,60 @@
       "passage": "OLP-0342-B005",
       "reverse_paraphrase": "باب د اصلي لنډو يادښتونو دے؛ د برخو يوځاے کول او د تعريفېدنې مواد له بېل مفصل باب سره يوځاے کول د سرچينې خپل پاتې اېډېټوري خبر دے۔ اصلي نسبت او ټول ديارلس واردات په اصل ترتيب ساتل شوي دي؛ د ادغام بشپړتيا نۀ ادعا کېږي۔",
       "finding": "بشپړ اصل او ټول فورمولونه او د هرې قاعدې شرطونه مستقلاً پرتله شوي؛ منظمول د ځانګړي متغير نومونه بدلوي، اصلي تمرينونه نۀ حل کوي۔"
+    },
+    {
+      "unit_id": "OLP-0666",
+      "passage": "OLP-0666-B004",
+      "reverse_paraphrase": "د N1i او N1c ټول شپاړس اصلي استنتاجي رسمونه او بشپړ جدول عين دي؛ يوازې پښتو تشريح شوې ده۔ د عمومي داخلولو ځانګړے ثابت په پايله يا پرانيستي فرض کښې نۀ راځي۔ د موجود ايستلو ځانګړے ثابت په دواړو سمدستي مقدمو يا پاتې پرانيستي فرض کښې نۀ راځي؛ ايستل شوې فرضيه د کوچني فرعي ثبوت دنننۍ فرضيه ده، نۀ د قاعدې پايله۔ N1i د کلاسيکي محال قاعده نۀ لري۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B004",
+      "reverse_paraphrase": "د لامبډا حساب د لنډې کتنې سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B005",
+      "reverse_paraphrase": "د چرچ د تعميري منطق اصلي تاريخ او د محاسبه کېدنې له نورو تعريفونو معادلتوب عين دي؛ معادلتوب وښودل شو او په لومړي سر حيرانوونکے کېدل ئې دا محاسبوي پېژندنه لا په زړه پورې کوي، نۀ دا چې رياضي ارزښت بدلوي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B006",
+      "reverse_paraphrase": "نښيز عبارت نېغ تابع ښيي؛ د تړلي dummy متغير نوم بدلول هماغه تابع ساتي، او د بل پارامېټر ټاکل د دوو متغيرونو له تابع څخه يوه تابع جوړوي۔ ټول x او y او k او مثالونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B007",
+      "reverse_paraphrase": "تجريد له عبارت څخه تابع جوړوي؛ تطبيق تابع ته آرګومېنټ ورکوي او په دوديزه نښه کښې پايله f(2) ده۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B008",
+      "reverse_paraphrase": "د تجريد او تطبيق يوځاے کول ورکړل شوے آرګومېنټ د تړلي متغير په ځاے ږدي؛ اصلي دوه جمع درې رسم او پايله عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B009",
+      "reverse_paraphrase": "بې‌ټايپه چوکاټ هر څه د تابع په توګه ښيي او هر ترم پر بل ترم تطبيقېدے شي، په ځانګړي ډول F(F)۔ دا له ټايپي قيدونو سره بېل مفهوم دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B010",
+      "reverse_paraphrase": "ټايپ‌لرونکې بڼه د بې‌ټايپې بڼې مهم ډول دے؛ له کلاسيکي سټي چوکاټ سره ئې سمون آسان او ځينې خاصيتونه ئې بېل دي۔ پاکستانے کلاسيکي لفظ سم شوے دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0343",
+      "passage": "OLP-0343-B011",
+      "reverse_paraphrase": "د لامبډا حساب څېړنه په نظري کمپيوټر ساينس او د پروګرامي ژبو په طرحه کښې مرکزي اهميت لري؛ د LISP اصلي نوم، د جان مک‌کارتي نسبت او ۱۹۵۰مې لسيزې تاريخ عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
     }
   ]
 }

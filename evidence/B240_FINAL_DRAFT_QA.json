@@ -1,0 +1,85 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T22:22:13.204150+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0666",
+      "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+      "source_sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+      "source_bytes": 2650,
+      "target_sha256": "d622da126e9de58ae691de4893e13d13ea5f46876636a97ee6d30f0e5bfa908f",
+      "target_bytes": 2781,
+      "paired_blocks": 5,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_per_source_block": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_sixteen_rule_trees_exact": true,
+        "only_caption_text_changed": true,
+        "standalone_auxiliary_source_without_header_retained": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0343",
+      "source_path": "content/lambda-calculus/introduction/overview.tex",
+      "source_sha256": "cfb967d6315533157e73f6dbbf027a36082188da17e9324aa6f08c957070853a",
+      "target_sha256_before": "3bcb84cbb3e136ae588a254d032f8a9f78bd52f0958f5f73523c19cbddcaeb09",
+      "target_sha256": "44721ea4cc282005026ba40e5a2a65ff4187978b48d38aa870db2a8347316267",
+      "target_sha256_after": "44721ea4cc282005026ba40e5a2a65ff4187978b48d38aa870db2a8347316267",
+      "target_bytes": 4394,
+      "paired_blocks": 12,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0343-LAMBDA-OVERVIEW-PROSE"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0666": {
+      "math": true,
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_sixteen_rule_trees_exact": true,
+      "only_caption_text_changed": true,
+      "standalone_auxiliary_source_without_header_retained": true
+    },
+    "OLP-0343": {
+      "math": true,
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_per_source_block": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_prior_math_spans_byte_identical": true,
+      "original_three_enumerated_claims_retained": true,
+      "negative_emphasis_and_typed_contrast_retained": true,
+      "original_LISP_name_retained": true
+    }
+  },
+  "all_sixteen_rules_exact": true,
+  "mathematical_or_historical_source_corrections_added": 0,
+  "source_preaudit_sha256": "93f228d713f94dd375ff0220e5e944ffe8bde690b3ccdf3e4b2da60f5c464889"
+}
