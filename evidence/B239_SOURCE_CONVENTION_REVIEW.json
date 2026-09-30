@@ -1,0 +1,32 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T22:09:08.442433+00:00",
+  "status": "PASS; exact closed-term/eigenvariable conventions and corrected induction scope",
+  "preaudit_sha256": "3ccee547e3eef1fd80dfa84d6934ba04e00a36eadda9a9183c072ab03e04a2f4",
+  "primary_contexts": [
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+      "sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+      "actually_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "actually_consulted": true
+    }
+  ],
+  "source_closed_term_convention": "rules-proofs.tex:116-129 explicitly uses closed t and defines eigenvariable conditions. Do not assert a new free-variable-capture defect without checking this convention.",
+  "existential_case": "Both substituted subproofs, discharged A(a,t), and substituted conclusion are used by the actual existential-elimination rule. No unrelated universal rule or undefined delta prime remains.",
+  "regularization": "Choose a highest dirty inference. All eigenvariable inferences above it are clean, so the subproof is regular and does not use the chosen constant as an eigenvariable. Freshening cannot dirty a clean inference, and at least the selected dirty inference becomes clean. Strong induction on the strictly smaller count suffices.",
+  "exact_count_counterexample": "Renaming one shared eigenvariable can make another inference clean as well. Two otherwise regular forall introductions on disjoint branches using c have n=2; freshening one to a can make both clean, giving n=0 rather than n-1. The count strictly decreases, which suffices for induction.",
+  "no_speculative_capture_defect_added": true,
+  "seven_source_trees_byte_identical": true,
+  "original_exercises_not_solved": true,
+  "source_and_target_full_block_comparison": true,
+  "frozen_sources_unchanged": true
+}

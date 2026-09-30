@@ -1,0 +1,97 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T22:09:49.498937+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0665",
+  "draft_units": 665,
+  "remaining_unaccepted_units": 57,
+  "unit_ids": [
+    "OLP-0665"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "6f13e2506d0d012f19ef9b86f65269e7c46fab73faafb3e05b5ffa708775b4cf",
+  "corpus_qa_sha256": "91b298565f7c249c9458f726bab1939b3570e1abf98893db504d9fe02ce5ab41",
+  "canonical_replay_sha256": "91f000d4fd9a9d1ee36fe13ce156b955bf7386564bb882f4d763f16c093c1026",
+  "qa_sha256": "83cced4b653ccaced48e7dd6977e1ef87fe00dad99a4c885554b1e8b5e5307e3",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0665",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_bytes": 7246,
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_bytes": 10607,
+      "paired_blocks": 16,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "checks": {
+        "math_exact_exceptions": true,
+        "structural_macros_exact_exceptions": true,
+        "ids": true,
+        "optional_tags": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_eight_proof_trees_retained": true,
+        "seven_proof_trees_byte_identical": true,
+        "original_unsolved_problem_retained": true,
+        "original_N2_proofs_left_as_exercises": true
+      },
+      "source_correction_ids": [
+        "OLCMP-135",
+        "OLCMP-136",
+        "OLCMP-137",
+        "OLCMP-138"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0342",
+      "source_path": "content/lambda-calculus/introduction/introduction.tex",
+      "source_sha256": "6988c2c02fea28c8ff52a0d0fa77a51efceb656455a10f50c3fd702a4a09a5fc",
+      "target_sha256_before": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_sha256": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_sha256_after": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_bytes": 924,
+      "paired_blocks": 20,
+      "source_correction_ids": []
+    }
+  ],
+  "aligned_blocks": 9870,
+  "segment_canon_uses": 6266,
+  "semantic_samples": 3043,
+  "canonical_counts": {
+    "decisions": 889,
+    "occurrences": 32103,
+    "terminology_decisions": 330,
+    "source_correction_decisions": 521,
+    "priority_decisions": 521,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 13884
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0666 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0343; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

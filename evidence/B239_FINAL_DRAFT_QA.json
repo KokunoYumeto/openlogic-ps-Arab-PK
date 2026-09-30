@@ -1,0 +1,97 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T22:09:08.442433+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0665",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_bytes": 7246,
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_bytes": 10607,
+      "paired_blocks": 16,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "checks": {
+        "math_exact_exceptions": true,
+        "structural_macros_exact_exceptions": true,
+        "ids": true,
+        "optional_tags": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_eight_proof_trees_retained": true,
+        "seven_proof_trees_byte_identical": true,
+        "original_unsolved_problem_retained": true,
+        "original_N2_proofs_left_as_exercises": true
+      },
+      "source_correction_ids": [
+        "OLCMP-135",
+        "OLCMP-136",
+        "OLCMP-137",
+        "OLCMP-138"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0342",
+      "source_path": "content/lambda-calculus/introduction/introduction.tex",
+      "source_sha256": "6988c2c02fea28c8ff52a0d0fa77a51efceb656455a10f50c3fd702a4a09a5fc",
+      "target_sha256_before": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_sha256": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_sha256_after": "4f24c22ed6575943882bf7645b822a54c6673592bfb149af0253c579513ce64b",
+      "target_bytes": 924,
+      "paired_blocks": 20,
+      "source_correction_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0665": {
+      "math_exact_exceptions": true,
+      "structural_macros_exact_exceptions": true,
+      "ids": true,
+      "optional_tags": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "all_eight_proof_trees_retained": true,
+      "seven_proof_trees_byte_identical": true,
+      "original_unsolved_problem_retained": true,
+      "original_N2_proofs_left_as_exercises": true
+    },
+    "OLP-0342": {
+      "math_exact_exceptions": true,
+      "structural_macros_exact_exceptions": true,
+      "ids": true,
+      "optional_tags": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "target_byte_identical": true,
+      "all_thirteen_imports_preserved": true,
+      "imports_in_source_order": true,
+      "chapter_end_hook_retained": true
+    }
+  },
+  "eight_source_trees_seven_byte_identical": true,
+  "expanded_native_prose_reviewed": true,
+  "original_exercises_unsolved": true,
+  "source_convention_review_sha256": "a8d6a8891fe6cbc6f67c42d6de90a10b26b6d2dcbf95a0b16f6ac0e67f7dcad6"
+}

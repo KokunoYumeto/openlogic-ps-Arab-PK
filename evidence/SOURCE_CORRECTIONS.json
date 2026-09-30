@@ -20797,6 +20797,250 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-135",
+      "unit_id": "OLP-0665",
+      "classification": "existential-elimination-substitution-premises-and-conclusion",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_locator": "content/proof-theory/natural-deduction/quantifiers.tex:111",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/quantifiers.tex",
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_line_1based": 43,
+      "disclosure_line_1based": 120,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د عمومي داخلولو او ايستلو او موجود ايستلو درې اصلي حالتونه بشپړ دي؛ موجود ايستلو کښې دواړه مقدمې او نتيجه تعويض کېږي، دوه فرعي ثبوتونه او ايستل شوې فرضيه او هماغه قاعده په سم شوي رسم کښې دي۔ اووه نور اصلي رسمونه عين دي؛ د قضييزو قاعدو او موجود داخلولو پاتې اصلي تمرينونه نۀ حل کېږي۔",
+      "reason": "د عمومي داخلولو او ايستلو او موجود ايستلو درې اصلي حالتونه بشپړ دي؛ موجود ايستلو کښې دواړه مقدمې او نتيجه تعويض کېږي، دوه فرعي ثبوتونه او ايستل شوې فرضيه او هماغه قاعده په سم شوي رسم کښې دي۔ اووه نور اصلي رسمونه عين دي؛ د قضييزو قاعدو او موجود داخلولو پاتې اصلي تمرينونه نۀ حل کېږي۔",
+      "exact_original_text": "    By induction hypothesis, $\\Subst{\\delta_1'}{t}{c}$ and\n    $\\Subst{\\delta_2'}{t}{c}$ are regular !!{proof}s of\n    $\\lexists[x][!A(x,c)]$ and of $!C$ from the open\n    assumption~$!A(a,t)$. Since $a$ is an eigenvariable of~$\\delta$,\n    $a$~does not occur in~$t$. Therefore, the last inference in\n    $\\Subst{\\delta}{t}{c}$,\n    ",
+      "exact_proposed_source_text": "    By induction hypothesis, $\\Subst{\\delta_1'}{t}{c}$ and\n    $\\Subst{\\delta_2'}{t}{c}$ are regular !!{proof}s of\n    $\\lexists[x][!A(x,t)]$ and of $\\Subst{!C}{t}{c}$ from the open\n    assumption~$!A(a,t)$. Since $a$ is an eigenvariable of~$\\delta$,\n    $a$~does not occur in~$t$. Therefore, the last inference in\n    $\\Subst{\\delta}{t}{c}$,\n    ",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "neither the conclusion~$!C$ nor any open assumption contains~$a$.",
+          "exact_proposed_source_text": "neither the conclusion~$\\Subst{!C}{t}{c}$ nor any remaining open assumption contains~$a$."
+        }
+      ],
+      "primary_verification": "The induction hypothesis substitutes c by t in both the major existential premise and the minor conclusion. C may contain c, so leaving C unchanged is not justified. The final freshness sentence must also name Subst(C,t,c).",
+      "formula_policy": "يوازې ثبت شوي مقدم او پايله او يو ناسمه نقل شوے رسم او د ناپاکو استنتاجونو کلک کمېدونکے شمېر سمېږي؛ اووه نور رسمونه او ټول اصلي تمرينونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B239-REGULAR-NATURAL-PROOFS-LAMBDA-INTRO-DRIVER",
+      "audit_artifacts": [
+        "B239_SOURCE_AUDIT.json",
+        "B239_FINAL_DRAFT_QA.json",
+        "B239_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره قاعدو او مخالف مثالونو له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\lexists[x][!A(x,c)]$",
+          "$!C$",
+          "$!C$"
+        ],
+        "target_only": [
+          "$\\lexists[x][!A(x,t)]$",
+          "$\\Subst{!C}{t}{c}$",
+          "$\\Subst{!C}{t}{c}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-136",
+      "unit_id": "OLP-0665",
+      "classification": "existential-elimination-copied-universal-tree",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_locator": "content/proof-theory/natural-deduction/quantifiers.tex:64",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/quantifiers.tex",
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_line_1based": 43,
+      "disclosure_line_1based": 123,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د عمومي داخلولو او ايستلو او موجود ايستلو درې اصلي حالتونه بشپړ دي؛ موجود ايستلو کښې دواړه مقدمې او نتيجه تعويض کېږي، دوه فرعي ثبوتونه او ايستل شوې فرضيه او هماغه قاعده په سم شوي رسم کښې دي۔ اووه نور اصلي رسمونه عين دي؛ د قضييزو قاعدو او موجود داخلولو پاتې اصلي تمرينونه نۀ حل کېږي۔",
+      "reason": "د عمومي داخلولو او ايستلو او موجود ايستلو درې اصلي حالتونه بشپړ دي؛ موجود ايستلو کښې دواړه مقدمې او نتيجه تعويض کېږي، دوه فرعي ثبوتونه او ايستل شوې فرضيه او هماغه قاعده په سم شوي رسم کښې دي۔ اووه نور اصلي رسمونه عين دي؛ د قضييزو قاعدو او موجود داخلولو پاتې اصلي تمرينونه نۀ حل کېږي۔",
+      "exact_original_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\Subst{\\delta'}{t}{c}$}\n    \\DeduceC{$!A(a,t)$}\n    \\RightLabel{\\Intro{\\lforall}}\n    \\UnaryInfC{$\\lforall[x][!A(x,t)]$}\n    \\DisplayProof\n    \\]",
+      "exact_proposed_source_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\Subst{\\delta_1'}{t}{c}$}\n    \\DeduceC{$\\lexists[x][!A(x,t)]$}\n    \\AxiomC{$\\Discharge{!A(a,t)}{x}$}\n    \\RightLabel{$\\Subst{\\delta_2'}{t}{c}$}\n    \\DeduceC{$\\Subst{!C}{t}{c}$}\n    \\DischargeRule{\\Elim{\\lexists}}{x}\n    \\BinaryInfC{$\\Subst{!C}{t}{c}$}\n    \\DisplayProof\n    \\]",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The existential-elimination case ends with an unrelated copied universal-introduction tree using an undefined delta prime. Its correct last inference must use both substituted subproofs, discharge A(a,t) and conclude Subst(C,t,c).",
+      "formula_policy": "يوازې ثبت شوي مقدم او پايله او يو ناسمه نقل شوے رسم او د ناپاکو استنتاجونو کلک کمېدونکے شمېر سمېږي؛ اووه نور رسمونه او ټول اصلي تمرينونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B239-REGULAR-NATURAL-PROOFS-LAMBDA-INTRO-DRIVER",
+      "audit_artifacts": [
+        "B239_SOURCE_AUDIT.json",
+        "B239_FINAL_DRAFT_QA.json",
+        "B239_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره قاعدو او مخالف مثالونو له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\delta'}{t}{c}$}\\DeduceC{$!A(a,t)$}\\RightLabel{\\Intro{\\lforall}}\\UnaryInfC{$\\lforall[x][!A(x,t)]$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\delta_1'}{t}{c}$}\\DeduceC{$\\lexists[x][!A(x,t)]$}\\AxiomC{$\\Discharge{!A(a,t)}{x}$}\\RightLabel{$\\Subst{\\delta_2'}{t}{c}$}\\DeduceC{$\\Subst{!C}{t}{c}$}\\DischargeRule{\\Elim{\\lexists}}{x}\\BinaryInfC{$\\Subst{!C}{t}{c}$}\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [
+          "Intro",
+          "UnaryInfC"
+        ],
+        "target_only": [
+          "Elim",
+          "AxiomC",
+          "DeduceC",
+          "DischargeRule",
+          "BinaryInfC"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-137",
+      "unit_id": "OLP-0665",
+      "classification": "regularization-select-highest-dirty-inference",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_locator": "content/proof-theory/natural-deduction/quantifiers.tex:145",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/quantifiers.tex",
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_line_1based": 136,
+      "disclosure_line_1based": 180,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د ناپاکو استنتاجونو پر شمېر په قوي استقرا کښې تر ټولو بره ناپاک استنتاج غوره کېږي؛ پورته ټول استنتاجونه پاک دي، نو فرعي ثبوت منظم دے۔ تازه ثابت سمبول د هماغه ځانګړي متغير ځاے نيسي۔ شمېر په کلکه کمېږي، خو ممکن له يوه څخه ډېر کم شي؛ کره شاهد او د سرچينې سمونونه ثبت دي۔",
+      "reason": "د ناپاکو استنتاجونو پر شمېر په قوي استقرا کښې تر ټولو بره ناپاک استنتاج غوره کېږي؛ پورته ټول استنتاجونه پاک دي، نو فرعي ثبوت منظم دے۔ تازه ثابت سمبول د هماغه ځانګړي متغير ځاے نيسي۔ شمېر په کلکه کمېږي، خو ممکن له يوه څخه ډېر کم شي؛ کره شاهد او د سرچينې سمونونه ثبت دي۔",
+      "exact_original_text": "Otherwise, pick a highest eigenvariable inference,",
+      "exact_proposed_source_text": "Otherwise, pick a highest dirty eigenvariable inference,",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "The proof $\\delta_2$ is\nregular, since it contains no eigenvariable inferences at all.",
+          "exact_proposed_source_text": "The proof $\\delta_2$ is regular, since all its eigenvariable inferences are clean. The chosen lower inference eigenvariable is not the eigenvariable of an inference in this subproof."
+        }
+      ],
+      "primary_verification": "If there are dirty inferences, an absolutely topmost inference can be clean. Choose a topmost dirty inference. Its subproof is regular because every eigenvariable inference above it is clean; it need not contain no eigenvariable inferences. Clean inner eigenvariables cannot equal c, since c is also the chosen lower inference eigenvariable.",
+      "formula_policy": "يوازې ثبت شوي مقدم او پايله او يو ناسمه نقل شوے رسم او د ناپاکو استنتاجونو کلک کمېدونکے شمېر سمېږي؛ اووه نور رسمونه او ټول اصلي تمرينونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B239-REGULAR-NATURAL-PROOFS-LAMBDA-INTRO-DRIVER",
+      "audit_artifacts": [
+        "B239_SOURCE_AUDIT.json",
+        "B239_FINAL_DRAFT_QA.json",
+        "B239_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره قاعدو او مخالف مثالونو له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-138",
+      "unit_id": "OLP-0665",
+      "classification": "regularization-dirty-count-strict-decrease",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+      "source_locator": "content/proof-theory/natural-deduction/quantifiers.tex:176",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/quantifiers.tex",
+      "target_sha256": "108f184aca73f66b7bf12784c6b3f368ed3d203964669b7e1ed36eb949f42736",
+      "target_line_1based": 136,
+      "disclosure_line_1based": 183,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د ناپاکو استنتاجونو پر شمېر په قوي استقرا کښې تر ټولو بره ناپاک استنتاج غوره کېږي؛ پورته ټول استنتاجونه پاک دي، نو فرعي ثبوت منظم دے۔ تازه ثابت سمبول د هماغه ځانګړي متغير ځاے نيسي۔ شمېر په کلکه کمېږي، خو ممکن له يوه څخه ډېر کم شي؛ کره شاهد او د سرچينې سمونونه ثبت دي۔",
+      "reason": "د ناپاکو استنتاجونو پر شمېر په قوي استقرا کښې تر ټولو بره ناپاک استنتاج غوره کېږي؛ پورته ټول استنتاجونه پاک دي، نو فرعي ثبوت منظم دے۔ تازه ثابت سمبول د هماغه ځانګړي متغير ځاے نيسي۔ شمېر په کلکه کمېږي، خو ممکن له يوه څخه ډېر کم شي؛ کره شاهد او د سرچينې سمونونه ثبت دي۔",
+      "exact_original_text": "The resulting proof has $n-1$ dirty eigenvariable inferences,",
+      "exact_proposed_source_text": "The resulting proof has fewer than $n$ dirty eigenvariable inferences,",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "We\nshow, by induction on~$n$,",
+          "exact_proposed_source_text": "We\nshow, by strong induction on~$n$,"
+        }
+      ],
+      "primary_verification": "Renaming one shared eigenvariable can make another inference clean as well. Two otherwise regular forall introductions on disjoint branches using c have n=2; freshening one to a can make both clean, giving n=0 rather than n-1. The count strictly decreases, which suffices for induction.",
+      "formula_policy": "يوازې ثبت شوي مقدم او پايله او يو ناسمه نقل شوے رسم او د ناپاکو استنتاجونو کلک کمېدونکے شمېر سمېږي؛ اووه نور رسمونه او ټول اصلي تمرينونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B239-REGULAR-NATURAL-PROOFS-LAMBDA-INTRO-DRIVER",
+      "audit_artifacts": [
+        "B239_SOURCE_AUDIT.json",
+        "B239_FINAL_DRAFT_QA.json",
+        "B239_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او کره قاعدو او مخالف مثالونو له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$n-1$"
+        ],
+        "target_only": [
+          "$n$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

@@ -1,0 +1,201 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{qua}
+
+\olsection{منظم \usetoken{P}{proof} او تعويض}
+
+د کميت ټاکونکو قاعدې ځينې ستونزې راولي، ځکه د «ځانګړي متغير
+شرطونه» د \Elim{\lexists} او~\Intro{\lforall} پر قاعدو لګېږي۔
+د دغو ډېرو ستونزو حل دا دے چې يقيني کړو په دې استنتاجونو کښې
+!!{constant}~$c$ بيا نۀ کارول کېږي۔ لاندې تعريف وړاندې کوو۔
+
+\begin{defn}
+د فطري استنتاج !!{proof}~$\delta$ هله \emph{منظم} دے چې
+\begin{enumerate}
+  \item هېڅ ځانګړے متغير~$a$ د \Elim{\lexists} يا
+  \Intro{\lforall} له يوه څخه د ډېرو استنتاجونو ځانګړے متغير نۀ وي؛ او
+  \item که $a$ د \Elim{\lexists} يا~\Intro{\lforall} د کوم
+  استنتاج ځانګړے متغير وي، نو يوازې په هغه نېغ فرعي !!{proof} کښې
+  راځي چې په ترتيب ئې کوچنۍ مقدمه يا يوازېنۍ مقدمه ورکوي۔
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+که $\delta$ منظم وي او په~$!C$ ختمېږي، $c$ داسې !!a{constant}
+وي چې په~$\delta$ کښې د ځانګړي متغير په توګه نۀ کارېږي، او
+$t$ داسې ترم وي چې د~$\delta$ هېڅ ځانګړے متغير پکښې نۀ وي،
+نو $\Subst{\delta}{t}{c}$ چې له~$\delta$ څخه د~$c$ د هر راتګ په~$t$
+بدلولو جوړېږي، يو منظم !!{proof} دے۔ د $\Subst{\delta}{t}{c}$ پاييز
+!!{formula} د $\Subst{!C}{t}{c}$ سره برابر دے۔ که $!A^x$ د~$\delta$
+يو پرانيستے فرض وي، نو $\Subst{!A}{t}{c}^x$ د~$\Subst{\delta}{t}{c}$ يو پرانيستے فرض دے۔
+\end{lem}
+
+\begin{proof}
+د $\pheight{\delta}$ پر لوړوالي په استقرا۔ که $\pheight{\delta} = 0$ وي، نو ثبوت يوازې
+له فرض~$!A^x$ څخه جوړ دے۔ بيا $\Subst{\delta}{t}{c}$ د~$\Subst{!A}{t}{c}^x$ سره برابر دے۔
+
+که $\pheight{\delta} > 0$ وي، د~$\delta$ د وروستي استنتاج له مخې حالتونه بېلوو۔
+د قضييزو تړونکو د قاعدو حالتونه اسانه دي او د تمرينونو په توګه
+پرېښودل شوي دي۔ هغه حالتونه څېړو چې $\delta$ په يوه کميتي استنتاج ختمېږي۔
+\begin{enumerate}
+  \item که وروستے استنتاج $\Intro{\lforall}$ وي، نو $\delta$ دا بڼه لري:
+  \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$!A(a,c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,c)]$}
+    \DisplayProof
+    \]
+  د استقرا د فرض له مخې، $\Subst{\delta'}{t}{c}$ د $!A(a,t)$ يو منظم !!{proof}
+  دے۔ دا چې $a$ د~$\delta$ ځانګړے متغير دے، نو $a$
+  په~$t$ کښې نۀ راځي۔ ځکه په $\Subst{\delta}{t}{c}$ کښې وروستے استنتاج
+  \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$!A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,t)]$}
+    \DisplayProof
+    \]
+  سم دے: $t$ د~$a$ لرونکے نۀ دے، نو نۀ په پايله
+  کښې~$a$ راځي او نۀ په کوم پرانيستي فرض کښې۔
+  \item که وروستے استنتاج $\Elim{\lforall}$ وي، نو $\delta$ دا بڼه لري:
+  \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$\lforall[x][!A(x,c)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(c),c)$}
+    \DisplayProof
+    \]
+  د استقرا د فرض له مخې، $\Subst{\delta'}{t}{c}$ د $\lforall[x][!A(x,t)]$ يو منظم !!{proof}
+  دے۔ (په پايله کښې ترم~$s(c)$ کېدے شي د~$c$ لرونکے وي،
+  خو اړين نۀ دے۔) په $\Subst{\delta}{t}{c}$ کښې وروستے استنتاج
+  \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$\lforall[x][!A(x,t)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(t),t)$}
+    \DisplayProof
+    \]
+  سم دے، او $!A(s(t),t) \ident \Subst{!A(s(c),c)}{t}{c}$ دے۔ د \Intro{\lexists} حالت هم ورته دے۔
+  \item که وروستے استنتاج $\Elim{\lexists}$ وي، نو $\delta$ دا بڼه لري:
+  \[
+    \AxiomC{}
+    \RightLabel{$\delta_1'$}
+    \DeduceC{$\lexists[x][!A(x,c)]$}
+    \AxiomC{$\Discharge{!A(a,c)}{x}$}
+    \RightLabel{$\delta_2'$}
+    \DeduceC{$!C$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$!C$}
+    \DisplayProof
+    \]
+  د استقرا د فرض له مخې، $\Subst{\delta_1'}{t}{c}$ او $\Subst{\delta_2'}{t}{c}$ د $\lexists[x][!A(x,t)]$ او
+  د $\Subst{!C}{t}{c}$ منظم !!{proof}s دي؛ دويم له پرانيستي
+  فرض~$!A(a,t)$ څخه راځي۔ دا چې $a$ د~$\delta$ ځانګړے متغير
+  دے، نو $a$ په~$t$ کښې نۀ راځي۔ ځکه په $\Subst{\delta}{t}{c}$ کښې
+  وروستے استنتاج
+  \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][!A(x,t)]$}
+    \AxiomC{$\Discharge{!A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{!C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{!C}{t}{c}$}
+    \DisplayProof
+    \]
+  سم دے: $\Subst{!A(x,t)}{a}{x} \ident \Subst{!A(a,c)}{t}{c}$ دے، او نۀ په پايله~$\Subst{!C}{t}{c}$ کښې~$a$
+  راځي او نۀ په کوم پاتې پرانيستي فرض کښې۔
+  \textbf{سرچينه‌يي سمون OLCMP-135:} تعويض په دواړو
+  مقدمو او په وروستۍ پايله کښې هم کېږي؛ د اصلي ثابت پاتې
+  نومونو پر ځاے اړين تعويض شوے متن راغلے دے۔
+  \textbf{سرچينه‌يي سمون OLCMP-136:} وروستے رسم د موجود
+  کميت د ايستلو دوه‌مقدمي استنتاج دے؛ د سرچينې ناسمه نقل
+  شوې د عمومي کميت د داخلولو بڼه سمه شوې ده۔
+\end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:regular}
+که $\delta$ په \Log{N1c} يا \Log{N1i} کښې !!a{proof} وي، نو
+يو منظم !!{proof}~$\delta'$ شته چې جوړښت (په ځانګړي ډول هماغه
+!!{height}) ئې عين دے او له $\delta$ څخه يوازې د ځانګړو متغيرونو
+په بدلولو توپير لري۔
+\end{prop}
+
+\begin{proof}
+يوازې د دې ثبوت دپاره د~$\delta$ د ځانګړي متغير يو استنتاج هله
+\emph{پاک} ګڼو چې ځانګړے متغير ئې د کوم بل استنتاج ځانګړے
+متغير نۀ وي، او په~$\delta$ کښې د همدغه استنتاج له نېغ فرعي
+!!{proof} څخه پرته بل چېرته نۀ راځي؛ که داسې نۀ وي، نو
+\emph{ناپاک} ئې ګڼو۔ $n$ دې په~$\delta$ کښې د ناپاکو ځانګړي
+متغيرونو د استنتاجونو شمېر وي۔ د~$n$ پر شمېر په قوي استقرا
+ښيو چې $\delta$ په اړين منظم !!{proof}~$\delta'$ بدلېدے شي۔ که
+$n=0$ وي، په~$\delta$ کښې د ځانګړي متغير ټول استنتاجونه پاک
+دي؛ نو $\delta$ منظم دے او د ثابتولو څه پاتې نۀ دي۔ که داسې
+نۀ وي، تر ټولو بره يو ناپاک د ځانګړي متغير استنتاج غوره کوو؛
+مثلاً \Intro{\lforall}۔ د~$\delta$ هغه فرعي !!{proof}~$\delta_1$
+چې په دې استنتاج ختمېږي، دا بڼه لري:
+\[
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A(c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+دا چې $c$ ځانګړے متغير دے، نو په~$\lforall[x][!A(x)]$ يا په کوم
+پرانيستي فرض کښې نۀ راځي۔ ثبوت $\delta_2$ منظم دے، ځکه د
+ځانګړي متغير ټول استنتاجونه ئې پاک دي؛ د غوره شوي استنتاج
+ځانګړے متغير په دې فرعي ثبوت کښې د کوم استنتاج ځانګړے
+متغير نۀ دے۔ $a$ دې داسې !!a{constant} وي چې په~$\delta$
+کښې نۀ راځي۔ د \olref{lem:subst-regular} له مخې، $\Subst{\delta_2}{a}{c}$
+د $!A(a)$ يو منظم ثبوت دے۔ د ځانګړي متغير د شرط له مخې،
+د~$\delta_2$ هېڅ پرانيستے فرض د~$c$ لرونکے نۀ دے؛ نو
+د~$\Subst{\delta_2}{a}{c}$ هېڅ پرانيستے فرض د~$a$ لرونکے نۀ دے۔ ځکه
+$\Intro{\lforall}$ لګولے شو۔ که په~$\delta$ کښې $\delta_1$ په ثبوت $\delta_1'$
+بدل کړو،
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_2}{a}{c}$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+نو د ځانګړي متغير يو ناپاک استنتاج مو په پاک استنتاج بدل کړے
+دے؛ يوازې دا توپير راغلے دے چې ځانګړے متغير $c$ په~$a$
+بدل شوے دے۔ په راوتلي ثبوت کښې له~$n$ څخه کم د ناپاکو
+ځانګړي متغيرونو استنتاجونه دي؛ نو د استقرا له فرض څخه پايله راځي۔
+\textbf{سرچينه‌يي سمون OLCMP-137:} غوره کېدونکے استنتاج
+تر ټولو بره ناپاک استنتاج دے؛ پورته فرعي ثبوت ئې منظم دے،
+خو لازماً د ځانګړي متغير له ټولو استنتاجونو تش نۀ دے۔
+\textbf{سرچينه‌يي سمون OLCMP-138:} د ناپاکو استنتاجونو
+شمېر په کلکه کمېږي؛ يو متغير بدلول کله بل استنتاج هم پاکوي،
+نو شمېر لازماً يوازې يو نۀ کمېږي۔
+\end{proof}
+
+\begin{prob}
+د \olref{prop:regular} په ثبوت کښې هغه حالت بيان کړئ چې
+تر ټولو بره د ځانګړي متغير استنتاج~\Elim{\lexists} وي۔
+\end{prob}
+
+ثابته شوې قضيه به په څرګند ډول د دليل په توګه نۀ کاروو،
+خو فرض به کړو چې ټول څېړل کېدونکي !!{proof}s منظم دي؛
+که منظم نۀ وي، ځانګړي متغيرونه ئې تل بدلولے شو چې منظم شي۔
+
+\Olref{lem:subst-regular} او \olref{prop:regular} د
+\Log{N2c} او~\Log{N2i} دپاره هم کره دي۔ ثبوتونه ئې
+د تمرينونو په توګه پرېږدو۔
+
+\end{document}
