@@ -417,7 +417,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
     for row, body in prepared:
         if int(row['unit_id'][-4:]) <= 642:
             continue
-        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646'}:
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648'}:
             raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
         parent = Path(row['source_path']).parent
         chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
@@ -425,6 +425,13 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
             raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
         anchor = chapter_rows[-1][0]['unit_id']
         part, chapter, section, role = context(body)
+        if row['unit_id'] in {'OLP-0647', 'OLP-0648'}:
+            # Define C before the beta-function/recursion construction; place
+            # the complete legacy representability argument after its modern
+            # proof, inside the same chapter. Unit IDs follow filename order.
+            anchor = 'OLP-0291' if row['unit_id'] == 'OLP-0648' else 'OLP-0297'
+            if not any(r['unit_id'] == anchor and context(b)[:2] == ('inc', 'req') for r, b in primary):
+                raise ValueError('C definition/proof requires its translated representability chapter')
         if row['unit_id'] in {'OLP-0645', 'OLP-0646'}:
             # The alternate combined outline and its full introduction belong
             # before the preferred separate syntax and semantics exposition.
@@ -888,6 +895,7 @@ def main() -> None:
     generated = (
         preamble.read_text(encoding="utf-8")
         .replace("OLP_UPSTREAM_PATH", (ROOT / "upstream").as_posix())
+        .replace("OLP_READER_UNITS_PS", str(len(selected)).translate(str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")))
         .replace("OLP_READER_UNITS", str(len(selected)))
         .replace("OLP_ASSETS_PATH", (ROOT / "assets").as_posix())
         + "\n\n"

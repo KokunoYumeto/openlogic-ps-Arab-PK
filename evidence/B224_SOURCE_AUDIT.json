@@ -1,0 +1,287 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T13:02:21.471526+00:00",
+  "status": "current648 newline classification and reader metadata repair; dual current acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0647",
+      "source_path": "content/incompleteness/representability-in-q/c-representable.tex",
+      "source_bytes": 7585,
+      "source_sha256": "95d02f4982ae3ce8a01422b06515b4a37aeaedfac49e2f883dcad351def072d0",
+      "target_bytes": 10990,
+      "target_sha256": "4454627e3750dd9850f74114ca4f6238cf71e7902405eb0471a8da178ec94bca",
+      "paired_blocks": 24,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "ordered_math_spans": 134,
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_with_exact_roles": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "source_target_group_balance": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true,
+        "all_proof_labels_localized": true
+      },
+      "all_checks_pass": true,
+      "reviewed_math_clause_permutations": {
+        "5": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          5
+        ],
+        "8": [
+          0,
+          1,
+          2,
+          4,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "12": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7
+        ],
+        "20": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "22": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "source_correction_ids": [
+        "OLCMP-099"
+      ],
+      "previous_target_sha256": "5edf2b5667093891f9cae90c7616a66e1321694f34d0877215482578bc2ddf18",
+      "newline_only_repair": true
+    },
+    {
+      "unit_id": "OLP-0648",
+      "source_path": "content/incompleteness/representability-in-q/c.tex",
+      "source_bytes": 1080,
+      "source_sha256": "417388c82eb2680eee44dfe2e1f1dc26dddec6ebfd557109dc674f3cd5ae7af7",
+      "target_bytes": 1411,
+      "target_sha256": "cfb54e3faaa187e30e41239bd2a6650756fd4d9aff67eedc4f3e3044e0f25bd3",
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4,
+        5,
+        6
+      ],
+      "ordered_math_spans": 9,
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_with_exact_roles": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "environments_equal": true,
+        "source_target_group_balance": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true,
+        "all_proof_labels_localized": true
+      },
+      "all_checks_pass": true,
+      "reviewed_math_clause_permutations": {},
+      "source_correction_ids": [],
+      "previous_target_sha256": "28c0d0502fc31e4f32db53e18c803d8c69e3e88e3a29a45cef23e4a13602198b",
+      "newline_only_repair": true
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0297",
+      "source_path": "content/incompleteness/representability-in-q/comp-representable.tex",
+      "source_sha256": "48131a3e5cfc021a6d3eda9f9c180ed5ab21e6e31de0237a780c063c02807442",
+      "target_sha256_before": "d704f4dfb507d145fd90d992341f6db17eb20cecfeb943a79dc06c15d439fbf9",
+      "target_sha256": "7116eb01c0034a7ab21eb0cfccf243b3d2ff3fb2d98e49d67864fcfa4a3c5fcc",
+      "target_bytes": 4404,
+      "note_only_change": true,
+      "paired_blocks": 9,
+      "source_correction_ids": [
+        "OLCMP-100"
+      ],
+      "previous_target_sha256": "09e6e1d06b7d78889f5ff1c694a173a8ce98f6eac413fa8f991c0f06fbf82c38",
+      "newline_only_repair": true
+    }
+  ],
+  "focused_qa_sha256": "2fed8502670a44589ede25190319dca7f1a343c9d0282cceb774664ba89f7ded",
+  "model_provenance_sha256": "ed6c74a7a8bd8e609e253929920b24dab2df2427ba01f6ebc97866199ceb3bd4",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "AF-NIAZMAN-P138-EQUALITY",
+    "AF-NIAZMAN-P140-CONSISTENCY"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "Five exact native pages1/147/17/138/140 visually read before this complete translation and targeted repair; scopes bounded.",
+      "evidence_limit": "پاکستاني بالغ نثر، املا او تشريحي ترتيب؛ عين بازګشتي تمثيلېدنه يا د حساب رياضيکي دعوه نۀ تصديقوي۔",
+      "finding": "پاکستاني بالغ نثر، املا او تشريحي ترتيب؛ عين بازګشتي تمثيلېدنه يا د حساب رياضيکي دعوه نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "Five exact native pages1/147/17/138/140 visually read before this complete translation and targeted repair; scopes bounded.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد صفر، تالي، پروجکشن، ترکيب د تعويض له لارې او بازګښت ښيي؛ عين منظمه پلټنه او تمثيلېدنه نۀ ثابتوي۔",
+      "finding": "افغان سيمه‌ييز شاهد صفر، تالي، پروجکشن، ترکيب د تعويض له لارې او بازګښت ښيي؛ عين منظمه پلټنه او تمثيلېدنه نۀ ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "Five exact native pages1/147/17/138/140 visually read before this complete translation and targeted repair; scopes bounded.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد پر طبيعي عددونو د استقرا بنسټ او ګام ښيي؛ د Q څخه بهر استقرا او د Q دننه اثبات منجمد سرچينه بېلوي۔",
+      "finding": "افغان سيمه‌ييز شاهد پر طبيعي عددونو د استقرا بنسټ او ګام ښيي؛ د Q څخه بهر استقرا او د Q دننه اثبات منجمد سرچينه بېلوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P138-EQUALITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "138",
+      "pdf_page_1based": 143,
+      "page_image_sha256": "3cc99a5c4e72acb01f319d6984eba778cd045513591528af73b72fef62ca864f",
+      "actual_consultation": "Five exact native pages1/147/17/138/140 visually read before this complete translation and targeted repair; scopes bounded.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد عينيت، انعکاس، تناظر، انتقاليت او د مساوي څيزونو تعويض ښيي؛ د Q د عددنښو عين قضيه منجمد سرچينه ټاکي۔",
+      "finding": "افغان سيمه‌ييز شاهد عينيت، انعکاس، تناظر، انتقاليت او د مساوي څيزونو تعويض ښيي؛ د Q د عددنښو عين قضيه منجمد سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "140",
+      "pdf_page_1based": 145,
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "actual_consultation": "Five exact native pages1/147/17/138/140 visually read before this complete translation and targeted repair; scopes bounded.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د تناقض نفي او د نظريو د غځېدو د سازګارۍ توپير ښيي؛ د تمثيل د برعکس جهت دقيق شرط د Q تعريف او اثبات ټاکي۔",
+      "finding": "افغان سيمه‌ييز شاهد د تناقض نفي او د نظريو د غځېدو د سازګارۍ توپير ښيي؛ د تمثيل د برعکس جهت دقيق شرط د Q تعريف او اثبات ټاکي۔"
+    }
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [],
+  "semantic_samples_added": 0,
+  "external_source_preaudit_sha256": "232a5d634adb5d81df928daa21707a4f43e77d4a2c06e8bb15097be3e5ad8759",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0328.json",
+  "related_reaudit_sha256": "db84e7e86d899891eb6f2ce14485fa9eaf478bf76062b7dfa14293528d20a1a0",
+  "unresolved": "پاتې ۷۴ واحدونه، بشپړ لوستونکی، EPUB، پښتو تشريحات، د ثبوت تيورۍ تجربوي برخه او د پخواني ماډل ۲۸۱ واحدونه لا پاتې دي۔",
+  "next_executable_action": "Dual648 current corpus and register replay; accept B224 current repair. Build integrated648 with current PDF metadata, one bounded TeX acquisition at this later natural checkpoint, publish and continue649/whole0329 regardless of slot.",
+  "current_accepted_boundary": 648,
+  "previous_accepted_checkpoint_sha256": "6198de31138e4db974ac2bb08f14a8577bb38df9e45f4f32753a7ca67b9057d7",
+  "historical_batch_receipts": [
+    "B223"
+  ],
+  "newline_repairs": [
+    {
+      "unit_id": "OLP-0647",
+      "target_sha256_before": "5edf2b5667093891f9cae90c7616a66e1321694f34d0877215482578bc2ddf18",
+      "target_sha256_after": "4454627e3750dd9850f74114ca4f6238cf71e7902405eb0471a8da178ec94bca",
+      "change": "CRLF to LF only; identical Unicode text, formulas and correction notes"
+    },
+    {
+      "unit_id": "OLP-0648",
+      "target_sha256_before": "28c0d0502fc31e4f32db53e18c803d8c69e3e88e3a29a45cef23e4a13602198b",
+      "target_sha256_after": "cfb54e3faaa187e30e41239bd2a6650756fd4d9aff67eedc4f3e3044e0f25bd3",
+      "change": "CRLF to LF only; identical Unicode text, formulas and correction notes"
+    },
+    {
+      "unit_id": "OLP-0297",
+      "target_sha256_before": "09e6e1d06b7d78889f5ff1c694a173a8ce98f6eac413fa8f991c0f06fbf82c38",
+      "target_sha256_after": "7116eb01c0034a7ab21eb0cfccf243b3d2ff3fb2d98e49d67864fcfa4a3c5fcc",
+      "change": "CRLF to LF only; identical Unicode text, formulas and correction notes"
+    }
+  ],
+  "affected_alignment": "Only line endings normalized in three touched targets; first three source headers are unchanged structural blocks, not newly translated prose.",
+  "reader_metadata_repair": {
+    "old_scope": 642,
+    "new_scope": "derived from selected units for every new build",
+    "preamble": "tools/cumulative-reader-preamble-v107.tex",
+    "preamble_sha256": "195599874f4cd9b35226ae9ad48fd27ee18fff2937e299dc2815d5f001091496"
+  }
+}

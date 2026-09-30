@@ -1,0 +1,62 @@
+{
+  "schema": "ps-source-semantic-preaudit/1",
+  "utc": "2026-09-30T12:51:31.669880+00:00",
+  "status": "PASS; two precise repeated missing-hypothesis disclosures; no composition formula defect",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "primary_sources": {
+    "upstream/content/incompleteness/representability-in-q/introduction.tex": "de4ec980306a8c0b24fe5389b6c5b090facca2bd20f23305425d70d6ecff4721",
+    "upstream/content/incompleteness/representability-in-q/representable-comp.tex": "d5b487962fa2cdb7c4aa920366ccd501d5b83c9e9308861906906b802cd856ef",
+    "upstream/content/incompleteness/representability-in-q/comp-representable.tex": "48131a3e5cfc021a6d3eda9f9c180ed5ab21e6e31de0237a780c063c02807442",
+    "upstream/content/incompleteness/representability-in-q/c-representable.tex": "95d02f4982ae3ce8a01422b06515b4a37aeaedfac49e2f883dcad351def072d0",
+    "upstream/open-logic-config.sty": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+  },
+  "composition_scope_adjudication": {
+    "initial_suspicion_retracted_before_registration": true,
+    "macro_locator": "upstream/open-logic-config.sty:137-148",
+    "finding": "د وجودي کمیت ټاکونکي ماکرو خپل درېيم دليل بې له نويو قوسونو چاپوي؛ د چاپي فارمول د تړلو قوسونو دامن وروستنے عطف هم رانغاړي۔ د ماکرو د دليل پاے د رياضيکي دامن پاے نۀ دے۔ اصلي فارمول ساتل شو۔"
+  },
+  "strong_theory_converse": {
+    "definition_locator": "introduction.tex: representable-fn",
+    "proof_locator": "representable-comp.tex: consistency and distinct-numeral argument",
+    "missing_hypotheses": [
+      "consistent classical theory",
+      "provable inequality of distinct numerals, automatic for Q extensions or its interpreted numerals"
+    ],
+    "inconsistent_counterexample": {
+      "theory": "Q plus 0=1",
+      "proof_check": "computable; finite axioms",
+      "representing_formula": "y=0",
+      "argument": "Q proves 0!=1. Classical explosion proves both correct-instance and uniqueness clauses for every total function, including a noncomputable one."
+    },
+    "consistent_numeral_collapse_counterexample": {
+      "theory": "one-point arithmetic signature, axiom forall x x=0, with classical identity rules",
+      "model": "singleton; every operation constant0",
+      "proof_check": "computable; finite axioms",
+      "representing_formula": "y=0",
+      "argument": "Every numeral denotes0, so the two representation clauses hold for every total function. Consistency alone does not suffice without distinguishing numerals."
+    },
+    "correct_converse": "Enumerate proofs of representing formulas for numeral inputs/outputs. Correct instances exist; consistency and provable distinct-numeral inequalities rule out wrong outputs. Search terminates with the represented value."
+  },
+  "successor_addition_scope": {
+    "finding": "The source denies Q-provability of the universal identity, not truth in standard naturals. Every fixed-numeral instance uses external induction. The final chain also uses Q5 implicitly; the Pashto reason makes that use explicit without changing mathematics.",
+    "source_lemma_retained": true
+  },
+  "order_proof_scope": "The source supplies informal hints for part1 and the base case of part2, not the complete formal induction; translation preserves that limit.",
+  "new_source_correction_ids": [
+    "OLCMP-099",
+    "OLCMP-100"
+  ],
+  "repaired_accepted_unit": {
+    "unit_id": "OLP-0297",
+    "source_path": "content/incompleteness/representability-in-q/comp-representable.tex",
+    "source_sha256": "48131a3e5cfc021a6d3eda9f9c180ed5ab21e6e31de0237a780c063c02807442",
+    "target_sha256_before": "d704f4dfb507d145fd90d992341f6db17eb20cecfeb943a79dc06c15d439fbf9",
+    "target_sha256": "09e6e1d06b7d78889f5ff1c694a173a8ce98f6eac413fa8f991c0f06fbf82c38",
+    "target_bytes": 4463,
+    "note_only_change": true,
+    "paired_blocks": 9,
+    "source_correction_ids": [
+      "OLCMP-100"
+    ]
+  }
+}

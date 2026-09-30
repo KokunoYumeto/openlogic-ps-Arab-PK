@@ -18696,6 +18696,152 @@
         "SOL6_REAUDIT_0326.json"
       ],
       "upstream_reporting": "No upstream message; bounded manager milestone only."
+    },
+    {
+      "id": "OLCMP-099",
+      "unit_id": "OLP-0647",
+      "classification": "representability_converse_missing_consistency_and_numeral_separation",
+      "source_path": "content/incompleteness/representability-in-q/c-representable.tex",
+      "source_sha256": "95d02f4982ae3ce8a01422b06515b4a37aeaedfac49e2f883dcad351def072d0",
+      "source_locator": "content/incompleteness/representability-in-q/c-representable.tex:177",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/c-representable.tex",
+      "target_sha256": "4454627e3750dd9850f74114ca4f6238cf71e7902405eb0471a8da178ec94bca",
+      "target_line_1based": 111,
+      "disclosure_line_1based": 112,
+      "mode": "printed-claim-preserved-plus-adjacent-Pashto-missing-hypothesis-disclosure",
+      "translation_change": "د تمثيل د برعکس جهت سازګاري او د بېلو عددنښو د نابرابرۍ اثبات په نږدې پښتو يادونه کښې څرګند شول۔",
+      "reason": "د تمثيل د تعريف دواړه اثباتي شرطونه په ناسازګار کلاسيک نظام کښې د هرې تامې تابعې دپاره ثابتېږي؛ نو يوازې محاسبه کېدونکے اثبات بس نۀ دے۔ سازګاري او د بېلو عددنښو نابرابري د غلطې پايلې مخه نيسي۔ دا په Q يا د هغې په سازګاره غځونه کښې شته؛ په يو عمومي نظام کښې بې له دغو قيدونو نۀ فرض کېږي۔",
+      "counterexample": {
+        "definition_locator": "introduction.tex: representable-fn",
+        "proof_locator": "representable-comp.tex: consistency and distinct-numeral argument",
+        "missing_hypotheses": [
+          "consistent classical theory",
+          "provable inequality of distinct numerals, automatic for Q extensions or its interpreted numerals"
+        ],
+        "inconsistent_counterexample": {
+          "theory": "Q plus 0=1",
+          "proof_check": "computable; finite axioms",
+          "representing_formula": "y=0",
+          "argument": "Q proves 0!=1. Classical explosion proves both correct-instance and uniqueness clauses for every total function, including a noncomputable one."
+        },
+        "consistent_numeral_collapse_counterexample": {
+          "theory": "one-point arithmetic signature, axiom forall x x=0, with classical identity rules",
+          "model": "singleton; every operation constant0",
+          "proof_check": "computable; finite axioms",
+          "representing_formula": "y=0",
+          "argument": "Every numeral denotes0, so the two representation clauses hold for every total function. Consistency alone does not suffice without distinguishing numerals."
+        },
+        "correct_converse": "Enumerate proofs of representing formulas for numeral inputs/outputs. Correct instances exist; consistency and provable distinct-numeral inequalities rule out wrong outputs. Search terminates with the represented value."
+      },
+      "formula_policy": "All original mathematical expressions unchanged; adjacent Pashto note only.",
+      "affected_segments": [
+        "OLP-0647-B023"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B223-C-REPRESENTABILITY",
+      "decision_timing": "B223 complete source, actual native pages and mathematical definitions read before registration.",
+      "audit_artifacts": [
+        "B223_SOURCE_AUDIT.json",
+        "B223_REPRESENTABILITY_PREAUDIT.json",
+        "B223_FINAL_C_DRAFT_QA.json"
+      ],
+      "upstream_reporting": "No upstream message; authorized milestone report only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "previous_target_sha256": "5edf2b5667093891f9cae90c7616a66e1321694f34d0877215482578bc2ddf18",
+      "newline_reconciliation_receipt": "B224_SOURCE_AUDIT.json"
+    },
+    {
+      "id": "OLCMP-100",
+      "unit_id": "OLP-0297",
+      "classification": "representability_converse_missing_consistency_and_numeral_separation",
+      "source_path": "content/incompleteness/representability-in-q/comp-representable.tex",
+      "source_sha256": "48131a3e5cfc021a6d3eda9f9c180ed5ab21e6e31de0237a780c063c02807442",
+      "source_locator": "content/incompleteness/representability-in-q/comp-representable.tex:46",
+      "target_path": "ps-Arab-PK/content/incompleteness/representability-in-q/comp-representable.tex",
+      "target_sha256": "7116eb01c0034a7ab21eb0cfccf243b3d2ff3fb2d98e49d67864fcfa4a3c5fcc",
+      "target_line_1based": 40,
+      "disclosure_line_1based": 56,
+      "mode": "printed-claim-preserved-plus-adjacent-Pashto-missing-hypothesis-disclosure",
+      "translation_change": "د تمثيل د برعکس جهت سازګاري او د بېلو عددنښو د نابرابرۍ اثبات په نږدې پښتو يادونه کښې څرګند شول۔",
+      "reason": "د تمثيل د تعريف دواړه اثباتي شرطونه په ناسازګار کلاسيک نظام کښې د هرې تامې تابعې دپاره ثابتېږي؛ نو يوازې محاسبه کېدونکے اثبات بس نۀ دے۔ سازګاري او د بېلو عددنښو نابرابري د غلطې پايلې مخه نيسي۔ دا په Q يا د هغې په سازګاره غځونه کښې شته؛ په يو عمومي نظام کښې بې له دغو قيدونو نۀ فرض کېږي۔",
+      "counterexample": {
+        "definition_locator": "introduction.tex: representable-fn",
+        "proof_locator": "representable-comp.tex: consistency and distinct-numeral argument",
+        "missing_hypotheses": [
+          "consistent classical theory",
+          "provable inequality of distinct numerals, automatic for Q extensions or its interpreted numerals"
+        ],
+        "inconsistent_counterexample": {
+          "theory": "Q plus 0=1",
+          "proof_check": "computable; finite axioms",
+          "representing_formula": "y=0",
+          "argument": "Q proves 0!=1. Classical explosion proves both correct-instance and uniqueness clauses for every total function, including a noncomputable one."
+        },
+        "consistent_numeral_collapse_counterexample": {
+          "theory": "one-point arithmetic signature, axiom forall x x=0, with classical identity rules",
+          "model": "singleton; every operation constant0",
+          "proof_check": "computable; finite axioms",
+          "representing_formula": "y=0",
+          "argument": "Every numeral denotes0, so the two representation clauses hold for every total function. Consistency alone does not suffice without distinguishing numerals."
+        },
+        "correct_converse": "Enumerate proofs of representing formulas for numeral inputs/outputs. Correct instances exist; consistency and provable distinct-numeral inequalities rule out wrong outputs. Search terminates with the represented value."
+      },
+      "formula_policy": "All original mathematical expressions unchanged; adjacent Pashto note only.",
+      "affected_segments": [
+        "OLP-0297-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B223-C-REPRESENTABILITY",
+      "decision_timing": "B223 complete source, actual native pages and mathematical definitions read before registration.",
+      "audit_artifacts": [
+        "B223_SOURCE_AUDIT.json",
+        "B223_REPRESENTABILITY_PREAUDIT.json",
+        "B223_FINAL_C_DRAFT_QA.json"
+      ],
+      "upstream_reporting": "No upstream message; authorized milestone report only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "previous_target_sha256": "09e6e1d06b7d78889f5ff1c694a173a8ce98f6eac413fa8f991c0f06fbf82c38",
+      "newline_reconciliation_receipt": "B224_SOURCE_AUDIT.json"
     }
   ],
   "external_upstream_report_submitted": false,
