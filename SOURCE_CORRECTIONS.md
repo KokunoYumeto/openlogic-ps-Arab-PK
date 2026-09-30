@@ -4189,3 +4189,6 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 چاپي اپسيلون--ډېلټا شرط د واټن مثبتوالے نۀ لري، نو مرکزي نقطه هم شاملوي؛ معمول حد پر مرکزي نقطې د ارزښت شرط نۀ ږدي۔ چاپي فارمول نۀ دے بدل شوے؛ کره محدود توپير په نږدې پښتو يادونه کښې دے۔
 
 [Exact bounded source adjudication](evidence/B212_LIMITS_SOURCE_PREAUDIT.json); [Pashto source-faithful text](ps-Arab-PK/content/history/set-theory/limits.tex).
+### OLSTH-049
+
+د سرچينې غيررسمي «په نرمۍ» د پيوستون بيان دے؛ د پيوسته مشتق تخصصي شرط نۀ دے۔ له تړلې متناهي وقفې څخه مربع ته پيوسته پر ټولو نقطو تصوير شته، خو د پيوسته مشتق لرونکے داسې تصوير مربع نۀ شي ډکولے۔ دا د لفظي معنا روښانتيا ده، د پېانو پر کره نتيجه د ناسم ثبوت تور نۀ دے۔ [د محدودې کتنې رسيد](evidence/B214_SPACE_FILLING_SOURCE_PREAUDIT.json) او [بشپړ پښتو متن](ps-Arab-PK/content/history/set-theory/pathologies.tex) وګورئ۔

@@ -1,0 +1,113 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T08:46:49.279082+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0637",
+  "draft_units": 637,
+  "remaining_unaccepted_units": 85,
+  "unit_ids": [
+    "OLP-0636",
+    "OLP-0637"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "4c1ea2d45d68bed83a2919bf87942e2a391839aafdbf2eb00940a25e4f684041",
+  "corpus_qa_sha256": "18085aa7741d8a1bbca6d5d0a48a00876d45bc776b2b2cc9fc72588962106b8b",
+  "canonical_replay_sha256": "b47586da6592b090b6499d6831592dd98b67a1edc7f84bd6b16597a9a64d3e3e",
+  "qa_sha256": "cf8f7b991137e39e823e3413a242e838b9f950d3c30fa38a5f29af471b63b69f",
+  "canonical_builder_sha256": "240c70d87d35e7cba33879a94db955b33a1969defb9641e9ee260afb57b20215",
+  "units": [
+    {
+      "unit_id": "OLP-0636",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "source_bytes": 5672,
+      "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+      "target_bytes": 8407,
+      "target_sha256": "a795c97a53e99fa163fab7828b15d9a54924dc92655d2022dc52b49a1b6e9723",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 1,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-049"
+      ]
+    },
+    {
+      "unit_id": "OLP-0637",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "source_bytes": 2243,
+      "source_sha256": "2ffceffef7cc6445f66391a252c598448190642ea60f60a748c6fe5e6a1ec55e",
+      "target_bytes": 3487,
+      "target_sha256": "860685f8625fae0749a516337fe560656efa91e138b212a578c160313d17e3b4",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "aligned_blocks": 9396,
+  "segment_canon_uses": 5941,
+  "semantic_samples": 2607,
+  "canonical_counts": {
+    "decisions": 802,
+    "occurrences": 30350,
+    "terminology_decisions": 320,
+    "source_correction_decisions": 466,
+    "priority_decisions": 451,
+    "reader_pages_available": 18244,
+    "reader_pages_pending": 12106
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0638 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0322; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

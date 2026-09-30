@@ -1,0 +1,51 @@
+{
+  "schema": "ps-access-localization/1",
+  "utc": "2026-09-30T08:55:44.206961+00:00",
+  "status": "PASS; complete Pashto access plus optional English; rendering pending",
+  "accepted_units": 637,
+  "whole_sol6_reviews": 14,
+  "whole_sol6_pending": 285,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "current_reader_recipe": {
+    "through_unit": 637,
+    "preamble": "tools/cumulative-reader-preamble-v102.tex",
+    "passes": 3,
+    "bibtex": true
+  },
+  "hilbert_lsystem": "Already loaded and declared by frozen config1242–1245; no duplicate declaration or diagram modification required.",
+  "localized_files": [
+    {
+      "path": "README.md",
+      "sha256": "ffbb0ec70a939078e5d74c3fba9208148ebefceae0a220ed632bda1bcf3588b8"
+    },
+    {
+      "path": "README.ps-Arab-PK.md",
+      "sha256": "ffbb0ec70a939078e5d74c3fba9208148ebefceae0a220ed632bda1bcf3588b8"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "a6ab8b87d2a81cefa3d8da441b5ff47a8f9d06ca5564479e26219501c7436cd9"
+    },
+    {
+      "path": "EXPERT_REVIEW.md",
+      "sha256": "a292f628b736fbe0b13f02274a960b5e6993fc5674a95e75baa54731c3c80725"
+    },
+    {
+      "path": "EXPERT_REVIEW.ps-Arab-PK.md",
+      "sha256": "c76643444694d42a2abcf131cf0d2c813cca0fa71c6438db6182cf67285bf2df"
+    },
+    {
+      "path": "SOURCE_CORRECTIONS.md",
+      "sha256": "067805652e36dfac9e2a0f9413595f30e1c24d3f48b25fad0412b8d5dbe64aa8"
+    },
+    {
+      "path": "evidence/SOL6_REAUDIT_STATUS.ps-Arab-PK.md",
+      "sha256": "ff33d83a70da199d716f4832eb513e69d8ba3ca782677a9c9a0a13c18606d9bb"
+    }
+  ],
+  "preamble_sha256": "7b01b4e9bb825c75c39575aed598a6787a48d6c315658e7b676dfb3975d34141",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false
+}

@@ -40,6 +40,10 @@ base.INACTIVE_TAGS = INACTIVE_TAGS
 TOKENS = dict(base.TOKENS)
 TOKENS.update(
     {
+        # Frozen open-logic-config.sty:1672--1678: exact diagram colours and names.
+        "colorC": ("سور",) * 4,
+        "colorD": ("آبي",) * 4,
+        "colorE": ("زرغون",) * 4,
         "injective": ("يو پر يو",) * 4,
         "surjective": (
             "پر هدف سټ بشپړه",
@@ -644,6 +648,23 @@ def prepare_unit(text: str, rows: list[dict], row: dict) -> tuple[str, Counter, 
     body, assets = rewrite_assets(body, row["source_path"])
     body = wrap_rtl_math_text(expand_tokens(body))
     body, profile_stats = resolve_profile_conditionals(body)
+    if row["unit_id"] in {"OLP-0471", "OLP-0472"}:
+        # Removing inactive proof-rule branches leaves paragraph breaks inside
+        # display math. TeX interprets those as \par and aborts. Whitespace
+        # recovery only; require the exact known count and retain every symbol.
+        expected = {"OLP-0471": 1, "OLP-0472": 5}[row["unit_id"]]
+        recovered = 0
+
+        def recover_display(match: re.Match[str]) -> str:
+            nonlocal recovered
+            result, count = re.subn(r"\n(?:[ \t]*\n)+", "\n", match[0])
+            recovered += count
+            return result
+
+        body = re.sub(r"(?s)(?<!\\)\\\[.*?(?<!\\)\\\]", recover_display, body)
+        if recovered != expected:
+            raise ValueError(f"{row['unit_id']} display paragraph recovery sites changed: {recovered}")
+        profile_stats["modal_display_paragraph_break_recoveries"] += recovered
     if re.search(r"!!|\\(?:use|print)token|\\Article|\\article|\\olimport|\\psOblique", body):
         raise ValueError(f"{row['unit_id']} preparation left a source-only macro")
     if unicodedata.normalize("NFC", body) != body:
@@ -813,6 +834,15 @@ def main() -> None:
             ],
         },
         "source_syntax_recoveries": [
+            {
+                "unit_ids": ["OLP-0471", "OLP-0472"],
+                "source_paths": ["content/normal-modal-logic/sequent-calculus/introduction.tex",
+                                 "content/normal-modal-logic/sequent-calculus/rules-for-K.tex"],
+                "finding": "Resolved inactive proof-rule branches leave six paragraph breaks inside four display-math blocks, causing Missing $ inserted.",
+                "reader_recovery": "Remove only these six known generated paragraph breaks; exact count required. All formula tokens and proof-rule order retained.",
+                "source_bytes_changed": False,
+                "target_bytes_changed": False,
+            },
             {
                 "unit_id": "OLP-0061",
                 "source_path": "content/propositional-logic/syntax-and-semantics/valuations-sat.tex",

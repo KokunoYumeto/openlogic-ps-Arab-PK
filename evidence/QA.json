@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 635,
-    "structural_pass": 635,
+    "draft_units": 637,
+    "structural_pass": 637,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B212-CALCULUS-HISTORY",
+  "batch": "PS-B214-HISTORY",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -20449,6 +20449,95 @@
         "OLSTH-048"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "path": "content/history/set-theory/pathologies.tex",
+      "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+      "translation_sha256": "a795c97a53e99fa163fab7828b15d9a54924dc92655d2022dc52b49a1b6e9723",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "crois",
+        "je",
+        "le",
+        "mais",
+        "ne",
+        "pas",
+        "vois"
+      ],
+      "allowed_residual_english": [
+        "crois",
+        "je",
+        "le",
+        "mais",
+        "ne",
+        "pas",
+        "vois"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-049"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "path": "content/history/set-theory/mythology.tex",
+      "source_sha256": "2ffceffef7cc6445f66391a252c598448190642ea60f60a748c6fe5e6a1ec55e",
+      "translation_sha256": "860685f8625fae0749a516337fe560656efa91e138b212a578c160313d17e3b4",
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "crois",
+        "je",
+        "le",
+        "mais",
+        "ne",
+        "pas",
+        "vois"
+      ],
+      "allowed_residual_english": [
+        "crois",
+        "je",
+        "le",
+        "mais",
+        "ne",
+        "pas",
+        "vois"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -36015,6 +36104,84 @@
       "passage": "OLP-0635-B014",
       "reverse_paraphrase": "Set-theory focus limits the analysis digression;19th-century rigorous limits provide a way to proceed without infinitesimals.",
       "finding": "ټول بلاک له منجمد متن او محدود رښتيني ژبني شاهد سره پرتله شو؛ نږدې سمونونه له چاپي دعوې جلا دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B003",
+      "reverse_paraphrase": "Title treats pathologies as unusual constructions, not invalid mathematics.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B004",
+      "reverse_paraphrase": "Precise limit definition permits counterintuitive constructions.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B005",
+      "reverse_paraphrase": "Everywhere continuous versus nowhere differentiable and abs-value exception retain distinct universal scopes. Dates, Wikipedia footnote and informal pen intuition retained.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B006",
+      "reverse_paraphrase": "Cantor1874 asks one-to-one correspondence between closed square and closed segment in both directions; not continuous bijection.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B007",
+      "reverse_paraphrase": "1877 equality of cardinalities, exact French/Pashto gloss and received historical interpretation retained, with forward links to criticism and proof.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B008",
+      "reverse_paraphrase": "Peano continuous surjection and Hilbert six stages retain full geometry, years, Euclid definition and source-specific nowhere-differentiability intuition. Informal smoothness is explicitly distinguished from continuously differentiable regularity.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0636",
+      "passage": "OLP-0636-B009",
+      "reverse_paraphrase": "Historical propaganda interpretation has two roles: caution about geometric intuition and fertility of new methods; later section challenges this narrative.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B004",
+      "reverse_paraphrase": "Question challenges historical mythology rather than mathematical truth.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B005",
+      "reverse_paraphrase": "Novelty and surprise are accepted while shock and rejection of geometric intuition are questioned.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B006",
+      "reverse_paraphrase": "Complete quotation asks Dedekind to verify the proof, keeps two French originals with Pashto meanings, and questions rather than categorically denies disbelief.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B007",
+      "reverse_paraphrase": "Peano omitted figures, Hilbert explicitly provided them to aid geometric intuition; exact backward link retained.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B008",
+      "reverse_paraphrase": "Mathematicians frequently use diagrams in proof; judgment about scope of intuition is preserved.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
+    },
+    {
+      "unit_id": "OLP-0637",
+      "passage": "OLP-0637-B009",
+      "reverse_paraphrase": "Concluding caution against hype and Giaquinto citation retained.",
+      "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ ژبني شاهدونه په خپل محدود دامن کښې دي۔"
     }
   ],
   "builds": [

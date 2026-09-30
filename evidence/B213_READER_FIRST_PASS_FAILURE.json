@@ -1,0 +1,17 @@
+{
+  "schema": "ps-reader-terminal-failure/1",
+  "utc": "2026-09-30T08:18:51.173987+00:00",
+  "status": "terminal failure; captured tree ended and mutex released",
+  "reader_units": 635,
+  "guard_receipt_sha256": "a376f105a4fee34748bff4deb21507f933ff0db40c4f9ca832862007b8bdbc81",
+  "reader_tex_sha256": "b1b2841f587c2df5d38339beefd9db572aebb3e1c3b7a3e0b9930d2573b3a544",
+  "log_sha256": "a900ca5f64609750bea588d630fa4fd20b1cca68666063a3f3765baee3ee3bbd",
+  "partial_pdf_sha256": "1c2063f93b58b604711ea3995678f4afa4675f390b19f4d7bd2c2d98e9ae71c5",
+  "partial_pdf_pages": 577,
+  "failed_pass": 1,
+  "bibliography_runs": [],
+  "failure": "Missing $ inserted at reader.tex54669, OLP-0471-B006: blank paragraph from resolved conditional branch inside display math",
+  "failed_artifacts_preserved": "b213-reader-attempt1",
+  "next_action": "Remove only known display paragraph breaks in generated0471/0472 reader; preserve all source/target/formula bytes. Validate before one bounded build attempt. General636 translation remains active.",
+  "new_reader_accepted": false
+}

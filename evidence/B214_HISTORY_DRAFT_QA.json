@@ -1,0 +1,87 @@
+{
+  "schema": "ps-frozen-translation-batch-qa/1",
+  "utc": "2026-09-30T08:40:01.302967+00:00",
+  "status": "checked complete draft batch; not accepted",
+  "units": [
+    {
+      "unit_id": "OLP-0636",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "source_bytes": 5672,
+      "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+      "target_bytes": 8407,
+      "target_sha256": "a795c97a53e99fa163fab7828b15d9a54924dc92655d2022dc52b49a1b6e9723",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 1,
+      "source_correction_ids_pending_registration": [
+        "OLSTH-049"
+      ],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    },
+    {
+      "unit_id": "OLP-0637",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "source_bytes": 2243,
+      "source_sha256": "2ffceffef7cc6445f66391a252c598448190642ea60f60a748c6fe5e6a1ec55e",
+      "target_bytes": 3487,
+      "target_sha256": "860685f8625fae0749a516337fe560656efa91e138b212a578c160313d17e3b4",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 0,
+      "source_correction_ids_pending_registration": [],
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true
+    }
+  ],
+  "translation_module_sha256": "359b4a11bdd9e36b2f4e5403deb6a0b2ed6cc2b3947658abac5a1346e0d4a987",
+  "checker_sha256": "b6706a5b5994dc14285245f0bb798a11d09ca39925ffc358a789e7cb538f960f",
+  "all_checks_pass": true,
+  "semantic_canon_registration_complete": false,
+  "new_render_acceptance": false
+}

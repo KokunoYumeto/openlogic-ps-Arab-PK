@@ -1,0 +1,186 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T08:46:18.812083+00:00",
+  "status": "complete source and canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0636",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "source_bytes": 5672,
+      "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+      "target_bytes": 8407,
+      "target_sha256": "a795c97a53e99fa163fab7828b15d9a54924dc92655d2022dc52b49a1b6e9723",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 1,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-049"
+      ]
+    },
+    {
+      "unit_id": "OLP-0637",
+      "source_path": "content/history/set-theory/mythology.tex",
+      "source_bytes": 2243,
+      "source_sha256": "2ffceffef7cc6445f66391a252c598448190642ea60f60a748c6fe5e6a1ec55e",
+      "target_bytes": 3487,
+      "target_sha256": "860685f8625fae0749a516337fe560656efa91e138b212a578c160313d17e3b4",
+      "paired_blocks": 10,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "d051b74e023d80d1f740fbd433089bd5e447c888d68b73dccfda77f58f239f4b",
+  "model_provenance_sha256": "6e24a7371c65e92e4ef3285279369d65c0565e1eb26d3bde2f19db75449b566c",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "GRAMMAR-P166-SOV",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+    "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ نثر او کښې/وروستنے ے؛ عين منحني خط يا هندسي وجدان تخصصي نوم نۀ ثابتوي۔",
+      "evidence_limit": "پاکستاني بالغ نثر او کښې/وروستنے ے؛ عين منحني خط يا هندسي وجدان تخصصي نوم نۀ ثابتوي۔",
+      "inspection": "Actual Pakistani prose and regional cardinal page freshly read; sequence/grammar pages actually read earlier and reconsulted by exact passage.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "د جملې فعل‌وروسته ترتيب او بشپړوونکي؛ رياضيکي نتيجه يا تاريخي نقل نۀ تصديقوي۔",
+      "evidence_limit": "د جملې فعل‌وروسته ترتيب او بشپړوونکي؛ رياضيکي نتيجه يا تاريخي نقل نۀ تصديقوي۔",
+      "inspection": "Actual Pakistani prose and regional cardinal page freshly read; sequence/grammar pages actually read earlier and reconsulted by exact passage.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "78",
+      "pdf_page_1based": 89,
+      "page_image_sha256": "75f7ee2621050fd9ef60ba53b56c0c7e5e017a7beca2bf4b326ef1e1ae4304ef",
+      "finding": "افغان سيمه‌ييز مخ د يو پر يو تصوير، شمېرنيزې پرتله او وقفې مثالونه لري؛ د خط او مربع د يو پر يو مطابقت عين تاريخي ثبوت نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د يو پر يو تصوير، شمېرنيزې پرتله او وقفې مثالونه لري؛ د خط او مربع د يو پر يو مطابقت عين تاريخي ثبوت نۀ دے۔",
+      "inspection": "Actual Pakistani prose and regional cardinal page freshly read; sequence/grammar pages actually read earlier and reconsulted by exact passage.",
+      "region": "Afghanistan; labelled regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "66",
+      "pdf_page_1based": 77,
+      "page_image_sha256": "82a75f156e7c1e259ce0c2a23bfd6e10ab701f3524186d08aba0dabb16b704ca",
+      "finding": "افغان سيمه‌ييز مخ د لړۍ حد او تقارب مفهوم ښيي؛ د پېانو يا هېلبرټ منحني خط ثبوت يا د پيوسته مشتق شرط نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د لړۍ حد او تقارب مفهوم ښيي؛ د پېانو يا هېلبرټ منحني خط ثبوت يا د پيوسته مشتق شرط نۀ دے۔",
+      "inspection": "Actual Pakistani prose and regional cardinal page freshly read; sequence/grammar pages actually read earlier and reconsulted by exact passage.",
+      "region": "Afghanistan; labelled regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0636": {
+      "source_numbers": {
+        "1830": 1,
+        "1872": 1,
+        "5": 2,
+        "1874": 1,
+        "1877": 2,
+        "29": 1,
+        "2": 4,
+        "90": 6,
+        "1": 2,
+        "3": 1,
+        "97": 1,
+        "4": 1,
+        "101": 1,
+        "98": 1,
+        "200": 1,
+        "99": 1,
+        "6": 1
+      },
+      "original_numbers_equal": true
+    },
+    "OLP-0637": {
+      "source_numbers": {},
+      "original_numbers_equal": true
+    }
+  },
+  "new_term_ids": [
+    "TERM-SPACE-FILLING-CURVE",
+    "TERM-GEOMETRIC-INTUITION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-049"
+  ],
+  "new_review_entry_ids": [
+    "TERM-SPACE-FILLING-CURVE",
+    "TERM-GEOMETRIC-INTUITION",
+    "DEC-OLSTH-049",
+    "DEC-B214-HISTORY"
+  ],
+  "semantic_samples_added": 13,
+  "external_source_preaudit_sha256": "2970d5d22cb02a85ff5c426421593a6600f9ec25fe1d4aa3ca5558a1e24683c0",
+  "unresolved": "بشپړ ۷۲۲ واحديز لوستونکی، EPUB، معلومات او د Sol6 خپلواکه کتنه پاتې دي۔ د TeX اشغال ژباړه نۀ بندوي۔",
+  "next_executable_action": "Run dual637 corpus QA and canonical replay; accept636–637. Continue638 and independent whole-unit0322 onward. B213 repaired reader remains pending."
+}

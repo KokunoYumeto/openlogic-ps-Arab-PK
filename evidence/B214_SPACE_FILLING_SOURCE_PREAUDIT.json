@@ -1,0 +1,22 @@
+{
+  "schema": "ps-space-filling-source-preaudit/1",
+  "utc": "2026-09-30T08:46:18.812083+00:00",
+  "issues": [
+    {
+      "id": "OLSTH-049",
+      "unit_id": "OLP-0636",
+      "block": 8,
+      "classification": "informal_smoothly_ambiguous_with_continuously_differentiable_curve",
+      "reason": "د سرچينې «smoothly» لفظ د پيوسته تصوير په غيررسمي معنا لوستل کېږي؛ د پيوسته مشتق په تخصصي معنا يې لوستل د مربع ډکولو له نتيجې سره نۀ سمون خوري۔ يادونه د معناوو توپير ښيي، د پېانو پر اصل نتيجه د ناسم ثبوت تور نۀ لګوي۔",
+      "counterexample": "Inference: a continuously differentiable map on a compact interval is Lipschitz by bounded derivative; Buckley Theorem3 excludes a Lipschitz map onto the square. Continuous space-filling maps exist.",
+      "authorities": [
+        {
+          "url": "https://archive.maths.nuim.ie/staff/sbuckley/Papers/peano.pdf",
+          "title": "Stephen M. Buckley, Space-filling curves and related functions",
+          "locator": "PDF page2 continuous surjection; page5 Theorem3 and proof; continuously differentiable consequence explicitly our inference"
+        }
+      ]
+    }
+  ],
+  "limits": "Only a terminology ambiguity is disclosed; no independent full-text Gouvea historical verification, no general claim that all space-filling curves are nowhere differentiable. Frozen quotations retain their original attribution."
+}

@@ -17883,6 +17883,70 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-049",
+      "unit_id": "OLP-0636",
+      "classification": "informal_smoothly_ambiguous_with_continuously_differentiable_curve",
+      "source_path": "content/history/set-theory/pathologies.tex",
+      "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+      "source_locator": "content/history/set-theory/pathologies.tex:52",
+      "source_literal_line_1based": [
+        52
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/pathologies.tex",
+      "target_sha256": "a795c97a53e99fa163fab7828b15d9a54924dc92655d2022dc52b49a1b6e9723",
+      "target_line_1based": 20,
+      "target_literal_line_1based": [
+        20
+      ],
+      "disclosure_line_1based": 20,
+      "mode": "adjacent-Pashto-disclosed-source-ambiguity",
+      "translation_change": "اصلي غيررسمي لفظ ساتل شوے؛ نږدې پښتو يادونه پيوستون له پيوسته مشتق څخه بېلوي۔",
+      "reason": "د سرچينې «smoothly» لفظ د پيوسته تصوير په غيررسمي معنا لوستل کېږي؛ د پيوسته مشتق په تخصصي معنا يې لوستل د مربع ډکولو له نتيجې سره نۀ سمون خوري۔ يادونه د معناوو توپير ښيي، د پېانو پر اصل نتيجه د ناسم ثبوت تور نۀ لګوي۔",
+      "counterexample": "Inference: a continuously differentiable map on a compact interval is Lipschitz by bounded derivative; Buckley Theorem3 excludes a Lipschitz map onto the square. Continuous space-filling maps exist.",
+      "formula_policy": "All source diagrams, mathematical spans, citations and labels unchanged; prose clarification only.",
+      "affected_segments": [
+        "OLP-0636-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B214-HISTORY",
+      "decision_timing": "د بشپړې ژباړې پر وخت د منجمد متن او رښتيني ژبني شاهد پرتله۔",
+      "audit_artifacts": [
+        "B214_SOURCE_AUDIT.json",
+        "B214_SPACE_FILLING_SOURCE_PREAUDIT.json",
+        "B214_HISTORY_DRAFT_QA.json"
+      ],
+      "external_authorities": [
+        {
+          "url": "https://archive.maths.nuim.ie/staff/sbuckley/Papers/peano.pdf",
+          "title": "Stephen M. Buckley, Space-filling curves and related functions",
+          "locator": "PDF page2 continuous surjection; page5 Theorem3 and proof; continuously differentiable consequence explicitly our inference"
+        }
+      ],
+      "limits": "Only a terminology ambiguity is disclosed; no independent full-text Gouvea historical verification, no general claim that all space-filling curves are nowhere differentiable. Frozen quotations retain their original attribution.",
+      "upstream_reporting": "No direct upstream report; authorized manager milestones only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
