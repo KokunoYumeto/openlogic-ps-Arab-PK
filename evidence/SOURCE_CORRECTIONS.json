@@ -6404,7 +6404,7 @@
       "source_locator": "content/second-order-logic/metatheory/compactness.tex:54-63",
       "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex",
       "target_line_1based": 59,
-      "target_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+      "target_sha256": "2c7614fb0a84d342db463488f2225d719a401062d85c74157dafcdb17553c2ce",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.",
       "reason": "The source says the full infinite Gamma contains no size requirements beyond k, which is false. A finite Gamma_0 has a maximum size requirement; choose k>=1 above that bound.",
@@ -6447,8 +6447,15 @@
           "batch": "B231",
           "previous_target_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
           "reason": "د متناهي فرعي سټ پخوانے کره سمون وساتل شو؛ بشپړه معنٰی او د ټاکنې سياق څرګند شو۔"
+        },
+        {
+          "utc": "2026-09-30T19:28:06.757557+00:00",
+          "batch": "B232",
+          "previous_target_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+          "reason": "د اختياري پس‌منظر يادونه لرې شوه؛ د متناهي فرعي سټ پخوانے کره حد او ټول فارمولونه عين پاتې دي۔"
         }
-      ]
+      ],
+      "disclosure_line_1based": 59
     },
     {
       "id": "OLSOL-007",
@@ -19826,6 +19833,118 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-121",
+      "unit_id": "OLP-0658",
+      "classification": "interpolant-vocabulary-equality-and-fresh-parameter-bound",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "source_locator": "content/proof-theory/cut-elimination/interpolation.tex:516",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/interpolation.tex",
+      "target_sha256": "b7ab5ac7a94be7d66f266e48eb589d4cc38b3854099fdbc763d3abb26c5a8ed6",
+      "target_line_1based": 519,
+      "disclosure_line_1based": 535,
+      "mode": "د اړين سرچينه‌يي سمون کره پښتو څرګندونه",
+      "translation_change": "د ضمني تعريف اشتقاق په تازه ثابتونو معکوسېږي او د مايېهارا منځګړی دواړه جهتونه ورکوي۔ موقتي منځګړی تازه ثابتونه لرلے شي؛ له هغو د متغيرونو جوړولو وروسته د تعريف د ژبې حد د اصلي تيورۍ له ژبې څخه د تعريفېدونکي مسند په لرې کولو فرعي سټ دے، نه لازمي برابري۔ د نوي مسند بدلول او شرطي او کلي راټولول اصلي تعريف راکوي؛ د بېت قضيه ناسمه نۀ بلل کېږي۔",
+      "reason": "د ضمني تعريف اشتقاق په تازه ثابتونو معکوسېږي او د مايېهارا منځګړی دواړه جهتونه ورکوي۔ موقتي منځګړی تازه ثابتونه لرلے شي؛ له هغو د متغيرونو جوړولو وروسته د تعريف د ژبې حد د اصلي تيورۍ له ژبې څخه د تعريفېدونکي مسند په لرې کولو فرعي سټ دے، نه لازمي برابري۔ د نوي مسند بدلول او شرطي او کلي راټولول اصلي تعريف راکوي؛ د بېت قضيه ناسمه نۀ بلل کېږي۔",
+      "formula_policy": "يوازې د بېت د ژبې ناسمې برابرۍ او د رابنسن د سريزې ناکافي فرعي ژبې شرط بدل شول؛ ټول نهه‌لس نمايشي فارمولونه او اتلس ثبوتي رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B232-MAEHARA",
+      "audit_artifacts": [
+        "B232_SOURCE_AUDIT.json",
+        "B232_FINAL_DRAFT_QA.json",
+        "B232_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B232 بشپړه سرچينه او پنځه اصلي کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې او منلو مخکې ثبتېږي۔",
+      "upstream_reporting": "نوے خپرونه يا پيغام نۀ دے شوی؛ د مدير د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{align*}\\Gamma,\\Gamma'&\\Sequent\\lforall[x_1][\\dots\\lforall[x_n][(R(x_1,\\dots,x_n)\\liffR'(x_1,\\dots,x_n))]]\\intertext{LOCALIZED$c_1$$c_n$$\\Gamma$}\\Gamma,\\Gamma',R(c_1,\\dots,c_n)&\\SequentR'(c_1,\\dots,c_n)\\intertext{LOCALIZED}\\maeh{\\Gamma,R(c_1,\\dots,c_n)}{\\Gamma'}&\\Sequent\\maeh{\\}{R'(c_1,\\dots,c_n)}\\intertext{LOCALIZED$!A\\ident!A(x_1,\\dots,x_n)$}\\Gamma,R(c_1,\\dots,c_n)&\\Sequent!A(c_1,\\dots,c_n)\\\\!A(c_1,\\dots,c_n),\\Gamma'&\\SequentR'(c_1,\\dots,c_n)\\intertext{LOCALIZED$\\LangL(!A)=\\LangL_1\\cap\\LangL_2=\\LangL(\\Gamma)\\setminus\\{R\\}$$!A$$R$$R'$$R$}!A(c_1,\\dots,c_n),\\Gamma&\\SequentR(c_1,\\dots,c_n)\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\Gamma,\\Gamma'&\\Sequent\\lforall[x_1][\\dots\\lforall[x_n][(R(x_1,\\dots,x_n)\\liffR'(x_1,\\dots,x_n))]]\\intertext{LOCALIZED$c_1$$c_n$$\\Gamma$}\\Gamma,\\Gamma',R(c_1,\\dots,c_n)&\\SequentR'(c_1,\\dots,c_n)\\intertext{LOCALIZED}\\maeh{\\Gamma,R(c_1,\\dots,c_n)}{\\Gamma'}&\\Sequent\\maeh{\\}{R'(c_1,\\dots,c_n)}\\intertext{LOCALIZED$!A\\ident!A(x_1,\\dots,x_n)$}\\Gamma,R(c_1,\\dots,c_n)&\\Sequent!A(c_1,\\dots,c_n)\\\\!A(c_1,\\dots,c_n),\\Gamma'&\\SequentR'(c_1,\\dots,c_n)\\intertext{LOCALIZED$\\LangL(!A)\\subseteq\\LangL(\\Gamma)\\setminus\\{R\\}$$!A$$R$$R'$$R$}!A(c_1,\\dots,c_n),\\Gamma&\\SequentR(c_1,\\dots,c_n)\\end{align*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "dependency": "Maehara lemma guarantees inclusion; temporary common vocabulary additionally contains the fresh c parameters, which are abstracted in the defining formula.",
+      "exact_original_text": "Since $\\Lang L(!A) = \\Lang L_1 \\cap\n  \\Lang L_2 = \\Lang L(\\Gamma) \\setminus \\{R\\}$, $!A$~does not contain~$R$.",
+      "exact_proposed_source_text": "The temporary interpolant may contain the fresh constants. After abstracting them, $\\Lang L(!A) \\subseteq \\Lang L(\\Gamma) \\setminus \\{R\\}$, so $!A$ does not contain~$R$.",
+      "exact_proposed_source_patch": "--- a/content/proof-theory/cut-elimination/interpolation.tex\n+++ b/content/proof-theory/cut-elimination/interpolation.tex\n@@ -1,2 +1 @@\n-Since $\\Lang L(!A) = \\Lang L_1 \\cap\n-  \\Lang L_2 = \\Lang L(\\Gamma) \\setminus \\{R\\}$, $!A$~does not contain~$R$.\n+The temporary interpolant may contain the fresh constants. After abstracting them, $\\Lang L(!A) \\subseteq \\Lang L(\\Gamma) \\setminus \\{R\\}$, so $!A$ does not contain~$R$.",
+      "independent_owner_verification": "Full source lemma, proof and context compared; necessary defect locally established. Current upstream and central duplicates not newly checked."
+    },
+    {
+      "id": "OLCMP-122",
+      "unit_id": "OLP-0658",
+      "classification": "joint-consistency-completeness-omits-whole-common-language",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "source_locator": "content/proof-theory/cut-elimination/interpolation.tex:546",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/interpolation.tex",
+      "target_sha256": "b7ab5ac7a94be7d66f266e48eb589d4cc38b3854099fdbc763d3abb26c5a8ed6",
+      "target_line_1based": 547,
+      "disclosure_line_1based": 553,
+      "mode": "د اړين سرچينه‌يي سمون کره پښتو څرګندونه",
+      "translation_change": "د ګډې سازګارۍ د سريزې بشپړتيا بايد د ټولې ګډې ژبې دپاره وي؛ د فرعي ژبې بشپړتيا د ګډې اضافي جملې د نفي او اثبات ټکر نۀ منع کوي۔",
+      "reason": "د ګډې سازګارۍ د سريزې بشپړتيا بايد د ټولې ګډې ژبې دپاره وي؛ د فرعي ژبې بشپړتيا د ګډې اضافي جملې د نفي او اثبات ټکر نۀ منع کوي۔",
+      "formula_policy": "يوازې د بېت د ژبې ناسمې برابرۍ او د رابنسن د سريزې ناکافي فرعي ژبې شرط بدل شول؛ ټول نهه‌لس نمايشي فارمولونه او اتلس ثبوتي رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B232-MAEHARA",
+      "audit_artifacts": [
+        "B232_SOURCE_AUDIT.json",
+        "B232_FINAL_DRAFT_QA.json",
+        "B232_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B232 بشپړه سرچينه او پنځه اصلي کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې او منلو مخکې ثبتېږي۔",
+      "upstream_reporting": "نوے خپرونه يا پيغام نۀ دے شوی؛ د مدير د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\LangL(\\Gamma)\\subseteq\\LangL(\\Gamma_1)\\cap\\LangL(\\Gamma_2)$"
+        ],
+        "target_only": [
+          "$\\LangL(\\Gamma)=\\LangL(\\Gamma_1)\\cap\\LangL(\\Gamma_2)$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "counterexample": "Let Gamma be the complete one-element theory in pure equality, Gamma1 add forall x P(x), and Gamma2 add forall x not P(x). Each has a one-element model and contains Gamma; their common language also contains P, and their union has no nonempty model.",
+      "exact_original_text": "$\\Lang L(\\Gamma) \\subseteq \\Lang L(\\Gamma_1)\n\\cap \\Lang L(\\Gamma_2)$",
+      "exact_proposed_source_text": "$\\Lang L(\\Gamma) = \\Lang L(\\Gamma_1)\n\\cap \\Lang L(\\Gamma_2)$",
+      "exact_proposed_source_patch": "--- a/content/proof-theory/cut-elimination/interpolation.tex\n+++ b/content/proof-theory/cut-elimination/interpolation.tex\n@@ -1,2 +1,2 @@\n-$\\Lang L(\\Gamma) \\subseteq \\Lang L(\\Gamma_1)\n+$\\Lang L(\\Gamma) = \\Lang L(\\Gamma_1)\n \\cap \\Lang L(\\Gamma_2)$",
+      "independent_owner_verification": "Full source lemma, proof and context compared; necessary defect locally established. Current upstream and central duplicates not newly checked."
     }
   ],
   "external_upstream_report_submitted": false,

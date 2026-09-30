@@ -1,0 +1,27 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T19:28:06.757557+00:00",
+  "source_unit": "OLP-0658",
+  "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+  "context_sha256": {
+    "content/proof-theory/sequent-calculus/rules-proofs.tex": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+    "content/proof-theory/sequent-calculus/rules-G3c.tex": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d",
+    "content/first-order-logic/syntax-and-semantics/terms-formulas.tex": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
+    "content/model-theory/interpolation/definability.tex": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29"
+  },
+  "closed_term_candidate": {
+    "candidate_id": "PS-CAND-0658-TERM-PARAMETER-CONVENTION",
+    "reporting_lane": "translation_local",
+    "result": "Existing closed-term convention at rules-proofs.tex lines50–55 resolves the literal function-free term claim in this calculus. Fresh-variable wording unpacks capture avoidance; no new source erratum."
+  },
+  "biconditional_candidate": {
+    "candidate_id": "PS-CAND-0658-BETH-BICONDITIONAL-CONVENTION",
+    "reporting_lane": "unresolved",
+    "result": "The two implication directions have a valid conjunction/biconditional construction. No primitive G3c iff rule claimed; omission of expansion is not promoted to a necessary defect. Explicit extra expansion retained as possible improvement only, not inserted."
+  },
+  "new_source_correction_ids": [
+    "OLCMP-121",
+    "OLCMP-122"
+  ],
+  "exercises_unsolved": true
+}

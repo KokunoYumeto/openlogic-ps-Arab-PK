@@ -1,0 +1,61 @@
+{
+  "schema": "ps-source-fidelity-repair/1",
+  "utc": "2026-09-30T19:28:06.757557+00:00",
+  "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "finding_id": "DEC-PS-0334-DEDEKIND-CHOICE-SCOPE",
+  "reporting_lane": "suggested_improvement",
+  "unit": {
+    "unit_id": "OLP-0334",
+    "source_path": "content/second-order-logic/metatheory/compactness.tex",
+    "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+    "target_sha256_before": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+    "target_sha256": "2c7614fb0a84d342db463488f2225d719a401062d85c74157dafcdb17553c2ce",
+    "target_sha256_after": "2c7614fb0a84d342db463488f2225d719a401062d85c74157dafcdb17553c2ce",
+    "target_bytes": 3919,
+    "paired_blocks": 11,
+    "source_correction_ids": []
+  },
+  "draft_receipt": {
+    "schema": "ps-source-faithfulness-draft-repair/1",
+    "utc": "2026-09-30T18:34:23.449357+00:00",
+    "finding_id": "DEC-PS-0334-DEDEKIND-CHOICE-SCOPE",
+    "reporting_lane": "suggested_improvement",
+    "status": "extra background exposition removed in local draft; normal B232 corpus validation and publication pending",
+    "source_path": "content/second-order-logic/metatheory/compactness.tex",
+    "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+    "unit_id": "OLP-0334",
+    "segment_id": "OLP-0334-B009",
+    "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/compactness.tex",
+    "target_before_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+    "target_after_sha256": "2c7614fb0a84d342db463488f2225d719a401062d85c74157dafcdb17553c2ce",
+    "target_note_start_line_1based": 44,
+    "exact_added_text_retained_only_as_suggestion": "\\textbf{د لوستونکي د سياق يادونه:} دغه جمله د ډېډېکېنډ له مخې نامتناهيت بيانوي؛ يعنې له خپلې تعريف ساحې څخه هماغې ساحې ته يو پر يو خو نۀ پر ټوله ساحه تابع شته۔ دلته له معمول نامتناهيت سره د دې معادل‌والي دپاره د ټاکنې معمول بديهي اصل کارول کېږي؛ بې له دغه اصل څخه دغه عمومي معادل‌والے نۀ ادعا کېږي۔ ",
+    "minimal_source_faithful_target_patch": {
+      "remove_exact_text": "\\textbf{د لوستونکي د سياق يادونه:} دغه جمله د ډېډېکېنډ له مخې نامتناهيت بيانوي؛ يعنې له خپلې تعريف ساحې څخه هماغې ساحې ته يو پر يو خو نۀ پر ټوله ساحه تابع شته۔ دلته له معمول نامتناهيت سره د دې معادل‌والي دپاره د ټاکنې معمول بديهي اصل کارول کېږي؛ بې له دغه اصل څخه دغه عمومي معادل‌والے نۀ ادعا کېږي۔ ",
+      "replacement": ""
+    },
+    "historical_snapshot": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\0334-before-b232-source-fidelity.tex",
+    "historical_snapshot_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+    "public_commit_with_addition": "9358024ad15060efa67edb85890c4dbacc4be214",
+    "authority": "USER_REQUEST_OWNER_LISTS_AND_IMPLEMENTATION_20260930.txt; REPORTING_LANES.json/2",
+    "reason": "The accurate Choice background note expands the otherwise intended standard mathematical context; no source defect was established that requires this additional exposition in the translated body. Keep it as a review suggestion.",
+    "all_prior_math_spans_retained": true,
+    "existing_OLSOL006_fix_retained": true,
+    "source_ellipsis_reading_retained": true,
+    "intended_exercise_unsolved": true,
+    "frozen_English_unchanged": true,
+    "new_corpus_acceptance": false,
+    "new_release": false,
+    "next_action": "Include this source-faithful draft repair with the next normal full658/whole0335 batch; update the choice implementation status, source-action target binding and current reader inputs before dual QA/acceptance. Never erase prior published provenance."
+  },
+  "draft_receipt_sha256": "5eebf3fcf9fd6d5ba8a12b99e77402b8df4fdafb12b3a0cd583f02cf5608f3fe",
+  "public_history": "B231 a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca retained in immutable snapshot; local target intentionally differs.",
+  "all_prior_target_math_spans_retained_in_order": true,
+  "retained_source_correction_ids": [
+    "OLSOL-006"
+  ],
+  "whole_unit_count_increment": 0,
+  "current_segment_rows_rebound": 6,
+  "historical_0334_receipt_and_snapshot_unchanged": true
+}

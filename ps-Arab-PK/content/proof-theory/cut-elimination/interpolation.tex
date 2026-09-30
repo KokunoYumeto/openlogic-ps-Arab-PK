@@ -1,0 +1,603 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: interpolation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{itp}
+
+\olsection{د مايېهارا مرستندويه قضيه او د کرېګ د منځګړيتوب قضيه}
+
+د منځګړيتوب قضيه، چې ويليم کرېګ وړاندې کړې ده، وايي: که $!A
+\Entails !B$ وي، نو داسې !!a{sentence}~$!C$ (\emph{منځګړی}) شته
+چې $!A \Entails !C$ او $!C \Entails !B$ وي۔ منځګړی~$!C$ داسې
+غوره کېدے شي چې په~$!C$ کښې راغلي ټول !!{constant}s او !!{predicate}s
+په~$!A$ او~$!B$ دواړو کښې راغلي وي۔ (فرض کوو چې هېڅ !!{function}s
+نۀ کارېږي۔) له دې قيد پرته، $!A$~او $!B$ په اسانۍ منځګړي کېدے شي۔
+
+د منځګړيتوب قضيه د کلاسيکي لومړۍ درجې منطق دپاره صدق کوي او
+دا د لومړۍ درجې منطق «وروستے مهم کشف شوے خاصيت» بلل شوے دے۔
+په مدل پوهنه او اتومات استدلال کښې مهم استعمالونه لري۔ د دې
+لومړنے محرک او استعمال د علم په فلسفه کښې ؤ، ځکه د دې په وسيله
+کتلے شو چې يوه تيوري په کومو لومړنيو مفاهيمو بديهياتي کېدے شي
+يا نۀ شي کېدے۔ دا د بېت د تعريف‌وړتيا قضيه هم لازموي: که يوه
+تيوري يو مفهوم په ضمني توګه تعريفولے شي، نو په څرګند ډول ئې هم
+تعريفولے شي۔
+
+لکه په رياضيکي منطق کښې ډېرې پايلې، د منځګړيتوب قضيه هم د
+مدل پوهنې او هم د ثبوت پوهنې په طريقو ثابتېدے شي۔ د ثبوت پوهنې
+د طريقو ګټه دا ده چې د منځګړي شتون ښيي او داسې الګوريتم هم راکوي
+چې منځګړی د دې خبرې له !!a{proof} څخه محاسبه کوي چې $!A \Entails !B$
+دے؛ مثلاً په~\Log{G3c} کښې د $!A \Sequent !B$ له !!a{proof} څخه۔
+
+دې $\Lang L(!A)$ په~$!A$ کښې د !!{constant}s او !!{predicate}s
+سټ وي او $\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(!A)}{!A \in
+\Gamma}$ دې وي۔ په دې ټوله برخه کښې فرض کوو چې له داسې
+!!{formula}s سره کار کوو چې !!{function}s نۀ لري۔
+
+\begin{thm}[د کرېګ د منځګړيتوب قضيه]\ollabel{thm:interpolation}
+دې د~$!A$ !!{language} $\Lang L(!A)$ او د $!B$ ژبه
+$\Lang L(!B)$ وي۔ که $\Log{G3c} \Proves !A \Sequent !B$ وي،
+نو په !!{language}~$\Lang L(!C) \subseteq \Lang
+L(!A) \cap \Lang L(!B)$ کښې داسې !!a{formula}~$!C$ شته چې
+$\Log{G3c} \Proves !A \Sequent !C$ او
+$\Log{G3c} \Proves !C \Sequent !B$ وي۔
+\end{thm}
+
+د منځګړيتوب د قضيې يوه عمومي بڼه ثابتوو، څو په~\Log{G3c} کښې
+د !!{proof}s له جوړښت څخه کار واخلو۔ د دې دپاره د سېکوېنټونو
+مقدم او تالي هر يو په دوو برخو وېشل شوي وګڼئ۔
+$\maeh{\Gamma_1}{\Gamma_2} \Sequent
+\maeh{\Delta_1}{\Delta_2}$ داسې ليکو چې $\Gamma_1$ او $\Delta_1$
+لومړۍ برخې ته او $\Gamma_2$ او $\Delta_2$ دويمې برخې ته اړه ولري۔
+بيا د منځګړيتوب قضيه له لاندې مرستندويې قضيې څخه نېغ په نېغه راځي۔
+
+\begin{lem}[د مايېهارا مرستندويه قضيه]\ollabel{lem:maehara}
+که $\Log{G3c}
+\Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$
+وي، نو په !!{language}~$\Lang L(!C)
+\subseteq \Lang L(\Gamma_1,
+\Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$ کښې داسې !!a{formula}~$!C$
+شته چې $\Log{G3c}
+\Proves \Gamma_1 \Sequent \Delta_1, !C$ او $\Log{G3c} \Proves !C,
+\Gamma_2 \Sequent \Delta_2$ وي۔
+\end{lem}
+
+\begin{proof}
+  فرض کړئ چې $\pi \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ دے۔ دعوه په
+  $n=\pheight{\pi}$ باندې په استقرا ثابتوو۔
+
+  که $n=0$ وي، نو $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ يو بديهي اصل دے او کوم اټومي
+  !!{formula}~$!A$ په $\Gamma_1, \Gamma_2$ او $\Delta_1,
+  \Delta_2$ دواړو کښې راغلے دے۔ څلور حالتونه دي: په کيڼ اړخ
+  کښې $!A$~لومړۍ که دويمې برخې ته اړه لري، او په ښي اړخ کښې
+  لومړۍ که دويمې برخې ته۔
+  \begin{enumerate}
+    \item $!A \in \Gamma_1$ او $!A \in \Delta_1$۔ داسې~$!C$
+    غواړو چې $\Gamma_1 \Sequent \Delta_1, !C$ او $!C, \Gamma_2
+    \Sequent \Delta_2$ دواړه !!{provable} وي۔ لومړنے له وړاندې
+    بديهي اصل دے، که~$!C$ هر ډول غوره کړو، ځکه $!A$ په کيڼ او ښي
+    دواړو اړخونو کښې شته۔ د دې دپاره چې $!C, \Gamma_2
+    \Sequent \Delta_2$ خامخا !!{provable} وي، دلته عمومي خوندي
+    انتخاب دا دے چې $!C \ident \lfalse$ واخلو۔
+    \item $!A \in \Gamma_1$ او $!A \in \Delta_2$۔ نو $\Gamma_1
+    \Sequent \Delta_1, !A$ او $!A, \Gamma_2 \Sequent \Delta_2$
+    دواړه بديهي اصلونه دي؛ ځکه $!C \ident !A$ اخستلے شو۔
+    \item $!A \in \Gamma_2$ او $!A \in \Delta_1$۔ نو $!A, \Gamma_1
+    \Sequent \Delta_1$ او $\Gamma_2 \Sequent \Delta_2, !A$ به
+    بديهي اصلونه وي، خو~$!A$ ئې په ناسم اړخونو کښې دے۔ نو $!A$
+    منځګړی نۀ دے۔ خو د $\RightR{\lnot}$ او $\LeftR{\lnot}$ په
+    وسيله $\Gamma_1
+    \Sequent \Delta_1, \lnot!A$ او $\lnot !A, \Gamma_2 \Sequent
+    \Delta_2$ !!{prove} کولے شو۔
+    \item $!A \in \Gamma_2$ او $!A \in \Delta_2$۔ تمرين۔
+  \end{enumerate}
+  هغه حالتونه هم تمرين ته پرېږدو چې $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ ځکه بديهي اصل وي چې $\lfalse \in
+  \Gamma_1$ يا $\lfalse \in \Gamma_2$ دے۔
+
+  که $n>0$ وي، $\pi$ په يوه منطقي استنتاج ختمېږي۔ د کارول شوې
+  قاعدې او د اصلي فارمول د برخې له مخې بېل حالتونه ګورو۔ په هر
+  حالت کښې دا استقرايي فرض کارولے شو چې مرستندويه قضيه د ټولو
+  هغو !!{proof}s~$\pi_1$ دپاره صدق کوي چې
+  $\pheight{\pi_1} < n$ وي، که د~$\pi_1$ وروستے سېکوېنټ هر ډول
+  په دوو برخو وېشل شوے وي۔ څو ځانګړي حالتونه وګورو۔
+  \begin{enumerate}
+    \item $\pi$ په $\RightR{\lnot}$ ختمېږي او اصلي فارمول ئې~$\lnot
+    !A$ دے۔ دوه حالتونه دي:~$\lnot !A$ لومړۍ که دويمې برخې ته
+    اړه لري؛ د دې له مخې $\pi$ په دې ختمېږي:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lnot !A}{\Delta_2}$
+    \DisplayProof
+    \]
+    يا
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lnot !A}$
+    \DisplayProof
+    \]
+    پام وکړئ: که اصلي !!{formula}~$\lnot !A$ لومړۍ برخې ته اړه
+    لري، نو په مقدمه کښې مو فعال !!{formula}~$!A$ هم لومړۍ برخې
+    ته ورکړے دے۔ دا انتخاب زمونږ په لاس کښې دے۔ استقرايي فرض
+    به هله هم کارېدۀ چې فعال فارمول مو بلې برخې ته ورکړے وے، خو
+    بيا به مو منځګړی نۀ شو موندلے (تمرين: وې ازمويئ)۔
+
+    لومړے هغه حالت وګورئ چې~$\lnot !A$ لومړۍ برخې ته اړه لري۔
+    د استقرايي فرض له مخې، د~$\pi_1$ د وروستي سېکوېنټ منځګړی
+    شته؛ يعنې داسې !!a{formula}~$!C_1$ چې دواړه لاندې سېکوېنټونه
+\begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{او} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{د ثابتولو وړ دي۔ مونږ داسې !!a{formula}~$!C$ غواړو چې
+    لاندې دواړه سېکوېنټونه !!{provable} وي:}
+    \Gamma_1 & \Sequent \Delta_1, \lnot !A, !C &&\text{او} &
+    !C, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    څرګنده ده چې $!C \ident !C_1$ اخستلے شو: استقرايي فرض له
+    وړاندې وايي چې د ښي اړخ سېکوېنټ !!{provable} دے؛ د کيڼ اړخ
+    سېکوېنټ له هغه سېکوېنټ څخه په~$\RightR{\lnot}$ راځي چې له
+    استقرايي فرضه مو تر لاسه کړے ؤ۔ استقرايي فرض دا هم وايي چې
+    $\Lang L(!C_1) \subseteq \Lang L(!A, \Gamma_1,
+    \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$۔ ځکه چې $\Lang L(\lnot
+    !A) = \Lang L(!A)$ او $\Lang L(!C) = \Lang L(!C_1)$ دي، نو
+    $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lnot !A) \cap \Lang
+    L(\Gamma_2, \Delta_2)$ لرو۔
+
+    په دويم حالت کښې وضع لږه بېله ده، ځکه~$\lnot !A$ دويمې
+    برخې ته اړه لري۔ په مقدمه کښې فعال !!{formula} هم دويمې
+    برخې ته ورکوو او استقرايي فرض کاروو، څو لاندې سېکوېنټونه
+\begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{او} &
+    !C_1, !A, \Gamma_2 & \Sequent \Delta_2
+    \intertext{د ثابتولو وړ وي۔ که بيا د دويم سېکوېنټ دپاره د \RightR{\lnot} قاعده وکاروو، د لاندې سېکوېنټونو !!{proof}s تر لاسه کوو}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{او} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, \lnot !A
+    \end{align*}
+    دا بيا عين هغه سېکوېنټونه دي چې د $!C_1$ د منځګړي کېدو
+    دپاره ئې !!{provable} کېدل غواړو؛ بيا $!C \ident !C_1$ اخلو۔
+    لکه مخکې، $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2,
+    \Delta_2, \lnot !A)$ دے۔
+    \item $\pi$ په $\RightR{\lif}$ ختمېږي او اصلي !!{formula}
+    ئې~$!A \lif !B$ دے۔ بيا دوه حالتونه دي: $!A \lif
+    !B$ لومړۍ که دويمې برخې ته اړه لري۔ !!{proof}~$\pi$ په دې
+    ختمېږي:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !B}{\Delta_2}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A \lif !B}{\Delta_2}$
+    \DisplayProof
+    \]
+    يا
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !B}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A \lif !B}$
+    \DisplayProof
+    \]
+    بيا مو په مقدمه کښې فعال !!{formula}s هماغې برخې ته ورکړي
+    دي چې په پايله کښې اصلي !!{formula} ورته اړه لري۔ په لومړي
+    حالت کښې استقرايي فرض کاروو او لاندې !!{proof}s تر لاسه کوو:
+\begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !B, !C_1 &&\text{او} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{د کيڼ اړخ سېکوېنټ د \RightR{\lif} دپاره مناسبه مقدمه ده۔ نو لاندې سېکوېنټونه !!{provable} دي:}
+    \Gamma_1 & \Sequent \Delta_1, !A \lif !B, !C_1 &&\text{او} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    نو $!C_1$ د~$\pi$ د وروستي سېکوېنټ دپاره هم منځګړی دے او
+    يو ځل بيا $!C \ident !C_1$ اخستلے شو۔
+
+    بل حالت هم په همدې ډول څېړل کېږي۔
+    \item $\pi$ په $\LeftR{\lif}$ ختمېږي او اصلي !!{formula}
+    ئې~$!A \lif !B$ دے۔ که $!A \lif !B$ لومړۍ برخې ته اړه
+    ولري، نو !!{proof}~$\pi$ په دې ختمېږي:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A}{\Delta_2}$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\maeh{!B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \BinaryInf$\maeh{!A \lif !B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \DisplayProof
+    \]
+    استقرايي فرض اوس څلور !!{provable} سېکوېنټونه راکوي؛ دوه
+    د کيڼې مقدمې د منځګړي $!C_1$ دپاره او دوه د دويمې مقدمې
+    د منځګړي $!C_2$ دپاره:
+\begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !A, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2 && \text{(2)}\\
+    !B, \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    سېکوېنټونه (1) او (3) د~\LeftR{\lif} مقدمې کېدے شي، که
+    کمزوري کول وکاروو او د~(1) په ښي اړخ $!C_2$ او د~(3) په
+    ښي اړخ $!C_1$ ورزيات کړو:
+\[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !A, !C_1, !C_2$
+    \AxiomC{}
+    \Deduce$!B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \DisplayProof
+    \]
+    د $\RightR{\lor}$ په کارولو دا سېکوېنټ تر لاسه کوو:
+\[
+    !A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1 \lor !C_2
+    \]
+    دا ښيي چې $!C_1 \lor !C_2$ په دې حالت کښې زمونږ منځګړی
+    کېدے شي۔ او په رښتيا، بل اړين سېکوېنټ له پاتې سېکوېنټونو
+    (2) او~(4) څخه !!{prove} کولے شو:
+\[
+    \AxiomC{}
+    \Deduce$!C_1, \Gamma_2 \fCenter \Delta_2$
+    \AxiomC{}
+    \Deduce$!C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lor}}
+    \BinaryInf$!C_1 \lor !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    دا کتنه پاتې ده چې $!C_1 \lor !C_2$ په سمه ژبه کښې دے۔
+    استقرايي فرض راکوي چې
+\begin{align*}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A) \cap \Lang L(\Gamma_2, \Delta_2) &\text{او}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(!B, \Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{ځکه چې}
+    \Lang L(!A) & \subseteq \Lang L(!A \lif !B) &\text{او}\\
+    \Lang L(!B) & \subseteq \Lang L(!A \lif !B)
+    \intertext{دواړه لاندې اړيکې لرو}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2) &\text{او}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{او په پايله کښې، $\Lang L (!C_1 \lor !C_2) = {}$}
+    \Lang L(!C_1) \cup \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2),
+    \end{align*}
+    لکه چې غوښتل شوي وو۔
+
+    که $!A \lif !B$ دويمې برخې ته اړه لري، وضع بېله ده، خو
+    په ورته ډول څېړل کېږي۔ استقرايي فرض بيا څلور !!{provable}
+    سېکوېنټونه راکوي:
+\begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, !A && \text{(2)}\\
+    \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, !B, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    اوس سېکوېنټونه (2) او (4)، له ځينو د کمزوري کولو په وسيله
+    زياتو شوو !!{formula}s سره، د~\LeftR{\lif} مقدمې جوړوي:
+\[
+    \AxiomC{}
+    \Deduce$!C_1, !C_2, \Gamma_2 \fCenter \Delta_2, !A$
+    \AxiomC{}
+    \Deduce$!B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    بيا غواړو دا داسې سېکوېنټ کړو چې له $!C_1$ او $!C_2$ څخه
+    جوړ يو واحد !!{formula} ولري؛ خو دا ځل ئې په مقدم کښې
+    غواړو، ځکه اوس له دويمې برخې سره کار کوو۔ د $\LeftR{\land}$
+    په کارولو دا ترلاسه کېږي؛ منځګړی بايد $!C \ident
+    (!C_1 \land !C_2)$ واخلو۔ پاتې سېکوېنټونه (1) او (3) هم
+    د بلې برخې اړوند سېکوېنټ د !!{prove} کولو دپاره کارولے شو:
+\[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_1$
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_2$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1 \fCenter \Delta_1, !C_1 \land !C_2$
+    \DisplayProof
+    \]
+    لکه مخکې، $\Lang L(!C_1 \land !C_2) \subseteq \Lang
+    L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2, !A \lif
+    !B)$ لرو۔
+
+    \item $\pi$ په $\RightR{\lforall}$ ختمېږي او اصلي !!{formula}
+    ئې~$\lforall[x][!A(x)]$ دے:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+    \maeh{\Delta_1, !A(c)}{\Delta_2}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lforall[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    يا
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A(c)}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lforall[x][!A(x)]}$
+    \DisplayProof
+    \]
+    په لومړي حالت کښې استقرايي فرض د $\Gamma_1 \Sequent \Delta_1, !A(c), !C_1$
+    او $!C_1, \Gamma_2
+    \Sequent \Delta_2$ !!{proof}s راکوي۔ په لومړي سېکوېنټ
+    $\RightR{\lforall}$ کارولے شو، څو $\Gamma_1 \Sequent \Delta_1, \lforall[x][!A(x)], !C_1$
+    تر لاسه کړو۔ (د ځانګړي متغير شرط پوره دے، ځکه د~$\pi$ په
+    پای کښې د \RightR{\lforall} په قاعده کښې له وړاندې پوره ؤ۔)
+    نو $!C_1$ به منځګړی وي، که دا شرط پوره وي چې $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lforall[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$۔ د استقرايي فرض له مخې،
+    $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1,
+    \Delta_1, !A(c)) \cap \Lang L(\Gamma_2, \Delta_2)$ لرو۔ نو
+    د~$c$ په هکله بايد پام وکړو: آيا $c$ په~$!C_1$ کښې راتلے
+    شي؟ نۀ شي راتلے۔ که $c$ په $!C_1$ کښې راشي، نو هم
+    $c \in \Lang L(\Gamma_1, \Delta_1,
+    !A(c))$ (چې رښتيا ده) او هم $c \in \Lang L(\Gamma_2,
+    \Delta_2)$ به وي۔ خو بيا به $c$ په~$\pi$ کښې د
+    $\RightR{\lforall}$ د استنتاج په پايله کښې راشي او د ځانګړي
+    متغير شرط به مات کړي۔
+
+    بل حالت هم ورته دے۔
+
+    \item $\pi$ په $\RightR{\lexists}$ ختمېږي او اصلي
+    !!{formula} ئې~$\lexists[x][!A(x)]$ دے۔ بيا دوه حالتونه دي۔
+    هغه حالت ګورو چې $\lexists[x][!A(x)]$ لومړۍ برخې ته اړه لري؛
+    بل حالت تمرين ته پرېږدو۔
+
+    په لومړي حالت کښې $\pi$ په دې ختمېږي:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)], !A(t)}{\Delta_2}$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    استقرايي فرض د $\Gamma_1 \Sequent
+    \Delta_1, \lexists[x][!A(x)], !A(t), !C_1$ او $!C_1, \Gamma_2
+    \Sequent \Delta_2$ !!{proof}s راکوي۔ په لومړي سېکوېنټ
+    $\RightR{\lexists}$ کارولے شو، څو $\Gamma_1 \Sequent \Delta_1, \lexists[x][!A(x)], !C_1$
+    تر لاسه کړو۔ نو $!C_1$ به بيا منځګړی وي، که دا شرط پوره
+    وي چې $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$۔ دلته
+    استقرايي فرض $\Lang L(!C_1)
+    \subseteq \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)], !A(t))
+    \cap \Lang L(\Gamma_2, \Delta_2)$ راکوي۔ اوس ياد کړئ چې
+    فرض مو کړے ؤ چې هېڅ !!{function}s نۀ شته۔ نو د دې قواعدو
+    تړلے ترم~$t$ يوازې !!a{constant} کېدے شي؛ يعنې $t \ident b$۔
+    که $b \notin \Lang L(!C_1)$ يا $b \in \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)]) \cap
+    \Lang L(\Gamma_2, \Delta_2)$ وي، اندېښنه نۀ شته:
+    $!C_1$ منځګړی اخستلے شو۔ خو که $b \in \Lang
+    L(!C_1)$ او $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$ وي، بيا؟
+    لومړے، په~$!C_1$ کښې د~$b$ هر راتګ په يوه تازه
+    !!a{variable}~$y$ بدلولے شو او $!C_1 \ident \Subst{!C_1'}{b}{y}$
+    ليکلے شو، چې~$!C_1'$ پکښې~$b$ نۀ لري۔ سربېره پردې، يا
+    $b \notin
+    \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)])$ يا $b \notin
+    \Lang L(\Gamma_2, \Delta_2)$ دے۔ په ترتيب سره $!C \ident
+    \lforall[y][!C_1'(y)]$ يا $!C \ident \lexists[y][!C_1'(y)]$
+    اخستلے شو۔ په لومړي حالت کښې لرو:
+\[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter \Delta_1, \lexists[x][!A(x)], !C_1'(b)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lforall[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    او
+\[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    د پاسنيو سېکوېنټونو !!{proof}s له استقرايي فرضه راځي؛ په
+    دويم کښې په مقدم کښې د $\lforall[y][!C_1'(y)]$ د زياتولو
+    دپاره د کمزوري کولو منل کېدل کاروو۔ په لومړي !!{proof}
+    کښې د \RightR{\lforall} د ځانګړي متغير شرط پوره دے، ځکه
+    $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])$ او~$!C_1'$ داسې تعريف شوے چې~$b$
+    نۀ لري۔
+
+    په دويم حالت کښې، له استقرايي فرض او د~$\lexists[y][!C_1'(y)]$
+    په زياتولو د کمزوري کولو له منل کېدو څخه، لرو:
+\[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    او
+\[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lexists}}
+    \UnaryInf$\lexists[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    په دويم !!{proof} کښې د \LeftR{\lexists} د ځانګړي متغير
+    شرط پوره دے، ځکه $b \notin \Lang L(\Gamma_2,
+    \Delta_2)$ او $!C_1'$ داسې تعريف شوے چې~$b$ نۀ لري۔
+  \end{enumerate}
+  نور حالتونه هم ورته دي؛ تمرينونو ته ئې پرېږدو۔
+\end{proof}
+
+\begin{prob}
+فرض کړئ چې د $\lnand$ په نوم يو تړونکے د دې قواعدو سره لرو:
+\[
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnand}}
+\BinaryInf$!A \lnand !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\quad
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnand}}
+\UnaryInf$\Gamma \fCenter \Delta, !A \lnand !B$
+\DisplayProof
+\]
+د \olref{lem:maehara} د ثبوت هغه حالتونه ترسره کړئ چې $\pi$
+په دغو قواعدو کښې په يوه ختمېږي، او وښيئ چې د مايېهارا
+مرستندويه قضيه لا هم صدق کوي۔
+\end{prob}
+
+اوس چې د مايېهارا مرستندويه قضيه مو ثابته کړه، د کرېګ د
+منځګړيتوب د قضيې د ثابتولو دپاره ئې کارولے شو۔
+
+\begin{proof}[د \olref{thm:interpolation} ثبوت]
+  فرض کړئ چې $!A \Sequent !B$ !!{provable} دے۔ په
+  $\maeh{!A}{\ } \Sequent \maeh{\ }{!B}$ باندې \olref{lem:maehara}
+  وکاروئ، څو منځګړی~$!C$ تر لاسه کړئ۔ $\Proves !A \Sequent !C$
+  او $\Proves !C
+  \Sequent !B$ لرو۔
+\end{proof}
+
+فرض کړئ چې $\Gamma$ په !!a{language}~$\Lang L$ کښې يوه تيوري
+(د !!{sentence}s سټ) ده او ژبه د $n$ ځايونو {مسند}~$R$ لري۔
+وايو چې $\Gamma$،~$R$ \emph{په ضمني توګه تعريفوي}، هله او يوازې هله چې
+\begin{align*}
+\Gamma, \Gamma'
+& \Entails \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff
+R'(x_1, \dots, x_n))]],
+\intertext{دلته $\Gamma'$ له $\Gamma$ څخه د~$R$ هر راتګ په~$R' \notin \Lang L$
+بدلولو تر لاسه کېږي۔ $\Gamma$،~$R$ \emph{په څرګند ډول تعريفوي}،
+هله او يوازې هله چې داسې~$!A(x_1, \dots, x_n)$ شته چې~$R$ نۀ لري او}
+\Gamma &\Entails
+\lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1,
+\dots, x_n))]].
+\end{align*}
+څرګنده ده: که $\Gamma$، $R$ په څرګند ډول تعريفوي، نو~$R$ په
+ضمني توګه هم تعريفوي۔ معکوسه خبره څرګنده نۀ ده، خو بيا هم صدق کوي:
+
+\begin{lem}[د بېت د تعريف‌وړتيا قضيه]
+  که $\Gamma$،~$R$ په ضمني توګه تعريفوي، نو په څرګند ډول ئې هم
+  تعريفوي۔
+\end{lem}
+
+\begin{proof}
+  فرض کړئ چې $\Gamma$،~$R$ په ضمني توګه تعريفوي۔ دې $R'$ او
+  $\Gamma'$ د پورته په شان وي او $\Lang L' = \Lang L(\Gamma') = \Lang L \setminus \{R\}
+  \cup \{R'\}$ دې وي۔ د فرض له مخې لرو:
+\begin{align*}
+    \Gamma, \Gamma' & 
+    \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) 
+    \liff R'(x_1, \dots, x_n))]]
+  \intertext{دې $c_1$، \dots،~$c_n$ داسې !!{constant}s وي چې په~$\Gamma$ کښې نۀ راځي۔ د معکوسولو له مرستندويې قضيې څخه لرو}
+    \Gamma, \Gamma', R(c_1,\dots,c_n) & \Sequent  R'(c_1, \dots, c_n)
+  \intertext{د مايېهارا مرستندويه قضيه په دې وکاروئ}
+    \maeh{\Gamma, R(c_1,\dots,c_n)}{\Gamma'} & \Sequent
+      \maeh{\ }{R'(c_1, \dots, c_n)}
+  \intertext{څو داسې~$!A \ident !A(x_1, \dots, x_n)$ ومومو چې}
+    \Gamma, R(c_1,\dots,c_n) & \Sequent !A(c_1, \dots, c_n) \\
+    !A(c_1, \dots, c_n), \Gamma' & \Sequent R'(c_1, \dots, c_n)
+  \intertext{!!{proof}s لري۔ \textbf{سرچينه‌يي سمون OLCMP-121:} مرستندويه قضيه د ګډې ژبې د غړيتوب حد راکوي، نۀ لازمي برابري۔ موقتي منځګړی تازه ثابتونه لرلے شي؛ د هغو په ځاے متغيرونو اخستلو وروسته $\Lang L(!A) \subseteq \Lang L(\Gamma) \setminus \{R\}$ دے، نو~$!A$،~$R$ نۀ لري۔ په دويم سېکوېنټ کښې د !!{proof} په هر ځاے $R'$ په~$R$ بدل کړئ، څو د لاندې سېکوېنټ !!a{proof} تر لاسه شي}
+    !A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
+  \end{align*}
+  \RightR{\lif} او \RightR{\lforall} وکاروئ، څو د لاندې
+  سېکوېنټ !!a{proof} تر لاسه کړئ:
+\[
+    \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1, \dots, x_n))]].
+  \]
+  دا ښيي چې $!A(x_1, \dots, x_n)$ په~$\Gamma$ کښې د $!R$
+  څرګند تعريف دے۔
+\end{proof}
+
+درېيمه پايله، چې منځګړيتوب ته هم‌ارزښته ده او د هغې په شان
+د مايېهارا په مرستندويه قضيه ثابتېدے شي، دا قضيه ده: که دوه
+سازګارې تيورۍ~$\Gamma_1$ او $\Gamma_2$ د خپلې ټولې ګډې ژبې
+يوه بشپړه تيوري $\Gamma$ ولري، يعنې
+$\Lang L(\Gamma) = \Lang L(\Gamma_1)
+\cap \Lang L(\Gamma_2)$ وي، نو $\Gamma_1 \cup \Gamma_2$ سازګاره ده۔
+\textbf{سرچينه‌يي سمون OLCMP-122:} يوازې د ګډې ژبې په يوه
+کوچنۍ فرعي ژبه کښې بشپړتيا کافي نۀ ده؛ لاندې استدلال د ټولې
+ګډې ژبې د هرې جملې فيصله غواړي۔
+
+په ياد ولرئ چې بشپړه تيوري هغه ده چې په خپله ژبه کښې د هرې
+!!{sentence}~$!A$ دپاره يا $\Gamma \Proves !A$ يا
+$\Gamma \Proves \lnot !A$ وي۔ ځکه چې $\Gamma_1$ او~$\Gamma_2$
+د~$\Gamma$ سازګارې پراختياوې دي، نو $\Gamma$ بايد سازګاره وي۔
+له دې راځي: که $!A$ د $\Lang L(\Gamma_1) \cap \Lang
+L(\Gamma_2)$ په ژبه کښې !!a{sentence} وي، نو $\Gamma_1 \Entails !A$
+او $\Gamma_2 \Entails \lnot !A$ دواړه نۀ شي لرلے۔ د دې د کتلو
+دپاره فرض کړئ داسې~$!A$ شته۔ که $\Gamma_1 \Entails !A$ وي، نو
+$\Gamma \Entails !A$ دے۔ که داسې نۀ وي، د~$\Gamma$ د بشپړتيا
+له مخې $\Gamma \Entails \lnot !A$ دے؛ او ځکه چې
+$\Gamma \subseteq \Gamma_1$ ده، $\Gamma_1 \Entails \lnot !A$
+بۀ وي او $\Gamma_1$ به ناسازګاره شي۔ نو $\Gamma \Entails !A$
+دے؛ او ځکه چې $\Gamma
+\subseteq \Gamma_2$ ده، $\Gamma_2 \Entails !A$ دے۔ نو
+$\Gamma \Entails/
+\lnot !A$، ګنې $\Gamma_2$ به ناسازګاره وي۔
+
+د ثبوت دپاره همدا کافي ده چې په ګډه !!{language}~$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+کښې داسې !!a{sentence}~$!A$ نۀ وي چې $\Gamma_1
+\Entails !A$ او $\Gamma_2 \Entails \lnot !A$ وي۔ دلته دا
+ثبوت د ثبوت پوهنې په طريقه، د مايېهارا په مرستندويه قضيه، ورکوو۔
+
+\begin{thm}[د رابنسن د ګډې سازګارۍ قضيه]
+فرض کړئ چې $\Gamma_1$ او $\Gamma_2$ سازګارې تيورۍ دي او په
+!!{language} $\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$ کښې
+د هېڅ~$!A$ دپاره $\Gamma_1 \Entails !A$ او
+$\Gamma_2 \Entails \lnot !A$ دواړه نۀ لرو۔ نو
+$\Gamma_1 \cup \Gamma_2$ سازګاره ده۔
+\end{thm}
+
+\begin{proof}
+  د خلاف فرض وکړئ چې $\Gamma_1 \cup \Gamma_2$ ناسازګاره ده۔
+  نو سېکوېنټ $\Gamma_1, \Gamma_2 \Sequent \ $ يو
+  !!a{proof} لري۔ په $\maeh{\Gamma_1}{\Gamma_2}
+  \Sequent \maeh{\ }{\ }$ د مايېهارا مرستندويه قضيه وکاروئ،
+  څو په !!{language}~$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+  کښې داسې !!a{sentence}~$!A$ تر لاسه کړئ چې
+  $\Proves \Gamma_1 \Sequent !A$ او $\Proves !A, \Gamma_2 \Sequent
+  \quad$ وي۔ له وروستي څخه $\Proves \Gamma_2 \Sequent \lnot !A$
+  تر لاسه کوو۔ خو فرض مو کړے ؤ چې داسې !!{sentence} نۀ شته۔
+\end{proof}
+
+پورته مو په پټه فرض کړے ؤ چې تيورۍ $\Gamma$، $\Gamma_1$ او
+$\Gamma_2$ متناهي دي۔ د متناهي شاهد خاصيت له مخې، پايلې د
+نامتناهي تيوريو دپاره هم صدق کوي۔
+
+\end{document}

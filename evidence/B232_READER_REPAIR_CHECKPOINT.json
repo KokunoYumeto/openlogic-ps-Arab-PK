@@ -1,0 +1,81 @@
+{
+  "schema": "ps-reader-repair-source-checkpoint/1",
+  "utc": "2026-09-30T19:34:18.176976+00:00",
+  "status": "PASS current input preflight; bounded TeX attempt unavailable; substantive translation continues",
+  "reader_units": 654,
+  "reader_tex_sha256": "3e3ec72913bbdba31b556426435035ff3b85246e416326cc22a4be94d6f91e76",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false,
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "4a4e455b12555179e40c8ab17fa35c1cfce8f91709807cbdf9dbec8cd6ba4d58",
+      "bytes": 60613
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62",
+      "bytes": 8283
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v103.tex",
+      "sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v104.tex",
+      "sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v105.tex",
+      "sha256": "1caa2604953eb56498fcfa33601991a63d1b0dddc7a88d18a208eb8202872b87",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v106.tex",
+      "sha256": "bd1113c81f47729f51c5b5e4dfcb6e75904f9aa9c3e84b2e9b4c4a066bf00695",
+      "bytes": 14907
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v107.tex",
+      "sha256": "195599874f4cd9b35226ae9ad48fd27ee18fff2937e299dc2815d5f001091496",
+      "bytes": 14920
+    }
+  ],
+  "historical_b211_receipt_sha256": "01c2f47d46b5ac14c4277ee07dafafed2990542317454c303f56deeb948d0f5f",
+  "previous_reader_checkpoint_sha256": "0da8180e41f58488f23b1661be6973ac509e6c0579ff67af2d7141364db184c0",
+  "b215_evidence": [
+    {
+      "path": "evidence/B215_COMPILED_637_PENDING_QA.json",
+      "sha256": "95773b4ad81f691a802e4a0d09dc4d957d019bf7927ed06bf7451ba1ceacfac3"
+    },
+    {
+      "path": "evidence/B215_READER_REPAIR_PREFLIGHT_637.json",
+      "sha256": "ff52e56f83c605581de1d5a9b3510fc00b8c8dd1dbe844e99b76b347bc862265"
+    },
+    {
+      "path": "evidence/B215_RENDERED_READER_REPAIRS.json",
+      "sha256": "7b3c7950ea46ef90e0f158953fa944f7575176dd48dc332d5ce7d49ce4e64b31"
+    },
+    {
+      "path": "evidence/B215_TEX_SLOT_UNAVAILABLE_637.json",
+      "sha256": "ca4cc268ffaace19621cdaba956a9d470a79c6b4aeac4b18a2fba4063655de68"
+    }
+  ],
+  "preflight_sha256": "8331a55edfa7dd4d4614d49a26c6a157102f316953fedd42657487fdfa28b7f9",
+  "compiled_candidate_scope": 654,
+  "last_slot_result": "One1000ms acquisition returned slot-unavailable; terminal with no TeX process started. Current654 input retained; no slot polling.",
+  "policy": "No slot polling; one accumulated attempt at a later validated substantive checkpoint.",
+  "source_accepted_units": 658,
+  "reader_pending_unit_ids": [
+    "OLP-0655",
+    "OLP-0656",
+    "OLP-0657",
+    "OLP-0658"
+  ],
+  "previous_compiled_candidate_pdf_sha256": null,
+  "previous_rendered_sample_sha256": null,
+  "slot_result_sha256": "e6ff43c5fd0f0fd5fe0714ab92ea3b5cfa4e156289b8d950b9c5949c78006705"
+}

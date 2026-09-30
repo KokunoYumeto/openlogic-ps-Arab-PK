@@ -1,0 +1,110 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-09-30T18:29:36.096804+00:00",
+  "status": "complete source read; candidates recorded; draft and acceptance pending",
+  "source_unit": "OLP-0658",
+  "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+  "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+  "source_lines": 594,
+  "source_blocks": 37,
+  "display_math_slots": 19,
+  "proof_trees": 18,
+  "align_environments": 8,
+  "source_exercises": 1,
+  "all_source_cases_and_exercises_to_be_preserved": true,
+  "concrete_findings": [
+    {
+      "candidate_id": "PS-CAND-0658-BETH-VOCABULARY-BOUND",
+      "unit_id": "OLP-0658",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "segment_id": "OLP-0658-B030",
+      "source_start_line_1based": 532,
+      "source_end_line_1based": 533,
+      "exact_original_text": "$\\Lang L(!A) = \\Lang L_1 \\cap\n  \\Lang L_2 = \\Lang L(\\Gamma) \\setminus \\{R\\}$",
+      "reporting_lane": "source_erratum_substantive",
+      "reason": "Maehara guarantees vocabulary inclusion, not equality; fresh c parameters belong temporarily to the common extended language and are abstracted in A(x). The theorem is not called false.",
+      "proposed_correction_description": "State the inclusion for A after abstracting the fresh parameters, and explain that the temporary interpolant may use those parameters.",
+      "limits": "Complete exact source and both definitions read; the offered bound is being corrected, not the Beth theorem.",
+      "status": "candidate; no translated body or source correction registered",
+      "already_in_upstream_issue": "not checked by source identity yet"
+    },
+    {
+      "candidate_id": "PS-CAND-0658-ROBINSON-COMMON-LANGUAGE",
+      "unit_id": "OLP-0658",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "segment_id": "OLP-0658-B031",
+      "source_start_line_1based": 549,
+      "source_end_line_1based": 550,
+      "exact_original_text": "$\\Lang L(\\Gamma) \\subseteq \\Lang L(\\Gamma_1)\n\\cap \\Lang L(\\Gamma_2)$",
+      "reporting_lane": "source_erratum_substantive",
+      "reason": "Completeness in a smaller language does not decide every sentence of the entire shared language. A complete singleton equality theory has consistent expansions with all P and with no P; their union is inconsistent.",
+      "proposed_correction_description": "Require completeness on the whole shared language, e.g. replace the displayed subset condition by equality.",
+      "limits": "The later nonseparation formulation remains correct; only the introductory complete-theory hypothesis is deficient.",
+      "status": "candidate; no translated body or source correction registered",
+      "already_in_upstream_issue": "not checked by source identity yet"
+    },
+    {
+      "candidate_id": "PS-CAND-0658-BETH-BICONDITIONAL-CONVENTION",
+      "unit_id": "OLP-0658",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "segment_id": "OLP-0658-B030",
+      "source_start_line_1based": 538,
+      "source_end_line_1based": 538,
+      "exact_original_text": "Apply \\RightR{\\lif} and \\RightR{\\lforall} to get !!a{proof} of",
+      "reporting_lane": "unresolved",
+      "reason": "G3c rule table0707 has implication and conjunction rules, no biconditional rule. The displayed final biconditional needs its abbreviation/construction convention checked.",
+      "proposed_correction_description": "If the biconditional is an abbreviation, explain combining the two implications by conjunction-right before generalizing.",
+      "limits": "Check the implicit abbreviation convention before declaring an error; extra exposition of an already valid abbreviated proof is an improvement.",
+      "status": "candidate; no translated body or source correction registered",
+      "already_in_upstream_issue": "not checked by source identity yet"
+    },
+    {
+      "candidate_id": "PS-CAND-0658-TERM-PARAMETER-CONVENTION",
+      "unit_id": "OLP-0658",
+      "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+      "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+      "segment_id": "OLP-0658-B023",
+      "source_start_line_1based": 396,
+      "source_end_line_1based": 397,
+      "exact_original_text": "That means the term~$t$ can only\n    be !!a{constant}, i.e., $t \\ident b$.",
+      "reporting_lane": "unresolved",
+      "reason": "Frozen terms-formulas0152 explicitly admits variables and constants without function symbols. The displayed argument uses a constant parameter.",
+      "proposed_correction_description": "Check or state the proof parameter convention; do not claim all function-free terms are literally constants.",
+      "limits": "An implicit parameter-renaming convention may justify the displayed argument; freshness for the new y must be respected.",
+      "status": "candidate; no translated body or source correction registered",
+      "already_in_upstream_issue": "not checked by source identity yet"
+    }
+  ],
+  "context_files": [
+    {
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\upstream\\content\\first-order-logic\\syntax-and-semantics\\terms-formulas.tex",
+      "sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3"
+    },
+    {
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\upstream\\content\\proof-theory\\sequent-calculus\\rules-G3c.tex",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    {
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\upstream\\content\\model-theory\\interpolation\\definability.tex",
+      "sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29"
+    },
+    {
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\upstream\\open-logic-config.sty",
+      "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+    }
+  ],
+  "next_reaudit_unit": "OLP-0335",
+  "next_reaudit_source_path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+  "next_reaudit_source_sha256": "997505d0bb8de8bbc170192327c4ea5182773179e818d9ab41381471c30c5cff",
+  "next_reaudit_scope": "Complete source and current target read; preserve separate downward/upward counterexamples, Count/Inf domains and all formulas. Full semantic/countable-language scope to be reviewed with actual native witnesses.",
+  "source_or_target_changed": false,
+  "new_source_corrections_registered": false,
+  "full722_goal_active": true
+}
