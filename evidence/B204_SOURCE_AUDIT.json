@@ -1,0 +1,144 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T02:37:25.298095+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0610",
+      "source_path": "content/methods/proofs/reading-proofs.tex",
+      "source_bytes": 4885,
+      "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+      "target_bytes": 6789,
+      "target_sha256": "0f93dd4b8c60142e99cba86ad738fe8e3b12482fc9775ec855d48a45fcf4dd4d",
+      "paired_blocks": 15,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "ordered_math_spans": 85,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-040",
+        "OLSTH-041"
+      ]
+    },
+    {
+      "unit_id": "OLP-0611",
+      "source_path": "content/methods/proofs/cant-do-it.tex",
+      "source_bytes": 3042,
+      "source_sha256": "47c3b4332e0c28351984e78cba0008e54deb442704710bf7d4f2ffa34e4e6c5e",
+      "target_bytes": 4607,
+      "target_sha256": "b887fd0414482c6e0a615916df726fcb85a2dbda91682eded8b7195d563729e3",
+      "paired_blocks": 11,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0612",
+      "source_path": "content/methods/proofs/resources.tex",
+      "source_bytes": 1619,
+      "source_sha256": "69bf95954428e38a55dfca85aa13d62ba2b9992afa406364da4a0b251d86fa44",
+      "target_bytes": 2024,
+      "target_sha256": "84286dfd6943091c0ba5682d8a7d78df4d80f080b249b9b800aca25cf72f702f",
+      "paired_blocks": 11,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "1d632e8d595f1e6972992a7d8f376a45f7d5261deffcb6e2bf8ebee9003769d9",
+  "model_provenance_sha256": "5cde2ab7158653045879b860df33abbbf3d3e31bf32525294556cf6d040af3bf",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-MOE-P11-SUBSET",
+    "AF-MOE-P13-INTERSECTION",
+    "AF-MOE-P15-UNION"
+  ],
+  "new_term_ids": [
+    "TERM-PROOF-ABSORPTION-EXPLICITNESS"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-040",
+    "OLSTH-041"
+  ],
+  "semantic_samples_added": 22,
+  "unresolved": "د جذب او د منابعو نومونه موقتي دي؛ دوه چاپي نيمګړتياوې څرګندې خو نۀ رغول شوې دي؛ نوې لوستپاڼه لا نۀ ده تصديق شوې.",
+  "next_executable_action": "Run dual612 corpus QA and canonical replay; accept this complete batch on PASS. Continue the induction chapter from OLP-0613."
+}

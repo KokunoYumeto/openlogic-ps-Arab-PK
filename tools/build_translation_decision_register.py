@@ -174,6 +174,7 @@ def record_kind(entry_type: str) -> str:
         "context-dependent notation": "notation",
         "cross-source notation conflict": "notation",
         "alternative chapter integration": "syntax",
+        "translation wording": "register",
     }[entry_type]
 
 
@@ -194,7 +195,8 @@ def confidence(entry: dict) -> str:
 
 
 def review_priority(entry: dict) -> str:
-    return {"high": "high", "medium": "normal", "standard": "low"}[entry["review_priority"]]
+    return {"high": "high", "medium": "normal", "normal": "normal",
+            "standard": "low", "low": "low"}[entry["review_priority"]]
 
 
 def alternatives(entry: dict) -> list[dict]:
@@ -274,13 +276,18 @@ def line_from_location(location: dict, side: str) -> int | None:
     return None
 
 
-def reader_locator(segment_id: str, reader_pages: dict[str, dict]) -> dict:
+def reader_locator(segment_id: str, reader_pages: dict[str, dict], target_sha256: str) -> dict:
     if segment_id not in reader_pages:
         return {
             "status": "pending",
             "reason": "No stable verified line-to-page mapping currently contains this semantic segment; no page was guessed.",
         }
     page = reader_pages[segment_id]
+    if page.get("accepted_target_file_sha256") != target_sha256:
+        return {
+            "status": "pending",
+            "reason": "The verified historical reader is not bound to these current target bytes; a new verified mapping is required.",
+        }
     required = {"artifact_filename", "artifact_sha256", "profile", "provenance"}
     if not required <= set(page):
         raise ValueError(f"incomplete reader page record for {segment_id}")
@@ -349,7 +356,7 @@ def make_occurrence(
         "section_title": section_title,
         "source": source_locator,
         "target": target_locator,
-        "reader_locator": reader_locator(segment_id, reader_pages),
+        "reader_locator": reader_locator(segment_id, reader_pages, spans[segment_id]["target"]["raw_sha256"]),
         "evidence_refs": [evidence_ref],
     }
 

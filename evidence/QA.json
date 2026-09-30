@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 608,
-    "structural_pass": 608,
+    "draft_units": 612,
+    "structural_pass": 612,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B202-EXAMPLE2",
+  "batch": "PS-B204-PROOF-METHODS-COMPLETE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -10199,7 +10199,7 @@
       "unit_id": "OLP-0318",
       "path": "content/incompleteness/incompleteness-provability/provability-conditions.tex",
       "source_sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
-      "translation_sha256": "0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95",
+      "translation_sha256": "67ef7f87a1a95a08e83952b5c536de36d0a8243dc4182d6f193d322bfb2bf5f4",
       "source_blocks": 9,
       "target_blocks": 9,
       "checks": {
@@ -19635,6 +19635,119 @@
         "OLSTH-034"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0609",
+      "path": "content/methods/proofs/proof-by-contradiction.tex",
+      "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+      "translation_sha256": "2337f7bf22f5bdf563641a18d7a3275fdd52956e86f2fe2fcdcea300980c50f1",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-037"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0610",
+      "path": "content/methods/proofs/reading-proofs.tex",
+      "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+      "translation_sha256": "0f93dd4b8c60142e99cba86ad738fe8e3b12482fc9775ec855d48a45fcf4dd4d",
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-040",
+        "OLSTH-041"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0611",
+      "path": "content/methods/proofs/cant-do-it.tex",
+      "source_sha256": "47c3b4332e0c28351984e78cba0008e54deb442704710bf7d4f2ffa34e4e6c5e",
+      "translation_sha256": "b887fd0414482c6e0a615916df726fcb85a2dbda91682eded8b7195d563729e3",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0612",
+      "path": "content/methods/proofs/resources.tex",
+      "source_sha256": "69bf95954428e38a55dfca85aa13d62ba2b9992afa406364da4a0b251d86fa44",
+      "translation_sha256": "84286dfd6943091c0ba5682d8a7d78df4d80f080b249b9b800aca25cf72f702f",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -22431,8 +22544,8 @@
     {
       "unit_id": "OLP-0318",
       "passage": "formalized provability conditions",
-      "reverse_paraphrase": "PA's induction schema supports the P1 theorem-internalization, P2 implication distribution and P3 positive-introspection conditions.",
-      "finding": "All four stated conditions are intact; OLPRV-001 is adjacent and registered."
+      "reverse_paraphrase": "The external decidable proof relation and its representing object-language formula remain separate; checked frozen macros justify retaining OLPRV-001. P1 is an external theorem-internalization implication, P2 and P3 are PA theorems, and P4 is an external implication, not an internally provable reflection schema. Details are tedious and uninteresting, not useless; this translation error is corrected.",
+      "finding": "د P1 او P4 بهرنۍ شرطونه له P2 او P3 داخلي قضيو جلا وساتل شول. OLPRV-001 د بېلو ماکرو له کتنې وروسته وساتل شو. د نامتناهي اصولو عبارت او د نۀ په زړه پورې تفصيلاتو عبارت اصلاح شول."
     },
     {
       "unit_id": "OLP-0319",
@@ -33839,6 +33952,240 @@
       "passage": "printed-parenthesis",
       "reverse_paraphrase": "The outer closing parenthesis is absent in one printed inclusion formula; the stated set identity remains sound.",
       "finding": "د ثبوت ځانګړے معنايي خطر او د چاپي عيب حد په نږدې متن کښې وکتل شو."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B005",
+      "reverse_paraphrase": "Title: proof by contradiction.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B006",
+      "reverse_paraphrase": "To prove not p, assume p and derive falsehood or contradiction with a retained hypothesis. In q implies not p, q remains a hypothesis and p is the reductio assumption.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B007",
+      "reverse_paraphrase": "If A is a subset of empty B, A has no members.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B008",
+      "reverse_paraphrase": "Assume the two conditional hypotheses and a new existential A-member for reductio. Subset transfers it to B, emptiness to the empty set, contradicting its definition. Discharge only the new existential assumption.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B009",
+      "reverse_paraphrase": "Classical double negation permits proving p indirectly from a contradiction under not p. No unmarked translator qualification is inserted.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B010",
+      "reverse_paraphrase": "The previous reductio uses a positive existential assumption and hypothetical A-member to obtain empty-set membership.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B011",
+      "reverse_paraphrase": "Equality with the empty set is a general mutual-inclusion statement equivalent to having no members. Positive and negative formulations can give the same indirect proof.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B012",
+      "reverse_paraphrase": "Reductio for not p starts from p; reductio for p starts from not p. Direct proofs may be simpler; indirect proof remains an alternative.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B013",
+      "reverse_paraphrase": "Every A-member belongs to A union B.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B014",
+      "reverse_paraphrase": "Negation of inclusion supplies one A-member outside the union. Printed C is the wrong set and disclosed adjacent to the exact formula. A-membership implies union membership, contradicting the witness assumption. Prose supplies subjects of shorthand membership.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B015",
+      "reverse_paraphrase": "The exercise requests an indirect proof of A intersection B included in A; it remains an exercise.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B016",
+      "reverse_paraphrase": "Transitivity retains both inclusion hypotheses and the conclusion A included in C.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B017",
+      "reverse_paraphrase": "Not inclusion means not every A-member is a C-member, equivalently one A-member is outside C. Repaired Pashto scopes negation outside the universal statement, rather than claiming no A-member belongs to C. Transfer through B contradicts the witness.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B018",
+      "reverse_paraphrase": "If union equals intersection, the two sets are equal.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B019",
+      "reverse_paraphrase": "Assumed inequality is a disjunction of failed inclusions. Prove a contradiction in each case separately, not under both assumptions together.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B020",
+      "reverse_paraphrase": "An A-member outside B belongs to the union and not the intersection, contradicting their equality.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0609",
+      "passage": "OLP-0609-B021",
+      "reverse_paraphrase": "A possibly different witness y in B and outside A supplies the symmetric contradiction and completes the proof.",
+      "finding": "د ټول بلاک معنا، فرضونه، د نفي حدود او شاهدان له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B004",
+      "reverse_paraphrase": "Section title: reading proofs; file identifier remains unchanged.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B005",
+      "reverse_paraphrase": "Textbook proofs often omit explicit case distinctions, indirect-proof notices and definitions; readers must fill these details to understand and practise proof moves.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B006",
+      "reverse_paraphrase": "Absorption holds for all sets A and B; its display is exact.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B007",
+      "reverse_paraphrase": "The short proof establishes left inclusion by intersection elimination and reverse inclusion by A-membership giving union membership and therefore intersection membership.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B008",
+      "reverse_paraphrase": "Arbitrary set variables and equality as mutual inclusion remain explicit; brevity omits stated definitions rather than logical requirements.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B009",
+      "reverse_paraphrase": "The first quoted sentence establishes the forward inclusion.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B010",
+      "reverse_paraphrase": "An arbitrary left member yields both conjunct memberships; the first suffices. The remainder must prove the reverse inclusion.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B011",
+      "reverse_paraphrase": "The second quoted sentence starts from A-membership and yields union and intersection membership.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B012",
+      "reverse_paraphrase": "For an arbitrary member, intersection introduction needs two claims: the first is a retained assumption and the second follows by union introduction. Both definitions are recalled and their omission in the terse proof explained.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B013",
+      "reverse_paraphrase": "The expanded proof records both intended directions, despite the sources repeated forward inclusion in the printed list. Each definition and numbered assumption is retained; a final extra close parenthesis remains in its exact span with adjacent disclosure.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0610",
+      "passage": "OLP-0610-B014",
+      "reverse_paraphrase": "The dual absorption exercise asks readers to expand inference patterns, prior claims and used definitions. Its shorthand membership subject is supplied by prose, not a formula error.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B005",
+      "reverse_paraphrase": "The title expresses I cannot do it as a readers learning frustration.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B006",
+      "reverse_paraphrase": "Encouragement and help from instructor, assistant and fellow students lead to practical learning advice.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B007",
+      "reverse_paraphrase": "All four tips remain: begin early, discuss with classmates without copying, seek instructional help, and take breaks or sleep before reconsidering. Reciprocating help also improves understanding.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B008",
+      "reverse_paraphrase": "The tips require starting in advance; the warning specifies 2am one day before the due date.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B009",
+      "reverse_paraphrase": "Proof-solving can be rewarding and professional; apparent ease may reflect prior practice, so do not give up too readily.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0611",
+      "passage": "OLP-0611-B010",
+      "reverse_paraphrase": "Running out of time or patience does not imply stupidity or permanent inability. Learn the solution and the obstruction, then reproduce without looking; start and ask earlier next time.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0612",
+      "passage": "OLP-0612-B005",
+      "reverse_paraphrase": "Title: other resources.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0612",
+      "passage": "OLP-0612-B006",
+      "reverse_paraphrase": "All five source books, citations, two linked resource destinations and the distinction between proof guides and a philosophy-oriented primer remain identified; Pashto titles are descriptive translations, not claims of published Pashto editions.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0612",
+      "passage": "OLP-0612-B007",
+      "reverse_paraphrase": "Both shorter online guides retain the exact links and citation keys.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0612",
+      "passage": "OLP-0612-B008",
+      "reverse_paraphrase": "Subsection title: motivational videos.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0612",
+      "passage": "OLP-0612-B009",
+      "reverse_paraphrase": "The original brief encouragement remains, and the following unchanged list retains all three exact video URLs.",
+      "finding": "د ټول بلاک نثر، معنا، فرضونه، جوړښت او د منابعو ثابتې نښې له سرچينې سره پرتله شول."
     }
   ],
   "builds": [

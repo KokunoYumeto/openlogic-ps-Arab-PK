@@ -1,0 +1,55 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T02:24:25.386853+00:00",
+  "status": "complete independently reconciled source review; corpus acceptance pending",
+  "batch_id": "PS-B203-PROOF-BY-CONTRADICTION",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0609",
+      "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+      "source_bytes": 9908,
+      "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+      "target_sha256": "2337f7bf22f5bdf563641a18d7a3275fdd52956e86f2fe2fcdcea300980c50f1",
+      "paired_blocks": 22,
+      "changed_blocks": 17,
+      "ordered_math_spans": 172,
+      "source_correction_ids": [
+        "OLSTH-037"
+      ]
+    }
+  ],
+  "focused_qa_sha256": "ad164e20f7560e0bd7980ed0cf87bb062b4ff17500b52d43405407d644d73820",
+  "model_provenance_sha256": "fb77e67c8d0c34ffcee600a0ea665496072c569cb660d8753f53a2a6e36647ee",
+  "preaudit_sha256": "03cbbcd677ef1a9b1f24925c891c8f49270f7448e1389ea2c2e0edf5ce92df8c",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P58-CONTRADICTION",
+    "AF-NIAZMAN-P140-CONSISTENCY",
+    "AF-NIAZMAN-P8-TRUTH-TABLE",
+    "AF-MOE-P11-SUBSET",
+    "AF-MOE-P13-INTERSECTION",
+    "AF-MOE-P15-UNION"
+  ],
+  "new_term_ids": [
+    "TERM-PROOF-CONTRADICTION-QUANTIFIER-NEGATION"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-037"
+  ],
+  "rejected_draft_candidates": [
+    "OLSTH-035",
+    "OLSTH-036",
+    "OLSTH-038",
+    "OLSTH-039"
+  ],
+  "semantic_samples_added": 17,
+  "new_segment_reaudit_entries": 17,
+  "cumulative_segment_reaudit_entries": 66,
+  "segment_reaudit_sha256": "5082db3c89f904fc1bd4b55f7db9bb6e0b3251271120fdd1324083eca76685a8",
+  "translation_wording_repair": "DEC-SOL6-0609-QUANTIFIER-SCOPE",
+  "formula_policy": "All172 ordered active mathematical spans are exact; adjacent prose discloses the wrong set only.",
+  "unresolved": "د مرکب نوم عين پاکستاني شاهد موقتي دے؛ چاپي سټ يوازې په نږدې يادونه څرګند شوے، فورمول نۀ دے بدل شوے.",
+  "full_reaudit_completed": false,
+  "next_executable_action": "Run dual609 corpus QA and canonical replay; accept only on PASS. Continue general production at OLP-0610; sequential Sol6 review remains at0319."
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T02:26:49.660904+00:00",
+  "status": "accepted editable unit; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0609",
+  "draft_units": 609,
+  "remaining_unaccepted_units": 113,
+  "unit_ids": [
+    "OLP-0609"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "bf7ab940b02081bcfc1b64ae613c89978eeab129b82b8352d762b9b537c006ed",
+  "corpus_qa_sha256": "8ca3bc6fe0c1a9a341342ab90c60ae682e7644e6bbb645e40579cc327edbd633",
+  "canonical_replay_sha256": "28a4f1f90eb2ad10a59dc1875fd519b87f3780c9cc18eda439123c87e23bc67f",
+  "qa_sha256": "d4af970db0f723c9a2b325bb67d309884b1a7b602a91139b630abca74f8c3109",
+  "canonical_builder_sha256": "f61e6ad5c42202ac949c5e16d7dae794a7dd950e85d9c36698ab6bec4e79803f",
+  "unit": {
+    "unit_id": "OLP-0609",
+    "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+    "source_bytes": 9908,
+    "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+    "target_sha256": "2337f7bf22f5bdf563641a18d7a3275fdd52956e86f2fe2fcdcea300980c50f1",
+    "paired_blocks": 22,
+    "changed_blocks": 17,
+    "ordered_math_spans": 172,
+    "source_correction_ids": [
+      "OLSTH-037"
+    ]
+  },
+  "aligned_blocks": 9037,
+  "segment_canon_uses": 5739,
+  "semantic_samples": 2384,
+  "canonical_counts": {
+    "decisions": 773,
+    "occurrences": 29936,
+    "terminology_decisions": 310,
+    "source_correction_decisions": 455,
+    "priority_decisions": 439,
+    "reader_pages_available": 18262,
+    "reader_pages_pending": 11674
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0610 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0319; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

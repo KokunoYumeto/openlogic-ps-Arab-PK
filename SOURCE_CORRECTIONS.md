@@ -4094,3 +4094,29 @@ The frozen English source bytes remain unchanged. Adopted corrections below are 
 - Treatment: د نه تشوالي د چاپي معادل شرط د څيز او سټ د نښو توپير څرګند شو؛ اصلي فورمول ساتل شوے.
 - Disclosure: `adjacent-Pashto-disclosed-unrepaired-source-issue`.
 - Status: frozen source unchanged; printed issue disclosed, not author-approved or silently repaired.
+
+## د ثبوت د طريقو وروستي سمونونه
+
+### OLSTH-034 — OLP-0608
+
+د چاپي فرعي‌سټ د عبارت دباندې پرانيستي قوس ورک تړونکے ښکاره شو؛ فورمول هماغسې ساتل شوے دے.
+
+[اصلي متن](upstream/content/methods/proofs/example-2.tex#L54)؛ [پښتو متن](ps-Arab-PK/content/methods/proofs/example-2.tex#L53). اصلي فارمول او انګريزي سرچينه هماغسې ساتل شوي دي؛ د ليکوال تصويب نۀ دے ادعا شوے.
+
+### OLSTH-037 — OLP-0609
+
+د اتحاد پر ځاے چاپ شوې د «سي» نښه په نږدې پښتو يادونه څرګنده شوه؛ فورمول هماغسې ساتل شوے دے.
+
+[اصلي متن](upstream/content/methods/proofs/proof-by-contradiction.tex#L134)؛ [پښتو متن](ps-Arab-PK/content/methods/proofs/proof-by-contradiction.tex#L137). اصلي فارمول او انګريزي سرچينه هماغسې ساتل شوي دي؛ د ليکوال تصويب نۀ دے ادعا شوے.
+
+### OLSTH-040 — OLP-0610
+
+د دويم شمول پر ځاے تکرار شوے لومړے شمول په نږدې يادونه څرګند شو؛ اصلي فورمول ساتل شوے دے.
+
+[اصلي متن](upstream/content/methods/proofs/reading-proofs.tex#L85)؛ [پښتو متن](ps-Arab-PK/content/methods/proofs/reading-proofs.tex#L91). اصلي فارمول او انګريزي سرچينه هماغسې ساتل شوي دي؛ د ليکوال تصويب نۀ دے ادعا شوے.
+
+### OLSTH-041 — OLP-0610
+
+په وروستي چاپي غړيتوبي عبارت کښې زيات تړونکے قوس په نږدې يادونه څرګند شو؛ فورمول هماغسې دے.
+
+[اصلي متن](upstream/content/methods/proofs/reading-proofs.tex#L96)؛ [پښتو متن](ps-Arab-PK/content/methods/proofs/reading-proofs.tex#L112). اصلي فارمول او انګريزي سرچينه هماغسې ساتل شوي دي؛ د ليکوال تصويب نۀ دے ادعا شوے.

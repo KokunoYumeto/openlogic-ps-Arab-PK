@@ -1,0 +1,113 @@
+{
+  "schema": "ps-sol6-prose-and-source-reaudit/1",
+  "utc": "2026-09-30T02:06:19.752464+00:00",
+  "status": "complete bounded review; corpus QA pending",
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only chat runtime"
+  },
+  "units": [
+    {
+      "unit_id": "OLP-0317",
+      "source_path": "content/incompleteness/incompleteness-provability/godels-paper.tex",
+      "source_sha256": "4e6444ba77091bc73d2e62d8f45030250ef27d3049d1c88a49b4995ee2d11f23",
+      "target_sha256_before": "a2c59ad5b709237ec0dfe9a230b63eceb78ad94c7fcc5c601936df0bb87fba3b",
+      "target_sha256_after": "a2c59ad5b709237ec0dfe9a230b63eceb78ad94c7fcc5c601936df0bb87fba3b",
+      "paired_blocks_reviewed": 7,
+      "translated_blocks_reviewed": [
+        5,
+        6
+      ],
+      "outcome": "retain after full comparison",
+      "new_render_acceptance": false
+    },
+    {
+      "unit_id": "OLP-0318",
+      "source_path": "content/incompleteness/incompleteness-provability/provability-conditions.tex",
+      "source_sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
+      "target_sha256_before": "0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95",
+      "target_sha256_after": "67ef7f87a1a95a08e83952b5c536de36d0a8243dc4182d6f193d322bfb2bf5f4",
+      "paired_blocks_reviewed": 9,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "outcome": "two prose corrections",
+      "new_render_acceptance": false
+    }
+  ],
+  "new_segment_entries": 6,
+  "cumulative_segment_entries": 49,
+  "cumulative_segment_ledger_sha256": "8724963cc0eccfe852f7b052592107fd98b7999615e439b8292c67d9fff0f172",
+  "original_source_correction": {
+    "id": "OLPRV-001",
+    "unit_id": "OLP-0318",
+    "classification": "metalinguistic-proof-relation-used-inside-object-language-provability-formula",
+    "source_path": "content/incompleteness/incompleteness-provability/provability-conditions.tex",
+    "source_sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
+    "source_locator": "content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36",
+    "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex",
+    "target_sha256": "0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95",
+    "target_line_1based": 36,
+    "mode": "replace-object-formula-Prf-with-OPrf-plus-adjacent-Pashto-disclosure",
+    "reason": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+    "formula_policy": "Only the marked OProv definition changes from \\lexists[x][\\Prf[\\Th{PA}](x,y)] to \\lexists[x][\\OPrf[\\Th{PA}](x,y)]; the adjacent Pashto note quotes both symbols and no other source math is altered.",
+    "qa_math_exception": {
+      "source_only": [
+        "$\\lexists[x][\\Prf[\\Th{PA}](x,y)]$"
+      ],
+      "target_only": [
+        "$\\lexists[x][\\OPrf[\\Th{PA}](x,y)]$",
+        "$\\Prf[\\Th{PA}](x,y)$",
+        "$\\OPrf[\\Th{PA}](x,y)$"
+      ]
+    },
+    "frozen_source_unchanged": true,
+    "reader_disclosure_language": "ps-Arab-PK",
+    "upstream_report": "pending manager channel availability",
+    "stable_audit": "PS-OWNER-SEMANTIC-20260925-INCOMPLETENESS-PROVABILITY",
+    "audit_artifacts": [
+      "content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36",
+      "ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex:36"
+    ],
+    "decision_timing": "contemporaneous B058 owner source review before cumulative acceptance",
+    "translation_change": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+    "counterexample": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
+    "upstream_reporting": "new source notation issue; manager report pending channel availability",
+    "qa_identifier_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_macro_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_token_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "affected_segments": [
+      "OLP-0318-B007"
+    ]
+  },
+  "retained_source_correction": "OLPRV-001",
+  "new_wording_decisions": [
+    "DEC-SOL6-0318-PROSE-01",
+    "DEC-SOL6-0318-PROSE-02"
+  ],
+  "mathematical_spans_unchanged": true,
+  "original_accepted608_receipt_sha256": "ea799ae2bdb35e350dd2810fd46bc8e2ac4c555a55e9f26b8c419e3f8c6e1bda",
+  "source_corrections_sha256": "eb5f046bdbf7b84a5de5a28b44b77eafd75fec8e82bcb2ad07927dac796ece42",
+  "full_reaudit_completed": false,
+  "next_action": "Continue general production from staged OLP-0609; retain full Sol6 re-audit and resume its sequential review at OLP-0319.",
+  "newline_preservation_repair": {
+    "utc": "2026-09-30T02:13:23.405937+00:00",
+    "before_sha256": "45fb99dae8c2f3b51cc575a640dd8d1ca8d46cce258d392bcba6a457a81c663c",
+    "after_sha256": "67ef7f87a1a95a08e83952b5c536de36d0a8243dc4182d6f193d322bfb2bf5f4",
+    "reason": "Restore unchanged LF newline style of this frozen source and prior target; avoids treating structural controls as translated blocks. No words or mathematics changed."
+  }
+}

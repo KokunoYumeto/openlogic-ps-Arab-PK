@@ -6050,7 +6050,7 @@
       "source_sha256": "09473b12608d6bb9393a45c7af241bc76669ad37c92b36d25d6e097cefe69f11",
       "source_locator": "content/incompleteness/incompleteness-provability/provability-conditions.tex:30-36",
       "target_path": "ps-Arab-PK/content/incompleteness/incompleteness-provability/provability-conditions.tex",
-      "target_sha256": "0a587aa2442b689deb981fa0c32b0b400f4b670ee53a45881af3024e5498bd95",
+      "target_sha256": "67ef7f87a1a95a08e83952b5c536de36d0a8243dc4182d6f193d322bfb2bf5f4",
       "target_line_1based": 36,
       "mode": "replace-object-formula-Prf-with-OPrf-plus-adjacent-Pashto-disclosure",
       "reason": "The preceding sentence defines OPrf[PA](x,y) as the formula representing the decidable proof relation Prf[PA](x,y). The displayed definition of OProv[PA](y) must bind the object-language representing formula, as the same chapter's first-incompleteness-thm.tex:32-34 and rosser-thm.tex:26-27 do. Binding the external relation Prf inside an object-language formula confuses metatheory with arithmetic syntax.",
@@ -6091,7 +6091,19 @@
       },
       "affected_segments": [
         "OLP-0318-B007"
-      ]
+      ],
+      "independent_reaudit": {
+        "utc": "2026-09-30T02:06:19.752464+00:00",
+        "receipt": "SOL6_REAUDIT_0317_0318.json",
+        "outcome": "retained after source-context and macro-expansion comparison",
+        "macro_source_path": "upstream/open-logic-config.sty",
+        "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+        "macro_definition_lines_1based": [
+          1051,
+          1052
+        ],
+        "reason": "Prf is the external numeric relation; OPrf is the formula representing it. The frozen definitions use distinct roman and sans-serif macros. The immediately preceding source sentence explicitly requires the representing formula in the quantified definition."
+      }
     },
     {
       "id": "OLPRV-002",
@@ -17153,6 +17165,179 @@
         "target_only": []
       },
       "limits": "No original-author approval claimed; the frozen formula remains unrepaired."
+    },
+    {
+      "id": "OLSTH-037",
+      "unit_id": "OLP-0609",
+      "classification": "wrong_set_in_negated_union_explanation",
+      "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+      "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+      "source_locator": "content/methods/proofs/proof-by-contradiction.tex:134",
+      "source_literal_line_1based": [
+        134
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/proof-by-contradiction.tex",
+      "target_sha256": "2337f7bf22f5bdf563641a18d7a3275fdd52956e86f2fe2fcdcea300980c50f1",
+      "target_line_1based": 137,
+      "target_literal_line_1based": [
+        137
+      ],
+      "disclosure_line_1based": 138,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د اتحاد پر ځاے چاپ شوې د «سي» نښه په نږدې پښتو يادونه څرګنده شوه؛ فورمول هماغسې ساتل شوے دے.",
+      "reason": "دعوه د A د A اتحاد B په فرعي سټ کېدو ده. د نفي په تشريح کښې سرچينه notin C ليکي، خو ورپسې بشپړ شرط notin A union B ليکي. دا د سټ ناسمه چاپي نښه ده. غړے x په نږدې نثر کښې معلوم دے؛ د چپ غړي د ورکېدو عيب نشته.",
+      "counterexample": "دعوه د A د A اتحاد B په فرعي سټ کېدو ده. د نفي په تشريح کښې سرچينه notin C ليکي، خو ورپسې بشپړ شرط notin A union B ليکي. دا د سټ ناسمه چاپي نښه ده. غړے x په نږدې نثر کښې معلوم دے؛ د چپ غړي د ورکېدو عيب نشته.",
+      "formula_policy": "All172 ordered active mathematical spans are exact; adjacent prose discloses the wrong set only.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B203-INDEPENDENT-RECONCILIATION",
+      "audit_artifacts": [
+        "B203_SOURCE_AUDIT.json",
+        "B203_CONTRADICTION_DRAFT_QA.json",
+        "B203_CONTRADICTION_SOURCE_PREAUDIT.md"
+      ],
+      "affected_segments": [
+        "OLP-0609-B014"
+      ],
+      "decision_timing": "independent reconciliation before first acceptance",
+      "upstream_reporting": "manager milestone after verified checkpoint; no direct upstream report",
+      "proof_gap_disclosed_unrepaired": false,
+      "finite_semantic_check_sha256": "ad164e20f7560e0bd7980ed0cf87bb062b4ff17500b52d43405407d644d73820",
+      "limits": "No author-approved correction claimed; prose shorthand is not a separate defect.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-040",
+      "unit_id": "OLP-0610",
+      "classification": "repeated_forward_inclusion_instead_of_reverse_inclusion",
+      "source_path": "content/methods/proofs/reading-proofs.tex",
+      "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+      "source_locator": "content/methods/proofs/reading-proofs.tex:85",
+      "source_literal_line_1based": [
+        85
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/reading-proofs.tex",
+      "target_sha256": "0f93dd4b8c60142e99cba86ad738fe8e3b12482fc9775ec855d48a45fcf4dd4d",
+      "target_line_1based": 91,
+      "target_literal_line_1based": [
+        91
+      ],
+      "disclosure_line_1based": 92,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "د دويم شمول پر ځاے تکرار شوے لومړے شمول په نږدې يادونه څرګند شو؛ اصلي فورمول ساتل شوے دے.",
+      "reason": "د برابرۍ د څرګند ثبوت په پيل کښې د «ب» چاپي شمول د «الف» شمول بيا تکراروي. د نږدې تشريح او لاندې د «ب» ثبوت له مخې مقابل شمول اړين دے. دا د ثبوت د سمې اصلي دعوې عيب نۀ، بلکې د شمول په چاپي بيان کښې ناسمه لاره ده.",
+      "counterexample": "د برابرۍ د څرګند ثبوت په پيل کښې د «ب» چاپي شمول د «الف» شمول بيا تکراروي. د نږدې تشريح او لاندې د «ب» ثبوت له مخې مقابل شمول اړين دے. دا د ثبوت د سمې اصلي دعوې عيب نۀ، بلکې د شمول په چاپي بيان کښې ناسمه لاره ده.",
+      "formula_policy": "All ordered mathematical spans retained exactly; only adjacent Pashto notices added.",
+      "affected_segments": [
+        "OLP-0610-B013"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "proof_gap_disclosed_unrepaired": false,
+      "stable_audit": "PS-B204-COMPLETE-PROOF-METHODS",
+      "decision_timing": "contemporaneous source/canon comparison before acceptance",
+      "audit_artifacts": [
+        "B204_SOURCE_AUDIT.json",
+        "B204_PROOF_COMPLETION_DRAFT_QA.json"
+      ],
+      "limits": "Source prose supplies subjects of shorthand membership; no missing-operand claim.",
+      "upstream_reporting": "manager milestone after verified checkpoint; no direct upstream report",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-041",
+      "unit_id": "OLP-0610",
+      "classification": "extra_closing_parenthesis_in_union_membership",
+      "source_path": "content/methods/proofs/reading-proofs.tex",
+      "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+      "source_locator": "content/methods/proofs/reading-proofs.tex:96",
+      "source_literal_line_1based": [
+        96
+      ],
+      "target_path": "ps-Arab-PK/content/methods/proofs/reading-proofs.tex",
+      "target_sha256": "0f93dd4b8c60142e99cba86ad738fe8e3b12482fc9775ec855d48a45fcf4dd4d",
+      "target_line_1based": 112,
+      "target_literal_line_1based": [
+        112
+      ],
+      "disclosure_line_1based": 112,
+      "mode": "adjacent-Pashto-disclosed-unrepaired-source-issue",
+      "translation_change": "په وروستي چاپي غړيتوبي عبارت کښې زيات تړونکے قوس په نږدې يادونه څرګند شو؛ فورمول هماغسې دے.",
+      "reason": "په وروستي غړيتوبي چاپي عبارت کښې تړونکے قوس شته، خو په هماغه رياضيکي عبارت کښې ورته پرانيستونکے قوس نشته. د نږدې شرط په معنا کښې اتحاد ته غړيتوب غوښتل کېږي. زيات چاپي قوس په نږدې يادونه څرګند شو؛ اصلي فورمول نۀ دے پټ بدل شوے.",
+      "counterexample": "په وروستي غړيتوبي چاپي عبارت کښې تړونکے قوس شته، خو په هماغه رياضيکي عبارت کښې ورته پرانيستونکے قوس نشته. د نږدې شرط په معنا کښې اتحاد ته غړيتوب غوښتل کېږي. زيات چاپي قوس په نږدې يادونه څرګند شو؛ اصلي فورمول نۀ دے پټ بدل شوے.",
+      "formula_policy": "All ordered mathematical spans retained exactly; only adjacent Pashto notices added.",
+      "affected_segments": [
+        "OLP-0610-B013"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "proof_gap_disclosed_unrepaired": false,
+      "stable_audit": "PS-B204-COMPLETE-PROOF-METHODS",
+      "decision_timing": "contemporaneous source/canon comparison before acceptance",
+      "audit_artifacts": [
+        "B204_SOURCE_AUDIT.json",
+        "B204_PROOF_COMPLETION_DRAFT_QA.json"
+      ],
+      "limits": "Source prose supplies subjects of shorthand membership; no missing-operand claim.",
+      "upstream_reporting": "manager milestone after verified checkpoint; no direct upstream report",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

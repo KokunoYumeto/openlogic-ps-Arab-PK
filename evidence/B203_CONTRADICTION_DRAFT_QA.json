@@ -1,0 +1,46 @@
+{
+  "schema": "ps-b203-proof-by-contradiction-draft-qa/2",
+  "status": "checked draft; not accepted",
+  "utc": "2026-09-30T02:10:48.640716+00:00",
+  "unit_id": "OLP-0609",
+  "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+  "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+  "target_sha256": "2337f7bf22f5bdf563641a18d7a3275fdd52956e86f2fe2fcdcea300980c50f1",
+  "source_bytes": 9908,
+  "target_bytes": 12583,
+  "paired_blocks": 22,
+  "changed_blocks": 17,
+  "ordered_math_spans": 172,
+  "source_correction_ids_pending_registration": [
+    "OLSTH-037"
+  ],
+  "rejected_draft_candidates": [
+    "OLSTH-035",
+    "OLSTH-036",
+    "OLSTH-038",
+    "OLSTH-039"
+  ],
+  "formula_policy": "All ordered active mathematics, identifiers, citations and structural commands remain exact. Prose supplies the membership subject in shorthand expressions. Only the wrong set C in the union proof is disclosed.",
+  "checks": {
+    "source_frozen": true,
+    "paired_blocks": true,
+    "ordered_math_equal": true,
+    "math_multiset_matches": true,
+    "identifiers_equal": true,
+    "optional_tags_equal": true,
+    "structural_macros_equal": true,
+    "comments_equal": true,
+    "environments_equal": true,
+    "noindent_count_equal": true,
+    "term_tokens_equal": true,
+    "newline_style_matches_source": true,
+    "nfc": true,
+    "no_replacement_character": true,
+    "source_disclosures_adjacent": true,
+    "false_membership_error_notices_removed": true,
+    "single_document_end": true,
+    "no_ordinary_english": true
+  },
+  "all_checks_pass": true,
+  "next_action": "Register exact source notes, terminology and block semantics before cumulative acceptance."
+}
