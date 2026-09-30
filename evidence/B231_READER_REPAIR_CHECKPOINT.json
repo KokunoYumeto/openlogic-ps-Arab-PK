@@ -1,0 +1,79 @@
+{
+  "schema": "ps-reader-repair-source-checkpoint/1",
+  "utc": "2026-09-30T18:00:38.564938+00:00",
+  "status": "PASS; current0334 source hashes and both modal boundaries; compile deferred to later substantive checkpoint",
+  "reader_units": 654,
+  "reader_tex_sha256": "f693424433447b6eab3c4866275128031d0e6d1cb9c2138ee8c573a016003d0c",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false,
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "4a4e455b12555179e40c8ab17fa35c1cfce8f91709807cbdf9dbec8cd6ba4d58",
+      "bytes": 60613
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62",
+      "bytes": 8283
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v103.tex",
+      "sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v104.tex",
+      "sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v105.tex",
+      "sha256": "1caa2604953eb56498fcfa33601991a63d1b0dddc7a88d18a208eb8202872b87",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v106.tex",
+      "sha256": "bd1113c81f47729f51c5b5e4dfcb6e75904f9aa9c3e84b2e9b4c4a066bf00695",
+      "bytes": 14907
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v107.tex",
+      "sha256": "195599874f4cd9b35226ae9ad48fd27ee18fff2937e299dc2815d5f001091496",
+      "bytes": 14920
+    }
+  ],
+  "historical_b211_receipt_sha256": "01c2f47d46b5ac14c4277ee07dafafed2990542317454c303f56deeb948d0f5f",
+  "previous_reader_checkpoint_sha256": "99cc1542fd2c994f910df8483bb3f95197e413e5c0e2feaa323a33b1707f1fbe",
+  "b215_evidence": [
+    {
+      "path": "evidence/B215_COMPILED_637_PENDING_QA.json",
+      "sha256": "95773b4ad81f691a802e4a0d09dc4d957d019bf7927ed06bf7451ba1ceacfac3"
+    },
+    {
+      "path": "evidence/B215_READER_REPAIR_PREFLIGHT_637.json",
+      "sha256": "ff52e56f83c605581de1d5a9b3510fc00b8c8dd1dbe844e99b76b347bc862265"
+    },
+    {
+      "path": "evidence/B215_RENDERED_READER_REPAIRS.json",
+      "sha256": "7b3c7950ea46ef90e0f158953fa944f7575176dd48dc332d5ce7d49ce4e64b31"
+    },
+    {
+      "path": "evidence/B215_TEX_SLOT_UNAVAILABLE_637.json",
+      "sha256": "ca4cc268ffaace19621cdaba956a9d470a79c6b4aeac4b18a2fba4063655de68"
+    }
+  ],
+  "preflight_sha256": "5967dc827192362a356ef8162c33bba77117b67f01a7d1618ccc43d96aa88a67",
+  "compiled_candidate_scope": 654,
+  "last_slot_result": "No acquisition at this checkpoint. Prior B230 guard terminal; modal repair visually verified on its own source snapshot.",
+  "policy": "No slot polling; one accumulated attempt at a later validated substantive checkpoint.",
+  "source_accepted_units": 657,
+  "reader_pending_unit_ids": [
+    "OLP-0655",
+    "OLP-0656",
+    "OLP-0657"
+  ],
+  "previous_compiled_candidate_pdf_sha256": "fccae466e0c501e57dd91e726f045188dce1382544e413746cf54ef41493e77c",
+  "previous_rendered_sample_sha256": "224756091d9fabb6e33db4d1c757cbdbe3223ba4d9f20dfe7ea9c3c26108c089"
+}

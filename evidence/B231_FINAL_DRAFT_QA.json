@@ -1,0 +1,46 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T17:47:48.525836+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0657",
+      "source_path": "content/proof-theory/cut-elimination/cut-elimination.tex",
+      "source_sha256": "0261a75807f9e5f82dc8101808293bc44fee583ab956634a97e8db2a80cc56cc",
+      "source_bytes": 318,
+      "target_sha256": "2cdc9f3f749ecae417b260e27ae79dd43ad80e3d5693f66452cad6e693da4875",
+      "target_bytes": 332,
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "math_matches_disclosed_existing_exception": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "all_five_original_imports_and_order_retained": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0334",
+      "source_path": "content/second-order-logic/metatheory/compactness.tex",
+      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+      "target_sha256_before": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
+      "target_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+      "target_sha256_after": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+      "target_bytes": 4450,
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    }
+  ],
+  "all_original_imports_math_and_exercises_preserved": true
+}

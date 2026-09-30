@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 656,
-    "structural_pass": 656,
+    "draft_units": 657,
+    "structural_pass": 657,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B230-TOPMOST-CUTS-EFFECTIVE-SOL",
+  "batch": "PS-B231-CUT-CHAPTER-FULL-COMPACTNESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11365,7 +11365,7 @@
       "unit_id": "OLP-0334",
       "path": "content/second-order-logic/metatheory/compactness.tex",
       "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
-      "translation_sha256": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
+      "translation_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -22487,6 +22487,35 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0657",
+      "path": "content/proof-theory/cut-elimination/cut-elimination.tex",
+      "source_sha256": "0261a75807f9e5f82dc8101808293bc44fee583ab956634a97e8db2a80cc56cc",
+      "translation_sha256": "2cdc9f3f749ecae417b260e27ae79dd43ad80e3d5693f66452cad6e693da4875",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -39859,6 +39888,48 @@
       "passage": "OLP-0333-B009",
       "reverse_paraphrase": "د بشپړې پېانو حساب قطعي‌والے حقيقت له استلزام سره تړي؛ د نهو اصولو عطف شرطي معتبرتيا ورکوي۔ د هر مدل صدق مراد دے۔ د ثابت، يو‌ځايه او دوه‌ځايه تابعو او دوه‌ځايه اړيکې پر ځاے تازه متغيرونه او ټول کمي کوونکي عين دي۔ د اغېزمنو ثبوتونو شمېرنه د رښتينو حسابي جملو د عددي کوډونو محاسبوي شمېرنه ورکوي؛ په Q کښې تمثيل ئې د ارزښتونو سټ تعريفوي، چې د تارسکي له قضيې سره ټکر دے۔ پخوانے د قوسې سمون خوندي دے۔",
       "finding": "د مقدماتو، پايلو، رتبې، لوړوالي، کمي کوونکو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0657",
+      "passage": "OLP-0657-B004",
+      "reverse_paraphrase": "د پرېکون لرې کولو باب کره سرليک ژباړل شو؛ د سريزې، تر ټولو پاسني او لوړې رتبې پرېکون، منځني سېکوېنټ او منځګړيتوب ټول پنځه واردول په عين اصلي ترتيب ساتل شوي دي۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B005",
+      "reverse_paraphrase": "سرليک د متناهي شاهد خاصيت نۀ شتون وايي؛ دا د کمپکتوالي د همدې تعريف نوم دے۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B006",
+      "reverse_paraphrase": "په متناهي ډول د صدق وړتيا د هر متناهي فرعي سټ د ګډ صدق وړتيا ده۔ د لومړۍ درجې د متناهي شاهد خاصيت په بشپړتيا او د اشتقاق د مقدماتو په متناهي‌والي معنايي استلزام ته هم‌ارزښته بڼه ورکوي۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B007",
+      "reverse_paraphrase": "د دويمې درجې بشپړه معنٰی داسې د جملو سټونه لري چې هر متناهي فرعي سټ ئې د صدق وړ، خو ټول سټ نۀ وي؛ د استلزام متناهي شاهد هم نۀ تضمينېږي۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B008",
+      "reverse_paraphrase": "د قضيې دعوه د بشپړې دويمې درجې معنٰی دپاره ده۔ د سرچينې لنډ پېژند د خپلې برخې په نوم‌ساحه کښې خوندي دے؛ د بلې برخې د ناپرېکړه‌وړتيا له پېژند سره نۀ ګډېږي۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B009",
+      "reverse_paraphrase": "Inf د يو پر يو خو نۀ پر ټولې ساحې تابع شتون وايي؛ دا د ډېډېکېنډ نامتناهيت دے۔ معمول ټاکنې اصل ئې له عادي نامتناهيت سره يو شان کوي؛ بې له دې فرض څخه عمومي معادل‌والے نۀ ادعا کېږي۔ د درې ټکو نښه ټولې بېلې جوړې وايي، د يوه شاهد تړاو خالي او رښتيا دے۔ د هر متناهي فرعي سټ اندازه‌يي غوښتنو ته له پاسه مثبت متناهي k غوره کېږي؛ د k غړيو مدل ئې صدق کوي۔ بشپړ سټ د محدودې ساحې له اندازې څخه يوه لوړه غوښتنه لري، نو د صدق وړ نۀ دے۔ OLSOL006 خوندي دے؛ ناسم پخوانے د درې ټکو سمون نۀ راژوندے کېږي۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "passage": "OLP-0334-B010",
+      "reverse_paraphrase": "د استلزام بڼې د ناکامۍ بشپړ تمرين هماغسې پاتې دے: ټول سټ جمله لازموي، خو هېڅ متناهي فرعي سټ ئې نۀ لازموي۔ نوے حل نۀ دے ورزيات شوے۔",
+      "finding": "د بشپړې معنٰی، د ګډ صدق وړتيا، ټاکنې فرض او د ټولو سرچينه‌يي مقدمو تازه پرتله وشوه۔"
     }
   ],
   "builds": [

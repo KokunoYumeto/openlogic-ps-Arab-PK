@@ -1,0 +1,36 @@
+{
+  "schema": "ps-current-workflow-repair/1",
+  "utc": "2026-09-30T18:02:59.381385+00:00",
+  "status": "PASS; access reporting derives actual runtime and accepted counts",
+  "accepted_units": 657,
+  "reader_units": 654,
+  "durable_instructions_sha256": "72447278cc69e8baedab7f4f617ae8cf9993b7e0e744b2dfe78f458ba5664f43",
+  "helper_files": [
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\runtime_provenance.py",
+      "sha256": "c3b146ba568cee9fa8ed8f402d533fb15035d173078ecaf6322bcb9cc5ab1f71"
+    },
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\accept_current_production_batch.py",
+      "sha256": "ae437308e11ebc2f5f323f9a8dcdc185ee696e7a45f264a9860f5de5adfc422a"
+    },
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\prepare_source_checkpoint.py",
+      "sha256": "1aced222f38b61859bedb3fa9bca4a981bef11a29016b8586006c95518bdc22a"
+    },
+    {
+      "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\preflight_current_reader.py",
+      "sha256": "3bdb731771006469429111cdc147b664d862864d78e063903f7732952587befc"
+    }
+  ],
+  "actual_runtime_model_gate": "nonempty actual model plus Ultra; no fixed model name; no settings mutation",
+  "historical_provenance_preserved": true,
+  "active_goal_tool_wording_changed": false,
+  "current_native_count_checker_passed": true,
+  "reader_scope_less_than_source_scope_explicit": true,
+  "source_inputs_or_accepted_receipts_mutated_by_this_repair": false,
+  "new_session_or_worker": false,
+  "new_reader_accepted": false,
+  "full_model_workflow_audit_completed": false,
+  "remaining_scope": "Continue whole Sol6 source audit and any remaining live workflow/configuration evidence; historical matcher filters are not runtime gates."
+}

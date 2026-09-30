@@ -1,0 +1,126 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T17:47:48.525836+00:00",
+  "status": "بشپړ OLP-0657 او د OLP-0334 بشپړه بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0657",
+      "source_path": "content/proof-theory/cut-elimination/cut-elimination.tex",
+      "source_sha256": "0261a75807f9e5f82dc8101808293bc44fee583ab956634a97e8db2a80cc56cc",
+      "source_bytes": 318,
+      "target_sha256": "2cdc9f3f749ecae417b260e27ae79dd43ad80e3d5693f66452cad6e693da4875",
+      "target_bytes": 332,
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4
+      ],
+      "checks": {
+        "math_matches_disclosed_existing_exception": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "all_five_original_imports_and_order_retained": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0334",
+      "source_path": "content/second-order-logic/metatheory/compactness.tex",
+      "source_sha256": "6f6e125a26a4b3c0303e675ccae12c1d25ff5aee9b38500e3335a145fb5bb267",
+      "target_sha256_before": "b9ad5b4b8e4151e194d0a92f24c8e66a91ab0402f7e7b6f17e7683131fcfd31d",
+      "target_sha256": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+      "target_sha256_after": "a030cea0f7e22b88ecef65b7865e7185c5f97b3aef4a07cee5be34df5d1268ca",
+      "target_bytes": 4450,
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د B231 له مسودې مخکې پنځه کره مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ علمي نثر، د معنا بيان او د جملې ترتيب لومړنے شاهد دے؛ د کمپکتوالي يا پرېکون عين تخصصي نوم نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے بالغ علمي نثر، د معنا بيان او د جملې ترتيب لومړنے شاهد دے؛ د کمپکتوالي يا پرېکون عين تخصصي نوم نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "د B231 له مسودې مخکې پنځه کره مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز شاهد بديهي اصل، د ثبوت د مقدمې او پايلې او د اثبات د ځانګړي سياق نقش ملاتړ کوي؛ عين G3c پرېکون نۀ تصديقوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد بديهي اصل، د ثبوت د مقدمې او پايلې او د اثبات د ځانګړي سياق نقش ملاتړ کوي؛ عين G3c پرېکون نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "24",
+      "pdf_page_1based": 29,
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "actual_consultation": "د B231 له مسودې مخکې پنځه کره مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز شاهد هرې ګډې رښتينې مقدمې ته رښتينې پايله او د معنايي استلزام نقش ښيي؛ د دويمې درجې نۀ کمپکتوالے سرچينه ثابتوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد هرې ګډې رښتينې مقدمې ته رښتينې پايله او د معنايي استلزام نقش ښيي؛ د دويمې درجې نۀ کمپکتوالے سرچينه ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "33",
+      "pdf_page_1based": 38,
+      "page_image_sha256": "7956177f24560d6aabcd8dabb240b18b0c2f72d1eac3e13a9c0ac2654e07fa11",
+      "actual_consultation": "د B231 له مسودې مخکې پنځه کره مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز شاهد د ټولو ټاکنو استلزام او د يوې ګډې ټاکنې شتون سره بېلوي؛ د صدق وړتيا او استلزام توپير ورڅخه ساتل کېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د ټولو ټاکنو استلزام او د يوې ګډې ټاکنې شتون سره بېلوي؛ د صدق وړتيا او استلزام توپير ورڅخه ساتل کېږي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P192-DEDEKIND-FINITE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "192",
+      "pdf_page_1based": 203,
+      "page_image_sha256": "c83532df1dcb4602632b929578b3aa2f8ba988ed147151c536a6ef364bd2a89f",
+      "actual_consultation": "د B231 له مسودې مخکې پنځه کره مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز شاهد د معمول متناهيت او د ډېډېکېنډ متناهيت توپير او د ټاکنې بديهي اصل په وسيله ئې معادل‌والے په ښکاره بيانوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د معمول متناهيت او د ډېډېکېنډ متناهيت توپير او د ټاکنې بديهي اصل په وسيله ئې معادل‌والے په ښکاره بيانوي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+    "AF-NIAZMAN-P33-VALUATION-SATISFIABILITY",
+    "AF-BUKOVSKY-P192-DEDEKIND-FINITE"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [
+    "TERM-G3C-CUT-MEASURES-INVERSION",
+    "TERM-SOL-COMPACTNESS"
+  ],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [
+    "DEC-PS-0334-SEMANTIC-COMPACTNESS",
+    "DEC-PS-0334-DEDEKIND-CHOICE-SCOPE"
+  ],
+  "semantic_samples_added": 7,
+  "focused_qa_sha256": "33cd35c6e126220841c44bbb3e6593883205189d3e037eeb33718ba0899acffe",
+  "model_provenance_sha256": "3fac1319f8eef2bdb9a03ccd016a27de845b98e9668568f97541c9145380618f",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0334.json",
+  "related_reaudit_sha256": "ed9ba826d536a9ec89e3188d5c6fbe4e96ec04291245556e893f7f277e6d7ba1",
+  "unresolved": "۶۵ واحدونه، د تجربوي باب او برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۷۵ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۵۷ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ د بشپړ OLP-0658 منځګړيتوب اثبات او OLP-0335 بياکتنه دوام۔ د TeX نوے هڅه په بل طبيعي معتبر پړاو کښې؛ هېڅ اشغال د ژباړې خنډ نۀ دے۔"
+}
