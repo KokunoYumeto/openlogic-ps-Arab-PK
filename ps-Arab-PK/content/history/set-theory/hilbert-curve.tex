@@ -1,0 +1,103 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{his}{set}{hilbertcurve}
+
+\olsection{ضميمه: د هلبرټ ځای ډکوونکي منحني خطونه}
+
+په \olref[pathology]{sec} څپرکي کښې مو يادونه وکړه چې د کانتور ثبوت، چې خط او مربع عين يو هومره نقطې لري (\olref[his][set][cantorplane]{thm:cantorplane})، پيانو دې پوښتنې ته وهڅاوه چې آيا ځای ډکوونکے \emph{منحني خط} به موجود وي۔ هغه په 1890 کښې مثبت ځواب ترلاسه کړ۔ په دې برخه کښې به (په غيررسمي او لنډ وضاحتي ډول) وښيو چې د هلبرټ ځای ډکوونکے منحني خط څنګه جوړېږي، له يو ډېر وړوکي بدلون سره۔\footnote{د لا کره تشريح لپاره \cite{Rose2010} وګورئ۔ دا بدلون د لاندې منحني خطونو د سرو برخو زياتول دي۔ له دې سره د منحني خط پيوسته والے کتل لږ آسانه کېږي۔}
+
+بايد تابع $h$ د تابعو د يوې لړۍ $h_1$، $h_2$، $h_3$، \dots\@ د حد په توګه تعريف کړو۔ لومړے به يې جوړول بيان کړو۔ بيا به وښيو چې ځای ډکوي۔ بيا به وښيو چې منحني خط دے۔
+
+د $h$ د قيمتونو سټ به واحده مربع، $\unitsquare$، واخلو۔ د $h$ لومړنے تقريب، يعنې $h_1$، دا دے:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 40pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (20pt, 0)--(20pt, 20pt);
+	\draw[oldiagcolorC, thick] (60pt, 0)--(60pt, 20pt);		
+	\begin{scope}[xshift=20pt, yshift=20pt]
+	\draw [black, thick, l-system={Hilbert curve, step=40pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+د جوړښت د څارلو لپاره مو په مربع د $2 \times 2$ خانه‌جال ايښے دے۔ داسې يې تصور کولے شو چې منحني خط په لاندې کيڼې ربع کښې پيلېږي، پورته کيڼې ته ځي، بيا پورته ښۍ ته، او په پای کښې لاندې ښۍ ته۔ د جوړښت دويم پړاو، يعنې $h_2$، دا دے:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 20pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (0pt, 10pt)--(10pt, 10pt);
+	\draw[oldiagcolorC, thick] (70pt, 10pt)--(80pt, 10pt);
+	\draw[thick, oldiagcolorE] (10pt, 30pt)--(10pt, 50pt); 
+	\draw[thick, oldiagcolorE] (30pt, 50pt)--(50pt, 50pt); 
+	\draw[thick, oldiagcolorE] (70pt, 50pt)--(70pt, 30pt); \begin{scope}[xshift=10pt, yshift=30pt]
+	\draw [thick, rotate=270,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=10pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=50pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=70pt, yshift=10pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+بېل بېل رنګونه به د $h_2$ د جوړولو په تشريح کښې مرسته وکړي۔ لومړے د $h_1$ د غير !!{colorC} برخې په کوچنۍ کچه نقلونه د مربع په لاندې کيڼې، پورته کيڼې، پورته ښۍ او لاندې ښۍ برخو کښې ږدو؛ په شکل کښې په تور رنګ رسم شوي دي۔ بيا دا څلور شکلونه په !!{colorE} خطونو نښلوو۔ په پای کښې خپل شکل د مربع له پولې سره په !!{colorC} خطونو نښلوو۔
+
+اوس $h_3$ ته راځو۔ لکه چې $h_2$ د $h_1$ د غيرسرې برخې له څلورو نښلول شويو، په کوچنۍ کچه نقلونو جوړ شوے و، همداسې $h_3$ د $h_2$ د غيرسرې برخې له څلورو په کوچنۍ کچه نقلونو جوړېږي؛ په تور رنګ رسم شوي دي۔ بيا په !!{colorE} خطونو يو بل سره نښلول کېږي او په پای کښې د !!{colorC} خطونو په مرسته د مربع له پولې سره نښلول کېږي۔
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 10pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[thick, oldiagcolorC](5pt, 0pt)--(5pt, 5pt); 
+	\draw[thick, oldiagcolorC] (75pt, 0pt)--(75pt, 5pt); 
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt);
+	\draw[thick, oldiagcolorE] (5pt, 35pt)--(5pt, 45pt); 
+	\draw[thick, oldiagcolorE] (35pt, 45pt)--(45pt, 45pt); 
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt); \begin{scope}[xshift=5pt, yshift=35pt]
+	\draw [rotate=270, thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=5pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=45pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=75pt, yshift=5pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+اوس د $h_{n+1}$ د تعريف عمومي بڼه له $h_n$ څخه وينو۔ په پای کښې منحني خط $h$ \emph{پخپله} د دغو پرله‌پسې تابعو $h_1$، $h_2$، \dots\@ د نقطه په نقطه حد په پام کښې نيولو سره تعريفوو۔ يعنې، د هر $x \in \unitsquare$ لپاره:
+\begin{align*}
+	h(x) &= \lim_{n \rightarrow \infty} h_n(x)
+\end{align*}
+\emph{سرچينه‌يي يادونه OLSTH-051: په چاپي کرښه کښې د متغير د اخيستلو سټ مربع ښودل شوے، خو د دغو تابعو د تعريف ساحه واحد خط دے۔ دلته د خط هرې نقطې ته حد اخيستل مراد دي؛ اصلي چاپي ښودنه ساتل شوې او د ساحې دغه ځايي تېروتنه څرګنده شوې ده۔}
+اوس ښيو چې دا منحني خط ځای ډکوي۔ چې منحني خط $h_n$ رسموو، د $2^n \times 2^n$ خانه‌جال په $\unitsquare$ ږدو۔ د فيثاغورث د قضيې له مخې د هرې خانې د قطر اوږدوالے دا دے:
+\[
+\sqrt{\left(\nicefrac{1}{2^{n}}\right)^2+\left(\nicefrac{1}{2^{n}}\right)^2} = 2^{(\frac{1}{2}-n)}
+\]
+او ښکاره ده چې $h_n$ له هرې خانې تېرېږي۔ نو په $\unitsquare$ کښې هره نقطه \emph{تر ډېره} $2^{(\frac{1}{2}-n)}$ فاصله د $h_n$ له کومې نقطې څخه لري۔ اوس $h$ د تابعو $h_1$، $h_2$، $h_3$، \dots\@ د حد په توګه تعريف شوے دے۔ نو له $h$ څخه د هرې نقطې تر ټولو لويه فاصله په دې ډول راکول کېږي:
+\[
+\lim_{n \rightarrow \infty} 2^{(\frac{1}{2}-n)} = 0.
+\]
+يعنې په $\unitsquare$ کښې هره نقطه $0$ فاصله له~$h$ څخه لري۔ په نورو ټکو، د $\unitsquare$ هره نقطه \emph{پر} منحني خط پرته ده۔ نو $h$ ځای ډکوي!{}
+\emph{سرچينه‌يي يادونه OLSTH-052: يوازې نقطه په نقطه حد د پړاوونو د تصويرونو دغه فاصله د وروستي تصوير فاصله نۀ ګرځوي۔ د ټاکلي جوړښت لپاره د پارامترونو يو شان سازګار کنټرول يا يوشان تقارب، او د وروستي تصوير تړلے والے، هم توجيه غواړي۔ د هلبرټ د منحني خط سمه قضيه نۀ ردېږي؛ دا د سرچينې په ښکاره غيررسمي استدلال کښې پاتې اثباتي ګام دے۔}
+
+دا ښودل پاتې دي چې $h$ په رښتيا يو \emph{منحني خط} دے۔ د دې لپاره بايد دغه مفهوم تعريف کړو۔ نوے تعريف پر هغه تعريف ولاړ دے چې ژورډان په 1887 کښې ورکړے و، يعنې د لومړي ځای ډکوونکي منحني خط له وړاندې کولو څخه يوازې څو کاله مخکې:
+
+\begin{defn}
+منحني خط له $\unitline$ څخه $\Real^2$ ته يو پيوسته تصوير دے۔
+\end{defn}
+
+دا نسبتاً بداهتي دے: په بداهتي تصور کښې منحني خط يو «نرم» تصوير دے چې يو معياري خط پر مستوي $\Real^2$ تصويروي۔ زموږ تابع $h$ په رښتيا له $\unitline$ څخه $\Real^2$ ته تصوير دے۔ نو يوازې دا ښودل پکار دي چې $h$ پيوسته دے۔ پيوستون مو په \olref[limits]{sec} کښې د $\epsilon$/$\delta$ نښه‌ليکنې په مرسته تعريف کړے و۔ په عامه ژبه غواړو لاندې خبره ثابته کړو: \emph{که نقطه $p$ په $\unitsquare$ کښې او د کره‌والي هره غوښتلې کچه $\epsilon$ وټاکئ، نو د $\unitline$ يوه پرانيستې برخه موندلے شو، داسې چې په هغې کښې د هر $x$ لپاره $h(x)$ د $\epsilon$ په فاصله کښې له $p$ څخه وي۔}
+\emph{سرچينه‌يي يادونه OLSTH-053: د هدف د هرې نقطې او هرې وړې دايرې لپاره د سرچينې د يوې پرانيستې برخې شتون د هرې ټاکلې ورودي نقطې پيوستون نۀ ثابتوي۔ د پيوستون شرط دا دے چې د تعريف د ساحې هره نقطه لومړے ثابته شي؛ بيا د هغې د خپل تصوير د هرې وړې ګاونډګۍ لپاره د هماغې ورودي نقطې شاوخوا ګاونډګۍ پکار ده چې ټول تصوير يې په هغې کښې وي۔ د چاپي وينا کميت ټاکنه تر دې شرط کمزورې ده؛ وروستے استدلال همدغه کمزورې وينا ښيي۔}
+
+نو فرض کړئ چې $p$ او $\epsilon$ مو ټاکلي دي۔ په عمل کښې دا داسې دايره رسمول دي چې مرکز يې $p$ او شعاع يې $\epsilon$ وي، په $\unitsquare$ باندې۔ (دايره کېدے شي د $\unitsquare$ له څنډې بهر هم ووځي، خو دا مهمه نۀ ده۔) اوس په ياد راوړئ چې د تابع $h_n$ په بيان کښې مو د $2^n \times 2^n$ خانه‌جال په $\unitsquare$ رسم کړے و۔ ښکاره ده چې $\epsilon$ څومره هم کوچنے وي، داسې $n$ شته چې د $2^n \times 2^n$ خانه‌جال، پر $\unitsquare$، کومه يوه خانه په بشپړه توګه د هغې دايرې دننه وي چې مرکز يې $p$ او شعاع يې $\epsilon$ ده۔
+
+نو هماغه $n$ واخلئ، او $I$ د $\unitline$ تر ټولو لويه پرانيستې برخه وټاکئ چې $h_n$ يې په بشپړه توګه اړوندې خانې ته تصويروي۔ (ښکاره ده چې $(a,b)$ شته، ځکه مخکې مو يادونه وکړه چې $h_n$ د $2^n\times 2^n$ خانه‌جال له هرې خانې تېرېږي۔) اوس دومره ښودل بس دي چې هر کله $x \in I$ وي، نقطه $h(x)$ هماغې خانې کښې وي۔ او د \emph{دې} د ښودلو لپاره دا ښودل بس دي چې $h_m(x)$ هماغې خانې کښې وي، د هر $m > n$ لپاره۔ خو دا ښکاره ده۔ که د $h_m$ چلند د $m > n$ لپاره په پام کښې ونيسو، وينو چې د واحدې وقفې عين «هماغه برخه» هماغې خانې ته تصويرېږي؛ يوازې يې په مخ په زياتېدونکې غځېدلې او کږلېچ لرونکې بڼه هغې سيمې ته تصويروو۔
+
+\end{document}

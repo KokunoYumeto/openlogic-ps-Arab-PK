@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 638,
-    "structural_pass": 638,
+    "draft_units": 642,
+    "structural_pass": 642,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B216-CANTOR-PLANE",
+  "batch": "PS-B217-HILBERT-REFERENCE",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -20567,6 +20567,129 @@
         "OLSTH-050"
       ],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "path": "content/history/set-theory/hilbert-curve.tex",
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "translation_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "unchanged_numeric_diagrams": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLSTH-051",
+        "OLSTH-052",
+        "OLSTH-053"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0640",
+      "path": "content/reference/reference.tex",
+      "source_sha256": "e1a1e9d585e0ff820b123b585730d046219b9d91f0579be373b01805bece581c",
+      "translation_sha256": "b47e909046753402cd6514df77bcdec316b5b8c48e6925dd6ef67379b9ca34d7",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0641",
+      "path": "content/reference/greek-alphabet/greek-alphabet.tex",
+      "source_sha256": "67556451d23cb84d04fa7cb22c5728e508e170cd6fc0ca3ded3e2fb018986822",
+      "translation_sha256": "950942bbbbfc59cd2a0e844a4e6e24d781df95fa656f04165d9ecf2e2955c61f",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "lll"
+      ],
+      "allowed_residual_english": [
+        "lll"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {
+        "\\psi": 1
+      },
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0642",
+      "path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+      "source_sha256": "1d7fdf353e1d5a1bc8ad310f7674e55e711e6979d7395558ba7f92a213d8550b",
+      "translation_sha256": "791fd49f73c686c4aed9c7b4a2df748e421898758f4f9fa700670b27baf8e683",
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "llll"
+      ],
+      "allowed_residual_english": [
+        "llll"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -36265,6 +36388,96 @@
       "passage": "OLP-0638-B012",
       "reverse_paraphrase": "Historical caveat explicitly says the theorem was unproved then, satisfactorily proved1897, and a different1877 proof avoided it.",
       "finding": "ټول بلاک له منجمد متن سره پرتله شو؛ د چاپي رياضي او ځايي قيد توپير څرګند دے۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B004",
+      "reverse_paraphrase": "Appendix title is Hilbert space-filling curves.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B005",
+      "reverse_paraphrase": "Cantor cardinality result motivated Peano1890; this section explicitly promises hand-wavy Hilbert construction with red-connector tweak, full Rose citation/footnote and caveat retained.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B006",
+      "reverse_paraphrase": "Defines function h as limit of h1,h2,h3,...; separates construction, space filling and curve-continuity tasks.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B007",
+      "reverse_paraphrase": "Range is unit square; all two stage diagrams exact. Firststage2x2 traversal bottom-left/top-left/top-right/bottom-right; next stage scaled nonred copies, green joins, red boundary joins; each ordering and color token retained.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B008",
+      "reverse_paraphrase": "Third figure exact; recurrence hn+1 fromhn, pointwise definition, full Pythagorean diagonal2^(1/2-n), stage distance and displayed zero limit retained.051 discloses input-domain typo,052 distinguishes stage-image proximity from unsupported limiting-image conclusion; no false rejection of Hilbert theorem.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B009",
+      "reverse_paraphrase": "Modern curve definition builds on Jordan1887, a few years before first space-filling curve; chronology retained.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B010",
+      "reverse_paraphrase": "Curve is a continuous map from unit interval to Real^2; no differentiability requirement introduced.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B011",
+      "reverse_paraphrase": "Informal smooth word follows formal continuity definition; unit interval-to-plane function, epsilon/delta reference and entire source output-neighborhood gloss retained.053 supplies missing fixed-input-point quantifier scope and limits later argument.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B012",
+      "reverse_paraphrase": "Arbitrary output point andepsilon, circle possibly crossing square edge, fine2^n grid and cell wholly inside circle retained.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "passage": "OLP-0639-B013",
+      "reverse_paraphrase": "Largest open intervalI mapping into chosen cell underhn, printed(a,b), refinement for everym>n and same input part under later stages retained. No unexplained assumption promoted to complete continuity proof.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0640",
+      "passage": "OLP-0640-B004",
+      "reverse_paraphrase": "Reference title names auxiliary reference information, not bibliography.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0640",
+      "passage": "OLP-0640-B005",
+      "reverse_paraphrase": "Editorial retains every category of alphabet/notation/definition/rule lists and their purpose as textbook appendices; both chapter imports and part hook remain exact.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0641",
+      "passage": "OLP-0641-B004",
+      "reverse_paraphrase": "Greek alphabet chapter title.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0641",
+      "passage": "OLP-0641-B005",
+      "reverse_paraphrase": "All24 Greek names transliterated individually; every exact lower/upper symbol pair and12 source rows retained. Epsilon and Upsilon explicitly distinct; mathematical glyphs never transliterated.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
+    },
+    {
+      "unit_id": "OLP-0642",
+      "passage": "OLP-0642-B004",
+      "reverse_paraphrase": "Fraktur alphabet title; full26-letter uppercase/lowercase table byte-identical, identity labels are Latin alphabet entries rather than untranslated prose.",
+      "finding": "بشپړ بلاک او د هرې نښې نقش پرتله شو؛ ژبني شاهد ته له خپل محدود نقش زياته دعوه نۀ ده ورکړل شوې۔"
     }
   ],
   "builds": [

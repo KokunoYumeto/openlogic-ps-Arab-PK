@@ -1,0 +1,87 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T09:58:54.241882+00:00",
+  "status": "complete independent source/canon review; justified retained text; no new reader acceptance",
+  "units": [
+    {
+      "unit_id": "OLP-0325",
+      "source_path": "content/second-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_sha256": "51a8beeec221c52bb2487535e4160c8c0ce89a5c5170d7715afeed0f75d48347",
+      "target_sha256_before": "61af78d49de9d1d26e19414ea51980dcd6f18281ff6717ffeb2e05aafb8d0392",
+      "target_sha256_after": "61af78d49de9d1d26e19414ea51980dcd6f18281ff6717ffeb2e05aafb8d0392",
+      "paired_blocks": 18,
+      "translated_blocks_reviewed": 13,
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "imports_equal": true,
+        "comments_equal": true,
+        "term_tokens_equal": true,
+        "environment_order_equal": true,
+        "exact_contextual_math_permutations_verified": true,
+        "source_target_unchanged": true
+      },
+      "reviewed_math_clause_permutations": {
+        "13": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "permutation_reason": "In0325B013 the language identifier precedes its formula-set identifier in Pashto. Both roles remain explicit; the second occurrence of the language marker remains at its original clause position."
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only own runtime; no settings changed"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "Exact pages2 and109 freshly visually read; page90 actually consulted in the preceding bounded review and reused only for its predicate role.",
+      "evidence_limit": "پاکستاني بالغ نثر کښې د معنٰی پوهنې او نحو توپير؛ د دويمې درجې بشپړه معنايي نظريه يا د متغيرونو تعويض نۀ ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "90",
+      "pdf_page_1based": 95,
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "actual_consultation": "Exact pages2 and109 freshly visually read; page90 actually consulted in the preceding bounded review and reused only for its predicate role.",
+      "evidence_limit": "افغان سيمه‌ييز شاهد پرانيستې جمله له رښتيا/دروغ جملې څخه بېلوي او محمول نوموي؛ د دويمې درجې کميت ټاکنې عين معيار نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P109-RELATION",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "109",
+      "pdf_page_1based": 114,
+      "page_image_sha256": "53be16c240bf8d4bd2f2122d95374f6bd039938d7f38cc81ba8c17b6f4c70b25",
+      "actual_consultation": "Exact pages2 and109 freshly visually read; page90 actually consulted in the preceding bounded review and reused only for its predicate role.",
+      "evidence_limit": "افغان سيمه‌ييز تعريف k-ځايه محمول د ساحې د کارتيزي قوت په فرعي سټ تفسيروي؛ د لومړۍ درجې شاهد دے، د دويمې درجې معياري کمیت ټاکنې ثبوت نۀ دے۔"
+    }
+  ],
+  "segment_entries_added": 13,
+  "new_source_correction_ids": [],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0325.jsonl",
+  "whole_unit_segment_snapshot_sha256": "295cf931ecc6e1e856ecfe6396d26e0ffb7d3ef90d40d49e3b07d538e6b6f406",
+  "interpretive_limits": "Whole syntax unit covers all vocabulary, arity/index families, metavariable levels, term and formula formation, and four quantified-function/predicate clauses. Source expressive comparison retained within its informal context; no closed-sentence equivalence theorem or rendered-reader acceptance claimed.",
+  "evidence_timing": "Fresh retrospective independent review; original model attribution preserved.",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "Continue general639–642 and sequential Sol6 whole-unit0326. Full722 reader and publication remain active."
+}

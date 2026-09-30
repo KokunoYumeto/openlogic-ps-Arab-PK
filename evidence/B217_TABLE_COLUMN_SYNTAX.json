@@ -1,0 +1,19 @@
+{
+  "schema": "ps-bounded-qa-syntax-exception/1",
+  "utc": "2026-09-30T10:06:41.257494+00:00",
+  "status": "scoped correction of prose detector; no target/source changes",
+  "exceptions": [
+    {
+      "unit_id": "OLP-0641",
+      "literal": "lll",
+      "source_syntax": "\\begin{tabular}{lll@{\\qquad}lll}"
+    },
+    {
+      "unit_id": "OLP-0642",
+      "literal": "llll",
+      "source_syntax": "\\begin{tabular}{llll@{\\qquad}llll}"
+    }
+  ],
+  "reason": "These exact unchanged l-column declarations are TeX syntax, not untranslated ordinary words. No other residual words are allowed.",
+  "translation_unaltered": true
+}

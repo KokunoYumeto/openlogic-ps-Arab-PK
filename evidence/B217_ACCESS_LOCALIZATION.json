@@ -1,0 +1,51 @@
+{
+  "schema": "ps-access-localization/1",
+  "utc": "2026-09-30T10:19:33.051297+00:00",
+  "status": "PASS; localized current642 coverage, three source notes, actual model and15/284 review count",
+  "accepted_units": 642,
+  "whole_sol6_reviews": 15,
+  "whole_sol6_pending": 284,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "current_reader_recipe": {
+    "through_unit": 642,
+    "preamble": "tools/cumulative-reader-preamble-v106.tex",
+    "passes": 4,
+    "bibtex": true
+  },
+  "localized_files": [
+    {
+      "path": "README.md",
+      "sha256": "f31c96ad5ea98f514493f1e56bf99571709f91ae60a4f1b969156e0b4302c1a6"
+    },
+    {
+      "path": "README.ps-Arab-PK.md",
+      "sha256": "f31c96ad5ea98f514493f1e56bf99571709f91ae60a4f1b969156e0b4302c1a6"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "c65d78fbc063b2fbd5e56bbae89b632c69a280beea46d062fe249f5f80544ab2"
+    },
+    {
+      "path": "EXPERT_REVIEW.md",
+      "sha256": "6314b08132fbc5a694ed700b89cfe152574495ef08b0bff513b1d9f271849544"
+    },
+    {
+      "path": "EXPERT_REVIEW.ps-Arab-PK.md",
+      "sha256": "7bd1254fd628dfc5aedac7db537f404863b69ead06372c2d9f4d953f7c387cdd"
+    },
+    {
+      "path": "SOURCE_CORRECTIONS.md",
+      "sha256": "66569d27fb003b0cc5285b2bed65ea06076c9396d1a3b850eed3b50ce7fa178b"
+    },
+    {
+      "path": "evidence/SOL6_REAUDIT_STATUS.ps-Arab-PK.md",
+      "sha256": "658db31db893066a45b075f73faec2a4dd15199c0d161785c1208830c3821970"
+    }
+  ],
+  "public_prose_count_repair": "Previous14-reviewed/284-pending clause was arithmetically wrong. Current freshly reviewed15 plus284 pending equals299. Previous immutable public commit retained.",
+  "older_choice_explanation_localization": "incomplete; complete localization of earlier English decision explanations remains required",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false
+}

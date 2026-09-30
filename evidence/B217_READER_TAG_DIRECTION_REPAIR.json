@@ -1,0 +1,25 @@
+{
+  "schema": "ps-reader-concrete-failure-repair/1",
+  "utc": "2026-09-30T10:14:26.146406+00:00",
+  "reader_units": 642,
+  "status": "terminal first-pass failure identified; exact display tag direction implementation repaired",
+  "failed_reader_tex_sha256": "b9581316d3e69ab680d307a142ff7437049ef7ea4ddc4152338bd7c83178c6a3",
+  "failed_guard_receipt_sha256": "582e2a5c70e0ff176eeeb69ee1f0ac3bc94125f0ebac8418275fefdd6903cb09",
+  "failed_log_sha256": "33209022efc2ff587e9e4c16b69087c2c46552ae0196644b3593ed3c3b5fdec2",
+  "failure": {
+    "source_unit": "OLP-0315",
+    "segment": "OLP-0315-B009",
+    "reader_line_1based": 38323,
+    "diagnostic": "Missing $ inserted at end of numbered equation.",
+    "cause": "Outer LR around tagform is entered from equation math mode. LR must sit inside the tag text hbox. bidi original tagform also inserts beginR in nonlatin text, causing the observed mirrored parentheses."
+  },
+  "primary_implementation": {
+    "amsmath": "maketag@@@ creates hbox with m@th normalfont; standard tagform supplies parentheses within that hbox.",
+    "bidi": "Installed amsmath-xetex-bidi.def line51 explicitly adds beginR/endR around parentheses when nonlatin.",
+    "amsmath_sha256": "4c0bfd7d67ea18214810a21244f8426da40d04af5bb90ed201b85cc5e211d321",
+    "bidi_definition_sha256": "67fc12d6a62effd1698e178509f1578f59606b7f124d596898581d69b24f8ef4"
+  },
+  "repair": "Keep maketag@@@ as outer hbox, isolate its unchanged parenthesized tag contents LTR inside it; source/target/formula/tag bytes unchanged.",
+  "preflight_count_repair": "The new Rose2010 source citation increases body keys from128 to129; finite note dependencies remain2, so selected keys131. The initial fixed130 assertion was wrong. All642 source/target hashes and all assets have been checked and match.",
+  "new_reader_accepted": false
+}

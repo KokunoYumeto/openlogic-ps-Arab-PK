@@ -1,0 +1,179 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T10:06:44.085638+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0642",
+  "draft_units": 642,
+  "remaining_unaccepted_units": 80,
+  "unit_ids": [
+    "OLP-0639",
+    "OLP-0640",
+    "OLP-0641",
+    "OLP-0642"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "020b6f5c39878db6c605de7c599baa31027d394a95d7a1826889d410b36d2588",
+  "corpus_qa_sha256": "54176725486fdb425771ce075fb750bae138b6314c1b684c88c71a379d66d373",
+  "canonical_replay_sha256": "b2144a05a46936c331373b815160b4df959c8355cabb86b2a7e4ea725c6b7d19",
+  "qa_sha256": "fab6e169d211b82c0861ac13e4ba7765c75c60d5c1db98080907f15021097d7f",
+  "canonical_builder_sha256": "240c70d87d35e7cba33879a94db955b33a1969defb9641e9ee260afb57b20215",
+  "units": [
+    {
+      "unit_id": "OLP-0639",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "source_bytes": 8390,
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "target_bytes": 12243,
+      "target_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "paired_blocks": 14,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "ordered_math_spans": 89,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-051",
+        "OLSTH-052",
+        "OLSTH-053"
+      ]
+    },
+    {
+      "unit_id": "OLP-0640",
+      "source_path": "content/reference/reference.tex",
+      "source_bytes": 406,
+      "source_sha256": "e1a1e9d585e0ff820b123b585730d046219b9d91f0579be373b01805bece581c",
+      "target_bytes": 546,
+      "target_sha256": "b47e909046753402cd6514df77bcdec316b5b8c48e6925dd6ef67379b9ca34d7",
+      "paired_blocks": 9,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0641",
+      "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+      "source_bytes": 979,
+      "source_sha256": "67556451d23cb84d04fa7cb22c5728e508e170cd6fc0ca3ded3e2fb018986822",
+      "target_bytes": 1095,
+      "target_sha256": "950942bbbbfc59cd2a0e844a4e6e24d781df95fa656f04165d9ecf2e2955c61f",
+      "paired_blocks": 6,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "ordered_math_spans": 48,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0642",
+      "source_path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+      "source_bytes": 1487,
+      "source_sha256": "1d7fdf353e1d5a1bc8ad310f7674e55e711e6979d7395558ba7f92a213d8550b",
+      "target_bytes": 1496,
+      "target_sha256": "791fd49f73c686c4aed9c7b4a2df748e421898758f4f9fa700670b27baf8e683",
+      "paired_blocks": 6,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 52,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "aligned_blocks": 9444,
+  "segment_canon_uses": 5965,
+  "semantic_samples": 2631,
+  "canonical_counts": {
+    "decisions": 812,
+    "occurrences": 30391,
+    "terminology_decisions": 323,
+    "source_correction_decisions": 470,
+    "priority_decisions": 455,
+    "reader_pages_available": 18244,
+    "reader_pages_pending": 12147
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0643 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0326; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

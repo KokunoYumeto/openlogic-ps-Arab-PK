@@ -18004,6 +18004,177 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLSTH-051",
+      "unit_id": "OLP-0639",
+      "classification": "pointwise_input_domain_typo",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "source_locator": "content/history/set-theory/hilbert-curve.tex:86",
+      "source_literal_line_1based": [
+        86
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/hilbert-curve.tex",
+      "target_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "target_line_1based": 50,
+      "target_literal_line_1based": [
+        50
+      ],
+      "disclosure_line_1based": 78,
+      "mode": "adjacent-Pashto-disclosed-source-typo-or-proof-gap",
+      "translation_change": "چاپي نښه ساتل شوې؛ نږدې پښتو يادونه د سم ورودي سټ مانا څرګندوي۔",
+      "reason": "چاپي متغير له مربع څخه اخيستل کېږي، خو همدغه تابعې د واحد خط پر نقطو تعريف شوي دي۔ د حد لپاره د واحد خط ورودي نقطه مراد ده۔",
+      "counterexample": "د مربع يوه عمومي جوړه د واحد خط د تابع ورودي عدد نۀ دے؛ په همدې اعلان شوي تعريف کښې د مربع ټولې نقطې د ورودي سټ په توګه نۀ شي کارېدے۔",
+      "formula_policy": "Original ordered spans, diagrams, labels, citations and tokens retained; prose disclosure only.",
+      "affected_segments": [
+        "OLP-0639-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B217-HILBERT-REFERENCE",
+      "decision_timing": "د بشپړې ژباړې پر وخت د منجمد متن او رښتيا لوستل شوي شاهد پرتله۔",
+      "audit_artifacts": [
+        "B217_SOURCE_AUDIT.json",
+        "B217_HILBERT_SOURCE_PREAUDIT.json",
+        "B217_HILBERT_REFERENCE_FINAL_DRAFT_QA.json"
+      ],
+      "limits": "سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔",
+      "upstream_reporting": "No upstream message; authorized milestone report only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-052",
+      "unit_id": "OLP-0639",
+      "classification": "informal_limit_image_argument_needs_additional_control",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "source_locator": "content/history/set-theory/hilbert-curve.tex:99",
+      "source_literal_line_1based": [
+        99
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/hilbert-curve.tex",
+      "target_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "target_line_1based": 50,
+      "target_literal_line_1based": [
+        50
+      ],
+      "disclosure_line_1based": 88,
+      "mode": "adjacent-Pashto-disclosed-source-typo-or-proof-gap",
+      "translation_change": "اصلي استدلال ساتل شوے؛ د غيررسمي ثبوت پاتې کنټرول په نږدې پښتو يادونه کښې څرګند دے، د سمې قضيې رد نۀ دے۔",
+      "reason": "د پړاوونو د تصويرونو نژدې والے يوازې د نقطه په نقطه تقارب له مخې د حدي تصوير نژدې والے نۀ ثابتوي۔ سازګار پارامترونه يا يوشان تقارب او تړلے حدي تصوير توجيه غواړي۔",
+      "counterexample": "د مربع يو پيوسته ډکوونکے تړلے سفر واخلو۔ په هر پړاو کښې ټول سفر په داسې لومړنۍ وقفه کښې بشپړ کړو چې اوږدوالے يې صفر ته ځي، او وروسته يې په پيل‌ټکي ثابت وساتو۔ هر پړاو مربع ډکوي، خو د هرې ثابتې ورودي نقطې حد هماغه ثابت پيل‌ټکے دے۔",
+      "formula_policy": "Original ordered spans, diagrams, labels, citations and tokens retained; prose disclosure only.",
+      "affected_segments": [
+        "OLP-0639-B008"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B217-HILBERT-REFERENCE",
+      "decision_timing": "د بشپړې ژباړې پر وخت د منجمد متن او رښتيا لوستل شوي شاهد پرتله۔",
+      "audit_artifacts": [
+        "B217_SOURCE_AUDIT.json",
+        "B217_HILBERT_SOURCE_PREAUDIT.json",
+        "B217_HILBERT_REFERENCE_FINAL_DRAFT_QA.json"
+      ],
+      "limits": "سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔",
+      "upstream_reporting": "No upstream message; authorized milestone report only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSTH-053",
+      "unit_id": "OLP-0639",
+      "classification": "continuity_gloss_quantifier_scope_too_weak",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "source_locator": "content/history/set-theory/hilbert-curve.tex:123",
+      "source_literal_line_1based": [
+        123
+      ],
+      "target_path": "ps-Arab-PK/content/history/set-theory/hilbert-curve.tex",
+      "target_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "target_line_1based": 96,
+      "target_literal_line_1based": [
+        96
+      ],
+      "disclosure_line_1based": 97,
+      "mode": "adjacent-Pashto-disclosed-source-typo-or-proof-gap",
+      "translation_change": "چاپي وينا ساتل شوې؛ د پيوستون د هرې ثابتې ورودي نقطې شرط څرګند شوے او د وروستي استدلال محدوده پايله بېله شوې ده۔",
+      "reason": "د هدف د هرې وړې دايرې لپاره د کومې ورودي وقفې شتون د هرې ثابتې ورودي نقطې پيوستون نۀ ثابتوي۔ شرط د هماغې ورودي نقطې او د هغې د خپل تصوير ګاونډګۍ غواړي۔",
+      "counterexample": "په لومړۍ نيمه وقفه کښې يو پيوسته ډکوونکے تړلے سفر، او په دويمه نيمه کښې يو بل ثابت قيمت واخلو۔ د هدف د هرې وړې دايرې لپاره د لومړۍ نيمې کومه ورودي پرانيستې برخه شته، خو تابع په منځنۍ نقطه کښې ناپيوسته ده۔",
+      "formula_policy": "Original ordered spans, diagrams, labels, citations and tokens retained; prose disclosure only.",
+      "affected_segments": [
+        "OLP-0639-B011"
+      ],
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B217-HILBERT-REFERENCE",
+      "decision_timing": "د بشپړې ژباړې پر وخت د منجمد متن او رښتيا لوستل شوي شاهد پرتله۔",
+      "audit_artifacts": [
+        "B217_SOURCE_AUDIT.json",
+        "B217_HILBERT_SOURCE_PREAUDIT.json",
+        "B217_HILBERT_REFERENCE_FINAL_DRAFT_QA.json"
+      ],
+      "limits": "سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔",
+      "upstream_reporting": "No upstream message; authorized milestone report only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

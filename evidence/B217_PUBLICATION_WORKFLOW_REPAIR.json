@@ -1,0 +1,15 @@
+{
+  "schema": "ps-publication-workflow-repair/1",
+  "utc": "2026-09-30T10:20:52.757343+00:00",
+  "status": "narrow source-code spacing recognition",
+  "allowed_new_units": [
+    "OLP-0639",
+    "OLP-0642"
+  ],
+  "conditions": [
+    "All three639 TikZ blocks must be exactly equal to source; each accepted trailing-space line must occur inside that exact code.",
+    "The sole642 Fraktur tabular block must be exactly equal to source; each accepted trailing-space line must occur inside it."
+  ],
+  "no_prose_exception": true,
+  "publisher_sha256": "a33da20169a72d62dff55522771a48dc5409b12525312e35b909f3345b1c6b42"
+}

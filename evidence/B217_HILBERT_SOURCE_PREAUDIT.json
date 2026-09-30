@@ -1,0 +1,52 @@
+{
+  "schema": "ps-hilbert-source-preaudit/1",
+  "utc": "2026-09-30T10:05:10.374726+00:00",
+  "unit_id": "OLP-0639",
+  "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+  "paired_source_blocks_read": 14,
+  "status": "complete local source/target/geometry comparison; three bounded issues registered",
+  "findings": [
+    {
+      "block": 8,
+      "source_line_1based": 86,
+      "classification": "pointwise_input_domain_typo",
+      "finding": "Displayed pointwise definition bindsx in unitsquare althoughhn andh map the unitline to the plane. Correct input domain is unitline. Keep printed formula and disclose locally."
+    },
+    {
+      "block": 8,
+      "source_line_1based": 99,
+      "classification": "informal_limit_image_argument_needs_additional_control",
+      "finding": "Pointwise convergence alone does not carry the stage images/distance bound to the limiting image. Gap in the explicitly hand-wavy proof; the Hilbert theorem is not rejected.",
+      "check": "LetQ:[0,1]->square be a continuous space-filling loop withQ(0)=Q(1)=o. Set hn(t)=Q(nt) for0<=t<=1/n ando otherwise. Eachhn is continuous and onto square, whilehn converges pointwise to constanto. Dense stage images alone do not imply a dense limiting image. Uniform convergence/consistent parameter control and closedness of the final image justify the intended conclusion."
+    },
+    {
+      "block": 11,
+      "source_line_1based": 121,
+      "classification": "continuity_gloss_quantifier_scope_too_weak",
+      "finding": "Existence of some open input interval inside each output ball does not establish continuity at every fixed input point. Need for each input point andepsilon a neighbourhood about that input mapping into its image ball.",
+      "check": "With the same continuous space-filling loopQ, set h(t)=Q(2t) on[0,1/2] andh(t)=r on(1/2,1], wherer differs fromo=Q(1). Every output ball containsh(I) for some nonempty openI in the first half, yet h is discontinuous at1/2."
+    }
+  ],
+  "geometry_policy": "Preserve all three supplied TikZ figures, rotations, scales, colors and explicit constants. Repeated drawing of an identical segment is harmless, not a mathematical error.",
+  "limits": "Source announces hand-wavy exposition. Missing general limit/continuity control is classified as proof gaps, preserving the correct theorem. Formal curve definition resolves informal smoothness; no duplicate warning solely for that word.",
+  "cited_rose_paper_access": "One bounded attempt to read the exact archived source citation failed; no independent reading or full verification is claimed.",
+  "next_action": "Dual corpus QA and canonical replay; accept642; continue remaining80 alternative units within one coherent full722 reader, without duplicate chapters.",
+  "registered_issue_ids": [
+    "OLSTH-051",
+    "OLSTH-052",
+    "OLSTH-053"
+  ],
+  "primary_mathematical_authority": {
+    "title": "Stephen M. Buckley, Space-filling curves and related functions",
+    "url": "https://archive.maths.nuim.ie/staff/sbuckley/Papers/peano.pdf",
+    "locator": "PDF page2, two-coordinate Peano construction",
+    "actually_read": "Paragraph at PDF lines53–62 explicitly gives continuous surjection of unit interval onto unit square.",
+    "evidence_limit": "Supports existence of a continuous surjection. The loop/compressed-time and discontinuous second-half examples below are our elementary inferences, not quotations or claims made by Buckley."
+  },
+  "inference_details": {
+    "loop": "Given continuous surjection P, set Q(t)=P(2t) on[0,1/2],Q(t)=P(2-2t) on[1/2,1]. Then Q is continuous and onto, with Q(0)=Q(1)=o=P(0).",
+    "pointwise_counterexample": "hn(t)=Q(nt) on[0,1/n],hn(t)=o otherwise. Values match at1/n; hn(0)=o. Every fixedt>0 eventually lies after1/n, so hn(t)->o; all stage images still equal the whole square.",
+    "weak_gloss_counterexample": "g(t)=Q(2t) on[0,1/2],g(t)=r on(1/2,1],r!=o. At1/2,g=o but right limit=r. For everyp in square andepsilon>0 choose an interior preimage in first half (the forward/reverse loop gives one even forp=o). Continuity within first half yields a nonempty openI withg(I) inside thep-ball. Thus weak source gloss holds despite discontinuity.",
+    "positive_sufficient_control": "Uniform convergence implies distance(y,h(image))<=distance(y,hn(image))+sup_t||hn(t)-h(t)||. With stage distance tending0 and closed limiting image this proves onto. The supplied pictures alone do not record all required parameter choices."
+  }
+}

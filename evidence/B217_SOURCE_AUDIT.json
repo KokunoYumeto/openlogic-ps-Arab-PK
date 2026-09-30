@@ -1,0 +1,215 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T10:05:10.374726+00:00",
+  "status": "complete source and actual canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0639",
+      "source_path": "content/history/set-theory/hilbert-curve.tex",
+      "source_bytes": 8390,
+      "source_sha256": "bda8e7a38876ea87b03d2564ab16b39e2b1d1d6ec75a73fae27ca1faa73ab832",
+      "target_bytes": 12243,
+      "target_sha256": "22b771bb5995179c9038acf16a111f9e4f4da790ad6bd95dfcee9faf8c1804bd",
+      "paired_blocks": 14,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "ordered_math_spans": 89,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-051",
+        "OLSTH-052",
+        "OLSTH-053"
+      ]
+    },
+    {
+      "unit_id": "OLP-0640",
+      "source_path": "content/reference/reference.tex",
+      "source_bytes": 406,
+      "source_sha256": "e1a1e9d585e0ff820b123b585730d046219b9d91f0579be373b01805bece581c",
+      "target_bytes": 546,
+      "target_sha256": "b47e909046753402cd6514df77bcdec316b5b8c48e6925dd6ef67379b9ca34d7",
+      "paired_blocks": 9,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0641",
+      "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+      "source_bytes": 979,
+      "source_sha256": "67556451d23cb84d04fa7cb22c5728e508e170cd6fc0ca3ded3e2fb018986822",
+      "target_bytes": 1095,
+      "target_sha256": "950942bbbbfc59cd2a0e844a4e6e24d781df95fa656f04165d9ecf2e2955c61f",
+      "paired_blocks": 6,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "ordered_math_spans": 48,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0642",
+      "source_path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+      "source_bytes": 1487,
+      "source_sha256": "1d7fdf353e1d5a1bc8ad310f7674e55e711e6979d7395558ba7f92a213d8550b",
+      "target_bytes": 1496,
+      "target_sha256": "791fd49f73c686c4aed9c7b4a2df748e421898758f4f9fa700670b27baf8e683",
+      "paired_blocks": 6,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 52,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "03a3c28c1fb3a5254ecdc8c6922708f5719c879dc25ab6bdfce98806399437f4",
+  "model_provenance_sha256": "e56a5e33f6ebe6c9d21acb6bc25108795fb10c85c71b06b8f68b1bb006910a15",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-BUKOVSKY-P66-SEQUENCE-LIMIT"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين هلبرټ، خانه‌جال يا يوناني نومونه نۀ تصديقوي۔",
+      "evidence_limit": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين هلبرټ، خانه‌جال يا يوناني نومونه نۀ تصديقوي۔",
+      "actual_consultation": "Exact page freshly visually read before this draft; native evidence restricted to the stated register/concept role."
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني علمي نثر او د نحو/معنا توپير؛ د الفباوو عين تخصصي نوملړ نۀ تصديقوي۔",
+      "evidence_limit": "پاکستاني علمي نثر او د نحو/معنا توپير؛ د الفباوو عين تخصصي نوملړ نۀ تصديقوي۔",
+      "actual_consultation": "Exact page freshly visually read before this draft; native evidence restricted to the stated register/concept role."
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P66-SEQUENCE-LIMIT",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "66",
+      "pdf_page_1based": 77,
+      "page_image_sha256": "82a75f156e7c1e259ce0c2a23bfd6e10ab701f3524186d08aba0dabb16b704ca",
+      "finding": "افغان سيمه‌ييز مخ د لړۍ د حد کميت ټاکنه او تقارب ښيي؛ د تابعو يوشان تقارب يا د هلبرټ ثبوت شاهد نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د لړۍ د حد کميت ټاکنه او تقارب ښيي؛ د تابعو يوشان تقارب يا د هلبرټ ثبوت شاهد نۀ دے۔",
+      "actual_consultation": "Exact page freshly visually read before this draft; native evidence restricted to the stated register/concept role."
+    }
+  ],
+  "new_term_ids": [
+    "TERM-POINTWISE-LIMIT",
+    "TERM-REFERENCE-ALPHABETS"
+  ],
+  "new_source_correction_ids": [
+    "OLSTH-051",
+    "OLSTH-052",
+    "OLSTH-053"
+  ],
+  "new_review_entry_ids": [
+    "TERM-POINTWISE-LIMIT",
+    "TERM-REFERENCE-ALPHABETS",
+    "DEC-OLSTH-051",
+    "DEC-OLSTH-052",
+    "DEC-OLSTH-053",
+    "DEC-B217-HILBERT-CONSTRUCTION",
+    "DEC-B217-REFERENCE-TABLES"
+  ],
+  "semantic_samples_added": 15,
+  "numeric_identity_check": true,
+  "three_exact_tikz_diagrams_preserved": true,
+  "greek_name_glyph_pairs": 24,
+  "fraktur_identity_letters": 26,
+  "external_source_preaudit_sha256": "a9b988d2da779690549e99863167ce58d70452b33950272315aab973a063a95b",
+  "unresolved": "پاتې ۸۰ بديل واحدونه په يوه بشپړ ۷۲۲ واحديز لوستونکي کښې بې له تکراري څپرکو ورګډول، EPUB، معلومات او د Sol6 بشپړه خپلواکه کتنه پاتې دي۔",
+  "next_executable_action": "Run dual642 corpus QA and exact canonical replay; accept642. Prepare repaired reader and make one bounded TeX attempt at this natural history/reference checkpoint. Continue643 and full Sol6 audit0326; full722 completion remains active."
+}

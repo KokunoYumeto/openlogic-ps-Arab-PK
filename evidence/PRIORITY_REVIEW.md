@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — priority expert review
 
-This focused view contains 452 high-priority decisions. It preserves every exact paired occurrence for those decisions.
+This focused view contains 455 high-priority decisions. It preserves every exact paired occurrence for those decisions.
 
 ## TERM-SET
 
@@ -36338,7 +36338,7 @@ This focused view contains 452 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-030339` | `OLP-0635` / `OLP-0635-B007` | د حدونو کره تعريف | `upstream/content/history/set-theory/limits.tex:16-20` | `ps-Arab-PK/content/history/set-theory/limits.tex:15-15` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030344` | `OLP-0635` / `OLP-0635-B007` | د حدونو کره تعريف | `upstream/content/history/set-theory/limits.tex:16-20` | `ps-Arab-PK/content/history/set-theory/limits.tex:15-15` | pending; no page guessed |
 
 ## DEC-OLSTH-048
 
@@ -36361,7 +36361,7 @@ This focused view contains 452 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-030340` | `OLP-0635` / `OLP-0635-B008` | د حدونو کره تعريف | `upstream/content/history/set-theory/limits.tex:22-45` | `ps-Arab-PK/content/history/set-theory/limits.tex:17-35` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030345` | `OLP-0635` / `OLP-0635-B008` | د حدونو کره تعريف | `upstream/content/history/set-theory/limits.tex:22-45` | `ps-Arab-PK/content/history/set-theory/limits.tex:17-35` | pending; no page guessed |
 
 ## DEC-OLSTH-049
 
@@ -36383,7 +36383,7 @@ This focused view contains 452 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-030354` | `OLP-0636` / `OLP-0636-B008` | غيرمعمولي جوړښتونه | `upstream/content/history/set-theory/pathologies.tex:52-96` | `ps-Arab-PK/content/history/set-theory/pathologies.tex:20-49` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030364` | `OLP-0636` / `OLP-0636-B008` | غيرمعمولي جوړښتونه | `upstream/content/history/set-theory/pathologies.tex:52-96` | `ps-Arab-PK/content/history/set-theory/pathologies.tex:20-49` | pending; no page guessed |
 
 ## DEC-OLSTH-050
 
@@ -36407,4 +36407,73 @@ This focused view contains 452 high-priority decisions. It preserves every exact
 
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
-| `ps-Arab-PK-OCC-030361` | `OLP-0638` / `OLP-0638-B008` | د خط او مستوي په اړه د کانتور کار | `upstream/content/history/set-theory/cantor-plane.tex:39-51` | `ps-Arab-PK/content/history/set-theory/cantor-plane.tex:30-36` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030371` | `OLP-0638` / `OLP-0638-B008` | د خط او مستوي په اړه د کانتور کار | `upstream/content/history/set-theory/cantor-plane.tex:39-51` | `ps-Arab-PK/content/history/set-theory/cantor-plane.tex:30-36` | pending; no page guessed |
+
+## DEC-OLSTH-051
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-051: pointwise_input_domain_typo
+- Intended sense: چاپي متغير له مربع څخه اخيستل کېږي، خو همدغه تابعې د واحد خط پر نقطو تعريف شوي دي۔ د حد لپاره د واحد خط ورودي نقطه مراد ده۔
+- Chosen Pashto: چاپي نښه ساتل شوې؛ نږدې پښتو يادونه د سم ورودي سټ مانا څرګندوي۔
+- Rationale: چاپي متغير له مربع څخه اخيستل کېږي، خو همدغه تابعې د واحد خط پر نقطو تعريف شوي دي۔ د حد لپاره د واحد خط ورودي نقطه مراد ده۔
+- Confidence reason: ټول متن، نښې، جدولونه او انځورونه پرتله شوي؛ عين پاکستانۍ تخصصي بڼې د کم شاهد قيد څرګند دے۔. سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔
+- Expert question: آيا ځايي تېروتنه يا پاتې اثباتي ګام د سمې قضيې له مانا بېل دے؟
+- Authorities:
+  - `OPENLOGIC-DEC-OLSTH-051-1` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — چاپي متغير له مربع څخه اخيستل کېږي، خو همدغه تابعې د واحد خط پر نقطو تعريف شوي دي۔ د حد لپاره د واحد خط ورودي نقطه مراد ده۔
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين هلبرټ، خانه‌جال يا يوناني نومونه نۀ تصديقوي۔
+  - `PK-IQRAM-P2-SEMANTICS` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني علمي نثر او د نحو/معنا توپير؛ د الفباوو عين تخصصي نوملړ نۀ تصديقوي۔
+  - `AF-BUKOVSKY-P66-SEQUENCE-LIMIT` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; Nangarhar University Science Faculty; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز مخ د لړۍ د حد کميت ټاکنه او تقارب ښيي؛ د تابعو يوشان تقارب يا د هلبرټ ثبوت شاهد نۀ دے۔
+- Alternatives:
+  - اصل فارمول پټ بدلول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د صحيحې قضيې رد د غيررسمي ګام له تشې راايستل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-030385` | `OLP-0639` / `OLP-0639-B008` | ضميمه: د هلبرټ ځای ډکوونکي منحني خطونه | `upstream/content/history/set-theory/hilbert-curve.tex:59-106` | `ps-Arab-PK/content/history/set-theory/hilbert-curve.tex:50-88` | pending; no page guessed |
+
+## DEC-OLSTH-052
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-052: informal_limit_image_argument_needs_additional_control
+- Intended sense: د پړاوونو د تصويرونو نژدې والے يوازې د نقطه په نقطه تقارب له مخې د حدي تصوير نژدې والے نۀ ثابتوي۔ سازګار پارامترونه يا يوشان تقارب او تړلے حدي تصوير توجيه غواړي۔
+- Chosen Pashto: اصلي استدلال ساتل شوے؛ د غيررسمي ثبوت پاتې کنټرول په نږدې پښتو يادونه کښې څرګند دے، د سمې قضيې رد نۀ دے۔
+- Rationale: د پړاوونو د تصويرونو نژدې والے يوازې د نقطه په نقطه تقارب له مخې د حدي تصوير نژدې والے نۀ ثابتوي۔ سازګار پارامترونه يا يوشان تقارب او تړلے حدي تصوير توجيه غواړي۔
+- Confidence reason: ټول متن، نښې، جدولونه او انځورونه پرتله شوي؛ عين پاکستانۍ تخصصي بڼې د کم شاهد قيد څرګند دے۔. سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔
+- Expert question: آيا ځايي تېروتنه يا پاتې اثباتي ګام د سمې قضيې له مانا بېل دے؟
+- Authorities:
+  - `OPENLOGIC-DEC-OLSTH-052-1` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د پړاوونو د تصويرونو نژدې والے يوازې د نقطه په نقطه تقارب له مخې د حدي تصوير نژدې والے نۀ ثابتوي۔ سازګار پارامترونه يا يوشان تقارب او تړلے حدي تصوير توجيه غواړي۔
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين هلبرټ، خانه‌جال يا يوناني نومونه نۀ تصديقوي۔
+  - `PK-IQRAM-P2-SEMANTICS` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني علمي نثر او د نحو/معنا توپير؛ د الفباوو عين تخصصي نوملړ نۀ تصديقوي۔
+  - `AF-BUKOVSKY-P66-SEQUENCE-LIMIT` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; Nangarhar University Science Faculty; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز مخ د لړۍ د حد کميت ټاکنه او تقارب ښيي؛ د تابعو يوشان تقارب يا د هلبرټ ثبوت شاهد نۀ دے۔
+- Alternatives:
+  - اصل فارمول پټ بدلول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د صحيحې قضيې رد د غيررسمي ګام له تشې راايستل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-030386` | `OLP-0639` / `OLP-0639-B008` | ضميمه: د هلبرټ ځای ډکوونکي منحني خطونه | `upstream/content/history/set-theory/hilbert-curve.tex:59-106` | `ps-Arab-PK/content/history/set-theory/hilbert-curve.tex:50-88` | pending; no page guessed |
+
+## DEC-OLSTH-053
+
+- Kind: `source_correction`; priority: `high`; confidence: `high`; provisional: `true`
+- Source term or construction: DEC-OLSTH-053: continuity_gloss_quantifier_scope_too_weak
+- Intended sense: د هدف د هرې وړې دايرې لپاره د کومې ورودي وقفې شتون د هرې ثابتې ورودي نقطې پيوستون نۀ ثابتوي۔ شرط د هماغې ورودي نقطې او د هغې د خپل تصوير ګاونډګۍ غواړي۔
+- Chosen Pashto: چاپي وينا ساتل شوې؛ د پيوستون د هرې ثابتې ورودي نقطې شرط څرګند شوے او د وروستي استدلال محدوده پايله بېله شوې ده۔
+- Rationale: د هدف د هرې وړې دايرې لپاره د کومې ورودي وقفې شتون د هرې ثابتې ورودي نقطې پيوستون نۀ ثابتوي۔ شرط د هماغې ورودي نقطې او د هغې د خپل تصوير ګاونډګۍ غواړي۔
+- Confidence reason: ټول متن، نښې، جدولونه او انځورونه پرتله شوي؛ عين پاکستانۍ تخصصي بڼې د کم شاهد قيد څرګند دے۔. سرچينه خپله غيررسمي تشريح اعلانوي؛ درې ځايي ستونزې څرګندې دي، د هلبرټ د سمې قضيې رد يا د Rose د نۀ لوستل شوې مقالې تصديق نۀ ادعا کېږي۔
+- Expert question: آيا ځايي تېروتنه يا پاتې اثباتي ګام د سمې قضيې له مانا بېل دے؟
+- Authorities:
+  - `OPENLOGIC-DEC-OLSTH-053-1` (checked_supports): Open Logic Project source revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 — د هدف د هرې وړې دايرې لپاره د کومې ورودي وقفې شتون د هرې ثابتې ورودي نقطې پيوستون نۀ ثابتوي۔ شرط د هماغې ورودي نقطې او د هغې د خپل تصوير ګاونډګۍ غواړي۔
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني بالغ علمي نثر، کښې او وروستنے ے؛ عين هلبرټ، خانه‌جال يا يوناني نومونه نۀ تصديقوي۔
+  - `PK-IQRAM-P2-SEMANTICS` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistan; Pashto Academy, University of Peshawar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني علمي نثر او د نحو/معنا توپير؛ د الفباوو عين تخصصي نوملړ نۀ تصديقوي۔
+  - `AF-BUKOVSKY-P66-SEQUENCE-LIMIT` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; Nangarhar University Science Faculty; regional comparator only. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز مخ د لړۍ د حد کميت ټاکنه او تقارب ښيي؛ د تابعو يوشان تقارب يا د هلبرټ ثبوت شاهد نۀ دے۔
+- Alternatives:
+  - اصل فارمول پټ بدلول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - د صحيحې قضيې رد د غيررسمي ګام له تشې راايستل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 1
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-030387` | `OLP-0639` / `OLP-0639-B011` | ضميمه: د هلبرټ ځای ډکوونکي منحني خطونه | `upstream/content/history/set-theory/hilbert-curve.tex:117-126` | `ps-Arab-PK/content/history/set-theory/hilbert-curve.tex:96-97` | pending; no page guessed |
