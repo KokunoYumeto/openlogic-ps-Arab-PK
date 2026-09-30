@@ -417,7 +417,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
     for row, body in prepared:
         if int(row['unit_id'][-4:]) <= 642:
             continue
-        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648'}:
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648', 'OLP-0649', 'OLP-0650'}:
             raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
         parent = Path(row['source_path']).parent
         chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
@@ -425,6 +425,13 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
             raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
         anchor = chapter_rows[-1][0]['unit_id']
         part, chapter, section, role = context(body)
+        if row['unit_id'] in {'OLP-0649', 'OLP-0650'}:
+            # Truth sets extend the existing relational-model semantics. The
+            # frozen lambda driver lists lists.tex as an optional import after
+            # truth values. Retain both complete sections in those contexts.
+            anchor = 'OLP-0500' if row['unit_id'] == 'OLP-0649' else 'OLP-0377'
+            if not any(r['unit_id'] == anchor and Path(r['source_path']).parent == parent for r, b in primary):
+                raise ValueError('truth-set/list section requires its translated source context')
         if row['unit_id'] in {'OLP-0647', 'OLP-0648'}:
             # Define C before the beta-function/recursion construction; place
             # the complete legacy representability argument after its modern
@@ -472,7 +479,9 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
         after_anchors = re.findall(r'\\(?:phantomsection\\label|label)\{(olpseg:[^{}]+)\}', body)
         if before_anchors != after_anchors:
             raise ValueError(f"alternate semantic anchors changed: {row['unit_id']}")
-        body = (r'\paragraph{د منجمدې سرچينې بشپړ بديل متن: \LR{' + row['unit_id'] + '}}\n') + body
+        heading = ('د منجمدې سرچينې بشپړه اړونده برخه' if row['unit_id'] in {'OLP-0649', 'OLP-0650'}
+                   else 'د منجمدې سرچينې بشپړ بديل متن')
+        body = (r'\paragraph{' + heading + r': \LR{' + row['unit_id'] + '}}\n') + body
         additions.setdefault(anchor, []).append((row, body))
         records.append({'unit_id': row['unit_id'], 'source_path': row['source_path'],
                         'placement_after_unit': anchor, 'chapter_directory': parent.as_posix(),
@@ -553,6 +562,53 @@ def upstream_label_index(rows: list[dict]) -> dict[str, dict]:
                         if not label.startswith("olpseg:"):
                             add(label, line)
     return index
+
+
+def resolve_tag_references(text: str, unit_id: str, selected_labels: set[str]) -> tuple[str, list[dict]]:
+    """Resolve active tag references against actual selected theorem labels.
+
+    The legacy maximal-consistency alternative predates the split of prv and
+    ppr. Its logical properties now live at these verified modern destinations.
+    Editable source identifiers remain unchanged. Resolving lists here also
+    avoids empty cleveref entries from the upstream double-comma accumulator.
+    """
+    migrated = {
+        'provability-land-left': 'provability-land-left',
+        'provability-land-right': 'provability-land-right',
+        'provability-lor-left': 'provability-lor',
+        'provability-lor-right': 'provability-lor',
+        'provability-mp': 'provability-lif-left',
+        'provability-lif': 'provability-lif-right',
+    }
+    records: list[dict] = []
+    pattern = re.compile(r'\\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}')
+
+    def replace(match: re.Match[str]) -> str:
+        targets: list[str] = []
+        for raw in match.group(1).split(','):
+            entry = re.fullmatch(r'\s*([A-Za-z][A-Za-z0-9-]*)/\{([^{}]+)\}\s*', raw)
+            if not entry:
+                raise ValueError(f'malformed tagged reference in {unit_id}: {raw}')
+            tag, original = entry.groups()
+            if tag not in ACTIVE_TAGS and tag not in INACTIVE_TAGS:
+                raise ValueError(f'unknown reference tag in {unit_id}: {tag}')
+            if tag not in ACTIVE_TAGS:
+                continue
+            target = original
+            legacy = re.fullmatch(r'fol:(seq|ntd):prv:prop:(provability-[a-z-]+)', original)
+            if unit_id == 'OLP-0644' and legacy and legacy[2] in migrated:
+                target = f'fol:{legacy[1]}:ppr:prop:{migrated[legacy[2]]}'
+            if target not in selected_labels:
+                raise ValueError(f'unresolved active tagged reference in {unit_id}: {original} -> {target}')
+            if target not in targets:
+                targets.append(target)
+            records.append({'unit_id': unit_id, 'tag': tag, 'source_label': original,
+                            'reader_label': target, 'legacy_label_migrated': target != original})
+        if not targets:
+            raise ValueError(f'empty active tagged reference in {unit_id}')
+        return r'\cref{' + ','.join(targets) + '}'
+
+    return pattern.sub(replace, text), records
 
 
 def render_external_references(
@@ -876,9 +932,12 @@ def main() -> None:
 
     rendered: list[str] = []
     external_counts: Counter = Counter()
+    tagged_reference_bindings: list[dict] = []
     for row, body in prepared:
         body, label_stats = resolve_label_conditionals(body, selected_labels)
         profile_stats.update(label_stats)
+        body, tag_bindings = resolve_tag_references(body, row['unit_id'], selected_labels)
+        tagged_reference_bindings.extend(tag_bindings)
         body, counts = render_external_references(
             body, selected_labels=selected_labels, upstream_labels=upstream_labels
         )
@@ -950,6 +1009,7 @@ def main() -> None:
         "chapter_driver_ids": chapter_ids,
         "chapter_count": len(chapter_ids),
         "alternate_integration": alternate_integration,
+        "tagged_reference_bindings": tagged_reference_bindings,
         "reader_unit_order": [row['unit_id'] for row, body in prepared],
         "semantic_segment_count": len(selected_segment_ids),
         "semantic_segment_anchor_encoding": "Direct page-only AUX writes via \\olpseganchor, safe inside amsmath and TikZ displays.",

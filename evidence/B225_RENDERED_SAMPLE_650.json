@@ -1,0 +1,74 @@
+{
+  "schema": "ps-reader-rendered-sample/1",
+  "utc": "2026-09-30T14:10:54.831871+00:00",
+  "status": "partial visual review; concrete item-reference presentation defect remains",
+  "reader_units": 650,
+  "pdf_pages": 803,
+  "pdf_sha256": "cbff9d120427375347e1638f2b3a00340200bc6b4a71995aa43ea65ea03d0a82",
+  "reader_tex_sha256": "275692b41f0ac7ff61cefe0f9d9e29183d7a2cbd7490f1628fdc599e1d2264bf",
+  "guard_receipt_sha256": "b7e7d35612426436527f3a918d2c8035074a4142a9700ba861da9e6cc37105ef",
+  "samples": [
+    {
+      "assembled_pdf_page": 201,
+      "printed_page": 200,
+      "image_sha256": "911939ec650738f1734358b219fec297bf1c7499bb2f5122b26390619eee3c3d",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 202,
+      "printed_page": 201,
+      "image_sha256": "630a86860ae0a3779b744c19126972ebcb9ad9e9f3db93da676aee6fb0d2c552",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 449,
+      "printed_page": 448,
+      "image_sha256": "d56f730d34e8c4366c15daf8aff36c1010f8a6f463a544b3eac505b4bda9b7f0",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 498,
+      "printed_page": 497,
+      "image_sha256": "51f1b32200b42e2070a1138b9742b6bafadb1bf49a2a5485c4a8774c6f7c7e68",
+      "actual_visual_inspection": true
+    },
+    {
+      "assembled_pdf_page": 638,
+      "printed_page": 637,
+      "image_sha256": "3ac55bb7e01afc2f52836574eb00d8c3a554fd0f6b1f6c995c1bd8f193ecac6e",
+      "actual_visual_inspection": true
+    }
+  ],
+  "verified_in_samples": [
+    "Corrected0329 nonempty/finite-endpoint Pashto notes visible with full Count proof",
+    "Complete650 right-fold list formula, Sum/Len and both exercises legible",
+    "Complete649 six truth-set clauses and corrected satisfaction relation/Pashto note visible",
+    "Legacy0644 references now resolve and show clickable theorem references without question marks"
+  ],
+  "remaining_concrete_defect": "Item-level land/lif references render English Item1/Item2 without the parent theorem number. Replace their reader links by verified parent theorem references plus localized item descriptions at next validated substantive checkpoint.",
+  "final_log_findings": [
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/sc' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/LatinModernRoman(0)/m/sc' undefined",
+    "Overfull \\hbox (3.1974pt too wide) in paragraph at lines 49146--49147",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 56121--56146",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 56650--56674",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined"
+  ],
+  "bibliography_findings": [
+    "Warning--empty publisher in Berkeley1734",
+    "Warning--can't use both author and editor fields in Frege1953",
+    "Warning--can't use both author and editor fields in EwaldSieg2013",
+    "Warning--empty publisher in Hume1740",
+    "Warning--empty journal in OConnorRobertson:RN",
+    "Warning--empty journal in Weston2003",
+    "warning$ -- 6",
+    "(There were 6 warnings)"
+  ],
+  "new_reader_accepted": false,
+  "full_reader_visual_review_completed": false,
+  "epub_accepted": false,
+  "next_action": "Publish current650 source checkpoint with explicit remaining presentation defect; repair parent-theorem/item labels while translating651/652. One later bounded build, no overlapping worker."
+}

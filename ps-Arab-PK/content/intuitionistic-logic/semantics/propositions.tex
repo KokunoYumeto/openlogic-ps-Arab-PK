@@ -1,0 +1,50 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: propositions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{pro}
+
+\olsection{بيانونه}
+
+ځينې وخت په !!a{relational model}~$\mModel{M}$ کښې د هغو نړۍو سټ ته نوم ورکول ګټور وي چې !!a{formula}~$!A$ پکې رښتيا وي۔ دغه سټ د $!A$ له خوا تعريف شوے \emph{بيان} بولو، او $\Prop{M}{!A}$ يې ليکو۔
+
+\begin{defn}
+تابعه $V$ په استقرايي ډول داسې تابعې $\Prop{M}{!A} \colon \Frm
+  \to \Pow{W}$ ته غځوو چې هر فارمول ته د هغه د رښتينوالي د نړۍو سټ ګوماري:
+  \begin{enumerate}
+  \item $\Prop{M}{\lfalse} = \emptyset$
+  \item $\Prop{M}{p} = V(p)$
+  \item $\Prop{M}{\lnot !B} = {}$
+    \[
+      \Setabs{w \in W}{\text{د هر داسې $w'$ دپاره چې $Rww'$ وي، $w'
+          \notin \Prop{M}{!B}$}}.
+    \]
+  \item $\Prop{M}{!B \land !C} = \Prop{M}{!B} \cap \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lor !C} = \Prop{M}{!B} \cup \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lif !C} = {}$
+    \[
+      \Setabs{w \in W}{\text{د هر داسې $w'$ دپاره چې $Rww'$ وي، که $w'
+          \in \Prop{M}{!B}$ وي، نو $w' \in \Prop{M}{!C}$}}.
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{prop}
+  \ollabel{prop:propositions-true}
+  $\mSat{M}{!A}[w]$ هغه او يوازې هغه وخت چې $w \in \Prop{M}{!A}$۔
+  \emph{OLCMP-101: په منجمد سرچينه کښې د دې قضيې په کيڼ لوري کښې د مدل د نوم ماکرو راغلے دے، چې د رښتينوالي اړيکه نۀ ښيي۔ دلته د همدغه مدل، فارمول او نړۍ دپاره د رښتينوالي ماکرو اېښودل شوے دے؛ د مخکيني تعريف سره سم د نړۍ د سټ غړيتوب همدا معنا لري۔}
+\end{prop}
+
+\begin{proof}
+  د تمرين په توګه پرېښودل شوے دے۔
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][pro]{prop:propositions-true} ثابت کړئ۔
+\end{prob}
+
+\end{document}

@@ -1,0 +1,715 @@
+{
+  "schema": "ps-source-semantic-preaudit/1",
+  "utc": "2026-09-30T13:44:45.723474+00:00",
+  "status": "PASS; one disclosed source macro repair, truthful provisional terminology and reference binding repair",
+  "primary_sources": {
+    "content/intuitionistic-logic/semantics/semantics.tex": "b3a317c7e49f5e50aa6d36811a805910d62b6163b5d96fc723ba9ff2af9e16f4",
+    "content/intuitionistic-logic/semantics/relational-models.tex": "ceab9f9d7f437b8b7180b065125b178bb5b3bdcbd15f9cb8900c516875173ae0",
+    "content/lambda-calculus/lambda-definability/lambda-definability.tex": "42df17a2d1c3ff9e2f53676b6bad10a9b10e7787f70d6371a2f60d0a22a78708",
+    "content/lambda-calculus/lambda-definability/truth-values.tex": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+    "content/intuitionistic-logic/semantics/propositions.tex": "20c8335bd58196ed260e7376435aa13c0b073441a29a4341305057fa56f7012a",
+    "content/lambda-calculus/lambda-definability/lists.tex": "65011d98e9f7484a6da8310227096fe1d72bad74d24db096dda5f0873c1f4c97"
+  },
+  "macro_definition_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+  "two_world_counterexample": {
+    "worlds": [
+      0,
+      1
+    ],
+    "order": "0<=1",
+    "Vp": [
+      1
+    ],
+    "neg_p": [],
+    "p_or_neg_p": [
+      1
+    ],
+    "p_implies_p": [
+      0,
+      1
+    ],
+    "neg_bottom": [
+      0,
+      1
+    ],
+    "finding": "Checks accessible-world quantifiers and refutes ordinary-complement reading; not a proof of all models."
+  },
+  "fold_role_check": {
+    "nested_result": "(a,(b,(c,z)))",
+    "sum_2_3_5": 10,
+    "length_2_3_5": 3,
+    "empty_seed": 0,
+    "finding": "Element-first and tail-result-second right-fold roles checked; source exercise solutions not inserted."
+  },
+  "source_accumulator_order_false_alarm_rejected": true,
+  "new_source_correction_ids": [
+    "OLCMP-101"
+  ],
+  "reference_binding_sources": {
+    "upstream/sty/open-logic-selective.sty": "85c9d7bfe98984922692681fbb16d784e99d33da6c1ead2e44b89a5048c93503",
+    "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex": "afb2c635bfea260b7ab2bc413c04f13ac8be807849baf90716dd54f89b29558a",
+    "upstream/content/first-order-logic/sequent-calculus/provability-propositional.tex": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c"
+  },
+  "reference_bindings": [
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ptn:sec",
+      "reader_label": "fol:seq:ptn:sec",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ptn:sec",
+      "reader_label": "fol:ntd:ptn:sec",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ptn:sec",
+      "reader_label": "fol:axd:ptn:sec",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ptn:sec",
+      "reader_label": "fol:tab:ptn:sec",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:explicit-inc",
+      "reader_label": "fol:seq:prv:prop:explicit-inc",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:explicit-inc",
+      "reader_label": "fol:ntd:prv:prop:explicit-inc",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:prv:prop:explicit-inc",
+      "reader_label": "fol:axd:prv:prop:explicit-inc",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:prv:prop:explicit-inc",
+      "reader_label": "fol:tab:prv:prop:explicit-inc",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-land",
+      "reader_label": "fol:seq:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-land",
+      "reader_label": "fol:ntd:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-land",
+      "reader_label": "fol:axd:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-land",
+      "reader_label": "fol:tab:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-land",
+      "reader_label": "fol:seq:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-land",
+      "reader_label": "fol:ntd:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-land",
+      "reader_label": "fol:axd:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-land",
+      "reader_label": "fol:tab:ppr:prop:provability-land",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lor",
+      "reader_label": "fol:seq:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lor",
+      "reader_label": "fol:ntd:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lor",
+      "reader_label": "fol:axd:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lor",
+      "reader_label": "fol:tab:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lor",
+      "reader_label": "fol:seq:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lor",
+      "reader_label": "fol:ntd:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lor",
+      "reader_label": "fol:axd:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lor",
+      "reader_label": "fol:tab:ppr:prop:provability-lor",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lif",
+      "reader_label": "fol:axd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lif",
+      "reader_label": "fol:tab:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lif",
+      "reader_label": "fol:axd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lif",
+      "reader_label": "fol:tab:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lif",
+      "reader_label": "fol:tab:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0129",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lif",
+      "reader_label": "fol:axd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfAX",
+      "source_label": "fol:axd:qpr:thm:strong-generalization",
+      "reader_label": "fol:axd:qpr:thm:strong-generalization",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfSC",
+      "source_label": "fol:seq:qpr:thm:strong-generalization",
+      "reader_label": "fol:seq:qpr:thm:strong-generalization",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfND",
+      "source_label": "fol:ntd:qpr:thm:strong-generalization",
+      "reader_label": "fol:ntd:qpr:thm:strong-generalization",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfTab",
+      "source_label": "fol:tab:qpr:thm:strong-generalization",
+      "reader_label": "fol:tab:qpr:thm:strong-generalization",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ppr:prop:provability-lif",
+      "reader_label": "fol:axd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ppr:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ppr:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ppr:prop:provability-lif",
+      "reader_label": "fol:tab:ppr:prop:provability-lif",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfAX",
+      "source_label": "fol:axd:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:axd:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfSC",
+      "source_label": "fol:seq:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:seq:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfND",
+      "source_label": "fol:ntd:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:ntd:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfTab",
+      "source_label": "fol:tab:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:tab:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfAX",
+      "source_label": "fol:axd:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:axd:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfSC",
+      "source_label": "fol:seq:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:seq:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfND",
+      "source_label": "fol:ntd:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:ntd:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0130",
+      "tag": "prfTab",
+      "source_label": "fol:tab:qpr:prop:provability-quantifiers",
+      "reader_label": "fol:tab:qpr:prop:provability-quantifiers",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfAX",
+      "source_label": "fol:axd:prv:prop:provability-exhaustive",
+      "reader_label": "fol:axd:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-exhaustive",
+      "reader_label": "fol:seq:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-exhaustive",
+      "reader_label": "fol:ntd:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfTab",
+      "source_label": "fol:tab:prv:prop:provability-exhaustive",
+      "reader_label": "fol:tab:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ptn:prop:proves-compact",
+      "reader_label": "fol:axd:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ptn:prop:proves-compact",
+      "reader_label": "fol:seq:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ptn:prop:proves-compact",
+      "reader_label": "fol:ntd:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0131",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ptn:prop:proves-compact",
+      "reader_label": "fol:tab:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0134",
+      "tag": "prfAX",
+      "source_label": "fol:axd:prv:prop:prov-incons",
+      "reader_label": "fol:axd:prv:prop:prov-incons",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0134",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:prov-incons",
+      "reader_label": "fol:seq:prv:prop:prov-incons",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0134",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:prov-incons",
+      "reader_label": "fol:ntd:prv:prop:prov-incons",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0134",
+      "tag": "prfTab",
+      "source_label": "fol:tab:prv:prop:prov-incons",
+      "reader_label": "fol:tab:prv:prop:prov-incons",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfAX",
+      "source_label": "fol:axd:sou:cor:consistency-soundness",
+      "reader_label": "fol:axd:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfSC",
+      "source_label": "fol:seq:sou:cor:consistency-soundness",
+      "reader_label": "fol:seq:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfND",
+      "source_label": "fol:ntd:sou:cor:consistency-soundness",
+      "reader_label": "fol:ntd:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfTab",
+      "source_label": "fol:tab:sou:cor:consistency-soundness",
+      "reader_label": "fol:tab:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfAX",
+      "source_label": "fol:axd:ptn:prop:proves-compact",
+      "reader_label": "fol:axd:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfSC",
+      "source_label": "fol:seq:ptn:prop:proves-compact",
+      "reader_label": "fol:seq:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfND",
+      "source_label": "fol:ntd:ptn:prop:proves-compact",
+      "reader_label": "fol:ntd:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0135",
+      "tag": "prfTab",
+      "source_label": "fol:tab:ptn:prop:proves-compact",
+      "reader_label": "fol:tab:ptn:prop:proves-compact",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-contr",
+      "reader_label": "fol:seq:prv:prop:provability-contr",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-contr",
+      "reader_label": "fol:ntd:prv:prop:provability-contr",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-exhaustive",
+      "reader_label": "fol:seq:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-exhaustive",
+      "reader_label": "fol:ntd:prv:prop:provability-exhaustive",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-land-left",
+      "reader_label": "fol:seq:ppr:prop:provability-land-left",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-land-left",
+      "reader_label": "fol:ntd:ppr:prop:provability-land-left",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-land-right",
+      "reader_label": "fol:seq:ppr:prop:provability-land-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-land-right",
+      "reader_label": "fol:ntd:ppr:prop:provability-land-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-lor-left",
+      "reader_label": "fol:seq:ppr:prop:provability-lor",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-lor-left",
+      "reader_label": "fol:ntd:ppr:prop:provability-lor",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-lor-right",
+      "reader_label": "fol:seq:ppr:prop:provability-lor",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-lor-right",
+      "reader_label": "fol:ntd:ppr:prop:provability-lor",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-mp",
+      "reader_label": "fol:seq:ppr:prop:provability-lif-left",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-mp",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif-left",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfSC",
+      "source_label": "fol:seq:prv:prop:provability-lif",
+      "reader_label": "fol:seq:ppr:prop:provability-lif-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0644",
+      "tag": "prfND",
+      "source_label": "fol:ntd:prv:prop:provability-lif",
+      "reader_label": "fol:ntd:ppr:prop:provability-lif-right",
+      "legacy_label_migrated": true
+    },
+    {
+      "unit_id": "OLP-0291",
+      "tag": "prfAX",
+      "source_label": "fol:axd:sou:cor:consistency-soundness",
+      "reader_label": "fol:axd:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0291",
+      "tag": "prfSC",
+      "source_label": "fol:seq:sou:cor:consistency-soundness",
+      "reader_label": "fol:seq:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0291",
+      "tag": "prfND",
+      "source_label": "fol:ntd:sou:cor:consistency-soundness",
+      "reader_label": "fol:ntd:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    },
+    {
+      "unit_id": "OLP-0291",
+      "tag": "prfTab",
+      "source_label": "fol:tab:sou:cor:consistency-soundness",
+      "reader_label": "fol:tab:sou:cor:consistency-soundness",
+      "legacy_label_migrated": false
+    }
+  ],
+  "reference_scope_note": "زړې حوالې د اوسني ppr برخې د عطف، فصل او شرط قضيې ته تړل شوې دي۔ د فصل دواړه لوري د هغې بشپړې قضيې دوه بېلې فقرې او د اثبات د فصل قاعده کاروي؛ د لومړۍ فقرې د نفي فرضونه د اعظمي سازګارۍ له مخکينيو خاصيتونو راځي۔ د مودوس پوننس حواله د شرط کيڼې فقرې ته، او له نفي مقدم يا تالي څخه شرط جوړول ښۍ فقرې ته ځي۔ تشې حوالې د دوه کامو د زاړه جوړښت له امله وې؛ نو فعالې کره نښې په يوه کامه بېلې شوې دي۔",
+  "new_reader_accepted": false
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T13:44:45.723474+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0649",
+      "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+      "source_sha256": "20c8335bd58196ed260e7376435aa13c0b073441a29a4341305057fa56f7012a",
+      "source_bytes": 1355,
+      "target_sha256": "635846cd6469a442cc93a3e0a6f71efc77a6671c0e1680f70d28bd429f83421b",
+      "target_bytes": 2105,
+      "paired_blocks": 11,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "ordered_math_exact_except_disclosed_macro": true,
+        "comments_equal": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "nfc": true,
+        "lf_target_bytes": true,
+        "no_replacement_character": true,
+        "all_inner_math_prose_localized": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLCMP-101"
+      ]
+    },
+    {
+      "unit_id": "OLP-0650",
+      "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+      "source_sha256": "65011d98e9f7484a6da8310227096fe1d72bad74d24db096dda5f0873c1f4c97",
+      "source_bytes": 1652,
+      "target_sha256": "86526006beefc77c049312f64711c16bb9c6bcd8accdad2bbc7c8d62b91298e1",
+      "target_bytes": 2122,
+      "paired_blocks": 10,
+      "changed_blocks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "ordered_math_exact_except_disclosed_macro": true,
+        "comments_equal": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "nfc": true,
+        "lf_target_bytes": true,
+        "no_replacement_character": true,
+        "all_inner_math_prose_localized": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "preaudit_sha256": "92e96f22bf94762451923d01a22414745765aa2803da5cd74a5bc4763495fd5c"
+}

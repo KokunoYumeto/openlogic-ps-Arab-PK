@@ -18842,6 +18842,104 @@
       },
       "previous_target_sha256": "09e6e1d06b7d78889f5ff1c694a173a8ce98f6eac413fa8f991c0f06fbf82c38",
       "newline_reconciliation_receipt": "B224_SOURCE_AUDIT.json"
+    },
+    {
+      "id": "OLCMP-101",
+      "unit_id": "OLP-0649",
+      "classification": "model_name_macro_used_instead_of_world_satisfaction_relation",
+      "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+      "source_sha256": "20c8335bd58196ed260e7376435aa13c0b073441a29a4341305057fa56f7012a",
+      "source_locator": "content/intuitionistic-logic/semantics/propositions.tex:41",
+      "target_path": "ps-Arab-PK/content/intuitionistic-logic/semantics/propositions.tex",
+      "target_sha256": "635846cd6469a442cc93a3e0a6f71efc77a6671c0e1680f70d28bd429f83421b",
+      "target_line_1based": 38,
+      "disclosure_line_1based": 39,
+      "mode": "replace-one-model-name-macro-with-world-satisfaction-plus-adjacent-Pashto-note",
+      "translation_change": "د مدل د نوم پر ځاے د همدغه مدل، فارمول او نړۍ د رښتينوالي اړيکه اېښودل شوې ده۔",
+      "reason": "د مدل د نوم ماکرو يوازې يو دليل اخلي او د رښتينوالي نښه نۀ چاپوي۔ د رښتينوالي ماکرو مدل، فارمول او نړۍ اخلي۔ د مخکيني تعريف او د شپږو سټي حالتونو له مخې د قضيې مطلوبه ادعا د نړۍ رښتينوالے او د سټ غړيتوب دے۔",
+      "formula_policy": "Only mModel replaced by mSat in the single proposition span; exact M,A,w arguments retained. Frozen English unchanged.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\mModel{M}{!A}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!A}[w]$"
+        ]
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B225-PROPOSITIONS",
+      "audit_artifacts": [
+        "B225_SOURCE_AUDIT.json",
+        "B225_SEMANTIC_PREAUDIT.json"
+      ],
+      "decision_timing": "B225 complete sources, definitions and three native pages read before translation registration.",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-102",
+      "unit_id": "OLP-0329",
+      "classification": "seed_enumeration_requires_nonempty_set_and_finite_proof_needs_total_endpoint",
+      "source_path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
+      "source_sha256": "26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8",
+      "source_locator": "content/second-order-logic/syntax-and-semantics/inf-count.tex:59",
+      "target_path": "ps-Arab-PK/content/second-order-logic/syntax-and-semantics/inf-count.tex",
+      "target_sha256": "a4bdc1f88660e52cdaa3d77d6e29de1441235305ee675fa91ca875d7215fcbd8",
+      "target_line_1based": 60,
+      "disclosure_line_1based": 79,
+      "mode": "explicit-nonempty-hypothesis-duplicate-removal-and-finite-endpoint-plus-Pashto-disclosures",
+      "translation_change": "د شمېر وړ سټ غيرتش شرط، د تکرارونو لرې کول او د متناهي لړ د وروستي غړي ځان ته تګ څرګند شول۔",
+      "reason": "د لومړني غړي د شتون دعوه تش سټ نۀ رانغاړي، که څۀ هم تش سټ د شمېر وړ دے۔ په متناهي شمېرنه کښې د وروستي غړي راتلونکے غړے نشته؛ د هغه ځان ته ګومارل تابعه تامه کوي۔ د سرچينې مخکينے توصيف همدا ځان ته تګ ښيي، خو د اثبات په ګام کښې پاتې دے۔",
+      "affected_segments": [
+        "OLP-0329-B009",
+        "OLP-0329-B011"
+      ],
+      "formula_policy": "All original math spans unchanged; prose qualifies successor equation before finite last element and specifies self-loop; adjacent Pashto notes disclose the repairs.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B225-SOL6-0329",
+      "audit_artifacts": [
+        "SOL6_REAUDIT_0329.json",
+        "B225_SOURCE_AUDIT.json"
+      ],
+      "decision_timing": "retrospective independent B225 source/canon review",
+      "upstream_reporting": "No upstream message; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

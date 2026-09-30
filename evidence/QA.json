@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 648,
-    "structural_pass": 648,
+    "draft_units": 650,
+    "structural_pass": 650,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B223-C-FUNCTIONS",
+  "batch": "PS-B225-PROPOSITIONS-LISTS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11192,7 +11192,7 @@
       "unit_id": "OLP-0329",
       "path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
       "source_sha256": "26b10cbda98d193ed98437efd26dd2b759a818f49656ff465962fd69452bd4f8",
-      "translation_sha256": "9b7e055e833f561811cad01e645be493dcaed50f8a9d2b06d7baa8c35a14557b",
+      "translation_sha256": "a4bdc1f88660e52cdaa3d77d6e29de1441235305ee675fa91ca875d7215fcbd8",
       "source_blocks": 14,
       "target_blocks": 14,
       "checks": {
@@ -11214,7 +11214,9 @@
       "allowed_residual_english": [],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [],
+      "source_correction_ids": [
+        "OLCMP-102"
+      ],
       "status": "structural-pass"
     },
     {
@@ -22146,6 +22148,75 @@
       "translation_sha256": "cfb54e3faaa187e30e41239bd2a6650756fd4d9aff67eedc4f3e3044e0f25bd3",
       "source_blocks": 7,
       "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "path": "content/intuitionistic-logic/semantics/propositions.tex",
+      "source_sha256": "20c8335bd58196ed260e7376435aa13c0b073441a29a4341305057fa56f7012a",
+      "translation_sha256": "635846cd6469a442cc93a3e0a6f71efc77a6671c0e1680f70d28bd429f83421b",
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-101"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\mModel{M}{!A}[w]$"
+        ],
+        "target_only": [
+          "$\\mSat{M}{!A}[w]$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0650",
+      "path": "content/lambda-calculus/lambda-definability/lists.tex",
+      "source_sha256": "65011d98e9f7484a6da8310227096fe1d72bad74d24db096dda5f0873c1f4c97",
+      "translation_sha256": "86526006beefc77c049312f64711c16bb9c6bcd8accdad2bbc7c8d62b91298e1",
+      "source_blocks": 10,
+      "target_blocks": 10,
       "checks": {
         "block_count": true,
         "environments": true,
@@ -38693,6 +38764,138 @@
       "passage": "OLP-0297-B008",
       "reverse_paraphrase": "The original forward Q-extension claim remains; the stronger-system converse and final equality of represented/computable functions require consistency and numeral separation. Classical explosion and a consistent one-point numeral-collapse model refute the unqualified statement.",
       "finding": "د همدې تکراري عامولو دقيقه تشه په دواړو ځايونو کښې څرګنده شوه؛ فارمولونه او د Q صحيحې قضيې ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B005",
+      "reverse_paraphrase": "Propositions title.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B006",
+      "reverse_paraphrase": "Here proposition denotes the SET OF WORLDS in the given relational model where A is true, not merely a truth-bearing sentence. Exact notation retained.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B007",
+      "reverse_paraphrase": "Valuation extends to formula-to-subset map. Bottom empty, atom V(p), negation excludes B from every accessible world, conjunction intersection, disjunction union, implication tests every accessible B-world for C. Negation is not ordinary set complement. All six clauses and inner text quantifiers retained.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B008",
+      "reverse_paraphrase": "Forcing A at world w is equivalent to membership in its truth set. One wrong model-name macro replaced by satisfaction macro, with an adjacent Pashto disclosure; all arguments unchanged.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B009",
+      "reverse_paraphrase": "Source assigns the proof as an exercise; localized explicitly as such, no invented omitted proof.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0649",
+      "passage": "OLP-0649-B010",
+      "reverse_paraphrase": "Assigned proof points to the exact unchanged proposition label.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B004",
+      "reverse_paraphrase": "Lists title and original lambda file context retained.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B005",
+      "reverse_paraphrase": "Full list encoding is a RIGHT fold: s takes the current element first and accumulated tail value second, and z is initial value. All nested parentheses, empty-list behavior and two supplied terms preserved. English prose does not itself mandate reversed argument order; no fabricated source defect.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B006",
+      "reverse_paraphrase": "Functional-programming comparison is specifically right fold, not left fold and not a lambda reduction-order claim.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B007",
+      "reverse_paraphrase": "Sum applies list to Add x a with zero seed. Len applies list to Add a 1 with zero seed. Both complete lambda formulas unchanged.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B008",
+      "reverse_paraphrase": "Sum operates on Church numerals, with element x and accumulated value a and initial Church zero. Result sum of all elements.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B009",
+      "reverse_paraphrase": "Len behavior is assigned as an exercise, not answered in the translation.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0650",
+      "passage": "OLP-0650-B010",
+      "reverse_paraphrase": "Reverse-list function is assigned as an exercise, not silently implemented; document end preserved.",
+      "finding": "د بشپړې سرچينې مانا، کمیت ټاکنه، د دليلونو ترتيب او ټول تمرينونه ساتل شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B005",
+      "reverse_paraphrase": "Title infinite and enumerable domains.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B006",
+      "reverse_paraphrase": "Dedekind infinitude is existence of injective nonsurjective self-map. First-order sentence needs its nonlogical f, whereas full second-order Inf existentially quantifies function u. Fin is its negation. Ordinary infinite/finite wording uses the usual choice background; no equivalence with arbitrary ZF Dedekind-finite sets is asserted here. Pure first-order infinitude requires a theory, and finitude is not elementary.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B007",
+      "reverse_paraphrase": "Inf iff the domain is infinite in this stated Dedekind/standard background sense.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B008",
+      "reverse_paraphrase": "Both directions assign u an injective self-map omitting a domain member; full function quantifier semantics is retained.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B009",
+      "reverse_paraphrase": "Enumeration may be finite, with no repeats. Seed-orbit equivalence requires nonempty M; empty countable set has no seed. Finite last element self-loops and repetitions are removed when reading orbit as a repetition-free enumeration. Count asserts that every subset containing the seed and closed under successor is the whole domain, not computable enumerability.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B010",
+      "reverse_paraphrase": "Count iff the nonempty structure domain is enumerable, finite allowed.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B011",
+      "reverse_paraphrase": "Forward Count proof now defines total self-map at finite last element explicitly as a self-loop. Arbitrarily chosen subset containing seed and closed under f contains all enumerated elements. Variable-assignment agreement outside X and both conditional directions retain exact mathematical spans.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B012",
+      "reverse_paraphrase": "Reverse Count proof takes orbit of the seed as a subset, proves it contains seed and is f-closed, then universally quantified subset clause forces the orbit to be the whole domain. Repetition-free enumeration follows by discarding duplicates; no computability assumption.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "passage": "OLP-0329-B013",
+      "reverse_paraphrase": "Inf and Count together describe denumerable domains. Different direct denumerability sentence and proof remain assigned as an exercise.",
+      "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
     }
   ],
   "builds": [
