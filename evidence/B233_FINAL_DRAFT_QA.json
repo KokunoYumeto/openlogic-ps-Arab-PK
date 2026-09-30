@@ -1,0 +1,58 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T20:02:45.036704+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0659",
+      "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+      "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+      "source_bytes": 5261,
+      "target_sha256": "40b27e936e783ca729d88b7ac2d050a405f07dfc4bcb6b680e2e15a63ead5e7b",
+      "target_bytes": 7377,
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "both_proof_trees_retained": true,
+        "literal_wrapped_source_token_preserved": true
+      },
+      "source_correction_ids": [
+        "OLCMP-123"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0336",
+      "source_path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "source_sha256": "304f9bcabacf05d66b95b6cdcc38a3fa4fe9b633248dfae7cd4247af62da5316",
+      "target_sha256_before": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "target_sha256": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "target_sha256_after": "39b8694750eed04f40189d41f1c749644e56c5498fe2968613d403ce03fa8d0d",
+      "target_bytes": 893,
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    }
+  ],
+  "both_proof_trees_and_wrapped_source_token_retained": true,
+  "sole_disclosed_diagram_change": "shared-context rule label CutCS; all premises/conclusions identical",
+  "whole0336_target_retained_unchanged": true
+}

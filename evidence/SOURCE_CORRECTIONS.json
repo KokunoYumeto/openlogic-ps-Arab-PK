@@ -19945,6 +19945,58 @@
       "exact_proposed_source_text": "$\\Lang L(\\Gamma) = \\Lang L(\\Gamma_1)\n\\cap \\Lang L(\\Gamma_2)$",
       "exact_proposed_source_patch": "--- a/content/proof-theory/cut-elimination/interpolation.tex\n+++ b/content/proof-theory/cut-elimination/interpolation.tex\n@@ -1,2 +1,2 @@\n-$\\Lang L(\\Gamma) \\subseteq \\Lang L(\\Gamma_1)\n+$\\Lang L(\\Gamma) = \\Lang L(\\Gamma_1)\n \\cap \\Lang L(\\Gamma_2)$",
       "independent_owner_verification": "Full source lemma, proof and context compared; necessary defect locally established. Current upstream and central duplicates not newly checked."
+    },
+    {
+      "id": "OLCMP-123",
+      "unit_id": "OLP-0659",
+      "classification": "shared-context-cut-diagram-labeled-as-ordinary-cut",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+      "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+      "source_locator": "content/proof-theory/cut-elimination/introduction.tex:84",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/introduction.tex",
+      "target_sha256": "40b27e936e783ca729d88b7ac2d050a405f07dfc4bcb6b680e2e15a63ead5e7b",
+      "target_line_1based": 81,
+      "disclosure_line_1based": 99,
+      "mode": "د قاعدې د نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "تر ټولو پاسني او د تر ټولو لوړې رتبې پرېکونونه لرې کول دواړه طريقې دي۔ د ګډ سياق پرېکون د رسم نښه په خپل کره نوم شوه؛ دواړه مقدمې عين سياق او پايله يو نقل لري۔ کمزوري کول او انقباض عام او ګډ سياق پرېکون يو بل ته تمثيلوي؛ د دواړو طريقو توپير ساتل شو۔",
+      "reason": "The first displayed ordinary Cut rule concatenates two contexts. The second display is explicitly introduced as CutCS and retains one shared context; its source RightLabel says Cut. Match the displayed single inference label to the defined shared-context rule; no theorem or premise changed.",
+      "exact_original_text": "\\RightLabel{\\Cut}",
+      "exact_proposed_source_text": "\\RightLabel{\\CutCS}",
+      "formula_policy": "يوازې د دويم رسم د قاعدې نښه بدله شوه؛ دواړه ټولې مقدمې او پايلې او لومړنے عام پرېکون عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B233-CUT-INTRODUCTION",
+      "audit_artifacts": [
+        "B233_SOURCE_AUDIT.json",
+        "B233_FINAL_DRAFT_QA.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې او اصلي شاهدانو له بياکتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

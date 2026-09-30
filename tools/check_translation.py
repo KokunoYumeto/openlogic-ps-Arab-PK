@@ -102,7 +102,8 @@ for uid,consult in plan['units'].items():
   tage=c.get('qa_tag_exception',{});expected_tag_source.update(tage.get('source_only',[]));expected_tag_target.update(tage.get('target_only',[]))
   te=c.get('qa_token_exception',{});expected_token_source.update(te.get('source_only',[]));expected_token_target.update(te.get('target_only',[]))
  macro_source_only=structural_macros(sa)-structural_macros(sb);macro_target_only=structural_macros(sb)-structural_macros(sa)
- source_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sa.replace('\r\n','\n')));target_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',sb.replace('\r\n','\n')))
+ token_text=lambda z:re.sub(r'!!\s+(?=[\^a{])','!!',z.replace('\r\n','\n'))
+ source_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',token_text(sa)));target_tokens=Counter(re.findall(r'!!\^?a?\{[^{}]+\}s?',token_text(sb)))
  checks=dict(block_count=len(aa)==len(bb),environments=re.findall(r'\\(?:begin|end)\{[^}]+\}',sa)==re.findall(r'\\(?:begin|end)\{[^}]+\}',sb),identifiers=identifier_source_only==expected_identifier_source and identifier_target_only==expected_identifier_target,optional_tags=tag_source_only==expected_tag_source and tag_target_only==expected_tag_target,structural_macros=macro_source_only==expected_macro_source and macro_target_only==expected_macro_target,math=source_only==expected_source and target_only==expected_target,tokens=source_tokens-target_tokens==expected_token_source and target_tokens-source_tokens==expected_token_target,nfc=unicodedata.normalize('NFC',sb)==sb,no_replacement_character='\ufffd' not in sb)
  checks['named_token_macros']=Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sa))==Counter(re.findall(r'\\usetoken\{[^{}]*\}\{[^{}]*\}',sb))
  # Case labels are reader-facing prose even inside a protected math display.
@@ -153,7 +154,7 @@ for uid,consult in plan['units'].items():
  residual=re.sub(r'\\(?:documentclass|olfileid|olimport|olasset|olref|Olref|oliflabeldef|begin|end|ollabel|label|cref|Cref|ref|cite\w*|printtoken|tagprob|setcounter|Article)(?:\[[^\]]*\])*(?:\{[^{}]*\})+','',residual)
  residual=re.sub(r'\\(?:iftag|tagitem|tagtrue|tagfalse)\{[^{}]*\}','',residual)
  residual=re.sub(r'\\begin\{(?:tagblock|tagenumerate)\}\{[^{}]*\}','',residual)
- residual=re.sub(r'!!\^?a?\{[^{}]+\}s?|\\[A-Za-z]+','',residual)
+ residual=re.sub(r'!!\^?a?\{[^{}]+\}s?|\\[A-Za-z]+','',token_text(residual))
  residual=re.sub(r'\[[+-]?[0-9.]+(?:em|ex|pt|cm|mm|in)\]','',residual)
  residual=re.sub(r'(?<![A-Za-z])[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:em|ex|pt|cm|mm|in)\b','',residual)
  residual=re.sub(r'\((?:i{1,3}|iv|v|vi{0,3}|ix|x)\)','',residual)

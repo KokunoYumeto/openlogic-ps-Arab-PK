@@ -40,6 +40,10 @@ base.INACTIVE_TAGS = INACTIVE_TAGS
 TOKENS = dict(base.TOKENS)
 TOKENS.update(
     {
+        "proof": ("ثبوت", "ثبوتونه", "ثبوت", "ثبوتونو"),
+        "provable": ("د ثابتولو وړ",) * 4,
+        "prove": ("ثابت",) * 4,
+        "height": ("لوړوالے", "لوړوالي", "لوړوالي", "لوړوالو"),
         # Frozen open-logic-config.sty:1672--1678: exact diagram colours and names.
         "colorC": ("سور",) * 4,
         "colorD": ("آبي",) * 4,
@@ -334,6 +338,9 @@ def remove_imports(text: str) -> str:
 
 
 def expand_tokens(text: str) -> str:
+    # TeX ignores the source's line break between !! and its article token.
+    # Normalize it in the generated reader, preserving the frozen/target files.
+    text = re.sub(r"!!\s+(?=[\^a{])", "!!", text)
     oblique = re.compile(r"\\psOblique\{!!(?P<cap>\^)?(?P<article>a)?\{(?P<key>[^{}]+)\}(?P<suffix>[sdx]?)\}")
 
     def replace_oblique(match: re.Match[str]) -> str:

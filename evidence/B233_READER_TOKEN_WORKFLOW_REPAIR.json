@@ -1,0 +1,77 @@
+{
+  "schema": "ps-reader-token-workflow-repair/1",
+  "utc": "2026-09-30T20:02:45.036704+00:00",
+  "status": "PASS; exact wrapped token and all five draft cut-chapter units expand",
+  "reason": "Frozen659 wraps !! and a{proof} across a line. TeX token whitespace is supported in both independent validators and the generated reader without source/target normalization. Reader also lacked four already-used proof-theory token mappings; precise existing terminology supplied.",
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "previous_sha256": "4a4e455b12555179e40c8ab17fa35c1cfce8f91709807cbdf9dbec8cd6ba4d58",
+      "sha256": "38f5ffee62467d821726bc1eb414414f12286874bdc671b6b00b65c6d6c34f08",
+      "bytes": 61079
+    },
+    {
+      "path": "tools/check_translation.py",
+      "previous_sha256": "80a4707664b1c50a71a494bfe152a806fadadadf4ef4ebc6be379d78e401da15",
+      "sha256": "225dd0b66074124b6120fbf75e372e68366d16b6df93ad9ef7cbcf61eb6330c2",
+      "bytes": 18614
+    }
+  ],
+  "private_validator_sha256": "e7af63f128bb956f0c76e89198f4918282e8282655192bef847aff74d1e4b8c3",
+  "frozen_and_target_token_bytes_retained": true,
+  "wrapped_and_regular_proof_expansion_equal": true,
+  "five_complete_units_expanded_without_residual_token_markers": true,
+  "new_token_mappings": [
+    "proof",
+    "provable",
+    "prove",
+    "height"
+  ],
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د B233 مسودې مخکې څلور کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ معنايي نثر لومړنے شاهد دے؛ د پرېکون ځانګړے نوم د سرچينې او ثبت له مخې موقتي دے۔",
+      "evidence_limit": "پاکستانے بالغ معنايي نثر لومړنے شاهد دے؛ د پرېکون ځانګړے نوم د سرچينې او ثبت له مخې موقتي دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "د B233 مسودې مخکې څلور کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د بديهي شېما، ثبوت او منطقي استدلال نقش ښيي؛ د عام او ګډ سياق پرېکون عين قواعد سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د بديهي شېما، ثبوت او منطقي استدلال نقش ښيي؛ د عام او ګډ سياق پرېکون عين قواعد سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P133-CANTOR-THEOREM",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "133",
+      "pdf_page_1based": 144,
+      "page_image_sha256": "46f820907244b9d469c59bb7b2c13ba339536f23d008e4c85a1a055a2f415b7d",
+      "actual_consultation": "د B233 مسودې مخکې څلور کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د سټ او د فرعي سټونو د سټ د اندازې توپير او د کانتور ثبوت ښيي؛ د نۀ بشپړ دويمې درجې باب د نامعلومو ثبوتونو تصديق نۀ دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د سټ او د فرعي سټونو د سټ د اندازې توپير او د کانتور ثبوت ښيي؛ د نۀ بشپړ دويمې درجې باب د نامعلومو ثبوتونو تصديق نۀ دے۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "77",
+      "pdf_page_1based": 88,
+      "page_image_sha256": "3d91d98e0273df13e0f37fbe48abd519f8072b0b0aae2c7bb7cadb8f875fea39",
+      "actual_consultation": "د B233 مسودې مخکې څلور کره اصلي مخونه بيا په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ دوه‌اړخيزه يو پر يو تابع، برابرې اندازې او د حقيقي وقفې بېلګې ښيي؛ د عين پاکستاني پيوستار نوم تصويب نۀ ادعا کېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ دوه‌اړخيزه يو پر يو تابع، برابرې اندازې او د حقيقي وقفې بېلګې ښيي؛ د عين پاکستاني پيوستار نوم تصويب نۀ ادعا کېږي۔"
+    }
+  ],
+  "no_new_teX_attempt": true
+}

@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 658,
-    "structural_pass": 658,
+    "draft_units": 659,
+    "structural_pass": 659,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B232-MAEHARA-SOL-LS-SOURCE-FIDELITY",
+  "batch": "PS-B233-CUT-INTRODUCTION-SOL-EDITORIAL",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -22559,6 +22559,50 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0659",
+      "path": "content/proof-theory/cut-elimination/introduction.tex",
+      "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+      "translation_sha256": "40b27e936e783ca729d88b7ac2d050a405f07dfc4bcb6b680e2e15a63ead5e7b",
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "LK"
+      ],
+      "allowed_residual_english": [
+        "LK"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-123"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -40237,6 +40281,66 @@
       "passage": "OLP-0334-B010",
       "reverse_paraphrase": "د استلزام بڼې اصلي تمرين عين او بې له اضافي حل څخه پاتې دے۔",
       "finding": "د سرچينې ټولې مقدمې، ژبې، ثابتونه، د ځانګړي متغير شرطونه، جهتونه او تمرينونه تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B005",
+      "reverse_paraphrase": "د باب د سريزې سرليک بشپړ ژباړل شو۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B006",
+      "reverse_paraphrase": "عام پرېکون دوه جلا سياقونه يوځاے کوي او عين پرېکون فارمول له دواړو مقابل اړخونو لرې کوي؛ لومړنے بشپړ رسم عين دے۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B007",
+      "reverse_paraphrase": "د جېنڅن اصلي قضيه د LK له ثبوتونو پرېکون لرې کوي؛ G1c او G3c خپله پرېکون نۀ لري، نو پوښتنه د اضافي پرېکون د منلو وړتيا ده۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B008",
+      "reverse_paraphrase": "د يوې مرستندويې قضيې او د هغې د کارولو د دوو ثبوتونو يوځاے کول د پرېکون نقش ښيي؛ د L او R ټول سېکوېنټونه عين دي۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B009",
+      "reverse_paraphrase": "د بشپړتيا نېغ ثبوت او له بديهياتي نظامه د پرېکون په وسيله انتقال بېلې طريقې دي؛ د پرېکون لرې کول له اضافي قاعدې پرته بشپړتيا ښيي۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B010",
+      "reverse_paraphrase": "د کرېګ منځګړيتوب او د هېربراند قضيه د پرېکون لرې کولو دوه اصلي استعمالونه دي۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B011",
+      "reverse_paraphrase": "ځايي د ثبوت بدلول ګام په ګام الګوريتم ورکوي؛ د منځګړي د شتون اثبات او له ثبوت څخه ئې رغنده محاسبه بېلوي۔ د سرچينې د proof ټوکن منځنے کرښه‌ماتېدل عين ساتل شوي دي۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0659",
+      "passage": "OLP-0659-B012",
+      "reverse_paraphrase": "تر ټولو پاسني او د تر ټولو لوړې رتبې پرېکونونه لرې کول دواړه طريقې دي۔ د ګډ سياق پرېکون د رسم نښه په خپل کره نوم شوه؛ دواړه مقدمې عين سياق او پايله يو نقل لري۔ کمزوري کول او انقباض عام او ګډ سياق پرېکون يو بل ته تمثيلوي؛ د دواړو طريقو توپير ساتل شو۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0336",
+      "passage": "OLP-0336-B004",
+      "reverse_paraphrase": "د دويمې درجې منطق او د سټونو د تيورۍ د باب نوم عين سرچينه‌يي موضوع ساتي۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0336",
+      "passage": "OLP-0336-B005",
+      "reverse_paraphrase": "د سرچينې اخطار وايي چې د فرعي سټونو سټونه او پيوستار کوډ کېږي؛ پايلې بيان شوې خو ثبوتونه نۀ دي ډک شوي، تمرينونه هم نشته او پخپله تعريفونه او پايلې ستونزې لرلے شي۔ د احتياط او د ناسم يا مبهم خبر د راپور بشپړ اخطار ساتل شوے، بې له نويو ثبوتونو يا نوي عيب جوړولو۔",
+      "finding": "د دوو استنتاجونو سياقونه، د لرې کولو دواړه طريقې، رغنده منځګړی او د اصل خپل اخطار تازه پرتله شول۔"
     }
   ],
   "builds": [
