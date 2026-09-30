@@ -1,0 +1,346 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T06:07:00.291985+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0629",
+      "source_path": "content/history/biographies/bertrand-russell.tex",
+      "source_bytes": 3294,
+      "source_sha256": "4b13fffaac861f87a7e36182296f5896a8be923bf21d19dfbcf1b0a7bb253bbd",
+      "target_bytes": 5590,
+      "target_sha256": "38a8c47b6211c284c1848d04eac3da119ae5a944a5b9cf7ff28c5d7a85e6b793",
+      "paired_blocks": 13,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-044"
+      ]
+    },
+    {
+      "unit_id": "OLP-0630",
+      "source_path": "content/history/biographies/alfred-tarski.tex",
+      "source_bytes": 2376,
+      "source_sha256": "216dca1713254d519d4f75b7f2f80cdf13dd614341b45631f6addefc26850688",
+      "target_bytes": 3502,
+      "target_sha256": "a1e83b19a469b0c6bbf9606b044ff6bc72c1fe942b0bf506b6cef0270accba83",
+      "paired_blocks": 11,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0631",
+      "source_path": "content/history/biographies/alan-turing.tex",
+      "source_bytes": 3617,
+      "source_sha256": "105de99d822a0dbb375d0d4bd8e3ed3847b7f77d1f1c4760f62cbcd0b7f2671b",
+      "target_bytes": 6402,
+      "target_sha256": "dc10b399c4cc16852998c86c8608aac2dbb054b1ca51b4d222a2d7901873ef8a",
+      "paired_blocks": 14,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": [
+        "OLSTH-045",
+        "OLSTH-046"
+      ]
+    },
+    {
+      "unit_id": "OLP-0632",
+      "source_path": "content/history/biographies/ernst-zermelo.tex",
+      "source_bytes": 2644,
+      "source_sha256": "2bf8bef1ebdfcadf3ae701be0416db71d1a24786269cec3b8e41a767f8499a41",
+      "target_bytes": 3972,
+      "target_sha256": "45a82cffb5f386fe591bc00cf4e053aabaf1fbff6558b60dcc477a560f7d85fc",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "00159aba4e00c8fb94be7f93d748ba11ad6e5bf03a40802e4a12faddba3ebe49",
+  "model_provenance_sha256": "2a43de55b7005f11bf0c26236614b53a9235807a1a50386136d16db03e7044a3",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے د بيان او املا لومړني شاهدان دي؛ شخصي نومونه او تاريخونه نۀ تصديقوي.",
+      "evidence_limit": "پاکستاني بالغ علمي نثر، کښې او وروستنے ے د بيان او املا لومړني شاهدان دي؛ شخصي نومونه او تاريخونه نۀ تصديقوي.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني معنايي نثر د لفظ، جملې، معنا او اړيکې د جلا بيان شاهد دے؛ د ژوندليک تاريخي دعوې نۀ تصديقوي.",
+      "evidence_limit": "پاکستاني معنايي نثر د لفظ، جملې، معنا او اړيکې د جلا بيان شاهد دے؛ د ژوندليک تاريخي دعوې نۀ تصديقوي.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "مرجع ګرامر د فعل وروستنے ترتيب، نوميزو او صفتي بشپړوونکو شاهد دے؛ ځانګړې پاکستانۍ رياضيکي اصطلاح نۀ تصويبوي.",
+      "evidence_limit": "مرجع ګرامر د فعل وروستنے ترتيب، نوميزو او صفتي بشپړوونکو شاهد دے؛ ځانګړې پاکستانۍ رياضيکي اصطلاح نۀ تصويبوي.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "24",
+      "pdf_page_1based": 29,
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "finding": "افغان سيمه‌ييز مخ د مقدماتو او پايلې د معنايي صدق تعريف ښيي؛ د تارسکي د منطقي پايلې موضوع سره مفهوم جلا ساتي، خو د تاريخي کار يا د پرېکړې د ناحل‌والي ثبوت نۀ دے.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د مقدماتو او پايلې د معنايي صدق تعريف ښيي؛ د تارسکي د منطقي پايلې موضوع سره مفهوم جلا ساتي، خو د تاريخي کار يا د پرېکړې د ناحل‌والي ثبوت نۀ دے.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "finding": "افغان سيمه‌ييز مخ د صفر، تالي، ارتسام، تعويض او بازګښت تابعې صوري کوي؛ د محاسبې او تابع مفهومي پرتله ده، نۀ د ټيورينګ ماشين يا لامبډا حساب عين پاکستانے نوم.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د صفر، تالي، ارتسام، تعويض او بازګښت تابعې صوري کوي؛ د محاسبې او تابع مفهومي پرتله ده، نۀ د ټيورينګ ماشين يا لامبډا حساب عين پاکستانے نوم.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "finding": "افغان سيمه‌ييز مخ بديهيات، قوانين او د ثبوت متناهي لړۍ جلا کوي؛ د اصل‌بندۍ مفهوم شاهد دے، نۀ د ټاکنې د اصل عين نوم يا د زېر مېلو تاريخي ادعا.",
+      "evidence_limit": "افغان سيمه‌ييز مخ بديهيات، قوانين او د ثبوت متناهي لړۍ جلا کوي؛ د اصل‌بندۍ مفهوم شاهد دے، نۀ د ټاکنې د اصل عين نوم يا د زېر مېلو تاريخي ادعا.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Afghanistan; regional comparator"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "78",
+      "pdf_page_1based": 89,
+      "page_image_sha256": "75f7ee2621050fd9ef60ba53b56c0c7e5e017a7beca2bf4b326ef1e1ae4304ef",
+      "finding": "افغان سيمه‌ييز مخ د سټونو د اندازې پرتله او يو پر يو تطبيق ښيي؛ د سټونو د تيورۍ مفهوم شاهد دے، د ټاکنې د اصل يا اصل‌بندۍ عين اصطلاحي شاهدي نۀ ده.",
+      "evidence_limit": "افغان سيمه‌ييز مخ د سټونو د اندازې پرتله او يو پر يو تطبيق ښيي؛ د سټونو د تيورۍ مفهوم شاهد دے، د ټاکنې د اصل يا اصل‌بندۍ عين اصطلاحي شاهدي نۀ ده.",
+      "inspection": "Actual native page visually read before final translation and registration in this continuation.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0629": {
+      "source_numbers": {
+        "18": 1,
+        "1872": 2,
+        "1910": 1,
+        "1950": 1,
+        "1961": 1,
+        "1948": 1,
+        "2": 1,
+        "1970": 1,
+        "97": 1,
+        "1967": 1
+      },
+      "original_claim_numbers_equal": true,
+      "disclosed_note_numbers_excluded": true
+    },
+    "OLP-0630": {
+      "source_numbers": {
+        "14": 1,
+        "1901": 1,
+        "1918": 1,
+        "1924": 2,
+        "1939": 2,
+        "26": 1,
+        "1983": 1,
+        "82": 1
+      },
+      "original_claim_numbers_equal": true,
+      "disclosed_note_numbers_excluded": false
+    },
+    "OLP-0631": {
+      "source_numbers": {
+        "23": 1,
+        "1912": 1,
+        "1936": 2,
+        "1938": 1,
+        "1942": 1,
+        "1952": 1,
+        "8": 1,
+        "1954": 1,
+        "2013": 1,
+        "1996": 1,
+        "2012": 1
+      },
+      "original_claim_numbers_equal": true,
+      "disclosed_note_numbers_excluded": true
+    },
+    "OLP-0632": {
+      "source_numbers": {
+        "27": 1,
+        "1871": 1,
+        "1904": 2,
+        "1908": 2,
+        "1894": 1,
+        "1897": 1,
+        "1899": 1,
+        "1910": 1,
+        "1916": 1,
+        "1921": 1,
+        "1935": 2,
+        "1944": 1,
+        "1951": 1,
+        "21": 1,
+        "1953": 1
+      },
+      "original_claim_numbers_equal": true,
+      "disclosed_note_numbers_excluded": false
+    }
+  },
+  "new_term_ids": [],
+  "new_source_correction_ids": [
+    "OLSTH-044",
+    "OLSTH-045",
+    "OLSTH-046"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLSTH-044",
+    "DEC-OLSTH-045",
+    "DEC-OLSTH-046",
+    "DEC-B210-REMAINING-BIOGRAPHIES"
+  ],
+  "semantic_samples_added": 30,
+  "external_source_preaudit_sha256": "fac0e55ac4c757dc24e54b738e19b8145915b1255d49be33d67c2938810a9fc5",
+  "unresolved": "د ټول ۷۲۲ واحديز لوستونکي او EPUB جوړول، ټول ځايي‌کول او د Sol6 بشپړې خپلواکې کتنې لا پاتې دي؛ دا يوازې سرچينه‌يي منل دي.",
+  "next_executable_action": "Run dual632 corpusQA and canonical replay; accept remaining biographies. Continue historyofsettheory633 and independentSol6 wholeunit0320."
+}

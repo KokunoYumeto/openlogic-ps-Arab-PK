@@ -1,0 +1,69 @@
+{
+  "schema": "ps-sol6-prose-and-source-reaudit/1",
+  "utc": "2026-09-30T06:14:02.906997+00:00",
+  "status": "complete independent whole-unit review; dual632 corpus validation follows",
+  "scope_inventory_sha256": "18b7e7ef8ee53ef7194b9b04be973e56591095c493a14a3f231171c32406821f",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "authority": "read-only own chat runtime; no settings changed"
+  },
+  "units": [
+    {
+      "unit_id": "OLP-0320",
+      "source_path": "content/incompleteness/incompleteness-provability/lob-thm.tex",
+      "source_sha256": "7b95df7ebaf50f218a71b706c3189750dd9499bb66f2b725dcbf3dec778fd73f",
+      "target_sha256_before": "69fabc20080c2bbb34894bd111227ad766dcb52c4ac0c481d5c865be6cd1f188",
+      "target_sha256_after": "ab33102bd86c38a5374a54f13b6f513d127b058569451cc5b87de8dde8081578",
+      "paired_blocks_reviewed": 15,
+      "translated_blocks_reviewed": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "outcome": "one adjacent proof-reference note; all other wording and source formulas retained",
+      "new_render_acceptance": false
+    }
+  ],
+  "new_segment_entries": 9,
+  "cumulative_segment_entries": 87,
+  "cumulative_segment_ledger_sha256": "6fafabdf29f47c8ff150fa9497262278952a3e1d7823e12e44ce27e7a0625efa",
+  "source_math_order_identical": false,
+  "source_math_order_finding": "The existing reflection paragraph moves for-any-A before its quoted conditional in Pashto; all source spans and their roles preserved. The added note leaves the entire existing ordered span list unchanged.",
+  "segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0320.jsonl",
+  "new_source_correction_ids": [
+    "OLPRV-004"
+  ],
+  "target_bytes_unchanged": false,
+  "structural_checks": {
+    "math": true,
+    "ids": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "ordered_math_unchanged_by_note": true,
+    "paired_blocks_equal": true
+  },
+  "original_consultation_plan": {
+    "batch_id": "PS-B058-INCOMPLETENESS-PROVABILITY",
+    "passages": [
+      "PK-IQRAM-P1-PROSE",
+      "AF-NIAZMAN-P39-THEORY-PROOF",
+      "AF-NIAZMAN-P140-CONSISTENCY",
+      "AF-BUKOVSKY-P112-DIAGONAL-SEQUENCE"
+    ],
+    "terms": [
+      "TERM-PROVABILITY-REFLECTION-LOB",
+      "TERM-FIXED-POINT-SELF-REFERENCE"
+    ],
+    "scope": "Reflection runs from Prov(A) to A; the fixed point, P1–P3 steps, and consequences for consistency and H are complete."
+  },
+  "canonical_refresh_status": "Pending accumulatedB210 production acceptance and byte-identical replay",
+  "full_reaudit_completed": false,
+  "next_action": "Validate accumulated632 source units and this0320 correction; continuehistoryofsettheory633 and sequentialSol6 unit0321, with289 wholeunitsremaining."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ps-published-reaudit-scope-repair/1",
+  "utc": "2026-09-30T06:24:02.327251+00:00",
+  "status": "implemented; exact commit and anonymous verification follow",
+  "scope": [
+    "OLP-0629",
+    "OLP-0630",
+    "OLP-0631",
+    "OLP-0632",
+    "OLP-0320"
+  ],
+  "finding": "Publisher previously captured historical fixed paths but could omit a freshly corrected re-audit target. It now derives target paths and hashes from the current complete review receipt, and requires its completed validation receipt. No broad staging.",
+  "publisher_sha256": "552d840ac52723cc1527c10b9c32eb034eb6cc4a996c82fb75d5830f9ee6cf62",
+  "reaudit_receipt_sha256": "e0e3ad141b43e5c76f72275ed2ea2b3813515a748d41ce8c6efdd8e1bf76a946",
+  "reaudit_validation_sha256": "e1ccfffe05cdef5d9d751218ab7fb269581b16acc4ebe8151fd1e35401205465"
+}
