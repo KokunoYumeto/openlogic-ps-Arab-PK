@@ -1,0 +1,103 @@
+{
+  "schema": "ps-alternate-axiomatic-source-preaudit/1",
+  "utc": "2026-09-30T10:50:13.216030+00:00",
+  "status": "whole alternate source compared to current frozen definitions; seven bounded notes registered",
+  "unit_id": "OLP-0643",
+  "source_sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+  "issues": [
+    {
+      "id": "OLAX-013",
+      "block": 6,
+      "classification": "legacy_alternate_axiom_context_not_defined_in_current_chapter",
+      "reason": "دا بديل واحد پخواني اصول او عمومي کول کاروي؛ چاپي نومونه د اوسني څپرکي په اصولو کښې نۀ دي تعريف شوي۔ د اوسني سيستم تعريف په پټه پرې نۀ تطبيقېږي۔",
+      "check": "اوسني کمیت ټاکونکي اصول تړلے ترم او تازه ثابت لري؛ په بديل واحد کښې د اصل پر عمومي تړلو جملو او بل توزيع اصل تکيه ده۔ دا د سياق توپير دے، د عمومي کولو د صحيحې قضيې رد نۀ دے۔"
+    },
+    {
+      "id": "OLAX-014",
+      "block": 22,
+      "classification": "negation_introduction_proof_has_wrong_premise_and_conclusion",
+      "reason": "دويم شرط له مثبت زيات شوي فارمول څخه نفي غواړي، خو چاپي دليل له نفي زيات شوي فارمول څخه مثبت پايله راوباسي۔",
+      "check": "چاپي کرښې د مخکينۍ همارزښتۍ بل اړخ ښيي۔ د دويم شرط لپاره د مثبت فارمول څخه دروغو ته شرطي او د نفي د راايستلو اصل پکار دي؛ صحيح شرط نۀ ردېږي۔"
+    },
+    {
+      "id": "OLAX-015",
+      "block": 32,
+      "classification": "conjunction_projection_table_conclusion_is_wrong",
+      "reason": "د جدول د لومړيو دوو کرښو د مودوس پوننس عين پايله لومړۍ برخه ده؛ چاپي درېيمه کرښه فصل ښيي۔",
+      "check": "که لومړۍ کرښه عطف وي او دويمه د عطف څخه لومړۍ برخې ته شرطي وي، يو مودوس پوننس لومړۍ برخه راوباسي۔ فصل په بل ګام راتلے شي، خو له دغو دوو کرښو په عين يوه کارونه نۀ راځي۔"
+    },
+    {
+      "id": "OLAX-016",
+      "block": 47,
+      "classification": "weak_generalization_induction_axiom_case_missing_index",
+      "reason": "د هر شاخص شوې کرښې د اصولي حالت په فرض کښې چاپي متن د وروستي فارمول نوم لري؛ مراد هماغه شاخص شوې کرښه ده۔",
+      "check": "د بشپړې لړۍ وروستے فارمول اصل ګڼل د ثبوت عمومي قضيه نۀ پوښي۔ په همدې کرښه کښې د تعويض پايله شاخص لري، نو د فرض نۀ ليکل شوے شاخص ځايي تېروتنه ده۔"
+    },
+    {
+      "id": "OLAX-017",
+      "block": 50,
+      "classification": "free_for_lemma_proof_first_substitution_uses_wrong_replaced_symbol",
+      "reason": "د ثبوت لومړۍ تعويض شوې ښودنه د متغير د بدلولو نښه لري؛ د لمې فرض او ټول باقي دليل د ثابت د بدلولو په اړه دے۔",
+      "check": "لمې د ثابت په ځاے د نوي متغير له ايښودلو وروسته د ازاد تعويض شرط غواړي۔ د بل متغير د بدلولو ښودنه د هماغه ثابت د نوو پېښو دليل نۀ ښيي؛ ورپسې ښودنه سم ثابت کاروي۔"
+    },
+    {
+      "id": "OLAX-018",
+      "block": 52,
+      "classification": "bound_variable_change_axiom_has_wrong_quantifier_scope",
+      "reason": "لومړۍ د اصل ښودنه ټول شرطي په کميت ټاکنه کښې نيسي؛ د ځانګړي کولو صحيح اصل د مقدمې عمومي کول او وروسته ځانګړې پايله لري۔",
+      "check": "د دوو څيزونو په ساحه کښې يو محمول يوازې پر لومړي څيز رښتيا واخلئ، او د ازاد متغير ارزښت دويم څيز وي۔ په ټولو ورودي نقطو د محمول څخه د هماغه دويم څيز محمول ته شرطي ناسم دے۔ خو له عمومي محمول څخه د دويم څيز محمول ته شرطي اصل صحيح دے، ځکه مقدمه دروغ ده۔"
+    },
+    {
+      "id": "OLAX-019",
+      "block": 55,
+      "classification": "quantifier_instance_missing_closed_or_free_for_term_condition",
+      "reason": "که ترم متغيرونه لري، د تعويض د نيول کېدو مخنيوے غواړي؛ تړلے ترم دا شرط پخپله پوره کوي، لکه په اوسني څپرکي کښې۔",
+      "check": "د دوو څيزونو په ساحه کښې هر څيز يو بل بېل څيز لري۔ که د ورودي متغير پر ځاے هماغه دننه تړلے متغير بې‌قيده کېښودل شي، پايله به وايي چې يو څيز له ځان څخه بېل دے؛ دا دروغ دي۔"
+    }
+  ],
+  "frozen_auxiliary_sources_actually_read": [
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "sha256": "c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810"
+    },
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "sha256": "fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8"
+    },
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "sha256": "8b5cf02fabe434821d3a74db8fa803d25c772e38254c391edf03186b3dc23257"
+    },
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc"
+    },
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "sha256": "25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007"
+    },
+    {
+      "path": "content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "sha256": "07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6"
+    }
+  ],
+  "exact_checks": {
+    "negation_case": "Source item2 requires Gamma+A|-false⇒Gamma|-notA. Printed proof assumesGamma+notA|-false and concludesGamma|-A; mismatch, not false theorem.",
+    "projection": "MP(A andB, (A andB)->A)=A. Source line3 A orB is a different consequent.",
+    "quantifier_scope_model": {
+      "domain": [
+        0,
+        1
+      ],
+      "predicate_extension": [
+        0
+      ],
+      "assignment_y": 1,
+      "printed_forall_x_Px_implies_Py": false,
+      "intended_forall_x_Px_implies_Py": true
+    },
+    "capture_model": "Domain{0,1}: forallx existsy x!=y is true. Capture ofy fort gives existsy y!=y, false. Closed/free-for t avoids this."
+  },
+  "scope_limits": "Legacy unimported alternate. Preserve formulas and axiom identities; do not silently replace whole old axiom system. Current surrounding source clarifies only its own definitions. Finite-premise notation and other apparent shorthand are not inflated into theorem errors.",
+  "next_action": "Dual corpus QA and canonical replay; accept643. Integrate the alternate as an explicit in-context variant, avoiding duplicate chapter labels in full reader."
+}

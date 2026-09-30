@@ -1,0 +1,70 @@
+{
+  "schema": "ps-lossless-register-storage-repair/1",
+  "utc": "2026-09-30T11:00:08.839884+00:00",
+  "status": "PASS; two independent generations reconstruct unchanged normative records",
+  "accepted_source_units": 643,
+  "previous_single_file_bytes": 104715899,
+  "previous_single_file_sha256": "9336c421351bd5b6a270a3ed6f3d24960982d23dcbf7ddb6f572dce391ecec55",
+  "previous_single_file_preserved_in": "B218 immutable canonical primary/replay outputs",
+  "reason": "Singlefile104715899 bytes leaves only141701 below GitHub104857600 ceiling. Store complete schema documents in ordered hash-verified parts before further production. No evidence omitted.",
+  "normative_decisions_unchanged": true,
+  "normative_occurrences_unchanged": true,
+  "counts": {
+    "decisions": 819,
+    "occurrences": 30630,
+    "terminology_decisions": 323,
+    "source_correction_decisions": 477,
+    "priority_decisions": 462,
+    "reader_pages_available": 18244,
+    "reader_pages_pending": 12386
+  },
+  "normative_schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+  "loader_sha256": "3d0837f587c65d6f22ef27884545c399a0f9d5fd7e15271c4459bc500bad1ab9",
+  "builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "storage_files": [
+    {
+      "path": "DECISIONS-001.json",
+      "bytes": 32541274,
+      "sha256": "5ccdcc02812f6e0bc06bbddf43db2384f0ff8e2d6a36989e70eccac9f4f88fe8",
+      "decisions": 75,
+      "occurrences": 9819,
+      "first_decision_id": "TERM-SET",
+      "last_decision_id": "TERM-PROPOSITION"
+    },
+    {
+      "path": "DECISIONS-002.json",
+      "bytes": 33450362,
+      "sha256": "f521e783756372c5228be8555a1d9552591ab31504c739ab864ebb509b3cde69",
+      "decisions": 30,
+      "occurrences": 9743,
+      "first_decision_id": "TERM-SEMANTICS",
+      "last_decision_id": "TERM-INTUITIONISTIC-LOGIC"
+    },
+    {
+      "path": "DECISIONS-003.json",
+      "bytes": 33504244,
+      "sha256": "a701ff56eb7ac8ca40fe1cef6c4fc973310650aa47793cf05e731361f062c256",
+      "decisions": 598,
+      "occurrences": 9630,
+      "first_decision_id": "TERM-MODAL-LOGIC",
+      "last_decision_id": "TERM-SET-FOUNDATION-REGULARITY"
+    },
+    {
+      "path": "DECISIONS-004.json",
+      "bytes": 5222895,
+      "sha256": "7f33f9e2320e5eb7aa14a4928d24412b5f528ca6c7ee89e95669523d2b26141d",
+      "decisions": 116,
+      "occurrences": 1438,
+      "first_decision_id": "TERM-SET-TRANSITIVE-CLOSURE-SET",
+      "last_decision_id": "DEC-OLAX-019"
+    }
+  ],
+  "logical_document_sha256": "ef18d0dbb088f2a16bf61c22ac50db6bdb41d3ca8a0c0be4e1615d3c4d1aa4c0",
+  "corrupted_shard_rejected": true,
+  "full_normative_schema_roundtrip": "PASS",
+  "seven_required_review_surfaces_preserved_with_explicit_storage_index": true,
+  "current_reader_accepted": false,
+  "localized_start_page": true,
+  "legacy_english_explanation_localization": "still incomplete; explicit current limitation retained",
+  "next_action": "Publish accepted643 with all register parts and validated public native review counts; continue644 and full0326 review. Full722 remains active."
+}

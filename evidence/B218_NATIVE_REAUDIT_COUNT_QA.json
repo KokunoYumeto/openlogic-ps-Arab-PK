@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "total": 299,
+  "reviewed": 15,
+  "pending": 284,
+  "schema": "ps-native-review-count-repair/1",
+  "utc": "2026-09-30T10:57:36.577942+00:00",
+  "finding": "PS642-REAUDIT-REMAINDER-01",
+  "previous_public_status_sha256": "658db31db893066a45b075f73faec2a4dd15199c0d161785c1208830c3821970",
+  "corrected_status_sha256": "df156412f5a67cf67efaaee1726cf591ebd9e8b2c1c55d2f6271e46dccf345d7",
+  "cause": "Broad remaining84→80 text replacement also changed the trailing84 in pending284 into280. Replaced only the unique current review-summary remainder; future metadata uses a parser and record/arithmetic check.",
+  "translations_unchanged": true,
+  "dedicated_micro_release": false
+}

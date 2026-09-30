@@ -1,0 +1,258 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: provability
+
+% verification of properties of provability needed for maximally 
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{د \usetoken{S}{derivability} ځانګړتياوې}
+\emph{سرچينه‌يي يادونه OLAX-013: دا بديل واحد د اصولو پخواني نومونه او د عمومي کولو يو پخوانے ترتيب کاروي۔ همدغه نومونه د اوسني څپرکي په اصولو کښې نۀ دي تعريف شوي، او د اوسني کميت ټاکونکي قاعدې سره يې پټ يو شان ګڼل سم نۀ دي۔ ټول چاپي نومونه او استدلالونه ساتل شوي؛ دا د بديل سرچينيز متن کره ثبت دے، د اوسني سيستم له تعريف سره د هرې کرښې د مطابقت دعوه نۀ ده۔}
+
+\begin{prop}[يکنواختي] که $\Gamma \subseteq \Delta$ او $\Gamma \Proves !A$ وي، نو $\Delta \Proves !A$ هم دے۔ \end{prop}
+
+\begin{proof} هر متناهي $\Gamma_0 \subseteq \Gamma$ د~$\Delta$ متناهي فرعي سټ هم دے؛ نو د $\Gamma_0 \Proves !A$ !!a{derivation}، $\Delta \Proves !A$ هم ښيي۔ \end{proof}
+
+\begin{prop}\ollabel{prop:provability} $\Gamma \Proves !A$ هغه او يوازې هغه وخت دے چې $\Gamma\cup \{\lnot!A \}$ نامتسق وي۔ \end{prop}
+
+\begin{prop} \begin{enumerate}
+\item \ollabel{prop:provability-contr} که $\Gamma \Proves !A$ او $\Gamma
+\cup \{ !A\} \Proves \lfalse$ وي، نو $\Gamma$ نامتسق دے۔
+
+\item \ollabel{prop:provability-lnot} که $\Gamma \cup \{!A\}
+\Proves \lfalse$ وي، نو $\Gamma \Proves \lnot !A$۔
+
+\item \ollabel{prop:provability-exhaustive} که $\Gamma \cup \{!A\}
+\Proves \lfalse$ او $\Gamma \cup \{\lnot !A\} \Proves
+\lfalse$ وي، نو $\Gamma \Proves \lfalse$۔
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-left} که $\Gamma \cup \{!A\}
+\Proves \lfalse$ او $\Gamma \cup \{!B\} \Proves
+\lfalse$ وي، نو $\Gamma \cup \{!A \lor !B\} \Proves \lfalse$۔}{}
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-right} که $\Gamma
+\Proves !A$ يا $\Gamma \Proves !B$ وي، نو $\Gamma
+\Proves !A \lor !B$۔}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-left} که $\Gamma
+\Proves !A \land !B$ وي، نو $\Gamma \Proves !A$ او
+$\Gamma \Proves !B$۔}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-right} که $\Gamma
+\Proves !A$ او $\Gamma \Proves !B$ وي، نو $\Gamma
+\Proves !A \land !B$۔}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-mp} که $\Gamma \Proves
+!A$ او $\Gamma \Proves !A \lif !B$ وي، نو $\Gamma
+\Proves !B$۔}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-lif} که $\Gamma \Proves
+\lnot !A$ يا $\Gamma \Proves !B$ وي، نو $\Gamma \Proves
+!A \lif !B$۔}{} \end{enumerate} \end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item فرض کړئ چې $\Gamma_0 \cup \{!A\} \Proves \lfalse$۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup \{!A\} \Proves \lfalse$ & فرض \\
+2. & $\Gamma_1 \Proves !A$ & فرض\\ 
+3. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & قطع \\ 
+\end{derivation}
+
+ځکه چې $\Gamma_0 \subseteq \Gamma$ او $\Gamma_1 \subseteq \Gamma$ دي، $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$؛ ځکه نو $\Gamma \Proves \lfalse$۔
+
+\item فرض کوو چې $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$۔
+\emph{سرچينه‌يي يادونه OLAX-014: د دويم شرط په وينا کښې د نفي پرته فارمول زياتېږي او نفي يې راايستل کېږي، خو لاندې چاپي دليل د نفي د زياتولو فرض اخلي او مثبت فارمول راوباسي۔ دا د مخکينۍ همارزښتۍ بل اړخ سره سمون لري، د دويم شرط له عين فرض او پايلې سره نۀ۔ د دويم شرط لپاره د استنتاج قضيه بايد د مثبت فارمول څخه دروغو ته شرطي راوباسي، بيا د نفي د راايستلو اصل وکارول شي۔ چاپي فارمولونه خوندي دي؛ د استدلال د ترتيب دغه توپير څرګند دے۔}
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ & فرض \\ 
+2. & $\Gamma_0 \Proves \lnot !A \lif \lfalse$ & د استنتاج قضيه\\
+3. & $\Gamma_0 \Proves (\lnot !A \lif \lfalse) \lif !A$ & Ax0\\ 
+4. & $\Gamma_0 \Proves !A$ & مودوس پوننس 2, 3 \\ 
+\end{derivation}
+
+\item فرض کوو چې $\Gamma \cup \{ !A \} \Proves \lfalse$ او $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ دي۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & فرض \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & د استنتاج قضيه \\ 
+3. & $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ & فرض\\ 
+4. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0\\ 
+5. & $\Gamma_0 \Proves \lnot !A$ & مودوس پوننس 2, 4\\ 
+6. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & قطع 3, 5 \\
+\end{derivation}
+
+ځکه چې $\Gamma_0 \subseteq \Gamma$ او $\Gamma_1 \subseteq \Gamma$ دي، $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$۔ ځکه نو $\Gamma \Proves \lfalse$۔
+
+% prop:provability-lor-left 
+\tagitem{defOr}{}{
+\iftag{probOr}{تمرين۔}{تمرين۔}}
+
+% prop:provability-lor-right 
+\tagitem{defOr}{}{ \iftag{probOr}{تمرين۔}{
+فرض کوو چې $\Gamma_0 \Proves !A$۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A$ & فرض \\ 
+2. & $\Gamma_0 \Proves !A \lif (!A \lor !B)$ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lor !B$ & مودوس پوننس 1, 2 \\
+\end{derivation}
+
+ځکه نو $\Gamma \Proves !A \lor !B$۔ هغه ثبوت چې $\Gamma \Proves !B$ وي، دې ته ورته دے۔}}
+
+% prop:provability-land-left 
+\tagitem{defAnd}{}{ \iftag{probAnd}{تمرين}{
+فرض کړئ چې $\Gamma_0 \Proves !A \land !B$
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A \land !B$ & فرض \\ 
+2. & $\Gamma_0 \Proves (!A\land !B) \lif !A $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lor !B$ & مودوس پوننس 1, 2 \\
+\end{derivation}
+
+ځکه نو $\Gamma \Proves !A$۔ دې ته ورته !!{derivation} ښيي چې $\Gamma \Proves !B$۔
+\emph{سرچينه‌يي يادونه OLAX-015: د مخکيني چاپي جدول وروستۍ کرښه فصل ښيي، خو له عطف او د هغه د لومړۍ برخې شرطي څخه د مودوس پوننس عين پايله لومړۍ برخه ده، هماغه چې دلته په نثر کښې غوښتل کېږي۔ فصل بيا په يو بل ګام راايستل کېدے شي؛ په چاپي جدول کښې يې د يوازې يوه ګام په توګه ښودل د کرښې ځايي تېروتنه ده۔ اصلي ښودنه ساتل شوې ده۔}}
+
+% prop:provability-land-right
+\tagitem{defAnd}{}{\iftag{probAnd}{تمرين۔}{تمرين۔}}
+
+% prop:provability-mp 
+\tagitem{defIf}{}{ \iftag{probIf}{تمرين۔}{ فرض کوو چې $\Gamma_0 \Proves !A$ او $\Gamma_0 \Proves !A \lif !B $ دواړه دي۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A$ & فرض \\ 
+2. & $\Gamma_0 \Proves !A \lif !B $ & فرض\\ 
+3. & $\Gamma_0 \Proves !B$ & مودوس پوننس 1, 2\\
+\end{derivation}
+
+ځکه چې $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$، له دې څخه $\Gamma \Proves !B$ راځي۔}}
+
+% prop:provability-lif 
+\tagitem{defIf}{}{\iftag{probIf}{تمرين۔}{لومړے فرض کړئ چې $\Gamma \Proves \lnot !A$۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves \lnot !A$ & فرض \\ 
+2. & $\Gamma_0 \Proves \lnot !A \lif (!A \lif !B) $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lif !B$ & مودوس پوننس 1,
+2\\ \end{derivation}
+
+د $\Gamma \Proves !B$ لپاره ثبوت دې ته ورته دے:
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !B$ & فرض \\ 
+2. & $\Gamma_0 \Proves !B \lif (!A \lif !B) $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lif !B$ & مودوس پوننس 1, 2\\
+\end{derivation}}}
+
+\end{enumerate} 
+\end{proof}
+
+\begin{probtag}{probOr,probAnd,probIf} د \olref[fol][axd][prv]{prop:provability} ثبوت بشپړ کړئ۔
+\end{probtag}
+
+\begin{thm}[عمومي کول] \ollabel{thm:Generalization} که $\Gamma \Proves !A$ وي او $x$ د $\Gamma$ په هېڅ !!{formula} کښې ازاد نۀ وي، نو $\Gamma \Proves \lforall[x][!A]$۔
+\end{thm}
+
+\begin{proof} پر $\mathsf{Thm}_\Gamma$ د استقرا له مخې: که $!A$ اصل وي، نو $\lforall[x][!A]$ هم اصل دے۔ که $!A\in \Gamma$ وي، نو $x$ په $!A$ کښې ازاد نۀ دے؛ ځکه نو $!A \lif \lforall[x][!A]$ يو اصل (\textbf{Ax3}) دے، او $\Gamma \Proves \lforall[x][!A]$ د مودوس پوننس له مخې۔ اوس فرض کړئ چې $!A$ د مودوس پوننس په مرسته راځي، ځکه $\Gamma \Proves !B$ او $\Gamma \Proves !B \lif !A$ دي۔ د استقرا د فرض له مخې $\Gamma \Proves \lforall[x][!B]$ او $\Gamma \Proves \lforall[x][( !B \lif !A)]$ دي۔ خو د \textbf{Ax2} له مخې دا هم دے:
+\[ \Gamma \Proves
+\lforall[x][( !B \lif !A)] \lif (\lforall[x][ !B] \lif \lforall[x][!A]), \]
+او د مودوس پوننس دوه کارونې $\Gamma \Proves \lforall[x][!A]$ راکوي، لکه چې غوښتل شوي وو۔ \end{proof}
+
+\begin{thm}\ollabel{thm:WeakGen} (\emph{پر ثابتونو کمزورے عمومي کول})
+که $\Gamma \Proves !A$ وي او $c$ !!a{constant} وي چې په $\Gamma$ کښې نۀ پېښېږي، نو داسې متغير $x$ شته چې په $!A$ کښې نۀ وي، داسې چې $\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$، او ثبوت $c$ نۀ کاروي۔
+\end{thm}
+
+\begin{proof} فرض کړئ $!A_1,\ldots,!A_n$ د $!A$ ثبوت له $\Gamma$ څخه وي، نو $!A=!A_n$۔ داسې متغير $x$ واخلئ چې په $!A_1,\ldots,!A_n$ کښې نۀ وي، او نوې لړۍ په پام کښې ونيسئ: $\Subst{!A_1}{x}{c},\ldots,\Subst{!A_n}{x}{c}.$ داسې لړۍ د $\Subst{!A}{x}{c}$ ثبوت له $\Gamma$ څخه دے۔ په رښتيا، د هر $i=1,\ldots,n$ لپاره:
+\begin{itemize}
+\item که $!A$ اصل وي، نو $\Subst{!A_i}{x}{c}$ هم اصل دے؛
+\item که $!A_i \in \Gamma$ وي، نو ځکه چې $c$ په $\Gamma$ کښې نۀ دے، $\Subst{!A_i}{x}{c} = !A_i \in \Gamma$ لرو؛
+\item که $!A_i$ له $!A_j$ او $!A_j \lif !A_i$ څخه ترلاسه کېږي، نو $\Subst{!A_i}{x}{c}$ د مودوس پوننس په مرسته له $\Subst{!A_j}{x}{c}$ او $\Subst{(!A_j \lif !A_i)}{x}{c}
+= \Subst{!A_j}{x}{c} \lif \Subst{!A_i}{x}{c}$ څخه راځي۔
+\end{itemize}
+ښکاره ده چې !!{constant} $c$ په نوې لړۍ کښې نور نۀ پېښېږي۔ اوس $\Gamma'$ دې هغه !!{formula}s ولري چې له $\Gamma$ څخه د $\Subst{!A}{x}{c}$ په !!{derivation} کښې راغلي دي؛ نو $x$ د $\Gamma'$ په هېڅ !!{formula} کښې ازاد نۀ دے او $\Gamma' \Proves \Subst{!A}{x}{c}$۔ د عمومي کولو له مخې (\olref{thm:Generalization}) $\Gamma'
+\Proves \lforall[x][\Subst{!A}{x}{c}]$؛ له دې څخه د يکنواختۍ له مخې $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$، لکه چې غوښتل شوي وو۔
+\emph{سرچينه‌يي يادونه OLAX-016: د هرې کرښې د حالتونو په لومړي شرط کښې چاپي متن د وروستي فارمول نوم کاروي؛ هلته د هماغې شاخص شوې کرښې فارمول مراد دے، لکه چې د تعويض په پايله کښې څرګند دے۔ دا د شاخص ځايي پاتې نښه ده، د ټول استقرا د وروستي فارمول د اصل ګڼلو فرض نۀ دے۔}
+\end{proof}
+
+\begin{explain}
+هدف مو دا دے چې په \olref{thm:WeakGen} کښې دا شرط، چې $x$ په $!A$ کښې بالکل نۀ پېښېږي، په کمزورو شرطونو بدل کړو: $x$ په $!A$ کښې ازاد نۀ وي او د $c$ لپاره په $!A$ کښې !!{free for} وي۔ ښکاره ده چې دا د تړلي !!{variable} په بدلولو ترلاسه کېدے شي؛ نو لومړے هماغه ثابتوو۔
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:free-for}
+که $x$ د $c$ لپاره په $!A$ کښې ازاد وي او $y$ په $!A$ کښې ازاد نۀ وي، نو $x$ د $y$ لپاره په $\Subst{!A}{y}{c}$ کښې !!{free for} دے۔
+\end{lem}
+
+\begin{proof} که $x$ د $y$ لپاره په $\Subst{!A}{y}{x}$ کښې !!{free for} نۀ وي، نو د $y$ کومه ازاده پېښه په $\Subst{!A}{y}{c}$ کښې د کميت ټاکونکي $\lforall[x]$ د ساحې دننه راځي۔ خو د فرض له مخې $y$ په $!A$ کښې ازاد نۀ دے، نو ټولې داسې پېښې له تعويض $\Subst{}{y}{c}$ څخه راځي۔ نو د $c$ کومه پېښه د $\lforall[x]$ د ساحې دننه راځي او $x$ د $c$ لپاره په $!A$ کښې !!{free for} نۀ دے۔
+\emph{سرچينه‌يي يادونه OLAX-017: د دې ثبوت په لومړۍ تعويض شوې ښودنه کښې چاپي متن د متغير د بدلولو نښه لري، خو د لمې فرض، ورپسې ښودنه او د ثابت د پېښې دليل ټول د ثابت د بدلولو تعويض ته اړ دي۔ لومړۍ ښودنه ساتل شوې؛ په هغې کښې د بدلېدونکي څيز ځايي نښه د باقي دليل له ثابت سره سمون نۀ لري۔}
+\end{proof}
+
+\begin{lem}[د تړلي متغير بدلول]
+\ollabel{lem:ChangeBdVar}
+که $x$ او $y$ په $!A$ کښې ازاد نۀ وي او دواړه د $c$ لپاره په $!A$ کښې !!{free for} وي، نو $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$، او ثبوت $c$ نۀ کاروي۔
+\end{lem}
+
+\begin{proof}
+له فرضونو څخه $y$ د $c$ لپاره په $!A$ کښې !!{free for} دے او $x$ په $!A$ کښې ازاد نۀ دے؛ نو د مخکينۍ \olref{lem:free-for} له مخې $y$ د $x$ لپاره په $\Subst{!A}{x}{c}$ کښې !!{free for} دے۔ له دې راځي چې
+$\lforall[x][\Subst{!A}{x}{c} \lif \Subst{!A}{x}{c} \Subst{}{y}{x}]$
+يو اصل (\textbf{Ax1}) دے۔ ځکه چې $x$ په $!A$ کښې ازاد نۀ دے، $\Subst{!A}{x}{c} \Subst{}{y}{x} = \Subst{!A}{y}{c}$ لرو؛ نو
+\[
+\Proves \lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{y}{c},
+\]
+او د استنتاج د قضيې له مخې $\lforall[x][\Subst{!A}{x}{c}] \Proves
+\Subst{!A}{y}{c}$۔ ځکه چې $y$ په $!A$ کښې ازاد نۀ دے، په $\lforall[x][\Subst{!A}{x}{c}]$ کښې هم ازاد نۀ دے؛ نو د عمومي کولو له مخې
+$\lforall[x][\Subst{!A}{x}{c}] \Proves \lforall[y][\Subst{!A}{y}{c}]$،
+او د استنتاج قضيه بيا $\Proves
+\lforall[x][\Subst{!A}{x}{c}] \lif \lforall[y][\Subst{!A}{y}{c}]$ راکوي۔ د $\Proves \lforall[y][\Subst{!A}{y}{c}] \lif \lforall[x]
+[\Subst{!A}{x}{c}]$ ثبوت عين متقارن دے، نو پايله د تاوتولوژۍ له مخې راځي۔
+\emph{سرچينه‌يي يادونه OLAX-018: د اصل په لومړۍ چاپي ښودنه کښې کميت ټاکونکے پر ټول شرطي خپور دے، خو د عمومي جملې د ځانګړي کولو اصل بايد د شرطي پر مقدمې کميت ټاکنه ولري، لکه چې ورپسې چاپي کرښه يې لري۔ د لمې سمه همارزښتي خوندي ده؛ د لومړۍ ښودنې د ساحې دغه تېروتنه په پټه نۀ ده منل شوې۔}
+\end{proof}
+
+\begin{thm}[پر ثابتونو قوي عمومي کول]
+\ollabel{thm:StrongGen}
+که $\Gamma \Proves !A$ وي، !!{constant} $c$ په $\Gamma$ کښې نۀ پېښېږي، او $x$ په $!A$ کښې ازاد نۀ وي خو د $c$ لپاره په $!A$ کښې !!{free for} وي، نو $\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$۔
+\end{thm}
+
+\begin{proof}
+ځکه چې $\Gamma \Proves !A$ دے او $c$ په $\Gamma$ کښې نۀ دے، د کمزوري عمومي کولو له مخې داسې !!a{variable} $y$ شته چې په $!A$ کښې نۀ وي او $\Gamma \Proves \lforall[y][\Subst{!A}{y}{c}]$۔ ځکه چې $y$ په $!A$ کښې بالکل نۀ دے، په $!A$ کښې ازاد نۀ دے او د $c$ لپاره په $!A$ کښې !!{free for} هم دے؛ که ورسره (د فرض له مخې) $x$ په $!A$ کښې ازاد نۀ دے او د $c$ لپاره په $!A$ کښې !!{free for} دے، نو د تړلي !!{variable} د بدلولو شرطونه پوره دي۔ ځکه نو $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$، له کومه چې $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$ راځي۔
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{که $\Gamma \Proves !A(t)$ وي، نو $\Gamma \Proves
+  \lexists[x][!A(x)]$۔}{}
+\tagitem{prvAll}{که $\Gamma \Proves \lforall[x][!A(x)]$ وي، نو $\Gamma
+  \Proves !A(t)$۔}{}
+\end{tagenumerate}
+\emph{سرچينه‌يي يادونه OLAX-019: د تعويض لپاره د متغير نيول بايد رامنځته نۀ شي۔ که ترم تړلے وي، دغه خطر نۀ لري؛ که متغيرونه لري، په اړوند فارمول کښې د متغير لپاره د ازاد تعويض شرط پکار دے۔ بې له دې قيده کميت ټاکونکې ځانګړي کول صحيح نۀ دي۔ اوسنے څپرکے تړلے ترم ټاکي؛ دغه بديل چاپي وينا خپل ترم بې‌قيده پرېږدي۔ ټولې اصلي ښودنې ساتل شوې دي۔}
+\end{thm}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+%%Need axioms for exists
+\tagitem{prvEx}{تمرين۔}{}
+\tagitem{prvAll} {فرض کړئ چې $\Gamma_0 \Proves \lforall[x][!A(x)]$۔
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves \lforall[x][!A(x)]$ & فرض \\
+2. & $\Gamma_0 \Proves \lforall[x][!A(x)] \lif \Subst{!A}{t}{x}$ & Ax1 \\ 
+3. & $\Gamma_0 \Proves \Subst{!A}{t}{x}$ & مودوس پوننس 1, 2 \\ 
+\end{derivation}}{}
+
+\end{tagenumerate} 
+\end{proof}
+
+\end{document}

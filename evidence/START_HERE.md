@@ -1,14 +1,18 @@
-# Translation decision review — start here
+# د ژباړې د پرېکړو د کتنې پيل
 
-This package records every currently identified judgment-dependent Pashto (Pakistan) translation choice in the canonical OpenLogic schema. It contains **812 decisions** and **30391 exact paired source/target occurrences** across **642 of 722 translated source units**.
+دا ټولګه د پښتو (پاکستان) د ژباړې ټولې اوس پېژندل شوې هغه پرېکړې ثبتوي چې کره انتخاب غواړي۔ **819 پرېکړې** او **30630 د سرچينې او ژباړې کره جوړې پېښې** د **643 له ۷۲۲ سرچينيزو واحدونو** څخه ثبت دي۔
 
-- [Full expert-review index](TRANSLATION_DECISIONS_FULL.md)
-- [High-priority review](PRIORITY_REVIEW.md)
-- [One paired occurrence per CSV row](DECISION_OCCURRENCES.csv)
-- [Canonical machine register](DECISIONS.json)
-- [Normative JSON Schema](translation-decision.schema.json)
-- [Validation receipt](TRANSLATION_DECISION_QA.json)
+- [د ټولو پرېکړو تفصيلي شاخص](TRANSLATION_DECISIONS_FULL.md)
+- [لومړيتوب لرونکې کتنه](PRIORITY_REVIEW.md)
+- [د هرې جوړې پېښې جلا CSV کرښه](DECISION_OCCURRENCES.csv)
+- [د بشپړ ماشيني ثبت ترتيبي لړ](DECISIONS.json)
+- [د پرېکړو معياري JSON سکيما](translation-decision.schema.json)
+- [د اعتبار د کتنې رسيد](TRANSLATION_DECISION_QA.json)
 
-Pakistani Pashto usage and orthography are primary. Afghan Pashto sources are labelled regional comparators. The release uses Arabic-derived Pashto script, international mathematical notation, RTL prose, and LTR formulas and proof diagrams. A separate Afghan edition would need its own canon, terminology decisions, semantic QA, rendering QA, and publication receipts; character conversion alone would not produce one.
+پاکستانۍ پښتو او املا لومړۍ دي؛ افغان پښتو ماخذونه څرګند سيمه‌ييز پرتله‌ګانې دي۔ متن د پښتو په عربي‌مبنا ليک کښې دے، نړيوالې رياضيکي نښې ساتي، نثر له ښي څخه کيڼ ته او فارمولونه او ثبوتي شکلونه له کيڼ څخه ښي ته لولي۔ د افغان پښتو جلا نسخه خپل لوستل شوي شاهد، اصطلاحي انتخابونه، معنايي او جوړ شوي متن کتنه او د خپرونې رسيدونه غواړي؛ يوازې د تورو بدلول يې نۀ جوړوي۔
 
-Missing dictionary attestation never leaves a needed term blank. The register records the best evidence-based provisional rendering, alternatives, confidence, and a concrete expert question. Reader pages remain `pending` until a stable artifact and verified segment-to-page map exist; no page is inferred from a unit range.
+د قاموس د عين شاهد نۀ شتون اړينه اصطلاح تشه نۀ پرېږدي۔ تر ټولو ښه مستنده، د سمون وړ بڼه، بديلونه، د باور دليل او کره د کتنې پوښتنه ثبتېږي۔ د لوستونکي مخونه تر ثابتې جوړې شوې نسخې او کره برخې/مخ نقشې پورې `pending` پاتې دي؛ له واحديزې شمېرې مخ نۀ اټکلېږي۔ د کارپوه راتلونکے نظر د سمون لپاره ګټور دے، د کار يا خپرونې شرط نۀ دے۔
+
+بشپړ ماشيني ثبت د يو ډېر لوے فايل پر ځاے په ترتيبي برخو کښې دے۔ DECISIONS.json د هرې برخې نوم، بايټونه، SHA-256 او شمېر ښيي؛ په هماغه ترتيب ټولې برخې د عين معياري پرېکړو بشپړ متن جوړوي۔ هېڅ پرېکړه، پېښه، سرچينيز نقل يا ژباړه نۀ ده غورځول شوې۔ هره برخه معياري سکيما لري؛ لړ خپله د ساتنې د بڼې ثبت دے۔ د [کره بياجوړولو پروګرام](../tools/decision_register_storage.py) د تاريخي يو-فايله او نوي برخو ثبت دواړه لولي او ټول هشونه تصديقوي۔ زاړه تفصيلي دليلونه لا ځينې انګرېزي متن لري؛ د هغو بشپړه پښتو کول جاري دي او بشپړ تصويب نۀ ادعا کېږي۔
+
+اوسنی توليدي او ترميمي کار **OpenAI Codex — GPT-6.1 Sol، Ultra هڅه** کوي؛ د پخواني کار د اصلي ماډل نسبتونه په نسخوي شواهدو کښې خوندي دي۔ انساني تصويب نۀ ادعا کېږي۔
