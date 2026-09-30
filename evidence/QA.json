@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 663,
-    "structural_pass": 663,
+    "draft_units": 664,
+    "structural_pass": 664,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B237-NATURAL-DEDUCTION-INTRO-CONTINUUM",
+  "batch": "PS-B238-NATURAL-DEDUCTION-LAMBDA-DRIVERS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11627,7 +11627,7 @@
       "unit_id": "OLP-0341",
       "path": "content/lambda-calculus/lambda-calculus.tex",
       "source_sha256": "55f3d4f5216c89a10fcbf8a214d658099485999fefd9391402994dea1881cec3",
-      "translation_sha256": "d8952c80c110407f79b0fcf1e024788dbd69dd3330f3a6746b5333dca1d287c9",
+      "translation_sha256": "f35306a9336d17dc5454ddbc48eb96ed77e49de5897cc626da1d4a1f44d408a6",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -22792,6 +22792,35 @@
         ],
         "expected_by_source_correction": true
       }
+    },
+    {
+      "unit_id": "OLP-0664",
+      "path": "content/proof-theory/natural-deduction/natural-deduction.tex",
+      "source_sha256": "3c6250945e1d1d505bd87f7db2829f7cd8920de029d44cbc10533ac827688217",
+      "translation_sha256": "cd54b0ef6ab5ae8d534d15c3372c456bf5dc75892bdde4ab80383c6281ac45ab",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -40956,6 +40985,24 @@
       "passage": "OLP-0340-B020",
       "reverse_paraphrase": "NCH د هر پيوستاري سټ دننه ناشمېرېدونکے خو له هغه سره نۀ همشمېره فرعي سټ غواړي؛ د سم Count او همشمېره‌والي تعريفونو له مخې په ټولو ساحو اعتبار د پيوستار د فرضيې غلطوالے بيانوي۔",
       "finding": "بشپړ اصل، اوسنے متن، ټول فورمولونه او د هر ګام شرطونه مستقلاً پرتله شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0664",
+      "passage": "OLP-0664-B004",
+      "reverse_paraphrase": "د فطري استنتاج بشپړ باب سرليک ژباړل شوے؛ ټول اووه اصلي واردات په عين ترتيب او د باب پای هوک خوندي دي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "OLP-0341-B004",
+      "reverse_paraphrase": "د لامبډا حساب د اصل برخې سرليک عين دے؛ د خالص حساب او ټايپونو د تيورۍ نورې معناوې دلته نۀ زياتېږي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "OLP-0341-B005",
+      "reverse_paraphrase": "برخه د لامبډا حساب څېړي؛ د پېژندنې څپرکے د اصلي يادښتونو پر بنسټ دے، د همدې څپرکي يوه برخه تکراري ده او په ورپسې بابونو کښې پوښل شوې ده۔ د نورو درې بابونو اصلي ليکوال، د Mitacs د اوړي د کارآموزۍ نسبت او د سرچينې د بياکتنې او سمونې پاتې خبر ساتل شوي دي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
     }
   ],
   "builds": [

@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B237-NATURAL-DEDUCTION-INTRO-CONTINUUM",
+  "batch_id": "PS-B238-NATURAL-DEDUCTION-LAMBDA-DRIVERS",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -8538,7 +8538,7 @@
       "scope": "بشپړه تازه سرچينه‌يي او کانوني کتنه؛ د طبيعي استنتاج د جوړو، فرض ايستلو، سېکوېنټونو، کوډونو د تکرار او د کټ مټ پيوستاري اندازې توپير ساتل شوے دے۔"
     },
     "OLP-0341": {
-      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "batch_id": "PS-B238-NATURAL-DEDUCTION-LAMBDA-DRIVERS",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
@@ -8547,7 +8547,27 @@
         "TERM-LAMBDA-SYNTAX",
         "TERM-SIMPLE-TYPE-THEORY"
       ],
-      "scope": "Part attribution and unresolved source review are preserved; chapter imports remain in source order.",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-SIMPLE-TYPE-THEORY"
+        ],
+        "5": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-SIMPLE-TYPE-THEORY"
+        ]
+      },
+      "scope": "بشپړ اصلي ډرايور، واردات، هوکونه او اصلي نسبتونه او د سرچينې د بياکتنې پاتې خبر ساتل شوي دي۔",
       "allowed_residual_english": [
         "Avigad",
         "Jeremy",
@@ -18740,6 +18760,30 @@
         ]
       },
       "scope": "بشپړه تازه سرچينه‌يي او کانوني کتنه؛ د طبيعي استنتاج د جوړو، فرض ايستلو، سېکوېنټونو، کوډونو د تکرار او د کټ مټ پيوستاري اندازې توپير ساتل شوے دے۔"
+    },
+    "OLP-0664": {
+      "batch_id": "PS-B238-NATURAL-DEDUCTION-LAMBDA-DRIVERS",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-PROOF-SYSTEMS"
+      ],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-PROOF-SYSTEMS"
+        ]
+      },
+      "scope": "بشپړ اصلي ډرايور، واردات، هوکونه او اصلي نسبتونه او د سرچينې د بياکتنې پاتې خبر ساتل شوي دي۔"
     }
   },
   "semantic_review": [
@@ -36904,6 +36948,24 @@
       "passage": "OLP-0340-B020",
       "reverse_paraphrase": "NCH د هر پيوستاري سټ دننه ناشمېرېدونکے خو له هغه سره نۀ همشمېره فرعي سټ غواړي؛ د سم Count او همشمېره‌والي تعريفونو له مخې په ټولو ساحو اعتبار د پيوستار د فرضيې غلطوالے بيانوي۔",
       "finding": "بشپړ اصل، اوسنے متن، ټول فورمولونه او د هر ګام شرطونه مستقلاً پرتله شوي دي۔"
+    },
+    {
+      "unit_id": "OLP-0664",
+      "passage": "OLP-0664-B004",
+      "reverse_paraphrase": "د فطري استنتاج بشپړ باب سرليک ژباړل شوے؛ ټول اووه اصلي واردات په عين ترتيب او د باب پای هوک خوندي دي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "OLP-0341-B004",
+      "reverse_paraphrase": "د لامبډا حساب د اصل برخې سرليک عين دے؛ د خالص حساب او ټايپونو د تيورۍ نورې معناوې دلته نۀ زياتېږي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
+    },
+    {
+      "unit_id": "OLP-0341",
+      "passage": "OLP-0341-B005",
+      "reverse_paraphrase": "برخه د لامبډا حساب څېړي؛ د پېژندنې څپرکے د اصلي يادښتونو پر بنسټ دے، د همدې څپرکي يوه برخه تکراري ده او په ورپسې بابونو کښې پوښل شوې ده۔ د نورو درې بابونو اصلي ليکوال، د Mitacs د اوړي د کارآموزۍ نسبت او د سرچينې د بياکتنې او سمونې پاتې خبر ساتل شوي دي۔",
+      "finding": "بشپړ اصل او ټول ډرايور او د هر نسبت مرجع مستقلاً پرتله شوي دي؛ د سرچينې د بياکتنې پاتې خبر نۀ دے حذف شوے۔"
     }
   ]
 }
