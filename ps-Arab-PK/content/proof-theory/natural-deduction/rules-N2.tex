@@ -1,0 +1,116 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: rules-N2
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\Axiom$x: !A, \Gamma \fCenter !B$
+\RightLabel{\Intro{\lif}}
+\UnaryInf$\Gamma \fCenter !A \lif !B $
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter !A \lif !B$
+\Axiom$\Gamma_2 \fCenter !A$
+\RightLabel{\Elim{\lif}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter !B$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma_1 \fCenter !A$
+\Axiom$\Gamma_2 \fCenter !B$
+\RightLabel{\Intro{\land}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A \land !B $
+\DisplayProof
+&
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma \fCenter !A \land !B$
+\RightLabel{\Elim{\land}[1]}
+\UnaryInf$\Gamma \fCenter !A$
+\DisplayProof
+\\[3ex]
+\Axiom$\Gamma \fCenter !A \land !B$
+\RightLabel{\Elim{\land}[2]}
+\UnaryInf$\Gamma \fCenter !B$
+\DisplayProof\\[3ex]
+\end{tabular}
+\\[4ex]
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInf$\Gamma \fCenter !A \lor !B$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter !B$
+\RightLabel{\Intro{\lor}[2]}
+\UnaryInf$\Gamma \fCenter !A \lor !B$
+\DisplayProof\\[3ex]
+\multicolumn{2}{c}{
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma_1 \fCenter !A \lor !B$
+\Axiom$x:!A, \Gamma_2 \fCenter !C$
+\Axiom$y:!B, \Gamma_3 \fCenter !C$
+\RightLabel{\Elim{\lor}}
+\TrinaryInf$\Gamma_1, \Gamma_2, \Gamma_3 \fCenter !C$
+\DisplayProof
+\end{tabular}
+}
+\\[4ex]
+\Axiom$x:!A, \Gamma \fCenter \lfalse$
+\RightLabel{\Intro{\lnot}}
+\UnaryInf$ \Gamma \fCenter \lnot !A $
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter \lnot !A $
+\Axiom$\Gamma_2 \fCenter !A $
+\RightLabel{\Elim{\lnot}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter \lfalse$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter !A(a) $
+\RightLabel{\Intro{\lforall}}
+\UnaryInf$\Gamma \fCenter \lforall[x][!A(x)]$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \lforall[x][!A(x)]$
+\RightLabel{\Elim{\lforall}}
+\UnaryInf$\Gamma \fCenter !A(t)$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter !A(t) $
+\RightLabel{\Intro{\lexists}}
+\UnaryInf$\Gamma \fCenter \lexists[x][!A(x)]$
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter  \lexists[x][!A(x)]$
+\Axiom$x: !A(a), \Gamma_2 \fCenter !C$
+\RightLabel{\Elim{\lexists}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter !C$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter \lfalse$
+\RightLabel{\FalseInt}
+\UnaryInf$\Gamma \fCenter !A$
+\DisplayProof
+&
+\Axiom$x: \lnot !A, \Gamma \fCenter \lfalse$
+\RightLabel{\FalseCl}
+\UnaryInf$\Gamma \fCenter !A$
+\DisplayProof
+\end{tabular}
+\caption{د \Log{N2c} او \Log{N2i} قاعدې۔ په $\Intro{\forall}$ او
+$\Elim{\exists}$ کښې !!{constant}~$a$ بايد په پاييز سېکوېنټ کښې
+نۀ راځي؛ د موجود کميت د ايستلو په لويه مقدمه کښې هم دغه ثابت
+نۀ شي راتلے۔ $\Gamma_i$~د نښه لرونکو \psOblique{!!{formula}s}~$x :
+!A$ سټونه دي۔ د \Intro{\lforall} او \Elim{\lexists} قاعدې بايد
+د ځانګړي متغير شرط پوره کړي: $a$ بايد په پاييز سېکوېنټ کښې
+نۀ راځي او د موجود کميت د ايستلو په لويه مقدمه کښې هم نۀ راځي۔
+\Log{N2i} د \FalseCl لرونکے نۀ دے۔}
+\textbf{سرچينه‌يي سمون OLCMP-139:} د موجود کميت په لويه
+مقدمه کښې هم ځانګړے ثابت نۀ راځي؛ يوازې د پاييز سېکوېنټ
+تازګي کافي نۀ ده۔ د N1 اصلي شرط دا اړين قيد هم لري۔
+\ollabel{tab:N2}
+\end{table}
+
+\end{document}

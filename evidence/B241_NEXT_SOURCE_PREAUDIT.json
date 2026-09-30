@@ -1,0 +1,89 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-09-30T22:53:52.355811+00:00",
+  "status": "Complete667 draft and whole0344 comparison; registration/QA pending",
+  "unit_id": "OLP-0667",
+  "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+  "target_sha256": "388d67f71a3782861e7066e280d1d91916b08c4c462216bca11275e6e820d05e",
+  "paired_source_blocks": 5,
+  "source_proof_trees": 16,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-139",
+      "unit_id": "OLP-0667",
+      "source_line_1based": 103,
+      "exact_original_text": "the !!{constant}~$a$ must not occur in the\nconclusion sequent.",
+      "exact_proposed_source_text": "the !!{constant}~$a$ must not occur in the\nconclusion sequent and, for existential elimination, must also not occur in the major premise.",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "eigenvariable condition: $a$ must not occur in the conclusion sequent.",
+          "exact_proposed_source_text": "eigenvariable condition: $a$ must not occur in the conclusion sequent and, for existential elimination, must also not occur in the major premise."
+        }
+      ],
+      "reason": "The actual N1 rule requires the eigenconstant absent from the existential matrix/major formula, the minor conclusion and remaining open assumptions. The printed N2 condition only mentions the conclusion sequent. With Gamma1={forall y exists x R(x,y)}, Gamma2={forall y not R(y,y)}, universal elimination yields exists x R(x,a), and the illicit choice of the same a as existential eigenconstant allows a minor assumption R(a,a), not R(a,a), and false. No a occurs in either Gamma or false. On D={0,1}, R=inequality, both Gamma true and false false. Thus the omitted major-premise freshness is necessary; no diagram alteration needed."
+    },
+    {
+      "proposed_id": "OLSOL-017",
+      "unit_id": "OLP-0344",
+      "source_line_1based": 64,
+      "exact_original_text": "Variables that are in the scope of a $\\lambd$ are called ``bound'',\nwhile others are called ``free.''",
+      "exact_proposed_source_text": "Variable occurrences in the scope of an enclosing $\\lambd$ abstraction that binds that same variable are called ``bound'', while other occurrences are called ``free.''",
+      "additional_exact_source_fragments": [],
+      "reason": "The source own example (lambda z.yz)x makes y free inside lambda z scope. Merely being inside any abstraction does not bind y; the enclosing binder must match its variable. Occurrence wording handles a variable with both free and bound occurrences. Existing formulas and expanded nesting remain exact; no independent speculative alpha-renaming defect is added."
+    }
+  ],
+  "primary_contexts": [
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true,
+      "locators": [
+        "116-129",
+        "174-197"
+      ]
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+      "sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+      "actually_read": true,
+      "locators": [
+        "caption"
+      ]
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/syntax.tex",
+      "sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+      "actually_read": true,
+      "locators": [
+        "entire source, especially final binding definition and own example"
+      ]
+    }
+  ],
+  "finite_countermodel": {
+    "domain": [
+      0,
+      1
+    ],
+    "R": "inequality",
+    "a": 0,
+    "truth": {
+      "Gamma1": true,
+      "Gamma2": true,
+      "major_at_a0": true,
+      "minor_assumption_Raa": false,
+      "conclusion_false": false
+    }
+  },
+  "whole0344": {
+    "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+    "target_sha256_before": "99e268be05b68a5d956ca042f9eda6525de3080416f13c046fc6830116bd3ad9",
+    "target_sha256_after": "5a81d37f97b56faf5f2b3cd99bf4da945e6dec75a42063994e95cf7fa3e01a72",
+    "source_and_target_read_completely": true,
+    "changes": [
+      "Correct bound occurrence by matching enclosing binder; disclose OLSOL-017",
+      "Explicit pure-calculus negative and registered azad spelling and Pakistani final ye"
+    ],
+    "scope": "All original terms, four inductive clauses, three conventions, nested expansion and alpha-equivalence examples unchanged; source own counterexample determines the binding correction."
+  },
+  "next_action": "Register complete667 and whole0344 with exact rules/math, retained prior families and source notes; dualQA/accept/publication then668/0345. Full722 active."
+}

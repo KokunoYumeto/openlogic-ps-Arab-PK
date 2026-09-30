@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 666,
-    "structural_pass": 666,
+    "draft_units": 667,
+    "structural_pass": 667,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B240-N1-RULES-LAMBDA-OVERVIEW",
+  "batch": "PS-B241-N2-RULES-LAMBDA-SYNTAX",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11736,7 +11736,7 @@
       "unit_id": "OLP-0344",
       "path": "content/lambda-calculus/introduction/syntax.tex",
       "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
-      "translation_sha256": "99e268be05b68a5d956ca042f9eda6525de3080416f13c046fc6830116bd3ad9",
+      "translation_sha256": "5a81d37f97b56faf5f2b3cd99bf4da945e6dec75a42063994e95cf7fa3e01a72",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -11758,7 +11758,9 @@
       "allowed_residual_english": [],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [],
+      "source_correction_ids": [
+        "OLSOL-017"
+      ],
       "status": "structural-pass"
     },
     {
@@ -22918,6 +22920,39 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0667",
+      "path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "translation_sha256": "388d67f71a3782861e7066e280d1d91916b08c4c462216bca11275e6e820d05e",
+      "source_blocks": 5,
+      "target_blocks": 5,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {
+        "\\psOblique": 1
+      },
+      "source_correction_ids": [
+        "OLCMP-139"
+      ],
       "status": "structural-pass"
     }
   ],
@@ -41232,6 +41267,54 @@
       "unit_id": "OLP-0343",
       "passage": "OLP-0343-B011",
       "reverse_paraphrase": "د لامبډا حساب څېړنه په نظري کمپيوټر ساينس او د پروګرامي ژبو په طرحه کښې مرکزي اهميت لري؛ د LISP اصلي نوم، د جان مک‌کارتي نسبت او ۱۹۵۰مې لسيزې تاريخ عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0667",
+      "passage": "OLP-0667-B004",
+      "reverse_paraphrase": "د N2i او N2c ټول شپاړس اصلي استنتاجي رسمونه او بشپړ جدول عين دي؛ د ځانګړي متغير شرط په پاييز سېکوېنټ کښې د ثابت راتګ منع کوي او د موجود کميت د ايستلو لويه مقدمه هم تازه ثابت غواړي۔ د سرچينې ۱۳۹ سمون په ښکاره ياد شوے دے؛ نښه لرونکي فرضونه او د کلاسيکي محال قاعدې توپير عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B004",
+      "reverse_paraphrase": "د لامبډا حساب د نحو اصلي سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B005",
+      "reverse_paraphrase": "د متغير او ثابت لړۍ، څلور استقرايي ترمي شرطونه، د تطبيق او تجريد دواړه بڼې عين دي؛ فورمولونه نۀ بدلېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B006",
+      "reverse_paraphrase": "خالص لامبډا حساب هېڅ ثابت نۀ لري؛ ټول واړه توري متغيرونه او لوی توري ترمونه ښيي۔ منفي فعل واضح شوے دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B007",
+      "reverse_paraphrase": "د نښو اصلي دودونو ته هماغه لنډه لارښوونه ده۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B008",
+      "reverse_paraphrase": "تطبيق چپ اړخ ته قوس اخلي، تجريد پراخه ساحه اخلي او د څو متغيرونو تجريد د پرله‌پسې واحدو تجريدونو لنډيز دے؛ ټول درې اصل مثالونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B009",
+      "reverse_paraphrase": "د ګډ تطبيق او تجريد بشپړه قوس‌لرونکې بڼه عين ده؛ د دودونو د زده کولو اصلي لارښوونه بشپړه ساتل شوې ده۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0344",
+      "passage": "OLP-0344-B010",
+      "reverse_paraphrase": "د تړلو متغيرونو د نوم بدلولو الفا معادلتوب او مثالونه عين دي۔ تړلے راتګ بايد د هماغه متغير په تړونکي تجريد کښې وي؛ په وروستي مثال کښې y او x ازاد او z تړلے دے، د سرچينې خپل مثال د ۰۱۷ سمون شاهد دے۔ د ازاد املا او پاکستاني يو شانوالے لفظ سم شول۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
     }
   ],

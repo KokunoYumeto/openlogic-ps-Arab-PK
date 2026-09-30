@@ -21041,6 +21041,113 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-139",
+      "unit_id": "OLP-0667",
+      "classification": "existential-elimination-major-premise-freshness",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "source_locator": "content/proof-theory/natural-deduction/rules-N2.tex:103",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/rules-N2.tex",
+      "target_sha256": "388d67f71a3782861e7066e280d1d91916b08c4c462216bca11275e6e820d05e",
+      "target_line_1based": 9,
+      "disclosure_line_1based": 110,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د N2i او N2c ټول شپاړس اصلي استنتاجي رسمونه او بشپړ جدول عين دي؛ د ځانګړي متغير شرط په پاييز سېکوېنټ کښې د ثابت راتګ منع کوي او د موجود کميت د ايستلو لويه مقدمه هم تازه ثابت غواړي۔ د سرچينې ۱۳۹ سمون په ښکاره ياد شوے دے؛ نښه لرونکي فرضونه او د کلاسيکي محال قاعدې توپير عين دي۔",
+      "reason": "د N2i او N2c ټول شپاړس اصلي استنتاجي رسمونه او بشپړ جدول عين دي؛ د ځانګړي متغير شرط په پاييز سېکوېنټ کښې د ثابت راتګ منع کوي او د موجود کميت د ايستلو لويه مقدمه هم تازه ثابت غواړي۔ د سرچينې ۱۳۹ سمون په ښکاره ياد شوے دے؛ نښه لرونکي فرضونه او د کلاسيکي محال قاعدې توپير عين دي۔",
+      "exact_original_text": "the !!{constant}~$a$ must not occur in the\nconclusion sequent.",
+      "exact_proposed_source_text": "the !!{constant}~$a$ must not occur in the\nconclusion sequent and, for existential elimination, must also not occur in the major premise.",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "eigenvariable condition: $a$ must not occur in the conclusion sequent.",
+          "exact_proposed_source_text": "eigenvariable condition: $a$ must not occur in the conclusion sequent and, for existential elimination, must also not occur in the major premise."
+        }
+      ],
+      "primary_verification": "The actual N1 rule requires the eigenconstant absent from the existential matrix/major formula, the minor conclusion and remaining open assumptions. The printed N2 condition only mentions the conclusion sequent. With Gamma1={forall y exists x R(x,y)}, Gamma2={forall y not R(y,y)}, universal elimination yields exists x R(x,a), and the illicit choice of the same a as existential eigenconstant allows a minor assumption R(a,a), not R(a,a), and false. No a occurs in either Gamma or false. On D={0,1}, R=inequality, both Gamma true and false false. Thus the omitted major-premise freshness is necessary; no diagram alteration needed.",
+      "formula_policy": "ټول رياضي بايټونه او اصلي رسمونه عين دي؛ يوازې کره شرط او څرګندونه سمه شوې ده۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B241-N2-RULES-LAMBDA-SYNTAX",
+      "audit_artifacts": [
+        "B241_SOURCE_AUDIT.json",
+        "B241_FINAL_DRAFT_QA.json",
+        "B241_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-017",
+      "unit_id": "OLP-0344",
+      "classification": "lambda-binding-matching-variable-occurrences",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/lambda-calculus/introduction/syntax.tex",
+      "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+      "source_locator": "content/lambda-calculus/introduction/syntax.tex:64",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/syntax.tex",
+      "target_sha256": "5a81d37f97b56faf5f2b3cd99bf4da945e6dec75a42063994e95cf7fa3e01a72",
+      "target_line_1based": 57,
+      "disclosure_line_1based": 69,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د تړلو متغيرونو د نوم بدلولو الفا معادلتوب او مثالونه عين دي۔ تړلے راتګ بايد د هماغه متغير په تړونکي تجريد کښې وي؛ په وروستي مثال کښې y او x ازاد او z تړلے دے، د سرچينې خپل مثال د ۰۱۷ سمون شاهد دے۔ د ازاد املا او پاکستاني يو شانوالے لفظ سم شول۔",
+      "reason": "د تړلو متغيرونو د نوم بدلولو الفا معادلتوب او مثالونه عين دي۔ تړلے راتګ بايد د هماغه متغير په تړونکي تجريد کښې وي؛ په وروستي مثال کښې y او x ازاد او z تړلے دے، د سرچينې خپل مثال د ۰۱۷ سمون شاهد دے۔ د ازاد املا او پاکستاني يو شانوالے لفظ سم شول۔",
+      "exact_original_text": "Variables that are in the scope of a $\\lambd$ are called ``bound'',\nwhile others are called ``free.''",
+      "exact_proposed_source_text": "Variable occurrences in the scope of an enclosing $\\lambd$ abstraction that binds that same variable are called ``bound'', while other occurrences are called ``free.''",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The source own example (lambda z.yz)x makes y free inside lambda z scope. Merely being inside any abstraction does not bind y; the enclosing binder must match its variable. Occurrence wording handles a variable with both free and bound occurrences. Existing formulas and expanded nesting remain exact; no independent speculative alpha-renaming defect is added.",
+      "formula_policy": "ټول رياضي بايټونه او اصلي رسمونه عين دي؛ يوازې کره شرط او څرګندونه سمه شوې ده۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B241-N2-RULES-LAMBDA-SYNTAX",
+      "audit_artifacts": [
+        "B241_SOURCE_AUDIT.json",
+        "B241_FINAL_DRAFT_QA.json",
+        "B241_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
