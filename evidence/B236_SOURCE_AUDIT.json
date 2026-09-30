@@ -1,0 +1,202 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T21:28:05.469015+00:00",
+  "status": "بشپړ OLP-0662 او بشپړه OLP-0339 بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0662",
+      "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+      "source_sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+      "source_bytes": 3176,
+      "target_sha256": "2b148003ed34cd7f613f1d1198994f21f4bdadfd0e830db73f5f021b585f1496",
+      "target_bytes": 4913,
+      "paired_blocks": 15,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "source_proof_tree_retained": true,
+        "source_induction_stub_retained": true,
+        "original_title_proof_plural_macro_retained": true,
+        "no_extra_proof_tree": true
+      },
+      "source_correction_ids": [
+        "OLCMP-130",
+        "OLCMP-131",
+        "OLCMP-132",
+        "OLCMP-133"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0339",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "target_sha256_before": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_sha256_after": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_bytes": 4899,
+      "paired_blocks": 11,
+      "source_correction_ids": [],
+      "reverified_existing_source_correction_ids": [
+        "OLSOL-007",
+        "OLSOL-008",
+        "OLSOL-009"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ معنايي او علمي نثر لومړنے شاهد دے؛ د پېوندولو يا د شمېرنيز سور عين تخنيکي مرکب نۀ تصديقېږي۔",
+      "evidence_limit": "پاکستانے بالغ معنايي او علمي نثر لومړنے شاهد دے؛ د پېوندولو يا د شمېرنيز سور عين تخنيکي مرکب نۀ تصديقېږي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د ثبوت او فرض او بديهي شېما نثر ښيي؛ د نښو د فرض ايستلو کره قاعده سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د ثبوت او فرض او بديهي شېما نثر ښيي؛ د نښو د فرض ايستلو کره قاعده سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د استقرا بنسټ او ګام ښيي؛ د ثبوت پر لوړوالي د اصلي لنډې استقرا بشپړتيا نۀ ادعا کېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د استقرا بنسټ او ګام ښيي؛ د ثبوت پر لوړوالي د اصلي لنډې استقرا بشپړتيا نۀ ادعا کېږي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "77",
+      "pdf_page_1based": 88,
+      "page_image_sha256": "3d91d98e0273df13e0f37fbe48abd519f8072b0b0aae2c7bb7cadb8f875fea39",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ همشمېره‌والے د دوه‌اړخيزې يو پر يو تابع په توګه ښيي؛ په کوچنۍ اندازه د فرعي سټونو شرط سرچينه او سم شوې صيغه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ همشمېره‌والے د دوه‌اړخيزې يو پر يو تابع په توګه ښيي؛ په کوچنۍ اندازه د فرعي سټونو شرط سرچينه او سم شوې صيغه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "78",
+      "pdf_page_1based": 89,
+      "page_image_sha256": "75f7ee2621050fd9ef60ba53b56c0c7e5e017a7beca2bf4b326ef1e1ae4304ef",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د اندازې ترتيب او کلک توپير د سټونو د تابعو له مخې ښيي؛ د ټولې تعريف ساحې له يو پر يو شرط سره ئې مه ګډوئ۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د اندازې ترتيب او کلک توپير د سټونو د تابعو له مخې ښيي؛ د ټولې تعريف ساحې له يو پر يو شرط سره ئې مه ګډوئ۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P99-COUNTABILITY",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "99",
+      "pdf_page_1based": 110,
+      "page_image_sha256": "dc729b28c01ff40d57f7caccf5be50f7f11dbc51aa144d53f4cb5c446a195049",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ متناهي او د شمېر وړ سټونه، د غيرخالي سټ شمېرل او د خالي حالت توپير په اصل کښې ښيي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ متناهي او د شمېر وړ سټونه، د غيرخالي سټ شمېرل او د خالي حالت توپير په اصل کښې ښيي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "111",
+      "pdf_page_1based": 122,
+      "page_image_sha256": "4386cf0b75920f4777a6e80241c242d576da8a86f778b45cf6dd59f7e57efb67",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د حقيقي اعدادو ناشمېرېدونکے والے او قطري طريقه ښيي؛ خپل اعشاري ثبوت د اصل په دويمه درجه صيغه کښې نۀ واردېږي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د حقيقي اعدادو ناشمېرېدونکے والے او قطري طريقه ښيي؛ خپل اعشاري ثبوت د اصل په دويمه درجه صيغه کښې نۀ واردېږي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P192-DEDEKIND-FINITE",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "192",
+      "pdf_page_1based": 203,
+      "page_image_sha256": "c83532df1dcb4602632b929578b3aa2f8ba988ed147151c536a6ef364bd2a89f",
+      "actual_consultation": "د B236 مسودې او بشپړې بياکتنې مخکې اته کره اصلي مخونه په سترګو ولوستل شول؛ پاکستانے نثر لومړنے او افغان تخنيکي شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ د ډېډېکينډ متناهي او عادي متناهي توپير او د ټاکنې د اصل نقش ښکاره کوي؛ دا د سرچينې د چوکاټ د کتنې شاهد دے، نۀ د ژباړې په بدن کښې نوے درس۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ د ډېډېکينډ متناهي او عادي متناهي توپير او د ټاکنې د اصل نقش ښکاره کوي؛ دا د سرچينې د چوکاټ د کتنې شاهد دے، نۀ د ژباړې په بدن کښې نوے درس۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "AF-BUKOVSKY-P77-CARDINAL-EQUIVALENCE",
+    "AF-BUKOVSKY-P78-CARDINAL-ORDER",
+    "AF-BUKOVSKY-P99-COUNTABILITY",
+    "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+    "AF-BUKOVSKY-P192-DEDEKIND-FINITE"
+  ],
+  "new_term_ids": [
+    "TERM-NATURAL-DEDUCTION-GRAFTING"
+  ],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-130",
+    "OLCMP-131",
+    "OLCMP-132",
+    "OLCMP-133"
+  ],
+  "reverified_existing_source_correction_ids": [
+    "OLSOL-007",
+    "OLSOL-008",
+    "OLSOL-009"
+  ],
+  "new_review_entry_ids": [
+    "TERM-NATURAL-DEDUCTION-GRAFTING",
+    "DEC-OLCMP-130",
+    "DEC-OLCMP-131",
+    "DEC-OLCMP-132",
+    "DEC-OLCMP-133"
+  ],
+  "revised_review_entry_ids": [
+    "DEC-OLSOL-007",
+    "DEC-OLSOL-008",
+    "DEC-OLSOL-009"
+  ],
+  "semantic_samples_added": 16,
+  "focused_qa_sha256": "696002e24dd1302a8177f38bfc8f00dfee0b357415dc546aba82d9598936452a",
+  "model_provenance_sha256": "4605ece818805339876a90899ea29639ed9eebff3e016e680da80137da270479",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0339.json",
+  "related_reaudit_sha256": "e52ee79af77941f52e6571e142fb90960abda70e3562deabcf5ede98b7169baf",
+  "source_convention_review_sha256": "34a28919d75c52d6fd79d262b5194771ac0d701cb4bb98ce8ce568a72780a2e8",
+  "unresolved": "۶۰ واحدونه، د تجربوي برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۷۰ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۶۲ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ بشپړ OLP-0663 او OLP-0340 دوام؛ د TeX د ځای اشغال د ژباړې خنډ نۀ دے۔"
+}

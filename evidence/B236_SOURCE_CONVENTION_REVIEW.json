@@ -1,0 +1,71 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T21:28:05.469015+00:00",
+  "status": "PASS; exact source corrections and retained framework distinguished",
+  "preaudit_sha256": "ed283e9fa75ab934cc80c759228ac1e9e26372445e636b9c6cd043d9a9e9182a",
+  "primary_contexts": [
+    {
+      "path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true
+    },
+    {
+      "path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "actually_read": true
+    },
+    {
+      "path": "content/proof-theory/natural-deduction/sequents.tex",
+      "sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "actually_read": true
+    },
+    {
+      "path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "actually_read": true
+    },
+    {
+      "path": "content/set-theory/choice/countablechoice.tex",
+      "sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+      "actually_read": true
+    },
+    {
+      "path": "content/set-theory/cardinals/milestone.tex",
+      "sha256": "50f4f989834763156b2d27822acd03201532846baa243a8f97d6b3fa299a54fd",
+      "actually_read": true
+    }
+  ],
+  "grafting_counterexample": {
+    "delta1": "Open P^x and inner P^y yield P and P; implication introduction discharges y and yields P -> (P and P) with open P^x.",
+    "delta2": "The single open assumption P^y proves P.",
+    "source_hypotheses_hold": "Labels x,y have the same formula P; compatibility holds and no eigenvariables occur.",
+    "after_grafting": "Replacing the x leaf by delta2 places both y leaves above the same implication introduction; both are discharged. The result is closed, contradicting the claimed union of the old open assumption sets.",
+    "exact_corrected_scope": "Unreplaced original open leaves plus inserted leaves that remain undischarged; no fabricated fresh-label condition."
+  },
+  "whole0339_review": {
+    "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+    "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+    "before_audit_backup_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+    "source_and_target_read_completely": true,
+    "target_retained_unchanged": true,
+    "existing_source_corrections_rechecked": [
+      "OLSOL-007",
+      "OLSOL-008",
+      "OLSOL-009"
+    ],
+    "verification": "Self-map closure defeats the finite singleton outside-map counterexample. Count includes the empty set and requires inclusion in every seed-closed set, equivalently the least generated orbit. Aleph1 is uncountable and every strictly smaller subset countable under the source cardinal/choice framework; new015 equinumerosity restriction now governs this comparison.",
+    "choice_scope": "Actual source Countable Choice and ZFC milestone plus native Dedekind comparator consulted. Dedekind-infinite vs arbitrary infinite distinction is retained as reviewed framework context, not added optional body exposition or a new unconditional source erratum.",
+    "new_whole_unit_receipt_pending": true,
+    "existing_action_metadata_needs_exact_source_proposed_text_and_fresh_target_binding": true
+  },
+  "rechecked_existing_action_ids": [
+    "OLSOL-007",
+    "OLSOL-008",
+    "OLSOL-009"
+  ],
+  "original_induction_stub_not_completed": true,
+  "choice_background_not_added_to_target": true,
+  "no_optional_background_or_exercise_solution_added": true,
+  "title_plural_source_token_expands_correctly": true,
+  "frozen_sources_unchanged": true
+}

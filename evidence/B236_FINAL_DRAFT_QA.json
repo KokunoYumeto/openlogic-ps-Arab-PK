@@ -1,0 +1,102 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-09-30T21:28:05.469015+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0662",
+      "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+      "source_sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+      "source_bytes": 3176,
+      "target_sha256": "2b148003ed34cd7f613f1d1198994f21f4bdadfd0e830db73f5f021b585f1496",
+      "target_bytes": 4913,
+      "paired_blocks": 15,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "source_proof_tree_retained": true,
+        "source_induction_stub_retained": true,
+        "original_title_proof_plural_macro_retained": true,
+        "no_extra_proof_tree": true
+      },
+      "source_correction_ids": [
+        "OLCMP-130",
+        "OLCMP-131",
+        "OLCMP-132",
+        "OLCMP-133"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0339",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "source_sha256": "2383760cd26cb2fa42f968483e74a90dfd4a1e5de3361d21322508282bf588b6",
+      "target_sha256_before": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_sha256": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_sha256_after": "16f12e1957fbcdefa460b6b650b22ed899972118612f7e347f9fe15502bb5570",
+      "target_bytes": 4899,
+      "paired_blocks": 11,
+      "source_correction_ids": [],
+      "reverified_existing_source_correction_ids": [
+        "OLSOL-007",
+        "OLSOL-008",
+        "OLSOL-009"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0662": {
+      "math": true,
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "environment_order_equal": true,
+      "comments_equal": true,
+      "source_proof_tree_retained": true,
+      "source_induction_stub_retained": true,
+      "original_title_proof_plural_macro_retained": true,
+      "no_extra_proof_tree": true
+    },
+    "OLP-0339": {
+      "math": true,
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "environment_order_equal": true,
+      "comments_equal": true,
+      "target_body_byte_identical_to_before_audit": true
+    }
+  },
+  "source_proof_tree_retained": true,
+  "source_induction_stub_not_expanded": true,
+  "whole0339_body_unchanged": true,
+  "reverified_existing_action_ids": [
+    "OLSOL-007",
+    "OLSOL-008",
+    "OLSOL-009"
+  ]
+}
