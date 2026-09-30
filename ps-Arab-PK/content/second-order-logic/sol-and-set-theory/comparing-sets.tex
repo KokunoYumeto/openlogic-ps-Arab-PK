@@ -50,11 +50,14 @@ $\Sat{M}{\lexists[x][X(x)]}[s]$ هله او يوازې هله چې $s(X) \neq
 لاندې فورمول
 \begin{multline*}
   \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
-    \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \lforall[x][\lforall[y][((X(x) \land X(y) \land \eq[u(x)][u(y)]) \lif \eq[x][y])]]
   \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
       \land \eq[y][u(x)])])])]
 \end{multline*}
 د همشمېره‌والي اړيکه تعريفوي۔
+\textbf{سرچينه‌يي سمون OLSOL-015:} دلته د يو پر يو والي شرط يوازې
+د پرتله کېدونکي لومړي سټ پر غړو لګېږي؛ له سټ څخه بهر د تابعې
+پر ارزښتونو د يو پر يو والي غيرضروري شرط لرې شوے دے۔
 \end{prop}
 
 دا !!{formula}s به په ترتيب سره په $X \subseteq Y$، $X = Y$،

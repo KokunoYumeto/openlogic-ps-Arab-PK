@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 660,
-    "structural_pass": 660,
+    "draft_units": 661,
+    "structural_pass": 661,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B234-IMPLICATION-CUT-SOL-INTRODUCTION",
+  "batch": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11494,7 +11494,7 @@
       "unit_id": "OLP-0338",
       "path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
       "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
-      "translation_sha256": "ce8e18e590de59babc15f69b222b43646fe0193cd8c19d6a81a48cd19b4a37c9",
+      "translation_sha256": "b32afe4a0520605df6a4f936d9515e3fd100a36ebc03601c3c8c79c02cbc27d5",
       "source_blocks": 16,
       "target_blocks": 16,
       "checks": {
@@ -11516,8 +11516,19 @@
       "allowed_residual_english": [],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [],
-      "status": "structural-pass"
+      "source_correction_ids": [
+        "OLSOL-015"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+        ],
+        "expected_by_source_correction": true
+      }
     },
     {
       "unit_id": "OLP-0339",
@@ -22645,6 +22656,51 @@
           "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Pi\\fCenter\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]",
           "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda,!B$\\AxiomC{}\\RightLabel{$\\pi_2'''$}\\Deduce$!B,\\Gamma,\\Pi,\\Pi\\fCenter\\Delta,\\Lambda,\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma,\\Gamma,\\Pi,\\Pi,\\Pi\\fCenter\\Delta,\\Delta,\\Lambda,\\Lambda,\\Lambda$\\DisplayProof\\]",
           "$\\Gamma,\\Gamma,\\Pi,\\Pi,\\Pi\\fCenter\\Delta,\\Delta,\\Lambda,\\Lambda,\\Lambda$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0661",
+      "path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "translation_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "source_blocks": 22,
+      "target_blocks": 22,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-126",
+        "OLCMP-127",
+        "OLCMP-128",
+        "OLCMP-129"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\pi_1'$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$!\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\pi_1$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
         ],
         "expected_by_source_correction": true
       }
@@ -40404,6 +40460,168 @@
       "passage": "OLP-0337-B006",
       "reverse_paraphrase": "د تعريف ساحې پر فرعي سټونو او تابعو کميت اچول، د سټونو خاصيتونه بې له ځانګړي غيرمنطقي غړيتوب محموله بيانول، اتحاد او اشتراک او فرعي سټ اړيکه، د اندازو پرتله او د کانتور پايلې ټولې بېلې سرچينه‌يي دعوې عين ساتل شوې دي۔ د عين دويمې درجې کوډونو نوے ثبوت نۀ زياتېږي۔",
       "finding": "اصلي قواعد، د نقلونو شمېر، د پرېکون فارمول، استقرا او د غيرمنطقي لغت نشتوالے مستقلاً پرتله شول۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B005",
+      "reverse_paraphrase": "د منځني سېکوېنټ او د هېربراند د قضيو بشپړ سرليک۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B006",
+      "reverse_paraphrase": "د مقدم کميتي بڼې اصل تعريف، د منځني سېکوېنټ پاس گزاره‌يي او لاندې کميتي استنتاجونه او د هېربراند د فصل له توتولوژۍ وجودي جملې ته تېرېدل ساتل شوي؛ د وروستي متن د کميت نشتوالي اړين شرط څرګند شوے دے۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B007",
+      "reverse_paraphrase": "له کميت خالي وجودي جملې د ثبوت څخه د محدودو ترمونو فصل د ثبوت شتون عين ساتل شوے دے۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B008",
+      "reverse_paraphrase": "د هېربراند فصل له کميت خالي دے؛ بې‌پرېکونه ثبوت ئې يوازې گزاره‌يي استنتاجونه کاروي او توتولوژي ده۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B009",
+      "reverse_paraphrase": "د فصل د شتون ستونزمن جهت او د وجودي جملې د اثبات اسان معکوس جلا دي؛ د دوو ترمونو بشپړ اصلي رسم عين دے۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B010",
+      "reverse_paraphrase": "د وجودي قاعدو وروستنۍ ډله، منځنے سېکوېنټ او د غيرفعال وجودي سياق لرې کول ساتل شوي؛ د موجود فرعي ثبوت نوم ته رجوع سمه شوه۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B011",
+      "reverse_paraphrase": "په بې‌پرېکونه ثبوت کښې هم وجودي استنتاجونه ګډ راتلے شي؛ د منځني سېکوېنټ قضيې اړتيا عين ده۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B012",
+      "reverse_paraphrase": "د G3c قضيې فرض د پای سېکوېنټ مقدم کميتي بڼه ده، او پايله پاس گزاره‌يي او لاندې کميتي برخې جلا کوي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B013",
+      "reverse_paraphrase": "ترتيبي شمېر د هر کميتي استنتاج د لاندې گزاره‌يي استنتاجونو شمېر او د دې شمېرونو مجموعه ده۔ د پرېکون لرې کولو لومړنے ګام او د هېڅ کميتي استنتاج نشتوالي صفر حالت څرګند شول۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B014",
+      "reverse_paraphrase": "تر ټولو لاندې مثبت ترتيبي شمېر لرونکے کميتي استنتاج ټاکل، ورپسې گزاره‌يي قاعده او د فرعي فارمول په خاصيت د اصلي فارمول د سياق غړے کېدل بشپړ ساتل شوي دي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B015",
+      "reverse_paraphrase": "دوې بېلګې هماغه ترتيب لري۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B016",
+      "reverse_paraphrase": "د عمومي ښۍ قاعدې او د شرط تړنې کيڼې قاعدې بدلول، د ځانګړي متغير تازګي، کمزوري کول او دوه اصلي رسمونه عين دي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B017",
+      "reverse_paraphrase": "د تکراري عمومي فارمول انقباض، د معکوسولو د استنتاجونو د نۀ زياتولو نقش، لږ ترتيبي شمېر او استقرايي ګام ساتل شوي دي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B018",
+      "reverse_paraphrase": "وجودي ښۍ قاعده لومړے او گزاره‌يي conjunction وروسته راځي؛ په بدل شوي رسم کښې ترتيب سرچينه‌يي معکوس کېږي۔ دواړه رسمونه او د بلې مقدمې کمزوري کول ساتل شوي؛ اضافي د فارمول نښه له مقدم سياقه لرې شوه۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B019",
+      "reverse_paraphrase": "اصلي د دوو پاتې قاعدو تمرين عين ژباړل شوے، هېڅ حل يا نوې پرېکړه نۀ ورزياتېږي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0661",
+      "passage": "OLP-0661-B020",
+      "reverse_paraphrase": "د هېربراند د قضيې بشپړ ثبوت د منځني سېکوېنټ پاس غيراټومي او غيرفعال وجودي فارمول لرې کوي او د فصل محدود ښي استنتاجونه جوړوي؛ ټولې اصلي نښې عين دي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B005",
+      "reverse_paraphrase": "د سټونو پرتله کولو بشپړ سرليک۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B006",
+      "reverse_paraphrase": "فرعي سټ د هر غړي د مقدم شرط په تالي کښې د غړيتوب له ټوليزې معنا سره سم تعريفېږي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B007",
+      "reverse_paraphrase": "د سټونو يووالے د هر غړي د غړيتوب هم‌ارزوالي په فارمول کښې تعريفېږي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B008",
+      "reverse_paraphrase": "د غړي وجود د ناتشوالي عين خاصيت ښيي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B009",
+      "reverse_paraphrase": "لوے نۀ دے د يو پر يو تابع د شتون معنا لري، او ورودي غړي په اړوند تالي سټ کښې ارزښتونه لري۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B010",
+      "reverse_paraphrase": "لومړنے د اندازې د ترتيب سرچينه‌يي فارمول او دواړه اصلي شرطونه عين ساتل شوي دي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B011",
+      "reverse_paraphrase": "همشمېره‌والے د دوو پرتله شوو سټونو تر منځ دوه‌اړخيزې يو پر يو تابع شتون دے۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B012",
+      "reverse_paraphrase": "د همشمېره‌والي په فارمول کښې د ورودي سټ غړو دپاره يو پر يو والے او تالي سټ ته سرجنکتيف والے پوره دي۔ د ټولې تعريف ساحې يو پر يو شرط سرچينه‌يي عيب دے؛ د اصلي سټ پر غړو محدود شوے او کره څرګندونه ئې ورسره ده۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B013",
+      "reverse_paraphrase": "پنځه لنډې نښې د دويمې درجې يوځايي اړيکيز متغيرونو د فارمولونو لنډونونه دي، له غيررسمي سټونو سره د ګډې نښې اخطار عين دے۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B014",
+      "reverse_paraphrase": "په دواړو جهتونو د اندازې ترتيب همشمېره‌والے ورکوي؛ قضيه د سم شوي همشمېره‌والي له تعريف سره لوستل کېږي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "passage": "OLP-0338-B015",
+      "reverse_paraphrase": "په هر جوړښت او هر دوو فرعي سټونو کښې د شرودر–برنشتاين اصلي استدلال ساتل شوے؛ د شاهد بشپړ بهرنے ثبوت نۀ واردېږي۔",
+      "finding": "هر اړين شرط، د کميتي او گزاره‌يي استنتاجونو ترتيب، د فرعي ثبوت نوم او د تابع د سټ محدوديت مستقلاً پرتله شوے دے۔"
     }
   ],
   "builds": [

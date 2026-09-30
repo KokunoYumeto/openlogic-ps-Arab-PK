@@ -20105,6 +20105,263 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-126",
+      "unit_id": "OLP-0661",
+      "classification": "prenex-matrix-quantifier-free-condition",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "source_locator": "content/proof-theory/cut-elimination/midsequent.tex:19",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/midsequent.tex",
+      "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "target_line_1based": 13,
+      "disclosure_line_1based": 23,
+      "mode": "د سرچينې د اړين شرط يا نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "د مقدم کميتي بڼې اصل تعريف، د منځني سېکوېنټ پاس گزاره‌يي او لاندې کميتي استنتاجونه او د هېربراند د فصل له توتولوژۍ وجودي جملې ته تېرېدل ساتل شوي؛ د وروستي متن د کميت نشتوالي اړين شرط څرګند شوے دے۔",
+      "reason": "د مقدم کميتي بڼې تعريف د وروستي متن د کميت نشتوالي شرط غواړي۔ بې له دې شرطه د کميتونو له مقدمه وروسته هر بيا کميت لرونکے متن اجازه لري او د ثبوت فرعي فارمول استدلال نۀ تعقيبېږي۔ فورمولونه عين دي؛ اړين معنايي شرط څرګندېږي۔",
+      "exact_original_text": "(!!^a{formula}~$!A$ is \\emph{prenex} (or in\n\\emph{prenex form}) if it is of the form\n\\[\\mathsf{Q}_1x_1\\dots\\mathsf{Q}_nx_n\\,!B(x_1,\\dots,x_n)\\] where each\n$\\mathsf{Q}_i$ is either $\\lforall$ or~$\\lexists$.)",
+      "exact_proposed_source_text": "(!!^a{formula}~$!A$ is \\emph{prenex} (or in\n\\emph{prenex form}) if it is of the form\n\\[\\mathsf{Q}_1x_1\\dots\\mathsf{Q}_nx_n\\,!B(x_1,\\dots,x_n)\\] where each\n$\\mathsf{Q}_i$ is either $\\lforall$ or~$\\lexists$ and $!B$ is quantifier-free.)",
+      "formula_policy": "يوازې عين ثبت شوي لږ تر لږه سمونونه؛ ټولې نورې نښې او جوړښت او اصلي تمرينونه ساتل شوي دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
+      "audit_artifacts": [
+        "B235_SOURCE_AUDIT.json",
+        "B235_FINAL_DRAFT_QA.json",
+        "B235_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، کره قواعدو او اصلي شاهدانو له کتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-127",
+      "unit_id": "OLP-0661",
+      "classification": "midsequent-subproof-name-reference",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "source_locator": "content/proof-theory/cut-elimination/midsequent.tex:76",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/midsequent.tex",
+      "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "target_line_1based": 62,
+      "disclosure_line_1based": 78,
+      "mode": "د سرچينې د اړين شرط يا نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "د وجودي قاعدو وروستنۍ ډله، منځنے سېکوېنټ او د غيرفعال وجودي سياق لرې کول ساتل شوي؛ د موجود فرعي ثبوت نوم ته رجوع سمه شوه۔",
+      "reason": "د اړوند رسم فرعي ثبوت په pi1 نوم ښودل شوے، خو ورپسې متن ناټاکلي pi1prime ته رجوع کوي۔ عين موجود فرعي ثبوت ته رجوع سمه کېږي۔",
+      "exact_original_text": "inferences in~$\\pi_1'$",
+      "exact_proposed_source_text": "inferences in~$\\pi_1$",
+      "formula_policy": "يوازې عين ثبت شوي لږ تر لږه سمونونه؛ ټولې نورې نښې او جوړښت او اصلي تمرينونه ساتل شوي دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
+      "audit_artifacts": [
+        "B235_SOURCE_AUDIT.json",
+        "B235_FINAL_DRAFT_QA.json",
+        "B235_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، کره قواعدو او اصلي شاهدانو له کتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_1'$"
+        ],
+        "target_only": [
+          "$\\pi_1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-128",
+      "unit_id": "OLP-0661",
+      "classification": "extraneous-formula-prefix-on-context",
+      "reporting_lane": "source_erratum_small",
+      "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "source_locator": "content/proof-theory/cut-elimination/midsequent.tex:189",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/midsequent.tex",
+      "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "target_line_1based": 188,
+      "disclosure_line_1based": 206,
+      "mode": "د سرچينې د اړين شرط يا نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "وجودي ښۍ قاعده لومړے او گزاره‌يي conjunction وروسته راځي؛ په بدل شوي رسم کښې ترتيب سرچينه‌يي معکوس کېږي۔ دواړه رسمونه او د بلې مقدمې کمزوري کول ساتل شوي؛ اضافي د فارمول نښه له مقدم سياقه لرې شوه۔",
+      "reason": "وجودي ښۍ قاعده يوازې فعال شاهد فارمول له تالي لرې کوي؛ مقدم سياق عين Gamma دے۔ په source کښې پر Gamma اضافي د فارمول نښه ده، چې د دواړو مقدماتو او د لاندې conjunction ګډ سياق سره نۀ سمون خوري۔",
+      "exact_original_text": "\\[\n\\AxiomC{}\n\\RightLabel{$\\pi_2$}\n\\Deduce$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !A(t), !B$\n\\RightLabel{\\RightR{\\lexists}}\n\\UnaryInf$!\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !B$\n\\AxiomC{}\n\\RightLabel{$\\pi_3$}\n\\Deduce$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !C$\n\\RightLabel{\\RightR{\\land}}\n\\BinaryInf$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !B \\land !C$\n\\DisplayProof\n\\]",
+      "exact_proposed_source_text": "\\[\n\\AxiomC{}\n\\RightLabel{$\\pi_2$}\n\\Deduce$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !A(t), !B$\n\\RightLabel{\\RightR{\\lexists}}\n\\UnaryInf$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !B$\n\\AxiomC{}\n\\RightLabel{$\\pi_3$}\n\\Deduce$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !C$\n\\RightLabel{\\RightR{\\land}}\n\\BinaryInf$\\Gamma' \\fCenter \\Delta', \\lexists[x][!A(x)], !B \\land !C$\n\\DisplayProof\n\\]",
+      "formula_policy": "يوازې عين ثبت شوي لږ تر لږه سمونونه؛ ټولې نورې نښې او جوړښت او اصلي تمرينونه ساتل شوي دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
+      "audit_artifacts": [
+        "B235_SOURCE_AUDIT.json",
+        "B235_FINAL_DRAFT_QA.json",
+        "B235_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، کره قواعدو او اصلي شاهدانو له کتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$!\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-129",
+      "unit_id": "OLP-0661",
+      "classification": "midsequent-order-proof-start-and-zero-case",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "source_locator": "content/proof-theory/cut-elimination/midsequent.tex:101",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/midsequent.tex",
+      "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "target_line_1based": 104,
+      "disclosure_line_1based": 113,
+      "mode": "د سرچينې د اړين شرط يا نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "ترتيبي شمېر د هر کميتي استنتاج د لاندې گزاره‌يي استنتاجونو شمېر او د دې شمېرونو مجموعه ده۔ د پرېکون لرې کولو لومړنے ګام او د هېڅ کميتي استنتاج نشتوالي صفر حالت څرګند شول۔",
+      "reason": "د پرېکون لرې کولو له مخې لومړے بې‌پرېکونه ثبوت اخستل د وروسته فرعي فارمول استدلال اړين شرط دے۔ صفر ترتيبي شمېر کميتي استنتاج نۀ تضمينوي؛ که يو هم نۀ وي، پای سېکوېنټ هماغه اړين منځنے سېکوېنټ دے۔ که وي، د سرچينې يو‌مقدمې زنځير استدلال عين پاتې دے۔",
+      "exact_original_text": "\\begin{proof}\n  Define the \\emph{order} of a quantifier inference in~$\\pi$ as the\n  number of propositional inferences below it, and the order~$o(\\pi)$\n  of $\\pi$ as the sum of the orders of all its quantifier inferences.\n  If $o(\\pi) = 0$, then no quantifier inference has a propositional\n  inference below it, and we are done: Since all quantifier inferences\n  have one premise, there is a single topmost quantifier inference.\n  Its premise is the midsequent.",
+      "exact_proposed_source_text": "\\begin{proof}\n  By cut elimination, we may assume that $\\pi$ is cut-free.\n  Define the \\emph{order} of a quantifier inference in~$\\pi$ as the\n  number of propositional inferences below it, and the order~$o(\\pi)$\n  of $\\pi$ as the sum of the orders of all its quantifier inferences.\n  If $o(\\pi) = 0$, then no quantifier inference has a propositional\n  inference below it, and we are done: If there are no quantifier inferences, take the end-sequent as the midsequent. Otherwise, since all quantifier inferences\n  have one premise, there is a single topmost quantifier inference.\n  Its premise is the midsequent.",
+      "formula_policy": "يوازې عين ثبت شوي لږ تر لږه سمونونه؛ ټولې نورې نښې او جوړښت او اصلي تمرينونه ساتل شوي دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
+      "audit_artifacts": [
+        "B235_SOURCE_AUDIT.json",
+        "B235_FINAL_DRAFT_QA.json",
+        "B235_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، کره قواعدو او اصلي شاهدانو له کتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-015",
+      "unit_id": "OLP-0338",
+      "classification": "equinumerosity-restriction-of-total-function-injectivity",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+      "source_locator": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex:51",
+      "target_path": "ps-Arab-PK/content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "target_sha256": "b32afe4a0520605df6a4f936d9515e3fd100a36ebc03601c3c8c79c02cbc27d5",
+      "target_line_1based": 49,
+      "disclosure_line_1based": 58,
+      "mode": "د سرچينې د اړين شرط يا نښې کره سمون او پښتو څرګندونه",
+      "translation_change": "د همشمېره‌والي په فارمول کښې د ورودي سټ غړو دپاره يو پر يو والے او تالي سټ ته سرجنکتيف والے پوره دي۔ د ټولې تعريف ساحې يو پر يو شرط سرچينه‌يي عيب دے؛ د اصلي سټ پر غړو محدود شوے او کره څرګندونه ئې ورسره ده۔",
+      "reason": "د تابع متغير پر ټوله تعريف ساحه تابع ټاکي، خو همشمېره‌والے يوازې د دوو فرعي سټونو تر منځ دوه‌اړخيزه يو پر يو تابع غواړي۔ د ټولې ساحې يو پر يو شرط ناسم دے: په طبيعي اعدادو کښې جفت اعداد له ټولې ساحې سره همشمېره دي، خو داسې ټوله يو پر يو تابع نشته چې د جفتو اعدادو انځور ئې ټوله ساحه وي۔ د ورودي سټ دواړو غړو پورې د يو پر يو شرط محدودول عيب سموي۔",
+      "exact_original_text": "\\begin{multline*}\n  \\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land {}\\\\\n    \\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)] \\lif \\eq[x][y])]]\n  \\land {} \\\\\\lforall[y][(Y(y) \\lif \\lexists[x][(X(x)\n      \\land \\eq[y][u(x)])])])]\n\\end{multline*}",
+      "exact_proposed_source_text": "\\begin{multline*}\n  \\lexists[u][(\\lforall[x][(X(x) \\lif Y(u(x)))] \\land {}\\\\\n    \\lforall[x][\\lforall[y][((X(x) \\land X(y) \\land \\eq[u(x)][u(y)]) \\lif \\eq[x][y])]]\n  \\land {} \\\\\\lforall[y][(Y(y) \\lif \\lexists[x][(X(x)\n      \\land \\eq[y][u(x)])])])]\n\\end{multline*}",
+      "formula_policy": "يوازې عين ثبت شوي لږ تر لږه سمونونه؛ ټولې نورې نښې او جوړښت او اصلي تمرينونه ساتل شوي دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B235-MIDSEQUENT-HERBRAND-SET-COMPARISON",
+      "audit_artifacts": [
+        "B235_SOURCE_AUDIT.json",
+        "B235_FINAL_DRAFT_QA.json",
+        "B235_SOURCE_CONVENTION_REVIEW.json"
+      ],
+      "decision_timing": "د بشپړې سرچينې، کره قواعدو او اصلي شاهدانو له کتنې وروسته، له دوه‌ګونې کتنې مخکې ثبت۔",
+      "upstream_reporting": "نوے پيغام يا پوسټ نۀ دے شوی؛ د سرچينې له پېژند سره د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][(\\eq[u(x)][u(y)]\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+        ],
+        "target_only": [
+          "\\begin{multline*}\\lexists[u][(\\lforall[x][(X(x)\\lifY(u(x)))]\\land{}\\\\\\lforall[x][\\lforall[y][((X(x)\\landX(y)\\land\\eq[u(x)][u(y)])\\lif\\eq[x][y])]]\\land{}\\\\\\lforall[y][(Y(y)\\lif\\lexists[x][(X(x)\\land\\eq[y][u(x)])])])]\\end{multline*}"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

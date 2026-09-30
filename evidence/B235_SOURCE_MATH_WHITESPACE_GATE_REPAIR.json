@@ -1,0 +1,17 @@
+{
+  "schema": "ps-source-math-whitespace-gate-repair/1",
+  "utc": "2026-09-30T21:06:57.766952+00:00",
+  "status": "PASS; exact complete source-wrapped inline formula preserved",
+  "reason": "The inherited whitespace gate recognizes display/align math lines but misses a wrapped inline formula beginning after localized prose. Extend only to a complete raw inline math span byte-identical in frozen source and accepted target; require its literal first line to be the trailing part of the reported target line, exact target SHA and all corpus checks. Ordinary prose spacing remains excluded.",
+  "unit_id": "OLP-0661",
+  "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+  "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+  "exact_raw_inline_span": "$\\Proves \n\\lexists[x][!B(x)]$",
+  "target_line_1based": 34,
+  "complete_raw_inline_span_identical": true,
+  "accepted_checkpoint_sha256": "11c18a56adec9ece818e8493269740bcb93749b3c3cfb80788eb01aa94afe098",
+  "publisher_helper_sha256": "2887a20c918f7b5d1eb3d02065da0ff829e1bf8db9d3f3dba15708180d6b1d34",
+  "independent_math_parser_sha256": "225dd0b66074124b6120fbf75e372e68366d16b6df93ad9ef7cbcf61eb6330c2",
+  "target_and_normative_register_unchanged": true,
+  "no_new_teX_acquisition": true
+}

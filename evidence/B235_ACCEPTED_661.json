@@ -1,0 +1,104 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T21:01:17.557103+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0661",
+  "draft_units": 661,
+  "remaining_unaccepted_units": 61,
+  "unit_ids": [
+    "OLP-0661"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "55d1ff033da5c5885cf86d6903eaf39a2b8c34602b39dc5500c8d1ccba244a3d",
+  "corpus_qa_sha256": "2a211d7af0b44a39911b96586fd51b5192977a558c4f049d8f8abcbce76c5607",
+  "canonical_replay_sha256": "bb0e902caba2dde3a27fd1ae2ed5c55885196c8d62215eef714f4c1c5f018fda",
+  "qa_sha256": "4a8114c81157450f0634ae5ea116bb95302306b9f27e38070f2877b241e80cfa",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0661",
+      "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+      "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+      "source_bytes": 11741,
+      "target_sha256": "3e5e59d7760720d33a32ce5058a91ad07b6f694135757bf41f4d2eb7eeb738a8",
+      "target_bytes": 15745,
+      "paired_blocks": 22,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true,
+        "six_trees_retained": true,
+        "five_trees_byte_identical": true,
+        "exercise_unexpanded": true,
+        "all_source_comments_retained": true
+      },
+      "source_correction_ids": [
+        "OLCMP-126",
+        "OLCMP-127",
+        "OLCMP-128",
+        "OLCMP-129"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0338",
+      "source_path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "source_sha256": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+      "target_sha256_before": "ce8e18e590de59babc15f69b222b43646fe0193cd8c19d6a81a48cd19b4a37c9",
+      "target_sha256": "b32afe4a0520605df6a4f936d9515e3fd100a36ebc03601c3c8c79c02cbc27d5",
+      "target_sha256_after": "b32afe4a0520605df6a4f936d9515e3fd100a36ebc03601c3c8c79c02cbc27d5",
+      "target_bytes": 3508,
+      "paired_blocks": 16,
+      "source_correction_ids": [
+        "OLSOL-015"
+      ]
+    }
+  ],
+  "aligned_blocks": 9818,
+  "segment_canon_uses": 6235,
+  "semantic_samples": 2986,
+  "canonical_counts": {
+    "decisions": 875,
+    "occurrences": 31935,
+    "terminology_decisions": 328,
+    "source_correction_decisions": 511,
+    "priority_decisions": 509,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 13716
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0662 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0339; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

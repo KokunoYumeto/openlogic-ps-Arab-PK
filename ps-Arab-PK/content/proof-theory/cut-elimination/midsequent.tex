@@ -1,0 +1,263 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: midsequent
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{mid}
+
+\olsection{د منځني سېکوېنټ قضيه او د هېربراند قضيه}
+
+د پرېکون لرې کولو د قضيې يوه مهمه پايله د منځني سېکوېنټ
+قضيه ده۔ دا وايي: که يو !!a{proof}~$\pi$ د~$\Gamma \Sequent \Delta$
+وي چې پکښې هر !!{formula} په مقدم کميتي بڼه وي، نو يو !!a{proof}~$\pi'$
+شته چې يو سېکوېنټ $S \ident \Pi \Sequent
+\Lambda$ (\emph{منځنے سېکوېنټ}) لري، داسې چې په~$\pi'$ کښې د~$S$
+پاس ټول استنتاجونه گزاره‌يي او د~$S$ لاندې ټول استنتاجونه د کميت
+اچوونکو وي۔ (!!^a{formula}~$!A$ ته \emph{په مقدم کميتي بڼه}
+وايي که دا بڼه ولري:
+\[\mathsf{Q}_1x_1\dots\mathsf{Q}_nx_n\,!B(x_1,\dots,x_n)\]
+چې هر $\mathsf{Q}_i$ پکښې يا $\lforall$ يا~$\lexists$ وي او وروستنے
+متن له کميت اچوونکو خالي وي۔ \textbf{سرچينه‌يي سمون OLCMP-126:}
+د مقدم کميتي بڼې په تعريف کښې د وروستي متن د کميت نشتوالي شرط
+څرګند شوے دے۔) د منځني سېکوېنټ د قضيې يوه مهمه پايله د هېربراند
+قضيه ده۔ عام حالت ئې بيانول لږ سخت دي، خو په پراخه توګه دا بڼه
+لري: د لومړۍ درجې منطق د هرې !!{provable} !!{sentence}~$!A$ دپاره
+يوه گزاره‌يي توتولوژي~$!A'$ شته چې ترې $!A$ !!{prove}d کېدے شي۔
+دا ئې د هغو !!{sentence}s دپاره بڼه ده چې د~$\lexists[x][!B(x)]$
+په شکل وي، چې $!B$ له کميت اچوونکو خالي وي:
+
+
+\begin{thm}[د هېربراند قضيه]
+فرض کړئ چې $!B(x)$ له کميت اچوونکو خالي دے او $\Proves 
+\lexists[x][!B(x)]$۔ نو ترمونه~$t_1$، \dots، $t_n$ شته داسې چې
+$\Proves !B(t_1) \lor \dots \lor !B(t_n)$۔
+\end{thm}
+
+!!{formula}~$!B(t_1) \lor \dots \lor !B(t_n)$ ته د~$\lexists[x][!B(x)]$
+\emph{د هېربراند فصل} وايي۔ څرنګه چې $!B$ له کميت اچوونکو خالي
+دے، دا فصل هم له هغو خالي دے۔ نو که دا !!{provable} وي، په
+بې‌پرېکونه ثبوت !!{provable} دے، او په نتيجه کښې په داسې
+!!a{proof} چې يوازې گزاره‌يي استنتاجونه کاروي۔ ځکه نو توتولوژي ده۔
+
+د هېربراند د قضيې سخته برخه دا ښودل دي چې د هر !!{provable}
+!!{formula}~$\lexists[x][!B(x)]$ دپاره د هېربراند يو فصل شته۔
+معکوس ئې، يعنې که $\lexists[x][!B(x)]$ د هېربراند فصل ولري نو
+ثبوت لري، اسان دے۔ په حقيقت کښې د هېربراند فصل، $\lexists[x][!B(x)]$
+لازموي۔ مثلاً په~$\Log{G3c}$ کښې د $n=2$ حالت دا !!a{proof} دے:
+\[
+\Axiom$!B(t_1) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\Axiom$!B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+
+د $\Sequent
+\lexists[x][!B(x)]$ له !!a{proof}~$\pi$ څخه د هېربراند د فصل
+راايستلو دپاره هغه حالت وګورئ چې په يوه بې‌پرېکونه !!{proof}~$\pi$
+کښې ټول $\RightR{\lexists}$ استنتاجونه په پای کښې وي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$ \fCenter \lexists[x][!B(x)], !B(t_1), \dots, !B(t_n)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \fCenter \lexists[x][!B(x)], !B(t_2), \dots, !B(t_n)$
+\RightLabel{$(n-1) \times \RightR{\lexists}$}
+\Deduce$ \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+که په~$\pi$ کښې دا ټول هغه $\RightR{\lexists}$ استنتاجونه وي چې
+$\lexists[x][!B(x)]$ پکښې فعال وي، نو په~$\pi_1$ کښې نور کميتي
+استنتاجونه نشته۔ \textbf{سرچينه‌يي سمون OLCMP-127:} دلته د
+هماغه رسم موجود فرعي ثبوت ته رجوع سمه شوې ده۔ ځکه چې $!B(x)$
+نور کميت اچوونکي نۀ لري او پای سېکوېنټ په کيڼ اړخ کښې هېڅ
+!!{formula}s نۀ لري۔ په نورو ټکو، $ \fCenter \lexists[x][!B(x)], !B(t_1),
+\dots, !B(t_n)$ د~$\pi$ منځنے سېکوېنټ دے۔ همدارنګه، د منځني
+سېکوېنټ پاس کميتي استنتاجونه نشته، نو پاس ټول سېکوېنټونه
+$\lexists[x][!B(x)]$ لري او دا نۀ فعال دي او نۀ اصلي۔ ځکه دا له
+!!{proof}~$\pi_1$ څخه لرې کولے شو او د~$\fCenter !B(t_1), \dots, !B(t_n)$
+يو !!a{proof} تر لاسه کوو؛ بيا د $\RightR{\lor}$ د $n-1$
+استعمالونو په وسيله د هېربراند د فصل~$\Sequent !B(t_1) \lor \dots \lor !B(t_n)$
+يو !!a{proof} تر لاسه کوو۔
+
+ستونزه دا ده چې فرض کولے نۀ شو چې د $\Sequent \lexists[x][!B(x)]$
+يو بې‌پرېکونه !!{proof} هم خپل ټول \RightR{\lexists} استنتاجونه
+په پای کښې په يوه ډله کښې لري۔ د دې \RightR{\lexists} استنتاجونو
+تر منځ داسې استنتاجونه کېدے شي چې ځينې $!B(t_i)$ پکښې اصلي وي۔
+ځکه نو د منځني سېکوېنټ قضيې ته اړتيا ده۔
+
+\begin{thm}[د منځني سېکوېنټ قضيه]\ollabel{thm:midsequent}
+که د $\Gamma \Sequent \Delta$ يو \Log{G3c}-!!{proof}~$\pi$ وي، چې
+په $\Gamma$ او $\Delta$ کښې ټول !!{formula}s په مقدم کميتي بڼه
+وي، نو يو !!a{proof}~$\pi'$ شته چې سېکوېنټ $\Pi \Sequent \Lambda$
+لري، داسې چې لاندې ترې ټول استنتاجونه کميتي او پاس ترې ټول
+استنتاجونه گزاره‌يي وي۔
+\end{thm}
+
+\begin{proof}
+د پرېکون لرې کولو په وسيله لومړے بې‌پرېکونه ثبوت اخلو۔ په~$\pi$
+کښې د يوه کميتي استنتاج \emph{ترتيبي شمېر} د لاندې گزاره‌يي
+استنتاجونو شمېر تعريفوو، او د $\pi$ ترتيبي شمېر~$o(\pi)$ د ټولو
+کميتي استنتاجونو د ترتيبي شمېرونو مجموعه ده۔ که $o(\pi) = 0$
+وي، نو د هېڅ کميتي استنتاج لاندې گزاره‌يي استنتاج نشته او کار
+ختم دے: که کميتي استنتاج نۀ وي، پای سېکوېنټ منځنے سېکوېنټ
+اخلو؛ که وي، د ټولو کميتي استنتاجونو يوه مقدمه ده، نو يو واحد
+تر ټولو پاسنے کميتي استنتاج شته۔ د هغه مقدمه منځنے سېکوېنټ ده۔
+\textbf{سرچينه‌يي سمون OLCMP-129:} د فرعي فارمول د خاصيت د
+کارولو دپاره بې‌پرېکونه ثبوت اخستل او د کميتي استنتاج د نشتوالي
+بنسټيز حالت څرګند شوي دي۔
+
+که $o(\pi) > 0$ وي، د $>0$ ترتيبي شمېر لرونکو کميتي
+استنتاجونو تر ټولو لاندې يو غوره کړئ۔ څرنګه چې ترتيبي شمېر
+ئې $>0$ دے، لاندې ترې يو گزاره‌يي استنتاج ضرور شته۔ دا چې تر
+ټولو لاندې يو دے، پايله ئې د بل کميتي استنتاج مقدمه کېدے نۀ
+شي: ګنې د هغه دويم لاندې کميتي استنتاج لاندې به هم يو گزاره‌يي
+استنتاج وے۔ د کميتي استنتاج او د لاندې گزاره‌يي استنتاج له
+ډول سره سم (ډېر!) حالتونه بېلوو۔ څرنګه چې پای سېکوېنټ يوازې
+د مقدم کميتي بڼې فارمولونه لري، د کميتي استنتاج اصلي فارمول
+په ورپسې گزاره‌يي استنتاج کښې فعال کېدے نۀ شي۔ ګنې د هغه
+استنتاج د اصلي فارمول په يوه گزاره‌يي رابط کښې به کميت اچوونکے
+راشي۔ د فرعي !!{formula} د خاصيت له مخې به دا د پای سېکوېنټ
+د يوې !!a{formula} فرعي !!{formula} وے۔ نو د کميتي استنتاج
+اصلي !!{formula} د لاندې گزاره‌يي استنتاج د سياق يو !!a{element} دے۔
+
+دا دوه بېلګې دي:
+
+لومړے فرض کړئ چې يو $\RightR{\lforall}$ د $\LeftR{\lif}$ په
+ښۍ مقدمه ختمېږي۔ نو د~$\pi$ اړوند فرعي !!{proof} په فرعي
+!!{proof}~$\pi_1$ ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\DisplayProof
+\]
+فرض کولے شو چې $\pi$ منظم دے، نو ځانګړے متغير~$c$ له~$\pi_3$
+بهر نۀ راځي؛ په ځانګړې توګه په $!B
+\lif !C$ او په~$\pi_2$ کښې نۀ راځي۔ اوس ثبوت~$\pi_1'$ وګورئ:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], \lforall[x][!A(x)]$
+\DisplayProof
+\]
+چې $\pi_2'$ له~$\pi_2$ څخه په ښي اړخ کښې د~$!A(c)$ په
+کمزوري کولو تر لاسه کېږي۔ (دا هېڅ استنتاج نۀ زياتوي، په
+ځانګړې توګه داسې کميتي استنتاج نۀ زياتوي چې ترتيبي شمېر
+بدلولے شي۔ په~$\pi_2$ کښې د ځانګړے متغير شرطونه هم نۀ ماتوي،
+ځکه په~$!A(c)$ کښې هېڅ ثابت په~$\pi_2$ کښې د ځانګړے متغير په
+توګه نۀ کارېږي۔) پر \RightR{\lforall} د ځانګړے متغير شرط لا هم
+پوره دے، ځکه $c$ په~$!B \lif !C$ کښې نۀ راځي۔
+
+د انقباض د منلو وړتيا کاروو چې د $!B \lif !C, \Gamma' \fCenter \Delta',
+\lforall[x][!A(x)]$ يو !!a{proof}~$\pi_1''$ تر لاسه کړو۔ د
+$\lforall[x][!A(x)]$ دپاره د $\RightR{\Contraction}$ د منلو
+وړتيا ثبوت او په هغه کښې د $\RightR{\lforall}$ د معکوسولو وړتيا
+ثبوت د هېڅ استنتاج ترتيبي شمېر نۀ بدلولو: تر ډېره ئې استنتاجونه
+لرې کړي وو۔ نو په~$\pi_1''$ کښې کميتي استنتاجونه تر~$\pi_1$
+زيات نۀ دي، او په~$\pi_1''$ کښې د هر کميتي استنتاج لاندې د
+گزاره‌يي استنتاجونو شمېر په~$\pi_1$ کښې د ورته استنتاج د
+لاندې استنتاجونو هومره دے؛ پرته له وروستي \RightR{\lforall}:
+په~$\pi$ کښې يو \LeftR{\lif} لاندې ترې و، چې په~$\pi_1''$ کښې
+مو پاس ترې يووړ۔ په $\pi$ کښې $\pi_1$ په $\pi_1''$ بدل کړئ۔
+د نوي !!{proof} ترتيبي شمېر لږ دے، ځکه لږ تر لږه د
+$\RightR{\lforall}$ استنتاج ترتيبي شمېر (لږ تر لږه)~$1$ کم
+شوے دے۔ اوس استقرايي فرضيه وکاروئ۔
+
+هغه حالتونه چې کميتي استنتاج \RightR{\lexists} وي نور هم
+اسان دي، ځکه انقباض نۀ غواړي او د ځانګړے متغير شرط ته اندېښنه
+نۀ وي۔ مثلاً فرض کړئ چې له $\RightR{\lexists}$ وروسته
+$\RightR{\land}$ راځي (دا ځل د کيڼې مقدمې په توګه)۔ اړوند فرعي !!{proof}
+$\pi_1$ دے:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+\textbf{سرچينه‌يي سمون OLCMP-128:} د رسم له مقدم سياقه
+اضافي د فارمول نښه لرې شوه؛ اصلي سياق عين پاتې دے۔
+په~$\pi$ کښې $\pi_1$ په~$\pi_1'$ بدل کړئ:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B \land !C$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+چې $\pi_3'$ له $\pi_3$ څخه په ښي اړخ کښې د~$!A(t)$ په
+کمزوري کولو تر لاسه کېږي۔ دا کمزوري کول يوازې د~$\pi_3$ د
+هر سېکوېنټ ښي اړخ ته $!A(t)$ زياتوي، نو د هېڅ کميتي استنتاج
+ترتيبي شمېر نۀ بدلوي۔ په~$\pi'$ کښې د کميتي استنتاجونو ترتيبي
+شمېرونه د~$\pi$ په شان دي، پرته له هغه \RightR{\lexists}
+استنتاج څخه چې له~\RightR{\land} سره بدل شوے او ترتيبي شمېر
+ئې~$1$ کم شوے دے۔ استقرايي فرضيه کارولے شو۔
+\end{proof}
+
+\begin{prob}
+د \olref{thm:midsequent} په ثبوت کښې هغه حالتونه بيان کړئ چې
+\LeftR{\lexists} د~\RightR{\lif} په مقدمه او \LeftR{\lforall}
+د~\LeftR{\lor} په کيڼه مقدمه ختمېږي۔
+\end{prob}
+
+\begin{proof}[د هېربراند د قضيې ثبوت]
+فرض کړئ چې $\pi$ په $\Sequent \lexists[x][!A(x)]$ ختمېږي۔ د
+\olref{thm:midsequent} له مخې $\pi$ په داسې !!a{proof}~$\pi'$
+بدلولے شو چې منځنے سېکوېنټ~$S$ ولري، او هغه ضرور دا بڼه لري:
+\[\Sequent
+\lexists[x][!A(x)], !A(t_1), \dots, !A(t_n).\]
+څرنګه چې د $S$ پاس ټول استنتاجونه گزاره‌يي دي، $\lexists[x][!A(x)]$
+د~$S$ پاس د کوم استنتاج اصلي فارمول کېدے نۀ شي۔ دا چې اټومي
+نۀ دے، په بديهيه کښې هم اصلي کېدے نۀ شي۔ څرنګه چې
+$\lexists[x][!A(x)]$ د $!A(t_1)$ اصلي فرعي فارمول کېدے نۀ شي
+(ياد مو وي چې $!A(x)$ له کميت اچوونکو خالي دے)، د~$S$ پاس
+فعال هم کېدے نۀ شي۔ ځکه نو په~$S$ ختمېدونکي فرعي !!{proof}
+کښې د $\lexists[x][!A(x)]$ لرې کول د $\Sequent !A(t_1), \dots, !A(t_n)$
+يو کره !!{proof} ورکوي، چې ترې د $\RightR{\lor}$ د $n-1$
+استنتاجونو په وسيله د $\Sequent !A(t_1) \lor \dots \lor !A(t_n)$
+يو !!a{proof} تر لاسه کېدے شي۔
+\end{proof}
+
+% \begin{prob}
+% Find a Herbrand disjunction of $\lexists[x][\lforall[y][(!A(x) \lif
+% !A(y))]]$ by finding a cut-free !!{proof} of $\Sequent
+% \lexists[x][\lforall[y][(!A(x) \lif !A(y))]]$ and applying the
+% transformation in \olref{thm:midsequent} to find a midsequent (if
+% necessary).
+% \end{prob}
+
+\end{document}

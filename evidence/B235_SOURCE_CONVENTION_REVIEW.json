@@ -1,0 +1,52 @@
+{
+  "schema": "ps-source-convention-review/1",
+  "utc": "2026-09-30T21:00:33.144215+00:00",
+  "status": "PASS; five mandatory corrections distinguished from retained conventions",
+  "primary_contexts": [
+    {
+      "source_path": "content/second-order-logic/syntax-and-semantics/introduction.tex",
+      "source_sha256": "3c27def372f8059cbdaf8ef1862ee6bcce1fddce4f68279b91b6d4f4adfbe417",
+      "locator": "standard total-function semantics",
+      "actual_context_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "source_sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d",
+      "locator": "actual quantifier and logical rules",
+      "actual_context_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+      "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+      "locator": "height-preserving context weakening",
+      "actual_context_consulted": true
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+      "source_sha256": "08233bea6d0d9dedcf1d7ed436524c5d36d87a89ba9ea28226f2caefe8c08023",
+      "locator": "contraction and inversion",
+      "actual_context_consulted": true
+    }
+  ],
+  "equinumerosity_counterexample": {
+    "domain": "N",
+    "X": "{2k:k in N}",
+    "Y": "N",
+    "explicit_subset_bijection": "2k maps to k",
+    "every_original_total_global_injection_impossible": "Surjectivity of u restricted to evens onto N forces u(1)=u(2k) for some k, contradicting global injectivity because 1 is odd. This rules out every witness, not just one chosen extension.",
+    "corrected_total_extension": "u(2k)=k and u(2k+1)=0; injective on X and onto Y, with permitted collisions outside X.",
+    "original_cardle_in_both_directions": "identity witnesses X<=Y, doubling witnesses Y<=X; original equinumerosity formula is false, hence the original claimed Schroeder-Bernstein sentence with that abbreviation is false.",
+    "corrected_formula_meaning": "Exactly a bijection from X to Y with irrelevant total extension outside X; no set membership predicate added.",
+    "no_choice_needed_for_counterexample": true
+  },
+  "retained_conventions": [
+    "The unused domain part of the total function may collide in the corrected equinumerosity definition.",
+    "First cardle display retained; no unproved blanket defect claimed for its stronger witness condition.",
+    "Schematic general initial sequents and implicit height-preserving weakening retain their source proof conventions.",
+    "Original commented-out exercise code retained; live exercise translated without a solution.",
+    "English token suffix d already consumed by existing reader; actual prove-d expansion verified, no redundant builder change."
+  ],
+  "no_optional_background_added": true,
+  "no_exercise_solved": true,
+  "frozen_sources_unchanged": true
+}
