@@ -1,0 +1,138 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T04:13:35.817337+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "accepted_through_unit": "OLP-0622",
+  "draft_units": 622,
+  "remaining_unaccepted_units": 100,
+  "unit_ids": [
+    "OLP-0620",
+    "OLP-0621",
+    "OLP-0622"
+  ],
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "6900ae1ad64806b7ea7ce635ae11be4071af67dc6340f88345dc045f30c4ced7",
+  "corpus_qa_sha256": "ba78646489efe5a619cea4cf1825708f28b40cd60e9abbdd30e5e6c09e246748",
+  "canonical_replay_sha256": "6a044ceb4b84315a625293970b85344b2b6d7ea9599a528a48eb9206cbda339c",
+  "qa_sha256": "b0e394671b00405033517a7f80165fe05834441f8bbfd1107c8c55c683bd2934",
+  "canonical_builder_sha256": "240c70d87d35e7cba33879a94db955b33a1969defb9641e9ee260afb57b20215",
+  "units": [
+    {
+      "unit_id": "OLP-0620",
+      "source_path": "content/history/history.tex",
+      "source_bytes": 218,
+      "source_sha256": "666329ac5880a112d9c17360202bde7bc27d3ebe1c8021c5f1429d9bb8832517",
+      "target_bytes": 221,
+      "target_sha256": "cd275ab1028aad87a4e1b552c7b2e4c0fc64f2ccd71e548c58bdc3e21c3af2b3",
+      "paired_blocks": 8,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0621",
+      "source_path": "content/history/biographies/biographies.tex",
+      "source_bytes": 474,
+      "source_sha256": "0fec4f601a1b14fbd3fb4e4dd810bfb3ae79fa295f217ad5a4efb7aab70bdd10",
+      "target_bytes": 483,
+      "target_sha256": "4fd2b38dabe5a7518ff1f0a49a70b24e64ee7d59af2e23e6b2bf0d8e951fec7e",
+      "paired_blocks": 17,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0622",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "source_bytes": 1977,
+      "source_sha256": "aadadf813251dfc5337fde2b1a4da6dff17e1de0c4b9629e5f541edb030fe9fe",
+      "target_bytes": 3103,
+      "target_sha256": "f6cb4bb3aff171880140b33349137164ab5a06aa124591d30f10e93f2548949e",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "aligned_blocks": 9217,
+  "segment_canon_uses": 5834,
+  "semantic_samples": 2479,
+  "canonical_counts": {
+    "decisions": 781,
+    "occurrences": 30235,
+    "terminology_decisions": 313,
+    "source_correction_decisions": 458,
+    "priority_decisions": 443,
+    "reader_pages_available": 18262,
+    "reader_pages_pending": 11973
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0623 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0319; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

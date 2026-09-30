@@ -1,0 +1,17 @@
+{
+  "schema": "ps-photo-identity-prose-qa/1",
+  "utc": "2026-09-30T04:13:33.133049+00:00",
+  "trigger": "The stable cantor-georg photo asset key was falsely classified as ordinary English; caption was already localized.",
+  "identity_policy": "Photo macro count and first asset argument checked for source parity; only that stable first argument is excluded from ordinary prose scanning.",
+  "negative_controls": {
+    "changed_asset_detected": true,
+    "english_caption_retained_in_prose_scan": true
+  },
+  "checker_sha256": "c64d2e00b079cab21960eded7ac5b62e07087d77aa9e1ed0c1ba5667d08fa1c8",
+  "repository_checker_sha256": "d85ae758078af8ad08a86d1a4daaec1a8719f5263e0def68efcd38dc7c60098e",
+  "caption_source_target": {
+    "source": "Georg Cantor",
+    "target": "ګېورګ کانتور"
+  },
+  "new_semantic_or_math_exception": false
+}

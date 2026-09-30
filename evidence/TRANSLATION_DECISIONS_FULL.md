@@ -1,6 +1,6 @@
 # Pashto (Pakistan) translation decisions — full expert-review index
 
-This index contains 780 decisions and 30229 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
+This index contains 781 decisions and 30235 exact paired source/target occurrences. Pakistani Pashto is primary; Afghan evidence is explicitly regional. Pending reader pages are stated rather than guessed.
 
 ## TERM-SET
 
@@ -46724,3 +46724,31 @@ This index contains 780 decisions and 30229 exact paired source/target occurrenc
 | Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
 |---|---|---|---|---|---|
 | `ps-Arab-PK-OCC-030229` | `OLP-0618` / `OLP-0618-B013` | جوړښتي استقرا | `upstream/content/methods/induction/structural-induction.tex:75-78` | `ps-Arab-PK/content/methods/induction/structural-induction.tex:87-99` | pending; no page guessed |
+
+## DEC-B206-HISTORY-ATTRIBUTION
+
+- Kind: `register`; priority: `normal`; confidence: `medium`; provisional: `true`
+- Source term or construction: DEC-B206-HISTORY-ATTRIBUTION: localized historical titles, names, pronunciation and attribution of reported claims
+- Intended sense: د تاريخ او ژوندليک سرليکونه، د انځور څرګند نوم، تلفظ او د راډيو پروګرام ښکاره نوم پښتو شول؛ import، انځوري کلي او citation پېژندنې هماغسې دي. د کانتور د زېږېدو د بېړۍ ناسم روايت د سرچينې په شان رد شو. د مذهبي دعوې منسوبول د هغه خپلې ادعا ته ساتل شوي، نۀ د ژباړن يا رياضيکي ثبوت تصديق ته. د ناروغۍ، خپګان او نيوکو تاريخي بيان د منجمدې سرچينې نقل دے، نۀ تازه طبي تشخيص. نامتناهي سټونه په بېلابېلو اندازو کښې دي؛ نامتناهي نۀ شمېرېدونکي ته نۀ بدل شوے. د لوست منابعو ټولې کليانې د اصلي اثارو پېژندنه ساتي.
+- Chosen Pashto: تاريخ / ژوندليکونه / ګېورګ کانتور؛ د ژوند تاريخونه، منسوبې ادعاوې او اصلي منابع کره ساتل شوي دي.
+- Rationale: د تاريخ او ژوندليک سرليکونه، د انځور څرګند نوم، تلفظ او د راډيو پروګرام ښکاره نوم پښتو شول؛ import، انځوري کلي او citation پېژندنې هماغسې دي. د کانتور د زېږېدو د بېړۍ ناسم روايت د سرچينې په شان رد شو. د مذهبي دعوې منسوبول د هغه خپلې ادعا ته ساتل شوي، نۀ د ژباړن يا رياضيکي ثبوت تصديق ته. د ناروغۍ، خپګان او نيوکو تاريخي بيان د منجمدې سرچينې نقل دے، نۀ تازه طبي تشخيص. نامتناهي سټونه په بېلابېلو اندازو کښې دي؛ نامتناهي نۀ شمېرېدونکي ته نۀ بدل شوے. د لوست منابعو ټولې کليانې د اصلي اثارو پېژندنه ساتي.
+- Confidence reason: د بشپړې منجمدې سرچينې معنا، ټولې عددي نېټې او ثابتې کليانې پرتله شوې؛ د عين پاکستاني نوم د شاهد نشتوالے څرګند دے.. ګېورګ، د تلفظ ټوټې، د نورو شخصي نومونو او د پروګرام ښکاره نوم ليکدود موقتي تشريحي پښتو ده؛ رسمي پاکستاني نومونه نۀ دي ادعا شوي. شاهدان د ژوند د تاريخونو، د نيوکو د علت يا د طبي حالت خپلواک تصديق نۀ دي؛ دا د منجمدې سرچينې تاريخي بيان دے
+- Expert question: آيا د ناسم روايت رد، د شخصي ادعا منسوبول، تاريخونه، اصلي منابع او د نامتناهي اندازو توپير روښانه پاتې دي؟
+- Authorities:
+  - `PK-IQRAM-P1-PROSE` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistani prose primary or explicit reference grammar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني علمي نثر د بالغ بيان او رسم‌الخط لومړنے شاهد دے؛ د کانتور د ژوند د تاريخونو يا طبي حالاتو شاهد نۀ دے.
+  - `PK-IQRAM-P2-SEMANTICS` (checked_context_only): Bushra Iqram. Pashto Semantics. Pakistani prose primary or explicit reference grammar. https://pashto.org.pk/index.php/path/article/download/46/32/69 — پاکستاني معنايي نثر د جملې، مفهوم او د عبارتونو د مانا د توپير دپاره وکتل شو؛ د دې ژوندليک د تاريخي دعوو تصديق نۀ دے.
+  - `GRAMMAR-P166-SOV` (checked_context_only): Habibullah Tegey and Barbara Robson. A Reference Grammar of Pashto. Pakistani prose primary or explicit reference grammar. https://files.eric.ed.gov/fulltext/ED399825.pdf — مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکو دپاره کارول شو؛ د علمي نومونو يا ژوندليک کره سرچينه نۀ ده.
+  - `AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL` (checked_context_only): Lev Bukovský; Pashto translation by Sultan Ahmad Niazman. Sets and All That About Them / سیټونه او هر څه د هغوی په هکله (1399 / 2020). Afghanistan; regional comparator. https://ecampus-afghanistan.org/wp-content/uploads/2021/10/Sets-and-all-that-about-them-Sultan-Ahmad-Niazman.pdf — افغان سيمه‌ييز رياضيکي شاهد کانتور او قطر طريقه يادوي، او شمېرېدونکي/نۀ شمېرېدونکي سټونه جلا کوي. د بېلابېلو اندازو د نامتناهي سټونو مفهوم او کانتور نوم شاهد لري؛ د ژوند شخصي يا مذهبي دعوې نۀ تصديقوي.
+- Alternatives:
+  - د شخص خپلې ادعا ته د منسوبولو حذف او د راوي د حقيقت په توګه ئې بيانول (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+  - نامتناهي سټونه له نۀ شمېرېدونکو سره يو شان ګڼل (viable_alternative): Recorded for expert comparison; the current evidence and rationale favored the chosen rendering or treatment.
+- Exact paired occurrences: 6
+
+| Occurrence | Unit / semantic unit | Section | Source locus | Target locus | Reader page |
+|---|---|---|---|---|---|
+| `ps-Arab-PK-OCC-030230` | `OLP-0620` / `OLP-0620-B004` | history | `upstream/content/history/history.tex:7-7` | `ps-Arab-PK/content/history/history.tex:7-7` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030231` | `OLP-0621` / `OLP-0621-B004` | his | `upstream/content/history/biographies/biographies.tex:8-8` | `ps-Arab-PK/content/history/biographies/biographies.tex:8-8` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030232` | `OLP-0622` / `OLP-0622-B006` | ګېورګ کانتور | `upstream/content/history/biographies/georg-cantor.tex:13-13` | `ps-Arab-PK/content/history/biographies/georg-cantor.tex:13-13` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030233` | `OLP-0622` / `OLP-0622-B007` | ګېورګ کانتور | `upstream/content/history/biographies/georg-cantor.tex:15-19` | `ps-Arab-PK/content/history/biographies/georg-cantor.tex:15-21` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030234` | `OLP-0622` / `OLP-0622-B009` | ګېورګ کانتور | `upstream/content/history/biographies/georg-cantor.tex:28-37` | `ps-Arab-PK/content/history/biographies/georg-cantor.tex:34-47` | pending; no page guessed |
+| `ps-Arab-PK-OCC-030235` | `OLP-0622` / `OLP-0622-B011` | ګېورګ کانتور | `upstream/content/history/biographies/georg-cantor.tex:41-47` | `ps-Arab-PK/content/history/biographies/georg-cantor.tex:52-60` | pending; no page guessed |

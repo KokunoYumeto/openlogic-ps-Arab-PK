@@ -1,0 +1,185 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T04:10:59.140007+00:00",
+  "status": "complete source and native-canon comparison registered; corpus acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0620",
+      "source_path": "content/history/history.tex",
+      "source_bytes": 218,
+      "source_sha256": "666329ac5880a112d9c17360202bde7bc27d3ebe1c8021c5f1429d9bb8832517",
+      "target_bytes": 221,
+      "target_sha256": "cd275ab1028aad87a4e1b552c7b2e4c0fc64f2ccd71e548c58bdc3e21c3af2b3",
+      "paired_blocks": 8,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0621",
+      "source_path": "content/history/biographies/biographies.tex",
+      "source_bytes": 474,
+      "source_sha256": "0fec4f601a1b14fbd3fb4e4dd810bfb3ae79fa295f217ad5a4efb7aab70bdd10",
+      "target_bytes": 483,
+      "target_sha256": "4fd2b38dabe5a7518ff1f0a49a70b24e64ee7d59af2e23e6b2bf0d8e951fec7e",
+      "paired_blocks": 17,
+      "changed_blocks": [
+        4
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    },
+    {
+      "unit_id": "OLP-0622",
+      "source_path": "content/history/biographies/georg-cantor.tex",
+      "source_bytes": 1977,
+      "source_sha256": "aadadf813251dfc5337fde2b1a4da6dff17e1de0c4b9629e5f541edb030fe9fe",
+      "target_bytes": 3103,
+      "target_sha256": "f6cb4bb3aff171880140b33349137164ab5a06aa124591d30f10e93f2548949e",
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "ordered_math_spans": 0,
+      "checks": {
+        "source_frozen": true,
+        "paired_blocks": true,
+        "ordered_math_equal": true,
+        "math_multiset_equal": true,
+        "identifiers_equal": true,
+        "links_equal": true,
+        "optional_tags_equal": true,
+        "structural_macros_equal": true,
+        "environments_equal": true,
+        "term_tokens_equal": true,
+        "comments_equal": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "single_document_end": true
+      },
+      "all_checks_pass": true,
+      "source_correction_ids": []
+    }
+  ],
+  "focused_qa_sha256": "0578b62742ec76a37e64f0eca114671cb79710aab3526cb675aa15ba7442aa90",
+  "model_provenance_sha256": "8cbaf10e05c09f2fc821328718726be8d297a55d66738883f3e0246ebeb60887",
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "GRAMMAR-P166-SOV",
+    "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL"
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "finding": "پاکستاني علمي نثر د بالغ بيان او رسم‌الخط لومړنے شاهد دے؛ د کانتور د ژوند د تاريخونو يا طبي حالاتو شاهد نۀ دے.",
+      "evidence_limit": "پاکستاني علمي نثر د بالغ بيان او رسم‌الخط لومړنے شاهد دے؛ د کانتور د ژوند د تاريخونو يا طبي حالاتو شاهد نۀ دے.",
+      "inspection": "Native page image inspected during this general-production pass.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "finding": "پاکستاني معنايي نثر د جملې، مفهوم او د عبارتونو د مانا د توپير دپاره وکتل شو؛ د دې ژوندليک د تاريخي دعوو تصديق نۀ دے.",
+      "evidence_limit": "پاکستاني معنايي نثر د جملې، مفهوم او د عبارتونو د مانا د توپير دپاره وکتل شو؛ د دې ژوندليک د تاريخي دعوو تصديق نۀ دے.",
+      "inspection": "Native page image inspected during this general-production pass.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "GRAMMAR-P166-SOV",
+      "source_id": "PS-TEGEY-ROBSON-1996",
+      "source_sha256": "812aee8792267416f981d93cc986a346e5c981b00e31dce56d5fc6b37cf551d0",
+      "printed_page": "166",
+      "pdf_page_1based": 179,
+      "page_image_sha256": "4ea5f09844b03ad466989401970a2ca49e9f94fd02375968d3285a0709a3592c",
+      "finding": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکو دپاره کارول شو؛ د علمي نومونو يا ژوندليک کره سرچينه نۀ ده.",
+      "evidence_limit": "مرجع ګرامر د فعل وروستنے ترتيب او بشپړوونکو دپاره کارول شو؛ د علمي نومونو يا ژوندليک کره سرچينه نۀ ده.",
+      "inspection": "Native page image inspected during this general-production pass.",
+      "region": "Pakistani prose primary or explicit reference grammar"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P111-UNCOUNTABLE-DIAGONAL",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "111",
+      "pdf_page_1based": 122,
+      "page_image_sha256": "4386cf0b75920f4777a6e80241c242d576da8a86f778b45cf6dd59f7e57efb67",
+      "finding": "افغان سيمه‌ييز رياضيکي شاهد کانتور او قطر طريقه يادوي، او شمېرېدونکي/نۀ شمېرېدونکي سټونه جلا کوي. د بېلابېلو اندازو د نامتناهي سټونو مفهوم او کانتور نوم شاهد لري؛ د ژوند شخصي يا مذهبي دعوې نۀ تصديقوي.",
+      "evidence_limit": "افغان سيمه‌ييز رياضيکي شاهد کانتور او قطر طريقه يادوي، او شمېرېدونکي/نۀ شمېرېدونکي سټونه جلا کوي. د بېلابېلو اندازو د نامتناهي سټونو مفهوم او کانتور نوم شاهد لري؛ د ژوند شخصي يا مذهبي دعوې نۀ تصديقوي.",
+      "inspection": "Native page image inspected during this general-production pass.",
+      "region": "Afghanistan; regional comparator"
+    }
+  ],
+  "numeric_identity_check": {
+    "OLP-0620": {},
+    "OLP-0621": {},
+    "OLP-0622": {
+      "1845": 1,
+      "1867": 1,
+      "1894": 1,
+      "6": 1,
+      "1918": 1,
+      "4": 1
+    }
+  },
+  "new_term_ids": [],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [
+    "DEC-B206-HISTORY-ATTRIBUTION"
+  ],
+  "semantic_samples_added": 9,
+  "unresolved": "د ژوندليک پاتې لس متنونه لا د دې مسودې برخه نۀ دي؛ تاريخي دعوې د سرچينې بيان دے او ژباړه ئې خپلواک تصديق نۀ ادعا کوي. د نومونو ليکدود موقتي دے؛ پراخ لوستونکی لا پاتې دے.",
+  "next_executable_action": "Run both622 corpus generators and canonical replay, accept this source tranche on PASS; continue the complete Alonzo Church biography OLP-0623 and the remaining history sources."
+}

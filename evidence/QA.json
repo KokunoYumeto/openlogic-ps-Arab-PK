@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 619,
-    "structural_pass": 619,
+    "draft_units": 622,
+    "structural_pass": 622,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B205-INDUCTION-COMPLETE",
+  "batch": "PS-B206-HISTORY-OPENING",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -19939,6 +19939,87 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0620",
+      "path": "content/history/history.tex",
+      "source_sha256": "666329ac5880a112d9c17360202bde7bc27d3ebe1c8021c5f1429d9bb8832517",
+      "translation_sha256": "cd275ab1028aad87a4e1b552c7b2e4c0fc64f2ccd71e548c58bdc3e21c3af2b3",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0621",
+      "path": "content/history/biographies/biographies.tex",
+      "source_sha256": "0fec4f601a1b14fbd3fb4e4dd810bfb3ae79fa295f217ad5a4efb7aab70bdd10",
+      "translation_sha256": "4fd2b38dabe5a7518ff1f0a49a70b24e64ee7d59af2e23e6b2bf0d8e951fec7e",
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0622",
+      "path": "content/history/biographies/georg-cantor.tex",
+      "source_sha256": "aadadf813251dfc5337fde2b1a4da6dff17e1de0c4b9629e5f541edb030fe9fe",
+      "translation_sha256": "f6cb4bb3aff171880140b33349137164ab5a06aa124591d30f10e93f2548949e",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -34761,6 +34842,60 @@
       "passage": "OLP-0619-B022",
       "reverse_paraphrase": "Exercise: prove by structural induction that depth is strictly less than symbol count, with the original cross-reference preserved.",
       "finding": "د بلاک ټول نثر، د شرطونو او کميت‌ښودنې حدود، جوړښت او حساب له منجمدې سرچينې سره کره پرتله شول؛ د تش پيل استثنا د OLSTH-042 په نږدې يادونه کښې څرګنده ده، او د نومونو د شاهد حدود په انتخاب ليک کښې دي."
+    },
+    {
+      "unit_id": "OLP-0620",
+      "passage": "OLP-0620-B004",
+      "reverse_paraphrase": "The part title is History; both chapter imports remain unchanged.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0621",
+      "passage": "OLP-0621-B004",
+      "reverse_paraphrase": "The chapter title is Biographies; all eleven original biography imports and their order remain.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B005",
+      "reverse_paraphrase": "Georg Cantor is the section subject.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B006",
+      "reverse_paraphrase": "The photograph caption names Georg Cantor; the exact cantor-georg image key is preserved.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B007",
+      "reverse_paraphrase": "The early ship-and-unknown-parents biography story is explicitly rejected; his actual birth in Saint Petersburg in1845 remains. The supplied pronunciation is transliterated without inventing another name.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B008",
+      "reverse_paraphrase": "The Berlin mathematics doctorate in1867, founding attribution, different sizes of infinite sets and contemporary controversy are retained. Infinite does not mean all such sets are uncountable.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B009",
+      "reverse_paraphrase": "His own claimed divine communication remains attributed to him. The source reports later mental illness, hospitalizations from1894, criticism including the Kronecker falling-out and depressive episodes, and his Bacon-authorship theory; no new clinical claim or endorsement is added.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B010",
+      "reverse_paraphrase": "The date is January6,1918 and the place is a sanatorium in Halle; the order of date components is localized without altering their values.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
+    },
+    {
+      "unit_id": "OLP-0622",
+      "passage": "OLP-0622-B011",
+      "reverse_paraphrase": "Both full-biography citations, BBC Radio4 and its translated program title, the radical views description and rap reference remain; no published Pashto edition of those resources is claimed.",
+      "finding": "ټول نثر، څرګند نومونه، د شخص د ادعا منسوبول، نېټې، caption او citation پېژندنې د بلاک له منجمدې سرچينې سره پرتله شول."
     }
   ],
   "builds": [
