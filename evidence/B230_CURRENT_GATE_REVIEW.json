@@ -1,0 +1,34 @@
+{
+  "schema": "ps-current-runtime-gate-review/1",
+  "utc": "2026-09-30T16:48:15.101852+00:00",
+  "status": "PASS within bounded own-workflow scope",
+  "scan_sha256": "8ae5ef34eb6ae79a2d37d14cee53ef076ac09d4618fa2ce603579e0bca308d8e",
+  "top_level_python_files_scanned": 1614,
+  "direct_runtime_model_pins_found": 0,
+  "eight_literal_comparisons_reviewed": "Historical Sol6 provenance/scope selection and the old-pin repair matcher; they do not restrict or change the actual current model.",
+  "original_sol6_assertions_preserved": 95,
+  "actual_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_own_config_defaults": [
+    {
+      "scope": "user defaults",
+      "model": "gpt-6.1-sol",
+      "model_reasoning_effort": "ultra",
+      "settings_changed": false
+    }
+  ],
+  "own_task_specific_config_found": false,
+  "helper_behavior_checked": "Actual nonempty models accepted only with Ultra; empty model and high/xhigh/max rejected.",
+  "changed_helper_sha256": "c3b146ba568cee9fa8ed8f402d533fb15035d173078ecaf6322bcb9cc5ab1f71",
+  "changed_acceptance_helper_sha256": "ae437308e11ebc2f5f323f9a8dcdc185ee696e7a45f264a9860f5de5adfc422a",
+  "future_draft_token_spacing_fix_sha256": "6b6fcca7aa16ae306ea7a8fd888a0c526359e707985aca40aa8d6e8684c67a61",
+  "future_registration_kind_fix_sha256": "328708724599d91843dcc9d7cd4591206ed04707d7532d23e42e45fe3821781a",
+  "settings_changed": false,
+  "historical_provenance_rewritten": false,
+  "full_workflow_audit_completed": false,
+  "remaining_scope": "PS1/JSON/Markdown and dynamic behavior not exhaustively reviewed; whole translation audit277 units pending.",
+  "documentation": "https://learn.chatgpt.com/docs/config-file/config-reference",
+  "next_action": "Continue complete656 translation and whole0333 source/canon review; publish this bounded workflow review at next accepted source checkpoint."
+}

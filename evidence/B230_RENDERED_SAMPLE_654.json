@@ -1,0 +1,103 @@
+{
+  "schema": "ps-reader-rendered-sample/1",
+  "utc": "2026-09-30T17:33:17.637392+00:00",
+  "status": "PASS for five inspected actual pages; full expanded reader unaccepted",
+  "source_accepted_units": 656,
+  "reader_units": 654,
+  "pdf_pages": 810,
+  "pdf_sha256": "fccae466e0c501e57dd91e726f045188dce1382544e413746cf54ef41493e77c",
+  "reader_tex_sha256": "def0da5ec673471c8e9dea6ec618306aa6043bcaf684d0f7c32275b352be9a15",
+  "build_inputs_sha256": "d94be7ab72e4b744fc85e1cb91e008b126350959f8c41df4b39e2a89d7ba3ee6",
+  "guard_receipt_sha256": "be52ea66c7e4547242711b6704f59e6cff184cb9b5b629f81bce3a06296caf04",
+  "guard_session_terminal": 86158,
+  "guarded_passes": 4,
+  "bibtex_runs": 1,
+  "captured_processes_remaining": 0,
+  "final_log_findings": [
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/sc' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/LatinModernRoman(0)/m/sc' undefined",
+    "Overfull \\hbox (3.1974pt too wide) in paragraph at lines 49549--49550",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 56524--56549",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 57053--57077",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined"
+  ],
+  "bibliography_warnings": [
+    "Warning--empty publisher in Berkeley1734",
+    "Warning--can't use both author and editor fields in Frege1953",
+    "Warning--can't use both author and editor fields in EwaldSieg2013",
+    "Warning--empty publisher in Hume1740",
+    "Warning--empty journal in OConnorRobertson:RN",
+    "Warning--empty journal in Weston2003",
+    "warning$ -- 6",
+    "(There were 6 warnings)"
+  ],
+  "semantic_anchor_pages": {
+    "OLP-0333-B008": {
+      "start": "453",
+      "end": "453"
+    },
+    "OLP-0333-B009": {
+      "start": "453",
+      "end": "453"
+    },
+    "OLP-0654-B009": {
+      "start": "551",
+      "end": "551"
+    },
+    "OLP-0418-B007": {
+      "start": "552",
+      "end": "552"
+    }
+  },
+  "inspected_pages": [
+    {
+      "physical_page": 453,
+      "printed_label": "452",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b230\\visual-qa\\page-453.png",
+      "sha256": "ccb564bfda3ce5b9db8db074c1125d0a2998a0aa6924726c3a89b716ae8b7b27"
+    },
+    {
+      "physical_page": 454,
+      "printed_label": "453",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b230\\visual-qa\\page-454.png",
+      "sha256": "8c8290d59fb2d97949539b7c3f184d2e2eefcd41edd18d4c6521bcee17751998"
+    },
+    {
+      "physical_page": 551,
+      "printed_label": "550",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b230\\visual-qa\\page-551.png",
+      "sha256": "004adcc621baaaf99ca8a58eb51539b322406cc4fd40c9a3cec38be48c932f1e"
+    },
+    {
+      "physical_page": 552,
+      "printed_label": "551",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b230\\visual-qa\\page-552.png",
+      "sha256": "43d871b8b4308867e8fee2e002633c420ac452d829feaad2e6ae94d171b422b6"
+    },
+    {
+      "physical_page": 553,
+      "printed_label": "552",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b230\\visual-qa\\page-553.png",
+      "sha256": "748f36f71a1a82fd4090d6895dfb4d3bd352b5355fa560e561ae8edb5e37031d"
+    }
+  ],
+  "visual_findings": [
+    "Current0332 correction, numeral coding and bound-variable disclosure legible on printed452/453.",
+    "Current0333 effective full-semantic calculus statement, arbitrary-model validity and numeral-coded Tarski argument legible on printed453.",
+    "Normal-modal definition43.3.6 opening, K, Dual and necessitation stay together on printed551; contextual paragraph follows.",
+    "Following entailment figure appears on printed552 after the complete modal section; no figure intrusion or observed clipping on these pages."
+  ],
+  "modal_definition_continuity_pass": true,
+  "following_section_float_intrusion_fixed": true,
+  "current0333_scope_visible": true,
+  "new_reader_accepted": false,
+  "reader_pending_unit_ids": [
+    "OLP-0655",
+    "OLP-0656"
+  ],
+  "full722_reader_accepted": false,
+  "next_action": "Continue complete657 and whole0334. Coherent experimental part/chapter integration remains required; no second TeX acquisition at this checkpoint."
+}

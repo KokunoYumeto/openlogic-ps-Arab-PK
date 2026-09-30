@@ -6351,7 +6351,7 @@
       "source_locator": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:30-34",
       "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
       "target_line_1based": 35,
-      "target_sha256": "5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07",
+      "target_sha256": "5c1e91c8880af3b43b6547396df841081c7cb9584468e5a1377cbbf50441c59e",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The source closes the math span before the satisfaction command's argument brace, leaving a malformed TeX expression. The target closes the command first.",
       "reason": "The source closes the math span before the satisfaction command's argument brace, leaving a malformed TeX expression. The target closes the command first.",
@@ -6385,7 +6385,15 @@
         "ps-Arab-PK/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex:35"
       ],
       "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
-      "upstream_reporting": "new source issue; manager report pending"
+      "upstream_reporting": "new source issue; manager report pending",
+      "validation_history": [
+        {
+          "utc": "2026-09-30T17:15:20.166892+00:00",
+          "batch": "B230",
+          "previous_target_sha256": "5d9dd62c4e07a36f2a379bd4212b045c589a23776ee2519ea0cd720c48d27a07",
+          "reason": "پخوانے کره د قوسې سمون په بشپړه بياکتنه کښې ساتل شو؛ شاوخوا اغېزمن او بشپړ معنٰی سياق څرګند شو۔"
+        }
+      ]
     },
     {
       "id": "OLSOL-006",
@@ -19496,6 +19504,300 @@
       ],
       "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
       "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-115",
+      "unit_id": "OLP-0656",
+      "classification": "axiom-branch-refers-to-wrong-premise-proof",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:97",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 64,
+      "disclosure_line_1based": 66,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "په ښۍ بديهي مقدمه کښې د تالي دوه نقلونه کيڼ ثبوت لري؛ د ښي ثبوت نښه ناسمه وه۔",
+      "reason": "په ښۍ بديهي مقدمه کښې د تالي دوه نقلونه کيڼ ثبوت لري؛ د ښي ثبوت نښه ناسمه وه۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\pi_1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-116",
+      "unit_id": "OLP-0656",
+      "classification": "shared-existential-antecedent-dropped-from-cut-conclusion",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:248",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 154,
+      "disclosure_line_1based": 169,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "د وجودي کيڼې قاعدې د لومړي ګډ سياق پرېکون دواړه مقدمې وجودي فارمول لري؛ پايله ئې هم بايد ولري۔",
+      "reason": "د وجودي کيڼې قاعدې د لومړي ګډ سياق پرېکون دواړه مقدمې وجودي فارمول لري؛ پايله ئې هم بايد ولري۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lexists[x][!B(x)],\\Gamma'\\fCenter\\Delta,!A$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$!A,!B(c),\\Gamma'\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\lexists}$}\\UnaryInf$!A,\\lexists[x][!B(x)],\\Gamma'\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_2$}\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma'\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lexists[x][!B(x)],\\Gamma'\\fCenter\\Delta,!A$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$!A,!B(c),\\Gamma'\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\lexists}$}\\UnaryInf$!A,\\lexists[x][!B(x)],\\Gamma'\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_2$}\\RightLabel{\\CutCS}\\BinaryInf$\\lexists[x][!B(x)],\\Gamma'\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-117",
+      "unit_id": "OLP-0656",
+      "classification": "residual-succedent-prime-missing-in-conjunction-permutation",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:289,339",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 189,
+      "disclosure_line_1based": 231,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "د دويم کمزوري شوي کيڼ ثبوت او د عطف د قاعدې د پايلې پاتې تالي په پريم نښه کېږي؛ ګډ سياق يوشان شو۔",
+      "reason": "د دويم کمزوري شوي کيڼ ثبوت او د عطف د قاعدې د پايلې پاتې تالي په پريم نښه کېږي؛ ګډ سياق يوشان شو۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma\\fCenter\\Delta,!B\\land!C,!C,!A$\\AxiomC{}\\RightLabel{$\\pi_4'$}\\Deduce$!A,\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_5$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!B$\\AxiomC{}\\RightLabel{$\\pi_6$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!B\\land!C,!B\\land!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C,!A$\\AxiomC{}\\RightLabel{$\\pi_4'$}\\Deduce$!A,\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_5$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!B$\\AxiomC{}\\RightLabel{$\\pi_6$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!B\\land!C$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-118",
+      "unit_id": "OLP-0656",
+      "classification": "final-implication-cut-retains-cut-formula-in-antecedent",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:594",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 452,
+      "disclosure_line_1based": 471,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "وروستے پرېکون د پرېکون فارمول له مقدم څخه لرې کوي؛ د منځني ثبوت مقدم په خپل ځاے ساتل شوے دے۔",
+      "reason": "وروستے پرېکون د پرېکون فارمول له مقدم څخه لرې کوي؛ د منځني ثبوت مقدم په خپل ځاے ساتل شوے دے۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2'$}\\Deduce$\\Gamma\\fCenter\\Delta,!B$\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_1''$}\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2'$}\\Deduce$\\Gamma\\fCenter\\Delta,!B$\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_1''$}\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-119",
+      "unit_id": "OLP-0656",
+      "classification": "positive-height-case-list-omits-principal-reduction-case",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:60",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 49,
+      "disclosure_line_1based": 51,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "د مثبت لوړوالي د حالتونو لنډ لړ پنځم اصلي‌فارمول حالت هم رانغاړي؛ يوازې درېم او څلورم حالت بشپړ نۀ دي۔",
+      "reason": "د مثبت لوړوالي د حالتونو لنډ لړ پنځم اصلي‌فارمول حالت هم رانغاړي؛ يوازې درېم او څلورم حالت بشپړ نۀ دي۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-120",
+      "unit_id": "OLP-0656",
+      "classification": "universal-left-exercise-references-two-premise-case",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_locator": "content/proof-theory/cut-elimination/ce-topmost.tex:576",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-topmost.tex",
+      "target_sha256": "cad23f51edb6027b11b8cf1ebfdedea14662ffa699136535dfe04e394be68f62",
+      "target_line_1based": 440,
+      "disclosure_line_1based": 441,
+      "mode": "کره سرچينه‌يي سمون او د متن ترڅنګ پښتو يادونه",
+      "translation_change": "کلي کيڼه قاعده يوه مقدمه لري؛ د تمرين حواله د يو‌مقدمې درېم حالت ده، نه د دوه‌مقدمې څلورم حالت۔",
+      "reason": "کلي کيڼه قاعده يوه مقدمه لري؛ د تمرين حواله د يو‌مقدمې درېم حالت ده، نه د دوه‌مقدمې څلورم حالت۔",
+      "formula_policy": "يوازې د ثبوت يوه نښه او د پنځه ويشت رسمونو څلور کره پايلې يا مقدمې بدلې شوې؛ نور فارمولونه، ټول پېژندونه او پاتې يو ويشت رسمونه عين دي۔ د حالتونو دوه حوالې نثري دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B230-TOPMOST-CUTS",
+      "audit_artifacts": [
+        "B230_SOURCE_AUDIT.json",
+        "B230_FINAL_DRAFT_QA.json",
+        "B229_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B230 بشپړ اثبات او پنځه کره کانوني مخونه له مسودې مخکې ولوستل شول؛ پرېکړې د دوه‌ګونې کتنې څخه مخکې ثبتېږي۔",
+      "upstream_reporting": "د اصلي پروژې نوی پيغام نشته؛ يوازې مجاز مهم پړاو مدير ته راپور کېږي۔",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []

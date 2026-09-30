@@ -1,0 +1,483 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-topmost
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{top}
+
+\olsection{د تر ټولو پاسنيو پرېکونونو لرې کول}
+
+\begin{defn}
+داسې !!a{proof}~$\pi$ وګورئ چې د \CutCS{} په قاعده ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+او د \CutCS{} بل هېڅ استنتاج نۀ لري۔ د~$\pi$ \emph{د پرېکون لوړوالے} دا دے: $\cheight{\pi} = \pheight{\pi_1} + \pheight{\pi_2}$۔ د~$\pi$ \emph{د پرېکون رتبه} دا ده: $\cutrank{\pi} = \depth{!A}$۔
+\end{defn}
+
+\begin{lem}\ollabel{lem:cut-adm-G3c}
+د \CutCS{} قاعده په~\Log{G3c} کښې د منلو وړ ده۔ په نورو ټکو، که $\pi$ يو !!a{proof} وي چې په يوه~\CutCS{} ختمېږي او په پاتې برخه کښې يوازې د~$\Log{G3c}$ قاعدې کاروي، نو د هماغه وروستي سېکوېنټ يو !!a{proof}~$\pi'$ په~\Log{G3c} کښې شته۔
+\end{lem}
+
+\begin{proof}
+ثبوت د پرېکون پر !!{height} او رتبه په دوه‌ګونې استقرا کوو؛ رتبه لومړے د کمېدو معيار دے، او په عين رتبه کښې لوړوالے کمېږي۔ !!{proof}~$\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+د استقرا بنسټ: $\cheight{\pi} = 0$ او $\cutrank{\pi} = 0$۔ څرنګه چې $\cheight{\pi} = \pheight{\pi_1} + \pheight{\pi_2} = 0$، نو $\Gamma \Sequent \Delta, !A$ او $!A, \Gamma \Sequent \Delta$ دواړه بديهي اصول دي۔ دوه حالتونه شته: (الف)~يا $!A$ په يوه کښې اصلي فارمول نۀ دے، يا (ب)~$!A$ په دواړو کښې اصلي فارمول دے۔ په دواړو حالاتو کښې لاندې ښيو چې $\Gamma \Sequent \Delta$ بايد بديهي اصل وي، او د دې دپاره د استقرا فرض نۀ پکارېږي۔
+
+اوس د دې له مخې بېلابېل ممکن حالتونه جلا کوو چې $\pi_1$ او $\pi_2$ بديهي اصول دي که په استنتاج ختمېږي، او دا چې $!A$~په هغه استنتاج کښې اصلي فارمول دے که نۀ۔ لومړے او دويم حالت، \LR{A} او~\LR{B}، د استقرا بنسټ رانغاړي۔ د استقرا په ګام کښې فرض کوو چې $\cheight{\pi} > 0$ يا $\cutrank{\pi} > 0$، يا دواړه۔ د استقرا فرض کارولے شو: د هر هغه !!{proof} وروستۍ~\CutCS{} لرې کېدے شي چې په يوه~\CutCS{} ختمېږي او يا ئې د پرېکون رتبه $= \cutrank{\pi}$ او د پرېکون !!{height} $< \cheight{\pi}$ وي، يا ئې د پرېکون رتبه~$<
+\cutrank{\pi}$ وي۔ د $\cheight{\pi} = 0$ حالت، چې دواړه مقدمې بديهي اصول وي، لومړے او دويم حالت رانغاړي۔ د $\cheight{\pi} >
+0$ حالتونه درېم، څلورم او پنځم حالت، \LR{C} تر~\LR{E}، رانغاړي۔ \emph{OLCMP-119: سرچينه په دې لنډې يادونې کښې يوازې درېم او څلورم حالت نوموي، خو د دواړو مقدماتو د اصلي فارمول حالت ورپسې په پنځم حالت کښې څېړل کېږي؛ د حالتونو لړ بشپړ شو۔}
+
+\paragraph{لومړے حالت \LR{A}:}
+کوم $!B$ هم په $\Gamma$ او هم په~$\Delta$ کښې راځي۔ نو $\Gamma \Sequent \Delta$ بديهي اصل دے، که $!B$~اټومي وي؛ کنه، د \olref[seq][ex]{prop:G3c-axioms} له مخې په \Log{G3c} کښې بې له \CutCS{} يو !!a{proof}~$\pi'$ لري۔ دا د استقرا د بنسټ (الف) حالت رانغاړي: که $!A$ په $\Gamma
+\Sequent \Delta, !A$ کښې يا په $!A, \Gamma \Sequent \Delta$ کښې اصلي فارمول نۀ وي او دا بديهي اصول وي، نو کوم بل اټومي~$!B$ بايد هم په $\Gamma$ او هم په~$\Delta$ کښې راشي۔ د استقرا هغه ګام هم رانغاړي چې يوه مقدمه ئې بديهي اصل وي او $!A$ پکښې اصلي فارمول نۀ وي، که څه هم بله مقدمه د يوې قاعدې پايله وي۔
+
+\paragraph{دويم حالت \LR{B}:} دواړه مقدمې بديهي اصول دي او $!A$ اصلي فارمول دے؛ نو اټومي دے۔ کيڼه مقدمه $\Gamma \Sequent
+\Delta, !A$ وګورئ۔ څرنګه چې $!A$ اصلي فارمول دے، بايد په $\Gamma$ کښې راشي، کنه $\Gamma \Sequent \Delta, !A$ به بديهي اصل نۀ وي۔ همداسې $!A$ بايد په $\Delta$ کښې راشي، کنه $!A, \Gamma \Sequent \Delta$ به بديهي اصل نۀ وي۔ نو $!A$ اټومي دے او هم په $\Gamma$ او هم په $\Delta$ کښې راځي؛ يعنې $\Gamma \Sequent \Delta$ بديهي اصل دے۔ دا د استقرا د بنسټ (ب) حالت رانغاړي۔
+
+\begin{center}
+د لومړي او دويم حالت بديلې بڼې
+\end{center}
+
+\paragraph{لومړے حالت \LR{A}:} د پرېکون يوه مقدمه د $!C, \Gamma' \Sequent \Delta', !C$ په بڼه بديهي اصل دے، چې $!C$~اټومي دے۔ که $!C$ د پرېکون !!{formula}~$!A$ نۀ وي، نو $!C$ بايد هم په $\Gamma$ او هم په~$\Delta$ کښې راشي۔ په دې حالت کښې $\Gamma \Sequent \Delta$ بديهي اصل دے، او همدا د~$\pi'$ په توګه اخيستلے شو۔ که $!C \ident !A$ د پرېکون !!{formula} وي، نو يا کيڼه مقدمه بديهي اصل ده، $!A \in \Gamma$ او $\Gamma = \Gamma', !A$؛ يا ښۍ مقدمه بديهي اصل ده، $!A \in
+\Delta$ او $\Delta = \Delta', !A$۔ په لومړي صورت کښې $\pi_2$ د $!A, !A, \Gamma' \Sequent \Delta$ يو !!a{proof} دے، او د \LeftR{\Contraction} د منلو وړتيا، \olref[seq][inv]{prop:G3c-cont-adm}، د $\Gamma \Sequent \Delta$ يو !!a{proof} راکوي۔ په دويم صورت کښې $\pi_1$ د $\Gamma \Sequent \Delta', !A, !A$ يو !!a{proof} دے، او د \RightR{\Contraction} د منلو وړتيا په وسيله د $\Gamma \Sequent
+\Delta$ يو !!a{proof} ترلاسه کوو۔ \emph{OLCMP-115: سرچينه په دويم صورت کښې د ښۍ مقدمې ثبوت نوموي، خو دلته د تالي د دوو نقلونو کيڼ ثبوت کارېږي؛ د ثبوت نښه سمه شوه۔}
+
+\paragraph{دويم حالت \LR{B}:} يوه مقدمه د~$\lfalse, \Gamma' \Sequent \Delta'$ په بڼه بديهي اصل ده۔ که کيڼه مقدمه داسې بديهي اصل وي، نو $\lfalse \in \Gamma$، او $\Gamma \Sequent \Delta$ هم بديهي اصل دے۔ که ښۍ مقدمه داسې بديهي اصل وي، نو يا $\lfalse \in \Gamma$، چې بيا $\Gamma \Sequent \Delta$ بديهي اصل دے، يا $!A \ident \lfalse$۔ په وروستي صورت کښې $\pi_1$ د $\Gamma \Sequent \Delta, \lfalse$ يو !!a{proof} دے۔ په~$\pi_1$ کښې د هر سېکوېنټ له تالي څخه د~$\lfalse$ د يوه نقل په لرې کولو ئې د~$\Gamma \Sequent \Delta$ په يوه !!a{proof} بدلولے شو۔ (تمرين: دا پر~$\pheight{\pi_1}$ د استقرا په وسيله وڅېړئ۔)
+
+اوس فرض کړئ چې نۀ لومړے حالت او نۀ دويم حالت لګېږي۔ په پاتې حالاتو کښې $\cheight{\pi} > 0$؛ يعنې لږ تر لږه يوه مقدمه د استنتاج پايله ده۔
+
+\paragraph{درېم او څلورم حالت، \LR{C} او~\LR{D}: د پرېکونونو ځاے بدلول۔}
+په دې دواړو حالاتو کښې څېړل شوي امکانونه يوه ګډه بڼه لري۔ له داسې !!a{proof} څخه پيل کوو چې په~\CutCS{} ختمېږي او يوه مقدمه ئې د قاعدې~$R$ په وسيله ترلاسه شوې وي، خو د پرېکون !!{formula}~$!A$ په هغې کښې اصلي فارمول نۀ وي؛ کوم بل !!{formula}~$!D$ اصلي وي۔ په دې !!{proof} کښې \CutCS{} له قاعدې~$R$ وروسته راځي، او لنډه بڼه ئې داسې ده:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !D, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, \Gamma, \Pi \fCenter \Delta', \Lambda$
+\RightLabel{$R$}
+\UnaryInf$!A, \Gamma \fCenter \Delta', !D$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !D$
+\DisplayProof
+\]
+دا يوازې هغه حالت رانغاړي چې $R$~يوه يو‌مقدمې ښۍ قاعده وي، $A$~د~$R$ اصلي !!{formula} نۀ وي، او اصلي !!{formula}~$!D$ د~\CutCS د ښۍ مقدمې په تالي کښې راځي۔ که $!D$~په مقدم کښې راشي، يعنې $R$ کيڼه قاعده وي، يا د~\CutCS په کيڼه مقدمه کښې راشي، نو بڼه به ئې بېله وي۔ په $\Pi$ او~$\Lambda$ کښې !!{formula}s د قاعدې~$R$ فعال !!{formula}s ښيي۔
+
+دا ترتيب سرچپه کوو او داسې !!a{proof} ګورو چې $R$ په کښې له~\CutCS{} وروسته راځي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma, \Pi \fCenter \Delta', !D, \Lambda, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, \Gamma, \Pi \fCenter \Delta', !D, \Lambda$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta', !D, \Lambda$
+\RightLabel{$R$}
+\UnaryInf$\Gamma, \fCenter \Delta', !D, !D$
+\DisplayProof
+\]
+د !!{height} ساتونکي کمزوري کولو په وسيله له $\pi_1$ او $\pi_3$ څخه په ترتيب سره $\pi_1'$ او $\pi_3'$ ترلاسه کوو۔
+
+څرنګه چې د \CutCS{} او~$R$ ترتيب بدلوو، دې ته «د~$R$ څخه پورته د پرېکون ځاے بدلول» وايي۔ دا د هغه !!{proof} لوړوالے کموي چې د~\CutCS په ښۍ مقدمه ختمېږي؛ نو د پرېکون !!{height} هم کموي۔ يعنې په نوي \CutCS{} ختمېدونکي فرعي !!{proof}s داسې اخيستلے شو چې !!{height} ئې له $\pi_1$ او $\pi_3$ څخه زيات نۀ وي۔ د پرېکون !!{height} کم شو، ځکه په ښي اړخ کښې مو يو استنتاج لرې کړ۔ اوس د استقرا فرض لګېږي او وايي چې د \CutCS{} استنتاج لرې کېدے شي۔ په پاے کښې د~$\RightR{\Contraction}$ د منلو وړتيا په وسيله د~$!D$ زيات نقل لرې کوو۔
+
+\paragraph{درېم حالت \LR{C}:}
+لږ تر لږه $\pi_1$ يا $\pi_2$ په يوه يو‌مقدمې قاعده~$R$ ختمېږي چې $!A$~پکښې اصلي فارمول نۀ دے۔ ټول اتلس حالتونه شته: د دې له مخې چې $!A$~د~\CutCS په کيڼه مقدمه کښې اصلي نۀ دے که په ښۍ، او دا چې $R$ له نهو يو‌مقدمې قاعدو، \LeftR{\lnot}، \RightR{\lnot}، \RightR{\lor}، \LeftR{\land}، \RightR{\lif} او د کمي کوونکو له څلورو قاعدو څخه کومه يوه ده۔ يوازې دوه بېلګې ګورو: $!A$~د~$\pi_2$ په وروستي استنتاج کښې اصلي فارمول نۀ دے، او هغه په~$\RightR{\lif}$ يا په~\LeftR{\lexists} ختمېږي۔ نور حالتونه ورته دي او د تمرينونو په توګه پاتې دي۔
+
+فرض کړئ چې $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B \lif !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, !B, \Gamma \fCenter \Delta', !C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$!A, \Gamma \fCenter \Delta', !B \lif !C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \lif !C$
+\DisplayProof
+\]
+چې $\Delta = \Delta', !B \lif !C$۔ پر $\pi_1$ د !!{height} ساتونکي کمزوري کولو، \olref[seq][adm]{prop:weak-G3c-adm}، په لګولو د $!B, \Gamma \fCenter \Delta', !B \lif !C, !C,
+!A$ يو !!a{proof} $\pi_1'$ ترلاسه کوو؛ په کيڼ اړخ کښې $!B$ او په ښي اړخ کښې $!C$ ورزياتوو۔ همداسې پر~$\pi_3$ د \olref[seq][adm]{prop:weak-G3c-adm} په لګولو د $!A, !B, \Gamma \fCenter
+\Delta', !B \lif !C, !C$ يو !!a{proof}~$\pi_3'$ ترلاسه کوو؛ په ښي اړخ کښې $!B \lif !C$ ورزياتوو۔ د استقرا فرض پر دې لګېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta', !B \lif !C, !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, !B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\DisplayProof
+\]
+د پرېکون !!{formula}~$!A$ دے۔ دا !!{proof} له~$\pi$ سره د پرېکون عين رتبه لري، خو د پرېکون !!{height} ئې کم دے۔ په \Log{G3c} کښې بې له \CutCS{} د~$!B, \Gamma \fCenter \Delta', !B \lif
+!C, !C$ يو !!a{proof}~$\pi_4$ راکوي۔ د $\RightR{\lif}$ په لګولو د $\Gamma \fCenter
+\Delta', !B \lif !C, !B \lif !C$ يو !!a{proof} ترلاسه کوو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$!B, \Gamma \fCenter \Delta', !B \lif !C, !C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$\Gamma \fCenter \Delta', !B \lif !C, !B \lif !C$
+\DisplayProof
+\]
+د $\Gamma \Sequent \Delta$، يعنې د $\Gamma
+\fCenter \Delta', !B \lif !C$، د يوه !!a{proof}~$\pi'$ د ترلاسه کولو دپاره د انقباض د منلو وړتيا، \olref[seq][inv]{prop:G3c-cont-adm}، ولګوئ۔
+
+اوس فرض کړئ چې $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lexists[x][!B(x)], \Gamma' \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{$\LeftR{\lexists}$}
+\UnaryInf$!A, \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\lexists[x][!B(x)], \Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+\emph{OLCMP-116: په سرچينه کښې د دې لومړي ګډ سياق پرېکون پايله وجودي فارمول پرېږدي؛ دواړه مقدمې ئې په ګډ مقدم کښې لري۔ هماغه ګډ سياق په پايله کښې وساتل شو۔}
+د استقرا فرض بيا پر دې لګوو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1[!B(c) \Sequent {}]$}
+\Deduce$\lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta, !A$
+\AxiomC{}
+\LeftLabel{$\pi_3[\lexists[x][!B(x)] \Sequent {}]$}
+\Deduce$!A, \lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\lexists[x][!B(x)], !B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$\lexists[x][!B(x)], \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+د ځانګړي متغير شرط پوره دے، ځکه په~$\pi_2$ کښې د~\LeftR{\lexists} هماغه شرط تضمينوي چې $c$ په $\lexists[x][!B(x)]$، $\Gamma'$ يا~$\Delta$ کښې نۀ راځي۔ په پاے کښې \olref[seq][inv]{prop:G3c-cont-adm} ولګوئ۔
+
+\paragraph{څلورم حالت \LR{D}:}
+لږ تر لږه $\pi_1$ يا $\pi_2$ په يوه دوه‌مقدمې قاعده~$R$ ختمېږي چې $!A$ پکښې اصلي فارمول نۀ دے۔ شپږ حالتونه شته۔ هغه حالت ګورو چې $!A$ د~$\pi_2$ په وروستي استنتاج کښې اصلي نۀ دے او هغه په~$\RightR{\land}$ ختمېږي؛ نور حالتونه ورته دي۔
+
+فرض کړئ چې $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B$
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$!A, \Gamma \fCenter \Delta', !C$
+\RightLabel{$\RightR{\land}$}
+\BinaryInf$!A, \Gamma \fCenter \Delta', !B \land !C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د استقرا فرض پر دې !!{proof}s لګېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !B, !A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B \land !C, !B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !B$
+\DisplayProof
+\]
+او
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !C, !A$
+\AxiomC{}
+\RightLabel{$\pi_4'$}
+\Deduce$!A, \Gamma \fCenter \Delta', !B \land !C, !C$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !C$
+\DisplayProof
+\]
+\emph{OLCMP-117: سرچينه د دويم کمزوري شوي کيڼ ثبوت او د ورپسې عطف پايلې په تالي کښې د پاتې سياق پريم پرېږدي۔ د دواړو ګډ پاتې سياق نښه يوشان شوه؛ د عطف فعال فارمولونه نۀ بدلېږي۔}
+دلته د \Log{G3c} !!{proof}s $\pi_1'$ او $\pi_1''$ له~$\pi_1$ څخه د !!{height} ساتونکي کمزوري کولو، \olref[seq][adm]{prop:weak-G3c-adm}، په وسيله ترلاسه کېږي؛ يو ځل په ښي اړخ کښې $!B$ او بل ځل $!C$ ورزياتوو۔ !!{proof}s $\pi_3'$ او~$\pi_4'$ هم له $\pi_3$ او~$\pi_4$ څخه په ترتيب سره د !!{height} ساتونکي کمزوري کولو په وسيله ترلاسه کېږي؛ په $\pi_3$ او~$\pi_4$ کښې په ترتيب په ښي اړخ کښې $!B \land !C$ ورزياتوو۔
+
+د استقرا فرض په \Log{G3c} کښې د $ \Gamma \fCenter \Delta', !B \land !C, !B$ او $\Gamma
+\fCenter \Delta', !B \land !C, !C$ !!{proof}s~$\pi_5$ او~$\pi_6$ راکوي۔ د قاعدې~$\RightR{\land}$ په وسيله ئې د $\Gamma \Sequent \Delta', !B \land !C, !B \land !C$ په يوه !!a{proof} کښې يوځاے کوو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_5$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !B$
+\AxiomC{}
+\RightLabel{$\pi_6$}
+\Deduce$\Gamma \fCenter \Delta', !B \land !C, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !B \land !C$
+\DisplayProof
+\]
+د $\Gamma \Sequent \Delta$، يعنې $\Gamma \fCenter
+\Delta', !B \land !C$، د يوه !!a{proof} د ترلاسه کولو دپاره د انقباض د منلو وړتيا، \olref[seq][inv]{prop:G3c-cont-adm}، ولګوئ۔
+
+\paragraph{پنځم حالت \LR{E}: د پرېکونونو راکمول۔}
+وروستے حالت هغه دے چې $\pi_1$ او $\pi_2$ دواړه په داسې استنتاجونو ختمېږي چې $!A$ پکښې اصلي فارمول دے۔ شپږ حالتونه شته، د~$!A$ د هر ممکن !!{main operator} دپاره يو۔
+
+په هر حالت کښې د پرېکون !!{formula}~$!A$ لرونکے \CutCS{} د~$!A$ پر فرعي !!{formula}s په يوه يا ډېرو پرېکونونو بدلوو؛ يعنې د هغو استنتاجونو پر فعالو !!{formula}s چې~$!A$ ئې اصلي !!{formula} دے۔ له همدې کبله دې حالتونو ته ډېر ځله د پرېکون د استنتاج «راکمونه» يا «بدلونه» وايي۔
+
+\begin{enumerate}
+\item که $!A \ident \lnot !B$ وي، نو $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\Gamma \fCenter \Delta, \lnot !B$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د استقرا فرض له مخې له دې څخه \CutCS{} لرې کېدے شي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+\item
+که $!A \ident (!B \lor !C)$ وي، نو $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lor !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!B \lor !C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+دا !!{proof} وګورئ چې په \CutCS ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B, !C$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$!C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta, !B$
+\DisplayProof
+\]
+چې $\pi_2'''$ له $\pi_2''$ څخه د !!{height} ساتونکي کمزوري کولو په وسيله ترلاسه شوے دے۔ د پرېکون رتبه ئې $< \cutr{\pi}$ ده، ځکه $\depth{!C} < \depth{!B \lor !C}$؛ نو د استقرا فرض په \Log{G3c} کښې د $\Gamma \fCenter \Delta, !B$ يو !!a{proof} $\pi_1''$ راکوي۔ دا !!{proof} چې په \CutCS ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د پرېکون رتبه $= \depth{!B} < \depth{!B \lor !C}$ لري؛ نو د استقرا فرض بيا لګېږي او د $\Gamma
+\fCenter \Delta$ يو !!a{proof} $\pi'$ راکوي۔
+
+\item $!A \ident (!B \land !C)$۔ تمرين۔
+
+\item که $!A \ident (!B \lif !C)$ وي، نو $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+دا !!{proof} چې په \CutCS ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+له~$\pi$ څخه د پرېکون ټيټه رتبه لري۔ د استقرا فرض د $!B, \Gamma \fCenter \Delta$ يو !!a{proof}~$\pi_1''$ راکوي۔ اوس دا !!{proof} وګورئ چې په \CutCS ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$!B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د پرېکون رتبه ئې بيا هم د~$\pi$ د پرېکون له رتبې څخه ټيټه ده؛ نو د استقرا فرض د $\Gamma \fCenter
+\Delta$ يو \Log{G3c}-!!{proof}~$\pi'$ راکوي۔
+\item که $!A \ident \lforall[x][!B(x)]$ وي، نو $\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B(t), \lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د استقرا فرض له مخې له دې څخه \CutCS{} لرې کېدے شي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$!B(t), \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B(t), \lforall[x][!B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B(t), \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+چې $\pi_1''$ له $\pi_1$ څخه، نۀ له~$\pi_1'$ څخه، د !!{height} ساتونکي کمزوري کولو په وسيله ترلاسه شوے دے۔ دا !!{proof} د پرېکون عين رتبه، خو د پرېکون ټيټ !!{height} لري۔ د $!B(t), \Gamma \fCenter \Delta$ يو !!a{proof}~$\pi_2''$ راکوي۔
+
+!!{proof}~$\pi_1'$ وروستے سېکوېنټ $\Gamma \Sequent \Delta,
+!B(c)$ لري، چې $c$~د~$\RightR{\lforall}$ د يوه استنتاج ځانګړے متغير دے۔ نو $c$~په~$!B(x)$، $\Gamma$ يا~$\Delta$ کښې نۀ راځي۔ فرض کوو چې !!{proof}~$\pi$ منظم دے: $c$~يوازې د ورپسې~$\RightR{\lforall}$ د استنتاج ځانګړے متغير دے او يوازې له هغه پورته راځي؛ يعنې يوازې په~$\pi_1'$ کښې راځي او په~$\pi_1'$ کښې د کوم استنتاج ځانګړے متغير نۀ دے۔ څرنګه چې $c$ په~$\pi_2$ کښې نۀ راځي، په~$t$ کښې هم نۀ شي راتلے۔ د \olref[seq][qua]{lem:subst-regular} له مخې !!{proof}~$\Subst{\pi_1'}{t}{c}$ د $\Gamma \Sequent \Delta,
+!B(t)$ يو !!a{proof} دے۔ اوس د استقرا فرض پر دې !!{proof} لګوو:
+\[
+\AxiomC{}
+\RightLabel{$\Subst{\pi_1'}{t}{c}$}
+\Deduce$\Gamma \fCenter \Delta, !B(t)$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!B(t), \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د استقرا فرض لګېږي، ځکه د پرېکون !!{formula}~$!B(t)$ دے؛ نو دا !!{proof} له~$\pi$ څخه د پرېکون ټيټه رتبه لري۔
+\item د $!A \ident \lexists[x][!B(x)]$ حالت د تمرين په توګه پرېږدو۔
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+د \olref{lem:cut-adm-G3c} په ثبوت کښې د څلورم حالت \LR{D} هغه فرعي حالت وڅېړئ چې $!A$ د~$\pi_1$ په وروستي استنتاج کښې اصلي فارمول نۀ وي او هغه په~$\LeftR{\lif}$ ختمېږي۔ پام وکړئ چې د دې تمرين يوه برخه د هغه څه څرګند بيان دے چې ثابتول ئې غواړئ؛ يعنې په دې حالت کښې د $\pi$ بڼه څه ده؟
+\end{prob}
+
+\begin{prob}
+د \olref{lem:cut-adm-G3c} په ثبوت کښې د درېم حالت \LR{C} هغه فرعي حالت وڅېړئ چې $!A$ د~$\pi_1$ په وروستي استنتاج کښې اصلي فارمول نۀ وي او هغه په~$\LeftR{\lforall}$ ختمېږي۔ \emph{OLCMP-120: سرچينه دا تمرين د دوه‌مقدمې څلورم حالت برخه بولي، خو د کلي کمي کوونکي کيڼه قاعده يوه مقدمه لري؛ د يو‌مقدمې درېم حالت حواله سمه شوه۔}
+\end{prob}
+
+\begin{prob}
+د \olref{lem:cut-adm-G3c} په ثبوت کښې د پنځم حالت \LR{E} هغه فرعي حالت وڅېړئ چې $!A$ د $\pi_1$ او $\pi_2$ په دواړو وروستيو استنتاجونو کښې اصلي فارمول وي او $!A \ident (!B \land !C)$۔
+\end{prob}
+
+\begin{prob}
+د \olref{lem:cut-adm-G3c} په ثبوت کښې د پنځم حالت \LR{E} هغه فرعي حالت وڅېړئ چې $!A$ د $\pi_1$ او $\pi_2$ په دواړو وروستيو استنتاجونو کښې اصلي فارمول وي او $!A \ident \lexists[x][!B(x)]$۔
+\end{prob}
+
+پام وکړئ چې په پنځم حالت \LR{E} کښې د هغه !!{proof} د پرېکون !!{height} چې په \CutCS{} ختمېږي او د استقرا فرض پرې لګوو، د اصلي ثبوت د پرېکون له !!{height} څخه لوړېدے شي۔ مثلاً، د $!A
+\ident (!B \lif !C)$ په حالت کښې مو $\pi$ په داسې يوه !!a{proof} بدل کړ چې دوه \CutCS{} استنتاجونه لري:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_1''$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\emph{OLCMP-118: سرچينه د وروستي پرېکون په پايله کښې د هغه پرېکون فارمول لا په مقدم کښې پرېږدي؛ د وروستي پرېکون دواړه مقدمې هماغه پېښه لرې کوي۔ وروستۍ پايله اوس د اصلي مطلوب سېکوېنټ سره برابره ده۔}
+د $\pi_1'$ او $\pi_2''$ تر منځ پاسنے \CutCS{} له~$\pi$ څخه هم د پرېکون ټيټه رتبه او هم ټيټ !!{height} لري۔ خو !!{proof}~$\pi_1''$، چې د استقرا د فرض د لګولو پايله ده، نور له~$\pi$ څخه د پرېکون د ټيټ !!{height} شرط نۀ تضمينوي۔ بيا هم څرنګه چې د لاندې \CutCS{} د پرېکون !!{formula} $!B$ دے، د پرېکون \emph{رتبه} ئې د~$\pi$ د پرېکون له رتبې څخه ټيټه ده۔
+
+\olref{lem:cut-adm-G3c} ثابتوي چې له يوه !!a{proof} څخه د~\CutCS{} يو تر ټولو پاسنے استنتاج لرې کولے شو۔ د همدې لېمې په پرله‌پسې لګولو پر هغو تر ټولو پاسنيو فرعي !!{proof}s چې په~\CutCS ختمېږي، له يوه !!a{proof} څخه هر شمېر \CutCS{} استنتاجونه لرې کولے شو۔
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-topmost} په $ \Log{G3c} + \CutCS$ کښې هر !!{proof} $\pi$ په~\Log{G3c} کښې په يوه !!a{proof} بدلولے شو۔
+\end{thm}
+
+\begin{proof}
+په~$\pi$ کښې د \CutCS{} د استنتاجونو پر شمېر~$n$ استقرا کوو۔ که $n=0$ وي، څه کول نۀ دي پکار: $\pi$ لا په~\Log{G3c} کښې يو !!a{proof} دے۔ کنه، هغه فرعي !!{proof}~$\pi'$ وګورئ چې د \CutCS{} په يو تر ټولو پاسني استنتاج ختمېږي۔ په وروستي استنتاج کښې يوه د \CutCS{} قاعده لري او بله هېڅ نۀ لري۔ د \olref{lem:cut-adm-G3c} په لګولو ئې په بې‌\CutCS{} ثبوت~$\pi''$ بدل کړئ، او فرعي !!{proof}~$\pi'$ په~$\pi''$ بدل کړئ۔ پايله يو !!a{proof} دے چې $n-1$ د \CutCS{} استنتاجونه لري، او د استقرا فرض پرې لګېږي۔
+\end{proof}
+
+\end{document}
