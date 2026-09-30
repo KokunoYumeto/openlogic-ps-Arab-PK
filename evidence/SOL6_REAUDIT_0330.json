@@ -1,0 +1,53 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T14:28:43.931356+00:00",
+  "status": "whole chapter driver independently reviewed; terminology consistency repair",
+  "units": [
+    {
+      "unit_id": "OLP-0330",
+      "source_path": "content/second-order-logic/metatheory/metatheory.tex",
+      "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
+      "target_sha256_before": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "target_sha256_after": "dec5cd9839bd9f1cc3255d0abee0dcbfab652551ad5d520dabab0ce820d49428",
+      "paired_blocks": 11,
+      "translated_blocks_reviewed": 1,
+      "all_five_imports_retained": true,
+      "title_only_change": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "پاکستاني بالغ نثر او د معنا تشريحي ترتيب؛ عين لامبډا يا ډېرارزښته حساب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستاني بالغ نثر او د معنا تشريحي ترتيب؛ عين لامبډا يا ډېرارزښته حساب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "18",
+      "pdf_page_1based": 23,
+      "page_image_sha256": "d6b9a4d54bf5e26bee0481d22eb16f75f49bccbe4f51c5ba1bc5ad74f2906e38",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "افغان سيمه‌ييز شاهد د فارمولونو په باب بهرنی رياضيکي جوړښت بيانوي؛ عين پاکستانے فرا تيوري نوم نۀ تصديقوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د فارمولونو په باب بهرنی رياضيکي جوړښت بيانوي؛ عين پاکستانے فرا تيوري نوم نۀ تصديقوي۔"
+    }
+  ],
+  "segment_entries_added": 1,
+  "new_source_correction_ids": [],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0330.jsonl",
+  "whole_unit_segment_snapshot_sha256": "bea3d69eafab10d306b86a2f1ee77c449fbf8f526242a66c6d1c61777e205cda",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "Accept652 and continue653 plus whole0331; full722 active."
+}

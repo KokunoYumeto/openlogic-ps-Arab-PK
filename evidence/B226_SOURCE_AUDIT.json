@@ -1,0 +1,248 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-09-30T14:28:43.931356+00:00",
+  "status": "whole651/652 registered; dual acceptance pending",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0651",
+      "source_path": "content/lambda-calculus/syntax/conversion.tex",
+      "source_sha256": "0179bc8cb297b394faaa6955ed852a1f0300ee3a9b254081ccfc3ef68844052e",
+      "source_bytes": 637,
+      "target_sha256": "20524b7fb5bc7793f2f152f5b959ad5b02d035a39282e0a2fa70dc3a65ac2c58",
+      "target_bytes": 1171,
+      "paired_blocks": 7,
+      "changed_blocks": [
+        4,
+        5,
+        6
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_roles_compared": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true
+      },
+      "reviewed_math_clause_permutations": {},
+      "source_correction_ids": [
+        "OLCMP-103"
+      ]
+    },
+    {
+      "unit_id": "OLP-0652",
+      "source_path": "content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_sha256": "3c31cced541d949d031c706ea2042db536f047619dfedb6f06257555ea84c061",
+      "source_bytes": 5719,
+      "target_sha256": "f2a1eddc717f7d4686177f4cba0eefa83c22760acece2ff11247d8e0edd37945",
+      "target_bytes": 7763,
+      "paired_blocks": 23,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "checks": {
+        "math": true,
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_roles_compared": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "environment_order_equal": true,
+        "comments_equal": true
+      },
+      "reviewed_math_clause_permutations": {
+        "7": [
+          0,
+          1,
+          2,
+          4,
+          3,
+          5
+        ],
+        "8": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "9": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "16": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          7,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "17": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          6
+        ],
+        "18": [
+          0,
+          2,
+          1
+        ]
+      },
+      "source_correction_ids": [
+        "OLCMP-104"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0330",
+      "source_path": "content/second-order-logic/metatheory/metatheory.tex",
+      "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
+      "target_sha256_before": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "target_sha256": "dec5cd9839bd9f1cc3255d0abee0dcbfab652551ad5d520dabab0ce820d49428",
+      "target_bytes": 401,
+      "paired_blocks": 11,
+      "source_correction_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "پاکستاني بالغ نثر او د معنا تشريحي ترتيب؛ عين لامبډا يا ډېرارزښته حساب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستاني بالغ نثر او د معنا تشريحي ترتيب؛ عين لامبډا يا ډېرارزښته حساب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "افغان سيمه‌ييز شاهد د تابعو او ترکيب مفهوم ښيي؛ د الفا بدلون عين تخصصي نوم نۀ تصديقوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د تابعو او ترکيب مفهوم ښيي؛ د الفا بدلون عين تخصصي نوم نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P140-CONSISTENCY",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "140",
+      "pdf_page_1based": 145,
+      "page_image_sha256": "12d056b1962efc6210ec3bc9fd95cd048ed28c4641cadd0d81d4bf405960b158",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "افغان سيمه‌ييز شاهد د تناقض او سازګارۍ توپير ښيي؛ د LK خاصيتونه او د ډېرارزښته نظام حدود سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د تناقض او سازګارۍ توپير ښيي؛ د LK خاصيتونه او د ډېرارزښته نظام حدود سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "48",
+      "pdf_page_1based": 53,
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "افغان سيمه‌ييز شاهد د استنتاج او مقدم/تالي نقش ښيي؛ د کلاسيک سېکوېنټ کټ بشپړه قاعده پخپله نۀ ثابتوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د استنتاج او مقدم/تالي نقش ښيي؛ د کلاسيک سېکوېنټ کټ بشپړه قاعده پخپله نۀ ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P18-FORMATION-SEQUENCE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "18",
+      "pdf_page_1based": 23,
+      "page_image_sha256": "d6b9a4d54bf5e26bee0481d22eb16f75f49bccbe4f51c5ba1bc5ad74f2906e38",
+      "actual_consultation": "Pakistani prose page2 and function page147 actually read before drafting; consistency140/modus48/formation18 freshly visually read before these corrections. Reuse from this continuation is explicit.",
+      "finding": "افغان سيمه‌ييز شاهد د فارمولونو په باب بهرنی رياضيکي جوړښت بيانوي؛ عين پاکستانے فرا تيوري نوم نۀ تصديقوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د فارمولونو په باب بهرنی رياضيکي جوړښت بيانوي؛ عين پاکستانے فرا تيوري نوم نۀ تصديقوي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P147-FUNCTIONS",
+    "AF-NIAZMAN-P140-CONSISTENCY",
+    "AF-NIAZMAN-P48-MODUS-PONENS",
+    "AF-NIAZMAN-P18-FORMATION-SEQUENCE"
+  ],
+  "new_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-103",
+    "OLCMP-104"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLCMP-103",
+    "DEC-OLCMP-104",
+    "DEC-PS-0330-METATHEORY-TITLE"
+  ],
+  "revised_review_entry_ids": [
+    "DEC-PS-0644-REFERENCE-BINDINGS"
+  ],
+  "semantic_samples_added": 22,
+  "focused_qa_sha256": "ed177e686a33d303b4b4108ab95a7d6bcce5e973f91c7416cb9319ed4d60b8f1",
+  "model_provenance_sha256": "9e6d2344f835e49ec885bcbc6938aa9eec841b885e1768f63114ec6ece2a9d5b",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0330.json",
+  "related_reaudit_sha256": "3ccd3885dce6feac77ae4a1009824a5813067248b1d47d7bd07b515e6fae60eb",
+  "unresolved": "پاتې ۷۰ واحدونه، بشپړ لوستونکی او EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۷۹ واحدونه لا پاتې دي۔",
+  "next_executable_action": "Dual652 QA and canonical replay, accept652, integrate conversion beforealpha and classical comparison after many-valued rules; one later guarded build. Publish current sources and continue653/whole0331."
+}

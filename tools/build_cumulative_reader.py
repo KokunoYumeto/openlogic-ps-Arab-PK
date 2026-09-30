@@ -417,7 +417,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
     for row, body in prepared:
         if int(row['unit_id'][-4:]) <= 642:
             continue
-        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648', 'OLP-0649', 'OLP-0650'}:
+        if row['unit_id'] not in {'OLP-0643', 'OLP-0644', 'OLP-0645', 'OLP-0646', 'OLP-0647', 'OLP-0648', 'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652'}:
             raise ValueError(f"{row['unit_id']} requires a source-grounded reader integration mapping")
         parent = Path(row['source_path']).parent
         chapter_rows = [(r, b) for r, b in primary if Path(r['source_path']).parent == parent]
@@ -425,6 +425,13 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
             raise ValueError(f"missing translated chapter driver for {row['unit_id']}")
         anchor = chapter_rows[-1][0]['unit_id']
         part, chapter, section, role = context(body)
+        if row['unit_id'] in {'OLP-0651', 'OLP-0652'}:
+            # The legacy conversion stub introduces the complete alpha section.
+            # The legacy LK text is an explicitly disclosed classical comparison
+            # following the actual many-valued rules, not their replacement.
+            anchor = 'OLP-0361' if row['unit_id'] == 'OLP-0651' else 'OLP-0406'
+            if not any(r['unit_id'] == anchor and Path(r['source_path']).parent == parent for r, b in primary):
+                raise ValueError('legacy conversion/LK comparison requires its translated source context')
         if row['unit_id'] in {'OLP-0649', 'OLP-0650'}:
             # Truth sets extend the existing relational-model semantics. The
             # frozen lambda driver lists lists.tex as an optional import after
@@ -479,7 +486,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
         after_anchors = re.findall(r'\\(?:phantomsection\\label|label)\{(olpseg:[^{}]+)\}', body)
         if before_anchors != after_anchors:
             raise ValueError(f"alternate semantic anchors changed: {row['unit_id']}")
-        heading = ('د منجمدې سرچينې بشپړه اړونده برخه' if row['unit_id'] in {'OLP-0649', 'OLP-0650'}
+        heading = ('د منجمدې سرچينې بشپړه اړونده برخه' if row['unit_id'] in {'OLP-0649', 'OLP-0650', 'OLP-0651', 'OLP-0652'}
                    else 'د منجمدې سرچينې بشپړ بديل متن')
         body = (r'\paragraph{' + heading + r': \LR{' + row['unit_id'] + '}}\n') + body
         additions.setdefault(anchor, []).append((row, body))
@@ -487,7 +494,7 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
                         'placement_after_unit': anchor, 'chapter_directory': parent.as_posix(),
                         'original_context': [part, chapter, section],
                         'reader_context': [part, chapter, revised_section],
-                        'policy': 'Complete alternate inside its own existing chapter; independent local labels and self references; no duplicate chapter. All semantic anchors retained. Editable source bytes unchanged.'})
+                        'policy': 'Complete source section inside its corresponding existing physical chapter; legacy scope/incompleteness disclosed where applicable; independent local labels and self references; no duplicate chapter. All semantic anchors retained. Editable source bytes unchanged.'})
     ordered = []
     for row, body in primary:
         ordered.append((row, body))
@@ -573,18 +580,19 @@ def resolve_tag_references(text: str, unit_id: str, selected_labels: set[str]) -
     avoids empty cleveref entries from the upstream double-comma accumulator.
     """
     migrated = {
-        'provability-land-left': 'provability-land-left',
-        'provability-land-right': 'provability-land-right',
-        'provability-lor-left': 'provability-lor',
-        'provability-lor-right': 'provability-lor',
-        'provability-mp': 'provability-lif-left',
-        'provability-lif': 'provability-lif-right',
+        'provability-land-left': ('provability-land', 1, 'provability-land-left'),
+        'provability-land-right': ('provability-land', 2, 'provability-land-right'),
+        'provability-lor-left': ('provability-lor', 1, None),
+        'provability-lor-right': ('provability-lor', 2, None),
+        'provability-mp': ('provability-lif', 1, 'provability-lif-left'),
+        'provability-lif': ('provability-lif', 2, 'provability-lif-right'),
     }
     records: list[dict] = []
     pattern = re.compile(r'\\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}')
 
     def replace(match: re.Match[str]) -> str:
         targets: list[str] = []
+        item_ordinals: set[int] = set()
         for raw in match.group(1).split(','):
             entry = re.fullmatch(r'\s*([A-Za-z][A-Za-z0-9-]*)/\{([^{}]+)\}\s*', raw)
             if not entry:
@@ -595,18 +603,31 @@ def resolve_tag_references(text: str, unit_id: str, selected_labels: set[str]) -
             if tag not in ACTIVE_TAGS:
                 continue
             target = original
+            item_label = None
+            item_ordinal = None
             legacy = re.fullmatch(r'fol:(seq|ntd):prv:prop:(provability-[a-z-]+)', original)
             if unit_id == 'OLP-0644' and legacy and legacy[2] in migrated:
-                target = f'fol:{legacy[1]}:ppr:prop:{migrated[legacy[2]]}'
+                theorem, item_ordinal, item = migrated[legacy[2]]
+                target = f'fol:{legacy[1]}:ppr:prop:{theorem}'
+                item_ordinals.add(item_ordinal)
+                if item:
+                    item_label = f'fol:{legacy[1]}:ppr:prop:{item}'
+                    if item_label not in selected_labels:
+                        raise ValueError(f'unresolved theorem item in {unit_id}: {item_label}')
             if target not in selected_labels:
                 raise ValueError(f'unresolved active tagged reference in {unit_id}: {original} -> {target}')
             if target not in targets:
                 targets.append(target)
             records.append({'unit_id': unit_id, 'tag': tag, 'source_label': original,
-                            'reader_label': target, 'legacy_label_migrated': target != original})
+                            'reader_label': target, 'legacy_label_migrated': target != original,
+                            'reader_item_label': item_label, 'reader_item_ordinal': item_ordinal})
         if not targets:
             raise ValueError(f'empty active tagged reference in {unit_id}')
-        return r'\cref{' + ','.join(targets) + '}'
+        if len(item_ordinals) > 1:
+            raise ValueError(f'mixed theorem-item destinations in {unit_id}')
+        suffix = (' (لومړۍ فقره)' if item_ordinals == {1}
+                  else ' (دويمه فقره)' if item_ordinals == {2} else '')
+        return r'\cref{' + ','.join(targets) + '}' + suffix
 
     return pattern.sub(replace, text), records
 

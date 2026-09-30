@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 650,
-    "structural_pass": 650,
+    "draft_units": 652,
+    "structural_pass": 652,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B225-PROPOSITIONS-LISTS",
+  "batch": "PS-B226-LEGACY-CONVERSION-CLASSICAL-COMPARISON",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11223,7 +11223,7 @@
       "unit_id": "OLP-0330",
       "path": "content/second-order-logic/metatheory/metatheory.tex",
       "source_sha256": "4da3e8e4537a2a8ebf7870903b03ee5a09945b1fc8d9bded72d3009c60377afe",
-      "translation_sha256": "c5dcd27ce9ea9ff92ac13b3572f8a37e75beadea61e104785cbcb2fe8224ea9f",
+      "translation_sha256": "dec5cd9839bd9f1cc3255d0abee0dcbfab652551ad5d520dabab0ce820d49428",
       "source_blocks": 11,
       "target_blocks": 11,
       "checks": {
@@ -22237,6 +22237,72 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0651",
+      "path": "content/lambda-calculus/syntax/conversion.tex",
+      "source_sha256": "0179bc8cb297b394faaa6955ed852a1f0300ee3a9b254081ccfc3ef68844052e",
+      "translation_sha256": "20524b7fb5bc7793f2f152f5b959ad5b02d035a39282e0a2fa70dc3a65ac2c58",
+      "source_blocks": 7,
+      "target_blocks": 7,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-103"
+      ],
+      "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "path": "content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_sha256": "3c31cced541d949d031c706ea2042db536f047619dfedb6f06257555ea84c061",
+      "translation_sha256": "f2a1eddc717f7d4686177f4cba0eefa83c22760acece2ff11247d8e0edd37945",
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "LK"
+      ],
+      "allowed_residual_english": [
+        "LK"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-104"
+      ],
       "status": "structural-pass"
     }
   ],
@@ -38896,6 +38962,138 @@
       "passage": "OLP-0329-B013",
       "reverse_paraphrase": "Inf and Count together describe denumerable domains. Different direct denumerability sentence and proof remain assigned as an exercise.",
       "finding": "بشپړ متن، ټول جهتونه او د فرعي سټونو/تابعو کمیت ټاکنه تازه وکتل شوه۔"
+    },
+    {
+      "unit_id": "OLP-0651",
+      "passage": "OLP-0651-B004",
+      "reverse_paraphrase": "Title conversion and reduction; original legacy lam/int/con identity retained.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0651",
+      "passage": "OLP-0651-B005",
+      "reverse_paraphrase": "Three transformation types in lambda calculus. Conversion versus reduction distinguished by bidirectional versus unidirectional transformation, not by changing the represented function.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0651",
+      "passage": "OLP-0651-B006",
+      "reverse_paraphrase": "Alpha conversion renames variables; lambda x.x and lambda y.y both represent the identity function. Source stops after promising a formal definition, with no such definition here; exact source incompleteness disclosed, complete alpha section already present in syntax.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B005",
+      "reverse_paraphrase": "Proof-theoretic notions title.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B006",
+      "reverse_paraphrase": "Validity/entailment/satisfiability contrasted with derivability/nonderivability. These copied LK definitions are explicitly framed as the CLASSICAL comparison, not general properties of arbitrary many-valued matrices.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B007",
+      "reverse_paraphrase": "Classical LK theoremhood is derivation of empty-antecedent sequent with A, with theorem/non-theorem notation retained.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B008",
+      "reverse_paraphrase": "Derivability from set requires a finite subset and a sequence of precisely its sentences; infinite contexts allowed, proofs finite.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B009",
+      "reverse_paraphrase": "Contraction/exchange/weakening make multiplicity/order immaterial in classical LK. Complete B,B,C to C,C,B proof tree preserved. The rule convention assumes sequences containing the same set, not arbitrary omission of assumptions.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B010",
+      "reverse_paraphrase": "Classical inconsistency is a derivation of empty succedent from some finite subset; consistency negates that existential claim. Not imported as a definition for every many-valued logic.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B011",
+      "reverse_paraphrase": "Reflexivity A in Gamma implies Gamma derives A.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B012",
+      "reverse_paraphrase": "Reflexivity proof uses initial A=>A and singleton subset.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B013",
+      "reverse_paraphrase": "Monotonicity extends context Gamma to Delta.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B014",
+      "reverse_paraphrase": "Monotonicity proof reuses finite witness and unchanged derivation.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B015",
+      "reverse_paraphrase": "Transitivity removes intermediate A via cut between Gamma and Delta.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B016",
+      "reverse_paraphrase": "Complete two-derivation cut tree and union of finite witnesses retained.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B017",
+      "reverse_paraphrase": "Single and finitely many intermediate consequences give the stated transitive consequences.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B018",
+      "reverse_paraphrase": "Classical inconsistency iff all sentences derivable; no claim of explosion in every many-valued system.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B019",
+      "reverse_paraphrase": "Proof assigned as an exercise, not a missing translated proof.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B020",
+      "reverse_paraphrase": "Original explicit reference to classical fol/seq/ptn inconsistency proposition retained, coherent with comparison scope.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B021",
+      "reverse_paraphrase": "Two finite-witness compactness clauses: finite proof assumptions and consistency from all finite subsets.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0652",
+      "passage": "OLP-0652-B022",
+      "reverse_paraphrase": "Both compactness proofs retain finite witness and contrapositive inconsistency argument.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
+    },
+    {
+      "unit_id": "OLP-0330",
+      "passage": "OLP-0330-B004",
+      "reverse_paraphrase": "Second-order metatheory chapter heading adopts the established general metatheory term fra tiwari; mathematical meaning unchanged, all five ordered imports retained.",
+      "finding": "ټول نقشونه، قيدونه، اثباتي جهتونه او د سرچينې حد تازه وکتل شول۔"
     }
   ],
   "builds": [
