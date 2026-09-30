@@ -1,0 +1,196 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-largest
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{inv}
+
+\olsection{د تر ټولو لوړې رتبې پرېکونونو لرې کول}
+
+د \olref[seq][inv]{lem:G3c-invert} ثبوت ښودلې ده چې که \Log{G3c} د يوې منطقي قاعدې (له \RightR{\lexists} او \LeftR{\lforall} پرته) پايله !!{prove}s کړي، نو د ثبوت د !!{height} له زياتولو پرته د قاعدې هره مقدمه هم !!{prove}s کوي۔ لا قوي پايله ښودلے شو: دا خاصيت د $\Log{G3c} +
+\CutCS$ دپاره هم صدق کوي۔
+
+لکه مخکې، د \CutCS{} د استنتاج \emph{د پرېکون رتبه} د هغه د پرېکون د !!{formula} ژوروالے ګڼو۔
+
+\begin{lem}\ollabel{lem:inv-G3c-cut}
+که $\Log{G3c} + \CutCS$ د يوې منطقي قاعدې~$R$ (له \RightR{\lexists} او \LeftR{\lforall} پرته، او د ځانګړي متغير له اصلي شرط سره) پايله د يوه !!a{proof}~$\pi$ په وسيله !!{prove}s کړي، نو هره مقدمه هم د !!{proof}~$\pi'$ په وسيله !!{prove}s کوي (يا د !!{proof}s~$\pi'$، $\pi''$ په وسيله، د دې له مخې چې قاعده يوه مقدمه لري که دوه)۔ سربېره پر دې،
+(الف)~$\pheight{\pi'}\le\pheight{\pi}$ (او $\pheight{\pi''}\le\pheight{\pi}$)، او (ب)~په~$\pi'$ (او $\pi''$) کښې د \CutCS{} د استنتاجونو شمېر په~$\pi$ کښې له شمېر څخه زيات نۀ دے؛ هر پاتې پرېکون د پخواني پرېکون په هماغه رتبه راځي۔
+\emph{OLCMP-109: سرچينه د شمېرونو او رتبو عين برابرۍ دعوه کوي، خو ورکړے جوړوونکے ثبوت د وروستۍ دوه‌مقدمې قاعدې د يوې څانګې په اخيستلو د بلې څانګې پرېکونونه پرېښودلے شي۔ دلته هغه کره حد ثبت شو چې جوړونه ئې ثابتوي: شمېر نۀ زياتېږي او نوې لوړه رتبه نۀ راځي۔ دا د راتلونکي د لوړې رتبې د راکمولو ثبوت دپاره بس دے؛ د هر ممکن ثبوت د عين برابرۍ د قوي وجودي دعوې د ناسم‌والي ادعا نۀ ده۔}
+\end{lem}
+
+\begin{proof}
+د \cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant} ثبوتونه وګورئ۔ هغه ثبوت پر~$\pheight{\pi}$ استقرا وه۔ په بنسټيز حالت کښې مو يو بديهي اصل په بل بديهي اصل بدل کړ؛ نو (الف) او (ب) شرطونه څرګند دي۔ که د~$\pi$ وروستۍ قاعده~$R$ وي، نو د هغې بې‌واسطې فرعي !!{proof}s هماغه مطلوب !!{proof}s~$\pi_i$ دي، او (الف) او (ب) دواړه پوره کېږي۔ په نورو ټولو حالاتو کښې مو د~$\pi$ پر بې‌واسطې فرعي !!{proof}s، يعنې د وروستي استنتاج~$R$ مقدمې يا مقدماتو ته رسېدونکو ثبوتونو، د استقرا فرض ولګاوه او بيا مو هماغه قاعده $R$ پر پايلو ولګوله۔ (الف) او (ب) د نوي ثبوت د بې‌واسطې فرعي !!{proof}s دپاره صدق کوي، نو د ټول ثبوت دپاره هم۔ هغه حالت لا پکار دے چې وروستے استنتاج~\CutCS وي۔ دلته بيا يوازې يو مثال ګورو: فرض کړئ چې $\pi$ د \LeftR{\land} د پايلې $!B \land !C, \Gamma \Sequent
+\Delta$ يو !!a{proof} دے او په~\CutCS ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, !B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د استقرا فرض پر $\pi_1$ او~$\pi_2$ لګېږي (دا هم د $\LeftR{\land}$ د پايلې د بېلګو !!{proof}s دي)، او په ترتيب سره د $!B, !C, \Gamma \fCenter
+\Delta, !A$ او $!A, !B, !C, \Gamma \fCenter \Delta$ !!{proof}s $\pi_1'$ او~$\pi_2'$ راکوي۔ دا د \CutCS{} په وسيله يوځاے کوو او~$\pi'$ ترلاسه کوو:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+څرګنده ده چې (الف) او (ب) پوره کېږي۔
+\end{proof}
+
+پام وکړئ چې که د \CutCS پر ځاے \Cut{} وکاروو، دا استدلال نۀ چلېږي؛ ځکه د وروستي !!{proof} په پايله کښې به په مقدم کښې د $!B, !C, \Gamma$ دوه نقلونه او په تالي کښې د $\Delta$ دوه نقلونه وي۔ بيا به د انقباض د منلو وړتيا وکاروو، خو د \olref[seq][inv]{prop:G3c-cont-adm} ثبوت د قاعدو د معکوسولو لېمه کاروي؛ نو دا به دوراني استدلال شي۔
+
+د \cref{pt:cut:inv:lem:inv-G3c-cut} په وسيله د پرېکون د لرې کولو يو بديل ثبوت ورکولے شو۔ په دې ثبوت کښې د \CutCS{} تر ټولو پاسنۍ پېښې يو په بل پسې نۀ لرې کوو؛ د \CutCS{} د تر ټولو لوړې رتبې استنتاجونه لرې کوو۔ يعنې په $\Log{G3c} + \CutCS$ کښې له يوه !!a{proof}~$\pi$ څخه پيل کوو او پکښې هر چېرې يو پرېکون لرې کوو (ښايي د ټيټو رتبو په پرېکونونو ئې بدل کړو)، بيا همدا کار تر هغې کوو چې هېڅ پرېکون پاتې نۀ شي۔ يوازې دا شرط دے چې له هغه پرېکون څخه پورته چې لرې کوو ئې، د هماغې يا لوړې رتبې پرېکون نۀ وي۔
+
+\begin{lem}\ollabel{lem:max-cut-red-G3c}
+که $\pi$ په $\Log{G3c}+\CutCS$ کښې يو !!a{proof} وي چې په~$n$ رتبې د~\CutCS{} په استنتاج ختمېږي، او په پاتې برخه کښې يوازې د~$\Log{G3c}$ قاعدې او د $<n$ رتبې \CutCS{} استنتاجونه کاروي، نو د هماغه وروستي سېکوېنټ يو ثبوت~$\pi'$ په~$\Log{G3c} + \CutCS$ کښې شته چې هر \CutCS{} استنتاج ئې د~$<n$ رتبې وي۔
+\end{lem}
+
+\begin{proof}
+!!{proof}~$\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+د~$!A$ د بڼې له مخې حالتونه بېلوو۔
+
+فرض کړئ چې $!A$ اټومي دے۔ د دې شرط له مخې چې په~$\pi_1$ او $\pi_2$ کښې ټول \CutCS{} استنتاجونه د $<
+\depth{!A} = 0$ رتبې دي، په~$\pi_1$ يا~$\pi_2$ کښې هېڅ \CutCS{} استنتاج نۀ شي کېدے۔ پر $\pheight{\pi_2}$ د استقرا په وسيله ښيو چې $\Gamma \Sequent \Delta$ بې‌پرېکونه ثبوت لري۔ که $\pheight{\pi_2} = 0$ وي، نو $!A, \Gamma \Sequent \Delta$ بديهي اصل دے۔ که $!A$ اصلي فارمول نۀ وي، نو کوم اټومي $!C$ هم د~$\Gamma$ او هم د $\Delta$ يو !!a{element} دے، او $\Gamma \Sequent \Delta$ پخپله بديهي اصل دے۔ که $!A$ اصلي فارمول وي، نو $\Delta = \Delta', !A$۔ \emph{OLCMP-110: سرچينه په دې تجزيه کښې د پاتې تالي د نښې پريم پرېږدي؛ ورپسې ثبوت همدغه پاتې تالي او د اصلي فارمول نقلونه کاروي۔ دلته د پاتې تالي نښه يوشان شوه۔} په دې حالت کښې $\pi_1$ په $\Gamma \Sequent \Delta', !A, !A$ ختمېږي۔ د \olref[seq][inv]{prop:G3c-cont-adm} (د انقباض د منلو وړتيا) په لګولو د $\Gamma \Sequent \Delta', !A$ بې‌پرېکونه ثبوت ترلاسه کوو۔ که $\pheight{\pi_2} > 0$ وي، په يوه قاعده~$R$ ختمېږي۔ د دې قاعدې يوه مقدمه واخلو: بڼه ئې $!A, \Gamma', \Pi \Sequent \Delta', \Lambda$ ده، چې $\Pi$ او $\Lambda$ د~$R$ فعال !!{formula}s دي۔ پر~$\pi_1$ او $\pi_2$ د \olref[seq][adm]{prop:weak-G3c-adm} په لګولو د $\Gamma, \Gamma', \Pi \Sequent \Delta, \Delta', \Lambda, !A$ او $!A, \Gamma, \Gamma', \Pi \Sequent \Delta, \Delta', \Lambda$ !!{proof}s ترلاسه کېږي، چې د استقرا فرض پرې لګېږي۔ د~$R$ د هرې مقدمې دپاره د $\Gamma, \Gamma', \Pi \Sequent \Delta, \Delta', \Lambda$ يو !!a{proof} راکوي۔ د $R$ په لګولو $\Gamma, \Gamma \Sequent \Delta, \Delta$ ترلاسه کېږي، او \olref[seq][inv]{prop:G3c-cont-adm} د $\Gamma \Sequent \Delta$ بې‌پرېکونه ثبوت راکوي۔
+
+که $!A$ اټومي نۀ وي، نو د~$!A$ د !!{main
+operator} له مخې حالتونه بېلوو۔ په هر حالت کښې \olref{lem:inv-G3c-cut} لګوو او د هغو کيڼو او ښيو قاعدو د مقدماتو !!{proof}s ترلاسه کوو چې $!A$ ئې اصلي فارمول دے۔ بيا د \olref[top]{lem:cut-adm-G3c} د ثبوت د پنځم حالت په شان مخ ته ځو۔
+\begin{enumerate}
+  \item $!A \ident \lnot !B$۔ !!{proof}s $\pi_1$ او $\pi_2$ په $\Gamma \Sequent \Delta, \lnot !B$ او $\lnot !B, \Gamma \Sequent \Delta$ ختمېږي۔ د \olref{lem:inv-G3c-cut} له مخې د $!B, \Gamma \Sequent \Delta$ او $\Gamma \Sequent \Delta, !B$ !!{proof}s $\pi_1'$ او $\pi_2'$ شته۔ !!{proof}~$\pi'$ دا دے:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \lor !C)$۔ !!{proof}s $\pi_1$ او $\pi_2$ په $\Gamma \Sequent \Delta, !B \lor !C$ او $!B \lor !C, \Gamma \Sequent \Delta$ ختمېږي۔ د \olref{lem:inv-G3c-cut} له مخې (پر~$\pi_1$ د \RightR{\lor} معکوسول) د $\Gamma \Sequent \Delta, !B, !C$ يو !!a{proof} $\pi_1'$ شته۔ د \olref{lem:inv-G3c-cut} له مخې (پر~$\pi_2$ د \LeftR{\lor} معکوسول) د $!B, \Gamma \Sequent \Delta$ يو !!a{proof} $\pi_2'$ او د $!C, \Gamma \Sequent \Delta$ يو !!a{proof} $\pi_2''$ شته۔ پر $\pi_2''$ د \olref[seq][adm]{prop:weak-G3c-adm} په لګولو د $!C, \Gamma \Sequent \Delta, !B$ يو !!a{proof}~$\pi_2'''$ هم ترلاسه کوو۔ !!{proof}~$\pi'$ دا دے:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta, !B, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, \Gamma \fCenter \Delta, !B$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \land !C)$۔ تمرين۔
+  \item $!A \ident (!B \lif !C)$۔ !!{proof}s $\pi_1$ او $\pi_2$ په $\Gamma \Sequent \Delta, !B \lif !C$ او $!B \lif !C, \Gamma \Sequent \Delta$ ختمېږي۔ د \olref{lem:inv-G3c-cut} له مخې (پر~$\pi_1$ د \RightR{\lif} معکوسول) د $!B, \Gamma \Sequent \Delta, !C$ يو !!a{proof} $\pi_1'$ شته۔ د \olref{lem:inv-G3c-cut} له مخې (پر~$\pi_2$ د \LeftR{\lif} معکوسول) د $\Gamma \Sequent \Delta, !B$ يو !!a{proof} $\pi_2'$ او د $!C, \Gamma \Sequent \Delta$ يو !!a{proof} $\pi_2''$ شته۔ پر $\pi_2''$ د \olref[seq][adm]{prop:weak-G3c-adm} په لګولو د $!C, !B, \Gamma \Sequent \Delta$ يو !!a{proof}~$\pi_2'''$ هم ترلاسه کوو۔ !!{proof}~$\pi'$ دا دے:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident \lforall[x][!B(x)]$۔ !!{proof}s $\pi_1$ او $\pi_2$ په $\Gamma \Sequent \Delta, \lforall[x][!B(x)]$ او $\lforall[x][!B(x)], \Gamma \Sequent \Delta$ ختمېږي۔ د \olref{lem:inv-G3c-cut} له مخې د $\Gamma \Sequent \Delta, !B(c)$ يو !!a{proof}~$\pi_1'$ شته۔
+
+اوس !!{proof}~$\pi_2$ وګورئ۔ په $\lforall[x][!B(x)], \Gamma \Sequent \Delta$ ختمېږي۔ د~$\pi_2$ له وروستي سېکوېنټ څخه پورته په تلو، په کيڼ اړخ کښې د $\lforall[x][!B(x)]$ هره هغه پېښه په نښه کړئ چې د~$\pi_2$ په وروستي سېکوېنټ کښې د $\lforall[x][!B(x)]$ پېښې ته «رسېږي»؛ يعنې:
+(الف)~د~$\pi_2$ په وروستي سېکوېنټ کښې $\lforall[x][!B(x)]$ په نښه کړئ۔ (ب)~که $\lforall[x][!B(x)]$ د يوې قاعدې د پايلې په سياق کښې وي او په نښه شوے وي، نو د قاعدې په مقدمه يا مقدماتو کښې ئې اړونده پېښه هم په نښه کړئ۔ (ج)~که $\lforall[x][!B(x)]$ د \LeftR{\lforall} قاعدې په پايله کښې اصلي فارمول وي او په نښه شوے وي، نو په مقدمه کښې د $\lforall[x][!B(x)]$ او $!B(t)$ اړوندې فعالې پېښې په نښه کړئ۔
+
+اوس د $\lforall[x][!B(x)]$ ټولې په نښه شوې پېښې وګورئ۔ هېڅ يوه له \LeftR{\lforall} پرته په بله قاعده کښې فعاله نۀ ده (يوازې د \LeftR{\lforall} فعال !!{formula}s په نښه کېږي)۔ په $\pi_2$ کښې د $\lforall[x][!B(x)]$ ټولې په نښه شوې پېښې لرې کړئ۔ که دا سم !!{proof} وي، نو د $\lforall[x][!B(x)]$ په نښه شوې پېښې هېڅکله فعالې نۀ وې؛ ټولې نېغ له بديهي اصولو راغلې وې۔ !!{proof} په~$\Gamma \Sequent \Delta$ ختمېږي، او $\pi$ په همدې بدلولے شو۔ د تر ټولو لوړې رتبې يو پرېکون مو لرې کړ۔
+
+کنه، ترلاسه شوے شي سم ثبوت نۀ دے، ځکه د $\lforall[x][!B(x)]$ هغه !!{formula}s مو لرې کړي چې د \LeftR{\lforall} په ځينو استنتاجونو کښې فعال وو۔ دغه استنتاجونه مو په دې بڼه «استنتاجونو» بدل کړي دي:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_t$}
+  \Deduce$!B(t), \Pi \fCenter \Lambda$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\Pi \fCenter \Lambda$
+  \DisplayProof
+  \]
+هر داسې تر ټولو پاسنے «استنتاج» په دې بدل کړئ:
+\[
+  \AxiomC{}
+  \RightLabel{$\Subst{\pi_1'}{t}{c}[\Pi \Sequent \Lambda]$}
+  \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B(t)$
+  \AxiomC{}
+  \RightLabel{$\pi_t[\Gamma \Sequent \Delta]$}
+  \Deduce$!B(t), \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \DisplayProof
+  \]
+او ترې لاندې د هر سېکوېنټ په کيڼ اړخ کښې $\Gamma$ او په ښي اړخ کښې $\Delta$ زيات کړئ۔ تر هغې دا کار تکرار کړئ چې د \LeftR{\lforall} ټول هغه «استنتاجونه» چې په مقدمه کښې ئې يو په نښه شوے $!B(t)$ وي، پر کوم~$!B(t)$ د \CutCS{} په استنتاج بدل شي۔ د ترلاسه شوي !!{proof} (چې اوس سم !!{proof} دے) وروستے سېکوېنټ د $\Gamma, \dots, \Gamma \Sequent \Delta, \dots, \Delta$ په بڼه دے۔ د انقباض د منلو وړتيا ولګوئ، چې د~$\Gamma \Sequent \Delta$ يو !!a{proof} شي، او $\pi$ پرې بدل کړئ۔ پر $\lforall[x][!B(x)]$ يو پرېکون مو پر $!B(t)$ په (ښايي ډېرو) پرېکونونو بدل کړ، خو دا ټول د ټيټې رتبې دي۔ په $\pi_1$ يا $\pi_2$ کښې پخوا موجود پرېکونونه هم پاتې وي، خو هغه هم ټول د ټيټې رتبې دي۔
+\end{enumerate}
+\emph{OLCMP-113: د منجمدې تجربوي سرچينې په دې ثبوت کښې د وجودي اصلي عملګر حالت نۀ دے ليکل شوے؛ په ورپسې کامنټ کښې ئې د تمرين يادونه هم د فعال متن څخه بهر ساتلې ده۔ دا د ژباړې پرېښودل شوې برخه نۀ ده۔ د سرچينې د ثبوت همدا څرګند نيمګړے حد ثبت شو، او پاتې ليکل شوي حالتونه او تمرينونه بشپړ ساتل شوي دي۔}
+\end{proof}
+
+\begin{prob}
+د \olref{lem:max-cut-red-G3c} د ثبوت هغه حالت وڅېړئ چې $!A \ident (!B \land !C)$ وي۔ \emph{OLCMP-111: سرچينه دلته د معکوسولو لېمې ته حواله ورکوي، خو د تمرين غوښتنه د لوړې رتبې د پرېکون د راکمولو لېمې همدا حالت دے؛ حواله هماغه مطلوبې لېمې ته سمه شوه۔} يعنې وښيئ چې که يو !!a{proof}~$\pi$ داسې ختمېږي:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+او $\pi_1$ او $\pi_2$ يوازې د $<\depth{!B \land !C}$ رتبې پرېکونونه لري، نو د $\Gamma \Sequent \Delta$ يو !!a{proof}~$\pi'$ شته چې يوازې د $<\depth{!B \land !C}$ رتبې پرېکونونه لري۔
+\end{prob}
+
+% \begin{prob}
+% Verify the case where $!A \ident \lexists[x][!B(x)]$ in the proof of
+% \olref{lem:inv-G3c-cut}.
+% \end{prob}
+
+\olref{lem:max-cut-red-G3c} ثابتوي چې په يوه !!a{proof} کښې د تر ټولو لوړې رتبې د \CutCS{} استنتاج د ټيټو رتبو د \CutCS{} په استنتاجونو بدلولے شو۔ \emph{OLCMP-112: سرچينه دلته د تر ټولو پاسني پرېکون لېمه نوموي، چې مقدمې ئې بې‌پرېکونه دي؛ دلته د ټيټو رتبو پرېکونونه هم مجاز دي، نو همدا اوس ثابته شوې د لوړې رتبې د راکمولو لېمه اړينه ده۔} بيا د همدې لېمې په وسيله ښودلے شو چې له يوه !!a{proof} څخه هر شمېر \CutCS{} استنتاجونه لرې کولے شو: لېمه پر هغو تر ټولو پاسنيو فرعي !!{proof}s يو په بل پسې لګوو چې د تر ټولو لوړې رتبې په~\CutCS ختمېږي۔
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-largest}
+په $\Log{G3c} + \CutCS$ کښې هر !!{proof} $\pi$ په~\Log{G3c} کښې په يوه ثبوت بدلولے شو۔
+\end{thm}
+
+\begin{proof}
+لومړے ثابتوو چې په~$\pi$ کښې د تر ټولو لوړې رتبې ټول پرېکونونه لرې کولے شو۔ $d$ دې په~$\pi$ کښې د پرېکونونو تر ټولو لوړه رتبه وي، او $n$ دې د~$d$ رتبې د پرېکونونو شمېر وي۔ ثبوت پر~$n$ استقرا ده۔ که $n=0$ وي، د ثابتولو څه نشته۔ که $n>0$ وي، د~$d$ رتبې يو تر ټولو پاسنے پرېکون واخلو، او $\pi_1$ دې هغه فرعي !!{proof} وي چې په همدې ختمېږي۔ د \olref{lem:max-cut-red-G3c} له مخې د هماغه وروستي سېکوېنټ يو !!a{proof}~$\pi_1'$ شته چې ټول پرېکونونه ئې د $<d$ رتبې دي۔ په~$\pi$ کښې $\pi_1$ په $\pi_1'$ بدل کړو۔ يو !!a{proof} ترلاسه کېږي چې د~$d$ رتبې $n-1$ پرېکونونه لري، او د استقرا فرض پرې لګېږي۔
+
+اوس پايله پر~$d$ د استقرا له مخې راځي۔ که $d=0$ وي، ټول پرېکونونه اټومي دي، او د مخکينۍ پايلې له مخې ټول لرې کېدے شي۔ که $d>0$ وي، مخکينۍ پايله داسې ثبوت راکوي چې د $d$ رتبې ټول پرېکونونه ئې د~$<d$ رتبې په پرېکونونو بدل شوي دي۔ څرنګه چې $d$ په~$\pi$ کښې د پرېکونونو تر ټولو لوړه رتبه وه، اوس داسې ثبوت لرو چې د پرېکونونو تر ټولو لوړه رتبه ئې $<d$ ده، او د استقرا فرض پرې لګېږي۔
+\end{proof}
+
+\end{document}

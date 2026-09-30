@@ -1,0 +1,108 @@
+{
+  "schema": "ps-next-source-preadjudication/1",
+  "utc": "2026-09-30T15:56:56.532216+00:00",
+  "status": "complete655/656 frozen sources read;0332 source and target read, new corrections not registered",
+  "source_units": [
+    {
+      "unit_id": "OLP-0655",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "actual_whole_source_read": true
+    },
+    {
+      "unit_id": "OLP-0656",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "actual_whole_source_read": true
+    },
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "actual_whole_source_read": true
+    }
+  ],
+  "concrete_findings": [
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "source_line_1based": 112,
+      "source_fragment": "Clearly, $!B(\\num n, Y)$ is satisfied by a set $Y \\subseteq \\Nat$ iff",
+      "kind": "successor_closed_set_not_equivalent_to_tail_inclusion",
+      "finding": "B(n,Y) implies the entire tail from n is included. Converse is false: for n=2, Y={0} union {m:m>=2} contains that tail but fails successor closure at0. Order-definability proof needs only the implication plus closed tail as witness; replace iff with justified direction and disclose.",
+      "status": "precise source issue to repair during drafting"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_line_1based": 126,
+      "source_fragment": "$\\Delta = \\Delta, !A$",
+      "kind": "atomic_case_missing_prime_in_context_decomposition",
+      "finding": "Following displayed proof uses Delta prime,A,A; context equation must decompose Delta as Delta prime,A rather than repeat Delta itself.",
+      "status": "precise source issue to repair during drafting"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_line_1based": 29,
+      "source_fragment": "the number of \\CutCS{}\ninferences as well as their ranks is the same",
+      "kind": "inversion_construction_cut_count_bound",
+      "finding": "Immediate-subproof construction can discard cuts in the other branch when final logical rule has two premises. It establishes no increase in cut counts/ranks, sufficient for maximal-rank reduction. Do not claim stronger existential same-count theorem is false; compare whole inversion construction and disclose its actual bound.",
+      "status": "constructive bound repair needs full inversion-context comparison"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_line_1based": 287,
+      "source_fragment": "\\olref{lem:inv-G3c-cut}. That is, show that if there is",
+      "kind": "conjunction_exercise_reference_points_to_wrong_lemma",
+      "finding": "Exercise asks elimination of final conjunction cut with smaller-rank cuts above, supplied by max-cut-red-G3c lemma rather than initial logical-rule-inversion lemma.",
+      "status": "precise source issue to repair during drafting"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_line_1based": 311,
+      "source_fragment": "\\olref[top]{lem:cut-adm-G3c} establishes that we can replace",
+      "kind": "maximal_rank_reduction_reference_points_to_topmost_lemma",
+      "finding": "Topmost lemma requires cut-free premises. Here lower-rank cuts expressly allowed; immediately proved max-cut-red-G3c lemma supplies required assertion.",
+      "status": "precise source issue to repair during drafting"
+    },
+    {
+      "unit_id": "OLP-0656",
+      "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "source_line_1based": 107,
+      "source_fragment": "In the second case, $\\pi_2$ is",
+      "kind": "wrong_branch_named_when_right_cut_premise_is_axiom",
+      "finding": "When right cut premise is the axiom, left proof pi1 supplies Gamma=>Delta prime,A,A for contraction; source names pi2.",
+      "status": "precise source issue to repair during drafting"
+    }
+  ],
+  "additional656_context_mismatches_pending_exact_block_registration": [
+    "Existential permutation first cut conclusion drops shared existential formula from Gamma prime.",
+    "Case D second weakened left premise writes Delta where matching right context uses Delta prime; final conjunction rule also needs Delta prime.",
+    "Final implication-conversion double-cut diagram retains B in bottom antecedent although lower cut removes it."
+  ],
+  "false_alarm_rejected": {
+    "cutr_macro": "Frozen open-logic-config.sty894 defines cutr and979 defines cutrank with same cr notation. Alias valid; no undefined-macro correction.",
+    "macro_source_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+  },
+  "experimental_part_context": {
+    "driver": "content/proof-theory/proof-theory.tex",
+    "driver_sha256": "6f46b6346fc37b3a75a4f98c56351c46458c2f54f8cdca151da015261c0fd92f",
+    "chapter_driver": "content/proof-theory/cut-elimination/cut-elimination.tex",
+    "chapter_driver_sha256": "0261a75807f9e5f82dc8101808293bc44fee583ab956634a97e8db2a80cc56cc",
+    "frozen_incompleteness_notice": "Material on proof theory is incomplete and experimental, and not yet included in the main PDF build.",
+    "reader_import_order": "sequent-calculus/cut-elimination/natural-deduction/normalization/propositions-as-types; within cut elimination introduction/topmost/largest/midsequent/interpolation. Manifest units follow filenames rather than reader import order.",
+    "translation_not_held_by_missing_future_reader_drivers": true
+  },
+  "new_source_corrections_registered": [],
+  "whole0332_reaudit_completed": false,
+  "next_action": "Translate complete655 then656 cut-elimination sources in experimental proof-theory part, retaining original incompleteness notice and every derivation tree/exercise. Review whole0332, including successor-closed-set implication. Register exact source corrections after full context and canon review; continue full722 reader/EPUB/localization. One later natural TeX checkpoint may compile pending654 float continuity repair; never wait/poll slot instead of translating."
+}

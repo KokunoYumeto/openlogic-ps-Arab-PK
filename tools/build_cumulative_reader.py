@@ -499,6 +499,15 @@ def integrate_accepted_alternates(prepared: list[tuple[dict, str]]) -> tuple[lis
                    else 'د منجمدې سرچينې بشپړ بديل متن')
         body = (r'\paragraph{' + heading + r': \LR{' + row['unit_id'] + '}}\n') + body
         if row['unit_id'] == 'OLP-0654':
+            # The corrected654 render still left the definition's opening
+            # line at the foot of page550 and its clauses on page551.
+            # Start the complete, short definition on a fresh page, before
+            # its semantic start anchor, so the heading stays with K/Dual.
+            definition_start = r'\phantomsection\label{olpseg:OLP-0654-B009:start}'
+            if body.count(definition_start) != 1:
+                raise ValueError('normal-modal definition start anchor missing')
+            body = body.replace(definition_start,
+                                '\n' + r'\clearpage' + '\n' + definition_start, 1)
             # Actual654 PDF page550 placed the following entailment diagram
             # between the normal-logic definition and its K/Dual clauses.
             # Finish this page before importing entailment, so its floats

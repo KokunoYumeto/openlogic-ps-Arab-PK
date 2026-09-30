@@ -6245,7 +6245,7 @@
       "source_locator": "content/second-order-logic/metatheory/second-order-arithmetic.tex:40-42",
       "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex",
       "target_line_1based": 40,
-      "target_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "target_sha256": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The source places a prose closing parenthesis inside the math span after the domain equality; the target closes the math span first.",
       "reason": "The source places a prose closing parenthesis inside the math span after the domain equality; the target closes the math span first.",
@@ -6279,7 +6279,15 @@
         "ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:40"
       ],
       "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
-      "upstream_reporting": "new source issue; manager report pending"
+      "upstream_reporting": "new source issue; manager report pending",
+      "validation_history": [
+        {
+          "utc": "2026-09-30T16:23:50.429542+00:00",
+          "batch": "B228",
+          "previous_target_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+          "reason": "Whole-unit re-audit retains the two prior exact corrections; surrounding terminology and order-definability proof repaired."
+        }
+      ]
     },
     {
       "id": "OLSOL-002",
@@ -6289,8 +6297,8 @@
       "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
       "source_locator": "content/second-order-logic/metatheory/second-order-arithmetic.tex:116-123",
       "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex",
-      "target_line_1based": 124,
-      "target_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "target_line_1based": 123,
+      "target_sha256": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
       "translation_change": "The displayed addition definition quantifies over w but writes u(x')=u(x)' in the closure clause. Using w in both positions makes the clause express the stated successor condition for every input.",
       "reason": "The displayed addition definition quantifies over w but writes u(x')=u(x)' in the closure clause. Using w in both positions makes the clause express the stated successor condition for every input.",
@@ -6324,7 +6332,15 @@
         "ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex:124"
       ],
       "decision_timing": "contemporaneous B060 owner source review before cumulative acceptance",
-      "upstream_reporting": "new source issue; manager report pending"
+      "upstream_reporting": "new source issue; manager report pending",
+      "validation_history": [
+        {
+          "utc": "2026-09-30T16:23:50.429542+00:00",
+          "batch": "B228",
+          "previous_target_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+          "reason": "Whole-unit re-audit retains the two prior exact corrections; surrounding terminology and order-definability proof repaired."
+        }
+      ]
     },
     {
       "id": "OLSOL-003",
@@ -19201,6 +19217,288 @@
         "target_only": [
           "$x^*\\precy$"
         ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-109",
+      "unit_id": "OLP-0655",
+      "classification": "constructive-inversion-preserves-upper-bounds-not-exact-cut-count",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_locator": "content/proof-theory/cut-elimination/ce-largest.tex:23",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-largest.tex",
+      "target_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "target_line_1based": 18,
+      "disclosure_line_1based": 21,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "د ورکړي جوړوونکي ثبوت په دوه‌مقدمې وروستۍ قاعده کښې يوه څانګه اخيستل د بلې پرېکونونه پرېږدي؛ کره پايله د شمېر نۀ زياتېدل او د پاتې رتبو ساتل دي۔ د قوي وجودي دعوې ناسم‌والے نۀ ادعا کېږي۔",
+      "reason": "د ورکړي جوړوونکي ثبوت په دوه‌مقدمې وروستۍ قاعده کښې يوه څانګه اخيستل د بلې پرېکونونه پرېږدي؛ کره پايله د شمېر نۀ زياتېدل او د پاتې رتبو ساتل دي۔ د قوي وجودي دعوې ناسم‌والے نۀ ادعا کېږي۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-110",
+      "unit_id": "OLP-0655",
+      "classification": "residual-succedent-missing-prime",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_locator": "content/proof-theory/cut-elimination/ce-largest.tex:118",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-largest.tex",
+      "target_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "target_line_1based": 77,
+      "disclosure_line_1based": 78,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "د بديهي اصل په حالت کښې د پاتې تالي نښه پريم غواړي؛ ورپسې د انقباض ثبوت هماغه پاتې تالي کاروي۔",
+      "reason": "د بديهي اصل په حالت کښې د پاتې تالي نښه پريم غواړي؛ ورپسې د انقباض ثبوت هماغه پاتې تالي کاروي۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Delta=\\Delta,!A$"
+        ],
+        "target_only": [
+          "$\\Delta=\\Delta',!A$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-111",
+      "unit_id": "OLP-0655",
+      "classification": "conjunction-exercise-references-inversion-instead-of-rank-reduction",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_locator": "content/proof-theory/cut-elimination/ce-largest.tex:285",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-largest.tex",
+      "target_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "target_line_1based": 163,
+      "disclosure_line_1based": 164,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "تمرين د لوړې رتبې د پرېکون د راکمولو لېمې د عطف حالت غواړي؛ د معکوسولو لېمې حواله ناسمه ده۔",
+      "reason": "تمرين د لوړې رتبې د پرېکون د راکمولو لېمې د عطف حالت غواړي؛ د معکوسولو لېمې حواله ناسمه ده۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref{lem:inv-G3c-cut}"
+        ],
+        "target_only": [
+          "\\olref{lem:max-cut-red-G3c}"
+        ]
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-112",
+      "unit_id": "OLP-0655",
+      "classification": "rank-reduction-references-cut-free-topmost-lemma",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_locator": "content/proof-theory/cut-elimination/ce-largest.tex:311",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-largest.tex",
+      "target_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "target_line_1based": 184,
+      "disclosure_line_1based": 184,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "د ټيټو رتبو پرېکونونو د شتون په حالت کښې د لوړې رتبې د راکمولو لېمه پکار ده؛ د بې‌پرېکونه مقدماتو د تر ټولو پاسني پرېکون لېمه دا دعوه نۀ ورکوي۔",
+      "reason": "د ټيټو رتبو پرېکونونو د شتون په حالت کښې د لوړې رتبې د راکمولو لېمه پکار ده؛ د بې‌پرېکونه مقدماتو د تر ټولو پاسني پرېکون لېمه دا دعوه نۀ ورکوي۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [
+          "\\olref[top]{lem:cut-adm-G3c}"
+        ],
+        "target_only": [
+          "\\olref{lem:max-cut-red-G3c}"
+        ]
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-113",
+      "unit_id": "OLP-0655",
+      "classification": "experimental-source-omits-existential-main-operator-case",
+      "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "source_locator": "content/proof-theory/cut-elimination/ce-largest.tex:247",
+      "target_path": "ps-Arab-PK/content/proof-theory/cut-elimination/ce-largest.tex",
+      "target_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "target_line_1based": 137,
+      "disclosure_line_1based": 160,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "سرچينه د وجودي اصلي عملګر حالت نۀ ثابتوي او د هغې تمرين کامنټ دے۔ دا د سرچينې د ثبوت نيمګړتيا ده؛ نه د ژباړې پرېښودل، نه جوړ شوے بشپړ اثبات۔",
+      "reason": "سرچينه د وجودي اصلي عملګر حالت نۀ ثابتوي او د هغې تمرين کامنټ دے۔ دا د سرچينې د ثبوت نيمګړتيا ده؛ نه د ژباړې پرېښودل، نه جوړ شوے بشپړ اثبات۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-114",
+      "unit_id": "OLP-0332",
+      "classification": "tail-inclusion-does-not-imply-successor-closure",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "source_locator": "content/second-order-logic/metatheory/second-order-arithmetic.tex:106",
+      "target_path": "ps-Arab-PK/content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "target_sha256": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
+      "target_line_1based": 105,
+      "disclosure_line_1based": 112,
+      "mode": "precise-repair-or-proof-gap-disclosure-plus-adjacent-Pashto-note",
+      "translation_change": "د دوو څخه پيلېدونکې طبيعي لړۍ او صفر لرونکے سټ يو نۀ لري؛ نو د جانشين لاندې تړلے نۀ دے۔ سم جهت دا دے چې تړلتيا او د پيل غړي شتون د لړۍ شمول راکوي۔ لړۍ پخپله تړلے شاهد دے؛ د تعريف دپاره همدا دواړه بس دي۔",
+      "reason": "د دوو څخه پيلېدونکې طبيعي لړۍ او صفر لرونکے سټ يو نۀ لري؛ نو د جانشين لاندې تړلے نۀ دے۔ سم جهت دا دے چې تړلتيا او د پيل غړي شتون د لړۍ شمول راکوي۔ لړۍ پخپله تړلے شاهد دے؛ د تعريف دپاره همدا دواړه بس دي۔",
+      "formula_policy": "Only Delta-prime in the atomic case changes mathematically; two precise lemma references corrected. All nine655 proof displays and all0332 formulas retained except the two previously disclosed OLSOL corrections.",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
+      "audit_artifacts": [
+        "B228_SOURCE_AUDIT.json",
+        "B228_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "B228 complete source proofs and four native pages actually read before dual QA registration.",
+      "upstream_reporting": "No upstream communication; authorized milestone reporting only.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
       },
       "qa_identifier_exception": {
         "source_only": [],

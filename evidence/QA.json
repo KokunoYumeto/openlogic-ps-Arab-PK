@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 654,
-    "structural_pass": 654,
+    "draft_units": 655,
+    "structural_pass": 655,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B227-NONSTANDARD-NORMAL-MODAL",
+  "batch": "PS-B228-LARGEST-CUTS-SOL-ARITHMETIC",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11281,7 +11281,7 @@
       "unit_id": "OLP-0332",
       "path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
       "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
-      "translation_sha256": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "translation_sha256": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
       "source_blocks": 19,
       "target_blocks": 19,
       "checks": {
@@ -11305,7 +11305,8 @@
       "extra_locale_macros": {},
       "source_correction_ids": [
         "OLSOL-001",
-        "OLSOL-002"
+        "OLSOL-002",
+        "OLCMP-114"
       ],
       "status": "structural-pass",
       "math_diff": {
@@ -22378,6 +22379,61 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "path": "content/proof-theory/cut-elimination/ce-largest.tex",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "translation_sha256": "161992e18732ebddff6ce7bbbd51ab8bd549b145d83ea4c97d739829b31bc018",
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-109",
+        "OLCMP-110",
+        "OLCMP-111",
+        "OLCMP-112",
+        "OLCMP-113"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Delta=\\Delta,!A$"
+        ],
+        "target_only": [
+          "$\\Delta=\\Delta',!A$"
+        ],
+        "expected_by_source_correction": true
+      },
+      "identifier_diff": {
+        "source_only": [
+          "\\olref{lem:inv-G3c-cut}",
+          "\\olref[top]{lem:cut-adm-G3c}"
+        ],
+        "target_only": [
+          "\\olref{lem:max-cut-red-G3c}",
+          "\\olref{lem:max-cut-red-G3c}"
+        ],
+        "expected_by_source_correction": true
+      }
     }
   ],
   "semantic_review": [
@@ -39306,6 +39362,204 @@
       "passage": "OLP-0331-B007",
       "reverse_paraphrase": "Finite satisfiability compactness and downward LS to denumerable model for infinite-model theories in the stated countable language. Both general results fail under FULL second-order semantics, not Henkin semantics.",
       "finding": "د کمي کوونکو، نقشونو، ژبني قيدونو او اثباتي جهتونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B005",
+      "reverse_paraphrase": "Removing cuts of largest formula rank; not merely highest tree position.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B006",
+      "reverse_paraphrase": "G3c invertible logical rules exclude existential-right and universal-left. Premise proofs preserve the height bound; the claim extends to G3c plus shared-context CutCS.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B007",
+      "reverse_paraphrase": "Cut rank is the depth of the cut formula, distinct from proof height.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B008",
+      "reverse_paraphrase": "Constructive inversion gives premise proofs with no greater height, no more CutCS inferences, and only original cut ranks. Same cut count is not guaranteed when taking one branch of a two-premise last rule. Eigenvariable freshness retained; no assertion that the stronger existential exact-count lemma is false.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B009",
+      "reverse_paraphrase": "Whole induction proof retained, including axiom and matching-last-rule cases, reconstruction of all other rules, and both CutCS diagrams with conjunction-left inversion on both premises. Branch labels and shared contexts match exactly.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B010",
+      "reverse_paraphrase": "Ordinary Cut duplicates antecedent and succedent contexts; appealing here to contraction would use inversion itself and be circular. CutCS avoids that duplication.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B011",
+      "reverse_paraphrase": "Alternative elimination chooses a maximal-rank cut with no same-or-higher-rank cut above it; it may introduce more cuts of strictly smaller rank.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B012",
+      "reverse_paraphrase": "Rank-reduction lemma requires final rank n and every other cut rank strictly below n; it produces the same end-sequent using only cuts of rank below n.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B013",
+      "reverse_paraphrase": "Two-premise CutCS diagram and cut formula A retained exactly; cases split by formula shape.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B014",
+      "reverse_paraphrase": "Atomic rank0 forces cut-free premise proofs. Height induction handles axiom cases, the corrected residual succedent Delta-prime, contraction, and general last-rule weakening/reconstruction. All individual contexts retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B015",
+      "reverse_paraphrase": "All four written propositional cases and the universal case retained, including the conjunction exercise. Negation reverses premise roles; disjunction and implication use weakened third-prime proofs and two cuts of smaller formula depth. All three diagrams unchanged.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B016",
+      "reverse_paraphrase": "Universal-left marking tracks the end occurrence backward through context occurrences and marks both persistent universal and instantiated active formula in universal-left premises. Exact three marking conditions retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B017",
+      "reverse_paraphrase": "Delete marked universal occurrences. If the tree stays a correct proof, it already has the required end-sequent, so replace the original and remove one maximal-rank cut.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B018",
+      "reverse_paraphrase": "Otherwise replace each highest broken universal-left inference by the exact substitution/weakening CutCS construction; propagate contexts below it, repeat, then contract. New B(t) cuts and retained old cuts have smaller rank. Both diagrams unchanged. Missing existential main-operator case is explicitly disclosed as an experimental-source proof gap; inactive commented exercise retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B019",
+      "reverse_paraphrase": "Conjunction rank-reduction exercise now points to the rank-reduction lemma rather than inversion. Full exercise diagram and strict-depth assumptions retained; no solution invented.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B021",
+      "reverse_paraphrase": "Rank-reduction lemma, not the topmost-cut lemma with cut-free premises, supports repeated removal of topmost subproofs ending in maximal-rank cuts.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B022",
+      "reverse_paraphrase": "Every G3c plus CutCS proof transforms to G3c proof; theorem statement retained beside disclosed source proof gap.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B023",
+      "reverse_paraphrase": "Inner induction on number n of maximal-rank d cuts replaces a topmost such subproof and reduces that number exactly by one; lower-rank cuts are permitted.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0655",
+      "passage": "OLP-0655-B024",
+      "reverse_paraphrase": "Outer induction on maximal rank d removes all atomic cuts at0 and otherwise uses the previous count argument to produce strictly smaller maximal rank.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B005",
+      "reverse_paraphrase": "Second-order arithmetic title.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B006",
+      "reverse_paraphrase": "All eight Q axioms and first-order induction schema retained; a schema yields one arithmetic sentence for each formula. Full second-order induction is one sentence quantifying over all subsets, asserting zero and successor closure imply the entire domain. Existing misplaced-parenthesis correction retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B007",
+      "reverse_paraphrase": "Full second-order induction excludes elements outside the finite standard successor orbit in PA2; no Henkin-semantics categoricity claim.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B008",
+      "reverse_paraphrase": "Theorem states exact domain equality with values of standard numerals.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B009",
+      "reverse_paraphrase": "Set N of numeral values is contained in model domain; theorem hypothesis PA2 retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B010",
+      "reverse_paraphrase": "Assignment s(X)=N is permitted by full semantics. Zero belongs and successor closure follows from numeral recursion. Both satisfaction formulas and inference directions retained; assignment terminology aligned.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B011",
+      "reverse_paraphrase": "Induction forces every domain element into N, giving reverse inclusion and equality.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B012",
+      "reverse_paraphrase": "Any two full PA2 models are isomorphic.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B013",
+      "reverse_paraphrase": "Q axioms plus exhausted numeral domain yield the referenced standard structure result; categoricity proof retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B014",
+      "reverse_paraphrase": "Only two successor axioms plus full second-order induction suffice when order/addition/multiplication are defined.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B015",
+      "reverse_paraphrase": "PA2dagger includes precisely those successor axioms and full induction; <=,+,times definable.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B016",
+      "reverse_paraphrase": "Successor-closed Y containing n must contain the tail from n, but tail inclusion alone need not make Y closed. Counterexample n2 and Y={0} union tail2 excludes1. The tail itself is a closed witness, giving both directions of the universal definability formula without the false iff. All original formulas retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B017",
+      "reverse_paraphrase": "Addition witness function starts at k and advances by successor for every input, reaching m at l. Existing OLSOL002 correction uses bound w consistently, not free x. Function arity and existential scope retained.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "passage": "OLP-0332-B018",
+      "reverse_paraphrase": "Complete remaining definability proof exercise retained, including multiplication; no invented solution.",
+      "finding": "د ټولو نقشونو، کمي کوونکو، اثباتي جهتونو او استقرايي حدونو تازه پرتله وشوه۔"
     }
   ],
   "builds": [

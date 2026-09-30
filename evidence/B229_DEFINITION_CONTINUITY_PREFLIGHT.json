@@ -1,0 +1,21 @@
+{
+  "schema": "ps-reader-definition-continuity-preflight/1",
+  "utc": "2026-09-30T16:39:49.850938+00:00",
+  "status": "PASS; sole additional12byte clearpage before full modal definition; render pending",
+  "source_accepted_units": 655,
+  "reader_units": 654,
+  "reader_pending_unit_ids": [
+    "OLP-0655"
+  ],
+  "compiled_reader_tex_sha256": "e7743b56210bb9abb40d4b65aa7ceb489f48a26582215070f6a012324867c404",
+  "pending_reader_tex_sha256": "410f217e6924f79b0477709f22af99ece7710be889498564152e5d76cf170cf0",
+  "pending_build_inputs_sha256": "dc2fbea83f47574b84f6b47c02fa2889a21d4dad730313b1c111cba4e14956fb",
+  "current_builder_sha256": "4a4e455b12555179e40c8ab17fa35c1cfce8f91709807cbdf9dbec8cd6ba4d58",
+  "visual_finding_sha256": "61453ec57b4498cb24145b625f9c13dbd20a62a12d31869c2b950c1066b062f5",
+  "all654_source_target_hashes_unchanged_between_these_trees": true,
+  "all6520_semantic_anchors_retained": true,
+  "exact_generated_change": "One LF clearpage before the complete normal-modal definition start, 12bytes; byte-identical on removal.",
+  "new_reader_accepted": false,
+  "next_action": "One bounded compilation at a later validated translation checkpoint; continue complete656/whole0333 now.",
+  "workflow_anchor_fix": "Integration stage has phantomsection/label anchors; final assembly converts them to olpseganchor. Initial final-stage marker assertion failed safely; actual stage marker now used."
+}

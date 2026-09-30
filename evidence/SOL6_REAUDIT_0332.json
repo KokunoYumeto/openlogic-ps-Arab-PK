@@ -1,0 +1,85 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-09-30T16:23:50.429542+00:00",
+  "status": "Whole second-order arithmetic independently reviewed; order-definability implication corrected and assignment/schema terminology aligned.",
+  "units": [
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "source_sha256": "a09f150a63d364e758adf2547e5237108b76d6ea7f08d23fe9373792b71bea0d",
+      "target_sha256_before": "e907a6d4b6694c74c9aba06462d88a134a22489843112722da2536a09ce1c9dc",
+      "target_sha256": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
+      "target_bytes": 7432,
+      "paired_blocks": 19,
+      "source_correction_ids": [
+        "OLCMP-114"
+      ],
+      "target_sha256_after": "7df371be9af2833a3c7adf121ec47d93f4cf3233d74bf20618bc397bc9d4e74e",
+      "translated_blocks_reviewed": 14,
+      "formulas_identifiers_tokens_preserved_except_two_existing_OLSOL_corrections": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "All four exact native page images visually read during this B228 continuation before drafting; Pakistani prose primary and Afghan evidence explicitly regional.",
+      "finding": "پاکستانے بالغ علمي نثر او د معنا د بيان ترتيب؛ عين G3c، پرېکون يا د دويمې درجې حسابي قضيه نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے بالغ علمي نثر او د معنا د بيان ترتيب؛ عين G3c، پرېکون يا د دويمې درجې حسابي قضيه نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "All four exact native page images visually read during this B228 continuation before drafting; Pakistani prose primary and Afghan evidence explicitly regional.",
+      "finding": "افغان سيمه‌ييز شاهد بديهي ثبوت او د شېما نقش بيانوي؛ د G3c د پرېکون د شمېر کره حد نۀ ثابتوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد بديهي ثبوت او د شېما نقش بيانوي؛ د G3c د پرېکون د شمېر کره حد نۀ ثابتوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "48",
+      "pdf_page_1based": 53,
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "actual_consultation": "All four exact native page images visually read during this B228 continuation before drafting; Pakistani prose primary and Afghan evidence explicitly regional.",
+      "finding": "افغان سيمه‌ييز شاهد د مودوس پوننس او د ثبوتونو د يوځاے کولو نقش ښيي؛ CutCS او معکوسول سرچينه تعريفوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد د مودوس پوننس او د ثبوتونو د يوځاے کولو نقش ښيي؛ CutCS او معکوسول سرچينه تعريفوي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "All four exact native page images visually read during this B228 continuation before drafting; Pakistani prose primary and Afghan evidence explicitly regional.",
+      "finding": "افغان سيمه‌ييز شاهد صفر، د جانشين ګام او استقرا بيانوي؛ د بشپړې دويمې درجې معنٰی يا د G3c عين مرکب نوم نۀ تصديقوي۔",
+      "evidence_limit": "افغان سيمه‌ييز شاهد صفر، د جانشين ګام او استقرا بيانوي؛ د بشپړې دويمې درجې معنٰی يا د G3c عين مرکب نوم نۀ تصديقوي۔"
+    }
+  ],
+  "segment_entries_added": 14,
+  "new_source_correction_ids": [
+    "OLCMP-114"
+  ],
+  "retained_source_correction_ids": [
+    "OLSOL-001",
+    "OLSOL-002"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0332.jsonl",
+  "whole_unit_segment_snapshot_sha256": "35191e963ed94f7b50c17a85c652e270c2f2729118ec8d9be08d7051cc1b44b1",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "Accept655 and continue656 plus whole0333. Reader654 must be regenerated to include current0332 before one bounded float-repair compilation; occupied TeX never holds translation."
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "ps-publication-workflow-repair/1",
+  "utc": "2026-09-30T16:39:49.850938+00:00",
+  "status": "Source checkpoint and reader-repair coverage now separately validated",
+  "publisher_sha256": "8e389d716251f4379f68cd1351cae00e622fb4757a8a7f5ed0dfa35c88d0d834",
+  "source_accepted_units": 655,
+  "reader_units": 654,
+  "reader_pending_unit_ids": [
+    "OLP-0655"
+  ],
+  "reason": "The prior assertion incorrectly required reader integration to equal accepted translation coverage. Complete experimental part/chapter integration is still pending; exact smaller reader scope and remaining unit list are now required.",
+  "new_reader_accepted": false,
+  "no_new_session_or_worker": true
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "status": "source observations only;656/0333 translation and whole-unit audit remain pending",
+  "accepted_editable_units": 655,
+  "next_general_unit": "OLP-0656",
+  "next_whole_reaudit_unit": "OLP-0333",
+  "source_files": {
+    "OLP-0656": {
+      "path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+      "sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214"
+    },
+    "OLP-0333": {
+      "path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "sha256": "d145a2ab03186358310a7f917ed7aa9eb49e95efbb80c3a2e8356be818d25108"
+    }
+  },
+  "cut_topmost_findings_pending": [
+    "Alternative axiom case second branch names pi2 but relies on left proof pi1 supplying duplicated succedent cut formula.",
+    "Existential permutation case initial shared-context CutCS conclusion omits existential antecedent.",
+    "Right-principal conjunction permutation uses mismatching Delta versus Delta-prime in weakened left premise and final conclusion.",
+    "Implication reduction final double-cut conclusion retains antecedent B after that occurrence has been cut."
+  ],
+  "second_order_scope_findings_pending": [
+    "The no-sound-complete-calculus theorem concerns effective derivations under full second-order semantics; previous0311 foundational definitions apply.",
+    "ExistingOLSOL003 brace correction retained; validity explanation involving arbitrary M should explicitly range over every structure.",
+    "Arithmetic signature abstraction uses fresh object/function/relation variables with exact arities; pure-logic validity iff truth in N depends on categoricity and nonempty-domain semantics.",
+    "Computable enumeration gives arithmetically definable range in numeral coding, contradicting Tarski; no generic non-effective completeness impossibility should be claimed."
+  ],
+  "source_changed": false,
+  "full_review_completed": false
+}
