@@ -1,0 +1,298 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T00:26:18.878430+00:00",
+  "unit_id": "OLP-0670",
+  "status": "Complete12-block670 and whole8-block347 checked against actual sources; registration and dualQA pending",
+  "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+  "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+  "paired_source_blocks": 12,
+  "source_proof_trees": 10,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-148",
+      "unit_id": "OLP-0670",
+      "block": 7,
+      "exact_original_text": "$\\Delta = \\{!A\\}$",
+      "exact_proposed_source_text": "$\\Delta = \\{!C\\}$",
+      "reason": "The theorem names the N2 succedent C but never binds it to A in the nonempty case. Identify the unique nonempty succedent as C; empty succedent remains bottom.",
+      "classification": "unbound-nonempty-succedent",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 25,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Delta=\\{!A\\}$"
+        ],
+        "target_only": [
+          "$\\Delta=\\{!C\\}$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-149",
+      "unit_id": "OLP-0670",
+      "block": 8,
+      "exact_original_text": "\\Log{G2ci}",
+      "exact_proposed_source_text": "\\Log{G2i}, with cut",
+      "reason": "The proposition uses G2i+Cut. G2ci has no definition/other occurrence in the actual proof-theory source; restore the same proof system including cut.",
+      "classification": "copied-undefined-source-system",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 31,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-150",
+      "unit_id": "OLP-0670",
+      "block": 10,
+      "exact_original_text": "that rule in~\\Log{N2c}",
+      "exact_proposed_source_text": "that rule in~\\Log{N2i}",
+      "reason": "The theorem targets the intuitionistic N2i system, so its induction hypothesis does too.",
+      "classification": "copied-classical-induction-target",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 42,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-151",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$\\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\RightR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]",
+      "exact_proposed_source_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$\\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]",
+      "reason": "The diagram adds A on the left; its right-weakening label is copied incorrectly. Other nine tree positions retained, with only the separately registered sixth-tree context repair.",
+      "classification": "left-weakening-rule-label",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 63,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-152",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": " If $R$ is \\LeftR{\\Contraction}, $\\pi$ ends in\n    \\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$!A, !A, \\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Contraction}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]\n    The induction hypothesis applied to $\\pi_1$ yields !!a{proof}\n    of~$\\Pi, \\Gamma' \\Sequent !C$, where $\\Pi \\subseteq \\{x : !A,\n    y:!A\\}$. If $\\Pi = \\{x : !A, y:!A\\}$, replace all labelled\n    !!{formula}s $y:!A$ in~$\\pi_1$ by $x:!A$. Since $x$~occurs in the\n    context of the end-sequent of~$\\pi_1$ we can assume that no\n    inference in~$\\pi_1$ discharges !!a{formula} of the form~$x:!B$,\n    i.e., no $x:!B$ on the left side of a sequent in~$\\pi_1$ is\n    active. Consequently, the result is still !!a{proof} in~\\Log{N2i}.\n    ",
+      "exact_proposed_source_text": " If $R$ is \\LeftR{\\Contraction}, $\\pi$ ends in\n    \\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$!A, !A, \\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Contraction}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]\n    The induction hypothesis applied to $\\pi_1$ yields !!a{proof}~$\\delta_1$\n    of~$\\Pi, \\Gamma' \\Sequent !C$, where $\\Pi \\subseteq \\{x : !A,\n    y:!A\\}$. If $\\Pi = \\{x : !A, y:!A\\}$, replace all labelled\n    !!{formula}s $y:!A$ in~$\\delta_1$ by $x:!A$. Since $x$~occurs in the\n    context of the end-sequent of~$\\delta_1$ we can assume that no\n    inference in~$\\delta_1$ discharges !!a{formula} of the form~$x:!B$,\n    i.e., no $x:!B$ on the left side of a sequent in~$\\delta_1$ is\n    active. Consequently, the result is still !!a{proof} in~\\Log{N2i}.\n    ",
+      "reason": "Contraction relabels labelled formulas in the translated N2 proof, not in input sequent-calculus proof pi1. Name the translated proof delta1; keep original premise/induction-input pi1 unchanged.",
+      "classification": "contraction-converted-proof-identity",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 77,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$"
+        ],
+        "target_only": [
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-153",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "We can take $\\delta_1$\n    to be $\\delta$ plus an application of \\Intro{\\lif}.",
+      "exact_proposed_source_text": "We can take $\\delta$\n    to be $\\delta_1$ plus an application of \\Intro{\\lif}.",
+      "reason": "The final implication proof is the translated premise proof followed by introduction. The source reverses which proof is constructed; no formula changes.",
+      "classification": "implication-introduction-construction-direction",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 105,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-154",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "formulas and discharge labels in~$\\pi_1$",
+      "exact_proposed_source_text": "formulas and discharge labels in~$\\delta_1$",
+      "reason": "The labels must be renamed in the translated N2 proof delta1 to keep it disjoint from delta2; the input G2 proof has no labelled N2 context.",
+      "classification": "implication-left-converted-proof-identity",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 123,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_1$"
+        ],
+        "target_only": [
+          "$\\delta_1$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-155",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "\\[\n    \\Axiom$x: !A \\lif !B \\fCenter !A \\lif !B$\n    \\AxiomC{}\n    \\RightLabel{$\\delta_1$}\n    \\Deduce$\\Gamma_1' \\fCenter !A$\n    \\RightLabel{\\Elim{\\lif}}\n    \\BinaryInf$x: !A \\lif !B \\fCenter !B$\n    \\DisplayProof\n    \\]",
+      "exact_proposed_source_text": "\\[\n    \\Axiom$x: !A \\lif !B \\fCenter !A \\lif !B$\n    \\AxiomC{}\n    \\RightLabel{$\\delta_1$}\n    \\Deduce$\\Gamma_1' \\fCenter !A$\n    \\RightLabel{\\Elim{\\lif}}\n    \\BinaryInf$x: !A \\lif !B, \\Gamma_1' \\fCenter !B$\n    \\DisplayProof\n    \\]",
+      "reason": "N2 implication elimination unions both premise contexts. Dropping Gamma1 prime incorrectly proves B from A implies B alone. With A=P,B=Q,y:P in Gamma1 prime and P,Q false, P implies Q is true but Q false. Grafting also carries these added open assumptions through the affected contexts; disjoint fresh labels prevent discharge capture.",
+      "classification": "implication-elimination-dropped-minor-context",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "and every occurrence of $x:!B$ in~$\\delta_2$ by $x:!A \\lif !B$.",
+          "exact_proposed_source_text": "and replace $x:!B$ by $x:!A \\lif !B$ while propagating the inserted proof's remaining open assumptions $\\Gamma_1'$ through the affected contexts.",
+          "scope": "Context propagation already required by the exact final claimed sequent; target states it in native prose without new inline notation."
+        }
+      ],
+      "source_line_1based": 129,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B\\fCenter!B$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B,\\Gamma_1'\\fCenter!B$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-156",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "and $\\delta_2$ of $\\Gamma_2' \\Sequent !A$.",
+      "exact_proposed_source_text": "and $\\delta_2$ of $\\Gamma_2' \\Sequent !B$.",
+      "reason": "The second G2 conjunction premise proves B, not A. The N2 translated second premise must prove the same B.",
+      "classification": "conjunction-second-premise-formula",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 154,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma_2'\\Sequent!A$"
+        ],
+        "target_only": [
+          "$\\Gamma_2'\\Sequent!B$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-157",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "formulas and discharge labels in~$\\pi_2$",
+      "exact_proposed_source_text": "formulas and discharge labels in~$\\delta_2$",
+      "reason": "Rename labels in the translated second N2 proof delta2, not input G2 proof pi2; retain the original premise diagram.",
+      "classification": "conjunction-converted-proof-identity",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 155,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\delta_2$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-158",
+      "unit_id": "OLP-0670",
+      "block": 11,
+      "exact_original_text": "  \\end{enumerate}\n\\end{proof}",
+      "exact_proposed_source_text": "  \\end{enumerate}\nThe source gives only these eight rule cases; cases for disjunction, negation and quantifiers are absent. This excerpt is not a verified complete proof.\n\\end{proof}",
+      "reason": "The actual eight items cover RW,LW,LC,Rimp,Limp,Rand,Land,Cut. The actual G2 rule table also has disjunction, negation and quantifier rules. Record this proof-coverage gap without declaring the proposition false or inventing missing arguments.",
+      "classification": "inductive-proof-incomplete-case-coverage",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 203,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLSOL-018",
+      "unit_id": "OLP-0347",
+      "block": 7,
+      "exact_original_text": "\\begin{align*}",
+      "exact_proposed_source_text": "Before this display, alpha-rename bound parameters fresh for the free variables of all supplied arguments, renaming their bound occurrences consistently.\n\\begin{align*}",
+      "reason": "Actual capture-avoiding reduction gives (lambda x.lambda y.x)y z -> y, whereas the unqualified middle line yields z. In the general n=2 body x1, M1=x2,M2=z case, capture avoidance gives x2 but naive sequential body substitution gives z. Source0345 already requires renaming to prevent capture. Fresh bound names make both preserved displays correct.",
+      "classification": "currying-bound-parameter-freshness",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "\\begin{multline*}",
+          "exact_proposed_source_text": "Apply the same bound-parameter freshness convention to this general display.\n\\begin{multline*}"
+        }
+      ],
+      "source_line_1based": 45,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0670",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; sequent rule table, labelled contexts and capture-avoiding convention as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0706",
+      "source_path": "content/proof-theory/sequent-calculus/rules-G2c.tex",
+      "sha256": "893ca1fbed732661a22f9c3f1bb68c3d39e38174af37fb1a316fc20a62facb75",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; sequent rule table, labelled contexts and capture-avoiding convention as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0711",
+      "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+      "sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; sequent rule table, labelled contexts and capture-avoiding convention as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0345",
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; sequent rule table, labelled contexts and capture-avoiding convention as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0347",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; sequent rule table, labelled contexts and capture-avoiding convention as applicable"
+      ]
+    }
+  ],
+  "capture_counterexample_receipt": "B244_CURRYING_CAPTURE_PREAUDIT.json",
+  "capture_counterexample_sha256": "c6d2b9e13d67890ee5cf6f8d172cd901a541d74657f0eedca02325d72b00e452",
+  "whole0347": {
+    "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+    "target_sha256_before": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+    "target_sha256_after": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+    "source_and_target_read_completely": true,
+    "existing_OLLAM001_reverified": true,
+    "new_source_correction_ids": [
+      "OLSOL-018"
+    ]
+  },
+  "next_action": "Register670/whole0347, exact per-case/per-block math parity; dualQA and independent canonical replay; source publication; retain full722 active."
+}

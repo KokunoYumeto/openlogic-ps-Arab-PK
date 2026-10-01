@@ -1,0 +1,213 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T00:26:18.878430+00:00",
+  "status": "بشپړ OLP-0670 او بشپړه OLP-0347 بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0670",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_bytes": 8437,
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_bytes": 13503,
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros_exact_exceptions": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "all_ten_original_diagrams_retained": true,
+        "only_two_diagrams_change": true,
+        "left_weakening_label_exact": true,
+        "minor_context_restored_exact": true,
+        "all_eight_original_cases_retained": true,
+        "proof_gap_disclosed_without_added_cases": true,
+        "label_single_occurrence_property_retained": true
+      },
+      "source_correction_ids": [
+        "OLCMP-148",
+        "OLCMP-149",
+        "OLCMP-150",
+        "OLCMP-151",
+        "OLCMP-152",
+        "OLCMP-153",
+        "OLCMP-154",
+        "OLCMP-155",
+        "OLCMP-156",
+        "OLCMP-157",
+        "OLCMP-158"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0347",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "target_sha256_before": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "target_sha256": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+      "target_sha256_after": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+      "target_bytes": 5856,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLSOL-018"
+      ],
+      "reverified_source_correction_ids": [
+        "OLLAM-001"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0347-DISCLOSURE-SPELLING"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ علمي نثر لومړنے دے؛ د تکرار شمېر لرونکي سټ عين پاکستانے مرکب موقتي دے، شمېر او سمون د اصل تعريف ټاکي۔",
+      "evidence_limit": "پاکستانے بالغ علمي نثر لومړنے دے؛ د تکرار شمېر لرونکي سټ عين پاکستانے مرکب موقتي دے، شمېر او سمون د اصل تعريف ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د سېکوېنټونو نقلونه او د N2 نښې منجمده سرچينه ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د سېکوېنټونو نقلونه او د N2 نښې منجمده سرچينه ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ د پاييز فارمول او فرعي ثبوت ځانګړي رولونه اصلي قواعد ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ د پاييز فارمول او فرعي ثبوت ځانګړي رولونه اصلي قواعد ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "48",
+      "pdf_page_1based": 53,
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ شرطي، مقدمه او پايله ښيي؛ د پرانيستو فرضونو کره اتحاد اصلي N2 قاعده ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ شرطي، مقدمه او پايله ښيي؛ د پرانيستو فرضونو کره اتحاد اصلي N2 قاعده ټاکي۔"
+    },
+    {
+      "passage_id": "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+      "source_id": "PS-AF-BUKOVSKY-NIAZMAN",
+      "source_sha256": "01c49e454f0bfe991221ea5d80ce45be85e0519d2cf9704673a53c4471946e87",
+      "printed_page": "17",
+      "pdf_page_1based": 28,
+      "page_image_sha256": "5d4609c1012ca51fcc43f5c702816b21cf27ffc6744ab4a3d131ab2d3e5d904e",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ استقرايي بنسټ او ګام ښيي؛ د ټولو قاعدوي حالتونو د پوښښ شرط د اصل استقرا ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ استقرايي بنسټ او ګام ښيي؛ د ټولو قاعدوي حالتونو د پوښښ شرط د اصل استقرا ټاکي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے علمي نثر کښې او ے او د جملې معنايي بيان ښيي؛ د الفا-بدلون او نيولو مخنيوي عين تخنيکي مرکب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے علمي نثر کښې او ے او د جملې معنايي بيان ښيي؛ د الفا-بدلون او نيولو مخنيوي عين تخنيکي مرکب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ تابعې او تعويض ښيي؛ د لامبډا تړنې نيولو کره شرط د اصل د راکمولو تعريف او کتلے مخالف مثال ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ تابعې او تعويض ښيي؛ د لامبډا تړنې نيولو کره شرط د اصل د راکمولو تعريف او کتلے مخالف مثال ټاکي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P48-MODUS-PONENS",
+    "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION",
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [
+    "TERM-MULTISET-LABELLED-CONTEXT"
+  ],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-148",
+    "OLCMP-149",
+    "OLCMP-150",
+    "OLCMP-151",
+    "OLCMP-152",
+    "OLCMP-153",
+    "OLCMP-154",
+    "OLCMP-155",
+    "OLCMP-156",
+    "OLCMP-157",
+    "OLCMP-158",
+    "OLSOL-018"
+  ],
+  "reverified_source_correction_ids": [
+    "OLLAM-001"
+  ],
+  "new_review_entry_ids": [
+    "TERM-MULTISET-LABELLED-CONTEXT",
+    "DEC-PS-0347-DISCLOSURE-SPELLING",
+    "DEC-OLCMP-148",
+    "DEC-OLCMP-149",
+    "DEC-OLCMP-150",
+    "DEC-OLCMP-151",
+    "DEC-OLCMP-152",
+    "DEC-OLCMP-153",
+    "DEC-OLCMP-154",
+    "DEC-OLCMP-155",
+    "DEC-OLCMP-156",
+    "DEC-OLCMP-157",
+    "DEC-OLCMP-158",
+    "DEC-OLSOL-018"
+  ],
+  "revised_review_entry_ids": [
+    "DEC-OLLAM-001"
+  ],
+  "semantic_samples_added": 12,
+  "focused_qa_sha256": "d6148133d86f3f0596fda06d6e100e1bc9e3ffcfa9d77fd1fc7b960c1e808c47",
+  "model_provenance_sha256": "86924e17a93859aecc819df7cc876e88edb295f5887f86ebf1583ad492909b2f",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0347.json",
+  "related_reaudit_sha256": "20d00a9ad5c44e63784144017997230e74d000fc7b60e6a08b34a16145b03d39",
+  "unresolved": "۵۲ واحدونه، د تجربوي برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۶۲ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۷۰ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ بشپړ OLP-0671 او OLP-0348 دوام؛ د TeX ځای ژباړه نۀ دروي۔"
+}

@@ -6858,11 +6858,11 @@
       "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
       "source_locator": "content/lambda-calculus/introduction/currying.tex:63-64",
       "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex",
-      "target_line_1based": 64,
-      "target_sha256": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "target_line_1based": 74,
+      "target_sha256": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.",
-      "reason": "The final iterated-substitution display uses undefined P as the function body although the preceding definition fixes N. The target changes only that P to N.",
+      "translation_change": "پخوانے سمون بيا په بشپړ اصل کښې وکتل شو: د تابعې بدنه N ټاکل شوې ده، د وروستۍ کرښې P دلته بې‌تعريفه دے۔ يوازې هماغه P په N بدل شوے، د تعويض ترتيب او ټول نور رسمي بايټونه عين دي۔ د تړلو نومونو تازه شرط په بېل ۰۱۸ سمون کښې ثبت دے۔",
+      "reason": "پخوانے سمون بيا په بشپړ اصل کښې وکتل شو: د تابعې بدنه N ټاکل شوې ده، د وروستۍ کرښې P دلته بې‌تعريفه دے۔ يوازې هماغه P په N بدل شوے، د تعويض ترتيب او ټول نور رسمي بايټونه عين دي۔ د تړلو نومونو تازه شرط په بېل ۰۱۸ سمون کښې ثبت دے۔",
       "counterexample": "No P is bound or introduced in this section's general construction. Substituting argument terms into P therefore has no specified relation to the defined lambda abstraction with body N.",
       "formula_policy": "Replace the free, undefined P by the N already bound as the body; preserve every other operator, variable and substitution order.",
       "qa_math_exception": {
@@ -6890,10 +6890,16 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-INTRODUCTION",
       "audit_artifacts": [
         "content/lambda-calculus/introduction/currying.tex:63-64",
-        "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:64"
+        "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex:64",
+        "B244_SOURCE_AUDIT.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
       ],
       "decision_timing": "contemporaneous B062 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "exact_original_text": "\\Subst{\\Subst{P}{M_1}{x_1}\\ldots}{M_n}{x_n}",
+      "exact_proposed_source_text": "\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}",
+      "primary_verification": "Whole0347 source and both displays re-read; N is defined, P is not. Existing math exception matches the unchanged corrected display exactly.",
+      "reaudit_receipt": "SOL6_REAUDIT_0347.json"
     },
     {
       "id": "OLLAM-002",
@@ -21568,6 +21574,668 @@
           "$\\delta_1'$",
           "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
         ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-148",
+      "unit_id": "OLP-0670",
+      "classification": "unbound-nonempty-succedent",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:25",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 22,
+      "disclosure_line_1based": 27,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د پرېکون سره د G2i ثبوت N2i ته لېږدول کېږي؛ تش ښے اړخ د دروغ فارمول ته او ناتش اړخ خپل يوازيني C فارمول ته اوړي۔ ۱۴۸ د همدې پاييز فارمول تړاو سموي۔",
+      "reason": "د پرېکون سره د G2i ثبوت N2i ته لېږدول کېږي؛ تش ښے اړخ د دروغ فارمول ته او ناتش اړخ خپل يوازيني C فارمول ته اوړي۔ ۱۴۸ د همدې پاييز فارمول تړاو سموي۔",
+      "exact_original_text": "$\\Delta = \\{!A\\}$",
+      "exact_proposed_source_text": "$\\Delta = \\{!C\\}$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The theorem names the N2 succedent C but never binds it to A in the nonempty case. Identify the unique nonempty succedent as C; empty succedent remains bottom.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Delta=\\{!A\\}$"
+        ],
+        "target_only": [
+          "$\\Delta=\\{!C\\}$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-149",
+      "unit_id": "OLP-0670",
+      "classification": "copied-undefined-source-system",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:31",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 31,
+      "disclosure_line_1based": 37,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د ثبوت لوړوالي استقرا په قضیه کښې ټاکلے G2i د پرېکون سره اخلي؛ ناټاکلے نقل شوے G2ci نوم په ۱۴۹ سم شو۔",
+      "reason": "د ثبوت لوړوالي استقرا په قضیه کښې ټاکلے G2i د پرېکون سره اخلي؛ ناټاکلے نقل شوے G2ci نوم په ۱۴۹ سم شو۔",
+      "exact_original_text": "\\Log{G2ci}",
+      "exact_proposed_source_text": "\\Log{G2i}, with cut",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The proposition uses G2i+Cut. G2ci has no definition/other occurrence in the actual proof-theory source; restore the same proof system including cut.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-150",
+      "unit_id": "OLP-0670",
+      "classification": "copied-classical-induction-target",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:42",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 47,
+      "disclosure_line_1based": 55,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د استقرا فرعي ثبوتونه N2i دي؛ د فرض ايستلو نښې بېلې او خپل ايستونکي استنتاج پورته محدودې دي۔ ۱۵۰ نقل شوے کلاسيکي نوم سموي او دغه اصل د نښو د يو ځاے کولو شرط ساتي۔",
+      "reason": "د استقرا فرعي ثبوتونه N2i دي؛ د فرض ايستلو نښې بېلې او خپل ايستونکي استنتاج پورته محدودې دي۔ ۱۵۰ نقل شوے کلاسيکي نوم سموي او دغه اصل د نښو د يو ځاے کولو شرط ساتي۔",
+      "exact_original_text": "that rule in~\\Log{N2c}",
+      "exact_proposed_source_text": "that rule in~\\Log{N2i}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The theorem targets the intuitionistic N2i system, so its induction hypothesis does too.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-151",
+      "unit_id": "OLP-0670",
+      "classification": "left-weakening-rule-label",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:63",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 88,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$\\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\RightR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]",
+      "exact_proposed_source_text": "\\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$\\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The diagram adds A on the left; its right-weakening label is copied incorrectly. Other nine tree positions retained, with only the separately registered sixth-tree context repair.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-152",
+      "unit_id": "OLP-0670",
+      "classification": "contraction-converted-proof-identity",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:77",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 109,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": " If $R$ is \\LeftR{\\Contraction}, $\\pi$ ends in\n    \\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$!A, !A, \\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Contraction}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]\n    The induction hypothesis applied to $\\pi_1$ yields !!a{proof}\n    of~$\\Pi, \\Gamma' \\Sequent !C$, where $\\Pi \\subseteq \\{x : !A,\n    y:!A\\}$. If $\\Pi = \\{x : !A, y:!A\\}$, replace all labelled\n    !!{formula}s $y:!A$ in~$\\pi_1$ by $x:!A$. Since $x$~occurs in the\n    context of the end-sequent of~$\\pi_1$ we can assume that no\n    inference in~$\\pi_1$ discharges !!a{formula} of the form~$x:!B$,\n    i.e., no $x:!B$ on the left side of a sequent in~$\\pi_1$ is\n    active. Consequently, the result is still !!a{proof} in~\\Log{N2i}.\n    ",
+      "exact_proposed_source_text": " If $R$ is \\LeftR{\\Contraction}, $\\pi$ ends in\n    \\[\n    \\AxiomC{}\n    \\RightLabel{$\\pi_1$}\n    \\Deduce$!A, !A, \\Gamma \\fCenter \\Delta$\n    \\RightLabel{\\LeftR{\\Contraction}}\n    \\UnaryInf$!A, \\Gamma \\fCenter \\Delta$\n    \\DisplayProof\n    \\]\n    The induction hypothesis applied to $\\pi_1$ yields !!a{proof}~$\\delta_1$\n    of~$\\Pi, \\Gamma' \\Sequent !C$, where $\\Pi \\subseteq \\{x : !A,\n    y:!A\\}$. If $\\Pi = \\{x : !A, y:!A\\}$, replace all labelled\n    !!{formula}s $y:!A$ in~$\\delta_1$ by $x:!A$. Since $x$~occurs in the\n    context of the end-sequent of~$\\delta_1$ we can assume that no\n    inference in~$\\delta_1$ discharges !!a{formula} of the form~$x:!B$,\n    i.e., no $x:!B$ on the left side of a sequent in~$\\delta_1$ is\n    active. Consequently, the result is still !!a{proof} in~\\Log{N2i}.\n    ",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "Contraction relabels labelled formulas in the translated N2 proof, not in input sequent-calculus proof pi1. Name the translated proof delta1; keep original premise/induction-input pi1 unchanged.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$"
+        ],
+        "target_only": [
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-153",
+      "unit_id": "OLP-0670",
+      "classification": "implication-introduction-construction-direction",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:105",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 126,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "We can take $\\delta_1$\n    to be $\\delta$ plus an application of \\Intro{\\lif}.",
+      "exact_proposed_source_text": "We can take $\\delta$\n    to be $\\delta_1$ plus an application of \\Intro{\\lif}.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The final implication proof is the translated premise proof followed by introduction. The source reverses which proof is constructed; no formula changes.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-154",
+      "unit_id": "OLP-0670",
+      "classification": "implication-left-converted-proof-identity",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:123",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 167,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "formulas and discharge labels in~$\\pi_1$",
+      "exact_proposed_source_text": "formulas and discharge labels in~$\\delta_1$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The labels must be renamed in the translated N2 proof delta1 to keep it disjoint from delta2; the input G2 proof has no labelled N2 context.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_1$"
+        ],
+        "target_only": [
+          "$\\delta_1$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-155",
+      "unit_id": "OLP-0670",
+      "classification": "implication-elimination-dropped-minor-context",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:129",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 169,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\[\n    \\Axiom$x: !A \\lif !B \\fCenter !A \\lif !B$\n    \\AxiomC{}\n    \\RightLabel{$\\delta_1$}\n    \\Deduce$\\Gamma_1' \\fCenter !A$\n    \\RightLabel{\\Elim{\\lif}}\n    \\BinaryInf$x: !A \\lif !B \\fCenter !B$\n    \\DisplayProof\n    \\]",
+      "exact_proposed_source_text": "\\[\n    \\Axiom$x: !A \\lif !B \\fCenter !A \\lif !B$\n    \\AxiomC{}\n    \\RightLabel{$\\delta_1$}\n    \\Deduce$\\Gamma_1' \\fCenter !A$\n    \\RightLabel{\\Elim{\\lif}}\n    \\BinaryInf$x: !A \\lif !B, \\Gamma_1' \\fCenter !B$\n    \\DisplayProof\n    \\]",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "and every occurrence of $x:!B$ in~$\\delta_2$ by $x:!A \\lif !B$.",
+          "exact_proposed_source_text": "and replace $x:!B$ by $x:!A \\lif !B$ while propagating the inserted proof's remaining open assumptions $\\Gamma_1'$ through the affected contexts.",
+          "scope": "Context propagation already required by the exact final claimed sequent; target states it in native prose without new inline notation."
+        }
+      ],
+      "primary_verification": "N2 implication elimination unions both premise contexts. Dropping Gamma1 prime incorrectly proves B from A implies B alone. With A=P,B=Q,y:P in Gamma1 prime and P,Q false, P implies Q is true but Q false. Grafting also carries these added open assumptions through the affected contexts; disjoint fresh labels prevent discharge capture.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B\\fCenter!B$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B,\\Gamma_1'\\fCenter!B$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-156",
+      "unit_id": "OLP-0670",
+      "classification": "conjunction-second-premise-formula",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:154",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 193,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "and $\\delta_2$ of $\\Gamma_2' \\Sequent !A$.",
+      "exact_proposed_source_text": "and $\\delta_2$ of $\\Gamma_2' \\Sequent !B$.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The second G2 conjunction premise proves B, not A. The N2 translated second premise must prove the same B.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Gamma_2'\\Sequent!A$"
+        ],
+        "target_only": [
+          "$\\Gamma_2'\\Sequent!B$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-157",
+      "unit_id": "OLP-0670",
+      "classification": "conjunction-converted-proof-identity",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:155",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 195,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "formulas and discharge labels in~$\\pi_2$",
+      "exact_proposed_source_text": "formulas and discharge labels in~$\\delta_2$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "Rename labels in the translated second N2 proof delta2, not input G2 proof pi2; retain the original premise diagram.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\delta_2$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-158",
+      "unit_id": "OLP-0670",
+      "classification": "inductive-proof-incomplete-case-coverage",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_locator": "content/proof-theory/natural-deduction/translation-G2i.tex:203",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-G2i.tex",
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_line_1based": 58,
+      "disclosure_line_1based": 243,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "  \\end{enumerate}\n\\end{proof}",
+      "exact_proposed_source_text": "  \\end{enumerate}\nThe source gives only these eight rule cases; cases for disjunction, negation and quantifiers are absent. This excerpt is not a verified complete proof.\n\\end{proof}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The actual eight items cover RW,LW,LC,Rimp,Limp,Rand,Land,Cut. The actual G2 rule table also has disjunction, negation and quantifier rules. Record this proof-coverage gap without declaring the proposition false or inventing missing arguments.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-018",
+      "unit_id": "OLP-0347",
+      "classification": "currying-bound-parameter-freshness",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "source_locator": "content/lambda-calculus/introduction/currying.tex:45",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/currying.tex",
+      "target_sha256": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+      "target_line_1based": 35,
+      "disclosure_line_1based": 43,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "لومړے آرګومېنټ ساتونکې تابع دويم آرګومېنټ پرېږدي۔ بې‌شرطه رسم د ازاد متغير نيولو ته لار ورکوي؛ د ۰۱۸ څرګند شرط د تړلو نومونو له ټولو آرګومېنټونو څخه تازه الفا-بدلون غواړي، او تړلي موردونه هم ورسره بدلوي۔ اصلي رسمي رسم عين ساتل شو۔",
+      "reason": "لومړے آرګومېنټ ساتونکې تابع دويم آرګومېنټ پرېږدي۔ بې‌شرطه رسم د ازاد متغير نيولو ته لار ورکوي؛ د ۰۱۸ څرګند شرط د تړلو نومونو له ټولو آرګومېنټونو څخه تازه الفا-بدلون غواړي، او تړلي موردونه هم ورسره بدلوي۔ اصلي رسمي رسم عين ساتل شو۔",
+      "exact_original_text": "\\begin{align*}",
+      "exact_proposed_source_text": "Before this display, alpha-rename bound parameters fresh for the free variables of all supplied arguments, renaming their bound occurrences consistently.\n\\begin{align*}",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "\\begin{multline*}",
+          "exact_proposed_source_text": "Apply the same bound-parameter freshness convention to this general display.\n\\begin{multline*}"
+        }
+      ],
+      "primary_verification": "Actual capture-avoiding reduction gives (lambda x.lambda y.x)y z -> y, whereas the unqualified middle line yields z. In the general n=2 body x1, M1=x2,M2=z case, capture avoidance gives x2 but naive sequential body substitution gives z. Source0345 already requires renaming to prevent capture. Fresh bound names make both preserved displays correct.",
+      "formula_policy": "يوازې ثبت شوي فارمول، رسم، فرعي ثبوت نومونه سم دي؛ د کَري کولو رسمي بايټونه د پخواني ۰۰۱ پرته عين دي، نوی د تازه نومونو شرط په نثر کښې دے۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "audit_artifacts": [
+        "B244_SOURCE_AUDIT.json",
+        "B244_FINAL_DRAFT_QA.json",
+        "B244_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
       },
       "qa_identifier_exception": {
         "source_only": [],

@@ -1,0 +1,24 @@
+{
+  "schema": "ps-source-capture-counterexample/1",
+  "utc": "2026-09-30T23:57:39.809514+00:00",
+  "source_unit": "OLP-0347",
+  "primary_convention_unit": "OLP-0345",
+  "status": "checked; exact capture-avoiding definition contradicts unqualified printed substitution steps",
+  "two_argument_example": {
+    "M": "y",
+    "N": "z",
+    "original_term": "(\\lambda x.\\lambda y.x) y z",
+    "capture_avoiding_result": "y",
+    "unqualified_printed_result": "z",
+    "binder_must_be_fresh_for_first_argument": true
+  },
+  "general_example": {
+    "n": 2,
+    "body": "x1",
+    "M1": "x2",
+    "M2": "z",
+    "capture_avoiding_curried_result": "x2",
+    "naive_sequential_substitution_result": "z"
+  },
+  "minimal_treatment": "Alpha-rename bound parameters fresh for free variables in the supplied arguments before reading the displayed formulas; preserve correct N-for-P correctionOLLAM001, no invented theorem/extra exercise."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "ps-narrow-register-key-repair/1",
+  "utc": "2026-10-01T00:42:57.967755+00:00",
+  "status": "record key repaired; full canonical replay pending",
+  "old_entry_id": "DEC-TERM-MULTISET-LABELLED-CONTEXT",
+  "new_entry_id": "TERM-MULTISET-LABELLED-CONTEXT",
+  "normative_rule": "Terminology entry_id must equal TERM_DECISIONS/SEGMENT_CANON_USE term_id, as all existing terminology records and generator lines651–657 require. Source-correction DEC prefix is inapplicable.",
+  "expert_log_sha256_before": "a309f47fcbed5681dd33c0372c1e59a81fa175e1d2a3f4f05be22d8cfbd06fc0",
+  "expert_log_sha256_after": "87328a7ae9304a5cad7c5f01d69a928bfcdad1f7cf787c585f755072538282e6",
+  "source_audit_sha256_after": "1c1f48305e5198010b4e7e5c68b43d5c2f37f6da57bcdcff348d190a100a8947",
+  "reason": "Correct only my newly authored term-row identity and its audit reference; normative generator and schema retained. No source/translation/formula/term-use changes. Failed private snapshots retained.",
+  "next_action": "Regenerate both full canonical outputs against new frozen inputs and require exact equality before acceptance."
+}

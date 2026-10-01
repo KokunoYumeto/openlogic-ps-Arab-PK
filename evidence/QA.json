@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 669,
-    "structural_pass": 669,
+    "draft_units": 670,
+    "structural_pass": 670,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+  "batch": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11831,7 +11831,7 @@
       "unit_id": "OLP-0347",
       "path": "content/lambda-calculus/introduction/currying.tex",
       "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
-      "translation_sha256": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "translation_sha256": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
       "source_blocks": 8,
       "target_blocks": 8,
       "checks": {
@@ -11858,7 +11858,8 @@
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
       "source_correction_ids": [
-        "OLLAM-001"
+        "OLLAM-001",
+        "OLSOL-018"
       ],
       "status": "structural-pass",
       "math_diff": {
@@ -23052,6 +23053,84 @@
           "$\\delta_1'$",
           "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:!B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]",
           "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0670",
+      "path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "translation_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-148",
+        "OLCMP-149",
+        "OLCMP-150",
+        "OLCMP-151",
+        "OLCMP-152",
+        "OLCMP-153",
+        "OLCMP-154",
+        "OLCMP-155",
+        "OLCMP-156",
+        "OLCMP-157",
+        "OLCMP-158"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\Delta=\\{!A\\}$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]",
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B\\fCenter!B$\\DisplayProof\\]",
+          "$\\Gamma_2'\\Sequent!A$",
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\Delta=\\{!C\\}$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_2$",
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B,\\Gamma_1'\\fCenter!B$\\DisplayProof\\]",
+          "$\\Gamma_2'\\Sequent!B$"
+        ],
+        "expected_by_source_correction": true
+      },
+      "structural_macro_diff": {
+        "source_only": [
+          "RightR"
+        ],
+        "target_only": [
+          "LeftR"
         ],
         "expected_by_source_correction": true
       }
@@ -41645,6 +41724,78 @@
       "passage": "OLP-0346-B008",
       "reverse_paraphrase": "بېټا معادلتوب د ګډ راکمېدلي ترم له لارې تعريفېږي؛ د چرچ--روسر په کارولو د معادلتوب اړيکه او د يوې خوا راکمولو لرونکې تر ټولو کوچنۍ معادلتي اړيکه ده۔ د پاے او فعل پاکستانۍ املا سمه شوه؛ د سرچينې د کتنې اصلي لارښوونه او ټول فورمولونه عين دي۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B005",
+      "reverse_paraphrase": "د G2 حدسي نظام څخه N2 حدسي نظام ته د ژباړې سرليک عين دے۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B006",
+      "reverse_paraphrase": "د G2 کيڼ سياق د هر فارمول د نقلونو شمېر ساتي؛ د N2 کيڼ سياق نښه لرونکي فارمولونه لري او هره نښه يوازې يو ځل راځي۔ سمون د هر فارمول د بېلو نښو شمېر د سرچينې له تکرار شمېر څخه د زيات نۀ والي شرط دے۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B007",
+      "reverse_paraphrase": "د پرېکون سره د G2i ثبوت N2i ته لېږدول کېږي؛ تش ښے اړخ د دروغ فارمول ته او ناتش اړخ خپل يوازيني C فارمول ته اوړي۔ ۱۴۸ د همدې پاييز فارمول تړاو سموي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B008",
+      "reverse_paraphrase": "د ثبوت لوړوالي استقرا په قضیه کښې ټاکلے G2i د پرېکون سره اخلي؛ ناټاکلے نقل شوے G2ci نوم په ۱۴۹ سم شو۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B009",
+      "reverse_paraphrase": "صفر لوړوالے د دروغ-تش سېکوېنټ يا د يو فارمول د هويت بديهيت دے؛ هر يو په N2 کښې په يو نښه لرونکي فرض بدلېږي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B010",
+      "reverse_paraphrase": "د استقرا فرعي ثبوتونه N2i دي؛ د فرض ايستلو نښې بېلې او خپل ايستونکي استنتاج پورته محدودې دي۔ ۱۵۰ نقل شوے کلاسيکي نوم سموي او دغه اصل د نښو د يو ځاے کولو شرط ساتي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B011",
+      "reverse_paraphrase": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B004",
+      "reverse_paraphrase": "د کَري کولو اصلي سرليک او منجمد پېژند ساتل شوي دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B005",
+      "reverse_paraphrase": "يو لامبډا تجريد يو آرګومېنټ اخلي؛ جوړې او درې‌ګونې د څو آرګومېنټونو يوه لاره ده، خو تابع-قيمت لرونکے يوځاييز تعريف د کَري کولو لاره ده۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B006",
+      "reverse_paraphrase": "جمع يوازې د مثال موقتي فرض دے؛ د يو عدد د زياتولو تابعې کورنۍ او د تابعې په توګه د هغې بېرته ورکول هماغه دوه‌ځاييز کار کوي۔ ټول اصل فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B007",
+      "reverse_paraphrase": "لومړے آرګومېنټ ساتونکې تابع دويم آرګومېنټ پرېږدي۔ بې‌شرطه رسم د ازاد متغير نيولو ته لار ورکوي؛ د ۰۱۸ څرګند شرط د تړلو نومونو له ټولو آرګومېنټونو څخه تازه الفا-بدلون غواړي، او تړلي موردونه هم ورسره بدلوي۔ اصلي رسمي رسم عين ساتل شو۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B008",
+      "reverse_paraphrase": "عمومي پرله‌پسې تعويض د ټولو آرګومېنټونو له ازادو متغيرونو تازه تړلي پاراميټرونه غواړي، څو نه نيول او نه بيا تعويض پېښ شي۔ ۰۱۸ دغه ورک شرط ښکاره کوي۔ پخوانے ۰۰۱ معتبر سمون بې‌تعريفه P د ټاکلي N په بدنه بدلوي؛ د هغه کره اصل او وړانديز اوس تازه تړل شوي دي، نور ټول رياضي بايټونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
     }
   ],
   "builds": [

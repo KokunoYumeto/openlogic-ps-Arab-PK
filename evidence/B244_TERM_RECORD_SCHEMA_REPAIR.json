@@ -1,0 +1,13 @@
+{
+  "schema": "ps-narrow-register-record-repair/1",
+  "utc": "2026-10-01T00:31:09.061956+00:00",
+  "status": "repaired; canonical replay still required",
+  "entry_id": "DEC-TERM-MULTISET-LABELLED-CONTEXT",
+  "before_entry_type": "terminology decision",
+  "after_entry_type": "terminology",
+  "expert_log_sha256_before": "129e67ef16258c3a643f96ac472c120d1157fa423c8316323296915e18c0f47f",
+  "expert_log_sha256_after": "a309f47fcbed5681dd33c0372c1e59a81fa175e1d2a3f4f05be22d8cfbd06fc0",
+  "reason": "Agent-authored new terminology record used an unsupported entry-type alias. Preserve the normative generator/schema; correct only the newly written row. No translation/source/math changes. Failed private canonical snapshot retained.",
+  "source_units_unchanged": true,
+  "next_action": "Retry complete independent canonical generation with new frozen input fingerprint; accept only after both pass."
+}

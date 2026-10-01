@@ -1,0 +1,251 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-G2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tgi}
+
+\olsection{له \Log{G2i} څخه \Log{N2i} ته ژباړه}
+
+په \Log{G2i} کښې د سېکوېنټونو کيڼ سياقونه د !!{formula}s
+د تکرار شمېر لرونکي سټونه~$\Gamma$ دي، خو په \Log{N2i} کښې
+د نښه لرونکو فارمولونو سټونه~$\Gamma'$ دي، چې هره نښه ئې
+يوازې يو ځل راځي۔ وايو چې د نښه لرونکو !!{formula}s سټ~$\Gamma'$
+د تکرار شمېر لرونکي سټ~$\Gamma$ \emph{سره سمون لري}، که د هر
+!!{formula}~$!A$ دپاره په~$\Gamma'$ کښې د $x : !A$ په بڼه
+د !!{element}s شمېر په~$\Gamma$ کښې د~$!A$ د تکرار له شمېر
+څخه کم يا ورسره برابر وي، يعنې د~$!A$ د نقلونو له شمېر څخه۔
+
+\begin{prop}\ollabel{prop:G2i-to-N2i}
+که $\Log{G2i} + \Cut \Proves \Gamma \Sequent \Delta$ وي، نو
+$\Log{N2i} \Proves \Gamma' \Sequent !C$، چې $!C \ident \lfalse$
+که $\Delta$ تش وي، او که تش نۀ وي $\Delta = \{!C\}$ وي، او
+$\Gamma'$ له~$\Gamma$ سره سمون لري۔
+\textbf{سرچينه‌يي سمون OLCMP-148:} د ناتش ښي اړخ يوازينے
+فارمول هماغه پاييز فارمول دے؛ د سرچينې بې‌تړاوه نوم سم شو۔
+\end{prop}
+
+\begin{proof}
+  ښيو چې که $\pi$ په \Log{G2i} کښې، د پرېکون قاعدې سره، د
+  $\Gamma \Sequent \Delta$ !!a{proof} وي، نو له~$\Gamma$ سره
+  سمون لرونکے يو~$\Gamma'$ او په~\Log{N2i} کښې د
+  $\Gamma' \Sequent !C$ !!a{proof}~$\delta$ شته۔ دا په
+  $n = \pheight{\pi}$ استقرا ثابتوو۔
+  \textbf{سرچينه‌يي سمون OLCMP-149:} د سرچينې ناټاکلے
+  نقل شوے نظام د قضیې هماغه حدسي نظام، د پرېکون سره، شو۔
+
+  که $n = 0$ وي، $\pi$ يو بديهيت دے۔ که د
+  $\lfalse \Sequent \quad$ بديهيت وي، نو $\delta$ د
+  $x:\lfalse \Sequent \lfalse$ بديهيت دے، يعنې
+  $\Gamma' = \{x:\lfalse\}$ او $!C \ident \lfalse$۔ که $\pi$
+  د $!A \Sequent !A$ په بڼه يو بديهيت وي، نو $\delta$ د
+  $x: !A \Sequent !A$ بديهيت دے۔
+
+  که $n>0$ وي، $\pi$ په يوه قاعده~$R$ ختمېږي۔ د استقرا
+  فرضيه په~\Log{N2i} کښې د دې قاعدې له مقدمو سره سمون لرونکو
+  سېکوېنټونو !!{proof}s راکوي۔ فرضولے شو چې په دغو ثبوتونو کښې
+  د فرض ايستلو ټولې نښې بېلې دي، او که يوه نښه $x$ کله ايستل
+  کېږي، نو يوازې د هغې ايستونکي استنتاج پورته راځي؛ که اړتيا
+  وي، د نښو نومونه بدلوو۔ بيا ښيو چې دغه !!{proof}s څنګه يو
+  ځاے کېدے شي چې د يوه مناسب $\Gamma' \Sequent !C$ ثبوتونه
+  جوړ کړي۔ د~$R$ له مخې حالتونه بېلوو۔
+  \textbf{سرچينه‌يي سمون OLCMP-150:} د استقرا ثبوتونه د
+  قضیې په حدسي N2 نظام کښې دي؛ نقل شوے کلاسيکي نوم سم شو۔
+
+  \begin{enumerate}
+    \item که $R$ د \RightR{\Weakening} قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter !A$
+    \DisplayProof
+    \]
+    د استقرا فرضيه پر $\pi_1$ د تطبيق له لارې د
+    $\Gamma' \Sequent \lfalse$ !!a{proof} راکوي۔ د $\FalseInt$
+    په کارولو د $\Gamma' \Sequent !A$ !!a{proof} ترې جوړوو۔
+    \item که $R$ د \LeftR{\Weakening} قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    د استقرا فرضيه پر $\pi_1$ د تطبيق له لارې د
+    $\Gamma' \Sequent !C$ !!a{proof} راکوي، چې د $\delta$ په
+    توګه ئې اخلو۔ که $\Gamma'$ له $\Gamma$ سره سمون لري، نو
+    له $!A, \Gamma$ سره هم سمون لري، ځکه په $\Gamma'$ کښې د
+    $x : !A$ شمېر په $\Gamma$ کښې د~$!A$ د نقلونو له شمېر
+    څخه زيات نۀ دے، نو په $\Gamma \cup \{!A\}$ کښې د $!A$
+    له نقلونو هم زيات نۀ دے۔ دلته د تکرار شمېر لرونکو سياقونو
+    يو ځاے کول د دواړو د نقلونو شمېر سره جمع کوي۔
+    \textbf{سرچينه‌يي سمون OLCMP-151:} رسم کيڼ اړخ ته فارمول
+    زياتوي؛ د قاعدې نقل شوے ښے نوم کيڼ شو۔
+    \item که $R$ د \LeftR{\Contraction} قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, !A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    د استقرا فرضيه پر $\pi_1$ د تطبيق له لارې د
+    $\Pi, \Gamma' \Sequent !C$ !!a{proof}~$\delta_1$ راکوي،
+    چې $\Pi \subseteq \{x : !A, y:!A\}$ دے۔ که
+    $\Pi = \{x : !A, y:!A\}$ وي، په~$\delta_1$ کښې ټول
+    نښه لرونکي !!{formula}s $y:!A$ په $x:!A$ بدلوو۔ ځکه
+    $x$~د~$\delta_1$ د پاييز سېکوېنټ په سياق کښې راځي،
+    فرضولے شو چې په~$\delta_1$ کښې هېڅ استنتاج د~$x:!B$
+    په بڼه !!a{formula} نۀ باسي، يعنې په~$\delta_1$ کښې د
+    سېکوېنټ پر کيڼ اړخ هېڅ $x:!B$ فعال نۀ دے۔ نو پايله لا
+    په~\Log{N2i} کښې !!a{proof} ده۔
+    \textbf{سرچينه‌يي سمون OLCMP-152:} د نښو يو ځاے کول په
+    نوي N2 ثبوت کښې کېږي، نۀ په اصلي G2 ثبوت کښې؛ د استقرا
+    جوړ شوے ثبوت نومول شو او ټول اړوند نقل شوي نومونه سم شول۔
+    \item که $R$ د $\RightR{\lif}$ قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter !A \lif !B$
+    \DisplayProof
+    \]
+    د استقرا له فرضيې د $x: !A, \Gamma' \Sequent !B$ يا
+    $\Gamma' \Sequent !B$ !!a{proof}~$\delta_1$ شته، چې
+    $\Gamma'$ له~$\Gamma$ سره سمون لري۔ $\delta$ د
+    $\delta_1$ په پاے کښې د \Intro{\lif} د يوې کارونې په
+    زياتولو اخستلے شو۔
+    \textbf{سرچينه‌يي سمون OLCMP-153:} نوے پاييز ثبوت له
+    فرعي ثبوت څخه جوړېږي؛ د سرچينې د جوړولو لور سرچپه وه۔
+    \item که $R$ د \LeftR{\lif} قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!B, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    د استقرا فرضيه د $\Gamma_1' \Sequent !A$ !!{proof}s
+    $\delta_1$ او د $x: !B, \Gamma_2' \Sequent !C$ يا د
+    $\Gamma_2' \Sequent !C$ ثبوت $\delta_2$ راکوي۔ که
+    $\delta_2$ د وروستۍ بڼې وي، $\delta_2$ د~$\delta$ کار
+    کولے شي۔ که داسې نۀ وي، په~$\delta_1$ کښې د ټولو
+    فارمولونو او د فرض ايستلو نښو نومونه بدلولے شو، څو هېڅ
+    نښه په دواړو $\delta_1$ او~$\delta_2$ کښې رانۀ شي۔ نو
+    $\Gamma_1' \cup \Gamma_2'$ له $\Gamma_1 \cup \Gamma_2$
+    سره سمون لري۔ ځکه $x:!B$ د~$\delta_2$ په پاييز سېکوېنټ
+    کښې راځي، $x:!B$ په~$\delta_2$ کښې د~$x$ د فرض ايستلو
+    نښې لرونکي هېڅ استنتاج کښې فعال نۀ شي کېدے۔ په~$\delta_2$
+    کښې هر بديهيت $x:!B \Sequent !B$ په دې !!{proof}~$\delta_3$
+    بدلوو:
+    \[
+    \Axiom$x: !A \lif !B \fCenter !A \lif !B$
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \Deduce$\Gamma_1' \fCenter !A$
+    \RightLabel{\Elim{\lif}}
+    \BinaryInf$x: !A \lif !B, \Gamma_1' \fCenter !B$
+    \DisplayProof
+    \]
+    او په~$\delta_2$ کښې د $x:!B$ هر مورد په $x:!A \lif !B$
+    بدلوو۔ د ګرافټ کولو په ترڅ کښې د نوي فرعي ثبوت پاتې
+    پرانيستي فرضونه هم پر اړوندو پورته سياقونو ورزياتېږي۔
+    پايله $\Subst{\delta_2}{\delta_3}{x:!B}$ د
+    $x:!A \lif !B, \Gamma_1', \Gamma_2' \Sequent !C$ !!a{proof} ده۔
+    \textbf{سرچينه‌يي سمون OLCMP-154:} د نښو بدلون په
+    جوړ شوي N2 فرعي ثبوت کښې دے، نۀ په اصلي G2 فرعي ثبوت کښې۔
+    \textbf{سرچينه‌يي سمون OLCMP-155:} د نوي فرعي ثبوت د
+    کوچنۍ مقدمې سياق په رسم کښې له پايلې لوېدلے و؛ هماغه
+    پرانيستي فرضونه په پايله او د ګرافټ په اړوندو سياقونو کښې ساتل کېږي۔
+    \item که $R$ د \RightR{\land} قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma_2 \fCenter !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A \land !B$
+    \DisplayProof
+    \]
+    د استقرا فرضيه د $\Gamma_1' \Sequent !A$ ثبوت $\delta_1$
+    او د $\Gamma_2' \Sequent !B$ ثبوت $\delta_2$ راکوي۔
+    په~$\delta_2$ کښې د ټولو فارمولونو او د فرض ايستلو نښو
+    نومونه په بدلولو دا باوري کولے شو چې هېڅ نښه په دواړو
+    $\delta_1$ او $\delta_2$ کښې رانۀ شي۔ نو
+    $\Gamma_1' \cup \Gamma_2'$ له $\Gamma_1 \cup \Gamma_2$
+    سره سمون لري۔ د $\delta_1$ او~$\delta_2$ پر پاييزو
+    سېکوېنټونو د $\Intro{\land}$ په کارولو
+    !!a{proof}~$\delta$ تر لاسه کوو۔
+    \textbf{سرچينه‌يي سمون OLCMP-156:} دويم فرعي ثبوت د
+    دويمې مقدمې فارمول ثابتوي؛ نقل شوے لومړے فارمول سم شو۔
+    \textbf{سرچينه‌يي سمون OLCMP-157:} د نښو نومونه په
+    جوړ شوي دويم N2 ثبوت کښې بدلېږي، نۀ په اصلي G2 ثبوت کښې۔
+    \item که $R$ د $\LeftR{\land}$ قاعده وي، $\pi$ مثلاً داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    د استقرا له فرضيې د $x: !A, \Gamma' \Sequent !C$ يا
+    $\Gamma' \Sequent !C$ !!a{proof}~$\delta_1$ شته، چې
+    $\Gamma'$ له~$\Gamma$ سره سمون لري۔ په وروستي حالت کښې
+    $\delta_1$ د $\delta$ په توګه اخستلے شو۔ په لومړي کښې،
+    ځکه $x:!A$ په پاييز سېکوېنټ کښې راځي، $x:!A$ په~$\delta_1$
+    کښې د~$x$ د فرض ايستلو نښې لرونکي هېڅ استنتاج کښې فعال
+    نۀ دے۔ هر بديهيت $x:!A \Sequent !A$ په دې !!{proof}~$\delta_2$
+    بدلوو:
+    \[
+    \Axiom$x: !A \land !B \fCenter !A \land !B$
+    \RightLabel{\Elim{\land}}
+    \UnaryInf$x: !A \land !B \fCenter !A$
+    \DisplayProof
+    \]
+    او د $x:!A$ هر مورد په $x:!A \land !B$ بدلوو، يعنې
+    $\Subst{\delta_1}{\delta_2}{x:!A}$ اخلو۔ دا د
+    $x:!A \land !B, \Gamma' \Sequent !C$ !!a{proof} دے۔
+    \item که $R$ د \Cut قاعده وي، $\pi$ داسې ختمېږي:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!A, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    د استقرا فرضيه د $\Gamma_1' \Sequent !A$ ثبوت $\delta_1$
+    او د $x:!A, \Gamma_2' \Sequent !C$ يا د
+    $\Gamma_2' \Sequent !C$ ثبوت $\delta_2$ راکوي۔ په وروستي
+    حالت کښې $\delta$ د~$\delta_2$ په توګه اخلو۔ که داسې نۀ وي،
+    په $\delta_2$ کښې هر بديهيت $x:!A \Sequent !A$ په
+    $\delta_1$ بدلوو، څو~$\delta$ د $\Gamma_1', \Gamma_2' \Sequent !C$
+    !!{proof}~$\Subst{\delta_2}{\delta_1}{x:!A}$ په توګه تر لاسه کړو۔
+  \end{enumerate}
+  \textbf{د ثبوت د بشپړتيا سرچينه‌يي يادونه OLCMP-158:} په
+  ورکړل شوې سرچينه کښې يوازې دا اته قاعدوي حالتونه تشريح شوي
+  دي؛ د يا، نفي او کميت‌لرونکو نورو منطقي قواعدو حالتونه نۀ
+  دي ورکړل شوي۔ دا يادونه د قضیې د ناسم‌والي دعوه نۀ کوي، خو
+  دغه برخه د بشپړ ثبوت په توګه نۀ تصديقوي؛ ورک حالتونه دلته
+  نۀ دي جوړ شوي۔
+\end{proof}
+
+\end{document}

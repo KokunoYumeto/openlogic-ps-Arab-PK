@@ -1,0 +1,112 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-10-01T00:43:04.757126+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0670",
+  "draft_units": 670,
+  "remaining_unaccepted_units": 52,
+  "unit_ids": [
+    "OLP-0670"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "1c1f48305e5198010b4e7e5c68b43d5c2f37f6da57bcdcff348d190a100a8947",
+  "corpus_qa_sha256": "de105f5f5bb23336f841372b77466f8de46ce775baceb78d7f24850433b9d6a3",
+  "canonical_replay_sha256": "4a969d703237b33c856b27cec0757b02d0035e71d6af2e9a3304aa38857f5960",
+  "qa_sha256": "fda4e0e04051569093fc35fe6e5b4e512e21ca706f237e8c92a34ef639fd1c9b",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0670",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "source_bytes": 8437,
+      "target_sha256": "51ee1dc815663ac88e09d375194b3ab87ddd65190462e9343824c65e42499526",
+      "target_bytes": 13503,
+      "paired_blocks": 12,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros_exact_exceptions": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "all_ten_original_diagrams_retained": true,
+        "only_two_diagrams_change": true,
+        "left_weakening_label_exact": true,
+        "minor_context_restored_exact": true,
+        "all_eight_original_cases_retained": true,
+        "proof_gap_disclosed_without_added_cases": true,
+        "label_single_occurrence_property_retained": true
+      },
+      "source_correction_ids": [
+        "OLCMP-148",
+        "OLCMP-149",
+        "OLCMP-150",
+        "OLCMP-151",
+        "OLCMP-152",
+        "OLCMP-153",
+        "OLCMP-154",
+        "OLCMP-155",
+        "OLCMP-156",
+        "OLCMP-157",
+        "OLCMP-158"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0347",
+      "source_path": "content/lambda-calculus/introduction/currying.tex",
+      "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+      "target_sha256_before": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+      "target_sha256": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+      "target_sha256_after": "4d5f5f8d61123e15eb0f90784a346601576a44c2edd68dfdfe71cb5491d2ea0b",
+      "target_bytes": 5856,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLSOL-018"
+      ],
+      "reverified_source_correction_ids": [
+        "OLLAM-001"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0347-DISCLOSURE-SPELLING"
+      ]
+    }
+  ],
+  "aligned_blocks": 9931,
+  "segment_canon_uses": 6302,
+  "semantic_samples": 3110,
+  "canonical_counts": {
+    "decisions": 918,
+    "occurrences": 32343,
+    "terminology_decisions": 332,
+    "source_correction_decisions": 543,
+    "priority_decisions": 544,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14124
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0671 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0348; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

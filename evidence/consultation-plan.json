@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+  "batch_id": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -8940,7 +8940,7 @@
       "allowed_residual_english": []
     },
     "OLP-0347": {
-      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "batch_id": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
@@ -8948,9 +8948,70 @@
       "terms": [
         "TERM-FUNCTION",
         "TERM-FUNCTION-ARGUMENT",
-        "TERM-LAMBDA-REDUCTION-CURRYING"
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-LAMBDA-ALPHA-CONVERSION",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND"
       ],
-      "scope": "Currying's function-valued intermediary and displayed substitutions are preserved; OLLAM-001 corrects the undefined final body variable with adjacent disclosure.",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-ALPHA-CONVERSION",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "5": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-ALPHA-CONVERSION",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "6": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-ALPHA-CONVERSION",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "7": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-ALPHA-CONVERSION",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "8": [
+          "TERM-FUNCTION",
+          "TERM-FUNCTION-ARGUMENT",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-ALPHA-CONVERSION",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ]
+      },
+      "scope": "بشپړ اصل، ټول لس رسمي رسمونه، د سياق نقلونه او پرانيستي فرضونه ساتل شوي دي؛ د سرچينې د ثبوت تشه ښکاره او د کَري کولو د تازه نومونو شرط ثبت دے۔",
       "allowed_residual_english": [
         "OLLAM"
       ]
@@ -19756,6 +19817,134 @@
         "role": "Frozen actual TeX filename imports N2 rule table; exact source/target occurrence retained, no ordinary English prose.",
         "scope": "Only exact current unit/source/target hashes; no corpus-wide English waiver."
       }
+    },
+    "OLP-0670": {
+      "batch_id": "PS-B244-G2I-N2I-CURRYING-FRESHNESS",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-SEQUENT-RULES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-NATURAL-DEDUCTION-GRAFTING",
+        "TERM-MULTISET-LABELLED-CONTEXT"
+      ],
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "6": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "7": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "8": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "9": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "10": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "11": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ]
+      },
+      "terms_by_block": {
+        "5": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "6": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "7": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "8": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "9": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "10": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ],
+        "11": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-GRAFTING",
+          "TERM-MULTISET-LABELLED-CONTEXT"
+        ]
+      },
+      "scope": "بشپړ اصل، ټول لس رسمي رسمونه، د سياق نقلونه او پرانيستي فرضونه ساتل شوي دي؛ د سرچينې د ثبوت تشه ښکاره او د کَري کولو د تازه نومونو شرط ثبت دے۔"
     }
   },
   "semantic_review": [
@@ -38346,6 +38535,78 @@
       "passage": "OLP-0346-B008",
       "reverse_paraphrase": "بېټا معادلتوب د ګډ راکمېدلي ترم له لارې تعريفېږي؛ د چرچ--روسر په کارولو د معادلتوب اړيکه او د يوې خوا راکمولو لرونکې تر ټولو کوچنۍ معادلتي اړيکه ده۔ د پاے او فعل پاکستانۍ املا سمه شوه؛ د سرچينې د کتنې اصلي لارښوونه او ټول فورمولونه عين دي۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B005",
+      "reverse_paraphrase": "د G2 حدسي نظام څخه N2 حدسي نظام ته د ژباړې سرليک عين دے۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B006",
+      "reverse_paraphrase": "د G2 کيڼ سياق د هر فارمول د نقلونو شمېر ساتي؛ د N2 کيڼ سياق نښه لرونکي فارمولونه لري او هره نښه يوازې يو ځل راځي۔ سمون د هر فارمول د بېلو نښو شمېر د سرچينې له تکرار شمېر څخه د زيات نۀ والي شرط دے۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B007",
+      "reverse_paraphrase": "د پرېکون سره د G2i ثبوت N2i ته لېږدول کېږي؛ تش ښے اړخ د دروغ فارمول ته او ناتش اړخ خپل يوازيني C فارمول ته اوړي۔ ۱۴۸ د همدې پاييز فارمول تړاو سموي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B008",
+      "reverse_paraphrase": "د ثبوت لوړوالي استقرا په قضیه کښې ټاکلے G2i د پرېکون سره اخلي؛ ناټاکلے نقل شوے G2ci نوم په ۱۴۹ سم شو۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B009",
+      "reverse_paraphrase": "صفر لوړوالے د دروغ-تش سېکوېنټ يا د يو فارمول د هويت بديهيت دے؛ هر يو په N2 کښې په يو نښه لرونکي فرض بدلېږي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B010",
+      "reverse_paraphrase": "د استقرا فرعي ثبوتونه N2i دي؛ د فرض ايستلو نښې بېلې او خپل ايستونکي استنتاج پورته محدودې دي۔ ۱۵۰ نقل شوے کلاسيکي نوم سموي او دغه اصل د نښو د يو ځاے کولو شرط ساتي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0670",
+      "passage": "OLP-0670-B011",
+      "reverse_paraphrase": "اته اصلي قاعدوي حالتونه او لس اصلي رسمونه بشپړ ساتل شوي دي۔ ښے کمزوري کول له دروغ څخه پايله اخلي؛ کيڼ کمزوري کول اضافي فارمول بې‌کارونې پرېږدي۔ انقباض د جوړ شوي N2 ثبوت نښې يو ځاے کوي۔ د شرطي داخلولو پايله له فرعي ثبوت جوړېږي۔ د شرطي ايستلو کوچنۍ مقدمې سياق په نوې پايله او ګرافټ کښې ساتل کېږي۔ د او داخلولو دويم ثبوت B ثابتوي؛ د نوم بدلول په اړوند نوي N2 ثبوت کښې کېږي۔ کيڼ او او پرېکون اصل ګرافټ ساتي۔ ۱۵۱–۱۵۷ کره نقل شوي نومونه او لوېدلے سياق سموي؛ ۱۵۸ څرګندوي چې د يا، نفي او کميتونو نور حالتونه سرچينه نۀ ورکوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B004",
+      "reverse_paraphrase": "د کَري کولو اصلي سرليک او منجمد پېژند ساتل شوي دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B005",
+      "reverse_paraphrase": "يو لامبډا تجريد يو آرګومېنټ اخلي؛ جوړې او درې‌ګونې د څو آرګومېنټونو يوه لاره ده، خو تابع-قيمت لرونکے يوځاييز تعريف د کَري کولو لاره ده۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B006",
+      "reverse_paraphrase": "جمع يوازې د مثال موقتي فرض دے؛ د يو عدد د زياتولو تابعې کورنۍ او د تابعې په توګه د هغې بېرته ورکول هماغه دوه‌ځاييز کار کوي۔ ټول اصل فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B007",
+      "reverse_paraphrase": "لومړے آرګومېنټ ساتونکې تابع دويم آرګومېنټ پرېږدي۔ بې‌شرطه رسم د ازاد متغير نيولو ته لار ورکوي؛ د ۰۱۸ څرګند شرط د تړلو نومونو له ټولو آرګومېنټونو څخه تازه الفا-بدلون غواړي، او تړلي موردونه هم ورسره بدلوي۔ اصلي رسمي رسم عين ساتل شو۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
+    },
+    {
+      "unit_id": "OLP-0347",
+      "passage": "OLP-0347-B008",
+      "reverse_paraphrase": "عمومي پرله‌پسې تعويض د ټولو آرګومېنټونو له ازادو متغيرونو تازه تړلي پاراميټرونه غواړي، څو نه نيول او نه بيا تعويض پېښ شي۔ ۰۱۸ دغه ورک شرط ښکاره کوي۔ پخوانے ۰۰۱ معتبر سمون بې‌تعريفه P د ټاکلي N په بدنه بدلوي؛ د هغه کره اصل او وړانديز اوس تازه تړل شوي دي، نور ټول رياضي بايټونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسمي رسم او هر بلاک کتل شوي دي؛ کره ثبت شوي سمونونه او د ثبوت د تشې څرګندونه، نوے ثبوت يا تمرين نۀ زياتوي۔"
     }
   ]
 }
