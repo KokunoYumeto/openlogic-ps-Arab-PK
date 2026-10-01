@@ -7322,7 +7322,17 @@
         "ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex:35"
       ],
       "decision_timing": "contemporaneous B064 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B253",
+          "utc": "2026-10-01T10:16:16.070736+00:00",
+          "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+          "target_sha256": "ff50fbe7f83c6d505f9f8a9c50b2e3b1e0605c052b5245830c887d75be4afef6",
+          "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-010",
@@ -23539,6 +23549,457 @@
       "adjudication_receipt": "B252_SOURCE_ADJUDICATION.json",
       "adjudication_sha256": "998b2f9f31a885373d2af855739b62082ff69fd6bbbe2678168b552950835c75",
       "upstream_reporting": "local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-177",
+      "unit_id": "OLP-0678",
+      "classification": "incomplete-source-system-name",
+      "formal_changes": [
+        {
+          "source": "\\Log{2i}",
+          "target": "\\Log{G2i}"
+        }
+      ],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 13,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block6",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 13,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د حدسي سيکوېنټ نظام نيمګړے نوم په هماغه بشپړ G2i نوم بدل شو۔",
+      "translation_change": "د حدسي سيکوېنټ نظام نيمګړے نوم په هماغه بشپړ G2i نوم بدل شو۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-178",
+      "unit_id": "OLP-0678",
+      "classification": "normal-translation-corollary-target-and-succedent-scope",
+      "formal_changes": [
+        {
+          "source": "\\Log{N2c}-!!{proof}~$\\delta$ of",
+          "target": "\\Log{N2i}-!!{proof}~$\\delta$ of"
+        }
+      ],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 25,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block8",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 27,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "بې‌پرېکونه حد او د ښي اړخ له مخې د پايلې پېژندنه واضح دي، او د راتلونکې کتنې حدسي طبيعي ثبوت نوم د کاپي شوې کلاسيکي بڼې پر ځاے کارېږي۔",
+      "translation_change": "بې‌پرېکونه حد او د ښي اړخ له مخې د پايلې پېژندنه واضح دي، او د راتلونکې کتنې حدسي طبيعي ثبوت نوم د کاپي شوې کلاسيکي بڼې پر ځاے کارېږي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-179",
+      "unit_id": "OLP-0678",
+      "classification": "missing-normality-hypothesis-in-incomplete-sentence",
+      "formal_changes": [],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 54,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block11",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 63,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د پرېکون د مخنيوي په نيمګړې جمله کښې د راتلونکې قضیې عادي والي شرط ورغلے دے؛ ټول رسمي شرطونه عين دي۔",
+      "translation_change": "د پرېکون د مخنيوي په نيمګړې جمله کښې د راتلونکې قضیې عادي والي شرط ورغلے دے؛ ټول رسمي شرطونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-180",
+      "unit_id": "OLP-0678",
+      "classification": "copied-conjunction-proof-and-sequent-identifiers",
+      "formal_changes": [
+        {
+          "source": "$\\delta'$ plus~$1$",
+          "target": "$\\delta_1$ plus~$1$"
+        },
+        {
+          "source": "$x:!D, \\Gamma_1 \\Sequent !A$",
+          "target": "$!D, \\Gamma_1' \\Sequent !A$"
+        }
+      ],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 125,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block17",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 145,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د کم شوي فرعي ثبوت نوم delta1 دے؛ د نثر په G2 سيکوېنټ کښې نښه نۀ وي او اړوند څوګونے سياق پرېم لري، لکه اصلي رسم۔",
+      "translation_change": "د کم شوي فرعي ثبوت نوم delta1 دے؛ د نثر په G2 سيکوېنټ کښې نښه نۀ وي او اړوند څوګونے سياق پرېم لري، لکه اصلي رسم۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\delta'$",
+          "$x:!D,\\Gamma_1\\Sequent!A$",
+          "$\\Gamma_1\\Sequent!D$",
+          "$!E,\\Gamma_1'\\Sequent!A$"
+        ],
+        "target_only": [
+          "$!D,\\Gamma_1'\\Sequent!A$",
+          "$\\delta_2$",
+          "$\\Gamma_1'\\Sequent!D$",
+          "$!E,\\Gamma_2'\\Sequent!A$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-180",
+      "qa_math_exception_group_members": [
+        "OLCMP-180",
+        "OLCMP-182"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-181",
+      "unit_id": "OLP-0678",
+      "classification": "main-branch-rewrite-can-drop-shared-minor-assumptions",
+      "formal_changes": [],
+      "reporting_lane": "source_erratum_substantive",
+      "general_replacement_proof_supplied": false,
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 125,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block17",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 145,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د اصلي څانګې سياق نه کمېږي، خو نورې کوچنۍ څانګې ئې زياتولے شي۔ که پخوانے فرض په کوچنۍ څانګه کښې هم کارېږي، د هماغې نښې د فارمول بدلول ټکر يا د لازم فرض حذف راولي۔ د سرچينې رسمي وړانديز ساتل شوے، خو د عمومي بدلون صحيح والي دعوه مشروطه او پاتې حد واضح دے؛ نوی بشپړ جوړوونکے ثبوت نۀ دے اختراع شوے۔",
+      "translation_change": "د اصلي څانګې سياق نه کمېږي، خو نورې کوچنۍ څانګې ئې زياتولے شي۔ که پخوانے فرض په کوچنۍ څانګه کښې هم کارېږي، د هماغې نښې د فارمول بدلول ټکر يا د لازم فرض حذف راولي۔ د سرچينې رسمي وړانديز ساتل شوے، خو د عمومي بدلون صحيح والي دعوه مشروطه او پاتې حد واضح دے؛ نوی بشپړ جوړوونکے ثبوت نۀ دے اختراع شوے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-182",
+      "unit_id": "OLP-0678",
+      "classification": "copied-implication-zero-fragment-and-context-identifiers",
+      "formal_changes": [
+        {
+          "source": "$\\delta_1$\n  contains $0$",
+          "target": "$\\delta_2$\n  contains $0$"
+        },
+        {
+          "source": "$\\Gamma_1 \\Sequent !D$",
+          "target": "$\\Gamma_1' \\Sequent !D$"
+        },
+        {
+          "source": "$!E, \\Gamma_1' \\Sequent !A$",
+          "target": "$!E, \\Gamma_2' \\Sequent !A$"
+        }
+      ],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 235,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block19",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 272,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "په وروستي شرط ايستلو کښې بې‌استنتاجه ټوټه delta2 ده، نۀ کوچنۍ مقدمه delta1۔ په نثر کښې د لومړي G2 ثبوت سياق Gamma1-prime او د دويم Gamma2-prime دي، لکه دواړه رسمي رسمونه۔",
+      "translation_change": "په وروستي شرط ايستلو کښې بې‌استنتاجه ټوټه delta2 ده، نۀ کوچنۍ مقدمه delta1۔ په نثر کښې د لومړي G2 ثبوت سياق Gamma1-prime او د دويم Gamma2-prime دي، لکه دواړه رسمي رسمونه۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-180",
+      "qa_math_exception_group_members": [
+        "OLCMP-180",
+        "OLCMP-182"
+      ],
+      "qa_math_exception_group_policy": "Exact net multiset of independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-183",
+      "unit_id": "OLP-0678",
+      "classification": "classical-case-outside-shown-intuitionistic-branch-argument",
+      "formal_changes": [],
+      "reporting_lane": "source_proof_scope_disclosure",
+      "theorem_refuted": false,
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 72,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block13",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 84,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "عمومي اصلي قضيه ساتل شوې، خو ښودل شوې د نۀ ايستلو څانګه‌يي کتنه حدسي ده؛ کلاسيکي دروغ فرضونه باسي او جلا حالت ئې دلته نۀ دے ثابت شوے۔",
+      "translation_change": "عمومي اصلي قضيه ساتل شوې، خو ښودل شوې د نۀ ايستلو څانګه‌يي کتنه حدسي ده؛ کلاسيکي دروغ فرضونه باسي او جلا حالت ئې دلته نۀ دے ثابت شوے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-184",
+      "unit_id": "OLP-0678",
+      "classification": "subformula-open-assumption-and-quantifier-scope-recurrence",
+      "formal_changes": [],
+      "reporting_lane": "source_erratum_substantive",
+      "canonical_source_issue_id": "OLCMP-169",
+      "new_unique_upstream_error": false,
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_line_1based": 314,
+      "source_locator": "content/proof-theory/normalization/translations.tex:block22",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/translations.tex",
+      "target_line_1based": 364,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د ۱۶۹ تکراري مورد: په عادي طبيعي ثبوت کښې د پايلې ترڅنګ پاتې پرانيستي فرضونه او کمي موردونه هم پکار دي۔ په G2 کښې د دروغو پايله تش ښے اړخ دے، نو د هر فارمول د عين څرګندېدو دعوه هم دغه استثنا غواړي۔",
+      "translation_change": "د ۱۶۹ تکراري مورد: په عادي طبيعي ثبوت کښې د پايلې ترڅنګ پاتې پرانيستي فرضونه او کمي موردونه هم پکار دي۔ په G2 کښې د دروغو پايله تش ښے اړخ دے، نو د هر فارمول د عين څرګندېدو دعوه هم دغه استثنا غواړي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-023",
+      "unit_id": "OLP-0355",
+      "classification": "partial-minimization-selector-can-skip-undefined-head-normal-value",
+      "formal_changes": [],
+      "reporting_lane": "source_erratum_substantive",
+      "related_erasing_argument_mechanisms": [
+        "OLSOL-020",
+        "OLSOL-021"
+      ],
+      "theorem_refuted": false,
+      "general_replacement_proof_supplied": false,
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+      "source_line_1based": 63,
+      "source_locator": "content/lambda-calculus/introduction/minimization.tex:block9",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/minimization.tex",
+      "target_line_1based": 68,
+      "target_sha256": "ff50fbe7f83c6d505f9f8a9c50b2e3b1e0605c052b5245830c887d75be4afef6",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "بې‌عادي‌بڼې ترم د ټاکونکې د آرګومېنټونو په اخيستو خپله ناتعريفه برخه غورځولے شي؛ د سختې جزوي کمينه‌موندنې ناتعريف پخوانے ارزښت بيا هم د نتيجې عددنښه ورکوي۔ د عمومي تړلتيا لمه او ټول پخواني رسمي بايټونه ساتل شوي، پاتې ناتعريفه والي حالت واضح دے؛ نوی بشپړ عمومي ثبوت نۀ دے جوړ شوے۔",
+      "translation_change": "بې‌عادي‌بڼې ترم د ټاکونکې د آرګومېنټونو په اخيستو خپله ناتعريفه برخه غورځولے شي؛ د سختې جزوي کمينه‌موندنې ناتعريف پخوانے ارزښت بيا هم د نتيجې عددنښه ورکوي۔ د عمومي تړلتيا لمه او ټول پخواني رسمي بايټونه ساتل شوي، پاتې ناتعريفه والي حالت واضح دے؛ نوی بشپړ عمومي ثبوت نۀ دے جوړ شوے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B253_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+      "upstream_reporting": "owner local ledger; no new external issue",
       "qa_math_exception": {
         "source_only": [],
         "target_only": []

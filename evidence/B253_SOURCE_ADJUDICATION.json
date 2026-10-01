@@ -1,0 +1,179 @@
+{
+  "finding_records": [
+    {
+      "id": "OLCMP-177",
+      "classification": "incomplete-source-system-name",
+      "formal_changes": [
+        {
+          "source": "\\Log{2i}",
+          "target": "\\Log{G2i}"
+        }
+      ],
+      "reason_native": "د حدسي سيکوېنټ نظام نيمګړے نوم په هماغه بشپړ G2i نوم بدل شو۔"
+    },
+    {
+      "id": "OLCMP-178",
+      "classification": "normal-translation-corollary-target-and-succedent-scope",
+      "formal_changes": [
+        {
+          "source": "\\Log{N2c}-!!{proof}~$\\delta$ of",
+          "target": "\\Log{N2i}-!!{proof}~$\\delta$ of"
+        }
+      ],
+      "reason_native": "بې‌پرېکونه حد او د ښي اړخ له مخې د پايلې پېژندنه واضح دي، او د راتلونکې کتنې حدسي طبيعي ثبوت نوم د کاپي شوې کلاسيکي بڼې پر ځاے کارېږي۔"
+    },
+    {
+      "id": "OLCMP-179",
+      "classification": "missing-normality-hypothesis-in-incomplete-sentence",
+      "formal_changes": [],
+      "reason_native": "د پرېکون د مخنيوي په نيمګړې جمله کښې د راتلونکې قضیې عادي والي شرط ورغلے دے؛ ټول رسمي شرطونه عين دي۔"
+    },
+    {
+      "id": "OLCMP-180",
+      "classification": "copied-conjunction-proof-and-sequent-identifiers",
+      "formal_changes": [
+        {
+          "source": "$\\delta'$ plus~$1$",
+          "target": "$\\delta_1$ plus~$1$"
+        },
+        {
+          "source": "$x:!D, \\Gamma_1 \\Sequent !A$",
+          "target": "$!D, \\Gamma_1' \\Sequent !A$"
+        }
+      ],
+      "reason_native": "د کم شوي فرعي ثبوت نوم delta1 دے؛ د نثر په G2 سيکوېنټ کښې نښه نۀ وي او اړوند څوګونے سياق پرېم لري، لکه اصلي رسم۔"
+    },
+    {
+      "id": "OLCMP-181",
+      "classification": "main-branch-rewrite-can-drop-shared-minor-assumptions",
+      "formal_changes": [],
+      "reason_native": "د اصلي څانګې سياق نه کمېږي، خو نورې کوچنۍ څانګې ئې زياتولے شي۔ که پخوانے فرض په کوچنۍ څانګه کښې هم کارېږي، د هماغې نښې د فارمول بدلول ټکر يا د لازم فرض حذف راولي۔ د سرچينې رسمي وړانديز ساتل شوے، خو د عمومي بدلون صحيح والي دعوه مشروطه او پاتې حد واضح دے؛ نوی بشپړ جوړوونکے ثبوت نۀ دے اختراع شوے۔"
+    },
+    {
+      "id": "OLCMP-182",
+      "classification": "copied-implication-zero-fragment-and-context-identifiers",
+      "formal_changes": [
+        {
+          "source": "$\\delta_1$\n  contains $0$",
+          "target": "$\\delta_2$\n  contains $0$"
+        },
+        {
+          "source": "$\\Gamma_1 \\Sequent !D$",
+          "target": "$\\Gamma_1' \\Sequent !D$"
+        },
+        {
+          "source": "$!E, \\Gamma_1' \\Sequent !A$",
+          "target": "$!E, \\Gamma_2' \\Sequent !A$"
+        }
+      ],
+      "reason_native": "په وروستي شرط ايستلو کښې بې‌استنتاجه ټوټه delta2 ده، نۀ کوچنۍ مقدمه delta1۔ په نثر کښې د لومړي G2 ثبوت سياق Gamma1-prime او د دويم Gamma2-prime دي، لکه دواړه رسمي رسمونه۔"
+    },
+    {
+      "id": "OLCMP-183",
+      "classification": "classical-case-outside-shown-intuitionistic-branch-argument",
+      "formal_changes": [],
+      "reason_native": "عمومي اصلي قضيه ساتل شوې، خو ښودل شوې د نۀ ايستلو څانګه‌يي کتنه حدسي ده؛ کلاسيکي دروغ فرضونه باسي او جلا حالت ئې دلته نۀ دے ثابت شوے۔"
+    },
+    {
+      "id": "OLCMP-184",
+      "classification": "subformula-open-assumption-and-quantifier-scope-recurrence",
+      "formal_changes": [],
+      "reason_native": "د ۱۶۹ تکراري مورد: په عادي طبيعي ثبوت کښې د پايلې ترڅنګ پاتې پرانيستي فرضونه او کمي موردونه هم پکار دي۔ په G2 کښې د دروغو پايله تش ښے اړخ دے، نو د هر فارمول د عين څرګندېدو دعوه هم دغه استثنا غواړي۔"
+    },
+    {
+      "id": "OLSOL-023",
+      "classification": "partial-minimization-selector-can-skip-undefined-head-normal-value",
+      "formal_changes": [],
+      "reason_native": "بې‌عادي‌بڼې ترم د ټاکونکې د آرګومېنټونو په اخيستو خپله ناتعريفه برخه غورځولے شي؛ د سختې جزوي کمينه‌موندنې ناتعريف پخوانے ارزښت بيا هم د نتيجې عددنښه ورکوي۔ د عمومي تړلتيا لمه او ټول پخواني رسمي بايټونه ساتل شوي، پاتې ناتعريفه والي حالت واضح دے؛ نوی بشپړ عمومي ثبوت نۀ دے جوړ شوے۔"
+    }
+  ],
+  "minimization_closed_counterexample": {
+    "numeral_zero": "N0=lambda a.lambda b.b",
+    "Omega": "(lambda t.t t)(lambda t.t t)",
+    "undefined_value": "V=lambda a.lambda b.a Omega has no beta-normal form, but can erase Omega after receiving selector arguments.",
+    "closed_definer": "F=lambda x.lambda n.n (lambda t.N0) V",
+    "partial_function": "f(x,0) undefined and f(x,k)=0 for every k>=1; F is closed and satisfies exact source348 representation contract.",
+    "selector_calculation": [
+      "D(M,N,V)=V(K(N))M -> K(N)Omega -> N",
+      "H(num0) -> D(num0,H(num1),V) -> H(num1)",
+      "F(x,num1) -> N0; H(num1) -> D(num1,H(num2),N0) -> num1",
+      "G(num m) -> num1, although strict minimization g(m) is undefined because prefixf(m,0) undefined"
+    ],
+    "general_closure_theorem_refuted": false,
+    "complete_general_replacement_proof_supplied": false,
+    "all_previous_formulas_retained": true
+  },
+  "normal_shared_assumption_counterexample": {
+    "C": "(P->R)andP",
+    "normal_N2_proof": "Use same x:C to project first P->R and second P, then implication elimination yields R; no introduction/ex-falso/permutation detour.",
+    "source_proposed_transform": "Replace first projection by x:(P->R). Unchanged minor still needs x:C; same label now conflicts with different formulas. Deleting C from context would claim R from P->R alone.",
+    "valuation": "P=false,R=false makes P->R true but R false, so claimed reduced-context proof cannot be correct.",
+    "scope": "Both conjunction and implication whole-context replacement proposals require actual origin bookkeeping; diagrams retained as source proposals, application of induction made conditional on a correct reduced proof. No new general constructor or fresh-label hypothesis invented."
+  },
+  "zero_fragment_counterexample": "Let main axiom be x:((P and Q)->R), minor derive P and Q by introduction from y:P,z:Q. Final implication elimination is last; minordelta1 has one inference, continuationdelta2 zero.",
+  "subformula_reconciliation": {
+    "canonical_source_issue_id": "OLCMP-169",
+    "alias": "OLCMP-184",
+    "new_unique_upstream_error": false,
+    "counterexample": "Normal projection P from open P and Q uses that assumption, not a subformula of resultP. Universal elimination also needs instantiated subformula meaning.",
+    "bottom_mapping": "Normal negation elimination concludes bottom while G2 sequent translation uses an empty succedent; not every ND formula literally occurs in G2."
+  },
+  "classical_scope": "General stated theorem retained; shown nondischarging branch argument only intuitionistic. Classical falsity discharges assumptions and is not analyzed in the supplied cases.",
+  "009_reverification": "Full lemma assumes lambda definability, not primitive recursiveness; original correction retained without a new defect count.",
+  "unresolved": [
+    "General strict partial minimization proof not supplied",
+    "General normal-proof branch rewrite/source classical proof scope not fully repaired",
+    "Full722 reader, EPUB, audit/localization and verified final release unfinished"
+  ],
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T10:16:16.070736+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "actually_read_scope": "entire actual source/old and complete draft target",
+      "sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "actually_read_scope": "entire actual source/old and complete draft target",
+      "sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "actually_read_scope": "entire actual source; no-normal-form contract",
+      "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "actually_read_scope": "entire actual source; D and K pair selector",
+      "sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/fixed-point-combinator.tex",
+      "actually_read_scope": "entire actual source; Curry and Turing fixed-point reductions",
+      "sha256": "632b1f356b9a9b2147e82bc3b39a3442220ab78ffbede6baa28390cf1b759327"
+    },
+    {
+      "source_path": "content/computability/recursive-functions/partial-functions.tex",
+      "actually_read_scope": "actual lines12–83; strict partial composition/recursion and minimization prefix definedness",
+      "sha256": "a30626b08ef610b2da04defc5b41f53ff48c62da6a30587a048278625d5f318d"
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "actually_read_scope": "actual lines16–42 and173–196; major premises and compatible discharge labels",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56"
+    },
+    {
+      "source_path": "content/proof-theory/normalization/introduction.tex",
+      "actually_read_scope": "actual normalization/system lines41–58 and existing169 complete action record",
+      "sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

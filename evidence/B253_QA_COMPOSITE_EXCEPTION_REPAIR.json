@@ -1,0 +1,61 @@
+{
+  "schema": "ps-exact-composite-math-exception-repair/1",
+  "utc": "2026-10-01T10:19:24.575129+00:00",
+  "status": "record packaging corrected; dualQA rerun pending",
+  "unit_id": "OLP-0678",
+  "member_ids": [
+    "OLCMP-180",
+    "OLCMP-182"
+  ],
+  "before": {
+    "OLCMP-180": {
+      "source_only": [
+        "$\\delta'$",
+        "$x:!D,\\Gamma_1\\Sequent!A$"
+      ],
+      "target_only": [
+        "$\\delta_1$",
+        "$!D,\\Gamma_1'\\Sequent!A$"
+      ]
+    },
+    "OLCMP-182": {
+      "source_only": [
+        "$\\delta_1$",
+        "$\\Gamma_1\\Sequent!D$",
+        "$!E,\\Gamma_1'\\Sequent!A$"
+      ],
+      "target_only": [
+        "$\\delta_2$",
+        "$\\Gamma_1'\\Sequent!D$",
+        "$!E,\\Gamma_2'\\Sequent!A$"
+      ]
+    }
+  },
+  "after": {
+    "OLCMP-180": {
+      "source_only": [
+        "$\\delta'$",
+        "$x:!D,\\Gamma_1\\Sequent!A$",
+        "$\\Gamma_1\\Sequent!D$",
+        "$!E,\\Gamma_1'\\Sequent!A$"
+      ],
+      "target_only": [
+        "$!D,\\Gamma_1'\\Sequent!A$",
+        "$\\delta_2$",
+        "$\\Gamma_1'\\Sequent!D$",
+        "$!E,\\Gamma_2'\\Sequent!A$"
+      ]
+    },
+    "OLCMP-182": {
+      "source_only": [],
+      "target_only": []
+    }
+  },
+  "reason": "Two exact different changes cancel delta1 in file-wide multiset. Existing unchangedQA compares net differences, while initial records exposed both intermediate delta1 occurrences. The exact combined exception is bound once to180, with182 explicitly a member. No source/target formula, semantic decision or validator changed.",
+  "failed_qa_sha256": "b2d2095d46c6b4cd5e801e39d30877d66b26fef3a36507d409fc6800b40fcd16",
+  "generic_helper_repair_sha256": "24e745c8ebcd55392e5bbb43a81297a9e15342883dc60ba2f83c1d96f00bfb57",
+  "target_unchanged": true,
+  "qa_validator_changed": false,
+  "all13_diagrams_unchanged": true,
+  "next_action": "BothQA then canonical replay/accept678; full722active."
+}

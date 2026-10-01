@@ -1,0 +1,385 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{tr}
+
+\olsection{د عادي \Log{N2i}-\usetoken{P}{proof} او \Log{G2i} تر منځ اړول}
+
+په \Log{N2i} کښې !!^{proof}s په \Log{G2i} کښې
+!!{proof}s ته اړولے شو او برعکس هم۔ لومړے، د بې‌پرېکونه
+\Log{G2i} !!{proof}s اړول عادي \Log{N2i}-!!{proof}s ورکوي۔
+\textbf{د سرچينه‌يي نوم سمون OLCMP-177:} دلته کاپي شوے
+نيمګړے نظام نوم د همدغه حدسي سيکوېنټ نظام په بشپړ نوم بدل شو۔
+
+د دې نتيجې د بيانولو دپاره لږ اصطلاحي تيارے پکار دے، څو
+په~\Log{N2i} او~\Log{G2i} کښې د سيکوېنټونو کيڼ سياقونه په
+اسانۍ سره ونښلوو۔ د نښه لرونکو !!{formula}s سېټ~$\Gamma'$
+له بې‌نښو !!{formula}s د څوګوني سېټ~$\Gamma$ سره
+\emph{مطابقت لري} که د هر !!{formula}~$!A$ دپاره په~$\Gamma'$
+کښې د $x : !A$ په بڼه د !!{element}s شمېر په~$\Gamma$ کښې
+د~$!A$ له تکراري شمېر څخه کم يا ورسره برابر وي۔
+
+\begin{cor}
+که بې‌پرېکونه $\Log{G2i} \Proves \Gamma \Sequent \Delta$
+وي، نو د $\Gamma' \Sequent !C$ يو عادي
+\Log{N2i}-!!{proof}~$\delta$ شته، چې دلته د پايلې فارمول
+د مخکني حکم د ښي اړخ يوازنے فارمول، او په تش ښي اړخ کښې
+د دروغو فارمول دے۔ د نښه لرونکو !!{formula}s سېټ~$\Gamma'$
+له څوګوني سېټ~$\Gamma$ سره مطابقت لري: يعنې د هر
+!!{formula}~$!A$ دپاره په~$\Gamma'$ کښې د $x : !A$ په بڼه
+د !!{element}s شمېر په~$\Gamma$ کښې د~$!A$ له تکراري شمېر،
+يعنې د~$!A$ د نقلونو له شمېر، څخه کم يا ورسره برابر وي۔
+\textbf{د سرچينه‌يي حد سمون OLCMP-178:} د لاندې کتنې
+بې‌پرېکونه حد او د ښي اړخ د پايلې پېژندنه واضح دي؛ د کاپي
+شوې کلاسيکي بڼې پر ځاے هماغه حدسي طبيعي استنتاج نوم کارېږي۔
+\end{cor}
+
+\begin{proof}
+د \olref[nat][tgi]{prop:G2i-to-N2i} د ثبوت په کتنه: د
+!!{proof}s په پاے کښې !!{introduction} قواعد ورزياتوو، او
+!!{elimination} قواعد يوازې د !!{proof}s په پاسنۍ برخه کښې
+ورزياتوو۔ نو هېڅکله !!{introduction} قاعده د
+!!a{elimination} قاعدې د پاسه نۀ راولو۔
+\end{proof}
+
+خو په \olref[nat][tgi]{prop:G2i-to-N2i} کښې د \Cut{} قاعدې
+ورکړل شوے اړول په \Log{N2i}-!!{proof}~$\delta$ کښې
+پرېکونونه پيدا کولے شي۔ که \Log{G2i} !!{proof} په~\Cut{}
+پاے ته رسېږي او نږدې فرعي !!{proof}s ئې $\pi_1$ او $\pi_2$
+په ترتيب سره $\Gamma_1 \Sequent !A$ او
+$!A, \Gamma_2 \Sequent \Delta_2$ ثابتوي، نو د~$\pi_1$
+اړول شوے $\delta_1$ د~$\pi_2$ په اړول شوي~$\delta_2$ کښې
+د $x:!A \Sequent !A$ بديهيتونو پر ځاے پېوندول کېږي۔ که
+$\delta_1$ د !!a{introduction} په قاعده پاے ته رسېږي چې
+اصلي !!{formula} ئې~$!A$ دے، او په~$\delta_2$ کښې بديهيت
+$x:!A \Sequent !A$ د !!a{elimination} قاعدې لويه مقدمه
+وي، په~$\delta$ کښې پرېکون پيدا کېږي۔
+
+په \Log{N2i} کښې !!{proof}s په~\Log{G2i} کښې
+!!{proof}s ته هم اړولے شو۔ د \olref[nat][tni]{prop:N2-to-G2}
+په ثبوت کښې د \Elim{\land}، \Elim{\lif}، \Elim{\lnot}
+او \Elim{\lforall} اړول په حاصل شوي \Log{G2i} !!{proof}
+کښې~\Cut{} استنتاجونه راولي۔ خو که هغه \Log{N2i}-!!{proof}
+چې ترې پيل کوو عادي وي، د دې مخنيوے کېدے شي۔
+\textbf{د سرچينه‌يي شرط سمون OLCMP-179:} په نيمګړې جمله
+کښې د عادي والي شرط پاتې و؛ د راتلونکې قضیې هماغه شرط
+واضح شو۔
+
+په \Log{N2i}-!!{proof}~$\delta$ کښې د سيکوېنټ د
+موردونو لړۍ $S_1$، \dots،~$S_n$ \emph{څانګه} بولو که
+$S_1$ بديهيت وي، او هر وخت چې $S_i$ د استنتاج لويه مقدمه
+وي، $S_{i+1}$ ئې پايله وي۔ په بله وينا، څانګه په~$\delta$
+کښې له بديهيتونو سيکوېنټونه لاندې تعقيبوي، خو د
+!!{elimination} قواعدو پر کوچنيو مقدمو درېږي۔ د~$\delta$
+\emph{اصلي څانګه} هغه څانګه ده چې $S_n$ ئې پاييز سيکوېنټ
+وي۔ هر !!{proof}~$\delta$ لږ تر لږه يوه اصلي څانګه لري،
+ځکه هره قاعده لږ تر لږه يوه لويه مقدمه لري؛ يوازې
+\Intro{\land} دوه لويې مقدمې لري۔
+
+\begin{prop}\ollabel{prop:normal-N2i-to-G2i}
+که $\delta$ د~$\Gamma \Sequent !A$ عادي $\Log{N2c}$ يا
+$\Log{N2i}$-!!{proof} وي، نو د $\Gamma' \Sequent \Delta$
+بې‌پرېکونه $\Log{G2c}$-!!{proof}، يا په ترتيب سره
+$\Log{G2i}$-!!{proof}~$\pi$، شته۔ دلته $\Gamma'$ هغه
+د !!{formula}s څوګونے سېټ دے چې له $\Gamma$ څخه د نښو په
+لرې کولو حاصلېږي؛ که $!A$~د~$\lfalse$ فارمول نۀ وي،
+$\Delta = \{!A\}$، او که وي، $\Delta = \emptyset$ دے۔
+\textbf{د سرچينې د ثبوت د حد څرګندونه OLCMP-183:} عمومي
+قضيه عين ساتل شوې؛ لاندې اصلي څانګه‌يي دليل د حدسي حالت
+دپاره دے۔ کلاسيکي د دروغو قاعده هم فرضونه باسي، نو د
+فرضونو د نۀ ايستلو لاندې کتنه پرې نۀ تطبيقېږي۔ جلا کلاسيکي
+حالت دلته نۀ دے ثابت شوے۔
+\end{prop}
+
+\begin{proof}
+دا ځل استقرا د $\Gamma \Sequent !A$ په !!{proof}~$\delta$
+کښې د استنتاجونو پر شمېر کوو۔ که په~$\delta$ کښې استنتاج
+نۀ وي، دا بديهيت $x:!A \Sequent !A$ دے، او $\pi$ اړوند
+بديهيت $!A \Sequent !A$ دے، يا که $!A \ident \lfalse$
+وي، $\lfalse \Sequent \ $ دے۔
+
+که $\delta$ په استنتاجي قاعده پاے ته رسېږي، حالتونه بېلوو:
+\begin{enumerate}
+  \item که $R$ د !!a{introduction} قاعده يا~\FalseInt وي،
+  اړول کټ مټ د \olref[nat][tni]{prop:N2-to-G2} د ثبوت په
+  شان کېږي او~\Cut ته اړتيا نۀ لري۔
+
+  که د~$\delta$ وروستۍ قاعده~$R$ د !!a{elimination}
+  قاعده وي، لاندې خبرې وګورئ:
+  \begin{enumerate}
+    \item د~$\delta$ له اصلي څانګې هېڅ !!{introduction}
+    قاعده نۀ تېرېږي؛ کنه د اصلي څانګې په اوږدو کښې به د
+    !!a{introduction} قاعدې يا~\FalseInt{} ورپسې
+    !!a{elimination} قاعده راتله، او $\delta$ به عادي نۀ و۔
+    \item ځکه د~$\delta$ په اصلي څانګو کښې
+    !!{introduction} قاعدې نشته، يوازې يوه اصلي څانګه ده۔
+    يوازې \Intro{\land} دوه لويې مقدمې لري، نو څو اصلي
+    څانګې به د \Intro{\land} قاعدې له مقدمو تېرېدې۔
+    \item که په اصلي څانګه کښې د \Elim{\lor} يا
+    \Elim{\lexists} لويه مقدمه وي، داسې قاعده يوازې يوه ده
+    او همدا وروستۍ، يعنې~$R$ ده۔ کنه په اصلي څانګه کښې به
+    داسې \Elim{\lor} يا \Elim{\lexists} قاعده وه چې پايله
+    ئې د !!a{elimination} قاعدې لويه مقدمه وي؛ نو ثبوت به
+    عادي نۀ و، ځکه د ځاے بدلولو بدلون به تطبيقېده۔
+    \item له \Elim{\lor} او \Elim{\lexists} پرته نور
+    !!{elimination} قواعد فرضونه نۀ باسي، يعنې د سيکوېنټ
+    کيڼ سياق نۀ کموي۔ \Elim{\lor} او \Elim{\lexists}
+    يوازې د کوچنۍ مقدمې د پاسه فرضونه باسي، يعنې يوازې د
+    خپلو کوچنيو مقدمو کيڼ سياقونه کموي۔ نو که د~$\delta$
+    په اصلي څانګه کښې سيکوېنټ $S_i$ سياق~$\Gamma_1$ ولري،
+    د هغه استنتاج پايله~$S_{i+1}$ چې $S_i$ ئې لويه مقدمه
+    ده، سياق $\Gamma_1' \supseteq \Gamma_1$ لري۔
+    \item له دې امله، که $x: !C \Sequent !C$ د اصلي
+    څانګې تر ټولو پاسنے سيکوېنټ~$S_1$ وي، نو
+    $x:!C \in \Gamma$ دے۔
+  \end{enumerate}
+  اوس د~$!C$ د بڼې له مخې حالتونه بېلوو۔ ځکه په اصلي
+  څانګه کښې هر $S_i$ د !!a{elimination} قاعدې لويه مقدمه
+  ده، دا خبره پر $x:!C \Sequent !C$ هم تطبيقېږي۔
+
+  \item $!C \ident !D \land !E$۔ بيا $\delta$ دا بڼه لري:
+\[
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  په اصلي څانګه کښې $x:!D \land !E \Sequent !D$ راځي۔
+  هلته د \Intro{\lif} يا \Intro{\lnot} لويه مقدمه، يا د
+  \Elim{\lor} يا \Elim{\lexists} کوچنۍ مقدمه نشته؛ نو
+  د $x:!D \land !E$ د سياق !!{formula}s د اصلي څانګې په
+  اوږدو کښې پاتې کېږي، که څۀ هم له کوچنيو څانګو نور فرضونه
+  ورزياتېدې شي۔ له همدې امله پاييز سياق~$x:!D \land !E$
+  لري۔ سرچينه وړانديز کوي چې !!{proof} $\delta$ په
+  !!{proof}~$\delta_1$ داسې بدل کړو: په \Elim{\land}
+  پاے ته رسېدونکے فرعي !!{proof} په $x:!D \Sequent !D$
+  بدل کړو او د اصلي څانګې د هر سيکوېنټ په سياق کښې
+  $x:!D \land !E$ په $x:!D$ بدل کړو، يعنې دا بدلون:
+\[
+  \bottomAlignProof
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \quad\text{په دې}\quad
+  \bottomAlignProof
+  \Axiom$x:!D \fCenter !D$
+  \Deduce$x:!D, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  که وړانديز شوے بدلون صحيح فرعي ثبوت راکړي، د استقرا
+  فرضيه پر $\delta_1$ تطبيقېږي، ځکه په $\delta$
+  کښې د استنتاجونو شمېر په $\delta_1$ کښې له شمېر څخه
+  په~$1$ زيات دے۔
+  \textbf{د سرچينه‌يي نوم سمون OLCMP-180:} د کم شوي
+  فرعي ثبوت ناتعريف پرېم لرونکے نوم د هماغه تعريف شوي
+  لومړي فرعي ثبوت په نوم بدل شو۔
+  \textbf{د سرچينه‌يي جوړونې د حد څرګندونه OLCMP-181:}
+  د سياق ټول غړي ضرور عين نۀ پاتې کېږي؛ کوچنۍ څانګې ئې
+  زياتولے شي۔ پاسنے عمومي بدلون هغه وخت بې‌نورې کتنې صحيح
+  نۀ دے چې هماغه پخوانے نښه لرونکے فرض په کوچنۍ څانګه کښې
+  هم استعمالېږي: د نوې مقدمې فارمول له هماغې نښې سره ټکر
+  کوي، يا د اړين پخواني فرض د حذفېدو خطر شته۔ رسمي رسم
+  د سرچينې وړانديز دے، د دې عمومي حالت بشپړ سم ثبوت نۀ دے
+  تاييد شوے۔
+
+  د استقرا د فرضيې له مخې، د $!D, \Gamma_1' \Sequent !A$
+  يو \Log{G2i}-!!{proof} $\pi_1$ شته۔
+  د \LeftR{\land} په تطبيق !!{proof}~$\pi$ اخلو:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  که $!A \ident \lfalse$ وي، \RightR{\Weakening}
+  ورزياتوو، مثلاً:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  \item که $!C \ident !D \lor !E$ وي، ضرور د
+  \Elim{\lor} لويه مقدمه ده او دا استنتاج په اصلي څانګه
+  کښې وروستے استنتاج~$R$ دے۔ يعنې $\delta$ دا بڼه لري:
+\[
+  \Axiom$x:!D \lor !E \fCenter !D \lor !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$y:!D, \Gamma_1 \fCenter!A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$z:!E, \Gamma_2 \fCenter !A$
+  \RightLabel{\Elim{\lor}}
+  \TrinaryInf$x:!D \lor !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  د استقرا فرضيه پر !!{proof}s $\delta_1$ او $\delta_2$
+  تطبيقېږي؛ د $!D, \Gamma_1' \Sequent !A$ او
+  $!E, \Gamma_2' \Sequent !A$ دپاره \Log{G2i}-!!{proof}s
+  $\pi_1$ او $\pi_2$ اخلو۔ د~$\pi$ د ترلاسه کولو دپاره
+  $\LeftR{\lor}$ تطبيقوو:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  که $\Elim{\lor}$ فرض $y: !D$ يا $z: !E$ نۀ باسي، يعنې
+  د کوچنيو مقدمو په سياق کښې دا فرضونه نۀ وي، يا که~$!A$
+  د~$\lfalse$ فارمول وي، بايد ځينې \LeftR{\Weakening}
+  او \RightR{\Weakening} ورزياتې کړو، مثلاً:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!D, \Gamma_1' \fCenter $
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  \textbf{د سرچينه‌يي سياق سمون OLCMP-180:} د لومړي
+  حدسي سيکوېنټ ثبوت په نثر کښې هم بې‌نښو فارمولونو او
+  اړوند پرېم لرونکي څوګوني سياق سره ليکل شو، لکه اصلي رسم۔
+
+  \item $!C \ident !D \lif !E$۔ بيا $\delta$ دا بڼه لري:
+\[
+  \Axiom$x:!D \lif !E \fCenter !D \lif !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter!D$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  پام وکړئ چې په اصلي څانګه کښې $x:!D \lif !E,
+  \Gamma_1 \Sequent !E$ راځي؛ د \Intro{\lif} يا
+  \Intro{\lnot} لويه مقدمه، يا د \Elim{\lor} يا
+  \Elim{\lexists} کوچنۍ مقدمه نۀ لري۔ نو د
+  $x:!D \lif !E, \Gamma_1$ د سياق !!{formula}s د اصلي
+  څانګې په اوږدو کښې پاتې کېږي؛ نور فرضونه ورزياتېدې شي۔
+  له دې امله پاييز سياق~$x:!D \lif !E, \Gamma_1$ لري۔
+  سرچينه وړانديز کوي چې د !!{proof} ټوټه $\delta_2$ په
+  صحيح !!{proof}~$\delta_2'$ داسې بدله شي: په
+  \Elim{\lif} پاے ته رسېدونکے فرعي !!{proof} په
+  $x:!E \Sequent !E$ بدل شي او د اصلي څانګې د هر سيکوېنټ
+  په سياق کښې $x:!D \lif !E, \Gamma_1$ په $x:!E$
+  بدل شي، يعنې:
+\[
+  \bottomAlignProof
+  \Axiom$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \quad\text{په دې}\quad
+  \bottomAlignProof
+  \Axiom$x:!E \fCenter !E$
+  \RightLabel{$\delta_2'$}
+  \Deduce$x:!E, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  که وړانديز شوے بدلون صحيح فرعي ثبوت راکړي، د استقرا
+  فرضيه پر $\delta_1$ او $\delta_2'$ تطبيقېږي،
+  ځکه په $\delta$ کښې د استنتاجونو شمېر په $\delta_1$ او
+  ~$\delta_2$ کښې د استنتاجونو د شمېرونو مجموعه ده، او
+  ~$1$ د اصلي څانګې په پيل کښې د \Elim{\lif} استنتاج
+  دپاره ورسره زياتېږي۔ که همدغه استنتاج په $\delta$ کښې
+  وروستے استنتاج~$R$ هم وي، نو $\delta_2$ د $0$
+  استنتاجونو ټوټه ده۔
+  \textbf{د سرچينه‌يي شمېر سمون OLCMP-182:} په وروستي
+  استنتاج کښې بې‌استنتاجه پاتې ټوټه دويمه ده؛ کوچنۍ مقدمه
+  ضرور بې‌استنتاجه نۀ وي۔ د پخوانيو فرضونو د حذفولو
+  OLCMP-181 حد په دې وړانديز هم تطبيقېږي۔
+
+  د استقرا د فرضيې له مخې، د $\Gamma_1' \Sequent !D$
+  او $!E, \Gamma_2' \Sequent !A$ دپاره په ترتيب سره
+  \Log{G2i}-!!{proof}s $\pi_1$ او $\pi_2$ شته۔
+  د \LeftR{\lif} په تطبيق !!{proof}~$\pi$ اخلو:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  که $!D$ د دروغو فارمول وي، او/يا $!A \ident \lfalse$
+  وي، يو يا دوه \RightR{\Weakening} ورزياتوو، مثلاً:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  \textbf{د سرچينه‌يي سياق سمون OLCMP-182:} په نثر کښې
+  د لومړي ثبوت سياق پرېم لري او د دويم ثبوت سياق د دويمې
+  ټوټې دے، لکه په دواړو اصلي رسمونو کښې۔
+
+\end{enumerate}
+پاتې حالتونه په ورته طريقه څېړل کېږي او د مشقونو په توګه
+پرېښودل شوي دي۔
+\end{proof}
+
+\begin{cor}
+په عادي \Log{N1i} يا \Log{N2i}-!!{proof} کښې هر راغلے
+!!{formula} د پاييز !!{formula} يا د پاتې پرانيستو فرضونو
+فرعي‌!!{formula}، يا د پاييز سيکوېنټ اړوند فرعي فارمول دے؛
+په لومړي ترتيب کښې اړوند کمي تعويضي موردونه هم مراد دي۔
+\textbf{د سرچينه‌يي حد سمون OLCMP-184، د OLCMP-169 تکراري مورد:}
+د طبيعي استنتاج يوازې وروستے فارمول بس نۀ دے؛ پاتې
+پرانيستي فرضونه او اړوند کمي موردونه هم په دې حد کښې راځي۔
+\end{cor}
+
+\begin{proof}
+د \olref{prop:normal-N2i-to-G2i} له مخې، هر عادي
+\Log{N2i}-!!{proof} په \Log{G2i}-!!{proof} اړولے شو۔ د
+ثبوت کتنه ښيي چې په \Log{N2i}-!!{proof} کښې هر راغلے
+!!{formula}، د دروغو د پايلې له استثنا سره، په
+\Log{G2i}-!!{proof} کښې هم راځي؛ د دروغو پايله دلته په
+تش ښي اړخ ښودل کېږي۔ \Log{G2i} د \Cut{} قاعده نۀ لري،
+نو د اړوند فرعي‌!!{formula} خاصيت لري۔ د اصلي جوړونې
+پورته څرګند شوي پاتې حالتونه د بشپړې کتنې ځاے نۀ نيسي۔
+\end{proof}
+
+\end{document}

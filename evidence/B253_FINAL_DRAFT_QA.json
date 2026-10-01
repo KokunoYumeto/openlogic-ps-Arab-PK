@@ -1,0 +1,113 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T10:16:16.070736+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0678",
+      "source_path": "content/proof-theory/normalization/translations.tex",
+      "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "source_bytes": 12978,
+      "target_sha256": "613d8a9b905c29ace1bc4827ec77d53cdef07f32d3c7da6c09db7aaaad7d7dc2",
+      "target_bytes": 19845,
+      "paired_blocks": 24,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_original_diagrams_byte_exact": true
+      },
+      "source_correction_ids": [
+        "OLCMP-177",
+        "OLCMP-178",
+        "OLCMP-179",
+        "OLCMP-180",
+        "OLCMP-181",
+        "OLCMP-182",
+        "OLCMP-183",
+        "OLCMP-184"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0355",
+      "source_path": "content/lambda-calculus/introduction/minimization.tex",
+      "source_sha256": "e0fbbc26c033f303410498fec8dd8dda3d610e0ced8df38d1de1189a8d590bf1",
+      "target_sha256_before": "5223a1afa5b27d57c6e9bc6e15f1fce713c615a5eb0a9de626dd963cbbdbe51a",
+      "target_sha256": "ff50fbe7f83c6d505f9f8a9c50b2e3b1e0605c052b5245830c887d75be4afef6",
+      "target_sha256_after": "ff50fbe7f83c6d505f9f8a9c50b2e3b1e0605c052b5245830c887d75be4afef6",
+      "target_bytes": 3983,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLSOL-023"
+      ],
+      "reverified_existing_source_ids": [
+        "OLLAM-009"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0678": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_original_diagrams_byte_exact": true
+    },
+    "OLP-0355": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 9,
+  "source_adjudication_sha256": "31568fb4f8ae4a265f84d82d1fd798fde24a0dbee0b33575339aea850b1a29d4",
+  "registration_helper_sha256": "bdf4092d289f49bc4a3518cda333868bdc8c84929a51545cb2ea27106a6df9fd",
+  "writer_spec_sha256": "8aa1b886f09a1c3ce9834e93782129dd6d4b1e20a99339791bb3754f4aa5d9b7"
+}
