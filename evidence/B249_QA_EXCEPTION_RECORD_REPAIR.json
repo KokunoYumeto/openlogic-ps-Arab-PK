@@ -1,0 +1,29 @@
+{
+  "schema": "ps-exact-qa-exception-record-repair/1",
+  "utc": "2026-10-01T08:24:05.126915+00:00",
+  "status": "PASS; one new record repaired to unchanged validator representation",
+  "issue_id": "OLCMP-171",
+  "previous_record": {
+    "source_only": [
+      "$!A \\ident !B \\lor !C$"
+    ],
+    "target_only": [
+      "$!A \\ident !B \\land !C$"
+    ]
+  },
+  "corrected_record": {
+    "source_only": [
+      "$!A\\ident!B\\lor!C$"
+    ],
+    "target_only": [
+      "$!A\\ident!B\\land!C$"
+    ]
+  },
+  "original_exact_source_fragment": "$!A \\ident !B \\lor !C$",
+  "original_exact_target_fragment": "$!A \\ident !B \\land !C$",
+  "first_primary_qa_sha256": "d27e85239c859eb9d316f3756dd224fc4937d6e5786096f9d5802fd6bf510141",
+  "first_public_qa_sha256": "6f5a4eeaa0de9d08c66365aba31471a0636860c0f8af9c4b1cbaa55652335d70",
+  "validation_code_changed": false,
+  "source_and_target_changed": false,
+  "scope": "Only whitespace-normalized keys of the exact new171 exception; original source/target fragments and all original12diagrams retained."
+}

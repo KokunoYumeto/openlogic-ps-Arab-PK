@@ -1,0 +1,83 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T08:34:58.904325+00:00",
+  "status": "د اوسني ۶۷۵ متن د جزوي ترکيب د ثبوت د حد سمون؛ منل او خپرونه پاتې دي۔",
+  "current_accepted_boundary": 675,
+  "repair_of_current_sources": true,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0675",
+      "source_path": "content/proof-theory/normalization/permutations.tex",
+      "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+      "source_bytes": 11943,
+      "target_sha256": "89730584d6192633fd5d2b2c151043456bba414cb3a8b7954e4d395981023436",
+      "target_bytes": 14076,
+      "paired_blocks": 18,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "checks": {
+        "ids_equal": true,
+        "structural_macros_equal": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "only_exact171_math_exception": true,
+        "math_per_source_block_exact_except171": true,
+        "all12_original_proof_diagrams_byte_exact": true,
+        "original_commented_table_byte_exact": true,
+        "all_three_original_unsolved_exercises_retained": true,
+        "topmost_selection_and_duplicated_minor_retained": true,
+        "native_adjacent_correction_disclosure": true
+      },
+      "source_correction_ids": [
+        "OLCMP-171"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "source_sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "target_sha256_before": "3036c8dad84440d63485e9dc555194664ebcc62a28dcbaffdcc8a58f3bcd3b01",
+      "target_sha256": "6b4815d224d1e1dfb318d3a82081ab66d12eafd28acfbb487519bb647ea2d19e",
+      "target_sha256_after": "6b4815d224d1e1dfb318d3a82081ab66d12eafd28acfbb487519bb647ea2d19e",
+      "target_bytes": 2141,
+      "paired_blocks": 7,
+      "source_correction_ids": [
+        "OLSOL-020"
+      ]
+    }
+  ],
+  "historical_batch_receipts": [
+    "B249"
+  ],
+  "previous_accepted_checkpoint_sha256": "73960ca809bb5739c792a54fccedee6cab6e72b5c5ce23428aeb7d4c42af85f6",
+  "new_source_correction_ids": [
+    "OLSOL-020"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLSOL-020"
+  ],
+  "new_term_ids": [],
+  "related_reaudit_receipt": "SOL6_REAUDIT_0352_DOMAIN_REPAIR.json",
+  "related_reaudit_sha256": "8835c378979d179c88f5d506a3b6fcff8163344135be1d62e9e2a84f7e61ec9f",
+  "focused_qa_sha256": "b464b50c82f2d4f159c5858b6c717756d4ed8b4ba9f320cde0d9f54f1d003cf7",
+  "model_provenance_sha256": "03dad0d3489ec9e68a756fc518c65b25d81677088b27ab1817e7ab56e15430ed",
+  "unresolved": "۴۷ واحدونه، د جزوي بازګښت د راتلونکي بشپړ ثبوت حد، بشپړه تجربوي برخه، EPUB، بشپړ چاپ او د پخواني ماډل ۲۵۷ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۷۵ اوسني متن دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، اوسنی سمون منل او يوه ګډه سرچينه‌يي خپرونه؛ بشپړ ۶۷۶ او بشپړه ۳۵۳ بياکتنه دوام۔"
+}

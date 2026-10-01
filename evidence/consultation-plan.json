@@ -1,6 +1,6 @@
 {
-  "batch_id": "PS-B248-NORMALIZATION-DRIVER-BASIC-FUNCTIONS",
-  "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "batch_id": "PS-B250-PARTIAL-COMPOSITION-DOMAIN-REPAIR",
+  "status": "د خپل تازه ثبت لازم سمون ثبت دے؛ دوه‌ګونې کتنه پاتې ده۔",
   "units": {
     "OLP-0001": {
       "batch_id": "PS-B002-FRONTMATTER",
@@ -9265,17 +9265,47 @@
       ]
     },
     "OLP-0352": {
-      "batch_id": "PS-B063-LAMBDA-DEFINABILITY",
+      "batch_id": "PS-B250-PARTIAL-COMPOSITION-DOMAIN-REPAIR",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
       ],
       "terms": [
         "TERM-LAMBDA-CHURCH-NUMERALS",
-        "TERM-COMPOSITION",
-        "TERM-PRIMITIVE-RECURSION"
+        "TERM-COMPOSITION"
       ],
-      "scope": "Composition of lambda-definable functions retains k inner functions, l arguments and their nesting order."
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-COMPOSITION"
+        ],
+        "5": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-COMPOSITION"
+        ],
+        "6": [
+          "TERM-LAMBDA-CHURCH-NUMERALS",
+          "TERM-COMPOSITION"
+        ]
+      },
+      "scope": "د لامبډا د تعريف په اصل کښې ناتعريف ننوت بې‌عادي‌بڼې ترم غواړي۔ د ترکيب ښودل شوې بڼه د داخلي ناتعريف ترم په غورځولو بيا هم صفر عددنښه ورکولے شي؛ نو د جزوي داخلي تابعو د ناتعريفه والي عمومي شرط نۀ ثابتوي۔ د ټولو تعريف شويو داخلي تابعو حالت سم دے، عمومي لمه عين او د اصل د ثبوت پاتې حد په څنګ کښې واضح دے؛ پخوانۍ خپلواکه کتنه دا حد له نظره تېر کړے و او اوس سمه شوې ده۔",
+      "allowed_residual_english": [
+        "OLSOL"
+      ]
     },
     "OLP-0353": {
       "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
@@ -20432,6 +20462,170 @@
       },
       "scope": "بشپړ باب سرليک او شپږ واردونې؛ لومړنۍ تابعې او د صفر پخوانے معتبر سمون بيا کتل شوي، نوی ثبوت يا عيب نۀ زياتېږي۔",
       "allowed_residual_english": []
+    },
+    "OLP-0675": {
+      "batch_id": "PS-B249-PERMUTATIONS-COMPOSITION",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P91-PROP-FUNCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+        "TERM-SEQUENT-RULES"
+      ],
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "6": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "7": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "8": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "9": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "10": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "11": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "13": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "14": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "15": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "16": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ],
+        "17": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P91-PROP-FUNCTION"
+        ]
+      },
+      "terms_by_block": {
+        "5": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "6": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "7": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "8": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "9": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "10": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "11": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "13": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "14": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "15": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "16": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "17": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-REGULAR-SUBSTITUTION",
+          "TERM-SEQUENT-RULES"
+        ]
+      },
+      "scope": "بشپړ اصل، درې مشقونه او دولس رسمونه ساتل شوي؛ ۱۷۱ يوازې د مقدمې د او/يا پېژندنه سموي؛ د نقلونو او ځانګړي متغير شرط عين دي۔ ترکيب بشپړ بياکتل شوے او ټول پخواني بايټونه عين دي۔"
     }
   },
   "semantic_review": [
@@ -39322,6 +39516,96 @@
       "passage": "OLP-0351-B008",
       "reverse_paraphrase": "د پروجيکشن ترم له n آرګومېنټونو iم آرګومېنټ ټاکي؛ له صفره پيل شوي ټول فرعي شمېرونه، د تړونونو ترتيب او اصلي معادله عين دي۔",
       "finding": "هر اصل او پخوانے بلاک بشپړ وکتل شو؛ د عنوان حد او صفر د ننوت تړون واضح، ټول نور رياضي عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B005",
+      "reverse_paraphrase": "د ځاے بدلولو بدلونونو بشپړ سرليک۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B006",
+      "reverse_paraphrase": "په N1i کښې له يو څخه اوږد پرېکون د يا يا موجود کميت د منځنۍ پايلې له لارې د ايستلو لويې مقدمې ته رسېږي؛ د تر ټولو لوړې رتبې د پرېکون د برخې اوږدوالے کمېږي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B007",
+      "reverse_paraphrase": "لومړي اصلي رسم کښې د يا ايستل د او مرکب ورکوي او بيا د او ايستل يوه برخه اخلي۔ ۱۷۱ يوازې د مقدمې ناسمه يا پېژندنه په او بدلوي؛ رسم عين دے، وروستے او تر هغې يو مخکې مورد هم واضح دي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B008",
+      "reverse_paraphrase": "د او ايستل دواړو کوچنيو څانګو ته د يا ايستلو د پاسه وړل کېږي؛ دويم رسم عين دے او د هر اړوند پرېکون اوږدوالے په يو کمېږي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B009",
+      "reverse_paraphrase": "په داخلي فرعي ثبوتونو او له بدلېدونکي فرعي ثبوت څخه بهر بشپړ پرتې برخې خپل فارمولونه، رتبه او اوږدوالے ساتي؛ ټول عمومي اندازې او پېژندونه عين دي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B010",
+      "reverse_paraphrase": "لومړنے اصلي مشق لږ تر لږه دوه کمښت، زيات کمښت او د رتبې د ټيټېدو پوښتنې ساتي؛ ځواب نۀ دے ورزيات شوے۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B011",
+      "reverse_paraphrase": "د يا يا موجود کميت د ايستلو د پاسه د بل ايستلو وړل د ځاے بدلولو بدلون دے؛ د رسمي جدول حواله او پاتې مشقونه عين دي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B013",
+      "reverse_paraphrase": "د اصلي جدول ټول اته رسمونه، ترتيب، څلور جوړې، فاصلې، پېژندونه او قاعدې عين دي؛ يوازې تشريحي سرليک ژباړلے دے، دوه يو شان اصلي جوړې نۀ دي حذف شوې۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B014",
+      "reverse_paraphrase": "دويم اصلي مشق د يا ايستل او ورپسې يا يا نفي ايستل ساتي؛ نوی جواب نۀ شته۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B015",
+      "reverse_paraphrase": "درېيم اصلي مشق موجود ايستل او ورپسې موجود ايستل او د ځانګړي متغير شرط ساتي؛ دواړه اصلي ماکرو بڼې عين دي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B016",
+      "reverse_paraphrase": "د وروستۍ بېلګې دواړه رسمي رسمونه عين دي۔ منظم اصل هر ځانګړے متغير د يوه استنتاج او يوازې د موجود ايستلو د کوچنۍ مقدمې د پاسه لري؛ له دې امله c په نورو دوو څانګو او د هغو په ايستل کېدونکو فرضونو کښې نۀ راځي او نوی شرط نۀ ماتېږي۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0675",
+      "passage": "OLP-0675-B017",
+      "reverse_paraphrase": "د پنځم فرعي ثبوت دوه نقلونه د تر ټولو لوړې رتبې د پرېکون د اوږدوالي کمښت خرابولے شي؛ تل پاسنے د تر ټولو لوړې رتبې پرېکون غوره کېږي، څو په ټولو پورته فرعي ثبوتونو کښې داسې نور پرېکونونه نۀ وي۔ دا لازم شرط په بشپړ ډول ساتل شوے دے۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "passage": "OLP-0352-B004",
+      "reverse_paraphrase": "لامبډا-تعريفېدونکې تابعې د ترکيب تر عمل لاندې تړلې دي؛ بشپړ سرليک عين دے۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "passage": "OLP-0352-B005",
+      "reverse_paraphrase": "د ترکيب تړلتيا بشپړه اصلي لمه ده، نوی شرط يا ثبوت نۀ دے زيات شوے۔",
+      "finding": "هر اصلي بلاک او ټول رسمي رسمونه بشپړ وکتل شول؛ د پېژندنې يو محدود سمون پرته ټول فارمولونه عين دي، نوی ځواب يا استدلال نۀ دے زيات شوے۔"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "passage": "OLP-0352-B006",
+      "reverse_paraphrase": "د لامبډا د تعريف په اصل کښې ناتعريف ننوت بې‌عادي‌بڼې ترم غواړي۔ د ترکيب ښودل شوې بڼه د داخلي ناتعريف ترم په غورځولو بيا هم صفر عددنښه ورکولے شي؛ نو د جزوي داخلي تابعو د ناتعريفه والي عمومي شرط نۀ ثابتوي۔ د ټولو تعريف شويو داخلي تابعو حالت سم دے، عمومي لمه عين او د اصل د ثبوت پاتې حد په څنګ کښې واضح دے؛ پخوانۍ خپلواکه کتنه دا حد له نظره تېر کړے و او اوس سمه شوې ده۔",
+      "finding": "د خپل تازه ثبت لازم سمون: د تعريف شويو ننوتونو بشپړ فورمول عين دے، د جزوي ناتعريفه والي د اثبات تشه په مستقيم مخالف مثال څرګنده شوه۔"
     }
   ]
 }

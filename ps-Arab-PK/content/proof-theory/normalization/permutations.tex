@@ -1,0 +1,429 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: permutations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{per}
+
+\olsection{د ځاے بدلولو بدلونونه}
+
+په \Log{N1i} کښې پرېکونونه هغه برخې دي چې د
+!!a{elimination} قاعدې په لويه مقدمه پاے ته رسېږي۔ د عادي کولو
+په ثبوت کښې يو حالت دا دے چې د تر ټولو لوړې رتبې د پرېکونونو
+او ورسره د !!{proof} د پرېکون اوږدوالے کم کړو۔ د $>1$ اوږدوالي
+پرېکون په بېلو طريقو پاے ته رسېدے شي: دا په دې اړه لري چې په
+پرېکون کښې د~$!A$ وروستے !!{formula} مورد د کومې قاعدې
+(\Elim{\lor} يا \Elim{\lexists}) پايله ده، او د کوم
+!!{elimination} استنتاج لويه مقدمه ده۔
+
+مثلاً، که اړوند استنتاجونه \Elim{\lor} او \Elim{\land}
+وي، $!A \ident !B \land !C$ وي او داسې فرعي
+!!{proof}~$\delta_1$ وي چې په لاندې رسم پاے ته رسېږي:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\]
+\textbf{د سرچينه‌يي پېژندنې سمون OLCMP-171:} دلته د پرېکون
+فارمول د او مرکب دے، نۀ د يا مرکب؛ د لويې مقدمې پېژندنه د دواړو
+اصلي رسمونو سره برابره شوه۔ خپله رسمونه عين ساتل شوي دي۔
+په پرېکون کښې وروستے !!{formula} مورد~$!A_n$ د~\Elim{\lor}
+پايله، يعنې لاندې $!B \land !C$ دے۔ له هغې يو مخکې
+!!{formula} مورد~$!A_{n-1}$ د~\Elim{\lor} له کوچنيو مقدمو
+څخه يوه ده۔
+
+د دې پرېکون د اوږدوالي کمولو دپاره د \Elim{\lor} او
+\Elim{\land} استنتاجونو ترتيب بدلولے، يعنې ``ځاے بدلولے'' شو۔
+په~$\delta$ کښې فرعي ثبوت~$\delta_1$ په لاندې رسم بدلوو:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\]
+هغه پرېکونونه چې د \Elim{\lor} لاندې د \Elim{\land} په
+مقدمه کښې ختمېدل، اوس د \Elim{\lor} د کوچنيو مقدمو د پاسه
+د يوه \Elim{\land} استنتاج په مقدمه کښې ختمېږي۔ يعنې د هر
+يو اوږدوالے په~$1$ کم شوے دے۔
+
+سربېره پر دې، هر هغه پرېکون چې بشپړ په $\delta_2$،
+$\delta_3$ يا $\delta_4$ کښې وي، يا په~$\delta$ کښې بشپړ له
+$\delta_1$ څخه بهر وي، نۀ بدلېږي: هماغه !!{formula}s رانغاړي
+او له هماغو استنتاجونو تېرېږي۔ نو په ځانګړي ډول د هغې رتبه
+او اوږدوالے په~$\delta$ کښې د اړوند پرېکون سره عين دي۔ له دې
+امله د نوي !!{proof} د پرېکون رتبه نۀ ده لوړه شوې او د نوي
+!!{proof} د پرېکون اوږدوالے د زاړه !!{proof} څخه کم دے۔
+
+\begin{prob}
+د ځاے بدلولو له بدلون وروسته لږ تر لږه د يوه پرېکون اوږدوالے
+په~$1$ کمېږي۔ که \Elim{\land} له يوه~\Elim{\lor} څخه تېر
+کړو، په حقيقت کښې د دوو پرېکون برخو اوږدوالے کمېږي؛ نو په دې
+حالت کښې د !!{proof} د پرېکون اوږدوالے لږ تر لږه په~$2$
+کمېږي۔ آيا يو داسې بدلون د !!a{proof} د پرېکون اوږدوالے له~$2$
+څخه زيات هم کمولے شي؟ آيا د پرېکون \emph{رتبه} هم ټيټېدې شي؟
+\end{prob}
+
+د \Elim{\lor} يا \Elim{\lexists} قاعدې د پاسه د
+!!a{elimination} قاعدې د وړلو عمل د \emph{ځاے بدلولو بدلون}
+بلل کېږي۔ د ځينو قاعده‌جوړو بڼې په
+\olref{tab:permutation-conversions} کښې ورکړې دي۔ پاتې بڼې
+د مشقونو په توګه پرېښودل شوې دي۔
+
+% \begin{table}
+% \begin{multline*}
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B(t)$}
+% \DisplayProof}
+% \end{multline*}
+% \caption{Some permutation conversions for \Log{N1i}.}
+% \ollabel{tab:permutation-conversions}
+% \end{table}
+
+{\small
+\begin{longtable}{@{}l@{}}
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad$\longrightarrow$\\[8ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B(t)$}
+\DisplayProof
+\\
+\caption{د \Log{N1i} د ځاے بدلولو ځينې بدلونونه۔}
+\ollabel{tab:permutation-conversions}
+\end{longtable}
+}
+
+\begin{prob}
+د \Elim{\lor} او ورپسې \Elim{\lor} يا \Elim{\lnot} د ځاے
+بدلولو بدلونونه ورکړئ۔
+\end{prob}
+
+\begin{prob}
+د \Elim{\lexists} او ورپسې \Elim{\exists} د ځاے بدلولو
+بدلونونه ورکړئ۔ ووايئ چې په وروستي حالت کښې ولې د ځانګړي
+متغير هېڅ شرط نۀ ماتېږي۔
+\end{prob}
+
+بايد ځان ډاډه کړو چې د ځاے بدلولو د بدلون په تطبيق سره
+د ځانګړي متغير کوم شرط نۀ ماتوو۔ دا رسم وګورئ:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+که دا په لاندې رسم بدل کړو:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\]
+اندېښنه کېدے شي چې ځانګړے متغير~$c$ مثلاً په~$!D$ کښې
+راشي۔ ځکه فرض $!D$ د اصلي~$\Elim{\lexists}$ د پاسه ايستل
+کېږي؛ نو په اصلي !!{proof} کښې دا د~\Elim{\exists} د لويې
+مقدمې د پاسه په کوم پرانيستي فرض کښې نۀ راځي او د ځانګړي
+متغير شرط هلته پوره دے۔ خو په نوي !!{proof} کښې $!D$~تر
+هغې نۀ ايستل کېږي چې د~\Elim{\lexists} استنتاجونه تېر شي؛
+نو د ځانګړي متغير شرط به مات شي۔ خو په ياد ولرئ چې زموږ
+!!{proof}s منظم فرض شوي دي: هر ځانګړے متغير يوازې د يوه
+استنتاج ځانګړے متغير دے او په !!{proof} کښې يوازې د
+\Elim{\lexists} د کوچنۍ مقدمې د پاسه راځي۔ په ځانګړي ډول،
+$c$~په $\delta_3$ يا~$\delta_4$ کښې نۀ شي راتلے۔
+
+دا مثال بله خبره هم ښيي: په نوي !!{proof} کښې
+د~$\delta_5$ دوه نقلونه شته۔ نو که $\delta_5$ د تر ټولو لوړې
+رتبې پرېکون ولري، د پرېکون اوږدوالے مو \emph{نۀ} دے کم
+کړے! ځکه بايد يوازې هغه وخت د ځاے بدلولو بدلون تطبيق کړو
+چې په $\delta_5$ کښې د تر ټولو لوړې رتبې پرېکون نۀ وي۔ دا
+د تل لپاره د تر ټولو \emph{پاسني} لوړې رتبې پرېکون په
+غوره کولو يقيني کوو۔ يعنې داسې د تر ټولو لوړې رتبې پرېکون
+غوره کوو چې فرعي !!{proof}، دلته~$\delta_1$، داسې بل د تر ټولو
+لوړې رتبې پرېکون نۀ لري چې د همدغه فرعي !!{proof} د وروستي
+استنتاج د پاسه ختمېږي۔ نو په~$\delta_5$
+کښې، او هم په $\delta_2$، $\delta_3$ يا~$\delta_4$ کښې،
+د نورو د تر ټولو لوړې رتبې پرېکونونو امکان له منځه ځي۔
+
+\end{document}

@@ -1,0 +1,62 @@
+{
+  "schema": "ps-next-scope-preaudit/1",
+  "utc": "2026-10-01T08:43:32.616804+00:00",
+  "status": "actual source/old353 target read; no676 draft or whole353 audit registered",
+  "units_read": [
+    {
+      "unit_id": "OLP-0676",
+      "source_path": "content/proof-theory/normalization/reductions.tex",
+      "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+      "source_bytes": 10081,
+      "actually_read_scope": "entire actual source",
+      "paired_source_blocks": 14
+    },
+    {
+      "unit_id": "OLP-0353",
+      "source_path": "content/lambda-calculus/introduction/primitive-recursion.tex",
+      "source_sha256": "04e8bc4bc52bc324158574551382bba00a369aeeda5fed708541e702746e4350",
+      "source_bytes": 5062,
+      "actually_read_scope": "entire actual source",
+      "paired_source_blocks": 15
+    }
+  ],
+  "confirmed_not_yet_registered": [
+    {
+      "unit_id": "OLP-0676",
+      "finding": "The implication example uses only delta2/delta3; the later unchanged-cut sentence additionally names undefined delta4, copied from the preceding permutation section. Exact limited editorial correction pending."
+    },
+    {
+      "unit_id": "OLP-0353",
+      "finding": "Five-line final-value derivation applies the pair induction hypothesis in its third line, not the source stated second-to-last (fourth) line. Original formal derivation can be retained; locator wording pending."
+    }
+  ],
+  "candidates_requiring_next_adjudication": [
+    {
+      "unit_id": "OLP-0676",
+      "finding": "Actual663 locator was incorrect: grafting is662. Full662 and133 independently reread. Source133 already gives compatible-label counterexample where inserted same-formula assumptions are discharged; no new fresh-label hypothesis is to be invented. In676 qualify exact open-assumption equality and the claim no x-labelled assumptions remain by actual leaf origins, including vacuous-discharge loss; reapply canonical133 mechanism without inflating distinct defects."
+    },
+    {
+      "unit_id": "OLP-0353",
+      "finding": "Partial recursion source constructor with base G=Omega and step H(n,v)=num0 can return num0 at stage1 despite undefined base. Same undefinedness mechanism as020, full353 existing005–008 and primitive recursion definitions must be revalidated; no new strict construction invented."
+    },
+    {
+      "unit_id": "OLP-0353",
+      "finding": "Transition T uses S whereas preceding basic section names Succ; verify the actual macro/context before treating this as an undefined-name defect."
+    }
+  ],
+  "existing353_corrections_to_reverify": [
+    "OLLAM-005",
+    "OLLAM-006",
+    "OLLAM-007",
+    "OLLAM-008"
+  ],
+  "whole353_completed": false,
+  "new_source_issue_ids_registered": [],
+  "next_action": "Finish corrected current675 acceptance/publication, then full676 translation and full353 source/target/canon audit; full722 active.",
+  "next_primary_context_read": {
+    "unit_id": "OLP-0662",
+    "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+    "sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+    "read_scope": "entire actual source and actual OLCMP-133 correction record"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T08:34:58.904325+00:00",
+  "status": "د بشپړې پخوانۍ بياکتنې د اثبات د حد لازم سمون؛ ناتعريفه والي شرط اوس څرګند، ټول فارمولونه عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "source_sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "target_sha256_before": "3036c8dad84440d63485e9dc555194664ebcc62a28dcbaffdcc8a58f3bcd3b01",
+      "target_sha256": "6b4815d224d1e1dfb318d3a82081ab66d12eafd28acfbb487519bb647ea2d19e",
+      "target_sha256_after": "6b4815d224d1e1dfb318d3a82081ab66d12eafd28acfbb487519bb647ea2d19e",
+      "target_bytes": 2141,
+      "paired_blocks": 7,
+      "source_correction_ids": [
+        "OLSOL-020"
+      ],
+      "translated_blocks_reviewed": 3,
+      "target_retained_unchanged": false,
+      "all_prior_math_bytes_retained": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "همدا اصلي مخونه د دې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "افغان ۳۷ او ۳۹ ثبوت او قواعد، ۹۱ پرانيستي متغيرونه او مجاز تعويض، ۱۴۷ ابتدايي تابعې او ترکيب ښيي؛ د ځانګړي متغير او ځاے بدلولو عين پاکستاني مرکب مستقل تصديق نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "همدا اصلي مخونه د دې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے علمي نثر لومړنے، افغان رياضي سيمه‌ييز شاهد دے۔",
+      "evidence_limit": "افغان ۳۷ او ۳۹ ثبوت او قواعد، ۹۱ پرانيستي متغيرونه او مجاز تعويض، ۱۴۷ ابتدايي تابعې او ترکيب ښيي؛ د ځانګړي متغير او ځاے بدلولو عين پاکستاني مرکب مستقل تصديق نۀ لري۔"
+    }
+  ],
+  "segment_entries_added": 3,
+  "new_source_correction_ids": [
+    "OLSOL-020"
+  ],
+  "wording_choice_ids": [],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0352_B250_DOMAIN_REPAIR.jsonl",
+  "whole_unit_segment_snapshot_sha256": "b4e4e9ca6769e962e86694948d0c8b519c03c671e46de85deddd4fa5e9012be8",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د ۶۷۵ اوسني متن سمون، بيا بشپړ OLP-0676 او OLP-0353 دوام؛ ټول ۷۲۲ فعال دي۔",
+  "previous_immutable_receipt": "SOL6_REAUDIT_0352.json",
+  "previous_receipt_sha256": "7290002367d040915dd3a79966b3e86b33f790560f56eee3d4e3fae81e4a1abf",
+  "counterexample_receipt": "B250_PARTIAL_DOMAIN_COUNTEREXAMPLE.json",
+  "counterexample_receipt_sha256": "f428912f416826e9cec17a5bcab373cb3186f2b188907dc9b7fa2295571c4d31"
+}

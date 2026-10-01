@@ -1,0 +1,39 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T08:21:48.516269+00:00",
+  "unit_id": "OLP-0675",
+  "status": "complete675 permutations and whole352 reviewed; dualQA/acceptance pending",
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0675",
+      "source_path": "content/proof-theory/normalization/permutations.tex",
+      "sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+      "actually_read_scope": "entire actual source and target"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "actually_read_scope": "entire actual source and target"
+    },
+    {
+      "source_path": "content/proof-theory/normalization/segments.tex",
+      "sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+      "actually_read_scope": "entire actual source; definition of maximal rank and sum of maximal segment lengths"
+    }
+  ],
+  "source_proof_trees": 12,
+  "paired_source_blocks": 18,
+  "candidates": [
+    {
+      "id": "OLCMP-171",
+      "reporting_lane": "source_erratum_medium",
+      "exact_source_fragment": "$!A \\ident !B \\lor !C$",
+      "exact_target_fragment": "$!A \\ident !B \\land !C$",
+      "reason": "د مقدمې د فارمول پېژندنه په اصلي نثر کښې د يا مرکب ښودل شوې، خو په لومړي او بدلېدلي رسم کښې د پرېکون فارمول د او مرکب دے؛ د او ايستل همدغه لويه مقدمه غواړي۔ يوازې د نثر يو رابط بدل شو، ټول دولس رسمي رسمونه عين دي۔"
+    }
+  ],
+  "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+  "target_sha256": "89730584d6192633fd5d2b2c151043456bba414cb3a8b7954e4d395981023436",
+  "next_action": "DualQA/replay/accept675; continue complete676 and whole353, full722 active."
+}

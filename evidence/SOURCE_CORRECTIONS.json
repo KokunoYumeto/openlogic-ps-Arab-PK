@@ -23119,6 +23119,91 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-171",
+      "unit_id": "OLP-0675",
+      "classification": "permutation-example-conjunction-misidentified-as-disjunction",
+      "source_path": "content/proof-theory/normalization/permutations.tex",
+      "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+      "source_line_1based": 21,
+      "source_locator": "content/proof-theory/normalization/permutations.tex:21–46",
+      "target_path": "ps-Arab-PK/content/proof-theory/normalization/permutations.tex",
+      "target_line_1based": 22,
+      "target_sha256": "89730584d6192633fd5d2b2c151043456bba414cb3a8b7954e4d395981023436",
+      "exact_source_fragment": "$!A \\ident !B \\lor !C$",
+      "exact_target_fragment": "$!A \\ident !B \\land !C$",
+      "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
+      "reason": "د مقدمې د فارمول پېژندنه په اصلي نثر کښې د يا مرکب ښودل شوې، خو په لومړي او بدلېدلي رسم کښې د پرېکون فارمول د او مرکب دے؛ د او ايستل همدغه لويه مقدمه غواړي۔ يوازې د نثر يو رابط بدل شو، ټول دولس رسمي رسمونه عين دي۔",
+      "translation_change": "د مقدمې د فارمول پېژندنه په اصلي نثر کښې د يا مرکب ښودل شوې، خو په لومړي او بدلېدلي رسم کښې د پرېکون فارمول د او مرکب دے؛ د او ايستل همدغه لويه مقدمه غواړي۔ يوازې د نثر يو رابط بدل شو، ټول دولس رسمي رسمونه عين دي۔",
+      "formula_policy": "Replace only the connective in the first inline identification; all12 proof diagrams, entire original formal table and remaining mathematical content byte-exact or whitespace-normalized identical.",
+      "decision_timing": "د بشپړ اصل، اصلي رسمي رسمونو او کانوني مخونو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_reporting": "source_erratum_medium; owner local ledger, no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\ident!B\\lor!C$"
+        ],
+        "target_only": [
+          "$!A\\ident!B\\land!C$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-020",
+      "unit_id": "OLP-0352",
+      "classification": "partial-composition-constructor-can-erase-undefined-inner-argument",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "source_sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "source_line_1based": 18,
+      "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/composition.tex",
+      "target_line_1based": 18,
+      "target_sha256": "6b4815d224d1e1dfb318d3a82081ab66d12eafd28acfbb487519bb647ea2d19e",
+      "mode": "source-formulas-retained-plus-adjacent-Pashto-proof-scope-disclosure",
+      "reason": "د لامبډا د تعريف په اصل کښې ناتعريف ننوت بې‌عادي‌بڼې ترم غواړي۔ د ترکيب ښودل شوې بڼه د داخلي ناتعريف ترم په غورځولو بيا هم صفر عددنښه ورکولے شي؛ نو د جزوي داخلي تابعو د ناتعريفه والي عمومي شرط نۀ ثابتوي۔ د ټولو تعريف شويو داخلي تابعو حالت سم دے، عمومي لمه عين او د اصل د ثبوت پاتې حد په څنګ کښې واضح دے؛ پخوانۍ خپلواکه کتنه دا حد له نظره تېر کړے و او اوس سمه شوې ده۔",
+      "translation_change": "د لامبډا د تعريف په اصل کښې ناتعريف ننوت بې‌عادي‌بڼې ترم غواړي۔ د ترکيب ښودل شوې بڼه د داخلي ناتعريف ترم په غورځولو بيا هم صفر عددنښه ورکولے شي؛ نو د جزوي داخلي تابعو د ناتعريفه والي عمومي شرط نۀ ثابتوي۔ د ټولو تعريف شويو داخلي تابعو حالت سم دے، عمومي لمه عين او د اصل د ثبوت پاتې حد په څنګ کښې واضح دے؛ پخوانۍ خپلواکه کتنه دا حد له نظره تېر کړے و او اوس سمه شوې ده۔",
+      "formula_policy": "All previous and source mathematical expressions retained; scope gap disclosed without a new proof or theorem retraction.",
+      "decision_timing": "د اصلي ناتعريفه والي شرط، بشپړ ترکيب ثبوت او مستقيم بېټا مخالف مثال له کتنې وروسته، د خپل تازه ثبت لازم سمون۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "upstream_reporting": "source_erratum_medium; proof-construction domain gap, no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

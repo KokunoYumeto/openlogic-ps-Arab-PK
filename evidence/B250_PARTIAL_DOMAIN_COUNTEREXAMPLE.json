@@ -1,0 +1,39 @@
+{
+  "schema": "ps-lambda-partial-domain-counterexample/1",
+  "utc": "2026-10-01T08:34:58.904325+00:00",
+  "status": "Verified symbolic beta counterexample to the displayed construction, not the closure theorem",
+  "canonical_issue_id": "OLSOL-020",
+  "primary_sources": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "read_scope": "entire definition source; undefined argument tuple requires no normal form"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "source_path": "content/lambda-calculus/introduction/composition.tex",
+      "sha256": "cb8cd3db3bf994933f1de1eeb3a9f99e108b3699ea8d53f7218f9861ea3e2b61",
+      "read_scope": "entire source, displayed nested composition construction"
+    },
+    {
+      "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+      "read_scope": "composition lemma and following remark explicitly requiring total arguments, lines30–55"
+    }
+  ],
+  "counterexample": {
+    "omega": "Omega = (lambda t.t t)(lambda t.t t), beta-reduces to itself and has no normal form",
+    "inner_function": "g(x) undefined for every natural x, represented by G = lambda x.Omega",
+    "outer_function": "h(u)=0 for every natural u, represented by H = lambda u.num0",
+    "source_constructor": "F = lambda x.H(G x)",
+    "beta_steps": [
+      "F num(n) -> H(G num(n))",
+      "H(G num(n)) -> num0"
+    ],
+    "strict_partial_composition": "h(g(n)) is undefined since g(n) is undefined, yet the source constructor has normal form num0",
+    "conclusion": "Defined-input computation is correct; arbitrary partial-inner-function undefinedness is not established by this constructor. Closure theorem itself is retained."
+  },
+  "previous_own_review_correction": "The complete352 audit retained the source without identifying this domain gap. The new353 source comparison exposes it; previous receipt remains immutable and is superseded for this proof-scope finding.",
+  "future_recursion_scope_candidate": "Source353 similarly allows H(n,v)=num0 to erase an undefined G at step1; requires independent full353 adjudication, not counted as a whole353 audit."
+}
