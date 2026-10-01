@@ -1,0 +1,239 @@
+% Part: proof-theory
+% Chapter: proof-search
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{ps}{tab}
+
+\olsection{تابلوګانې}
+
+د تابلو سيستمونه د !!{proof} هغه سيستمونه دي چې د
+سيکوېنټ حسابونو سره نژدې تړاو لري او د ثبوت د لټون دپاره،
+هم په لاس او هم په سافټوير کښې، ځانګړې آسانتيا لري۔ په
+تابلو کښې د سيکوېنټونو د ونې پر ځاے !!a{proof} د
+!!{formula}s ونه ده۔ خو د طبيعي استنتاج پر خلاف ئې قواعد د
+سيکوېنټ حساب د قواعدو په شان دي۔ د تابلو !!{proof} په اصل
+کښې د يوه مدل څرګند لټون دے؛ ځکه کله کله ورته
+\emph{معنايي} تابلو يا \emph{د صدق ونه} هم وايي۔
+
+\emph{نښه لرونکے} تابلو د نښه لرونکو !!{formula}s ونه
+ده، چې $\sFmla{\True}{!A}$ يا $\sFmla{\False}{!A}$ بڼه
+لرلے شي۔ ونې ښکته لور ته غځېږي۔ په هغو !!{formula}s پيلېږي
+چې زموږ د !!{prove} کولو مقصد ټاکي۔ مثلاً، د سيکوېنټ
+$!A, !B \Sequent !C, !D$ د !!{prove} کولو دپاره به په
+$\sFmla{\True}{!A}, \sFmla{\True}{!B},
+\sFmla{\False}{!C}, \sFmla{\False}{!D}$ پيل کېږي۔ داسې
+!!^a{structure} چې $!A$ او $!B$ رښتيا او $!C$ او $!D$ دروغ
+کړي، هغه !!a{structure} دے چې ښيي
+$!A, !B \Sequent !C, !D$ معتبر نۀ دے۔
+\textbf{د سرچينه‌يي نښې سمون OLCMP-195:} د ښي اړخ وروستي
+فارمول ناسمه رښتيا نښه په دروغ نښه بدله شوې، څو د ټول ښي
+اړخ د ناسمولو هماغه شرط پوره شي۔
+
+د تابلو پاڼه، يعنې تر ټولو لاندې غوټه، د څانګې د
+غځولو په قواعدو غځېدے شي: په هماغه څانګه نورې غوټې زياتوي
+يا لاندې دوې هم‌مورې غوټې ورزياتوي او څانګه په دوو نويو
+څانګو وېشي۔ قواعد په هماغه څانګه کښې پر هر پاسني نښه
+لرونکي !!{formula} کارېدلے شي۔ د کلاسيکي تابلو سيستم
+\Log{Tc} د څانګې د غځولو قواعد په \olref{tab:Tc} کښې دي۔
+
+\subfile{rules-Tc}
+
+لکه چې ښکاري، قواعد هماغه د \Log{G3c} قواعد دي خو سرچپه
+شوي؛ $\True$ او $\False$ نښې په ترتيب ښيي چې
+!!a{formula} د سيکوېنټ په کيڼ يا ښي اړخ اصلي فارمول دے۔
+
+د تابلو يوه څانګه هله \emph{تړلې} ده چې دواړه
+$\sFmla{\True}{!A}$ او $\sFmla{\False}{!A}$ ولري؛ يا
+$\sFmla{\True}{\lfalse}$ ولري۔ که هره څانګه تړلې وي، ټول
+تابلو تړلے بولو۔
+\textbf{د سرچينه‌يي تړلو د شرط سمون OLCMP-198:} په رښتيا
+نښه لرونکے دروغ هم څانګه تړي؛ د سيکوېنټ د کيڼ دروغ
+بديهيت همدا حالت دے، چې په اصل کښې نۀ و ذکر شوے۔ د لاندې
+تابلو بېلګه تړلې ده۔
+مثلاً، د $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
+(!A \lor !C)$ دپاره دلته يو تړلے تابلو دے؛ يعنې په
+$\sFmla{\True}{!A \lor (!B \land
+!C)}$ او $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$
+پيلېږي:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+            [\sFmla{\True}{\formula{C}},
+              just={\TRule{\True}{\land}[3]}
+              [\sFmla{\False}{\formula{A}},
+                just={\TRule{\False}{\lor}[4]}
+                [\sFmla{\False}{\formula{B}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+              [\sFmla{\True}{\formula{C}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\False}{\formula{A}},
+                  just={\TRule{\False}{\lor}[4]}
+                  [\sFmla{\False}{\formula{C}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+د کتنې نښې ښيي چې اړونده قاعده په !!a{formula} باندې
+په ټولو لاندې څانګو کښې کارول شوې ده۔ د $\otimes$ نښه د
+څانګې تړل ښيي۔ د قواعدو ورپسې د کرښو شمېرې ښيي چې قاعده
+په کومو نښه لرونکو !!{formula}s کارول شوې ده؛ يعنې په
+هماغه څانګه کښې پر هغه !!{formula} چې ښودل شوې کرښه ئې لري۔
+
+په تابلو کښې د ثبوت لټون آسان دے۔ تابلو په پړاوونو
+جوړوو۔ په پړاو $0$ کښې پيليز !!{formula}s پاس وليکئ۔ په
+پړاو $n+1$ کښې د هرې نۀ تړلې پاڼې غوټې دپاره داسې وکړئ:
+لومړے، يعنې تر ټولو پاسنے، ناعټومي نښه لرونکے فارمول ومومئ
+چې لا د کتنې نښه نۀ لري او د لاندې تکراري کميت ټاکنې له
+نوعې نۀ وي۔ په دغه فارمول د څانګې د غځولو قاعده وکاروئ۔
+کله چې قاعده په هره څانګه کښې وکارول شي چې همدغه نښه
+لرونکے فارمول لري، د کتنې نښه پرې کېږدئ۔ (پورته بېلګه په
+همدې الګوريتم جوړه شوې ده۔)
+\textbf{د راکمولو د نوعې سمون OLCMP-196:} اټومي فارمول
+د دغو غځولو قواعدو هېڅ قاعده نۀ لري؛ يوازې ناعټومي مورد
+ټاکل کېږي، او تړلې څانګه نوره نۀ غځېږي۔
+
+د $\sFmla{\True}{\lforall}$ او
+$\sFmla{\False}{\lexists}$ بڼې نښه لرونکي !!{formula}s
+هېڅکله د کتنې نښه نۀ اخلي، نو ځانګړې کارونه غواړي۔ که
+موجود وي، بايد يقيني کړو چې $\TRule{\True}{\forall}$ او
+$\TRule{\False}{\lexists}$ قواعد بالاخره پر ټولو د کارونې
+وړ ترمونو وکارول شي۔ مثلاً، دا په دې تضمينېدے شي چې هر
+پړاو کښې په هره څانګه پر دغو ټولو فارمولونو قاعده وکاروو،
+وروسته له دې چې د دغې بڼې پرته تر ټولو پاسنے ناعټومي نښه
+لرونکے !!{formula} وکارول شي۔ د کارونې ترم $t$ هغه لومړے
+ترم~$t$ دے چې په څانګه کښې له مخکې موجودو !!{constant}s
+(يا $\Obj
+c_0$، که هېڅ !!{constant} موجود نۀ وي) او په پيليزو
+!!{formula}s کښې له راغلو !!{function}s څخه جوړېدے شي، او
+اړوند نښه لرونکے !!{formula} $\sFmla{\True}{!B(t)}$ يا
+~$\sFmla{\False}{!B(t)}$ لا په څانګه کښې موجود نۀ وي۔
+\textbf{د ترمونو د اشباع سمون OLCMP-197:} که په دغه
+پړاو کښې داسې نااستعمال شوے ترم نۀ وي، همدغه قاعده نوې
+غوټه نۀ زياتوي؛ خو د کتنې نښه لا نۀ اخلي، څو د څانګې له
+وروستيو نويو ثابتونو سره بيا کارېدے شي۔
+
+که د ثبوت دا لټون تړلے تابلو جوړ نۀ کړي، نو يا يوه
+متناهي پرانيستې مشبوع څانګه لري چې ټول عادي ناعټومي
+!!{formula}s ئې د کتنې نښې لري او تکراري کميت ټاکنه ئې پر
+ټولو اوسني د کارونې وړ ترمونو کارول شوې ده؛ يا لټون يوه
+نامتناهي، متناهي څانګېدونکې ونه جوړوي چې بايد يوه نامتناهي
+څانګه ولري۔ لکه په \olref[cpl]{sec} کښې، داسې
+!!a{structure}~$\Struct{M}$ تعريفولے شو چې که
+$\sFmla{\True}{!A}$ په څانګه کښې راځي، $\Sat{M}{!A}$، او
+که $\sFmla{\False}{!A}$ راځي، $\Sat/{M}{!A}$ وي۔
+($\Theta =
+\Setabs{!A}{\sFmla{\True}{!A} \text{ په څانګه کښې}}$ او
+$\Xi =
+\Setabs{!A}{\sFmla{\False}{!A} \text{ په څانګه کښې}}$
+واخلئ۔)
+\textbf{د بشپړتيا د حد څرګندونه OLCMP-197/200:} متناهي
+څانګه د تکراري کميت ټاکنې له نښې پرته هم مشبوع کېدے شي۔
+د OLCMP-190 په ترمي مدل کښې د ازادو متغيرونو د ګومارنې
+جلا پاتې دليل دلته هم پاتې دے؛ عمومي معنايي ادعا ساتل
+شوې، خو د ازادو متغيرونو د ټولو حالتونو نوے ثبوت نۀ دے
+ورزيات شوے۔
+
+د ثبوت د لټون په دې طريقه جوړ شوي تابلوګانې هرې غوټې
+ته د سيکوېنټ په ورکولو په آسانۍ د \Log{G3c} په ثبوتونو
+بدلېدے شي۔ که پيليز فارمولونه د سيکوېنټ
+$\Gamma \Sequent
+\Delta$ سره برابر وي، هر پيليز فارمول په
+$\Gamma \Sequent
+\Delta$ ونوموئ۔ که څانګه پر نښه لرونکي
+!!{formula} $\sFmla{\True}{!A}$ د غځولو د قاعدې په کارونه
+وغځېږي، د پاڼې نوم $!A, \Pi \Sequent \Lambda$ دے؛ او که
+پر نښه لرونکي !!{formula} $\sFmla{\False}{!A}$ کارول شوې
+وي، د پاڼې نوم $\Pi \Sequent
+\Lambda, !A$ دے۔ هر چې تابلو د \TRule{\True}{\star} قاعده
+کاروي، پر سيکوېنټ د \LeftR{\star} قاعده وکاروئ، چې $!A$
+ئې اصلي فارمول وي؛ او هر چې د \TRule{\False}{\star} قاعده
+کاروي، د \RightR{\star} قاعده وکاروئ۔ د قاعدې مقدمې هغه
+سيکوېنټونه دي چې په تابلو کښې ورزياتې شوې اړوندې غوټې
+نوموي۔ کله چې تابلو په $\sFmla{\True}{!A}$ او
+$\sFmla{\False}{!A}$ وتړل شي، د وروستۍ پاڼې نوم به
+$!A, \Pi \Sequent \Lambda,
+!A$ بڼه ولري۔ د تابلو ځينې پرله‌پسې غوټې به يو شان
+سيکوېنټ واخلي؛ تکراري موردونه لرې کړئ۔
+\textbf{د رسمي بديهيت د حد OLCMP-199، د OLCMP-191 تعقيب:}
+د ګډ اټومي فارمول تړل په G3c کښې مستقيم بديهيت ورکوي، او
+په رښتيا نښه لرونکے دروغ د کيڼ دروغ بديهيت ورکوي۔ د
+مرکب ګډ فارمول تړل معنايي صحيح دي، خو د هويت جلا مشتق
+ثبوت غواړي، يوازې بې‌مقدمې رسمي G3c پاڼه نۀ ده۔ لاندې
+رسم د خپلو درې برخو د اټومي لوستلو په صورت کښې رسمي
+G3c ثبوت دے؛ د عمومي مرکب هويت نوې ثبوتونه نۀ دي ورزيات
+شوي۔ مثلاً، پورته تابلو په دغه !!{proof} بدلېږي:
+\[\small
+\Axiom$!A \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !B$
+\Axiom$!A \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!A \fCenter (!A \lor !B) \land (!A \lor !C)$
+\Axiom$!B, !C \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !B$
+\Axiom$!B, !C \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\DisplayProof
+\]
+
+\end{document}

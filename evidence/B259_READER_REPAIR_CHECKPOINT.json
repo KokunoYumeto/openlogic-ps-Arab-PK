@@ -1,0 +1,116 @@
+{
+  "schema": "ps-reader-repair-source-checkpoint/1",
+  "utc": "2026-10-01T12:30:27.429802+00:00",
+  "status": "PASS for stated changed paragraph; current654 compiled and actual page inspected; expanded reader unaccepted",
+  "reader_units": 654,
+  "reader_tex_sha256": "b718b72511382ffa33a5c9933638283307ae1aa05c7c4ea9d8bd7fb9128ba534",
+  "new_reader_accepted": false,
+  "new_release": false,
+  "new_doi": false,
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "sha256": "2b3bd06bd1187f071513f2881bd05114d7e8e4ad5a0789b82c6b5603781fae70",
+      "bytes": 61834,
+      "previous_checkpoint_sha256": "69a8e9e518f390c962e7f57b0e1eac75c858224206374d36a58458f93b7da861"
+    },
+    {
+      "path": "tools/guard_tex.ps1",
+      "sha256": "735802f6326efeddc9678065447c846c13a40e7cb25c0d59652d5ceadaf69299",
+      "bytes": 8538,
+      "previous_checkpoint_sha256": "1bed7efefe56a5b6d4bd1715a4b4a24a2d3f6f7a2debd1262d214bfce4bead62"
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v103.tex",
+      "sha256": "6685ed908314721d940d9813b02c06a716d64582273221a7d1f3c1d965dd52db",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v104.tex",
+      "sha256": "f7363c1a8d498041848b72e58a8210ce0f322b530090569856ba27ca537fa9e7",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v105.tex",
+      "sha256": "1caa2604953eb56498fcfa33601991a63d1b0dddc7a88d18a208eb8202872b87",
+      "bytes": 14904
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v106.tex",
+      "sha256": "bd1113c81f47729f51c5b5e4dfcb6e75904f9aa9c3e84b2e9b4c4a066bf00695",
+      "bytes": 14907
+    },
+    {
+      "path": "tools/cumulative-reader-preamble-v107.tex",
+      "sha256": "195599874f4cd9b35226ae9ad48fd27ee18fff2937e299dc2815d5f001091496",
+      "bytes": 14920
+    }
+  ],
+  "historical_b211_receipt_sha256": "01c2f47d46b5ac14c4277ee07dafafed2990542317454c303f56deeb948d0f5f",
+  "previous_reader_checkpoint_sha256": "4423754e9f311d8c262a71b820552a15bd99d62be8fe230fc08194384fa8a190",
+  "b215_evidence": [
+    {
+      "path": "evidence/B215_COMPILED_637_PENDING_QA.json",
+      "sha256": "95773b4ad81f691a802e4a0d09dc4d957d019bf7927ed06bf7451ba1ceacfac3"
+    },
+    {
+      "path": "evidence/B215_READER_REPAIR_PREFLIGHT_637.json",
+      "sha256": "ff52e56f83c605581de1d5a9b3510fc00b8c8dd1dbe844e99b76b347bc862265"
+    },
+    {
+      "path": "evidence/B215_RENDERED_READER_REPAIRS.json",
+      "sha256": "7b3c7950ea46ef90e0f158953fa944f7575176dd48dc332d5ce7d49ce4e64b31"
+    },
+    {
+      "path": "evidence/B215_TEX_SLOT_UNAVAILABLE_637.json",
+      "sha256": "ca4cc268ffaace19621cdaba956a9d470a79c6b4aeac4b18a2fba4063655de68"
+    }
+  ],
+  "preflight_sha256": "1e54c237fa38a12b68027db1f4d924cb1287c40ead0645b2bac29098fa88b521",
+  "compiled_candidate_scope": 654,
+  "last_slot_result": "Guard63201 terminal;4XeLaTeX/BibTeX all0,capturedtrees0,811pages;actual changed paragraph inspected. No repeated acquisition.",
+  "policy": "No slot polling; one accumulated attempt at a later validated substantive checkpoint.",
+  "source_accepted_units": 684,
+  "reader_pending_unit_ids": [
+    "OLP-0655",
+    "OLP-0656",
+    "OLP-0657",
+    "OLP-0658",
+    "OLP-0659",
+    "OLP-0660",
+    "OLP-0661",
+    "OLP-0662",
+    "OLP-0663",
+    "OLP-0664",
+    "OLP-0665",
+    "OLP-0666",
+    "OLP-0667",
+    "OLP-0668",
+    "OLP-0669",
+    "OLP-0670",
+    "OLP-0671",
+    "OLP-0672",
+    "OLP-0673",
+    "OLP-0674",
+    "OLP-0675",
+    "OLP-0676",
+    "OLP-0677",
+    "OLP-0678",
+    "OLP-0679",
+    "OLP-0680",
+    "OLP-0681",
+    "OLP-0682",
+    "OLP-0683",
+    "OLP-0684"
+  ],
+  "previous_compiled_candidate_pdf_sha256": "083c450c80966e8c3904672967b01fd634e34db3690824cad1ba8cfd4369c346",
+  "previous_rendered_sample_sha256": "6dcb98babadad0e5a49fbde41de8367851a10603c594a44fe1d871f3cf25c649",
+  "slot_result_sha256": "e6ff43c5fd0f0fd5fe0714ab92ea3b5cfa4e156289b8d950b9c5949c78006705",
+  "validated_tool_repair": {
+    "path": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\B243_READER_CREDIT_REPAIR.json",
+    "sha256": "0486e0687165d4f056cf211fe6b55ebb019baaa5ec24d9d2aa3401e83837628a"
+  },
+  "unchanged_compilation_reuse_sha256": "56a6a46eb234ba196092c8f7642591b48711faf887f7d218a154673135ed0a29",
+  "compiled_candidate_pdf_sha256": "c003ec3ed9e9eb7e60169bd488c325d8fadd25f2b7615e473397b775c941d09e",
+  "rendered_sample_sha256": "81212743558436dcbc89f7ef4fb9f2ba338eb718e3a788c04aeaee05266b9011"
+}

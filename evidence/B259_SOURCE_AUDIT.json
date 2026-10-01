@@ -1,0 +1,181 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T12:19:32.090009+00:00",
+  "status": "بشپړ نوے واحد او بشپړه خپلواکه پخوانۍ بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0684",
+      "source_path": "content/proof-theory/proof-search/tableaux.tex",
+      "source_sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14",
+      "source_bytes": 8583,
+      "target_sha256": "9eb352eeb603036a5614ef54e1579448604318c4323b84ace0b7e800a9e37b29",
+      "target_bytes": 13094,
+      "paired_blocks": 17,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-195",
+        "OLCMP-196",
+        "OLCMP-197",
+        "OLCMP-198",
+        "OLCMP-199",
+        "OLCMP-200"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0361",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "target_sha256_before": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "target_sha256": "24160d2b0f2d55b9f3ee9a497ea2a3bc369422918e545b0f932e05c26640908a",
+      "target_sha256_after": "24160d2b0f2d55b9f3ee9a497ea2a3bc369422918e545b0f932e05c26640908a",
+      "target_bytes": 10301,
+      "paired_blocks": 22,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-011",
+        "OLLAM-012",
+        "OLLAM-013",
+        "OLLAM-014",
+        "OLLAM-015",
+        "OLLAM-016"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "24",
+      "pdf_page_1based": 29,
+      "page_image_sha256": "9901455e96f8918cbc0c6cfcdffcc7792b3a7fd0ffb66db04c0d6e10b73f3363",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "90",
+      "pdf_page_1based": 95,
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P90-PREDICATE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [
+    "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+  ],
+  "new_source_correction_ids": [
+    "OLCMP-195",
+    "OLCMP-196",
+    "OLCMP-197",
+    "OLCMP-198",
+    "OLCMP-199",
+    "OLCMP-200"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLCMP-195",
+    "DEC-OLCMP-196",
+    "DEC-OLCMP-197",
+    "DEC-OLCMP-198",
+    "DEC-OLCMP-199",
+    "DEC-OLCMP-200"
+  ],
+  "revised_review_entry_ids": [
+    "TERM-LAMBDA-PARTIAL-SUBSTITUTION",
+    "DEC-OLLAM-011",
+    "DEC-OLLAM-012",
+    "DEC-OLLAM-013",
+    "DEC-OLLAM-014",
+    "DEC-OLLAM-015",
+    "DEC-OLLAM-016"
+  ],
+  "semantic_samples_added": 29,
+  "focused_qa_sha256": "c50e865d126938fb1e4e61ef935ca39867800183b073356b47de5156e01cf465",
+  "source_adjudication_sha256": "91d2523f6567eb7b275011806c799dc6341b7161241c002d60daa60672fe9b1a",
+  "model_provenance_sha256": "b1d4a3b7a11db03c70861750840289d7a1ab7de272baacfddd64966ac813984b",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0361.json",
+  "related_reaudit_sha256": "c97ab8078f09fc2da7ccf89784355b2ef3a95c46c96a45d5b0e7504c52f5c838",
+  "unresolved": "۳۸ عمومي واحدونه، ۲۴۸ بشپړ پخواني واحدونه، د مرکب هويت د بدلولو او د آزاد-متغير ترمي مدل پاتې عمومي دليلونه، بشپړ تجربوي باب، EPUB، بشپړه ژبنۍ/چاپي کتنه او وروستۍ خپرونه پاتې دي۔",
+  "next_executable_action": "د ۶۸۴ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ د حوالې بېلتون اوسنے لوستونکی په طبيعي تمځاے جوړ او محدود واقعي مخ وکتل شي؛ بيا بشپړ OLP0685 او OLP0362۔"
+}

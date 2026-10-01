@@ -1,0 +1,92 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T12:19:32.090009+00:00",
+  "status": "د جزوي تعويض ټول دوه‌ويشت اصلي/پخواني بلاکونه او اتلس ژباړې خپلواک کتل شوي؛ پخواني۰۱۱–۰۱۶ شپږ ټول سمونونه صحيح دي۔ يوازې د تعريف او څلورم بند ګډې چاپي حوالې د پښتو نثر په وسيله بېلې شوې؛ ټول پخواني رياضي بايټونه، شرطونه، رسمونه او بې‌ځوابه مشقونه عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0361",
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+      "target_sha256_before": "2e183013a46927a8e39ac5db3e0a7da416381406df4ebd44426945df4b095b8f",
+      "target_sha256": "24160d2b0f2d55b9f3ee9a497ea2a3bc369422918e545b0f932e05c26640908a",
+      "target_sha256_after": "24160d2b0f2d55b9f3ee9a497ea2a3bc369422918e545b0f932e05c26640908a",
+      "target_bytes": 10301,
+      "paired_blocks": 22,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-011",
+        "OLLAM-012",
+        "OLLAM-013",
+        "OLLAM-014",
+        "OLLAM-015",
+        "OLLAM-016"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+      ],
+      "translated_blocks_reviewed": 18,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        7
+      ],
+      "all_prior_math_bytes_retained": true,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": []
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني مخونه۱/۲ او افغان۳۹/۹۰/۱۴۷ د مسودې مخکې په همدې فعال بهير کښې په سترګو بيا کتل شوي؛ افغان۲۴ هم د همدې مسودې مخکې په اصل PNG کښې بيا کتل شوے۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے او افغان رياضي سيمه‌ييز شاهد دے؛ عين تابلو اشباع/هويت او لامبډا تعويض مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    }
+  ],
+  "segment_entries_added": 18,
+  "new_source_correction_ids": [],
+  "wording_choice_ids": [
+    "TERM-LAMBDA-PARTIAL-SUBSTITUTION"
+  ],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-011",
+    "OLLAM-012",
+    "OLLAM-013",
+    "OLLAM-014",
+    "OLLAM-015",
+    "OLLAM-016"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0361.jsonl",
+  "whole_unit_segment_snapshot_sha256": "d7897734fa2f12a6ee776e844a9f8fb2fcb4597cd4439639003339c08394b861",
+  "source_adjudication_sha256": "91d2523f6567eb7b275011806c799dc6341b7161241c002d60daa60672fe9b1a",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د ۶۸۴ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ د حوالې بېلتون اوسنے لوستونکی په طبيعي تمځاے جوړ او محدود واقعي مخ وکتل شي؛ بيا بشپړ OLP0685 او OLP0362۔"
+}

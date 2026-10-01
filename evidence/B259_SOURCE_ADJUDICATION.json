@@ -1,0 +1,112 @@
+{
+  "new_unique_defect_ids": [
+    "OLCMP-195",
+    "OLCMP-196",
+    "OLCMP-197",
+    "OLCMP-198"
+  ],
+  "existing_recurrences": [
+    {
+      "new_record": "OLCMP-199",
+      "canonical_existing": "OLCMP-191",
+      "new_unique_defect": false
+    },
+    {
+      "new_record": "OLCMP-200",
+      "canonical_existing": "OLCMP-190",
+      "new_unique_defect": false
+    }
+  ],
+  "source_editorial_wording": [
+    {
+      "source": "a clause tableau",
+      "native_treatment": "يو تړلے تابلو",
+      "evidence": "Actual source paragraph discusses closed tableaux and the preserved diagram has four closed branches. Small copied-word treatment recorded without inventing a new mathematical defect."
+    }
+  ],
+  "all_original_diagram_bytes_retained": true,
+  "general_compound_identity_proof_added": false,
+  "uniform_free_variable_model_proof_added": false,
+  "all_source_exercises_unsolved": true,
+  "whole361_old011_to016_all_valid": true,
+  "whole361_all_prior_raw_math_retained": true,
+  "whole361_only_changed_block": 7,
+  "reference_separation_render_locator": {
+    "receipt": "B258_RENDERED_SAMPLE_654.json",
+    "receipt_sha256": "6dcb98babadad0e5a49fbde41de8367851a10603c594a44fe1d871f3cf25c649",
+    "physical_page": 478,
+    "printed_page": "477"
+  },
+  "counterexamples": [
+    {
+      "id": "OLCMP-195",
+      "argument": "A=B=D=true,C=false makes the frozen initial signs true,true,false,true satisfiable, although A,B=>C,D is true due to D. Correct last FalseD searches for both succedent formulas false as the immediately following source prose states."
+    },
+    {
+      "id": "OLCMP-196",
+      "argument": "An open branch containing only TrueP and FalseQ has no closed-pair witness and no applicable Tc rule. The literal first-unchecked-formula instruction selects TrueP and demands a nonexistent rule. Restrict ordinary expansion to non-atomic, non-reusable-quantifier formulas; the finite atomic branch is saturated."
+    },
+    {
+      "id": "OLCMP-197",
+      "argument": "Start with False exists x.P(x), no constants or functions. First instantiation adds FalseP(c0). The only closed term is c0 and its signed instance is already present. The tree stays finite and open, but the existential formula is never checked off; the frozen all-nonatomic-formulas-checked finite case and infinite-tree alternative both miss it."
+    },
+    {
+      "id": "OLCMP-198",
+      "argument": "The one-node branch True falsum has no opposite-sign pair and no connective expansion rule in Tc, yet cannot be satisfied by any structure. It must close, corresponding to the actual G3c axiom falsum,Gamma=>Delta."
+    },
+    {
+      "id": "OLCMP-199",
+      "argument": "The tableau consisting of True(P and Q),False(P and Q) closes semantically. Its proposed final one-node sequent (P and Q)=>(P and Q) is not an atomic G3c axiom. The sequent remains derivable, but its identity derivation must be supplied or expanded separately. Both original diagrams retained byte-exact."
+    },
+    {
+      "id": "OLCMP-200",
+      "argument": "An open branch TrueP(v) with free v, no function symbols and no ground P(c0) membership yields the cited ground-term model D={c0},P^M=empty. Every assignment sends v to c0, so P(v) is false despite its True sign. No general tableau completeness theorem is retracted; uniform parameters/assignments remain unprovided."
+    }
+  ],
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T12:19:32.090009+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/proof-search/tableaux.tex",
+      "actually_read_scope": "entire frozen source and new complete private target;361 also entire original Sol6 target and every historical correction",
+      "sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "actually_read_scope": "entire frozen source and new complete private target;361 also entire original Sol6 target and every historical correction",
+      "sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd"
+    },
+    {
+      "source_path": "content/proof-theory/proof-search/rules-Tc.tex",
+      "actually_read_scope": "entire12rule table and eigenconstant caption, independently reviewedB257",
+      "sha256": "766ce01962f35ef9833f3be95a35250d13a9fca800100f15885dd9009cc74241"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "actually_read_scope": "entire actual rule table; atomic/common-formula and falsum axioms",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+      "actually_read_scope": "lines1–102 actual atomic axiom requirement",
+      "sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+      "actually_read_scope": "lines1–95 and148–193 actual atomic examples and proof definitions",
+      "sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "actually_read_scope": "entire source/prior target independently reviewedB258, body scope and FV rules",
+      "sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

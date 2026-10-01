@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-01T12:19:10.909563+00:00",
+  "scope": "Same frozen-source unit/hash and named historical QA exceptions reconstruct already corrected full proof blocks. Combined014/015 changes must equal their exact aggregate exception; no additional formulas, IDs or structural macros allowed. Independently retained whole361 raw math and exact changed-block assertion remain mandatory.",
+  "helper_before_sha256": "87b2457670e882f099830ef149537041d59ac32162fd21cd13e3195f9a75d038",
+  "helper_after_sha256": "5bc994e360cca97a6d80a1defe420a9911f333ab2684e0d4a73ecf5047ff244a",
+  "existing_source_ids": [
+    "OLLAM-011",
+    "OLLAM-012",
+    "OLLAM-013",
+    "OLLAM-014",
+    "OLLAM-015",
+    "OLLAM-016"
+  ],
+  "historical_exceptions_changed": false,
+  "all_private_checks": {
+    "OLP-0684": {
+      "math": true,
+      "per_block_math": true,
+      "ids": true,
+      "macros": true,
+      "tokens": true,
+      "comments": true,
+      "block_count": true
+    },
+    "OLP-0361": {
+      "math": true,
+      "per_block_math": true,
+      "ids": true,
+      "macros": true,
+      "tokens": true,
+      "comments": true,
+      "block_count": true,
+      "all_prior_math_raw_bytes": true
+    }
+  }
+}
