@@ -1,0 +1,90 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T15:10:23.875351+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0689",
+      "source_path": "content/proof-theory/propositions-as-types/proofs-to-terms.tex",
+      "source_sha256": "659493297b55668bb3c57b1999a8fac3c45b6db7564a83b6147e12628b5f217d",
+      "source_bytes": 3537,
+      "target_sha256": "4457a6ddcb01378612b46cfc552bd0e9d904f399c82dfe2ea94bd5716320038d",
+      "target_bytes": 4069,
+      "paired_blocks": 10,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true,
+        "all_original_diagrams_byte_exact": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0366",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "target_sha256_before": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "target_sha256": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+      "target_sha256_after": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+      "target_bytes": 4950,
+      "paired_blocks": 18,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-033"
+      ],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0689": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_original_diagrams_byte_exact": true
+    },
+    "OLP-0366": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 0,
+  "source_adjudication_sha256": "2152cc4ef1f99e7647101b1a35b3751abc6a0367a2532b2e4fbe5aa36fdd3732",
+  "registration_helper_sha256": "5bc994e360cca97a6d80a1defe420a9911f333ab2684e0d4a73ecf5047ff244a",
+  "writer_spec_sha256": "aa9504b78e914865572566e1e579f4de59615764435b3a0f44fd7f300d126216",
+  "previous_writer_spec_sha256": "774565f1cec969662a5d4068903c1351bebb45e70b95231d09fd16fd9343849d",
+  "formal_token_allowlist_repair": "B264_FORMAL_TOKEN_QA_REPAIR.json"
+}

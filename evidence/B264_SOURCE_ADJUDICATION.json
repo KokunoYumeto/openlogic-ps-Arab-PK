@@ -1,0 +1,44 @@
+{
+  "new_unique_defects": [],
+  "existing_condition_recurrence": "OLLAM-033; new eta-equivalence rule at sourceblock9 lacks its adjacent explicit guard",
+  "free_variable_witness": "Instantiate f=x: lambda x.xx is closed while x has free-variable set{x}. Omitting the eta side condition permits capturing a formerly free variable; the original contraction rule explicitly forbids that case. No claim that ext has no stronger consequences is inferred from this FVwitness alone.",
+  "eta_ext_first_direction": "The original ext rule supplies x notin FV(MN); abstraction congruence then guarded eta on both sides gives M=etaN.",
+  "eta_ext_second_direction": "With xnotinFVM, beta gives (lambda x.Mx)x=extMx. x is free in neither lambda x.Mx nor M, so ext applies to this pair.",
+  "retracted_false_source_claim": "OLLAM-034; bare ext and equal[ext] are contextually named labels. Actual ext macro is ensuremath/mathit{ext}; typography is no mathematical source defect, no source-formula correction is justified.",
+  "retraction_receipt": "B264_ETA_FALSE_ALERT_RETRACTION.json",
+  "source_exercises_solved": false,
+  "proof_terms_diagrams_exact": true,
+  "proof_term_uniqueness_scope": "One fixed labelled N2i derivation determines one encoded term; no uniqueness over all derivations of the same formula asserted.",
+  "no_source_or_prior_math_change": true,
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T15:10:23.875351+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/propositions-as-types/proofs-to-terms.tex",
+      "actually_read_scope": "entire actual frozen source and complete private target;366 also every Sol6 target byte and both old033/034 records",
+      "sha256": "659493297b55668bb3c57b1999a8fac3c45b6db7564a83b6147e12628b5f217d"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "actually_read_scope": "entire actual frozen source and complete private target;366 also every Sol6 target byte and both old033/034 records",
+      "sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978"
+    },
+    {
+      "source_path": "content/proof-theory/propositions-as-types/rules-tN2.tex",
+      "actually_read_scope": "entire actual rule table; xaxiom, projection order, pair and lambda-discharge roles",
+      "sha256": "028e19b146423187a4a0057fee449ac084cdfc3c987f0a366787784aa64a2ee2"
+    },
+    {
+      "source_path": "open-logic-config.sty",
+      "actually_read_scope": "actual lines693–721; equal uses stackrel optional argument and ext expands ensuremath/mathit{ext}",
+      "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

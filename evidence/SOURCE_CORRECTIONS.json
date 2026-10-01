@@ -8626,7 +8626,30 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:18"
       ],
       "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "recurrence_history": [
+        {
+          "batch": "B264",
+          "utc": "2026-10-01T15:10:23.212319+00:00",
+          "canonical_source_issue_id": "OLLAM-033",
+          "source_block": 9,
+          "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+          "target_sha256": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+          "reason_native": "د تړلي متغير تازګي په اصلي اېټا-انقباض کښې رسمي شرط دے۔ پخوانے033 د پېل يادونه صحيح ده؛ اوس د معادلتوب د نوې قاعدې څنګ ته هم په نثر کښې هماغه شرط ورکړے شو۔ د شرط پرته f=xکې λx.xxاو xآزادمتغيرونه سره بدلوي؛ دغه نوی مورد د عين033 تکرار دے، نوی بېل عيب نۀ دے۔ د034 نښې claimبېرته اخيستل کېږي، بيا تصديق نۀ کېږي۔",
+          "new_unique_defect": false,
+          "math_changed": false
+        }
+      ],
+      "independent_revalidation_history": [
+        {
+          "batch": "B264",
+          "utc": "2026-10-01T15:10:23.875351+00:00",
+          "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+          "target_sha256": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+          "adjudication_receipt": "B264_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-034",
@@ -8668,7 +8691,12 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76"
       ],
       "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "status": "superseded",
+      "superseded_by": "B264_ETA_FALSE_ALERT_RETRACTION.json",
+      "retraction_reason": "د ثبوت عادي ext او د غځول شوې برابرۍ شاخص په خپل څرګند سياق کښې د نومول شوې قاعدې نښې دي۔ اصلي ext ماکرو هم د همدې درې تورو اېټاليک نوم جوړوي؛ د تورو د واټن توپير رياضيکي عيب نۀ دے۔ پخوانے034 د سرچينې د عيب غلطه دعوه وه؛ يادښت لرې شو، ټول اصلي/پخواني فورمولونه او نښې عين پاتې دي۔",
+      "retracted_utc": "2026-10-01T15:10:23.212319+00:00",
+      "replacement_source_defect": null
     },
     {
       "id": "OLLAM-035",

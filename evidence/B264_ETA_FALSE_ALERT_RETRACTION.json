@@ -1,0 +1,174 @@
+{
+  "schema": "ps-eta-independent-false-alert-retraction/1",
+  "utc": "2026-10-01T15:10:23.212319+00:00",
+  "status": "false034 retired;033 recurrence and terminology repaired; production target registration pending",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "prior_values": {
+    "source_action": {
+      "id": "OLLAM-034",
+      "unit_id": "OLP-0366",
+      "classification": "extensionality-notation-inconsistent",
+      "source_path": "content/lambda-calculus/syntax/eta.tex",
+      "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+      "source_locator": "content/lambda-calculus/syntax/eta.tex:69-83",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+      "target_line_1based": 76,
+      "target_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "mode": "literal-formulas-plus-adjacent-Pashto-source-clarification",
+      "translation_change": "Disclose the source's bare ext notation in two proof math spans while retaining the formulas literally.",
+      "reason": "The earlier definition and theorem use the ext macro and indexed equality with that macro.",
+      "counterexample": "The bare math letters ext render as an unlabelled variable product rather than the intended named rule or index.",
+      "formula_policy": "All source math spans, including the inconsistent ones, are preserved verbatim; the Pashto note supplies their intended referent.",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B071_SOURCE_AUDIT.json",
+        "content/lambda-calculus/syntax/eta.tex:69-83",
+        "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76"
+      ],
+      "decision_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "upstream_reporting": "manager report pending; no direct upstream issue"
+    },
+    "review": {
+      "entry_id": "DEC-OLLAM-034",
+      "entry_type": "source-correction",
+      "source_target_locations": [
+        {
+          "unit_id": "OLP-0366",
+          "source_path": "content/lambda-calculus/syntax/eta.tex",
+          "source_locator": "content/lambda-calculus/syntax/eta.tex:69-83",
+          "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+          "target_line_1based": 76,
+          "source_section_title": "eta-conversion",
+          "target_section_title": "اېټا-بدلون",
+          "exact_printed_page": null,
+          "exact_pdf_page": null,
+          "reader_artifact": null,
+          "published_reader_page_navigation": null,
+          "page_status": "pending stable pagination in a reader containing this unit"
+        }
+      ],
+      "chosen_treatment": "د سرچينې نښې او رياضيکي حدود په هماغه بڼه ساتل شوي او د متن تر څنګ پښتو سپيناوی ورزيات شوے دے.",
+      "actual_authorities_checked": [
+        {
+          "audit_id": "PS-OWNER-SEMANTIC-20260926-LAMBDA-ETA-CHURCH-ROSSER",
+          "classification": "extensionality-notation-inconsistent",
+          "frozen_source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+          "artifacts": [
+            "B071_SOURCE_AUDIT.json",
+            "content/lambda-calculus/syntax/eta.tex:69-83",
+            "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex:76"
+          ]
+        }
+      ],
+      "not_found_in_checked_sources": "دا د انګليسي اصلي متن د معنا ارزونه ده، نۀ د پښتو اصطلاح د موندلو ادعا.",
+      "rationale": "رياضيکي فورمولونه، پېژندونکي او ماخذونه يو شان ساتل شوي؛ سپيناوی د سرچينې د شاوخوا جملو او تعريفونو له مخې دے.",
+      "alternatives_for_expert_review": [
+        "يوازې لفظي ژباړه",
+        "د سرچينې له ثبوت سره څنګ ته سپيناوی"
+      ],
+      "uncertainty": "سپيناوی د سرچينې له متن سره سمون لري؛ د پښتو جوړښت د راتلونکي متخصص نظر ته پرانيستے دے.",
+      "review_question": "آيا د سرچينې ناسازې نښې بې له بدلونه ساتل شوې او د مقصد قاعده ورسره روښانه شوې ده؟",
+      "entry_timing": "contemporaneous B071 owner source review before cumulative acceptance",
+      "open_to_correction": true,
+      "human_review_gate": false,
+      "edition": "OpenLogic Pashto — Pakistan",
+      "locale": "ps-Arab-PK",
+      "script": "Arab",
+      "regional_standard": "Pakistan Pashto orthography and usage; Afghan Pashto is a labelled regional comparator only",
+      "source_term_or_sense": "extensionality-notation-inconsistent",
+      "chosen_rendering_or_treatment": "د سرچينې نښې او رياضيکي حدود په هماغه بڼه ساتل شوي او د متن تر څنګ پښتو سپيناوی ورزيات شوے دے.",
+      "review_priority": "high",
+      "confidence": "د سرچينې د ستونزې په تشخيص کښې لوړه؛ د پښتو عبارت په اړه موقتي",
+      "provisional": true,
+      "please_double_check": "مهرباني وکړئ بيا وڅېړئ: آيا د سرچينې ناسازې نښې بې له بدلونه ساتل شوې او د مقصد قاعده ورسره روښانه شوې ده؟"
+    },
+    "term": {
+      "term_id": "TERM-LAMBDA-ETA-EXTENSIONALITY",
+      "english": "eta conversion / eta contraction and extension / beta-eta reduction / lambda-term extensionality",
+      "pashto": "اېټا-بدلون / اېټا-انقباض او اېټا-پراختيا / بېټااېټا-راکمول / د قيمتونو له مخې برابري",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "GRAMMAR-P166-SOV",
+        "AF-NIAZMAN-P147-FUNCTIONS",
+        "AF-BUKOVSKY-P25-EXTENSIONALITY"
+      ],
+      "status": "Pakistani prose and reference grammar inspected; Afghan function-extensionality and substitution pages are regional concept comparators. The exact untyped-lambda compounds remain source-led and provisional.",
+      "decision": "Eta contraction removes a vacuous abstraction only when the bound variable is not free in the function term. Beta-eta reduction closes both contraction kinds reflexively and transitively. Lambda extensionality compares behavior at one fresh argument; use the existing function-value phrasing, not the set-membership extensionality term. Keep the source's ext notation inconsistency visible in an adjacent note.",
+      "decision_timing": "contemporaneous B071 owner source review and visually inspected Pakistani/regional canon"
+    }
+  },
+  "retraction": {
+    "schema": "ps-source-audit-retraction/1",
+    "recorded_utc": "2026-10-01T15:10:23.212319+00:00",
+    "retracted_claim_id": "OLLAM-034",
+    "status": "false mathematical source-defect classification retracted; historical record retained",
+    "reason_native": "د ثبوت عادي ext او د غځول شوې برابرۍ شاخص په خپل څرګند سياق کښې د نومول شوې قاعدې نښې دي۔ اصلي ext ماکرو هم د همدې درې تورو اېټاليک نوم جوړوي؛ د تورو د واټن توپير رياضيکي عيب نۀ دے۔ پخوانے034 د سرچينې د عيب غلطه دعوه وه؛ يادښت لرې شو، ټول اصلي/پخواني فورمولونه او نښې عين پاتې دي۔",
+    "source": {
+      "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "path": "content/lambda-calculus/syntax/eta.tex",
+      "sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978"
+    },
+    "macro_evidence": {
+      "path": "upstream/open-logic-config.sty",
+      "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+      "lines": "693–721",
+      "equal_optional_expansion": "\\stackrel{#1}{\\eq}",
+      "ext_expansion": "\\ensuremath{\\mathit{ext}}"
+    },
+    "target": {
+      "path": "ps-Arab-PK/content/lambda-calculus/syntax/eta.tex",
+      "previous_sha256": "2be3d522c4f4733933c57d311b352e65b55b95b65d07f6e7ed807e9557405c3a",
+      "new_private_sha256": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+      "false_note_removed": true,
+      "all_prior_math_bytes_preserved": true
+    },
+    "reviewer_runtime": {
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "ultra"
+    },
+    "receipt": "B264_ETA_FALSE_ALERT_RETRACTION.json",
+    "new_unique_defect": false
+  },
+  "existing033_recurrence": {
+    "batch": "B264",
+    "utc": "2026-10-01T15:10:23.212319+00:00",
+    "canonical_source_issue_id": "OLLAM-033",
+    "source_block": 9,
+    "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+    "target_sha256": "953623ec48213dfbe94d279338324609c5cda76d0605dcb3862a947afacc7485",
+    "reason_native": "د تړلي متغير تازګي په اصلي اېټا-انقباض کښې رسمي شرط دے۔ پخوانے033 د پېل يادونه صحيح ده؛ اوس د معادلتوب د نوې قاعدې څنګ ته هم په نثر کښې هماغه شرط ورکړے شو۔ د شرط پرته f=xکې λx.xxاو xآزادمتغيرونه سره بدلوي؛ دغه نوی مورد د عين033 تکرار دے، نوی بېل عيب نۀ دے۔ د034 نښې claimبېرته اخيستل کېږي، بيا تصديق نۀ کېږي۔",
+    "new_unique_defect": false,
+    "math_changed": false
+  },
+  "term_decision": "اېټا-انقباض يوازې هغه وخت تجريد لرې کوي چې تړلے متغير د تابعې ترم په ازادو متغيرونو کښې نۀ وي۔ همدغه شرط د اېټا-معادلتوب د قاعدې په ځاے کښې هم لازم دے؛ پېل يادونه يوازې دغه نوی ځاے نۀ روښانوي۔ بېټااېټا-راکمول د دواړو انقباضونو انعکاسي/انتقالي تړون دے۔ د تابعې چلند له مخې برابري د يوه تازه آرګومېنټ په تطبيق برابري اخلي۔ د اصلي ext نامي نښو اېټاليک توپير عيب نۀ دے؛ غلط034 يادښت بېرته اخيستل شو۔ دغه عين پاکستاني تخصصي مرکب لا موقتي دے۔",
+  "draft_receipt_sha256": "55b19251ca5c1cab8cfe2b413e20a816b3f7e32c7b04925f08e66eea2d3717f9",
+  "focused_checks_sha256": "33208c95019cd1a01371ab3524356172d3aa2b556361a1bb894658734e1fe925",
+  "register_counts_unchanged": [
+    985,
+    333,
+    605
+  ],
+  "active_source_actions": 601,
+  "retractions_sha256": "b9781df31f7fe72ee34ee30a97a384afb5b0ddc6f87a0ddef62bd0b779ebf2f5"
+}

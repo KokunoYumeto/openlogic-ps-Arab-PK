@@ -1,0 +1,102 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: proofs-to-terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{pt}
+
+\olsection{\usetoken{P}{derivation} په ثبوت ترمونو بدلول}
+
+د فطري استنتاج !!{proof}s په ثبوت ترمونو بدلول، يعنې
+د \Log{N2i}~!!{proof}s د \Log{tN2i}~په !!{proof}s
+اړول، ډېر نېغ بهير دے۔ يوازې دومره کوو چې په
+!!{derivation} کښې د هر سېکوېنټ په ښي‌لاس اړخ کښې
+د هر !!{formula} کيڼې خوا ته يو ثبوت ترم وليکو؛ په
+پايله کښې د $\Gamma \Sequent M : !A$ په بڼه
+سېکوېنټونه ترلاسه کېږي۔ بيا وايو چې $M$ په
+سياق~$\Gamma$ کښې د~$!A$ \emph{شاهد} دے۔ کوم ثبوت
+ترم ليکل پکار دي، دا د \Log{tN2i} قواعد په بشپړ
+ډول ټاکي۔
+
+\begin{prop}
+په \Log{N2i} کښې د $\Gamma \Sequent !A$ هر
+!!{proof}~$\delta$ ته په \Log{tN2i} کښې د
+$\Gamma \Sequent N : !A$ !!a{proof}~$\delta'$
+ورسره برابر وي۔ ثبوت ترم $N$ په يکتا ډول د~$\delta$
+له مخې ټاکل کېږي۔
+\end{prop}
+
+\begin{proof}
+د~$\delta$ په لوړوالي استقرا کوو۔ که $\delta$ د
+$x:!A \Sequent !A$ اکسيوم وي، نو $\delta'$ د
+$x:!A \Sequent x:!A$ اکسيوم دے۔ که $\delta$ په
+يوه استنتاجي قاعده پاې ته رسېږي، استقرايي فرضيه
+هرې مقدمې ته ثبوت ترم ورکوي او د دغو مقدمو سره
+برابر د سېکوېنټونو \Log{tN2i}-!!{proof}s ورکوي چې
+دغه ثبوت ترمونه پکې شامل وي۔ د \Log{tN2i} اړونده
+قاعده کاروو؛ اړوند ثبوت ترم د \Log{tN2i} استنتاجي
+قاعده ټاکي۔
+\end{proof}
+
+\begin{ex}
+  په \Log{N1i} کښې د $(!A \land !B) \lif (!B \land !A)$
+  دا ډېر ساده !!{proof} وګورئ:
+\[
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[2]}
+  \UnaryInfC{$!B$}
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[1]}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Intro\land}
+  \BinaryInfC{$!B \land !A$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+  \DisplayProof
+  \]
+  په \Log{N2i} کښې ئې بڼه داسې ده:
+\[
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter !B$
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+  ثبوت ترمونه له پاسه ښکته ټاکو۔ د اکسيومونو ثبوت
+  ترمونه هماغه د سياق متغير~$x$ دے۔ بيا له
+  $\Elim\land[i]$ سره تړلي ثبوت ترمونه
+  $\proj{2}{x}$ او~$\proj{1}{x}$ ټاکل کېږي۔ کله چې
+  \Intro{\land} کاروو، دغه دوه ثبوت ترمونه يوځاے
+  کوو: $\pair{\proj{2}{x}}{\proj{1}{x}}$۔ په پاې
+  کښې د \Intro{\lif} قاعده يو $\lambd$-تجريد
+  کاروي،~$x$ تړي او ثبتوي چې $x$ د~$!A \land !B$
+  فرض نښه وه: $\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]$۔ نو په
+  \Log{tN2i} کښې !!{proof} داسې کېږي:
+\[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+\end{ex}
+
+\end{document}
