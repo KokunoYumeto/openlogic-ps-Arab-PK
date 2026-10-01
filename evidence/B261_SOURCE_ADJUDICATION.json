@@ -1,0 +1,49 @@
+{
+  "new_unique_defects": [],
+  "whole363_existing025026_reverified": true,
+  "all_prior_363_bytes_retained": true,
+  "686_contextual_capture_avoidance": "Original0345 explicitly defines substitution after needed bound-variable renaming. The introduction parenthetical and subsequent free-occurrence wording carry that established definition; no new source defect is counted.",
+  "686_natural_deduction_scope": "Original part/chapter is intuitionistic; all displayed introduction/elimination rules belong to that context. No extension to classical proofs or claim of simply typed Turing completeness is made.",
+  "686_composition_word": "The displayed (M1M2) is function application. Native wording follows this exact displayed construction; the informal English composition word is not counted as a new mathematical defect.",
+  "686_normality_antecedent": "The final term with no contractible subterm is normal, not the computation sequence.",
+  "686_diagram_policy": "Original mathematical trees retained; only two text{corresponds to} labels localized.",
+  "686_table_policy": "All10rows and both headings localized; original3-column specification with two populated columns is legal and retained.",
+  "no_original_exercise_solved": true,
+  "no_new_optional_theorem": true,
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T13:06:41.805133+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/propositions-as-types/introduction.tex",
+      "actually_read_scope": "entire frozen original and complete private target;363 also every byte of original Sol6 target and both existing corrections",
+      "sha256": "d1e4e979af0f251cc4e7d93d8f32e4e0b9e2e8b71e349b0deecfa78649f460c9"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/de-bruijn.tex",
+      "actually_read_scope": "entire frozen original and complete private target;363 also every byte of original Sol6 target and both existing corrections",
+      "sha256": "7a9ea3ae6329f8dc7620476401d748941516cf27e5ec29a48f57d422dd7d9d35"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "actually_read_scope": "complete original source; capture-avoiding substitution explicitly includes bound-variable renaming",
+      "sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/beta.tex",
+      "actually_read_scope": "actual first110lines; one-step/multistep definitions, normal forms and examples",
+      "sha256": "42355f0467bb8d19038e3cadd4b5f0d2ce58720cbed3130cb74f86f7be4fc0dd"
+    },
+    {
+      "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "actually_read_scope": "entire original chapterdriver/editorial and imports; explicitly experimental intuitionistic context",
+      "sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}
