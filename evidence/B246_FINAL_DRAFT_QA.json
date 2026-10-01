@@ -1,0 +1,123 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T07:23:05.121953+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0672",
+      "source_path": "content/proof-theory/normalization/introduction.tex",
+      "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+      "source_bytes": 2388,
+      "target_sha256": "88a6f97604d3f14d509bcb54273bed32918c01cc1e096256d2f0e53fd64a4f9f",
+      "target_bytes": 4539,
+      "paired_blocks": 9,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "single_original_diagram_retained": true,
+        "only_antecedent_diagram_label_changed": true,
+        "open_assumption_scope_disclosed": true
+      },
+      "source_correction_ids": [
+        "OLCMP-167",
+        "OLCMP-168",
+        "OLCMP-169"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "target_sha256_before": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "target_sha256": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_sha256_after": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_bytes": 2873,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLSOL-019"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0349-FAIR-SEARCH-NONTERMINATION"
+      ]
+    },
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "target_sha256_before": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "target_sha256": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_sha256_after": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_bytes": 3435,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLI-HIST-CHURCH-DEATH-DATE",
+        "OLI-HIST-CHURCH-THESIS-LABEL"
+      ],
+      "scope": "Two precise received/shared historical fixes only; not a new full623/wholeSol6 audit."
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0672": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "math_exact_per_source_block": true,
+      "single_original_diagram_retained": true,
+      "only_antecedent_diagram_label_changed": true,
+      "open_assumption_scope_disclosed": true
+    },
+    "OLP-0349": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "math_exact_per_source_block": true,
+      "only_first_numeral_braces_change_prior_math": true,
+      "five_recursive_predicate_names_retained": true,
+      "nontermination_not_decision_disclosed": true,
+      "no_extra_formal_proof": true
+    },
+    "OLP-0623": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "math_exact_per_source_block": true,
+      "exactly_two_requested_text_replacements": true,
+      "citations_and_structure_exact": true,
+      "no_added_explanatory_paragraph": true
+    }
+  },
+  "mathematical_or_historical_source_corrections_added": 6,
+  "unique_underlying_shared_history_fixes": 2,
+  "source_preaudit_sha256": "ec6316b1c5fe40dbf2a54c53b27477624a84934b3cc796340ae861f622192793"
+}

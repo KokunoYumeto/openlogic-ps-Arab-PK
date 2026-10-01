@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 671,
-    "structural_pass": 671,
+    "draft_units": 672,
+    "structural_pass": 672,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+  "batch": "PS-B246-NORMALIZATION-FAIR-SEARCH-CHURCH",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11923,7 +11923,7 @@
       "unit_id": "OLP-0349",
       "path": "content/lambda-calculus/introduction/lambda-computable.tex",
       "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
-      "translation_sha256": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "translation_sha256": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
       "source_blocks": 8,
       "target_blocks": 8,
       "checks": {
@@ -11945,8 +11945,19 @@
       "allowed_residual_english": [],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [],
-      "status": "structural-pass"
+      "source_correction_ids": [
+        "OLSOL-019"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$X\\numm_0\\ldots\\numm_{n-1}$"
+        ],
+        "target_only": [
+          "$X\\num{m_0}\\ldots\\num{m_{n-1}}$"
+        ],
+        "expected_by_source_correction": true
+      }
     },
     {
       "unit_id": "OLP-0350",
@@ -21294,7 +21305,7 @@
       "unit_id": "OLP-0623",
       "path": "content/history/biographies/alonzo-church.tex",
       "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
-      "translation_sha256": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "translation_sha256": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
       "source_blocks": 10,
       "target_blocks": 10,
       "checks": {
@@ -21322,7 +21333,10 @@
       ],
       "unexpected_residual_english": [],
       "extra_locale_macros": {},
-      "source_correction_ids": [],
+      "source_correction_ids": [
+        "OLI-HIST-CHURCH-DEATH-DATE",
+        "OLI-HIST-CHURCH-THESIS-LABEL"
+      ],
       "status": "structural-pass"
     },
     {
@@ -23182,6 +23196,50 @@
           "$\\Log{G2c}\\(\\Log{G2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$",
           "$!B\\ident\\lfalse$",
           "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0672",
+      "path": "content/proof-theory/normalization/introduction.tex",
+      "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+      "translation_sha256": "88a6f97604d3f14d509bcb54273bed32918c01cc1e096256d2f0e53fd64a4f9f",
+      "source_blocks": 9,
+      "target_blocks": 9,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-167",
+        "OLCMP-168",
+        "OLCMP-169"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\delta_1$",
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\delta_3$",
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
         ],
         "expected_by_source_correction": true
       }
@@ -41919,6 +41977,54 @@
       "passage": "OLP-0348-B010",
       "reverse_paraphrase": "لامبډا حساب يوازې تجريد او تطبيق لري خو هره محاسبوي کړنلاره پلې کولے شي؛ د اصل تشريح او محدودې وسيلې عين دي۔",
       "finding": "بشپړ اصل او هر رسمي بلاک وکتل شو؛ يوازې ثبت شوي لږ سمونونه او د ثبوت د تشې څرګندونه شته؛ د سرچينې نۀ ورکړے شوے ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0672",
+      "passage": "OLP-0672-B005",
+      "reverse_paraphrase": "د عادي کولو د پېژندنې سرليک بشپړ دے۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0672",
+      "passage": "OLP-0672-B006",
+      "reverse_paraphrase": "د شرطي د داخلولو او سمدستي ايستلو تاو راتاو اصل رسم ساتلے دے۔ د مقدمې ثبوت لومړے، د شرطي بدنې فرعي ثبوت دويم او د شرطي بشپړ ثبوت بېل درېيم نوم لري؛ ۱۶۷ او ۱۶۸ نقل شوې ګډې نښې سموي۔ نېغه لار د همدې پرانيستې بدنې سره د مقدمې د ثبوت ګرافټ دے؛ دلته نوے رسمي ثبوت نۀ جوړېږي۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0672",
+      "passage": "OLP-0672-B007",
+      "reverse_paraphrase": "د داخلولو او سمدستي ايستلو تاو راتاو لرې کولو ته عادي کول وايو؛ پايله عادي ثبوت يا په عادي بڼه ثبوت دے، د سرچينې ټول ټوکنونه عين دي۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0672",
+      "passage": "OLP-0672-B008",
+      "reverse_paraphrase": "د عادي کولو او پرېکون لرې کولو پېچلتيا، کلاسيکي او حدسي پرتله او د اوږدوالي ټول اصل توپيرونه ساتل شوي دي۔ ۱۶۹ د فرعي‌فارمول قوي دعوې حد سموي: د حدسي پايلې ترڅنګ پاتې پرانيستي فرضونه او د لومړي ترتيب اړوند کمي تعويضي موردونه هم رانغاړي؛ کلاسيکي قوي خاصيت نۀ دعوه کېږي۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0349",
+      "passage": "OLP-0349-B004",
+      "reverse_paraphrase": "لامبډا-تعريفېدونکو تابعو د محاسبه کېدنې سرليک او اصلي ټوکن عين دي۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0349",
+      "passage": "OLP-0349-B005",
+      "reverse_paraphrase": "که جزوي تابع يو لامبډا ترم تعريف کړي، نو محاسبه کېدونکې ده؛ اصل قضیه بشپړه ده۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0349",
+      "passage": "OLP-0349-B006",
+      "reverse_paraphrase": "د ورکړو عددونو د چرچ عددنښو تطبيق د ټولو يو-ګامي راکمونو په پرله‌پسې کچو لټوي۔ کومه محدودې لارې لرونکې عددنښه نۀ پرېږدي، د عددنښې اړوند طبيعي عدد بېرته ورکوي۔ که عددنښه نۀ راځي، لټون دوام کوي او تابع په دغه ننوت ناتعريفه ده؛ د ناتعريفه والي پرېکړه نۀ کوي۔ ۰۱۹ د لومړي تطبيق په عددنښو کښې ټول شاخصونه د نوم د قوسونو دننه سموي، د وروستي درست تطبيق سره سم۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0349",
+      "passage": "OLP-0349-B007",
+      "reverse_paraphrase": "د چرچ اصل غيرصوري کړنلاره محاسبه کېدونکې بولي؛ د اصل ښه ثبوت يوازې د بنسټيزو بازګشتي تابعو او اړيکو په ذريعه د لټون خاکه ورکوي۔ ټول پنځه نومونه، د راکمونو لړۍ او عددنښې ته د رسېدو شرط عين دي؛ د سرچينې اوږد نۀ ورکړے شوے تفصيلي ثبوت نۀ زياتېږي۔",
+      "finding": "هر اصلي بلاک او قاعدوي شرط وکتل شو؛ د سرچينې نۀ ورکړے شوے مستقل ثبوت نۀ زياتېږي۔"
     }
   ],
   "builds": [

@@ -1,0 +1,216 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T07:23:05.121953+00:00",
+  "unit_id": "OLP-0672",
+  "status": "complete normalization introduction, whole349 and two exactChurch fixes verified; dualQA/acceptance pending",
+  "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+  "target_sha256": "88a6f97604d3f14d509bcb54273bed32918c01cc1e096256d2f0e53fd64a4f9f",
+  "paired_source_blocks": 9,
+  "source_proof_trees": 1,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-167",
+      "unit_id": "OLP-0672",
+      "block": 6,
+      "exact_original_text": "Your\n!!{proof}~$\\delta_1$ of~$!A \\lif !B$",
+      "exact_proposed_source_text": "Your\n!!{proof}~$\\delta_3$ of~$!A \\lif !B$",
+      "reason": "Delta1 was introduced as the proof of antecedent A, while delta2 derives B under A. Name the complete conditional proof delta3 rather than reusing delta1 for a different formula.",
+      "classification": "normalization-conditional-proof-identity",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 15,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\delta_1$"
+        ],
+        "target_only": [
+          "$\\delta_3$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-168",
+      "unit_id": "OLP-0672",
+      "block": 6,
+      "exact_original_text": "\\[\n\\AxiomC{$\\Discharge{!A}{x}$}\n\\RightLabel{$\\delta_2$}\n\\DeduceC{$!B$}\n\\DischargeRule{\\Intro{\\lif}}{x}\n\\UnaryInfC{$!A \\lif !B$}\n\\AxiomC{}\n\\RightLabel{$\\delta_2$}\n\\DeduceC{$!A$}\n\\RightLabel{\\Elim{\\lif}}\n\\BinaryInfC{$!B$}\n\\DisplayProof\n\\]",
+      "exact_proposed_source_text": "\\[\n\\AxiomC{$\\Discharge{!A}{x}$}\n\\RightLabel{$\\delta_2$}\n\\DeduceC{$!B$}\n\\DischargeRule{\\Intro{\\lif}}{x}\n\\UnaryInfC{$!A \\lif !B$}\n\\AxiomC{}\n\\RightLabel{$\\delta_1$}\n\\DeduceC{$!A$}\n\\RightLabel{\\Elim{\\lif}}\n\\BinaryInfC{$!B$}\n\\DisplayProof\n\\]",
+      "reason": "The right-hand premise proves A and is the stated delta1 proof; its delta2 label copied from the conditional-body proof is wrong. Retain the left delta2 label and every formula/rule.",
+      "classification": "normalization-antecedent-proof-diagram-identity",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 20,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-169",
+      "unit_id": "OLP-0672",
+      "block": 8,
+      "exact_original_text": "sub-!!{formula} property, that you can always !!{prove} a result using\nonly sub-!!{formula}s of the result in your !!{proof}",
+      "exact_proposed_source_text": "sub-!!{formula} property, that in intuitionistic natural deduction you can !!{prove} a result using\nonly sub-!!{formula}s of the result or remaining open assumptions (with relevant quantified instances in first-order logic) in your !!{proof}",
+      "reason": "Normal modus ponens from P implies Q and P to Q already uses an open assumption not a subformula of Q. Context must be included. First-order universal elimination also needs instantiated subformula meaning, not literal occurrence alone. Actual chapter normalization theorems are N1i/N2i; no blanket strong classical property is claimed.",
+      "classification": "subformula-property-open-assumption-and-system-scope",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 55,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLSOL-019",
+      "unit_id": "OLP-0349",
+      "block": 6,
+      "exact_original_text": "$X \\num m_0 \\ldots \\num\nm_{n-1}$",
+      "exact_proposed_source_text": "$X \\num{m_0} \\ldots \\num{m_{n-1}}$",
+      "reason": "The actual num macro takes one mandatory argument and overlines it. Unbraced num m_0 consumes only m, leaving the subscript outside the numeral; the final search formula correctly braces each m_i. Restore only those two first-input numeral braces. Fair level search and nontermination prose are a separate translation clarity choice, not a claimed new source defect.",
+      "classification": "lambda-input-numeral-argument-braces",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 21,
+      "qa_math_exception": {
+        "source_only": [
+          "$X\\numm_0\\ldots\\numm_{n-1}$"
+        ],
+        "target_only": [
+          "$X\\num{m_0}\\ldots\\num{m_{n-1}}$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLI-HIST-CHURCH-DEATH-DATE",
+      "unit_id": "OLP-0623",
+      "block": 9,
+      "exact_original_text": "August 1, 1995",
+      "exact_proposed_source_text": "August 11, 1995",
+      "reason": "Actually viewed Enderton obituary printed488, PDFpage3: death August11,1995. Narrow target date correction only; original frozen source retained. Shared canonical ID, no new language-specific defect.",
+      "classification": "historical-death-date",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 40,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLI-HIST-CHURCH-THESIS-LABEL",
+      "unit_id": "OLP-0623",
+      "block": 10,
+      "exact_original_text": "(Church's Thesis)",
+      "exact_proposed_source_text": "",
+      "reason": "Actually viewed Enderton obituary printed486, PDFpage1: effective calculability identification is a thesis, Entscheidungsproblem undecidability is a theorem. Remove only the misplaced parenthetical and its now-unneeded comma, retain both Church1936,Church1936a citations and the correct preceding account. Alias OLINC308 is this same label defect, not a third error.",
+      "classification": "thesis-vs-undecidability-theorem-label",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 45,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0672",
+      "source_path": "content/proof-theory/normalization/introduction.tex",
+      "sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0673",
+      "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+      "sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0677",
+      "source_path": "content/proof-theory/normalization/segments.tex",
+      "sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0668",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "actually_read": true,
+      "locators": [
+        "entire actual source"
+      ]
+    },
+    {
+      "source_path": "content\\proof-theory\\normalization\\translations.tex",
+      "sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+      "actually_read_scope": "lines276–326 only; actual subformula-corollary context, whole source not yet audited"
+    },
+    {
+      "source_path": "open-logic-config.sty",
+      "sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+      "actually_read_scope": "lines753–770; exact num mandatory-argument declaration"
+    }
+  ],
+  "primary_biography_authority": {
+    "source_title": "H.B.Enderton, In Memoriam: Alonzo Church1903–1995",
+    "doi": "10.1017/S1079898600008040",
+    "primary_pdf_sha256": "d99ea4fcb58671e3962f67758ccf7c9dfa3a905159228f85a8e56c490c7d12e1",
+    "printed_pages": [
+      486,
+      488
+    ],
+    "pdf_pages_1based": [
+      1,
+      3
+    ],
+    "actual_consultation": "Both actual primary page PNGs viewed in this turn, independent of manager claim.",
+    "page_images": [
+      {
+        "pdf_page_1based": 1,
+        "sha256": "8f2d5e3a9fb0ea0f8a0177171d6c01afea93474ed29ec03e43389b78b533087c"
+      },
+      {
+        "pdf_page_1based": 3,
+        "sha256": "1b0b445a5b334a11e376c64e4389ef07e5ee6720abc0925338126ae4127d938b"
+      }
+    ],
+    "evidence_limit": "Only exactdeathdate and thesis/theorem distinction certified here; not a full biography audit or language canon."
+  },
+  "scope_limits": "No missingproof invented; Church onlytwo exactchanges/no extra target explanation/sharedIDs retained.",
+  "next_action": "DualQA/independent canonical replay, accept672 and coherent sourcecheckpoint including whole349 and narrow623repair; full722 active."
+}

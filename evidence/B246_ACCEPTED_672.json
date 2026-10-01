@@ -1,0 +1,109 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-10-01T07:23:28.053188+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0672",
+  "draft_units": 672,
+  "remaining_unaccepted_units": 50,
+  "unit_ids": [
+    "OLP-0672"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "38b86644658f6d1892bbcb0992783108373d14e6665d7753eb86fa44c70dfae2",
+  "corpus_qa_sha256": "a8ca7ce36f6b69772e0ec438024243e8b59db929c7ac44ecb221e07ef46af1d8",
+  "canonical_replay_sha256": "194e8a7974aea503ccfd4e009f6449c8c149c74e0c8d693e13f52a678bdd6748",
+  "qa_sha256": "9b572040c16bf4969f1a0bee5b38ea63ee51aac87186d93d4fba86512cceab08",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0672",
+      "source_path": "content/proof-theory/normalization/introduction.tex",
+      "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+      "source_bytes": 2388,
+      "target_sha256": "88a6f97604d3f14d509bcb54273bed32918c01cc1e096256d2f0e53fd64a4f9f",
+      "target_bytes": 4539,
+      "paired_blocks": 9,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "single_original_diagram_retained": true,
+        "only_antecedent_diagram_label_changed": true,
+        "open_assumption_scope_disclosed": true
+      },
+      "source_correction_ids": [
+        "OLCMP-167",
+        "OLCMP-168",
+        "OLCMP-169"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "target_sha256_before": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "target_sha256": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_sha256_after": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_bytes": 2873,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLSOL-019"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0349-FAIR-SEARCH-NONTERMINATION"
+      ]
+    },
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "target_sha256_before": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "target_sha256": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_sha256_after": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_bytes": 3435,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLI-HIST-CHURCH-DEATH-DATE",
+        "OLI-HIST-CHURCH-THESIS-LABEL"
+      ],
+      "scope": "Two precise received/shared historical fixes only; not a new full623/wholeSol6 audit."
+    }
+  ],
+  "aligned_blocks": 9950,
+  "segment_canon_uses": 6311,
+  "semantic_samples": 3130,
+  "canonical_counts": {
+    "decisions": 935,
+    "occurrences": 32405,
+    "terminology_decisions": 333,
+    "source_correction_decisions": 557,
+    "priority_decisions": 558,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14186
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0673 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0350; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

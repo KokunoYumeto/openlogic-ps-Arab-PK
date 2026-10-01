@@ -1,0 +1,83 @@
+{
+  "schema": "ps-shared-historical-two-fix/1",
+  "utc": "2026-10-01T07:23:05.121953+00:00",
+  "status": "local repaired; dualQA/coherent publiccheckpoint pending",
+  "unit": {
+    "unit_id": "OLP-0623",
+    "source_path": "content/history/biographies/alonzo-church.tex",
+    "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+    "target_sha256_before": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+    "target_sha256": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+    "target_sha256_after": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+    "target_bytes": 3435,
+    "paired_blocks": 10,
+    "source_correction_ids": [
+      "OLI-HIST-CHURCH-DEATH-DATE",
+      "OLI-HIST-CHURCH-THESIS-LABEL"
+    ],
+    "scope": "Two precise received/shared historical fixes only; not a new full623/wholeSol6 audit."
+  },
+  "canonical_shared_ids": [
+    "OLI-HIST-CHURCH-DEATH-DATE",
+    "OLI-HIST-CHURCH-THESIS-LABEL"
+  ],
+  "aliases_not_additional_defects": [
+    "OLINC-308"
+  ],
+  "primary_authority": {
+    "source_title": "H.B.Enderton, In Memoriam: Alonzo Church1903–1995",
+    "doi": "10.1017/S1079898600008040",
+    "primary_pdf_sha256": "d99ea4fcb58671e3962f67758ccf7c9dfa3a905159228f85a8e56c490c7d12e1",
+    "printed_pages": [
+      486,
+      488
+    ],
+    "pdf_pages_1based": [
+      1,
+      3
+    ],
+    "actual_consultation": "Both actual primary page PNGs viewed in this turn, independent of manager claim.",
+    "page_images": [
+      {
+        "pdf_page_1based": 1,
+        "sha256": "8f2d5e3a9fb0ea0f8a0177171d6c01afea93474ed29ec03e43389b78b533087c"
+      },
+      {
+        "pdf_page_1based": 3,
+        "sha256": "1b0b445a5b334a11e376c64e4389ef07e5ee6720abc0925338126ae4127d938b"
+      }
+    ],
+    "evidence_limit": "Only exactdeathdate and thesis/theorem distinction certified here; not a full biography audit or language canon."
+  },
+  "exact_target_replacements": [
+    [
+      "د اګست پر 1مه",
+      "د اګست پر 11مه"
+    ],
+    [
+      "چرچ اصلي ليکنې (د چرچ اصل)،",
+      "چرچ اصلي ليکنې"
+    ]
+  ],
+  "checks": {
+    "ids": true,
+    "optional_tags": true,
+    "structural_macros": true,
+    "math_exact_exceptions": true,
+    "lf_target": true,
+    "tokens_equal": true,
+    "comments_equal": true,
+    "environment_order_equal": true,
+    "math_exact_per_source_block": true,
+    "exactly_two_requested_text_replacements": true,
+    "citations_and_structure_exact": true,
+    "no_added_explanatory_paragraph": true
+  },
+  "intake_evidence": "C:\\interlanguage-task-state\\openlogic-internationalization\\source-errata\\owner-intake-20260930\\CHURCH_EXPANDED_APPLICABILITY_99772394.json",
+  "intake_evidence_sha256": "54c87809435ea6121124ad1511f3f09b702469b3e7f6ce828ef8bcd83336df46",
+  "owner_local_intake_pointer": "OWNER_INTAKE_20260930_COMPLETED.json",
+  "foreign_manager_pointer_edited": false,
+  "new_target_explanatory_paragraph": false,
+  "new_source_classification_per_language": false,
+  "publication": "Include only in coherent B246 source checkpoint; no isolated rebuild or release."
+}

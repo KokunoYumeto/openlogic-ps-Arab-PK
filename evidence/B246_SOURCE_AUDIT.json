@@ -1,0 +1,183 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T07:23:05.121953+00:00",
+  "status": "بشپړ OLP-0672، بشپړه OLP-0349 بياکتنه او د چرچ دوه محدود مشترک سمونونه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0672",
+      "source_path": "content/proof-theory/normalization/introduction.tex",
+      "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+      "source_bytes": 2388,
+      "target_sha256": "88a6f97604d3f14d509bcb54273bed32918c01cc1e096256d2f0e53fd64a4f9f",
+      "target_bytes": 4539,
+      "paired_blocks": 9,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "single_original_diagram_retained": true,
+        "only_antecedent_diagram_label_changed": true,
+        "open_assumption_scope_disclosed": true
+      },
+      "source_correction_ids": [
+        "OLCMP-167",
+        "OLCMP-168",
+        "OLCMP-169"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "target_sha256_before": "9164552b35050be52e33e019943fa0057a15e928fb4340c7fc1a2954d9cf9422",
+      "target_sha256": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_sha256_after": "65cd0796add53ad2baa7aac7dda12e8e9aa0060fdccf400457b3ef5487e8c3e0",
+      "target_bytes": 2873,
+      "paired_blocks": 8,
+      "source_correction_ids": [
+        "OLSOL-019"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0349-FAIR-SEARCH-NONTERMINATION"
+      ]
+    },
+    {
+      "unit_id": "OLP-0623",
+      "source_path": "content/history/biographies/alonzo-church.tex",
+      "source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+      "target_sha256_before": "53de2ab2cea8b31b3d2373b5a206ba9f10f3dcb29223a5263c02518b19412e7f",
+      "target_sha256": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_sha256_after": "82bddda88e4a2be0e3decfee6ff8b32835024bfda35499681b59be49128f5680",
+      "target_bytes": 3435,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLI-HIST-CHURCH-DEATH-DATE",
+        "OLI-HIST-CHURCH-THESIS-LABEL"
+      ],
+      "scope": "Two precise received/shared historical fixes only; not a new full623/wholeSol6 audit."
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے بالغ علمي نثر لومړنے دے؛ د عادي کولو عين پاکستانے مرکب مستقل چاپي تصديق نۀ لري۔",
+      "evidence_limit": "پاکستانے بالغ علمي نثر لومړنے دے؛ د عادي کولو عين پاکستانے مرکب مستقل چاپي تصديق نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "37",
+      "pdf_page_1based": 42,
+      "page_image_sha256": "23547670f5d3c65140dea9fc3f374af9fc1934b2abdda60d403943c56f8ffa71",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د ثبوت تاو راتاو اصلي N1 قاعده ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ بديهي ثبوت او شېما ښيي؛ د ثبوت تاو راتاو اصلي N1 قاعده ټاکي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ فرعي‌فارمول خاصيت د اصل نظام، سياق او د کميت موردونو له شرطونو سره دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ قواعد او ثبوت ترتيب ښيي؛ فرعي‌فارمول خاصيت د اصل نظام، سياق او د کميت موردونو له شرطونو سره دے۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P48-MODUS-PONENS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "48",
+      "pdf_page_1based": 53,
+      "page_image_sha256": "3182d952a9b827e583f9e88faa258fe7ad0ce1d00627f24bd7b65ee576cca76f",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ شرطي او د مقدمو ګډه پايله ښيي؛ د عادي شرطي ايستلو مخالف مثال په باقي فرض پورې تړلے دے۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ شرطي او د مقدمو ګډه پايله ښيي؛ د عادي شرطي ايستلو مخالف مثال په باقي فرض پورې تړلے دے۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے علمي نثر د جملې روښانه معنا او کښې ښيي؛ د طبقه‌وار لټون او ناتعريفه ننوت عين پاکستانے مرکب مستقل چاپي تصديق نۀ لري۔",
+      "evidence_limit": "پاکستانے علمي نثر د جملې روښانه معنا او کښې ښيي؛ د طبقه‌وار لټون او ناتعريفه ننوت عين پاکستانے مرکب مستقل چاپي تصديق نۀ لري۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ تابعې او ارجاعي تعريف ښيي؛ د چرچ عددنښو قوسونه او د ناتعريف شوي ننوت نه‌تم کېدنه اصلي لامبډا تعريف ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ تابعې او ارجاعي تعريف ښيي؛ د چرچ عددنښو قوسونه او د ناتعريف شوي ننوت نه‌تم کېدنه اصلي لامبډا تعريف ټاکي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P48-MODUS-PONENS",
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [
+    "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+  ],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLCMP-167",
+    "OLCMP-168",
+    "OLCMP-169",
+    "OLSOL-019",
+    "OLI-HIST-CHURCH-DEATH-DATE",
+    "OLI-HIST-CHURCH-THESIS-LABEL"
+  ],
+  "new_review_entry_ids": [
+    "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+    "DEC-PS-0349-FAIR-SEARCH-NONTERMINATION",
+    "DEC-OLCMP-167",
+    "DEC-OLCMP-168",
+    "DEC-OLCMP-169",
+    "DEC-OLSOL-019",
+    "DEC-OLI-HIST-CHURCH-DEATH-DATE",
+    "DEC-OLI-HIST-CHURCH-THESIS-LABEL"
+  ],
+  "revised_review_entry_ids": [],
+  "semantic_samples_added": 8,
+  "focused_qa_sha256": "ba851cb16ba352f69dcdde84d34e19612b18cca82bcee2f1598f3778b7f63a4d",
+  "model_provenance_sha256": "4ec34110a2142bc616b9da0e63b11e0e8c0de192ff84fb2d5a2550ed88018dfb",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0349.json",
+  "related_reaudit_sha256": "a1a829bdffe68fba6266419467841092b9cae7050a02c5b82c204379104f4693",
+  "shared_history_receipt": "B246_CHURCH_SHARED_CORRECTIONS.json",
+  "shared_history_receipt_sha256": "2ab93195ba9720da3e8628ef06a03cb046af0081eb0800a596ff210688634460",
+  "unresolved": "۵۰ واحدونه، د تجربوي برخې بشپړ لوستپاڼيز سياق، EPUB، بشپړه پښتو تشريح او د پخواني ماډل ۲۶۰ بشپړ واحدونه پاتې دي۔",
+  "next_executable_action": "د ۶۷۲ واحدونو دوه‌ګونې کتنه او عين‌بايټه بياجوړونه، بيا منل؛ بشپړ OLP-0673 او OLP-0350 دوام؛ د TeX ځای ژباړه نۀ دروي۔"
+}
