@@ -1,0 +1,29 @@
+{
+  "schema": "ps-reader-rendering-defect-resolution/1",
+  "utc": "2026-10-01T00:01:41.238975+00:00",
+  "status": "RESOLVED; exact original Latin credit order visually verified",
+  "original_defect_receipt": "B242_READER_CREDIT_BIDI_DEFECT.json",
+  "original_defect_sha256": "c5a6a86ec2cf54350fdcebdac1410fb9d950731b881340cc31b08e05c4ea905c",
+  "repair_receipt": "B243_READER_CREDIT_REPAIR.json",
+  "repair_sha256": "0486e0687165d4f056cf211fe6b55ebb019baaa5ec24d9d2aa3401e83837628a",
+  "reader_tex_sha256": "9eead9486d8a1a34ca404c3940b6126a6fc5b5371260bb3b1568cc857ab0b4bf",
+  "pdf_sha256": "4d306f448636ce07ec4ff3d380d989bc5d339d07538ce1934feca6f7cb6b7b22",
+  "source_and_target_credit_bytes_unchanged": true,
+  "complete_original_credit_phrases_isolated": 3,
+  "inspected_pages": [
+    {
+      "physical_page": 463,
+      "printed_label": "462",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b243\\visual-qa\\page-463.png",
+      "sha256": "9046ba12700146cc31a617072b2e06231090a1a76cf00eb9d206b06133e099b2"
+    },
+    {
+      "physical_page": 464,
+      "printed_label": "463",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b243\\visual-qa\\page-464.png",
+      "sha256": "0bc068d7e7ad75f40917bf4ce23e20fc13760fa00c19c2a831b03112bb644f24"
+    }
+  ],
+  "finding": "Printed462 shows both full human credits in correct LTR word order inside the Pashto part note; printed463 shows the chapter credit in correct LTR order. No clipping observed; original names and attribution remain intact.",
+  "expanded_reader_accepted": false
+}

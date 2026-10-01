@@ -1,0 +1,34 @@
+{
+  "schema": "ps-reader-pending-source-scope/1",
+  "utc": "2026-10-01T00:01:41.238975+00:00",
+  "status": "OPEN next source comparison; no whole0347 acceptance claimed",
+  "unit_id": "OLP-0347",
+  "source_path": "content/lambda-calculus/introduction/currying.tex",
+  "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+  "current_target_sha256": "9ee92dcbf7a71bed58e9eaaaa88d3a8734c2456658c836a82759fa194b4c0370",
+  "source_definition_context": "OLP-0345 capture-avoiding substitution",
+  "reader_pdf_sha256": "4d306f448636ce07ec4ff3d380d989bc5d339d07538ce1934feca6f7cb6b7b22",
+  "printed_page_with_two_argument_formula": "466",
+  "physical_page": 467,
+  "page_png_sha256": "552bb147068d745d655acb64288a06c7b749cbf8b87691c9ff54b7bc121ef3de",
+  "counterexamples": {
+    "two_argument_example": {
+      "M": "y",
+      "N": "z",
+      "original_term": "(\\lambda x.\\lambda y.x) y z",
+      "capture_avoiding_result": "y",
+      "unqualified_printed_result": "z",
+      "binder_must_be_fresh_for_first_argument": true
+    },
+    "general_example": {
+      "n": 2,
+      "body": "x1",
+      "M1": "x2",
+      "M2": "z",
+      "capture_avoiding_curried_result": "x2",
+      "naive_sequential_substitution_result": "z"
+    }
+  },
+  "finding": "The currying diagrams require bound parameters alpha-renamed fresh for argument free variables. The current source text omits this restriction/renaming convention; exact counterexamples checked. Existing undefined-P-to-N correction remains valid.",
+  "next_action": "Complete independent whole0347 review; disclose the missing freshness convention with minimal native source correction, preserve formal formulas after appropriate alpha-renaming, and reverify OLLAM001. No invented original theorem proof."
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-09-30T23:48:16.134466+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0669",
+  "draft_units": 669,
+  "remaining_unaccepted_units": 53,
+  "unit_ids": [
+    "OLP-0669"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "05c1c28b0495455308af87ae0be305356ba807e37d3b7fe834e5874a7cecd70c",
+  "corpus_qa_sha256": "de0d073fa30b43a24b997e2f6b059a231821218c3b64feb31834e59de55fda8d",
+  "canonical_replay_sha256": "c0f1fb41181178ebcadf6ddddc872c80841d5242596bb7bdfbe74533f89ebc8a",
+  "qa_sha256": "5ac891900a44c0605e3cddff5dbb77ac80e7e54596f806b8fdb5aa1f83a6165e",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0669",
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "source_bytes": 5618,
+      "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+      "target_bytes": 7658,
+      "paired_blocks": 19,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "math_exact_per_source_block": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "all_seven_proof_diagrams_and_axiom_retained": true,
+        "only_registered_diagrams_change_normalized_math": true,
+        "middle_context_marker_exact": true,
+        "final_N1_converted_subproofs_exact": true,
+        "original_N2_premise_proof_unchanged": true,
+        "original_other_cases_remain_exercises": true
+      },
+      "source_correction_ids": [
+        "OLCMP-145",
+        "OLCMP-146",
+        "OLCMP-147"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0346",
+      "source_path": "content/lambda-calculus/introduction/church-rosser.tex",
+      "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
+      "target_sha256_before": "5a69dab235bc7175fd7aadc06241fb884d1050db89b23ddae16d3bcfb74c4986",
+      "target_sha256": "4903508e526f3eae306c60c6b93c246cb465d6679d142696bea55b48fdb8a6d0",
+      "target_sha256_after": "4903508e526f3eae306c60c6b93c246cb465d6679d142696bea55b48fdb8a6d0",
+      "target_bytes": 1687,
+      "paired_blocks": 9,
+      "source_correction_ids": [],
+      "wording_choice_ids": [
+        "DEC-PS-0346-CHURCH-ROSSER-SPELLING"
+      ]
+    }
+  ],
+  "aligned_blocks": 9919,
+  "segment_canon_uses": 6295,
+  "semantic_samples": 3098,
+  "canonical_counts": {
+    "decisions": 904,
+    "occurrences": 32278,
+    "terminology_decisions": 331,
+    "source_correction_decisions": 531,
+    "priority_decisions": 532,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14059
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0670 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0347; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

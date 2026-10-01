@@ -1,0 +1,100 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-09-30T23:42:51.038375+00:00",
+  "unit_id": "OLP-0669",
+  "status": "Complete669 and whole346 drafts, narrow reader credit repair; registration pending",
+  "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+  "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+  "paired_source_blocks": 19,
+  "source_proof_trees": 7,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-145",
+      "unit_id": "OLP-0669",
+      "block": 6,
+      "exact_original_text": "!!^a{proof}~$\\delta$ in \\Log{G1c} or \\Log{G1i}",
+      "exact_proposed_source_text": "!!^a{proof}~$\\delta$ in \\Log{N1c} or \\Log{N1i}",
+      "reason": "The paragraph maps formula-tree proofs with labelled open assumptions to sequents. Both own propositions explicitly compare N1c/N1i and N2c/N2i; G1 is the wrong copied name.",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 13
+    },
+    {
+      "proposed_id": "OLCMP-146",
+      "unit_id": "OLP-0669",
+      "block": 14,
+      "exact_original_text": "\\Deduce$x:B, \\Gamma \\fCenter !C$",
+      "exact_proposed_source_text": "\\Deduce$x:!B, \\Gamma \\fCenter !C$",
+      "reason": "The adjacent labelled premise is x:!B and the introduced antecedent is !B, not raw B. Restore only the missing schematic marker in the exact diagram.",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 83
+    },
+    {
+      "proposed_id": "OLCMP-147",
+      "unit_id": "OLP-0669",
+      "block": 18,
+      "exact_original_text": "assumption of~$\\delta'$; in the second case it is not.",
+      "exact_proposed_source_text": "assumption of~$\\delta_1'$; in the second case it is not.",
+      "reason": "The induction hypothesis supplies a converted N1 subproof of C, while delta prime names the final implication proof after discharge. Name the converted subproof delta1 prime and use it in the open-assumption statement and final two N1 trees. Original N2 premise trees retain delta1; no new proof case/exercise solution is added.",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "By inductive hypothesis, there is !!a{proof} in~\\Log{N1c}",
+          "exact_proposed_source_text": "By inductive hypothesis, there is !!a{proof}~$\\delta_1'$ in~\\Log{N1c}"
+        },
+        {
+          "exact_original_text": "\\RightLabel{$\\delta_1$}",
+          "exact_proposed_source_text": "\\RightLabel{$\\delta_1'$}",
+          "scope": "Both occurrences in final N1 proof display only; original N2 premise display unchanged."
+        }
+      ],
+      "source_line_1based": 139
+    }
+  ],
+  "primary_contexts": [
+    {
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "actually_read": true,
+      "locators": [
+        "entire actual source, both proof systems and corresponding labelled-discharge/eigenconstant conventions"
+      ]
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true,
+      "locators": [
+        "entire actual source, both proof systems and corresponding labelled-discharge/eigenconstant conventions"
+      ]
+    },
+    {
+      "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "actually_read": true,
+      "locators": [
+        "entire actual source, both proof systems and corresponding labelled-discharge/eigenconstant conventions"
+      ]
+    }
+  ],
+  "whole0346": {
+    "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
+    "target_sha256_before": "5a69dab235bc7175fd7aadc06241fb884d1050db89b23ddae16d3bcfb74c4986",
+    "target_sha256_after": "4903508e526f3eae306c60c6b93c246cb465d6679d142696bea55b48fdb8a6d0",
+    "source_and_target_read_completely": true,
+    "changes": [
+      [
+        "په پاى کښې",
+        "په پاے کښې"
+      ],
+      [
+        "راکميږي",
+        "راکمېږي"
+      ]
+    ],
+    "new_source_correction_ids": [],
+    "scope": "Confluence yields common reducts, uniqueness is conditional on normal-form existence, and beta-equivalence is the least equivalence containing reduction. All formulas retained; no invented proof of the source unproved confluence theorem."
+  },
+  "reader_credit_repair_receipt": "B243_READER_CREDIT_REPAIR.json",
+  "reader_credit_repair_sha256": "0486e0687165d4f056cf211fe6b55ebb019baaa5ec24d9d2aa3401e83837628a",
+  "next_action": "Register669/whole0346 with exact formula exceptions; dualQA/acceptance, build654 and verify corrected credit at natural checkpoint. Full722 active.",
+  "source_axiom_displays": 1
+}

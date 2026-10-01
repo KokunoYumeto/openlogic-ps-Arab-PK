@@ -896,6 +896,15 @@ def prepare_unit(text: str, rows: list[dict], row: dict) -> tuple[str, Counter, 
         if count != expected:
             raise ValueError(f"{row['unit_id']} retained Latin quotation sites changed: {count}")
         profile_stats["retained_latin_quote_direction_recoveries"] += count
+    if row["unit_id"] in {"OLP-0341", "OLP-0342"}:
+        # Preserve each original human credit as one LTR Latin phrase.
+        # Unisolated words reverse visually inside these Pashto editorial notes.
+        pattern = r"\b(Jeremy\s+Avigad|Zesen\s+Qian)\b"
+        expected = {"OLP-0341": 2, "OLP-0342": 1}[row["unit_id"]]
+        body, count = re.subn(pattern, lambda m: r"\LR{\latinfont " + m[1] + "}", body)
+        if count != expected:
+            raise ValueError(f"{row['unit_id']} original Latin credit sites changed: {count}")
+        profile_stats["editorial_latin_credit_direction_recoveries"] += count
     if row["unit_id"] in {"OLP-0479", "OLP-0487"}:
         # Include tabular padding and rule widths in the two observed wide
         # correspondence tables; content and mathematical tokens stay exact.

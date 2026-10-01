@@ -21411,6 +21411,180 @@
         "source_only": [],
         "target_only": []
       }
+    },
+    {
+      "id": "OLCMP-145",
+      "unit_id": "OLP-0669",
+      "classification": "N1-source-proof-system-name",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "source_locator": "content/proof-theory/natural-deduction/sequents.tex:13",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/sequents.tex",
+      "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+      "target_line_1based": 13,
+      "disclosure_line_1based": 25,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د فارمولونو ونې N1 ثبوت خپل پاييز فارمول له پرانيستو فرضونو ثابتوي؛ دغه فرضونه کيڼ سياق ته لېږدول N2 سېکوېنټي بڼه جوړوي۔ نقل شوي G1 نومونه د ۱۴۵ سمون سره سم شول۔",
+      "reason": "د فارمولونو ونې N1 ثبوت خپل پاييز فارمول له پرانيستو فرضونو ثابتوي؛ دغه فرضونه کيڼ سياق ته لېږدول N2 سېکوېنټي بڼه جوړوي۔ نقل شوي G1 نومونه د ۱۴۵ سمون سره سم شول۔",
+      "exact_original_text": "!!^a{proof}~$\\delta$ in \\Log{G1c} or \\Log{G1i}",
+      "exact_proposed_source_text": "!!^a{proof}~$\\delta$ in \\Log{N1c} or \\Log{N1i}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The paragraph maps formula-tree proofs with labelled open assumptions to sequents. Both own propositions explicitly compare N1c/N1i and N2c/N2i; G1 is the wrong copied name.",
+      "formula_policy": "يوازې د سياق د شېما نښه او د بدلون شوي فرعي ثبوت پېژند سمه شوه؛ نور فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B243_SOURCE_AUDIT.json",
+        "B243_FINAL_DRAFT_QA.json",
+        "B243_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-146",
+      "unit_id": "OLP-0669",
+      "classification": "schematic-context-marker",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "source_locator": "content/proof-theory/natural-deduction/sequents.tex:83",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/sequents.tex",
+      "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+      "target_line_1based": 69,
+      "disclosure_line_1based": 96,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د شرطي داخلولو په فرض-ايستونکي حالت کښې سياق ټاکلے x:B شېمايي فارمول لرې کوي؛ د ۱۴۶ سمون همدغه رسمي فارمول په منځني رسم کښې ساتي۔ په بې‌فرضه ايستلو حالت کښې سياق عين دے۔ درې واړه اصلي رسمونه ساتل شوي دي۔",
+      "reason": "د شرطي داخلولو په فرض-ايستونکي حالت کښې سياق ټاکلے x:B شېمايي فارمول لرې کوي؛ د ۱۴۶ سمون همدغه رسمي فارمول په منځني رسم کښې ساتي۔ په بې‌فرضه ايستلو حالت کښې سياق عين دے۔ درې واړه اصلي رسمونه ساتل شوي دي۔",
+      "exact_original_text": "\\Deduce$x:B, \\Gamma \\fCenter !C$",
+      "exact_proposed_source_text": "\\Deduce$x:!B, \\Gamma \\fCenter !C$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The adjacent labelled premise is x:!B and the introduced antecedent is !B, not raw B. Restore only the missing schematic marker in the exact diagram.",
+      "formula_policy": "يوازې د سياق د شېما نښه او د بدلون شوي فرعي ثبوت پېژند سمه شوه؛ نور فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B243_SOURCE_AUDIT.json",
+        "B243_FINAL_DRAFT_QA.json",
+        "B243_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:!B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-147",
+      "unit_id": "OLP-0669",
+      "classification": "converted-subproof-vs-discharged-final-proof-identity",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "source_locator": "content/proof-theory/natural-deduction/sequents.tex:139",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/sequents.tex",
+      "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+      "target_line_1based": 128,
+      "disclosure_line_1based": 169,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د دواړو شرطي حالتونو د استقرا له مخې ترلاسه شوے N1 سمدستي فرعي ثبوت نوی نښه لري؛ فرض ئې د ايستلو مخکې پرانيستے وي، د پاييز ثبوت فرض نۀ ګڼل کېږي۔ د ۱۴۷ سمون په خبره او دواړو وروستيو رسمونو کښې همدغه بدلون شوے ثبوت ښيي، اصل N2 رسمونه عين دي۔",
+      "reason": "د دواړو شرطي حالتونو د استقرا له مخې ترلاسه شوے N1 سمدستي فرعي ثبوت نوی نښه لري؛ فرض ئې د ايستلو مخکې پرانيستے وي، د پاييز ثبوت فرض نۀ ګڼل کېږي۔ د ۱۴۷ سمون په خبره او دواړو وروستيو رسمونو کښې همدغه بدلون شوے ثبوت ښيي، اصل N2 رسمونه عين دي۔",
+      "exact_original_text": "assumption of~$\\delta'$; in the second case it is not.",
+      "exact_proposed_source_text": "assumption of~$\\delta_1'$; in the second case it is not.",
+      "additional_exact_source_fragments": [
+        {
+          "exact_original_text": "By inductive hypothesis, there is !!a{proof} in~\\Log{N1c}",
+          "exact_proposed_source_text": "By inductive hypothesis, there is !!a{proof}~$\\delta_1'$ in~\\Log{N1c}"
+        },
+        {
+          "exact_original_text": "\\RightLabel{$\\delta_1$}",
+          "exact_proposed_source_text": "\\RightLabel{$\\delta_1'$}",
+          "scope": "Both occurrences in final N1 proof display only; original N2 premise display unchanged."
+        }
+      ],
+      "primary_verification": "The induction hypothesis supplies a converted N1 subproof of C, while delta prime names the final implication proof after discharge. Name the converted subproof delta1 prime and use it in the open-assumption statement and final two N1 trees. Original N2 premise trees retain delta1; no new proof case/exercise solution is added.",
+      "formula_policy": "يوازې د سياق د شېما نښه او د بدلون شوي فرعي ثبوت پېژند سمه شوه؛ نور فورمولونه او رسمونه عين دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+      "audit_artifacts": [
+        "B243_SOURCE_AUDIT.json",
+        "B243_FINAL_DRAFT_QA.json",
+        "B243_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\delta'$",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\delta_1'$",
+          "$\\delta_1'$",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,

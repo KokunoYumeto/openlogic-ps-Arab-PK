@@ -1,0 +1,71 @@
+{
+  "schema": "ps-reader-rendered-sample/1",
+  "utc": "2026-10-01T00:01:41.238975+00:00",
+  "status": "PASS for corrected Latin credits and current Church-Rosser prose on three inspected pages; reader scope incomplete",
+  "source_accepted_units": 669,
+  "reader_units": 654,
+  "pdf_pages": 810,
+  "pdf_sha256": "4d306f448636ce07ec4ff3d380d989bc5d339d07538ce1934feca6f7cb6b7b22",
+  "reader_tex_sha256": "9eead9486d8a1a34ca404c3940b6126a6fc5b5371260bb3b1568cc857ab0b4bf",
+  "build_inputs_sha256": "dc2e773ad186a634caa25b1576b2f5a7fb7fd66b4e77362ac0e72902d6106d3f",
+  "guard_receipt_sha256": "c0dab7df5bb7750d0293609f7c430188c133d7fbc2af1c15ec17823b9d964e3f",
+  "guard_session_terminal": 29665,
+  "guarded_passes": 4,
+  "bibtex_runs": 1,
+  "captured_processes_remaining": 0,
+  "final_log_findings": [
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/sc' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/LatinModernRoman(0)/m/sc' undefined",
+    "Overfull \\hbox (3.1974pt too wide) in paragraph at lines 49560--49561",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 56535--56560",
+    "Overfull \\hbox (2.0pt too wide) in paragraph at lines 57064--57088",
+    "LaTeX Font Warning: Font shape `TU/Amiri(0)/m/scit' undefined"
+  ],
+  "bibliography_warnings": [
+    "Warning--empty publisher in Berkeley1734",
+    "Warning--can't use both author and editor fields in Frege1953",
+    "Warning--can't use both author and editor fields in EwaldSieg2013",
+    "Warning--empty publisher in Hume1740",
+    "Warning--empty journal in OConnorRobertson:RN",
+    "Warning--empty journal in Weston2003",
+    "warning$ -- 6",
+    "(There were 6 warnings)"
+  ],
+  "inspected_pages": [
+    {
+      "physical_page": 463,
+      "printed_label": "462",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b243\\visual-qa\\page-463.png",
+      "sha256": "9046ba12700146cc31a617072b2e06231090a1a76cf00eb9d206b06133e099b2"
+    },
+    {
+      "physical_page": 464,
+      "printed_label": "463",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b243\\visual-qa\\page-464.png",
+      "sha256": "0bc068d7e7ad75f40917bf4ce23e20fc13760fa00c19c2a831b03112bb644f24"
+    },
+    {
+      "physical_page": 467,
+      "printed_label": "466",
+      "path": "C:\\interlanguage-production\\openlogic-ps-Arab-PK\\repo\\build\\cumulative-through-modal-current-654-b243\\visual-qa\\page-467.png",
+      "sha256": "552bb147068d745d655acb64288a06c7b749cbf8b87691c9ff54b7bc121ef3de"
+    }
+  ],
+  "visual_findings": [
+    "Printed462 and463 both complete English credit names read in original LTR word order; Pashto RTL surrounding prose and original credits remain intact.",
+    "Printed466 shows current Church-Rosser common-reduct theorem, conditional uniqueness proof and least beta-equivalence legibly, with exact original formulas.",
+    "The following currying formula is legible but has a source freshness convention omission: separately recorded as the next whole0347 repair. No blanket reader acceptance."
+  ],
+  "reader_credit_resolution_receipt": "B243_READER_CREDIT_RESOLVED.json",
+  "reader_credit_resolution_sha256": "2d8ea6080176261af83121ed238473e8621a56f2322513ae8b9ce556a225bcbc",
+  "next_source_scope_caveat_receipt": "B243_READER_CURRYING_SCOPE_CAVEAT.json",
+  "next_source_scope_caveat_sha256": "1cf75976f81b1a3d744ec7fe507cf5faa785fc20e9281b0a295635018cbb5020",
+  "all_rendered_pages_checked": false,
+  "expanded_reader_accepted": false,
+  "current_source_visually_accepted_units_unchanged": 105,
+  "full722_reader_completed": false,
+  "next_action": "Continue complete670/whole0347, correct source currying freshness caveat, integrate full experimental context and complete visual/EPUB/release QA."
+}

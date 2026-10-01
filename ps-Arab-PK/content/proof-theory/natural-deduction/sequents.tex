@@ -1,0 +1,175 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: sequents
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{seq}
+
+\olsection{له سېکوېنټونو سره فطري استنتاج: \Log{N2c} او~\Log{N2i}}
+
+په \Log{N1c} يا \Log{N1i} کښې !!^a{proof}~$\delta$
+ښيي چې پاييز !!{formula} ئې~$!A$ له پرانيستو فرضونو څخه
+نتيجه کېږي۔ که $\Gamma$ د هغو !!{formula}s~$!B$ سټ وي چې
+$!B^x$ ئې په~$\delta$ کښې د پرانيستي فرض په توګه راځي، نو
+دا په $\delta \Proves \Gamma
+\Sequent !A$ ليکلے شو۔ دا ښيي چې د سېکوېنټونو دپاره هم يو
+فطري استنتاجي نظام جوړولے شو۔ په داسې نظام کښې هر سېکوېنټ دا
+معلومات لري چې ښي اړخ ته !!{formula} په کومو پرانيستو فرضونو
+پورې تړلے دے، يعنې کوم فرضونه په هغه فرعي !!{proof} کښې
+پرانيستي دي چې په دغه سېکوېنټ ختمېږي۔ دا له سېکوېنټونو سره
+فطري استنتاج، يا په ``سېکوېنټي طرز'' فطري استنتاج دے؛ پايله
+شوي نظامونه \Log{N2c} او~\Log{N2i} بولو۔
+\textbf{سرچينه‌يي سمون OLCMP-145:} د دې لومړني ثبوت ونې
+د N1 دي؛ د سرچينې نقل شوي G1 نومونه د همدې برخې له پرتله او
+دواړو ورپسې اصلي قضيو سره سم شول۔
+
+د \Log{N1} او \Log{N2} د لا نېغ سمون دپاره، کيڼ اړخ ته
+سټونه~$\Gamma$ د نښه لرونکو !!{formula}s~$x:!B$ څخه جوړ
+اخلو۔ په \Log{N1} کښې قاعدې يوازې د مقدمو پر !!{formula}s
+کار کوي، يعنې د سمدستي فرعي !!{proof}s پر پاييزو
+!!{formula}s؛ نو د \Log{N2} قاعدې يوازې د سېکوېنټ پر ښي
+فارمول کار کوي۔ په دې توګه د سېکوېنټونو کيڼ اړخ ته نښه لرونکي
+فارمولونه يوازې سياق بللے شو۔
+
+د فرضونو پر ځاے، د \Log{N2} ثبوتونو تر ټولو بره سېکوېنټونه
+د دې بڼې بديهيات دي:
+\[x:!A \Sequent !A.\]
+قاعدې د \Log{N1} له قواعدو سره کره سمون لري او په
+\olref{tab:N2} کښې ورکړل شوې دي۔
+
+\subfile{rules-N2}
+
+لکه په \Log{N1c} او \Log{N1i} کښې، بايد دا ومنو چې
+\Intro{\lif}، \Intro{\lnot}، \Elim{\lor} او \Elim{\lexists}
+قاعدې فرضونه ايستلے شي، خو اړې نۀ دي چې فرضونه وباسي۔ نو په
+\Log{N2c} او~\Log{N2i} کښې د اړوندو قواعدو سمې کارونې هغه
+وخت هم منو چې اړوند سياقي !!{formula}s $!A$، $!B$ او
+$!A(a)$ د اړوندې مقدمې په سياق کښې نۀ وي۔
+
+\begin{prop}
+که $\delta$ په~\Log{N1c} يا \Log{N1i} کښې د~$!A$
+!!a{proof} وي، نو په~\Log{N2c} (\Log{N2i}) کښې د
+$\Gamma \Sequent !A$ !!a{proof}~$\delta'$ شته، چې
+$\Gamma$ د ټولو هغو~$x:!B$ سټ دے چې $!B^x$ ئې د~$\delta$
+پرانيستے فرض وي۔
+\end{prop}
+
+\begin{proof}
+  په $n=\pheight{\delta}$ استقرا کوو۔ که $n=0$ وي، $\delta$
+  يوازې يو پرانيستے فرض~$!A^x$ دے۔ نو $\Gamma = \{x:!A\}$
+  او $\Gamma
+  \Sequent !A$ د \Log{N2c} يا~\Log{N2i} يو بديهيت دے۔
+
+  که $n>0$ وي، د~$\delta$ د وروستي استنتاج له مخې حالتونه
+  بېلوو۔ يوازې يو حالت بيان کوو؛ پاتې حالتونه تمرينونه دي۔
+
+  فرض کړئ وروستے استنتاج $\Intro{\lif}$ وي۔ نو $\delta$
+  په دې ختمېږي:
+  \[
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  د استقرا له فرضيې، په~\Log{N2c} (\Log{N2i}) کښې د
+  $\Gamma' \Sequent !C$ !!a{proof}~$\delta_1'$ شته، چې
+  $\Gamma'$ هغه نښه لرونکي فرضونه دي چې په~$\delta_1$
+  کښې پرانيستي وي۔ که $!B^x$ د $\delta_1$ پرانيستے فرض وي،
+  نو د \Intro{\lif} په استنتاج ايستل کېږي او د~$\delta$
+  پرانيستي فرضونه $\Gamma =
+  \Gamma' \setminus \{x:!B\}$ دي۔ يعنې $\delta_1'$ د
+  $x:!B, \Gamma \Sequent !C$ !!a{proof} دے؛ نو $\delta'$
+  داسې اخستلے شو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  \textbf{سرچينه‌يي سمون OLCMP-146:} د رسم په سياق کښې
+  هماغه شېمايي فارمول پکار دے؛ د سرچينې پاتې شوې نښه ورزياته شوه۔
+  که $!B^x$ د~$\delta_1$ پرانيستے فرض نۀ وي، نو
+  \Intro{\lif} هېڅ فرض نۀ باسي او د $\delta$ او $\delta_1$
+  پرانيستي فرضونه يو شان دي۔ په~\Log{N2c} او~\Log{N2i}
+  کښې د \Intro{\lif} د مقدمې په سياق کښې د $x:!B$ شته‌والے
+  اړين نۀ دے؛ نو $\delta'$ داسې اخستلے شو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+
+  هغه حالتونه چې $\delta$ په بله قاعده ختمېږي، همداسې دي۔
+\end{proof}
+
+\begin{prop}
+که $\delta$ په \Log{N2c} يا \Log{N2i} کښې د $\Gamma
+\Sequent !A$ !!a{proof} وي، نو په \Log{N1c} (\Log{N1i})
+کښې !!a{proof}~$\delta'$ شته چې پاييز !!{formula} ئې~$!A$
+وي او د هر $x:!B \in \Gamma$ دپاره پرانيستي فرضونه ئې
+$!B^x$ وي۔
+\end{prop}
+
+\begin{proof}
+  بيا د~$\delta$ پر !!{height}~$n$ استقرا کوو۔ که $n=0$
+  وي، $\delta$ يو بديهيت دے، $x:!A \Sequent !A$۔
+  !!{proof}~$\delta'$ هماغه فرض~$!A^x$ دے۔
+
+  که $n>0$ وي، د~$\delta$ د وروستي استنتاج له مخې حالتونه
+  بېلوو۔ مثلاً، که دغه استنتاج~$\Intro{\lif}$ وي، نو
+  $\delta$~په دې ختمېږي:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \quad\text{ يا }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  د استقرا له فرضيې، په~\Log{N1c} (\Log{N1i}) کښې د~$!C$
+  !!a{proof}~$\delta_1'$ شته۔ په لومړي حالت کښې $!B^x$
+  د~$\delta_1'$ پرانيستے فرض دے؛ په دويم کښې نۀ دے۔
+  !!{proof}~$\delta'$ په ترتيب داسې اخستلے شو:
+  \[
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \quad\text{ يا }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \RightLabel{\Intro{\lif}}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  \textbf{سرچينه‌يي سمون OLCMP-147:} د پرانيستي فرض خبره
+  د استقرا له مخې جوړ شوي سمدستي فرعي ثبوت ده، نۀ د پاييز
+  ثبوت چې فرض ترې ايستل شوے دے۔ په وروستي رسم کښې هم د همدې
+  نوي فرعي ثبوت نښه سمه شوه۔
+\end{proof}
+
+\end{document}

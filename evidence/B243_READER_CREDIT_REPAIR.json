@@ -1,0 +1,34 @@
+{
+  "schema": "ps-reader-credit-direction-repair/1",
+  "utc": "2026-09-30T23:42:50.421299+00:00",
+  "status": "Exact existing Latin credits isolated as full LTR phrases; current build/re-render pending",
+  "defect_receipt": "B242_READER_CREDIT_BIDI_DEFECT.json",
+  "defect_receipt_sha256": "c5a6a86ec2cf54350fdcebdac1410fb9d950731b881340cc31b08e05c4ea905c",
+  "affected_unit_ids": [
+    "OLP-0341",
+    "OLP-0342"
+  ],
+  "expected_credit_sites": {
+    "OLP-0341": 2,
+    "OLP-0342": 1
+  },
+  "primary_attribution_identity": {
+    "source_path": "content/lambda-calculus/lambda-calculus.tex",
+    "sha256": "55f3d4f5216c89a10fcbf8a214d658099485999fefd9391402994dea1881cec3",
+    "finding": "Part source names Jeremy Avigad and Zesen Qian; chapter source abbreviates the first as Jeremy. Existing target chapter already uses the full parent-identified name; no source/target name edit made."
+  },
+  "rendering_mechanism": "Existing LR/latinfont mechanism already used for retained original quotations",
+  "modified_files": [
+    {
+      "path": "tools/build_cumulative_reader.py",
+      "previous_sha256": "69a8e9e518f390c962e7f57b0e1eac75c858224206374d36a58458f93b7da861",
+      "sha256": "2b3bd06bd1187f071513f2881bd05114d7e8e4ad5a0789b82c6b5603781fae70",
+      "bytes": 61834
+    }
+  ],
+  "source_and_target_bytes_unchanged": true,
+  "all_other_units_unchanged_by_new_branch": true,
+  "name_identity_and_whitespace_preserved": true,
+  "no_new_attribution_added": true,
+  "human_approval_claimed": false
+}

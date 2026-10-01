@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+  "batch_id": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -8883,7 +8883,7 @@
       ]
     },
     "OLP-0346": {
-      "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
+      "batch_id": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
@@ -8892,7 +8892,52 @@
         "TERM-LAMBDA-REDUCTION-CURRYING",
         "TERM-EQUIVALENCE"
       ],
-      "scope": "Church-Rosser common reduct yields unique normal form and beta-equivalence; no proof of the theorem is added beyond the source."
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-EQUIVALENCE"
+        ],
+        "5": [
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-EQUIVALENCE"
+        ],
+        "6": [
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-EQUIVALENCE"
+        ],
+        "7": [
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-EQUIVALENCE"
+        ],
+        "8": [
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-EQUIVALENCE"
+        ]
+      },
+      "scope": "بشپړ اصلي تعريف، د فرضونو نښې، د لوړوالي څلور شرطونه او ټول اصلي بېلګې ساتل شوي دي؛ کره سرچينه‌يي سمونونه ښکاره او د لامبډا ټول مثالونه عين دي۔",
+      "allowed_residual_english": []
     },
     "OLP-0347": {
       "batch_id": "PS-B062-LAMBDA-INTRODUCTION",
@@ -19490,6 +19535,226 @@
         "role": "Original TeX subfile name imports the actual N1 table; exact filename retained, no ordinary prose remains untranslated.",
         "no_target_or_tool_change": true,
         "scope": "Only current unit and exact source/target hashes; no corpus-wide English waiver."
+      }
+    },
+    "OLP-0669": {
+      "batch_id": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
+      "passages": [
+        "PK-IQRAM-P2-SEMANTICS",
+        "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P48-MODUS-PONENS",
+        "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-SEQUENT-RULES",
+        "TERM-PROOF-SYSTEMS",
+        "TERM-STRUCTURAL-INDUCTION",
+        "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+      ],
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "6": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "7": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "8": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "10": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "11": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "12": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "13": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "14": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "15": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "16": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "17": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ],
+        "18": [
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P37-AXIOMATIC-PROOF",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P48-MODUS-PONENS",
+          "AF-BUKOVSKY-P17-MATHEMATICAL-INDUCTION"
+        ]
+      },
+      "terms_by_block": {
+        "5": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "6": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "7": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "8": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "10": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "11": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "12": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "13": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "14": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "15": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "16": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "17": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ],
+        "18": [
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES",
+          "TERM-PROOF-SYSTEMS",
+          "TERM-STRUCTURAL-INDUCTION",
+          "TERM-NATURAL-DEDUCTION-PREMISE-HEIGHT"
+        ]
+      },
+      "scope": "بشپړ اصلي تعريف، د فرضونو نښې، د لوړوالي څلور شرطونه او ټول اصلي بېلګې ساتل شوي دي؛ کره سرچينه‌يي سمونونه ښکاره او د لامبډا ټول مثالونه عين دي۔",
+      "allowed_residual_english": [
+        "rules"
+      ],
+      "formal_code_exception": {
+        "schema": "ps-formal-source-code-exception/1",
+        "utc": "2026-09-30T23:46:12.766616+00:00",
+        "unit_id": "OLP-0669",
+        "exact_literal": "\\subfile{rules-N2}",
+        "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+        "target_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+        "source_occurrences": 1,
+        "target_occurrences": 1,
+        "residual_token": "rules",
+        "role": "Frozen actual TeX filename imports N2 rule table; exact source/target occurrence retained, no ordinary English prose.",
+        "scope": "Only exact current unit/source/target hashes; no corpus-wide English waiver."
       }
     }
   },
@@ -37972,6 +38237,114 @@
       "unit_id": "OLP-0345",
       "passage": "OLP-0345-B009",
       "reverse_paraphrase": "د وروستي مثال ګډه پايله د چرچ--روسر خاصيت ښيي؛ دغه اصلي ادعا نۀ د نوې قضیې د بشپړ ثبوت په توګه وړاندې کېږي او نۀ د راکمولو ترتيب يو شان ګڼي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B005",
+      "reverse_paraphrase": "د سېکوېنټونو سره فطري استنتاج د N2 په کلاسيکي او حدسي ډولونو سرليک لري۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B006",
+      "reverse_paraphrase": "د فارمولونو ونې N1 ثبوت خپل پاييز فارمول له پرانيستو فرضونو ثابتوي؛ دغه فرضونه کيڼ سياق ته لېږدول N2 سېکوېنټي بڼه جوړوي۔ نقل شوي G1 نومونه د ۱۴۵ سمون سره سم شول۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B007",
+      "reverse_paraphrase": "کيڼ سياق نښه لرونکي فارمولونه لري؛ N1 پر سمدستي مقدمو کار کوي او N2 پر ښي پاييز فارمول۔ اصلي فرض ليبلونه او ټول فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B008",
+      "reverse_paraphrase": "د N2 پيلني بديهيات يوه نښه لرونکې فرضيه کيڼ او هماغه فارمول ښي اړخ ته لري؛ د N1 له قواعدو سره سمون او اصلي جدول ته اشاره عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B010",
+      "reverse_paraphrase": "د فرض ايستل اختياري دي؛ د شرطي او نفي داخلولو او يا او موجود کميت ايستلو اړوند سياقي فارمول نشتوالے هم صحيح کارونه کېدے شي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B011",
+      "reverse_paraphrase": "له هر N1 ثبوت څخه د هماغه پاييز فارمول N2 ثبوت جوړېږي، کيڼ سياق د اصل د ټولو پرانيستو نښه لرونکو فرضونو سټ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B012",
+      "reverse_paraphrase": "د لوړوالي پر استقرا بنسټ يوازې يو فرض او د N2 هماغه بديهيت دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B013",
+      "reverse_paraphrase": "د مثبت لوړوالي حالت د وروستي استنتاج له مخې بېلېږي؛ سرچينه يوازې يو حالت بيانوي او نور اصلي تمرينونه نۀ حل کېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B014",
+      "reverse_paraphrase": "د شرطي داخلولو په فرض-ايستونکي حالت کښې سياق ټاکلے x:B شېمايي فارمول لرې کوي؛ د ۱۴۶ سمون همدغه رسمي فارمول په منځني رسم کښې ساتي۔ په بې‌فرضه ايستلو حالت کښې سياق عين دے۔ درې واړه اصلي رسمونه ساتل شوي دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B015",
+      "reverse_paraphrase": "نور اصلي قاعدوي حالتونه ورته دي او هماغه تمرينونه پاتې دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B016",
+      "reverse_paraphrase": "له N2 سېکوېنټي ثبوت څخه د هماغه پاييز فارمول N1 ثبوت جوړېږي؛ هر کيڼ نښه لرونکے فرض د اصلي سياق له مخې پرانيستے دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B017",
+      "reverse_paraphrase": "د بېرته بدلون استقرايي بنسټ بديهي سېکوېنټ د هماغه نښه لرونکي يو فرض په N1 ثبوت بدلوي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B018",
+      "reverse_paraphrase": "د دواړو شرطي حالتونو د استقرا له مخې ترلاسه شوے N1 سمدستي فرعي ثبوت نوی نښه لري؛ فرض ئې د ايستلو مخکې پرانيستے وي، د پاييز ثبوت فرض نۀ ګڼل کېږي۔ د ۱۴۷ سمون په خبره او دواړو وروستيو رسمونو کښې همدغه بدلون شوے ثبوت ښيي، اصل N2 رسمونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B004",
+      "reverse_paraphrase": "د چرچ--روسر خاصيت اصلي سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B005",
+      "reverse_paraphrase": "له يوه ترم څخه دواړو راکمونو ته يو ګډ ورپسې ترم شته؛ دواړه لارې دغه مشترک ترم ته راکمېږي۔ اصلي قضیه بشپړه ده، سرچينه ئې دلته ثبوت نۀ ورکوي او نوے ثبوت نۀ زياتېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B006",
+      "reverse_paraphrase": "د عادي بڼې يکتايي يوازې د هغې د شته‌والي په شرط ده؛ هر ترم د عادي بڼې لرونکے نۀ ګڼل کېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B007",
+      "reverse_paraphrase": "د دوو عادي بڼو ګډ راکم شوے ترم نور نۀ بدلېږي، نو دواړه او هماغه مشترک ترم يو شان دي؛ ټول اصلي فورمولونه عين دي او د فعل املا سمه شوه۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B008",
+      "reverse_paraphrase": "بېټا معادلتوب د ګډ راکمېدلي ترم له لارې تعريفېږي؛ د چرچ--روسر په کارولو د معادلتوب اړيکه او د يوې خوا راکمولو لرونکې تر ټولو کوچنۍ معادلتي اړيکه ده۔ د پاے او فعل پاکستانۍ املا سمه شوه؛ د سرچينې د کتنې اصلي لارښوونه او ټول فورمولونه عين دي۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
     }
   ]

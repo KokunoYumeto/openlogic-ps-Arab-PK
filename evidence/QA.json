@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 668,
-    "structural_pass": 668,
+    "draft_units": 669,
+    "structural_pass": 669,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "PS-B242-N1-PROOF-DEFINITIONS-LAMBDA-REDUCTION",
+  "batch": "PS-B243-N1-N2-CORRESPONDENCE-CHURCH-ROSSER",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -11802,7 +11802,7 @@
       "unit_id": "OLP-0346",
       "path": "content/lambda-calculus/introduction/church-rosser.tex",
       "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
-      "translation_sha256": "5a69dab235bc7175fd7aadc06241fb884d1050db89b23ddae16d3bcfb74c4986",
+      "translation_sha256": "4903508e526f3eae306c60c6b93c246cb465d6679d142696bea55b48fdb8a6d0",
       "source_blocks": 9,
       "target_blocks": 9,
       "checks": {
@@ -23001,6 +23001,57 @@
         "target_only": [
           "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_3$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]",
           "$\\pheight{\\delta_2}=\\pheight{\\delta_3}=1$"
+        ],
+        "expected_by_source_correction": true
+      }
+    },
+    {
+      "unit_id": "OLP-0669",
+      "path": "content/proof-theory/natural-deduction/sequents.tex",
+      "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "translation_sha256": "f811696e35d9bcc4952239f366baab9084717f3ee6410375afad9669c746fb36",
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [
+        "rules"
+      ],
+      "allowed_residual_english": [
+        "rules"
+      ],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-145",
+        "OLCMP-146",
+        "OLCMP-147"
+      ],
+      "status": "structural-pass",
+      "math_diff": {
+        "source_only": [
+          "$\\delta'$",
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\delta_1'$",
+          "$\\delta_1'$",
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:!B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\text{LOCALIZED}\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
         ],
         "expected_by_source_correction": true
       }
@@ -41485,6 +41536,114 @@
       "unit_id": "OLP-0345",
       "passage": "OLP-0345-B009",
       "reverse_paraphrase": "د وروستي مثال ګډه پايله د چرچ--روسر خاصيت ښيي؛ دغه اصلي ادعا نۀ د نوې قضیې د بشپړ ثبوت په توګه وړاندې کېږي او نۀ د راکمولو ترتيب يو شان ګڼي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B005",
+      "reverse_paraphrase": "د سېکوېنټونو سره فطري استنتاج د N2 په کلاسيکي او حدسي ډولونو سرليک لري۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B006",
+      "reverse_paraphrase": "د فارمولونو ونې N1 ثبوت خپل پاييز فارمول له پرانيستو فرضونو ثابتوي؛ دغه فرضونه کيڼ سياق ته لېږدول N2 سېکوېنټي بڼه جوړوي۔ نقل شوي G1 نومونه د ۱۴۵ سمون سره سم شول۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B007",
+      "reverse_paraphrase": "کيڼ سياق نښه لرونکي فارمولونه لري؛ N1 پر سمدستي مقدمو کار کوي او N2 پر ښي پاييز فارمول۔ اصلي فرض ليبلونه او ټول فورمولونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B008",
+      "reverse_paraphrase": "د N2 پيلني بديهيات يوه نښه لرونکې فرضيه کيڼ او هماغه فارمول ښي اړخ ته لري؛ د N1 له قواعدو سره سمون او اصلي جدول ته اشاره عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B010",
+      "reverse_paraphrase": "د فرض ايستل اختياري دي؛ د شرطي او نفي داخلولو او يا او موجود کميت ايستلو اړوند سياقي فارمول نشتوالے هم صحيح کارونه کېدے شي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B011",
+      "reverse_paraphrase": "له هر N1 ثبوت څخه د هماغه پاييز فارمول N2 ثبوت جوړېږي، کيڼ سياق د اصل د ټولو پرانيستو نښه لرونکو فرضونو سټ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B012",
+      "reverse_paraphrase": "د لوړوالي پر استقرا بنسټ يوازې يو فرض او د N2 هماغه بديهيت دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B013",
+      "reverse_paraphrase": "د مثبت لوړوالي حالت د وروستي استنتاج له مخې بېلېږي؛ سرچينه يوازې يو حالت بيانوي او نور اصلي تمرينونه نۀ حل کېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B014",
+      "reverse_paraphrase": "د شرطي داخلولو په فرض-ايستونکي حالت کښې سياق ټاکلے x:B شېمايي فارمول لرې کوي؛ د ۱۴۶ سمون همدغه رسمي فارمول په منځني رسم کښې ساتي۔ په بې‌فرضه ايستلو حالت کښې سياق عين دے۔ درې واړه اصلي رسمونه ساتل شوي دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B015",
+      "reverse_paraphrase": "نور اصلي قاعدوي حالتونه ورته دي او هماغه تمرينونه پاتې دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B016",
+      "reverse_paraphrase": "له N2 سېکوېنټي ثبوت څخه د هماغه پاييز فارمول N1 ثبوت جوړېږي؛ هر کيڼ نښه لرونکے فرض د اصلي سياق له مخې پرانيستے دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B017",
+      "reverse_paraphrase": "د بېرته بدلون استقرايي بنسټ بديهي سېکوېنټ د هماغه نښه لرونکي يو فرض په N1 ثبوت بدلوي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0669",
+      "passage": "OLP-0669-B018",
+      "reverse_paraphrase": "د دواړو شرطي حالتونو د استقرا له مخې ترلاسه شوے N1 سمدستي فرعي ثبوت نوی نښه لري؛ فرض ئې د ايستلو مخکې پرانيستے وي، د پاييز ثبوت فرض نۀ ګڼل کېږي۔ د ۱۴۷ سمون په خبره او دواړو وروستيو رسمونو کښې همدغه بدلون شوے ثبوت ښيي، اصل N2 رسمونه عين دي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B004",
+      "reverse_paraphrase": "د چرچ--روسر خاصيت اصلي سرليک بشپړ دے۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B005",
+      "reverse_paraphrase": "له يوه ترم څخه دواړو راکمونو ته يو ګډ ورپسې ترم شته؛ دواړه لارې دغه مشترک ترم ته راکمېږي۔ اصلي قضیه بشپړه ده، سرچينه ئې دلته ثبوت نۀ ورکوي او نوے ثبوت نۀ زياتېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B006",
+      "reverse_paraphrase": "د عادي بڼې يکتايي يوازې د هغې د شته‌والي په شرط ده؛ هر ترم د عادي بڼې لرونکے نۀ ګڼل کېږي۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B007",
+      "reverse_paraphrase": "د دوو عادي بڼو ګډ راکم شوے ترم نور نۀ بدلېږي، نو دواړه او هماغه مشترک ترم يو شان دي؛ ټول اصلي فورمولونه عين دي او د فعل املا سمه شوه۔",
+      "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
+    },
+    {
+      "unit_id": "OLP-0346",
+      "passage": "OLP-0346-B008",
+      "reverse_paraphrase": "بېټا معادلتوب د ګډ راکمېدلي ترم له لارې تعريفېږي؛ د چرچ--روسر په کارولو د معادلتوب اړيکه او د يوې خوا راکمولو لرونکې تر ټولو کوچنۍ معادلتي اړيکه ده۔ د پاے او فعل پاکستانۍ املا سمه شوه؛ د سرچينې د کتنې اصلي لارښوونه او ټول فورمولونه عين دي۔",
       "finding": "بشپړ اصل، هر رسم او هر بلاک خپل ټول رياضي راتګونه ساتي؛ سرچينه‌يي نوے حکم يا تاريخ نۀ زياتېږي۔"
     }
   ],
