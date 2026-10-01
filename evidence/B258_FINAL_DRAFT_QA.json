@@ -1,0 +1,104 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T11:48:40.764361+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0683",
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "source_bytes": 6609,
+      "target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+      "target_bytes": 10150,
+      "paired_blocks": 21,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-191",
+        "OLCMP-192",
+        "OLCMP-193",
+        "OLCMP-194"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0360",
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+      "target_sha256_before": "b74c88771893aa20d68994a4b8a0c736c988ef96b9886a4f1ef45a23523f48bf",
+      "target_sha256": "064881c9863185329395ddf3674f60a5b31734048af211cef5e02db2785b6af4",
+      "target_sha256_after": "064881c9863185329395ddf3674f60a5b31734048af211cef5e02db2785b6af4",
+      "target_bytes": 6322,
+      "paired_blocks": 18,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-010"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-SCOPE-FREE-BOUND"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0683": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true
+    },
+    "OLP-0360": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 4,
+  "source_adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+  "registration_helper_sha256": "be468832bb2187d4f42247a22831eb2ece891e98ffa343f09f915cf534dc929a",
+  "writer_spec_sha256": "504a16e5dfc38f4227c76df14879f1f3741257c8cc78c5603326638a3291d746"
+}

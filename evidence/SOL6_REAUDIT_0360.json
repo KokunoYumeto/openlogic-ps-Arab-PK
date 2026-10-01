@@ -1,0 +1,82 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T11:48:40.764361+00:00",
+  "status": "د ازادو متغيرونو ټول اتلس اصلي/پخواني بلاکونه او څوارلس ژباړې خپلواک کتل شوي؛ OLLAM010 پخوانے سمون صحيح دے۔ يوازې د f پر آرګومېنټ د تطبيق ناسم ژباړل شوے نثر سم شو؛ ټول پخواني رسمي رياضي بايټونه، تعريفونه، مثالونه، لمې او بې‌ځوابه مشقونه عين دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0360",
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+      "target_sha256_before": "b74c88771893aa20d68994a4b8a0c736c988ef96b9886a4f1ef45a23523f48bf",
+      "target_sha256": "064881c9863185329395ddf3674f60a5b31734048af211cef5e02db2785b6af4",
+      "target_sha256_after": "064881c9863185329395ddf3674f60a5b31734048af211cef5e02db2785b6af4",
+      "target_bytes": 6322,
+      "paired_blocks": 18,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-010"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-SCOPE-FREE-BOUND"
+      ],
+      "translated_blocks_reviewed": 14,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        12
+      ],
+      "all_prior_math_bytes_retained": true,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": []
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "د مسودې مخکې همدا پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز ۳۹/۹۰/۱۴۷ واقعي PNG بيا په سترګو کتل شوي۔",
+      "evidence_limit": "پاکستانے نثر لومړنے دے، افغان رياضي يوازې سيمه‌ييز شاهد دے؛ عين الګوريتمي انصاف/شاخص/لامبډا مرکبونه مستقل پاکستانے تخصصي شاهد نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "د مسودې مخکې همدا پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز ۳۹/۹۰/۱۴۷ واقعي PNG بيا په سترګو کتل شوي۔",
+      "evidence_limit": "پاکستانے نثر لومړنے دے، افغان رياضي يوازې سيمه‌ييز شاهد دے؛ عين الګوريتمي انصاف/شاخص/لامبډا مرکبونه مستقل پاکستانے تخصصي شاهد نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "د مسودې مخکې همدا پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز ۳۹/۹۰/۱۴۷ واقعي PNG بيا په سترګو کتل شوي۔",
+      "evidence_limit": "پاکستانے نثر لومړنے دے، افغان رياضي يوازې سيمه‌ييز شاهد دے؛ عين الګوريتمي انصاف/شاخص/لامبډا مرکبونه مستقل پاکستانے تخصصي شاهد نۀ لري او موقتي دي۔"
+    }
+  ],
+  "segment_entries_added": 14,
+  "new_source_correction_ids": [],
+  "wording_choice_ids": [
+    "TERM-LAMBDA-SCOPE-FREE-BOUND"
+  ],
+  "old_source_corrections_independently_reverified": [
+    "OLLAM-010"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0360.jsonl",
+  "whole_unit_segment_snapshot_sha256": "9d1258c6ce3636247edab5958a59c6c00c495a8a9fd65d08f6b3751f01bbafe0",
+  "source_adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د ۶۸۳ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ د ۳۶۰ نثر لپاره اوسنے لوستونکی تيار او په طبيعي تمځاے TeX يوه محدوده هڅه؛ بيا بشپړ OLP0684 او OLP0361۔"
+}

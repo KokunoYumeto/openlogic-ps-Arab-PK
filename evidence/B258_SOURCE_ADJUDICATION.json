@@ -1,0 +1,85 @@
+{
+  "new_unique_defect_ids": [
+    "OLCMP-191",
+    "OLCMP-193",
+    "OLCMP-194"
+  ],
+  "existing_fairness_followup": {
+    "new_record": "OLCMP-192",
+    "canonical_existing": "OLCMP-189",
+    "new_unique_defect": false,
+    "allocation_corrected": true,
+    "old_global_minimum_strict_increase_claim_not_reintroduced": true
+  },
+  "closed_ground_term_model_scope_gap_OLCMP190_remains": true,
+  "general_completeness_statement_retained": true,
+  "empty_domain_defect_asserted": false,
+  "source_exercises_solved": false,
+  "optional_proof_added": false,
+  "whole360_translation_only_change_block": 12,
+  "all_prior_math_raw_bytes_preserved": true,
+  "OLLAM010_reverified_not_new": true,
+  "counterexamples": [
+    {
+      "id": "OLCMP-191",
+      "actual_primary_source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "argument": "Starting (P and Q) => (P and Q) is closed immediately by the frozen algorithm. The one-node tree is not a G3c axiom because its shared formula is non-atomic. Atomic closure instead continues the actual G3c decomposition. The identity sequent itself remains provable; no general identity proof is added."
+    },
+    {
+      "id": "OLCMP-192",
+      "actual_primary_source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "argument": "With selected conjunction index1 and a retained atomic side formula index2, k=2. Frozen left-conjunction reduction introduces B^2,C^3 while retaining index2: collision. Corrected introduces indices3,4. The two right-conjunction premises each introduce3, the left-existential premise introduces3, and right-existential introduces3,4. Different premises may reuse3 because their sequents are separate."
+    },
+    {
+      "id": "OLCMP-193",
+      "actual_primary_source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "argument": "Exact existential-right conclusion compared with actual G3c table."
+    },
+    {
+      "id": "OLCMP-194",
+      "actual_primary_source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "argument": "No function symbols, initial C={c1}, eligible closed terms only c1. After c1 has been used for the right-existential reduction, the frozen fallback introduces B(c0) while retaining C={c1}. Thus the displayed invariant that C contains every constant in its sequent fails. Corrected initial C={c1,c0} keeps every fallback occurrence tracked; no empty-domain defect is asserted."
+    }
+  ],
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T11:48:40.764361+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "actually_read_scope": "entire actual frozen source and private target;360 additionally entire original Sol6 target",
+      "sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "actually_read_scope": "entire actual frozen source and private target;360 additionally entire original Sol6 target",
+      "sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+      "actually_read_scope": "lines1–102; actual atomic axiom definition",
+      "sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "actually_read_scope": "entire table; actual existential side, retained formula and eigenconstant condition",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+      "actually_read_scope": "lines1–95; closed instantiation terms and proof-tree leaves",
+      "sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699"
+    },
+    {
+      "source_path": "content/proof-theory/proof-search/completeness.tex",
+      "actually_read_scope": "entire source previously read beforeB254; exact existing OLCMP189 frozen-fairness treatment re-read in original issue receipt",
+      "sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-01T11:48:10.301289+00:00",
+  "scope": "Strict expected-source reconstruction for independently reverified existing OLLAM010; exact original exception and unit/hash ownership required. Wording revisions recorded as wording choices, not source defects. Explicit formal-ID exemptions retain ordinary-prose checks.",
+  "helper_before_sha256": "a2eb180033e3854b753db5bf857cb0308e189a39095863a5448d68dfb337bf27",
+  "helper_after_sha256": "be468832bb2187d4f42247a22831eb2ece891e98ffa343f09f915cf534dc929a",
+  "old_source_action_count_unchanged_by_workflow": true,
+  "new_source_action_count_from_writer_only": 4,
+  "new_unique_defects": 3,
+  "all_private_checks": {
+    "OLP-0683": {
+      "math": true,
+      "math_per_block": true,
+      "tokens": true,
+      "ids": true,
+      "structural": true,
+      "comments": true,
+      "block_count": true
+    },
+    "OLP-0360": {
+      "math": true,
+      "math_per_block": true,
+      "tokens": true,
+      "ids": true,
+      "structural": true,
+      "comments": true,
+      "block_count": true,
+      "all_prior_math_spans_raw_exact": true
+    }
+  }
+}

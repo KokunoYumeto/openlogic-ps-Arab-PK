@@ -1,0 +1,101 @@
+{
+  "utc": "2026-10-01T11:54:01.176905+00:00",
+  "status": "strict exact source/draft comparisons PASS; repeat dual corpus QA next",
+  "display_exception_scope": "Four complete mathematical display spans contain five exact index edits and one exact right-rule label. Previous fragment exceptions did not cover the containing displays. Full-span group binds only these declared edits; no source,683target or QA validator was changed.",
+  "algorithm_source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+  "algorithm_target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+  "previous_display_exceptions": {
+    "OLCMP-192": {
+      "source_only": [
+        "$!B^k,!C^{k+1},\\Pi\\fCenter\\Lambda$",
+        "$\\Pi\\fCenter\\Lambda,!B^k$",
+        "$\\Pi\\fCenter\\Lambda,!C^k$",
+        "$!B(c)^k,\\Pi\\fCenter\\Lambda$",
+        "$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^k,!B(t)^{k+1}$"
+      ],
+      "target_only": [
+        "$!B^{k+1},!C^{k+2},\\Pi\\fCenter\\Lambda$",
+        "$\\Pi\\fCenter\\Lambda,!B^{k+1}$",
+        "$\\Pi\\fCenter\\Lambda,!C^{k+1}$",
+        "$!B(c)^{k+1},\\Pi\\fCenter\\Lambda$",
+        "$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^{k+1},!B(t)^{k+2}$"
+      ]
+    },
+    "OLCMP-193": {
+      "source_only": [],
+      "target_only": []
+    }
+  },
+  "source_679_sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665",
+  "target_679_sha256_before": "86b5c8cc3230bf035a27b5c978d301b4dfacf187cf1584721d9f7158e23463e2",
+  "target_679_sha256_after": "a00916d24d38fe72cfa1ba9bd9f541e38423f80dd9d6905c6b7d28ee02d70c8f",
+  "changed_679_blocks": [
+    17,
+    18,
+    21
+  ],
+  "prior_679_math_changes": [
+    {
+      "source": "$\\Pi_{n+1} = \\Pi_n', !B^k, !C^{k+1}$",
+      "target": "$\\Pi_{n+1} = \\Pi_n', !B^{k+1}, !C^{k+2}$"
+    },
+    {
+      "source": "$\\Pi_{n+1} = \\Pi_n', !B(c)^k$",
+      "target": "$\\Pi_{n+1} = \\Pi_n', !B(c)^{k+1}$"
+    }
+  ],
+  "all_other_prior_math_bytes_retained": true,
+  "existing_source_record": "OLCMP-189",
+  "existing_source_record_before": {
+    "id": "OLCMP-189",
+    "classification": "fairness-argument-selects-nonatomic-index-and-does-not-strictly-increase-each-stage",
+    "formal_changes": [],
+    "reporting_lane": "source_erratum_substantive",
+    "general_replacement_proof_supplied": false,
+    "next_algorithm_unit": "OLP-0683",
+    "unit_id": "OLP-0679",
+    "source_path": "content/proof-theory/proof-search/completeness.tex",
+    "source_sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665",
+    "source_line_1based": 107,
+    "source_locator": "content/proof-theory/proof-search/completeness.tex:block17",
+    "target_path": "ps-Arab-PK/content/proof-theory/proof-search/completeness.tex",
+    "target_line_1based": 127,
+    "target_sha256": "86b5c8cc3230bf035a27b5c978d301b4dfacf187cf1584721d9f7158e23463e2",
+    "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+    "reason": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔",
+    "translation_change": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔",
+    "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+    "frozen_source_unchanged": true,
+    "reader_disclosure_language": "ps-Arab-PK",
+    "adjudication_receipt": "B254_SOURCE_ADJUDICATION.json",
+    "adjudication_sha256": "edad3237fbfed27a677b9fe704e1fc188494c558dd45994cfffc9db949b1d75d",
+    "upstream_reporting": "owner local ledger; no new external issue",
+    "qa_math_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_identifier_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_macro_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_token_exception": {
+      "source_only": [],
+      "target_only": []
+    },
+    "qa_tag_exception": {
+      "source_only": [],
+      "target_only": []
+    }
+  },
+  "new_source_record": "OLCMP-192",
+  "new_unique_defect": false,
+  "whole_sol6_counts_unchanged": true,
+  "original_source_exercises_unsolved": true,
+  "OLCMP190_free_variable_gap_remains": true,
+  "registration_helper_before_sha256": "be468832bb2187d4f42247a22831eb2ece891e98ffa343f09f915cf534dc929a",
+  "registration_helper_after_sha256": "87b2457670e882f099830ef149537041d59ac32162fd21cd13e3195f9a75d038"
+}

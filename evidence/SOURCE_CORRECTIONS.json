@@ -7377,7 +7377,17 @@
         "ps-Arab-PK/content/lambda-calculus/syntax/free-variables.tex:26"
       ],
       "decision_timing": "contemporaneous B065 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "independent_revalidation_history": [
+        {
+          "batch": "B258",
+          "utc": "2026-10-01T11:48:40.764361+00:00",
+          "source_sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c",
+          "target_sha256": "064881c9863185329395ddf3674f60a5b31734048af211cef5e02db2785b6af4",
+          "adjudication_receipt": "B258_SOURCE_ADJUDICATION.json",
+          "reverified_not_new_defect": true
+        }
+      ]
     },
     {
       "id": "OLLAM-011",
@@ -24294,7 +24304,16 @@
     {
       "id": "OLCMP-189",
       "classification": "fairness-argument-selects-nonatomic-index-and-does-not-strictly-increase-each-stage",
-      "formal_changes": [],
+      "formal_changes": [
+        {
+          "source": "$\\Pi_{n+1} = \\Pi_n', !B^k, !C^{k+1}$",
+          "target": "$\\Pi_{n+1} = \\Pi_n', !B^{k+1}, !C^{k+2}$"
+        },
+        {
+          "source": "$\\Pi_{n+1} = \\Pi_n', !B(c)^k$",
+          "target": "$\\Pi_{n+1} = \\Pi_n', !B(c)^{k+1}$"
+        }
+      ],
       "reporting_lane": "source_erratum_substantive",
       "general_replacement_proof_supplied": false,
       "next_algorithm_unit": "OLP-0683",
@@ -24305,10 +24324,10 @@
       "source_locator": "content/proof-theory/proof-search/completeness.tex:block17",
       "target_path": "ps-Arab-PK/content/proof-theory/proof-search/completeness.tex",
       "target_line_1based": 127,
-      "target_sha256": "86b5c8cc3230bf035a27b5c978d301b4dfacf187cf1584721d9f7158e23463e2",
+      "target_sha256": "a00916d24d38fe72cfa1ba9bd9f541e38423f80dd9d6905c6b7d28ee02d70c8f",
       "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
-      "reason": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔",
-      "translation_change": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔",
+      "reason": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔ د B258 تعقيب د OLP0683 نوي شاخصونه عملي کړي او د همدې بشپړتيا دوې رسمي مقدمې ورسره همغږې کړي؛ د ټولو اټومي/ناعټومي ګډ لږ تر لږه د سخت زياتوالي ادعا لا نۀ منل کېږي۔",
+      "translation_change": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔ د B258 تعقيب د OLP0683 نوي شاخصونه عملي کړي او د همدې بشپړتيا دوې رسمي مقدمې ورسره همغږې کړي؛ د ټولو اټومي/ناعټومي ګډ لږ تر لږه د سخت زياتوالي ادعا لا نۀ منل کېږي۔",
       "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
       "frozen_source_unchanged": true,
       "reader_disclosure_language": "ps-Arab-PK",
@@ -24316,8 +24335,14 @@
       "adjudication_sha256": "edad3237fbfed27a677b9fe704e1fc188494c558dd45994cfffc9db949b1d75d",
       "upstream_reporting": "owner local ledger; no new external issue",
       "qa_math_exception": {
-        "source_only": [],
-        "target_only": []
+        "source_only": [
+          "$\\Pi_{n+1}=\\Pi_n',!B^k,!C^{k+1}$",
+          "$\\Pi_{n+1}=\\Pi_n',!B(c)^k$"
+        ],
+        "target_only": [
+          "$\\Pi_{n+1}=\\Pi_n',!B^{k+1},!C^{k+2}$",
+          "$\\Pi_{n+1}=\\Pi_n',!B(c)^{k+1}$"
+        ]
       },
       "qa_identifier_exception": {
         "source_only": [],
@@ -24334,7 +24359,21 @@
       "qa_tag_exception": {
         "source_only": [],
         "target_only": []
-      }
+      },
+      "independent_revalidation_history": [
+        {
+          "batch": "B258",
+          "utc": "2026-10-01T11:54:01.176905+00:00",
+          "algorithm_unit": "OLP-0683",
+          "algorithm_target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+          "source_sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665",
+          "target_sha256_before": "86b5c8cc3230bf035a27b5c978d301b4dfacf187cf1584721d9f7158e23463e2",
+          "target_sha256_after": "a00916d24d38fe72cfa1ba9bd9f541e38423f80dd9d6905c6b7d28ee02d70c8f",
+          "new_unique_defect": false,
+          "fresh_indices_applied": true,
+          "free_variable_gap_OLCMP190_unresolved": true
+        }
+      ]
     },
     {
       "id": "OLCMP-190",
@@ -24416,6 +24455,245 @@
         "target_only": [
           "$(\\lambd[g][((\\lambd[x][(g(xx))])(\\lambd[x][(g(xx))]))])$"
         ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-191",
+      "unit_id": "OLP-0683",
+      "classification": "proof-search-closure-must-be-an-atomic-G3c-axiom",
+      "formal_changes": [],
+      "reporting_lane": "source_erratum_substantive",
+      "affected_segments": [
+        "OLP-0683-B007",
+        "OLP-0683-B012",
+        "OLP-0683-B019"
+      ],
+      "counterexample": "Starting (P and Q) => (P and Q) is closed immediately by the frozen algorithm. The one-node tree is not a G3c axiom because its shared formula is non-atomic. Atomic closure instead continues the actual G3c decomposition. The identity sequent itself remains provable; no general identity proof is added.",
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "source_line_1based": 57,
+      "source_locator": "content/proof-theory/proof-search/search-algorithm.tex:block12",
+      "target_path": "ps-Arab-PK/content/proof-theory/proof-search/search-algorithm.tex",
+      "target_line_1based": 67,
+      "target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د G3c رسمي بديهيت يوازې ګډ اټومي فارمول مني؛ د مرکب ګډ فارمول پر ونه سمدستي برياليتوب د شاخصونو له لرې کولو وروسته رسمي ثبوت نۀ جوړوي۔ د درېدو او وروستي بديهيت شرط اټومي شو، او د انصاف د راکمولو شرط ناعټومي موردونو ته محدود شو۔",
+      "translation_change": "د G3c رسمي بديهيت يوازې ګډ اټومي فارمول مني؛ د مرکب ګډ فارمول پر ونه سمدستي برياليتوب د شاخصونو له لرې کولو وروسته رسمي ثبوت نۀ جوړوي۔ د درېدو او وروستي بديهيت شرط اټومي شو، او د انصاف د راکمولو شرط ناعټومي موردونو ته محدود شو۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B258_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-192",
+      "unit_id": "OLP-0683",
+      "classification": "fresh-index-allocation-followup-to-existing-fairness-error",
+      "canonical_source_issue_id": "OLCMP-189",
+      "recurrence_of": "OLCMP-189",
+      "new_unique_defect": false,
+      "formal_changes": [
+        {
+          "source": "\\Axiom$!B^k, !C^{k+1}, \\Pi \\fCenter \\Lambda$",
+          "target": "\\Axiom$!B^{k+1}, !C^{k+2}, \\Pi \\fCenter \\Lambda$"
+        },
+        {
+          "source": "\\Axiom$\\Pi \\fCenter \\Lambda, !B^k$",
+          "target": "\\Axiom$\\Pi \\fCenter \\Lambda, !B^{k+1}$"
+        },
+        {
+          "source": "\\Axiom$\\Pi \\fCenter \\Lambda, !C^k$",
+          "target": "\\Axiom$\\Pi \\fCenter \\Lambda, !C^{k+1}$"
+        },
+        {
+          "source": "\\Axiom$!B(c)^k, \\Pi \\fCenter \\Lambda$",
+          "target": "\\Axiom$!B(c)^{k+1}, \\Pi \\fCenter \\Lambda$"
+        },
+        {
+          "source": "\\Axiom$\\Pi \\fCenter \\Lambda, \\lexists[x][!B(x)]^k, !B(t)^{k+1}$",
+          "target": "\\Axiom$\\Pi \\fCenter \\Lambda, \\lexists[x][!B(x)]^{k+1}, !B(t)^{k+2}$"
+        }
+      ],
+      "reporting_lane": "existing_source_erratum_recurrence",
+      "affected_segments": [
+        "OLP-0683-B016",
+        "OLP-0683-B018"
+      ],
+      "counterexample": "With selected conjunction index1 and a retained atomic side formula index2, k=2. Frozen left-conjunction reduction introduces B^2,C^3 while retaining index2: collision. Corrected introduces indices3,4. The two right-conjunction premises each introduce3, the left-existential premise introduces3, and right-existential introduces3,4. Different premises may reuse3 because their sequents are separate.",
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "source_line_1based": 75,
+      "source_locator": "content/proof-theory/proof-search/search-algorithm.tex:block16",
+      "target_path": "ps-Arab-PK/content/proof-theory/proof-search/search-algorithm.tex",
+      "target_line_1based": 88,
+      "target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د OLCMP-189 جلا پاتې شاخص کتنه اوس د اصلي څلورو رسمونو له مخې پوره شوې۔ k اوسنے اعظمي شاخص دے؛ نوي موردونه له هغه پورته شاخصونه اخلي، په يوه مقدمه کښې بېلابېل پاتې کېږي، او له موجودو موردونو سره نۀ ټکرېږي۔ دا د پخواني انصاف عيب تعقيب دے، نوے مستقل عيب نۀ شمېرل کېږي؛ په هر پړاو د ټولو شاخصونو د لږ تر لږه سخت زياتوالي ناسم ادعا بيا نۀ ده راوړل شوې۔",
+      "translation_change": "د OLCMP-189 جلا پاتې شاخص کتنه اوس د اصلي څلورو رسمونو له مخې پوره شوې۔ k اوسنے اعظمي شاخص دے؛ نوي موردونه له هغه پورته شاخصونه اخلي، په يوه مقدمه کښې بېلابېل پاتې کېږي، او له موجودو موردونو سره نۀ ټکرېږي۔ دا د پخواني انصاف عيب تعقيب دے، نوے مستقل عيب نۀ شمېرل کېږي؛ په هر پړاو د ټولو شاخصونو د لږ تر لږه سخت زياتوالي ناسم ادعا بيا نۀ ده راوړل شوې۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B258_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$!B^k,!C^{k+1},\\Pi\\fCenter\\Lambda$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$(!B\\land!C)^i,\\Pi\\fCenter\\Lambda$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,!B^k$\\Axiom$\\Pi\\fCenter\\Lambda,!C^k$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Pi\\fCenter\\Lambda,(!B\\land!C)^i$\\DisplayProof\\]",
+          "\\[\\Axiom$!B(c)^k,\\Pi\\fCenter\\Lambda$\\RightLabel{\\LeftR{\\lexists}}\\UnaryInf$\\lexists[x][!B(x)]^i,\\Pi\\fCenter\\Lambda$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^k,!B(t)^{k+1}$\\RightLabel{\\LeftR{\\lexists}}\\UnaryInf$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^i$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!B^{k+1},!C^{k+2},\\Pi\\fCenter\\Lambda$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$(!B\\land!C)^i,\\Pi\\fCenter\\Lambda$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,!B^{k+1}$\\Axiom$\\Pi\\fCenter\\Lambda,!C^{k+1}$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Pi\\fCenter\\Lambda,(!B\\land!C)^i$\\DisplayProof\\]",
+          "\\[\\Axiom$!B(c)^{k+1},\\Pi\\fCenter\\Lambda$\\RightLabel{\\LeftR{\\lexists}}\\UnaryInf$\\lexists[x][!B(x)]^i,\\Pi\\fCenter\\Lambda$\\DisplayProof\\]",
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^{k+1},!B(t)^{k+2}$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^i$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-192",
+      "qa_math_exception_group_members": [
+        "OLCMP-192",
+        "OLCMP-193"
+      ],
+      "qa_math_exception_group_policy": "Whole math spans of strictly reconstructed expected source; exact declared fresh-index changes and one rule label only. Per-block comparisons remain mandatory."
+    },
+    {
+      "id": "OLCMP-193",
+      "unit_id": "OLP-0683",
+      "classification": "right-existential-inference-labelled-as-left-existential",
+      "formal_changes": [
+        {
+          "source": "\\RightLabel{\\LeftR{\\lexists}}\n  \\UnaryInf$\\Pi \\fCenter \\Lambda, \\lexists[x][!B(x)]^i$",
+          "target": "\\RightLabel{\\RightR{\\lexists}}\n  \\UnaryInf$\\Pi \\fCenter \\Lambda, \\lexists[x][!B(x)]^i$"
+        }
+      ],
+      "reporting_lane": "source_editorial_small",
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "source_line_1based": 99,
+      "source_locator": "content/proof-theory/proof-search/search-algorithm.tex:block18",
+      "target_path": "ps-Arab-PK/content/proof-theory/proof-search/search-algorithm.tex",
+      "target_line_1based": 119,
+      "target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د موجود کميت ټاکنې په ښي اړخ رسم کښې اصل کاپي شوے LeftR نوم لري؛ همدغه يوازې يو نوم په RightR بدل شو۔ د کيڼ اړخ مستقل رسم عين پخوانے نوم لري۔",
+      "translation_change": "د موجود کميت ټاکنې په ښي اړخ رسم کښې اصل کاپي شوے LeftR نوم لري؛ همدغه يوازې يو نوم په RightR بدل شو۔ د کيڼ اړخ مستقل رسم عين پخوانے نوم لري۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B258_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [
+          "LeftR"
+        ],
+        "target_only": [
+          "RightR"
+        ]
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_math_exception_group_owner": "OLCMP-192",
+      "qa_math_exception_group_members": [
+        "OLCMP-192",
+        "OLCMP-193"
+      ],
+      "qa_math_exception_group_policy": "Whole math spans of strictly reconstructed expected source; exact declared fresh-index changes and one rule label only. Per-block comparisons remain mandatory."
+    },
+    {
+      "id": "OLCMP-194",
+      "unit_id": "OLP-0683",
+      "classification": "fallback-constant-escapes-tracked-set",
+      "formal_changes": [],
+      "reporting_lane": "source_erratum_substantive",
+      "counterexample": "No function symbols, initial C={c1}, eligible closed terms only c1. After c1 has been used for the right-existential reduction, the frozen fallback introduces B(c0) while retaining C={c1}. Thus the displayed invariant that C contains every constant in its sequent fails. Corrected initial C={c1,c0} keeps every fallback occurrence tracked; no empty-domain defect is asserted.",
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+      "source_line_1based": 40,
+      "source_locator": "content/proof-theory/proof-search/search-algorithm.tex:block10",
+      "target_path": "ps-Arab-PK/content/proof-theory/proof-search/search-algorithm.tex",
+      "target_line_1based": 45,
+      "target_sha256": "e81352410cb3452f0cee46ea3c4f62bac1c2b494d2a29e18de79a858f7beab31",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "اصل يوازې د خالي ثابت سېټ دپاره c0 ورګډوي، خو د ښي موجود کميت ټاکنې د ټولو ترمونو له کارولو وروسته هماغه c0 کاروي او سېټ نۀ بدلوي۔ که په پيل کښې يوازې c1 وي، نو وروسته کارېدونکے c0 له C بهر پاتې کېدے شي او د ځانګړي ثابت د تازګۍ دليل نۀ شي تضمينېدے۔ لږ سمون پيليز سېټ ته د اصلي ثابتونو سره c0 هم ورګډوي؛ ټولې اصلي رسمي نښې عين دي۔",
+      "translation_change": "اصل يوازې د خالي ثابت سېټ دپاره c0 ورګډوي، خو د ښي موجود کميت ټاکنې د ټولو ترمونو له کارولو وروسته هماغه c0 کاروي او سېټ نۀ بدلوي۔ که په پيل کښې يوازې c1 وي، نو وروسته کارېدونکے c0 له C بهر پاتې کېدے شي او د ځانګړي ثابت د تازګۍ دليل نۀ شي تضمينېدے۔ لږ سمون پيليز سېټ ته د اصلي ثابتونو سره c0 هم ورګډوي؛ ټولې اصلي رسمي نښې عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B258_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "dab834905bf60c48d5f1f9573221c4f5eb50b974a4afc73d69d9ac652125f370",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
       },
       "qa_identifier_exception": {
         "source_only": [],
