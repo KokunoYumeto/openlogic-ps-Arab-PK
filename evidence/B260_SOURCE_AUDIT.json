@@ -1,0 +1,133 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T12:44:44.209347+00:00",
+  "status": "بشپړ نوے واحد او بشپړه خپلواکه پخوانۍ بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0685",
+      "source_path": "content/proof-theory/proof-theory.tex",
+      "source_sha256": "6f46b6346fc37b3a75a4f98c56351c46458c2f54f8cdca151da015261c0fd92f",
+      "source_bytes": 530,
+      "target_sha256": "8443807fe3c4839d6a9801b4fa8c591449dd1a4251dab4920df39bb978f5c144",
+      "target_bytes": 608,
+      "paired_blocks": 8,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0362",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "target_sha256_before": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "target_sha256": "bb4fb99f30d122cf588775ec889377d5dc906c18a88bc0a7f788b6aa846f4e7b",
+      "target_sha256_after": "bb4fb99f30d122cf588775ec889377d5dc906c18a88bc0a7f788b6aa846f4e7b",
+      "target_bytes": 16345,
+      "paired_blocks": 39,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-017",
+        "OLLAM-018",
+        "OLLAM-019",
+        "OLLAM-020",
+        "OLLAM-021",
+        "OLLAM-022",
+        "OLLAM-023",
+        "OLLAM-024"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-ALPHA-CONVERSION"
+      ]
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني۱/۲ او افغان۳۹/۱۴۷ مخونه د دې مسودې مخکې په همدغه فعال بهير کښې واقعي PNG په سترګو بيا کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے دے؛ افغان رياضي يوازې سيمه‌ييز شاهد دے۔ عين الفا-بدلون/تعويض/قوي استقرا مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "پاکستاني۱/۲ او افغان۳۹/۱۴۷ مخونه د دې مسودې مخکې په همدغه فعال بهير کښې واقعي PNG په سترګو بيا کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے دے؛ افغان رياضي يوازې سيمه‌ييز شاهد دے۔ عين الفا-بدلون/تعويض/قوي استقرا مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "پاکستاني۱/۲ او افغان۳۹/۱۴۷ مخونه د دې مسودې مخکې په همدغه فعال بهير کښې واقعي PNG په سترګو بيا کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے دے؛ افغان رياضي يوازې سيمه‌ييز شاهد دے۔ عين الفا-بدلون/تعويض/قوي استقرا مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني۱/۲ او افغان۳۹/۱۴۷ مخونه د دې مسودې مخکې په همدغه فعال بهير کښې واقعي PNG په سترګو بيا کتل شوي دي۔",
+      "evidence_limit": "پاکستانے بالغ نثر لومړنے دے؛ افغان رياضي يوازې سيمه‌ييز شاهد دے۔ عين الفا-بدلون/تعويض/قوي استقرا مرکبونه مستقله پاکستانۍ تخصصي لفظي شاهدي نۀ لري او موقتي دي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [
+    "TERM-LAMBDA-ALPHA-CONVERSION"
+  ],
+  "new_source_correction_ids": [],
+  "new_review_entry_ids": [],
+  "revised_review_entry_ids": [
+    "TERM-LAMBDA-ALPHA-CONVERSION",
+    "DEC-OLLAM-017",
+    "DEC-OLLAM-018",
+    "DEC-OLLAM-019",
+    "DEC-OLLAM-020",
+    "DEC-OLLAM-021",
+    "DEC-OLLAM-022",
+    "DEC-OLLAM-023",
+    "DEC-OLLAM-024"
+  ],
+  "semantic_samples_added": 37,
+  "focused_qa_sha256": "75ccb9e5d371613e86fb00d15bc2efc183415207b1647fce73ffde558b8e74bf",
+  "source_adjudication_sha256": "cf30c555efcca37e382a0859b9ed4655f1a817c21bd6b38d79d79d703357a5d7",
+  "model_provenance_sha256": "3b30125b366dc358190992f8dc54672f8a2926eefb78b5e93c603629a02c9bae",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0362.json",
+  "related_reaudit_sha256": "0afa76a52287dba1cea60b2c1418cf34e07249ddd6344fa6c88b056cff65be5a",
+  "unresolved": "۳۷ عمومي واحدونه، ۲۴۷ بشپړ پخواني واحدونه، د۰۲۳ عمومي uniqueness او د تجربوي ترمي مدل پاتې حدود، بشپړ تجربوي باب، EPUB، بشپړه ژبنۍ/چاپي کتنه او وروستۍ خپرونه پاتې دي۔",
+  "next_executable_action": "د ۶۸۵ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ د الفا د۰۲۲ وضاحت د اوسني لوستونکي محدود واقعي مخ وکتل شي؛ بيا بشپړ OLP0686 او OLP0363۔"
+}

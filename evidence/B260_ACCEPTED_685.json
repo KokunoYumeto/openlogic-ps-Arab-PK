@@ -1,0 +1,94 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-10-01T12:44:54.432154+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0685",
+  "draft_units": 685,
+  "remaining_unaccepted_units": 37,
+  "unit_ids": [
+    "OLP-0685"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "2ba45c6b171f65adb087c8b6ec5fd9cf523f314d509709736e64d76261ccb829",
+  "corpus_qa_sha256": "59703ece38308f4a435bd3394b7bc74fe8ef609f52ba372ebad3762f0d19de21",
+  "canonical_replay_sha256": "39c0c92b14b36d822e87c866c585655634e2e820eea361d86c109fde26923e4c",
+  "qa_sha256": "95b39f75a9cc668883e476368fecc7702ab1a52afe16001547aa8deede952277",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0685",
+      "source_path": "content/proof-theory/proof-theory.tex",
+      "source_sha256": "6f46b6346fc37b3a75a4f98c56351c46458c2f54f8cdca151da015261c0fd92f",
+      "source_bytes": 530,
+      "target_sha256": "8443807fe3c4839d6a9801b4fa8c591449dd1a4251dab4920df39bb978f5c144",
+      "target_bytes": 608,
+      "paired_blocks": 8,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0362",
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+      "target_sha256_before": "b4e2360b4308f2b9c93f16a5c2743180b3aa414eada3a9e4fae1352c017fad17",
+      "target_sha256": "bb4fb99f30d122cf588775ec889377d5dc906c18a88bc0a7f788b6aa846f4e7b",
+      "target_sha256_after": "bb4fb99f30d122cf588775ec889377d5dc906c18a88bc0a7f788b6aa846f4e7b",
+      "target_bytes": 16345,
+      "paired_blocks": 39,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [
+        "OLLAM-017",
+        "OLLAM-018",
+        "OLLAM-019",
+        "OLLAM-020",
+        "OLLAM-021",
+        "OLLAM-022",
+        "OLLAM-023",
+        "OLLAM-024"
+      ],
+      "wording_choice_ids": [
+        "TERM-LAMBDA-ALPHA-CONVERSION"
+      ]
+    }
+  ],
+  "aligned_blocks": 10138,
+  "segment_canon_uses": 6427,
+  "semantic_samples": 3374,
+  "canonical_counts": {
+    "decisions": 975,
+    "occurrences": 32905,
+    "terminology_decisions": 333,
+    "source_correction_decisions": 593,
+    "priority_decisions": 575,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14686
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0686 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0363; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

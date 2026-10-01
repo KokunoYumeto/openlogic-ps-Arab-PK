@@ -1,0 +1,48 @@
+{
+  "new_unique_defects": [],
+  "whole362_all8_existing_corrections_reverified": true,
+  "existence_only_induction_basis": "Strong induction on term-node count. Each alpha-renaming changes binder labels and substitutes a variable for a variable, preserving constructor topology. Compatible-context, reflexive and transitive closure preserve this count. Subst(Nprime,z,x), when defined, has the same count asNprime andN, one fewer than lambda x.N. A second IH call for its body/R/y is therefore valid. Outer freshness then makes the abstraction substitution defined.",
+  "existence_repair_new_optional_theorem": false,
+  "all_prior_raw_math_retained": true,
+  "general_uniqueness_gap_OLLAM023_remains": true,
+  "no_source_exercise_solved": true,
+  "all5_part_imports_and_hook_preserved": true,
+  "frozen_part_comment": "Original model-theory comment is retained byte-exact although actual part IDpt and path are proof-theory; it has no compilation semantics.",
+  "full722_integration_obligation": "The frozen part driver imports5chapters and does not import proof-search. Full reader must account for every tracked unit through the integration manifest without altering frozen source or substituting a supplement.",
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T12:44:44.209347+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/proof-theory.tex",
+      "actually_read_scope": "entire frozen original and complete private target;362 also entire original Sol6 target and all8existing corrections",
+      "sha256": "6f46b6346fc37b3a75a4f98c56351c46458c2f54f8cdca151da015261c0fd92f"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/alpha.tex",
+      "actually_read_scope": "entire frozen original and complete private target;362 also entire original Sol6 target and all8existing corrections",
+      "sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "actually_read_scope": "complete actual3constructor definition independently reviewedB255; variable leaf, abstraction, application",
+      "sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/free-variables.tex",
+      "actually_read_scope": "complete actual original and prior target independently reviewedB258; body scope and FV",
+      "sha256": "5443d1f42424315debd308ca068a3f74dde17a2045bc0b71cb94c6d70d53990c"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/substitution.tex",
+      "actually_read_scope": "complete actual original/prior target independently reviewedB259; partial variable substitution and inverse conditions",
+      "sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}
