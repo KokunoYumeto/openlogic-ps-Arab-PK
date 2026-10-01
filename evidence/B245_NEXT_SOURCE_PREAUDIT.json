@@ -1,0 +1,232 @@
+{
+  "schema": "ps-next-source-preaudit/1",
+  "utc": "2026-10-01T02:47:21.267343+00:00",
+  "unit_id": "OLP-0671",
+  "status": "Complete671 and whole348 installed, exact source formal exceptions verified; registration, dualQA and acceptance pending",
+  "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+  "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+  "paired_source_blocks": 10,
+  "source_proof_trees": 6,
+  "candidates": [
+    {
+      "proposed_id": "OLCMP-159",
+      "unit_id": "OLP-0671",
+      "block": 6,
+      "exact_original_text": "\\Log{G2c}\\ (\\Log{N2i}) + \\Cut",
+      "exact_proposed_source_text": "\\Log{G2c}\\ (\\Log{G2i}) + \\Cut",
+      "reason": "The target sequent-calculus intuitionistic system is G2i; the theorem accidentally repeats N2i from its premise.",
+      "classification": "copied-target-intuitionistic-system",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 14,
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Log{G2c}\\(\\Log{N2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$\\Log{G2c}\\(\\Log{G2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-160",
+      "unit_id": "OLP-0671",
+      "block": 8,
+      "exact_original_text": "The inductive hypothesis yields !!a{proof}~$\\pi_1$ of $\\Gamma'\n  \\Sequent !C$, from which we obtain $\\pi$ by applying\n  \\LeftR{\\Weakening}",
+      "exact_proposed_source_text": "The inductive hypothesis yields !!a{proof}~$\\pi_1$ of $\\Gamma'\n  \\Sequent !C$, from which we obtain $\\pi$ by applying\n  \\LeftR{\\Weakening} (after right weakening restores bottom when C is bottom)",
+      "reason": "For vacuous implication introduction, IH yields an empty succedent if C is bottom, just as in the preceding discharged case. Restore bottom by right weakening before left weakening and implication introduction. No new displayed proof is added.",
+      "classification": "vacuous-implication-bottom-premise-translation",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 54,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-161",
+      "unit_id": "OLP-0671",
+      "block": 9,
+      "exact_original_text": "In the event that $!A \\ident \\lfalse$, the inductive hypothesis\n  applied to $\\delta_2$",
+      "exact_proposed_source_text": "In the event that $!B \\ident \\lfalse$, the inductive hypothesis\n  applied to $\\delta_2$",
+      "reason": "Delta2 proves B, so its translated succedent is empty iff B is bottom, not iff final A is bottom. Counterexample: delta2 is y:P proves P with P true and A bottom; it cannot yield P proves empty. Weaken its empty succedent only if final A is nonbottom; otherwise retain empty.",
+      "classification": "implication-minor-bottom-condition",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 92,
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\ident\\lfalse$"
+        ],
+        "target_only": [
+          "$!B\\ident\\lfalse$"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-162",
+      "unit_id": "OLP-0671",
+      "block": 8,
+      "exact_original_text": "\\[\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\Gamma_1' \\fCenter !B \\lif !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_2$}\n  \\Deduce$\\Gamma_2' \\fCenter !B$\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\LeftR{\\lif}}\n  \\BinaryInf$!B \\lif !A, \\Gamma_2' \\fCenter !A$\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma_1', \\Gamma_2' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "Use this display when A and B are nonbottom.\n\\[\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\Gamma_1' \\fCenter !B \\lif !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_2$}\n  \\Deduce$\\Gamma_2' \\fCenter !B$\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\LeftR{\\lif}}\n  \\BinaryInf$!B \\lif !A, \\Gamma_2' \\fCenter !A$\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma_1', \\Gamma_2' \\fCenter !A$\n  \\DisplayProof\n  \\]\nIf A is bottom but B is not, replace the A-identity axiom by bottom proves empty and keep both following conclusions empty.",
+      "reason": "The theorem maps a bottom end-formula to an empty succedent. In the nonbottom-minor case, the same left-implication/cut construction with the bottom-empty axiom meets this invariant. The original diagram is retained for the nonbottom case; target adds the exact conditional reading in native prose.",
+      "classification": "implication-bottom-conclusion-invariant",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 72,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-163",
+      "unit_id": "OLP-0671",
+      "block": 9,
+      "exact_original_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$x: \\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "reason": "The induction hypothesis explicitly produces an unlabelled G2 sequent; x: is an unremoved N2 assumption label in the final cut diagram. Remove exactly that label. Other five diagrams are byte-identical.",
+      "classification": "unremoved-label-in-G2-sequent",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 107,
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$x:\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "proposed_id": "OLCMP-164",
+      "unit_id": "OLP-0671",
+      "block": 9,
+      "exact_original_text": "\\item If $R$ is \\FalseCl, $\\delta$ ends in",
+      "exact_proposed_source_text": "\\item If $R$ is \\FalseCl and its discharged assumption is present, $\\delta$ ends in; if absent, left-weaken the translated empty-succedent subproof with the negated assumption before the same construction.",
+      "reason": "The actual N2 rules allow vacuous discharge, including FalseCl. The source only shows a present x:notA assumption. With it absent, IH proves Gamma prime proves empty; left weakening provides notA,Gamma prime proves empty for the displayed cut.",
+      "classification": "classical-vacuous-discharge-premise",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 96,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-165",
+      "unit_id": "OLP-0671",
+      "block": 9,
+      "exact_original_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$x: \\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]\nIf the conclusion A is bottom, cut the resulting bottom-succedent proof with bottom proves empty to meet the theorem invariant.",
+      "reason": "The classical cut display ends in A even when A is bottom, while the proposition requires empty in that case. One final cut with the actual bottom-empty axiom normalizes it. This is a conditional source correction, not an invented independent theorem.",
+      "classification": "classical-bottom-conclusion-invariant",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 107,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "proposed_id": "OLCMP-166",
+      "unit_id": "OLP-0671",
+      "block": 9,
+      "exact_original_text": "\\end{proof}",
+      "exact_proposed_source_text": "The source supplies only four itemized cases (two implication introductions, implication elimination and classical falsity); other logical and quantifier cases are absent. This excerpt is not a verified complete proof.\n\\end{proof}",
+      "reason": "Actual N2 rule table contains conjunction, disjunction, negation, quantifiers and intuitionistic falsity rules omitted by this proof. Preserve the four supplied cases and disclose the gap; do not declare the theorem false or invent omitted proofs.",
+      "classification": "reverse-inductive-proof-incomplete-case-coverage",
+      "additional_exact_source_fragments": [],
+      "source_line_1based": 122,
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ],
+  "primary_contexts": [
+    {
+      "unit_id": "OLP-0671",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0670",
+      "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+      "sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0667",
+      "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+      "sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0668",
+      "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+      "sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0669",
+      "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+      "sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0706",
+      "source_path": "content/proof-theory/sequent-calculus/rules-G2c.tex",
+      "sha256": "893ca1fbed732661a22f9c3f1bb68c3d39e38174af37fb1a316fc20a62facb75",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0711",
+      "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+      "sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+      "actually_read": true,
+      "locators": [
+        "entire actual source; N2 labelled contexts/vacuous discharge, G2 structural/logical rules and axioms as applicable"
+      ]
+    },
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "actually_read": true,
+      "locators": [
+        "entire actual source, Church body/iterator/partial-function definition/theorem/explanation"
+      ]
+    }
+  ],
+  "whole0348": {
+    "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+    "target_sha256_before": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+    "target_sha256_after": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+    "source_and_target_read_completely": true,
+    "valid_existing_corrections": [
+      "OLLAM-002",
+      "OLLAM-003"
+    ],
+    "new_source_correction_ids": [],
+    "wording_scope": "Clarify that n counts x applications in the Church numeral body, not the lambda-bound declaration; preserve all prior mathematical spans and valid arity/application corrections.",
+    "theorem_proof_not_invented": true
+  },
+  "next_action": "After670 publication finishes, install complete671/whole348, register exact math exceptions and prior corrections, dualQA/independent replay, publish; full722 remains active."
+}

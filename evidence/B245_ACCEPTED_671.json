@@ -1,0 +1,105 @@
+{
+  "schema": "ps-current-accepted-editable/1",
+  "utc": "2026-10-01T02:53:48.831814+00:00",
+  "status": "accepted editable batch; dual corpus QA and byte-identical canonical replay PASS",
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "accepted_through_unit": "OLP-0671",
+  "draft_units": 671,
+  "remaining_unaccepted_units": 51,
+  "unit_ids": [
+    "OLP-0671"
+  ],
+  "repair_of_current_sources": false,
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_audit_sha256": "e6e49152559be44fdd53aba4837aedd495e1f8f2f8f13b97b7f794da8a9b1ebb",
+  "corpus_qa_sha256": "f901e920ea3fd625fa6fb5a5066d799b45e439de56a4fee3dcffcfc259faeba3",
+  "canonical_replay_sha256": "28168f6c8d914c54e1b3c2c1dd8313faae6831b6ecd2bd6d6bcd8fcceb716d50",
+  "qa_sha256": "4079293e249b26df56dde98c1bdca3853a6589e3526788eb4ee5bf59aaaf4d75",
+  "canonical_builder_sha256": "62ea1ac8938dacc06fe6adab6b730d8a2a4c18e4d7724e7d38e448f290c4f8dc",
+  "units": [
+    {
+      "unit_id": "OLP-0671",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_bytes": 4249,
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_bytes": 9006,
+      "paired_blocks": 10,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "all_six_diagrams_retained": true,
+        "only_final_diagram_changes": true,
+        "only_unlabelled_G2_premise_changes": true,
+        "all_four_original_cases_retained": true,
+        "proof_gap_disclosed_without_added_cases": true,
+        "bottom_minor_condition_correct": true
+      },
+      "source_correction_ids": [
+        "OLCMP-159",
+        "OLCMP-160",
+        "OLCMP-161",
+        "OLCMP-162",
+        "OLCMP-163",
+        "OLCMP-164",
+        "OLCMP-165",
+        "OLCMP-166"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "target_sha256_before": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "target_sha256": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_sha256_after": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_bytes": 3151,
+      "paired_blocks": 11,
+      "source_correction_ids": [],
+      "reverified_source_correction_ids": [
+        "OLLAM-002",
+        "OLLAM-003"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0348-CHURCH-BODY-COUNT"
+      ]
+    }
+  ],
+  "aligned_blocks": 9941,
+  "segment_canon_uses": 6307,
+  "semantic_samples": 3122,
+  "canonical_counts": {
+    "decisions": 927,
+    "occurrences": 32382,
+    "terminology_decisions": 332,
+    "source_correction_decisions": 551,
+    "priority_decisions": 552,
+    "reader_pages_available": 18219,
+    "reader_pages_pending": 14163
+  },
+  "historical_published_reader_units": 321,
+  "historical_published_source_snapshot_units": 405,
+  "current_source_visually_accepted_units": 105,
+  "expanded_reader_accepted": false,
+  "full_semantic_reaudit_completed": false,
+  "next_action": "Continue general translation at OLP-0672 with source and canon comparison, exact alignment, semantic review and corpus QA. Full Sol6 audit resumes at OLP-0349; full722 reader, localization and verified release remain required. TeX occupancy never holds translation."
+}

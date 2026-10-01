@@ -1,0 +1,175 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-N2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tni}
+
+\olsection{له \Log{N2} څخه \Log{G2} ته ژباړه}
+
+\begin{prop}\ollabel{prop:N2-to-G2}
+که $\Log{N2c}\ (\Log{N2i}) \Proves \Gamma \Sequent !A$ وي، نو
+$\Log{G2c}\ (\Log{G2i}) + \Cut \Proves \Gamma' \Sequent \Delta$،
+چې $\Gamma'$ د !!{formula}s د تکرار شمېر لرونکے هغه سټ دے
+چې له $\Gamma$ څخه د نښو په لرې کولو جوړېږي؛ که $!A$ د
+$\lfalse$ فارمول نۀ وي $\Delta = \{!A\}$، او که وي
+$\Delta = \emptyset$۔
+\textbf{سرچينه‌يي سمون OLCMP-159:} د حدسي ژباړې پاييز نظام
+G2i دے؛ د سرچينې نقل شوے N2i نوم سم شو۔
+\end{prop}
+
+\begin{proof}
+ثبوت بيا د $\Gamma \Sequent !A$ د !!{proof}~$\delta$ پر
+لوړوالي استقرا ده۔ که $\delta$ د $x:!A \Sequent !A$
+بديهيت وي، $\pi$ اړوند بديهيت $!A \Sequent !A$ دے، يا
+$\lfalse \Sequent \ $ که $!A \ident \lfalse$ وي۔
+
+که $\delta$ په استنتاجي قاعده ختمېږي، حالتونه بېلوو:
+\begin{enumerate}
+  \item که $R$ د \Intro{\lif} قاعده وي، اصلي فارمول ئې
+  $!B \lif !C$ وي، او $x:!B$ د مقدمې په سياق کښې موجود خو
+  د پايلې په سياق کښې نۀ وي، نو $\delta$ داسې ختمېږي:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  د استقرا فرضيه د $!B, \Gamma' \Sequent !C$
+  !!a{proof}~$\pi_1$ راکوي، يا د $!B, \Gamma' \Sequent \ $
+  که $!C \ident \lfalse$ وي۔ له دې څخه $\pi$ د
+  \RightR{\lif} په کارولو اخلو؛ که $!C \ident \lfalse$ وي،
+  لومړے \RightR{\Weakening} کاروو۔
+  \item که $R$ د \Intro{\lif} قاعده وي، خو $x:!B$ د
+  مقدمې په سياق کښې نۀ وي، نو $\delta$ داسې ختمېږي:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  د استقرا فرضيه د $\Gamma' \Sequent !C$
+  !!a{proof}~$\pi_1$ هغه وخت راکوي چې پاييز فارمول دروغ
+  نۀ وي۔ که دروغ وي، د استقرا ثبوت تش ښے اړخ لري؛ لومړے
+  ښے اړخ کمزوري کوو چې هماغه دروغ فارمول ښي اړخ ته راشي۔
+  بيا په دواړو حالتونو کښې $\pi$ د~$!B$ سره د
+  \LeftR{\Weakening} او ورپسې د~\RightR{\lif} په کارولو اخلو۔
+  \textbf{سرچينه‌يي سمون OLCMP-160:} په بې‌فرضه ايستلو
+  حالت کښې هم د دروغ پاييز فارمول تش ښے اړخ د شرطي داخلولو
+  مخکې بېرته په فارمول اړول پکار دي؛ سرچينې دا حالت پرېښودے و۔
+  \item که $R$ د \Elim{\lif} قاعده وي، $\delta$ داسې ختمېږي:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$\Gamma_2 \fCenter !B$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  چې $\Gamma = \Gamma_1 \cup \Gamma_2$ دے۔ د استقرا فرضيه
+  د $\Gamma_1' \Sequent !B \lif !A$ !!{proof}s $\pi_1$ او
+  د $\Gamma_2' \Sequent !B$ ثبوت $\pi_2$ راکوي، په دې
+  وروستي بيان کښې هغه وخت چې کوچنۍ مقدمه دروغ نۀ وي۔ هغه
+  حالت چې کوچنۍ مقدمه دروغ وي، لاندې بېل بيانېږي۔ کله چې
+  پاييز فارمول هم دروغ نۀ وي، !!{proof}~$\pi$ داسې اخلو:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter !B$
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!B \lif !A, \Gamma_2' \fCenter !A$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  که پاييز فارمول دروغ وي خو کوچنۍ مقدمه دروغ نۀ وي، په
+  همدې رسم کښې د هويت بديهيت پر ځاے د دروغ-تش سېکوېنټ
+  بديهيت اخلو؛ د شرطي کيڼې قاعدې او ورپسې د پرېکون پايلې
+  هم تش ښے اړخ لري۔
+  \textbf{سرچينه‌يي سمون OLCMP-162:} د قضیې د دروغ پاييز
+  فارمول ژباړه تش ښے اړخ غواړي؛ عمومي رسم په همدغه حالت
+  کښې د دروغ-تش بديهيت سره لوستل کېږي۔
+  د تکرار شمېر لرونکے سټ $\Gamma_1' \cup \Gamma_2'$ ښايي
+  له $\Gamma' = (\Gamma_1 \cup \Gamma_2)'$ سره برابر نۀ وي۔
+  مثلاً، که دواړه $\Gamma_1$ او $\Gamma_2$ د $x:!C$ فارمول
+  ولري، نو $\Gamma_1' \cup \Gamma_2'$ د $!C$ دوه نقلونه لري،
+  خو $(\Gamma_1 \cup \Gamma_2)'$ يوازې يو نقل لري۔ د
+  \LeftR{\Contraction} د مناسبو استنتاجونو په زياتولو دا سمولے شو۔
+
+  که $!B \ident \lfalse$ وي، پر $\delta_2$ د استقرا
+  فرضيه د $\Gamma_2' \Sequent \ $ !!a{proof} راکوي۔ له دې
+  څخه !!{proof}~$\pi$ د \LeftR{\Weakening} د مناسبو
+  استنتاجونو په زياتولو جوړوو چې د لوې مقدمې اړين سياق
+  هم ولري؛ بيا د~$!A$ سره \RightR{\Weakening} يوازې هغه
+  وخت کاروو چې پاييز فارمول دروغ نۀ وي۔ که پاييز فارمول
+  دروغ وي، ښے اړخ هماغه تش پرېږدو۔
+  \textbf{سرچينه‌يي سمون OLCMP-161:} دويم فرعي ثبوت د
+  کوچنۍ مقدمې فارمول ثابتوي؛ د تش ښي اړخ شرط ئې د کوچنۍ
+  مقدمې دروغ‌والے دے، نۀ د وروستۍ پايلې دروغ‌والے۔ د
+  وروستۍ دروغ پايلې دپاره ښے اړخ تش ساتل کېږي۔
+\item که $R$ د \FalseCl قاعده وي، $\delta$ د ښودل شوي
+  نښه لرونکي فرض د موجوديت په حالت کښې داسې ختمېږي:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x: \lnot !A, \Gamma \fCenter \lfalse$
+  \RightLabel{\FalseCl}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof
+  \]
+  د استقرا له فرضيې د $\lnot !A, \Gamma' \Sequent \ $
+  !!a{proof} $\pi_1$ شته۔ که د ايستلو نښه لرونکے فرض په
+  اصل کښې موجود نۀ وي، لومړے کيڼ اړخ کمزوري کوو چې نفي
+  شوې مقدمه ورزياته شي۔
+  \textbf{سرچينه‌يي سمون OLCMP-164:} کلاسيکي قاعده د
+  فرض له ايستلو پرته هم کارېږي؛ سرچينې يوازې د موجود فرض رسم ښودلے و،
+  د بې‌فرضه ايستلو حالت هم په دغه کيڼ کمزوري کولو رانغاړو۔
+  !!{proof}~$\pi$ داسې اخلو:
+  \[
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma' \fCenter $
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma' \fCenter !A$
+  \DisplayProof
+  \]
+  \textbf{سرچينه‌يي سمون OLCMP-163:} د G2 په سېکوېنټ کښې
+  د فرض نښه نۀ پاتې کېږي؛ د استقرا په مقدمه کښې پاتې اضافي ليبل لرې شو۔
+  که پاييز فارمول دروغ وي، د دې رسم په پاے کښې له
+  دروغ-تش بديهيت سره يو بل پرېکون کوو، څو ښے اړخ د
+  قضیې له شرط سره سم تش شي۔
+  \textbf{سرچينه‌يي سمون OLCMP-165:} د کلاسيکي وروستي
+  حالت دروغ پايله هم بايد تش ښي اړخ ته واړول شي؛ سرچينې
+  د خپلې قضیې دغه شرط دلته نۀ و پوره کړے۔
+\end{enumerate}
+پام وکړئ چې يوازې د \FalseCl{} ژباړه داسې
+!!a{proof}~$\pi$ ورکوي چې ښي اړخ ته له يوه !!{formula}
+څخه زيات ولري۔ يعنې د~\Log{N2i} د !!{proof} ژباړه يو
+\Log{G2i}-!!{proof} دے۔
+\textbf{د ثبوت د بشپړتيا سرچينه‌يي يادونه OLCMP-166:}
+سرچينه يوازې د شرطي داخلولو دوه حالتونه، د شرطي ايستلو
+او د کلاسيکي دروغ قاعدې حالتونه ورکوي؛ نور منطقي او
+کميت‌لرونکي قاعدوي حالتونه نۀ دي تشريح شوي۔ د هغو د
+ورک استدلال له امله دا ورکړل شوې برخه د بشپړ ثبوت په
+توګه نۀ تصديقېږي۔ قضیه ناسمه نۀ بلل کېږي او نوے ورک
+ثبوت يا حل شوے تمرين دلته نۀ دے زيات شوے۔
+\end{proof}
+
+\end{document}

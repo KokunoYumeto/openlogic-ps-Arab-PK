@@ -6909,11 +6909,11 @@
       "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
       "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:30-31",
       "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex",
-      "target_line_1based": 41,
-      "target_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "target_line_1based": 28,
+      "target_sha256": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.",
-      "reason": "The definition displays k arguments but calls f n-ary. The target uses k-ary, matching the argument indices and the later quantification.",
+      "translation_change": "پخوانے ۰۰۲ سمون بشپړ بيا کتل شو: د تعريف او ټولو آرګومېنټونو شاخصونه k ټاکي، نو د تابعې کچه k ده۔ د چرچ عددنښو n په نورو ځايونو کښې عين دے۔",
+      "reason": "پخوانے ۰۰۲ سمون بشپړ بيا کتل شو: د تعريف او ټولو آرګومېنټونو شاخصونه k ټاکي، نو د تابعې کچه k ده۔ د چرچ عددنښو n په نورو ځايونو کښې عين دے۔",
       "counterexample": "The listed inputs run from x_0 through x_(k-1), and the defining condition quantifies n_0 through n_(k-1); no independent arity n is introduced for f.",
       "formula_policy": "Only the arity variable in the prose math changes from n to k; all Church-numeral uses of n remain unchanged.",
       "qa_math_exception": {
@@ -6941,10 +6941,16 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
       "audit_artifacts": [
         "content/lambda-calculus/introduction/lambda-definability.tex:30-31",
-        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:41"
+        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:41",
+        "B245_SOURCE_AUDIT.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
       ],
       "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "exact_original_text": "$n$-ary",
+      "exact_proposed_source_text": "$k$-ary",
+      "reaudit_receipt": "SOL6_REAUDIT_0348.json",
+      "primary_verification": "Whole source0348 re-read; actual k-indexed definition and exact defined/undefined applications checked, existing math exceptions unchanged."
     },
     {
       "id": "OLLAM-003",
@@ -6954,11 +6960,11 @@
       "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
       "source_locator": "content/lambda-calculus/introduction/lambda-definability.tex:37-39",
       "target_path": "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex",
-      "target_line_1based": 44,
-      "target_sha256": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "target_line_1based": 28,
+      "target_sha256": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
       "mode": "corrected-target-plus-adjacent-Pashto-disclosure",
-      "translation_change": "The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.",
-      "reason": "The undefined-case lambda application puts a comma after F, unlike the defined-case application. The target removes the comma and uses the same application spacing as above.",
+      "translation_change": "پخوانے ۰۰۳ سمون بشپړ بيا کتل شو: د ناتعريف شوي حالت کامه تطبيق نۀ دے؛ د تعريف شوي حالت په شان نېغ تطبيق پکار دے۔ يوازې کامه لرې او د تطبيق فاصله سمه ده، ټول آرګومېنټونه او ترتيب عين دي۔",
+      "reason": "پخوانے ۰۰۳ سمون بشپړ بيا کتل شو: د ناتعريف شوي حالت کامه تطبيق نۀ دے؛ د تعريف شوي حالت په شان نېغ تطبيق پکار دے۔ يوازې کامه لرې او د تطبيق فاصله سمه ده، ټول آرګومېنټونه او ترتيب عين دي۔",
       "counterexample": "A comma separates F from its first numeral rather than applying F to the listed Church numerals, so the source expression does not denote the computation whose normal form is under discussion.",
       "formula_policy": "Remove only the separating comma and use the existing application spacing; preserve all argument numerals and order.",
       "qa_math_exception": {
@@ -6986,10 +6992,16 @@
       "stable_audit": "PS-OWNER-SEMANTIC-20260926-LAMBDA-DEFINABILITY",
       "audit_artifacts": [
         "content/lambda-calculus/introduction/lambda-definability.tex:37-39",
-        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:44"
+        "ps-Arab-PK/content/lambda-calculus/introduction/lambda-definability.tex:44",
+        "B245_SOURCE_AUDIT.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
       ],
       "decision_timing": "contemporaneous B063 owner source review before cumulative acceptance",
-      "upstream_reporting": "manager report pending; no direct upstream issue"
+      "upstream_reporting": "manager report pending; no direct upstream issue",
+      "exact_original_text": "$F, \\num{n_0}\\, \\num{n_1}\n\\dots \\num{n_{k-1}}$",
+      "exact_proposed_source_text": "$F\\, \\num{n_0}\\, \\num{n_1}\n\\dots \\num{n_{k-1}}$",
+      "reaudit_receipt": "SOL6_REAUDIT_0348.json",
+      "primary_verification": "Whole source0348 re-read; actual k-indexed definition and exact defined/undefined applications checked, existing math exceptions unchanged."
     },
     {
       "id": "OLLAM-004",
@@ -22232,6 +22244,426 @@
         "B244_NEXT_SOURCE_PREAUDIT.json"
       ],
       "decision_timing": "د بشپړ اصل او کره مخالف مثال له کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-159",
+      "unit_id": "OLP-0671",
+      "classification": "copied-target-intuitionistic-system",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:14",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 13,
+      "disclosure_line_1based": 20,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "نښه لرونکے N2 کلاسيکي يا حدسي ثبوت په اړوند G2 نظام د پرېکون سره بدلېږي؛ د نښو لرې کول د نقلونو شمېر ساتي۔ دروغ پاييز فارمول تش ښي اړخ ته، نور يو فارمول ته اوړي۔ ۱۵۹ نقل شوے N2i پاييز نوم G2i کوي۔",
+      "reason": "نښه لرونکے N2 کلاسيکي يا حدسي ثبوت په اړوند G2 نظام د پرېکون سره بدلېږي؛ د نښو لرې کول د نقلونو شمېر ساتي۔ دروغ پاييز فارمول تش ښي اړخ ته، نور يو فارمول ته اوړي۔ ۱۵۹ نقل شوے N2i پاييز نوم G2i کوي۔",
+      "exact_original_text": "\\Log{G2c}\\ (\\Log{N2i}) + \\Cut",
+      "exact_proposed_source_text": "\\Log{G2c}\\ (\\Log{G2i}) + \\Cut",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The target sequent-calculus intuitionistic system is G2i; the theorem accidentally repeats N2i from its premise.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$\\Log{G2c}\\(\\Log{N2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$\\Log{G2c}\\(\\Log{G2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-160",
+      "unit_id": "OLP-0671",
+      "classification": "vacuous-implication-bottom-premise-translation",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:54",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 30,
+      "disclosure_line_1based": 64,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د شرطي داخلولو دواړه اصلي حالتونه او د شرطي ايستلو دواړه اصلي رسمونه عين دي۔ بې‌فرضه ايستلو کښې د دروغ مقدمې تش ښے اړخ د ښي کمزوري کولو په ذريعه د داخلولو مخکې بېرته فارمول کېږي۔ د دروغ پايلې د ايستلو رسم د دروغ-تش بديهيت سره او تشو منځنيو او وروستيو پايلو سره لوستل کېږي۔ د سياقونو ګډو نښو د نقلونو شمېر د کيڼ انقباض له لارې د اصلي سټ له اتحاد سره برابرېږي۔",
+      "reason": "د شرطي داخلولو دواړه اصلي حالتونه او د شرطي ايستلو دواړه اصلي رسمونه عين دي۔ بې‌فرضه ايستلو کښې د دروغ مقدمې تش ښے اړخ د ښي کمزوري کولو په ذريعه د داخلولو مخکې بېرته فارمول کېږي۔ د دروغ پايلې د ايستلو رسم د دروغ-تش بديهيت سره او تشو منځنيو او وروستيو پايلو سره لوستل کېږي۔ د سياقونو ګډو نښو د نقلونو شمېر د کيڼ انقباض له لارې د اصلي سټ له اتحاد سره برابرېږي۔",
+      "exact_original_text": "The inductive hypothesis yields !!a{proof}~$\\pi_1$ of $\\Gamma'\n  \\Sequent !C$, from which we obtain $\\pi$ by applying\n  \\LeftR{\\Weakening}",
+      "exact_proposed_source_text": "The inductive hypothesis yields !!a{proof}~$\\pi_1$ of $\\Gamma'\n  \\Sequent !C$, from which we obtain $\\pi$ by applying\n  \\LeftR{\\Weakening} (after right weakening restores bottom when C is bottom)",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "For vacuous implication introduction, IH yields an empty succedent if C is bottom, just as in the preceding discharged case. Restore bottom by right weakening before left weakening and implication introduction. No new displayed proof is added.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-161",
+      "unit_id": "OLP-0671",
+      "classification": "implication-minor-bottom-condition",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:92",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 113,
+      "disclosure_line_1based": 120,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "In the event that $!A \\ident \\lfalse$, the inductive hypothesis\n  applied to $\\delta_2$",
+      "exact_proposed_source_text": "In the event that $!B \\ident \\lfalse$, the inductive hypothesis\n  applied to $\\delta_2$",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "Delta2 proves B, so its translated succedent is empty iff B is bottom, not iff final A is bottom. Counterexample: delta2 is y:P proves P with P true and A bottom; it cannot yield P proves empty. Weaken its empty succedent only if final A is nonbottom; otherwise retain empty.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "$!A\\ident\\lfalse$"
+        ],
+        "target_only": [
+          "$!B\\ident\\lfalse$"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-162",
+      "unit_id": "OLP-0671",
+      "classification": "implication-bottom-conclusion-invariant",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:72",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 30,
+      "disclosure_line_1based": 103,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د شرطي داخلولو دواړه اصلي حالتونه او د شرطي ايستلو دواړه اصلي رسمونه عين دي۔ بې‌فرضه ايستلو کښې د دروغ مقدمې تش ښے اړخ د ښي کمزوري کولو په ذريعه د داخلولو مخکې بېرته فارمول کېږي۔ د دروغ پايلې د ايستلو رسم د دروغ-تش بديهيت سره او تشو منځنيو او وروستيو پايلو سره لوستل کېږي۔ د سياقونو ګډو نښو د نقلونو شمېر د کيڼ انقباض له لارې د اصلي سټ له اتحاد سره برابرېږي۔",
+      "reason": "د شرطي داخلولو دواړه اصلي حالتونه او د شرطي ايستلو دواړه اصلي رسمونه عين دي۔ بې‌فرضه ايستلو کښې د دروغ مقدمې تش ښے اړخ د ښي کمزوري کولو په ذريعه د داخلولو مخکې بېرته فارمول کېږي۔ د دروغ پايلې د ايستلو رسم د دروغ-تش بديهيت سره او تشو منځنيو او وروستيو پايلو سره لوستل کېږي۔ د سياقونو ګډو نښو د نقلونو شمېر د کيڼ انقباض له لارې د اصلي سټ له اتحاد سره برابرېږي۔",
+      "exact_original_text": "\\[\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\Gamma_1' \\fCenter !B \\lif !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_2$}\n  \\Deduce$\\Gamma_2' \\fCenter !B$\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\LeftR{\\lif}}\n  \\BinaryInf$!B \\lif !A, \\Gamma_2' \\fCenter !A$\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma_1', \\Gamma_2' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "Use this display when A and B are nonbottom.\n\\[\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\Gamma_1' \\fCenter !B \\lif !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_2$}\n  \\Deduce$\\Gamma_2' \\fCenter !B$\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\LeftR{\\lif}}\n  \\BinaryInf$!B \\lif !A, \\Gamma_2' \\fCenter !A$\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma_1', \\Gamma_2' \\fCenter !A$\n  \\DisplayProof\n  \\]\nIf A is bottom but B is not, replace the A-identity axiom by bottom proves empty and keep both following conclusions empty.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The theorem maps a bottom end-formula to an empty succedent. In the nonbottom-minor case, the same left-implication/cut construction with the bottom-empty axiom meets this invariant. The original diagram is retained for the nonbottom case; target adds the exact conditional reading in native prose.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-163",
+      "unit_id": "OLP-0671",
+      "classification": "unremoved-label-in-G2-sequent",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:107",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 113,
+      "disclosure_line_1based": 153,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$x: \\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The induction hypothesis explicitly produces an unlabelled G2 sequent; x: is an unremoved N2 assumption label in the final cut diagram. Remove exactly that label. Other five diagrams are byte-identical.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$x:\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ]
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-164",
+      "unit_id": "OLP-0671",
+      "classification": "classical-vacuous-discharge-premise",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:96",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 113,
+      "disclosure_line_1based": 138,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\item If $R$ is \\FalseCl, $\\delta$ ends in",
+      "exact_proposed_source_text": "\\item If $R$ is \\FalseCl and its discharged assumption is present, $\\delta$ ends in; if absent, left-weaken the translated empty-succedent subproof with the negated assumption before the same construction.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The actual N2 rules allow vacuous discharge, including FalseCl. The source only shows a present x:notA assumption. With it absent, IH proves Gamma prime proves empty; left weakening provides notA,Gamma prime proves empty for the displayed cut.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-165",
+      "unit_id": "OLP-0671",
+      "classification": "classical-bottom-conclusion-invariant",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:107",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 113,
+      "disclosure_line_1based": 158,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$x: \\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]",
+      "exact_proposed_source_text": "\\[\n  \\Axiom$!A \\fCenter !A$\n  \\RightLabel{\\RightR{\\lnot}}\n  \\UnaryInf$\\fCenter !A, \\lnot !A$\n  \\AxiomC{}\n  \\RightLabel{$\\pi_1$}\n  \\Deduce$\\lnot !A, \\Gamma' \\fCenter $\n  \\RightLabel{\\Cut}\n  \\BinaryInf$\\Gamma' \\fCenter !A$\n  \\DisplayProof\n  \\]\nIf the conclusion A is bottom, cut the resulting bottom-succedent proof with bottom proves empty to meet the theorem invariant.",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "The classical cut display ends in A even when A is bottom, while the proposition requires empty in that case. One final cut with the actual bottom-empty axiom normalizes it. This is a conditional source correction, not an invented independent theorem.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
+      "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLCMP-166",
+      "unit_id": "OLP-0671",
+      "classification": "reverse-inductive-proof-incomplete-case-coverage",
+      "reporting_lane": "source_erratum_substantive",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_locator": "content/proof-theory/natural-deduction/translation-N2i.tex:122",
+      "target_path": "ps-Arab-PK/content/proof-theory/natural-deduction/translation-N2i.tex",
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_line_1based": 113,
+      "disclosure_line_1based": 166,
+      "mode": "کره لږ تر لږه سرچينه‌يي سمون او پښتو څرګندونه",
+      "translation_change": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "reason": "د کوچنۍ مقدمې دروغ‌والے د دويم فرعي ثبوت تش ښے اړخ ورکوي، نۀ د وروستۍ پايلې دروغ‌والے؛ وروستۍ دروغ پايله تشه ساتل کېږي۔ کلاسيکي قاعده د فرض له ايستلو پرته هم منل کېږي او نفي شوې مقدمه په کيڼ کمزوري کولو ورزياتېږي۔ په G2 رسم کښې پاتې x نښه لرې ده۔ کلاسيکي دروغ پايله د دروغ-تش بديهيت سره په وروستي پرېکون تشه کېږي۔ شپږ اصلي رسمونه او څلور اصلي حالتونه ساتل شوي؛ ۱۶۶ د نورو منطقي او کميت‌لرونکو حالتونو تشه ښکاره کوي، نو بشپړ ثبوت نۀ دعوه کېږي۔",
+      "exact_original_text": "\\end{proof}",
+      "exact_proposed_source_text": "The source supplies only four itemized cases (two implication introductions, implication elimination and classical falsity); other logical and quantifier cases are absent. This excerpt is not a verified complete proof.\n\\end{proof}",
+      "additional_exact_source_fragments": [],
+      "primary_verification": "Actual N2 rule table contains conjunction, disjunction, negation, quantifiers and intuitionistic falsity rules omitted by this proof. Preserve the four supplied cases and disclose the gap; do not declare the theorem false or invent omitted proofs.",
+      "formula_policy": "يوازې د پاييز نظام نوم، د کوچنۍ مقدمې دروغ شرط او پاتې نښه رسمي سمون لري؛ نور پنځه رسمونه عين دي، تش ښے اړخ او بې‌فرضه ايستل په کره نثر څرګند دي۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "stable_audit": "PS-B245-N2-G2-BOTTOM-CHURCH-BODY",
+      "audit_artifacts": [
+        "B245_SOURCE_AUDIT.json",
+        "B245_FINAL_DRAFT_QA.json",
+        "B245_NEXT_SOURCE_PREAUDIT.json"
+      ],
+      "decision_timing": "د بشپړ اصل او د دروغ پاييز فارمول له کره کتنې وروسته ثبت۔",
       "upstream_reporting": "نوے پوسټ نۀ دے شوے؛ د سرچينه‌يي پېژند پر بنسټ د تکرار کتنه پاتې ده۔",
       "qa_math_exception": {
         "source_only": [],

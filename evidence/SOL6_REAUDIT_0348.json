@@ -1,0 +1,70 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T02:53:24.474053+00:00",
+  "status": "بشپړه خپلواکه بياکتنه؛ د چرچ عددنښې د بدنې شمېر واضح دے، معتبر پخواني ۰۰۲ او ۰۰۳ سمونونه بيا تصديق دي۔",
+  "units": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "target_sha256_before": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "target_sha256": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_sha256_after": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_bytes": 3151,
+      "paired_blocks": 11,
+      "source_correction_ids": [],
+      "reverified_source_correction_ids": [
+        "OLLAM-002",
+        "OLLAM-003"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0348-CHURCH-BODY-COUNT"
+      ],
+      "translated_blocks_reviewed": 7,
+      "target_retained_unchanged": false,
+      "all_prior_math_bytes_retained": true
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "پاکستانے نثر کښې او د جملې روښانه دلالت ښيي؛ د لامبډا شمېرنې عين مرکب نۀ تصديقوي۔",
+      "evidence_limit": "پاکستانے نثر کښې او د جملې روښانه دلالت ښيي؛ د لامبډا شمېرنې عين مرکب نۀ تصديقوي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "دغه اصلي مخونه د همدې فعال بهير د مسودې مخکې په سترګو کتل شوي دي؛ پاکستانے نثر لومړنے او افغان شاهدان سيمه‌ييز دي۔",
+      "finding": "افغان سيمه‌ييز مخ تابعې، صفر، جانشين او ارجاعي تعريف ښيي؛ د چرچ عددنښې په بدنه کښې د تطبيق شمېر اصلي لامبډا ترم ټاکي۔",
+      "evidence_limit": "افغان سيمه‌ييز مخ تابعې، صفر، جانشين او ارجاعي تعريف ښيي؛ د چرچ عددنښې په بدنه کښې د تطبيق شمېر اصلي لامبډا ترم ټاکي۔"
+    }
+  ],
+  "segment_entries_added": 7,
+  "new_source_correction_ids": [],
+  "reverified_source_correction_ids": [
+    "OLLAM-002",
+    "OLLAM-003"
+  ],
+  "wording_choice_ids": [
+    "DEC-PS-0348-CHURCH-BODY-COUNT"
+  ],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0348.jsonl",
+  "whole_unit_segment_snapshot_sha256": "7d93f2eee0b0e84e9619753e7d4f1ec0a90a84bff2cdbcbcc75f7f3342f67992",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "بشپړ OLP-0672 او OLP-0349 دوام؛ ټول اصل قاعدوي او لامبډا حالتونه کتل۔"
+}

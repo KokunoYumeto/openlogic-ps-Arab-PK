@@ -1,0 +1,112 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T02:53:24.474053+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0671",
+      "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+      "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+      "source_bytes": 4249,
+      "target_sha256": "d98cafb2bca5709b0fa426908af0e488a15ae625ea882f49cbb50ae9256a5fd4",
+      "target_bytes": 9006,
+      "paired_blocks": 10,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "checks": {
+        "ids": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math_exact_exceptions": true,
+        "lf_target": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "math_exact_per_source_block": true,
+        "all_six_diagrams_retained": true,
+        "only_final_diagram_changes": true,
+        "only_unlabelled_G2_premise_changes": true,
+        "all_four_original_cases_retained": true,
+        "proof_gap_disclosed_without_added_cases": true,
+        "bottom_minor_condition_correct": true
+      },
+      "source_correction_ids": [
+        "OLCMP-159",
+        "OLCMP-160",
+        "OLCMP-161",
+        "OLCMP-162",
+        "OLCMP-163",
+        "OLCMP-164",
+        "OLCMP-165",
+        "OLCMP-166"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0348",
+      "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+      "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+      "target_sha256_before": "ddb1ec67c984f4af1dad71b39e3ef63d60bf1804dea97d01993daaede900e87c",
+      "target_sha256": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_sha256_after": "f6ffc4ee674f1104c01e0e50fb808d770b8dd89c7bfe6f41fdda8c744f61b602",
+      "target_bytes": 3151,
+      "paired_blocks": 11,
+      "source_correction_ids": [],
+      "reverified_source_correction_ids": [
+        "OLLAM-002",
+        "OLLAM-003"
+      ],
+      "wording_choice_ids": [
+        "DEC-PS-0348-CHURCH-BODY-COUNT"
+      ]
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0671": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "math_exact_per_source_block": true,
+      "all_six_diagrams_retained": true,
+      "only_final_diagram_changes": true,
+      "only_unlabelled_G2_premise_changes": true,
+      "all_four_original_cases_retained": true,
+      "proof_gap_disclosed_without_added_cases": true,
+      "bottom_minor_condition_correct": true
+    },
+    "OLP-0348": {
+      "ids": true,
+      "optional_tags": true,
+      "structural_macros": true,
+      "math_exact_exceptions": true,
+      "lf_target": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "math_exact_per_source_block": true,
+      "all_prior_math_spans_byte_identical": true,
+      "body_count_clarified": true,
+      "valid_existing_arity_application_repairs_retained": true,
+      "no_invented_theorem_proof": true
+    }
+  },
+  "all_six_original_diagrams_retained": true,
+  "mathematical_or_historical_source_corrections_added": 8,
+  "reverified_source_correction_ids": [
+    "OLLAM-002",
+    "OLLAM-003"
+  ],
+  "source_preaudit_sha256": "7a9fbfda2a10b2a7a6bcf7fd129231b3f1a84f6f7075bc6069c9875057b63b5f"
+}
