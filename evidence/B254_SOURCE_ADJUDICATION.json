@@ -1,0 +1,167 @@
+{
+  "finding_records": [
+    {
+      "id": "OLCMP-185",
+      "block": 6,
+      "classification": "missing-formula-name-in-succedent-membership",
+      "reason_native": "د ښي اړخ د غړيتوب ورکه A نښه په هماغه بشپړ فارمول سمه شوه۔",
+      "formal_changes": [
+        {
+          "source": "$! \\in \\Delta$",
+          "target": "$!A \\in \\Delta$"
+        }
+      ],
+      "priority": "medium",
+      "reporting_lane": "source_editorial_small",
+      "unit_id": "OLP-0679"
+    },
+    {
+      "id": "OLCMP-186",
+      "block": 7,
+      "classification": "finite-failure-branch-successor-scope-and-copied-succedent",
+      "reason_native": "ناکامه څانګه متناهي يا نامتناهي ده؛ د راتلونکې مقدمې شرط يوازې د موجود راتلونکي مورد دپاره دے۔ د ثابتونو د تړاو کاپي شوے Delta-n په اصلي Lambda-n بدل شو، او اټومي پاتې کېدل هم په موجود راتلونکي مورد پورې تړلي دي۔",
+      "formal_changes": [
+        {
+          "source": "$\\Pi_n\n\\Sequent \\Delta_n$",
+          "target": "$\\Pi_n\\Sequent \\Lambda_n$"
+        }
+      ],
+      "priority": "medium",
+      "reporting_lane": "source_editorial_small",
+      "affected_segments": [
+        "OLP-0679-B007",
+        "OLP-0679-B015"
+      ],
+      "unit_id": "OLP-0679"
+    },
+    {
+      "id": "OLCMP-187",
+      "block": 10,
+      "classification": "constant-interpretation-type-scope",
+      "reason_native": "د c د تفسير جمله يوازې د ثابت نوم دپاره ده؛ د مدل ټول مرکب ترمونه مستقل ثابت سمبولونه نۀ دي۔ رسمي c-domain شرط عين دے، نوعه په نثر کښې واضح شوې۔",
+      "formal_changes": [],
+      "priority": "medium",
+      "reporting_lane": "source_editorial_small",
+      "unit_id": "OLP-0679"
+    },
+    {
+      "id": "OLCMP-188",
+      "block": 10,
+      "classification": "copied-arity-in-term-model-function-and-relation-definition",
+      "reason_native": "د اعلان شوي m-ځايه تابعې او پريديکات تعريفونه هماغه m ورودي ترمونه او m-يم کارټيزي قوت غواړي؛ درې کاپي شوي n شاخصونه سم شول۔ ورپسې مستقل عمومي n-ځايه مثال نۀ دے بدل شوے۔",
+      "formal_changes": [
+        {
+          "source": "$\\Assign{f}{M}(t_1, \\dots, t_m) =\nf(t_1, \\dots, t_n)$",
+          "target": "$\\Assign{f}{M}(t_1, \\dots, t_m) = f(t_1, \\dots, t_m)$"
+        },
+        {
+          "source": "$\\Assign{R}{M} = \\Setabs{\\tuple{t_1, \\dots, t_m} \\in\n\\Domain{M}^n}{R(t_1, \\dots, t_n) \\in \\Theta}$",
+          "target": "$\\Assign{R}{M} = \\Setabs{\\tuple{t_1, \\dots, t_m} \\in\n\\Domain{M}^m}{R(t_1, \\dots, t_m) \\in \\Theta}$"
+        }
+      ],
+      "priority": "high",
+      "reporting_lane": "source_erratum_substantive",
+      "unit_id": "OLP-0679"
+    },
+    {
+      "id": "OLCMP-189",
+      "block": 17,
+      "classification": "fairness-argument-selects-nonatomic-index-and-does-not-strictly-increase-each-stage",
+      "reason_native": "الګوريتم تر ټولو کوچنے ناعټومي شاخص ټاکي؛ اټومي کوچنے شاخص پاتې کېدے شي۔ په اعلان شوې نوي k-شاخص قاعده کښې ناعټومي کوچنے شاخص هم په هر ګام سخت نۀ زياتېږي۔ د انصاف لازم شرط ساتل شو، خو ناسم سخت زياتوالي دليل نۀ دے منل شوے؛ تفصيلي شاخص سمون جلا پاتې دے۔",
+      "formal_changes": [],
+      "priority": "high",
+      "reporting_lane": "source_erratum_substantive",
+      "general_replacement_proof_supplied": false,
+      "next_algorithm_unit": "OLP-0683",
+      "unit_id": "OLP-0679"
+    },
+    {
+      "id": "OLCMP-190",
+      "block": 11,
+      "classification": "ground-term-model-proof-does-not-cover-free-variable-assignment",
+      "reason_native": "له بې‌متغيره ترمونو جوړ مدل او اټومي غړيتوب تفسير په تړلو جملو کار کوي۔ که Theta د ازاد متغير اټومي فارمول ولري، يوازې تړلو ترمونو تفسير هغه فارمول په اتومات ډول رښتيا نۀ کوي۔ د عمومي جملې د ازادو متغيرونو اضافي ګومارنې/پاراميټر جوړونه دلته نشته؛ عمومي جمله عين ده، پاتې حالت واضح دے۔",
+      "formal_changes": [],
+      "priority": "high",
+      "reporting_lane": "source_proof_scope_disclosure",
+      "theorem_refuted": false,
+      "general_replacement_proof_supplied": false,
+      "unit_id": "OLP-0679"
+    }
+  ],
+  "symbolic_checks": [
+    {
+      "id": "OLCMP-186",
+      "case": "A finite failure branch terminates at a non-axiom atomic sequent; no n+1 node exists at that terminal n. Successor requirements must range over existing edges."
+    },
+    {
+      "id": "OLCMP-188",
+      "case": "An m-ary symbol has exactly m input terms; an m-tuple lives in D^m. Generic later n-ary illustration independently scoped."
+    },
+    {
+      "id": "OLCMP-189",
+      "case": "Start P^1 => (Q and (R and S))^2. On the right-conjunction premise containing (R and S)^2, the global smallest index stays1, while the smallest non-atomic index stays2 after one stage. Printed strict increase is false; atomic formulas are never selected. Fairness remains a required property, not a new proof."
+    },
+    {
+      "id": "OLCMP-190",
+      "case": "Finite failure branch P(v) => empty, with free v, has C={c0}, no functions and D={c0}. The displayed relation interpretation gives P^M=empty because P(c0) is not in Theta={P(v)}. Every variable assignment sends v to c0 and makes P(v) false, contrary to the displayed truth lemma. No global completeness theorem is retracted; separate uniform parameter/assignment treatment remains unprovided."
+    }
+  ],
+  "algorithm_obligations_for_0683": [
+    "New k indices may collide with a retained maximum index and may fail to increase strictly; inspect exact fresh-index construction rather than invent a full fairness proof in679.",
+    "If C initially={c1} with no functions, fallback c0 after exhaustion is outside C; inspect tracking/eigenconstant claim in683. Preserve original source and do not implement a silent algorithm replacement."
+  ],
+  "source_initial_nonempty_domain_verified": "Stage0 explicitly uses {c0} if no constants; no empty-domain defect asserted.",
+  "source_exercises_solved": false,
+  "whole356_no_new_defect": true,
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T10:44:51.405367+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/proof-search/completeness.tex",
+      "actually_read_scope": "entire actual source and full private target",
+      "sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665"
+    },
+    {
+      "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "actually_read_scope": "entire actual source; non-atomic selection, k index allocation, nonempty constants and fallback",
+      "sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2"
+    },
+    {
+      "source_path": "content/proof-theory/proof-search/introduction.tex",
+      "actually_read_scope": "entire actual source; failure countermodel and semantics",
+      "sha256": "c85fedf2ffa728c646c91417c475aa796de5d2d32b09c487475a721b2290ae7f"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+      "actually_read_scope": "entire actual source; finite formula multisets, no explicit closed-sentence restriction",
+      "sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+      "actually_read_scope": "actual lines1–95; closed-term instantiation and eigenconstant",
+      "sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699"
+    },
+    {
+      "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "actually_read_scope": "entire actual rule table",
+      "sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/syntax.tex",
+      "actually_read_scope": "entire actual source and every prior target byte",
+      "sha256": "8d4b46380a30f99e21a4eff935d0e8b3a5c23655709070cdd8aa5c63be62327e"
+    },
+    {
+      "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+      "actually_read_scope": "actual lines227–272; free-for lemma, change of bound variable and quantified implication scope",
+      "sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

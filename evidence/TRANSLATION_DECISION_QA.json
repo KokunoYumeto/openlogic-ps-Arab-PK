@@ -8,12 +8,12 @@
   },
   "canonical_register": {
     "path_or_uri": "evidence/DECISIONS.json",
-    "bytes": 2606,
-    "sha256": "4408767cb81577ba319db27571454d173209c87e0c9a1d23e1f2d01858d1e6c9"
+    "bytes": 2582,
+    "sha256": "41dfc45ce17d39671ddfb68fc6a705bd0057a8d3079798bbfb8d7e9cb09242cd"
   },
   "canonical_storage": {
     "format": "openlogic-translation-decision-storage/1.0.0",
-    "logical_document_sha256": "46a25fc4a9f8bf91a3bb4f15c517b346e9864ce7b6443b19a481e21fabf94ca8",
+    "logical_document_sha256": "0f21d97aaac1f7af86bcef30f19b86415f2b559219f963f8f72f0df38d002358",
     "loader": {
       "path_or_uri": "tools/decision_register_storage.py",
       "bytes": 5848,
@@ -22,41 +22,41 @@
     "artifacts": {
       "DECISIONS.json": {
         "path_or_uri": "evidence/DECISIONS.json",
-        "bytes": 2606,
-        "sha256": "4408767cb81577ba319db27571454d173209c87e0c9a1d23e1f2d01858d1e6c9"
+        "bytes": 2582,
+        "sha256": "41dfc45ce17d39671ddfb68fc6a705bd0057a8d3079798bbfb8d7e9cb09242cd"
       },
       "DECISIONS-001.json": {
         "path_or_uri": "evidence/DECISIONS-001.json",
-        "bytes": 32890318,
-        "sha256": "383acb42b4d2e18c79d068c98775e38fecaba1730f5e572068cfe2d6a427374c"
+        "bytes": 32965377,
+        "sha256": "e18e9ad7f6d764d700defde47917dea78be20f887d5dbc83c32f5afbfe9332fa"
       },
       "DECISIONS-002.json": {
         "path_or_uri": "evidence/DECISIONS-002.json",
-        "bytes": 33324739,
-        "sha256": "49814964de0fe3ce483c9a9c9dfbf12ddcb657f2b470dbcabebf69db9c5e3843"
+        "bytes": 31609807,
+        "sha256": "7ccd42fdc2bc182327bfa4209c82f0ee58cb6218bf807423f8769345b64c94bb"
       },
       "DECISIONS-003.json": {
         "path_or_uri": "evidence/DECISIONS-003.json",
-        "bytes": 33467749,
-        "sha256": "ad2fe0bb82736703b4c138b0d128808fd82c0dfef41097ff7680134b2cb9262c"
+        "bytes": 33444574,
+        "sha256": "e7abe00ee01f717ec1c5c2270ee9e3ac369fada56e96f1c477c550fe98700ece"
       },
       "DECISIONS-004.json": {
         "path_or_uri": "evidence/DECISIONS-004.json",
-        "bytes": 13628485,
-        "sha256": "abae1b6c0eb06b5093dd8acf4fd3f7c6cb32e611d9bd536eb90f3547d19cc6a5"
+        "bytes": 15790425,
+        "sha256": "85b5bfdf9ef48644fc602869dcbe7565802e9e995dd9d37e39303c7faa5e0fa2"
       }
     },
     "reconstructed_normative_schema": "PASS",
     "exact_logical_roundtrip": "PASS"
   },
   "counts": {
-    "decisions": 958,
-    "occurrences": 32644,
+    "decisions": 964,
+    "occurrences": 32765,
     "terminology_decisions": 333,
-    "source_correction_decisions": 576,
-    "priority_decisions": 564,
+    "source_correction_decisions": 582,
+    "priority_decisions": 567,
     "reader_pages_available": 18219,
-    "reader_pages_pending": 14425
+    "reader_pages_pending": 14546
   },
   "validation": {
     "json_schema_draft_2020_12": "PASS",
@@ -75,39 +75,39 @@
     "START_HERE.md": {
       "path_or_uri": "evidence/START_HERE.md",
       "bytes": 3261,
-      "sha256": "249d26374280c33d9758911528657cb48fc0999a251b91e7accc2da31cc88059"
+      "sha256": "49d24e2149d8a72ac36aeddb975da73b9f7c397074baf36467ab8e18f3c28c46"
     },
     "TRANSLATION_DECISIONS_FULL.md": {
       "path_or_uri": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 13585945,
-      "sha256": "ee1419940bc65ad1b3c04b280a77d014b7af3e0b5a5a8db98d02b7df0866a3f3"
+      "bytes": 13668613,
+      "sha256": "831a590e12982ed5020d3a60eb014a7efb0b520b62ec4eb8d4befbb63b39bafe"
     },
     "PRIORITY_REVIEW.md": {
       "path_or_uri": "evidence/PRIORITY_REVIEW.md",
-      "bytes": 11128577,
-      "sha256": "632963be85d9169ec5c5ac200c2b9741eaefe0ed913a70e835b8b6a5a6af44d0"
+      "bytes": 11182145,
+      "sha256": "df5c64f97e84e6e2650faa7a5ca291fc30c42f6f468e92d2d4aee28425f61c9d"
     },
     "DECISION_OCCURRENCES.csv": {
       "path_or_uri": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 69020876,
-      "sha256": "aa17e15eecfeee60244a7bed22ad45490caaae475446d516aa6f131cd9df80ed"
+      "bytes": 69285160,
+      "sha256": "c46f9ef4c1d9d3f57511c82d3aa7fe9527026463eaeb8bc53cc7dce7cae5cb1d"
     }
   },
   "input_artifacts": {
     "review": {
       "path_or_uri": "evidence/EXPERT_REVIEW_LOG.jsonl",
-      "bytes": 6258466,
-      "sha256": "7dfeee2ae6673cad3776656d330cedcab1e21598cabea9b6be54a0f84d743520"
+      "bytes": 6316442,
+      "sha256": "18f9859d154072ab6bd1c9c76da4d2a1ba29807980dc682d825cbdd74a963ee7"
     },
     "alignment": {
       "path_or_uri": "evidence/ALIGNMENT.jsonl",
-      "bytes": 12535091,
-      "sha256": "d59b498eed2227b8cca5ee74678a75587ed898990703be281168601a92108ada"
+      "bytes": 12574634,
+      "sha256": "6c14511aa0b163e599ea68b0b052e380c4e535ee520795a7c97dd4be8d98d273"
     },
     "canon_use": {
       "path_or_uri": "evidence/SEGMENT_CANON_USE.jsonl",
-      "bytes": 14915018,
-      "sha256": "759f6e0cc9ee9b123bc1f24f0774dc36fcfa2783615bccfa471f12c6c1eba57c"
+      "bytes": 14963265,
+      "sha256": "d3cdc0fb5e8e6feb3456cda8f14962b1052b2a72691fe4efb2ec6155d7a3f9fc"
     },
     "manifest": {
       "path_or_uri": "evidence/SOURCE_MANIFEST.jsonl",
@@ -121,13 +121,13 @@
     },
     "canon_passages": {
       "path_or_uri": "evidence/CANON_PASSAGES.jsonl",
-      "bytes": 49723,
-      "sha256": "3901ee350f95060ab8a009adf021e169715b1697b85a8ed0c442e9d7788ac327"
+      "bytes": 50283,
+      "sha256": "b23ca801dbf495cabd63d8ff4dfaf90977a81d7dac63b7ebef07d3ae6584a19c"
     },
     "corrections": {
       "path_or_uri": "evidence/SOURCE_CORRECTIONS.json",
-      "bytes": 1430084,
-      "sha256": "34e3fdfb66f5768ae17f2fe71ec207244239adb8b030b01263c72ce6b0eb63c3"
+      "bytes": 1449650,
+      "sha256": "77f8bd8d8db7f687e4f10a1add31204edb1132f6727b1ce0c0b1410b4a2282ef"
     },
     "terms": {
       "path_or_uri": "evidence/TERM_DECISIONS.jsonl",
@@ -136,8 +136,8 @@
     },
     "qa": {
       "path_or_uri": "evidence/QA.json",
-      "bytes": 2241305,
-      "sha256": "ef54c240e217dc64b561f41adfdaf107379084104bcba6b1c7ad735ac01ccc76"
+      "bytes": 2262404,
+      "sha256": "8287be61d578f1c2d34e407e14e832ba49ddb8e109120c033d70b5ec26ef4e73"
     }
   }
 }

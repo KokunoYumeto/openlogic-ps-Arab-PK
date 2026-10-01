@@ -1,0 +1,58 @@
+{
+  "schema": "ps-bounded-existing-source-correction/1",
+  "utc": "2026-10-01T10:48:52.932625+00:00",
+  "status": "PASS; minimal local implementation; corpus acceptance/publication pending",
+  "unit_id": "OLP-0643",
+  "segment": "OLP-0643-B052",
+  "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+  "source_sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+  "source_lines": [
+    245,
+    246
+  ],
+  "target_sha256_before": "7248bf577756ef5dd0509d7219096142496ae95530e076dc03d3b9f69db10688",
+  "target_sha256_after": "2fcea534a9783b7aa3ddd92e5df78d01a98f1ceda9cd158424b6ebbe43a9fbf3",
+  "target_bytes": 17969,
+  "old_backup": "C:\\interlanguage-task-state\\openlogic-ps-Arab-PK\\work\\0643-before-b254-bound-variable-scope.tex",
+  "changed_blocks": [
+    52
+  ],
+  "formal_change": {
+    "source": "$\\lforall[x][\\Subst{!A}{x}{c} \\lif \\Subst{!A}{x}{c} \\Subst{}{y}{x}]$",
+    "target": "$\\lforall[x][\\Subst{!A}{x}{c}] \\lif \\Subst{!A}{x}{c} \\Subst{}{y}{x}$"
+  },
+  "all_other_math_spans_exact": true,
+  "all_other_target_blocks_exact": true,
+  "canonical_source_issue_id": "PS-643-OLAX-018",
+  "aliases": [
+    "OLAX-018",
+    "OLTEFOLAXDPRV-006"
+  ],
+  "alias_evidence_sha256": "1f115f47c9f388675806a0dc3b534c16fd4b2342b2bb189cc35960b17d86aec4",
+  "new_unique_defects": 0,
+  "actual_native_witnesses": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P90-PREDICATE"
+  ],
+  "canon_limit": "Actual native PNGs viewed before repair; Pakistani prose primary and Afghan proof/predicate comparator regional. The mathematical scope repair is proved from the source and finite semantic check, not by a linguistic authority.",
+  "finite_counterexample": {
+    "domain": [
+      0,
+      1
+    ],
+    "P": [
+      0
+    ],
+    "y": 1,
+    "printed_truth": false,
+    "repaired_truth": true,
+    "original_A": "P(c)"
+  },
+  "all_two_element_P_extensions_and_y_checked": true,
+  "no_full_axiom_system_certification": true,
+  "no_new_upstream_post": true,
+  "no_new_release": true,
+  "next_action": "DualQA and canonical replay at679; publish repaired643 with substantive B254."
+}
