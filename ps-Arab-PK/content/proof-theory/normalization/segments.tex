@@ -1,0 +1,118 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{seg}
+
+\olsection{برخې او پرېکونونه}
+
+د !!^a{introduction} قاعدې ورپسې !!a{elimination} قاعده په
+!!a{proof} کښې يو تاو راتاو دے، او د !!a{proof} عادي کول د
+داسې تاو راتاوونو لرې کول دي۔ خو \Elim{\lor} او
+\Elim{\lexists} د ``هغه تاو راتاو چې لرې کول ئې غواړو''
+تعريف هم لږ پېچلے کوي۔ ستونزه دا ده چې د دغو قواعدو له امله
+په تاو راتاو کښې !!{elimination} قاعده ضرور نۀ ده چې له
+!!{introduction} قاعدې \emph{سمدستي} وروسته راشي۔ په منځ
+کښې يو \Elim{\lor} يا \Elim{\lexists} راتلے شي، مثلاً:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+په حقيقت کښې هر څومره \Elim{\lor} يا \Elim{\lexists}
+کولے شي \Intro{\lif} له \Elim{\lif} څخه بېل کړي، مثلاً:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+دا بېلګه ښيي چې يو~\Elim{\lif} په څو تاو راتاوونو کښې
+راتلے شي، ځکه له يوه څخه د زياتو~\Intro{\lif} وروسته دے۔
+د دغو ټولو امکانونو د رانغاړلو دپاره تاو راتاوونه د
+!!{formula} د موردونو په هغو لړيو تعريفوو چې په
+\Log{N1i}-ثبوت کښې د \emph{برخو} په نوم يادېږي۔ زموږ په
+بېلګه کښې د~$!A \lif !B$ د موردونو يوه داسې لړۍ ده چې د
+$\Elim{\lor}$ يا $\Elim{\lexists}$ له کوچنۍ مقدمې وروسته
+د هماغه استنتاج پايله راځي۔ په دې بېلګه کښې دوه داسې برخې
+شته چې هره يوه د~$!A \lif !B$ درې موردونه لري۔ اوس ئې کره
+تعريف وړاندې کوو۔
+\textbf{د سرچينه‌يي ترتيب سمون OLCMP-175:} په تشريحي جمله
+کښې د کوچنۍ مقدمې او پايلې ترتيب سرچپه و؛ د لاندې تعريف له
+درېيم شرط سره برابر شو۔ رسمي رسمونه او تعريف عين دي۔
+
+\begin{defn}
+په \Log{N1i} !!{proof}~$\delta$ کښې \emph{برخه} د هماغه
+!!{formula}~$!A$ د موردونو يوه لړۍ $!A_1$، \dots، $!A_n$
+ده چې په $\delta$ کښې لاندې شرطونه پوره کوي:
+\begin{enumerate}
+  \item $!A_1$ د \Elim{\lor} يا \Elim{\lexists} پايله نۀ ده؛
+  \item $!A_n$ د \Elim{\lor} يا \Elim{\lexists} کوچنۍ مقدمه نۀ ده؛
+  \item د $i = 1$، \dots،~$n-1$ دپاره، $!A_i$ د
+  \Elim{\lor} يا \Elim{\lexists} کوچنۍ مقدمه ده او $A_{i+1}$
+  د هماغه استنتاج پايله ده۔
+\end{enumerate}
+د دغې برخې \emph{اوږدوالے}~$n$ دے۔
+\end{defn}
+
+هره برخه د لرې کولو هدف، يعنې تاو راتاو، نۀ ده۔ هغه
+برخې چې داسې هدفونه وي، د \emph{پرېکونونو} په نوم يادېږي۔
+
+\begin{defn}
+\emph{پرېکون} هغه برخه ده چې $!A_n$ د !!a{elimination}
+استنتاج لويه مقدمه وي، او يا $n=1$ او $!A_1 = !A_n$ د
+!!a{introduction} استنتاج يا~\FalseInt پايله وي، يا~$n>1$
+وي۔
+\end{defn}
+
+پام وکړئ چې د پرېکون برخه ضرور نۀ ده چې د
+!!a{introduction} قاعدې په پايله پيل شي۔ لازمه دا ده چې
+د !!a{elimination} قاعدې په لويه مقدمه پاے ته ورسېږي۔ خو
+د~$1$ اوږدوالي برخه هغه وخت پرېکون ګڼل کېږي چې د
+!!{introduction} قاعدې يا د دروغو ايستلو پايله وي۔
+\textbf{د سرچينه‌يي شرط سمون OLCMP-176:} په دې يادونه کښې
+د دروغو ايستلو استثنا پاتې وه؛ د پاسني اصلي تعريف همدغه
+استثنا په نثر کښې هم وساتل شوه۔
+
+\begin{defn}
+د پرېکون \emph{رتبه}~$\depth{!A}$ ده۔ د
+!!a{proof}~$\delta$ د \emph{پرېکون رتبه}~$\cutrank{\delta}$
+په~$\delta$ کښې د پرېکونونو تر ټولو لوړه رتبه ده۔ پرېکون په
+~$\delta$ کښې د \emph{تر ټولو لوړې رتبې} بلل کېږي که رتبه
+ئې~$\cutrank{\delta}$ وي، يعنې تر ټولو لوړه رتبه ولري۔
+د~$\delta$ \emph{پرېکون اوږدوالے} د هغې د تر ټولو لوړې رتبې
+د ټولو پرېکونونو د اوږدوالو مجموعه ده۔
+\end{defn}
+
+\end{document}

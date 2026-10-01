@@ -1,0 +1,48 @@
+{
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T09:42:10.705789+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/normalization/segments.tex",
+      "sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+      "actually_read_scope": "entire actual source/old and draft target"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/fixed-point-combinator.tex",
+      "sha256": "632b1f356b9a9b2147e82bc3b39a3442220ab78ffbede6baa28390cf1b759327",
+      "actually_read_scope": "entire actual source/old and draft target"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "actually_read_scope": "entire actual source; capture-avoiding substitution/renaming"
+    },
+    {
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "actually_read_scope": "entire actual source; shorthand conventions"
+    }
+  ],
+  "finding_records": [
+    {
+      "id": "OLCMP-175",
+      "reporting_lane": "source_editorial_small",
+      "reason": "Narrative orders minor after conclusion but own condition3 orders A_i minor before A_i+1 conclusion; correct only prose direction."
+    },
+    {
+      "id": "OLCMP-176",
+      "reporting_lane": "source_editorial_small",
+      "reason": "Length1 prose omits FalseInt already present in formal source definition; restore that exception in prose, no extra formal condition."
+    }
+  ],
+  "354_independent_verification": {
+    "Curry": "For arbitrary g, use capture-avoiding substitution into closed Y; alpha-rename internal x as needed. Let L=lambda x.g(xx). Yg -> L L -> g(L L), while g(Yg) -> g(L L), yielding beta equivalence.",
+    "Turing": "Let A=lambda x.lambda g.g(xxg), Theta=A A. Theta g -> (lambda g.g(A A g))g -> g(A A g)=g(Theta g), directly.",
+    "new_source_error_claimed": false,
+    "all_prior_target_bytes_retained": true
+  },
+  "new_optional_improvements_implemented": [],
+  "new_proof_added_to_body": false,
+  "new_upstream_post": false,
+  "full722_complete": false
+}

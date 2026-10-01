@@ -1,5 +1,5 @@
 {
-  "batch_id": "PS-B251-REDUCTIONS-PRIMITIVE-RECURSION",
+  "batch_id": "PS-B252-SEGMENTS-FIXED-POINT",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -9439,16 +9439,39 @@
       ]
     },
     "OLP-0354": {
-      "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
+      "batch_id": "PS-B252-SEGMENTS-FIXED-POINT",
       "passages": [
         "PK-IQRAM-P1-PROSE",
         "AF-NIAZMAN-P147-FUNCTIONS"
       ],
       "terms": [
         "TERM-LAMBDA-FIXED-POINT-SEARCH",
-        "TERM-LAMBDA-REDUCTION-CURRYING"
+        "TERM-LAMBDA-REDUCTION-CURRYING",
+        "TERM-LAMBDA-CHURCH-NUMERALS"
       ],
-      "scope": "The Curry and Turing terms remain exact; distinguish common-reduct beta-equivalence from direct reduction."
+      "scope": "بشپړ اصل او رسمي تعريفونه ساتل شوي؛ ترتيب او هيره شوې استثنا يوازې په نثر کښې سم دي، د ثابت ټکي ټول پخواني بايټونه عين دي۔",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-FIXED-POINT-SEARCH",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-CHURCH-NUMERALS"
+        ],
+        "5": [
+          "TERM-LAMBDA-FIXED-POINT-SEARCH",
+          "TERM-LAMBDA-REDUCTION-CURRYING",
+          "TERM-LAMBDA-CHURCH-NUMERALS"
+        ]
+      }
     },
     "OLP-0355": {
       "batch_id": "PS-B064-LAMBDA-INTRO-CLOSURE",
@@ -20848,6 +20871,86 @@
         ]
       },
       "scope": "بشپړه سرچينه او ټول رسمي بلاکونه بياکتل شوي؛ د نښو او حوالو لږ سمونونه، د فرضونو د پاڼو اصل او د جزوي بازګښت د ثبوت پاتې حد ښکاره دي۔"
+    },
+    "OLP-0677": {
+      "batch_id": "PS-B252-SEGMENTS-FIXED-POINT",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF"
+      ],
+      "terms": [
+        "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-SEQUENT-RULES"
+      ],
+      "passages_by_block": {
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "9": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "10": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ],
+        "11": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF"
+        ]
+      },
+      "terms_by_block": {
+        "5": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "6": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "7": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "8": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "9": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "10": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ],
+        "11": [
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-SEQUENT-RULES"
+        ]
+      },
+      "scope": "بشپړ اصل او رسمي تعريفونه ساتل شوي؛ ترتيب او هيره شوې استثنا يوازې په نثر کښې سم دي، د ثابت ټکي ټول پخواني بايټونه عين دي۔"
     }
   },
   "semantic_review": [
@@ -39948,6 +40051,60 @@
       "passage": "OLP-0353-B014",
       "reverse_paraphrase": "د T جانشين S د مخکني بنسټيز جانشين ترم نښه ده، ټول رسمي بايټونه عين دي۔ د جوړې د استقرا فرضيه په درېيمه کرښه کارېږي؛ ۰۲۲ ناسمه له پاے دويمې کرښې حواله سموي۔ د دواړو فقرو ګډ استقرا محاسبه ساتل شوې ده۔ ۰۲۱ ښيي چې جزوي اساس ناتعريف وي خو ثابت ګام ئې غورځولے شي؛ ښودل شوې محاسبه د عمومي ناتعريفه والي شرط نۀ ثابتوي، نوی بشپړ جزوي ثبوت نۀ دے جوړ شوے۔",
       "finding": "بشپړ اصلي او پخواني بلاکونه مستقلاً وکتل شول؛ محدود ثبت شوي سمونونه او د جزوي ثبوت پاتې حد واضح دي، اصلي مشق او رسمي ترتيب ساتل شوي۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B005",
+      "reverse_paraphrase": "برخې او پرېکونونه بشپړ سرليک۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B006",
+      "reverse_paraphrase": "د معرفي او ايستلو د تاو راتاو په منځ کښې د يا يا موجود ايستلو هر څومره منځني استنتاجونه راتلے شي۔ دواړه اصلي رسمونه عين دي؛ دويم رسم دوه د درې موردونو برخې لري۔ ۱۷۵ په تشريحي جمله کښې د کوچنۍ مقدمې او پايلې سرچپه ترتيب د رسمي تعريف له درېيم شرط سره برابروي، رسمي نښې عين دي۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B007",
+      "reverse_paraphrase": "برخه د يو فارمول د موردونو لړۍ ده؛ پيل د يا يا موجود ايستلو پايله نۀ ده، پاے ئې کوچنۍ مقدمه نۀ ده، او هر داخلي مورد د دغسې استنتاج کوچنۍ مقدمه او راتلونکے ئې پايله ده۔ ټول درې رسمي شرطونه، شاخصونه او د n اوږدوالے عين دي۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B008",
+      "reverse_paraphrase": "هره برخه تاو راتاو نۀ ده؛ د لرې کولو هدف برخې پرېکونونه بلل کېږي۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B009",
+      "reverse_paraphrase": "د پرېکون رسمي تعريف عين دے: پاے لويه ايستونکې مقدمه وي؛ په يوه مورد کښې معرفي يا دروغو ايستل پايله وي، يا اوږدوالے له يوه زيات وي۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B010",
+      "reverse_paraphrase": "له يوه اوږده برخه د معرفي په پايله پيل ضروري نۀ دے۔ ۱۷۶ يوازې د يو اوږدوالي د پرېکون په نثري يادونه کښې د دروغو ايستلو هيره شوې استثنا بېرته راوړي، اصلي رسمي تعريف عين دے۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0677",
+      "passage": "OLP-0677-B011",
+      "reverse_paraphrase": "د پرېکون رتبه د فارمول ژوروالے، د ثبوت د پرېکون رتبه د ټولو تر ټولو لوړه رتبه، او maximal پرېکون د دغې رتبې پرېکون دے۔ د ثبوت د پرېکون اوږدوالے د ټولو همدغې تر ټولو لوړې رتبې پرېکونونو د اوږدوالو مجموعه ده، نۀ د ثبوت عمومي لوړوالے يا اوږدوالے۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0354",
+      "passage": "OLP-0354-B004",
+      "reverse_paraphrase": "د ثابت ټکي ترکيب کوونکو بشپړ سرليک عين دے۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
+    },
+    {
+      "unit_id": "OLP-0354",
+      "passage": "OLP-0354-B005",
+      "reverse_paraphrase": "د diag او l له ځان‌تطبيقه k=ll د g يو بېټا ثابت ټکے ورکوي۔ د کري Y تطبيق او g(Yg) ګډ ترم ته کمېږي او بېټا-هم‌ارز دي؛ د تورينګ Y د قوي مستقيم کمېدو شرط پوره کوي۔ ټول شپږ اصل او پخواني بلاکونه او ټول پخواني بايټونه عين دي؛ نوے عيب يا زيات تشريحي نثر نۀ شته۔ د arbitrary ترم تطبيق په تړلي Y کښې د اصل د capture-avoiding تعويض له مخې دے۔",
+      "finding": "بشپړ اصل او ټول رسمي بلاکونه مستقلاً وکتل شول؛ دوه لږ نثري سمونونه، بشپړ پخوانے ثابت ټکي متن عين، نوی ثبوت يا مشق جواب نۀ شته۔"
     }
   ]
 }
