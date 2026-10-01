@@ -1,5 +1,5 @@
 {
-  "batch_id": "B264",
+  "batch_id": "B265",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -11233,17 +11233,29 @@
       }
     },
     "OLP-0367": {
-      "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
+      "batch_id": "B265",
       "passages": [
         "PK-IQRAM-P1-PROSE",
-        "GRAMMAR-P166-SOV"
+        "PK-IQRAM-P2-SEMANTICS"
       ],
       "terms": [
         "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
         "TERM-LAMBDA-REDUCTION-CURRYING"
       ],
-      "scope": "All seven paired chapter-driver blocks: localize only the Church--Rosser title while preserving five imports and the end hook. Pakistani scholarly style and grammar guide the title; exact technical name remains provisional.",
-      "allowed_residual_english": []
+      "scope": "د چرچ-روسر ټول اووه اصلي/پخواني بلاکونه خپلواک کتل شوي؛ يوازې سرليک ژباړه غواړي او صحيح پخوانے سرليک عين دے۔ ټول پنځه imports، ترتيب او هوک، ټول پخواني بايټونه عين دي؛ نوی عيب نشته او د واردو شوو ثبوتونو کتنه دلته نۀ ادعا کېږي۔",
+      "allowed_residual_english": [],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-CHURCH-ROSSER-DIAMOND",
+          "TERM-LAMBDA-REDUCTION-CURRYING"
+        ]
+      }
     },
     "OLP-0368": {
       "batch_id": "PS-B071-LAMBDA-ETA-CHURCH-ROSSER",
@@ -24180,6 +24192,44 @@
         "tN"
       ],
       "residual_english_authority": "tN يوازې د عين اصلي Log{tN2i} نظام د خوندي رسمي نوم برخه ده؛ هيڅ عادي انګرېزي نثر له کتنې نۀ معاف کېږي۔"
+    },
+    "OLP-0690": {
+      "batch_id": "B265",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P147-FUNCTIONS"
+      ],
+      "terms": [
+        "TERM-SIMPLE-TYPE-THEORY",
+        "TERM-NATURAL-DEDUCTION",
+        "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+      ],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+        ],
+        "5": [
+          "TERM-SIMPLE-TYPE-THEORY",
+          "TERM-NATURAL-DEDUCTION",
+          "TERM-NATURAL-DEDUCTION-NORMALIZATION"
+        ]
+      },
+      "scope": "د بيانونو-په-ټايپونو ټول اته اصلي بلاکونه او دوه ژباړې بشپړې دي؛ د ډېرې تجربوي مسودې ټول اخطارونه او د عادي کولو د ثبوت پاتې پراخولو غوښتنه ساتل شوې۔۲۱۱ د ضرب ټايپ د بېلګو د بالکل نشتوالي تاريخي يادښت د موجود689مثال په رڼا کښې محدودوي۔ ټول اته imports، يو commentedimport، ترتيب او هوک عين دي؛ د بشپړ باب د چاپي تصويب ادعا نشته۔"
     }
   },
   "semantic_review": [
@@ -44996,6 +45046,24 @@
       "passage": "OLP-0366-B017",
       "reverse_paraphrase": "د اېټا قاعدې بل لور د تجريد له تطبيق څخه د بېټا برابري او تازه xله لارې extقاعده کاروي؛ دلته xد M په ازادو متغيرونو کښې نۀ دے او د تجريد هم ازاد متغير نۀ دے۔ bareextنښه له پخواني نومولو څرګنده ده؛ ټول رسمي بايټونه عين دي۔",
       "finding": "د اېټا ټول اتلس بلاکونه او ديارلس ژباړې خپلواک کتل شوي؛ د033 شرط په نوې قاعده کښې هم نږدې ښکاره شو۔ د034 غلط سرچينه‌يي عيب بېرته اخيستل شو او يادښت لرې شو۔ ټول پخواني رياضي بايټونه، د تازګۍ شرطونه، رسمي قضيه/ثبوت او نښې عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0690",
+      "passage": "OLP-0690-B004",
+      "reverse_paraphrase": "بيانونه د ټايپونو په توګه د باب سرليک دے؛ اصلي int/pty نښې عين دي۔",
+      "finding": "د بيانونو-په-ټايپونو ټول اته اصلي بلاکونه او دوه ژباړې بشپړې دي؛ د ډېرې تجربوي مسودې ټول اخطارونه او د عادي کولو د ثبوت پاتې پراخولو غوښتنه ساتل شوې۔۲۱۱ د ضرب ټايپ د بېلګو د بالکل نشتوالي تاريخي يادښت د موجود689مثال په رڼا کښې محدودوي۔ ټول اته imports، يو commentedimport، ترتيب او هوک عين دي؛ د بشپړ باب د چاپي تصويب ادعا نشته۔"
+    },
+    {
+      "unit_id": "OLP-0690",
+      "passage": "OLP-0690-B005",
+      "reverse_paraphrase": "ډېره تجربوي مسوده، د کري-هاورډ مطابقت، د نورو تشريحاتو/اړتيا/ثبوت پراخولو، permutation/simplificationنۀ پوښښ، ټايپ‌لرونکي لامبډا د پخوانۍ پوهې فرض او احتياط ټول ساتل شوي۔۲۱۱ يوازې د ضرب ټايپ د مثالونو د بالکل نشتوالي يادښت اصلاح کوي: د689مثال جوړه/دوه پروجکشنونه او د برخو بدلول لري، خو نور تفصيلي مثالونه اوس هم پکار دي۔ ټول اته واردات، commentedimport، هوک او رسمي جوړښت عين دي۔",
+      "finding": "د بيانونو-په-ټايپونو ټول اته اصلي بلاکونه او دوه ژباړې بشپړې دي؛ د ډېرې تجربوي مسودې ټول اخطارونه او د عادي کولو د ثبوت پاتې پراخولو غوښتنه ساتل شوې۔۲۱۱ د ضرب ټايپ د بېلګو د بالکل نشتوالي تاريخي يادښت د موجود689مثال په رڼا کښې محدودوي۔ ټول اته imports، يو commentedimport، ترتيب او هوک عين دي؛ د بشپړ باب د چاپي تصويب ادعا نشته۔"
+    },
+    {
+      "unit_id": "OLP-0367",
+      "passage": "OLP-0367-B004",
+      "reverse_paraphrase": "د چرچ-روسر خاصيت د باب صحيح نوم دے؛ ټول پنځه اصلي واردات، ترتيب، بابIDاو پایهوک عين دي۔ ټول پخواني بايټونه ساتل شوي دي؛ د واردو شوو فرعي فصلونو خپلواکه کتنه دلته نۀ ادعا کېږي۔",
+      "finding": "د چرچ-روسر ټول اووه اصلي/پخواني بلاکونه خپلواک کتل شوي؛ يوازې سرليک ژباړه غواړي او صحيح پخوانے سرليک عين دے۔ ټول پنځه imports، ترتيب او هوک، ټول پخواني بايټونه عين دي؛ نوی عيب نشته او د واردو شوو ثبوتونو کتنه دلته نۀ ادعا کېږي۔"
     }
   ]
 }

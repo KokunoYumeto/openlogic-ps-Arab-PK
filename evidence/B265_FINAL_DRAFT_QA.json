@@ -1,0 +1,83 @@
+{
+  "schema": "ps-focused-complete-draft-qa/1",
+  "utc": "2026-10-01T15:22:43.868073+00:00",
+  "status": "PASS",
+  "all_checks_pass": true,
+  "units": [
+    {
+      "unit_id": "OLP-0690",
+      "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+      "source_bytes": 1001,
+      "target_sha256": "decd39c9b62fb39d853af70d8ba43d1624239f8f3de7c01be19773b743d49e15",
+      "target_bytes": 1888,
+      "paired_blocks": 8,
+      "changed_blocks": [
+        4,
+        5
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": [
+        "OLCMP-211"
+      ]
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0367",
+      "source_path": "content/lambda-calculus/church-rosser/church-rosser.tex",
+      "source_sha256": "f9a7362d873c4feed67ac0350ebb3c3cf3ddfd6046c4a7d0ef55e7086038ddf5",
+      "target_sha256_before": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "target_sha256": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "target_sha256_after": "f62a20f9018908cdb0cf5babef7e3d68e7cdbe1a2a8c70b9aa45c0641d3f77a0",
+      "target_bytes": 387,
+      "paired_blocks": 7,
+      "source_correction_ids": [],
+      "reverified_existing_source_ids": [],
+      "wording_choice_ids": []
+    }
+  ],
+  "all_unit_checks": {
+    "OLP-0690": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true
+    },
+    "OLP-0367": {
+      "source_hash_frozen": true,
+      "block_count": true,
+      "math_exact_except_adjudicated_changes": true,
+      "math_per_block_exact_except_adjudicated_changes": true,
+      "ids_equal_except_adjudicated_changes": true,
+      "structural_macros_equal_except_adjudicated_changes": true,
+      "tokens_equal": true,
+      "comments_equal": true,
+      "environment_order_equal": true,
+      "lf_target": true,
+      "all_prior_math_spans_byte_exact": true,
+      "exact_changed_prior_blocks": true
+    }
+  },
+  "new_source_correction_records": 1,
+  "source_adjudication_sha256": "117d8c9eb5aa6f7fe8220eabccba27a84e4ebce38b48a591f6e2ba59f1e1d0ed",
+  "registration_helper_sha256": "5bc994e360cca97a6d80a1defe420a9911f333ab2684e0d4a73ecf5047ff244a",
+  "writer_spec_sha256": "4d9b5d5c8cabe9e81899c7a200ce41370e89a8d7c3e08d2a2d34d9b10bdd5743"
+}

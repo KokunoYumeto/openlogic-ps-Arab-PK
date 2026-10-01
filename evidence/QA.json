@@ -4,8 +4,8 @@
   "source_hashes": "722 raw units verified",
   "translation_coverage": {
     "total": 722,
-    "draft_units": 689,
-    "structural_pass": 689,
+    "draft_units": 690,
+    "structural_pass": 690,
     "visually_accepted": 105,
     "published": 321
   },
@@ -19,7 +19,7 @@
   },
   "canon_sources": 5,
   "canon_passages": 61,
-  "batch": "B264",
+  "batch": "B265",
   "units": [
     {
       "unit_id": "OLP-0001",
@@ -23985,6 +23985,37 @@
       "extra_locale_macros": {},
       "source_correction_ids": [],
       "status": "structural-pass"
+    },
+    {
+      "unit_id": "OLP-0690",
+      "path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+      "translation_sha256": "decd39c9b62fb39d853af70d8ba43d1624239f8f3de7c01be19773b743d49e15",
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "checks": {
+        "block_count": true,
+        "environments": true,
+        "identifiers": true,
+        "optional_tags": true,
+        "structural_macros": true,
+        "math": true,
+        "tokens": true,
+        "nfc": true,
+        "no_replacement_character": true,
+        "named_token_macros": true,
+        "localized_case_labels": true,
+        "source_target_group_balance": true,
+        "no_ordinary_english": true
+      },
+      "residual_english": [],
+      "allowed_residual_english": [],
+      "unexpected_residual_english": [],
+      "extra_locale_macros": {},
+      "source_correction_ids": [
+        "OLCMP-211"
+      ],
+      "status": "structural-pass"
     }
   ],
   "semantic_review": [
@@ -44801,6 +44832,24 @@
       "passage": "OLP-0366-B017",
       "reverse_paraphrase": "د اېټا قاعدې بل لور د تجريد له تطبيق څخه د بېټا برابري او تازه xله لارې extقاعده کاروي؛ دلته xد M په ازادو متغيرونو کښې نۀ دے او د تجريد هم ازاد متغير نۀ دے۔ bareextنښه له پخواني نومولو څرګنده ده؛ ټول رسمي بايټونه عين دي۔",
       "finding": "د اېټا ټول اتلس بلاکونه او ديارلس ژباړې خپلواک کتل شوي؛ د033 شرط په نوې قاعده کښې هم نږدې ښکاره شو۔ د034 غلط سرچينه‌يي عيب بېرته اخيستل شو او يادښت لرې شو۔ ټول پخواني رياضي بايټونه، د تازګۍ شرطونه، رسمي قضيه/ثبوت او نښې عين دي۔"
+    },
+    {
+      "unit_id": "OLP-0690",
+      "passage": "OLP-0690-B004",
+      "reverse_paraphrase": "بيانونه د ټايپونو په توګه د باب سرليک دے؛ اصلي int/pty نښې عين دي۔",
+      "finding": "د بيانونو-په-ټايپونو ټول اته اصلي بلاکونه او دوه ژباړې بشپړې دي؛ د ډېرې تجربوي مسودې ټول اخطارونه او د عادي کولو د ثبوت پاتې پراخولو غوښتنه ساتل شوې۔۲۱۱ د ضرب ټايپ د بېلګو د بالکل نشتوالي تاريخي يادښت د موجود689مثال په رڼا کښې محدودوي۔ ټول اته imports، يو commentedimport، ترتيب او هوک عين دي؛ د بشپړ باب د چاپي تصويب ادعا نشته۔"
+    },
+    {
+      "unit_id": "OLP-0690",
+      "passage": "OLP-0690-B005",
+      "reverse_paraphrase": "ډېره تجربوي مسوده، د کري-هاورډ مطابقت، د نورو تشريحاتو/اړتيا/ثبوت پراخولو، permutation/simplificationنۀ پوښښ، ټايپ‌لرونکي لامبډا د پخوانۍ پوهې فرض او احتياط ټول ساتل شوي۔۲۱۱ يوازې د ضرب ټايپ د مثالونو د بالکل نشتوالي يادښت اصلاح کوي: د689مثال جوړه/دوه پروجکشنونه او د برخو بدلول لري، خو نور تفصيلي مثالونه اوس هم پکار دي۔ ټول اته واردات، commentedimport، هوک او رسمي جوړښت عين دي۔",
+      "finding": "د بيانونو-په-ټايپونو ټول اته اصلي بلاکونه او دوه ژباړې بشپړې دي؛ د ډېرې تجربوي مسودې ټول اخطارونه او د عادي کولو د ثبوت پاتې پراخولو غوښتنه ساتل شوې۔۲۱۱ د ضرب ټايپ د بېلګو د بالکل نشتوالي تاريخي يادښت د موجود689مثال په رڼا کښې محدودوي۔ ټول اته imports، يو commentedimport، ترتيب او هوک عين دي؛ د بشپړ باب د چاپي تصويب ادعا نشته۔"
+    },
+    {
+      "unit_id": "OLP-0367",
+      "passage": "OLP-0367-B004",
+      "reverse_paraphrase": "د چرچ-روسر خاصيت د باب صحيح نوم دے؛ ټول پنځه اصلي واردات، ترتيب، بابIDاو پایهوک عين دي۔ ټول پخواني بايټونه ساتل شوي دي؛ د واردو شوو فرعي فصلونو خپلواکه کتنه دلته نۀ ادعا کېږي۔",
+      "finding": "د چرچ-روسر ټول اووه اصلي/پخواني بلاکونه خپلواک کتل شوي؛ يوازې سرليک ژباړه غواړي او صحيح پخوانے سرليک عين دے۔ ټول پنځه imports، ترتيب او هوک، ټول پخواني بايټونه عين دي؛ نوی عيب نشته او د واردو شوو ثبوتونو کتنه دلته نۀ ادعا کېږي۔"
     }
   ],
   "builds": [

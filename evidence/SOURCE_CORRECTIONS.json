@@ -25868,6 +25868,49 @@
         "OLCMP-210"
       ],
       "qa_math_exception_group_policy": "Exact net multiset of these independently adjudicated same-unit changes; per-block expected-source assertions remain mandatory."
+    },
+    {
+      "id": "OLCMP-211",
+      "unit_id": "OLP-0690",
+      "classification": "experimental-editorial-product-example-absence-overstated",
+      "counterexample": "The imported proofs-to-terms example constructs pair(proj2(x),proj1(x)) and types its lambda abstraction as (A and B) -> (B and A). The same chapter types source interprets A and B as the product A x B. Hence the absolute editorial claim of no product-type examples is stale; the need for more explanation/examples and a complete normalization proof remains.",
+      "formal_changes": [],
+      "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+      "source_line_1based": 10,
+      "source_locator": "content/proof-theory/propositions-as-types/propositions-as-types.tex:block5",
+      "target_path": "ps-Arab-PK/content/proof-theory/propositions-as-types/propositions-as-types.tex",
+      "target_line_1based": 10,
+      "target_sha256": "decd39c9b62fb39d853af70d8ba43d1624239f8f3de7c01be19773b743d49e15",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د فصل تاريخي اخطار د ضرب ټايپ د مثالونو بالکل نشتوالے وايي، خو اصل689په درې رسمونو کښې د او د برخو بدلولو مثال او جوړه/پروجکشنونه لري۔ يوازې دغه عمومي نشتوالے د نورو تفصيلي بېلګو په اړتيا بدل شو؛ د تجربوي مسودې ټول نور حدود او اخطارونه عين دي۔",
+      "translation_change": "د فصل تاريخي اخطار د ضرب ټايپ د مثالونو بالکل نشتوالے وايي، خو اصل689په درې رسمونو کښې د او د برخو بدلولو مثال او جوړه/پروجکشنونه لري۔ يوازې دغه عمومي نشتوالے د نورو تفصيلي بېلګو په اړتيا بدل شو؛ د تجربوي مسودې ټول نور حدود او اخطارونه عين دي۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B265_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "117d8c9eb5aa6f7fe8220eabccba27a84e4ebce38b48a591f6e2ba59f1e1d0ed",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
     }
   ],
   "external_upstream_report_submitted": false,
