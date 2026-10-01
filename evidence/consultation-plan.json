@@ -1,5 +1,5 @@
 {
-  "batch_id": "B256",
+  "batch_id": "B257",
   "status": "ثبت بشپړ؛ دوه‌ګونې کتنه او منل پاتې دي۔",
   "units": {
     "OLP-0001": {
@@ -9762,16 +9762,66 @@
       }
     },
     "OLP-0359": {
-      "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
+      "batch_id": "B257",
       "passages": [
         "PK-IQRAM-P1-PROSE",
+        "PK-IQRAM-P2-SEMANTICS",
         "AF-NIAZMAN-P147-FUNCTIONS"
       ],
       "terms": [
-        "TERM-LAMBDA-SCOPE-FREE-BOUND",
-        "TERM-LAMBDA-SYNTAX"
+        "TERM-LAMBDA-SYNTAX",
+        "TERM-LAMBDA-SCOPE-FREE-BOUND"
       ],
-      "scope": "Left-associative application, widest abstraction scope, multiple binders and exact expansion example retained."
+      "scope": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔",
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "5": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "6": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "7": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ],
+        "8": [
+          "PK-IQRAM-P1-PROSE",
+          "PK-IQRAM-P2-SEMANTICS",
+          "AF-NIAZMAN-P147-FUNCTIONS"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "5": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "6": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "7": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ],
+        "8": [
+          "TERM-LAMBDA-SYNTAX",
+          "TERM-LAMBDA-SCOPE-FREE-BOUND"
+        ]
+      }
     },
     "OLP-0360": {
       "batch_id": "PS-B065-LAMBDA-SYNTAX-FOUNDATION",
@@ -21890,6 +21940,41 @@
         ]
       },
       "scope": "د ثبوت د لټون بشپړ باب چلونکے، ټول اووه بلاکونه، څلور واردات، ترتيب او هوک عين دي؛ يوازې سرليک ژباړل شوے۔"
+    },
+    "OLP-0682": {
+      "batch_id": "B257",
+      "passages": [
+        "PK-IQRAM-P1-PROSE",
+        "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+        "AF-NIAZMAN-P39-THEORY-PROOF",
+        "AF-NIAZMAN-P90-PREDICATE"
+      ],
+      "terms": [
+        "TERM-TABLEAUX",
+        "TERM-FOL-SYNTAX",
+        "TERM-DERIVATION-SEARCH"
+      ],
+      "passages_by_block": {
+        "4": [
+          "PK-IQRAM-P1-PROSE",
+          "AF-NIAZMAN-P24-SEMANTIC-ENTAILMENT",
+          "AF-NIAZMAN-P39-THEORY-PROOF",
+          "AF-NIAZMAN-P90-PREDICATE"
+        ]
+      },
+      "terms_by_block": {
+        "4": [
+          "TERM-TABLEAUX",
+          "TERM-FOL-SYNTAX",
+          "TERM-DERIVATION-SEARCH"
+        ]
+      },
+      "scope": "د Tc بشپړ جدول، ټول پنځه بلاکونه او دولس رسمي رسمونه عين دي؛ يوازې د جدول شرح ژباړل شوې، د ځانګړي ثابت د هماغې څانګې تازګۍ شرط عين دے۔",
+      "allowed_residual_english": [
+        "Tc",
+        "cc"
+      ],
+      "residual_english_authority": "عين رسمي Tc سيستم نوم او cc د جدول دوه ستنيز TeX ترتيب؛ عادي انګرېزي نثر نۀ دے۔"
     }
   },
   "semantic_review": [
@@ -41506,6 +41591,42 @@
       "passage": "OLP-0358-B014",
       "reverse_paraphrase": "وروستۍ آسانه بڼه متغير، تجريد له يکتا باينډر/بدن، يا تطبيق له دوو يکتا فرعي ترمونو څخه يوه ده؛ ټول رسمي فورمولونه عين دي۔",
       "finding": "د يکتا لوستونتيا ټول پنځلس اصلي او پخواني بلاکونه، يوولس ژباړې، درې لمې، استقرايي دليل، پايله او اصلي بې‌ځوابه مشق په خپلواکه کتنه صحيح دي؛ ټول پخواني بايټونه عين ساتل شوي، نوے عيب يا اضافي ثبوت نشته۔"
+    },
+    {
+      "unit_id": "OLP-0682",
+      "passage": "OLP-0682-B004",
+      "reverse_paraphrase": "د کلاسيکي تابلو قواعدو ټول دولس اصلي رسمونه او ټوله رسمي جدول بڼه عين دي۔ د ناسمې عمومي کميت ټاکنې او سمې موجودې کميت ټاکنې په قاعده کښې ثابت بايد پاسنۍ څانګې ته نوے وي؛ يوازې شرح ژباړل شوې، د ځاے او تازګۍ شرط عين دے۔",
+      "finding": "د Tc بشپړ جدول، ټول پنځه بلاکونه او دولس رسمي رسمونه عين دي؛ يوازې د جدول شرح ژباړل شوې، د ځانګړي ثابت د هماغې څانګې تازګۍ شرط عين دے۔"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "OLP-0359-B004",
+      "reverse_paraphrase": "د نحو د لنډو نښو سرليک او رسمي نښه عين دي۔",
+      "finding": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "OLP-0359-B005",
+      "reverse_paraphrase": "لنډې نښې د بشپړ قوس‌لرونکي تعريف د ليکلو آسانۍ دپاره دي، يکتا لوستل بايد وساتل شي۔",
+      "finding": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "OLP-0359-B006",
+      "reverse_paraphrase": "بې‌قوسه تطبيق کيڼ تړاو لري، تجريد تر ټولو پراخه ساحه اخلي، او څو باينډرونه په هماغه ترتيب څو تجريدونه دي؛ ټول درې رسمي مثالونه عين دي۔",
+      "finding": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "OLP-0359-B007",
+      "reverse_paraphrase": "لويه ورکړې بېلګه په بشپړ قوس‌لرونکي ترم سمه غځېدلې؛ د کيڼ تطبيق او دوه پرله‌پسې باينډرونو ترتيب عين دے۔",
+      "finding": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔"
+    },
+    {
+      "unit_id": "OLP-0359",
+      "passage": "OLP-0359-B008",
+      "reverse_paraphrase": "اصلي لنډ ترم غځول بې‌ځوابه مشق دے؛ عين ترم ساتل شوے او ځواب نۀ دے ورزيات شوے۔",
+      "finding": "د نحو د لنډو نښو ټول نهه اصلي او پخواني بلاکونه او پنځه ژباړې خپلواک کتل شوي؛ کيڼ تړاو، پراخه ساحه، څو باينډرونه، سمه لويه بېلګه او بې‌ځوابه مشق عين دي۔ ټول پخواني بايټونه ساتل شوي؛ نوی عيب يا اضافي ځواب نشته۔"
     }
   ]
 }
