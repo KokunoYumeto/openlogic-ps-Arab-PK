@@ -1,0 +1,134 @@
+{
+  "schema": "ps-openlogic-source-audit/1",
+  "utc": "2026-10-01T11:04:18.529573+00:00",
+  "status": "بشپړ نوے واحد او بشپړه خپلواکه پخوانۍ بياکتنه ثبت دي؛ دوه‌ګونې کتنه او منل پاتې دي۔",
+  "source_commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "units": [
+    {
+      "unit_id": "OLP-0680",
+      "source_path": "content/proof-theory/proof-search/introduction.tex",
+      "source_sha256": "c85fedf2ffa728c646c91417c475aa796de5d2d32b09c487475a721b2290ae7f",
+      "source_bytes": 6502,
+      "target_sha256": "b408dbc64df05a1f8895fed3172de26700cc3b64d02830d55cce29b8224f4705",
+      "target_bytes": 8417,
+      "paired_blocks": 14,
+      "changed_blocks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "checks": {
+        "source_hash_frozen": true,
+        "block_count": true,
+        "math_exact_except_adjudicated_changes": true,
+        "math_per_block_exact_except_adjudicated_changes": true,
+        "ids_equal_except_adjudicated_changes": true,
+        "structural_macros_equal_except_adjudicated_changes": true,
+        "tokens_equal": true,
+        "comments_equal": true,
+        "environment_order_equal": true,
+        "lf_target": true
+      },
+      "source_correction_ids": []
+    }
+  ],
+  "repaired_accepted_units": [
+    {
+      "unit_id": "OLP-0357",
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "target_sha256_before": "d57b879a093a214b84f660a0ddb6799c08bfee15910140b39a717babc3e0bb5c",
+      "target_sha256": "d57e6bd96a3ac81aed78c0ab9a83795982bec8063b07dc72e541ef26ce030081",
+      "target_sha256_after": "d57e6bd96a3ac81aed78c0ab9a83795982bec8063b07dc72e541ef26ce030081",
+      "target_bytes": 2797,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLSOL-024"
+      ],
+      "reverified_existing_source_ids": [],
+      "wording_choice_ids": []
+    }
+  ],
+  "native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P39-THEORY-PROOF",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "39",
+      "pdf_page_1based": 44,
+      "page_image_sha256": "a80089b12f04029e2e326e03122c0cea7ca1a18664130df42b67947c8d090e67",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P90-PREDICATE",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "90",
+      "pdf_page_1based": 95,
+      "page_image_sha256": "fea8597192d353d1933514ae31ae16d68f11620f42e10db6a9fdf4f75f77cb3b",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    }
+  ],
+  "consulted_passage_ids": [
+    "PK-IQRAM-P1-PROSE",
+    "PK-IQRAM-P2-SEMANTICS",
+    "AF-NIAZMAN-P39-THEORY-PROOF",
+    "AF-NIAZMAN-P90-PREDICATE",
+    "AF-NIAZMAN-P147-FUNCTIONS"
+  ],
+  "new_term_ids": [],
+  "revised_term_ids": [],
+  "new_source_correction_ids": [
+    "OLSOL-024"
+  ],
+  "new_review_entry_ids": [
+    "DEC-OLSOL-024"
+  ],
+  "revised_review_entry_ids": [],
+  "semantic_samples_added": 15,
+  "focused_qa_sha256": "d3a197fffd6319c2d65c488fe8d923df511b50d59008f17fda75afa99d89af8b",
+  "source_adjudication_sha256": "f777044aa7020be91e5650258faf71a13d73f23b1e3852ca55a2cfbc7ece0f88",
+  "model_provenance_sha256": "1f4af561eeac9c6143e00f9eb200400ac87da59baf7e09de82c77daf67345330",
+  "related_reaudit_receipt": "SOL6_REAUDIT_0357.json",
+  "related_reaudit_sha256": "72d62384a565062ebf30f5b6a0a2f8d8dad4c8bf5b4c910d9b69b341df5c8112",
+  "unresolved": "۴۲ عمومي واحدونه، ۲۵۲ بشپړ پخواني واحدونه، بشپړ تجربوي باب، EPUB، بشپړ ژبني/چاپي دليلونه او وروستۍ خپرونه پاتې دي۔",
+  "next_executable_action": "د ۶۸۰ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ بيا بشپړ OLP-0681 او OLP-0358۔ د TeX ځای اشغال ژباړه نۀ دروي۔"
+}

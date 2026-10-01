@@ -18806,10 +18806,18 @@
           "target": "$\\lforall[x][\\Subst{!A}{x}{c}] \\lif \\Subst{!A}{x}{c} \\Subst{}{y}{x}$"
         }
       ],
-      "application_status_local": "corrected-formula-present; focused QA pass; corpus acceptance pending",
-      "application_status_public": "old printed scope previously published; repaired target not yet published; next B254 source checkpoint",
+      "application_status_local": "corrected-formula-present;679 dualQA/replay/accept PASS",
+      "application_status_public": "corrected target filename/bytes/SHA256 anonymously verified in B254",
       "adjudication_receipt": "B254_0643_SCOPE_CORRECTION.json",
-      "adjudication_sha256": "9a634f3fe183b285d13678ad66cb72a1a1025b35666ea32168a159d761bb7c16"
+      "adjudication_sha256": "9a634f3fe183b285d13678ad66cb72a1a1025b35666ea32168a159d761bb7c16",
+      "verified_public_application": {
+        "batch": "B254",
+        "commit": "600908dfc46163fc3256d044a579234c8c34d4b3",
+        "remote_readback_sha256": "b2e07fd3da3f1f2f5772001826a3d461e29cfc99360c092c5c7aed038ed0bc07",
+        "accepted_checkpoint_sha256": "6db52f2870b060ad79a0fe9b524c334fd40b9941f49a6e81b572e75dd5554798",
+        "verified_checkpoint_sha256": "c59885cbdca44c453404b817678567ce1800bd312425b6e0a0b101632b6d4215",
+        "target_sha256": "2fcea534a9783b7aa3ddd92e5df78d01a98f1ceda9cd158424b6ebbe43a9fbf3"
+      }
     },
     {
       "id": "OLAX-019",
@@ -24355,6 +24363,59 @@
       "qa_math_exception": {
         "source_only": [],
         "target_only": []
+      },
+      "qa_identifier_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_macro_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_token_exception": {
+        "source_only": [],
+        "target_only": []
+      },
+      "qa_tag_exception": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "id": "OLSOL-024",
+      "unit_id": "OLP-0357",
+      "classification": "fully-parenthesized-exercise-lacks-application-body-parentheses",
+      "formal_changes": [
+        {
+          "source": "$(\\lambd[g][(\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))])])$",
+          "target": "$(\\lambd[g][((\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))]))])$"
+        }
+      ],
+      "reporting_lane": "source_erratum_substantive",
+      "exercise_solved": false,
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "source_line_1based": 47,
+      "source_locator": "content/lambda-calculus/syntax/terms.tex:block9",
+      "target_path": "ps-Arab-PK/content/lambda-calculus/syntax/terms.tex",
+      "target_line_1based": 46,
+      "target_sha256": "d57e6bd96a3ac81aed78c0ab9a83795982bec8063b07dc72e541ef26ce030081",
+      "mode": "minimal-native-correction-or-explicit-source-proof-scope-disclosure",
+      "reason": "د بشپړ قوس‌لرونکې رسمي نحوي تعريف له مخې د تجريد بدن بايد يو ترم وي۔ په مشق کښې د دوو تجريدونو تطبيق د خپلې ورکې جوړه قوسونو له امله يو رسمي ترم نۀ و؛ يوازې همدغه دواړه قوسونه ورزيات شول، د جوړېدو ځواب نۀ دے ورکړل شوے۔",
+      "translation_change": "د بشپړ قوس‌لرونکې رسمي نحوي تعريف له مخې د تجريد بدن بايد يو ترم وي۔ په مشق کښې د دوو تجريدونو تطبيق د خپلې ورکې جوړه قوسونو له امله يو رسمي ترم نۀ و؛ يوازې همدغه دواړه قوسونه ورزيات شول، د جوړېدو ځواب نۀ دے ورکړل شوے۔",
+      "decision_timing": "د بشپړ اصل، پخواني متن، کره مخالف مثال او اصلي پښتو شاهدانو له کتنې وروسته ثبت۔",
+      "frozen_source_unchanged": true,
+      "reader_disclosure_language": "ps-Arab-PK",
+      "adjudication_receipt": "B255_SOURCE_ADJUDICATION.json",
+      "adjudication_sha256": "f777044aa7020be91e5650258faf71a13d73f23b1e3852ca55a2cfbc7ece0f88",
+      "upstream_reporting": "owner local ledger; no new external issue",
+      "qa_math_exception": {
+        "source_only": [
+          "$(\\lambd[g][(\\lambd[x][(g(xx))])(\\lambd[x][(g(xx))])])$"
+        ],
+        "target_only": [
+          "$(\\lambd[g][((\\lambd[x][(g(xx))])(\\lambd[x][(g(xx))]))])$"
+        ]
       },
       "qa_identifier_exception": {
         "source_only": [],

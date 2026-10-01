@@ -1,0 +1,62 @@
+{
+  "finding_records": [
+    {
+      "id": "OLSOL-024",
+      "unit_id": "OLP-0357",
+      "block": 9,
+      "classification": "fully-parenthesized-exercise-lacks-application-body-parentheses",
+      "reason_native": "د بشپړ قوس‌لرونکې رسمي نحوي تعريف له مخې د تجريد بدن بايد يو ترم وي۔ په مشق کښې د دوو تجريدونو تطبيق د خپلې ورکې جوړه قوسونو له امله يو رسمي ترم نۀ و؛ يوازې همدغه دواړه قوسونه ورزيات شول، د جوړېدو ځواب نۀ دے ورکړل شوے۔",
+      "formal_changes": [
+        {
+          "source": "$(\\lambd[g][(\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))])])$",
+          "target": "$(\\lambd[g][((\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))]))])$"
+        }
+      ],
+      "priority": "medium",
+      "reporting_lane": "source_erratum_substantive",
+      "exercise_solved": false
+    }
+  ],
+  "strict_source_grammar_check": {
+    "source_macro_expansion": "(λg(λx(g(xx)))(λx(g(xx))))",
+    "corrected_macro_expansion": "(λg((λx(g(xx)))(λx(g(xx)))))",
+    "source_is_term": false,
+    "corrected_is_term": true,
+    "exercise_solved": false
+  },
+  "original_definitions_preserved": true,
+  "exercise_answer_provided": false,
+  "all_other_prior_ordered_math_spans_byte_exact": true,
+  "not_an_abbreviated_syntax_exercise": "The current source explicitly uses full parentheses and says abbreviation conventions will be introduced later. Restoring only the application-body parentheses makes the supplied input a term; formation remains the assigned exercise.",
+  "schema": "ps-source-adjudication/1",
+  "utc": "2026-10-01T11:04:18.529573+00:00",
+  "actual_primary_contexts": [
+    {
+      "source_path": "content/proof-theory/proof-search/introduction.tex",
+      "actually_read_scope": "entire actual source and complete target",
+      "sha256": "c85fedf2ffa728c646c91417c475aa796de5d2d32b09c487475a721b2290ae7f"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "actually_read_scope": "entire actual source, old target and private corrected target",
+      "sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/unique-readability.tex",
+      "actually_read_scope": "entire actual source; fully parenthesized formation and proper-prefix property",
+      "sha256": "a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7"
+    },
+    {
+      "source_path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+      "actually_read_scope": "entire actual source; abbreviations explicitly introduced later, not an implicit exercise answer here",
+      "sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46"
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "new_optional_improvements_implemented": [],
+  "new_upstream_post": false,
+  "full722_complete": false
+}

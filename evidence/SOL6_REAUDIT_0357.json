@@ -1,0 +1,84 @@
+{
+  "schema": "ps-sol6-whole-unit-reaudit/1",
+  "utc": "2026-10-01T11:04:18.529573+00:00",
+  "status": "د ترمونو ټول لس اصلي او پخواني بلاکونه او شپږ ژباړې خپلواک کتل شوي؛ د رسمي تعريف درې قواعد، ټول باينډرونه، تعريف نښې او ټول نور پخواني بايټونه عين دي۔ په يوه اصلي مشق کښې يوازې د تطبيق د بدن ورکه جوړه قوسونه ښکاره سمه شوې، او مشق بې‌ځوابه دے۔",
+  "units": [
+    {
+      "unit_id": "OLP-0357",
+      "source_path": "content/lambda-calculus/syntax/terms.tex",
+      "source_sha256": "145fce509501861988851ee8a42591b3ec7e2acd4f570f34004c5c459b491ecb",
+      "target_sha256_before": "d57b879a093a214b84f660a0ddb6799c08bfee15910140b39a717babc3e0bb5c",
+      "target_sha256": "d57e6bd96a3ac81aed78c0ab9a83795982bec8063b07dc72e541ef26ce030081",
+      "target_sha256_after": "d57e6bd96a3ac81aed78c0ab9a83795982bec8063b07dc72e541ef26ce030081",
+      "target_bytes": 2797,
+      "paired_blocks": 10,
+      "source_correction_ids": [
+        "OLSOL-024"
+      ],
+      "reverified_existing_source_ids": [],
+      "wording_choice_ids": [],
+      "translated_blocks_reviewed": 6,
+      "target_retained_unchanged": false,
+      "changed_prior_blocks": [
+        9
+      ],
+      "all_prior_math_bytes_retained": false,
+      "all_other_prior_math_bytes_retained": true,
+      "adjudicated_prior_math_changes": [
+        {
+          "issue_id": "OLSOL-024",
+          "source": "$(\\lambd[g][(\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))])])$",
+          "target": "$(\\lambd[g][((\\lambd[x][(g (x x))])\n  (\\lambd[x][(g (x x))]))])$"
+        }
+      ]
+    }
+  ],
+  "reviewer_runtime": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "actual_native_witnesses": [
+    {
+      "passage_id": "PK-IQRAM-P1-PROSE",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "1",
+      "pdf_page_1based": 1,
+      "page_image_sha256": "c1cd7112ceaeef4e8cf4de1812d789e0ceec3561d378e1d0bdc6776de17ff83b",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "PK-IQRAM-P2-SEMANTICS",
+      "source_id": "PS-PK-IQRAM-2019",
+      "source_sha256": "5d856e56e72819fa7c8d4746fed1dcc1fcf81c129e08bbb9846e81f77f8d02bb",
+      "printed_page": "2",
+      "pdf_page_1based": 2,
+      "page_image_sha256": "4bf4703777dcc07248973705785454761cf5846b830205d3a9305ad2929cebc6",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    },
+    {
+      "passage_id": "AF-NIAZMAN-P147-FUNCTIONS",
+      "source_id": "PS-AF-NIAZMAN-2022",
+      "source_sha256": "da64b52a63847e55adf56c2c39d9fc63b70ebc295bd5938f95203b0ffffd5c42",
+      "printed_page": "147",
+      "pdf_page_1based": 152,
+      "page_image_sha256": "a6f9f85cbe0e0efab8b9ac82c3f0d10b106391a704fdda8ef589586ebb41d734",
+      "actual_consultation": "پاکستاني مخونه ۱/۲ او افغان سيمه‌ييز مخونه ۳۹/۹۰ په همدې فعال بهير کښې او مخ ۱۴۷ د دې مسودې مخکې په سترګو بيا کتل شوي؛ پاکستانے نثر لومړنے دے۔",
+      "evidence_limit": "د نحو/معنا او تابع/ثبوت عمومي مفهومونه ملاتړ لري؛ د عين لامبډا نحو او د لټون تخصصي پاکستاني مرکبونو مستقل لفظي شاهد نشته او موقتي دي۔"
+    }
+  ],
+  "segment_entries_added": 6,
+  "new_source_correction_ids": [
+    "OLSOL-024"
+  ],
+  "wording_choice_ids": [],
+  "old_source_corrections_independently_reverified": [],
+  "whole_unit_segment_snapshot": "SOL6_SEGMENT_REAUDIT_0312_0357.jsonl",
+  "whole_unit_segment_snapshot_sha256": "bc2f55737988efd2e24338481bbd6e0d90164b6d8d2a571ce6da73b047640c9b",
+  "source_adjudication_sha256": "f777044aa7020be91e5650258faf71a13d73f23b1e3852ca55a2cfbc7ece0f88",
+  "expanded_reader_accepted": false,
+  "full_reaudit_completed": false,
+  "next_action": "د ۶۸۰ دوه‌ګونې کتنه، عين‌بايټه بياجوړونه او منل؛ بيا بشپړ OLP-0681 او OLP-0358۔ د TeX ځای اشغال ژباړه نۀ دروي۔"
+}
